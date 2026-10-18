@@ -14,7 +14,7 @@ import UnigridsReference
 /// width.
 public struct ParkGuideScreen: View {
     @Environment(\.referenceStore) private var store
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
     @Environment(\.dynamicTypeSize) private var typeSize
 
     let place: Place
@@ -43,7 +43,7 @@ public struct ParkGuideScreen: View {
                 }
             }
         }
-        .background(UnigridStyle.page(scheme))
+        .background(style.page)
         .onGeometryChange(for: Double.self) { proxy in
             proxy.size.width - (UnigridStyle.pageMargin * 2)
         } action: { width in
@@ -59,7 +59,7 @@ public struct ParkGuideScreen: View {
             }
             ToolbarItem {
                 Button { showStamp = true } label: {
-                    Label("Stamp", systemImage: "stamp")
+                    Label { Text("Stamp") } icon: { StampIcon() }
                 }
             }
         }

@@ -10,6 +10,7 @@ import UnigridsReference
 /// actions (SPECIFICATION.md §5).
 public struct PlaceCardSheet: View {
     @Environment(\.referenceStore) private var store
+    @Environment(\.unigrid) private var style
     @Environment(\.dismiss) private var dismiss
 
     let place: Place
@@ -64,7 +65,7 @@ public struct PlaceCardSheet: View {
         VStack(alignment: .leading, spacing: 6) {
             HStack(spacing: 8) {
                 Image(systemName: PlaceStyle.symbol(for: place))
-                    .foregroundStyle(PlaceStyle.tint(for: place))
+                    .foregroundStyle(PlaceStyle.tint(for: place, in: style))
                 Text(place.designation)
                     .font(.subheadline.weight(.medium))
                 if !placeVisits.isEmpty {
@@ -72,7 +73,7 @@ public struct PlaceCardSheet: View {
                         .font(.caption.weight(.semibold))
                         .padding(.horizontal, 8)
                         .padding(.vertical, 3)
-                        .background(UnigridStyle.parkGreen.opacity(0.15), in: Capsule())
+                        .background(style.accent.opacity(0.15), in: Capsule())
                 }
             }
             Text(place.statesDescription)
@@ -141,7 +142,7 @@ public struct PlaceCardSheet: View {
                 Button {
                     showStamp = true
                 } label: {
-                    Label("Stamp", systemImage: "stamp")
+                    Label { Text("Stamp") } icon: { StampIcon() }
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.bordered)

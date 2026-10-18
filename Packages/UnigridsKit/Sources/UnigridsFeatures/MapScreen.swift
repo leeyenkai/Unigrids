@@ -90,11 +90,12 @@ public struct MapScreen: View {
 
 /// A pin on the map: colour by agency, symbol by kind, filled when visited.
 struct ParkPin: View {
+    @Environment(\.unigrid) private var style
     let place: Place
     let status: VisitStatusBadgeStatus
 
     var body: some View {
-        let tint = PlaceStyle.tint(for: place)
+        let tint = PlaceStyle.tint(for: place, in: style)
         return Image(systemName: PlaceStyle.symbol(for: place))
             .font(.caption.weight(.semibold))
             .foregroundStyle(status == .visited ? .white : tint)

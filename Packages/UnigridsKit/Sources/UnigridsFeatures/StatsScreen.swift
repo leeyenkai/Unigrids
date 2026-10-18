@@ -131,7 +131,7 @@ public struct StatsScreen: View {
                     x: .value("Year", String(point.year)),
                     y: .value("Visits", point.count)
                 )
-                .foregroundStyle(UnigridStyle.parkGreen)
+                .foregroundStyle(.tint)
                 .cornerRadius(4)
             }
             .chartYAxis {
@@ -190,7 +190,6 @@ public struct StatsScreen: View {
                             .foregroundStyle(.secondary)
                         ProgressView(value: progress.completion.fraction)
                             .frame(width: 70)
-                            .tint(UnigridStyle.parkGreen)
                             .accessibilityHidden(true)
                     }
                     .accessibilityElement(children: .combine)
@@ -247,7 +246,7 @@ public struct StatsScreen: View {
         }
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(.quinary, in: RoundedRectangle(cornerRadius: 14))
+        .background(.quinary, in: RoundedRectangle(cornerRadius: NativeMetrics.cardRadius))
     }
 }
 

@@ -10,6 +10,14 @@ import UnigridsReference
 public struct SettingsScreen: View {
     @Environment(\.referenceStore) private var store
 
+    /// The app's only persisted preferences. Appearance is a property of this device, not
+    /// of the reader's log, so it stays in `UserDefaults` and does not sync through
+    /// CloudKit with their visits.
+    @AppStorage(AppearanceDefaults.appearance)
+    private var appearance = AppearancePreference.standard
+    @AppStorage(AppearanceDefaults.palette)
+    private var palette = Palette.standard
+
     @Query private var visits: [Visit]
     @Query private var stamps: [Stamp]
 
@@ -17,6 +25,30 @@ public struct SettingsScreen: View {
 
     public var body: some View {
         List {
+            Section("Appearance") {
+                Picker("Appearance", selection: $appearance) {
+                    ForEach(AppearancePreference.allCases) { option in
+                        Text(option.name).tag(option)
+                    }
+                }
+                .pickerStyle(.segmented)
+
+                Picker("Palette", selection: $palette) {
+                    ForEach(Palette.allCases) { option in
+                        Label {
+                            Text(option.name)
+                        } icon: {
+                            PaletteSwatch(palette: option)
+                        }
+                        .tag(option)
+                    }
+                }
+
+                Text(palette.detail)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+
             Section("Your data") {
                 LabeledContent("Visits", value: "\(visits.count)")
                 LabeledContent("Stamps", value: "\(stamps.count)")

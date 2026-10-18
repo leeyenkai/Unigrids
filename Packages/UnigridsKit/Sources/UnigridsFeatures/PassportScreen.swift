@@ -91,13 +91,15 @@ public struct PassportScreen: View {
 }
 
 struct RegionRow: View {
+    @Environment(\.unigrid) private var style
+
     let region: PassportRegion
     let completion: Completion
 
     var body: some View {
         HStack(spacing: 12) {
             Circle()
-                .fill(region.inkColor)
+                .fill(style.regionInk(region))
                 .frame(width: 14, height: 14)
             VStack(alignment: .leading, spacing: 2) {
                 Text(region.name)
@@ -110,7 +112,7 @@ struct RegionRow: View {
             ProgressView(value: completion.fraction)
                 .progressViewStyle(.linear)
                 .frame(width: 60)
-                .tint(region.inkColor)
+                .tint(style.regionInk(region))
                 .accessibilityHidden(true)
         }
         .accessibilityElement(children: .combine)
@@ -119,12 +121,13 @@ struct RegionRow: View {
 }
 
 struct America250Row: View {
+    @Environment(\.unigrid) private var style
     let stampCount: Int
 
     var body: some View {
         HStack(spacing: 12) {
             Image(systemName: "seal.fill")
-                .foregroundStyle(UnigridStyle.sealRed)
+                .foregroundStyle(style.seal)
             VStack(alignment: .leading, spacing: 2) {
                 Text("America 250")
                     .font(.body.weight(.medium))
@@ -140,6 +143,8 @@ struct America250Row: View {
 /// A region's pages: the title page's count, then one slot per site.
 struct PassportRegionPage: View {
     @Environment(\.referenceStore) private var store
+    @Environment(\.unigrid) private var style
+
     let region: PassportRegion
 
     @Query private var stamps: [Stamp]
@@ -183,9 +188,9 @@ struct PassportRegionPage: View {
             Text(region.name.uppercased())
                 .font(.title2.weight(.bold))
                 .tracking(1.5)
-                .foregroundStyle(region.inkColor)
+                .foregroundStyle(style.regionInk(region))
             Rectangle()
-                .fill(region.inkColor)
+                .fill(style.regionInk(region))
                 .frame(height: 3)
             let stamped = places.count { stampsByPlace[$0.id]?.isEmpty == false }
             Text("\(stamped) of \(places.count) sites stamped")
@@ -260,6 +265,7 @@ struct PassportRegionPage: View {
 /// The commemorative page at the front of the book: every 2026 stamp, with the count.
 struct America250Page: View {
     @Environment(\.referenceStore) private var store
+    @Environment(\.unigrid) private var style
     let stamps: [Stamp]
 
     var body: some View {
@@ -269,9 +275,9 @@ struct America250Page: View {
                     Text("AMERICA 250")
                         .font(.title2.weight(.heavy))
                         .tracking(2)
-                        .foregroundStyle(UnigridStyle.sealRed)
+                        .foregroundStyle(style.seal)
                     Rectangle()
-                        .fill(UnigridStyle.sealRed)
+                        .fill(style.seal)
                         .frame(height: 3)
                     Text(
                         stamps.isEmpty

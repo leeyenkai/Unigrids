@@ -14,6 +14,7 @@ public struct StampSheet: View {
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
     @Environment(\.referenceStore) private var store
+    @Environment(\.unigrid) private var style
 
     let place: Place
     /// Defaults to today, or to the visit's date when stamping from a visit.
@@ -90,7 +91,7 @@ public struct StampSheet: View {
                     systemImage: "seal"
                 )
                 .font(.caption)
-                .foregroundStyle(UnigridStyle.sealRed)
+                .foregroundStyle(style.seal)
                 .multilineTextAlignment(.center)
             }
         }
@@ -118,7 +119,7 @@ public struct StampSheet: View {
                 // below is the intended way in.
                 save()
             } label: {
-                Label("Stamp", systemImage: "stamp.fill")
+                Label { Text("Stamp") } icon: { StampIcon(isFilled: true) }
                     .frame(maxWidth: .infinity)
             }
             .buttonStyle(.borderedProminent)

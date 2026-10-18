@@ -44,6 +44,10 @@ let package = Package(
 
         .testTarget(name: "UnigridsCoreTests", dependencies: ["UnigridsCore"]),
         .testTarget(
+            name: "UnigridsDesignTests",
+            dependencies: ["UnigridsDesign", "UnigridsCore"]
+        ),
+        .testTarget(
             name: "UnigridsReferenceTests",
             dependencies: ["UnigridsReference", "UnigridsCore"]
         ),

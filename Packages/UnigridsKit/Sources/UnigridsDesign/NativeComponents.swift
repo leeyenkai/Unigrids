@@ -7,28 +7,14 @@ import UnigridsCore
 
 /// How a place is drawn on the map: colour by agency, symbol by kind.
 public enum PlaceStyle {
-    public static func tint(for place: Place) -> Color {
-        switch place.agency {
-        case .nps: place.tier == .nationalPark ? UnigridStyle.parkGreen : Color(hex: "4A7C59")
-        case .forestService: Color(hex: "2F6B3A")
-        case .blm: Color(hex: "8A6A2F")
-        case .fishAndWildlife: Color(hex: "2B6A7A")
-        case .stateAgency: Color(hex: "5C6BA8")
-        case .other: Color(hex: "6E6E73")
-        }
+    /// Takes the resolved style because an agency ink has a light and a dark variant: the
+    /// light ones sit at under 2:1 on a dark list row, which is how they went unread.
+    public static func tint(for place: Place, in style: UnigridStyle) -> Color {
+        style.agencyTint(for: place)
     }
 
     public static func symbol(for place: Place) -> String {
-        switch place.kind {
-        case .nationalPark: "tree.fill"
-        case .npsUnit: "building.columns.fill"
-        case .statePark: "leaf.fill"
-        case .nationalForest, .nationalGrassland: "tree"
-        case .blmMonument, .blmConservationArea: "mountain.2.fill"
-        case .wildlifeRefuge: "bird.fill"
-        case .naturalLandmark: "sparkles"
-        case .scenicByway: "road.lanes"
-        }
+        UnigridsSymbol.place(place.kind)
     }
 }
 
@@ -51,7 +37,7 @@ public struct CompletionRing: View {
             Circle()
                 .trim(from: 0, to: completion.fraction)
                 .stroke(
-                    UnigridStyle.parkGreen,
+                    .tint,
                     style: StrokeStyle(lineWidth: diameter * 0.09, lineCap: .round)
                 )
                 .rotationEffect(.degrees(-90))
@@ -101,8 +87,8 @@ public struct StatTile: View {
                 .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(14)
-        .background(.quinary, in: RoundedRectangle(cornerRadius: 14))
+        .padding(NativeMetrics.cardPadding)
+        .background(.quinary, in: RoundedRectangle(cornerRadius: NativeMetrics.cardRadius))
         .accessibilityElement(children: .combine)
         .accessibilityLabel("\(label): \(value)")
     }
@@ -125,12 +111,12 @@ public struct VisitStatusBadge: View {
     public var body: some View {
         switch status {
         case .visited:
-            Label("Visited", systemImage: "checkmark.circle.fill")
+            Label("Visited", symbol: .visited)
                 .labelStyle(.iconOnly)
-                .foregroundStyle(UnigridStyle.parkGreen)
+                .foregroundStyle(.tint)
                 .accessibilityLabel("Visited")
         case .planned:
-            Label("Planned", systemImage: "circle.dashed")
+            Label("Planned", symbol: .planned)
                 .labelStyle(.iconOnly)
                 .foregroundStyle(.secondary)
                 .accessibilityLabel("Planned")

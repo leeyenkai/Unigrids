@@ -51,7 +51,7 @@ struct AtAGlancePanel: View {
 
 /// Panel 4: three or four paragraphs on geology, ecology and history.
 struct StoryPanel: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
     let paragraphs: [String]
 
     var body: some View {
@@ -60,7 +60,7 @@ struct StoryPanel: View {
                 ForEach(Array(paragraphs.enumerated()), id: \.offset) { _, paragraph in
                     Text(paragraph)
                         .font(UnigridStyle.prose)
-                        .foregroundStyle(UnigridStyle.ink(scheme))
+                        .foregroundStyle(style.ink)
                         .fixedSize(horizontal: false, vertical: true)
                 }
             }
@@ -92,7 +92,7 @@ struct MajorSightsPanel: View {
 
 /// Panel 7: visitor centres, with a mark where a passport stamp lives.
 struct VisitorCentresPanel: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
     let centres: [PointOfInterest]
 
     var body: some View {
@@ -103,24 +103,23 @@ struct VisitorCentresPanel: View {
                         HStack(spacing: 6) {
                             Text(centre.name)
                                 .font(UnigridStyle.itemTitle)
-                                .foregroundStyle(UnigridStyle.ink(scheme))
+                                .foregroundStyle(style.ink)
                             if centre.hasStamp {
-                                Image(systemName: "stamp")
-                                    .font(.caption2)
-                                    .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+                                StampIcon()
+                                    .foregroundStyle(style.inkSecondary)
                                     .accessibilityLabel("Has a passport stamp")
                             }
                         }
                         if let summary = centre.summary {
                             Text(summary)
                                 .font(UnigridStyle.prose)
-                                .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+                                .foregroundStyle(style.inkSecondary)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
                         if let hours = centre.hours {
                             Text(hours)
                                 .font(UnigridStyle.caption)
-                                .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+                                .foregroundStyle(style.inkSecondary)
                         }
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -150,7 +149,7 @@ struct TrailHighlightsPanel: View {
 
 /// Panel 9: entrances, reservations, permits, camping, lodging and closures.
 struct PlanYourVisitPanel: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
     let plan: PlanYourVisit
 
     var body: some View {
@@ -162,7 +161,7 @@ struct PlanYourVisitPanel: View {
                         GuideFieldLabel("Reservations")
                         Text(reservations)
                             .font(UnigridStyle.prose)
-                            .foregroundStyle(UnigridStyle.ink(scheme))
+                            .foregroundStyle(style.ink)
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }
@@ -208,19 +207,19 @@ struct SafetyPanel: View {
 /// Panel 11b: credits, sources and the non-affiliation line, across the full width at the
 /// foot of the page, as they sit on the back of a brochure.
 struct GuideCreditsPanel: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
     let credits: [String]
     let sources: [GuideSource]
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Rectangle()
-                .fill(UnigridStyle.rule(scheme))
+                .fill(style.rule)
                 .frame(height: 1)
             ForEach(Array(credits.enumerated()), id: \.offset) { _, credit in
                 Text(credit)
                     .font(UnigridStyle.caption)
-                    .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+                    .foregroundStyle(style.inkSecondary)
             }
             ForEach(sources) { source in
                 if let url = source.url {
@@ -229,7 +228,7 @@ struct GuideCreditsPanel: View {
                 } else {
                     Text(source.title)
                         .font(UnigridStyle.caption)
-                        .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+                        .foregroundStyle(style.inkSecondary)
                 }
             }
             NonAffiliationNotice()
@@ -243,7 +242,7 @@ struct GuideCreditsPanel: View {
 // MARK: - Shared pieces
 
 struct GuideFieldLabel: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
     private let text: String
 
     init(_ text: String) {
@@ -254,13 +253,13 @@ struct GuideFieldLabel: View {
         Text(text.uppercased())
             .font(UnigridStyle.dataLabel)
             .tracking(1)
-            .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+            .foregroundStyle(style.inkSecondary)
     }
 }
 
 /// A dashed list, as the brochures set their practical information.
 struct GuideLabelledList: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
     let label: String
     let items: [String]
 
@@ -271,7 +270,7 @@ struct GuideLabelledList: View {
                 ForEach(Array(items.enumerated()), id: \.offset) { _, item in
                     Text("— \(item)")
                         .font(UnigridStyle.prose)
-                        .foregroundStyle(UnigridStyle.ink(scheme))
+                        .foregroundStyle(style.ink)
                         .fixedSize(horizontal: false, vertical: true)
                 }
             }
@@ -282,7 +281,7 @@ struct GuideLabelledList: View {
 
 /// Paragraphs under a label, for safety and regulations.
 struct GuideProseList: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
     let label: String
     let items: [String]
 
@@ -293,7 +292,7 @@ struct GuideProseList: View {
                 ForEach(Array(items.enumerated()), id: \.offset) { _, item in
                     Text(item)
                         .font(UnigridStyle.prose)
-                        .foregroundStyle(UnigridStyle.ink(scheme))
+                        .foregroundStyle(style.ink)
                         .fixedSize(horizontal: false, vertical: true)
                 }
             }
@@ -304,7 +303,7 @@ struct GuideProseList: View {
 
 /// A guide image with the credit it must carry (SPECIFICATION.md §6, §15).
 struct GuideImagePanel: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
     let image: GuideImage
 
     var body: some View {
@@ -315,11 +314,11 @@ struct GuideImagePanel: View {
             if let caption = image.caption {
                 Text(caption)
                     .font(UnigridStyle.caption)
-                    .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+                    .foregroundStyle(style.inkSecondary)
             }
             Text(image.credit)
                 .font(UnigridStyle.caption)
-                .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+                .foregroundStyle(style.inkSecondary)
         }
     }
 

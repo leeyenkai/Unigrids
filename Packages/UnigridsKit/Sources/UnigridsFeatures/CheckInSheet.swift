@@ -73,7 +73,7 @@ public struct CheckInSheet: View {
                                     Spacer()
                                     if selectedPOIs.contains(poi.id) {
                                         Image(systemName: "checkmark")
-                                            .foregroundStyle(UnigridStyle.parkGreen)
+                                            .foregroundStyle(.tint)
                                     }
                                 }
                             }

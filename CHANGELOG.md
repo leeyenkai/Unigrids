@@ -46,8 +46,27 @@ makes the change. A release moves that block under a version heading with its da
 - Visit log with manual check-in, editing and deletion.
 - Offline Python pipeline skeleton (`Pipeline/`) with the fetch, match, derive, edit,
   build and package steps stubbed and documented.
+- Four selectable colour palettes — Unigrid, Press, Canyon and Tidewater — and a separate
+  appearance setting of Dark, Light or Automatic, both in Settings. Dark is the default.
+  The choice is a per-device display preference and does not sync with the log.
+- A written design system in [`docs/design-system.md`](docs/design-system.md), and
+  ADR 0005 recording why colour is data in `UnigridsCore` rather than `Color` in the views.
+- One icon vocabulary (`UnigridsSymbol`) in place of fifty-odd scattered symbol strings,
+  with a test that every name resolves against the SDK.
 
 ### Fixed
+
+- The Stamp button drew nothing. `stamp` and `stamp.fill` are not SF Symbols in any
+  version, so five places — the guide's Stamp action, the place card, Trips, the visitor
+  centre panel and the stamp sheet — rendered a blank space where an icon belonged. They
+  now draw the app's own cancellation mark.
+- Settings on the Mac reported zero visits and zero stamps. The `Settings` scene was never
+  given the model container its queries read from.
+- Passport stamps, agency pin colours and the park-green accent are legible in dark mode.
+  Every one of the nine region inks failed WCAG AA on a dark page, four of them at even the
+  lowest bar, and the accent sat at 1.95:1 where 3:1 is the minimum. Each colour now has a
+  dark variant of the same hue, and a parameterised test holds every palette, scheme and
+  pairing to AA so this cannot silently come back.
 
 - Park areas no longer print spurious precision in metric locales: Acadia read
   `19,859.947893 ha` instead of `19,860 ha`.

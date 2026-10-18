@@ -18,9 +18,9 @@ struct PassportRegionTests {
         #expect(unassigned.isEmpty, "unassigned: \(unassigned.map(\.code))")
     }
 
-    @Test("each region has a distinct ink")
-    func inksAreDistinct() {
-        let inks = PassportRegion.allCases.map(\.inkHex)
+    @Test("each region has a distinct ink", arguments: PaletteScheme.allCases)
+    func inksAreDistinct(scheme: PaletteScheme) {
+        let inks = PassportRegion.allCases.map { $0.ink(scheme) }
         #expect(Set(inks).count == inks.count)
     }
 

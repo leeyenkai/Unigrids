@@ -11,44 +11,82 @@ import UnigridsCore
 /// The reference is the 1977 system Massimo Vignelli's office designed for the NPS: a
 /// modular grid of fold panels, a black title band across the top, and Helvetica paired
 /// with Times Roman. This is homage, not reproduction.
-public enum UnigridStyle {
+///
+/// An instance is one palette resolved for one colour scheme. Views read it from the
+/// environment — `@Environment(\.unigrid) private var style` — rather than passing a
+/// `ColorScheme` into a function, so resolution happens once at the scene root and a panel
+/// cannot disagree with the page it sits on. Fonts and metrics stay `static`: they do not
+/// vary by palette, and making them instance members would have churned every call site
+/// for nothing.
+public struct UnigridStyle: Equatable, Sendable {
+    public let palette: Palette
+    public let scheme: PaletteScheme
+
     // MARK: - Colour
 
-    /// The title band. Near-black rather than pure black, which reads as ink rather than
-    /// as a hole in the page.
-    public static let band = Color(hex: "121212")
-
-    /// The guide page. Warm off-white, like coated brochure stock.
-    public static func page(_ scheme: ColorScheme) -> Color {
-        scheme == .dark ? Color(hex: "16171A") : Color(hex: "FAF8F4")
-    }
-
-    /// Body text on the page.
-    public static func ink(_ scheme: ColorScheme) -> Color {
-        scheme == .dark ? Color(hex: "ECE9E3") : Color(hex: "1A1A1A")
-    }
-
-    /// Secondary text: captions, credits, data labels.
-    public static func inkSecondary(_ scheme: ColorScheme) -> Color {
-        scheme == .dark ? Color(hex: "A6A29A") : Color(hex: "5E5A52")
-    }
-
+    /// The guide page. Brochure stock.
+    public let page: Color
     /// Panel fill, used sparingly to group panels as the brochures do.
-    public static func panel(_ scheme: ColorScheme) -> Color {
-        scheme == .dark ? Color(hex: "1F2126") : Color(hex: "FFFFFF")
-    }
-
+    public let panel: Color
+    /// Body text on the page.
+    public let ink: Color
+    /// Secondary text: captions, credits, data labels.
+    public let inkSecondary: Color
     /// Hairlines between panels and under headings.
-    public static func rule(_ scheme: ColorScheme) -> Color {
-        scheme == .dark ? Color(hex: "3A3C42") : Color(hex: "D8D3C9")
+    public let rule: Color
+    /// The title band.
+    public let band: Color
+    /// The park name, reversed out of the band.
+    public let bandInk: Color
+    /// Designation and states, beneath the park name.
+    public let bandInkSecondary: Color
+    /// The app's tint, and the mark on anything seen or visited.
+    public let accent: Color
+    /// What is legible on `accent` — not always white. See `PaletteColors.onAccent`.
+    public let onAccent: Color
+    /// The NPS cartographic browns and blues, for map panels and accents.
+    public let trail: Color
+    public let water: Color
+    /// The America 250 seal's red.
+    public let seal: Color
+
+    public init(palette: Palette, scheme: PaletteScheme) {
+        let colors = palette.colors(scheme)
+        self.palette = palette
+        self.scheme = scheme
+        page = Color(colors.page)
+        panel = Color(colors.panel)
+        ink = Color(colors.ink)
+        inkSecondary = Color(colors.inkSecondary)
+        rule = Color(colors.rule)
+        band = Color(colors.band)
+        bandInk = Color(colors.bandInk)
+        bandInkSecondary = Color(colors.bandInkSecondary)
+        accent = Color(colors.accent)
+        onAccent = Color(colors.onAccent)
+        trail = Color(colors.trail)
+        water = Color(colors.water)
+        seal = Color(colors.seal)
     }
 
-    /// The NPS cartographic greens and browns, for map panels and accents.
-    public static let parkGreen = Color(hex: "2E5339")
-    public static let trailBrown = Color(hex: "7A5A3C")
-    public static let waterBlue = Color(hex: "3C6E8F")
-    /// The America 250 seal's red.
-    public static let sealRed = Color(hex: "B3242B")
+    /// The environment's default, and what a preview gets for free.
+    ///
+    /// Dark, because that is the app's default appearance: a preview that silently renders
+    /// the non-default is a trap.
+    public static let fallback = UnigridStyle(palette: .standard, scheme: .dark)
+
+    /// A region's cancellation ink in this scheme.
+    ///
+    /// Stamps land on native passport pages, not on Unigrid paper, so this and `seal` are
+    /// the only members a stamp may read.
+    public func regionInk(_ region: PassportRegion) -> Color {
+        Color(region.ink(scheme))
+    }
+
+    /// The pin and row colour for a place, by the agency behind it.
+    public func agencyTint(for place: Place) -> Color {
+        Color(AgencyInk.forPlace(agency: place.agency, tier: place.tier).value(scheme))
+    }
 
     // MARK: - Type
 
@@ -112,28 +150,36 @@ public enum UnigridStyle {
     }
 }
 
-extension Color {
-    /// A colour from a six-digit sRGB hex string. Unparseable input falls back to grey
-    /// rather than crashing, because a wrong colour is a visual bug and a crash is not.
-    public init(hex: String) {
-        let cleaned = hex.trimmingCharacters(in: CharacterSet(charactersIn: "#"))
-        guard cleaned.count == 6, let value = UInt32(cleaned, radix: 16) else {
-            self = .gray
-            return
-        }
-        self.init(
-            .sRGB,
-            red: Double((value >> 16) & 0xFF) / 255,
-            green: Double((value >> 8) & 0xFF) / 255,
-            blue: Double(value & 0xFF) / 255,
-            opacity: 1
-        )
+/// Corner radii and insets for the native side of the app.
+///
+/// Native screens keep Apple's semantic colours and fonts, but the radii were previously
+/// inline magic numbers that drifted between screens. One scale, named, so a tile and a
+/// card agree without anyone having to remember a number.
+public enum NativeMetrics {
+    /// Stat tiles and cards.
+    public static let cardRadius: CGFloat = 14
+    /// Thumbnails, chips and smaller inset surfaces.
+    public static let chipRadius: CGFloat = 10
+    public static let cardPadding: CGFloat = 14
+    public static let rowSpacing: CGFloat = 12
+}
+
+extension PaletteScheme {
+    /// SwiftUI's scheme, mapped onto the Foundation one the palette is defined in.
+    public init(_ scheme: ColorScheme) {
+        self = scheme == .dark ? .dark : .light
     }
 }
 
-extension PassportRegion {
-    /// The region's cancellation ink.
-    public var inkColor: Color {
-        Color(hex: inkHex)
+extension Color {
+    /// A colour resolved from `UnigridsCore`.
+    public init(_ value: ColorValue) {
+        self.init(.sRGB, red: value.red, green: value.green, blue: value.blue, opacity: 1)
+    }
+
+    /// A colour from a six-digit sRGB hex string. Unparseable input falls back to grey
+    /// rather than crashing, because a wrong colour is a visual bug and a crash is not.
+    public init(hex: String) {
+        self = ColorValue(hex: hex).map(Color.init) ?? .gray
     }
 }

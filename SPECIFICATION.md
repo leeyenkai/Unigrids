@@ -338,6 +338,13 @@ Guide rules for Unigrids
 - Map panels use the NPS cartographic palette from the brochure maps.
 - A dark variant of the guide that keeps the band and grid but inverts the page.
 
+Themes and appearance
+
+- Four palettes, selectable in Settings: Unigrid (the canonical warm stock and park green), Press (near-monochrome ink on paper), Canyon (sandstone and ochre) and Tidewater (the brochure blues). A palette changes the paper, ink, band and app tint; native chrome keeps semantic system colours, so the two visual modes stay apart.
+- Appearance is a separate axis: Dark (the default), Light or Automatic. Both choices are per-device display preferences stored in `UserDefaults`, not user data, and do not sync through iCloud.
+- The band stays near-black in every palette. A black title band with the park name reversed out of it is the one part of the Unigrid that is not ours to restyle.
+- Colour values and the WCAG contrast rule live in `UnigridsCore` as plain data, so every palette, scheme and foreground/background pairing is held to WCAG AA by a test rather than by eye. See [`docs/design-system.md`](docs/design-system.md) and [ADR 0005](docs/adr/0005-palette-and-appearance.md).
+
 App identity
 
 - Name: Unigrids. Icon: an original mark (for example, a black band over a grid of panels), never the NPS arrowhead.
@@ -392,6 +399,8 @@ Follow-ups
 4. Locate data files for National Natural Landmarks and for designated scenic byways and All-American Roads.
 5. Scope the Apple Watch app: check-ins and stamps only, or also trail info and alerts?
 6. Choose which widgets to build first (next trip, parks count, latest stamp).
+7. The passport's nine ink colours are Unigrids' own approximation, now with a dark variant per region. They are superseded by follow-up 3 above when the paper passport's real scheme is curated.
+8. Appearance is two `@AppStorage` values today. An observable store becomes worth it only if the palette is ever derived from something else — a per-park palette, or an automatic switch at sunset (ADR 0005).
 
 Parked until a public release
 
