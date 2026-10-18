@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  The entitlements iCloud sync needs (SPECIFICATION.md §13).
+
+  NOT WIRED INTO THE BUILD YET. `CODE_SIGN_ENTITLEMENTS` is deliberately absent from
+  the project's build settings, because an iCloud entitlement requires a development
+  team and a provisioning profile, and without one `xcodebuild` fails for anyone who
+  clones this repository.
+
+  `UnigridsModelContainer.app()` asks for `cloudKitDatabase: .automatic`, which uses the
+  first iCloud container in the entitlements when there is one and stores locally when
+  there is not. So the app works either way; it just does not sync until this file is
+  wired up.
+
+  To turn sync on:
+    1. Set DEVELOPMENT_TEAM in the target's build settings.
+    2. Set CODE_SIGN_ENTITLEMENTS = Unigrids/Unigrids.entitlements.
+    3. Change the container identifier below to one your team owns.
+    4. Add the iCloud and Background Modes capabilities in Xcode's Signing &
+       Capabilities tab, which is what writes the matching App ID configuration.
+-->
+<plist version="1.0">
+<dict>
+	<key>com.apple.developer.icloud-container-identifiers</key>
+	<array>
+		<string>iCloud.com.leeyenkai.Unigrids</string>
+	</array>
+	<key>com.apple.developer.icloud-services</key>
+	<array>
+		<string>CloudKit</string>
+	</array>
+	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<key>com.apple.security.files.user-selected.read-write</key>
+	<true/>
+	<key>com.apple.security.network.client</key>
+	<true/>
+	<key>com.apple.security.personal-information.location</key>
+	<true/>
+	<key>com.apple.security.personal-information.photos-library</key>
+	<true/>
+</dict>
+</plist>
