@@ -1,0 +1,39 @@
+# SwiftFormat configuration. Formatting is mechanical here (AGENTS.md §3) — the tool
+# decides, and review spends its time on behaviour instead.
+
+--swiftversion 6.0
+
+--exclude .build,Packages/**/.build,DerivedData,Pipeline
+
+# Four-space indent, 100 columns, matching .editorconfig.
+--indent 4
+--maxwidth 100
+--wraparguments before-first
+--wrapparameters before-first
+--wrapcollections before-first
+--closingparen balanced
+
+# `self` only where it is required, which makes the places it appears meaningful.
+--self remove
+--selfrequired
+
+--commas always
+--trimwhitespace always
+--emptybraces no-space
+--semicolons never
+--importgrouping testable-bottom
+--stripunusedargs closure-only
+
+# Access control written out where it is not the default (AGENTS.md §3).
+--extensionacl on-declarations
+
+--enable isEmpty
+--enable redundantType
+--enable sortImports
+--enable blankLinesAtStartOfScope
+--enable blankLinesAtEndOfScope
+--enable markTypes
+
+# `markTypes` would otherwise rewrite the deliberate `// MARK: -` sections.
+--marktypes never
+--markextensions never

@@ -1,0 +1,88 @@
+# ---------- macOS ----------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# ---------- Xcode ----------
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcresult/
+*.xcarchive/
+.swiftpm/xcode/
+timeline.xctimeline
+playground.xcworkspace
+
+# Keep shared schemes, ignore per-user ones
+!**/xcshareddata/
+!**/xcshareddata/**
+
+# ---------- Swift Package Manager ----------
+.build/
+.swiftpm/
+Packages/*/.build/
+Package.resolved.bak
+
+# Resolved dependency graph is committed for reproducible builds:
+# !Package.resolved
+
+# ---------- Signing and secrets ----------
+# Never commit credentials. The NPS API key is injected at build time
+# (see AGENTS.md "Secrets"), never checked in.
+*.p12
+*.cer
+*.certSigningRequest
+*.mobileprovision
+*.provisionprofile
+Secrets.xcconfig
+Secrets.plist
+.env
+.env.*
+!.env.example
+
+# ---------- Python data pipeline ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Pipeline working directories: raw downloads, intermediate stores and built
+# artefacts are large and reproducible, so they stay out of git.
+Pipeline/.cache/
+Pipeline/raw/
+Pipeline/work/
+Pipeline/out/
+*.gpkg
+*.shp
+*.sqlite-wal
+*.sqlite-shm
+*.mbtiles
+
+# Generated reference database and offline packs are copied into the app's
+# resources by the pipeline's package step; the generator is the source of truth.
+Packages/UnigridsKit/Sources/UnigridsReference/Resources/generated/
+
+# ---------- Editors / tooling ----------
+.idea/
+*.swp
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
