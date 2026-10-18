@@ -1,0 +1,48 @@
+[project]
+name = "unigrids-pipeline"
+version = "0.1.0"
+description = "Builds the reference data and offline packs that ship inside the Unigrids app"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.27",
+    "pydantic>=2.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2",
+    "ruff>=0.5",
+]
+
+[project.scripts]
+unigrids-pipeline = "unigrids_pipeline.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/unigrids_pipeline"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "seed"]
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM", "RUF"]
+ignore = [
+    # This project handles official place names whose correct spelling uses characters
+    # ruff calls ambiguous: the ʻokina in "Hawaiʻi Volcanoes", the en dash in
+    # "Wrangell–St. Elias". Replacing them would misspell a park.
+    "RUF001",
+    "RUF002",
+    "RUF003",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# The seed scripts are a documented stopgap and read as data tables.
+"seed/*" = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
