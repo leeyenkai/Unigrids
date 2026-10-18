@@ -1,0 +1,574 @@
+[
+  {
+    "id": "poi-zion-angels-landing",
+    "placeID": "np-zion",
+    "kind": "sight",
+    "name": "Angels Landing",
+    "location": {
+      "latitude": 37.269,
+      "longitude": -112.947
+    },
+    "rank": 1,
+    "summary": "A fin of Navajo sandstone reached by switchbacks and a chained ridge, 1,500 feet above the canyon floor.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-zion-the-narrows",
+    "placeID": "np-zion",
+    "kind": "sight",
+    "name": "The Narrows",
+    "location": {
+      "latitude": 37.286,
+      "longitude": -112.948
+    },
+    "rank": 2,
+    "summary": "The Virgin River's slot canyon, in places twenty feet wide between thousand-foot walls. Walked in the river itself.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-zion-observation-point",
+    "placeID": "np-zion",
+    "kind": "sight",
+    "name": "Observation Point",
+    "location": {
+      "latitude": 37.272,
+      "longitude": -112.939
+    },
+    "rank": 3,
+    "summary": "The canyon's highest viewpoint, looking down on Angels Landing.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-zion-emerald-pools",
+    "placeID": "np-zion",
+    "kind": "sight",
+    "name": "Emerald Pools",
+    "location": {
+      "latitude": 37.251,
+      "longitude": -112.957
+    },
+    "rank": 4,
+    "summary": "Three stepped pools fed by seeps and a hanging garden of ferns.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-zion-court-of-the-patriarchs",
+    "placeID": "np-zion",
+    "kind": "sight",
+    "name": "Court of the Patriarchs",
+    "location": {
+      "latitude": 37.243,
+      "longitude": -112.978
+    },
+    "rank": 5,
+    "summary": "Three sandstone peaks named for Abraham, Isaac and Jacob.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-zion-weeping-rock",
+    "placeID": "np-zion",
+    "kind": "sight",
+    "name": "Weeping Rock",
+    "location": {
+      "latitude": 37.27,
+      "longitude": -112.938
+    },
+    "rank": 6,
+    "summary": "An alcove where water that fell as rain centuries ago seeps from the rock face.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-zion-canyon-overlook",
+    "placeID": "np-zion",
+    "kind": "sight",
+    "name": "Canyon Overlook",
+    "location": {
+      "latitude": 37.213,
+      "longitude": -112.94
+    },
+    "rank": 7,
+    "summary": "A short walk off the Zion–Mount Carmel Highway to a ledge above Pine Creek.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-zion-kolob-canyons",
+    "placeID": "np-zion",
+    "kind": "sight",
+    "name": "Kolob Canyons",
+    "location": {
+      "latitude": 37.453,
+      "longitude": -113.207
+    },
+    "rank": 8,
+    "summary": "The park's quiet north-west corner: red finger canyons cut into the Kolob Terrace.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-zion-zion-canyon-visitor-center",
+    "placeID": "np-zion",
+    "kind": "visitorCentre",
+    "name": "Zion Canyon Visitor Center",
+    "location": {
+      "latitude": 37.2,
+      "longitude": -112.987
+    },
+    "rank": 0,
+    "summary": "The main visitor centre at the south entrance, and the shuttle's first stop.",
+    "hasStamp": true
+  },
+  {
+    "id": "poi-zion-kolob-canyons-visitor-center",
+    "placeID": "np-zion",
+    "kind": "visitorCentre",
+    "name": "Kolob Canyons Visitor Center",
+    "location": {
+      "latitude": 37.453,
+      "longitude": -113.223
+    },
+    "rank": 0,
+    "summary": "A small centre off Interstate 15 serving the Kolob Canyons road.",
+    "hasStamp": true
+  },
+  {
+    "id": "poi-acadia-cadillac-mountain",
+    "placeID": "np-acadia",
+    "kind": "sight",
+    "name": "Cadillac Mountain",
+    "location": {
+      "latitude": 44.3526,
+      "longitude": -68.2251
+    },
+    "rank": 1,
+    "summary": "The highest headland on the eastern seaboard, and among the first places in the United States to catch the sunrise.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-acadia-jordan-pond",
+    "placeID": "np-acadia",
+    "kind": "sight",
+    "name": "Jordan Pond",
+    "location": {
+      "latitude": 44.321,
+      "longitude": -68.253
+    },
+    "rank": 2,
+    "summary": "A glacial tarn below the twin summits of the Bubbles, circled by a level shore path.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-acadia-thunder-hole",
+    "placeID": "np-acadia",
+    "kind": "sight",
+    "name": "Thunder Hole",
+    "location": {
+      "latitude": 44.319,
+      "longitude": -68.189
+    },
+    "rank": 3,
+    "summary": "A narrow inlet where an incoming swell slams air out of a sea cave with a boom.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-acadia-sand-beach",
+    "placeID": "np-acadia",
+    "kind": "sight",
+    "name": "Sand Beach",
+    "location": {
+      "latitude": 44.329,
+      "longitude": -68.183
+    },
+    "rank": 4,
+    "summary": "A pocket of shell sand between granite headlands, in water that rarely passes 55°F.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-acadia-otter-cliff",
+    "placeID": "np-acadia",
+    "kind": "sight",
+    "name": "Otter Cliff",
+    "location": {
+      "latitude": 44.31,
+      "longitude": -68.19
+    },
+    "rank": 5,
+    "summary": "A 110-foot granite wall dropping straight into the Atlantic.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-acadia-bass-harbor-head-light",
+    "placeID": "np-acadia",
+    "kind": "sight",
+    "name": "Bass Harbor Head Light",
+    "location": {
+      "latitude": 44.222,
+      "longitude": -68.337
+    },
+    "rank": 6,
+    "summary": "An 1858 light station on the island's quiet south-western shore.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-acadia-schoodic-point",
+    "placeID": "np-acadia",
+    "kind": "sight",
+    "name": "Schoodic Point",
+    "location": {
+      "latitude": 44.335,
+      "longitude": -68.06
+    },
+    "rank": 7,
+    "summary": "The park's mainland section, where dark basalt dykes cut through pink granite ledges.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-acadia-park-loop-road",
+    "placeID": "np-acadia",
+    "kind": "sight",
+    "name": "Park Loop Road",
+    "location": {
+      "latitude": 44.338,
+      "longitude": -68.208
+    },
+    "rank": 8,
+    "summary": "Twenty-seven miles threading the eastern side of Mount Desert Island, designed to reveal the coast a view at a time.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-acadia-hulls-cove-visitor-center",
+    "placeID": "np-acadia",
+    "kind": "visitorCentre",
+    "name": "Hulls Cove Visitor Center",
+    "location": {
+      "latitude": 44.409,
+      "longitude": -68.248
+    },
+    "rank": 0,
+    "summary": "The main visitor centre, with the park film, ranger desk and trip planning.",
+    "hasStamp": true
+  },
+  {
+    "id": "poi-acadia-sieur-de-monts-nature-center",
+    "placeID": "np-acadia",
+    "kind": "visitorCentre",
+    "name": "Sieur de Monts Nature Center",
+    "location": {
+      "latitude": 44.36,
+      "longitude": -68.208
+    },
+    "rank": 0,
+    "summary": "A small nature centre beside the Wild Gardens of Acadia.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-yellowstone-old-faithful",
+    "placeID": "np-yellowstone",
+    "kind": "sight",
+    "name": "Old Faithful",
+    "location": {
+      "latitude": 44.4605,
+      "longitude": -110.8281
+    },
+    "rank": 1,
+    "summary": "The park's most predictable large geyser, erupting every 60 to 110 minutes to around 130 feet.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-yellowstone-grand-prismatic-spring",
+    "placeID": "np-yellowstone",
+    "kind": "sight",
+    "name": "Grand Prismatic Spring",
+    "location": {
+      "latitude": 44.525,
+      "longitude": -110.838
+    },
+    "rank": 2,
+    "summary": "The largest hot spring in the United States, ringed in orange and green by heat-loving microbial mats.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-yellowstone-grand-canyon-of-the-yellowstone",
+    "placeID": "np-yellowstone",
+    "kind": "sight",
+    "name": "Grand Canyon of the Yellowstone",
+    "location": {
+      "latitude": 44.72,
+      "longitude": -110.496
+    },
+    "rank": 3,
+    "summary": "Twenty miles of canyon cut through hydrothermally altered rock, with two major waterfalls.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-yellowstone-mammoth-hot-springs",
+    "placeID": "np-yellowstone",
+    "kind": "sight",
+    "name": "Mammoth Hot Springs",
+    "location": {
+      "latitude": 44.97,
+      "longitude": -110.703
+    },
+    "rank": 4,
+    "summary": "Travertine terraces built and abandoned as spring vents shift, sometimes within a season.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-yellowstone-lamar-valley",
+    "placeID": "np-yellowstone",
+    "kind": "sight",
+    "name": "Lamar Valley",
+    "location": {
+      "latitude": 44.898,
+      "longitude": -110.23
+    },
+    "rank": 5,
+    "summary": "Open sage grassland where bison, elk and wolves are most reliably seen at dawn and dusk.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-yellowstone-hayden-valley",
+    "placeID": "np-yellowstone",
+    "kind": "sight",
+    "name": "Hayden Valley",
+    "location": {
+      "latitude": 44.66,
+      "longitude": -110.47
+    },
+    "rank": 6,
+    "summary": "A broad former lakebed along the Yellowstone River, grazed by bison herds.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-yellowstone-norris-geyser-basin",
+    "placeID": "np-yellowstone",
+    "kind": "sight",
+    "name": "Norris Geyser Basin",
+    "location": {
+      "latitude": 44.726,
+      "longitude": -110.703
+    },
+    "rank": 7,
+    "summary": "The park's hottest and most changeable basin, and home to Steamboat Geyser.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-yellowstone-yellowstone-lake",
+    "placeID": "np-yellowstone",
+    "kind": "sight",
+    "name": "Yellowstone Lake",
+    "location": {
+      "latitude": 44.45,
+      "longitude": -110.37
+    },
+    "rank": 8,
+    "summary": "The largest high-elevation lake in North America, sitting partly inside the caldera.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-yellowstone-tower-fall",
+    "placeID": "np-yellowstone",
+    "kind": "sight",
+    "name": "Tower Fall",
+    "location": {
+      "latitude": 44.893,
+      "longitude": -110.388
+    },
+    "rank": 9,
+    "summary": "A 132-foot fall dropping between volcanic pinnacles into the Yellowstone River.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-yellowstone-old-faithful-visitor-education-center",
+    "placeID": "np-yellowstone",
+    "kind": "visitorCentre",
+    "name": "Old Faithful Visitor Education Center",
+    "location": {
+      "latitude": 44.459,
+      "longitude": -110.829
+    },
+    "rank": 0,
+    "summary": "Geyser predictions, hydrothermal exhibits and a ranger desk.",
+    "hasStamp": true
+  },
+  {
+    "id": "poi-yellowstone-canyon-visitor-education-center",
+    "placeID": "np-yellowstone",
+    "kind": "visitorCentre",
+    "name": "Canyon Visitor Education Center",
+    "location": {
+      "latitude": 44.734,
+      "longitude": -110.495
+    },
+    "rank": 0,
+    "summary": "Exhibits on the Yellowstone volcano and the caldera beneath the park.",
+    "hasStamp": true
+  },
+  {
+    "id": "poi-yellowstone-albright-visitor-center",
+    "placeID": "np-yellowstone",
+    "kind": "visitorCentre",
+    "name": "Albright Visitor Center",
+    "location": {
+      "latitude": 44.976,
+      "longitude": -110.699
+    },
+    "rank": 0,
+    "summary": "At Mammoth, in the old Fort Yellowstone bachelor officers' quarters.",
+    "hasStamp": true
+  },
+  {
+    "id": "poi-yellowstone-grant-village-visitor-center",
+    "placeID": "np-yellowstone",
+    "kind": "visitorCentre",
+    "name": "Grant Village Visitor Center",
+    "location": {
+      "latitude": 44.393,
+      "longitude": -110.558
+    },
+    "rank": 0,
+    "summary": "Exhibits on fire's part in the park's ecology.",
+    "hasStamp": true
+  },
+  {
+    "id": "poi-great-smoky-mountains-kuwohi",
+    "placeID": "np-great-smoky-mountains",
+    "kind": "sight",
+    "name": "Kuwohi (Clingmans Dome)",
+    "location": {
+      "latitude": 35.5628,
+      "longitude": -83.4986
+    },
+    "rank": 1,
+    "summary": "The highest point in the park and on the Appalachian Trail, restored in 2024 to its Cherokee name.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-great-smoky-mountains-cades-cove",
+    "placeID": "np-great-smoky-mountains",
+    "kind": "sight",
+    "name": "Cades Cove",
+    "location": {
+      "latitude": 35.603,
+      "longitude": -83.837
+    },
+    "rank": 2,
+    "summary": "A broad valley of preserved homesteads, churches and a working grist mill, circled by an eleven-mile loop road.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-great-smoky-mountains-newfound-gap",
+    "placeID": "np-great-smoky-mountains",
+    "kind": "sight",
+    "name": "Newfound Gap",
+    "location": {
+      "latitude": 35.611,
+      "longitude": -83.425
+    },
+    "rank": 3,
+    "summary": "The lowest drivable pass through the range, on the state line at 5,046 feet.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-great-smoky-mountains-laurel-falls",
+    "placeID": "np-great-smoky-mountains",
+    "kind": "sight",
+    "name": "Laurel Falls",
+    "location": {
+      "latitude": 35.68,
+      "longitude": -83.593
+    },
+    "rank": 4,
+    "summary": "An eighty-foot two-tier fall at the end of a paved, much-walked trail.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-great-smoky-mountains-alum-cave-trail",
+    "placeID": "np-great-smoky-mountains",
+    "kind": "sight",
+    "name": "Alum Cave Trail",
+    "location": {
+      "latitude": 35.629,
+      "longitude": -83.451
+    },
+    "rank": 5,
+    "summary": "Past Arch Rock and the Alum Cave Bluffs to the summit of Mount LeConte.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-great-smoky-mountains-roaring-fork",
+    "placeID": "np-great-smoky-mountains",
+    "kind": "sight",
+    "name": "Roaring Fork Motor Nature Trail",
+    "location": {
+      "latitude": 35.688,
+      "longitude": -83.478
+    },
+    "rank": 6,
+    "summary": "A one-way loop through old-growth forest, past log cabins and a tumbling mountain stream.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-great-smoky-mountains-cataloochee",
+    "placeID": "np-great-smoky-mountains",
+    "kind": "sight",
+    "name": "Cataloochee",
+    "location": {
+      "latitude": 35.635,
+      "longitude": -83.106
+    },
+    "rank": 7,
+    "summary": "A remote eastern valley with standing frame buildings and a reintroduced elk herd.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-great-smoky-mountains-deep-creek",
+    "placeID": "np-great-smoky-mountains",
+    "kind": "sight",
+    "name": "Deep Creek",
+    "location": {
+      "latitude": 35.464,
+      "longitude": -83.434
+    },
+    "rank": 8,
+    "summary": "Three waterfalls within easy reach of one trailhead on the park's southern edge.",
+    "hasStamp": false
+  },
+  {
+    "id": "poi-great-smoky-mountains-sugarlands-visitor-center",
+    "placeID": "np-great-smoky-mountains",
+    "kind": "visitorCentre",
+    "name": "Sugarlands Visitor Center",
+    "location": {
+      "latitude": 35.686,
+      "longitude": -83.537
+    },
+    "rank": 0,
+    "summary": "The main Tennessee-side centre, two miles from Gatlinburg.",
+    "hasStamp": true
+  },
+  {
+    "id": "poi-great-smoky-mountains-oconaluftee-visitor-center",
+    "placeID": "np-great-smoky-mountains",
+    "kind": "visitorCentre",
+    "name": "Oconaluftee Visitor Center",
+    "location": {
+      "latitude": 35.515,
+      "longitude": -83.306
+    },
+    "rank": 0,
+    "summary": "The North Carolina entrance, beside the Mountain Farm Museum.",
+    "hasStamp": true
+  },
+  {
+    "id": "poi-great-smoky-mountains-cades-cove-visitor-center",
+    "placeID": "np-great-smoky-mountains",
+    "kind": "visitorCentre",
+    "name": "Cades Cove Visitor Center",
+    "location": {
+      "latitude": 35.592,
+      "longitude": -83.832
+    },
+    "rank": 0,
+    "summary": "Midway around the Cades Cove loop, at the Cable Mill historic area.",
+    "hasStamp": true
+  }
+]

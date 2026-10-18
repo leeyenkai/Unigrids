@@ -1,0 +1,71 @@
+{
+  "placeID": "np-yellowstone",
+  "contentVersion": 1,
+  "story": [
+    "Yellowstone sits on a hotspot, and most of what the park is famous for follows from that. Three enormous eruptions — about 2.1 million, 1.3 million and 640,000 years ago — emptied magma chambers and dropped their roofs, and the last of them left the caldera that much of the park's centre lies inside. Magma still sits close enough to the surface to drive more than ten thousand hydrothermal features, roughly half the world's geysers among them. Where the plumbing constricts, water flashes to steam and a geyser erupts; where it does not, the same heat makes a hot spring, a mudpot or a fumarole.",
+    "Above the geology is an ecosystem large enough to still work. The Greater Yellowstone Ecosystem is among the last nearly intact temperate ecosystems on earth, and the park holds the only bison herd in the United States that has ranged free and wild since prehistoric times. Grey wolves, shot out by 1926, were returned in 1995; elk numbers fell, willow and aspen recovered along the streams, and ecologists have been arguing productively about the details ever since. The fires of 1988 burned about a third of the park and are now plainly part of how lodgepole pine forest here renews itself.",
+    "People have been here for at least eleven thousand years. The obsidian quarried at Obsidian Cliff travelled as far as the Ohio valley as tool stone, which makes the park an old node in a very long trade network. Twenty-seven tribes have present-day connections to this land.",
+    "The park exists in its modern form because of pictures. The Hayden survey of 1871 came back with Thomas Moran's watercolours and William Henry Jackson's photographs, and Congress — presented with evidence rather than tall stories — set the area aside in March 1872 as the world's first national park. For thirty-two years from 1886 the US Army ran it, and Fort Yellowstone's stone buildings still stand at Mammoth."
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "North Entrance at Gardiner, Montana — open to cars all year",
+      "Northeast Entrance at Cooke City, Montana — open all year",
+      "West Entrance at West Yellowstone, Montana — seasonal",
+      "South Entrance from Grand Teton and Jackson, Wyoming — seasonal",
+      "East Entrance from Cody, Wyoming — seasonal"
+    ],
+    "reservations": "There is no timed entry. Lodging and campground reservations are the constraint instead: in-park hotels open bookings around thirteen months ahead and the popular ones fill within days.",
+    "permits": [
+      "Backcountry overnights — wilderness permit, with a reservation window opening in early spring",
+      "Boating, including paddleboards and packrafts — permit, plus an aquatic-invasive inspection",
+      "Fishing — a Yellowstone park licence, which is separate from any state licence"
+    ],
+    "camping": [
+      "Mammoth Campground, open all year",
+      "Madison, Canyon, Bridge Bay, Grant Village and Fishing Bridge RV — reservable, seasonal",
+      "Indian Creek, Lewis Lake, Norris, Pebble Creek, Slough Creek and Tower Fall — smaller and more basic"
+    ],
+    "lodging": [
+      "Old Faithful Inn, a 1904 log structure and the park's landmark hotel",
+      "Lake Yellowstone Hotel, Mammoth Hot Springs Hotel, Canyon Lodge, Grant Village and Roosevelt Lodge",
+      "Gardiner, West Yellowstone, Cooke City, Cody and Jackson, outside the gates"
+    ],
+    "seasonalClosures": [
+      "Most park roads close to wheeled vehicles from early November to late April",
+      "Only the road from the North Entrance through Mammoth to Cooke City stays open to cars all winter",
+      "In winter the interior is reached by guided snowcoach and snowmobile",
+      "Dunraven Pass and the Beartooth Highway open late and close early with snow"
+    ]
+  },
+  "chronology": [
+    { "year": "c. 2.1 million years ago", "text": "The first of three caldera-forming eruptions." },
+    { "year": "c. 640,000 years ago", "text": "The most recent great eruption forms the present caldera." },
+    { "year": "c. 11,000 years ago", "text": "People are quarrying obsidian at Obsidian Cliff for tools traded across the continent." },
+    { "year": "1871", "text": "The Hayden survey returns with Moran's paintings and Jackson's photographs." },
+    { "year": "1872", "text": "President Grant signs the act creating the world's first national park." },
+    { "year": "1886", "text": "The US Army takes over administration and builds Fort Yellowstone." },
+    { "year": "1918", "text": "The National Park Service assumes management of the park." },
+    { "year": "1988", "text": "Fires burn about a third of the park's area." },
+    { "year": "1995", "text": "Grey wolves are returned after seventy years' absence." },
+    { "year": "2022", "text": "A June flood destroys sections of the North Entrance Road, rebuilt within months." }
+  ],
+  "safety": [
+    "Thermal ground is thin and the water beneath it is near boiling. Stay on boardwalks and marked trails — the crust that looks solid has given way under people and under their dogs.",
+    "Keep at least twenty-five yards from bison and elk, and a hundred yards from bears and wolves. Bison injure more visitors here than any other animal; they are fast, and they charge when crowded.",
+    "Carry bear spray in the backcountry, know how to use it, and store food in the lockers provided.",
+    "Most of the park sits above 7,500 feet. Take altitude seriously on the first day, and expect snow in any month."
+  ],
+  "regulations": [
+    "Drones may not be launched, landed or flown in the park.",
+    "Collecting anything — rock, antler, plant, thermal deposit — is prohibited.",
+    "Pets must stay within a hundred feet of roads and parking areas, and are not allowed on trails, boardwalks or in the backcountry.",
+    "Swimming or bathing in hydrothermal water is prohibited, and has been fatal."
+  ],
+  "credits": [
+    "Text written for Unigrids from public-domain National Park Service material."
+  ],
+  "sources": [
+    { "title": "Yellowstone National Park — National Park Service", "url": "https://www.nps.gov/yell/" }
+  ]
+}

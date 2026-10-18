@@ -1,0 +1,1323 @@
+[
+  {
+    "id": "np-acadia",
+    "name": "Acadia",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "ME"
+    ],
+    "centre": {
+      "latitude": 44.35,
+      "longitude": -68.21
+    },
+    "npsParkCode": "ACAD",
+    "themes": [
+      "theme-coastal",
+      "theme-conservation-movement",
+      "theme-deciduous-forest"
+    ],
+    "officialURL": "https://www.nps.gov/acad/",
+    "extent": {
+      "south": 44.05,
+      "west": -68.55,
+      "north": 44.45,
+      "east": -68.0
+    },
+    "facts": {
+      "establishedYear": 1919,
+      "areaAcres": 49075,
+      "lowestElevationMetres": 0,
+      "highestElevationMetres": 466,
+      "annualVisits": 3900000,
+      "annualVisitsYear": 2023,
+      "entranceFee": "$35 per vehicle, valid 7 days",
+      "bestSeasons": [
+        "summer",
+        "autumn"
+      ],
+      "suggestedTime": "Two to three days"
+    }
+  },
+  {
+    "id": "np-american-samoa",
+    "name": "National Park of American Samoa",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AS"
+    ],
+    "centre": {
+      "latitude": -14.26,
+      "longitude": -170.68
+    },
+    "npsParkCode": "NPSA",
+    "themes": [
+      "theme-coastal",
+      "theme-coral-reef",
+      "theme-indigenous-heritage"
+    ],
+    "officialURL": "https://www.nps.gov/npsa/"
+  },
+  {
+    "id": "np-arches",
+    "name": "Arches",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "UT"
+    ],
+    "centre": {
+      "latitude": 38.73,
+      "longitude": -109.59
+    },
+    "npsParkCode": "ARCH",
+    "themes": [
+      "theme-desert"
+    ],
+    "officialURL": "https://www.nps.gov/arch/"
+  },
+  {
+    "id": "np-badlands",
+    "name": "Badlands",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "SD"
+    ],
+    "centre": {
+      "latitude": 43.86,
+      "longitude": -102.34
+    },
+    "npsParkCode": "BADL",
+    "themes": [
+      "theme-fossils"
+    ],
+    "officialURL": "https://www.nps.gov/badl/"
+  },
+  {
+    "id": "np-big-bend",
+    "name": "Big Bend",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "TX"
+    ],
+    "centre": {
+      "latitude": 29.25,
+      "longitude": -103.25
+    },
+    "npsParkCode": "BIBE",
+    "themes": [
+      "theme-desert"
+    ],
+    "officialURL": "https://www.nps.gov/bibe/"
+  },
+  {
+    "id": "np-biscayne",
+    "name": "Biscayne",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "FL"
+    ],
+    "centre": {
+      "latitude": 25.48,
+      "longitude": -80.21
+    },
+    "npsParkCode": "BISC",
+    "themes": [
+      "theme-coastal",
+      "theme-coral-reef",
+      "theme-wetland"
+    ],
+    "officialURL": "https://www.nps.gov/bisc/"
+  },
+  {
+    "id": "np-black-canyon-of-the-gunnison",
+    "name": "Black Canyon of the Gunnison",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CO"
+    ],
+    "centre": {
+      "latitude": 38.57,
+      "longitude": -107.72
+    },
+    "npsParkCode": "BLCA",
+    "themes": [
+      "theme-canyons"
+    ],
+    "officialURL": "https://www.nps.gov/blca/"
+  },
+  {
+    "id": "np-bryce-canyon",
+    "name": "Bryce Canyon",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "UT"
+    ],
+    "centre": {
+      "latitude": 37.57,
+      "longitude": -112.18
+    },
+    "npsParkCode": "BRCA",
+    "themes": [
+      "theme-canyons"
+    ],
+    "officialURL": "https://www.nps.gov/brca/"
+  },
+  {
+    "id": "np-canyonlands",
+    "name": "Canyonlands",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "UT"
+    ],
+    "centre": {
+      "latitude": 38.2,
+      "longitude": -109.93
+    },
+    "npsParkCode": "CANY",
+    "themes": [
+      "theme-canyons",
+      "theme-desert",
+      "theme-indigenous-heritage"
+    ],
+    "officialURL": "https://www.nps.gov/cany/"
+  },
+  {
+    "id": "np-capitol-reef",
+    "name": "Capitol Reef",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "UT"
+    ],
+    "centre": {
+      "latitude": 38.37,
+      "longitude": -111.27
+    },
+    "npsParkCode": "CARE",
+    "themes": [
+      "theme-desert"
+    ],
+    "officialURL": "https://www.nps.gov/care/"
+  },
+  {
+    "id": "np-carlsbad-caverns",
+    "name": "Carlsbad Caverns",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "NM"
+    ],
+    "centre": {
+      "latitude": 32.17,
+      "longitude": -104.44
+    },
+    "npsParkCode": "CAVE",
+    "themes": [
+      "theme-caves"
+    ],
+    "officialURL": "https://www.nps.gov/cave/"
+  },
+  {
+    "id": "np-channel-islands",
+    "name": "Channel Islands",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CA"
+    ],
+    "centre": {
+      "latitude": 34.01,
+      "longitude": -119.42
+    },
+    "npsParkCode": "CHIS",
+    "themes": [
+      "theme-coastal"
+    ],
+    "officialURL": "https://www.nps.gov/chis/"
+  },
+  {
+    "id": "np-congaree",
+    "name": "Congaree",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "SC"
+    ],
+    "centre": {
+      "latitude": 33.79,
+      "longitude": -80.78
+    },
+    "npsParkCode": "CONG",
+    "themes": [
+      "theme-deciduous-forest",
+      "theme-wetland"
+    ],
+    "officialURL": "https://www.nps.gov/cong/"
+  },
+  {
+    "id": "np-crater-lake",
+    "name": "Crater Lake",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "OR"
+    ],
+    "centre": {
+      "latitude": 42.94,
+      "longitude": -122.11
+    },
+    "npsParkCode": "CRLA",
+    "themes": [
+      "theme-volcanoes"
+    ],
+    "officialURL": "https://www.nps.gov/crla/"
+  },
+  {
+    "id": "np-cuyahoga-valley",
+    "name": "Cuyahoga Valley",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "OH"
+    ],
+    "centre": {
+      "latitude": 41.24,
+      "longitude": -81.55
+    },
+    "npsParkCode": "CUVA",
+    "themes": [
+      "theme-deciduous-forest"
+    ],
+    "officialURL": "https://www.nps.gov/cuva/"
+  },
+  {
+    "id": "np-death-valley",
+    "name": "Death Valley",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CA",
+      "NV"
+    ],
+    "centre": {
+      "latitude": 36.51,
+      "longitude": -117.08
+    },
+    "npsParkCode": "DEVA",
+    "themes": [
+      "theme-desert"
+    ],
+    "officialURL": "https://www.nps.gov/deva/"
+  },
+  {
+    "id": "np-denali",
+    "name": "Denali",
+    "designation": "National Park and Preserve",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AK"
+    ],
+    "centre": {
+      "latitude": 63.33,
+      "longitude": -150.5
+    },
+    "npsParkCode": "DENA",
+    "themes": [
+      "theme-alpine",
+      "theme-glaciers",
+      "theme-mountains",
+      "theme-tundra"
+    ],
+    "officialURL": "https://www.nps.gov/dena/"
+  },
+  {
+    "id": "np-dry-tortugas",
+    "name": "Dry Tortugas",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "FL"
+    ],
+    "centre": {
+      "latitude": 24.63,
+      "longitude": -82.87
+    },
+    "npsParkCode": "DRTO",
+    "themes": [
+      "theme-coastal",
+      "theme-coral-reef"
+    ],
+    "officialURL": "https://www.nps.gov/drto/"
+  },
+  {
+    "id": "np-everglades",
+    "name": "Everglades",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "FL"
+    ],
+    "centre": {
+      "latitude": 25.32,
+      "longitude": -80.93
+    },
+    "npsParkCode": "EVER",
+    "themes": [
+      "theme-wetland"
+    ],
+    "officialURL": "https://www.nps.gov/ever/"
+  },
+  {
+    "id": "np-gates-of-the-arctic",
+    "name": "Gates of the Arctic",
+    "designation": "National Park and Preserve",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AK"
+    ],
+    "centre": {
+      "latitude": 67.78,
+      "longitude": -153.3
+    },
+    "npsParkCode": "GAAR",
+    "themes": [
+      "theme-tundra"
+    ],
+    "officialURL": "https://www.nps.gov/gaar/"
+  },
+  {
+    "id": "np-gateway-arch",
+    "name": "Gateway Arch",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "MO"
+    ],
+    "centre": {
+      "latitude": 38.63,
+      "longitude": -90.19
+    },
+    "npsParkCode": "JEFF",
+    "themes": [],
+    "officialURL": "https://www.nps.gov/jeff/"
+  },
+  {
+    "id": "np-glacier",
+    "name": "Glacier",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "MT"
+    ],
+    "centre": {
+      "latitude": 48.76,
+      "longitude": -113.79
+    },
+    "npsParkCode": "GLAC",
+    "themes": [
+      "theme-alpine",
+      "theme-glaciers",
+      "theme-mountains"
+    ],
+    "officialURL": "https://www.nps.gov/glac/"
+  },
+  {
+    "id": "np-glacier-bay",
+    "name": "Glacier Bay",
+    "designation": "National Park and Preserve",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AK"
+    ],
+    "centre": {
+      "latitude": 58.5,
+      "longitude": -137.0
+    },
+    "npsParkCode": "GLBA",
+    "themes": [
+      "theme-coastal",
+      "theme-glaciers"
+    ],
+    "officialURL": "https://www.nps.gov/glba/"
+  },
+  {
+    "id": "np-grand-canyon",
+    "name": "Grand Canyon",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AZ"
+    ],
+    "centre": {
+      "latitude": 36.11,
+      "longitude": -112.11
+    },
+    "npsParkCode": "GRCA",
+    "themes": [
+      "theme-canyons"
+    ],
+    "officialURL": "https://www.nps.gov/grca/"
+  },
+  {
+    "id": "np-grand-teton",
+    "name": "Grand Teton",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "WY"
+    ],
+    "centre": {
+      "latitude": 43.79,
+      "longitude": -110.68
+    },
+    "npsParkCode": "GRTE",
+    "themes": [
+      "theme-alpine",
+      "theme-mountains"
+    ],
+    "officialURL": "https://www.nps.gov/grte/"
+  },
+  {
+    "id": "np-great-basin",
+    "name": "Great Basin",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "NV"
+    ],
+    "centre": {
+      "latitude": 38.98,
+      "longitude": -114.3
+    },
+    "npsParkCode": "GRBA",
+    "themes": [
+      "theme-alpine",
+      "theme-caves"
+    ],
+    "officialURL": "https://www.nps.gov/grba/"
+  },
+  {
+    "id": "np-great-sand-dunes",
+    "name": "Great Sand Dunes",
+    "designation": "National Park and Preserve",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CO"
+    ],
+    "centre": {
+      "latitude": 37.79,
+      "longitude": -105.59
+    },
+    "npsParkCode": "GRSA",
+    "themes": [
+      "theme-dunes"
+    ],
+    "officialURL": "https://www.nps.gov/grsa/"
+  },
+  {
+    "id": "np-great-smoky-mountains",
+    "name": "Great Smoky Mountains",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "TN",
+      "NC"
+    ],
+    "centre": {
+      "latitude": 35.61,
+      "longitude": -83.49
+    },
+    "npsParkCode": "GRSM",
+    "themes": [
+      "theme-conservation-movement",
+      "theme-deciduous-forest",
+      "theme-indigenous-heritage",
+      "theme-mountains"
+    ],
+    "officialURL": "https://www.nps.gov/grsm/",
+    "extent": {
+      "south": 35.43,
+      "west": -84.0,
+      "north": 35.8,
+      "east": -83.0
+    },
+    "facts": {
+      "establishedYear": 1934,
+      "areaAcres": 522427,
+      "lowestElevationMetres": 267,
+      "highestElevationMetres": 2025,
+      "annualVisits": 13300000,
+      "annualVisitsYear": 2023,
+      "entranceFee": "No entrance fee; a parking tag is required to park for more than 15 minutes",
+      "bestSeasons": [
+        "spring",
+        "autumn"
+      ],
+      "suggestedTime": "Three to four days"
+    }
+  },
+  {
+    "id": "np-guadalupe-mountains",
+    "name": "Guadalupe Mountains",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "TX"
+    ],
+    "centre": {
+      "latitude": 31.92,
+      "longitude": -104.87
+    },
+    "npsParkCode": "GUMO",
+    "themes": [
+      "theme-mountains"
+    ],
+    "officialURL": "https://www.nps.gov/gumo/"
+  },
+  {
+    "id": "np-haleakala",
+    "name": "Haleakalā",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "HI"
+    ],
+    "centre": {
+      "latitude": 20.72,
+      "longitude": -156.17
+    },
+    "npsParkCode": "HALE",
+    "themes": [
+      "theme-indigenous-heritage",
+      "theme-volcanoes"
+    ],
+    "officialURL": "https://www.nps.gov/hale/"
+  },
+  {
+    "id": "np-hawaii-volcanoes",
+    "name": "Hawaiʻi Volcanoes",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "HI"
+    ],
+    "centre": {
+      "latitude": 19.38,
+      "longitude": -155.2
+    },
+    "npsParkCode": "HAVO",
+    "themes": [
+      "theme-indigenous-heritage",
+      "theme-volcanoes"
+    ],
+    "officialURL": "https://www.nps.gov/havo/"
+  },
+  {
+    "id": "np-hot-springs",
+    "name": "Hot Springs",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AR"
+    ],
+    "centre": {
+      "latitude": 34.52,
+      "longitude": -93.05
+    },
+    "npsParkCode": "HOSP",
+    "themes": [
+      "theme-hot-springs"
+    ],
+    "officialURL": "https://www.nps.gov/hosp/"
+  },
+  {
+    "id": "np-indiana-dunes",
+    "name": "Indiana Dunes",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "IN"
+    ],
+    "centre": {
+      "latitude": 41.63,
+      "longitude": -87.05
+    },
+    "npsParkCode": "INDU",
+    "themes": [
+      "theme-coastal",
+      "theme-dunes"
+    ],
+    "officialURL": "https://www.nps.gov/indu/"
+  },
+  {
+    "id": "np-isle-royale",
+    "name": "Isle Royale",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "MI"
+    ],
+    "centre": {
+      "latitude": 48.01,
+      "longitude": -88.55
+    },
+    "npsParkCode": "ISRO",
+    "themes": [],
+    "officialURL": "https://www.nps.gov/isro/"
+  },
+  {
+    "id": "np-joshua-tree",
+    "name": "Joshua Tree",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CA"
+    ],
+    "centre": {
+      "latitude": 33.87,
+      "longitude": -115.9
+    },
+    "npsParkCode": "JOTR",
+    "themes": [
+      "theme-desert"
+    ],
+    "officialURL": "https://www.nps.gov/jotr/"
+  },
+  {
+    "id": "np-katmai",
+    "name": "Katmai",
+    "designation": "National Park and Preserve",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AK"
+    ],
+    "centre": {
+      "latitude": 58.5,
+      "longitude": -155.0
+    },
+    "npsParkCode": "KATM",
+    "themes": [
+      "theme-volcanoes"
+    ],
+    "officialURL": "https://www.nps.gov/katm/"
+  },
+  {
+    "id": "np-kenai-fjords",
+    "name": "Kenai Fjords",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AK"
+    ],
+    "centre": {
+      "latitude": 59.92,
+      "longitude": -149.65
+    },
+    "npsParkCode": "KEFJ",
+    "themes": [
+      "theme-coastal",
+      "theme-glaciers"
+    ],
+    "officialURL": "https://www.nps.gov/kefj/"
+  },
+  {
+    "id": "np-kings-canyon",
+    "name": "Kings Canyon",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CA"
+    ],
+    "centre": {
+      "latitude": 36.89,
+      "longitude": -118.56
+    },
+    "npsParkCode": "KICA",
+    "themes": [
+      "theme-alpine"
+    ],
+    "officialURL": "https://www.nps.gov/kica/"
+  },
+  {
+    "id": "np-kobuk-valley",
+    "name": "Kobuk Valley",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AK"
+    ],
+    "centre": {
+      "latitude": 67.33,
+      "longitude": -159.12
+    },
+    "npsParkCode": "KOVA",
+    "themes": [
+      "theme-tundra"
+    ],
+    "officialURL": "https://www.nps.gov/kova/"
+  },
+  {
+    "id": "np-lake-clark",
+    "name": "Lake Clark",
+    "designation": "National Park and Preserve",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AK"
+    ],
+    "centre": {
+      "latitude": 60.97,
+      "longitude": -153.42
+    },
+    "npsParkCode": "LACL",
+    "themes": [],
+    "officialURL": "https://www.nps.gov/lacl/"
+  },
+  {
+    "id": "np-lassen-volcanic",
+    "name": "Lassen Volcanic",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CA"
+    ],
+    "centre": {
+      "latitude": 40.5,
+      "longitude": -121.42
+    },
+    "npsParkCode": "LAVO",
+    "themes": [
+      "theme-hot-springs",
+      "theme-volcanoes"
+    ],
+    "officialURL": "https://www.nps.gov/lavo/"
+  },
+  {
+    "id": "np-mammoth-cave",
+    "name": "Mammoth Cave",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "KY"
+    ],
+    "centre": {
+      "latitude": 37.19,
+      "longitude": -86.1
+    },
+    "npsParkCode": "MACA",
+    "themes": [
+      "theme-caves",
+      "theme-deciduous-forest"
+    ],
+    "officialURL": "https://www.nps.gov/maca/"
+  },
+  {
+    "id": "np-mesa-verde",
+    "name": "Mesa Verde",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CO"
+    ],
+    "centre": {
+      "latitude": 37.23,
+      "longitude": -108.46
+    },
+    "npsParkCode": "MEVE",
+    "themes": [
+      "theme-indigenous-heritage"
+    ],
+    "officialURL": "https://www.nps.gov/meve/"
+  },
+  {
+    "id": "np-mount-rainier",
+    "name": "Mount Rainier",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "WA"
+    ],
+    "centre": {
+      "latitude": 46.85,
+      "longitude": -121.75
+    },
+    "npsParkCode": "MORA",
+    "themes": [
+      "theme-alpine",
+      "theme-glaciers",
+      "theme-mountains"
+    ],
+    "officialURL": "https://www.nps.gov/mora/"
+  },
+  {
+    "id": "np-new-river-gorge",
+    "name": "New River Gorge",
+    "designation": "National Park and Preserve",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "WV"
+    ],
+    "centre": {
+      "latitude": 38.07,
+      "longitude": -81.08
+    },
+    "npsParkCode": "NERI",
+    "themes": [
+      "theme-deciduous-forest"
+    ],
+    "officialURL": "https://www.nps.gov/neri/"
+  },
+  {
+    "id": "np-north-cascades",
+    "name": "North Cascades",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "WA"
+    ],
+    "centre": {
+      "latitude": 48.7,
+      "longitude": -121.2
+    },
+    "npsParkCode": "NOCA",
+    "themes": [
+      "theme-alpine",
+      "theme-glaciers",
+      "theme-mountains"
+    ],
+    "officialURL": "https://www.nps.gov/noca/"
+  },
+  {
+    "id": "np-olympic",
+    "name": "Olympic",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "WA"
+    ],
+    "centre": {
+      "latitude": 47.8,
+      "longitude": -123.6
+    },
+    "npsParkCode": "OLYM",
+    "themes": [
+      "theme-coastal",
+      "theme-glaciers",
+      "theme-temperate-rainforest"
+    ],
+    "officialURL": "https://www.nps.gov/olym/"
+  },
+  {
+    "id": "np-petrified-forest",
+    "name": "Petrified Forest",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AZ"
+    ],
+    "centre": {
+      "latitude": 35.07,
+      "longitude": -109.78
+    },
+    "npsParkCode": "PEFO",
+    "themes": [
+      "theme-desert",
+      "theme-fossils",
+      "theme-indigenous-heritage"
+    ],
+    "officialURL": "https://www.nps.gov/pefo/"
+  },
+  {
+    "id": "np-pinnacles",
+    "name": "Pinnacles",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CA"
+    ],
+    "centre": {
+      "latitude": 36.49,
+      "longitude": -121.17
+    },
+    "npsParkCode": "PINN",
+    "themes": [],
+    "officialURL": "https://www.nps.gov/pinn/"
+  },
+  {
+    "id": "np-redwood",
+    "name": "Redwood",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CA"
+    ],
+    "centre": {
+      "latitude": 41.4,
+      "longitude": -124.0
+    },
+    "npsParkCode": "REDW",
+    "themes": [
+      "theme-coastal",
+      "theme-conservation-movement",
+      "theme-temperate-rainforest"
+    ],
+    "officialURL": "https://www.nps.gov/redw/"
+  },
+  {
+    "id": "np-rocky-mountain",
+    "name": "Rocky Mountain",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CO"
+    ],
+    "centre": {
+      "latitude": 40.34,
+      "longitude": -105.68
+    },
+    "npsParkCode": "ROMO",
+    "themes": [
+      "theme-alpine",
+      "theme-mountains",
+      "theme-tundra"
+    ],
+    "officialURL": "https://www.nps.gov/romo/"
+  },
+  {
+    "id": "np-saguaro",
+    "name": "Saguaro",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AZ"
+    ],
+    "centre": {
+      "latitude": 32.25,
+      "longitude": -110.5
+    },
+    "npsParkCode": "SAGU",
+    "themes": [
+      "theme-desert"
+    ],
+    "officialURL": "https://www.nps.gov/sagu/"
+  },
+  {
+    "id": "np-sequoia",
+    "name": "Sequoia",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CA"
+    ],
+    "centre": {
+      "latitude": 36.49,
+      "longitude": -118.57
+    },
+    "npsParkCode": "SEQU",
+    "themes": [
+      "theme-alpine"
+    ],
+    "officialURL": "https://www.nps.gov/sequ/"
+  },
+  {
+    "id": "np-shenandoah",
+    "name": "Shenandoah",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "VA"
+    ],
+    "centre": {
+      "latitude": 38.53,
+      "longitude": -78.35
+    },
+    "npsParkCode": "SHEN",
+    "themes": [
+      "theme-deciduous-forest",
+      "theme-mountains"
+    ],
+    "officialURL": "https://www.nps.gov/shen/"
+  },
+  {
+    "id": "np-theodore-roosevelt",
+    "name": "Theodore Roosevelt",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "ND"
+    ],
+    "centre": {
+      "latitude": 46.98,
+      "longitude": -103.54
+    },
+    "npsParkCode": "THRO",
+    "themes": [
+      "theme-conservation-movement",
+      "theme-fossils"
+    ],
+    "officialURL": "https://www.nps.gov/thro/"
+  },
+  {
+    "id": "np-virgin-islands",
+    "name": "Virgin Islands",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "VI"
+    ],
+    "centre": {
+      "latitude": 18.34,
+      "longitude": -64.73
+    },
+    "npsParkCode": "VIIS",
+    "themes": [
+      "theme-coastal",
+      "theme-coral-reef"
+    ],
+    "officialURL": "https://www.nps.gov/viis/"
+  },
+  {
+    "id": "np-voyageurs",
+    "name": "Voyageurs",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "MN"
+    ],
+    "centre": {
+      "latitude": 48.5,
+      "longitude": -92.88
+    },
+    "npsParkCode": "VOYA",
+    "themes": [
+      "theme-wetland"
+    ],
+    "officialURL": "https://www.nps.gov/voya/"
+  },
+  {
+    "id": "np-white-sands",
+    "name": "White Sands",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "NM"
+    ],
+    "centre": {
+      "latitude": 32.78,
+      "longitude": -106.17
+    },
+    "npsParkCode": "WHSA",
+    "themes": [
+      "theme-desert",
+      "theme-dunes"
+    ],
+    "officialURL": "https://www.nps.gov/whsa/"
+  },
+  {
+    "id": "np-wind-cave",
+    "name": "Wind Cave",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "SD"
+    ],
+    "centre": {
+      "latitude": 43.57,
+      "longitude": -103.48
+    },
+    "npsParkCode": "WICA",
+    "themes": [
+      "theme-caves"
+    ],
+    "officialURL": "https://www.nps.gov/wica/"
+  },
+  {
+    "id": "np-wrangell-st-elias",
+    "name": "Wrangell–St. Elias",
+    "designation": "National Park and Preserve",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "AK"
+    ],
+    "centre": {
+      "latitude": 61.0,
+      "longitude": -142.0
+    },
+    "npsParkCode": "WRST",
+    "themes": [
+      "theme-glaciers",
+      "theme-mountains",
+      "theme-tundra"
+    ],
+    "officialURL": "https://www.nps.gov/wrst/"
+  },
+  {
+    "id": "np-yellowstone",
+    "name": "Yellowstone",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "WY",
+      "MT",
+      "ID"
+    ],
+    "centre": {
+      "latitude": 44.6,
+      "longitude": -110.5
+    },
+    "npsParkCode": "YELL",
+    "themes": [
+      "theme-conservation-movement",
+      "theme-hot-springs",
+      "theme-volcanoes"
+    ],
+    "officialURL": "https://www.nps.gov/yell/",
+    "extent": {
+      "south": 44.13,
+      "west": -111.15,
+      "north": 45.11,
+      "east": -109.82
+    },
+    "facts": {
+      "establishedYear": 1872,
+      "areaAcres": 2219791,
+      "lowestElevationMetres": 1610,
+      "highestElevationMetres": 3462,
+      "annualVisits": 4500000,
+      "annualVisitsYear": 2023,
+      "entranceFee": "$35 per vehicle, valid 7 days",
+      "bestSeasons": [
+        "summer",
+        "autumn"
+      ],
+      "suggestedTime": "Four to five days"
+    }
+  },
+  {
+    "id": "np-yosemite",
+    "name": "Yosemite",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "CA"
+    ],
+    "centre": {
+      "latitude": 37.85,
+      "longitude": -119.57
+    },
+    "npsParkCode": "YOSE",
+    "themes": [
+      "theme-alpine",
+      "theme-conservation-movement"
+    ],
+    "officialURL": "https://www.nps.gov/yose/"
+  },
+  {
+    "id": "np-zion",
+    "name": "Zion",
+    "designation": "National Park",
+    "kind": "nationalPark",
+    "agency": "nps",
+    "states": [
+      "UT"
+    ],
+    "centre": {
+      "latitude": 37.3,
+      "longitude": -113.03
+    },
+    "npsParkCode": "ZION",
+    "themes": [
+      "theme-canyons"
+    ],
+    "officialURL": "https://www.nps.gov/zion/",
+    "extent": {
+      "south": 37.12,
+      "west": -113.25,
+      "north": 37.52,
+      "east": -112.85
+    },
+    "facts": {
+      "establishedYear": 1919,
+      "areaAcres": 147237,
+      "lowestElevationMetres": 1117,
+      "highestElevationMetres": 2660,
+      "annualVisits": 4600000,
+      "annualVisitsYear": 2023,
+      "entranceFee": "$35 per vehicle, valid 7 days",
+      "bestSeasons": [
+        "spring",
+        "autumn"
+      ],
+      "suggestedTime": "Two to three days"
+    }
+  }
+]

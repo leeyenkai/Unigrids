@@ -1,0 +1,78 @@
+"""Hand-authored pilot seed: the 63 US national parks.
+
+Each row is (unigrids-id-slug, name, designation-suffix, [state codes],
+latitude, longitude, NPS park code).
+
+Coordinates are approximate park centres rounded to two decimal places — good
+enough to place a map pin and frame a camera, not survey data. The pipeline's
+fetch step replaces every value here with NPS API output.
+"""
+
+PARKS = [
+    ("acadia", "Acadia", "National Park", ["ME"], 44.35, -68.21, "ACAD"),
+    ("american-samoa", "National Park of American Samoa", "National Park", ["AS"], -14.26, -170.68, "NPSA"),
+    ("arches", "Arches", "National Park", ["UT"], 38.73, -109.59, "ARCH"),
+    ("badlands", "Badlands", "National Park", ["SD"], 43.86, -102.34, "BADL"),
+    ("big-bend", "Big Bend", "National Park", ["TX"], 29.25, -103.25, "BIBE"),
+    ("biscayne", "Biscayne", "National Park", ["FL"], 25.48, -80.21, "BISC"),
+    ("black-canyon-of-the-gunnison", "Black Canyon of the Gunnison", "National Park", ["CO"], 38.57, -107.72, "BLCA"),
+    ("bryce-canyon", "Bryce Canyon", "National Park", ["UT"], 37.57, -112.18, "BRCA"),
+    ("canyonlands", "Canyonlands", "National Park", ["UT"], 38.20, -109.93, "CANY"),
+    ("capitol-reef", "Capitol Reef", "National Park", ["UT"], 38.37, -111.27, "CARE"),
+    ("carlsbad-caverns", "Carlsbad Caverns", "National Park", ["NM"], 32.17, -104.44, "CAVE"),
+    ("channel-islands", "Channel Islands", "National Park", ["CA"], 34.01, -119.42, "CHIS"),
+    ("congaree", "Congaree", "National Park", ["SC"], 33.79, -80.78, "CONG"),
+    ("crater-lake", "Crater Lake", "National Park", ["OR"], 42.94, -122.11, "CRLA"),
+    ("cuyahoga-valley", "Cuyahoga Valley", "National Park", ["OH"], 41.24, -81.55, "CUVA"),
+    ("death-valley", "Death Valley", "National Park", ["CA", "NV"], 36.51, -117.08, "DEVA"),
+    ("denali", "Denali", "National Park and Preserve", ["AK"], 63.33, -150.50, "DENA"),
+    ("dry-tortugas", "Dry Tortugas", "National Park", ["FL"], 24.63, -82.87, "DRTO"),
+    ("everglades", "Everglades", "National Park", ["FL"], 25.32, -80.93, "EVER"),
+    ("gates-of-the-arctic", "Gates of the Arctic", "National Park and Preserve", ["AK"], 67.78, -153.30, "GAAR"),
+    ("gateway-arch", "Gateway Arch", "National Park", ["MO"], 38.63, -90.19, "JEFF"),
+    ("glacier", "Glacier", "National Park", ["MT"], 48.76, -113.79, "GLAC"),
+    ("glacier-bay", "Glacier Bay", "National Park and Preserve", ["AK"], 58.50, -137.00, "GLBA"),
+    ("grand-canyon", "Grand Canyon", "National Park", ["AZ"], 36.11, -112.11, "GRCA"),
+    ("grand-teton", "Grand Teton", "National Park", ["WY"], 43.79, -110.68, "GRTE"),
+    ("great-basin", "Great Basin", "National Park", ["NV"], 38.98, -114.30, "GRBA"),
+    ("great-sand-dunes", "Great Sand Dunes", "National Park and Preserve", ["CO"], 37.79, -105.59, "GRSA"),
+    ("great-smoky-mountains", "Great Smoky Mountains", "National Park", ["TN", "NC"], 35.61, -83.49, "GRSM"),
+    ("guadalupe-mountains", "Guadalupe Mountains", "National Park", ["TX"], 31.92, -104.87, "GUMO"),
+    ("haleakala", "Haleakalā", "National Park", ["HI"], 20.72, -156.17, "HALE"),
+    ("hawaii-volcanoes", "Hawaiʻi Volcanoes", "National Park", ["HI"], 19.38, -155.20, "HAVO"),
+    ("hot-springs", "Hot Springs", "National Park", ["AR"], 34.52, -93.05, "HOSP"),
+    ("indiana-dunes", "Indiana Dunes", "National Park", ["IN"], 41.63, -87.05, "INDU"),
+    ("isle-royale", "Isle Royale", "National Park", ["MI"], 48.01, -88.55, "ISRO"),
+    ("joshua-tree", "Joshua Tree", "National Park", ["CA"], 33.87, -115.90, "JOTR"),
+    ("katmai", "Katmai", "National Park and Preserve", ["AK"], 58.50, -155.00, "KATM"),
+    ("kenai-fjords", "Kenai Fjords", "National Park", ["AK"], 59.92, -149.65, "KEFJ"),
+    ("kings-canyon", "Kings Canyon", "National Park", ["CA"], 36.89, -118.56, "KICA"),
+    ("kobuk-valley", "Kobuk Valley", "National Park", ["AK"], 67.33, -159.12, "KOVA"),
+    ("lake-clark", "Lake Clark", "National Park and Preserve", ["AK"], 60.97, -153.42, "LACL"),
+    ("lassen-volcanic", "Lassen Volcanic", "National Park", ["CA"], 40.50, -121.42, "LAVO"),
+    ("mammoth-cave", "Mammoth Cave", "National Park", ["KY"], 37.19, -86.10, "MACA"),
+    ("mesa-verde", "Mesa Verde", "National Park", ["CO"], 37.23, -108.46, "MEVE"),
+    ("mount-rainier", "Mount Rainier", "National Park", ["WA"], 46.85, -121.75, "MORA"),
+    ("new-river-gorge", "New River Gorge", "National Park and Preserve", ["WV"], 38.07, -81.08, "NERI"),
+    ("north-cascades", "North Cascades", "National Park", ["WA"], 48.70, -121.20, "NOCA"),
+    ("olympic", "Olympic", "National Park", ["WA"], 47.80, -123.60, "OLYM"),
+    ("petrified-forest", "Petrified Forest", "National Park", ["AZ"], 35.07, -109.78, "PEFO"),
+    ("pinnacles", "Pinnacles", "National Park", ["CA"], 36.49, -121.17, "PINN"),
+    ("redwood", "Redwood", "National Park", ["CA"], 41.40, -124.00, "REDW"),
+    ("rocky-mountain", "Rocky Mountain", "National Park", ["CO"], 40.34, -105.68, "ROMO"),
+    ("saguaro", "Saguaro", "National Park", ["AZ"], 32.25, -110.50, "SAGU"),
+    ("sequoia", "Sequoia", "National Park", ["CA"], 36.49, -118.57, "SEQU"),
+    ("shenandoah", "Shenandoah", "National Park", ["VA"], 38.53, -78.35, "SHEN"),
+    ("theodore-roosevelt", "Theodore Roosevelt", "National Park", ["ND"], 46.98, -103.54, "THRO"),
+    ("virgin-islands", "Virgin Islands", "National Park", ["VI"], 18.34, -64.73, "VIIS"),
+    ("voyageurs", "Voyageurs", "National Park", ["MN"], 48.50, -92.88, "VOYA"),
+    ("white-sands", "White Sands", "National Park", ["NM"], 32.78, -106.17, "WHSA"),
+    ("wind-cave", "Wind Cave", "National Park", ["SD"], 43.57, -103.48, "WICA"),
+    ("wrangell-st-elias", "Wrangell–St. Elias", "National Park and Preserve", ["AK"], 61.00, -142.00, "WRST"),
+    ("yellowstone", "Yellowstone", "National Park", ["WY", "MT", "ID"], 44.60, -110.50, "YELL"),
+    ("yosemite", "Yosemite", "National Park", ["CA"], 37.85, -119.57, "YOSE"),
+    ("zion", "Zion", "National Park", ["UT"], 37.30, -113.03, "ZION"),
+]
+
+assert len(PARKS) == 63, f"expected 63 national parks, got {len(PARKS)}"
+assert len({p[0] for p in PARKS}) == 63, "duplicate slug"
