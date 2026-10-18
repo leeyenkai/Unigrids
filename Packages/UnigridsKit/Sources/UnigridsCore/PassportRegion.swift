@@ -34,14 +34,27 @@ public enum PassportRegion: String, CaseIterable, Sendable, Codable, Identifiabl
         }
     }
 
-    /// The region's cancellation ink, as an sRGB hex triplet.
+    /// The region's cancellation ink.
     ///
     /// This is **Unigrids' own palette**, chosen to be mutually distinguishable and to sit
     /// in the ink-on-paper range. It approximates the paper passport's regional scheme
     /// rather than reproducing documented values — the official colours are part of the
     /// one-time curation in SPECIFICATION.md §17, follow-up 3, and this palette should be
     /// corrected when that lands.
-    public var inkHex: String {
+    ///
+    /// Two values per region, not one. A stamp lands on a native passport page, and the
+    /// dark ones are the same hue lifted until they clear 4.5:1 against the lightest dark
+    /// surface — body text, not decoration, because the site name on a 112-point stamp
+    /// sets at about 10.6 points.
+    public func ink(_ scheme: PaletteScheme) -> ColorValue {
+        let hex = switch scheme {
+        case .light: lightInkHex
+        case .dark: darkInkHex
+        }
+        return ColorValue(hex: hex) ?? ColorValue(red: 0, green: 0, blue: 0)
+    }
+
+    private var lightInkHex: String {
         switch self {
         case .northAtlantic: "1F4E79"
         case .midAtlantic: "6A3D7C"
@@ -52,6 +65,20 @@ public enum PassportRegion: String, CaseIterable, Sendable, Codable, Identifiabl
         case .rockyMountain: "2F5D50"
         case .western: "8A6A12"
         case .pacificNorthwestAndAlaska: "1C6E7E"
+        }
+    }
+
+    private var darkInkHex: String {
+        switch self {
+        case .northAtlantic: "5F9DD6"
+        case .midAtlantic: "B489C5"
+        case .nationalCapital: "D5818A"
+        case .southeast: "2DAD67"
+        case .midwest: "DC823C"
+        case .southwest: "E57B54"
+        case .rockyMountain: "54A78F"
+        case .western: "BD9219"
+        case .pacificNorthwestAndAlaska: "2AA6BE"
         }
     }
 

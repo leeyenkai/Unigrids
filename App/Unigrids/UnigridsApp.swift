@@ -31,8 +31,10 @@ struct UnigridsApp: App {
                 RootTabView(loadErrorMessage: reference.errorMessage)
                     .environment(\.referenceStore, reference.store)
                     .modelContainer(container)
+                    .unigridsAppearance()
             case let .failure(error):
                 StoreUnavailableView(message: String(describing: error))
+                    .unigridsAppearance()
             }
         }
         #if os(macOS)
@@ -41,9 +43,21 @@ struct UnigridsApp: App {
 
         #if os(macOS)
             Settings {
-                SettingsScreen()
-                    .environment(\.referenceStore, reference.store)
-                    .frame(width: 520, height: 620)
+                // The second root. It needs the appearance for the same reason the window
+                // does, and the container because `SettingsScreen` queries visits and
+                // stamps — without one it reported zero of each on the Mac.
+                switch userData {
+                case let .success(container):
+                    SettingsScreen()
+                        .environment(\.referenceStore, reference.store)
+                        .modelContainer(container)
+                        .unigridsAppearance()
+                        .frame(width: 520, height: 620)
+                case let .failure(error):
+                    StoreUnavailableView(message: String(describing: error))
+                        .unigridsAppearance()
+                        .frame(width: 520, height: 620)
+                }
             }
         #endif
     }

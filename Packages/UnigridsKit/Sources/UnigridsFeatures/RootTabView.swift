@@ -62,7 +62,7 @@ struct DataUnavailableBanner: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(12)
-        .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 12))
+        .background(.thinMaterial, in: RoundedRectangle(cornerRadius: NativeMetrics.chipRadius))
         .padding(.horizontal, 16)
     }
 }

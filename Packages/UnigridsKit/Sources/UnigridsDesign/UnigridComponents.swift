@@ -4,6 +4,8 @@ import UnigridsCore
 /// The black title band a Unigrid brochure opens with: park name reversed out in white,
 /// designation and states beneath (SPECIFICATION.md §6, panel 1).
 public struct UnigridTitleBand: View {
+    @Environment(\.unigrid) private var style
+
     private let name: String
     private let designation: String
     private let states: String
@@ -18,17 +20,17 @@ public struct UnigridTitleBand: View {
         VStack(alignment: .leading, spacing: 6) {
             Text(name)
                 .font(UnigridStyle.bandTitle())
-                .foregroundStyle(.white)
+                .foregroundStyle(style.bandInk)
                 .fixedSize(horizontal: false, vertical: true)
             Text("\(designation)  ·  \(states)".uppercased())
                 .font(UnigridStyle.dataLabel)
                 .tracking(1.2)
-                .foregroundStyle(.white.opacity(0.75))
+                .foregroundStyle(style.bandInkSecondary)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal, UnigridStyle.panelPadding)
         .padding(.vertical, 22)
-        .background(UnigridStyle.band)
+        .background(style.band)
         .accessibilityElement(children: .combine)
         .accessibilityLabel("\(name) \(designation), \(states)")
     }
@@ -36,7 +38,7 @@ public struct UnigridTitleBand: View {
 
 /// One panel on the guide's grid: a hairline-ruled heading over its content.
 public struct UnigridPanel<Content: View>: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
 
     private let title: String?
     private let content: Content
@@ -53,9 +55,9 @@ public struct UnigridPanel<Content: View>: View {
                     Text(title.uppercased())
                         .font(UnigridStyle.panelHeading)
                         .tracking(1.4)
-                        .foregroundStyle(UnigridStyle.ink(scheme))
+                        .foregroundStyle(style.ink)
                     Rectangle()
-                        .fill(UnigridStyle.ink(scheme))
+                        .fill(style.ink)
                         .frame(height: 2)
                 }
                 .accessibilityAddTraits(.isHeader)
@@ -64,17 +66,17 @@ public struct UnigridPanel<Content: View>: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(UnigridStyle.panelPadding)
-        .background(UnigridStyle.panel(scheme))
+        .background(style.panel)
         .overlay {
             Rectangle()
-                .stroke(UnigridStyle.rule(scheme), lineWidth: 1)
+                .stroke(style.rule, lineWidth: 1)
         }
     }
 }
 
 /// A label-and-value row, as the brochures set their data panels.
 public struct UnigridDataRow: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
 
     private let label: String
     private let value: String
@@ -89,10 +91,10 @@ public struct UnigridDataRow: View {
             Text(label.uppercased())
                 .font(UnigridStyle.dataLabel)
                 .tracking(1)
-                .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+                .foregroundStyle(style.inkSecondary)
             Text(value)
                 .font(UnigridStyle.dataValue)
-                .foregroundStyle(UnigridStyle.ink(scheme))
+                .foregroundStyle(style.ink)
                 .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -104,7 +106,7 @@ public struct UnigridDataRow: View {
 /// A numbered item, used by the sights panel so the guide, the 3D view and the
 /// fly-through all read in the same order.
 public struct UnigridNumberedItem: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
 
     private let number: Int
     private let title: String
@@ -122,25 +124,25 @@ public struct UnigridNumberedItem: View {
         HStack(alignment: .firstTextBaseline, spacing: 12) {
             Text("\(number)")
                 .font(UnigridStyle.dataLabel)
-                .foregroundStyle(.white)
+                .foregroundStyle(isSeen ? style.onAccent : style.bandInk)
                 .frame(width: 22, height: 22)
-                .background(isSeen ? UnigridStyle.parkGreen : UnigridStyle.band)
+                .background(isSeen ? style.accent : style.band)
             VStack(alignment: .leading, spacing: 3) {
                 HStack(spacing: 6) {
                     Text(title)
                         .font(UnigridStyle.itemTitle)
-                        .foregroundStyle(UnigridStyle.ink(scheme))
+                        .foregroundStyle(style.ink)
                     if isSeen {
                         Image(systemName: "checkmark")
                             .font(.caption2.bold())
-                            .foregroundStyle(UnigridStyle.parkGreen)
+                            .foregroundStyle(style.accent)
                             .accessibilityHidden(true)
                     }
                 }
                 if let detail {
                     Text(detail)
                         .font(UnigridStyle.prose)
-                        .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+                        .foregroundStyle(style.inkSecondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
             }
@@ -155,7 +157,7 @@ public struct UnigridNumberedItem: View {
 
 /// A chronology row: year in the margin, event beside it (SPECIFICATION.md §6, panel 10).
 public struct UnigridChronologyRow: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
     @Environment(\.dynamicTypeSize) private var typeSize
 
     private let entry: ChronologyEntry
@@ -174,14 +176,14 @@ public struct UnigridChronologyRow: View {
         layout {
             Text(entry.year)
                 .font(UnigridStyle.dataLabel)
-                .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+                .foregroundStyle(style.inkSecondary)
                 .frame(
                     width: typeSize.isAccessibilitySize ? nil : 84,
                     alignment: .leading
                 )
             Text(entry.text)
                 .font(UnigridStyle.prose)
-                .foregroundStyle(UnigridStyle.ink(scheme))
+                .foregroundStyle(style.ink)
                 .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -196,7 +198,7 @@ public struct UnigridChronologyRow: View {
 /// work is not. This is how the guide shows where the brochure map will go without
 /// implying it is missing by accident.
 public struct UnigridPendingPanel: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
 
     private let title: String
     private let explanation: String
@@ -211,10 +213,10 @@ public struct UnigridPendingPanel: View {
             VStack(alignment: .leading, spacing: 10) {
                 Image(systemName: "map")
                     .font(.title2)
-                    .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+                    .foregroundStyle(style.inkSecondary)
                 Text(explanation)
                     .font(UnigridStyle.caption)
-                    .foregroundStyle(UnigridStyle.inkSecondary(scheme))
+                    .foregroundStyle(style.inkSecondary)
                     .fixedSize(horizontal: false, vertical: true)
             }
             .frame(maxWidth: .infinity, alignment: .leading)

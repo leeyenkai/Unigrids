@@ -100,13 +100,14 @@ public struct ParkDirectoryScreen: View {
 }
 
 struct ParkRow: View {
+    @Environment(\.unigrid) private var style
     let place: Place
     let status: VisitStatusBadgeStatus
 
     var body: some View {
         HStack(spacing: 12) {
             Image(systemName: PlaceStyle.symbol(for: place))
-                .foregroundStyle(PlaceStyle.tint(for: place))
+                .foregroundStyle(PlaceStyle.tint(for: place, in: style))
                 .frame(width: 24)
             VStack(alignment: .leading, spacing: 2) {
                 Text(place.name)

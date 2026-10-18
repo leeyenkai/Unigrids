@@ -103,7 +103,7 @@ public struct TripsScreen: View {
                             Text("\(count) check-in\(count == 1 ? "" : "s")")
                         }
                         if let stamps = visit.stamps?.count, stamps > 0 {
-                            Image(systemName: "stamp")
+                            StampIcon()
                                 .accessibilityLabel("Stamped")
                         }
                     }
@@ -164,6 +164,7 @@ struct PlannerPendingRow: View {
 /// Edit or delete anything, which §9 lists under ownership of data.
 struct VisitEditor: View {
     @Environment(\.modelContext) private var context
+    @Environment(\.unigrid) private var style
     @Environment(\.dismiss) private var dismiss
     @Environment(\.referenceStore) private var store
 
@@ -223,12 +224,12 @@ struct VisitEditor: View {
                                 if stamp.hasAmerica250Seal() {
                                     Text("America 250")
                                         .font(.caption)
-                                        .foregroundStyle(UnigridStyle.sealRed)
+                                        .foregroundStyle(style.seal)
                                 }
                                 Spacer()
                                 if stamp.isVerifiedOnSite {
                                     Image(systemName: "checkmark.seal.fill")
-                                        .foregroundStyle(UnigridStyle.parkGreen)
+                                        .foregroundStyle(.tint)
                                         .accessibilityLabel("Verified on site")
                                 }
                             }

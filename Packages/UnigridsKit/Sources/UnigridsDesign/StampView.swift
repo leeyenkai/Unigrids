@@ -16,8 +16,12 @@ public struct StampView: View {
         self.diameter = diameter
     }
 
+    @Environment(\.unigrid) private var style
+
+    /// Only the region ink and the seal. A stamp lands on a native passport page, not on
+    /// Unigrid paper, so it must never reach for the guide's page or panel colours.
     private var ink: Color {
-        face.region.inkColor
+        style.regionInk(face.region)
     }
 
     public var body: some View {
@@ -90,12 +94,12 @@ public struct StampView: View {
                 .font(.system(size: diameter * 0.135, weight: .heavy))
         }
         .tracking(diameter * 0.006)
-        .foregroundStyle(UnigridStyle.sealRed)
+        .foregroundStyle(style.seal)
         .padding(.horizontal, diameter * 0.055)
         .padding(.vertical, diameter * 0.03)
         .overlay {
             RoundedRectangle(cornerRadius: diameter * 0.03)
-                .stroke(UnigridStyle.sealRed, lineWidth: diameter * 0.018)
+                .stroke(style.seal, lineWidth: diameter * 0.018)
         }
         .rotationEffect(.degrees(face.impression.sealTiltDegrees))
         .opacity(0.9)
@@ -118,7 +122,7 @@ public struct StampView: View {
 
 /// An empty passport slot: a faint outline, so the gaps show what is left to collect.
 public struct StampSlotView: View {
-    @Environment(\.colorScheme) private var scheme
+    @Environment(\.unigrid) private var style
 
     private let siteName: String
     private let diameter: CGFloat
@@ -131,7 +135,7 @@ public struct StampSlotView: View {
     public var body: some View {
         Circle()
             .strokeBorder(
-                UnigridStyle.rule(scheme),
+                style.rule,
                 style: StrokeStyle(lineWidth: 1.5, dash: [4, 4])
             )
             .frame(width: diameter, height: diameter)
