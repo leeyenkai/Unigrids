@@ -11,10 +11,13 @@ Four jobs, matching the four things `AGENTS.md` asks a contributor to keep green
 
 ## Notes
 
-- **Xcode version.** The jobs select the newest Xcode the runner image carries. The
-  project targets iOS 27 / macOS 27, so this needs a runner image with that SDK; until
-  GitHub's images ship it, these jobs will fail on the SDK rather than on the code. Pin
-  `xcode-select` to a version the image actually has when that happens.
+- **Xcode version.** The project targets iOS 27 / macOS 27, so the `package` and `app`
+  jobs run on GitHub's `xcode-27` image and select `/Applications/Xcode_27.app`. The
+  image was a public preview when this was set up (October 2026), so expect the
+  occasional queue; move to the general macOS 27 image once it carries Xcode 27. The
+  `lint` and `pipeline` jobs need no Xcode and stay on their own images. On a private
+  repository, macOS minutes count against the Actions allowance at a higher rate than
+  Linux minutes.
 - **Scratch path.** `scripts/test.sh` builds outside the repository to avoid a
   `com.apple.FinderInfo` problem on file-provider-backed checkouts (see
   `scripts/common.sh`). CI checkouts are not synced, so the workflow calls `swift test`
