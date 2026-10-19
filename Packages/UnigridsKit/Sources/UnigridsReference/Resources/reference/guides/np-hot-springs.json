@@ -1,0 +1,96 @@
+{
+ "placeID": "np-hot-springs",
+ "contentVersion": 2,
+ "story": [
+  "The water that flows from the springs fell as rain thousands of years ago. It soaked into the rocks of the Ouachita Mountains, sank deep enough to be heated by the Earth, and returned to the surface along a fault on the side of Hot Springs Mountain, emerging at around 143°F. The Park Service collects it, cools some of it, and supplies it to the bathhouses and to public fountains where anyone can fill a jug.",
+  "Native peoples knew the springs long before Europeans arrived. In 1832, decades before the idea of a national park existed, Congress reserved them for the public — the first time the federal government set land aside for recreation. A spa town grew around them, and in the early twentieth century it drew baseball teams for spring training, gamblers, gangsters and invalids hoping for a cure.",
+  "Bathhouse Row, a line of grand bathhouses along Central Avenue, is a National Historic Landmark District. The Fordyce is the park's visitor center and museum; the Buckstaff still offers traditional baths, the Quapaw a modern spa, and the Superior has become a brewery that makes its beer with spring water.",
+  "The reservation became Hot Springs National Park in 1921. Behind the town, forested trails climb the mountains, past outcrops of novaculite, a hard stone once quarried for whetstones."
+ ],
+ "sightNotes": {
+  "poi-hot-springs-grand-promenade": "A brick walkway behind Bathhouse Row, past open springs and tufa.",
+  "poi-hot-springs-buckstaff-bathhouse": "A bathhouse that has offered traditional thermal baths since the early twentieth century.",
+  "poi-hot-springs-hot-water-cascade": "Spring water flowing openly over tufa beside Arlington Lawn.",
+  "poi-hot-springs-display-spring": "One of the springs left open to view, steaming in cold weather.",
+  "poi-hot-springs-superior-bathhouse": "A historic bathhouse turned brewery, using thermal water in its beer.",
+  "poi-hot-springs-quapaw-bathhouse": "A Spanish Colonial Revival bathhouse now run as a modern spa.",
+  "poi-hot-springs-hot-springs-mountain-tower": "An observation tower above the town, with views over the Ouachita Mountains.",
+  "poi-hot-springs-goat-rock-view-point": "A rocky outlook on the North Mountain trails.",
+  "poi-hot-springs-jug-fountains": "Public fountains where anyone may fill containers with thermal water, free."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "No entrance gates: the park is in downtown Hot Springs, along Central Avenue",
+   "No entrance fee; bathhouse services are paid separately"
+  ],
+  "lodging": [
+   "Hotels in the city of Hot Springs, some historic"
+  ],
+  "seasonalClosures": [
+   "Summers are hot and humid; spring and autumn are the most pleasant seasons for the trails"
+  ],
+  "camping": [
+   "Gulpha Gorge Campground, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1832",
+   "text": "Congress sets aside the Hot Springs Reservation."
+  },
+  {
+   "year": "1921",
+   "text": "The reservation becomes Hot Springs National Park."
+  }
+ ],
+ "safety": [
+  "Spring water emerges hot enough to scald. Do not touch the open springs."
+ ],
+ "regulations": [
+  "Thermal water may be taken from the jug fountains for personal use.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Hot Springs National Park — National Park Service",
+   "url": "https://www.nps.gov/hosp/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS photo",
+  "isPublicDomain": true,
+  "assetName": "np-hot-springs-1.jpg",
+  "caption": "Bathhouse Row",
+  "altText": "Stone entrance pillars in front of a row of four bathouses"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-hot-springs-2.jpg",
+   "caption": "Take A Hike!",
+   "altText": "A person hikes through a deep green forest."
+  },
+  {
+   "credit": "NPS photo Mark David Artist In Residence 2015",
+   "isPublicDomain": true,
+   "assetName": "np-hot-springs-3.jpg",
+   "caption": "Bridge with fall colors",
+   "altText": "Stone bridge surrounded by brilliant yellow and green leaves"
+  },
+  {
+   "credit": "NPS photo",
+   "isPublicDomain": true,
+   "assetName": "np-hot-springs-4.jpg",
+   "caption": "Visitor at the edge of the pools of the hot water cascade",
+   "altText": "women sitting on the stone wall at the hot water cascade as the vapor rises"
+  }
+ ],
+ "operatingHours": "Arlington Lawn, Grand Promenade, sidewalks on Bathhouse Row, Reserve Street, and Fountain Street, except for walk through traffic, are open from to 5:00 am to 10:00 pm, daily. Roads to Hot Springs Mountain, North Mountain and West Mountain Summit are open to vehicle traffic from 8:00 am to 10:00 pm.",
+ "weather": "Average temperatures in Hot Springs can range from about 90°F (32°C) to less than 27°F (-2.7°C). Summer days can be hot and humid, with heat index values up to 110ºF (43ºC). Winter wind chills can make temperatures feel much colder, as low as 15ºF (-9.4ºC). Spring and fall typically have the most rainfall. Generally, Hot Springs experiences mild weather throughout the year.",
+ "directions": "From Little Rock: Take I-30W towards Texarkana. Exit 111 for US 70W/Hot Springs. Turn Right onto Spring St. Turn Right onto Central Ave. Drive North, the Park will be on the right after Reserve St. From Texarkana: Take 1-30E. Exit 78 for AR-7 and turn left under the highway. Follow AR-7 North for 31 miles. AR-7 becomes Central Ave., the Park will be on the right after Reserve Street."
+}

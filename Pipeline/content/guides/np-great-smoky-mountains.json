@@ -1,0 +1,176 @@
+{
+ "placeID": "np-great-smoky-mountains",
+ "contentVersion": 2,
+ "summary": "Ancient forested mountains on the Tennessee–North Carolina line, wrapped in the blue haze that gives them their name. Wildflowers, salamanders and black bears, old farmsteads at Cades Cove and Cataloochee, no entrance fee — and more visitors than any other national park.",
+ "facts": {
+  "lowestElevationMetres": 267,
+  "highestElevationMetres": 2025,
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "Three to four days"
+ },
+ "story": [
+  "These are old mountains. The sandstones and slates of the Ocoee Supergroup were laid down between about a billion and five hundred million years ago, and the collision that raised them into the Appalachians happened roughly three hundred and ten million years ago — long before the Rockies existed. Nothing has rejuvenated them since. No ice sheet reached this far south, so instead of being scraped bare the range has simply been weathering, and the result is the rounded, deeply soiled, densely wooded landscape that gives the park its haze. The smoke is the mountains breathing: volatile organic compounds released by the forest, scattering light.",
+  "Because the ice stopped north of here, species sheltered in these valleys and stayed. The park is the most biologically diverse in the system — about twenty thousand species documented and perhaps four times that number present — and the climb from 875 feet at the park's edge to 6,643 feet at Kuwohi crosses as many life zones as a drive from Georgia to Maine. Around thirty species of salamander live here, enough that the range is called the salamander capital of the world. A fifth of the park has never been logged.",
+  "This is Cherokee homeland, farmed and hunted for many centuries, and the Eastern Band of Cherokee Indians still holds land along the park's southern boundary. In 1838 most Cherokee people were forced west; some stayed in these mountains, and their descendants are why Cherokee, North Carolina, sits where it does.",
+  "Then the logging companies came. By the 1920s most of the accessible timber was gone and the campaign to save the rest had begun — a campaign that had to buy the land, parcel by parcel, from private owners and timber firms, with state appropriations, school-children's pennies and five million dollars from the Laura Spelman Rockefeller Memorial. The park was established in 1934 and dedicated by President Roosevelt at Newfound Gap in 1940. It has never charged an entrance fee, because the roads were deeded to the federal government on the condition that no toll be imposed; parking tags, introduced in 2023, are its first general use fee."
+ ],
+ "sights": [
+  {
+   "name": "Kuwohi (Clingmans Dome)",
+   "note": "The highest point in the park and on the Appalachian Trail, restored in 2024 to its Cherokee name.",
+   "location": [
+    35.5628,
+    -83.4986
+   ]
+  },
+  {
+   "name": "Cades Cove",
+   "note": "A broad valley of preserved homesteads, churches and a working grist mill, circled by an eleven-mile loop road.",
+   "location": [
+    35.603,
+    -83.837
+   ]
+  },
+  {
+   "name": "Newfound Gap",
+   "note": "The lowest drivable pass through the range, on the state line at 5,046 feet.",
+   "location": [
+    35.611,
+    -83.425
+   ]
+  },
+  {
+   "name": "Laurel Falls",
+   "note": "An eighty-foot two-tier fall at the end of a paved, much-walked trail.",
+   "location": [
+    35.68,
+    -83.593
+   ]
+  },
+  {
+   "name": "Alum Cave Trail",
+   "note": "Past Arch Rock and the Alum Cave Bluffs to the summit of Mount LeConte.",
+   "location": [
+    35.629,
+    -83.451
+   ]
+  },
+  {
+   "name": "Roaring Fork Motor Nature Trail",
+   "note": "A one-way loop through old-growth forest, past log cabins and a tumbling mountain stream.",
+   "location": [
+    35.688,
+    -83.478
+   ]
+  },
+  {
+   "name": "Cataloochee",
+   "note": "A remote eastern valley with standing frame buildings and a reintroduced elk herd.",
+   "location": [
+    35.635,
+    -83.106
+   ]
+  },
+  {
+   "name": "Deep Creek",
+   "note": "Three waterfalls within easy reach of one trailhead on the park's southern edge.",
+   "location": [
+    35.464,
+    -83.434
+   ]
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Gatlinburg, Tennessee — via Sugarlands Visitor Center",
+   "Cherokee, North Carolina — via Oconaluftee Visitor Center",
+   "Townsend, Tennessee — the quiet side, toward Cades Cove"
+  ],
+  "reservations": "There is no entrance fee and no entry reservation, but a parking tag is required to leave a vehicle anywhere in the park for more than fifteen minutes. Tags are sold by the day, week or year, online and at visitor centres.",
+  "permits": [
+   "Every backcountry overnight, including Appalachian Trail shelters — backcountry permit and reservation",
+   "Frontcountry campsites — reservable in advance"
+  ],
+  "camping": [
+   "Elkmont, Cades Cove and Smokemont — the largest, reservable",
+   "Cosby, Deep Creek, Balsam Mountain, Big Creek, Cataloochee, Abrams Creek and Look Rock — smaller and seasonal"
+  ],
+  "lodging": [
+   "LeConte Lodge, near the summit of Mount LeConte, reachable only on foot and booked a year ahead",
+   "Gatlinburg, Pigeon Forge, Townsend, Cherokee and Bryson City, outside the park"
+  ],
+  "seasonalClosures": [
+   "Kuwohi Road closes from 1 December to 31 March",
+   "Roaring Fork Motor Nature Trail, Balsam Mountain Road and Rich Mountain Road close for the winter",
+   "Newfound Gap Road closes during winter storms, sometimes at short notice",
+   "Cades Cove Loop Road is vehicle-free on Wednesdays in season"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "c. 1 billion–500 million years ago",
+   "text": "The sediments that became the range are laid down."
+  },
+  {
+   "year": "c. 310 million years ago",
+   "text": "Continental collision raises the Appalachian mountains."
+  },
+  {
+   "year": "c. 1,000 years ago",
+   "text": "Cherokee towns are established in the river valleys."
+  },
+  {
+   "year": "1838",
+   "text": "Most Cherokee people are forced west; some remain in the mountains."
+  },
+  {
+   "year": "1900s",
+   "text": "Logging companies take most of the range's accessible timber."
+  },
+  {
+   "year": "1926",
+   "text": "Congress authorises a park, to be assembled from privately held land."
+  },
+  {
+   "year": "1928",
+   "text": "The Laura Spelman Rockefeller Memorial gives five million dollars toward land purchase."
+  },
+  {
+   "year": "1934",
+   "text": "The park is formally established."
+  },
+  {
+   "year": "1940",
+   "text": "President Roosevelt dedicates the park at Newfound Gap."
+  },
+  {
+   "year": "2023",
+   "text": "Parking tags are introduced — the park's first general use fee."
+  },
+  {
+   "year": "2024",
+   "text": "Clingmans Dome is officially restored to its Cherokee name, Kuwohi."
+  }
+ ],
+ "safety": [
+  "Black bears live throughout the park and have learned what coolers are. Store food and rubbish in the containers provided, never feed or approach a bear, and keep a hundred yards away.",
+  "Temperature falls roughly ten to twenty degrees Fahrenheit between the park's base and its summits, and the summits get snow when the valleys get rain. Carry layers and rain gear whatever the forecast in Gatlinburg says.",
+  "Drowning and falls at waterfalls are among the most common serious accidents here. Wet rock beside moving water is more slippery than it looks, and the water above a fall moves faster than it appears to.",
+  "Streams rise quickly after rain. An unbridged crossing that was ankle-deep on the way out can be impassable on the way back."
+ ],
+ "regulations": [
+  "Drones may not be launched, landed or flown in the park.",
+  "Dogs are allowed only on the Gatlinburg Trail and the Oconaluftee River Trail, on a leash — not on any other park trail.",
+  "Picking, digging or collecting plants is prohibited; ramps and ginseng are both poached here and both are protected.",
+  "Firewood brought into the park must be certified heat-treated, to keep tree pests out."
+ ],
+ "sources": [
+  {
+   "title": "Great Smoky Mountains National Park — National Park Service",
+   "url": "https://www.nps.gov/grsm/"
+  }
+ ]
+}

@@ -32,6 +32,9 @@ public struct BundledReferenceStore: ReferenceStore {
     private let poisByPlace: [UnigridsID: [PointOfInterest]]
     private let trailsByPlace: [UnigridsID: [Trail]]
     private let guidesByPlace: [UnigridsID: GuideContent]
+    private let boundariesByPlace: [UnigridsID: PlaceBoundary]
+    /// Where bundled photographs live, or `nil` for a store built in memory.
+    private let imageDirectory: URL?
 
     /// Load the dataset that ships with `UnigridsReference`.
     ///
@@ -53,6 +56,18 @@ public struct BundledReferenceStore: ReferenceStore {
         // Trails are specified (§8) but not populated until 1.0.0, so an absent file is
         // the expected state rather than an error.
         let trails = try Self.decodeIfPresent([Trail].self, "trails", bundle, decoder) ?? []
+        // Outlines arrived with the pipeline's reference build. A dataset without them is
+        // older, not broken: the map draws pins and no outlines.
+        boundariesByPlace = try Self.decodeIfPresent(
+            [String: PlaceBoundary].self, "boundaries", bundle, decoder
+        )
+        .map { Dictionary(uniqueKeysWithValues: $0.map { (UnigridsID($0.key), $0.value) }) }
+        ?? [:]
+        imageDirectory = bundle.url(
+            forResource: "images",
+            withExtension: nil,
+            subdirectory: "reference"
+        )
 
         placesByID = Self.keyed(places, by: \.id)
         themesByID = Self.keyed(themes, by: \.id)
@@ -78,7 +93,8 @@ public struct BundledReferenceStore: ReferenceStore {
         themes: [Theme],
         pois: [PointOfInterest],
         trails: [Trail],
-        guides: [GuideContent]
+        guides: [GuideContent],
+        boundaries: [UnigridsID: PlaceBoundary] = [:]
     ) {
         self.manifest = manifest
         self.places = places
@@ -88,6 +104,8 @@ public struct BundledReferenceStore: ReferenceStore {
         poisByPlace = Dictionary(grouping: pois, by: \.placeID)
         trailsByPlace = Dictionary(grouping: trails, by: \.placeID)
         guidesByPlace = Self.keyed(guides, by: \.placeID)
+        boundariesByPlace = boundaries
+        imageDirectory = nil
     }
 
     /// Index values by id, keeping the first of any duplicate.
@@ -126,7 +144,8 @@ public struct BundledReferenceStore: ReferenceStore {
         pois: [PointOfInterest] = [],
         trails: [Trail] = [],
         themes: [Theme] = [],
-        guides: [GuideContent] = []
+        guides: [GuideContent] = [],
+        boundaries: [UnigridsID: PlaceBoundary] = [:]
     ) -> BundledReferenceStore {
         BundledReferenceStore(
             manifest: ReferenceManifest(
@@ -139,7 +158,8 @@ public struct BundledReferenceStore: ReferenceStore {
             themes: themes,
             pois: pois,
             trails: trails,
-            guides: guides
+            guides: guides,
+            boundaries: boundaries
         )
     }
 
@@ -161,6 +181,25 @@ public struct BundledReferenceStore: ReferenceStore {
 
     public func guide(for placeID: UnigridsID) -> GuideContent? {
         guidesByPlace[placeID]
+    }
+
+    public func boundary(for placeID: UnigridsID) -> PlaceBoundary? {
+        boundariesByPlace[placeID]
+    }
+
+    /// Every outline, for the map to draw.
+    public var boundaries: [UnigridsID: PlaceBoundary] {
+        boundariesByPlace
+    }
+
+    public func imageURL(for image: GuideImage) -> URL? {
+        if let assetName = image.assetName, let imageDirectory {
+            let file = imageDirectory.appendingPathComponent(assetName)
+            if FileManager.default.fileExists(atPath: file.path) {
+                return file
+            }
+        }
+        return image.url
     }
 
     // MARK: - Decoding

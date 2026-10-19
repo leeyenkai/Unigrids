@@ -1,0 +1,116 @@
+{
+ "placeID": "np-virgin-islands",
+ "summary": "Most of the island of St. John in the US Virgin Islands — white-sand bays, coral reefs, dry tropical forest, Taíno petroglyphs and the ruins of Danish sugar plantations worked by enslaved Africans. Reached by ferry from St. Thomas.",
+ "facts": {
+  "lowestElevationMetres": 0,
+  "bestSeasons": [
+   "winter",
+   "spring"
+  ],
+  "suggestedTime": "Two to four days"
+ },
+ "story": [
+  "The park covers more than half of St. John and more than 5,500 acres of the surrounding sea, along with nearly all of Hassel Island in St. Thomas harbour. Its bays have coral reefs and seagrass beds full of fish and sea turtles, and its hills are covered in dry tropical forest.",
+  "The Taíno and earlier peoples lived on the island for centuries, and carved the petroglyphs beside a spring-fed pool on the Reef Bay Trail. The Danes colonised St. John in the eighteenth century and cleared its slopes for sugar cane, worked by enslaved Africans. In 1733, enslaved people rose up and held much of the island for months, one of the earliest large revolts in the Americas. Slavery in the Danish West Indies ended in 1848, and the United States bought the islands in 1917.",
+  "In 1956, Laurance Rockefeller's Jackson Hole Preserve gave its land on St. John to the nation for a park, on condition that it be protected from development. The Virgin Islands Coral Reef National Monument added protection for the surrounding waters in 2001.",
+  "Two category 5 hurricanes, Irma and Maria, struck in September 2017 and damaged reefs, forests and park buildings. The park reopened that December, and recovery has continued since."
+ ],
+ "sights": [
+  {
+   "name": "Trunk Bay",
+   "match": "Trunk Bay",
+   "note": "A famous white-sand beach with an underwater snorkelling trail along its reef. An amenity fee is charged."
+  },
+  {
+   "name": "Cinnamon Bay",
+   "match": "Cinnamon Bay Beach",
+   "note": "A long, wide north-shore beach with the park's campground and a nature trail past plantation ruins."
+  },
+  {
+   "name": "Maho Beach",
+   "match": "Maho Beach",
+   "note": "A calm, shallow bay where sea turtles often graze on seagrass."
+  },
+  {
+   "name": "Francis Bay",
+   "match": "Francis Bay",
+   "note": "A quiet bay for snorkelling, with a short trail past a salt pond good for birds."
+  },
+  {
+   "name": "Hawksnest Beach",
+   "match": "Hawksnest Beach",
+   "note": "A small beach close to Cruz Bay, with reefs just offshore."
+  },
+  {
+   "name": "Honeymoon Beach",
+   "match": "Honeymoon Beach",
+   "note": "A beach reached on foot by the Lind Point Trail from Cruz Bay."
+  },
+  {
+   "name": "Salt Pond Bay",
+   "match": "Salt Pond Bay",
+   "note": "A sheltered south-shore bay and the start of the trail to Ram Head."
+  },
+  {
+   "name": "Annaberg Sugar Plantation",
+   "match": "Annaburg Sugar Plantation",
+   "note": "The partly restored ruins of a sugar factory and windmill, with views toward Tortola."
+  },
+  {
+   "name": "Reef Bay Trail",
+   "match": "Reef Bay Trail and Sugar Plantation",
+   "note": "A steep trail down through forest to Taíno petroglyphs and a sugar mill. The climb back is hard."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "St. John has no airport. Fly to St. Thomas (STT), then take the ferry from Red Hook or Charlotte Amalie to Cruz Bay",
+   "Car barges also run from Red Hook. Traffic drives on the left",
+   "The visitor center is a short walk from the Cruz Bay ferry dock"
+  ],
+  "reservations": "No entry reservation. Reserve Cinnamon Bay Campground well ahead, especially in winter.",
+  "lodging": [
+   "Cinnamon Bay Campground, in the park",
+   "Hotels and villas in Cruz Bay and around the island"
+  ],
+  "seasonalClosures": [
+   "Hurricane season runs from June to November",
+   "Winter swells can make north-shore beaches rough"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1956",
+   "text": "Virgin Islands National Park is established on land given by Laurance Rockefeller."
+  },
+  {
+   "year": "1982",
+   "text": "The Reef Bay petroglyphs are listed on the National Register of Historic Places."
+  },
+  {
+   "year": "2001",
+   "text": "The Virgin Islands Coral Reef National Monument is created."
+  },
+  {
+   "year": "2017",
+   "text": "Hurricanes Irma and Maria strike the island; the park reopens in December."
+  }
+ ],
+ "safety": [
+  "Avoid the manchineel tree: its sap, fruit and even rain dripping from it burn the skin.",
+  "Snorkel with a partner, and watch for boat traffic and currents.",
+  "Carry plenty of water on trails; the sun is strong and the climbs are steep."
+ ],
+ "regulations": [
+  "Don't touch, stand on or collect coral, and anchor boats only at mooring buoys.",
+  "Use reef-safe sunscreen; the territory bans sunscreens with oxybenzone and some other chemicals.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Virgin Islands National Park — National Park Service",
+   "url": "https://www.nps.gov/viis/"
+  }
+ ],
+ "contentVersion": 2
+}

@@ -1,0 +1,129 @@
+{
+ "placeID": "np-haleakala",
+ "contentVersion": 2,
+ "story": [
+  "Haleakalā is the house of the sun: in Hawaiian tradition the demigod Maui snared the sun here to slow its passage across the sky. The mountain is a shield volcano that built most of East Maui, and its summit holds a great depression seven miles long, scattered with cinder cones in red, orange and black. It is not a true crater but a valley carved by erosion and refilled by later eruptions; the volcano last erupted between about 1480 and 1600.",
+  "The summit is home to life found nowhere else. The ʻāhinahina, the Haleakalā silversword, grows only here, living for decades before it blooms once and dies. The nēnē, the Hawaiian goose, was gone from the park until 1962, when Boy Scouts carried young birds into the crater in their packs; Hawaiian petrels nest in burrows on the summit cliffs.",
+  "Down the mountain's eastern flank, the Kīpahulu district runs to the sea through rainforest and bamboo. Streams drop in falls and pools through ʻOheʻo Gulch, and the Pīpīwai Trail climbs to Waimoku Falls. Hawaiians farmed and fished this coast for centuries.",
+  "Haleakalā was part of Hawaii National Park, created in 1916, until it became a park of its own in 1961. The summit is sacred to Native Hawaiians, and the park works with them to protect it."
+ ],
+ "sightNotes": {
+  "poi-haleakala-puuulaula-summit": "The highest point on Maui, a shelter and viewpoint over the crater, the classic sunrise spot.",
+  "poi-haleakala-kalahaku-overlook": "A view into the crater, with silverswords growing nearby.",
+  "poi-haleakala-leleiwi-overlook": "A quieter view across the crater, where your shadow may appear ringed by a rainbow in the clouds.",
+  "poi-haleakala-keoneheehee-trail": "Sliding Sands, a trail down into the crater among cinder cones.",
+  "poi-haleakala-hosmer-grove": "A short loop at the edge of native shrubland, good for spotting Hawaiian honeycreepers.",
+  "poi-haleakala-pools-of-oheo": "Pools and falls in a stream gulch on the Kīpahulu coast.",
+  "poi-haleakala-kuloa-point": "A headland walk at Kīpahulu past old Hawaiian sites to the sea."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Summit District, by Crater Road (HI 378) from upcountry Maui",
+   "Kīpahulu District, on the far side of the mountain, by the Hāna Highway; no road links the two"
+  ],
+  "reservations": "In recent years a vehicle reservation has been needed to drive to the summit for sunrise. Check nps.gov/hale before you go.",
+  "permits": [
+   "Wilderness cabins and campsites in the crater — a permit, booked ahead"
+  ],
+  "seasonalClosures": [
+   "The summit can be near freezing at dawn in any month; there is no fuel in the park"
+  ],
+  "camping": [
+   "Hosmer Grove Campground, reservable",
+   "Kīpahulu Campground, reservable",
+   "Wilderness Cabins, reservable",
+   "Wilderness Tent Sites, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1916",
+   "text": "Haleakalā becomes part of the new Hawaii National Park."
+  },
+  {
+   "year": "1961",
+   "text": "Haleakalā National Park is established as a park of its own."
+  },
+  {
+   "year": "1962",
+   "text": "Nēnē are reintroduced to the crater with the help of Boy Scouts."
+  },
+  {
+   "year": "1980",
+   "text": "The park becomes part of an International Biosphere Reserve."
+  }
+ ],
+ "safety": [
+  "The summit is high and cold. Dress warmly for sunrise, and take it slowly if you feel the altitude.",
+  "Flash floods can sweep through ʻOheʻo Gulch with little warning. Stay out of streams when it rains upstream."
+ ],
+ "regulations": [
+  "Stay on trails: silverswords' shallow roots are killed by footsteps.",
+  "Do not feed nēnē; they become road-killed beggars.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Haleakalā National Park — National Park Service",
+   "url": "https://www.nps.gov/hale/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 3 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers to Haleakalā National Park, including both the Summit and Kīpahulu Districts."
+  },
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "Valid for three days. Admits private, non-commercial vehicle (14 max capacity or less) and all occupants to Haleakalā National Park including both the Summit and Kīpahulu Districts."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Admits one individual with no car to Haleakalā National Park including both the Summit and Kīpahulu Areas. Youth 15 and under are admitted free."
+  },
+  {
+   "title": "Timed entry reservation - park & location",
+   "cost": "$1",
+   "detail": "A reservation is required for each vehicle entering the park from 3:00 a.m. to 7:00 a.m. You may book a reservation up to 60 days in advance and 2 days in advance of the start date."
+  }
+ ],
+ "hero": {
+  "credit": "NPS",
+  "isPublicDomain": true,
+  "assetName": "np-haleakala-1.jpg",
+  "caption": "'Ahinahina blooms in Haleakala crater",
+  "altText": "'Ahinahina blooms in Haleakala crater"
+ },
+ "gallery": [
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-haleakala-2.jpg",
+   "caption": "Waimoku Waterfall",
+   "altText": "Waimoku waterfall in the park's Kipahulu District"
+  },
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-haleakala-3.jpg",
+   "caption": "The Pools of ?Ohe?o in the park's Kipahulu District",
+   "altText": "The Pools of ?Ohe?o in the park's Kipahulu District"
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-haleakala-4.jpg",
+   "caption": "Sunset Over the Crater",
+   "altText": "Sun setting over the volcano crater and horizon"
+  }
+ ],
+ "operatingHours": "The Summit and Kīpahulu Districts of Haleakalā are open 24 hours a day. A sunrise reservation is required for entry between 3am and 7am daily.",
+ "weather": "On any given day, the temperatures in the park can range from a high of 80°F (27°C) in Kīpahulu to a low of 30°F (-1°C) at the summit. In either area clouds and rain can quickly replace warm sunshine. Weather in the high-elevation summit and wilderness areas of the park is highly unpredictable and changes often. Cool temperatures, intense solar radiation, and rapidly moving clouds are characteristic. On average, the temperature drops about 3°F for every 1,000 foot rise in elevation.",
+ "directions": "Located on the island of Maui, Haleakalā National Park extends from the 10,023 foot (3055m) summit of Haleakalā down the southeast flank of the mountain to the Kīpahulu coast near Hana. These two sections of the park are not directly connected by road, but both can be reached from Kahului. There are no gas stations within the park."
+}

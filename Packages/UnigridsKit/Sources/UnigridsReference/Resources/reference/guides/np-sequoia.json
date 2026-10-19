@@ -1,0 +1,149 @@
+{
+ "placeID": "np-sequoia",
+ "contentVersion": 2,
+ "story": [
+  "Sequoia spans nearly 13,000 feet of relief, from hot foothills along the Kaweah River to Mount Whitney on its eastern edge. Between them lie the groves of giant sequoia, a tree that grows naturally only on the Sierra Nevada's western slope. The General Sherman Tree in the Giant Forest is the largest tree on Earth by volume, and the Giant Forest holds five of the ten largest.",
+  "Western Mono people lived in the Kaweah drainage and travelled as high as the Giant Forest; their pictographs and bedrock mortars, used to grind acorns, survive at Hospital Rock. The Tübatulabal lived in the Kern River country to the east. Hale Tharp, the first settler, arrived in 1858; within a few years epidemics had killed most of the Native people, and the survivors were forced out.",
+  "In the 1880s the Kaweah Colony set out to log the sequoias. Instead, President Benjamin Harrison signed the law creating Sequoia National Park on September 25, 1890, the second national park after Yellowstone. Before the National Park Service existed, the Army ran the park; Captain Charles Young, the third Black graduate of West Point, led Buffalo Soldiers here in the early 1900s.",
+  "Crystal Cave was discovered in 1918, one of more than 270 known caves in the park. In 1978, after a long fight against a planned ski resort, Mineral King was added to the park. Severe wildfires in 2020 and 2021 burned through sequoia groves and killed many large trees."
+ ],
+ "sightNotes": {
+  "poi-sequoia-general-sherman-tree": "The largest tree on Earth by volume, reached by a short paved trail down from the main parking area.",
+  "poi-sequoia-congress-trail": "A paved two-mile loop from the Sherman Tree past clusters of giant sequoias such as the Senate and House groups.",
+  "poi-sequoia-moro-rock": "A granite dome with a stairway of more than 350 steps to a summit view over the Great Western Divide.",
+  "poi-sequoia-tunnel-log": "A giant sequoia that fell across the road in 1937; cars drive through a tunnel cut in it.",
+  "poi-sequoia-crescent-meadow": "A meadow ringed by sequoias, with an easy loop and the start of the High Sierra Trail.",
+  "poi-sequoia-tharps-log": "The hollow fallen sequoia Hale Tharp used as a summer cabin, near Log Meadow.",
+  "poi-sequoia-big-trees-trail": "An accessible loop around Round Meadow with signs on sequoia ecology.",
+  "poi-sequoia-crystal-cave": "A marble cavern of polished stone and formations, seen on seasonal guided tours.",
+  "poi-sequoia-tokopah-falls": "A trail from Lodgepole up the Marble Fork of the Kaweah to a waterfall cascading down granite.",
+  "poi-sequoia-hospital-rock": "Western Mono pictographs and bedrock mortars beside the Generals Highway."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Ash Mountain Entrance, on Highway 198 from Visalia through Three Rivers; inside the park it becomes the Generals Highway",
+   "Big Stump Entrance, on Highway 180 from Fresno, through Kings Canyon National Park",
+   "Vehicles over 22 feet long should enter on Highway 180; the Generals Highway below Giant Forest is steep and winding"
+  ],
+  "reservations": "Crystal Cave tour tickets are sold in advance, not at the cave. Reserve campgrounds and Wuksachi Lodge well ahead in summer.",
+  "permits": [
+   "Overnight wilderness trips — a permit, with daily quotas in summer"
+  ],
+  "lodging": [
+   "Wuksachi Lodge, near Lodgepole",
+   "Campgrounds in the foothills, at Lodgepole and in Mineral King"
+  ],
+  "seasonalClosures": [
+   "Mineral King Road and the road to Crystal Cave close in winter",
+   "In winter, snow can close roads, and carrying tyre chains is often required"
+  ],
+  "camping": [
+   "Atwell Mill Campground, reservable",
+   "Buckeye Flat Campground, reservable",
+   "Cold Springs Campground, reservable",
+   "Dorst Creek Campground, reservable",
+   "Lodgepole Campground, reservable",
+   "Potwisha Campground, reservable",
+   "South Fork Campground"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1858",
+   "text": "Hale Tharp, the area's first settler, arrives."
+  },
+  {
+   "year": "1890",
+   "text": "Sequoia National Park is established, the second national park."
+  },
+  {
+   "year": "1918",
+   "text": "Crystal Cave is discovered."
+  },
+  {
+   "year": "1937",
+   "text": "A giant sequoia falls across the road and becomes Tunnel Log."
+  },
+  {
+   "year": "1978",
+   "text": "Mineral King is added to the park."
+  },
+  {
+   "year": "2021",
+   "text": "The KNP Complex Fire closes the park for three months."
+  }
+ ],
+ "safety": [
+  "The Kaweah's water is swift and cold even where it looks calm. Stay out of rivers at high flows.",
+  "Store all food and scented items in bear-proof lockers, day and night.",
+  "Watch your footing on Moro Rock's stairway, and stay off it in lightning."
+ ],
+ "regulations": [
+  "Pets are not allowed on trails.",
+  "Drones may not be launched, landed or flown in the parks."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Sequoia & Kings Canyon National Parks — National Park Service",
+   "url": "https://www.nps.gov/seki/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$35",
+   "detail": "This pass is valid for 1-7 days and includes everyone traveling in a single vehicle for Sequoia & Kings Canyon National Parks and Hume Lake District of Sequoia National Forest/Giant Sequoia National Monument."
+  },
+  {
+   "title": "Per person",
+   "cost": "$20",
+   "detail": "This entry fee is for a single person traveling on foot or by bicycle. It is valid for 1-7 days in Sequoia & Kings Canyon National Parks and Hume Lake District of Sequoia National Forest/Giant Sequoia National Monument."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$30",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles, scooters, or similar motorized vehicles with up to 4 total passengers to Sequoia & Kings Canyon National Parks and Hume Lake District of Sequoia National Forest/Giant Sequoia National Monument."
+  },
+  {
+   "title": "Nonresident",
+   "cost": "$100",
+   "detail": "Each non-US resident aged 16 and older visiting Sequoia & Kings Canyon National Parks must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group."
+  }
+ ],
+ "hero": {
+  "credit": "NPS/Rick Cain",
+  "isPublicDomain": true,
+  "assetName": "np-sequoia-1.jpg",
+  "caption": "The Tablelands",
+  "altText": "A steep granite slope leads from forest to a bare alpine landscape"
+ },
+ "gallery": [
+  {
+   "credit": "NPS/Paul Johnson",
+   "isPublicDomain": true,
+   "assetName": "np-sequoia-2.jpg",
+   "caption": "Moro Rock",
+   "altText": "A guardrail encircles people along a narrow walkway with wide views"
+  },
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-sequoia-3.jpg",
+   "caption": "Giant Sequoia in Winter",
+   "altText": "A giant sequoia's reddish bark contrasts with the snow around it"
+  },
+  {
+   "credit": "NPS/Rick Cain",
+   "isPublicDomain": true,
+   "assetName": "np-sequoia-4.jpg",
+   "caption": "Giant Forest Museum",
+   "altText": "A rustic building is surrounded by giant sequoias"
+  }
+ ],
+ "operatingHours": "The parks are open 24 hours a day, 365 days a year. Some park roads and roads that access more remote parts of the parks close in the winter due to snow accumulation. Rarely, extreme weather conditions may cause roads into the parks to be closed.",
+ "weather": "Because of the extreme elevation range in the parks, weather conditions vary widely between areas. In summer, the sequoia groves have comfortable temperatures and the foothills are hot and dry. Snow lingers on high-mountain passes well into summer. In fall, conditions can range from summer-like to winter-like. Winter brings snow to sequoia groves and rain to the foothills. Be prepared for tire chain requirements. Spring is a great time to hike in the foothills and snow begins to melt at higher elevations.",
+ "directions": "Two highways enter the parks. Hwy 180 from Fresno leads east to Kings Canyon National Park, then continues 30 miles east to Cedar Grove. Hwy 198 from Visalia leads east to Sequoia National Park via Three Rivers. Inside the parks, Highway 198 becomes the Generals Highway, which connects 198 to 180. Vehicles over 22-feet long should enter the parks via Highway 180. In winter, the Generals Highway between the parks often closes. Chains may be required on park roads. No roads cross the parks east to west."
+}

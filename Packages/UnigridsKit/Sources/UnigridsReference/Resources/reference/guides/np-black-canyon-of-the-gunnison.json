@@ -1,0 +1,114 @@
+{
+ "placeID": "np-black-canyon-of-the-gunnison",
+ "contentVersion": 2,
+ "story": [
+  "The walls of the Black Canyon are Precambrian gneiss and schist, around 1.7 billion years old, shot through with pale veins of pegmatite. Hard rock like this does not weather back into gentle slopes: as the Gunnison River cut down over the last two million years, the canyon simply deepened, leaving walls that drop more than two thousand feet to the water.",
+  "The river falls an average of 34 feet per mile through the canyon, among the steepest descents of any major river in North America. At the Narrows the rims stand only about a quarter of a mile apart and the river is a few dozen feet wide. Peregrine falcons nest on the cliffs; pinyon, juniper and Gambel oak cover the rims.",
+  "The Ute knew the canyon and avoided it. Captain John Gunnison skirted it in 1853, and a railroad survey crew sent to find a way through in 1882 came back declaring it impassable. In 1901 Abraham Lincoln Fellows and William Torrence floated and swam its length to survey a tunnel that now carries Gunnison River water to farms in the Uncompahgre Valley.",
+  "The deepest part of the canyon became a national monument in 1933 and a national park in 1999. Upstream, dams of the Curecanti National Recreation Area hold back the river; downstream it runs on through the Gunnison Gorge."
+ ],
+ "sightNotes": {
+  "poi-black-canyon-of-the-gunnison-painted-wall": "The tallest cliff in Colorado, its dark face streaked with pale pegmatite.",
+  "poi-black-canyon-of-the-gunnison-chasm-view": "The canyon at its narrowest and deepest, straight down from the South Rim.",
+  "poi-black-canyon-of-the-gunnison-gunnison-point": "The overlook behind the South Rim Visitor Center, the first big view.",
+  "poi-black-canyon-of-the-gunnison-sunset-view": "A wide view down canyon at the end of South Rim Drive.",
+  "poi-black-canyon-of-the-gunnison-narrows-view": "On the North Rim, looking down on the canyon's narrowest point.",
+  "poi-black-canyon-of-the-gunnison-pulpit-rock": "A stone platform jutting over the canyon on South Rim Drive."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "South Rim, on CO 347 seven miles north of US 50 east of Montrose",
+   "North Rim, on a gravel road from Crawford; closed in winter"
+  ],
+  "permits": [
+   "Inner-canyon routes and wilderness camping — a free wilderness permit"
+  ],
+  "seasonalClosures": [
+   "The North Rim road and the steep East Portal Road close in winter, and South Rim Drive is only partly plowed"
+  ],
+  "camping": [
+   "East Portal Campground, first come, first served",
+   "North Rim Campground, first come, first served",
+   "South Rim Campground, reservable, with some first-come sites"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1853",
+   "text": "Captain John Gunnison's survey expedition skirts the canyon."
+  },
+  {
+   "year": "1882",
+   "text": "The first train runs through the upper Black Canyon."
+  },
+  {
+   "year": "1901",
+   "text": "Fellows and Torrence traverse the canyon to survey an irrigation tunnel."
+  },
+  {
+   "year": "1909",
+   "text": "The Gunnison Tunnel opens, carrying river water to the Uncompahgre Valley."
+  },
+  {
+   "year": "1933",
+   "text": "Black Canyon of the Gunnison National Monument is established."
+  },
+  {
+   "year": "1999",
+   "text": "The monument becomes a national park."
+  }
+ ],
+ "safety": [
+  "Many overlooks have no railing, and the drop is sheer. Keep children in hand and stay back from the edge.",
+  "Inner-canyon routes are steep, unmaintained and strenuous; poison ivy grows thick near the river."
+ ],
+ "regulations": [
+  "A wilderness permit is required for inner-canyon travel.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Black Canyon of the Gunnison National Park — National Park Service",
+   "url": "https://www.nps.gov/blca/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "7-Day Vehicle Pass. Entrance fees cover all persons in a single, private, non-commercial vehicle."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "7-Day Individual Pass (pedestrian or bicycle)"
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo/Lynch",
+  "isPublicDomain": true,
+  "assetName": "np-black-canyon-of-the-gunnison-1.jpg",
+  "caption": "Black Canyon near Tomichi Point",
+  "altText": "Black Canyon near Tomichi Point"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo/Lynch",
+   "isPublicDomain": true,
+   "assetName": "np-black-canyon-of-the-gunnison-2.jpg",
+   "caption": "Black Canyon near Painted Wall",
+   "altText": "Black Canyon near Painted Wall"
+  }
+ ],
+ "operatingHours": "The South Rim is open 24 hours a day.",
+ "weather": "Today's Weather: http://www.weather.com/weather/today/l/NPBLCA:13:US CLIMATE Weather can vary greatly throughout the day. Summer daytime temperatures range between 55 to 90F (13 to 32C), nights 45 to 60F (7 to 16C). Winter daytime temperatures range between 15 to 40F (-9 to 4C), nights 10 to 20F (-12 to -6C). Afternoon thunderstorms are common during the summer. Snow accumulation varies greatly year to year. Layered clothing appropriate for the season is recommended.",
+ "directions": "South Rim: 7 miles north on CO Highway 347 from the intersection with U.S. Highway 50 east of Montrose. Physical/GPS address is: 9800 Highway 347, Montrose, CO 81401 North Rim: 11 miles southwest of Crawford, Colorado. From CO Highway 92, turn west on Black Canyon Road approximately 3 miles south of Crawford. Follow the road signs to the park."
+}

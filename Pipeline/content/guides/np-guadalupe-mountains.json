@@ -1,0 +1,108 @@
+{
+ "placeID": "np-guadalupe-mountains",
+ "summary": "A fossil reef from an ancient sea, lifted into the four highest peaks in Texas — Guadalupe Peak at 8,751 feet, and the sheer prow of El Capitan — above the Chihuahuan Desert. A hidden canyon of maples turns red here in autumn.",
+ "facts": {
+  "highestElevationMetres": 2667,
+  "bestSeasons": [
+   "autumn",
+   "spring"
+  ],
+  "suggestedTime": "One to two days"
+ },
+ "story": [
+  "The Guadalupe Mountains are the most extensive exposure of a Permian fossil reef anywhere. Some 270 million years ago the Capitan Reef grew along the rim of an inland sea, built by sponges, algae and other lime-secreting life. The sea dried up and the reef was buried, then lifted and laid bare; the same reef runs north to Carlsbad Caverns. El Capitan is its cliff-front, a landmark to travellers for centuries.",
+  "The lowlands are desert, but the high country is a sky island of pinyon, ponderosa pine and Douglas-fir. In McKittrick Canyon a spring-fed stream supports bigtooth maples that colour the canyon red and gold in autumn. On the park's western edge, white gypsum and red quartz dunes rise from the Salt Basin. The mountains are known for wind: gusts of sixty miles an hour and more are common.",
+  "People have lived among these canyons for more than ten thousand years. The Mescalero Apache roasted agave here, and their roasting pits survive. In 1858 the Butterfield Overland Mail built its Pinery Station near Pine Springs; in 1869 the army drove the Mescalero from the mountains. Ranchers followed, and the Frijole Ranch house is now a museum.",
+  "The geologist Wallace Pratt fell for McKittrick Canyon in 1921, built a stone cabin there and later gave his land to the nation. Guadalupe Mountains National Park was established in 1972."
+ ],
+ "sights": [
+  {
+   "name": "Guadalupe Peak",
+   "note": "The highest point in Texas, a strenuous trail climbing about 3,000 feet from Pine Springs."
+  },
+  {
+   "name": "El Capitan",
+   "note": "The reef's great limestone prow, seen from US 62/180 and the Salt Basin."
+  },
+  {
+   "name": "McKittrick Canyon",
+   "match": "McKittrick Canyon Trailhead",
+   "note": "A canyon of maples, oaks and a clear stream, best in late October and early November."
+  },
+  {
+   "name": "Pratt Cabin",
+   "note": "Wallace Pratt's stone cabin in McKittrick Canyon."
+  },
+  {
+   "name": "The Grotto",
+   "note": "A small cave of dripstone formations further up McKittrick Canyon."
+  },
+  {
+   "name": "Smith Spring",
+   "note": "A shaded spring and pool on a loop from the Frijole Ranch."
+  },
+  {
+   "name": "Frijole Ranch",
+   "match": "Frijole Ranch Museum",
+   "note": "A stone ranch house and orchard, now a small museum of the area's history."
+  },
+  {
+   "name": "Salt Basin Dunes",
+   "match": "Salt Basin Dunes Trailhead",
+   "note": "Gypsum dunes on the park's remote west side, with the escarpment behind them."
+  },
+  {
+   "name": "The Pinery",
+   "note": "Ruins of the Butterfield Overland Mail station near the visitor center."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Pine Springs, on US 62/180 about 110 miles east of El Paso",
+   "McKittrick Canyon, for day use only",
+   "Dog Canyon, in the north, reached through New Mexico",
+   "Salt Basin Dunes, in the west, on unpaved roads"
+  ],
+  "permits": [
+   "Backcountry camping — a free permit"
+  ],
+  "lodging": [
+   "No lodging in the park; Whites City, Carlsbad and Van Horn are the nearest towns"
+  ],
+  "seasonalClosures": [
+   "Summer brings heat in the lowlands and lightning on the peaks; strong winds can blow at any time of year"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1858",
+   "text": "The Butterfield Overland Mail builds Pinery Station."
+  },
+  {
+   "year": "1869",
+   "text": "Cavalry troops drive the Mescalero Apache from the mountains."
+  },
+  {
+   "year": "1921",
+   "text": "Geologist Wallace Pratt buys land in McKittrick Canyon, later donating it."
+  },
+  {
+   "year": "1972",
+   "text": "Guadalupe Mountains National Park is established."
+  }
+ ],
+ "safety": [
+  "There is little water in the park. Carry what you need for the whole hike.",
+  "High winds can knock hikers off balance on exposed ridges; avoid the peaks in storms."
+ ],
+ "regulations": [
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Guadalupe Mountains National Park — National Park Service",
+   "url": "https://www.nps.gov/gumo/"
+  }
+ ],
+ "contentVersion": 2
+}

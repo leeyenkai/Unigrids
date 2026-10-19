@@ -1,0 +1,117 @@
+{
+ "placeID": "np-capitol-reef",
+ "summary": "A hundred-mile wrinkle in the earth's crust — the Waterpocket Fold — laid open as cliffs, domes, canyons and natural bridges in south-central Utah. In the middle of it, the Fremont River waters the orchards of Fruita, a pioneer settlement whose fruit visitors can still pick in season.",
+ "facts": {
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "One to two days"
+ },
+ "story": [
+  "The Waterpocket Fold is a monocline: a long, step-like bend in the rock layers, pushed up along a buried fault between fifty and seventy million years ago and stretching nearly a hundred miles from Thousand Lake Mountain to Lake Powell. Erosion has stripped it back into a ridge of tilted rock, and the white domes of Navajo Sandstone along its crest reminded early travellers of capitol buildings. Reef was their word for any barrier that blocked the way.",
+  "Rain collects in waterpockets, basins worn into the sandstone that give the fold its name and the desert's animals their water. Along the Fremont River the cottonwoods and orchards make a green ribbon through red rock.",
+  "Fremont farmers lived along the river around a thousand years ago, raising corn and squash, storing grain in stone granaries and carving petroglyphs still visible from the road. Mormon settlers founded Junction, later Fruita, in the 1880s and planted orchards of apples, peaches, apricots and cherries; the Park Service keeps them up, and visitors pick in season.",
+  "Local boosters promoted the area as Wayne Wonderland in the 1920s. It became a national monument in 1937, gained a paved highway through the Fremont River canyon in 1962, and was made a national park in 1971."
+ ],
+ "sights": [
+  {
+   "name": "Fruita orchards",
+   "match": "Capitol Reef Orchards",
+   "note": "Historic orchards along the Fremont River, open for picking when the fruit is ripe."
+  },
+  {
+   "name": "Gifford House",
+   "note": "A Fruita farmhouse where pies and preserves are sold in season."
+  },
+  {
+   "name": "Petroglyph Panel",
+   "note": "Fremont carvings of figures and bighorn sheep, seen from boardwalks beside the highway."
+  },
+  {
+   "name": "Capitol Dome",
+   "note": "The white sandstone dome that gave the park its name."
+  },
+  {
+   "name": "Scenic Drive",
+   "match": "Capitol Reef National Park's Scenic Drive",
+   "note": "A paved road south along the face of the fold, with spurs into Grand Wash and Capitol Gorge."
+  },
+  {
+   "name": "Hickman Bridge",
+   "note": "A natural bridge of sandstone, reached by a two-mile round-trip trail from the highway.",
+   "location": [
+    38.2886,
+    -111.2274
+   ]
+  },
+  {
+   "name": "Cathedral Valley",
+   "note": "Freestanding monoliths in the park's remote north, reached by dirt road; the Temples of the Sun and Moon stand here."
+  },
+  {
+   "name": "Panorama Point",
+   "note": "A wide view across the fold to the Henry Mountains, and a dark-sky site at night."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "UT 24 runs through the park along the Fremont River, between Torrey and Hanksville; a fee applies on the Scenic Drive beyond Fruita"
+  ],
+  "permits": [
+   "Overnight backpacking — a free backcountry permit"
+  ],
+  "lodging": [
+   "No lodging in the park; Torrey is eleven miles west"
+  ],
+  "seasonalClosures": [
+   "Dirt roads, including those to Cathedral Valley, can be impassable after rain or snow"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "c. 1000",
+   "text": "Fremont farmers live along the Fremont River."
+  },
+  {
+   "year": "1872",
+   "text": "Almon H. Thompson of the Powell survey crosses the Waterpocket Fold."
+  },
+  {
+   "year": "1880s",
+   "text": "Mormon settlers found Junction, later renamed Fruita."
+  },
+  {
+   "year": "1904",
+   "text": "The first uranium claim in the area is staked."
+  },
+  {
+   "year": "1937",
+   "text": "Capitol Reef National Monument is proclaimed."
+  },
+  {
+   "year": "1962",
+   "text": "State Route 24 opens through the Fremont River canyon."
+  },
+  {
+   "year": "1971",
+   "text": "Capitol Reef becomes a national park."
+  }
+ ],
+ "safety": [
+  "Do not enter narrow canyons if rain threatens anywhere upstream. Flash floods arrive without warning.",
+  "Summer heat is intense on exposed trails; carry water and start early."
+ ],
+ "regulations": [
+  "In open orchards, fruit eaten there is free; fruit taken away is paid for at the self-pay stations.",
+  "Do not touch the petroglyphs; oils from skin damage them.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Capitol Reef National Park — National Park Service",
+   "url": "https://www.nps.gov/care/"
+  }
+ ],
+ "contentVersion": 2
+}

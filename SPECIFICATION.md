@@ -93,6 +93,15 @@ Behaviour
 - Tapping a pin opens a bottom card: name, type, states, two or three quick facts, visit status, and actions (Open guide, Explore in 3D, Check in, Add to trip, Directions in Apple Maps).
 - Live alert badges (closures, fire, roads) show on parks that have active NPS alerts.
 
+As built for the MVP (`0.2.0`)
+
+- 537 places: the 63 national parks, 373 other NPS units (heritage areas, trails, affiliated and administrative units are left out), 76 curated state parks and 25 curated federal sites — BLM national monuments and a conservation area, Forest Service monuments and Fish and Wildlife refuges. National forests, grasslands, natural landmarks and byways are not in yet.
+- 506 places are outlined. National park outlines show at every zoom; the others appear below a latitude span of about 14°. A tap or click inside an outline selects the place, as well as a tap on its marker ([ADR 0008](docs/adr/0008-mapkit-atlas.md)).
+- Marker shape is the tier and colour the agency ([ADR 0007](docs/adr/0007-one-identity-across-every-screen.md)); smaller sites cluster into numbered squares; national parks never cluster and carry a black name plate from regional zoom.
+- Filters are tier and visited status. State, activity, season and stamp filters are not built.
+- The bottom card is an overview panel — a sheet on iPhone, an inspector on iPad and Mac — with a photograph and credit, a written summary, figures, visit status and actions.
+- Base map: muted map, hybrid or satellite. Live alert badges on the map are not built; alerts show in guides.
+
 ## 6. Park guides and official brochures
 
 Each national park has two linked views: a native, interactive guide laid out like a Unigrid, and the official NPS brochure as published. The native guide is the everyday reading view; the brochure is the authentic artefact, one tap away.
@@ -125,6 +134,15 @@ Official brochure viewer
 - Later: an archive of past brochure editions per park.
 
 Content sources: NPS API fields (description, fees, hours, visitor centres, things to do, places) and NPS web text, lightly edited for length and to fit the panel structure.
+
+As built for the MVP (`0.2.0`)
+
+- Every national park has a native guide. Its summary, story, sight notes, plan-your-visit, chronology, safety notes and regulations are written for Unigrids in `Pipeline/content/guides/`, checked against the NPS Data API and the park's Wikipedia article; facts that could not be confirmed were left out.
+- Panels added to the list above: a **gallery** of up to three more public-domain NPS photographs, **entrance fees** and **operating hours** inside Plan your visit, **weather and seasons** and **getting there** (both the NPS's own text, credited), and **live alerts** when the build has an NPS key.
+- The map panel is an Apple map with the park's outline and numbered sights, with an **Explore in 3D** view that flies between them; the official brochure map is not used yet.
+- Panels in a row of the grid share a height.
+- The official brochure viewer is not built.
+- Places in tiers 2–4 get a leaflet page — photograph, overview, outline map and actions — rather than a guide.
 
 ## 7. 3D park exploration
 
@@ -228,6 +246,8 @@ Ownership of data
 
 Planned trips use the same trip object as the log: a trip starts as a plan, becomes active on its first day, and turns into a logged trip as the user checks in. The planner adds four tools on top.
 
+As built for the MVP (`0.2.0`): trips with ordered stops (places, not yet sights or lodging), a planned date per stop, reordering, a route map with the straight-line distance, an `.ics` export of dated stops, and "Add to trip" from every place. Planned places show dashed on the map. Drive times, conflict flags, reminders, forecasts and the weather-versus-crowds view are not built; live alerts appear in guides only.
+
 Trip itineraries
 
 - Multi-day, multi-park trips; each day holds ordered stops (sights, trails, visitor centres, lodging, custom points).
@@ -300,6 +320,8 @@ Pipeline steps
 
 Live calls: the app calls the NPS API directly with a key built into the app, plus WeatherKit and Open-Meteo for weather. There is no proxy or server. A built-in key can be extracted and its rate limit is shared by every user; that is acceptable for a private hobby app and worth revisiting if Unigrids goes public.
 
+As built for the MVP (`0.2.0`): `unigrids_pipeline reference` fetches the NPS Data API (parks, visitor centres, stamp locations, places, campgrounds), the NPS Land Resources Division unit boundaries, PAD-US 4.1 (fee and management layers), Wikipedia summaries and Wikimedia Commons licence metadata, versioned by date under `Pipeline/raw/`, and builds the bundled JSON (`manifest`, `places`, `pois`, `themes`, `boundaries`, `guides/`) and photographs. National park photographs are NPS public-domain images only; photographs of other places come from Wikimedia Commons under a reusable licence and carry it. The key for live alerts reaches the app through a gitignored `Secrets.plist` (`AGENTS.md` §5).
+
 ## 13. Core data model
 
 Reference data and user data live in separate stores: reference data is read-only and replaced on update, while user data syncs through iCloud and only ever points at reference records by stable ID.
@@ -323,7 +345,7 @@ Reference data and user data live in separate stores: reference data is read-onl
 
 ## 14. Design language
 
-The app has two visual modes: the park guides speak Unigrid, and everything else (map, trips, planner, stats, settings) uses the current native Apple design so it feels at home on each device.
+The app has one identity: the Unigrid brochure, carried through every screen and laid over native Apple structure, so the app feels at home on each device and still reads as one product. The guides keep the full panel grid; the map, directory, trips, passport, stats and settings open with the black band and use the same ruled heads, square controls, figures and place markers ([ADR 0007](docs/adr/0007-one-identity-across-every-screen.md), which replaced an earlier split into a Unigrid mode for guides and a stock native mode for everything else).
 
 The Unigrid reference
 
@@ -340,9 +362,10 @@ Guide rules for Unigrids
 
 Themes and appearance
 
-- Four palettes, selectable in Settings: Unigrid (the canonical warm stock and park green), Press (near-monochrome ink on paper), Canyon (sandstone and ochre) and Tidewater (the brochure blues). A palette changes the paper, ink, band and app tint; native chrome keeps semantic system colours, so the two visual modes stay apart.
+- Four palettes, selectable in Settings: Unigrid (the canonical warm stock and park green), Press (near-monochrome ink on paper), Canyon (sandstone and ochre) and Tidewater (the brochure blues). A palette changes the paper, ink, band and app tint on every screen; system controls keep their semantic colours.
 - Appearance is a separate axis: Dark (the default), Light or Automatic. Both choices are per-device display preferences stored in `UserDefaults`, not user data, and do not sync through iCloud.
 - The band stays near-black in every palette. A black title band with the park name reversed out of it is the one part of the Unigrid that is not ours to restyle.
+- A place's tier is a shape — square for a national park, small square for another NPS site, circle for a state park, diamond for a monument or refuge — and its agency an ink, wherever the place appears. Filled is visited; dashed is planned.
 - Colour values and the WCAG contrast rule live in `UnigridsCore` as plain data, so every palette, scheme and foreground/background pairing is held to WCAG AA by a test rather than by eye. See [`docs/design-system.md`](docs/design-system.md) and [ADR 0005](docs/adr/0005-palette-and-appearance.md).
 
 App identity
@@ -401,6 +424,11 @@ Follow-ups
 6. Choose which widgets to build first (next trip, parks count, latest stamp).
 7. The passport's nine ink colours are Unigrids' own approximation, now with a dark variant per region. They are superseded by follow-up 3 above when the paper passport's real scheme is curated.
 8. Appearance is two `@AppStorage` values today. An observable store becomes worth it only if the palette is ever derived from something else — a per-park palette, or an automatic switch at sunset (ADR 0005).
+9. The written guide and overview text (63 guides, 101 place summaries) was drafted from the NPS Data API and Wikipedia and checked fact by fact, but has had no second reader. A park-by-park read against each park's NPS pages before a public release is worthwhile; rules that change each season (timed entry, permits, closures) are written to say "check before you go" rather than give dates.
+10. Grand Staircase–Escalante's boundaries were redrawn by proclamation in July 2026. Its outline comes from PAD-US 4.1, which predates that, so the map shows the earlier boundary until PAD-US catches up.
+11. The iOS 27 Simulator runtime is not installed on the development Mac, so iPhone and iPad layouts were built and compiled but checked only on macOS. A pass on an iOS 27 device or simulator is the first thing to do before sharing a TestFlight build.
+12. Reference data is a snapshot (`Pipeline/raw/2026-10-19`). Fees, hours and visitor-centre details go stale; a re-fetch before each release (`reference --refresh`) keeps them current.
+13. NPS units whose API record has no description yet (Freedom Riders and Emmett Till and Mamie Till-Mobley, both recent) show no summary rather than an invented one.
 
 Parked until a public release
 

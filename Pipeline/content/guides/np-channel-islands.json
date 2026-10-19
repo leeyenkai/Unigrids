@@ -1,0 +1,113 @@
+{
+ "placeID": "np-channel-islands",
+ "summary": "Five islands off the Southern California coast and the sea around them, isolated long enough to evolve plants and animals found nowhere else — the island fox among them. Reached only by boat or small plane, they show this coast as it was before the cities.",
+ "facts": {
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "A day trip to one island, or a night camping"
+ },
+ "story": [
+  "The park is five of the eight Channel Islands — Anacapa, Santa Cruz, Santa Rosa, San Miguel and Santa Barbara — and the ocean for a nautical mile around each, within a national marine sanctuary. Santa Cruz, the largest, is shared: the eastern quarter is the Park Service's, the rest The Nature Conservancy's.",
+  "Separated from the mainland, the islands evolved their own species. The island fox, smaller than a house cat, lives nowhere else; the island scrub-jay only on Santa Cruz. Torrey pines grow on Santa Rosa and in one place on the mainland. In spring the giant coreopsis turns hillsides yellow, and below the waterline kelp forests shelter garibaldi, sea lions and seals. Painted Cave on Santa Cruz is among the largest sea caves known.",
+  "People reached the islands at least thirteen thousand years ago; human remains found on Santa Rosa are among the oldest in North America. Chumash villages lined the northern islands when Juan Rodríguez Cabrillo sailed past in 1542. Ranchers later ran sheep and cattle on most of them.",
+  "Anacapa and Santa Barbara became a national monument in 1938. After the 1969 Santa Barbara oil spill fouled their beaches, the islands were made a national park in 1980, and decades of work removing introduced animals have brought the island fox back from the edge of extinction."
+ ],
+ "sights": [
+  {
+   "name": "Inspiration Point",
+   "match": "Inspiration Point, Anacapa Island",
+   "note": "The view west along Anacapa's chain of islets, with Santa Cruz beyond."
+  },
+  {
+   "name": "Scorpion Ranch",
+   "match": "Scorpion Ranch House",
+   "note": "The landing on Santa Cruz, with an old ranch, a campground and trails up onto the cliffs."
+  },
+  {
+   "name": "Potato Harbor",
+   "match": "Potato Harbor Overlook",
+   "note": "A cove below sheer cliffs, reached on a walk from Scorpion Anchorage."
+  },
+  {
+   "name": "Cavern Point",
+   "note": "A loop over Santa Cruz's sea cliffs, good for spotting whales in season."
+  },
+  {
+   "name": "Painted Cave",
+   "match": "Painted Cave — hax̓inu mupʰ nuwaštipa",
+   "note": "One of the largest sea caves in the world, on Santa Cruz's north shore, seen by kayak or boat."
+  },
+  {
+   "name": "Torrey Pines",
+   "note": "A grove of one of the rarest pines in the country, on Santa Rosa's east coast."
+  },
+  {
+   "name": "Point Bennett",
+   "note": "San Miguel's western tip, where tens of thousands of seals and sea lions haul out."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Visitor center at Ventura Harbor on the mainland",
+   "The islands by park concessioner boat from Ventura or Oxnard, by small plane to Santa Rosa, or by private boat"
+  ],
+  "reservations": "Boat and plane seats and island campsites need booking in advance, and trips are cancelled in rough seas.",
+  "permits": [
+   "Private boaters landing on San Miguel — a permit; landings on The Nature Conservancy's part of Santa Cruz — a separate permit"
+  ],
+  "lodging": [
+   "No lodging on the islands; campgrounds on all five"
+  ],
+  "seasonalClosures": [
+   "Seas and wind change from day to day and island to island; check conditions before you sail"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1542",
+   "text": "Juan Rodríguez Cabrillo sails past the islands."
+  },
+  {
+   "year": "1938",
+   "text": "Anacapa and Santa Barbara islands become a national monument."
+  },
+  {
+   "year": "1969",
+   "text": "The Santa Barbara oil spill reaches the islands' beaches."
+  },
+  {
+   "year": "1976",
+   "text": "All eight islands are named a UNESCO biosphere reserve."
+  },
+  {
+   "year": "1980",
+   "text": "Channel Islands National Park is established."
+  }
+ ],
+ "safety": [
+  "There is no food, fuel or shelter for sale on the islands, and drinking water only at some campgrounds. Bring everything you need.",
+  "Cliff edges are unstable and the sea is cold. Stay on trails and well back from the edge."
+ ],
+ "regulations": [
+  "Do not feed or approach the island foxes, and close packs and coolers: foxes steal food.",
+  "Clean boots and gear before landing; seeds and soil carried in threaten the islands' plants.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Channel Islands National Park — National Park Service",
+   "url": "https://www.nps.gov/chis/"
+  }
+ ],
+ "heroOverride": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Anacapa-Island-Coreopsis.jpg",
+  "title": "Giant coreopsis on Anacapa Island",
+  "credit": "NPS / Derek Lohuis",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Anacapa-Island-Coreopsis.jpg",
+  "altText": "Yellow giant coreopsis covering Anacapa Island, with the lighthouse and the sea beyond.",
+  "_why": "Every photograph the NPS Data API lists for Channel Islands is by a private photographer. This one is an NPS work, public domain, via Wikimedia Commons."
+ },
+ "contentVersion": 2
+}

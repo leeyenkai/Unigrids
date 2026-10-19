@@ -1,0 +1,96 @@
+{
+ "placeID": "np-channel-islands",
+ "contentVersion": 2,
+ "story": [
+  "The park is five of the eight Channel Islands — Anacapa, Santa Cruz, Santa Rosa, San Miguel and Santa Barbara — and the ocean for a nautical mile around each, within a national marine sanctuary. Santa Cruz, the largest, is shared: the eastern quarter is the Park Service's, the rest The Nature Conservancy's.",
+  "Separated from the mainland, the islands evolved their own species. The island fox, smaller than a house cat, lives nowhere else; the island scrub-jay only on Santa Cruz. Torrey pines grow on Santa Rosa and in one place on the mainland. In spring the giant coreopsis turns hillsides yellow, and below the waterline kelp forests shelter garibaldi, sea lions and seals. Painted Cave on Santa Cruz is among the largest sea caves known.",
+  "People reached the islands at least thirteen thousand years ago; human remains found on Santa Rosa are among the oldest in North America. Chumash villages lined the northern islands when Juan Rodríguez Cabrillo sailed past in 1542. Ranchers later ran sheep and cattle on most of them.",
+  "Anacapa and Santa Barbara became a national monument in 1938. After the 1969 Santa Barbara oil spill fouled their beaches, the islands were made a national park in 1980, and decades of work removing introduced animals have brought the island fox back from the edge of extinction."
+ ],
+ "sightNotes": {
+  "poi-channel-islands-inspiration-point": "The view west along Anacapa's chain of islets, with Santa Cruz beyond.",
+  "poi-channel-islands-scorpion-ranch": "The landing on Santa Cruz, with an old ranch, a campground and trails up onto the cliffs.",
+  "poi-channel-islands-potato-harbor": "A cove below sheer cliffs, reached on a walk from Scorpion Anchorage.",
+  "poi-channel-islands-cavern-point": "A loop over Santa Cruz's sea cliffs, good for spotting whales in season.",
+  "poi-channel-islands-painted-cave": "One of the largest sea caves in the world, on Santa Cruz's north shore, seen by kayak or boat.",
+  "poi-channel-islands-torrey-pines": "A grove of one of the rarest pines in the country, on Santa Rosa's east coast.",
+  "poi-channel-islands-point-bennett": "San Miguel's western tip, where tens of thousands of seals and sea lions haul out."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Visitor center at Ventura Harbor on the mainland",
+   "The islands by park concessioner boat from Ventura or Oxnard, by small plane to Santa Rosa, or by private boat"
+  ],
+  "reservations": "Boat and plane seats and island campsites need booking in advance, and trips are cancelled in rough seas.",
+  "permits": [
+   "Private boaters landing on San Miguel — a permit; landings on The Nature Conservancy's part of Santa Cruz — a separate permit"
+  ],
+  "lodging": [
+   "No lodging on the islands; campgrounds on all five"
+  ],
+  "seasonalClosures": [
+   "Seas and wind change from day to day and island to island; check conditions before you sail"
+  ],
+  "camping": [
+   "Anacapa Island Campground, reservable",
+   "Del Norte Backcountry Campground, reservable",
+   "San Miguel Island Campground, reservable",
+   "Santa Barbara Island Campground, reservable",
+   "Santa Rosa Island Backcountry Beach Camping, reservable",
+   "Scorpion Canyon Campground, reservable",
+   "Water Canyon Campground, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1542",
+   "text": "Juan Rodríguez Cabrillo sails past the islands."
+  },
+  {
+   "year": "1938",
+   "text": "Anacapa and Santa Barbara islands become a national monument."
+  },
+  {
+   "year": "1969",
+   "text": "The Santa Barbara oil spill reaches the islands' beaches."
+  },
+  {
+   "year": "1976",
+   "text": "All eight islands are named a UNESCO biosphere reserve."
+  },
+  {
+   "year": "1980",
+   "text": "Channel Islands National Park is established."
+  }
+ ],
+ "safety": [
+  "There is no food, fuel or shelter for sale on the islands, and drinking water only at some campgrounds. Bring everything you need.",
+  "Cliff edges are unstable and the sea is cold. Stay on trails and well back from the edge."
+ ],
+ "regulations": [
+  "Do not feed or approach the island foxes, and close packs and coolers: foxes steal food.",
+  "Clean boots and gear before landing; seeds and soil carried in threaten the islands' plants.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Channel Islands National Park — National Park Service",
+   "url": "https://www.nps.gov/chis/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS / Derek Lohuis",
+  "isPublicDomain": true,
+  "assetName": "np-channel-islands-1.jpg",
+  "caption": "Giant coreopsis on Anacapa Island",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Anacapa-Island-Coreopsis.jpg",
+  "altText": "Yellow giant coreopsis covering Anacapa Island, with the lighthouse and the sea beyond."
+ },
+ "operatingHours": "The park is open 24 hours a day. Services and facilities have separate hours. Please see descriptions of those facilities elsewhere.",
+ "weather": "In general, the islands have a Mediterranean climate year-round. Temperatures are relatively stable, with highs averaging in the mid-60s (°F) and lows in the low-50s. However, there are seasonal differences that visitors should take into consideration when visiting the park. In addition, visitors also should be aware that ocean and weather conditions vary considerably from day-to-day and island-to-island. For more information visit: http://www.nps.gov/chis/planyourvisit/weather.htm",
+ "directions": "While the mainland visitor center in Ventura is readily accessible by car or public transportation, the islands are only accessible by park concessionaire boats and planes or private boat. Advanced planning is highly recommended."
+}

@@ -1,0 +1,104 @@
+{
+ "placeID": "np-big-bend",
+ "summary": "Where the Rio Grande turns its great bend, three worlds in one park: river canyons cut through sheer limestone, the Chihuahuan Desert, and the Chisos Mountains rising out of the middle — the only mountain range in the country held entirely within a national park.",
+ "facts": {
+  "bestSeasons": [
+   "autumn",
+   "winter",
+   "spring"
+  ],
+  "suggestedTime": "Three days"
+ },
+ "story": [
+  "The rocks of Big Bend record a sea, a swamp and a string of volcanoes. Limestone laid down on the floor of a Cretaceous ocean forms the walls of Santa Elena and Boquillas canyons; above it, river and delta deposits hold the bones of dinosaurs and the giant pterosaur Quetzalcoatlus. Volcanic eruptions tens of millions of years later built the Chisos Mountains, and the Rio Grande has since cut its canyons straight through the uplifted blocks.",
+  "The park is the largest protected stretch of Chihuahuan Desert in the United States, and among the richest for life: more than 1,200 kinds of plants, over 450 of birds, and mammals from javelina to black bears, which returned on their own from Mexico. The Chisos, cooler and wetter than the desert around them, hold pinyon, oak and juniper woodland where the Colima warbler nests, the only place in the United States it does.",
+  "People have lived here for at least ten thousand years. Chisos and Jumano peoples were displaced by the Mescalero Apache, and Comanche raiders crossed the river on their trail into Mexico. Spanish presidios came and went; after 1848 the river became an international boundary, and ranchers, farmers and quicksilver miners moved in. Texas bought the land and gave it to the nation, and the park was established in 1944.",
+  "The park administers 118 miles of the river, and across it lies Mexico. At Boquillas a small port of entry lets visitors with a passport cross by rowboat to the village on the far bank."
+ ],
+ "sights": [
+  {
+   "name": "Santa Elena Canyon",
+   "match": "Santa Elena Canyon Trail",
+   "note": "The Rio Grande leaves a 1,500-foot cleft in a wall of limestone; a short trail follows it in."
+  },
+  {
+   "name": "The Window",
+   "match": "The Window Trail",
+   "note": "The Chisos Basin's one outlet, a pour-off framing the desert to the west — best at sunset."
+  },
+  {
+   "name": "Lost Mine Trail",
+   "note": "A climb through oak and juniper to a ridge with views deep into the Chisos and over Mexico."
+  },
+  {
+   "name": "Emory Peak",
+   "match": "Emory Peak Trail",
+   "note": "The highest point in the park, reached by a long trail and a short scramble."
+  },
+  {
+   "name": "Boquillas Canyon",
+   "match": "Boquillas Canyon Trail",
+   "note": "The river enters a deep limestone canyon at the park's eastern end."
+  },
+  {
+   "name": "Hot Springs",
+   "match": "Hot Springs Historic Trail",
+   "note": "A stone tub of 105°F spring water on the riverbank, beside the ruins of an early tourist resort."
+  },
+  {
+   "name": "Mule Ears",
+   "match": "Mule Ears Overlook",
+   "note": "Twin volcanic peaks seen from the Ross Maxwell Scenic Drive."
+  },
+  {
+   "name": "Castolon Historic District",
+   "note": "Adobe buildings of a border trading post and army camp, near the river."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Persimmon Gap, on US 385 seventy miles south of Marathon",
+   "Maverick, from Study Butte and Terlingua on the west side"
+  ],
+  "permits": [
+   "Backcountry camping and river trips — a permit from a visitor center",
+   "Crossing to Boquillas, Mexico — a passport, at the Boquillas Port of Entry when it is open"
+  ],
+  "lodging": [
+   "Chisos Mountains Lodge, in the Chisos Basin"
+  ],
+  "seasonalClosures": [
+   "May to August are extremely hot in the desert and along the river; the Chisos run 10 to 15°F cooler"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1848",
+   "text": "The Treaty of Guadalupe Hidalgo makes the Rio Grande an international boundary."
+  },
+  {
+   "year": "1944",
+   "text": "Big Bend National Park is established."
+  },
+  {
+   "year": "2013",
+   "text": "The Boquillas crossing reopens as an official port of entry."
+  }
+ ],
+ "safety": [
+  "Carry far more water than you think you need. Desert heat is dangerous most of the year, and services are many miles apart.",
+  "The Rio Grande looks gentle but has strong currents and sudden drop-offs. Swimming is not advised.",
+  "Black bears and mountain lions live in the Chisos. Store food properly and keep children close."
+ ],
+ "regulations": [
+  "Cross into Mexico only at the Boquillas Port of Entry, when it is open, with a passport.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Big Bend National Park — National Park Service",
+   "url": "https://www.nps.gov/bibe/"
+  }
+ ],
+ "contentVersion": 2
+}

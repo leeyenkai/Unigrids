@@ -1,0 +1,92 @@
+{
+ "placeID": "np-lake-clark",
+ "summary": "A sample of all Alaska in one park: two steaming volcanoes, glaciers, long turquoise lakes, rainforest on the Cook Inlet coast and brown bears grazing its meadows — a short flight from Anchorage, and reached by no road.",
+ "facts": {
+  "bestSeasons": [
+   "summer"
+  ],
+  "suggestedTime": "A day trip by floatplane, or several days"
+ },
+ "story": [
+  "Lake Clark sits where the Alaska and Aleutian ranges meet in the Chigmit Mountains. Two volcanoes stand over Cook Inlet: Mount Iliamna and Mount Redoubt, which erupted in 1989 and again in 2009. Glaciers flow from the peaks; to the west the land drops to long lakes and rivers, including Lake Clark itself, about forty miles long.",
+  "The lakes and rivers are nurseries for the sockeye salmon of the Bristol Bay fishery, among the largest wild salmon runs left in the world, and the salmon feed the land: brown bears gather along the coast at Chinitna Bay and Silver Salmon Creek to graze sedges, dig clams and fish, while bald eagles, moose and caribou range inland.",
+  "This is Dena'ina country. The village of Kijik, on Lake Clark, was home to a Dena'ina community until the early twentieth century and is now a National Historic Landmark. Captain James Cook charted the inlet in 1778, Russian and then American traders followed, and floatplanes opened the country after 1930.",
+  "From 1968 Richard Proenneke lived alone at Twin Lakes for some thirty years in a log cabin he built by hand, and filmed his life there; the cabin is preserved. The area became a national monument in 1978 and a national park and preserve under the Alaska lands act of 1980."
+ ],
+ "sights": [
+  {
+   "name": "Redoubt Volcano",
+   "note": "An active, glacier-clad stratovolcano that erupted in 1989 and 2009."
+  },
+  {
+   "name": "Iliamna Volcano",
+   "note": "The park's highest volcano, steaming above Cook Inlet."
+  },
+  {
+   "name": "Kijik",
+   "match": "Kijik Archeological District National Historic Landmark",
+   "note": "The site of a Dena'ina village on the shore of Lake Clark."
+  },
+  {
+   "name": "Proenneke's Cabin",
+   "note": "Richard Proenneke's hand-built log cabin at Upper Twin Lake.",
+   "location": [
+    60.6464,
+    -153.8174
+   ]
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "No roads: by small plane from Anchorage, Homer or Kenai, often landing on beaches or lakes",
+   "Port Alsworth, on Lake Clark, has the park's visitor center"
+  ],
+  "lodging": [
+   "Private lodges at Port Alsworth and along the coast; a few public-use cabins"
+  ],
+  "seasonalClosures": [
+   "Most visits fall between June and September; coastal bear viewing peaks from June to August"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1778",
+   "text": "Captain James Cook surveys Cook Inlet."
+  },
+  {
+   "year": "1930",
+   "text": "The first floatplane lands on Lake Clark."
+  },
+  {
+   "year": "1968",
+   "text": "Richard Proenneke begins building his cabin at Twin Lakes."
+  },
+  {
+   "year": "1978",
+   "text": "Lake Clark National Monument is proclaimed."
+  },
+  {
+   "year": "1980",
+   "text": "The Alaska lands act creates Lake Clark National Park and Preserve."
+  },
+  {
+   "year": "2009",
+   "text": "Mount Redoubt erupts."
+  }
+ ],
+ "safety": [
+  "Stay at least 50 yards from bears, and never get between a sow and her cubs.",
+  "Weather delays flights often. Carry extra food, warm clothing and rain gear."
+ ],
+ "regulations": [
+  "Local rural residents may hunt, fish and gather for subsistence.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Lake Clark National Park and Preserve — National Park Service",
+   "url": "https://www.nps.gov/lacl/"
+  }
+ ],
+ "contentVersion": 2
+}

@@ -1,0 +1,84 @@
+{
+ "placeID": "np-great-sand-dunes",
+ "summary": "The tallest dunes in North America, up to 750 feet high, heaped against the Sangre de Cristo Mountains at the edge of Colorado's San Luis Valley — with a seasonal creek at their foot and forest, alpine lakes and tundra above.",
+ "facts": {
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "One day"
+ },
+ "story": [
+  "The dunes are sand from the San Luis Valley, carried by southwesterly winds across the valley floor and piled against a curve of the Sangre de Cristo Mountains. Storm winds blowing back the other way through the mountain passes stack the dunes higher instead of letting them march on. The dunefield covers about thirty square miles and holds some five billion cubic metres of sand.",
+  "Creeks recycle the sand. In late spring Medano Creek runs along the foot of the dunes in a series of small waves called surge flow, and for a few weeks the park has a beach eight thousand feet up. The sand's surface can pass 150°F on a summer afternoon, while the nights are cool.",
+  "The park climbs from grassland, wetland and dunes through forest to alpine lakes and tundra in the national preserve, and holds insects found nowhere else, among them the Great Sand Dunes tiger beetle. Its night sky is protected as an International Dark Sky Park.",
+  "People have hunted here for 11,000 years. To the Ute the dunes were sand that moves; Blanca Peak, to the south, is one of the four sacred mountains of the Navajo. A gold-mining scheme to process the dunes' sand helped prompt President Hoover to proclaim a national monument in 1932, and in 2004 it became a national park and preserve."
+ ],
+ "sights": [
+  {
+   "name": "High Dune",
+   "match": "High Dune on First Ridge",
+   "note": "The summit most visitors aim for, a steep climb in soft sand with views over the dunefield."
+  },
+  {
+   "name": "Star Dune",
+   "note": "The tallest dune in North America, a long, demanding hike."
+  },
+  {
+   "name": "Medano Creek",
+   "note": "A shallow creek at the foot of the dunes, flowing in waves in late spring."
+  },
+  {
+   "name": "Mosca Pass",
+   "note": "A trail through aspen and fir to a pass in the Sangre de Cristos."
+  },
+  {
+   "name": "Medano Pass",
+   "note": "A four-wheel-drive road over the mountains, with primitive campsites along the way."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "CO 150, reached from US 160 in the south or from CO 17 by way of Lane 6 in the west; open around the clock, with no reservations needed"
+  ],
+  "permits": [
+   "Backpacking into the dunes or the preserve — a free permit"
+  ],
+  "seasonalClosures": [
+   "Medano Creek usually flows from late spring into early summer; Medano Pass Road needs high-clearance four-wheel drive and closes in winter"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1694",
+   "text": "Diego de Vargas becomes the first European known to enter the San Luis Valley."
+  },
+  {
+   "year": "1932",
+   "text": "President Hoover proclaims Great Sand Dunes National Monument."
+  },
+  {
+   "year": "2000",
+   "text": "Congress authorizes a national park and preserve."
+  },
+  {
+   "year": "2004",
+   "text": "Great Sand Dunes National Park and Preserve is established."
+  }
+ ],
+ "safety": [
+  "In summer, climb the dunes in the morning or evening: midday sand is hot enough to burn bare feet.",
+  "Get off the dunes when thunderstorms build. Lightning strikes the high ridges."
+ ],
+ "regulations": [
+  "Sandboarding and sand sledding are allowed on the dunes, away from vegetation.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Great Sand Dunes National Park and Preserve — National Park Service",
+   "url": "https://www.nps.gov/grsa/"
+  }
+ ],
+ "contentVersion": 2
+}

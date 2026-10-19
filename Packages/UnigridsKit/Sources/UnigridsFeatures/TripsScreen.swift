@@ -5,22 +5,30 @@ import UnigridsDesign
 import UnigridsLog
 import UnigridsReference
 
-/// The log (SPECIFICATION.md §9, §10).
-///
-/// A trip holds park visits, and each visit holds check-ins. The planner's four tools —
-/// itineraries, alerts, permits and weather — arrive in 1.0.0, so this milestone shows
-/// the log honestly rather than a planner that cannot plan.
+/// Trips: the planner and the log in one list (SPECIFICATION.md §9, §10). A trip starts
+/// as a plan with an itinerary of stops, and fills with visits as the reader checks in.
 public struct TripsScreen: View {
     @Environment(\.referenceStore) private var store
     @Environment(\.modelContext) private var context
+    @Environment(\.unigrid) private var style
 
     @Query(sort: \Visit.date, order: .reverse) private var visits: [Visit]
     @Query(sort: \Trip.createdAt, order: .reverse) private var trips: [Trip]
 
     @State private var editing: Visit?
+    @State private var creatingTrip = false
     @State private var error: String?
 
     public init() {}
+
+    private var openTrips: [Trip] {
+        trips.filter { $0.status != .done }
+            .sorted { ($0.startDate ?? .distantFuture) < ($1.startDate ?? .distantFuture) }
+    }
+
+    private var doneTrips: [Trip] {
+        trips.filter { $0.status == .done }
+    }
 
     private var loose: [Visit] {
         visits.filter { $0.trip == nil }
@@ -29,50 +37,76 @@ public struct TripsScreen: View {
     public var body: some View {
         NavigationStack {
             List {
-                if visits.isEmpty {
-                    Section {
-                        ContentUnavailableView {
-                            Label("No visits yet", systemImage: "suitcase")
-                        } description: {
-                            Text(
-                                "Check in from a map pin, a park guide or the passport, "
-                                    + "and it shows up here."
-                            )
+                Section {
+                    VStack(alignment: .leading, spacing: 0) {
+                        BandHeader(
+                            "Trips",
+                            kicker: "\(trips.count) trip\(trips.count == 1 ? "" : "s") · "
+                                + "\(visits.count) visit\(visits.count == 1 ? "" : "s") logged"
+                        )
+                        Button {
+                            creatingTrip = true
+                        } label: {
+                            Label("Plan a trip", systemImage: "plus")
                         }
+                        .buttonStyle(BrochureButtonStyle(.primary))
+                        .padding(UnigridStyle.pageMargin)
+                    }
+                    .listRowInsets(EdgeInsets())
+                    .listRowSeparator(.hidden)
+                    .listRowBackground(Color.clear)
+                }
+
+                if trips.isEmpty, visits.isEmpty {
+                    Section {
+                        EmptyLogNote()
+                            .listRowBackground(Color.clear)
                     }
                 }
 
-                ForEach(trips) { trip in
-                    Section {
-                        ForEach((trip.visits ?? []).sorted { $0.date > $1.date }) { visit in
-                            visitRow(visit)
-                        }
-                    } header: {
-                        HStack {
-                            Text(trip.name)
-                            Spacer()
-                            Text(trip.status.name)
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                        }
-                    }
+                if !openTrips.isEmpty {
+                    tripSection("Planning", trips: openTrips)
+                }
+                if !doneTrips.isEmpty {
+                    tripSection("Done", trips: doneTrips)
                 }
 
                 if !loose.isEmpty {
-                    Section(trips.isEmpty ? "Visits" : "Not on a trip") {
+                    Section {
                         ForEach(loose) { visit in
-                            visitRow(visit)
+                            VisitRow(visit: visit) { editing = visit }
+                                .listRowBackground(Color.clear)
+                                .swipeActions(edge: .trailing) {
+                                    Button(role: .destructive) {
+                                        delete(visit)
+                                    } label: {
+                                        Label("Delete", systemImage: "trash")
+                                    }
+                                }
                         }
+                    } header: {
+                        SectionHead(
+                            trips.isEmpty ? "Visits" : "Visits not on a trip",
+                            detail: "\(loose.count)"
+                        )
                     }
                 }
-
-                Section {
-                    PlannerPendingRow()
-                }
             }
+            .listStyle(.plain)
+            .paperPage()
             .navigationTitle("Trips")
+            .toolbarTitleDisplayMode(.inline)
+            .navigationDestination(for: Trip.self) { trip in
+                TripDetailScreen(trip: trip)
+            }
+            .navigationDestination(for: UnigridsID.self) { id in
+                PlaceDestination(placeID: id)
+            }
             .sheet(item: $editing) { visit in
                 VisitEditor(visit: visit)
+            }
+            .sheet(isPresented: $creatingTrip) {
+                TripEditor(trip: nil)
             }
             .alert("Could not save", isPresented: .constant(error != nil)) {
                 Button("OK") { error = nil }
@@ -82,18 +116,130 @@ public struct TripsScreen: View {
         }
     }
 
-    private func visitRow(_ visit: Visit) -> some View {
+    private func tripSection(_ title: String, trips: [Trip]) -> some View {
+        Section {
+            ForEach(trips) { trip in
+                NavigationLink(value: trip) {
+                    TripRow(trip: trip)
+                }
+                .listRowBackground(Color.clear)
+            }
+        } header: {
+            SectionHead(title, detail: "\(trips.count)")
+        }
+    }
+
+    private func delete(_ visit: Visit) {
+        do {
+            try LogStore(context: context).delete(visit)
+        } catch {
+            self.error = error.localizedDescription
+        }
+    }
+}
+
+struct EmptyLogNote: View {
+    @Environment(\.unigrid) private var style
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Nothing here yet.")
+                .font(UnigridStyle.rowTitle)
+                .foregroundStyle(style.ink)
+            Text(
+                "Plan a trip, or check in from a map card or a park guide. Stamping the "
+                    + "passport logs a visit too, so the trip log and the passport always agree."
+            )
+            .font(UnigridStyle.proseSmall)
+            .foregroundStyle(style.inkSecondary)
+            .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(.vertical, 8)
+    }
+}
+
+/// A trip in the list: its name, dates, and its stops as a row of markers.
+struct TripRow: View {
+    @Environment(\.referenceStore) private var store
+    @Environment(\.unigrid) private var style
+    let trip: Trip
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack(alignment: .firstTextBaseline) {
+                Text(trip.name)
+                    .font(UnigridStyle.rowTitle)
+                    .foregroundStyle(style.ink)
+                Spacer()
+                Kicker(trip.status.name)
+            }
+            Text(detail)
+                .font(UnigridStyle.rowDetail)
+                .foregroundStyle(style.inkSecondary)
+            let places = trip.orderedStops.compactMap { store.place($0.place) }
+            if !places.isEmpty {
+                HStack(spacing: 4) {
+                    ForEach(places.prefix(14)) { place in
+                        PlaceMarker(tier: place.tier, tint: style.agencyTint(for: place))
+                    }
+                    if places.count > 14 {
+                        Text("+\(places.count - 14)")
+                            .font(UnigridStyle.dataLabel)
+                            .foregroundStyle(style.inkSecondary)
+                    }
+                }
+                .accessibilityLabel(places.map(\.name).joined(separator: ", "))
+            }
+        }
+        .padding(.vertical, 4)
+    }
+
+    private var detail: String {
+        var parts: [String] = []
+        if let start = trip.startDate {
+            var range = start.formatted(.dateTime.day().month(.abbreviated))
+            if let end = trip.endDate, !Calendar.current.isDate(end, inSameDayAs: start) {
+                range += "–" + end.formatted(.dateTime.day().month(.abbreviated).year())
+            } else {
+                range += " " + start.formatted(.dateTime.year())
+            }
+            parts.append(range)
+        }
+        let stops = trip.orderedStops.count
+        parts.append("\(stops) stop\(stops == 1 ? "" : "s")")
+        let visits = trip.visits?.count ?? 0
+        if visits > 0 {
+            parts.append("\(visits) visit\(visits == 1 ? "" : "s")")
+        }
+        return parts.joined(separator: " · ")
+    }
+}
+
+/// A logged visit: where, when, how it was logged, and what was checked in.
+struct VisitRow: View {
+    @Environment(\.referenceStore) private var store
+    @Environment(\.unigrid) private var style
+    let visit: Visit
+    let onEdit: () -> Void
+
+    var body: some View {
         let place = store.place(visit.place)
-        return Button {
-            editing = visit
-        } label: {
+        Button(action: onEdit) {
             HStack(spacing: 12) {
+                if let place {
+                    PlaceMarker(
+                        tier: place.tier,
+                        tint: style.agencyTint(for: place),
+                        status: .visited
+                    )
+                    .frame(width: 20)
+                }
                 VStack(alignment: .leading, spacing: 3) {
                     // A visit outlives the reference data it points at, so an unresolved
                     // place renders as unknown rather than disappearing (AGENTS.md §4).
                     Text(place?.name ?? "Unknown place (\(visit.placeID))")
-                        .font(.body.weight(.medium))
-                        .foregroundStyle(place == nil ? .secondary : .primary)
+                        .font(UnigridStyle.rowTitle)
+                        .foregroundStyle(place == nil ? style.inkSecondary : style.ink)
                     HStack(spacing: 6) {
                         Text(visit.date, format: .dateTime.day().month(.abbreviated).year())
                         Text("·")
@@ -107,59 +253,24 @@ public struct TripsScreen: View {
                                 .accessibilityLabel("Stamped")
                         }
                     }
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .font(UnigridStyle.rowDetail)
+                    .foregroundStyle(style.inkSecondary)
                 }
                 Spacer()
                 if let rating = visit.rating {
-                    HStack(spacing: 1) {
-                        ForEach(0 ..< rating, id: \.self) { _ in
-                            Image(systemName: "star.fill")
-                                .font(.caption2)
-                                .foregroundStyle(.yellow)
-                        }
-                    }
-                    .accessibilityLabel("\(rating) stars")
+                    Text(String(repeating: "★", count: rating))
+                        .font(.caption)
+                        .foregroundStyle(style.ink)
+                        .accessibilityLabel("\(rating) stars")
                 }
             }
+            .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .swipeActions(edge: .trailing) {
-            Button(role: .destructive) {
-                delete(visit)
-            } label: {
-                Label("Delete", systemImage: "trash")
-            }
-        }
-    }
-
-    private func delete(_ visit: Visit) {
-        do {
-            try LogStore(context: context).delete(visit)
-        } catch {
-            self.error = error.localizedDescription
-        }
     }
 }
 
-/// Says plainly what the planner will do, rather than offering a button that does nothing
-/// (AGENTS.md §10).
-struct PlannerPendingRow: View {
-    var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Label("Planner arrives in 1.0", systemImage: "calendar.badge.clock")
-                .font(.subheadline.weight(.medium))
-            Text(
-                "Multi-day itineraries with drive times, live NPS alerts, permit and "
-                    + "timed-entry reminders, and weather against crowds by month."
-            )
-            .font(.caption)
-            .foregroundStyle(.secondary)
-            .fixedSize(horizontal: false, vertical: true)
-        }
-        .padding(.vertical, 4)
-    }
-}
+// MARK: - Visit editor
 
 /// Edit or delete anything, which §9 lists under ownership of data.
 struct VisitEditor: View {
@@ -167,12 +278,15 @@ struct VisitEditor: View {
     @Environment(\.unigrid) private var style
     @Environment(\.dismiss) private var dismiss
     @Environment(\.referenceStore) private var store
+    @Query(sort: \Trip.createdAt, order: .reverse) private var trips: [Trip]
 
     let visit: Visit
 
     @State private var date: Date
     @State private var notes: String
     @State private var rating: Int?
+    @State private var tripID: UUID?
+    @State private var confirmDelete = false
     @State private var error: String?
 
     init(visit: Visit) {
@@ -180,6 +294,7 @@ struct VisitEditor: View {
         _date = State(initialValue: visit.date)
         _notes = State(initialValue: visit.notes)
         _rating = State(initialValue: visit.rating)
+        _tripID = State(initialValue: visit.trip?.id)
     }
 
     var body: some View {
@@ -191,6 +306,12 @@ struct VisitEditor: View {
                         selection: $date,
                         displayedComponents: [.date, .hourAndMinute]
                     )
+                    Picker("Trip", selection: $tripID) {
+                        Text("Not on a trip").tag(UUID?.none)
+                        ForEach(trips) { trip in
+                            Text(trip.name).tag(UUID?.some(trip.id))
+                        }
+                    }
                 } header: {
                     Text(store.place(visit.place)?.name ?? visit.placeID)
                 }
@@ -237,10 +358,16 @@ struct VisitEditor: View {
                     }
                 }
 
+                Section {
+                    Button("Delete this visit", role: .destructive) {
+                        confirmDelete = true
+                    }
+                }
+
                 if let error {
                     Section {
                         Label(error, systemImage: "exclamationmark.triangle")
-                            .foregroundStyle(.red)
+                            .foregroundStyle(style.seal)
                     }
                 }
             }
@@ -254,6 +381,15 @@ struct VisitEditor: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") { save() }
                 }
+            }
+            .confirmationDialog(
+                "Delete this visit?",
+                isPresented: $confirmDelete,
+                titleVisibility: .visible
+            ) {
+                Button("Delete", role: .destructive) { deleteVisit() }
+            } message: {
+                Text("Its check-ins go with it. Passport stamps stay in the passport.")
             }
         }
     }
@@ -276,7 +412,17 @@ struct VisitEditor: View {
                 visit.date = date
                 visit.notes = notes
                 visit.rating = rating
+                visit.trip = trips.first { $0.id == tripID }
             }
+            dismiss()
+        } catch {
+            self.error = error.localizedDescription
+        }
+    }
+
+    private func deleteVisit() {
+        do {
+            try LogStore(context: context).delete(visit)
             dismiss()
         } catch {
             self.error = error.localizedDescription

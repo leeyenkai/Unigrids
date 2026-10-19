@@ -1,57 +1,58 @@
-# Reference data — pilot seed
+# Reference data
 
-**This directory is a hand-authored stopgap, not pipeline output.** It exists so the app
-has real places to render while `Pipeline/` is built. `manifest.json` says so too:
-`"provenance": "seed"`, which the app surfaces on its data screen.
+**Built by the pipeline, not edited here.** Everything in this directory is written by
+`unigrids_pipeline reference` from the raw snapshot under `Pipeline/raw/<date>/` and the
+curated files under `Pipeline/content/`. `manifest.json` records `"provenance":
+"pipeline"` and the build date, and the app shows both in Settings. To change a fact, change
+the content file or the raw source and rebuild; hand edits here are overwritten.
+
+```bash
+cd Pipeline
+PYTHONPATH=src uv run python -m unigrids_pipeline reference --skip-fetch   # rebuild
+PYTHONPATH=src uv run python -m unigrids_pipeline reference --refresh      # re-fetch first
+```
+
+Re-fetching needs `NPS_API_KEY` in `.env` (`AGENTS.md` §5).
+
+`Pipeline/seed/build_seed.py` wrote the hand-authored pilot seed that this replaced. It is
+superseded: running it would overwrite these files with the old four-park seed.
 
 ## What is here
 
-| File | Contents | Authored by |
+| File | Contents | From |
 |---|---|---|
-| `manifest.json` | Dataset version, build date, provenance | `Pipeline/seed/build_seed.py` |
-| `places.json` | All 63 national parks | `Pipeline/seed/build_seed.py` |
-| `pois.json` | Sights and visitor centres for the four pilot parks | `Pipeline/seed/build_seed.py` |
-| `themes.json` | 18 theme tags across geology, ecosystem and history | `Pipeline/seed/build_seed.py` |
-| `guides/np-*.json` | Guide content for the four pilot parks | Hand-edited, not generated |
+| `manifest.json` | Dataset version, build date, provenance, a one-line note | The build |
+| `places.json` | 537 places: 63 national parks, 373 other NPS units, 76 state parks, 25 monuments, conservation areas and refuges | NPS Data API; `content/national-parks.json`, `state-parks.json`, `federal-sites.json` |
+| `pois.json` | 1,434 sights, visitor centres and campgrounds | NPS Data API places, visitor centres and campgrounds; sight choices and notes from the guides |
+| `themes.json` | Theme tags | `content/themes.json` |
+| `boundaries.json` | 506 outlines as encoded polylines, simplified | NPS Land Resources Division unit boundaries; USGS PAD-US 4.1 |
+| `guides/np-*.json` | One guide per national park | `content/guides/`, merged with NPS fees, hours, weather, directions and photographs |
+| `images/` | 235 photographs, resized and recompressed | NPS (public domain) for national parks; Wikimedia Commons for other places |
 
-Regenerate the generated files with:
+## Provenance and known limits
 
-```bash
-python3 Pipeline/seed/build_seed.py
-```
-
-The guide files are deliberately left alone by that script — they are prose, and prose
-belongs under version control as prose.
-
-## Provenance and known gaps
-
-Read this before treating anything here as a fact.
-
-- **Coordinates are approximate.** Park centres are rounded to two decimal places and POI
-  locations to four. Good enough to place a pin and frame a camera; not survey data.
-- **Figures are unverified.** The at-a-glance numbers for the four pilot parks
-  (established year, area, elevation range, annual visits, fee) were authored from general
-  knowledge and have **not** been checked against the NPS API. Visitation is rounded to
-  the nearest hundred thousand specifically so it does not read as a published figure.
-  The other 59 parks carry no figures at all, which renders as absent rather than as a
-  guess — that is the correct behaviour, not a gap to fill by hand.
-- **No boundaries.** Only the four pilot parks carry an extent, and none carries a
-  polygon. Boundary tinting (§5) needs PAD-US geometry from the pipeline.
-- **No trails.** `trails.json` does not exist yet; the store treats that as the expected
-  state. The catalogue needs the NPS Public Trails dataset (§8).
-- **No images.** There are no hero photographs and no brochure maps, because only
-  photographs confirmed public domain may be reused in native guides (§15) and that
-  confirmation is part of the pipeline's work. The guide renders a labelled placeholder
-  where the brochure map will go.
-- **Passport regions are inferred.** No place here carries a curated `passportRegion`, so
-  every one falls back to `PassportRegion.byState`. That fallback is Unigrids' own
-  grouping, not the paper passport's assignments — see §17, follow-up 3.
-- **Tiers 2–4 are absent.** Other NPS units, state parks and federal sites need the full
-  NPS unit list and PAD-US (§5).
-
-## When the pipeline lands
-
-The pipeline's build step writes these same filenames, with `"provenance": "pipeline"`,
-into `../generated/` — which is gitignored, because generated data belongs to the
-generator. At that point delete this directory and `Pipeline/seed/`, and point
-`BundledReferenceStore` at `generated`.
+- **National park figures** — date established, area and 2025 recreation visits — come
+  from `content/national-park-facts.json`, sourced from the NPS acreage report and NPS
+  visitor statistics. Elevations, best seasons and suggested time come from the guides and
+  are absent where no source gave them. An absent figure is correct; it is never filled
+  by guess.
+- **Guide prose and place summaries are written for Unigrids** and checked against the NPS
+  Data API and Wikipedia. Other NPS units carry the NPS's own description, credited as
+  such. Two new units with no NPS description yet show none.
+- **Photographs.** A national park's photographs are NPS images whose credit names the
+  NPS, which makes them US government works in the public domain; anything credited to a
+  third party or marked as courtesy is excluded. Photographs of other places are from
+  Wikimedia Commons and only under a reusable licence (public domain, CC0, CC BY or
+  CC BY-SA), each with its credit, licence and source link. Every photograph is listed in
+  Settings → Photo credits.
+- **Outlines are for finding a place, not for navigation.** They are simplified
+  (Douglas–Peucker at about 60 m for national parks, 120 m otherwise) and specks are
+  dropped. PAD-US lags proclamations: Grand Staircase–Escalante still shows its
+  pre-July-2026 boundary.
+- **Coordinates** for sights are the NPS's own; where the NPS has none, the guide gives one
+  and says so in its content file.
+- **No trails.** `trails.json` is not built for the app yet; the store treats that as the
+  expected state (§8).
+- **Passport regions** for places without a curated region fall back to
+  `PassportRegion.byState`, Unigrids' own grouping rather than the paper passport's
+  (§17, follow-up 3).

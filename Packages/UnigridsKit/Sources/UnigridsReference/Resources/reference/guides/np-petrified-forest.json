@@ -1,0 +1,111 @@
+{
+ "placeID": "np-petrified-forest",
+ "contentVersion": 2,
+ "story": [
+  "About 225 million years ago, in the Late Triassic, this was a tropical lowland crossed by rivers. Fallen trees washed into them and were buried in sediment rich in volcanic ash. Groundwater carried silica from the ash into the wood, which turned slowly to quartz, coloured red, yellow and purple by iron and other minerals. Erosion of the soft Chinle Formation now exposes the logs across the park.",
+  "The same rocks hold fossils of the animals that lived among the trees — early dinosaurs, crocodile-like phytosaurs and giant amphibians — and the Painted Desert's badlands in bands of red, grey and white. Grassland covers much of the rest, home to pronghorn and many kinds of lizards.",
+  "People have lived here for at least twelve thousand years, making tools from petrified wood. Ancestral Puebloan farmers built villages such as Puerco Pueblo and Agate House, a small dwelling made of petrified wood, and carved thousands of petroglyphs. Later, the railroad and Route 66 crossed the area; the Painted Desert Inn, remodelled by Mary Colter in the late 1940s, served travellers on the old highway.",
+  "Early visitors hauled away petrified wood by the wagonload, and plans to crush logs for abrasives helped prompt President Theodore Roosevelt to proclaim a national monument in 1906. It became a national park in 1962."
+ ],
+ "sightNotes": {
+  "poi-petrified-forest-blue-mesa": "A loop down among blue, grey and purple badlands strewn with petrified wood.",
+  "poi-petrified-forest-crystal-forest": "A paved loop through logs with sparkling quartz and amethyst crystals.",
+  "poi-petrified-forest-giant-logs": "Some of the park's largest logs, behind the Rainbow Forest Museum.",
+  "poi-petrified-forest-agate-bridge": "A petrified log spanning a small ravine, braced by concrete in the early 1900s.",
+  "poi-petrified-forest-agate-house": "A small Ancestral Puebloan dwelling built from blocks of petrified wood.",
+  "poi-petrified-forest-puerco-pueblo": "Remains of a pueblo of about a hundred rooms, with petroglyphs nearby.",
+  "poi-petrified-forest-painted-desert-inn": "A historic Route 66 inn with murals by the Hopi artist Fred Kabotie, now a museum.",
+  "poi-petrified-forest-tawa-point": "A rim overlook across the colourful Painted Desert badlands."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "North Entrance, at Interstate 40 exit 311",
+   "South Entrance, on US 180 east of Holbrook; a 28-mile park road connects the two"
+  ],
+  "permits": [
+   "Overnight backpacking in the wilderness — a free permit"
+  ],
+  "lodging": [
+   "No lodging or campground; Holbrook is the nearest town"
+  ],
+  "seasonalClosures": [
+   "The park road is open in daylight hours only; summer brings heat and afternoon lightning"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1906",
+   "text": "President Theodore Roosevelt proclaims Petrified Forest National Monument."
+  },
+  {
+   "year": "1962",
+   "text": "Petrified Forest becomes a national park."
+  }
+ ],
+ "safety": [
+  "Shade is scarce. Carry water, and avoid exposed ridges in afternoon thunderstorms."
+ ],
+ "regulations": [
+  "Taking any petrified wood, however small, is prohibited. Buy legally collected wood from shops outside the park.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Petrified Forest National Park — National Park Service",
+   "url": "https://www.nps.gov/pefo/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$25",
+   "detail": "Admits one private, non-commercial vehicle (15-passenger capacity or less) and all occupants. Valid for 7 days."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Admits one individual with no motor vehicle (bicyclist, hiker, pedestrian). Youth 15 and under are admitted free of charge. Valid for 7 days."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$20",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo",
+  "isPublicDomain": true,
+  "assetName": "np-petrified-forest-1.jpg",
+  "caption": "Petrified Forest National Wilderness Area",
+  "altText": "Sunlit Painted Desert hills of the Petrified Forest National Wilderness Area"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-petrified-forest-2.jpg",
+   "caption": "Painted Desert Inn National Historic Landmark",
+   "altText": "Sunset lights up the Painted Desert Inn National Historic Landmark west side."
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-petrified-forest-3.jpg",
+   "caption": "Agate House",
+   "altText": "Sunlight highlights the colorful petrified wood of Agate House"
+  },
+  {
+   "credit": "NPS Photo/Andrew V. Kearns",
+   "isPublicDomain": true,
+   "assetName": "np-petrified-forest-4.jpg",
+   "caption": "Puerco Pueblo",
+   "altText": "Masonry wall foundations are all that are left of a hundred room pueblo"
+  }
+ ],
+ "operatingHours": "Park Road hours of operation may change due to weather or safety issues. Closed Thanksgiving and Christmas.",
+ "weather": "Petrified Forest National Park is a semi-arid grassland. Temperatures range from above 100° F (38° C) to well below freezing. About 10 inches (25.4 cm) of moisture comes during infrequent snow in the winter and often dramatic summer thunder-storms. Animals and plants are adapted to extremes in temperature and moisture. You should be ready too. Check out the forecast before you arrive and plan accordingly.",
+ "directions": "Petrified Forest stretches north/south between I-40 and Hwy 180. There are two entrances into the park.*** ***WESTBOUND I-40***Travelers should take Exit 311, drive 28 miles through the park to Hwy 180 at the south end. Travel 19 miles to return to I-40 via Holbrook.*** ***EASTBOUND I-40***Travelers should take Exit 285 into Holbrook then travel 19 miles on Hwy 180 to the park's south entrance. Drive 28 miles north through the park to return to I-40."
+}

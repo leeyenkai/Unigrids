@@ -1,0 +1,114 @@
+{
+ "placeID": "np-olympic",
+ "summary": "Nearly a million acres on Washington's Olympic Peninsula holding three parks in one: glacier-capped mountains, the moss-hung rainforests of the Hoh and Quinault valleys, and more than seventy miles of wild Pacific coast.",
+ "facts": {
+  "bestSeasons": [
+   "summer"
+  ],
+  "suggestedTime": "Three to four days"
+ },
+ "story": [
+  "The Olympic Mountains are seafloor pushed up against the continent as an ocean plate slid beneath it, then carved by glaciers into a ring of peaks around Mount Olympus. Cut off for ages by ice and sea, they evolved plants and animals found nowhere else, among them the Olympic marmot.",
+  "Storms off the Pacific drop more rain on the west side of the peninsula than almost anywhere else in the contiguous states, and in the Hoh, Queets and Quinault valleys it grows temperate rainforest: Sitka spruce and western hemlock hung with moss and ferns, and herds of Roosevelt elk. The east side, in the mountains' rain shadow, is drier.",
+  "The coast is wild beach, sea stacks and tide pools, much of it reachable only on foot. People have lived along it for thousands of years; the Makah, Quileute, Hoh, Quinault and Klallam are among the peninsula's tribes, and at Ozette a village buried by a mudslide centuries ago preserved an extraordinary record of daily life.",
+  "Theodore Roosevelt proclaimed Mount Olympus National Monument in 1909, in part to protect the elk, and Congress made it a national park in 1938. On the Elwha River, two dams were removed in the 2010s, and salmon have returned upstream. The Hurricane Ridge visitor center burned down in 2023."
+ ],
+ "sights": [
+  {
+   "name": "Hurricane Ridge",
+   "match": "Explore Hurricane Ridge Loop Trailhead",
+   "note": "A ridge-top road and trails with views across the Olympic Mountains to Mount Olympus."
+  },
+  {
+   "name": "Hall of Mosses",
+   "note": "A short loop through moss-draped maples and spruce in the Hoh Rain Forest."
+  },
+  {
+   "name": "Quinault Big Sitka Spruce",
+   "match": "Quinault Big Sitka Spruce Tree",
+   "note": "One of the largest Sitka spruces known, near Lake Quinault."
+  },
+  {
+   "name": "Lake Crescent",
+   "match": "Lake Crescent Scenic Pull-Off",
+   "note": "A deep, clear glacial lake with a historic lodge."
+  },
+  {
+   "name": "Marymere Falls",
+   "note": "A slender waterfall through old forest, a short walk from Lake Crescent."
+  },
+  {
+   "name": "Sol Duc Falls",
+   "note": "A waterfall that splits into several channels in a mossy gorge."
+  },
+  {
+   "name": "Rialto Beach",
+   "note": "A driftwood-strewn beach of sea stacks, with Hole-in-the-Wall arch at low tide."
+  },
+  {
+   "name": "Ruby Beach",
+   "note": "A coastal beach of sea stacks and driftwood on the Kalaloch coast."
+  },
+  {
+   "name": "Second Beach",
+   "note": "A forest trail to a beach of sea stacks and tide pools near La Push."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "US 101 loops around the peninsula, with roads into the park from it; the main visitor center is in Port Angeles",
+   "Hurricane Ridge, by road south from Port Angeles",
+   "Hoh Rain Forest, by the Upper Hoh Road from US 101"
+  ],
+  "permits": [
+   "Overnight wilderness trips, including the coast — a wilderness permit, with reservations for busy areas"
+  ],
+  "lodging": [
+   "Lake Crescent Lodge, Sol Duc Hot Springs Resort, Kalaloch Lodge and Log Cabin Resort"
+  ],
+  "seasonalClosures": [
+   "Hurricane Ridge Road is open only on some winter days; snow covers the high country into July"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1909",
+   "text": "Theodore Roosevelt proclaims Mount Olympus National Monument."
+  },
+  {
+   "year": "1938",
+   "text": "Congress establishes Olympic National Park."
+  },
+  {
+   "year": "1976",
+   "text": "The park becomes an International Biosphere Reserve."
+  },
+  {
+   "year": "1981",
+   "text": "The park is listed as a World Heritage Site."
+  },
+  {
+   "year": "1988",
+   "text": "Ninety-five percent of the park is designated wilderness."
+  },
+  {
+   "year": "2023",
+   "text": "The Hurricane Ridge visitor center burns down."
+  }
+ ],
+ "safety": [
+  "On the coast, carry a tide table: some headlands can only be rounded at low tide, and rising water traps hikers.",
+  "Stay off large drift logs in the surf zone; waves can roll them without warning."
+ ],
+ "regulations": [
+  "Food must be stored in bear-resistant canisters on the coast and in some backcountry areas; raccoons and bears both raid camps.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Olympic National Park — National Park Service",
+   "url": "https://www.nps.gov/olym/"
+  }
+ ],
+ "contentVersion": 2
+}

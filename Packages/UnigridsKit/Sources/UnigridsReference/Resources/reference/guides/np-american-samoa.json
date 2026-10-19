@@ -1,0 +1,102 @@
+{
+ "placeID": "np-american-samoa",
+ "contentVersion": 2,
+ "story": [
+  "The park is three pieces of three volcanic islands. On Tutuila it takes in the steep, forested ridge above Pago Pago Harbor and the north coast below it; on Ofu, a beach and the coral reef off the island's southeast shore; and on Taʻū, nearly two-thirds of the island, rising from the sea to Lata Mountain, at 3,170 feet the highest point in American Samoa. Roughly a third of the park's 8,257 acres is reef and ocean.",
+  "The park exists because of a bat. In the 1980s a campaign led by the ethnobotanist Paul Cox and local supporters set out to protect the old paleotropical rainforest and the Samoan flying fox, a fruit bat that pollinates and spreads its trees. The reefs turned out to be as remarkable as the forest: hundreds of species of fish and corals in shallow, clear water off Ofu.",
+  "Samoan people have lived on these islands for around three thousand years, and the park is unusual in protecting a living culture as well as a landscape. Under the communal land system the National Park Service cannot own the land, so it leases it: a fifty-year agreement with the village councils, signed in 1993, five years after Congress created the park. Fa'asamoa — the Samoan way — governs life in the villages the park surrounds.",
+  "In September 2009 an earthquake and tsunami struck the islands, killing 34 people and destroying the park's visitor center and offices. The park has rebuilt in Pago Pago, and remains one of the least visited in the system — a few tens of thousands of visits a year."
+ ],
+ "sightNotes": {
+  "poi-american-samoa-mount-alava": "The ridge-top trail above Pago Pago Harbor, with the harbor on one side and the north coast falling away on the other.",
+  "poi-american-samoa-vatia-and-pola-island": "A north-coast village beneath the ridge, facing the sheer sea stack of Pola Island.",
+  "poi-american-samoa-ofu-beach": "A long white-sand beach on Ofu, with some of the clearest snorkelling in the territory over the reef.",
+  "poi-american-samoa-saua": "A site on Taʻū that Samoan tradition holds sacred, below forested cliffs."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Tutuila: the visitor center is in Pago Pago, and the Mount Alava trail and the road to Vatia start nearby",
+   "Ofu and Taʻū: reached by small plane from Tutuila, on a limited schedule"
+  ],
+  "lodging": [
+   "No lodging inside the park; hotels and guesthouses around Pago Pago on Tutuila"
+  ],
+  "seasonalClosures": [
+   "Rain is possible at any time of year; tropical storms are most frequent from October to May"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1984",
+   "text": "Delegate Fofō Sunia introduces a bill to protect the rainforest and the flying fox."
+  },
+  {
+   "year": "1988",
+   "text": "Congress establishes the National Park of American Samoa."
+  },
+  {
+   "year": "1993",
+   "text": "The Park Service signs a 50-year lease for the park's land with the village councils."
+  },
+  {
+   "year": "2002",
+   "text": "Congress approves an expansion of about thirty percent on Ofu and Olosega."
+  },
+  {
+   "year": "2009",
+   "text": "An earthquake and tsunami destroy the park's visitor center and offices."
+  }
+ ],
+ "safety": [
+  "Currents over and beyond the reef can be strong. Snorkel inside the reef, in calm water, and never alone.",
+  "Trails are steep and slippery after rain, which is often. Carry water; the heat and humidity are constant."
+ ],
+ "regulations": [
+  "Village land is not public land: ask permission before swimming, walking or taking photographs near a village, and keep Sundays quiet.",
+  "Corals, shells and other natural objects may not be taken.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "National Park of American Samoa — National Park Service",
+   "url": "https://www.nps.gov/npsa/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS Photo / Michael Larson",
+  "isPublicDomain": true,
+  "assetName": "np-american-samoa-1.jpg",
+  "caption": "Back side of Pola Island from Tuafanua Trail",
+  "altText": "Tuafanua Trail"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / Michael Larson",
+   "isPublicDomain": true,
+   "assetName": "np-american-samoa-2.jpg",
+   "caption": "Ta'u Island",
+   "altText": "Ta'u Island"
+  },
+  {
+   "credit": "NPS Photo / Eymard Bangcoro",
+   "isPublicDomain": true,
+   "assetName": "np-american-samoa-3.jpg",
+   "caption": "Ofu Island",
+   "altText": "Ofu Island"
+  },
+  {
+   "credit": "NPS Photo / Eymard Bangcoro",
+   "isPublicDomain": true,
+   "assetName": "np-american-samoa-4.jpg",
+   "caption": "King Fisher bird",
+   "altText": "King Fisher bird"
+  }
+ ],
+ "operatingHours": "* The National Park of American Samoa is open 24-hours per day, year round, including holidays. However, some areas of the park maybe temporarily closed due to trail maintenance and/or safety measures. * No fees or reservations are required to visit the national park. * The visitor center and park store is open weekdays from 8:00 am to 3:00 pm. and closed on weekends and federal holidays (except when cruise ships are in port).",
+ "weather": "American Samoa is in the South Pacific Ocean, between the Equator and the Tropic of Capricorn. A tropical climate prevails with warm or hot temperatures year-round and high humidity. Rain showers are frequent and can last only for a few minutes or all-day. The average annual rainfall is 125-inches in the dryer areas to as much as 300-inches in the highest mountains. Tropical storms are more prevalent during the long, wet summer season (October -May) and a slightly cooler and drier season (June-September)",
+ "directions": "The visitor center is located in the village of Pago Pago, across from the Pago Way Service Station. The national park is located in the villages of Vatia, Pago Pago, Fagasa, Afono (on Tutuila Island), Fitiuta, Faleasao (on Ta'u Island), and Ofu Island"
+}

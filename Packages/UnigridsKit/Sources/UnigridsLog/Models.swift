@@ -36,6 +36,14 @@ public final class Trip {
     @Relationship(deleteRule: .cascade, inverse: \Reminder.trip)
     public var reminders: [Reminder]? = []
 
+    @Relationship(deleteRule: .cascade, inverse: \TripStop.trip)
+    public var stops: [TripStop]? = []
+
+    /// The stops in itinerary order.
+    public var orderedStops: [TripStop] {
+        (stops ?? []).sorted { ($0.order, $0.createdAt) < ($1.order, $1.createdAt) }
+    }
+
     public var status: TripStatus {
         get { TripStatus(rawValue: statusRaw) ?? .planned }
         set { statusRaw = newValue.rawValue }
@@ -53,6 +61,39 @@ public final class Trip {
         self.startDate = startDate
         self.endDate = endDate
         statusRaw = status.rawValue
+        self.notes = notes
+        createdAt = Date()
+    }
+}
+
+/// A place on a trip's itinerary (SPECIFICATION.md §10, `ItineraryStop` in §13).
+///
+/// A stop is a plan, not a visit: it never counts towards anything the reader has done.
+/// Checking in during the trip is what turns it into a visit, which is why the two are
+/// separate records rather than a visit with a "planned" flag.
+@Model
+public final class TripStop {
+    public private(set) var id: UUID = UUID()
+    /// `UnigridsID` of the place, as a string.
+    public var placeID: String = ""
+    /// The day it is planned for, where the reader has said.
+    public var plannedDate: Date?
+    /// Itinerary position; lower first.
+    public var order: Int = 0
+    public var notes: String = ""
+    public var createdAt: Date = Date()
+
+    public var trip: Trip?
+
+    public var place: UnigridsID {
+        UnigridsID(placeID)
+    }
+
+    public init(placeID: UnigridsID, order: Int, plannedDate: Date? = nil, notes: String = "") {
+        id = UUID()
+        self.placeID = placeID.rawValue
+        self.order = order
+        self.plannedDate = plannedDate
         self.notes = notes
         createdAt = Date()
     }

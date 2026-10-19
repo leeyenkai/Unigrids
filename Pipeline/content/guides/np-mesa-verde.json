@@ -1,0 +1,106 @@
+{
+ "placeID": "np-mesa-verde",
+ "summary": "Some of the best-preserved Ancestral Pueblo sites in the country — more than five thousand of them, including six hundred cliff dwellings — on a high mesa in southwest Colorado. The first national park created to protect the works of people rather than nature.",
+ "facts": {
+  "lowestElevationMetres": 1829,
+  "highestElevationMetres": 2613,
+  "bestSeasons": [
+   "summer",
+   "autumn"
+  ],
+  "suggestedTime": "One to two days"
+ },
+ "story": [
+  "Mesa Verde is a tilted tableland of sandstone, rising to 8,572 feet at Park Point and sloping south into a maze of canyons. The canyon walls hold alcoves where water seeping through the rock eroded the softer layers, and in those alcoves people built.",
+  "Ancestral Pueblo people farmed the mesa tops for some seven hundred years, first in pithouses and then in villages of masonry. In the late 1100s many moved into the alcoves and built cliff dwellings — Cliff Palace, the largest, has around 150 rooms. By about 1300 they had left, migrating south to the Rio Grande and Little Colorado regions. Twenty-seven Pueblos and Tribes today trace a connection to Mesa Verde.",
+  "Ranchers of the Wetherill family, guided by Ute friends, came upon the great cliff dwellings in the late 1880s. Collectors and excavators soon followed, and when a Swedish scientist shipped a collection of artifacts abroad, alarm grew. Congress created Mesa Verde National Park in 1906, the same year as the Antiquities Act.",
+  "It was among the first places named a World Heritage Site. Today the cliff dwellings are visited on ranger-guided tours, and the park is also an International Dark Sky Park."
+ ],
+ "sights": [
+  {
+   "name": "Cliff Palace",
+   "match": "Cliff Palace Overlook",
+   "note": "The largest cliff dwelling in North America, seen from the rim or on a ranger-guided tour."
+  },
+  {
+   "name": "Balcony House",
+   "match": "Balcony House Parking Area",
+   "note": "A cliff dwelling reached by ladders and a tight tunnel on a guided tour."
+  },
+  {
+   "name": "Spruce Tree House",
+   "match": "Spruce Tree House Overlook",
+   "note": "A well-preserved dwelling near the museum, seen from the overlook."
+  },
+  {
+   "name": "Square Tower House",
+   "note": "A dwelling with a four-story tower, seen from the Mesa Top Loop."
+  },
+  {
+   "name": "Sun Temple",
+   "note": "A D-shaped ceremonial structure on the mesa top above Cliff Palace."
+  },
+  {
+   "name": "Petroglyph Point Trail",
+   "note": "A trail along the cliff below the rim to a panel of petroglyphs."
+  },
+  {
+   "name": "Far View Sites",
+   "match": "Far View Community Sites",
+   "note": "Mesa-top villages and a reservoir from before the cliff-dwelling era."
+  },
+  {
+   "name": "Park Point",
+   "note": "The park's highest point, a fire lookout with views of four states on a clear day."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "One entrance, on US 160 between Cortez and Mancos; the road to the main sites is long and winding"
+  ],
+  "reservations": "Tours of Cliff Palace, Balcony House and Long House need tickets, booked ahead in season.",
+  "lodging": [
+   "Far View Lodge, in the park, and Morefield Campground"
+  ],
+  "seasonalClosures": [
+   "Cliff-dwelling tours run mainly from spring to autumn; the Wetherill Mesa road is open only in summer"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "c. 1190",
+   "text": "Ancestral Pueblo people begin building cliff dwellings in the canyon alcoves."
+  },
+  {
+   "year": "c. 1300",
+   "text": "The people of Mesa Verde migrate south."
+  },
+  {
+   "year": "1888",
+   "text": "The Wetherill family comes upon Cliff Palace."
+  },
+  {
+   "year": "1906",
+   "text": "Congress establishes Mesa Verde National Park."
+  },
+  {
+   "year": "1978",
+   "text": "Mesa Verde is among the first places named a World Heritage Site."
+  }
+ ],
+ "safety": [
+  "Some tours climb tall ladders and squeeze through narrow passages at high altitude; read each tour's requirements before booking.",
+  "Carry water on mesa-top trails in summer."
+ ],
+ "regulations": [
+  "Enter cliff dwellings only with a ranger, and do not touch or lean on the walls.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Mesa Verde National Park — National Park Service",
+   "url": "https://www.nps.gov/meve/"
+  }
+ ],
+ "contentVersion": 2
+}

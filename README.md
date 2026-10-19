@@ -14,7 +14,10 @@ in a trip log and a digital passport stamp book, and the log turns into stats.
 
 ## Status
 
-**Pre-release — milestone `0.1.0` (Pilot) in progress.**
+**Pre-release — milestone `0.2.0` (MVP) ready for a first demo.** Every national park
+has a guide, every covered place is on the map with an overview, and trips, the passport
+and stats work end to end. iPhone and iPad have not yet been seen running on an iOS 27
+device or simulator.
 
 The build follows the three phases in [`SPECIFICATION.md`](SPECIFICATION.md) §16:
 
@@ -77,6 +80,7 @@ See [`docs/adr/0003-spm-first-thin-app-target.md`](docs/adr/0003-spm-first-thin-
 scripts/bootstrap.sh     # resolve packages, check the toolchain
 scripts/test.sh          # run the UnigridsKit test suite
 scripts/build.sh         # build the app for the iOS Simulator and for macOS
+scripts/write-secrets.sh # optional: live park alerts, from NPS_API_KEY in .env
 ```
 
 Or open `App/Unigrids.xcodeproj` in Xcode and run the `Unigrids` scheme.
@@ -95,11 +99,14 @@ with each app release; user data never stores anything but stable Unigrids IDs t
 at it. User data (trips, visits, check-ins, stamps) lives in SwiftData, synced through the
 user's private iCloud database.
 
-The reference data currently committed under
-`Packages/UnigridsKit/Sources/UnigridsReference/Resources/reference/` is a **hand-authored
-pilot seed**, not pipeline output. It exists so the app has something real to render while
-the pipeline is built. Its provenance and known gaps are recorded in that directory's
-`README.md`.
+The reference data committed under
+`Packages/UnigridsKit/Sources/UnigridsReference/Resources/reference/` is built by
+`unigrids_pipeline reference` from a dated snapshot of the sources below. Its provenance,
+photo policy and limits are recorded in that directory's `README.md`.
+
+Live park alerts are optional: put a free NPS API key in `.env` as `NPS_API_KEY=…` and
+run `scripts/write-secrets.sh` before building. Without it the app runs normally and the
+alerts panel does not appear.
 
 ### Sources and attribution
 
@@ -108,7 +115,9 @@ the pipeline is built. Its provenance and known gaps are recorded in that direct
 | [NPS API](https://www.nps.gov/subjects/developer/) | Park list, descriptions, fees, hours, visitor centres, alerts | Free key, rate-limited |
 | [NPS brochure maps](https://npgallery.nps.gov/) | Guide map panel, brochure viewer | Public domain; no NPS seal or implied endorsement |
 | [NPS Public Trails](https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/MapServer/0) | Trail lines | Public NPS dataset |
+| NPS Land Resources Division | National park and NPS unit boundaries | Public domain |
 | [PAD-US (USGS)](https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004) | Boundaries for state parks and federal sites | Free download |
+| [Wikimedia Commons](https://commons.wikimedia.org/) | Photographs of state parks, monuments and refuges | Per photograph: public domain, CC0, CC BY or CC BY-SA, credited in the app |
 | [RIDB / Recreation.gov](https://catalog.data.gov/dataset/recreation-information-database-ridb-58364) | Facilities, campgrounds, booking deep links | CC BY |
 | USGS 3DEP | Trail profiles, hillshade | Public domain |
 | [OpenStreetMap](https://www.openstreetmap.org/copyright) | Roads, water and labels for offline tiles | ODbL — attribution and share-alike |

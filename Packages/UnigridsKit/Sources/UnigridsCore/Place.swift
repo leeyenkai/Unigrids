@@ -214,6 +214,16 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
     public let themes: [UnigridsID]
     public let facts: PlaceFacts
     public let officialURL: URL?
+    /// A short overview: what the place is and why anyone goes. Shown on the map card and
+    /// at the top of a place's page. NPS-authored for NPS units, written for Unigrids
+    /// elsewhere; `summarySource` says which.
+    public let summary: String?
+    /// Who wrote `summary`, for the credit line beneath it.
+    public let summarySource: String?
+    /// The lead photograph, with the credit it must carry.
+    public let image: GuideImage?
+    /// Somewhere to read more, where the place has no official page Unigrids can link.
+    public let infoURL: URL?
 
     public var tier: PlaceTier {
         kind.tier
@@ -247,7 +257,11 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         passportRegion: PassportRegion? = nil,
         themes: [UnigridsID] = [],
         facts: PlaceFacts = PlaceFacts(),
-        officialURL: URL? = nil
+        officialURL: URL? = nil,
+        summary: String? = nil,
+        summarySource: String? = nil,
+        image: GuideImage? = nil,
+        infoURL: URL? = nil
     ) {
         self.id = id
         self.name = name
@@ -263,6 +277,10 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         self.themes = themes
         self.facts = facts
         self.officialURL = officialURL
+        self.summary = summary
+        self.summarySource = summarySource
+        self.image = image
+        self.infoURL = infoURL
     }
 
     public init(from decoder: any Decoder) throws {
@@ -285,6 +303,10 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         themes = try container.decodeIfPresent([UnigridsID].self, forKey: .themes) ?? []
         facts = try container.decodeIfPresent(PlaceFacts.self, forKey: .facts) ?? PlaceFacts()
         officialURL = try container.decodeIfPresent(URL.self, forKey: .officialURL)
+        summary = try container.decodeIfPresent(String.self, forKey: .summary)
+        summarySource = try container.decodeIfPresent(String.self, forKey: .summarySource)
+        image = try container.decodeIfPresent(GuideImage.self, forKey: .image)
+        infoURL = try container.decodeIfPresent(URL.self, forKey: .infoURL)
     }
 
     private static func defaultDesignation(for kind: PlaceKind) -> String {

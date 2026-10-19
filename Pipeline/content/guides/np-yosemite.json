@@ -1,0 +1,148 @@
+{
+ "placeID": "np-yosemite",
+ "summary": "Granite walls, waterfalls and giant sequoias in California's Sierra Nevada — Yosemite Valley, El Capitan and Half Dome, and the high country of Tuolumne Meadows beyond. Its 1864 grant was the first time the US government set land aside for preservation.",
+ "facts": {
+  "highestElevationMetres": 3999,
+  "bestSeasons": [
+   "spring",
+   "summer",
+   "autumn"
+  ],
+  "suggestedTime": "Three days"
+ },
+ "story": [
+  "Yosemite Valley was carved from granite by rivers and then by glaciers, which scoured the narrow river canyon into a broad U-shaped valley. The walls left behind rise thousands of feet: El Capitan, a favourite of climbers worldwide, and Half Dome, 4,800 feet above the valley floor. Yosemite Falls drops 2,425 feet in three stages, among the tallest in North America.",
+  "The Ahwahneechee lived in the valley, which they called Ahwahnee. In 1851 the Mariposa Battalion, a state militia, entered it to drive them out, and they were later forced away. Tourists followed from 1855, and in 1864 President Abraham Lincoln signed the Yosemite Grant, protecting the valley and the Mariposa Grove of giant sequoias — the first time the US government had set land aside for public enjoyment.",
+  "John Muir's campaigning led Congress to create a national park around the valley in 1890, and in 1906 the valley and Mariposa Grove were added to it. Before the National Park Service existed, cavalry troops, including the Black 9th Cavalry, patrolled the park. In 1913 Congress approved damming the Hetch Hetchy Valley to supply San Francisco, a loss Muir fought to the end.",
+  "Almost 95 percent of the park is designated wilderness, from oak foothills to the alpine meadows and peaks of the high Sierra. It was inscribed as a World Heritage Site in 1984."
+ ],
+ "sights": [
+  {
+   "name": "Tunnel View",
+   "match": "Tunnel View",
+   "note": "The classic view up the valley to El Capitan, Bridalveil Fall and Half Dome."
+  },
+  {
+   "name": "Yosemite Falls",
+   "match": "Lower Yosemite Fall Tour - Many Faces of Yosemite Falls",
+   "note": "A short loop to the base of the lower fall. The falls run strongest in late spring and are often dry by late summer."
+  },
+  {
+   "name": "El Capitan",
+   "match": "El Capitan Meadow",
+   "note": "A sheer granite monolith; from the meadow, look for climbers on the face."
+  },
+  {
+   "name": "Half Dome",
+   "location": [
+    37.746,
+    -119.533
+   ],
+   "note": "The park's emblem. The hike to the top, with its final climb up steel cables, needs a permit."
+  },
+  {
+   "name": "Glacier Point",
+   "match": "Glacier Point",
+   "note": "An overlook 3,200 feet above the valley, facing Half Dome, reached by road in summer."
+  },
+  {
+   "name": "Bridalveil Fall",
+   "match": "Bridalveil Fall Viewing Area",
+   "note": "A short walk to the foot of a waterfall that flows all year."
+  },
+  {
+   "name": "Mirror Lake",
+   "match": "View of Mirror Lake",
+   "note": "A seasonal lake below Half Dome, fullest in spring."
+  },
+  {
+   "name": "Sentinel Dome and Taft Point",
+   "match": "Sentinel Dome and Taft Point Trailhead",
+   "note": "Two easy walks off Glacier Point Road: a granite dome and a cliff-edge overlook."
+  },
+  {
+   "name": "Mariposa Grove",
+   "match": "Grizzly Giant Tour - Enduring Giant",
+   "note": "The park's largest sequoia grove, near the South Entrance, with the Grizzly Giant."
+  },
+  {
+   "name": "Tuolumne Meadows",
+   "match": "Tuolumne Meadows",
+   "note": "A broad subalpine meadow on the Tioga Road, ringed by granite domes."
+  },
+  {
+   "name": "Tenaya Lake",
+   "match": "Tenaya Lake",
+   "note": "A high-country lake with a sandy beach, beside the Tioga Road."
+  },
+  {
+   "name": "Hetch Hetchy",
+   "match": "Hetch Hetchy Reservoir - O'Shaughnessy Dam",
+   "note": "A reservoir in a valley once compared to Yosemite's, with trails to Wapama Falls."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Arch Rock, on Highway 140 from Mariposa",
+   "Big Oak Flat, on Highway 120 from the west",
+   "South Entrance, on Highway 41 from Fresno",
+   "Tioga Pass, on Highway 120 from the east; usually closed from November to late May or June",
+   "Hetch Hetchy, from Highway 120 near Big Oak Flat"
+  ],
+  "reservations": "In recent summers, a reservation has been needed to drive in at peak times, so check before you go. Campgrounds and lodging should be booked months ahead, and the Half Dome cables need a permit from a lottery.",
+  "permits": [
+   "Overnight wilderness trips — a permit, with daily trailhead quotas"
+  ],
+  "lodging": [
+   "The Ahwahnee, Yosemite Valley Lodge and Curry Village, in Yosemite Valley",
+   "Campgrounds throughout the park"
+  ],
+  "seasonalClosures": [
+   "Tioga Road and Glacier Point Road close for winter",
+   "Waterfalls are strongest from April to June"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1851",
+   "text": "The Mariposa Battalion enters Yosemite Valley."
+  },
+  {
+   "year": "1864",
+   "text": "President Abraham Lincoln signs the Yosemite Grant."
+  },
+  {
+   "year": "1890",
+   "text": "Yosemite National Park is created around the valley."
+  },
+  {
+   "year": "1906",
+   "text": "Yosemite Valley and the Mariposa Grove are added to the national park."
+  },
+  {
+   "year": "1913",
+   "text": "The Raker Act approves a dam in the Hetch Hetchy Valley."
+  },
+  {
+   "year": "1984",
+   "text": "Yosemite is inscribed as a World Heritage Site."
+  }
+ ],
+ "safety": [
+  "Rivers and waterfalls are the park's biggest danger. Stay out of the water above falls and away from wet, slippery rock.",
+  "Store all food in bear-proof lockers or canisters; it is required, and bears here break into cars.",
+  "Never climb the Half Dome cables when storms threaten."
+ ],
+ "regulations": [
+  "Food storage rules are enforced with fines.",
+  "Pets are allowed on paved paths but not on most trails.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Yosemite National Park — National Park Service",
+   "url": "https://www.nps.gov/yose/"
+  }
+ ],
+ "contentVersion": 2
+}

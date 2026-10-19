@@ -1,0 +1,109 @@
+{
+ "placeID": "np-denali",
+ "summary": "Six million acres of wild Alaska crossed by a single road, rising from taiga forest to tundra to North America's highest peak, 20,310 feet. Grizzly bears, caribou, moose, wolves and Dall sheep range across land that has never been fenced.",
+ "facts": {
+  "highestElevationMetres": 6190,
+  "bestSeasons": [
+   "summer"
+  ],
+  "suggestedTime": "Two to four days"
+ },
+ "story": [
+  "The Alaska Range bends across the park along the Denali Fault, and at its heart stands North America's highest peak: 20,310 feet, called Denali — the high one — in the Koyukon language, and Mount McKinley in the federal record. It rises some eighteen thousand feet above the lowlands at its feet, one of the greatest rises of any mountain on land, and it makes its own weather; on most summer days clouds hide the summit.",
+  "Below the glaciers the land runs from spruce taiga in the valleys to wide, open tundra, much of it over permafrost. The park is known for its large animals — grizzly bears, moose, caribou, wolves and Dall sheep — and for studying them where they live: Adolph Murie's work on Denali's wolves in the 1930s and '40s changed how wildlife biologists understood predators.",
+  "People have lived in the region for more than eleven thousand years; Koyukon, Tanana and Dena'ina peoples have hunted and traded here in recent centuries. The hunter and naturalist Charles Sheldon proposed a park in 1906, and Mount McKinley National Park was established in 1917. The 1980 Alaska lands act tripled it and renamed it Denali National Park and Preserve.",
+  "One road, 92 miles long, runs into the park; private vehicles may drive only the first fifteen miles. Since 2021 a landslide at Pretty Rocks has closed the road deeper in. The park's sled dogs, bred and kept at kennels near headquarters, still patrol the wilderness in winter."
+ ],
+ "sights": [
+  {
+   "name": "Savage River",
+   "note": "The end of the road for private cars, with a loop trail along the river and tundra hiking above it."
+  },
+  {
+   "name": "Sled Dog Kennels",
+   "note": "The park's working sled dogs, with summer demonstrations by the rangers who mush them."
+  },
+  {
+   "name": "Mount Healy",
+   "note": "A steep trail from the entrance area to a ridge overlooking the Nenana River valley."
+  },
+  {
+   "name": "Sable Pass",
+   "note": "Open tundra on the park road, good country for grizzly bears."
+  },
+  {
+   "name": "Polychrome Overlook",
+   "note": "Hillsides of volcanic rock striped red, orange and purple above the Plains of Murie."
+  },
+  {
+   "name": "Toklat River",
+   "note": "A wide, braided glacial river and a rest stop on the bus road."
+  },
+  {
+   "name": "Wonder Lake",
+   "match": "Wonder Lake \"Y\"",
+   "note": "A lake near the road's end where the mountain, on a clear day, fills the sky."
+  },
+  {
+   "name": "Kantishna",
+   "note": "An old mining district at the end of the road, now home to backcountry lodges."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "The park entrance is on the Parks Highway (AK 3), about two hours south of Fairbanks and five hours north of Anchorage; the Alaska Railroad stops here in summer"
+  ],
+  "reservations": "Beyond mile 15 the road is open only to park buses in summer. Book bus seats and campsites ahead; check nps.gov/dena for how far the road is currently open.",
+  "permits": [
+   "Overnight backcountry trips — a free permit from the Backcountry Information Center",
+   "Climbing Denali or Mount Foraker — a mountaineering permit, registered sixty days ahead"
+  ],
+  "lodging": [
+   "Lodges in the Kantishna area at the end of the road; hotels just outside the entrance"
+  ],
+  "seasonalClosures": [
+   "Bus service runs from late May to mid-September; snow can fall in any month"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1906",
+   "text": "Charles Sheldon proposes a national park in the Denali region."
+  },
+  {
+   "year": "1913",
+   "text": "Hudson Stuck, Harry Karstens, Walter Harper and Robert Tatum make the first ascent of the main summit."
+  },
+  {
+   "year": "1917",
+   "text": "Mount McKinley National Park is established."
+  },
+  {
+   "year": "1980",
+   "text": "The Alaska lands act enlarges the park and renames it Denali National Park and Preserve."
+  },
+  {
+   "year": "2015",
+   "text": "A survey sets the summit's height at 20,310 feet."
+  },
+  {
+   "year": "2021",
+   "text": "The Pretty Rocks landslide closes the park road beyond its midpoint."
+  }
+ ],
+ "safety": [
+  "Stay at least 300 yards from bears and 25 yards from other wildlife. Carry bear spray, and store food in bear-resistant containers in the backcountry.",
+  "Glacial rivers are cold, fast and braided. Cross with care, early in the day when flows are lower, or not at all."
+ ],
+ "regulations": [
+  "Private vehicles may not drive beyond Savage River, mile 15, without a permit.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Denali National Park and Preserve — National Park Service",
+   "url": "https://www.nps.gov/dena/"
+  }
+ ],
+ "contentVersion": 2
+}

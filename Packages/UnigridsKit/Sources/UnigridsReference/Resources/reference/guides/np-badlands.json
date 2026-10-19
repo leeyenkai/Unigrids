@@ -1,0 +1,131 @@
+{
+ "placeID": "np-badlands",
+ "contentVersion": 2,
+ "story": [
+  "The Badlands are layers of sediment — the floor of an ancient inland sea, then the mud, ash and sand of rivers and floodplains — laid down between about 75 and 28 million years ago and now being taken apart. The White River and its creeks cut into the soft rock quickly, around an inch a year in places, carving the buttes, spires and gullies of the Badlands Wall.",
+  "That erosion keeps uncovering fossils. The rocks are among the richest anywhere for the mammals of the Oligocene: early horses, rhinoceroses, sabre-toothed cats and the sheep-sized oreodonts. Visitors have made some of the important finds — the Pig Dig began in 1993 when two hikers noticed bones weathering out of a hillside.",
+  "Above the rock lies the largest undisturbed mixed-grass prairie in the United States, protected in the Badlands Wilderness. Bison were returned to it in the 1960s and black-footed ferrets, once thought extinct, in the 1990s; prairie dog towns, bighorn sheep and pronghorn share the grass.",
+  "The Lakota called this land mako sica, bad land. The park's South Unit lies within the Pine Ridge Reservation and is managed with the Oglala Lakota; one of the last Ghost Dances took place on Stronghold Table in 1890, weeks before the massacre at Wounded Knee, 45 miles south. The area became a national monument in 1939 and a national park in 1978."
+ ],
+ "sightNotes": {
+  "poi-badlands-notch-trail": "A canyon walk and a log ladder up to a notch with a view over the White River valley.",
+  "poi-badlands-door-trail": "A short boardwalk through a break in the Badlands Wall into a maze of eroded formations.",
+  "poi-badlands-fossil-exhibit-trail": "A boardwalk with casts of the fossils found in the park, beside the formations they came from.",
+  "poi-badlands-yellow-mounds-overlook": "Rounded hills of bright yellow and red fossil soils, the oldest exposed layers in the park.",
+  "poi-badlands-pinnacles-overlook": "A wide view south over spires and gullies to the prairie, often with bighorn sheep nearby.",
+  "poi-badlands-roberts-prairie-dog-town": "A busy prairie dog colony on the Sage Creek Rim Road.",
+  "poi-badlands-sage-creek-basin-overlook": "A view over the wilderness prairie where the park's bison range.",
+  "poi-badlands-big-badlands-overlook": "The first view of the Badlands Wall from the Northeast Entrance, and a sunrise favourite."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Northeast Entrance, from Interstate 90 exit 131",
+   "Pinnacles Entrance, from Interstate 90 exit 110 near Wall",
+   "Interior Entrance, on SD 377 from the town of Interior"
+  ],
+  "lodging": [
+   "Cedar Pass Lodge, inside the park near the Ben Reifel Visitor Center"
+  ],
+  "seasonalClosures": [
+   "Summer brings heat and sudden thunderstorms with hail and lightning; winters are cold, with snow"
+  ],
+  "camping": [
+   "Cedar Pass Campground, reservable",
+   "Sage Creek Campground"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1890",
+   "text": "One of the last Ghost Dances is held on Stronghold Table, before the massacre at Wounded Knee."
+  },
+  {
+   "year": "1929",
+   "text": "Congress authorizes Badlands National Monument."
+  },
+  {
+   "year": "1939",
+   "text": "The monument is established."
+  },
+  {
+   "year": "1942",
+   "text": "Part of the South Unit becomes an aerial gunnery range."
+  },
+  {
+   "year": "1978",
+   "text": "Badlands is redesignated a national park."
+  },
+  {
+   "year": "1993",
+   "text": "Two visitors discover the fossil site known as the Pig Dig."
+  }
+ ],
+ "safety": [
+  "Prairie rattlesnakes live here. Watch where you put your hands and feet, especially off trail.",
+  "Thunderstorms build fast in summer. Get off exposed ridges and out of washes when one approaches.",
+  "Give bison a wide berth — at least 25 yards — and never approach them."
+ ],
+ "regulations": [
+  "Fossils may not be collected. Leave a find where it lies and report it at a visitor center.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Badlands National Park — National Park Service",
+   "url": "https://www.nps.gov/badl/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "Fee covers the entry of a private vehicle and its occupants for 7 days"
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Fee covers the entry of an individual that is hiking, bicycling, etc... for 7 days"
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo",
+  "isPublicDomain": true,
+  "assetName": "np-badlands-1.jpg",
+  "caption": "Badlands Storm",
+  "altText": "Layered badlands formations behind fields of green grass under cloudy and billowing clouds."
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-badlands-2.jpg",
+   "caption": "Badlands Yellow Mounds",
+   "altText": "The yellow mounds are peaking out of the formations in this photo."
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-badlands-3.jpg",
+   "caption": "Badlands Rugged Peaks",
+   "altText": "Badlands formations are very rugged and often have sharp peaks."
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-badlands-4.jpg",
+   "caption": "Clover Landscape",
+   "altText": "Jagged badlands buttes extended in horizon amid yellow flowers under a blue sky."
+  }
+ ],
+ "operatingHours": "The park is open to visitors all year with the exception of weather closures.",
+ "weather": "The Badlands weather is variable and unpredictable with temperature extremes ranging from 116° F to -40° F. Summers are hot and dry with occasional violent thunderstorms. Hailstorms and occasional tornadoes can descend on the Badlands with sudden fury. Winters are typically cold with 12 to 24 inches of total snowfall.",
+ "directions": "Badlands National Park is located 75 miles east of Rapid City, South Dakota. Physical Addresses for GPS* Park Headquarters: 25216 Ben Reifel Road, Interior, SD 57750. Northeast Entrance (I-90, Exit 131): 21020 SD Hwy 240, Interior, SD 57750. Pinnacles Entrance (I-90, Exit 110): 24240 Hwy 240, Wall, SD 57790. Interior Entrance: 20640 SD Hwy 377, Interior, SD 57750."
+}

@@ -1,0 +1,133 @@
+{
+ "placeID": "np-bryce-canyon",
+ "contentVersion": 2,
+ "story": [
+  "Bryce Canyon sits at the top of the Grand Staircase, the great flight of cliffs that climbs north from the Grand Canyon. Its rock is the Claron Formation, lake and river sediments some fifty million years old, coloured pink, orange and white by iron and manganese. Water does the carving: on most nights of the year, from autumn to spring, meltwater freezes in the cracks and pries them wider, and the rims break back into walls, then fins, then hoodoos.",
+  "The park climbs through three life zones, from pinyon and juniper at its lowest to fir and aspen on the plateau and, at Rainbow Point, Great Basin bristlecone pines that have stood for centuries. Utah prairie dogs, a threatened species, live in its meadows. Far from city lights and high in clean air, the park is known for its night sky.",
+  "People have lived on the Paunsaugunt Plateau for at least ten thousand years. The Paiute told of the Legend People, turned to stone by Coyote for their misdeeds. Mormon settlers arrived in the 1870s; one of them, Ebenezer Bryce, ran cattle below the amphitheater and is remembered for calling it a hell of a place to lose a cow.",
+  "Railroad magazines carried the hoodoos to a national audience from 1916. President Harding proclaimed a national monument in 1923, and Congress created Bryce Canyon National Park in 1928."
+ ],
+ "sightNotes": {
+  "poi-bryce-canyon-sunrise-point": "The northern end of Bryce Amphitheater, and the start of the Queen's Garden trail.",
+  "poi-bryce-canyon-sunset-point": "The amphitheater's centre, looking down on Thor's Hammer and the Navajo Loop.",
+  "poi-bryce-canyon-inspiration-point": "Three levels of overlook above the densest crowd of hoodoos.",
+  "poi-bryce-canyon-bryce-point": "The amphitheater's southern tip, with the whole of it laid out below.",
+  "poi-bryce-canyon-navajo-loop": "Switchbacks down into Wall Street, a slot between towering walls, and back up past Thor's Hammer.",
+  "poi-bryce-canyon-queens-garden": "The gentlest way below the rim, among hoodoos named for their likeness to royalty.",
+  "poi-bryce-canyon-rainbow-point": "The end of the scenic drive and the park's high point, with bristlecone pines on a short loop.",
+  "poi-bryce-canyon-natural-bridge": "A span of red rock seen from a pull-out on the scenic drive.",
+  "poi-bryce-canyon-mossy-cave": "A short walk outside the main entrance to a waterfall and a damp alcove of moss."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "One entrance, on UT 63 south of UT 12; a free, voluntary shuttle runs in the busy season"
+  ],
+  "permits": [
+   "Overnight backpacking on the Under-the-Rim and Riggs Spring trails — a backcountry permit"
+  ],
+  "lodging": [
+   "The Lodge at Bryce Canyon, near Sunset Point"
+  ],
+  "seasonalClosures": [
+   "Snow is possible from October to May; Wall Street on the Navajo Loop closes in winter, and the road beyond can close after storms"
+  ],
+  "camping": [
+   "North Campground, reservable",
+   "Sunset Campground, reservable, with some first-come sites"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1872",
+   "text": "John Wesley Powell's survey maps the region."
+  },
+  {
+   "year": "1874",
+   "text": "Ebenezer Bryce settles below the amphitheater."
+  },
+  {
+   "year": "1916",
+   "text": "Railroad magazines first publicise the hoodoos."
+  },
+  {
+   "year": "1923",
+   "text": "President Harding proclaims Bryce Canyon National Monument."
+  },
+  {
+   "year": "1928",
+   "text": "Congress establishes Bryce Canyon National Park."
+  }
+ ],
+ "safety": [
+  "The rim is high: altitude makes trails harder and summer thunderstorms bring lightning to exposed points.",
+  "Trails below the rim are steep, and icy in cold months. The climb back out is always uphill."
+ ],
+ "regulations": [
+  "Stay on trails; hoodoos are fragile and the slopes erode easily.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Bryce Canyon National Park — National Park Service",
+   "url": "https://www.nps.gov/brca/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$35",
+   "detail": "Admits one private, non-commercial vehicle (15 passenger capacity or less) and all occupants."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$30",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Per person",
+   "cost": "$20",
+   "detail": "Admits one individual with no car to the park - typically used for bicyclists and walk-ins. Youth 15 and under are admitted free."
+  },
+  {
+   "title": "Nonresident",
+   "cost": "$100",
+   "detail": "Each non-US resident aged 16 and older visiting Bryce Canyon National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo / Peter Densmore",
+  "isPublicDomain": true,
+  "assetName": "np-bryce-canyon-1.jpg",
+  "caption": "Bryce Amphitheater from Inspiration Point",
+  "altText": "A red rock landscape and plateau forest glows with the morning sun"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / Keith Moore",
+   "isPublicDomain": true,
+   "assetName": "np-bryce-canyon-2.jpg",
+   "caption": "Winter sunrise at Sunset Point",
+   "altText": "Snow blankets a red rock landscape of tall rock spires beneath an early morning sky"
+  },
+  {
+   "credit": "NPS Photo / Peter Densmore",
+   "isPublicDomain": true,
+   "assetName": "np-bryce-canyon-3.jpg",
+   "caption": "Queen's Garden Trail",
+   "altText": "A lone white rock tower stands surrounded by red rock walls and forest along a trail"
+  },
+  {
+   "credit": "NPS Photo / Peter Densmore",
+   "isPublicDomain": true,
+   "assetName": "np-bryce-canyon-4.jpg",
+   "caption": "Bristlecone Loop trail near Yovimpa Point",
+   "altText": "Red and white rock cliffs lightly dusted with snow with a forest atop them and a long view beyond"
+  }
+ ],
+ "operatingHours": "Bryce Canyon National Park is open 365 days a year, 24 hours a day.",
+ "weather": "Due of its high elevation climate, weather at Bryce Canyon through autumn, winter, and spring can be highly variable. From October to May temperatures fall below freezing nearly every night. The park typically experiences its coldest and snowiest periods from December through February. Spring storms in March and April can still produce heavy snowfall that may impact travel in the region. Summer highs are typically in the 70s-80s F and afternoon thunderstorms are common in July and August.",
+ "directions": "From the North: Take I-15 south to UT-20 (exit 95). Travel east on UT-20 to US-89. Follow US-89 south to UT-12. Travel east on UT-12 to UT-63. Take UT-63 south to Bryce Canyon NP. From the South through Zion National Park: Take I-15 north to UT-9 (exit 16). Follow UT-9 east through Zion National Park to US-89. Travel north on US-89 to UT-12. Go east on UT-12 to UT-63. Take UT-63 south to Bryce Canyon NP. From the East Travel west on UT-12 to UT-63. Take UT-63 south to Bryce Canyon NP."
+}

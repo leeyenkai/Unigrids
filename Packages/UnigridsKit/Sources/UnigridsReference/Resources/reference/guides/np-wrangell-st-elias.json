@@ -1,0 +1,116 @@
+{
+ "placeID": "np-wrangell-st-elias",
+ "contentVersion": 2,
+ "story": [
+  "Wrangell–St. Elias rises from the sea to 18,008 feet at Mount Saint Elias, the second-highest peak in the United States and Canada, less than ten miles from tidewater. The park takes in the entire Wrangell range, much of the Saint Elias Mountains and the eastern Chugach. With its preserve, it is about the size of Yellowstone, Yosemite and Switzerland combined.",
+  "Volcanoes and ice have shaped it. Mount Wrangell is a massive shield volcano that still steams. The Malaspina Glacier is the largest piedmont glacier in North America, spreading out across the coastal plain; the Hubbard Glacier is the longest tidewater glacier in Alaska; and the Nabesna is the longest valley glacier in the world.",
+  "The Ahtna have lived along the Copper River for about a thousand years, and the Upper Tanana, Eyak and Tlingit live around the park's edges. They used pure copper for tools, which drew Russian explorers in search of it. From the early 1900s, the mines at Kennecott worked one of the world's richest copper deposits, linked to the coast by a 195-mile railway, until they closed in 1938.",
+  "President Jimmy Carter proclaimed a national monument in 1978, and the Alaska National Interest Lands Conservation Act made it a national park and preserve in 1980. With Canada's Kluane and neighbouring parks it forms one of the largest protected areas on Earth, a World Heritage Site since 1979. Local rural residents still hunt and fish for subsistence in the park."
+ ],
+ "sightNotes": {
+  "poi-wrangell-st-elias-kennecott-mines": "The red mill town of the copper mines, with ranger-led and guided tours of the fourteen-storey concentration mill.",
+  "poi-wrangell-st-elias-root-glacier": "A trail from Kennecott to the edge of the glacier. Walking on the ice needs crampons, or a guide.",
+  "poi-wrangell-st-elias-mccarthy-road": "Sixty miles of gravel from Chitina along an old railbed, ending at a footbridge to McCarthy.",
+  "poi-wrangell-st-elias-nabesna-road": "A 42-mile gravel road into the park's northern foothills, with trails, campsites and views of the Wrangells.",
+  "poi-wrangell-st-elias-crystalline-hills-trail": "A short hike off the McCarthy Road with views of the Chugach and Wrangell mountains.",
+  "poi-wrangell-st-elias-malaspina-glacier": "The largest piedmont glacier in North America, best seen from the air or from Yakutat.",
+  "poi-wrangell-st-elias-mount-saint-elias": "The park's highest summit, on the Canadian border, rising from near sea level to 18,008 feet.",
+  "poi-wrangell-st-elias-mount-wrangell": "A huge, gently sloped shield volcano whose summit vents still steam."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "The main visitor center is at Copper Center on the Richardson Highway, about 200 miles east of Anchorage",
+   "McCarthy Road — from Chitina, 60 miles of gravel to the Kennicott River footbridge; walk or take a shuttle on to McCarthy and Kennecott",
+   "Nabesna Road — from Slana, on the Tok Cut-Off",
+   "Air taxis fly into the park from McCarthy, Glennallen and other towns"
+  ],
+  "permits": [
+   "Backcountry trips need no permit, but leaving a trip plan with the park is strongly advised"
+  ],
+  "lodging": [
+   "Lodges in McCarthy and Kennecott, on private land",
+   "Kendesnii Campground on the Nabesna Road, and public-use cabins"
+  ],
+  "seasonalClosures": [
+   "Most services, shuttles and tours run from late May to early September",
+   "The gravel roads can be rough and slow; check rental car rules before driving them"
+  ],
+  "camping": [
+   "Kendesnii Campground, first come, first served"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1741",
+   "text": "Vitus Bering's expedition reaches the coast."
+  },
+  {
+   "year": "1938",
+   "text": "The Kennecott copper mines close."
+  },
+  {
+   "year": "1978",
+   "text": "President Jimmy Carter proclaims Wrangell–St. Elias National Monument."
+  },
+  {
+   "year": "1979",
+   "text": "The area is named a World Heritage Site with Canada's Kluane."
+  },
+  {
+   "year": "1980",
+   "text": "The Alaska National Interest Lands Conservation Act creates the national park and preserve."
+  }
+ ],
+ "safety": [
+  "Glaciers have crevasses and moulins. Don't walk on ice without crampons and experience, or a guide.",
+  "Rivers are cold, fast and braided. Cross only where you are sure, and never alone.",
+  "This is bear country. Carry bear spray and store food properly."
+ ],
+ "regulations": [
+  "Much of the land along the roads is private. Respect closed signs and mining claims.",
+  "Respect subsistence camps, fish wheels and equipment."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Wrangell–St. Elias National Park & Preserve — National Park Service",
+   "url": "https://www.nps.gov/wrst/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS Photo/ Neal Herbert",
+  "isPublicDomain": true,
+  "assetName": "np-wrangell-st-elias-1.jpg",
+  "caption": "Icy Bay with Mt. St. Elias",
+  "altText": "Glaciers loom over the ocean with large snowy mountains rising into blue skies"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo/ Bryan Petrtyl",
+   "isPublicDomain": true,
+   "assetName": "np-wrangell-st-elias-2.jpg",
+   "caption": "Backpackers in Mentasta Mountains",
+   "altText": "Two backpackers sitting in an alpine meadow with snowy mountains in the background"
+  },
+  {
+   "credit": "NPS Photo/ Matthew Yarbrough",
+   "isPublicDomain": true,
+   "assetName": "np-wrangell-st-elias-3.jpg",
+   "caption": "Kennecott Mill Town",
+   "altText": "Historic, large, red buildings with mountains in the background"
+  },
+  {
+   "credit": "NPS Photo/ Bryan Petrtyl",
+   "isPublicDomain": true,
+   "assetName": "np-wrangell-st-elias-4.jpg",
+   "caption": "Logan Glacier",
+   "altText": "A large glacier with stripes of different colored rock nestled in between barren mountain slopes."
+  }
+ ],
+ "operatingHours": "The park and public lands are always open but visitor facilities have limited seasons: Open in Summer. Call ahead for hours: Copper Center (907) 822-7250, Slana (907) 822-7401, Chitina (907) 823-7250 and Kennecott (907) 205-7106. CLOSED Mid-September through April.",
+ "weather": "Varies widely depending on location in park and time of year. Visit https://www.nps.gov/wrst/planyourvisit/weather.htm for detailed information.",
+ "directions": "The administrative building and main park visitor center are located along the Richardson Highway (Hwy 4), which is a paved state highway that runs through Copper Center, AK. The buildings are 8 miles south of the Glenn Highway and Richardson Highway intersection near Glennallen, Alaska. This is approximately 200 miles east of Anchorage, AK and 250 miles south of Fairbanks, AK."
+}

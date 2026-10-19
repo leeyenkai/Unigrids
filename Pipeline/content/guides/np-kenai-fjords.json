@@ -1,0 +1,82 @@
+{
+ "placeID": "np-kenai-fjords",
+ "summary": "The Harding Icefield, one of the largest in the United States, and the nearly forty glaciers that pour from it toward fjords on the Gulf of Alaska. Reached by road at Exit Glacier near Seward, and by boat for the whales, sea otters and puffins of the coast.",
+ "facts": {
+  "highestElevationMetres": 1970,
+  "bestSeasons": [
+   "summer"
+  ],
+  "suggestedTime": "Two days: one on land, one on the water"
+ },
+ "story": [
+  "The Harding Icefield caps the Kenai Mountains, a plateau of ice broken only by nunataks, the peaks that poke through it. At least 38 glaciers flow from it; the largest, Bear Glacier, reaches the sea, and several others end in the water as tidewater glaciers. The fjords below are glacial valleys drowned as the land sank and the sea rose; an earthquake around 1170 lowered this shoreline by several feet.",
+  "Exit Glacier, at the end of the park's only road, shows how fast the ice is retreating: signs along the trail mark where its face stood in 1917, 1926, 2005 and 2010, each farther from the glacier than the last. The Harding Icefield Trail climbs from there to the edge of the ice itself.",
+  "The coast is crowded with life. Humpback whales and orcas feed in the fjords, Steller sea lions haul out on the rocks, sea otters float in kelp, and puffins and murres nest on the cliffs; mountain goats and black bears live on the slopes above.",
+  "Alutiiq people lived along these fjords for centuries, in villages since lost to the rising sea. Gold miners later worked claims at Nuka Bay. The area became a national monument in 1978 and a national park under the Alaska lands act of 1980."
+ ],
+ "sights": [
+  {
+   "name": "Exit Glacier",
+   "match": "Exit Glacier 2010 Sign and end of trail",
+   "note": "A glacier reached on a short trail, with signs marking where its face has retreated."
+  },
+  {
+   "name": "Harding Icefield Trail",
+   "match": "Harding Icefield Trailhead",
+   "note": "A steep, all-day climb to a view across the icefield."
+  },
+  {
+   "name": "Marmot Meadows",
+   "note": "Open slopes partway up the icefield trail, with views down onto Exit Glacier."
+  },
+  {
+   "name": "Exit Glacier Outwash Plain",
+   "note": "A braided plain of gravel and meltwater below the glacier."
+  },
+  {
+   "name": "Top of the Cliffs",
+   "note": "A higher viewpoint on the icefield trail over the glacier's broken surface."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Exit Glacier, by road from Seward",
+   "The fjords, by tour boat, water taxi or sea kayak from Seward",
+   "Visitor center in the Seward small-boat harbor"
+  ],
+  "lodging": [
+   "No lodges in the park; public-use cabins on the coast, and hotels in Seward"
+  ],
+  "seasonalClosures": [
+   "The Exit Glacier road closes to cars in winter; boat tours run from spring to early autumn"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "c. 1170",
+   "text": "An earthquake lowers the coastline by several feet."
+  },
+  {
+   "year": "1978",
+   "text": "Kenai Fjords National Monument is proclaimed."
+  },
+  {
+   "year": "1980",
+   "text": "The Alaska lands act establishes Kenai Fjords National Park."
+  }
+ ],
+ "safety": [
+  "Stay back from glacier faces and off the ice unless you are equipped and trained; ice falls without warning.",
+  "Weather on the Gulf of Alaska changes fast, and the water is very cold. Kayakers should travel with an experienced guide."
+ ],
+ "regulations": [
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Kenai Fjords National Park — National Park Service",
+   "url": "https://www.nps.gov/kefj/"
+  }
+ ],
+ "contentVersion": 2
+}

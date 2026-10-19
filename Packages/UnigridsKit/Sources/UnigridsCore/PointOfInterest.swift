@@ -8,6 +8,7 @@ public enum POIKind: String, CaseIterable, Sendable, Codable {
     case entrance
     case trailhead
     case stampLocation
+    case campground
 
     public var name: String {
         switch self {
@@ -17,6 +18,7 @@ public enum POIKind: String, CaseIterable, Sendable, Codable {
         case .entrance: "Entrance"
         case .trailhead: "Trailhead"
         case .stampLocation: "Stamp location"
+        case .campground: "Campground"
         }
     }
 
@@ -46,6 +48,10 @@ public struct PointOfInterest: Identifiable, Hashable, Sendable, Codable {
     public let services: [String]
     /// Whether this is an official passport cancellation location.
     public let hasStamp: Bool
+    /// A photograph of it, credited.
+    public let image: GuideImage?
+    /// Its own page on the NPS site, where it has one.
+    public let url: URL?
 
     public init(
         id: UnigridsID,
@@ -57,7 +63,9 @@ public struct PointOfInterest: Identifiable, Hashable, Sendable, Codable {
         summary: String? = nil,
         hours: String? = nil,
         services: [String] = [],
-        hasStamp: Bool = false
+        hasStamp: Bool = false,
+        image: GuideImage? = nil,
+        url: URL? = nil
     ) {
         self.id = id
         self.placeID = placeID
@@ -69,6 +77,8 @@ public struct PointOfInterest: Identifiable, Hashable, Sendable, Codable {
         self.hours = hours
         self.services = services
         self.hasStamp = hasStamp
+        self.image = image
+        self.url = url
     }
 
     public init(from decoder: any Decoder) throws {
@@ -84,5 +94,7 @@ public struct PointOfInterest: Identifiable, Hashable, Sendable, Codable {
         services = try container.decodeIfPresent([String].self, forKey: .services) ?? []
         hasStamp = try container.decodeIfPresent(Bool.self, forKey: .hasStamp)
             ?? (kind == .stampLocation)
+        image = try container.decodeIfPresent(GuideImage.self, forKey: .image)
+        url = try container.decodeIfPresent(URL.self, forKey: .url)
     }
 }

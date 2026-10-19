@@ -1,0 +1,95 @@
+{
+ "placeID": "np-biscayne",
+ "summary": "A park that is ninety-five percent water: shallow bay, mangrove shoreline, the northernmost of the Florida Keys and the coral reef beyond them, in sight of downtown Miami. Most of it is reached by boat, or seen underwater.",
+ "facts": {
+  "bestSeasons": [
+   "winter",
+   "spring"
+  ],
+  "suggestedTime": "A day on the water"
+ },
+ "story": [
+  "Biscayne protects four ecosystems in a line out to sea. A fringe of mangrove forest along the mainland shore shelters young fish, crabs and shellfish; behind it lies the shallow, seagrass-floored bay, home to manatees; then the keys, beginning with Elliott Key, the northernmost of the true Florida Keys, built of fossilised coral; and finally, offshore, the northern end of the Florida Reef.",
+  "Only about five percent of the park is land. The reefs hold more than two hundred species of fish, and sea turtles nest on the keys' beaches; sixteen endangered species live in the park, from manatees to the Schaus' swallowtail butterfly.",
+  "People have used these waters for ten thousand years. The reef has wrecked ships for centuries, and the park's Maritime Heritage Trail leads divers and snorkelers to six of them. Fowey Rocks Lighthouse has marked the reef since the nineteenth century; Stiltsville's houses still stand on pilings in the bay.",
+  "In the 1960s developers planned a new city on the keys and an industrial port on the bay. Local campaigners and Congressman Dante Fascell fought for protection instead, and won: a national monument in 1968 and a national park in 1980."
+ ],
+ "sights": [
+  {
+   "name": "Boca Chita Key",
+   "note": "A small key with an ornamental lighthouse, a harbor and a campground, popular with boaters.",
+   "location": [
+    25.5243,
+    -80.1747
+   ]
+  },
+  {
+   "name": "Elliott Key",
+   "note": "The park's largest island, with a campground, a harbor and a trail through tropical hardwood forest.",
+   "location": [
+    25.4544,
+    -80.1956
+   ]
+  },
+  {
+   "name": "Maritime Heritage Trail",
+   "match": "Mandalay",
+   "note": "Shipwrecks on the reef, including the Mandalay in shallow water — a snorkeler's wreck."
+  },
+  {
+   "name": "Fowey Rocks Lighthouse",
+   "note": "A cast-iron lighthouse standing on the reef, seen from boats offshore."
+  },
+  {
+   "name": "Stiltsville",
+   "note": "A cluster of houses on pilings in the bay, the last of a once-larger village.",
+   "location": [
+    25.6528,
+    -80.1758
+   ]
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Dante Fascell Visitor Center at Convoy Point, at the end of SW 328th Street east of Homestead — the only part reached by car",
+   "Everything else by boat; check nps.gov/bisc for current boat tours from the visitor center"
+  ],
+  "seasonalClosures": [
+   "June to November is hurricane season; summer brings heat, humidity and afternoon thunderstorms"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1878",
+   "text": "Fowey Rocks Lighthouse is first lit."
+  },
+  {
+   "year": "1968",
+   "text": "Biscayne National Monument is established."
+  },
+  {
+   "year": "1980",
+   "text": "The monument is enlarged and made a national park."
+  },
+  {
+   "year": "1992",
+   "text": "Hurricane Andrew passes directly over the park."
+  }
+ ],
+ "safety": [
+  "Weather on the bay changes quickly. Check the forecast, carry safety gear and file a float plan.",
+  "Use the mooring buoys at reef sites; anchoring on coral damages it and is prohibited."
+ ],
+ "regulations": [
+  "Coral and natural and cultural objects, including anything from a shipwreck, may not be taken.",
+  "Fishing and lobstering follow Florida rules and licences, with additional park closures.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Biscayne National Park — National Park Service",
+   "url": "https://www.nps.gov/bisc/"
+  }
+ ],
+ "contentVersion": 2
+}

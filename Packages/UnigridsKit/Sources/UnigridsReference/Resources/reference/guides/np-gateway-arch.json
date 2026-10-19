@@ -1,0 +1,108 @@
+{
+ "placeID": "np-gateway-arch",
+ "contentVersion": 2,
+ "story": [
+  "The Gateway Arch is 630 feet tall and 630 feet wide at its base, a weighted catenary curve of stainless steel over a concrete and steel core. The architect Eero Saarinen won the design competition for it in the late 1940s, and it was completed in 1965. Small tram cars ride up inside its legs to a viewing chamber at the top.",
+  "The park began in 1935 as the Jefferson National Expansion Memorial, set on the site of the original city along the Mississippi. It commemorates Thomas Jefferson's Louisiana Purchase and the westward journeys that began here, including the Lewis and Clark expedition — and the museum beneath the arch also tells of what that expansion cost the Native nations of the West.",
+  "A few blocks west stands the Old Courthouse. In 1846 Dred and Harriet Scott, enslaved, sued there for their freedom. Their case reached the US Supreme Court, whose 1857 ruling against them deepened the divide that led to the Civil War.",
+  "The memorial was renamed Gateway Arch National Park in 2018, the year a new museum and landscaped grounds connecting the arch to downtown opened."
+ ],
+ "sightNotes": {
+  "poi-gateway-arch-gateway-arch": "The 630-foot arch, with tram cars to the observation deck at the top.",
+  "poi-gateway-arch-museum-at-the-gateway-arch": "Galleries on St. Louis, westward expansion and the arch's construction, beneath the arch.",
+  "poi-gateway-arch-old-courthouse": "The domed courthouse where the Dred Scott case began.",
+  "poi-gateway-arch-dred-and-harriet-scott-statue": "A bronze of the Scotts outside the Old Courthouse.",
+  "poi-gateway-arch-the-riverfront": "The Mississippi levee below the arch, with views of the Eads Bridge."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "The visitor center and museum entrance faces west, toward the Old Courthouse and downtown"
+  ],
+  "reservations": "Tram rides to the top are timed and often sell out, especially in summer and on weekends. Book ahead.",
+  "lodging": [
+   "Downtown St. Louis hotels, a short walk away"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1846",
+   "text": "Dred and Harriet Scott file suit for their freedom at the Old Courthouse."
+  },
+  {
+   "year": "1857",
+   "text": "The Supreme Court rules against the Scotts in Dred Scott v. Sandford."
+  },
+  {
+   "year": "1935",
+   "text": "The Jefferson National Expansion Memorial is established."
+  },
+  {
+   "year": "1947",
+   "text": "Eero Saarinen's design wins the memorial's architectural competition."
+  },
+  {
+   "year": "1965",
+   "text": "The Gateway Arch is completed."
+  },
+  {
+   "year": "2018",
+   "text": "The memorial is renamed Gateway Arch National Park."
+  }
+ ],
+ "safety": [
+  "The tram cars are small and enclosed. Visitors uneasy in tight spaces may prefer the museum and the riverfront."
+ ],
+ "regulations": [
+  "Bags are screened at the entrance to the arch.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Gateway Arch National Park — National Park Service",
+   "url": "https://www.nps.gov/jeff/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Timed entry reservation - location",
+   "cost": "$19",
+   "detail": "Prices vary by date of visit. Begin your tour with an interactive pre-boarding experience featuring 60s-inspired animation and Gateway Arch trivia. Then, be transported 630 feet to the top of Arch for exhilarating views. Please allow 45 - 60 minutes for your Tram Ride to the Top experience. Adult (16 and up): Starting at $15 Child (3-15): Starting at $11 Infant (2 and under): FREE Park Pass Holder: Starting at $12 Tickets available at www.gatewayarch.com"
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo/Sue Ford",
+  "isPublicDomain": true,
+  "assetName": "np-gateway-arch-1.jpg",
+  "caption": "Morning Light at the Gateway Arch",
+  "altText": "looking up at the curve of the Gateway Arch against the sky"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo/Sue Ford",
+   "isPublicDomain": true,
+   "assetName": "np-gateway-arch-2.jpg",
+   "caption": "Dred and Harriet Scott Statue and the Gateway Arch",
+   "altText": "statue of a woman and man embracing in behind a black iron gate in front of the Arch"
+  },
+  {
+   "credit": "NPS/Jennifer Clark",
+   "isPublicDomain": true,
+   "assetName": "np-gateway-arch-3.jpg",
+   "caption": "Clouds at the Gateway Arch",
+   "altText": "The Gateway Arch against clouds in a blue sky"
+  },
+  {
+   "credit": "NPS photo/Jennifer Clark",
+   "isPublicDomain": true,
+   "assetName": "np-gateway-arch-4.jpg",
+   "caption": "The Old Courthouse",
+   "altText": "looking across the green lawn in Smith Square to the Old Courthouse"
+  }
+ ],
+ "operatingHours": "The Gateway Arch is open year-round, closed only on Thanksgiving, Christmas, and New Year’s Day. Summer Hours (9am-6pm, Sunday through Thursday and 9am-8pm Friday and Saturday) run the Friday before Memorial Day through Labor Day weekend and are the primary visitor season. During Regular Hours (the day after Labor Day through Friday before Memorial Day) we are open from 9am to 6pm. Around the holidays we occasionally have extended hours.",
+ "weather": "Normal Daily Mean Temperature (in degrees Fahrenheit)* January - 29.3 February - 33.9 March - 45.1 April - 56.7 May - 66.1 June - 75.4 July - 79.8 August - 77.6 September - 70.2 October - 58.4 November - 46.2 December - 33.9 Average Percent of Days with Sunshine* January - 50% February - 52% March - 54% April - 56% May - 59% June - 66% July - 68% August - 65% September - 63% October - 60% November - 46% December - 53% *Source: National Oceanic and Atmospheric Administration",
+ "directions": "For directions click on the provided link"
+}

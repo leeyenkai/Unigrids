@@ -15,11 +15,21 @@ struct BundledDataTests {
         store = try BundledReferenceStore.bundled()
     }
 
-    @Test("the dataset loads and declares itself a seed")
+    @Test("the dataset loads and says the pipeline built it")
     func manifest() {
-        #expect(store.manifest.version >= 1)
-        #expect(store.manifest.provenance == .seed)
+        #expect(store.manifest.version >= 2)
+        #expect(store.manifest.provenance == .pipeline)
         #expect(store.manifest.note?.isEmpty == false)
+    }
+
+    @Test("every tier is on the map")
+    func tiers() {
+        let byTier = Dictionary(grouping: store.places, by: \.tier)
+        #expect(byTier[.nationalPark]?.count == 63)
+        #expect((byTier[.npsUnit]?.count ?? 0) >= 300)
+        #expect((byTier[.statePark]?.count ?? 0) >= 50)
+        #expect((byTier[.federalSite]?.count ?? 0) >= 15)
+        #expect(Set(store.places.map(\.id)).count == store.places.count)
     }
 
     @Test("all 63 national parks are present, each once")
@@ -65,31 +75,42 @@ struct BundledDataTests {
         }
     }
 
-    @Test("each pilot park has a guide with real content")
-    func pilotGuides() throws {
-        let pilot: [UnigridsID] = [
-            "np-zion", "np-acadia", "np-yellowstone", "np-great-smoky-mountains",
-        ]
-        for id in pilot {
-            let place = try #require(store.place(id), "missing place \(id)")
-            let guide = try #require(store.guide(for: id), "missing guide for \(place.name)")
+    /// A guide that fails to decode does not crash anything — the store skips it and the
+    /// park quietly loses its guide. This is the test that notices.
+    @Test("every national park has a guide with real content")
+    func everyParkHasAGuide() throws {
+        for place in store.nationalParks {
+            let guide = try #require(store.guide(for: place.id), "missing guide for \(place.name)")
             #expect(guide.story.count >= 3, "\(place.name) story is thin")
-            #expect(!guide.chronology.isEmpty)
-            #expect(!guide.planYourVisit.isEmpty)
-            #expect(!guide.safety.isEmpty)
+            #expect(!guide.chronology.isEmpty, "\(place.name) has no chronology")
+            #expect(!guide.planYourVisit.isEmpty, "\(place.name) has no plan-your-visit")
+            #expect(!guide.safety.isEmpty, "\(place.name) has no safety notes")
             #expect(!guide.sources.isEmpty, "\(place.name) cites no source")
+            #expect(guide.hero != nil, "\(place.name) has no hero photograph")
         }
     }
 
-    @Test("each pilot park has sights, a visitor centre and somewhere to stamp")
-    func pilotPointsOfInterest() {
-        let pilot: [UnigridsID] = [
-            "np-zion", "np-acadia", "np-yellowstone", "np-great-smoky-mountains",
-        ]
-        for id in pilot {
-            #expect(store.sights(in: id).count >= 5, "\(id) has too few sights")
-            #expect(!store.visitorCentres(in: id).isEmpty, "\(id) has no visitor centre")
-            #expect(!store.stampLocations(in: id).isEmpty, "\(id) has no stamp location")
+    @Test("every national park has a written overview and sights on its map")
+    func everyParkHasAnOverview() {
+        for place in store.nationalParks {
+            #expect(place.summarySource == "Unigrids", "\(place.name) has no written summary")
+            #expect((place.summary?.count ?? 0) > 80, "\(place.name) summary is thin")
+            // Roadless parks such as Kobuk Valley have only a handful of named sights.
+            #expect(store.sights(in: place.id).count >= 3, "\(place.name) has too few sights")
+            #expect(
+                !store.visitorCentres(in: place.id).isEmpty,
+                "\(place.name) has no visitor centre"
+            )
+        }
+    }
+
+    @Test("every curated state park, monument and refuge has a written overview")
+    func curatedSitesHaveOverviews() {
+        let curated = store.places.filter { $0.tier == .statePark || $0.tier == .federalSite }
+        #expect(curated.count >= 100)
+        for place in curated {
+            #expect((place.summary?.count ?? 0) > 60, "\(place.name) has no summary")
+            #expect(place.summarySource == "Unigrids")
         }
     }
 
@@ -101,17 +122,126 @@ struct BundledDataTests {
         }
     }
 
-    @Test("a pilot park's facts are filled, and the rest are honestly empty")
-    func factsOnlyWherePresent() throws {
+    @Test("every national park carries its sourced figures")
+    func nationalParkFacts() throws {
+        for park in store.nationalParks {
+            #expect(park.facts.establishedYear != nil, "\(park.name) has no establishment year")
+            #expect(park.facts.areaAcres != nil, "\(park.name) has no area")
+            #expect(park.facts.annualVisits != nil, "\(park.name) has no visitation")
+            #expect(park.facts.annualVisitsYear == 2025)
+        }
+        // Spot checks against the NPS's own published figures: the 2025 visitation release
+        // and the 2023 acreage report. A change here is a data change worth a look.
         let zion = try #require(store.place("np-zion"))
-        #expect(!zion.facts.isEmpty)
         #expect(zion.facts.establishedYear == 1919)
-        #expect(zion.facts.highestElevationMetres != nil)
+        #expect(zion.facts.annualVisits == 4_984_525)
+        let yellowstone = try #require(store.place("np-yellowstone"))
+        #expect(yellowstone.facts.establishedYear == 1872)
+        #expect((yellowstone.facts.areaAcres ?? 0).rounded() == 2_219_791)
+    }
 
-        // The other 59 parks carry no at-a-glance figures. An absent figure is correct;
-        // a plausible invented one would reach the user as a fact.
-        let grandCanyon = try #require(store.place("np-grand-canyon"))
-        #expect(grandCanyon.facts.isEmpty)
+    @Test("figures not in the sources stay absent rather than guessed")
+    func absentFiguresStayAbsent() {
+        // Other NPS units come from the NPS API, which publishes no establishment year or
+        // visitation; an invented one would reach the reader as a fact.
+        for place in store.places where place.tier == .npsUnit {
+            #expect(place.facts.establishedYear == nil)
+            #expect(place.facts.annualVisits == nil)
+        }
+    }
+
+    @Test("outlines decode, sit where their places are, and stay off the antimeridian")
+    func outlines() throws {
+        #expect(store.boundaries.count >= 450)
+        for park in store.nationalParks {
+            let boundary = try #require(store.boundary(for: park.id), "\(park.name) has no outline")
+            #expect(boundary.pointCount >= 4)
+            #expect(
+                boundary.extent.expanded(by: 0.25).contains(park.centre),
+                "\(park.name)'s pin is far from its outline"
+            )
+        }
+        for (id, boundary) in store.boundaries {
+            // The hit test is planar in degrees; an outline spanning the antimeridian
+            // would break it (BoundaryPolygon.contains).
+            #expect(boundary.extent.east - boundary.extent.west < 180, "\(id) wraps the globe")
+        }
+    }
+
+    @Test("a tap inside an outline finds its place")
+    func hitTesting() {
+        // The Zion Canyon floor, and the middle of Yellowstone Lake.
+        #expect(store.place(at: Coordinate(latitude: 37.25, longitude: -112.95))?.id == "np-zion")
+        #expect(
+            store.place(at: Coordinate(latitude: 44.45, longitude: -110.35))?.id == "np-yellowstone"
+        )
+        // Kansas has no national park.
+        let kansas = store.place(
+            at: Coordinate(latitude: 38.5, longitude: -98.5),
+            among: store.nationalParks
+        )
+        #expect(kansas == nil)
+    }
+
+    @Test("every national park has a bundled NPS photograph that resolves")
+    func photographs() throws {
+        for park in store.nationalParks {
+            let guide = try #require(store.guide(for: park.id))
+            let hero = try #require(guide.hero, "\(park.name) has no hero photograph")
+            #expect(hero.isPublicDomain)
+            #expect(hero.credit.uppercased().hasPrefix("NPS")
+                || hero.credit.lowercased().hasPrefix("national park service"))
+            let url = try #require(store.imageURL(for: hero))
+            #expect(url.isFileURL, "\(park.name)'s hero is not bundled")
+            for image in guide.gallery {
+                #expect(store.imageURL(for: image)?.isFileURL == true)
+            }
+        }
+    }
+
+    /// Every bundled photograph ships in the app, so a stray file is dead weight. This
+    /// catches the conflict copies ("name 2.jpg") an iCloud-synced checkout leaves behind
+    /// when the pipeline replaces images in place.
+    @Test("the bundled images are exactly the photographs the data refers to")
+    func noStrayImages() throws {
+        var referenced: Set<String> = []
+        for place in store.places {
+            if let name = place.image?.assetName {
+                referenced.insert(name)
+            }
+            if let guide = store.guide(for: place.id) {
+                for image in [guide.hero].compactMap(\.self) + guide.gallery {
+                    if let name = image.assetName {
+                        referenced.insert(name)
+                    }
+                }
+            }
+            for poi in store.pointsOfInterest(in: place.id) {
+                if let name = poi.image?.assetName {
+                    referenced.insert(name)
+                }
+            }
+        }
+        let park = try #require(store.nationalParks.first)
+        let hero = try #require(store.guide(for: park.id)?.hero)
+        let folder = try #require(store.imageURL(for: hero)).deletingLastPathComponent()
+        let bundled = try Set(FileManager.default.contentsOfDirectory(atPath: folder.path))
+        let stray = bundled.subtracting(referenced).sorted()
+        let missing = referenced.subtracting(bundled).sorted()
+        #expect(stray.isEmpty, "unreferenced images: \(stray.prefix(5))")
+        #expect(missing.isEmpty, "missing images: \(missing.prefix(5))")
+    }
+
+    @Test("reused photographs of other places carry a credit and a reusable licence")
+    func otherPhotographs() {
+        for place in store.places where place.tier != .nationalPark {
+            guard let image = place.image else { continue }
+            #expect(!image.credit.isEmpty)
+            #expect(
+                image.isPublicDomain || image.licence != nil,
+                "\(place.name) photo has no licence"
+            )
+        }
     }
 
     @Test("search finds a park by name, by prefix and by state")
@@ -120,6 +250,8 @@ struct BundledDataTests {
         #expect(store.search("yellow").first?.id == "np-yellowstone")
         #expect(store.search("Maine").contains { $0.id == "np-acadia" })
         #expect(store.search("UT").contains { $0.id == "np-zion" })
+        #expect(store.search("lincoln").contains { $0.id == "nps-linc" })
+        #expect(store.searchPointsOfInterest("visitor").isEmpty == false)
         #expect(store.search("   ").isEmpty)
     }
 

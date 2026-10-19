@@ -28,29 +28,55 @@ Sources: [Unigrids](https://en.wikipedia.org/wiki/Unigrids) ·
 [NPS Unigrid design specifications](https://npshistory.com/brochures/unigrid.pdf) ·
 [NPS brochure history](https://npshistory.com/brochures/unigrid/index.htm)
 
-## 2. Two modes, and where the line falls
+## 2. One identity, on native structure
 
-`SPECIFICATION.md` §14 and `AGENTS.md` §6: the park guides speak Unigrid, and everything
-else uses the native Apple design. They do not mix.
+Until the MVP the guides spoke Unigrid and every other screen was stock Apple design.
+[ADR 0007](adr/0007-one-identity-across-every-screen.md) replaced that split: the
+brochure identity now runs through every screen, laid over native structure.
 
-| | Unigrid | Native |
+| | Structure (Apple's) | Surface (Unigrids') |
 |---|---|---|
-| Screens | Park guides only | Map, Parks, Trips, Passport, Stats, Settings |
-| Surfaces | `style.page`, `style.panel` | Semantic system colours |
-| Type | Helvetica Neue, system serif for prose | System fonts |
-| Structure | The panel grid | Lists, forms, cards |
+| Navigation | Sidebar-adaptable `TabView`, `NavigationStack`, `.inspector`, sheets | `BandHeader` at the top of every screen |
+| Content | `List`, `Form`, `.searchable` | `SectionHead`, `Hairline`, `FigureBlock`, `PlaceRow` |
+| Controls | System toggles, pickers, menus | `BrochureButtonStyle` for actions |
+| Surfaces | — | `.paperPage()`: the palette's `page`, with list backgrounds hidden |
+| Type | System fonts in controls | Helvetica Neue for headings and data, system serif for prose |
 
-A palette changes the paper, the ink, the band and the app's tint. It does **not** restyle
-native chrome: a themed list background would be the two modes blurring.
+The components live in `UnigridsDesign/Identity.swift`:
 
-Three things sit on the boundary and are worth knowing about:
+- **`BandHeader(title, kicker:)`** — the black band, title reversed out, tracked-caps
+  kicker. Every top-level screen and every trip opens with one.
+- **`SectionHead(title, count:)`** — tracked caps over a 2 pt ink rule.
+- **`Kicker`**, **`Hairline`** — small caps labels and 1 pt dividers.
+- **`FigureBlock(value:label:)`** — a big tight figure over a caps label, as the "at a
+  glance" panel sets one.
+- **`BrochureButtonStyle(.primary | .secondary | .onBand)`** — flat, square, no capsule.
+- **`PlaceMarker(tier:tint:status:)`** and **`MarkerShape`** — the place marker, shared by
+  the map, lists, the legend and onboarding:
 
-- **Stamps.** `StampView` draws a cancellation, but it lands on a *native* passport page.
-  It may read `regionInk` and `seal` and nothing else — never `page` or `panel`.
-- **Map pins.** A pin's contrast is against map tiles, which no palette controls, so a pin
-  carries a stroke outline rather than relying on its tint.
-- **The accent.** The tint is set once at the scene root from the palette, so native
+  | Tier | Shape | Size |
+  |---|---|---|
+  | National park | Square | 18 pt |
+  | Other NPS site | Small square | 10 pt |
+  | State park | Circle | 12 pt |
+  | Monument, conservation area, refuge | Diamond | 13 pt |
+
+  Filled is visited, a dashed outline is planned, a plain outline is neither. The ink is
+  the agency's (`AgencyInk`).
+- **`.sheetSize(width:height:)`** — gives a sheet a size on the Mac, where a `List` or
+  `ScrollView` sheet otherwise collapses. iOS ignores it.
+
+Things worth knowing at the edges:
+
+- **Stamps.** `StampView` reads `regionInk` and `seal` only, never `page` or `panel`, so a
+  cancellation looks the same on every palette.
+- **Map markers.** A marker's contrast is against map tiles, which no palette controls, so
+  every marker carries a stroke outline rather than relying on its tint. National parks
+  wear a black label plate with white type, the band in miniature.
+- **The accent.** The tint is set once at the scene root from the palette, so system
   controls pick it up the way any Apple control does.
+- **Guide panels in a row share a height**, so a row reads as one sheet of equal panels.
+  Order still never changes to fill a gap (`UnigridGrid.rows`).
 
 ## 3. Colour
 

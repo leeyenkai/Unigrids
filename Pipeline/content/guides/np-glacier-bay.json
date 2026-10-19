@@ -1,0 +1,101 @@
+{
+ "placeID": "np-glacier-bay",
+ "summary": "Tidewater glaciers, fjords and temperate rainforest in Alaska's Inside Passage, in a bay that was almost entirely ice two and a half centuries ago. Homeland of the Huna Tlingit, reached only by boat or plane.",
+ "facts": {
+  "bestSeasons": [
+   "summer"
+  ],
+  "suggestedTime": "Two to three days"
+ },
+ "story": [
+  "When George Vancouver's ships passed in 1794, Glacier Bay was barely an indentation in a wall of ice. The glacier that filled it has since retreated more than sixty miles up the bay — one of the fastest glacial retreats ever recorded — leaving a branching system of fjords with a dozen glaciers still reaching the sea, where ice breaks off their faces into the water with a roar.",
+  "As the ice withdraws, new land is laid bare and life follows in order: mosses and lichens, then dryas and alder, then a forest of spruce and hemlock at the mouth of the bay. The bay itself is rich: humpback whales feed here in summer, sea otters have returned, Steller sea lions haul out on South Marble Island beside puffins and kittiwakes, and brown and black bears forage along the shore.",
+  "This is the homeland of the Huna Tlingit, whose ancestors lived in the bay until the advancing ice drove them out, an event their oral history remembers. A tribal house built with the Park Service stands today at Bartlett Cove. John Muir explored the bay in 1879 and wrote it into the national imagination.",
+  "President Coolidge proclaimed a national monument in 1925. It became part of a binational World Heritage Site in 1979 and a national park and preserve under the Alaska lands act of 1980. Most visitors see it from the deck of a cruise ship; others come to Bartlett Cove, near Gustavus, to kayak, camp or take the day boat up the bay."
+ ],
+ "sights": [
+  {
+   "name": "Bartlett Cove",
+   "note": "Park headquarters, the lodge, the campground and a rainforest trail, ten miles from Gustavus."
+  },
+  {
+   "name": "Margerie Glacier",
+   "note": "A tidewater glacier at the head of Tarr Inlet, often calving into the inlet."
+  },
+  {
+   "name": "Johns Hopkins Glacier",
+   "note": "A glacier at the head of a steep-walled inlet where harbor seals raise pups on the ice."
+  },
+  {
+   "name": "Lamplugh Glacier",
+   "note": "A broad blue glacier face on the west arm of the bay."
+  },
+  {
+   "name": "South Marble Island",
+   "note": "A rock in the lower bay crowded with sea lions, puffins and other seabirds."
+  },
+  {
+   "name": "Gloomy Knob",
+   "note": "A dark headland where mountain goats graze the cliffs above the water."
+  },
+  {
+   "name": "Tarr Inlet",
+   "note": "The northernmost arm of the bay, ending at the Margerie and Grand Pacific glaciers."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "By air or ferry to Gustavus, then a ten-mile road to Bartlett Cove",
+   "By cruise ship, which carries most visitors up the bay",
+   "A day tour boat runs from Bartlett Cove in summer"
+  ],
+  "permits": [
+   "Private boats entering the bay in summer — a permit",
+   "Backcountry camping and kayaking — a free permit and an orientation"
+  ],
+  "lodging": [
+   "Glacier Bay Lodge at Bartlett Cove, and a walk-in campground"
+  ],
+  "seasonalClosures": [
+   "Most services run from late May to early September; rain is the norm, and September and October are the wettest months"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1794",
+   "text": "George Vancouver finds the bay almost entirely filled with ice."
+  },
+  {
+   "year": "1879",
+   "text": "John Muir explores the bay."
+  },
+  {
+   "year": "1925",
+   "text": "President Coolidge proclaims Glacier Bay National Monument."
+  },
+  {
+   "year": "1979",
+   "text": "The bay becomes part of a binational World Heritage Site."
+  },
+  {
+   "year": "1980",
+   "text": "The Alaska lands act creates Glacier Bay National Park and Preserve."
+  }
+ ],
+ "safety": [
+  "The water is cold enough to kill quickly. Kayakers should stay close to shore and travel with others.",
+  "Keep well back from glacier faces: calving ice throws up waves and falling blocks.",
+  "Brown and black bears live along the shore. Carry bear spray and store food in bear-resistant containers."
+ ],
+ "regulations": [
+  "Boats must stay at least a quarter of a mile from humpback whales.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Glacier Bay National Park and Preserve — National Park Service",
+   "url": "https://www.nps.gov/glba/"
+  }
+ ],
+ "contentVersion": 2
+}

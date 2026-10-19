@@ -25,7 +25,9 @@ public struct StampSheet: View {
     @State private var realStampCollected = false
     @State private var pressing = false
     @State private var stamped: Stamp?
+    @State private var saving = false
     @State private var error: String?
+    @State private var onSite = OnSiteCheck()
 
     public init(place: Place, suggestedDate: Date = Date()) {
         self.place = place
@@ -75,6 +77,7 @@ public struct StampSheet: View {
                 }
             }
         }
+        .sheetSize(width: 520, height: 680)
     }
 
     private var preview: some View {
@@ -155,31 +158,45 @@ public struct StampSheet: View {
                 ),
                 diameter: 170
             )
-            Text("Added to your passport and your log.")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
+            Text(
+                stamp.isVerifiedOnSite
+                    ? "Stamped on site. Added to your passport and your log."
+                    : "Added to your passport and your log."
+            )
+            .font(.subheadline)
+            .foregroundStyle(.secondary)
+            .multilineTextAlignment(.center)
         }
         .transition(.scale.combined(with: .opacity))
     }
 
     private func save() {
-        guard stamped == nil else { return }
-        let log = LogStore(context: context)
-        do {
-            let stamp = try log.stamp(
-                place.id,
-                at: stampLocationID,
-                on: date,
-                realStampCollected: realStampCollected
-            )
-            #if os(iOS)
-                // The haptic thump §9 asks for.
-                UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
-            #endif
-            withAnimation(.spring(duration: 0.4)) { stamped = stamp }
-        } catch {
-            self.error = "Could not save this stamp: \(error.localizedDescription)"
+        guard stamped == nil, !saving else { return }
+        saving = true
+        Task {
+            // Only a stamp dated today can have been made on site, so only then is the
+            // reader's location asked for (SPECIFICATION.md §9, §15).
+            let verified = Calendar.current.isDateInToday(date)
+                ? await onSite.isOnSite(at: place, boundary: store.boundary(for: place.id))
+                : false
+            let log = LogStore(context: context)
+            do {
+                let stamp = try log.stamp(
+                    place.id,
+                    at: stampLocationID,
+                    on: date,
+                    verifiedOnSite: verified,
+                    realStampCollected: realStampCollected
+                )
+                #if os(iOS)
+                    // The haptic thump §9 asks for.
+                    UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+                #endif
+                withAnimation(.spring(duration: 0.4)) { stamped = stamp }
+            } catch {
+                self.error = "Could not save this stamp: \(error.localizedDescription)"
+            }
+            saving = false
         }
     }
 }

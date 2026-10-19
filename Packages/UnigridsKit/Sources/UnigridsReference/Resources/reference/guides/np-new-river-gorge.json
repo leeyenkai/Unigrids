@@ -1,0 +1,113 @@
+{
+ "placeID": "np-new-river-gorge",
+ "contentVersion": 2,
+ "story": [
+  "The New River is old: geologists think it is among the oldest rivers in North America, flowing north across the grain of the Appalachians as they rose, and cutting a gorge roughly a thousand feet deep through layers of sandstone, shale and coal. The hard Nuttall Sandstone at the rim forms clean cliffs along the Endless Wall and elsewhere, now among the most popular climbing areas in the East.",
+  "Below the rim the river runs fast. The lower New has some of the best whitewater in the country, and the gorge's forests are among the most diverse in the central Appalachians, with migrating warblers in spring and blazing colour in October.",
+  "The gorge was opened to the outside world in 1873, when the Chesapeake and Ohio Railway was built along the river. Coal towns sprang up on its banks — Thurmond, Kaymoor, Nuttallburg — with mines, coke ovens and company stores; most were abandoned as the mines closed in the mid-twentieth century, and the forest has grown back around their ruins.",
+  "The New River Gorge Bridge, a steel arch 876 feet above the river, opened in 1977. Congress protected the gorge as a national river in 1978, and in 2020 made part of it a national park and the rest a national preserve, where hunting continues."
+ ],
+ "sightNotes": {
+  "poi-new-river-gorge-new-river-gorge-bridge": "A steel arch high over the gorge, seen from the Canyon Rim boardwalk.",
+  "poi-new-river-gorge-endless-wall-trail": "A rim walk past climbing cliffs to Diamond Point, with views up and down the river.",
+  "poi-new-river-gorge-long-point-trail": "A walk to a rock point with a classic view of the bridge.",
+  "poi-new-river-gorge-grandview": "A rim overlook above a great horseshoe bend of the river, bright with rhododendron in early summer.",
+  "poi-new-river-gorge-thurmond": "A railroad boomtown, now nearly empty, with its depot restored as a visitor center.",
+  "poi-new-river-gorge-kaymoor": "A steep trail down to the ruins of a coal mine and coke ovens.",
+  "poi-new-river-gorge-nuttallburg": "The remains of a coal town, with a restored conveyor and tipple.",
+  "poi-new-river-gorge-sandstone-falls": "A wide waterfall across the river, seen from a boardwalk."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Canyon Rim Visitor Center, on US 19 at the bridge near Fayetteville",
+   "Grandview and Sandstone visitor centers, off Interstate 64 in the south",
+   "Thurmond, by a winding road into the gorge"
+  ],
+  "permits": [
+   "Whitewater trips run with licensed outfitters; private boaters need experience on difficult water"
+  ],
+  "seasonalClosures": [
+   "On Bridge Day, the third Saturday of October, the bridge is closed to traffic and open to walkers and BASE jumpers"
+  ],
+  "camping": [
+   "Army Camp, first come, first served",
+   "Brooklyn Campground, first come, first served",
+   "Burnwood Group Campsite, reservable",
+   "Glade Creek Campground, first come, first served",
+   "Grandview Sandbar, first come, first served",
+   "Meadow Creek Campground",
+   "Stone Cliff, first come, first served",
+   "Thayer Campground, first come, first served",
+   "War Ridge/Backus Mountain Campground, first come, first served"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1873",
+   "text": "The Chesapeake and Ohio Railway opens the gorge to the outside world."
+  },
+  {
+   "year": "1977",
+   "text": "The New River Gorge Bridge opens."
+  },
+  {
+   "year": "1978",
+   "text": "Congress establishes New River Gorge National River."
+  },
+  {
+   "year": "2020",
+   "text": "Part of the river becomes a national park, and the rest a national preserve."
+  }
+ ],
+ "safety": [
+  "Wear a life jacket on or near the river; currents are powerful and the water hides rocks.",
+  "Cliff edges along the rim trails are unfenced."
+ ],
+ "regulations": [
+  "Hunting is allowed in the national preserve but not in the national park.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "New River Gorge National Park and Preserve — National Park Service",
+   "url": "https://www.nps.gov/neri/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS photo/Louise McLaughlin",
+  "isPublicDomain": true,
+  "assetName": "np-new-river-gorge-1.jpg",
+  "caption": "Horseshoe Bend from Grandview",
+  "altText": "bend in the river"
+ },
+ "gallery": [
+  {
+   "credit": "NPS photo/Louise McLaughlin",
+   "isPublicDomain": true,
+   "assetName": "np-new-river-gorge-2.jpg",
+   "caption": "Thurmond Depot",
+   "altText": "railroad tracks and depot"
+  },
+  {
+   "credit": "NPS photo/Carey Woods",
+   "isPublicDomain": true,
+   "assetName": "np-new-river-gorge-3.jpg",
+   "caption": "Sandstone Falls",
+   "altText": "waterfall spanning the river"
+  },
+  {
+   "credit": "NPS photo/Leah Perkowski-Sisk",
+   "isPublicDomain": true,
+   "assetName": "np-new-river-gorge-4.jpg",
+   "caption": "Foggy morning",
+   "altText": "fog and mountains"
+  }
+ ],
+ "operatingHours": "The park itself is open 24 hour a day, year round. The park's two main visitor centers at Canyon Rim and Sandstone are open daily from 9:00 am to 5:00 pm (closed on Thanksgiving, Christmas, and New Years Day). There are two seasonal Visitor Centers located in Thurmond and Grandview. They are typically open Memorial Day to Labor Day.",
+ "weather": "Weather in the Appalachian Mountains can be unpredictable and can change quickly. Always be prepared for the possibility of sudden storms. Weather in the mountains is often cooler and wetter than the surrounding area. On average, the warmest month is July. The maximum average precipitation also occurs in July.",
+ "directions": "To reach Park Headquarters take Route 19 North from Beckley to the Glen Jean exit. Upon exiting Rt 19, make an immediate left turn. At the next intersection, turn right. Park Headquarters will be straight ahead on the right. GPS Coordinates for Headquarters: 81.15587W, 37.92775N PLEASE NOTE: Third party search and map apps may direct you to an potentially inaccessible area of the park with no amenities or rangers stations. Please refer to the Visitor Center or Park Headquarters addresses for directions."
+}

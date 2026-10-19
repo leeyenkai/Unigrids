@@ -1,0 +1,100 @@
+{
+ "placeID": "np-biscayne",
+ "contentVersion": 2,
+ "story": [
+  "Biscayne protects four ecosystems in a line out to sea. A fringe of mangrove forest along the mainland shore shelters young fish, crabs and shellfish; behind it lies the shallow, seagrass-floored bay, home to manatees; then the keys, beginning with Elliott Key, the northernmost of the true Florida Keys, built of fossilised coral; and finally, offshore, the northern end of the Florida Reef.",
+  "Only about five percent of the park is land. The reefs hold more than two hundred species of fish, and sea turtles nest on the keys' beaches; sixteen endangered species live in the park, from manatees to the Schaus' swallowtail butterfly.",
+  "People have used these waters for ten thousand years. The reef has wrecked ships for centuries, and the park's Maritime Heritage Trail leads divers and snorkelers to six of them. Fowey Rocks Lighthouse has marked the reef since the nineteenth century; Stiltsville's houses still stand on pilings in the bay.",
+  "In the 1960s developers planned a new city on the keys and an industrial port on the bay. Local campaigners and Congressman Dante Fascell fought for protection instead, and won: a national monument in 1968 and a national park in 1980."
+ ],
+ "sightNotes": {
+  "poi-biscayne-boca-chita-key": "A small key with an ornamental lighthouse, a harbor and a campground, popular with boaters.",
+  "poi-biscayne-elliott-key": "The park's largest island, with a campground, a harbor and a trail through tropical hardwood forest.",
+  "poi-biscayne-maritime-heritage-trail": "Shipwrecks on the reef, including the Mandalay in shallow water — a snorkeler's wreck.",
+  "poi-biscayne-fowey-rocks-lighthouse": "A cast-iron lighthouse standing on the reef, seen from boats offshore.",
+  "poi-biscayne-stiltsville": "A cluster of houses on pilings in the bay, the last of a once-larger village."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Dante Fascell Visitor Center at Convoy Point, at the end of SW 328th Street east of Homestead — the only part reached by car",
+   "Everything else by boat; check nps.gov/bisc for current boat tours from the visitor center"
+  ],
+  "seasonalClosures": [
+   "June to November is hurricane season; summer brings heat, humidity and afternoon thunderstorms"
+  ],
+  "camping": [
+   "Boca Chita Campground, first come, first served",
+   "Elliott Key Campground"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1878",
+   "text": "Fowey Rocks Lighthouse is first lit."
+  },
+  {
+   "year": "1968",
+   "text": "Biscayne National Monument is established."
+  },
+  {
+   "year": "1980",
+   "text": "The monument is enlarged and made a national park."
+  },
+  {
+   "year": "1992",
+   "text": "Hurricane Andrew passes directly over the park."
+  }
+ ],
+ "safety": [
+  "Weather on the bay changes quickly. Check the forecast, carry safety gear and file a float plan.",
+  "Use the mooring buoys at reef sites; anchoring on coral damages it and is prohibited."
+ ],
+ "regulations": [
+  "Coral and natural and cultural objects, including anything from a shipwreck, may not be taken.",
+  "Fishing and lobstering follow Florida rules and licences, with additional park closures.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Biscayne National Park — National Park Service",
+   "url": "https://www.nps.gov/bisc/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS image by Shaun Wolfe",
+  "isPublicDomain": true,
+  "assetName": "np-biscayne-1.jpg",
+  "caption": "Snorkeling",
+  "altText": "Coral reef with two snorkelers diving below the surface"
+ },
+ "gallery": [
+  {
+   "credit": "NPS photo",
+   "isPublicDomain": true,
+   "assetName": "np-biscayne-2.jpg",
+   "caption": "Boca Chita Key",
+   "altText": "Downtown Miami in background."
+  },
+  {
+   "credit": "NPS image by Shaun Wolfe",
+   "isPublicDomain": true,
+   "assetName": "np-biscayne-3.jpg",
+   "caption": "Coral Reef",
+   "altText": "Underwater view of coral reef with a large school of yellow and blue fish"
+  },
+  {
+   "credit": "NPS photo",
+   "isPublicDomain": true,
+   "assetName": "np-biscayne-4.jpg",
+   "caption": "Coral Reef",
+   "altText": "The coral reefs are located mostly on the Eastern side of the park."
+  }
+ ],
+ "operatingHours": "Launch your own canoe or kayak from the ramp near the parking area, enjoy a picnic on the lawn, or stroll along the jetty trail.",
+ "weather": "The park is situated in a subtropical climate, which ensures sunshine year-round. Winters are normally dry and mild, with occasional fronts bringing wind and little rain. Summer brings hot and humid weather with scattered thunderstorms in the afternoons. The average temperature in January is 68 degrees Fahrenheit and 82 in July. The average rainfall for the area is 2.17 inches in January and 3.95 inches in July. June to November is hurricane season.",
+ "directions": "The Dante Fascell Visitor Center may be reached from the Florida Turnpike by taking Exit 6 (Speedway Boulevard). Turn left from exit ramp and continue south to SW 328th Street (North Canal Drive). Turn left on 328th Street and continue for four miles to the end of the road. The park entrance is on the left just before the entrance to Homestead Bayfront Marina."
+}

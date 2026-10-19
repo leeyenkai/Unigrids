@@ -68,6 +68,68 @@ makes the change. A release moves that block under a version heading with its da
   park you pick stands behind the stack and its brochure is the one on top. iPhone and
   iPad only — macOS has no alternate app icons, and on the Mac the row says so rather
   than offering a control that would do nothing.
+- The pipeline's `fetch`, `derive` and `build` steps, for one park and without an API key:
+  NPS boundaries and Public Trails, USGS 3DEP elevation and OpenStreetMap roads and water,
+  each versioned by date under `Pipeline/raw/` with its licence recorded beside it.
+- Trail measurement in the pipeline: length, elevation gain and loss, high and low points
+  and an elevation profile, every trail measured the same way from its route line and
+  3DEP — resampled at 10 m, smoothed over 50 m, accumulated with a 3 m dead band so
+  elevation-model noise does not read as climb. Zion comes to 44 trails and 116 km.
+- Offline park packs: topo-style relief tiles rendered from 3DEP, OpenStreetMap and NPS
+  trails in the style of an NPS brochure map, written as WebP in MBTiles alongside the
+  measured trails, a manifest and the attribution the sources oblige the pack to carry.
+- `Pipeline/out/pack-size-report.md`, which measures the pack and costs all 63 parks
+  against the App Store's 4 GB limit from each park's own boundary.
+- ADR 0006 recording the pack format and why.
+- **Reference data built by the pipeline** rather than hand-seeded: `unigrids_pipeline
+  reference` fetches the NPS Data API, NPS unit boundaries, USGS PAD-US, Wikipedia and
+  Wikimedia Commons into a dated snapshot and builds 537 places — all 63 national parks,
+  373 other NPS units, 76 state parks and 25 monuments, conservation areas and refuges —
+  with 1,434 sights, visitor centres and campgrounds, 506 outlines and 235 photographs.
+- **A detailed atlas map.** Every place is a marker whose shape is its tier and whose
+  colour is its agency; national parks are outlined at every zoom and named on black
+  plates, the rest outlined from regional zoom and clustered at country scale. A tap or
+  click anywhere inside an outline selects the place. Region shortcuts for the Lower 48,
+  Alaska, Hawaiʻi, the Caribbean and the Pacific; a map key that opens filters by tier
+  and visited status; search across places and sights; a muted, hybrid or satellite base
+  map.
+- **An overview for every place**, opened from the map: photograph and credit, a written
+  summary, figures, visit status, and check in, stamp, add to trip, open the guide and
+  directions in Maps. A sheet on iPhone, an inspector beside the map on iPad and Mac.
+- **Guides for all 63 national parks**, written for Unigrids and checked against the NPS
+  and Wikipedia: a summary, the story, sights placed on the park map, visitor centres,
+  plan your visit, chronology, safety, regulations and sources, with date established,
+  area and 2025 visits for every park.
+- New guide panels from the NPS's own data: a photo gallery, entrance fees and hours,
+  weather and seasons, and getting there; live park alerts when the build has an NPS key.
+- A park map panel with the outline and numbered sights, and **Explore in 3D**, which
+  flies the camera between a park's sights.
+- A page for each of the other 474 places, and written overviews for all 101 curated
+  state parks, monuments and refuges.
+- **Trip planning:** trips with ordered, dated stops, a route map, straight-line
+  distance, reordering, a calendar (`.ics`) export, and Add to trip from every place.
+  Planned places show dashed on the map, and a check-in can join a trip.
+- Stats rebuilt: a national park grid, a tile map of every state and territory, headline
+  figures, visits by year and by theme, the nearest unvisited park, and a share card.
+- Passport rebuilt: region rows with completion, and an America 250 page.
+- Export the whole log as JSON, and visits as CSV, from Settings.
+- A three-panel welcome with the non-affiliation notice, shown once and available again
+  from Settings.
+- A Photo credits screen listing every photograph with its credit and licence, and
+  attributions for USGS PAD-US, Wikimedia Commons and Open-Meteo.
+- `scripts/write-secrets.sh`, which writes the gitignored `Secrets.plist` the app reads its
+  NPS key from.
+- ADR 0007 (one identity across every screen) and ADR 0008 (the home map wraps
+  `MKMapView`).
+
+### Changed
+
+- **One design language on every screen.** The brochure identity now runs through the
+  map, directory, trips, passport, stats and settings as well as the guides: a black band
+  opens each screen, sections open with ruled caps heads, figures are set large, buttons
+  and markers are square, and a palette now restyles every screen's paper and ink.
+- Panels side by side in a guide share one height, so a row reads as a single sheet.
+- The Parks directory can show national parks or every place.
 
 ### Fixed
 
@@ -88,14 +150,34 @@ makes the change. A release moves that block under a version heading with its da
 - Measurement units now follow `.us` rather than `== .metric`. `Locale.MeasurementSystem`
   has three cases and the UK reports `.uk`, so British readers were being shown park
   elevations in feet.
+- On the Mac, sheets built on a list — the stop picker, Add to trip, map filters, the
+  stamp sheet and the photo viewer — collapsed to a sliver and showed nothing.
+- On the Mac, the welcome screens showed a tab strip; they now page with Back and Next.
+- Map camera moves requested from a search or a region shortcut landed one step late.
+- A trip's map now reframes when stops are added or removed, and the stop picker leaves
+  out places already on the trip.
 
 ### Notes
 
-- Reference data in this release is a hand-authored pilot seed, not pipeline output. Its
-  provenance and gaps are recorded in
+- Reference data is now pipeline output from a 2026-10-19 snapshot. Its provenance, photo
+  policy and limits are recorded in
   `Packages/UnigridsKit/Sources/UnigridsReference/Resources/reference/README.md`.
-- Trails, offline map packs, the 3D view, the brochure viewer, the planner, auto-detected
-  visits, photo import, widgets and the Watch app are not built yet. See
+- **Zion's offline pack is 22.2 MB** — 5,063 tiles at zoom 10–16, 256 px WebP, clipped to
+  the park boundary plus a 2 km buffer. That was the pilot's open question
+  (`SPECIFICATION.md` §16).
+- **4 GB holds, with WebP and a per-park zoom cap: 2.2 GB for all 63 parks.** It does not
+  hold at full depth everywhere (12.4 GB), and it does not hold in any PNG form at all
+  (149 GB). Tile format is worth eight times over and costs nothing the eye can find; six
+  Alaskan park-and-preserve units are 77 % of the national tile count. State parks cost
+  about 2 MB each and are not a budget question. The brochure PDFs are the one part of the
+  budget still unmeasured. The figures and what to trim are in
   [`docs/mvp-scope.md`](docs/mvp-scope.md).
+- Trails and offline map packs now exist in the pipeline but not in the app: nothing reads
+  a pack, so `package` deliberately does not copy one into the app's resources. The
+  brochure viewer, drive times and planner conflict flags, auto-detected visits, photo
+  import, widgets and the Watch app are not built. See
+  [`docs/mvp-scope.md`](docs/mvp-scope.md).
+- iPhone and iPad layouts compile but were checked only on macOS: the development machine
+  has no iOS 27 Simulator runtime.
 
 [Unreleased]: https://github.com/leeyenkai/Unigrids/commits/main

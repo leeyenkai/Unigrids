@@ -12,6 +12,7 @@ import UnigridsReference
 /// same log.
 public struct RootTabView: View {
     @Environment(\.referenceStore) private var store
+    @AppStorage(OnboardingDefaults.seen) private var onboardingSeen = false
 
     private let loadErrorMessage: String?
 
@@ -24,10 +25,10 @@ public struct RootTabView: View {
             Tab("Map", systemImage: "map") {
                 MapScreen()
             }
-            Tab("Parks", systemImage: "tree") {
+            Tab("Parks", systemImage: "square.grid.3x3") {
                 ParkDirectoryScreen()
             }
-            Tab("Trips", systemImage: "suitcase") {
+            Tab("Trips", systemImage: "point.topleft.down.to.point.bottomright.curvepath") {
                 TripsScreen()
             }
             Tab("Passport", systemImage: "book.closed") {
@@ -43,6 +44,24 @@ public struct RootTabView: View {
                 DataUnavailableBanner(message: loadErrorMessage)
             }
         }
+        #if os(iOS)
+        .fullScreenCover(isPresented: showOnboarding) {
+            OnboardingView { onboardingSeen = true }
+        }
+        #else
+        .sheet(isPresented: showOnboarding) {
+                    OnboardingView { onboardingSeen = true }
+                        .frame(width: 620, height: 640)
+                }
+        #endif
+    }
+
+    private var showOnboarding: Binding<Bool> {
+        Binding(get: { !onboardingSeen }, set: {
+            if !$0 {
+                onboardingSeen = true
+            }
+        })
     }
 }
 

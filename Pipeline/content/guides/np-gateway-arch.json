@@ -1,0 +1,90 @@
+{
+ "placeID": "np-gateway-arch",
+ "summary": "The smallest national park: the 630-foot stainless-steel Gateway Arch on the St. Louis riverfront, the museum beneath it, and the Old Courthouse where Dred and Harriet Scott sued for their freedom.",
+ "facts": {
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "Half a day"
+ },
+ "story": [
+  "The Gateway Arch is 630 feet tall and 630 feet wide at its base, a weighted catenary curve of stainless steel over a concrete and steel core. The architect Eero Saarinen won the design competition for it in the late 1940s, and it was completed in 1965. Small tram cars ride up inside its legs to a viewing chamber at the top.",
+  "The park began in 1935 as the Jefferson National Expansion Memorial, set on the site of the original city along the Mississippi. It commemorates Thomas Jefferson's Louisiana Purchase and the westward journeys that began here, including the Lewis and Clark expedition — and the museum beneath the arch also tells of what that expansion cost the Native nations of the West.",
+  "A few blocks west stands the Old Courthouse. In 1846 Dred and Harriet Scott, enslaved, sued there for their freedom. Their case reached the US Supreme Court, whose 1857 ruling against them deepened the divide that led to the Civil War.",
+  "The memorial was renamed Gateway Arch National Park in 2018, the year a new museum and landscaped grounds connecting the arch to downtown opened."
+ ],
+ "sights": [
+  {
+   "name": "Gateway Arch",
+   "match": "Gateway Arch Monument",
+   "note": "The 630-foot arch, with tram cars to the observation deck at the top."
+  },
+  {
+   "name": "Museum at the Gateway Arch",
+   "match": "Directly below the Gateway Arch",
+   "note": "Galleries on St. Louis, westward expansion and the arch's construction, beneath the arch."
+  },
+  {
+   "name": "Old Courthouse",
+   "note": "The domed courthouse where the Dred Scott case began."
+  },
+  {
+   "name": "Dred and Harriet Scott Statue",
+   "note": "A bronze of the Scotts outside the Old Courthouse."
+  },
+  {
+   "name": "The Riverfront",
+   "note": "The Mississippi levee below the arch, with views of the Eads Bridge."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "The visitor center and museum entrance faces west, toward the Old Courthouse and downtown"
+  ],
+  "reservations": "Tram rides to the top are timed and often sell out, especially in summer and on weekends. Book ahead.",
+  "lodging": [
+   "Downtown St. Louis hotels, a short walk away"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1846",
+   "text": "Dred and Harriet Scott file suit for their freedom at the Old Courthouse."
+  },
+  {
+   "year": "1857",
+   "text": "The Supreme Court rules against the Scotts in Dred Scott v. Sandford."
+  },
+  {
+   "year": "1935",
+   "text": "The Jefferson National Expansion Memorial is established."
+  },
+  {
+   "year": "1947",
+   "text": "Eero Saarinen's design wins the memorial's architectural competition."
+  },
+  {
+   "year": "1965",
+   "text": "The Gateway Arch is completed."
+  },
+  {
+   "year": "2018",
+   "text": "The memorial is renamed Gateway Arch National Park."
+  }
+ ],
+ "safety": [
+  "The tram cars are small and enclosed. Visitors uneasy in tight spaces may prefer the museum and the riverfront."
+ ],
+ "regulations": [
+  "Bags are screened at the entrance to the arch.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Gateway Arch National Park — National Park Service",
+   "url": "https://www.nps.gov/jeff/"
+  }
+ ],
+ "contentVersion": 2
+}

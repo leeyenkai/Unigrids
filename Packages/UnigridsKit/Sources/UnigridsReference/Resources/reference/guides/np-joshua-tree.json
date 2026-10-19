@@ -1,0 +1,129 @@
+{
+ "placeID": "np-joshua-tree",
+ "contentVersion": 2,
+ "story": [
+  "Elevation divides the park in two. Above about three thousand feet lies the Mojave Desert, cooler and wetter, where Joshua trees grow; below it, to the east, the hotter Colorado Desert, part of the Sonoran, with creosote bush, ocotillo and a garden of cholla cactus. The Little San Bernardino Mountains rise along the southwest edge.",
+  "The Joshua tree is a yucca, not a tree, and it depends entirely on a small moth to pollinate it. The name is said to come from Mormon emigrants, who saw a prophet's raised arms in its branches. Warming and drought now threaten the young trees, especially at lower elevations.",
+  "The park's boulders are granite that cooled deep underground, cracked into blocks, and was rounded by groundwater before erosion stripped away the soil around it. The result — Jumbo Rocks, Hidden Valley, the Wonderland of Rocks — is one of the most popular climbing areas in the country. Fan-palm oases grow where faults bring water to the surface.",
+  "The Pinto culture hunted here as long as ten thousand years ago; Serrano, Cahuilla and Chemehuevi people later lived near springs like the Oasis of Mara. Cattlemen, miners and homesteaders followed — Keys Ranch still stands. Minerva Hoyt, a Pasadena activist, persuaded President Franklin Roosevelt to proclaim a national monument in 1936, and the California Desert Protection Act made it a national park in 1994."
+ ],
+ "sightNotes": {
+  "poi-joshua-tree-keys-view": "A crest-top view over the Coachella Valley to the San Andreas Fault and the Salton Sea.",
+  "poi-joshua-tree-hidden-valley": "A boulder-ringed valley once used, the story goes, by cattle rustlers; an easy loop.",
+  "poi-joshua-tree-barker-dam": "A rancher-built dam that sometimes holds water, with petroglyphs nearby.",
+  "poi-joshua-tree-skull-rock": "A granite boulder weathered into the shape of a skull, beside the road at Jumbo Rocks.",
+  "poi-joshua-tree-cholla-cactus-garden": "A dense stand of teddybear cholla on a short loop trail, glowing at sunrise and sunset.",
+  "poi-joshua-tree-arch-rock": "A natural granite arch near White Tank Campground.",
+  "poi-joshua-tree-keys-ranch": "A homestead preserved as Bill Keys left it, seen on ranger-led tours.",
+  "poi-joshua-tree-lost-palms-oasis": "The park's largest grove of California fan palms, a long hike from Cottonwood Spring."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "West Entrance, near the town of Joshua Tree on CA 62",
+   "North Entrance, at Twentynine Palms on CA 62",
+   "South Entrance, at Cottonwood Spring, from Interstate 10 exit 168"
+  ],
+  "permits": [
+   "Overnight backpacking — register at a backcountry board"
+  ],
+  "lodging": [
+   "No lodging in the park; towns along CA 62 and in the Coachella Valley"
+  ],
+  "seasonalClosures": [
+   "Summer days pass 100°F (38°C); winter nights freeze, and snow sometimes falls on the higher ground"
+  ],
+  "camping": [
+   "Belle Campground, first come, first served",
+   "Black Rock Campground, reservable",
+   "Cottonwood Campground, reservable",
+   "Hidden Valley Campground, first come, first served",
+   "Indian Cove Campground, reservable",
+   "Jumbo Rocks Campground, reservable",
+   "Ryan Campground, reservable",
+   "Sheep Pass Group Campground, reservable",
+   "White Tank Campground, first come, first served"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1772",
+   "text": "A Spanish party led by Pedro Fages records the first European sighting of Joshua trees."
+  },
+  {
+   "year": "1936",
+   "text": "President Franklin Roosevelt proclaims Joshua Tree National Monument."
+  },
+  {
+   "year": "1994",
+   "text": "The California Desert Protection Act makes it a national park."
+  }
+ ],
+ "safety": [
+  "Carry plenty of water and watch for signs of heat illness; there is little shade.",
+  "It is easy to get lost among the boulders. Note landmarks, and carry a map.",
+  "Cholla spines detach at a touch; give the plants room, and carry a comb to remove them."
+ ],
+ "regulations": [
+  "Do not climb on or damage Joshua trees.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Joshua Tree National Park — National Park Service",
+   "url": "https://www.nps.gov/jotr/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "7-day vehicle permit, admitting the passengers of a single, non-commercial vehicle on the day of purchase and for the next six days."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "7-day entrance fee, per person on foot or bike."
+  }
+ ],
+ "hero": {
+  "credit": "NPS / Emily Hassell",
+  "isPublicDomain": true,
+  "assetName": "np-joshua-tree-1.jpg",
+  "caption": "Quail Springs Area at Sunset",
+  "altText": "The sky turns hues of pink and purple over a field of Joshua trees."
+ },
+ "gallery": [
+  {
+   "credit": "NPS/Brad Sutton",
+   "isPublicDomain": true,
+   "assetName": "np-joshua-tree-2.jpg",
+   "caption": "Jumbo Rocks at Sunset",
+   "altText": "people climbing on boulders are silhouetted against a colorful sunset sky"
+  },
+  {
+   "credit": "NPS/Kurt Moses",
+   "isPublicDomain": true,
+   "assetName": "np-joshua-tree-3.jpg",
+   "caption": "Joshua Tree Junior Ranger",
+   "altText": "a little girl smiles while wearing a Jr. Ranger hat and badge"
+  },
+  {
+   "credit": "NPS/Hannah Schwalbe",
+   "isPublicDomain": true,
+   "assetName": "np-joshua-tree-4.jpg",
+   "caption": "Hidden Valley Hiker",
+   "altText": "hiker looks over Hidden Valley"
+  }
+ ],
+ "operatingHours": "Joshua Tree National Park is open 24 hours a day, 7 days a week, 365 days a year. Visitation increases as temperatures moderate in the fall, peaks during the spring wildflower season, and diminishes during the heat of summer. Some areas of the park are designated for day use only. Visitor centers keep separate hours; please see descriptions.",
+ "weather": "Days are typically clear with less than 25% humidity. Temperatures are most comfortable in the spring and fall, with an average highs around 85°F (29°C) and average lows around 50°F (10°C) respectively. Winter brings cooler days, around 60°F (15°C), and freezing nights. It occasionally snows at higher elevations. Summers are hot, over 100°F (38°C) during the day and not cooling much below 75°F (24°C) at night.",
+ "directions": "From I-10, take exit 117 for CA Hwy 62 toward 29 Palms/Yucca Valley. This will allow you to access the West Entrance, the North Entrance, Black Rock, and Indian Cove. Take exit 168 off I-10 to come in at the park's South Entrance."
+}

@@ -1,0 +1,118 @@
+{
+ "placeID": "np-grand-canyon",
+ "summary": "A mile deep and up to eighteen miles wide, cut by the Colorado River through nearly two billion years of rock. The South Rim is open all year; the higher, cooler North Rim lost its historic lodge to the Dragon Bravo Fire in 2025.",
+ "facts": {
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "Two to three days"
+ },
+ "story": [
+  "The Grand Canyon is a cross-section of the Earth's crust. At the bottom lie the Vishnu Schist and Zoroaster Granite, close to two billion years old; above them rise layer after layer of sandstone, shale and limestone, ending at the rim in the Kaibab Limestone, laid down in a shallow sea some 270 million years ago. The Colorado River has cut down through it in the last few million years as the Colorado Plateau rose, and side streams, rockfall and flash floods have widened the gorge into the canyon we see.",
+  "The park follows 278 miles of the river. From rim to river is a journey through life zones as different as Canada and Mexico: spruce and fir on the North Rim, ponderosa pine on the South, and at the bottom a desert twenty to thirty degrees hotter than the rims. California condors, returned to the wild nearby in the 1990s, ride the thermals above the canyon.",
+  "The canyon is the ancestral homeland of eleven present-day Tribal communities, and the Havasupai still live within it. A Spanish expedition reached the South Rim in 1540; John Wesley Powell led the first known passage through the canyon by river in 1869. The railroad arrived at the South Rim in 1901, and Mary Colter's buildings — Hopi House, Lookout Studio, the Desert View Watchtower — gave the rim its character.",
+  "Theodore Roosevelt urged Americans to leave it as it is, and made it a national monument in 1908; Congress created the national park in 1919. In July 2025 the Dragon Bravo Fire destroyed the historic Grand Canyon Lodge and other buildings on the North Rim."
+ ],
+ "sights": [
+  {
+   "name": "Mather Point",
+   "note": "The first view for most visitors, a short walk from the Grand Canyon Visitor Center."
+  },
+  {
+   "name": "Yavapai Geology Museum",
+   "note": "A stone building on the rim with panoramic windows and exhibits that read the canyon's layers."
+  },
+  {
+   "name": "Hopi Point",
+   "note": "A point on Hermit Road with wide views west, a sunset favourite."
+  },
+  {
+   "name": "Hermits Rest",
+   "match": "Hermits Rest (Grand Canyon)",
+   "note": "The end of Hermit Road, with a stone rest house designed by Mary Colter."
+  },
+  {
+   "name": "Bright Angel Trail",
+   "match": "Bright Angel Trailhead",
+   "note": "The classic trail below the South Rim, from Grand Canyon Village toward the river."
+  },
+  {
+   "name": "South Kaibab Trail",
+   "note": "A steep ridgeline trail with open views from the first step, down to Ooh Aah Point and beyond."
+  },
+  {
+   "name": "Desert View Watchtower",
+   "note": "Mary Colter's stone tower at the east end of the South Rim, the highest point on the rim."
+  },
+  {
+   "name": "Lipan Point",
+   "note": "A broad view of the river and the canyon's oldest rock layers."
+  },
+  {
+   "name": "Point Imperial",
+   "note": "The highest point on the North Rim, looking out to the Painted Desert."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "South Entrance, on AZ 64 from Williams and Interstate 40, or US 180 from Flagstaff; open all year",
+   "Desert View (East) Entrance, on AZ 64 from Cameron",
+   "North Rim, on AZ 67; access has been limited since the 2025 fire — check nps.gov/grca"
+  ],
+  "reservations": "Rim lodging, mule trips and Phantom Ranch at the bottom of the canyon are booked far ahead; Phantom Ranch is allocated by lottery.",
+  "permits": [
+   "Camping below the rim — a backcountry permit",
+   "Private river trips — a permit, allocated by lottery"
+  ],
+  "lodging": [
+   "El Tovar, Bright Angel, Maswik, Kachina and Thunderbird lodges on the South Rim",
+   "Phantom Ranch, at the bottom of the canyon"
+  ],
+  "seasonalClosures": [
+   "The North Rim is normally open only from mid-May to mid-October, and its services have been sharply limited since the 2025 fire"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1540",
+   "text": "Members of a Spanish expedition become the first Europeans to see the canyon."
+  },
+  {
+   "year": "1869",
+   "text": "John Wesley Powell's party makes the first known river journey through the canyon."
+  },
+  {
+   "year": "1908",
+   "text": "Theodore Roosevelt proclaims Grand Canyon National Monument."
+  },
+  {
+   "year": "1919",
+   "text": "Congress establishes Grand Canyon National Park."
+  },
+  {
+   "year": "1979",
+   "text": "The park is listed as a World Heritage Site."
+  },
+  {
+   "year": "2025",
+   "text": "The Dragon Bravo Fire destroys the Grand Canyon Lodge on the North Rim."
+  }
+ ],
+ "safety": [
+  "Do not try to hike to the river and back in one day. Down is optional; up is mandatory, and in summer the inner canyon is dangerously hot.",
+  "Stay back from the rim edge, behind railings where there are railings. Falls are a leading cause of death in the park."
+ ],
+ "regulations": [
+  "Feeding wildlife, including squirrels, is prohibited; they bite.",
+  "Give mules the right of way on trails, and follow the wrangler's instructions.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Grand Canyon National Park — National Park Service",
+   "url": "https://www.nps.gov/grca/"
+  }
+ ],
+ "contentVersion": 2
+}

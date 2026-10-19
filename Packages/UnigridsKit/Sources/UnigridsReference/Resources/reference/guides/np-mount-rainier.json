@@ -1,0 +1,135 @@
+{
+ "placeID": "np-mount-rainier",
+ "contentVersion": 2,
+ "story": [
+  "Mount Rainier is an active stratovolcano, the highest peak in the Cascade Range, built of lava flows and ash over hundreds of thousands of years. More than twenty-five named glaciers descend its flanks, among them the Emmons, the largest by area in the contiguous United States, and the Carbon, which reaches lower than any other there. Five major rivers rise from its ice.",
+  "The mountain makes its own weather, catching storms off the Pacific; Paradise, on its south slope, is one of the snowiest places on Earth where snowfall is measured. When the snow melts, in July and August, its meadows burst into wildflowers. Lower down, old-growth forest of Douglas-fir, western red cedar and hemlock fills the valleys — at the Grove of the Patriarchs some trees are a thousand years old.",
+  "The peoples of the region knew the mountain as Tacoma or Tahoma. George Vancouver named it in 1792 for a fellow naval officer, Peter Rainier. Hazard Stevens and Philemon Van Trump made the first recorded ascent in 1870, and John Muir climbed it in 1888.",
+  "Mount Rainier became a national park in 1899, one of the first in the country. Its roads, inns and rustic buildings from the 1920s and 1930s — Paradise Inn among them — are together a National Historic Landmark, and nearly all the park is wilderness, encircled by the 93-mile Wonderland Trail."
+ ],
+ "sightNotes": {
+  "poi-mount-rainier-paradise": "Subalpine meadows on the mountain's south slope, with the Paradise Inn, a visitor center and trails onto the snow.",
+  "poi-mount-rainier-skyline-trail": "A loop above Paradise to Panorama Point, with close views of the Nisqually Glacier.",
+  "poi-mount-rainier-reflection-lakes": "Lakes that mirror the mountain on a still morning.",
+  "poi-mount-rainier-narada-falls": "A waterfall that drops beside the road to Paradise.",
+  "poi-mount-rainier-christine-falls": "A waterfall framed by a stone road bridge.",
+  "poi-mount-rainier-grove-of-the-patriarchs": "An island in the Ohanapecosh River of giant, ancient cedars and firs.",
+  "poi-mount-rainier-sunrise": "The highest point in the park reached by road, facing the Emmons Glacier.",
+  "poi-mount-rainier-tipsoo-lake": "A small lake near Chinook Pass, ringed by wildflowers in summer.",
+  "poi-mount-rainier-mowich-lake": "The park's largest and deepest lake, at the end of a gravel road in the northwest.",
+  "poi-mount-rainier-carbon-glacier": "The lowest-reaching glacier in the contiguous United States, reached by trail from the Carbon River."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Nisqually Entrance in the southwest, open all year, on the road to Longmire and Paradise",
+   "Stevens Canyon Entrance in the southeast",
+   "White River Entrance in the northeast, on the road to Sunrise",
+   "Carbon River and Mowich Lake in the northwest"
+  ],
+  "reservations": "In recent summers the park has required timed-entry reservations at peak hours for some areas. Check nps.gov/mora before you go.",
+  "permits": [
+   "Overnight wilderness trips, including the Wonderland Trail — a wilderness permit",
+   "Climbing above 10,000 feet or onto glaciers — a climbing permit and fee"
+  ],
+  "lodging": [
+   "Paradise Inn, open in summer, and the National Park Inn at Longmire, open all year"
+  ],
+  "seasonalClosures": [
+   "Only the road from Nisqually to Paradise stays open in winter; Sunrise usually opens in early July"
+  ],
+  "camping": [
+   "Cougar Rock Campground, reservable, with some first-come sites",
+   "Ohanapecosh Campground, reservable, with some first-come sites",
+   "White River Campground, first come, first served"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1792",
+   "text": "George Vancouver names the mountain for Peter Rainier."
+  },
+  {
+   "year": "1870",
+   "text": "Hazard Stevens and Philemon Van Trump make the first recorded ascent."
+  },
+  {
+   "year": "1899",
+   "text": "Mount Rainier National Park is established."
+  },
+  {
+   "year": "1988",
+   "text": "Most of the park is designated wilderness."
+  },
+  {
+   "year": "1997",
+   "text": "The park's historic buildings and roads are named a National Historic Landmark district."
+  }
+ ],
+ "safety": [
+  "Snow lingers on trails above Paradise into July. Carry a map, and turn back in fog; people get lost a few hundred yards from the parking lot.",
+  "Rivers fed by glaciers are fast, cold and full of rock. Do not wade them."
+ ],
+ "regulations": [
+  "Stay on trails in the meadows; footsteps kill fragile subalpine plants.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Mount Rainier National Park — National Park Service",
+   "url": "https://www.nps.gov/mora/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "Grants unlimited entry for one vehicle and passengers for seven consecutive days. Vehicle must be private, noncommercial, and with a seating capacity of 15 or less."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Walk-up or single bicycle fee. Grants unlimited entry for seven consecutive days."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo / E. Brouwer",
+  "isPublicDomain": true,
+  "assetName": "np-mount-rainier-1.jpg",
+  "caption": "Narada Falls Rainbow",
+  "altText": "A fan-shaped waterfall cascades over lava cliffs with a rainbow in its mist."
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-mount-rainier-2.jpg",
+   "caption": "Marmot in Morning Dew",
+   "altText": "A hoary marmot with white frosted fur rests on a rock beside white flowers in a meadow."
+  },
+  {
+   "credit": "NPS Photo / Steve Redman",
+   "isPublicDomain": true,
+   "assetName": "np-mount-rainier-3.jpg",
+   "caption": "Kids Hiking Through Wildflower Meadow",
+   "altText": "Two children hike on trail through wildflower meadow with Mount Rainier above them."
+  },
+  {
+   "credit": "NPS Photo/ K. Loving",
+   "isPublicDomain": true,
+   "assetName": "np-mount-rainier-4.jpg",
+   "caption": "Wildflower Meadow Along the Wonderland Trail",
+   "altText": "Purple lupine and white bistort bloom in a meadow alongside a sign for the Wonderland Trail."
+  }
+ ],
+ "operatingHours": "Mount Rainier National Park is open all year. Visitation peaks in July and August with warmer weather and blooming wildflowers. In spring and autumn, weather determines the availability of facilities and roads. During winter months a number of roads, facilities, and entrances close for the season.",
+ "weather": "Weather patterns at Mount Rainier are strongly influenced by the Pacific Ocean and elevation. The climate is generally cool and rainy, with summer highs in the 60s and 70s. While July and August are the sunniest months of the year, rain is very likely in spring, fall, and winter. Visitors should be aware that mountain weather is very changeable. In the higher elevations, like Paradise, winter can last from November to May with many feet of snow on the ground.",
+ "directions": "Mount Rainier National Park is located in west-central Washington state. Several major cities in Washington- Seattle, Tacoma, and Yakima- and Portland, Oregon, are within 200 miles of the park. For GPS to Nisqually Entrance use: 39000 State Route 706 E, Ashford, WA 98304."
+}

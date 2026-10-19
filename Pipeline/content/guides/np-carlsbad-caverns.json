@@ -1,0 +1,91 @@
+{
+ "placeID": "np-carlsbad-caverns",
+ "summary": "More than 119 caves under the Chihuahuan Desert, dissolved out of an ancient reef by sulfuric acid. The largest is open to walk: down through the natural entrance, or by elevator, to the Big Room, the largest cave chamber in North America.",
+ "facts": {
+  "bestSeasons": [
+   "summer",
+   "autumn"
+  ],
+  "suggestedTime": "Half a day to a day"
+ },
+ "story": [
+  "The Guadalupe Mountains are a fossil reef. Some 250 million years ago the Capitan Reef grew along the edge of an inland sea, built of sponges, algae and shells; buried and later lifted into the air, it became the limestone the caves are cut into. Most caves are dissolved by carbonic acid in rainwater. Carlsbad's were dissolved from below, by sulfuric acid formed where hydrogen sulfide rising from oil deposits met oxygen-rich groundwater.",
+  "The result is on a grand scale. The Big Room is almost 4,000 feet long, 625 feet wide and 255 feet high at its highest point. When the water drained away, dripping water began decorating the chambers with stalactites, stalagmites, draperies and soda straws — and the decoration continues.",
+  "From late spring to autumn, hundreds of thousands of Brazilian free-tailed bats spiral out of the natural entrance at dusk to hunt over the desert. Above ground, the park protects Chihuahuan Desert canyons, and Rattlesnake Springs draws birds from far around.",
+  "People sheltered in the cave mouth long ago and left paintings on its walls. Miners dug bat guano from it in the early 1900s, and a teenager named Jim White explored and named its rooms. President Coolidge proclaimed a national monument in 1923, Congress made it a national park in 1930, and elevators replaced the long walk out in 1932."
+ ],
+ "sights": [
+  {
+   "name": "Natural Entrance",
+   "match": "Natural Entrance to Carlsbad Cavern",
+   "note": "A steep, paved trail that descends about 750 feet into the cavern, past the Devil's Spring and Iceberg Rock."
+  },
+  {
+   "name": "The Big Room",
+   "match": "Carlsbad Cavern",
+   "note": "The largest cave chamber in North America, on a mile-long loop trail among giant formations."
+  },
+  {
+   "name": "Bat Flight",
+   "match": "Natural Entrance to Carlsbad Cavern",
+   "note": "At dusk from late spring to autumn, the bats' evening flight from the amphitheater at the natural entrance."
+  },
+  {
+   "name": "Rattlesnake Springs",
+   "note": "A spring-fed oasis of cottonwoods, one of the best birding spots in New Mexico."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "One entrance road, NM 7, seven miles from the gate at Whites City on US 62/180"
+  ],
+  "reservations": "A timed-entry ticket is required to enter the cavern. Ranger-guided tours of other rooms and caves are booked separately.",
+  "permits": [
+   "Backcountry camping and wild-cave trips — a permit from the visitor center"
+  ],
+  "lodging": [
+   "No lodging or campground in the park; Whites City and Carlsbad are nearby"
+  ],
+  "seasonalClosures": [
+   "The bat flight program runs from late spring to October; the cave itself stays about 56°F all year"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1898",
+   "text": "Jim White begins exploring the cave with a homemade wire ladder."
+  },
+  {
+   "year": "1923",
+   "text": "President Coolidge proclaims Carlsbad Cave National Monument."
+  },
+  {
+   "year": "1930",
+   "text": "Congress establishes Carlsbad Caverns National Park."
+  },
+  {
+   "year": "1932",
+   "text": "Elevators open to carry visitors in and out of the cavern."
+  },
+  {
+   "year": "1995",
+   "text": "The park is inscribed as a World Heritage Site."
+  }
+ ],
+ "safety": [
+  "The natural entrance trail is steep. Wear shoes with good grip, and allow time for the climb back if you walk out.",
+  "The cave is cool and damp all year; bring a layer."
+ ],
+ "regulations": [
+  "Do not touch cave formations; skin oils stop them growing.",
+  "Electronic devices, including cameras and phones, may not be used during the bat flight.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Carlsbad Caverns National Park — National Park Service",
+   "url": "https://www.nps.gov/cave/"
+  }
+ ],
+ "contentVersion": 2
+}

@@ -51,9 +51,15 @@ scripts/bootstrap.sh   # check the toolchain, resolve packages
 scripts/test.sh        # swift test on UnigridsKit  (the fast loop — use this)
 scripts/build.sh       # xcodebuild for iOS Simulator and macOS
 scripts/lint.sh        # swiftformat --lint + swiftlint + ruff on the pipeline
+scripts/write-secrets.sh   # App/Unigrids/Secrets.plist from .env, for live alerts (optional)
+
+# Rebuild the bundled reference data from Pipeline/raw (add --refresh to re-fetch)
+cd Pipeline && PYTHONPATH=src uv run python -m unigrids_pipeline reference --skip-fetch
 ```
 
-The fast loop is `cd Packages/UnigridsKit && swift test`. Run `scripts/build.sh` before
+The fast loop is `cd Packages/UnigridsKit && swift test` — or `scripts/test.sh`, which
+builds outside the repository and is the one that works in an iCloud-synced checkout,
+where `codesign` refuses the in-tree build's resource bundles. Run `scripts/build.sh` before
 you claim an app-level change works — the package compiling is not the same as the app
 building for both platforms.
 
@@ -137,25 +143,40 @@ These come from the specification's principles. Breaking one is not a judgement 
 
 ### Secrets
 
-The NPS API key is **not** in the repository. It is read from the build environment and
-surfaced to the app through a generated Info.plist value; `Secrets.xcconfig` is
-gitignored. The specification notes (§12) that a key built into a shipped app can be
-extracted and shares one rate limit — acceptable while this is private, revisit before
-any public release. Never paste a key into source, a test fixture or a commit message.
+The NPS API key is **not** in the repository. It lives in `.env` at the repository root
+(`NPS_API_KEY=…`, gitignored), where two things read it:
+
+- the pipeline (`unigrids_pipeline reference`), which sends it as an `X-Api-Key` header
+  and never writes it into `raw/` or the bundled data;
+- `scripts/write-secrets.sh`, which writes it into `App/Unigrids/Secrets.plist`
+  (gitignored, key `NPSAPIKey`) for the app's live park alerts. Without that file the app
+  builds and runs normally and the alerts panel does not appear; `--remove` deletes it.
+
+The specification notes (§12) that a key built into a shipped app can be extracted and
+shares one rate limit — acceptable while this is private, revisit before any public
+release. Never print a key, and never paste one into source, a test fixture or a commit
+message.
 
 ## 6. Design language
 
-Two visual modes, and they do not mix (§14):
+One identity on every screen, laid over native structure (§14,
+[ADR 0007](docs/adr/0007-one-identity-across-every-screen.md)):
 
-- **Unigrid** — park guides only. Black title band, park name reversed out in white, a
-  grid derived from the brochure panel module (1 column on iPhone, 2–3 on iPad, 3–4 on
-  Mac), neo-grotesque sans for headings and data, a serif for longer passages.
-- **Native** — map, trips, passport, stats and settings use the current Apple design so
-  the app feels at home on each device.
+- **Structure is Apple's** — tab bar or sidebar, navigation stacks, lists, forms, search,
+  inspector and sheets behave exactly as the platform's do.
+- **Surface is the brochure's** — a black band opens every screen, sections open with a
+  ruled caps head, figures are set large over caps labels, buttons and markers are square,
+  Helvetica Neue for headings and data and a serif for prose. Use the components in
+  `UnigridsDesign/Identity.swift` rather than stock rows and capsule buttons.
+- **A place's tier is a shape and its agency an ink**, wherever it appears (square,
+  small square, circle, diamond; filled for visited, dashed for planned).
+- **Park guides** keep the Unigrid grid derived from the brochure panel module (1 column
+  on iPhone, 2–3 on iPad, 3–4 on Mac).
 
 Accessibility is not optional: guides reflow with Dynamic Type and the grid **collapses
 to fewer columns rather than shrinking text**. Every pin, panel and chart carries a
-VoiceOver label. Check contrast in both light and dark.
+VoiceOver label. Check contrast in both light and dark. `docs/design-system.md` has the
+detail.
 
 ## 7. Platform targets
 

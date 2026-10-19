@@ -1,0 +1,105 @@
+{
+ "placeID": "np-wind-cave",
+ "contentVersion": 2,
+ "story": [
+  "Wind Cave is named for the air that rushes in and out of its natural entrance as the pressure outside changes. More than 168 miles of passages have been mapped, packed into a small area beneath the park; it is one of the densest cave systems known. Its walls are lined with boxwork — thin blades of calcite in a honeycomb pattern — and about 95 percent of all the boxwork known in the world is found here.",
+  "The Lakota know the cave as a sacred place, where the people first emerged onto the surface of the earth. The Black Hills were guaranteed to the Lakota by the Fort Laramie treaties, then taken from them after gold was found in 1874.",
+  "Two brothers, Tom and Jesse Bingham, heard wind whistling from a small hole in 1881. A few years later the McDonald family began exploring and developing the cave for tourism; Alvin McDonald, a teenager, kept a diary of his explorations. On January 9, 1903, President Theodore Roosevelt signed the bill making Wind Cave a national park, the first created to protect a cave.",
+  "Above ground, the park protects one of the last remnants of intact mixed-grass prairie. Its bison herd is one of the few genetically pure, free-roaming herds left on public land, and pronghorn, elk and prairie dogs share the grassland with it."
+ ],
+ "sightNotes": {
+  "poi-wind-cave-rankin-ridge": "A short loop to a fire tower at one of the highest points in the park, with views over the Black Hills and plains.",
+  "poi-wind-cave-prairie-vista-nature-trail": "An easy walk from the visitor center onto the prairie.",
+  "poi-wind-cave-elk-mountain-nature-trail": "A loop from the campground where prairie meets ponderosa pine forest.",
+  "poi-wind-cave-wind-cave-canyon": "An easy walk down a limestone canyon, good for birds such as cliff swallows and owls.",
+  "poi-wind-cave-cold-brook-canyon": "A trail down a canyon to the prairie and a prairie dog town.",
+  "poi-wind-cave-centennial-trail": "The southern end of a long trail through the Black Hills, crossing bison country."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "US 385, about 11 miles north of Hot Springs or 22 miles south of Custer",
+   "SD 87 enters from the north, from Custer State Park"
+  ],
+  "reservations": "The cave can be seen only on ranger-guided tours. Some tickets can be reserved ahead; the rest are sold at the visitor center, first come, first served.",
+  "permits": [
+   "Backcountry camping — a free permit"
+  ],
+  "lodging": [
+   "Elk Mountain Campground, in the park",
+   "Hot Springs and Custer have places to stay"
+  ],
+  "seasonalClosures": [
+   "Tour schedules change with the seasons",
+   "Winter snow can close park roads for short periods"
+  ],
+  "camping": [
+   "Elk Mountain Campground, reservable, with some first-come sites"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1881",
+   "text": "Tom and Jesse Bingham hear wind rushing from the cave's entrance."
+  },
+  {
+   "year": "1892",
+   "text": "The cave opens to paying visitors."
+  },
+  {
+   "year": "1903",
+   "text": "Wind Cave becomes the first national park created to protect a cave."
+  }
+ ],
+ "safety": [
+  "Bison are dangerous. Stay at least 25 yards away, and watch for them on trails.",
+  "The cave stays about 54°F all year. Bring a layer, and wear shoes with good grip.",
+  "Prairie rattlesnakes are common in warm months."
+ ],
+ "regulations": [
+  "Touching cave formations is prohibited.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Wind Cave National Park — National Park Service",
+   "url": "https://www.nps.gov/wica/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS Photo",
+  "isPublicDomain": true,
+  "assetName": "np-wind-cave-1.jpg",
+  "caption": "Boxwork in the Elk's Room",
+  "altText": "Thin fins of calcite forming box-shaped openings, called boxwork, on a cave ceiling."
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / Dan Roddy",
+   "isPublicDomain": true,
+   "assetName": "np-wind-cave-2.jpg",
+   "caption": "Bison cow and calf",
+   "altText": "a bison cow and calf on the prairie"
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-wind-cave-3.jpg",
+   "caption": "Boxwork",
+   "altText": "criss-cross-patterned calcite fins of the cave feature boxwork"
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-wind-cave-4.jpg",
+   "caption": "Rankin Ridge view",
+   "altText": "rolling hills of forest and prairie landscape"
+  }
+ ],
+ "operatingHours": "The park is open all day, every day. Snow or severe weather can limit access to some areas of the park, especially in winter. Visitor Center hours and cave tour schedules vary throughout the year. Visit the park website or call 605.745.4600 for current conditions.",
+ "weather": "Spring: Highs range from 50-70°F with highly variable weather. Spring is the park's wettest season. Summer: Hot and generally dry with daytime temperatures regularly exceeding 80°F (27°C). Strong thunderstorms are common and can produce large hail and lightning. Fall: Generally dry with warm days and cool nights. Highs 50-60°F. Lows below freezing are common. Winter: Highs are in the high 30s with lows around 10°F. Snowfall averages 30 inches annually, periodically closing park roads.",
+ "directions": "Wind Cave National Park is located in South Dakota about 11 miles north of Hot Springs, or about 22 miles south of Custer, on US Highway 385. The park Visitor Center, where all cave tours begin, is approximately 1/2 mile west of the highway."
+}

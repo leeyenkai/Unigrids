@@ -1,0 +1,109 @@
+{
+ "placeID": "np-lassen-volcanic",
+ "summary": "The southernmost volcano of the Cascades, Lassen Peak, which erupted from 1914 to 1917 — and around it every type of volcano there is, with boiling mud pots, steaming vents and meadows of wildflowers that bloom late under deep snow.",
+ "facts": {
+  "highestElevationMetres": 3187,
+  "bestSeasons": [
+   "summer",
+   "autumn"
+  ],
+  "suggestedTime": "One to two days"
+ },
+ "story": [
+  "Lassen Peak, 10,457 feet high, is the largest plug dome volcano in the world, a mass of stiff lava that squeezed up on the flank of an older, larger volcano now eroded away. The park is one of the few places where all four main types of volcano stand together: plug dome, shield, cinder cone and stratovolcano. Their heat comes from the Gorda plate sliding beneath North America off the California coast.",
+  "In May 1914 Lassen Peak began to erupt, and steam blasts, lava and mudflows continued into 1917. A great eruption in May 1915 sent an ash cloud miles into the sky and a mudflow and blast down the northeast flank, flattening the forest in what is still called the Devastated Area. A local photographer, Benjamin Loomis, documented it; his photographs are in the museum that bears his name.",
+  "The heat is still close to the surface. At Bumpass Hell, Sulphur Works and Devils Kitchen, mud pots bubble, fumaroles roar and hot springs steam. Cinder Cone, in the park's northeast, last erupted in the 1660s. Snow buries the high country for much of the year, and the main road often opens only in early summer.",
+  "The Atsugewi, Yana, Yahi and Maidu peoples lived around the mountain long before emigrants used it as a landmark on the way to the Sacramento Valley. Lassen Peak and Cinder Cone became national monuments in 1907, and the eruptions helped persuade Congress to create Lassen Volcanic National Park in 1916."
+ ],
+ "sights": [
+  {
+   "name": "Lassen Peak",
+   "match": "Lassen Peak Scenic Vista",
+   "note": "The volcano's summit trail climbs about 2,000 feet to views across northern California."
+  },
+  {
+   "name": "Bumpass Hell",
+   "note": "The park's largest hydrothermal area, a boardwalk among boiling pools and fumaroles.",
+   "location": [
+    40.4573,
+    -121.5009
+   ]
+  },
+  {
+   "name": "Sulphur Works",
+   "note": "Roadside mud pots and steam vents in the eroded heart of the old volcano."
+  },
+  {
+   "name": "Devastated Area",
+   "note": "The path of the 1915 blast and mudflow, with boulders carried down from the peak."
+  },
+  {
+   "name": "Manzanita Lake",
+   "match": "Manzanita Lake Area",
+   "note": "A lake reflecting Lassen Peak, with a loop trail and the Loomis Museum."
+  },
+  {
+   "name": "Cinder Cone",
+   "match": "Cinder Cone Trail",
+   "note": "A symmetrical cone above the Painted Dunes and Fantastic Lava Beds, climbed on a steep trail."
+  },
+  {
+   "name": "Lake Helen",
+   "note": "A deep blue lake beneath Lassen Peak, often ringed with snow into summer."
+  },
+  {
+   "name": "Kings Creek Meadow",
+   "match": "Kings Creek Meadow Viewpoint",
+   "note": "A high meadow of wildflowers on the park highway."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Southwest Entrance, from CA 36 near Mineral",
+   "Northwest Entrance at Manzanita Lake, from CA 44 and CA 89",
+   "Butte Lake, Juniper Lake and Warner Valley, on separate roads into the park's quieter corners"
+  ],
+  "permits": [
+   "Wilderness camping — a free permit"
+  ],
+  "seasonalClosures": [
+   "The highway through the park closes with snow and often does not fully reopen until June or July"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1666",
+   "text": "Cinder Cone erupts, by tree-ring dating."
+  },
+  {
+   "year": "1907",
+   "text": "Lassen Peak and Cinder Cone become national monuments."
+  },
+  {
+   "year": "1914",
+   "text": "Lassen Peak begins a series of eruptions."
+  },
+  {
+   "year": "1915",
+   "text": "A major eruption devastates the peak's northeast flank."
+  },
+  {
+   "year": "1916",
+   "text": "Lassen Volcanic National Park is established."
+  }
+ ],
+ "safety": [
+  "In hydrothermal areas, stay on boardwalks and trails. The ground can be a thin crust over boiling water.",
+  "The Lassen Peak trail is high and exposed; turn back if storms build."
+ ],
+ "regulations": [
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Lassen Volcanic National Park — National Park Service",
+   "url": "https://www.nps.gov/lavo/"
+  }
+ ],
+ "contentVersion": 2
+}

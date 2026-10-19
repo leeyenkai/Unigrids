@@ -1,0 +1,119 @@
+{
+ "placeID": "np-dry-tortugas",
+ "contentVersion": 2,
+ "story": [
+  "The Dry Tortugas are the westernmost and most isolated of the Florida Keys: low islands of coral sand at the edge of the Gulf of Mexico, almost all of the park's hundred square miles open water. Juan Ponce de León named them in 1513 for the sea turtles his crew caught, and sailors added Dry for the lack of fresh water.",
+  "On Garden Key stands Fort Jefferson, begun in the 1840s to guard the shipping lane through the Florida Straits and never finished. It is the largest brick masonry structure in the Western Hemisphere, built of more than sixteen million bricks. During and after the Civil War it held prisoners, among them Dr. Samuel Mudd, convicted for his part in the Lincoln assassination conspiracy.",
+  "The reefs here have shipwrecked vessels for centuries and are among the healthiest in Florida. Sea turtles nest on the beaches, and every spring and summer tens of thousands of sooty terns and brown noddies nest on Bush Key; migrating songbirds stop over on their way across the Gulf. John James Audubon came to see the birds in 1832.",
+  "The fort became a national monument in 1935, and the monument a national park in 1992. Part of the park is a research natural area where nothing may be taken, so the reefs can be studied as they would be without fishing."
+ ],
+ "sightNotes": {
+  "poi-dry-tortugas-fort-jefferson": "A six-sided brick fortress with a moat, filling most of Garden Key; walk the casemates and the top of the walls.",
+  "poi-dry-tortugas-dr-mudds-cell": "Where Samuel Mudd was held after the Lincoln assassination trial.",
+  "poi-dry-tortugas-garden-key": "Beaches and snorkelling along the fort's moat wall, where coral and fish gather.",
+  "poi-dry-tortugas-loggerhead-key": "The largest island, with a tall lighthouse and a reef offshore, reached by private boat or kayak.",
+  "poi-dry-tortugas-windjammer-wreck": "The remains of an iron-hulled sailing ship on Loggerhead Reef, a dive site.",
+  "poi-dry-tortugas-little-africa-patch-reef": "A patch reef off Loggerhead Key, good snorkelling in calm conditions."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "By the park's concession ferry from Key West, by seaplane, or by private or chartered boat"
+  ],
+  "reservations": "Ferry and seaplane seats and the small Garden Key campground fill early. Book well ahead.",
+  "permits": [
+   "Private boaters — a boater permit"
+  ],
+  "lodging": [
+   "No lodging; camping on Garden Key only, with everything brought in, including water"
+  ],
+  "seasonalClosures": [
+   "Bush Key closes to visitors while the terns nest; winter fronts bring rough seas, and June to November is hurricane season"
+  ],
+  "camping": [
+   "Garden Key Campground, first come, first served"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1513",
+   "text": "Juan Ponce de León names the islands for their sea turtles."
+  },
+  {
+   "year": "1825",
+   "text": "Work begins on a lighthouse on Garden Key."
+  },
+  {
+   "year": "1832",
+   "text": "John James Audubon visits to study the nesting birds."
+  },
+  {
+   "year": "1846",
+   "text": "Construction of Fort Jefferson begins."
+  },
+  {
+   "year": "1935",
+   "text": "Fort Jefferson National Monument is proclaimed."
+  },
+  {
+   "year": "1992",
+   "text": "The monument becomes Dry Tortugas National Park."
+  }
+ ],
+ "safety": [
+  "There is no fresh water, food or shelter for sale. Bring water, sun protection and everything else you need.",
+  "Currents can be strong off the islands. Snorkel with a partner and stay near the beach and moat wall."
+ ],
+ "regulations": [
+  "Coral, shells and artifacts may not be taken; in the Research Natural Area nothing may be taken at all.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Dry Tortugas National Park — National Park Service",
+   "url": "https://www.nps.gov/drto/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "The entrance fee for Dry Tortugas National Park is $15.00 per person and is good for 7 consecutive days. Any person 15 years old and under is exempt from paying an entrance fees (including international visitors). Ferry tickets include the cost of entrance to the park, but NOT camping fees. Seaplane will charge the entrance fee upon arrival. Plan to bring cash for each person aged 16-years of age and older. Private boaters may purchase a digital pass in advance or pay cash/check at Garden Key main dock."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo / Brett Seymour",
+  "isPublicDomain": true,
+  "assetName": "np-dry-tortugas-1.jpg",
+  "caption": "Night sky at the Dry Tortugas",
+  "altText": "A few of the stars at night with a view of Fort Jefferson."
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / Brandon Cintron Gerena",
+   "isPublicDomain": true,
+   "assetName": "np-dry-tortugas-2.jpg",
+   "caption": "Scorpions at night inside Fort Jefferson",
+   "altText": "Macro photography of a Scorpion"
+  },
+  {
+   "credit": "NPS Photo / Brandon Cintron Gerena",
+   "isPublicDomain": true,
+   "assetName": "np-dry-tortugas-3.jpg",
+   "caption": "Loggerhead Key",
+   "altText": "A photo in front of Loggerhead Key from a boat"
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-dry-tortugas-4.jpg",
+   "caption": "Diving at the Dry Tortugas",
+   "altText": "Two divers dive the Windjammer Wreck"
+  }
+ ],
+ "operatingHours": "The Dry Tortugas is open 24 hours, 7 days a week. This includes holidays.",
+ "weather": "The climate in the Dry Tortugas is subtropical, which basically means that it has warm and tropical weather in the range of 60°F to 90°F. The two main seasons are the winter stormy season from December through March which is windier and sees rougher seas, and the summertime tropical storm season from June through November where there is a higher chance of isolated storms. During the summers it is hot and humid. During the winter the temperature is milder and drier.",
+ "directions": "Dry Tortugas National Park is one of the most remote parks in the National Park System. Located approximately 70 miles west of Key West it is accessible only by a daily concession ferry, private boats, charter boats, or seaplane."
+}

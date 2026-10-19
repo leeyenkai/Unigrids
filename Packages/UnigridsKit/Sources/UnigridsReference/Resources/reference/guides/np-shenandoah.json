@@ -1,0 +1,141 @@
+{
+ "placeID": "np-shenandoah",
+ "contentVersion": 2,
+ "story": [
+  "Shenandoah follows the Blue Ridge for 105 miles, with the Shenandoah Valley to the west and the rolling Piedmont to the east. Skyline Drive runs the whole length along the crest, with more than seventy overlooks, and the Appalachian Trail runs close beside it. Almost two-fifths of the park is designated wilderness.",
+  "The rocks are very old: granite more than a billion years old, and greenstone from lava flows that spread here about 570 million years ago. Forests of oak and hickory have grown back over land that was farmed and grazed, and today shelter deer, wild turkeys and a thriving population of black bears.",
+  "Families had lived in the hollows for generations. When Congress authorised the park in 1926, it required the land to be bought without federal money, so Virginia raised funds, then condemned what owners would not sell. Hundreds of people were moved out, some forcibly, in the 1930s, and the ruins of their homesteads and cemeteries still lie along the trails.",
+  "The park was established on December 26, 1935, and President Franklin D. Roosevelt dedicated it in 1936. The Civilian Conservation Corps built much of its stonework and trails. Its facilities were first segregated, with a separate area at Lewis Mountain for Black visitors; they were integrated after the Second World War."
+ ],
+ "sightNotes": {
+  "poi-shenandoah-old-rag-mountain": "The park's most famous hike, a long loop with a rock scramble along the summit ridge. A day-use ticket is required for much of the year.",
+  "poi-shenandoah-dark-hollow-falls": "A short, steep trail down to a 70-foot cascade, near Big Meadows.",
+  "poi-shenandoah-hawksbill-summit": "The park's highest point, with a stone observation platform.",
+  "poi-shenandoah-stony-man": "An easy walk from Skyland to cliffs with wide views over the Shenandoah Valley.",
+  "poi-shenandoah-whiteoak-canyon": "A canyon of waterfalls; the upper falls are a moderate hike, the lower ones a steep climb.",
+  "poi-shenandoah-big-meadows": "A wide meadow on the crest, good for deer, wildflowers and dark skies, with the Byrd Visitor Center beside it.",
+  "poi-shenandoah-bearfence-mountain": "A short rock scramble to a 360-degree view.",
+  "poi-shenandoah-rapidan-camp": "President Herbert Hoover's restored 1929 fishing retreat, reached by trail or on ranger-led van tours.",
+  "poi-shenandoah-marys-rock-tunnel": "Skyline Drive's tunnel through solid rock, just south of Thornton Gap."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Front Royal (north), from I-66 and US 340",
+   "Thornton Gap, on US 211 near Luray",
+   "Swift Run Gap, on US 33",
+   "Rockfish Gap (south), from I-64; the Blue Ridge Parkway continues south from here"
+  ],
+  "reservations": "For much of the year, Old Rag Mountain needs a day-use ticket from Recreation.gov. Skyland, Big Meadows Lodge and Lewis Mountain Cabins should be reserved ahead; they close in winter.",
+  "permits": [
+   "Backcountry camping — a free permit"
+  ],
+  "lodging": [
+   "Skyland, Big Meadows Lodge and Lewis Mountain Cabins, open spring to late autumn"
+  ],
+  "seasonalClosures": [
+   "Skyline Drive can close at short notice for snow, ice or fog, especially in winter",
+   "October weekends, at the height of autumn colour, are very crowded"
+  ],
+  "camping": [
+   "Big Meadows Campground, reservable",
+   "Lewis Mountain Campground, first come, first served",
+   "Loft Mountain Campground, reservable, with some first-come sites",
+   "Mathews Arm Campground, reservable, with some first-come sites"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1926",
+   "text": "Congress authorises Shenandoah National Park, on condition that no federal money is used to buy the land."
+  },
+  {
+   "year": "1929",
+   "text": "President Herbert Hoover builds Rapidan Camp."
+  },
+  {
+   "year": "1935",
+   "text": "Shenandoah National Park is established."
+  },
+  {
+   "year": "1936",
+   "text": "President Franklin D. Roosevelt dedicates the park."
+  },
+  {
+   "year": "1950",
+   "text": "The park's facilities are fully desegregated."
+  }
+ ],
+ "safety": [
+  "Bears are common. Store food properly, and never approach or feed one.",
+  "Watch for deer and bears crossing Skyline Drive; the speed limit is 35 mph.",
+  "Rock scrambles such as Old Rag take far longer than their distance suggests. Start early and carry plenty of water."
+ ],
+ "regulations": [
+  "Dogs are welcome on most trails but are not allowed on about ten, including Old Rag, Dark Hollow Falls and Stony Man.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Shenandoah National Park — National Park Service",
+   "url": "https://www.nps.gov/shen/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "Unlimited entry for one vehicle and all passengers for seven consecutive days, beginning on the day of purchase. Admits the pass holder and occupants of a single, private non-commercial vehicle."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Entry for walk-up or bicycling visitors, when 16 years of age or older (children under 16 are admitted for free). Includes entering the Park by all means other than a private, non-commercial vehicle. A family traveling together shall pay no more than the vehicle fee."
+  },
+  {
+   "title": "Education/academic groups",
+   "cost": "Free",
+   "detail": "National Park Service regulations allow school groups and other approved national and international academic institutions to obtain a waiver of Park entrance fees, provided that visit is for educational or scientific purposes, and the resources or facilities that the group intends to use, support those purposes. Request an academic fee waiver through the education section of our website."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo / Neal Lewis",
+  "isPublicDomain": true,
+  "assetName": "np-shenandoah-1.jpg",
+  "caption": "Animal Crossing",
+  "altText": "White-tailed bucks sparring in Big Meadows"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / Neal Lewis",
+   "isPublicDomain": true,
+   "assetName": "np-shenandoah-2.jpg",
+   "caption": "Adventure Awaits",
+   "altText": "Visitors stand on a rocky outcrop overlooking the receding mountains."
+  },
+  {
+   "credit": "NPS Photo | B. Raeburn",
+   "isPublicDomain": true,
+   "assetName": "np-shenandoah-3.jpg",
+   "caption": "Recreate Responsibly",
+   "altText": "American Black Bear crossing Skyline Drive"
+  },
+  {
+   "credit": "NPS Photo / Katy Cain",
+   "isPublicDomain": true,
+   "assetName": "np-shenandoah-4.jpg",
+   "caption": "Find Yourself in Nature",
+   "altText": "Looking up at a poplar stand canopy, which is turning yellow in fall."
+  }
+ ],
+ "operatingHours": "Shenandoah National Park is always open. However, portions of Skyline Drive, the only public road through the Park, are periodically closed during inclement weather. Visitors can still enter the Park on foot to hike, even when the Skyline Drive is closed. Campgrounds, services, and facilities have separate hours; please see descriptions of those facilities elsewhere on our website.",
+ "weather": "Shenandoah National Park has four very distinct seasons. Spring typically brings mild temperatures, rain, and wildflowers. Summer brings lush green forests, but can be hot and very humid. Fall follows with cooler temperatures and spectacular fall foliage. Winter can bring snow and ice. The park spans roughly 100 miles, which means that weather can vary greatly depending on your location. The mountain is usually 10°F cooler than the valley below. Always check the forecast, dress in layers, and be prepared.",
+ "directions": "Shenandoah National Park is located in the Blue Ridge Mountains of Virginia, west of Washington, D.C. It stretches 105 miles and has four entrances: Front Royal (northern entrance), Thornton Gap, Swift Run Gap, and Rockfish Gap (southern entrance to Shenandoah and the northern entrance to the Blue Ridge Parkway). The physical address listed is to the administrative offices, not the Park itself. GPS can be unreliable for navigating to the Park, so we encourage you to check out our website for more info."
+}

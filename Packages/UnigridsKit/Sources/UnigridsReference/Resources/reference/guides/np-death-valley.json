@@ -1,0 +1,145 @@
+{
+ "placeID": "np-death-valley",
+ "contentVersion": 2,
+ "story": [
+  "Death Valley is a trough between mountain ranges, pulled apart along faults as the Panamint Range rises on one side and the valley floor drops on the other. Badwater Basin, at 282 feet below sea level, is the lowest point in North America; Telescope Peak, more than eleven thousand feet high, stands a few miles away. In the ice ages the valley held a lake, and its evaporation left the salt pan that covers the floor today.",
+  "The mountains wring the moisture out of Pacific storms before they arrive, and the valley floor averages under two inches of rain a year. Summer heat is extreme: on July 10, 1913, Furnace Creek recorded 134°F, the highest air temperature ever measured on Earth. Life persists all the same. Pupfish survive in its springs, including the endangered Devils Hole pupfish in a single limestone pool, and after a wet winter the desert can flower in a superbloom.",
+  "The Timbisha Shoshone have lived here for over a thousand years, and part of the valley is still their homeland. Emigrants trying a shortcut to the California goldfields in 1849 were trapped here for weeks, and gave the valley its name as they left it.",
+  "Borax made the valley famous: from 1883 to 1889, twenty-mule teams hauled wagons of it 165 miles to the railroad at Mojave. President Hoover proclaimed a national monument in 1933, and the California Desert Protection Act of 1994 enlarged it into a national park."
+ ],
+ "sightNotes": {
+  "poi-death-valley-badwater-basin": "Salt flats at 282 feet below sea level, the lowest point in North America.",
+  "poi-death-valley-zabriskie-point": "Golden badlands of eroded lake sediments, a classic sunrise view.",
+  "poi-death-valley-dantes-view": "A mile above Badwater, with the whole valley floor laid out below.",
+  "poi-death-valley-mesquite-flat-sand-dunes": "The park's most accessible dunes, near Stovepipe Wells.",
+  "poi-death-valley-artists-palette": "Hillsides coloured green, pink and purple by oxidised minerals, on a one-way scenic drive.",
+  "poi-death-valley-golden-canyon": "A walk into eroded badlands toward Red Cathedral.",
+  "poi-death-valley-ubehebe-crater": "A volcanic crater half a mile across, blasted out by steam explosions.",
+  "poi-death-valley-mosaic-canyon": "A narrow canyon of polished marble and mosaic-like breccia.",
+  "poi-death-valley-harmony-borax-works": "Ruins of the borax works that sent the twenty-mule teams across the desert.",
+  "poi-death-valley-telescope-peak": "The park's highest summit, a long hike from Mahogany Flat with views to Mount Whitney."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "CA 190 from the west via Panamint Springs, and from the east via Death Valley Junction",
+   "NV 374 from Beatty, Nevada",
+   "CA 178 from Shoshone, in the south"
+  ],
+  "lodging": [
+   "The Inn and The Ranch at Death Valley in Furnace Creek, Stovepipe Wells Village, and Panamint Springs"
+  ],
+  "seasonalClosures": [
+   "From May to September the valley floor is dangerously hot; flash floods have closed park roads, sometimes for months"
+  ],
+  "camping": [
+   "Emigrant Campground, first come, first served",
+   "Eureka Dunes Campground (Primitive), first come, first served",
+   "Furnace Creek Campground, reservable",
+   "Homestake Campground (Primitive), first come, first served",
+   "Mahogany Flat Campground (Primitive), first come, first served",
+   "Mesquite Spring Campground, first come, first served",
+   "Saline Valley Campground (Primitive), first come, first served",
+   "Stovepipe Wells Campground, first come, first served",
+   "Sunset Campground, first come, first served",
+   "Texas Springs Campground, first come, first served",
+   "Thorndike Campground (Primitive), first come, first served",
+   "Wildrose Campground, first come, first served"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1849",
+   "text": "Stranded emigrants bound for the goldfields give Death Valley its name."
+  },
+  {
+   "year": "1883",
+   "text": "Twenty-mule teams begin hauling borax out of the valley."
+  },
+  {
+   "year": "1913",
+   "text": "Furnace Creek records 134°F, the hottest air temperature ever measured."
+  },
+  {
+   "year": "1933",
+   "text": "President Hoover proclaims Death Valley National Monument."
+  },
+  {
+   "year": "1994",
+   "text": "The California Desert Protection Act makes it a national park."
+  }
+ ],
+ "safety": [
+  "In hot months, do not hike at low elevations after 10 a.m. Carry at least a gallon of water a person a day, and more if you hike.",
+  "If your car breaks down, stay with it. Cell service is rare and distances are great.",
+  "Stay out of abandoned mines; shafts can be unmarked and unstable."
+ ],
+ "regulations": [
+  "Driving off established roads is prohibited.",
+  "Leave rocks where they are, including those on the Racetrack playa.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Death Valley National Park — National Park Service",
+   "url": "https://www.nps.gov/deva/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "All visitors, including Non-US residents, may purchase and utilize this entrance fee. Purchasing this entrance fee allows all persons traveling in one single private, non-commercial vehicle (car/truck/van/RV/aircraft) to leave and re-enter the park as many times as they wish during the 7-day period from the date of purchase."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "All visitors, including Non-US residents, may purchase and utilize this entrance fee. Purchasing this entrance fee allows all persons traveling on 2 private, non-commercial motorcycles to leave and re-enter the park as many times as they wish during the 7-day period from the date of purchase."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "All visitors, including Non-US residents, may purchase and utilize this entrance fee. Purchasing this entrance fee allows a single individual traveling on foot or individuals traveling on one bicycle to leave and re-enter the park as many times as they wish during the 7-day period from the date of purchase."
+  },
+  {
+   "title": "Education/academic groups",
+   "cost": "Free",
+   "detail": "National Park Service regulations allow school groups and other approved national and international academic institutions to obtain a waiver of Park entrance fees, provided that visit is for educational or scientific purposes, and the resources or facilities that the group intends to use, support those purposes. Submit your waiver through the link below at least one month prior to your visit."
+  }
+ ],
+ "hero": {
+  "credit": "NPS",
+  "isPublicDomain": true,
+  "assetName": "np-death-valley-1.jpg",
+  "caption": "Mesquite Flat Sand Dunes",
+  "altText": "Low, warm light skims across pale sand dunes."
+ },
+ "gallery": [
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-death-valley-2.jpg",
+   "caption": "Salt Creek",
+   "altText": "In the foreground, a narrow stream curves through clumps of green grass and low shrubs."
+  },
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-death-valley-3.jpg",
+   "caption": "Natural Bridge",
+   "altText": "A natural rock arch spans a narrow desert canyon. The viewer stands in deep shade beneath the arch."
+  },
+  {
+   "credit": "NPS photo",
+   "isPublicDomain": true,
+   "assetName": "np-death-valley-4.jpg",
+   "caption": "Storm over the Salt Flats",
+   "altText": "white salt flats with dark gray clouds"
+  }
+ ],
+ "operatingHours": "The park is open daily all year.",
+ "weather": "SPRING is the most popular time to visit Death Valley. Warm and sunny days with the possibility of spring wildflowers is a big attraction. SUMMER starts early in Death Valley. By May the valley can be scorching hot. AUTUMN arrives in late October, with warm but pleasant temperatures and generally clear skies. WINTER has cool days, chilly nights and rarely, rainstorms. With snow capping the high peaks and low angled winter light, this season is especially beautiful for exploring the valley.",
+ "directions": "There are multiple entrances to the park. Click below to learn the best ways to travel to Death Valley."
+}

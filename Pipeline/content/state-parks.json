@@ -1,0 +1,1221 @@
+{
+ "_about": "State parks the map carries (tier 3, SPECIFICATION.md §5). A curated set of well-known parks across every region, not a census. 'padus' lists the PAD-US unit names (SQL LIKE patterns) the outline is assembled from; 'summary' is written for Unigrids from the park's published record and checked against the linked article.",
+ "sites": [
+  {
+   "id": "sp-anza-borrego-desert",
+   "name": "Anza-Borrego Desert",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "CA"
+   ],
+   "padus": [
+    "Anza-Borrego Desert State Park"
+   ],
+   "wikipedia": "Anza-Borrego Desert State Park",
+   "summary": "California's largest state park: badlands, palm oases, slot canyons and wildflower springs in the Colorado Desert east of San Diego. Named for the explorer Juan Bautista de Anza and the borrego, the desert bighorn sheep.",
+   "themes": []
+  },
+  {
+   "id": "sp-big-basin-redwoods",
+   "name": "Big Basin Redwoods",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "CA"
+   ],
+   "padus": [
+    "Big Basin Redwoods State Park"
+   ],
+   "wikipedia": "Big Basin Redwoods State Park",
+   "summary": "California's oldest state park, in the Santa Cruz Mountains — a bowl of old-growth coast redwoods draining down Waddell Creek to the sea. Much of the forest burned in 2020 and is regrowing.",
+   "themes": []
+  },
+  {
+   "id": "sp-julia-pfeiffer-burns",
+   "name": "Julia Pfeiffer Burns",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "CA"
+   ],
+   "padus": [
+    "Julia Pfeiffer Burns State Park"
+   ],
+   "wikipedia": "Julia Pfeiffer Burns State Park",
+   "summary": "A stretch of the Big Sur coast where McWay Falls drops 80 feet from a cliff onto a cove beach, with redwood canyons inland. Named for a pioneer rancher of Big Sur.",
+   "themes": []
+  },
+  {
+   "id": "sp-humboldt-redwoods",
+   "name": "Humboldt Redwoods",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "CA"
+   ],
+   "padus": [
+    "Humboldt Redwoods State Park"
+   ],
+   "wikipedia": "Humboldt Redwoods State Park",
+   "summary": "Home of Rockefeller Forest, the largest remaining old-growth coast redwood forest in the world, along the Eel River in northern California. The Avenue of the Giants runs through it.",
+   "themes": []
+  },
+  {
+   "id": "sp-point-lobos",
+   "name": "Point Lobos",
+   "designation": "State Natural Reserve",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "CA"
+   ],
+   "padus": [
+    "Point Lobos State Natural Reserve"
+   ],
+   "wikipedia": "Point Lobos State Natural Reserve",
+   "summary": "A granite headland south of Carmel where cypress groves, coves and tide pools meet one of the richest marine habitats in California. Sea otters, seals and, in season, grey whales are often seen offshore.",
+   "themes": []
+  },
+  {
+   "id": "sp-mount-tamalpais",
+   "name": "Mount Tamalpais",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "CA"
+   ],
+   "padus": [
+    "Mount Tamalpais State Park"
+   ],
+   "wikipedia": "Mount Tamalpais State Park",
+   "summary": "The 2,571-foot mountain rising above Marin County, with redwood canyons, oak woodland and views over San Francisco Bay from its summit. It surrounds Muir Woods National Monument.",
+   "themes": []
+  },
+  {
+   "id": "sp-emerald-bay",
+   "name": "Emerald Bay",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "CA"
+   ],
+   "padus": [
+    "Emerald Bay State Park"
+   ],
+   "wikipedia": "Emerald Bay State Park",
+   "summary": "One of Lake Tahoe's most photographed bays, with Fannette Island — the lake's only island — Eagle Falls, and Vikingsholm, a 38-room mansion in Scandinavian style on the shore.",
+   "themes": []
+  },
+  {
+   "id": "sp-valley-of-fire",
+   "name": "Valley of Fire",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "NV"
+   ],
+   "padus": [
+    "Valley of Fire State Park"
+   ],
+   "wikipedia": "Valley of Fire State Park",
+   "summary": "Nevada's oldest state park: red Aztec Sandstone that seems to burn in low sun, carved into arches, domes and narrow canyons, with petroglyphs left by ancient peoples. An hour northeast of Las Vegas.",
+   "themes": []
+  },
+  {
+   "id": "sp-dead-horse-point",
+   "name": "Dead Horse Point",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "UT"
+   ],
+   "padus": [
+    "Dead Horse Point State Park"
+   ],
+   "wikipedia": "Dead Horse Point State Park",
+   "summary": "A mesa-top overlook 2,000 feet above a gooseneck of the Colorado River, next to Canyonlands National Park near Moab. Known for sunrise views and dark night skies.",
+   "themes": []
+  },
+  {
+   "id": "sp-goblin-valley",
+   "name": "Goblin Valley",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "UT"
+   ],
+   "padus": [
+    "Goblin Valley State Park"
+   ],
+   "wikipedia": "Goblin Valley State Park",
+   "summary": "A basin of thousands of mushroom-shaped hoodoos — the goblins — in the San Rafael Desert of central Utah, free to wander among on foot.",
+   "themes": []
+  },
+  {
+   "id": "sp-snow-canyon",
+   "name": "Snow Canyon",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "UT"
+   ],
+   "padus": [
+    "Snow Canyon State Park"
+   ],
+   "wikipedia": "Snow Canyon State Park",
+   "summary": "A canyon of red and white Navajo Sandstone with lava flows, lava tubes and sand dunes, on the edge of St. George in southwestern Utah.",
+   "themes": []
+  },
+  {
+   "id": "sp-kodachrome-basin",
+   "name": "Kodachrome Basin",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "UT"
+   ],
+   "padus": [
+    "Kodachrome Basin State Park"
+   ],
+   "wikipedia": "Kodachrome Basin State Park",
+   "summary": "Colourful sandstone and nearly 70 tall stone spires, or sand pipes, near Bryce Canyon in southern Utah, named after Kodachrome film by a National Geographic expedition.",
+   "themes": []
+  },
+  {
+   "id": "sp-coral-pink-sand-dunes",
+   "name": "Coral Pink Sand Dunes",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "UT"
+   ],
+   "padus": [
+    "Coral Pink Sand Dunes State Park"
+   ],
+   "wikipedia": "Coral Pink Sand Dunes State Park",
+   "summary": "Shifting dunes of pink-orange sand below red cliffs in southern Utah, home to a beetle found nowhere else and popular for sandboarding and off-road driving.",
+   "themes": []
+  },
+  {
+   "id": "sp-antelope-island",
+   "name": "Antelope Island",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "UT"
+   ],
+   "padus": [
+    "Antelope Island State Park"
+   ],
+   "wikipedia": "Antelope Island State Park",
+   "summary": "The largest island in the Great Salt Lake, with bison, pronghorn and bighorn sheep, salt-flat beaches and huge flocks of migrating birds. Reached by a causeway from near Salt Lake City.",
+   "themes": []
+  },
+  {
+   "id": "sp-custer",
+   "name": "Custer",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "SD"
+   ],
+   "padus": [
+    "Custer State Park"
+   ],
+   "wikipedia": "Custer State Park",
+   "summary": "South Dakota's first and largest state park, in the Black Hills: prairie and granite peaks, a large free-roaming bison herd, and the Needles Highway and Wildlife Loop Road.",
+   "themes": []
+  },
+  {
+   "id": "sp-smith-rock",
+   "name": "Smith Rock",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "OR"
+   ],
+   "padus": [
+    "Smith Rock State Park"
+   ],
+   "wikipedia": "Smith Rock State Park",
+   "summary": "Cliffs of volcanic tuff and basalt above a bend of the Crooked River in central Oregon, considered the birthplace of American sport climbing.",
+   "themes": []
+  },
+  {
+   "id": "sp-silver-falls",
+   "name": "Silver Falls",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "OR"
+   ],
+   "padus": [
+    "Silver Falls State Park"
+   ],
+   "wikipedia": "Silver Falls State Park",
+   "summary": "Oregon's largest state park, where the Trail of Ten Falls follows Silver Creek's canyon past ten waterfalls — four of which you can walk behind.",
+   "themes": []
+  },
+  {
+   "id": "sp-deception-pass",
+   "name": "Deception Pass",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "WA"
+   ],
+   "padus": [
+    "Deception Pass"
+   ],
+   "wikipedia": "Deception Pass State Park",
+   "summary": "Forested islands, beaches and tidal currents around the narrow channel between Whidbey and Fidalgo Islands in Washington, spanned by the twin arches of the 1930s Deception Pass Bridge.",
+   "themes": []
+  },
+  {
+   "id": "sp-palouse-falls",
+   "name": "Palouse Falls",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "WA"
+   ],
+   "padus": [
+    "Palouse Falls"
+   ],
+   "wikipedia": "Palouse Falls State Park",
+   "summary": "A 200-foot waterfall plunging into a basalt canyon in southeast Washington's Channeled Scablands, carved by the ice-age Missoula Floods. Washington's official state waterfall.",
+   "themes": []
+  },
+  {
+   "id": "sp-chugach",
+   "name": "Chugach",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "AK"
+   ],
+   "padus": [
+    "Chugach State Park"
+   ],
+   "wikipedia": "Chugach State Park",
+   "summary": "Nearly half a million acres of mountains, glaciers and valleys right on the eastern edge of Anchorage, one of the largest state parks in the country.",
+   "themes": []
+  },
+  {
+   "id": "sp-denali",
+   "name": "Denali",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "AK"
+   ],
+   "padus": [
+    "Denali State Park"
+   ],
+   "wikipedia": "Denali State Park",
+   "summary": "Mountains and lakes along the Parks Highway east of Denali National Park, with some of the best views of Denali from the road on clear days.",
+   "themes": []
+  },
+  {
+   "id": "sp-kachemak-bay",
+   "name": "Kachemak Bay",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "AK"
+   ],
+   "padus": [
+    "Kachemak Bay State Park"
+   ],
+   "wikipedia": "Kachemak Bay State Park",
+   "summary": "Alaska's first state park: glaciers, mountains, fjords and coastline across the bay from Homer, reached only by boat or plane.",
+   "themes": []
+  },
+  {
+   "id": "sp-na-pali-coast",
+   "name": "Nā Pali Coast",
+   "designation": "State Wilderness Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "HI"
+   ],
+   "padus": [
+    "Na Pali Coast State Park"
+   ],
+   "wikipedia": "Nā Pali Coast State Wilderness Park",
+   "summary": "Sheer, fluted sea cliffs and hanging valleys along Kauaʻi's northwest shore, reached on foot only by the Kalalau Trail, or seen from boats and the air. The valleys were farmed by Hawaiians for centuries.",
+   "themes": []
+  },
+  {
+   "id": "sp-waimea-canyon",
+   "name": "Waimea Canyon",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "HI"
+   ],
+   "padus": [
+    "Waimea Canyon State Park"
+   ],
+   "wikipedia": "Waimea Canyon State Park",
+   "summary": "The \"Grand Canyon of the Pacific\": a canyon about ten miles long and up to 3,000 feet deep on Kauaʻi, cut into red volcanic rock by rivers fed from one of the wettest places on Earth.",
+   "themes": []
+  },
+  {
+   "id": "sp-kartchner-caverns",
+   "name": "Kartchner Caverns",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "AZ"
+   ],
+   "padus": [
+    "Kartchner Caverns State Park"
+   ],
+   "wikipedia": "Kartchner Caverns State Park",
+   "summary": "A living limestone cave in southern Arizona, discovered by two cavers in 1974 and kept secret for years to protect it. Seen only on guided tours.",
+   "themes": []
+  },
+  {
+   "id": "sp-slide-rock",
+   "name": "Slide Rock",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "AZ"
+   ],
+   "padus": [
+    "Slide Rock State Park"
+   ],
+   "wikipedia": "Slide Rock State Park",
+   "summary": "A natural water slide in the slippery bed of Oak Creek, among red rocks north of Sedona, Arizona, beside a historic apple farm.",
+   "themes": []
+  },
+  {
+   "id": "sp-roxborough",
+   "name": "Roxborough",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "CO"
+   ],
+   "padus": [
+    "Roxborough State Park"
+   ],
+   "wikipedia": "Roxborough State Park",
+   "summary": "Tilted slabs of red sandstone jutting from the foothills south of Denver — the same rock as Red Rocks and the Garden of the Gods. A National Natural Landmark.",
+   "themes": []
+  },
+  {
+   "id": "sp-eldorado-canyon",
+   "name": "Eldorado Canyon",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "CO"
+   ],
+   "padus": [
+    "Eldorado Canyon"
+   ],
+   "wikipedia": "Eldorado Canyon State Park",
+   "summary": "A narrow canyon of sheer sandstone walls south of Boulder, Colorado, and one of the country's best-known climbing areas. Timed entry is needed on summer weekends.",
+   "themes": []
+  },
+  {
+   "id": "sp-palo-duro-canyon",
+   "name": "Palo Duro Canyon",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "TX"
+   ],
+   "padus": [
+    "Palo Duro Canyon State Park"
+   ],
+   "wikipedia": "Palo Duro Canyon State Park",
+   "summary": "The second-largest canyon in the United States, cut into the Texas Panhandle in banded red and gold rock. The outdoor musical TEXAS is staged in the canyon each summer.",
+   "themes": []
+  },
+  {
+   "id": "sp-big-bend-ranch",
+   "name": "Big Bend Ranch",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "TX"
+   ],
+   "padus": [
+    "Big Bend Ranch State Park"
+   ],
+   "wikipedia": "Big Bend Ranch State Park",
+   "summary": "The largest state park in Texas: remote desert mountains, canyons and the Rio Grande along the Mexican border, west of Big Bend National Park.",
+   "themes": []
+  },
+  {
+   "id": "sp-enchanted-rock",
+   "name": "Enchanted Rock",
+   "designation": "State Natural Area",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "TX"
+   ],
+   "padus": [
+    "Enchanted Rock State Natural Area"
+   ],
+   "wikipedia": "Enchanted Rock",
+   "summary": "A huge dome of pink granite in the Texas Hill Country, rising about 425 feet above the land around it. The rock creaks as it cools at night, the source of many local legends.",
+   "themes": []
+  },
+  {
+   "id": "sp-caprock-canyons",
+   "name": "Caprock Canyons",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "TX"
+   ],
+   "padus": [
+    "Caprock Canyons State Park"
+   ],
+   "wikipedia": "Caprock Canyons State Park and Trailway",
+   "summary": "Red-rock canyons on the edge of the Llano Estacado in the Texas Panhandle, home to the official Texas State Bison Herd.",
+   "themes": []
+  },
+  {
+   "id": "sp-city-of-rocks",
+   "name": "City of Rocks",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "NM"
+   ],
+   "padus": [
+    "City Of Rocks%"
+   ],
+   "wikipedia": "City of Rocks State Park",
+   "summary": "Volcanic rock formations up to 40 feet high, rising from the high desert of southwestern New Mexico like the streets of a city.",
+   "themes": []
+  },
+  {
+   "id": "sp-bruneau-dunes",
+   "name": "Bruneau Dunes",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "ID"
+   ],
+   "padus": [
+    "Bruneau Dunes State Park"
+   ],
+   "wikipedia": "Bruneau Dunes State Park",
+   "summary": "Home to the tallest single-structured sand dune in North America, beside small lakes in the desert of southwestern Idaho, with an observatory for dark-sky viewing.",
+   "themes": []
+  },
+  {
+   "id": "sp-makoshika",
+   "name": "Makoshika",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "MT"
+   ],
+   "padus": [
+    "Makoshika State Park"
+   ],
+   "wikipedia": "Makoshika State Park",
+   "summary": "Montana's largest state park: badlands on the edge of Glendive with fossils of dinosaurs such as Triceratops and Tyrannosaurus in the Hell Creek Formation.",
+   "themes": []
+  },
+  {
+   "id": "sp-hot-springs",
+   "name": "Hot Springs",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "WY"
+   ],
+   "padus": [
+    "Hot Springs State Park"
+   ],
+   "wikipedia": "Hot Springs State Park",
+   "summary": "Hot springs in Thermopolis, Wyoming, that flow at 135°F over terraces of mineral deposits, with free bathing at the State Bath House and a state bison herd.",
+   "themes": []
+  },
+  {
+   "id": "sp-itasca",
+   "name": "Itasca",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "MN"
+   ],
+   "padus": [
+    "Itasca State Park"
+   ],
+   "wikipedia": "Itasca State Park",
+   "summary": "Minnesota's oldest state park, around Lake Itasca, where you can walk across the stones at the headwaters of the Mississippi River. Old-growth red and white pines grow along its shores.",
+   "themes": []
+  },
+  {
+   "id": "sp-starved-rock",
+   "name": "Starved Rock",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "IL"
+   ],
+   "padus": [
+    "Starved Rock State Park"
+   ],
+   "wikipedia": "Starved Rock State Park",
+   "summary": "Sandstone canyons with seasonal waterfalls along the Illinois River, Illinois's most visited state park, named for a legend of a siege on the butte above the river.",
+   "themes": []
+  },
+  {
+   "id": "sp-devils-lake",
+   "name": "Devil's Lake",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "WI"
+   ],
+   "padus": [
+    "Devils Lake State Park%"
+   ],
+   "wikipedia": "Devil's Lake State Park (Wisconsin)",
+   "summary": "Wisconsin's largest state park: a glacial lake ringed by 500-foot quartzite bluffs in the Baraboo Range, with boulder-field trails and rock climbing, northwest of Madison.",
+   "themes": []
+  },
+  {
+   "id": "sp-porcupine-mountains-wilderness",
+   "name": "Porcupine Mountains Wilderness",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "MI"
+   ],
+   "padus": [
+    "Porcupine Mountains Wilderness State Park"
+   ],
+   "wikipedia": "Porcupine Mountains",
+   "summary": "Old-growth hardwood forest, waterfalls and the Lake of the Clouds in the Porcupine Mountains along Lake Superior, in Michigan's Upper Peninsula — one of the largest old-growth forests west of the Adirondacks.",
+   "themes": []
+  },
+  {
+   "id": "sp-tahquamenon-falls",
+   "name": "Tahquamenon Falls",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "MI"
+   ],
+   "padus": [
+    "Tahquamenon Falls State Park"
+   ],
+   "wikipedia": "Tahquamenon Falls State Park",
+   "summary": "One of the largest waterfalls east of the Mississippi, where the root-beer-coloured Tahquamenon River drops over the Upper Falls in Michigan's Upper Peninsula, with a set of smaller Lower Falls downstream.",
+   "themes": []
+  },
+  {
+   "id": "sp-hocking-hills",
+   "name": "Hocking Hills",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "OH"
+   ],
+   "padus": [
+    "Hocking Hills State Park"
+   ],
+   "wikipedia": "Hocking Hills State Park",
+   "summary": "Sandstone gorges, recess caves and waterfalls in southeastern Ohio, including Old Man's Cave, Ash Cave and Cedar Falls, linked by trails open all year.",
+   "themes": []
+  },
+  {
+   "id": "sp-brown-county",
+   "name": "Brown County",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "IN"
+   ],
+   "padus": [
+    "Brown County State Park"
+   ],
+   "wikipedia": "Brown County State Park",
+   "summary": "Indiana's largest state park, in wooded hills near Nashville, known for its autumn colour and long views from its fire tower and overlooks.",
+   "themes": []
+  },
+  {
+   "id": "sp-turkey-run",
+   "name": "Turkey Run",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "IN"
+   ],
+   "padus": [
+    "Turkey Run State Park"
+   ],
+   "wikipedia": "Turkey Run State Park",
+   "summary": "Indiana's second state park: deep sandstone ravines along Sugar Creek, with ladders and narrow canyon trails, and a historic inn.",
+   "themes": []
+  },
+  {
+   "id": "sp-cumberland-falls",
+   "name": "Cumberland Falls",
+   "designation": "State Resort Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "KY"
+   ],
+   "padus": [
+    "Cumberland Falls State Resort Park"
+   ],
+   "wikipedia": "Cumberland Falls State Resort Park",
+   "summary": "A 68-foot curtain of water on the Cumberland River in Kentucky, one of the few places in the Western Hemisphere where a moonbow forms regularly on clear nights at the full moon.",
+   "themes": []
+  },
+  {
+   "id": "sp-fall-creek-falls",
+   "name": "Fall Creek Falls",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "TN"
+   ],
+   "padus": [
+    "Fall Creek Falls"
+   ],
+   "wikipedia": "Fall Creek Falls State Park",
+   "summary": "Tennessee's largest state park, on the Cumberland Plateau, named for its 256-foot waterfall — among the highest free-falling falls in the eastern United States.",
+   "themes": []
+  },
+  {
+   "id": "sp-cloudland-canyon",
+   "name": "Cloudland Canyon",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "GA"
+   ],
+   "padus": [
+    "Cloudland Canyon State Park"
+   ],
+   "wikipedia": "Cloudland Canyon State Park",
+   "summary": "A deep gorge cut into the western edge of Lookout Mountain in northwest Georgia, with rim views and two waterfalls at its foot.",
+   "themes": []
+  },
+  {
+   "id": "sp-tallulah-gorge",
+   "name": "Tallulah Gorge",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "GA"
+   ],
+   "padus": [
+    "Tallulah Gorge State Park"
+   ],
+   "wikipedia": "Tallulah Gorge State Park",
+   "summary": "A 1,000-foot-deep gorge in northeast Georgia where the Tallulah River drops over a series of six waterfalls, with a suspension bridge across it and a floor reached by permit.",
+   "themes": []
+  },
+  {
+   "id": "sp-providence-canyon",
+   "name": "Providence Canyon",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "GA"
+   ],
+   "padus": [
+    "Providence Canyon State Park"
+   ],
+   "wikipedia": "Providence Canyon State Park",
+   "summary": "Georgia's \"Little Grand Canyon\": gullies up to 150 feet deep, eroded since the 1800s from poor farming practices into soft sediments of pink, orange and purple.",
+   "themes": []
+  },
+  {
+   "id": "sp-chimney-rock",
+   "name": "Chimney Rock",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "NC"
+   ],
+   "padus": [
+    "Chimney Rock State Park"
+   ],
+   "wikipedia": "Chimney Rock State Park",
+   "summary": "A granite spire rising above Hickory Nut Gorge near Asheville, North Carolina, with views over Lake Lure and a 404-foot waterfall nearby. Hurricane Helene in 2024 damaged the park and the village below it.",
+   "themes": []
+  },
+  {
+   "id": "sp-jockeys-ridge",
+   "name": "Jockey's Ridge",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "NC"
+   ],
+   "padus": [
+    "Jockey's Ridge State Park"
+   ],
+   "wikipedia": "Jockey's Ridge State Park",
+   "summary": "The tallest active sand dune system in the eastern United States, on North Carolina's Outer Banks at Nags Head — a favourite for hang gliding and sunset walks.",
+   "themes": []
+  },
+  {
+   "id": "sp-table-rock",
+   "name": "Table Rock",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "SC"
+   ],
+   "padus": [
+    "Table Rock State Park"
+   ],
+   "wikipedia": "Table Rock State Park (South Carolina)",
+   "summary": "A granite mountain with a bare, flat-topped face at the edge of South Carolina's Blue Ridge, with a historic lodge and stonework built by the Civilian Conservation Corps.",
+   "themes": []
+  },
+  {
+   "id": "sp-bahia-honda",
+   "name": "Bahia Honda",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "FL"
+   ],
+   "padus": [
+    "Bahia Honda State Park"
+   ],
+   "wikipedia": "Bahia Honda State Park",
+   "summary": "A Florida Keys island with some of the Keys' best beaches, clear water for snorkelling, and the remains of Henry Flagler's Overseas Railroad bridge.",
+   "themes": []
+  },
+  {
+   "id": "sp-john-pennekamp-coral-reef",
+   "name": "John Pennekamp Coral Reef",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "FL"
+   ],
+   "padus": [
+    "John Pennekamp Coral Reef State Park"
+   ],
+   "wikipedia": "John Pennekamp Coral Reef State Park",
+   "summary": "The first underwater park in the United States, off Key Largo in the Florida Keys, protecting coral reefs reached by snorkel and glass-bottom boat tours.",
+   "themes": []
+  },
+  {
+   "id": "sp-ichetucknee-springs",
+   "name": "Ichetucknee Springs",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "FL"
+   ],
+   "padus": [
+    "Ichetucknee Springs State Park"
+   ],
+   "wikipedia": "Ichetucknee Springs State Park",
+   "summary": "Clear, spring-fed water flowing six miles through shaded forest in north Florida, famous for summer tubing and for swimming in its springs.",
+   "themes": []
+  },
+  {
+   "id": "sp-myakka-river",
+   "name": "Myakka River",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "FL"
+   ],
+   "padus": [
+    "Myakka River State Park"
+   ],
+   "wikipedia": "Myakka River State Park",
+   "summary": "One of Florida's oldest and largest state parks, with wetlands, prairies and a river full of alligators and wading birds, and a canopy walkway through the treetops.",
+   "themes": []
+  },
+  {
+   "id": "sp-petit-jean",
+   "name": "Petit Jean",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "AR"
+   ],
+   "padus": [
+    "Petit Jean State Park"
+   ],
+   "wikipedia": "Petit Jean State Park",
+   "summary": "Arkansas's first state park, on a mountain above the Arkansas River: Cedar Falls, a canyon, bluffs and lodge buildings built by the Civilian Conservation Corps.",
+   "themes": []
+  },
+  {
+   "id": "sp-ha-ha-tonka",
+   "name": "Ha Ha Tonka",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "MO"
+   ],
+   "padus": [
+    "Ha Ha Tonka State Park"
+   ],
+   "wikipedia": "Ha Ha Tonka State Park",
+   "summary": "The stone ruins of an early twentieth-century castle on a bluff above the Lake of the Ozarks in Missouri, with sinkholes, a natural bridge and a large spring.",
+   "themes": []
+  },
+  {
+   "id": "sp-letchworth",
+   "name": "Letchworth",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "NY"
+   ],
+   "padus": [
+    "Letchworth State Park"
+   ],
+   "wikipedia": "Letchworth State Park",
+   "summary": "The \"Grand Canyon of the East\": the Genesee River runs through a gorge up to 550 feet deep and over three large waterfalls in western New York.",
+   "themes": []
+  },
+  {
+   "id": "sp-watkins-glen",
+   "name": "Watkins Glen",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "NY"
+   ],
+   "padus": [
+    "Watkins Glen State Park"
+   ],
+   "wikipedia": "Watkins Glen State Park",
+   "summary": "A narrow gorge in New York's Finger Lakes where a stone path and stairs lead past 19 waterfalls, under and behind some of them.",
+   "themes": []
+  },
+  {
+   "id": "sp-niagara-falls",
+   "name": "Niagara Falls",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "NY"
+   ],
+   "padus": [
+    "Niagara Falls State Park"
+   ],
+   "wikipedia": "Niagara Falls State Park",
+   "summary": "The oldest state park in the United States, designed by Frederick Law Olmsted, on the American side of Niagara Falls with Goat Island, the American Falls and views of the Horseshoe Falls.",
+   "themes": []
+  },
+  {
+   "id": "sp-ricketts-glen",
+   "name": "Ricketts Glen",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "PA"
+   ],
+   "padus": [
+    "Ricketts Glen State Park"
+   ],
+   "wikipedia": "Ricketts Glen State Park",
+   "summary": "Old-growth forest and 24 named waterfalls along Kitchen Creek in northeastern Pennsylvania, many of them on the Falls Trail loop.",
+   "themes": []
+  },
+  {
+   "id": "sp-ohiopyle",
+   "name": "Ohiopyle",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "PA"
+   ],
+   "padus": [
+    "Ohiopyle State Park"
+   ],
+   "wikipedia": "Ohiopyle State Park",
+   "summary": "Whitewater rafting and kayaking in the Youghiogheny River gorge of southwestern Pennsylvania, with waterfalls, natural water slides and the Great Allegheny Passage bike trail.",
+   "themes": []
+  },
+  {
+   "id": "sp-baxter",
+   "name": "Baxter",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "ME"
+   ],
+   "padus": [
+    "Baxter State Park"
+   ],
+   "wikipedia": "Baxter State Park",
+   "summary": "A wilderness park in north-central Maine around Katahdin, the state's highest mountain and the northern end of the Appalachian Trail, given to the state by Governor Percival Baxter.",
+   "themes": []
+  },
+  {
+   "id": "sp-franconia-notch",
+   "name": "Franconia Notch",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "NH"
+   ],
+   "padus": [
+    "Franconia Notch State Park"
+   ],
+   "wikipedia": "Franconia Notch State Park",
+   "summary": "A mountain pass in New Hampshire's White Mountains with the Flume Gorge, the Cannon Mountain tramway and the site of the Old Man of the Mountain, which collapsed in 2003.",
+   "themes": []
+  },
+  {
+   "id": "sp-mount-greylock",
+   "name": "Mount Greylock",
+   "designation": "State Reservation",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "MA"
+   ],
+   "padus": [
+    "Mount Greylock State Reservation"
+   ],
+   "wikipedia": "Mount Greylock State Reservation",
+   "summary": "The highest point in Massachusetts, crowned by a war memorial tower, and the state's first public land set aside to protect forest.",
+   "themes": []
+  },
+  {
+   "id": "sp-cape-henlopen",
+   "name": "Cape Henlopen",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "DE"
+   ],
+   "padus": [
+    "Cape Henlopen State Park"
+   ],
+   "wikipedia": "Cape Henlopen State Park",
+   "summary": "Dunes, beaches and maritime forest where Delaware Bay meets the Atlantic, with Second World War observation towers and a fishing pier.",
+   "themes": []
+  },
+  {
+   "id": "sp-blackwater-falls",
+   "name": "Blackwater Falls",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "WV"
+   ],
+   "padus": [
+    "Blackwater Falls State Park"
+   ],
+   "wikipedia": "Blackwater Falls State Park",
+   "summary": "A 62-foot waterfall where the tea-coloured Blackwater River drops into its canyon in West Virginia's Allegheny Mountains, with a lodge on the rim.",
+   "themes": []
+  },
+  {
+   "id": "sp-grayson-highlands",
+   "name": "Grayson Highlands",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "VA"
+   ],
+   "padus": [
+    "Grayson Highlands State Park"
+   ],
+   "wikipedia": "Grayson Highlands State Park",
+   "summary": "High balds, rocky outcrops and wild ponies on the slopes beside Mount Rogers in southwest Virginia, crossed by the Appalachian Trail.",
+   "themes": []
+  },
+  {
+   "id": "sp-natural-bridge",
+   "name": "Natural Bridge",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "VA"
+   ],
+   "padus": [
+    "Natural Bridge State Park"
+   ],
+   "wikipedia": "Natural Bridge State Park (Virginia)",
+   "summary": "A 215-foot-high limestone arch over Cedar Creek in Virginia's Shenandoah Valley, the remains of an ancient cave roof, once owned by Thomas Jefferson.",
+   "themes": []
+  },
+  {
+   "id": "sp-fort-robinson",
+   "name": "Fort Robinson",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "NE"
+   ],
+   "padus": [
+    "Fort Robinson State Park"
+   ],
+   "wikipedia": "Fort Robinson",
+   "summary": "A former US Army fort in the Pine Ridge of northwest Nebraska, where the Lakota leader Crazy Horse was killed in 1877. Bison and bighorn sheep roam the buttes.",
+   "themes": []
+  },
+  {
+   "id": "sp-maquoketa-caves",
+   "name": "Maquoketa Caves",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "IA"
+   ],
+   "padus": [
+    "Maquoketa Caves State Park"
+   ],
+   "wikipedia": "Maquoketa Caves State Park",
+   "summary": "More caves than any other state park in Iowa, with a natural bridge and limestone bluffs along a wooded valley, and buildings by the Civilian Conservation Corps.",
+   "themes": []
+  },
+  {
+   "id": "sp-robbers-cave",
+   "name": "Robbers Cave",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "OK"
+   ],
+   "padus": [
+    "Robbers Cave State Resort Park"
+   ],
+   "wikipedia": "Robbers Cave State Park",
+   "summary": "Wooded hills and sandstone cliffs in the Sans Bois Mountains of southeast Oklahoma, with a cave said to have hidden outlaws including Belle Starr and Jesse James.",
+   "themes": []
+  },
+  {
+   "id": "sp-tishomingo",
+   "name": "Tishomingo",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "MS"
+   ],
+   "padus": [
+    "Tishomingo State Park"
+   ],
+   "wikipedia": "Tishomingo State Park",
+   "summary": "Sandstone outcrops, a swinging bridge and canoe trips on Bear Creek in the Appalachian foothills of northeast Mississippi, on the Natchez Trace Parkway.",
+   "themes": []
+  },
+  {
+   "id": "sp-gulf",
+   "name": "Gulf",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "AL"
+   ],
+   "padus": [
+    "Gulf State Park"
+   ],
+   "wikipedia": "Gulf State Park",
+   "summary": "White-sand Gulf beaches, dunes, freshwater lakes and pine forest at Gulf Shores, Alabama, with a long fishing pier.",
+   "themes": []
+  },
+  {
+   "id": "sp-high-point",
+   "name": "High Point",
+   "designation": "State Park",
+   "kind": "statePark",
+   "agency": "stateAgency",
+   "states": [
+    "NJ"
+   ],
+   "padus": [
+    "High Point State Park"
+   ],
+   "wikipedia": "High Point State Park",
+   "summary": "The highest point in New Jersey, topped by a 220-foot war memorial obelisk, in the Kittatinny Mountains where New Jersey, New York and Pennsylvania meet.",
+   "themes": []
+  }
+ ]
+}

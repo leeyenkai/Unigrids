@@ -1,0 +1,107 @@
+{
+ "placeID": "np-kings-canyon",
+ "contentVersion": 2,
+ "story": [
+  "The South Fork of the Kings River runs through a granite canyon more than a mile deep, carved first by the river and then widened by glaciers into the U-shaped valley of Cedar Grove. John Muir thought it a rival to Yosemite. The road into it ends at Roads End, where the wilderness begins.",
+  "Beyond, most of the park is designated wilderness: high basins of lakes and meadows, passes over twelve thousand feet, and on its eastern edge the Palisades, where North Palisade rises to 14,248 feet. The John Muir Trail and the Rae Lakes Loop cross it.",
+  "In Grant Grove stands the General Grant Tree, by volume the second-largest tree in the world, named the nation's Christmas tree in 1926. Nearby, the Big Stump area shows what happened to unprotected groves in the 1880s, when giant sequoias were cut for timber that was mostly too brittle to use. Severe wildfires in recent years have killed many large sequoias across the Sierra, and the park is working to protect the groves that remain.",
+  "General Grant National Park was created in 1890 to save the grove. In 1940 it was absorbed into the new, much larger Kings Canyon National Park. Kings Canyon and Sequoia have been managed together since the 1940s."
+ ],
+ "sightNotes": {
+  "poi-kings-canyon-general-grant-tree": "The second-largest tree in the world by volume, on a short paved loop in Grant Grove.",
+  "poi-kings-canyon-panoramic-point": "A ridge-top view east across the Kings Canyon high country.",
+  "poi-kings-canyon-big-stump": "A grove of nineteenth-century sequoia stumps, with the stump of the Mark Twain Tree.",
+  "poi-kings-canyon-zumwalt-meadow": "A flat loop through meadow and forest beneath the canyon's granite walls.",
+  "poi-kings-canyon-roaring-river-falls": "A powerful waterfall in a granite chute, a short walk from the road.",
+  "poi-kings-canyon-mist-falls": "A broad waterfall on the South Fork, a day hike from Roads End.",
+  "poi-kings-canyon-redwood-mountain-grove": "One of the largest sequoia groves, seen from an overlook or on foot."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Big Stump Entrance, on CA 180 from Fresno; vehicles over 22 feet long should use this way in",
+   "From Sequoia National Park, by the Generals Highway"
+  ],
+  "permits": [
+   "Overnight wilderness trips — a wilderness permit, with quotas on popular trailheads"
+  ],
+  "lodging": [
+   "John Muir Lodge and cabins at Grant Grove, and Cedar Grove Lodge in the canyon"
+  ],
+  "seasonalClosures": [
+   "The road into Kings Canyon beyond Hume Lake closes in winter, usually from mid-November to late April; chains may be required on park roads"
+  ],
+  "camping": [
+   "Azalea Campground, reservable",
+   "Canyon View Group Campground, reservable",
+   "Crystal Springs Campground, reservable",
+   "Crystal Springs Campground Group Sites, reservable",
+   "Moraine Campground, reservable",
+   "Sentinel Campground, reservable",
+   "Sheep Creek Campground, reservable",
+   "Sunset Campground, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1890",
+   "text": "General Grant National Park is established to protect Grant Grove."
+  },
+  {
+   "year": "1926",
+   "text": "The General Grant Tree is named the nation's Christmas tree."
+  },
+  {
+   "year": "1940",
+   "text": "Kings Canyon National Park is created, absorbing General Grant National Park."
+  }
+ ],
+ "safety": [
+  "The Kings River is swift and cold even when it looks calm; drownings happen every year.",
+  "Black bears are common. Store all food and scented items in the bear boxes provided."
+ ],
+ "regulations": [
+  "Food must be stored in bear-proof containers or lockers, day and night.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Sequoia & Kings Canyon National Parks — National Park Service",
+   "url": "https://www.nps.gov/seki/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$35",
+   "detail": "This pass is valid for 1-7 days and includes everyone traveling in a single vehicle for Sequoia & Kings Canyon National Parks and Hume Lake District of Sequoia National Forest/Giant Sequoia National Monument."
+  },
+  {
+   "title": "Per person",
+   "cost": "$20",
+   "detail": "This entry fee is for a single person traveling on foot or by bicycle. It is valid for 1-7 days in Sequoia & Kings Canyon National Parks and Hume Lake District of Sequoia National Forest/Giant Sequoia National Monument."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$30",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles, scooters, or similar motorized vehicles with up to 4 total passengers to Sequoia & Kings Canyon National Parks and Hume Lake District of Sequoia National Forest/Giant Sequoia National Monument."
+  },
+  {
+   "title": "Nonresident",
+   "cost": "$100",
+   "detail": "Each non-US resident aged 16 and older visiting Sequoia & Kings Canyon National Parks must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group."
+  }
+ ],
+ "hero": {
+  "credit": "NPS/Rick Cain",
+  "isPublicDomain": true,
+  "assetName": "np-kings-canyon-1.jpg",
+  "caption": "Kings Canyon",
+  "altText": "A deep canyon with a forested floor and steep granite cliffs"
+ },
+ "operatingHours": "The parks are open 24 hours a day, 365 days a year. Some park roads and roads that access more remote parts of the parks close in the winter due to snow accumulation. Rarely, extreme weather conditions may cause roads into the parks to be closed.",
+ "weather": "Because of the extreme elevation range in the parks, weather conditions vary widely between areas. In summer, the sequoia groves have comfortable temperatures and the foothills are hot and dry. Snow lingers on high-mountain passes well into summer. In fall, conditions can range from summer-like to winter-like. Winter brings snow to sequoia groves and rain to the foothills. Be prepared for tire chain requirements. Spring is a great time to hike in the foothills and snow begins to melt at higher elevations.",
+ "directions": "Two highways enter the parks. Hwy 180 from Fresno leads east to Kings Canyon National Park, then continues 30 miles east to Cedar Grove. Hwy 198 from Visalia leads east to Sequoia National Park via Three Rivers. Inside the parks, Highway 198 becomes the Generals Highway, which connects 198 to 180. Vehicles over 22-feet long should enter the parks via Highway 180. In winter, the Generals Highway between the parks often closes. Chains may be required on park roads. No roads cross the parks east to west."
+}
