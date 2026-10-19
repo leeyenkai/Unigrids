@@ -24,9 +24,9 @@ public enum Polyline {
         var longitude = 0
         var iterator = encoded.utf8.makeIterator()
 
-        while let deltaLatitude = nextValue(&iterator),
-              let deltaLongitude = nextValue(&iterator)
-        {
+        while true {
+            guard let deltaLatitude = nextValue(&iterator),
+                  let deltaLongitude = nextValue(&iterator) else { break }
             latitude += deltaLatitude
             longitude += deltaLongitude
             coordinates.append(Coordinate(

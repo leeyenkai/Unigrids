@@ -85,7 +85,6 @@ jobs:
         working-directory: Pipeline
         run: uv run --with pytest python -m pytest tests -q
 
-      - name: Seed regenerates identically
-        run: |
-          python3 Pipeline/seed/build_seed.py
-          git diff --exit-code -- Packages/UnigridsKit/Sources/UnigridsReference/Resources
+      # The bundled reference data is built by `unigrids_pipeline reference` from a dated
+      # raw snapshot that is too large to commit, so CI cannot rebuild it. The Swift
+      # `BundledDataTests` hold the built data to its rules instead.

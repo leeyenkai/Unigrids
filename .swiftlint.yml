@@ -84,6 +84,9 @@ function_body_length:
 cyclomatic_complexity:
   warning: 12
   error: 20
+  # A switch over an enum's cases is the clearest way to map each case to its view or
+  # value; counting every case as a branch only pushes it into less readable shapes.
+  ignores_case_statements: true
 
 identifier_name:
   min_length:

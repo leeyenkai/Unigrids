@@ -7,7 +7,7 @@ Four jobs, matching the four things `AGENTS.md` asks a contributor to keep green
 | `package` | `swift test` on `UnigridsKit` — the fast loop |
 | `app` | `xcodebuild` for the iOS Simulator and for macOS, because a green package is not proof the app links |
 | `lint` | `swiftformat --lint` and `swiftlint --strict` |
-| `pipeline` | `ruff`, the pipeline's tests, and a check that the committed seed data regenerates byte-identically |
+| `pipeline` | `ruff` and the pipeline's tests. The bundled reference data is built from a raw snapshot too large to commit, so CI does not rebuild it; `BundledDataTests` in the `package` job check it instead |
 
 ## Notes
 

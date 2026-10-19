@@ -164,11 +164,14 @@ struct SightStrip: View {
     let current: Int?
     let onSelect: (Int) -> Void
 
+    private var currentSummary: String? {
+        guard let current, sights.indices.contains(current) else { return nil }
+        return sights[current].summary
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            if let current, sights.indices.contains(current),
-               let summary = sights[current].summary
-            {
+            if let summary = currentSummary {
                 Text(summary)
                     .font(UnigridStyle.proseSmall)
                     .foregroundStyle(style.bandInk)

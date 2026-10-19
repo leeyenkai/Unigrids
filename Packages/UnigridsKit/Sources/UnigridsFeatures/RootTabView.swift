@@ -44,16 +44,9 @@ public struct RootTabView: View {
                 DataUnavailableBanner(message: loadErrorMessage)
             }
         }
-        #if os(iOS)
-        .fullScreenCover(isPresented: showOnboarding) {
+        .onboarding(isPresented: showOnboarding) {
             OnboardingView { onboardingSeen = true }
         }
-        #else
-        .sheet(isPresented: showOnboarding) {
-                    OnboardingView { onboardingSeen = true }
-                        .frame(width: 620, height: 640)
-                }
-        #endif
     }
 
     private var showOnboarding: Binding<Bool> {
@@ -83,5 +76,22 @@ struct DataUnavailableBanner: View {
         .padding(12)
         .background(.thinMaterial, in: RoundedRectangle(cornerRadius: NativeMetrics.chipRadius))
         .padding(.horizontal, 16)
+    }
+}
+
+extension View {
+    /// The welcome, full screen on iPhone and iPad and as a fixed-size sheet on the Mac,
+    /// where a full-screen cover does not exist.
+    fileprivate func onboarding(
+        isPresented: Binding<Bool>,
+        @ViewBuilder content: @escaping () -> some View
+    ) -> some View {
+        #if os(iOS)
+            fullScreenCover(isPresented: isPresented, content: content)
+        #else
+            sheet(isPresented: isPresented) {
+                content().frame(width: 620, height: 640)
+            }
+        #endif
     }
 }
