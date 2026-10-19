@@ -49,6 +49,17 @@ public struct SettingsScreen: View {
                     .foregroundStyle(.secondary)
             }
 
+            Section {
+                AppIconPicker()
+            } header: {
+                Text("App icon")
+            } footer: {
+                Text(
+                    "A stack of Unigrid brochures over the park you pick, with that "
+                        + "park's own brochure on top."
+                )
+            }
+
             Section("Your data") {
                 LabeledContent("Visits", value: "\(visits.count)")
                 LabeledContent("Stamps", value: "\(stamps.count)")

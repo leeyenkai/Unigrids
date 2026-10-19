@@ -172,14 +172,31 @@ same two-ring-and-two-rules geometry `StampView` draws at full size, scaled with
 
 ## 8. The app icon
 
-> Built by `Tools/IconGenerator`, which has the full construction notes. `swift run` there
-> regenerates the thirteen PNGs deterministically; `--park yosemite` renders the other one.
+> Built by `Tools/IconGenerator`, which has the full construction notes.
+> `swift run -c release IconGenerator --all` there regenerates all ten icon sets,
+> deterministically.
 
 A national park fills the tile, rendered as a perspective heightfield, and three Unigrid
 brochures lie across the foreground as sheets of frosted glass with the park showing
-blurred through them. Each sheet prints **its own** park — Zion's sandstone, Acadia's
-sea, Yosemite's granite — so the pile reads as three different brochures rather than one
-printed three times. **Zion is the park behind**; `--park yosemite` swaps it.
+blurred through them. Each sheet prints **its own** park, so the pile reads as three
+different brochures rather than one printed three times.
+
+**Ten parks are built, and the reader picks one in Settings** — Zion, Grand Canyon,
+Yosemite, Sequoia, Rocky Mountain, Olympic, Acadia, Joshua Tree, Everglades and Congaree.
+The chosen park's land stands behind the stack and its brochure is the one on top. Zion
+ships as the app's own icon; the other nine are alternate icons.
+
+One of them departs from its park on purpose. Olympic's icon stands a stratovolcano over
+the rainforest, and Mount Olympus is not a volcano — it is a glaciated peak of uplifted
+sea-floor rock. The volcano was the owner's call, as the silhouette the Northwest is known
+by. It is an icon, not a claim, and nothing in the app's data says otherwise; it is
+recorded here and in the generator so that nobody mistakes it for one.
+
+Alternate icons are a UIKit feature, so the picker works on iPhone and iPad and says so
+on the Mac rather than offering a control that would do nothing. The names appear in
+three places that have to agree — the appiconset folders, the Xcode target's
+`ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES`, and `AppIconChoice` — and a mismatch
+fails silently at runtime, so `AppIconChoiceTests` pins the raw values.
 
 ### The icon does not follow the print rules, on purpose
 
@@ -189,21 +206,22 @@ curved objects, and a mark that refuses all of that does not read as austere bes
 it reads as unfinished. So the icon gets a real Gaussian blur behind its glass, gradients
 along a single light, curved landforms and soft shadows.
 
-It still refuses gloss, hard specular highlights, clip-art and lettering.
+It still refuses gloss, hard specular highlights and clip-art.
 
 ### Where it sits between flat and rendered
 
 The terrain is a true perspective heightfield, so it converges and occludes like ground
-rather than like stacked cut-outs. But it is deliberately **not** a render: two or three
-octaves of noise instead of a full fractal, slope shading quantised to four steps, and the
-strata carried by crisp colour bands rather than by modelled ledges. Flat silhouettes read
-as a diagram; smooth shading over a detailed surface reads as a photograph. This sits
-between them, and that is the whole intent.
+rather than like stacked cut-outs. But it is deliberately **not** a render: two to four
+octaves of noise instead of a full fractal, a few big landforms rather than many small
+ones, and the strata carried by colour rather than by modelled ledges. Flat silhouettes
+read as a diagram; a detailed surface under smooth shading reads as a photograph. This
+sits between them, and that is the whole intent.
 
 ### The one place the app sets type in an icon
 
-Each brochure carries its park's name reversed out of the black band — ZION on the front,
-others behind it — in the same Helvetica Neue the guides use, flush with the first grid
+Each brochure carries its park's name reversed out of the black band — the chosen park on
+the front, two others behind it — in caps and lower case, as the federal specification
+sets it, and in the same Helvetica Neue the guides use, flush with the first grid
 module as a real Unigrid sets it. Under the band, three columns of set type on the
 brochure's grid. Without them the sheets were blank panels; §7's "no lettering" rule covers
 the app's iconography and stops at the app icon.

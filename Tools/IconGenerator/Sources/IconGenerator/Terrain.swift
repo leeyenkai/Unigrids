@@ -25,7 +25,10 @@ struct Terrain {
     // not so much that it flattens into a map.
 
     private let horizon = 0.325
-    private let cameraHeight = 0.55
+    private var cameraHeight: Double {
+        scene.landForm.cameraHeight
+    }
+
     private let focal = 0.95
     private let near = 0.055
     private let far = 3.4
@@ -43,6 +46,10 @@ struct Terrain {
         // The lowest row already painted for each column. Marching near to far and only
         // drawing above it gives occlusion for free.
         var ceiling = [Int](repeating: height, count: width)
+        // How far away the ground painted at each pixel is; the sky is infinitely far.
+        // A plant is drawn only where it stands nearer than this, so a tree behind a
+        // ridge shows exactly the part of it that clears the ridge and no more.
+        var distances = [Float](repeating: .infinity, count: width * height)
 
         // A fixed fraction of a step, different for every column.
         //
@@ -52,7 +59,11 @@ struct Terrain {
         // column that starts a fraction of a step along samples a different ladder, and
         // the boundary frays instead of stepping. The same total work, and the result
         // resolves under the 4x downsample into a smooth edge.
-        let phase = (0 ..< width).map { Noise.phase(for: $0) }
+        // Scaled by relief: on nearly flat ground a whole step of jitter moves the
+        // projected row a long way, and the dither stops hiding the staircase and
+        // starts being visible itself.
+        let dither = min(scene.landForm.relief / 0.45, 1)
+        let phase = (0 ..< width).map { Noise.phase(for: $0) * dither }
         // The sample that last painted each column, and how hazy it was. A span is
         // shaded by interpolating from it to the current one, so nothing that feeds a
         // pixel's colour is constant across a span.
@@ -96,6 +107,7 @@ struct Terrain {
                     coverage: 1 - (exact - Double(top)),
                     into: &pixels, width: width
                 )
+                distances[top * width + x] = Float(depth)
                 // Through the old boundary row, not up to it. That row was painted at
                 // partial coverage when it was the skyline; left as it was, every one
                 // of them survives as a pale line and the face comes out banded.
@@ -118,9 +130,12 @@ struct Terrain {
                     if let behind = trailing[x] {
                         let t = Double(y - top) / span
                         rowSample = Sample(
+                            x: sample.x,
+                            z: sample.z,
                             height: rowHeight,
                             lit: sample.lit + (behind.sample.lit - sample.lit) * t,
-                            green: sample.green + (behind.sample.green - sample.green) * t
+                            green: sample.green + (behind.sample.green - sample.green) * t,
+                            steep: sample.steep + (behind.sample.steep - sample.steep) * t
                         )
                         rowFog = fog + (behind.fog - fog) * t
                     }
@@ -129,6 +144,7 @@ struct Terrain {
                         with: shade(height: rowHeight, sample: rowSample, fog: rowFog),
                         into: &pixels, width: width
                     )
+                    distances[y * width + x] = Float(depth)
                 }
                 ceiling[x] = top
                 trailing[x] = (sample, fog)
@@ -136,12 +152,17 @@ struct Terrain {
             z += step
         }
 
+        plant(into: &pixels, distances: distances, width: width, height: height)
+
         return makeImage(from: &pixels, width: width, height: height)
     }
 
     // MARK: - The surface
 
     private struct Sample {
+        /// Where in the world, so the shading can ask whether this is the riverbed.
+        let x: Double
+        let z: Double
         let height: Double
         /// How steeply the ground falls away towards the light, in -1...1.
         let lit: Double
@@ -149,6 +170,8 @@ struct Terrain {
         /// its ledges carry scrub wherever they hold water, and that green is most of
         /// the colour in the park that is not rock.
         let green: Double
+        /// How steep the ground is, 0 for level and 1 for a wall.
+        let steep: Double
     }
 
     /// Height and lighting at one point, with the slope taken from a finite difference
@@ -170,7 +193,12 @@ struct Terrain {
         // climbs every bench and talus fan that will hold it, and a green confined to
         // the riverbed is a green the icon never shows, because the brochures lie over
         // exactly that part of the frame.
-        let lowland = 1 - min(max((here - 0.05) / 0.46, 0), 1)
+        // Also relative to relief: an absolute band puts the treeline at the same
+        // height in every park, so tall country comes out bare to its feet.
+        let form = scene.landForm
+        let lowland = 1 - min(
+            max((here - form.seaLevel - 0.05) / (form.relief * 0.74), 0), 1
+        )
         // Only a genuinely sheer face stays bare. Penalising slope harder than this
         // wipes the green off the canyon walls entirely — and the walls are the part of
         // the frame the brochures do not cover, so it is the only green anyone sees.
@@ -181,25 +209,75 @@ struct Terrain {
         // as vegetation only where it is allowed to be the colour it actually is.
         let raw = lowland * (1 - bare) * (patch * 2.1 - 0.38)
         let t = min(max((raw - 0.30) / 0.22, 0), 1)
-        let green = t * t * (3 - 2 * t)
+        var green = t * t * (3 - 2 * t) * land.greenery
+        // Bare rock along a coast: nothing holds below the reach of the spray, and the
+        // pink granite ledges at the waterline are half of what this coast looks like.
+        if form.coast > 0 {
+            let spray = min(max((here - form.seaLevel - 0.012) / 0.05, 0), 1)
+            green *= spray * spray
+        }
 
-        return Sample(height: here, lit: lit, green: green)
+        let steep = min(sqrt(slopeX * slopeX + slopeZ * slopeZ) / 4, 1)
+        return Sample(x: x, z: z, height: here, lit: lit, green: green, steep: steep)
+    }
+
+    /// The Atlantic against granite: a swell running across the open water, paler
+    /// water over the ledges, and white where it breaks on them.
+    private func surf(on water: Ink, at sample: Sample, fog: Double) -> Ink {
+        let depth = land.seaLevel - scene.ground(x: sample.x, z: sample.z)
+        // Lines of swell, long across the view and short along it, so they read as
+        // ranks of waves coming in. Gone by the middle distance, where they would be
+        // finer than a pixel and only shimmer.
+        let swell = Noise.fbm(x: sample.x * 5, y: sample.z * 24, octaves: 2) - 0.5
+        var ink = water.lightened(max(swell, 0) * 0.30 * max(1 - fog * 2.2, 0))
+        // Shallows: the rock showing green through the water.
+        let shallow = 1 - min(max(depth, 0) / 0.05, 1)
+        ink = ink.mixed(with: land.vegetation.lightened(0.25), amount: shallow * 0.35)
+        // White water where it is shallow enough to break, broken up by the same
+        // swell so the foam comes in patches rather than as a painted band.
+        let breaking = pow(1 - min(max(depth, 0) / 0.048, 1), 1.2)
+        let froth = Noise.fbm(x: sample.x * 30, y: sample.z * 30, octaves: 2)
+        return ink.mixed(with: land.snow, amount: min(breaking * (0.55 + froth * 0.9), 0.95))
     }
 
     /// Rock colour by altitude, shaded by slope, then pushed into the haze by distance.
     private func shade(height: Double, sample: Sample, fog: Double) -> Ink {
         // Water first: at or below the waterline there is no rock to shade, and the
         // sea takes its own colour whatever the slope underneath it is doing.
+        let form = scene.landForm
         if land.seaLevel > 0, height <= land.seaLevel + 0.0004 {
             let glint = max(sample.lit, 0) * 0.16
-            return land.sea.lightened(glint).mixed(with: land.haze, amount: fog * 0.58)
+            var water = land.sea.lightened(glint)
+            if form.coast > 0 {
+                water = surf(on: water, at: sample, fog: fog)
+            }
+            return water.mixed(with: land.haze, amount: fog * 0.58)
+        }
+
+        // The river: confined to the channel the canyon already cut, so the Colorado
+        // can run along the floor of the Grand Canyon without flooding its rims.
+        if form.river > 0 {
+            let fromChannel = abs(sample.x - scene.riverCentre(z: sample.z))
+            let banks = form.canyon * form.river
+            if fromChannel < banks, height < form.relief * 0.20 {
+                let shallows = min(fromChannel / banks, 1)
+                return land.sea
+                    .lightened(max(sample.lit, 0) * 0.20 + shallows * 0.12)
+                    .mixed(with: land.haze, amount: fog * 0.58)
+            }
         }
 
         let beds = land.ridges
         // Bowed towards the dark beds: mapped straight, most of the visible surface
         // sits in the pale upper strata and the whole canyon goes to cream. The white
         // caps belong on the rims only, which is where they are in the rock.
-        let altitude = pow(min(max(height / 0.80, 0), 0.999), 1.35)
+        // Normalised against the park's own relief, not a constant. Hardcoded to one
+        // park's scale, a taller park's ground all lands in the palest bed and the
+        // whole frame goes white — which is exactly what Olympic did. The 1.29 keeps
+        // Zion's mapping where it was when its icon was approved.
+        let altitude = pow(
+            min(max(height / (scene.landForm.relief * 1.29), 0), 0.999), 1.35
+        )
         let position = altitude * Double(beds.count - 1)
         let lower = Int(position)
         let upper = min(lower + 1, beds.count - 1)
@@ -235,7 +313,139 @@ struct Terrain {
             : ink.darkened(-shade * 0.50)
 
         ink = ink.mixed(with: land.vegetation, amount: sample.green * 0.96)
+
+        // Rockweed: the dark band the tide leaves on every rock along this coast.
+        if form.coast > 0, height < land.seaLevel + 0.016 {
+            let band = 1 - (height - land.seaLevel) / 0.016
+            let weed = (beds.last ?? ink).mixed(with: Ink(hex: 0x3E3820), amount: 0.5)
+            ink = ink.mixed(with: weed, amount: min(band * 1.4, 1) * 0.85)
+        }
+
+        // Water streaks down steep rock. Keyed on where the sample is and not on the
+        // row, so every row of a span takes the same value and the stripe runs
+        // straight down the face — which is exactly the shape a streak is.
+        if form.streaks > 0, sample.steep > 0.25 {
+            let stripe = Noise.fbm(x: (sample.x + sample.z * 0.6) * 38, y: 0.37, octaves: 2)
+            let wall = min((sample.steep - 0.25) / 0.40, 1)
+            ink = ink.darkened(max(stripe - 0.46, 0) / 0.54 * form.streaks * wall)
+        }
+
+        // Snow above the line, on ground flat enough to hold it.
+        if form.snowLine < 1 {
+            let above = (height / form.relief - form.snowLine) / (1 - form.snowLine)
+            let holds = 1 - min(abs(sample.lit) * 1.1, 1)
+            let lying = min(max(above, 0), 1) * holds
+            ink = ink.mixed(with: land.snow, amount: lying * 0.92)
+        }
+
         return ink.mixed(with: land.haze, amount: fog * 0.58)
+    }
+
+    // MARK: - What grows on it
+
+    /// Scatters the park's own plants over the finished ground, and stands its specimen
+    /// trees where they were put.
+    ///
+    /// Drawn after the terrain rather than folded into the march: a tree is an object
+    /// standing on the ground, not a property of it, and a heightfield has no way to
+    /// express one.
+    private func plant(
+        into pixels: inout [UInt8],
+        distances: [Float],
+        width: Int,
+        height: Int
+    ) {
+        let project: (Double, Double) -> CGPoint? = { x, z in
+            let sample = scene.height(x: x, z: z)
+            let rowScale = focal / z
+            let screenY = (horizon + (cameraHeight - sample) * rowScale) * Double(height)
+            let screenX = (x / (z * spread) + 0.5) * Double(width)
+            guard screenY.isFinite, screenX.isFinite,
+                  abs(screenY) < 1e6, abs(screenX) < 1e6
+            else { return nil }
+            return CGPoint(x: screenX, y: screenY)
+        }
+        let grove = Grove(scene: scene, projection: project)
+        let plants = (grove.plants(width: width, height: height)
+            + grove.specimens(width: width, height: height))
+            .sorted { $0.distance > $1.distance }
+
+        let inks = PlantInks(land: land)
+        for plant in plants {
+            let fog = pow(min(max((plant.distance - near) / (far * 0.92), 0), 1), 1.45)
+            paint(
+                plant,
+                inks: inks,
+                fog: fog,
+                into: &pixels,
+                distances: distances,
+                width: width,
+                height: height
+            )
+        }
+    }
+
+    /// Rasterises one plant, antialiased by four-by-four supersampling of its own
+    /// outline, and occluded pixel by pixel.
+    ///
+    /// The first version of this filled whole-pixel boxes: no antialiasing, no light,
+    /// and an outline made of steps. At icon size that is the look of a sprite in an
+    /// old video game, which is the one thing a tree in this mark must not be.
+    private func paint(
+        _ plant: Plant,
+        inks: PlantInks,
+        fog: Double,
+        into pixels: inout [UInt8],
+        distances: [Float],
+        width: Int,
+        height: Int
+    ) {
+        let size = plant.height
+        let left = plant.base.x - plant.reach * size
+        let right = plant.base.x + plant.reach * size
+        let top = plant.base.y - size * 1.02
+        let bottom = plant.base.y + size * 0.02
+        // Range-checked before converting: `Int(_:)` traps on anything it cannot hold.
+        guard left < Double(width), right > 0, top < Double(height), bottom > 0,
+              right - left < 1e5, bottom - top < 1e5
+        else { return }
+        let firstColumn = max(Int(left.rounded(.down)), 0)
+        let lastColumn = min(Int(right.rounded(.up)), width - 1)
+        let firstRow = max(Int(top.rounded(.down)), 0)
+        let lastRow = min(Int(bottom.rounded(.up)), height - 1)
+        guard firstColumn <= lastColumn, firstRow <= lastRow else { return }
+
+        let distance = Float(plant.distance)
+        let grid = 4
+        let step = 1 / Double(grid)
+        for row in firstRow ... lastRow {
+            for column in firstColumn ... lastColumn {
+                guard distances[row * width + column] > distance else { continue }
+                var red = 0.0, green = 0.0, blue = 0.0
+                var hits = 0
+                for sy in 0 ..< grid {
+                    let v = (plant.base.y - (Double(row) + (Double(sy) + 0.5) * step)) / size
+                    for sx in 0 ..< grid {
+                        let u = (Double(column) + (Double(sx) + 0.5) * step - plant.base.x)
+                            / size
+                        guard let ink = plant.ink(u: u, v: v, inks: inks) else { continue }
+                        red += ink.red
+                        green += ink.green
+                        blue += ink.blue
+                        hits += 1
+                    }
+                }
+                guard hits > 0 else { continue }
+                let count = Double(hits)
+                let ink = Ink(red: red / count, green: green / count, blue: blue / count)
+                    .mixed(with: land.haze, amount: fog * 0.58)
+                blend(
+                    column: column, row: row, with: ink,
+                    coverage: count / Double(grid * grid),
+                    into: &pixels, width: width
+                )
+            }
+        }
     }
 
     // MARK: - Pixels

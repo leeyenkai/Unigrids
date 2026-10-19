@@ -5,11 +5,15 @@ import ImageIO
 enum GeneratorError: Error, CustomStringConvertible {
     case renderFailed(Int)
     case writeFailed(URL)
+    case unknownPark(String)
 
     var description: String {
         switch self {
         case let .renderFailed(pixels): "could not render at \(pixels) px"
         case let .writeFailed(url): "could not write \(url.lastPathComponent)"
+        case let .unknownPark(name):
+            "no such park: \(name). One of: "
+                + Scene.allCases.map(\.rawValue).joined(separator: ", ")
         }
     }
 }

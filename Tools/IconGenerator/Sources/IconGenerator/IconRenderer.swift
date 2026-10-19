@@ -51,29 +51,29 @@ struct IconRenderer {
         let park: Scene
     }
 
-    /// The park on the sheet at the back. Whichever of the two the scene is not, so
-    /// the stack always shows three different brochures.
-    private var behind: Scene {
-        scene == .yosemite ? .zion : .yosemite
-    }
-
     private var cards: [Card] {
         // Laid down rather than fanned open: a brochure opens flat and lands on its
         // side, and a pile of them steps back and to the left.
+        //
+        // The park this icon is for is the sheet on **top**, with its own land behind
+        // the stack; the other two sit under it. That is the whole point of a variant:
+        // a reader who picks Olympic gets Olympic on the cover and Olympic out of the
+        // window, not Zion with a different brochure tucked into the pile.
+        let behind = scene.others
         let all = [
             Card(
                 centre: CGPoint(x: 0.378, y: 0.636),
                 rotation: -0.070,
-                name: behind.parkName,
-                designation: behind.designation,
-                park: behind
+                name: behind[1].parkName,
+                designation: behind[1].designation,
+                park: behind[1]
             ),
             Card(
                 centre: CGPoint(x: 0.468, y: 0.676),
                 rotation: -0.028,
-                name: Scene.acadia.parkName,
-                designation: Scene.acadia.designation,
-                park: .acadia
+                name: behind[0].parkName,
+                designation: behind[0].designation,
+                park: behind[0]
             ),
             Card(
                 centre: CGPoint(x: 0.570, y: 0.712),
@@ -86,9 +86,6 @@ struct IconRenderer {
         return detail.drawsEveryBlock ? all : [all[0], all[2]]
     }
 
-    /// The federal unigrid leaf, 99 x 210 mm — a ratio of 1:2.12. Tall and narrow is
-    /// what makes it a brochure: landscape-format with a deep band and a hard radius
-    /// read unmistakably as a bank card, which the first fan did.
     private let cardSize = CGSize(width: 0.520, height: 0.300)
     /// Barely rounded. Paper is cut, not moulded.
     private let cardRadius = 0.030

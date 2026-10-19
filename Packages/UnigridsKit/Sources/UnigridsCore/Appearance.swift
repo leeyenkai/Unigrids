@@ -36,3 +36,9 @@ public enum AppearanceDefaults {
     public static let appearance = "appearance.preference"
     public static let palette = "appearance.palette"
 }
+
+extension AppearanceDefaults {
+    /// The park whose icon the app wears on iPhone and iPad. Stored so the picker can
+    /// show the right row before UIKit has been asked.
+    public static let appIcon = "appearance.appIcon"
+}
