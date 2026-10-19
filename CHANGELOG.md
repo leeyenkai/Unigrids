@@ -53,6 +53,16 @@ makes the change. A release moves that block under a version heading with its da
   ADR 0005 recording why colour is data in `UnigridsCore` rather than `Color` in the views.
 - One icon vocabulary (`UnigridsSymbol`) in place of fifty-odd scattered symbol strings,
   with a test that every name resolves against the SDK.
+- An app icon, where there was none: Zion Canyon as a true perspective heightfield under
+  a blue desert sky, with three Unigrid brochures laid across it as sheets of frosted
+  glass — each with its park named on the black band in Helvetica caps-and-lower-case, a
+  photograph, a map panel and columns of set type. Each sheet prints its own park —
+  Zion's sandstone, Acadia's sea, Yosemite's granite — so the pile reads as three
+  different brochures rather than one printed three times. Light, dark and tinted
+  variants plus the ten macOS sizes, all generated deterministically by
+  [`Tools/IconGenerator`](Tools/IconGenerator) from the brochure system's own proportions
+  and each park's own geology, and anti-aliased in the renderer itself rather than left
+  to supersampling.
 
 ### Fixed
 
