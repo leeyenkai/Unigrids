@@ -172,32 +172,46 @@ same two-ring-and-two-rules geometry `StampView` draws at full size, scaled with
 
 ## 8. The app icon
 
-> Status: specified here, built separately. See the icon generator for the implementation.
+> Built by `Tools/IconGenerator`, which has the full construction notes. `swift run` there
+> regenerates the thirteen PNGs deterministically; `--park yosemite` renders the other one.
 
-A single Unigrid leaf, full bleed, carrying its black band, backed by two offset leaves so
-the mark reads as a small stack of brochures. At 1024 px the panel rules and the accent
-read; at 16 px it collapses to a dark bar over a paper field with a hint of depth, which is
-the Unigrid's own signature.
+A national park fills the tile, rendered as a perspective heightfield, and three Unigrid
+brochures lie across the foreground as sheets of frosted glass with the park showing
+blurred through them. Each sheet prints **its own** park — Zion's sandstone, Acadia's
+sea, Yosemite's granite — so the pile reads as three different brochures rather than one
+printed three times. **Zion is the park behind**; `--park yosemite` swaps it.
 
-Geometry is derived, not eyeballed:
+### The icon does not follow the print rules, on purpose
 
-- Leaf proportion **99 : 210**, the federal unigrid leaf.
-- A **12 × 12 module grid** on the 1024 canvas, echoing the twelve panels per side of the
-  B6 sheet.
-- Band depth one module of the leaf; side margins flush to the first module.
-- Thin rules at module intervals below the band imply the text columns without being
-  literal. One short rule in the accent.
+Inside the app the Unigrid is flat by rule: printed paper, hard edges, no shading. **The
+icon is the one place that rule is suspended.** The system's own icons are lit, glassy,
+curved objects, and a mark that refuses all of that does not read as austere beside them —
+it reads as unfinished. So the icon gets a real Gaussian blur behind its glass, gradients
+along a single light, curved landforms and soft shadows.
 
-### Constraints, not suggestions
+It still refuses gloss, hard specular highlights, clip-art and lettering.
 
-These are the things that make a mark read as machine-generated, and the icon has none of
-them: no gradients, no glow, no soft shadows, no fake 3D, no centred symmetric blob, no
-literal park scenery, no mountain or tree clip-art, no lettering. Flat vector geometry,
-asymmetric, grid-derived, four colours at most. Separation between leaves is a hairline
-edge, never a blur.
+### Where it sits between flat and rendered
+
+The terrain is a true perspective heightfield, so it converges and occludes like ground
+rather than like stacked cut-outs. But it is deliberately **not** a render: two or three
+octaves of noise instead of a full fractal, slope shading quantised to four steps, and the
+strata carried by crisp colour bands rather than by modelled ledges. Flat silhouettes read
+as a diagram; smooth shading over a detailed surface reads as a photograph. This sits
+between them, and that is the whole intent.
+
+### The one place the app sets type in an icon
+
+Each brochure carries its park's name reversed out of the black band — ZION on the front,
+others behind it — in the same Helvetica Neue the guides use, flush with the first grid
+module as a real Unigrid sets it. Under the band, three columns of set type on the
+brochure's grid. Without them the sheets were blank panels; §7's "no lettering" rule covers
+the app's iconography and stops at the app icon.
+
+Names come off below 128 px, where they are a smear rather than a word.
 
 A mark that only works at 1024 has failed. Check 16, 32, 128, 512 and 1024, in light, dark
-and tinted.
+and tinted; below 64 the fan drops to two sheets.
 
 ## 9. Accessibility
 
