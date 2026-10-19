@@ -49,16 +49,12 @@ struct ParkAlert: Decodable, Identifiable, Hashable, Sendable {
 /// clone without a key builds an app whose guides simply have no Alerts panel.
 enum NPSAlerts {
     static var apiKey: String? {
-        if let url = Bundle.main.url(forResource: "Secrets", withExtension: "plist"),
-           let data = try? Data(contentsOf: url),
-           let plist = try? PropertyListSerialization.propertyList(from: data, format: nil)
-           as? [String: Any],
-           let key = plist["NPSAPIKey"] as? String,
-           !key.isEmpty
-        {
-            return key
-        }
-        return nil
+        guard let url = Bundle.main.url(forResource: "Secrets", withExtension: "plist"),
+              let data = try? Data(contentsOf: url),
+              let plist = try? PropertyListSerialization.propertyList(from: data, format: nil),
+              let key = (plist as? [String: Any])?["NPSAPIKey"] as? String,
+              !key.isEmpty else { return nil }
+        return key
     }
 
     static var isConfigured: Bool {

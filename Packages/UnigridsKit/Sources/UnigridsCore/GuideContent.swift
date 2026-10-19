@@ -357,54 +357,27 @@ extension GuideContent {
         hasMap: Bool = false,
         showsAlerts: Bool = false
     ) -> [GuidePanel] {
-        var panels: [GuidePanel] = []
-        if let hero {
-            panels.append(.hero(hero))
-        }
-        if placeHasFacts {
-            panels.append(.atAGlance)
-        }
-        if !story.isEmpty {
-            panels.append(.story)
-        }
-        if !gallery.isEmpty {
-            panels.append(.gallery)
-        }
-        if let mapImage {
-            panels.append(.map(mapImage))
-        } else if hasMap {
-            panels.append(.parkMap)
-        }
-        if sightCount > 0 {
-            panels.append(.majorSights)
-        }
-        if visitorCentreCount > 0 {
-            panels.append(.visitorCentres)
-        }
-        if hasTrails, !trailHighlightIDs.isEmpty {
-            panels.append(.trailHighlights)
-        }
-        if showsAlerts {
-            panels.append(.alerts)
-        }
-        if !planYourVisit.isEmpty || !fees.isEmpty || operatingHours != nil {
-            panels.append(.planYourVisit)
-        }
-        if weather != nil {
-            panels.append(.weather)
-        }
-        if directions != nil {
-            panels.append(.gettingThere)
-        }
-        if !chronology.isEmpty {
-            panels.append(.chronology)
-        }
-        if !safety.isEmpty || !regulations.isEmpty {
-            panels.append(.safetyAndRegulations)
-        }
-        if !credits.isEmpty || !sources.isEmpty {
-            panels.append(.creditsAndSources)
-        }
-        return panels
+        let mapPanel: GuidePanel? = mapImage.map { .map($0) } ?? (hasMap ? .parkMap : nil)
+        let hasPlan = !planYourVisit.isEmpty || !fees.isEmpty || operatingHours != nil
+        // In template order. Each entry is the panel, or nil when there is nothing to put
+        // in it.
+        let candidates: [GuidePanel?] = [
+            hero.map { .hero($0) },
+            placeHasFacts ? .atAGlance : nil,
+            story.isEmpty ? nil : .story,
+            gallery.isEmpty ? nil : .gallery,
+            mapPanel,
+            sightCount > 0 ? .majorSights : nil,
+            visitorCentreCount > 0 ? .visitorCentres : nil,
+            hasTrails && !trailHighlightIDs.isEmpty ? .trailHighlights : nil,
+            showsAlerts ? .alerts : nil,
+            hasPlan ? .planYourVisit : nil,
+            weather == nil ? nil : .weather,
+            directions == nil ? nil : .gettingThere,
+            chronology.isEmpty ? nil : .chronology,
+            safety.isEmpty && regulations.isEmpty ? nil : .safetyAndRegulations,
+            credits.isEmpty && sources.isEmpty ? nil : .creditsAndSources,
+        ]
+        return candidates.compactMap(\.self)
     }
 }
