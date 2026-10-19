@@ -57,12 +57,17 @@ makes the change. A release moves that block under a version heading with its da
   a blue desert sky, with three Unigrid brochures laid across it as sheets of frosted
   glass — each with its park named on the black band in Helvetica caps-and-lower-case, a
   photograph, a map panel and columns of set type. Each sheet prints its own park —
-  Zion's sandstone, Acadia's sea, Yosemite's granite — so the pile reads as three
+  Zion's sandstone, the Grand Canyon's strata, Yosemite's granite — so the pile reads as three
   different brochures rather than one printed three times. Light, dark and tinted
   variants plus the ten macOS sizes, all generated deterministically by
   [`Tools/IconGenerator`](Tools/IconGenerator) from the brochure system's own proportions
   and each park's own geology, and anti-aliased in the renderer itself rather than left
   to supersampling.
+- Nine more app icons, one per park, switchable in Settings: Grand Canyon, Yosemite,
+  Sequoia, Rocky Mountain, Olympic, Acadia, Joshua Tree, Everglades and Congaree. The
+  park you pick stands behind the stack and its brochure is the one on top. iPhone and
+  iPad only — macOS has no alternate app icons, and on the Mac the row says so rather
+  than offering a control that would do nothing.
 
 ### Fixed
 

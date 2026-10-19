@@ -39,6 +39,12 @@ struct CatalogEntry {
 enum AssetCatalog {
     static let entries: [CatalogEntry] = ios + mac
 
+    /// What an alternate icon needs: the three iOS appearances and nothing else.
+    ///
+    /// macOS has no runtime icon switching — `setAlternateIconName` is UIKit only — so
+    /// the ten macOS sizes would be ten unreferenced files per park, ninety in all.
+    static let alternateEntries: [CatalogEntry] = ios
+
     private static let ios: [CatalogEntry] = [
         CatalogEntry(
             filename: "icon-1024.png",
@@ -85,7 +91,7 @@ enum AssetCatalog {
 
     /// `Contents.json`, in Xcode's own formatting so the file does not churn when
     /// Xcode next touches it.
-    static func contentsJSON() -> String {
+    static func contentsJSON(for entries: [CatalogEntry] = entries) -> String {
         var lines = ["{", "  \"images\" : ["]
         for (index, entry) in entries.enumerated() {
             lines.append(contentsOf: block(for: entry, isLast: index == entries.count - 1))

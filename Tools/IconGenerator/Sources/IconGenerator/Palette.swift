@@ -1,9 +1,6 @@
 import CoreGraphics
 
-/// A flat ink.
-///
-/// The icon is printed, not lit: there is no gradient anywhere in it, so a colour is
-/// three numbers and nothing else.
+/// One colour, as three numbers in sRGB.
 struct Ink {
     let red: CGFloat
     let green: CGFloat
@@ -29,13 +26,8 @@ struct Ink {
 /// when the palette was refactored would be worse than a duplicated constant. Kept in
 /// step with `Packages/UnigridsKit/Sources/UnigridsCore/PaletteValues.swift` by hand.
 struct Palette {
-    /// The top cover.
+    /// The paper the covers are printed on, and the ink the band's lettering is set in.
     let paperFront: Ink
-    /// The covers under it.
-    let paperBack: Ink
-    /// The cut edge of the paper, towards the viewer, and the one in shade to the right.
-    let edge: Ink
-    let edgeShadow: Ink
     /// The black band across the head of the cover.
     let band: Ink
     /// A rule of set type on the cover.
@@ -44,50 +36,36 @@ struct Palette {
     let accent: Ink
     /// How far the frost tints what is behind it towards the paper's own white.
     let frostAlpha: CGFloat
-    /// How brightly the lit edge of a sheet catches the light.
-    let rimAlpha: CGFloat
 }
 
 extension Palette {
     /// The brochure in daylight.
     static let light = Palette(
         paperFront: Ink(hex: 0xFFFFFF),
-        paperBack: Ink(hex: 0xF3EFE7),
-        edge: Ink(hex: 0xDED8CC),
-        edgeShadow: Ink(hex: 0xBFB8A9),
         band: Ink(hex: 0x121212),
         textBlock: Ink(hex: 0xA8A49B),
         accent: Ink(hex: 0x2E5339),
-        frostAlpha: 0.34,
-        rimAlpha: 0.72
+        frostAlpha: 0.34
     )
 
-    /// The brochure after dark. Zion and Yosemite are both dark-sky parks, so the dark
-    /// variant is not an inversion — it is night, and the rock keeps its hue.
+    /// The brochure after dark. Not an inversion: it is night in the park, and the rock
+    /// keeps its hue.
     static let dark = Palette(
         paperFront: Ink(hex: 0x3E434D),
-        paperBack: Ink(hex: 0x343841),
-        edge: Ink(hex: 0x2A2E35),
-        edgeShadow: Ink(hex: 0x1F2228),
         band: Ink(hex: 0x0A0B0D),
         textBlock: Ink(hex: 0x615F5A),
         // Muted for night. The daylight green is the brightest thing in the dark
         // variant otherwise, and the eye goes to the map panel instead of the park.
         accent: Ink(hex: 0x2E5740),
-        frostAlpha: 0.30,
-        rimAlpha: 0.40
+        frostAlpha: 0.30
     )
 
     /// Greyscale, for the system to tint.
     static let tinted = Palette(
         paperFront: Ink(hex: 0xF2F2F2),
-        paperBack: Ink(hex: 0xDCDCDC),
-        edge: Ink(hex: 0xC2C2C2),
-        edgeShadow: Ink(hex: 0x9E9E9E),
         band: Ink(hex: 0x0D0D0D),
         textBlock: Ink(hex: 0x8A8A8A),
         accent: Ink(hex: 0x5E5E5E),
-        frostAlpha: 0.40,
-        rimAlpha: 0.80
+        frostAlpha: 0.40
     )
 }
