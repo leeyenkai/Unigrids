@@ -1,0 +1,108 @@
+{
+ "placeID": "np-lake-clark",
+ "contentVersion": 2,
+ "story": [
+  "Lake Clark sits where the Alaska and Aleutian ranges meet in the Chigmit Mountains. Two volcanoes stand over Cook Inlet: Mount Iliamna and Mount Redoubt, which erupted in 1989 and again in 2009. Glaciers flow from the peaks; to the west the land drops to long lakes and rivers, including Lake Clark itself, about forty miles long.",
+  "The lakes and rivers are nurseries for the sockeye salmon of the Bristol Bay fishery, among the largest wild salmon runs left in the world, and the salmon feed the land: brown bears gather along the coast at Chinitna Bay and Silver Salmon Creek to graze sedges, dig clams and fish, while bald eagles, moose and caribou range inland.",
+  "This is Dena'ina country. The village of Kijik, on Lake Clark, was home to a Dena'ina community until the early twentieth century and is now a National Historic Landmark. Captain James Cook charted the inlet in 1778, Russian and then American traders followed, and floatplanes opened the country after 1930.",
+  "From 1968 Richard Proenneke lived alone at Twin Lakes for some thirty years in a log cabin he built by hand, and filmed his life there; the cabin is preserved. The area became a national monument in 1978 and a national park and preserve under the Alaska lands act of 1980."
+ ],
+ "sightNotes": {
+  "poi-lake-clark-redoubt-volcano": "An active, glacier-clad stratovolcano that erupted in 1989 and 2009.",
+  "poi-lake-clark-iliamna-volcano": "The park's highest volcano, steaming above Cook Inlet.",
+  "poi-lake-clark-kijik": "The site of a Dena'ina village on the shore of Lake Clark.",
+  "poi-lake-clark-proennekes-cabin": "Richard Proenneke's hand-built log cabin at Upper Twin Lake."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "No roads: by small plane from Anchorage, Homer or Kenai, often landing on beaches or lakes",
+   "Port Alsworth, on Lake Clark, has the park's visitor center"
+  ],
+  "lodging": [
+   "Private lodges at Port Alsworth and along the coast; a few public-use cabins"
+  ],
+  "seasonalClosures": [
+   "Most visits fall between June and September; coastal bear viewing peaks from June to August"
+  ],
+  "camping": [
+   "NPS Priest Rock Public Use Cabin"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1778",
+   "text": "Captain James Cook surveys Cook Inlet."
+  },
+  {
+   "year": "1930",
+   "text": "The first floatplane lands on Lake Clark."
+  },
+  {
+   "year": "1968",
+   "text": "Richard Proenneke begins building his cabin at Twin Lakes."
+  },
+  {
+   "year": "1978",
+   "text": "Lake Clark National Monument is proclaimed."
+  },
+  {
+   "year": "1980",
+   "text": "The Alaska lands act creates Lake Clark National Park and Preserve."
+  },
+  {
+   "year": "2009",
+   "text": "Mount Redoubt erupts."
+  }
+ ],
+ "safety": [
+  "Stay at least 50 yards from bears, and never get between a sow and her cubs.",
+  "Weather delays flights often. Carry extra food, warm clothing and rain gear."
+ ],
+ "regulations": [
+  "Local rural residents may hunt, fish and gather for subsistence.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Lake Clark National Park and Preserve — National Park Service",
+   "url": "https://www.nps.gov/lacl/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS Photo / James Kramer",
+  "isPublicDomain": true,
+  "assetName": "np-lake-clark-1.jpg",
+  "caption": "Lake Clark",
+  "altText": "Photo of blue sky with fluffy white clouds reflect in calm lake with mountains in the background."
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / Karen Smigielski",
+   "isPublicDomain": true,
+   "assetName": "np-lake-clark-2.jpg",
+   "caption": "Tanalian Falls",
+   "altText": "Waterfall surrounded by forest in fall foiliage and mountains in the background."
+  },
+  {
+   "credit": "NPS Photo / Paige Spencer",
+   "isPublicDomain": true,
+   "assetName": "np-lake-clark-3.jpg",
+   "caption": "Redoubt Volcano",
+   "altText": "Photo of a stratovolcano flanked with glaciers towering over a river valley."
+  },
+  {
+   "credit": "NPS Photo / Chuck Lindsay",
+   "isPublicDomain": true,
+   "assetName": "np-lake-clark-4.jpg",
+   "caption": "Tanaina Glacier",
+   "altText": "photo of large alpine glacier"
+  }
+ ],
+ "operatingHours": "The park and preserve are open 24 hours per day, seven days per week year round. However, visitor services are limited Labor Day through Memorial Day. Seasonal and temporary closures are listed by location on the Operating Hours & Seasons page.",
+ "weather": "Lake Clark has two distinct climate areas: the coast and the interior. The coast is wetter and experiences milder temperatures. The interior gets half to one fourth as much precipitation, but temperatures are hotter in summer and colder in winter. Frost and snow can occur any time parkwide, but are most common from September to early June. Lakes here typically begins freezing in November and melting in April. Ice conditions dictate whether planes need floats or skis to land on lakes.",
+ "directions": "Lake Clark is located on the Alaska Peninsula southwest of Anchorage and north of Katmai National Park. It is not on the road system; therefore, in order to get here you must travel either via plane or by boat. A one to two-hour flight from Anchorage, Kenai, or Homer will provide access to most points within Lake Clark. Fixed-wing aircraft are allowed to land on all suitable lakes, rivers, beaches, gravel bars, and open ground in both the park and preserve unless the area is closed or otherwise restricted."
+}

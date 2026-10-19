@@ -1,6 +1,7 @@
 import SwiftData
 import SwiftUI
 import UnigridsCore
+import UnigridsDesign
 import UnigridsLog
 import UnigridsReference
 
@@ -68,12 +69,14 @@ public struct VisitIndex: Sendable {
     public let visitedPlaceIDs: Set<UnigridsID>
     public let plannedPlaceIDs: Set<UnigridsID>
 
+    /// Planned means on the itinerary of a trip that has not finished. A planned trip's
+    /// stops are plans, never visits, so they cannot make a place read as visited.
     public init(visits: [Visit], trips: [Trip] = []) {
         visitedPlaceIDs = Set(visits.map(\.place))
         plannedPlaceIDs = Set(
             trips
-                .filter { $0.status == .planned }
-                .flatMap { ($0.visits ?? []).map(\.place) }
+                .filter { $0.status != .done }
+                .flatMap { ($0.stops ?? []).map(\.place) }
         )
     }
 
@@ -94,4 +97,12 @@ public enum VisitStatusBadgeStatus: Sendable {
     case visited
     case planned
     case none
+
+    var marker: PlaceMarker.Status {
+        switch self {
+        case .visited: .visited
+        case .planned: .planned
+        case .none: .none
+        }
+    }
 }

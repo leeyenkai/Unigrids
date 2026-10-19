@@ -47,6 +47,16 @@ public protocol ReferenceStore: Sendable {
     func pointsOfInterest(in placeID: UnigridsID) -> [PointOfInterest]
     func trails(in placeID: UnigridsID) -> [Trail]
     func guide(for placeID: UnigridsID) -> GuideContent?
+
+    /// A place's outline, where the dataset carries one.
+    func boundary(for placeID: UnigridsID) -> PlaceBoundary?
+
+    /// Every outline, for the map to draw.
+    var boundaries: [UnigridsID: PlaceBoundary] { get }
+
+    /// Where an image's bytes are: a file inside the app for a bundled photograph, the
+    /// remote URL otherwise.
+    func imageURL(for image: GuideImage) -> URL?
 }
 
 extension ReferenceStore {
@@ -101,6 +111,61 @@ extension ReferenceStore {
             .sorted { $0.1 < $1.1 }
             .prefix(limit)
             .map(\.0)
+    }
+
+    /// Every place in a tier, by name.
+    public func places(in tier: PlaceTier) -> [Place] {
+        places
+            .filter { $0.tier == tier }
+            .sorted { $0.name < $1.name }
+    }
+
+    /// The place whose outline holds a point — the smallest, where outlines overlap, since
+    /// a tap inside a state park inside a national forest means the state park.
+    ///
+    /// `candidates` narrows the search to what the map is actually showing.
+    public func place(at point: Coordinate, among candidates: [Place]? = nil) -> Place? {
+        (candidates ?? places)
+            .compactMap { place -> (Place, Double)? in
+                guard let boundary = boundary(for: place.id), boundary.contains(point)
+                else { return nil }
+                return (place, boundary.extent.degreeArea)
+            }
+            .min { $0.1 < $1.1 }?
+            .0
+    }
+
+    /// The box to frame a place in: its outline's, else its curated extent, else a small
+    /// box around its centre.
+    public func frame(for place: Place) -> BoundingBox {
+        if let extent = boundary(for: place.id)?.extent {
+            return extent
+        }
+        if let extent = place.extent {
+            return extent
+        }
+        let pad = 0.15
+        return BoundingBox(
+            south: place.centre.latitude - pad,
+            west: place.centre.longitude - pad,
+            north: place.centre.latitude + pad,
+            east: place.centre.longitude + pad
+        )
+    }
+
+    /// Points of interest across every place, matching a query, for map search.
+    public func searchPointsOfInterest(_ query: String, limit: Int = 20) -> [PointOfInterest] {
+        let needle = query.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        guard needle.count >= 2 else { return [] }
+        return places
+            .filter(\.tier.hasGuide)
+            .flatMap { pointsOfInterest(in: $0.id) }
+            .filter { $0.kind != .entrance && $0.name.lowercased().contains(needle) }
+            .sorted { ($0.name.lowercased().hasPrefix(needle) ? 0 : 1, $0.name)
+                < ($1.name.lowercased().hasPrefix(needle) ? 0 : 1, $1.name)
+            }
+            .prefix(limit)
+            .map(\.self)
     }
 
     /// Places grouped by the region they stamp in, for the passport's section pages.

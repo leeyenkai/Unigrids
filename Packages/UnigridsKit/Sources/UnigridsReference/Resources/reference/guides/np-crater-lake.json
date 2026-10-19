@@ -1,0 +1,140 @@
+{
+ "placeID": "np-crater-lake",
+ "contentVersion": 2,
+ "story": [
+  "About 7,700 years ago Mount Mazama, a tall volcano in the Cascade Range, erupted so violently that its summit collapsed into the emptied chamber beneath it. The basin left behind is a caldera five to six miles across. Later eruptions built Wizard Island on its floor; over centuries rain and snow filled it to its present depth of 1,949 feet.",
+  "No rivers flow in or out. The lake holds its level by balancing precipitation against evaporation and seepage, and the absence of sediment is part of why the water is so clear and so blue. Snow is the rule here: an average of 41 feet falls each year at park headquarters, and the rim road is open all the way round only in summer.",
+  "The Klamath people witnessed the eruption and tell of it as a battle between Llao of the Below World and Skell of the Above World. Gold prospectors stumbled on the lake in 1853 and called it Deep Blue Lake.",
+  "William Gladstone Steel spent his life campaigning for a park here after first seeing the lake in the 1880s, led a survey that carried a boat up the mountain to sound its depth, and saw Crater Lake made the country's fifth national park in 1902. Crater Lake Lodge opened on the rim in 1915."
+ ],
+ "sightNotes": {
+  "poi-crater-lake-rim-village": "The lodge, the visitor center and the Sinnott Memorial Overlook, built into the caldera wall.",
+  "poi-crater-lake-wizard-island": "A cinder cone rising from the lake, reached by tour boat in summer.",
+  "poi-crater-lake-phantom-ship": "A small island of ancient lava shaped like a ship under sail.",
+  "poi-crater-lake-cleetwood-cove": "The only trail to the shore: a steep mile down to the water, where swimming is allowed.",
+  "poi-crater-lake-watchman-peak": "A short climb to a fire lookout above Wizard Island, the best sunset view in the park.",
+  "poi-crater-lake-mount-scott": "The park's highest point, a trail to a fire lookout with the whole lake below.",
+  "poi-crater-lake-pinnacles": "Spires of welded volcanic ash in a canyon in the park's southeast corner.",
+  "poi-crater-lake-pumice-desert": "A treeless plain of deep pumice laid down by the eruption, on the north entrance road."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "West Entrance, on OR 62 from Medford; open all year",
+   "South Entrance, on OR 62 from Klamath Falls; open all year",
+   "North Entrance, on OR 138; closed in winter"
+  ],
+  "permits": [
+   "Backcountry camping — a free permit"
+  ],
+  "lodging": [
+   "Crater Lake Lodge on the rim, and cabins at Mazama Village; both open seasonally"
+  ],
+  "seasonalClosures": [
+   "Rim Drive and the North Entrance close for the snowy months; the full loop usually opens by July"
+  ],
+  "camping": [
+   "Lost Creek Campground, first come, first served",
+   "Mazama Campground, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1853",
+   "text": "Gold prospectors come upon the lake and name it Deep Blue Lake."
+  },
+  {
+   "year": "1886",
+   "text": "A survey led by William Gladstone Steel carries a boat to the lake and sounds its depth."
+  },
+  {
+   "year": "1902",
+   "text": "Crater Lake becomes the country's fifth national park."
+  },
+  {
+   "year": "1915",
+   "text": "Crater Lake Lodge opens on the rim."
+  }
+ ],
+ "safety": [
+  "The caldera walls are steep and unstable. Stay behind railings and on trails; the only safe way to the water is the Cleetwood Cove Trail.",
+  "The lake is very cold even in summer. Swim only at Cleetwood Cove or Wizard Island, and only if you are strong in cold water."
+ ],
+ "regulations": [
+  "Swimming is allowed only at Cleetwood Cove and Wizard Island.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Crater Lake National Park — National Park Service",
+   "url": "https://www.nps.gov/crla/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "This is the summer entrance fee and is charged from mid-May through the end of October. Admits one private, non-commercial vehicle (15-passenger capacity or less) and all occupants. Good for 7 days."
+  },
+  {
+   "title": "Private vehicle",
+   "cost": "$20",
+   "detail": "This is the winter entrance fee. Admits one private, non-commercial vehicle (15-passenger capacity or less) and all occupants. Good for 7 days."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Summer rate from mid-May to October 31st."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$15",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Winter rate from 11/1 through mid-May."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Admits one individual with no motor vehicle (bicyclist, hiker, pedestrian). Youth 15 and under are admitted free of charge. Good for 7 days."
+  },
+  {
+   "title": "Snowmobile",
+   "cost": "$15",
+   "detail": "Admits one individual on a snowmobile for travel on snow covered North Entrance Road closed to regular vehicle traffic. Youth 15 and under are admitted free of charge. Good for 7 days."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo",
+  "isPublicDomain": true,
+  "assetName": "np-crater-lake-1.jpg",
+  "caption": "Wizard Island",
+  "altText": "A view of Crater Lake and Wizard Island"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-crater-lake-2.jpg",
+   "caption": "Chaski Bay",
+   "altText": "a view of Phantom Ship and Chaski Bay"
+  },
+  {
+   "credit": "NPS Photot",
+   "isPublicDomain": true,
+   "assetName": "np-crater-lake-3.jpg",
+   "caption": "Crater Lake",
+   "altText": "a view of Crater Lake from the lakeshore"
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-crater-lake-4.jpg",
+   "caption": "Crater Lake from Mount Scott",
+   "altText": "Crater Lake as seen from the summit of Mt. Scott"
+  }
+ ],
+ "operatingHours": "Crater Lake National Park is open year-round, 24 hours a day. Some roads, trails, and facilities, however, are closed seasonally due to snow. North Entrance Road, and West and East Rim Drives close for the season on November 1 (or earlier if there is significant snowfall). Crews begin removing snow from these roads in April, but opening dates vary. The North Entrance Road and West Rim Drive tend to open in early June. The East Rim Drive typically opens in early July.",
+ "weather": "July, August, and September are your best bets for warm, dry weather. In May, June, and October, sunny days alternate with periods of rain and snow. Winters at Crater Lake are long and snowy. Storms from the Pacific Ocean dump an annual average of 41 feet (13.5 meters) of snow at park headquarters. When it's raining or snowing, the lake is usually hidden by clouds. Crater Lake is completely invisible about 50% of the time in the winter!",
+ "directions": "From the west (Medford) - Take Hwy 62 to the West Entrance. Open year-round. From the south (Klamath Falls) - Take Hwy 97 north to Hwy 62 to the South Entrance. Open year-round. The North Entrance is on Hwy 138 and is accessed from Interstate 5 east at Roseburg or Hwy 97 south from Bend and Chemult. Winter travelers from Roseburg take Route 138 east to Route 230 south to Route 62 east to the park's west entrance. Travelers from Bend take Route 97 south to Route 62 to the park's south entrance."
+}

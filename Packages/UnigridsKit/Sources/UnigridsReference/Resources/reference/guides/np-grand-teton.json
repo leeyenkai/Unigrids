@@ -1,0 +1,145 @@
+{
+ "placeID": "np-grand-teton",
+ "contentVersion": 2,
+ "story": [
+  "The Teton Range is young and still rising. Along the Teton Fault the mountain block tilts upward while the valley floor of Jackson Hole drops, which is why the peaks stand so abruptly above the flats. The Grand Teton reaches 13,775 feet, and nine other summits pass 12,000. Glaciers carved the canyons between them and left their moraines as dams at the canyon mouths, holding Jenny, Leigh, Taggart and Bradley lakes.",
+  "Jackson Hole's sagebrush, wetlands and the Snake River support one of the richest assemblages of large animals in the country: moose in the willows, elk that winter on the National Elk Refuge, bison, pronghorn that migrate here from the Green River basin, black bears and grizzlies. With Yellowstone and the surrounding national forests, the park is part of the Greater Yellowstone Ecosystem.",
+  "People have lived in the valley for at least 11,000 years. Fur trappers worked its streams between 1810 and 1840, and homesteaders and dude ranchers followed late in the century; the barns of Mormon Row still stand on the flats. Congress created a small park around the peaks in 1929.",
+  "John D. Rockefeller Jr. quietly bought up land in the valley through the Snake River Land Company, meaning to give it to the nation. The plan met fierce local opposition; President Franklin Roosevelt declared much of the valley a national monument in 1943, and in 1950 the monument and Rockefeller's land were joined to the park."
+ ],
+ "sightNotes": {
+  "poi-grand-teton-jenny-lake": "A glacial lake at the foot of the peaks; a boat crosses to Hidden Falls and Inspiration Point.",
+  "poi-grand-teton-hidden-falls": "A tumbling cascade in Cascade Canyon, reached by trail or by the Jenny Lake boat.",
+  "poi-grand-teton-inspiration-point": "A ledge above Jenny Lake looking across the valley.",
+  "poi-grand-teton-oxbow-bend": "A bend of the Snake River reflecting Mount Moran, with moose and birds at dawn.",
+  "poi-grand-teton-schwabacher-landing": "Beaver ponds on the Snake River that mirror the Tetons at sunrise.",
+  "poi-grand-teton-mormon-row": "Weathered barns of a homestead settlement, with the range behind them.",
+  "poi-grand-teton-snake-river-overlook": "The view of the river below the range that Ansel Adams photographed in 1942.",
+  "poi-grand-teton-signal-mountain": "A summit road with views over Jackson Lake and the whole valley.",
+  "poi-grand-teton-chapel-of-the-transfiguration": "A log chapel whose window frames the peaks."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Moose Entrance, from Jackson in the south",
+   "Moran Entrance, in the east, from Dubois",
+   "Granite Canyon Entrance, on the Moose–Wilson Road",
+   "From Yellowstone in the north, along the John D. Rockefeller Jr. Memorial Parkway"
+  ],
+  "permits": [
+   "Backcountry camping — a permit",
+   "Boating — a park boat permit and an aquatic invasive species inspection"
+  ],
+  "lodging": [
+   "Jackson Lake Lodge, Jenny Lake Lodge, Signal Mountain Lodge, Colter Bay cabins and Headwaters Lodge at Flagg Ranch"
+  ],
+  "seasonalClosures": [
+   "The Teton Park Road between Taggart Lake and Signal Mountain closes to cars in winter; most lodges and campgrounds close from autumn to late spring"
+  ],
+  "camping": [
+   "Colter Bay Campground, reservable",
+   "Colter Bay RV Park, reservable",
+   "Colter Bay Tent Village, reservable",
+   "Gros Ventre Campground, reservable",
+   "Headwaters Campground, reservable",
+   "Jenny Lake Campground, reservable, with some first-come sites",
+   "Lizard Creek Campground, reservable",
+   "Signal Mountain Campground, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1810",
+   "text": "The fur trade era begins in Jackson Hole and lasts about thirty years."
+  },
+  {
+   "year": "1929",
+   "text": "Congress establishes a park around the Teton Range."
+  },
+  {
+   "year": "1943",
+   "text": "President Roosevelt proclaims Jackson Hole National Monument."
+  },
+  {
+   "year": "1950",
+   "text": "The monument and Rockefeller's land are added to Grand Teton National Park."
+  }
+ ],
+ "safety": [
+  "Stay at least 100 yards from bears and wolves and 25 yards from other wildlife. Moose are dangerous at any distance if they feel crowded.",
+  "Carry bear spray and know how to use it.",
+  "Lakes are cold and winds rise fast on the water in the afternoon."
+ ],
+ "regulations": [
+  "Boats require a park permit; motorized boats are allowed only on certain lakes.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Grand Teton National Park — National Park Service",
+   "url": "https://www.nps.gov/grte/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$35",
+   "detail": "Park entrance fee for 7 days for a private, non-commercial vehicle."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$30",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Per person",
+   "cost": "$20",
+   "detail": "Park entrance fee for 7 days for each visitor 16 years and older entering by foot, bicycle, ski, etc."
+  },
+  {
+   "title": "Education/academic groups",
+   "cost": "Free",
+   "detail": "Schools or other bona fide educational institutions (accredited, officially recognized, or tax exempt for educational purposes) may request an educational fee waiver. The fee waiver will allow qualifying groups free entry into the park for educational or scientific purposes. Prior approval required before entry to park. See additional Education Fee Waiver page."
+  },
+  {
+   "title": "Nonresident",
+   "cost": "$100",
+   "detail": "Each non-US resident aged 16 and older visiting Grand Teton National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo/Tobiason",
+  "isPublicDomain": true,
+  "assetName": "np-grand-teton-1.jpg",
+  "caption": "The Teton Range",
+  "altText": "Granite mountains with a cloudy blue sky and green and yellow trees and plants in the foreground"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo/Lehle",
+   "isPublicDomain": true,
+   "assetName": "np-grand-teton-2.jpg",
+   "caption": "Backpacking in the Tetons",
+   "altText": "Two backpackers hiking through the mountains"
+  },
+  {
+   "credit": "NPS Photo/Tobiason",
+   "isPublicDomain": true,
+   "assetName": "np-grand-teton-3.jpg",
+   "caption": "Moulton Barn",
+   "altText": "A wooden barn with snowy peaks in the background and green vegetation in the foreground"
+  },
+  {
+   "credit": "NPS Photo/Bill Bjornstad",
+   "isPublicDomain": true,
+   "assetName": "np-grand-teton-4.jpg",
+   "caption": "Kayaking String Lake",
+   "altText": "Two kayakers on a lake with a mountain in the background"
+  }
+ ],
+ "operatingHours": "Visitors may enter the park at any time, but visitor services and motor vehicle access vary throughout the year.",
+ "weather": "Grand Teton National Park has long, cold winters—snow and frost are possible any month. April, May, & June - Mild days and cool nights alternate with rain and snow. July & August - Warm days and cool nights prevail, with afternoon thundershowers common. September, October, & November - Sunny days and cold nights alternate with rain and occasional snowstorms. December to April - Between storms the days are sunny and nights are frigid. Snow blankets the mountains and valley.",
+ "directions": "Grand Teton National Park is located in northwestern Wyoming; north of the town of Jackson, Wyoming and south of Yellowstone National Park. By car from Salt Lake City, Utah is approximately 300 miles and about 5-6 hours from the park and from Denver, Colorado is approximately 550 miles and about 8-10 hours from the park. Grand Teton National Park is unique in that it is the only national park that has a commercial airport within its border, Jackson Hole Airport (JAC). For current road info:"
+}

@@ -1,0 +1,97 @@
+{
+ "placeID": "np-petrified-forest",
+ "summary": "One of the world's largest and most colourful collections of petrified wood, scattered across the badlands of the Painted Desert in northeastern Arizona — trees that grew more than two hundred million years ago, turned to quartz. Old Route 66 crosses it.",
+ "facts": {
+  "lowestElevationMetres": 1630,
+  "highestElevationMetres": 1900,
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "Half a day to a day"
+ },
+ "story": [
+  "About 225 million years ago, in the Late Triassic, this was a tropical lowland crossed by rivers. Fallen trees washed into them and were buried in sediment rich in volcanic ash. Groundwater carried silica from the ash into the wood, which turned slowly to quartz, coloured red, yellow and purple by iron and other minerals. Erosion of the soft Chinle Formation now exposes the logs across the park.",
+  "The same rocks hold fossils of the animals that lived among the trees — early dinosaurs, crocodile-like phytosaurs and giant amphibians — and the Painted Desert's badlands in bands of red, grey and white. Grassland covers much of the rest, home to pronghorn and many kinds of lizards.",
+  "People have lived here for at least twelve thousand years, making tools from petrified wood. Ancestral Puebloan farmers built villages such as Puerco Pueblo and Agate House, a small dwelling made of petrified wood, and carved thousands of petroglyphs. Later, the railroad and Route 66 crossed the area; the Painted Desert Inn, remodelled by Mary Colter in the late 1940s, served travellers on the old highway.",
+  "Early visitors hauled away petrified wood by the wagonload, and plans to crush logs for abrasives helped prompt President Theodore Roosevelt to proclaim a national monument in 1906. It became a national park in 1962."
+ ],
+ "sights": [
+  {
+   "name": "Blue Mesa",
+   "match": "Blue Mesa Trail",
+   "note": "A loop down among blue, grey and purple badlands strewn with petrified wood."
+  },
+  {
+   "name": "Crystal Forest",
+   "match": "Crystal Forest Trail",
+   "note": "A paved loop through logs with sparkling quartz and amethyst crystals."
+  },
+  {
+   "name": "Giant Logs",
+   "match": "Giant Logs Trail",
+   "note": "Some of the park's largest logs, behind the Rainbow Forest Museum."
+  },
+  {
+   "name": "Agate Bridge",
+   "note": "A petrified log spanning a small ravine, braced by concrete in the early 1900s."
+  },
+  {
+   "name": "Agate House",
+   "match": "Agate House Trail",
+   "note": "A small Ancestral Puebloan dwelling built from blocks of petrified wood."
+  },
+  {
+   "name": "Puerco Pueblo",
+   "note": "Remains of a pueblo of about a hundred rooms, with petroglyphs nearby."
+  },
+  {
+   "name": "Painted Desert Inn",
+   "match": "Painted Desert Inn National Historic Landmark",
+   "note": "A historic Route 66 inn with murals by the Hopi artist Fred Kabotie, now a museum."
+  },
+  {
+   "name": "Tawa Point",
+   "note": "A rim overlook across the colourful Painted Desert badlands."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "North Entrance, at Interstate 40 exit 311",
+   "South Entrance, on US 180 east of Holbrook; a 28-mile park road connects the two"
+  ],
+  "permits": [
+   "Overnight backpacking in the wilderness — a free permit"
+  ],
+  "lodging": [
+   "No lodging or campground; Holbrook is the nearest town"
+  ],
+  "seasonalClosures": [
+   "The park road is open in daylight hours only; summer brings heat and afternoon lightning"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1906",
+   "text": "President Theodore Roosevelt proclaims Petrified Forest National Monument."
+  },
+  {
+   "year": "1962",
+   "text": "Petrified Forest becomes a national park."
+  }
+ ],
+ "safety": [
+  "Shade is scarce. Carry water, and avoid exposed ridges in afternoon thunderstorms."
+ ],
+ "regulations": [
+  "Taking any petrified wood, however small, is prohibited. Buy legally collected wood from shops outside the park.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Petrified Forest National Park — National Park Service",
+   "url": "https://www.nps.gov/pefo/"
+  }
+ ],
+ "contentVersion": 2
+}

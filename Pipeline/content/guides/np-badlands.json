@@ -1,0 +1,110 @@
+{
+ "placeID": "np-badlands",
+ "summary": "Sharply eroded buttes and pinnacles banded in tan, red and yellow, set in the largest undisturbed mixed-grass prairie in the United States. The rock holds one of the world's richest beds of mammal fossils; bison, bighorn sheep and black-footed ferrets live on the grass above it.",
+ "facts": {
+  "highestElevationMetres": 1020,
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "One to two days"
+ },
+ "story": [
+  "The Badlands are layers of sediment — the floor of an ancient inland sea, then the mud, ash and sand of rivers and floodplains — laid down between about 75 and 28 million years ago and now being taken apart. The White River and its creeks cut into the soft rock quickly, around an inch a year in places, carving the buttes, spires and gullies of the Badlands Wall.",
+  "That erosion keeps uncovering fossils. The rocks are among the richest anywhere for the mammals of the Oligocene: early horses, rhinoceroses, sabre-toothed cats and the sheep-sized oreodonts. Visitors have made some of the important finds — the Pig Dig began in 1993 when two hikers noticed bones weathering out of a hillside.",
+  "Above the rock lies the largest undisturbed mixed-grass prairie in the United States, protected in the Badlands Wilderness. Bison were returned to it in the 1960s and black-footed ferrets, once thought extinct, in the 1990s; prairie dog towns, bighorn sheep and pronghorn share the grass.",
+  "The Lakota called this land mako sica, bad land. The park's South Unit lies within the Pine Ridge Reservation and is managed with the Oglala Lakota; one of the last Ghost Dances took place on Stronghold Table in 1890, weeks before the massacre at Wounded Knee, 45 miles south. The area became a national monument in 1939 and a national park in 1978."
+ ],
+ "sights": [
+  {
+   "name": "Notch Trail",
+   "match": "Notch Trailhead",
+   "note": "A canyon walk and a log ladder up to a notch with a view over the White River valley."
+  },
+  {
+   "name": "Door Trail",
+   "match": "Door Trailhead",
+   "note": "A short boardwalk through a break in the Badlands Wall into a maze of eroded formations."
+  },
+  {
+   "name": "Fossil Exhibit Trail",
+   "match": "Fossil Exhibit Trailhead",
+   "note": "A boardwalk with casts of the fossils found in the park, beside the formations they came from."
+  },
+  {
+   "name": "Yellow Mounds Overlook",
+   "note": "Rounded hills of bright yellow and red fossil soils, the oldest exposed layers in the park."
+  },
+  {
+   "name": "Pinnacles Overlook",
+   "note": "A wide view south over spires and gullies to the prairie, often with bighorn sheep nearby."
+  },
+  {
+   "name": "Roberts Prairie Dog Town",
+   "note": "A busy prairie dog colony on the Sage Creek Rim Road."
+  },
+  {
+   "name": "Sage Creek Basin Overlook",
+   "note": "A view over the wilderness prairie where the park's bison range."
+  },
+  {
+   "name": "Big Badlands Overlook",
+   "note": "The first view of the Badlands Wall from the Northeast Entrance, and a sunrise favourite."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Northeast Entrance, from Interstate 90 exit 131",
+   "Pinnacles Entrance, from Interstate 90 exit 110 near Wall",
+   "Interior Entrance, on SD 377 from the town of Interior"
+  ],
+  "lodging": [
+   "Cedar Pass Lodge, inside the park near the Ben Reifel Visitor Center"
+  ],
+  "seasonalClosures": [
+   "Summer brings heat and sudden thunderstorms with hail and lightning; winters are cold, with snow"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1890",
+   "text": "One of the last Ghost Dances is held on Stronghold Table, before the massacre at Wounded Knee."
+  },
+  {
+   "year": "1929",
+   "text": "Congress authorizes Badlands National Monument."
+  },
+  {
+   "year": "1939",
+   "text": "The monument is established."
+  },
+  {
+   "year": "1942",
+   "text": "Part of the South Unit becomes an aerial gunnery range."
+  },
+  {
+   "year": "1978",
+   "text": "Badlands is redesignated a national park."
+  },
+  {
+   "year": "1993",
+   "text": "Two visitors discover the fossil site known as the Pig Dig."
+  }
+ ],
+ "safety": [
+  "Prairie rattlesnakes live here. Watch where you put your hands and feet, especially off trail.",
+  "Thunderstorms build fast in summer. Get off exposed ridges and out of washes when one approaches.",
+  "Give bison a wide berth — at least 25 yards — and never approach them."
+ ],
+ "regulations": [
+  "Fossils may not be collected. Leave a find where it lies and report it at a visitor center.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Badlands National Park — National Park Service",
+   "url": "https://www.nps.gov/badl/"
+  }
+ ],
+ "contentVersion": 2
+}

@@ -1,0 +1,132 @@
+{
+ "placeID": "np-guadalupe-mountains",
+ "contentVersion": 2,
+ "story": [
+  "The Guadalupe Mountains are the most extensive exposure of a Permian fossil reef anywhere. Some 270 million years ago the Capitan Reef grew along the rim of an inland sea, built by sponges, algae and other lime-secreting life. The sea dried up and the reef was buried, then lifted and laid bare; the same reef runs north to Carlsbad Caverns. El Capitan is its cliff-front, a landmark to travellers for centuries.",
+  "The lowlands are desert, but the high country is a sky island of pinyon, ponderosa pine and Douglas-fir. In McKittrick Canyon a spring-fed stream supports bigtooth maples that colour the canyon red and gold in autumn. On the park's western edge, white gypsum and red quartz dunes rise from the Salt Basin. The mountains are known for wind: gusts of sixty miles an hour and more are common.",
+  "People have lived among these canyons for more than ten thousand years. The Mescalero Apache roasted agave here, and their roasting pits survive. In 1858 the Butterfield Overland Mail built its Pinery Station near Pine Springs; in 1869 the army drove the Mescalero from the mountains. Ranchers followed, and the Frijole Ranch house is now a museum.",
+  "The geologist Wallace Pratt fell for McKittrick Canyon in 1921, built a stone cabin there and later gave his land to the nation. Guadalupe Mountains National Park was established in 1972."
+ ],
+ "sightNotes": {
+  "poi-guadalupe-mountains-guadalupe-peak": "The highest point in Texas, a strenuous trail climbing about 3,000 feet from Pine Springs.",
+  "poi-guadalupe-mountains-el-capitan": "The reef's great limestone prow, seen from US 62/180 and the Salt Basin.",
+  "poi-guadalupe-mountains-mckittrick-canyon": "A canyon of maples, oaks and a clear stream, best in late October and early November.",
+  "poi-guadalupe-mountains-pratt-cabin": "Wallace Pratt's stone cabin in McKittrick Canyon.",
+  "poi-guadalupe-mountains-the-grotto": "A small cave of dripstone formations further up McKittrick Canyon.",
+  "poi-guadalupe-mountains-smith-spring": "A shaded spring and pool on a loop from the Frijole Ranch.",
+  "poi-guadalupe-mountains-frijole-ranch": "A stone ranch house and orchard, now a small museum of the area's history.",
+  "poi-guadalupe-mountains-salt-basin-dunes": "Gypsum dunes on the park's remote west side, with the escarpment behind them.",
+  "poi-guadalupe-mountains-the-pinery": "Ruins of the Butterfield Overland Mail station near the visitor center."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Pine Springs, on US 62/180 about 110 miles east of El Paso",
+   "McKittrick Canyon, for day use only",
+   "Dog Canyon, in the north, reached through New Mexico",
+   "Salt Basin Dunes, in the west, on unpaved roads"
+  ],
+  "permits": [
+   "Backcountry camping — a free permit"
+  ],
+  "lodging": [
+   "No lodging in the park; Whites City, Carlsbad and Van Horn are the nearest towns"
+  ],
+  "seasonalClosures": [
+   "Summer brings heat in the lowlands and lightning on the peaks; strong winds can blow at any time of year"
+  ],
+  "camping": [
+   "Blue Ridge Wilderness Campground, reservable",
+   "Bush Mountain Wilderness Campground, reservable",
+   "Dog Canyon Campground, reservable",
+   "Frijole Horse Corral Campground, reservable",
+   "Guadalupe Peak Wilderness Campground, reservable",
+   "Marcus Wilderness Campground, reservable",
+   "McKittrick Ridge Wilderness Campground, reservable",
+   "Mescalero Wilderness Campground, reservable",
+   "Pine Springs Campground, reservable",
+   "Pine Top Wilderness Campground, reservable",
+   "Shumard Canyon Wilderness Campground, reservable",
+   "Tejas Wilderness Campground, reservable",
+   "Wilderness Ridge Wilderness Campground, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1858",
+   "text": "The Butterfield Overland Mail builds Pinery Station."
+  },
+  {
+   "year": "1869",
+   "text": "Cavalry troops drive the Mescalero Apache from the mountains."
+  },
+  {
+   "year": "1921",
+   "text": "Geologist Wallace Pratt buys land in McKittrick Canyon, later donating it."
+  },
+  {
+   "year": "1972",
+   "text": "Guadalupe Mountains National Park is established."
+  }
+ ],
+ "safety": [
+  "There is little water in the park. Carry what you need for the whole hike.",
+  "High winds can knock hikers off balance on exposed ridges; avoid the peaks in storms."
+ ],
+ "regulations": [
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Guadalupe Mountains National Park — National Park Service",
+   "url": "https://www.nps.gov/gumo/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Per person",
+   "cost": "$10",
+   "detail": "An entrance fee of $10 per person (16 years of age and older) is required; entrance fees/passes permit 1-7 consecutive days of use in this national park. Holders of the Annual, Senior, Military, 4th grade and Access Pass can bring in 3 adults free of charge under their pass. Any pass must be displayed in a vehicle while in the national park."
+  },
+  {
+   "title": "Education/academic groups",
+   "cost": "Free",
+   "detail": "Entrance fee waivers are available to groups when the purpose of their visit is educational rather than recreational. Completed applications along with required documentation must be submitted via email. Fee waiver requests must be submitted at least six weeks before a scheduled visit to allow for consideration."
+  }
+ ],
+ "hero": {
+  "credit": "NPS/Bieri",
+  "isPublicDomain": true,
+  "assetName": "np-guadalupe-mountains-1.jpg",
+  "caption": "El Capitan",
+  "altText": "El Capitan with blooming claret cup cacti"
+ },
+ "gallery": [
+  {
+   "credit": "NPS/Yates",
+   "isPublicDomain": true,
+   "assetName": "np-guadalupe-mountains-2.jpg",
+   "caption": "Flooded Salt Flats",
+   "altText": "the slat flats become flooded during monsoon months after large rain events."
+  },
+  {
+   "credit": "NPS/Flores",
+   "isPublicDomain": true,
+   "assetName": "np-guadalupe-mountains-3.jpg",
+   "caption": "Devil's Hall Fall Colors",
+   "altText": "Fall colors in Devil's Hall"
+  },
+  {
+   "credit": "NPS/Buehler",
+   "isPublicDomain": true,
+   "assetName": "np-guadalupe-mountains-4.jpg",
+   "caption": "Pratt Cabin",
+   "altText": "Pratt Cabin in McKittrick Canyon"
+  }
+ ],
+ "operatingHours": "The Pine Springs area, including the campground, visitor center, trailhead, and associated parking areas are open and accessible all of the time during normal operations. Camping is permitted in designated campsites only.",
+ "weather": "The Guadalupe Mountains are known for high winds year-round; gusts can reach 60MPH or higher. In winter the mountains experiences occasional, light snowfalls which seldom last more than a day. From May through October, temperatures vary with highs between 80F-100F+ with lows in the 40F-60F range. November to April is generally milder with highs in between 50F-70F with lows in the 30F-50F range. Elevations above 8,000’ will be about 10F cooler than headquarters, with corresponding wind-chill.",
+ "directions": "Guadalupe Mountains National Park is located on the north side of US Hwy 62/180. If you are traveling east from El Paso, TX, we are 110 miles East of the city. Follow US Hwy 62/180 North to the Pine Springs Visitor Center. If you are traveling from Van Horn, TX, you will travel north on US 54 and make a right-hand turn at the junction of US 62/180 to arrive at the park. If you are traveling west from Carlsbad, NM, you will travel on US Hwy 62/180 South and cross into Texas. Follow signs to the park."
+}

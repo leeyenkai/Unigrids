@@ -1,0 +1,109 @@
+{
+ "placeID": "np-bryce-canyon",
+ "summary": "Not a canyon but a row of natural amphitheaters cut into the edge of a high plateau, crowded with hoodoos — the largest concentration of them anywhere. The rim stands between 8,000 and 9,000 feet, so nights are cold and the stars are some of the clearest in the country.",
+ "facts": {
+  "bestSeasons": [
+   "spring",
+   "summer",
+   "autumn"
+  ],
+  "suggestedTime": "One to two days"
+ },
+ "story": [
+  "Bryce Canyon sits at the top of the Grand Staircase, the great flight of cliffs that climbs north from the Grand Canyon. Its rock is the Claron Formation, lake and river sediments some fifty million years old, coloured pink, orange and white by iron and manganese. Water does the carving: on most nights of the year, from autumn to spring, meltwater freezes in the cracks and pries them wider, and the rims break back into walls, then fins, then hoodoos.",
+  "The park climbs through three life zones, from pinyon and juniper at its lowest to fir and aspen on the plateau and, at Rainbow Point, Great Basin bristlecone pines that have stood for centuries. Utah prairie dogs, a threatened species, live in its meadows. Far from city lights and high in clean air, the park is known for its night sky.",
+  "People have lived on the Paunsaugunt Plateau for at least ten thousand years. The Paiute told of the Legend People, turned to stone by Coyote for their misdeeds. Mormon settlers arrived in the 1870s; one of them, Ebenezer Bryce, ran cattle below the amphitheater and is remembered for calling it a hell of a place to lose a cow.",
+  "Railroad magazines carried the hoodoos to a national audience from 1916. President Harding proclaimed a national monument in 1923, and Congress created Bryce Canyon National Park in 1928."
+ ],
+ "sights": [
+  {
+   "name": "Sunrise Point",
+   "note": "The northern end of Bryce Amphitheater, and the start of the Queen's Garden trail."
+  },
+  {
+   "name": "Sunset Point",
+   "note": "The amphitheater's centre, looking down on Thor's Hammer and the Navajo Loop."
+  },
+  {
+   "name": "Inspiration Point",
+   "note": "Three levels of overlook above the densest crowd of hoodoos."
+  },
+  {
+   "name": "Bryce Point",
+   "note": "The amphitheater's southern tip, with the whole of it laid out below."
+  },
+  {
+   "name": "Navajo Loop",
+   "match": "Navajo Loop Trailhead",
+   "note": "Switchbacks down into Wall Street, a slot between towering walls, and back up past Thor's Hammer."
+  },
+  {
+   "name": "Queen's Garden",
+   "match": "Queens Garden Trailhead",
+   "note": "The gentlest way below the rim, among hoodoos named for their likeness to royalty."
+  },
+  {
+   "name": "Rainbow Point",
+   "note": "The end of the scenic drive and the park's high point, with bristlecone pines on a short loop."
+  },
+  {
+   "name": "Natural Bridge",
+   "note": "A span of red rock seen from a pull-out on the scenic drive."
+  },
+  {
+   "name": "Mossy Cave",
+   "note": "A short walk outside the main entrance to a waterfall and a damp alcove of moss."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "One entrance, on UT 63 south of UT 12; a free, voluntary shuttle runs in the busy season"
+  ],
+  "permits": [
+   "Overnight backpacking on the Under-the-Rim and Riggs Spring trails — a backcountry permit"
+  ],
+  "lodging": [
+   "The Lodge at Bryce Canyon, near Sunset Point"
+  ],
+  "seasonalClosures": [
+   "Snow is possible from October to May; Wall Street on the Navajo Loop closes in winter, and the road beyond can close after storms"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1872",
+   "text": "John Wesley Powell's survey maps the region."
+  },
+  {
+   "year": "1874",
+   "text": "Ebenezer Bryce settles below the amphitheater."
+  },
+  {
+   "year": "1916",
+   "text": "Railroad magazines first publicise the hoodoos."
+  },
+  {
+   "year": "1923",
+   "text": "President Harding proclaims Bryce Canyon National Monument."
+  },
+  {
+   "year": "1928",
+   "text": "Congress establishes Bryce Canyon National Park."
+  }
+ ],
+ "safety": [
+  "The rim is high: altitude makes trails harder and summer thunderstorms bring lightning to exposed points.",
+  "Trails below the rim are steep, and icy in cold months. The climb back out is always uphill."
+ ],
+ "regulations": [
+  "Stay on trails; hoodoos are fragile and the slopes erode easily.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Bryce Canyon National Park — National Park Service",
+   "url": "https://www.nps.gov/brca/"
+  }
+ ],
+ "contentVersion": 2
+}

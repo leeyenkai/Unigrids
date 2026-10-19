@@ -1,0 +1,101 @@
+{
+ "placeID": "np-mammoth-cave",
+ "summary": "The longest known cave system in the world — more than 426 miles of surveyed passages — beneath the green hills and river valleys of south-central Kentucky. People have explored it for at least five thousand years.",
+ "facts": {
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "One to two days"
+ },
+ "story": [
+  "Mammoth Cave is dissolved out of thick limestone that lies under a protective cap of sandstone. Rainwater soaking through the ridges has carved passages at level after level, each marking a stage as the Green River cut its valley deeper. In 1972 explorers linked Mammoth Cave with the Flint Ridge system to the north, and the surveyed length has kept growing since: more than 426 miles by 2025.",
+  "The cave is home to animals adapted to total darkness — eyeless fish and crayfish, and the endangered Kentucky cave shrimp — and bats roost in its passages. Above ground, the park protects forest along the Green and Nolin rivers.",
+  "People have entered the cave for at least five thousand years, mining minerals by the light of cane torches; one ancient miner, crushed by a boulder, was found in 1935. During the War of 1812 slaves dug saltpeter from the cave for gunpowder, and the vats survive. Enslaved guides, Stephen Bishop the best known, explored and mapped miles of passages in the mid-1800s, and the cave became one of the country's first great tourist attractions.",
+  "The park was established in 1941, after contentious land purchases that displaced many local families. It is a World Heritage Site and an international biosphere reserve."
+ ],
+ "sights": [
+  {
+   "name": "Historic Entrance",
+   "match": "Historic Entrance of Mammoth Cave",
+   "note": "The cave's natural mouth, a short walk below the visitor center, breathing cool air."
+  },
+  {
+   "name": "Rotunda",
+   "note": "A huge chamber near the entrance, with the remains of saltpeter mining works."
+  },
+  {
+   "name": "Saltpetre Vats",
+   "match": "Saltpetre Vats (Rotunda)",
+   "note": "Wooden leaching vats from the War of 1812 mining operation."
+  },
+  {
+   "name": "Fat Man's Misery",
+   "match": "Fat Man's Misery - Beneath Your Feet",
+   "note": "A narrow, winding canyon passage on the historic tour."
+  },
+  {
+   "name": "Green River Bluffs",
+   "match": "Green River Bluffs Overlook",
+   "note": "A surface trail along forested bluffs above the river."
+  },
+  {
+   "name": "Green River Ferry",
+   "note": "A small cable ferry that has crossed the river for generations."
+  },
+  {
+   "name": "Floyd Collins Homestead",
+   "note": "The home of the caver whose 1925 entrapment in nearby Sand Cave became a national news story."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "The visitor center is reached from Interstate 65, by way of Park City or Cave City"
+  ],
+  "reservations": "The cave is seen on ranger-led tours, which often sell out; buy tickets ahead.",
+  "lodging": [
+   "The Lodge at Mammoth Cave, beside the visitor center"
+  ],
+  "seasonalClosures": [
+   "The cave stays cool all year; fewer tours run in winter"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1812",
+   "text": "Saltpeter is mined from the cave during the War of 1812."
+  },
+  {
+   "year": "1941",
+   "text": "Mammoth Cave National Park is established."
+  },
+  {
+   "year": "1972",
+   "text": "Explorers connect Mammoth Cave to the Flint Ridge system."
+  },
+  {
+   "year": "1981",
+   "text": "The park is listed as a World Heritage Site."
+  },
+  {
+   "year": "1990",
+   "text": "The park becomes an international biosphere reserve."
+  }
+ ],
+ "safety": [
+  "Cave tours include steep stairs and uneven floors; check each tour's difficulty before you book.",
+  "Bring a light layer: the cave stays cool all year."
+ ],
+ "regulations": [
+  "To protect bats from white-nose syndrome, visitors may be asked to walk over special mats after a tour; do not bring clothing worn in other caves.",
+  "Do not touch cave walls or formations.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Mammoth Cave National Park — National Park Service",
+   "url": "https://www.nps.gov/maca/"
+  }
+ ],
+ "contentVersion": 2
+}

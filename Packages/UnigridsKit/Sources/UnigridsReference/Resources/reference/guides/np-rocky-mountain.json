@@ -1,0 +1,156 @@
+{
+ "placeID": "np-rocky-mountain",
+ "contentVersion": 2,
+ "story": [
+  "The Continental Divide runs through the middle of the park: streams on its west side flow toward the Pacific, and those on the east toward the Atlantic. The Colorado River rises in the park's northwest corner. Elevations climb from montane meadows of ponderosa pine to subalpine forest and then to alpine tundra, where the growing season lasts only weeks.",
+  "Paleo-Indians crossed these mountains on a route near today's Trail Ridge Road, and the Ute and Arapaho later hunted and camped here. Stephen Long's expedition of 1820, for whom Longs Peak is named, saw the range from the plains. Miners founded Lulu City and other camps in the Never Summer Mountains in the 1870s, but the boom was over by 1883.",
+  "Enos Mills, a naturalist from the Estes Park area, campaigned for years for a park, and President Woodrow Wilson signed the act creating it on January 26, 1915. Trail Ridge Road was built between 1929 and 1932 to Fall River Pass and finished to Grand Lake by 1938. It is the highest continuously paved highway in the country, topping out at 12,183 feet.",
+  "Elk gather in the meadows in autumn, when their bugling during the rut draws crowds. Bighorn sheep, moose, black bears and pikas live here too. The park was named one of the first World Biosphere Reserves in 1976, and it has used timed entry in summer since 2020 to ease crowding."
+ ],
+ "sightNotes": {
+  "poi-rocky-mountain-bear-lake": "A subalpine lake at the end of Bear Lake Road, with an easy loop and trails on to Nymph, Dream and Emerald Lakes.",
+  "poi-rocky-mountain-sprague-lake": "An easy, level loop around a lake with views of the Continental Divide.",
+  "poi-rocky-mountain-moraine-park": "A broad meadow on the Big Thompson River, framed by glacial moraines; a good place to see elk.",
+  "poi-rocky-mountain-many-parks-curve": "A Trail Ridge Road overlook across the meadows and valleys of the east side.",
+  "poi-rocky-mountain-forest-canyon-overlook": "A short walk from Trail Ridge Road to a view down a deep glacial canyon.",
+  "poi-rocky-mountain-rock-cut": "The start of the Tundra Communities Trail, a short paved walk across the alpine tundra above 12,000 feet.",
+  "poi-rocky-mountain-holzwarth-historic-site": "A family homestead and guest ranch from the early 1900s in the Kawuneeche Valley.",
+  "poi-rocky-mountain-longs-peak": "The park's highest summit. Its Keyhole Route is a long, exposed scramble, not a hike; climbers set out before dawn."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Beaver Meadows and Fall River Entrances, near Estes Park on the east side",
+   "Grand Lake Entrance, on US 34 on the west side",
+   "Wild Basin, in the southeast corner"
+  ],
+  "reservations": "From late May to mid-October, a timed-entry reservation from Recreation.gov is needed for most of the day, and the Bear Lake Road corridor needs its own. Campgrounds are reserved on Recreation.gov.",
+  "permits": [
+   "Overnight wilderness camping — a permit"
+  ],
+  "lodging": [
+   "No lodges in the park; Estes Park and Grand Lake have places to stay"
+  ],
+  "seasonalClosures": [
+   "Trail Ridge Road closes for winter, usually from mid-October to late May",
+   "Old Fall River Road is a one-way, uphill gravel road, open in summer only"
+  ],
+  "camping": [
+   "Aspenglen Campground, reservable",
+   "Glacier Basin Campground, reservable",
+   "Longs Peak Campground, first come, first served",
+   "Moraine Park Campground, reservable",
+   "Timber Creek Campground, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1820",
+   "text": "Stephen Long's expedition approaches the Rockies; Longs Peak is later named for him."
+  },
+  {
+   "year": "1915",
+   "text": "President Woodrow Wilson signs the act establishing Rocky Mountain National Park."
+  },
+  {
+   "year": "1932",
+   "text": "Trail Ridge Road is completed to Fall River Pass."
+  },
+  {
+   "year": "1976",
+   "text": "The park becomes one of the first World Biosphere Reserves."
+  },
+  {
+   "year": "2020",
+   "text": "Timed-entry reservations begin."
+  }
+ ],
+ "safety": [
+  "Thunderstorms build most summer afternoons. Be off summits and exposed tundra by early afternoon.",
+  "Altitude affects everyone. Drink water, go slowly and descend if you feel unwell.",
+  "Give elk and moose plenty of room, especially in the autumn rut and when calves are young."
+ ],
+ "regulations": [
+  "Pets are not allowed on trails or the tundra.",
+  "Don't feed wildlife, and stay on trails on the tundra; the plants take years to recover.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Rocky Mountain National Park — National Park Service",
+   "url": "https://www.nps.gov/romo/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "1-Day Vehicle Entrance Pass. This pass is valid for one private vehicle to enter RMNP for one day only. All passengers inside the vehicle are covered. Park entrance passes may be purchased in person at any of the park's entrance stations or in advance online at www.recreation.gov."
+  },
+  {
+   "title": "Private vehicle",
+   "cost": "$35",
+   "detail": "7-Day Vehicle Entrance Pass. This vehicle entrance pass is valid for one vehicle to enter RMNP for 7 consecutive days. All passengers inside the vehicle are covered. Park entrance passes may be purchased in person at the any of the park's entrance stations or in advance online at www.recreation.gov."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "1-Day Per Person Entrance Pass. This park entrance fee is for individuals, walk-ins, bicycles, and non-commercial groups to enter RMNP for 1-day only. Park entrance passes may be purchased in person at the any of the park's entrance stations or in advance online at www.recreation.gov."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 1 day. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Park entrance passes may be purchased in person at the any of the park's entrance stations or in advance online at www.recreation.gov."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$30",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Park entrance passes may be purchased in person at the any of the park's entrance stations or in advance online at www.recreation.gov."
+  },
+  {
+   "title": "Per person",
+   "cost": "$20",
+   "detail": "7-Day Per Person Entrance Pass. This park entrance fee is for individuals, walk-ins, bicycles, and non-commercial groups to enter RMNP for 7 consecutive days. Park entrance passes may be purchased in person at the any of the park's entrance stations or in advance online at www.recreation.gov."
+  },
+  {
+   "title": "Nonresident",
+   "cost": "$100",
+   "detail": "Each non-US resident aged 16 and older visiting Rocky Mountain National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group."
+  }
+ ],
+ "hero": {
+  "credit": "NPS/J.Marino",
+  "isPublicDomain": true,
+  "assetName": "np-rocky-mountain-1.jpg",
+  "caption": "Cub Lake in fall",
+  "altText": "Cub Lake with reflections. Yellow and brown grasses line the edge of the lake."
+ },
+ "gallery": [
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-rocky-mountain-2.jpg",
+   "caption": "Hiking in fall",
+   "altText": "A man is standing on a bridge and looking up at a waterfall"
+  },
+  {
+   "credit": "NPS/A.Schonlau",
+   "isPublicDomain": true,
+   "assetName": "np-rocky-mountain-3.jpg",
+   "caption": "Pika with thistle",
+   "altText": "A pika has harvested a tundra thistle"
+  },
+  {
+   "credit": "NPS/D.Turk",
+   "isPublicDomain": true,
+   "assetName": "np-rocky-mountain-4.jpg",
+   "caption": "Longs Peak and Mount Meeker",
+   "altText": "Snow dusts the surface of Longs Peak and Mount Meeker"
+  }
+ ],
+ "operatingHours": "While certain roads and facilities may be closed for the winter season, Rocky Mountain National Park is open 24 hours a day, 365 days a year.",
+ "weather": "Weather can change quickly in Rocky Mountain National Park due to the mountains and elevation. Elevation in the park ranges from 7,800 feet above sea level to over 14,000 feet at the top of the tallest mountain peaks. Weather conditions can change quickly throughout the day. For detailed weather information, visit https://www.nps.gov/romo/planyourvisit/all-about-weather.htm For the most up-to-date weather forecasts, visit the National Weather Service webpage for Rocky at https://www.weather.gov/bou/rmnp",
+ "directions": "Rocky Mountain National Park is located in northern Colorado. To visit the east side (near Estes Park, CO), follow U.S. I-25 to U.S. Hwy 34 or 36 west to Estes Park. To visit the west side of the park, follow I-70 to U.S Hwy 40 towards Granby, take US Hwy 34 east to Grand Lake, CO."
+}

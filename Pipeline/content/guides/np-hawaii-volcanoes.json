@@ -1,0 +1,115 @@
+{
+ "placeID": "np-hawaii-volcanoes",
+ "summary": "Two of the most active volcanoes on Earth — Kīlauea and Mauna Loa — from summit to sea, where lava has added new land within living memory. In Hawaiian tradition the crater is home to Pele, and the park is a World Heritage Site.",
+ "facts": {
+  "lowestElevationMetres": 0,
+  "highestElevationMetres": 4170,
+  "suggestedTime": "Two days"
+ },
+ "story": [
+  "The island of Hawaiʻi sits over a hotspot in the Earth's mantle, and its volcanoes are still building it. Mauna Loa, rising to 13,680 feet, is the largest volcano on the planet; Kīlauea, on its flank, is one of the most active. Their lava is fluid, so it builds broad shield volcanoes, fills craters, runs to the sea and turns to new coastline.",
+  "Kīlauea erupted almost continuously from 1983 to 2018. In 2018 its summit collapsed, the park's Kīlauea district closed for four months, and lava destroyed hundreds of homes outside the park. Since December 2020 the summit crater, Halemaʻumaʻu, has erupted again and again; Mauna Loa erupted in 2022 after nearly forty years.",
+  "Life arrives on new lava within years. ʻŌhiʻa lehua trees, with red blossoms, are often the first to take root; islands of old forest left untouched by flows, called kīpuka, shelter native birds and insects. Many of the park's species exist nowhere else.",
+  "Kīlauea is the home of Pele, the volcano goddess, in Hawaiian tradition. Footprints left in ash by people caught in an eruption in 1790 are still visible. Missionaries reached the summit in 1823, a hotel stood on the rim from the 1840s, and Hawaii National Park was established in 1916; it became Hawaiʻi Volcanoes National Park in 1961 and a World Heritage Site in 1987."
+ ],
+ "sights": [
+  {
+   "name": "Uēkahuna",
+   "note": "A bluff above the summit caldera, and one of the main places to watch an eruption when there is one."
+  },
+  {
+   "name": "Kīlauea Iki",
+   "match": "Kīlauea Iki Overlook",
+   "note": "A crater whose floor, a lava lake in 1959, is crossed by a popular trail."
+  },
+  {
+   "name": "Nāhuku Lava Tube",
+   "note": "A walk through a lit lava tube in fern-filled rainforest."
+  },
+  {
+   "name": "Haʻakulamanu (Sulphur Banks)",
+   "note": "Steaming vents crusted yellow with sulphur, on a boardwalk."
+  },
+  {
+   "name": "Devastation Trail",
+   "note": "A path across cinder fall from the 1959 eruption, where forest is returning."
+  },
+  {
+   "name": "Puʻuloa Petroglyphs",
+   "note": "Thousands of petroglyphs carved into lava, off Chain of Craters Road."
+  },
+  {
+   "name": "Hōlei Sea Arch",
+   "note": "A lava arch at the sea, where Chain of Craters Road ends."
+  },
+  {
+   "name": "Kīpukapuaulu",
+   "note": "An island of old forest surrounded by lava flows, rich in native birds."
+  },
+  {
+   "name": "Kahuku Unit",
+   "match": "The Kahuku Unit",
+   "note": "A former ranch on Mauna Loa's flank, with trails over young lava and grassland."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Main entrance on Highway 11, thirty miles southwest of Hilo",
+   "Kahuku Unit, further south on Highway 11"
+  ],
+  "permits": [
+   "Backcountry camping, including the Mauna Loa summit trail — a permit"
+  ],
+  "lodging": [
+   "Volcano House, on the rim of the summit caldera, and cabins at Nāmakanipaio"
+  ],
+  "seasonalClosures": [
+   "Eruptions, earthquakes and volcanic gas can close parts of the park without warning; the summit is often cool and rainy"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1790",
+   "text": "People caught in an explosive eruption leave footprints in the ash."
+  },
+  {
+   "year": "1823",
+   "text": "Missionaries William Ellis and Asa Thurston reach Kīlauea."
+  },
+  {
+   "year": "1916",
+   "text": "Hawaii National Park is established."
+  },
+  {
+   "year": "1983",
+   "text": "Kīlauea begins an East Rift Zone eruption that lasts 35 years."
+  },
+  {
+   "year": "1987",
+   "text": "The park is listed as a World Heritage Site."
+  },
+  {
+   "year": "2018",
+   "text": "Kīlauea's summit collapses, and the Kīlauea district closes for four months."
+  },
+  {
+   "year": "2022",
+   "text": "Mauna Loa erupts for the first time in nearly forty years."
+  }
+ ],
+ "safety": [
+  "Volcanic gas is dangerous for people with heart or breathing problems, pregnant women and young children. Check the air-quality advisories each day.",
+  "Stay on marked trails and behind barriers: crater edges and lava fields hide cracks and overhangs."
+ ],
+ "regulations": [
+  "Do not take lava rocks or sand; they are part of the park.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Hawaiʻi Volcanoes National Park — National Park Service",
+   "url": "https://www.nps.gov/havo/"
+  }
+ ],
+ "contentVersion": 2
+}

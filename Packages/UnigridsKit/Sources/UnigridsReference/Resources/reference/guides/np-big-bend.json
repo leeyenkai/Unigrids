@@ -1,0 +1,124 @@
+{
+ "placeID": "np-big-bend",
+ "contentVersion": 2,
+ "story": [
+  "The rocks of Big Bend record a sea, a swamp and a string of volcanoes. Limestone laid down on the floor of a Cretaceous ocean forms the walls of Santa Elena and Boquillas canyons; above it, river and delta deposits hold the bones of dinosaurs and the giant pterosaur Quetzalcoatlus. Volcanic eruptions tens of millions of years later built the Chisos Mountains, and the Rio Grande has since cut its canyons straight through the uplifted blocks.",
+  "The park is the largest protected stretch of Chihuahuan Desert in the United States, and among the richest for life: more than 1,200 kinds of plants, over 450 of birds, and mammals from javelina to black bears, which returned on their own from Mexico. The Chisos, cooler and wetter than the desert around them, hold pinyon, oak and juniper woodland where the Colima warbler nests, the only place in the United States it does.",
+  "People have lived here for at least ten thousand years. Chisos and Jumano peoples were displaced by the Mescalero Apache, and Comanche raiders crossed the river on their trail into Mexico. Spanish presidios came and went; after 1848 the river became an international boundary, and ranchers, farmers and quicksilver miners moved in. Texas bought the land and gave it to the nation, and the park was established in 1944.",
+  "The park administers 118 miles of the river, and across it lies Mexico. At Boquillas a small port of entry lets visitors with a passport cross by rowboat to the village on the far bank."
+ ],
+ "sightNotes": {
+  "poi-big-bend-santa-elena-canyon": "The Rio Grande leaves a 1,500-foot cleft in a wall of limestone; a short trail follows it in.",
+  "poi-big-bend-the-window": "The Chisos Basin's one outlet, a pour-off framing the desert to the west — best at sunset.",
+  "poi-big-bend-lost-mine-trail": "A climb through oak and juniper to a ridge with views deep into the Chisos and over Mexico.",
+  "poi-big-bend-emory-peak": "The highest point in the park, reached by a long trail and a short scramble.",
+  "poi-big-bend-boquillas-canyon": "The river enters a deep limestone canyon at the park's eastern end.",
+  "poi-big-bend-hot-springs": "A stone tub of 105°F spring water on the riverbank, beside the ruins of an early tourist resort.",
+  "poi-big-bend-mule-ears": "Twin volcanic peaks seen from the Ross Maxwell Scenic Drive.",
+  "poi-big-bend-castolon-historic-district": "Adobe buildings of a border trading post and army camp, near the river."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Persimmon Gap, on US 385 seventy miles south of Marathon",
+   "Maverick, from Study Butte and Terlingua on the west side"
+  ],
+  "permits": [
+   "Backcountry camping and river trips — a permit from a visitor center",
+   "Crossing to Boquillas, Mexico — a passport, at the Boquillas Port of Entry when it is open"
+  ],
+  "lodging": [
+   "Chisos Mountains Lodge, in the Chisos Basin"
+  ],
+  "seasonalClosures": [
+   "May to August are extremely hot in the desert and along the river; the Chisos run 10 to 15°F cooler"
+  ],
+  "camping": [
+   "Chisos Basin Campground, reservable",
+   "Cottonwood Campground, reservable",
+   "Rio Grande Village Campground, reservable",
+   "Rio Grande Village RV, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1848",
+   "text": "The Treaty of Guadalupe Hidalgo makes the Rio Grande an international boundary."
+  },
+  {
+   "year": "1944",
+   "text": "Big Bend National Park is established."
+  },
+  {
+   "year": "2013",
+   "text": "The Boquillas crossing reopens as an official port of entry."
+  }
+ ],
+ "safety": [
+  "Carry far more water than you think you need. Desert heat is dangerous most of the year, and services are many miles apart.",
+  "The Rio Grande looks gentle but has strong currents and sudden drop-offs. Swimming is not advised.",
+  "Black bears and mountain lions live in the Chisos. Store food properly and keep children close."
+ ],
+ "regulations": [
+  "Cross into Mexico only at the Boquillas Port of Entry, when it is open, with a passport.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Big Bend National Park — National Park Service",
+   "url": "https://www.nps.gov/bibe/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "Admits one private, non-commercial vehicle (15 passenger capacity or less); valid for 7 days."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Admits one individual. Typically used for bicyclists and pedestrians; valid for 7 days."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 7 days. Admits up to 1 private, non-commercial motorcycle with up to 2 total passengers."
+  }
+ ],
+ "hero": {
+  "credit": "NPS",
+  "isPublicDomain": true,
+  "assetName": "np-big-bend-1.jpg",
+  "caption": "Blooming Cenizo",
+  "altText": "Blooming Cenizo"
+ },
+ "gallery": [
+  {
+   "credit": "NPS / C. Negele",
+   "isPublicDomain": true,
+   "assetName": "np-big-bend-2.jpg",
+   "caption": "Century Plant Agave",
+   "altText": "Century Plant Agave"
+  },
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-big-bend-3.jpg",
+   "caption": "Vermilion Flycatcher",
+   "altText": "Vermilion Flycatcher"
+  },
+  {
+   "credit": "NPS / B. Trester",
+   "isPublicDomain": true,
+   "assetName": "np-big-bend-4.jpg",
+   "caption": "Fascinating Geology",
+   "altText": "Fascinating Geology"
+  }
+ ],
+ "operatingHours": "Big Bend National Park is always open. You can enter and exit at any time of the day or night. Park entrances are open 24 hours daily, all year.",
+ "weather": "Big Bend is in the Chihuahuan Desert. Sunshine is abundant year-round. Spring (March) is typically warm and pleasant and is the park's busiest season. Summer heat begins in May. It is extremely HOT. Temperatures vary greatly between the desert which is usually well above 100 degrees F by late morning, and the Chisos Mountains, which can be 10-15 degrees cooler. May - August are the hottest months. Fall and Winter (Nov-Feb) are mild and pleasant, but some freezing does occur. Snow is rare.",
+ "directions": "Several highways lead to Big Bend National Park: TX 118 from Alpine to Study Butte or FM 170 from Presidio to Study Butte (then 26 miles east to park headquarters) or US 90 or US 385 to Marathon (then 70 miles south to park headquarters). Distances between towns and services are considerable. Be sure you have plenty of gas, food, water, and supplies for your trip. There are no electric vehicle charging stations in Big Bend National Park. The closest EV charging station is 130 miles away in Fort Stockton."
+}

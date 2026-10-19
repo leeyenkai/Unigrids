@@ -1,0 +1,101 @@
+{
+ "placeID": "np-great-basin",
+ "contentVersion": 2,
+ "story": [
+  "The Great Basin is the vast region between the Sierra Nevada and the Wasatch Range where rivers never reach the sea; they end in lakes and sinks. Across it run more than a hundred north–south mountain ranges separated by flat valleys, the Basin and Range. The park protects the southern Snake Range, which climbs almost eight thousand feet from the valley floor to Wheeler Peak, where a small glacier survives in a north-facing cirque.",
+  "Climbing the mountain is like travelling north: from sagebrush and pinyon-juniper through aspen, fir and limber pine to alpine tundra. Near the treeline grow Great Basin bristlecone pines, gnarled survivors of wind and cold and the oldest known living non-clonal organisms; some here are thousands of years old.",
+  "On the mountain's lower slope lies Lehman Caves, a marble cave richly decorated with stalactites, draperies and hundreds of rare shield formations. The rancher Absalom Lehman made it known to visitors in the 1880s, and it became a national monument in 1922.",
+  "The national park was created around the monument in 1986. Far from cities and high in dry air, it has some of the darkest skies in the contiguous United States, and its astronomy programs show the Milky Way casting shadows."
+ ],
+ "sightNotes": {
+  "poi-great-basin-lehman-caves": "A decorated marble cave, seen on ranger-led tours.",
+  "poi-great-basin-wheeler-peak-scenic-drive": "A road climbing to 10,000 feet, with views across the Snake Valley.",
+  "poi-great-basin-bristlecone-grove": "An interpretive trail among ancient bristlecone pines below Wheeler Peak.",
+  "poi-great-basin-wheeler-cirque-glacier": "A small glacier beneath the peak's north face, past the bristlecone grove.",
+  "poi-great-basin-stella-lake": "An alpine lake reflecting Wheeler Peak, on an easy loop from the end of the scenic drive.",
+  "poi-great-basin-wheeler-peak": "The park's summit, a long, high, strenuous day hike.",
+  "poi-great-basin-lexington-arch": "A large limestone arch in the park's remote south end."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "NV 488 from the town of Baker, which lies on NV 487 off US 6 and US 50"
+  ],
+  "reservations": "Lehman Caves is seen only on ranger-led tours; buy tickets ahead, especially in summer.",
+  "lodging": [
+   "No lodging in the park; small motels and inns in Baker"
+  ],
+  "seasonalClosures": [
+   "The upper Wheeler Peak Scenic Drive closes from late autumn until snow clears, usually in early summer; snow can fall at high elevations in any month"
+  ],
+  "camping": [
+   "Baker Creek Campground, reservable",
+   "Dump Station",
+   "Grey Cliffs Campground, reservable",
+   "Lower Lehman Creek Campground, reservable",
+   "Snake Creek Primitive Campgrounds, first come, first served",
+   "Upper Lehman Creek Campground, reservable",
+   "Wheeler Peak Campground, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1922",
+   "text": "President Harding proclaims Lehman Caves National Monument."
+  },
+  {
+   "year": "1986",
+   "text": "Great Basin National Park is established around the monument."
+  }
+ ],
+ "safety": [
+  "Wheeler Peak's summit is high and exposed. Start early, turn back if storms build, and expect thin air.",
+  "The cave is cool all year; bring a layer, and watch your head."
+ ],
+ "regulations": [
+  "Do not touch cave formations.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Great Basin National Park — National Park Service",
+   "url": "https://www.nps.gov/grba/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS Photo",
+  "isPublicDomain": true,
+  "assetName": "np-great-basin-1.jpg",
+  "caption": "Wheeler cirque",
+  "altText": "blue sky with green trees in mountain cirque"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-great-basin-2.jpg",
+   "caption": "Lehman Caves Grand Palace Parachute formation",
+   "altText": "Brown and tan cave formation in the shape of a parachute"
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-great-basin-3.jpg",
+   "caption": "Great Basin Visitor Center",
+   "altText": "Tan and green Visitor center with mountains in the background."
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-great-basin-4.jpg",
+   "caption": "Alpine Flowers",
+   "altText": "White, yellow,, and pink alpine flowers."
+  }
+ ],
+ "operatingHours": "Park Grounds and Trails Check \"Visitor Centers\" tab for facility-specific hours",
+ "weather": "There is almost an 8,000 ft (2,400 m) difference in elevation between Wheeler Peak and the valley floor. Weather conditions in the park vary with elevation. In late spring and early summer, days in the valley may be hot, yet the snow pack may not have melted in the higher elevations. The Great Basin is a desert, with low relative humidity and sharp drops in temperature at night. In the summer, fierce afternoon thunderstorms are common. It can snow any time of the year at high elevations.",
+ "directions": "From the East or West: From U.S. Highway 6 & 50, turn south on Nevada State Highway 487 and travel 5 miles to Baker, NV. In Baker turn west on Highway 488 and travel 5 miles to the park. From the South (Utah): Travel north on Utah State Highway 21 through Milford, UT and Garrison, UT, Highway 487. Turn west on Highway 488 in Baker and travel 5 miles to the park. From the South (Nevada): Travel north on U.S. Highway 93. No public transportation is available to, or in, Great Basin National Park."
+}

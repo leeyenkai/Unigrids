@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "builtOn": "2026-10-18",
-  "provenance": "seed",
-  "note": "Hand-authored pilot seed. All 63 national parks by name, state and approximate centre; deep content for Zion, Acadia, Yellowstone and Great Smoky Mountains. Figures are unverified and are replaced by the data pipeline."
+ "version": 2,
+ "builtOn": "2026-10-19",
+ "provenance": "pipeline",
+ "note": "All 63 national parks with a full guide, and 474 more places on the map: other NPS units from the NPS Data API, state parks and other agencies' land from PAD-US. Guide prose is written for Unigrids; descriptions, fees, hours, visitor centres and photographs are the NPS's own."
 }

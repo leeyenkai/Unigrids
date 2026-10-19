@@ -1,0 +1,114 @@
+{
+ "placeID": "np-death-valley",
+ "summary": "The hottest, driest and lowest national park: salt flats 282 feet below sea level at Badwater, dunes, badlands and canyons under mountains that keep their snow into spring. The largest national park outside Alaska.",
+ "facts": {
+  "lowestElevationMetres": -86,
+  "highestElevationMetres": 3368,
+  "bestSeasons": [
+   "autumn",
+   "winter",
+   "spring"
+  ],
+  "suggestedTime": "Two to three days"
+ },
+ "story": [
+  "Death Valley is a trough between mountain ranges, pulled apart along faults as the Panamint Range rises on one side and the valley floor drops on the other. Badwater Basin, at 282 feet below sea level, is the lowest point in North America; Telescope Peak, more than eleven thousand feet high, stands a few miles away. In the ice ages the valley held a lake, and its evaporation left the salt pan that covers the floor today.",
+  "The mountains wring the moisture out of Pacific storms before they arrive, and the valley floor averages under two inches of rain a year. Summer heat is extreme: on July 10, 1913, Furnace Creek recorded 134°F, the highest air temperature ever measured on Earth. Life persists all the same. Pupfish survive in its springs, including the endangered Devils Hole pupfish in a single limestone pool, and after a wet winter the desert can flower in a superbloom.",
+  "The Timbisha Shoshone have lived here for over a thousand years, and part of the valley is still their homeland. Emigrants trying a shortcut to the California goldfields in 1849 were trapped here for weeks, and gave the valley its name as they left it.",
+  "Borax made the valley famous: from 1883 to 1889, twenty-mule teams hauled wagons of it 165 miles to the railroad at Mojave. President Hoover proclaimed a national monument in 1933, and the California Desert Protection Act of 1994 enlarged it into a national park."
+ ],
+ "sights": [
+  {
+   "name": "Badwater Basin",
+   "note": "Salt flats at 282 feet below sea level, the lowest point in North America."
+  },
+  {
+   "name": "Zabriskie Point",
+   "note": "Golden badlands of eroded lake sediments, a classic sunrise view."
+  },
+  {
+   "name": "Dantes View",
+   "note": "A mile above Badwater, with the whole valley floor laid out below."
+  },
+  {
+   "name": "Mesquite Flat Sand Dunes",
+   "note": "The park's most accessible dunes, near Stovepipe Wells."
+  },
+  {
+   "name": "Artists Palette",
+   "note": "Hillsides coloured green, pink and purple by oxidised minerals, on a one-way scenic drive."
+  },
+  {
+   "name": "Golden Canyon",
+   "note": "A walk into eroded badlands toward Red Cathedral."
+  },
+  {
+   "name": "Ubehebe Crater",
+   "note": "A volcanic crater half a mile across, blasted out by steam explosions."
+  },
+  {
+   "name": "Mosaic Canyon",
+   "note": "A narrow canyon of polished marble and mosaic-like breccia."
+  },
+  {
+   "name": "Harmony Borax Works",
+   "note": "Ruins of the borax works that sent the twenty-mule teams across the desert."
+  },
+  {
+   "name": "Telescope Peak",
+   "note": "The park's highest summit, a long hike from Mahogany Flat with views to Mount Whitney."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "CA 190 from the west via Panamint Springs, and from the east via Death Valley Junction",
+   "NV 374 from Beatty, Nevada",
+   "CA 178 from Shoshone, in the south"
+  ],
+  "lodging": [
+   "The Inn and The Ranch at Death Valley in Furnace Creek, Stovepipe Wells Village, and Panamint Springs"
+  ],
+  "seasonalClosures": [
+   "From May to September the valley floor is dangerously hot; flash floods have closed park roads, sometimes for months"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1849",
+   "text": "Stranded emigrants bound for the goldfields give Death Valley its name."
+  },
+  {
+   "year": "1883",
+   "text": "Twenty-mule teams begin hauling borax out of the valley."
+  },
+  {
+   "year": "1913",
+   "text": "Furnace Creek records 134°F, the hottest air temperature ever measured."
+  },
+  {
+   "year": "1933",
+   "text": "President Hoover proclaims Death Valley National Monument."
+  },
+  {
+   "year": "1994",
+   "text": "The California Desert Protection Act makes it a national park."
+  }
+ ],
+ "safety": [
+  "In hot months, do not hike at low elevations after 10 a.m. Carry at least a gallon of water a person a day, and more if you hike.",
+  "If your car breaks down, stay with it. Cell service is rare and distances are great.",
+  "Stay out of abandoned mines; shafts can be unmarked and unstable."
+ ],
+ "regulations": [
+  "Driving off established roads is prohibited.",
+  "Leave rocks where they are, including those on the Racetrack playa.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Death Valley National Park — National Park Service",
+   "url": "https://www.nps.gov/deva/"
+  }
+ ],
+ "contentVersion": 2
+}

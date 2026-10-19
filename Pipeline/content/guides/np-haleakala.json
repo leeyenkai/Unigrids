@@ -1,0 +1,93 @@
+{
+ "placeID": "np-haleakala",
+ "summary": "The summit of Maui's great volcano, 10,023 feet up, where people gather above the clouds to watch the sun rise over a vast crater of cinder cones — and, on the far side of the mountain, the rainforest, waterfalls and pools of the Kīpahulu coast.",
+ "facts": {
+  "suggestedTime": "A day for the summit, another for Kīpahulu"
+ },
+ "story": [
+  "Haleakalā is the house of the sun: in Hawaiian tradition the demigod Maui snared the sun here to slow its passage across the sky. The mountain is a shield volcano that built most of East Maui, and its summit holds a great depression seven miles long, scattered with cinder cones in red, orange and black. It is not a true crater but a valley carved by erosion and refilled by later eruptions; the volcano last erupted between about 1480 and 1600.",
+  "The summit is home to life found nowhere else. The ʻāhinahina, the Haleakalā silversword, grows only here, living for decades before it blooms once and dies. The nēnē, the Hawaiian goose, was gone from the park until 1962, when Boy Scouts carried young birds into the crater in their packs; Hawaiian petrels nest in burrows on the summit cliffs.",
+  "Down the mountain's eastern flank, the Kīpahulu district runs to the sea through rainforest and bamboo. Streams drop in falls and pools through ʻOheʻo Gulch, and the Pīpīwai Trail climbs to Waimoku Falls. Hawaiians farmed and fished this coast for centuries.",
+  "Haleakalā was part of Hawaii National Park, created in 1916, until it became a park of its own in 1961. The summit is sacred to Native Hawaiians, and the park works with them to protect it."
+ ],
+ "sights": [
+  {
+   "name": "Puʻuʻulaʻula Summit",
+   "match": "Puʻuʻulaʻula Overlook",
+   "note": "The highest point on Maui, a shelter and viewpoint over the crater, the classic sunrise spot."
+  },
+  {
+   "name": "Kalahaku Overlook",
+   "note": "A view into the crater, with silverswords growing nearby."
+  },
+  {
+   "name": "Leleiwi Overlook",
+   "note": "A quieter view across the crater, where your shadow may appear ringed by a rainbow in the clouds."
+  },
+  {
+   "name": "Keoneheʻeheʻe Trail",
+   "match": "Keoneheʻeheʻe Trailhead",
+   "note": "Sliding Sands, a trail down into the crater among cinder cones."
+  },
+  {
+   "name": "Hosmer Grove",
+   "match": "Hosmer Grove Trailhead",
+   "note": "A short loop at the edge of native shrubland, good for spotting Hawaiian honeycreepers."
+  },
+  {
+   "name": "Pools of ʻOheʻo",
+   "note": "Pools and falls in a stream gulch on the Kīpahulu coast."
+  },
+  {
+   "name": "Kūloa Point",
+   "note": "A headland walk at Kīpahulu past old Hawaiian sites to the sea."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Summit District, by Crater Road (HI 378) from upcountry Maui",
+   "Kīpahulu District, on the far side of the mountain, by the Hāna Highway; no road links the two"
+  ],
+  "reservations": "In recent years a vehicle reservation has been needed to drive to the summit for sunrise. Check nps.gov/hale before you go.",
+  "permits": [
+   "Wilderness cabins and campsites in the crater — a permit, booked ahead"
+  ],
+  "seasonalClosures": [
+   "The summit can be near freezing at dawn in any month; there is no fuel in the park"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1916",
+   "text": "Haleakalā becomes part of the new Hawaii National Park."
+  },
+  {
+   "year": "1961",
+   "text": "Haleakalā National Park is established as a park of its own."
+  },
+  {
+   "year": "1962",
+   "text": "Nēnē are reintroduced to the crater with the help of Boy Scouts."
+  },
+  {
+   "year": "1980",
+   "text": "The park becomes part of an International Biosphere Reserve."
+  }
+ ],
+ "safety": [
+  "The summit is high and cold. Dress warmly for sunrise, and take it slowly if you feel the altitude.",
+  "Flash floods can sweep through ʻOheʻo Gulch with little warning. Stay out of streams when it rains upstream."
+ ],
+ "regulations": [
+  "Stay on trails: silverswords' shallow roots are killed by footsteps.",
+  "Do not feed nēnē; they become road-killed beggars.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Haleakalā National Park — National Park Service",
+   "url": "https://www.nps.gov/hale/"
+  }
+ ],
+ "contentVersion": 2
+}

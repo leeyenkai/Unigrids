@@ -1,0 +1,137 @@
+{
+ "placeID": "np-theodore-roosevelt",
+ "contentVersion": 2,
+ "story": [
+  "The Little Missouri River has carved the soft rock of western North Dakota into badlands of banded clay, sandstone and lignite. In places, burning coal seams baked the clay above them into red scoria. The park has three units along the river: the South Unit near Medora, the North Unit some eighty miles north, and the remote Elkhorn Ranch between them.",
+  "Theodore Roosevelt came here in September 1883 to hunt bison and bought into the Maltese Cross Ranch. After his mother and his wife died on the same day in February 1884, he returned seeking solitude and started a second ranch, the Elkhorn. The hard winter of 1886–87 killed much of his herd, and his years here shaped the conservation policies he pursued as president.",
+  "After his death in 1919, the area was studied as a park site. The Civilian Conservation Corps built roads and shelters in the 1930s, and in 1947 President Truman established Theodore Roosevelt National Memorial Park, the only national memorial park ever created. It became a national park in 1978, when part of it was designated wilderness.",
+  "Bison were brought back in 1956, and elk, pronghorn, bighorn sheep and prairie dogs live here too. A herd of feral horses roams the South Unit, kept since 1970 as part of the historic scene."
+ ],
+ "sightNotes": {
+  "poi-theodore-roosevelt-painted-canyon-overlook": "A wide view over colourful badlands, right off Interstate 94.",
+  "poi-theodore-roosevelt-maltese-cross-cabin": "Roosevelt's first ranch cabin, moved to sit behind the South Unit Visitor Center in Medora.",
+  "poi-theodore-roosevelt-wind-canyon": "A short trail to a bluff above the Little Missouri, with wind-sculpted sandstone. Good at sunset.",
+  "poi-theodore-roosevelt-buck-hill": "A short climb to one of the highest points in the South Unit.",
+  "poi-theodore-roosevelt-prairie-dog-town": "A pull-off beside a busy black-tailed prairie dog colony on the South Unit's scenic drive.",
+  "poi-theodore-roosevelt-coal-vein-trail": "A short loop where a lignite seam burned for years, leaving scoria and collapsed ground.",
+  "poi-theodore-roosevelt-elkhorn-ranch": "The site of Roosevelt's home ranch; only the foundation stones remain. Reached by gravel road.",
+  "poi-theodore-roosevelt-river-bend-overlook": "A North Unit viewpoint with a stone shelter built by the Civilian Conservation Corps.",
+  "poi-theodore-roosevelt-oxbow-overlook": "The end of the North Unit's scenic drive, above a bend of the Little Missouri.",
+  "poi-theodore-roosevelt-caprock-coulee": "A North Unit loop past caprock formations and through a coulee."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "South Unit — in Medora, off Interstate 94 at exits 24 and 27",
+   "Painted Canyon Visitor Center — off Interstate 94, east of Medora",
+   "North Unit — on US 85, about 14 miles south of Watford City",
+   "Elkhorn Ranch Unit — remote, on gravel roads; check conditions first"
+  ],
+  "permits": [
+   "Backcountry camping — a free permit"
+  ],
+  "lodging": [
+   "No lodging in the park; Medora and Watford City have places to stay",
+   "Cottonwood Campground (South Unit) and Juniper Campground (North Unit)"
+  ],
+  "seasonalClosures": [
+   "In winter, snow can close some or all park roads",
+   "The North Unit is on Central time; the South Unit and Medora are on Mountain time"
+  ],
+  "camping": [
+   "Cottonwood Campground, reservable",
+   "Juniper Campground, reservable",
+   "Roundup Group Horse Camp, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1883",
+   "text": "Theodore Roosevelt arrives in the badlands to hunt bison."
+  },
+  {
+   "year": "1884",
+   "text": "Roosevelt starts the Elkhorn Ranch."
+  },
+  {
+   "year": "1947",
+   "text": "President Truman establishes Theodore Roosevelt National Memorial Park."
+  },
+  {
+   "year": "1956",
+   "text": "Bison are reintroduced to the South Unit."
+  },
+  {
+   "year": "1978",
+   "text": "The memorial park becomes Theodore Roosevelt National Park."
+  }
+ ],
+ "safety": [
+  "Bison are fast and unpredictable. Stay at least 25 yards from them and from wild horses.",
+  "The badlands' bentonite clay turns slick as ice when wet. Avoid steep slopes after rain.",
+  "Watch for prairie rattlesnakes, especially near prairie dog towns."
+ ],
+ "regulations": [
+  "Collecting petrified wood, fossils or plants is prohibited.",
+  "Don't feed or approach wildlife, including the horses.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Theodore Roosevelt National Park — National Park Service",
+   "url": "https://www.nps.gov/thro/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "Valid for 7 days for all persons traveling in a single, private, non-commercial vehicle."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Valid for 7 days for a visitor traveling on foot, bicycle, horse, or other non-motorized means of travel."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo / Mark Meyers",
+  "isPublicDomain": true,
+  "assetName": "np-theodore-roosevelt-1.jpg",
+  "caption": "River Bend Overlook, North Unit",
+  "altText": "A colorfully striped butte in the foreground overlooks a dark green badlands landscape"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / Laura Thomas",
+   "isPublicDomain": true,
+   "assetName": "np-theodore-roosevelt-2.jpg",
+   "caption": "A View from the Maah Daah Hey Trail",
+   "altText": "the Little Missouri River under blue skies"
+  },
+  {
+   "credit": "NPS Photo / Laura Thomas",
+   "isPublicDomain": true,
+   "assetName": "np-theodore-roosevelt-3.jpg",
+   "caption": "Ekblom Trail",
+   "altText": "A muddy river bank lined with cottonwood trees and steep buttes"
+  },
+  {
+   "credit": "NPS Photo / Teresina Wheaten",
+   "isPublicDomain": true,
+   "assetName": "np-theodore-roosevelt-4.jpg",
+   "caption": "Raise a Ruckus",
+   "altText": "two bull bison collide heads in a dusty battle for dominance"
+  }
+ ],
+ "operatingHours": "Theodore Roosevelt National Park is open 24 hours a day, every day of the year. This applies to all units of the park; North Unit, South Unit, and Elkhorn Ranch Unit. Even when entrance stations and visitor centers are closed, the park itself remains open. Remember to check current conditions for any weather related closures.",
+ "weather": "In winter, some or all park roads may be closed due to snow.",
+ "directions": "Theodore Roosevelt National Park is located in the Badlands of western North Dakota. There are three units to the park. The South Unit entrance is in the town of Medora, ND off of Interstate 94 exits 24 and 27. The North Unit entrance is on Highway 85 approximately 14 miles south of Watford City, ND. The remote Elkhorn Ranch Unit sits roughly in the middle of the North and South Units and is accessed via gravel roads. Consult park staff for directions to the Elkhorn Ranch Unit."
+}

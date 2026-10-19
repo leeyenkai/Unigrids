@@ -6,6 +6,7 @@ import SwiftData
 public enum UnigridsSchema {
     public static let models: [any PersistentModel.Type] = [
         Trip.self,
+        TripStop.self,
         Visit.self,
         CheckIn.self,
         Hike.self,

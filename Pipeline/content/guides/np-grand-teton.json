@@ -1,0 +1,111 @@
+{
+ "placeID": "np-grand-teton",
+ "summary": "Jagged peaks rising straight out of the sagebrush flats of Jackson Hole, with no foothills between, glacial lakes at their feet and moose, elk and bison on the valley floor. Ten miles south of Yellowstone, and joined to it by a parkway.",
+ "facts": {
+  "lowestElevationMetres": 1940,
+  "highestElevationMetres": 4199,
+  "bestSeasons": [
+   "summer",
+   "autumn"
+  ],
+  "suggestedTime": "Two to three days"
+ },
+ "story": [
+  "The Teton Range is young and still rising. Along the Teton Fault the mountain block tilts upward while the valley floor of Jackson Hole drops, which is why the peaks stand so abruptly above the flats. The Grand Teton reaches 13,775 feet, and nine other summits pass 12,000. Glaciers carved the canyons between them and left their moraines as dams at the canyon mouths, holding Jenny, Leigh, Taggart and Bradley lakes.",
+  "Jackson Hole's sagebrush, wetlands and the Snake River support one of the richest assemblages of large animals in the country: moose in the willows, elk that winter on the National Elk Refuge, bison, pronghorn that migrate here from the Green River basin, black bears and grizzlies. With Yellowstone and the surrounding national forests, the park is part of the Greater Yellowstone Ecosystem.",
+  "People have lived in the valley for at least 11,000 years. Fur trappers worked its streams between 1810 and 1840, and homesteaders and dude ranchers followed late in the century; the barns of Mormon Row still stand on the flats. Congress created a small park around the peaks in 1929.",
+  "John D. Rockefeller Jr. quietly bought up land in the valley through the Snake River Land Company, meaning to give it to the nation. The plan met fierce local opposition; President Franklin Roosevelt declared much of the valley a national monument in 1943, and in 1950 the monument and Rockefeller's land were joined to the park."
+ ],
+ "sights": [
+  {
+   "name": "Jenny Lake",
+   "match": "Jenny Lake Overlook",
+   "note": "A glacial lake at the foot of the peaks; a boat crosses to Hidden Falls and Inspiration Point."
+  },
+  {
+   "name": "Hidden Falls",
+   "note": "A tumbling cascade in Cascade Canyon, reached by trail or by the Jenny Lake boat."
+  },
+  {
+   "name": "Inspiration Point",
+   "note": "A ledge above Jenny Lake looking across the valley."
+  },
+  {
+   "name": "Oxbow Bend",
+   "match": "Oxbow Bend Turnout",
+   "note": "A bend of the Snake River reflecting Mount Moran, with moose and birds at dawn."
+  },
+  {
+   "name": "Schwabacher Landing",
+   "note": "Beaver ponds on the Snake River that mirror the Tetons at sunrise."
+  },
+  {
+   "name": "Mormon Row",
+   "note": "Weathered barns of a homestead settlement, with the range behind them."
+  },
+  {
+   "name": "Snake River Overlook",
+   "note": "The view of the river below the range that Ansel Adams photographed in 1942."
+  },
+  {
+   "name": "Signal Mountain",
+   "note": "A summit road with views over Jackson Lake and the whole valley."
+  },
+  {
+   "name": "Chapel of the Transfiguration",
+   "note": "A log chapel whose window frames the peaks."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Moose Entrance, from Jackson in the south",
+   "Moran Entrance, in the east, from Dubois",
+   "Granite Canyon Entrance, on the Moose–Wilson Road",
+   "From Yellowstone in the north, along the John D. Rockefeller Jr. Memorial Parkway"
+  ],
+  "permits": [
+   "Backcountry camping — a permit",
+   "Boating — a park boat permit and an aquatic invasive species inspection"
+  ],
+  "lodging": [
+   "Jackson Lake Lodge, Jenny Lake Lodge, Signal Mountain Lodge, Colter Bay cabins and Headwaters Lodge at Flagg Ranch"
+  ],
+  "seasonalClosures": [
+   "The Teton Park Road between Taggart Lake and Signal Mountain closes to cars in winter; most lodges and campgrounds close from autumn to late spring"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1810",
+   "text": "The fur trade era begins in Jackson Hole and lasts about thirty years."
+  },
+  {
+   "year": "1929",
+   "text": "Congress establishes a park around the Teton Range."
+  },
+  {
+   "year": "1943",
+   "text": "President Roosevelt proclaims Jackson Hole National Monument."
+  },
+  {
+   "year": "1950",
+   "text": "The monument and Rockefeller's land are added to Grand Teton National Park."
+  }
+ ],
+ "safety": [
+  "Stay at least 100 yards from bears and wolves and 25 yards from other wildlife. Moose are dangerous at any distance if they feel crowded.",
+  "Carry bear spray and know how to use it.",
+  "Lakes are cold and winds rise fast on the water in the afternoon."
+ ],
+ "regulations": [
+  "Boats require a park permit; motorized boats are allowed only on certain lakes.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Grand Teton National Park — National Park Service",
+   "url": "https://www.nps.gov/grte/"
+  }
+ ],
+ "contentVersion": 2
+}

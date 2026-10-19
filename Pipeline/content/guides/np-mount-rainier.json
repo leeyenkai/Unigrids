@@ -1,0 +1,119 @@
+{
+ "placeID": "np-mount-rainier",
+ "summary": "A glacier-clad volcano, 14,410 feet high, standing alone above the Cascades within sight of Seattle — the most glaciated peak in the contiguous United States, ringed by wildflower meadows and ancient forest.",
+ "facts": {
+  "lowestElevationMetres": 490,
+  "highestElevationMetres": 4392,
+  "bestSeasons": [
+   "summer"
+  ],
+  "suggestedTime": "Two days"
+ },
+ "story": [
+  "Mount Rainier is an active stratovolcano, the highest peak in the Cascade Range, built of lava flows and ash over hundreds of thousands of years. More than twenty-five named glaciers descend its flanks, among them the Emmons, the largest by area in the contiguous United States, and the Carbon, which reaches lower than any other there. Five major rivers rise from its ice.",
+  "The mountain makes its own weather, catching storms off the Pacific; Paradise, on its south slope, is one of the snowiest places on Earth where snowfall is measured. When the snow melts, in July and August, its meadows burst into wildflowers. Lower down, old-growth forest of Douglas-fir, western red cedar and hemlock fills the valleys — at the Grove of the Patriarchs some trees are a thousand years old.",
+  "The peoples of the region knew the mountain as Tacoma or Tahoma. George Vancouver named it in 1792 for a fellow naval officer, Peter Rainier. Hazard Stevens and Philemon Van Trump made the first recorded ascent in 1870, and John Muir climbed it in 1888.",
+  "Mount Rainier became a national park in 1899, one of the first in the country. Its roads, inns and rustic buildings from the 1920s and 1930s — Paradise Inn among them — are together a National Historic Landmark, and nearly all the park is wilderness, encircled by the 93-mile Wonderland Trail."
+ ],
+ "sights": [
+  {
+   "name": "Paradise",
+   "note": "Subalpine meadows on the mountain's south slope, with the Paradise Inn, a visitor center and trails onto the snow."
+  },
+  {
+   "name": "Skyline Trail",
+   "match": "Paradise Meadows & Skyline Trailhead",
+   "note": "A loop above Paradise to Panorama Point, with close views of the Nisqually Glacier."
+  },
+  {
+   "name": "Reflection Lakes",
+   "note": "Lakes that mirror the mountain on a still morning."
+  },
+  {
+   "name": "Narada Falls",
+   "note": "A waterfall that drops beside the road to Paradise."
+  },
+  {
+   "name": "Christine Falls",
+   "note": "A waterfall framed by a stone road bridge."
+  },
+  {
+   "name": "Grove of the Patriarchs",
+   "match": "Grove of the Patriarchs Trailhead",
+   "note": "An island in the Ohanapecosh River of giant, ancient cedars and firs."
+  },
+  {
+   "name": "Sunrise",
+   "match": "Sunrise Point Overlook",
+   "note": "The highest point in the park reached by road, facing the Emmons Glacier."
+  },
+  {
+   "name": "Tipsoo Lake",
+   "note": "A small lake near Chinook Pass, ringed by wildflowers in summer."
+  },
+  {
+   "name": "Mowich Lake",
+   "note": "The park's largest and deepest lake, at the end of a gravel road in the northwest."
+  },
+  {
+   "name": "Carbon Glacier",
+   "note": "The lowest-reaching glacier in the contiguous United States, reached by trail from the Carbon River."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Nisqually Entrance in the southwest, open all year, on the road to Longmire and Paradise",
+   "Stevens Canyon Entrance in the southeast",
+   "White River Entrance in the northeast, on the road to Sunrise",
+   "Carbon River and Mowich Lake in the northwest"
+  ],
+  "reservations": "In recent summers the park has required timed-entry reservations at peak hours for some areas. Check nps.gov/mora before you go.",
+  "permits": [
+   "Overnight wilderness trips, including the Wonderland Trail — a wilderness permit",
+   "Climbing above 10,000 feet or onto glaciers — a climbing permit and fee"
+  ],
+  "lodging": [
+   "Paradise Inn, open in summer, and the National Park Inn at Longmire, open all year"
+  ],
+  "seasonalClosures": [
+   "Only the road from Nisqually to Paradise stays open in winter; Sunrise usually opens in early July"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1792",
+   "text": "George Vancouver names the mountain for Peter Rainier."
+  },
+  {
+   "year": "1870",
+   "text": "Hazard Stevens and Philemon Van Trump make the first recorded ascent."
+  },
+  {
+   "year": "1899",
+   "text": "Mount Rainier National Park is established."
+  },
+  {
+   "year": "1988",
+   "text": "Most of the park is designated wilderness."
+  },
+  {
+   "year": "1997",
+   "text": "The park's historic buildings and roads are named a National Historic Landmark district."
+  }
+ ],
+ "safety": [
+  "Snow lingers on trails above Paradise into July. Carry a map, and turn back in fog; people get lost a few hundred yards from the parking lot.",
+  "Rivers fed by glaciers are fast, cold and full of rock. Do not wade them."
+ ],
+ "regulations": [
+  "Stay on trails in the meadows; footsteps kill fragile subalpine plants.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Mount Rainier National Park — National Park Service",
+   "url": "https://www.nps.gov/mora/"
+  }
+ ],
+ "contentVersion": 2
+}

@@ -1,0 +1,84 @@
+{
+ "placeID": "np-kobuk-valley",
+ "contentVersion": 2,
+ "story": [
+  "Kobuk Valley lies about twenty-five miles north of the Arctic Circle, a wide basin ringed by the Baird and Waring mountains with the Kobuk River running through it. Glaciers ground rock into fine sand here during the ice ages; wind and water have since piled it into the Great Kobuk Sand Dunes, rippled ridges up to a hundred feet high in the middle of the boreal forest and tundra.",
+  "Twice a year, caribou of the Western Arctic herd pass through on migrations between their calving grounds and winter range, swimming the river at traditional crossings. At Onion Portage, people have been waiting for them for at least nine thousand years, and the site's layered camps record a sequence of Arctic cultures so long and clear that archaeologists use it as a reference.",
+  "Iñupiat people still hunt, fish and gather in the valley, as the Alaska lands act provides. A short-lived gold rush brought prospectors here in 1899 and 1900, and left little behind.",
+  "The park was established by the Alaska lands act in 1980. It has no roads, trails or facilities, and is among the least visited parks in the system; most visitors fly in from Kotzebue or Bettles and float the river."
+ ],
+ "sightNotes": {
+  "poi-kobuk-valley-great-kobuk-sand-dunes": "The largest active dunes in the Arctic, a walk from the Kobuk River across tundra and forest.",
+  "poi-kobuk-valley-onion-portage": "A caribou crossing on the Kobuk River and an archaeological site with nine thousand years of human history.",
+  "poi-kobuk-valley-jade-mountains": "Mountains on the park's northern edge, named for the jade found in their streams."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "No roads: by chartered air taxi from Kotzebue or Bettles; the Northwest Arctic Heritage Center in Kotzebue is the park's visitor center"
+  ],
+  "seasonalClosures": [
+   "Most visits fall between June and early September; weather can hold air taxis for days"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1899",
+   "text": "A brief gold rush brings prospectors to the Kobuk River."
+  },
+  {
+   "year": "1980",
+   "text": "The Alaska lands act establishes Kobuk Valley National Park."
+  }
+ ],
+ "safety": [
+  "You must be entirely self-sufficient. Carry extra food for weather delays and a way to call for help.",
+  "Grizzly and black bears live here. Carry bear spray and use bear-resistant food containers."
+ ],
+ "regulations": [
+  "Local rural residents may hunt, fish and gather for subsistence.",
+  "Onion Portage is Native-owned land within the park; respect closures and do not disturb sites."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Kobuk Valley National Park — National Park Service",
+   "url": "https://www.nps.gov/kova/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS Photo",
+  "isPublicDomain": true,
+  "assetName": "np-kobuk-valley-1.jpg",
+  "caption": "Kobuk Sand Dunes",
+  "altText": "sun setting on sand dunes"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / Justine Schmidt",
+   "isPublicDomain": true,
+   "assetName": "np-kobuk-valley-2.jpg",
+   "caption": "Canoe on the Kobuk River",
+   "altText": "A green pack canoe sits on the bank of the Kobuk River. Clouds are mirrored on the water's surface."
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-kobuk-valley-3.jpg",
+   "caption": "Mountains as Far as the Eye Can See",
+   "altText": "aerial view of snow capped mountains"
+  },
+  {
+   "credit": "NPS Photo / Annie Carlson",
+   "isPublicDomain": true,
+   "assetName": "np-kobuk-valley-4.jpg",
+   "caption": "The Jade Mountains reflected in the Kobuk River",
+   "altText": "The Jade Mountains reflected in the Kobuk River"
+  }
+ ],
+ "operatingHours": "The Northwest Arctic Heritage Center is the visitor center for Kobuk Valley National Park. Since there are no roads in to Kobuk Valley, the visitor center is located in Kotzebue, AK. From Kotzebue, visitors will charter an air taxi to transport them into the actual national park which is open 24/7 every day of the year.",
+ "weather": "Snow, rain, and freezing temperatures can occur any time of the year. Always travel with good quality rain gear and warm layers. Be especially careful to stay dry. Hypothermia can set in on a windy, wet day, even when it doesn't feel that cold.",
+ "directions": "Kobuk Valley National Park is very remote. There are no roads to provide access, so planes take care of most transportation needs. Commercial airlines provide service from Anchorage to Kotzebue, or from Fairbanks to Bettles. Once in Kotzebue or Bettles, you must fly to the park with authorized air taxis."
+}

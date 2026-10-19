@@ -9,21 +9,18 @@ import UnigridsReference
 /// (SPECIFICATION.md §9).
 ///
 /// Nine colour-coded regions, each stamping in its own ink. A region opens with a title
-/// page carrying a stamped-so-far count, then the site pages, where an empty slot stays a
-/// faint outline so the gaps show what is left.
+/// page carrying a stamped-so-far count, then a slot for every NPS site — national parks
+/// first — where an empty slot stays a faint outline so the gaps show what is left. State
+/// parks and other agencies' sites follow under "Beyond the NPS", in the order stamped.
 public struct PassportScreen: View {
     @Environment(\.referenceStore) private var store
+    @Environment(\.unigrid) private var style
     @Query private var stamps: [Stamp]
 
     public init() {}
 
-    private var stampsByPlace: [UnigridsID: [Stamp]] {
-        Dictionary(grouping: stamps, by: \.place)
-    }
-
-    private var regions: [PassportRegion] {
-        let grouped = store.placesByPassportRegion()
-        return PassportRegion.allCases.filter { grouped[$0]?.isEmpty == false }
+    private var stampedPlaceIDs: Set<UnigridsID> {
+        Set(stamps.map(\.place))
     }
 
     private var stampsIn2026: [Stamp] {
@@ -34,58 +31,64 @@ public struct PassportScreen: View {
         NavigationStack {
             List {
                 Section {
+                    BandHeader(
+                        "Passport",
+                        kicker: "\(stamps.count) stamp\(stamps.count == 1 ? "" : "s") · "
+                            + "\(stampedPlaceIDs.count) "
+                            + (stampedPlaceIDs.count == 1 ? "place" : "places")
+                    )
+                    .listRowInsets(EdgeInsets())
+                    .listRowSeparator(.hidden)
+                    .listRowBackground(Color.clear)
+                }
+
+                Section {
                     NavigationLink {
                         America250Page(stamps: stampsIn2026)
                     } label: {
                         America250Row(stampCount: stampsIn2026.count)
                     }
+                    .listRowBackground(Color.clear)
                 } header: {
-                    Text("Commemorative")
+                    SectionHead("Commemorative")
                 } footer: {
                     Text(
                         "Every stamp dated in 2026 — the 250th anniversary year — carries "
                             + "the America 250 seal, and is gathered on this page."
                     )
-                }
-
-                Section("Regions") {
-                    ForEach(regions) { region in
-                        NavigationLink {
-                            PassportRegionPage(region: region)
-                        } label: {
-                            RegionRow(
-                                region: region,
-                                completion: completion(for: region)
-                            )
-                        }
-                    }
+                    .font(UnigridStyle.caption)
                 }
 
                 Section {
-                    VStack(alignment: .leading, spacing: 6) {
-                        Label(
-                            "Beyond the NPS arrives with tiers 2 to 4",
-                            systemImage: "map"
-                        )
-                        .font(.subheadline.weight(.medium))
-                        Text(
-                            "State parks and major federal sites get their own section per "
-                                + "region once the data pipeline adds them."
-                        )
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                        .fixedSize(horizontal: false, vertical: true)
+                    ForEach(PassportRegion.allCases) { region in
+                        NavigationLink {
+                            PassportRegionPage(region: region)
+                        } label: {
+                            RegionRow(region: region, completion: completion(for: region))
+                        }
+                        .listRowBackground(Color.clear)
                     }
-                    .padding(.vertical, 4)
+                } header: {
+                    SectionHead("Regions", detail: "NPS sites stamped")
+                } footer: {
+                    Text(
+                        "Regions follow the paper passport's nine. Sites outside the NPS go by "
+                            + "their state, and appear on a region's page once stamped."
+                    )
+                    .font(UnigridStyle.caption)
                 }
             }
+            .listStyle(.plain)
+            .paperPage()
             .navigationTitle("Passport")
+            .toolbarTitleDisplayMode(.inline)
         }
     }
 
+    /// Progress through a region's NPS sites — the slots the paper book prints.
     private func completion(for region: PassportRegion) -> Completion {
-        let places = store.placesByPassportRegion()[region] ?? []
-        let stamped = places.count { stampsByPlace[$0.id]?.isEmpty == false }
+        let places = (store.placesByPassportRegion()[region] ?? []).filter { $0.agency == .nps }
+        let stamped = places.count { stampedPlaceIDs.contains($0.id) }
         return Completion(visited: stamped, total: places.count)
     }
 }
@@ -97,26 +100,33 @@ struct RegionRow: View {
     let completion: Completion
 
     var body: some View {
-        HStack(spacing: 12) {
-            Circle()
-                .fill(style.regionInk(region))
-                .frame(width: 14, height: 14)
-            VStack(alignment: .leading, spacing: 2) {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(spacing: 12) {
+                Rectangle()
+                    .fill(style.regionInk(region))
+                    .frame(width: 14, height: 14)
                 Text(region.name)
-                    .font(.body.weight(.medium))
-                Text("\(completion.description) stamped")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .font(UnigridStyle.rowTitle)
+                    .foregroundStyle(style.ink)
+                Spacer()
+                Text(completion.description)
+                    .font(UnigridStyle.dataLabel)
+                    .monospacedDigit()
+                    .foregroundStyle(style.inkSecondary)
             }
-            Spacer()
-            ProgressView(value: completion.fraction)
-                .progressViewStyle(.linear)
-                .frame(width: 60)
-                .tint(style.regionInk(region))
-                .accessibilityHidden(true)
+            GeometryReader { proxy in
+                ZStack(alignment: .leading) {
+                    Rectangle().fill(style.rule)
+                    Rectangle()
+                        .fill(style.regionInk(region))
+                        .frame(width: proxy.size.width * completion.fraction)
+                }
+            }
+            .frame(height: 4)
         }
-        .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(region.name), \(completion.description) stamped")
+        .padding(.vertical, 4)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(region.name), \(completion.description) NPS sites stamped")
     }
 }
 
@@ -126,21 +136,27 @@ struct America250Row: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            Image(systemName: "seal.fill")
+            Text("250")
+                .font(.custom("HelveticaNeue-Bold", size: 13))
                 .foregroundStyle(style.seal)
+                .padding(.horizontal, 5)
+                .padding(.vertical, 3)
+                .overlay { Rectangle().strokeBorder(style.seal, lineWidth: 1.5) }
             VStack(alignment: .leading, spacing: 2) {
                 Text("America 250")
-                    .font(.body.weight(.medium))
-                Text(stampCount == 0 ? "No 2026 stamps yet" : "\(stampCount) in 2026")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .font(UnigridStyle.rowTitle)
+                    .foregroundStyle(style.ink)
+                Text(stampCount == 0 ? "No 2026 stamps yet" : "\(stampCount) stamped in 2026")
+                    .font(UnigridStyle.rowDetail)
+                    .foregroundStyle(style.inkSecondary)
             }
         }
         .accessibilityElement(children: .combine)
     }
 }
 
-/// A region's pages: the title page's count, then one slot per site.
+/// A region's pages: the title page, then a slot per NPS site, then whatever beyond the
+/// NPS has been stamped here.
 struct PassportRegionPage: View {
     @Environment(\.referenceStore) private var store
     @Environment(\.unigrid) private var style
@@ -149,7 +165,6 @@ struct PassportRegionPage: View {
 
     @Query private var stamps: [Stamp]
     @State private var stamping: Place?
-    @State private var viewing: Stamp?
 
     private var places: [Place] {
         store.placesByPassportRegion()[region] ?? []
@@ -160,10 +175,62 @@ struct PassportRegionPage: View {
     }
 
     var body: some View {
+        let parks = places.filter { $0.tier == .nationalPark }
+        let units = places.filter { $0.tier == .npsUnit }
+        let beyond = places
+            .filter { $0.agency != .nps && stampsByPlace[$0.id]?.isEmpty == false }
+            .sorted { first($0) < first($1) }
         ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                titlePage
+            VStack(alignment: .leading, spacing: 28) {
+                titlePage(npsSites: parks + units)
+                slotSection("National parks", places: parks)
+                slotSection("Other NPS sites", places: units)
+                if !beyond.isEmpty {
+                    slotSection("Beyond the NPS", places: beyond)
+                }
+            }
+            .padding(.vertical, 20)
+        }
+        .background(style.page)
+        .navigationTitle(region.name)
+        .toolbarTitleDisplayMode(.inline)
+        .sheet(item: $stamping) { place in
+            StampSheet(place: place)
+        }
+    }
 
+    private func first(_ place: Place) -> Date {
+        stampsByPlace[place.id]?.map(\.date).min() ?? .distantFuture
+    }
+
+    private func titlePage(npsSites: [Place]) -> some View {
+        let stamped = npsSites.count { stampsByPlace[$0.id]?.isEmpty == false }
+        return VStack(alignment: .leading, spacing: 10) {
+            Text(region.name)
+                .font(UnigridStyle.bandTitle(32))
+                .foregroundStyle(style.regionInk(region))
+            Rectangle()
+                .fill(style.regionInk(region))
+                .frame(height: 4)
+            HStack(alignment: .firstTextBaseline, spacing: 8) {
+                Text("\(stamped)")
+                    .font(UnigridStyle.figure)
+                    .foregroundStyle(style.ink)
+                    .monospacedDigit()
+                Text("of \(npsSites.count) NPS sites stamped")
+                    .font(UnigridStyle.rowDetail)
+                    .foregroundStyle(style.inkSecondary)
+            }
+        }
+        .padding(.horizontal, 16)
+    }
+
+    @ViewBuilder
+    private func slotSection(_ title: String, places: [Place]) -> some View {
+        if !places.isEmpty {
+            VStack(alignment: .leading, spacing: 16) {
+                SectionHead(title, detail: "\(places.count)")
+                    .padding(.horizontal, 16)
                 LazyVGrid(
                     columns: [GridItem(.adaptive(minimum: 150), spacing: 20)],
                     spacing: 24
@@ -174,30 +241,7 @@ struct PassportRegionPage: View {
                 }
                 .padding(.horizontal, 16)
             }
-            .padding(.vertical, 20)
         }
-        .navigationTitle(region.name)
-        .toolbarTitleDisplayMode(.inline)
-        .sheet(item: $stamping) { place in
-            StampSheet(place: place)
-        }
-    }
-
-    private var titlePage: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(region.name.uppercased())
-                .font(.title2.weight(.bold))
-                .tracking(1.5)
-                .foregroundStyle(style.regionInk(region))
-            Rectangle()
-                .fill(style.regionInk(region))
-                .frame(height: 3)
-            let stamped = places.count { stampsByPlace[$0.id]?.isEmpty == false }
-            Text("\(stamped) of \(places.count) sites stamped")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-        }
-        .padding(.horizontal, 16)
     }
 
     @ViewBuilder
@@ -226,13 +270,14 @@ struct PassportRegionPage: View {
             }
 
             Text(place.name)
-                .font(.caption.weight(.medium))
+                .font(.custom("HelveticaNeue-Medium", size: 12, relativeTo: .caption))
+                .foregroundStyle(style.ink)
                 .multilineTextAlignment(.center)
                 .lineLimit(2)
             if placeStamps.count > 1 {
                 Text("\(placeStamps.count) impressions")
-                    .font(.caption2)
-                    .foregroundStyle(.secondary)
+                    .font(UnigridStyle.caption)
+                    .foregroundStyle(style.inkSecondary)
             }
         }
         .contextMenu {
@@ -273,31 +318,30 @@ struct America250Page: View {
             VStack(alignment: .leading, spacing: 20) {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("AMERICA 250")
-                        .font(.title2.weight(.heavy))
+                        .font(UnigridStyle.bandTitle(32))
                         .tracking(2)
                         .foregroundStyle(style.seal)
                     Rectangle()
                         .fill(style.seal)
-                        .frame(height: 3)
+                        .frame(height: 4)
                     Text(
                         stamps.isEmpty
                             ? "Nothing stamped in 2026 yet."
                             : "\(stamps.count) stamped in 2026."
                     )
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                    .font(UnigridStyle.rowDetail)
+                    .foregroundStyle(style.inkSecondary)
                 }
                 .padding(.horizontal, 16)
 
                 if stamps.isEmpty {
-                    ContentUnavailableView {
-                        Label("No 2026 stamps", systemImage: "seal")
-                    } description: {
-                        Text(
-                            "Any stamp you date in 2026 lands here, including one you "
-                                + "back-date for a trip earlier in the year."
-                        )
-                    }
+                    Text(
+                        "Any stamp you date in 2026 lands here, including one you back-date "
+                            + "for a trip earlier in the year."
+                    )
+                    .font(UnigridStyle.proseSmall)
+                    .foregroundStyle(style.inkSecondary)
+                    .padding(.horizontal, 16)
                 } else {
                     LazyVGrid(
                         columns: [GridItem(.adaptive(minimum: 150), spacing: 20)],
@@ -319,7 +363,11 @@ struct America250Page: View {
                                     )
                                     .frame(width: 140, height: 140)
                                     Text(place.name)
-                                        .font(.caption.weight(.medium))
+                                        .font(.custom(
+                                            "HelveticaNeue-Medium",
+                                            size: 12,
+                                            relativeTo: .caption
+                                        ))
                                         .multilineTextAlignment(.center)
                                         .lineLimit(2)
                                 }
@@ -331,6 +379,7 @@ struct America250Page: View {
             }
             .padding(.vertical, 20)
         }
+        .background(style.page)
         .navigationTitle("America 250")
         .toolbarTitleDisplayMode(.inline)
     }

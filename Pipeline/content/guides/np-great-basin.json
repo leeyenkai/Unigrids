@@ -1,0 +1,85 @@
+{
+ "placeID": "np-great-basin",
+ "summary": "One mountain range rising out of the sagebrush desert of eastern Nevada to the 13,063-foot summit of Wheeler Peak, with a small glacier, bristlecone pines thousands of years old, and Lehman Caves beneath its flank. Some of the darkest night skies in the country.",
+ "facts": {
+  "highestElevationMetres": 3982,
+  "bestSeasons": [
+   "summer",
+   "autumn"
+  ],
+  "suggestedTime": "One to two days"
+ },
+ "story": [
+  "The Great Basin is the vast region between the Sierra Nevada and the Wasatch Range where rivers never reach the sea; they end in lakes and sinks. Across it run more than a hundred north–south mountain ranges separated by flat valleys, the Basin and Range. The park protects the southern Snake Range, which climbs almost eight thousand feet from the valley floor to Wheeler Peak, where a small glacier survives in a north-facing cirque.",
+  "Climbing the mountain is like travelling north: from sagebrush and pinyon-juniper through aspen, fir and limber pine to alpine tundra. Near the treeline grow Great Basin bristlecone pines, gnarled survivors of wind and cold and the oldest known living non-clonal organisms; some here are thousands of years old.",
+  "On the mountain's lower slope lies Lehman Caves, a marble cave richly decorated with stalactites, draperies and hundreds of rare shield formations. The rancher Absalom Lehman made it known to visitors in the 1880s, and it became a national monument in 1922.",
+  "The national park was created around the monument in 1986. Far from cities and high in dry air, it has some of the darkest skies in the contiguous United States, and its astronomy programs show the Milky Way casting shadows."
+ ],
+ "sights": [
+  {
+   "name": "Lehman Caves",
+   "note": "A decorated marble cave, seen on ranger-led tours."
+  },
+  {
+   "name": "Wheeler Peak Scenic Drive",
+   "note": "A road climbing to 10,000 feet, with views across the Snake Valley."
+  },
+  {
+   "name": "Bristlecone Grove",
+   "note": "An interpretive trail among ancient bristlecone pines below Wheeler Peak."
+  },
+  {
+   "name": "Wheeler Cirque Glacier",
+   "note": "A small glacier beneath the peak's north face, past the bristlecone grove."
+  },
+  {
+   "name": "Stella Lake",
+   "note": "An alpine lake reflecting Wheeler Peak, on an easy loop from the end of the scenic drive."
+  },
+  {
+   "name": "Wheeler Peak",
+   "note": "The park's summit, a long, high, strenuous day hike."
+  },
+  {
+   "name": "Lexington Arch",
+   "note": "A large limestone arch in the park's remote south end."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "NV 488 from the town of Baker, which lies on NV 487 off US 6 and US 50"
+  ],
+  "reservations": "Lehman Caves is seen only on ranger-led tours; buy tickets ahead, especially in summer.",
+  "lodging": [
+   "No lodging in the park; small motels and inns in Baker"
+  ],
+  "seasonalClosures": [
+   "The upper Wheeler Peak Scenic Drive closes from late autumn until snow clears, usually in early summer; snow can fall at high elevations in any month"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1922",
+   "text": "President Harding proclaims Lehman Caves National Monument."
+  },
+  {
+   "year": "1986",
+   "text": "Great Basin National Park is established around the monument."
+  }
+ ],
+ "safety": [
+  "Wheeler Peak's summit is high and exposed. Start early, turn back if storms build, and expect thin air.",
+  "The cave is cool all year; bring a layer, and watch your head."
+ ],
+ "regulations": [
+  "Do not touch cave formations.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Great Basin National Park — National Park Service",
+   "url": "https://www.nps.gov/grba/"
+  }
+ ],
+ "contentVersion": 2
+}

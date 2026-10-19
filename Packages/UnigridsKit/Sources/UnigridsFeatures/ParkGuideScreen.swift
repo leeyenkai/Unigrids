@@ -22,6 +22,8 @@ public struct ParkGuideScreen: View {
     @State private var availableWidth: Double = 0
     @State private var showCheckIn = false
     @State private var showStamp = false
+    @State private var showAddToTrip = false
+    @State private var showExplorer = false
     @Query private var visits: [Visit]
 
     public init(place: Place) {
@@ -37,6 +39,9 @@ public struct ParkGuideScreen: View {
                     states: place.statesDescription
                 )
                 if let guide = store.guide(for: place.id) {
+                    if let hero = guide.hero {
+                        GuideHero(image: hero)
+                    }
                     page(guide)
                 } else {
                     missingGuide
@@ -51,20 +56,41 @@ public struct ParkGuideScreen: View {
         }
         .navigationTitle(place.name)
         .toolbarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem {
-                Button { showCheckIn = true } label: {
-                    Label("Check in", systemImage: "mappin.and.ellipse")
-                }
-            }
-            ToolbarItem {
-                Button { showStamp = true } label: {
-                    Label { Text("Stamp") } icon: { StampIcon() }
-                }
-            }
-        }
+        .toolbar { toolbar }
         .sheet(isPresented: $showCheckIn) { CheckInSheet(place: place) }
         .sheet(isPresented: $showStamp) { StampSheet(place: place) }
+        .sheet(isPresented: $showAddToTrip) { AddToTripSheet(place: place) }
+        #if os(iOS)
+            .fullScreenCover(isPresented: $showExplorer) { ParkExplorer(place: place) }
+        #else
+            .sheet(isPresented: $showExplorer) {
+                ParkExplorer(place: place).frame(minWidth: 900, minHeight: 640)
+            }
+        #endif
+    }
+
+    @ToolbarContentBuilder
+    private var toolbar: some ToolbarContent {
+        ToolbarItem {
+            Button { showExplorer = true } label: {
+                Label("Explore in 3D", systemImage: "view.3d")
+            }
+        }
+        ToolbarItem {
+            Button { showCheckIn = true } label: {
+                Label("Check in", systemImage: "mappin.and.ellipse")
+            }
+        }
+        ToolbarItem {
+            Button { showStamp = true } label: {
+                Label { Text("Stamp") } icon: { StampIcon() }
+            }
+        }
+        ToolbarItem {
+            Button { showAddToTrip = true } label: {
+                Label("Add to trip", systemImage: "calendar.badge.plus")
+            }
+        }
     }
 
     // MARK: - Layout
@@ -84,10 +110,23 @@ public struct ParkGuideScreen: View {
             placeHasFacts: !place.facts.isEmpty,
             sightCount: sights.count,
             visitorCentreCount: centres.count,
-            hasTrails: !trails.isEmpty
+            hasTrails: !trails.isEmpty,
+            hasMap: store.boundary(for: place.id) != nil || !sights.isEmpty,
+            showsAlerts: place.npsParkCode != nil && NPSAlerts.isConfigured
         )
+        // The hero sits full-bleed under the band, not on the grid.
+        .filter {
+            if case .hero = $0 {
+                false
+            } else {
+                true
+            }
+        }
 
         return VStack(spacing: UnigridStyle.gutter) {
+            if let summary = place.summary, place.summarySource == "Unigrids" {
+                GuideStandfirst(text: summary)
+            }
             ForEach(
                 Array(UnigridGrid.rows(panels: panels, columnCount: columnCount).enumerated()),
                 id: \.offset
@@ -97,21 +136,22 @@ public struct ParkGuideScreen: View {
                         view(for: panel, guide: guide, sights: sights, centres: centres)
                     }
                 }
+                // The row's height is its tallest panel's, and the others stretch to it.
+                .fixedSize(horizontal: false, vertical: true)
             }
 
-            // The brochure map is public domain and interactive in the finished guide
-            // (§6, panel 5). It needs a checked asset per park from the pipeline's package
-            // step, so until then the panel says what it is waiting for.
-            if guide.mapImage == nil {
-                UnigridPendingPanel(
-                    title: "Brochure map",
-                    explanation: "The park's official brochure map, interactive, with "
-                        + "tappable visitor centres and sights. It ships once the data "
-                        + "pipeline has confirmed a public-domain asset for this park."
-                )
-            }
+            GuideActionsPanel(
+                onCheckIn: { showCheckIn = true },
+                onStamp: { showStamp = true },
+                onAddToTrip: { showAddToTrip = true },
+                officialURL: place.officialURL
+            )
 
-            GuideCreditsPanel(credits: guide.credits, sources: guide.sources)
+            GuideCreditsPanel(
+                credits: guide.credits,
+                sources: guide.sources,
+                photos: [guide.hero].compactMap(\.self) + guide.gallery
+            )
         }
         .padding(UnigridStyle.pageMargin)
     }
@@ -130,6 +170,12 @@ public struct ParkGuideScreen: View {
             AtAGlancePanel(facts: place.facts)
         case .story:
             StoryPanel(paragraphs: guide.story)
+        case .gallery:
+            GalleryPanel(images: guide.gallery)
+        case .parkMap:
+            ParkMapPanel(place: place, sights: sights, centres: centres) {
+                showExplorer = true
+            }
         case .majorSights:
             MajorSightsPanel(
                 sights: sights,
@@ -140,8 +186,22 @@ public struct ParkGuideScreen: View {
             VisitorCentresPanel(centres: centres)
         case .trailHighlights:
             TrailHighlightsPanel(trails: store.trails(in: place.id))
+        case .alerts:
+            AlertsPanel(parkCode: place.npsParkCode ?? "")
         case .planYourVisit:
-            PlanYourVisitPanel(plan: guide.planYourVisit)
+            PlanYourVisitPanel(
+                plan: guide.planYourVisit,
+                fees: guide.fees,
+                hours: guide.operatingHours
+            )
+        case .weather:
+            NotePanel(panel: .weather, text: guide.weather ?? "", source: "National Park Service")
+        case .gettingThere:
+            NotePanel(
+                panel: .gettingThere,
+                text: guide.directions ?? "",
+                source: "National Park Service"
+            )
         case .chronology:
             ChronologyPanel(entries: guide.chronology)
         case .safetyAndRegulations:
@@ -167,5 +227,38 @@ public struct ParkGuideScreen: View {
             .filter { $0.place == place.id }
             .flatMap { $0.checkIns ?? [] }
         return Set(checkIns.map(\.target.id))
+    }
+}
+
+/// The hero photograph, full-bleed beneath the band, with its credit.
+struct GuideHero: View {
+    @Environment(\.unigrid) private var style
+    let image: GuideImage
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            PlacePhoto(image: image, aspectRatio: 2.1, maxPoints: 1400)
+                .frame(maxHeight: 520)
+                .clipped()
+            PhotoCredit(image: image)
+                .padding(.horizontal, UnigridStyle.pageMargin)
+        }
+    }
+}
+
+/// The guide's opening paragraph, set large across the page as a brochure sets its
+/// standfirst.
+struct GuideStandfirst: View {
+    @Environment(\.unigrid) private var style
+    let text: String
+
+    var body: some View {
+        Text(text)
+            .font(.system(.title3, design: .serif))
+            .foregroundStyle(style.ink)
+            .fixedSize(horizontal: false, vertical: true)
+            .frame(maxWidth: 760, alignment: .leading)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.vertical, 6)
     }
 }

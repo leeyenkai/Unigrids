@@ -13,6 +13,7 @@ public struct CheckInSheet: View {
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
     @Environment(\.referenceStore) private var store
+    @Query(sort: \Trip.createdAt, order: .reverse) private var trips: [Trip]
 
     let place: Place
 
@@ -20,6 +21,7 @@ public struct CheckInSheet: View {
     @State private var rating: Int?
     @State private var notes = ""
     @State private var selectedPOIs: Set<UnigridsID> = []
+    @State private var tripID: UUID?
     @State private var error: String?
 
     public init(place: Place) {
@@ -46,6 +48,19 @@ public struct CheckInSheet: View {
                     Text(place.name)
                 } footer: {
                     Text("A visit can be back-dated for a trip you took years ago.")
+                }
+
+                if !trips.isEmpty {
+                    Section {
+                        Picker("Trip", selection: $tripID) {
+                            Text("Not on a trip").tag(UUID?.none)
+                            ForEach(trips) { trip in
+                                Text(trip.name).tag(UUID?.some(trip.id))
+                            }
+                        }
+                    } footer: {
+                        Text("A visit on a trip shows in that trip's log.")
+                    }
                 }
 
                 Section("Rating") {
@@ -107,6 +122,13 @@ public struct CheckInSheet: View {
                     Button("Save") { save() }
                 }
             }
+            .onAppear {
+                // An unfinished trip that already has this place as a stop is the likely
+                // home for the visit.
+                tripID = trips.first { trip in
+                    trip.status != .done && trip.orderedStops.contains { $0.place == place.id }
+                }?.id
+            }
         }
     }
 
@@ -126,7 +148,8 @@ public struct CheckInSheet: View {
                 on: date,
                 source: .manual,
                 rating: rating,
-                notes: notes
+                notes: notes,
+                trip: trips.first { $0.id == tripID }
             )
             for poi in selectedPOIs {
                 try log.checkIn(at: .pointOfInterest(poi), during: visit, on: date)

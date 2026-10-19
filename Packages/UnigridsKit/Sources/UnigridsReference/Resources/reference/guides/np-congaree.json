@@ -1,0 +1,95 @@
+{
+ "placeID": "np-congaree",
+ "contentVersion": 2,
+ "story": [
+  "Congaree is a forest that floods. Several times in most years the Congaree and Wateree rivers spill over their banks and spread across the floodplain, leaving nutrients and fresh sediment behind. The trees have grown enormous on it: the canopy is among the tallest of any temperate deciduous forest left in the world, and the park holds national and state champion trees — loblolly pine, bald cypress, sweetgum, cherrybark oak.",
+  "Bald cypress stand in the sloughs on knees that rise from their roots, and water tupelo grow beside them. River otters, barred owls and wild turkeys live here, and for a couple of weeks around late May the park's synchronous fireflies flash together in the dark.",
+  "Cypress logging began here in 1898, but the swamp was hard to work and much of the old forest survived. When renewed logging threatened it in the late 1960s, a grassroots campaign led by the newspaperman Harry Hampton set out to save it, and in 1976 Congress created Congaree Swamp National Monument.",
+  "The monument grew, became an international biosphere reserve and was designated a national park in 2003. About fifteen thousand acres are wilderness, and a paddling trail follows Cedar Creek through the heart of the forest."
+ ],
+ "sightNotes": {
+  "poi-congaree-boardwalk-loop": "A 2.6-mile raised boardwalk through old-growth bottomland forest and past cypress knees, from the visitor center.",
+  "poi-congaree-weston-lake": "An oxbow lake on the Weston Lake Loop, with cypress growing in the water.",
+  "poi-congaree-cedar-creek": "A blackwater creek through the forest, followed by a marked canoe and kayak trail."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "One entrance off Old Bluff Road, reached from Interstate 77 exit 5 via SC 48"
+  ],
+  "seasonalClosures": [
+   "Floods close trails and campgrounds with little warning; check river levels before you go"
+  ],
+  "camping": [
+   "Bluff Campground, reservable, with some first-come sites",
+   "Longleaf Campground, reservable, with some first-come sites"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1898",
+   "text": "The Santee River Cypress Logging Company begins logging in the area."
+  },
+  {
+   "year": "1969",
+   "text": "A grassroots campaign to protect the forest begins."
+  },
+  {
+   "year": "1976",
+   "text": "Congress establishes Congaree Swamp National Monument."
+  },
+  {
+   "year": "2003",
+   "text": "The monument becomes Congaree National Park."
+  }
+ ],
+ "safety": [
+  "Floodwater rises quickly. Do not walk or paddle through moving water, and turn back where a trail is under water.",
+  "Mosquitoes can be fierce in warm months. Bring repellent and long sleeves."
+ ],
+ "regulations": [
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Congaree National Park — National Park Service",
+   "url": "https://www.nps.gov/cong/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS Photo",
+  "isPublicDomain": true,
+  "assetName": "np-congaree-1.jpg",
+  "caption": "Floodplain Forest",
+  "altText": "A view of a bottomland/floodplain forest, with wide based cypress and tupelo trees, cypress knees"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-congaree-2.jpg",
+   "caption": "Barred Owl on Harry Hampton Visitor Center Roof",
+   "altText": "An owl perched on a wooden building"
+  },
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-congaree-3.jpg",
+   "caption": "Congaree River",
+   "altText": "View of the Congaree River during the Fall"
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-congaree-4.jpg",
+   "caption": "Canoeing Cedar Creek",
+   "altText": "Two people in a canoe on a narrow creek surrounded by forest"
+  }
+ ],
+ "operatingHours": "Congaree National Park is generally open 24 hours a day year-round. For visitor and staff safety, park operations and/or weather conditions may occasionally result in short term, temporary closures. Please review the park webpage and social media platforms for more information. The Harry Hampton Visitor Center is open 9-5, daily. It is closed New Year's Day, President's Day, Columbus Day, Thanksgiving, and Christmas Day. Please check alerts prior to your visit.",
+ "weather": "Check the forecast before getting on the road. Conditions can change rapidly within the park. Flooding can happen with little or no warning, so make sure to check water levels for Cedar Creek and the Congaree River.",
+ "directions": "From Interstate 77, Exit 5 At Exit 5 turn onto SC Hwy 48 East/Bluff Road. Following the brown and white \"Congaree National Park\" directional signs, travel approximately 8 miles on and then take a slight right onto Old Bluff Road. Follow Old Bluff Road for 4.5 miles to the park entrance sign, which will be on the right. Proceed one mile to the Harry Hampton Visitor Center. Parking lots will be on the right."
+}

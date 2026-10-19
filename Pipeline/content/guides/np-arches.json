@@ -1,0 +1,123 @@
+{
+ "placeID": "np-arches",
+ "summary": "More than two thousand natural stone arches — the densest collection anywhere — with fins, pinnacles and balanced rocks, in the red-rock desert five miles north of Moab. A bed of salt buried deep beneath the park is what made them.",
+ "facts": {
+  "lowestElevationMetres": 1245,
+  "highestElevationMetres": 1723,
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "One to two days"
+ },
+ "story": [
+  "Arches sits on salt. Some three hundred million years ago a sea repeatedly flooded and evaporated across this region, leaving a layer of salt thousands of feet thick. Buried under later rock, the salt flowed like putty, bulging upward into domes and dissolving away beneath them, and the sandstone above cracked into long parallel fractures. Rain, ice and wind widened those cracks into narrow fins, and where a fin's lower layers wore through, an arch was left standing.",
+  "The process has not stopped. New arches are forming and old ones falling: a slab the size of a house dropped from Landscape Arch in 1991, and Wall Arch collapsed overnight in 2008. Everything here lives with heat and little water — under ten inches of rain a year — on soil held together by a dark, living crust of cyanobacteria, lichens and mosses that takes decades to recover once broken.",
+  "People have used this country for ten thousand years, from hunters working the chert in Courthouse Wash to Ancestral Puebloan and Fremont farmers and, later, Ute and Paiute peoples, whose rock art survives near Wolfe Ranch. A railroad man, Frank Wadleigh, brought the area to the Park Service's attention in 1923, and President Hoover proclaimed a national monument in 1929.",
+  "The writer Edward Abbey spent two seasons here as a ranger in the 1950s and turned them into Desert Solitaire, a book that sent readers to the monument and argued against the paved road that would bring them. Congress made Arches a national park in 1971. It now draws well over a million visits a year, and in recent seasons a timed-entry ticket has been needed in the busy months."
+ ],
+ "sights": [
+  {
+   "name": "Delicate Arch",
+   "match": "Delicate Arch Trail",
+   "note": "The free-standing arch on Utah's licence plates, reached by a three-mile round trip across open slickrock — or seen from below at the viewpoints."
+  },
+  {
+   "name": "Landscape Arch",
+   "match": "Devils Garden Trail",
+   "note": "The longest arch in the park, a thin ribbon of rock along the Devils Garden trail."
+  },
+  {
+   "name": "The Windows",
+   "match": "The Windows Viewpoint and Trail",
+   "note": "North and South Window and Turret Arch, a short loop from the parking area."
+  },
+  {
+   "name": "Double Arch",
+   "match": "Double Arch Viewpoint and Trail",
+   "note": "Two arches sharing one end, a short walk from the Windows."
+  },
+  {
+   "name": "Balanced Rock",
+   "match": "Balanced Rock Viewpoint and Trail",
+   "note": "A boulder the size of three school buses on a slender pedestal, right beside the road."
+  },
+  {
+   "name": "Park Avenue",
+   "match": "Park Avenue Viewpoint and Trail",
+   "note": "A canyon walled by fins and monoliths, the first big view inside the park."
+  },
+  {
+   "name": "Fiery Furnace",
+   "match": "Fiery Furnace Viewpoint and Permit Area",
+   "note": "A maze of narrow sandstone fins, entered only on a ranger-led hike or with a permit."
+  },
+  {
+   "name": "Wolfe Ranch",
+   "note": "A homesteader's cabin from the turn of the twentieth century, with Ute rock art nearby, at the start of the Delicate Arch trail."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "One entrance, on US 191 five miles north of Moab; the park road is a dead end"
+  ],
+  "reservations": "In recent seasons the park has required a timed-entry ticket for vehicles during the busy months. Check nps.gov/arch and Recreation.gov before you go.",
+  "permits": [
+   "Fiery Furnace — a self-guided exploration permit, or a place on a ranger-led hike",
+   "Backpacking — a backcountry permit"
+  ],
+  "lodging": [
+   "No lodging in the park; Moab is five miles south"
+  ],
+  "seasonalClosures": [
+   "Summer temperatures often pass 100°F (38°C); midday hiking in summer is dangerous"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "c. 1300",
+   "text": "Many Ancestral Puebloan people migrate south from the region."
+  },
+  {
+   "year": "1923",
+   "text": "Railroad manager Frank Wadleigh visits and urges the Park Service to protect the area."
+  },
+  {
+   "year": "1929",
+   "text": "President Hoover proclaims Arches National Monument."
+  },
+  {
+   "year": "1956",
+   "text": "Edward Abbey begins two seasons as a ranger, the basis of Desert Solitaire."
+  },
+  {
+   "year": "1971",
+   "text": "Congress establishes Arches National Park."
+  },
+  {
+   "year": "1991",
+   "text": "A large slab falls from Landscape Arch."
+  },
+  {
+   "year": "2008",
+   "text": "Wall Arch collapses."
+  }
+ ],
+ "safety": [
+  "Carry and drink plenty of water: there is little shade on most trails, and summer heat is dangerous.",
+  "Slickrock is slippery when wet and drops off sharply at fin edges. Stay on marked routes."
+ ],
+ "regulations": [
+  "Do not climb on arches: the rock is fragile and the park prohibits it.",
+  "Pets are not allowed on trails.",
+  "Stay on trails and slickrock to protect the biological soil crust.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Arches National Park — National Park Service",
+   "url": "https://www.nps.gov/arch/"
+  }
+ ],
+ "contentVersion": 2
+}

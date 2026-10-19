@@ -1,0 +1,102 @@
+{
+ "placeID": "np-white-sands",
+ "summary": "The world's largest gypsum dunefield, rising from New Mexico's Tularosa Basin — waves of brilliant white sand that stay cool underfoot. Sled the dunes, walk them at sunset, and look for the ice-age footprints and pale animals found nowhere else.",
+ "facts": {
+  "lowestElevationMetres": 1185,
+  "highestElevationMetres": 1255,
+  "bestSeasons": [
+   "autumn",
+   "winter",
+   "spring"
+  ],
+  "suggestedTime": "Half a day to a day"
+ },
+ "story": [
+  "Gypsum rarely forms sand: it dissolves in water and is usually carried away to the sea. The Tularosa Basin has no outlet to the sea, so rain and snowmelt wash gypsum down from the surrounding mountains and leave it behind as the water evaporates. The crystals that form on dry lakebeds break up, and the wind carries them east into dunes up to 60 feet high. The dunefield covers 275 square miles; the park protects the southern part of it.",
+  "About 12,000 years ago the basin held a large lake, Lake Otero, and grasslands grazed by mammoths and giant ground sloths. People walked its shores: fossilised human footprints found here have been dated to between 21,000 and 23,000 years ago, among the oldest known in the Americas.",
+  "Life in the dunes has adapted to the white sand. The Apache pocket mouse, the bleached earless lizard and several insects and spiders here are pale, and at least 45 species — most of them moths — are found nowhere else.",
+  "President Herbert Hoover proclaimed White Sands National Monument in 1933, and its adobe visitor center was built as a Works Progress Administration project in the late 1930s. Since 1941, White Sands Missile Range and Holloman Air Force Base have surrounded it. It became a national park in 2019."
+ ],
+ "sights": [
+  {
+   "name": "Dunes Drive",
+   "match": "End of Pavement",
+   "note": "An eight-mile road from the visitor center into the heart of the dunes; the last miles are packed gypsum, ploughed like snow."
+  },
+  {
+   "name": "Interdune Boardwalk",
+   "match": "Interdune Boardwalk",
+   "note": "An accessible boardwalk across the sparse plants between the dunes."
+  },
+  {
+   "name": "Dune Life Nature Trail",
+   "match": "Dune Life Nature Trail",
+   "note": "A short loop with signs on the animals that live in the dunes."
+  },
+  {
+   "name": "Alkali Flat Trail",
+   "match": "Alkali Flat Trail",
+   "note": "A five-mile loop over open dunes to the edge of the dry bed of ancient Lake Otero. Follow the marker posts closely."
+  },
+  {
+   "name": "Playa Trail",
+   "match": "Playa Trail",
+   "note": "An easy walk to a playa, a shallow basin that fills with water after rain."
+  },
+  {
+   "name": "Sledding dunes",
+   "match": "Sledding Area - Alkali Flat Parking Lot",
+   "note": "Steep dune faces for sledding. Waxed plastic saucers are sold at the park store."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "The only entrance is off US 70, about 15 miles southwest of Alamogordo and 52 miles northeast of Las Cruces"
+  ],
+  "permits": [
+   "Backcountry camping at the dune campsites — a permit, limited each night"
+  ],
+  "lodging": [
+   "No lodging or developed campground; Alamogordo and Las Cruces are the nearest towns"
+  ],
+  "seasonalClosures": [
+   "Dunes Drive and US 70 close for up to three hours at a time during missile tests",
+   "Summer days are very hot; spring is the windy season"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1933",
+   "text": "President Herbert Hoover proclaims White Sands National Monument."
+  },
+  {
+   "year": "1941",
+   "text": "Military ranges are established around the monument."
+  },
+  {
+   "year": "1988",
+   "text": "The monument's original adobe buildings are listed on the National Register of Historic Places."
+  },
+  {
+   "year": "2019",
+   "text": "White Sands becomes a national park."
+  }
+ ],
+ "safety": [
+  "Every dune looks alike. Carry water, a phone and a map, and don't hike in high wind or heat.",
+  "Don't hike the Alkali Flat Trail on hot afternoons; people have died of heat here.",
+  "Never dig tunnels or caves in the sand; they can collapse."
+ ],
+ "regulations": [
+  "Don't take sand, plants or animals from the park.",
+  "Unexploded military ordnance can turn up. Don't touch it; report it to a ranger.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "White Sands National Park — National Park Service",
+   "url": "https://www.nps.gov/whsa/"
+  }
+ ],
+ "contentVersion": 2
+}

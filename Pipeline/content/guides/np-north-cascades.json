@@ -1,0 +1,101 @@
+{
+ "placeID": "np-north-cascades",
+ "summary": "Jagged peaks crowned by more than three hundred glaciers, less than three hours from Seattle — the largest glacier system in the contiguous United States, with the turquoise lakes of the Skagit River beneath it and one highway through.",
+ "facts": {
+  "lowestElevationMetres": 120,
+  "highestElevationMetres": 2810,
+  "bestSeasons": [
+   "summer"
+  ],
+  "suggestedTime": "Two days"
+ },
+ "story": [
+  "The North Cascades are a jumble of steep, ice-carved peaks, built of rock that formed far away and was carried here on moving plates, then lifted and sculpted by glaciers. The park still holds more than three hundred of them, the most extensive glacier system in the lower forty-eight states, with nearly nine thousand feet of relief between its lowest valleys and Goode Mountain.",
+  "Moisture rules the park. Pacific storms drop enormous snowfalls on its western slopes and feed rainforest of cedar and hemlock in the valleys; across the crest the land turns drier, with pine and fire-adapted forest. The range of conditions gives the park more kinds of plants than any other national park.",
+  "Native peoples, among them the Upper Skagit and Chelan, travelled the passes for thousands of years. Miners and homesteaders came later; at Stehekin, reached only by boat or trail, an orchard planted by early settlers still bears fruit. In the twentieth century Seattle City Light dammed the Skagit, creating Diablo and Ross lakes, whose glacial flour colours them turquoise.",
+  "Congress created the park in 1968, together with the Ross Lake and Lake Chelan national recreation areas around it. The North Cascades Highway, completed in 1972, is the only road across it."
+ ],
+ "sights": [
+  {
+   "name": "Diablo Lake Overlook",
+   "note": "The best-known view in the park: a turquoise lake between forested peaks, beside the highway."
+  },
+  {
+   "name": "Cascade Pass",
+   "match": "Cascade Pass Trail",
+   "note": "A climb to a high pass among glaciers and meadows, used by travellers for millennia."
+  },
+  {
+   "name": "Ross Lake",
+   "match": "Ross Dam Trail",
+   "note": "A long reservoir reached by trail from the highway, with a floating resort."
+  },
+  {
+   "name": "Gorge Creek Falls",
+   "note": "A waterfall pouring into the Skagit gorge, seen from a short walk at the highway."
+  },
+  {
+   "name": "Thunder Knob",
+   "match": "Thunder Knob Trail",
+   "note": "A short climb to views over Diablo Lake and the surrounding peaks."
+  },
+  {
+   "name": "Sourdough Mountain",
+   "note": "A steep trail to a fire lookout high above Diablo."
+  },
+  {
+   "name": "Stehekin",
+   "match": "North Cascades Lodge at Stehekin",
+   "note": "A remote valley community at the head of Lake Chelan, reached by boat, plane or trail."
+  },
+  {
+   "name": "Rainbow Falls",
+   "match": "Rainbow Falls, North Cascades",
+   "note": "A tall waterfall a short ride up the valley from Stehekin."
+  },
+  {
+   "name": "Buckner Orchard",
+   "note": "A homestead orchard in the Stehekin valley, still producing apples."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "The North Cascades Highway, WA 20, from Interstate 5 at Burlington in the west or from Winthrop in the east",
+   "Stehekin, by passenger ferry or floatplane up Lake Chelan; no road reaches it",
+   "Hozomeen, at the north end of Ross Lake, by road from Canada"
+  ],
+  "permits": [
+   "Overnight wilderness trips — a wilderness permit"
+  ],
+  "lodging": [
+   "North Cascades Lodge at Stehekin, and floating cabins at Ross Lake Resort"
+  ],
+  "seasonalClosures": [
+   "The highway's mountain section closes with snow, usually from November to April"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1968",
+   "text": "North Cascades National Park and its two national recreation areas are established."
+  },
+  {
+   "year": "1972",
+   "text": "The North Cascades Highway is completed."
+  }
+ ],
+ "safety": [
+  "Glaciers and snowfields hide crevasses and avalanche danger; do not travel on them without training and equipment.",
+  "Store food properly: black bears live here."
+ ],
+ "regulations": [
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "North Cascades National Park — National Park Service",
+   "url": "https://www.nps.gov/noca/"
+  }
+ ],
+ "contentVersion": 2
+}

@@ -1,0 +1,157 @@
+{
+ "placeID": "np-isle-royale",
+ "contentVersion": 2,
+ "story": [
+  "Isle Royale is forty-five miles long and nine wide, surrounded by more than four hundred smaller islands. Its long parallel ridges are the tilted edges of ancient lava flows from a rift that nearly split the continent more than a billion years ago; between them lie lakes, bogs and forest of spruce, fir, birch and maple. Its highest point, Mount Desor, stands about eight hundred feet above the lake.",
+  "Moose reached the island in the early twentieth century, probably swimming from the mainland; wolves crossed an ice bridge around 1949. Isolated together, they became a natural laboratory, and in 1958 biologists began recording their numbers each winter. When inbreeding and lost ice bridges left only two wolves, the Park Service brought new wolves from the mainland in 2018 and 2019 to restore the balance.",
+  "People mined copper here for thousands of years: pits dug by Native people date back some six thousand years and more, and the Ojibwe called the island Minong. After the Ojibwe ceded it in 1842, prospectors came and went, and Scandinavian fishing families settled its harbors.",
+  "Isle Royale became a national park in 1940, and most of it is designated wilderness. Its waters hold shipwrecks preserved in the cold, and lighthouses still stand on its outer reefs. The park closes entirely from November to mid-April."
+ ],
+ "sightNotes": {
+  "poi-isle-royale-rock-harbor": "The island's main harbor, with a lodge, a store and trails along the rocky shore.",
+  "poi-isle-royale-lookout-louise": "A ridge-top view north over the islands toward Canada.",
+  "poi-isle-royale-greenstone-ridge": "The island's spine, a forty-mile trail along its highest ridge.",
+  "poi-isle-royale-mount-franklin": "A rocky summit on the Greenstone Ridge with views over Lake Superior.",
+  "poi-isle-royale-rock-harbor-lighthouse": "A nineteenth-century lighthouse near the old Edisen Fishery.",
+  "poi-isle-royale-suzys-cave": "A wave-cut arch left inland as the lake level fell, on a short trail from Rock Harbor.",
+  "poi-isle-royale-minong-ridge": "A rugged northern ridge and its trail, quieter than the Greenstone.",
+  "poi-isle-royale-rock-of-ages-lighthouse": "A lighthouse on a reef off the island's west end, among sunken wrecks."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Ferries from Houghton and Copper Harbor, Michigan, and from Grand Portage, Minnesota",
+   "Floatplane from Houghton"
+  ],
+  "permits": [
+   "Overnight camping or boating — a backcountry permit"
+  ],
+  "lodging": [
+   "Rock Harbor Lodge, and camper cabins at Windigo"
+  ],
+  "seasonalClosures": [
+   "The park is closed from November 1 to April 15; Lake Superior storms can delay boats and planes at any time"
+  ],
+  "camping": [
+   "Beaver Island Campground, first come, first served",
+   "Belle Isle Campground, first come, first served",
+   "Birch Island Campground, first come, first served",
+   "Caribou Island Campground, first come, first served",
+   "Chippewa Harbor Campground, reservable, with some first-come sites",
+   "Daisy Farm Campground, reservable, with some first-come sites",
+   "Duncan Bay Campground, first come, first served",
+   "Duncan Narrows Campground, first come, first served",
+   "East Chickenbone Campground, reservable, with some first-come sites",
+   "Feldtmann Lake Campground, reservable, with some first-come sites",
+   "Grace Island Campground, first come, first served",
+   "Hatchet Lake Campground, reservable, with some first-come sites",
+   "Hay Bay Campground, first come, first served",
+   "Huginnin Cove Campground, first come, first served",
+   "Intermediate Lake Campground, first come, first served",
+   "Island Mine Campground, reservable, with some first-come sites",
+   "Lake Richie Campground, reservable, with some first-come sites",
+   "Lake Richie Canoe Campground, first come, first served",
+   "Lake Whittlesey Campground, first come, first served",
+   "Lane Cove Campground, first come, first served",
+   "Little Todd Campground, first come, first served",
+   "Malone Bay Campground, reservable, with some first-come sites",
+   "McCargoe Cove Campground, reservable, with some first-come sites",
+   "Merritt Lane Campground, first come, first served",
+   "Moskey Basin Campground, reservable, with some first-come sites",
+   "North Desor Campground, first come, first served",
+   "Pickerel Cove Campground, first come, first served",
+   "Rock Harbor Campground, reservable, with some first-come sites",
+   "Siskiwit Bay Campground, reservable, with some first-come sites",
+   "South Lake Desor Campground, reservable, with some first-come sites",
+   "Three Mile Campground, reservable, with some first-come sites",
+   "Todd Harbor Campground, reservable, with some first-come sites",
+   "Tookers Island Campground, first come, first served",
+   "Washington Creek Campground, reservable, with some first-come sites",
+   "West Chickenbone Campground, reservable, with some first-come sites",
+   "Wood Lake Campground, first come, first served"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1842",
+   "text": "The Ojibwe cede Isle Royale to the United States."
+  },
+  {
+   "year": "1940",
+   "text": "Isle Royale National Park is established."
+  },
+  {
+   "year": "1958",
+   "text": "Biologists begin the annual study of the island's wolves and moose."
+  },
+  {
+   "year": "1976",
+   "text": "Most of the island is designated wilderness."
+  },
+  {
+   "year": "1980",
+   "text": "The park becomes an International Biosphere Reserve."
+  },
+  {
+   "year": "2018",
+   "text": "The Park Service begins bringing new wolves to the island."
+  }
+ ],
+ "safety": [
+  "Lake Superior is cold enough to kill in minutes. Paddle close to shore and watch the weather.",
+  "Treat all drinking water; filtering also removes a tapeworm found in island lakes.",
+  "Give moose a wide berth, especially cows with calves."
+ ],
+ "regulations": [
+  "Pets are not allowed, even on boats in park waters, to protect wolves from disease.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Isle Royale National Park — National Park Service",
+   "url": "https://www.nps.gov/isro/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Per person",
+   "cost": "$7",
+   "detail": "$7 per person per day to enter or remain in Isle Royale National Park. Children 15 and younger are exempt. Visiting Park Headquarters in Houghton, MI does not require a fee."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo / Paul Brown",
+  "isPublicDomain": true,
+  "assetName": "np-isle-royale-1.jpg",
+  "caption": "Aerial View of Belle Harbor",
+  "altText": "Aerial View of Belle Harbor"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / Paul Brown",
+   "isPublicDomain": true,
+   "assetName": "np-isle-royale-2.jpg",
+   "caption": "Bull Moose",
+   "altText": "Young bull moose browsing for food"
+  },
+  {
+   "credit": "NPS Photo / Paul Brown",
+   "isPublicDomain": true,
+   "assetName": "np-isle-royale-3.jpg",
+   "caption": "Rock of Ages Lighthouse",
+   "altText": "Aerial view of Rock of Ages Lighthouse"
+  },
+  {
+   "credit": "NPS Photo / Paul Brown",
+   "isPublicDomain": true,
+   "assetName": "np-isle-royale-4.jpg",
+   "caption": "Aurora Borealis Over Isle Royale National Park",
+   "altText": "Diverse colored Aurora Borealis in the night sky"
+  }
+ ],
+ "operatingHours": "Isle Royale National Park is open annually from April 16 to October 31. Transportation services are offered from May to September. The island and its surrounding islands are closed to all visitors from November 1 to April 15 due to extreme winter weather conditions and for the safety and protection of visitors. This closure extends 4.5 miles out into Lake Superior from the island. Park headquarters during the winter is in Houghton, Michigan. Summer headquarters is located at Mott Island on Isle Royale.",
+ "weather": "Isle Royale National Park is a remote island wilderness in the middle of Lake Superior. Weather influences traveling to and from the island, as well as your trip once you arrive. For the most up-to-date weather information, call (906) 482-0984 or email isro_parkinfo@nps.gov prior to your trip.",
+ "directions": "Isle Royale National Park headquarters is located in Houghton, MI. Visit the Houghton page on the Isle Royale National Park website for additional information and a map on how to access the visitor center."
+}

@@ -1,0 +1,122 @@
+{
+ "placeID": "np-redwood",
+ "contentVersion": 2,
+ "story": [
+  "Coast redwoods are the tallest trees on Earth. They grow only in a narrow belt of fog and rain along the Pacific coast, and the four parks managed here — Redwood National Park and Prairie Creek, Del Norte Coast and Jedediah Smith Redwoods State Parks — protect nearly half of all the old-growth coast redwood forest that remains. Hyperion, the tallest known living tree at about 380 feet, was found here in 2006; its location is kept secret to protect it.",
+  "Yurok, Tolowa, Chilula and other peoples have lived here for thousands of years, building houses and boats from redwood planks. The gold rush of the 1850s brought settlers, violence and disease that devastated them. Logging followed, and by the twentieth century most of the original forest had been cut.",
+  "The Save the Redwoods League, founded in 1918, bought groves and helped create the state parks in the 1920s. After a long campaign, Congress established Redwood National Park in 1968 and expanded it in 1978, adding logged land in the Redwood Creek watershed that the park has been restoring since. The parks have been managed together since 1994.",
+  "Beyond the trees, the parks protect 37 miles of coastline, prairies and oak woodland, rivers with salmon and steelhead, and herds of Roosevelt elk."
+ ],
+ "sightNotes": {
+  "poi-redwood-tall-trees-grove": "A grove of very tall redwoods beside Redwood Creek. Reached by a steep trail from a gated road that needs a free permit.",
+  "poi-redwood-lady-bird-johnson-grove": "A short loop through old growth on a ridge above the coast, named for the former first lady.",
+  "poi-redwood-fern-canyon": "A creek ravine about 50 feet deep with walls covered in ferns, near Gold Bluffs Beach. Expect wet feet.",
+  "poi-redwood-stout-memorial-grove": "A level loop among some of the largest redwoods, beside the Smith River.",
+  "poi-redwood-simpson-reed-grove": "An easy loop through old-growth redwood and hemlock just off US 199.",
+  "poi-redwood-big-tree-wayside": "A short walk to one of the park's largest redwoods, off the Newton B. Drury Scenic Parkway.",
+  "poi-redwood-klamath-river-overlook": "A high viewpoint over the river mouth; watch for grey whales on their migrations.",
+  "poi-redwood-gold-bluffs-beach": "A long, wild beach backed by bluffs, often with elk in the grass.",
+  "poi-redwood-elk-meadow": "A meadow near Orick where Roosevelt elk often graze, and the start of the Trillium Falls Trail."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "US 101 runs the length of the parks, about 60 miles, from Orick in the south to Crescent City",
+   "US 199 enters from the northeast, through Jedediah Smith Redwoods State Park"
+  ],
+  "reservations": "Tall Trees Grove needs a free permit for its access road, limited each day. In summer, Fern Canyon and Gold Bluffs Beach need a parking reservation from California State Parks, and the state park campgrounds should be reserved ahead.",
+  "permits": [
+   "Backcountry camping — a free permit"
+  ],
+  "lodging": [
+   "No lodges in the parks; Crescent City, Klamath, Orick and Trinidad have places to stay"
+  ],
+  "seasonalClosures": [
+   "October to April is the rainy season, with 60 to 80 inches of rain; summer is often foggy and cool",
+   "Davison Road to Gold Bluffs Beach and Fern Canyon is unpaved and not suitable for trailers"
+  ],
+  "camping": [
+   "Elk Prairie Campground - Prairie Creek Redwoods State Park, reservable",
+   "Gold Bluffs Beach Campground - Prairie Creek Redwoods State Park, reservable",
+   "Jedediah Smith Campground - Jedediah Smith Redwoods State Park, reservable",
+   "Mill Creek Campground - Del Norte Coast Redwoods State Park, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1918",
+   "text": "The Save the Redwoods League is founded."
+  },
+  {
+   "year": "1968",
+   "text": "Redwood National Park is established."
+  },
+  {
+   "year": "1978",
+   "text": "Congress expands the park to take in the Redwood Creek watershed."
+  },
+  {
+   "year": "1980",
+   "text": "The parks are inscribed as a World Heritage Site."
+  },
+  {
+   "year": "1994",
+   "text": "The National Park Service and California State Parks begin managing the four parks together."
+  },
+  {
+   "year": "2006",
+   "text": "Hyperion, the world's tallest known living tree, is found in the park."
+  }
+ ],
+ "safety": [
+  "Never turn your back on the ocean: sneaker waves and rip currents are common on these beaches.",
+  "Keep well away from elk, especially during the autumn rut and the spring calving season.",
+  "After a strong earthquake on the coast, move to high ground at once; a tsunami may follow."
+ ],
+ "regulations": [
+  "Pets are not allowed on park trails; ask which beaches and campgrounds allow them on a leash.",
+  "Drones may not be launched, landed or flown in the parks."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Redwood National and State Parks — National Park Service",
+   "url": "https://www.nps.gov/redw/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS Photo / Steve Olson",
+  "isPublicDomain": true,
+  "assetName": "np-redwood-1.jpg",
+  "caption": "Fish-eye view of Redwood canopy",
+  "altText": "View from forest floor looking straight up. Ferns as seen close up and redwood trunks meet."
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / John Chao",
+   "isPublicDomain": true,
+   "assetName": "np-redwood-2.jpg",
+   "caption": "Tide pooling at Enderts Beach",
+   "altText": "Two visitors looking at tidepools."
+  },
+  {
+   "credit": "NPS: John Chao",
+   "isPublicDomain": true,
+   "assetName": "np-redwood-3.jpg",
+   "caption": "Visitors Plan Their Redwood Trip",
+   "altText": "Five young women read the park map."
+  },
+  {
+   "credit": "NPS Photo / John Chao",
+   "isPublicDomain": true,
+   "assetName": "np-redwood-4.jpg",
+   "caption": "Ranger Program at Klamath River Overlook",
+   "altText": "Visitors chatting with a ranger above a river mouth."
+  }
+ ],
+ "operatingHours": "The national and state parks are always open to enjoy. Roads, trails and public access remain open year round. Some campgrounds and visitor centers are closed - or have reduced hours - in the off-season (October-May)",
+ "weather": "Visitors should be prepared for cooler and damp weather. Dress in layers and expect to get wet. Year-round temperatures along California's redwood coast: mid-40s°F (7°C) to mid-60s°F (18°C). Summer can be foggy, with highs occasionally reaching low 70s°F (20°C). Winters are cooler with considerable rain. October through April averages 60-80 inches of rain over the region.",
+ "directions": "Redwood National and State Parks is located in northernmost coastal California - almost on the Oregon border. The parks are about 60-miles long, with four visitor centers from north to south. We are a six to seven-hour drive (325 miles) north of San Francisco, a six-hour drive (330 miles) south of Portland, OR and a four-hour drive (170 miles) west of Redding, CA."
+}

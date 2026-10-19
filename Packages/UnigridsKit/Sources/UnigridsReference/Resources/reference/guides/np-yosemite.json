@@ -1,0 +1,168 @@
+{
+ "placeID": "np-yosemite",
+ "contentVersion": 2,
+ "story": [
+  "Yosemite Valley was carved from granite by rivers and then by glaciers, which scoured the narrow river canyon into a broad U-shaped valley. The walls left behind rise thousands of feet: El Capitan, a favourite of climbers worldwide, and Half Dome, 4,800 feet above the valley floor. Yosemite Falls drops 2,425 feet in three stages, among the tallest in North America.",
+  "The Ahwahneechee lived in the valley, which they called Ahwahnee. In 1851 the Mariposa Battalion, a state militia, entered it to drive them out, and they were later forced away. Tourists followed from 1855, and in 1864 President Abraham Lincoln signed the Yosemite Grant, protecting the valley and the Mariposa Grove of giant sequoias — the first time the US government had set land aside for public enjoyment.",
+  "John Muir's campaigning led Congress to create a national park around the valley in 1890, and in 1906 the valley and Mariposa Grove were added to it. Before the National Park Service existed, cavalry troops, including the Black 9th Cavalry, patrolled the park. In 1913 Congress approved damming the Hetch Hetchy Valley to supply San Francisco, a loss Muir fought to the end.",
+  "Almost 95 percent of the park is designated wilderness, from oak foothills to the alpine meadows and peaks of the high Sierra. It was inscribed as a World Heritage Site in 1984."
+ ],
+ "sightNotes": {
+  "poi-yosemite-tunnel-view": "The classic view up the valley to El Capitan, Bridalveil Fall and Half Dome.",
+  "poi-yosemite-yosemite-falls": "A short loop to the base of the lower fall. The falls run strongest in late spring and are often dry by late summer.",
+  "poi-yosemite-el-capitan": "A sheer granite monolith; from the meadow, look for climbers on the face.",
+  "poi-yosemite-half-dome": "The park's emblem. The hike to the top, with its final climb up steel cables, needs a permit.",
+  "poi-yosemite-glacier-point": "An overlook 3,200 feet above the valley, facing Half Dome, reached by road in summer.",
+  "poi-yosemite-bridalveil-fall": "A short walk to the foot of a waterfall that flows all year.",
+  "poi-yosemite-mirror-lake": "A seasonal lake below Half Dome, fullest in spring.",
+  "poi-yosemite-sentinel-dome-and-taft-point": "Two easy walks off Glacier Point Road: a granite dome and a cliff-edge overlook.",
+  "poi-yosemite-mariposa-grove": "The park's largest sequoia grove, near the South Entrance, with the Grizzly Giant.",
+  "poi-yosemite-tuolumne-meadows": "A broad subalpine meadow on the Tioga Road, ringed by granite domes.",
+  "poi-yosemite-tenaya-lake": "A high-country lake with a sandy beach, beside the Tioga Road.",
+  "poi-yosemite-hetch-hetchy": "A reservoir in a valley once compared to Yosemite's, with trails to Wapama Falls."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Arch Rock, on Highway 140 from Mariposa",
+   "Big Oak Flat, on Highway 120 from the west",
+   "South Entrance, on Highway 41 from Fresno",
+   "Tioga Pass, on Highway 120 from the east; usually closed from November to late May or June",
+   "Hetch Hetchy, from Highway 120 near Big Oak Flat"
+  ],
+  "reservations": "In recent summers, a reservation has been needed to drive in at peak times, so check before you go. Campgrounds and lodging should be booked months ahead, and the Half Dome cables need a permit from a lottery.",
+  "permits": [
+   "Overnight wilderness trips — a permit, with daily trailhead quotas"
+  ],
+  "lodging": [
+   "The Ahwahnee, Yosemite Valley Lodge and Curry Village, in Yosemite Valley",
+   "Campgrounds throughout the park"
+  ],
+  "seasonalClosures": [
+   "Tioga Road and Glacier Point Road close for winter",
+   "Waterfalls are strongest from April to June"
+  ],
+  "camping": [
+   "Bridalveil Creek Campground, reservable",
+   "Bridalveil Creek Horse Camp, reservable",
+   "Camp 4 Campground, reservable",
+   "Crane Flat Campground, reservable",
+   "Hodgdon Meadow Campground, reservable",
+   "Lower Pines Campground, reservable",
+   "North Pines Campground, reservable",
+   "Porcupine Flat Campground, reservable",
+   "Tamarack Flat Campground, reservable",
+   "Tuolumne Meadows Campground, reservable",
+   "Tuolumne Meadows Horse Camp, reservable",
+   "Upper Pines Campground, reservable",
+   "Wawona Campground, reservable",
+   "Wawona Horse Camp, reservable",
+   "White Wolf Campground, reservable",
+   "Yosemite Creek Campground, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1851",
+   "text": "The Mariposa Battalion enters Yosemite Valley."
+  },
+  {
+   "year": "1864",
+   "text": "President Abraham Lincoln signs the Yosemite Grant."
+  },
+  {
+   "year": "1890",
+   "text": "Yosemite National Park is created around the valley."
+  },
+  {
+   "year": "1906",
+   "text": "Yosemite Valley and the Mariposa Grove are added to the national park."
+  },
+  {
+   "year": "1913",
+   "text": "The Raker Act approves a dam in the Hetch Hetchy Valley."
+  },
+  {
+   "year": "1984",
+   "text": "Yosemite is inscribed as a World Heritage Site."
+  }
+ ],
+ "safety": [
+  "Rivers and waterfalls are the park's biggest danger. Stay out of the water above falls and away from wet, slippery rock.",
+  "Store all food in bear-proof lockers or canisters; it is required, and bears here break into cars.",
+  "Never climb the Half Dome cables when storms threaten."
+ ],
+ "regulations": [
+  "Food storage rules are enforced with fines.",
+  "Pets are allowed on paved paths but not on most trails.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Yosemite National Park — National Park Service",
+   "url": "https://www.nps.gov/yose/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$35",
+   "detail": "This fee is valid for seven consecutive days for a non-commercial car, pickup truck, RV, or van with 15 or fewer passenger seats. This fee covers the vehicle and everyone inside of it. Per-person nonresident fees still apply."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$30",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Per-person nonresident fees still apply."
+  },
+  {
+   "title": "Per person",
+   "cost": "$20",
+   "detail": "This fee is valid for seven consecutive days for people entering on foot, a bicycle, a horse, or a non-commercial bus or van. People 15 years and younger are free."
+  },
+  {
+   "title": "Education/academic groups",
+   "cost": "Free",
+   "detail": "An educational fee waiver is available for educational and scientific groups that are accredited or tax-exempt for educational purposes planning a trip for educational or scientific purposes related to Yosemite that is not primarily recreational."
+  },
+  {
+   "title": "Nonresident",
+   "cost": "$100",
+   "detail": "Each non-US resident aged 16 and older visiting Yosemite National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group."
+  }
+ ],
+ "hero": {
+  "credit": "NPS / Cindy Jacoby",
+  "isPublicDomain": true,
+  "assetName": "np-yosemite-1.jpg",
+  "caption": "Half Dome",
+  "altText": "Granite dome with trace amounts of snow."
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-yosemite-2.jpg",
+   "caption": "Upper Yosemite Fall and Merced River in spring",
+   "altText": "Upper Yosemite Fall and Merced River in spring"
+  },
+  {
+   "credit": "NPS / Cindy Jacoby",
+   "isPublicDomain": true,
+   "assetName": "np-yosemite-3.jpg",
+   "caption": "Cathedral Peak and Lake in Autumn",
+   "altText": "A mountain reflecting in a lake."
+  },
+  {
+   "credit": "NPS / Bob Roney",
+   "isPublicDomain": true,
+   "assetName": "np-yosemite-4.jpg",
+   "caption": "Rainbow over Half Dome",
+   "altText": "A rainbow over a mountain in the distance."
+  }
+ ],
+ "operatingHours": "Yosemite National Park is open 24 hours per day, 365 days per year.",
+ "weather": "Yosemite National Park covers nearly 1,200 square miles (3,100 square km) in the Sierra Nevada, with elevations ranging from about 2,000 feet (600 m) to 13,000 ft (4,000 m). Yosemite receives 95% of its precipitation between October and May (and over 75% between November and March). Most of Yosemite is blanketed in snow from about November through May. (Yosemite Valley can be rainy or snowy in any given winter storm.)",
+ "directions": "You can drive to Yosemite year-round and enter via Highways 41, 140, and 120 from the west. Tioga Pass Entrance (via Highway 120 from the east) is closed from approximately November through late May or June. Hetch Hetchy is open all year but may close intermittently due to snow. Please note that GPS units do not always provide accurate directions to or within Yosemite."
+}

@@ -1,0 +1,92 @@
+{
+ "placeID": "np-hot-springs",
+ "summary": "Forty-seven hot springs on the side of a mountain in the middle of a town, and the Gilded Age bathhouses built to use them. Congress set them aside in 1832, forty years before Yellowstone, so the water could belong to everyone.",
+ "facts": {
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "One day"
+ },
+ "story": [
+  "The water that flows from the springs fell as rain thousands of years ago. It soaked into the rocks of the Ouachita Mountains, sank deep enough to be heated by the Earth, and returned to the surface along a fault on the side of Hot Springs Mountain, emerging at around 143°F. The Park Service collects it, cools some of it, and supplies it to the bathhouses and to public fountains where anyone can fill a jug.",
+  "Native peoples knew the springs long before Europeans arrived. In 1832, decades before the idea of a national park existed, Congress reserved them for the public — the first time the federal government set land aside for recreation. A spa town grew around them, and in the early twentieth century it drew baseball teams for spring training, gamblers, gangsters and invalids hoping for a cure.",
+  "Bathhouse Row, a line of grand bathhouses along Central Avenue, is a National Historic Landmark District. The Fordyce is the park's visitor center and museum; the Buckstaff still offers traditional baths, the Quapaw a modern spa, and the Superior has become a brewery that makes its beer with spring water.",
+  "The reservation became Hot Springs National Park in 1921. Behind the town, forested trails climb the mountains, past outcrops of novaculite, a hard stone once quarried for whetstones."
+ ],
+ "sights": [
+  {
+   "name": "Grand Promenade",
+   "note": "A brick walkway behind Bathhouse Row, past open springs and tufa."
+  },
+  {
+   "name": "Buckstaff Bathhouse",
+   "note": "A bathhouse that has offered traditional thermal baths since the early twentieth century."
+  },
+  {
+   "name": "Hot Water Cascade",
+   "note": "Spring water flowing openly over tufa beside Arlington Lawn."
+  },
+  {
+   "name": "Display Spring",
+   "note": "One of the springs left open to view, steaming in cold weather."
+  },
+  {
+   "name": "Superior Bathhouse",
+   "note": "A historic bathhouse turned brewery, using thermal water in its beer."
+  },
+  {
+   "name": "Quapaw Bathhouse",
+   "note": "A Spanish Colonial Revival bathhouse now run as a modern spa."
+  },
+  {
+   "name": "Hot Springs Mountain Tower",
+   "note": "An observation tower above the town, with views over the Ouachita Mountains."
+  },
+  {
+   "name": "Goat Rock View Point",
+   "note": "A rocky outlook on the North Mountain trails."
+  },
+  {
+   "name": "Jug fountains",
+   "match": "Hill Wheatley Plaza Jug Fountain (Hot)",
+   "note": "Public fountains where anyone may fill containers with thermal water, free."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "No entrance gates: the park is in downtown Hot Springs, along Central Avenue",
+   "No entrance fee; bathhouse services are paid separately"
+  ],
+  "lodging": [
+   "Hotels in the city of Hot Springs, some historic"
+  ],
+  "seasonalClosures": [
+   "Summers are hot and humid; spring and autumn are the most pleasant seasons for the trails"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1832",
+   "text": "Congress sets aside the Hot Springs Reservation."
+  },
+  {
+   "year": "1921",
+   "text": "The reservation becomes Hot Springs National Park."
+  }
+ ],
+ "safety": [
+  "Spring water emerges hot enough to scald. Do not touch the open springs."
+ ],
+ "regulations": [
+  "Thermal water may be taken from the jug fountains for personal use.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Hot Springs National Park — National Park Service",
+   "url": "https://www.nps.gov/hosp/"
+  }
+ ],
+ "contentVersion": 2
+}

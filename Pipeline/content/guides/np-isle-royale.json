@@ -1,0 +1,111 @@
+{
+ "placeID": "np-isle-royale",
+ "summary": "A roadless island wilderness in the middle of Lake Superior, reached only by ferry or floatplane and closed for the winter. Its wolves and moose have been watched by scientists since 1958, in the longest-running study of predators and prey anywhere.",
+ "facts": {
+  "highestElevationMetres": 425,
+  "bestSeasons": [
+   "summer"
+  ],
+  "suggestedTime": "Three to five days"
+ },
+ "story": [
+  "Isle Royale is forty-five miles long and nine wide, surrounded by more than four hundred smaller islands. Its long parallel ridges are the tilted edges of ancient lava flows from a rift that nearly split the continent more than a billion years ago; between them lie lakes, bogs and forest of spruce, fir, birch and maple. Its highest point, Mount Desor, stands about eight hundred feet above the lake.",
+  "Moose reached the island in the early twentieth century, probably swimming from the mainland; wolves crossed an ice bridge around 1949. Isolated together, they became a natural laboratory, and in 1958 biologists began recording their numbers each winter. When inbreeding and lost ice bridges left only two wolves, the Park Service brought new wolves from the mainland in 2018 and 2019 to restore the balance.",
+  "People mined copper here for thousands of years: pits dug by Native people date back some six thousand years and more, and the Ojibwe called the island Minong. After the Ojibwe ceded it in 1842, prospectors came and went, and Scandinavian fishing families settled its harbors.",
+  "Isle Royale became a national park in 1940, and most of it is designated wilderness. Its waters hold shipwrecks preserved in the cold, and lighthouses still stand on its outer reefs. The park closes entirely from November to mid-April."
+ ],
+ "sights": [
+  {
+   "name": "Rock Harbor",
+   "match": "Rock Harbor Lodge",
+   "note": "The island's main harbor, with a lodge, a store and trails along the rocky shore."
+  },
+  {
+   "name": "Lookout Louise",
+   "note": "A ridge-top view north over the islands toward Canada."
+  },
+  {
+   "name": "Greenstone Ridge",
+   "match": "Greenstone Ridge Trailhead: Windigo",
+   "note": "The island's spine, a forty-mile trail along its highest ridge."
+  },
+  {
+   "name": "Mount Franklin",
+   "note": "A rocky summit on the Greenstone Ridge with views over Lake Superior."
+  },
+  {
+   "name": "Rock Harbor Lighthouse",
+   "note": "A nineteenth-century lighthouse near the old Edisen Fishery."
+  },
+  {
+   "name": "Suzy's Cave",
+   "note": "A wave-cut arch left inland as the lake level fell, on a short trail from Rock Harbor."
+  },
+  {
+   "name": "Minong Ridge",
+   "match": "Minong Ridge Overlook",
+   "note": "A rugged northern ridge and its trail, quieter than the Greenstone."
+  },
+  {
+   "name": "Rock of Ages Lighthouse",
+   "note": "A lighthouse on a reef off the island's west end, among sunken wrecks."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Ferries from Houghton and Copper Harbor, Michigan, and from Grand Portage, Minnesota",
+   "Floatplane from Houghton"
+  ],
+  "permits": [
+   "Overnight camping or boating — a backcountry permit"
+  ],
+  "lodging": [
+   "Rock Harbor Lodge, and camper cabins at Windigo"
+  ],
+  "seasonalClosures": [
+   "The park is closed from November 1 to April 15; Lake Superior storms can delay boats and planes at any time"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1842",
+   "text": "The Ojibwe cede Isle Royale to the United States."
+  },
+  {
+   "year": "1940",
+   "text": "Isle Royale National Park is established."
+  },
+  {
+   "year": "1958",
+   "text": "Biologists begin the annual study of the island's wolves and moose."
+  },
+  {
+   "year": "1976",
+   "text": "Most of the island is designated wilderness."
+  },
+  {
+   "year": "1980",
+   "text": "The park becomes an International Biosphere Reserve."
+  },
+  {
+   "year": "2018",
+   "text": "The Park Service begins bringing new wolves to the island."
+  }
+ ],
+ "safety": [
+  "Lake Superior is cold enough to kill in minutes. Paddle close to shore and watch the weather.",
+  "Treat all drinking water; filtering also removes a tapeworm found in island lakes.",
+  "Give moose a wide berth, especially cows with calves."
+ ],
+ "regulations": [
+  "Pets are not allowed, even on boats in park waters, to protect wolves from disease.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Isle Royale National Park — National Park Service",
+   "url": "https://www.nps.gov/isro/"
+  }
+ ],
+ "contentVersion": 2
+}

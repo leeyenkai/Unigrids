@@ -1,0 +1,113 @@
+{
+ "placeID": "np-glacier-bay",
+ "contentVersion": 2,
+ "story": [
+  "When George Vancouver's ships passed in 1794, Glacier Bay was barely an indentation in a wall of ice. The glacier that filled it has since retreated more than sixty miles up the bay — one of the fastest glacial retreats ever recorded — leaving a branching system of fjords with a dozen glaciers still reaching the sea, where ice breaks off their faces into the water with a roar.",
+  "As the ice withdraws, new land is laid bare and life follows in order: mosses and lichens, then dryas and alder, then a forest of spruce and hemlock at the mouth of the bay. The bay itself is rich: humpback whales feed here in summer, sea otters have returned, Steller sea lions haul out on South Marble Island beside puffins and kittiwakes, and brown and black bears forage along the shore.",
+  "This is the homeland of the Huna Tlingit, whose ancestors lived in the bay until the advancing ice drove them out, an event their oral history remembers. A tribal house built with the Park Service stands today at Bartlett Cove. John Muir explored the bay in 1879 and wrote it into the national imagination.",
+  "President Coolidge proclaimed a national monument in 1925. It became part of a binational World Heritage Site in 1979 and a national park and preserve under the Alaska lands act of 1980. Most visitors see it from the deck of a cruise ship; others come to Bartlett Cove, near Gustavus, to kayak, camp or take the day boat up the bay."
+ ],
+ "sightNotes": {
+  "poi-glacier-bay-bartlett-cove": "Park headquarters, the lodge, the campground and a rainforest trail, ten miles from Gustavus.",
+  "poi-glacier-bay-margerie-glacier": "A tidewater glacier at the head of Tarr Inlet, often calving into the inlet.",
+  "poi-glacier-bay-johns-hopkins-glacier": "A glacier at the head of a steep-walled inlet where harbor seals raise pups on the ice.",
+  "poi-glacier-bay-lamplugh-glacier": "A broad blue glacier face on the west arm of the bay.",
+  "poi-glacier-bay-south-marble-island": "A rock in the lower bay crowded with sea lions, puffins and other seabirds.",
+  "poi-glacier-bay-gloomy-knob": "A dark headland where mountain goats graze the cliffs above the water.",
+  "poi-glacier-bay-tarr-inlet": "The northernmost arm of the bay, ending at the Margerie and Grand Pacific glaciers."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "By air or ferry to Gustavus, then a ten-mile road to Bartlett Cove",
+   "By cruise ship, which carries most visitors up the bay",
+   "A day tour boat runs from Bartlett Cove in summer"
+  ],
+  "permits": [
+   "Private boats entering the bay in summer — a permit",
+   "Backcountry camping and kayaking — a free permit and an orientation"
+  ],
+  "lodging": [
+   "Glacier Bay Lodge at Bartlett Cove, and a walk-in campground"
+  ],
+  "seasonalClosures": [
+   "Most services run from late May to early September; rain is the norm, and September and October are the wettest months"
+  ],
+  "camping": [
+   "Bartlett Cove Campground, first come, first served"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1794",
+   "text": "George Vancouver finds the bay almost entirely filled with ice."
+  },
+  {
+   "year": "1879",
+   "text": "John Muir explores the bay."
+  },
+  {
+   "year": "1925",
+   "text": "President Coolidge proclaims Glacier Bay National Monument."
+  },
+  {
+   "year": "1979",
+   "text": "The bay becomes part of a binational World Heritage Site."
+  },
+  {
+   "year": "1980",
+   "text": "The Alaska lands act creates Glacier Bay National Park and Preserve."
+  }
+ ],
+ "safety": [
+  "The water is cold enough to kill quickly. Kayakers should stay close to shore and travel with others.",
+  "Keep well back from glacier faces: calving ice throws up waves and falling blocks.",
+  "Brown and black bears live along the shore. Carry bear spray and store food in bear-resistant containers."
+ ],
+ "regulations": [
+  "Boats must stay at least a quarter of a mile from humpback whales.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Glacier Bay National Park and Preserve — National Park Service",
+   "url": "https://www.nps.gov/glba/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS / T. VandenBerg",
+  "isPublicDomain": true,
+  "assetName": "np-glacier-bay-1.jpg",
+  "caption": "Cruising Glacier Bay",
+  "altText": "Cruising Glacier Bay"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-glacier-bay-2.jpg",
+   "caption": "Iceberg on the shore",
+   "altText": "Icebergs, calved from tidewater glaciers are a common sight in Glacier Bay National Park."
+  },
+  {
+   "credit": "NPS Photo / B. Whitehead",
+   "isPublicDomain": true,
+   "assetName": "np-glacier-bay-3.jpg",
+   "caption": "Pan ice in Tarr Inlet",
+   "altText": "Pan ice in Tarr Inlet"
+  },
+  {
+   "credit": "NPS Photo / C. Behnke",
+   "isPublicDomain": true,
+   "assetName": "np-glacier-bay-4.jpg",
+   "caption": "Beachcombing Brown Bear",
+   "altText": "Beachcombing Brown Bear"
+  }
+ ],
+ "operatingHours": "There are no entrance gates at Glacier Bay National Park, so we are technically open 24-hours a day; however, services may be extremely limited depending on the time of your visit. The main visitor season is from late-May through early-September with the peak being the month of July. Check the VISITOR CENTERS tab below to see hours for specific facilities, and read the exceptions that detail seasonal changes in hours.",
+ "weather": "Summer temperatures average 50° to 60° F (10° to 15° C). Rain is the norm in lush southeast Alaska. It is best to be prepared to enjoy the park in any kind of weather, especially rain. Suggested clothing includes waterproof boots, rain gear, a hat, gloves, wool or pile layers or a warm coat. Good rain gear is essential here. April, May and June are usually the driest months of the year. September and October tend to be the wettest.",
+ "directions": "Glacier Bay National Park and Preserve lies west of Juneau, Alaska, and can only be reached by plane or boat. The only road in the area merely connects the small town of Gustavus and its airfield to park headquarters at Bartlett Cove (10 miles). Alaska Airlines provides daily jet service from Juneau to Gustavus in the summer months. Year-round scheduled air service is also provided by a variety of small air taxis and charters. The Alaska Marine Highway ferries also provide regular service from Juneau."
+}

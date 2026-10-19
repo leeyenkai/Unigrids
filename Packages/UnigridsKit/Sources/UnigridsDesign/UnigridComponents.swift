@@ -66,6 +66,9 @@ public struct UnigridPanel<Content: View>: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(UnigridStyle.panelPadding)
+        // Panels sharing a row take the row's height, so the grid reads as one sheet
+        // of equal panels, the way a printed brochure does, rather than ragged boxes.
+        .frame(maxHeight: .infinity, alignment: .top)
         .background(style.panel)
         .overlay {
             Rectangle()

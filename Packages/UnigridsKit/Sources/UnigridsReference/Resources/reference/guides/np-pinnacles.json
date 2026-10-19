@@ -1,0 +1,127 @@
+{
+ "placeID": "np-pinnacles",
+ "contentVersion": 2,
+ "story": [
+  "About 23 million years ago, a volcano erupted far to the southeast of here. The San Andreas Fault split it, and the western half has travelled some two hundred miles northwest since. Wind and water carved what was left into the pinnacles, spires and sheer walls that give the park its name.",
+  "Where giant boulders tumbled into narrow gorges and wedged there, they roofed the gorges over and made talus caves. Bear Gulch and Balconies are the two you can walk through, by torchlight. At least thirteen kinds of bats live in the park, and the caves are some of their most important roosts.",
+  "Chalon and Mutsun Ohlone people lived in the area for thousands of years, until the Spanish mission at Soledad brought disease and upheaval. By the 1880s, picnickers from nearby towns were exploring the caves. A homesteader, Schuyler Hain, led tours and lobbied for protection, and President Theodore Roosevelt proclaimed a national monument in 1908.",
+  "The Civilian Conservation Corps built many of the trails in the 1930s, including a tunnel on the High Peaks Trail and the dam at Bear Gulch Reservoir. Since 2003, captive-hatched California condors have been released here. Pinnacles became a national park in 2013."
+ ],
+ "sightNotes": {
+  "poi-pinnacles-high-peaks": "A strenuous loop over the spires, with a section of carved steps and handrails along narrow ledges. The best place to watch for condors.",
+  "poi-pinnacles-bear-gulch-cave": "A talus cave on the east side, partly or wholly closed at times to protect its bat colony. Bring a torch.",
+  "poi-pinnacles-balconies-cave": "A talus cave on the west side under the Balconies cliffs. Bring a torch; it can flood in winter.",
+  "poi-pinnacles-bear-gulch-reservoir": "A small lake held back by a 1930s dam, above the Bear Gulch Cave.",
+  "poi-pinnacles-moses-spring": "A short trail through a shaded canyon to the Bear Gulch Cave and reservoir."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "East Entrance, from Highway 25 — via Hollister from the north or King City from the south",
+   "West Entrance, from Highway 146 through Soledad, off US 101",
+   "No road crosses the park; the two sides are linked only by trails"
+  ],
+  "permits": [
+   "The park has no backcountry camping"
+  ],
+  "lodging": [
+   "No lodging; Pinnacles Campground, on the east side, is the only place to stay in the park"
+  ],
+  "seasonalClosures": [
+   "Summer days often pass 100°F; spring and autumn are the most comfortable seasons",
+   "Cave sections close seasonally for the bats and after heavy rain"
+  ],
+  "camping": [
+   "Pinnacles Campground, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1908",
+   "text": "President Theodore Roosevelt proclaims Pinnacles National Monument."
+  },
+  {
+   "year": "1933",
+   "text": "A Civilian Conservation Corps camp opens; its crews build trails and the Bear Gulch dam."
+  },
+  {
+   "year": "2003",
+   "text": "The California condor recovery programme begins releasing birds at Pinnacles."
+  },
+  {
+   "year": "2013",
+   "text": "Pinnacles becomes a national park."
+  }
+ ],
+ "safety": [
+  "Carry plenty of water and avoid the exposed High Peaks on hot afternoons.",
+  "Bring a torch for the caves, and expect to stoop, squeeze and scramble."
+ ],
+ "regulations": [
+  "Pets are not allowed on trails.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Pinnacles National Park — National Park Service",
+   "url": "https://www.nps.gov/pinn/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "This pass is valid for 1-7 days and includes everyone traveling in a single, private (non-commercial) vehicle up to 15 passengers to Pinnacles East Entrance and West Entrance."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles, scooters, or similar motorized vehicles with up to 4 total passengers to Pinnacles East Entrance and West Entrance."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "This entry fee is for a single person traveling on foot or by bicycle. It is valid for 1-7 days to Pinnacles East Entrance and West Entrance."
+  },
+  {
+   "title": "Education/academic groups",
+   "cost": "Free",
+   "detail": "School groups and other academic institutions may qualify for an Educational Fee Waiver. If not qualified, please check fees for large or commercial groups."
+  }
+ ],
+ "hero": {
+  "credit": "National Park Service/Oscar Garcia",
+  "isPublicDomain": true,
+  "assetName": "np-pinnacles-1.jpg",
+  "caption": "Balconies Caves",
+  "altText": "Boulders in the Balconies Cave."
+ },
+ "gallery": [
+  {
+   "credit": "National Park Service/Oscar Garcia",
+   "isPublicDomain": true,
+   "assetName": "np-pinnacles-2.jpg",
+   "caption": "Tree",
+   "altText": "Light falling on tree"
+  },
+  {
+   "credit": "National Park Service/Oscar Garcia",
+   "isPublicDomain": true,
+   "assetName": "np-pinnacles-3.jpg",
+   "caption": "Tarantula",
+   "altText": "A Tarantula walking"
+  },
+  {
+   "credit": "NPS Photo/ Katherine Fielding",
+   "isPublicDomain": true,
+   "assetName": "np-pinnacles-4.jpg",
+   "caption": "High Peaks with Condors Above",
+   "altText": "A massive rock spire with California condors flying above the peak."
+  }
+ ],
+ "operatingHours": "Entrance to the east side of Pinnacles National Park is open 24 hours, 7 days a week, including holidays.",
+ "weather": "Pinnacles National Park has a Mediterranean climate with hot, dry summers, and mild winters with moderate precipitation. The park is several miles inland from the Pacific Ocean. A wider variation in seasonal temperatures can be expected in the local area. Summers are hot with temperatures above 100 degrees. Winters are cooler with highs in the 60s. Big swings in temperature occur between day and night, year round.",
+ "directions": "Pinnacles National Park is accessible through highway 101 for the West entrance, and highway 25 for the East entrance. From highway 101 you must pass through the City of Soledad to find highway 146 which will lead to West side of Pinnacles. To enter East Pinnacles you must find highway 25 through the City of Hollister coming from the North, and King City through Bitter Water Road (G-13) when coming from the South. NOTE: There is no through road between the east and west entrance."
+}

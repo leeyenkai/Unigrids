@@ -178,6 +178,46 @@ public final class LogStore {
         return trip
     }
 
+    /// Add a place to a trip's itinerary, at the end. A place already on the trip is left
+    /// where it is rather than listed twice.
+    @discardableResult
+    public func addStop(
+        _ placeID: UnigridsID,
+        to trip: Trip,
+        on date: Date? = nil
+    ) throws -> TripStop {
+        if let existing = trip.orderedStops.first(where: { $0.place == placeID }) {
+            return existing
+        }
+        let stop = TripStop(
+            placeID: placeID,
+            order: (trip.orderedStops.last?.order ?? -1) + 1,
+            plannedDate: date
+        )
+        stop.trip = trip
+        context.insert(stop)
+        try context.save()
+        return stop
+    }
+
+    /// Put a trip's stops in a new order.
+    public func reorder(_ stops: [TripStop]) throws {
+        for (index, stop) in stops.enumerated() {
+            stop.order = index
+        }
+        try context.save()
+    }
+
+    /// The ids of places on trips that have not finished, for the map's planned styling.
+    public func plannedPlaceIDs() throws -> Set<UnigridsID> {
+        let trips = try context.fetch(FetchDescriptor<Trip>())
+        return Set(
+            trips
+                .filter { $0.status != .done }
+                .flatMap { ($0.stops ?? []).map(\.place) }
+        )
+    }
+
     public func attach(_ weather: WeatherSnapshot, to visit: Visit) throws {
         weather.visit = visit
         context.insert(weather)

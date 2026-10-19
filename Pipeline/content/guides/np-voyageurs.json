@@ -1,0 +1,109 @@
+{
+ "placeID": "np-voyageurs",
+ "summary": "A water park on the Canadian border in northern Minnesota — big lakes, thousands of islands and the roadless Kabetogama Peninsula, best explored by boat. Named for the French-Canadian voyageurs who paddled the fur-trade route through it.",
+ "facts": {
+  "bestSeasons": [
+   "summer",
+   "winter"
+  ],
+  "suggestedTime": "Two to three days, with time on the water"
+ },
+ "story": [
+  "Voyageurs lies on the Canadian Shield, some of the oldest rock on the continent, between one and three billion years old. Glaciers scoured it into basins that now hold Rainy, Kabetogama, Namakan and Sand Point Lakes and dozens of smaller ones. The Kabetogama Peninsula, which makes up most of the park's land, can only be reached by water, or over the ice in winter.",
+  "People have lived here for nearly ten thousand years, fishing and later gathering wild rice; by 1780 the Ojibwe were the main residents. The voyageurs — French-Canadian canoemen of the fur trade — paddled this chain of lakes between Lake Superior and Lake of the Woods, and their route became the international border after 1783.",
+  "In 1893 gold was found on Rainy Lake, and Rainy Lake City boomed and vanished within a few years. Loggers, commercial fishermen and resorts followed; the Kettle Falls Hotel was built in 1910. Minnesota first asked for a national park here in 1891, Congress authorised one in 1971, and the park was established in 1975.",
+  "Wolves, black bears, moose and beavers live here, and bald eagles nest along the shores. The park was certified as an International Dark Sky Park in 2020, and the northern lights are seen here on clear nights."
+ ],
+ "sights": [
+  {
+   "name": "Kettle Falls Hotel",
+   "match": "Kettle Falls Hotel",
+   "note": "A historic hotel reached by boat, between Namakan and Rainy Lakes — one of the few places in the lower 48 where you look south into Canada."
+  },
+  {
+   "name": "Ellsworth Rock Gardens",
+   "match": "Ellsworth Rock Gardens",
+   "note": "Terraced gardens and rock sculptures built by a summer resident on Kabetogama Lake."
+  },
+  {
+   "name": "Grassy Bay Cliffs",
+   "match": "Grassy Bay Cliffs",
+   "note": "Sheer rock walls rising from Sand Point Lake, seen by boat."
+  },
+  {
+   "name": "Hoist Bay",
+   "match": "Hoist Bay",
+   "note": "The site of a logging camp on Namakan Lake, where logs were rafted until 1929."
+  },
+  {
+   "name": "Harry Oveson Fish Camp",
+   "match": "Harry Oveson Fish Camp",
+   "note": "A preserved commercial fishing camp on Kabetogama Lake."
+  },
+  {
+   "name": "Rainy Lake",
+   "match": "Rainy Lake",
+   "note": "The park's largest lake, shared with Canada, with the main visitor center at its western end."
+  },
+  {
+   "name": "Kabetogama Lake",
+   "match": "Kabetogama Lake",
+   "note": "A lake on the peninsula's south side, with resorts and a visitor center on its shore."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Rainy Lake Visitor Center, east of International Falls",
+   "Kabetogama Lake, Ash River and Crane Lake, each reached by road from US 53",
+   "Most of the park is reached only by boat: bring your own, rent one, take a tour boat or hire a water taxi"
+  ],
+  "reservations": "Every campsite, houseboat site and day-use site is reached by water and must be reserved on Recreation.gov.",
+  "lodging": [
+   "Kettle Falls Hotel, in the park and reached by boat",
+   "Resorts around Rainy, Kabetogama and Crane Lakes"
+  ],
+  "seasonalClosures": [
+   "The lakes are usually ice-free from early May to November; ice is unsafe during freeze-up and break-up",
+   "In winter, ice roads are ploughed on Rainy and Kabetogama Lakes, and snowmobile and ski trails open"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1783",
+   "text": "The Treaty of Paris makes the voyageurs' route the boundary with British North America."
+  },
+  {
+   "year": "1893",
+   "text": "Gold is discovered on Rainy Lake."
+  },
+  {
+   "year": "1910",
+   "text": "The Kettle Falls Hotel is built."
+  },
+  {
+   "year": "1975",
+   "text": "Voyageurs National Park is established."
+  },
+  {
+   "year": "2020",
+   "text": "The park is certified as an International Dark Sky Park."
+  }
+ ],
+ "safety": [
+  "Wind can raise big waves quickly on the open lakes. Carry charts, life jackets and a weather radio.",
+  "Cold water is dangerous even in summer.",
+  "Never drive onto ice that isn't a marked ice road, and check conditions first."
+ ],
+ "regulations": [
+  "The border runs through the lakes. Landing in Canada means reporting to Canadian customs.",
+  "A Minnesota fishing licence is needed to fish.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Voyageurs National Park — National Park Service",
+   "url": "https://www.nps.gov/voya/"
+  }
+ ],
+ "contentVersion": 2
+}

@@ -1,0 +1,137 @@
+{
+ "placeID": "np-hawaii-volcanoes",
+ "contentVersion": 2,
+ "story": [
+  "The island of Hawaiʻi sits over a hotspot in the Earth's mantle, and its volcanoes are still building it. Mauna Loa, rising to 13,680 feet, is the largest volcano on the planet; Kīlauea, on its flank, is one of the most active. Their lava is fluid, so it builds broad shield volcanoes, fills craters, runs to the sea and turns to new coastline.",
+  "Kīlauea erupted almost continuously from 1983 to 2018. In 2018 its summit collapsed, the park's Kīlauea district closed for four months, and lava destroyed hundreds of homes outside the park. Since December 2020 the summit crater, Halemaʻumaʻu, has erupted again and again; Mauna Loa erupted in 2022 after nearly forty years.",
+  "Life arrives on new lava within years. ʻŌhiʻa lehua trees, with red blossoms, are often the first to take root; islands of old forest left untouched by flows, called kīpuka, shelter native birds and insects. Many of the park's species exist nowhere else.",
+  "Kīlauea is the home of Pele, the volcano goddess, in Hawaiian tradition. Footprints left in ash by people caught in an eruption in 1790 are still visible. Missionaries reached the summit in 1823, a hotel stood on the rim from the 1840s, and Hawaii National Park was established in 1916; it became Hawaiʻi Volcanoes National Park in 1961 and a World Heritage Site in 1987."
+ ],
+ "sightNotes": {
+  "poi-hawaii-volcanoes-uekahuna": "A bluff above the summit caldera, and one of the main places to watch an eruption when there is one.",
+  "poi-hawaii-volcanoes-kilauea-iki": "A crater whose floor, a lava lake in 1959, is crossed by a popular trail.",
+  "poi-hawaii-volcanoes-nahuku-lava-tube": "A walk through a lit lava tube in fern-filled rainforest.",
+  "poi-hawaii-volcanoes-haakulamanu-sulphur-banks": "Steaming vents crusted yellow with sulphur, on a boardwalk.",
+  "poi-hawaii-volcanoes-devastation-trail": "A path across cinder fall from the 1959 eruption, where forest is returning.",
+  "poi-hawaii-volcanoes-puuloa-petroglyphs": "Thousands of petroglyphs carved into lava, off Chain of Craters Road.",
+  "poi-hawaii-volcanoes-holei-sea-arch": "A lava arch at the sea, where Chain of Craters Road ends.",
+  "poi-hawaii-volcanoes-kipukapuaulu": "An island of old forest surrounded by lava flows, rich in native birds.",
+  "poi-hawaii-volcanoes-kahuku-unit": "A former ranch on Mauna Loa's flank, with trails over young lava and grassland."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Main entrance on Highway 11, thirty miles southwest of Hilo",
+   "Kahuku Unit, further south on Highway 11"
+  ],
+  "permits": [
+   "Backcountry camping, including the Mauna Loa summit trail — a permit"
+  ],
+  "lodging": [
+   "Volcano House, on the rim of the summit caldera, and cabins at Nāmakanipaio"
+  ],
+  "seasonalClosures": [
+   "Eruptions, earthquakes and volcanic gas can close parts of the park without warning; the summit is often cool and rainy"
+  ],
+  "camping": [
+   "Kulanaokuaiki, first come, first served",
+   "Nāmakanipaio, reservable, with some first-come sites"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1790",
+   "text": "People caught in an explosive eruption leave footprints in the ash."
+  },
+  {
+   "year": "1823",
+   "text": "Missionaries William Ellis and Asa Thurston reach Kīlauea."
+  },
+  {
+   "year": "1916",
+   "text": "Hawaii National Park is established."
+  },
+  {
+   "year": "1983",
+   "text": "Kīlauea begins an East Rift Zone eruption that lasts 35 years."
+  },
+  {
+   "year": "1987",
+   "text": "The park is listed as a World Heritage Site."
+  },
+  {
+   "year": "2018",
+   "text": "Kīlauea's summit collapses, and the Kīlauea district closes for four months."
+  },
+  {
+   "year": "2022",
+   "text": "Mauna Loa erupts for the first time in nearly forty years."
+  }
+ ],
+ "safety": [
+  "Volcanic gas is dangerous for people with heart or breathing problems, pregnant women and young children. Check the air-quality advisories each day.",
+  "Stay on marked trails and behind barriers: crater edges and lava fields hide cracks and overhangs."
+ ],
+ "regulations": [
+  "Do not take lava rocks or sand; they are part of the park.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Hawaiʻi Volcanoes National Park — National Park Service",
+   "url": "https://www.nps.gov/havo/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "Private Vehicle Pass - The private vehicle pass admits the passholder and up to 14 passengers of a single, private (non-commercial) vehicle."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Pedestrian/Cyclist Pass - Admits one individual bicyclist, hiker, or pedestrian visiting without a private vehicle. An individual pass is not required for visitors aged 15 and under."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo",
+  "isPublicDomain": true,
+  "assetName": "np-hawaii-volcanoes-1.jpg",
+  "caption": "Lava",
+  "altText": "Fountains of molten lava erupting from within a crater next to a whirlwind formed from the eruption."
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo/J. Wei",
+   "isPublicDomain": true,
+   "assetName": "np-hawaii-volcanoes-2.jpg",
+   "caption": "Kīlauea Iki",
+   "altText": "A cloud-filled volcanic crater at sunrise with a mountain rising behind"
+  },
+  {
+   "credit": "NPS Photo/A. LaValle",
+   "isPublicDomain": true,
+   "assetName": "np-hawaii-volcanoes-3.jpg",
+   "caption": "Hōlei Pali",
+   "altText": "Lava flows and ferns in front of a cliff at sunset"
+  },
+  {
+   "credit": "NPS Photo/A. LaValle",
+   "isPublicDomain": true,
+   "assetName": "np-hawaii-volcanoes-4.jpg",
+   "caption": "Steam Vents",
+   "altText": "Trees and tall grass through steam at sunrise"
+  }
+ ],
+ "operatingHours": "Hawai‘i Volcanoes National Park is open 7 days a week, 24 hours a day including holidays.",
+ "weather": "The weather the summit of Kīlauea (~4000' elevation) varies daily and may be rainy and chilly any time of the year. Temperature varies by elevation. At the summit of the volcano, temperatures may be 12 to 15 degrees cooler than at sea level. The coastal plain at the end of Chain of Craters Road is often hot, dry, and windy with the possibility of passing showers.",
+ "directions": "Hawai‘i Volcanoes National Park is located on the Island of Hawai‘i. From Hilo: 30 miles southwest on Highway 11 (45 minute drive); from Kailua-Kona: 96 miles southeast on Highway 11 (2 to 2.5 hour drive), or 125 miles through Waimea and Hilo via Highways 19 and 11 (2.5 to 3 hours)."
+}

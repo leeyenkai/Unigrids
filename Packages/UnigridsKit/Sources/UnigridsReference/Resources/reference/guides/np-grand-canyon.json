@@ -1,0 +1,144 @@
+{
+ "placeID": "np-grand-canyon",
+ "contentVersion": 2,
+ "story": [
+  "The Grand Canyon is a cross-section of the Earth's crust. At the bottom lie the Vishnu Schist and Zoroaster Granite, close to two billion years old; above them rise layer after layer of sandstone, shale and limestone, ending at the rim in the Kaibab Limestone, laid down in a shallow sea some 270 million years ago. The Colorado River has cut down through it in the last few million years as the Colorado Plateau rose, and side streams, rockfall and flash floods have widened the gorge into the canyon we see.",
+  "The park follows 278 miles of the river. From rim to river is a journey through life zones as different as Canada and Mexico: spruce and fir on the North Rim, ponderosa pine on the South, and at the bottom a desert twenty to thirty degrees hotter than the rims. California condors, returned to the wild nearby in the 1990s, ride the thermals above the canyon.",
+  "The canyon is the ancestral homeland of eleven present-day Tribal communities, and the Havasupai still live within it. A Spanish expedition reached the South Rim in 1540; John Wesley Powell led the first known passage through the canyon by river in 1869. The railroad arrived at the South Rim in 1901, and Mary Colter's buildings — Hopi House, Lookout Studio, the Desert View Watchtower — gave the rim its character.",
+  "Theodore Roosevelt urged Americans to leave it as it is, and made it a national monument in 1908; Congress created the national park in 1919. In July 2025 the Dragon Bravo Fire destroyed the historic Grand Canyon Lodge and other buildings on the North Rim."
+ ],
+ "sightNotes": {
+  "poi-grand-canyon-mather-point": "The first view for most visitors, a short walk from the Grand Canyon Visitor Center.",
+  "poi-grand-canyon-yavapai-geology-museum": "A stone building on the rim with panoramic windows and exhibits that read the canyon's layers.",
+  "poi-grand-canyon-hopi-point": "A point on Hermit Road with wide views west, a sunset favourite.",
+  "poi-grand-canyon-hermits-rest": "The end of Hermit Road, with a stone rest house designed by Mary Colter.",
+  "poi-grand-canyon-bright-angel-trail": "The classic trail below the South Rim, from Grand Canyon Village toward the river.",
+  "poi-grand-canyon-south-kaibab-trail": "A steep ridgeline trail with open views from the first step, down to Ooh Aah Point and beyond.",
+  "poi-grand-canyon-desert-view-watchtower": "Mary Colter's stone tower at the east end of the South Rim, the highest point on the rim.",
+  "poi-grand-canyon-lipan-point": "A broad view of the river and the canyon's oldest rock layers.",
+  "poi-grand-canyon-point-imperial": "The highest point on the North Rim, looking out to the Painted Desert."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "South Entrance, on AZ 64 from Williams and Interstate 40, or US 180 from Flagstaff; open all year",
+   "Desert View (East) Entrance, on AZ 64 from Cameron",
+   "North Rim, on AZ 67; access has been limited since the 2025 fire — check nps.gov/grca"
+  ],
+  "reservations": "Rim lodging, mule trips and Phantom Ranch at the bottom of the canyon are booked far ahead; Phantom Ranch is allocated by lottery.",
+  "permits": [
+   "Camping below the rim — a backcountry permit",
+   "Private river trips — a permit, allocated by lottery"
+  ],
+  "lodging": [
+   "El Tovar, Bright Angel, Maswik, Kachina and Thunderbird lodges on the South Rim",
+   "Phantom Ranch, at the bottom of the canyon"
+  ],
+  "seasonalClosures": [
+   "The North Rim is normally open only from mid-May to mid-October, and its services have been sharply limited since the 2025 fire"
+  ],
+  "camping": [
+   "Desert View Campground (Reservations Required), reservable",
+   "Mather Campground - South Rim, reservable, with some first-come sites",
+   "Trailer Village RV Park - South Rim, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1540",
+   "text": "Members of a Spanish expedition become the first Europeans to see the canyon."
+  },
+  {
+   "year": "1869",
+   "text": "John Wesley Powell's party makes the first known river journey through the canyon."
+  },
+  {
+   "year": "1908",
+   "text": "Theodore Roosevelt proclaims Grand Canyon National Monument."
+  },
+  {
+   "year": "1919",
+   "text": "Congress establishes Grand Canyon National Park."
+  },
+  {
+   "year": "1979",
+   "text": "The park is listed as a World Heritage Site."
+  },
+  {
+   "year": "2025",
+   "text": "The Dragon Bravo Fire destroys the Grand Canyon Lodge on the North Rim."
+  }
+ ],
+ "safety": [
+  "Do not try to hike to the river and back in one day. Down is optional; up is mandatory, and in summer the inner canyon is dangerously hot.",
+  "Stay back from the rim edge, behind railings where there are railings. Falls are a leading cause of death in the park."
+ ],
+ "regulations": [
+  "Feeding wildlife, including squirrels, is prohibited; they bite.",
+  "Give mules the right of way on trails, and follow the wrangler's instructions.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Grand Canyon National Park — National Park Service",
+   "url": "https://www.nps.gov/grca/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$35",
+   "detail": "Admits one single, private, non-commercial vehicle and all its passengers, up to a 15 person passenger van. Organized non-commercial groups over 16 passengers require different charges. Commercial groups are not eligible for the vehicle permit."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$30",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Per person",
+   "cost": "$20",
+   "detail": "Individual ($20 valid for 7 days): for bicyclists, hikers, and pedestrians."
+  },
+  {
+   "title": "Nonresident",
+   "cost": "$100",
+   "detail": "Each non-US resident aged 16 and older visiting Grand Canyon National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group."
+  }
+ ],
+ "hero": {
+  "credit": "NPS/M. Quinn",
+  "isPublicDomain": true,
+  "assetName": "np-grand-canyon-1.jpg",
+  "caption": "Sunset from Mather Point",
+  "altText": "At Sunset, swirling rain clouds above a vast canyon filled with colorful peaks and cliff walls."
+ },
+ "gallery": [
+  {
+   "credit": "NPS/M. Lellouch",
+   "isPublicDomain": true,
+   "assetName": "np-grand-canyon-2.jpg",
+   "caption": "Ancestral granary at Nankoweap",
+   "altText": "a small ancestral masonry storage room in a cliff above a muddy river."
+  },
+  {
+   "credit": "NPS/M. Quinn",
+   "isPublicDomain": true,
+   "assetName": "np-grand-canyon-3.jpg",
+   "caption": "Moonrise over Vishnu Temple",
+   "altText": "The last glow of sunset across the canyon rim with a full moon rising above a pointed peak"
+  },
+  {
+   "credit": "NPS/M. Quinn",
+   "isPublicDomain": true,
+   "assetName": "np-grand-canyon-4.jpg",
+   "caption": "Winter clouds above Isis Temple",
+   "altText": "winter clouds and fog passing around a snow covered promentary within a vast mile deep canyon"
+  }
+ ],
+ "operatingHours": "Both Desert View (East Entrance) and South Entrance are Open 24 hours/day and 7 Days/week. Credit cards, and America the Beautiful passes are accepted for entry. Cash is not accepted at this time. The South Entrance Station, near Tusayan, Arizona, receives the most traffic, an experiences long lines and up to 2 hour wait times between 9:30 am and 4 pm. The East Entrance at Desert View - 32 miles east of the village (accessed via US 89 to Cameron, AZ, then west on SR 64, usually has shorter wait times.",
+ "weather": "Since Grand Canyon has elevations that range from 2,500 feet at the bottom to 8,400 feet on the North Rim, weather can vary significantly depending on the season and the specific location within the park. Winters tend to be cold and snowy, and summers have periods of excessive heat. High temperatures inside the canyon tend to be 20 to 30 degrees warmer then on the canyon's rims. Weather conditions can change rapidly, so it's wise to check forecasts before visiting.",
+ "directions": "South Rim: Open all year, is located 60 miles north of Williams, Arizona (via route 64 from Interstate 40) and 80 miles northwest of Flagstaff (via route 180). Grand Canyon lies entirely within the state of Arizona. ---- North Rim: Select areas are open to public access between Oct 1 and Nov 14. View the park's news releases for details. The North Rim entrance station is located 30 miles south of Jacob Lake, AZ, on Highway 67; the actual rim of the canyon is an additional 14 miles south."
+}

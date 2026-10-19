@@ -1,0 +1,108 @@
+{
+ "placeID": "np-indiana-dunes",
+ "contentVersion": 2,
+ "story": [
+  "As the glaciers retreated and Lake Michigan rose and fell, the lake left a series of shorelines behind, and the wind built dunes along each. Walk inland from the water and the dunes grow older: bare sand, then beachgrass, then cottonwood, then black oak and forest. In 1899 the botanist Henry Cowles studied that sequence here and described ecological succession, a founding idea of ecology.",
+  "The mix of habitats crammed into a narrow strip — beach, open dune, oak savanna, prairie, marsh, bog — makes the park one of the richest in the system for plant species. Bogs hold northern plants left behind by the ice; prairie flowers grow a few hundred yards from cactus on the dunes. Migrating birds follow the lakeshore in spring and autumn.",
+  "Hopewell people built mounds in the area two thousand years ago; Potawatomi villages later stood along its rivers. The fur trader Joseph Bailly settled on the Little Calumet River, Swedish immigrants farmed at the Chellberg Farm, and houses from Chicago's 1933 World's Fair were barged across the lake to Beverly Shores.",
+  "Industry arrived too, and steel mills and ports still stand between parts of the park. The fight to save the dunes began with Stephen Mather's hearings in 1916 and was carried on for decades by local campaigners. Congress created Indiana Dunes National Lakeshore in 1966 and made it a national park in 2019."
+ ],
+ "sightNotes": {
+  "poi-indiana-dunes-mount-baldy": "A large dune that has been moving inland, with a beach trail around its base.",
+  "poi-indiana-dunes-west-beach": "A beach and a dune succession trail through the stages Cowles described.",
+  "poi-indiana-dunes-cowles-bog": "A trail through wetland, woods and dune to a quiet beach.",
+  "poi-indiana-dunes-dune-ridge-trail": "A short climb onto a wooded dune overlooking marsh.",
+  "poi-indiana-dunes-heron-rookery": "A woodland trail along the Little Calumet River, carpeted with wildflowers in spring.",
+  "poi-indiana-dunes-century-of-progress-district": "Futuristic houses from the 1933 Chicago World's Fair, moved to Beverly Shores.",
+  "poi-indiana-dunes-chellberg-farm": "A Swedish immigrant family's farm, beside the Bailly Homestead.",
+  "poi-indiana-dunes-portage-lakefront": "A beach and riverwalk reclaimed from industrial land."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Indiana Dunes Visitor Center, on IN 49 between US 20 and Interstate 94",
+   "The South Shore Line commuter railroad from Chicago stops near several beaches"
+  ],
+  "lodging": [
+   "Hotels in Chesterton, Michigan City and nearby towns"
+  ],
+  "seasonalClosures": [
+   "Summer beach days are busy; lifeguards are not posted at most beaches"
+  ],
+  "camping": [
+   "Central Avenue Walk-in Sites, reservable, with some first-come sites",
+   "Dunbar Group Site, reservable",
+   "Dunewood Campground, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1899",
+   "text": "Henry Cowles publishes his study of succession on the dunes."
+  },
+  {
+   "year": "1916",
+   "text": "Stephen Mather holds hearings on a sand dunes national park."
+  },
+  {
+   "year": "1966",
+   "text": "Congress authorizes Indiana Dunes National Lakeshore."
+  },
+  {
+   "year": "2019",
+   "text": "The lakeshore is redesignated a national park."
+  }
+ ],
+ "safety": [
+  "Lake Michigan has dangerous rip currents. Check the beach conditions, and do not swim when waves are high.",
+  "Midsummer sand gets very hot; wear shoes on the dunes."
+ ],
+ "regulations": [
+  "The summit of Mount Baldy is closed except on ranger-guided walks.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Indiana Dunes National Park — National Park Service",
+   "url": "https://www.nps.gov/indu/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Motorcycle",
+   "cost": "$20",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Private vehicle",
+   "cost": "$25",
+   "detail": "7-Day Park Entrance Fee - Family-Size Vehicle Per private family-sized vehicle (valid for 1-7 days from date of purchase)."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "7-Day Per Person Entrance Fee (Organized, non-commercial groups) Visitors 16 years of age or older who enter on foot, bicycle, boat, or as part of an organized group not involved in a commercial tour."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo",
+  "isPublicDomain": true,
+  "assetName": "np-indiana-dunes-1.jpg",
+  "caption": "Central Avenue Beach Indiana Dunes National Park",
+  "altText": "Michigan Lake beach with green grassy dunes in the background, under a blue sky."
+ },
+ "gallery": [
+  {
+   "credit": "NPS Collection",
+   "isPublicDomain": true,
+   "assetName": "np-indiana-dunes-2.jpg",
+   "caption": "Central Beach",
+   "altText": "Central Beach"
+  }
+ ],
+ "operatingHours": "The general areas of the park are open year-round. Please check individual areas for specific hours of operation.",
+ "weather": "On average, the warmest month is July and the highest recorded temperature was 105F in 1934. The coolest month is January, with the lowest recorded temperature of -25F in 1985. June sees the most precipitation with an average rainfall of 4.66 Inches.",
+ "directions": "Visitors can access the national park via Interstate 94, the Indiana Toll Road (Interstate 80/90), U.S. Highway 12, U.S. Highway 20, Indiana State Road 49, and various other local roads. The Indiana Dunes Visitor Center is located on Indiana State Road 49, between U.S. Highway 20 and Interstate 94 (1215 IN-49, Porter, IN 46304). For a driving map to the Indiana Dunes Visitor Center or other locations, check out our maps page."
+}

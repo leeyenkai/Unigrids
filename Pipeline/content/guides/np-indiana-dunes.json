@@ -1,0 +1,100 @@
+{
+ "placeID": "np-indiana-dunes",
+ "summary": "Fifteen miles of Lake Michigan shore between Gary and Michigan City: beaches, tall dunes, bogs, prairies and woods packed with an unusual variety of plants — and the place where the science of ecological succession began.",
+ "facts": {
+  "bestSeasons": [
+   "summer",
+   "autumn"
+  ],
+  "suggestedTime": "One to two days"
+ },
+ "story": [
+  "As the glaciers retreated and Lake Michigan rose and fell, the lake left a series of shorelines behind, and the wind built dunes along each. Walk inland from the water and the dunes grow older: bare sand, then beachgrass, then cottonwood, then black oak and forest. In 1899 the botanist Henry Cowles studied that sequence here and described ecological succession, a founding idea of ecology.",
+  "The mix of habitats crammed into a narrow strip — beach, open dune, oak savanna, prairie, marsh, bog — makes the park one of the richest in the system for plant species. Bogs hold northern plants left behind by the ice; prairie flowers grow a few hundred yards from cactus on the dunes. Migrating birds follow the lakeshore in spring and autumn.",
+  "Hopewell people built mounds in the area two thousand years ago; Potawatomi villages later stood along its rivers. The fur trader Joseph Bailly settled on the Little Calumet River, Swedish immigrants farmed at the Chellberg Farm, and houses from Chicago's 1933 World's Fair were barged across the lake to Beverly Shores.",
+  "Industry arrived too, and steel mills and ports still stand between parts of the park. The fight to save the dunes began with Stephen Mather's hearings in 1916 and was carried on for decades by local campaigners. Congress created Indiana Dunes National Lakeshore in 1966 and made it a national park in 2019."
+ ],
+ "sights": [
+  {
+   "name": "Mount Baldy",
+   "match": "Mt. Baldy Beach Trail",
+   "note": "A large dune that has been moving inland, with a beach trail around its base."
+  },
+  {
+   "name": "West Beach",
+   "note": "A beach and a dune succession trail through the stages Cowles described."
+  },
+  {
+   "name": "Cowles Bog",
+   "match": "Cowles Bog Trail (North)",
+   "note": "A trail through wetland, woods and dune to a quiet beach."
+  },
+  {
+   "name": "Dune Ridge Trail",
+   "note": "A short climb onto a wooded dune overlooking marsh."
+  },
+  {
+   "name": "Heron Rookery",
+   "match": "Heron Rookery (East)",
+   "note": "A woodland trail along the Little Calumet River, carpeted with wildflowers in spring."
+  },
+  {
+   "name": "Century of Progress District",
+   "note": "Futuristic houses from the 1933 Chicago World's Fair, moved to Beverly Shores."
+  },
+  {
+   "name": "Chellberg Farm",
+   "note": "A Swedish immigrant family's farm, beside the Bailly Homestead."
+  },
+  {
+   "name": "Portage Lakefront",
+   "match": "Portage Lakefront and Riverwalk Pavilion",
+   "note": "A beach and riverwalk reclaimed from industrial land."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Indiana Dunes Visitor Center, on IN 49 between US 20 and Interstate 94",
+   "The South Shore Line commuter railroad from Chicago stops near several beaches"
+  ],
+  "lodging": [
+   "Hotels in Chesterton, Michigan City and nearby towns"
+  ],
+  "seasonalClosures": [
+   "Summer beach days are busy; lifeguards are not posted at most beaches"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1899",
+   "text": "Henry Cowles publishes his study of succession on the dunes."
+  },
+  {
+   "year": "1916",
+   "text": "Stephen Mather holds hearings on a sand dunes national park."
+  },
+  {
+   "year": "1966",
+   "text": "Congress authorizes Indiana Dunes National Lakeshore."
+  },
+  {
+   "year": "2019",
+   "text": "The lakeshore is redesignated a national park."
+  }
+ ],
+ "safety": [
+  "Lake Michigan has dangerous rip currents. Check the beach conditions, and do not swim when waves are high.",
+  "Midsummer sand gets very hot; wear shoes on the dunes."
+ ],
+ "regulations": [
+  "The summit of Mount Baldy is closed except on ranger-guided walks.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Indiana Dunes National Park — National Park Service",
+   "url": "https://www.nps.gov/indu/"
+  }
+ ],
+ "contentVersion": 2
+}

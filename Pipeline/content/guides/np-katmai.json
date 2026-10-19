@@ -1,0 +1,97 @@
+{
+ "placeID": "np-katmai",
+ "summary": "Volcanoes, salmon and brown bears on the Alaska Peninsula. Katmai was created to protect the Valley of Ten Thousand Smokes, buried by the largest eruption of the twentieth century in 1912; it is now best known for the bears that fish for salmon at Brooks Falls.",
+ "facts": {
+  "bestSeasons": [
+   "summer"
+  ],
+  "suggestedTime": "A day trip by floatplane, or several days at Brooks Camp"
+ },
+ "story": [
+  "In June 1912 Novarupta erupted for about sixty hours, the largest volcanic eruption of the twentieth century. Mount Katmai, six miles away, collapsed into a caldera as magma drained from beneath it, and a flow of hot ash buried a forty-square-mile valley as much as seven hundred feet deep. When the botanist Robert Griggs reached it in 1916, the valley was steaming from thousands of vents; he named it the Valley of Ten Thousand Smokes, and it became a national monument two years later.",
+  "Katmai holds at least eighteen volcanoes, several active since 1900. But what draws visitors now is life: every summer millions of sockeye salmon run up the rivers into Bristol Bay's lakes, and the park's brown bears — among the largest anywhere — gather to eat them. At Brooks Falls they stand at the lip of a small waterfall catching leaping fish, watched from viewing platforms and by millions online.",
+  "People have lived on this coast and along these rivers for thousands of years; the Brooks River area holds one of the densest concentrations of archaeological sites in North America and is a National Historic Landmark. The 1912 eruption drove the people of Katmai village and Savonoski from their homes for good.",
+  "The Alaska lands act of 1980 enlarged the monument into a national park and preserve, most of it wilderness. Each autumn the park's Fat Bear Week asks the public to vote on which bear has fattened up most for winter."
+ ],
+ "sights": [
+  {
+   "name": "Brooks Falls",
+   "match": "Brooks Falls Platform",
+   "note": "A low waterfall where brown bears fish for leaping salmon, seen from a platform."
+  },
+  {
+   "name": "Brooks Camp",
+   "note": "The park's hub: a lodge, a campground and the bear-orientation talk every visitor attends."
+  },
+  {
+   "name": "The Riffles",
+   "match": "The Riffles Platform",
+   "note": "A platform above shallow water just below the falls, where bears chase fish."
+  },
+  {
+   "name": "Valley of Ten Thousand Smokes",
+   "note": "The ash-filled valley of the 1912 eruption, reached by a daily tour bus from Brooks Camp."
+  },
+  {
+   "name": "Novarupta",
+   "note": "The vent of the 1912 eruption, a lava dome deep in the valley, reached only on a long backcountry trip."
+  },
+  {
+   "name": "Brooks River Cultural Site",
+   "match": "Brooks Camp Cultural Site",
+   "note": "A reconstructed traditional house and trail through thousands of years of settlement."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Fly from Anchorage to King Salmon, then by floatplane or boat to Brooks Camp; there are no roads into the park"
+  ],
+  "reservations": "Brooks Lodge and the Brooks Camp campground fill fast; book as soon as reservations open.",
+  "permits": [
+   "Every visitor to Brooks Camp attends a bear-safety orientation on arrival"
+  ],
+  "lodging": [
+   "Brooks Lodge at Brooks Camp, and backcountry lodges elsewhere in the park"
+  ],
+  "seasonalClosures": [
+   "Brooks Camp operates from June to mid-September; bears fish the falls most in July and September"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1912",
+   "text": "Novarupta erupts and buries the valley that becomes the Valley of Ten Thousand Smokes."
+  },
+  {
+   "year": "1916",
+   "text": "Robert Griggs reaches and names the Valley of Ten Thousand Smokes."
+  },
+  {
+   "year": "1918",
+   "text": "Katmai National Monument is proclaimed."
+  },
+  {
+   "year": "1980",
+   "text": "The Alaska lands act creates Katmai National Park and Preserve."
+  },
+  {
+   "year": "1993",
+   "text": "The Brooks River Archeological District becomes a National Historic Landmark."
+  }
+ ],
+ "safety": [
+  "Stay at least 50 yards from bears, more from mothers with cubs, and never run from a bear.",
+  "Weather often grounds floatplanes. Plan a spare day, and carry food and warm clothing."
+ ],
+ "regulations": [
+  "At Brooks Camp, eat only in designated areas and never leave food or packs unattended.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Katmai National Park and Preserve — National Park Service",
+   "url": "https://www.nps.gov/katm/"
+  }
+ ],
+ "contentVersion": 2
+}

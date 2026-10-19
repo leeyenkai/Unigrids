@@ -1,0 +1,137 @@
+{
+ "placeID": "np-everglades",
+ "contentVersion": 2,
+ "story": [
+  "The Everglades are a river, inches deep and miles wide, flowing south from Lake Okeechobee to Florida Bay so slowly it barely seems to move. Marjory Stoneman Douglas called it a river of grass in her 1947 book, the year the park was dedicated. The land is almost flat: most of the park lies less than eight feet above sea level, so a few inches of elevation decide whether a place is sawgrass marsh, pine rockland or a hardwood hammock.",
+  "The park protects the southern fifth of the original Everglades. It is the only place in the world where alligators and crocodiles live side by side, and home to manatees, the endangered Florida panther and great flocks of wading birds — roseate spoonbills, wood storks, herons and egrets. In the dry season, from December to spring, wildlife gathers at the remaining water and is easiest to see.",
+  "The Calusa and Tequesta peoples lived on these coasts for thousands of years; Seminole and Miccosukee people later made the Everglades their home. Drainage canals cut from the late 1800s on diverted much of the water that once flowed through. Ernest F. Coe led the campaign for a park, Congress authorized it in 1934, and it was dedicated in 1947.",
+  "The Everglades are now an international biosphere reserve, a World Heritage Site and a Wetland of International Importance, one of very few places named on all three lists. A decades-long restoration is working to send more water south again, while invasive Burmese pythons and rising seas press in."
+ ],
+ "sightNotes": {
+  "poi-everglades-anhinga-trail": "A short boardwalk over a slough crowded with alligators, turtles and wading birds, especially in the dry season.",
+  "poi-everglades-shark-valley": "A fifteen-mile loop road for trams and bicycles to an observation tower over the river of grass.",
+  "poi-everglades-pa-hay-okee": "A boardwalk and overlook across the sawgrass prairie.",
+  "poi-everglades-mahogany-hammock": "A boardwalk through a tree island of mahogany, palms and air plants.",
+  "poi-everglades-flamingo": "The road's end on Florida Bay, with a marina, boat tours, and manatees and crocodiles near the docks.",
+  "poi-everglades-gumbo-limbo-trail": "A shaded walk through a tropical hardwood hammock at Royal Palm.",
+  "poi-everglades-nine-mile-pond": "A marked canoe trail through sawgrass and mangrove islands.",
+  "poi-everglades-nike-missile-site": "A Cold War missile base built after the Cuban Missile Crisis, open on ranger-led tours."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Homestead entrance and the Ernest F. Coe Visitor Center, start of the 38-mile road to Flamingo",
+   "Shark Valley, on the Tamiami Trail (US 41) west of Miami",
+   "Gulf Coast, at Everglades City, for the Ten Thousand Islands"
+  ],
+  "permits": [
+   "Wilderness camping, including the Wilderness Waterway — a backcountry permit"
+  ],
+  "seasonalClosures": [
+   "The wet season, mid-May to November, brings heat, storms and mosquitoes; June to November is hurricane season"
+  ],
+  "camping": [
+   "Flamingo Campground, reservable, with some first-come sites",
+   "Long Pine Key Campground, reservable, with some first-come sites"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1934",
+   "text": "Congress authorizes Everglades National Park."
+  },
+  {
+   "year": "1947",
+   "text": "The park is dedicated, and Marjory Stoneman Douglas publishes The Everglades: River of Grass."
+  },
+  {
+   "year": "1976",
+   "text": "UNESCO names the Everglades and Dry Tortugas a biosphere reserve."
+  },
+  {
+   "year": "1979",
+   "text": "The park is listed as a World Heritage Site."
+  },
+  {
+   "year": "1987",
+   "text": "The park is listed as a Wetland of International Importance."
+  }
+ ],
+ "safety": [
+  "Keep well back from alligators and crocodiles, and never feed them; it is illegal and makes them dangerous.",
+  "Bring insect repellent and water at any time of year, and plenty of both in the wet season."
+ ],
+ "regulations": [
+  "Feeding or disturbing wildlife is prohibited.",
+  "Fishing requires a Florida fishing licence.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Everglades National Park — National Park Service",
+   "url": "https://www.nps.gov/ever/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$35",
+   "detail": "Admits the passholder and passengers of a single vehicle or vessel. Good for 7 consecutive days at all park entrances."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$30",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Per person",
+   "cost": "$20",
+   "detail": "Good for 7 consecutive days at all park entrances. Admits one individual hiker, bicyclist, pedestrian, or human-powered paddlecraft, when not arriving in a vehicle or vessel. Individuals 15 years old and younger, are admitted free of charge."
+  },
+  {
+   "title": "Education/academic groups",
+   "cost": "Free",
+   "detail": "All accredited educational and scientific institutions are eligible to receive free entrance to the park. Bringing your classroom to the park can present many unique learning opportunities and novel ways for your students to advance their studies. The Federal Lands Recreation Enhancement Act (FLREA), Public Law 108-447, provides the National Park Service statutory authority to allow “outings conducted for non-commercial educational purposes by schools or bona fide academic institutions.”"
+  },
+  {
+   "title": "Nonresident",
+   "cost": "$100",
+   "detail": "Each non-US resident aged 16 and older visiting Everglades National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo by Miguel Salas",
+  "isPublicDomain": true,
+  "assetName": "np-everglades-1.jpg",
+  "caption": "Cypress Tree Sunrise",
+  "altText": "A sunset creates a silhouette of a cypress tree with needle-like leaves that is shaped like an 'N'."
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-everglades-2.jpg",
+   "caption": "Nine Mile Pond",
+   "altText": "Two canoes at Nine Mile Pond during sunset."
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-everglades-3.jpg",
+   "caption": "American Alligator",
+   "altText": "An American Alligator high walks the Anhinga Trail."
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-everglades-4.jpg",
+   "caption": "Shark Valley Tram and Bicycle Road",
+   "altText": "Two visitors bike along the road in Shark Valley."
+  }
+ ],
+ "operatingHours": "Everglades National Park is open 7 days a week, 24 hours a day. Park entrance is always open but staffed from 8:00 a.m. to 4:30 p.m.",
+ "weather": "The climate in Florida is known to be mild and sunny.The average annual temperatures for South Florida and the Keys range from 74° to 77°F (23° to 25°C). There are two seasons at the Everglades National Park: the wet season and the dry season. The wet season runs from Mid-May to November and the dry season runs from December to mid-May.",
+ "directions": "Directions to Ernest Coe Visitor Center 40001 State Road 9336, Homestead, FL 33034 Visitors coming from the Miami area and points north should take the Florida Turnpike (Route 821) south until it ends merging with U.S. 1 at Florida City. Turn right at the first traffic light onto Palm Drive (State Road 9336/SW 344th St.) and follow the signs to the park. Visitors driving north from the Florida Keys should turn left on Palm Drive in Florida City and follow the signs to the park."
+}

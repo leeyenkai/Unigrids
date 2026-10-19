@@ -6,6 +6,12 @@ requires-python = ">=3.12"
 dependencies = [
     "httpx>=0.27",
     "pydantic>=2.7",
+    # Rendering the offline packs: numpy for the elevation grid and the hillshade,
+    # tifffile to read the float32 GeoTIFFs 3DEP hands back (no GDAL needed, because
+    # the pipeline asks for a bbox it already knows), Pillow to draw and encode tiles.
+    "numpy>=2.0",
+    "tifffile>=2024.5.22",
+    "pillow>=10.3",
 ]
 
 [project.optional-dependencies]

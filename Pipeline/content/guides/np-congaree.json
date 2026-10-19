@@ -1,0 +1,80 @@
+{
+ "placeID": "np-congaree",
+ "summary": "The largest intact old-growth bottomland hardwood forest left in the southeastern United States, eighteen miles from Columbia: a floodplain of giant loblolly pines, bald cypress and tupelo, washed through by the Congaree and Wateree rivers.",
+ "facts": {
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "Half a day to a day"
+ },
+ "story": [
+  "Congaree is a forest that floods. Several times in most years the Congaree and Wateree rivers spill over their banks and spread across the floodplain, leaving nutrients and fresh sediment behind. The trees have grown enormous on it: the canopy is among the tallest of any temperate deciduous forest left in the world, and the park holds national and state champion trees — loblolly pine, bald cypress, sweetgum, cherrybark oak.",
+  "Bald cypress stand in the sloughs on knees that rise from their roots, and water tupelo grow beside them. River otters, barred owls and wild turkeys live here, and for a couple of weeks around late May the park's synchronous fireflies flash together in the dark.",
+  "Cypress logging began here in 1898, but the swamp was hard to work and much of the old forest survived. When renewed logging threatened it in the late 1960s, a grassroots campaign led by the newspaperman Harry Hampton set out to save it, and in 1976 Congress created Congaree Swamp National Monument.",
+  "The monument grew, became an international biosphere reserve and was designated a national park in 2003. About fifteen thousand acres are wilderness, and a paddling trail follows Cedar Creek through the heart of the forest."
+ ],
+ "sights": [
+  {
+   "name": "Boardwalk Loop",
+   "match": "Start of the Boardwalk",
+   "note": "A 2.6-mile raised boardwalk through old-growth bottomland forest and past cypress knees, from the visitor center."
+  },
+  {
+   "name": "Weston Lake",
+   "note": "An oxbow lake on the Weston Lake Loop, with cypress growing in the water.",
+   "location": [
+    33.8195,
+    -80.8174
+   ]
+  },
+  {
+   "name": "Cedar Creek",
+   "note": "A blackwater creek through the forest, followed by a marked canoe and kayak trail.",
+   "location": [
+    33.8216,
+    -80.8027
+   ]
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "One entrance off Old Bluff Road, reached from Interstate 77 exit 5 via SC 48"
+  ],
+  "seasonalClosures": [
+   "Floods close trails and campgrounds with little warning; check river levels before you go"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1898",
+   "text": "The Santee River Cypress Logging Company begins logging in the area."
+  },
+  {
+   "year": "1969",
+   "text": "A grassroots campaign to protect the forest begins."
+  },
+  {
+   "year": "1976",
+   "text": "Congress establishes Congaree Swamp National Monument."
+  },
+  {
+   "year": "2003",
+   "text": "The monument becomes Congaree National Park."
+  }
+ ],
+ "safety": [
+  "Floodwater rises quickly. Do not walk or paddle through moving water, and turn back where a trail is under water.",
+  "Mosquitoes can be fierce in warm months. Bring repellent and long sleeves."
+ ],
+ "regulations": [
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Congaree National Park — National Park Service",
+   "url": "https://www.nps.gov/cong/"
+  }
+ ],
+ "contentVersion": 2
+}

@@ -1,0 +1,96 @@
+{
+ "placeID": "np-pinnacles",
+ "summary": "Rock spires and talus caves in California's Coast Ranges — half of an ancient volcano, carried north along the San Andreas Fault. Condors ride the thermals over the High Peaks, and bats roost in the caves. Two entrances, east and west, with no road between them.",
+ "facts": {
+  "lowestElevationMetres": 251,
+  "highestElevationMetres": 1007,
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "A day for one side; two to see both"
+ },
+ "story": [
+  "About 23 million years ago, a volcano erupted far to the southeast of here. The San Andreas Fault split it, and the western half has travelled some two hundred miles northwest since. Wind and water carved what was left into the pinnacles, spires and sheer walls that give the park its name.",
+  "Where giant boulders tumbled into narrow gorges and wedged there, they roofed the gorges over and made talus caves. Bear Gulch and Balconies are the two you can walk through, by torchlight. At least thirteen kinds of bats live in the park, and the caves are some of their most important roosts.",
+  "Chalon and Mutsun Ohlone people lived in the area for thousands of years, until the Spanish mission at Soledad brought disease and upheaval. By the 1880s, picnickers from nearby towns were exploring the caves. A homesteader, Schuyler Hain, led tours and lobbied for protection, and President Theodore Roosevelt proclaimed a national monument in 1908.",
+  "The Civilian Conservation Corps built many of the trails in the 1930s, including a tunnel on the High Peaks Trail and the dam at Bear Gulch Reservoir. Since 2003, captive-hatched California condors have been released here. Pinnacles became a national park in 2013."
+ ],
+ "sights": [
+  {
+   "name": "High Peaks",
+   "match": "High Peaks \"Steep and Narrow\"",
+   "note": "A strenuous loop over the spires, with a section of carved steps and handrails along narrow ledges. The best place to watch for condors."
+  },
+  {
+   "name": "Bear Gulch Cave",
+   "match": "Bear Gulch Caves",
+   "note": "A talus cave on the east side, partly or wholly closed at times to protect its bat colony. Bring a torch."
+  },
+  {
+   "name": "Balconies Cave",
+   "match": "Balconies Cave",
+   "note": "A talus cave on the west side under the Balconies cliffs. Bring a torch; it can flood in winter."
+  },
+  {
+   "name": "Bear Gulch Reservoir",
+   "match": "Bear Gulch Reservoir",
+   "note": "A small lake held back by a 1930s dam, above the Bear Gulch Cave."
+  },
+  {
+   "name": "Moses Spring",
+   "match": "Moses Spring",
+   "note": "A short trail through a shaded canyon to the Bear Gulch Cave and reservoir."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "East Entrance, from Highway 25 — via Hollister from the north or King City from the south",
+   "West Entrance, from Highway 146 through Soledad, off US 101",
+   "No road crosses the park; the two sides are linked only by trails"
+  ],
+  "permits": [
+   "The park has no backcountry camping"
+  ],
+  "lodging": [
+   "No lodging; Pinnacles Campground, on the east side, is the only place to stay in the park"
+  ],
+  "seasonalClosures": [
+   "Summer days often pass 100°F; spring and autumn are the most comfortable seasons",
+   "Cave sections close seasonally for the bats and after heavy rain"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1908",
+   "text": "President Theodore Roosevelt proclaims Pinnacles National Monument."
+  },
+  {
+   "year": "1933",
+   "text": "A Civilian Conservation Corps camp opens; its crews build trails and the Bear Gulch dam."
+  },
+  {
+   "year": "2003",
+   "text": "The California condor recovery programme begins releasing birds at Pinnacles."
+  },
+  {
+   "year": "2013",
+   "text": "Pinnacles becomes a national park."
+  }
+ ],
+ "safety": [
+  "Carry plenty of water and avoid the exposed High Peaks on hot afternoons.",
+  "Bring a torch for the caves, and expect to stoop, squeeze and scramble."
+ ],
+ "regulations": [
+  "Pets are not allowed on trails.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Pinnacles National Park — National Park Service",
+   "url": "https://www.nps.gov/pinn/"
+  }
+ ],
+ "contentVersion": 2
+}

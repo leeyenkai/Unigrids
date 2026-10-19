@@ -1,0 +1,121 @@
+{
+ "placeID": "np-rocky-mountain",
+ "summary": "High peaks, alpine lakes and tundra astride the Continental Divide in northern Colorado, crossed by Trail Ridge Road at over 12,000 feet. Elk in the meadows, the Colorado River's headwaters on the west side, and Longs Peak above it all.",
+ "facts": {
+  "lowestElevationMetres": 2396,
+  "highestElevationMetres": 4346,
+  "bestSeasons": [
+   "summer",
+   "autumn"
+  ],
+  "suggestedTime": "Two to three days"
+ },
+ "story": [
+  "The Continental Divide runs through the middle of the park: streams on its west side flow toward the Pacific, and those on the east toward the Atlantic. The Colorado River rises in the park's northwest corner. Elevations climb from montane meadows of ponderosa pine to subalpine forest and then to alpine tundra, where the growing season lasts only weeks.",
+  "Paleo-Indians crossed these mountains on a route near today's Trail Ridge Road, and the Ute and Arapaho later hunted and camped here. Stephen Long's expedition of 1820, for whom Longs Peak is named, saw the range from the plains. Miners founded Lulu City and other camps in the Never Summer Mountains in the 1870s, but the boom was over by 1883.",
+  "Enos Mills, a naturalist from the Estes Park area, campaigned for years for a park, and President Woodrow Wilson signed the act creating it on January 26, 1915. Trail Ridge Road was built between 1929 and 1932 to Fall River Pass and finished to Grand Lake by 1938. It is the highest continuously paved highway in the country, topping out at 12,183 feet.",
+  "Elk gather in the meadows in autumn, when their bugling during the rut draws crowds. Bighorn sheep, moose, black bears and pikas live here too. The park was named one of the first World Biosphere Reserves in 1976, and it has used timed entry in summer since 2020 to ease crowding."
+ ],
+ "sights": [
+  {
+   "name": "Bear Lake",
+   "match": "Bear Lake",
+   "note": "A subalpine lake at the end of Bear Lake Road, with an easy loop and trails on to Nymph, Dream and Emerald Lakes."
+  },
+  {
+   "name": "Sprague Lake",
+   "match": "Sprague Lake",
+   "note": "An easy, level loop around a lake with views of the Continental Divide."
+  },
+  {
+   "name": "Moraine Park",
+   "match": "Moraine Park",
+   "note": "A broad meadow on the Big Thompson River, framed by glacial moraines; a good place to see elk."
+  },
+  {
+   "name": "Many Parks Curve",
+   "match": "Many Parks Curve",
+   "note": "A Trail Ridge Road overlook across the meadows and valleys of the east side."
+  },
+  {
+   "name": "Forest Canyon Overlook",
+   "match": "Forest Canyon Overlook",
+   "note": "A short walk from Trail Ridge Road to a view down a deep glacial canyon."
+  },
+  {
+   "name": "Rock Cut",
+   "match": "Rock Cut",
+   "note": "The start of the Tundra Communities Trail, a short paved walk across the alpine tundra above 12,000 feet."
+  },
+  {
+   "name": "Holzwarth Historic Site",
+   "match": "Holzwarth Historic Site - Introduction",
+   "note": "A family homestead and guest ranch from the early 1900s in the Kawuneeche Valley."
+  },
+  {
+   "name": "Longs Peak",
+   "location": [
+    40.255,
+    -105.615
+   ],
+   "note": "The park's highest summit. Its Keyhole Route is a long, exposed scramble, not a hike; climbers set out before dawn."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Beaver Meadows and Fall River Entrances, near Estes Park on the east side",
+   "Grand Lake Entrance, on US 34 on the west side",
+   "Wild Basin, in the southeast corner"
+  ],
+  "reservations": "From late May to mid-October, a timed-entry reservation from Recreation.gov is needed for most of the day, and the Bear Lake Road corridor needs its own. Campgrounds are reserved on Recreation.gov.",
+  "permits": [
+   "Overnight wilderness camping — a permit"
+  ],
+  "lodging": [
+   "No lodges in the park; Estes Park and Grand Lake have places to stay"
+  ],
+  "seasonalClosures": [
+   "Trail Ridge Road closes for winter, usually from mid-October to late May",
+   "Old Fall River Road is a one-way, uphill gravel road, open in summer only"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1820",
+   "text": "Stephen Long's expedition approaches the Rockies; Longs Peak is later named for him."
+  },
+  {
+   "year": "1915",
+   "text": "President Woodrow Wilson signs the act establishing Rocky Mountain National Park."
+  },
+  {
+   "year": "1932",
+   "text": "Trail Ridge Road is completed to Fall River Pass."
+  },
+  {
+   "year": "1976",
+   "text": "The park becomes one of the first World Biosphere Reserves."
+  },
+  {
+   "year": "2020",
+   "text": "Timed-entry reservations begin."
+  }
+ ],
+ "safety": [
+  "Thunderstorms build most summer afternoons. Be off summits and exposed tundra by early afternoon.",
+  "Altitude affects everyone. Drink water, go slowly and descend if you feel unwell.",
+  "Give elk and moose plenty of room, especially in the autumn rut and when calves are young."
+ ],
+ "regulations": [
+  "Pets are not allowed on trails or the tundra.",
+  "Don't feed wildlife, and stay on trails on the tundra; the plants take years to recover.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Rocky Mountain National Park — National Park Service",
+   "url": "https://www.nps.gov/romo/"
+  }
+ ],
+ "contentVersion": 2
+}

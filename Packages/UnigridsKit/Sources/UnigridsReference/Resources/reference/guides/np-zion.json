@@ -1,63 +1,163 @@
 {
-  "placeID": "np-zion",
-  "contentVersion": 1,
-  "story": [
-    "Zion is a cross-section. Nine formations of sedimentary rock stand stacked in its walls, and the thickest of them, the Navajo Sandstone, was once a sand sea the size of a small country — dunes that hardened, grain on cemented grain, to more than two thousand feet of pale rock. The Virgin River has spent the last few million years cutting down through all of it as the Colorado Plateau rose beneath, which is why the canyon is so much deeper than the river is wide.",
-    "That depth is also the park's ecology. From the canyon floor at around 3,700 feet to the high plateau at 8,700, Zion crosses from desert through pinyon and juniper to stands of fir and aspen, so a day's walk can pass through communities that would otherwise be hundreds of miles apart. Where water seeps out along the contact between porous sandstone and the shale beneath it, hanging gardens grow straight off vertical rock — ferns, columbine and monkeyflower on a cliff face, fed by rain that fell centuries ago.",
-    "People have lived in and around the canyon for thousands of years, farming its floor and quarrying its rim. The Southern Paiute knew the upper canyon as Mukuntuweap. Mormon settlers moved in during the 1860s, and it was one of them, Isaac Behunin, who gave the canyon the name that stuck. Federal protection followed in 1909, as a national monument; Congress made it a national park ten years later.",
-    "What has changed since is mostly the number of people. The Zion–Mount Carmel Highway brought cars over the east rim in 1930; by the end of the century the canyon road could not hold them, and since 2000 a shuttle has carried visitors up it instead. Angels Landing, the park's most famous and most exposed route, now runs on a permit lottery."
+ "placeID": "np-zion",
+ "contentVersion": 2,
+ "story": [
+  "Zion is a cross-section. Nine formations of sedimentary rock stand stacked in its walls, and the thickest of them, the Navajo Sandstone, was once a sand sea the size of a small country — dunes that hardened, grain on cemented grain, to more than two thousand feet of pale rock. The Virgin River has spent the last few million years cutting down through all of it as the Colorado Plateau rose beneath, which is why the canyon is so much deeper than the river is wide.",
+  "That depth is also the park's ecology. From the canyon floor at around 3,700 feet to the high plateau at 8,700, Zion crosses from desert through pinyon and juniper to stands of fir and aspen, so a day's walk can pass through communities that would otherwise be hundreds of miles apart. Where water seeps out along the contact between porous sandstone and the shale beneath it, hanging gardens grow straight off vertical rock — ferns, columbine and monkeyflower on a cliff face, fed by rain that fell centuries ago.",
+  "People have lived in and around the canyon for thousands of years, farming its floor and quarrying its rim. The Southern Paiute knew the upper canyon as Mukuntuweap. Mormon settlers moved in during the 1860s, and it was one of them, Isaac Behunin, who gave the canyon the name that stuck. Federal protection followed in 1909, as a national monument; Congress made it a national park ten years later.",
+  "What has changed since is mostly the number of people. The Zion–Mount Carmel Highway brought cars over the east rim in 1930; by the end of the century the canyon road could not hold them, and since 2000 a shuttle has carried visitors up it instead. Angels Landing, the park's most famous and most exposed route, now runs on a permit lottery."
+ ],
+ "sightNotes": {
+  "poi-zion-angels-landing": "A fin of Navajo sandstone reached by switchbacks and a chained ridge, 1,500 feet above the canyon floor.",
+  "poi-zion-the-narrows": "The Virgin River's slot canyon, in places twenty feet wide between thousand-foot walls. Walked in the river itself.",
+  "poi-zion-observation-point": "The canyon's highest viewpoint, looking down on Angels Landing.",
+  "poi-zion-emerald-pools": "Three stepped pools fed by seeps and a hanging garden of ferns.",
+  "poi-zion-court-of-the-patriarchs": "Three sandstone peaks named for Abraham, Isaac and Jacob.",
+  "poi-zion-weeping-rock": "An alcove where water that fell as rain centuries ago seeps from the rock face.",
+  "poi-zion-canyon-overlook": "A short walk off the Zion–Mount Carmel Highway to a ledge above Pine Creek.",
+  "poi-zion-kolob-canyons": "The park's quiet north-west corner: red finger canyons cut into the Kolob Terrace."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "South Entrance at Springdale — the main way in, and the shuttle's starting point",
+   "East Entrance on the Zion–Mount Carmel Highway, through the 1930 tunnel",
+   "Kolob Canyons Entrance off Interstate 15 at exit 40, forty miles north"
   ],
-  "planYourVisit": {
-    "entrances": [
-      "South Entrance at Springdale — the main way in, and the shuttle's starting point",
-      "East Entrance on the Zion–Mount Carmel Highway, through the 1930 tunnel",
-      "Kolob Canyons Entrance off Interstate 15 at exit 40, forty miles north"
-    ],
-    "reservations": "The Zion Canyon Scenic Drive is served by a mandatory shuttle for most of the year, and private vehicles are not allowed on it while the shuttle runs. Angels Landing requires a permit from a seasonal lottery, drawn months ahead with a smaller day-before draw.",
-    "permits": [
-      "Angels Landing — permit lottery, one of the few named hikes in the system that needs one",
-      "The Narrows top-down, and every wilderness overnight — wilderness permit",
-      "Canyoneering routes including the Subway — permit"
-    ],
-    "camping": [
-      "Watchman Campground, open all year, reservable",
-      "South Campground, seasonal, reservable",
-      "Lava Point Campground, primitive, six sites, seasonal"
-    ],
-    "lodging": [
-      "Zion Lodge, inside the canyon",
-      "Springdale, immediately outside the south entrance"
-    ],
-    "seasonalClosures": [
-      "Kolob Terrace Road and the road to Lava Point close with snow",
-      "The Narrows closes when the Virgin River runs high, most often during spring snowmelt"
-    ]
-  },
-  "chronology": [
-    { "year": "c. 1100", "text": "Farmers of the Virgin branch of the Ancestral Puebloan culture work the canyon floor." },
-    { "year": "1858", "text": "Nephi Johnson, scouting for Mormon settlement, enters Zion Canyon." },
-    { "year": "1863", "text": "Isaac Behunin homesteads in the canyon and gives it the name Zion." },
-    { "year": "1909", "text": "President Taft proclaims Mukuntuweap National Monument." },
-    { "year": "1918", "text": "The monument is enlarged and renamed Zion." },
-    { "year": "1919", "text": "Congress establishes Zion National Park." },
-    { "year": "1930", "text": "The Zion–Mount Carmel Highway opens, with a mile-long tunnel through the cliff." },
-    { "year": "2000", "text": "A shuttle replaces private cars on the Zion Canyon Scenic Drive." },
-    { "year": "2022", "text": "Angels Landing moves to a permit lottery." }
+  "reservations": "The Zion Canyon Scenic Drive is served by a mandatory shuttle for most of the year, and private vehicles are not allowed on it while the shuttle runs. Angels Landing requires a permit from a seasonal lottery, drawn months ahead with a smaller day-before draw.",
+  "permits": [
+   "Angels Landing — permit lottery, one of the few named hikes in the system that needs one",
+   "The Narrows top-down, and every wilderness overnight — wilderness permit",
+   "Canyoneering routes including the Subway — permit"
   ],
-  "safety": [
-    "Flash floods kill in Zion's slot canyons, and the storm that causes one can be miles away and out of sight. Check the day's flash-flood potential at a visitor centre before entering The Narrows or any canyoneering route, and turn back if the water darkens or rises.",
-    "Angels Landing is an exposed scramble along a chained ridge with long drops on both sides. It is not a route to attempt in wind, ice or a hurry.",
-    "Canyon temperatures regularly pass 38°C in summer. Carry more water than feels necessary, and walk the long routes early."
+  "camping": [
+   "Watchman Campground, open all year, reservable",
+   "South Campground, seasonal, reservable",
+   "Lava Point Campground, primitive, six sites, seasonal"
   ],
-  "regulations": [
-    "Drones may not be launched, landed or flown in the park.",
-    "Dogs are allowed only on the Pa'rus Trail and in developed areas, on a leash.",
-    "Stay on trail and on rock: the cryptobiotic crust that holds the desert soil together takes decades to rebuild once broken."
+  "lodging": [
+   "Zion Lodge, inside the canyon",
+   "Springdale, immediately outside the south entrance"
   ],
-  "credits": [
-    "Text written for Unigrids from public-domain National Park Service material."
-  ],
-  "sources": [
-    { "title": "Zion National Park — National Park Service", "url": "https://www.nps.gov/zion/" }
+  "seasonalClosures": [
+   "Kolob Terrace Road and the road to Lava Point close with snow",
+   "The Narrows closes when the Virgin River runs high, most often during spring snowmelt"
   ]
+ },
+ "chronology": [
+  {
+   "year": "c. 1100",
+   "text": "Farmers of the Virgin branch of the Ancestral Puebloan culture work the canyon floor."
+  },
+  {
+   "year": "1858",
+   "text": "Nephi Johnson, scouting for Mormon settlement, enters Zion Canyon."
+  },
+  {
+   "year": "1863",
+   "text": "Isaac Behunin homesteads in the canyon and gives it the name Zion."
+  },
+  {
+   "year": "1909",
+   "text": "President Taft proclaims Mukuntuweap National Monument."
+  },
+  {
+   "year": "1918",
+   "text": "The monument is enlarged and renamed Zion."
+  },
+  {
+   "year": "1919",
+   "text": "Congress establishes Zion National Park."
+  },
+  {
+   "year": "1930",
+   "text": "The Zion–Mount Carmel Highway opens, with a mile-long tunnel through the cliff."
+  },
+  {
+   "year": "2000",
+   "text": "A shuttle replaces private cars on the Zion Canyon Scenic Drive."
+  },
+  {
+   "year": "2022",
+   "text": "Angels Landing moves to a permit lottery."
+  }
+ ],
+ "safety": [
+  "Flash floods kill in Zion's slot canyons, and the storm that causes one can be miles away and out of sight. Check the day's flash-flood potential at a visitor centre before entering The Narrows or any canyoneering route, and turn back if the water darkens or rises.",
+  "Angels Landing is an exposed scramble along a chained ridge with long drops on both sides. It is not a route to attempt in wind, ice or a hurry.",
+  "Canyon temperatures regularly pass 38°C in summer. Carry more water than feels necessary, and walk the long routes early."
+ ],
+ "regulations": [
+  "Drones may not be launched, landed or flown in the park.",
+  "Dogs are allowed only on the Pa'rus Trail and in developed areas, on a leash.",
+  "Stay on trail and on rock: the cryptobiotic crust that holds the desert soil together takes decades to rebuild once broken."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Zion National Park — National Park Service",
+   "url": "https://www.nps.gov/zion/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$35",
+   "detail": "Admits private, non-commercial vehicle (15 passenger capacity or less) and all occupants to Zion National Park. Valid for 1-7 days."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$30",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Snowmobile",
+   "cost": "$20",
+   "detail": "Admits one individual with no car to Zion National Park. Typically used for bicyclists, hikers and pedestrians. Youth 15 and under are admitted free. Valid for 1-7 days."
+  },
+  {
+   "title": "Per person",
+   "cost": "$20",
+   "detail": "Admits one individual with no car to Zion National Park. Typically used for bicyclists, hikers and pedestrians. Youth 15 and under are admitted free. Valid for 1-7 days."
+  },
+  {
+   "title": "Nonresident",
+   "cost": "$100",
+   "detail": "Each non-US resident aged 16 and older visiting Zion National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo / Shane Carte",
+  "isPublicDomain": true,
+  "assetName": "np-zion-1.jpg",
+  "caption": "The Watchman",
+  "altText": "A triangular sandstone mountain overlooks green and yellow foliage. A cloudy blue sky is overhead."
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / Jesse Nelson",
+   "isPublicDomain": true,
+   "assetName": "np-zion-2.jpg",
+   "caption": "The Towers of the Virgin",
+   "altText": "The sun sets behind large red and white towers of sandstone."
+  },
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-zion-3.jpg",
+   "caption": "Zion Canyon Visitor Center",
+   "altText": "A sandstone and glass building surrounded by tall trees with a mountain behind it."
+  },
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-zion-4.jpg",
+   "caption": "The Narrows",
+   "altText": "Tall, red, sandstone walls enclose a narrow river."
+  }
+ ],
+ "operatingHours": "Zion National Park is open every day of the year.",
+ "weather": "Zion is known for a wide range of weather conditions. Temperatures vary with changes in elevation and day/night temperatures may differ by over 30°F (16°C). In summer, temperatures in Zion National Park often exceed 100°F (38°C). Zion experiences monsoons from mid-July into September that result in an increased risk of flash floods. Always be aware of the threat of storms and lightning and be prepared for a wide range of weather conditions. Winters are generally mild.",
+ "directions": "Zion National Park's South Entrance and administrative offices are located near Springdale, Utah. This area, called Zion Canyon, is where most campsites and popular hikes are located. Zion Canyon can also be accessed through the park's East Entrance, which is west of Mt. Carmel Junction, Utah. Once inside the park, Zion Canyon can be explored via the Zion Canyon Scenic Drive. For most of the year, the scenic drive is only open to shuttle busses. Board shuttles at the Zion Canyon Visitor Center."
 }

@@ -1,0 +1,116 @@
+{
+ "placeID": "np-carlsbad-caverns",
+ "contentVersion": 2,
+ "story": [
+  "The Guadalupe Mountains are a fossil reef. Some 250 million years ago the Capitan Reef grew along the edge of an inland sea, built of sponges, algae and shells; buried and later lifted into the air, it became the limestone the caves are cut into. Most caves are dissolved by carbonic acid in rainwater. Carlsbad's were dissolved from below, by sulfuric acid formed where hydrogen sulfide rising from oil deposits met oxygen-rich groundwater.",
+  "The result is on a grand scale. The Big Room is almost 4,000 feet long, 625 feet wide and 255 feet high at its highest point. When the water drained away, dripping water began decorating the chambers with stalactites, stalagmites, draperies and soda straws — and the decoration continues.",
+  "From late spring to autumn, hundreds of thousands of Brazilian free-tailed bats spiral out of the natural entrance at dusk to hunt over the desert. Above ground, the park protects Chihuahuan Desert canyons, and Rattlesnake Springs draws birds from far around.",
+  "People sheltered in the cave mouth long ago and left paintings on its walls. Miners dug bat guano from it in the early 1900s, and a teenager named Jim White explored and named its rooms. President Coolidge proclaimed a national monument in 1923, Congress made it a national park in 1930, and elevators replaced the long walk out in 1932."
+ ],
+ "sightNotes": {
+  "poi-carlsbad-caverns-natural-entrance": "A steep, paved trail that descends about 750 feet into the cavern, past the Devil's Spring and Iceberg Rock.",
+  "poi-carlsbad-caverns-the-big-room": "The largest cave chamber in North America, on a mile-long loop trail among giant formations.",
+  "poi-carlsbad-caverns-bat-flight": "At dusk from late spring to autumn, the bats' evening flight from the amphitheater at the natural entrance.",
+  "poi-carlsbad-caverns-rattlesnake-springs": "A spring-fed oasis of cottonwoods, one of the best birding spots in New Mexico."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "One entrance road, NM 7, seven miles from the gate at Whites City on US 62/180"
+  ],
+  "reservations": "A timed-entry ticket is required to enter the cavern. Ranger-guided tours of other rooms and caves are booked separately.",
+  "permits": [
+   "Backcountry camping and wild-cave trips — a permit from the visitor center"
+  ],
+  "lodging": [
+   "No lodging or campground in the park; Whites City and Carlsbad are nearby"
+  ],
+  "seasonalClosures": [
+   "The bat flight program runs from late spring to October; the cave itself stays about 56°F all year"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1898",
+   "text": "Jim White begins exploring the cave with a homemade wire ladder."
+  },
+  {
+   "year": "1923",
+   "text": "President Coolidge proclaims Carlsbad Cave National Monument."
+  },
+  {
+   "year": "1930",
+   "text": "Congress establishes Carlsbad Caverns National Park."
+  },
+  {
+   "year": "1932",
+   "text": "Elevators open to carry visitors in and out of the cavern."
+  },
+  {
+   "year": "1995",
+   "text": "The park is inscribed as a World Heritage Site."
+  }
+ ],
+ "safety": [
+  "The natural entrance trail is steep. Wear shoes with good grip, and allow time for the climb back if you walk out.",
+  "The cave is cool and damp all year; bring a layer."
+ ],
+ "regulations": [
+  "Do not touch cave formations; skin oils stop them growing.",
+  "Electronic devices, including cameras and phones, may not be used during the bat flight.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Carlsbad Caverns National Park — National Park Service",
+   "url": "https://www.nps.gov/cave/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Timed entry reservation - location",
+   "cost": "$1",
+   "detail": "A timed entry reservation must be purchased to access Carlsbad Cavern. In addition, an entry pass must be purchased at the visitor center. Time entry reservations ensure a more enjoyable experience and helps to protect the cave formations."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Entrance fee provides access to Carlsbad Cavern by elevator and hiking in. Ranger-guided tours are an additional fee and can be reserved on recreation.gov."
+  }
+ ],
+ "hero": {
+  "credit": "NPS / Michael Larson",
+  "isPublicDomain": true,
+  "assetName": "np-carlsbad-caverns-1.jpg",
+  "caption": "Hall of Giants",
+  "altText": "Photo of Giant Dome and Twin Domes in the Big Room."
+ },
+ "gallery": [
+  {
+   "credit": "NPS / Eymard Bangcoro",
+   "isPublicDomain": true,
+   "assetName": "np-carlsbad-caverns-2.jpg",
+   "caption": "Big Room",
+   "altText": "Photo of the Big Room with trail"
+  },
+  {
+   "credit": "NPS / Michael Larson",
+   "isPublicDomain": true,
+   "assetName": "np-carlsbad-caverns-3.jpg",
+   "caption": "Mule Deer",
+   "altText": "Photo of four mule deer in a drainage with vegetation around them."
+  },
+  {
+   "credit": "NPS / Eymard Bangcoro",
+   "isPublicDomain": true,
+   "assetName": "np-carlsbad-caverns-4.jpg",
+   "caption": "Natural Entrance to Carlsbad Cavern",
+   "altText": "Photo of the Natural Entrance to Carlsbad Cavern with visitors hiking down the trail."
+  }
+ ],
+ "operatingHours": "Carlsbad Caverns National Park is open 24-hours a day. Visitor center hours and cave tour schedule vary throughout the year.",
+ "weather": "Carlsbad Caverns National Park is located in the Chihuahuan Desert in southeast New Mexico. Summers are hot with temperatures between 90°F (32°C) and low 100s °F (38°C). Windy conditions and mild temperatures are common in early spring (March-May) with frequent rain in early fall (August-September). This part of the country also sees cold temperatures in the winter with occasional snow and icy conditions. Most days, the park is enveloped by a gorgeous blue sky with very few clouds, 278 sunny days a year!",
+ "directions": "To access the park's only entrance road, New Mexico Highway 7, turn north from US Hwy 62/180 at White's City, NM, which is 20 miles (32 km) southwest of Carlsbad, NM and 145 miles (233 km) northeast of El Paso, TX. The entrance road stretches a scenic seven miles (11.3 km) from the park gate at White's City to the visitor center and cavern entrance. The address for the park's visitor center is 727 Carlsbad Caverns Hwy, Carlsbad, NM, 88220, located 27 miles (43 km) from the town of Carlsbad."
+}

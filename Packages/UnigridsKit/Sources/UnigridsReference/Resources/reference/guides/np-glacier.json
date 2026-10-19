@@ -1,0 +1,145 @@
+{
+ "placeID": "np-glacier",
+ "contentVersion": 2,
+ "story": [
+  "Glacier's mountains are built of some of the best-preserved ancient sedimentary rock in the world, layers of mud and sand laid down more than a billion years ago, still showing ripple marks and fossil algae. Along the Lewis Overthrust these old rocks were shoved eastward over much younger ones; Chief Mountain is a block of them standing alone on the plains.",
+  "Ice-age glaciers then carved the range into U-shaped valleys, knife-edge ridges and horn peaks, and left more than a hundred lakes behind. Fewer than thirty small glaciers remain, and they are retreating. From Triple Divide Peak, water runs to three oceans: the Pacific, the Atlantic by way of the Gulf, and Hudson Bay.",
+  "The Continental Divide splits the park's climate: western cedar-and-hemlock forest on the wet side, wind and prairie on the east. Grizzly bears, mountain goats, bighorn sheep, wolverines and more than a thousand kinds of plants live here.",
+  "To the Blackfeet these mountains were the Backbone of the World; the Salish and Kootenai lived to the west. In 1895 the Blackfeet sold the mountain strip of their reservation to the federal government, and George Bird Grinnell, who had explored it, campaigned for a park. Glacier was established in 1910, the Great Northern Railway built its lodges and chalets, and the Going-to-the-Sun Road was finished across Logan Pass in 1932."
+ ],
+ "sightNotes": {
+  "poi-glacier-logan-pass": "The Going-to-the-Sun Road's high point on the Continental Divide, with meadows, mountain goats and the Hidden Lake trail.",
+  "poi-glacier-hidden-lake": "A boardwalk walk from Logan Pass to an overlook above a lake ringed by peaks.",
+  "poi-glacier-many-glacier": "A valley of lakes and peaks on the east side, the park's best base for hiking and wildlife.",
+  "poi-glacier-grinnell-glacier": "A long day hike to one of the park's best-known glaciers and its turquoise lake.",
+  "poi-glacier-lake-mcdonald": "The park's largest lake, with coloured stones on its shore and a historic lodge.",
+  "poi-glacier-avalanche-lake": "Through old cedars and along a gorge to a lake below waterfalls.",
+  "poi-glacier-st-mary-falls": "Turquoise water dropping in tiers, a short walk from the road.",
+  "poi-glacier-wild-goose-island": "A tiny island in St. Mary Lake, one of the park's classic views.",
+  "poi-glacier-running-eagle-falls": "A waterfall in Two Medicine that flows from two levels at once in summer."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "West Glacier, on US 2",
+   "St. Mary, on US 89 on the east side",
+   "Many Glacier and Two Medicine, on the east side",
+   "Polebridge, in the remote North Fork valley"
+  ],
+  "reservations": "In recent summers a vehicle reservation has been required at peak hours for the Going-to-the-Sun Road and some valleys. Check nps.gov/glac before you go.",
+  "permits": [
+   "Backcountry camping — a wilderness permit"
+  ],
+  "lodging": [
+   "Lake McDonald Lodge, Many Glacier Hotel, and the Rising Sun and Swiftcurrent motor inns",
+   "Granite Park and Sperry chalets, reached only on foot"
+  ],
+  "seasonalClosures": [
+   "The Going-to-the-Sun Road usually opens fully between late June and mid-July and closes in autumn; snow lingers on high trails into July"
+  ],
+  "camping": [
+   "Apgar Campground, reservable",
+   "Avalanche Campground, reservable",
+   "Bowman Lake Campground, first come, first served",
+   "Cut Bank Campground, first come, first served",
+   "Fish Creek Campground, reservable",
+   "Kintla Lake Campground, first come, first served",
+   "Logging Creek Campground, first come, first served",
+   "Many Glacier Campground, reservable",
+   "Quartz Creek Campground, first come, first served",
+   "Rising Sun Campground, reservable, with some first-come sites",
+   "Sprague Creek Campground, reservable",
+   "St. Mary Campground, reservable",
+   "Two Medicine Campground, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1895",
+   "text": "The Blackfeet sell the mountain portion of their reservation to the federal government."
+  },
+  {
+   "year": "1910",
+   "text": "Glacier National Park is established."
+  },
+  {
+   "year": "1932",
+   "text": "The Going-to-the-Sun Road is completed over Logan Pass."
+  },
+  {
+   "year": "1995",
+   "text": "Waterton-Glacier International Peace Park is listed as a World Heritage Site."
+  }
+ ],
+ "safety": [
+  "Carry bear spray and know how to use it. Stay at least 100 yards from bears and wolves and 25 yards from other wildlife.",
+  "Streams are cold and swift, and wet rocks beside them are slick. Many drownings in the park begin with a slip near water."
+ ],
+ "regulations": [
+  "Do not feed wildlife, including squirrels and mountain goats at Logan Pass.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Glacier National Park — National Park Service",
+   "url": "https://www.nps.gov/glac/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$35",
+   "detail": "(Winter Rate - $25.00, November 1 to April 30) This is an entrance fee for all persons traveling in a single, private, non-commercial vehicle (car/truck/van). The pass is good for seven days and is non-transferable. Visitors can enter the park at any time, if the entrance station is not staffed, a self-registration area is available for purchasing a 7-day park pass."
+  },
+  {
+   "title": "Per person",
+   "cost": "$20",
+   "detail": "(Winter Rate - $15.00, November 1 to April 30) This is a per person entrance fee for a visitor traveling on foot, bicycle, or for individuals traveling together in a vehicle as a non-commercial, organized group. The pass is good for seven days and is non-transferable."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$30",
+   "detail": "(Winter Rate - $20.00, November 1 to April 30) Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Nonresident",
+   "cost": "$100",
+   "detail": "Each non-US resident aged 16 and older visiting Glacier National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group."
+  }
+ ],
+ "hero": {
+  "credit": "NPS",
+  "isPublicDomain": true,
+  "assetName": "np-glacier-1.jpg",
+  "caption": "Grinnell Glacier from Lower Grinnell Ridge in 2016",
+  "altText": "Grinnell Glacier from Lower Grinnell Ridge in 2016"
+ },
+ "gallery": [
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-glacier-2.jpg",
+   "caption": "Grinnell Glacier from Lower Grinnell Ridge in 2023",
+   "altText": "Grinnell Glacier from Lower Grinnell Ridge in 2023"
+  },
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-glacier-3.jpg",
+   "caption": "Grinnell Glacier from Grinnell Ridge in 2025",
+   "altText": "Grinnell Glacier from Grinnell Ridge in 2025"
+  },
+  {
+   "credit": "NPS",
+   "isPublicDomain": true,
+   "assetName": "np-glacier-4.jpg",
+   "caption": "Swiftcurrent Glacier from Lookout in 2015",
+   "altText": "Swiftcurrent Glacier as seen from right outside the Swiftcurrent Firelookout on August 5, 2015."
+  }
+ ],
+ "operatingHours": "Glacier National Park is open 24 hours a day 365 days of the year. An entrance fee is required, even when entrance stations are not staffed. Instructions are available at each entrance for self-payment.",
+ "weather": "Glacier's weather is highly variable and can be extreme. Expect warm, sunny summer days but be ready for any type of conditions. In the winter, temperatures can fall well below freezing and typically the park receives considerable amounts of snow. Glacier's geography, straddling the Continental Divide, sets the stage for clashes of two very different climates. Warm, wet Pacific air moves in from the west, and cold, dry Arctic air flows from the northeast. They meet at the Divide.",
+ "directions": "Glacier National Park is located in the northwest corner of Montana along the spine of the Rocky Mountains. By car you can access Glacier via Highway 2, which runs along the southern boundary of the park. You can reach the east side of the park via Highway 89. The nearest airports are in Kalispell and Great Falls, Montana."
+}

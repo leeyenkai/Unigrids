@@ -1,0 +1,106 @@
+{
+ "placeID": "np-everglades",
+ "summary": "The largest subtropical wilderness in the United States: a slow river of grass, sawgrass prairie, pine rockland, cypress, mangrove and the shallow waters of Florida Bay. The first national park created to protect an ecosystem rather than scenery.",
+ "facts": {
+  "bestSeasons": [
+   "winter",
+   "spring"
+  ],
+  "suggestedTime": "Two days"
+ },
+ "story": [
+  "The Everglades are a river, inches deep and miles wide, flowing south from Lake Okeechobee to Florida Bay so slowly it barely seems to move. Marjory Stoneman Douglas called it a river of grass in her 1947 book, the year the park was dedicated. The land is almost flat: most of the park lies less than eight feet above sea level, so a few inches of elevation decide whether a place is sawgrass marsh, pine rockland or a hardwood hammock.",
+  "The park protects the southern fifth of the original Everglades. It is the only place in the world where alligators and crocodiles live side by side, and home to manatees, the endangered Florida panther and great flocks of wading birds — roseate spoonbills, wood storks, herons and egrets. In the dry season, from December to spring, wildlife gathers at the remaining water and is easiest to see.",
+  "The Calusa and Tequesta peoples lived on these coasts for thousands of years; Seminole and Miccosukee people later made the Everglades their home. Drainage canals cut from the late 1800s on diverted much of the water that once flowed through. Ernest F. Coe led the campaign for a park, Congress authorized it in 1934, and it was dedicated in 1947.",
+  "The Everglades are now an international biosphere reserve, a World Heritage Site and a Wetland of International Importance, one of very few places named on all three lists. A decades-long restoration is working to send more water south again, while invasive Burmese pythons and rising seas press in."
+ ],
+ "sights": [
+  {
+   "name": "Anhinga Trail",
+   "note": "A short boardwalk over a slough crowded with alligators, turtles and wading birds, especially in the dry season."
+  },
+  {
+   "name": "Shark Valley",
+   "match": "Shark Valley Observation Tower",
+   "note": "A fifteen-mile loop road for trams and bicycles to an observation tower over the river of grass."
+  },
+  {
+   "name": "Pa-hay-Okee",
+   "note": "A boardwalk and overlook across the sawgrass prairie."
+  },
+  {
+   "name": "Mahogany Hammock",
+   "note": "A boardwalk through a tree island of mahogany, palms and air plants."
+  },
+  {
+   "name": "Flamingo",
+   "match": "Flamingo Marina",
+   "note": "The road's end on Florida Bay, with a marina, boat tours, and manatees and crocodiles near the docks."
+  },
+  {
+   "name": "Gumbo Limbo Trail",
+   "note": "A shaded walk through a tropical hardwood hammock at Royal Palm."
+  },
+  {
+   "name": "Nine Mile Pond",
+   "match": "Nine Mile Pond Canoe Trail",
+   "note": "A marked canoe trail through sawgrass and mangrove islands."
+  },
+  {
+   "name": "Nike Missile Site",
+   "match": "Historic Nike Missile Site",
+   "note": "A Cold War missile base built after the Cuban Missile Crisis, open on ranger-led tours."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Homestead entrance and the Ernest F. Coe Visitor Center, start of the 38-mile road to Flamingo",
+   "Shark Valley, on the Tamiami Trail (US 41) west of Miami",
+   "Gulf Coast, at Everglades City, for the Ten Thousand Islands"
+  ],
+  "permits": [
+   "Wilderness camping, including the Wilderness Waterway — a backcountry permit"
+  ],
+  "seasonalClosures": [
+   "The wet season, mid-May to November, brings heat, storms and mosquitoes; June to November is hurricane season"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1934",
+   "text": "Congress authorizes Everglades National Park."
+  },
+  {
+   "year": "1947",
+   "text": "The park is dedicated, and Marjory Stoneman Douglas publishes The Everglades: River of Grass."
+  },
+  {
+   "year": "1976",
+   "text": "UNESCO names the Everglades and Dry Tortugas a biosphere reserve."
+  },
+  {
+   "year": "1979",
+   "text": "The park is listed as a World Heritage Site."
+  },
+  {
+   "year": "1987",
+   "text": "The park is listed as a Wetland of International Importance."
+  }
+ ],
+ "safety": [
+  "Keep well back from alligators and crocodiles, and never feed them; it is illegal and makes them dangerous.",
+  "Bring insect repellent and water at any time of year, and plenty of both in the wet season."
+ ],
+ "regulations": [
+  "Feeding or disturbing wildlife is prohibited.",
+  "Fishing requires a Florida fishing licence.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Everglades National Park — National Park Service",
+   "url": "https://www.nps.gov/ever/"
+  }
+ ],
+ "contentVersion": 2
+}

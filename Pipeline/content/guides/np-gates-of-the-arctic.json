@@ -1,0 +1,79 @@
+{
+ "placeID": "np-gates-of-the-arctic",
+ "summary": "The northernmost national park, wholly above the Arctic Circle in Alaska's Brooks Range. There are no roads, trails or services — only wild rivers, glacier-carved valleys and caribou on their age-old migrations.",
+ "facts": {
+  "bestSeasons": [
+   "summer"
+  ],
+  "suggestedTime": "A week or more, by air taxi"
+ },
+ "story": [
+  "Gates of the Arctic protects the central Brooks Range, the northernmost mountains in the country. Ice-age glaciers carved its broad valleys; rivers braid across their floors; to the south the spruce of the boreal forest thins into tundra, and north of the divide lies the open Arctic slope. In the Arrigetch Peaks, granite spires rise straight from the valleys.",
+  "The park is the second largest in the system, and joined to the neighbouring Noatak it forms the largest stretch of contiguous wilderness in the United States. Caribou of the Western Arctic herd pass through on their migrations; grizzly bears, wolves, moose and Dall sheep live here year round, through winters of extreme cold and summers of endless light.",
+  "People have lived in the Brooks Range for as long as 12,500 years. The Nunamiut, inland Iñupiat who followed the caribou, settled the village of Anaktuvuk Pass in 1949 and still hunt the land; subsistence use continues in the park by law.",
+  "The name is Bob Marshall's. Exploring the North Fork of the Koyukuk River in 1929, the forester called two peaks that framed the valley — Frigid Crags and Boreal Mountain — the gates of the Arctic. The area became a national monument in 1978 and a national park and preserve under the Alaska lands act of 1980."
+ ],
+ "sights": [
+  {
+   "name": "The Gates of the Arctic",
+   "note": "Frigid Crags and Boreal Mountain, the two peaks on the North Fork of the Koyukuk that gave the park its name."
+  },
+  {
+   "name": "Arrigetch Peaks",
+   "note": "Granite spires and hanging valleys, a goal for experienced backpackers."
+  },
+  {
+   "name": "Walker Lake",
+   "note": "A long, deep lake in the park's south, reached by floatplane."
+  },
+  {
+   "name": "Anaktuvuk Pass",
+   "note": "A Nunamiut village in a pass of the Brooks Range, with a ranger station and museum."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "No roads enter the park. Fly from Fairbanks to Bettles, Anaktuvuk Pass or Coldfoot, then by air taxi into the park",
+   "Or hike in from the Dalton Highway or from Anaktuvuk Pass"
+  ],
+  "lodging": [
+   "None in the park; lodges and services in Bettles and Coldfoot"
+  ],
+  "seasonalClosures": [
+   "Most visits fall between June and early September; weather can hold air taxis for days at any time"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1929",
+   "text": "Bob Marshall explores the North Fork of the Koyukuk and names the Gates of the Arctic."
+  },
+  {
+   "year": "1949",
+   "text": "Nunamiut families settle at Anaktuvuk Pass."
+  },
+  {
+   "year": "1978",
+   "text": "Gates of the Arctic National Monument is proclaimed."
+  },
+  {
+   "year": "1980",
+   "text": "The Alaska lands act makes it a national park and preserve."
+  }
+ ],
+ "safety": [
+  "You are entirely on your own here. Carry extra food for weather delays, a means of emergency communication, and the skills to cross rivers and navigate without trails.",
+  "Carry bear spray and use bear-resistant food containers."
+ ],
+ "regulations": [
+  "Local rural residents may hunt, fish and gather for subsistence, as the Alaska lands act provides.",
+  "Leave no trace: pack out everything you carry in."
+ ],
+ "sources": [
+  {
+   "title": "Gates of the Arctic National Park and Preserve — National Park Service",
+   "url": "https://www.nps.gov/gaar/"
+  }
+ ],
+ "contentVersion": 2
+}

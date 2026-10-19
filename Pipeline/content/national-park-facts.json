@@ -1,0 +1,388 @@
+{
+  "_about": "At-a-glance figures for the 63 national parks. Established is the date the unit became a national park. Area is gross acres from the NPS Land Resources Division acreage report (31 March 2023). Visits are 2025 recreation visits from NPS Stats (Annual Park Ranking Report, published March 2026). Collected from the cited columns of Wikipedia's 'List of national parks of the United States' on 19 October 2026 and spot-checked against the NPS 2025 visitation release.",
+  "_sources": [
+    "https://www.nps.gov/subjects/lwcf/acreagereports.htm",
+    "https://irma.nps.gov/Stats/",
+    "https://www.nps.gov/orgs/1207/03-13-26-2025-visitation-statsitics.htm"
+  ],
+  "parks": {
+    "np-acadia": {
+      "established": "1919-02-26",
+      "areaAcres": 49071.4,
+      "annualVisits": 4079318,
+      "annualVisitsYear": 2025
+    },
+    "np-american-samoa": {
+      "established": "1988-10-31",
+      "areaAcres": 8256.67,
+      "annualVisits": 43258,
+      "annualVisitsYear": 2025
+    },
+    "np-arches": {
+      "established": "1971-11-12",
+      "areaAcres": 76678.98,
+      "annualVisits": 1511740,
+      "annualVisitsYear": 2025
+    },
+    "np-badlands": {
+      "established": "1978-11-10",
+      "areaAcres": 242755.94,
+      "annualVisits": 1139361,
+      "annualVisitsYear": 2025
+    },
+    "np-big-bend": {
+      "established": "1944-06-12",
+      "areaAcres": 801163.21,
+      "annualVisits": 568104,
+      "annualVisitsYear": 2025
+    },
+    "np-biscayne": {
+      "established": "1980-06-28",
+      "areaAcres": 172971.11,
+      "annualVisits": 486567,
+      "annualVisitsYear": 2025
+    },
+    "np-black-canyon-of-the-gunnison": {
+      "established": "1999-10-21",
+      "areaAcres": 30779.83,
+      "annualVisits": 250086,
+      "annualVisitsYear": 2025
+    },
+    "np-bryce-canyon": {
+      "established": "1928-02-25",
+      "areaAcres": 35835.08,
+      "annualVisits": 1967367,
+      "annualVisitsYear": 2025
+    },
+    "np-canyonlands": {
+      "established": "1964-09-12",
+      "areaAcres": 337597.83,
+      "annualVisits": 796057,
+      "annualVisitsYear": 2025
+    },
+    "np-capitol-reef": {
+      "established": "1971-12-18",
+      "areaAcres": 241904.5,
+      "annualVisits": 1388476,
+      "annualVisitsYear": 2025
+    },
+    "np-carlsbad-caverns": {
+      "established": "1930-05-14",
+      "areaAcres": 46766.45,
+      "annualVisits": 410778,
+      "annualVisitsYear": 2025
+    },
+    "np-channel-islands": {
+      "established": "1980-03-05",
+      "areaAcres": 249561.0,
+      "annualVisits": 227186,
+      "annualVisitsYear": 2025
+    },
+    "np-congaree": {
+      "established": "2003-11-10",
+      "areaAcres": 26692.6,
+      "annualVisits": 287833,
+      "annualVisitsYear": 2025
+    },
+    "np-crater-lake": {
+      "established": "1902-05-22",
+      "areaAcres": 183224.05,
+      "annualVisits": 632242,
+      "annualVisitsYear": 2025
+    },
+    "np-cuyahoga-valley": {
+      "established": "2000-10-11",
+      "areaAcres": 32571.89,
+      "annualVisits": 3025325,
+      "annualVisitsYear": 2025
+    },
+    "np-death-valley": {
+      "established": "1994-10-31",
+      "areaAcres": 3408395.63,
+      "annualVisits": 1320134,
+      "annualVisitsYear": 2025
+    },
+    "np-denali": {
+      "established": "1917-02-26",
+      "areaAcres": 4740911.16,
+      "annualVisits": 543300,
+      "annualVisitsYear": 2025
+    },
+    "np-dry-tortugas": {
+      "established": "1992-10-26",
+      "areaAcres": 64701.22,
+      "annualVisits": 89355,
+      "annualVisitsYear": 2025
+    },
+    "np-everglades": {
+      "established": "1934-05-30",
+      "areaAcres": 1508938.57,
+      "annualVisits": 778198,
+      "annualVisitsYear": 2025
+    },
+    "np-gates-of-the-arctic": {
+      "established": "1980-12-02",
+      "areaAcres": 7523897.45,
+      "annualVisits": 14923,
+      "annualVisitsYear": 2025
+    },
+    "np-gateway-arch": {
+      "established": "2018-02-22",
+      "areaAcres": 192.83,
+      "annualVisits": 2209028,
+      "annualVisitsYear": 2025
+    },
+    "np-glacier": {
+      "established": "1910-05-11",
+      "areaAcres": 1013126.39,
+      "annualVisits": 3136557,
+      "annualVisitsYear": 2025
+    },
+    "np-glacier-bay": {
+      "established": "1980-12-02",
+      "areaAcres": 3223383.43,
+      "annualVisits": 740044,
+      "annualVisitsYear": 2025
+    },
+    "np-grand-canyon": {
+      "established": "1919-02-26",
+      "areaAcres": 1201647.03,
+      "annualVisits": 4430653,
+      "annualVisitsYear": 2025
+    },
+    "np-grand-teton": {
+      "established": "1929-02-26",
+      "areaAcres": 310044.36,
+      "annualVisits": 3800648,
+      "annualVisitsYear": 2025
+    },
+    "np-great-basin": {
+      "established": "1986-10-27",
+      "areaAcres": 77180.0,
+      "annualVisits": 161210,
+      "annualVisitsYear": 2025
+    },
+    "np-great-sand-dunes": {
+      "established": "2004-09-24",
+      "areaAcres": 107345.73,
+      "annualVisits": 432498,
+      "annualVisitsYear": 2025
+    },
+    "np-great-smoky-mountains": {
+      "established": "1934-06-15",
+      "areaAcres": 522426.88,
+      "annualVisits": 11527939,
+      "annualVisitsYear": 2025
+    },
+    "np-guadalupe-mountains": {
+      "established": "1972-09-30",
+      "areaAcres": 86367.1,
+      "annualVisits": 206423,
+      "annualVisitsYear": 2025
+    },
+    "np-haleakala": {
+      "established": "1961-07-01",
+      "areaAcres": 33488.98,
+      "annualVisits": 853711,
+      "annualVisitsYear": 2025
+    },
+    "np-hawaii-volcanoes": {
+      "established": "1916-08-01",
+      "areaAcres": 344812.18,
+      "annualVisits": 1877854,
+      "annualVisitsYear": 2025
+    },
+    "np-hot-springs": {
+      "established": "1921-03-04",
+      "areaAcres": 5554.15,
+      "annualVisits": 2494611,
+      "annualVisitsYear": 2025
+    },
+    "np-indiana-dunes": {
+      "established": "2019-02-15",
+      "areaAcres": 15349.08,
+      "annualVisits": 2629497,
+      "annualVisitsYear": 2025
+    },
+    "np-isle-royale": {
+      "established": "1940-04-03",
+      "areaAcres": 571790.3,
+      "annualVisits": 29091,
+      "annualVisitsYear": 2025
+    },
+    "np-joshua-tree": {
+      "established": "1994-10-31",
+      "areaAcres": 795155.85,
+      "annualVisits": 2932644,
+      "annualVisitsYear": 2025
+    },
+    "np-katmai": {
+      "established": "1980-12-02",
+      "areaAcres": 3674529.33,
+      "annualVisits": 34479,
+      "annualVisitsYear": 2025
+    },
+    "np-kenai-fjords": {
+      "established": "1980-12-02",
+      "areaAcres": 669650.05,
+      "annualVisits": 425369,
+      "annualVisitsYear": 2025
+    },
+    "np-kings-canyon": {
+      "established": "1940-03-04",
+      "areaAcres": 461901.2,
+      "annualVisits": 779791,
+      "annualVisitsYear": 2025
+    },
+    "np-kobuk-valley": {
+      "established": "1980-12-02",
+      "areaAcres": 1750716.16,
+      "annualVisits": 7786,
+      "annualVisitsYear": 2025
+    },
+    "np-lake-clark": {
+      "established": "1980-12-02",
+      "areaAcres": 2619816.49,
+      "annualVisits": 19778,
+      "annualVisitsYear": 2025
+    },
+    "np-lassen-volcanic": {
+      "established": "1916-08-09",
+      "areaAcres": 106589.02,
+      "annualVisits": 504777,
+      "annualVisitsYear": 2025
+    },
+    "np-mammoth-cave": {
+      "established": "1941-07-01",
+      "areaAcres": 72472.87,
+      "annualVisits": 660734,
+      "annualVisitsYear": 2025
+    },
+    "np-mesa-verde": {
+      "established": "1906-06-29",
+      "areaAcres": 52485.17,
+      "annualVisits": 463130,
+      "annualVisitsYear": 2025
+    },
+    "np-mount-rainier": {
+      "established": "1899-03-02",
+      "areaAcres": 236381.64,
+      "annualVisits": 1635342,
+      "annualVisitsYear": 2025
+    },
+    "np-new-river-gorge": {
+      "established": "2020-12-27",
+      "areaAcres": 7021.0,
+      "annualVisits": 1958440,
+      "annualVisitsYear": 2025
+    },
+    "np-north-cascades": {
+      "established": "1968-10-02",
+      "areaAcres": 504780.94,
+      "annualVisits": 46925,
+      "annualVisitsYear": 2025
+    },
+    "np-olympic": {
+      "established": "1938-06-29",
+      "areaAcres": 922649.41,
+      "annualVisits": 3584187,
+      "annualVisitsYear": 2025
+    },
+    "np-petrified-forest": {
+      "established": "1962-12-09",
+      "areaAcres": 221390.21,
+      "annualVisits": 315951,
+      "annualVisitsYear": 2025
+    },
+    "np-pinnacles": {
+      "established": "2013-01-10",
+      "areaAcres": 26685.73,
+      "annualVisits": 343208,
+      "annualVisitsYear": 2025
+    },
+    "np-redwood": {
+      "established": "1968-10-02",
+      "areaAcres": 138999.37,
+      "annualVisits": 1202480,
+      "annualVisitsYear": 2025
+    },
+    "np-rocky-mountain": {
+      "established": "1915-01-26",
+      "areaAcres": 265847.74,
+      "annualVisits": 4171431,
+      "annualVisitsYear": 2025
+    },
+    "np-saguaro": {
+      "established": "1994-10-14",
+      "areaAcres": 92876.75,
+      "annualVisits": 847749,
+      "annualVisitsYear": 2025
+    },
+    "np-sequoia": {
+      "established": "1890-09-25",
+      "areaAcres": 404062.63,
+      "annualVisits": 1378337,
+      "annualVisitsYear": 2025
+    },
+    "np-shenandoah": {
+      "established": "1935-12-26",
+      "areaAcres": 200445.92,
+      "annualVisits": 1682152,
+      "annualVisitsYear": 2025
+    },
+    "np-theodore-roosevelt": {
+      "established": "1978-11-10",
+      "areaAcres": 70446.89,
+      "annualVisits": 729893,
+      "annualVisitsYear": 2025
+    },
+    "np-virgin-islands": {
+      "established": "1956-08-02",
+      "areaAcres": 15052.33,
+      "annualVisits": 471074,
+      "annualVisitsYear": 2025
+    },
+    "np-voyageurs": {
+      "established": "1975-04-08",
+      "areaAcres": 218222.35,
+      "annualVisits": 206326,
+      "annualVisitsYear": 2025
+    },
+    "np-white-sands": {
+      "established": "2019-12-20",
+      "areaAcres": 146344.31,
+      "annualVisits": 659742,
+      "annualVisitsYear": 2025
+    },
+    "np-wind-cave": {
+      "established": "1903-01-09",
+      "areaAcres": 33970.84,
+      "annualVisits": 606258,
+      "annualVisitsYear": 2025
+    },
+    "np-wrangell-st-elias": {
+      "established": "1980-12-02",
+      "areaAcres": 8323146.48,
+      "annualVisits": 108840,
+      "annualVisitsYear": 2025
+    },
+    "np-yellowstone": {
+      "established": "1872-03-01",
+      "areaAcres": 2219790.71,
+      "annualVisits": 4762988,
+      "annualVisitsYear": 2025
+    },
+    "np-yosemite": {
+      "established": "1890-10-01",
+      "areaAcres": 761747.5,
+      "annualVisits": 4278413,
+      "annualVisitsYear": 2025
+    },
+    "np-zion": {
+      "established": "1919-11-19",
+      "areaAcres": 147242.66,
+      "annualVisits": 4984525,
+      "annualVisitsYear": 2025
+    }
+  }
+}

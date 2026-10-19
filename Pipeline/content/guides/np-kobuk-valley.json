@@ -1,0 +1,64 @@
+{
+ "placeID": "np-kobuk-valley",
+ "summary": "North of the Arctic Circle, a broad valley where the Kobuk River winds past the Great Kobuk Sand Dunes — the largest active dunes in the Arctic — and caribou of the Western Arctic herd cross the river as they have at Onion Portage for nine thousand years.",
+ "facts": {
+  "bestSeasons": [
+   "summer"
+  ],
+  "suggestedTime": "Several days, by air taxi"
+ },
+ "story": [
+  "Kobuk Valley lies about twenty-five miles north of the Arctic Circle, a wide basin ringed by the Baird and Waring mountains with the Kobuk River running through it. Glaciers ground rock into fine sand here during the ice ages; wind and water have since piled it into the Great Kobuk Sand Dunes, rippled ridges up to a hundred feet high in the middle of the boreal forest and tundra.",
+  "Twice a year, caribou of the Western Arctic herd pass through on migrations between their calving grounds and winter range, swimming the river at traditional crossings. At Onion Portage, people have been waiting for them for at least nine thousand years, and the site's layered camps record a sequence of Arctic cultures so long and clear that archaeologists use it as a reference.",
+  "Iñupiat people still hunt, fish and gather in the valley, as the Alaska lands act provides. A short-lived gold rush brought prospectors here in 1899 and 1900, and left little behind.",
+  "The park was established by the Alaska lands act in 1980. It has no roads, trails or facilities, and is among the least visited parks in the system; most visitors fly in from Kotzebue or Bettles and float the river."
+ ],
+ "sights": [
+  {
+   "name": "Great Kobuk Sand Dunes",
+   "note": "The largest active dunes in the Arctic, a walk from the Kobuk River across tundra and forest."
+  },
+  {
+   "name": "Onion Portage",
+   "match": "Onion Portage Archeological District National Historic Landmark",
+   "note": "A caribou crossing on the Kobuk River and an archaeological site with nine thousand years of human history."
+  },
+  {
+   "name": "Jade Mountains",
+   "note": "Mountains on the park's northern edge, named for the jade found in their streams."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "No roads: by chartered air taxi from Kotzebue or Bettles; the Northwest Arctic Heritage Center in Kotzebue is the park's visitor center"
+  ],
+  "seasonalClosures": [
+   "Most visits fall between June and early September; weather can hold air taxis for days"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1899",
+   "text": "A brief gold rush brings prospectors to the Kobuk River."
+  },
+  {
+   "year": "1980",
+   "text": "The Alaska lands act establishes Kobuk Valley National Park."
+  }
+ ],
+ "safety": [
+  "You must be entirely self-sufficient. Carry extra food for weather delays and a way to call for help.",
+  "Grizzly and black bears live here. Carry bear spray and use bear-resistant food containers."
+ ],
+ "regulations": [
+  "Local rural residents may hunt, fish and gather for subsistence.",
+  "Onion Portage is Native-owned land within the park; respect closures and do not disturb sites."
+ ],
+ "sources": [
+  {
+   "title": "Kobuk Valley National Park — National Park Service",
+   "url": "https://www.nps.gov/kova/"
+  }
+ ],
+ "contentVersion": 2
+}

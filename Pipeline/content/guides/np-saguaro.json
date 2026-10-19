@@ -1,0 +1,103 @@
+{
+ "placeID": "np-saguaro",
+ "summary": "Forests of giant saguaro cactus in two districts either side of Tucson, Arizona. The Tucson Mountain District is low desert with Hohokam petroglyphs; the Rincon Mountain District climbs from desert to pine forest on Mica Mountain.",
+ "facts": {
+  "lowestElevationMetres": 664,
+  "highestElevationMetres": 2641,
+  "bestSeasons": [
+   "winter",
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "A day; half a day for each district"
+ },
+ "story": [
+  "The saguaro grows only in the Sonoran Desert, and it grows slowly: its first arm usually appears when the cactus is between 50 and 70 years old. The park protects two large stands of them, in the Tucson Mountain District west of the city and the Rincon Mountain District to the east.",
+  "The two districts are made of very different rock. The Rincon Mountains rise much higher than the Tucson Mountains, to 8,666 feet at Mica Mountain, and as one of the Madrean Sky Islands they climb through desert grassland and oak woodland to pine forest, with plants and animals that never reach the lower district.",
+  "The Hohokam lived here from about AD 200 to 1450, farming, gathering saguaro fruit and carving petroglyphs; the Tohono O'odham have long harvested the fruit too. Homesteaders, ranchers and miners came after the 1860s, and cattle grazed the Rincon slopes until the 1970s.",
+  "President Herbert Hoover proclaimed Saguaro National Monument in the Rincon Mountains in 1933, and the Civilian Conservation Corps built the Cactus Forest Loop Drive in the late 1930s. President John F. Kennedy added the Tucson Mountain District in 1961, and Congress made the two a national park in 1994."
+ ],
+ "sights": [
+  {
+   "name": "Cactus Forest Loop Drive",
+   "match": "Pull-off along Cactus Forest Loop Drive",
+   "note": "An eight-mile paved loop through dense saguaros in the Rincon Mountain District, with pull-offs and trailheads."
+  },
+  {
+   "name": "Mica View",
+   "match": "Mica View Trail",
+   "note": "An easy walk through the cactus forest with views to Mica Mountain."
+  },
+  {
+   "name": "Javelina Rocks",
+   "match": "Javelina Rocks Overlook",
+   "note": "Weathered granite outcrops beside the loop drive."
+  },
+  {
+   "name": "Signal Hill",
+   "match": "Signal Hill (West District)",
+   "note": "A short climb to boulders covered in Hohokam petroglyphs, in the Tucson Mountain District."
+  },
+  {
+   "name": "Valley View Overlook",
+   "match": "Valley View Overlook Nature Trail",
+   "note": "A short trail to a view across the Avra Valley; good at sunset."
+  },
+  {
+   "name": "Desert Discovery Trail",
+   "match": "Desert Discovery Trail",
+   "note": "A level, paved half-mile loop near the Red Hills Visitor Center, with signs on desert plants."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Tucson Mountain District (West) — the Red Hills Visitor Center is at 2700 N Kinney Road",
+   "Rincon Mountain District (East) — on the east side of Tucson, off Old Spanish Trail",
+   "The districts are about 30 miles apart, across the city; search for the district's address, not just the park name"
+  ],
+  "permits": [
+   "Backcountry camping in the Rincon Mountains — a permit, for designated campsites such as Manning Camp"
+  ],
+  "lodging": [
+   "No lodging or drive-in campground in the park; Tucson has many places to stay"
+  ],
+  "seasonalClosures": [
+   "Summer highs often top 100°F; hike before 10 am or after 4 pm",
+   "Late summer monsoon storms bring flash flooding"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1933",
+   "text": "President Herbert Hoover proclaims Saguaro National Monument."
+  },
+  {
+   "year": "1936",
+   "text": "The Civilian Conservation Corps begins building the Cactus Forest Loop Drive."
+  },
+  {
+   "year": "1961",
+   "text": "President John F. Kennedy adds the Tucson Mountain District."
+  },
+  {
+   "year": "1994",
+   "text": "Saguaro becomes a national park."
+  }
+ ],
+ "safety": [
+  "Carry at least a gallon of water a person on a summer day, and turn back before half of it is gone.",
+  "Never cross a flooded wash; flash floods arrive fast in the monsoon.",
+  "Watch where you put hands and feet: rattlesnakes, Gila monsters and cholla spines are all common."
+ ],
+ "regulations": [
+  "Collecting plants, cactus skeletons, rocks or artefacts is prohibited.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Saguaro National Park — National Park Service",
+   "url": "https://www.nps.gov/sagu/"
+  }
+ ],
+ "contentVersion": 2
+}

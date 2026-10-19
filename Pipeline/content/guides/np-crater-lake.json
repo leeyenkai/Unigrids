@@ -1,0 +1,118 @@
+{
+ "placeID": "np-crater-lake",
+ "summary": "A lake of startling blue in the caldera of Mount Mazama, a volcano that collapsed in a violent eruption 7,700 years ago. At 1,949 feet it is the deepest lake in the United States, and it is filled almost entirely by rain and snow.",
+ "facts": {
+  "highestElevationMetres": 2722,
+  "bestSeasons": [
+   "summer"
+  ],
+  "suggestedTime": "One day"
+ },
+ "story": [
+  "About 7,700 years ago Mount Mazama, a tall volcano in the Cascade Range, erupted so violently that its summit collapsed into the emptied chamber beneath it. The basin left behind is a caldera five to six miles across. Later eruptions built Wizard Island on its floor; over centuries rain and snow filled it to its present depth of 1,949 feet.",
+  "No rivers flow in or out. The lake holds its level by balancing precipitation against evaporation and seepage, and the absence of sediment is part of why the water is so clear and so blue. Snow is the rule here: an average of 41 feet falls each year at park headquarters, and the rim road is open all the way round only in summer.",
+  "The Klamath people witnessed the eruption and tell of it as a battle between Llao of the Below World and Skell of the Above World. Gold prospectors stumbled on the lake in 1853 and called it Deep Blue Lake.",
+  "William Gladstone Steel spent his life campaigning for a park here after first seeing the lake in the 1880s, led a survey that carried a boat up the mountain to sound its depth, and saw Crater Lake made the country's fifth national park in 1902. Crater Lake Lodge opened on the rim in 1915."
+ ],
+ "sights": [
+  {
+   "name": "Rim Village",
+   "match": "Sinnott Memorial Overlook",
+   "note": "The lodge, the visitor center and the Sinnott Memorial Overlook, built into the caldera wall."
+  },
+  {
+   "name": "Wizard Island",
+   "note": "A cinder cone rising from the lake, reached by tour boat in summer.",
+   "location": [
+    42.9395,
+    -122.1465
+   ]
+  },
+  {
+   "name": "Phantom Ship",
+   "match": "Phantom Ship Overlook",
+   "note": "A small island of ancient lava shaped like a ship under sail."
+  },
+  {
+   "name": "Cleetwood Cove",
+   "note": "The only trail to the shore: a steep mile down to the water, where swimming is allowed.",
+   "location": [
+    42.9808,
+    -122.0833
+   ]
+  },
+  {
+   "name": "Watchman Peak",
+   "note": "A short climb to a fire lookout above Wizard Island, the best sunset view in the park.",
+   "location": [
+    42.9445,
+    -122.1679
+   ]
+  },
+  {
+   "name": "Mount Scott",
+   "note": "The park's highest point, a trail to a fire lookout with the whole lake below.",
+   "location": [
+    42.923,
+    -122.0162
+   ]
+  },
+  {
+   "name": "Pinnacles",
+   "note": "Spires of welded volcanic ash in a canyon in the park's southeast corner."
+  },
+  {
+   "name": "Pumice Desert",
+   "note": "A treeless plain of deep pumice laid down by the eruption, on the north entrance road."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "West Entrance, on OR 62 from Medford; open all year",
+   "South Entrance, on OR 62 from Klamath Falls; open all year",
+   "North Entrance, on OR 138; closed in winter"
+  ],
+  "permits": [
+   "Backcountry camping — a free permit"
+  ],
+  "lodging": [
+   "Crater Lake Lodge on the rim, and cabins at Mazama Village; both open seasonally"
+  ],
+  "seasonalClosures": [
+   "Rim Drive and the North Entrance close for the snowy months; the full loop usually opens by July"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1853",
+   "text": "Gold prospectors come upon the lake and name it Deep Blue Lake."
+  },
+  {
+   "year": "1886",
+   "text": "A survey led by William Gladstone Steel carries a boat to the lake and sounds its depth."
+  },
+  {
+   "year": "1902",
+   "text": "Crater Lake becomes the country's fifth national park."
+  },
+  {
+   "year": "1915",
+   "text": "Crater Lake Lodge opens on the rim."
+  }
+ ],
+ "safety": [
+  "The caldera walls are steep and unstable. Stay behind railings and on trails; the only safe way to the water is the Cleetwood Cove Trail.",
+  "The lake is very cold even in summer. Swim only at Cleetwood Cove or Wizard Island, and only if you are strong in cold water."
+ ],
+ "regulations": [
+  "Swimming is allowed only at Cleetwood Cove and Wizard Island.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Crater Lake National Park — National Park Service",
+   "url": "https://www.nps.gov/crla/"
+  }
+ ],
+ "contentVersion": 2
+}

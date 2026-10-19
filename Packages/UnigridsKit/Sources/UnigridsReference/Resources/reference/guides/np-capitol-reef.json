@@ -1,0 +1,139 @@
+{
+ "placeID": "np-capitol-reef",
+ "contentVersion": 2,
+ "story": [
+  "The Waterpocket Fold is a monocline: a long, step-like bend in the rock layers, pushed up along a buried fault between fifty and seventy million years ago and stretching nearly a hundred miles from Thousand Lake Mountain to Lake Powell. Erosion has stripped it back into a ridge of tilted rock, and the white domes of Navajo Sandstone along its crest reminded early travellers of capitol buildings. Reef was their word for any barrier that blocked the way.",
+  "Rain collects in waterpockets, basins worn into the sandstone that give the fold its name and the desert's animals their water. Along the Fremont River the cottonwoods and orchards make a green ribbon through red rock.",
+  "Fremont farmers lived along the river around a thousand years ago, raising corn and squash, storing grain in stone granaries and carving petroglyphs still visible from the road. Mormon settlers founded Junction, later Fruita, in the 1880s and planted orchards of apples, peaches, apricots and cherries; the Park Service keeps them up, and visitors pick in season.",
+  "Local boosters promoted the area as Wayne Wonderland in the 1920s. It became a national monument in 1937, gained a paved highway through the Fremont River canyon in 1962, and was made a national park in 1971."
+ ],
+ "sightNotes": {
+  "poi-capitol-reef-fruita-orchards": "Historic orchards along the Fremont River, open for picking when the fruit is ripe.",
+  "poi-capitol-reef-gifford-house": "A Fruita farmhouse where pies and preserves are sold in season.",
+  "poi-capitol-reef-petroglyph-panel": "Fremont carvings of figures and bighorn sheep, seen from boardwalks beside the highway.",
+  "poi-capitol-reef-capitol-dome": "The white sandstone dome that gave the park its name.",
+  "poi-capitol-reef-scenic-drive": "A paved road south along the face of the fold, with spurs into Grand Wash and Capitol Gorge.",
+  "poi-capitol-reef-hickman-bridge": "A natural bridge of sandstone, reached by a two-mile round-trip trail from the highway.",
+  "poi-capitol-reef-cathedral-valley": "Freestanding monoliths in the park's remote north, reached by dirt road; the Temples of the Sun and Moon stand here.",
+  "poi-capitol-reef-panorama-point": "A wide view across the fold to the Henry Mountains, and a dark-sky site at night."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "UT 24 runs through the park along the Fremont River, between Torrey and Hanksville; a fee applies on the Scenic Drive beyond Fruita"
+  ],
+  "permits": [
+   "Overnight backpacking — a free backcountry permit"
+  ],
+  "lodging": [
+   "No lodging in the park; Torrey is eleven miles west"
+  ],
+  "seasonalClosures": [
+   "Dirt roads, including those to Cathedral Valley, can be impassable after rain or snow"
+  ],
+  "camping": [
+   "Backcountry Camping",
+   "Fruita Campground, reservable",
+   "Group Campsite, reservable",
+   "Primitive campsites at Cathedral Campground, first come, first served",
+   "Primitive campsites at Cedar Mesa Campground, first come, first served"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "c. 1000",
+   "text": "Fremont farmers live along the Fremont River."
+  },
+  {
+   "year": "1872",
+   "text": "Almon H. Thompson of the Powell survey crosses the Waterpocket Fold."
+  },
+  {
+   "year": "1880s",
+   "text": "Mormon settlers found Junction, later renamed Fruita."
+  },
+  {
+   "year": "1904",
+   "text": "The first uranium claim in the area is staked."
+  },
+  {
+   "year": "1937",
+   "text": "Capitol Reef National Monument is proclaimed."
+  },
+  {
+   "year": "1962",
+   "text": "State Route 24 opens through the Fremont River canyon."
+  },
+  {
+   "year": "1971",
+   "text": "Capitol Reef becomes a national park."
+  }
+ ],
+ "safety": [
+  "Do not enter narrow canyons if rain threatens anywhere upstream. Flash floods arrive without warning.",
+  "Summer heat is intense on exposed trails; carry water and start early."
+ ],
+ "regulations": [
+  "In open orchards, fruit eaten there is free; fruit taken away is paid for at the self-pay stations.",
+  "Do not touch the petroglyphs; oils from skin damage them.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Capitol Reef National Park — National Park Service",
+   "url": "https://www.nps.gov/care/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$20",
+   "detail": "An entrance fee is charged per vehicle."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$15",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Per person",
+   "cost": "$10",
+   "detail": "Admits one individual with no car. Typically used for bicyclists and pedestrians."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo",
+  "isPublicDomain": true,
+  "assetName": "np-capitol-reef-1.jpg",
+  "caption": "Gifford House and Pendleton Barn",
+  "altText": "Wingate Sandstone cliffs behind historic barn and farmhouse"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-capitol-reef-2.jpg",
+   "caption": "Hickman Bridge",
+   "altText": "A hiker stands beside Hickman Bridge, a natural sandstone bridge"
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-capitol-reef-3.jpg",
+   "caption": "Strike Valley",
+   "altText": "Exposed layers of rock in the Waterpocket fold"
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-capitol-reef-4.jpg",
+   "caption": "Capitol Reef Visitor Center with \"The Castle\"",
+   "altText": "Cliffs known as \"The Castle\" tower above the Capitol Reef Visitor Center"
+  }
+ ],
+ "operatingHours": "Capitol Reef is a 24 hour park, open all day, every day. The visitor center is open daily, except for some major holidays. Visitor center hours vary, call 435-425-3791 and follow the prompts for current visitor center information.",
+ "weather": "Weather is posted daily; check at the park visitor center for weather updates. Do not enter into narrow canyons if there is a threat of rain or if rain has been falling in the area. Rain and snow may also make dirt roads impassable to vehicles.",
+ "directions": "From I-70: Take exit 149, then take UT-24 west toward Hanksville; continue for 43.8 miles (70.5 km). Turn right to continue on UT-24 west and continue for 37.3 miles (60 km). From I-15: take exit 188 then US-50 east toward Scipio. Left on UT-50; continuing 0.7 miles (1.1 km). Turn right onto US-50 east; continue for 24.4 miles (39.3 km). Turn right onto UT-260 south and continue 4.2 miles (6.8 km), then right on UT-24 for 71.3 miles. UT-12: North on highway 12 to Torrey, UT. Right onto UT-24."
+}

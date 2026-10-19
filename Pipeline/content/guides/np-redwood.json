@@ -1,0 +1,126 @@
+{
+ "placeID": "np-redwood",
+ "summary": "The world's tallest trees, in old-growth coast redwood forest along the northern California coast, managed jointly with three state parks. Fern-walled canyons, wild beaches, Roosevelt elk and the mouth of the Klamath River.",
+ "facts": {
+  "lowestElevationMetres": 0,
+  "highestElevationMetres": 837,
+  "bestSeasons": [
+   "spring",
+   "summer",
+   "autumn"
+  ],
+  "suggestedTime": "Two to three days"
+ },
+ "story": [
+  "Coast redwoods are the tallest trees on Earth. They grow only in a narrow belt of fog and rain along the Pacific coast, and the four parks managed here — Redwood National Park and Prairie Creek, Del Norte Coast and Jedediah Smith Redwoods State Parks — protect nearly half of all the old-growth coast redwood forest that remains. Hyperion, the tallest known living tree at about 380 feet, was found here in 2006; its location is kept secret to protect it.",
+  "Yurok, Tolowa, Chilula and other peoples have lived here for thousands of years, building houses and boats from redwood planks. The gold rush of the 1850s brought settlers, violence and disease that devastated them. Logging followed, and by the twentieth century most of the original forest had been cut.",
+  "The Save the Redwoods League, founded in 1918, bought groves and helped create the state parks in the 1920s. After a long campaign, Congress established Redwood National Park in 1968 and expanded it in 1978, adding logged land in the Redwood Creek watershed that the park has been restoring since. The parks have been managed together since 1994.",
+  "Beyond the trees, the parks protect 37 miles of coastline, prairies and oak woodland, rivers with salmon and steelhead, and herds of Roosevelt elk."
+ ],
+ "sights": [
+  {
+   "name": "Tall Trees Grove",
+   "match": "Tall Trees Walking Tour Stop 1",
+   "note": "A grove of very tall redwoods beside Redwood Creek. Reached by a steep trail from a gated road that needs a free permit."
+  },
+  {
+   "name": "Lady Bird Johnson Grove",
+   "match": "Lady Bird Johnson Grove Trail",
+   "note": "A short loop through old growth on a ridge above the coast, named for the former first lady."
+  },
+  {
+   "name": "Fern Canyon",
+   "match": "Fern Canyon Loop Trail",
+   "note": "A creek ravine about 50 feet deep with walls covered in ferns, near Gold Bluffs Beach. Expect wet feet."
+  },
+  {
+   "name": "Stout Memorial Grove",
+   "match": "Stout Memorial Grove",
+   "note": "A level loop among some of the largest redwoods, beside the Smith River."
+  },
+  {
+   "name": "Simpson-Reed Grove",
+   "match": "Simpson-Reed Grove",
+   "note": "An easy loop through old-growth redwood and hemlock just off US 199."
+  },
+  {
+   "name": "Big Tree Wayside",
+   "match": "Big Tree Wayside",
+   "note": "A short walk to one of the park's largest redwoods, off the Newton B. Drury Scenic Parkway."
+  },
+  {
+   "name": "Klamath River Overlook",
+   "match": "Klamath River Overlook",
+   "note": "A high viewpoint over the river mouth; watch for grey whales on their migrations."
+  },
+  {
+   "name": "Gold Bluffs Beach",
+   "match": "Gold Bluffs Beach Day Use Area",
+   "note": "A long, wild beach backed by bluffs, often with elk in the grass."
+  },
+  {
+   "name": "Elk Meadow",
+   "match": "Elk Meadow Day Use Area",
+   "note": "A meadow near Orick where Roosevelt elk often graze, and the start of the Trillium Falls Trail."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "US 101 runs the length of the parks, about 60 miles, from Orick in the south to Crescent City",
+   "US 199 enters from the northeast, through Jedediah Smith Redwoods State Park"
+  ],
+  "reservations": "Tall Trees Grove needs a free permit for its access road, limited each day. In summer, Fern Canyon and Gold Bluffs Beach need a parking reservation from California State Parks, and the state park campgrounds should be reserved ahead.",
+  "permits": [
+   "Backcountry camping — a free permit"
+  ],
+  "lodging": [
+   "No lodges in the parks; Crescent City, Klamath, Orick and Trinidad have places to stay"
+  ],
+  "seasonalClosures": [
+   "October to April is the rainy season, with 60 to 80 inches of rain; summer is often foggy and cool",
+   "Davison Road to Gold Bluffs Beach and Fern Canyon is unpaved and not suitable for trailers"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1918",
+   "text": "The Save the Redwoods League is founded."
+  },
+  {
+   "year": "1968",
+   "text": "Redwood National Park is established."
+  },
+  {
+   "year": "1978",
+   "text": "Congress expands the park to take in the Redwood Creek watershed."
+  },
+  {
+   "year": "1980",
+   "text": "The parks are inscribed as a World Heritage Site."
+  },
+  {
+   "year": "1994",
+   "text": "The National Park Service and California State Parks begin managing the four parks together."
+  },
+  {
+   "year": "2006",
+   "text": "Hyperion, the world's tallest known living tree, is found in the park."
+  }
+ ],
+ "safety": [
+  "Never turn your back on the ocean: sneaker waves and rip currents are common on these beaches.",
+  "Keep well away from elk, especially during the autumn rut and the spring calving season.",
+  "After a strong earthquake on the coast, move to high ground at once; a tsunami may follow."
+ ],
+ "regulations": [
+  "Pets are not allowed on park trails; ask which beaches and campgrounds allow them on a leash.",
+  "Drones may not be launched, landed or flown in the parks."
+ ],
+ "sources": [
+  {
+   "title": "Redwood National and State Parks — National Park Service",
+   "url": "https://www.nps.gov/redw/"
+  }
+ ],
+ "contentVersion": 2
+}

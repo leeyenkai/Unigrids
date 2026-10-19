@@ -1,0 +1,102 @@
+{
+ "placeID": "np-canyonlands",
+ "summary": "A wilderness of canyons, mesas and spires cut by the Colorado and Green rivers, which divide it into districts no road connects: the high mesa of Island in the Sky, the banded spires of the Needles, the remote Maze, and the rivers themselves.",
+ "facts": {
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "A day for each district you visit"
+ },
+ "story": [
+  "Canyonlands is a layer cake of sandstone and shale, cut into by two rivers as the Colorado Plateau rose beneath them. Island in the Sky is the top of it: a mesa standing roughly a thousand feet above the White Rim, a bench that stands roughly another thousand above the rivers. To the south the Needles are fins and spires of banded red and white Cedar Mesa Sandstone; to the west, across the rivers, the Maze is a tangle of canyons that few people ever see.",
+  "The rivers meet at the Confluence in the heart of the park, and below it the Colorado runs into Cataract Canyon's rapids. At Upheaval Dome, a crater-like ring of upturned rock on Island in the Sky, geologists still argue between a rising salt dome and an ancient meteorite impact.",
+  "This is high desert, with little rain and wide swings of temperature. Shallow potholes in the slickrock fill after storms and come alive within hours with tiny shrimp, snails and insects that wait out the dry months as dormant eggs; dark, crusted soil holds the sand together between the shrubs.",
+  "Ancestral Puebloan farmers left granaries and dwellings, and in Horseshoe Canyon the Great Gallery holds life-size painted figures thousands of years older still. Ranchers and uranium prospectors cut the roads that four-wheel drivers use today. Bates Wilson, superintendent at nearby Arches, spent the 1950s pressing for a park; Interior Secretary Stewart Udall flew over the Confluence in 1961 and took up the cause, and Canyonlands was established in 1964."
+ ],
+ "sights": [
+  {
+   "name": "Mesa Arch",
+   "match": "Mesa Arch Trail",
+   "note": "A short walk to an arch on the rim's edge that frames the canyons below, famous at sunrise."
+  },
+  {
+   "name": "Grand View Point",
+   "match": "Grand View Point Overlook and Trail",
+   "note": "The end of the Island in the Sky road, with the White Rim and the canyons spread out below."
+  },
+  {
+   "name": "Green River Overlook",
+   "note": "A view down to the Green River winding through Stillwater Canyon."
+  },
+  {
+   "name": "Upheaval Dome",
+   "note": "A crater-like ring of upturned rock whose origin is still debated."
+  },
+  {
+   "name": "Shafer Canyon",
+   "match": "Shafer Trail Viewpoint",
+   "note": "The switchbacks of the Shafer Trail road dropping from the mesa to the White Rim."
+  },
+  {
+   "name": "Chesler Park",
+   "match": "Chesler Park Viewpoint Trail",
+   "note": "A grassland ringed by red-and-white spires, reached on foot in the Needles."
+  },
+  {
+   "name": "Druid Arch",
+   "match": "Druid Arch Trail",
+   "note": "A tall, slotted arch at the head of Elephant Canyon, a long day hike in the Needles."
+  },
+  {
+   "name": "Horseshoe Canyon",
+   "note": "A detached unit of the park, home to the Great Gallery of Barrier Canyon-style rock art."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Island in the Sky, on UT 313 about forty minutes from Moab",
+   "The Needles, on UT 211 about ninety minutes from Moab or an hour from Monticello",
+   "The Maze and Horseshoe Canyon, by long dirt roads from UT 24 via Hans Flat; high-clearance four-wheel drive for the Maze"
+  ],
+  "reservations": "Day-use permits have been required for some four-wheel-drive roads, including the White Rim Road and Elephant Hill. Check nps.gov/cany before you go.",
+  "permits": [
+   "Backpacking, overnight four-wheel-drive trips and river trips — a backcountry permit"
+  ],
+  "lodging": [
+   "No lodging in the park; Moab and Monticello are the nearest towns"
+  ],
+  "seasonalClosures": [
+   "Summer temperatures often pass 100°F (38°C); dirt roads can be impassable after rain or snow"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1950s",
+   "text": "Bates Wilson explores the area and argues for a national park."
+  },
+  {
+   "year": "1961",
+   "text": "Interior Secretary Stewart Udall flies over the Confluence and backs the idea."
+  },
+  {
+   "year": "1964",
+   "text": "President Johnson signs the law establishing Canyonlands National Park."
+  }
+ ],
+ "safety": [
+  "Carry plenty of water: there is almost none in the park, and the nearest services can be hours away.",
+  "Rim edges are unfenced and crumbly. Keep well back, especially in wind."
+ ],
+ "regulations": [
+  "Pets are not allowed on trails, even on a leash.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Canyonlands National Park — National Park Service",
+   "url": "https://www.nps.gov/cany/"
+  }
+ ],
+ "contentVersion": 2
+}

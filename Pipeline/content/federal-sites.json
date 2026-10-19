@@ -1,0 +1,406 @@
+{
+ "_about": "Other agencies' land the map carries (tier 4, SPECIFICATION.md §5): a curated set of BLM and Forest Service national monuments, one conservation area and well-known wildlife refuges. Same fields as state-parks.json.",
+ "sites": [
+  {
+   "id": "nm-grand-staircase-escalante",
+   "name": "Grand Staircase-Escalante",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "blm",
+   "states": [
+    "UT"
+   ],
+   "padus": [
+    "Grand Staircase-Escalante National Monument"
+   ],
+   "wikipedia": "Grand Staircase–Escalante National Monument",
+   "summary": "Vast, remote plateau and canyon country in southern Utah — the cliffs of the Grand Staircase, the Kaiparowits Plateau and the slot canyons of the Escalante — rich in dinosaur fossils. Its boundaries have been redrawn several times by presidential proclamation, most recently in 2026.",
+   "themes": []
+  },
+  {
+   "id": "nm-vermilion-cliffs",
+   "name": "Vermilion Cliffs",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "blm",
+   "states": [
+    "AZ"
+   ],
+   "padus": [
+    "Vermilion Cliffs National Monument"
+   ],
+   "wikipedia": "Vermilion Cliffs National Monument",
+   "summary": "Red cliffs, Paria Canyon and the swirling sandstone of Coyote Buttes, home of the Wave, on the Arizona–Utah line. Visiting the Wave needs a permit from a lottery, and California condors fly overhead.",
+   "themes": []
+  },
+  {
+   "id": "nm-bears-ears",
+   "name": "Bears Ears",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "blm",
+   "states": [
+    "UT"
+   ],
+   "padus": [
+    "Bears Ears National Monument"
+   ],
+   "wikipedia": "Bears Ears National Monument",
+   "summary": "Canyon country around a pair of buttes in southeastern Utah, with tens of thousands of cultural sites — cliff dwellings, rock art and granaries — sacred to the tribes who help manage it. Its boundaries have been redrawn by successive presidents.",
+   "themes": []
+  },
+  {
+   "id": "nm-canyons-of-the-ancients",
+   "name": "Canyons of the Ancients",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "blm",
+   "states": [
+    "CO"
+   ],
+   "padus": [
+    "Canyons of the Ancients National Monument"
+   ],
+   "wikipedia": "Canyons of the Ancients National Monument",
+   "summary": "The densest known concentration of archaeological sites in the United States, in southwestern Colorado: Ancestral Puebloan villages, towers and cliff dwellings, with the Anasazi Heritage Center as its museum.",
+   "themes": []
+  },
+  {
+   "id": "nm-organ-mountains-desert-peaks",
+   "name": "Organ Mountains-Desert Peaks",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "blm",
+   "states": [
+    "NM"
+   ],
+   "padus": [
+    "Organ Mountains%Desert Peaks%"
+   ],
+   "wikipedia": "Organ Mountains–Desert Peaks National Monument",
+   "summary": "The jagged granite spires of the Organ Mountains above Las Cruces, New Mexico, and desert ranges to the west with petroglyphs and traces of the Butterfield stage route.",
+   "themes": []
+  },
+  {
+   "id": "nm-kasha-katuwe-tent-rocks",
+   "name": "Kasha-Katuwe Tent Rocks",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "blm",
+   "states": [
+    "NM"
+   ],
+   "padus": [
+    "Kasha-Katuwe Tent Rocks National Monument"
+   ],
+   "wikipedia": "Kasha-Katuwe Tent Rocks National Monument",
+   "summary": "Cone-shaped tent rocks of volcanic ash and pumice and a narrow slot canyon near Cochiti Pueblo, southwest of Santa Fe. The road crosses Pueblo land and the monument has been closed for long periods, so check before you go.",
+   "themes": []
+  },
+  {
+   "id": "nm-carrizo-plain",
+   "name": "Carrizo Plain",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "blm",
+   "states": [
+    "CA"
+   ],
+   "padus": [
+    "Carrizo Plain National Monument"
+   ],
+   "wikipedia": "Carrizo Plain",
+   "summary": "California's largest remaining native grassland, split by the San Andreas Fault, with the salt flats of Soda Lake, the rock art of Painted Rock and spring wildflower blooms.",
+   "themes": []
+  },
+  {
+   "id": "nm-basin-and-range",
+   "name": "Basin and Range",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "blm",
+   "states": [
+    "NV"
+   ],
+   "padus": [
+    "Basin and Range National Monument"
+   ],
+   "wikipedia": "Basin and Range National Monument",
+   "summary": "Remote, empty mountains and valleys in southeastern Nevada, with ancient rock art. Michael Heizer's vast land artwork City lies within it.",
+   "themes": []
+  },
+  {
+   "id": "nm-gold-butte",
+   "name": "Gold Butte",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "blm",
+   "states": [
+    "NV"
+   ],
+   "padus": [
+    "Gold Butte National Monument"
+   ],
+   "wikipedia": "Gold Butte National Monument",
+   "summary": "Red sandstone towers, rock art and desert tortoise habitat northeast of Las Vegas, with the remains of an old mining town, reached by rough roads.",
+   "themes": []
+  },
+  {
+   "id": "nca-red-rock-canyon",
+   "name": "Red Rock Canyon",
+   "designation": "National Conservation Area",
+   "kind": "blmConservationArea",
+   "agency": "blm",
+   "states": [
+    "NV"
+   ],
+   "padus": [
+    "Red Rock Canyon National Conservation Area"
+   ],
+   "wikipedia": "Red Rock Canyon National Conservation Area",
+   "summary": "Red and cream sandstone cliffs 15 miles west of Las Vegas, with a 13-mile scenic drive, desert hiking and world-class climbing. The scenic drive needs a timed-entry reservation for much of the year.",
+   "themes": []
+  },
+  {
+   "id": "nm-sonoran-desert",
+   "name": "Sonoran Desert",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "blm",
+   "states": [
+    "AZ"
+   ],
+   "padus": [
+    "Sonoran Desert National Monument"
+   ],
+   "wikipedia": "Sonoran Desert National Monument",
+   "summary": "Saguaro forests and desert mountain ranges southwest of Phoenix, crossed by historic trails used by Spanish explorers, the Mormon Battalion and the Butterfield stage.",
+   "themes": []
+  },
+  {
+   "id": "nm-upper-missouri-river-breaks",
+   "name": "Upper Missouri River Breaks",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "blm",
+   "states": [
+    "MT"
+   ],
+   "padus": [
+    "Upper Missouri River Breaks National Monument"
+   ],
+   "wikipedia": "Upper Missouri River Breaks National Monument",
+   "summary": "Badlands, white sandstone cliffs and 149 miles of the Missouri River in central Montana, little changed since Lewis and Clark passed in 1805 — best seen by canoe.",
+   "themes": []
+  },
+  {
+   "id": "nm-mojave-trails",
+   "name": "Mojave Trails",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "blm",
+   "states": [
+    "CA"
+   ],
+   "padus": [
+    "Mojave Trails National Monument"
+   ],
+   "wikipedia": "Mojave Trails National Monument",
+   "summary": "Desert mountains, lava flows, sand dunes and the longest undeveloped stretch of Route 66, between Interstates 15 and 40 in California's Mojave Desert.",
+   "themes": []
+  },
+  {
+   "id": "nm-mount-st-helens",
+   "name": "Mount St. Helens",
+   "designation": "National Volcanic Monument",
+   "kind": "blmMonument",
+   "agency": "forestService",
+   "states": [
+    "WA"
+   ],
+   "padus": [
+    "Mount St. Helens National Volcanic Monument"
+   ],
+   "wikipedia": "Mount St. Helens National Volcanic Monument",
+   "summary": "The volcano that erupted on May 18, 1980, and the blast zone around it, left to recover naturally, with lava tubes at Ape Cave on its south side. Managed by the US Forest Service.",
+   "themes": []
+  },
+  {
+   "id": "nm-newberry",
+   "name": "Newberry",
+   "designation": "National Volcanic Monument",
+   "kind": "blmMonument",
+   "agency": "forestService",
+   "states": [
+    "OR"
+   ],
+   "padus": [
+    "Newberry National Volcanic Monument"
+   ],
+   "wikipedia": "Newberry National Volcanic Monument",
+   "summary": "Lava flows, a glassy obsidian flow and two lakes in the caldera of the Newberry Volcano south of Bend, Oregon, with Lava Butte and the Lava River Cave. Managed by the US Forest Service.",
+   "themes": []
+  },
+  {
+   "id": "nm-misty-fjords",
+   "name": "Misty Fjords",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "forestService",
+   "states": [
+    "AK"
+   ],
+   "padus": [
+    "Misty Fjords National Monument"
+   ],
+   "wikipedia": "Misty Fjords National Monument",
+   "summary": "Sheer granite fjords, waterfalls and cliffs east of Ketchikan, Alaska, almost all of it wilderness and reached by boat or floatplane. Part of the Tongass National Forest.",
+   "themes": []
+  },
+  {
+   "id": "nm-admiralty-island",
+   "name": "Admiralty Island",
+   "designation": "National Monument",
+   "kind": "blmMonument",
+   "agency": "forestService",
+   "states": [
+    "AK"
+   ],
+   "padus": [
+    "Admiralty Island National Monument"
+   ],
+   "wikipedia": "Admiralty Island",
+   "summary": "Kootznoowoo, the \"fortress of the bears\" in Tlingit: a big, forested island near Juneau with one of the densest brown bear populations in the world. Part of the Tongass National Forest.",
+   "themes": []
+  },
+  {
+   "id": "nwr-arctic",
+   "name": "Arctic",
+   "designation": "National Wildlife Refuge",
+   "kind": "wildlifeRefuge",
+   "agency": "fishAndWildlife",
+   "states": [
+    "AK"
+   ],
+   "padus": [
+    "Arctic National Wildlife Refuge"
+   ],
+   "wikipedia": "Arctic National Wildlife Refuge",
+   "summary": "The largest wildlife refuge in the country, in Alaska's far northeast: Brooks Range peaks, tundra and the coastal plain where the Porcupine caribou herd gives birth. Gwich'in and Iñupiat homeland, with no roads in.",
+   "themes": []
+  },
+  {
+   "id": "nwr-bosque-del-apache",
+   "name": "Bosque del Apache",
+   "designation": "National Wildlife Refuge",
+   "kind": "wildlifeRefuge",
+   "agency": "fishAndWildlife",
+   "states": [
+    "NM"
+   ],
+   "padus": [
+    "Bosque Del Apache National Wildlife Refuge"
+   ],
+   "wikipedia": "Bosque del Apache National Wildlife Refuge",
+   "summary": "Wetlands along the Rio Grande in New Mexico where tens of thousands of sandhill cranes and snow geese spend the winter. Their flights at dawn and dusk draw crowds in November and December.",
+   "themes": []
+  },
+  {
+   "id": "nwr-okefenokee",
+   "name": "Okefenokee",
+   "designation": "National Wildlife Refuge",
+   "kind": "wildlifeRefuge",
+   "agency": "fishAndWildlife",
+   "states": [
+    "GA"
+   ],
+   "padus": [
+    "Okefenokee National Wildlife Refuge"
+   ],
+   "wikipedia": "Okefenokee National Wildlife Refuge",
+   "summary": "The largest blackwater swamp in North America, on the Georgia–Florida line: cypress, open prairies and floating peat islands, with alligators and sandhill cranes, explored by boat on water trails.",
+   "themes": []
+  },
+  {
+   "id": "nwr-j-n-ding-darling",
+   "name": "J.N. \"Ding\" Darling",
+   "designation": "National Wildlife Refuge",
+   "kind": "wildlifeRefuge",
+   "agency": "fishAndWildlife",
+   "states": [
+    "FL"
+   ],
+   "padus": [
+    "J. N. Ding Darling National Wildlife Refuge",
+    "J.N. Ding Darling National Wildlife Refuge"
+   ],
+   "wikipedia": "J. N. \"Ding\" Darling National Wildlife Refuge",
+   "summary": "Mangrove estuary on Sanibel Island, Florida, known for wading birds such as roseate spoonbills and for its four-mile Wildlife Drive. Named for the conservationist cartoonist Jay Norwood \"Ding\" Darling.",
+   "themes": []
+  },
+  {
+   "id": "nwr-chincoteague",
+   "name": "Chincoteague",
+   "designation": "National Wildlife Refuge",
+   "kind": "wildlifeRefuge",
+   "agency": "fishAndWildlife",
+   "states": [
+    "VA"
+   ],
+   "padus": [
+    "Chincoteague National Wildlife Refuge"
+   ],
+   "wikipedia": "Chincoteague National Wildlife Refuge",
+   "summary": "Beaches, dunes and marsh on the Virginia end of Assateague Island, home of the Chincoteague ponies and a stop for huge numbers of migrating shorebirds and waterfowl.",
+   "themes": []
+  },
+  {
+   "id": "nwr-malheur",
+   "name": "Malheur",
+   "designation": "National Wildlife Refuge",
+   "kind": "wildlifeRefuge",
+   "agency": "fishAndWildlife",
+   "states": [
+    "OR"
+   ],
+   "padus": [
+    "Malheur National Wildlife Refuge"
+   ],
+   "wikipedia": "Malheur National Wildlife Refuge",
+   "summary": "Lakes and marshes in Oregon's high desert, one of the most important stopovers for migrating birds in the American West.",
+   "themes": []
+  },
+  {
+   "id": "nwr-wichita-mountains",
+   "name": "Wichita Mountains",
+   "designation": "Wildlife Refuge",
+   "kind": "wildlifeRefuge",
+   "agency": "fishAndWildlife",
+   "states": [
+    "OK"
+   ],
+   "padus": [
+    "Wichita Mountains Wildlife Refuge"
+   ],
+   "wikipedia": "Wichita Mountains Wildlife Refuge",
+   "summary": "Granite mountains and mixed-grass prairie in southwest Oklahoma, the oldest managed refuge in the US Fish and Wildlife Service system. Bison were restored here in 1907, and elk and Texas longhorns roam too.",
+   "themes": []
+  },
+  {
+   "id": "nwr-national-elk",
+   "name": "National Elk",
+   "designation": "Refuge",
+   "kind": "wildlifeRefuge",
+   "agency": "fishAndWildlife",
+   "states": [
+    "WY"
+   ],
+   "padus": [
+    "National Elk Refuge"
+   ],
+   "wikipedia": "National Elk Refuge",
+   "summary": "Winter range for one of the largest elk herds in North America, on the edge of Jackson, Wyoming. In winter, horse-drawn sleighs carry visitors among thousands of elk.",
+   "themes": []
+  }
+ ]
+}

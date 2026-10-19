@@ -1,0 +1,129 @@
+{
+ "placeID": "np-saguaro",
+ "contentVersion": 2,
+ "story": [
+  "The saguaro grows only in the Sonoran Desert, and it grows slowly: its first arm usually appears when the cactus is between 50 and 70 years old. The park protects two large stands of them, in the Tucson Mountain District west of the city and the Rincon Mountain District to the east.",
+  "The two districts are made of very different rock. The Rincon Mountains rise much higher than the Tucson Mountains, to 8,666 feet at Mica Mountain, and as one of the Madrean Sky Islands they climb through desert grassland and oak woodland to pine forest, with plants and animals that never reach the lower district.",
+  "The Hohokam lived here from about AD 200 to 1450, farming, gathering saguaro fruit and carving petroglyphs; the Tohono O'odham have long harvested the fruit too. Homesteaders, ranchers and miners came after the 1860s, and cattle grazed the Rincon slopes until the 1970s.",
+  "President Herbert Hoover proclaimed Saguaro National Monument in the Rincon Mountains in 1933, and the Civilian Conservation Corps built the Cactus Forest Loop Drive in the late 1930s. President John F. Kennedy added the Tucson Mountain District in 1961, and Congress made the two a national park in 1994."
+ ],
+ "sightNotes": {
+  "poi-saguaro-cactus-forest-loop-drive": "An eight-mile paved loop through dense saguaros in the Rincon Mountain District, with pull-offs and trailheads.",
+  "poi-saguaro-mica-view": "An easy walk through the cactus forest with views to Mica Mountain.",
+  "poi-saguaro-javelina-rocks": "Weathered granite outcrops beside the loop drive.",
+  "poi-saguaro-signal-hill": "A short climb to boulders covered in Hohokam petroglyphs, in the Tucson Mountain District.",
+  "poi-saguaro-valley-view-overlook": "A short trail to a view across the Avra Valley; good at sunset.",
+  "poi-saguaro-desert-discovery-trail": "A level, paved half-mile loop near the Red Hills Visitor Center, with signs on desert plants."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Tucson Mountain District (West) — the Red Hills Visitor Center is at 2700 N Kinney Road",
+   "Rincon Mountain District (East) — on the east side of Tucson, off Old Spanish Trail",
+   "The districts are about 30 miles apart, across the city; search for the district's address, not just the park name"
+  ],
+  "permits": [
+   "Backcountry camping in the Rincon Mountains — a permit, for designated campsites such as Manning Camp"
+  ],
+  "lodging": [
+   "No lodging or drive-in campground in the park; Tucson has many places to stay"
+  ],
+  "seasonalClosures": [
+   "Summer highs often top 100°F; hike before 10 am or after 4 pm",
+   "Late summer monsoon storms bring flash flooding"
+  ],
+  "camping": [
+   "Douglas Spring",
+   "Grass Shack",
+   "Happy Valley Saddle",
+   "Juniper Basin",
+   "Manning Camp, reservable, with some first-come sites",
+   "Spud Rock Spring"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1933",
+   "text": "President Herbert Hoover proclaims Saguaro National Monument."
+  },
+  {
+   "year": "1936",
+   "text": "The Civilian Conservation Corps begins building the Cactus Forest Loop Drive."
+  },
+  {
+   "year": "1961",
+   "text": "President John F. Kennedy adds the Tucson Mountain District."
+  },
+  {
+   "year": "1994",
+   "text": "Saguaro becomes a national park."
+  }
+ ],
+ "safety": [
+  "Carry at least a gallon of water a person on a summer day, and turn back before half of it is gone.",
+  "Never cross a flooded wash; flash floods arrive fast in the monsoon.",
+  "Watch where you put hands and feet: rattlesnakes, Gila monsters and cholla spines are all common."
+ ],
+ "regulations": [
+  "Collecting plants, cactus skeletons, rocks or artefacts is prohibited.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Saguaro National Park — National Park Service",
+   "url": "https://www.nps.gov/sagu/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$25",
+   "detail": "The vehicle entrance pass is sold in the form of a dated register receipt and admits one privately owned, non-commercial vehicle into Saguaro National Park. This includes passenger cars, trucks, vans, recreational vehicles, campers, or converted buses used for private, recreational purposes."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Individuals entering the park by means other than a motor vehicle may purchase individual entrance passes. This includes hikers, horseback riders and bicyclists. The individual entrance fee is charged to anyone 16 years of age or older."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$20",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo",
+  "isPublicDomain": true,
+  "assetName": "np-saguaro-1.jpg",
+  "caption": "Saguaro Flowers",
+  "altText": "Saguaro flowers"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo/ Bolyard",
+   "isPublicDomain": true,
+   "assetName": "np-saguaro-2.jpg",
+   "caption": "Flowering Fishhook Pincushion Cactus",
+   "altText": "A flowering fishhook pincushion cactus"
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-saguaro-3.jpg",
+   "caption": "Coyote Pups",
+   "altText": "Two coyote pups captured on a wilderness camera"
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-saguaro-4.jpg",
+   "caption": "Saguaro National Park Lighting Storm",
+   "altText": "Lightning strike captured on camera with saguaros in the background"
+  }
+ ],
+ "operatingHours": "The park is always open, except under emergency conditions. You can walk or bike into the park 24 hours a day. The Visitor Centers are open daily from 9:00am - 5:00pm from Oct. 1st to May 31st, & switch to 8:00am - 4:00pm from June 1st to Sept. 30th. In the Tucson Mountain District (West), The Bajada Loop Scenic Drive (Golden Gate Road & Hohokam Road) is open to vehicles during daylight hours. In the Rincon Mountain District (East), the Cactus Forest Loop Drive is open from 5:00am - 8:30pm.",
+ "weather": "You can expect the Winter Season to have daytime temperatures from the low 50's to the high 70's. Whereas the Summer Season can result temperatures ranging from the mid-90's to low 110's. During the Summer season, it is highly recommended to restrict outdoor activities to before 10am, or after 4pm. Late Summer into early Fall is usually accompanied by heavy monsoon rains, resulting in cooler but more humid afternoons and evenings. Flash flooding is a concern around this time of year.",
+ "directions": "Saguaro National Park has two districts separated by the city of Tucson. The address for the Saguaro National Park West District is 2700 N Kinney Rd. We do not recommend using mobile mapping applications to search for either district. Instead, please click the link to the directions page, determine which district you plan to visit, and enter that physical address into the mobile application."
+}

@@ -1,0 +1,123 @@
+{
+ "placeID": "np-canyonlands",
+ "contentVersion": 2,
+ "story": [
+  "Canyonlands is a layer cake of sandstone and shale, cut into by two rivers as the Colorado Plateau rose beneath them. Island in the Sky is the top of it: a mesa standing roughly a thousand feet above the White Rim, a bench that stands roughly another thousand above the rivers. To the south the Needles are fins and spires of banded red and white Cedar Mesa Sandstone; to the west, across the rivers, the Maze is a tangle of canyons that few people ever see.",
+  "The rivers meet at the Confluence in the heart of the park, and below it the Colorado runs into Cataract Canyon's rapids. At Upheaval Dome, a crater-like ring of upturned rock on Island in the Sky, geologists still argue between a rising salt dome and an ancient meteorite impact.",
+  "This is high desert, with little rain and wide swings of temperature. Shallow potholes in the slickrock fill after storms and come alive within hours with tiny shrimp, snails and insects that wait out the dry months as dormant eggs; dark, crusted soil holds the sand together between the shrubs.",
+  "Ancestral Puebloan farmers left granaries and dwellings, and in Horseshoe Canyon the Great Gallery holds life-size painted figures thousands of years older still. Ranchers and uranium prospectors cut the roads that four-wheel drivers use today. Bates Wilson, superintendent at nearby Arches, spent the 1950s pressing for a park; Interior Secretary Stewart Udall flew over the Confluence in 1961 and took up the cause, and Canyonlands was established in 1964."
+ ],
+ "sightNotes": {
+  "poi-canyonlands-mesa-arch": "A short walk to an arch on the rim's edge that frames the canyons below, famous at sunrise.",
+  "poi-canyonlands-grand-view-point": "The end of the Island in the Sky road, with the White Rim and the canyons spread out below.",
+  "poi-canyonlands-green-river-overlook": "A view down to the Green River winding through Stillwater Canyon.",
+  "poi-canyonlands-upheaval-dome": "A crater-like ring of upturned rock whose origin is still debated.",
+  "poi-canyonlands-shafer-canyon": "The switchbacks of the Shafer Trail road dropping from the mesa to the White Rim.",
+  "poi-canyonlands-chesler-park": "A grassland ringed by red-and-white spires, reached on foot in the Needles.",
+  "poi-canyonlands-druid-arch": "A tall, slotted arch at the head of Elephant Canyon, a long day hike in the Needles.",
+  "poi-canyonlands-horseshoe-canyon": "A detached unit of the park, home to the Great Gallery of Barrier Canyon-style rock art."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Island in the Sky, on UT 313 about forty minutes from Moab",
+   "The Needles, on UT 211 about ninety minutes from Moab or an hour from Monticello",
+   "The Maze and Horseshoe Canyon, by long dirt roads from UT 24 via Hans Flat; high-clearance four-wheel drive for the Maze"
+  ],
+  "reservations": "Day-use permits have been required for some four-wheel-drive roads, including the White Rim Road and Elephant Hill. Check nps.gov/cany before you go.",
+  "permits": [
+   "Backpacking, overnight four-wheel-drive trips and river trips — a backcountry permit"
+  ],
+  "lodging": [
+   "No lodging in the park; Moab and Monticello are the nearest towns"
+  ],
+  "seasonalClosures": [
+   "Summer temperatures often pass 100°F (38°C); dirt roads can be impassable after rain or snow"
+  ],
+  "camping": [
+   "Island in the Sky (Willow Flat) Campground, first come, first served",
+   "The Needles Campground, reservable, with some first-come sites",
+   "The Needles District Group Campsites, reservable"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1950s",
+   "text": "Bates Wilson explores the area and argues for a national park."
+  },
+  {
+   "year": "1961",
+   "text": "Interior Secretary Stewart Udall flies over the Confluence and backs the idea."
+  },
+  {
+   "year": "1964",
+   "text": "President Johnson signs the law establishing Canyonlands National Park."
+  }
+ ],
+ "safety": [
+  "Carry plenty of water: there is almost none in the park, and the nearest services can be hours away.",
+  "Rim edges are unfenced and crumbly. Keep well back, especially in wind."
+ ],
+ "regulations": [
+  "Pets are not allowed on trails, even on a leash.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Canyonlands National Park — National Park Service",
+   "url": "https://www.nps.gov/cany/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "Admits one private, non-commercial vehicle (15 passenger capacity or less) and all its occupants."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Admits one individual with no car. Typically used for bicyclists, hikers, and pedestrians. Youth 15 and under are admitted free."
+  }
+ ],
+ "hero": {
+  "credit": "NPS/Rhodes Smartt",
+  "isPublicDomain": true,
+  "assetName": "np-canyonlands-1.jpg",
+  "caption": "Canyons in The Needles district",
+  "altText": "Small rounded canyons with large sandstone cliffs and mountains in the background"
+ },
+ "gallery": [
+  {
+   "credit": "NPS/Neal Herbert",
+   "isPublicDomain": true,
+   "assetName": "np-canyonlands-2.jpg",
+   "caption": "Mesa Arch",
+   "altText": "a broad stone arch with rock pinnacles in the distance"
+  },
+  {
+   "credit": "NPS/Neal Herbert",
+   "isPublicDomain": true,
+   "assetName": "np-canyonlands-3.jpg",
+   "caption": "The Maze",
+   "altText": "a rugged canyon"
+  },
+  {
+   "credit": "NPS/Rhodes Smartt",
+   "isPublicDomain": true,
+   "assetName": "np-canyonlands-4.jpg",
+   "caption": "Hardscrabble Hill",
+   "altText": "A windy steep dirt road leads up the side of a sandstone cliff. River in background."
+  }
+ ],
+ "operatingHours": "Canyonlands National Park is generally open 24 hours a day, year-round.",
+ "weather": "Canyonlands is part of the Colorado Plateau, a \"high desert\" region that experiences wide temperature fluctuations, sometimes over 40 degrees in a single day. The temperate (and most popular) seasons are spring (April-May) and fall (mid-September-October), when daytime highs average 60 to 80 F and lows average 30 to 50 F. Summer temperatures often exceed 100 F, making strenuous exercise difficult. Winters are cold, with highs averaging 30 to 50 F, and lows averaging 0 to 20 F.",
+ "directions": "Canyonlands National Park is cut into three land districts by the Green and Colorado rivers. Island in the Sky, in the north of the park, is about 40 minutes from Moab, UT via UT 313. The Needles district is in the southeast corner of Canyonlands, about 90 minutes from Moab or an hour from Monticello, UT via UT 211. The Maze district, in the west of the park, is the most remote and challenging; its ranger station is down 46 miles of dirt road from UT 24. All roads in The Maze require high-clearance 4WD."
+}

@@ -1,0 +1,153 @@
+{
+ "placeID": "np-lassen-volcanic",
+ "contentVersion": 2,
+ "story": [
+  "Lassen Peak, 10,457 feet high, is the largest plug dome volcano in the world, a mass of stiff lava that squeezed up on the flank of an older, larger volcano now eroded away. The park is one of the few places where all four main types of volcano stand together: plug dome, shield, cinder cone and stratovolcano. Their heat comes from the Gorda plate sliding beneath North America off the California coast.",
+  "In May 1914 Lassen Peak began to erupt, and steam blasts, lava and mudflows continued into 1917. A great eruption in May 1915 sent an ash cloud miles into the sky and a mudflow and blast down the northeast flank, flattening the forest in what is still called the Devastated Area. A local photographer, Benjamin Loomis, documented it; his photographs are in the museum that bears his name.",
+  "The heat is still close to the surface. At Bumpass Hell, Sulphur Works and Devils Kitchen, mud pots bubble, fumaroles roar and hot springs steam. Cinder Cone, in the park's northeast, last erupted in the 1660s. Snow buries the high country for much of the year, and the main road often opens only in early summer.",
+  "The Atsugewi, Yana, Yahi and Maidu peoples lived around the mountain long before emigrants used it as a landmark on the way to the Sacramento Valley. Lassen Peak and Cinder Cone became national monuments in 1907, and the eruptions helped persuade Congress to create Lassen Volcanic National Park in 1916."
+ ],
+ "sightNotes": {
+  "poi-lassen-volcanic-lassen-peak": "The volcano's summit trail climbs about 2,000 feet to views across northern California.",
+  "poi-lassen-volcanic-bumpass-hell": "The park's largest hydrothermal area, a boardwalk among boiling pools and fumaroles.",
+  "poi-lassen-volcanic-sulphur-works": "Roadside mud pots and steam vents in the eroded heart of the old volcano.",
+  "poi-lassen-volcanic-devastated-area": "The path of the 1915 blast and mudflow, with boulders carried down from the peak.",
+  "poi-lassen-volcanic-manzanita-lake": "A lake reflecting Lassen Peak, with a loop trail and the Loomis Museum.",
+  "poi-lassen-volcanic-cinder-cone": "A symmetrical cone above the Painted Dunes and Fantastic Lava Beds, climbed on a steep trail.",
+  "poi-lassen-volcanic-lake-helen": "A deep blue lake beneath Lassen Peak, often ringed with snow into summer.",
+  "poi-lassen-volcanic-kings-creek-meadow": "A high meadow of wildflowers on the park highway."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Southwest Entrance, from CA 36 near Mineral",
+   "Northwest Entrance at Manzanita Lake, from CA 44 and CA 89",
+   "Butte Lake, Juniper Lake and Warner Valley, on separate roads into the park's quieter corners"
+  ],
+  "permits": [
+   "Wilderness camping — a free permit"
+  ],
+  "seasonalClosures": [
+   "The highway through the park closes with snow and often does not fully reopen until June or July"
+  ],
+  "camping": [
+   "Backcountry Camping in Lassen's Wilderness, reservable",
+   "Butte Lake Campground, reservable",
+   "Juniper Lake Campground, reservable, with some first-come sites",
+   "Lost Creek Group Campground, reservable",
+   "Manzanita Lake Campground, reservable",
+   "Southwest Campground - Summer/Fall, first come, first served",
+   "Southwest Campground - Winter/Spring, first come, first served",
+   "Summit Lake North Campground, reservable",
+   "Summit Lake South Campground, reservable",
+   "Warner Valley Campground, reservable, with some first-come sites"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1666",
+   "text": "Cinder Cone erupts, by tree-ring dating."
+  },
+  {
+   "year": "1907",
+   "text": "Lassen Peak and Cinder Cone become national monuments."
+  },
+  {
+   "year": "1914",
+   "text": "Lassen Peak begins a series of eruptions."
+  },
+  {
+   "year": "1915",
+   "text": "A major eruption devastates the peak's northeast flank."
+  },
+  {
+   "year": "1916",
+   "text": "Lassen Volcanic National Park is established."
+  }
+ ],
+ "safety": [
+  "In hydrothermal areas, stay on boardwalks and trails. The ground can be a thin crust over boiling water.",
+  "The Lassen Peak trail is high and exposed; turn back if storms build."
+ ],
+ "regulations": [
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Lassen Volcanic National Park — National Park Service",
+   "url": "https://www.nps.gov/lavo/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Private vehicle",
+   "cost": "$30",
+   "detail": "Admits one private, non-commercial vehicle. Valid for up to 7 consecutive days from day of purchase at Lassen Volcanic National Park. When entrance station is not staffed, digital passes may be purchased online at recreation.gov."
+  },
+  {
+   "title": "Private vehicle",
+   "cost": "$10",
+   "detail": "Discounted entry fee during winter. Admits one private, non-commercial vehicle. Valid for up to 7 consecutive days from day of purchase at Lassen Volcanic National Park. When entrance station is not staffed, digital passes may be purchased online at recreation.gov."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$25",
+   "detail": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. When entrance station is not staffed, digital passes may be purchased online at recreation.gov."
+  },
+  {
+   "title": "Per person",
+   "cost": "$15",
+   "detail": "Per-person entrance fee used to admit one person on foot or bicycle. Also used for individuals traveling together in a vehicle as a non-commercial, organized group. Valid for up to 7 consecutive days from day of purchase at Lassen Volcanic National Park. When entrance station is not staffed, digital passes may be purchased online at recreation.gov."
+  },
+  {
+   "title": "Education/academic groups",
+   "cost": "Free",
+   "detail": "Park entrance fees are waived for eligible academic groups with approved fee waiver application. Applications must be submitted at least two weeks prior to park visit."
+  },
+  {
+   "title": "Motorcycle",
+   "cost": "$10",
+   "detail": "Discounted entry fee for winter. Admits one private, non-commercial motorcycle and its riders. Valid for up to 7 consecutive days from day of purchase at Lassen Volcanic National Park. When entrance station is not staffed, digital passes may be purchased online at recreation.gov."
+  },
+  {
+   "title": "Per person",
+   "cost": "$10",
+   "detail": "Discounted entry fee for winter. Per-person entrance fee used to admit one person on foot or bicycle. Also used for individuals traveling together in a vehicle as a non-commercial, organized group. Valid for up to 7 consecutive days from day of purchase at Lassen Volcanic National Park. When entrance station is not staffed, digital passes may be purchased online at recreation.gov."
+  }
+ ],
+ "hero": {
+  "credit": "NPS Photo / Scott Arnaz",
+  "isPublicDomain": true,
+  "assetName": "np-lassen-volcanic-1.jpg",
+  "caption": "Winter at Manzanita Lake",
+  "altText": "A frozen lake below snow-covered trees and peak"
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / Amanda Sweeney",
+   "isPublicDomain": true,
+   "assetName": "np-lassen-volcanic-2.jpg",
+   "caption": "Hat Creek",
+   "altText": "Golden grasses edge a pond reflecting a snow-dusted peak"
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-lassen-volcanic-3.jpg",
+   "caption": "Bumpass Hell",
+   "altText": "A boardwalk passes through a colorful, steaming hydrothermal basin."
+  },
+  {
+   "credit": "NPS Photo",
+   "isPublicDomain": true,
+   "assetName": "np-lassen-volcanic-4.jpg",
+   "caption": "Brokeoff Panorama",
+   "altText": "Two hikers sit on a mountain top with a view of multiple peaks, dotted with patches of snow"
+  }
+ ],
+ "operatingHours": "The park is always open. Road access is limited during the winter season, approximately November through May, due to snow.",
+ "weather": "Weather at Lassen can vary dramatically throughout the year. Average January temperatures are a high of 40.4 °F (4.7 °C) and a low of 20.8 °F (-6.2 °C). Average July temperatures are a high of 88.4 °F and a low of 49.8 °F. Temperatures reach 90 °F or higher on an average of 36.9 days, and drop to 32 ° or lower on an average of 164 days days annually.",
+ "directions": "From Interstate 5 (Redding), take Hwy 44 - 48 miles east to the junction of Hwy 89. Follow Hwy 89 south 1 mile to the north entrance of the park. From Interstate 5 (Red Bluff) take Hwy 36 E - 51 miles east to the junction of Hwy 89. Follow Hwy 89 north 6 miles to south entrance of the park."
+}

@@ -1,0 +1,100 @@
+{
+ "placeID": "np-new-river-gorge",
+ "summary": "One of the oldest rivers on the continent, running north through a deep Appalachian gorge in West Virginia — known for whitewater, sandstone climbing walls and the steel arch of the New River Gorge Bridge, with the ruins of coal towns in the woods below.",
+ "facts": {
+  "bestSeasons": [
+   "spring",
+   "autumn"
+  ],
+  "suggestedTime": "Two days"
+ },
+ "story": [
+  "The New River is old: geologists think it is among the oldest rivers in North America, flowing north across the grain of the Appalachians as they rose, and cutting a gorge roughly a thousand feet deep through layers of sandstone, shale and coal. The hard Nuttall Sandstone at the rim forms clean cliffs along the Endless Wall and elsewhere, now among the most popular climbing areas in the East.",
+  "Below the rim the river runs fast. The lower New has some of the best whitewater in the country, and the gorge's forests are among the most diverse in the central Appalachians, with migrating warblers in spring and blazing colour in October.",
+  "The gorge was opened to the outside world in 1873, when the Chesapeake and Ohio Railway was built along the river. Coal towns sprang up on its banks — Thurmond, Kaymoor, Nuttallburg — with mines, coke ovens and company stores; most were abandoned as the mines closed in the mid-twentieth century, and the forest has grown back around their ruins.",
+  "The New River Gorge Bridge, a steel arch 876 feet above the river, opened in 1977. Congress protected the gorge as a national river in 1978, and in 2020 made part of it a national park and the rest a national preserve, where hunting continues."
+ ],
+ "sights": [
+  {
+   "name": "New River Gorge Bridge",
+   "note": "A steel arch high over the gorge, seen from the Canyon Rim boardwalk."
+  },
+  {
+   "name": "Endless Wall Trail",
+   "note": "A rim walk past climbing cliffs to Diamond Point, with views up and down the river."
+  },
+  {
+   "name": "Long Point Trail",
+   "note": "A walk to a rock point with a classic view of the bridge."
+  },
+  {
+   "name": "Grandview",
+   "note": "A rim overlook above a great horseshoe bend of the river, bright with rhododendron in early summer."
+  },
+  {
+   "name": "Thurmond",
+   "match": "Thurmond Historic District",
+   "note": "A railroad boomtown, now nearly empty, with its depot restored as a visitor center."
+  },
+  {
+   "name": "Kaymoor",
+   "match": "Kaymoor Miners Trail",
+   "note": "A steep trail down to the ruins of a coal mine and coke ovens."
+  },
+  {
+   "name": "Nuttallburg",
+   "match": "Nuttallburg Historic Site",
+   "note": "The remains of a coal town, with a restored conveyor and tipple."
+  },
+  {
+   "name": "Sandstone Falls",
+   "note": "A wide waterfall across the river, seen from a boardwalk."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Canyon Rim Visitor Center, on US 19 at the bridge near Fayetteville",
+   "Grandview and Sandstone visitor centers, off Interstate 64 in the south",
+   "Thurmond, by a winding road into the gorge"
+  ],
+  "permits": [
+   "Whitewater trips run with licensed outfitters; private boaters need experience on difficult water"
+  ],
+  "seasonalClosures": [
+   "On Bridge Day, the third Saturday of October, the bridge is closed to traffic and open to walkers and BASE jumpers"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1873",
+   "text": "The Chesapeake and Ohio Railway opens the gorge to the outside world."
+  },
+  {
+   "year": "1977",
+   "text": "The New River Gorge Bridge opens."
+  },
+  {
+   "year": "1978",
+   "text": "Congress establishes New River Gorge National River."
+  },
+  {
+   "year": "2020",
+   "text": "Part of the river becomes a national park, and the rest a national preserve."
+  }
+ ],
+ "safety": [
+  "Wear a life jacket on or near the river; currents are powerful and the water hides rocks.",
+  "Cliff edges along the rim trails are unfenced."
+ ],
+ "regulations": [
+  "Hunting is allowed in the national preserve but not in the national park.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "New River Gorge National Park and Preserve — National Park Service",
+   "url": "https://www.nps.gov/neri/"
+  }
+ ],
+ "contentVersion": 2
+}

@@ -1,0 +1,103 @@
+{
+ "placeID": "np-cuyahoga-valley",
+ "contentVersion": 2,
+ "story": [
+  "The Cuyahoga River winds south to north through a valley cut by glacial meltwater, its sides falling away in ravines and waterfalls. Brandywine Falls drops sixty-five feet over layered shale and sandstone; at the Ledges, blocks of the Sharon Conglomerate stand in mossy cliffs above the forest.",
+  "Much of the valley was farmed or built on, and it is recovering in plain sight. The Beaver Marsh on the Towpath Trail was an auto junkyard until beavers returned and flooded it; great blue herons nest in colonies, and bald eagles hunt over the river again.",
+  "The Hopewell people built mounds here around two thousand years ago, and many nations, including the Lenape, later lived in or passed through the valley. The Ohio & Erie Canal opened between Cleveland and Akron in 1827 and ran until the great flood of 1913; its towpath is now a trail. Pollution on the lower Cuyahoga was so bad that the river caught fire in Cleveland in 1969, a moment that helped spur national environmental law.",
+  "Congress set the valley aside as a national recreation area in 1974 and made it a national park in 2000. Within its boundaries are towns, county parks, farms and a scenic railroad, and there is no entrance fee."
+ ],
+ "sightNotes": {
+  "poi-cuyahoga-valley-brandywine-falls": "A sixty-five-foot waterfall seen from a boardwalk, the park's best-known view.",
+  "poi-cuyahoga-valley-the-ledges": "Sandstone cliffs and cool, mossy passages, with a west-facing overlook for sunset.",
+  "poi-cuyahoga-valley-beaver-marsh": "A former junkyard turned wetland on the Towpath Trail, alive with beavers, herons and turtles.",
+  "poi-cuyahoga-valley-everett-covered-bridge": "A reconstructed nineteenth-century covered bridge over Furnace Run.",
+  "poi-cuyahoga-valley-towpath-trail-at-lock-29": "The canal towpath at the village of Peninsula, for walking or cycling along the river.",
+  "poi-cuyahoga-valley-boston-mill": "A stop on the scenic railroad, beside the park's main visitor center."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "No single entrance: roads cross the valley between Cleveland and Akron. Start at Boston Mill Visitor Center in Peninsula",
+   "The Cuyahoga Valley Scenic Railroad runs the length of the park"
+  ],
+  "lodging": [
+   "The Stanford House, a historic farmhouse available to rent, and inns and towns nearby"
+  ],
+  "seasonalClosures": [
+   "Lake-effect snow from Lake Erie can arrive quickly in winter; autumn colour usually peaks in mid-October"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1827",
+   "text": "The Ohio & Erie Canal opens between Cleveland and Akron."
+  },
+  {
+   "year": "1913",
+   "text": "A great flood ends the canal's working life."
+  },
+  {
+   "year": "1969",
+   "text": "A fire on the polluted Cuyahoga River in Cleveland draws national attention."
+  },
+  {
+   "year": "1974",
+   "text": "Cuyahoga Valley National Recreation Area is established."
+  },
+  {
+   "year": "2000",
+   "text": "The recreation area is redesignated a national park."
+  }
+ ],
+ "safety": [
+  "The Towpath Trail is shared by walkers and cyclists; keep right and listen for bells.",
+  "Ledges and gorge edges are slick when wet or icy. Stay on trails."
+ ],
+ "regulations": [
+  "There is no entrance fee; some railroad and private attractions charge their own.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "credits": [
+  "Text written for Unigrids from public-domain National Park Service material. Fees, hours, weather and directions notes are the NPS's own."
+ ],
+ "sources": [
+  {
+   "title": "Cuyahoga Valley National Park — National Park Service",
+   "url": "https://www.nps.gov/cuva/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "NPS Photo / D.J. Reiser",
+  "isPublicDomain": true,
+  "assetName": "np-cuyahoga-valley-1.jpg",
+  "caption": "Kayakers on the Cuyahoga River",
+  "altText": "People in bright orange kayaks paddle around a bend in a river, past green trees and a rocky shore."
+ },
+ "gallery": [
+  {
+   "credit": "NPS Photo / Tim Fenner",
+   "isPublicDomain": true,
+   "assetName": "np-cuyahoga-valley-2.jpg",
+   "caption": "The Ledges Overlook in Fall",
+   "altText": "Two people stand at the edge of a gray rock cliff; in the distance, sunset and trees in fall colors."
+  },
+  {
+   "credit": "NPS Photo / Robert George",
+   "isPublicDomain": true,
+   "assetName": "np-cuyahoga-valley-3.jpg",
+   "caption": "The Cuyahoga Valley Scenic Railroad",
+   "altText": "A yellow-and-red engine with number 6777 leads a passenger train along tracks through green trees."
+  },
+  {
+   "credit": "NPS Photo / D.J. Reiser",
+   "isPublicDomain": true,
+   "assetName": "np-cuyahoga-valley-4.jpg",
+   "caption": "Brandywine Falls Viewed from the Upper Boardwalk",
+   "altText": "Viewed from above, people stand on a platform near frothy white water falling over a rocky ledge."
+  }
+ ],
+ "operatingHours": "Cuyahoga Valley National Park is open everyday, 24 hours a day with the following exceptions: Brandywine Falls, Ledges, Octagon, Kendall Lake, and Kendall Hills close from dusk until morning opening.",
+ "weather": "Spring's rain and warming temperatures bring new leaves on trees, blooming wildflowers, and visitors anxious to get out on the trail. Summer temperatures range from 49 to 95 degrees F and can be humid. Dressing in layers is advisable. Fall temperatures can range from low 70s during the day to freezing during the night. Fall foliage often peaks in mid-October. Winter weather conditions can rapidly change due to the lake effect snow from Lake Erie. Temperatures vary from mid-30s to below zero.",
+ "directions": "The park is easily accessible by car from all directions. A good place to start your visit is at Boston Mill Visitor Center: 6947 Riverview Road, Peninsula, 44264. Cleveland Hopkins International Airport and Akron-Canton Regional Airport offer many daily flights to the area. Car rentals are available at both airports. Bus stations are located in downtown Cleveland and Akron. Some local bus routes including RTA's 19A, 54, 77, and 90 routes stop near the park. There is an Amtrak station in downtown Cleveland."
+}

@@ -1,0 +1,95 @@
+{
+ "_about": "Theme tags for the themes-and-landscapes stats (SPECIFICATION.md §11).",
+ "themes": [
+  {
+   "id": "theme-canyons",
+   "family": "geology",
+   "name": "Canyons"
+  },
+  {
+   "id": "theme-volcanoes",
+   "family": "geology",
+   "name": "Volcanoes"
+  },
+  {
+   "id": "theme-glaciers",
+   "family": "geology",
+   "name": "Glaciers"
+  },
+  {
+   "id": "theme-caves",
+   "family": "geology",
+   "name": "Caves"
+  },
+  {
+   "id": "theme-dunes",
+   "family": "geology",
+   "name": "Dunes"
+  },
+  {
+   "id": "theme-hot-springs",
+   "family": "geology",
+   "name": "Geothermal"
+  },
+  {
+   "id": "theme-fossils",
+   "family": "geology",
+   "name": "Fossils"
+  },
+  {
+   "id": "theme-mountains",
+   "family": "geology",
+   "name": "Mountains"
+  },
+  {
+   "id": "theme-desert",
+   "family": "ecosystem",
+   "name": "Desert"
+  },
+  {
+   "id": "theme-alpine",
+   "family": "ecosystem",
+   "name": "Alpine"
+  },
+  {
+   "id": "theme-temperate-rainforest",
+   "family": "ecosystem",
+   "name": "Temperate rainforest"
+  },
+  {
+   "id": "theme-deciduous-forest",
+   "family": "ecosystem",
+   "name": "Deciduous forest"
+  },
+  {
+   "id": "theme-coral-reef",
+   "family": "ecosystem",
+   "name": "Coral reef"
+  },
+  {
+   "id": "theme-wetland",
+   "family": "ecosystem",
+   "name": "Wetland"
+  },
+  {
+   "id": "theme-coastal",
+   "family": "ecosystem",
+   "name": "Coastal"
+  },
+  {
+   "id": "theme-tundra",
+   "family": "ecosystem",
+   "name": "Tundra"
+  },
+  {
+   "id": "theme-indigenous-heritage",
+   "family": "history",
+   "name": "Indigenous heritage"
+  },
+  {
+   "id": "theme-conservation-movement",
+   "family": "history",
+   "name": "Conservation movement"
+  }
+ ]
+}

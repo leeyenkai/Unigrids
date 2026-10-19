@@ -1,0 +1,172 @@
+{
+ "placeID": "np-acadia",
+ "contentVersion": 2,
+ "summary": "Granite mountains rising straight from the Atlantic on Maine's Mount Desert Island, with outposts on the Schoodic Peninsula and Isle au Haut. Sunrise from Cadillac Mountain, tea at Jordan Pond and 45 miles of car-free carriage roads — the first national park east of the Mississippi.",
+ "facts": {
+  "lowestElevationMetres": 0,
+  "highestElevationMetres": 466,
+  "bestSeasons": [
+   "summer",
+   "autumn"
+  ],
+  "suggestedTime": "Two to three days"
+ },
+ "story": [
+  "Acadia is granite that ice rearranged. The rock cooled from magma more than four hundred million years ago; the Laurentide ice sheet then ground across Mount Desert Island, rounding its summits, gouging out the trough that holds Somes Sound and leaving boulders stranded where the ice let go of them — Bubble Rock still sits on its ledge above Jordan Pond, a long way from the outcrop it came from.",
+  "Because the island was scraped rather than buried, its soils are thin and its edges abrupt, and that makes for a lot of habitats in a small space. Spruce and fir hold the cold, wet headlands; northern hardwoods take the sheltered slopes; the intertidal rock between the tide marks carries a band of life that changes every few feet of height. A fire in 1947 burned across more than ten thousand acres on the island's eastern side, and the birch and aspen that came back after it still mark the burn's edge in autumn colour.",
+  "The Wabanaki have summered on this coast for thousands of years. Painters of the Hudson River School arrived in the 1840s and their canvases brought the first wave of summer visitors; the wealthy followed, and then — unusually — gave much of the land away. Charles Eliot and George B. Dorr assembled it through a public trust, and it became a national monument in 1916 and the first national park east of the Mississippi in 1919.",
+  "John D. Rockefeller Jr spent nearly three decades laying out forty-five miles of broken-stone carriage road through the park, with seventeen hand-cut bridges and no cars on any of it. They are still closed to cars, and they are the best way to see the interior."
+ ],
+ "sights": [
+  {
+   "name": "Cadillac Mountain",
+   "note": "The highest headland on the eastern seaboard, and among the first places in the United States to catch the sunrise.",
+   "location": [
+    44.3526,
+    -68.2251
+   ]
+  },
+  {
+   "name": "Jordan Pond",
+   "note": "A glacial tarn below the twin summits of the Bubbles, circled by a level shore path.",
+   "location": [
+    44.321,
+    -68.253
+   ]
+  },
+  {
+   "name": "Thunder Hole",
+   "note": "A narrow inlet where an incoming swell slams air out of a sea cave with a boom.",
+   "location": [
+    44.319,
+    -68.189
+   ]
+  },
+  {
+   "name": "Sand Beach",
+   "note": "A pocket of shell sand between granite headlands, in water that rarely passes 55°F.",
+   "location": [
+    44.329,
+    -68.183
+   ]
+  },
+  {
+   "name": "Otter Cliff",
+   "note": "A 110-foot granite wall dropping straight into the Atlantic.",
+   "location": [
+    44.31,
+    -68.19
+   ]
+  },
+  {
+   "name": "Bass Harbor Head Light",
+   "note": "An 1858 light station on the island's quiet south-western shore.",
+   "location": [
+    44.222,
+    -68.337
+   ]
+  },
+  {
+   "name": "Schoodic Point",
+   "note": "The park's mainland section, where dark basalt dykes cut through pink granite ledges.",
+   "location": [
+    44.335,
+    -68.06
+   ]
+  },
+  {
+   "name": "Park Loop Road",
+   "note": "Twenty-seven miles threading the eastern side of Mount Desert Island, designed to reveal the coast a view at a time.",
+   "location": [
+    44.338,
+    -68.208
+   ]
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Hulls Cove Visitor Center, north of Bar Harbor — the usual first stop",
+   "Park Loop Road fee station, on the island's eastern side",
+   "Schoodic Peninsula, on the mainland, reached from Winter Harbor",
+   "Isle au Haut, by mail boat from Stonington"
+  ],
+  "reservations": "The park has no entry reservation, but driving the Cadillac Summit Road requires a separate vehicle reservation, released in advance and again on a rolling short-notice window. The free Island Explorer shuttle runs in season and needs none.",
+  "permits": [
+   "Backcountry camping is not permitted anywhere in the park",
+   "Lobster and crab fishing within park waters follow state licensing"
+  ],
+  "camping": [
+   "Blackwoods Campground, near Bar Harbor, reservable",
+   "Seawall Campground, on the quiet side of the island",
+   "Schoodic Woods Campground, on the mainland",
+   "Duck Harbor Campground, five lean-tos on Isle au Haut, by permit"
+  ],
+  "lodging": [
+   "Bar Harbor, Northeast Harbor and Southwest Harbor",
+   "No lodge inside the park"
+  ],
+  "seasonalClosures": [
+   "Most of the Park Loop Road closes from December to mid-April",
+   "Cadillac Summit Road closes for the winter",
+   "The Precipice, Jordan Cliffs and Valley Cove trails close in spring and summer while peregrine falcons nest"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "c. 420 million years ago",
+   "text": "Magma cools underground to form the granite the island is made of."
+  },
+  {
+   "year": "c. 18,000 years ago",
+   "text": "The retreating ice sheet leaves rounded summits and the trough of Somes Sound."
+  },
+  {
+   "year": "1604",
+   "text": "Samuel de Champlain charts the island and names it Isle des Monts Déserts."
+  },
+  {
+   "year": "1840s",
+   "text": "Hudson River School painters draw the first summer visitors to the coast."
+  },
+  {
+   "year": "1901",
+   "text": "Charles Eliot and George B. Dorr form a trust to hold island land for the public."
+  },
+  {
+   "year": "1913",
+   "text": "John D. Rockefeller Jr begins the carriage-road system, eventually forty-five miles of it."
+  },
+  {
+   "year": "1916",
+   "text": "Sieur de Monts National Monument is proclaimed."
+  },
+  {
+   "year": "1919",
+   "text": "It becomes Lafayette National Park, the first national park east of the Mississippi."
+  },
+  {
+   "year": "1929",
+   "text": "The park is renamed Acadia."
+  },
+  {
+   "year": "1947",
+   "text": "A fire burns more than ten thousand acres on the island's eastern side."
+  }
+ ],
+ "safety": [
+  "The tide cuts people off. The Bar Island land bridge and the ledges at Ship Harbor and Wonderland are walkable for only a few hours either side of low water — carry a tide table and watch the clock.",
+  "Granite ledges are slick when wet or frosted, and the surf at Thunder Hole and Schoodic Point has swept people off rock that looked a safe distance from the water.",
+  "The Precipice, Beehive and Jordan Cliffs trails climb iron rungs and ladders on exposed cliff. They are not for anyone uneasy with heights, and they are dangerous in ice."
+ ],
+ "regulations": [
+  "Drones may not be launched, landed or flown in the park.",
+  "Dogs are welcome on most trails and all carriage roads on a six-foot leash, but not on the ladder trails, in the Duck Harbor campground or on Sand Beach in season.",
+  "Bicycles belong on the carriage roads and paved roads, never on hiking trails."
+ ],
+ "sources": [
+  {
+   "title": "Acadia National Park — National Park Service",
+   "url": "https://www.nps.gov/acad/"
+  }
+ ]
+}

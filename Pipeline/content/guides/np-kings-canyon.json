@@ -1,0 +1,95 @@
+{
+ "placeID": "np-kings-canyon",
+ "summary": "A glacier-carved canyon more than a mile deep on the Kings River, a vast high-Sierra wilderness rising to the 14,248-foot North Palisade, and in Grant Grove the General Grant Tree, the nation's Christmas tree. Run together with Sequoia National Park to the south.",
+ "facts": {
+  "highestElevationMetres": 4343,
+  "bestSeasons": [
+   "summer",
+   "autumn"
+  ],
+  "suggestedTime": "Two days"
+ },
+ "story": [
+  "The South Fork of the Kings River runs through a granite canyon more than a mile deep, carved first by the river and then widened by glaciers into the U-shaped valley of Cedar Grove. John Muir thought it a rival to Yosemite. The road into it ends at Roads End, where the wilderness begins.",
+  "Beyond, most of the park is designated wilderness: high basins of lakes and meadows, passes over twelve thousand feet, and on its eastern edge the Palisades, where North Palisade rises to 14,248 feet. The John Muir Trail and the Rae Lakes Loop cross it.",
+  "In Grant Grove stands the General Grant Tree, by volume the second-largest tree in the world, named the nation's Christmas tree in 1926. Nearby, the Big Stump area shows what happened to unprotected groves in the 1880s, when giant sequoias were cut for timber that was mostly too brittle to use. Severe wildfires in recent years have killed many large sequoias across the Sierra, and the park is working to protect the groves that remain.",
+  "General Grant National Park was created in 1890 to save the grove. In 1940 it was absorbed into the new, much larger Kings Canyon National Park. Kings Canyon and Sequoia have been managed together since the 1940s."
+ ],
+ "sights": [
+  {
+   "name": "General Grant Tree",
+   "note": "The second-largest tree in the world by volume, on a short paved loop in Grant Grove."
+  },
+  {
+   "name": "Panoramic Point",
+   "match": "Panoramic Point Overlook",
+   "note": "A ridge-top view east across the Kings Canyon high country."
+  },
+  {
+   "name": "Big Stump",
+   "match": "Big Stump of the Mark Twain Tree",
+   "note": "A grove of nineteenth-century sequoia stumps, with the stump of the Mark Twain Tree."
+  },
+  {
+   "name": "Zumwalt Meadow",
+   "note": "A flat loop through meadow and forest beneath the canyon's granite walls."
+  },
+  {
+   "name": "Roaring River Falls",
+   "note": "A powerful waterfall in a granite chute, a short walk from the road."
+  },
+  {
+   "name": "Mist Falls",
+   "note": "A broad waterfall on the South Fork, a day hike from Roads End."
+  },
+  {
+   "name": "Redwood Mountain Grove",
+   "match": "Redwood Mountain Overlook",
+   "note": "One of the largest sequoia groves, seen from an overlook or on foot."
+  }
+ ],
+ "planYourVisit": {
+  "entrances": [
+   "Big Stump Entrance, on CA 180 from Fresno; vehicles over 22 feet long should use this way in",
+   "From Sequoia National Park, by the Generals Highway"
+  ],
+  "permits": [
+   "Overnight wilderness trips — a wilderness permit, with quotas on popular trailheads"
+  ],
+  "lodging": [
+   "John Muir Lodge and cabins at Grant Grove, and Cedar Grove Lodge in the canyon"
+  ],
+  "seasonalClosures": [
+   "The road into Kings Canyon beyond Hume Lake closes in winter, usually from mid-November to late April; chains may be required on park roads"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1890",
+   "text": "General Grant National Park is established to protect Grant Grove."
+  },
+  {
+   "year": "1926",
+   "text": "The General Grant Tree is named the nation's Christmas tree."
+  },
+  {
+   "year": "1940",
+   "text": "Kings Canyon National Park is created, absorbing General Grant National Park."
+  }
+ ],
+ "safety": [
+  "The Kings River is swift and cold even when it looks calm; drownings happen every year.",
+  "Black bears are common. Store all food and scented items in the bear boxes provided."
+ ],
+ "regulations": [
+  "Food must be stored in bear-proof containers or lockers, day and night.",
+  "Drones may not be launched, landed or flown in the park."
+ ],
+ "sources": [
+  {
+   "title": "Sequoia & Kings Canyon National Parks — National Park Service",
+   "url": "https://www.nps.gov/seki/"
+  }
+ ],
+ "contentVersion": 2
+}

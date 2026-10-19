@@ -30,7 +30,7 @@ struct LogStoreTests {
 
     @Test("the schema initialises in memory")
     func schemaLoads() {
-        #expect(UnigridsSchema.models.count == 7)
+        #expect(UnigridsSchema.models.count == 8)
     }
 
     @Test("a check-in creates a visit")
@@ -177,5 +177,61 @@ struct LogStoreTests {
         let visit = try store.checkIn(to: "np-zion", on: date(2026, 5, 1))
         try store.update { visit.sourceRaw = "teleportation" }
         #expect(visit.source == .manual)
+    }
+
+    @Test("a trip's stops keep their order and a place is not added twice")
+    func tripStops() throws {
+        let trip = try store.createTrip(name: "Utah in April")
+        try store.addStop("np-zion", to: trip)
+        try store.addStop("np-bryce-canyon", to: trip)
+        try store.addStop("np-zion", to: trip)
+        #expect(trip.orderedStops.map(\.place) == ["np-zion", "np-bryce-canyon"])
+
+        try store.reorder(trip.orderedStops.reversed())
+        #expect(trip.orderedStops.map(\.place) == ["np-bryce-canyon", "np-zion"])
+    }
+
+    @Test("a planned stop is planned, never visited")
+    func plannedIsNotVisited() throws {
+        let trip = try store.createTrip(name: "Someday")
+        try store.addStop("np-denali", to: trip)
+        #expect(try store.plannedPlaceIDs() == ["np-denali"])
+        #expect(try !store.isVisited("np-denali"))
+
+        trip.status = .done
+        #expect(try store.plannedPlaceIDs().isEmpty)
+    }
+
+    @Test("the export carries every visit, stamp and trip, by id and by name")
+    func export() throws {
+        let trip = try store.createTrip(name: "Coast, \"north\"")
+        try store.checkIn(to: "np-acadia", on: date(2026, 7, 4), notes: "Fog, then sun", trip: trip)
+        try store.stamp("np-acadia", on: date(2026, 7, 4))
+        try store.addStop("np-acadia", to: trip)
+
+        let document = try LogExport.document(context: ModelContext(container)) { id in
+            id == "np-acadia" ? "Acadia" : nil
+        }
+        #expect(document.visits.count == 1)
+        #expect(document.visits.first?.placeName == "Acadia")
+        #expect(document.stamps.first?.america250 == true)
+        #expect(document.trips.first?.stops == ["np-acadia"])
+
+        let json = try LogExport.json(document)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        #expect(try decoder.decode(LogExport.Document.self, from: json).visits.count == 1)
+
+        let csv = LogExport.visitsCSV(document)
+        #expect(csv.hasPrefix("date,place,place_id,source,rating,notes\r\n"))
+        // A comma in the notes is quoted, not taken as a column.
+        #expect(csv.contains("\"Fog, then sun\""))
+    }
+
+    @Test("CSV quoting follows RFC 4180")
+    func csvQuoting() {
+        #expect(LogExport.csvField("plain") == "plain")
+        #expect(LogExport.csvField("a,b") == "\"a,b\"")
+        #expect(LogExport.csvField("say \"hi\"") == "\"say \"\"hi\"\"\"")
     }
 }
