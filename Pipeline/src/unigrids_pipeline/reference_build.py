@@ -27,7 +27,6 @@ from __future__ import annotations
 import html
 import json
 import re
-import shutil
 import subprocess
 from datetime import date
 from pathlib import Path
@@ -106,10 +105,11 @@ def build(*, online: bool = False) -> None:
     images_dir = OUT / "images"
     images_dir.mkdir(parents=True, exist_ok=True)
     written_images: set[str] = set()
+    # Guides are rewritten in place and only stale ones removed, never the folder wiped
+    # and refilled: in an iCloud-synced checkout, deleting and recreating files that are
+    # still uploading leaves "np-zion 2.json" conflict copies, which would ship.
     guides_dir = OUT / "guides"
-    if guides_dir.exists():
-        shutil.rmtree(guides_dir)
-    guides_dir.mkdir(parents=True)
+    guides_dir.mkdir(parents=True, exist_ok=True)
 
     places: list[dict[str, Any]] = []
     pois: list[dict[str, Any]] = []
@@ -233,6 +233,9 @@ def build(*, online: bool = False) -> None:
         _write("climate", normals, compact=True)
     for place_id, guide in guides.items():
         _write(f"guides/{place_id}", guide)
+    for stale in guides_dir.glob("*.json"):
+        if stale.stem not in guides:
+            stale.unlink()
     registry.save()
     if registry.added:
         print(f"    identifiers: {registry.added} new, recorded in {PLACE_REGISTRY.name}")
@@ -1130,4 +1133,7 @@ def _write(name: str, payload: Any, *, compact: bool = False) -> None:
         text = json.dumps(payload, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
     else:
         text = json.dumps(payload, ensure_ascii=False, indent=1)
+    # Unchanged bytes are not rewritten, for the same reason as the guides above.
+    if path.exists() and path.read_text() == text + "\n":
+        return
     path.write_text(text + "\n")

@@ -4,6 +4,7 @@
 # A green package is not proof the app links: run this before claiming an app-level
 # change works (AGENTS.md §2).
 source "$(dirname "$0")/common.sh"
+check_conflict_copies
 
 build() {
 	local destination="$1"

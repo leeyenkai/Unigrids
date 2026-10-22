@@ -25,3 +25,18 @@ swift_in_package() {
 say() {
 	printf '\n\033[1m==> %s\033[0m\n' "$1"
 }
+
+# This checkout lives in a folder iCloud syncs, and iCloud answers a file rewritten while
+# it is uploading with a "conflict copy" beside it — `Deletion 2.swift`, `np-zion 2.json`.
+# A Swift copy fails the build with duplicate symbols; a JSON copy ships inside the app
+# without a word. Refuse to go on while any is present.
+check_conflict_copies() {
+	local found
+	found=$(find "$REPO_ROOT/Packages" "$REPO_ROOT/App" \
+		\( -name "* [0-9].*" -o -name "* [0-9]" \) -not -path "*/.build/*" 2>/dev/null)
+	if [[ -n "$found" ]]; then
+		printf '\n\033[1;31m==> iCloud conflict copies in the tree:\033[0m\n%s\n' "$found" >&2
+		echo "Delete them (they are stale copies), then run this again." >&2
+		exit 1
+	fi
+}
