@@ -13,9 +13,13 @@ struct TripDetailScreen: View {
     @Environment(\.modelContext) private var context
     @Environment(\.unigrid) private var style
     @Environment(\.dismiss) private var dismiss
+    @Environment(AlertsCenter.self) private var alerts: AlertsCenter?
+    @Environment(UndoCenter.self) private var undo: UndoCenter?
 
     let trip: Trip
 
+    @State private var driveTimes = DriveTimes()
+    @State private var forecasts = Forecasts()
     @State private var addingStop = false
     @State private var editingTrip = false
     @State private var confirmDelete = false
@@ -31,10 +35,10 @@ struct TripDetailScreen: View {
                 VStack(alignment: .leading, spacing: 0) {
                     BandHeader(trip.name, kicker: kicker)
                     if stops.contains(where: { $0.place != nil }) {
-                        TripMap(places: stops.compactMap(\.place))
-                            .frame(height: 260)
+                        TripMap(places: knownPlaces, roads: roads)
+                            .frame(height: 280)
                     }
-                    TripFigures(trip: trip, places: stops.compactMap(\.place))
+                    TripFigures(trip: trip, places: knownPlaces, legs: routedLegs)
                         .padding(UnigridStyle.pageMargin)
                 }
                 .listRowInsets(EdgeInsets())
@@ -53,8 +57,32 @@ struct TripDetailScreen: View {
                     .listRowBackground(Color.clear)
                 }
                 ForEach(Array(stops.enumerated()), id: \.element.stop.id) { index, entry in
-                    StopRow(number: index + 1, stop: entry.stop, place: entry.place, trip: trip)
-                        .listRowBackground(Color.clear)
+                    VStack(alignment: .leading, spacing: 8) {
+                        let previous = index > 0 ? stops[index - 1].place : nil
+                        if let previous, let place = entry.place {
+                            LegLine(
+                                leg: driveTimes.leg(from: previous.id, to: place.id),
+                                failed: driveTimes.hasFailed(from: previous.id, to: place.id),
+                                straightLine: previous.centre.distance(to: place.centre)
+                            )
+                        }
+                        StopRow(number: index + 1, stop: entry.stop, place: entry.place, trip: trip)
+                        if let place = entry.place {
+                            StopExtras(
+                                weather: entry.stop.plannedDate.flatMap {
+                                    forecasts.forecast(for: place, on: $0)
+                                },
+                                flags: StopFlag.flags(
+                                    for: place,
+                                    on: entry.stop.plannedDate,
+                                    alerts: alerts,
+                                    guide: store.guide(for: place.id)
+                                )
+                            )
+                            .padding(.leading, 34)
+                        }
+                    }
+                    .listRowBackground(Color.clear)
                 }
                 .onMove(perform: move)
                 .onDelete(perform: deleteStops)
@@ -70,6 +98,10 @@ struct TripDetailScreen: View {
             } header: {
                 SectionHead("Itinerary", detail: "\(stops.count)")
             }
+
+            TripDaysSection(days: days)
+
+            TripRemindersSection(trip: trip)
 
             if let visits = trip.visits, !visits.isEmpty {
                 Section {
@@ -123,7 +155,22 @@ struct TripDetailScreen: View {
                     }
                 }
             }
+            if let file = gpxFile {
+                ToolbarItem {
+                    ShareLink(item: file) {
+                        Label(
+                            "Export GPX",
+                            systemImage: "point.topleft.down.to.point.bottomright.curvepath"
+                        )
+                    }
+                }
+            }
         }
+        .task(id: knownPlaces.map(\.id)) {
+            await driveTimes.route(knownPlaces, store: store)
+            await forecasts.load(forecastable)
+        }
+        .task { await alerts?.refreshIfStale() }
         .sheet(isPresented: $addingStop) { StopPicker(trip: trip) }
         .sheet(isPresented: $editingTrip) { TripEditor(trip: trip) }
         .confirmationDialog(
@@ -135,6 +182,44 @@ struct TripDetailScreen: View {
             Button("OK") { error = nil }
         } message: {
             Text(error ?? "")
+        }
+    }
+
+    private var knownPlaces: [Place] {
+        stops.compactMap(\.place)
+    }
+
+    /// Legs MapKit has routed, between consecutive known stops.
+    private var routedLegs: [DriveLeg] {
+        zip(knownPlaces, knownPlaces.dropFirst()).compactMap { from, to in
+            driveTimes.leg(from: from.id, to: to.id).map {
+                DriveLeg(from: from.id, to: to.id, seconds: $0.seconds, metres: $0.metres)
+            }
+        }
+    }
+
+    private var roads: [[Coordinate]] {
+        zip(knownPlaces, knownPlaces.dropFirst()).compactMap { from, to in
+            driveTimes.leg(from: from.id, to: to.id)?.path
+        }
+    }
+
+    private var days: [TripDay] {
+        TripSchedule.days(
+            stops: stops.compactMap { entry in
+                entry.place.map { (id: $0.id, date: entry.stop.plannedDate) }
+            },
+            legs: routedLegs
+        )
+    }
+
+    /// Stops planned within the sixteen days a forecast reaches.
+    private var forecastable: [Place] {
+        let horizon = Date().addingTimeInterval(16 * 86400)
+        return stops.compactMap { entry in
+            guard let day = entry.stop.plannedDate, day <= horizon,
+                  day >= Calendar.current.startOfDay(for: Date()) else { return nil }
+            return entry.place
         }
     }
 
@@ -170,6 +255,35 @@ struct TripDetailScreen: View {
         }
     }
 
+    /// The trip's places as GPX waypoints, in itinerary order, for any mapping app.
+    private var gpxFile: URL? {
+        let waypoints = stops.compactMap { entry -> TripGPX.Waypoint? in
+            guard let place = entry.place else { return nil }
+            return TripGPX.Waypoint(
+                name: "\(place.name) \(place.designation)",
+                coordinate: place.centre,
+                date: entry.stop.plannedDate,
+                note: entry.stop.notes
+            )
+        }
+        guard !waypoints.isEmpty else { return nil }
+        let url = FileManager.default.temporaryDirectory
+            .appendingPathComponent("\(fileStem).gpx")
+        do {
+            try TripGPX.document(name: trip.name, waypoints: waypoints)
+                .write(to: url, atomically: true, encoding: .utf8)
+            return url
+        } catch {
+            return nil
+        }
+    }
+
+    private var fileStem: String {
+        let stem = trip.name.components(separatedBy: CharacterSet.alphanumerics.inverted)
+            .filter { !$0.isEmpty }.joined(separator: "-")
+        return stem.isEmpty ? "trip" : stem
+    }
+
     private func move(from source: IndexSet, to destination: Int) {
         var ordered = trip.orderedStops
         ordered.move(fromOffsets: source, toOffset: destination)
@@ -194,59 +308,11 @@ struct TripDetailScreen: View {
 
     private func deleteTrip() {
         do {
-            try LogStore(context: context).delete(trip)
+            let record = try LogStore(context: context).delete(trip: trip)
+            undo?.offer(record, message: record.summary { store.place($0)?.name })
             dismiss()
         } catch {
             self.error = error.localizedDescription
-        }
-    }
-}
-
-/// The trip's stops on a map, numbered, joined in order by a straight rule.
-struct TripMap: View {
-    @Environment(\.unigrid) private var style
-    let places: [Place]
-
-    @State private var position: MapCameraPosition = .automatic
-
-    var body: some View {
-        Map(position: $position, interactionModes: [.pan, .zoom]) {
-            if places.count > 1 {
-                MapPolyline(coordinates: places.map(\.centre.clCoordinate))
-                    .stroke(style.ink, style: StrokeStyle(lineWidth: 2, dash: [6, 4]))
-            }
-            ForEach(Array(places.enumerated()), id: \.offset) { index, place in
-                Annotation(place.name, coordinate: place.centre.clCoordinate) {
-                    SightNumber(number: index + 1)
-                }
-            }
-        }
-        .mapStyle(.standard(
-            elevation: .realistic,
-            emphasis: .muted,
-            pointsOfInterest: .excludingAll
-        ))
-        .onAppear { frameStops(animated: false) }
-        .onChange(of: places.map(\.id)) { frameStops(animated: true) }
-    }
-
-    /// Fit every stop, refitting as stops are added, removed or reordered. A single stop
-    /// gets a regional view rather than a street-level one.
-    private func frameStops(animated: Bool) {
-        guard let box = BoundingBox.enclosing(places.map(\.centre))?.expanded(by: 0.25) else {
-            return
-        }
-        let region = MKCoordinateRegion(
-            center: box.centre.clCoordinate,
-            span: MKCoordinateSpan(
-                latitudeDelta: max(box.north - box.south, 1.5),
-                longitudeDelta: max(box.east - box.west, 1.5)
-            )
-        )
-        if animated {
-            withAnimation { position = .region(region) }
-        } else {
-            position = .region(region)
         }
     }
 }
@@ -255,10 +321,12 @@ struct TripMap: View {
 struct TripFigures: View {
     let trip: Trip
     let places: [Place]
+    var legs: [DriveLeg] = []
 
     var body: some View {
         let distance = TripRoute.totalDistance(places.map(\.centre))
         let states = Set(places.flatMap { $0.states.map(\.code) })
+        let allRouted = places.count > 1 && legs.count == places.count - 1
         LazyVGrid(
             columns: [GridItem(.adaptive(minimum: 110), spacing: 14, alignment: .top)],
             alignment: .leading,
@@ -269,7 +337,18 @@ struct TripFigures: View {
             if let days {
                 FigureBlock(value: "\(days)", label: days == 1 ? "Day" : "Days", compact: true)
             }
-            if distance > 0 {
+            if allRouted {
+                FigureBlock(
+                    value: UnigridsFormat.duration(legs.reduce(0) { $0 + $1.seconds }),
+                    label: "Driving",
+                    compact: true
+                )
+                FigureBlock(
+                    value: UnigridsFormat.distance(metres: legs.reduce(0) { $0 + $1.metres }),
+                    label: "By road",
+                    compact: true
+                )
+            } else if distance > 0 {
                 FigureBlock(
                     value: UnigridsFormat.distance(metres: distance),
                     label: "Straight line",

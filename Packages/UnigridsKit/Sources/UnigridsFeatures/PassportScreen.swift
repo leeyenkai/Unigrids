@@ -27,8 +27,10 @@ public struct PassportScreen: View {
         stamps.filter { $0.hasAmerica250Seal() }
     }
 
+    @State private var path = NavigationPath()
+
     public var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             List {
                 Section {
                     BandHeader(
@@ -82,6 +84,15 @@ public struct PassportScreen: View {
             .paperPage()
             .navigationTitle("Passport")
             .toolbarTitleDisplayMode(.inline)
+            .navigationDestination(for: PassportRegion.self) { region in
+                PassportRegionPage(region: region)
+            }
+            .onAppear {
+                let region = DebugLaunch.passportRegion.flatMap(PassportRegion.init(rawValue:))
+                if path.isEmpty, let region {
+                    path.append(region)
+                }
+            }
         }
     }
 
@@ -164,7 +175,9 @@ struct PassportRegionPage: View {
     let region: PassportRegion
 
     @Query private var stamps: [Stamp]
-    @State private var stamping: Place?
+    @State private var stamping: PassportSlot?
+    @State private var viewing: PassportSlot?
+    @State private var pageImage: URL?
 
     private var places: [Place] {
         store.placesByPassportRegion()[region] ?? []
@@ -194,9 +207,65 @@ struct PassportRegionPage: View {
         .background(style.page)
         .navigationTitle(region.name)
         .toolbarTitleDisplayMode(.inline)
-        .sheet(item: $stamping) { place in
-            StampSheet(place: place)
+        .toolbar {
+            if let pageImage {
+                ToolbarItem {
+                    ShareLink(item: pageImage) {
+                        Label("Share this page", systemImage: "square.and.arrow.up")
+                    }
+                }
+            }
         }
+        .task(id: stamps.count) { pageImage = renderPage() }
+        .sheet(item: $stamping) { slot in
+            StampSheet(place: slot.place, location: slot.location?.id)
+        }
+        .sheet(item: $viewing) { slot in
+            ImpressionsSheet(slot: slot, region: region) {
+                viewing = nil
+                stamping = slot
+            }
+        }
+    }
+
+    /// The page as an image to share (§9: "any page or spread exports as an image"): the
+    /// region's band and its most recent impressions.
+    private func renderPage() -> URL? {
+        let recent = stamps
+            .filter { store.place($0.place)?.resolvedPassportRegion == region }
+            .sorted { $0.date > $1.date }
+            .prefix(16)
+        guard !recent.isEmpty else { return nil }
+        let faces = recent.compactMap { stamp -> StampFace? in
+            guard let place = store.place(stamp.place) else { return nil }
+            return StampFace(
+                siteName: place.name,
+                date: stamp.date,
+                stateCode: place.states.first?.code ?? "US",
+                region: region,
+                seed: stamp.seed,
+                isVerifiedOnSite: stamp.isVerifiedOnSite
+            )
+        }
+        let stampedPlaces = Set(stamps.map(\.place))
+        let npsSites = places.filter { $0.agency == .nps }
+        let card = PassportPageCard(
+            region: region,
+            faces: faces,
+            stamped: npsSites.count { stampedPlaces.contains($0.id) },
+            total: npsSites.count
+        )
+        .environment(\.unigrid, style)
+        let renderer = ImageRenderer(content: card)
+        renderer.scale = 2
+        guard let image = renderer.cgImage else { return nil }
+        let url = FileManager.default.temporaryDirectory
+            .appendingPathComponent("Passport - \(region.name).png")
+        guard let destination = CGImageDestinationCreateWithURL(
+            url as CFURL, "public.png" as CFString, 1, nil
+        ) else { return nil }
+        CGImageDestinationAddImage(destination, image, nil)
+        return CGImageDestinationFinalize(destination) ? url : nil
     }
 
     private func first(_ place: Place) -> Date {
@@ -235,8 +304,8 @@ struct PassportRegionPage: View {
                     columns: [GridItem(.adaptive(minimum: 150), spacing: 20)],
                     spacing: 24
                 ) {
-                    ForEach(places) { place in
-                        slot(for: place)
+                    ForEach(places.flatMap(slots)) { slot in
+                        slotView(slot)
                     }
                 }
                 .padding(.horizontal, 16)
@@ -244,26 +313,55 @@ struct PassportRegionPage: View {
         }
     }
 
+    /// A site with several official stamp locations gets one slot per location (§9);
+    /// every other site gets one.
+    private func slots(for place: Place) -> [PassportSlot] {
+        let locations = place.agency == .nps ? store.stampLocations(in: place.id) : []
+        guard locations.count >= 2 else { return [PassportSlot(place: place, location: nil)] }
+        return locations.map { PassportSlot(place: place, location: $0) }
+    }
+
+    /// A slot's impressions, latest first. A stamp made before its site had slots per
+    /// location — or with no location chosen — sits in the site's first slot.
+    private func impressions(in slot: PassportSlot) -> [Stamp] {
+        let placeStamps = stampsByPlace[slot.place.id] ?? []
+        guard let location = slot.location else { return placeStamps.sorted { $0.date > $1.date } }
+        let first = slots(for: slot.place).first?.location?.id
+        return placeStamps
+            .filter {
+                $0.stampLocation == location
+                    .id || ($0.stampLocation == nil && location.id == first)
+            }
+            .sorted { $0.date > $1.date }
+    }
+
     @ViewBuilder
-    private func slot(for place: Place) -> some View {
-        let placeStamps = (stampsByPlace[place.id] ?? []).sorted { $0.date > $1.date }
+    private func slotView(_ slot: PassportSlot) -> some View {
+        let slotStamps = impressions(in: slot)
+        let place = slot.place
         VStack(spacing: 8) {
-            if let latest = placeStamps.first {
-                ZStack {
-                    // A later visit adds a new impression that overlaps the old one, like
-                    // a well-used paper page.
-                    ForEach(placeStamps.dropFirst().prefix(2).reversed()) { older in
-                        StampView(face: face(for: older, place: place), diameter: 120)
-                            .opacity(0.35)
+            if let latest = slotStamps.first {
+                Button {
+                    viewing = slot
+                } label: {
+                    ZStack {
+                        // A later visit adds a new impression that overlaps the old one, like
+                        // a well-used paper page.
+                        ForEach(slotStamps.dropFirst().prefix(2).reversed()) { older in
+                            StampView(face: face(for: older, place: place), diameter: 120)
+                                .opacity(0.35)
+                        }
+                        StampView(face: face(for: latest, place: place), diameter: 120)
                     }
-                    StampView(face: face(for: latest, place: place), diameter: 120)
+                    .frame(width: 140, height: 140)
                 }
-                .frame(width: 140, height: 140)
+                .buttonStyle(.plain)
+                .accessibilityHint("Shows every impression")
             } else {
                 Button {
-                    stamping = place
+                    stamping = slot
                 } label: {
-                    StampSlotView(siteName: place.name, diameter: 120)
+                    StampSlotView(siteName: slot.location?.name ?? place.name, diameter: 120)
                         .frame(width: 140, height: 140)
                 }
                 .buttonStyle(.plain)
@@ -274,14 +372,24 @@ struct PassportRegionPage: View {
                 .foregroundStyle(style.ink)
                 .multilineTextAlignment(.center)
                 .lineLimit(2)
-            if placeStamps.count > 1 {
-                Text("\(placeStamps.count) impressions")
+            if let location = slot.location {
+                Text(location.name)
+                    .font(UnigridStyle.caption)
+                    .foregroundStyle(style.inkSecondary)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+            }
+            if slotStamps.count > 1 {
+                Text("\(slotStamps.count) impressions")
                     .font(UnigridStyle.caption)
                     .foregroundStyle(style.inkSecondary)
             }
         }
         .contextMenu {
-            Button("Stamp again") { stamping = place }
+            Button("Stamp again") { stamping = slot }
+            if !slotStamps.isEmpty {
+                Button("Every impression") { viewing = slot }
+            }
         }
     }
 
@@ -304,83 +412,5 @@ struct PassportRegionPage: View {
               .first(where: { $0.id == locationID })
         else { return place.name }
         return location.name
-    }
-}
-
-/// The commemorative page at the front of the book: every 2026 stamp, with the count.
-struct America250Page: View {
-    @Environment(\.referenceStore) private var store
-    @Environment(\.unigrid) private var style
-    let stamps: [Stamp]
-
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("AMERICA 250")
-                        .font(UnigridStyle.bandTitle(32))
-                        .tracking(2)
-                        .foregroundStyle(style.seal)
-                    Rectangle()
-                        .fill(style.seal)
-                        .frame(height: 4)
-                    Text(
-                        stamps.isEmpty
-                            ? "Nothing stamped in 2026 yet."
-                            : "\(stamps.count) stamped in 2026."
-                    )
-                    .font(UnigridStyle.rowDetail)
-                    .foregroundStyle(style.inkSecondary)
-                }
-                .padding(.horizontal, 16)
-
-                if stamps.isEmpty {
-                    Text(
-                        "Any stamp you date in 2026 lands here, including one you back-date "
-                            + "for a trip earlier in the year."
-                    )
-                    .font(UnigridStyle.proseSmall)
-                    .foregroundStyle(style.inkSecondary)
-                    .padding(.horizontal, 16)
-                } else {
-                    LazyVGrid(
-                        columns: [GridItem(.adaptive(minimum: 150), spacing: 20)],
-                        spacing: 24
-                    ) {
-                        ForEach(stamps.sorted { $0.date > $1.date }) { stamp in
-                            if let place = store.place(stamp.place) {
-                                VStack(spacing: 8) {
-                                    StampView(
-                                        face: StampFace(
-                                            siteName: place.name,
-                                            date: stamp.date,
-                                            stateCode: place.states.first?.code ?? "US",
-                                            region: place.resolvedPassportRegion,
-                                            seed: stamp.seed,
-                                            isVerifiedOnSite: stamp.isVerifiedOnSite
-                                        ),
-                                        diameter: 120
-                                    )
-                                    .frame(width: 140, height: 140)
-                                    Text(place.name)
-                                        .font(.custom(
-                                            "HelveticaNeue-Medium",
-                                            size: 12,
-                                            relativeTo: .caption
-                                        ))
-                                        .multilineTextAlignment(.center)
-                                        .lineLimit(2)
-                                }
-                            }
-                        }
-                    }
-                    .padding(.horizontal, 16)
-                }
-            }
-            .padding(.vertical, 20)
-        }
-        .background(style.page)
-        .navigationTitle("America 250")
-        .toolbarTitleDisplayMode(.inline)
     }
 }

@@ -56,7 +56,7 @@ struct OnboardingView: View {
         .interactiveDismissDisabled()
     }
 
-    private static let pageCount = 3
+    private static let pageCount = 4
 
     @ViewBuilder
     private func panel(_ index: Int) -> some View {
@@ -64,10 +64,12 @@ struct OnboardingView: View {
         case 0:
             OnboardingPanel(
                 number: 1,
-                title: "Every park on one map",
-                text: "All 63 national parks, \(nps) more National Park Service sites, "
-                    + "and a selection of state parks, monuments and wildlife refuges — "
-                    + "each outlined on the map, each a tap away from its overview."
+                title: "Every public land on one map",
+                text: "All 63 national parks and \(count(PlaceTier.npsUnit)) more National "
+                    + "Park Service sites, \(count(.nationalForest)) national forests, "
+                    + "\(count(.wildlifeRefuge)) wildlife refuges, the BLM's monuments, "
+                    + "National Natural Landmarks and scenic byways — each outlined, each with "
+                    + "its own pin. Lay Interstates, US highways and Amtrak over the top."
             ) {
                 MarkerKeyArt()
             }
@@ -76,26 +78,41 @@ struct OnboardingView: View {
                 number: 2,
                 title: "A guide for every national park",
                 text: "Laid out like the brochures the Park Service has printed since 1977: "
-                    + "the park's story, its sights in order, visitor centres, the practical "
-                    + "details, a chronology — and the NPS's own photographs."
+                    + "the park's story, its sights in order, \(store.allTrails.count.formatted()) "
+                    + "trails measured from the ground up, the official brochure, and every "
+                    + "park in 3D with a guided fly-through."
             ) {
                 BandArt()
             }
-        default:
+        case 2:
             OnboardingPanel(
                 number: 3,
+                title: "Plan the trip",
+                text: "Put parks in order and see the drive between them, the forecast for "
+                    + "each day, closures the NPS has posted and permits to book — with "
+                    + "reminders when booking windows open."
+            ) {
+                PlannerArt()
+            }
+        default:
+            OnboardingPanel(
+                number: 4,
                 title: "A passport that fills itself",
-                text: "Check in, stamp the passport, plan trips, and watch the squares fill. "
-                    + "Your log lives on your devices and in your own iCloud. There are no "
-                    + "accounts, no analytics and no servers."
+                text: "Check in, stamp the passport, import visits from your photos, and watch "
+                    + "the squares fill. Your log lives on your devices and in your own iCloud. "
+                    + "There are no accounts, no analytics and no servers."
             ) {
                 NonAffiliationNotice()
             }
         }
     }
 
-    private var nps: Int {
-        store.places.count { $0.tier == .npsUnit }
+    private func count(_ type: SiteType) -> Int {
+        store.places.count { $0.siteType == type }
+    }
+
+    private func count(_ tier: PlaceTier) -> Int {
+        store.places.count { $0.tier == tier }
     }
 }
 
@@ -134,35 +151,64 @@ struct OnboardingPanel<Art: View>: View {
     }
 }
 
-/// The map's key, as a picture of what the map holds.
+/// The map's key, as a picture of what the map holds: a pin for each kind of place.
 struct MarkerKeyArt: View {
     @Environment(\.unigrid) private var style
 
+    private static let shown: [SiteType] = [
+        .nationalPark, .nationalMonument, .historicSite, .battlefield, .seashore,
+        .statePark, .nationalForest, .wildlifeRefuge, .naturalLandmark, .scenicByway,
+    ]
+
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            ForEach(PlaceTier.allCases, id: \.self) { tier in
-                HStack(spacing: 12) {
-                    PlaceMarker(
-                        tier: tier,
-                        tint: tint(tier),
-                        status: tier == .nationalPark ? .visited : .none
-                    )
-                    Text(tier.name)
-                        .font(UnigridStyle.rowTitle)
+        LazyVGrid(
+            columns: [GridItem(.adaptive(minimum: 150), spacing: 12, alignment: .leading)],
+            alignment: .leading,
+            spacing: 10
+        ) {
+            ForEach(Self.shown) { type in
+                HStack(spacing: 10) {
+                    SitePin(type: type, status: type == .nationalPark ? .visited : .none)
+                    Text(type.name)
+                        .font(UnigridStyle.rowDetail)
                         .foregroundStyle(style.ink)
                 }
             }
         }
         .accessibilityElement(children: .combine)
     }
+}
 
-    private func tint(_ tier: PlaceTier) -> Color {
-        let agency: Agency = switch tier {
-        case .nationalPark, .npsUnit: .nps
-        case .statePark: .stateAgency
-        case .federalSite: .blm
+/// A trip in miniature: three numbered stops joined by the road between them.
+struct PlannerArt: View {
+    @Environment(\.unigrid) private var style
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            ForEach(
+                Array(["Zion", "Bryce Canyon", "Capitol Reef"].enumerated()),
+                id: \.offset
+            ) { index, name in
+                if index > 0 {
+                    HStack(spacing: 10) {
+                        Rectangle().fill(style.rule).frame(width: 2, height: 22).padding(
+                            .leading,
+                            10
+                        )
+                        Label(index == 1 ? "1 h 50 min" : "2 h 20 min", systemImage: "car")
+                            .font(UnigridStyle.rowDetail)
+                            .foregroundStyle(style.inkSecondary)
+                    }
+                }
+                HStack(spacing: 10) {
+                    SightNumber(number: index + 1)
+                    Text(name)
+                        .font(UnigridStyle.rowTitle)
+                        .foregroundStyle(style.ink)
+                }
+            }
         }
-        return Color(AgencyInk.forPlace(agency: agency, tier: tier).value(style.scheme))
+        .accessibilityHidden(true)
     }
 }
 

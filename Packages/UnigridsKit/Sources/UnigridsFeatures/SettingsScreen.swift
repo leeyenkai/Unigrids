@@ -68,6 +68,19 @@ public struct SettingsScreen: View {
             }
 
             Section {
+                VisitDetectionToggle()
+            } header: {
+                SectionHead("Arrivals")
+            } footer: {
+                Text(
+                    "With location set to Always, Unigrids watches the outlines of the parks "
+                        + "nearest you and asks whether to log a visit when you arrive. It "
+                        + "happens on this device; your location is never stored or sent."
+                )
+                .font(UnigridStyle.caption)
+            }
+
+            Section {
                 LabeledContent("Visits", value: "\(visits.count)")
                 LabeledContent("Stamps", value: "\(stamps.count)")
                 LabeledContent("Trips", value: "\(trips.count)")
@@ -90,13 +103,17 @@ public struct SettingsScreen: View {
                 SectionHead("Your data")
             }
 
+            BrochureStorageSection()
+
             Section {
                 LabeledContent("Dataset version", value: "\(store.manifest.version)")
                 LabeledContent("Provenance", value: store.manifest.provenance.name)
                 if !store.manifest.builtOn.isEmpty {
                     LabeledContent("Built", value: store.manifest.builtOn)
                 }
-                LabeledContent("Places", value: "\(store.places.count)")
+                LabeledContent("Places", value: store.places.count.formatted())
+                LabeledContent("Outlines", value: store.boundaries.count.formatted())
+                LabeledContent("Trails", value: store.allTrails.count.formatted())
                 LabeledContent(
                     "Live alerts",
                     value: NPSAlerts.isConfigured ? "On" : "Off in this build"
@@ -240,6 +257,31 @@ struct Attribution: Identifiable {
                 + "Database of the United States, a public-domain USGS data release."
         ),
         Attribution(
+            name: "Other federal lands",
+            terms: "National forest and grassland boundaries from the US Forest Service; "
+                + "wildlife refuge boundaries from the US Fish and Wildlife Service; National "
+                + "Conservation Lands from the Bureau of Land Management; National Natural "
+                + "Landmarks from the National Park Service; scenic byways from the Federal "
+                + "Highway Administration; state outlines from the US Census Bureau. All "
+                + "public-domain US government works."
+        ),
+        Attribution(
+            name: "National Transportation Atlas Database",
+            terms: "Interstates, US highways and the Amtrak network and stations, from the US "
+                + "Department of Transportation's Bureau of Transportation Statistics. A US "
+                + "government work, unrestricted public use."
+        ),
+        Attribution(
+            name: "Trails and elevation",
+            terms: "Trail lines from the NPS Public Trails dataset; elevation from the USGS 3D "
+                + "Elevation Program (3DEP), public domain. Measured by Unigrids."
+        ),
+        Attribution(
+            name: "Official brochures",
+            terms: "Brochures and maps are National Park Service publications, fetched from "
+                + "nps.gov and shown as published, with their credits."
+        ),
+        Attribution(
             name: "Wikimedia Commons",
             terms: "Photographs of state parks, monuments and refuges, each credited to its "
                 + "photographer under the licence shown with it."
@@ -258,6 +300,71 @@ struct Attribution: Identifiable {
             terms: "Historical weather from the ERA5 reanalysis, under CC BY 4.0."
         ),
     ]
+}
+
+/// The brochures kept on this device, their size, and the way to clear them
+/// (SPECIFICATION.md §6).
+struct BrochureStorageSection: View {
+    @Environment(\.referenceStore) private var store
+    @Environment(\.unigrid) private var style
+    @Environment(BrochureLibrary.self) private var library: BrochureLibrary?
+
+    var body: some View {
+        if let library {
+            Section {
+                if library.entries.isEmpty {
+                    Text("None yet. A brochure is kept here once you open it.")
+                        .font(UnigridStyle.rowDetail)
+                        .foregroundStyle(style.inkSecondary)
+                }
+                ForEach(library.entries.sorted { $0.savedAt > $1.savedAt }) { entry in
+                    HStack {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(store.place(UnigridsID(entry.placeID))?.name ?? entry.placeID)
+                                .font(UnigridStyle.rowTitle)
+                            Text(entry.title)
+                                .font(UnigridStyle.rowDetail)
+                                .foregroundStyle(style.inkSecondary)
+                                .lineLimit(1)
+                        }
+                        Spacer()
+                        Text(ByteCountFormatter.string(
+                            fromByteCount: Int64(entry.bytes),
+                            countStyle: .file
+                        ))
+                        .font(UnigridStyle.dataLabel)
+                        .monospacedDigit()
+                        .foregroundStyle(style.inkSecondary)
+                        Button(role: .destructive) {
+                            library.remove(entry)
+                        } label: {
+                            Label("Remove", systemImage: "trash")
+                        }
+                        .labelStyle(.iconOnly)
+                        .buttonStyle(.borderless)
+                    }
+                }
+                if !library.entries.isEmpty {
+                    Button("Clear every brochure", role: .destructive) {
+                        library.removeAll()
+                    }
+                }
+            } header: {
+                SectionHead(
+                    "Brochures on this device",
+                    detail: ByteCountFormatter.string(
+                        fromByteCount: Int64(library.totalBytes), countStyle: .file
+                    )
+                )
+            } footer: {
+                Text(
+                    "Fetched from nps.gov when first opened. Parks on an upcoming trip are kept "
+                        + "for offline automatically, on Wi-Fi."
+                )
+                .font(UnigridStyle.caption)
+            }
+        }
+    }
 }
 
 /// The key the onboarding's seen-it flag is stored under.

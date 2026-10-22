@@ -121,6 +121,62 @@ makes the change. A release moves that block under a version heading with its da
   NPS key from.
 - ADR 0007 (one identity across every screen) and ADR 0008 (the home map wraps
   `MKMapView`).
+- **Every federal land on the map, outlined.** 2,052 places, up from 537: every national
+  forest and grassland from the Forest Service, 548 national wildlife refuges from Fish
+  and Wildlife, the BLM's national monuments and conservation areas, all 575 National
+  Natural Landmarks and 186 national scenic byways and All-American Roads, each from its
+  agency's own published data. 1,260 places are outlined and every outline draws at every
+  zoom, a lighter version of each at country scale so the whole map stays quick.
+- **A pictogram for every kind of place.** Eighteen site types — national park, monument,
+  historic site, battlefield, memorial, seashore, recreation area, river, parkway,
+  preserve, forest, grassland, refuge, conservation area, natural landmark, byway, state
+  park and other — each with its own symbol inside the tier's marker. The map key lists
+  them by group and filters by them.
+- **Roads and rail on the map.** A Layers menu draws the Interstate Highway System, the US
+  routes on the National Highway System and every Amtrak route, with its stations once
+  the map is close enough to read them, from the US DOT's National Transportation Atlas.
+  Scenic byways draw as routes in their own ink.
+- Map filters by site type, visited status, state, activity and stamp location, with a
+  count of what each leaves; live alert badges on parks with a posted closure or danger,
+  from regional zoom.
+- **Explore in 3D**, now a full 3D view for any place: realistic-elevation terrain in
+  satellite, hybrid or standard, the outline, numbered sights, visitor centres and the
+  park's trails; a list of sights (a sidebar on iPad and Mac) where choosing one flies
+  the camera there and opens its card; a guided tour that flies sight to sight and circles
+  each; a reset to the overview; and Look Around where Apple has imagery.
+- **A trail catalogue** for 59 national parks: 3,239 trails from the NPS Public Trails
+  dataset, each measured from its line and USGS 3DEP elevation — distance, climb, high and
+  low point, an elevation profile, an estimated time and an estimated difficulty — with
+  sights along the way and permitted uses. Filters by distance, climb, difficulty, route
+  type, feature and not yet hiked; Mark as hiked, in full or in part, feeds the log and
+  the stats. A guide's trail highlights now come from the catalogue.
+- **Official maps and brochures.** Each NPS site's maps and brochures, as its own nps.gov
+  pages list them, open in a PDF viewer and are kept on device once opened. Places on an
+  upcoming trip are saved ahead, Save for offline covers any other, and Settings lists
+  what is kept with its size. A site with no PDF listed opens its maps page instead.
+- A climate panel in each national park guide: average monthly high, low and rainfall
+  over 2016–2025, from the Open-Meteo archive.
+- **By train**: the nearest Amtrak station to a place's outline, how far it is and which
+  services call there, on guides and leaflets.
+- **Planner:** drive times between stops from Apple Maps, a total per day and a warning
+  past six hours at the wheel; flags on a stop for posted closures and dangers, reservation
+  notes and seasonal closures; a 16-day forecast for each dated stop; reminders for
+  permits, timed entry and booking windows as local notifications; the roads drawn on
+  the trip's map; and a GPX export of the stops.
+- **Weather for every visit**, fetched once from Open-Meteo when a visit is logged and kept,
+  and a weather section in Stats: hottest, coldest and wettest visits.
+- **Auto-detected visits** on iPhone and iPad, off until turned on in Settings: with
+  Always location, the app watches the places nearest you and asks "Log a visit?" on
+  arrival. Nothing is logged until you say so, and no location is stored.
+- **Import from Photos**: geotagged photos matched to places on device, grouped into
+  proposed visits and trips to accept or leave. Visits keep photo references, never copies.
+- Passport slots for each official stamp location, an impressions sheet showing every
+  stamp in a slot, and a passport page exported as an image.
+- Stats sections for kinds of place visited and visits by month; distance walked and
+  climb from hiked trails.
+- Undo after deleting a visit, trip or stamp.
+- On the Mac, a guide or leaflet opens in its own window beside the map.
+- A fourth welcome panel, on the planner, and a welcome key that shows the new markers.
 
 ### Changed
 
@@ -130,9 +186,35 @@ makes the change. A release moves that block under a version heading with its da
   and markers are square, and a palette now restyles every screen's paper and ink.
 - Panels side by side in a guide share one height, so a row reads as a single sheet.
 - The Parks directory can show national parks or every place.
+- The Parks directory gains a Trails scope and a site-type filter, and each row carries
+  its place's marker.
+- The map shows detail by zoom: country-scale outlines and national park pins at first,
+  pins for forests, refuges and other large lands from regional zoom, station markers
+  close up. National parks keep a compact pin when zoomed far out.
+- The 25 hand-curated monuments, conservation areas and refuges are replaced by the
+  agencies' own lists, so each carries the agency's name and designation as published.
+- A place with no written summary now shows a line built only from its own fields — "A
+  national forest in Colorado, managed by the US Forest Service." — rather than nothing.
+- Search matches a two-letter state code to the places in that state, and ranks national
+  parks first.
+- The overview panel names who designated a place and shows a byway's mapped length.
+- **Map pins redrawn so each kind of place is unmistakable.** Pins are now solid, in a
+  colour per kind of place — national parks black, monuments crimson, history brown,
+  water blue, forests and preserves green, refuges teal, BLM land amber, landmarks
+  magenta, state parks violet, byways orange — with a white symbol and a white keyline
+  that hold on any base map. National parks carry a star; other public land is a hexagon
+  instead of a cramped diamond. Visited places get a green tick and planned ones a
+  dashed ring, and outlines take the same colours as their pins
+  ([ADR 0009](docs/adr/0009-pins-coloured-by-kind-of-place.md)).
+- With the whole country in view, national parks gather into a starred count where they
+  would overlap, instead of piling on top of each other; group counts are now round.
+- The map key explains colour, shape, ticks, rings, alert corners and groups, and its
+  chip on the map is a strip of colour swatches.
 
 ### Fixed
 
+- The map key's chip drew four pins that ran into each other; the key's "reading the map"
+  section described the old hollow pins.
 - The Stamp button drew nothing. `stamp` and `stamp.fill` are not SF Symbols in any
   version, so five places — the guide's Stamp action, the place card, Trips, the visitor
   centre panel and the stamp sheet — rendered a blank space where an icon belonged. They
@@ -172,12 +254,19 @@ makes the change. A release moves that block under a version heading with its da
   about 2 MB each and are not a budget question. The brochure PDFs are the one part of the
   budget still unmeasured. The figures and what to trim are in
   [`docs/mvp-scope.md`](docs/mvp-scope.md).
-- Trails and offline map packs now exist in the pipeline but not in the app: nothing reads
-  a pack, so `package` deliberately does not copy one into the app's resources. The
-  brochure viewer, drive times and planner conflict flags, auto-detected visits, photo
-  import, widgets and the Watch app are not built. See
+- Offline map packs exist in the pipeline but not in the app: nothing reads a pack, so
+  `package` deliberately does not copy one into the app's resources. Widgets, the Watch
+  app and an "open this season" filter are not built. See
   [`docs/mvp-scope.md`](docs/mvp-scope.md).
-- iPhone and iPad layouts compile but were checked only on macOS: the development machine
-  has no iOS 27 Simulator runtime.
+- Trail difficulty is an estimate from distance and climb by Shenandoah National Park's
+  published formula, and says so wherever it shows: the NPS trails layer publishes no
+  difficulty. Sequoia, Kings Canyon, Gates of the Arctic and Kobuk Valley have no trails
+  of their own in that layer (its one Kobuk Valley segment is Klondike's Chilkoot Trail,
+  mis-filed, which the outline check drops), so those four parks show no catalogue.
+- Forecasts and visit weather come from Open-Meteo rather than WeatherKit, which needs a
+  development team the build does not have yet (`SPECIFICATION.md` §17).
+- iPhone layouts were checked on an iOS 26.5 Simulator, from a throwaway copy with the
+  deployment target lowered; the development machine still has no iOS 27 runtime. iPad
+  was not checked.
 
 [Unreleased]: https://github.com/leeyenkai/Unigrids/commits/main

@@ -163,10 +163,13 @@ struct StatsTests {
             trails: [trail],
             calendar: utcCalendar
         )
-        #expect(full.distanceHikedMetres == 10000)
+        // An out-and-back trail is hiked there and back: twice its length, and its rise
+        // plus its fall in climbing.
+        #expect(full.distanceHikedMetres == 20000)
+        #expect(full.elevationGainedMetres == 2000)
         #expect(full.highestPointMetres == 2500)
-        #expect(partial.distanceHikedMetres == 5000)
-        #expect(partial.elevationGainedMetres == 500)
+        #expect(partial.distanceHikedMetres == 10000)
+        #expect(partial.elevationGainedMetres == 1000)
         // The app does not know where the walker turned back, so it must not claim the
         // summit was reached.
         #expect(partial.highestPointMetres == nil)

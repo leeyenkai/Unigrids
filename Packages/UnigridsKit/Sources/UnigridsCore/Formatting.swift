@@ -10,7 +10,7 @@ public enum UnigridsFormat {
     /// Testing `== .metric` would be wrong: `Locale.MeasurementSystem` has three cases,
     /// and the UK reports `.uk`. That sent every British reader down the imperial path
     /// and printed park elevations in feet.
-    static func usesUSUnits(_ locale: Locale) -> Bool {
+    public static func usesUSUnits(_ locale: Locale) -> Bool {
         locale.measurementSystem == .us
     }
 
@@ -85,6 +85,20 @@ public enum UnigridsFormat {
                 .measurement(width: .abbreviated, usage: .road)
                     .locale(locale)
             )
+    }
+
+    /// `31°C` or `88°F`, by the reader's measurement system.
+    public static func temperature(celsius: Double, locale: Locale = .current) -> String {
+        let measurement = Measurement(value: celsius, unit: UnitTemperature.celsius)
+        let converted = usesUSUnits(locale) ? measurement.converted(to: .fahrenheit) : measurement
+        return converted.formatted(
+            .measurement(
+                width: .abbreviated,
+                usage: .asProvided,
+                numberFormatStyle: .number.precision(.fractionLength(0))
+            )
+            .locale(locale)
+        )
     }
 
     /// `3 h 20 min`, for trail estimates.

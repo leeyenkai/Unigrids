@@ -15,6 +15,7 @@ ArcGIS caps a response at the layer's ``maxRecordCount`` and says so in
 
 from __future__ import annotations
 
+import time
 from typing import Any
 
 import httpx
@@ -49,6 +50,7 @@ def query_features(
     page_size: int = PAGE_SIZE,
     record: Any = None,
     max_allowable_offset: float | None = None,
+    geometry_precision: int = 6,
 ) -> list[dict[str, Any]]:
     """Every feature matching ``where``, as GeoJSON features in WGS84.
 
@@ -59,6 +61,9 @@ def query_features(
     for the national boundary sweep, where the question is how many tiles a park's outline
     covers and a 100-metre simplification of a 50-kilometre coastline changes nothing but
     the download size.
+
+    ``geometry_precision`` is decimal places in the answer: six (about 10 cm) by default,
+    four (about 10 m) for national line layers that are generalised far past that anyway.
     """
     features: list[dict[str, Any]] = []
     offset = 0
@@ -68,17 +73,14 @@ def query_features(
             "outFields": out_fields,
             "returnGeometry": "true",
             "outSR": "4326",
-            "geometryPrecision": "6",
+            "geometryPrecision": str(geometry_precision),
             "resultOffset": str(offset),
             "resultRecordCount": str(page_size),
             "f": "geojson",
         }
         if max_allowable_offset is not None:
             parameters["maxAllowableOffset"] = str(max_allowable_offset)
-        response = http.get(session, f"{layer_url}/query", params=parameters, expect="application")
-        payload = response.json()
-        if "error" in payload:
-            raise http.FetchError(f"{layer_url} refused the query: {payload['error']}")
+        payload = _query_page(session, layer_url, parameters)
         if record is not None:
             record.add_request(f"{layer_url}/query", parameters)
         page = payload.get("features") or []
@@ -89,6 +91,22 @@ def query_features(
         if not page or not exceeded:
             return features
         offset += len(page)
+
+
+def _query_page(
+    session: httpx.Client, layer_url: str, parameters: dict[str, str]
+) -> dict[str, Any]:
+    """One page of a query. A hosted layer under load sometimes answers a valid page with
+    a bare 400, and the same request a moment later succeeds, so a refusal is retried
+    twice before it is believed."""
+    for attempt in range(3):
+        response = http.get(session, f"{layer_url}/query", params=parameters, expect="application")
+        payload = response.json()
+        if "error" not in payload:
+            return payload
+        if attempt < 2:
+            time.sleep(5 * (attempt + 1))
+    raise http.FetchError(f"{layer_url} refused the query: {payload['error']}")
 
 
 def trails_for_unit(

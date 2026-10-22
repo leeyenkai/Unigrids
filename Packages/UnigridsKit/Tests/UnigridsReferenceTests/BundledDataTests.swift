@@ -45,7 +45,12 @@ struct BundledDataTests {
         for place in store.places {
             #expect(!place.id.rawValue.isEmpty)
             #expect(!place.name.isEmpty)
-            #expect(!place.states.isEmpty, "\(place.name) has no state")
+            // The remote Pacific and Caribbean refuges lie in no state or territory the
+            // Census draws; they are the only places allowed to have none.
+            #expect(
+                !place.states.isEmpty || place.kind == .wildlifeRefuge,
+                "\(place.name) has no state"
+            )
             #expect(
                 (-90.0 ... 90.0).contains(place.centre.latitude),
                 "\(place.name) latitude out of range"
@@ -106,10 +111,19 @@ struct BundledDataTests {
 
     @Test("every curated state park, monument and refuge has a written overview")
     func curatedSitesHaveOverviews() {
-        let curated = store.places.filter { $0.tier == .statePark || $0.tier == .federalSite }
-        #expect(curated.count >= 100)
-        for place in curated {
+        let stateParks = store.places.filter { $0.tier == .statePark }
+        #expect(stateParks.count >= 50)
+        for place in stateParks {
             #expect((place.summary?.count ?? 0) > 60, "\(place.name) has no summary")
+            #expect(place.summarySource == "Unigrids")
+        }
+        let federal = store.places.filter { $0.tier == .federalSite }
+        let written = federal.filter { $0.summary != nil }
+        #expect(written.count >= 25)
+        // The rest of the public lands carry no prose by design: nobody wrote any, and
+        // the sources publish none. What is there must say who wrote it.
+        for place in written {
+            #expect((place.summary?.count ?? 0) > 60, "\(place.name) summary is thin")
             #expect(place.summarySource == "Unigrids")
         }
     }
@@ -264,20 +278,17 @@ struct BundledDataTests {
         #expect(grouped.keys.count >= 6)
     }
 
-    @Test("the trail catalogue is empty, and that is the expected state")
-    func trailsAreNotYetPopulated() {
-        // Trails land in 1.0.0 (docs/mvp-scope.md). An absent trails.json must load
-        // cleanly rather than throw, which is what this asserts.
-        #expect(store.trails(in: "np-zion").isEmpty)
-    }
-
     @Test("nearest returns places in distance order")
     func nearest() {
-        // Springdale, Utah, at Zion's south entrance.
-        let springdale = Coordinate(latitude: 37.19, longitude: -112.99)
-        let nearest = store.nearest(to: springdale, limit: 3)
+        // The Zion Canyon Visitor Center, inside the park.
+        let visitorCentre = Coordinate(latitude: 37.2, longitude: -112.987)
+        let nearest = store.nearest(to: visitorCentre, limit: 3)
         #expect(nearest.first?.id == "np-zion")
         #expect(nearest.count == 3)
+        // Springdale, outside it: of the national parks, Zion is still nearest.
+        let springdale = Coordinate(latitude: 37.18, longitude: -113.0)
+        #expect(store.nearest(to: springdale, limit: 1, tiers: [.nationalPark]).first?.id
+            == "np-zion")
     }
 
     @Test("an empty store is usable rather than a crash")

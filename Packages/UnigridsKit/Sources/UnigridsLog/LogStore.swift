@@ -13,7 +13,7 @@ import UnigridsCore
 ///    agree. That join is the subtle part, and it lives in `stamp(...)`.
 @MainActor
 public final class LogStore {
-    private let context: ModelContext
+    let context: ModelContext
     private let calendar: Calendar
 
     public init(context: ModelContext, calendar: Calendar = .current) {

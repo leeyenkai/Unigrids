@@ -5,7 +5,9 @@ Date: 2026-10-19
 ## Status
 
 Accepted. Supersedes the "two modes, and they do not mix" rule in `SPECIFICATION.md` §14,
-`AGENTS.md` §6 and `docs/design-system.md` §2.
+`AGENTS.md` §6 and `docs/design-system.md` §2. Amended by
+[ADR 0009](0009-pins-coloured-by-kind-of-place.md): a marker's colour is now its kind of
+place, not its agency.
 
 ## Context
 

@@ -30,9 +30,16 @@ public struct BundledReferenceStore: ReferenceStore {
     private let placesByID: [UnigridsID: Place]
     private let themesByID: [UnigridsID: Theme]
     private let poisByPlace: [UnigridsID: [PointOfInterest]]
-    private let trailsByPlace: [UnigridsID: [Trail]]
+    private let trailCatalogue: LazyTrails
     private let guidesByPlace: [UnigridsID: GuideContent]
     private let boundariesByPlace: [UnigridsID: PlaceBoundary]
+    private let routesByPlace: [UnigridsID: RouteLine]
+    private let documentsByPlace: [UnigridsID: ParkDocuments]
+    private let climateByPlace: [UnigridsID: MonthlyClimate]
+    public let overviewBoundaries: [UnigridsID: PlaceBoundary]
+    public let placesWithStampLocations: Set<UnigridsID>
+    /// Where the dataset's files are, for what is read on demand; `nil` in memory.
+    private let referenceBundle: Bundle?
     /// Where bundled photographs live, or `nil` for a store built in memory.
     private let imageDirectory: URL?
 
@@ -53,9 +60,9 @@ public struct BundledReferenceStore: ReferenceStore {
         places = try Self.decode([Place].self, "places", bundle, decoder)
         themes = try Self.decode([Theme].self, "themes", bundle, decoder)
         let pois = try Self.decode([PointOfInterest].self, "pois", bundle, decoder)
-        // Trails are specified (§8) but not populated until 1.0.0, so an absent file is
-        // the expected state rather than an error.
-        let trails = try Self.decodeIfPresent([Trail].self, "trails", bundle, decoder) ?? []
+        // The trail catalogue is decoded the first time anything asks for a trail: it is
+        // the largest file, and the map the app opens on needs none of it.
+        trailCatalogue = LazyTrails(url: Self.url("trails", bundle))
         // Outlines arrived with the pipeline's reference build. A dataset without them is
         // older, not broken: the map draws pins and no outlines.
         boundariesByPlace = try Self.decodeIfPresent(
@@ -63,6 +70,28 @@ public struct BundledReferenceStore: ReferenceStore {
         )
         .map { Dictionary(uniqueKeysWithValues: $0.map { (UnigridsID($0.key), $0.value) }) }
         ?? [:]
+        overviewBoundaries = try Self.decodeIfPresent(
+            [String: PlaceBoundary].self, "boundaries-overview", bundle, decoder
+        )
+        .map { Dictionary(uniqueKeysWithValues: $0.map { (UnigridsID($0.key), $0.value) }) }
+        ?? [:]
+        // Byway lines arrived with the other public lands; an older dataset has none.
+        routesByPlace = try Self.decodeIfPresent(
+            [String: RouteLine].self, "routes", bundle, decoder
+        )
+        .map { Dictionary(uniqueKeysWithValues: $0.map { (UnigridsID($0.key), $0.value) }) }
+        ?? [:]
+        documentsByPlace = try Self.decodeIfPresent(
+            [String: ParkDocuments].self, "brochures", bundle, decoder
+        )
+        .map { Dictionary(uniqueKeysWithValues: $0.map { (UnigridsID($0.key), $0.value) }) }
+        ?? [:]
+        climateByPlace = try Self.decodeIfPresent(
+            [String: MonthlyClimate].self, "climate", bundle, decoder
+        )
+        .map { Dictionary(uniqueKeysWithValues: $0.map { (UnigridsID($0.key), $0.value) }) }
+        ?? [:]
+        referenceBundle = bundle
         imageDirectory = bundle.url(
             forResource: "images",
             withExtension: nil,
@@ -72,7 +101,7 @@ public struct BundledReferenceStore: ReferenceStore {
         placesByID = Self.keyed(places, by: \.id)
         themesByID = Self.keyed(themes, by: \.id)
         poisByPlace = Dictionary(grouping: pois, by: \.placeID)
-        trailsByPlace = Dictionary(grouping: trails, by: \.placeID)
+        placesWithStampLocations = Set(pois.filter(\.hasStamp).map(\.placeID))
 
         var guides: [UnigridsID: GuideContent] = [:]
         for place in places where place.tier.hasGuide {
@@ -94,7 +123,8 @@ public struct BundledReferenceStore: ReferenceStore {
         pois: [PointOfInterest],
         trails: [Trail],
         guides: [GuideContent],
-        boundaries: [UnigridsID: PlaceBoundary] = [:]
+        boundaries: [UnigridsID: PlaceBoundary] = [:],
+        routes: [UnigridsID: RouteLine] = [:]
     ) {
         self.manifest = manifest
         self.places = places
@@ -102,9 +132,15 @@ public struct BundledReferenceStore: ReferenceStore {
         placesByID = Self.keyed(places, by: \.id)
         themesByID = Self.keyed(themes, by: \.id)
         poisByPlace = Dictionary(grouping: pois, by: \.placeID)
-        trailsByPlace = Dictionary(grouping: trails, by: \.placeID)
+        trailCatalogue = LazyTrails(trails: trails)
         guidesByPlace = Self.keyed(guides, by: \.placeID)
         boundariesByPlace = boundaries
+        overviewBoundaries = boundaries
+        routesByPlace = routes
+        documentsByPlace = [:]
+        climateByPlace = [:]
+        placesWithStampLocations = Set(pois.filter(\.hasStamp).map(\.placeID))
+        referenceBundle = nil
         imageDirectory = nil
     }
 
@@ -145,7 +181,8 @@ public struct BundledReferenceStore: ReferenceStore {
         trails: [Trail] = [],
         themes: [Theme] = [],
         guides: [GuideContent] = [],
-        boundaries: [UnigridsID: PlaceBoundary] = [:]
+        boundaries: [UnigridsID: PlaceBoundary] = [:],
+        routes: [UnigridsID: RouteLine] = [:]
     ) -> BundledReferenceStore {
         BundledReferenceStore(
             manifest: ReferenceManifest(
@@ -159,7 +196,8 @@ public struct BundledReferenceStore: ReferenceStore {
             pois: pois,
             trails: trails,
             guides: guides,
-            boundaries: boundaries
+            boundaries: boundaries,
+            routes: routes
         )
     }
 
@@ -176,7 +214,11 @@ public struct BundledReferenceStore: ReferenceStore {
     }
 
     public func trails(in placeID: UnigridsID) -> [Trail] {
-        trailsByPlace[placeID] ?? []
+        trailCatalogue.value.byPlace[placeID] ?? []
+    }
+
+    public var allTrails: [Trail] {
+        trailCatalogue.value.all
     }
 
     public func guide(for placeID: UnigridsID) -> GuideContent? {
@@ -190,6 +232,27 @@ public struct BundledReferenceStore: ReferenceStore {
     /// Every outline, for the map to draw.
     public var boundaries: [UnigridsID: PlaceBoundary] {
         boundariesByPlace
+    }
+
+    public var routes: [UnigridsID: RouteLine] {
+        routesByPlace
+    }
+
+    public func documents(for placeID: UnigridsID) -> ParkDocuments? {
+        documentsByPlace[placeID]
+    }
+
+    public func climate(for placeID: UnigridsID) -> MonthlyClimate? {
+        climateByPlace[placeID]
+    }
+
+    /// The road and rail layers, decoded from the bundle each time they are asked for.
+    /// The map asks once, off the main actor, and keeps the answer.
+    public func transportNetwork() throws -> TransportNetwork {
+        guard let referenceBundle else { return .empty }
+        return try Self.decodeIfPresent(
+            TransportNetwork.self, "transport", referenceBundle, JSONDecoder()
+        ) ?? .empty
     }
 
     public func imageURL(for image: GuideImage) -> URL? {
@@ -237,6 +300,48 @@ public struct BundledReferenceStore: ReferenceStore {
             return try decoder.decode(T.self, from: Data(contentsOf: url))
         } catch {
             throw ReferenceStoreError.undecodable(resource: "\(name).json", underlying: error)
+        }
+    }
+}
+
+/// The trail catalogue, decoded on first use and kept.
+///
+/// A lock rather than an actor, because the store's API is synchronous and the decode
+/// happens once. A catalogue that fails to decode is an empty one — the parks keep their
+/// guides — and `BundledDataTests` is what notices.
+final class LazyTrails: @unchecked Sendable {
+    struct Catalogue {
+        let all: [Trail]
+        let byPlace: [UnigridsID: [Trail]]
+    }
+
+    private let lock = NSLock()
+    private let url: URL?
+    private var loaded: Catalogue?
+
+    init(url: URL?) {
+        self.url = url
+    }
+
+    init(trails: [Trail]) {
+        url = nil
+        loaded = Catalogue(all: trails, byPlace: Dictionary(grouping: trails, by: \.placeID))
+    }
+
+    var value: Catalogue {
+        lock.withLock {
+            if let loaded {
+                return loaded
+            }
+            let trails = url
+                .flatMap { try? Data(contentsOf: $0) }
+                .flatMap { try? JSONDecoder().decode([Trail].self, from: $0) } ?? []
+            let catalogue = Catalogue(
+                all: trails,
+                byPlace: Dictionary(grouping: trails, by: \.placeID)
+            )
+            loaded = catalogue
+            return catalogue
         }
     }
 }

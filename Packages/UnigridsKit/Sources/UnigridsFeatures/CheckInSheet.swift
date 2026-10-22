@@ -18,6 +18,7 @@ public struct CheckInSheet: View {
     let place: Place
 
     @State private var date = Date()
+    private var source = VisitSource.manual
     @State private var rating: Int?
     @State private var notes = ""
     @State private var selectedPOIs: Set<UnigridsID> = []
@@ -26,6 +27,20 @@ public struct CheckInSheet: View {
 
     public init(place: Place) {
         self.place = place
+    }
+
+    /// A check-in with some sights already ticked — from the 3D explorer's card, say,
+    /// where the reader is looking at one sight.
+    init(place: Place, preselecting pointsOfInterest: Set<UnigridsID>) {
+        self.place = place
+        _selectedPOIs = State(initialValue: pointsOfInterest)
+    }
+
+    /// A check-in for a visit the device noticed, dated when it noticed.
+    init(place: Place, date: Date, source: VisitSource) {
+        self.place = place
+        self.source = source
+        _date = State(initialValue: date)
     }
 
     private var checkInTargets: [PointOfInterest] {
@@ -146,7 +161,7 @@ public struct CheckInSheet: View {
             let visit = try log.checkIn(
                 to: place.id,
                 on: date,
-                source: .manual,
+                source: source,
                 rating: rating,
                 notes: notes,
                 trip: trips.first { $0.id == tripID }

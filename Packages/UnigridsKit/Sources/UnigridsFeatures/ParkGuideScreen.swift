@@ -16,14 +16,19 @@ public struct ParkGuideScreen: View {
     @Environment(\.referenceStore) private var store
     @Environment(\.unigrid) private var style
     @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.openWindow) private var openWindow
 
     let place: Place
 
     @State private var availableWidth: Double = 0
+    @State private var scrollPosition = ScrollPosition(edge: .top)
+    @State private var trainAccess: TrainAccess?
+    @Environment(TransportStore.self) private var transport: TransportStore?
     @State private var showCheckIn = false
     @State private var showStamp = false
     @State private var showAddToTrip = false
     @State private var showExplorer = false
+    @State private var showBrochure = false
     @Query private var visits: [Visit]
 
     public init(place: Place) {
@@ -48,6 +53,16 @@ public struct ParkGuideScreen: View {
                 }
             }
         }
+        .scrollPosition($scrollPosition)
+        .task(id: place.id) {
+            trainAccess = await ByTrainPanel.access(to: place, store: store, transport: transport)
+        }
+        .task {
+            if let offset = DebugLaunch.scrollOffset {
+                try? await Task.sleep(for: .seconds(1.5))
+                scrollPosition.scrollTo(y: offset)
+            }
+        }
         .background(style.page)
         .onGeometryChange(for: Double.self) { proxy in
             proxy.size.width - (UnigridStyle.pageMargin * 2)
@@ -60,20 +75,37 @@ public struct ParkGuideScreen: View {
         .sheet(isPresented: $showCheckIn) { CheckInSheet(place: place) }
         .sheet(isPresented: $showStamp) { StampSheet(place: place) }
         .sheet(isPresented: $showAddToTrip) { AddToTripSheet(place: place) }
-        #if os(iOS)
-            .fullScreenCover(isPresented: $showExplorer) { ParkExplorer(place: place) }
-        #else
-            .sheet(isPresented: $showExplorer) {
-                ParkExplorer(place: place).frame(minWidth: 900, minHeight: 640)
+        .explorer(isPresented: $showExplorer, place: place)
+        .sheet(isPresented: $showBrochure) {
+            BrochureScreen(place: place)
+                .sheetSize(width: 900, height: 760)
+        }
+        .onAppear {
+            if DebugLaunch.explores {
+                showExplorer = true
             }
-        #endif
+        }
     }
 
     @ToolbarContentBuilder
     private var toolbar: some ToolbarContent {
+        #if os(macOS)
+            ToolbarItem {
+                Button { openWindow(value: place.id) } label: {
+                    Label("Open in New Window", systemImage: "macwindow.badge.plus")
+                }
+            }
+        #endif
         ToolbarItem {
             Button { showExplorer = true } label: {
                 Label("Explore in 3D", systemImage: "view.3d")
+            }
+        }
+        if store.documents(for: place.id)?.documents.isEmpty == false {
+            ToolbarItem {
+                Button { showBrochure = true } label: {
+                    Label("Official brochure", systemImage: "doc.richtext")
+                }
             }
         }
         ToolbarItem {
@@ -140,6 +172,10 @@ public struct ParkGuideScreen: View {
                 .fixedSize(horizontal: false, vertical: true)
             }
 
+            ByTrainPanel(place: place, access: trainAccess)
+
+            BrochurePanel(place: place) { showBrochure = true }
+
             GuideActionsPanel(
                 onCheckIn: { showCheckIn = true },
                 onStamp: { showStamp = true },
@@ -185,7 +221,7 @@ public struct ParkGuideScreen: View {
         case .visitorCentres:
             VisitorCentresPanel(centres: centres)
         case .trailHighlights:
-            TrailHighlightsPanel(trails: store.trails(in: place.id))
+            TrailHighlightsPanel(place: place, trails: store.trails(in: place.id))
         case .alerts:
             AlertsPanel(parkCode: place.npsParkCode ?? "")
         case .planYourVisit:
@@ -195,7 +231,7 @@ public struct ParkGuideScreen: View {
                 hours: guide.operatingHours
             )
         case .weather:
-            NotePanel(panel: .weather, text: guide.weather ?? "", source: "National Park Service")
+            WeatherPanel(place: place, note: guide.weather)
         case .gettingThere:
             NotePanel(
                 panel: .gettingThere,

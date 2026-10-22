@@ -12,6 +12,7 @@ public struct ParkDirectoryScreen: View {
     enum Scope: String, CaseIterable, Identifiable {
         case nationalParks
         case everything
+        case trails
 
         var id: String {
             rawValue
@@ -21,6 +22,7 @@ public struct ParkDirectoryScreen: View {
             switch self {
             case .nationalParks: "National parks"
             case .everything: "Every place"
+            case .trails: "Trails"
             }
         }
     }
@@ -49,8 +51,11 @@ public struct ParkDirectoryScreen: View {
     @Query private var trips: [Trip]
 
     @State private var query = ""
+    @State private var trailFilter = TrailFilter()
+    @State private var typeFilter: SiteType?
     @AppStorage("parks.scope") private var scope = Scope.nationalParks
     @AppStorage("parks.sort") private var sort = Sort.name
+    @AppStorage("trails.sort") private var trailSort = TrailFilter.Sort.length
 
     public init() {}
 
@@ -59,13 +64,15 @@ public struct ParkDirectoryScreen: View {
     }
 
     private var places: [Place] {
-        if query.isEmpty {
+        let found = if query.isEmpty {
             scope == .nationalParks ? store.nationalParks : store.places
                 .sorted { $0.name < $1.name }
         } else {
-            store.search(query, limit: 200)
+            store.search(query, limit: 300)
                 .filter { scope == .everything || $0.tier == .nationalPark }
         }
+        guard scope == .everything, let typeFilter else { return found }
+        return found.filter { $0.siteType == typeFilter }
     }
 
     private var sections: [(String, [Place])] {
@@ -92,6 +99,19 @@ public struct ParkDirectoryScreen: View {
         }
     }
 
+    private var searchText: Binding<String> {
+        scope == .trails ? $trailFilter.query : $query
+    }
+
+    private var searchPrompt: String {
+        switch scope {
+        case .nationalParks: "Search 63 national parks"
+        case .everything:
+            typeFilter.map { "Search \($0.name.lowercased())" } ?? "Search every place"
+        case .trails: "Search \(store.allTrails.count.formatted()) trails"
+        }
+    }
+
     public var body: some View {
         NavigationStack {
             List {
@@ -114,39 +134,66 @@ public struct ParkDirectoryScreen: View {
                     .listRowBackground(Color.clear)
                 }
 
-                ForEach(sections, id: \.0) { title, places in
-                    Section {
-                        ForEach(places) { place in
-                            NavigationLink(value: place.id) {
-                                PlaceRow(place: place, status: index.status(for: place.id))
+                if scope == .trails {
+                    TrailCatalogueSections(
+                        trails: store.allTrails,
+                        filter: $trailFilter,
+                        sort: $trailSort,
+                        showsPark: true
+                    )
+                } else {
+                    ForEach(sections, id: \.0) { title, places in
+                        Section {
+                            ForEach(places) { place in
+                                NavigationLink(value: place.id) {
+                                    PlaceRow(place: place, status: index.status(for: place.id))
+                                }
+                                .listRowBackground(Color.clear)
                             }
-                            .listRowBackground(Color.clear)
+                        } header: {
+                            SectionHead(title, detail: "\(places.count)")
+                                .padding(.top, 6)
                         }
-                    } header: {
-                        SectionHead(title, detail: "\(places.count)")
-                            .padding(.top, 6)
                     }
                 }
             }
             .listStyle(.plain)
             .paperPage()
-            .searchable(
-                text: $query,
-                prompt: scope == .nationalParks
-                    ? "Search 63 national parks" : "Search every place"
-            )
+            .searchable(text: searchText, prompt: searchPrompt)
             .navigationTitle("Parks")
             .toolbarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem {
-                    Picker("Sort", selection: $sort) {
-                        ForEach(Sort.allCases) { Text($0.label).tag($0) }
+                if scope == .everything {
+                    ToolbarItem {
+                        Menu {
+                            Picker("Kind of place", selection: $typeFilter) {
+                                Text("Every kind").tag(SiteType?.none)
+                                ForEach(SiteType.allCases) { type in
+                                    Label(type.name, systemImage: UnigridsSymbol.site(type))
+                                        .tag(SiteType?.some(type))
+                                }
+                            }
+                        } label: {
+                            Label(
+                                "Kind of place",
+                                systemImage: typeFilter == nil
+                                    ? "line.3.horizontal.decrease.circle"
+                                    : "line.3.horizontal.decrease.circle.fill"
+                            )
+                        }
                     }
-                    .pickerStyle(.menu)
+                }
+                if scope != .trails {
+                    ToolbarItem {
+                        Picker("Sort", selection: $sort) {
+                            ForEach(Sort.allCases) { Text($0.label).tag($0) }
+                        }
+                        .pickerStyle(.menu)
+                    }
                 }
             }
             .overlay {
-                if places.isEmpty, !query.isEmpty {
+                if scope != .trails, places.isEmpty, !query.isEmpty {
                     ContentUnavailableView.search(text: query)
                 }
             }
@@ -234,8 +281,8 @@ struct PlaceRow: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            PlaceMarker(tier: place.tier, tint: style.agencyTint(for: place), status: status.marker)
-                .frame(width: 20)
+            SitePin(place: place, status: status.marker)
+                .frame(width: 36)
             VStack(alignment: .leading, spacing: 2) {
                 Text(place.name)
                     .font(UnigridStyle.rowTitle)

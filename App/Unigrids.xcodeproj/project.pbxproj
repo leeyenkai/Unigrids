@@ -226,6 +226,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Unigrids;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "If you turn on arrival suggestions, Unigrids watches the outlines of the parks nearest you so it can ask whether to log a visit when you arrive. It happens on this device; your location is never stored or sent.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Unigrids uses your location to show where you are on the map and to confirm a stamp was made on site. It is never uploaded or stored as a track.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Unigrids reads the dates and places of your photos on this device to suggest visits you have not logged. It stores references, never copies.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -264,6 +265,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Unigrids;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "If you turn on arrival suggestions, Unigrids watches the outlines of the parks nearest you so it can ask whether to log a visit when you arrive. It happens on this device; your location is never stored or sent.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Unigrids uses your location to show where you are on the map and to confirm a stamp was made on site. It is never uploaded or stored as a track.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Unigrids reads the dates and places of your photos on this device to suggest visits you have not logged. It stores references, never copies.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

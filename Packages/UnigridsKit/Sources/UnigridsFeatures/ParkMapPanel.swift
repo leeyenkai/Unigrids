@@ -45,6 +45,7 @@ struct ParkMapView: View {
     @Environment(\.unigrid) private var style
     let place: Place
     let boundary: PlaceBoundary?
+    var route: RouteLine?
     let sights: [PointOfInterest]
     let centres: [PointOfInterest]
     var interactive = true
@@ -58,7 +59,7 @@ struct ParkMapView: View {
     @State private var fallbackPosition: MapCameraPosition = .automatic
 
     var body: some View {
-        let tint = style.agencyTint(for: place)
+        let tint = style.siteTint(for: place)
         Map(position: position ?? $fallbackPosition, interactionModes: interactive ? .all : []) {
             if let boundary {
                 ForEach(Array(boundary.polygons.enumerated()), id: \.offset) { _, polygon in
@@ -66,6 +67,19 @@ struct ParkMapView: View {
                         .foregroundStyle(tint.opacity(0.14))
                         .stroke(tint, lineWidth: 1.6)
                 }
+            }
+            if let route {
+                ForEach(Array(route.paths.enumerated()), id: \.offset) { _, path in
+                    MapPolyline(coordinates: path.map(\.clCoordinate))
+                        .stroke(tint, style: StrokeStyle(lineWidth: 4, lineCap: .round))
+                }
+            }
+            if boundary == nil, route == nil {
+                // A landmark is a point: mark it with its own pin.
+                Annotation(place.name, coordinate: place.centre.clCoordinate) {
+                    SitePin(place: place)
+                }
+                .annotationTitles(.hidden)
             }
             ForEach(Array(sights.enumerated()), id: \.element.id) { offset, sight in
                 Annotation(sight.name, coordinate: sight.location.clCoordinate) {
@@ -94,6 +108,9 @@ struct ParkMapView: View {
     private var frame: BoundingBox {
         if let extent = boundary?.extent {
             return extent
+        }
+        if let extent = route?.extent {
+            return extent.expanded(by: 0.1)
         }
         let points = (sights + centres).map(\.location) + [place.centre]
         return BoundingBox.enclosing(points)?.expanded(by: 0.3)

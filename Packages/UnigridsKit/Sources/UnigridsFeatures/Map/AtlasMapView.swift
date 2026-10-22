@@ -16,6 +16,7 @@ import UnigridsCore
 struct AtlasPlace: Equatable {
     let place: Place
     let status: VisitStatusBadgeStatus
+    var alert: MapAlertLevel?
 }
 
 /// The base map under the outlines.
@@ -51,6 +52,9 @@ struct AtlasCameraRequest: Equatable {
     let id = UUID()
     let box: BoundingBox
     var animated = true
+    /// Points at the foot of the map that something covers — the iPhone's overview sheet —
+    /// so the box is framed in what stays visible.
+    var bottomInset: CGFloat = 0
 }
 
 /// The map home screen's map: every covered place as a pin, its outline as a tinted
@@ -65,10 +69,15 @@ struct AtlasCameraRequest: Equatable {
 struct AtlasMapView {
     let places: [AtlasPlace]
     let boundaries: [UnigridsID: PlaceBoundary]
+    let overviewBoundaries: [UnigridsID: PlaceBoundary]
+    let routes: [UnigridsID: RouteLine]
+    let transport: TransportNetwork
+    let layers: Set<TransportLayer>
     let selection: UnigridsID?
     let camera: AtlasCameraRequest?
     let basemap: AtlasBasemap
     let ink: AtlasInk
+    var showsUserLocation = false
     let onSelect: (UnigridsID?) -> Void
     let onRegionChange: (MKCoordinateRegion) -> Void
 
@@ -90,6 +99,10 @@ struct AtlasMapView {
         map.register(
             AtlasClusterView.self,
             forAnnotationViewWithReuseIdentifier: AtlasClusterView.reuse
+        )
+        map.register(
+            StationMarkerView.self,
+            forAnnotationViewWithReuseIdentifier: StationMarkerView.reuse
         )
         coordinator.attach(to: map)
         map.setRegion(Self.lower48, animated: false)
@@ -137,19 +150,30 @@ struct AtlasMapView {
 @MainActor
 final class AtlasCoordinator: NSObject, MKMapViewDelegate {
     var parent: AtlasMapView?
-    private weak var map: MKMapView?
+    weak var map: MKMapView?
 
-    private var annotations: [UnigridsID: PlaceAnnotation] = [:]
-    private var overlayCache: [UnigridsID: PlaceOverlay] = [:]
-    private var shownOverlays: [UnigridsID: PlaceOverlay] = [:]
-    private var renderers: [UnigridsID: MKMultiPolygonRenderer] = [:]
-    private var placesByID: [UnigridsID: AtlasPlace] = [:]
+    var annotations: [UnigridsID: PlaceAnnotation] = [:]
+    var overlayCache: [UnigridsID: PlaceOverlay] = [:]
+    var overviewCache: [UnigridsID: PlaceOverlay] = [:]
+    var shownOverlays: [UnigridsID: PlaceOverlay] = [:]
+    var renderers: [UnigridsID: MKMultiPolygonRenderer] = [:]
+    var placesByID: [UnigridsID: AtlasPlace] = [:]
 
-    private var ink: AtlasInk?
-    private var basemap: AtlasBasemap?
-    private var lastCameraID: UUID?
-    private var selected: UnigridsID?
-    private var latitudeSpan: Double = AtlasMapView.lower48.span.latitudeDelta
+    var routeCache: [UnigridsID: RouteOverlay] = [:]
+    var shownRoutes: [UnigridsID: RouteOverlay] = [:]
+    var routeRenderers: [UnigridsID: MKMultiPolylineRenderer] = [:]
+
+    var transportOverlays: [TransportLayer: TransportOverlay] = [:]
+    /// What the overlays were built from, by count: the network arrives once, and
+    /// comparing the whole of it on every SwiftUI update would cost more than drawing it.
+    var transportSignature = 0
+    var stationAnnotations: [StationAnnotation] = []
+
+    var ink: AtlasInk?
+    var basemap: AtlasBasemap?
+    var lastCameraID: UUID?
+    var selected: UnigridsID?
+    var latitudeSpan: Double = AtlasMapView.lower48.span.latitudeDelta
 
     func attach(to map: MKMapView) {
         self.map = map
@@ -172,16 +196,23 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
             map.preferredConfiguration = Self.configuration(for: view.basemap)
         }
 
+        if map.showsUserLocation != view.showsUserLocation {
+            map.showsUserLocation = view.showsUserLocation
+        }
+
         let inkChanged = ink != view.ink
         ink = view.ink
         syncAnnotations(view.places, on: map, restyleAll: inkChanged)
         syncOverlays(on: map, restyleAll: inkChanged)
+        syncTransport(view, on: map, restyleAll: inkChanged)
 
         if selected != view.selection {
             let previous = selected
             selected = view.selection
             restyleOverlay(previous)
             restyleOverlay(selected)
+            restyleRoute(previous)
+            restyleRoute(selected)
             if let previous, let annotation = annotations[previous] {
                 map.deselectAnnotation(annotation, animated: true)
                 (map.view(for: annotation) as? AtlasMarkerView)?.isEmphasised = false
@@ -198,23 +229,38 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
             // layout pass that delivers it, and the move then lands one request late.
             DispatchQueue.main.async { [weak self, weak map] in
                 guard let self, let map, lastCameraID == request.id else { return }
-                move(map, to: request.box, animated: request.animated)
+                move(
+                    map,
+                    to: request.box,
+                    animated: request.animated,
+                    bottomInset: request.bottomInset
+                )
             }
         }
     }
 
     // MARK: Annotations
 
-    private func syncAnnotations(_ places: [AtlasPlace], on map: MKMapView, restyleAll: Bool) {
-        let incoming = Dictionary(places.map { ($0.place.id, $0) }, uniquingKeysWith: { a, _ in a })
+    var allPlaces: [AtlasPlace] = []
+
+    /// Every place the filter lets through is outlined; only those `MapDetail` pins at
+    /// this zoom get an annotation.
+    func syncAnnotations(_ places: [AtlasPlace], on map: MKMapView, restyleAll: Bool) {
+        allPlaces = places
+        placesByID = Dictionary(places.map { ($0.place.id, $0) }, uniquingKeysWith: { a, _ in a })
+        let span = latitudeSpan
+        let incoming = placesByID.filter {
+            MapDetail.showsPin(for: $0.value.place.kind, latitudeSpan: span)
+        }
         let removed = annotations.keys.filter { incoming[$0] == nil }
         map.removeAnnotations(removed.compactMap { annotations.removeValue(forKey: $0) })
 
         var added: [PlaceAnnotation] = []
         for (id, item) in incoming {
             if let existing = annotations[id] {
-                if existing.status != item.status || restyleAll {
+                if existing.status != item.status || existing.alert != item.alert || restyleAll {
                     existing.status = item.status
+                    existing.alert = item.alert
                     restyleMarker(for: existing, on: map)
                 }
             } else {
@@ -224,52 +270,81 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
             }
         }
         map.addAnnotations(added)
-        placesByID = incoming
     }
 
-    private func restyleMarker(for annotation: PlaceAnnotation, on map: MKMapView) {
+    func restyleMarker(for annotation: PlaceAnnotation, on map: MKMapView) {
         guard let view = map.view(for: annotation) as? AtlasMarkerView, let ink else { return }
         view.configure(annotation: annotation, ink: ink, latitudeSpan: latitudeSpan)
     }
 
     // MARK: Outlines
 
-    /// Outlines are drawn for the national parks always, and for everything else only at
-    /// regional zoom and only where the camera is looking (`MapDetail`).
-    private func syncOverlays(on map: MKMapView, restyleAll: Bool) {
+    /// Every outline at every zoom (`MapDetail`): national parks at full detail always,
+    /// everything else from the country-scale set until the camera comes in, and then at
+    /// full detail where the camera is looking.
+    func syncOverlays(on map: MKMapView, restyleAll: Bool) {
         guard let parent else { return }
         let visible = BoundingBox(region: map.region).expanded(by: 0.5)
         var wanted: [UnigridsID: PlaceOverlay] = [:]
         for (id, item) in placesByID {
-            guard let boundary = parent.boundaries[id],
-                  MapDetail.showsOutline(for: item.place.tier, latitudeSpan: latitudeSpan),
-                  item.place.tier == .nationalPark || boundary.extent.intersects(visible)
-            else { continue }
-            wanted[id] = overlay(for: item.place, boundary: boundary)
+            wanted[id] = wantedOverlay(for: item, in: parent, visible: visible)
         }
 
-        let gone = shownOverlays.keys.filter { wanted[$0] == nil }
+        // An outline swapped between detail levels is a different overlay object, and goes
+        // out and back in like any other change.
+        let gone = shownOverlays.keys
+            .filter { wanted[$0] == nil || wanted[$0] !== shownOverlays[$0] }
         map.removeOverlays(gone.compactMap { shownOverlays.removeValue(forKey: $0) })
         for id in gone {
             renderers[id] = nil
         }
         let fresh = wanted.filter { shownOverlays[$0.key] == nil }
+        for id in fresh.keys {
+            renderers[id] = nil
+        }
         for (id, overlay) in fresh {
             shownOverlays[id] = overlay
         }
-        // Smaller tiers on top, so a state park inside a national forest stays tappable.
-        let ordered = fresh.values.sorted { $0.tier.rawValue < $1.tier.rawValue }
-        map.addOverlays(ordered, level: .aboveRoads)
+        // Smaller tiers on top, so a state park inside a national forest stays tappable,
+        // and every outline beneath the lines — byways and roads read over a park's tint.
+        let ordered = fresh.values.sorted { $0.tier.rawValue > $1.tier.rawValue }
+        for overlay in ordered {
+            map.insertOverlay(overlay, at: 0, level: .aboveRoads)
+        }
+
+        syncRoutes(on: map, visible: visible)
 
         if restyleAll {
             for id in renderers.keys {
                 restyleOverlay(id)
             }
+            for id in routeRenderers.keys {
+                restyleRoute(id)
+            }
         }
     }
 
-    private func overlay(for place: Place, boundary: PlaceBoundary) -> PlaceOverlay {
-        if let cached = overlayCache[place.id] {
+    /// The outline to draw for a place at the current zoom, or `nil` for none.
+    func wantedOverlay(
+        for item: AtlasPlace, in parent: AtlasMapView, visible: BoundingBox
+    ) -> PlaceOverlay? {
+        let tier = item.place.tier
+        guard MapDetail.showsOutline(for: tier, latitudeSpan: latitudeSpan) else { return nil }
+        if MapDetail.usesOverviewOutline(for: tier, latitudeSpan: latitudeSpan) {
+            guard let boundary = parent.overviewBoundaries[item.place.id] else { return nil }
+            return overlay(for: item.place, boundary: boundary, overview: true)
+        }
+        guard let boundary = parent.boundaries[item.place.id] else { return nil }
+        guard tier == .nationalPark || boundary.extent.intersects(visible) else { return nil }
+        return overlay(for: item.place, boundary: boundary, overview: false)
+    }
+
+    func overlay(
+        for place: Place,
+        boundary: PlaceBoundary,
+        overview: Bool
+    ) -> PlaceOverlay {
+        if let cached = overview ? overviewCache[place.id] : overlayCache[place.id] {
             return cached
         }
         let polygons = boundary.polygons.map { polygon -> MKPolygon in
@@ -283,38 +358,47 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
         let overlay = PlaceOverlay(polygons)
         overlay.placeID = place.id
         overlay.tier = place.tier
-        overlayCache[place.id] = overlay
+        overlay.isOverview = overview
+        if overview {
+            overviewCache[place.id] = overlay
+        } else {
+            overlayCache[place.id] = overlay
+        }
         return overlay
     }
 
-    private func restyleOverlay(_ id: UnigridsID?) {
+    func restyleOverlay(_ id: UnigridsID?) {
         guard let id, let renderer = renderers[id], let item = placesByID[id] else { return }
         style(renderer, for: item)
         renderer.setNeedsDisplay()
     }
 
-    private func style(_ renderer: MKMultiPolygonRenderer, for item: AtlasPlace) {
+    func style(_ renderer: MKMultiPolygonRenderer, for item: AtlasPlace) {
         guard let ink else { return }
         let tint = ink.tint(for: item.place)
         let isSelected = item.place.id == selected
         let visited = item.status == .visited
-        let base: Double = item.place.tier == .nationalPark ? 0.16 : 0.12
+        let overview = (renderer.overlay as? PlaceOverlay)?.isOverview == true
+        // At country scale the lands are a patchwork read as a whole, so they are tinted
+        // a touch lighter and ruled finer than when one of them fills the screen.
+        let base: Double = item.place.tier == .nationalPark ? 0.18 : (overview ? 0.14 : 0.12)
         renderer.fillColor = tint.platform.withAlphaComponent(
             isSelected ? 0.34 : (visited ? base + 0.1 : base)
         )
         renderer.strokeColor = (isSelected ? ink.ink : tint).platform
-        renderer.lineWidth = isSelected ? 2.6 : (item.place.tier == .nationalPark ? 1.4 : 1)
+        renderer.lineWidth = isSelected ? 2.6
+            : (item.place.tier == .nationalPark ? 1.4 : (overview ? 0.6 : 1))
         renderer.lineDashPattern = item.status == .planned && !isSelected ? [4, 3] : nil
     }
 
     // MARK: Camera
 
-    private func move(_ map: MKMapView, to box: BoundingBox, animated: Bool) {
+    func move(_ map: MKMapView, to box: BoundingBox, animated: Bool, bottomInset: CGFloat) {
         let rect = MKMapRect(box: box)
         #if os(iOS)
-            let padding = UIEdgeInsets(top: 60, left: 40, bottom: 60, right: 40)
+            let padding = UIEdgeInsets(top: 60, left: 40, bottom: 60 + bottomInset, right: 40)
         #else
-            let padding = NSEdgeInsets(top: 60, left: 40, bottom: 60, right: 40)
+            let padding = NSEdgeInsets(top: 60, left: 40, bottom: 60 + bottomInset, right: 40)
         #endif
         map.setVisibleMapRect(rect, edgePadding: padding, animated: animated)
     }
@@ -354,8 +438,12 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
             return
         }
         let coordinate = map.convert(point, toCoordinateFrom: map)
-        let candidates = shownOverlays.keys.compactMap { placesByID[$0]?.place }
         let tapped = Coordinate(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        if let byway = route(near: tapped, in: map) {
+            parent.onSelect(byway)
+            return
+        }
+        let candidates = shownOverlays.keys.compactMap { placesByID[$0]?.place }
         let hit = candidates
             .compactMap { place -> (UnigridsID, Double)? in
                 guard let boundary = parent.boundaries[place.id], boundary.contains(tapped)
@@ -367,78 +455,17 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
         parent.onSelect(hit)
     }
 
-    private func annotation(near point: CGPoint, in map: MKMapView) -> MKAnnotation? {
+    func annotation(near point: CGPoint, in map: MKMapView) -> MKAnnotation? {
         let slop: CGFloat = 18
         for annotation in map.annotations(in: map.visibleMapRect) {
-            guard let annotation = annotation as? MKAnnotation else { continue }
+            guard let annotation = annotation as? MKAnnotation,
+                  !(annotation is MKUserLocation) else { continue }
             let pinPoint = map.convert(annotation.coordinate, toPointTo: map)
             if abs(pinPoint.x - point.x) < slop, abs(pinPoint.y - point.y) < slop {
                 return annotation
             }
         }
         return nil
-    }
-
-    // MARK: MKMapViewDelegate
-
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        if let cluster = annotation as? MKClusterAnnotation {
-            let view = mapView.dequeueReusableAnnotationView(
-                withIdentifier: AtlasClusterView.reuse, for: cluster
-            ) as? AtlasClusterView
-            if let ink {
-                view?.configure(count: cluster.memberAnnotations.count, ink: ink)
-            }
-            return view
-        }
-        guard let annotation = annotation as? PlaceAnnotation, let ink else { return nil }
-        let view = mapView.dequeueReusableAnnotationView(
-            withIdentifier: AtlasMarkerView.reuse, for: annotation
-        ) as? AtlasMarkerView
-        view?.configure(annotation: annotation, ink: ink, latitudeSpan: latitudeSpan)
-        view?.isEmphasised = annotation.placeID == selected
-        return view
-    }
-
-    func mapView(_: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        guard let overlay = overlay as? PlaceOverlay, let item = placesByID[overlay.placeID] else {
-            return MKOverlayRenderer(overlay: overlay)
-        }
-        let renderer = MKMultiPolygonRenderer(multiPolygon: overlay)
-        style(renderer, for: item)
-        renderers[overlay.placeID] = renderer
-        return renderer
-    }
-
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        let annotation = view.annotation
-        if let cluster = annotation as? MKClusterAnnotation {
-            // A cluster is a promise of more pins; keep it, by zooming to show them.
-            mapView.deselectAnnotation(cluster, animated: false)
-            mapView.showAnnotations(cluster.memberAnnotations, animated: true)
-            return
-        }
-        guard let annotation = annotation as? PlaceAnnotation else { return }
-        if annotation.placeID != selected {
-            parent?.onSelect(annotation.placeID)
-        }
-    }
-
-    func mapView(_ mapView: MKMapView, regionDidChangeAnimated _: Bool) {
-        let span = mapView.region.span.latitudeDelta
-        let crossedLabelThreshold = Self.labelBand(span) != Self.labelBand(latitudeSpan)
-        latitudeSpan = span
-        syncOverlays(on: mapView, restyleAll: false)
-        if crossedLabelThreshold {
-            for annotation in annotations.values {
-                restyleMarker(for: annotation, on: mapView)
-            }
-        }
-        parent?.onRegionChange(mapView.region)
-    }
-
-    private static func labelBand(_ span: Double) -> [Bool] {
-        PlaceTier.allCases.map { MapDetail.showsLabel(for: $0, latitudeSpan: span) }
     }
 }
 

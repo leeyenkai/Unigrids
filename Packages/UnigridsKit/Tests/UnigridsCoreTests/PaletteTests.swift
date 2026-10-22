@@ -1,3 +1,4 @@
+import Foundation
 import Testing
 @testable import UnigridsCore
 
@@ -162,5 +163,109 @@ struct PaletteTests {
         }
         #expect(AgencyInk.forPlace(agency: .nps, tier: .nationalPark) == .nationalPark)
         #expect(AgencyInk.forPlace(agency: .nps, tier: .npsUnit) == .npsUnit)
+    }
+}
+
+@Suite("Site inks")
+struct SiteInkTests {
+    @Test("a white pictogram reads on every pin", arguments: SiteInk.allCases)
+    func pictogramReads(ink: SiteInk) {
+        let pairing = ContrastPairing(
+            name: "pictogram on \(ink.rawValue)",
+            foreground: SiteInk.pictogram,
+            background: ink.pin,
+            requirement: .userInterface
+        )
+        #expect(pairing.passes, "\(pairing)")
+    }
+
+    @Test("the visited tick reads, white on its green")
+    func visitedTickReads() {
+        #expect(Contrast.meets(
+            .userInterface, foreground: SiteInk.pictogram, background: SiteInk.visitedTick
+        ))
+    }
+
+    @Test(
+        "an outline or list tint is findable on the surfaces it lands on",
+        arguments: SiteInk.allCases, PaletteScheme.allCases
+    )
+    func outlineIsFindable(ink: SiteInk, scheme: PaletteScheme) {
+        for surface in scheme.referenceSurfaces {
+            let pairing = ContrastPairing(
+                name: "\(ink.rawValue) on \(surface.name)",
+                foreground: ink.value(scheme),
+                background: surface.value,
+                requirement: .userInterface
+            )
+            #expect(pairing.passes, "\(scheme.rawValue) \(pairing)")
+        }
+    }
+
+    @Test("a kind of place keeps its hue between schemes", arguments: SiteInk.allCases)
+    func keepsItsHue(ink: SiteInk) {
+        guard let light = ink.value(.light).hueDegrees,
+              let dark = ink.value(.dark).hueDegrees
+        else { return }
+        let drift = abs((dark - light + 540).truncatingRemainder(dividingBy: 360) - 180)
+        #expect(drift <= 12, "\(ink.rawValue) hue moved \(drift)°")
+    }
+
+    @Test("no two kinds of place are drawn in colours the eye would confuse")
+    func pinsAreDistinct() {
+        // CIE76 distance in Lab. Around 2.3 is the smallest difference anyone notices; 30
+        // is two colours nobody would call the same at a glance, which is the point of
+        // colouring pins by kind (they looked alike when they were all agency greens).
+        for (index, one) in SiteInk.allCases.enumerated() {
+            for other in SiteInk.allCases.dropFirst(index + 1) {
+                let distance = one.pin.lab.distance(to: other.pin.lab)
+                #expect(distance >= 30, "\(one.rawValue) and \(other.rawValue): \(distance)")
+            }
+        }
+    }
+
+    @Test("every site type has an ink, and every ink is used")
+    func mappingIsTotal() {
+        let used = Set(SiteType.allCases.map(\.ink))
+        #expect(used == Set(SiteInk.allCases))
+        #expect(SiteType.battlefield.ink == SiteType.historicSite.ink)
+        #expect(SiteType.nationalForest.ink != SiteType.nationalPark.ink)
+    }
+}
+
+/// CIE L*a*b* under D65, for the distinctness test.
+private struct LabColour {
+    let lightness: Double
+    let greenRed: Double
+    let blueYellow: Double
+
+    func distance(to other: LabColour) -> Double {
+        let lightnessGap = lightness - other.lightness
+        let redGap = greenRed - other.greenRed
+        let yellowGap = blueYellow - other.blueYellow
+        return (lightnessGap * lightnessGap + redGap * redGap + yellowGap * yellowGap)
+            .squareRoot()
+    }
+}
+
+extension ColorValue {
+    fileprivate var lab: LabColour {
+        func expand(_ channel: Double) -> Double {
+            channel <= 0.04045 ? channel / 12.92 : pow((channel + 0.055) / 1.055, 2.4)
+        }
+        let red = expand(red)
+        let green = expand(green)
+        let blue = expand(blue)
+        let xRatio = (0.4124 * red + 0.3576 * green + 0.1805 * blue) / 0.950_47
+        let yRatio = 0.2126 * red + 0.7152 * green + 0.0722 * blue
+        let zRatio = (0.0193 * red + 0.1192 * green + 0.9505 * blue) / 1.088_83
+        func pivot(_ value: Double) -> Double {
+            value > 0.008_856 ? pow(value, 1.0 / 3) : 7.787 * value + 16.0 / 116
+        }
+        return LabColour(
+            lightness: 116 * pivot(yRatio) - 16,
+            greenRed: 500 * (pivot(xRatio) - pivot(yRatio)),
+            blueYellow: 200 * (pivot(yRatio) - pivot(zRatio))
+        )
     }
 }

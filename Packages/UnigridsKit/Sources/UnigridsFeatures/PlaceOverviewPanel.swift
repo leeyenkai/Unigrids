@@ -21,6 +21,7 @@ struct PlaceOverviewPanel: View {
     @State private var showCheckIn = false
     @State private var showStamp = false
     @State private var showAddToTrip = false
+    @State private var showExplorer = false
 
     private var placeVisits: [Visit] {
         visits.filter { $0.place == place.id }.sorted { $0.date > $1.date }
@@ -40,6 +41,11 @@ struct PlaceOverviewPanel: View {
                     VisitStatusLine(visits: placeVisits)
                     if let summary = place.summary {
                         OverviewSummary(text: summary, source: place.summarySource)
+                    } else {
+                        Text(place.factualDescription)
+                            .font(UnigridStyle.proseSmall)
+                            .foregroundStyle(style.ink)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
                     OverviewFigures(place: place)
                     OverviewActions(
@@ -48,7 +54,8 @@ struct PlaceOverviewPanel: View {
                         onOpen: { onOpen(place) },
                         onCheckIn: { showCheckIn = true },
                         onStamp: { showStamp = true },
-                        onAddToTrip: { showAddToTrip = true }
+                        onAddToTrip: { showAddToTrip = true },
+                        onExplore: { showExplorer = true }
                     )
                 }
                 .padding(16)
@@ -58,6 +65,7 @@ struct PlaceOverviewPanel: View {
         .sheet(isPresented: $showCheckIn) { CheckInSheet(place: place) }
         .sheet(isPresented: $showStamp) { StampSheet(place: place) }
         .sheet(isPresented: $showAddToTrip) { AddToTripSheet(place: place) }
+        .explorer(isPresented: $showExplorer, place: place)
     }
 }
 
@@ -145,7 +153,16 @@ struct OverviewSummary: View {
 /// The figures a place has, and none it does not.
 struct OverviewFigures: View {
     @Environment(\.unigrid) private var style
+    @Environment(\.referenceStore) private var store
     let place: Place
+
+    /// A landmark or a byway is designated, not established.
+    private var yearLabel: String {
+        switch place.kind {
+        case .naturalLandmark, .scenicByway: "Designated"
+        default: "Established"
+        }
+    }
 
     var body: some View {
         let facts = place.facts
@@ -156,12 +173,19 @@ struct OverviewFigures: View {
                 spacing: 14
             ) {
                 if let year = facts.establishedYear {
-                    FigureBlock(value: String(year), label: "Established", compact: true)
+                    FigureBlock(value: String(year), label: yearLabel, compact: true)
                 }
                 if let acres = facts.areaAcres {
                     FigureBlock(
                         value: UnigridsFormat.area(acres: acres),
-                        label: "Area",
+                        label: place.kind == .nationalForest ? "Within boundary" : "Area",
+                        compact: true
+                    )
+                }
+                if let route = store.route(for: place.id) {
+                    FigureBlock(
+                        value: UnigridsFormat.distance(metres: route.length),
+                        label: "Route, mapped",
                         compact: true
                     )
                 }
@@ -190,6 +214,7 @@ struct OverviewActions: View {
     let onCheckIn: () -> Void
     let onStamp: () -> Void
     let onAddToTrip: () -> Void
+    var onExplore: (() -> Void)?
 
     var body: some View {
         VStack(spacing: 8) {
@@ -201,6 +226,13 @@ struct OverviewActions: View {
                     )
                 }
                 .buttonStyle(BrochureButtonStyle(.primary))
+            }
+
+            if let onExplore {
+                Button(action: onExplore) {
+                    Label("Explore in 3D", systemImage: "view.3d")
+                }
+                .buttonStyle(BrochureButtonStyle(leafletMode ? .primary : .secondary))
             }
 
             HStack(spacing: 8) {
@@ -233,8 +265,25 @@ struct OverviewActions: View {
                     )
                 }
                 .buttonStyle(BrochureButtonStyle(.secondary))
+            } else if let url = lookUpURL {
+                // No official page Unigrids can vouch for: offer a search, which sends the
+                // place's name to Wikipedia only when the reader asks.
+                Link(destination: url) {
+                    Label("Look it up on Wikipedia", systemImage: "magnifyingglass")
+                }
+                .buttonStyle(BrochureButtonStyle(.secondary))
             }
         }
+    }
+}
+
+extension OverviewActions {
+    private var lookUpURL: URL? {
+        var components = URLComponents(string: "https://en.wikipedia.org/w/index.php")
+        components?.queryItems = [
+            URLQueryItem(name: "search", value: "\(place.name) \(place.designation)"),
+        ]
+        return components?.url
     }
 }
 

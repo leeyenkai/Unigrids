@@ -100,3 +100,63 @@ public enum TripCalendar {
         )
     }
 }
+
+/// A trip as GPX: one waypoint per place, in order, for any mapping app
+/// (SPECIFICATION.md §9, "trips as GPX of visited points").
+public enum TripGPX {
+    public struct Waypoint: Hashable, Sendable {
+        public let name: String
+        public let coordinate: Coordinate
+        public let date: Date?
+        public let note: String?
+
+        public init(name: String, coordinate: Coordinate, date: Date? = nil, note: String? = nil) {
+            self.name = name
+            self.coordinate = coordinate
+            self.date = date
+            self.note = note
+        }
+    }
+
+    public static func document(name: String, waypoints: [Waypoint]) -> String {
+        var lines = [
+            #"<?xml version="1.0" encoding="UTF-8"?>"#,
+            #"<gpx version="1.1" creator="Unigrids" xmlns="http://www.topografix.com/GPX/1/1">"#,
+            "  <metadata><name>\(escape(name))</name></metadata>",
+        ]
+        for point in waypoints {
+            let lat = String(format: "%.5f", point.coordinate.latitude)
+            let lon = String(format: "%.5f", point.coordinate.longitude)
+            lines.append("  <wpt lat=\"\(lat)\" lon=\"\(lon)\">")
+            if let date = point.date {
+                lines.append("    <time>\(date.ISO8601Format())</time>")
+            }
+            lines.append("    <name>\(escape(point.name))</name>")
+            if let note = point.note, !note.isEmpty {
+                lines.append("    <desc>\(escape(note))</desc>")
+            }
+            lines.append("  </wpt>")
+        }
+        if waypoints.count > 1 {
+            lines.append("  <rte><name>\(escape(name))</name>")
+            for point in waypoints {
+                let lat = String(format: "%.5f", point.coordinate.latitude)
+                let lon = String(format: "%.5f", point.coordinate.longitude)
+                let name = escape(point.name)
+                let point = #"lat="\#(lat)" lon="\#(lon)""#
+                lines.append("    <rtept \(point)><name>\(name)</name></rtept>")
+            }
+            lines.append("  </rte>")
+        }
+        lines.append("</gpx>")
+        return lines.joined(separator: "\n") + "\n"
+    }
+
+    static func escape(_ text: String) -> String {
+        text
+            .replacingOccurrences(of: "&", with: "&amp;")
+            .replacingOccurrences(of: "<", with: "&lt;")
+            .replacingOccurrences(of: ">", with: "&gt;")
+            .replacingOccurrences(of: "\"", with: "&quot;")
+    }
+}

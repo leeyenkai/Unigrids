@@ -11,12 +11,15 @@ public struct TripsScreen: View {
     @Environment(\.referenceStore) private var store
     @Environment(\.modelContext) private var context
     @Environment(\.unigrid) private var style
+    @Environment(UndoCenter.self) private var undo: UndoCenter?
 
     @Query(sort: \Visit.date, order: .reverse) private var visits: [Visit]
     @Query(sort: \Trip.createdAt, order: .reverse) private var trips: [Trip]
 
     @State private var editing: Visit?
     @State private var creatingTrip = false
+    @State private var importingPhotos = false
+    @State private var path = NavigationPath()
     @State private var error: String?
 
     public init() {}
@@ -35,7 +38,7 @@ public struct TripsScreen: View {
     }
 
     public var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             List {
                 Section {
                     VStack(alignment: .leading, spacing: 0) {
@@ -56,6 +59,8 @@ public struct TripsScreen: View {
                     .listRowSeparator(.hidden)
                     .listRowBackground(Color.clear)
                 }
+
+                DetectedVisitsSection(visits: visits)
 
                 if trips.isEmpty, visits.isEmpty {
                     Section {
@@ -96,6 +101,24 @@ public struct TripsScreen: View {
             .paperPage()
             .navigationTitle("Trips")
             .toolbarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        importingPhotos = true
+                    } label: {
+                        Label("Import from Photos", systemImage: "photo.on.rectangle.angled")
+                    }
+                }
+            }
+            .sheet(isPresented: $importingPhotos) {
+                PhotoImportScreen()
+            }
+            .onAppear {
+                let first = openTrips.first ?? trips.first
+                if DebugLaunch.opensFirstTrip, path.isEmpty, let first {
+                    path.append(first)
+                }
+            }
             .navigationDestination(for: Trip.self) { trip in
                 TripDetailScreen(trip: trip)
             }
@@ -131,7 +154,8 @@ public struct TripsScreen: View {
 
     private func delete(_ visit: Visit) {
         do {
-            try LogStore(context: context).delete(visit)
+            let record = try LogStore(context: context).delete(visit: visit)
+            undo?.offer(record, message: record.summary { store.place($0)?.name })
         } catch {
             self.error = error.localizedDescription
         }
@@ -180,7 +204,7 @@ struct TripRow: View {
             if !places.isEmpty {
                 HStack(spacing: 4) {
                     ForEach(places.prefix(14)) { place in
-                        PlaceMarker(tier: place.tier, tint: style.agencyTint(for: place))
+                        PlaceMarker(tier: place.tier, tint: style.siteTint(for: place))
                     }
                     if places.count > 14 {
                         Text("+\(places.count - 14)")
@@ -229,7 +253,7 @@ struct VisitRow: View {
                 if let place {
                     PlaceMarker(
                         tier: place.tier,
-                        tint: style.agencyTint(for: place),
+                        tint: style.siteTint(for: place),
                         status: .visited
                     )
                     .frame(width: 20)
@@ -278,6 +302,7 @@ struct VisitEditor: View {
     @Environment(\.unigrid) private var style
     @Environment(\.dismiss) private var dismiss
     @Environment(\.referenceStore) private var store
+    @Environment(UndoCenter.self) private var undo: UndoCenter?
     @Query(sort: \Trip.createdAt, order: .reverse) private var trips: [Trip]
 
     let visit: Visit
@@ -422,7 +447,8 @@ struct VisitEditor: View {
 
     private func deleteVisit() {
         do {
-            try LogStore(context: context).delete(visit)
+            let record = try LogStore(context: context).delete(visit: visit)
+            undo?.offer(record, message: record.summary { store.place($0)?.name })
             dismiss()
         } catch {
             self.error = error.localizedDescription

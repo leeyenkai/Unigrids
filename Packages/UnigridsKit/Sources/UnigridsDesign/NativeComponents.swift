@@ -5,12 +5,12 @@ import UnigridsCore
 // passport, stats and settings use the current Apple design, so these components lean on
 // semantic colours and system fonts rather than the Unigrid palette.
 
-/// How a place is drawn on the map: colour by agency, symbol by kind.
+/// How a place is drawn on the map: colour by kind of place, symbol by kind.
 public enum PlaceStyle {
-    /// Takes the resolved style because an agency ink has a light and a dark variant: the
+    /// Takes the resolved style because a site ink has a light and a dark variant: the
     /// light ones sit at under 2:1 on a dark list row, which is how they went unread.
     public static func tint(for place: Place, in style: UnigridStyle) -> Color {
-        style.agencyTint(for: place)
+        style.siteTint(for: place)
     }
 
     public static func symbol(for place: Place) -> String {

@@ -234,4 +234,53 @@ struct LogStoreTests {
         #expect(LogExport.csvField("a,b") == "\"a,b\"")
         #expect(LogExport.csvField("say \"hi\"") == "\"say \"\"hi\"\"\"")
     }
+
+    @Test("a deleted visit comes back with its check-ins, hikes, stamps and trip")
+    func undoVisitDeletion() throws {
+        let trip = try store.createTrip(name: "Utah")
+        let visit = try store.checkIn(to: "np-zion", on: date(2026, 5, 1), trip: trip)
+        try store.checkIn(at: .pointOfInterest("poi-zion-angels-landing"), during: visit)
+        let stamp = try store.stamp("np-zion", on: date(2026, 5, 1))
+        try store.markHiked("trail-zion-watchman-trail", in: "np-zion", on: date(2026, 5, 1))
+        let originalID = visit.id
+        #expect(stamp.visit?.id == originalID)
+
+        let record = try store.delete(visit: visit)
+        #expect(try store.visits().isEmpty)
+        #expect(try store.stamps().first?.visit == nil)
+
+        try store.restore(record)
+        let restored = try #require(try store.visits().first)
+        #expect(restored.id == originalID)
+        #expect(restored.trip?.id == trip.id)
+        #expect(restored.checkIns?.count == 2)
+        #expect(restored.hikes?.count == 1)
+        #expect(try store.stamps().first?.visit?.id == originalID)
+    }
+
+    @Test("a deleted trip comes back with its stops, and its visits rejoin it")
+    func undoTripDeletion() throws {
+        let trip = try store.createTrip(name: "Utah")
+        try store.addStop("np-zion", to: trip)
+        try store.addStop("np-arches", to: trip)
+        let visit = try store.checkIn(to: "np-zion", on: date(2026, 5, 1), trip: trip)
+        let record = try store.delete(trip: trip)
+        #expect(try store.trips().isEmpty)
+        #expect(visit.trip == nil)
+        try store.restore(record)
+        let restored = try #require(try store.trips().first)
+        #expect(restored.orderedStops.map(\.place) == ["np-zion", "np-arches"])
+        #expect(try store.visits().first?.trip?.id == restored.id)
+    }
+
+    @Test("a deleted stamp comes back with its impression unchanged")
+    func undoStampDeletion() throws {
+        let stamp = try store.stamp("np-acadia", on: date(2026, 7, 4))
+        let seed = stamp.seed
+        let record = try store.delete(stamp: stamp)
+        #expect(try store.stamps().isEmpty)
+        try store.restore(record)
+        #expect(try store.stamps().first?.seed == seed)
+        #expect(try store.stamps().first?.visit != nil)
+    }
 }

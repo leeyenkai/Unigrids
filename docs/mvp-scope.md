@@ -1,3 +1,61 @@
+# Toward 1.0.0 — every feature fleshed out
+
+The owner's brief for this round: review the app, build out what the specification still
+asks for — the 3D feature especially — and take every feature to release standard, with
+the design finished throughout. On the map specifically: every federal land outlined, not
+only national parks; a different pin for each kind of site; and optional layers for the
+major roads and Interstates and for the Amtrak network.
+
+"The 3D character feature" was read as §7, 3D park exploration: the specification has no
+character, and §7 is the 3D feature it does describe. If a character was meant — a figure
+walking the trails, say — that is new scope for the specification first.
+
+## Built in this round
+
+| Area | What works | Specification |
+|---|---|---|
+| Reference data | 2,052 places, 1,260 outlines plus a country-scale set, 186 byway routes, Interstates, US routes, 49 Amtrak routes and 569 stations, 3,239 measured trails, document links for 434 NPS sites, ten-year climate for 63 parks | §12 |
+| Map | Every outline at every zoom; eighteen site types, each a solid pin in its kind's colour with its own pictogram, shaped by tier (ADR 0009); a key that lists them and filters by them; Interstate, US highway and Amtrak layers; filters by type, visited, state, activity and stamp location; alert badges; detail by zoom | §5 |
+| 3D | An explorer for every place: terrain and imagery, outline, numbered sights, facilities and trails; sight list or sidebar; fly-to with cards; a guided fly-through; reset; Look Around | §7 |
+| Trails | Catalogue for 59 parks with distance, climb, profile, estimated time and difficulty, features, sights along the way; filters; mark as hiked; a page, map and 3D view per trail | §8 |
+| Guides and leaflets | Climate chart, by train, official maps and brochures, trail highlights from the catalogue; leaflet pages with route maps, documents and managing agency; Mac windows | §6 |
+| Documents | PDF viewer, kept on device once opened, saved ahead for upcoming trips, Save for offline, listed and cleared in Settings, maps-page fallback | §6 |
+| Planner | Drive times, day totals and long-day warnings, closure, reservation and seasonal flags, 16-day forecasts, permit and booking reminders, roads on the trip map, GPX export | §10 |
+| Logging | Auto-detected visits (iPhone and iPad), photo import, a weather snapshot per visit, undo after deleting a visit, trip or stamp | §9 |
+| Passport and stats | A slot per stamp location, every impression in a slot, page export; kinds of place, visits by month, weather, distance walked and climb | §9, §11 |
+| Identity | Pictogram pins wherever a place is listed; road-atlas line styles; a four-panel welcome | §14 |
+
+## Not built in this round
+
+Offline map packs in the app (the pipeline builds and measures them; nothing reads one),
+widgets and the Watch app, an "open this season" filter (no source), monthly visitation
+for the weather-versus-crowds view, background alert refresh, itinerary stops below the
+place level, per-card share cards and archived brochure editions. Each is listed in
+`SPECIFICATION.md` §17 (follow-up 19) with the reason.
+
+## Checked, and not checked
+
+- [x] `scripts/test.sh` and `scripts/build.sh` pass: 189 Swift tests in 32 suites, and the
+      app builds for the iOS Simulator and macOS without warnings. The pipeline's 80
+      tests pass, and `scripts/lint.sh` (SwiftFormat, strict SwiftLint, ruff) is clean.
+- [x] Bundled data is held by tests: every kind of place present, outlines for every kind
+      that has one, byway routes, transport, trails measured, documents and climate, and
+      the store opening in well under a second (about 0.24 s in a release build, trails
+      decoded only when first asked for).
+- [x] On macOS: the Lower 48 with every outline and pictogram, the Rockies with all three
+      layers, the key, a park selection with its alert badge, Zion's explorer from overview
+      to a sight close up, Glacier's guide (climate, by train, documents), the trail
+      catalogue and a trail page, a trip with live alerts, forecasts and roads, Stats, a
+      passport region, and leaflets for a forest and a byway.
+- [x] On iPhone, from a throwaway copy built for the iOS 26.5 Simulator: the map, a
+      place card, a guide and the explorer.
+- [ ] **iPad**, and anything on an **iOS 27** runtime, which this machine still lacks.
+- [ ] **Auto-detected visits, reminders and photo import on a device.** Their logic is
+      unit-tested; background region monitoring and notifications need a real iPhone.
+- [ ] **iCloud sync and WeatherKit**, both waiting on a development team.
+- [ ] **Live alerts and alert flags** need `scripts/write-secrets.sh` run once on the
+      building machine; they were seen working with a key.
+
 # Milestone 0.2.0 — MVP, for a first demo
 
 The owner's brief for this round: take the app to a state that can be tested and shown to

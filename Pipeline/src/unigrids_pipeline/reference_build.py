@@ -8,6 +8,12 @@ Writes, into ``UnigridsReference/Resources/reference/``:
 ``themes.json``       theme tags
 ``guides/np-*.json``  one Unigrid guide per national park
 ``boundaries.json``   every outline, as encoded polylines
+``boundaries-overview.json``  the same outlines generalised for country scale
+``routes.json``       every scenic byway's line (``lands_build``)
+``transport.json``    Interstates, US routes, Amtrak routes and stations (``lands_build``)
+``trails.json``       every national park trail, measured (``trail_catalogue``)
+``brochures.json``    each NPS unit's official PDFs and maps page (``brochures``)
+``climate.json``      monthly climate at each national park (``climate``)
 ``images/``           each national park's photographs, resized
 
 The split of responsibility is the one ``content/README.md`` describes: the NPS API says
@@ -27,7 +33,16 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from . import config, ids, outline, reference_content
+from . import (
+    brochures,
+    climate,
+    config,
+    ids,
+    lands_build,
+    outline,
+    reference_content,
+    trail_catalogue,
+)
 from .reference_fetch import photo_filename
 
 OUT = config.REPO_ROOT / "Packages/UnigridsKit/Sources/UnigridsReference/Resources/reference"
@@ -134,6 +149,7 @@ def build() -> None:
         places.append(place)
         pois.extend(unit_pois)
 
+    curated_ids = {site["id"] for site in reference_content.curated_sites()}
     for site in reference_content.curated_sites():
         key = site["id"]
         polygons = padus.get(key)
@@ -146,6 +162,19 @@ def build() -> None:
         boundaries[place["id"]] = outline_entry
         places.append(place)
 
+    routes: dict[str, Any] = {}
+    lands = _latest_raw_or_none("federal-lands")
+    if lands is not None:
+        routes = lands_build.build(lands, places, boundaries)
+    transport_dir = _latest_raw_or_none("transport")
+    transport = lands_build.build_transport(transport_dir) if transport_dir else None
+    trails_dir = _latest_raw_or_none("trails-national")
+    catalogue = trail_catalogue.build(trails_dir, unit_outlines, pois) if trails_dir else None
+    brochures_dir = _latest_raw_or_none("brochures")
+    documents = brochures.build(brochures_dir, places) if brochures_dir else None
+    climate_dir = _latest_raw_or_none("climate")
+    normals = climate.build(climate_dir) if climate_dir else None
+
     for stale in images_dir.iterdir():
         if stale.name not in written_images:
             stale.unlink()
@@ -155,6 +184,16 @@ def build() -> None:
     _write("pois", pois)
     _write("themes", reference_content.themes())
     _write("boundaries", boundaries, compact=True)
+    _write("boundaries-overview", _overview_outlines(boundaries), compact=True)
+    _write("routes", routes, compact=True)
+    if transport is not None:
+        _write("transport", transport, compact=True)
+    if catalogue is not None:
+        _write("trails", catalogue, compact=True)
+    if documents is not None:
+        _write("brochures", documents, compact=True)
+    if normals is not None:
+        _write("climate", normals, compact=True)
     for place_id, guide in guides.items():
         _write(f"guides/{place_id}", guide)
 
@@ -169,7 +208,14 @@ def build() -> None:
     print(f"    photographs: {len(list(images_dir.iterdir()))}, {image_bytes / 1e6:.1f} MB")
     written = sum(1 for guide in guides.values() if guide.get("story"))
     print(f"    guides with written content: {written} of {len(guides)}")
-    unwritten = [place["id"] for place in places if place.get("summary") is None]
+    # The other public lands carry no prose by design (lands_build); only an NPS unit or
+    # a curated site without one is worth reporting.
+    unwritten = [
+        place["id"]
+        for place in places
+        if place.get("summary") is None
+        and (place["kind"] in ("nationalPark", "npsUnit") or place["id"] in curated_ids)
+    ]
     if unwritten:
         print(f"    places without a summary: {', '.join(unwritten)}")
 
@@ -216,7 +262,11 @@ def _national_park(
         size, quality = (HERO_SIZE, HERO_QUALITY) if hero is None else (
             GALLERY_SIZE, GALLERY_QUALITY
         )
-        if source is not None and source.exists():
+        # A photograph already resized is left alone: rewriting identical bytes on every
+        # build churns a synced checkout, and iCloud answers churn with conflict copies.
+        if (images_dir / name).exists():
+            pass
+        elif source is not None and source.exists():
             if not _resize(source, images_dir / name, size, quality):
                 continue
         elif not (images_dir / name).exists():
@@ -255,6 +305,8 @@ def _national_park(
         "summary": summary or _clean(park.get("description")),
         "summarySource": "Unigrids" if summary else "National Park Service",
     }
+    if activities := _activities(park):
+        place["activities"] = activities
     if hero:
         place["image"] = hero
 
@@ -445,10 +497,44 @@ def _nps_unit(park: dict[str, Any], api: _NPSData) -> tuple[dict[str, Any], list
         "summary": _clean(park.get("description")),
         "summarySource": "National Park Service",
     }
+    if activities := _activities(park):
+        place["activities"] = activities
     if photo:
         place["image"] = _guide_image(photo[0])
     pois = _visitor_centres(code.lower(), place_id, api.visitor_centres_for(code), api, code)
     return place, pois
+
+
+# The NPS Data API's activity names, folded into the dozen the map can filter on
+# (``UnigridsCore.PlaceActivity``). An activity not listed here is not offered as a filter.
+ACTIVITY_GROUPS: dict[str, tuple[str, ...]] = {
+    "hiking": ("Hiking", "Front-Country Hiking", "Backcountry Hiking"),
+    "camping": (
+        "Camping", "Backcountry Camping", "Car or Front Country Camping", "RV Camping",
+        "Group Camping", "Canoe or Kayak Camping", "Horse Camping",
+    ),
+    "scenicDriving": ("Scenic Driving", "Self-Guided Tours - Auto"),
+    "wildlifeWatching": ("Wildlife Watching", "Birdwatching"),
+    "paddling": (
+        "Paddling", "Kayaking", "Canoeing", "Boating", "Stand Up Paddleboarding",
+        "Motorized Boating", "Sailing", "Boat Tour",
+    ),
+    "fishing": ("Fishing", "Freshwater Fishing", "Saltwater Fishing", "Fly Fishing"),
+    "stargazing": ("Astronomy", "Stargazing"),
+    "biking": ("Biking", "Road Biking", "Mountain Biking"),
+    "swimming": ("Swimming", "Freshwater Swimming", "Saltwater Swimming"),
+    "winterSports": (
+        "Skiing", "Snowshoeing", "Cross-Country Skiing", "Downhill Skiing", "Snowmobiling",
+        "Ice Skating",
+    ),
+    "climbing": ("Climbing", "Rock Climbing", "Mountain Climbing", "Ice Climbing"),
+    "museums": ("Museum Exhibits", "Living History"),
+}
+
+
+def _activities(park: dict[str, Any]) -> list[str]:
+    named = {(activity.get("name") or "").strip() for activity in park.get("activities") or []}
+    return [group for group, names in ACTIVITY_GROUPS.items() if named.intersection(names)]
 
 
 def _designation_from_name(park: dict[str, Any]) -> str:
@@ -631,6 +717,28 @@ def _encode_outline(
     }
 
 
+# The country-scale outlines, in degrees: about 900 m. Drawn when the whole Lower 48 is
+# on screen, where a pixel is several kilometres, so nothing finer would show; a speck that
+# vanishes at this tolerance leaves its pin to stand for it.
+OVERVIEW_TOLERANCE = 0.008
+
+
+def _overview_outlines(boundaries: dict[str, Any]) -> dict[str, Any]:
+    """Every outline again, generalised for the map at country scale.
+
+    Fourteen hundred outlines at full detail are a quarter of a million vertices: more
+    than the map should draw for a view where none of that detail is visible. This set is
+    a tenth of the size, and the map swaps to the full one as the camera comes in.
+    """
+    overview: dict[str, Any] = {}
+    for place_id, entry in boundaries.items():
+        polygons = [[outline.decode(ring) for ring in polygon] for polygon in entry["polygons"]]
+        coarse = _encode_outline(polygons, OVERVIEW_TOLERANCE)
+        if coarse:
+            overview[place_id] = coarse
+    return overview
+
+
 def _extent(box: list[float]) -> dict[str, float]:
     south, west, north, east = box
     return {"south": south, "west": west, "north": north, "east": east}
@@ -761,14 +869,16 @@ def _resize(source: Path, destination: Path, size: int, quality: int) -> bool:
 def _manifest(places: list[dict[str, Any]]) -> dict[str, Any]:
     others = sum(1 for place in places if place["kind"] != "nationalPark")
     return {
-        "version": 2,
+        "version": 3,
         "builtOn": date.today().isoformat(),
         "provenance": "pipeline",
         "note": (
             f"All 63 national parks with a full guide, and {others} more places on the map: "
-            "other NPS units from the NPS Data API, state parks and other agencies' land "
-            "from PAD-US. Guide prose is written for Unigrids; descriptions, fees, hours, "
-            "visitor centres and photographs are the NPS's own."
+            "other NPS units from the NPS Data API; state parks from PAD-US; every national "
+            "forest, grassland and wildlife refuge, the BLM's monuments and conservation "
+            "areas, National Natural Landmarks and scenic byways from their agencies' own "
+            "data. Guide prose is written for Unigrids; descriptions, fees, hours, visitor "
+            "centres and photographs are the NPS's own."
         ),
     }
 

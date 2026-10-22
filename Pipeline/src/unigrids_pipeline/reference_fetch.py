@@ -15,6 +15,15 @@ Everything lands in the date-versioned raw store like the pack sources do, with 
 ``wikipedia/``
     Lead summaries and lead-image licence metadata for those same curated sites, which
     have no NPS record. Research material and image credits; no text is copied out of it.
+``federal-lands/``, ``transport/``
+    Every other public land the map outlines, and its road and rail layers
+    (``lands_fetch``).
+``trails-national/``, ``trail-elevation/``
+    Every national park's trail segments and 3DEP samples along them
+    (``trail_catalogue``).
+``brochures/``, ``climate/``
+    Each NPS unit's brochure links (``brochures``) and each national park's monthly
+    climate (``climate``).
 ``photos/``
     The NPS-credited photographs chosen for each national park's guide, at full size, so
     the build can resize them without fetching again.
@@ -30,7 +39,7 @@ from urllib.parse import quote
 
 import httpx
 
-from . import config, rawstore, reference_content
+from . import brochures, climate, config, lands_fetch, rawstore, reference_content, trail_catalogue
 from .rawstore import FetchRecord, SourceTerms
 from .sources import arcgis, http, npsapi
 
@@ -123,6 +132,24 @@ def fetch(*, refresh: bool = False) -> Path:
 
     if needed("wikipedia", "summaries.json"):
         _fetch_wikipedia(version)
+
+    if needed("federal-lands", *lands_fetch.LANDS_FILES):
+        lands_fetch.fetch_lands(version)
+
+    if needed("transport", *lands_fetch.TRANSPORT_FILES):
+        lands_fetch.fetch_transport(version)
+
+    # Each of these resumes where it left off and skips what it already holds. The build
+    # module is imported here because it imports this one.
+    from . import reference_build
+
+    trails_dir = trail_catalogue.fetch(version, refresh=refresh)
+    outlines = reference_build._unit_outlines(root / "unit-boundaries")
+    trail_catalogue.sample_elevations(trails_dir, outlines)
+    places = json.loads((reference_build.OUT / "places.json").read_text())
+    codes = sorted({place["npsParkCode"] for place in places if place.get("npsParkCode")})
+    brochures.fetch(codes, version, refresh=refresh)
+    climate.fetch(version, refresh=refresh)
 
     _fetch_photos(version, refresh=refresh)
     return root

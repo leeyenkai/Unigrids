@@ -51,18 +51,48 @@ The components live in `UnigridsDesign/Identity.swift`:
 - **`FigureBlock(value:label:)`** — a big tight figure over a caps label, as the "at a
   glance" panel sets one.
 - **`BrochureButtonStyle(.primary | .secondary | .onBand)`** — flat, square, no capsule.
-- **`PlaceMarker(tier:tint:status:)`** and **`MarkerShape`** — the place marker, shared by
-  the map, lists, the legend and onboarding:
+- **`SitePin(type:tier:status:)`** — a place's pin, shared by the map (drawn there in
+  layers by `AtlasMarkerView`), the key, directory and search rows, stats and onboarding.
+  Three cues, each read on its own ([ADR 0009](adr/0009-pins-coloured-by-kind-of-place.md)):
+  **colour and pictogram are the kind of place, shape is who runs it.** The pin is solid:
+  the colour filled, a white pictogram reversed out of it, a white keyline round it. A
+  visited place carries a green tick at the lower right; a planned one a dashed ring.
 
-  | Tier | Shape | Size |
+  | Tier | Shape | Pin | Glyph | Plain marker |
+  |---|---|---|---|---|
+  | National park | Square, black, white star | 26 pt | 14 pt | 14 pt |
+  | Other NPS site | Square | 22 pt | 12 pt | 10 pt |
+  | State park | Circle | 23 pt | 12 pt | 11 pt |
+  | Other public land, landmarks, byways | Hexagon, point up | 25 pt | 12 pt | 12 pt |
+
+  Colours are `SiteInk`, one per family of site types:
+
+  | Family | Types | Pin |
   |---|---|---|
-  | National park | Square | 18 pt |
-  | Other NPS site | Small square | 10 pt |
-  | State park | Circle | 12 pt |
-  | Monument, conservation area, refuge | Diamond | 13 pt |
+  | National park | National parks | `1A1A1A` black |
+  | Monument | NPS, BLM and Forest Service monuments | `B3243A` crimson |
+  | History | Historic sites, battlefields, memorials | `7A4B2A` brown |
+  | Water | Seashores, recreation areas, rivers | `1A72B8` blue |
+  | Wild land | Forests, grasslands, preserves | `2F7A32` green |
+  | Refuge | Wildlife refuges | `00827E` teal |
+  | Conservation | BLM conservation areas | `9A7A0A` amber |
+  | Landmark | National Natural Landmarks | `B02E8C` magenta |
+  | State park | State parks | `6447C2` violet |
+  | Road | Parkways, scenic byways | `D2600A` orange |
+  | Other | Other NPS sites | `767676` grey |
 
-  Filled is visited, a dashed outline is planned, a plain outline is neither. The ink is
-  the agency's (`AgencyInk`).
+  Pins keep these values in both schemes, because the keyline does the work against a
+  dark map. Outlines, routes and list tints use `SiteInk.value(_:)`, lifted in the dark
+  scheme to clear 3:1 (national parks turn near-white there, since a black outline
+  vanishes on a dark map); over satellite imagery the map always uses the dark values.
+  Tests hold a white pictogram to 3:1 on every pin, every colour to 30 ΔE (CIE76) from
+  every other, and every pictogram to being different. The eighteen pictograms are SF
+  Symbols named in `UnigridsSymbol.site(_:)`.
+- **`PlaceMarker(tier:tint:status:)`** and **`MarkerShape`** — the pin without its
+  pictogram, for lists too small for one: filled when visited, hollow when not, dashed
+  when planned. `KeySwatch` is the same shape keylined, for the key's chip.
+- **`AgencyInk`** — an agency's colour. No longer on pins or outlines; it colours the
+  national park grid in Stats.
 - **`.sheetSize(width:height:)`** — gives a sheet a size on the Mac, where a `List` or
   `ScrollView` sheet otherwise collapses. iOS ignores it.
 
@@ -71,8 +101,19 @@ Things worth knowing at the edges:
 - **Stamps.** `StampView` reads `regionInk` and `seal` only, never `page` or `panel`, so a
   cancellation looks the same on every palette.
 - **Map markers.** A marker's contrast is against map tiles, which no palette controls, so
-  every marker carries a stroke outline rather than relying on its tint. National parks
-  wear a black label plate with white type, the band in miniature.
+  every pin carries a white keyline and a soft shadow rather than relying on its fill.
+  National parks wear a black label plate with white type, the band in miniature, under
+  a black pin. Clusters are round black counts, so they never read as a national park;
+  national parks gathered at country scale are a starred black square with the count.
+- **Detail by zoom.** The map shows what it can draw legibly and no more: overview
+  outlines and national park pins across the country; pins for other large lands, and
+  pictograms inside pins, from regional zoom; alert badges, US highways and Amtrak
+  stations closer in. The thresholds are latitude spans in `MapDetail`, tested in Core.
+- **Lines on the map.** Lines borrow the road-atlas convention rather than a palette:
+  Interstates blue with a light casing, US routes neutral grey so they sit under the
+  places, Amtrak a dark line with white dashed ties, byways a solid line in the road
+  colour. Line colours live in `TransportStyle` with a light and dark value each, because
+  they are read against map tiles, not paper.
 - **The accent.** The tint is set once at the scene root from the palette, so system
   controls pick it up the way any Apple control does.
 - **Guide panels in a row share a height**, so a row reads as one sheet of equal panels.
@@ -119,7 +160,7 @@ omitted so escaping the check is a decision rather than an oversight.
 
 Three things the suite checks that are easy to miss:
 
-1. **Native surfaces.** The accent, the seal, the region inks and the agency tints land on
+1. **Native surfaces.** The accent, the seal, the region inks and the site tints land on
    grouped lists and map cards, not on Unigrid paper. They are measured against
    approximations of Apple's own surfaces, and clearing the lightest one clears the rest.
 2. **A stamp is body text.** The site name on a 112-point stamp sets at about 10.6 points.

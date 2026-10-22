@@ -6,12 +6,17 @@ import UnigridsDesign
 import UnigridsLog
 import UnigridsReference
 
-/// The map the app opens on (SPECIFICATION.md §5): every covered place across the US,
-/// national parks outlined from the start and everything else outlined as the camera
-/// comes in. Tapping a pin — or anywhere inside an outline — opens that place's overview.
+/// The map the app opens on (SPECIFICATION.md §5): every covered place across the US —
+/// national parks, every other NPS site, national forests and grasslands, wildlife
+/// refuges, BLM lands, state parks, natural landmarks and scenic byways — each pin its
+/// site type's pictogram, national parks outlined from the start and everything else
+/// outlined as the camera comes in. Interstates, US routes and Amtrak lay over it on
+/// request. Tapping a pin, a byway or anywhere inside an outline opens that place.
 public struct MapScreen: View {
     @Environment(\.referenceStore) private var store
     @Environment(\.unigrid) private var style
+    @Environment(AlertsCenter.self) private var alerts: AlertsCenter?
+    @Environment(TransportStore.self) private var transportStore: TransportStore?
     @Query private var visits: [Visit]
     @Query private var trips: [Trip]
 
@@ -20,8 +25,25 @@ public struct MapScreen: View {
     @State private var camera: AtlasCameraRequest?
     @State private var filter = MapFilter.everything
     @State private var query = ""
-    @State private var showFilters = false
+    @State private var showKey = false
+    @State private var showsUserLocation = false
+    @State private var locating = false
     @AppStorage("map.basemap") private var basemap = AtlasBasemap.standard
+    #if os(iOS)
+        @Environment(\.horizontalSizeClass) private var sizeClass
+    #endif
+
+    /// On a phone the overview is a sheet over the bottom of the map; a place chosen from
+    /// search is framed above it rather than under it.
+    private var sheetInset: CGFloat {
+        #if os(iOS)
+            sizeClass == .compact ? 340 : 0
+        #else
+            0
+        #endif
+    }
+
+    @AppStorage("map.layers") private var layersRaw = ""
 
     public init() {}
 
@@ -29,17 +51,38 @@ public struct MapScreen: View {
         VisitIndex(visits: visits, trips: trips)
     }
 
-    private var atlasPlaces: [AtlasPlace] {
-        let index = index
-        return store.places.compactMap { place in
-            let status = index.status(for: place.id)
-            guard filter.includes(place, isVisited: status == .visited) else { return nil }
-            return AtlasPlace(place: place, status: status)
-        }
+    private var layers: Set<TransportLayer> {
+        Set(layersRaw.split(separator: ",").compactMap { TransportLayer(rawValue: String($0)) })
     }
 
-    private var boundaries: [UnigridsID: PlaceBoundary] {
-        store.boundaries
+    private var layersBinding: Binding<Set<TransportLayer>> {
+        Binding(
+            get: { layers },
+            set: { newValue in
+                layersRaw = TransportLayer.allCases
+                    .filter(newValue.contains)
+                    .map(\.rawValue)
+                    .joined(separator: ",")
+            }
+        )
+    }
+
+    private var atlasPlaces: [AtlasPlace] {
+        let index = index
+        let stamped = store.placesWithStampLocations
+        return store.places.compactMap { place in
+            let status = index.status(for: place.id)
+            guard filter.includes(
+                place,
+                isVisited: status == .visited,
+                hasStampLocation: stamped.contains(place.id)
+            ) else { return nil }
+            return AtlasPlace(
+                place: place,
+                status: status,
+                alert: alerts?.mapLevel(for: place.npsParkCode)
+            )
+        }
     }
 
     private var selectedPlace: Place? {
@@ -50,18 +93,30 @@ public struct MapScreen: View {
         NavigationStack(path: $path) {
             AtlasMapView(
                 places: atlasPlaces,
-                boundaries: boundaries,
+                boundaries: store.boundaries,
+                overviewBoundaries: store.overviewBoundaries,
+                routes: store.routes,
+                transport: transportStore?.network ?? .empty,
+                layers: layers,
                 selection: selection,
                 camera: camera,
                 basemap: basemap,
-                ink: AtlasInk(scheme: style.scheme, palette: style.palette),
+                // Imagery is dark whatever the scheme, so lines over it take the dark inks.
+                ink: AtlasInk(
+                    scheme: basemap == .standard ? style.scheme : .dark,
+                    palette: style.palette
+                ),
+                showsUserLocation: showsUserLocation,
                 onSelect: { selection = $0 },
                 onRegionChange: { _ in }
             )
             .ignoresSafeArea(edges: [.bottom, .horizontal])
             .overlay(alignment: .bottomLeading) {
-                MapLegend(filter: filter, counts: tierCounts) { showFilters = true }
-                    .padding(12)
+                // Lifted clear of the base map's attribution, which MapKit draws in this
+                // corner and which must stay legible.
+                MapKeyButton(filter: filter, layers: layers) { showKey = true }
+                    .padding(.leading, 12)
+                    .padding(.bottom, 40)
             }
             .safeAreaInset(edge: .top, spacing: 0) {
                 RegionShortcutBar { box in
@@ -70,7 +125,7 @@ public struct MapScreen: View {
             }
             .navigationTitle("Map")
             .toolbarTitleDisplayMode(.inline)
-            .searchable(text: $query, prompt: "Parks, monuments, sights")
+            .searchable(text: $query, prompt: "Parks, forests, refuges, sights")
             .searchSuggestions {
                 MapSearchSuggestions(query: query) { result in
                     select(result)
@@ -86,12 +141,24 @@ public struct MapScreen: View {
                         .presentationDragIndicator(.visible)
                 }
             }
-            .sheet(isPresented: $showFilters) {
-                MapFilterSheet(filter: $filter, counts: tierCounts)
+            .sheet(isPresented: $showKey) {
+                MapKeySheet(
+                    filter: $filter,
+                    layers: layersBinding,
+                    basemap: $basemap,
+                    counts: typeCounts
+                )
             }
             .navigationDestination(for: UnigridsID.self) { id in
                 PlaceDestination(placeID: id)
             }
+            .task(id: layers.isEmpty) {
+                await loadTransportIfNeeded()
+            }
+            .task {
+                await alerts?.refreshIfStale()
+            }
+            .onAppear(perform: applyDebugLaunch)
         }
     }
 
@@ -99,26 +166,27 @@ public struct MapScreen: View {
     private var toolbar: some ToolbarContent {
         ToolbarItem {
             Button {
-                showFilters = true
+                showKey = true
             } label: {
                 Label(
-                    "Filter",
+                    "Key and filters",
                     systemImage: filter.isNarrowed
                         ? "line.3.horizontal.decrease.circle.fill"
                         : "line.3.horizontal.decrease.circle"
                 )
             }
+            .badge(filter.narrowedCount)
         }
         ToolbarItem {
-            Menu {
-                Picker("Base map", selection: $basemap) {
-                    ForEach(AtlasBasemap.allCases) { option in
-                        Label(option.name, systemImage: option.symbol).tag(option)
-                    }
-                }
+            MapLayersMenu(layers: layersBinding, basemap: $basemap)
+        }
+        ToolbarItem {
+            Button {
+                Task { await locate() }
             } label: {
-                Label("Base map", systemImage: basemap.symbol)
+                Label("Where am I", systemImage: showsUserLocation ? "location.fill" : "location")
             }
+            .disabled(locating)
         }
         ToolbarItem {
             NavigationLink {
@@ -140,8 +208,27 @@ public struct MapScreen: View {
         )
     }
 
-    private var tierCounts: [PlaceTier: Int] {
-        Dictionary(grouping: store.places, by: \.tier).mapValues(\.count)
+    private var typeCounts: [SiteType: Int] {
+        Dictionary(grouping: store.places, by: \.siteType).mapValues(\.count)
+    }
+
+    private func loadTransportIfNeeded() async {
+        guard !layers.isEmpty else { return }
+        await transportStore?.load(from: store)
+    }
+
+    /// Centre on the reader, once. The location is used for the camera and the blue dot
+    /// and never stored (SPECIFICATION.md §15).
+    private func locate() async {
+        locating = true
+        defer { locating = false }
+        guard let here = await OnSiteCheck().currentCoordinate() else { return }
+        showsUserLocation = true
+        let pad = 0.6
+        camera = AtlasCameraRequest(box: BoundingBox(
+            south: here.latitude - pad, west: here.longitude - pad * 1.4,
+            north: here.latitude + pad, east: here.longitude + pad * 1.4
+        ))
     }
 
     private func select(_ result: MapSearchResult) {
@@ -149,20 +236,62 @@ public struct MapScreen: View {
         switch result {
         case let .place(place):
             selection = place.id
-            camera = AtlasCameraRequest(box: store.frame(for: place).expanded(by: 0.15))
+            camera = AtlasCameraRequest(
+                box: store.frame(for: place).expanded(by: 0.15), bottomInset: sheetInset
+            )
         case let .pointOfInterest(poi):
             selection = poi.placeID
             let pad = 0.02
-            camera = AtlasCameraRequest(box: BoundingBox(
-                south: poi.location.latitude - pad, west: poi.location.longitude - pad,
-                north: poi.location.latitude + pad, east: poi.location.longitude + pad
-            ))
+            camera = AtlasCameraRequest(
+                box: BoundingBox(
+                    south: poi.location.latitude - pad, west: poi.location.longitude - pad,
+                    north: poi.location.latitude + pad, east: poi.location.longitude + pad
+                ),
+                bottomInset: sheetInset
+            )
+        }
+    }
+
+    private func applyDebugLaunch() {
+        if let region = DebugLaunch.region {
+            camera = AtlasCameraRequest(box: region, animated: false)
+        }
+        if let id = DebugLaunch.selection {
+            selection = id
+        }
+        if let id = DebugLaunch.opens {
+            path.append(id)
+        }
+        if DebugLaunch.showsKey {
+            showKey = true
         }
     }
 
     private func open(_ place: Place) {
         selection = nil
         path.append(place.id)
+    }
+}
+
+/// A place in a window of its own, on the Mac (SPECIFICATION.md §6: "a guide can open in
+/// its own window beside the map").
+public struct PlaceWindow: View {
+    let placeID: UnigridsID?
+
+    public init(placeID: UnigridsID?) {
+        self.placeID = placeID
+    }
+
+    public var body: some View {
+        NavigationStack {
+            if let placeID {
+                PlaceDestination(placeID: placeID)
+                    .navigationDestination(for: UnigridsID.self) { id in
+                        PlaceDestination(placeID: id)
+                    }
+            }
+        }
+        .frame(minWidth: 760, minHeight: 640)
     }
 }
 
@@ -232,185 +361,7 @@ struct RegionShortcutBar: View {
     }
 }
 
-// MARK: - Legend
-
-/// The key to the map, set as a brochure map's legend: shape for tier, and a count. It
-/// doubles as the way into the filters.
-struct MapLegend: View {
-    @Environment(\.unigrid) private var style
-    let filter: MapFilter
-    let counts: [PlaceTier: Int]
-    let onTap: () -> Void
-
-    var body: some View {
-        Button(action: onTap) {
-            HStack(spacing: 12) {
-                ForEach(PlaceTier.allCases, id: \.self) { tier in
-                    HStack(spacing: 5) {
-                        PlaceMarker(tier: tier, tint: tint(for: tier), status: .none)
-                        Text("\(counts[tier] ?? 0)")
-                            .font(UnigridStyle.dataLabel)
-                            .monospacedDigit()
-                            .foregroundStyle(style.ink)
-                    }
-                    .opacity(filter.tiers.contains(tier) ? 1 : 0.3)
-                }
-            }
-            .padding(.horizontal, 10)
-            .padding(.vertical, 8)
-            .background(style.panel)
-            .overlay { Rectangle().strokeBorder(style.ink, lineWidth: 1) }
-        }
-        .buttonStyle(.plain)
-        .accessibilityLabel("Map key and filters")
-        .accessibilityValue(
-            PlaceTier.allCases
-                .map { "\(counts[$0] ?? 0) \($0.name)" }
-                .joined(separator: ", ")
-        )
-    }
-
-    private func tint(for tier: PlaceTier) -> Color {
-        let agency: Agency = switch tier {
-        case .nationalPark, .npsUnit: .nps
-        case .statePark: .stateAgency
-        case .federalSite: .blm
-        }
-        return Color(AgencyInk.forPlace(agency: agency, tier: tier).value(style.scheme))
-    }
-}
-
-// MARK: - Filters
-
-struct MapFilterSheet: View {
-    @Environment(\.dismiss) private var dismiss
-    @Environment(\.unigrid) private var style
-    @Binding var filter: MapFilter
-    let counts: [PlaceTier: Int]
-
-    var body: some View {
-        NavigationStack {
-            List {
-                Section {
-                    ForEach(PlaceTier.allCases, id: \.self) { tier in
-                        Toggle(isOn: binding(for: tier)) {
-                            HStack(spacing: 12) {
-                                PlaceMarker(tier: tier, tint: legendTint(tier), status: .none)
-                                VStack(alignment: .leading, spacing: 2) {
-                                    Text(tier.name)
-                                        .font(UnigridStyle.rowTitle)
-                                    Text("\(counts[tier] ?? 0) · \(tier.detail)")
-                                        .font(UnigridStyle.rowDetail)
-                                        .foregroundStyle(style.inkSecondary)
-                                }
-                            }
-                        }
-                    }
-                } header: {
-                    Kicker("Show")
-                }
-
-                Section {
-                    Picker("Visits", selection: $filter.visits) {
-                        ForEach(MapFilter.Visits.allCases) { option in
-                            Text(option.name).tag(option)
-                        }
-                    }
-                    .pickerStyle(.inline)
-                    .labelsHidden()
-                } header: {
-                    Kicker("Your log")
-                }
-
-                Section {
-                    LegendKey()
-                } header: {
-                    Kicker("Key")
-                }
-            }
-            .paperPage()
-            .navigationTitle("Map filters")
-            .toolbarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Reset") { filter = .everything }
-                        .disabled(!filter.isNarrowed)
-                }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Done") { dismiss() }
-                }
-            }
-        }
-        .sheetSize()
-        .presentationDetents([.medium, .large])
-    }
-
-    private func binding(for tier: PlaceTier) -> Binding<Bool> {
-        Binding(
-            get: { filter.tiers.contains(tier) },
-            set: { isOn in
-                if isOn {
-                    filter.tiers.insert(tier)
-                } else {
-                    filter.tiers.remove(tier)
-                }
-            }
-        )
-    }
-
-    private func legendTint(_ tier: PlaceTier) -> Color {
-        let agency: Agency = switch tier {
-        case .nationalPark, .npsUnit: .nps
-        case .statePark: .stateAgency
-        case .federalSite: .blm
-        }
-        return Color(AgencyInk.forPlace(agency: agency, tier: tier).value(style.scheme))
-    }
-}
-
-/// What filled, hollow and dashed mean, and which ink is whose.
-struct LegendKey: View {
-    @Environment(\.unigrid) private var style
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            row(status: .visited, text: "Filled: you have been")
-            row(status: .none, text: "Hollow: not yet")
-            row(status: .planned, text: "Dashed: on a trip you are planning")
-            Hairline()
-            ForEach(Self.inks, id: \.1) { ink, name in
-                HStack(spacing: 10) {
-                    Rectangle()
-                        .fill(Color(ink.value(style.scheme)))
-                        .frame(width: 14, height: 8)
-                    Text(name)
-                        .font(UnigridStyle.rowDetail)
-                }
-            }
-        }
-        .padding(.vertical, 4)
-    }
-
-    private func row(status: PlaceMarker.Status, text: String) -> some View {
-        HStack(spacing: 10) {
-            PlaceMarker(
-                tier: .nationalPark,
-                tint: Color(AgencyInk.nationalPark.value(style.scheme)),
-                status: status
-            )
-            Text(text)
-                .font(UnigridStyle.rowDetail)
-        }
-    }
-
-    private static let inks: [(AgencyInk, String)] = [
-        (.nationalPark, "National Park Service"),
-        (.stateAgency, "State parks"),
-        (.blm, "Bureau of Land Management"),
-        (.forestService, "US Forest Service"),
-        (.fishAndWildlife, "US Fish and Wildlife Service"),
-    ]
-}
+// The key, filters and layers live in MapKey.swift.
 
 // MARK: - Search
 
@@ -434,7 +385,7 @@ struct MapSearchSuggestions: View {
                 onSelect(.place(place))
             } label: {
                 HStack(spacing: 10) {
-                    PlaceMarker(tier: place.tier, tint: style.agencyTint(for: place))
+                    SitePin(place: place)
                     VStack(alignment: .leading, spacing: 1) {
                         Text(place.name)
                             .font(UnigridStyle.rowTitle)

@@ -224,6 +224,9 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
     public let image: GuideImage?
     /// Somewhere to read more, where the place has no official page Unigrids can link.
     public let infoURL: URL?
+    /// What a visitor can do there, as the managing agency lists it. Empty when no
+    /// source says, which is not the same as nothing to do.
+    public let activities: [PlaceActivity]
 
     public var tier: PlaceTier {
         kind.tier
@@ -261,7 +264,8 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         summary: String? = nil,
         summarySource: String? = nil,
         image: GuideImage? = nil,
-        infoURL: URL? = nil
+        infoURL: URL? = nil,
+        activities: [PlaceActivity] = []
     ) {
         self.id = id
         self.name = name
@@ -281,6 +285,7 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         self.summarySource = summarySource
         self.image = image
         self.infoURL = infoURL
+        self.activities = activities
     }
 
     public init(from decoder: any Decoder) throws {
@@ -307,6 +312,9 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         summarySource = try container.decodeIfPresent(String.self, forKey: .summarySource)
         image = try container.decodeIfPresent(GuideImage.self, forKey: .image)
         infoURL = try container.decodeIfPresent(URL.self, forKey: .infoURL)
+        // Unknown activity names from a newer dataset are dropped, not fatal.
+        activities = (try? container.decodeIfPresent([String].self, forKey: .activities))?
+            .flatMap { $0.compactMap(PlaceActivity.init(rawValue:)) } ?? []
     }
 
     private static func defaultDesignation(for kind: PlaceKind) -> String {

@@ -61,4 +61,14 @@ struct FormattingTests {
         #expect(UnigridsFormat.everests(gainMetres: 8848, locale: imperial) == "1.00")
         #expect(UnigridsFormat.everests(gainMetres: 4424, locale: imperial) == "0.50")
     }
+
+    @Test("temperatures follow the reader's units")
+    func temperatures() {
+        let us = UnigridsFormat.temperature(celsius: 30, locale: Locale(identifier: "en_US"))
+        let uk = UnigridsFormat.temperature(celsius: 30, locale: Locale(identifier: "en_GB"))
+        #expect(us.contains("86"))
+        #expect(us.contains("F"))
+        #expect(uk.contains("30"))
+        #expect(uk.contains("C"))
+    }
 }

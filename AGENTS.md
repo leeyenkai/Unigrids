@@ -168,8 +168,9 @@ One identity on every screen, laid over native structure (§14,
   ruled caps head, figures are set large over caps labels, buttons and markers are square,
   Helvetica Neue for headings and data and a serif for prose. Use the components in
   `UnigridsDesign/Identity.swift` rather than stock rows and capsule buttons.
-- **A place's tier is a shape and its agency an ink**, wherever it appears (square,
-  small square, circle, diamond; filled for visited, dashed for planned).
+- **A place's kind is its colour and pictogram, and its tier its shape**, wherever it
+  appears (`SiteInk`, `SitePin`; square, circle, hexagon; a green tick for visited and a
+  dashed ring for planned on a pin). See ADR 0009.
 - **Park guides** keep the Unigrid grid derived from the brochure panel module (1 column
   on iPhone, 2–3 on iPad, 3–4 on Mac).
 

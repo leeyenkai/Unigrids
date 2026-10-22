@@ -14,7 +14,31 @@ public enum AgencyInk: String, CaseIterable, Sendable {
     case blm
     case fishAndWildlife
     case stateAgency
+    /// National Natural Landmarks, which belong to whoever owns the land and are drawn in
+    /// their own ink rather than any one owner's.
+    case landmark
+    /// Scenic byways: a road, not a holding.
+    case byway
     case other
+
+    /// A place's ink. Landmarks and byways have no managing agency to take one from, so
+    /// they have their own.
+    public static func forPlace(_ place: Place) -> AgencyInk {
+        switch place.kind {
+        case .naturalLandmark: .landmark
+        case .scenicByway: .byway
+        default: forPlace(agency: place.agency, tier: place.tier)
+        }
+    }
+
+    /// The ink a site type is keyed in.
+    public static func forType(_ type: SiteType) -> AgencyInk {
+        switch type {
+        case .naturalLandmark: .landmark
+        case .scenicByway: .byway
+        default: forPlace(agency: type.typicalAgency, tier: type.tier)
+        }
+    }
 
     /// National parks get their own ink, a tier up from the rest of the NPS.
     public static func forPlace(agency: Agency, tier: PlaceTier) -> AgencyInk {
@@ -49,6 +73,8 @@ public enum AgencyInk: String, CaseIterable, Sendable {
         case .blm: "8A6A2F"
         case .fishAndWildlife: "2B6A7A"
         case .stateAgency: "5C6BA8"
+        case .landmark: "7B4B94"
+        case .byway: "A0522D"
         case .other: "6E6E73"
         }
     }
@@ -61,6 +87,8 @@ public enum AgencyInk: String, CaseIterable, Sendable {
         case .blm: "A27D37"
         case .fishAndWildlife: "398DA2"
         case .stateAgency: "7480B5"
+        case .landmark: "A57CBE"
+        case .byway: "C8774A"
         case .other: "828288"
         }
     }

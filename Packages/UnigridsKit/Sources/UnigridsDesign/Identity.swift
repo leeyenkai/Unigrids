@@ -290,9 +290,10 @@ public struct BrochureLabelStyle: LabelStyle {
 
 // MARK: - Markers
 
-/// The shape a place takes on the map and everywhere it is listed, by tier: the legend's
-/// first key. Brochure maps tell features apart by shape before colour, which keeps the map
-/// legible to readers who cannot tell the agency inks apart.
+/// The shape a place takes on the map and everywhere it is listed, by tier: who runs the
+/// place. Colour and pictogram say what kind of place it is (`SiteInk`, `SitePin`); the
+/// shape stays as the second cue, so the map still reads for anyone who cannot tell two
+/// of the colours apart.
 public enum MarkerShape: CaseIterable, Sendable {
     /// National parks.
     case square
@@ -300,25 +301,49 @@ public enum MarkerShape: CaseIterable, Sendable {
     case smallSquare
     /// State parks.
     case circle
-    /// Other agencies' land.
-    case diamond
+    /// Other public land — forests, refuges, BLM land — and landmarks and byways. A
+    /// hexagon rather than the diamond it replaced: a diamond's middle is too small to
+    /// hold a pictogram, and a diamond reads as a road warning sign.
+    case hexagon
 
     public init(tier: PlaceTier) {
         switch tier {
         case .nationalPark: self = .square
         case .npsUnit: self = .smallSquare
         case .statePark: self = .circle
-        case .federalSite: self = .diamond
+        case .federalSite: self = .hexagon
         }
     }
 
-    /// The marker's side on the map, in points.
+    /// The side of a plain marker, without a pictogram: in lists, and on the map before
+    /// it is close enough for pictograms.
     public var size: CGFloat {
         switch self {
-        case .square: 18
+        case .square: 14
         case .smallSquare: 10
+        case .circle: 11
+        case .hexagon: 12
+        }
+    }
+
+    /// The side of a pin that carries its site type's pictogram.
+    public var pictogramSize: CGFloat {
+        switch self {
+        case .square: 26
+        case .smallSquare: 22
+        case .circle: 23
+        case .hexagon: 25
+        }
+    }
+
+    /// The pictogram's point size inside a pin of `pictogramSize`: about half the side,
+    /// which is what lets a battlefield's flags read as flags.
+    public var glyphSize: CGFloat {
+        switch self {
+        case .square: 14
+        case .smallSquare: 12
         case .circle: 12
-        case .diamond: 13
+        case .hexagon: 12
         }
     }
 
@@ -328,12 +353,19 @@ public enum MarkerShape: CaseIterable, Sendable {
             return CGPath(rect: rect, transform: nil)
         case .circle:
             return CGPath(ellipseIn: rect, transform: nil)
-        case .diamond:
+        case .hexagon:
+            // Point up, regular: as wide as √3/2 of its height, centred in the rect.
+            let height = rect.height
+            let width = min(rect.width, height * 0.866)
+            let left = rect.midX - width / 2
+            let right = rect.midX + width / 2
             let path = CGMutablePath()
             path.move(to: CGPoint(x: rect.midX, y: rect.minY))
-            path.addLine(to: CGPoint(x: rect.maxX, y: rect.midY))
+            path.addLine(to: CGPoint(x: right, y: rect.minY + height / 4))
+            path.addLine(to: CGPoint(x: right, y: rect.maxY - height / 4))
             path.addLine(to: CGPoint(x: rect.midX, y: rect.maxY))
-            path.addLine(to: CGPoint(x: rect.minX, y: rect.midY))
+            path.addLine(to: CGPoint(x: left, y: rect.maxY - height / 4))
+            path.addLine(to: CGPoint(x: left, y: rect.minY + height / 4))
             path.closeSubpath()
             return path
         }

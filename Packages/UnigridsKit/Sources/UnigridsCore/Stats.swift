@@ -245,9 +245,10 @@ public struct StatsReport: Sendable {
             // does not record where the user turned back, so it must not claim precision
             // it does not have — and it must not claim the summit either.
             let share = hike.completion == .full ? 1.0 : 0.5
-            totals.distance += trail.lengthMetres * share
-            totals.gain += trail.gainMetres * share
-            totals.longest = max(totals.longest, trail.lengthMetres * share)
+            // A hike of a trail is the round trip, or once round a loop (`walkedMetres`).
+            totals.distance += trail.walkedMetres * share
+            totals.gain += (trail.climbMetres ?? 0) * share
+            totals.longest = max(totals.longest, trail.walkedMetres * share)
             if hike.completion == .full, let point = trail.highPointMetres {
                 totals.highest = max(totals.highest ?? point, point)
             }

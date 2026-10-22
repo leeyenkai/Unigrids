@@ -17,8 +17,10 @@ That slice was chosen because the pack size was the pilot's open question
 `out/pack-size-report.md` after a build, and the summary in `docs/mvp-scope.md`.
 
 Separately, the **`reference`** command builds the reference data the app bundles — every
-place, outline, sight, guide and photograph — from the NPS Data API, NPS boundaries, PAD-US
-and Wikimedia Commons. It replaced the hand-authored seed in `seed/`, which is kept for
+place, outline, sight, trail, road and rail line, document link, climate table, guide and
+photograph — from the NPS Data API, NPS boundaries, the federal land agencies' own
+boundary services, the National Transportation Atlas, NPS Public Trails with USGS 3DEP,
+each NPS site's own pages, Open-Meteo, PAD-US and Wikimedia Commons. It replaced the hand-authored seed in `seed/`, which is kept for
 history and must not be run (it would overwrite the built data). See
 `../Packages/UnigridsKit/Sources/UnigridsReference/Resources/reference/README.md`.
 
@@ -36,8 +38,12 @@ writes into an iCloud-synced folder.)
 
 | Stage | Module | Does |
 |---|---|---|
-| Fetch | `reference_fetch.py` | NPS Data API parks, visitor centres, stamp locations, places and campgrounds, one park at a time (`sources/npsapi.py`); NPS unit boundaries; PAD-US fee and management layers for curated state parks, monuments and refuges; Wikipedia summaries and Commons licence metadata; candidate photographs. Into `raw/<date>/` |
-| Build | `reference_build.py` | Joins those with `content/` and writes `places`, `pois`, `themes`, `boundaries`, `guides/`, `images/` and `manifest` into the app's resources |
+| Fetch | `reference_fetch.py` | NPS Data API parks, visitor centres, stamp locations, places, campgrounds and activities, one park at a time (`sources/npsapi.py`); NPS unit boundaries; PAD-US fee and management layers for curated state parks; Wikipedia summaries and Commons licence metadata; candidate photographs; then each of the modules below. Into `raw/<date>/` |
+| Lands and transport | `lands_fetch.py`, `lands_build.py` | Forest Service proclaimed forests and grasslands, FWS refuge boundaries, BLM National Conservation Lands, NPS National Natural Landmarks, FHWA byways and Census states; NTAD Interstates, US routes and Amtrak routes and stations. Names cleaned (title case, refuge suffixes, BLM overrides by NLCS ID), states found by sampling each outline against state polygons |
+| Trails | `trail_catalogue.py` | NPS Public Trails per national park, joined by name and kept inside the park's outline; 3DEP sampled every 30 m (cached per park); length, climb, profile, loops, features, sights along the way |
+| Documents | `brochures.py` | Each NPS site's `maps.htm` and `brochures.htm`, every PDF link checked with a request before it is recorded |
+| Climate | `climate.py` | Ten years (2016–2025) of Open-Meteo archive daily weather per national park, reduced to monthly mean high, low and precipitation |
+| Build | `reference_build.py` | Joins those with `content/` and writes `places`, `pois`, `themes`, `boundaries`, `boundaries-overview`, `routes`, `transport`, `trails`, `brochures`, `climate`, `guides/`, `images/` and `manifest` into the app's resources |
 | Geometry | `outline.py` | Polygon extraction, Douglas–Peucker simplification, speck removal, polyline encoding, label points |
 | Content rules | `reference_content.py` | Which photographs are public domain, which places are curated, how guide content is read |
 
@@ -45,7 +51,10 @@ A national park's photographs must be NPS-credited public-domain images; other p
 photographs must carry a reusable Commons licence. The build prints any place left without
 a summary or any guide sight it could not place.
 
-The raw snapshot is about 0.9 GB, most of it photographs; `raw/` is gitignored.
+The raw snapshot is about 1.1 GB, most of it photographs (0.85 GB), then the
+transportation layers, trails and federal lands; `raw/` is gitignored. Every fetch is
+resumable: a file already in today's snapshot is left alone, so an interrupted fetch picks
+up where it stopped. Refused ArcGIS pages are retried twice before the fetch gives up.
 
 ## The six steps
 

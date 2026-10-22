@@ -35,6 +35,12 @@ public struct StampSheet: View {
         _date = State(initialValue: suggestedDate)
     }
 
+    /// The sheet for one of a site's stamp locations, chosen from its passport slot.
+    init(place: Place, location: UnigridsID?) {
+        self.init(place: place)
+        _stampLocationID = State(initialValue: location)
+    }
+
     private var stampLocations: [PointOfInterest] {
         store.stampLocations(in: place.id)
     }

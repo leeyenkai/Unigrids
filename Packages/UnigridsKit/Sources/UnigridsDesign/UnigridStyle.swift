@@ -83,9 +83,16 @@ public struct UnigridStyle: Equatable, Sendable {
         Color(region.ink(scheme))
     }
 
-    /// The pin and row colour for a place, by the agency behind it.
-    public func agencyTint(for place: Place) -> Color {
-        Color(AgencyInk.forPlace(agency: place.agency, tier: place.tier).value(scheme))
+    /// A place's colour for its outline, its route and its tint in a list, by what kind
+    /// of place it is. Pins take `SiteInk.pin` instead, which does not change with the
+    /// scheme.
+    public func siteTint(for place: Place) -> Color {
+        Color(SiteInk.forPlace(place).value(scheme))
+    }
+
+    /// A site type's colour in this scheme.
+    public func typeTint(_ type: SiteType) -> Color {
+        Color(type.ink.value(scheme))
     }
 
     // MARK: - Type

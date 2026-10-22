@@ -75,6 +75,47 @@ public enum UnigridsSymbol: String, CaseIterable, Sendable {
     }
 }
 
+extension UnigridsSymbol {
+    /// A site type's pictogram, reversed out of its pin as the brochure maps set theirs
+    /// (SPECIFICATION.md §5: pins differ by type).
+    ///
+    /// Filled, by the vocabulary's fill rule, wherever SF Symbols draws a filled form; a
+    /// few (`water.waves`, `road.lanes`, `camera.macro`, `figure.hiking`, `sparkles`) have
+    /// none and are solid enough as they are.
+    public static func site(_ type: SiteType) -> String {
+        switch type {
+        // A star, not mountains: white peaks in a white-framed square read as a photo.
+        case .nationalPark: "star.fill"
+        case .nationalMonument: "building.columns.fill"
+        case .nationalPreserve: "leaf.fill"
+        case .historicSite: "house.fill"
+        case .battlefield: "flag.2.crossed.fill"
+        case .memorial: "rosette"
+        case .seashore: "water.waves"
+        case .recreationArea: "sailboat.fill"
+        case .river: "drop.fill"
+        case .parkway: "road.lanes"
+        case .otherNPSSite: "signpost.right.fill"
+        case .statePark: "figure.hiking"
+        case .nationalForest: "tree.fill"
+        case .nationalGrassland: "camera.macro"
+        case .wildlifeRefuge: "bird.fill"
+        case .conservationArea: "binoculars.fill"
+        case .naturalLandmark: "sparkles"
+        case .scenicByway: "car.fill"
+        }
+    }
+
+    /// Transport layers in the map key.
+    public static func transport(_ layer: TransportLayer) -> String {
+        switch layer {
+        case .interstates: "road.lanes"
+        case .usHighways: "road.lanes"
+        case .amtrak: "tram.fill"
+        }
+    }
+}
+
 extension Image {
     /// An icon from the app's vocabulary.
     public init(_ symbol: UnigridsSymbol) {

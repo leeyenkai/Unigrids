@@ -359,11 +359,15 @@ public final class WeatherSnapshot {
     public enum Source: String, Sendable, Codable {
         case weatherKit
         case openMeteoArchive
+        /// The last few days, which the archive does not hold yet: Open-Meteo's forecast
+        /// service's own record of them.
+        case openMeteoRecent
 
         public var attribution: String {
             switch self {
             case .weatherKit: "Weather data provided by Apple Weather"
             case .openMeteoArchive: "Historical weather from Open-Meteo (ERA5), CC BY 4.0"
+            case .openMeteoRecent: "Recent weather from Open-Meteo, CC BY 4.0"
             }
         }
     }
@@ -400,5 +404,56 @@ public final class WeatherSnapshot {
         self.precipitationMillimetres = precipitationMillimetres
         self.condition = condition
         sourceRaw = source.rawValue
+    }
+}
+
+// MARK: - Identity on restore
+
+// `id` is settable only in this file, so putting a deleted record back under its own
+// identity — which is what makes an undo an undo rather than a copy — happens here.
+
+extension Visit {
+    func restoreIdentity(_ id: UUID, createdAt: Date) {
+        self.id = id
+        self.createdAt = createdAt
+    }
+}
+
+extension Trip {
+    func restoreIdentity(_ id: UUID, createdAt: Date) {
+        self.id = id
+        self.createdAt = createdAt
+    }
+}
+
+extension Stamp {
+    func restoreIdentity(_ id: UUID, createdAt: Date) {
+        self.id = id
+        self.createdAt = createdAt
+    }
+}
+
+extension CheckIn {
+    func restoreIdentity(_ id: UUID) {
+        self.id = id
+    }
+}
+
+extension Hike {
+    func restoreIdentity(_ id: UUID) {
+        self.id = id
+    }
+}
+
+extension TripStop {
+    func restoreIdentity(_ id: UUID, createdAt: Date) {
+        self.id = id
+        self.createdAt = createdAt
+    }
+}
+
+extension Reminder {
+    func restoreIdentity(_ id: UUID) {
+        self.id = id
     }
 }

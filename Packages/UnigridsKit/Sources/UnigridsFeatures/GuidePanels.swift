@@ -136,18 +136,48 @@ struct VisitorCentresPanel: View {
 }
 
 /// Panel 8: the park's top trails, linking into the catalogue.
+///
+/// "Top" by what the data can say: trails that pass the guide's ranked sights first — the
+/// walks to what the park is known for — then the longest.
 struct TrailHighlightsPanel: View {
+    @Environment(\.unigrid) private var style
+    let place: Place
     let trails: [Trail]
+
+    private var highlights: [Trail] {
+        trails
+            .sorted {
+                ($0.sightIDs.count, $0.lengthMetres) > ($1.sightIDs.count, $1.lengthMetres)
+            }
+            .prefix(6)
+            .map(\.self)
+    }
 
     var body: some View {
         UnigridPanel(title: GuidePanel.trailHighlights.title) {
-            VStack(alignment: .leading, spacing: 8) {
-                ForEach(trails) { trail in
-                    UnigridDataRow(
-                        label: trail.name,
-                        value: UnigridsFormat.distance(metres: trail.lengthMetres)
+            VStack(alignment: .leading, spacing: 10) {
+                ForEach(highlights) { trail in
+                    NavigationLink {
+                        TrailDetailScreen(trail: trail)
+                    } label: {
+                        TrailRow(trail: trail)
+                    }
+                    .buttonStyle(.plain)
+                    if trail.id != highlights.last?.id {
+                        Hairline()
+                    }
+                }
+                NavigationLink {
+                    TrailCatalogueScreen(place: place)
+                } label: {
+                    Label(
+                        "All \(trails.count) trails, "
+                            + UnigridsFormat
+                            .distance(metres: trails.reduce(0) { $0 + $1.lengthMetres }),
+                        systemImage: "list.bullet"
                     )
                 }
+                .buttonStyle(BrochureButtonStyle(.secondary))
             }
         }
     }

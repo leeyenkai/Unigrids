@@ -14,10 +14,16 @@ in a trip log and a digital passport stamp book, and the log turns into stats.
 
 ## Status
 
-**Pre-release — milestone `0.2.0` (MVP) ready for a first demo.** Every national park
-has a guide, every covered place is on the map with an overview, and trips, the passport
-and stats work end to end. iPhone and iPad have not yet been seen running on an iOS 27
-device or simulator.
+**Pre-release — working toward `1.0.0`.** Every national park has a guide; 2,052
+places — every NPS unit, national forest and grassland, wildlife refuge, BLM monument and
+conservation area, National Natural Landmark and national scenic byway, plus curated state
+parks — are outlined on one map, each marked by type, with Interstate, US highway and
+Amtrak layers. Every place opens in 3D; 59 national parks have a measured trail catalogue;
+the planner has drive times, flags, forecasts and reminders; official NPS maps and
+brochures open in the app; visits are logged by hand, by arrival or from Photos, and fill
+the passport and stats. Not built yet: offline map packs in the app, widgets and the Watch
+app. iPhone was checked on an iOS 26.5 Simulator; iPad and an iOS 27 device are still to
+check.
 
 The build follows the three phases in [`SPECIFICATION.md`](SPECIFICATION.md) §16:
 
@@ -93,8 +99,8 @@ cd Packages/UnigridsKit && swift test
 
 ## Data
 
-Reference data (places, points of interest, trails, guide content) is **read-only and
-bundled in the app**. It is produced by the Python pipeline in `Pipeline/` and replaced
+Reference data (places, outlines, points of interest, trails, roads and rail, document
+links, climate, guide content) is **read-only and bundled in the app**. It is produced by the Python pipeline in `Pipeline/` and replaced
 with each app release; user data never stores anything but stable Unigrids IDs that point
 at it. User data (trips, visits, check-ins, stamps) lives in SwiftData, synced through the
 user's private iCloud database.
@@ -113,16 +119,21 @@ alerts panel does not appear.
 | Source | Used for | Terms |
 |---|---|---|
 | [NPS API](https://www.nps.gov/subjects/developer/) | Park list, descriptions, fees, hours, visitor centres, alerts | Free key, rate-limited |
-| [NPS brochure maps](https://npgallery.nps.gov/) | Guide map panel, brochure viewer | Public domain; no NPS seal or implied endorsement |
-| [NPS Public Trails](https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/MapServer/0) | Trail lines | Public NPS dataset |
+| [NPS brochure maps](https://npgallery.nps.gov/) and each site's maps and brochures pages | Official maps and brochures viewer | Public domain; no NPS seal or implied endorsement |
+| [NPS Public Trails](https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/MapServer/0) | Trail catalogue | Public NPS dataset |
 | NPS Land Resources Division | National park and NPS unit boundaries | Public domain |
-| [PAD-US (USGS)](https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004) | Boundaries for state parks and federal sites | Free download |
+| NPS National Natural Landmarks | Landmark locations | Public domain |
+| US Forest Service, US Fish and Wildlife Service, BLM | National forest and grassland, wildlife refuge, BLM monument and conservation area boundaries | Public domain |
+| FHWA America's Byways | Scenic byway and All-American Road routes | Public domain |
+| National Transportation Atlas Database (US DOT) | Interstates, US highways, Amtrak routes and stations | Public domain |
+| Census TIGERweb | State boundaries, to say which states a place lies in | Public domain |
+| [PAD-US (USGS)](https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004) | Boundaries for state parks | Free download |
 | [Wikimedia Commons](https://commons.wikimedia.org/) | Photographs of state parks, monuments and refuges | Per photograph: public domain, CC0, CC BY or CC BY-SA, credited in the app |
 | [RIDB / Recreation.gov](https://catalog.data.gov/dataset/recreation-information-database-ridb-58364) | Facilities, campgrounds, booking deep links | CC BY |
 | USGS 3DEP | Trail profiles, hillshade | Public domain |
 | [OpenStreetMap](https://www.openstreetmap.org/copyright) | Roads, water and labels for offline tiles | ODbL — attribution and share-alike |
-| WeatherKit | Forecasts, sunrise/sunset, recent weather | Apple attribution required |
-| [Open-Meteo](https://open-meteo.com/) | Weather for older visits, climate normals | CC BY 4.0; free for non-commercial use |
+| [Open-Meteo](https://open-meteo.com/) | Trip forecasts, weather for each visit, ten-year monthly climate | CC BY 4.0; free for non-commercial use |
+| WeatherKit | Planned for forecasts once a development team is wired in (`SPECIFICATION.md` §17) | Apple attribution required |
 
 The app ships an Attributions screen covering all of the above, plus map attribution
 wherever tiles are drawn. Licensing and naming constraints are tracked in

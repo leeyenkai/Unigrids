@@ -91,10 +91,17 @@ struct PlaceBoundaryTests {
 
 @Suite("Map filters")
 struct MapFilterTests {
-    private func place(_ kind: PlaceKind) -> Place {
+    private func place(
+        _ kind: PlaceKind,
+        designation: String = "",
+        states: [String] = [],
+        activities: [PlaceActivity] = []
+    ) -> Place {
         Place(
-            id: "x", name: "X", designation: "", kind: kind, states: [],
-            centre: Coordinate(latitude: 0, longitude: 0)
+            id: "x", name: "X", designation: designation, kind: kind,
+            states: states.compactMap(USState.named),
+            centre: Coordinate(latitude: 0, longitude: 0),
+            activities: activities
         )
     }
 
@@ -106,21 +113,90 @@ struct MapFilterTests {
         #expect(!MapFilter.everything.isNarrowed)
     }
 
-    @Test("tiers and visits narrow together")
+    @Test("site types and visits narrow together")
     func narrowing() {
-        let filter = MapFilter(tiers: [.nationalPark], visits: .notVisited)
+        let filter = MapFilter(siteTypes: [.nationalPark], visits: .notVisited)
         #expect(filter.isNarrowed)
+        #expect(filter.narrowedCount == 2)
         #expect(filter.includes(place(.nationalPark), isVisited: false))
         #expect(!filter.includes(place(.nationalPark), isVisited: true))
         #expect(!filter.includes(place(.statePark), isVisited: false))
         #expect(MapFilter(visits: .visited).includes(place(.npsUnit), isVisited: true))
     }
 
-    @Test("national parks are always outlined; the rest only at regional zoom")
+    @Test("a battlefield can be hidden without hiding a seashore")
+    func siteTypesAreIndependent() {
+        var filter = MapFilter.everything
+        filter.siteTypes.remove(.battlefield)
+        #expect(!filter.includes(
+            place(.npsUnit, designation: "National Military Park"), isVisited: false
+        ))
+        #expect(filter.includes(
+            place(.npsUnit, designation: "National Seashore"), isVisited: false
+        ))
+    }
+
+    @Test("states narrow to places in any of them")
+    func states() {
+        let filter = MapFilter(states: ["UT", "AZ"])
+        #expect(filter.includes(place(.nationalPark, states: ["UT"]), isVisited: false))
+        #expect(filter.includes(place(.nationalPark, states: ["NV", "AZ"]), isVisited: false))
+        #expect(!filter.includes(place(.nationalPark, states: ["CA"]), isVisited: false))
+        #expect(!filter.includes(place(.nationalPark), isVisited: false))
+    }
+
+    @Test("activities need every one picked, and unknown is not offered")
+    func activities() {
+        let filter = MapFilter(activities: [.hiking, .camping])
+        #expect(filter.includes(
+            place(.nationalPark, activities: [.hiking, .camping, .fishing]), isVisited: false
+        ))
+        #expect(!filter.includes(place(.nationalPark, activities: [.hiking]), isVisited: false))
+        #expect(!filter.includes(place(.wildlifeRefuge), isVisited: false))
+    }
+
+    @Test("stamp locations only")
+    func stamps() {
+        let filter = MapFilter(stampLocationsOnly: true)
+        #expect(filter.includes(place(.npsUnit), isVisited: false, hasStampLocation: true))
+        #expect(!filter.includes(place(.npsUnit), isVisited: false, hasStampLocation: false))
+    }
+
+    @Test("a tier's types switch together")
+    func tierSwitch() {
+        var filter = MapFilter.everything
+        filter.setTier(.npsUnit, shown: false)
+        #expect(!filter.siteTypes.contains(.battlefield))
+        #expect(filter.siteTypes.contains(.nationalPark))
+        #expect(filter.siteTypes.contains(.nationalForest))
+        filter.setTier(.npsUnit, shown: true)
+        #expect(filter == .everything)
+    }
+
+    @Test("big lands are outlines from afar and pins close up")
+    func pinDetail() {
+        #expect(MapDetail.showsPin(for: .nationalPark, latitudeSpan: 40))
+        #expect(MapDetail.showsPin(for: .npsUnit, latitudeSpan: 40))
+        #expect(!MapDetail.showsPin(for: .nationalForest, latitudeSpan: 40))
+        #expect(MapDetail.showsPin(for: .nationalForest, latitudeSpan: 10))
+        #expect(!MapDetail.showsRoute(latitudeSpan: 40))
+        #expect(MapDetail.showsRoute(latitudeSpan: 10))
+    }
+
+    @Test("pictograms show for parks always and for the rest at regional zoom")
+    func pictogramDetail() {
+        #expect(MapDetail.showsPictogram(for: .nationalPark, latitudeSpan: 40))
+        #expect(!MapDetail.showsPictogram(for: .federalSite, latitudeSpan: 30))
+        #expect(MapDetail.showsPictogram(for: .federalSite, latitudeSpan: 6))
+    }
+
+    @Test("every place is outlined at every zoom; only parks at full detail from afar")
     func outlineDetail() {
         #expect(MapDetail.showsOutline(for: .nationalPark, latitudeSpan: 60))
-        #expect(!MapDetail.showsOutline(for: .statePark, latitudeSpan: 30))
-        #expect(MapDetail.showsOutline(for: .statePark, latitudeSpan: 8))
+        #expect(MapDetail.showsOutline(for: .statePark, latitudeSpan: 30))
+        #expect(!MapDetail.usesOverviewOutline(for: .nationalPark, latitudeSpan: 60))
+        #expect(MapDetail.usesOverviewOutline(for: .federalSite, latitudeSpan: 30))
+        #expect(!MapDetail.usesOverviewOutline(for: .federalSite, latitudeSpan: 8))
     }
 
     @Test("park names print before the smaller sites' do")
@@ -186,5 +262,52 @@ struct USTileGridTests {
             #expect((0 ..< USTileGrid.rows).contains(tile.row))
             #expect((0 ..< USTileGrid.columns).contains(tile.column))
         }
+    }
+}
+
+@Suite("Explorer camera")
+struct ExplorerCameraTests {
+    private let origin = Coordinate(latitude: 40, longitude: -100)
+
+    @Test("bearings point the way a compass would")
+    func bearings() {
+        let north = Coordinate(latitude: 41, longitude: -100)
+        let east = Coordinate(latitude: 40, longitude: -99)
+        #expect(abs(ExplorerCamera.bearing(from: origin, to: north)) < 0.01)
+        #expect(abs(ExplorerCamera.bearing(from: origin, to: east) - 90) < 1)
+        #expect(abs(ExplorerCamera.bearing(from: north, to: origin) - 180) < 0.01)
+    }
+
+    @Test("a bigger place is framed from further back, never closer than the floor")
+    func framing() {
+        let small = BoundingBox(south: 40, west: -100, north: 40.002, east: -99.998)
+        let large = BoundingBox(south: 40, west: -100, north: 41, east: -99)
+        #expect(ExplorerCamera.distance(toFrame: small) == 1500)
+        #expect(ExplorerCamera.distance(toFrame: large) > 200_000)
+    }
+
+    @Test("a sight is looked at from the park's side")
+    func sightShot() {
+        let park = BoundingBox(south: 39.5, west: -100.5, north: 40.5, east: -99.5)
+        let northernSight = Coordinate(latitude: 40.4, longitude: -100)
+        let shot = ExplorerCamera.sight(northernSight, in: park)
+        #expect(shot.centre == northernSight)
+        #expect(abs(shot.heading) < 1 || abs(shot.heading - 360) < 1)
+        #expect(shot.pitch > 60)
+    }
+
+    @Test("a trail is framed looking from its start to its end")
+    func trailShot() throws {
+        let shot = try #require(ExplorerCamera.trail([
+            origin, Coordinate(latitude: 40, longitude: -99.9),
+        ]))
+        #expect(abs(shot.heading - 90) < 1)
+        #expect(ExplorerCamera.trail([]) == nil)
+    }
+
+    @Test("an orbit turns a quarter in even steps, wrapping past north")
+    func orbit() {
+        #expect(ExplorerCamera.orbit(from: 300) == [330, 0, 30])
+        #expect(ExplorerCamera.orbit(from: 0, steps: 0).isEmpty)
     }
 }

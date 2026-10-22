@@ -13,6 +13,10 @@ import UnigridsReference
 public struct RootTabView: View {
     @Environment(\.referenceStore) private var store
     @AppStorage(OnboardingDefaults.seen) private var onboardingSeen = false
+    @Query private var trips: [Trip]
+    @Query private var visits: [Visit]
+    @Environment(\.modelContext) private var context
+    @State private var tab = DebugLaunch.tab.flatMap(AppTab.init(rawValue:)) ?? .map
 
     private let loadErrorMessage: String?
 
@@ -21,24 +25,45 @@ public struct RootTabView: View {
     }
 
     public var body: some View {
-        TabView {
-            Tab("Map", systemImage: "map") {
+        TabView(selection: $tab) {
+            Tab("Map", systemImage: "map", value: AppTab.map) {
                 MapScreen()
             }
-            Tab("Parks", systemImage: "square.grid.3x3") {
+            Tab("Parks", systemImage: "square.grid.3x3", value: AppTab.parks) {
                 ParkDirectoryScreen()
             }
-            Tab("Trips", systemImage: "point.topleft.down.to.point.bottomright.curvepath") {
+            Tab(
+                "Trips",
+                systemImage: "point.topleft.down.to.point.bottomright.curvepath",
+                value: AppTab.trips
+            ) {
                 TripsScreen()
             }
-            Tab("Passport", systemImage: "book.closed") {
+            Tab("Passport", systemImage: "book.closed", value: AppTab.passport) {
                 PassportScreen()
             }
-            Tab("Stats", systemImage: "chart.bar") {
+            Tab("Stats", systemImage: "chart.bar", value: AppTab.stats) {
                 StatsScreen()
             }
         }
         .tabViewStyle(.sidebarAdaptable)
+        .unigridsServices()
+        .overlay(alignment: .bottom) {
+            UndoToast()
+                .animation(.easeInOut(duration: 0.25), value: AppServices.undo.current?.id)
+        }
+        .task(id: upcomingPlaceIDs) {
+            await AppServices.brochures.prefetch(placeIDs: upcomingPlaceIDs, store: store)
+        }
+        .task(id: visitCount) {
+            await WeatherBackfill.run(context: context, store: store)
+        }
+        .task {
+            // Decode the trail catalogue off the main actor once the map is up, so the first
+            // guide or the Stats tab finds it ready.
+            let store = store
+            await Task.detached(priority: .background) { _ = store.allTrails.count }.value
+        }
         .overlay(alignment: .top) {
             if let loadErrorMessage {
                 DataUnavailableBanner(message: loadErrorMessage)
@@ -49,6 +74,18 @@ public struct RootTabView: View {
         }
     }
 
+    private var visitCount: Int {
+        visits.count
+    }
+
+    /// The parks on trips still to come, whose brochures are kept for offline (§6).
+    private var upcomingPlaceIDs: [UnigridsID] {
+        trips
+            .filter { $0.status != .done }
+            .flatMap(\.orderedStops)
+            .map(\.place)
+    }
+
     private var showOnboarding: Binding<Bool> {
         Binding(get: { !onboardingSeen }, set: {
             if !$0 {
@@ -56,6 +93,15 @@ public struct RootTabView: View {
             }
         })
     }
+}
+
+/// The five tabs (SPECIFICATION.md §4).
+enum AppTab: String, Hashable {
+    case map
+    case parks
+    case trips
+    case passport
+    case stats
 }
 
 /// Shown when the bundled dataset could not be read, which otherwise looks like an app

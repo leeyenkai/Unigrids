@@ -10,6 +10,8 @@ struct ParkAlert: Decodable, Identifiable, Hashable, Sendable {
     let description: String
     let category: String
     let url: String?
+    /// The NPS park code the alert is posted for, lower case as the API sends it.
+    let parkCode: String?
 
     var kind: Kind {
         switch category.lowercased() {
@@ -20,7 +22,7 @@ struct ParkAlert: Decodable, Identifiable, Hashable, Sendable {
         }
     }
 
-    enum Kind: Int, Comparable {
+    enum Kind: Int, Comparable, Hashable {
         case danger
         case closure
         case caution
@@ -63,26 +65,129 @@ enum NPSAlerts {
 
     private struct Response: Decodable {
         let data: [ParkAlert]
+        let total: Int?
+
+        static let empty = Response(data: [], total: 0)
+
+        private enum CodingKeys: String, CodingKey {
+            case data
+            case total
+        }
+
+        init(data: [ParkAlert], total: Int?) {
+            self.data = data
+            self.total = total
+        }
+
+        init(from decoder: any Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            data = try container.decode([ParkAlert].self, forKey: .data)
+            // The API sends its counts as strings.
+            if let text = try? container.decode(String.self, forKey: .total) {
+                total = Int(text)
+            } else {
+                total = try? container.decode(Int.self, forKey: .total)
+            }
+        }
     }
 
-    static func fetch(parkCode: String) async throws -> [ParkAlert] {
+    /// Every alert posted across the park system, a page of five hundred at a time — a
+    /// few requests for the whole country, rather than one per park.
+    static func fetchAll() async throws -> [ParkAlert] {
+        var alerts: [ParkAlert] = []
+        var start = 0
+        while true {
+            let page = try await request(parameters: [
+                URLQueryItem(name: "limit", value: "500"),
+                URLQueryItem(name: "start", value: String(start)),
+            ])
+            alerts += page.data
+            start += page.data.count
+            if page.data.isEmpty || start >= (page.total ?? 0) || start >= 5000 {
+                return alerts
+            }
+        }
+    }
+
+    private static func request(parameters: [URLQueryItem]) async throws -> Response {
         guard let key = apiKey,
               var components = URLComponents(string: "https://developer.nps.gov/api/v1/alerts")
-        else { return [] }
-        components.queryItems = [
-            URLQueryItem(name: "parkCode", value: parkCode.lowercased()),
-            URLQueryItem(name: "limit", value: "20"),
-        ]
-        guard let url = components.url else { return [] }
-        var request = URLRequest(url: url, timeoutInterval: 15)
+        else { return Response.empty }
+        components.queryItems = parameters
+        guard let url = components.url else { return Response.empty }
+        var request = URLRequest(url: url, timeoutInterval: 20)
         // The key goes in a header, so it never sits in a URL that might be logged.
         request.setValue(key, forHTTPHeaderField: "X-Api-Key")
         let (data, response) = try await URLSession.shared.data(for: request)
         guard (response as? HTTPURLResponse)?.statusCode == 200 else {
             throw URLError(.badServerResponse)
         }
-        return try JSONDecoder().decode(Response.self, from: data).data
-            .sorted { ($0.kind, $0.title) < ($1.kind, $1.title) }
+        return try JSONDecoder().decode(Response.self, from: data)
+    }
+
+    static func fetch(parkCode: String) async throws -> [ParkAlert] {
+        try await request(parameters: [
+            URLQueryItem(name: "parkCode", value: parkCode.lowercased()),
+            URLQueryItem(name: "limit", value: "20"),
+        ])
+        .data
+        .sorted { ($0.kind, $0.title) < ($1.kind, $1.title) }
+    }
+}
+
+/// Every park's live alerts, fetched once for the whole system and shared by the map's
+/// badges and the planner's conflict flags (SPECIFICATION.md §5, §10).
+///
+/// Nothing is kept across launches: alerts are only worth showing while they are fresh,
+/// and an hour-old copy is refetched rather than trusted.
+@MainActor
+@Observable
+public final class AlertsCenter {
+    public private(set) var lastUpdated: Date?
+    private(set) var byPark: [String: [ParkAlert]] = [:]
+    private var loading = false
+
+    public init() {}
+
+    var isConfigured: Bool {
+        NPSAlerts.isConfigured
+    }
+
+    /// Fetch unless the last fetch is under an hour old. Failure keeps whatever was there:
+    /// no badge is better than a wrong one, and a stale one is labelled by its time.
+    public func refreshIfStale() async {
+        guard NPSAlerts.isConfigured, !loading else { return }
+        if let lastUpdated, Date().timeIntervalSince(lastUpdated) < 3600 {
+            return
+        }
+        loading = true
+        defer { loading = false }
+        guard let alerts = try? await NPSAlerts.fetchAll() else { return }
+        var grouped: [String: [ParkAlert]] = [:]
+        for alert in alerts {
+            guard let code = alert.parkCode?.uppercased(), !code.isEmpty else { continue }
+            grouped[code, default: []].append(alert)
+        }
+        byPark = grouped.mapValues { $0.sorted { ($0.kind, $0.title) < ($1.kind, $1.title) } }
+        lastUpdated = Date()
+    }
+
+    func alerts(for parkCode: String?) -> [ParkAlert] {
+        guard let parkCode else { return [] }
+        return byPark[parkCode.uppercased()] ?? []
+    }
+
+    /// The badge a park's pin carries, if any: danger outranks closure, and cautions and
+    /// notices do not badge at all.
+    func mapLevel(for parkCode: String?) -> MapAlertLevel? {
+        let kinds = Set(alerts(for: parkCode).map(\.kind))
+        if kinds.contains(.danger) {
+            return .danger
+        }
+        if kinds.contains(.closure) {
+            return .closure
+        }
+        return nil
     }
 }
 

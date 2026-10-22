@@ -36,6 +36,23 @@ struct SymbolTests {
         #expect(symbolExists(name), "\(kind.rawValue): no such SF Symbol: \(name)")
     }
 
+    @Test("every site type has a pictogram that exists", arguments: SiteType.allCases)
+    func sitePictogramsResolve(type: SiteType) {
+        let name = UnigridsSymbol.site(type)
+        #expect(symbolExists(name), "\(type.rawValue): no such SF Symbol: \(name)")
+    }
+
+    @Test("site pictograms are all different, so the key can tell every type apart")
+    func sitePictogramsAreDistinct() {
+        let names = SiteType.allCases.map(UnigridsSymbol.site)
+        #expect(Set(names).count == names.count)
+    }
+
+    @Test("every transport layer has a symbol that exists", arguments: TransportLayer.allCases)
+    func transportSymbolsResolve(layer: TransportLayer) {
+        #expect(symbolExists(UnigridsSymbol.transport(layer)))
+    }
+
     @Test("a place pin is filled, because a pin is a place and not an action")
     func placeSymbolsAreFilled() {
         // The one fill rule the vocabulary follows. `sparkles` and `road.lanes` have no
