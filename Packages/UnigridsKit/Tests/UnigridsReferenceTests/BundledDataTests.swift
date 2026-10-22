@@ -7,12 +7,19 @@ import UnigridsCore
 /// *right* — nothing in the repository can — but they do catch the mistakes that would
 /// otherwise reach a user as a broken screen: a dangling id, a missing guide, a park
 /// counted twice, a coordinate in the wrong hemisphere.
+/// The dataset, decoded once for every test that reads it. Swift Testing makes a suite
+/// instance per test, and thirty decodes of five thousand places at once starved each other
+/// — and the load-time test — of CPU.
+enum SharedBundle {
+    static let store = Result { try BundledReferenceStore.bundled() }
+}
+
 @Suite("Bundled reference data")
 struct BundledDataTests {
     private let store: BundledReferenceStore
 
     init() throws {
-        store = try BundledReferenceStore.bundled()
+        store = try SharedBundle.store.get()
     }
 
     @Test("the dataset loads and says the pipeline built it")

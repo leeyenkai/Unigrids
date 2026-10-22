@@ -10,7 +10,7 @@ struct BundledLandsTests {
     private let store: BundledReferenceStore
 
     init() throws {
-        store = try BundledReferenceStore.bundled()
+        store = try SharedBundle.store.get()
     }
 
     @Test("the other public lands are on the map, every kind of them")
