@@ -86,3 +86,8 @@ Packages/UnigridsKit/Sources/UnigridsReference/Resources/generated/
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
+
+# Offline packs copied into the app by the pipeline's package step: large and
+# reproducible, so only the folder's README is committed.
+App/OfflinePacks/*
+!App/OfflinePacks/README.md

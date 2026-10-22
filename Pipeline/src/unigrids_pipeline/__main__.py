@@ -63,7 +63,10 @@ def build_parser() -> argparse.ArgumentParser:
                 "--min-zoom", type=int, default=defaults.min_zoom, help="Shallowest tile zoom."
             )
             step_parser.add_argument(
-                "--max-zoom", type=int, default=defaults.max_zoom, help="Deepest tile zoom."
+                "--max-zoom",
+                type=int,
+                default=None,
+                help="Deepest tile zoom. By default, from the park's area (ADR 0006).",
             )
             step_parser.add_argument(
                 "--tile-format",
@@ -82,6 +85,11 @@ def build_parser() -> argparse.ArgumentParser:
                 action="store_true",
                 help="Build the pack without the all-parks extrapolation.",
             )
+
+    subparsers.choices["package"].add_argument(
+        "--parks",
+        help="Comma-separated NPS codes to copy into the app (default: every built pack).",
+    )
 
     reference_parser = subparsers.add_parser(
         "reference",
@@ -144,7 +152,10 @@ def main(argv: Sequence[str] | None = None) -> int:
                     park_code=park_code,
                     settings=_pack_settings(args),
                     skip_report=getattr(args, "skip_report", False),
+                    zoom_by_area=getattr(args, "max_zoom", None) is None,
                 )
+            elif name == "package":
+                function(parks=getattr(args, "parks", None))
             else:
                 function()
         except steps.StepNotBuiltError as error:
@@ -161,7 +172,7 @@ def _pack_settings(args: argparse.Namespace) -> config.PackSettings:
     return dataclasses.replace(
         defaults,
         min_zoom=getattr(args, "min_zoom", defaults.min_zoom),
-        max_zoom=getattr(args, "max_zoom", defaults.max_zoom),
+        max_zoom=getattr(args, "max_zoom", None) or defaults.max_zoom,
         tile_format=getattr(args, "tile_format", defaults.tile_format),
         boundary_buffer_m=getattr(args, "buffer_metres", defaults.boundary_buffer_m),
     )

@@ -20,6 +20,9 @@ CONTENT_DIR = PIPELINE_ROOT / "content"
 # Where `package` copies the built dataset. The directory is gitignored — generated data
 # belongs to its generator — and the app reads it in place of the hand-authored seed once
 # it exists.
+# Offline packs the app bundles as a folder reference (``steps.package``).
+APP_OFFLINE_PACKS = REPO_ROOT / "App" / "OfflinePacks"
+
 APP_RESOURCES = (
     REPO_ROOT / "Packages/UnigridsKit/Sources/UnigridsReference/Resources/generated"
 )
@@ -141,9 +144,29 @@ def ensure_directories() -> None:
 
 
 def park(unit_code: str) -> Park:
-    """Look up a park by NPS code, with a message that lists what there is."""
-    try:
-        return PARKS[unit_code.upper()]
-    except KeyError:
-        known = ", ".join(sorted(PARKS))
-        raise SystemExit(f"unknown park {unit_code!r}. Known park codes: {known}") from None
+    """Look up a park by NPS code: a pilot park, or any national park the reference data
+    knows, with a message that lists what there is."""
+    code = unit_code.upper()
+    if code in PARKS:
+        return PARKS[code]
+    from . import reference_content
+
+    for row_code, row in reference_content.national_park_rows():
+        if code in (row_code.upper(), reference_content.api_code(row).upper()):
+            return Park(row_code.upper(), row["id"], row["slug"], f"{row['name']} National Park")
+    known = ", ".join(sorted(code for code, _ in reference_content.national_park_rows()))
+    raise SystemExit(f"unknown park {unit_code!r}. Known park codes: {known}")
+
+
+# The deepest zoom a pack goes to, by the park's area (ADR 0006): full depth for small
+# parks, one level shallower up to 10,000 km², and zoom 13 for the vast trailless Alaskan
+# units, where two metres a pixel of icefield is nothing anyone will look at.
+ZOOM_BY_AREA: tuple[tuple[float, int], ...] = ((2_000.0, 16), (10_000.0, 15))
+WILDERNESS_MAX_ZOOM = 13
+
+
+def max_zoom_for_area(area_km2: float) -> int:
+    for ceiling, zoom in ZOOM_BY_AREA:
+        if area_km2 <= ceiling:
+            return zoom
+    return WILDERNESS_MAX_ZOOM

@@ -168,7 +168,9 @@ def test_tiles_come_back_under_the_row_order_mbtiles_expects(tmp_path):
     assert row == (761, flip_tile_row(12, 1591))
     metadata = dict(connection.execute("SELECT name, value FROM metadata"))
     assert metadata["format"] == "webp"
-    assert metadata["scheme"] == "xyz"
+    # MBTiles rows are TMS by definition; a "scheme" key saying otherwise made other
+    # readers draw the pack upside down.
+    assert "scheme" not in metadata
     assert "OpenStreetMap" in metadata["attribution"]
     connection.close()
 
@@ -239,3 +241,19 @@ def test_a_flat_zoom_policy_treats_every_park_the_same():
 
     policy = sizereport.ZoomPolicy("z10-15", 10, 15)
     assert policy.zooms_for(1.0) == policy.zooms_for(100_000.0) == list(range(10, 16))
+
+
+def test_deepest_zoom_follows_the_park_area():
+    from unigrids_pipeline import config
+
+    assert config.max_zoom_for_area(600) == 16  # Zion
+    assert config.max_zoom_for_area(2_114) == 15  # Great Smoky Mountains
+    assert config.max_zoom_for_area(8_983) == 15  # Yellowstone
+    assert config.max_zoom_for_area(53_000) == 13  # Wrangell–St. Elias
+
+
+def test_any_national_park_can_be_built_by_code():
+    from unigrids_pipeline import config
+
+    assert config.park("ZION").place_id == "np-zion"
+    assert config.park("glac").place_id == "np-glacier"

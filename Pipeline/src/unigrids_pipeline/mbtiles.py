@@ -94,7 +94,6 @@ class MBTilesWriter:
             maxzoom=max_zoom,
             type="baselayer",
             version=version,
-            scheme="xyz",
             attribution=attribution,
         )
 

@@ -12,7 +12,9 @@ that silently wrote nothing would be worse (``AGENTS.md`` §10).
 
 from __future__ import annotations
 
+import dataclasses
 import json
+import shutil
 from pathlib import Path
 from typing import Any
 
@@ -256,6 +258,7 @@ def build(
     park_code: str = config.DEFAULT_PARK,
     settings: config.PackSettings | None = None,
     skip_report: bool = False,
+    zoom_by_area: bool = False,
 ) -> packs.PackResult:
     """Write the bundled dataset and one offline pack per national park.
 
@@ -280,6 +283,11 @@ def build(
 
     boundary_features = _read_geojson(boundary_directory / f"{park.place_id}.geojson")
     trail_features = _read_geojson(trails_directory / f"{park.place_id}.geojson")
+    if zoom_by_area:
+        rings = [ring for ring in coverage.rings(boundary_features) if not ring.is_hole]
+        area = coverage.area_km2(rings)
+        settings = dataclasses.replace(settings, max_zoom=config.max_zoom_for_area(area))
+        print(f"    {area:,.0f} km², so tiles to zoom {settings.max_zoom}")
     osm_payload = json.loads((osm_directory / f"{park.place_id}.json").read_text())
     osm_ways = osm.ways(osm_payload)
     grid = dem.ElevationGrid.load(elevation_directory / park.place_id)
@@ -340,19 +348,57 @@ def build(
     return result
 
 
-def package() -> None:
-    """Copy the dataset and packs into the app's resources, and re-check brochure links.
+def package(*, parks: str | None = None) -> Path:
+    """Copy built offline packs into the app, as ``App/OfflinePacks/<place-id>/``.
 
-    NPS brochure URLs are not standardised across parks and they move, so every stored
-    link is re-checked here and a broken one is recorded so the viewer can fall back to
-    the park's NPS maps page (§6, §12).
+    The app adds that folder to its bundle as a folder reference, so whatever is there
+    ships and an empty folder ships nothing (``docs/adr/0010``). Only the four files a
+    pack is made of are copied — never a sync conflict copy or extended attributes — and
+    an ``index.json`` lists what is there. ``parks`` narrows it to some packs, to keep a
+    day-to-day build small.
     """
-    raise StepNotBuiltError(
-        f"package() is not built. It must copy the built dataset into "
-        f"{config.APP_RESOURCES} and re-verify every brochure link. The packs in "
-        f"{config.OUT_DIR / 'packs'} are not copied into the app yet: the app has no "
-        "tile-overlay screen to read them (docs/mvp-scope.md, 1.0.0)."
+    source = config.OUT_DIR / "packs"
+    destination = config.APP_OFFLINE_PACKS
+    wanted = (
+        {config.park(code).place_id for code in parks.split(",") if code.strip()}
+        if parks
+        else None
     )
+    destination.mkdir(parents=True, exist_ok=True)
+    for child in destination.iterdir():
+        if child.name == "README.md":
+            continue
+        if child.is_dir():
+            shutil.rmtree(child)
+        else:
+            child.unlink()
+    index: list[dict[str, Any]] = []
+    for pack in sorted(source.iterdir()) if source.exists() else []:
+        if not (pack / "tiles.mbtiles").exists() or (wanted and pack.name not in wanted):
+            continue
+        target = destination / pack.name
+        target.mkdir()
+        size = 0
+        for name in PACK_FILES:
+            if (pack / name).exists():
+                shutil.copyfile(pack / name, target / name)
+                size += (target / name).stat().st_size
+        manifest = json.loads((pack / "manifest.json").read_text())
+        index.append({
+            "placeID": pack.name,
+            "name": manifest.get("name"),
+            "bytes": size,
+            "minZoom": manifest["tiles"]["minZoom"],
+            "maxZoom": manifest["tiles"]["maxZoom"],
+        })
+        print(f"    {pack.name}: {size / 1e6:.1f} MB")
+    (destination / "index.json").write_text(json.dumps({"packs": index}, indent=1) + "\n")
+    total = sum(entry["bytes"] for entry in index)
+    print(f"    {len(index)} packs, {total / 1e6:.1f} MB, in {destination}")
+    return destination
+
+
+PACK_FILES = ("tiles.mbtiles", "trails.json", "manifest.json", "ATTRIBUTION.md")
 
 
 def _render_box(park: config.Park, boundary_features: list[dict[str, Any]] | None) -> BoundingBox:

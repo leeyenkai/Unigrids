@@ -366,8 +366,8 @@ def _write_manifest(
         },
         "tiles": {
             "file": "tiles.mbtiles",
-            "scheme": "xyz",
-            "rowOrder": "MBTiles stores TMS rows; flip y for MKTileOverlay's XYZ",
+            "scheme": "tms",
+            "rowOrder": "MBTiles stores TMS rows, south first; flip y for MKTileOverlay's XYZ",
             "size": settings.tile_size,
             "format": settings.tile_format,
             "minZoom": settings.min_zoom,
