@@ -73,7 +73,8 @@ public final class UndoCenter {
 
     private(set) var current: Offer?
     private(set) var hosts: [UUID] = []
-    private(set) var failure: String?
+    /// A line to show with no Undo: a failed undo, or "Added to your visit".
+    private(set) var notice: String?
     private var expiry: Task<Void, Never>?
 
     public init() {}
@@ -97,13 +98,32 @@ public final class UndoCenter {
         let chain = origin >= 0 ? Array(hosts[...origin]) : []
         let offer = Offer(message: message, change: change, chain: chain)
         current = offer
-        failure = nil
+        notice = nil
         AccessibilityNotification.Announcement(message).post()
+        expire(after: .seconds(8))
+    }
+
+    /// Say something that has nothing to undo.
+    func notify(_ message: String) {
+        current = nil
+        notice = message
+        AccessibilityNotification.Announcement(message).post()
+        expire(after: .seconds(4))
+    }
+
+    private func expire(after delay: Duration) {
         expiry?.cancel()
+        let offer = current?.id
+        let notice = notice
         expiry = Task { [weak self] in
-            try? await Task.sleep(for: .seconds(8))
-            guard !Task.isCancelled, self?.current?.id == offer.id else { return }
-            self?.current = nil
+            try? await Task.sleep(for: delay)
+            guard !Task.isCancelled, let self else { return }
+            if current?.id == offer {
+                current = nil
+            }
+            if self.notice == notice {
+                self.notice = nil
+            }
         }
     }
 
@@ -116,14 +136,13 @@ public final class UndoCenter {
             // too. A creation that is undone has no reminders to lose.
             Task { await ReminderScheduler.reconcile(Self.reminders(in: context)) }
         } catch {
-            failure = "That could not be undone: \(error.localizedDescription)"
-            AccessibilityNotification.Announcement(failure ?? "").post()
+            notify("That could not be undone: \(error.localizedDescription)")
         }
     }
 
     func dismiss() {
         current = nil
-        failure = nil
+        notice = nil
     }
 
     private static func reminders(in context: ModelContext) -> [Reminder] {
@@ -147,16 +166,20 @@ extension View {
     /// sheet is never drawn behind it.
     func unigridsSheet(
         isPresented: Binding<Bool>,
+        onDismiss: (() -> Void)? = nil,
         @ViewBuilder content: @escaping () -> some View
     ) -> some View {
-        sheet(isPresented: isPresented) { content().unigridsServices().undoHost() }
+        sheet(isPresented: isPresented, onDismiss: onDismiss) {
+            content().unigridsServices().undoHost()
+        }
     }
 
     func unigridsSheet<Item: Identifiable>(
         item: Binding<Item?>,
+        onDismiss: (() -> Void)? = nil,
         @ViewBuilder content: @escaping (Item) -> some View
     ) -> some View {
-        sheet(item: item) { content($0).unigridsServices().undoHost() }
+        sheet(item: item, onDismiss: onDismiss) { content($0).unigridsServices().undoHost() }
     }
 }
 
@@ -185,8 +208,8 @@ struct UndoToast: View {
         Group {
             if let undo, undo.displayHost == host, let offer = undo.current {
                 bar(message: offer.message, canUndo: true)
-            } else if let undo, let failure = undo.failure, undo.hosts.last == host {
-                bar(message: failure, canUndo: false)
+            } else if let undo, let notice = undo.notice, undo.hosts.last == host {
+                bar(message: notice, canUndo: false)
             }
         }
         .animation(.easeInOut(duration: 0.25), value: undo?.current?.id)
@@ -194,7 +217,7 @@ struct UndoToast: View {
 
     private func bar(message: String, canUndo: Bool) -> some View {
         HStack(spacing: 14) {
-            Image(canUndo ? UnigridsSymbol.delete : UnigridsSymbol.warning)
+            Image(canUndo ? UnigridsSymbol.undo : UnigridsSymbol.seen)
                 .foregroundStyle(style.bandInkSecondary)
                 .accessibilityHidden(true)
             Text(message)

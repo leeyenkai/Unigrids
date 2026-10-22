@@ -341,7 +341,7 @@ public final class LogStore {
     // MARK: - Private
 
     /// The visit to `placeID` on the day `date` falls on in `calendar`, if one is logged.
-    func visit(to placeID: UnigridsID, on date: Date, calendar: Calendar) throws -> Visit? {
+    public func visit(to placeID: UnigridsID, on date: Date, calendar: Calendar) throws -> Visit? {
         try visits(to: placeID).first { visit in
             UnigridsCalendar.isSameDay(visit.date, date, calendar: calendar)
         }

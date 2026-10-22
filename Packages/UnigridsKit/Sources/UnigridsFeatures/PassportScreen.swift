@@ -179,6 +179,7 @@ struct PassportRegionPage: View {
     @Query private var stamps: [Stamp]
     @State private var stamping: PassportSlot?
     @State private var viewing: PassportSlot?
+    @State private var stampAfterViewing: PassportSlot?
     @State private var pageImage: URL?
 
     private var places: [Place] {
@@ -222,10 +223,17 @@ struct PassportRegionPage: View {
         .unigridsSheet(item: $stamping) { slot in
             StampSheet(place: slot.place, location: slot.location?.id)
         }
-        .unigridsSheet(item: $viewing) { slot in
+        // "Stamp again" closes the impressions and opens the stamp sheet once it has
+        // gone: presenting one sheet while another is still leaving is dropped on iOS.
+        .unigridsSheet(item: $viewing, onDismiss: {
+            if let next = stampAfterViewing {
+                stampAfterViewing = nil
+                stamping = next
+            }
+        }) { slot in
             ImpressionsSheet(slot: slot, region: region) {
+                stampAfterViewing = slot
                 viewing = nil
-                stamping = slot
             }
         }
     }

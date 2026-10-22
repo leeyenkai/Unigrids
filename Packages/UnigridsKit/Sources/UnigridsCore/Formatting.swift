@@ -134,3 +134,47 @@ public enum UnigridsFormat {
         )
     }
 }
+
+// MARK: - Dates
+
+/// The four ways the app writes a date, so the same day reads the same everywhere.
+///
+/// Each takes the calendar the date is reckoned in — the place's own, for anything that
+/// happened somewhere — so a visit's day does not move with the device's time zone.
+public typealias DateStyle = Date.FormatStyle
+
+extension UnigridsFormat {
+    /// "12 Jun 2026": a visit, a stamp, a trip's dates.
+    public static func day(in calendar: Calendar = .unigrids) -> DateStyle {
+        styled(.dateTime.day().month(.abbreviated).year(), calendar)
+    }
+
+    /// "Wed 12 Jun": a day of a trip, a forecast.
+    public static func weekday(in calendar: Calendar = .unigrids) -> DateStyle {
+        styled(.dateTime.weekday(.abbreviated).day().month(.abbreviated), calendar)
+    }
+
+    /// "June 2026": first and latest visit, a month of photographs.
+    public static func month(in calendar: Calendar = .unigrids) -> DateStyle {
+        styled(.dateTime.month(.wide).year(), calendar)
+    }
+
+    /// "12 Jun 2026, 10:42": a reminder, when alerts were fetched.
+    public static func moment(in calendar: Calendar = .unigrids) -> DateStyle {
+        styled(.dateTime.day().month(.abbreviated).year().hour().minute(), calendar)
+    }
+
+    private static func styled(_ style: DateStyle, _ calendar: Calendar) -> DateStyle {
+        var style = style
+        style.calendar = calendar
+        style.timeZone = calendar.timeZone
+        return style
+    }
+}
+
+extension Calendar {
+    /// `UnigridsCalendar.gregorian()`: Gregorian, in the device's zone.
+    public static var unigrids: Calendar {
+        UnigridsCalendar.gregorian()
+    }
+}

@@ -28,6 +28,7 @@ public enum UnigridsSymbol: String, CaseIterable, Sendable {
     case settings = "gearshape"
     case delete = "trash"
     case add = "plus"
+    case undo = "arrow.uturn.backward"
     case share = "square.and.arrow.up"
     case importFile = "square.and.arrow.down"
     case spreadsheet = "tablecells"

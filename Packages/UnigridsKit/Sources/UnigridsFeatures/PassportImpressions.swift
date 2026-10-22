@@ -117,6 +117,7 @@ struct ImpressionsSheet: View {
     @Environment(\.unigrid) private var style
     @Environment(\.dismiss) private var dismiss
     @Environment(UndoCenter.self) private var undo: UndoCenter?
+    @Environment(\.undoHost) private var undoHost
     @Query private var stamps: [Stamp]
 
     let slot: PassportSlot
@@ -128,8 +129,20 @@ struct ImpressionsSheet: View {
     }
 
     var body: some View {
-        NavigationStack {
+        SheetPage(
+            "Impressions",
+            kicker: slot.location?.name ?? slot.place.name,
+            actions: .done { dismiss() },
+            width: 520,
+            height: 640
+        ) {
             List {
+                if impressions.isEmpty {
+                    Text("No impressions in this slot yet.")
+                        .font(UnigridStyle.proseSmall)
+                        .foregroundStyle(style.inkSecondary)
+                        .listRowBackground(Color.clear)
+                }
                 ForEach(impressions) { stamp in
                     ImpressionRow(stamp: stamp, place: slot.place, region: region)
                         .listRowBackground(Color.clear)
@@ -137,41 +150,42 @@ struct ImpressionsSheet: View {
                             Button(role: .destructive) {
                                 delete(stamp)
                             } label: {
-                                Label("Delete", systemImage: "trash")
+                                Label("Delete", symbol: .delete)
                             }
                         }
                         .contextMenu {
-                            Button("Delete impression", role: .destructive) { delete(stamp) }
+                            Button(role: .destructive) {
+                                delete(stamp)
+                            } label: {
+                                Label("Delete", symbol: .delete)
+                            }
                         }
                 }
-                Button(action: onStampAgain) {
-                    Label { Text("Stamp again") } icon: { StampIcon() }
+                Group {
+                    Button(action: onStampAgain) {
+                        Label { Text("Stamp again") } icon: { StampIcon() }
+                    }
+                    .buttonStyle(BrochureButtonStyle(.primary))
+                    NavigationLink {
+                        PlaceDestination(placeID: slot.place.id)
+                    } label: {
+                        Label(
+                            slot.place.tier.hasGuide ? "Open guide" : "Open page",
+                            symbol: .openGuide
+                        )
+                    }
+                    .buttonStyle(BrochureButtonStyle(.secondary))
                 }
-                .buttonStyle(BrochureButtonStyle(.primary))
                 .listRowSeparator(.hidden)
                 .listRowBackground(Color.clear)
             }
             .listStyle(.plain)
-            .paperPage()
-            .navigationTitle(slot.location?.name ?? slot.place.name)
-            .toolbarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Done") { dismiss() }
-                }
-            }
-            .overlay {
-                if impressions.isEmpty {
-                    ContentUnavailableView("No impressions", systemImage: "seal")
-                }
-            }
         }
-        .sheetSize(width: 520, height: 640)
     }
 
     private func delete(_ stamp: Stamp) {
-        guard let record = try? LogStore(context: context).delete(stamp: stamp) else { return }
-        undo?.offer(record, message: record.summary { store.place($0)?.name })
+        guard let change = try? LogStore(context: context).delete(stamp: stamp) else { return }
+        undo?.offer(change, message: change.summary { store.place($0)?.name }, from: undoHost)
     }
 }
 

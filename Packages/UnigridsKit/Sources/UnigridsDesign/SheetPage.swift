@@ -4,6 +4,9 @@ import SwiftUI
 public enum SheetActions {
     /// A sheet that only shows something: Done, at the trailing edge.
     case done(() -> Void)
+    /// A sheet whose action is in its content — a stamp to press — so the toolbar only
+    /// offers a way out.
+    case cancel(() -> Void)
     /// A sheet that changes something: Cancel leading, the action trailing and in bold.
     case confirm(_ title: String, enabled: Bool = true, cancel: () -> Void, action: () -> Void)
 }
@@ -58,6 +61,10 @@ public struct SheetPage<Content: View>: View {
         case let .done(done):
             ToolbarItem(placement: .confirmationAction) {
                 Button("Done", action: done)
+            }
+        case let .cancel(cancel):
+            ToolbarItem(placement: .cancellationAction) {
+                Button("Cancel", action: cancel)
             }
         case let .confirm(title, enabled, cancel, action):
             ToolbarItem(placement: .cancellationAction) {
