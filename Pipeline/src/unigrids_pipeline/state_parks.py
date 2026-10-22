@@ -213,6 +213,8 @@ def proposed_id(name: str, designation: str, state: str) -> str:
 
 
 def _place(unit: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any] | None]:
+    from .lands_build import lower_small_words
+
     polygons = unit["polygons"]
     simplified = outline.generalise(polygons, TOLERANCE)
     box = outline.bbox(simplified)
@@ -234,7 +236,9 @@ def _place(unit: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any] | None]
             latitude = sum(p[1] for p in points) / len(points)
     place: dict[str, Any] = {
         "id": proposed_id(unit["name"], unit["designation"], unit["state"]),
-        "name": unit["name"],
+        # Tidied for display only: the registry key keeps the name as PAD-US spelled it,
+        # so an identifier never changes because a capital did.
+        "name": lower_small_words(unit["name"]),
         "designation": unit["designation"],
         "kind": "statePark",
         "agency": "stateAgency",

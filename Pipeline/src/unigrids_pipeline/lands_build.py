@@ -742,6 +742,26 @@ def title_case(text: str) -> str:
     return "".join(result)
 
 
+_ENGLISH_SMALL_WORDS = frozenset({"and", "at", "by", "for", "in", "of", "on", "the", "to"})
+
+
+def lower_small_words(name: str) -> str:
+    """``Statue Of Liberty`` → ``Statue of Liberty``: the small words a source wrote with a
+    capital, lowered — never the first word, never after a comma (``Arlington House, The
+    Robert E. Lee Memorial``), and never ``A``, which is as often an initial.
+    """
+    words = name.split(" ")
+    for index in range(1, len(words)):
+        word = words[index]
+        if (
+            word.lower() in _ENGLISH_SMALL_WORDS
+            and word[:1].isupper()
+            and not words[index - 1].endswith((",", ":", "–", "—"))
+        ):
+            words[index] = word.lower()
+    return " ".join(words)
+
+
 def _capitalise(word: str) -> str:
     if re.fullmatch(r"[ivx]+", word) and len(word) <= 4:
         return word.upper()

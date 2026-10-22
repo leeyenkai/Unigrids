@@ -549,7 +549,9 @@ def _nps_unit(park: dict[str, Any], api: _NPSData) -> tuple[dict[str, Any], list
         facts["entranceFee"] = fee
     place: dict[str, Any] = {
         "id": place_id,
-        "name": _clean(park.get("name")) or _clean(park.get("fullName")),
+        "name": lands_build.lower_small_words(
+            _clean(park.get("name")) or _clean(park.get("fullName"))
+        ),
         "designation": _clean(park.get("designation")) or _designation_from_name(park),
         "kind": "npsUnit",
         "agency": "nps",

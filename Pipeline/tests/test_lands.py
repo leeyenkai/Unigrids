@@ -84,3 +84,14 @@ def test_water_routes_are_not_hiking_trails() -> None:
     assert trail_catalogue._is_water_route("Motorized Watercraft")
     assert not trail_catalogue._is_water_route("Hiker/Pedestrian, Non-Motorized Watercraft")
     assert not trail_catalogue._is_water_route("Hike")
+
+
+def test_small_words_a_source_capitalised_are_lowered() -> None:
+    assert lands_build.lower_small_words("Statue Of Liberty") == "Statue of Liberty"
+    assert lands_build.lower_small_words("War In The Pacific") == "War in the Pacific"
+    assert (
+        lands_build.lower_small_words("Arlington House, The Robert E. Lee Memorial")
+        == "Arlington House, The Robert E. Lee Memorial"
+    )
+    assert lands_build.lower_small_words("James A Garfield") == "James A Garfield"
+    assert lands_build.lower_small_words("The Narrows") == "The Narrows"

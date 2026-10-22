@@ -287,8 +287,12 @@ makes the change. A release moves that block under a version heading with its da
   at the largest text sizes. Remaining fixed-size text follows Dynamic Type.
 - The place card, explorer cards, passport pages, America 250 and Photo credits open with
   the same band as every other screen.
+- State parks show as pins from regional zoom, like forests and refuges: three and a half
+  thousand at country scale were a blanket of cluster counts. Their outlines still show.
 
 ### Fixed
+- Names an agency wrote with capital small words read properly — "Statue of Liberty",
+  "War in the Pacific", "Crater of Diamonds" — without changing any place's identifier.
 
 - The map key's chip drew four pins that ran into each other; the key's "reading the map"
   section described the old hollow pins.
