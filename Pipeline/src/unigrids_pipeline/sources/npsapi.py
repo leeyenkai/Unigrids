@@ -46,6 +46,7 @@ ENDPOINTS = {
     "passportstamplocations": 300,
     "places": 300,
     "campgrounds": 200,
+    "feespasses": 100,
 }
 
 

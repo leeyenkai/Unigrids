@@ -31,7 +31,7 @@ from typing import Any
 import httpx
 
 from . import ids, measure, outline, rawstore, reference_content, trails
-from .geo import Coordinate, distance_m
+from .geo import Coordinate, distance_m, line_length_m
 from .rawstore import FetchRecord, SourceTerms
 from .sources import arcgis, http
 
@@ -80,6 +80,7 @@ TRAIL_TERMS = SourceTerms(
 # only: the Arctic parks that also publish none are trailless wilderness, and right to.
 OSM_TRAIL_UNITS = ("SEKI",)
 OSM_TRAIL_KINDS = "path|footway|bridleway"
+OSM_TILES_PER_SIDE = 3
 
 OSM_TRAIL_TERMS = SourceTerms(
     identifier="openstreetmap-trails",
@@ -155,14 +156,29 @@ def fetch_osm(version: str, unit_outlines: dict[str, list[outline.Polygon]]) -> 
                 print(f"    trails-national/{unit}-osm: no outline to search within")
                 continue
             south, west, north, east = box
-            query = osm.trail_query(
-                BoundingBox(south=south, west=west, north=north, east=east), OSM_TRAIL_KINDS
-            )
-            payload = osm.download_query(session, query, record=record)
+            # Asked in tiles: one query over two parks' worth of Sierra is the kind
+            # volunteer-run Overpass servers time out on.
+            ways: dict[int, dict[str, Any]] = {}
+            tiles = OSM_TILES_PER_SIDE
+            try:
+                for row in range(tiles):
+                    for column in range(tiles):
+                        tile = BoundingBox(
+                            south=south + (north - south) * row / tiles,
+                            north=south + (north - south) * (row + 1) / tiles,
+                            west=west + (east - west) * column / tiles,
+                            east=west + (east - west) * (column + 1) / tiles,
+                        )
+                        payload = osm.download_query(
+                            session, osm.trail_query(tile, OSM_TRAIL_KINDS), record=record
+                        )
+                        for way in osm.ways(payload):
+                            ways[way["id"]] = way
+            except http.FetchError as error:
+                print(f"    trails-national/{unit}-osm: {error}; left for the next run")
+                continue
             features = [
-                _osm_feature(way)
-                for way in osm.ways(payload)
-                if (way.get("tags") or {}).get("name")
+                _osm_feature(way) for way in ways.values() if (way.get("tags") or {}).get("name")
             ]
             path.write_text(json.dumps({"type": "FeatureCollection", "features": features}))
             record.add_file(path, root=directory)
@@ -296,9 +312,15 @@ def build(
     """Every catalogue trail, as the app's ``Trail`` decodes it."""
     elevation_dir = raw_trails.parent / "trail-elevation"
     sights_by_place: dict[str, list[dict[str, Any]]] = {}
+    anchors_by_place: dict[str, list[Coordinate]] = {}
     for poi in pois:
         if poi["kind"] in ("sight", "viewpoint"):
             sights_by_place.setdefault(poi["placeID"], []).append(poi)
+        elif poi["kind"] in ("visitorCentre", "campground"):
+            location = poi["location"]
+            anchors_by_place.setdefault(poi["placeID"], []).append(
+                (location["longitude"], location["latitude"])
+            )
 
     catalogue: list[dict[str, Any]] = []
     for _, row in reference_content.national_park_rows():
@@ -314,7 +336,14 @@ def build(
         for name, group in sorted(trails.group_by_name(segments).items()):
             if name.startswith("Unnamed trail"):
                 continue
-            trail = _trail(row, name, group, sampler, sights_by_place.get(row["id"], []))
+            trail = _trail(
+                row,
+                name,
+                group,
+                sampler,
+                sights_by_place.get(row["id"], []),
+                anchors_by_place.get(row["id"], []),
+            )
             if trail is None or trail["id"] in seen:
                 continue
             seen.add(trail["id"])
@@ -334,15 +363,18 @@ def _trail(
     group: list[dict[str, Any]],
     sampler: measure.ElevationSampler,
     sights: list[dict[str, Any]],
+    anchors: list[Coordinate] | None = None,
 ) -> dict[str, Any] | None:
-    chains = trails.chain(group)
+    chains = walking_order(trails.chain(group), anchors or [], sampler)
+    total = sum(line_length_m(chain) for chain in chains) or 1.0
     measurements = [
         measure.measure(
             chain,
             sampler,
             interval_m=STATION_INTERVAL_M,
             smoothing_window_m=SMOOTHING_WINDOW_M,
-            profile_points=PROFILE_POINTS,
+            # Each part's share of the profile, so the stored profile covers all of it.
+            profile_points=max(2, round(PROFILE_POINTS * line_length_m(chain) / total)),
         )
         for chain in chains
     ]
@@ -368,16 +400,12 @@ def _trail(
     if len(chains) == 1 and distance_m(chains[0][0], chains[0][-1]) <= 60 and length > 500:
         trail["routeType"] = "loop"
     if all(item.has_elevation for item in measurements):
-        longest = max(range(len(measurements)), key=lambda index: measurements[index].length_m)
         trail |= {
             "gainMetres": round(sum(item.elevation_gain_m or 0 for item in measurements), 1),
             "lossMetres": round(sum(item.elevation_loss_m or 0 for item in measurements), 1),
             "highPointMetres": round(max(item.high_point_m or 0 for item in measurements), 1),
             "lowPointMetres": round(min(item.low_point_m or 0 for item in measurements), 1),
-            "profile": [
-                [round(point.distance_m), round(point.elevation_m, 1)]
-                for point in measurements[longest].profile
-            ],
+            "profile": joined_profile(measurements),
         }
     if properties.get("SOURCE") == "osm":
         trail["source"] = "osm"
@@ -396,6 +424,74 @@ def _trail(
     if features := _features(name):
         trail["features"] = features
     return trail
+
+
+TRAILHEAD_REACH_M = 3_000.0
+"""How near a visitor centre or campground an end must be to count as where people start."""
+
+
+def walking_order(
+    chains: list[list[Coordinate]],
+    anchors: list[Coordinate],
+    sampler: measure.ElevationSampler | None,
+) -> list[list[Coordinate]]:
+    """A trail's parts in the order and direction someone walks them.
+
+    Parts are laid end to end, nearest ends first, starting from the longest. The whole
+    route then starts at the end nearer a visitor centre or campground — where trailheads
+    are — or, with neither nearby, at its lower end, since a trail climbs to what it is
+    for more often than it descends to it. The source digitised many lines summit first,
+    which made a walk up Wheeler Peak a 877 m descent.
+    """
+    if not chains:
+        return chains
+    remaining = sorted(chains, key=lambda line: -line_length_m(line))
+    route = [remaining.pop(0)]
+    while remaining:
+        head, tail = route[0][0], route[-1][-1]
+        best = min(
+            (
+                (distance_m(end, point), index, end_name, point_name)
+                for index, part in enumerate(remaining)
+                for end_name, end in (("head", head), ("tail", tail))
+                for point_name, point in (("first", part[0]), ("last", part[-1]))
+            ),
+        )
+        _, index, end_name, point_name = best
+        part = remaining.pop(index)
+        if end_name == "tail":
+            route.append(part if point_name == "first" else list(reversed(part)))
+        else:
+            route.insert(0, part if point_name == "last" else list(reversed(part)))
+    start, end = route[0][0], route[-1][-1]
+    if distance_m(start, end) <= 60:
+        return route  # a loop: no start to choose
+    reach = [
+        min((distance_m(point, anchor) for anchor in anchors), default=float("inf"))
+        for point in (start, end)
+    ]
+    if min(reach) <= TRAILHEAD_REACH_M:
+        backwards = reach[1] < reach[0]
+    else:
+        heights = [sampler(*point) if sampler else None for point in (start, end)]
+        backwards = None not in heights and heights[1] < heights[0]  # type: ignore[operator]
+    if backwards:
+        route = [list(reversed(part)) for part in reversed(route)]
+    return route
+
+
+def joined_profile(measurements: list[measure.Measurement]) -> list[list[float]]:
+    """The parts' profiles end to end, each shifted by the length walked before it."""
+    points: list[list[float]] = []
+    offset = 0.0
+    for item in measurements:
+        for point in item.profile:
+            points.append([round(offset + point.distance_m), round(point.elevation_m, 1)])
+        offset += item.length_m
+    if len(points) <= PROFILE_POINTS:
+        return points
+    step = (len(points) - 1) / (PROFILE_POINTS - 1)
+    return [points[round(index * step)] for index in range(PROFILE_POINTS)]
 
 
 def _name_from_label(properties: dict[str, Any]) -> None:

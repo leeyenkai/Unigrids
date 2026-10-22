@@ -1,5 +1,5 @@
 {
- "_about": "The 63 national parks. IDs are permanent: user logs point at them. Names follow the NPS's own short form; designation is what reads beneath the title band. 'npsApiCode' is set where the NPS Data API files a park under another code (Sequoia and Kings Canyon share SEKI); 'photoKeywords' then picks each park's own photographs by title.",
+ "_about": "The 63 national parks. IDs are permanent: user logs point at them. Names follow the NPS's own short form; designation is what reads beneath the title band. 'npsApiCode' is set where the NPS Data API files a park under another code (Sequoia and Kings Canyon share SEKI); 'photoKeywords' then picks each park's own photographs by title. 'photoSkip' leaves out photographs whose title contains a phrase (a fee booth is not a hero); 'photoCaptions' replaces a slogan title with a caption taken from the NPS's own caption text.",
  "parks": [
   {
    "id": "np-acadia",
@@ -18,6 +18,9 @@
     "theme-coastal",
     "theme-conservation-movement",
     "theme-deciduous-forest"
+   ],
+   "photoSkip": [
+    "Entrance Fee"
    ]
   },
   {
@@ -599,7 +602,9 @@
     -88.55
    ],
    "npsParkCode": "ISRO",
-   "themes": []
+   "themes": [
+    "theme-indigenous-heritage"
+   ]
   },
   {
    "id": "np-joshua-tree",
@@ -711,7 +716,13 @@
     -153.42
    ],
    "npsParkCode": "LACL",
-   "themes": []
+   "themes": [
+    "theme-volcanoes",
+    "theme-glaciers",
+    "theme-mountains",
+    "theme-coastal",
+    "theme-indigenous-heritage"
+   ]
   },
   {
    "id": "np-lassen-volcanic",
@@ -872,7 +883,10 @@
     -121.17
    ],
    "npsParkCode": "PINN",
-   "themes": []
+   "themes": [
+    "theme-volcanoes",
+    "theme-caves"
+   ]
   },
   {
    "id": "np-redwood",
@@ -976,7 +990,14 @@
    "themes": [
     "theme-deciduous-forest",
     "theme-mountains"
-   ]
+   ],
+   "photoCaptions": {
+    "Animal Crossing": "Wildlife crossing Skyline Drive",
+    "Adventure Awaits": "More than 60 of Shenandoah's peaks rise above 3,000 feet",
+    "Recreate Responsibly": "A black bear in Shenandoah",
+    "Find Yourself in Nature": "The poplar stand at mile 8 of Skyline Drive",
+    "Wonderful Waterfalls": "Whiteoak Canyon Falls"
+   }
   },
   {
    "id": "np-theodore-roosevelt",

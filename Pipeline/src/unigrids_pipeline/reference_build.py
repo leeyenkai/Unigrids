@@ -42,6 +42,7 @@ from . import (
     ids,
     lands_build,
     outline,
+    park_elevation,
     rawstore,
     reference_content,
     state_parks,
@@ -198,6 +199,7 @@ def build(*, online: bool = False) -> None:
 
     pois.extend(_stamp_locations(places, pois, api))
     visitation.attach(places, visitation.build(rawstore.latest(visitation.SOURCE, visitation.FILE)))
+    park_elevation.attach(places, rawstore.latest(park_elevation.SOURCE, park_elevation.FILE))
     _assign_time_zones(places)
 
     if online:
@@ -285,7 +287,10 @@ def _national_park(
         ]
 
     photos = reference_content.choose_photos(
-        park.get("images") or [], keywords=row.get("photoKeywords")
+        park.get("images") or [],
+        keywords=row.get("photoKeywords"),
+        skip=row.get("photoSkip"),
+        captions=row.get("photoCaptions"),
     )
     # A curated hero, where the NPS's own record has no photograph Unigrids may reuse.
     if override := content.get("heroOverride"):
@@ -322,6 +327,8 @@ def _national_park(
         place_facts["annualVisits"] = facts["annualVisits"]
         place_facts["annualVisitsYear"] = facts["annualVisitsYear"]
     fees = _fees(park)
+    fees_passes = api.fees_passes.get(api_code, {})
+    fees = _with_free_entry(fees, fees_passes)
     if fee := _fee_summary(fees):
         place_facts.setdefault("entranceFee", fee)
 
@@ -358,6 +365,8 @@ def _national_park(
     if not any("nps.gov" in (source.get("url") or "") for source in sources):
         sources.append({"title": f"{row['name']} — National Park Service", "url": official})
     plan = dict(content.get("planYourVisit") or {})
+    if not plan.get("reservations") and (timed := _timed_entry(fees_passes)):
+        plan["reservations"] = timed
     if not plan.get("camping"):
         plan["camping"] = _camping_lines(mine(api.campgrounds_for(api_code)))
 
@@ -520,7 +529,8 @@ def _nps_unit(park: dict[str, Any], api: _NPSData) -> tuple[dict[str, Any], list
     states = [state.strip() for state in (park.get("states") or "").split(",") if state.strip()]
     photo = reference_content.choose_photos(park.get("images") or [], limit=1)
     facts: dict[str, Any] = {}
-    if fee := _fee_summary(_fees(park)):
+    unit_fees = _with_free_entry(_fees(park), api.fees_passes.get(code, {}))
+    if fee := _fee_summary(unit_fees):
         facts["entranceFee"] = fee
     place: dict[str, Any] = {
         "id": place_id,
@@ -540,18 +550,20 @@ def _nps_unit(park: dict[str, Any], api: _NPSData) -> tuple[dict[str, Any], list
         place["activities"] = activities
     if photo:
         place["image"] = _guide_image(photo[0])
-    if info := _visitor_info(park):
+    if info := _visitor_info(park, api.fees_passes.get(code, {})):
         place["visitorInfo"] = info
     pois = _visitor_centres(code.lower(), place_id, api.visitor_centres_for(code), api, code)
     return place, pois
 
 
-def _visitor_info(park: dict[str, Any]) -> dict[str, Any]:
+def _visitor_info(park: dict[str, Any], fees_passes: dict[str, Any]) -> dict[str, Any]:
     """What a visitor needs before going to an NPS unit, as the NPS publishes it — the
     same fields a national park's guide carries in Plan your visit and Getting there."""
     info: dict[str, Any] = {}
-    if fees := _fees(park):
+    if fees := _with_free_entry(_fees(park), fees_passes):
         info["fees"] = fees
+    if timed := _timed_entry(fees_passes):
+        info["reservations"] = timed
     for key, field in (
         ("operatingHours", _hours_note(park)),
         ("directions", _clean(park.get("directionsInfo"))),
@@ -766,6 +778,9 @@ class _NPSData:
             return json.loads(path.read_text()) if path.exists() else []
 
         self.parks = {row["parkCode"].upper(): row for row in load("parks")}
+        self.fees_passes = {
+            (row.get("parkCode") or "").upper(): row for row in load("feespasses")
+        }
         self._centres = _group(load("visitorcenters"), "parkCode")
         self._places = _group_related(load("places"))
         self._camps = _group(load("campgrounds"), "parkCode")
@@ -955,11 +970,40 @@ def _fees(park: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def _fee_summary(fees: list[dict[str, Any]]) -> str | None:
+    if len(fees) == 1 and fees[0]["cost"] == "Free":
+        return "Free"
     for wanted, phrase in (("vehicle", "per private vehicle"), ("person", "per person")):
         for fee in fees:
             if wanted in fee["title"].lower() and fee["cost"] != "Free":
                 return f"{fee['cost']} {phrase}"
     return None
+
+
+def _with_free_entry(
+    fees: list[dict[str, Any]], fees_passes: dict[str, Any]
+) -> list[dict[str, Any]]:
+    """``fees``, or a single free entry where the NPS says the park charges none.
+
+    "No fee figure" and "free" used to look the same. The NPS's own ``isFeeFreePark``
+    tells them apart; its entrance note travels with the row, which is where a park like
+    the Smokies explains that a parking tag is not an entrance fee.
+    """
+    if fees or fees_passes.get("isFeeFreePark") is not True:
+        return fees
+    return [{
+        "title": "Entrance",
+        "cost": "Free",
+        "detail": _clean(fees_passes.get("entranceFeeDescription")),
+    }]
+
+
+def _timed_entry(fees_passes: dict[str, Any]) -> str | None:
+    """The NPS's own timed-entry or reservation note, where it publishes one."""
+    heading = _clean(fees_passes.get("timedEntryHeading"))
+    body = _without_notices(_clean(fees_passes.get("timedEntryDescription")))
+    if not body:
+        return None
+    return f"{heading}: {body}" if heading and not body.startswith(heading) else body
 
 
 def _hours_note(park: dict[str, Any]) -> str | None:

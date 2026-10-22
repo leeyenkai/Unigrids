@@ -45,12 +45,21 @@ def choose_photos(
     images: list[dict[str, Any]],
     limit: int = PHOTOS_PER_PARK,
     keywords: list[str] | None = None,
+    skip: list[str] | None = None,
+    captions: dict[str, str] | None = None,
 ) -> list[dict]:
     """The photographs a park's guide uses, in the NPS's own order, NPS-credited only.
 
     ``keywords`` narrows a shared photo set to one park's — Sequoia's and Kings Canyon's
     come from one NPS record — by what each photograph's title and description name.
+    ``skip`` leaves out photographs whose title contains a phrase, and ``captions``
+    replaces a title that is a slogan rather than a description.
     """
+    if skip:
+        images = [
+            image for image in images
+            if not any(phrase.lower() in (image.get("title") or "").lower() for phrase in skip)
+        ]
     if keywords:
         def mentions(image: dict[str, Any]) -> bool:
             text = " ".join(
@@ -66,6 +75,9 @@ def choose_photos(
         if not url or url in seen or not is_public_domain_credit(image.get("credit")):
             continue
         seen.add(url)
+        title = image.get("title") or ""
+        if captions and title in captions:
+            image = {**image, "title": captions[title]}
         chosen.append(image)
         if len(chosen) == limit:
             break

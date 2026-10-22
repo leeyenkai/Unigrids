@@ -80,3 +80,14 @@ def test_geodesic_area_subtracts_holes():
     outer = [(0.0, 0.0), (1.0, 0.0), (1.0, 1.0), (0.0, 1.0)]
     hole = [(0.25, 0.25), (0.75, 0.25), (0.75, 0.75), (0.25, 0.75)]
     assert outline.geodesic_acres([[outer, hole]]) < 0.8 * outline.geodesic_acres([[outer]])
+
+
+def test_photo_choice_skips_phrases_and_recaptions_slogans():
+    images = [
+        {"url": "a", "title": "Entrance Fee Required Year-Round", "credit": "NPS Photo"},
+        {"url": "b", "title": "Animal Crossing", "credit": "NPS Photo"},
+    ]
+    chosen = choose_photos(
+        images, skip=["Entrance Fee"], captions={"Animal Crossing": "Wildlife crossing"}
+    )
+    assert [(image["url"], image["title"]) for image in chosen] == [("b", "Wildlife crossing")]

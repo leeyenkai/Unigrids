@@ -44,6 +44,7 @@ from . import (
     climate,
     config,
     lands_fetch,
+    park_elevation,
     rawstore,
     reference_content,
     state_parks,
@@ -159,6 +160,7 @@ def fetch(*, refresh: bool = False) -> Path:
     trails_dir = trail_catalogue.fetch(version, refresh=refresh)
     outlines = reference_build._unit_outlines(root / "unit-boundaries")
     trail_catalogue.fetch_osm(version, outlines)
+    park_elevation.fetch(version, outlines)
     trail_catalogue.sample_elevations(trails_dir, outlines)
     places = json.loads((reference_build.OUT / "places.json").read_text())
     codes = sorted(
@@ -382,7 +384,9 @@ def _fetch_photos(version: str, *, refresh: bool) -> None:
             if row is None:
                 continue
             chosen = reference_content.choose_photos(
-                row.get("images") or [], keywords=content_row.get("photoKeywords")
+                row.get("images") or [],
+                keywords=content_row.get("photoKeywords"),
+                skip=content_row.get("photoSkip"),
             )
             override = (reference_content.guide(content_row["id"]) or {}).get("heroOverride")
             if override:

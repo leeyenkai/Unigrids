@@ -188,3 +188,28 @@ def test_the_pack_records_how_its_trails_were_measured():
     # And is explicit about what it did not work out.
     assert "difficulty" in method["notDerivedYet"]
     assert "routeType" in method["notDerivedYet"]
+
+
+def test_parts_are_walked_end_to_end_from_the_trailhead():
+    from unigrids_pipeline import trail_catalogue
+
+    # Three parts of one trail, digitised out of order and the far one backwards.
+    near = [(0.0, 0.0), (0.0, 0.01)]
+    middle = [(0.0, 0.0105), (0.0, 0.02)]
+    far = [(0.0, 0.03), (0.0, 0.0205)]
+    visitor_centre = (0.0, -0.001)
+    route = trail_catalogue.walking_order([far, near, middle], [visitor_centre], None)
+    assert route[0][0] == (0.0, 0.0)
+    assert route[-1][-1] == (0.0, 0.03)
+
+
+def test_without_a_trailhead_the_walk_starts_low():
+    from unigrids_pipeline import trail_catalogue
+
+    summit_first = [(0.0, 0.02), (0.0, 0.0)]
+
+    def height(longitude: float, latitude: float) -> float:
+        return 1000 + latitude * 50_000
+
+    route = trail_catalogue.walking_order([summit_first], [], height)
+    assert route[0][0] == (0.0, 0.0)
