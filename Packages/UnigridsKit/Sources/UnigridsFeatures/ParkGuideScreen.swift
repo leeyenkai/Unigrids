@@ -17,6 +17,9 @@ public struct ParkGuideScreen: View {
     @Environment(\.unigrid) private var style
     @Environment(\.dynamicTypeSize) private var typeSize
     @Environment(\.openWindow) private var openWindow
+    #if os(iOS)
+        @Environment(\.horizontalSizeClass) private var sizeClass
+    #endif
 
     let place: Place
 
@@ -78,7 +81,6 @@ public struct ParkGuideScreen: View {
         .explorer(isPresented: $showExplorer, place: place)
         .unigridsSheet(isPresented: $showBrochure) {
             BrochureScreen(place: place)
-                .sheetSize(width: 900, height: 760)
         }
         .onAppear {
             if DebugLaunch.explores {
@@ -92,35 +94,48 @@ public struct ParkGuideScreen: View {
         #if os(macOS)
             ToolbarItem {
                 Button { openWindow(value: place.id) } label: {
-                    Label("Open in New Window", systemImage: "macwindow.badge.plus")
+                    Label("Open in New Window", symbol: .newWindow)
                 }
             }
         #endif
         ToolbarItem {
             Button { showExplorer = true } label: {
-                Label("Explore in 3D", systemImage: "view.3d")
+                Label("Explore in 3D", symbol: .explore3D)
             }
+        }
+        #if os(iOS)
+            // An iPhone's bar holds 3D and one menu; the page's own actions panel has the
+            // rest too.
+            if sizeClass == .compact {
+                ToolbarItem {
+                    Menu {
+                        actions
+                    } label: {
+                        Label("More", symbol: .details)
+                    }
+                }
+            } else {
+                ToolbarItemGroup { actions }
+            }
+        #else
+            ToolbarItemGroup { actions }
+        #endif
+    }
+
+    @ViewBuilder
+    private var actions: some View {
+        Button { showCheckIn = true } label: {
+            Label("Check in", symbol: .checkIn)
+        }
+        Button { showStamp = true } label: {
+            Label { Text("Stamp") } icon: { StampIcon() }
+        }
+        Button { showAddToTrip = true } label: {
+            Label("Add to trip", symbol: .addToTrip)
         }
         if store.documents(for: place.id)?.documents.isEmpty == false {
-            ToolbarItem {
-                Button { showBrochure = true } label: {
-                    Label("Official brochure", systemImage: "doc.richtext")
-                }
-            }
-        }
-        ToolbarItem {
-            Button { showCheckIn = true } label: {
-                Label("Check in", systemImage: "mappin.and.ellipse")
-            }
-        }
-        ToolbarItem {
-            Button { showStamp = true } label: {
-                Label { Text("Stamp") } icon: { StampIcon() }
-            }
-        }
-        ToolbarItem {
-            Button { showAddToTrip = true } label: {
-                Label("Add to trip", systemImage: "calendar.badge.plus")
+            Button { showBrochure = true } label: {
+                Label("Official brochure", symbol: .brochure)
             }
         }
     }
@@ -221,7 +236,9 @@ public struct ParkGuideScreen: View {
         case .visitorCentres:
             VisitorCentresPanel(centres: centres)
         case .trailHighlights:
-            TrailHighlightsPanel(place: place, trails: store.trails(in: place.id))
+            TrailHighlightsPanel(
+                place: place, trails: store.trails(in: place.id), named: guide.trailHighlightIDs
+            )
         case .alerts:
             AlertsPanel(parkCode: place.npsParkCode ?? "")
         case .planYourVisit:

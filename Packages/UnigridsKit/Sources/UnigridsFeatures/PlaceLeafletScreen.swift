@@ -79,7 +79,6 @@ struct PlaceLeafletScreen: View {
         .explorer(isPresented: $showExplorer, place: place)
         .unigridsSheet(isPresented: $showBrochure) {
             BrochureScreen(place: place)
-                .sheetSize(width: 900, height: 760)
         }
         .toolbar {
             #if os(macOS)
@@ -91,7 +90,7 @@ struct PlaceLeafletScreen: View {
             #endif
             ToolbarItem {
                 Button { showExplorer = true } label: {
-                    Label("Explore in 3D", systemImage: "view.3d")
+                    Label("Explore in 3D", symbol: .explore3D)
                 }
             }
         }

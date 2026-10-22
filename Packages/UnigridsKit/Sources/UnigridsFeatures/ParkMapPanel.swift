@@ -31,7 +31,7 @@ struct ParkMapPanel: View {
                 .accessibilityHint("Opens the park in 3D")
 
                 Button(action: onExplore) {
-                    Label("Explore in 3D", systemImage: "view.3d")
+                    Label("Explore in 3D", symbol: .explore3D)
                 }
                 .buttonStyle(BrochureButtonStyle(.secondary, fullWidth: false))
             }

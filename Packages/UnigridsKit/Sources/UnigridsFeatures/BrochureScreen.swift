@@ -30,16 +30,19 @@ struct BrochureScreen: View {
     }
 
     var body: some View {
-        NavigationStack {
+        SheetPage(
+            selected?.title ?? "Official brochure",
+            kicker: place.name,
+            actions: .done { dismiss() },
+            width: 900,
+            height: 760
+        ) {
             VStack(spacing: 0) {
                 if let list = documents?.documents, list.count > 1 {
                     DocumentPicker(documents: list, selected: $selected)
                 }
                 content
             }
-            .background(style.page)
-            .navigationTitle(selected?.title ?? place.name)
-            .toolbarTitleDisplayMode(.inline)
             .toolbar { toolbar }
             .task(id: LoadKey(document: selected, attempt: retries)) { await load() }
             .onAppear {
@@ -87,7 +90,7 @@ struct BrochureScreen: View {
         retry: (() -> Void)? = nil
     ) -> some View {
         ContentUnavailableView {
-            Label(title, systemImage: "doc.richtext")
+            Label(title, symbol: .brochure)
         } description: {
             Text(message)
         } actions: {
@@ -97,7 +100,7 @@ struct BrochureScreen: View {
             }
             if let page = documents?.page ?? place.officialURL {
                 Link(destination: page) {
-                    Label("Open the maps page", systemImage: "arrow.up.right.square")
+                    Label("Open the maps page", symbol: .website)
                 }
                 .buttonStyle(BrochureButtonStyle(.primary, fullWidth: false))
             }
@@ -106,9 +109,6 @@ struct BrochureScreen: View {
 
     @ToolbarContentBuilder
     private var toolbar: some ToolbarContent {
-        ToolbarItem(placement: .cancellationAction) {
-            Button("Done") { dismiss() }
-        }
         if let library, let documents, !documents.documents.isEmpty {
             ToolbarItem {
                 Toggle(isOn: Binding(
@@ -121,7 +121,7 @@ struct BrochureScreen: View {
                         }
                     }
                 )) {
-                    Label("Save for offline", systemImage: "arrow.down.circle")
+                    Label("Save for offline", symbol: .saveOffline)
                 }
                 .toggleStyle(.button)
             }
@@ -129,14 +129,14 @@ struct BrochureScreen: View {
         if let file {
             ToolbarItem {
                 ShareLink(item: file) {
-                    Label("Share", systemImage: "square.and.arrow.up")
+                    Label("Share", symbol: .share)
                 }
             }
         }
         if let url = selected?.url {
             ToolbarItem {
                 Link(destination: url) {
-                    Label("On nps.gov", systemImage: "safari")
+                    Label("Website", symbol: .website)
                 }
             }
         }

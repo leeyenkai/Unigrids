@@ -52,6 +52,18 @@ struct GuidePanelTests {
         #expect(!panels.contains(.trailHighlights))
     }
 
+    @Test("a park with catalogued trails shows highlights, whether or not its guide names any")
+    func trailPanelFromCatalogue() {
+        let guide = GuideContent(placeID: "np-x")
+        let panels = guide.panels(
+            placeHasFacts: false,
+            sightCount: 0,
+            visitorCentreCount: 0,
+            hasTrails: true
+        )
+        #expect(panels == [.trailHighlights])
+    }
+
     @Test("images and prose ask for more columns than lists")
     func columnSpans() {
         #expect(GuidePanel.story.preferredColumnSpan == 2)

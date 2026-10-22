@@ -143,14 +143,17 @@ struct TrailHighlightsPanel: View {
     @Environment(\.unigrid) private var style
     let place: Place
     let trails: [Trail]
+    /// Trails the guide names, which lead.
+    var named: [UnigridsID] = []
 
     private var highlights: [Trail] {
-        trails
+        let leading = named.compactMap { id in trails.first { $0.id == id } }
+        let rest = trails
+            .filter { !named.contains($0.id) }
             .sorted {
                 ($0.sightIDs.count, $0.lengthMetres) > ($1.sightIDs.count, $1.lengthMetres)
             }
-            .prefix(6)
-            .map(\.self)
+        return Array((leading + rest).prefix(6))
     }
 
     var body: some View {
@@ -174,7 +177,7 @@ struct TrailHighlightsPanel: View {
                         "All \(trails.count) trails, "
                             + UnigridsFormat
                             .distance(metres: trails.reduce(0) { $0 + $1.lengthMetres }),
-                        systemImage: "list.bullet"
+                        symbol: .list
                     )
                 }
                 .buttonStyle(BrochureButtonStyle(.secondary))

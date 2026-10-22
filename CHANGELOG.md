@@ -238,6 +238,10 @@ makes the change. A release moves that block under a version heading with its da
 - The national parks count comes from the data everywhere it is shown, rather than a
   fixed 63; searching National parks searches the parks themselves; By state lists a park
   under each of its states. Onboarding can be skipped, and says what the app does now.
+- Trail highlights show in every park guide with catalogued trails; they were hidden in
+  all of them, waiting on a hand-made list no guide had. Trails a guide names lead.
+- On iPhone a guide's toolbar holds Explore in 3D and one More menu; "See it in 3D" is
+  "Explore in 3D" everywhere.
 
 ### Fixed
 

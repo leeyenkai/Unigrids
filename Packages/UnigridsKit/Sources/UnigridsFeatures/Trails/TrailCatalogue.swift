@@ -280,7 +280,7 @@ struct TrailDetailScreen: View {
                                     .frame(height: 280)
                                     .overlay { Rectangle().strokeBorder(style.rule, lineWidth: 1) }
                                 Button { showExplorer = true } label: {
-                                    Label("See it in 3D", systemImage: "view.3d")
+                                    Label("Explore in 3D", symbol: .explore3D)
                                 }
                                 .buttonStyle(BrochureButtonStyle(.secondary))
                             }

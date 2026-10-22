@@ -369,7 +369,9 @@ extension GuideContent {
             mapPanel,
             sightCount > 0 ? .majorSights : nil,
             visitorCentreCount > 0 ? .visitorCentres : nil,
-            hasTrails && !trailHighlightIDs.isEmpty ? .trailHighlights : nil,
+            // Drawn from the catalogue: a park with trails has highlights whether or not its
+            // guide names any, and the ones it names lead.
+            hasTrails ? .trailHighlights : nil,
             showsAlerts ? .alerts : nil,
             hasPlan ? .planYourVisit : nil,
             weather == nil ? nil : .weather,
