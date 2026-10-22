@@ -17,6 +17,8 @@ public struct MapScreen: View {
     @Environment(\.unigrid) private var style
     @Environment(AlertsCenter.self) private var alerts: AlertsCenter?
     @Environment(TransportStore.self) private var transportStore: TransportStore?
+    @Environment(AppRouter.self) private var router: AppRouter?
+    @Environment(\.scenePhase) private var scenePhase
     @Query private var visits: [Visit]
     @Query private var trips: [Trip]
 
@@ -159,6 +161,7 @@ public struct MapScreen: View {
                 await alerts?.refreshIfStale()
             }
             .onAppear(perform: applyDebugLaunch)
+            .onChange(of: router?.pending, initial: true) { takeRoute() }
         }
     }
 
@@ -250,6 +253,15 @@ public struct MapScreen: View {
                 bottomInset: sheetInset
             )
         }
+    }
+
+    /// A notification about a place — a new alert — opens its page.
+    private func takeRoute() {
+        guard scenePhase == .active, case let .place(id) = router?.pending else { return }
+        router?.pending = nil
+        selection = nil
+        path = NavigationPath()
+        path.append(UnigridsID(id))
     }
 
     private func applyDebugLaunch() {

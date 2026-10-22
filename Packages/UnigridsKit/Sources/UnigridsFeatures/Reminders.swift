@@ -12,56 +12,98 @@ import UserNotifications
 
 /// Local notifications for a trip's reminders — permit lotteries, timed-entry slots,
 /// booking windows (§10). Scheduled on this device only; nothing leaves it.
+///
+/// A reminder fires at the moment it names, in the zone it was set in: a lottery that
+/// opens at 07:00 in Utah opens then for a reader who has since flown east. The log is
+/// the truth and notifications follow it — `reconcile` schedules what is missing and
+/// removes what no reminder backs any more, so a deleted trip's reminders stop firing and
+/// a reminder that arrived from another device starts.
 @MainActor
 enum ReminderScheduler {
-    static func schedule(_ reminder: Reminder, tripName: String) async -> Bool {
-        // Read off the model here, on the main actor; only plain values go to the
-        // notification centre.
-        let identifier = identifier(reminder)
-        let title = reminder.title.isEmpty ? reminder.kind.name : reminder.title
-        let body = "\(reminder.kind.name) for \(tripName)."
-        let date = reminder.date
-        let link = reminder.urlString
-        return await schedule(
-            identifier: identifier,
-            title: title,
-            body: body,
-            date: date,
-            link: link
+    static let prefix = "reminder-"
+
+    struct Request: Sendable {
+        let id: UUID
+        let title: String
+        let body: String
+        let date: Date
+        let timeZone: TimeZone
+        let link: String?
+        let tripID: UUID?
+    }
+
+    static func request(for reminder: Reminder) -> Request {
+        Request(
+            id: reminder.id,
+            title: reminder.title.isEmpty ? reminder.kind.name : reminder.title,
+            body: "\(reminder.kind.name) for \(reminder.trip?.name ?? "your trip").",
+            date: reminder.date,
+            timeZone: reminder.timeZone,
+            link: reminder.urlString,
+            tripID: reminder.trip?.id
         )
     }
 
-    private static func schedule(
-        identifier: String, title: String, body: String, date: Date, link: String?
-    ) async -> Bool {
+    /// Schedule one reminder, asking for permission if need be. False when it cannot be:
+    /// notifications are off, or the moment has passed.
+    @discardableResult
+    static func schedule(_ reminder: Reminder) async -> Bool {
+        await schedule(request(for: reminder), asking: true)
+    }
+
+    private static func schedule(_ request: Request, asking: Bool) async -> Bool {
         let center = UNUserNotificationCenter.current()
-        let granted = await (try? center.requestAuthorization(options: [.alert, .sound])) ?? false
-        guard granted, date > Date() else { return false }
-        let content = UNMutableNotificationContent()
-        content.title = title
-        content.body = body
-        content.sound = .default
-        if let link {
-            content.userInfo = ["url": link]
+        if asking {
+            _ = try? await center.requestAuthorization(options: [.alert, .sound])
         }
-        let parts = Calendar.current.dateComponents(
-            [.year, .month, .day, .hour, .minute], from: date
+        let settings = await center.notificationSettings()
+        guard settings.authorizationStatus == .authorized
+            || settings.authorizationStatus == .provisional,
+            request.date > Date()
+        else { return false }
+        let content = UNMutableNotificationContent()
+        content.title = request.title
+        content.body = request.body
+        content.sound = .default
+        var info: [String: String] = [NotificationRoute.key: NotificationRoute.reminder.rawValue]
+        info["url"] = request.link
+        info["trip"] = request.tripID?.uuidString
+        content.userInfo = info
+        // An absolute moment: the components carry the zone they were set in.
+        var parts = UnigridsCalendar.gregorian(request.timeZone).dateComponents(
+            [.year, .month, .day, .hour, .minute], from: request.date
         )
-        let request = UNNotificationRequest(
-            identifier: identifier,
+        parts.timeZone = request.timeZone
+        let notification = UNNotificationRequest(
+            identifier: prefix + request.id.uuidString,
             content: content,
             trigger: UNCalendarNotificationTrigger(dateMatching: parts, repeats: false)
         )
-        return await (try? center.add(request)) != nil
+        return await (try? center.add(notification)) != nil
     }
 
-    static func cancel(_ reminder: Reminder) {
+    static func cancel(_ ids: [UUID]) {
         UNUserNotificationCenter.current()
-            .removePendingNotificationRequests(withIdentifiers: [identifier(reminder)])
+            .removePendingNotificationRequests(withIdentifiers: ids.map { prefix + $0.uuidString })
     }
 
-    private static func identifier(_ reminder: Reminder) -> String {
-        "reminder-\(reminder.id.uuidString)"
+    /// Make the pending notifications match the log, without asking for permission.
+    static func reconcile(_ reminders: [Reminder]) async {
+        let center = UNUserNotificationCenter.current()
+        let pending = await Set(
+            center.pendingNotificationRequests()
+                .map(\.identifier)
+                .filter { $0.hasPrefix(prefix) }
+        )
+        let wanted = reminders.filter { $0.date > Date() }
+        let wantedIDs = Set(wanted.map { prefix + $0.id.uuidString })
+        let stale = pending.subtracting(wantedIDs)
+        if !stale.isEmpty {
+            center.removePendingNotificationRequests(withIdentifiers: Array(stale))
+        }
+        for reminder in wanted where !pending.contains(prefix + reminder.id.uuidString) {
+            _ = await schedule(request(for: reminder), asking: false)
+        }
     }
 }
 
@@ -69,8 +111,10 @@ enum ReminderScheduler {
 struct TripRemindersSection: View {
     @Environment(\.unigrid) private var style
     @Environment(\.modelContext) private var context
+    @Environment(UndoCenter.self) private var undo: UndoCenter?
     let trip: Trip
     @State private var adding = false
+    @State private var failure: String?
 
     private var reminders: [Reminder] {
         (trip.reminders ?? []).sorted { $0.date < $1.date }
@@ -101,9 +145,16 @@ struct TripRemindersSection: View {
                 .listRowBackground(Color.clear)
             }
             .onDelete { offsets in
-                for offset in offsets {
-                    ReminderScheduler.cancel(reminders[offset])
-                    try? LogStore(context: context).delete(reminders[offset])
+                // Collected first: deleting while indexing the live list skips or overruns.
+                let doomed = offsets.map { reminders[$0] }
+                for reminder in doomed {
+                    ReminderScheduler.cancel([reminder.id])
+                    do {
+                        let change = try LogStore(context: context).delete(reminder: reminder)
+                        undo?.offer(change, message: change.summary { _ in nil })
+                    } catch {
+                        failure = error.localizedDescription
+                    }
                 }
             }
             Button {
@@ -139,6 +190,7 @@ struct ReminderEditor: View {
     @State private var date = Date().addingTimeInterval(86400)
     @State private var link = ""
     @State private var notice: String?
+    @State private var saving = false
 
     var body: some View {
         NavigationStack {
@@ -174,6 +226,7 @@ struct ReminderEditor: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") { Task { await save() } }
+                        .disabled(saving)
                 }
             }
         }
@@ -181,13 +234,22 @@ struct ReminderEditor: View {
     }
 
     private func save() async {
+        guard !saving else { return }
+        saving = true
         let url = URL(string: link.trimmingCharacters(in: .whitespaces)).flatMap {
             $0.scheme == "https" || $0.scheme == "http" ? $0 : nil
         }
-        let reminder = Reminder(kind: kind, date: date, title: title, url: url, trip: trip)
-        context.insert(reminder)
-        try? context.save()
-        if await ReminderScheduler.schedule(reminder, tripName: trip.name) {
+        let reminder: Reminder
+        do {
+            reminder = try LogStore(context: context).addReminder(
+                kind: kind, on: date, title: title, url: url, to: trip
+            )
+        } catch {
+            notice = "It could not be saved: \(error.localizedDescription)"
+            saving = false
+            return
+        }
+        if await ReminderScheduler.schedule(reminder) {
             dismiss()
         } else {
             notice = "Saved, but notifications are off for Unigrids, so it will not alert you. "

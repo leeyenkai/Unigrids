@@ -16,6 +16,8 @@ public struct RootTabView: View {
     @Query private var trips: [Trip]
     @Query private var visits: [Visit]
     @Environment(\.modelContext) private var context
+    @Environment(\.scenePhase) private var scenePhase
+    @Query private var reminders: [Reminder]
     @State private var tab = DebugLaunch.tab.flatMap(AppTab.init(rawValue:)) ?? .map
 
     private let loadErrorMessage: String?
@@ -58,6 +60,14 @@ public struct RootTabView: View {
         .task(id: visitCount) {
             await WeatherBackfill.run(context: context, store: store)
         }
+        .task(id: reminders.count) {
+            // The log is the truth: schedule what synced in, drop what was deleted.
+            await ReminderScheduler.reconcile(reminders)
+        }
+        .onChange(of: AppServices.router.pending, initial: true) { _, route in
+            showTab(for: route)
+        }
+        .onChange(of: scenePhase) { showTab(for: AppServices.router.pending) }
         .task {
             // Decode the trail catalogue off the main actor once the map is up, so the first
             // guide or the Stats tab finds it ready.
@@ -71,6 +81,16 @@ public struct RootTabView: View {
         }
         .onboarding(isPresented: showOnboarding) {
             OnboardingView { onboardingSeen = true }
+        }
+    }
+
+    /// Bring forward the tab a notification's route belongs to; the tab's own screen
+    /// takes the route from there. Only the window the reader is looking at moves.
+    private func showTab(for route: AppRoute?) {
+        guard let route, scenePhase == .active else { return }
+        switch route {
+        case .arrival, .trip: tab = .trips
+        case .place: tab = .map
         }
     }
 

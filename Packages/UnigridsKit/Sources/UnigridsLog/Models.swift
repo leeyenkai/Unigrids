@@ -44,6 +44,7 @@ public final class Trip {
         (stops ?? []).sorted { ($0.order, $0.createdAt) < ($1.order, $1.createdAt) }
     }
 
+    /// The status the reader set: what an undated trip goes by.
     public var status: TripStatus {
         get { TripStatus(rawValue: statusRaw) ?? .planned }
         set { statusRaw = newValue.rawValue }
@@ -82,6 +83,17 @@ public final class TripStop {
     public var order: Int = 0
     public var notes: String = ""
     public var createdAt: Date = Date()
+    /// What the stop is (`StopTarget.kindRaw`): the place itself unless a sight, trail,
+    /// lodging or custom point inside or near it.
+    public var targetKindRaw: String = "place"
+    /// The sight's or trail's `UnigridsID`, for those kinds.
+    public var targetID: String?
+    /// A lodging's or custom point's own name and position, which no reference data holds.
+    public var customName: String?
+    public var latitude: Double?
+    public var longitude: Double?
+    /// Whether `plannedDate` carries a time of day the reader chose, not just the day.
+    public var isTimed: Bool = false
 
     public var trip: Trip?
 
@@ -89,13 +101,20 @@ public final class TripStop {
         UnigridsID(placeID)
     }
 
-    public init(placeID: UnigridsID, order: Int, plannedDate: Date? = nil, notes: String = "") {
+    public init(
+        placeID: UnigridsID,
+        order: Int,
+        plannedDate: Date? = nil,
+        notes: String = "",
+        target: StopTarget = .place
+    ) {
         id = UUID()
         self.placeID = placeID.rawValue
         self.order = order
         self.plannedDate = plannedDate
         self.notes = notes
         createdAt = Date()
+        self.target = target
     }
 }
 
@@ -321,6 +340,9 @@ public final class Reminder {
     /// A deep link to Recreation.gov or the park's own page. Unigrids never handles
     /// bookings or payments itself.
     public var urlString: String?
+    /// The zone `date` was set in. A booking window opens at a clock time in one place;
+    /// the reminder fires at that moment wherever the device has travelled to since.
+    public var timeZoneID: String?
 
     public var trip: Trip?
 
@@ -338,6 +360,7 @@ public final class Reminder {
         date: Date,
         title: String,
         url: URL? = nil,
+        timeZone: TimeZone = .current,
         trip: Trip? = nil
     ) {
         id = UUID()
@@ -345,7 +368,13 @@ public final class Reminder {
         self.date = date
         self.title = title
         urlString = url?.absoluteString
+        timeZoneID = timeZone.identifier
         self.trip = trip
+    }
+
+    /// The zone the reminder was set in, or the device's for one made before it was kept.
+    public var timeZone: TimeZone {
+        timeZoneID.flatMap(TimeZone.init(identifier:)) ?? .current
     }
 }
 
@@ -453,6 +482,12 @@ extension TripStop {
 }
 
 extension Reminder {
+    func restoreIdentity(_ id: UUID) {
+        self.id = id
+    }
+}
+
+extension WeatherSnapshot {
     func restoreIdentity(_ id: UUID) {
         self.id = id
     }

@@ -128,19 +128,19 @@ struct LogStoreTests {
         #expect(trip.visits?.count == 2)
     }
 
-    @Test("deleting a visit takes its check-ins but keeps its stamps")
+    @Test("deleting a visit takes everything on it, its stamps included")
     func deleteCascades() throws {
         let visit = try store.checkIn(to: "np-zion", on: date(2026, 5, 1))
         try store.checkIn(at: .pointOfInterest("poi-zion-the-narrows"), during: visit)
         try store.stamp("np-zion", on: date(2026, 5, 1))
 
-        try store.delete(visit)
+        let change = try store.delete(visit: visit)
 
+        // The passport and the log agree: a stamp is the record of a visit, and one left
+        // behind would say "been" where the map says "not".
         #expect(try store.visits().isEmpty)
-        // The impression is the user's record of having been there; losing it with the
-        // visit would be a surprise, so the relationship nullifies rather than cascades.
-        #expect(try store.stamps().count == 1)
-        #expect(try store.stamps().first?.visit == nil)
+        #expect(try store.stamps().isEmpty)
+        #expect(change.subject == .visit("np-zion", stamps: 1))
     }
 
     @Test("visit summaries feed the stats without the stats knowing about SwiftData")
@@ -209,30 +209,54 @@ struct LogStoreTests {
         try store.stamp("np-acadia", on: date(2026, 7, 4))
         try store.addStop("np-acadia", to: trip)
 
-        let document = try LogExport.document(context: ModelContext(container)) { id in
-            id == "np-acadia" ? "Acadia" : nil
-        }
-        #expect(document.visits.count == 1)
-        #expect(document.visits.first?.placeName == "Acadia")
-        #expect(document.stamps.first?.america250 == true)
-        #expect(document.trips.first?.stops == ["np-acadia"])
+        let archive = try store.archive(
+            name: { $0 == "np-acadia" ? "Acadia" : nil },
+            calendar: { _ in calendar }
+        )
+        #expect(archive.visits.count == 1)
+        #expect(archive.visits.first?.placeName == "Acadia")
+        #expect(archive.stamps.first?.america250 == true)
+        #expect(archive.trips.first?.stops.map(\.placeID) == ["np-acadia"])
 
-        let json = try LogExport.json(document)
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
-        #expect(try decoder.decode(LogExport.Document.self, from: json).visits.count == 1)
+        let decoded = try LogArchive.decode(archive.json())
+        #expect(decoded.visits.count == 1)
 
-        let csv = LogExport.visitsCSV(document)
+        let csv = LogExport.visitsCSV(archive) { _ in calendar }
         #expect(csv.hasPrefix("date,place,place_id,source,rating,notes\r\n"))
+        #expect(csv.contains("2026-07-04,Acadia,np-acadia"))
         // A comma in the notes is quoted, not taken as a column.
         #expect(csv.contains("\"Fog, then sun\""))
     }
 
-    @Test("CSV quoting follows RFC 4180")
+    @Test("CSV quoting follows RFC 4180, line breaks of every kind included")
     func csvQuoting() {
         #expect(LogExport.csvField("plain") == "plain")
         #expect(LogExport.csvField("a,b") == "\"a,b\"")
         #expect(LogExport.csvField("say \"hi\"") == "\"say \"\"hi\"\"\"")
+        // "\r\n" is one Character in Swift, neither "\r" nor "\n".
+        #expect(LogExport.csvField("a\r\nb") == "\"a\r\nb\"")
+        #expect(LogExport.csvField("a\nb") == "\"a\nb\"")
+    }
+
+    @Test("a CSV field that starts like a formula is not one")
+    func csvFormulaGuard() {
+        #expect(LogExport.csvField("=HYPERLINK(\"x\")") == "\"'=HYPERLINK(\"\"x\"\")\"")
+        #expect(LogExport.csvField("+1 day") == "'+1 day")
+        #expect(LogExport.csvField("-") == "'-")
+    }
+
+    @Test("a CSV visit is dated by its day where it happened")
+    func csvLocalDay() throws {
+        // 19:00 in Utah on 4 July is 01:00 UTC on 5 July.
+        let utah = try #require(TimeZone(identifier: "America/Denver"))
+        var utahCalendar = Calendar(identifier: .gregorian)
+        utahCalendar.timeZone = utah
+        let evening = try #require(utahCalendar.date(from: DateComponents(
+            year: 2026, month: 7, day: 4, hour: 19
+        )))
+        try store.checkIn(to: "np-zion", on: evening, calendar: utahCalendar)
+        let csv = try LogExport.visitsCSV(store.archive()) { _ in utahCalendar }
+        #expect(csv.contains("2026-07-04,"))
     }
 
     @Test("a deleted visit comes back with its check-ins, hikes, stamps and trip")
@@ -243,19 +267,21 @@ struct LogStoreTests {
         let stamp = try store.stamp("np-zion", on: date(2026, 5, 1))
         try store.markHiked("trail-zion-watchman-trail", in: "np-zion", on: date(2026, 5, 1))
         let originalID = visit.id
+        let seed = stamp.seed
         #expect(stamp.visit?.id == originalID)
 
-        let record = try store.delete(visit: visit)
+        let change = try store.delete(visit: visit)
         #expect(try store.visits().isEmpty)
-        #expect(try store.stamps().first?.visit == nil)
+        #expect(try store.stamps().isEmpty)
 
-        try store.restore(record)
+        try store.undo(change)
         let restored = try #require(try store.visits().first)
         #expect(restored.id == originalID)
         #expect(restored.trip?.id == trip.id)
         #expect(restored.checkIns?.count == 2)
         #expect(restored.hikes?.count == 1)
         #expect(try store.stamps().first?.visit?.id == originalID)
+        #expect(try store.stamps().first?.seed == seed)
     }
 
     @Test("a deleted trip comes back with its stops, and its visits rejoin it")
@@ -264,10 +290,10 @@ struct LogStoreTests {
         try store.addStop("np-zion", to: trip)
         try store.addStop("np-arches", to: trip)
         let visit = try store.checkIn(to: "np-zion", on: date(2026, 5, 1), trip: trip)
-        let record = try store.delete(trip: trip)
+        let change = try store.delete(trip: trip)
         #expect(try store.trips().isEmpty)
         #expect(visit.trip == nil)
-        try store.restore(record)
+        try store.undo(change)
         let restored = try #require(try store.trips().first)
         #expect(restored.orderedStops.map(\.place) == ["np-zion", "np-arches"])
         #expect(try store.visits().first?.trip?.id == restored.id)
@@ -277,10 +303,22 @@ struct LogStoreTests {
     func undoStampDeletion() throws {
         let stamp = try store.stamp("np-acadia", on: date(2026, 7, 4))
         let seed = stamp.seed
-        let record = try store.delete(stamp: stamp)
+        let change = try store.delete(stamp: stamp)
         #expect(try store.stamps().isEmpty)
-        try store.restore(record)
+        // The visit stamping made held nothing else, so it went with the stamp.
+        #expect(try store.visits().isEmpty)
+        try store.undo(change)
         #expect(try store.stamps().first?.seed == seed)
         #expect(try store.stamps().first?.visit != nil)
+        #expect(try store.visits().count == 1)
+    }
+
+    @Test("deleting a stamp keeps a visit that holds more than the stamp")
+    func stampDeletionKeepsAFullVisit() throws {
+        let visit = try store.checkIn(to: "np-acadia", on: date(2026, 7, 4), notes: "Fog")
+        let stamp = try store.stamp("np-acadia", on: date(2026, 7, 4))
+        #expect(stamp.visit?.id == visit.id)
+        try store.delete(stamp: stamp)
+        #expect(try store.visits().count == 1)
     }
 }

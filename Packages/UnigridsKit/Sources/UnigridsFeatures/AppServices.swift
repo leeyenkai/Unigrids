@@ -4,6 +4,12 @@ import UnigridsCore
 import UnigridsDesign
 import UnigridsLog
 import UnigridsReference
+import UserNotifications
+#if os(iOS)
+    import UIKit
+#else
+    import AppKit
+#endif
 
 /// The app-wide services every window shares: live alerts, the transport network, the
 /// brochure library and the undo prompt. One instance each, so the Mac's Settings window
@@ -14,6 +20,23 @@ public enum AppServices {
     public static let transport = TransportStore()
     public static let brochures = BrochureLibrary()
     public static let undo = UndoCenter()
+    public static let router = AppRouter()
+    static let notifications = NotificationRouter()
+
+    /// Make the app the notification centre's delegate. Called as the app starts, so a
+    /// notification tapped to launch it reaches the router.
+    public static func startRoutingNotifications() {
+        UNUserNotificationCenter.current().delegate = notifications
+    }
+
+    /// Open a link outside the app, from code that has no view to ask.
+    static func openExternally(_ url: URL) {
+        #if os(iOS)
+            UIApplication.shared.open(url)
+        #else
+            NSWorkspace.shared.open(url)
+        #endif
+    }
 }
 
 extension View {
@@ -25,6 +48,7 @@ extension View {
             .environment(AppServices.brochures)
             .environment(AppServices.undo)
             .environment(AppServices.detected)
+            .environment(AppServices.router)
     }
 }
 
@@ -36,7 +60,7 @@ public final class UndoCenter {
     struct Offer: Identifiable {
         let id = UUID()
         let message: String
-        let record: DeletedRecord
+        let change: UndoableChange
     }
 
     private(set) var current: Offer?
@@ -44,8 +68,8 @@ public final class UndoCenter {
 
     public init() {}
 
-    func offer(_ record: DeletedRecord, message: String) {
-        let offer = Offer(message: message, record: record)
+    func offer(_ change: UndoableChange, message: String) {
+        let offer = Offer(message: message, change: change)
         current = offer
         expiry?.cancel()
         expiry = Task { [weak self] in
@@ -58,7 +82,7 @@ public final class UndoCenter {
     func undo(in context: ModelContext) {
         guard let offer = current else { return }
         current = nil
-        try? LogStore(context: context).restore(offer.record)
+        try? LogStore(context: context).undo(offer.change)
     }
 
     func dismiss() {

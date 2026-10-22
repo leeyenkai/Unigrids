@@ -12,6 +12,8 @@ public struct TripsScreen: View {
     @Environment(\.modelContext) private var context
     @Environment(\.unigrid) private var style
     @Environment(UndoCenter.self) private var undo: UndoCenter?
+    @Environment(AppRouter.self) private var router: AppRouter?
+    @Environment(\.scenePhase) private var scenePhase
 
     @Query(sort: \Visit.date, order: .reverse) private var visits: [Visit]
     @Query(sort: \Trip.createdAt, order: .reverse) private var trips: [Trip]
@@ -21,6 +23,7 @@ public struct TripsScreen: View {
     @State private var importingPhotos = false
     @State private var path = NavigationPath()
     @State private var error: String?
+    @State private var loggingArrival: DetectedVisits.Suggestion?
 
     public init() {}
 
@@ -60,7 +63,7 @@ public struct TripsScreen: View {
                     .listRowBackground(Color.clear)
                 }
 
-                DetectedVisitsSection(visits: visits)
+                DetectedVisitsSection(visits: visits) { loggingArrival = $0 }
 
                 if trips.isEmpty, visits.isEmpty {
                     Section {
@@ -128,6 +131,11 @@ public struct TripsScreen: View {
             .sheet(item: $editing) { visit in
                 VisitEditor(visit: visit)
             }
+            .sheet(item: $loggingArrival) { suggestion in
+                ArrivalCheckIn(suggestion: suggestion)
+            }
+            .onChange(of: router?.pending, initial: true) { takeRoute() }
+            .onChange(of: scenePhase) { takeRoute() }
             .sheet(isPresented: $creatingTrip) {
                 TripEditor(trip: nil)
             }
@@ -152,12 +160,47 @@ public struct TripsScreen: View {
         }
     }
 
+    /// A notification's route, if it is this tab's to show.
+    private func takeRoute() {
+        guard scenePhase == .active, let route = router?.pending else { return }
+        switch route {
+        case let .trip(id):
+            guard let trip = trips.first(where: { $0.id == id }) else { return }
+            router?.pending = nil
+            path = NavigationPath()
+            path.append(trip)
+        case let .arrival(placeID, date):
+            router?.pending = nil
+            loggingArrival = DetectedVisits.Suggestion(placeID: placeID, date: date)
+        case .place:
+            return
+        }
+    }
+
     private func delete(_ visit: Visit) {
         do {
             let record = try LogStore(context: context).delete(visit: visit)
             undo?.offer(record, message: record.summary { store.place($0)?.name })
         } catch {
             self.error = error.localizedDescription
+        }
+    }
+}
+
+/// The log sheet for a detected arrival, or a note if the place has left the dataset.
+private struct ArrivalCheckIn: View {
+    @Environment(\.referenceStore) private var store
+    let suggestion: DetectedVisits.Suggestion
+
+    var body: some View {
+        if let place = store.place(UnigridsID(suggestion.placeID)) {
+            CheckInSheet(place: place, date: suggestion.date, source: .autoDetected)
+        } else {
+            ContentUnavailableView(
+                "Unknown place",
+                systemImage: "questionmark.square.dashed",
+                description: Text("This place is no longer in the dataset.")
+            )
         }
     }
 }

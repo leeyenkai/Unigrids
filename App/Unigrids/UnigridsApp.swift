@@ -18,6 +18,7 @@ struct UnigridsApp: App {
     @State private var log = StoreLoader(sampleData: DebugSampleData.isRequested)
 
     init() {
+        AppServices.startRoutingNotifications()
         #if os(iOS)
             // As early as possible: iOS relaunches the app in the background to deliver an
             // arrival, and the monitor has to be listening by the time it does.

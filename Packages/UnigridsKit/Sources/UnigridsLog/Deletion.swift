@@ -2,314 +2,295 @@ import Foundation
 import SwiftData
 import UnigridsCore
 
-/// A deleted record, kept as values so it can be put back (SPECIFICATION.md §9, "Edit or
-/// delete anything; undo for deletions").
+/// A change to the log that can be taken back (SPECIFICATION.md §9, "Edit or delete
+/// anything; undo for deletions").
 ///
-/// A snapshot rather than the context's undo manager: SwiftData's undo depends on run-loop
-/// grouping that a deletion made from a button cannot rely on, and a snapshot restores the
-/// record under its own identifiers, with what the deletion cascaded to and the links it
-/// cut, which is what an undo has to do to sync cleanly.
-public enum DeletedRecord: Sendable {
-    case visit(VisitRecord)
-    case trip(TripRecord)
-    case stamp(StampRecord)
+/// Kept as values rather than left to the context's undo manager: SwiftData's undo depends
+/// on run-loop grouping that a change made from a button cannot rely on, and these restore
+/// records under their own identifiers — which is what an undo has to do to sync cleanly.
+///
+/// A deletion keeps the archive of what it removed, and undoing it merges that back. A
+/// creation — a stamp, a photo import — keeps the identifiers it made, and undoing it
+/// removes them.
+public struct UndoableChange: Sendable {
+    public enum Subject: Sendable, Equatable {
+        case visit(UnigridsID, stamps: Int)
+        case trip(String)
+        case stamp(UnigridsID)
+        case stop(UnigridsID)
+        case reminder(String)
+        case hike(UnigridsID)
+        case stamped(UnigridsID)
+        case imported(visits: Int, trips: Int, stamps: Int)
+    }
 
-    /// "Visit to Zion deleted", for the undo prompt, given a way to name places.
-    public func summary(placeName: (UnigridsID) -> String?) -> String {
-        switch self {
-        case let .visit(record):
-            "Visit to \(placeName(UnigridsID(record.placeID)) ?? "a place") deleted"
-        case let .trip(record):
-            "\(record.name.isEmpty ? "Trip" : record.name) deleted"
-        case let .stamp(record):
-            "Stamp for \(placeName(UnigridsID(record.placeID)) ?? "a place") deleted"
+    public let subject: Subject
+    /// Records to merge back in.
+    let putBack: LogArchive
+    /// Records to remove.
+    let takeOut: RecordIDs
+    /// Visits to link to a trip again once it is back: a trip's deletion unlinks its
+    /// visits rather than deleting them.
+    let relink: [UUID: UUID]
+
+    public init(
+        subject: Subject,
+        putBack: LogArchive = LogArchive(),
+        takeOut: RecordIDs = RecordIDs(),
+        relink: [UUID: UUID] = [:]
+    ) {
+        self.subject = subject
+        self.putBack = putBack
+        self.takeOut = takeOut
+        self.relink = relink
+    }
+
+    /// Reminders an undo puts back, which the app has to schedule again.
+    public var restoredReminders: [ReminderArchive] {
+        putBack.trips.flatMap(\.reminders)
+    }
+
+    /// Reminders the change removed, which the app must stop notifying about.
+    public var removedReminderIDs: [UUID] {
+        putBack.trips.flatMap(\.reminders).map(\.id) + takeOut.reminders
+    }
+
+    /// "Visit to Zion and its stamp deleted", for the undo prompt.
+    public func summary(
+        placeName: (UnigridsID) -> String?,
+        trailName: (UnigridsID) -> String? = { _ in nil }
+    ) -> String {
+        func place(_ id: UnigridsID) -> String {
+            placeName(id) ?? "a place"
+        }
+        switch subject {
+        case let .visit(id, stamps):
+            switch stamps {
+            case 0: return "Visit to \(place(id)) deleted"
+            case 1: return "Visit to \(place(id)) and its stamp deleted"
+            default: return "Visit to \(place(id)) and its \(stamps) stamps deleted"
+            }
+        case let .trip(name):
+            return "\(name.isEmpty ? "Trip" : name) deleted"
+        case let .stamp(id):
+            return "Stamp for \(place(id)) deleted"
+        case let .stop(id):
+            return "\(place(id)) taken off the trip"
+        case let .reminder(title):
+            return "\(title.isEmpty ? "Reminder" : title) deleted"
+        case let .hike(id):
+            return "Hike on \(trailName(id) ?? "the trail") deleted"
+        case let .stamped(id):
+            return "Stamped \(place(id))"
+        case let .imported(visits, trips, stamps):
+            var parts = ["\(visits) visit\(visits == 1 ? "" : "s")"]
+            if trips > 0 {
+                parts.append("\(trips) trip\(trips == 1 ? "" : "s")")
+            }
+            if stamps > 0 {
+                parts.append("\(stamps) stamp\(stamps == 1 ? "" : "s")")
+            }
+            return "Imported " + ListFormatter.localizedString(byJoining: parts)
         }
     }
 }
 
-public struct VisitRecord: Sendable {
-    struct CheckInRecord: Sendable {
-        let id: UUID
-        let targetKindRaw: String
-        let targetID: String
-        let date: Date
-        let photoAssetIdentifiers: [String]
-        let notes: String
+/// Identifiers of records to remove when a change is undone.
+public struct RecordIDs: Sendable, Equatable {
+    public var visits: [UUID] = []
+    public var trips: [UUID] = []
+    public var stamps: [UUID] = []
+    public var stops: [UUID] = []
+    public var reminders: [UUID] = []
+    public var hikes: [UUID] = []
+    public var checkIns: [UUID] = []
+
+    public init(
+        visits: [UUID] = [],
+        trips: [UUID] = [],
+        stamps: [UUID] = [],
+        stops: [UUID] = [],
+        reminders: [UUID] = [],
+        hikes: [UUID] = [],
+        checkIns: [UUID] = []
+    ) {
+        self.visits = visits
+        self.trips = trips
+        self.stamps = stamps
+        self.stops = stops
+        self.reminders = reminders
+        self.hikes = hikes
+        self.checkIns = checkIns
     }
-
-    struct HikeRecord: Sendable {
-        let id: UUID
-        let trailID: String
-        let date: Date
-        let completionRaw: String
-    }
-
-    struct WeatherRecord: Sendable {
-        let date: Date
-        let high: Double?
-        let low: Double?
-        let precipitation: Double?
-        let condition: String?
-        let sourceRaw: String
-    }
-
-    let id: UUID
-    let placeID: String
-    let date: Date
-    let endDate: Date?
-    let sourceRaw: String
-    let rating: Int?
-    let notes: String
-    let createdAt: Date
-    let tripID: UUID?
-    let checkIns: [CheckInRecord]
-    let hikes: [HikeRecord]
-    let weather: WeatherRecord?
-    let stampIDs: [UUID]
-}
-
-public struct TripRecord: Sendable {
-    struct StopRecord: Sendable {
-        let id: UUID
-        let placeID: String
-        let plannedDate: Date?
-        let order: Int
-        let notes: String
-        let createdAt: Date
-    }
-
-    struct ReminderRecord: Sendable {
-        let id: UUID
-        let kindRaw: String
-        let date: Date
-        let title: String
-        let urlString: String?
-    }
-
-    let id: UUID
-    let name: String
-    let startDate: Date?
-    let endDate: Date?
-    let statusRaw: String
-    let notes: String
-    let createdAt: Date
-    let stops: [StopRecord]
-    let reminders: [ReminderRecord]
-    let visitIDs: [UUID]
-}
-
-public struct StampRecord: Sendable {
-    let id: UUID
-    let placeID: String
-    let stampLocationID: String?
-    let date: Date
-    let seedBits: Int64
-    let isVerifiedOnSite: Bool
-    let realStampCollected: Bool
-    let createdAt: Date
-    let visitID: UUID?
 }
 
 extension LogStore {
-    /// Delete a visit, returning what it takes to put it back.
+    /// Delete a visit and everything it holds: its check-ins, hikes, weather and its
+    /// stamps. A stamp is the passport's record of a visit, and one left behind would have
+    /// the passport and the log disagree about where the reader has been.
     @discardableResult
-    public func delete(visit: Visit) throws -> DeletedRecord {
-        let record = VisitRecord(
-            id: visit.id,
-            placeID: visit.placeID,
-            date: visit.date,
-            endDate: visit.endDate,
-            sourceRaw: visit.sourceRaw,
-            rating: visit.rating,
-            notes: visit.notes,
-            createdAt: visit.createdAt,
-            tripID: visit.trip?.id,
-            checkIns: (visit.checkIns ?? []).map {
-                .init(
-                    id: $0.id, targetKindRaw: $0.targetKindRaw, targetID: $0.targetID,
-                    date: $0.date, photoAssetIdentifiers: $0.photoAssetIdentifiers, notes: $0.notes
-                )
-            },
-            hikes: (visit.hikes ?? []).map {
-                .init(
-                    id: $0.id,
-                    trailID: $0.trailID,
-                    date: $0.date,
-                    completionRaw: $0.completionRaw
-                )
-            },
-            weather: visit.weather.map {
-                .init(
-                    date: $0.date, high: $0.highCelsius, low: $0.lowCelsius,
-                    precipitation: $0.precipitationMillimetres, condition: $0.condition,
-                    sourceRaw: $0.sourceRaw
-                )
-            },
-            stampIDs: (visit.stamps ?? []).map(\.id)
+    public func delete(visit: Visit) throws -> UndoableChange {
+        let stamps = visit.stamps ?? []
+        let change = UndoableChange(
+            subject: .visit(visit.place, stamps: stamps.count),
+            putBack: LogArchive(
+                visits: [VisitArchive(visit, name: { _ in nil })],
+                stamps: stamps.map { StampArchive($0, name: { _ in nil }, calendar: nil) }
+            )
         )
-        try delete(visit)
-        return .visit(record)
+        for stamp in stamps {
+            context.delete(stamp)
+        }
+        context.delete(visit)
+        try save()
+        return change
     }
 
-    /// Delete a trip, returning what it takes to put it back. Its visits stay in the log
-    /// either way; an undo links them to the trip again.
+    /// Delete a trip with its stops and reminders. Its visits stay in the log; an undo
+    /// links them to the trip again.
     @discardableResult
-    public func delete(trip: Trip) throws -> DeletedRecord {
-        let record = TripRecord(
-            id: trip.id,
-            name: trip.name,
-            startDate: trip.startDate,
-            endDate: trip.endDate,
-            statusRaw: trip.statusRaw,
-            notes: trip.notes,
-            createdAt: trip.createdAt,
-            stops: (trip.stops ?? []).map {
-                .init(
-                    id: $0.id, placeID: $0.placeID, plannedDate: $0.plannedDate,
-                    order: $0.order, notes: $0.notes, createdAt: $0.createdAt
-                )
-            },
-            reminders: (trip.reminders ?? []).map {
-                .init(
-                    id: $0.id,
-                    kindRaw: $0.kindRaw,
-                    date: $0.date,
-                    title: $0.title,
-                    urlString: $0.urlString
-                )
-            },
-            visitIDs: (trip.visits ?? []).map(\.id)
+    public func delete(trip: Trip) throws -> UndoableChange {
+        let visits = trip.visits ?? []
+        let change = UndoableChange(
+            subject: .trip(trip.name),
+            putBack: LogArchive(trips: [TripArchive(trip, name: { _ in nil })]),
+            relink: Dictionary(uniqueKeysWithValues: visits.map { ($0.id, trip.id) })
         )
-        try delete(trip)
-        return .trip(record)
+        context.delete(trip)
+        try save()
+        return change
     }
 
-    /// Delete a stamp, returning what it takes to put it back.
+    /// Delete a stamp. A visit that only existed because of it — made by stamping, with
+    /// nothing else logged on it — goes with it, so no empty visit is left counting
+    /// towards anything.
     @discardableResult
-    public func delete(stamp: Stamp) throws -> DeletedRecord {
-        let record = StampRecord(
-            id: stamp.id,
-            placeID: stamp.placeID,
-            stampLocationID: stamp.stampLocationID,
-            date: stamp.date,
-            seedBits: stamp.seedBits,
-            isVerifiedOnSite: stamp.isVerifiedOnSite,
-            realStampCollected: stamp.realStampCollected,
-            createdAt: stamp.createdAt,
-            visitID: stamp.visit?.id
-        )
-        try delete(stamp)
-        return .stamp(record)
+    public func delete(stamp: Stamp) throws -> UndoableChange {
+        var archive = LogArchive(stamps: [StampArchive(stamp, name: { _ in nil }, calendar: nil)])
+        let visit = stamp.visit
+        context.delete(stamp)
+        if let visit, isEmpty(visit, ignoringStamp: stamp.id), visit.source == .stamp {
+            archive.visits = [VisitArchive(visit, name: { _ in nil })]
+            context.delete(visit)
+        }
+        try save()
+        return UndoableChange(subject: .stamp(stamp.place), putBack: archive)
     }
 
-    /// Put a deleted record back, under its own identifiers.
-    public func restore(_ record: DeletedRecord) throws {
-        switch record {
-        case let .visit(record): try restore(record)
-        case let .trip(record): try restore(record)
-        case let .stamp(record): try restore(record)
+    /// Take a stop off its trip.
+    @discardableResult
+    public func delete(stop: TripStop) throws -> UndoableChange {
+        guard let trip = stop.trip else {
+            context.delete(stop)
+            try save()
+            return UndoableChange(subject: .stop(stop.place))
         }
-        try context.save()
+        var shell = TripArchive(trip, name: { _ in nil })
+        shell.stops = [StopArchive(stop, name: { _ in nil })]
+        shell.reminders = []
+        context.delete(stop)
+        try save()
+        return UndoableChange(subject: .stop(stop.place), putBack: LogArchive(trips: [shell]))
     }
 
-    private func restore(_ record: VisitRecord) throws {
-        let visit = Visit(
-            placeID: UnigridsID(record.placeID),
-            date: record.date,
-            endDate: record.endDate,
-            rating: record.rating,
-            notes: record.notes
-        )
-        visit.restoreIdentity(record.id, createdAt: record.createdAt)
-        visit.sourceRaw = record.sourceRaw
-        context.insert(visit)
-        if let tripID = record.tripID {
-            visit.trip = try fetch(Trip.self).first { $0.id == tripID }
+    /// Delete a reminder.
+    @discardableResult
+    public func delete(reminder: Reminder) throws -> UndoableChange {
+        let subject = UndoableChange.Subject.reminder(reminder.title)
+        guard let trip = reminder.trip else {
+            context.delete(reminder)
+            try save()
+            return UndoableChange(subject: subject, takeOut: RecordIDs())
         }
-        for item in record.checkIns {
-            let checkIn = CheckIn(target: .place(""), date: item.date, notes: item.notes)
-            checkIn.restoreIdentity(item.id)
-            checkIn.targetKindRaw = item.targetKindRaw
-            checkIn.targetID = item.targetID
-            checkIn.photoAssetIdentifiers = item.photoAssetIdentifiers
-            checkIn.visit = visit
-            context.insert(checkIn)
+        var shell = TripArchive(trip, name: { _ in nil })
+        shell.stops = []
+        shell.reminders = [ReminderArchive(reminder)]
+        context.delete(reminder)
+        try save()
+        return UndoableChange(subject: subject, putBack: LogArchive(trips: [shell]))
+    }
+
+    /// Delete one hike, and the trail check-in that marking it made. A visit that began
+    /// with the hike and holds nothing else goes too.
+    @discardableResult
+    public func delete(hike: Hike) throws -> UndoableChange {
+        let subject = UndoableChange.Subject.hike(UnigridsID(hike.trailID))
+        guard let visit = hike.visit else {
+            context.delete(hike)
+            try save()
+            return UndoableChange(subject: subject)
         }
-        for item in record.hikes {
-            let hike = Hike(trailID: UnigridsID(item.trailID), date: item.date)
-            hike.restoreIdentity(item.id)
-            hike.completionRaw = item.completionRaw
-            hike.visit = visit
-            context.insert(hike)
+        let checkIns = (visit.checkIns ?? []).filter {
+            $0.targetKindRaw == "trail" && $0.targetID == hike.trailID
+                && abs($0.date.timeIntervalSince(hike.date)) < 1
         }
-        if let item = record.weather {
-            let snapshot = WeatherSnapshot(
-                date: item.date, highCelsius: item.high, lowCelsius: item.low,
-                precipitationMillimetres: item.precipitation, condition: item.condition,
-                source: WeatherSnapshot.Source(rawValue: item.sourceRaw) ?? .openMeteoArchive
+        var shell = VisitArchive(visit, name: { _ in nil })
+        shell.hikes = [HikeArchive(hike)]
+        shell.checkIns = checkIns.map(CheckInArchive.init)
+        shell.weather = nil
+        let removed = Set([hike.id] + checkIns.map(\.id))
+        context.delete(hike)
+        for checkIn in checkIns {
+            context.delete(checkIn)
+        }
+        if visit.source == .hike, isEmpty(visit, ignoring: removed) {
+            shell = VisitArchive(visit, name: { _ in nil })
+            context.delete(visit)
+        }
+        try save()
+        return UndoableChange(subject: subject, putBack: LogArchive(visits: [shell]))
+    }
+
+    /// Take back a change: remove what it made, put back what it removed.
+    public func undo(_ change: UndoableChange) throws {
+        try remove(change.takeOut)
+        try merge(change.putBack)
+        if !change.relink.isEmpty {
+            let trips = try Dictionary(
+                context.fetch(FetchDescriptor<Trip>()).map { ($0.id, $0) },
+                uniquingKeysWith: { first, _ in first }
             )
-            snapshot.visit = visit
-            context.insert(snapshot)
+            for visit in try context.fetch(FetchDescriptor<Visit>()) {
+                if let tripID = change.relink[visit.id], let trip = trips[tripID] {
+                    visit.trip = trip
+                }
+            }
         }
-        let stampIDs = Set(record.stampIDs)
-        for stamp in try fetch(Stamp.self) where stampIDs.contains(stamp.id) {
-            stamp.visit = visit
-        }
+        try save()
     }
 
-    private func restore(_ record: TripRecord) throws {
-        let trip = Trip(
-            name: record.name,
-            startDate: record.startDate,
-            endDate: record.endDate,
-            notes: record.notes
-        )
-        trip.restoreIdentity(record.id, createdAt: record.createdAt)
-        trip.statusRaw = record.statusRaw
-        context.insert(trip)
-        for item in record.stops {
-            let stop = TripStop(
-                placeID: UnigridsID(item.placeID), order: item.order,
-                plannedDate: item.plannedDate, notes: item.notes
-            )
-            stop.restoreIdentity(item.id, createdAt: item.createdAt)
-            stop.trip = trip
-            context.insert(stop)
+    private func remove(_ ids: RecordIDs) throws {
+        func delete<Model: PersistentModel>(
+            _: Model.Type, _ wanted: [UUID], id: (Model) -> UUID
+        ) throws {
+            guard !wanted.isEmpty else { return }
+            let set = Set(wanted)
+            let records = try context.fetch(FetchDescriptor<Model>())
+            for record in records where set.contains(id(record)) {
+                context.delete(record)
+            }
         }
-        for item in record.reminders {
-            let reminder = Reminder(
-                kind: Reminder.Kind(rawValue: item.kindRaw) ?? .permit,
-                date: item.date,
-                title: item.title,
-                url: item.urlString.flatMap(URL.init(string:))
-            )
-            reminder.restoreIdentity(item.id)
-            reminder.trip = trip
-            context.insert(reminder)
-        }
-        let visitIDs = Set(record.visitIDs)
-        for visit in try fetch(Visit.self) where visitIDs.contains(visit.id) {
-            visit.trip = trip
-        }
+        try delete(Stamp.self, ids.stamps) { $0.id }
+        try delete(Hike.self, ids.hikes) { $0.id }
+        try delete(CheckIn.self, ids.checkIns) { $0.id }
+        try delete(Visit.self, ids.visits) { $0.id }
+        try delete(TripStop.self, ids.stops) { $0.id }
+        try delete(Reminder.self, ids.reminders) { $0.id }
+        try delete(Trip.self, ids.trips) { $0.id }
     }
 
-    private func restore(_ record: StampRecord) throws {
-        let stamp = Stamp(
-            placeID: UnigridsID(record.placeID),
-            stampLocationID: record.stampLocationID.map { UnigridsID($0) },
-            date: record.date,
-            seed: UInt64(bitPattern: record.seedBits),
-            isVerifiedOnSite: record.isVerifiedOnSite,
-            realStampCollected: record.realStampCollected
-        )
-        stamp.restoreIdentity(record.id, createdAt: record.createdAt)
-        if let visitID = record.visitID {
-            stamp.visit = try fetch(Visit.self).first { $0.id == visitID }
-        }
-        context.insert(stamp)
-    }
-
-    private func fetch<Model: PersistentModel>(_: Model.Type) throws -> [Model] {
-        try context.fetch(FetchDescriptor<Model>())
+    /// Whether a visit holds anything but the records about to go: no check-ins, hikes or
+    /// stamps besides them, no rating and no notes.
+    private func isEmpty(
+        _ visit: Visit,
+        ignoring removed: Set<UUID> = [],
+        ignoringStamp stamp: UUID? = nil
+    ) -> Bool {
+        let skip = removed.union(stamp.map { [$0] } ?? [])
+        let checkIns = (visit.checkIns ?? []).filter { !skip.contains($0.id) }
+        let hikes = (visit.hikes ?? []).filter { !skip.contains($0.id) }
+        let stamps = (visit.stamps ?? []).filter { !skip.contains($0.id) }
+        return checkIns.isEmpty && hikes.isEmpty && stamps.isEmpty
+            && visit.rating == nil && visit.notes.isEmpty
     }
 }

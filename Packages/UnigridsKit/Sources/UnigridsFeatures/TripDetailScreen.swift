@@ -299,7 +299,7 @@ struct TripDetailScreen: View {
         do {
             let log = LogStore(context: context)
             for offset in offsets {
-                try log.delete(ordered[offset])
+                try log.delete(stop: ordered[offset])
             }
         } catch {
             self.error = error.localizedDescription

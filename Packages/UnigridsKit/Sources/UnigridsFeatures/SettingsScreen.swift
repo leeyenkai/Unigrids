@@ -21,10 +21,6 @@ public struct SettingsScreen: View {
     private var palette = Palette.standard
     @AppStorage(OnboardingDefaults.seen) private var onboardingSeen = true
 
-    @Query private var visits: [Visit]
-    @Query private var stamps: [Stamp]
-    @Query private var trips: [Trip]
-
     public init() {}
 
     public var body: some View {
@@ -80,28 +76,7 @@ public struct SettingsScreen: View {
                 .font(UnigridStyle.caption)
             }
 
-            Section {
-                LabeledContent("Visits", value: "\(visits.count)")
-                LabeledContent("Stamps", value: "\(stamps.count)")
-                LabeledContent("Trips", value: "\(trips.count)")
-                if let files = exportFiles {
-                    ShareLink(item: files.json) {
-                        Label("Export everything (JSON)", systemImage: "square.and.arrow.up")
-                    }
-                    ShareLink(item: files.csv) {
-                        Label("Export visits (CSV)", systemImage: "tablecells")
-                    }
-                }
-                Text(
-                    "Your log lives on this device and in your own iCloud. "
-                        + "There are no accounts and no servers, so the developer never "
-                        + "holds any of it."
-                )
-                .font(UnigridStyle.caption)
-                .foregroundStyle(style.inkSecondary)
-            } header: {
-                SectionHead("Your data")
-            }
+            YourDataSection()
 
             BrochureStorageSection()
 
@@ -165,27 +140,6 @@ public struct SettingsScreen: View {
         }
         .paperPage()
         .navigationTitle("Settings")
-    }
-
-    /// The export files, written fresh to the temporary directory whenever the screen is
-    /// drawn. They are a hand-off to the share sheet, not a copy kept anywhere.
-    private var exportFiles: (json: URL, csv: URL)? {
-        guard let document = try? LogExport.document(
-            context: context,
-            name: { store.place($0)?.name }
-        ),
-            let json = try? LogExport.json(document)
-        else { return nil }
-        let folder = FileManager.default.temporaryDirectory
-        let jsonURL = folder.appendingPathComponent("Unigrids log.json")
-        let csvURL = folder.appendingPathComponent("Unigrids visits.csv")
-        do {
-            try json.write(to: jsonURL, options: .atomic)
-            try LogExport.visitsCSV(document).write(to: csvURL, atomically: true, encoding: .utf8)
-            return (jsonURL, csvURL)
-        } catch {
-            return nil
-        }
     }
 }
 

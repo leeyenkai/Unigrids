@@ -44,6 +44,7 @@ public final class DetectedVisits {
         if ProtectedData.isAvailable {
             pending = stored()
             loaded = true
+            pruneStale()
         } else {
             Task { await loadWhenAvailable() }
         }
@@ -68,16 +69,40 @@ public final class DetectedVisits {
     }
 
     /// Note an arrival, once per place per day.
-    func add(_ placeID: UnigridsID, at date: Date) -> Bool {
-        let day = Calendar.current.startOfDay(for: date)
+    func add(
+        _ placeID: UnigridsID,
+        at date: Date,
+        calendar: Calendar = UnigridsCalendar.gregorian()
+    ) -> Bool {
         guard !pending.contains(where: {
-            $0.placeID == placeID.rawValue && Calendar.current.isDate($0.date, inSameDayAs: day)
+            $0.placeID == placeID.rawValue
+                && UnigridsCalendar.isSameDay($0.date, date, calendar: calendar)
         }) else { return false }
         pending.append(Suggestion(placeID: placeID.rawValue, date: date))
-        // A week-old suggestion is a visit the reader chose not to log.
-        pending.removeAll { Date().timeIntervalSince($0.date) > 7 * 86400 }
+        pruneStale()
         save()
         return true
+    }
+
+    /// A week-old suggestion is a visit the reader chose not to log.
+    private func pruneStale() {
+        pending.removeAll { Date().timeIntervalSince($0.date) > 7 * 86400 }
+    }
+
+    /// The suggestions not yet answered by a visit logged at the place that day, there.
+    static func unanswered(
+        _ pending: [Suggestion],
+        visits: [Visit],
+        store: any ReferenceStore
+    ) -> [Suggestion] {
+        pending.filter { suggestion in
+            let calendar = UnigridsCalendar
+                .gregorian(at: store.place(UnigridsID(suggestion.placeID)))
+            return !visits.contains {
+                $0.placeID == suggestion.placeID
+                    && UnigridsCalendar.isSameDay($0.date, suggestion.date, calendar: calendar)
+            }
+        }
     }
 
     func dismiss(_ suggestion: Suggestion) {
@@ -209,11 +234,23 @@ extension AppServices {
                 at: place,
                 boundary: store.boundary(for: placeID)
             )
-            guard inside, AppServices.detected.add(placeID, at: Date()) else { return }
+            let now = Date()
+            guard inside,
+                  AppServices.detected.add(
+                      placeID,
+                      at: now,
+                      calendar: UnigridsCalendar.gregorian(at: place)
+                  )
+            else { return }
             let content = UNMutableNotificationContent()
             content.title = "Looks like you're in \(place.name)"
             content.body = "Log a visit? Nothing is logged until you say so."
             content.sound = .default
+            content.userInfo = [
+                NotificationRoute.key: NotificationRoute.arrival.rawValue,
+                "place": placeID.rawValue,
+                "date": now.timeIntervalSince1970,
+            ]
             let request = UNNotificationRequest(
                 identifier: "arrival-\(placeID.rawValue)",
                 content: content,
@@ -296,15 +333,12 @@ struct DetectedVisitsSection: View {
     @Environment(\.unigrid) private var style
     @Environment(DetectedVisits.self) private var detected: DetectedVisits?
     let visits: [Visit]
-    @State private var logging: DetectedVisits.Suggestion?
+    /// Hosted by the screen rather than this section, which disappears as soon as the
+    /// arrival is logged and would take its sheet with it.
+    let onLog: (DetectedVisits.Suggestion) -> Void
 
     private var suggestions: [DetectedVisits.Suggestion] {
-        (detected?.pending ?? []).filter { suggestion in
-            !visits.contains {
-                $0.placeID == suggestion.placeID
-                    && Calendar.current.isDate($0.date, inSameDayAs: suggestion.date)
-            }
-        }
+        DetectedVisits.unanswered(detected?.pending ?? [], visits: visits, store: store)
     }
 
     var body: some View {
@@ -328,7 +362,7 @@ struct DetectedVisitsSection: View {
                             .foregroundStyle(style.inkSecondary)
                         }
                         Spacer(minLength: 8)
-                        Button("Log") { logging = suggestion }
+                        Button("Log") { onLog(suggestion) }
                             .buttonStyle(BrochureButtonStyle(.primary, fullWidth: false))
                         Button {
                             detected?.dismiss(suggestion)
@@ -345,11 +379,6 @@ struct DetectedVisitsSection: View {
             } footer: {
                 Text("Noticed on this device. Nothing is logged until you say so.")
                     .font(UnigridStyle.caption)
-            }
-            .sheet(item: $logging) { suggestion in
-                if let place = store.place(UnigridsID(suggestion.placeID)) {
-                    CheckInSheet(place: place, date: suggestion.date, source: .autoDetected)
-                }
             }
         }
     }
