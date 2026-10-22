@@ -258,7 +258,7 @@ def enrich(
     pages = json.loads((cache / PAGES_FILE).read_text())
     images_path = cache / IMAGES_FILE
     images = json.loads(images_path.read_text()) if images_path.exists() else {}
-    counts = {"matched": 0, "noArticle": 0, "rejected": 0}
+    counts = {"matched": 0, "noArticle": 0, "rejected": 0, "closed": 0}
     report: list[dict[str, Any]] = []
     for place in places:
         if not wants(place):
@@ -268,6 +268,13 @@ def enrich(
             counts["rejected" if decision != "no article" else "noArticle"] += 1
             if decision != "no article":
                 report.append({"id": place["id"], "name": place["name"], "reason": decision})
+            continue
+        if place.get("kind") == "statePark" and says_closed(decision["extract"]):
+            # Listed by PAD-US, gone by its own article: left off the map rather than
+            # shown as a park to visit.
+            place["closed"] = True
+            counts["closed"] += 1
+            report.append({"id": place["id"], "name": place["name"], "reason": "closed"})
             continue
         counts["matched"] += 1
         place["summary"] = lead(decision["extract"])
@@ -287,7 +294,8 @@ def enrich(
     path.write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n")
     print(
         f"    wikipedia: {counts['matched']} summaries; {counts['rejected']} articles "
-        f"rejected ({path.relative_to(config.PIPELINE_ROOT)}); {counts['noArticle']} none"
+        f"rejected ({path.relative_to(config.PIPELINE_ROOT)}); {counts['noArticle']} none; "
+        f"{counts['closed']} state parks closed by their own article, left out"
     )
     return counts
 
@@ -363,6 +371,25 @@ def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     dphi, dlambda = phi2 - phi1, math.radians(lon2 - lon1)
     a = math.sin(dphi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2) ** 2
     return 6371.0 * 2 * math.asin(math.sqrt(a))
+
+
+# A first sentence that says the park itself is gone, as PAD-US sometimes does not:
+# "Bonny Lake State Park is a former state park", "Walnut Creek State Park was a former
+# Oklahoma State Park", "The former Arrowhead State Park, now known as…", "Fairfield Lake
+# State Park was a state park located in…". History — "on the former homesite of…" — is not.
+CLOSED_LEAD = re.compile(
+    r"^(?:the\s+)?former\b[^.]*?\bstate park\b"
+    r"|^[^.]*?\b(?:is|was)\s+a\s+former\b[^.]*?\bstate park\b"
+    r"|^[^.]*?\bstate park\s+was\s+a\s+state park\b",
+    re.IGNORECASE,
+)
+
+
+def says_closed(extract: str) -> bool:
+    """Whether an article's first sentence says the state park no longer is one."""
+    text = re.sub(r"\s+", " ", extract).strip()
+    first = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9“\"])", text, maxsplit=1)[0]
+    return bool(CLOSED_LEAD.search(first))
 
 
 def lead(extract: str) -> str:

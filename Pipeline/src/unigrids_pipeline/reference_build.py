@@ -215,6 +215,12 @@ def build(*, online: bool = False) -> None:
         rawstore.latest(wikipedia_match.SOURCE, wikipedia_match.PAGES_FILE),
         _wikimedia_image,
     )
+    closed = {place["id"] for place in places if place.pop("closed", False)}
+    if closed:
+        places = [place for place in places if place["id"] not in closed]
+        for place_id in closed:
+            boundaries.pop(place_id, None)
+            routes.pop(place_id, None)
 
     for stale in images_dir.iterdir():
         if stale.name not in written_images:
@@ -307,8 +313,10 @@ def _national_park(
         if len(gallery) == GALLERY_COUNT:
             break
         source = photos_dir / photo_filename(image["url"]) if photos_dir else None
-        index = 1 + (0 if hero is None else 1 + len(gallery))
-        name = f"{place_id}-{index}.jpg"
+        # Named for the photograph, not its place in the gallery: a resized copy is kept
+        # as long as its name exists, so a positional name kept last year's picture under
+        # this year's caption and credit when the NPS reordered its photos.
+        name = f"{place_id}-{Path(photo_filename(image['url'])).stem[:10]}.jpg"
         size, quality = (HERO_SIZE, HERO_QUALITY) if hero is None else (
             GALLERY_SIZE, GALLERY_QUALITY
         )

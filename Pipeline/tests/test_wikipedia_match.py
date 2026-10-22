@@ -74,3 +74,20 @@ def test_the_lead_is_cut_to_three_sentences_and_loses_pronunciations():
     assert wikipedia_match.lead(extract) == (
         "Big Bend is a place. Second sentence here. Third one too."
     )
+
+
+def test_a_park_its_article_calls_closed_is_recognised():
+    closed = [
+        "Bonny Lake State Park is a former state park located in Yuma County, Colorado.",
+        "Walnut Creek State Park was a former Oklahoma State Park on the north shore.",
+        "The former Arrowhead State Park, now known as the Arrowhead Area at Lake Eufaula.",
+        "Fairfield Lake State Park was a state park located in Freestone County, Texas.",
+    ]
+    open_ = [
+        "Crowley's Ridge State Park is a park located on the former homesite of Benjamin "
+        "Crowley.",
+        "Gathland State Park occupies the former estate of George Alfred Townsend.",
+        "Fort Ebey State Park is a public recreation area. It was a former army fort.",
+    ]
+    assert all(wikipedia_match.says_closed(text) for text in closed)
+    assert not any(wikipedia_match.says_closed(text) for text in open_)
