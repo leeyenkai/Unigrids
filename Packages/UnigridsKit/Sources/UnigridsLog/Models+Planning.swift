@@ -54,3 +54,11 @@ extension TripStop {
         }
     }
 }
+
+extension Stamp {
+    /// Whether the impression carries the America 250 seal, by the calendar day where it
+    /// was made.
+    public func hasAmerica250Seal(at place: Place?) -> Bool {
+        hasAmerica250Seal(calendar: UnigridsCalendar.gregorian(at: place))
+    }
+}

@@ -57,7 +57,9 @@ struct America250Page: View {
                                             stateCode: place.states.first?.code ?? "US",
                                             region: place.resolvedPassportRegion,
                                             seed: stamp.seed,
-                                            isVerifiedOnSite: stamp.isVerifiedOnSite
+                                            isVerifiedOnSite: stamp.isVerifiedOnSite,
+
+                                            calendar: UnigridsCalendar.gregorian(at: place)
                                         ),
                                         diameter: 120
                                     )
@@ -89,9 +91,21 @@ struct America250Page: View {
 struct PassportSlot: Identifiable, Hashable {
     let place: Place
     let location: PointOfInterest?
+    /// Every slot location of the site, in order, for `PassportSlotRule`.
+    let siblings: [UnigridsID]
 
     var id: String {
         place.id.rawValue + "|" + (location?.id.rawValue ?? "")
+    }
+
+    /// The site's stamps that sit in this slot, latest first.
+    func impressions(among stamps: [Stamp]) -> [Stamp] {
+        stamps
+            .filter {
+                $0.place == place.id
+                    && PassportSlotRule.slot(for: $0.stampLocation, among: siblings) == location?.id
+            }
+            .sorted { $0.date > $1.date }
     }
 }
 
@@ -110,13 +124,7 @@ struct ImpressionsSheet: View {
     let onStampAgain: () -> Void
 
     private var impressions: [Stamp] {
-        stamps
-            .filter { $0.place == slot.place.id }
-            .filter {
-                slot.location == nil || $0.stampLocation == slot.location?.id || $0
-                    .stampLocation == nil
-            }
-            .sorted { $0.date > $1.date }
+        slot.impressions(among: stamps)
     }
 
     var body: some View {
@@ -184,7 +192,9 @@ private struct ImpressionRow: View {
                     stateCode: place.states.first?.code ?? "US",
                     region: region,
                     seed: stamp.seed,
-                    isVerifiedOnSite: stamp.isVerifiedOnSite
+                    isVerifiedOnSite: stamp.isVerifiedOnSite,
+
+                    calendar: UnigridsCalendar.gregorian(at: place)
                 ),
                 diameter: 104
             )
@@ -198,7 +208,7 @@ private struct ImpressionRow: View {
                         .font(UnigridStyle.rowDetail)
                         .foregroundStyle(style.ink)
                 }
-                if stamp.hasAmerica250Seal() {
+                if stamp.hasAmerica250Seal(at: place) {
                     Text("AMERICA 250")
                         .font(UnigridStyle.dataLabel)
                         .tracking(1.2)
@@ -261,5 +271,51 @@ struct PassportPageCard: View {
         }
         .frame(width: 552)
         .background(style.page)
+    }
+}
+
+/// Stamps for places that have left the dataset (AGENTS.md §4: an id that no longer
+/// resolves degrades, it does not vanish). Shown so they can be seen and deleted; they
+/// count towards nothing.
+struct UnknownPlaceStamps: View {
+    @Environment(\.modelContext) private var context
+    @Environment(\.unigrid) private var style
+    @Environment(UndoCenter.self) private var undo: UndoCenter?
+    let stamps: [Stamp]
+
+    var body: some View {
+        if !stamps.isEmpty {
+            Section {
+                ForEach(stamps.sorted { $0.date > $1.date }) { stamp in
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Unknown place")
+                            .font(UnigridStyle.rowTitle)
+                            .foregroundStyle(style.ink)
+                        Text(stamp.placeID + " · "
+                            + stamp.date.formatted(date: .abbreviated, time: .omitted))
+                            .font(UnigridStyle.rowDetail)
+                            .foregroundStyle(style.inkSecondary)
+                    }
+                    .listRowBackground(Color.clear)
+                    .swipeActions(edge: .trailing) {
+                        Button(role: .destructive) {
+                            if let change = try? LogStore(context: context).delete(stamp: stamp) {
+                                undo?.offer(change, message: change.summary { _ in nil })
+                            }
+                        } label: {
+                            Label("Delete", symbol: .delete)
+                        }
+                    }
+                }
+            } header: {
+                SectionHead("Unknown places", detail: "\(stamps.count)")
+            } footer: {
+                Text(
+                    "Stamps for places no longer in Unigrids' data. They are kept until you "
+                        + "delete them, and count towards nothing."
+                )
+                .font(UnigridStyle.caption)
+            }
+        }
     }
 }

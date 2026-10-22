@@ -37,3 +37,47 @@ struct PassportRegionTests {
         }
     }
 }
+
+@Suite("Passport regions against the paper book")
+struct PassportRegionEvidenceTests {
+    /// One park per state from the annual regional stamps, where the old guesses were
+    /// wrong (the Wikipedia article on the programme, revision 1371719587).
+    @Test("states file where their parks' regional stamps say")
+    func evidencedStates() throws {
+        let cases: [(String, PassportRegion)] = [
+            ("AZ", .western), // Tumacácori, Canyon de Chelly…
+            ("VA", .midAtlantic), // Colonial, Shenandoah…
+            ("MD", .midAtlantic), // Antietam, Fort McHenry…
+            ("SD", .rockyMountain), // Mount Rushmore, Badlands…
+            ("ND", .rockyMountain), // Theodore Roosevelt…
+            ("DC", .nationalCapital),
+            ("AR", .southwest), // Hot Springs, Buffalo River…
+        ]
+        for (code, region) in cases {
+            let state = try #require(USState.named(code))
+            #expect(PassportRegion.byState(state) == region, "\(code)")
+        }
+    }
+}
+
+@Suite("Passport slots")
+struct PassportSlotRuleTests {
+    private let locations: [UnigridsID] = ["poi-a", "poi-b", "poi-c"]
+
+    @Test("a stamp sits in its own location's slot")
+    func ownSlot() {
+        #expect(PassportSlotRule.slot(for: "poi-b", among: locations) == "poi-b")
+    }
+
+    @Test("a stamp with no location, or a vanished one, sits in the first slot only")
+    func firstSlot() {
+        #expect(PassportSlotRule.slot(for: nil, among: locations) == "poi-a")
+        #expect(PassportSlotRule.slot(for: "poi-gone", among: locations) == "poi-a")
+    }
+
+    @Test("a site with one slot has no location to choose")
+    func singleSlot() {
+        #expect(PassportSlotRule.slot(for: "poi-a", among: ["poi-a"]) == nil)
+        #expect(PassportSlotRule.slot(for: nil, among: []) == nil)
+    }
+}

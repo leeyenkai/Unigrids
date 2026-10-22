@@ -1,0 +1,17 @@
+{
+ "_about": "Where the paper Passport To Your National Parks files an NPS site in a region other than its state's (SPECIFICATION.md §9, §17 follow-up 3). Each entry is evidenced by the site's own regional stamp in the annual stamp series, as the Wikipedia article on the programme lists them (revision 1371719587, 28 August 2026). The state rules themselves are in UnigridsCore/PassportRegion.swift, checked against the same 329 stamps. A site not listed here, and not evidenced, follows its state.",
+ "source": {
+  "title": "Passport to Your National Parks — Annual Stamp Series, Featured stamps",
+  "url": "https://en.wikipedia.org/w/index.php?title=Passport_to_Your_National_Parks&oldid=1371719587"
+ },
+ "places": {
+  "nps-elis": {"region": "northAtlantic", "evidence": "Ellis Island, a North Atlantic regional stamp; listed under New Jersey first in the NPS record"},
+  "nps-choh": {"region": "midAtlantic", "evidence": "Chesapeake and Ohio Canal, a Mid-Atlantic regional stamp; its NPS record lists DC first"},
+  "nps-upde": {"region": "midAtlantic", "evidence": "Upper Delaware Scenic and Recreational River, a Mid-Atlantic regional stamp; listed under New York first"},
+  "nps-fowa": {"region": "nationalCapital", "evidence": "Fort Washington Park, a National Capital regional stamp"},
+  "nps-pisc": {"region": "nationalCapital", "evidence": "Piscataway Park, a National Capital regional stamp"},
+  "nps-oxhi": {"region": "nationalCapital", "evidence": "Oxon Cove Park and Oxon Hill Farm, a National Capital regional stamp"},
+  "nps-arpo": {"region": "southeast", "evidence": "Arkansas Post National Memorial, a Southeast regional stamp, where Arkansas is otherwise Southwest"},
+  "nps-mnrr": {"region": "midwest", "evidence": "Missouri National Recreational River, a Midwest regional stamp; listed under South Dakota first"}
+ }
+}

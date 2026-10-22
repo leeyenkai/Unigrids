@@ -24,7 +24,7 @@ public struct PassportScreen: View {
     }
 
     private var stampsIn2026: [Stamp] {
-        stamps.filter { $0.hasAmerica250Seal() }
+        stamps.filter { $0.hasAmerica250Seal(at: store.place($0.place)) }
     }
 
     @State private var path = NavigationPath()
@@ -79,6 +79,8 @@ public struct PassportScreen: View {
                     )
                     .font(UnigridStyle.caption)
                 }
+
+                UnknownPlaceStamps(stamps: stamps.filter { store.place($0.place) == nil })
             }
             .listStyle(.plain)
             .paperPage()
@@ -244,7 +246,9 @@ struct PassportRegionPage: View {
                 stateCode: place.states.first?.code ?? "US",
                 region: region,
                 seed: stamp.seed,
-                isVerifiedOnSite: stamp.isVerifiedOnSite
+                isVerifiedOnSite: stamp.isVerifiedOnSite,
+
+                calendar: UnigridsCalendar.gregorian(at: place)
             )
         }
         let stampedPlaces = Set(stamps.map(\.place))
@@ -317,22 +321,17 @@ struct PassportRegionPage: View {
     /// every other site gets one.
     private func slots(for place: Place) -> [PassportSlot] {
         let locations = place.agency == .nps ? store.stampLocations(in: place.id) : []
-        guard locations.count >= 2 else { return [PassportSlot(place: place, location: nil)] }
-        return locations.map { PassportSlot(place: place, location: $0) }
+        guard locations.count >= 2 else {
+            return [PassportSlot(place: place, location: nil, siblings: [])]
+        }
+        return locations.map {
+            PassportSlot(place: place, location: $0, siblings: locations.map(\.id))
+        }
     }
 
-    /// A slot's impressions, latest first. A stamp made before its site had slots per
-    /// location — or with no location chosen — sits in the site's first slot.
+    /// A slot's impressions, latest first, by `PassportSlotRule`.
     private func impressions(in slot: PassportSlot) -> [Stamp] {
-        let placeStamps = stampsByPlace[slot.place.id] ?? []
-        guard let location = slot.location else { return placeStamps.sorted { $0.date > $1.date } }
-        let first = slots(for: slot.place).first?.location?.id
-        return placeStamps
-            .filter {
-                $0.stampLocation == location
-                    .id || ($0.stampLocation == nil && location.id == first)
-            }
-            .sorted { $0.date > $1.date }
+        slot.impressions(among: stampsByPlace[slot.place.id] ?? [])
     }
 
     @ViewBuilder
@@ -400,7 +399,9 @@ struct PassportRegionPage: View {
             stateCode: place.states.first?.code ?? "US",
             region: region,
             seed: stamp.seed,
-            isVerifiedOnSite: stamp.isVerifiedOnSite
+            isVerifiedOnSite: stamp.isVerifiedOnSite,
+
+            calendar: UnigridsCalendar.gregorian(at: place)
         )
     }
 

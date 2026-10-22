@@ -201,6 +201,10 @@ def build(*, online: bool = False) -> None:
     visitation.attach(places, visitation.build(rawstore.latest(visitation.SOURCE, visitation.FILE)))
     park_elevation.attach(places, rawstore.latest(park_elevation.SOURCE, park_elevation.FILE))
     _assign_time_zones(places)
+    regions = reference_content.passport_regions()
+    for place in places:
+        if region := regions.get(place["id"]):
+            place["passportRegion"] = region
 
     if online:
         wikipedia_match.fetch(places, rawstore.today())

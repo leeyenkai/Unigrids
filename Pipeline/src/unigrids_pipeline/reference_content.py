@@ -121,3 +121,15 @@ def guide(place_id: str) -> dict[str, Any] | None:
 
 def guide_paths() -> list[Path]:
     return sorted(GUIDES_DIR.glob("np-*.json"))
+
+
+def passport_regions() -> dict[str, str]:
+    """Place id → passport region, for the sites the paper book files outside their
+    state's region (``content/curated/passport-regions.json``)."""
+    path = config.CONTENT_DIR / "curated" / "passport-regions.json"
+    if not path.exists():
+        return {}
+    return {
+        place_id: entry["region"]
+        for place_id, entry in json.loads(path.read_text())["places"].items()
+    }

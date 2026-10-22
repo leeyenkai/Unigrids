@@ -89,16 +89,23 @@ public enum PassportRegion: String, CaseIterable, Sendable, Codable, Identifiabl
 
     /// The region a place falls in when it has no curated assignment.
     ///
-    /// The specification (§9) assigns NPS sites by the paper passport's own region map,
-    /// curated once in the pipeline, and everything else by state. Until that curation
-    /// exists, this state map is the fallback for both — a best-effort grouping, not the
-    /// paper book's authority. A `Place` carrying an explicit `passportRegion` always
-    /// wins over this.
+    /// The paper book keeps the nine NPS regions in force when the programme began, and
+    /// files a site by where it is — so a state decides, with a few sites filed elsewhere
+    /// (the DC-area parks in Maryland, Ellis Island under New York) carried as explicit
+    /// `passportRegion`s from `Pipeline/content/curated/passport-regions.json`. A `Place`
+    /// carrying one always wins over this.
     public static func byState(_ state: USState) -> PassportRegion {
         stateAssignments[state.code] ?? .western
     }
 
     /// Every state, district and territory, mapped to the region it stamps in.
+    ///
+    /// Checked against the 329 regional stamps of the annual series, 1986 onward, each a
+    /// named park filed under a region (the Wikipedia article on the programme, revision
+    /// 1371719587). Every state's parks agree with its row here, the sites in the curated
+    /// file apart. Earlier guesses had Arizona in Southwest (its fourteen stamps are all
+    /// Western), Virginia and Maryland in National Capital (Mid-Atlantic, the DC-area
+    /// parks apart) and the Dakotas in Midwest (Rocky Mountain).
     ///
     /// Public so the passport's "Beyond the NPS" sections can group state parks and
     /// federal sites without each caller rebuilding the map, and so a test can assert the
@@ -108,10 +115,10 @@ public enum PassportRegion: String, CaseIterable, Sendable, Codable, Identifiabl
         "NH": .northAtlantic, "NY": .northAtlantic, "RI": .northAtlantic,
         "VT": .northAtlantic,
 
-        "DE": .midAtlantic, "NJ": .midAtlantic, "PA": .midAtlantic,
-        "WV": .midAtlantic,
+        "DE": .midAtlantic, "MD": .midAtlantic, "NJ": .midAtlantic, "PA": .midAtlantic,
+        "VA": .midAtlantic, "WV": .midAtlantic,
 
-        "DC": .nationalCapital, "MD": .nationalCapital, "VA": .nationalCapital,
+        "DC": .nationalCapital,
 
         "AL": .southeast, "FL": .southeast, "GA": .southeast, "KY": .southeast,
         "MS": .southeast, "NC": .southeast, "SC": .southeast, "TN": .southeast,
@@ -119,18 +126,39 @@ public enum PassportRegion: String, CaseIterable, Sendable, Codable, Identifiabl
 
         "IA": .midwest, "IL": .midwest, "IN": .midwest, "KS": .midwest,
         "MI": .midwest, "MN": .midwest, "MO": .midwest, "NE": .midwest,
-        "ND": .midwest, "OH": .midwest, "SD": .midwest, "WI": .midwest,
+        "OH": .midwest, "WI": .midwest,
 
-        "AR": .southwest, "AZ": .southwest, "LA": .southwest, "NM": .southwest,
-        "OK": .southwest, "TX": .southwest,
+        "AR": .southwest, "LA": .southwest, "NM": .southwest, "OK": .southwest,
+        "TX": .southwest,
 
-        "CO": .rockyMountain, "MT": .rockyMountain, "UT": .rockyMountain,
-        "WY": .rockyMountain,
+        "CO": .rockyMountain, "MT": .rockyMountain, "ND": .rockyMountain,
+        "SD": .rockyMountain, "UT": .rockyMountain, "WY": .rockyMountain,
 
-        "CA": .western, "NV": .western, "HI": .western,
+        "AZ": .western, "CA": .western, "NV": .western, "HI": .western,
         "AS": .western, "GU": .western, "MP": .western,
 
         "AK": .pacificNorthwestAndAlaska, "ID": .pacificNorthwestAndAlaska,
         "OR": .pacificNorthwestAndAlaska, "WA": .pacificNorthwestAndAlaska,
     ]
+}
+
+/// Which passport slot an impression sits in (SPECIFICATION.md §9: a site with several
+/// official stamp locations gets one slot per location).
+///
+/// One rule for the region page and the impressions sheet, which once disagreed: a stamp
+/// with no location sat in the first slot on the page and in every slot in the sheet.
+public enum PassportSlotRule {
+    /// The location whose slot holds a stamp made at `stampLocation`, among a site's slot
+    /// locations in order — nil when the site has a single slot. A stamp made with no
+    /// location chosen, or at a location the dataset no longer lists, sits in the first.
+    public static func slot(
+        for stampLocation: UnigridsID?,
+        among locations: [UnigridsID]
+    ) -> UnigridsID? {
+        guard locations.count >= 2 else { return nil }
+        if let stampLocation, locations.contains(stampLocation) {
+            return stampLocation
+        }
+        return locations.first
+    }
 }

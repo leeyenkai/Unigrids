@@ -58,7 +58,9 @@ public struct StampSheet: View {
             // A fixed preview seed: the real impression gets its own when it is saved, so
             // the preview must not pretend to show the exact impression you will get.
             seed: 0xC0FF_EE00,
-            isVerifiedOnSite: false
+            isVerifiedOnSite: false,
+
+            calendar: UnigridsCalendar.gregorian(at: place)
         )
     }
 
@@ -160,7 +162,9 @@ public struct StampSheet: View {
                     stateCode: place.states.first?.code ?? "US",
                     region: region,
                     seed: stamp.seed,
-                    isVerifiedOnSite: stamp.isVerifiedOnSite
+                    isVerifiedOnSite: stamp.isVerifiedOnSite,
+
+                    calendar: UnigridsCalendar.gregorian(at: place)
                 ),
                 diameter: 170
             )

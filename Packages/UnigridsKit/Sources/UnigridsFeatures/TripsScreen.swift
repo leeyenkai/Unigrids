@@ -410,7 +410,7 @@ struct VisitEditor: View {
                                     stamp.date,
                                     format: .dateTime.day().month(.abbreviated).year()
                                 )
-                                if stamp.hasAmerica250Seal() {
+                                if stamp.hasAmerica250Seal(at: store.place(stamp.place)) {
                                     Text("America 250")
                                         .font(.caption)
                                         .foregroundStyle(style.seal)
