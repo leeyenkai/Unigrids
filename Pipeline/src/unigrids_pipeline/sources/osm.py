@@ -95,7 +95,7 @@ def download(
 
 def download_query(session: httpx.Client, query: str, *, record: Any = None) -> dict[str, Any]:
     """Run an Overpass query, trying each endpoint in turn."""
-    politeness = http.Politeness(attempts=2, backoff_seconds=10.0, timeout_seconds=420.0)
+    politeness = http.Politeness(attempts=4, backoff_seconds=15.0, timeout_seconds=420.0)
     problems: list[str] = []
     for endpoint in ENDPOINTS:
         try:

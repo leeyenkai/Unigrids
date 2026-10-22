@@ -80,7 +80,7 @@ TRAIL_TERMS = SourceTerms(
 # only: the Arctic parks that also publish none are trailless wilderness, and right to.
 OSM_TRAIL_UNITS = ("SEKI",)
 OSM_TRAIL_KINDS = "path|footway|bridleway"
-OSM_TILES_PER_SIDE = 3
+OSM_TILES_PER_SIDE = 6
 
 OSM_TRAIL_TERMS = SourceTerms(
     identifier="openstreetmap-trails",
@@ -160,22 +160,34 @@ def fetch_osm(version: str, unit_outlines: dict[str, list[outline.Polygon]]) -> 
             # volunteer-run Overpass servers time out on.
             ways: dict[int, dict[str, Any]] = {}
             tiles = OSM_TILES_PER_SIDE
-            try:
-                for row in range(tiles):
-                    for column in range(tiles):
+            # Each tile is kept as it arrives, so a run Overpass cuts short resumes from
+            # the tiles it still lacks rather than starting over.
+            tile_dir = directory / f"{unit}-osm-tiles"
+            tile_dir.mkdir(exist_ok=True)
+            missing = 0
+            for row in range(tiles):
+                for column in range(tiles):
+                    tile_path = tile_dir / f"{row}-{column}.json"
+                    if not tile_path.exists():
                         tile = BoundingBox(
                             south=south + (north - south) * row / tiles,
                             north=south + (north - south) * (row + 1) / tiles,
                             west=west + (east - west) * column / tiles,
                             east=west + (east - west) * (column + 1) / tiles,
                         )
-                        payload = osm.download_query(
-                            session, osm.trail_query(tile, OSM_TRAIL_KINDS), record=record
-                        )
-                        for way in osm.ways(payload):
-                            ways[way["id"]] = way
-            except http.FetchError as error:
-                print(f"    trails-national/{unit}-osm: {error}; left for the next run")
+                        try:
+                            payload = osm.download_query(
+                                session, osm.trail_query(tile, OSM_TRAIL_KINDS), record=record
+                            )
+                        except http.FetchError as error:
+                            print(f"    trails-national/{unit}-osm {row}-{column}: {error}")
+                            missing += 1
+                            continue
+                        tile_path.write_text(json.dumps(payload))
+                    for way in osm.ways(json.loads(tile_path.read_text())):
+                        ways[way["id"]] = way
+            if missing:
+                print(f"    trails-national/{unit}-osm: {missing} tiles left for the next run")
                 continue
             features = [
                 _osm_feature(way) for way in ways.values() if (way.get("tags") or {}).get("name")
