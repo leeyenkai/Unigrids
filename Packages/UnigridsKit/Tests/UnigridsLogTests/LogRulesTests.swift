@@ -160,6 +160,20 @@ struct LogRulesTests {
         #expect(try store.visits().isEmpty)
     }
 
+    @Test("undoing a hike takes its check-in and the visit it made, and leaves a visit it joined")
+    func hikeUndo() throws {
+        let hike = try store.markHiked("trail-a", in: "np-zion", on: date(2026, 5, 1))
+        try store.undo(store.undoing(hike: hike, madeVisit: true))
+        #expect(try store.visits().isEmpty)
+
+        let visit = try store.checkIn(to: "np-zion", on: date(2026, 5, 2))
+        let joined = try store.markHiked("trail-a", in: "np-zion", on: date(2026, 5, 2, hour: 15))
+        try store.undo(store.undoing(hike: joined, madeVisit: false))
+        #expect(try store.visits().count == 1)
+        #expect(visit.hikes?.isEmpty == true)
+        #expect(visit.checkIns?.contains { $0.targetKindRaw == "trail" } == false)
+    }
+
     // MARK: - Editing
 
     @Test("moving a visit moves everything logged on it and drops its weather")

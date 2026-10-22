@@ -51,6 +51,24 @@ struct TrailRuleTests {
         #expect(loop.climbMetres == 200)
     }
 
+    @Test("a trail's length says which way it was measured")
+    func lengthLabels() {
+        let us = Locale(identifier: "en_US")
+        let mapped = Trail(id: "t", placeID: "p", name: "T", lengthMetres: 6700)
+        let oneWay = UnigridsFormat.distance(metres: 6700, locale: us)
+        let both = UnigridsFormat.distance(metres: 13400, locale: us)
+        #expect(
+            UnigridsFormat.trailLength(mapped, locale: us)
+                == "\(oneWay) one way · \(both) there and back"
+        )
+        let loop = Trail(id: "l", placeID: "p", name: "L", lengthMetres: 6700, routeType: .loop)
+        #expect(UnigridsFormat.trailLength(loop, locale: us) == "\(oneWay) loop")
+        let through = Trail(
+            id: "x", placeID: "p", name: "X", lengthMetres: 6700, routeType: .pointToPoint
+        )
+        #expect(UnigridsFormat.trailLength(through, locale: us) == "\(oneWay) one way")
+    }
+
     @Test("a trail round-trips through the bundle's compact form")
     func codable() throws {
         let path = [

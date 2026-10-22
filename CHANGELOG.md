@@ -184,6 +184,9 @@ makes the change. A release moves that block under a version heading with its da
   Apple Maps search. A stop's details sheet sets its day, an optional time in the park's
   zone, and notes, and takes it off the trip with undo. "Add to trip" on sight,
   facility and trail cards.
+- **Mark as hiked** asks which day and whether it went the whole way, joins that day's
+  visit, and offers undo. A trail's page lists the hikes logged on it, each deletable.
+- A trail mapped one way reads "4.2 km one way · 8.4 km there and back".
 - An arrival waiting for an answer badges the Trips tab.
 
 ### Changed

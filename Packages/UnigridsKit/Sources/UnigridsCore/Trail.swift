@@ -294,3 +294,21 @@ extension Trail: Codable {
         try container.encodeIfPresent(source, forKey: .source)
     }
 }
+
+extension UnigridsFormat {
+    /// How far a hike of a trail goes, saying which way it was measured: "5 km loop",
+    /// "12.7 km one way" where the data says it ends elsewhere, or, for the usual trail
+    /// mapped one way, "12.7 km one way · 25.4 km there and back".
+    public static func trailLength(_ trail: Trail, locale: Locale = .current) -> String {
+        let oneWay = distance(metres: trail.lengthMetres, locale: locale)
+        switch trail.routeType {
+        case .loop:
+            return oneWay + " loop"
+        case .pointToPoint:
+            return oneWay + " one way"
+        case .outAndBack, nil:
+            let both = distance(metres: trail.walkedMetres, locale: locale)
+            return oneWay + " one way · " + both + " there and back"
+        }
+    }
+}

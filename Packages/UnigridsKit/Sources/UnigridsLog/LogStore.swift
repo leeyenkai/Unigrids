@@ -182,17 +182,6 @@ public final class LogStore {
         return stamp
     }
 
-    /// The change that takes a stamp back: the stamp, and its visit if stamping made it.
-    public func undoing(stamp: Stamp, madeVisit: Bool) -> UndoableChange {
-        UndoableChange(
-            subject: .stamped(stamp.place),
-            takeOut: RecordIDs(
-                visits: madeVisit ? stamp.visit.map { [$0.id] } ?? [] : [],
-                stamps: [stamp.id]
-            )
-        )
-    }
-
     /// Mark a trail hiked, which also records a check-in on the visit.
     @discardableResult
     public func markHiked(

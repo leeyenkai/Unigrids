@@ -59,7 +59,7 @@ struct TrailFigures: View {
         ) {
             FigureBlock(
                 value: UnigridsFormat.distance(metres: trail.walkedMetres),
-                label: trail.isLoop ? "Loop" : "There and back",
+                label: walkedLabel,
                 compact: true
             )
             if let climb = trail.climbMetres {
@@ -69,10 +69,10 @@ struct TrailFigures: View {
                     compact: true
                 )
             }
-            if !trail.isLoop {
+            if isWalkedTwice {
                 FigureBlock(
                     value: UnigridsFormat.distance(metres: trail.lengthMetres),
-                    label: "One way, as mapped",
+                    label: "One way",
                     compact: true
                 )
             }
@@ -88,6 +88,20 @@ struct TrailFigures: View {
                 label: "Walking time, est.",
                 compact: true
             )
+        }
+    }
+
+    /// A trail mapped one way is walked there and back; a loop, or a trail that ends
+    /// somewhere else, once.
+    private var isWalkedTwice: Bool {
+        trail.routeType == .outAndBack || trail.routeType == nil
+    }
+
+    private var walkedLabel: String {
+        switch trail.routeType {
+        case .loop: "Loop"
+        case .pointToPoint: "One way"
+        case .outAndBack, nil: "There and back"
         }
     }
 }
@@ -109,7 +123,7 @@ struct TrailRow: View {
                         .foregroundStyle(style.ink)
                         .lineLimit(2)
                     if hiked {
-                        Image(systemName: "checkmark.circle.fill")
+                        Image(.visited)
                             .foregroundStyle(style.accent)
                             .accessibilityLabel("Hiked")
                     }
@@ -125,10 +139,13 @@ struct TrailRow: View {
     }
 
     private var detail: String {
-        var parts = [
-            UnigridsFormat
-                .distance(metres: trail.walkedMetres) + (trail.isLoop ? " loop" : " return"),
-        ]
+        let walked = UnigridsFormat.distance(metres: trail.walkedMetres)
+        let length = switch trail.routeType {
+        case .loop: walked + " loop"
+        case .pointToPoint: walked + " one way"
+        case .outAndBack, nil: walked + " there and back"
+        }
+        var parts = [length]
         if let climb = trail.climbMetres {
             parts.append("↑ " + UnigridsFormat.elevation(climb))
         }
@@ -162,53 +179,193 @@ struct DifficultyMark: View {
     }
 }
 
-/// A trail's card in the explorer and its page in the catalogue share these actions.
+/// A trail's card in the explorer and its page in the catalogue share these actions: log
+/// a hike, add the trail to a trip, and the hikes already logged on it, each of which can
+/// be deleted.
 struct TrailActions: View {
     @Environment(\.modelContext) private var context
+    @Environment(\.referenceStore) private var store
+    @Environment(\.unigrid) private var style
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(UndoCenter.self) private var undo: UndoCenter?
     let trail: Trail
     @Query private var hikes: [Hike]
-    @State private var completion = HikeCompletion.full
-    @State private var showConfirm = false
-    @State private var saved = false
+    @State private var logging = false
+    @State private var addingToTrip = false
+    @State private var error: String?
 
-    private var hikedDates: [Date] {
-        hikes.filter { $0.trailID == trail.id.rawValue }.map(\.date).sorted(by: >)
+    init(trail: Trail) {
+        self.trail = trail
+        let id = trail.id.rawValue
+        _hikes = Query(filter: #Predicate<Hike> { $0.trailID == id }, sort: \.date, order: .reverse)
+    }
+
+    private var place: Place? {
+        store.place(trail.placeID)
+    }
+
+    private var calendar: Calendar {
+        UnigridsCalendar.gregorian(at: place)
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            if let last = hikedDates.first {
-                Label(
-                    "Hiked \(hikedDates.count == 1 ? "" : "\(hikedDates.count) times, last ")"
-                        + last.formatted(date: .abbreviated, time: .omitted),
-                    systemImage: "checkmark.circle.fill"
-                )
-                .font(UnigridStyle.rowDetail)
+        VStack(alignment: .leading, spacing: 12) {
+            let layout = typeSize.isAccessibilitySize
+                ? AnyLayout(VStackLayout(spacing: 10)) : AnyLayout(HStackLayout(spacing: 10))
+            layout {
+                Button {
+                    logging = true
+                } label: {
+                    Label("Mark as hiked", symbol: .hike)
+                }
+                .buttonStyle(BrochureButtonStyle(.primary))
+                if place != nil {
+                    Button {
+                        addingToTrip = true
+                    } label: {
+                        Label("Add to trip", symbol: .addToTrip)
+                    }
+                    .buttonStyle(BrochureButtonStyle(.secondary))
+                }
             }
-            Button {
-                showConfirm = true
-            } label: {
-                Label(saved ? "Logged" : "Mark as hiked", systemImage: "figure.hiking")
+            if !hikes.isEmpty {
+                VStack(alignment: .leading, spacing: 6) {
+                    Kicker(hikes.count == 1 ? "Hiked once" : "Hiked \(hikes.count) times")
+                    ForEach(hikes.prefix(5)) { hike in
+                        HikeLine(hike: hike, calendar: calendar) { delete(hike) }
+                    }
+                    if hikes.count > 5 {
+                        Text("And \(hikes.count - 5) more, on the visits in Trips.")
+                            .font(UnigridStyle.caption)
+                            .foregroundStyle(style.inkSecondary)
+                    }
+                }
             }
-            .buttonStyle(BrochureButtonStyle(.primary))
-            .confirmationDialog("Log this hike", isPresented: $showConfirm) {
-                Button("Hiked it all") { log(.full) }
-                Button("Part of the way") { log(.partial) }
-                Button("Cancel", role: .cancel) {}
-            } message: {
-                Text("\(trail.name), today. It joins your visit to the park.")
+            if let error {
+                ErrorLine(error)
+            }
+        }
+        .unigridsSheet(isPresented: $logging) {
+            HikeSheet(trail: trail)
+        }
+        .unigridsSheet(isPresented: $addingToTrip) {
+            if let place {
+                AddToTripSheet(place: place, target: .trail(trail.id), stopName: trail.name)
             }
         }
     }
 
-    private func log(_ completion: HikeCompletion) {
+    private func delete(_ hike: Hike) {
         do {
-            try LogStore(context: context).markHiked(
-                trail.id, in: trail.placeID, completion: completion
-            )
-            saved = true
+            let change = try LogStore(context: context).delete(hike: hike)
+            undo?.offer(change, message: "Hike on \(trail.name) deleted")
+            error = nil
         } catch {
-            saved = false
+            self.error = "That hike could not be deleted: \(error.localizedDescription)"
+        }
+    }
+}
+
+/// One logged hike: its day and how far, and a way to delete it.
+private struct HikeLine: View {
+    @Environment(\.unigrid) private var style
+    let hike: Hike
+    let calendar: Calendar
+    let onDelete: () -> Void
+
+    var body: some View {
+        HStack(spacing: 8) {
+            Image(.visited)
+                .foregroundStyle(style.accent)
+                .accessibilityHidden(true)
+            Text(hike.date, format: UnigridsFormat.day(in: calendar))
+                .foregroundStyle(style.ink)
+            Text(hike.completion.name)
+                .foregroundStyle(style.inkSecondary)
+            Spacer(minLength: 8)
+            Button(action: onDelete) {
+                Image(.delete)
+            }
+            .buttonStyle(.borderless)
+            .foregroundStyle(style.inkSecondary)
+            .accessibilityLabel("Delete this hike")
+        }
+        .font(UnigridStyle.rowDetail)
+        .accessibilityElement(children: .combine)
+    }
+}
+
+/// Log a hike: which day, and whether it went the whole way. It joins the visit to the
+/// park that day, or starts one (SPECIFICATION.md §8, §9).
+struct HikeSheet: View {
+    @Environment(\.modelContext) private var context
+    @Environment(\.dismiss) private var dismiss
+    @Environment(\.referenceStore) private var store
+    @Environment(UndoCenter.self) private var undo: UndoCenter?
+    let trail: Trail
+
+    @State private var day = Date()
+    @State private var completion = HikeCompletion.full
+    @State private var error: String?
+
+    private var place: Place? {
+        store.place(trail.placeID)
+    }
+
+    private var calendar: Calendar {
+        UnigridsCalendar.gregorian(at: place)
+    }
+
+    var body: some View {
+        SheetPage(
+            "Mark as hiked",
+            kicker: trail.name,
+            actions: .confirm("Log hike", cancel: { dismiss() }, action: save),
+            height: 440
+        ) {
+            Form {
+                Section {
+                    DatePicker("Day", selection: $day, in: ...Date(), displayedComponents: .date)
+                        .environment(\.timeZone, calendar.timeZone)
+                    Picker("How far", selection: $completion) {
+                        ForEach(HikeCompletion.allCases, id: \.self) { Text($0.name).tag($0) }
+                    }
+                    .pickerStyle(.segmented)
+                } footer: {
+                    FormNote(
+                        "It joins that day's visit to \(place?.name ?? "the park"), or starts one."
+                    )
+                }
+                if let error {
+                    Section { ErrorLine(error) }
+                }
+            }
+            .formStyle(.grouped)
+        }
+    }
+
+    private func save() {
+        // Today is logged at this moment; another day at noon there, so it reads as that
+        // day wherever it is read.
+        let today = UnigridsCalendar.isSameDay(day, Date(), calendar: calendar)
+        let date = today ? Date() : UnigridsCalendar.noon(
+            onDayOf: day,
+            shownIn: calendar,
+            in: calendar
+        )
+        do {
+            let log = LogStore(context: context)
+            let madeVisit = try log.visit(to: trail.placeID, on: date, calendar: calendar) == nil
+            let hike = try log.markHiked(
+                trail.id, in: trail.placeID, on: date, completion: completion, calendar: calendar
+            )
+            undo?.offer(
+                log.undoing(hike: hike, madeVisit: madeVisit),
+                message: "Hike on \(trail.name) logged"
+            )
+            dismiss()
+        } catch {
+            self.error = "This hike could not be saved: \(error.localizedDescription)"
         }
     }
 }

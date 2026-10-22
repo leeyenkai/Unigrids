@@ -21,6 +21,7 @@ public struct UndoableChange: Sendable {
         case reminder(String)
         case hike(UnigridsID)
         case stamped(UnigridsID)
+        case hiked(UnigridsID)
         case imported(visits: Int, trips: Int, stamps: Int)
     }
 
@@ -82,6 +83,8 @@ public struct UndoableChange: Sendable {
             return "Hike on \(trailName(id) ?? "the trail") deleted"
         case let .stamped(id):
             return "Stamped \(place(id))"
+        case let .hiked(id):
+            return "Hike on \(trailName(id) ?? "the trail") logged"
         case let .imported(visits, trips, stamps):
             var parts = ["\(visits) visit\(visits == 1 ? "" : "s")"]
             if trips > 0 {
@@ -292,5 +295,37 @@ extension LogStore {
         let stamps = (visit.stamps ?? []).filter { !skip.contains($0.id) }
         return checkIns.isEmpty && hikes.isEmpty && stamps.isEmpty
             && visit.rating == nil && visit.notes.isEmpty
+    }
+}
+
+// MARK: - Taking back what was made
+
+extension LogStore {
+    /// The change that takes a stamp back: the stamp, and its visit if stamping made it.
+    public func undoing(stamp: Stamp, madeVisit: Bool) -> UndoableChange {
+        UndoableChange(
+            subject: .stamped(stamp.place),
+            takeOut: RecordIDs(
+                visits: madeVisit ? stamp.visit.map { [$0.id] } ?? [] : [],
+                stamps: [stamp.id]
+            )
+        )
+    }
+
+    /// The change that takes a hike back: the hike, the trail check-in marking it made,
+    /// and its visit if marking it made that too.
+    public func undoing(hike: Hike, madeVisit: Bool) -> UndoableChange {
+        let checkIns = (hike.visit?.checkIns ?? []).filter {
+            $0.targetKindRaw == "trail" && $0.targetID == hike.trailID
+                && abs($0.date.timeIntervalSince(hike.date)) < 1
+        }
+        return UndoableChange(
+            subject: .hiked(UnigridsID(hike.trailID)),
+            takeOut: RecordIDs(
+                visits: madeVisit ? hike.visit.map { [$0.id] } ?? [] : [],
+                hikes: [hike.id],
+                checkIns: checkIns.map(\.id)
+            )
+        )
     }
 }
