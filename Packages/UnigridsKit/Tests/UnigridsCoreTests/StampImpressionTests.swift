@@ -58,7 +58,7 @@ struct StampImpressionTests {
             seed: 7,
             calendar: calendar
         )
-        #expect(face.dateLine(locale: Locale(identifier: "en_US_POSIX")) == "18 OCT 2026")
+        #expect(face.dateLine() == "18 OCT 2026")
         #expect(face.hasAmerica250Seal)
     }
 }

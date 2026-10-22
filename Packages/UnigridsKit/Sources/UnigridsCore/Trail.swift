@@ -117,8 +117,16 @@ public struct Trail: Identifiable, Hashable, Sendable {
     public let uses: String?
     /// The line, in one or more parts.
     public let paths: [[Coordinate]]
-    /// Elevation along the longest part.
+    /// Elevation along the whole trail, its parts laid end to end in walking order.
     public let profile: [TrailProfilePoint]
+    /// Where the line came from when it is not the park's own: `"osm"` for trails taken
+    /// from OpenStreetMap, which the trail's page credits under the ODbL.
+    public let source: String?
+
+    /// Whether the line is OpenStreetMap's rather than the NPS's.
+    public var isFromOpenStreetMap: Bool {
+        source == "osm"
+    }
 
     /// Whether the line closes on itself, and so is walked once round.
     public var isLoop: Bool {
@@ -192,7 +200,8 @@ public struct Trail: Identifiable, Hashable, Sendable {
         bikesAllowed: Bool? = nil,
         uses: String? = nil,
         paths: [[Coordinate]] = [],
-        profile: [TrailProfilePoint] = []
+        profile: [TrailProfilePoint] = [],
+        source: String? = nil
     ) {
         self.id = id
         self.placeID = placeID
@@ -213,6 +222,7 @@ public struct Trail: Identifiable, Hashable, Sendable {
         self.uses = uses
         self.paths = paths
         self.profile = profile
+        self.source = source
     }
 }
 
@@ -220,7 +230,7 @@ extension Trail: Codable {
     private enum CodingKeys: String, CodingKey {
         case id, placeID, name, lengthMetres, gainMetres, lossMetres, lowPointMetres
         case highPointMetres, difficulty, routeType, trailheadID, features, sightIDs
-        case seasonalNotes, dogsAllowed, bikesAllowed, uses, paths, profile
+        case seasonalNotes, dogsAllowed, bikesAllowed, uses, paths, profile, source
     }
 
     /// Paths are encoded polylines; the profile is `[[distance, elevation], …]`. Unknown
@@ -253,7 +263,8 @@ extension Trail: Codable {
                 pair.count == 2
                     ? TrailProfilePoint(distanceMetres: pair[0], elevationMetres: pair[1])
                     : nil
-            }
+            },
+            source: container.decodeIfPresent(String.self, forKey: .source)
         )
     }
 
@@ -280,5 +291,6 @@ extension Trail: Codable {
         try container.encode(
             profile.map { [$0.distanceMetres, $0.elevationMetres] }, forKey: .profile
         )
+        try container.encodeIfPresent(source, forKey: .source)
     }
 }

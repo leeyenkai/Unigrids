@@ -115,7 +115,7 @@ public struct StatsReport: Sendable {
         trails: [Trail] = [],
         themes: [Theme] = [],
         origin: Coordinate? = nil,
-        calendar: Calendar = .current
+        calendar: Calendar = UnigridsCalendar.gregorian()
     ) {
         let visitedPlaceIDs = Set(visits.map(\.placeID))
         let placesByID = Dictionary(

@@ -43,7 +43,7 @@ public enum TripCalendar {
         events: [Event],
         identifier: String,
         stamp: Date,
-        calendar: Calendar = .current
+        calendar: Calendar = UnigridsCalendar.gregorian()
     ) -> String {
         var lines = [
             "BEGIN:VCALENDAR",

@@ -271,7 +271,7 @@ public final class Stamp {
     }
 
     /// Whether this impression carries the America 250 overprint.
-    public func hasAmerica250Seal(calendar: Calendar = .current) -> Bool {
+    public func hasAmerica250Seal(calendar: Calendar = UnigridsCalendar.gregorian()) -> Bool {
         America250.applies(to: date, calendar: calendar)
     }
 

@@ -16,7 +16,7 @@ public final class LogStore {
     let context: ModelContext
     private let calendar: Calendar
 
-    public init(context: ModelContext, calendar: Calendar = .current) {
+    public init(context: ModelContext, calendar: Calendar = UnigridsCalendar.gregorian()) {
         self.context = context
         self.calendar = calendar
     }

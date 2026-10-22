@@ -14,7 +14,7 @@ public enum America250 {
     ///
     /// The comparison uses the calendar the stamp was made in, so a date near midnight on
     /// New Year's Eve resolves the way the user's own calendar shows it.
-    public static func applies(to date: Date, calendar: Calendar = .current) -> Bool {
+    public static func applies(to date: Date, calendar: Calendar = UnigridsCalendar.gregorian()) -> Bool {
         calendar.component(.year, from: date) == year
     }
 

@@ -147,7 +147,7 @@ public struct OpenMeteoDaily: Decodable, Sendable {
 
 extension DailyWeather {
     /// `yyyy-MM-dd` for a date in a calendar, the form Open-Meteo keys its days by.
-    public static func key(for date: Date, calendar: Calendar = .current) -> String {
+    public static func key(for date: Date, calendar: Calendar = UnigridsCalendar.gregorian()) -> String {
         let parts = calendar.dateComponents([.year, .month, .day], from: date)
         return String(
             format: "%04d-%02d-%02d",

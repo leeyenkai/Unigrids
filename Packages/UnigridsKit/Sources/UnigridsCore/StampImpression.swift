@@ -49,6 +49,8 @@ public struct StampFace: Hashable, Sendable {
     public let hasAmerica250Seal: Bool
     /// Set when the stamp was made on site, confirmed by location.
     public let isVerifiedOnSite: Bool
+    /// The calendar the stamp's day is reckoned in: the place's own zone.
+    public let calendar: Calendar
 
     public init(
         siteName: String,
@@ -57,7 +59,7 @@ public struct StampFace: Hashable, Sendable {
         region: PassportRegion,
         seed: UInt64,
         isVerifiedOnSite: Bool = false,
-        calendar: Calendar = .current
+        calendar: Calendar = UnigridsCalendar.gregorian()
     ) {
         self.siteName = siteName
         self.date = date
@@ -66,12 +68,12 @@ public struct StampFace: Hashable, Sendable {
         impression = StampImpression(seed: seed)
         hasAmerica250Seal = America250.applies(to: date, calendar: calendar)
         self.isVerifiedOnSite = isVerifiedOnSite
+        self.calendar = calendar
     }
 
-    /// The date as a cancellation prints it: `18 OCT 2026`.
-    public func dateLine(locale: Locale = .current) -> String {
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.locale = locale
+    /// The date as a cancellation prints it: `18 OCT 2026`, in the calendar the seal was
+    /// decided in, so the face and the overprint can never disagree about the year.
+    public func dateLine() -> String {
         let parts = calendar.dateComponents([.day, .month, .year], from: date)
         guard let day = parts.day, let month = parts.month, let year = parts.year else {
             return ""

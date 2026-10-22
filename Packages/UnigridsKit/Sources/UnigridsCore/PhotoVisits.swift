@@ -98,7 +98,7 @@ public enum PhotoVisits {
         photos: [GeoPhoto],
         locator: PlaceLocator,
         alreadyLogged: Set<String> = [],
-        calendar: Calendar = .current
+        calendar: Calendar = UnigridsCalendar.gregorian()
     ) -> [ProposedVisit] {
         struct Group {
             let place: UnigridsID
@@ -131,7 +131,7 @@ public enum PhotoVisits {
     public static func trips(
         from visits: [ProposedVisit],
         gapDays: Int = 2,
-        calendar: Calendar = .current
+        calendar: Calendar = UnigridsCalendar.gregorian()
     ) -> [ProposedTrip] {
         var trips: [[ProposedVisit]] = []
         for visit in visits.sorted(by: { ($0.day, $0.first) < ($1.day, $1.first) }) {

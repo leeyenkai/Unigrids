@@ -138,6 +138,9 @@ public struct PlaceFacts: Hashable, Sendable, Codable {
     public var entranceFee: String?
     public var bestSeasons: [Season]
     public var suggestedTime: String?
+    /// How the elevation range was found, where it was measured rather than published:
+    /// the guide shows it beneath the figures.
+    public var elevationNote: String?
 
     public init(
         establishedYear: Int? = nil,
@@ -148,7 +151,8 @@ public struct PlaceFacts: Hashable, Sendable, Codable {
         annualVisitsYear: Int? = nil,
         entranceFee: String? = nil,
         bestSeasons: [Season] = [],
-        suggestedTime: String? = nil
+        suggestedTime: String? = nil,
+        elevationNote: String? = nil
     ) {
         self.establishedYear = establishedYear
         self.areaAcres = areaAcres
@@ -159,6 +163,7 @@ public struct PlaceFacts: Hashable, Sendable, Codable {
         self.entranceFee = entranceFee
         self.bestSeasons = bestSeasons
         self.suggestedTime = suggestedTime
+        self.elevationNote = elevationNote
     }
 
     public init(from decoder: any Decoder) throws {
@@ -176,6 +181,7 @@ public struct PlaceFacts: Hashable, Sendable, Codable {
         entranceFee = try container.decodeIfPresent(String.self, forKey: .entranceFee)
         bestSeasons = try container.decodeIfPresent([Season].self, forKey: .bestSeasons) ?? []
         suggestedTime = try container.decodeIfPresent(String.self, forKey: .suggestedTime)
+        elevationNote = try container.decodeIfPresent(String.self, forKey: .elevationNote)
     }
 
     public var isEmpty: Bool {
@@ -227,6 +233,18 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
     /// What a visitor can do there, as the managing agency lists it. Empty when no
     /// source says, which is not the same as nothing to do.
     public let activities: [PlaceActivity]
+    /// The IANA time zone at the place, for which calendar day a visit fell on there.
+    public let timeZoneID: String?
+    /// Where `summary` came from, when it is someone else's text to credit and link:
+    /// a Wikipedia article's lead, under `summaryLicence`.
+    public let summaryURL: URL?
+    public let summaryLicence: String?
+    /// Monthly recreation visits, for an NPS site: how busy each month is.
+    public let visitation: MonthlyVisitation?
+    /// Fees, hours, directions and contact for an NPS site without a full guide.
+    public let visitorInfo: PlaceVisitorInfo?
+    /// The body that runs a state park, as PAD-US names it: "Colorado State Parks".
+    public let managedBy: String?
 
     public var tier: PlaceTier {
         kind.tier
@@ -265,7 +283,13 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         summarySource: String? = nil,
         image: GuideImage? = nil,
         infoURL: URL? = nil,
-        activities: [PlaceActivity] = []
+        activities: [PlaceActivity] = [],
+        timeZoneID: String? = nil,
+        summaryURL: URL? = nil,
+        summaryLicence: String? = nil,
+        visitation: MonthlyVisitation? = nil,
+        visitorInfo: PlaceVisitorInfo? = nil,
+        managedBy: String? = nil
     ) {
         self.id = id
         self.name = name
@@ -286,6 +310,12 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         self.image = image
         self.infoURL = infoURL
         self.activities = activities
+        self.timeZoneID = timeZoneID
+        self.summaryURL = summaryURL
+        self.summaryLicence = summaryLicence
+        self.visitation = visitation
+        self.visitorInfo = visitorInfo
+        self.managedBy = managedBy
     }
 
     public init(from decoder: any Decoder) throws {
@@ -315,6 +345,13 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         // Unknown activity names from a newer dataset are dropped, not fatal.
         activities = (try? container.decodeIfPresent([String].self, forKey: .activities))?
             .flatMap { $0.compactMap(PlaceActivity.init(rawValue:)) } ?? []
+        timeZoneID = try container.decodeIfPresent(String.self, forKey: .timeZoneID)
+        summaryURL = try container.decodeIfPresent(URL.self, forKey: .summaryURL)
+        summaryLicence = try container.decodeIfPresent(String.self, forKey: .summaryLicence)
+        // A malformed optional block costs that block, never the place.
+        visitation = try? container.decodeIfPresent(MonthlyVisitation.self, forKey: .visitation)
+        visitorInfo = try? container.decodeIfPresent(PlaceVisitorInfo.self, forKey: .visitorInfo)
+        managedBy = try container.decodeIfPresent(String.self, forKey: .managedBy)
     }
 
     private static func defaultDesignation(for kind: PlaceKind) -> String {
@@ -330,5 +367,91 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         case .naturalLandmark: "National Natural Landmark"
         case .scenicByway: "Scenic Byway"
         }
+    }
+}
+
+/// How busy an NPS site is in each calendar month: the mean of the NPS's own monthly
+/// recreation visit counts over `years` (SPECIFICATION.md §10, weather versus crowds).
+public struct MonthlyVisitation: Hashable, Sendable, Codable {
+    /// Twelve figures, January first.
+    public let monthly: [Int]
+    /// The first and last year averaged.
+    public let years: [Int]
+
+    public init(monthly: [Int], years: [Int]) {
+        self.monthly = monthly
+        self.years = years
+    }
+
+    /// "2022–2025", for the credit line.
+    public var yearsDescription: String {
+        guard let first = years.first, let last = years.last else { return "" }
+        return first == last ? "\(first)" : "\(first)–\(last)"
+    }
+
+    /// The busiest and quietest months, 1-based, or nil without twelve figures.
+    public var busiestMonth: Int? {
+        guard monthly.count == 12 else { return nil }
+        return monthly.indices.max { monthly[$0] < monthly[$1] }.map { $0 + 1 }
+    }
+
+    public var quietestMonth: Int? {
+        guard monthly.count == 12 else { return nil }
+        return monthly.indices.min { monthly[$0] < monthly[$1] }.map { $0 + 1 }
+    }
+
+    /// A month's share of the busiest month, 0 to 1, for a bar.
+    public func share(ofMonth month: Int) -> Double {
+        guard monthly.indices.contains(month - 1), let peak = monthly.max(), peak > 0 else {
+            return 0
+        }
+        return Double(monthly[month - 1]) / Double(peak)
+    }
+}
+
+/// What a visitor needs before going to an NPS site without a full guide — the same
+/// fields a national park's guide carries in Plan your visit and Getting there, as the
+/// NPS publishes them.
+public struct PlaceVisitorInfo: Hashable, Sendable, Codable {
+    public let fees: [EntranceFee]
+    public let operatingHours: String?
+    public let directions: String?
+    public let weather: String?
+    public let reservations: String?
+    public let phone: String?
+    public let email: String?
+
+    public init(
+        fees: [EntranceFee] = [],
+        operatingHours: String? = nil,
+        directions: String? = nil,
+        weather: String? = nil,
+        reservations: String? = nil,
+        phone: String? = nil,
+        email: String? = nil
+    ) {
+        self.fees = fees
+        self.operatingHours = operatingHours
+        self.directions = directions
+        self.weather = weather
+        self.reservations = reservations
+        self.phone = phone
+        self.email = email
+    }
+
+    public init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        fees = (try? container.decodeIfPresent([EntranceFee].self, forKey: .fees)) ?? []
+        operatingHours = try container.decodeIfPresent(String.self, forKey: .operatingHours)
+        directions = try container.decodeIfPresent(String.self, forKey: .directions)
+        weather = try container.decodeIfPresent(String.self, forKey: .weather)
+        reservations = try container.decodeIfPresent(String.self, forKey: .reservations)
+        phone = try container.decodeIfPresent(String.self, forKey: .phone)
+        email = try container.decodeIfPresent(String.self, forKey: .email)
+    }
+
+    public var isEmpty: Bool {
+        fees.isEmpty && operatingHours == nil && directions == nil && weather == nil
+            && reservations == nil && phone == nil && email == nil
     }
 }

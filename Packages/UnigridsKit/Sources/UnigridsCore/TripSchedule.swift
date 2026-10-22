@@ -45,7 +45,7 @@ public enum TripSchedule {
     public static func days(
         stops: [(id: UnigridsID, date: Date?)],
         legs: [DriveLeg],
-        calendar: Calendar = .current
+        calendar: Calendar = UnigridsCalendar.gregorian()
     ) -> [TripDay] {
         var order: [Date] = []
         var stopsByDay: [Date: [UnigridsID]] = [:]
@@ -81,7 +81,7 @@ public enum TripSchedule {
     /// Whether a date falls in the months when mountain roads and high facilities close —
     /// November to April in the northern hemisphere — so a guide's seasonal-closure notes
     /// are worth raising on a stop planned then.
-    public static func isClosureSeason(_ date: Date, calendar: Calendar = .current) -> Bool {
+    public static func isClosureSeason(_ date: Date, calendar: Calendar = UnigridsCalendar.gregorian()) -> Bool {
         let month = calendar.component(.month, from: date)
         return month >= 11 || month <= 4
     }

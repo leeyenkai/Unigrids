@@ -99,7 +99,7 @@ extension StatsReport {
     /// Visits in each month of the year, January first, for "visits by season and month".
     public static func visitsByMonth(
         _ visits: [VisitSummary],
-        calendar: Calendar = .current
+        calendar: Calendar = UnigridsCalendar.gregorian()
     ) -> [Int] {
         var counts = Array(repeating: 0, count: 12)
         for visit in visits {
