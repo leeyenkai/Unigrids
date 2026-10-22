@@ -765,7 +765,7 @@ def _assign_time_zones(places: list[dict[str, Any]]) -> None:
             continue
         zone = finder.timezone_at(lng=centre["longitude"], lat=centre["latitude"])
         if zone:
-            place["timeZone"] = zone
+            place["timeZoneID"] = zone
 
 
 # MARK: - Raw data
