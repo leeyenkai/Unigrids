@@ -30,7 +30,7 @@ from typing import Any
 
 import httpx
 
-from . import ids, measure, outline, rawstore, reference_content, trails
+from . import config, ids, measure, outline, rawstore, reference_content, trails
 from .geo import Coordinate, distance_m, line_length_m
 from .rawstore import FetchRecord, SourceTerms
 from .sources import arcgis, http
@@ -225,7 +225,7 @@ def sample_elevations(raw_trails: Path, unit_outlines: dict[str, list[outline.Po
         code = row["npsParkCode"].upper()
         cache_path = directory / f"{code}.json"
         cache: dict[str, float | None] = (
-            json.loads(cache_path.read_text()) if cache_path.exists() else {}
+            json.loads(cache_path.read_text()) if cache_path.exists() else _earlier_cache(code)
         )
         wanted: list[tuple[float, float]] = []
         for chain in _park_chains(raw_trails, row, unit_outlines):
@@ -248,6 +248,20 @@ def sample_elevations(raw_trails: Path, unit_outlines: dict[str, list[outline.Po
         record.add_file(cache_path, root=directory)
     record.write(directory)
     return directory
+
+
+def _earlier_cache(code: str) -> dict[str, float | None]:
+    """The newest earlier snapshot's samples for a park, so a refresh asks 3DEP only for
+    stations on trails that moved. Elevation at a point does not change between fetches."""
+    for version in rawstore.versions("trail-elevation"):
+        path = config.RAW_DIR / version / "trail-elevation" / f"{code}.json"
+        if path.exists():
+            return {
+                key: value
+                for key, value in json.loads(path.read_text()).items()
+                if value is not None
+            }
+    return {}
 
 
 def _sample_batch(points: list[tuple[float, float]]) -> dict[str, float | None]:

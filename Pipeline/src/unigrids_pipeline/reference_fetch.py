@@ -395,6 +395,11 @@ def _fetch_photos(version: str, *, refresh: bool) -> None:
                 path = directory / photo_filename(image["url"])
                 if path.exists() and not refresh:
                     continue
+                # The same photograph from an earlier snapshot is linked, not fetched
+                # again: the URL names the image, and NPS images do not change in place.
+                if not refresh and (earlier := _earlier_copy("photos", path.name, version)):
+                    path.hardlink_to(earlier)
+                    continue
                 try:
                     response = http.get(session, image["url"], expect="image/")
                 except http.FetchError as error:
@@ -406,6 +411,14 @@ def _fetch_photos(version: str, *, refresh: bool) -> None:
     if fetched:
         record.write(directory)
     print(f"    photos: {fetched} downloaded")
+
+
+def _earlier_copy(source: str, name: str, version: str) -> Path | None:
+    """The newest copy of a raw file in a snapshot older than ``version``."""
+    for older in rawstore.versions(source):
+        if older < version and (candidate := config.RAW_DIR / older / source / name).exists():
+            return candidate
+    return None
 
 
 def photo_filename(url: str) -> str:
