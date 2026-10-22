@@ -84,32 +84,13 @@ struct PlaceOverviewPanel: View {
 
 /// The panel's band: the place's name reversed out, with its designation and states.
 struct OverviewBand: View {
-    @Environment(\.unigrid) private var style
     let place: Place
     let onClose: () -> Void
 
     var body: some View {
-        HStack(alignment: .top, spacing: 12) {
-            VStack(alignment: .leading, spacing: 5) {
-                Text(place.name)
-                    .font(UnigridStyle.bandTitle(26))
-                    .foregroundStyle(style.bandInk)
-                    .fixedSize(horizontal: false, vertical: true)
-                Kicker("\(place.designation) · \(place.statesDescription)", onBand: true)
-            }
-            Spacer(minLength: 0)
-            Button(action: onClose) {
-                Image(systemName: "xmark")
-                    .font(.footnote.weight(.bold))
-                    .foregroundStyle(style.bandInk)
-                    .frame(width: 30, height: 30)
-                    .overlay { Rectangle().strokeBorder(style.bandInkSecondary, lineWidth: 1) }
-            }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Close")
+        BandHeader(place.name, kicker: "\(place.designation) · \(place.statesDescription)") {
+            BandCloseButton(action: onClose)
         }
-        .padding(16)
-        .background(style.band)
         .accessibilityElement(children: .contain)
     }
 }
@@ -134,7 +115,7 @@ struct VisitStatusLine: View {
 
     private var text: String {
         guard let latest = visits.first else { return "Not visited yet" }
-        let when = latest.date.formatted(.dateTime.month(.wide).year())
+        let when = latest.date.formatted(UnigridsFormat.month())
         switch visits.count {
         case 1: return "Visited in \(when)"
         case 2: return "Visited twice, last in \(when)"
@@ -244,10 +225,7 @@ struct OverviewActions: View {
         VStack(spacing: 8) {
             if !leafletMode {
                 Button(action: onOpen) {
-                    Label(
-                        hasGuide ? "Open the guide" : "Open the leaflet",
-                        systemImage: hasGuide ? "book.pages" : "doc.text"
-                    )
+                    Label(hasGuide ? "Open guide" : "Open page", symbol: .openGuide)
                 }
                 .buttonStyle(BrochureButtonStyle(.primary))
             }
@@ -259,9 +237,9 @@ struct OverviewActions: View {
                 .buttonStyle(BrochureButtonStyle(leafletMode ? .primary : .secondary))
             }
 
-            HStack(spacing: 8) {
+            TwoUpRow {
                 Button(action: onCheckIn) {
-                    Label("Check in", systemImage: "mappin.and.ellipse")
+                    Label("Check in", symbol: .checkIn)
                 }
                 Button(action: onStamp) {
                     Label { Text("Stamp") } icon: { StampIcon() }
@@ -269,31 +247,28 @@ struct OverviewActions: View {
             }
             .buttonStyle(BrochureButtonStyle(.secondary))
 
-            HStack(spacing: 8) {
+            TwoUpRow {
                 Button(action: onAddToTrip) {
-                    Label("Add to trip", systemImage: "calendar.badge.plus")
+                    Label("Add to trip", symbol: .addToTrip)
                 }
                 Button {
                     openInMaps(place)
                 } label: {
-                    Label("Directions", systemImage: "arrow.triangle.turn.up.right.diamond")
+                    Label("Directions", symbol: .directions)
                 }
             }
             .buttonStyle(BrochureButtonStyle(.secondary))
 
             if let url = place.officialURL ?? place.infoURL {
                 Link(destination: url) {
-                    Label(
-                        place.officialURL != nil ? "Official website" : "Read more",
-                        systemImage: "arrow.up.right.square"
-                    )
+                    Label("Website", symbol: .website)
                 }
                 .buttonStyle(BrochureButtonStyle(.secondary))
             } else if let url = lookUpURL {
                 // No official page Unigrids can vouch for: offer a search, which sends the
                 // place's name to Wikipedia only when the reader asks.
                 Link(destination: url) {
-                    Label("Look it up on Wikipedia", systemImage: "magnifyingglass")
+                    Label("Look it up on Wikipedia", symbol: .search)
                 }
                 .buttonStyle(BrochureButtonStyle(.secondary))
             }

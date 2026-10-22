@@ -280,6 +280,13 @@ makes the change. A release moves that block under a version heading with its da
   import in one step.
 - The map key, photo viewer, Look Around, the 3D explorer's list and the reminder editor
   share the sheet shell the rest of the app uses.
+- One vocabulary everywhere: every icon comes from the app's symbol table (Directions has
+  its own sign; the car means driving), and each action has one name — Open guide and Open
+  page, Add to trip, Website, Check in, Stamp, Delete.
+- Buttons wrap to a second line instead of shrinking their type, and paired buttons stack
+  at the largest text sizes. Remaining fixed-size text follows Dynamic Type.
+- The place card, explorer cards, passport pages, America 250 and Photo credits open with
+  the same band as every other screen.
 
 ### Fixed
 

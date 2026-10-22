@@ -418,7 +418,7 @@ struct TripDaysSection: View {
                                         + UnigridsFormat.distance(metres: day.drivingMetres),
                                     systemImage: day.isLong
                                         ? UnigridsSymbol.warning.systemName
-                                        : UnigridsSymbol.directions.systemName
+                                        : UnigridsSymbol.drive.systemName
                                 )
                                 .font(UnigridStyle.rowDetail)
                                 .foregroundStyle(style.ink)

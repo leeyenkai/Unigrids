@@ -136,7 +136,7 @@ public struct UnigridNumberedItem: View {
                         .font(UnigridStyle.itemTitle)
                         .foregroundStyle(style.ink)
                     if isSeen {
-                        Image(systemName: "checkmark")
+                        Image(.seen)
                             .font(.caption2.bold())
                             .foregroundStyle(style.accent)
                             .accessibilityHidden(true)
@@ -192,38 +192,5 @@ public struct UnigridChronologyRow: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .accessibilityElement(children: .combine)
         .accessibilityLabel("\(entry.year): \(entry.text)")
-    }
-}
-
-/// A labelled placeholder for content that a later milestone brings.
-///
-/// AGENTS.md §10: a stub is fine when it is labelled, and an empty panel that pretends to
-/// work is not. This is how the guide shows where the brochure map will go without
-/// implying it is missing by accident.
-public struct UnigridPendingPanel: View {
-    @Environment(\.unigrid) private var style
-
-    private let title: String
-    private let explanation: String
-
-    public init(title: String, explanation: String) {
-        self.title = title
-        self.explanation = explanation
-    }
-
-    public var body: some View {
-        UnigridPanel(title: title) {
-            VStack(alignment: .leading, spacing: 10) {
-                Image(systemName: "map")
-                    .font(.title2)
-                    .foregroundStyle(style.inkSecondary)
-                Text(explanation)
-                    .font(UnigridStyle.caption)
-                    .foregroundStyle(style.inkSecondary)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.vertical, 20)
-        }
     }
 }

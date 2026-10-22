@@ -3,6 +3,7 @@
 #endif
 import SwiftUI
 import UnigridsCore
+import UnigridsDesign
 
 /// Picks which park's icon the app wears.
 ///
@@ -11,6 +12,8 @@ import UnigridsCore
 /// the row says so instead — a picker there would be a control that does nothing, and
 /// the first version shipped exactly that.
 struct AppIconPicker: View {
+    @Environment(\.unigrid) private var style
+
     #if canImport(UIKit)
         @AppStorage(AppearanceDefaults.appIcon)
         private var choice = AppIconChoice.standard
@@ -36,16 +39,16 @@ struct AppIconPicker: View {
 
             if let failure {
                 Text(failure)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .font(UnigridStyle.caption)
+                    .foregroundStyle(style.inkSecondary)
             }
         #else
             Text(
                 "The park icons are for iPhone and iPad. On the Mac, Unigrids keeps its "
                     + "standard icon."
             )
-            .font(.callout)
-            .foregroundStyle(.secondary)
+            .font(UnigridStyle.rowDetail)
+            .foregroundStyle(style.inkSecondary)
             .fixedSize(horizontal: false, vertical: true)
         #endif
     }

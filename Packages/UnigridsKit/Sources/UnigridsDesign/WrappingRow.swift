@@ -73,3 +73,19 @@ public struct WrappingRow: Layout {
         return rows
     }
 }
+
+/// Two actions side by side, stacked when the reader's type size would squeeze them.
+public struct TwoUpRow<Content: View>: View {
+    @Environment(\.dynamicTypeSize) private var typeSize
+    private let content: Content
+
+    public init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+
+    public var body: some View {
+        let layout = typeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(spacing: 8)) : AnyLayout(HStackLayout(spacing: 8))
+        layout { content }
+    }
+}

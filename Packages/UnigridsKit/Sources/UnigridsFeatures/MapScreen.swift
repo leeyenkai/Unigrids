@@ -116,9 +116,12 @@ public struct MapScreen: View {
     }
 
     public var body: some View {
+        // Filtered once per redraw: the map and the filter line both need it, and it walks
+        // every place.
+        let places = atlasPlaces
         NavigationStack(path: $path) {
             AtlasMapView(
-                places: atlasPlaces,
+                places: places,
                 boundaries: store.boundaries,
                 overviewBoundaries: store.overviewBoundaries,
                 routes: store.routes,
@@ -152,7 +155,7 @@ public struct MapScreen: View {
                     }
                     MapStatusChips(
                         filter: filter,
-                        shown: filter.isNarrowed ? atlasPlaces.count : store.places.count,
+                        shown: places.count,
                         total: store.places.count,
                         layersWanted: !layers.isEmpty,
                         onClear: { filterBinding.wrappedValue = .everything },

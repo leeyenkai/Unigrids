@@ -145,7 +145,7 @@ struct OnboardingPanel<Art: View>: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 Text("\(number)")
-                    .font(.custom("HelveticaNeue-Bold", size: 15))
+                    .font(.custom("HelveticaNeue-Bold", size: 15, relativeTo: .subheadline))
                     .foregroundStyle(style.bandInk)
                     .frame(width: 30, height: 30)
                     .background(style.band)
@@ -213,7 +213,7 @@ struct PlannerArt: View {
                             .leading,
                             10
                         )
-                        Label(index == 1 ? "1 h 50 min" : "2 h 20 min", systemImage: "car")
+                        Label(index == 1 ? "1 h 50 min" : "2 h 20 min", symbol: .drive)
                             .font(UnigridStyle.rowDetail)
                             .foregroundStyle(style.inkSecondary)
                     }

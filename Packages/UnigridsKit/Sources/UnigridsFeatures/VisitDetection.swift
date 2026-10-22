@@ -400,12 +400,12 @@ struct DetectedVisitsSection: View {
                             .foregroundStyle(style.inkSecondary)
                         }
                         Spacer(minLength: 8)
-                        Button("Log") { onLog(suggestion) }
+                        Button("Check in") { onLog(suggestion) }
                             .buttonStyle(BrochureButtonStyle(.primary, fullWidth: false))
                         Button {
                             detected?.dismiss(suggestion)
                         } label: {
-                            Image(systemName: "xmark")
+                            Image(.dismiss)
                         }
                         .buttonStyle(.plain)
                         .accessibilityLabel("Not now")

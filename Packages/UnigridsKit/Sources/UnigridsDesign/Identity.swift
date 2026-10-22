@@ -102,6 +102,29 @@ public struct BandHeader<Trailing: View>: View {
     }
 }
 
+/// Close, as a square ruled in the band's ink: the way out of a card that sits on a map.
+public struct BandCloseButton: View {
+    @Environment(\.unigrid) private var style
+    private let action: () -> Void
+
+    public init(action: @escaping () -> Void) {
+        self.action = action
+    }
+
+    public var body: some View {
+        Button(action: action) {
+            Image(.dismiss)
+                .font(.footnote.weight(.bold))
+                .foregroundStyle(style.bandInk)
+                .frame(width: 30, height: 30)
+                .overlay { Rectangle().strokeBorder(style.bandInkSecondary, lineWidth: 1) }
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Close")
+    }
+}
+
 extension BandHeader where Trailing == EmptyView {
     public init(_ title: String, kicker: String? = nil, compact: Bool = false) {
         self.init(title, kicker: kicker, compact: compact) { EmptyView() }
@@ -251,8 +274,10 @@ public struct BrochureButtonStyle: ButtonStyle {
         configuration.label
             .font(UnigridStyle.action)
             .labelStyle(BrochureLabelStyle())
-            .lineLimit(1)
-            .minimumScaleFactor(0.8)
+            // Two lines rather than smaller type: a label that shrinks to fit is a label
+            // the reader who chose large type can no longer read.
+            .lineLimit(2)
+            .multilineTextAlignment(.center)
             .padding(.horizontal, 14)
             .padding(.vertical, 11)
             .frame(maxWidth: fullWidth ? .infinity : nil)

@@ -84,7 +84,7 @@ struct PlaceLeafletScreen: View {
             #if os(macOS)
                 ToolbarItem {
                     Button { openWindow(value: place.id) } label: {
-                        Label("Open in New Window", systemImage: "macwindow.badge.plus")
+                        Label("Open in New Window", symbol: .newWindow)
                     }
                 }
             #endif

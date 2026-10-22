@@ -201,6 +201,12 @@ struct PhotoCreditsScreen: View {
     var body: some View {
         List {
             Section {
+                BandHeader("Photo credits", kicker: "\(entries.count) places")
+                    .listRowInsets(EdgeInsets())
+                    .listRowSeparator(.hidden)
+                    .listRowBackground(Color.clear)
+            }
+            Section {
                 Text(
                     "National Park Service photographs are public domain and are used as the "
                         + "NPS credits them. Photographs of other places come from Wikimedia "
@@ -377,7 +383,7 @@ struct BrochureStorageSection: View {
                         Button(role: .destructive) {
                             library.remove(entry)
                         } label: {
-                            Label("Remove", systemImage: "trash")
+                            Label("Delete", symbol: .delete)
                         }
                         .labelStyle(.iconOnly)
                         .buttonStyle(.borderless)

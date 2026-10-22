@@ -153,13 +153,13 @@ public struct StatsScreen: View {
             FigureBlock(value: "\(report.totalVisits)", label: "Visits logged")
             if let first = report.firstVisit {
                 FigureBlock(
-                    value: first.formatted(.dateTime.month(.abbreviated).year()),
+                    value: first.formatted(UnigridsFormat.month()),
                     label: "First visit"
                 )
             }
             if let latest = report.latestVisit {
                 FigureBlock(
-                    value: latest.formatted(.dateTime.month(.abbreviated).year()),
+                    value: latest.formatted(UnigridsFormat.month()),
                     label: "Latest visit"
                 )
             }
@@ -314,7 +314,7 @@ public struct StatsScreen: View {
                             .foregroundStyle(style.inkSecondary)
                         }
                         Spacer()
-                        Image(systemName: "chevron.right")
+                        Image(.next)
                             .foregroundStyle(style.inkSecondary)
                     }
                 }
@@ -327,7 +327,7 @@ public struct StatsScreen: View {
                         locating = false
                     }
                 } label: {
-                    Label(locating ? "Finding you…" : "Use my location", systemImage: "location")
+                    Label(locating ? "Finding you…" : "Use my location", symbol: .locate)
                 }
                 .buttonStyle(BrochureButtonStyle(.secondary, fullWidth: false))
                 .disabled(locating)

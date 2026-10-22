@@ -285,7 +285,7 @@ public struct ParkGuideScreen: View {
     private var missingGuide: some View {
         ContentUnavailableView(
             "Guide not available",
-            systemImage: "book.closed",
+            systemImage: UnigridsSymbol.openGuide.systemName,
             description: Text("No guide content shipped for \(place.name).")
         )
         .padding(40)

@@ -130,15 +130,16 @@ enum AppTab: String, Hashable {
 /// Shown when the bundled dataset could not be read, which otherwise looks like an app
 /// with no parks in it.
 struct DataUnavailableBanner: View {
+    @Environment(\.unigrid) private var style
     let message: String
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Label("Reference data unavailable", systemImage: "exclamationmark.triangle.fill")
+            Label("Reference data unavailable", symbol: .warningFilled)
                 .font(.footnote.weight(.semibold))
             Text(message)
-                .font(.caption2)
-                .foregroundStyle(.secondary)
+                .font(UnigridStyle.caption)
+                .foregroundStyle(style.inkSecondary)
                 .lineLimit(3)
         }
         .frame(maxWidth: .infinity, alignment: .leading)

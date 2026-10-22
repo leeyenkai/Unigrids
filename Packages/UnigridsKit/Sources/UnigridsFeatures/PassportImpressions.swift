@@ -16,23 +16,16 @@ struct America250Page: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("AMERICA 250")
-                        .font(UnigridStyle.bandTitle(32))
-                        .tracking(2)
-                        .foregroundStyle(style.seal)
+                VStack(alignment: .leading, spacing: 0) {
+                    BandHeader(
+                        "America 250",
+                        kicker: stamps.isEmpty
+                            ? "Nothing stamped in 2026 yet" : "\(stamps.count) stamped in 2026"
+                    )
                     Rectangle()
                         .fill(style.seal)
-                        .frame(height: 4)
-                    Text(
-                        stamps.isEmpty
-                            ? "Nothing stamped in 2026 yet."
-                            : "\(stamps.count) stamped in 2026."
-                    )
-                    .font(UnigridStyle.rowDetail)
-                    .foregroundStyle(style.inkSecondary)
+                        .frame(height: 6)
                 }
-                .padding(.horizontal, 16)
 
                 if stamps.isEmpty {
                     Text(
@@ -79,7 +72,7 @@ struct America250Page: View {
                     .padding(.horizontal, 16)
                 }
             }
-            .padding(.vertical, 20)
+            .padding(.bottom, 20)
         }
         .background(style.page)
         .navigationTitle("America 250")
@@ -214,7 +207,8 @@ private struct ImpressionRow: View {
             )
             .frame(width: 118, height: 118)
             VStack(alignment: .leading, spacing: 6) {
-                Text(stamp.date.formatted(date: .long, time: .omitted))
+                Text(stamp.date
+                    .formatted(UnigridsFormat.day(in: UnigridsCalendar.gregorian(at: place))))
                     .font(UnigridStyle.rowTitle)
                     .foregroundStyle(style.ink)
                 if stamp.isVerifiedOnSite {
@@ -254,18 +248,7 @@ struct PassportPageCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            VStack(alignment: .leading, spacing: 6) {
-                Text(region.name)
-                    .font(UnigridStyle.bandTitle(30))
-                    .foregroundStyle(style.bandInk)
-                Text("\(stamped) OF \(total) NPS SITES STAMPED")
-                    .font(UnigridStyle.dataLabel)
-                    .tracking(1.2)
-                    .foregroundStyle(style.bandInkSecondary)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(20)
-            .background(style.band)
+            BandHeader(region.name, kicker: "\(stamped) of \(total) NPS sites stamped")
             Rectangle().fill(style.regionInk(region)).frame(height: 6)
             LazyVGrid(
                 columns: Array(repeating: GridItem(.fixed(118), spacing: 10), count: 4),
@@ -306,7 +289,7 @@ struct UnknownPlaceStamps: View {
                             .font(UnigridStyle.rowTitle)
                             .foregroundStyle(style.ink)
                         Text(stamp.placeID + " · "
-                            + stamp.date.formatted(date: .abbreviated, time: .omitted))
+                            + stamp.date.formatted(UnigridsFormat.day()))
                             .font(UnigridStyle.rowDetail)
                             .foregroundStyle(style.inkSecondary)
                     }

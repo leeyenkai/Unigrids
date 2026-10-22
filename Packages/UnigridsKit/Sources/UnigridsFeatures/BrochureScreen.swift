@@ -254,7 +254,7 @@ struct BrochurePanel: View {
                             .font(UnigridStyle.caption)
                             .foregroundStyle(style.inkSecondary)
                         Button(action: onOpen) {
-                            Label("Open the brochure", systemImage: "doc.richtext")
+                            Label("Open the brochure", symbol: .brochure)
                         }
                         .buttonStyle(BrochureButtonStyle(.secondary))
                     } else if let page = documents.page {
@@ -262,7 +262,7 @@ struct BrochurePanel: View {
                             .font(UnigridStyle.prose)
                             .foregroundStyle(style.inkSecondary)
                         Link(destination: page) {
-                            Label("Maps on nps.gov", systemImage: "arrow.up.right.square")
+                            Label("Maps on nps.gov", symbol: .website)
                         }
                         .buttonStyle(BrochureButtonStyle(.secondary))
                     }

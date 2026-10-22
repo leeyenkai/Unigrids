@@ -91,7 +91,7 @@ public struct VisitIndex: Sendable {
     }
 }
 
-/// Mirrors `VisitStatusBadge.Status` without `UnigridsFeatures` leaking a design type
+/// A place's standing in the reader's log, without `UnigridsFeatures` leaking a design type
 /// into its own API.
 public enum VisitStatusBadgeStatus: Sendable {
     case visited

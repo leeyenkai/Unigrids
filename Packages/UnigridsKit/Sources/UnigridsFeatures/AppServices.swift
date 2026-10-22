@@ -234,7 +234,7 @@ struct UndoToast: View {
             Button {
                 undo?.dismiss()
             } label: {
-                Image(systemName: "xmark")
+                Image(.dismiss)
                     .foregroundStyle(style.bandInk)
             }
             .buttonStyle(.plain)

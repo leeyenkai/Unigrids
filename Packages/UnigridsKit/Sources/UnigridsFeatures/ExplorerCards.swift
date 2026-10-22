@@ -203,27 +203,9 @@ struct ExplorerCardFrame<Content: View>: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            HStack(alignment: .top) {
-                VStack(alignment: .leading, spacing: 3) {
-                    Kicker(kicker, onBand: true)
-                    Text(title)
-                        .font(UnigridStyle.bandTitle(20))
-                        .foregroundStyle(style.bandInk)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-                Spacer(minLength: 8)
-                Button(action: onClose) {
-                    Image(systemName: "xmark")
-                        .font(.footnote.weight(.bold))
-                        .foregroundStyle(style.bandInk)
-                        .frame(width: 28, height: 28)
-                        .overlay { Rectangle().strokeBorder(style.bandInkSecondary, lineWidth: 1) }
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Close")
+            BandHeader(title, kicker: kicker, compact: true) {
+                BandCloseButton(action: onClose)
             }
-            .padding(14)
-            .background(style.band)
             VStack(alignment: .leading, spacing: 12) {
                 content
             }
@@ -260,20 +242,20 @@ struct TourBar: View {
             }
             Spacer(minLength: 8)
             Group {
-                Button(action: onPrevious) { Image(systemName: "backward.fill") }
+                Button(action: onPrevious) { Image(.tourPrevious) }
                     .disabled(progress.index == 0)
                     .accessibilityLabel("Previous sight")
                 if progress.isPaused {
-                    Button(action: onResume) { Image(systemName: "play.fill") }
+                    Button(action: onResume) { Image(.play) }
                         .accessibilityLabel("Resume")
                 } else {
-                    Button(action: onPause) { Image(systemName: "pause.fill") }
+                    Button(action: onPause) { Image(.pause) }
                         .accessibilityLabel("Pause")
                 }
-                Button(action: onNext) { Image(systemName: "forward.fill") }
+                Button(action: onNext) { Image(.tourNext) }
                     .disabled(progress.index + 1 >= progress.count)
                     .accessibilityLabel("Next sight")
-                Button(action: onStop) { Image(systemName: "xmark") }
+                Button(action: onStop) { Image(.dismiss) }
                     .accessibilityLabel("End fly-through")
             }
             .font(.body.weight(.semibold))

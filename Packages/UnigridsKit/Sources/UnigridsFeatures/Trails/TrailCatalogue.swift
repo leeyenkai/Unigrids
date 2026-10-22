@@ -340,7 +340,7 @@ struct TrailDetailScreen: View {
                                 } label: {
                                     Label(
                                         "Directions to the start",
-                                        systemImage: "arrow.triangle.turn.up.right.diamond"
+                                        symbol: .directions
                                     )
                                 }
                                 .buttonStyle(BrochureButtonStyle(.secondary))

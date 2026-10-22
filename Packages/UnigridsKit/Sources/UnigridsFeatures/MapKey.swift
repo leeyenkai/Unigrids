@@ -38,14 +38,14 @@ struct MapKeyButton: View {
                     .foregroundStyle(style.ink)
                 if filter.narrowedCount > 0 {
                     Text("\(filter.narrowedCount)")
-                        .font(.custom("HelveticaNeue-Bold", size: 11))
+                        .font(.custom("HelveticaNeue-Bold", size: 11, relativeTo: .caption2))
                         .monospacedDigit()
                         .foregroundStyle(style.onAccent)
                         .frame(minWidth: 18, minHeight: 18)
                         .background(style.accent)
                 }
                 if !layers.isEmpty {
-                    Image(systemName: "road.lanes")
+                    Image(.roads)
                         .font(.footnote.weight(.semibold))
                         .foregroundStyle(style.inkSecondary)
                 }
@@ -101,7 +101,7 @@ struct MapLayersMenu: View {
                 }
             }
         } label: {
-            Label("Layers", systemImage: "square.3.layers.3d")
+            Label("Layers", symbol: .layers)
         }
     }
 
@@ -387,7 +387,7 @@ private struct ActivityFilterList: View {
                             Text(activity.name)
                             Spacer()
                             if selection.contains(activity) {
-                                Image(systemName: "checkmark")
+                                Image(.seen)
                                     .fontWeight(.semibold)
                             }
                         }
@@ -413,6 +413,7 @@ private struct ActivityFilterList: View {
 
 /// Pick states and territories to narrow the map to.
 private struct StateFilterList: View {
+    @Environment(\.unigrid) private var style
     @Binding var selection: Set<String>
     @State private var query = ""
 
@@ -441,9 +442,9 @@ private struct StateFilterList: View {
                         Spacer()
                         Text(state.code)
                             .font(UnigridStyle.dataLabel)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(style.inkSecondary)
                         if selection.contains(state.code) {
-                            Image(systemName: "checkmark")
+                            Image(.seen)
                                 .fontWeight(.semibold)
                         }
                     }

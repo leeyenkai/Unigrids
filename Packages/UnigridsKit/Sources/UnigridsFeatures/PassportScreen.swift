@@ -153,7 +153,7 @@ struct America250Row: View {
     var body: some View {
         HStack(spacing: 12) {
             Text("250")
-                .font(.custom("HelveticaNeue-Bold", size: 13))
+                .font(.custom("HelveticaNeue-Bold", size: 13, relativeTo: .footnote))
                 .foregroundStyle(style.seal)
                 .padding(.horizontal, 5)
                 .padding(.vertical, 3)
@@ -208,7 +208,7 @@ struct PassportRegionPage: View {
                     slotSection("Beyond the NPS", places: beyond)
                 }
             }
-            .padding(.vertical, 20)
+            .padding(.bottom, 20)
         }
         .background(style.page)
         .navigationTitle(region.name)
@@ -217,7 +217,7 @@ struct PassportRegionPage: View {
             if let pageImage {
                 ToolbarItem {
                     ShareLink(item: pageImage) {
-                        Label("Share this page", systemImage: "square.and.arrow.up")
+                        Label("Share this page", symbol: .share)
                     }
                 }
             }
@@ -289,24 +289,13 @@ struct PassportRegionPage: View {
 
     private func titlePage(npsSites: [Place]) -> some View {
         let stamped = npsSites.count { stampsByPlace[$0.id]?.isEmpty == false }
-        return VStack(alignment: .leading, spacing: 10) {
-            Text(region.name)
-                .font(UnigridStyle.bandTitle(32))
-                .foregroundStyle(style.regionInk(region))
+        return VStack(alignment: .leading, spacing: 0) {
+            BandHeader(region.name, kicker: "\(stamped) of \(npsSites.count) NPS sites stamped")
+            // The region's ink, as the paper passport colours its pages.
             Rectangle()
                 .fill(style.regionInk(region))
-                .frame(height: 4)
-            HStack(alignment: .firstTextBaseline, spacing: 8) {
-                Text("\(stamped)")
-                    .font(UnigridStyle.figure)
-                    .foregroundStyle(style.ink)
-                    .monospacedDigit()
-                Text("of \(npsSites.count) NPS sites stamped")
-                    .font(UnigridStyle.rowDetail)
-                    .foregroundStyle(style.inkSecondary)
-            }
+                .frame(height: 6)
         }
-        .padding(.horizontal, 16)
     }
 
     @ViewBuilder

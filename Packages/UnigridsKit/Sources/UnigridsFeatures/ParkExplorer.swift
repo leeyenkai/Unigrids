@@ -196,15 +196,15 @@ struct ParkExplorer: View {
                     }
                 }
                 Toggle(isOn: $showTrails) {
-                    Label("Trails", systemImage: "figure.hiking")
+                    Label("Trails", symbol: .hike)
                 }
                 .disabled(trails.isEmpty)
                 Toggle(isOn: $showFacilities) {
-                    Label("Visitor centres and campgrounds", systemImage: "info.square")
+                    Label("Visitor centres and campgrounds", symbol: .visitorCentre)
                 }
                 .disabled(facilities.isEmpty)
             } label: {
-                Label("Layers", systemImage: "square.3.layers.3d")
+                Label("Layers", symbol: .layers)
             }
         }
         ToolbarItem {
@@ -213,12 +213,12 @@ struct ParkExplorer: View {
                 focus = nil
                 show(ExplorerCamera.overview(of: frame))
             } label: {
-                Label("Whole place", systemImage: "arrow.counterclockwise")
+                Label("Whole place", symbol: .resetView)
             }
         }
         ToolbarItem {
             Button { showList = true } label: {
-                Label("List", systemImage: "list.number")
+                Label("List", symbol: .numberedList)
             }
             .disabled(sights.isEmpty && trails.isEmpty && facilities.isEmpty)
         }

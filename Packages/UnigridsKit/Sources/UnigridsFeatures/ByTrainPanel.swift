@@ -16,7 +16,7 @@ struct ByTrainPanel: View {
             UnigridPanel(title: "By train") {
                 VStack(alignment: .leading, spacing: 10) {
                     HStack(alignment: .firstTextBaseline, spacing: 8) {
-                        Image(systemName: "tram.fill")
+                        Image(.train)
                             .foregroundStyle(style.inkSecondary)
                         VStack(alignment: .leading, spacing: 2) {
                             Text(access.station.name)

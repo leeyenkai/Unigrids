@@ -314,20 +314,20 @@ struct GuideActionsPanel: View {
     @ViewBuilder
     private var buttons: some View {
         Button(action: onCheckIn) {
-            Label("Check in", systemImage: "mappin.and.ellipse")
+            Label("Check in", symbol: .checkIn)
         }
         .buttonStyle(BrochureButtonStyle(.primary))
         Button(action: onStamp) {
-            Label { Text("Stamp the passport") } icon: { StampIcon() }
+            Label { Text("Stamp") } icon: { StampIcon() }
         }
         .buttonStyle(BrochureButtonStyle(.secondary))
         Button(action: onAddToTrip) {
-            Label("Add to a trip", systemImage: "calendar.badge.plus")
+            Label("Add to trip", symbol: .addToTrip)
         }
         .buttonStyle(BrochureButtonStyle(.secondary))
         if let officialURL {
             Link(destination: officialURL) {
-                Label("nps.gov", systemImage: "arrow.up.right.square")
+                Label("Website", symbol: .website)
             }
             .buttonStyle(BrochureButtonStyle(.secondary))
         }

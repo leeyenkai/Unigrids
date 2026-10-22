@@ -123,7 +123,7 @@ struct LegLine: View {
                 Label(
                     UnigridsFormat.duration(leg.seconds) + " · "
                         + UnigridsFormat.distance(metres: leg.metres),
-                    systemImage: UnigridsSymbol.directions.systemName
+                    systemImage: UnigridsSymbol.drive.systemName
                 )
                 .accessibilityLabel(
                     "Drive, \(UnigridsFormat.duration(leg.seconds)), "

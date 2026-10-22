@@ -133,7 +133,7 @@ private struct ClusterSample: View {
 
     var body: some View {
         Text("12")
-            .font(.custom("HelveticaNeue-Bold", size: 10))
+            .font(.custom("HelveticaNeue-Bold", size: 10, relativeTo: .caption2))
             .foregroundStyle(style.bandInk)
             .frame(width: 24, height: 24)
             .background(Circle().fill(style.band))
@@ -149,7 +149,7 @@ private struct ParkClusterSample: View {
             Image(systemName: UnigridsSymbol.site(.nationalPark))
                 .font(.system(size: 9, weight: .semibold))
             Text("5")
-                .font(.custom("HelveticaNeue-Bold", size: 10))
+                .font(.custom("HelveticaNeue-Bold", size: 10, relativeTo: .caption2))
         }
         .foregroundStyle(Color(SiteInk.pictogram))
         .padding(.horizontal, 5)

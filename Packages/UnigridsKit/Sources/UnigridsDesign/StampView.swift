@@ -72,7 +72,7 @@ public struct StampView: View {
             .foregroundStyle(ink)
 
             if face.isVerifiedOnSite {
-                Image(systemName: "checkmark.seal.fill")
+                Image(.verified)
                     .font(.system(size: diameter * 0.13))
                     .foregroundStyle(ink)
                     .offset(y: diameter * 0.37)
@@ -140,9 +140,9 @@ public struct StampSlotView: View {
             )
             .frame(width: diameter, height: diameter)
             .overlay {
-                Image(systemName: "plus")
+                Image(.add)
                     .font(.system(size: diameter * 0.2, weight: .light))
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(style.rule)
             }
             .accessibilityLabel("\(siteName), not yet stamped")
             .accessibilityAddTraits(.isButton)

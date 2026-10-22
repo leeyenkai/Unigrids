@@ -114,7 +114,7 @@ struct PlacePhoto: View {
         ZStack {
             style.rule.opacity(0.5)
             if failed {
-                Image(systemName: "photo")
+                Image(.photo)
                     .font(.title3)
                     .foregroundStyle(style.inkSecondary)
             }
