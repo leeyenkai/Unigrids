@@ -121,7 +121,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         if not args.skip_fetch:
             reference_fetch.fetch(refresh=args.refresh)
         print("==> reference build")
-        reference_build.build()
+        reference_build.build(online=not args.skip_fetch)
         return 0
 
     requested = ORDER if args.step == "all" else (args.step,)

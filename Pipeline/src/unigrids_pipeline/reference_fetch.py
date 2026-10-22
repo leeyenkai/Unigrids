@@ -39,7 +39,16 @@ from urllib.parse import quote
 
 import httpx
 
-from . import brochures, climate, config, lands_fetch, rawstore, reference_content, trail_catalogue
+from . import (
+    brochures,
+    climate,
+    config,
+    lands_fetch,
+    rawstore,
+    reference_content,
+    state_parks,
+    trail_catalogue,
+)
 from .rawstore import FetchRecord, SourceTerms
 from .sources import arcgis, http, npsapi
 
@@ -129,6 +138,9 @@ def fetch(*, refresh: bool = False) -> Path:
 
     if needed("padus", "curated.geojson"):
         _fetch_padus(version)
+
+    if needed("padus", state_parks.FILE):
+        state_parks.fetch(version)
 
     if needed("wikipedia", "summaries.json"):
         _fetch_wikipedia(version)

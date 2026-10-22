@@ -40,8 +40,11 @@ from . import (
     ids,
     lands_build,
     outline,
+    rawstore,
     reference_content,
+    state_parks,
     trail_catalogue,
+    wikipedia_match,
 )
 from .reference_fetch import photo_filename
 
@@ -81,12 +84,15 @@ ADMINISTRATIVE_UNITS = frozenset({
 REUSABLE_LICENCE = re.compile(r"^(public domain|pd|cc0|cc by(-sa)? \d)", re.IGNORECASE)
 
 
-def build() -> None:
+def build(*, online: bool = False) -> None:
+    """Build the dataset. ``online`` lets the build fetch what it can only know once the
+    places exist — Wikipedia articles for the ones without prose — into the raw store;
+    offline, it reads what an earlier run cached."""
     raw = _latest_raw("nps-api")
     print(f"    reading raw/{raw.name}")
     api = _NPSData(raw / "nps-api")
     unit_outlines = _unit_outlines(_latest_raw("unit-boundaries") / "unit-boundaries")
-    padus, padus_acres = _padus_outlines(_latest_raw("padus") / "padus")
+    padus, padus_acres = _padus_outlines(rawstore.require("padus", "curated.geojson"))
     wikipedia = _wikipedia(_latest_raw("wikipedia") / "wikipedia")
     photos_dir = _latest_raw_or_none("photos")
     registry = ids.Registry(PLACE_REGISTRY)
@@ -168,6 +174,12 @@ def build() -> None:
         boundaries[place["id"]] = outline_entry
         places.append(place)
 
+    census = rawstore.latest("padus", state_parks.FILE)
+    if census is not None:
+        state_parks.build(
+            census, places, boundaries, registry, reference_content.curated_sites()
+        )
+
     routes: dict[str, Any] = {}
     lands = _latest_raw_or_none("federal-lands")
     if lands is not None:
@@ -180,6 +192,16 @@ def build() -> None:
     documents = brochures.build(brochures_dir, places) if brochures_dir else None
     climate_dir = _latest_raw_or_none("climate")
     normals = climate.build(climate_dir) if climate_dir else None
+
+    if online:
+        wikipedia_match.fetch(places, rawstore.today())
+    wikipedia_match.enrich(
+        places,
+        boundaries,
+        routes,
+        rawstore.latest(wikipedia_match.SOURCE, wikipedia_match.PAGES_FILE),
+        _wikimedia_image,
+    )
 
     for stale in images_dir.iterdir():
         if stale.name not in written_images:
