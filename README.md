@@ -14,16 +14,18 @@ in a trip log and a digital passport stamp book, and the log turns into stats.
 
 ## Status
 
-**Pre-release — working toward `1.0.0`.** Every national park has a guide; 2,052
-places — every NPS unit, national forest and grassland, wildlife refuge, BLM monument and
-conservation area, National Natural Landmark and national scenic byway, plus curated state
-parks — are outlined on one map, each marked by type, with Interstate, US highway and
-Amtrak layers. Every place opens in 3D; 59 national parks have a measured trail catalogue;
-the planner has drive times, flags, forecasts and reminders; official NPS maps and
-brochures open in the app; visits are logged by hand, by arrival or from Photos, and fill
-the passport and stats. Not built yet: offline map packs in the app, widgets and the Watch
-app. iPhone was checked on an iOS 26.5 Simulator; iPad and an iOS 27 device are still to
-check.
+**`0.9.0` — the production pass.** Every national park has a guide; 5,515 places — every
+NPS unit, national forest and grassland, wildlife refuge, BLM monument and conservation
+area, National Natural Landmark, national scenic byway and every PAD-US state park — are
+on one map, each marked by type, with Interstate, US highway and Amtrak layers. Every
+place opens in 3D, and Zion, Acadia, Yellowstone and Great Smoky Mountains have an offline
+Park map in the app; 61 national parks have a measured trail catalogue. Trips take parks,
+sights, trails, lodging and points on the way, with drive times, forecasts, live closures
+and reminders, and alert notifications for parks on upcoming trips. Visits are logged by
+hand, by arrival or from Photos, fill the passport and stats, export in full and import
+back, and every change can be undone. Not built yet: widgets, the Watch app, and offline
+packs for the other 59 parks. What has and has not been checked is in
+[`docs/mvp-scope.md`](docs/mvp-scope.md).
 
 The build follows the three phases in [`SPECIFICATION.md`](SPECIFICATION.md) §16:
 
@@ -31,6 +33,7 @@ The build follows the three phases in [`SPECIFICATION.md`](SPECIFICATION.md) §1
 |---|---|---|
 | Pilot | `0.1.0` | Four parks (Zion, Acadia, Yellowstone, Great Smoky Mountains) prove the data pipeline and the Unigrid guide template across three devices |
 | MVP | `0.2.0` | A guide for every national park, plus manual and photo-import logging |
+| Production pass | `0.9.0` | Everything for v1.0 but widgets and the Watch app; offline maps for the four pilot parks; refreshed data |
 | v1.0 | `1.0.0` | Trails, offline maps, the planner, widgets, the Watch app, full logging and stats |
 
 What runs today, and what is still stubbed, is tracked in

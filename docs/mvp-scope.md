@@ -1,3 +1,48 @@
+# 0.9.0 — Production pass
+
+The owner's brief: take the app to a standard they would use every day and show to
+friends — finish what is missing, fill the data, fix the bugs, and make the screens and
+workflows consistent. Signing stays off for this round, so iCloud sync, WeatherKit and
+anything needing a development team wait.
+
+## Built in this round
+
+| Area | What changed | Specification |
+|---|---|---|
+| Log safety | The store opens when it can and never falls back to a copy that vanishes; its own file on the Mac; a fixture store from before this pass must still open | §9, ADR 0011 |
+| Log rules | One visit per place per day at the place; deleting a visit takes its stamps; moving a visit moves what is on it; trips matched conservatively; every change undoable | §9, ADR 0012 |
+| Your data | Full JSON export and import (merge by record), CSV with local days, delete everything | §9, §15 |
+| Trips | Stops can be places, sights, trails, lodging or any point; several at a time; a details sheet with day, time and notes; status from dates; visit editor for every visit; share cards | §10 |
+| Hikes | A sheet with the day and how far; the trail's hikes listed with undo; lengths that say how they were measured | §8 |
+| Map | Saved filters with a line that says so; no-results search; a marked sight; region shortcuts for Guam and American Samoa; alerts on the place card; state-park pins from regional zoom | §5 |
+| Guides | Trail highlights in every park with trails; a toolbar that fits a phone; When to go (visitors by month beside the climate); visitor information on NPS leaflets | §6, §10 |
+| Offline | Park maps for Zion, Acadia, Yellowstone and Great Smoky Mountains, in the bundle, drawn in place of Apple's map; the explorer gives way to them offline | §8, ADR 0010 |
+| Alerts | Notifications for new dangers and closures at parks on trips in the next 30 days | §10 |
+| Sharing | A card for most Stats sections, a visit and a trip; Year in review; streaks | §11 |
+| Data | 5,515 places (every PAD-US state park), 2,722 credited Wikipedia leads, monthly visitation, a time zone for every place, Sequoia and Kings Canyon trails, measured elevation ranges, stamp locations | §12 |
+| Consistency | One sheet shell, one band, one icon table, one name per action, four date styles, buttons that wrap, Settings from every tab | §14 |
+| Release | Privacy manifest, encryption flag, hardened-runtime entitlements, version 0.9.0 | §15 |
+
+## Checked, and not checked
+
+- [x] `scripts/test.sh`: 256 Swift tests (Core, Log, Reference, Features, Design); the
+      pipeline's 111 tests; `scripts/lint.sh` clean (SwiftFormat, strict SwiftLint, ruff).
+- [x] `scripts/build.sh` for the iOS Simulator and macOS, in Debug and Release.
+- [x] On an **iOS 27** Simulator (iPhone 18 Pro): onboarding, the map, Trips and a trip's
+      page with live alerts, forecasts and roads, Zion's guide and its More menu, the
+      offline Park map from Zion's pack, Stats with a share card, Year in review and the
+      passport.
+- [x] Every bundled data rule held by tests: credited summaries, real time zones, unique
+      identifiers, visits only where the NPS counted them, every old identifier resolving.
+- [ ] **iPad**, the Mac app screen by screen, and the largest accessibility type sizes.
+- [ ] **On a signed device**: arrival detection, reminders and alert notifications as
+      delivered, background app refresh, and photo import against a real library.
+- [ ] **iCloud sync and WeatherKit**, waiting on a development team.
+- [ ] The Simulator took tens of seconds to draw its first frame on this newly installed
+      iOS 27 runtime — almost all of it the system's dynamic loader, with the app's own
+      start (the dataset decode) at about a third of a second in a debug build. Worth a
+      look on a device.
+
 # Toward 1.0.0 — every feature fleshed out
 
 The owner's brief for this round: review the app, build out what the specification still

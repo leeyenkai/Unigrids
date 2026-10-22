@@ -268,8 +268,13 @@ As built (toward `1.0.0`)
 - **Auto-detected visits (iPhone and iPad)**: off until turned on in Settings, then with Always permission. Core Location's `CLMonitor` watches circles around the nearest places — each sized to reach the place's farthest corner, between 400 m and 50 km — plus a circle round the current position that rotates the watched set when crossed (iOS allows twenty conditions). Entering a circle triggers a one-off position check against the place's real outline, and only inside it does the app post "Looks like you're in Zion. Log a visit?", once per place per day. Arrivals wait at the top of Trips for the user to log or dismiss. Nothing is logged without confirmation; no position is stored.
 - **Photo import**: reads date and location from the photos the user grants (limited access works), matches them to place outlines on device, groups them into visits by place and day and into trips by runs of days, and offers them to log. Visits keep photo identifiers, never copies.
 - **Passport**: a slot for each official stamp location where a place has several; an impressions sheet shows every impression in a slot; any region page exports as an image.
-- **Undo** after deleting a visit, trip or stamp, from a toast, by restoring a snapshot of the record under its own identity.
-- Exports: the whole log as JSON, visits as CSV, a trip's stops as GPX.
+- **One visit per place per day**, the day being the place's own: check-ins, stamps, hikes and imports join it or start it (ADR 0012).
+- **Deleting a visit takes its stamps**, hikes and check-ins, and says so before it does, so the passport and the log always agree; deleting the only stamp on an otherwise empty stamp-made visit takes the visit. Moving a visit to another day moves what is on it.
+- **Undo** for every deletion, and for stamping, logging a hike and importing, shown where the change was made, by restoring records under their own identity or removing the ones made.
+- **Hikes**: Mark as hiked asks for the day and whether it went the whole way; a trail lists its hikes, each deletable.
+- Exports: the whole log as JSON — every record and field — which imports back by merging on record identity; visits as CSV in each visit's own day; a trip as GPX and as Calendar events. "Delete all my data" behind a confirmation.
+- **Share cards** for a visit, a trip, a passport page and the Stats sections, rendered on device when asked for.
+- The log opens only when it safely can, in a file of its own (ADR 0011).
 
 ## 10. Planner
 
@@ -450,6 +455,8 @@ The build goes in three phases: a pilot on four parks (Zion, Acadia, Yellowstone
 
 > _Diagram in source doc: phasing · 3 phases, 2 gates, then a backlog_
 
+`0.9.0` is the production pass between the MVP and v1.0: every feature above except widgets and the Watch app, offline packs for the four pilot parks, and the data refreshed (`docs/mvp-scope.md`).
+
 The pilot is the riskiest step: it tests whether one Unigrid template reflows well across three devices and how large an offline pack really is, and so whether everything fits in the 4 GB app limit, and both answers shape everything after it.
 
 ## 17. Open questions for the next round
@@ -460,7 +467,7 @@ Follow-ups
 
 1. Pick the busy state parks that get offline packs.
 2. Measure the pilot packs, then confirm the whole bundle fits in 4 GB; if not, decide what to trim (tile zoom levels, state packs).
-3. Compile the paper passport's region assignments for NPS sites (a one-time curation).
+3. Resolved: the paper passport's region assignments are checked against 329 regional stamps and curated with their evidence in `Pipeline/content/curated/passport-regions.json` (§9).
 4. Resolved: National Natural Landmarks come from the NPS's own NNL layer and byways from the FHWA's America's Byways routes (§12).
 5. Scope the Apple Watch app: check-ins and stamps only, or also trail info and alerts?
 6. Choose which widgets to build first (next trip, parks count, latest stamp).
@@ -468,16 +475,16 @@ Follow-ups
 8. Appearance is two `@AppStorage` values today. An observable store becomes worth it only if the palette is ever derived from something else — a per-park palette, or an automatic switch at sunset (ADR 0005).
 9. The written guide and overview text (63 guides, 101 place summaries) was drafted from the NPS Data API and Wikipedia and checked fact by fact, but has had no second reader. A park-by-park read against each park's NPS pages before a public release is worthwhile; rules that change each season (timed entry, permits, closures) are written to say "check before you go" rather than give dates.
 10. Grand Staircase–Escalante's boundaries were redrawn by proclamation in July 2026. Its outline comes from PAD-US 4.1, which predates that, so the map shows the earlier boundary until PAD-US catches up.
-11. The iOS 27 Simulator runtime is not installed on the development Mac. iPhone layouts were checked on an iOS 26.5 Simulator from a throwaway copy with the deployment target lowered; iPad was not checked. A pass on an iOS 27 device or simulator, iPad included, is the first thing to do before sharing a TestFlight build.
-12. Reference data is a snapshot (`Pipeline/raw/2026-10-19`). Fees, hours and visitor-centre details go stale; a re-fetch before each release (`reference --refresh`) keeps them current.
+11. Resolved for iPhone: the 0.9.0 pass ran on an iOS 27 Simulator (iPhone 18 Pro). iPad and the largest accessibility type sizes are still to be walked through screen by screen.
+12. Reference data is a snapshot (`Pipeline/raw/2026-10-22`, dataset version 4). Fees, hours and visitor-centre details go stale; a re-fetch before each release (`reference --refresh`) keeps them current.
 13. NPS units whose API record has no description yet (Freedom Riders and Emmett Till and Mamie Till-Mobley, both recent) show no summary rather than an invented one.
 14. **Weather comes from Open-Meteo, not WeatherKit.** WeatherKit needs a development team and its entitlement, which the build does not have yet (the same blocker as iCloud sync). Open-Meteo's forecast, its record of recent days and its archive cover forecasts, visit snapshots and climate today. Decide when the team is wired in whether to move forecasts to WeatherKit; Open-Meteo's free tier is non-commercial (parked item 2).
 15. **Trail difficulty is a formula**, Shenandoah's published rating applied to every park, and is labelled as an estimate. It knows nothing of exposure, scrambling or heat. Where a park publishes its own ratings, curating them into `Pipeline/content/` would replace the estimate.
-16. **Four national parks have no trail catalogue**: Sequoia, Kings Canyon, Gates of the Arctic and Kobuk Valley publish no trails in the NPS Public Trails layer. OpenStreetMap could fill Sequoia and Kings Canyon (§8 allows it, under ODbL share-alike); the Arctic parks are trailless wilderness and are right to show none.
+16. Resolved for two: Sequoia and Kings Canyon's trails come from OpenStreetMap's named paths, measured like every other park's and credited under the ODbL. Gates of the Arctic and Kobuk Valley are trailless wilderness and have none.
 17. **Most NPS sites list no PDF on their own pages** (84 of 434 do), so most document panels open the site's maps page. A fuller source — Harpers Ferry Center's brochure listings — would need its own fetch and matching; the pipeline reads only each site's own pages.
 18. **Eleven places lie in no state**: the remote Pacific refuges and marine monuments (Baker, Howland, Jarvis, Johnston, Kingman, Midway, Palmyra, Wake, the Mariana Trench and Arc of Fire) and Navassa Island. They are on the map and in stats but the state filter cannot find them.
-19. **Not built in this round**: offline packs in the app (§8), widgets and the Watch app (§3), an "open this season" filter (no source publishes seasons for every place), monthly visitation for the weather-versus-crowds view, background alert refresh and notifications, itinerary stops below the place level (sights, lodging, custom points), per-card share cards, and an archive of past brochure editions.
-20. **Auto-detected visits, reminders and photo import have not run on a device.** They compile and their logic is unit-tested, but Always location, region monitoring in the background and local notifications need a real iPhone to trust.
+19. **Not built yet**: offline packs for the other 59 national parks (they need on-demand delivery, which needs signing; ADR 0010), widgets and the Watch app (§3), an "open this season" filter (no source publishes seasons for every place), and archived brochure editions.
+20. **Auto-detected visits, reminders, alert notifications and photo import have not run on a device.** They compile and their logic is unit-tested, but Always location, region monitoring and background app refresh, and notification delivery need a signed build on a real iPhone to trust.
 
 Parked until a public release
 

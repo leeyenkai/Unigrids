@@ -6,11 +6,10 @@ calls it (`docs/adr/0002`).
 
 ## Status
 
-**Three steps of six, for one park.** `fetch`, `derive` and `build` do what an offline
-pack needs: the keyless sources, the trail measurements, and a rendered pack with its size
-measured. `match`, `edit` and `package` are still labelled stubs that raise
-`StepNotBuiltError` with their contracts, and so are the parts of `fetch` that need an API
-key nobody has supplied.
+**Four steps of six for packs, and the whole reference build.** `fetch`, `derive`, `build`
+and `package` take any national park from keyless sources to a pack in the app. `match`
+lives inside `reference` for places (a committed ID registry); its standalone form and
+`edit` are still labelled stubs that raise `StepNotBuiltError` with their contracts.
 
 That slice was chosen because the pack size was the pilot's open question
 (`SPECIFICATION.md` §16, `docs/mvp-scope.md`). It is answered: see
@@ -63,11 +62,11 @@ From `SPECIFICATION.md` §12:
 | Step | Does | State |
 |---|---|---|
 | `fetch` | Pulls each source into a raw store, versioned by date | Built for the keyless sources: NPS boundaries, NPS Public Trails, USGS 3DEP, OpenStreetMap |
-| `match` | Gives every place, sight and trail a stable Unigrids ID, mapped to NPS park codes and PAD-US unit IDs, so user logs survive data updates | Stub |
+| `match` | Gives every place, sight and trail a stable Unigrids ID, mapped to NPS park codes and PAD-US unit IDs, so user logs survive data updates | Built for places, inside `reference`: a committed registry (`content/ids/places.json`) that fails the build on a collision. The standalone step for pack trails is a stub |
 | `derive` | Trail length, elevation and profile; theme tags; passport region per site; climate normals; sight rankings | Trail measurements built; the rest is a stub |
 | `edit` | Validates the curated files kept under version control (guide text, permits, seasonal notes) | Stub |
-| `build` | Writes the bundled dataset and one offline pack per national park | One park's pack and the size report built; the SQLite dataset is a stub |
-| `package` | Copies the dataset and packs into the app's resources, and re-checks every brochure link | Stub |
+| `build` | Writes one offline pack per national park | Built for any national park, with the deepest zoom set by its area; the four pilot packs are built |
+| `package` | Copies built packs into `App/OfflinePacks/` with an `index.json`, for the app to ship as a folder reference (ADR 0010) | Built; `--parks ZION,ACAD` narrows it. Brochure links are re-checked by `reference`, not here |
 
 ## Running it
 

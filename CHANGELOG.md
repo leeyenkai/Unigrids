@@ -12,6 +12,11 @@ makes the change. A release moves that block under a version heading with its da
 
 ## [Unreleased]
 
+## [0.9.0] — 2026-10-23
+
+The production pass: everything below, from the first pilot to this release. Widgets and
+the Watch app keep `1.0.0` open.
+
 ### Added
 
 - Repository scaffolding: `README.md`, `.gitignore`, `.editorconfig`, SwiftFormat and
@@ -219,6 +224,20 @@ makes the change. A release moves that block under a version heading with its da
 - **Year in review**: a year's visits, places new to you, national parks (new ones marked),
   states, busiest month and distance hiked, with its own card.
 - **In a row**: the months and years in a row you have logged a visit, now and at most.
+- **Your data, all of it.** The JSON export holds every record and field — visits,
+  trips, stops, reminders, check-ins, hikes, stamps and weather — and Settings › Your data
+  imports it back, merging by record so nothing doubles. Delete all my data sits behind a
+  confirmation.
+- **Undo for every change**: deleting a visit, trip, stamp, stop, reminder or hike, and
+  stamping, logging a hike or importing, each offer "Undo" where they happened, announced
+  to VoiceOver.
+- **One sheet for every task**: every sheet opens on the same band and paper, with Cancel
+  and its action, or Done, where each platform puts them.
+- Notifications open what they are about: an arrival its log sheet, a reminder its trip,
+  an alert its park.
+- A privacy manifest (no tracking, no data collected), and the entitlements the Mac's
+  hardened runtime needs for location and Photos, so "Where am I", stamp verification and
+  photo import work there.
 
 ### Changed
 
@@ -291,6 +310,31 @@ makes the change. A release moves that block under a version heading with its da
   thousand at country scale were a blanket of cluster counts. Their outlines still show.
 
 ### Fixed
+- **The log can no longer vanish.** If the store would not open, the app used to carry on
+  with an in-memory copy and lose everything logged that session at quit; a background
+  relaunch before the first unlock was enough. It now waits for the unlock, retries, and
+  otherwise says the data is safe on disk and offers Retry. The Mac log has its own file
+  instead of SwiftData's shared default, moved there once after checking it is this app's.
+- One visit per place per day, however it is logged; the day is the place's own. Deleting
+  a visit takes its stamps, so the passport and the map always agree. Moving a visit to
+  another day moves everything logged on it.
+- Days are reckoned in the Gregorian calendar at the place: on a phone set to the Buddhist
+  or Japanese calendar the America 250 seal never applied and weather was asked for days
+  that do not exist.
+- CSV export writes the visit's own day, quotes every kind of line break, and never
+  starts a field like a formula.
+- Weather for a visit is the day's observed weather, never the forecast it was logged
+  with; a visit that cannot be filled stops being asked about after three tries.
+- Live alerts survive one bad record (the whole feed used to go blank), page past the
+  first 500, and back off after a failure to spare the shared key.
+- Passport regions follow the paper book, checked against 329 regional stamps: Arizona is
+  Western, Virginia and Maryland Mid-Atlantic, the Dakotas Rocky Mountain, and the sites
+  the book files elsewhere follow it.
+- Arrival suggestions keep watching after moving their watched set, and asking for Always
+  location no longer gives up after eight seconds.
+- Brochures are kept out of backups and downloaded once, off expensive networks.
+- Reminders fire at the moment they name in the zone they were set in, stop when their
+  trip is deleted, and no longer crash when deleted from the list.
 - A trip's dates are kept at noon, so a trip planned in one time zone reads as the same
   days in another.
 - The offline Park map fills the corners of its box the pack never drew with blank paper,
