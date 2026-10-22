@@ -242,6 +242,13 @@ makes the change. A release moves that block under a version heading with its da
   all of them, waiting on a hand-made list no guide had. Trails a guide names lead.
 - On iPhone a guide's toolbar holds Explore in 3D and one More menu; "See it in 3D" is
   "Explore in 3D" everywhere.
+- Reminders open to edit, show their time in the zone they were set in, and can be set
+  in the park's zone or the device's.
+- Import from Photos counts photos read out of the total, offers Open Settings when access
+  is refused, reckons each photo's day at the place it was taken, and undoes a whole
+  import in one step.
+- The map key, photo viewer, Look Around, the 3D explorer's list and the reminder editor
+  share the sheet shell the rest of the app uses.
 
 ### Fixed
 

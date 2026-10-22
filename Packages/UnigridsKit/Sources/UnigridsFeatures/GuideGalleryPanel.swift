@@ -44,7 +44,13 @@ struct PhotoViewer: View {
     let image: GuideImage
 
     var body: some View {
-        NavigationStack {
+        SheetPage(
+            "Photograph",
+            kicker: image.credit,
+            actions: .done { dismiss() },
+            width: 900,
+            height: 700
+        ) {
             VStack(alignment: .leading, spacing: 10) {
                 Spacer(minLength: 0)
                 PlacePhoto(image: image, aspectRatio: 3 / 2, maxPoints: 1600)
@@ -58,13 +64,6 @@ struct PhotoViewer: View {
                 }
                 Spacer(minLength: 0)
             }
-            .background(style.page)
-            .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Done") { dismiss() }
-                }
-            }
         }
-        .sheetSize(width: 900, height: 700)
     }
 }

@@ -87,7 +87,11 @@ struct ParkExplorer: View {
             }
             .onDisappear { stopTour() }
             .unigridsSheet(isPresented: $showList) {
-                NavigationStack {
+                SheetPage(
+                    "Sights and trails",
+                    kicker: place.name,
+                    actions: .done { showList = false }
+                ) {
                     ExplorerList(
                         place: place,
                         sights: sights,
@@ -99,15 +103,7 @@ struct ParkExplorer: View {
                         showList = false
                         select(item)
                     }
-                    .navigationTitle("In \(place.name)")
-                    .toolbarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("Done") { showList = false }
-                        }
-                    }
                 }
-                .sheetSize()
                 .presentationDetents([.medium, .large])
             }
             .unigridsSheet(isPresented: checkInBinding) {

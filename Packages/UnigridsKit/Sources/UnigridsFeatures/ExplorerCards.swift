@@ -103,18 +103,16 @@ struct LookAroundSheet: View {
     let scene: MKLookAroundScene?
 
     var body: some View {
-        NavigationStack {
+        SheetPage(
+            title,
+            kicker: "Look Around",
+            actions: .done { dismiss() },
+            width: 900,
+            height: 620
+        ) {
             LookAroundPreview(initialScene: scene, allowsNavigation: true, showsRoadLabels: true)
                 .ignoresSafeArea(edges: .bottom)
-                .navigationTitle(title)
-                .toolbarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .confirmationAction) {
-                        Button("Done") { dismiss() }
-                    }
-                }
         }
-        .sheetSize(width: 900, height: 620)
     }
 }
 

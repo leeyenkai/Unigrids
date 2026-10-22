@@ -284,6 +284,21 @@ struct PhotoImportTests {
         let trips = PhotoVisits.trips(from: visits, calendar: calendar)
         #expect(trips.count == 2)
     }
+
+    @Test("a photo's day is the place's own")
+    func placeDays() {
+        var denver = Calendar(identifier: .gregorian)
+        denver.timeZone = TimeZone(identifier: "America/Denver") ?? .gmt
+        // 03:00 UTC on 2 June is 21:00 on 1 June in Utah.
+        let evening = GeoPhoto(
+            id: "e", date: at(2, 3), location: Coordinate(latitude: 37.3, longitude: -113.1)
+        )
+        let visits = PhotoVisits.propose(
+            photos: [evening], locator: locator, calendar: calendar, calendarAt: { _ in denver }
+        )
+        let firstOfJune = denver.date(from: DateComponents(year: 2025, month: 6, day: 1)) ?? Date()
+        #expect(visits.map(\.day) == [firstOfJune])
+    }
 }
 
 @Suite("Weather stats")

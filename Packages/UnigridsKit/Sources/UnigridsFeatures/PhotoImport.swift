@@ -21,12 +21,14 @@ struct PhotoImportScreen: View {
     @Environment(\.modelContext) private var context
     @Environment(\.unigrid) private var style
     @Environment(\.dismiss) private var dismiss
+    @Environment(UndoCenter.self) private var undo: UndoCenter?
     @Query private var visits: [Visit]
 
     private enum Phase {
         case asking
         case denied
-        case scanning
+        case reading
+        case matching
         case ready([ProposedTrip])
         case imported(Int)
     }
@@ -36,27 +38,37 @@ struct PhotoImportScreen: View {
     @State private var groupIntoTrips = true
     @State private var alsoStamp = false
     @State private var scanned = 0
+    @State private var total = 0
+    @State private var failures = 0
 
     var body: some View {
-        NavigationStack {
+        SheetPage(
+            "Import from Photos",
+            kicker: "Visits your photos remember",
+            actions: actions,
+            width: 560,
+            height: 720
+        ) {
             content
-                .background(style.page)
-                .navigationTitle("Import from Photos")
-                .toolbarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .cancellationAction) {
-                        Button("Close") { dismiss() }
-                    }
-                    if case let .ready(trips) = phase, !trips.isEmpty {
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("Import \(selectedCount(trips))") { importSelected(trips) }
-                                .disabled(selectedCount(trips) == 0)
-                        }
-                    }
-                }
-                .task { await start() }
         }
-        .sheetSize(width: 560, height: 720)
+        .task { await start() }
+    }
+
+    private var actions: SheetActions {
+        switch phase {
+        case let .ready(trips) where !trips.isEmpty:
+            let count = selectedCount(trips)
+            return .confirm(
+                "Import \(count)",
+                enabled: count > 0,
+                cancel: { dismiss() },
+                action: { importSelected(trips) }
+            )
+        case .imported:
+            return .done { dismiss() }
+        default:
+            return .cancel { dismiss() }
+        }
     }
 
     @ViewBuilder
@@ -67,26 +79,35 @@ struct PhotoImportScreen: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         case .denied:
             ContentUnavailableView {
-                Label("No access to Photos", systemImage: "photo.on.rectangle.angled")
+                Label("No access to Photos", symbol: .importPhotos)
             } description: {
                 Text(
                     "Unigrids reads only the date and place of each photo, on this device. "
                         + "Allow access in Settings to find visits you have not logged."
                 )
+            } actions: {
+                if let settings = Self.settingsURL {
+                    Button("Open Settings") { AppServices.openExternally(settings) }
+                        .buttonStyle(BrochureButtonStyle(.primary, fullWidth: false))
+                }
             }
-        case .scanning:
-            VStack(spacing: 10) {
-                ProgressView()
-                Text("Reading \(scanned.formatted()) photos on this device")
+        case .reading:
+            VStack(spacing: 12) {
+                ProgressView(value: Double(scanned), total: Double(max(total, 1)))
+                    .frame(maxWidth: 280)
+                Text("Read \(scanned.formatted()) of \(total.formatted()) photos on this device")
                     .font(UnigridStyle.rowDetail)
                     .foregroundStyle(style.inkSecondary)
                     .monospacedDigit()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+        case .matching:
+            ProgressView("Matching photos to places")
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
         case let .ready(trips) where trips.isEmpty:
             ContentUnavailableView(
                 "Nothing new to import",
-                systemImage: "checkmark.circle",
+                systemImage: UnigridsSymbol.visited.systemName,
                 description: Text(
                     "None of your geotagged photos were taken in a place you have not already "
                         + "logged on that day."
@@ -97,10 +118,21 @@ struct PhotoImportScreen: View {
         case let .imported(count):
             ContentUnavailableView(
                 "\(count) visit\(count == 1 ? "" : "s") added",
-                systemImage: "checkmark.circle.fill",
-                description: Text("They are in Trips, marked as from your photos.")
+                systemImage: UnigridsSymbol.visited.systemName,
+                description: Text(
+                    "They are in Trips, marked as from your photos."
+                        + (failures > 0 ? " \(failures) could not be saved." : "")
+                )
             )
         }
+    }
+
+    private static var settingsURL: URL? {
+        #if os(iOS)
+            URL(string: UIApplication.openSettingsURLString)
+        #else
+            URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Photos")
+        #endif
     }
 
     private func proposals(_ trips: [ProposedTrip]) -> some View {
@@ -111,11 +143,10 @@ struct PhotoImportScreen: View {
                     Label { Text("Stamp the passport too") } icon: { StampIcon() }
                 }
             } footer: {
-                Text(
+                FormNote(
                     "Untick anything you do not want. Photos stay in your library; the log "
                         + "keeps a reference to them."
                 )
-                .font(UnigridStyle.caption)
             }
             ForEach(trips) { trip in
                 Section {
@@ -142,7 +173,6 @@ struct PhotoImportScreen: View {
             }
         }
         .listStyle(.plain)
-        .paperPage()
     }
 
     private func selectedCount(_ trips: [ProposedTrip]) -> Int {
@@ -153,7 +183,7 @@ struct PhotoImportScreen: View {
         let states = trip.visits.compactMap { store.place($0.placeID)?.states.first?.name }
         let main = Dictionary(grouping: states, by: \.self).max { $0.value.count < $1.value.count }?
             .key
-        let when = trip.start.formatted(.dateTime.month(.wide).year())
+        let when = trip.start.formatted(UnigridsFormat.month())
         return [main, when].compactMap(\.self).joined(separator: ", ")
     }
 
@@ -166,16 +196,31 @@ struct PhotoImportScreen: View {
             phase = .denied
             return
         }
-        phase = .scanning
-        let photos = await Self.geotaggedPhotos { count in
-            Task { @MainActor in scanned = count }
+        phase = .reading
+        let photos = await Self.geotaggedPhotos { count, total in
+            Task { @MainActor in
+                scanned = count
+                self.total = total
+            }
         }
+        phase = .matching
+        let store = store
         let locator = PlaceLocator(boundaries: store.boundaries)
+        // Days at each place, so a visit already logged is matched on the same day the
+        // proposal is reckoned in.
         let logged = Set(visits.map {
-            PhotoVisits.loggedKey($0.place, Calendar.current.startOfDay(for: $0.date))
+            PhotoVisits.loggedKey(
+                $0.place,
+                UnigridsCalendar.gregorian(at: store.place($0.place)).startOfDay(for: $0.date)
+            )
         })
         let proposed = await Task.detached(priority: .userInitiated) {
-            PhotoVisits.propose(photos: photos, locator: locator, alreadyLogged: logged)
+            PhotoVisits.propose(
+                photos: photos,
+                locator: locator,
+                alreadyLogged: logged,
+                calendarAt: { UnigridsCalendar.gregorian(at: store.place($0)) }
+            )
         }.value
         phase = .ready(PhotoVisits.trips(from: proposed))
     }
@@ -183,14 +228,16 @@ struct PhotoImportScreen: View {
     /// Every photo with a location, read off the library's metadata. Only the date and
     /// the coordinate are read: no image is opened here.
     private static func geotaggedPhotos(
-        progress: @escaping @Sendable (Int) -> Void
+        progress: @escaping @Sendable (Int, Int) -> Void
     ) async -> [GeoPhoto] {
         await Task.detached(priority: .userInitiated) {
             let options = PHFetchOptions()
             options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
             let assets = PHAsset.fetchAssets(with: .image, options: options)
+            let total = assets.count
+            progress(0, total)
             var photos: [GeoPhoto] = []
-            photos.reserveCapacity(assets.count / 2)
+            photos.reserveCapacity(total / 2)
             assets.enumerateObjects { asset, index, _ in
                 if let location = asset.location, let date = asset.creationDate {
                     photos.append(GeoPhoto(
@@ -202,19 +249,23 @@ struct PhotoImportScreen: View {
                         )
                     ))
                 }
-                if index.isMultiple(of: 500) {
-                    progress(index)
+                if index.isMultiple(of: 250) {
+                    progress(index, total)
                 }
             }
+            progress(total, total)
             return photos
         }.value
     }
 
     // MARK: Importing
 
+    /// Log what was ticked, and offer to take the whole import back in one undo.
     private func importSelected(_ trips: [ProposedTrip]) {
         let log = LogStore(context: context)
+        var made = RecordIDs()
         var count = 0
+        var failed = 0
         for proposed in trips {
             let chosen = proposed.visits.filter { !excluded.contains($0.id) }
             guard !chosen.isEmpty else { continue }
@@ -226,30 +277,57 @@ struct PhotoImportScreen: View {
                     endDate: chosen.last?.day,
                     status: .done
                 )
+                if let trip {
+                    made.trips.append(trip.id)
+                }
             }
             for visit in chosen {
-                guard let logged = try? log.checkIn(
-                    to: visit.placeID,
-                    on: visit.first,
-                    source: .photoImport,
-                    trip: trip
-                ) else { continue }
-                if let checkIn = try? log.checkIn(
-                    at: .place(visit.placeID),
-                    during: logged,
-                    on: visit.first
-                ) {
-                    _ = try? log.update {
-                        checkIn.photoAssetIdentifiers = Array(visit.photoIDs.prefix(50))
-                    }
+                do {
+                    try record(visit, trip: trip, log: log, into: &made)
+                    count += 1
+                } catch {
+                    failed += 1
                 }
-                if alsoStamp {
-                    _ = try? log.stamp(visit.placeID, on: visit.first)
-                }
-                count += 1
             }
         }
+        failures = failed
         phase = .imported(count)
+        if count > 0 {
+            let change = UndoableChange(
+                subject: .imported(
+                    visits: made.visits.count, trips: made.trips.count, stamps: made.stamps.count
+                ),
+                takeOut: made
+            )
+            undo?.offer(change, message: change.summary { _ in nil })
+        }
+    }
+
+    private func record(
+        _ visit: ProposedVisit,
+        trip: Trip?,
+        log: LogStore,
+        into made: inout RecordIDs
+    ) throws {
+        let calendar = UnigridsCalendar.gregorian(at: store.place(visit.placeID))
+        let existing = try log.visit(to: visit.placeID, on: visit.first, calendar: calendar)
+        let logged = try log.checkIn(
+            to: visit.placeID,
+            on: visit.first,
+            source: .photoImport,
+            trip: trip,
+            calendar: calendar
+        )
+        if existing == nil {
+            made.visits.append(logged.id)
+        }
+        let checkIn = try log.checkIn(at: .place(visit.placeID), during: logged, on: visit.first)
+        made.checkIns.append(checkIn.id)
+        try log.update { checkIn.photoAssetIdentifiers = Array(visit.photoIDs.prefix(50)) }
+        if alsoStamp {
+            let stamp = try log.stamp(visit.placeID, on: visit.first, calendar: calendar)
+            made.stamps.append(stamp.id)
+        }
     }
 }
 
@@ -259,6 +337,10 @@ private struct ProposedVisitRow: View {
     let visit: ProposedVisit
     let place: Place?
     @Binding var isOn: Bool
+
+    private var calendar: Calendar {
+        UnigridsCalendar.gregorian(at: place)
+    }
 
     var body: some View {
         Toggle(isOn: $isOn) {
@@ -271,7 +353,7 @@ private struct ProposedVisitRow: View {
                         .font(UnigridStyle.rowTitle)
                         .foregroundStyle(style.ink)
                     Text(
-                        "\(visit.day.formatted(date: .abbreviated, time: .omitted)) · "
+                        "\(visit.day.formatted(UnigridsFormat.day(in: calendar))) · "
                             + "\(visit.photoIDs.count) photo\(visit.photoIDs.count == 1 ? "" : "s")"
                     )
                     .font(UnigridStyle.rowDetail)
@@ -298,7 +380,7 @@ struct PhotoThumbnail: View {
                 Rectangle()
                     .fill(style.rule)
                     .overlay {
-                        Image(systemName: "photo")
+                        Image(.photo)
                             .foregroundStyle(style.inkSecondary)
                     }
             }

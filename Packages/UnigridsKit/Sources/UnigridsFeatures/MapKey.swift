@@ -130,7 +130,13 @@ struct MapKeySheet: View {
     let counts: [SiteType: Int]
 
     var body: some View {
-        NavigationStack {
+        SheetPage(
+            "Map key",
+            kicker: filter.isNarrowed ? "Filtered" : "Every place shown",
+            actions: .done { dismiss() },
+            width: 520,
+            height: 720
+        ) {
             List {
                 ForEach(SiteType.Group.allCases) { group in
                     Section {
@@ -221,20 +227,13 @@ struct MapKeySheet: View {
                     Kicker("Reading the map")
                 }
             }
-            .paperPage()
-            .navigationTitle("Map key")
-            .toolbarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Reset") { filter = .everything }
+                    Button("Clear filters") { filter = .everything }
                         .disabled(!filter.isNarrowed)
-                }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Done") { dismiss() }
                 }
             }
         }
-        .sheetSize(width: 520, height: 720)
         .presentationDetents([.medium, .large])
     }
 

@@ -94,11 +94,15 @@ public struct ProposedTrip: Hashable, Sendable, Identifiable {
 /// accept, edit or discard."
 public enum PhotoVisits {
     /// Visits the photos suggest: one per place per day, leaving out days already logged.
+    ///
+    /// A day is the place's own where `calendarAt` gives it — an evening photo in Hawaiʻi is
+    /// that evening's, not the next morning's back home — and `calendar`'s otherwise.
     public static func propose(
         photos: [GeoPhoto],
         locator: PlaceLocator,
         alreadyLogged: Set<String> = [],
-        calendar: Calendar = UnigridsCalendar.gregorian()
+        calendar: Calendar = UnigridsCalendar.gregorian(),
+        calendarAt: ((UnigridsID) -> Calendar)? = nil
     ) -> [ProposedVisit] {
         struct Group {
             let place: UnigridsID
@@ -108,7 +112,7 @@ public enum PhotoVisits {
         var grouped: [String: Group] = [:]
         for photo in photos {
             guard let place = locator.place(at: photo.location) else { continue }
-            let day = calendar.startOfDay(for: photo.date)
+            let day = (calendarAt?(place) ?? calendar).startOfDay(for: photo.date)
             let key = loggedKey(place, day)
             guard !alreadyLogged.contains(key) else { continue }
             grouped[key, default: Group(place: place, day: day)].photos.append(photo)
