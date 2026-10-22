@@ -124,15 +124,18 @@ struct ParkMapView: View {
 /// A sight's number on a map, in the black square the guide's list uses.
 struct SightNumber: View {
     @Environment(\.unigrid) private var style
+    @ScaledMetric(relativeTo: .caption) private var side: CGFloat = 22
     let number: Int
     var isSelected = false
 
     var body: some View {
         Text("\(number)")
-            .font(.custom("HelveticaNeue-Bold", size: 12))
+            .font(.custom("HelveticaNeue-Bold", size: 12, relativeTo: .caption))
+            .monospacedDigit()
             .foregroundStyle(isSelected ? style.onAccent : style.bandInk)
-            .frame(width: 22, height: 22)
+            .frame(minWidth: side, minHeight: side)
             .background(isSelected ? style.accent : style.band)
             .overlay { Rectangle().strokeBorder(style.bandInk, lineWidth: 1) }
+            .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 }
