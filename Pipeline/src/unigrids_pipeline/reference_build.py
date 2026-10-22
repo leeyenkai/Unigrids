@@ -33,6 +33,8 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
+from timezonefinder import TimezoneFinder
+
 from . import (
     brochures,
     climate,
@@ -44,6 +46,7 @@ from . import (
     reference_content,
     state_parks,
     trail_catalogue,
+    visitation,
     wikipedia_match,
 )
 from .reference_fetch import photo_filename
@@ -192,6 +195,10 @@ def build(*, online: bool = False) -> None:
     documents = brochures.build(brochures_dir, places) if brochures_dir else None
     climate_dir = _latest_raw_or_none("climate")
     normals = climate.build(climate_dir) if climate_dir else None
+
+    pois.extend(_stamp_locations(places, pois, api))
+    visitation.attach(places, visitation.build(rawstore.latest(visitation.SOURCE, visitation.FILE)))
+    _assign_time_zones(places)
 
     if online:
         wikipedia_match.fetch(places, rawstore.today())
@@ -412,7 +419,8 @@ def _sights(
             "name": sight["name"],
             "location": location,
             "rank": rank,
-            "summary": sight.get("note") or _clean((match or {}).get("listingDescription")),
+            "summary": sight.get("note")
+            or _without_notices(_clean((match or {}).get("listingDescription"))),
             "hasStamp": False,
         }
         if match:
@@ -449,7 +457,7 @@ def _visitor_centres(
             "name": name,
             "location": location,
             "rank": 0,
-            "summary": _first_sentences(_clean(centre.get("description")), 2),
+            "summary": _first_sentences(_without_notices(_clean(centre.get("description"))), 2),
             "hasStamp": has_stamp,
         }
         if hours := _hours_line(centre):
@@ -477,7 +485,7 @@ def _campgrounds(slug: str, place_id: str, camps: list[dict[str, Any]]) -> list[
             "name": name,
             "location": location,
             "rank": 0,
-            "summary": _first_sentences(_clean(camp.get("description")), 1),
+            "summary": _first_sentences(_without_notices(_clean(camp.get("description"))), 1),
             "hasStamp": False,
         })
     return result
@@ -532,8 +540,40 @@ def _nps_unit(park: dict[str, Any], api: _NPSData) -> tuple[dict[str, Any], list
         place["activities"] = activities
     if photo:
         place["image"] = _guide_image(photo[0])
+    if info := _visitor_info(park):
+        place["visitorInfo"] = info
     pois = _visitor_centres(code.lower(), place_id, api.visitor_centres_for(code), api, code)
     return place, pois
+
+
+def _visitor_info(park: dict[str, Any]) -> dict[str, Any]:
+    """What a visitor needs before going to an NPS unit, as the NPS publishes it — the
+    same fields a national park's guide carries in Plan your visit and Getting there."""
+    info: dict[str, Any] = {}
+    if fees := _fees(park):
+        info["fees"] = fees
+    for key, field in (
+        ("operatingHours", _hours_note(park)),
+        ("directions", _clean(park.get("directionsInfo"))),
+        ("weather", _clean(park.get("weatherInfo"))),
+    ):
+        if field:
+            info[key] = field
+    contacts = park.get("contacts") or {}
+    phones = [
+        (entry.get("phoneNumber") or "").strip()
+        for entry in contacts.get("phoneNumbers") or []
+        if (entry.get("type") or "").lower() == "voice"
+    ]
+    if phone := next((number for number in phones if number), None):
+        info["phone"] = phone
+    emails = [
+        (entry.get("emailAddress") or "").strip()
+        for entry in contacts.get("emailAddresses") or []
+    ]
+    if email := next((address for address in emails if "@" in address), None):
+        info["email"] = email
+    return info
 
 
 # The NPS Data API's activity names, folded into the dozen the map can filter on
@@ -635,6 +675,87 @@ def _wikimedia_image(licence: dict[str, Any] | None) -> dict[str, Any] | None:
     return image
 
 
+# MARK: - Stamp locations
+
+
+def _stamp_locations(
+    places: list[dict[str, Any]], pois: list[dict[str, Any]], api: _NPSData
+) -> list[dict[str, Any]]:
+    """A point of interest for every passport stamp location no visitor centre stands for.
+
+    The NPS lists a site's cancellations by label and type, with no coordinates. A label
+    that names one of the site's visitor centres is that centre's stamp (``hasStamp``);
+    every other one — a stamp kept at a ranger station, a museum, a fort — becomes a
+    ``stampLocation`` at the site's own centre, so the passport has a slot for it. Those
+    are for the passport only: no map draws a stamp location, because its position is
+    the site's, not its own.
+    """
+    by_place: dict[str, list[dict[str, Any]]] = {}
+    for poi in pois:
+        by_place.setdefault(poi["placeID"], []).append(poi)
+    added: list[dict[str, Any]] = []
+    for place in places:
+        code = place.get("npsParkCode")
+        if not code:
+            continue
+        rows = api.stamp_rows_for(code)
+        if not rows:
+            continue
+        slug = place["id"].split("-", 1)[1] if "-" in place["id"] else place["id"]
+        stamped = {
+            _normal(poi["name"]) for poi in by_place.get(place["id"], []) if poi.get("hasStamp")
+        }
+        seen: set[str] = set()
+        for row in rows:
+            label = _stamp_label(row.get("label") or "")
+            normal = _normal(label)
+            if not normal or normal in seen:
+                continue
+            seen.add(normal)
+            if any(normal in name or name in normal for name in stamped):
+                continue
+            added.append({
+                "id": ids.poi_id(slug, f"stamp {label}"),
+                "placeID": place["id"],
+                "kind": "stampLocation",
+                "name": label,
+                "location": place["centre"],
+                "rank": 0,
+                "hasStamp": True,
+            })
+    print(f"    stamp locations: {len(added)} beside the visitor centres that keep one")
+    return added
+
+
+def _stamp_label(raw: str) -> str:
+    """A stamp location's name without a status that will go stale: "(Temporarily
+    Closed)", "- Closed for Renovation"."""
+    label = re.sub(r"\s*\((?:[^)]*clos[^)]*)\)", "", raw, flags=re.IGNORECASE)
+    label = re.sub(r"\s*[-–]\s*clos.*$", "", label, flags=re.IGNORECASE)
+    return re.sub(r"\s+", " ", label).strip()
+
+
+# MARK: - Time zones
+
+
+def _assign_time_zones(places: list[dict[str, Any]]) -> None:
+    """Each place's IANA time zone, at its centre.
+
+    A visit's calendar day is the day where it happened, whatever zone the device is in
+    later (the America 250 seal, the weather for the day, one visit per place per day).
+    A place that straddles zones takes its centre's — Glen Canyon is Arizona's — which is
+    the zone a visitor centre in the middle keeps.
+    """
+    finder = TimezoneFinder()
+    for place in places:
+        centre = place.get("centre") or {}
+        if not centre:
+            continue
+        zone = finder.timezone_at(lng=centre["longitude"], lat=centre["latitude"])
+        if zone:
+            place["timeZone"] = zone
+
+
 # MARK: - Raw data
 
 
@@ -649,11 +770,13 @@ class _NPSData:
         self._places = _group_related(load("places"))
         self._camps = _group(load("campgrounds"), "parkCode")
         self._stamps: dict[str, list[str]] = {}
+        self._stamp_rows: dict[str, list[dict[str, Any]]] = {}
         for stamp in load("passportstamplocations"):
             label = _normal(stamp.get("label") or "")
             for related in stamp.get("parks") or []:
                 code = (related.get("parkCode") or "").upper()
                 self._stamps.setdefault(code, []).append(label)
+                self._stamp_rows.setdefault(code, []).append(stamp)
 
     def visitor_centres_for(self, code: str) -> list[dict[str, Any]]:
         return self._centres.get(code, [])
@@ -666,6 +789,9 @@ class _NPSData:
 
     def stamp_labels_for(self, code: str) -> list[str]:
         return [label for label in self._stamps.get(code, []) if label]
+
+    def stamp_rows_for(self, code: str) -> list[dict[str, Any]]:
+        return self._stamp_rows.get(code, [])
 
 
 def _group(rows: list[dict[str, Any]], key: str) -> dict[str, list[dict[str, Any]]]:
@@ -852,7 +978,39 @@ def _hours_line(row: dict[str, Any]) -> str | None:
         if value.lower() == "closed":
             return "Closed"
         return f"Daily, {value.replace(' - ', '–')}"
-    return _first_sentences(_clean(hours[0].get("description")), 1)
+    return _first_sentences(_without_notices(_clean(hours[0].get("description"))), 1)
+
+
+# A sentence that announces a dated opening or closure — "Closed for 2026.", "Scheduled to
+# open late October 2026", "open May 9–October 31, 2025" — is true for a season and then
+# wrong for good. The bundle outlives the season, so the sentence is left out; live alerts
+# carry closures.
+_YEAR = r"\b202\d\b"
+_OPENING = r"\b(?:clos(?:ed|es|ing|ure)|re-?open(?:s|ed|ing)?|open(?:s|ed|ing)?|scheduled|until)\b"
+_DATED_NOTICE = re.compile(
+    rf"{_OPENING}[^.!?]*{_YEAR}|{_YEAR}[^.!?]*\b(?:clos(?:ed|es|ing|ure)|re-?open\w*)\b",
+    re.IGNORECASE,
+)
+_SHOUTED = re.compile(r"^[\s*#!]+|[\s*#]+$")
+
+
+def _without_notices(text: str | None) -> str | None:
+    """``text`` without dated opening and closure notices or leading asterisks."""
+    if not text:
+        return text
+    # A notice set off in asterisks ("***CLOSED as of …***") is its own sentence.
+    sentences = [
+        sentence
+        for block in re.split(r"\*{2,}", text)
+        for sentence in re.split(r"(?<=[.!?])\s+", block.strip())
+    ]
+    kept = [
+        _SHOUTED.sub("", sentence).strip()
+        for sentence in sentences
+        if not _DATED_NOTICE.search(sentence) and not re.match(r"^\W*CLOSED\b", sentence)
+    ]
+    cleaned = " ".join(sentence for sentence in kept if sentence)
+    return cleaned or None
 
 
 _TAG = re.compile(r"<[^>]+>")
@@ -863,10 +1021,17 @@ def _strip_tags(text: str) -> str:
     return _SPACE.sub(" ", html.unescape(_TAG.sub(" ", text))).strip()
 
 
+# Characters a source lost in transit, put back where the right text is known. The NPS
+# API returns Haleakalā's ʻokina as a question mark in some captions.
+TEXT_REPAIRS = {"?Ohe?o": "ʻOheʻo", "Kīpahulu?": "Kīpahulu"}
+
+
 def _clean(text: Any) -> str | None:
     if not isinstance(text, str):
         return None
     cleaned = _strip_tags(text)
+    for damaged, repaired in TEXT_REPAIRS.items():
+        cleaned = cleaned.replace(damaged, repaired)
     return cleaned or None
 
 

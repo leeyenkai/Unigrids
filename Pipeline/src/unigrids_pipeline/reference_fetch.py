@@ -48,6 +48,7 @@ from . import (
     reference_content,
     state_parks,
     trail_catalogue,
+    visitation,
 )
 from .rawstore import FetchRecord, SourceTerms
 from .sources import arcgis, http, npsapi
@@ -162,6 +163,7 @@ def fetch(*, refresh: bool = False) -> Path:
     codes = sorted({place["npsParkCode"] for place in places if place.get("npsParkCode")})
     brochures.fetch(codes, version, refresh=refresh)
     climate.fetch(version, refresh=refresh)
+    visitation.fetch(version, refresh=refresh)
 
     _fetch_photos(version, refresh=refresh)
     return root
