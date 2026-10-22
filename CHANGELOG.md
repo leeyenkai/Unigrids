@@ -210,6 +210,10 @@ makes the change. A release moves that block under a version heading with its da
 - Every place carries its own time zone; NPS sites carry monthly visitation and their
   visitor information; 42 parks gain a measured elevation range; 226 passport stamp
   locations are places of their own.
+- **Alert notifications** for parks on trips under way or starting within 30 days: a new
+  danger or closure posted by the NPS arrives as a notification that opens the park —
+  through background app refresh on iPhone and iPad, every three hours while the app is
+  open on the Mac. Quiet (provisional) until you choose otherwise.
 
 ### Changed
 

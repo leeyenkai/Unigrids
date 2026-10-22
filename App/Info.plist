@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyLists-1.0.dtd">
+<plist version="1.0">
+<!--
+	iPhone and iPad only (INFOPLIST_FILE[sdk=iphone*]), merged with the keys the build
+	settings generate. Background app refresh lets AlertWatch look at the NPS alert feed
+	for parks on upcoming trips while the app is closed; the identifier is
+	AlertWatch.taskID.
+-->
+<dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+	</array>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>app.unigrids.alerts</string>
+	</array>
+</dict>
+</plist>

@@ -282,7 +282,7 @@ As built (toward `1.0.0`): trips with ordered stops of five kinds — a place, a
 - **Forecasts** for dated stops within the next 16 days — daily high, low, chance of precipitation, condition, sunrise and sunset — from Open-Meteo rather than WeatherKit (§17).
 - **Reminders** for permits, timed entry and booking windows, set per trip, delivered as local notifications at the time the user chooses; booking happens on Recreation.gov.
 - **Climate** for the best-time question: each national park guide charts ten years of monthly averages (§6). Monthly visitation is not in the bundle, so the weather-versus-crowds view is weather only.
-- Live alerts show on the map, in the guide and on the trip. Background refresh and alert notifications are not built: the app fetches alerts when it opens.
+- Live alerts show on the map, on a park's map card, in the guide and on the trip. **Alert notifications** watch the parks on trips under way or starting within 30 days: iOS background app refresh (and the app coming forward) on iPhone and iPad, every three hours while the app is open on the Mac. A new danger or closure posts a notification, delivered provisionally until the reader decides, that opens the park; a park newly added to a trip is taken in silently. Without an NPS key in the build nothing runs. Background refresh needs a signed build on a device to be seen working.
 
 Trip itineraries
 

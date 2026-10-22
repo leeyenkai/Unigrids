@@ -16,6 +16,7 @@ struct UnigridsApp: App {
     /// The user's log, opened when the first window appears — never before the device
     /// can read it, and never replaced by a store that would vanish at quit.
     @State private var log = StoreLoader(sampleData: DebugSampleData.isRequested)
+    @Environment(\.scenePhase) private var scenePhase
 
     init() {
         AppServices.startRoutingNotifications()
@@ -34,9 +35,31 @@ struct UnigridsApp: App {
                     .modelContainer(container)
             }
             .unigridsAppearance()
+            #if os(macOS)
+                // Alerts for parks on upcoming trips, every few hours while the app is open.
+                .task { await AlertWatch.keepWatching(log: log, store: reference.store) }
+            #endif
         }
         #if os(macOS)
         .defaultSize(width: 1180, height: 820)
+        #endif
+        #if os(iOS)
+        // Alerts for parks on upcoming trips: looked at when the app comes forward, and
+        // when iOS grants a background refresh, which is asked for again on the way out.
+        .onChange(of: scenePhase) { _, phase in
+            switch phase {
+            case .active:
+                Task { await AlertWatch.run(log: log, store: reference.store) }
+            case .background:
+                AlertWatch.schedule()
+            default:
+                break
+            }
+        }
+        .backgroundTask(.appRefresh(AlertWatch.taskID)) { [log, store = reference.store] in
+            await AlertWatch.run(log: log, store: store)
+            await AlertWatch.schedule()
+        }
         #endif
 
         #if os(macOS)

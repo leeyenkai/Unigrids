@@ -251,6 +251,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=iphoneos*]" = Info.plist;
+				"INFOPLIST_FILE[sdk=iphonesimulator*]" = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Unigrids;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
@@ -292,6 +294,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=iphoneos*]" = Info.plist;
+				"INFOPLIST_FILE[sdk=iphonesimulator*]" = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Unigrids;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
