@@ -84,11 +84,20 @@ private struct WeekAhead: View {
         }
     }
 
+    /// "TUE" for a forecast day's `yyyy-MM-dd` key. Read in a fixed Gregorian calendar
+    /// at noon UTC and named in UTC, so neither the reader's calendar system nor their
+    /// time zone can move the key onto a neighbouring day.
     private func weekday(_ key: String) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        guard let date = formatter.date(from: key) else { return key }
-        return date.formatted(.dateTime.weekday(.abbreviated)).uppercased()
+        let parts = key.split(separator: "-").compactMap { Int($0) }
+        let utc = UnigridsCalendar.gregorian(.gmt)
+        guard parts.count == 3,
+              let date = utc.date(from: DateComponents(
+                  year: parts[0], month: parts[1], day: parts[2], hour: 12
+              ))
+        else { return key }
+        var style = Date.FormatStyle.dateTime.weekday(.abbreviated)
+        style.timeZone = .gmt
+        return date.formatted(style).uppercased()
     }
 }
 

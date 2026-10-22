@@ -122,8 +122,12 @@ final class Forecasts {
     private(set) var byPlace: [UnigridsID: OpenMeteoDaily] = [:]
     private var fetchedAt: [UnigridsID: Date] = [:]
 
+    /// Open-Meteo answers in the place's own days (`timezone=auto`), so the day is looked
+    /// up the same way.
     func forecast(for place: Place, on date: Date) -> DailyWeather? {
-        byPlace[place.id]?.day(DailyWeather.key(for: date))
+        byPlace[place.id]?.day(
+            DailyWeather.key(for: date, calendar: UnigridsCalendar.gregorian(at: place))
+        )
     }
 
     func load(_ places: [Place]) async {
@@ -157,9 +161,10 @@ enum OpenMeteo {
     /// asked of the forecast service's own short history instead.
     static func history(
         at point: Coordinate,
-        on date: Date
+        on date: Date,
+        calendar: Calendar
     ) async -> (DailyWeather, recent: Bool)? {
-        let key = DailyWeather.key(for: date)
+        let key = DailyWeather.key(for: date, calendar: calendar)
         let age = Date().timeIntervalSince(date)
         guard age > -3600 else { return nil }
         let daily = "weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum"

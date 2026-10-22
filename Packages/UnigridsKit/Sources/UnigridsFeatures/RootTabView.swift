@@ -57,8 +57,8 @@ public struct RootTabView: View {
         .task(id: upcomingPlaceIDs) {
             await AppServices.brochures.prefetch(placeIDs: upcomingPlaceIDs, store: store)
         }
-        .task(id: visitCount) {
-            await WeatherBackfill.run(context: context, store: store)
+        .onChange(of: visitCount, initial: true) {
+            WeatherBackfill.schedule(context: context, store: store)
         }
         .task(id: reminders.count) {
             // The log is the truth: schedule what synced in, drop what was deleted.
