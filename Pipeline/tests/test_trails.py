@@ -213,3 +213,18 @@ def test_without_a_trailhead_the_walk_starts_low():
 
     route = trail_catalogue.walking_order([summit_first], [], height)
     assert route[0][0] == (0.0, 0.0)
+
+
+def test_earlier_elevation_samples_serve_a_later_snapshot(tmp_path, monkeypatch):
+    """A refresh that re-samples nothing still measures: 3DEP does not change between
+    snapshots, so the newest earlier one's samples are used, and a failed sample is not."""
+    from unigrids_pipeline import config, trail_catalogue
+
+    monkeypatch.setattr(config, "RAW_DIR", tmp_path)
+    older = tmp_path / "2026-10-19" / "trail-elevation"
+    older.mkdir(parents=True)
+    (older / "ZION.json").write_text('{"1,2": 1500.5, "3,4": null}')
+    (tmp_path / "2026-10-22" / "trail-elevation").mkdir(parents=True)
+
+    assert trail_catalogue._earlier_cache("ZION") == {"1,2": 1500.5}
+    assert trail_catalogue._earlier_cache("ACAD") == {}

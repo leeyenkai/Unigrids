@@ -247,6 +247,11 @@ def sample_elevations(raw_trails: Path, unit_outlines: dict[str, list[outline.Po
                     cache[key] = None
                     wanted.append((station.longitude, station.latitude))
         if not wanted:
+            # Everything came from an earlier snapshot: keep a copy in this one, so the
+            # build that reads this snapshot finds it.
+            if cache and not cache_path.exists():
+                cache_path.write_text(json.dumps(cache, separators=(",", ":")))
+                record.add_file(cache_path, root=directory)
             continue
         print(f"    trail-elevation/{code}: sampling {len(wanted)} stations", flush=True)
         batches = [
@@ -352,7 +357,9 @@ def build(
     for _, row in reference_content.national_park_rows():
         code = row["npsParkCode"].upper()
         cache_path = elevation_dir / f"{code}.json"
-        cache = json.loads(cache_path.read_text()) if cache_path.exists() else {}
+        # Elevation at a point does not change between snapshots, so an earlier one's
+        # samples serve where this one has none.
+        cache = json.loads(cache_path.read_text()) if cache_path.exists() else _earlier_cache(code)
 
         def sampler(longitude: float, latitude: float, cache: dict = cache) -> float | None:
             return cache.get(_key(longitude, latitude))
