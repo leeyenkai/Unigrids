@@ -23,9 +23,10 @@ import UnigridsReference
 
 /// The brochures kept on this device.
 ///
-/// Files live in Application Support, outside iCloud: they are copies of public
-/// documents the app can fetch again, not the reader's data, and they do not belong in a
-/// backup or in sync.
+/// Files live in the app's own Application Support folder, excluded from backup: they are
+/// copies of public documents the app can fetch again, not the reader's data, and they
+/// belong in neither a backup nor sync — an iCloud backup full of re-downloadable PDFs is
+/// what Apple's storage guidelines ask apps not to make.
 @MainActor
 @Observable
 public final class BrochureLibrary {
@@ -47,17 +48,38 @@ public final class BrochureLibrary {
     private(set) var pinned: Set<String>
     private let directory: URL
     private let defaults: UserDefaults
+    /// Downloads under way, so a document asked for twice is fetched once.
+    private var inFlight: [URL: Task<URL, any Error>] = [:]
     private static let pinnedKey = "brochures.pinned"
     private static let prefetchedKey = "brochures.lastPrefetch"
 
     public init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
         pinned = Set(defaults.stringArray(forKey: Self.pinnedKey) ?? [])
-        let base = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)
-            .first ?? FileManager.default.temporaryDirectory
-        directory = base.appendingPathComponent("Brochures", isDirectory: true)
+        directory = URL.applicationSupportDirectory
+            .appending(path: "Unigrids/Brochures", directoryHint: .isDirectory)
+        Self.moveEarlierLibrary(to: directory)
         try? FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        var folder = directory
+        var values = URLResourceValues()
+        values.isExcludedFromBackup = true
+        try? folder.setResourceValues(values)
         entries = loadIndex()
+    }
+
+    /// Earlier builds kept brochures in `Application Support/Brochures` — on the Mac, while
+    /// the app is not sandboxed, a folder in the user's own Library with no name of the
+    /// app's on it. Moved once, and only if it holds this library's index.
+    private static func moveEarlierLibrary(to destination: URL) {
+        let earlier = URL.applicationSupportDirectory.appending(path: "Brochures")
+        let manager = FileManager.default
+        guard !manager.fileExists(atPath: destination.path),
+              manager.fileExists(atPath: earlier.appending(path: "index.json").path)
+        else { return }
+        try? manager.createDirectory(
+            at: destination.deletingLastPathComponent(), withIntermediateDirectories: true
+        )
+        try? manager.moveItem(at: earlier, to: destination)
     }
 
     public var totalBytes: Int {
@@ -90,17 +112,45 @@ public final class BrochureLibrary {
     }
 
     /// The document's file on this device, fetching it from the NPS if it is not here.
-    func fetch(_ document: ParkDocument, for placeID: UnigridsID) async throws -> URL {
+    /// `inexpensiveOnly` keeps a download the reader did not ask for off cellular and Low
+    /// Data networks.
+    func fetch(
+        _ document: ParkDocument,
+        for placeID: UnigridsID,
+        inexpensiveOnly: Bool = false
+    ) async throws -> URL {
         if let local = localFile(for: document) {
             return local
         }
+        if let running = inFlight[document.url] {
+            return try await running.value
+        }
+        let task = Task { try await download(
+            document,
+            for: placeID,
+            inexpensiveOnly: inexpensiveOnly
+        ) }
+        inFlight[document.url] = task
         downloading.insert(document.url)
-        defer { downloading.remove(document.url) }
+        defer {
+            inFlight[document.url] = nil
+            downloading.remove(document.url)
+        }
+        return try await task.value
+    }
+
+    private func download(
+        _ document: ParkDocument,
+        for placeID: UnigridsID,
+        inexpensiveOnly: Bool
+    ) async throws -> URL {
         var request = URLRequest(url: document.url, timeoutInterval: 60)
         request.setValue(
             "Unigrids (iOS and macOS app; no tracking)",
             forHTTPHeaderField: "User-Agent"
         )
+        request.allowsExpensiveNetworkAccess = !inexpensiveOnly
+        request.allowsConstrainedNetworkAccess = !inexpensiveOnly
         let (temporary, response) = try await URLSession.shared.download(for: request)
         guard let http = response as? HTTPURLResponse, http.statusCode == 200 else {
             throw URLError(.badServerResponse)
@@ -150,21 +200,27 @@ public final class BrochureLibrary {
     }
 
     /// Save the brochures of the parks on upcoming trips, at most once a day, and only on
-    /// a network the system does not count as expensive.
+    /// a network the system does not count as expensive. The day is only marked done once
+    /// every one is here: a run cut short — on cellular, or because the trips changed
+    /// while it ran — tries again next time rather than waiting a day.
     func prefetch(placeIDs: [UnigridsID], store: any ReferenceStore) async {
         let last = defaults.object(forKey: Self.prefetchedKey) as? Date
         if let last, Date().timeIntervalSince(last) < 86400 {
             return
         }
-        defaults.set(Date(), forKey: Self.prefetchedKey)
+        var complete = true
         for placeID in placeIDs {
+            guard !Task.isCancelled else { return }
             guard let primary = store.documents(for: placeID)?.primary,
                   localFile(for: primary) == nil else { continue }
-            var request = URLRequest(url: primary.url, timeoutInterval: 60)
-            request.allowsExpensiveNetworkAccess = false
-            request.allowsConstrainedNetworkAccess = false
-            guard await (try? URLSession.shared.data(for: request)) != nil else { continue }
-            _ = try? await fetch(primary, for: placeID)
+            do {
+                _ = try await fetch(primary, for: placeID, inexpensiveOnly: true)
+            } catch {
+                complete = false
+            }
+        }
+        if complete, !Task.isCancelled {
+            defaults.set(Date(), forKey: Self.prefetchedKey)
         }
     }
 
@@ -206,6 +262,7 @@ struct BrochureScreen: View {
     @State private var selected: ParkDocument?
     @State private var file: URL?
     @State private var failed = false
+    @State private var retries = 0
 
     private var documents: ParkDocuments? {
         store.documents(for: place.id)
@@ -223,7 +280,7 @@ struct BrochureScreen: View {
             .navigationTitle(selected?.title ?? place.name)
             .toolbarTitleDisplayMode(.inline)
             .toolbar { toolbar }
-            .task(id: selected) { await load() }
+            .task(id: LoadKey(document: selected, attempt: retries)) { await load() }
             .onAppear {
                 if selected == nil {
                     selected = documents?.primary
@@ -244,7 +301,8 @@ struct BrochureScreen: View {
             unavailable(
                 title: "This brochure could not be opened",
                 message: "It needs a connection the first time, and the NPS may have moved it. "
-                    + "The park's maps page will have the current one."
+                    + "The park's maps page will have the current one.",
+                retry: { retries += 1 }
             )
         } else if let file {
             PDFKitView(url: file)
@@ -262,12 +320,20 @@ struct BrochureScreen: View {
         }
     }
 
-    private func unavailable(title: String, message: String) -> some View {
+    private func unavailable(
+        title: String,
+        message: String,
+        retry: (() -> Void)? = nil
+    ) -> some View {
         ContentUnavailableView {
             Label(title, systemImage: "doc.richtext")
         } description: {
             Text(message)
         } actions: {
+            if let retry {
+                Button("Try again", action: retry)
+                    .buttonStyle(BrochureButtonStyle(.secondary, fullWidth: false))
+            }
             if let page = documents?.page ?? place.officialURL {
                 Link(destination: page) {
                     Label("Open the maps page", systemImage: "arrow.up.right.square")
@@ -315,16 +381,27 @@ struct BrochureScreen: View {
         }
     }
 
+    /// Load the selected document. A load superseded by another tab is cancelled, and a
+    /// cancelled load reports nothing: it once set "could not be opened" after the next
+    /// document had already cleared it, and the error stuck.
     private func load() async {
         file = nil
         failed = false
         guard let selected, let library else { return }
         do {
-            file = try await library.fetch(selected, for: place.id)
+            let url = try await library.fetch(selected, for: place.id)
+            guard !Task.isCancelled else { return }
+            file = url
         } catch {
+            guard !Task.isCancelled else { return }
             failed = true
         }
     }
+}
+
+private struct LoadKey: Hashable {
+    let document: ParkDocument?
+    let attempt: Int
 }
 
 /// The documents a park publishes, as square tabs across the top.
