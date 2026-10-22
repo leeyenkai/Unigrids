@@ -33,11 +33,38 @@ public final class DetectedVisits {
     private let defaults: UserDefaults
     private static let key = "visits.detected"
     static let enabledKey = "visits.autoDetect"
+    /// Whether the saved list has been read. Before the device's first unlock it reads as
+    /// empty, and saving then would overwrite the real one; arrivals noticed meanwhile are
+    /// kept in memory and merged in once it can be read.
+    private var loaded = false
 
     public init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
-        pending = (defaults.data(forKey: Self.key))
+        pending = []
+        if ProtectedData.isAvailable {
+            pending = stored()
+            loaded = true
+        } else {
+            Task { await loadWhenAvailable() }
+        }
+    }
+
+    private func stored() -> [Suggestion] {
+        defaults.data(forKey: Self.key)
             .flatMap { try? JSONDecoder().decode([Suggestion].self, from: $0) } ?? []
+    }
+
+    private func loadWhenAvailable() async {
+        await ProtectedData.available()
+        let noticed = pending
+        pending = stored()
+        loaded = true
+        for suggestion in noticed where !pending.contains(suggestion) {
+            pending.append(suggestion)
+        }
+        if !noticed.isEmpty {
+            save()
+        }
     }
 
     /// Note an arrival, once per place per day.
@@ -59,6 +86,7 @@ public final class DetectedVisits {
     }
 
     private func save() {
+        guard loaded else { return }
         defaults.set(try? JSONEncoder().encode(pending), forKey: Self.key)
     }
 }
@@ -83,8 +111,17 @@ extension AppServices {
         /// Start listening again at launch — including a launch iOS makes in the background
         /// to deliver an arrival — if the reader has turned detection on.
         public static func resume(store: any ReferenceStore) {
-            guard isEnabled, listening == nil else { return }
-            listening = Task { await listen(store: store) }
+            guard listening == nil else { return }
+            // Before the first unlock the setting reads as off whatever it is; wait to read
+            // it rather than conclude the reader turned detection off.
+            listening = Task {
+                await ProtectedData.available()
+                guard isEnabled else {
+                    listening = nil
+                    return
+                }
+                await listen(store: store)
+            }
         }
 
         /// Turn detection on: ask for Always permission and notifications, then watch.

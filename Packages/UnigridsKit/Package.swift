@@ -51,7 +51,13 @@ let package = Package(
             name: "UnigridsReferenceTests",
             dependencies: ["UnigridsReference", "UnigridsCore"]
         ),
-        .testTarget(name: "UnigridsLogTests", dependencies: ["UnigridsLog", "UnigridsCore"]),
+        .testTarget(
+            name: "UnigridsLogTests",
+            dependencies: ["UnigridsLog", "UnigridsCore"],
+            // Read from the source tree by path, so a store fixture is never copied or
+            // processed into the test bundle.
+            exclude: ["Fixtures"]
+        ),
     ],
     swiftLanguageModes: [.v6]
 )
