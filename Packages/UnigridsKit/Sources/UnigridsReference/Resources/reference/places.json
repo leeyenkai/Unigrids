@@ -10888,7 +10888,7 @@
  },
  {
   "id": "nps-ciro",
-  "name": "City Of Rocks",
+  "name": "City of Rocks",
   "designation": "National Reserve",
   "kind": "npsUnit",
   "agency": "nps",
@@ -11449,7 +11449,7 @@
  },
  {
   "id": "nps-crmo",
-  "name": "Craters Of The Moon",
+  "name": "Craters of the Moon",
   "designation": "National Monument & Preserve",
   "kind": "npsUnit",
   "agency": "nps",
@@ -18065,7 +18065,7 @@
  },
  {
   "id": "nps-hofr",
-  "name": "Home Of Franklin D Roosevelt",
+  "name": "Home of Franklin D Roosevelt",
   "designation": "National Historic Site",
   "kind": "npsUnit",
   "agency": "nps",
@@ -28497,7 +28497,7 @@
  },
  {
   "id": "nps-stli",
-  "name": "Statue Of Liberty",
+  "name": "Statue of Liberty",
   "designation": "National Monument",
   "kind": "npsUnit",
   "agency": "nps",
@@ -31101,7 +31101,7 @@
  },
  {
   "id": "nps-wapa",
-  "name": "War In The Pacific",
+  "name": "War in the Pacific",
   "designation": "National Historical Park",
   "kind": "npsUnit",
   "agency": "nps",
@@ -36912,7 +36912,7 @@
  },
  {
   "id": "sp-ar-crater-of-diamonds",
-  "name": "Crater Of Diamonds",
+  "name": "Crater of Diamonds",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -49384,7 +49384,7 @@
  },
  {
   "id": "sp-de-deerfield-golf-and-tennis-club",
-  "name": "Deerfield Golf And Tennis Club",
+  "name": "Deerfield Golf and Tennis Club",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -49999,7 +49999,7 @@
  },
  {
   "id": "sp-de-marian-r-okie-memorial-wildlife-preserve-at-poplar-thicket",
-  "name": "Marian R. Okie Memorial Wildlife Preserve At Poplar Thicket",
+  "name": "Marian R. Okie Memorial Wildlife Preserve at Poplar Thicket",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -51986,7 +51986,7 @@
  },
  {
   "id": "sp-fl-florida-museum-of-natural-history",
-  "name": "Florida Museum Of Natural History",
+  "name": "Florida Museum of Natural History",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -58863,7 +58863,7 @@
  },
  {
   "id": "sp-ia-banner-lakes-at-summerset",
-  "name": "Banner Lakes At Summerset",
+  "name": "Banner Lakes at Summerset",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -63061,7 +63061,7 @@
  },
  {
   "id": "sp-in-falls-of-the-ohio",
-  "name": "Falls of The Ohio",
+  "name": "Falls of the Ohio",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -66060,7 +66060,7 @@
  },
  {
   "id": "sp-la-c-bickham-dickson-park-in-bossier-ph",
-  "name": "C. Bickham Dickson Park - In Bossier Ph.",
+  "name": "C. Bickham Dickson Park - in Bossier Ph.",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -71606,7 +71606,7 @@
  },
  {
   "id": "sp-ma-united-nbhd-of-lower-roxbury-cg",
-  "name": "United Nbhd Of Lower Roxbury Cg",
+  "name": "United Nbhd of Lower Roxbury Cg",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -74863,7 +74863,7 @@
  },
  {
   "id": "sp-me-elliotsville-parcel-at",
-  "name": "Elliotsville Parcel At",
+  "name": "Elliotsville Parcel at",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -75493,7 +75493,7 @@
  },
  {
   "id": "sp-me-lubec-channel-submerged-land-and-light",
-  "name": "Lubec Channel Submerged Land And Light",
+  "name": "Lubec Channel Submerged Land and Light",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -79249,7 +79249,7 @@
  },
  {
   "id": "sp-mi-tricentennial-state-park-and-harbor",
-  "name": "Tricentennial State Park And Harbor",
+  "name": "Tricentennial State Park and Harbor",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -82587,7 +82587,7 @@
  },
  {
   "id": "sp-mo-edward-ted-and-pat-jones-confluence-point",
-  "name": "Edward \"ted\" And Pat Jones-confluence Point",
+  "name": "Edward \"ted\" and Pat Jones-confluence Point",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -83047,7 +83047,7 @@
  },
  {
   "id": "sp-mo-lake-of-the-ozarks",
-  "name": "Lake Of The Ozarks",
+  "name": "Lake of the Ozarks",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -83099,7 +83099,7 @@
  },
  {
   "id": "sp-mo-lewis-and-clark",
-  "name": "Lewis And Clark",
+  "name": "Lewis and Clark",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -83981,7 +83981,7 @@
  },
  {
   "id": "sp-mo-trail-of-tears",
-  "name": "Trail Of Tears",
+  "name": "Trail of Tears",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -88666,7 +88666,7 @@
  },
  {
   "id": "sp-nd-lewis-and-clark",
-  "name": "Lewis And Clark",
+  "name": "Lewis and Clark",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -94392,7 +94392,7 @@
  },
  {
   "id": "sp-nv-whitewater-park-at-rock",
-  "name": "Whitewater Park At Rock",
+  "name": "Whitewater Park at Rock",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -94855,7 +94855,7 @@
  },
  {
   "id": "sp-ny-aquatic-and-fitness-center",
-  "name": "Aquatic And Fitness Center",
+  "name": "Aquatic and Fitness Center",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -95993,7 +95993,7 @@
  },
  {
   "id": "sp-ny-both-sides-of-harlem-rd",
-  "name": "Both Sides Of Harlem Rd",
+  "name": "Both Sides of Harlem Rd",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -96414,7 +96414,7 @@
  },
  {
   "id": "sp-ny-building-and-engineering-park",
-  "name": "Building And Engineering Park",
+  "name": "Building and Engineering Park",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -97636,7 +97636,7 @@
  },
  {
   "id": "sp-ny-community-center-and-playground",
-  "name": "Community Center And Playground",
+  "name": "Community Center and Playground",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -99075,7 +99075,7 @@
  },
  {
   "id": "sp-ny-ellicott-tennis-courts-and-fields",
-  "name": "Ellicott Tennis Courts And Fields",
+  "name": "Ellicott Tennis Courts and Fields",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -99293,7 +99293,7 @@
  },
  {
   "id": "sp-ny-expressway-diamonds-at-sheridan-park",
-  "name": "Expressway Diamonds At Sheridan Park",
+  "name": "Expressway Diamonds at Sheridan Park",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -99454,7 +99454,7 @@
  },
  {
   "id": "sp-ny-field-of-dreams-park",
-  "name": "Field Of Dreams Park",
+  "name": "Field of Dreams Park",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -104143,7 +104143,7 @@
  },
  {
   "id": "sp-ny-mechanic-street-courts-and-playground",
-  "name": "Mechanic Street Courts And Playground",
+  "name": "Mechanic Street Courts and Playground",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -104940,7 +104940,7 @@
  },
  {
   "id": "sp-ny-naval-and-veterans-park",
-  "name": "Naval And Veteran's Park",
+  "name": "Naval and Veteran's Park",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -105817,7 +105817,7 @@
  },
  {
   "id": "sp-ny-orleans-and-24th",
-  "name": "Orleans And 24Th",
+  "name": "Orleans and 24Th",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -105843,7 +105843,7 @@
  },
  {
   "id": "sp-ny-orleans-and-25th",
-  "name": "Orleans And 25Th",
+  "name": "Orleans and 25Th",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -105921,7 +105921,7 @@
  },
  {
   "id": "sp-ny-outdoor-basketball-courts-and-park",
-  "name": "Outdoor Basketball Courts And Park",
+  "name": "Outdoor Basketball Courts and Park",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -116461,7 +116461,7 @@
  },
  {
   "id": "sp-or-valley-of-the-rogue",
-  "name": "Valley Of The Rogue",
+  "name": "Valley of the Rogue",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -126301,7 +126301,7 @@
  },
  {
   "id": "sp-tn-cedars-of-lebanon-state-natural-area",
-  "name": "Cedars Of Lebanon",
+  "name": "Cedars of Lebanon",
   "designation": "State Natural Area",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -126327,7 +126327,7 @@
  },
  {
   "id": "sp-tn-cedars-of-lebanon",
-  "name": "Cedars Of Lebanon",
+  "name": "Cedars of Lebanon",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -130876,7 +130876,7 @@
  },
  {
   "id": "sp-ut-edge-of-the-cedars",
-  "name": "Edge Of The Cedars",
+  "name": "Edge of the Cedars",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
@@ -137445,7 +137445,7 @@
  },
  {
   "id": "sp-wa-issaquah-to-high-point-trail-site",
-  "name": "Issaquah To High Point Trail Site",
+  "name": "Issaquah to High Point Trail Site",
   "designation": "State Park",
   "kind": "statePark",
   "agency": "stateAgency",
