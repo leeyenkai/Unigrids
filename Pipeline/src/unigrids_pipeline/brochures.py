@@ -24,7 +24,7 @@ from urllib.parse import urljoin
 
 import httpx
 
-from . import rawstore
+from . import rawstore, reference_content
 from .rawstore import FetchRecord, SourceTerms
 from .sources import http
 
@@ -144,9 +144,15 @@ def build(raw_dir: Path, places: list[dict[str, Any]]) -> dict[str, Any]:
         return {}
     found = json.loads(path.read_text())
     result: dict[str, Any] = {}
+    # Sequoia and Kings Canyon are one unit to the NPS's web site (SEKI) and two parks
+    # here; each reads the shared unit's documents.
+    shared = {
+        code: reference_content.api_code(row)
+        for code, row in reference_content.national_park_rows()
+    }
     for place in places:
         code = (place.get("npsParkCode") or "").upper()
-        entry = found.get(code)
+        entry = found.get(code) or found.get(shared.get(code, ""))
         if not entry or not entry.get("page"):
             continue
         documents = []

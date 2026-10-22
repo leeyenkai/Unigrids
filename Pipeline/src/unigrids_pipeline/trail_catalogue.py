@@ -75,6 +75,24 @@ TRAIL_TERMS = SourceTerms(
     notes="Fetched by unit code for each of the 63 national parks.",
 )
 
+# Parks whose own GIS staff publish no trails in the NPS layer, filled from OpenStreetMap
+# instead (``SPECIFICATION.md`` §8 allows it, under the ODbL). Sequoia and Kings Canyon
+# only: the Arctic parks that also publish none are trailless wilderness, and right to.
+OSM_TRAIL_UNITS = ("SEKI",)
+OSM_TRAIL_KINDS = "path|footway|bridleway"
+
+OSM_TRAIL_TERMS = SourceTerms(
+    identifier="openstreetmap-trails",
+    title="OpenStreetMap named footpaths, via the Overpass API",
+    url="https://www.openstreetmap.org/copyright",
+    licence="Open Database License (ODbL) 1.0",
+    attribution="Trails in Sequoia and Kings Canyon: © OpenStreetMap contributors (ODbL)",
+    notes=(
+        "Shipped as data, so the trails taken from it are a Derivative Database under the "
+        "ODbL: attributed in the app, and available under the same licence."
+    ),
+)
+
 ELEVATION_TERMS = SourceTerms(
     identifier="usgs-3dep-samples",
     title="USGS 3DEP elevation, sampled along every catalogue trail",
@@ -111,6 +129,68 @@ def _unit_codes() -> list[str]:
         codes.add(row["npsParkCode"].upper())
         codes.add(reference_content.api_code(row).upper())
     return sorted(codes)
+
+
+def fetch_osm(version: str, unit_outlines: dict[str, list[outline.Polygon]]) -> None:
+    """Named footpaths from OpenStreetMap for the parks in :data:`OSM_TRAIL_UNITS`, as
+    NPS-shaped features in ``trails-national/<code>-osm.geojson``."""
+    from .geo import BoundingBox
+    from .sources import osm
+
+    directory = rawstore.version_directory("trails-national", version)
+    record = FetchRecord(source=OSM_TRAIL_TERMS, fetched_at=rawstore.utc_now())
+    with http.client() as session:
+        for unit in OSM_TRAIL_UNITS:
+            path = directory / f"{unit}-osm.geojson"
+            if path.exists():
+                continue
+            polygons = [
+                polygon
+                for _, row in reference_content.national_park_rows()
+                if reference_content.api_code(row).upper() == unit
+                for polygon in unit_outlines.get(row["npsParkCode"].upper(), [])
+            ]
+            box = outline.bbox(polygons)
+            if box is None:
+                print(f"    trails-national/{unit}-osm: no outline to search within")
+                continue
+            south, west, north, east = box
+            query = osm.trail_query(
+                BoundingBox(south=south, west=west, north=north, east=east), OSM_TRAIL_KINDS
+            )
+            payload = osm.download_query(session, query, record=record)
+            features = [
+                _osm_feature(way)
+                for way in osm.ways(payload)
+                if (way.get("tags") or {}).get("name")
+            ]
+            path.write_text(json.dumps({"type": "FeatureCollection", "features": features}))
+            record.add_file(path, root=directory)
+            print(f"    trails-national/{unit}-osm: {len(features)} named ways", flush=True)
+    record.write(directory)
+
+
+def _osm_feature(way: dict[str, Any]) -> dict[str, Any]:
+    """An OSM way as the NPS layer would carry it, so the catalogue reads both alike."""
+    tags = way.get("tags") or {}
+    uses = ["Hike"]
+    if tags.get("horse") in ("yes", "designated", "permissive"):
+        uses.append("Horse")
+    if tags.get("bicycle") in ("yes", "designated", "permissive"):
+        uses.append("Bicycle")
+    return {
+        "type": "Feature",
+        "properties": {
+            "TRLNAME": tags["name"],
+            "TRLUSE": ", ".join(uses),
+            "SOURCE": "osm",
+            "OSM_ID": way.get("id"),
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [[node["lon"], node["lat"]] for node in way.get("geometry") or []],
+        },
+    }
 
 
 # MARK: - Elevation
@@ -299,6 +379,8 @@ def _trail(
                 for point in measurements[longest].profile
             ],
         }
+    if properties.get("SOURCE") == "osm":
+        trail["source"] = "osm"
     notes = (properties.get("SEASDESC") or "").strip()
     if notes and notes.lower() not in ("unknown", "n/a", "none"):
         trail["seasonalNotes"] = notes
@@ -394,9 +476,10 @@ def _park_segments(
     """A park's trail segments: its own unit's, kept where they lie in its outline."""
     features: list[dict[str, Any]] = []
     for code in {row["npsParkCode"].upper(), reference_content.api_code(row).upper()}:
-        path = raw_trails / f"{code}.geojson"
-        if path.exists():
-            features.extend(json.loads(path.read_text()).get("features") or [])
+        for name in (f"{code}.geojson", f"{code}-osm.geojson"):
+            path = raw_trails / name
+            if path.exists():
+                features.extend(json.loads(path.read_text()).get("features") or [])
     for feature in features:
         _name_from_label(feature.get("properties") or {})
     segments = trails.segments_of(features)

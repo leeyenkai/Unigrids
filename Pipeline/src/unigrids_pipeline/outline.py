@@ -80,6 +80,33 @@ def ring_area(ring: Ring) -> float:
     return abs(total) / 2
 
 
+_EARTH_RADIUS_M = 6_371_008.8
+_SQUARE_METRES_PER_ACRE = 4_046.8564224
+
+
+def geodesic_acres(polygons: list[Polygon]) -> float:
+    """The area inside the outlines, on a spherical Earth, in acres; holes subtract.
+
+    The spherical-excess approximation for a ring (Chamberlain and Duquette, "Some
+    algorithms for polygons on a sphere", 2007), accurate to a fraction of a percent at
+    the size of a refuge — the same measurement agencies publish as GIS acres.
+    """
+    def ring_square_metres(ring: Ring) -> float:
+        total = 0.0
+        for (lon1, lat1), (lon2, lat2) in zip(ring, ring[1:] + ring[:1], strict=True):
+            total += math.radians(lon2 - lon1) * (
+                2 + math.sin(math.radians(lat1)) + math.sin(math.radians(lat2))
+            )
+        return abs(total) * _EARTH_RADIUS_M**2 / 2
+
+    square_metres = sum(
+        ring_square_metres(polygon[0]) - sum(ring_square_metres(hole) for hole in polygon[1:])
+        for polygon in polygons
+        if polygon
+    )
+    return max(square_metres, 0.0) / _SQUARE_METRES_PER_ACRE
+
+
 def generalise(polygons: list[Polygon], tolerance: float) -> list[Polygon]:
     """Simplify every ring, and drop rings too small to see at the scale they are drawn.
 

@@ -67,3 +67,16 @@ def test_choose_photos_keeps_the_nps_order_and_skips_others():
         {"url": "c", "credit": "NPS / Ranger"},
     ]
     assert [image["url"] for image in choose_photos(images)] == ["b", "c"]
+
+
+def test_geodesic_area_of_a_one_degree_square_at_the_equator():
+    ring = [(0.0, 0.0), (1.0, 0.0), (1.0, 1.0), (0.0, 1.0)]
+    acres = outline.geodesic_acres([[ring]])
+    # 111.2 km × 110.6 km ≈ 12,364 km², about 3.055 million acres.
+    assert 3.0e6 < acres < 3.1e6
+
+
+def test_geodesic_area_subtracts_holes():
+    outer = [(0.0, 0.0), (1.0, 0.0), (1.0, 1.0), (0.0, 1.0)]
+    hole = [(0.25, 0.25), (0.75, 0.25), (0.75, 0.75), (0.25, 0.75)]
+    assert outline.geodesic_acres([[outer, hole]]) < 0.8 * outline.geodesic_acres([[outer]])

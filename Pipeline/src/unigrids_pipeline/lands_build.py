@@ -245,7 +245,9 @@ def _refuges(path: Path, states: _States) -> Iterable[tuple[str, dict[str, Any],
             kind="wildlifeRefuge",
             agency="fishAndWildlife",
             polygons=polygons,
-            acres=None,
+            # The refuge layer publishes no acreage, so it is measured from the boundary
+            # as served, the way the forests' and PAD-US's GIS acres are.
+            acres=outline.geodesic_acres(polygons),
             states=states,
         )
         if place:

@@ -70,11 +70,31 @@ def build_query(box: BoundingBox, timeout_seconds: int = 300) -> str:
     )
 
 
+TRAIL_QUERY_TEMPLATE = """[out:json][timeout:{timeout}];
+(
+  way["highway"~"^({kinds})$"]["name"]({south:.6f},{west:.6f},{north:.6f},{east:.6f});
+);
+out geom;
+"""
+
+
+def trail_query(box: BoundingBox, kinds: str, timeout_seconds: int = 300) -> str:
+    """Named ways of the given ``highway`` kinds in a box: the footpaths of a park."""
+    return TRAIL_QUERY_TEMPLATE.format(
+        timeout=timeout_seconds, kinds=kinds,
+        south=box.south, west=box.west, north=box.north, east=box.east,
+    )
+
+
 def download(
     session: httpx.Client, box: BoundingBox, *, record: Any = None
 ) -> dict[str, Any]:
     """Run one Overpass query for the box, trying each endpoint in turn."""
-    query = build_query(box)
+    return download_query(session, build_query(box), record=record)
+
+
+def download_query(session: httpx.Client, query: str, *, record: Any = None) -> dict[str, Any]:
+    """Run an Overpass query, trying each endpoint in turn."""
     politeness = http.Politeness(attempts=2, backoff_seconds=10.0, timeout_seconds=420.0)
     problems: list[str] = []
     for endpoint in ENDPOINTS:

@@ -158,9 +158,13 @@ def fetch(*, refresh: bool = False) -> Path:
 
     trails_dir = trail_catalogue.fetch(version, refresh=refresh)
     outlines = reference_build._unit_outlines(root / "unit-boundaries")
+    trail_catalogue.fetch_osm(version, outlines)
     trail_catalogue.sample_elevations(trails_dir, outlines)
     places = json.loads((reference_build.OUT / "places.json").read_text())
-    codes = sorted({place["npsParkCode"] for place in places if place.get("npsParkCode")})
+    codes = sorted(
+        {place["npsParkCode"] for place in places if place.get("npsParkCode")}
+        | {reference_content.api_code(row) for _, row in reference_content.national_park_rows()}
+    )
     brochures.fetch(codes, version, refresh=refresh)
     climate.fetch(version, refresh=refresh)
     visitation.fetch(version, refresh=refresh)
