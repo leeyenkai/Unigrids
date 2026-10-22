@@ -156,13 +156,14 @@ struct TripRemindersSection: View {
             .buttonStyle(BrochureButtonStyle(.secondary))
             .listRowSeparator(.hidden)
             .listRowBackground(Color.clear)
+            ListNotes {
+                FormNote(
+                    "For permit lotteries, timed-entry slots and booking windows. Booking itself "
+                        + "happens on Recreation.gov or the park's own site; Unigrids never handles it."
+                )
+            }
         } header: {
             SectionHead("Reminders", detail: reminders.isEmpty ? nil : "\(reminders.count)")
-        } footer: {
-            FormNote(
-                "For permit lotteries, timed-entry slots and booking windows. Booking itself "
-                    + "happens on Recreation.gov or the park's own site; Unigrids never handles it."
-            )
         }
         .unigridsSheet(isPresented: $adding) {
             ReminderEditor(trip: trip)

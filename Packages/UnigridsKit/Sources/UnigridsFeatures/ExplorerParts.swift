@@ -173,16 +173,16 @@ struct ExplorerList: View {
                         .listRowBackground(focus == .trail(trail.id) ? style.rule
                             .opacity(0.5) : Color.clear)
                     }
+                    if trails.count > 40 {
+                        ListNotes {
+                            Text(
+                                "The 40 longest of \(trails.count). Every trail is in the "
+                                    + "park's trail catalogue."
+                            )
+                        }
+                    }
                 } header: {
                     SectionHead("Trails", detail: "\(trails.count)")
-                } footer: {
-                    if trails.count > 40 {
-                        Text(
-                            "The 40 longest of \(trails.count). Every trail is in the "
-                                + "park's trail catalogue."
-                        )
-                        .font(UnigridStyle.caption)
-                    }
                 }
             }
             if !facilities.isEmpty {

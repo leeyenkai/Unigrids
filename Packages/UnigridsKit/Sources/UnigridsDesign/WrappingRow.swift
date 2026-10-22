@@ -89,3 +89,27 @@ public struct TwoUpRow<Content: View>: View {
         layout { content }
     }
 }
+
+/// Notes under a plain list's rows, set on the page's own paper. A plain list draws a
+/// section footer on the system background — a black strip on every palette — so the
+/// notes go in as the section's last row instead.
+public struct ListNotes<Content: View>: View {
+    @Environment(\.unigrid) private var style
+    private let content: Content
+
+    public init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+
+    public var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            content
+        }
+        .font(UnigridStyle.caption)
+        .foregroundStyle(style.inkSecondary)
+        .fixedSize(horizontal: false, vertical: true)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .listRowBackground(Color.clear)
+        .listRowSeparator(.hidden)
+    }
+}

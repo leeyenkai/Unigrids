@@ -142,11 +142,12 @@ struct PhotoImportScreen: View {
                 Toggle(isOn: $alsoStamp) {
                     Label { Text("Stamp the passport too") } icon: { StampIcon() }
                 }
-            } footer: {
-                FormNote(
-                    "Untick anything you do not want. Photos stay in your library; the log "
-                        + "keeps a reference to them."
-                )
+                ListNotes {
+                    FormNote(
+                        "Untick anything you do not want. Photos stay in your library; the log "
+                            + "keeps a reference to them."
+                    )
+                }
             }
             ForEach(trips) { trip in
                 Section {

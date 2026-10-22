@@ -85,8 +85,13 @@ public enum DebugSampleData {
                 ("np-zion", 4), ("np-bryce-canyon", 5), ("np-capitol-reef", 6), ("np-arches", 7),
                 ("np-canyonlands", 8),
             ]
+            // Planned for noon in Utah, as the stop sheet stores a day, so a stop reads as
+            // the same day there as the trip's dates do here.
+            let utah = UnigridsCalendar
+                .gregorian(TimeZone(identifier: "America/Denver") ?? .current)
             for (place, offset) in stops {
-                _ = try? log.addStop(place, to: trip, on: day(offset))
+                let date = UnigridsCalendar.noon(onDayOf: day(offset), shownIn: calendar, in: utah)
+                _ = try? log.addStop(place, to: trip, on: date)
             }
             let reminder = Reminder(
                 kind: .permit,

@@ -304,14 +304,15 @@ struct UnknownPlaceStamps: View {
                         }
                     }
                 }
+                ListNotes {
+                    Text(
+                        "Stamps for places no longer in Unigrids' data. They are kept until you "
+                            + "delete them, and count towards nothing."
+                    )
+                    .font(UnigridStyle.caption)
+                }
             } header: {
                 SectionHead("Unknown places", detail: "\(stamps.count)")
-            } footer: {
-                Text(
-                    "Stamps for places no longer in Unigrids' data. They are kept until you "
-                        + "delete them, and count towards nothing."
-                )
-                .font(UnigridStyle.caption)
             }
         }
     }

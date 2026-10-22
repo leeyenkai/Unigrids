@@ -412,11 +412,12 @@ struct DetectedVisitsSection: View {
                     }
                     .listRowBackground(Color.clear)
                 }
+                ListNotes {
+                    Text("Noticed on this device. Nothing is logged until you say so.")
+                        .font(UnigridStyle.caption)
+                }
             } header: {
                 SectionHead("Did you arrive?", detail: "\(suggestions.count)")
-            } footer: {
-                Text("Noticed on this device. Nothing is logged until you say so.")
-                    .font(UnigridStyle.caption)
             }
         }
     }

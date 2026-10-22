@@ -60,14 +60,7 @@ struct TrailCatalogueSections: View {
                 }
                 .listRowBackground(Color.clear)
             }
-        } header: {
-            SectionHead(
-                "Trails",
-                detail: "\(shown.count.formatted()) · "
-                    + UnigridsFormat.distance(metres: shown.reduce(0) { $0 + $1.lengthMetres })
-            )
-        } footer: {
-            VStack(alignment: .leading, spacing: 4) {
+            ListNotes {
                 if shown.count > Self.shownLimit {
                     Text(
                         "Showing \(Self.shownLimit) of \(shown.count.formatted()). "
@@ -80,7 +73,12 @@ struct TrailCatalogueSections: View {
                         + "conditions with the park before you go."
                 )
             }
-            .font(UnigridStyle.caption)
+        } header: {
+            SectionHead(
+                "Trails",
+                detail: "\(shown.count.formatted()) · "
+                    + UnigridsFormat.distance(metres: shown.reduce(0) { $0 + $1.lengthMetres })
+            )
         }
     }
 }

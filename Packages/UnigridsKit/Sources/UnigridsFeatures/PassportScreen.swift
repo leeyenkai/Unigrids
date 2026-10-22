@@ -51,14 +51,15 @@ public struct PassportScreen: View {
                         America250Row(stampCount: stampsIn2026.count)
                     }
                     .listRowBackground(Color.clear)
+                    ListNotes {
+                        Text(
+                            "Every stamp dated in 2026 — the 250th anniversary year — carries "
+                                + "the America 250 seal, and is gathered on this page."
+                        )
+                        .font(UnigridStyle.caption)
+                    }
                 } header: {
                     SectionHead("Commemorative")
-                } footer: {
-                    Text(
-                        "Every stamp dated in 2026 — the 250th anniversary year — carries "
-                            + "the America 250 seal, and is gathered on this page."
-                    )
-                    .font(UnigridStyle.caption)
                 }
 
                 Section {
@@ -70,14 +71,15 @@ public struct PassportScreen: View {
                         }
                         .listRowBackground(Color.clear)
                     }
+                    ListNotes {
+                        Text(
+                            "Regions follow the paper passport's nine. Sites outside the NPS go by "
+                                + "their state, and appear on a region's page once stamped."
+                        )
+                        .font(UnigridStyle.caption)
+                    }
                 } header: {
                     SectionHead("Regions", detail: "NPS sites stamped")
-                } footer: {
-                    Text(
-                        "Regions follow the paper passport's nine. Sites outside the NPS go by "
-                            + "their state, and appear on a region's page once stamped."
-                    )
-                    .font(UnigridStyle.caption)
                 }
 
                 UnknownPlaceStamps(stamps: stamps.filter { store.place($0.place) == nil })

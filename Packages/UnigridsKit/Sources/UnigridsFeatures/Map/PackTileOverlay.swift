@@ -37,12 +37,36 @@ final class PackTileOverlay: MKTileOverlay {
             result(nil, nil)
             return
         }
-        if path.z <= pack.maxZoom {
-            result(reader.tile(zoom: path.z, column: path.x, row: path.y), nil)
-        } else {
-            result(Self.enlarged(path, from: reader, deepest: pack.maxZoom), nil)
-        }
+        let tile = path.z <= pack.maxZoom
+            ? reader.tile(zoom: path.z, column: path.x, row: path.y)
+            : Self.enlarged(path, from: reader, deepest: pack.maxZoom)
+        // A pack is clipped to the park and a buffer, so its box has tiles it never drew;
+        // without one, MapKit fills the gap with its own map, in patches.
+        result(tile ?? Self.blank, nil)
     }
+
+    /// A tile of the pack's own paper, the colour the renderer gives ground it has no
+    /// elevation for (the pipeline's `style.NO_ELEVATION`).
+    static let blank: Data? = {
+        guard let context = CGContext(
+            data: nil,
+            width: 256,
+            height: 256,
+            bitsPerComponent: 8,
+            bytesPerRow: 0,
+            space: CGColorSpaceCreateDeviceRGB(),
+            bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue
+        ) else { return nil }
+        context.setFillColor(red: 240 / 255, green: 238 / 255, blue: 232 / 255, alpha: 1)
+        context.fill(CGRect(x: 0, y: 0, width: 256, height: 256))
+        guard let image = context.makeImage() else { return nil }
+        let output = NSMutableData()
+        guard let destination = CGImageDestinationCreateWithData(
+            output, UTType.png.identifier as CFString, 1, nil
+        ) else { return nil }
+        CGImageDestinationAddImage(destination, image, nil)
+        return CGImageDestinationFinalize(destination) ? output as Data : nil
+    }()
 
     /// The part of the deepest tile that covers `path`, scaled up to a whole tile.
     static func enlarged(

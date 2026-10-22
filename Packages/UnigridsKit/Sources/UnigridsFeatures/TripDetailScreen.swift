@@ -89,8 +89,7 @@ struct TripDetailScreen: View {
                 }
                 .buttonStyle(BrochureButtonStyle(.secondary))
                 .listRowBackground(Color.clear)
-            } footer: {
-                FormNote("Deleting a trip keeps its visits in your log.")
+                ListNotes { Text("Deleting a trip keeps its visits in your log.") }
             }
         }
         .listStyle(.plain)
@@ -380,6 +379,15 @@ private struct ItinerarySection: View {
             .buttonStyle(BrochureButtonStyle(.secondary))
             .listRowSeparator(.hidden)
             .listRowBackground(Color.clear)
+            if stops.count > 1 {
+                ListNotes {
+                    #if os(iOS)
+                        Text("Reorder to change the route; swipe a stop to take it off the trip.")
+                    #else
+                        Text("Drag stops to change the route.")
+                    #endif
+                }
+            }
         } header: {
             HStack(alignment: .firstTextBaseline) {
                 SectionHead("Itinerary", detail: "\(stops.count)")
@@ -389,14 +397,6 @@ private struct ItinerarySection: View {
                             .font(UnigridStyle.dataLabel)
                             .textCase(.uppercase)
                     }
-                #endif
-            }
-        } footer: {
-            if stops.count > 1 {
-                #if os(iOS)
-                    FormNote("Reorder to change the route; swipe a stop to take it off the trip.")
-                #else
-                    FormNote("Drag stops to change the route.")
                 #endif
             }
         }

@@ -291,6 +291,12 @@ makes the change. A release moves that block under a version heading with its da
   thousand at country scale were a blanket of cluster counts. Their outlines still show.
 
 ### Fixed
+- A trip's dates are kept at noon, so a trip planned in one time zone reads as the same
+  days in another.
+- The offline Park map fills the corners of its box the pack never drew with blank paper,
+  instead of patches of Apple's map.
+- Notes under the Trips, Passport, Trails and explorer lists sit on the page's own paper;
+  as list footers they drew as a black strip on every palette.
 - Names an agency wrote with capital small words read properly — "Statue of Liberty",
   "War in the Pacific", "Crater of Diamonds" — without changing any place's identifier.
 

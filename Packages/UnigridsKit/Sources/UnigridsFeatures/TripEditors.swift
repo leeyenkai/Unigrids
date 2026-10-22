@@ -109,6 +109,12 @@ struct TripEditor: View {
         notes = trip.notes
     }
 
+    /// A trip's day at noon, so the time of day it was picked at never tips it into the
+    /// next or the last day when read somewhere else.
+    private func noon(_ date: Date) -> Date {
+        UnigridsCalendar.noon(onDayOf: date, shownIn: .unigrids, in: .unigrids)
+    }
+
     private func save() {
         guard !cleanedName.isEmpty else { return }
         do {
@@ -116,8 +122,8 @@ struct TripEditor: View {
             if let trip {
                 try log.update {
                     trip.name = cleanedName
-                    trip.startDate = hasDates ? start : nil
-                    trip.endDate = hasDates ? max(end, start) : nil
+                    trip.startDate = hasDates ? noon(start) : nil
+                    trip.endDate = hasDates ? noon(max(end, start)) : nil
                     trip.status = status
                     trip.notes = notes
                 }
@@ -125,8 +131,8 @@ struct TripEditor: View {
             } else {
                 let created = try log.createTrip(
                     name: cleanedName,
-                    startDate: hasDates ? start : nil,
-                    endDate: hasDates ? max(end, start) : nil,
+                    startDate: hasDates ? noon(start) : nil,
+                    endDate: hasDates ? noon(max(end, start)) : nil,
                     status: status
                 )
                 try log.update { created.notes = notes }
