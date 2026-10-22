@@ -1123,17 +1123,20 @@ def _resize(source: Path, destination: Path, size: int, quality: int) -> bool:
 
 def _manifest(places: list[dict[str, Any]]) -> dict[str, Any]:
     others = sum(1 for place in places if place["kind"] != "nationalPark")
+    parks = sum(1 for place in places if place["kind"] == "nationalPark")
     return {
-        "version": 3,
+        # 4: every state park, Wikipedia leads, visitation, time zones, OSM trails.
+        "version": 4,
         "builtOn": date.today().isoformat(),
         "provenance": "pipeline",
         "note": (
-            f"All 63 national parks with a full guide, and {others} more places on the map: "
-            "other NPS units from the NPS Data API; state parks from PAD-US; every national "
-            "forest, grassland and wildlife refuge, the BLM's monuments and conservation "
-            "areas, National Natural Landmarks and scenic byways from their agencies' own "
-            "data. Guide prose is written for Unigrids; descriptions, fees, hours, visitor "
-            "centres and photographs are the NPS's own."
+            f"All {parks} national parks with a full guide, and {others:,} more places on the "
+            "map: other NPS units from the NPS Data API; every state park from PAD-US; every "
+            "national forest, grassland and wildlife refuge, the BLM's monuments and "
+            "conservation areas, National Natural Landmarks and scenic byways from their "
+            "agencies' own data. Guide prose is written for Unigrids; descriptions, fees, "
+            "hours, visitor centres and photographs are the NPS's own; places with no "
+            "agency prose carry a lead adapted from Wikipedia, credited where it is shown."
         ),
     }
 
