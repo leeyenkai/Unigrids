@@ -188,6 +188,15 @@ makes the change. A release moves that block under a version heading with its da
   visit, and offers undo. A trail's page lists the hikes logged on it, each deletable.
 - A trail mapped one way reads "4.2 km one way · 8.4 km there and back".
 - An arrival waiting for an answer badges the Trips tab.
+- **When to go.** A national park's Weather and seasons panel charts visitors by month
+  beside the climate, and an NPS site's leaflet has a "When it's busy" panel — the mean of
+  the NPS's own monthly recreation visits over 2022–2025, busiest month marked.
+- NPS sites without a full guide show the NPS's hours, fees, reservations, directions and
+  contact on their leaflet.
+- An overview adapted from Wikipedia says so under it, names and links the article, and
+  carries its CC BY-SA 4.0 licence. Heights measured from USGS 3DEP say they were
+  measured. A trail drawn from OpenStreetMap credits it under the ODbL. A state park names
+  the body that runs it. Settings credits NPS visitor statistics and Wikipedia.
 
 ### Changed
 

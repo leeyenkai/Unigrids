@@ -26,6 +26,11 @@ struct AtAGlancePanel: View {
                     highest: facts.highestElevationMetres
                 ) {
                     UnigridDataRow(label: "Elevation", value: range)
+                    if let note = facts.elevationNote {
+                        Text(note + ".")
+                            .font(UnigridStyle.caption)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                 }
                 if let annual = facts.annualVisits {
                     UnigridDataRow(

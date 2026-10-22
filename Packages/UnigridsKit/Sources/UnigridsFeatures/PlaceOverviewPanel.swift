@@ -52,8 +52,8 @@ struct PlaceOverviewPanel: View {
                             AlertList(parkCode: code)
                         }
                     }
-                    if let summary = place.summary {
-                        OverviewSummary(text: summary, source: place.summarySource)
+                    if place.summary != nil {
+                        OverviewSummary(place: place)
                     } else {
                         Text(place.factualDescription)
                             .font(UnigridStyle.proseSmall)
@@ -145,19 +145,30 @@ struct VisitStatusLine: View {
 
 struct OverviewSummary: View {
     @Environment(\.unigrid) private var style
-    let text: String
-    let source: String?
+    let place: Place
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(text)
-                .font(UnigridStyle.proseSmall)
-                .foregroundStyle(style.ink)
-                .fixedSize(horizontal: false, vertical: true)
-            if let source, source != "Unigrids" {
-                Text("From the \(source)")
-                    .font(UnigridStyle.caption)
-                    .foregroundStyle(style.inkSecondary)
+        if let text = place.summary {
+            VStack(alignment: .leading, spacing: 6) {
+                Text(text)
+                    .font(UnigridStyle.proseSmall)
+                    .foregroundStyle(style.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                // A Wikipedia lead is CC BY-SA: credited by article, linked, and marked as
+                // shortened.
+                if let credit = place.summaryCredit {
+                    if let url = place.summaryURL {
+                        Link(destination: url) {
+                            Text(credit).underline()
+                        }
+                        .font(UnigridStyle.caption)
+                        .foregroundStyle(style.inkSecondary)
+                    } else {
+                        Text(credit)
+                            .font(UnigridStyle.caption)
+                            .foregroundStyle(style.inkSecondary)
+                    }
+                }
             }
         }
     }

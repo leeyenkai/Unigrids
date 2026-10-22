@@ -455,3 +455,20 @@ public struct PlaceVisitorInfo: Hashable, Sendable, Codable {
             && reservations == nil && phone == nil && email == nil
     }
 }
+
+extension Place {
+    /// The line that credits a summary not written for Unigrids: "Adapted from the
+    /// Wikipedia article “Golden Gate Canyon State Park”, CC BY-SA 4.0" for a shortened
+    /// lead, "From the National Park Service" for the agency's own words. Nil for prose
+    /// written for the app, which the page credits as a whole.
+    public var summaryCredit: String? {
+        guard summary != nil, let source = summarySource, source != "Unigrids" else {
+            return nil
+        }
+        guard source == "Wikipedia" else { return "From the \(source)" }
+        let licence = summaryLicence.map { ", \($0)" } ?? ""
+        let title = summaryURL?.lastPathComponent.replacingOccurrences(of: "_", with: " ")
+        guard let title, !title.isEmpty else { return "Adapted from Wikipedia" + licence }
+        return "Adapted from the Wikipedia article \u{201C}\(title)\u{201D}" + licence
+    }
+}

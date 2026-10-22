@@ -336,7 +336,7 @@ struct TrailDetailScreen: View {
                         }
                     }
                     GuideCreditsPanel(
-                        credits: [Self.credit],
+                        credits: [Self.credit(for: trail)],
                         sources: [],
                         photos: []
                     )
@@ -352,10 +352,18 @@ struct TrailDetailScreen: View {
 }
 
 extension TrailDetailScreen {
-    static let credit = "Trail line from the National Park Service's public trails data. "
-        + "Length, climb and profile measured by Unigrids from USGS 3DEP elevation at a "
-        + "station every 30 m; effort estimated from them by Shenandoah National Park's "
-        + "published rating. For planning, not navigation."
+    /// The trail's own source first — the NPS's public trails data, or OpenStreetMap under
+    /// the ODbL — then how Unigrids measured it.
+    static func credit(for trail: Trail) -> String {
+        let line = trail.isFromOpenStreetMap
+            ? "Trail line © OpenStreetMap contributors, available under the Open Database "
+            + "Licence (ODbL). "
+            : "Trail line from the National Park Service's public trails data. "
+        return line
+            + "Length, climb and profile measured by Unigrids from USGS 3DEP elevation at a "
+            + "station every 30 m; effort estimated from them by Shenandoah National Park's "
+            + "published rating. For planning, not navigation."
+    }
 }
 
 /// What the park's data says about a trail: who may use it, when, and on what surface.

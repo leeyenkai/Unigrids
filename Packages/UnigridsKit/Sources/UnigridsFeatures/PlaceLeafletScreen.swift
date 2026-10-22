@@ -108,8 +108,8 @@ struct PlaceLeafletScreen: View {
                         VStack(alignment: .leading, spacing: 14) {
                             VisitStatusLine(visits: visits.filter { $0.place == place.id }
                                 .sorted { $0.date > $1.date })
-                            if let summary = place.summary {
-                                OverviewSummary(text: summary, source: place.summarySource)
+                            if place.summary != nil {
+                                OverviewSummary(place: place)
                             } else {
                                 Text(place.factualDescription)
                                     .font(UnigridStyle.prose)
@@ -119,6 +119,9 @@ struct PlaceLeafletScreen: View {
                             OverviewFigures(place: place)
                             ManagerRow(place: place)
                         }
+                    }
+                    if let info = place.visitorInfo {
+                        VisitorInfoPanels(info: info)
                     }
                     if !centres.isEmpty {
                         VisitorCentresPanel(centres: centres)
@@ -138,6 +141,9 @@ struct PlaceLeafletScreen: View {
                         )
                         .frame(height: 300)
                         .overlay { Rectangle().strokeBorder(style.rule, lineWidth: 1) }
+                    }
+                    if let visitation = place.visitation {
+                        VisitationPanel(visitation: visitation)
                     }
                     UnigridPanel(title: "Your visit") {
                         OverviewActions(
@@ -172,52 +178,44 @@ extension EnvironmentValues {
 }
 
 /// Who a place's data comes from, for the credits at the foot of its page. Each source
-/// is credited for what it actually supplied.
+/// is credited for what it actually supplied: the overview by who wrote it, the outline
+/// by the agency that published it.
 enum PlaceCredits {
     static func lines(for place: Place) -> [String] {
-        let written = place.summarySource == "Unigrids"
+        [overview(place), outline(place)].compactMap(\.self)
+    }
+
+    private static func overview(_ place: Place) -> String? {
+        switch place.summary == nil ? nil : place.summarySource {
+        case "Unigrids": "Overview written for Unigrids."
+        case "Wikipedia": (place.summaryCredit ?? "Adapted from Wikipedia") + "."
+        case let source?: "Overview from the \(source)."
+        case nil: "No overview has been written for this place; its description is built "
+            + "from the boundary data."
+        }
+    }
+
+    private static func outline(_ place: Place) -> String {
         switch place.kind {
         case .nationalPark, .npsUnit:
-            return [
-                (written ? "Overview written for Unigrids from National Park Service material. "
-                    : "Overview from the National Park Service. ")
-                    + "Outline from the NPS Land Resources Division.",
-            ]
+            "Outline from the NPS Land Resources Division."
+                + (place.visitation == nil ? ""
+                    : " Visits from NPS Visitor Use Statistics, CC0.")
         case .statePark:
-            return [
-                "Overview written for Unigrids. Outline and area from the USGS Protected Areas "
-                    + "Database (PAD-US).",
-            ]
+            "Outline and area from the USGS Protected Areas Database (PAD-US)."
         case .nationalForest, .nationalGrassland:
-            return [
-                "Proclaimed boundary and area from the US Forest Service. No overview has been "
-                    + "written for this place; the description is built from the boundary data.",
-            ]
+            "Proclaimed boundary and area from the US Forest Service."
         case .wildlifeRefuge:
-            return [
-                written ? "Overview written for Unigrids. Outline from the USGS Protected Areas "
-                    + "Database (PAD-US)."
-                    : "Refuge boundary from the US Fish and Wildlife Service. No overview has been "
-                    + "written for this refuge.",
-            ]
+            "Refuge boundary from the US Fish and Wildlife Service and PAD-US."
         case .blmMonument, .blmConservationArea:
-            return [
-                written ? "Overview written for Unigrids. Outline from the USGS Protected Areas "
-                    + "Database (PAD-US)."
-                    : "Boundary from the Bureau of Land Management's National Conservation "
-                    + "Lands data. No overview has been written for this place.",
-            ]
+            "Boundary from the Bureau of Land Management's National Conservation Lands data."
         case .naturalLandmark:
-            return [
-                "Location and area from the National Park Service's National Natural Landmarks "
-                    + "Program. Designation recognises a site; it does not open private land "
-                    + "to visitors.",
-            ]
+            "Location and area from the National Park Service's National Natural Landmarks "
+                + "Program. Designation recognises a site; it does not open private land "
+                + "to visitors."
         case .scenicByway:
-            return [
-                "Route and designation from the Federal Highway Administration's America's "
-                    + "Byways data.",
-            ]
+            "Route and designation from the Federal Highway Administration's America's "
+                + "Byways data."
         }
     }
 }
@@ -233,7 +231,8 @@ struct ManagerRow: View {
         case .scenicByway:
             UnigridDataRow(label: "Programme", value: "America's Byways (FHWA)")
         default:
-            UnigridDataRow(label: "Managed by", value: place.agency.name)
+            // A state park names the body that runs it, as PAD-US does.
+            UnigridDataRow(label: "Managed by", value: place.managedBy ?? place.agency.name)
         }
     }
 }

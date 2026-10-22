@@ -22,6 +22,10 @@ struct WeatherPanel: View {
                 if let climate = store.climate(for: place.id) {
                     ClimateChart(climate: climate)
                 }
+                // Weather beside crowds: the question of when to go (§10).
+                if let visitation = place.visitation {
+                    VisitationChart(visitation: visitation)
+                }
                 if let note, !note.isEmpty {
                     VStack(alignment: .leading, spacing: 6) {
                         GuideFieldLabel("From the National Park Service")

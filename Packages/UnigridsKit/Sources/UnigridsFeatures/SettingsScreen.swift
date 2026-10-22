@@ -243,8 +243,20 @@ struct Attribution: Identifiable {
         ),
         Attribution(
             name: "USGS PAD-US",
-            terms: "State park, monument and refuge outlines and areas from the Protected Areas "
-                + "Database of the United States, a public-domain USGS data release."
+            terms: "Every state park, and monument and refuge outlines and areas, from the "
+                + "Protected Areas Database of the United States, a public-domain USGS data "
+                + "release; state park managers as PAD-US names them."
+        ),
+        Attribution(
+            name: "NPS Visitor Use Statistics",
+            terms: "Monthly and annual recreation visits to National Park Service sites, from "
+                + "the NPS's published visitor use data, dedicated to the public domain (CC0)."
+        ),
+        Attribution(
+            name: "Wikipedia",
+            terms: "Overviews of places with no agency prose, adapted from the opening of each "
+                + "place's Wikipedia article — used only where the article's title and location "
+                + "match the place — under CC BY-SA 4.0, credited and linked on each page."
         ),
         Attribution(
             name: "Other federal lands",
@@ -263,8 +275,10 @@ struct Attribution: Identifiable {
         ),
         Attribution(
             name: "Trails and elevation",
-            terms: "Trail lines from the NPS Public Trails dataset; elevation from the USGS 3D "
-                + "Elevation Program (3DEP), public domain. Measured by Unigrids."
+            terms: "Trail lines from the NPS Public Trails dataset, and for Sequoia and Kings "
+                + "Canyon from OpenStreetMap; elevation, and the highest and lowest ground of "
+                + "parks the NPS gives no figure for, from the USGS 3D Elevation Program "
+                + "(3DEP), public domain. Measured by Unigrids."
         ),
         Attribution(
             name: "Official brochures",
@@ -278,8 +292,9 @@ struct Attribution: Identifiable {
         ),
         Attribution(
             name: "OpenStreetMap",
-            terms: "© OpenStreetMap contributors, available under the Open Database "
-                + "Licence (ODbL)."
+            terms: "Trail lines in Sequoia and Kings Canyon, and the roads and water drawn in "
+                + "the offline park maps: © OpenStreetMap contributors, available under the "
+                + "Open Database Licence (ODbL)."
         ),
         Attribution(
             name: "Apple Maps",

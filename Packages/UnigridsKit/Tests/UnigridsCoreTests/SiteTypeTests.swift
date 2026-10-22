@@ -204,3 +204,39 @@ struct RouteGeometryTests {
         #expect(network.trainAccess(to: place, boundary: boundary, within: 500) == nil)
     }
 }
+
+@Suite("Summary credits")
+struct SummaryCreditTests {
+    private func place(_ source: String?, url: String? = nil) -> Place {
+        Place(
+            id: "sp-co-golden-gate-canyon",
+            name: "Golden Gate Canyon",
+            designation: "State Park",
+            kind: .statePark,
+            states: [],
+            centre: Coordinate(latitude: 39.8, longitude: -105.4),
+            summary: "A state park in Colorado.",
+            summarySource: source,
+            summaryURL: url.flatMap(URL.init(string:)),
+            summaryLicence: source == "Wikipedia" ? "CC BY-SA 4.0" : nil
+        )
+    }
+
+    @Test("a Wikipedia lead is credited by article and licence, and as adapted")
+    func wikipedia() {
+        let credit = place(
+            "Wikipedia", url: "https://en.wikipedia.org/wiki/Golden_Gate_Canyon_State_Park"
+        ).summaryCredit
+        #expect(
+            credit == "Adapted from the Wikipedia article \u{201C}Golden Gate Canyon State "
+                + "Park\u{201D}, CC BY-SA 4.0"
+        )
+    }
+
+    @Test("agency prose names the agency, and prose written for the app needs no line")
+    func others() {
+        #expect(place("National Park Service").summaryCredit == "From the National Park Service")
+        #expect(place("Unigrids").summaryCredit == nil)
+        #expect(place(nil).summaryCredit == nil)
+    }
+}
