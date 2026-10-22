@@ -82,37 +82,6 @@ struct StateTile: View {
     }
 }
 
-/// Share the stats as an image card (SPECIFICATION.md §11, "every stat card can become a
-/// share card"): rendered on device, handed to the share sheet, never uploaded by Unigrids.
-struct ShareStatsButton: View {
-    @Environment(\.unigrid) private var style
-    @Environment(\.referenceStore) private var store
-    let report: StatsReport
-    let index: VisitIndex
-
-    var body: some View {
-        if let image = rendered {
-            ShareLink(
-                item: image,
-                preview: SharePreview("My national parks", image: image)
-            ) {
-                Label("Share my parks", systemImage: "square.and.arrow.up")
-            }
-            .buttonStyle(BrochureButtonStyle(.primary))
-        }
-    }
-
-    @MainActor
-    private var rendered: Image? {
-        let card = StatsShareCard(report: report, parks: store.nationalParks, index: index)
-            .environment(\.unigrid, style)
-            .frame(width: 540)
-        let renderer = ImageRenderer(content: card)
-        renderer.scale = 2
-        return renderer.cgImage.map { Image(decorative: $0, scale: 2) }
-    }
-}
-
 /// The share card itself: the band, the figure, the grid, the states.
 struct StatsShareCard: View {
     @Environment(\.unigrid) private var style

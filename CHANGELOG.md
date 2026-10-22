@@ -214,6 +214,11 @@ makes the change. A release moves that block under a version heading with its da
   danger or closure posted by the NPS arrives as a notification that opens the park —
   through background app refresh on iPhone and iPad, every three hours while the app is
   open on the Mac. Quiet (provisional) until you choose otherwise.
+- **Share cards** for most Stats sections, a visit and a trip, as well as your parks:
+  shown before they are sent, made on the device, handed to the share sheet.
+- **Year in review**: a year's visits, places new to you, national parks (new ones marked),
+  states, busiest month and distance hiked, with its own card.
+- **In a row**: the months and years in a row you have logged a visit, now and at most.
 
 ### Changed
 

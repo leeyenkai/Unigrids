@@ -27,6 +27,7 @@ struct TripDetailScreen: View {
     @State private var editingVisit: Visit?
     @State private var confirmDelete = false
     @State private var reordering = false
+    @State private var sharingCard = false
     @State private var error: String?
 
     private var stops: [ResolvedStop] {
@@ -108,6 +109,9 @@ struct TripDetailScreen: View {
             .unigridsSheet(isPresented: $editingTrip) { TripEditor(trip: trip) }
             .unigridsSheet(item: $detailing) { StopDetailsSheet(stop: $0) }
             .unigridsSheet(item: $editingVisit) { VisitEditor(visit: $0) }
+            .unigridsSheet(isPresented: $sharingCard) {
+                ShareCardSheet(title: trip.name.isEmpty ? "My trip" : trip.name, card: tripCard)
+            }
             .confirmationDialog(
                 "Delete \(trip.name.isEmpty ? "this trip" : trip.name)?",
                 isPresented: $confirmDelete,
@@ -133,7 +137,7 @@ struct TripDetailScreen: View {
                 Label("Edit trip", symbol: .edit)
             }
         }
-        if exports.calendar != nil || exports.gpx != nil {
+        if !stops.isEmpty {
             ToolbarItem {
                 Menu {
                     if let calendar = exports.calendar {
@@ -146,11 +150,45 @@ struct TripDetailScreen: View {
                             Label("Export GPX", symbol: .exportRoute)
                         }
                     }
+                    Button { sharingCard = true } label: {
+                        Label("Share a card", symbol: .share)
+                    }
                 } label: {
                     Label("Share", symbol: .share)
                 }
             }
         }
+    }
+
+    private var tripCard: TripShareCard {
+        let states = Set(stops.compactMap(\.place).flatMap { $0.states.map(\.code) })
+        var figures = [
+            (value: "\(stops.count)", label: stops.count == 1 ? "Stop" : "Stops"),
+            (value: "\(states.count)", label: states.count == 1 ? "State" : "States"),
+        ]
+        if routedLegs.count == stops.count - 1, !routedLegs.isEmpty {
+            figures.append((
+                value: UnigridsFormat.distance(metres: routedLegs.reduce(0) { $0 + $1.metres }),
+                label: "By road"
+            ))
+        }
+        return TripShareCard(
+            name: trip.name.isEmpty ? "My trip" : trip.name,
+            dates: TripDates.range(trip),
+            stops: stops.map { entry in
+                let day = entry.stop.plannedDate.map {
+                    $0
+                        .formatted(UnigridsFormat
+                            .weekday(in: UnigridsCalendar.gregorian(at: entry.place)))
+                }
+                return (
+                    title: entry.title,
+                    detail: [day, entry.subtitle].compactMap(\.self)
+                        .filter { !$0.isEmpty }.joined(separator: " · ")
+                )
+            },
+            figures: figures
+        )
     }
 
     private var errorShown: Binding<Bool> {

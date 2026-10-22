@@ -81,6 +81,13 @@ struct VisitEditor: View {
                 VisitContents(visit: visit, place: place, calendar: calendar) { error = $0 }
 
                 Section {
+                    ShareCardButton(title: "My visit", label: "Share this visit") {
+                        VisitShareCard(visit: cardData)
+                    }
+                    .listRowBackground(Color.clear)
+                }
+
+                Section {
                     Button(role: .destructive) {
                         confirmDelete = true
                     } label: {
@@ -103,6 +110,40 @@ struct VisitEditor: View {
         } message: {
             Text(deleteMessage)
         }
+    }
+
+    /// The card for this visit, read now: a share card is a picture of the moment.
+    private var cardData: VisitCardData {
+        let stamp = visit.stamps?.min { $0.date < $1.date }
+        let hikes = (visit.hikes ?? []).compactMap { hike in
+            store.trails(in: visit.place).first { $0.id.rawValue == hike.trailID }
+                .map { "Hiked \($0.name)" + (hike.completion == .partial ? ", part way" : "") }
+        }
+        var lines = hikes
+        if let weather = visit.weather, let high = weather.highCelsius {
+            lines.append(
+                "High of \(UnigridsFormat.temperature(celsius: high))"
+                    + (weather.condition.map { ", \($0.lowercased())" } ?? "")
+            )
+        }
+        return VisitCardData(
+            placeName: place?.name ?? "A park",
+            kicker: place.map { "\($0.designation) · \($0.statesDescription)" } ?? "Unigrids",
+            day: visit.date.formatted(UnigridsFormat.day(in: calendar)),
+            rating: visit.rating,
+            lines: lines,
+            stamp: stamp.map { stamp in
+                StampFace(
+                    siteName: place?.name ?? "",
+                    date: stamp.date,
+                    stateCode: place?.states.first?.code ?? "US",
+                    region: place?.resolvedPassportRegion ?? .midAtlantic,
+                    seed: stamp.seed,
+                    isVerifiedOnSite: stamp.isVerifiedOnSite,
+                    calendar: calendar
+                )
+            }
+        )
     }
 
     /// What goes with the visit, said before it goes (SPECIFICATION.md §9: the passport and

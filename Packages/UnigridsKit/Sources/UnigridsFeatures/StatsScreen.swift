@@ -49,24 +49,45 @@ public struct StatsScreen: View {
                     )
                     VStack(alignment: .leading, spacing: 32) {
                         nationalParks(report)
-                        statesSection(report)
-                        figures(report)
-                        KindsOfPlaceSection(visits: visits)
                         if !visits.isEmpty {
-                            byYear(report)
-                            VisitsByMonthSection(visits: visits)
-                            bySeason(report)
+                            ShareCardButton(
+                                title: "My national parks",
+                                label: "Share my parks",
+                                weight: .primary
+                            ) {
+                                StatsShareCard(
+                                    report: report,
+                                    parks: store.nationalParks,
+                                    index: VisitIndex(visits: visits, trips: trips)
+                                )
+                            }
+                            NavigationLink {
+                                YearInReviewScreen()
+                            } label: {
+                                Label("Year in review", symbol: .yearInReview)
+                            }
+                            .buttonStyle(BrochureButtonStyle(.secondary))
+                        }
+                        ShareableSection("States and territories") { statesSection(report) }
+                        ShareableSection("Figures") { figures(report) }
+                        if !visits.isEmpty {
+                            ShareableSection("In a row") {
+                                StreaksSection(visits: visits.map(\.summary))
+                            }
+                        }
+                        ShareableSection("Kinds of place") { KindsOfPlaceSection(visits: visits) }
+                        if !visits.isEmpty {
+                            ShareableSection("Visits by year") { byYear(report) }
+                            ShareableSection("Visits by month") {
+                                VisitsByMonthSection(visits: visits)
+                            }
+                            ShareableSection("Visits by season") { bySeason(report) }
                         }
                         WeatherStatsSection(visits: visits)
                         themes(report)
                         trailTotals(report)
+                        // Not shareable: it says where the reader is.
                         nearest(report)
-                        if !visits.isEmpty {
-                            ShareStatsButton(
-                                report: report,
-                                index: VisitIndex(visits: visits, trips: trips)
-                            )
-                        }
                     }
                     .padding(UnigridStyle.pageMargin)
                     .padding(.top, 8)
