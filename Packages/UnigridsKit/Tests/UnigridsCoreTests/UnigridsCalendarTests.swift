@@ -51,16 +51,16 @@ struct UnigridsCalendarTests {
 
     @Test("a place keeps its own zone, then its state's, then the device's")
     func zoneFallback() throws {
-        let navajo = Place(
+        let navajo = try Place(
             id: "nps-nava", name: "Navajo", designation: "National Monument", kind: .npsUnit,
-            states: [try #require(USState.named("AZ"))],
+            states: [#require(USState.named("AZ"))],
             centre: Coordinate(latitude: 36.7, longitude: -110.5),
             timeZoneID: "America/Denver"
         )
         #expect(UnigridsCalendar.timeZone(for: navajo).identifier == "America/Denver")
-        let unzoned = Place(
+        let unzoned = try Place(
             id: "sp-x", name: "X", designation: "State Park", kind: .statePark,
-            states: [try #require(USState.named("AZ"))],
+            states: [#require(USState.named("AZ"))],
             centre: Coordinate(latitude: 33, longitude: -112)
         )
         #expect(UnigridsCalendar.timeZone(for: unzoned).identifier == "America/Phoenix")
