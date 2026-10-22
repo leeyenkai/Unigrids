@@ -51,7 +51,7 @@ struct UnigridsApp: App {
             case .active:
                 Task { await AlertWatch.run(log: log, store: reference.store) }
             case .background:
-                AlertWatch.schedule()
+                Task { await AlertWatch.schedule() }
             default:
                 break
             }

@@ -107,11 +107,11 @@ public enum AlertWatch {
     #if os(iOS)
         /// Ask iOS to wake the app to look again in a few hours. iOS decides when, or
         /// whether: background refresh is a request, not a timer.
-        public static func schedule() {
+        public static func schedule() async {
             guard NPSAlerts.isConfigured else { return }
             let request = BGAppRefreshTaskRequest(identifier: taskID)
             request.earliestBeginDate = Date().addingTimeInterval(3 * 3600)
-            try? BGTaskScheduler.shared.submit(request)
+            try? await BGTaskScheduler.shared.submitTaskRequest(request)
         }
     #else
         /// Look every three hours while the app is open.
