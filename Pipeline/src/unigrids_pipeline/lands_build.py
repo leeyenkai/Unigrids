@@ -105,40 +105,56 @@ def build(
     raw_lands: Path,
     places: list[dict[str, Any]],
     boundaries: dict[str, Any],
+    registry: ids.Registry,
 ) -> dict[str, Any]:
     """Append the other public lands to ``places`` and ``boundaries``; return the byway
-    routes, keyed by place id."""
+    routes, keyed by place id.
+
+    Every record's identifier goes through ``registry``, keyed by the source's own name
+    for it. Where that identifier is already a place built before this — an NPS unit or
+    a curated site — the curated record stands for the land and this one is not added.
+    Where two of these records would slug alike, the second is qualified by its state
+    rather than dropped.
+    """
     states = _States(raw_lands / "states.geojson")
-    taken = {place["id"] for place in places}
+    earlier = {place["id"] for place in places}
+    taken = set(earlier)
     nps_names = {
         _name_key(place["name"]) for place in places if place.get("agency") == "nps"
     }
     routes: dict[str, Any] = {}
     added: dict[str, int] = {}
 
-    def add(place: dict[str, Any], outline_entry: dict[str, Any] | None) -> None:
-        if place["id"] in taken:
-            return
-        taken.add(place["id"])
+    def add(
+        key: str, place: dict[str, Any], outline_entry: dict[str, Any] | None
+    ) -> str | None:
+        qualifier = (place.get("states") or [None])[0]
+        identifier = registry.resolve(key, place["id"], qualifier=qualifier)
+        if identifier in earlier:
+            return None
+        if identifier in taken:
+            raise ids.IdentifierCollisionError(f"{key!r} resolved to {identifier!r} twice")
+        place["id"] = identifier
+        taken.add(identifier)
         places.append(place)
         if outline_entry:
-            boundaries[place["id"]] = outline_entry
+            boundaries[identifier] = outline_entry
         added[place["kind"]] = added.get(place["kind"], 0) + 1
+        return identifier
 
-    for place, entry in _forests(raw_lands / "forests.geojson", states):
-        add(place, entry)
-    for place, entry in _grasslands(raw_lands / "grasslands.geojson", states):
-        add(place, entry)
-    for place, entry in _refuges(raw_lands / "refuges.geojson", states):
-        add(place, entry)
-    for place, entry in _blm(raw_lands / "blm-nlcs.geojson", states, nps_names):
-        add(place, entry)
-    for place in _landmarks(raw_lands / "landmarks.geojson", states):
-        add(place, None)
-    for place, route in _byways(raw_lands / "byways.geojson"):
-        if place["id"] not in taken:
-            routes[place["id"]] = route
-        add(place, None)
+    for key, place, entry in _forests(raw_lands / "forests.geojson", states):
+        add(key, place, entry)
+    for key, place, entry in _grasslands(raw_lands / "grasslands.geojson", states):
+        add(key, place, entry)
+    for key, place, entry in _refuges(raw_lands / "refuges.geojson", states):
+        add(key, place, entry)
+    for key, place, entry in _blm(raw_lands / "blm-nlcs.geojson", states, nps_names):
+        add(key, place, entry)
+    for key, place in _landmarks(raw_lands / "landmarks.geojson", states):
+        add(key, place, None)
+    for key, place, route in _byways(raw_lands / "byways.geojson"):
+        if identifier := add(key, place, None):
+            routes[identifier] = route
 
     print(f"    other public lands: {added}")
     return routes
@@ -147,26 +163,30 @@ def build(
 # MARK: - Polygon lands
 
 
-def _forests(path: Path, states: _States) -> Iterable[tuple[dict[str, Any], dict[str, Any]]]:
+def _forests(path: Path, states: _States) -> Iterable[tuple[str, dict[str, Any], dict[str, Any]]]:
     yield from _polygon_lands(
         path,
         states,
         name_field="forest_grasslandname",
         suffix="National Forest",
         prefix="nf",
+        key_prefix="usfs-forest",
         kind="nationalForest",
         agency="forestService",
         acres_field="gis_acres",
     )
 
 
-def _grasslands(path: Path, states: _States) -> Iterable[tuple[dict[str, Any], dict[str, Any]]]:
+def _grasslands(
+    path: Path, states: _States
+) -> Iterable[tuple[str, dict[str, Any], dict[str, Any]]]:
     yield from _polygon_lands(
         path,
         states,
         name_field="grasslandname",
         suffix="National Grassland",
         prefix="ng",
+        key_prefix="usfs-grassland",
         kind="nationalGrassland",
         agency="forestService",
         acres_field="gis_acres",
@@ -180,10 +200,11 @@ def _polygon_lands(
     name_field: str,
     suffix: str,
     prefix: str,
+    key_prefix: str,
     kind: str,
     agency: str,
     acres_field: str,
-) -> Iterable[tuple[dict[str, Any], dict[str, Any]]]:
+) -> Iterable[tuple[str, dict[str, Any], dict[str, Any]]]:
     grouped: dict[str, tuple[list[outline.Polygon], float]] = {}
     for feature in _features(path):
         properties = feature.get("properties") or {}
@@ -194,7 +215,7 @@ def _polygon_lands(
         polygons.extend(outline.polygons_of(feature.get("geometry")))
         grouped[full] = (polygons, acres + float(properties.get(acres_field) or 0))
     for full, (polygons, acres) in sorted(grouped.items()):
-        name = _strip_suffix(full, suffix)
+        name = _strip_suffix(title_case(full) if full.isupper() else full, suffix)
         place = _polygon_place(
             place_id=f"{prefix}-{ids.slug(name)}",
             name=name,
@@ -206,10 +227,10 @@ def _polygon_lands(
             states=states,
         )
         if place:
-            yield place
+            yield (f"{key_prefix}:{full}", *place)
 
 
-def _refuges(path: Path, states: _States) -> Iterable[tuple[dict[str, Any], dict[str, Any]]]:
+def _refuges(path: Path, states: _States) -> Iterable[tuple[str, dict[str, Any], dict[str, Any]]]:
     grouped: dict[str, list[outline.Polygon]] = {}
     for feature in _features(path):
         name = ((feature.get("properties") or {}).get("ORGNAME") or "").strip()
@@ -228,7 +249,7 @@ def _refuges(path: Path, states: _States) -> Iterable[tuple[dict[str, Any], dict
             states=states,
         )
         if place:
-            yield place
+            yield (f"fws-refuge:{full}", *place)
 
 
 # The designations a refuge's name can end in, longest first so "National Fish and
@@ -274,7 +295,7 @@ def _refuge_name(upper: str) -> tuple[str, str]:
 
 def _blm(
     path: Path, states: _States, nps_names: set[str]
-) -> Iterable[tuple[dict[str, Any], dict[str, Any]]]:
+) -> Iterable[tuple[str, dict[str, Any], dict[str, Any]]]:
     grouped: dict[str, tuple[str, list[outline.Polygon]]] = {}
     for feature in _features(path):
         properties = feature.get("properties") or {}
@@ -300,7 +321,7 @@ def _blm(
             states=states,
         )
         if place:
-            yield place
+            yield (f"blm:{name}", *place)
 
 
 def _blm_name(properties: dict[str, Any]) -> tuple[str | None, str]:
@@ -377,8 +398,7 @@ def _one_side_of_the_antimeridian(polygons: list[outline.Polygon]) -> list[outli
 # MARK: - Points and lines
 
 
-def _landmarks(path: Path, states: _States) -> Iterable[dict[str, Any]]:
-    seen: set[str] = set()
+def _landmarks(path: Path, states: _States) -> Iterable[tuple[str, dict[str, Any]]]:
     for feature in sorted(
         _features(path), key=lambda f: (f.get("properties") or {}).get("NNL_Name") or ""
     ):
@@ -392,13 +412,9 @@ def _landmarks(path: Path, states: _States) -> Iterable[dict[str, Any]]:
         codes = [code for code in codes if len(code) == 2]
         if not codes:
             codes = states.of_points([(latitude, longitude)])
-        place_id = f"nnl-{ids.slug(name)}"
-        if place_id in seen:
-            place_id = f"{place_id}-{codes[0].lower()}" if codes else place_id
-        seen.add(place_id)
         acres = properties.get("Acre_Calc")
-        yield {
-            "id": place_id,
+        yield f"nnl:{name}|{','.join(codes)}", {
+            "id": f"nnl-{ids.slug(name)}",
             "name": name,
             "designation": "National Natural Landmark",
             "kind": "naturalLandmark",
@@ -409,7 +425,7 @@ def _landmarks(path: Path, states: _States) -> Iterable[dict[str, Any]]:
         }
 
 
-def _byways(path: Path) -> Iterable[tuple[dict[str, Any], dict[str, Any]]]:
+def _byways(path: Path) -> Iterable[tuple[str, dict[str, Any], dict[str, Any]]]:
     """One place per byway, joining the per-state pieces the FHWA publishes."""
     grouped: dict[str, dict[str, Any]] = {}
     for feature in _features(path):
@@ -452,7 +468,7 @@ def _byways(path: Path) -> Iterable[tuple[dict[str, Any], dict[str, Any]]]:
             "extent": dict(zip(("south", "west", "north", "east"), route["bbox"], strict=True)),
             "facts": {"establishedYear": min(entry["years"])} if entry["years"] else {},
         }
-        yield place, route
+        yield f"byway:{name}", place, route
 
 
 # MARK: - Transport

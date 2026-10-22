@@ -47,6 +47,11 @@ from .reference_fetch import photo_filename
 
 OUT = config.REPO_ROOT / "Packages/UnigridsKit/Sources/UnigridsReference/Resources/reference"
 
+# Source key → place identifier, committed so an identifier outlives a renamed record
+# (``ids.Registry``). National parks, NPS units and curated sites key on their own stable
+# codes and do not need it.
+PLACE_REGISTRY = config.CONTENT_DIR / "ids" / "places.json"
+
 # How far each tier's outlines are generalised, in degrees (about 60 m and 110 m). The
 # national parks are drawn closest and most often; everything else is a regional outline.
 NATIONAL_PARK_TOLERANCE = 0.0006
@@ -84,6 +89,7 @@ def build() -> None:
     padus, padus_acres = _padus_outlines(_latest_raw("padus") / "padus")
     wikipedia = _wikipedia(_latest_raw("wikipedia") / "wikipedia")
     photos_dir = _latest_raw_or_none("photos")
+    registry = ids.Registry(PLACE_REGISTRY)
 
     # Photographs are rebuilt in place rather than wiped: a resized copy whose raw original
     # has since been cleared from the raw store (they are large) is kept as it is.
@@ -165,7 +171,7 @@ def build() -> None:
     routes: dict[str, Any] = {}
     lands = _latest_raw_or_none("federal-lands")
     if lands is not None:
-        routes = lands_build.build(lands, places, boundaries)
+        routes = lands_build.build(lands, places, boundaries, registry)
     transport_dir = _latest_raw_or_none("transport")
     transport = lands_build.build_transport(transport_dir) if transport_dir else None
     trails_dir = _latest_raw_or_none("trails-national")
@@ -196,6 +202,9 @@ def build() -> None:
         _write("climate", normals, compact=True)
     for place_id, guide in guides.items():
         _write(f"guides/{place_id}", guide)
+    registry.save()
+    if registry.added:
+        print(f"    identifiers: {registry.added} new, recorded in {PLACE_REGISTRY.name}")
 
     image_bytes = sum(path.stat().st_size for path in images_dir.iterdir())
     outline_bytes = (OUT / "boundaries.json").stat().st_size
