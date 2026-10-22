@@ -212,9 +212,8 @@ extension AppServices {
         /// which has Core Location look again and fire it once more when it sees otherwise.
         private static func plan(_ monitor: CLMonitor, store: any ReferenceStore) async {
             guard let here = await OnSiteCheck().currentCoordinate() else {
-                if let ring = await monitor.record(for: homeID)?.condition
-                    as? CLMonitor.CircularGeographicCondition
-                {
+                let record = await monitor.record(for: homeID)
+                if let ring = record?.condition as? CLMonitor.CircularGeographicCondition {
                     await monitor.add(ring, identifier: homeID, assuming: .satisfied)
                 }
                 return
