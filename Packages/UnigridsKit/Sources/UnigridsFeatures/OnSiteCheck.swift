@@ -12,6 +12,7 @@ import UnigridsReference
 final class OnSiteCheck: NSObject, CLLocationManagerDelegate {
     private let manager = CLLocationManager()
     private var continuation: CheckedContinuation<CLLocation?, Never>?
+    private var authorizing: CheckedContinuation<Void, Never>?
 
     override init() {
         super.init()
@@ -22,8 +23,12 @@ final class OnSiteCheck: NSObject, CLLocationManagerDelegate {
     /// Whether the reader is inside the place's outline — or, for a place without one,
     /// within three kilometres of its centre. `false` when location is unavailable or
     /// declined; the stamp is simply unverified, never refused.
-    func isOnSite(at place: Place, boundary: PlaceBoundary?) async -> Bool {
-        guard let location = await currentLocation() else { return false }
+    func isOnSite(
+        at place: Place,
+        boundary: PlaceBoundary?,
+        timeout: Duration = .seconds(5)
+    ) async -> Bool {
+        guard let location = await currentLocation(timeout: timeout) else { return false }
         let here = Coordinate(
             latitude: location.coordinate.latitude,
             longitude: location.coordinate.longitude
@@ -34,24 +39,43 @@ final class OnSiteCheck: NSObject, CLLocationManagerDelegate {
         return here.distance(to: place.centre) < 3000
     }
 
-    /// Where the reader is, once, for "nearest unvisited park". Not stored.
-    func currentCoordinate() async -> Coordinate? {
-        guard let location = await currentLocation() else { return nil }
+    /// Where the reader is, once, for the map and "nearest unvisited park". Not stored.
+    func currentCoordinate(timeout: Duration = .seconds(15)) async -> Coordinate? {
+        guard let location = await currentLocation(timeout: timeout) else { return nil }
         return Coordinate(
             latitude: location.coordinate.latitude,
             longitude: location.coordinate.longitude
         )
     }
 
-    private func currentLocation() async -> CLLocation? {
-        switch manager.authorizationStatus {
-        case .denied, .restricted:
-            return nil
-        case .notDetermined:
-            manager.requestWhenInUseAuthorization()
-        default:
-            break
+    /// Whether the reader has said no to location, so a screen can say why it has none.
+    static var isRefused: Bool {
+        let status = CLLocationManager().authorizationStatus
+        return status == .denied || status == .restricted
+    }
+
+    /// One fix, or nil. A first request asks for permission and waits for the answer
+    /// before asking for a position — asked straight away, the position request fails
+    /// while the prompt is still up. Gives up after `timeout`.
+    private func currentLocation(timeout: Duration) async -> CLLocation? {
+        if manager.authorizationStatus == .notDetermined {
+            await withCheckedContinuation { continuation in
+                authorizing = continuation
+                manager.requestWhenInUseAuthorization()
+            }
         }
+        switch manager.authorizationStatus {
+        case .authorizedAlways, .authorizedWhenInUse:
+            break
+        default:
+            return nil
+        }
+        let deadline = Task { [weak self] in
+            try? await Task.sleep(for: timeout)
+            guard !Task.isCancelled else { return }
+            self?.finish(nil)
+        }
+        defer { deadline.cancel() }
         return await withCheckedContinuation { continuation in
             self.continuation = continuation
             manager.requestLocation()
@@ -73,6 +97,9 @@ final class OnSiteCheck: NSObject, CLLocationManagerDelegate {
     nonisolated func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         let status = manager.authorizationStatus
         Task { @MainActor in
+            guard status != .notDetermined else { return }
+            self.authorizing?.resume()
+            self.authorizing = nil
             if status == .denied || status == .restricted {
                 self.finish(nil)
             }

@@ -128,6 +128,18 @@ extension AppServices {
         private static let homeID = "home"
         private static let homeRadius: CLLocationDistance = 30000
         private static var listening: Task<Void, Never>?
+        /// One monitor, opened once: Core Location expects one open monitor per name, and a
+        /// second opened while a cancelled listener's was still alive split the events.
+        private static var opened: CLMonitor?
+
+        private static func monitor() async -> CLMonitor {
+            if let opened {
+                return opened
+            }
+            let monitor = await CLMonitor(monitorName)
+            opened = monitor
+            return monitor
+        }
 
         public static var isEnabled: Bool {
             UserDefaults.standard.bool(forKey: DetectedVisits.enabledKey)
@@ -165,14 +177,14 @@ extension AppServices {
             UserDefaults.standard.set(false, forKey: DetectedVisits.enabledKey)
             listening?.cancel()
             listening = nil
-            let monitor = await CLMonitor(monitorName)
+            let monitor = await monitor()
             for identifier in await monitor.identifiers {
                 await monitor.remove(identifier)
             }
         }
 
         private static func listen(store: any ReferenceStore, replan: Bool = false) async {
-            let monitor = await CLMonitor(monitorName)
+            let monitor = await monitor()
             let watched = await monitor.identifiers
             if replan || watched.isEmpty {
                 await plan(monitor, store: store)
@@ -194,8 +206,19 @@ extension AppServices {
         }
 
         /// The nearest nineteen places to watch, and a ring around the reader.
+        ///
+        /// Without a fix the set cannot move, and the ring that asked for it has already
+        /// fired, so it would never ask again. It is put back as if the reader were inside,
+        /// which has Core Location look again and fire it once more when it sees otherwise.
         private static func plan(_ monitor: CLMonitor, store: any ReferenceStore) async {
-            guard let here = await OnSiteCheck().currentCoordinate() else { return }
+            guard let here = await OnSiteCheck().currentCoordinate() else {
+                if let ring = await monitor.record(for: homeID)?.condition
+                    as? CLMonitor.CircularGeographicCondition
+                {
+                    await monitor.add(ring, identifier: homeID, assuming: .satisfied)
+                }
+                return
+            }
             for identifier in await monitor.identifiers {
                 await monitor.remove(identifier)
             }
@@ -266,6 +289,7 @@ extension AppServices {
     final class LocationPermission: NSObject, CLLocationManagerDelegate {
         private let manager = CLLocationManager()
         private var continuation: CheckedContinuation<Bool, Never>?
+        private var askedForAlways = false
         private static var current: LocationPermission?
 
         static func requestAlways() async -> Bool {
@@ -288,6 +312,8 @@ extension AppServices {
                     if manager.authorizationStatus == .notDetermined {
                         manager.requestWhenInUseAuthorization()
                     } else {
+                        askedForAlways = true
+                        watchForReturn()
                         manager.requestAlwaysAuthorization()
                     }
                 }
@@ -302,19 +328,32 @@ extension AppServices {
         private func advance(_ status: CLAuthorizationStatus) {
             switch status {
             case .authorizedWhenInUse:
+                // The upgrade to Always is a second prompt, and declining it ("Keep Only
+                // While Using") changes nothing, so no callback comes. The prompt takes the
+                // app out of the foreground; its answer is read when the app comes back,
+                // however long the reader took.
+                guard !askedForAlways else { return }
+                askedForAlways = true
+                watchForReturn()
                 manager.requestAlwaysAuthorization()
-                // If the reader declines the upgrade, no further callback comes; settle
-                // for what there is after a moment.
-                Task {
-                    try? await Task.sleep(for: .seconds(8))
-                    finish(manager.authorizationStatus == .authorizedAlways)
-                }
             case .authorizedAlways:
                 finish(true)
             case .denied, .restricted:
                 finish(false)
             default:
                 break
+            }
+        }
+
+        private func watchForReturn() {
+            Task { [weak self] in
+                for await _ in NotificationCenter.default.notifications(
+                    named: UIApplication.didBecomeActiveNotification
+                ) {
+                    guard let self else { return }
+                    finish(manager.authorizationStatus == .authorizedAlways)
+                    return
+                }
             }
         }
 
