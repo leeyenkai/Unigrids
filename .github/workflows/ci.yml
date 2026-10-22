@@ -31,11 +31,15 @@ jobs:
         run: swift test
 
   app:
-    name: Build app (${{ matrix.label }})
+    name: Build app (${{ matrix.label }}, ${{ matrix.configuration }})
     runs-on: xcode-27
     strategy:
       fail-fast: false
       matrix:
+        label: [iOS Simulator, macOS]
+        # Release as well as Debug: the debug-only launch hooks and sample data compile
+        # away in Release, and nothing else would ever build that side of the #if.
+        configuration: [Debug, Release]
         include:
           - label: iOS Simulator
             destination: generic/platform=iOS Simulator
@@ -53,7 +57,8 @@ jobs:
             -project App/Unigrids.xcodeproj \
             -scheme Unigrids \
             -destination '${{ matrix.destination }}' \
-            -configuration Debug \
+            -configuration ${{ matrix.configuration }} \
+            CODE_SIGNING_ALLOWED=NO \
             build
 
   lint:
