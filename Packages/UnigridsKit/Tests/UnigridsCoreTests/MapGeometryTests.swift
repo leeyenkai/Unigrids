@@ -179,6 +179,9 @@ struct MapFilterTests {
         #expect(MapDetail.showsPin(for: .npsUnit, latitudeSpan: 40))
         #expect(!MapDetail.showsPin(for: .nationalForest, latitudeSpan: 40))
         #expect(MapDetail.showsPin(for: .nationalForest, latitudeSpan: 10))
+        // Three and a half thousand state parks wait for regional zoom.
+        #expect(!MapDetail.showsPin(for: .statePark, latitudeSpan: 40))
+        #expect(MapDetail.showsPin(for: .statePark, latitudeSpan: 10))
         #expect(!MapDetail.showsRoute(latitudeSpan: 40))
         #expect(MapDetail.showsRoute(latitudeSpan: 10))
     }

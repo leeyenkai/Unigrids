@@ -181,13 +181,14 @@ public enum MapDetail {
     ///
     /// The big lands — forests, grasslands, refuges, BLM lands — read as areas from afar,
     /// so their outlines stand for them at country scale and their pins come in with
-    /// regional zoom. Landmarks and byways wait for regional zoom too: six hundred
-    /// landmarks at country scale are a blanket of cluster counts, not a map.
+    /// regional zoom. Landmarks, byways and state parks wait for regional zoom too: six
+    /// hundred landmarks, or three and a half thousand state parks, at country scale are a
+    /// blanket of cluster counts, not a map.
     public static func showsPin(for kind: PlaceKind, latitudeSpan: Double) -> Bool {
         switch kind {
-        case .nationalPark, .npsUnit, .statePark:
+        case .nationalPark, .npsUnit:
             true
-        case .nationalForest, .nationalGrassland, .wildlifeRefuge, .blmMonument,
+        case .statePark, .nationalForest, .nationalGrassland, .wildlifeRefuge, .blmMonument,
              .blmConservationArea, .naturalLandmark, .scenicByway:
             latitudeSpan <= allOutlinesSpan
         }
