@@ -177,6 +177,14 @@ makes the change. A release moves that block under a version heading with its da
 - Undo after deleting a visit, trip or stamp.
 - On the Mac, a guide or leaflet opens in its own window beside the map.
 - A fourth welcome panel, on the planner, and a welcome key that shows the new markers.
+- **Richer trips.** A stop can be a place, a sight, visitor centre or campground inside
+  it, a trail, lodging, or any point on the way found by name; each draws its own marker
+  on the trip map, routes from its own position, and exports to Calendar and GPX. Add
+  several stops at once from places, from what is inside the trip's parks, or from an
+  Apple Maps search. A stop's details sheet sets its day, an optional time in the park's
+  zone, and notes, and takes it off the trip with undo. "Add to trip" on sight,
+  facility and trail cards.
+- An arrival waiting for an answer badges the Trips tab.
 
 ### Changed
 
@@ -210,6 +218,11 @@ makes the change. A release moves that block under a version heading with its da
   would overlap, instead of piling on top of each other; group counts are now round.
 - The map key explains colour, shape, ticks, rings, alert corners and groups, and its
   chip on the map is a strip of colour swatches.
+- Trips are grouped Under way, Planned and Done, by their dates; "New trip" opens the trip
+  it makes, and an end date can no longer fall before the start.
+- A visit on a trip opens the same editor as any other: its day, trip, rating and
+  notes, its check-ins with their photos, its hikes (deletable) and its stamps. Moving
+  it to another day moves everything logged on it. Deleting it says what goes with it.
 
 ### Fixed
 

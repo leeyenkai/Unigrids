@@ -27,13 +27,27 @@ public struct TripsScreen: View {
 
     public init() {}
 
-    private var openTrips: [Trip] {
-        trips.filter { $0.status != .done }
-            .sorted { ($0.startDate ?? .distantFuture) < ($1.startDate ?? .distantFuture) }
+    /// The trips by where they are today: under way first, then the ones to come in the
+    /// order they start, then the finished ones, latest first.
+    private var grouped: [(status: TripStatus, trips: [Trip])] {
+        let now = Date()
+        let byStatus = Dictionary(grouping: trips) { $0.status(on: now) }
+        return [TripStatus.active, .planned, .done].compactMap { status in
+            guard var list = byStatus[status], !list.isEmpty else { return nil }
+            if status == .done {
+                list.sort { Self.finished($0) > Self.finished($1) }
+            } else {
+                list.sort {
+                    ($0.startDate ?? .distantFuture, $0.createdAt)
+                        < ($1.startDate ?? .distantFuture, $1.createdAt)
+                }
+            }
+            return (status, list)
+        }
     }
 
-    private var doneTrips: [Trip] {
-        trips.filter { $0.status == .done }
+    private static func finished(_ trip: Trip) -> Date {
+        trip.endDate ?? trip.startDate ?? trip.createdAt
     }
 
     private var loose: [Visit] {
@@ -53,7 +67,7 @@ public struct TripsScreen: View {
                         Button {
                             creatingTrip = true
                         } label: {
-                            Label("Plan a trip", systemImage: "plus")
+                            Label("New trip", symbol: .add)
                         }
                         .buttonStyle(BrochureButtonStyle(.primary))
                         .padding(UnigridStyle.pageMargin)
@@ -72,11 +86,8 @@ public struct TripsScreen: View {
                     }
                 }
 
-                if !openTrips.isEmpty {
-                    tripSection("Planning", trips: openTrips)
-                }
-                if !doneTrips.isEmpty {
-                    tripSection("Done", trips: doneTrips)
+                ForEach(grouped, id: \.status) { group in
+                    tripSection(group.status.name, trips: group.trips)
                 }
 
                 if !loose.isEmpty {
@@ -88,7 +99,17 @@ public struct TripsScreen: View {
                                     Button(role: .destructive) {
                                         delete(visit)
                                     } label: {
-                                        Label("Delete", systemImage: "trash")
+                                        Label("Delete", symbol: .delete)
+                                    }
+                                }
+                                .contextMenu {
+                                    Button { editing = visit } label: {
+                                        Label("Edit", symbol: .edit)
+                                    }
+                                    Button(role: .destructive) {
+                                        delete(visit)
+                                    } label: {
+                                        Label("Delete", symbol: .delete)
                                     }
                                 }
                         }
@@ -109,7 +130,7 @@ public struct TripsScreen: View {
                     Button {
                         importingPhotos = true
                     } label: {
-                        Label("Import from Photos", systemImage: "photo.on.rectangle.angled")
+                        Label("Import from Photos", symbol: .importPhotos)
                     }
                 }
             }
@@ -117,7 +138,7 @@ public struct TripsScreen: View {
                 PhotoImportScreen()
             }
             .onAppear {
-                let first = openTrips.first ?? trips.first
+                let first = grouped.first?.trips.first
                 if DebugLaunch.opensFirstTrip, path.isEmpty, let first {
                     path.append(first)
                 }
@@ -137,9 +158,17 @@ public struct TripsScreen: View {
             .onChange(of: router?.pending, initial: true) { takeRoute() }
             .onChange(of: scenePhase) { takeRoute() }
             .unigridsSheet(isPresented: $creatingTrip) {
-                TripEditor(trip: nil)
+                // A new trip opens, so its stops can be added straight away.
+                TripEditor(trip: nil) { path.append($0) }
             }
-            .alert("Could not save", isPresented: .constant(error != nil)) {
+            .alert("Could not save", isPresented: Binding(
+                get: { error != nil },
+                set: {
+                    if !$0 {
+                        error = nil
+                    }
+                }
+            )) {
                 Button("OK") { error = nil }
             } message: {
                 Text(error ?? "")
@@ -198,7 +227,7 @@ private struct ArrivalCheckIn: View {
         } else {
             ContentUnavailableView(
                 "Unknown place",
-                systemImage: "questionmark.square.dashed",
+                systemImage: UnigridsSymbol.unknownPlace.systemName,
                 description: Text("This place is no longer in the dataset.")
             )
         }
@@ -214,8 +243,9 @@ struct EmptyLogNote: View {
                 .font(UnigridStyle.rowTitle)
                 .foregroundStyle(style.ink)
             Text(
-                "Plan a trip, or check in from a map card or a park guide. Stamping the "
-                    + "passport logs a visit too, so the trip log and the passport always agree."
+                "Start a new trip, or check in from a map card or a park guide. Stamping "
+                    + "the passport logs a visit too, so the trip log and the passport always "
+                    + "agree."
             )
             .font(UnigridStyle.proseSmall)
             .foregroundStyle(style.inkSecondary)
@@ -225,7 +255,7 @@ struct EmptyLogNote: View {
     }
 }
 
-/// A trip in the list: its name, dates, and its stops as a row of markers.
+/// A trip in the list: its name, dates, and its places as a row of markers.
 struct TripRow: View {
     @Environment(\.referenceStore) private var store
     @Environment(\.unigrid) private var style
@@ -233,17 +263,13 @@ struct TripRow: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
-            HStack(alignment: .firstTextBaseline) {
-                Text(trip.name)
-                    .font(UnigridStyle.rowTitle)
-                    .foregroundStyle(style.ink)
-                Spacer()
-                Kicker(trip.status.name)
-            }
+            Text(trip.name)
+                .font(UnigridStyle.rowTitle)
+                .foregroundStyle(style.ink)
             Text(detail)
                 .font(UnigridStyle.rowDetail)
                 .foregroundStyle(style.inkSecondary)
-            let places = trip.orderedStops.compactMap { store.place($0.place) }
+            let places = places
             if !places.isEmpty {
                 HStack(spacing: 4) {
                     ForEach(places.prefix(14)) { place in
@@ -261,15 +287,17 @@ struct TripRow: View {
         .padding(.vertical, 4)
     }
 
+    /// Each place once, though a trip may have a park and three of its sights.
+    private var places: [Place] {
+        var seen: Set<UnigridsID> = []
+        return trip.orderedStops
+            .filter { seen.insert($0.place).inserted }
+            .compactMap { store.place($0.place) }
+    }
+
     private var detail: String {
         var parts: [String] = []
-        if let start = trip.startDate {
-            var range = start.formatted(.dateTime.day().month(.abbreviated))
-            if let end = trip.endDate, !Calendar.current.isDate(end, inSameDayAs: start) {
-                range += "–" + end.formatted(.dateTime.day().month(.abbreviated).year())
-            } else {
-                range += " " + start.formatted(.dateTime.year())
-            }
+        if let range = TripDates.range(trip) {
             parts.append(range)
         }
         let stops = trip.orderedStops.count
@@ -279,6 +307,21 @@ struct TripRow: View {
             parts.append("\(visits) visit\(visits == 1 ? "" : "s")")
         }
         return parts.joined(separator: " · ")
+    }
+}
+
+/// A trip's dates in a line: "12–18 Jun 2026", or "30 Jun – 4 Jul 2026".
+enum TripDates {
+    static func range(_ trip: Trip, calendar: Calendar = .unigrids) -> String? {
+        guard let start = trip.startDate else { return nil }
+        let end = max(trip.endDate ?? start, start)
+        if UnigridsCalendar.isSameDay(start, end, calendar: calendar) {
+            return start.formatted(UnigridsFormat.day(in: calendar))
+        }
+        var style = Date.IntervalFormatStyle(date: .abbreviated, time: .omitted)
+        style.calendar = calendar
+        style.timeZone = calendar.timeZone
+        return (start ..< end).formatted(style)
     }
 }
 
@@ -308,7 +351,10 @@ struct VisitRow: View {
                         .font(UnigridStyle.rowTitle)
                         .foregroundStyle(place == nil ? style.inkSecondary : style.ink)
                     HStack(spacing: 6) {
-                        Text(visit.date, format: .dateTime.day().month(.abbreviated).year())
+                        Text(
+                            visit.date,
+                            format: UnigridsFormat.day(in: UnigridsCalendar.gregorian(at: place))
+                        )
                         Text("·")
                         Text(visit.source.name)
                         if let count = visit.checkIns?.count, count > 0 {
@@ -325,176 +371,19 @@ struct VisitRow: View {
                 }
                 Spacer()
                 if let rating = visit.rating {
-                    Text(String(repeating: "★", count: rating))
-                        .font(.caption)
-                        .foregroundStyle(style.ink)
-                        .accessibilityLabel("\(rating) stars")
+                    HStack(spacing: 1) {
+                        ForEach(0 ..< rating, id: \.self) { _ in
+                            Image(.rated)
+                        }
+                    }
+                    .font(UnigridStyle.caption)
+                    .foregroundStyle(style.ink)
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel("\(rating) of 5 stars")
                 }
             }
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-    }
-}
-
-// MARK: - Visit editor
-
-/// Edit or delete anything, which §9 lists under ownership of data.
-struct VisitEditor: View {
-    @Environment(\.modelContext) private var context
-    @Environment(\.unigrid) private var style
-    @Environment(\.dismiss) private var dismiss
-    @Environment(\.referenceStore) private var store
-    @Environment(UndoCenter.self) private var undo: UndoCenter?
-    @Query(sort: \Trip.createdAt, order: .reverse) private var trips: [Trip]
-
-    let visit: Visit
-
-    @State private var date: Date
-    @State private var notes: String
-    @State private var rating: Int?
-    @State private var tripID: UUID?
-    @State private var confirmDelete = false
-    @State private var error: String?
-
-    init(visit: Visit) {
-        self.visit = visit
-        _date = State(initialValue: visit.date)
-        _notes = State(initialValue: visit.notes)
-        _rating = State(initialValue: visit.rating)
-        _tripID = State(initialValue: visit.trip?.id)
-    }
-
-    var body: some View {
-        NavigationStack {
-            Form {
-                Section {
-                    DatePicker(
-                        "Date",
-                        selection: $date,
-                        displayedComponents: [.date, .hourAndMinute]
-                    )
-                    Picker("Trip", selection: $tripID) {
-                        Text("Not on a trip").tag(UUID?.none)
-                        ForEach(trips) { trip in
-                            Text(trip.name).tag(UUID?.some(trip.id))
-                        }
-                    }
-                } header: {
-                    Text(store.place(visit.place)?.name ?? visit.placeID)
-                }
-
-                Section("Rating") {
-                    RatingPicker(rating: $rating)
-                }
-
-                Section("Notes") {
-                    TextField("Notes", text: $notes, axis: .vertical)
-                        .lineLimit(3 ... 8)
-                }
-
-                if let checkIns = visit.checkIns, !checkIns.isEmpty {
-                    Section("Check-ins") {
-                        ForEach(checkIns.sorted { $0.date < $1.date }) { checkIn in
-                            Text(name(for: checkIn))
-                                .font(.subheadline)
-                        }
-                    }
-                }
-
-                if let stamps = visit.stamps, !stamps.isEmpty {
-                    Section("Stamps") {
-                        ForEach(stamps) { stamp in
-                            HStack {
-                                Text(
-                                    stamp.date,
-                                    format: .dateTime.day().month(.abbreviated).year()
-                                )
-                                if stamp.hasAmerica250Seal(at: store.place(stamp.place)) {
-                                    Text("America 250")
-                                        .font(.caption)
-                                        .foregroundStyle(style.seal)
-                                }
-                                Spacer()
-                                if stamp.isVerifiedOnSite {
-                                    Image(systemName: "checkmark.seal.fill")
-                                        .foregroundStyle(.tint)
-                                        .accessibilityLabel("Verified on site")
-                                }
-                            }
-                        }
-                    }
-                }
-
-                Section {
-                    Button("Delete this visit", role: .destructive) {
-                        confirmDelete = true
-                    }
-                }
-
-                if let error {
-                    Section {
-                        Label(error, systemImage: "exclamationmark.triangle")
-                            .foregroundStyle(style.seal)
-                    }
-                }
-            }
-            .formStyle(.grouped)
-            .navigationTitle("Visit")
-            .toolbarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") { dismiss() }
-                }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Save") { save() }
-                }
-            }
-            .confirmationDialog(
-                "Delete this visit?",
-                isPresented: $confirmDelete,
-                titleVisibility: .visible
-            ) {
-                Button("Delete", role: .destructive) { deleteVisit() }
-            } message: {
-                Text("Its check-ins go with it. Passport stamps stay in the passport.")
-            }
-        }
-    }
-
-    private func name(for checkIn: CheckIn) -> String {
-        switch checkIn.target {
-        case let .pointOfInterest(id):
-            store.pointsOfInterest(in: visit.place).first { $0.id == id }?.name
-                ?? id.rawValue
-        case let .trail(id):
-            store.trails(in: visit.place).first { $0.id == id }?.name ?? id.rawValue
-        case let .place(id):
-            store.place(id)?.name ?? id.rawValue
-        }
-    }
-
-    private func save() {
-        do {
-            try LogStore(context: context).update {
-                visit.date = date
-                visit.notes = notes
-                visit.rating = rating
-                visit.trip = trips.first { $0.id == tripID }
-            }
-            dismiss()
-        } catch {
-            self.error = error.localizedDescription
-        }
-    }
-
-    private func deleteVisit() {
-        do {
-            let record = try LogStore(context: context).delete(visit: visit)
-            undo?.offer(record, message: record.summary { store.place($0)?.name })
-            dismiss()
-        } catch {
-            self.error = error.localizedDescription
-        }
     }
 }

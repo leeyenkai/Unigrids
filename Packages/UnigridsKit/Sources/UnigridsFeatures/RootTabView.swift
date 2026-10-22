@@ -28,23 +28,25 @@ public struct RootTabView: View {
 
     public var body: some View {
         TabView(selection: $tab) {
-            Tab("Map", systemImage: "map", value: AppTab.map) {
+            Tab("Map", systemImage: UnigridsSymbol.map.systemName, value: AppTab.map) {
                 MapScreen()
             }
-            Tab("Parks", systemImage: "square.grid.3x3", value: AppTab.parks) {
+            Tab("Parks", systemImage: UnigridsSymbol.parks.systemName, value: AppTab.parks) {
                 ParkDirectoryScreen()
             }
-            Tab(
-                "Trips",
-                systemImage: "point.topleft.down.to.point.bottomright.curvepath",
-                value: AppTab.trips
-            ) {
+            Tab("Trips", systemImage: UnigridsSymbol.trips.systemName, value: AppTab.trips) {
                 TripsScreen()
             }
-            Tab("Passport", systemImage: "book.closed", value: AppTab.passport) {
+            // Arrivals waiting for an answer, so a suggestion is seen from any tab.
+            .badge(arrivals)
+            Tab(
+                "Passport",
+                systemImage: UnigridsSymbol.passport.systemName,
+                value: AppTab.passport
+            ) {
                 PassportScreen()
             }
-            Tab("Stats", systemImage: "chart.bar", value: AppTab.stats) {
+            Tab("Stats", systemImage: UnigridsSymbol.stats.systemName, value: AppTab.stats) {
                 StatsScreen()
             }
         }
@@ -91,6 +93,10 @@ public struct RootTabView: View {
         }
     }
 
+    private var arrivals: Int {
+        DetectedVisits.unanswered(AppServices.detected.pending, visits: visits, store: store).count
+    }
+
     private var visitCount: Int {
         visits.count
     }
@@ -98,7 +104,7 @@ public struct RootTabView: View {
     /// The parks on trips still to come, whose brochures are kept for offline (§6).
     private var upcomingPlaceIDs: [UnigridsID] {
         trips
-            .filter { $0.status != .done }
+            .filter { $0.status(on: Date()) != .done }
             .flatMap(\.orderedStops)
             .map(\.place)
     }

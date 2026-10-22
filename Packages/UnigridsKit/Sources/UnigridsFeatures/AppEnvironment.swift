@@ -75,7 +75,7 @@ public struct VisitIndex: Sendable {
         visitedPlaceIDs = Set(visits.map(\.place))
         plannedPlaceIDs = Set(
             trips
-                .filter { $0.status != .done }
+                .filter { $0.status(on: Date()) != .done }
                 .flatMap { ($0.stops ?? []).map(\.place) }
         )
     }

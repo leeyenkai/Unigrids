@@ -29,8 +29,23 @@ public enum UnigridsSymbol: String, CaseIterable, Sendable {
     case delete = "trash"
     case add = "plus"
     case undo = "arrow.uturn.backward"
+    case edit = "pencil"
+    case details = "ellipsis.circle"
+    case retry = "arrow.clockwise"
+    case addToTrip = "text.badge.plus"
+    case hike = "figure.hiking"
+    case lookAround = "binoculars"
+    case previous = "chevron.left"
+    case next = "chevron.right"
+    case addToCalendar = "calendar.badge.plus"
+    case exportRoute = "point.3.connected.trianglepath.dotted"
+    case lodging = "bed.double"
+    case waypoint = "mappin"
+    case search = "magnifyingglass"
     case share = "square.and.arrow.up"
     case importFile = "square.and.arrow.down"
+    case importPhotos = "photo.on.rectangle.angled"
+    case dismiss = "xmark"
     case spreadsheet = "tablecells"
 
     // Status
@@ -49,12 +64,14 @@ public enum UnigridsSymbol: String, CaseIterable, Sendable {
     case elevation = "arrow.up.right"
     case highPoint = "mountain.2"
     case pending = "hourglass"
+    case photo
     case scheduled = "calendar.badge.clock"
 
     // Problems
     case warning = "exclamationmark.triangle"
     case warningFilled = "exclamationmark.triangle.fill"
     case storeUnavailable = "exclamationmark.icloud"
+    case unknownPlace = "questionmark.square.dashed"
 
     /// The SF Symbol name. Every one is checked against the SDK by `UnigridsDesignTests`.
     public var systemName: String {

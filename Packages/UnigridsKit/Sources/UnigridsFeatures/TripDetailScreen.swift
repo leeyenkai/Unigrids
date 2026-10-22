@@ -15,6 +15,7 @@ struct TripDetailScreen: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(AlertsCenter.self) private var alerts: AlertsCenter?
     @Environment(UndoCenter.self) private var undo: UndoCenter?
+    @Environment(\.undoHost) private var undoHost
 
     let trip: Trip
 
@@ -22,91 +23,45 @@ struct TripDetailScreen: View {
     @State private var forecasts = Forecasts()
     @State private var addingStop = false
     @State private var editingTrip = false
+    @State private var detailing: TripStop?
+    @State private var editingVisit: Visit?
     @State private var confirmDelete = false
+    @State private var reordering = false
     @State private var error: String?
 
-    private var stops: [(stop: TripStop, place: Place?)] {
-        trip.orderedStops.map { ($0, store.place($0.place)) }
+    private var stops: [ResolvedStop] {
+        trip.orderedStops.map { ResolvedStop($0, store: store) }
     }
 
     var body: some View {
         List {
             Section {
-                VStack(alignment: .leading, spacing: 0) {
-                    BandHeader(trip.name, kicker: kicker)
-                    if stops.contains(where: { $0.place != nil }) {
-                        TripMap(places: knownPlaces, roads: roads)
-                            .frame(height: 280)
-                    }
-                    TripFigures(trip: trip, places: knownPlaces, legs: routedLegs)
-                        .padding(UnigridStyle.pageMargin)
-                }
-                .listRowInsets(EdgeInsets())
-                .listRowSeparator(.hidden)
-                .listRowBackground(Color.clear)
+                TripHeader(trip: trip, stops: stops, legs: routedLegs, roads: roads)
+                    .listRowInsets(EdgeInsets())
+                    .listRowSeparator(.hidden)
+                    .listRowBackground(Color.clear)
             }
 
-            Section {
-                if stops.isEmpty {
-                    Text(
-                        "No stops yet. Add the parks you mean to see, "
-                            + "in the order you mean to see them."
-                    )
-                    .font(UnigridStyle.proseSmall)
-                    .foregroundStyle(style.inkSecondary)
-                    .listRowBackground(Color.clear)
-                }
-                ForEach(Array(stops.enumerated()), id: \.element.stop.id) { index, entry in
-                    VStack(alignment: .leading, spacing: 8) {
-                        let previous = index > 0 ? stops[index - 1].place : nil
-                        if let previous, let place = entry.place {
-                            LegLine(
-                                leg: driveTimes.leg(from: previous.id, to: place.id),
-                                failed: driveTimes.hasFailed(from: previous.id, to: place.id),
-                                straightLine: previous.centre.distance(to: place.centre)
-                            )
-                        }
-                        StopRow(number: index + 1, stop: entry.stop, place: entry.place, trip: trip)
-                        if let place = entry.place {
-                            StopExtras(
-                                weather: entry.stop.plannedDate.flatMap {
-                                    forecasts.forecast(for: place, on: $0)
-                                },
-                                flags: StopFlag.flags(
-                                    for: place,
-                                    on: entry.stop.plannedDate,
-                                    alerts: alerts,
-                                    guide: store.guide(for: place.id)
-                                )
-                            )
-                            .padding(.leading, 34)
-                        }
-                    }
-                    .listRowBackground(Color.clear)
-                }
-                .onMove(perform: move)
-                .onDelete(perform: deleteStops)
+            ItinerarySection(
+                stops: stops,
+                trip: trip,
+                driveTimes: driveTimes,
+                forecasts: forecasts,
+                reordering: $reordering,
+                onAdd: { addingStop = true },
+                onDetails: { detailing = $0 },
+                onMove: move,
+                onDelete: deleteStops
+            )
 
-                Button {
-                    addingStop = true
-                } label: {
-                    Label("Add a stop", systemImage: "plus")
-                }
-                .buttonStyle(BrochureButtonStyle(.secondary))
-                .listRowSeparator(.hidden)
-                .listRowBackground(Color.clear)
-            } header: {
-                SectionHead("Itinerary", detail: "\(stops.count)")
-            }
-
-            TripDaysSection(days: days)
+            TripDaysSection(days: days, stops: stops)
 
             TripRemindersSection(trip: trip)
 
             if let visits = trip.visits, !visits.isEmpty {
                 Section {
                     ForEach(visits.sorted { $0.date < $1.date }) { visit in
-                        VisitRow(visit: visit) {}
+                        VisitRow(visit: visit) { editingVisit = visit }
                             .listRowBackground(Color.clear)
                     }
                 } header: {
@@ -129,159 +84,130 @@ struct TripDetailScreen: View {
                 Button(role: .destructive) {
                     confirmDelete = true
                 } label: {
-                    Text("Delete this trip")
-                        .font(UnigridStyle.action)
-                        .foregroundStyle(.red)
+                    Label("Delete this trip", symbol: .delete)
                 }
-                .buttonStyle(.borderless)
+                .buttonStyle(BrochureButtonStyle(.secondary))
                 .listRowBackground(Color.clear)
             } footer: {
-                Text("Deleting a trip keeps its visits in your log.")
-                    .font(UnigridStyle.caption)
+                FormNote("Deleting a trip keeps its visits in your log.")
             }
         }
         .listStyle(.plain)
         .paperPage()
-        .navigationTitle(trip.name)
-        .toolbarTitleDisplayMode(.inline)
-        .toolbar {
+        #if os(iOS)
+            .environment(\.editMode, .constant(reordering ? .active : .inactive))
+        #endif
+            .toolbarTitleDisplayMode(.inline)
+            .toolbar { toolbar }
+            .task(id: RouteKey(stops: stops.map(\.routeKey), attempt: driveTimes.attempt)) {
+                await driveTimes.route(stops, store: store)
+                await forecasts.load(forecastable)
+            }
+            .task { await alerts?.refreshIfStale() }
+            .unigridsSheet(isPresented: $addingStop) { StopPicker(trip: trip) }
+            .unigridsSheet(isPresented: $editingTrip) { TripEditor(trip: trip) }
+            .unigridsSheet(item: $detailing) { StopDetailsSheet(stop: $0) }
+            .unigridsSheet(item: $editingVisit) { VisitEditor(visit: $0) }
+            .confirmationDialog(
+                "Delete \(trip.name.isEmpty ? "this trip" : trip.name)?",
+                isPresented: $confirmDelete,
+                titleVisibility: .visible
+            ) {
+                Button("Delete trip", role: .destructive, action: deleteTrip)
+            } message: {
+                Text("Its stops and reminders go with it; its visits stay in your log.")
+            }
+            .alert("Could not save", isPresented: errorShown) {
+                Button("OK") { error = nil }
+            } message: {
+                Text(error ?? "")
+            }
+    }
+
+    @ToolbarContentBuilder
+    private var toolbar: some ToolbarContent {
+        ToolbarItem {
+            Button {
+                editingTrip = true
+            } label: {
+                Label("Edit trip", symbol: .edit)
+            }
+        }
+        if exports.calendar != nil || exports.gpx != nil {
             ToolbarItem {
-                Button("Edit") { editingTrip = true }
-            }
-            if let file = calendarFile {
-                ToolbarItem {
-                    ShareLink(item: file) {
-                        Label("Add to Calendar", systemImage: "calendar.badge.plus")
+                Menu {
+                    if let calendar = exports.calendar {
+                        ShareLink(item: calendar, preview: SharePreview("\(trip.name).ics")) {
+                            Label("Add to Calendar", symbol: .addToCalendar)
+                        }
                     }
-                }
-            }
-            if let file = gpxFile {
-                ToolbarItem {
-                    ShareLink(item: file) {
-                        Label(
-                            "Export GPX",
-                            systemImage: "point.topleft.down.to.point.bottomright.curvepath"
-                        )
+                    if let gpx = exports.gpx {
+                        ShareLink(item: gpx, preview: SharePreview("\(trip.name).gpx")) {
+                            Label("Export GPX", symbol: .exportRoute)
+                        }
                     }
+                } label: {
+                    Label("Share", symbol: .share)
                 }
             }
         }
-        .task(id: knownPlaces.map(\.id)) {
-            await driveTimes.route(knownPlaces, store: store)
-            await forecasts.load(forecastable)
-        }
-        .task { await alerts?.refreshIfStale() }
-        .unigridsSheet(isPresented: $addingStop) { StopPicker(trip: trip) }
-        .unigridsSheet(isPresented: $editingTrip) { TripEditor(trip: trip) }
-        .confirmationDialog(
-            "Delete \(trip.name)?", isPresented: $confirmDelete, titleVisibility: .visible
-        ) {
-            Button("Delete trip", role: .destructive, action: deleteTrip)
-        }
-        .alert("Could not save", isPresented: .constant(error != nil)) {
-            Button("OK") { error = nil }
-        } message: {
-            Text(error ?? "")
-        }
     }
 
-    private var knownPlaces: [Place] {
-        stops.compactMap(\.place)
+    private var errorShown: Binding<Bool> {
+        Binding(get: { error != nil }, set: {
+            if !$0 {
+                error = nil
+            }
+        })
     }
 
-    /// Legs MapKit has routed, between consecutive known stops.
+    /// Legs MapKit has routed, between consecutive stops.
     private var routedLegs: [DriveLeg] {
-        zip(knownPlaces, knownPlaces.dropFirst()).compactMap { from, to in
-            driveTimes.leg(from: from.id, to: to.id).map {
-                DriveLeg(from: from.id, to: to.id, seconds: $0.seconds, metres: $0.metres)
+        zip(stops, stops.dropFirst()).compactMap { from, to in
+            driveTimes.leg(from: from, to: to).map {
+                DriveLeg(
+                    from: from.scheduleID, to: to.scheduleID,
+                    seconds: $0.seconds, metres: $0.metres
+                )
             }
         }
     }
 
     private var roads: [[Coordinate]] {
-        zip(knownPlaces, knownPlaces.dropFirst()).compactMap { from, to in
-            driveTimes.leg(from: from.id, to: to.id)?.path
-        }
+        zip(stops, stops.dropFirst()).compactMap { driveTimes.leg(from: $0, to: $1)?.path }
     }
 
     private var days: [TripDay] {
         TripSchedule.days(
-            stops: stops.compactMap { entry in
-                entry.place.map { (id: $0.id, date: entry.stop.plannedDate) }
-            },
+            stops: stops.map { (id: $0.scheduleID, date: $0.stop.plannedDate) },
             legs: routedLegs
         )
     }
 
-    /// Stops planned within the sixteen days a forecast reaches.
+    /// Places with a stop planned within the sixteen days a forecast reaches.
     private var forecastable: [Place] {
         let horizon = Date().addingTimeInterval(16 * 86400)
+        let today = UnigridsCalendar.gregorian().startOfDay(for: Date())
+        var seen: Set<UnigridsID> = []
         return stops.compactMap { entry in
-            guard let day = entry.stop.plannedDate, day <= horizon,
-                  day >= Calendar.current.startOfDay(for: Date()) else { return nil }
-            return entry.place
+            guard let day = entry.stop.plannedDate, day <= horizon, day >= today,
+                  let place = entry.place, seen.insert(place.id).inserted
+            else { return nil }
+            return place
         }
     }
 
-    private var kicker: String {
-        var parts = [trip.status.name]
-        if let start = trip.startDate {
-            parts.append(start.formatted(.dateTime.day().month(.abbreviated).year()))
-        }
-        return parts.joined(separator: " · ")
-    }
-
-    /// The itinerary as an .ics file, for stops that have a date. Written to the temporary
-    /// directory each time it is asked for; it is a hand-off, not a store.
-    private var calendarFile: URL? {
-        let events = stops.compactMap { entry -> TripCalendar.Event? in
-            guard let day = entry.stop.plannedDate else { return nil }
-            let title = entry.place.map { "\($0.name) \($0.designation)" } ?? "Trip stop"
-            return TripCalendar.Event(title: title, day: day, notes: entry.stop.notes)
-        }
-        guard !events.isEmpty else { return nil }
-        let text = TripCalendar.document(
-            name: trip.name, events: events, identifier: trip.id.uuidString, stamp: Date()
+    /// The trip's calendar and GPX, built when shared rather than on every redraw.
+    private var exports: (calendar: TripCalendarFile?, gpx: TripGPXFile?) {
+        let calendar = UnigridsCalendar.gregorian()
+        let events = stops.compactMap { $0.calendarEvent(calendar: calendar) }
+        let waypoints = stops.compactMap(\.waypoint)
+        let name = trip.name.isEmpty ? "Trip" : trip.name
+        return (
+            events.isEmpty ? nil
+                : TripCalendarFile(name: name, identifier: trip.id.uuidString, events: events),
+            waypoints.isEmpty ? nil : TripGPXFile(name: name, waypoints: waypoints)
         )
-        let safeName = trip.name.components(separatedBy: CharacterSet.alphanumerics.inverted)
-            .filter { !$0.isEmpty }.joined(separator: "-")
-        let url = FileManager.default.temporaryDirectory
-            .appendingPathComponent("\(safeName.isEmpty ? "trip" : safeName).ics")
-        do {
-            try text.write(to: url, atomically: true, encoding: .utf8)
-            return url
-        } catch {
-            return nil
-        }
-    }
-
-    /// The trip's places as GPX waypoints, in itinerary order, for any mapping app.
-    private var gpxFile: URL? {
-        let waypoints = stops.compactMap { entry -> TripGPX.Waypoint? in
-            guard let place = entry.place else { return nil }
-            return TripGPX.Waypoint(
-                name: "\(place.name) \(place.designation)",
-                coordinate: place.centre,
-                date: entry.stop.plannedDate,
-                note: entry.stop.notes
-            )
-        }
-        guard !waypoints.isEmpty else { return nil }
-        let url = FileManager.default.temporaryDirectory
-            .appendingPathComponent("\(fileStem).gpx")
-        do {
-            try TripGPX.document(name: trip.name, waypoints: waypoints)
-                .write(to: url, atomically: true, encoding: .utf8)
-            return url
-        } catch {
-            return nil
-        }
-    }
-
-    private var fileStem: String {
-        let stem = trip.name.components(separatedBy: CharacterSet.alphanumerics.inverted)
-            .filter { !$0.isEmpty }.joined(separator: "-")
-        return stem.isEmpty ? "trip" : stem
     }
 
     private func move(from source: IndexSet, to destination: Int) {
@@ -295,21 +221,23 @@ struct TripDetailScreen: View {
     }
 
     private func deleteStops(at offsets: IndexSet) {
-        let ordered = trip.orderedStops
-        do {
-            let log = LogStore(context: context)
-            for offset in offsets {
-                try log.delete(stop: ordered[offset])
+        let doomed = offsets.map { trip.orderedStops[$0] }
+        let log = LogStore(context: context)
+        for stop in doomed {
+            let name = ResolvedStop(stop, store: store).title
+            do {
+                let change = try log.delete(stop: stop)
+                undo?.offer(change, message: "\(name) taken off the trip", from: undoHost)
+            } catch {
+                self.error = error.localizedDescription
             }
-        } catch {
-            self.error = error.localizedDescription
         }
     }
 
     private func deleteTrip() {
         do {
-            let record = try LogStore(context: context).delete(trip: trip)
-            undo?.offer(record, message: record.summary { store.place($0)?.name })
+            let change = try LogStore(context: context).delete(trip: trip)
+            undo?.offer(change, message: change.summary { store.place($0)?.name })
             dismiss()
         } catch {
             self.error = error.localizedDescription
@@ -317,22 +245,148 @@ struct TripDetailScreen: View {
     }
 }
 
-/// The trip in figures: stops, states, days, and straight-line distance.
+private struct RouteKey: Hashable {
+    let stops: [String]
+    let attempt: Int
+}
+
+/// The band, the map and the figures at the top of a trip.
+private struct TripHeader: View {
+    @Environment(\.unigrid) private var style
+    let trip: Trip
+    let stops: [ResolvedStop]
+    let legs: [DriveLeg]
+    let roads: [[Coordinate]]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            BandHeader(trip.name.isEmpty ? "Untitled trip" : trip.name, kicker: kicker)
+            if stops.contains(where: { $0.coordinate != nil }) {
+                TripMap(stops: stops, roads: roads)
+                    .frame(height: 280)
+            }
+            TripFigures(trip: trip, stops: stops, legs: legs)
+                .padding(UnigridStyle.pageMargin)
+        }
+    }
+
+    private var kicker: String {
+        [trip.status(on: Date()).name, TripDates.range(trip)]
+            .compactMap(\.self).joined(separator: " · ")
+    }
+}
+
+/// The itinerary: each stop, the drive into it, its forecast and what it has posted.
+private struct ItinerarySection: View {
+    @Environment(\.unigrid) private var style
+    @Environment(AlertsCenter.self) private var alerts: AlertsCenter?
+    @Environment(\.referenceStore) private var store
+    let stops: [ResolvedStop]
+    let trip: Trip
+    let driveTimes: DriveTimes
+    let forecasts: Forecasts
+    @Binding var reordering: Bool
+    let onAdd: () -> Void
+    let onDetails: (TripStop) -> Void
+    let onMove: (IndexSet, Int) -> Void
+    let onDelete: (IndexSet) -> Void
+
+    var body: some View {
+        Section {
+            if stops.isEmpty {
+                Text(
+                    "No stops yet. Add the parks, sights, trails and places to sleep you "
+                        + "mean to see, in the order you mean to see them."
+                )
+                .font(UnigridStyle.proseSmall)
+                .foregroundStyle(style.inkSecondary)
+                .listRowBackground(Color.clear)
+            }
+            ForEach(Array(stops.enumerated()), id: \.element.id) { index, entry in
+                VStack(alignment: .leading, spacing: 8) {
+                    if index > 0 {
+                        LegLine(
+                            leg: driveTimes.leg(from: stops[index - 1], to: entry),
+                            failed: driveTimes.hasFailed(from: stops[index - 1], to: entry),
+                            straightLine: straightLine(from: stops[index - 1], to: entry),
+                            sameSpot: stops[index - 1].routeKey == entry.routeKey,
+                            onRetry: driveTimes.retry
+                        )
+                    }
+                    StopRow(number: index + 1, entry: entry, trip: trip) {
+                        onDetails(entry.stop)
+                    }
+                    if let place = entry.place {
+                        StopExtras(
+                            weather: entry.stop.plannedDate.flatMap {
+                                forecasts.forecast(for: place, on: $0)
+                            },
+                            flags: StopFlag.flags(
+                                for: place,
+                                on: entry.stop.plannedDate,
+                                alerts: alerts,
+                                guide: store.guide(for: place.id)
+                            )
+                        )
+                        .padding(.leading, 34)
+                    }
+                }
+                .listRowBackground(Color.clear)
+            }
+            .onMove(perform: onMove)
+            .onDelete(perform: onDelete)
+
+            Button(action: onAdd) {
+                Label("Add stops", symbol: .add)
+            }
+            .buttonStyle(BrochureButtonStyle(.secondary))
+            .listRowSeparator(.hidden)
+            .listRowBackground(Color.clear)
+        } header: {
+            HStack(alignment: .firstTextBaseline) {
+                SectionHead("Itinerary", detail: "\(stops.count)")
+                #if os(iOS)
+                    if stops.count > 1 {
+                        Button(reordering ? "Done" : "Reorder") { reordering.toggle() }
+                            .font(UnigridStyle.dataLabel)
+                            .textCase(.uppercase)
+                    }
+                #endif
+            }
+        } footer: {
+            if stops.count > 1 {
+                #if os(iOS)
+                    FormNote("Reorder to change the route; swipe a stop to take it off the trip.")
+                #else
+                    FormNote("Drag stops to change the route.")
+                #endif
+            }
+        }
+    }
+
+    private func straightLine(from: ResolvedStop, to: ResolvedStop) -> Double {
+        guard let start = from.coordinate, let end = to.coordinate else { return 0 }
+        return start.distance(to: end)
+    }
+}
+
+/// The trip in figures: stops, states, days, and the driving or the straight line.
 struct TripFigures: View {
     let trip: Trip
-    let places: [Place]
+    let stops: [ResolvedStop]
     var legs: [DriveLeg] = []
 
     var body: some View {
-        let distance = TripRoute.totalDistance(places.map(\.centre))
-        let states = Set(places.flatMap { $0.states.map(\.code) })
-        let allRouted = places.count > 1 && legs.count == places.count - 1
+        let points = stops.compactMap(\.coordinate)
+        let distance = TripRoute.totalDistance(points)
+        let states = Set(stops.compactMap(\.place).flatMap { $0.states.map(\.code) })
+        let allRouted = stops.count > 1 && legs.count == stops.count - 1
         LazyVGrid(
             columns: [GridItem(.adaptive(minimum: 110), spacing: 14, alignment: .top)],
             alignment: .leading,
             spacing: 14
         ) {
-            FigureBlock(value: "\(places.count)", label: "Stops", compact: true)
+            FigureBlock(value: "\(stops.count)", label: "Stops", compact: true)
             FigureBlock(value: "\(states.count)", label: "States", compact: true)
             if let days {
                 FigureBlock(value: "\(days)", label: days == 1 ? "Day" : "Days", compact: true)
@@ -360,106 +414,10 @@ struct TripFigures: View {
 
     private var days: Int? {
         guard let start = trip.startDate, let end = trip.endDate else { return nil }
-        let count = Calendar.current.dateComponents(
-            [.day],
-            from: Calendar.current.startOfDay(for: start),
-            to: Calendar.current.startOfDay(for: end)
+        let calendar = UnigridsCalendar.gregorian()
+        let count = calendar.dateComponents(
+            [.day], from: calendar.startOfDay(for: start), to: calendar.startOfDay(for: end)
         ).day ?? 0
         return max(count + 1, 1)
-    }
-}
-
-/// One stop: its number, the place, the day, and whether it has been visited on this trip.
-struct StopRow: View {
-    @Environment(\.unigrid) private var style
-    @Environment(\.modelContext) private var context
-    let number: Int
-    let stop: TripStop
-    let place: Place?
-    let trip: Trip
-
-    @State private var editingDate = false
-
-    var body: some View {
-        HStack(spacing: 12) {
-            SightNumber(number: number, isSelected: visited)
-            NavigationLink(value: stop.place) {
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(place?.name ?? "Unknown place")
-                        .font(UnigridStyle.rowTitle)
-                        .foregroundStyle(style.ink)
-                    Text(detail)
-                        .font(UnigridStyle.rowDetail)
-                        .foregroundStyle(style.inkSecondary)
-                }
-            }
-        }
-        .contextMenu {
-            Button("Set the day") { editingDate = true }
-        }
-        .swipeActions(edge: .leading) {
-            Button("Day") { editingDate = true }
-        }
-        .unigridsSheet(isPresented: $editingDate) {
-            StopDateSheet(stop: stop)
-        }
-    }
-
-    private var visited: Bool {
-        (trip.visits ?? []).contains { $0.place == stop.place }
-    }
-
-    private var detail: String {
-        var parts: [String] = []
-        if let place {
-            parts.append(place.designation)
-        }
-        if let day = stop.plannedDate {
-            parts.append(day.formatted(.dateTime.weekday(.abbreviated).day().month(.abbreviated)))
-        }
-        if visited {
-            parts.append("Visited")
-        }
-        return parts.joined(separator: " · ")
-    }
-}
-
-struct StopDateSheet: View {
-    @Environment(\.modelContext) private var context
-    @Environment(\.dismiss) private var dismiss
-    let stop: TripStop
-    @State private var day = Date()
-    @State private var hasDay = false
-
-    var body: some View {
-        NavigationStack {
-            Form {
-                Toggle("Planned for a day", isOn: $hasDay)
-                if hasDay {
-                    DatePicker("Day", selection: $day, displayedComponents: .date)
-                }
-            }
-            .formStyle(.grouped)
-            .navigationTitle("Stop")
-            .toolbarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") { dismiss() }
-                }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Save") {
-                        _ = try? LogStore(context: context).update {
-                            stop.plannedDate = hasDay ? day : nil
-                        }
-                        dismiss()
-                    }
-                }
-            }
-            .onAppear {
-                hasDay = stop.plannedDate != nil
-                day = stop.plannedDate ?? stop.trip?.startDate ?? Date()
-            }
-        }
-        .presentationDetents([.medium])
     }
 }

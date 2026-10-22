@@ -229,7 +229,9 @@ struct TripPlanningTests {
         let text = TripCalendar.document(
             name: "Utah, in April",
             events: [
-                TripCalendar.Event(title: "Zion National Park", day: day, notes: "Shuttle; early"),
+                TripCalendar.Event(
+                    uid: "stop-a", title: "Zion National Park", day: day, notes: "Shuttle; early"
+                ),
             ],
             identifier: "trip-1",
             stamp: day,
@@ -241,7 +243,30 @@ struct TripPlanningTests {
         #expect(text.contains("DTEND;VALUE=DATE:20270416\r\n"))
         #expect(text.contains("X-WR-CALNAME:Utah\\, in April"))
         #expect(text.contains("DESCRIPTION:Shuttle\\; early"))
-        #expect(text.contains("UID:trip-1-0@unigrids"))
+        #expect(text.contains("UID:trip-1-stop-a@unigrids"))
+    }
+
+    @Test("a timed stop is an hour from its time, and long lines fold")
+    func calendarTimedAndFolded() {
+        var utc = Calendar(identifier: .gregorian)
+        utc.timeZone = TimeZone(identifier: "UTC") ?? .gmt
+        let time = utc.date(from: DateComponents(year: 2027, month: 4, day: 15, hour: 7)) ?? Date()
+        let notes = String(repeating: "Angels Landing permit lottery, ", count: 6) + "line\r\nbreak"
+        let text = TripCalendar.document(
+            name: "Utah",
+            events: [
+                TripCalendar.Event(uid: "s", title: "Permit", day: time, time: time, notes: notes),
+            ],
+            identifier: "t",
+            stamp: time,
+            calendar: utc
+        )
+        #expect(text.contains("DTSTART:20270415T070000Z\r\n"))
+        #expect(text.contains("DTEND:20270415T080000Z\r\n"))
+        #expect(!text.contains("line\r\nbreak"))
+        for line in text.components(separatedBy: "\r\n") {
+            #expect(line.utf8.count <= 75)
+        }
     }
 }
 

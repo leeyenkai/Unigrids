@@ -13,6 +13,7 @@ import UnigridsReference
 /// around at street level where Apple has imagery, move on.
 struct SightCard: View {
     @Environment(\.unigrid) private var style
+    @Environment(\.referenceStore) private var store
     let sight: PointOfInterest
     let number: Int
     let count: Int
@@ -23,6 +24,7 @@ struct SightCard: View {
 
     @State private var scene: MKLookAroundScene?
     @State private var showLookAround = false
+    @State private var addingToTrip = false
 
     var body: some View {
         ExplorerCardFrame(
@@ -48,24 +50,27 @@ struct SightCard: View {
                     }
                 }
             }
-            HStack(spacing: 8) {
+            WrappingRow {
                 Button(action: onCheckIn) {
-                    Label("Check in", systemImage: "mappin.and.ellipse")
+                    Label("Check in", symbol: .checkIn)
+                }
+                Button { addingToTrip = true } label: {
+                    Label("Add to trip", symbol: .addToTrip)
                 }
                 if scene != nil {
                     Button { showLookAround = true } label: {
-                        Label("Look Around", systemImage: "binoculars")
+                        Label("Look Around", symbol: .lookAround)
                     }
                 }
                 if let onPrevious {
                     Button(action: onPrevious) {
-                        Label("Previous", systemImage: "chevron.left")
+                        Label("Previous sight", symbol: .previous)
                     }
                     .labelStyle(.iconOnly)
                 }
                 if let onNext {
                     Button(action: onNext) {
-                        Label("Next", systemImage: "chevron.right")
+                        Label("Next sight", symbol: .next)
                     }
                     .labelStyle(.iconOnly)
                 }
@@ -78,6 +83,15 @@ struct SightCard: View {
         }
         .unigridsSheet(isPresented: $showLookAround) {
             LookAroundSheet(title: sight.name, scene: scene)
+        }
+        .unigridsSheet(isPresented: $addingToTrip) {
+            if let place = store.place(sight.placeID) {
+                AddToTripSheet(
+                    place: place,
+                    target: .pointOfInterest(sight.id),
+                    stopName: sight.name
+                )
+            }
         }
     }
 }
@@ -107,9 +121,11 @@ struct LookAroundSheet: View {
 /// A visitor centre's or campground's card.
 struct FacilityCard: View {
     @Environment(\.unigrid) private var style
+    @Environment(\.referenceStore) private var store
     let poi: PointOfInterest
     let onCheckIn: () -> Void
     let onClose: () -> Void
+    @State private var addingToTrip = false
 
     var body: some View {
         ExplorerCardFrame(kicker: poi.kind.name, title: poi.name, onClose: onClose) {
@@ -127,17 +143,25 @@ struct FacilityCard: View {
                 Label { Text("Passport stamp here") } icon: { StampIcon() }
                     .font(UnigridStyle.rowDetail)
             }
-            HStack(spacing: 8) {
+            WrappingRow {
                 Button(action: onCheckIn) {
-                    Label("Check in", systemImage: "mappin.and.ellipse")
+                    Label("Check in", symbol: .checkIn)
+                }
+                Button { addingToTrip = true } label: {
+                    Label("Add to trip", symbol: .addToTrip)
                 }
                 if let url = poi.url {
                     Link(destination: url) {
-                        Label("On nps.gov", systemImage: "arrow.up.right.square")
+                        Label("Website", symbol: .website)
                     }
                 }
             }
             .buttonStyle(BrochureButtonStyle(.secondary, fullWidth: false))
+        }
+        .unigridsSheet(isPresented: $addingToTrip) {
+            if let place = store.place(poi.placeID) {
+                AddToTripSheet(place: place, target: .pointOfInterest(poi.id), stopName: poi.name)
+            }
         }
     }
 }

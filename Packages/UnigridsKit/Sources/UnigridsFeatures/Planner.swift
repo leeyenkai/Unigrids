@@ -25,43 +25,58 @@ struct RoutedLeg: Equatable {
 /// Drive times between stops, asked of MapKit once per pair and kept for the session.
 ///
 /// Directions need a connection and are rate-limited by Apple, so a leg that cannot be
-/// routed — an island, a park with no road, no signal — stays unrouted and the trip shows
-/// its straight-line distance instead, labelled as such.
+/// routed — an island, a park with no road, no signal — shows its straight-line distance
+/// instead, labelled as such, until the reader asks to try again.
 @MainActor
 @Observable
 final class DriveTimes {
     private(set) var legs: [String: RoutedLeg] = [:]
     private var failed: Set<String> = []
     private var inFlight: Set<String> = []
+    /// Bumped by `retry()`, so a view that routes on its change routes again.
+    private(set) var attempt = 0
 
-    static func key(_ from: UnigridsID, _ to: UnigridsID) -> String {
-        "\(from.rawValue)>\(to.rawValue)"
+    static func key(_ from: ResolvedStop, _ to: ResolvedStop) -> String {
+        "\(from.routeKey)>\(to.routeKey)"
     }
 
-    func leg(from: UnigridsID, to: UnigridsID) -> RoutedLeg? {
+    func leg(from: ResolvedStop, to: ResolvedStop) -> RoutedLeg? {
         legs[Self.key(from, to)]
     }
 
-    func hasFailed(from: UnigridsID, to: UnigridsID) -> Bool {
+    func hasFailed(from: ResolvedStop, to: ResolvedStop) -> Bool {
         failed.contains(Self.key(from, to))
+    }
+
+    var hasFailures: Bool {
+        !failed.isEmpty
+    }
+
+    /// Forget the legs that failed, and route them again.
+    func retry() {
+        failed.removeAll()
+        attempt += 1
     }
 
     /// Route every consecutive pair not yet routed, one at a time.
     ///
-    /// A park's centre can be twenty miles from a road, so each leg runs between the
-    /// visitor centres that face each other — the one nearest the next park, to the one
-    /// nearest the last — and falls back to the centre where a place has none.
-    func route(_ places: [Place], store: any ReferenceStore) async {
-        for (from, to) in zip(places, places.dropFirst()) {
-            let key = Self.key(from.id, to.id)
-            guard legs[key] == nil, !failed.contains(key), !inFlight.contains(key) else { continue }
+    /// A park's centre can be twenty miles from a road, so a leg into or out of a park
+    /// runs from the visitor centre facing the other end; a sight, trail or lodging stop
+    /// routes from its own point.
+    func route(_ stops: [ResolvedStop], store: any ReferenceStore) async {
+        for (from, to) in zip(stops, stops.dropFirst()) {
+            let key = Self.key(from, to)
+            guard legs[key] == nil, !failed.contains(key), !inFlight.contains(key),
+                  from.routeKey != to.routeKey,
+                  let fromPoint = from.coordinate, let toPoint = to.coordinate
+            else { continue }
             inFlight.insert(key)
             defer { inFlight.remove(key) }
-            let start = Self.anchor(of: from, toward: to.centre, store: store)
-            let end = Self.anchor(of: to, toward: start, store: store)
+            let start = from.routeAnchor(toward: toPoint, store: store) ?? fromPoint
+            let end = to.routeAnchor(toward: start, store: store) ?? toPoint
             let request = MKDirections.Request()
-            request.source = Self.item(at: start, named: from.name)
-            request.destination = Self.item(at: end, named: to.name)
+            request.source = Self.item(at: start, named: from.title)
+            request.destination = Self.item(at: end, named: to.title)
             request.transportType = .automobile
             do {
                 let response = try await MKDirections(request: request).calculate()
@@ -78,14 +93,6 @@ final class DriveTimes {
                 failed.insert(key)
             }
         }
-    }
-
-    private static func anchor(
-        of place: Place, toward point: Coordinate, store: any ReferenceStore
-    ) -> Coordinate {
-        store.visitorCentres(in: place.id)
-            .min { $0.location.distance(to: point) < $1.location.distance(to: point) }?
-            .location ?? place.centre
     }
 
     private static func item(at point: Coordinate, named name: String) -> MKMapItem {
@@ -377,8 +384,12 @@ struct StopFlagList: View {
 /// The trip's dated days, with the driving into each and a warning on a long one.
 struct TripDaysSection: View {
     @Environment(\.unigrid) private var style
-    @Environment(\.referenceStore) private var store
     let days: [TripDay]
+    let stops: [ResolvedStop]
+
+    private var titles: [UnigridsID: String] {
+        Dictionary(stops.map { ($0.scheduleID, $0.title) }, uniquingKeysWith: { first, _ in first })
+    }
 
     var body: some View {
         if !days.isEmpty {
@@ -395,11 +406,10 @@ struct TripDaysSection: View {
                         }
                         .frame(width: 40, alignment: .leading)
                         VStack(alignment: .leading, spacing: 3) {
-                            Text(day.day.formatted(.dateTime.weekday(.wide).day().month(.wide)))
+                            Text(day.day.formatted(UnigridsFormat.weekday()))
                                 .font(UnigridStyle.rowTitle)
                                 .foregroundStyle(style.ink)
-                            Text(day.stopIDs.compactMap { store.place($0)?.name }
-                                .joined(separator: " → "))
+                            Text(day.stopIDs.compactMap { titles[$0] }.joined(separator: " → "))
                                 .font(UnigridStyle.rowDetail)
                                 .foregroundStyle(style.inkSecondary)
                             if day.drivingSeconds > 0 {
@@ -407,10 +417,11 @@ struct TripDaysSection: View {
                                     "\(UnigridsFormat.duration(day.drivingSeconds)) driving, "
                                         + UnigridsFormat.distance(metres: day.drivingMetres),
                                     systemImage: day.isLong
-                                        ? "exclamationmark.triangle.fill" : "car"
+                                        ? UnigridsSymbol.warning.systemName
+                                        : UnigridsSymbol.directions.systemName
                                 )
                                 .font(UnigridStyle.rowDetail)
-                                .foregroundStyle(day.isLong ? style.seal : style.ink)
+                                .foregroundStyle(style.ink)
                             }
                             if day.isLong {
                                 Text(

@@ -23,21 +23,35 @@ public enum TripRoute {
 /// permission and the format can be tested.
 public enum TripCalendar {
     public struct Event: Hashable, Sendable {
+        /// The stop's own identity: an event keeps its UID however the stops are
+        /// reordered, so importing the trip again updates it rather than another.
+        public let uid: String
         public let title: String
         public let day: Date
+        /// Set when the stop has a time of day, not just a day.
+        public let time: Date?
         public let notes: String?
 
-        public init(title: String, day: Date, notes: String? = nil) {
+        public init(
+            uid: String,
+            title: String,
+            day: Date,
+            time: Date? = nil,
+            notes: String? = nil
+        ) {
+            self.uid = uid
             self.title = title
             self.day = day
+            self.time = time
             self.notes = notes
         }
     }
 
-    /// An iCalendar document with one all-day event per stop that has a date.
+    /// An iCalendar document with one event per stop that has a date: all day, or an hour
+    /// from the time a timed stop names.
     ///
-    /// `identifier` seeds each event's UID, so exporting the same trip twice updates the
-    /// events in a calendar app rather than duplicating them.
+    /// `identifier` seeds each event's UID with the stop's own, so exporting the same trip
+    /// twice updates the events in a calendar app rather than duplicating them.
     public static func document(
         name: String,
         events: [Event],
@@ -52,34 +66,64 @@ public enum TripCalendar {
             "CALSCALE:GREGORIAN",
             "X-WR-CALNAME:\(escape(name))",
         ]
-        for (index, event) in events.enumerated() {
-            let start = calendar.startOfDay(for: event.day)
-            let end = calendar.date(byAdding: .day, value: 1, to: start) ?? start
+        for event in events {
             lines += [
                 "BEGIN:VEVENT",
-                "UID:\(identifier)-\(index)@unigrids",
+                "UID:\(identifier)-\(event.uid)@unigrids",
                 "DTSTAMP:\(timestamp(stamp))",
-                "DTSTART;VALUE=DATE:\(day(start, calendar: calendar))",
-                "DTEND;VALUE=DATE:\(day(end, calendar: calendar))",
-                "SUMMARY:\(escape(event.title))",
             ]
+            if let time = event.time {
+                lines += [
+                    "DTSTART:\(timestamp(time))",
+                    "DTEND:\(timestamp(time.addingTimeInterval(3600)))",
+                ]
+            } else {
+                let start = calendar.startOfDay(for: event.day)
+                let end = calendar.date(byAdding: .day, value: 1, to: start) ?? start
+                lines += [
+                    "DTSTART;VALUE=DATE:\(day(start, calendar: calendar))",
+                    "DTEND;VALUE=DATE:\(day(end, calendar: calendar))",
+                ]
+            }
+            lines.append("SUMMARY:\(escape(event.title))")
             if let notes = event.notes, !notes.isEmpty {
                 lines.append("DESCRIPTION:\(escape(notes))")
             }
             lines.append("END:VEVENT")
         }
         lines.append("END:VCALENDAR")
-        // The format requires CRLF line endings.
-        return lines.joined(separator: "\r\n") + "\r\n"
+        // The format requires CRLF line endings, and lines no longer than 75 octets.
+        return lines.map(fold).joined(separator: "\r\n") + "\r\n"
     }
 
-    /// Text escaped as RFC 5545 requires: backslash, semicolon, comma and newline.
+    /// Text escaped as RFC 5545 requires: backslash, semicolon, comma and line breaks.
     static func escape(_ text: String) -> String {
         text
             .replacingOccurrences(of: "\\", with: "\\\\")
             .replacingOccurrences(of: ";", with: "\\;")
             .replacingOccurrences(of: ",", with: "\\,")
+            .replacingOccurrences(of: "\r\n", with: "\\n")
+            .replacingOccurrences(of: "\r", with: "\\n")
             .replacingOccurrences(of: "\n", with: "\\n")
+    }
+
+    /// A line folded at 75 octets, each continuation starting with a space (RFC 5545
+    /// §3.1), never splitting a character.
+    static func fold(_ line: String) -> String {
+        guard line.utf8.count > 75 else { return line }
+        var parts: [String] = []
+        var current = ""
+        var limit = 75
+        for character in line {
+            if current.utf8.count + character.utf8.count > limit {
+                parts.append(current)
+                current = ""
+                limit = 74 // the leading space takes one
+            }
+            current.append(character)
+        }
+        parts.append(current)
+        return parts.joined(separator: "\r\n ")
     }
 
     private static func day(_ date: Date, calendar: Calendar) -> String {
