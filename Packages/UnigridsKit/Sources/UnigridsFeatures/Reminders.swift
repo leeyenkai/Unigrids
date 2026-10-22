@@ -174,7 +174,7 @@ struct TripRemindersSection: View {
             )
             .font(UnigridStyle.caption)
         }
-        .sheet(isPresented: $adding) {
+        .unigridsSheet(isPresented: $adding) {
             ReminderEditor(trip: trip)
         }
     }

@@ -62,9 +62,9 @@ struct PlaceOverviewPanel: View {
             }
         }
         .background(style.page)
-        .sheet(isPresented: $showCheckIn) { CheckInSheet(place: place) }
-        .sheet(isPresented: $showStamp) { StampSheet(place: place) }
-        .sheet(isPresented: $showAddToTrip) { AddToTripSheet(place: place) }
+        .unigridsSheet(isPresented: $showCheckIn) { CheckInSheet(place: place) }
+        .unigridsSheet(isPresented: $showStamp) { StampSheet(place: place) }
+        .unigridsSheet(isPresented: $showAddToTrip) { AddToTripSheet(place: place) }
         .explorer(isPresented: $showExplorer, place: place)
     }
 }

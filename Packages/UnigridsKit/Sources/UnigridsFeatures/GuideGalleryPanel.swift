@@ -31,7 +31,7 @@ struct GalleryPanel: View {
                 }
             }
         }
-        .sheet(item: $enlarged) { image in
+        .unigridsSheet(item: $enlarged) { image in
             PhotoViewer(image: image)
         }
     }

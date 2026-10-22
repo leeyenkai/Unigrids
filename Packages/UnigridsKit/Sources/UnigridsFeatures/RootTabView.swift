@@ -49,11 +49,8 @@ public struct RootTabView: View {
             }
         }
         .tabViewStyle(.sidebarAdaptable)
+        .undoHost()
         .unigridsServices()
-        .overlay(alignment: .bottom) {
-            UndoToast()
-                .animation(.easeInOut(duration: 0.25), value: AppServices.undo.current?.id)
-        }
         .task(id: upcomingPlaceIDs) {
             await AppServices.brochures.prefetch(placeIDs: upcomingPlaceIDs, store: store)
         }

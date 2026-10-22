@@ -58,11 +58,20 @@ public struct BandHeader<Trailing: View>: View {
 
     private let title: String
     private let kicker: String?
+    private let compact: Bool
     private let trailing: Trailing
 
-    public init(_ title: String, kicker: String? = nil, @ViewBuilder trailing: () -> Trailing) {
+    /// `compact` sets the title smaller and the band tighter, for a sheet or a card, where
+    /// the band names the task rather than the screen.
+    public init(
+        _ title: String,
+        kicker: String? = nil,
+        compact: Bool = false,
+        @ViewBuilder trailing: () -> Trailing
+    ) {
         self.title = title
         self.kicker = kicker
+        self.compact = compact
         self.trailing = trailing()
     }
 
@@ -70,7 +79,7 @@ public struct BandHeader<Trailing: View>: View {
         HStack(alignment: .lastTextBaseline, spacing: 12) {
             VStack(alignment: .leading, spacing: 4) {
                 Text(title)
-                    .font(UnigridStyle.bandTitle(30))
+                    .font(UnigridStyle.bandTitle(compact ? 22 : 30))
                     .foregroundStyle(style.bandInk)
                     .fixedSize(horizontal: false, vertical: true)
                     .accessibilityAddTraits(.isHeader)
@@ -87,15 +96,15 @@ public struct BandHeader<Trailing: View>: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal, UnigridStyle.pageMargin)
-        .padding(.top, 18)
-        .padding(.bottom, 14)
+        .padding(.top, compact ? 12 : 18)
+        .padding(.bottom, compact ? 10 : 14)
         .background(style.band)
     }
 }
 
 extension BandHeader where Trailing == EmptyView {
-    public init(_ title: String, kicker: String? = nil) {
-        self.init(title, kicker: kicker) { EmptyView() }
+    public init(_ title: String, kicker: String? = nil, compact: Bool = false) {
+        self.init(title, kicker: kicker, compact: compact) { EmptyView() }
     }
 }
 

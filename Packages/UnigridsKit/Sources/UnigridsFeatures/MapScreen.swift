@@ -143,7 +143,7 @@ public struct MapScreen: View {
                         .presentationDragIndicator(.visible)
                 }
             }
-            .sheet(isPresented: $showKey) {
+            .unigridsSheet(isPresented: $showKey) {
                 MapKeySheet(
                     filter: $filter,
                     layers: layersBinding,

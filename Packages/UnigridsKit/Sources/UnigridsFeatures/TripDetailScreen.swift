@@ -171,8 +171,8 @@ struct TripDetailScreen: View {
             await forecasts.load(forecastable)
         }
         .task { await alerts?.refreshIfStale() }
-        .sheet(isPresented: $addingStop) { StopPicker(trip: trip) }
-        .sheet(isPresented: $editingTrip) { TripEditor(trip: trip) }
+        .unigridsSheet(isPresented: $addingStop) { StopPicker(trip: trip) }
+        .unigridsSheet(isPresented: $editingTrip) { TripEditor(trip: trip) }
         .confirmationDialog(
             "Delete \(trip.name)?", isPresented: $confirmDelete, titleVisibility: .visible
         ) {
@@ -400,7 +400,7 @@ struct StopRow: View {
         .swipeActions(edge: .leading) {
             Button("Day") { editingDate = true }
         }
-        .sheet(isPresented: $editingDate) {
+        .unigridsSheet(isPresented: $editingDate) {
             StopDateSheet(stop: stop)
         }
     }

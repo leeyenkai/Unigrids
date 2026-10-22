@@ -126,3 +126,13 @@ custom_rules:
       - typeidentifier
     message: "The NPS arrowhead is a registered trademark and must never be used (AGENTS.md §5)."
     severity: error
+  raw_sheet:
+    name: "Present sheets through unigridsSheet"
+    # A plain `.sheet` gives the sheet no undo host, so an undo offered inside it is drawn
+    # behind it, unseen. `unigridsSheet` (AppServices.swift) is the one place `.sheet`
+    # is called.
+    regex: '\.sheet\('
+    included: 'Packages/UnigridsKit/Sources/UnigridsFeatures/.*\.swift'
+    excluded: 'Packages/UnigridsKit/Sources/UnigridsFeatures/AppServices\.swift'
+    message: "Use .unigridsSheet(isPresented:) or .unigridsSheet(item:), not .sheet."
+    severity: error

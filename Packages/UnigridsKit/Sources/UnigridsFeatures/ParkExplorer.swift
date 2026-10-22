@@ -86,7 +86,7 @@ struct ParkExplorer: View {
                 }
             }
             .onDisappear { stopTour() }
-            .sheet(isPresented: $showList) {
+            .unigridsSheet(isPresented: $showList) {
                 NavigationStack {
                     ExplorerList(
                         place: place,
@@ -110,7 +110,7 @@ struct ParkExplorer: View {
                 .sheetSize()
                 .presentationDetents([.medium, .large])
             }
-            .sheet(isPresented: checkInBinding) {
+            .unigridsSheet(isPresented: checkInBinding) {
                 CheckInSheet(place: place, preselecting: checkIn ?? [])
             }
         }
@@ -359,11 +359,16 @@ extension View {
         #if os(iOS)
             fullScreenCover(isPresented: isPresented) {
                 ParkExplorer(place: place, initialFocus: focus)
+                    .unigridsServices()
+                    .undoHost()
             }
         #else
+            // Sized to fit inside a place window as well as the main one.
             sheet(isPresented: isPresented) {
                 ParkExplorer(place: place, initialFocus: focus)
-                    .frame(minWidth: 1100, minHeight: 760)
+                    .unigridsServices()
+                    .undoHost()
+                    .frame(minWidth: 900, minHeight: 640)
             }
         #endif
     }

@@ -219,10 +219,10 @@ struct PassportRegionPage: View {
             }
         }
         .task(id: stamps.count) { pageImage = renderPage() }
-        .sheet(item: $stamping) { slot in
+        .unigridsSheet(item: $stamping) { slot in
             StampSheet(place: slot.place, location: slot.location?.id)
         }
-        .sheet(item: $viewing) { slot in
+        .unigridsSheet(item: $viewing) { slot in
             ImpressionsSheet(slot: slot, region: region) {
                 viewing = nil
                 stamping = slot

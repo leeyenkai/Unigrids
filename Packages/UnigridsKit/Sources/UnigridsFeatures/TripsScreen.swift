@@ -113,7 +113,7 @@ public struct TripsScreen: View {
                     }
                 }
             }
-            .sheet(isPresented: $importingPhotos) {
+            .unigridsSheet(isPresented: $importingPhotos) {
                 PhotoImportScreen()
             }
             .onAppear {
@@ -128,15 +128,15 @@ public struct TripsScreen: View {
             .navigationDestination(for: UnigridsID.self) { id in
                 PlaceDestination(placeID: id)
             }
-            .sheet(item: $editing) { visit in
+            .unigridsSheet(item: $editing) { visit in
                 VisitEditor(visit: visit)
             }
-            .sheet(item: $loggingArrival) { suggestion in
+            .unigridsSheet(item: $loggingArrival) { suggestion in
                 ArrivalCheckIn(suggestion: suggestion)
             }
             .onChange(of: router?.pending, initial: true) { takeRoute() }
             .onChange(of: scenePhase) { takeRoute() }
-            .sheet(isPresented: $creatingTrip) {
+            .unigridsSheet(isPresented: $creatingTrip) {
                 TripEditor(trip: nil)
             }
             .alert("Could not save", isPresented: .constant(error != nil)) {

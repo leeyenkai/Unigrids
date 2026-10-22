@@ -76,7 +76,7 @@ struct SightCard: View {
             scene = try? await MKLookAroundSceneRequest(coordinate: sight.location.clCoordinate)
                 .scene
         }
-        .sheet(isPresented: $showLookAround) {
+        .unigridsSheet(isPresented: $showLookAround) {
             LookAroundSheet(title: sight.name, scene: scene)
         }
     }

@@ -46,6 +46,7 @@ struct UnigridsApp: App {
                     PlaceWindow(placeID: placeID)
                         .environment(\.referenceStore, reference.store)
                         .modelContainer(container)
+                        .undoHost()
                         .unigridsServices()
                 }
                 .unigridsAppearance()
@@ -64,6 +65,7 @@ struct UnigridsApp: App {
                     }
                     .environment(\.referenceStore, reference.store)
                     .modelContainer(container)
+                    .undoHost()
                     .unigridsServices()
                 }
                 .unigridsAppearance()
