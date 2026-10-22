@@ -52,6 +52,12 @@ let package = Package(
             dependencies: ["UnigridsReference", "UnigridsCore"]
         ),
         .testTarget(
+            name: "UnigridsFeaturesTests",
+            dependencies: [
+                "UnigridsFeatures", "UnigridsReference", "UnigridsLog", "UnigridsCore",
+            ]
+        ),
+        .testTarget(
             name: "UnigridsLogTests",
             dependencies: ["UnigridsLog", "UnigridsCore"],
             // Read from the source tree by path, so a store fixture is never copied or
