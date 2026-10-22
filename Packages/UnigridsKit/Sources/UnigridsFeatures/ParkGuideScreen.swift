@@ -31,6 +31,7 @@ public struct ParkGuideScreen: View {
     @State private var showStamp = false
     @State private var showAddToTrip = false
     @State private var showExplorer = false
+    @State private var showParkMap = false
     @State private var showBrochure = false
     @Query private var visits: [Visit]
 
@@ -79,6 +80,7 @@ public struct ParkGuideScreen: View {
         .unigridsSheet(isPresented: $showStamp) { StampSheet(place: place) }
         .unigridsSheet(isPresented: $showAddToTrip) { AddToTripSheet(place: place) }
         .explorer(isPresented: $showExplorer, place: place)
+        .parkMap(isPresented: $showParkMap, place: place)
         .unigridsSheet(isPresented: $showBrochure) {
             BrochureScreen(place: place)
         }
@@ -138,6 +140,16 @@ public struct ParkGuideScreen: View {
                 Label("Official brochure", symbol: .brochure)
             }
         }
+        if hasPack {
+            Button { showParkMap = true } label: {
+                Label("Park map", symbol: .parkMap)
+            }
+        }
+    }
+
+    /// Whether the app carries this park's offline map.
+    private var hasPack: Bool {
+        OfflinePackCatalogue.bundled.pack(for: place.id) != nil
     }
 
     // MARK: - Layout
@@ -224,7 +236,12 @@ public struct ParkGuideScreen: View {
         case .gallery:
             GalleryPanel(images: guide.gallery)
         case .parkMap:
-            ParkMapPanel(place: place, sights: sights, centres: centres) {
+            ParkMapPanel(
+                place: place,
+                sights: sights,
+                centres: centres,
+                onParkMap: hasPack ? { showParkMap = true } : nil
+            ) {
                 showExplorer = true
             }
         case .majorSights:

@@ -12,6 +12,8 @@ struct ParkMapPanel: View {
     let place: Place
     let sights: [PointOfInterest]
     let centres: [PointOfInterest]
+    /// Opens the offline Park map, where the app carries one.
+    var onParkMap: (() -> Void)?
     let onExplore: () -> Void
 
     var body: some View {
@@ -30,10 +32,22 @@ struct ParkMapPanel: View {
                 .accessibilityAddTraits(.isButton)
                 .accessibilityHint("Opens the park in 3D")
 
-                Button(action: onExplore) {
-                    Label("Explore in 3D", symbol: .explore3D)
+                WrappingRow {
+                    Button(action: onExplore) {
+                        Label("Explore in 3D", symbol: .explore3D)
+                    }
+                    if let onParkMap {
+                        Button(action: onParkMap) {
+                            Label("Park map", symbol: .parkMap)
+                        }
+                    }
                 }
                 .buttonStyle(BrochureButtonStyle(.secondary, fullWidth: false))
+                if onParkMap != nil {
+                    Text("The park map works with no connection.")
+                        .font(UnigridStyle.caption)
+                        .foregroundStyle(style.inkSecondary)
+                }
             }
         }
     }

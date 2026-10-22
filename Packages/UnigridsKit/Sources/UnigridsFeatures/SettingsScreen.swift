@@ -92,6 +92,8 @@ public struct SettingsScreen: View {
 
             BrochureStorageSection()
 
+            OfflineMapsSection()
+
             Section {
                 LabeledContent("Places on the map", value: store.places.count.formatted())
                 LabeledContent(
@@ -305,6 +307,38 @@ struct Attribution: Identifiable {
             terms: "Historical weather from the ERA5 reanalysis, under CC BY 4.0."
         ),
     ]
+}
+
+/// The offline park maps this build carries, with their sizes.
+struct OfflineMapsSection: View {
+    @Environment(\.unigrid) private var style
+    private let packs = OfflinePackCatalogue.bundled.packs
+
+    var body: some View {
+        Section {
+            if packs.isEmpty {
+                Text("This build carries no offline maps.")
+                    .font(UnigridStyle.rowDetail)
+                    .foregroundStyle(style.inkSecondary)
+            }
+            ForEach(packs) { pack in
+                LabeledContent(
+                    pack.name,
+                    value: ByteCountFormatter.string(
+                        fromByteCount: Int64(pack.bytes),
+                        countStyle: .file
+                    )
+                )
+            }
+        } header: {
+            SectionHead("Offline park maps", detail: packs.isEmpty ? nil : "\(packs.count)")
+        } footer: {
+            FormNote(
+                "Topographic maps with every trail, inside the app, for when there is no signal. "
+                    + "Open one from the park's guide or a trail's page."
+            )
+        }
+    }
 }
 
 /// The brochures kept on this device, their size, and the way to clear them

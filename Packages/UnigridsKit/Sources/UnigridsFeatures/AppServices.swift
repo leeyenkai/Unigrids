@@ -21,6 +21,7 @@ public enum AppServices {
     public static let brochures = BrochureLibrary()
     public static let undo = UndoCenter()
     public static let router = AppRouter()
+    public static let network = NetworkStatus()
     static let notifications = NotificationRouter()
 
     /// Make the app the notification centre's delegate. Called as the app starts, so a
@@ -49,6 +50,7 @@ extension View {
             .environment(AppServices.undo)
             .environment(AppServices.detected)
             .environment(AppServices.router)
+            .environment(AppServices.network)
     }
 }
 

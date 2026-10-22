@@ -354,19 +354,48 @@ extension View {
     ) -> some View {
         #if os(iOS)
             fullScreenCover(isPresented: isPresented) {
-                ParkExplorer(place: place, initialFocus: focus)
+                ExplorerOrParkMap(place: place, focus: focus)
                     .unigridsServices()
                     .undoHost()
             }
         #else
             // Sized to fit inside a place window as well as the main one.
             sheet(isPresented: isPresented) {
-                ParkExplorer(place: place, initialFocus: focus)
+                ExplorerOrParkMap(place: place, focus: focus)
                     .unigridsServices()
                     .undoHost()
                     .frame(minWidth: 900, minHeight: 640)
             }
         #endif
+    }
+}
+
+/// The 3D explorer, or with no connection — Apple's 3D needs one — the park's offline
+/// map where the app carries one.
+private struct ExplorerOrParkMap: View {
+    @Environment(NetworkStatus.self) private var network: NetworkStatus?
+    let place: Place
+    let focus: ExplorerFocus?
+
+    var body: some View {
+        if let offlinePack {
+            ParkMapScreen(place: place, pack: offlinePack, focusTrail: focusTrail)
+        } else {
+            ParkExplorer(place: place, initialFocus: focus)
+        }
+    }
+
+    /// The park's offline map, when there is no connection to draw 3D with.
+    private var offlinePack: OfflinePack? {
+        network?.isOnline == false ? OfflinePackCatalogue.bundled.pack(for: place.id) : nil
+    }
+
+    private var focusTrail: UnigridsID? {
+        if case let .trail(id) = focus {
+            id
+        } else {
+            nil
+        }
     }
 }
 

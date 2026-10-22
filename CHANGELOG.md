@@ -197,6 +197,10 @@ makes the change. A release moves that block under a version heading with its da
   carries its CC BY-SA 4.0 licence. Heights measured from USGS 3DEP say they were
   measured. A trail drawn from OpenStreetMap credits it under the ODbL. A state park names
   the body that runs it. Settings credits NPS visitor statistics and Wikipedia.
+- **Offline park maps** for Zion, Acadia, Yellowstone and Great Smoky Mountains: a
+  topographic Park map with every trail and sight that works with no signal, from the
+  guide, a trail's page ("On the park map"), or in place of Explore in 3D when the device
+  is offline. Settings lists the maps and their sizes. ADR 0010.
 
 ### Changed
 

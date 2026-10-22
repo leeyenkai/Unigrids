@@ -251,9 +251,14 @@ struct TrailDetailScreen: View {
     let trail: Trail
 
     @State private var showExplorer = false
+    @State private var showParkMap = false
 
     private var place: Place? {
         store.place(trail.placeID)
+    }
+
+    private var hasPack: Bool {
+        OfflinePackCatalogue.bundled.pack(for: trail.placeID) != nil
     }
 
     private var sights: [PointOfInterest] {
@@ -279,10 +284,17 @@ struct TrailDetailScreen: View {
                                 TrailMap(trail: trail, place: place, sights: sights)
                                     .frame(height: 280)
                                     .overlay { Rectangle().strokeBorder(style.rule, lineWidth: 1) }
-                                Button { showExplorer = true } label: {
-                                    Label("Explore in 3D", symbol: .explore3D)
+                                WrappingRow {
+                                    Button { showExplorer = true } label: {
+                                        Label("Explore in 3D", symbol: .explore3D)
+                                    }
+                                    if hasPack {
+                                        Button { showParkMap = true } label: {
+                                            Label("On the park map", symbol: .parkMap)
+                                        }
+                                    }
                                 }
-                                .buttonStyle(BrochureButtonStyle(.secondary))
+                                .buttonStyle(BrochureButtonStyle(.secondary, fullWidth: false))
                             }
                         }
                     }
@@ -348,6 +360,7 @@ struct TrailDetailScreen: View {
         .navigationTitle(trail.name)
         .toolbarTitleDisplayMode(.inline)
         .modifier(TrailExplorerPresenter(isPresented: $showExplorer, trail: trail, place: place))
+        .modifier(TrailParkMapPresenter(isPresented: $showParkMap, trail: trail, place: place))
     }
 }
 
@@ -443,6 +456,20 @@ private struct TrailExplorerPresenter: ViewModifier {
     func body(content: Content) -> some View {
         if let place {
             content.explorer(isPresented: $isPresented, place: place, focus: .trail(trail.id))
+        } else {
+            content
+        }
+    }
+}
+
+private struct TrailParkMapPresenter: ViewModifier {
+    @Binding var isPresented: Bool
+    let trail: Trail
+    let place: Place?
+
+    func body(content: Content) -> some View {
+        if let place {
+            content.parkMap(isPresented: $isPresented, place: place, focusTrail: trail.id)
         } else {
             content
         }

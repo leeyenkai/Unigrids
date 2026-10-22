@@ -45,6 +45,7 @@ public enum UnigridsSymbol: String, CaseIterable, Sendable {
     case search = "magnifyingglass"
     case list = "list.bullet"
     case explore3D = "view.3d"
+    case parkMap = "map.circle"
     case brochure = "doc.richtext"
     case newWindow = "macwindow.badge.plus"
     case filter = "line.3.horizontal.decrease.circle"
