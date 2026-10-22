@@ -22,6 +22,7 @@ measured length and climb by a published rule, labelled as an estimate.
 
 from __future__ import annotations
 
+import dataclasses
 import json
 import math
 from concurrent.futures import ThreadPoolExecutor
@@ -398,14 +399,15 @@ def _trail(
     sights: list[dict[str, Any]],
     anchors: list[Coordinate] | None = None,
 ) -> dict[str, Any] | None:
-    chains = walking_order(trails.chain(group), anchors or [], sampler)
+    digitised = trails.chain(group)
+    ends = {(chain[0], chain[-1]) for chain in digitised}
+    chains = walking_order(digitised, anchors or [], sampler)
     total = sum(line_length_m(chain) for chain in chains) or 1.0
     measurements = [
-        measure.measure(
+        measure_as_walked(
             chain,
+            ends,
             sampler,
-            interval_m=STATION_INTERVAL_M,
-            smoothing_window_m=SMOOTHING_WINDOW_M,
             # Each part's share of the profile, so the stored profile covers all of it.
             profile_points=max(2, round(PROFILE_POINTS * line_length_m(chain) / total)),
         )
@@ -511,6 +513,40 @@ def walking_order(
     if backwards:
         route = [list(reversed(part)) for part in reversed(route)]
     return route
+
+
+def measure_as_walked(
+    chain: list[Coordinate],
+    digitised_ends: set[tuple[Coordinate, Coordinate]],
+    sampler: measure.ElevationSampler,
+    profile_points: int,
+) -> measure.Measurement:
+    """Measure a part in the direction it was digitised, and turn the figures round when it
+    is walked the other way.
+
+    Stations are spaced from a line's first point, and the elevation cache holds each line's
+    stations as digitised. Measured backwards, a part asks for points 3DEP was never asked
+    about, and comes out unmeasured: half the catalogue did, once walking order arrived.
+    """
+    turned = (chain[-1], chain[0]) in digitised_ends and (chain[0], chain[-1]) not in digitised_ends
+    result = measure.measure(
+        list(reversed(chain)) if turned else chain,
+        sampler,
+        interval_m=STATION_INTERVAL_M,
+        smoothing_window_m=SMOOTHING_WINDOW_M,
+        profile_points=profile_points,
+    )
+    if not turned:
+        return result
+    return dataclasses.replace(
+        result,
+        elevation_gain_m=result.elevation_loss_m,
+        elevation_loss_m=result.elevation_gain_m,
+        profile=[
+            measure.ProfilePoint(result.length_m - point.distance_m, point.elevation_m)
+            for point in reversed(result.profile)
+        ],
+    )
 
 
 def joined_profile(measurements: list[measure.Measurement]) -> list[list[float]]:

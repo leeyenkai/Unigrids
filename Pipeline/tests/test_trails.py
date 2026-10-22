@@ -228,3 +228,28 @@ def test_earlier_elevation_samples_serve_a_later_snapshot(tmp_path, monkeypatch)
 
     assert trail_catalogue._earlier_cache("ZION") == {"1,2": 1500.5}
     assert trail_catalogue._earlier_cache("ACAD") == {}
+
+
+def test_a_part_walked_backwards_is_measured_at_its_digitised_stations():
+    """The cache holds stations spaced from a line's first point as digitised. A part
+    walked the other way is measured at those stations and turned round, not left
+    unmeasured."""
+    from unigrids_pipeline import measure, trail_catalogue
+
+    line = north_line((-113.0, 37.0), 2_000, steps=20)
+    heights = {
+        (round(station.longitude, 6), round(station.latitude, 6)): 1_000 + station.distance_m / 10
+        for station in measure.resample(line, trail_catalogue.STATION_INTERVAL_M)
+    }
+
+    def sampler(longitude: float, latitude: float) -> float | None:
+        return heights.get((round(longitude, 6), round(latitude, 6)))
+
+    ends = {(line[0], line[-1])}
+    forward = trail_catalogue.measure_as_walked(line, ends, sampler, profile_points=10)
+    backward = trail_catalogue.measure_as_walked(list(reversed(line)), ends, sampler, 10)
+    assert forward.has_elevation and backward.has_elevation
+    assert backward.elevation_gain_m == forward.elevation_loss_m
+    assert backward.elevation_loss_m == forward.elevation_gain_m
+    assert backward.profile[0].elevation_m == forward.profile[-1].elevation_m
+    assert abs(backward.profile[0].distance_m) < 1
