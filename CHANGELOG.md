@@ -226,6 +226,18 @@ makes the change. A release moves that block under a version heading with its da
 - A visit on a trip opens the same editor as any other: its day, trip, rating and
   notes, its check-ins with their photos, its hikes (deletable) and its stamps. Moving
   it to another day moves everything logged on it. Deleting it says what goes with it.
+- The map keeps its filters between launches and says so in a line under the region
+  shortcuts — "Filtered · 212 of 5,524 · Clear" — and says when roads and rail are still
+  loading or failed to. Search says when nothing matches, and a sight chosen from it is
+  marked on the map. A park's map card lists its posted alerts, where the badge leads.
+  "Where am I" explains a refusal and offers Settings.
+- The region shortcuts split "Pacific", which only ever showed American Samoa, into
+  "Guam & N. Marianas" and "American Samoa".
+- Settings opens from every tab on iPhone and iPad, and on the Mac from the app menu
+  (⌘,) only. It says what is on the map in plain words.
+- The national parks count comes from the data everywhere it is shown, rather than a
+  fixed 63; searching National parks searches the parks themselves; By state lists a park
+  under each of its states. Onboarding can be skipped, and says what the app does now.
 
 ### Fixed
 

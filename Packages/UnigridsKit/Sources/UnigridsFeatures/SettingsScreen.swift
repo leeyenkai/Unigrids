@@ -23,8 +23,20 @@ public struct SettingsScreen: View {
 
     public init() {}
 
+    /// "0.9.0", from the app's own bundle.
+    private var appVersion: String? {
+        Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
+    }
+
     public var body: some View {
         List {
+            Section {
+                BandHeader("Settings", kicker: appVersion.map { "Unigrids \($0)" })
+                    .listRowInsets(EdgeInsets())
+                    .listRowSeparator(.hidden)
+                    .listRowBackground(Color.clear)
+            }
+
             Section {
                 Picker("Appearance", selection: $appearance) {
                     ForEach(AppearancePreference.allCases) { option in
@@ -81,17 +93,21 @@ public struct SettingsScreen: View {
             BrochureStorageSection()
 
             Section {
-                LabeledContent("Dataset version", value: "\(store.manifest.version)")
-                LabeledContent("Provenance", value: store.manifest.provenance.name)
-                if !store.manifest.builtOn.isEmpty {
-                    LabeledContent("Built", value: store.manifest.builtOn)
-                }
-                LabeledContent("Places", value: store.places.count.formatted())
-                LabeledContent("Outlines", value: store.boundaries.count.formatted())
-                LabeledContent("Trails", value: store.allTrails.count.formatted())
+                LabeledContent("Places on the map", value: store.places.count.formatted())
                 LabeledContent(
-                    "Live alerts",
-                    value: NPSAlerts.isConfigured ? "On" : "Off in this build"
+                    "Drawn with their outline",
+                    value: store.boundaries.count.formatted()
+                )
+                LabeledContent("Trails measured", value: store.allTrails.count.formatted())
+                if !store.manifest.builtOn.isEmpty {
+                    LabeledContent(
+                        "Gathered",
+                        value: "\(store.manifest.builtOn), version \(store.manifest.version)"
+                    )
+                }
+                LabeledContent(
+                    "Live park alerts",
+                    value: NPSAlerts.isConfigured ? "On" : "Not in this build"
                 )
                 if let note = store.manifest.note {
                     Text(note)
@@ -104,8 +120,12 @@ public struct SettingsScreen: View {
             } header: {
                 SectionHead("Reference data")
             } footer: {
-                Text("Reference data ships inside the app and is replaced with each release.")
-                    .font(UnigridStyle.caption)
+                Text(
+                    "Everything about the places — names, outlines, guides, trails, photos — "
+                        + "comes inside the app from public sources and is refreshed with each "
+                        + "release. Only alerts, forecasts and weather are fetched live."
+                )
+                .font(UnigridStyle.caption)
             }
 
             Section {
@@ -142,6 +162,22 @@ public struct SettingsScreen: View {
         .navigationTitle("Settings")
     }
 }
+
+#if os(iOS)
+    /// Settings from the root of every tab on iPhone and iPad. The Mac has its own
+    /// Settings window, on ⌘, and in the app menu.
+    struct SettingsToolbarItem: ToolbarContent {
+        var body: some ToolbarContent {
+            ToolbarItem(placement: .topBarLeading) {
+                NavigationLink {
+                    SettingsScreen()
+                } label: {
+                    Label("Settings", symbol: .settings)
+                }
+            }
+        }
+    }
+#endif
 
 /// Every photograph the app reuses, with its credit and licence, in one place
 /// (SPECIFICATION.md §15).

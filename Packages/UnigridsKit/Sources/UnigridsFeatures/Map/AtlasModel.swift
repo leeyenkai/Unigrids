@@ -199,3 +199,14 @@ extension MKMapRect {
         )
     }
 }
+
+// MARK: - Focus
+
+/// A sight chosen from search, marked where it is until the search moves on.
+struct AtlasFocus: Equatable {
+    let name: String
+    let coordinate: Coordinate
+}
+
+/// The marker for an `AtlasFocus`: a plain MapKit marker, distinct from the places' pins.
+final class FocusAnnotation: MKPointAnnotation {}

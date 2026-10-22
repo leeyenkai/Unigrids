@@ -125,54 +125,57 @@ public struct TripsScreen: View {
             .paperPage()
             .navigationTitle("Trips")
             .toolbarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem {
-                    Button {
-                        importingPhotos = true
-                    } label: {
-                        Label("Import from Photos", symbol: .importPhotos)
+            #if os(iOS)
+                .toolbar { SettingsToolbarItem() }
+            #endif
+                .toolbar {
+                    ToolbarItem {
+                        Button {
+                            importingPhotos = true
+                        } label: {
+                            Label("Import from Photos", symbol: .importPhotos)
+                        }
                     }
                 }
-            }
-            .unigridsSheet(isPresented: $importingPhotos) {
-                PhotoImportScreen()
-            }
-            .onAppear {
-                let first = grouped.first?.trips.first
-                if DebugLaunch.opensFirstTrip, path.isEmpty, let first {
-                    path.append(first)
+                .unigridsSheet(isPresented: $importingPhotos) {
+                    PhotoImportScreen()
                 }
-            }
-            .navigationDestination(for: Trip.self) { trip in
-                TripDetailScreen(trip: trip)
-            }
-            .navigationDestination(for: UnigridsID.self) { id in
-                PlaceDestination(placeID: id)
-            }
-            .unigridsSheet(item: $editing) { visit in
-                VisitEditor(visit: visit)
-            }
-            .unigridsSheet(item: $loggingArrival) { suggestion in
-                ArrivalCheckIn(suggestion: suggestion)
-            }
-            .onChange(of: router?.pending, initial: true) { takeRoute() }
-            .onChange(of: scenePhase) { takeRoute() }
-            .unigridsSheet(isPresented: $creatingTrip) {
-                // A new trip opens, so its stops can be added straight away.
-                TripEditor(trip: nil) { path.append($0) }
-            }
-            .alert("Could not save", isPresented: Binding(
-                get: { error != nil },
-                set: {
-                    if !$0 {
-                        error = nil
+                .onAppear {
+                    let first = grouped.first?.trips.first
+                    if DebugLaunch.opensFirstTrip, path.isEmpty, let first {
+                        path.append(first)
                     }
                 }
-            )) {
-                Button("OK") { error = nil }
-            } message: {
-                Text(error ?? "")
-            }
+                .navigationDestination(for: Trip.self) { trip in
+                    TripDetailScreen(trip: trip)
+                }
+                .navigationDestination(for: UnigridsID.self) { id in
+                    PlaceDestination(placeID: id)
+                }
+                .unigridsSheet(item: $editing) { visit in
+                    VisitEditor(visit: visit)
+                }
+                .unigridsSheet(item: $loggingArrival) { suggestion in
+                    ArrivalCheckIn(suggestion: suggestion)
+                }
+                .onChange(of: router?.pending, initial: true) { takeRoute() }
+                .onChange(of: scenePhase) { takeRoute() }
+                .unigridsSheet(isPresented: $creatingTrip) {
+                    // A new trip opens, so its stops can be added straight away.
+                    TripEditor(trip: nil) { path.append($0) }
+                }
+                .alert("Could not save", isPresented: Binding(
+                    get: { error != nil },
+                    set: {
+                        if !$0 {
+                            error = nil
+                        }
+                    }
+                )) {
+                    Button("OK") { error = nil }
+                } message: {
+                    Text(error ?? "")
+                }
         }
     }
 

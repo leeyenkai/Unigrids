@@ -6,8 +6,8 @@ import UnigridsLog
 import UnigridsReference
 
 /// The directory: the other way into a park, alongside the map (SPECIFICATION.md §4) —
-/// set as a brochure's index, with the sixty-three national parks as a grid of squares
-/// that fills in as the reader visits them.
+/// set as a brochure's index, with the national parks as a grid of squares that fills in
+/// as the reader visits them.
 public struct ParkDirectoryScreen: View {
     enum Scope: String, CaseIterable, Identifiable {
         case nationalParks
@@ -64,12 +64,20 @@ public struct ParkDirectoryScreen: View {
     }
 
     private var places: [Place] {
-        let found = if query.isEmpty {
-            scope == .nationalParks ? store.nationalParks : store.places
-                .sorted { $0.name < $1.name }
-        } else {
+        let found: [Place] = switch (scope, query.isEmpty) {
+        case (.nationalParks, true):
+            store.nationalParks
+        case (.nationalParks, false):
+            // Searched among the parks themselves: a search of every place would fill its
+            // results with state parks before reaching some of them.
+            store.nationalParks.filter {
+                $0.name.localizedStandardContains(query)
+                    || $0.statesDescription.localizedStandardContains(query)
+            }
+        case (_, true):
+            store.places.sorted { $0.name < $1.name }
+        case (_, false):
             store.search(query, limit: 300)
-                .filter { scope == .everything || $0.tier == .nationalPark }
         }
         guard scope == .everything, let typeFilter else { return found }
         return found.filter { $0.siteType == typeFilter }
@@ -82,7 +90,14 @@ public struct ParkDirectoryScreen: View {
             let grouped = Dictionary(grouping: places) { String($0.name.prefix(1)).uppercased() }
             return grouped.keys.sorted().map { ($0, grouped[$0] ?? []) }
         case .state:
-            let grouped = Dictionary(grouping: places) { $0.states.first?.name ?? "Other" }
+            // A park in three states is listed under each of them.
+            var grouped: [String: [Place]] = [:]
+            for place in places {
+                let states = place.states.isEmpty ? ["Other"] : place.states.map(\.name)
+                for state in states {
+                    grouped[state, default: []].append(place)
+                }
+            }
             return grouped.keys.sorted().map { key in
                 (key, (grouped[key] ?? []).sorted { $0.name < $1.name })
             }
@@ -105,7 +120,7 @@ public struct ParkDirectoryScreen: View {
 
     private var searchPrompt: String {
         switch scope {
-        case .nationalParks: "Search 63 national parks"
+        case .nationalParks: "Search \(store.nationalParks.count) national parks"
         case .everything:
             typeFilter.map { "Search \($0.name.lowercased())" } ?? "Search every place"
         case .trails: "Search \(store.allTrails.count.formatted()) trails"
@@ -162,49 +177,52 @@ public struct ParkDirectoryScreen: View {
             .searchable(text: searchText, prompt: searchPrompt)
             .navigationTitle("Parks")
             .toolbarTitleDisplayMode(.inline)
-            .toolbar {
-                if scope == .everything {
-                    ToolbarItem {
-                        Menu {
-                            Picker("Kind of place", selection: $typeFilter) {
-                                Text("Every kind").tag(SiteType?.none)
-                                ForEach(SiteType.allCases) { type in
-                                    Label(type.name, systemImage: UnigridsSymbol.site(type))
-                                        .tag(SiteType?.some(type))
+            #if os(iOS)
+                .toolbar { SettingsToolbarItem() }
+            #endif
+                .toolbar {
+                    if scope == .everything {
+                        ToolbarItem {
+                            Menu {
+                                Picker("Kind of place", selection: $typeFilter) {
+                                    Text("Every kind").tag(SiteType?.none)
+                                    ForEach(SiteType.allCases) { type in
+                                        Label(type.name, systemImage: UnigridsSymbol.site(type))
+                                            .tag(SiteType?.some(type))
+                                    }
                                 }
+                            } label: {
+                                Label(
+                                    "Kind of place",
+                                    systemImage: typeFilter == nil
+                                        ? "line.3.horizontal.decrease.circle"
+                                        : "line.3.horizontal.decrease.circle.fill"
+                                )
                             }
-                        } label: {
-                            Label(
-                                "Kind of place",
-                                systemImage: typeFilter == nil
-                                    ? "line.3.horizontal.decrease.circle"
-                                    : "line.3.horizontal.decrease.circle.fill"
-                            )
+                        }
+                    }
+                    if scope != .trails {
+                        ToolbarItem {
+                            Picker("Sort", selection: $sort) {
+                                ForEach(Sort.allCases) { Text($0.label).tag($0) }
+                            }
+                            .pickerStyle(.menu)
                         }
                     }
                 }
-                if scope != .trails {
-                    ToolbarItem {
-                        Picker("Sort", selection: $sort) {
-                            ForEach(Sort.allCases) { Text($0.label).tag($0) }
-                        }
-                        .pickerStyle(.menu)
+                .overlay {
+                    if scope != .trails, places.isEmpty, !query.isEmpty {
+                        ContentUnavailableView.search(text: query)
                     }
                 }
-            }
-            .overlay {
-                if scope != .trails, places.isEmpty, !query.isEmpty {
-                    ContentUnavailableView.search(text: query)
+                .navigationDestination(for: UnigridsID.self) { id in
+                    PlaceDestination(placeID: id)
                 }
-            }
-            .navigationDestination(for: UnigridsID.self) { id in
-                PlaceDestination(placeID: id)
-            }
         }
     }
 }
 
-/// The directory's head: the band, and the sixty-three squares.
+/// The directory's head: the band, and a square for every national park.
 struct DirectoryHeader: View {
     @Environment(\.unigrid) private var style
     let parks: [Place]
@@ -214,7 +232,10 @@ struct DirectoryHeader: View {
     var body: some View {
         let visited = parks.count { index.visitedPlaceIDs.contains($0.id) }
         VStack(alignment: .leading, spacing: 0) {
-            BandHeader("Parks", kicker: "63 national parks · \(otherCount) more places")
+            BandHeader(
+                "Parks",
+                kicker: "\(parks.count) national parks · \(otherCount.formatted()) more places"
+            )
             VStack(alignment: .leading, spacing: 12) {
                 HStack(alignment: .firstTextBaseline) {
                     Text("\(visited)")

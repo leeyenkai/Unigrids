@@ -78,6 +78,8 @@ struct AtlasMapView {
     let basemap: AtlasBasemap
     let ink: AtlasInk
     var showsUserLocation = false
+    /// A sight to mark, chosen from search.
+    var focus: AtlasFocus?
     let onSelect: (UnigridsID?) -> Void
     let onRegionChange: (MKCoordinateRegion) -> Void
 
@@ -173,6 +175,8 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
     var basemap: AtlasBasemap?
     var lastCameraID: UUID?
     var selected: UnigridsID?
+    var focus: AtlasFocus?
+    var focusAnnotation: FocusAnnotation?
     var latitudeSpan: Double = AtlasMapView.lower48.span.latitudeDelta
 
     func attach(to map: MKMapView) {
@@ -205,6 +209,7 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
         syncAnnotations(view.places, on: map, restyleAll: inkChanged)
         syncOverlays(on: map, restyleAll: inkChanged)
         syncTransport(view, on: map, restyleAll: inkChanged)
+        syncFocus(view.focus, on: map)
 
         if selected != view.selection {
             let previous = selected

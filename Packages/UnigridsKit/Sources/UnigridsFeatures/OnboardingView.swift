@@ -3,8 +3,9 @@ import UnigridsCore
 import UnigridsDesign
 import UnigridsReference
 
-/// The first thing a new reader sees: three brochure panels saying what Unigrids is, and
-/// the non-affiliation line SPECIFICATION.md §14 requires in onboarding.
+/// The first thing a new reader sees: four brochure panels saying what Unigrids is, and
+/// the non-affiliation line SPECIFICATION.md §14 requires in onboarding. Skip leaves at
+/// any page; Settings can show it again.
 struct OnboardingView: View {
     @Environment(\.referenceStore) private var store
     @Environment(\.unigrid) private var style
@@ -34,6 +35,13 @@ struct OnboardingView: View {
             HStack(spacing: 12) {
                 PageSquares(count: Self.pageCount, current: page)
                 Spacer()
+                if page < Self.pageCount - 1 {
+                    Button("Skip", action: onFinish)
+                        .buttonStyle(.plain)
+                        .font(UnigridStyle.action)
+                        .foregroundStyle(style.inkSecondary)
+                        .keyboardShortcut(.cancelAction)
+                }
                 if page > 0 {
                     Button("Back") {
                         withAnimation { page -= 1 }
@@ -65,11 +73,7 @@ struct OnboardingView: View {
             OnboardingPanel(
                 number: 1,
                 title: "Every public land on one map",
-                text: "All 63 national parks and \(count(PlaceTier.npsUnit)) more National "
-                    + "Park Service sites, \(count(.nationalForest)) national forests, "
-                    + "\(count(.wildlifeRefuge)) wildlife refuges, the BLM's monuments, "
-                    + "National Natural Landmarks and scenic byways — each outlined, each with "
-                    + "its own pin. Lay Interstates, US highways and Amtrak over the top."
+                text: mapText
             ) {
                 MarkerKeyArt()
             }
@@ -88,9 +92,9 @@ struct OnboardingView: View {
             OnboardingPanel(
                 number: 3,
                 title: "Plan the trip",
-                text: "Put parks in order and see the drive between them, the forecast for "
-                    + "each day, closures the NPS has posted and permits to book — with "
-                    + "reminders when booking windows open."
+                text: "Put parks, sights, trails and places to sleep in order and see the "
+                    + "drive between them, the forecast for each day, closures the NPS has "
+                    + "posted and permits to book — with reminders when booking windows open."
             ) {
                 PlannerArt()
             }
@@ -98,13 +102,27 @@ struct OnboardingView: View {
             OnboardingPanel(
                 number: 4,
                 title: "A passport that fills itself",
-                text: "Check in, stamp the passport, import visits from your photos, and watch "
-                    + "the squares fill. Your log lives on your devices and in your own iCloud. "
-                    + "There are no accounts, no analytics and no servers."
+                text: "Check in, stamp the passport, log your hikes, import visits from your "
+                    + "photos, and watch the squares fill. Your log is yours: it lives on your "
+                    + "devices, syncs through your own iCloud where that is set up, and exports "
+                    + "to a file from Settings. There are no accounts, no analytics and no servers."
             ) {
                 NonAffiliationNotice()
             }
         }
+    }
+
+    private var mapText: String {
+        let parks: Int = count(PlaceTier.nationalPark)
+        let units: Int = count(PlaceTier.npsUnit)
+        let forests: Int = count(SiteType.nationalForest)
+        let refuges: Int = count(SiteType.wildlifeRefuge)
+        let stateParks: String = count(SiteType.statePark).formatted()
+        let lands = "All \(parks) national parks and \(units) more National Park Service sites, "
+            + "\(forests) national forests, \(refuges) wildlife refuges, \(stateParks) state "
+            + "parks, the BLM's monuments, National Natural Landmarks and scenic byways"
+        return lands + " — each with its own pin, most outlined. Lay Interstates, US highways "
+            + "and Amtrak over the top."
     }
 
     private func count(_ type: SiteType) -> Int {

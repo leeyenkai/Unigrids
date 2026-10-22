@@ -12,6 +12,7 @@ import UnigridsReference
 struct PlaceOverviewPanel: View {
     @Environment(\.referenceStore) private var store
     @Environment(\.unigrid) private var style
+    @Environment(AlertsCenter.self) private var alerts: AlertsCenter?
     @Query private var visits: [Visit]
 
     let place: Place
@@ -22,6 +23,10 @@ struct PlaceOverviewPanel: View {
     @State private var showStamp = false
     @State private var showAddToTrip = false
     @State private var showExplorer = false
+
+    private var alertCount: Int {
+        place.npsParkCode.map { alerts?.alerts(for: $0).count ?? 0 } ?? 0
+    }
 
     private var placeVisits: [Visit] {
         visits.filter { $0.place == place.id }.sorted { $0.date > $1.date }
@@ -39,6 +44,14 @@ struct PlaceOverviewPanel: View {
                 }
                 VStack(alignment: .leading, spacing: 18) {
                     VisitStatusLine(visits: placeVisits)
+                    // The map badges a park with a posted closure or danger; this is where
+                    // the badge leads.
+                    if let code = place.npsParkCode, alertCount > 0 {
+                        VStack(alignment: .leading, spacing: 8) {
+                            SectionHead("Alerts", detail: "\(alertCount)")
+                            AlertList(parkCode: code)
+                        }
+                    }
                     if let summary = place.summary {
                         OverviewSummary(text: summary, source: place.summarySource)
                     } else {
@@ -230,7 +243,7 @@ struct OverviewActions: View {
 
             if let onExplore {
                 Button(action: onExplore) {
-                    Label("Explore in 3D", systemImage: "view.3d")
+                    Label("Explore in 3D", symbol: .explore3D)
                 }
                 .buttonStyle(BrochureButtonStyle(leafletMode ? .primary : .secondary))
             }

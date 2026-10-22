@@ -78,6 +78,9 @@ public struct StatsScreen: View {
             }
             .navigationTitle("Stats")
             .toolbarTitleDisplayMode(.inline)
+            #if os(iOS)
+                .toolbar { SettingsToolbarItem() }
+            #endif
         }
     }
 
@@ -89,7 +92,7 @@ public struct StatsScreen: View {
                     .font(.custom("HelveticaNeue-Bold", size: 56, relativeTo: .largeTitle))
                     .monospacedDigit()
                     .foregroundStyle(style.ink)
-                Text("of 63 visited")
+                Text("of \(report.nationalParks.total) visited")
                     .font(UnigridStyle.rowDetail)
                     .foregroundStyle(style.inkSecondary)
             }

@@ -128,7 +128,7 @@ struct StatsShareCard: View {
                     Text("\(report.nationalParks.visited)")
                         .font(.custom("HelveticaNeue-Bold", size: 64))
                         .foregroundStyle(style.ink)
-                    Text("of 63 · \(report.states.visited) states")
+                    Text("of \(report.nationalParks.total) · \(report.states.visited) states")
                         .font(UnigridStyle.rowDetail)
                         .foregroundStyle(style.inkSecondary)
                 }

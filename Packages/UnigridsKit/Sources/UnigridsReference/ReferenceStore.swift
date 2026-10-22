@@ -196,7 +196,12 @@ extension ReferenceStore {
         return places
             .filter(\.tier.hasGuide)
             .flatMap { pointsOfInterest(in: $0.id) }
-            .filter { $0.kind != .entrance && $0.name.lowercased().contains(needle) }
+            // A stamp location is a desk inside a building that is listed in its own
+            // right; searching finds the building.
+            .filter {
+                $0.kind != .entrance && $0.kind != .stampLocation
+                    && $0.name.lowercased().contains(needle)
+            }
             .sorted { ($0.name.lowercased().hasPrefix(needle) ? 0 : 1, $0.name)
                 < ($1.name.lowercased().hasPrefix(needle) ? 0 : 1, $1.name)
             }

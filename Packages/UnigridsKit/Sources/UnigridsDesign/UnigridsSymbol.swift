@@ -34,6 +34,7 @@ public enum UnigridsSymbol: String, CaseIterable, Sendable {
     case retry = "arrow.clockwise"
     case addToTrip = "text.badge.plus"
     case hike = "figure.hiking"
+    case addReminder = "bell.badge"
     case lookAround = "binoculars"
     case previous = "chevron.left"
     case next = "chevron.right"
@@ -42,8 +43,17 @@ public enum UnigridsSymbol: String, CaseIterable, Sendable {
     case lodging = "bed.double"
     case waypoint = "mappin"
     case search = "magnifyingglass"
+    case list = "list.bullet"
+    case explore3D = "view.3d"
+    case brochure = "doc.richtext"
+    case newWindow = "macwindow.badge.plus"
+    case filter = "line.3.horizontal.decrease.circle"
+    case filtered = "line.3.horizontal.decrease.circle.fill"
+    case locate = "location"
+    case located = "location.fill"
     case share = "square.and.arrow.up"
     case importFile = "square.and.arrow.down"
+    case saveOffline = "arrow.down.circle"
     case importPhotos = "photo.on.rectangle.angled"
     case dismiss = "xmark"
     case spreadsheet = "tablecells"
@@ -66,12 +76,16 @@ public enum UnigridsSymbol: String, CaseIterable, Sendable {
     case pending = "hourglass"
     case photo
     case scheduled = "calendar.badge.clock"
+    case reminder = "bell"
+    case reminderPast = "bell.slash"
 
     // Problems
     case warning = "exclamationmark.triangle"
     case warningFilled = "exclamationmark.triangle.fill"
     case storeUnavailable = "exclamationmark.icloud"
     case unknownPlace = "questionmark.square.dashed"
+    case visitorCentre = "info.square"
+    case sight = "mappin.square"
 
     /// The SF Symbol name. Every one is checked against the SDK by `UnigridsDesignTests`.
     public var systemName: String {
@@ -147,6 +161,12 @@ extension Image {
 extension Label where Title == Text, Icon == Image {
     /// A labelled icon from the app's vocabulary.
     public init(_ title: LocalizedStringKey, symbol: UnigridsSymbol) {
+        self.init(title, systemImage: symbol.systemName)
+    }
+
+    /// A labelled icon whose title is already a string — a name, a count.
+    @_disfavoredOverload
+    public init(_ title: some StringProtocol, symbol: UnigridsSymbol) {
         self.init(title, systemImage: symbol.systemName)
     }
 }

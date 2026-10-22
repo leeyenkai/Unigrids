@@ -9,6 +9,10 @@ import UnigridsReference
 @Observable
 public final class TransportStore {
     public private(set) var network = TransportNetwork.empty
+    /// Whether the network is being read, so the map can say so the first time.
+    public private(set) var isLoading = false
+    /// Whether the last read failed. Asking again tries again.
+    public private(set) var failed = false
     private var loading: Task<Void, Never>?
 
     public init() {}
@@ -22,14 +26,18 @@ public final class TransportStore {
             await loading.value
             return
         }
+        isLoading = true
+        failed = false
         let task = Task {
             let decoded = await Task.detached(priority: .userInitiated) {
-                (try? store.transportNetwork()) ?? .empty
+                try? store.transportNetwork()
             }.value
-            network = decoded
+            network = decoded ?? .empty
+            failed = decoded == nil
         }
         loading = task
         await task.value
         loading = nil
+        isLoading = false
     }
 }

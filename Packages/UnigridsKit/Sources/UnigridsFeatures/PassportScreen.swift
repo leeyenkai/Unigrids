@@ -86,15 +86,18 @@ public struct PassportScreen: View {
             .paperPage()
             .navigationTitle("Passport")
             .toolbarTitleDisplayMode(.inline)
-            .navigationDestination(for: PassportRegion.self) { region in
-                PassportRegionPage(region: region)
-            }
-            .onAppear {
-                let region = DebugLaunch.passportRegion.flatMap(PassportRegion.init(rawValue:))
-                if path.isEmpty, let region {
-                    path.append(region)
+            #if os(iOS)
+                .toolbar { SettingsToolbarItem() }
+            #endif
+                .navigationDestination(for: PassportRegion.self) { region in
+                    PassportRegionPage(region: region)
                 }
-            }
+                .onAppear {
+                    let region = DebugLaunch.passportRegion.flatMap(PassportRegion.init(rawValue:))
+                    if path.isEmpty, let region {
+                        path.append(region)
+                    }
+                }
         }
     }
 

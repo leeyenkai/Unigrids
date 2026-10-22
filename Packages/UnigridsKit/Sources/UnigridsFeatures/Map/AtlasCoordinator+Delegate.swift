@@ -18,6 +18,13 @@ extension AtlasCoordinator {
             }
             return view
         }
+        if let focus = annotation as? FocusAnnotation {
+            let view = MKMarkerAnnotationView(annotation: focus, reuseIdentifier: nil)
+            view.markerTintColor = ink?.seal.platform
+            view.displayPriority = .required
+            view.titleVisibility = .visible
+            return view
+        }
         if let station = annotation as? StationAnnotation {
             let view = mapView.dequeueReusableAnnotationView(
                 withIdentifier: StationMarkerView.reuse, for: station
@@ -131,5 +138,27 @@ extension AtlasCoordinator {
                 MapDetail.showsPictogram(for: $0, latitudeSpan: span),
             ]
         } + [span <= MapDetail.stationSpan / 2, span > MapDetail.compactParkSpan]
+    }
+}
+
+// MARK: - Focus
+
+extension AtlasCoordinator {
+    /// Mark the sight search chose, replacing any earlier mark.
+    func syncFocus(_ wanted: AtlasFocus?, on map: MKMapView) {
+        guard focus != wanted else { return }
+        focus = wanted
+        if let old = focusAnnotation {
+            map.removeAnnotation(old)
+        }
+        focusAnnotation = wanted.map { focus in
+            let annotation = FocusAnnotation()
+            annotation.coordinate = focus.coordinate.clCoordinate
+            annotation.title = focus.name
+            return annotation
+        }
+        if let focusAnnotation {
+            map.addAnnotation(focusAnnotation)
+        }
     }
 }
