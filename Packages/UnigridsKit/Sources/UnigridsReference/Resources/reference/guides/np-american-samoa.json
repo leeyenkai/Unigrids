@@ -65,11 +65,17 @@
    "url": "https://www.nps.gov/npsa/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": null
+  }
+ ],
  "hero": {
   "credit": "NPS Photo / Michael Larson",
   "isPublicDomain": true,
-  "assetName": "np-american-samoa-1.jpg",
+  "assetName": "np-american-samoa-a7f7b8873b.jpg",
   "caption": "Back side of Pola Island from Tuafanua Trail",
   "altText": "Tuafanua Trail"
  },
@@ -77,21 +83,21 @@
   {
    "credit": "NPS Photo / Michael Larson",
    "isPublicDomain": true,
-   "assetName": "np-american-samoa-2.jpg",
+   "assetName": "np-american-samoa-5d40a3e5e8.jpg",
    "caption": "Ta'u Island",
    "altText": "Ta'u Island"
   },
   {
    "credit": "NPS Photo / Eymard Bangcoro",
    "isPublicDomain": true,
-   "assetName": "np-american-samoa-3.jpg",
+   "assetName": "np-american-samoa-ad5b512f73.jpg",
    "caption": "Ofu Island",
    "altText": "Ofu Island"
   },
   {
    "credit": "NPS Photo / Eymard Bangcoro",
    "isPublicDomain": true,
-   "assetName": "np-american-samoa-4.jpg",
+   "assetName": "np-american-samoa-d118afd4f7.jpg",
    "caption": "King Fisher bird",
    "altText": "King Fisher bird"
   }

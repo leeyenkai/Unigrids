@@ -64,11 +64,17 @@
    "url": "https://www.nps.gov/grba/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": null
+  }
+ ],
  "hero": {
   "credit": "NPS Photo",
   "isPublicDomain": true,
-  "assetName": "np-great-basin-1.jpg",
+  "assetName": "np-great-basin-0c7ee65dcb.jpg",
   "caption": "Wheeler cirque",
   "altText": "blue sky with green trees in mountain cirque"
  },
@@ -76,21 +82,21 @@
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-great-basin-2.jpg",
+   "assetName": "np-great-basin-3c4a90ef41.jpg",
    "caption": "Lehman Caves Grand Palace Parachute formation",
    "altText": "Brown and tan cave formation in the shape of a parachute"
   },
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-great-basin-3.jpg",
+   "assetName": "np-great-basin-214bb6fad1.jpg",
    "caption": "Great Basin Visitor Center",
    "altText": "Tan and green Visitor center with mountains in the background."
   },
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-great-basin-4.jpg",
+   "assetName": "np-great-basin-30264353d5.jpg",
    "caption": "Alpine Flowers",
    "altText": "White, yellow,, and pink alpine flowers."
   }

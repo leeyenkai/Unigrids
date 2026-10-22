@@ -66,11 +66,17 @@
    "url": "https://www.nps.gov/cuva/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": null
+  }
+ ],
  "hero": {
   "credit": "NPS Photo / D.J. Reiser",
   "isPublicDomain": true,
-  "assetName": "np-cuyahoga-valley-1.jpg",
+  "assetName": "np-cuyahoga-valley-b9468f1859.jpg",
   "caption": "Kayakers on the Cuyahoga River",
   "altText": "People in bright orange kayaks paddle around a bend in a river, past green trees and a rocky shore."
  },
@@ -78,21 +84,21 @@
   {
    "credit": "NPS Photo / Tim Fenner",
    "isPublicDomain": true,
-   "assetName": "np-cuyahoga-valley-2.jpg",
+   "assetName": "np-cuyahoga-valley-ab9c49806d.jpg",
    "caption": "The Ledges Overlook in Fall",
    "altText": "Two people stand at the edge of a gray rock cliff; in the distance, sunset and trees in fall colors."
   },
   {
    "credit": "NPS Photo / Robert George",
    "isPublicDomain": true,
-   "assetName": "np-cuyahoga-valley-3.jpg",
+   "assetName": "np-cuyahoga-valley-bdad0eb6d8.jpg",
    "caption": "The Cuyahoga Valley Scenic Railroad",
    "altText": "A yellow-and-red engine with number 6777 leads a passenger train along tracks through green trees."
   },
   {
    "credit": "NPS Photo / D.J. Reiser",
    "isPublicDomain": true,
-   "assetName": "np-cuyahoga-valley-4.jpg",
+   "assetName": "np-cuyahoga-valley-46d5b6f128.jpg",
    "caption": "Brandywine Falls Viewed from the Upper Boardwalk",
    "altText": "Viewed from above, people stand on a platform near frothy white water falling over a rocky ledge."
   }

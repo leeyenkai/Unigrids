@@ -76,11 +76,17 @@
    "url": "https://www.nps.gov/glba/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": null
+  }
+ ],
  "hero": {
   "credit": "NPS / T. VandenBerg",
   "isPublicDomain": true,
-  "assetName": "np-glacier-bay-1.jpg",
+  "assetName": "np-glacier-bay-54e89ce123.jpg",
   "caption": "Cruising Glacier Bay",
   "altText": "Cruising Glacier Bay"
  },
@@ -88,21 +94,21 @@
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-glacier-bay-2.jpg",
+   "assetName": "np-glacier-bay-a8dfc2910a.jpg",
    "caption": "Iceberg on the shore",
    "altText": "Icebergs, calved from tidewater glaciers are a common sight in Glacier Bay National Park."
   },
   {
    "credit": "NPS Photo / B. Whitehead",
    "isPublicDomain": true,
-   "assetName": "np-glacier-bay-3.jpg",
+   "assetName": "np-glacier-bay-ae58f82e98.jpg",
    "caption": "Pan ice in Tarr Inlet",
    "altText": "Pan ice in Tarr Inlet"
   },
   {
    "credit": "NPS Photo / C. Behnke",
    "isPublicDomain": true,
-   "assetName": "np-glacier-bay-4.jpg",
+   "assetName": "np-glacier-bay-c0f71b7a32.jpg",
    "caption": "Beachcombing Brown Bear",
    "altText": "Beachcombing Brown Bear"
   }

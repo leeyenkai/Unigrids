@@ -85,11 +85,17 @@
    "url": "https://www.nps.gov/redw/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": "There are no entrance fees to drive the scenic roads or highways in our three state parks and national park. Some day-use areas have fees; these accept interagency and CA state park passes."
+  }
+ ],
  "hero": {
   "credit": "NPS Photo / Steve Olson",
   "isPublicDomain": true,
-  "assetName": "np-redwood-1.jpg",
+  "assetName": "np-redwood-a9fd2b0dcc.jpg",
   "caption": "Fish-eye view of Redwood canopy",
   "altText": "View from forest floor looking straight up. Ferns as seen close up and redwood trunks meet."
  },
@@ -97,21 +103,21 @@
   {
    "credit": "NPS Photo / John Chao",
    "isPublicDomain": true,
-   "assetName": "np-redwood-2.jpg",
+   "assetName": "np-redwood-69e8248e8d.jpg",
    "caption": "Tide pooling at Enderts Beach",
    "altText": "Two visitors looking at tidepools."
   },
   {
    "credit": "NPS: John Chao",
    "isPublicDomain": true,
-   "assetName": "np-redwood-3.jpg",
+   "assetName": "np-redwood-6a90cd88ee.jpg",
    "caption": "Visitors Plan Their Redwood Trip",
    "altText": "Five young women read the park map."
   },
   {
    "credit": "NPS Photo / John Chao",
    "isPublicDomain": true,
-   "assetName": "np-redwood-4.jpg",
+   "assetName": "np-redwood-0d5b6e4fd2.jpg",
    "caption": "Ranger Program at Klamath River Overlook",
    "altText": "Visitors chatting with a ranger above a river mouth."
   }

@@ -74,11 +74,17 @@
    "url": "https://www.nps.gov/viis/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": "Trunk Bay charges an Expanded Amenity Fee of $5.00/person ages 16 and up from sunrise until sunset. Expanded Amenity Fees, such as the fee at Trunk Bay, are not waived on the \"Fee Free Days\" that are indicated below. The fee in the dropdown below titled \"Private Vehicle\" is for boaters' use of overnight moorings, not for vehicles such as cars, trucks, or SUV's. Virgin Islands National Park does not charge fees for private vehicles entering the park via roadways. Overnight mooring fees must be paid prior to spending the night. Mooring fee payments should be made on a night-by-night basis. Overnight stays are limited to 7 nights per bay and no more than 30 nights per year. Payment stations can be found at the following locations: Cruz Bay Finger Pier, Caneel Bay, Francis Bay, Leinster Bay, Saltpond Bay, and Great Lameshur Bay. For a faster, safer, and more convenient visitor experience, Trunk Bay accepts card and mobile payments only. Cash is no longer accepted at this location."
+  }
+ ],
  "hero": {
   "credit": "NPS Photo",
   "isPublicDomain": true,
-  "assetName": "np-virgin-islands-1.jpg",
+  "assetName": "np-virgin-islands-9bcb10dba4.jpg",
   "caption": "Trunk Bay",
   "altText": "Turquoise water laps white sandy shore fringed with lush green vegetation."
  },
@@ -86,7 +92,7 @@
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-virgin-islands-2.jpg",
+   "assetName": "np-virgin-islands-ee97ac73b2.jpg",
    "caption": "Sunset Bench at Lind Point",
    "altText": "A sunset colors the horizon as seen from an overlook above the bay."
   }

@@ -72,11 +72,17 @@
    "url": "https://www.nps.gov/noca/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": null
+  }
+ ],
  "hero": {
   "credit": "NPS Photo/D.Dixon",
   "isPublicDomain": true,
-  "assetName": "np-north-cascades-1.jpg",
+  "assetName": "np-north-cascades-a5242d3e6a.jpg",
   "caption": "Stehekin - Looking down Lake Chelan",
   "altText": "boats on the water with mountains and trees surrounding"
  },
@@ -84,21 +90,21 @@
   {
    "credit": "NPS Photo/D. Dixon",
    "isPublicDomain": true,
-   "assetName": "np-north-cascades-2.jpg",
+   "assetName": "np-north-cascades-7c02fc6f59.jpg",
    "caption": "Camping on Ross Lake",
    "altText": "Tents set up in a wooded area."
   },
   {
    "credit": "NPS Photo/D. Dixon",
    "isPublicDomain": true,
-   "assetName": "np-north-cascades-3.jpg",
+   "assetName": "np-north-cascades-fa9b10aa2b.jpg",
    "caption": "Pelton Basin from Cascade Pass",
    "altText": "Trees surround the frame with glacier and mountains in the background"
   },
   {
    "credit": "NPS Photo/D. Dixon",
    "isPublicDomain": true,
-   "assetName": "np-north-cascades-4.jpg",
+   "assetName": "np-north-cascades-a9b6e55e92.jpg",
    "caption": "Backpack the North Cascades",
    "altText": "Person with backpacking and climbing gear hikes on a trail."
   }

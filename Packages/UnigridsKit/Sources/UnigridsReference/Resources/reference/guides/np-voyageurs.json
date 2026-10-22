@@ -73,11 +73,17 @@
    "url": "https://www.nps.gov/voya/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": "Voyageurs National Park does not have an entrance fee. However, there are fees for camping, houseboat permits, boat tours, special interpretive programs, winter equipment rentals, and special use permits. Interagency Senior and Access passes provide a discount of 50% on boat tours only."
+  }
+ ],
  "hero": {
   "credit": "NPS Photo / Daniel Dendler",
   "isPublicDomain": true,
-  "assetName": "np-voyageurs-1.jpg",
+  "assetName": "np-voyageurs-5eb280e4ab.jpg",
   "caption": "Northern Lights Over Kabetogama",
   "altText": "Photograph of northern lights over a lake."
  },
@@ -85,21 +91,21 @@
   {
    "credit": "NPS Photo / Billy Flynn",
    "isPublicDomain": true,
-   "assetName": "np-voyageurs-2.jpg",
+   "assetName": "np-voyageurs-214ec20099.jpg",
    "caption": "Kabetogama Lake",
    "altText": "Photograph of lake in distance viewed through trees."
   },
   {
    "credit": "NPS Photo / Billy Flynn",
    "isPublicDomain": true,
-   "assetName": "np-voyageurs-3.jpg",
+   "assetName": "np-voyageurs-b6fee69306.jpg",
    "caption": "Ellsworth Rock Gardens",
    "altText": "Photograph of landscape with large boulders and rock sculptures."
   },
   {
    "credit": "NPS Photo / Billy Flynn",
    "isPublicDomain": true,
-   "assetName": "np-voyageurs-4.jpg",
+   "assetName": "np-voyageurs-1a3e60a227.jpg",
    "caption": "Kettle Falls Hotel",
    "altText": "Photograph of rustic wooden sign on building front with \"Kettle Falls Hotel\" painted in red."
   }

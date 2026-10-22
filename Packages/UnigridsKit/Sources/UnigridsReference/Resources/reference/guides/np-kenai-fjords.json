@@ -60,11 +60,17 @@
    "url": "https://www.nps.gov/kefj/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": null
+  }
+ ],
  "hero": {
   "credit": "NPS Photo, S. Rainone",
   "isPublicDomain": true,
-  "assetName": "np-kenai-fjords-1.jpg",
+  "assetName": "np-kenai-fjords-ac95d316f7.jpg",
   "caption": "Northwestern Fiord",
   "altText": "A thin bay surrounded by mountains and ice"
  },
@@ -72,21 +78,21 @@
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-kenai-fjords-2.jpg",
+   "assetName": "np-kenai-fjords-61e98f0410.jpg",
    "caption": "The Harding Icefield",
    "altText": "A person looks out over a view of snow, ice, and mountain peaks"
   },
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-kenai-fjords-3.jpg",
+   "assetName": "np-kenai-fjords-71fe3b1f78.jpg",
    "caption": "Orcas on Kenai Fjords Coastline",
    "altText": "Two orcas surface with mountainous coastline beyond"
   },
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-kenai-fjords-4.jpg",
+   "assetName": "np-kenai-fjords-674da51941.jpg",
    "caption": "Exit Glacier Park Ranger",
    "altText": "A park ranger talks with a child with Exit Glacier in the background"
   }

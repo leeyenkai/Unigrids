@@ -79,11 +79,17 @@
    "url": "https://www.nps.gov/wrst/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": "Fee Free Park: Visitors can access the Headquarters Visitor Center in Copper Center in summer (mid-May through mid-September). Gate open for day use only 9 am - 5 pm. Access to Nabesna Road and McCarthy Road open year-round, weather dependent. Summer can have heavy rains and impassable streams. Fall - Winter - Spring can have deep snow after storms. The gravel park roads are owned and maintained by the Alaska State Dept of Transportation - grading in summer and snow plowing in winter are infrequent. Parking and camping fees are possible at privately owned businesses permitted to operate in the park. --There is private overnight parking and camping for a fee at mile 60 at the Kennicott River Bridge, 1/2 mile west of McCarthy town."
+  }
+ ],
  "hero": {
   "credit": "NPS Photo/ Neal Herbert",
   "isPublicDomain": true,
-  "assetName": "np-wrangell-st-elias-1.jpg",
+  "assetName": "np-wrangell-st-elias-61722f747e.jpg",
   "caption": "Icy Bay with Mt. St. Elias",
   "altText": "Glaciers loom over the ocean with large snowy mountains rising into blue skies"
  },
@@ -91,21 +97,21 @@
   {
    "credit": "NPS Photo/ Bryan Petrtyl",
    "isPublicDomain": true,
-   "assetName": "np-wrangell-st-elias-2.jpg",
+   "assetName": "np-wrangell-st-elias-8b982f884e.jpg",
    "caption": "Backpackers in Mentasta Mountains",
    "altText": "Two backpackers sitting in an alpine meadow with snowy mountains in the background"
   },
   {
    "credit": "NPS Photo/ Matthew Yarbrough",
    "isPublicDomain": true,
-   "assetName": "np-wrangell-st-elias-3.jpg",
+   "assetName": "np-wrangell-st-elias-d1eba19f2a.jpg",
    "caption": "Kennecott Mill Town",
    "altText": "Historic, large, red buildings with mountains in the background"
   },
   {
    "credit": "NPS Photo/ Bryan Petrtyl",
    "isPublicDomain": true,
-   "assetName": "np-wrangell-st-elias-4.jpg",
+   "assetName": "np-wrangell-st-elias-49235a391e.jpg",
    "caption": "Logan Glacier",
    "altText": "A large glacier with stripes of different colored rock nestled in between barren mountain slopes."
   }

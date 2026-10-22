@@ -81,11 +81,17 @@
    "url": "https://www.nps.gov/chis/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": null
+  }
+ ],
  "hero": {
   "credit": "NPS / Derek Lohuis",
   "isPublicDomain": true,
-  "assetName": "np-channel-islands-1.jpg",
+  "assetName": "np-channel-islands-7fe044c7ca.jpg",
   "caption": "Giant coreopsis on Anacapa Island",
   "sourceURL": "https://commons.wikimedia.org/wiki/File:Anacapa-Island-Coreopsis.jpg",
   "altText": "Yellow giant coreopsis covering Anacapa Island, with the lighthouse and the sea beyond."

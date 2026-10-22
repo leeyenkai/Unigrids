@@ -59,11 +59,17 @@
    "url": "https://www.nps.gov/hosp/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": null
+  }
+ ],
  "hero": {
   "credit": "NPS photo",
   "isPublicDomain": true,
-  "assetName": "np-hot-springs-1.jpg",
+  "assetName": "np-hot-springs-317def4778.jpg",
   "caption": "Bathhouse Row",
   "altText": "Stone entrance pillars in front of a row of four bathouses"
  },
@@ -71,21 +77,21 @@
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-hot-springs-2.jpg",
+   "assetName": "np-hot-springs-af57a6d5e7.jpg",
    "caption": "Take A Hike!",
    "altText": "A person hikes through a deep green forest."
   },
   {
    "credit": "NPS photo Mark David Artist In Residence 2015",
    "isPublicDomain": true,
-   "assetName": "np-hot-springs-3.jpg",
+   "assetName": "np-hot-springs-51e37fb89d.jpg",
    "caption": "Bridge with fall colors",
    "altText": "Stone bridge surrounded by brilliant yellow and green leaves"
   },
   {
    "credit": "NPS photo",
    "isPublicDomain": true,
-   "assetName": "np-hot-springs-4.jpg",
+   "assetName": "np-hot-springs-6e001271af.jpg",
    "caption": "Visitor at the edge of the pools of the hot water cascade",
    "altText": "women sitting on the stone wall at the hot water cascade as the vapor rises"
   }

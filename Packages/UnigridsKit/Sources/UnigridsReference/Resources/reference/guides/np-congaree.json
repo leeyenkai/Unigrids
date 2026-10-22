@@ -58,11 +58,17 @@
    "url": "https://www.nps.gov/cong/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": null
+  }
+ ],
  "hero": {
   "credit": "NPS Photo",
   "isPublicDomain": true,
-  "assetName": "np-congaree-1.jpg",
+  "assetName": "np-congaree-3fcecb5685.jpg",
   "caption": "Floodplain Forest",
   "altText": "A view of a bottomland/floodplain forest, with wide based cypress and tupelo trees, cypress knees"
  },
@@ -70,21 +76,21 @@
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-congaree-2.jpg",
+   "assetName": "np-congaree-9aec847e17.jpg",
    "caption": "Barred Owl on Harry Hampton Visitor Center Roof",
    "altText": "An owl perched on a wooden building"
   },
   {
    "credit": "NPS",
    "isPublicDomain": true,
-   "assetName": "np-congaree-3.jpg",
+   "assetName": "np-congaree-40e2afdc1a.jpg",
    "caption": "Congaree River",
    "altText": "View of the Congaree River during the Fall"
   },
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-congaree-4.jpg",
+   "assetName": "np-congaree-5a49cf83af.jpg",
    "caption": "Canoeing Cedar Creek",
    "altText": "Two people in a canoe on a narrow creek surrounded by forest"
   }

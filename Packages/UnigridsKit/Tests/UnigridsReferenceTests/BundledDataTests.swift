@@ -109,23 +109,45 @@ struct BundledDataTests {
         }
     }
 
-    @Test("every curated state park, monument and refuge has a written overview")
-    func curatedSitesHaveOverviews() {
+    @Test("every overview says who wrote it, and a Wikipedia lead carries its licence and link")
+    func overviewsAreCredited() {
         let stateParks = store.places.filter { $0.tier == .statePark }
-        #expect(stateParks.count >= 50)
-        for place in stateParks {
-            #expect((place.summary?.count ?? 0) > 60, "\(place.name) has no summary")
-            #expect(place.summarySource == "Unigrids")
-        }
+        #expect(stateParks.count >= 3000)
+        // The curated parks keep the prose written for them.
+        #expect(stateParks.count { $0.summarySource == "Unigrids" } >= 50)
         let federal = store.places.filter { $0.tier == .federalSite }
-        let written = federal.filter { $0.summary != nil }
-        #expect(written.count >= 25)
-        // The rest of the public lands carry no prose by design: nobody wrote any, and
-        // the sources publish none. What is there must say who wrote it.
-        for place in written {
-            #expect((place.summary?.count ?? 0) > 60, "\(place.name) summary is thin")
-            #expect(place.summarySource == "Unigrids")
+        #expect(federal.count { $0.summarySource == "Unigrids" } >= 25)
+        for place in stateParks + federal {
+            guard let summary = place.summary else { continue }
+            #expect(summary.count > 60, "\(place.name) summary is thin")
+            switch place.summarySource {
+            case "Unigrids":
+                break
+            case "Wikipedia":
+                #expect(place.summaryLicence == "CC BY-SA 4.0", "\(place.name) has no licence")
+                #expect(
+                    place.summaryURL?.host() == "en.wikipedia.org",
+                    "\(place.name) does not link its article"
+                )
+            default:
+                Issue.record("\(place.name) summary from \(place.summarySource ?? "nobody")")
+            }
         }
+    }
+
+    @Test("every place's time zone is one the system knows")
+    func timeZones() {
+        for place in store.places {
+            guard let id = place.timeZoneID else { continue }
+            #expect(TimeZone(identifier: id) != nil, "\(place.name): \(id)")
+        }
+        #expect(store.nationalParks.allSatisfy { $0.timeZoneID != nil })
+    }
+
+    @Test("identifiers are unique")
+    func uniqueIDs() {
+        let ids = store.places.map(\.id)
+        #expect(Set(ids).count == ids.count)
     }
 
     @Test("sight ranks are unique within a park, so the order is unambiguous")
@@ -156,11 +178,23 @@ struct BundledDataTests {
 
     @Test("figures not in the sources stay absent rather than guessed")
     func absentFiguresStayAbsent() {
-        // Other NPS units come from the NPS API, which publishes no establishment year or
-        // visitation; an invented one would reach the reader as a fact.
+        // Other NPS units come from the NPS API, which publishes no establishment year; an
+        // invented one would reach the reader as a fact. Visits come only from the NPS's
+        // own visitor statistics, which always say for which year.
         for place in store.places where place.tier == .npsUnit {
             #expect(place.facts.establishedYear == nil)
-            #expect(place.facts.annualVisits == nil)
+            if place.facts.annualVisits != nil {
+                #expect(place.facts.annualVisitsYear != nil, "\(place.name) visits without a year")
+            }
+        }
+        for place in store.places where place.tier != .nationalPark && place.tier != .npsUnit {
+            #expect(place.facts.annualVisits == nil, "\(place.name) has visits from nowhere")
+            #expect(place.visitation == nil)
+        }
+        for place in store.places {
+            guard let visitation = place.visitation else { continue }
+            #expect(visitation.monthly.count == 12, "\(place.name) visitation is not by month")
+            #expect(!visitation.years.isEmpty)
         }
     }
 

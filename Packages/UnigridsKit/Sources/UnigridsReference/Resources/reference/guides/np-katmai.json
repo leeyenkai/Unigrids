@@ -72,11 +72,17 @@
    "url": "https://www.nps.gov/katm/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": null
+  }
+ ],
  "hero": {
   "credit": "NPS/David Jacob",
   "isPublicDomain": true,
-  "assetName": "np-katmai-1.jpg",
+  "assetName": "np-katmai-c2df11a489.jpg",
   "caption": "Salmon jumping at Brooks Falls",
   "altText": "salmon jumping at waterfall"
  },
@@ -84,21 +90,21 @@
   {
    "credit": "NPS/David Jacob",
    "isPublicDomain": true,
-   "assetName": "np-katmai-2.jpg",
+   "assetName": "np-katmai-66788c4db3.jpg",
    "caption": "Bear catching jumping salmon",
    "altText": "Bear standing at the edge of a waterfall while a salmon is leaping towards it."
   },
   {
    "credit": "NPS/Bryanna Plog",
    "isPublicDomain": true,
-   "assetName": "np-katmai-3.jpg",
+   "assetName": "np-katmai-34b2588fc5.jpg",
    "caption": "Bear family walks near sleeping bear",
    "altText": "Three bears walk near a sleeping bear"
   },
   {
    "credit": "NPS/Roy Wood",
    "isPublicDomain": true,
-   "assetName": "np-katmai-4.jpg",
+   "assetName": "np-katmai-0fdeb9f7e6.jpg",
    "caption": "Mount Katmai caldera",
    "altText": "lake inside of an ash and glacier covered volcano"
   }

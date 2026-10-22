@@ -73,11 +73,17 @@
    "url": "https://www.nps.gov/maca/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": "There is no fee to enter Mammoth Cave National Park. However, there are fees associated with cave tours, camping, and shelter rentals. For detailed information related to the fees for these activities, please visit our Fees and Passes webpage."
+  }
+ ],
  "hero": {
   "credit": "NPS Photo / J. Cooper",
   "isPublicDomain": true,
-  "assetName": "np-mammoth-cave-1.jpg",
+  "assetName": "np-mammoth-cave-01bfe3ecd9.jpg",
   "caption": "Historic Entrance to Mammoth Cave",
   "altText": "Looking out from a large cave entrance with falling water and green trees shown over the entrance."
  },
@@ -85,21 +91,21 @@
   {
    "credit": "NPS Photo / J. Wheet",
    "isPublicDomain": true,
-   "assetName": "np-mammoth-cave-2.jpg",
+   "assetName": "np-mammoth-cave-981ff47eb9.jpg",
    "caption": "Autumn at Sloans Pond",
    "altText": "Trees with colorful autumn leaves surround a large pond and reflect off of its surface."
   },
   {
    "credit": "NPS Photo/ Thomas DiGiovannangelo",
    "isPublicDomain": true,
-   "assetName": "np-mammoth-cave-3.jpg",
+   "assetName": "np-mammoth-cave-bc14c9ac63.jpg",
    "caption": "Historic Entrance",
    "altText": "A long staircase travels down a slope into the dark cave opening."
   },
   {
    "credit": "NPS Photo/ Jackie Wheet",
    "isPublicDomain": true,
-   "assetName": "np-mammoth-cave-4.jpg",
+   "assetName": "np-mammoth-cave-b757e39592.jpg",
    "caption": "Gothic Avenue",
    "altText": "A large stacked stone pillar reaches the flat ceiling containing signatures in a cave passage."
   }

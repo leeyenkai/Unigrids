@@ -47,11 +47,17 @@
    "url": "https://www.nps.gov/kova/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": "No fee."
+  }
+ ],
  "hero": {
   "credit": "NPS Photo",
   "isPublicDomain": true,
-  "assetName": "np-kobuk-valley-1.jpg",
+  "assetName": "np-kobuk-valley-ef92b2456d.jpg",
   "caption": "Kobuk Sand Dunes",
   "altText": "sun setting on sand dunes"
  },
@@ -59,21 +65,21 @@
   {
    "credit": "NPS Photo / Justine Schmidt",
    "isPublicDomain": true,
-   "assetName": "np-kobuk-valley-2.jpg",
+   "assetName": "np-kobuk-valley-7ad4d6026a.jpg",
    "caption": "Canoe on the Kobuk River",
    "altText": "A green pack canoe sits on the bank of the Kobuk River. Clouds are mirrored on the water's surface."
   },
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-kobuk-valley-3.jpg",
+   "assetName": "np-kobuk-valley-8e8d212bde.jpg",
    "caption": "Mountains as Far as the Eye Can See",
    "altText": "aerial view of snow capped mountains"
   },
   {
    "credit": "NPS Photo / Annie Carlson",
    "isPublicDomain": true,
-   "assetName": "np-kobuk-valley-4.jpg",
+   "assetName": "np-kobuk-valley-e6bd5345b3.jpg",
    "caption": "The Jade Mountains reflected in the Kobuk River",
    "altText": "The Jade Mountains reflected in the Kobuk River"
   }

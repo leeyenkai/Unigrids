@@ -110,11 +110,17 @@
    "url": "https://www.nps.gov/grsm/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": "Parking tags are required for all vehicles parking for longer than 15 minutes in Great Smoky Mountains National Park. While the parking tag is not an entrance fee, the park honors the Free Entrance Days below and parking tags will not be required on those dates."
+  }
+ ],
  "hero": {
   "credit": "NPS / Bob Carr",
   "isPublicDomain": true,
-  "assetName": "np-great-smoky-mountains-1.jpg",
+  "assetName": "np-great-smoky-mountains-ea03900b57.jpg",
   "caption": "Winter in the Smokies",
   "altText": "A clear sky with a vast snowy mountain scene."
  },
@@ -122,7 +128,7 @@
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-great-smoky-mountains-2.jpg",
+   "assetName": "np-great-smoky-mountains-4b420332ab.jpg",
    "caption": "Fall Colors Near Newfound Gap",
    "altText": "Bright gold and red leaves shine through the fog in a forest."
   }

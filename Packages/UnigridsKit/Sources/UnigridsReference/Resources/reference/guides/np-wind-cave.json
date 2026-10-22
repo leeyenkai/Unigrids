@@ -68,11 +68,17 @@
    "url": "https://www.nps.gov/wica/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": "There are no entrance fees to enjoy the trails, scenic drives, and visitor center at Wind Cave National Park. All cave tours have associated fees and are not covered by the Federal Interagency Passes. Campground fees may be reduced by Senior and Access Interagency Pass holders."
+  }
+ ],
  "hero": {
   "credit": "NPS Photo",
   "isPublicDomain": true,
-  "assetName": "np-wind-cave-1.jpg",
+  "assetName": "np-wind-cave-8842c65786.jpg",
   "caption": "Boxwork in the Elk's Room",
   "altText": "Thin fins of calcite forming box-shaped openings, called boxwork, on a cave ceiling."
  },
@@ -80,21 +86,21 @@
   {
    "credit": "NPS Photo / Dan Roddy",
    "isPublicDomain": true,
-   "assetName": "np-wind-cave-2.jpg",
+   "assetName": "np-wind-cave-a18f8c11d9.jpg",
    "caption": "Bison cow and calf",
    "altText": "a bison cow and calf on the prairie"
   },
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-wind-cave-3.jpg",
+   "assetName": "np-wind-cave-cb099eedc1.jpg",
    "caption": "Boxwork",
    "altText": "criss-cross-patterned calcite fins of the cave feature boxwork"
   },
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-wind-cave-4.jpg",
+   "assetName": "np-wind-cave-a31e71d275.jpg",
    "caption": "Rankin Ridge view",
    "altText": "rolling hills of forest and prairie landscape"
   }

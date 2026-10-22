@@ -201,6 +201,15 @@ makes the change. A release moves that block under a version heading with its da
   topographic Park map with every trail and sight that works with no signal, from the
   guide, a trail's page ("On the park map"), or in place of Explore in 3D when the device
   is offline. Settings lists the maps and their sizes. ADR 0010.
+- **Every state park.** 3,539 state parks from PAD-US, up from 76, each with its outline,
+  its manager, and — for 2,722 places across the map with no agency prose — a credited
+  Wikipedia lead. Nine parks PAD-US still lists but whose articles say they have closed
+  are left out.
+- Trails for Sequoia and Kings Canyon, 267 of them from OpenStreetMap, measured like every
+  other park's. 3,486 of 3,506 trails are measured.
+- Every place carries its own time zone; NPS sites carry monthly visitation and their
+  visitor information; 42 parks gain a measured elevation range; 226 passport stamp
+  locations are places of their own.
 
 ### Changed
 

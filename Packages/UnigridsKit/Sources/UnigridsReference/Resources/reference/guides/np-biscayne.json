@@ -63,11 +63,17 @@
    "url": "https://www.nps.gov/bisc/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": null
+  }
+ ],
  "hero": {
   "credit": "NPS image by Shaun Wolfe",
   "isPublicDomain": true,
-  "assetName": "np-biscayne-1.jpg",
+  "assetName": "np-biscayne-8ea21718e7.jpg",
   "caption": "Snorkeling",
   "altText": "Coral reef with two snorkelers diving below the surface"
  },
@@ -75,21 +81,21 @@
   {
    "credit": "NPS photo",
    "isPublicDomain": true,
-   "assetName": "np-biscayne-2.jpg",
+   "assetName": "np-biscayne-3e173c9bfc.jpg",
    "caption": "Boca Chita Key",
    "altText": "Downtown Miami in background."
   },
   {
    "credit": "NPS image by Shaun Wolfe",
    "isPublicDomain": true,
-   "assetName": "np-biscayne-3.jpg",
+   "assetName": "np-biscayne-e169319744.jpg",
    "caption": "Coral Reef",
    "altText": "Underwater view of coral reef with a large school of yellow and blue fish"
   },
   {
    "credit": "NPS photo",
    "isPublicDomain": true,
-   "assetName": "np-biscayne-4.jpg",
+   "assetName": "np-biscayne-8fb75f0a75.jpg",
    "caption": "Coral Reef",
    "altText": "The coral reefs are located mostly on the Eastern side of the park."
   }

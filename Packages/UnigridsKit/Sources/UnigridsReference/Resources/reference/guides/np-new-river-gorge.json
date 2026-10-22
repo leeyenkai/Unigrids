@@ -76,11 +76,17 @@
    "url": "https://www.nps.gov/neri/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": "New River Gorge National Park and Preserve does not charge an entrance fee."
+  }
+ ],
  "hero": {
   "credit": "NPS photo/Louise McLaughlin",
   "isPublicDomain": true,
-  "assetName": "np-new-river-gorge-1.jpg",
+  "assetName": "np-new-river-gorge-5d61f78c26.jpg",
   "caption": "Horseshoe Bend from Grandview",
   "altText": "bend in the river"
  },
@@ -88,21 +94,21 @@
   {
    "credit": "NPS photo/Louise McLaughlin",
    "isPublicDomain": true,
-   "assetName": "np-new-river-gorge-2.jpg",
+   "assetName": "np-new-river-gorge-b9980a1847.jpg",
    "caption": "Thurmond Depot",
    "altText": "railroad tracks and depot"
   },
   {
    "credit": "NPS photo/Carey Woods",
    "isPublicDomain": true,
-   "assetName": "np-new-river-gorge-3.jpg",
+   "assetName": "np-new-river-gorge-e82cc3472a.jpg",
    "caption": "Sandstone Falls",
    "altText": "waterfall spanning the river"
   },
   {
    "credit": "NPS photo/Leah Perkowski-Sisk",
    "isPublicDomain": true,
-   "assetName": "np-new-river-gorge-4.jpg",
+   "assetName": "np-new-river-gorge-1b0e2aa3ce.jpg",
    "caption": "Foggy morning",
    "altText": "fog and mountains"
   }

@@ -1,6 +1,6 @@
 {
- "version": 3,
- "builtOn": "2026-10-19",
+ "version": 4,
+ "builtOn": "2026-10-23",
  "provenance": "pipeline",
- "note": "All 63 national parks with a full guide, and 1989 more places on the map: other NPS units from the NPS Data API; state parks from PAD-US; every national forest, grassland and wildlife refuge, the BLM's monuments and conservation areas, National Natural Landmarks and scenic byways from their agencies' own data. Guide prose is written for Unigrids; descriptions, fees, hours, visitor centres and photographs are the NPS's own."
+ "note": "All 63 national parks with a full guide, and 5,452 more places on the map: other NPS units from the NPS Data API; every state park from PAD-US; every national forest, grassland and wildlife refuge, the BLM's monuments and conservation areas, National Natural Landmarks and scenic byways from their agencies' own data. Guide prose is written for Unigrids; descriptions, fees, hours, visitor centres and photographs are the NPS's own; places with no agency prose carry a lead adapted from Wikipedia, credited where it is shown."
 }

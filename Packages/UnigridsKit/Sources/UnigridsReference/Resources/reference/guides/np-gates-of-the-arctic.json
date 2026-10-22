@@ -60,11 +60,17 @@
    "url": "https://www.nps.gov/gaar/"
   }
  ],
- "fees": [],
+ "fees": [
+  {
+   "title": "Entrance",
+   "cost": "Free",
+   "detail": null
+  }
+ ],
  "hero": {
   "credit": "NPS Photo / Sean Tevebaugh",
   "isPublicDomain": true,
-  "assetName": "np-gates-of-the-arctic-1.jpg",
+  "assetName": "np-gates-of-the-arctic-2d678968cb.jpg",
   "caption": "Alatna River",
   "altText": "Aerial view of the Alatna River as it winds through a valley"
  },
@@ -72,7 +78,7 @@
   {
    "credit": "NPS Photo",
    "isPublicDomain": true,
-   "assetName": "np-gates-of-the-arctic-2.jpg",
+   "assetName": "np-gates-of-the-arctic-b872fde283.jpg",
    "caption": "Arrigetch Peaks",
    "altText": "Alpenglow on the granite cliffs of mountains"
   }
