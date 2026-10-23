@@ -1,0 +1,27 @@
+name: Data correction
+description: A park fact, outline, trail or place that is wrong or missing.
+labels: [data]
+body:
+  - type: input
+    id: place
+    attributes:
+      label: Place
+      placeholder: Zion National Park
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong
+      description: What the app shows, and what it should show instead.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: >-
+        A link to an official source for the correct value (nps.gov, an agency dataset).
+        Unigrids does not ship figures it cannot source.
+    validations:
+      required: true

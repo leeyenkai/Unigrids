@@ -1,0 +1,41 @@
+name: Bug report
+description: Something in the app behaves wrongly or crashes.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the Map tab
+        2. Select Zion National Park
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      multiple: true
+      options: [iPhone, iPad, Mac]
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: App and OS version
+      placeholder: Unigrids 0.9.0 on iOS 27.0
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or logs
+      description: Anything else that helps. Leave out personal data such as your visit log.

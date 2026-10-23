@@ -1,0 +1,3 @@
+# Reference data is written by the pipeline (see its README), so GitHub collapses it in
+# diffs rather than showing thousands of changed lines.
+Packages/UnigridsKit/Sources/UnigridsReference/Resources/reference/**/*.json linguist-generated=true

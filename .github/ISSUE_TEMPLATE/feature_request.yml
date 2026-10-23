@@ -1,0 +1,23 @@
+name: Feature request
+description: An idea for something the app should do.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you are trying to do
+      description: The trip, visit or question the app does not help with today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you would like
+  - type: checkboxes
+    id: guardrails
+    attributes:
+      label: Guardrails
+      description: Unigrids has no backend, no analytics and no accounts (see AGENTS.md §5).
+      options:
+        - label: This works without a server, an account or sending data off the device.
+          required: true
