@@ -2,6 +2,42 @@ import MapKit
 import SwiftUI
 import UnigridsCore
 
+// MARK: - Places
+
+/// One place as the atlas draws it.
+struct AtlasPlace: Equatable {
+    let place: Place
+    let status: VisitStatusBadgeStatus
+    var alert: MapAlertLevel?
+}
+
+/// The base map under the outlines.
+enum AtlasBasemap: String, CaseIterable, Identifiable {
+    case standard
+    case hybrid
+    case imagery
+
+    var id: String {
+        rawValue
+    }
+
+    var name: String {
+        switch self {
+        case .standard: "Map"
+        case .hybrid: "Hybrid"
+        case .imagery: "Satellite"
+        }
+    }
+
+    var symbol: String {
+        switch self {
+        case .standard: "map"
+        case .hybrid: "map.fill"
+        case .imagery: "globe.americas"
+        }
+    }
+}
+
 // MARK: - Colours
 
 /// The colours the atlas draws in, resolved once from the Unigrid style so the map and

@@ -12,6 +12,12 @@ makes the change. A release moves that block under a version heading with its da
 
 ## [Unreleased]
 
+### Fixed
+
+- The map no longer stalls while a place card slides in on iPad. Its five thousand pins
+  and outlines are rebuilt only when the filter, the log or the alerts change, not on
+  every redraw.
+
 ## [0.9.0] — 2026-10-23
 
 The production pass: everything below, from the first pilot to this release. Widgets and

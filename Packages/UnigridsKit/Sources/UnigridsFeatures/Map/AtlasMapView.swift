@@ -12,40 +12,6 @@ import UnigridsCore
     typealias PlatformColor = NSColor
 #endif
 
-/// One place as the atlas draws it.
-struct AtlasPlace: Equatable {
-    let place: Place
-    let status: VisitStatusBadgeStatus
-    var alert: MapAlertLevel?
-}
-
-/// The base map under the outlines.
-enum AtlasBasemap: String, CaseIterable, Identifiable {
-    case standard
-    case hybrid
-    case imagery
-
-    var id: String {
-        rawValue
-    }
-
-    var name: String {
-        switch self {
-        case .standard: "Map"
-        case .hybrid: "Hybrid"
-        case .imagery: "Satellite"
-        }
-    }
-
-    var symbol: String {
-        switch self {
-        case .standard: "map"
-        case .hybrid: "map.fill"
-        case .imagery: "globe.americas"
-        }
-    }
-}
-
 /// A one-off instruction to move the camera. Each request carries its own identity, so
 /// asking for the same box twice still moves the camera the second time.
 struct AtlasCameraRequest: Equatable {
@@ -68,6 +34,10 @@ struct AtlasCameraRequest: Equatable {
 @MainActor
 struct AtlasMapView {
     let places: [AtlasPlace]
+    /// Changes whenever `places` does, so an update that changes nothing about them costs
+    /// nothing: walking five thousand places and their outlines on every SwiftUI update
+    /// stalled the map while a card slid in.
+    var placesRevision = 0
     let boundaries: [UnigridsID: PlaceBoundary]
     let overviewBoundaries: [UnigridsID: PlaceBoundary]
     let routes: [UnigridsID: RouteLine]
@@ -177,6 +147,7 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
     var selected: UnigridsID?
     var focus: AtlasFocus?
     var focusAnnotation: FocusAnnotation?
+    var placesRevision: Int?
     var latitudeSpan: Double = AtlasMapView.lower48.span.latitudeDelta
 
     func attach(to map: MKMapView) {
@@ -206,8 +177,13 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
 
         let inkChanged = ink != view.ink
         ink = view.ink
-        syncAnnotations(view.places, on: map, restyleAll: inkChanged)
-        syncOverlays(on: map, restyleAll: inkChanged)
+        // The camera's own moves re-sync from `regionDidChange`; here, only new places or
+        // inks need it.
+        if inkChanged || placesRevision != view.placesRevision {
+            placesRevision = view.placesRevision
+            syncAnnotations(view.places, on: map, restyleAll: inkChanged)
+            syncOverlays(on: map, restyleAll: inkChanged)
+        }
         syncTransport(view, on: map, restyleAll: inkChanged)
         syncFocus(view.focus, on: map)
 

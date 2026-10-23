@@ -36,6 +36,7 @@ public struct MapScreen: View {
     @State private var focus: AtlasFocus?
     /// The place the marked sight is in; choosing any other place clears the mark.
     @State private var focusPlace: UnigridsID?
+    @State private var atlasCache = AtlasPlacesCache()
     @AppStorage("map.basemap") private var basemap = AtlasBasemap.standard
     #if os(iOS)
         @Environment(\.horizontalSizeClass) private var sizeClass
@@ -92,8 +93,20 @@ public struct MapScreen: View {
         )
     }
 
-    private var atlasPlaces: [AtlasPlace] {
+    /// The places the map draws, rebuilt only when what they are built from changes: the
+    /// filter, the log's visited and planned places, and the alerts.
+    private var atlas: (places: [AtlasPlace], revision: Int) {
         let index = index
+        var key = Hasher()
+        key.combine(filterData)
+        key.combine(index.visitedPlaceIDs)
+        key.combine(index.plannedPlaceIDs)
+        key.combine(alerts?.lastUpdated)
+        key.combine(store.places.count)
+        return atlasCache.places(for: key.finalize()) { atlasPlaces(index: index) }
+    }
+
+    private func atlasPlaces(index: VisitIndex) -> [AtlasPlace] {
         let filter = filter
         let stamped = store.placesWithStampLocations
         return store.places.compactMap { place in
@@ -118,10 +131,12 @@ public struct MapScreen: View {
     public var body: some View {
         // Filtered once per redraw: the map and the filter line both need it, and it walks
         // every place.
-        let places = atlasPlaces
+        let atlas = atlas
+        let places = atlas.places
         NavigationStack(path: $path) {
             AtlasMapView(
                 places: places,
+                placesRevision: atlas.revision,
                 boundaries: store.boundaries,
                 overviewBoundaries: store.overviewBoundaries,
                 routes: store.routes,
@@ -407,5 +422,23 @@ extension BoundingBox {
                 longitudeDelta: max(east - west, 0.02)
             )
         )
+    }
+}
+
+/// The map's place list and the inputs it was built from. A cache, not state: nothing
+/// observes it, and filling it during a redraw changes nothing on screen.
+@MainActor
+final class AtlasPlacesCache {
+    private var key: Int?
+    private var places: [AtlasPlace] = []
+    private var revision = 0
+
+    func places(for key: Int, make: () -> [AtlasPlace]) -> (places: [AtlasPlace], revision: Int) {
+        if key != self.key {
+            self.key = key
+            places = make()
+            revision += 1
+        }
+        return (places, revision)
     }
 }
