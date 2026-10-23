@@ -24,6 +24,11 @@ makes the change. A release moves that block under a version heading with its da
 - The map no longer stalls while a place card slides in on iPad. Its five thousand pins
   and outlines are rebuilt only when the filter, the log or the alerts change, not on
   every redraw.
+- At the largest accessibility text sizes: charts, maps and the seven-day forecast keep
+  their shape, so a guide no longer runs off both edges of the screen; figures such as a
+  trip's stops and distance get wider columns instead of breaking words; the photo
+  credit wraps instead of being cut off; a sheet's close button grows with the text; and
+  the Parks count line wraps.
 
 ## [0.9.0] — 2026-10-23
 

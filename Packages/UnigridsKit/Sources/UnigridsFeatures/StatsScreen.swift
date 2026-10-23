@@ -142,11 +142,7 @@ public struct StatsScreen: View {
             grouping: Set(visits.map(\.place)).compactMap(store.place),
             by: \.tier
         )
-        return LazyVGrid(
-            columns: [GridItem(.adaptive(minimum: 140), spacing: 16, alignment: .top)],
-            alignment: .leading,
-            spacing: 18
-        ) {
+        return FigureGrid(minimum: 140, spacing: 16) {
             FigureBlock(value: "\(byTier[.npsUnit]?.count ?? 0)", label: "Other NPS sites")
             FigureBlock(value: "\(byTier[.statePark]?.count ?? 0)", label: "State parks")
             FigureBlock(value: report.regions.description, label: "Passport regions")
@@ -189,6 +185,7 @@ public struct StatsScreen: View {
                 }
             }
             .frame(height: 180)
+            .graphicTypeSize()
             .accessibilityLabel("Visits by year")
             .accessibilityValue(
                 report.visitsByYear.map { "\($0.year): \($0.count)" }.joined(separator: ", ")
@@ -219,6 +216,7 @@ public struct StatsScreen: View {
                 }
             }
             .frame(height: 150)
+            .graphicTypeSize()
             .accessibilityLabel("Visits by season")
             .accessibilityValue(
                 report.visitsBySeason.map { "\($0.season.name): \($0.count)" }

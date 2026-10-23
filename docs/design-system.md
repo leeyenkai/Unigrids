@@ -304,6 +304,11 @@ Not optional (`AGENTS.md` §6):
 
 - Contrast checked in both schemes — by the test suite, for every palette.
 - The guide reflows with Dynamic Type, collapsing columns rather than shrinking text.
+- Charts, maps and the seven-day strip are `graphicTypeSize()`: their labels stop at the
+  largest standard size, so a chart keeps its shape while the prose around it grows on.
+  Uncapped, the weather panel's charts pushed the guide off both edges of the screen.
+- Rows of figures are a `FigureGrid`, whose columns widen with the text, so a label wraps
+  between words and never inside one ("STOP / S").
 - Every pin, panel and chart carries a VoiceOver label.
 - Decorative marks are `accessibilityHidden`; the label goes on the element that means
   something.

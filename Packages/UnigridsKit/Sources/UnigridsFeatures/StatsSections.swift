@@ -83,6 +83,7 @@ struct VisitsByMonthSection: View {
                 }
             }
             .frame(height: 160)
+            .graphicTypeSize()
             .accessibilityLabel("Visits by month")
             .accessibilityValue(
                 points.filter { $0.visits > 0 }.map { "\($0.month): \($0.visits)" }

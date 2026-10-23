@@ -139,23 +139,35 @@ struct PlacePhoto: View {
 /// (SPECIFICATION.md §6, §15).
 struct PhotoCredit: View {
     @Environment(\.unigrid) private var style
+    @Environment(\.dynamicTypeSize) private var typeSize
     let image: GuideImage
 
     var body: some View {
-        HStack(spacing: 4) {
+        // Side by side while they fit; at the largest sizes the caption and the credit
+        // stack and wrap, since a credit cut short is a credit not given.
+        let layout = typeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 2))
+            : AnyLayout(HStackLayout(spacing: 4))
+        layout {
             if let caption = image.caption {
                 Text(caption)
                     .foregroundStyle(style.ink)
-                Text("·")
+                    .lineLimit(typeSize.isAccessibilitySize ? nil : 2)
+                if !typeSize.isAccessibilitySize {
+                    Text("·")
+                }
             }
-            if let url = image.sourceURL {
-                Link(image.creditLine, destination: url)
-            } else {
-                Text(image.creditLine)
+            Group {
+                if let url = image.sourceURL {
+                    Link(image.creditLine, destination: url)
+                } else {
+                    Text(image.creditLine)
+                }
             }
+            .lineLimit(typeSize.isAccessibilitySize ? nil : 2)
         }
         .font(UnigridStyle.caption)
         .foregroundStyle(style.inkSecondary)
-        .lineLimit(2)
+        .fixedSize(horizontal: false, vertical: true)
     }
 }

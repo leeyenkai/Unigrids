@@ -172,11 +172,7 @@ struct OverviewFigures: View {
     var body: some View {
         let facts = place.facts
         VStack(alignment: .leading, spacing: 14) {
-            LazyVGrid(
-                columns: [GridItem(.adaptive(minimum: 96), spacing: 14, alignment: .top)],
-                alignment: .leading,
-                spacing: 14
-            ) {
+            FigureGrid(minimum: 96, spacing: 14) {
                 if let year = facts.establishedYear {
                     FigureBlock(value: String(year), label: yearLabel, compact: true)
                 }

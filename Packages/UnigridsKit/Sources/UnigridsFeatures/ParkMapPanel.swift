@@ -73,6 +73,11 @@ struct ParkMapView: View {
     @State private var fallbackPosition: MapCameraPosition = .automatic
 
     var body: some View {
+        content.graphicTypeSize()
+    }
+
+    @ViewBuilder
+    private var content: some View {
         let tint = style.siteTint(for: place)
         Map(position: position ?? $fallbackPosition, interactionModes: interactive ? .all : []) {
             if let boundary {

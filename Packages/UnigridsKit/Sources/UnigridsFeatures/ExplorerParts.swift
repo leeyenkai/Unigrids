@@ -24,6 +24,11 @@ struct ExplorerMap: View {
     let onCameraChange: (BoundingBox) -> Void
 
     var body: some View {
+        content.graphicTypeSize()
+    }
+
+    @ViewBuilder
+    private var content: some View {
         // Over imagery the dark-scheme ink, which is the one lifted to show on a dark
         // ground: a national park's black outline would vanish into the terrain.
         let tint = mapStyle == .map ? style.siteTint(for: place)

@@ -32,6 +32,11 @@ struct VisitationChart: View {
     }
 
     var body: some View {
+        content.graphicTypeSize()
+    }
+
+    @ViewBuilder
+    private var content: some View {
         if visitation.monthly.count == 12 {
             VStack(alignment: .leading, spacing: 8) {
                 GuideFieldLabel("Visitors by month, \(visitation.yearsDescription) average")

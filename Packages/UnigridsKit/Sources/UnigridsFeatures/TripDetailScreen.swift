@@ -419,11 +419,7 @@ struct TripFigures: View {
         let distance = TripRoute.totalDistance(points)
         let states = Set(stops.compactMap(\.place).flatMap { $0.states.map(\.code) })
         let allRouted = stops.count > 1 && legs.count == stops.count - 1
-        LazyVGrid(
-            columns: [GridItem(.adaptive(minimum: 110), spacing: 14, alignment: .top)],
-            alignment: .leading,
-            spacing: 14
-        ) {
+        FigureGrid(minimum: 110, spacing: 14) {
             FigureBlock(value: "\(stops.count)", label: "Stops", compact: true)
             FigureBlock(value: "\(states.count)", label: "States", compact: true)
             if let days {

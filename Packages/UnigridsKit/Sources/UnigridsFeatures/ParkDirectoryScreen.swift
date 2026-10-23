@@ -245,6 +245,7 @@ struct DirectoryHeader: View {
                     Text("of \(parks.count) national parks visited")
                         .font(UnigridStyle.rowDetail)
                         .foregroundStyle(style.inkSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 ParkGrid(parks: parks, index: index)
             }

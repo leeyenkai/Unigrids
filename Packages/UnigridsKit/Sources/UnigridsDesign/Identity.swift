@@ -105,6 +105,7 @@ public struct BandHeader<Trailing: View>: View {
 /// Close, as a square ruled in the band's ink: the way out of a card that sits on a map.
 public struct BandCloseButton: View {
     @Environment(\.unigrid) private var style
+    @ScaledMetric(relativeTo: .footnote) private var side: CGFloat = 30
     private let action: () -> Void
 
     public init(action: @escaping () -> Void) {
@@ -116,7 +117,7 @@ public struct BandCloseButton: View {
             Image(.dismiss)
                 .font(.footnote.weight(.bold))
                 .foregroundStyle(style.bandInk)
-                .frame(width: 30, height: 30)
+                .frame(width: side, height: side)
                 .overlay { Rectangle().strokeBorder(style.bandInkSecondary, lineWidth: 1) }
                 .contentShape(Rectangle())
         }

@@ -55,6 +55,11 @@ private struct WeekAhead: View {
     let days: [DailyWeather]
 
     var body: some View {
+        content.graphicTypeSize()
+    }
+
+    @ViewBuilder
+    private var content: some View {
         if !days.isEmpty {
             VStack(alignment: .leading, spacing: 8) {
                 GuideFieldLabel("The week ahead, at the park's centre")
@@ -116,6 +121,10 @@ struct ClimateChart: View {
     }
 
     var body: some View {
+        content.graphicTypeSize()
+    }
+
+    private var content: some View {
         VStack(alignment: .leading, spacing: 8) {
             GuideFieldLabel("The year at a glance, \(climate.period) average")
             Chart(climate.months) { month in

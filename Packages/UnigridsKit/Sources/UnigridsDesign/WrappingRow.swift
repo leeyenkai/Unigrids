@@ -113,3 +113,40 @@ public struct ListNotes<Content: View>: View {
         .listRowSeparator(.hidden)
     }
 }
+
+extension View {
+    /// Text inside a graphic — a chart's axis, a map's markers, a week of forecasts —
+    /// grows with the reader's setting up to the largest standard size, but not into the
+    /// accessibility sizes: there, twelve month labels or seven day columns need more width
+    /// than a phone has, and the graphic pushed the whole page off both edges of the screen.
+    public func graphicTypeSize() -> some View {
+        dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+    }
+}
+
+/// Figures in as many columns as fit, each column widening with the reader's type size, so
+/// a label like STOPS never breaks inside its word.
+public struct FigureGrid<Content: View>: View {
+    @ScaledMetric(relativeTo: .caption) private var scale: CGFloat = 1
+    private let minimum: CGFloat
+    private let spacing: CGFloat
+    private let content: Content
+
+    public init(minimum: CGFloat, spacing: CGFloat = 14, @ViewBuilder content: () -> Content) {
+        self.minimum = minimum
+        self.spacing = spacing
+        self.content = content()
+    }
+
+    public var body: some View {
+        LazyVGrid(
+            columns: [
+                GridItem(.adaptive(minimum: minimum * scale), spacing: spacing, alignment: .top),
+            ],
+            alignment: .leading,
+            spacing: spacing
+        ) {
+            content
+        }
+    }
+}

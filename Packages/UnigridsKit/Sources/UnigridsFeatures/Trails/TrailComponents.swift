@@ -14,6 +14,11 @@ struct TrailProfileChart: View {
     var showsAxes = true
 
     var body: some View {
+        content.graphicTypeSize()
+    }
+
+    @ViewBuilder
+    private var content: some View {
         if trail.profile.count >= 2 {
             let low = trail.profile.map(\.elevationMetres).min() ?? 0
             let high = trail.profile.map(\.elevationMetres).max() ?? 0
@@ -52,11 +57,7 @@ struct TrailFigures: View {
     let trail: Trail
 
     var body: some View {
-        LazyVGrid(
-            columns: [GridItem(.adaptive(minimum: 92), spacing: 12, alignment: .top)],
-            alignment: .leading,
-            spacing: 12
-        ) {
+        FigureGrid(minimum: 92, spacing: 12) {
             FigureBlock(
                 value: UnigridsFormat.distance(metres: trail.walkedMetres),
                 label: walkedLabel,

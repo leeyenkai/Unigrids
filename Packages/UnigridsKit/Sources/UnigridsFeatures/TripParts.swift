@@ -32,6 +32,10 @@ struct TripMap: View {
     }
 
     var body: some View {
+        content.graphicTypeSize()
+    }
+
+    private var content: some View {
         Map(position: $position, interactionModes: [.pan, .zoom]) {
             if points.count > 1, roads.count < points.count - 1 {
                 MapPolyline(coordinates: points.map(\.coordinate.clCoordinate))

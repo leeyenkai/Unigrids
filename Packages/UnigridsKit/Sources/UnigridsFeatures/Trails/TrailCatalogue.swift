@@ -410,6 +410,10 @@ struct TrailMap: View {
     @State private var position: MapCameraPosition = .automatic
 
     var body: some View {
+        content.graphicTypeSize()
+    }
+
+    private var content: some View {
         Map(position: $position, interactionModes: [.pan, .zoom]) {
             ForEach(Array(trail.paths.enumerated()), id: \.offset) { _, path in
                 MapPolyline(coordinates: path.map(\.clCoordinate))

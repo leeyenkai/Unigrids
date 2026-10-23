@@ -16,11 +16,7 @@ struct StreaksSection: View {
         let years = Streaks.years(visits)
         VStack(alignment: .leading, spacing: 12) {
             SectionHead("In a row")
-            LazyVGrid(
-                columns: [GridItem(.adaptive(minimum: 140), spacing: 16, alignment: .top)],
-                alignment: .leading,
-                spacing: 18
-            ) {
+            FigureGrid(minimum: 140, spacing: 16) {
                 FigureBlock(
                     value: "\(months.current?.count ?? 0)",
                     label: (months.current?.count ?? 0) == 1 ? "Month, now" : "Months, now"
@@ -133,11 +129,7 @@ struct YearCardContent: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            LazyVGrid(
-                columns: [GridItem(.adaptive(minimum: 120), spacing: 16, alignment: .top)],
-                alignment: .leading,
-                spacing: 18
-            ) {
+            FigureGrid(minimum: 120, spacing: 16) {
                 FigureBlock(
                     value: "\(review.visits)",
                     label: review.visits == 1 ? "Visit" : "Visits"
