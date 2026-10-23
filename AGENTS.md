@@ -118,11 +118,12 @@ with each release. Therefore:
 CloudKit-backed SwiftData property needs a default value or must be optional, or the
 container will not initialise.
 
-The committed seed under
-`Packages/UnigridsKit/Sources/UnigridsReference/Resources/reference/` is hand-authored,
-not pipeline output. Keep its `README.md` honest: if you add a figure you did not verify,
-mark it. **Do not invent park statistics.** An absent value is correct; a plausible
-fabricated one is a bug that reaches the user as a fact.
+The reference data under
+`Packages/UnigridsKit/Sources/UnigridsReference/Resources/reference/` is pipeline output:
+change a fact in `Pipeline/content/` or at its source and rebuild, never by hand. Keep
+that directory's `README.md` honest: if a figure is not verified, mark it. **Do not invent
+park statistics.** An absent value is correct; a plausible fabricated one is a bug that
+reaches the user as a fact.
 
 ## 5. Hard guardrails
 
