@@ -88,6 +88,9 @@ public struct ParkGuideScreen: View {
             if DebugLaunch.explores {
                 showExplorer = true
             }
+            if DebugLaunch.opensParkMap {
+                showParkMap = true
+            }
         }
     }
 

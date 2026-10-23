@@ -58,6 +58,16 @@ enum DebugLaunch {
             defaults.string(forKey: "UnigridsDebugPassportRegion")
         }
 
+        /// Open a guide's offline Park map.
+        static var opensParkMap: Bool {
+            defaults.bool(forKey: "UnigridsDebugParkMap")
+        }
+
+        /// Open the Settings window, on the Mac.
+        static var opensSettings: Bool {
+            defaults.bool(forKey: "UnigridsDebugSettings")
+        }
+
         /// How far down to scroll a guide or leaflet, in points.
         static var scrollOffset: CGFloat? {
             let value = defaults.double(forKey: "UnigridsDebugScrollY")
@@ -75,5 +85,7 @@ enum DebugLaunch {
         static let scrollOffset: CGFloat? = nil
         static let opensFirstTrip = false
         static let passportRegion: String? = nil
+        static let opensSettings = false
+        static let opensParkMap = false
     #endif
 }

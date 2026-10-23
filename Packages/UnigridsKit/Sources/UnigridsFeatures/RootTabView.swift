@@ -19,6 +19,9 @@ public struct RootTabView: View {
     @Environment(\.scenePhase) private var scenePhase
     @Query private var reminders: [Reminder]
     @State private var tab = DebugLaunch.tab.flatMap(AppTab.init(rawValue:)) ?? .map
+    #if os(macOS)
+        @Environment(\.openSettings) private var openSettings
+    #endif
 
     private let loadErrorMessage: String?
 
@@ -78,6 +81,13 @@ public struct RootTabView: View {
                 DataUnavailableBanner(message: loadErrorMessage)
             }
         }
+        #if os(macOS)
+        .onAppear {
+            if DebugLaunch.opensSettings {
+                openSettings()
+            }
+        }
+        #endif
         .onboarding(isPresented: showOnboarding) {
             OnboardingView { onboardingSeen = true }
         }
