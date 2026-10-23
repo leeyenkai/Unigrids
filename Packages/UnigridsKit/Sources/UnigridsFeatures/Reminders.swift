@@ -159,7 +159,8 @@ struct TripRemindersSection: View {
             ListNotes {
                 FormNote(
                     "For permit lotteries, timed-entry slots and booking windows. Booking itself "
-                        + "happens on Recreation.gov or the park's own site; Unigrids never handles it."
+                        + "happens on Recreation.gov or the park's own site; Unigrids never "
+                        + "handles it."
                 )
             }
         } header: {

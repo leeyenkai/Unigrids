@@ -20,7 +20,8 @@ fi
 
 if command -v swiftlint >/dev/null; then
 	say "SwiftLint"
-	(cd "$REPO_ROOT" && swiftlint lint --quiet) || status=1
+	# --strict, as CI runs it: a warning here is a failed build there.
+	(cd "$REPO_ROOT" && swiftlint lint --strict --quiet) || status=1
 else
 	echo "swiftlint not installed; skipping (brew install swiftlint)"
 fi
