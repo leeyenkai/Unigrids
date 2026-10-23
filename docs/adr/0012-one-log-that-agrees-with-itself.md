@@ -37,7 +37,10 @@ day's visit at the place, or start it. A hike-made visit says it was a hike.
 - Deleting the only stamp on a visit that stamping made, and that holds nothing else,
   takes that visit too.
 - Moving a visit to another day moves everything on it, and drops weather recorded for
-  the old day.
+  the old day. A day that already has a visit to the place keeps that visit: what was
+  on the moved one joins it, and their notes are kept together.
+- Importing a backup merges by record, and a visit for a place and day the log already
+  has joins the visit there instead of adding a second.
 
 **Trips are matched conservatively** (`TripMatching`). An unlinked log entry joins a dated
 trip that lists the place and covers the day. Failing that, while logging live, it joins

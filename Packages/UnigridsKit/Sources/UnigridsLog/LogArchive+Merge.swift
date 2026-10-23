@@ -7,10 +7,12 @@ public struct MergeSummary: Equatable, Sendable {
     public var tripsAdded = 0
     public var visitsAdded = 0
     public var stampsAdded = 0
+    /// Stops, reminders, check-ins, hikes and weather.
+    public var othersAdded = 0
     public var alreadyPresent = 0
 
     public var added: Int {
-        tripsAdded + visitsAdded + stampsAdded
+        tripsAdded + visitsAdded + stampsAdded + othersAdded
     }
 }
 
@@ -27,11 +29,20 @@ extension LogStore {
     /// own identifiers, and link them up: stops and reminders to their trip, visits to
     /// theirs, stamps to their visit. A record whose identifier is already in the log is
     /// left as the log has it — the log is the newer of the two.
+    ///
+    /// A visit to a place on a day the log already has a visit to it — from another
+    /// device's backup, say — is not added beside it: what was logged on it joins the visit
+    /// already there, one visit per place per day. `calendar` gives each place's days.
     @discardableResult
-    public func merge(_ archive: LogArchive) throws -> MergeSummary {
+    public func merge(
+        _ archive: LogArchive,
+        calendar: (UnigridsID) -> Calendar? = { _ in nil }
+    ) throws -> MergeSummary {
         var summary = MergeSummary()
         let trips = try mergeTrips(archive.trips, into: &summary)
-        let visits = try mergeVisits(archive.visits, trips: trips, into: &summary)
+        let visits = try mergeVisits(
+            archive.visits, trips: trips, calendar: calendar, into: &summary
+        )
         try mergeStamps(archive.stamps, visits: visits, into: &summary)
         try save()
         return summary
@@ -70,9 +81,11 @@ extension LogStore {
             }
             for stop in item.stops where !stops.contains(stop.id) {
                 insert(stop, into: trip)
+                summary.othersAdded += 1
             }
             for reminder in item.reminders where !reminders.contains(reminder.id) {
                 insert(reminder, into: trip)
+                summary.othersAdded += 1
             }
         }
         return trips
@@ -108,7 +121,10 @@ extension LogStore {
     }
 
     private func mergeVisits(
-        _ items: [VisitArchive], trips: [UUID: Trip], into summary: inout MergeSummary
+        _ items: [VisitArchive],
+        trips: [UUID: Trip],
+        calendar: (UnigridsID) -> Calendar?,
+        into summary: inout MergeSummary
     ) throws -> [UUID: Visit] {
         var visits = try Dictionary(
             context.fetch(FetchDescriptor<Visit>()).map { ($0.id, $0) },
@@ -118,9 +134,27 @@ extension LogStore {
         let hikes = try ids(Hike.self) { $0.id }
         for item in items {
             let visit: Visit
+            let placeID = UnigridsID(item.placeID)
+            let days = calendar(placeID) ?? self.calendar
             if let existing = visits[item.id] {
                 visit = existing
                 summary.alreadyPresent += 1
+            } else if let sameDay = visits.values.first(where: {
+                $0.placeID == item.placeID
+                    && UnigridsCalendar.isSameDay($0.date, item.date, calendar: days)
+            }) {
+                visit = sameDay
+                visits[item.id] = sameDay
+                summary.alreadyPresent += 1
+                if visit.rating == nil {
+                    visit.rating = item.rating
+                }
+                if visit.notes.isEmpty {
+                    visit.notes = item.notes
+                }
+                if visit.trip == nil {
+                    visit.trip = item.tripID.flatMap { trips[$0] }
+                }
             } else {
                 visit = Visit(
                     placeID: UnigridsID(item.placeID), date: item.date, endDate: item.endDate,
@@ -141,6 +175,7 @@ extension LogStore {
                 record.photoAssetIdentifiers = checkIn.photoAssetIdentifiers
                 record.visit = visit
                 context.insert(record)
+                summary.othersAdded += 1
             }
             for hike in item.hikes where !hikes.contains(hike.id) {
                 let record = Hike(trailID: UnigridsID(hike.trailID), date: hike.date)
@@ -148,9 +183,11 @@ extension LogStore {
                 record.completionRaw = hike.completion
                 record.visit = visit
                 context.insert(record)
+                summary.othersAdded += 1
             }
             if let weather = item.weather, visit.weather == nil {
                 insert(weather, into: visit)
+                summary.othersAdded += 1
             }
         }
         return visits

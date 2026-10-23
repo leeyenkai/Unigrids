@@ -173,13 +173,14 @@ struct VisitEditor: View {
                 from: calendar.startOfDay(for: visit.date),
                 to: calendar.startOfDay(for: day)
             ).day ?? 0
-            if days != 0, let moved = calendar.date(byAdding: .day, value: days, to: visit.date) {
-                try log.move(visit, to: moved)
-            }
+            // Edits first, then the move, which may join the visit already on that day.
             try log.update {
                 visit.notes = notes
                 visit.rating = rating
                 visit.trip = trips.first { $0.id == tripID }
+            }
+            if days != 0, let moved = calendar.date(byAdding: .day, value: days, to: visit.date) {
+                try log.move(visit, to: moved, calendar: calendar)
             }
             dismiss()
         } catch {

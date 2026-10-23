@@ -14,7 +14,7 @@ import UnigridsCore
 @MainActor
 public final class LogStore {
     let context: ModelContext
-    private let calendar: Calendar
+    let calendar: Calendar
 
     public init(context: ModelContext, calendar: Calendar = UnigridsCalendar.gregorian()) {
         self.context = context
@@ -204,29 +204,6 @@ public final class LogStore {
         return hike
     }
 
-    /// Move a visit to another day, with everything logged on it. Its weather was the
-    /// old day's, so it goes, and is fetched again for the new one.
-    public func move(_ visit: Visit, to date: Date) throws {
-        let delta = date.timeIntervalSince(visit.date)
-        guard delta != 0 else { return }
-        visit.date = date
-        visit.endDate = visit.endDate?.addingTimeInterval(delta)
-        for checkIn in visit.checkIns ?? [] {
-            checkIn.date = checkIn.date.addingTimeInterval(delta)
-        }
-        for hike in visit.hikes ?? [] {
-            hike.date = hike.date.addingTimeInterval(delta)
-        }
-        for stamp in visit.stamps ?? [] {
-            stamp.date = stamp.date.addingTimeInterval(delta)
-        }
-        if let weather = visit.weather {
-            context.delete(weather)
-            visit.weather = nil
-        }
-        try save()
-    }
-
     @discardableResult
     public func createTrip(
         name: String,
@@ -381,5 +358,76 @@ public final class LogStore {
         }
         let id = TripMatching.trip(for: date, among: candidates, calendar: calendar)
         return trips.first { $0.id == id }
+    }
+}
+
+// MARK: - Moving visits
+
+extension LogStore {
+    /// Move a visit to another day, with everything logged on it. Its weather was the
+    /// old day's, so it goes, and is fetched again for the new one.
+    ///
+    /// A day that already has a visit to the place keeps it: what was logged on the moved
+    /// visit joins that one, and the moved visit goes — one visit per place per day. The
+    /// visit that holds it all afterwards is returned.
+    @discardableResult
+    public func move(_ visit: Visit, to date: Date, calendar: Calendar? = nil) throws -> Visit {
+        let delta = date.timeIntervalSince(visit.date)
+        guard delta != 0 else { return visit }
+        let calendar = calendar ?? self.calendar
+        if let host = try visits(to: visit.place).first(where: {
+            $0.id != visit.id && UnigridsCalendar.isSameDay($0.date, date, calendar: calendar)
+        }) {
+            try fold(visit, into: host, shiftedBy: delta)
+            return host
+        }
+        visit.date = date
+        visit.endDate = visit.endDate?.addingTimeInterval(delta)
+        for checkIn in visit.checkIns ?? [] {
+            checkIn.date = checkIn.date.addingTimeInterval(delta)
+        }
+        for hike in visit.hikes ?? [] {
+            hike.date = hike.date.addingTimeInterval(delta)
+        }
+        for stamp in visit.stamps ?? [] {
+            stamp.date = stamp.date.addingTimeInterval(delta)
+        }
+        if let weather = visit.weather {
+            context.delete(weather)
+            visit.weather = nil
+        }
+        try save()
+        return visit
+    }
+
+    /// Hand everything logged on `visit` to `host`, moved by `delta`, and delete `visit`.
+    /// The host keeps its own rating and trip, and the moved visit's fill only what it has
+    /// none of; notes are kept from both.
+    private func fold(_ visit: Visit, into host: Visit, shiftedBy delta: TimeInterval) throws {
+        for checkIn in visit.checkIns ?? [] {
+            checkIn.date = checkIn.date.addingTimeInterval(delta)
+            checkIn.visit = host
+        }
+        for hike in visit.hikes ?? [] {
+            hike.date = hike.date.addingTimeInterval(delta)
+            hike.visit = host
+        }
+        for stamp in visit.stamps ?? [] {
+            stamp.date = stamp.date.addingTimeInterval(delta)
+            stamp.visit = host
+        }
+        if host.rating == nil {
+            host.rating = visit.rating
+        }
+        if host.notes.isEmpty {
+            host.notes = visit.notes
+        } else if !visit.notes.isEmpty, visit.notes != host.notes {
+            host.notes += "\n\n" + visit.notes
+        }
+        if host.trip == nil {
+            host.trip = visit.trip
+        }
+        context.delete(visit)
+        try save()
     }
 }

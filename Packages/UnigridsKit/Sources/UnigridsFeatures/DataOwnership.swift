@@ -114,6 +114,7 @@ struct YourDataSection: View {
     }
 
     private func importBackup(_ result: Result<URL, any Error>) {
+        let archive: LogArchive
         do {
             let url = try result.get()
             let scoped = url.startAccessingSecurityScopedResource()
@@ -122,17 +123,38 @@ struct YourDataSection: View {
                     url.stopAccessingSecurityScopedResource()
                 }
             }
-            let archive = try LogArchive.decode(Data(contentsOf: url))
-            let summary = try LogStore(context: context).merge(archive)
-            message = summary.added == 0
-                ? "Nothing new: this device already has everything in that backup."
-                : "Added \(summary.visitsAdded) visits, \(summary.tripsAdded) trips and "
-                + "\(summary.stampsAdded) stamps."
+            archive = try LogArchive.decode(Data(contentsOf: url))
+        } catch {
+            message = "That file could not be read as a Unigrids backup."
+            return
+        }
+        do {
+            let summary = try LogStore(context: context).merge(archive) {
+                UnigridsCalendar.gregorian(at: store.place($0))
+            }
+            message = Self.describe(summary)
             exported = nil
             Task { await ReminderScheduler.reconcile(reminders) }
         } catch {
-            message = "That file could not be read as a Unigrids backup."
+            // The backup read fine; the log could not take it. Nothing was added.
+            message = "The backup could not be added: \(error.localizedDescription)"
         }
+    }
+
+    /// "Added 3 visits, 1 trip and 12 other records."
+    private static func describe(_ summary: MergeSummary) -> String {
+        guard summary.added > 0 else {
+            return "Nothing new: this device already has everything in that backup."
+        }
+        let parts = [
+            (summary.visitsAdded, "visit"),
+            (summary.tripsAdded, "trip"),
+            (summary.stampsAdded, "stamp"),
+            (summary.othersAdded, "other record"),
+        ]
+        .filter { $0.0 > 0 }
+        .map { "\($0.0) \($0.1)\($0.0 == 1 ? "" : "s")" }
+        return "Added " + ListFormatter.localizedString(byJoining: parts) + "."
     }
 
     private func erase() {

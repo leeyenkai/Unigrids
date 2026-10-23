@@ -21,6 +21,13 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- Moving a visit to a day that already has a visit to the same place joins the two,
+  instead of leaving two visits on one day. Importing a backup from another device does
+  the same for visits it shares a day with.
+- Importing a backup says what it added, stops, hikes and reminders included, rather
+  than "Nothing new" when it added only those. A backup that reads fine but cannot be
+  saved says so, instead of calling the file unreadable.
+
 - The map no longer stalls while a place card slides in on iPad. Its five thousand pins
   and outlines are rebuilt only when the filter, the log or the alerts change, not on
   every redraw.

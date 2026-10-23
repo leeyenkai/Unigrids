@@ -191,6 +191,21 @@ struct LogRulesTests {
         #expect(visit.weather == nil)
     }
 
+    @Test("moving a visit onto a day with one joins it rather than making two")
+    func moveVisitOntoLoggedDay() throws {
+        let kept = try store.checkIn(to: "np-zion", on: date(2026, 5, 3), notes: "Narrows")
+        let moved = try store.checkIn(to: "np-zion", on: date(2026, 5, 1), rating: 4)
+        try store.stamp("np-zion", on: date(2026, 5, 1))
+        try store.update { moved.notes = "Angels Landing" }
+        let result = try store.move(moved, to: date(2026, 5, 3))
+        #expect(result.id == kept.id)
+        #expect(try store.visits().count == 1)
+        #expect(kept.stamps?.count == 1)
+        #expect(kept.stamps?.first.map { calendar.component(.day, from: $0.date) } == 3)
+        #expect(kept.rating == 4)
+        #expect(kept.notes == "Narrows\n\nAngels Landing")
+    }
+
     // MARK: - Archive
 
     @Test("an archive merged into an empty log reproduces it, and merging again adds nothing")
@@ -245,6 +260,25 @@ struct LogRulesTests {
 
         let again = try elsewhere.merge(decoded)
         #expect(again.added == 0)
+    }
+
+    @Test("a backup's visit on a day the log already has joins that visit")
+    func mergeJoinsSameDayVisit() throws {
+        let here = try store.checkIn(to: "np-acadia", on: date(2025, 9, 14, hour: 9))
+        let elsewhere = try LogStore(
+            context: ModelContext(UnigridsModelContainer.inMemory()),
+            calendar: calendar
+        )
+        let there = try elsewhere.checkIn(to: "np-acadia", on: date(2025, 9, 14, hour: 16))
+        try elsewhere.markHiked("trail-acadia-beehive", in: "np-acadia", on: there.date)
+        try elsewhere.stamp("np-acadia", on: there.date)
+
+        let summary = try store.merge(elsewhere.archive())
+        #expect(try store.visits().count == 1)
+        #expect(here.hikes?.count == 1 && here.stamps?.count == 1)
+        #expect(summary.visitsAdded == 0 && summary.stampsAdded == 1)
+        // The hike and its trail check-in: added, and counted, though no visit was.
+        #expect(summary.othersAdded == 2 && summary.added == 3)
     }
 
     @Test("a first-version export still imports what it holds")
