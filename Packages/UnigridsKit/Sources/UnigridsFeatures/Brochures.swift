@@ -123,7 +123,15 @@ public final class BrochureLibrary {
             return local
         }
         if let running = inFlight[document.url] {
-            return try await running.value
+            do {
+                return try await running.value
+            } catch where !inexpensiveOnly {
+                // The download already running may be a prefetch kept off cellular; one the
+                // reader asked for is not, so it tries for itself.
+                if let local = localFile(for: document) {
+                    return local
+                }
+            }
         }
         let task = Task {
             try await download(document, for: placeID, inexpensiveOnly: inexpensiveOnly)

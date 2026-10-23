@@ -27,12 +27,13 @@ enum ProtectedData {
     /// Returns once protected data can be read, at once if it already can.
     static func available() async {
         #if os(iOS)
-            guard !isAvailable else { return }
-            for await _ in NotificationCenter.default.notifications(
+            // Listening before looking: an unlock between the look and the listen would
+            // otherwise be missed, and the wait would last until the next one.
+            var unlocks = NotificationCenter.default.notifications(
                 named: UIApplication.protectedDataDidBecomeAvailableNotification
-            ) {
-                return
-            }
+            ).makeAsyncIterator()
+            guard !isAvailable else { return }
+            _ = await unlocks.next()
         #endif
     }
 }

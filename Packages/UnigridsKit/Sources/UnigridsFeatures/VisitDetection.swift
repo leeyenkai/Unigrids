@@ -130,15 +130,17 @@ extension AppServices {
         private static var listening: Task<Void, Never>?
         /// One monitor, opened once: Core Location expects one open monitor per name, and a
         /// second opened while a cancelled listener's was still alive split the events.
-        private static var opened: CLMonitor?
+        /// Kept as the task that opens it, so a caller arriving while it opens waits for
+        /// that one instead of opening another.
+        private static var opening: Task<CLMonitor, Never>?
 
         private static func monitor() async -> CLMonitor {
-            if let opened {
-                return opened
+            if let opening {
+                return await opening.value
             }
-            let monitor = await CLMonitor(monitorName)
-            opened = monitor
-            return monitor
+            let task = Task { await CLMonitor(monitorName) }
+            opening = task
+            return await task.value
         }
 
         public static var isEnabled: Bool {

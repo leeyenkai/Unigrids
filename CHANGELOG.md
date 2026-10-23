@@ -27,6 +27,10 @@ makes the change. A release moves that block under a version heading with its da
 - Importing a backup says what it added, stops, hikes and reminders included, rather
   than "Nothing new" when it added only those. A backup that reads fine but cannot be
   saved says so, instead of calling the file unreadable.
+- Opening a brochure on cellular no longer fails because a Wi-Fi-only background
+  download of the same brochure was already running.
+- After a restart, the log opens on the first unlock even when the unlock lands while
+  the app is starting, instead of waiting for the next one.
 
 - The map no longer stalls while a place card slides in on iPad. Its five thousand pins
   and outlines are rebuilt only when the filter, the log or the alerts change, not on
