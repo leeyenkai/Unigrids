@@ -334,9 +334,11 @@ def _match(
 
 
 def _title_names_place(title: str, name: str) -> bool:
-    """Whether a resolved article title still names the place, parenthetical aside."""
+    """Whether a resolved article title still names the place, parenthetical aside: the
+    name's words, whole and in order, so "Hart" is not found in "Hartwell" — a renamed
+    park ("Lamar Alexander Rocky Fork State Park") still counts."""
     bare = re.sub(r"\s*\([^)]*\)\s*$", "", title)
-    return ids.slug(name) in ids.slug(bare)
+    return f"-{ids.slug(name)}-" in f"-{ids.slug(bare)}-"
 
 
 def _distance_to_place(

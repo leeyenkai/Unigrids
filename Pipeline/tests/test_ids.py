@@ -63,6 +63,8 @@ def test_registry_qualifies_a_second_record_rather_than_dropping_it(tmp_path):
     second = registry.resolve("padus-sp:OH:Lake State Park", "sp-lake", qualifier="OH")
     third = registry.resolve("padus-sp:OH:Lake  State Park", "sp-lake", qualifier="OH")
     assert (first, second, third) == ("sp-lake", "sp-lake-oh", "sp-lake-oh-2")
+    fourth = registry.resolve("padus-sp:OH:Lake   State Park", "sp-lake", qualifier="OH")
+    assert fourth == "sp-lake-oh-3"
 
 
 def test_registry_refuses_a_file_where_two_keys_share_an_identifier(tmp_path):

@@ -98,10 +98,9 @@ class Registry:
         free, or ``proposed`` qualified (``-ut``, then ``-2``, ``-3``…) if it is not."""
         if existing := self._by_key.get(key):
             return existing
-        candidates = [proposed]
-        if qualifier:
-            candidates.append(f"{proposed}-{slug(qualifier)}")
-        candidates.extend(f"{candidates[-1]}-{n}" for n in range(2, 100))
+        base = f"{proposed}-{slug(qualifier)}" if qualifier else proposed
+        candidates = [proposed, base] if qualifier else [proposed]
+        candidates.extend(f"{base}-{n}" for n in range(2, 100))
         for candidate in candidates:
             if candidate not in self._owner:
                 self._by_key[key] = candidate

@@ -66,6 +66,14 @@ def test_a_redirect_to_another_subject_is_rejected():
     assert isinstance(decision, str) and "resolved to" in decision
 
 
+def test_a_title_names_the_place_in_whole_words():
+    assert wikipedia_match._title_names_place(
+        "Lamar Alexander Rocky Fork State Park", "Rocky Fork"
+    )
+    assert wikipedia_match._title_names_place("Coconino National Forest (Arizona)", "Coconino")
+    assert not wikipedia_match._title_names_place("Hartwell Lakeside Park", "Hart")
+
+
 def test_the_lead_is_cut_to_three_sentences_and_loses_pronunciations():
     extract = (
         "Big Bend (/bɪɡ bɛnd/) is a place. Second sentence here. Third one too. "
