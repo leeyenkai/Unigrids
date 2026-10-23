@@ -193,11 +193,10 @@ struct MapKeySheet: View {
                 } header: {
                     Kicker("Narrow")
                 } footer: {
-                    Text(
+                    FormNote(
                         "Activities come from the National Park Service's own listings, so "
                             + "narrowing by one shows NPS sites only."
                     )
-                    .font(UnigridStyle.caption)
                 }
 
                 Section {
@@ -213,12 +212,11 @@ struct MapKeySheet: View {
                 } header: {
                     Kicker("Layers")
                 } footer: {
-                    Text(
+                    FormNote(
                         "Roads and railways from the US DOT National Transportation Atlas "
                             + "Database. US highways appear from regional zoom, Amtrak stations "
                             + "close up."
                     )
-                    .font(UnigridStyle.caption)
                 }
 
                 Section {
@@ -397,7 +395,7 @@ private struct ActivityFilterList: View {
                     .accessibilityAddTraits(selection.contains(activity) ? .isSelected : [])
                 }
             } footer: {
-                Text("Places that list every activity you pick.")
+                FormNote("Places that list every activity you pick.")
             }
         }
         .paperPage()

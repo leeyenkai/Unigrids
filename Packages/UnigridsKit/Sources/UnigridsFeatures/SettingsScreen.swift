@@ -23,6 +23,13 @@ public struct SettingsScreen: View {
 
     public init() {}
 
+    // A Mac pop-up button shows the swatch in its own height; iOS shows it in the menu.
+    #if os(macOS)
+        private static let swatchSize: CGFloat = 16
+    #else
+        private static let swatchSize: CGFloat = 26
+    #endif
+
     /// "0.9.0", from the app's own bundle.
     private var appVersion: String? {
         Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
@@ -50,7 +57,7 @@ public struct SettingsScreen: View {
                         Label {
                             Text(option.name)
                         } icon: {
-                            PaletteSwatch(palette: option)
+                            PaletteSwatch(palette: option, size: Self.swatchSize)
                         }
                         .tag(option)
                     }
@@ -68,11 +75,12 @@ public struct SettingsScreen: View {
             } header: {
                 SectionHead("App icon")
             } footer: {
-                Text(
-                    "A stack of Unigrid brochures over the park you pick, with that "
-                        + "park's own brochure on top."
-                )
-                .font(UnigridStyle.caption)
+                #if os(iOS)
+                    FormNote(
+                        "A stack of Unigrid brochures over the park you pick, with that "
+                            + "park's own brochure on top."
+                    )
+                #endif
             }
 
             Section {
@@ -80,12 +88,13 @@ public struct SettingsScreen: View {
             } header: {
                 SectionHead("Arrivals")
             } footer: {
-                Text(
-                    "With location set to Always, Unigrids watches the outlines of the parks "
-                        + "nearest you and asks whether to log a visit when you arrive. It "
-                        + "happens on this device; your location is never stored or sent."
-                )
-                .font(UnigridStyle.caption)
+                #if os(iOS)
+                    FormNote(
+                        "With location set to Always, Unigrids watches the outlines of the parks "
+                            + "nearest you and asks whether to log a visit when you arrive. It "
+                            + "happens on this device; your location is never stored or sent."
+                    )
+                #endif
             }
 
             YourDataSection()
@@ -122,12 +131,11 @@ public struct SettingsScreen: View {
             } header: {
                 SectionHead("Reference data")
             } footer: {
-                Text(
+                FormNote(
                     "Everything about the places — names, outlines, guides, trails, photos — "
                         + "comes inside the app from public sources and is refreshed with each "
                         + "release. Only alerts, forecasts and weather are fetched live."
                 )
-                .font(UnigridStyle.caption)
             }
 
             Section {
@@ -176,6 +184,7 @@ public struct SettingsScreen: View {
                 } label: {
                     Label("Settings", symbol: .settings)
                 }
+                .help("Settings")
             }
         }
     }
@@ -402,11 +411,10 @@ struct BrochureStorageSection: View {
                     )
                 )
             } footer: {
-                Text(
+                FormNote(
                     "Fetched from nps.gov when first opened. Parks on an upcoming trip are kept "
                         + "for offline automatically, on Wi-Fi."
                 )
-                .font(UnigridStyle.caption)
             }
         }
     }

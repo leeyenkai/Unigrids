@@ -135,6 +135,7 @@ public struct TripsScreen: View {
                         } label: {
                             Label("Import from Photos", symbol: .importPhotos)
                         }
+                        .help("Import from Photos")
                     }
                 }
                 .unigridsSheet(isPresented: $importingPhotos) {

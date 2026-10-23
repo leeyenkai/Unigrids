@@ -98,12 +98,14 @@ public struct ParkGuideScreen: View {
                 Button { openWindow(value: place.id) } label: {
                     Label("Open in New Window", symbol: .newWindow)
                 }
+                .help("Open in New Window")
             }
         #endif
         ToolbarItem {
             Button { showExplorer = true } label: {
                 Label("Explore in 3D", symbol: .explore3D)
             }
+            .help("Explore in 3D")
         }
         #if os(iOS)
             // An iPhone's bar holds 3D and one menu; the page's own actions panel has the
@@ -124,26 +126,32 @@ public struct ParkGuideScreen: View {
         #endif
     }
 
+    /// Each with its name as a tooltip: the Mac's toolbar shows them as icons alone.
     @ViewBuilder
     private var actions: some View {
         Button { showCheckIn = true } label: {
             Label("Check in", symbol: .checkIn)
         }
+        .help("Check in")
         Button { showStamp = true } label: {
             Label { Text("Stamp") } icon: { StampIcon() }
         }
+        .help("Stamp")
         Button { showAddToTrip = true } label: {
             Label("Add to trip", symbol: .addToTrip)
         }
+        .help("Add to trip")
         if store.documents(for: place.id)?.documents.isEmpty == false {
             Button { showBrochure = true } label: {
                 Label("Official brochure", symbol: .brochure)
             }
+            .help("Official brochure")
         }
         if hasPack {
             Button { showParkMap = true } label: {
                 Label("Park map", symbol: .parkMap)
             }
+            .help("Park map")
         }
     }
 

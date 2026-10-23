@@ -29,6 +29,10 @@ makes the change. A release moves that block under a version heading with its da
   trip's stops and distance get wider columns instead of breaking words; the photo
   credit wraps instead of being cut off; a sheet's close button grows with the text; and
   the Parks count line wraps.
+- On the Mac: a trip's window carries the trip's name rather than "Unigrids"; every
+  toolbar button that shows only an icon has a tooltip, on iPad with a pointer too;
+  Settings notes wrap instead of stopping after one line, and the notes about the
+  iPhone's app icons and arrivals no longer show; the palette swatch fits its menu.
 
 ## [0.9.0] — 2026-10-23
 

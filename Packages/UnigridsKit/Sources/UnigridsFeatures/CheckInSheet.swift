@@ -295,6 +295,8 @@ struct FormNote: View {
         Text(text)
             .font(UnigridStyle.caption)
             .foregroundStyle(style.inkSecondary)
+            // A Mac form gives its footer one line unless told otherwise.
+            .fixedSize(horizontal: false, vertical: true)
     }
 }
 

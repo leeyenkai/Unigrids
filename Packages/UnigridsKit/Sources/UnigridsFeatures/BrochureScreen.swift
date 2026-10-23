@@ -124,6 +124,7 @@ struct BrochureScreen: View {
                     Label("Save for offline", symbol: .saveOffline)
                 }
                 .toggleStyle(.button)
+                .help("Save for offline")
             }
         }
         if let file {
@@ -131,6 +132,7 @@ struct BrochureScreen: View {
                 ShareLink(item: file) {
                     Label("Share", symbol: .share)
                 }
+                .help("Share")
             }
         }
         if let url = selected?.url {
@@ -138,6 +140,7 @@ struct BrochureScreen: View {
                 Link(destination: url) {
                     Label("Website", symbol: .website)
                 }
+                .help("Website")
             }
         }
     }

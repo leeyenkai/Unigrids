@@ -206,6 +206,7 @@ struct ParkExplorer: View {
             } label: {
                 Label("Layers", symbol: .layers)
             }
+            .help("Layers")
         }
         ToolbarItem {
             Button {
@@ -215,12 +216,14 @@ struct ParkExplorer: View {
             } label: {
                 Label("Whole place", symbol: .resetView)
             }
+            .help("Whole place")
         }
         ToolbarItem {
             Button { showList = true } label: {
                 Label("List", symbol: .numberedList)
             }
             .disabled(sights.isEmpty && trails.isEmpty && facilities.isEmpty)
+            .help("List")
         }
         if !sights.isEmpty {
             ToolbarItem {
@@ -236,6 +239,7 @@ struct ParkExplorer: View {
                         systemImage: tour == nil ? "play.fill" : "stop.fill"
                     )
                 }
+                .help(tour == nil ? "Fly-through" : "End fly-through")
             }
         }
     }

@@ -255,9 +255,11 @@ public struct MapScreen: View {
                 Label("Key and filters", symbol: filter.isNarrowed ? .filtered : .filter)
             }
             .badge(filter.narrowedCount)
+            .help("Key and filters")
         }
         ToolbarItem {
             MapLayersMenu(layers: layersBinding, basemap: $basemap)
+                .help("Layers")
         }
         ToolbarItem {
             Button {
@@ -266,6 +268,7 @@ public struct MapScreen: View {
                 Label("Where am I", symbol: showsUserLocation ? .located : .locate)
             }
             .disabled(locating)
+            .help("Where am I")
         }
     }
 

@@ -221,6 +221,7 @@ struct PassportRegionPage: View {
                     ShareLink(item: pageImage) {
                         Label("Share this page", symbol: .share)
                     }
+                    .help("Share this page")
                 }
             }
         }

@@ -72,6 +72,7 @@ struct ParkMapScreen: View {
                         Label("Where am I", symbol: showsUserLocation ? .located : .locate)
                     }
                     .disabled(locating)
+                    .help("Where am I")
                 }
             }
             .alert(

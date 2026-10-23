@@ -86,12 +86,14 @@ struct PlaceLeafletScreen: View {
                     Button { openWindow(value: place.id) } label: {
                         Label("Open in New Window", symbol: .newWindow)
                     }
+                    .help("Open in New Window")
                 }
             #endif
             ToolbarItem {
                 Button { showExplorer = true } label: {
                     Label("Explore in 3D", symbol: .explore3D)
                 }
+                .help("Explore in 3D")
             }
         }
     }

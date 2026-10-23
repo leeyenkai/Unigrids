@@ -94,8 +94,12 @@ struct TripDetailScreen: View {
         }
         .listStyle(.plain)
         .paperPage()
+        // On the Mac the window takes the trip's name: the band says it on the page, and the
+        // title bar would otherwise say only "Unigrids".
         #if os(iOS)
             .environment(\.editMode, .constant(reordering ? .active : .inactive))
+        #else
+            .navigationTitle(trip.name.isEmpty ? "Trip" : trip.name)
         #endif
             .toolbarTitleDisplayMode(.inline)
             .toolbar { toolbar }
@@ -135,6 +139,7 @@ struct TripDetailScreen: View {
             } label: {
                 Label("Edit trip", symbol: .edit)
             }
+            .help("Edit trip")
         }
         if !stops.isEmpty {
             ToolbarItem {
@@ -155,6 +160,7 @@ struct TripDetailScreen: View {
                 } label: {
                     Label("Share", symbol: .share)
                 }
+                .help("Share")
             }
         }
     }
