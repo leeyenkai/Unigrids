@@ -34,7 +34,17 @@ anything needing a development team wait.
       passport.
 - [x] Every bundled data rule held by tests: credited summaries, real time zones, unique
       identifiers, visits only where the NPS counted them, every old identifier resolving.
-- [ ] **iPad**, the Mac app screen by screen, and the largest accessibility type sizes.
+- [x] **iPad** (iPad Pro 13", iOS 27): the map and a place card, a guide, a trip, Parks, a
+      passport region and Stats. Fixed: the map stalled while a card slid in, and a card
+      listed every alert in full.
+- [x] **The Mac app**, screen by screen: the map, every tab, a trip, a guide, the 3D
+      explorer, the Park map and Settings. Fixed: a trip window titled "Unigrids", toolbar
+      icons with no tooltip, Settings notes cut to one line or describing iPhone features,
+      and a palette swatch taller than its menu.
+- [x] **The largest accessibility size** (AX5, iPhone 18 Pro): Trips, a trip, a place
+      card, a guide, Parks, Stats, a passport region and the map key. Fixed: charts that
+      pushed the guide off both edges, figure labels broken mid-word, oversized map
+      markers, a cut-off photo credit and an outgrown close button.
 - [ ] **On a signed device**: arrival detection, reminders and alert notifications as
       delivered, background app refresh, and photo import against a real library.
 - [ ] **iCloud sync and WeatherKit**, waiting on a development team.
