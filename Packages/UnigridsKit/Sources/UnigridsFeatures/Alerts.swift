@@ -289,6 +289,38 @@ struct AlertList: View {
     }
 }
 
+/// A card's short version: the dangers and closures by title — what the pin's badge stands
+/// for — and how many cautions and notices the full list holds.
+struct CardAlerts: View {
+    @Environment(\.unigrid) private var style
+    @Environment(AlertsCenter.self) private var center: AlertsCenter?
+    let parkCode: String
+
+    var body: some View {
+        let all = center?.alerts(for: parkCode) ?? []
+        let urgent = all.filter { $0.kind <= .closure }
+        VStack(alignment: .leading, spacing: 8) {
+            SectionHead("Alerts", detail: "\(urgent.count)")
+            ForEach(urgent.prefix(3)) { alert in
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                    Kicker(alert.kind.name)
+                    Text(alert.title)
+                        .font(UnigridStyle.rowDetail)
+                        .foregroundStyle(style.ink)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .accessibilityElement(children: .combine)
+            }
+            let more = all.count - min(urgent.count, 3)
+            if more > 0 {
+                Text("\(more) more on its page.")
+                    .font(UnigridStyle.caption)
+                    .foregroundStyle(style.inkSecondary)
+            }
+        }
+    }
+}
+
 struct AlertRow: View {
     @Environment(\.unigrid) private var style
     let alert: ParkAlert

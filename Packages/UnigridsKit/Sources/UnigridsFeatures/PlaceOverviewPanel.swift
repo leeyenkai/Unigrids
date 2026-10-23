@@ -24,8 +24,11 @@ struct PlaceOverviewPanel: View {
     @State private var showAddToTrip = false
     @State private var showExplorer = false
 
-    private var alertCount: Int {
-        place.npsParkCode.map { alerts?.alerts(for: $0).count ?? 0 } ?? 0
+    /// Dangers and closures: what the pin's badge stands for.
+    private var urgentCount: Int {
+        place.npsParkCode.map { code in
+            alerts?.alerts(for: code).count { $0.kind <= .closure } ?? 0
+        } ?? 0
     }
 
     private var placeVisits: [Visit] {
@@ -46,11 +49,8 @@ struct PlaceOverviewPanel: View {
                     VisitStatusLine(visits: placeVisits)
                     // The map badges a park with a posted closure or danger; this is where
                     // the badge leads.
-                    if let code = place.npsParkCode, alertCount > 0 {
-                        VStack(alignment: .leading, spacing: 8) {
-                            SectionHead("Alerts", detail: "\(alertCount)")
-                            AlertList(parkCode: code)
-                        }
+                    if let code = place.npsParkCode, urgentCount > 0 {
+                        CardAlerts(parkCode: code)
                     }
                     if place.summary != nil {
                         OverviewSummary(place: place)

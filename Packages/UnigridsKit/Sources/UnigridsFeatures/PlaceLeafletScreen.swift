@@ -120,6 +120,9 @@ struct PlaceLeafletScreen: View {
                             ManagerRow(place: place)
                         }
                     }
+                    if let code = place.npsParkCode, NPSAlerts.isConfigured {
+                        AlertsPanel(parkCode: code)
+                    }
                     if let info = place.visitorInfo {
                         VisitorInfoPanels(info: info)
                     }

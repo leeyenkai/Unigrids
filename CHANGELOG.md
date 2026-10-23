@@ -12,6 +12,13 @@ makes the change. A release moves that block under a version heading with its da
 
 ## [Unreleased]
 
+### Changed
+
+- A place card's alerts are now short: the park's dangers and closures by title, three
+  at most, and a count of the rest, which are on its page. National monuments, historic
+  sites and the other NPS units now show their alerts on their pages too, as the parks
+  with a guide already did.
+
 ### Fixed
 
 - The map no longer stalls while a place card slides in on iPad. Its five thousand pins
