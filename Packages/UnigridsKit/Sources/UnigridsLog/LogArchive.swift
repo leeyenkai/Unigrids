@@ -281,8 +281,22 @@ extension LogArchive {
         return try encoder.encode(self)
     }
 
-    /// A backup, of this version or the first, with or without milliseconds.
+    /// A backup made by a newer Unigrids, whose fields this version would drop without a
+    /// word.
+    public struct NewerVersionError: Error, Equatable {
+        public let version: Int
+    }
+
+    /// A backup, of this version or an earlier one, with or without milliseconds. One
+    /// written by a newer version is refused rather than read in part.
     public static func decode(_ data: Data) throws -> LogArchive {
+        struct Header: Decodable {
+            var version: Int?
+        }
+        if let version = try? JSONDecoder().decode(Header.self, from: data).version,
+           version > currentVersion {
+            throw NewerVersionError(version: version)
+        }
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .custom { decoder in
             let text = try decoder.singleValueContainer().decode(String.self)

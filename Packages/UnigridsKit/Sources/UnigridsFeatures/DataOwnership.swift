@@ -127,6 +127,10 @@ struct YourDataSection: View {
                 }
             }
             archive = try LogArchive.decode(Data(contentsOf: url))
+        } catch is LogArchive.NewerVersionError {
+            message = "That backup was made by a newer version of Unigrids. "
+                + "Update the app, then add it again."
+            return
         } catch {
             message = "That file could not be read as a Unigrids backup."
             return

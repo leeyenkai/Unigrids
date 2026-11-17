@@ -382,4 +382,15 @@ extension LogRulesTests {
         let moved = try #require(try store.visits().first { $0.id == visit.id })
         #expect(moved.weather == nil)
     }
+
+    @Test("a backup from a newer version is refused, not read in part")
+    func newerBackup() throws {
+        let newer = Data(#"""
+        {"version": 99, "exportedAt": "2026-01-02T03:04:05.000Z",
+         "trips": [], "visits": [], "stamps": []}
+        """#.utf8)
+        #expect(throws: LogArchive.NewerVersionError(version: 99)) {
+            try LogArchive.decode(newer)
+        }
+    }
 }

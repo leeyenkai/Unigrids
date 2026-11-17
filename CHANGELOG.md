@@ -94,6 +94,8 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- A backup made by a newer version of Unigrids is refused with a note to update the app,
+  rather than read in part with its newer fields dropped.
 - Forecasts and place photos give up after 20 seconds rather than a minute, and a trip's
   forecasts load together, so a trip with many stops on a poor connection no longer waits
   a minute per stop. A guide whose forecast could not load says it needs a connection, and
