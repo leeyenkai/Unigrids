@@ -29,7 +29,7 @@ enum ProtectedData {
         #if os(iOS)
             // Listening before looking: an unlock between the look and the listen would
             // otherwise be missed, and the wait would last until the next one.
-            var unlocks = NotificationCenter.default.notifications(
+            let unlocks = NotificationCenter.default.notifications(
                 named: UIApplication.protectedDataDidBecomeAvailableNotification
             ).makeAsyncIterator()
             guard !isAvailable else { return }
