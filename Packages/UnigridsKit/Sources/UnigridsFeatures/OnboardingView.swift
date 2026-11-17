@@ -131,9 +131,9 @@ struct OnboardingView: View {
                 number: number,
                 title: "A passport that fills itself",
                 text: "Check in, stamp the passport, log your hikes, import visits from your "
-                    + "photos, and watch the squares fill. Your log is yours: it lives on your "
-                    + "devices, syncs through your own iCloud where that is set up, and exports "
-                    + "to a file from Settings. There are no accounts, no analytics and no servers."
+                    + "photos, and watch the squares fill. Your log is yours: it lives on this "
+                    + "device, and a backup of it exports to a file from Settings. There are "
+                    + "no accounts, no analytics and no servers."
             ) {
                 NonAffiliationNotice()
             }

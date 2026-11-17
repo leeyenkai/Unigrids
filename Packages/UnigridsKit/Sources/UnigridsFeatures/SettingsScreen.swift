@@ -119,7 +119,7 @@ public struct SettingsScreen: View {
                 LabeledContent(
                     store.nationalParks.contains { $0.country != .unitedStates }
                         ? "Live park alerts, US" : "Live park alerts",
-                    value: NPSAlerts.isConfigured ? "On" : "Not in this build"
+                    value: NPSAlerts.isConfigured ? "On" : "Off, no NPS key"
                 )
                 if store.nationalParks.contains(where: { $0.country != .unitedStates }) {
                     // JMA's and Varsom's warnings need no key, so they are on in every build.

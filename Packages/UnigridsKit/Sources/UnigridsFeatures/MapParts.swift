@@ -81,6 +81,10 @@ struct MapSearchSuggestions: View {
     let query: String
     let onSelect: (MapSearchResult) -> Void
 
+    private var isWorld: Bool {
+        store.nationalParks.contains { $0.country != .unitedStates }
+    }
+
     var body: some View {
         let places = store.search(query, limit: 8)
         let sights = store.searchPointsOfInterest(query, limit: 6)
@@ -88,7 +92,7 @@ struct MapSearchSuggestions: View {
         if searched, places.isEmpty, sights.isEmpty {
             Text(
                 "Nothing matches \u{201C}\(query)\u{201D}. Try a park, forest or refuge "
-                    + "by name, or a state."
+                    + "by name, or " + (isWorld ? "a state, prefecture or county." : "a state.")
             )
             .font(UnigridStyle.rowDetail)
             .foregroundStyle(style.inkSecondary)

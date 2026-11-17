@@ -89,6 +89,9 @@ enum ReminderScheduler {
             .removePendingNotificationRequests(withIdentifiers: ids.map { prefix + $0.uuidString })
     }
 
+    /// How many reminders may wait at once.
+    static let limit = 50
+
     /// Make the pending notifications match the log, without asking for permission.
     static func reconcile(_ reminders: [Reminder]) async {
         let center = UNUserNotificationCenter.current()
@@ -97,7 +100,13 @@ enum ReminderScheduler {
                 .map(\.identifier)
                 .filter { $0.hasPrefix(prefix) }
         )
-        let wanted = reminders.filter { $0.date > Date() }
+        // iOS keeps 64 pending notifications per app and drops the rest without a word;
+        // the soonest reminders take 50 of them, leaving room for arrivals and alerts.
+        // Later ones are scheduled as these fire and the app reconciles again.
+        let wanted = reminders
+            .filter { $0.date > Date() }
+            .sorted { $0.date < $1.date }
+            .prefix(limit)
         let wantedIDs = Set(wanted.map { prefix + $0.id.uuidString })
         let stale = pending.subtracting(wantedIDs)
         if !stale.isEmpty {

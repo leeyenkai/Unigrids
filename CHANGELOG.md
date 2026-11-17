@@ -94,6 +94,11 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- Trip reminders schedule the soonest 50 at a time, so iOS's limit of 64 waiting
+  notifications no longer drops later reminders, arrivals or alerts without a word.
+  Onboarding no longer says the log syncs through iCloud, which this build does not do;
+  Settings says US alerts are off for want of an NPS key rather than "Not in this build";
+  and the map's search hint names prefectures and counties once Japan and Norway are in.
 - A backup made by a newer version of Unigrids is refused with a note to update the app,
   rather than read in part with its newer fields dropped.
 - Forecasts and place photos give up after 20 seconds rather than a minute, and a trip's
