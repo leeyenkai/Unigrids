@@ -8,7 +8,9 @@ place, because a summary of the wrong place is a false fact delivered with confi
 
 1. **Title.** The article reached by one of the place's own names — "<name>
    <designation>", then with the state appended the way Wikipedia disambiguates — and,
-   after redirects, still titled with the place's name. Disambiguation pages never count.
+   after redirects, still titled with the place's name, or opening by saying it was
+   formerly called by the place's full name, as a renamed or merged park's article does.
+   Disambiguation pages never count.
 2. **Location.** The article's coordinates fall inside the place's outline, or within
    ``NEAR_KM`` of it, or of the point or route a place without an outline has.
 
@@ -85,6 +87,16 @@ _ROAD_WORDS = re.compile(
     r"\b(byway|road|highway|parkway|route|trail|drive|loop|way|pass|corridor)\b", re.I
 )
 
+# Kinds an article is titled by name alone, never "<name> <designation>". Such a name is
+# often a village's, an island's or an organisation's as well, so an article saying it once
+# bore that name is not evidence it is about the place: "All Hands Ecology (formerly
+# Audubon Canyon Ranch)" is a charity, "Bald Head Island, historically known as Smith
+# Island" a village.
+_BARE_NAME_KINDS = frozenset({"naturalLandmark", "scenicByway"})
+
+# How an article's opening says what its subject used to be called.
+_FORMERLY = r"(?:formerly|previously|originally)(?:-known-as|-called|-named)?|renamed-from"
+
 
 def wants(place: dict[str, Any]) -> bool:
     """Whether a place is one this module may describe."""
@@ -96,7 +108,7 @@ def candidate_titles(place: dict[str, Any]) -> list[str]:
     name, designation, kind = place["name"], place.get("designation") or "", place["kind"]
     state = STATE_NAMES.get((place.get("states") or [""])[0])
     titles: list[str] = []
-    if kind in ("naturalLandmark", "scenicByway"):
+    if kind in _BARE_NAME_KINDS:
         titles.append(name)
         if kind == "scenicByway" and not _ROAD_WORDS.search(name):
             titles.append(f"{name} Scenic Byway")
@@ -318,7 +330,8 @@ def _match(
         if not page.get("extract"):
             reasons.append(f"{title}: no lead text")
             continue
-        if not _title_names_place(page.get("title") or "", place["name"]):
+        named = _title_names_place(page.get("title") or "", place["name"])
+        if not named and not _renamed_from(page["extract"], place):
             reasons.append(f"{title}: resolved to {page.get('title')!r}")
             continue
         latitude, longitude = page.get("latitude"), page.get("longitude")
@@ -336,9 +349,42 @@ def _match(
 def _title_names_place(title: str, name: str) -> bool:
     """Whether a resolved article title still names the place, parenthetical aside: the
     name's words, whole and in order, so "Hart" is not found in "Hartwell" — a renamed
-    park ("Lamar Alexander Rocky Fork State Park") still counts."""
-    bare = re.sub(r"\s*\([^)]*\)\s*$", "", title)
-    return f"-{ids.slug(name)}-" in f"-{ids.slug(bare)}-"
+    park ("Lamar Alexander Rocky Fork State Park") still counts. The last word may differ
+    in number alone: "Wyandotte Caves" names "Wyandotte Cave"."""
+    words = ids.slug(re.sub(r"\s*\([^)]*\)\s*$", "", title)).split("-")
+    *first, last = ids.slug(name).split("-")
+    return any(
+        words[start : start + len(first)] == first and _same_noun(words[start + len(first)], last)
+        for start in range(len(words) - len(first))
+    )
+
+
+def _same_noun(word: str, other: str) -> bool:
+    """Whether two words are one noun, singular or plural: cave and caves, pass and
+    passes, prairie and prairies, battery and batteries."""
+
+    def plurals(noun: str) -> set[str]:
+        return {noun + "s", noun + "es"} | ({noun[:-1] + "ies"} if noun.endswith("y") else set())
+
+    return word == other or other in plurals(word) or word in plurals(other)
+
+
+def _renamed_from(extract: str, place: dict[str, Any]) -> bool:
+    """Whether an article opens by saying its subject was formerly the place, under the
+    place's full name: "Hartwell Lakeside Park, formerly known as Hart State Park, is…", or
+    one of several merged under a new title, "Colorado River State Historic Park, formerly
+    Yuma Crossing State Historic Park and Yuma Quartermaster Depot State Historic Park".
+
+    Only the words before the first verb count, so the old name belongs to the article's
+    own subject rather than to a neighbour it mentions ("…is a lake beside Hart State
+    Park, formerly…"). A landmark or byway, titled by its bare name, never qualifies."""
+    if place["kind"] in _BARE_NAME_KINDS:
+        return False
+    full = ids.slug(f"{place['name']} {place.get('designation') or ''}")
+    subject = re.split(r"\s(?:is|was|are|were)\s", re.sub(r"\s+", " ", extract), maxsplit=1)[0]
+    # A merger lists the old names: allow other words before the place's, ending "and"/"or".
+    pattern = rf"-(?:{_FORMERLY})(?:-the)?(?:-[a-z0-9-]+?-(?:and|or)(?:-the)?)?-{re.escape(full)}-"
+    return bool(full) and re.search(pattern, f"-{ids.slug(subject)}-") is not None
 
 
 def _distance_to_place(
