@@ -518,15 +518,41 @@ SETTLEMENT_LEAD = re.compile(
 def describes_settlement(extract: str) -> bool:
     """Whether an article's first sentence says its subject is a town, not a park."""
     text = re.sub(r"\s+", " ", extract).strip()
-    first = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9“\"])", text, maxsplit=1)[0]
+    first = sentences(text)[0] if text else ""
     return bool(SETTLEMENT_LEAD.search(first))
 
 
 def says_closed(extract: str) -> bool:
     """Whether an article's first sentence says the state park no longer is one."""
     text = re.sub(r"\s+", " ", extract).strip()
-    first = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9“\"])", text, maxsplit=1)[0]
+    first = sentences(text)[0] if text else ""
     return bool(CLOSED_LEAD.search(first))
+
+
+# Words a full stop follows without ending the sentence: "St. George Island", "Dr. Julian".
+_ABBREVIATIONS = frozenset({
+    "st", "dr", "mt", "ft", "jr", "sr", "mr", "mrs", "ms", "no", "vs", "co", "inc", "approx",
+    "u.s", "e.g", "i.e", "a.k.a",
+})
+
+
+def sentences(text: str) -> list[str]:
+    """Text cut into sentences, never after an initial or a short abbreviation: "R. B.
+    Winter State Park (also known as Raymond B. Winter State Park) is…" is one sentence,
+    not three."""
+    parts: list[str] = []
+    start = 0
+    for found in re.finditer(r"[.!?]\s+(?=[A-Z0-9“\"])", text):
+        if found.group(0).startswith("."):
+            word = re.search(r"[\w.]+$", text[start : found.start()])
+            token = word.group(0).lower() if word else ""
+            if (len(token) == 1 and token.isalpha()) or token in _ABBREVIATIONS:
+                continue
+        parts.append(text[start : found.start() + 1].strip())
+        start = found.end()
+    if tail := text[start:].strip():
+        parts.append(tail)
+    return parts
 
 
 def lead(extract: str) -> str:
@@ -534,9 +560,8 @@ def lead(extract: str) -> str:
     text = re.sub(r"\s+", " ", extract).strip()
     # Pronunciation and native-name parentheticals add nothing on a card.
     text = re.sub(r"\s*\((?:[^()]*?(?:/|listen|pronounced|IPA)[^()]*?)\)", "", text)
-    sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9“\"])", text)
     chosen: list[str] = []
-    for sentence in sentences:
+    for sentence in sentences(text):
         if chosen and (
             len(chosen) == MAX_SENTENCES or len(" ".join([*chosen, sentence])) > MAX_CHARACTERS
         ):

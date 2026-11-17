@@ -280,3 +280,22 @@ def test_an_article_about_the_town_a_park_is_named_for_is_rejected():
                                          extract=towns[0])}
     decision = wikipedia_match._match(boswell, pages, _square(-104.82, 38.73), None)
     assert isinstance(decision, str) and "settlement" in decision
+
+
+def test_a_lead_is_not_cut_at_an_initial_or_an_abbreviation():
+    extract = (
+        "R. B. Winter State Park (also known as Raymond B. Winter State Park) is a "
+        "Pennsylvania state park. It is near Mt. Pleasant and St. Marys in the U.S. "
+        "Commonwealth. A third sentence. A fourth."
+    )
+    assert wikipedia_match.sentences(extract) == [
+        "R. B. Winter State Park (also known as Raymond B. Winter State Park) is a "
+        "Pennsylvania state park.",
+        "It is near Mt. Pleasant and St. Marys in the U.S. Commonwealth.",
+        "A third sentence.",
+        "A fourth.",
+    ]
+    assert wikipedia_match.lead(extract).endswith("A third sentence.")
+    assert wikipedia_match.sentences("Area 1 (WCA-1). Next one.") == [
+        "Area 1 (WCA-1).", "Next one."
+    ]
