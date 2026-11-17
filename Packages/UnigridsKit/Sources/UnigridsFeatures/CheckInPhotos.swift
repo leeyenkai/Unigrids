@@ -15,26 +15,28 @@ struct CheckInPhotosSection: View {
     static let limit = 50
 
     var body: some View {
+        // Worked out here: the picker's label is drawn off the main actor.
+        let title = identifiers.isEmpty ? "Add photos" : "Add more photos"
         Section {
             if !identifiers.isEmpty {
                 ScrollView(.horizontal) {
                     HStack(spacing: 6) {
                         ForEach(identifiers, id: \.self) { id in
-                            PhotoThumbnail(identifier: id)
-                                .frame(width: 64, height: 64)
-                                .clipped()
-                                .overlay(alignment: .topTrailing) {
-                                    Button {
-                                        identifiers.removeAll { $0 == id }
-                                    } label: {
-                                        Image(systemName: "xmark.circle.fill")
-                                            .symbolRenderingMode(.palette)
-                                            .foregroundStyle(.white, .black.opacity(0.6))
-                                    }
-                                    .buttonStyle(.plain)
-                                    .padding(3)
-                                    .accessibilityLabel("Remove this photo")
+                            ZStack(alignment: .topTrailing) {
+                                PhotoThumbnail(identifier: id)
+                                    .frame(width: 64, height: 64)
+                                    .clipped()
+                                Button {
+                                    identifiers.removeAll { $0 == id }
+                                } label: {
+                                    Image(systemName: "xmark.circle.fill")
+                                        .symbolRenderingMode(.palette)
+                                        .foregroundStyle(.white, .black.opacity(0.6))
                                 }
+                                .buttonStyle(.plain)
+                                .padding(3)
+                                .accessibilityLabel("Remove this photo")
+                            }
                         }
                     }
                 }
@@ -46,11 +48,8 @@ struct CheckInPhotosSection: View {
                 matching: .images,
                 photoLibrary: .shared()
             ) {
-                Label(
-                    identifiers.isEmpty ? "Add photos" : "Add more photos",
-                    systemImage: "photo.on.rectangle"
-                )
-                .font(UnigridStyle.rowTitle)
+                Label(title, systemImage: "photo.on.rectangle")
+                    .font(UnigridStyle.rowTitle)
             }
             .onChange(of: picked) {
                 let new = picked.compactMap(\.itemIdentifier).filter { !identifiers.contains($0) }
