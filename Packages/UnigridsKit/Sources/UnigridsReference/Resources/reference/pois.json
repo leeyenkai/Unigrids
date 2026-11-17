@@ -26010,6 +26010,78 @@
   "summary": "A wind museum at Cape Erimo with a glass-walled room for watching the seals, and exhibits on kelp and salmon fishing."
  },
  {
+  "id": "poi-jp-hidakasanmyaku-erimo-tokachi-petegari-hut",
+  "placeID": "jp-np-hidakasanmyaku-erimo-tokachi",
+  "kind": "hut",
+  "name": "Petegari hut",
+  "location": {
+   "latitude": 42.47768,
+   "longitude": 142.81499
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-hidakasanmyaku-erimo-tokachi-porishiri-sanso",
+  "placeID": "jp-np-hidakasanmyaku-erimo-tokachi",
+  "kind": "hut",
+  "name": "幌尻山荘",
+  "location": {
+   "latitude": 42.73874,
+   "longitude": 142.66407
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-hidakasanmyaku-erimo-tokachi-nikappu-poroshiri-sanso",
+  "placeID": "jp-np-hidakasanmyaku-erimo-tokachi",
+  "kind": "hut",
+  "name": "新冠ポロシリ山荘",
+  "location": {
+   "latitude": 42.69019,
+   "longitude": 142.6851
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-hidakasanmyaku-erimo-tokachi-osm-way-628723794",
+  "placeID": "jp-np-hidakasanmyaku-erimo-tokachi",
+  "kind": "hut",
+  "name": "札内川ヒュッテ",
+  "location": {
+   "latitude": 42.59412,
+   "longitude": 142.87941
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-hidakasanmyaku-erimo-tokachi-rakko-sanso",
+  "placeID": "jp-np-hidakasanmyaku-erimo-tokachi",
+  "kind": "hut",
+  "name": "楽古山荘",
+  "location": {
+   "latitude": 42.25762,
+   "longitude": 143.07452
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-hidakasanmyaku-erimo-tokachi-kamui-sanso",
+  "placeID": "jp-np-hidakasanmyaku-erimo-tokachi",
+  "kind": "hut",
+  "name": "神威山荘",
+  "location": {
+   "latitude": 42.43697,
+   "longitude": 142.85646
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
   "id": "poi-jp-shikotsu-toya-lake-shikotsu",
   "placeID": "jp-np-shikotsu-toya",
   "kind": "sight",
@@ -26151,6 +26223,54 @@
   "rank": 0,
   "hasStamp": false,
   "summary": "On Toya's north shore, lending nets, binoculars and winter snowshoes free for the lakeside nature trail."
+ },
+ {
+  "id": "poi-jp-shikotsu-toya-hiyamizugoya",
+  "placeID": "jp-np-shikotsu-toya",
+  "kind": "hut",
+  "name": "Hiyamizugoya",
+  "location": {
+   "latitude": 42.91271,
+   "longitude": 141.1861
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-shikotsu-toya-muine-siri-hut",
+  "placeID": "jp-np-shikotsu-toya",
+  "kind": "hut",
+  "name": "Muine-siri hut",
+  "location": {
+   "latitude": 42.94046,
+   "longitude": 141.05834
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-shikotsu-toya-osm-way-1091159133",
+  "placeID": "jp-np-shikotsu-toya",
+  "kind": "hut",
+  "name": "宝来小屋",
+  "location": {
+   "latitude": 42.9396,
+   "longitude": 141.07801
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-shikotsu-toya-osm-way-937491942",
+  "placeID": "jp-np-shikotsu-toya",
+  "kind": "hut",
+  "name": "樽前山七合目ヒュッテ",
+  "location": {
+   "latitude": 42.69942,
+   "longitude": 141.39013
+  },
+  "rank": 0,
+  "hasStamp": false
  },
  {
   "id": "poi-jp-towada-hachimantai-lake-towada",
@@ -26699,6 +26819,222 @@
   "summary": "In the beech forest on Gassan's eastern side at Nishikawa, with trails for watching plants and birds."
  },
  {
+  "id": "poi-jp-bandai-asahi-eburisashi-hut",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Eburisashi Hut",
+  "location": {
+   "latitude": 37.94197,
+   "longitude": 139.60834
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-gassan-chojo-goya",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Gassan Chojo Goya",
+  "location": {
+   "latitude": 38.54743,
+   "longitude": 140.02696
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-honzan-hut",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Honzan Hut",
+  "location": {
+   "latitude": 37.85344,
+   "longitude": 139.71397
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-iegatayama-hut",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Iegatayama Hut",
+  "location": {
+   "latitude": 37.7471,
+   "longitude": 140.24373
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-kairagigoya",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Kairagigoya",
+  "location": {
+   "latitude": 37.87768,
+   "longitude": 139.64362
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-keo-azuma-hut",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Keo-Azuma Hut",
+  "location": {
+   "latitude": 37.74637,
+   "longitude": 140.25248
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-kiriawasegoya",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Kiriawasegoya",
+  "location": {
+   "latitude": 37.83519,
+   "longitude": 139.72738
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-kuroganegoya",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Kuroganegoya",
+  "location": {
+   "latitude": 37.6323,
+   "longitude": 140.29304
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-monnai-hut",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Monnai Hut",
+  "location": {
+   "latitude": 37.89431,
+   "longitude": 139.6294
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-nishi-azuma-emergency-hut",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Nishi-Azuma Emergency Hut",
+  "location": {
+   "latitude": 37.73909,
+   "longitude": 140.13702
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-onisigoya",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Onisigoya",
+  "location": {
+   "latitude": 37.84674,
+   "longitude": 139.68177
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-tamogi-hut",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Tamogi Hut",
+  "location": {
+   "latitude": 37.92102,
+   "longitude": 139.61869
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-tetsuzan-evacuation-hut",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Tetsuzan Evacuation Hut",
+  "location": {
+   "latitude": 37.63592,
+   "longitude": 140.28059
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-tokai-university-ryokuju-lodge",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Tokai University Ryokuju Lodge",
+  "location": {
+   "latitude": 37.75842,
+   "longitude": 140.25401
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-yachidai-emergency-hut",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "Yachidai Emergency Hut",
+  "location": {
+   "latitude": 37.72764,
+   "longitude": 140.20949
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-osm-way-771654700",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "タキタロウ山荘",
+  "location": {
+   "latitude": 38.36649,
+   "longitude": 139.82963
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-osm-way-1419954198",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "念仏ヶ原避難小屋",
+  "location": {
+   "latitude": 38.55386,
+   "longitude": 140.08996
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-bandai-asahi-osm-way-1549727324",
+  "placeID": "jp-np-bandai-asahi",
+  "kind": "hut",
+  "name": "清川行人小屋",
+  "location": {
+   "latitude": 38.5274,
+   "longitude": 140.0446
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
   "id": "poi-jp-nikko-tosho-gu-and-the-shrines-and-temples-of-nikko",
   "placeID": "jp-np-nikko",
   "kind": "sight",
@@ -26855,6 +27191,42 @@
   "summary": "Information for the walks along the Hōki River gorge and its waterfalls at Shiobara."
  },
  {
+  "id": "poi-jp-nikko-karasawa-shelter",
+  "placeID": "jp-np-nikko",
+  "kind": "hut",
+  "name": "Karasawa Shelter",
+  "location": {
+   "latitude": 36.80807,
+   "longitude": 139.53896
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-nikko-koshin-sanso",
+  "placeID": "jp-np-nikko",
+  "kind": "hut",
+  "name": "Koshin Sanso",
+  "location": {
+   "latitude": 36.66969,
+   "longitude": 139.36808
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-nikko-shizugoya-hinangoya",
+  "placeID": "jp-np-nikko",
+  "kind": "hut",
+  "name": "Shizugoya Hinangoya",
+  "location": {
+   "latitude": 36.78272,
+   "longitude": 139.50038
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
   "id": "poi-jp-oze-ozegahara",
   "placeID": "jp-np-oze",
   "kind": "sight",
@@ -26970,6 +27342,246 @@
   "rank": 0,
   "hasStamp": false,
   "summary": "At Yamanohana, the western edge of Ozegahara, about an hour's walk from Hatomachi Pass."
+ },
+ {
+  "id": "poi-jp-oze-chozo-hut",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Chozo Hut",
+  "location": {
+   "latitude": 36.9272,
+   "longitude": 139.31552
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-dai-ni-chozo-hut",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "DAI-NI Chozo Hut",
+  "location": {
+   "latitude": 36.94106,
+   "longitude": 139.25246
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-haranokoya",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Haranokoya",
+  "location": {
+   "latitude": 36.94066,
+   "longitude": 139.25271
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-hinoematagoya",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Hinoematagoya",
+  "location": {
+   "latitude": 36.94052,
+   "longitude": 139.25236
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-hiuchigoya",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Hiuchigoya",
+  "location": {
+   "latitude": 36.94027,
+   "longitude": 139.25281
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-lucy-ozehatomachi-by-hoshino-resorts",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "LUCY Ozehatomachi by Hoshino Resorts.",
+  "location": {
+   "latitude": 36.89051,
+   "longitude": 139.20075
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-motoyu-sanso-lodge",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Motoyu Sanso Lodge",
+  "location": {
+   "latitude": 36.95455,
+   "longitude": 139.25152
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-onsen-goya-lodge",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Onsen-goya Lodge",
+  "location": {
+   "latitude": 36.95415,
+   "longitude": 139.25142
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-oze-lodge",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Oze Lodge",
+  "location": {
+   "latitude": 36.91608,
+   "longitude": 139.19821
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-ozegoya",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Ozegoya",
+  "location": {
+   "latitude": 36.94093,
+   "longitude": 139.25213
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-ozenuma-mountain-villa",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Ozenuma Mountain Villa",
+  "location": {
+   "latitude": 36.91944,
+   "longitude": 139.30849
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-ryugugoya",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Ryugugoya",
+  "location": {
+   "latitude": 36.93263,
+   "longitude": 139.23859
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-shibustu-sanso-lodge",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Shibustu Sanso Lodge",
+  "location": {
+   "latitude": 36.91585,
+   "longitude": 139.1974
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-toden-goya-lodge",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Toden-Goya Lodge",
+  "location": {
+   "latitude": 36.94281,
+   "longitude": 139.23903
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-yamanohana-goya-lodge",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Yamanohana-goya Lodge",
+  "location": {
+   "latitude": 36.91597,
+   "longitude": 139.19774
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-yashirogoya",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Yashirogoya",
+  "location": {
+   "latitude": 36.94031,
+   "longitude": 139.25224
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-yashirogoya-annex",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "Yashirogoya Annex",
+  "location": {
+   "latitude": 36.94003,
+   "longitude": 139.25208
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-osm-way-428022226",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "大清水小屋",
+  "location": {
+   "latitude": 36.87589,
+   "longitude": 139.30755
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-osm-way-27423455",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "御池ロッジ",
+  "location": {
+   "latitude": 36.98383,
+   "longitude": 139.30532
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-oze-komanokoya",
+  "placeID": "jp-np-oze",
+  "kind": "hut",
+  "name": "駒の小屋",
+  "location": {
+   "latitude": 37.04315,
+   "longitude": 139.35244
+  },
+  "rank": 0,
+  "hasStamp": false
  },
  {
   "id": "poi-jp-chichibu-tama-kai-mount-kimpu",
@@ -27126,6 +27738,378 @@
   "rank": 0,
   "hasStamp": false,
   "summary": "Near Mitsumine Shrine: exhibits on the park's wildlife and on how its mountains and valleys formed."
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-dainichi-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Dainichi Hut",
+  "location": {
+   "latitude": 35.88123,
+   "longitude": 138.6017
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-fujimidaira-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Fujimidaira Hut",
+  "location": {
+   "latitude": 35.88255,
+   "longitude": 138.58752
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-hafu-san-emergency-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Hafu-san Emergency Hut",
+  "location": {
+   "latitude": 35.90215,
+   "longitude": 138.75024
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-jumonji-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Jumonji  Hut",
+  "location": {
+   "latitude": 35.94238,
+   "longitude": 138.73556
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-kaizanso",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Kaizanso",
+  "location": {
+   "latitude": 35.73628,
+   "longitude": 138.85324
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-kaizanso-2",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Kaizanso",
+  "location": {
+   "latitude": 35.73634,
+   "longitude": 138.85338
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-karisaka-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Karisaka Hut",
+  "location": {
+   "latitude": 35.89237,
+   "longitude": 138.79385
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-kasatori-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Kasatori Hut",
+  "location": {
+   "latitude": 35.85795,
+   "longitude": 138.81051
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-kinpousan-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Kinpousan Hut",
+  "location": {
+   "latitude": 35.87379,
+   "longitude": 138.62306
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-kobushi-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Kobushi Hut",
+  "location": {
+   "latitude": 35.90721,
+   "longitude": 138.73078
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-kumotori-emergency-lodge",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Kumotori emergency lodge",
+  "location": {
+   "latitude": 35.8547,
+   "longitude": 138.94419
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-kumotori-sanso-lodge",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Kumotori-Sanso Lodge",
+  "location": {
+   "latitude": 35.86096,
+   "longitude": 138.94361
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-nanatsuishi-koya-lodge",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Nanatsuishi-Koya Lodge",
+  "location": {
+   "latitude": 35.82759,
+   "longitude": 138.96565
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-okutama-koya-lodge-closed",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Okutama-Koya Lodge (Closed)",
+  "location": {
+   "latitude": 35.84181,
+   "longitude": 138.94819
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-sanjo-no-yu-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Sanjo no yu Hut",
+  "location": {
+   "latitude": 35.83542,
+   "longitude": 138.91827
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-shinonome-sanso",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Shinonome-sanso",
+  "location": {
+   "latitude": 35.78076,
+   "longitude": 139.16622
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-shiraiwa-hut-ruined",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Shiraiwa Hut (Ruined)",
+  "location": {
+   "latitude": 35.88281,
+   "longitude": 138.9511
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-shougen-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Shougen Hut",
+  "location": {
+   "latitude": 35.85687,
+   "longitude": 138.86335
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-takanosu-hut-non-staffed",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Takanosu Hut (non staffed)",
+  "location": {
+   "latitude": 35.82753,
+   "longitude": 139.00397
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-toridaniya-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Toridaniya Hut",
+  "location": {
+   "latitude": 35.89767,
+   "longitude": 139.01523
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-yanagi-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Yanagi Hut",
+  "location": {
+   "latitude": 35.92851,
+   "longitude": 138.77079
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-bothy",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "bothy",
+  "location": {
+   "latitude": 35.94238,
+   "longitude": 138.81768
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-odarumi-hut",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "Ōdarumi Hut",
+  "location": {
+   "latitude": 35.87278,
+   "longitude": 138.66364
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-osm-way-192637057",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "勝縁荘",
+  "location": {
+   "latitude": 35.73788,
+   "longitude": 138.8437
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-osm-way-1119513096",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "四里観音避難小屋",
+  "location": {
+   "latitude": 35.9482,
+   "longitude": 138.74971
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-osm-way-192637066",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "富士見山荘",
+  "location": {
+   "latitude": 35.73777,
+   "longitude": 138.84146
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-osm-way-192637068",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "富士見山荘",
+  "location": {
+   "latitude": 35.73775,
+   "longitude": 138.84158
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-osm-way-974670632",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "樺小屋 避難小屋",
+  "location": {
+   "latitude": 35.91536,
+   "longitude": 138.80023
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-osm-node-12227612350",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "清滝避難小屋",
+  "location": {
+   "latitude": 36.02113,
+   "longitude": 138.85081
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-mizugakisanso",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "瑞牆山荘",
+  "location": {
+   "latitude": 35.87869,
+   "longitude": 138.57823
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chichibu-tama-kai-osm-way-1120957584",
+  "placeID": "jp-np-chichibu-tama-kai",
+  "kind": "hut",
+  "name": "白泰山避難小屋",
+  "location": {
+   "latitude": 35.9621,
+   "longitude": 138.79568
+  },
+  "rank": 0,
+  "hasStamp": false
  },
  {
   "id": "poi-jp-ogasawara-minamijima",
@@ -27427,6 +28411,534 @@
   "summary": "The Ministry of the Environment's centre for Hakone, near the north shore of Lake Ashi. Maps, trail advice and help in English."
  },
  {
+  "id": "poi-jp-fuji-hakone-izu-7th-station-tomoe-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "7th Station Tomoe-kan",
+  "location": {
+   "latitude": 35.37831,
+   "longitude": 138.74398
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-chojo-fuji-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Chojo Fuji Kan",
+  "location": {
+   "latitude": 35.35958,
+   "longitude": 138.73106
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-fujisan-hotel",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Fujisan Hotel",
+  "location": {
+   "latitude": 35.36914,
+   "longitude": 138.73913
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-fujisan-hotel-1",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Fujisan Hotel #1",
+  "location": {
+   "latitude": 35.36929,
+   "longitude": 138.73894
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-fujisan-hotel-2",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Fujisan Hotel #2",
+  "location": {
+   "latitude": 35.36914,
+   "longitude": 138.73896
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-osm-node-4495098191",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Fujisengen Shrine",
+  "location": {
+   "latitude": 35.2402,
+   "longitude": 139.05859
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-ganso-muro",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Ganso-muro",
+  "location": {
+   "latitude": 35.37101,
+   "longitude": 138.73904
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-ginmei-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Ginmei Kan",
+  "location": {
+   "latitude": 35.35949,
+   "longitude": 138.73105
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-goraiko-sanso",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Goraiko Sanso",
+  "location": {
+   "latitude": 35.34471,
+   "longitude": 138.73688
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-goraikou-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Goraikou-kan",
+  "location": {
+   "latitude": 35.36807,
+   "longitude": 138.7374
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-hakuun-so",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Hakuun-so",
+  "location": {
+   "latitude": 35.37151,
+   "longitude": 138.73969
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-hana-goya",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Hana-goya",
+  "location": {
+   "latitude": 35.37897,
+   "longitude": 138.7444
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-hinode-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Hinode Kan",
+  "location": {
+   "latitude": 35.3542,
+   "longitude": 138.74473
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-hinode-kan-2",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Hinode-kan",
+  "location": {
+   "latitude": 35.37873,
+   "longitude": 138.74426
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-horai-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Horai-kan",
+  "location": {
+   "latitude": 35.37335,
+   "longitude": 138.74102
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-houei-sanso",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Houei Sanso",
+  "location": {
+   "latitude": 35.33927,
+   "longitude": 138.73819
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-ikeda-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Ikeda Kan",
+  "location": {
+   "latitude": 35.3517,
+   "longitude": 138.73526
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-kamaiwa-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Kamaiwa-kan",
+  "location": {
+   "latitude": 35.37761,
+   "longitude": 138.74359
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-kintaro-chaya",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Kintaro Chaya",
+  "location": {
+   "latitude": 35.28969,
+   "longitude": 139.00491
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-mannenyuki-sanso",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Mannenyuki Sanso",
+  "location": {
+   "latitude": 35.35457,
+   "longitude": 138.73296
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-miharashi-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Miharashi Kan",
+  "location": {
+   "latitude": 35.35589,
+   "longitude": 138.73676
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-miharashi-kan-2",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Miharashi-kan",
+  "location": {
+   "latitude": 35.36911,
+   "longitude": 138.74432
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-munatsuki-sanso",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Munatsuki Sanso",
+  "location": {
+   "latitude": 35.35665,
+   "longitude": 138.73111
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-munatsuki-edoya",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Munatsuki-Edoya",
+  "location": {
+   "latitude": 35.36884,
+   "longitude": 138.73894
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-original-8th-station-tomoe-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Original 8th Station Tomoe-kan",
+  "location": {
+   "latitude": 35.36907,
+   "longitude": 138.73881
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-osm-way-837042108",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Osada-sanso",
+  "location": {
+   "latitude": 35.36982,
+   "longitude": 138.76152
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-seto-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Seto-kan",
+  "location": {
+   "latitude": 35.36966,
+   "longitude": 138.75643
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-shita-edoya",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Shita Edoya",
+  "location": {
+   "latitude": 35.36948,
+   "longitude": 138.74118
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-sunabashiri-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Sunabashiri-kan",
+  "location": {
+   "latitude": 35.35226,
+   "longitude": 138.74205
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-taishi-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Taishi-kan",
+  "location": {
+   "latitude": 35.37401,
+   "longitude": 138.7414
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-taiyou-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Taiyou-kan",
+  "location": {
+   "latitude": 35.36947,
+   "longitude": 138.74935
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-tokyo-ya",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Tokyo-ya",
+  "location": {
+   "latitude": 35.36529,
+   "longitude": 138.73301
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-torii-so",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Torii-so",
+  "location": {
+   "latitude": 35.37665,
+   "longitude": 138.74279
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-toyo-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Toyo-kan",
+  "location": {
+   "latitude": 35.37588,
+   "longitude": 138.74287
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-unkai-so",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Unkai So",
+  "location": {
+   "latitude": 35.33925,
+   "longitude": 138.73802
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-waraji-kan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Waraji-kan",
+  "location": {
+   "latitude": 35.35289,
+   "longitude": 138.74285
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-yamaguchi-sanso",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Yamaguchi Sanso",
+  "location": {
+   "latitude": 35.34855,
+   "longitude": 138.73575
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-yoshino-ya",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "Yoshino-ya",
+  "location": {
+   "latitude": 35.36783,
+   "longitude": 138.76787
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-hanzobo",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "hanzobo",
+  "location": {
+   "latitude": 35.35101,
+   "longitude": 138.75525
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-osm-way-836973015",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "奥庭莊",
+  "location": {
+   "latitude": 35.39054,
+   "longitude": 138.7037
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-osm-way-1551740625",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "富士一館",
+  "location": {
+   "latitude": 35.37733,
+   "longitude": 138.7433
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-akaiwahachigokan",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "赤岩八合館",
+  "location": {
+   "latitude": 35.35468,
+   "longitude": 138.73842
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-osm-way-1471923120",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "避難小屋",
+  "location": {
+   "latitude": 34.09382,
+   "longitude": 139.53209
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-fuji-hakone-izu-osm-way-1471923132",
+  "placeID": "jp-np-fuji-hakone-izu",
+  "kind": "hut",
+  "name": "避難小屋",
+  "location": {
+   "latitude": 34.09662,
+   "longitude": 139.53262
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
   "id": "poi-jp-minami-alps-kitadake",
   "placeID": "jp-np-minami-alps",
   "kind": "sight",
@@ -27581,6 +29093,414 @@
   "rank": 0,
   "hasStamp": false,
   "summary": "Trail and weather information at Sawarajima Lodge, the southern trailhead in Shizuoka. Closed December to April."
+ },
+ {
+  "id": "poi-jp-minami-alps-arakawa-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Arakawa Hut",
+  "location": {
+   "latitude": 35.48575,
+   "longitude": 138.16116
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-arakawa-nakadake-evacuation-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Arakawa Nakadake Evacuation Hut",
+  "location": {
+   "latitude": 35.49712,
+   "longitude": 138.16825
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-chausu-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Chausu Hut",
+  "location": {
+   "latitude": 35.37236,
+   "longitude": 138.14423
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-choegoya",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Choegoya",
+  "location": {
+   "latitude": 35.73874,
+   "longitude": 138.21584
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-daimonzawa-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Daimonzawa Hut",
+  "location": {
+   "latitude": 35.60904,
+   "longitude": 138.25945
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-hayakawaone-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Hayakawaone Hut",
+  "location": {
+   "latitude": 35.72564,
+   "longitude": 138.26344
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-hirogawara-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Hirogawara Hut",
+  "location": {
+   "latitude": 35.47874,
+   "longitude": 138.12799
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-hirogawara-lodge",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Hirogawara Lodge",
+  "location": {
+   "latitude": 35.69755,
+   "longitude": 138.26819
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-hirogawara-sanso",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Hirogawara-sanso",
+  "location": {
+   "latitude": 35.69693,
+   "longitude": 138.27139
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-houou-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Houou Hut",
+  "location": {
+   "latitude": 35.71047,
+   "longitude": 138.30558
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-houou-hut-2",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Houou Hut",
+  "location": {
+   "latitude": 35.71035,
+   "longitude": 138.3057
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-hyakkenbora-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Hyakkenbora Hut",
+  "location": {
+   "latitude": 35.45193,
+   "longitude": 138.12692
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-kita-dake-kata-no-koya",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Kita-dake Kata-no-koya",
+  "location": {
+   "latitude": 35.67939,
+   "longitude": 138.23771
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-kita-dake-sanso",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Kita-dake Sanso",
+  "location": {
+   "latitude": 35.66478,
+   "longitude": 138.2332
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-kitazawa-pass-komorebi-sansou",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Kitazawa Pass Komorebi Sansou",
+  "location": {
+   "latitude": 35.74258,
+   "longitude": 138.2135
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-matsumine-goya",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Matsumine Goya",
+  "location": {
+   "latitude": 35.73373,
+   "longitude": 138.14421
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-minamiomuro-goya",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Minamiomuro Goya",
+  "location": {
+   "latitude": 35.68235,
+   "longitude": 138.31653
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-mount-usagi-emergency-shelter",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Mount Usagi Emergency Shelter",
+  "location": {
+   "latitude": 35.42815,
+   "longitude": 138.12251
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-notori-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Notori Hut",
+  "location": {
+   "latitude": 35.63221,
+   "longitude": 138.22974
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-odairasanso",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Odairasanso",
+  "location": {
+   "latitude": 35.74189,
+   "longitude": 138.20934
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-ryomata-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Ryōmata Hut",
+  "location": {
+   "latitude": 35.67471,
+   "longitude": 138.20316
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-sanpuku-toge-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Sanpuku-toge Hut",
+  "location": {
+   "latitude": 35.55563,
+   "longitude": 138.14186
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-senjo-goya",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Senjo Goya",
+  "location": {
+   "latitude": 35.72271,
+   "longitude": 138.18429
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-sensui-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Sensui Hut",
+  "location": {
+   "latitude": 35.74313,
+   "longitude": 138.22523
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-shichijo-cabin",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Shichijo Cabin",
+  "location": {
+   "latitude": 35.76442,
+   "longitude": 138.24796
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-shichijo-cabin-annex",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Shichijo Cabin Annex",
+  "location": {
+   "latitude": 35.76408,
+   "longitude": 138.24746
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-shiomi-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Shiomi Hut",
+  "location": {
+   "latitude": 35.57856,
+   "longitude": 138.17571
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-shiraneoike-lodge",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Shiraneoike Lodge",
+  "location": {
+   "latitude": 35.68606,
+   "longitude": 138.25226
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-takayamaura-shelter",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Takayamaura Shelter",
+  "location": {
+   "latitude": 35.50508,
+   "longitude": 138.14203
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-tekari-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Tekari Hut",
+  "location": {
+   "latitude": 35.33856,
+   "longitude": 138.08879
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-umanose-hutte",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Umanose Hutte",
+  "location": {
+   "latitude": 35.72944,
+   "longitude": 138.18875
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-winter-hut",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Winter Hut",
+  "location": {
+   "latitude": 35.71031,
+   "longitude": 138.30562
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-yakushi-dake-goya",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "Yakushi-dake Goya",
+  "location": {
+   "latitude": 35.69347,
+   "longitude": 138.31066
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-minami-alps-osm-node-1919479973",
+  "placeID": "jp-np-minami-alps",
+  "kind": "hut",
+  "name": "夜叉神峠小屋",
+  "location": {
+   "latitude": 35.63835,
+   "longitude": 138.3365
+  },
+  "rank": 0,
+  "hasStamp": false
  },
  {
   "id": "poi-jp-joshinetsukogen-yugama-kusatsu-shirane",
@@ -27739,6 +29659,138 @@
   "summary": "At Asama-en on the volcano's north foot: a diorama of how Asama formed and its plants changed, rocks and Geopark displays. Fridays to Sundays only from December to March."
  },
  {
+  "id": "poi-jp-joshinetsukogen-ebisu-oguro-hinangoya",
+  "placeID": "jp-np-joshinetsukogen",
+  "kind": "hut",
+  "name": "Ebisu Oguro Hinangoya",
+  "location": {
+   "latitude": 36.81506,
+   "longitude": 138.84508
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-joshinetsukogen-tairappyo-no-ie",
+  "placeID": "jp-np-joshinetsukogen",
+  "kind": "hut",
+  "name": "Tairappyo no Ie",
+  "location": {
+   "latitude": 36.8068,
+   "longitude": 138.82487
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-joshinetsukogen-tanigawadake-kata-no-koya",
+  "placeID": "jp-np-joshinetsukogen",
+  "kind": "hut",
+  "name": "Tanigawadake Kata no Koya",
+  "location": {
+   "latitude": 36.83303,
+   "longitude": 138.92972
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-joshinetsukogen-osm-way-303404852",
+  "placeID": "jp-np-joshinetsukogen",
+  "kind": "hut",
+  "name": "カヤの平高原ロッヂ",
+  "location": {
+   "latitude": 36.83415,
+   "longitude": 138.50037
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-joshinetsukogen-wadagoya",
+  "placeID": "jp-np-joshinetsukogen",
+  "kind": "hut",
+  "name": "和田小屋",
+  "location": {
+   "latitude": 36.87037,
+   "longitude": 138.72859
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-joshinetsukogen-osm-way-1441614385",
+  "placeID": "jp-np-joshinetsukogen",
+  "kind": "hut",
+  "name": "根子岳避難小屋",
+  "location": {
+   "latitude": 36.55339,
+   "longitude": 138.37746
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-joshinetsukogen-osm-node-7694101777",
+  "placeID": "jp-np-joshinetsukogen",
+  "kind": "hut",
+  "name": "火山館",
+  "location": {
+   "latitude": 36.39971,
+   "longitude": 138.49643
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-joshinetsukogen-osm-way-1425581856",
+  "placeID": "jp-np-joshinetsukogen",
+  "kind": "hut",
+  "name": "笠岳避難小屋",
+  "location": {
+   "latitude": 36.67408,
+   "longitude": 138.47736
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-joshinetsukogen-osm-node-5784845015",
+  "placeID": "jp-np-joshinetsukogen",
+  "kind": "hut",
+  "name": "芳ヶ平ヒュッテ",
+  "location": {
+   "latitude": 36.65428,
+   "longitude": 138.54985
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-joshinetsukogen-osm-way-549930007",
+  "placeID": "jp-np-joshinetsukogen",
+  "kind": "hut",
+  "name": "苗場山頂ヒュッテ",
+  "location": {
+   "latitude": 36.84536,
+   "longitude": 138.68955
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-joshinetsukogen-osm-way-941136078",
+  "placeID": "jp-np-joshinetsukogen",
+  "kind": "hut",
+  "name": "蓬ヒュッテ",
+  "location": {
+   "latitude": 36.87925,
+   "longitude": 138.9216
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
   "id": "poi-jp-myoko-togakushi-renzan-myoko-san",
   "placeID": "jp-np-myoko-togakushi-renzan",
   "kind": "sight",
@@ -27880,6 +29932,42 @@
   "rank": 0,
   "hasStamp": false,
   "summary": "Fossils and finds from the lake bed, including Naumann's elephant and Yabe's giant deer."
+ },
+ {
+  "id": "poi-jp-myoko-togakushi-renzan-koyaike-hutte",
+  "placeID": "jp-np-myoko-togakushi-renzan",
+  "kind": "hut",
+  "name": "Koyaike Hutte",
+  "location": {
+   "latitude": 36.90936,
+   "longitude": 138.08461
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-myoko-togakushi-renzan-koyaike-hutte-2",
+  "placeID": "jp-np-myoko-togakushi-renzan",
+  "kind": "hut",
+  "name": "Koyaike Hutte",
+  "location": {
+   "latitude": 36.90927,
+   "longitude": 138.08463
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-myoko-togakushi-renzan-kurosawaike-hut",
+  "placeID": "jp-np-myoko-togakushi-renzan",
+  "kind": "hut",
+  "name": "Kurosawaike hut",
+  "location": {
+   "latitude": 36.90644,
+   "longitude": 138.10156
+  },
+  "rank": 0,
+  "hasStamp": false
  },
  {
   "id": "poi-jp-chubusangaku-kamikochi-and-kappa-bashi",
@@ -28038,6 +30126,1170 @@
   "summary": "At the end of the Kurobe Gorge Railway, with trail conditions and films on the gorge. Open while the railway runs."
  },
  {
+  "id": "poi-jp-chubusangaku-asahi-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Asahi Goya",
+  "location": {
+   "latitude": 36.82486,
+   "longitude": 137.71762
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-azohara-onsen-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Azohara-onsen-goya",
+  "location": {
+   "latitude": 36.6568,
+   "longitude": 137.67708
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-banbajima-lodge",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Banbajima Lodge",
+  "location": {
+   "latitude": 36.64724,
+   "longitude": 137.554
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-chogatake-hut",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Chogatake Hut",
+  "location": {
+   "latitude": 36.28889,
+   "longitude": 137.72526
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-dainichi-lodge",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Dainichi Lodge",
+  "location": {
+   "latitude": 36.59725,
+   "longitude": 137.55351
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-daitenso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Daitenso",
+  "location": {
+   "latitude": 36.36377,
+   "longitude": 137.70301
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-dakesawa-hut",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Dakesawa Hut",
+  "location": {
+   "latitude": 36.27657,
+   "longitude": 137.6472
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-goryusanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Goryusanso",
+  "location": {
+   "latitude": 36.66364,
+   "longitude": 137.7602
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-goshiki-gahara-mountain-hut",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Goshiki-gahara Mountain Hut",
+  "location": {
+   "latitude": 36.54031,
+   "longitude": 137.59264
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-hakuba-sanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Hakuba Sanso",
+  "location": {
+   "latitude": 36.75598,
+   "longitude": 137.75635
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-hakuba-yari-onsen-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Hakuba Yari Onsen Goya",
+  "location": {
+   "latitude": 36.72452,
+   "longitude": 137.76678
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-hakubadake-renge-onsen-lodge",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Hakubadake Renge Onsen Lodge",
+  "location": {
+   "latitude": 36.81021,
+   "longitude": 137.79861
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-harinoki-lodge",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Harinoki Lodge",
+  "location": {
+   "latitude": 36.53711,
+   "longitude": 137.69408
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-hayatsuki-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Hayatsuki Goya",
+  "location": {
+   "latitude": 36.63114,
+   "longitude": 137.59766
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-hotakadakesanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Hotakadakesanso",
+  "location": {
+   "latitude": 36.2936,
+   "longitude": 137.64759
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-hotakataira-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Hotakataira Goya",
+  "location": {
+   "latitude": 36.29115,
+   "longitude": 137.593
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-hutte-nishidake",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Hutte Nishidake",
+  "location": {
+   "latitude": 36.3357,
+   "longitude": 137.67999
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-hutte-oyari",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Hutte Oyari",
+  "location": {
+   "latitude": 36.33803,
+   "longitude": 137.65515
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-ichinokoshi-sanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Ichinokoshi Sanso",
+  "location": {
+   "latitude": 36.57039,
+   "longitude": 137.61206
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-ikenodaira-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Ikenodaira Goya",
+  "location": {
+   "latitude": 36.63911,
+   "longitude": 137.64001
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-jonengoya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Jōnengoya",
+  "location": {
+   "latitude": 36.33328,
+   "longitude": 137.72681
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-kagamidaira-hut",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Kagamidaira Hut",
+  "location": {
+   "latitude": 36.34577,
+   "longitude": 137.60383
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-kamonjigoya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Kamonjigoya",
+  "location": {
+   "latitude": 36.25276,
+   "longitude": 137.66442
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-karasawa-hutte",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Karasawa Hutte",
+  "location": {
+   "latitude": 36.29394,
+   "longitude": 137.66337
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-karasawagoya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Karasawagoya",
+  "location": {
+   "latitude": 36.29556,
+   "longitude": 137.66058
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-katanokoya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Katanokoya",
+  "location": {
+   "latitude": 36.11468,
+   "longitude": 137.55279
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-kenzan-so",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Kenzan-so",
+  "location": {
+   "latitude": 36.60929,
+   "longitude": 137.61224
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-kiret-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Kiret Goya",
+  "location": {
+   "latitude": 36.63355,
+   "longitude": 137.75268
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-kitahodaka",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Kitahodaka",
+  "location": {
+   "latitude": 36.30371,
+   "longitude": 137.65277
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-kuraigaharasanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Kuraigaharasanso",
+  "location": {
+   "latitude": 36.11927,
+   "longitude": 137.57094
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-kuranosuke-sanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Kuranosuke Sanso",
+  "location": {
+   "latitude": 36.58835,
+   "longitude": 137.62278
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-kurobegorogoya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Kurobegorogoya",
+  "location": {
+   "latitude": 36.38965,
+   "longitude": 137.56573
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-lodge-kuroyon",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Lodge Kuroyon",
+  "location": {
+   "latitude": 36.55798,
+   "longitude": 137.65556
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-lodge-tateyama-renpo",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Lodge Tateyama Renpo",
+  "location": {
+   "latitude": 36.58793,
+   "longitude": 137.59781
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-minamidakegoya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Minamidakegoya",
+  "location": {
+   "latitude": 36.31679,
+   "longitude": 137.65048
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-mitsumatasanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Mitsumatasanso",
+  "location": {
+   "latitude": 36.39526,
+   "longitude": 137.59685
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-nishiho-hut",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Nishiho Hut",
+  "location": {
+   "latitude": 36.26542,
+   "longitude": 137.61765
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-oku-kurobe-hutte",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Oku-kurobe Hutte",
+  "location": {
+   "latitude": 36.49873,
+   "longitude": 137.6306
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osawa-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Osawa Goya",
+  "location": {
+   "latitude": 36.55445,
+   "longitude": 137.7053
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-otenjo-hutte",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Otenjo Hutte",
+  "location": {
+   "latitude": 36.36291,
+   "longitude": 137.69562
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-raicho-onsen-raicho-so",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Raicho Onsen Raicho-so",
+  "location": {
+   "latitude": 36.5845,
+   "longitude": 137.59835
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-raichozawa-hutte",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Raichozawa Hutte",
+  "location": {
+   "latitude": 36.58707,
+   "longitude": 137.59818
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-seiranso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Seiranso",
+  "location": {
+   "latitude": 36.39733,
+   "longitude": 137.68038
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-sennin-ike-hutte",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Sennin-ike Hutte",
+  "location": {
+   "latitude": 36.63608,
+   "longitude": 137.65138
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-sessho-hutte",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Sessho Hutte",
+  "location": {
+   "latitude": 36.33864,
+   "longitude": 137.65073
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-shelter",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Shelter",
+  "location": {
+   "latitude": 36.4253,
+   "longitude": 137.68398
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-shinkoshi-sanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Shinkoshi-Sanso",
+  "location": {
+   "latitude": 36.57167,
+   "longitude": 137.70308
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-shiraidezawa",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Shiraidezawa",
+  "location": {
+   "latitude": 36.29917,
+   "longitude": 137.61217
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-shiroumadake-chojoshukusha",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Shiroumadake Chojoshukusha",
+  "location": {
+   "latitude": 36.75277,
+   "longitude": 137.75374
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-sugonokkoshikoya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Sugonokkoshikoya",
+  "location": {
+   "latitude": 36.50002,
+   "longitude": 137.56798
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-sugoroku-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Sugoroku Goya",
+  "location": {
+   "latitude": 36.36955,
+   "longitude": 137.60162
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-suisho-hut",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Suisho Hut",
+  "location": {
+   "latitude": 36.41962,
+   "longitude": 137.60845
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-takidani-emergency-hut",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Takidani Emergency Hut",
+  "location": {
+   "latitude": 36.31176,
+   "longitude": 137.63135
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-taneike-sanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Taneike Sanso",
+  "location": {
+   "latitude": 36.58791,
+   "longitude": 137.73552
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-tarodairakoya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Tarodairakoya",
+  "location": {
+   "latitude": 36.44882,
+   "longitude": 137.51634
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-tateyama-murodo-sanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Tateyama Murodo Sanso",
+  "location": {
+   "latitude": 36.57771,
+   "longitude": 137.60093
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-tengu-sanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Tengu Sanso",
+  "location": {
+   "latitude": 36.72091,
+   "longitude": 137.7533
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-tengudaira-sanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Tengudaira Sanso",
+  "location": {
+   "latitude": 36.58038,
+   "longitude": 137.57879
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-tokugoto-toge-hut",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Tokugoto Toge Hut",
+  "location": {
+   "latitude": 36.22823,
+   "longitude": 137.67828
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-tsugaike-hutte",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Tsugaike Hutte",
+  "location": {
+   "latitude": 36.77359,
+   "longitude": 137.81892
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-tsumetaike-sanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Tsumetaike Sanso",
+  "location": {
+   "latitude": 36.60291,
+   "longitude": 137.74846
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-tsurugigozen-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Tsurugigozen-goya",
+  "location": {
+   "latitude": 36.59624,
+   "longitude": 137.61018
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-tsurugisawa-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Tsurugisawa-goya",
+  "location": {
+   "latitude": 36.60483,
+   "longitude": 137.61592
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-wasabidaira-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Wasabidaira Goya",
+  "location": {
+   "latitude": 36.31061,
+   "longitude": 137.59558
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-yakushidake-sanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Yakushidake Sanso",
+  "location": {
+   "latitude": 36.4609,
+   "longitude": 137.53661
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-yamagoya-babadani-onsen",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Yamagoya Babadani Onsen",
+  "location": {
+   "latitude": 36.69824,
+   "longitude": 137.67959
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-yamanohidaya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Yamanohidaya",
+  "location": {
+   "latitude": 36.25305,
+   "longitude": 137.66532
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-yaridaira-goya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Yaridaira Goya",
+  "location": {
+   "latitude": 36.32322,
+   "longitude": 137.62991
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-yarigatake-sanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Yarigatake Sanso",
+  "location": {
+   "latitude": 36.34098,
+   "longitude": 137.64565
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-yarisawa-lodge",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Yarisawa Lodge",
+  "location": {
+   "latitude": 36.31826,
+   "longitude": 137.68354
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-yokoosanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "Yokoosanso",
+  "location": {
+   "latitude": 36.29337,
+   "longitude": 137.69929
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-way-1442334868",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "冷泉小屋",
+  "location": {
+   "latitude": 36.12028,
+   "longitude": 137.57476
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-node-3612902898",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "冷泉小屋 (Reisengoya)",
+  "location": {
+   "latitude": 36.12026,
+   "longitude": 137.57471
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-way-936335729",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "十石峠小屋",
+  "location": {
+   "latitude": 36.1646,
+   "longitude": 137.59161
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-node-1845028380",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "合戦小屋",
+  "location": {
+   "latitude": 36.39356,
+   "longitude": 137.72691
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-way-697376616",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "唐松岳頂上山荘",
+  "location": {
+   "latitude": 36.68529,
+   "longitude": 137.75923
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-way-697376617",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "唐松岳頂上山荘",
+  "location": {
+   "latitude": 36.68572,
+   "longitude": 137.7589
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-way-1161593443",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "大日平山荘",
+  "location": {
+   "latitude": 36.58056,
+   "longitude": 137.54112
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-way-939542295",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "大滝小屋",
+  "location": {
+   "latitude": 36.2737,
+   "longitude": 137.74243
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-way-1159797705",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "平乃小屋",
+  "location": {
+   "latitude": 36.52973,
+   "longitude": 137.63877
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-way-1161645661",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "成城大学小屋",
+  "location": {
+   "latitude": 36.77398,
+   "longitude": 137.82292
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-node-4730366636",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "折立ヒュッテ",
+  "location": {
+   "latitude": 36.48247,
+   "longitude": 137.47504
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-way-787894853",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "東京大学運動会乗鞍寮",
+  "location": {
+   "latitude": 36.10401,
+   "longitude": 137.6032
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-eboshigoya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "烏帽子小屋",
+  "location": {
+   "latitude": 36.4704,
+   "longitude": 137.65606
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-yakedakegoya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "焼岳小屋",
+  "location": {
+   "latitude": 36.2369,
+   "longitude": 137.59411
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-node-2030074980",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "燕山荘",
+  "location": {
+   "latitude": 36.39946,
+   "longitude": 137.71528
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-way-234581429",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "猿倉荘",
+  "location": {
+   "latitude": 36.74602,
+   "longitude": 137.8009
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-hakubaoikesanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "白馬大池山荘",
+  "location": {
+   "latitude": 36.78645,
+   "longitude": 137.79521
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-hakubajirigoya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "白馬尻小屋",
+  "location": {
+   "latitude": 36.75082,
+   "longitude": 137.78278
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-way-875658817",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "祖母谷温泉",
+  "location": {
+   "latitude": 36.69909,
+   "longitude": 137.67987
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-kasagatakesanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "笠ヶ岳山荘",
+  "location": {
+   "latitude": 36.31786,
+   "longitude": 137.5513
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-funakubogoya",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "船窪小屋",
+  "location": {
+   "latitude": 36.50648,
+   "longitude": 137.69525
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-node-4346427174",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "薬師沢小屋",
+  "location": {
+   "latitude": 36.42859,
+   "longitude": 137.54628
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-node-6744033151",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "野口五郎小屋",
+  "location": {
+   "latitude": 36.43625,
+   "longitude": 137.63824
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-kumonotairasanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "雲ノ平山荘",
+  "location": {
+   "latitude": 36.42061,
+   "longitude": 137.57654
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-osm-way-936335730",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "頂上小屋",
+  "location": {
+   "latitude": 36.10718,
+   "longitude": 137.55376
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-chubusangaku-takamagaharasanso",
+  "placeID": "jp-np-chubusangaku",
+  "kind": "hut",
+  "name": "高天原山荘",
+  "location": {
+   "latitude": 36.44005,
+   "longitude": 137.58324
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
   "id": "poi-jp-hakusan-gozengamine",
   "placeID": "jp-np-hakusan",
   "kind": "viewpoint",
@@ -28166,6 +31418,102 @@
   "rank": 0,
   "hasStamp": false,
   "summary": "Ishikawa Prefecture's centre at Chūgū on the White Road, with exhibits on the park's nature and history. Open late April to mid-November."
+ },
+ {
+  "id": "poi-jp-hakusan-gozenso",
+  "placeID": "jp-np-hakusan",
+  "kind": "hut",
+  "name": "Gozenso",
+  "location": {
+   "latitude": 36.14903,
+   "longitude": 136.76835
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-hakusan-hakusanso",
+  "placeID": "jp-np-hakusan",
+  "kind": "hut",
+  "name": "Hakusanso",
+  "location": {
+   "latitude": 36.14923,
+   "longitude": 136.76743
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-hakusan-kozakuraso",
+  "placeID": "jp-np-hakusan",
+  "kind": "hut",
+  "name": "Kozakuraso",
+  "location": {
+   "latitude": 36.1488,
+   "longitude": 136.7682
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-hakusan-kuroyuriso",
+  "placeID": "jp-np-hakusan",
+  "kind": "hut",
+  "name": "Kuroyuriso",
+  "location": {
+   "latitude": 36.14864,
+   "longitude": 136.7681
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-hakusan-raichoso",
+  "placeID": "jp-np-hakusan",
+  "kind": "hut",
+  "name": "Raichoso",
+  "location": {
+   "latitude": 36.14934,
+   "longitude": 136.76718
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-hakusan-osm-way-937263371",
+  "placeID": "jp-np-hakusan",
+  "kind": "hut",
+  "name": "シナノキ平避難小屋",
+  "location": {
+   "latitude": 36.2331,
+   "longitude": 136.78523
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-hakusan-osm-way-930250415",
+  "placeID": "jp-np-hakusan",
+  "kind": "hut",
+  "name": "奥長倉避難小屋",
+  "location": {
+   "latitude": 36.21047,
+   "longitude": 136.72857
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-hakusan-osm-way-930250416",
+  "placeID": "jp-np-hakusan",
+  "kind": "hut",
+  "name": "小桜平避難小屋",
+  "location": {
+   "latitude": 36.20092,
+   "longitude": 136.75758
+  },
+  "rank": 0,
+  "hasStamp": false
  },
  {
   "id": "poi-jp-ise-shima-ise-jingu-inner-shrine",
@@ -28439,6 +31787,78 @@
   "rank": 0,
   "hasStamp": false,
   "summary": "On Cape Shionomisaki: how the peninsula's rocks, coast and coral seas came to be."
+ },
+ {
+  "id": "poi-jp-yoshino-kumano-darasuke-tea-house",
+  "placeID": "jp-np-yoshino-kumano",
+  "kind": "hut",
+  "name": "Darasuke Tea House",
+  "location": {
+   "latitude": 34.26099,
+   "longitude": 135.93765
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-yoshino-kumano-jikyoushuku",
+  "placeID": "jp-np-yoshino-kumano",
+  "kind": "hut",
+  "name": "Jikyoushuku",
+  "location": {
+   "latitude": 34.04083,
+   "longitude": 135.89794
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-yoshino-kumano-misengoya",
+  "placeID": "jp-np-yoshino-kumano",
+  "kind": "hut",
+  "name": "Misengoya",
+  "location": {
+   "latitude": 34.17949,
+   "longitude": 135.91044
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-yoshino-kumano-osm-node-14355447449",
+  "placeID": "jp-np-yoshino-kumano",
+  "kind": "hut",
+  "name": "小笹ノ宿",
+  "location": {
+   "latitude": 34.24665,
+   "longitude": 135.95456
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-yoshino-kumano-osm-node-14355447455",
+  "placeID": "jp-np-yoshino-kumano",
+  "kind": "hut",
+  "name": "楊子ヶ宿小屋",
+  "location": {
+   "latitude": 34.14,
+   "longitude": 135.9078
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-yoshino-kumano-osm-node-2586470958",
+  "placeID": "jp-np-yoshino-kumano",
+  "kind": "hut",
+  "name": "稲村ヶ岳山荘",
+  "location": {
+   "latitude": 34.24487,
+   "longitude": 135.92161
+  },
+  "rank": 0,
+  "hasStamp": false
  },
  {
   "id": "poi-jp-saninkaigan-tottori-sand-dunes",
@@ -29312,6 +32732,18 @@
   "summary": "Beside Kusasenri: the forces that shaped the Aso caldera and the Nakadake crater."
  },
  {
+  "id": "poi-jp-aso-kuju-hokkein-onsen-sanso",
+  "placeID": "jp-np-aso-kuju",
+  "kind": "hut",
+  "name": "Hokkein Onsen Sanso",
+  "location": {
+   "latitude": 33.09646,
+   "longitude": 131.25544
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
   "id": "poi-jp-kirishima-kinkowan-karakunidake",
   "placeID": "jp-np-kirishima-kinkowan",
   "kind": "sight",
@@ -29557,6 +32989,78 @@
   "rank": 0,
   "hasStamp": false,
   "summary": "The cedars, the logging era and the forest; the Arakawa shuttle bus leaves from here."
+ },
+ {
+  "id": "poi-jp-yakushima-osm-node-4784377980",
+  "placeID": "jp-np-yakushima",
+  "kind": "hut",
+  "name": "Ishizuka Hut",
+  "location": {
+   "latitude": 30.31378,
+   "longitude": 130.52197
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-yakushima-osm-node-987483126",
+  "placeID": "jp-np-yakushima",
+  "kind": "hut",
+  "name": "Shintakatsu",
+  "location": {
+   "latitude": 30.35819,
+   "longitude": 130.51897
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-yakushima-shiratani-sanso",
+  "placeID": "jp-np-yakushima",
+  "kind": "hut",
+  "name": "Shiratani-sansō",
+  "location": {
+   "latitude": 30.36942,
+   "longitude": 130.57037
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-yakushima-takatsuka-goya",
+  "placeID": "jp-np-yakushima",
+  "kind": "hut",
+  "name": "Takatsuka-goya",
+  "location": {
+   "latitude": 30.36057,
+   "longitude": 130.53038
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-yakushima-osm-node-2579982411",
+  "placeID": "jp-np-yakushima",
+  "kind": "hut",
+  "name": "Yodogo-goya",
+  "location": {
+   "latitude": 30.30048,
+   "longitude": 130.52388
+  },
+  "rank": 0,
+  "hasStamp": false
+ },
+ {
+  "id": "poi-jp-yakushima-shikanosawa-koya",
+  "placeID": "jp-np-yakushima",
+  "kind": "hut",
+  "name": "鹿之沢小屋",
+  "location": {
+   "latitude": 30.34058,
+   "longitude": 130.48307
+  },
+  "rank": 0,
+  "hasStamp": false
  },
  {
   "id": "poi-jp-amamigunto-kinsakubaru",
