@@ -28,7 +28,8 @@ jobs:
 
       - name: Test
         working-directory: Packages/UnigridsKit
-        run: swift test
+        # Warnings are errors here, as AGENTS.md §3 says.
+        run: swift test -Xswiftc -warnings-as-errors
 
   app:
     name: Build app (${{ matrix.label }}, ${{ matrix.configuration }})
@@ -59,6 +60,7 @@ jobs:
             -destination '${{ matrix.destination }}' \
             -configuration ${{ matrix.configuration }} \
             CODE_SIGNING_ALLOWED=NO \
+            SWIFT_TREAT_WARNINGS_AS_ERRORS=YES \
             build
 
   lint:

@@ -4,4 +4,5 @@ source "$(dirname "$0")/common.sh"
 check_conflict_copies
 
 say "Testing UnigridsKit"
-swift_in_package test "$@"
+# Warnings are errors, as in CI (AGENTS.md §3).
+swift_in_package test -Xswiftc -warnings-as-errors "$@"

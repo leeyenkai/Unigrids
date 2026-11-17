@@ -21,6 +21,7 @@ build() {
 		-scheme "$SCHEME" \
 		-destination "$destination" \
 		-configuration "${CONFIGURATION:-Debug}" \
+		SWIFT_TREAT_WARNINGS_AS_ERRORS=YES \
 		build >"$log" 2>&1 || result=$?
 	grep -E "error:|warning:|BUILD (SUCCEEDED|FAILED)" "$log" || true
 	if [[ $result -ne 0 ]]; then
