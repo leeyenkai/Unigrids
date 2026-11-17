@@ -1,0 +1,292 @@
+{
+  "placeID": "ca-np-aulavik",
+  "contentVersion": 1,
+  "summary": "The north end of Banks Island, the most westerly island of the Canadian Arctic Archipelago: 12,200 square kilometres of treeless lowland tundra, badlands and sea cliffs, with the world's highest density of muskoxen. Most of its dozen or so visitors a year paddle the slow Thomsen River north to the Arctic Ocean over two or three weeks, past tent rings, meat caches and hillsides of muskox skulls.",
+  "facts": {
+    "establishedYear": 1992,
+    "areaHectares": 1220000,
+    "bestSeasons": [
+      "summer"
+    ],
+    "suggestedTime": "Two to three weeks"
+  },
+  "story": [
+    "Aulavik means 'place where people travel' in Inuvialuktun. Most of it is gentle country: the broad, green valley of the Thomsen River between low rolling hills. Around that lie harsher landscapes, from cliffs several hundred metres high along M'Clure Strait and the deep inlets of Castel and Mercy bays on the north coast, to canyons south-east of Mercy Bay, an upland plateau rising to 450 metres, and desert-like badlands west of Castel Bay. Glaciers once covered most of the park, leaving moraines, eskers and drumlins; a 350-million-year-old fossil reef, with snails, corals and feather stars, lies east of the river.",
+    "It is a polar desert, with about 300 millimetres of precipitation a year, and Banks Island has no trees: the arctic willow rarely grows higher than a shin. More than 150 kinds of flowering plants bloom here in early July. Muskoxen are by far the commonest large animal; in 2001 the island held more than 68,000, a fifth of them thought to live in the park. Endangered Peary caribou, arctic wolves and foxes share the land, polar bears and seals the north coast. A bird sanctuary in the park protects nesting and moulting grounds of the western Arctic's lesser snow geese.",
+    "People have used this edge of the Arctic for almost 4,000 years, coming in warm centuries and leaving in cold ones. Pre-Dorset hunters camped by Shoran Lake around 1500 BC; Thule people came north for muskoxen between 1000 and 1450; Inuvialuit used the island now and then between 1650 and the 1820s. In 1851 Captain Robert M'Clure's HMS Investigator, searching for the lost Franklin expedition, was trapped in the ice of Mercy Bay. In 1853 the crew abandoned her and walked across the ice to Melville Island, where HMS Resolute rescued them; finishing partly on foot, they were later credited with the first traverse of a Northwest Passage.",
+    "For decades afterwards Copper Inuit from Victoria Island travelled up the Thomsen valley to Mercy Bay to salvage wood and metal from the ship's cache, leaving caches of muskox and caribou meat along the river. From the late 1920s fox trapping drew Inuvialuit families to Banks Island, and they founded the permanent community of Sachs Harbour. Canada, the Inuvialuit and the Government of the Northwest Territories agreed in 1992 to create the park, under the terms of the Inuvialuit Final Agreement, and Inuvialuit keep their right to hunt, trap and fish within it. Parks Canada found the wreck of the Investigator in 2010, just outside the park's boundary."
+  ],
+  "howItWorks": [
+    "Aulavik has no facilities, campgrounds, developed trails or roads, and only one small service cabin. Every trip must be registered with Parks Canada before entering the park and de-registered at the end; failing to do so is an offence under the Canada National Parks Act, and a search begins if you have not de-registered within 48 hours of your planned date. Registration, at the Parks Canada office in Inuvik, includes a mandatory orientation on hazards, routes, water levels, closures, regulations and bear safety, and you must supply a detailed route on 1:50,000 maps. A Superintendent's order makes all entry and travel in the park a restricted activity that needs a permit. Non-commercial paddling parties must bring at least two boats and a satellite communication device.",
+    "Charter aircraft from Inuvik, 750 kilometres away, are the most common and practical way in, sometimes with a stop in Sachs Harbour. No aircraft may land without a free Parks Canada Aircraft Landing Permit, issued when you register, and the charter company must hold a National Parks Business Licence. Park staff may know of chances to share a flight or fly in as another group flies out. Groups stopping in Sachs Harbour should contact the hamlet before booking, and anyone planning to leave the park's boundaries must contact the RCMP, the Inuvialuit Land Administration and the local Hunters and Trappers Committee.",
+    "Polar bears are most common along the north coast but wander far inland; Castel Bay, Mercy Bay and the north coast carry the greatest risk of an encounter. Every orientation includes a bear safety briefing with Parks Canada's brochures on bear country and polar bear country; carry bear spray and an air horn, store and cook food at least 50 metres from the tents, and report any polar bear or its signs to the Duty Officer. Firearms are prohibited. In November 2026 Parks Canada listed the Northern Park Backcountry Excursion/Camping permit at $37 per person per night or $259 for a year, charged at registration, and a fishing permit at $22.25 a day."
+  ],
+  "sights": [
+    {
+      "name": "Thomsen River",
+      "note": "One of the most northerly navigable rivers in North America: 160 kilometres of Class 1 water through the park's lushest valley, with no rapids. Paddled from late June to late July.",
+      "location": [
+        74.1339,
+        -119.753
+      ]
+    },
+    {
+      "name": "Head Hill",
+      "note": "A network of kill sites on a hill above the meeting of the Thomsen and Muskox rivers, with more than 500 muskox skulls, 29 food caches and 17 tent rings.",
+      "location": [
+        73.8374,
+        -119.9912
+      ]
+    },
+    {
+      "name": "Muskox River",
+      "note": "The Thomsen's main tributary, flowing in from the west through poorly drained wetlands and frost polygons; a common place to end a river trip.",
+      "location": [
+        73.8172,
+        -119.9196
+      ]
+    },
+    {
+      "name": "Mercy Bay and McClure's Cache",
+      "note": "Where HMS Investigator was trapped from 1851 to 1853. The cache and three crew members' graves are on the shore inside the park; the wreck lies in the bay, just outside.",
+      "location": [
+        74.0839,
+        -119.0029
+      ]
+    },
+    {
+      "name": "Castel Bay",
+      "note": "A deep inlet of M'Clure Strait on the north coast, where many river trips end. One of the places polar bears are most likely to be met.",
+      "location": [
+        74.2006,
+        -119.5863
+      ]
+    },
+    {
+      "name": "Shoran Lake",
+      "note": "Site of the oldest archaeological finds in the park: Pre-Dorset tent rings from about 1500 BC, with scrapers, harpoon heads, needles and muskox bones.",
+      "location": [
+        73.5172,
+        -120.3028
+      ]
+    },
+    {
+      "name": "Nangmagvik Lake",
+      "note": "One of the larger lakes in the park, holding landlocked arctic char.",
+      "location": [
+        74.1506,
+        -120.003
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "By charter aircraft from Inuvik, 750 kilometres south-west, sometimes stopping at Sachs Harbour, 250 kilometres south-west of the park",
+      "River trips start at the headwater lakes, the southern boundary or Green Cabin, and end at the Muskox River or Castel Bay"
+    ],
+    "reservations": "Nothing to book in the park itself, but every trip must be registered with Parks Canada in Inuvik, with a mandatory orientation. Contact the office early about licensed commercial operators, permits, available dates and flight sharing. Aklak Air flies from Inuvik to Sachs Harbour on Mondays and Thursdays, often with an extra Saturday flight in summer — check before you go.",
+    "permits": [
+      "Entry and travel permit, issued at registration; all travel in the park is a restricted activity",
+      "Aircraft Landing Permit, free, issued at registration",
+      "National Park Fishing Permit, from the Parks Canada offices in Inuvik or Sachs Harbour",
+      "Permits for food or fuel caches, commercial filming and photography, and research"
+    ],
+    "camping": [
+      "No designated campsites: camp anywhere except at archaeological sites; Parks Canada's Thomsen River Guide suggests sites",
+      "No campfires: cook on a stove; scheduled flights will not carry fuel, so buy it in Inuvik or Sachs Harbour",
+      "A tent able to stand up to strong, prolonged winds"
+    ],
+    "lodging": [
+      "None in the park; a guesthouse in Sachs Harbour, and hotels in Inuvik"
+    ],
+    "seasonalClosures": [
+      "The Thomsen may be iced over until mid-June, and by early August its lower reaches can be too shallow for a canoe"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "The tundra is frozen and under snow from September until June. Between mid-May and late July the sun does not set, and from late April to late August it is never truly dark. In summer, mid-June to mid-August, the centre of the park ranges from 1°C to 20°C with a daily average of 10°C; the coast is cooler, from -2°C to 12°C. Snow and frost can come at any time, long spells of rain and icy winds are common, and sea ice in M'Clure Strait brings frequent fog to the north. Wind is almost constant, there is no shelter on the open tundra and no firewood. Insects build through June and peak in July.",
+  "directions": "Inuvik, on the Mackenzie River, is reached by the Dempster Highway or by daily flights from southern Canada, and is the base for charters to the park, 750 kilometres to the north-east. Aklak Air flies scheduled services from Inuvik to Sachs Harbour, the hamlet of about 120 people on Banks Island's south-west coast, 250 kilometres from the park; it has an airport, a nursing station, a co-op store and a guesthouse but no ATM, and little in the way of backcountry food. Bring your trip food with you. Once dropped off you are on your own until the plane returns, and weather often delays it: carry extra supplies and allow at least two spare days.",
+  "fees": [
+    {
+      "title": "Northern Park Backcountry Excursion/Camping",
+      "cost": "$37.00 per person per night",
+      "amount": 37,
+      "currencyCode": "CAD",
+      "detail": "$259.00 per person for a year, valid in Aulavik, Auyuittuq, Ivvavik, Nahanni, Nááts'ihch'oh, Quttinirpaaq, Sirmilik, Tuktut Nogait, Vuntut, Qausuittuq and Ukkusiksalik. Charged at registration. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "National Park Fishing Permit",
+      "cost": "$22.25 per day",
+      "amount": 22.25,
+      "currencyCode": "CAD",
+      "detail": "$76.50 for a year. The daily catch and possession limit in Aulavik is one fish. As listed in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "About 1500 BC",
+      "text": "Pre-Dorset hunters camp at Shoran Lake, the oldest sites known in the park."
+    },
+    {
+      "year": "1000–1450",
+      "text": "Thule people live on Banks Island's south coast and travel north to hunt muskoxen."
+    },
+    {
+      "year": "1820",
+      "text": "A member of Parry's first expedition sights the island and names it Banksland."
+    },
+    {
+      "year": "1851",
+      "text": "HMS Investigator, under Captain Robert M'Clure, is trapped in the ice of Mercy Bay in September."
+    },
+    {
+      "year": "1853",
+      "text": "The crew abandons the ship and is rescued, leaving a cache on the shore."
+    },
+    {
+      "year": "1855–1890",
+      "text": "Copper Inuit make yearly trips up the Thomsen valley to salvage the Investigator's cache."
+    },
+    {
+      "year": "Late 1920s",
+      "text": "Fox trapping brings Inuvialuit to Banks Island, and Sachs Harbour is founded."
+    },
+    {
+      "year": "1992",
+      "text": "Canada, the Inuvialuit and the Government of the Northwest Territories conclude the agreement to establish a national park on Banks Island."
+    },
+    {
+      "year": "2010",
+      "text": "Parks Canada finds the wreck of HMS Investigator in Mercy Bay, just outside the park."
+    },
+    {
+      "year": "2026",
+      "text": "In May, Parks Canada's underwater archaeologists return to assess the wreck through the sea ice."
+    }
+  ],
+  "safety": [
+    "Aulavik is one of the most isolated parks in North America. Rescue comes from Inuvik and can take one to two days or more; only satellite phones and messengers work here.",
+    "Watch for polar bears everywhere, and especially near Castel Bay, Mercy Bay and the north coast. Carry bear spray and an air horn, camp with tents in a line, and leave at once if you find a carcass.",
+    "Muskoxen are everywhere and can charge, more so as the bulls enter the rut in late July. Keep a ravine, pond or creek between you and them.",
+    "Cross the major rivers with great care, early in the day and especially early in the summer; the cold water quickly brings on hypothermia.",
+    "Badlands, canyons, coastal cliffs and high riverbanks are prone to stone, mud and snow slides."
+  ],
+  "regulations": [
+    "Register and attend the orientation before entering, and de-register afterwards; all travel needs a permit.",
+    "No recreational drones: flying one can bring a fine of up to $25,000.",
+    "No firearms and no campfires.",
+    "Fishing only with a National Park Fishing Permit, and no more than one fish a day.",
+    "Do not camp on, disturb or remove anything from archaeological sites; pack out all garbage."
+  ],
+  "themes": [
+    "theme-arctic",
+    "theme-tundra",
+    "theme-islands",
+    "theme-coastal",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Thomsen River (Banks Island, NWT, Canada) 07.jpg",
+      "caption": "The Thomsen River in July",
+      "altText": "A wide, slow river winding through flat green and brown tundra under a pale sky"
+    },
+    {
+      "file": "File:Head Hill (Aulavik National Park) 01.jpg",
+      "caption": "Muskox skulls at Head Hill, above the Thomsen and Muskox rivers",
+      "altText": "Weathered animal skulls with curved horns lying on stony tundra above a river valley"
+    },
+    {
+      "file": "File:Muskox on hillside in Aulavik National Park.jpg",
+      "caption": "A muskox herd on a hillside",
+      "altText": "A group of dark, shaggy muskoxen grazing on a bare green slope"
+    },
+    {
+      "file": "File:Aulavik field of flowers.jpg",
+      "caption": "Arctic flowers in July",
+      "altText": "A carpet of small white and yellow flowers on tundra, with clouds rolling in"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Aulavik National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik"
+    },
+    {
+      "title": "How to Get There — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/visit/visit1"
+    },
+    {
+      "title": "Community Services and Facilities — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/visit/visit2"
+    },
+    {
+      "title": "Registration/de-registration — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/visit/visit3"
+    },
+    {
+      "title": "Fees — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/visit/tarifs-fees"
+    },
+    {
+      "title": "Regulations Summary — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/visit/regs"
+    },
+    {
+      "title": "Safety and guidelines — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/securite-safety"
+    },
+    {
+      "title": "Important bulletins — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/bulletins"
+    },
+    {
+      "title": "Paddling — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/activ/pagayer-paddling"
+    },
+    {
+      "title": "Stewardship and management — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/gestion-management"
+    },
+    {
+      "title": "Natural environment — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/gestion-management/environnement-environment"
+    },
+    {
+      "title": "History and culture — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/gestion-management/autochtones-indigenous"
+    },
+    {
+      "title": "Establishment Agreement (management plan) — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/gestion-management/plan/plan1/sec11"
+    },
+    {
+      "title": "HMS Investigator and McClure's Cache — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/investigator/hms-investigator"
+    },
+    {
+      "title": "Discovery of HMS Investigator (2010) and Return to HMS Investigator (2026) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/investigator/2026-investigator"
+    },
+    {
+      "title": "Canadian Geographical Names Database — Natural Resources Canada (coordinates)",
+      "url": "https://geonames.nrcan.gc.ca/"
+    },
+    {
+      "title": "File:Head Hill (Aulavik National Park) 01.jpg — Wikimedia Commons (location of Head Hill)",
+      "url": "https://commons.wikimedia.org/wiki/File:Head_Hill_(Aulavik_National_Park)_01.jpg"
+    },
+    {
+      "title": "Aulavik National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aulavik_National_Park"
+    },
+    {
+      "title": "Mercy Bay and Castel Bay — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mercy_Bay"
+    },
+    {
+      "title": "HMS Investigator — Aulavik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/aulavik/investigator"
+    }
+  ]
+}

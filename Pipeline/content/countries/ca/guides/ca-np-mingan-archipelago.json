@@ -1,0 +1,354 @@
+{
+  "placeID": "ca-np-mingan-archipelago",
+  "contentVersion": 1,
+  "summary": "A string of some twenty main islands and about a thousand islets along Quebec's North Shore, facing Anticosti across the Gulf of St. Lawrence. The sea has carved their limestone into the largest concentration of erosion monoliths in Canada, flowerpot rocks standing on the beaches. Visitors come by boat for a day among the monoliths, puffins and lighthouses, or camp on the islands with everything they need carried in.",
+  "facts": {
+    "establishedYear": 1984,
+    "bestSeasons": [
+      "summer"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "The archipelago has two halves. The western islands, from Île aux Perroquets to Île Sainte-Geneviève, are flat-bedded limestone of the St. Lawrence Lowlands, laid down nearly 450 million years ago and full of fossils. Low plateaus carry raised beaches and old sea cliffs left as the land rose after the ice, and along today's shores the waves have cut the rock into cliffs, caves and free-standing monoliths, some named for the shapes people see in them. The eastern islands, out to the Aguanish River, are small, low-lying islands of the crystalline rock of the Canadian Shield.",
+    "Cold water, thin soils and the isolation of islands make an unusual garden. More than 490 species of vascular plants grow in the park reserve, among them Arctic and alpine species normally found in the mountains or north of the 56th parallel in Quebec. Brother Marie-Victorin found the Mingan thistle here in 1924; in Quebec it grows nowhere else. Some 200 bird species use the islands, with Atlantic puffins, razorbills and common eiders nesting in colonies, and two migratory bird sanctuaries, Watshishou and Betchouane, lie within the reserve. Grey seals and harbour porpoises are common in summer, and minke whales come close to the islands to feed.",
+    "People have used the islands for at least 2,000 years. The first inhabitants, First Nations peoples, gathered shellfish, fished salmon and hunted seal here. The park reserve lies within Nitassinan, the ancestral territory of the Innu of Nutashkuan, and the Innu of Ekuanitshit, on the coast facing the islands, still use them for traditional activities such as snaring hares and camping. Basque crews hunted whales and fished cod in the 15th and 16th centuries and left the remains of ovens for rendering whale oil on Île Nue de Mingan and Île du Havre. Under French and then British rule a fur-trading post stood on Île du Havre, and the Hudson's Bay Company kept settlers off the coast until it lost its monopoly around 1850.",
+    "Villages then grew along the shore, settled from Jersey, French Canada and Acadia, and so many ships were wrecked that lighthouses were built on Île aux Perroquets in 1888 and on Petite île au Marteau in 1915. The building of Route 138 in 1976 opened the coast, and in 1984 the islands became a national park reserve. It is a reserve because it is subject to land claims by the Nutashkuan and Ekuanitshit First Nations; an Agreement-in-Principle of General Nature was signed by the Nutashkuan First Nation and the governments of Canada and Quebec in March 2004."
+  ],
+  "howItWorks": [
+    "The Mingan Archipelago National Park Reserve protects the islands, not the sea around them, and the only way in is by water. Most visitors travel with boat operators recognised by Parks Canada, from Havre-Saint-Pierre, Longue-Pointe-de-Mingan or Rivière-Saint-Jean; their fares are separate from park fees. As listed in November 2026, daily admission is $7.25 for an adult, and youth aged 17 and under get in free at every Parks Canada place. A Parks Canada Discovery Pass, $83.50 for an adult, $71.50 for a senior or $167.50 for a family or group of up to seven people arriving in one vehicle, covers admission at more than 80 Parks Canada places for 12 months. Under the Canada Strong Pass admission was free from 19 June to 7 September 2026; regular fees resumed on 8 September 2026.",
+    "Island camping, the oTENTik tents on Île Quarry and the Ôasis units on Île du Havre and Grande Île are booked through the Parks Canada Reservation Service at reservation.pc.gc.ca or 1-877-737-3783; bookings for 2027 open on Thursday 4 February 2027 at 8 am Eastern time. A camping permit is mandatory and is issued only at the reception and interpretation centres in Havre-Saint-Pierre and Longue-Pointe-de-Mingan, so call in before you board. Boat transport should be booked early, and hiking on Île aux Perroquets, Île Nue de Mingan and Grosse île au Marteau is limited to a set number of people, booked through the boat operators.",
+    "The rules follow from how fragile the islands are. Climbing on the monoliths, or rock climbing anywhere, is forbidden; so is disturbing, feeding or collecting wildlife, plants or fossils. Pets are not allowed on the islands, garbage must be taken off the reserve, and some islands or parts of islands are closed from 1 May to 31 August while seabirds nest. Recreational drones are prohibited at all Parks Canada places, and firearms are prohibited in the park reserve. Boaters are asked to slow to 5 knots within 200 metres of a seabird colony and keep well clear of eider crèches."
+  ],
+  "sights": [
+    {
+      "name": "Île aux Perroquets",
+      "note": "A lighthouse station of 1888 among puffins and razorbills. A Parks Canada guide tells the keepers' story; the keeper's house is now an inn.",
+      "location": [
+        50.2205,
+        -64.2067
+      ]
+    },
+    {
+      "name": "Île Nue de Mingan",
+      "note": "A bare island of limestone monoliths, with a 9-kilometre shoreline walk and the remains of Basque ovens. Number of hikers limited; book with the boat operator.",
+      "location": [
+        50.2106,
+        -64.1243
+      ]
+    },
+    {
+      "name": "Anse des Érosions, Île Quarry",
+      "note": "The archipelago's best-known flowerpot rocks, reached by a path through barrens and bogs.",
+      "location": [
+        50.2109,
+        -63.7973
+      ]
+    },
+    {
+      "name": "Anse des Bonnes Femmes, Île Niapiskau",
+      "note": "Monoliths nicknamed the crocodile, the owl and the wedding cake, the tall Madame de Niapisca, and fossils about 465 million years old.",
+      "location": [
+        50.2069,
+        -63.732
+      ]
+    },
+    {
+      "name": "La Grande Île",
+      "note": "The largest island in the archipelago, with two clusters of monoliths and a 27-kilometre shoreline loop of about twelve hours.",
+      "location": [
+        50.2157,
+        -63.891
+      ]
+    },
+    {
+      "name": "Île du Fantôme",
+      "note": "A short trail through Arctic and alpine plants that are rare this far south, reached past the cliffs of Île du Havre.",
+      "location": [
+        50.2301,
+        -63.6812
+      ]
+    },
+    {
+      "name": "Île du Havre",
+      "note": "Cliffs, a 17-kilometre shoreline loop and Ôasis units. Once the site of a fur-trading post; the Anse des Noyés campground is closed until further notice.",
+      "location": [
+        50.2217,
+        -63.623
+      ]
+    },
+    {
+      "name": "Petite île au Marteau",
+      "note": "The lighthouse station of 1915, with rare northern plants, a stop on the guided excursion to the Betchouane islands.",
+      "location": [
+        50.2089,
+        -63.5578
+      ]
+    },
+    {
+      "name": "Havre-Saint-Pierre Reception and Interpretation Centre",
+      "note": "At 1010 promenade des Anciens: trip planning, tide information and the only place besides Longue-Pointe to pick up a camping permit.",
+      "location": [
+        50.2369,
+        -63.6064
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Longue-Pointe-de-Mingan Reception and Interpretation Centre",
+      "note": "At 625 rue du Centre: information and camping permits for the western islands, whose boats leave from Longue-Pointe.",
+      "location": [
+        50.2612,
+        -64.1553
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Havre-Saint-Pierre, by boat to Île Quarry, Île Niapiskau, Île du Fantôme, Grande Île and the eastern islands",
+      "Longue-Pointe-de-Mingan, by boat to Île aux Perroquets and Île Nue de Mingan",
+      "Rivière-Saint-Jean, at the western end of the archipelago",
+      "Reception centres in Aguanish and Baie-Johan-Beetz, further east along Route 138"
+    ],
+    "reservations": "Campsites, oTENTik tents and Ôasis units are booked through the Parks Canada Reservation Service; 2027 bookings open on 4 February 2027 at 8 am Eastern time. Boat transport is booked with the operators, and early booking is strongly recommended. The inn on Île aux Perroquets is booked with the Corporation de l'Île aux Perroquets. Check before you go with Parks Canada.",
+    "permits": [
+      "A camping permit, collected in person at the Havre-Saint-Pierre or Longue-Pointe-de-Mingan reception centre",
+      "Places for hiking on Île aux Perroquets, Île Nue de Mingan and (from 1 July) Grosse île au Marteau, booked through the boat operators",
+      "A Restricted Activity Permit for any drone use, considered only for park management purposes"
+    ],
+    "camping": [
+      "Thirty undeveloped campsites on six islands, each with a tent pad, picnic table and fireplace, dry toilets and firewood nearby; no drinking water",
+      "oTENTik tents for up to six people on Île Quarry, and Ôasis units on Île du Havre and Grande Île",
+      "Group camping at Anse des Noyés on Île du Havre, closed until further notice"
+    ],
+    "lodging": [
+      "The inn in the lighthouse keeper's house on Île aux Perroquets",
+      "Hotels and other lodgings in Havre-Saint-Pierre, Longue-Pointe-de-Mingan and the other villages of Minganie"
+    ],
+    "seasonalClosures": [
+      "The reserve operates from June to September; campgrounds are open from mid-June to mid-September, and outside those dates stays must be arranged with the park by phone",
+      "Some islands and parts of islands are closed from 1 May to 31 August to protect nesting seabirds",
+      "Fire bans may be declared at any time in the season — check before you go with Parks Canada"
+    ],
+    "seasonalClosureMonths": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "weather": "The Gulf of St. Lawrence sets the climate. Its water reaches only about 8 °C in summer and the sea around the islands is usually between 4 and 6 °C, so summer days are cooler than inland, reaching around 20 °C by day and falling to about 10 °C at night. Hot sunny days come, but so do cool, wet and very windy ones, and wind and fog can rise suddenly around the islands. Parks Canada names mid-June to early July as the best time for nesting birds and flowering plants, and the second halves of June and August as quieter than midsummer. The reception centres close by early October.",
+  "directions": "Havre-Saint-Pierre is about 870 kilometres from Québec City along Route 138; Parks Canada allows about ten hours' drive from Québec City and thirteen from Montréal. Intercar buses run daily from Montréal and Québec City to Sept-Îles and on weekdays from Sept-Îles to Havre-Saint-Pierre, with an overnight stop needed on the way. Air Liaison flies from Québec City to Havre-Saint-Pierre, and several airlines serve Sept-Îles, 165 kilometres from Longue-Pointe and 210 from Havre-Saint-Pierre. The Relais Nordik supply ship Bella Desgagnés calls at Havre-Saint-Pierre weekly from April to mid-January. From the shore, the islands are reached only by boat.",
+  "fees": [
+    {
+      "title": "Daily admission",
+      "cost": "$7.25 adult / $6.25 senior / $15.00 family or group",
+      "amount": 7.25,
+      "currencyCode": "CAD",
+      "detail": "Youth 17 and under free. Boat operators' fares are separate. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Seasonal pass",
+      "cost": "$36.75 adult / $30.50 senior / $72.50 family or group",
+      "amount": 36.75,
+      "currencyCode": "CAD",
+      "detail": "Early-bird price before 30 June: $18.50 adult, $45.50 family or group. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Island campsite",
+      "cost": "$22.00",
+      "amount": 22.0,
+      "currencyCode": "CAD",
+      "detail": "Per site per night, primitive with pit privies; fire permit $14.00 per night; oTENTik or Ôasis $147.50 per night. Reservation fee $11.50 online. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Guided activity on Île Quarry",
+      "cost": "$11.00",
+      "amount": 11.0,
+      "currencyCode": "CAD",
+      "detail": "Per person; guided activities on Île Niapiskau, Île Nue de Mingan or Île aux Perroquets $7.50, on Île du Fantôme $4.50. As listed by Parks Canada in November 2026; check before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 2,000 years ago",
+      "text": "The first known human use of the islands, for shellfish, salmon and seal."
+    },
+    {
+      "year": "1400s–1500s",
+      "text": "Basque crews hunt whales and fish cod, rendering whale oil in stone ovens on Île Nue de Mingan and Île du Havre."
+    },
+    {
+      "year": "1888",
+      "text": "A lighthouse is built on Île aux Perroquets."
+    },
+    {
+      "year": "1915",
+      "text": "A second lighthouse is built on Petite île au Marteau."
+    },
+    {
+      "year": "1924",
+      "text": "Brother Marie-Victorin discovers the Mingan thistle."
+    },
+    {
+      "year": "1984",
+      "text": "The Mingan Archipelago National Park Reserve is created."
+    },
+    {
+      "year": "2004",
+      "text": "The Nutashkuan First Nation and the governments of Canada and Quebec sign an Agreement-in-Principle of General Nature in March."
+    },
+    {
+      "year": "2014",
+      "text": "A new management plan for the park reserve is approved and tabled in Parliament."
+    }
+  ],
+  "safety": [
+    "There is no drinking water on the islands. Carry food and water for two extra days, about two litres a person a day, because sea conditions can stop the boat collecting you on time.",
+    "Rockfalls happen near the cliffs: do not stop beneath overhangs, walk the shore at low tide, and check the tide times, since some stretches cannot be passed at high water. Wet seaweed makes the rocks slippery.",
+    "The sea is cold, around 4 to 6 °C, currents are strong and fog and wind rise quickly. Boaters and paddlers should check the Mingan atlas of currents, carry charts and file a trip plan.",
+    "Mobile coverage is limited. Parks Canada keeps emergency shelters and kits on some islands; for emergencies call 911 or Parks Canada dispatch at 1-888-762-1422."
+  ],
+  "regulations": [
+    "Do not climb on the monoliths or anywhere else; rock climbing is forbidden and the rock is crumbly.",
+    "No pets on the islands, and no firearms in the park reserve.",
+    "Camp only on the site named in your permit. Fires only in the fireplaces provided, with the wood supplied, or on beaches below the high-tide mark with driftwood.",
+    "Do not hunt, disturb, feed or collect wildlife, plants or fossils, and keep out of areas closed to protect nesting seabirds from 1 May to 31 August.",
+    "Take all garbage off the islands when you leave. Recreational drones are prohibited."
+  ],
+  "themes": [
+    "theme-islands",
+    "theme-coastal",
+    "theme-fossils",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Monolithes Mingan.jpg",
+      "caption": "Limestone monoliths on a beach in the Mingan Archipelago",
+      "altText": "Tall eroded rock pillars standing on a pebble beach by the sea"
+    },
+    {
+      "file": "File:Monolith Niapiskau 01.jpg",
+      "caption": "A monolith on Île Niapiskau",
+      "altText": "A grey rock pillar topped with vegetation, standing in shallow water"
+    },
+    {
+      "file": "File:Ile-aux-Perroquets Island.jpg",
+      "caption": "The lighthouse station on Île aux Perroquets",
+      "altText": "A low, dark island with a white lighthouse and buildings, seen across the water"
+    },
+    {
+      "file": "File:Macareux moine sur la falaise de l'Île aux Perroquets.JPG",
+      "caption": "An Atlantic puffin on the cliff of Île aux Perroquets",
+      "altText": "A puffin standing on a ledge of layered grey rock"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mingan Archipelago National Park Reserve — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan"
+    },
+    {
+      "title": "Réserve de parc national de l'Archipel-de-Mingan — Parcs Canada",
+      "url": "https://parcs.canada.ca/pn-np/qc/mingan"
+    },
+    {
+      "title": "Plan your visit — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/visit"
+    },
+    {
+      "title": "How to get here — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/visit/localisation-location"
+    },
+    {
+      "title": "Fees — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/visit/tarifs-fees"
+    },
+    {
+      "title": "Dates and hours of operation — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/visit/heures-hours"
+    },
+    {
+      "title": "Useful tips before you go — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/visit/Conseils_Tips"
+    },
+    {
+      "title": "Frontcountry camping — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/activ/camping/avant-pays-frontcountry"
+    },
+    {
+      "title": "4 star accommodation in the heart of a lighthouse station — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/activ/camping/perroquets"
+    },
+    {
+      "title": "Ôasis — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/activ/camping/oasis"
+    },
+    {
+      "title": "Hiking — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/activ/randonnee_hiking"
+    },
+    {
+      "title": "Sea excursions — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/activ/mer-sea"
+    },
+    {
+      "title": "Safety and guidelines — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/securite-safety"
+    },
+    {
+      "title": "Regulations — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/securite-safety/reg"
+    },
+    {
+      "title": "Observe and sail without disturbing — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/visit/observer-sans-deranger"
+    },
+    {
+      "title": "Drones or unmanned air vehicles (UAV) — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/info/drone"
+    },
+    {
+      "title": "Nature and science — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/nature"
+    },
+    {
+      "title": "Birds — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/nature/faune-wildlife/oiseaux-birds"
+    },
+    {
+      "title": "Marine mammals — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/nature/faune-wildlife/marins-marine"
+    },
+    {
+      "title": "Cultural heritage — Mingan Archipelago National Park Reserve",
+      "url": "https://parks.canada.ca/pn-np/qc/mingan/Culturel"
+    },
+    {
+      "title": "Mingan Archipelago National Park Reserve of Canada Management Plan 2014 — Parks Canada",
+      "url": "https://pcweb2.azureedge.net/-/media/pn-np/qc/mingan/pdf/Mingan-Management-Plan.pdf"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Parks Canada reservations — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/reserve"
+    },
+    {
+      "title": "Mingan Archipelago National Park Reserve — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mingan_Archipelago_National_Park_Reserve"
+    },
+    {
+      "title": "OpenStreetMap (Nominatim) — sight locations",
+      "url": "https://nominatim.openstreetmap.org/"
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "placeID": "ca-np-gulf-islands",
+  "contentVersion": 1,
+  "summary": "Pieces of a sheltered archipelago in the Salish Sea, between Vancouver Island and the mainland: forest, bluffs and beaches spread across eleven publicly accessible islands and dozens of islets and reefs. Watch for orcas from East Point on Saturna, camp on the sands of Sidney Spit, or paddle between backcountry sites on islands no ferry reaches. The climate is Mediterranean-like: warm, dry summers and mild winters.",
+  "facts": {
+    "establishedYear": 2003,
+    "areaHectares": 3600,
+    "bestSeasons": [
+      "summer",
+      "spring"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "The southern Gulf Islands lie in the rain shadow of the mountains of Vancouver Island and the Olympic Peninsula, and the park reserve represents the Strait of Georgia Lowlands: warm, dry summers and mild winters that rarely see snow. The islands are folded and heavily faulted sedimentary rock, with ridges of hard sandstone and conglomerate standing above valleys and bays cut in softer shale. Ice up to a mile thick shaped them, retreating about 12,000 years ago and leaving the sand and gravel that form Sidney Island.",
+    "Many plants here are at the northern edge of their range and grow nowhere else in Canada. Garry oak and arbutus, with its smooth red bark, cling to dry rocky ridges among wildflower meadows, above forests of Douglas fir and western red cedar that were mostly logged long ago. Broom, Himalayan blackberry and gorse crowd out native plants, and with few large predators, deer strip the forest understory. The islands hold 15 endangered and 10 threatened species, from sharp-tailed snakes to killer whales, while seals, sea lions, porpoises and otters work the surrounding waters.",
+    "Coast Salish First Nations have long and continuous ties to these islands and have managed their lands and beaches for thousands of years. Their work shows in canoe runs, camas meadows and sea gardens: rock walls built at the lowest tide line that trap sediment into terraces where butter clams can be four times as plentiful as on an unmodified beach. The clam gardens on Russell Island have been in use for at least 1,000 years. The W̱SÁNEĆ name SMONEĆTEN, now restored to the old McDonald campground, means place of pitch, where Douglas fir sap was gathered for fire-starting, healing and sealing canoes.",
+    "Spanish expeditions charted the islands in the 1700s, and farming, fishing and logging followed settlement from the 1870s. Hawaiians who came with the fur trade, the Kanaka, settled here too: William Haumea was granted Russell Island in 1886, and Maria Mahoi's family farmed it for more than half a century. D'Arcy Island held a colony for Chinese immigrants with leprosy in the late 1800s and early 1900s. A federal-provincial land programme begun in 1995, the Pacific Marine Heritage Legacy, gathered provincial parks and bought land, and on 9 May 2003 the reserve became Canada's 40th national park."
+  ],
+  "howItWorks": [
+    "Gulf Islands is a national park reserve, land set aside for a national park while Indigenous land claims are resolved, and it is a park in pieces: Parks Canada lands sit among island communities and private land, so check the park map before you walk or land anywhere. Parks Canada charges no entrance fee here, so you need no daily pass; you pay for camping, mooring and reservations. An Indigenous Management Board brings the park together with the Coast Salish Nations of the IEȽȻIȽTEL Accord, among them the W̱SÁNEĆ Leadership Council, Tsawout and the Quw'utsun Nation. Traditional hunting by First Nations takes place in the park, so wear bright colours, particularly in winter.",
+    "The frontcountry campgrounds — SMONEĆTEN near Swartz Bay, Prior Centennial on Pender and Sidney Spit, reached by boat — open from 15 May to 30 September and are booked through the Parks Canada Reservation Service (reservation.pc.gc.ca, 1-877-737-3783); bookings for 2026 opened on 29 January. Backcountry sites are open all year but are not maintained from 1 October to 14 May. Shingle Bay and Narvaez Bay can be reserved; D'Arcy Island, Isle-de-Lis, James Bay on Prevost and the three campgrounds on Portland Island are first come, first served. Beaumont is closed to camping in 2026, and Cabbage Island has been closed to camping and day use since April 2025. The camping permit holder must be at least 19, and no one may camp more than 14 days a year.",
+    "Fires are tightly limited. Wood campfires are allowed only in the fire rings at SMONEĆTEN and Prior Centennial, and only when no fire ban is in force; they are banned at Sidney Spit, at every backcountry campground and in every day-use area, even below the high-tide line, with fines of up to $25,000. It is illegal to entice, approach, feed or disturb wildlife, and these waters are critical habitat for the endangered Southern Resident killer whales, so follow the federal marine mammal regulations. Recreational drones are banned, dogs must be on a leash, and Sidney Island's park lands close each year from mid-October to mid-February for restoration work and cultural harvesting."
+  ],
+  "sights": [
+    {
+      "name": "Sidney Spit",
+      "note": "A sand spit on Sidney Island, a 20-minute summer foot-ferry ride from Sidney: beaches, a lagoon that is an Important Bird Area, a campground and the park's only overnight dock.",
+      "location": [
+        48.6475,
+        -123.3369
+      ]
+    },
+    {
+      "name": "East Point",
+      "note": "Saturna Island's eastern tip, a Whale Trail site for watching orcas, seals and Steller sea lions from shore. A community museum fills the old fog alarm building.",
+      "location": [
+        48.785,
+        -123.0453
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Mount Warburton Pike",
+      "note": "A summit with wide views over the Gulf Islands, at the top of a long, winding road on Saturna Island.",
+      "location": [
+        48.7744,
+        -123.1717
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Winter Cove",
+      "note": "A Saturna Island day-use area. The 1.5-kilometre Xwiwxwyus Trail loops through forest and salt marsh to a viewpoint over Boat Pass.",
+      "location": [
+        48.8117,
+        -123.1964
+      ]
+    },
+    {
+      "name": "Narvaez Bay",
+      "note": "One of the least disturbed bays in the islands, ringed by regenerating Douglas fir and Garry oak–arbutus woodland, with a walk-in or paddle-in campground.",
+      "location": [
+        48.7761,
+        -123.0969
+      ]
+    },
+    {
+      "name": "Mount Norman",
+      "note": "A 2.4-kilometre trail on the Penders, from Ainslie Point Road or Canal Road, climbing 244 metres to a viewpoint over the islands.",
+      "location": [
+        48.7594,
+        -123.2403
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Princess Margaret (Portland Island)",
+      "note": "A boat-access island with three backcountry campgrounds linked by a 7-kilometre perimeter trail. Shell middens around its shore recall a former First Nations village.",
+      "location": [
+        48.7261,
+        -123.3731
+      ]
+    },
+    {
+      "name": "Russell Island",
+      "note": "The 1.2-kilometre Haumea Trail passes Coast Salish clam gardens and the Mahoi house, one of the last Hawaiian homesteads in the region.",
+      "location": [
+        48.7494,
+        -123.4072
+      ]
+    },
+    {
+      "name": "D'Arcy Island",
+      "note": "Coves, cobble beaches and arbutus forest on a former colony for Chinese immigrants with leprosy. Seven first-come campsites, reached by water only.",
+      "location": [
+        48.5664,
+        -123.2789
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Swartz Bay ferry terminal, 31 kilometres from Victoria — car ferries to Pender, Mayne and Saturna, and SMONEĆTEN Campground a few minutes away",
+      "Sidney — the summer passenger ferry to Sidney Spit",
+      "Otter Bay ferry terminal, North Pender — for Prior Centennial, Shingle Bay, Roe Lake and Mount Norman",
+      "Saturna Island ferry terminal — for Winter Cove, Narvaez Bay, Mount Warburton Pike and East Point",
+      "By kayak, sailboat, powerboat or water taxi — for Princess Margaret, Russell, D'Arcy, Isle-de-Lis and Prevost islands"
+    ],
+    "reservations": "Frontcountry campsites, the Sidney Spit group campground and the backcountry sites at Shingle Bay and Narvaez Bay are booked through the Parks Canada Reservation Service (reservation.pc.gc.ca or 1-877-737-3783). For 2026 bookings opened on 16 January for the backcountry sites and on 29 January for the frontcountry. Other backcountry sites and all mooring buoys are first come, first served. Dates change each year — check with Parks Canada before you go.",
+    "permits": [
+      "No entry pass is needed; a camping permit is, and its holder must be 19 or older",
+      "Custodial groups kayaking or canoeing need a restricted-activity permit from the park reserve",
+      "Commercial drone use needs a Parks Canada permit; recreational drones are banned",
+      "The group campground at Sidney Spit must be reserved"
+    ],
+    "camping": [
+      "SMONEĆTEN, near Swartz Bay: 49 sites with drinking water and fire rings, 15 May to 30 September",
+      "Prior Centennial, North Pender: 17 sites with drinking water and fire rings, 15 May to 30 September",
+      "Sidney Spit, Sidney Island: 29 tent sites reached by boat, no water and no fires, plus a group campground",
+      "Backcountry: Shingle Bay (10 sites) and Narvaez Bay (7) by reservation; D'Arcy (7), Isle-de-Lis (3), James Bay on Prevost (10) and Portland Island (24, in three campgrounds) first come, first served. Bring all drinking water"
+    ],
+    "lodging": [
+      "The park reserve offers camping only. Pender, Saturna and Mayne islands have shops, restaurants and other services, and Sidney is a short drive from the Swartz Bay ferry terminal"
+    ],
+    "seasonalClosures": [
+      "Frontcountry campgrounds close from 1 October to 14 May; backcountry sites stay open but are not maintained",
+      "Parks Canada lands on Sidney Island close to the public from 15 October 2026 to 14 February 2027, as they do each year after the camping season; the mooring buoys stay open",
+      "The Sidney Spit passenger ferry runs in summer only — check before you go",
+      "Beaumont is closed to camping in 2026, and Cabbage Island to camping and day use until further notice"
+    ],
+    "seasonalClosureMonths": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "The islands sit in a rain shadow and have a Mediterranean-like climate, with warm, dry summers and mild winters that rarely see snow. Summer is the main season: the frontcountry campgrounds and park programmes run from mid-May to the end of September, with most programmes in July and August, and it is also when Southern Resident killer whales are in park waters and harbour seal pups lie out on the rocks at East Point. Fire bans may be declared, and it takes a lot of rain to wet the ground again, so a ban can stay in force through cool, rainy spells. In autumn and winter Steller sea lions gather off East Point.",
+  "directions": "BC Ferries runs car and passenger services to Pender, Mayne and Saturna islands from Swartz Bay, 31 kilometres north of Victoria, and from Tsawwassen on the mainland; once you land, park lands are reached by car or bicycle. SMONEĆTEN Campground is a few minutes from Swartz Bay, on the Route 72 bus and close to the Lochside cycling trail into Victoria. Sidney Spit is reached by a summer foot-passenger ferry from the town of Sidney. Every other part of the park is reached only by kayak, sailboat, powerboat or water taxi; Fulford Harbour on Salt Spring Island is a launch for paddling to Russell and Portland islands.",
+  "fees": [
+    {
+      "title": "Admission",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "CAD",
+      "detail": "Parks Canada charges no entrance fee at Gulf Islands National Park Reserve; other charges apply."
+    },
+    {
+      "title": "Frontcountry campsite, per night",
+      "cost": "$22.00",
+      "amount": 22,
+      "currencyCode": "CAD",
+      "detail": "Per party and vehicle at SMONEĆTEN and Prior Centennial, per party at Sidney Spit, 15 May to 30 September; an additional vehicle is $8.75. As listed by Parks Canada in November 2026 — check before you go."
+    },
+    {
+      "title": "Backcountry camping",
+      "cost": "$15.00",
+      "amount": 15,
+      "currencyCode": "CAD",
+      "detail": "Per person per night. As listed in November 2026."
+    },
+    {
+      "title": "Mooring buoy, per night",
+      "cost": "$24.00",
+      "amount": 24,
+      "currencyCode": "CAD",
+      "detail": "Charged after 3 pm at Sidney Spit, Beaumont, Cabbage Island and D'Arcy Island; pay at the red self-registration vaults ashore. Overnight docking at Sidney Spit is $1.50 a foot. As listed in November 2026."
+    },
+    {
+      "title": "Group camping, Sidney Spit",
+      "cost": "$6.25",
+      "amount": 6.25,
+      "currencyCode": "CAD",
+      "detail": "Per person per night, for groups of 15 to 30; school and not-for-profit youth groups of up to 25 pay $60.50 a night. As listed in November 2026."
+    },
+    {
+      "title": "Reservation fee",
+      "cost": "$11.50 online / $13.50 by phone",
+      "amount": 11.5,
+      "currencyCode": "CAD",
+      "detail": "Per reservation, modification or cancellation. As listed in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1700s",
+      "text": "Spanish expeditions chart the Gulf Islands."
+    },
+    {
+      "year": "1870s",
+      "text": "The first major settlement of the islands begins."
+    },
+    {
+      "year": "1886",
+      "text": "William Haumea, a Hawaiian settler, receives a Crown grant for Russell Island."
+    },
+    {
+      "year": "1902",
+      "text": "Maria Mahoi moves to Russell Island; her family's house is built over the next five years."
+    },
+    {
+      "year": "1903",
+      "text": "A canal is dredged between North and South Pender, which had been joined by a narrow neck of land."
+    },
+    {
+      "year": "1948",
+      "text": "McDonald Provincial Park, today's SMONEĆTEN Campground, is established on 23 March on land donated by Alexander McDonald."
+    },
+    {
+      "year": "1995",
+      "text": "Canada and British Columbia begin the Pacific Marine Heritage Legacy to expand protected areas on the coast."
+    },
+    {
+      "year": "1997",
+      "text": "Russell Island is sold to the Pacific Marine Heritage Legacy."
+    },
+    {
+      "year": "2003",
+      "text": "Gulf Islands National Park Reserve is established on 9 May, Canada's 40th national park."
+    },
+    {
+      "year": "2012",
+      "text": "Land on North Pender and Prevost islands and a donation from Environment Canada enlarge the park reserve to about 36 square kilometres."
+    },
+    {
+      "year": "2021",
+      "text": "The W̱SÁNEĆ Leadership Council and Parks Canada rename McDonald Campground SMONEĆTEN."
+    }
+  ],
+  "safety": [
+    "Rescue and medical help can take a long time to reach the islands. Cell phones may not work everywhere and may pick up a US network, so tell 911 operators you are in Canada; carry a marine radio on the water and use VHF channel 16 in distress.",
+    "Shoreline rocks are slippery and the tide comes in fast. Make sure you can get back to land when exploring islets and reefs at low tide.",
+    "There is no drinking water at Sidney Spit or at any backcountry campground. Bring enough for your whole trip.",
+    "Keep well away from harbour seal pups on shore; the mother is usually out fishing and will return."
+  ],
+  "regulations": [
+    "No campfires, briquette barbecues or portable fire pits at Sidney Spit, at backcountry campgrounds or in day-use areas, even below the high-tide line. Fires are allowed only in the fire rings at SMONEĆTEN and Prior Centennial when no ban is in force.",
+    "Do not entice, approach, feed or disturb wildlife. Vessels must stay at least 25 metres from protected islets such as the Belle Chain Islets.",
+    "No recreational drones. No cycling on park trails except the trail between the parking area and the campground at Narvaez Bay.",
+    "Dogs must be on a leash at all times. Stay on designated trails, and leave shells, plants and other natural objects where you find them.",
+    "Camp only in designated sites, for no more than 14 days a year, and pack out all garbage; there are no bins at backcountry sites."
+  ],
+  "themes": [
+    "theme-islands",
+    "theme-coastal",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:East Point Park - panoramio.jpg",
+      "caption": "East Point on Saturna Island, looking out over the Strait of Georgia",
+      "altText": "A grassy headland with a small white building above a rocky shore and calm blue sea, with distant mountains"
+    },
+    {
+      "file": "File:Narvaez Bay (7604530724).jpg",
+      "caption": "Narvaez Bay, Saturna Island",
+      "altText": "Flat sandstone ledges running into a calm blue bay between forested hills"
+    },
+    {
+      "file": "File:Sidney Spit (part of Gulf Islands National Park Reserve), Sidney Island, British Columbia, Canada 07.jpg",
+      "caption": "The shore at Sidney Spit at low tide",
+      "altText": "A low-tide shore of pebbles and green weed below a steep forested bank, with calm water beyond"
+    },
+    {
+      "file": "File:East Point (7604532758).jpg",
+      "caption": "Wave-sculpted sandstone at East Point",
+      "altText": "Smooth, hollowed sandstone rocks at the water's edge below a white wooden building"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gulf Islands National Park Reserve — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf"
+    },
+    {
+      "title": "Fees — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/visit/tarifs-fees"
+    },
+    {
+      "title": "Camping — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/activ/camping"
+    },
+    {
+      "title": "Backcountry camping — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/activ/camping/campinglarrierepays-backcountrycamping"
+    },
+    {
+      "title": "Frontcountry camping — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/activ/camping/campinglavantpays-frontcountrycamping"
+    },
+    {
+      "title": "Gulf Islands National Park Reserve Visitor Guide (2025) — Parks Canada",
+      "url": "https://pcweb2.azureedge.net/-/media/pn-np/bc/gulf/WET4/visit/PDF/GI-VisitorGuide2025-MidYr--EN-vWEB.pdf"
+    },
+    {
+      "title": "Plan your visit — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/visit"
+    },
+    {
+      "title": "Boating — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/activ/navigation-de-plaisance-boating"
+    },
+    {
+      "title": "Hiking — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/activ/randonnee-hiking"
+    },
+    {
+      "title": "Staff favourites — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/activ/prefere-favourites"
+    },
+    {
+      "title": "Five tips for successful wildlife viewing — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/activ/faune-wildlife"
+    },
+    {
+      "title": "Campfire regulations — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/visit/infofeu-fireinfo"
+    },
+    {
+      "title": "Important bulletins — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/bulletins"
+    },
+    {
+      "title": "Area closure: Sidney Island (2026–2027) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/bulletins/3BAE846F-20B2-4FC3-BED2-12CF03ABF322"
+    },
+    {
+      "title": "Visitor safety — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/securite-safety"
+    },
+    {
+      "title": "Environment — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/nature/environnement-environment"
+    },
+    {
+      "title": "Nature and science — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/nature"
+    },
+    {
+      "title": "Sea garden restoration — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/nature/restauration-restoration/jardins-de-la-mer-sea-gardens"
+    },
+    {
+      "title": "Culture — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/culture"
+    },
+    {
+      "title": "SMONEĆTEN Campground — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/culture/denominationducamping-campgroundnaming"
+    },
+    {
+      "title": "European culture — Gulf Islands National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/culture/europeen-european"
+    },
+    {
+      "title": "Hawaiian settlement on Russell Island — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/culture/hawaienne-hawaiian"
+    },
+    {
+      "title": "First Nations cooperative planning and management committees — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/info/comites-committes"
+    },
+    {
+      "title": "Park boundaries and legal description — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gulf/info/limites-boundaries"
+    },
+    {
+      "title": "Gulf Islands National Park Reserve of Canada — BC Geographical Names",
+      "url": "https://apps.gov.bc.ca/pub/bcgnws/names/56317.html"
+    },
+    {
+      "title": "Canada National Parks Act, Schedule 2 — Justice Laws",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/N-14.01/FullText.html"
+    },
+    {
+      "title": "Canadian Geographical Names Database (sight coordinates)",
+      "url": "https://geogratis.gc.ca/services/geoname/en/geonames"
+    }
+  ]
+}

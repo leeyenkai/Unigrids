@@ -1,0 +1,377 @@
+{
+  "placeID": "ca-np-gwaii-haanas",
+  "contentVersion": 1,
+  "summary": "The southern third of Haida Gwaii: a roadless archipelago of rainforest islands, inlets and reefs, reached only by boat or seaplane and protected from mountaintop to seafloor. Haida Gwaii Watchmen welcome visitors at ancient village sites, among them SG̱ang Gwaay Llnagaay, a World Heritage Site where carved poles still stand. The Haida Nation and the Government of Canada manage it together, and every independent visitor books ahead and completes an orientation.",
+  "facts": {
+    "establishedYear": 1988,
+    "areaHectares": 150000,
+    "bestSeasons": [
+      "summer"
+    ],
+    "suggestedTime": "Several days, with spare days for weather"
+  },
+  "story": [
+    "Haida Gwaii, the Islands of the People, lies about 100 kilometres off the northern coast of British Columbia, and Gwaii Haanas, the Islands of Beauty, takes up its southern third: the south end of Moresby Island and hundreds of smaller islands and islets. The San Christoval Mountains form its spine, and rainforest of immense western red cedar, western hemlock and Sitka spruce runs from the shore up their slopes. When the ice left this coast more than 15,000 years ago, sea levels were far lower; the floor of Hecate Strait still holds the drowned rivers and lakes of a tundra plain.",
+    "Isolation has made these islands distinct. Haida Gwaii has more unique subspecies than any area of its size in Canada, among them its own black bear, with larger jaws and teeth than its mainland relatives from a long diet of salmon and shellfish. Some 1.5 million seabirds nest along the archipelago's shores, about half of them in Gwaii Haanas, including the ancient murrelet, which nests nowhere else in Canada. The largest Steller sea lion colony on Canada's west coast is here. People changed it too: the sea otter was hunted out in the fur trade, and Sitka black-tailed deer, brought in by settlers in 1878, have stripped most of the forest understory.",
+    "Archaeological evidence of people on these islands goes back at least 12,000 years, and Haida oral history tells of ancestors who came out of the ocean. Villages of great cedar longhouses and carved poles stood throughout Gwaii Haanas. After European contact in 1774 came the sea otter trade and then epidemics of smallpox and other diseases that reduced the Haida from tens of thousands to about 600 by the late 1800s. Survivors from the southern villages gathered at SG̱ang Gwaay and moved north to Skidegate, and the villages were left to the forest.",
+    "In the 1970s plans to log southern Moresby Island set off a long dispute. The Skidegate Band Council founded the Haida Gwaii Watchmen in 1981, and in 1985 the Haida Nation declared the area a Haida Heritage Site and blockaded the logging road on Athlii Gwaii (Lyell Island). Canada and British Columbia agreed to protect it in 1987 and 1988, and in 1993 Canada and the Council of the Haida Nation signed the Gwaii Haanas Agreement. The marine area followed in 2010, and in 2013 the Legacy Pole rose at Windy Bay, the first pole raised in Gwaii Haanas in 130 years."
+  ],
+  "howItWorks": [
+    "Gwaii Haanas carries three designations: a national park reserve on land, a national marine conservation area reserve at sea since 2010, and the Haida Heritage Site the Haida Nation declared over both in 1985. It is managed by the Archipelago Management Board, with three members from the Council of the Haida Nation and three from the Government of Canada (two Parks Canada, one Fisheries and Oceans Canada). The two parties hold differing views on who owns the land and agree to protect it regardless. The Haida Gwaii Watchmen, run by the Council of the Haida Nation with support from Parks Canada, live at the main village sites from May to September and may ask to see your permit.",
+    "There are no roads, stores or fuel. You come with a licensed tour operator, who makes your reservation, collects the fee and gives the orientation, or independently. Independent visitors must reserve at least five business days ahead with the Gwaii Haanas office (1-877-559-8818); bookings for the 2027 season open on 15 February 2027 at 9 am Pacific time. Everyone 17 or older must then complete the mandatory online orientation and score at least 80% on its quiz, and you must carry your booking receipt and orientation certificate throughout the trip — on paper is best, as there is no cell service. Gwaii Haanas charges its own daily or seasonal visitor fee; it is not among the places where the Parks Canada Discovery Pass is sold or used. Youth aged 17 and under are free.",
+    "There are no formal campsites or maintained trails. Camp on beaches above the high-tide line, no more than 12 people ashore at once and no more than three nights within one nautical mile of the same spot. Hang all food, never leave attractants unattended, and fillet fish at the water's edge. If a bear grows used to people, Gwaii Haanas closes the area and removes the people, not the bear. SG̱ang Gwaay and Hotspring Island are closed to camping, and several islands, including Titul, House and most of the Copper Islands, are closed to all access for cultural or ecological reasons."
+  ],
+  "sights": [
+    {
+      "name": "SG̱ang Gwaay Llnagaay (Nan Sdins)",
+      "note": "The village on Anthony Island, a World Heritage Site: standing and fallen poles, house pits and longhouse posts and beams. Check in at the Watchmen cabin first.",
+      "location": [
+        52.0989,
+        -131.2175
+      ]
+    },
+    {
+      "name": "G̱andll K'in Gwaay.yaay (Hotspring Island)",
+      "note": "Hot water seeps from at least 26 vents at 32 to 77 °C; three pools were rebuilt after the 2012 earthquake drained the old ones. No camping or pets.",
+      "location": [
+        52.5767,
+        -131.4406
+      ]
+    },
+    {
+      "name": "Hlk'yah G̱awG̱a (Windy Bay)",
+      "note": "On Lyell Island: the 2013 Legacy Pole, a longhouse built during the 1985 blockade, and a trail to Sitka spruce estimated at 800 to 900 years old.",
+      "location": [
+        52.6903,
+        -131.4508
+      ]
+    },
+    {
+      "name": "K'iid Xyangs Ḵ'iidaay (Burnaby Narrows)",
+      "note": "A narrow passage known for the marine life seen from a kayak drifting through. Its Haida name was restored in 2022. No camping along the narrows.",
+      "location": [
+        52.36,
+        -131.353
+      ]
+    },
+    {
+      "name": "T'aanuu Llnagaay (Tanu)",
+      "note": "Village site where house depressions and fallen, moss-covered posts trace the layout of 25 to 40 longhouses. Outside the reserve but within the Haida Heritage Site, under the same rules.",
+      "location": [
+        52.7656,
+        -131.6164
+      ]
+    },
+    {
+      "name": "Haida Heritage Centre, Skidegate",
+      "note": "The heritage centre at Ḵay Llnagaay on Graham Island, where the Gwaii Haanas office is based.",
+      "location": [
+        53.2484,
+        -131.9975
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Moresby Camp in Cumshewa Inlet — the closest boat launch, a provincial recreation site reached by rough logging road",
+      "With a licensed tour operator by boat or seaplane, from communities on Haida Gwaii",
+      "Sandspit (K'il Kun) on Moresby Island, with the airport, and Daajing Giids and Skidegate on Graham Island — the bases for trips south"
+    ],
+    "reservations": "Independent visitors must reserve with the Gwaii Haanas office at least five business days before the trip; bookings for the 2027 season open on 15 February 2027 at 9 am Pacific time through an online form, and until then by phone (1-877-559-8818). The office is closed at weekends and on statutory holidays. Tour-operator clients book through their operator. Travel is weather-dependent, so build spare days into your entry and exit dates — check with Gwaii Haanas before you go.",
+    "permits": [
+      "Trip permit (your reservation) and mandatory online orientation for every independent visitor; carry both",
+      "A Tidal Waters Fishing Licence for saltwater fishing; freshwater fishing is not permitted",
+      "Written permission for any drone flight or for shore activities in groups of 13 or more",
+      "A Gwaii Haanas business licence for anyone transporting or guiding visitors"
+    ],
+    "camping": [
+      "No formal campsites: camp on pebble or sand beaches and headlands above the high-tide line, out of sight and sound of other groups",
+      "Maximum 12 people ashore and three consecutive nights at one location",
+      "No camping at SG̱ang Gwaay, Hotspring Island or along Burnaby Narrows"
+    ],
+    "lodging": [
+      "None inside Gwaii Haanas. Haida Gwaii's communities have visitor centres in Sandspit, Daajing Giids, Port Clements and Masset, and most goods and services can be bought on the islands"
+    ],
+    "seasonalClosures": [
+      "The Haida Gwaii Watchmen are at the village sites from May to September only",
+      "The peak visitor season runs from June to September — check before you go"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "The islands are cool and wet in any month. Spring and summer are usually the driest months, but the rainy season can begin as early as August, and summer brings strong winds that funnel down the east-coast inlets in gusts dangerous to kayaks, as well as fog on the west coast and in Houston Stewart Channel. The east side is considerably drier than the west, which takes 500 to 800 centimetres of rain a year and is one of the windiest and wettest places in Canada. Winter storms are frequent. Plan for days spent weathered in.",
+  "directions": "Haida Gwaii is reached by air or sea. Air Canada flies between Vancouver and Sandspit, and Pacific Coastal Airlines between Vancouver and Masset; BC Ferries sails year-round from Prince Rupert to Skidegate Landing, a seven-hour crossing, and the Inside Passage ferry links Prince Rupert with Port Hardy on Vancouver Island. A 20-minute ferry joins Graham and Moresby islands. From Sandspit a rough logging road leads to Moresby Camp, the nearest launch; most boaters and paddlers then take the sheltered inside route through Carmichael and Dana passages, about two days by kayak to Gwaii Haanas. Many visitors instead travel, or have their kayaks carried, with a licensed operator.",
+  "fees": [
+    {
+      "title": "Visitor fee, daily",
+      "cost": "$29.00 adult / $24.50 senior",
+      "amount": 29,
+      "currencyCode": "CAD",
+      "detail": "Per person per day, for excursions and camping in Gwaii Haanas. Youth aged 17 and under free. As listed by Parks Canada in November 2026 — check before you go."
+    },
+    {
+      "title": "Visitor fee, seasonal",
+      "cost": "$171.50 adult / $143.00 senior",
+      "amount": 171.5,
+      "currencyCode": "CAD",
+      "detail": "A seasonal fee in place of daily fees; youth free. As listed in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "At least 12,000 years ago",
+      "text": "People are living on Haida Gwaii; the oldest known coastal sites now lie under the sea."
+    },
+    {
+      "year": "1774",
+      "text": "The first recorded European contact on Haida Gwaii."
+    },
+    {
+      "year": "1787–1840",
+      "text": "The maritime fur trade devastates the sea otter population."
+    },
+    {
+      "year": "1878",
+      "text": "Settlers introduce Sitka black-tailed deer to Haida Gwaii."
+    },
+    {
+      "year": "1908",
+      "text": "The Dawson caribou, the islands' own caribou, becomes extinct."
+    },
+    {
+      "year": "1981",
+      "text": "SG̱ang Gwaay is inscribed as a World Heritage Site, and the Skidegate Band Council establishes the Haida Gwaii Watchmen Program."
+    },
+    {
+      "year": "1985",
+      "text": "The Haida Nation designates Gwaii Haanas a Haida Heritage Site and blockades logging on Athlii Gwaii (Lyell Island)."
+    },
+    {
+      "year": "1988",
+      "text": "Canada and British Columbia sign the South Moresby Agreement, leading to the national park reserve."
+    },
+    {
+      "year": "1993",
+      "text": "Canada and the Council of the Haida Nation sign the Gwaii Haanas Agreement, creating the Archipelago Management Board."
+    },
+    {
+      "year": "2010",
+      "text": "The Gwaii Haanas Marine Agreement is signed in January, and the national marine conservation area reserve is established in June."
+    },
+    {
+      "year": "2012",
+      "text": "An earthquake in October drains the hot pools on G̱andll K'in Gwaay.yaay."
+    },
+    {
+      "year": "2013",
+      "text": "The Legacy Pole is raised at Hlk'yah G̱awG̱a on 15 August, marking 20 years of cooperative management."
+    },
+    {
+      "year": "2018",
+      "text": "The Gina 'Waadlux̱an KilG̱uhlG̱a Land-Sea-People Management Plan is signed."
+    },
+    {
+      "year": "2022",
+      "text": "Five Haida place names are restored in Gwaii Haanas, among them K'iid Xyangs Ḵ'iidaay for Burnaby Narrows."
+    }
+  ],
+  "safety": [
+    "This is a remote place with no cell or internet service, and rescue depends on the weather; in foul conditions help may take many hours. Carry a VHF radio: the Coast Guard is on channel 16, the Watchmen on channel 6 within sight of their villages.",
+    "Tides range more than seven metres, and currents in channels such as Houston Stewart Channel reach five knots. Carry charts and tide tables, and be careful in shallow, rocky bays like Windy Bay.",
+    "Winds can rise with little warning, and the north coast is treated as hazardous to small craft at all times, so no small craft warning is ever issued. Avoid the exposed west coast unless you are a highly experienced mariner, and treat hypothermia as a real risk.",
+    "Black bears forage along the shore. Never approach or feed them; if you meet one, do not run — back away slowly and talk calmly — and report every encounter.",
+    "The hot pools carry bacteria and the risk of overheating; pregnant women, people with heart conditions and young children are advised to stay out."
+  ],
+  "regulations": [
+    "Carry your trip permit and orientation certificate at all times and show them to a park warden or Haida Gwaii Watchman on request.",
+    "No shore-based activity in groups of 13 or more, and no camping for more than three consecutive nights within one nautical mile of the same spot, unless weather prevents safe travel.",
+    "No drones, no caching of fuel, and no unattended food, gear or anything else that could attract wildlife.",
+    "Respect closures: SG̱ang Gwaay, Hotspring Island and Burnaby Narrows are closed to camping, Hotspring Island to pets, and Titul Island, House Island and its islets, most of the Copper Islands and other listed places to all access.",
+    "Do not disturb middens, bones or artifacts or strip bark from trees, and ask before photographing people or their homes."
+  ],
+  "themes": [
+    "theme-indigenous-heritage",
+    "theme-islands",
+    "theme-temperate-rainforest",
+    "theme-coastal",
+    "theme-hot-springs",
+    "theme-conservation-movement",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:S'G̱ang Gwaay Llanagaay 6291.jpg",
+      "caption": "Weathered poles at SG̱ang Gwaay Llnagaay",
+      "altText": "Grey, weathered carved poles standing in a bright green clearing at the edge of a dark forest"
+    },
+    {
+      "file": "File:Gwaii Haanas (28724834242).jpg",
+      "caption": "Forested islands and calm water in Gwaii Haanas",
+      "altText": "Still blue water between low forested islands, with distant hills under a pale sky"
+    },
+    {
+      "file": "File:Gwaii Haanas (28210030864).jpg",
+      "caption": "Life in the shallows of Gwaii Haanas",
+      "altText": "A red sea urchin, an orange sea star and yellow kelp on rocks under clear shallow water"
+    },
+    {
+      "file": "File:Gwaii Haanas (28832822035).jpg",
+      "caption": "Cloud over the mountains of Gwaii Haanas",
+      "altText": "Low clouds over dark mountains across a choppy grey sea"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gwaii Haanas National Park Reserve, National Marine Conservation Area Reserve, and Haida Heritage Site — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas"
+    },
+    {
+      "title": "Reservations and fees — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/visit/tarifs-fees"
+    },
+    {
+      "title": "Visitor orientation — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/visit/orientations-orientations"
+    },
+    {
+      "title": "Getting to Gwaii Haanas — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/visit/planifiez-plan"
+    },
+    {
+      "title": "Travelling to Haida Gwaii — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/visit/directions"
+    },
+    {
+      "title": "Facilities and services — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/visit/services"
+    },
+    {
+      "title": "Weather — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/visit/meteo-weather"
+    },
+    {
+      "title": "Weather and marine hazards — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/securite-safety/dangers-mer-marine-hazards"
+    },
+    {
+      "title": "Visitor safety — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/securite-safety"
+    },
+    {
+      "title": "Bear aware — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/securite-safety/ours-bears-1"
+    },
+    {
+      "title": "Camping — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/activ/camping"
+    },
+    {
+      "title": "Kayaking — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/activ/kayak"
+    },
+    {
+      "title": "Fishing — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/activ/peche-fishing"
+    },
+    {
+      "title": "K'angGuu Gwaay.yaay plant enclosures — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/activ/kunga"
+    },
+    {
+      "title": "Important bulletins: restricted activities, trip permit requirements, activity restrictions and area closures (29 April 2026) — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/bulletins"
+    },
+    {
+      "title": "Cooperative management — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/info/coop"
+    },
+    {
+      "title": "History of establishment — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/info/histoire-history"
+    },
+    {
+      "title": "X̱aayda Kil place names restoration — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/info/noms-names"
+    },
+    {
+      "title": "Gina 'Waadlux̱an KilG̱uhlG̱a Land-Sea-People Management Plan (2018) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/info/plan/gestion-management-2018"
+    },
+    {
+      "title": "Haida Gwaii Watchmen — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/culture/gardiens-watchmen"
+    },
+    {
+      "title": "Haida cultural sites — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/culture/cultural-sites-culturels"
+    },
+    {
+      "title": "T'aanuu Llnagaay (Tanu) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/culture/cultural-sites-culturels/cultural-sites-culturels-2"
+    },
+    {
+      "title": "Hlk'yah G̱awG̱a (Windy Bay) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/culture/cultural-sites-culturels/cultural-sites-culturels-3"
+    },
+    {
+      "title": "G̱andll K'in Gwaay.yaay (Hotspring Island) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/culture/cultural-sites-culturels/cultural-sites-culturels-4"
+    },
+    {
+      "title": "SG̱ang Gwaay (Anthony Island) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/culture/cultural-sites-culturels/cultural-sites-culturels-5"
+    },
+    {
+      "title": "Legacy Pole — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/culture/mat-heraldique-legacy-pole"
+    },
+    {
+      "title": "Post-contact history — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/culture/apres-post"
+    },
+    {
+      "title": "Land, Sea, People — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/culture/terre-mer-gens-land-sea-people"
+    },
+    {
+      "title": "Animals — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/nature/faune-wildlife"
+    },
+    {
+      "title": "Nature and science — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/nature"
+    },
+    {
+      "title": "Code of ethics for travellers — Gwaii Haanas, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/gwaiihaanas/visit/voyagistes-operators/ethique-ethics"
+    },
+    {
+      "title": "SG̱ang Gwaay — World Heritage in Canada, Parks Canada",
+      "url": "https://parks.canada.ca/culture/spm-whs/sites-canada/sec02f"
+    },
+    {
+      "title": "SGang Gwaay — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/157/"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Canada National Parks Act, section 41 and Schedule 2 — Justice Laws",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/N-14.01/FullText.html"
+    },
+    {
+      "title": "Gwaii Haanas National Park Reserve and Haida Heritage Site — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gwaii_Haanas_National_Park_Reserve_and_Haida_Heritage_Site"
+    },
+    {
+      "title": "Canadian Geographical Names Database (sight coordinates and official names)",
+      "url": "https://geogratis.gc.ca/services/geoname/en/geonames"
+    },
+    {
+      "title": "OpenStreetMap (Haida Heritage Centre location, via Nominatim)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

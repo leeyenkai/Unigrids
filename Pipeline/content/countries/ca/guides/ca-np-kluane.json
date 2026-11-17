@@ -1,0 +1,390 @@
+{
+  "placeID": "ca-np-kluane",
+  "contentVersion": 1,
+  "summary": "The south-western corner of the Yukon, where the St. Elias Mountains rise to Mount Logan, Canada's highest peak, above the largest icefields outside the polar regions. Most visitors see the ice from the air or from the green valleys along the Alaska Highway and Haines Road, hiking to Kathleen Lake, King's Throne or the Kaskawulsh Glacier. The park is managed with the Champagne and Aishihik First Nations and Kluane First Nation.",
+  "facts": {
+    "establishedYear": 1976,
+    "areaHectares": 2198000,
+    "bestSeasons": [
+      "summer",
+      "spring"
+    ],
+    "suggestedTime": "Three days to two weeks"
+  },
+  "story": [
+    "Kluane covers 21,980 square kilometres in the far south-west of the Yukon, bordered by British Columbia and Alaska. The St. Elias Mountains here are young and still rising: the Kluane Ranges along the highway average about 2,500 metres, and beyond a narrow trough, the Duke Depression, the Icefield Ranges climb past 5,000. Seventeen of Canada's 20 highest mountains are in the park, among them Mount Logan at 5,959 metres, Mount St. Elias and Mount Lucania. Ice covers more than half the park, part of the most extensive non-polar icefields in the world.",
+    "The glaciers that flow out of the icefields are restless. The St. Elias Mountains hold North America's greatest concentration of surging glaciers, which can move a hundred times faster than usual. Surges of Nàłùdäy, the Lowell Glacier, once dammed the Alsek River and flooded the valley as far as the site of Haines Junction; the last such lake drained around 1850 in two days. In May 2016 meltwater from the retreating Kaskawulsh Glacier cut a new channel and switched to the Alsek, leaving the Ä’äy Chù (Slims River) to dwindle and Kluane Lake to fall.",
+    "Below the ice lies a green belt, about a fifth of the park, where Pacific and Arctic air meet. White spruce, aspen and balsam poplar give way at about 1,100 metres to willow and dwarf birch, and to alpine tundra above 1,400. Dall's sheep are the most abundant large mammal, wintering on the sage-covered slopes of Thechàl Dhâl' (Sheep Mountain); there are also moose, grizzly and black bears, mountain goats and wolves, and more than 150 species of bird.",
+    "This is the traditional territory of the Southern Tutchone, represented today by the Champagne and Aishihik First Nations and Kluane First Nation. Kluane comes from the Southern Tutchone Łù’àn Män, 'big fish lake', and the Tlingit name for the region. In 1943 the Kluane Game Sanctuary shut First Nations out of hunting, fishing and trapping across much of their land, and part of it became the national park reserve in 1976. With the Wrangell-St. Elias park in Alaska it was inscribed as a World Heritage site in 1979. Under their land claim agreements the First Nations have reasserted their right to traditional harvesting in the park and share in its management."
+  ],
+  "howItWorks": [
+    "Kluane National Park and Reserve is managed jointly by Parks Canada and the Champagne and Aishihik First Nations and Kluane First Nation; the Kluane National Park Management Board was created under the Champagne and Aishihik First Nations Final Agreement. Part of the land is national park and part remains national park reserve. First Nations citizens exercise harvesting rights in the park under their final agreements, so some park rules do not apply to them. Parks Canada lists no admission fee for Kluane; you pay for camping, backcountry permits, fishing permits and aircraft landings. Youth aged 17 and under are admitted free at all Parks Canada places, and the Canada Strong Pass, which made admission free elsewhere in 2025 and 2026, ended on 7 September 2026.",
+    "Every overnight trip in the backcountry between 1 April and 15 November needs an overnight backcountry permit, which doubles as safety registration. In summer you register in person at the Kluane National Park and Reserve Visitor Centre in the Da Kų Cultural Centre in Haines Junction; in 2026, from 1 April to 14 May and 21 September to 15 November, you self-register at the kiosk outside the Haines Junction centre. Approved bear-resistant food canisters are mandatory on all overnight trips in that period, except on the icefields, at Kathleen Lake Campground and at Mush Lake. Between 16 November and 31 March no permit is needed, but you must camp at least 2 kilometres from the nearest road. Travel in the Kluane Icefields needs a permit and registration all year, and mountaineers also need an aircraft landing permit for every landing.",
+    "Some places have rules of their own. The face of Thechàl Dhâl' is closed to all public access year-round, and dogs are banned there. Rafting the Alsek River is under a quota to protect its wilderness character and reduce conflicts with grizzly bears, and trips must be planned well in advance. Motorboats are allowed only on Kathleen and Mush lakes, and Sockeye Lake is closed to all access from 15 July to 30 October. Parks Canada asks visitors to stay at least 30 metres from most animals and to stay in their vehicle if they see a bear; feeding wildlife is illegal."
+  ],
+  "sights": [
+    {
+      "name": "Mount Logan",
+      "note": "Canada's highest mountain at 5,959 metres, in the Icefield Ranges. It can be seen only from the park's remote interior, on flightseeing tours or expeditions.",
+      "location": [
+        60.5671,
+        -140.4054
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Kaskawulsh Glacier",
+      "note": "A great valley glacier flowing from the icefields. Its retreat in 2016 sent its meltwater to the Alsek instead of the Ä’äy Chù, a rare case of river capture.",
+      "location": [
+        60.75,
+        -139.1
+      ]
+    },
+    {
+      "name": "Observation Mountain",
+      "note": "Beyond the end of the 22.5-kilometre Ä’äy Chù West trail, a long, demanding route-finding climb leads to its top and views over the Kaskawulsh Glacier.",
+      "location": [
+        60.8258,
+        -138.7003
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Thechàl Dhâl' (Sheep Mountain)",
+      "note": "The mountain above the Ä’äy Chù valley where Dall's sheep winter and are often seen from the visitor centre in spring and autumn. Its face is closed to all access.",
+      "location": [
+        61.0426,
+        -138.5419
+      ]
+    },
+    {
+      "name": "Kathleen Lake (Mät’àtäna Män)",
+      "note": "A clear lake below the Kluane Range, with a day-use shelter, the accessible Kokanee Trail and a boat launch. The steep King's Throne trail climbs to a cirque above.",
+      "location": [
+        60.5758,
+        -137.2202
+      ]
+    },
+    {
+      "name": "St. Elias Lake",
+      "note": "An easy 7.6-kilometre return walk through forest to a subalpine lake, with a primitive campsite of four tent pads; a popular overnight trip.",
+      "location": [
+        60.3161,
+        -137.1172
+      ]
+    },
+    {
+      "name": "Nàłùdäy (Lowell Glacier)",
+      "note": "A surging glacier whose past advances dammed the Alsek River and flooded the valley; Lowell Lake lies at its toe.",
+      "location": [
+        60.2706,
+        -137.9903
+      ]
+    },
+    {
+      "name": "Soldier's Summit",
+      "note": "A 1-kilometre trail to the site where the Alaska Highway was officially opened in 1942, a kilometre north of the Thechàl Dhâl' Visitor Centre.",
+      "location": [
+        61.0214,
+        -138.5113
+      ]
+    },
+    {
+      "name": "Kluane National Park and Reserve Visitor Centre",
+      "note": "In the Da Kų Cultural Centre in Haines Junction: exhibits, trip planning and backcountry registration. Open from May to September.",
+      "location": [
+        60.7625,
+        -137.5152
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Thechàl Dhâl' Visitor Centre",
+      "note": "In the Ä’äy Chù valley, an hour north of Haines Junction on the Alaska Highway, with exhibits made with local First Nations and spotting scopes for sheep.",
+      "location": [
+        61.0138,
+        -138.5271
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Haines Junction, 160 kilometres west of Whitehorse on the Alaska Highway — the park's administrative centre and main visitor centre",
+      "Kathleen Lake, 27 kilometres south of Haines Junction on the Haines Road — the campground and the King's Throne and Cottonwood trails",
+      "Thechàl Dhâl' (Sheep Mountain) on the Alaska Highway, about an hour north of Haines Junction — the Ä’äy Chù valley trails",
+      "Trailheads along the Haines Road and Alaska Highway; the interior is reached only on foot, by raft or by air"
+    ],
+    "reservations": "Some sites at Kathleen Lake Campground (sites 20 to 39) and its five oTENTiks can be reserved through the Parks Canada Reservation Service; sites 1 to 19 are first come, first served. Alsek River trips work under a quota and need advance planning, and mountaineering expeditions must apply ahead. Check with Parks Canada before you go.",
+    "permits": [
+      "An overnight backcountry permit and registration for every overnight trip from 1 April to 15 November",
+      "A permit and registration for any travel in the Kluane Icefields, all year",
+      "A mountaineering permit for the Icefield Ranges, and an aircraft access permit for every landing in the park",
+      "A Kluane National Park and Reserve fishing licence; Yukon territorial licences are not valid in the park",
+      "A permit for open fires when camping, 1 April to 15 November"
+    ],
+    "camping": [
+      "Kathleen Lake Campground, 38 unserviced sites with drinking water, firewood, bear-proof food lockers and outhouses, and five oTENTiks",
+      "Backcountry camping on trails and routes with a permit; bear-resistant food canisters are required",
+      "Primitive campsites such as St. Elias Lake and Canada Creek on the Ä’äy Chù West trail"
+    ],
+    "lodging": [
+      "Five oTENTiks at Kathleen Lake Campground",
+      "Motels and a hotel in Haines Junction"
+    ],
+    "seasonalClosures": [
+      "Both visitor centres close for the winter and reopen in May",
+      "Kathleen Lake Campground and its oTENTiks are open only from May to September",
+      "Sockeye Lake is closed to all access from 15 July to 30 October"
+    ],
+    "seasonalClosureMonths": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "Most of Kluane has a dry, cold continental climate, while the south-east feels the Pacific and gets more rain and snow. The Kluane Ranges along the Alaska Highway lie in the rain shadow of the St. Elias Mountains and are the driest part. Summers are generally warm with up to 19 hours of daylight, and June averages about 11°C; winters are long and dark, with as little as four hours of daylight and a January mean of -21°C. In the mountains rain or snow can fall in any month and freezing temperatures are possible in summer. In the Ä’äy Chù valley, summer winds can raise severe dust storms.",
+  "directions": "Haines Junction is 160 kilometres west of Whitehorse on the Alaska Highway (Highway 1) and 249 kilometres north of Haines, Alaska, on the Haines Road (Highway 3). Whitehorse has daily flights from Vancouver and regular flights from other Canadian cities. Visitors also take the Alaska Marine Highway ferry to Haines or Skagway and drive north. The two highways run along the park's eastern edge; you can drive into the park only at Kathleen Lake and at Thechàl Dhâl'. There is no public transport to the trailheads, so you need a vehicle.",
+  "fees": [
+    {
+      "title": "Kathleen Lake Campground",
+      "cost": "$30.00",
+      "amount": 30,
+      "currencyCode": "CAD",
+      "detail": "Per site per night, including firewood. Group sites $6.25 per person per night. Online reservation fee $11.50. As listed by Parks Canada in November 2026 — check before you go."
+    },
+    {
+      "title": "oTENTik, Kathleen Lake",
+      "cost": "$147.50",
+      "amount": 147.5,
+      "currencyCode": "CAD",
+      "detail": "Per unit per night, including firewood. As listed in November 2026."
+    },
+    {
+      "title": "Backcountry permit",
+      "cost": "$15.00",
+      "amount": 15,
+      "currencyCode": "CAD",
+      "detail": "Per person per night, or $105.00 per person for an annual permit. As listed in November 2026."
+    },
+    {
+      "title": "Mountaineering permit",
+      "cost": "$259.00",
+      "amount": 259,
+      "currencyCode": "CAD",
+      "detail": "Per person, annual, for the Icefield Ranges. As listed in November 2026."
+    },
+    {
+      "title": "National park fishing permit",
+      "cost": "$15.00 daily / $51.25 annual",
+      "amount": 15,
+      "currencyCode": "CAD",
+      "detail": "Required to fish in the park; the kokanee fishery is closed and any kokanee caught must be released. As listed in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 1850",
+      "text": "The last ice-dammed Lake Alsek, held back by a surge of Nàłùdäy (Lowell Glacier), drains in two days."
+    },
+    {
+      "year": "1942",
+      "text": "The Alaska Highway is officially opened at Soldier's Summit, on the edge of today's park."
+    },
+    {
+      "year": "1943",
+      "text": "The Kluane Game Sanctuary is created, and First Nations lose access to hunting, fishing and trapping across much of their territory."
+    },
+    {
+      "year": "1976",
+      "text": "Kluane National Park Reserve is established from part of the game sanctuary."
+    },
+    {
+      "year": "1977",
+      "text": "Parks Canada begins helicopter surveys of Kluane's Dall's sheep."
+    },
+    {
+      "year": "1979",
+      "text": "Kluane and Wrangell-St. Elias are inscribed together as a World Heritage site, later extended to Glacier Bay (1992) and Tatshenshini-Alsek (1994)."
+    },
+    {
+      "year": "1986",
+      "text": "The Alsek River in Kluane is named a Canadian Heritage River."
+    },
+    {
+      "year": "2016",
+      "text": "In May, meltwater from the retreating Kaskawulsh Glacier cuts a gorge and diverts the headwaters of the Ä’äy Chù to the Alsek."
+    },
+    {
+      "year": "2019",
+      "text": "An ice-dammed lake at the toe of Dän Zhür (Donjek Glacier) drains in 36 hours on 13 July."
+    }
+  ],
+  "safety": [
+    "Grizzly and black bears live throughout the park, and sightings are common on the trails near Kathleen Lake and the Haines Road. Make noise, travel in groups, carry bear spray where you can reach it and report every sighting; firearms are not permitted.",
+    "Cell phones do not work in most of the park. Carry a satellite phone or satellite messenger, leave a trip plan with someone at home, and expect long delays for any rescue in bad weather.",
+    "Glacial rivers and creeks rise in the afternoon and after rain; cross early. Avoid the quick mud along the Ä’äy Chù, and be ready for dust storms in its valley.",
+    "Mountain weather changes fast and can bring snow in summer. The Icefield Ranges are for entirely self-sufficient, experienced mountaineering parties only."
+  ],
+  "regulations": [
+    "An overnight backcountry permit is required from 1 April to 15 November, and approved bear-resistant food canisters must be used on overnight trips in that period.",
+    "Recreational drones are not permitted, and neither are paragliding, parachuting or BASE jumping. Every aircraft landing needs an aircraft access permit.",
+    "Fires are prohibited in the Ä’äy Chù, Bullion and Congdon Creek valleys; elsewhere use a steel fire ring or ground free of vegetation, and only when fires are allowed. No fireworks or bear bangers.",
+    "The face of Thechàl Dhâl' is closed to all access and dogs are banned there. It is illegal to feed wildlife or to remove plants, antlers, rocks or artefacts."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-glaciers",
+    "theme-alpine",
+    "theme-indigenous-heritage",
+    "theme-tundra"
+  ],
+  "photos": [
+    {
+      "file": "File:Kathleen Lake, Kluane National Park and Reserve.jpg",
+      "caption": "Kathleen Lake (Mät’àtäna Män) below the Kluane Range",
+      "altText": "A wide lake with mountains rising beyond it"
+    },
+    {
+      "file": "File:Kaskawulsh Glacier.jpg",
+      "caption": "The Kaskawulsh Glacier from the air",
+      "altText": "A large glacier among mountains, seen from an aircraft"
+    },
+    {
+      "file": "File:Mount Logan.jpg",
+      "caption": "Mount Logan, Canada's highest mountain",
+      "altText": "A massive snow-covered mountain"
+    },
+    {
+      "file": "File:Meltwater of Kaskawulsh Glacier diverted from the Slims River and toward the Kaskawulsh River.jpg",
+      "caption": "The ice canyon that diverted the Kaskawulsh Glacier's meltwater away from the Ä’äy Chù in 2016",
+      "altText": "An aerial view of meltwater running through a canyon cut into glacier ice"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kluane National Park and Reserve — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane"
+    },
+    {
+      "title": "Designation Information — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/culture/designation"
+    },
+    {
+      "title": "Dän Keyi (Our people's land) — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/culture/autochtone-indigenous"
+    },
+    {
+      "title": "Fees — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/visit/tarifs-fees"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Overnight registration — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/visit/inscription-registration"
+    },
+    {
+      "title": "Visitor guidelines — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/visit/regles-rules"
+    },
+    {
+      "title": "Kathleen Lake — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/visit/services/kathleen"
+    },
+    {
+      "title": "Kathleen Lake campsites — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/visit/services/kathleen/emplacements-campsites"
+    },
+    {
+      "title": "Visitor centres — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/visit/services/info"
+    },
+    {
+      "title": "Roadside attractions — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/visit/services/route-road"
+    },
+    {
+      "title": "Getting here — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/visit/directions"
+    },
+    {
+      "title": "Weather — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/visit/meteo-weather"
+    },
+    {
+      "title": "Hiking — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking"
+    },
+    {
+      "title": "King's Throne — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking/kings-throne"
+    },
+    {
+      "title": "Ä’äy Chù (Slim's River) West — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking/aay-chu-ouest-west"
+    },
+    {
+      "title": "St. Elias Lake Trail — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/activ/randonnee-hiking/st-elias"
+    },
+    {
+      "title": "Mountaineering — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/activ/alpinisme-mountaineering"
+    },
+    {
+      "title": "Flightseeing — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/activ/aeriennes-flightseeing"
+    },
+    {
+      "title": "Rafting the Alsek River — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/activ/alsek"
+    },
+    {
+      "title": "Nature and science — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/nature"
+    },
+    {
+      "title": "Surging glaciers — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/nature/geomorph/surge"
+    },
+    {
+      "title": "Stream capture in the Saint Elias Mountains — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/nature/geomorph/capture"
+    },
+    {
+      "title": "Dall's Sheep of Thechàl Dhâl' — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/nature/dall"
+    },
+    {
+      "title": "You are in bear country — Kluane National Park and Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/yt/kluane/securite-safety/ours-bears"
+    },
+    {
+      "title": "Canada National Parks Act, Schedules 1 and 2 — Justice Laws Website",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/n-14.01/FullText.html"
+    },
+    {
+      "title": "Kluane / Wrangell-St. Elias / Glacier Bay / Tatshenshini-Alsek — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/72/"
+    },
+    {
+      "title": "Kluane National Park and Reserve — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kluane_National_Park_and_Reserve"
+    },
+    {
+      "title": "Canadian Geographical Names Database — Natural Resources Canada (coordinates)",
+      "url": "https://geogratis.gc.ca/services/geoname/en/geonames"
+    },
+    {
+      "title": "OpenStreetMap (visitor centre and trail coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "placeID": "ca-np-mount-revelstoke",
+  "contentVersion": 1,
+  "summary": "A single Selkirk mountain beside the town of Revelstoke, with a paved road almost to its top. The Meadows in the Sky Parkway climbs 26 kilometres from cedar rainforest to subalpine meadows that flower in August, and short trails lead on to a 1927 fire lookout and alpine lakes. Below, boardwalks wind through giant cedars, and a historic ski jump recalls world records.",
+  "facts": {
+    "establishedYear": 1914,
+    "areaHectares": 26000,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "One to two days"
+  },
+  "story": [
+    "Mount Revelstoke National Park covers 260 square kilometres of the Selkirk Mountains, just north-east of where the Illecillewaet River meets the Columbia. With Glacier National Park it represents the Columbia Mountains, geologically and climatically distinct from the Rockies, catching the Pacific air that brings heavy rain in summer and deep snow in winter. At the summit, snow can lie five metres deep by March. Half the park is above treeline and about 12 per cent is permanent ice and snow.",
+    "The road up the mountain is a walk through life zones. At the bottom is inland temperate rainforest of western red cedar and hemlock, some trees at Giant Cedars more than 500 years old. Engelmann spruce and subalpine fir take over around Snowforest, and near the top the trees open into meadows of paintbrush, glacier lily, lupine and heather, usually at their best in the second week of August. Grizzly bears, mountain goats, hoary marmots and pikas live in the high country, and northern alligator lizards reach the northern edge of their British Columbia range on the mountain's south-facing slopes.",
+    "Little is known of how First Nations used the area before European contact; on the summit, the First Footsteps trail tells stories of the Secwepemc, Ktunaxa and Syilx / Okanagan peoples. The Koo Koo Sint trail remembers David Thompson, who canoed the reach of the Columbia below in 1811. In 1908 the people of Revelstoke cut a trail to the summit meadows and lobbied for a road, and in 1914 the mountain became Canada's seventh national park. During the First World War, 225 internees, many of them Ukrainian immigrants, were held in a camp halfway up from September to December 1915 to work on the road.",
+    "Revelstoke was a skiing town early, and from 1915 to the late 1960s its ski jump on the mountain held competitions every year, the longest run of any Canadian venue. Nels Nelsen set a world record there in 1916, and records fell again in 1921, 1925, 1932 and 1933, the only Canadian hill where that happened. The last meet was in 1971, and ski jumping on Mount Revelstoke was named an event of national historic significance in 2016. The parkway to the summit, begun before the First World War, was completed in 1927."
+  ],
+  "howItWorks": [
+    "You need a national park pass to visit. A daily pass is valid until 4 pm on the day after you buy it and covers Mount Revelstoke, Glacier, Yoho, Kootenay, Banff, Jasper, Waterton Lakes and Elk Island national parks; youth aged 17 and under get in free. A Parks Canada Discovery Pass covers more than 80 Parks Canada places for a year, and an annual pass for Mount Revelstoke and Glacier alone is sold in person. Passes are sold at the Parks Canada office in Revelstoke and its automated machine all year, and from late May to early October at the parkway welcome kiosk and Snowforest Campground. Under the Canada Strong Pass admission was free for three periods in 2025 and 2026; the last ended on 7 September 2026.",
+    "The Meadows in the Sky Parkway opens in stages as the snow melts: to the snowline on the May long weekend, and to Balsam Lake near the summit usually from mid-July to mid-October. Vehicles longer than 7.9 metres and anything towing a trailer are not allowed up the parkway; trailers can be left at the Nels Nelsen Historic Area. Parking at Balsam Lake is limited, and Parks Canada points visitors to two authorised shuttle operators from town. Dogs are not allowed above Columbia Viewpoint at kilometre 12, even in vehicles, after a rise in encounters between bears and off-leash dogs.",
+    "Snowforest Campground and the Eva Lake and Jade Lakes backcountry campgrounds can be booked through the Parks Canada Reservation Service; sites cannot be booked within 48 hours of arrival. Every overnight trip into the backcountry needs a backcountry permit as well as the park pass. Random camping is limited to set areas at least 5 kilometres from the highways and park roads, with gas stoves only, at most six people and two nights, and no dogs. In winter the backcountry is avalanche terrain, and camping is allowed only more than 5 kilometres from the Trans-Canada Highway and Highway 23 North."
+  ],
+  "sights": [
+    {
+      "name": "Mount Revelstoke summit",
+      "note": "A 1-kilometre walk by trail or closed road from Balsam Lake, with views of the Monashee and Selkirk ranges and a network of short meadow trails.",
+      "location": [
+        51.047,
+        -118.1395
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Fire Lookout",
+      "note": "A lookout built in 1927 and staffed until 1988, now a Federal Heritage Building with a viewing platform, a short steep walk from the Upper Summit Shelter.",
+      "location": [
+        51.0467,
+        -118.1443
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Heather Lake",
+      "note": "A small summit lake on a 400-metre loop, among at least three species of mountain heather in red, white and pale yellow.",
+      "location": [
+        51.0477,
+        -118.1425
+      ]
+    },
+    {
+      "name": "Balsam Lake",
+      "note": "The end of the public road at kilometre 24 of the parkway, with summit parking, a picnic shelter and a 500-metre loop around the lake.",
+      "location": [
+        51.0407,
+        -118.1494
+      ]
+    },
+    {
+      "name": "Eva Lake",
+      "note": "A 14.2-kilometre return hike across alpine meadows and boulder fields to a lake with a 1920s warden cabin and a backcountry campground. Snow-free mid-July to September.",
+      "location": [
+        51.0815,
+        -118.1089
+      ]
+    },
+    {
+      "name": "Miller Lake",
+      "note": "A 27-metre-deep glacial bowl, 400 metres off the Eva Lake trail; a point jutting into the water makes a lunch stop.",
+      "location": [
+        51.0706,
+        -118.1055
+      ]
+    },
+    {
+      "name": "Jade Lakes",
+      "note": "The upper and lower lakes beyond Jade Pass, the longest summit day hike at 18.8 kilometres return, with a backcountry campground.",
+      "location": [
+        51.0705,
+        -118.0754
+      ]
+    },
+    {
+      "name": "Giant Cedars Boardwalk",
+      "note": "A 500-metre boardwalk through old-growth western red cedar, some trees over 500 years old, 30 kilometres east of Revelstoke on the Trans-Canada Highway.",
+      "location": [
+        51.1069,
+        -117.906
+      ]
+    },
+    {
+      "name": "Skunk Cabbage Boardwalk",
+      "note": "A 1.2-kilometre boardwalk through a wetland beside the Illecillewaet River, with three viewing platforms.",
+      "location": [
+        51.0886,
+        -117.9185
+      ]
+    },
+    {
+      "name": "Nels Nelsen Historic Area",
+      "note": "The historic ski jump where world records were set between 1916 and 1933, at the foot of the parkway, with trails open all year.",
+      "location": [
+        51.0077,
+        -118.1939
+      ]
+    },
+    {
+      "name": "Columbia Viewpoint",
+      "note": "Kilometre 12 of the parkway, looking over the Columbia valley to the Selkirk Mountains; dogs may go no further.",
+      "location": [
+        51.0121,
+        -118.1713
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Snowforest Welcome Centre",
+      "note": "At Snowforest Campground, near the bottom of the parkway: park information, passes and backcountry permits, May to October.",
+      "location": [
+        51.0179,
+        -118.2042
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The Meadows in the Sky Parkway, which leaves the Trans-Canada Highway on the edge of Revelstoke — the road to the summit",
+      "The Nels Nelsen Historic Area, 0.5 kilometres up the parkway, for the lower trails all year",
+      "Giant Cedars and Skunk Cabbage, about 30 kilometres east of Revelstoke on the Trans-Canada Highway"
+    ],
+    "reservations": "Snowforest Campground and the Eva Lake and Jade Lakes backcountry campgrounds can be reserved through the Parks Canada Reservation Service; sites cannot be booked within 48 hours of arrival, and unreserved sites go first come, first served. Caribou Cabin is booked through the Parks Canada office in Revelstoke. Check before you go.",
+    "permits": [
+      "A national park pass for every visitor",
+      "A backcountry permit for any overnight trip, from Snowforest Campground in summer or the Revelstoke office",
+      "A national park fishing permit; rivers and streams are closed to fishing"
+    ],
+    "camping": [
+      "Snowforest Campground, 62 sites and three MicrOcubes, 15 May to 12 October in 2026, with showers and electrical sites",
+      "Eva Lake and Jade Lakes backcountry campgrounds, four sites each, July to October depending on snow; no campfires",
+      "No winter frontcountry camping, and no sleeping in vehicles at parking areas"
+    ],
+    "lodging": [
+      "Caribou Cabin, a six-bed log cabin about 1,550 metres up the mountain, reached on skis or snowshoes, 1 December to 30 April",
+      "Accommodation and services in the city of Revelstoke, less than a kilometre from the park"
+    ],
+    "seasonalClosures": [
+      "The parkway is open to the summit only when the snow has gone, usually mid-July to mid-October; lower sections open from late May",
+      "Giant Cedars and Skunk Cabbage open from late May to mid-October",
+      "Snowforest Campground and the parkway kiosk close for the winter; the road is ploughed only to the Nels Nelsen parking area"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "Pacific air rising over the Columbia Mountains gives Mount Revelstoke a wet climate: about 1,280 millimetres a year in the town and nearly 2,000 in the subalpine. Winters bring heavy snow at every elevation, and by March it can lie five metres deep at the summit. Snow leaves the lower mountain through May, but the summit road is usually clear only by mid-July and has opened as late as the first week of August. August is the driest month and the peak of the wildflowers; September nights are cool, with snow often returning to the summit, and by the end of October it has come to stay.",
+  "directions": "The park sits on the north-eastern edge of Revelstoke, roughly halfway between Calgary and Vancouver on the Trans-Canada Highway, which runs just inside the boundary for 13 kilometres. Commercial buses serve Revelstoke, and the nearest commercial airports are at Revelstoke, Kamloops, Kelowna and Calgary. From the highway, the Meadows in the Sky Parkway climbs 26 kilometres to Balsam Lake; the last kilometre to the summit is closed to traffic and is walked by road or trail. Snowforest Campground is a 5-kilometre drive or a 2-kilometre walk or ride from downtown.",
+  "fees": [
+    {
+      "title": "Daily admission",
+      "cost": "$12.25 adult / $10.75 senior / $24.50 family or group",
+      "amount": 12.25,
+      "currencyCode": "CAD",
+      "detail": "Youth aged 17 and under free. A family or group is up to seven people arriving in one vehicle. Valid until 4 pm the day after purchase in the mountain parks and Elk Island. As listed by Parks Canada in November 2026 — check before you go."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50 adult / $71.50 senior / $167.50 family or group",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "A year's admission to more than 80 Parks Canada places, valid to the end of the month of purchase. As listed in November 2026."
+    },
+    {
+      "title": "Annual pass, Mount Revelstoke and Glacier",
+      "cost": "$60.50 adult / $51.50 senior / $120.75 family or group",
+      "amount": 60.5,
+      "currencyCode": "CAD",
+      "detail": "Valid in these two parks only; sold in person. As listed in November 2026."
+    },
+    {
+      "title": "Snowforest Campground",
+      "cost": "$34.00–$40.00",
+      "amount": 34,
+      "currencyCode": "CAD",
+      "detail": "Per site per night, unserviced or with electricity; a MicrOcube is $147.50. A fire permit, including firewood, is $15.25 a day. As listed in November 2026."
+    },
+    {
+      "title": "Backcountry camping",
+      "cost": "$15.00",
+      "amount": 15,
+      "currencyCode": "CAD",
+      "detail": "Per person per night, in addition to the park pass. Caribou Cabin is $147.50 a night. As listed in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1811",
+      "text": "David Thompson and his crew canoe the reach of the Columbia River below the mountain."
+    },
+    {
+      "year": "1885",
+      "text": "The Canadian Pacific Railway reaches the river junction at Farwell, later renamed Revelstoke."
+    },
+    {
+      "year": "1908",
+      "text": "The City of Revelstoke cuts a trail to the summit."
+    },
+    {
+      "year": "1914",
+      "text": "Mount Revelstoke becomes Canada's seventh national park."
+    },
+    {
+      "year": "1915",
+      "text": "An internment camp halfway up the mountain holds 225 internees from 6 September to 20 December; the first ski-jumping competition is held."
+    },
+    {
+      "year": "1916",
+      "text": "Nels Nelsen sets a world ski-jumping record of 183 feet in February; on 28 July the Governor General, the Duke of Connaught, is driven up the unfinished road."
+    },
+    {
+      "year": "1927",
+      "text": "The road to the summit is completed, and the fire lookout is built."
+    },
+    {
+      "year": "1971",
+      "text": "The last ski-jumping competition is held on the mountain, 56 years after the first."
+    },
+    {
+      "year": "1988",
+      "text": "The fire lookout goes out of service."
+    },
+    {
+      "year": "2016",
+      "text": "Ski jumping at Mount Revelstoke is named an event of national historic significance on 15 February."
+    }
+  ],
+  "safety": [
+    "This is grizzly and black bear country, up to the summit meadows. Make noise, carry bear spray and keep food and scented items in your vehicle or a food locker; never leave anything that could attract wildlife where an animal can reach it.",
+    "The summit trails can hold snow into late July. Weather changes quickly from one valley to the next, and cell service is extremely limited on the summit trails.",
+    "The parkway is narrow with tight switchbacks; drive slowly, and do not take a vehicle over 7.9 metres or a trailer up it.",
+    "In winter the higher mountain is avalanche terrain. Carry a transceiver, shovel and probe, check the avalanche bulletin, and leave a trip plan; the emergency number is 1-877-852-3100."
+  ],
+  "regulations": [
+    "Dogs must be on a leash everywhere they are allowed, and are not allowed above Columbia Viewpoint at kilometre 12 of the parkway, on foot or in vehicles, nor anywhere in the backcountry.",
+    "Recreational drones are prohibited, and off-road vehicles and snowmobiles are banned throughout the park.",
+    "Stay on marked trails in the fragile summit meadows. It is illegal to feed, entice or harass wildlife, or to pick plants or remove natural objects.",
+    "Camp only in designated campgrounds with a permit; cycling is allowed only on the trails Parks Canada lists."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-alpine",
+    "theme-temperate-rainforest",
+    "theme-wetland"
+  ],
+  "photos": [
+    {
+      "file": "File:Mount Revelstoke NP meadow next to the parking lot.jpg",
+      "caption": "Subalpine meadow near the summit parking at Balsam Lake",
+      "altText": "A mountain meadow with scattered conifers"
+    },
+    {
+      "file": "File:Summit Fire Lookout, Mount Revelstoke National Park 20240825 3.jpg",
+      "caption": "The 1927 fire lookout on the summit of Mount Revelstoke",
+      "altText": "A small wooden lookout building on a mountain top"
+    },
+    {
+      "file": "File:Heather Lake Mount Revelstoke NP.jpg",
+      "caption": "Heather Lake, near the summit",
+      "altText": "A small lake in a subalpine meadow ringed by trees"
+    },
+    {
+      "file": "File:Forest in Mount Revelstoke NP 2.jpg",
+      "caption": "Subalpine forest beside the Meadows in the Sky Parkway",
+      "altText": "Tall, narrow conifers on a mountainside"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mount Revelstoke National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke"
+    },
+    {
+      "title": "Fees — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/visit/tarifs-fees"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Meadows in the Sky Parkway — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/promenade-parkway"
+    },
+    {
+      "title": "Hours and seasons of operation — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/visit/heures-hours"
+    },
+    {
+      "title": "Getting here — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/visit/directions"
+    },
+    {
+      "title": "Getting here — Glacier National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/glacier/visit/directions"
+    },
+    {
+      "title": "Summit: short hikes — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/randonee-hiking/sommet-court-summit-short"
+    },
+    {
+      "title": "Summit: day hikes — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/randonee-hiking/sommet-journee-summit-day"
+    },
+    {
+      "title": "Roadside attractions — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/randonee-hiking/autoroute-highway"
+    },
+    {
+      "title": "Frontcountry camping — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/passez-stay/camping"
+    },
+    {
+      "title": "Backcountry camping — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/passez-stay/arrierepays-backcountry"
+    },
+    {
+      "title": "Caribou Cabin — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/activ/passez-stay/caribou-cabin"
+    },
+    {
+      "title": "History of Mount Revelstoke National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/culture/histoire-history"
+    },
+    {
+      "title": "Royal Visits to Mount Revelstoke — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/culture/histoire-history/royale-royal"
+    },
+    {
+      "title": "Mount Revelstoke Internment Camp — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/culture/histoire-history/intern"
+    },
+    {
+      "title": "The History of Skiing on Mount Revelstoke — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/culture/histoire-history/ski"
+    },
+    {
+      "title": "The Columbia Mountains Natural Region — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/nature/chaine-columbia-range"
+    },
+    {
+      "title": "Weather and climate — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/visit/meteo-weather"
+    },
+    {
+      "title": "Visiting with dogs — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/visit/chiens-dogs"
+    },
+    {
+      "title": "National park regulations — Mount Revelstoke National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/securite-safety/reglements-regulations"
+    },
+    {
+      "title": "Mount Revelstoke National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mount_Revelstoke_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

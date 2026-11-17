@@ -1,0 +1,381 @@
+{
+  "placeID": "ca-np-grasslands",
+  "contentVersion": 1,
+  "summary": "Canada's first national park for the mixed-grass prairie, in two blocks on the Saskatchewan–Montana border. Drive the Ecotour through the Frenchman River valley past bison and the country's only black-tailed prairie dog colonies, walk out to the badlands of Rock Creek where the layer marking the dinosaurs' extinction shows in the hillsides, and stay for one of the darkest night skies in Canada.",
+  "facts": {
+    "establishedYear": 1981,
+    "areaHectares": 73000,
+    "bestSeasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to three days"
+  },
+  "story": [
+    "Grasslands protects a piece of the northern Great Plains that the plough never reached. Erosion, glaciation and a semi-arid climate shaped it: rolling uplands of cool- and warm-season grasses, sagebrush, greasewood and prickly pear cactus, cut by coulees, steep ravines and buttes. The West Block is centred on the valley of the Frenchman River; the East Block, 166 kilometres away by road, takes in the Rock Creek badlands and the Wood Mountain uplands. In the exposed strata lie marine and dinosaur fossils 60 to 80 million years old, and the Rock Creek badlands are one of the best places in the world to see the Cretaceous–Paleogene boundary, the layer that marks the mass extinction of the dinosaurs.",
+    "Only a small part of Canada's native mixed-grass prairie survives, and much of what lives on it is rare. Thirty-one species at risk occur in the park, and 96 per cent of it is designated critical habitat. The black-tailed prairie dog lives in Canada only here and in the park's immediate surroundings, in colonies along the Frenchman valley. The park holds the only two known mating grounds, or leks, of the greater sage-grouse left in Saskatchewan. Pronghorn, burrowing owls, swift foxes, greater short-horned lizards, eastern yellow-bellied racers and prairie rattlesnakes share the coulees and uplands.",
+    "People have lived here for about 10,000 years, and the park holds one of the largest concentrations of undisturbed precontact archaeological sites in southern Canada: more than 20,000 tipi rings, hearths, and bison drive lanes. By the 1600s the A'aninin (Gros Ventre) followed the bison herds across this country; later the Nakoda, Nehiyawak, Niitsitapi, Dakota and Lakota used it seasonally. The herds were hunted almost to extinction by the 1880s, and from the late nineteenth century most First Nations and Métis communities were moved away to reserves; the Wood Mountain Lakota First Nation is the one community still near the park. Ranchers and homesteaders followed, and their corrals of river-willow posts and cellar depressions still mark the land.",
+    "Conservationists began calling for a prairie park in the 1950s. In October 1963 the Saskatchewan Natural History Society, now Nature Saskatchewan, asked Ottawa to create one, and a 1965 study settled on the Killdeer Badlands and Frenchman River. Canada and Saskatchewan signed the founding agreement on 19 June 1981, and land has been bought since only from willing sellers. The park now covers 730 square kilometres of a planned 906. Plains bison from Elk Island National Park returned in 2005 after 120 years' absence, and in 2009 the park became a dark-sky preserve of the Royal Astronomical Society of Canada."
+  ],
+  "howItWorks": [
+    "Grasslands is run by Parks Canada and charges daily admission, as most national parks do: in 2026 an adult pays $7.25 a day and a family or group arriving in one vehicle $15.00, while admission for anyone 17 or under has been free at every Parks Canada place since 2018. Parks Canada adjusts its fees every two years with the Consumer Price Index, most recently on 1 January 2026. A Parks Canada Discovery Pass, $83.50 for an adult or $167.50 for a family or group in 2026, covers admission for twelve months at more than 80 Parks Canada destinations, Grasslands among them. In winter, when the reception offices close, entry fees are paid by phone to the Visitor Centre or at self-serve kiosks at 70 Mile Butte, the Ecotour north entrance, the Frenchman Valley Coulee Centre and Rock Creek Campground.",
+    "Both front-country campgrounds, Frenchman Valley in the West Block and Rock Creek in the East, are fully reservable through the Parks Canada Reservation Service, online or on 1-877-737-3783, with a reservation fee on top of the camping fee. The two check-in desks are 166 kilometres apart: Frenchman Valley campers register at the Val Marie Visitor Centre before 5 pm, Rock Creek campers at the Rock Creek reception before 6 pm. There are no designated backcountry campsites. Every backcountry camper must register with staff at the Visitor Centre or a campground office and receive a safety and regulations orientation before setting out, choose a backcountry zone, and camp at least a kilometre from roads and trails, out of sight of them. Open fires are never allowed in the backcountry.",
+    "Under the Canada National Parks Act it is illegal to feed wildlife, directly or by leaving food or garbage out, and dogs must be leashed at all times; here they are not allowed on prairie dog colonies at all. Parks Canada asks visitors to stay at least 100 metres from bison, and to keep 30 metres from large animals such as deer and 100 metres from coyotes. Vehicles must stay on public roads and designated pull-offs. Fossils, arrowheads, tipi rings, antlers, wildflowers and every other natural or historical object are protected by law and must be left where they lie. All Parks Canada places are no-drone zones for recreational use."
+  ],
+  "sights": [
+    {
+      "name": "70 Mile Butte and Eagle Butte",
+      "note": "A short, steep loop climbs to wide views over the Frenchman River valley; the gentler Eagle Butte loop is known for wildflowers and birds of prey.",
+      "location": [
+        49.204,
+        -107.665
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Top Dogtown",
+      "note": "A 750-metre hard-surfaced loop at Ecotour pull-off 2 across a black-tailed prairie dog colony. The park and its surroundings are the only place in Canada the species lives wild.",
+      "location": [
+        49.203,
+        -107.563
+      ]
+    },
+    {
+      "name": "Timbergulch",
+      "note": "A 15-kilometre loop from Ecotour pull-off 3 through three glacier-cut coulee bottoms where the park's bison often linger. Five to six hours, difficult.",
+      "location": [
+        49.192,
+        -107.565
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Two Trees Day Use Area",
+      "note": "Start of the Two Trees loop, a 4-kilometre introduction to the prairie, and the Riverwalk along the Frenchman River's cliffs and riverbank plants.",
+      "location": [
+        49.181,
+        -107.688
+      ]
+    },
+    {
+      "name": "Larson Trail",
+      "note": "A 1.5-kilometre mowed loop at Ecotour pull-off 6 past traces of early ranching, with views of the Frenchman River.",
+      "location": [
+        49.154,
+        -107.496
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Frenchman Valley Coulee Centre",
+      "note": "Beside the West Block campground: shade, a place to cook and eat, and the base for park programs. Open as a day-use shelter in winter.",
+      "location": [
+        49.152,
+        -107.509
+      ]
+    },
+    {
+      "name": "Badlands Parkway",
+      "note": "An 11-kilometre single-lane paved road along an escarpment in the East Block, with six viewpoints over the Rock Creek badlands. Open to vehicles 1 May to 31 October.",
+      "location": [
+        49.066,
+        -106.52
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Valley of 1000 Devils",
+      "note": "A 10-kilometre return trail from Rock Creek across Hellfire Creek into the badlands, where it can be up to 10 degrees hotter than the surrounding prairie.",
+      "location": [
+        49.074,
+        -106.535
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Grasslands National Park Visitor Centre",
+      "note": "In Val Marie, near the West Block: maps, road and weather conditions, entry passes, campground check-in and backcountry registration.",
+      "location": [
+        49.246,
+        -107.732
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "West Block: the Ecotour Road, about 14.5 kilometres east of the Val Marie Visitor Centre on Highway 18, then 4 kilometres of gravel south",
+      "West Block: the 70 Mile Butte and Two Trees accesses, off Highway 4 south of Val Marie",
+      "East Block: Rock Creek, 22.4 kilometres south of Wood Mountain Regional Park on Highway 18, then gravel roads to the campground"
+    ],
+    "reservations": "Frenchman Valley and Rock Creek campgrounds are 100 per cent reservable through the Parks Canada Reservation Service, online or on 1-877-RESERVE (1-877-737-3783); reservations are recommended. Guided programs, such as the Fossil Fever and Bison Backcountry tours, are booked through the park. Check before you go with the Grasslands Visitor Centre, 1-877-345-2257.",
+    "permits": [
+      "Backcountry camping — register in person with staff at the Visitor Centre or a campground office, with a safety orientation, before each trip; in winter register by phone",
+      "Campfires — a campfire permit from the Visitor Centre or campground office, and only in the fire pits provided, when no fire ban is in effect",
+      "Commercial filming and other unusual or commercial activities — ask the Visitor Centre whether a permit is needed"
+    ],
+    "camping": [
+      "Frenchman Valley Campground, West Block: 20 electrical sites and four oTENTiks above the Frenchman River",
+      "Rock Creek Campground, East Block: 24 electrical sites, eight oTENTiks and a kitchen shelter",
+      "Equestrian camping, and random backcountry camping by zone, at least a kilometre from roads and trails"
+    ],
+    "lodging": [
+      "oTENTiks in both front-country campgrounds",
+      "Accommodation in the small nearby communities, such as Val Marie and Wood Mountain, is limited — Parks Canada advises researching it, and fuel, food and showers, before you arrive"
+    ],
+    "seasonalClosures": [
+      "The Val Marie Visitor Centre and the Rock Creek reception are closed from mid-October to 30 April; in 2026 both open daily from 1 May to 12 October",
+      "The Frenchman Valley and Rock Creek campgrounds close in mid-October and reopen on 1 May; drinking water runs from mid-May to 30 September",
+      "The Badlands Parkway closes to vehicles from 1 November and is not cleared of snow",
+      "Fire bans, including bans on stoves in the backcountry, are common in summer — check the park's important bulletins before you go"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "Grasslands is semi-arid, hot in summer and open to the wind. Summer days average in the mid to high twenties Celsius and often reach the thirties; Parks Canada warns that temperatures often reach 40°C in June, July and August, and there is little or no shade anywhere in the park. Evenings cool into the high teens. Rain is scarce and usually comes as short showers, but late-afternoon thunderstorms with lightning and severe wind are common, and after any real rain the gravel and clay roads, including those to the campgrounds, become impassable. Services run from May to mid-October; in winter the park stays open, but the Visitor Centre and campgrounds close and the Badlands Parkway is not cleared of snow.",
+  "directions": "Grasslands is in south-western Saskatchewan on the Montana border, and every access to both blocks is by gravel road. The West Block is reached from the village of Val Marie, at Highways 4 and 18, about an hour and a half's drive south of Swift Current; the Visitor Centre is in the village. The East Block is reached from Wood Mountain on Highway 18. The two blocks are 166 kilometres apart, about two hours by road. The nearest international airports are at Regina, Saskatoon and Calgary, with car rental in Swift Current, Regina and Saskatoon. Cell coverage is unreliable and GPS directions are not always right, so plan the route in advance and fill up with fuel when you can: stations are few and often card-only.",
+  "fees": [
+    {
+      "title": "Daily admission",
+      "cost": "$7.25 adult / $15.00 family or group",
+      "amount": 7.25,
+      "currencyCode": "CAD",
+      "detail": "Seniors $6.25; youth 17 and under free. A family or group is up to seven people arriving in one vehicle. 2026 rates — check before you go."
+    },
+    {
+      "title": "Annual Grasslands pass",
+      "cost": "$36.75 adult / $72.50 family or group",
+      "amount": 36.75,
+      "currencyCode": "CAD",
+      "detail": "Seniors $30.50. Valid at Grasslands only; sold in person."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50 adult / $167.50 family or group",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "Seniors $71.50. Twelve months' admission to more than 80 Parks Canada destinations. 2026 rates."
+    },
+    {
+      "title": "Front-country camping",
+      "cost": "$26.75 to $40.00",
+      "amount": 26.75,
+      "currencyCode": "CAD",
+      "detail": "Per site per night: unserviced $26.75; electrical $36.75 at Rock Creek and $40.00 at Frenchman Valley in June, July and August ($36.75 otherwise). Online reservation fee $11.50, by phone $13.50."
+    },
+    {
+      "title": "oTENTik",
+      "cost": "$156.50",
+      "amount": 156.5,
+      "currencyCode": "CAD",
+      "detail": "Per night, at Frenchman Valley or Rock Creek."
+    },
+    {
+      "title": "Backcountry camping",
+      "cost": "$8.50",
+      "amount": 8.5,
+      "currencyCode": "CAD",
+      "detail": "Per person per night. Registration with park staff is required."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 10,000 years ago",
+      "text": "People are living on these plains; their tipi rings, hearths and bison drive lanes survive across the park."
+    },
+    {
+      "year": "1600s",
+      "text": "The A'aninin (Gros Ventre) follow the bison herds through the area."
+    },
+    {
+      "year": "1880s",
+      "text": "Overhunting drives the plains bison of the Great Plains to the brink of extinction."
+    },
+    {
+      "year": "1963",
+      "text": "In October the Saskatchewan Natural History Society urges the federal government to create a national park in south-western Saskatchewan."
+    },
+    {
+      "year": "1981",
+      "text": "On 19 June Canada and Saskatchewan sign an agreement to establish Grasslands National Park."
+    },
+    {
+      "year": "1988",
+      "text": "A revised federal–provincial agreement ends years of deadlock over oil, gas and water rights; land is bought from willing sellers."
+    },
+    {
+      "year": "2001",
+      "text": "On 19 February Grasslands is proclaimed a national park under the Canada National Parks Act."
+    },
+    {
+      "year": "2005",
+      "text": "In December 71 plains bison from Elk Island National Park arrive; they are released into the West Block on 24 May 2006."
+    },
+    {
+      "year": "2009",
+      "text": "The Royal Astronomical Society of Canada recognises the park as the Grasslands National Park Dark-Sky Preserve."
+    },
+    {
+      "year": "2019",
+      "text": "The federal–provincial agreement is renewed on 10 January."
+    }
+  ],
+  "safety": [
+    "Heat is the main danger. Temperatures can reach 40°C with almost no shade; carry at least four litres of water per person per day and avoid hiking in the heat of the day. Surface water in the park is saline and cannot be made drinkable by boiling, filtering or treating.",
+    "Prairie rattlesnakes live here. Wear over-the-ankle boots and long pants, watch where you step and keep children close; if bitten, call for help, keep the limb still and below the heart, and do not cut, suck or ice the bite.",
+    "Keep at least 100 metres from bison and stay in your vehicle if you meet them on the road. They are most aggressive in calving season in May and the rut from mid-July into August.",
+    "Roads become impassable when wet, cell coverage is unreliable and help is far away. Tell someone your plans, carry a map and compass or GPS, and in an emergency call 911 or Parks Canada dispatch on 1-877-852-3100.",
+    "Prairie wildfire moves fast. Report smoke to 911; if trapped, head for bare or burned ground such as gravel roads or prairie dog colonies."
+  ],
+  "regulations": [
+    "Feeding wildlife is illegal. Keep dogs on a leash at all times, and off prairie dog colonies entirely.",
+    "Fossils, arrowheads, tipi ring stones, antlers, rocks and plants are protected by law: leave everything where you found it.",
+    "Fires are allowed only in the fire pits provided, with a campfire permit, and never during a fire ban; in the backcountry open fires are always prohibited, and during a fire ban stoves and lanterns are too. Burning illegally can bring a fine of up to $25,000.",
+    "Drones may not be flown for recreation, motorised boats are not allowed on any water in the park, and vehicles must stay on public roads and pull-offs.",
+    "Camping, including sleeping in a vehicle, is allowed only in campgrounds or registered backcountry zones, never at pull-offs, trailheads or day-use areas."
+  ],
+  "themes": [
+    "theme-fossils",
+    "theme-indigenous-heritage",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Grasslands National Park GNP 23.jpg",
+      "caption": "The West Block seen from 70 Mile Butte",
+      "altText": "Steep, green grassy coulees and rounded hills stretching into the distance"
+    },
+    {
+      "file": "File:Frenchman River GNP 01.jpg",
+      "caption": "The Frenchman River in the West Block",
+      "altText": "A small river winding through a grassy valley floor between low hills"
+    },
+    {
+      "file": "File:Cynomys ludovicianus GNP 01.jpg",
+      "caption": "Black-tailed prairie dogs at the Top Dogtown colony",
+      "altText": "Short prairie grass dotted with bare burrow mounds and a single prairie dog"
+    },
+    {
+      "file": "File:Grasslands National Park (Canada) - fall colors.jpg",
+      "caption": "Autumn colour above the badlands of the East Block",
+      "altText": "Autumn shrubs in gold and red on the prairie, with low badland hills on the horizon"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Grasslands National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands"
+    },
+    {
+      "title": "Grasslands National Park of Canada Management Plan, 2022 — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/info/plan/plan-2022"
+    },
+    {
+      "title": "Park history — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/culture/histoire_du_parc-park_history"
+    },
+    {
+      "title": "Culture and history — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/culture"
+    },
+    {
+      "title": "Nature and science — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/nature"
+    },
+    {
+      "title": "Plains Bison — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/nature/faune-wildlife/bison"
+    },
+    {
+      "title": "Fees — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/visit/tarifs-fees"
+    },
+    {
+      "title": "Hiking — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/activ/experiences/randonee-hiking"
+    },
+    {
+      "title": "Ecotour Scenic Drive – West Block — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/activ/experiences/ecocircuit-ecotour"
+    },
+    {
+      "title": "Badlands Parkway – East Block — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/activ/experiences/badlands"
+    },
+    {
+      "title": "Tent and RV camping — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/activ/camping/avantpays-frontcountry"
+    },
+    {
+      "title": "Backcountry camping — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/activ/camping/arrierepays-backcountry"
+    },
+    {
+      "title": "Planning ahead — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/visit/avance-ahead"
+    },
+    {
+      "title": "How to get here — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/visit/directions"
+    },
+    {
+      "title": "Hours of operation — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/visit/heures-hours"
+    },
+    {
+      "title": "Winter Season — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/visit/saison-hivernale-winter-season"
+    },
+    {
+      "title": "Wildlife Safety — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/securite-safety/animaux_sauvages_wildlife"
+    },
+    {
+      "title": "Weather — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/securite-safety/meteo_weather1"
+    },
+    {
+      "title": "Visitor guidelines — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/securite-safety/comportements-guidelines"
+    },
+    {
+      "title": "Fire ban information — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/securite-safety/interdit-ban"
+    },
+    {
+      "title": "World Class Astronomy — Grasslands National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/grasslands/activ/experiences/astronomie-astronomy"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Travel trade admission fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/voyagistes-traveltrade/visit/fee"
+    },
+    {
+      "title": "Top tips to respect wildlife and stay safe — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/conseils-tips/faune-wildlife"
+    },
+    {
+      "title": "Grasslands National Park — The Encyclopedia of Saskatchewan",
+      "url": "https://esask.uregina.ca/entry/grasslands_national_park.html"
+    },
+    {
+      "title": "Grasslands National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Grasslands_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight locations)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

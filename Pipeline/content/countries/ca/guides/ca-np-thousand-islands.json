@@ -1,0 +1,356 @@
+{
+  "placeID": "ca-np-thousand-islands",
+  "contentVersion": 1,
+  "summary": "Granite islands scattered along the St. Lawrence River between Kingston and Brockville, where the Canadian Shield crosses the river towards the Adirondacks. Most of the park is reached by boat, kayak or water taxi: camp or tie up for the night on an island, or stay on the mainland and walk the trails at Jones Creek and Landons Bay. Founded in 1904, it was the first Canadian national park east of the Rockies.",
+  "facts": {
+    "establishedYear": 1904,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "The Thousand Islands are the tops of an ancient mountain chain. The park sits on the Frontenac Arch, an 80-kilometre-wide band of granite hills joining the Canadian Shield of northern Ontario to the Adirondack Mountains of New York State. When the glaciers retreated about 10,000 years ago they scraped the rounded knobs bare, and when the St. Lawrence flooded the valley on its way to the Atlantic, a thousand hilltops became a thousand islands. Soil formed slowly on the acid granite, which is why the islands still look rugged, and the chain of islands acts as stepping stones for plants and animals crossing the river.",
+    "The park lies in the transition zone between the eastern deciduous and boreal forests, and the Great Lakes upstream act as a heat sink that softens the climate, so many species reach the edge of their range here. Parks Canada counts the region among the most biodiverse in Canada and the park among the richest in reptiles and amphibians, with 31 species. Plants and animals that are common here but rare elsewhere in Canada include pitch pine, rue anemone, deerberry, the least bittern and the black rat snake, the country's largest snake.",
+    "People have come to these islands each summer since the end of the last Ice Age. In 1979 a diver off Grenadier Island found a pot of the Point Peninsula culture, about 2,500 years old. French explorers and missionaries in the 1600s recorded summer encampments of many hundreds of people at places like Toniata, believed to be Grenadier Island, and Jones Creek, many of them Onondaga of the Iroquois, who ran a large eel fishery along this shore. The park lies on traditional Haudenosaunee and Anishinaabe (Algonquin) lands, and today works closely with the Mohawks of Akwesasne; a rock carving at Mallorytown Landing commemorates the Mohawk Thanksgiving Address.",
+    "Loyalist settlers arrived from 1784, and by the late 1800s wealthy Canadians and Americans had become the islands' new summer people. After decades of local pressure for public land, the park was created in 1904 when the Mallory family gave a small waterfront property, now Mallorytown Landing, for \"park purposes\" and the government added nine federal islands. Three of the 1904 picnic pavilions still stand. For seventy years the park was run for recreation; in the 1980s the emphasis shifted to protecting the ecosystem. Long called St. Lawrence Islands National Park, it was renamed in 2013, and today takes in 26 islands, 89 islets and shoals and several mainland properties along 120 kilometres of river and lake."
+  ],
+  "howItWorks": [
+    "Thousand Islands has no admission charge. What you pay for, from Victoria Day weekend to Thanksgiving, is parking at Mallorytown Landing, Jones Creek and Landons Bay, launching, docking, mooring buoys, beaching and camping, all due on arrival. Island attendants collect some fees, and the rest go into the green self-registration boxes on the islands and at the mainland sites; permits must be displayed on the boat, the dashboard or the campsite. Parks Canada adjusts its fees every two years with inflation, most recently on 1 January 2026. The park is not among the places Parks Canada lists for its Discovery Pass; seasonal parking and mooring permits are sold instead, and a seasonal mooring permit is valid at other Parks Canada locations too. Camping was discounted under the Canada Strong Pass from 19 June to 7 September 2026.",
+    "The islands are reached only by water. Launch at Mallorytown Landing or a marina between Kingston and Brockville, rent a kayak or canoe from a local outfitter, or book a private water taxi. Every vessel using park facilities, down to a paddleboard, needs a mooring or beaching permit. Docks and mooring buoys cannot be reserved and are first come, first served, with a limit of three consecutive nights per island; yellow lines on docks are for park and emergency boats, blue lines for campers and red lines for commercial drop-offs. The Thousand Islands Water Trail publishes maps for nine paddling routes; around the Thousand Islands Bridge, where the river narrows, paddling is recommended only for advanced paddlers.",
+    "Of the island campsites, 28 can be reserved and 32 are first come, first served; oTENTiks on McDonald and Gordon islands and five at Mallorytown Landing are reserved, through the Parks Canada Reservation Service at reservation.pc.gc.ca or 1-877-737-3783. Campers check themselves in and post their permit, and the permit holder must be at least 19. Feeding wildlife, directly or by leaving food and garbage where animals can reach it, is illegal under the Canada National Parks Act; raccoons are the commonest raiders, and black bears and coyotes are seen mostly on the mainland. Parks Canada asks you to stay at least 30 metres from deer and 100 metres from bears and coyotes. Pets must be on a leash no longer than 3 metres, and drones need the superintendent's permission."
+  ],
+  "sights": [
+    {
+      "name": "Mallorytown Landing",
+      "note": "The park's mainland base on the Thousand Islands Parkway: visitor centre, boat launch, oTENTiks, picnic grounds, a lookout with the Thanksgiving Address carving and 2 kilometres of trails.",
+      "location": [
+        44.4523,
+        -75.8603
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Jones Creek",
+      "note": "A network of mainland trails, from a 20-minute walk to a 2-hour hike, through tall pines, rock faces and lookouts. Open all year.",
+      "location": [
+        44.4897,
+        -75.8216
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Landons Bay",
+      "note": "Six trails through fields, forest and wetland; the view from its Lookout Trail has long been called the best natural view in the Thousand Islands.",
+      "location": [
+        44.354,
+        -76.0751
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Grenadier Island",
+      "note": "Reached most easily from Mallorytown Landing, with trails at Central, North and East leading to historic buildings and the old township road. Possibly the Toniata of French accounts.",
+      "location": [
+        44.4085,
+        -75.8717
+      ]
+    },
+    {
+      "name": "Gordon Island",
+      "note": "One of the Navy Islands, with oTENTiks and docking for campers; the nearest launch for paddlers is Misty Isles Lodge.",
+      "location": [
+        44.3308,
+        -76.1027
+      ]
+    },
+    {
+      "name": "McDonald Island",
+      "note": "One of the Admiralty Islands near Gananoque, with oTENTiks and campsites, and one of the few islands where generators are allowed.",
+      "location": [
+        44.3139,
+        -76.1702
+      ]
+    },
+    {
+      "name": "Thwartway Island",
+      "note": "An island in the Admiralty group, reached by paddlers from the Gananoque Municipal Marina.",
+      "location": [
+        44.2927,
+        -76.1508
+      ]
+    },
+    {
+      "name": "Georgina Island",
+      "note": "An island beneath the Thousand Islands International Bridge, where the river narrows into strong currents and heavy boat traffic.",
+      "location": [
+        44.3606,
+        -75.9858
+      ]
+    },
+    {
+      "name": "Cedar Island",
+      "note": "One of the park's Kingston islands, crowned by Cathcart Tower, a round stone Martello tower.",
+      "location": [
+        44.2266,
+        -76.4527
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Mallorytown Landing, 1121 Thousand Islands Parkway (Highway 401 exit 675) — visitor centre, boat launch and parking",
+      "Jones Creek trails, 1270 Thousand Islands Parkway",
+      "Landons Bay trails, 302 Thousand Islands Parkway (Highway 401 exit 647)",
+      "Gananoque Municipal Marina, Misty Isles Lodge, Ivy Lea and Kingston launches for the islands"
+    ],
+    "reservations": "Reserve the 28 reservable island campsites and all oTENTiks through the Parks Canada Reservation Service; the other 32 island sites, docks and mooring buoys are first come, first served and cannot be reserved. Mooring and beaching permits are not included in camping fees and are bought on arrival. Water taxis are booked directly with the operators. Check before you go.",
+    "permits": [
+      "Mooring permit for any vessel at a park dock or buoy, or a beaching permit for canoes, kayaks, paddleboards and dinghies",
+      "Daily or seasonal parking permit at Mallorytown Landing, Jones Creek and Landons Bay",
+      "Superintendent's permission to fly a drone; a permit for rock or ice climbing"
+    ],
+    "camping": [
+      "Island campsites, primitive with composting toilets: 28 reservable and 32 first come, first served, at most two tents and eight people per site",
+      "No camping or overnight stays at Jones Creek or Landons Bay"
+    ],
+    "lodging": [
+      "oTENTiks on McDonald and Gordon islands, and five at Mallorytown Landing",
+      "Gananoque, Brockville and Kingston on the mainland"
+    ],
+    "seasonalClosures": [
+      "Fees are charged from Victoria Day weekend to Thanksgiving; island facilities and the mainland trails operated from 15 May to 12 October in 2026, with self-registration",
+      "The Mallorytown Landing Visitor Centre is closed until May 2027",
+      "The river begins to freeze in early December and is usually ice-covered by the end of the month, except in fast water"
+    ]
+  },
+  "weather": "The Great Lakes and the river valley moderate the climate. Summers are hot and humid, with average temperatures around 21°C, though by day the islands stay cooler than inland; heat warnings and severe weather warnings are common, so check the forecast before heading out. In late summer lake breezes often whip up rough water for small boats. River water levels usually peak in June and July and fall through autumn, leaving some docks shallow by late summer. Winters average about −8°C in January and early February, the snowiest time of year; the river freezes in December and the ice goes out in late March or early April.",
+  "directions": "The park's mainland sites lie on the Thousand Islands Parkway between Gananoque and Brockville, Ontario, roughly halfway between Toronto and Montreal. The parkway runs beside the river parallel to Highway 401 and is reached from exits 647 to 685, or from the United States by the Thousand Islands International Bridge. Parks Canada warns that online maps and GPS directions are not reliable for finding river access points. The islands themselves are reached only by boat: launch at Mallorytown Landing or a marina, rent a kayak or canoe from a local outfitter, or book a water taxi.",
+  "fees": [
+    {
+      "title": "Parking, Mallorytown Landing, Jones Creek and Landons Bay",
+      "cost": "$9.50",
+      "amount": 9.5,
+      "currencyCode": "CAD",
+      "detail": "Per vehicle per day; seasonal $161.50. Vehicle with boat trailer, including launching, $24.50 a day. There is no admission charge. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Island campsite",
+      "cost": "$19.50",
+      "amount": 19.5,
+      "currencyCode": "CAD",
+      "detail": "Per site per night, primitive with composting toilets. Mooring or beaching permit extra. Online reservation fee $11.50. As listed by Parks Canada in November 2026."
+    },
+    {
+      "title": "oTENTik",
+      "cost": "$147.50",
+      "amount": 147.5,
+      "currencyCode": "CAD",
+      "detail": "Per night, on an island or at Mallorytown Landing. As listed by Parks Canada in November 2026."
+    },
+    {
+      "title": "Mooring",
+      "cost": "$1.00 per foot (day) / $1.50 per foot (overnight)",
+      "amount": 1.0,
+      "currencyCode": "CAD",
+      "detail": "Day permit expires at 7 pm; overnight at 11 am next day; season $12.25 per foot. Mooring buoy $24.00; beaching $7.25. As listed by Parks Canada in November 2026."
+    },
+    {
+      "title": "Boat launching",
+      "cost": "$15.00",
+      "amount": 15.0,
+      "currencyCode": "CAD",
+      "detail": "Per vessel per day at Mallorytown Landing; season $146.00. As listed by Parks Canada in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 2,500 years ago",
+      "text": "A Point Peninsula culture pot, found in 1979 by a diver off Grenadier Island, dates from about 2,500 years ago."
+    },
+    {
+      "year": "1600s",
+      "text": "French explorers and missionaries record large Indigenous summer encampments at places such as Toniata and Jones Creek."
+    },
+    {
+      "year": "1784",
+      "text": "European settlers, many of them United Empire Loyalists, begin moving in after the American Revolution."
+    },
+    {
+      "year": "1904",
+      "text": "St. Lawrence Islands National Park is created from the Mallory family's gift at Mallorytown Landing and nine federal islands, the first national park east of the Rockies."
+    },
+    {
+      "year": "1954",
+      "text": "The first park warden takes over patrols of the islands."
+    },
+    {
+      "year": "2002",
+      "text": "The surrounding region is designated the Frontenac Arch Biosphere Reserve by UNESCO."
+    },
+    {
+      "year": "2013",
+      "text": "The park is officially renamed Thousand Islands National Park."
+    },
+    {
+      "year": "2022",
+      "text": "A new management plan, prepared with the Mohawk community of Akwesasne, is completed."
+    }
+  ],
+  "safety": [
+    "Boat traffic is heavy from June to September, channels are narrow in places, and changing water levels expose and hide hazards. Use a nautical chart and keep watch outside the marked channels.",
+    "Lake breezes in late summer can raise rough water quickly; paddlers should watch the wind and keep to sheltered groups of islands.",
+    "Blacklegged ticks that can carry Lyme disease are common from April to November. Poison ivy, wild parsnip and giant hogweed grow in the park.",
+    "River and surface water may carry bacteria: filter and treat or boil it, or bring your own drinking water.",
+    "Heat warnings and severe thunderstorms are common in summer; head for shelter if a storm approaches."
+  ],
+  "regulations": [
+    "Do not feed, disturb or harass wildlife, and store food and garbage securely; raccoons quickly learn to raid coolers.",
+    "Firewood must be bought in the park, to keep out the emerald ash borer; it cannot be moved in or out, and natural materials may not be collected for fires.",
+    "Liquor is allowed only at your campsite or aboard a vessel equipped as a residence and not under way; never on docks or in shelters.",
+    "Quiet hours run from 10 pm to 8 am; generators and charging only between 8 am and 10 pm, and only at Mallorytown Landing and a few islands.",
+    "No bicycles, motor vehicles or horses on trails, no tying boats to trees, and no picking plants or collecting natural or historic objects."
+  ],
+  "themes": [
+    "theme-islands",
+    "theme-indigenous-heritage",
+    "theme-deciduous-forest"
+  ],
+  "photos": [
+    {
+      "file": "File:Thousand Islands National Park - Thwartway Island.jpg",
+      "caption": "Sunset at Thwartway Island",
+      "altText": "A sailboat silhouetted on the river under a red and orange sunset sky"
+    },
+    {
+      "file": "File:Gordon Island, morning sunlight.jpg",
+      "caption": "Morning in the pine woods of Gordon Island",
+      "altText": "Tall pines over a grassy forest floor with water glimpsed between the trunks"
+    },
+    {
+      "file": "File:Landon Bay Lookout.jpg",
+      "caption": "The view from the lookout at Landons Bay",
+      "altText": "Wooded islands and channels of a wide river seen from a rocky hilltop"
+    },
+    {
+      "file": "File:Cathcart Tower.JPG",
+      "caption": "Cathcart Tower on Cedar Island, seen from Kingston",
+      "altText": "A round stone tower with a red roof above trees on an island across the water"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thousand Islands National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/on/1000"
+    },
+    {
+      "title": "Parc national des Mille-Îles — Parcs Canada",
+      "url": "https://parcs.canada.ca/pn-np/on/1000"
+    },
+    {
+      "title": "Plan your visit — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/visit"
+    },
+    {
+      "title": "Getting here — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/visit/directions"
+    },
+    {
+      "title": "Don't have a boat? — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/visit/directions/acces-access"
+    },
+    {
+      "title": "Fees — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/visit/tarifs-fees"
+    },
+    {
+      "title": "Hours of operation — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/visit/heures-hours"
+    },
+    {
+      "title": "Camping and overnight accommodations — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/activ/camping"
+    },
+    {
+      "title": "Boating — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/activ/plaisanc-boater"
+    },
+    {
+      "title": "Paddling in the Thousand Islands — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/activ/pagaie-paddle"
+    },
+    {
+      "title": "Hiking — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/activ/randon-hike"
+    },
+    {
+      "title": "Mallorytown Landing day-use area — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/activ/mallorytown"
+    },
+    {
+      "title": "Rules and regulations — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/securite-safety/reglements-rules"
+    },
+    {
+      "title": "Plants and wildlife — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/securite-safety/faune-wildlife"
+    },
+    {
+      "title": "Weather and water safety — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/securite-safety/meteo-weather"
+    },
+    {
+      "title": "Marine safety — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/securite-safety/leau-water"
+    },
+    {
+      "title": "Weather — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/visit/metro-weather"
+    },
+    {
+      "title": "History — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/culture/histoire-history"
+    },
+    {
+      "title": "A big anniversary for a small park — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/culture/histoire-history/designation"
+    },
+    {
+      "title": "Cultural landscape — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/culture/paysage-landscape"
+    },
+    {
+      "title": "Nature and science — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/nature"
+    },
+    {
+      "title": "Environment — Thousand Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/1000/nature/environnement-environment"
+    },
+    {
+      "title": "Thousand Islands National Park of Canada Management Plan, 2022",
+      "url": "https://parks.canada.ca/pn-np/on/1000/info/plan/plan-2022"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Travel trade admission fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/voyagistes-traveltrade/visit/fee"
+    },
+    {
+      "title": "Top tips to respect wildlife and stay safe — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/conseils-tips/faune-wildlife"
+    },
+    {
+      "title": "Thousand Islands National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thousand_Islands_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight locations)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "placeID": "ca-np-riding-mountain",
+  "contentVersion": 1,
+  "summary": "A forested island on the Manitoba Escarpment, rising above the farmland of south-western Manitoba. Swim and paddle at Clear Lake and the resort town of Wasagaming, watch bison at Lake Audy, walk to the cabin where Grey Owl lived with his beavers, or climb the escarpment trails for views over the prairie far below. Wolves, elk, moose and black bears live in the forest.",
+  "facts": {
+    "establishedYear": 1929,
+    "areaHectares": 296900,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Riding Mountain is an upland on the Manitoba Escarpment, standing well above the surrounding farmland, and the park covers about 3,000 square kilometres of it. Pleistocene ice sheets reshaped its drainage and terrain, and on its eastern foot the Beach Ridges trail follows old shorelines of glacial Lake Agassiz, now covered in oak and hazel. Clear Lake, the park's best-known lake, is fed by springs. From the escarpment trails on the east side, the view runs out over the flat farmland far below.",
+    "Several kinds of country meet here. Boreal forest covers much of the upland; a strip of eastern deciduous forest grows along the foot of the escarpment; the west end holds wide meadows of rough fescue grassland; and marshes and river-bottom wetlands lie between. Because farmland surrounds it on every side, the park has become a refuge: wolves, moose, elk, black bears, cougars, beavers, martens and hundreds of bird species live here, along with a captive herd of about 40 plains bison at Lake Audy.",
+    "The park is in Treaty 2 territory, and the Anishinabe have many names for the place; one, Wagiiwing, means mountain in Ojibway. The Keeseekoowenin Ojibway First Nation signed Treaty 2 in 1871 and kept living at Indian Reserve 61A on the north shore of Clear Lake, where they had a fishing station. After the national park was created in 1929 they were told to leave, and park wardens burned their houses and barns. The community was moved to a settlement near Elphinstone, and for some 60 years was cut off from this part of its territory. Over three decades its chiefs and councils fought for and reclaimed land inside the park.",
+    "Much of the park's look dates from the Great Depression. In 1934 more than 1,200 men worked here on relief projects, and skilled local craftsmen built log and stone buildings in the rustic style that became a hallmark of 1930s national parks. The East Gate, built in 1933, is the last of three log entrance gates and a national historic site. In 1931 the park brought in its first bison and hired Archibald Belaney, known as Grey Owl, who spent six months at Beaver Lodge Lake before moving to Prince Albert. In 1986 UNESCO named the park the core of the Riding Mountain Biosphere Reserve."
+  ],
+  "howItWorks": [
+    "Riding Mountain is run by Parks Canada, and everyone stopping in the park needs a valid park pass all year round; only drivers passing straight through on Highways 10 or 19 are exempt. In 2026 daily admission is $10.00 for an adult and $19.50 for a family or group arriving in one vehicle, while admission for anyone 17 or under has been free at every Parks Canada place since 2018. Parks Canada adjusts its fees every two years with the Consumer Price Index, most recently on 1 January 2026. Riding Mountain sells its own annual pass, online and in person, and a Parks Canada Discovery Pass, $83.50 for an adult or $167.50 for a family or group in 2026, covers admission for twelve months at more than 80 Parks Canada destinations, this park included.",
+    "Camping is allowed only in designated campgrounds, with a national park camping permit as well as the entry pass. Wasagaming Campground, with more than 400 sites, and the park's oTENTiks, yurts and micro-cubes are booked through the Parks Canada Reservation Service, online or on 1-877-737-3783; reservations for 2026 opened on 30 January, and they are highly recommended in peak season. Backcountry camping is by permit only and can now be reserved online through the same service. Cairn's Cabin, at the end of the 14.5-kilometre Ochre River trail, can be reserved for a night or two.",
+    "Under the Canada National Parks Act it is illegal to feed, entice, pet or harass wildlife, and chasing animals with a camera counts as harassment. Parks Canada asks visitors to keep at least 100 metres from bears, wolves, coyotes and cougars and 30 metres from deer, moose and elk, and at the Lake Audy enclosure visitors must stay in their vehicles. Pets must be leashed at all times. Every watercraft, motorised or not, must be inspected for aquatic invasive species and carry a permit; in 2026 motorboats returned to Clear Lake under a mandatory tagging programme with a 150-metre no-wake zone and no motorboats on Mondays and Tuesdays. Drones may not be flown without a Parks Canada permit."
+  ],
+  "sights": [
+    {
+      "name": "Clear Lake and Wasagaming Main Beach",
+      "note": "The spring-fed lake and the beach and pier of Wasagaming, the park's townsite, with restaurants, rentals and lakeshore paths.",
+      "location": [
+        50.659,
+        -99.972
+      ]
+    },
+    {
+      "name": "Ominnik Marsh",
+      "note": "A 0.5-kilometre loop on a floating boardwalk through a marsh of bulrushes and beavers, on the edge of Wasagaming.",
+      "location": [
+        50.654,
+        -99.98
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Lake Audy Bison Enclosure",
+      "note": "A 500-hectare fenced prairie holding about 40 plains bison, viewed by car from the road through it. Visitors must stay in their vehicles.",
+      "location": [
+        50.773,
+        -100.223
+      ]
+    },
+    {
+      "name": "Grey Owl's Cabin",
+      "note": "The cabin at Beaver Lodge Lake where Archibald Belaney (Grey Owl) lived for six months in 1931. A 14.8-kilometre return hike or bike ride.",
+      "location": [
+        50.729,
+        -99.901
+      ]
+    },
+    {
+      "name": "Bald Hill",
+      "note": "Reputed to give one of the best views in the park, from the eastern escarpment over the farmland below. A difficult 11-kilometre return trip.",
+      "location": [
+        50.696,
+        -99.597
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Lake Katherine",
+      "note": "A lake and picnic site east of Wasagaming, with a 3.5-kilometre loop trail.",
+      "location": [
+        50.658,
+        -99.895
+      ]
+    },
+    {
+      "name": "Whirlpool Lake",
+      "note": "A lake and small primitive campground on Highway 19, 15 kilometres from Wasagaming.",
+      "location": [
+        50.714,
+        -99.791
+      ]
+    },
+    {
+      "name": "Moon Lake",
+      "note": "A 9.5-kilometre loop through big spruce and fir along the lakeshore, with a primitive campground about 30 minutes from Dauphin.",
+      "location": [
+        50.884,
+        -100.05
+      ]
+    },
+    {
+      "name": "Kippan's Mill",
+      "note": "A 1.3-kilometre loop to the site of the last sawmill in the park, in the high country off the Parkway.",
+      "location": [
+        50.93,
+        -100.043
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Beach Ridges",
+      "note": "A 3.5-kilometre loop over oak- and hazel-covered ridges that were the shores of glacial Lake Agassiz.",
+      "location": [
+        51.007,
+        -100.053
+      ]
+    },
+    {
+      "name": "Riding Mountain National Park Visitor Centre",
+      "note": "In Wasagaming, on Treaty 2 land: exhibits and visitor services. In the off season it opens Friday to Monday only.",
+      "location": [
+        50.658,
+        -99.972
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "South Gate, on Highway 10 near Wasagaming and Onanole",
+      "North Gate (closed in the off season)",
+      "East Gate, on Highway 19 at the foot of the escarpment near McCreary",
+      "Lake Audy Road, off Highway 10 or Provincial Road 354, for the bison enclosure"
+    ],
+    "reservations": "Wasagaming Campground sites, oTENTiks, yurts, the micro-cube and backcountry campsites are booked through the Parks Canada Reservation Service, online or on 1-877-RESERVE (1-877-737-3783); 2026 bookings opened on 30 January. Cairn's Cabin on the Ochre River trail can also be reserved. Check before you go with the park, 204-848-7275.",
+    "permits": [
+      "Park pass — required for every visitor stopping in the park, all year",
+      "National park camping permit, and a backcountry permit for overnight trips beyond the campgrounds",
+      "Aquatic invasive species inspection and permit for every watercraft, including canoes, kayaks and inflatables",
+      "National park fishing licence",
+      "A Parks Canada permit to take off or land a drone or other aircraft"
+    ],
+    "camping": [
+      "Wasagaming Campground: more than 400 reservable sites, from unserviced to full hook-up, within walking distance of the townsite",
+      "Primitive campgrounds at Moon Lake, Lake Audy, Whirlpool Lake and Deep Lake",
+      "Lake Audy Horse Corral, an open campsite on the prairie of the Lake Audy plain",
+      "Backcountry campsites along the trail networks, by permit"
+    ],
+    "lodging": [
+      "oTENTiks, yurts and a micro-cube at Wasagaming Campground; some oTENTiks stay open in winter",
+      "Cairn's Cabin, a reservable wilderness cabin at the end of the Ochre River trail",
+      "Cottages, cabins and other private accommodation in the Wasagaming townsite"
+    ],
+    "seasonalClosures": [
+      "Wasagaming Campground runs from mid-May to mid-October, with sections closing in September; after mid-October only winter oTENTiks and a few sites stay open, without water",
+      "The Boat Cove inspection station closes in October, after which motorised and trailered boats are not allowed on Clear Lake",
+      "The North Gate and some services close in the off season — check before you go with Parks Canada"
+    ]
+  },
+  "weather": "Riding Mountain has a continental climate like the rest of south-western Manitoba: hot summers and cold winters. Annual rainfall is roughly 40 to 50 centimetres, most of it falling between April and October, with June the wettest month, and the higher ground gets more snow than the lowlands around it. Summer is the season for Clear Lake's beaches and boating. In winter about 130 kilometres of trails are kept for cross-country skiing, snowshoeing and fat biking, and Clear Lake freezes over for ice fishing.",
+  "directions": "The park is in western Manitoba, about three and a half hours' drive west of Winnipeg and just under three hours east of Yorkton, Saskatchewan, and can be reached by car or bus. Highway 10 crosses the park past Wasagaming, and Highway 19 climbs the escarpment from the east through the East Gate; drivers going straight through on either road need no pass. The nearest commercial airports are at Dauphin and Brandon. Passes are sold at the park gateways.",
+  "fees": [
+    {
+      "title": "Daily admission",
+      "cost": "$10.00 adult / $19.50 family or group",
+      "amount": 10,
+      "currencyCode": "CAD",
+      "detail": "Seniors $8.75; youth 17 and under free. A family or group is up to seven people arriving in one vehicle. 2026 rates — check before you go."
+    },
+    {
+      "title": "Annual Riding Mountain pass",
+      "cost": "$48.25 adult / $96.75 family or group",
+      "amount": 48.25,
+      "currencyCode": "CAD",
+      "detail": "Seniors $42.50; an additional family pass $42.50. Valid at Riding Mountain only."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50 adult / $167.50 family or group",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "Seniors $71.50. Twelve months' admission to more than 80 Parks Canada destinations. 2026 rates."
+    },
+    {
+      "title": "Camping",
+      "cost": "$19.50 to $47.25",
+      "amount": 19.5,
+      "currencyCode": "CAD",
+      "detail": "Per site per night: primitive sites at Moon Lake, Lake Audy, Whirlpool and Deep Lake $19.50; Wasagaming unserviced $34.00, electrical $40.00, electricity and water $43.75, full hook-up $47.25. Online reservation fee $11.50, by phone $13.50."
+    },
+    {
+      "title": "oTENTik or yurt",
+      "cost": "$147.50",
+      "amount": 147.5,
+      "currencyCode": "CAD",
+      "detail": "Per night at Wasagaming Campground; the micro-cube is $123.00."
+    },
+    {
+      "title": "Cairn's Cabin (wilderness roofed camping)",
+      "cost": "$107.25",
+      "amount": 107.25,
+      "currencyCode": "CAD",
+      "detail": "Per night, minimum three people."
+    },
+    {
+      "title": "Fishing permit",
+      "cost": "$15.00 a day / $51.25 a year",
+      "amount": 15,
+      "currencyCode": "CAD",
+      "detail": "A national park fishing licence is required to fish in the park."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1871",
+      "text": "The Keeseekoowenin Ojibway First Nation signs Treaty 2 and continues to live at Indian Reserve 61A on Clear Lake's north shore."
+    },
+    {
+      "year": "1929",
+      "text": "The Government of Canada creates Riding Mountain National Park."
+    },
+    {
+      "year": "1930s",
+      "text": "The Keeseekoowenin people are told to leave Reserve 61A, and park wardens burn their houses and barns."
+    },
+    {
+      "year": "1931",
+      "text": "Twenty bison from Wainwright, Alberta, arrive at Lake Audy as a display herd, and Grey Owl spends six months at Beaver Lodge Lake."
+    },
+    {
+      "year": "1933",
+      "text": "The park officially opens, and the East Gate is built."
+    },
+    {
+      "year": "1934",
+      "text": "More than 1,200 men are employed on Depression relief projects in the park."
+    },
+    {
+      "year": "1940s",
+      "text": "The original bison herd, infected with bovine tuberculosis in Alberta, is destroyed and replaced by ten bison from Elk Island National Park."
+    },
+    {
+      "year": "1986",
+      "text": "UNESCO designates the Riding Mountain Biosphere Reserve, with the park as its core."
+    },
+    {
+      "year": "2026",
+      "text": "Motorised boats return to Clear Lake under a mandatory tagging programme to keep out aquatic invasive species."
+    }
+  ],
+  "safety": [
+    "Black bears, wolves and cougars live throughout the park. Make noise on the trail, keep children close and pets leashed, store all food, coolers, dishes and toiletries securely, and carry bear spray.",
+    "Bison are wild animals: do not approach them or leave your vehicle in the Lake Audy enclosure.",
+    "Backcountry trails can be wet, especially in spring, and beaver dams sometimes flood them. Boil all water from lakes and streams before drinking; only Wasagaming's water is potable.",
+    "If you see wildlife beside the road, slow down and keep driving. Stopping causes wildlife jams, and obstructing traffic to view animals is an offence."
+  ],
+  "regulations": [
+    "Feeding, enticing, petting or harassing wildlife is illegal; pursuing animals with a camera counts as harassment.",
+    "Every visitor stopping in the park must buy and display a park pass, all year round.",
+    "All watercraft must be inspected and permitted before launching; clean, drain and dry boats and gear, and use separate equipment for Clear Lake and the park's other lakes.",
+    "Fires only in Park-approved fire boxes; do not collect deadfall or cut trees. Fireworks, hunting and off-road vehicles are prohibited, except over-snow vehicles on Clear Lake's ice for ice fishing.",
+    "Collecting plants, berries, mushrooms, antlers, rocks, fossils or historic objects is illegal."
+  ],
+  "themes": [
+    "theme-deciduous-forest",
+    "theme-wetland",
+    "theme-indigenous-heritage",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Manitoba Escarpment.jpg",
+      "caption": "The Manitoba Escarpment from the J.E.T. trail on the park's east side",
+      "altText": "A wide view from a high forested ridge over wooded slopes and the plain beyond"
+    },
+    {
+      "file": "File:Wasagaming Main Beach (Facing Clear Lake).jpg",
+      "caption": "Wasagaming Main Beach on Clear Lake",
+      "altText": "A sandy beach facing a large lake with moored sailboats under a cloudy sky"
+    },
+    {
+      "file": "File:RidingMountain 1.jpg",
+      "caption": "An elk cow and two calves on a park road",
+      "altText": "An elk and two young calves standing on a gravel road between aspen woods"
+    },
+    {
+      "file": "File:East Gate RMNP.jpg",
+      "caption": "The 1930s log East Gate at dusk",
+      "altText": "A rustic log-and-stone gateway with twin towers spanning a gravel road"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Canada National Parks Act, Schedule 1: Riding Mountain National Park of Canada (\"about 2,969 square kilometres\")",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/N-14.01/FullText.html"
+    },
+    {
+      "title": "Riding Mountain National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/mb/riding"
+    },
+    {
+      "title": "Nature and science — Riding Mountain National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/nature"
+    },
+    {
+      "title": "Bison — Riding Mountain National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/nature/animals/mammals/bison"
+    },
+    {
+      "title": "Sharing Our Histories: The Keeseekowenin Ojibway — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/nature/video/communiquer-sharing"
+    },
+    {
+      "title": "Visitor Centre — Riding Mountain National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/visit/visi-cent"
+    },
+    {
+      "title": "Plan your visit — Riding Mountain National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/visit"
+    },
+    {
+      "title": "Fees — Riding Mountain National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/visit/tarifs-fees"
+    },
+    {
+      "title": "Summer trail guide — Riding Mountain National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/visit/activ4/activ6"
+    },
+    {
+      "title": "Trails — Riding Mountain National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/visit/activ4"
+    },
+    {
+      "title": "Camping and overnight accommodations — Riding Mountain National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/activ/camping"
+    },
+    {
+      "title": "Backcountry camping — Riding Mountain National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/activ/rec/activ1-bpk"
+    },
+    {
+      "title": "Managing watercraft and protecting park waters — Riding Mountain National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/activ/moto-boat"
+    },
+    {
+      "title": "Visitor guidelines — Riding Mountain National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/info/reglements-regulations"
+    },
+    {
+      "title": "Hours of operation — Riding Mountain National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/visit/heures-hours"
+    },
+    {
+      "title": "Riding Mountain Park East Gate Registration Complex National Historic Site — Parks Canada",
+      "url": "https://parks.canada.ca/lhn-nhs/mb/eastgate"
+    },
+    {
+      "title": "National Historic Significance — East Gate Registration Complex (Parks Canada)",
+      "url": "https://parks.canada.ca/lhn-nhs/mb/eastgate/decouvrir-discover/natcul_1"
+    },
+    {
+      "title": "Archibald Belaney and Gertrude Bernard (Grey Owl and Anahareo) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/culture/histoire-history"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Travel trade admission fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/voyagistes-traveltrade/visit/fee"
+    },
+    {
+      "title": "Top tips to respect wildlife and stay safe — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/conseils-tips/faune-wildlife"
+    },
+    {
+      "title": "Who we are — Riding Mountain UNESCO Biosphere Region",
+      "url": "https://www.rmbr.ca/about"
+    },
+    {
+      "title": "Riding Mountain National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Riding_Mountain_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight locations)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

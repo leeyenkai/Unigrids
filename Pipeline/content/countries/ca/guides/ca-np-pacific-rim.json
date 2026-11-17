@@ -1,0 +1,396 @@
+{
+  "placeID": "ca-np-pacific-rim",
+  "contentVersion": 1,
+  "summary": "Three separate stretches of Vancouver Island's outer coast in the homelands of the Nuu-chah-nulth: the surf beaches and rainforest boardwalks of the Long Beach Unit between Ucluelet and Tofino, the Broken Group Islands scattered across Barkley Sound and reached only by boat, and the West Coast Trail, a demanding 75-kilometre backpacking route along a shore once known as the Graveyard of the Pacific.",
+  "facts": {
+    "establishedYear": 1970,
+    "areaHectares": 51216,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Two to three days; six to eight for the West Coast Trail"
+  },
+  "story": [
+    "Pacific Rim was the first national park on Canada's Pacific coast. It protects a piece of the coastal lowland forest of the Pacific Coast Mountains and the near-shore waters of the Vancouver Island Shelf, in three units spread along about 125 kilometres of the island's west coast. Its boundaries run out to sea, so the reserve is land and water together: kelp-strewn reefs, sandy bays, rocky islets and the forest behind them.",
+    "Rain makes the forest. About three metres fall here in a year, and anywhere your feet are not in salt water you are probably standing in temperate rainforest: Sitka spruce in the fringe along the shore, western red cedar and western hemlock behind, ferns and hanging moss throughout. On waterlogged ground the trees give up, and shore pine bogs grow twisted and stunted. Behind Wickaninnish Beach lie sand dunes, one of the rarest ecosystems in Canada, where Parks Canada is pulling out invasive beachgrass so that the sand can move again.",
+    "The reserve lies within the traditional territories of nine Nuu-chah-nulth Nations. The name means 'along the mountains and sea', and Nuu-chah-nulth territory runs some 300 kilometres down the island's west coast. On Benson Island in the Broken Group, archaeology dates people's use of the island back more than 5,000 years. Huu-ay-aht, Ditidaht and Pacheedaht villages stood along what is now the West Coast Trail long before sailing ships appeared off the coast, and the Nations' teachings of ʔiisaak (respect) and hišukʔiš c̓awaak (everything is one) now guide how the reserve is run.",
+    "Shipping brought wrecks to this coast in such numbers that it became known as the Graveyard of the Pacific. Lighthouses went up at Cape Beale in 1873 and Carmanah in 1891, joined by a telegraph line through the forest. After the steamship Valencia was lost in 1906 with more than 125 lives, the government built the Pachena lighthouse and lifesaving stations and turned the telegraph route into the Dominion Life Saving Trail. Pacific Rim was established in 1970, and in 1973 that rescue path became the West Coast Trail."
+  ],
+  "howItWorks": [
+    "Pacific Rim is a national park reserve: land set aside for a national park while Indigenous land claims are still being resolved. Parks Canada works with the nine Nuu-chah-nulth Nations through cooperative management boards, and Nation Guardians and the Tseshaht Beachkeepers help look after the West Coast Trail and the Broken Group Islands. Every visitor needs a valid national park entry pass at all times, displayed in your vehicle whenever it is stopped in the Long Beach Unit. Youth aged 17 and under get in free. Daily passes, an annual pass for Pacific Rim alone and the Parks Canada Discovery Pass, a year's admission to more than 80 Parks Canada places, are sold at park facilities and in Ucluelet, Tofino and Port Alberni. Admission was free during the Canada Strong Pass periods of 2025 and 2026, the last of which ended on 7 September 2026.",
+    "Overnight stays are booked through the Parks Canada Reservation Service (reservation.pc.gc.ca, 1-877-737-3783). Green Point Campground is open from 1 May to mid-October; bookings for 2026 opened on 29 January. Camping in the Broken Group Islands is allowed only from 1 May to 30 September, in designated areas on Hand, Turret, Gibraltar, Dodd, Clarke and Gilbert islands, with a backcountry camping permit on top of the entry pass. The West Coast Trail is open to overnight hikers from 1 May to 30 September. Every place is reserved in advance — there is no longer a standby list — and every hiker needs a West Coast Trail Backcountry Use Permit and must attend a pre-hike briefing at Pachena Bay, Gordon River or Balaats'adt (Nitinaht Village). Groups are limited to ten, and no one under six is issued a permit.",
+    "This coast is home to wolves, black bears and cougars, and a wolf warning has covered the whole Long Beach Unit since September 2025. Stay at least 100 metres from them, keep children close and carry bear spray. Keep a bare campsite: food, coolers, toiletries and garbage locked in a hard-sided vehicle or food locker, or hung on the trail. Dogs are banned from the West Coast Trail and Broken Group Islands, apart from certified service dogs, and are currently prohibited along the coast and trails between the Green Point Rocks and the Willowbrae Trail. Breaking these rules can bring charges under the Canada National Parks Act, with fines of up to $25,000."
+  ],
+  "sights": [
+    {
+      "name": "Long Beach",
+      "note": "The unit's best-known stretch of sand, for surfing and beach walks. Dogs are allowed on a leash north of the Green Point Rocks only.",
+      "location": [
+        49.0654,
+        -125.746
+      ]
+    },
+    {
+      "name": "Rainforest Trails A and B",
+      "note": "Two one-kilometre loops of boardwalk and stairs through old temperate rainforest on either side of Highway 4, with interpretive panels.",
+      "location": [
+        49.0449,
+        -125.6838
+      ]
+    },
+    {
+      "name": "Shorepine Bog Trail",
+      "note": "An 800-metre boardwalk loop with no stairs, floating on a bog where shore pines grow stunted and twisted.",
+      "location": [
+        49.0124,
+        -125.6594
+      ]
+    },
+    {
+      "name": "Florencia Bay",
+      "note": "A sandy bay reached by the 2.5-kilometre Nuu-chah-nulth Trail from Kwisitis, with panels on Nuu-chah-nulth teachings along the way.",
+      "location": [
+        48.99,
+        -125.6362
+      ]
+    },
+    {
+      "name": "Radar Hill",
+      "note": "The site of a Second World War radar station, with the memorial to the Korean War battle of Kapyong and the highest viewpoint in the Long Beach Unit.",
+      "location": [
+        49.0839,
+        -125.8413
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Broken Group Islands",
+      "note": "A maze of islands, sheltered channels and shell beaches in Barkley Sound, reached only by boat. Camping from May to September on six designated islands.",
+      "location": [
+        48.8904,
+        -125.3246
+      ]
+    },
+    {
+      "name": "Benson Island",
+      "note": "A Broken Group island for walking, with a self-guided tour of archaeology that dates people's use of the island back more than 5,000 years.",
+      "location": [
+        48.8831,
+        -125.3829
+      ]
+    },
+    {
+      "name": "Pachena Bay",
+      "note": "The northern trailhead of the West Coast Trail, near Bamfield, where hikers attend the pre-hike briefing before setting out.",
+      "location": [
+        48.7852,
+        -125.1316
+      ]
+    },
+    {
+      "name": "Kwisitis Visitor Centre",
+      "note": "'The other end of the beach': exhibits on land, sea and people, a longhouse replica and a deck over Wickaninnish Beach for whales, storms and surfers. Reduced hours in winter.",
+      "location": [
+        49.0132,
+        -125.6745
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The Long Beach Unit, along Highway 4 between Ucluelet and Tofino — beaches, rainforest trails, Green Point Campground and the Kwisitis Visitor Centre",
+      "The Toquaht Nation's Secret Beach Campground and Kayak Launch — a launch point for paddlers bound for the Broken Group Islands",
+      "Pachena Bay, near Bamfield — the West Coast Trail's northern trailhead",
+      "Balaats'adt (Nitinaht Village) — the West Coast Trail's mid-point entry, by water taxi to Nitinaht Narrows",
+      "Gordon River, near Port Renfrew — the West Coast Trail's southern trailhead"
+    ],
+    "reservations": "Green Point Campground, Broken Group Islands camping and every West Coast Trail place are booked through the Parks Canada Reservation Service (reservation.pc.gc.ca or 1-877-737-3783). Bookings for 2026 opened on 29 January for camping and on 5 February for the West Coast Trail, which has no standby list. Opening dates change each year — check with Parks Canada before you go.",
+    "permits": [
+      "National park entry pass for everyone, at all times; youth passes are free",
+      "West Coast Trail Backcountry Use Permit, with a pre-hike briefing at Pachena Bay, Gordon River or Balaats'adt (Nitinaht Village)",
+      "Broken Group Islands backcountry camping permit",
+      "Custodial groups kayaking or canoeing need a restricted-activity permit; contact the reserve four to six weeks ahead"
+    ],
+    "camping": [
+      "Green Point Campground, midway between Ucluelet and Tofino: 94 drive-in sites, walk-in and group sites and oTENTik tents, 1 May to mid-October, maximum seven nights",
+      "Broken Group Islands: designated camping areas on Hand, Turret, Gibraltar, Dodd, Clarke and Gilbert islands, 1 May to 30 September; no drinking water",
+      "West Coast Trail: designated backcountry campsites along the route, for permit holders only"
+    ],
+    "lodging": [
+      "Tofino and Ucluelet, at either end of the Long Beach Unit, each with a visitor centre",
+      "Accommodation and basic services at or near each West Coast Trail access point: Bamfield, Port Renfrew and Balaats'adt (Nitinaht Village)"
+    ],
+    "seasonalClosures": [
+      "The West Coast Trail is open to overnight hikers only from 1 May to 30 September — check before you go",
+      "Camping in the Broken Group Islands is closed from 1 October to 30 April; day visits are allowed all year",
+      "Green Point Campground closes from mid-October to the end of April",
+      "The Kwisitis Visitor Centre keeps reduced winter hours, and the ʔapsčiik t̓ašii pathway is not maintained in winter"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "About three metres of rain falls here in a year. Summer is the mildest season, though fog often blankets the shore and May and June are particularly wet on the West Coast Trail, where summer temperatures average about 14 °C. The sea stays cold all year, between 7 and 14 °C even in summer. From November to March big Pacific storms roll in, and storm watching from Kwisitis and other safe viewpoints draws its own visitors; in winter beach stairs may be removed and the pathway is left unmaintained.",
+  "directions": "The Long Beach Unit is about three hours' drive along Highway 4 from the ferry terminal at Nanaimo, or an hour's flight from Vancouver. The Broken Group Islands are reached only by water: paddlers can launch from the Toquaht Nation's Secret Beach Campground, and licensed operators drop off and collect kayakers; paddling out from Bamfield or Ucluelet means crossing exposed channels and is not recommended. The West Coast Trail starts at Pachena Bay near Bamfield, at Gordon River near Port Renfrew, or at Balaats'adt (Nitinaht Village), from where a single water taxi leaves for Nitinaht Narrows at 8 am. Ferries run by the Pacheedaht and Ditidaht First Nations cross the Gordon River and Nitinaht Narrows from 1 May to 7 October.",
+  "fees": [
+    {
+      "title": "Daily admission",
+      "cost": "$12.25 adult / $10.75 senior / $24.50 family or group",
+      "amount": 12.25,
+      "currencyCode": "CAD",
+      "detail": "Youth aged 17 and under free. A family or group is up to seven people arriving in one vehicle. As listed by Parks Canada in November 2026 — check before you go."
+    },
+    {
+      "title": "Beach walk pass",
+      "cost": "$7.75 adult / $6.75 senior / $15.50 family or group",
+      "amount": 7.75,
+      "currencyCode": "CAD",
+      "detail": "Up to four hours, at the Long Beach, Kwisitis, Incinerator and Wickaninnish parking lots only. As listed in November 2026."
+    },
+    {
+      "title": "Annual pass, Pacific Rim only",
+      "cost": "$60.50 adult / $51.50 senior / $120.75 family or group",
+      "amount": 60.5,
+      "currencyCode": "CAD",
+      "detail": "Valid at Pacific Rim National Park Reserve only. As listed in November 2026."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50 adult / $71.50 senior / $167.50 family or group",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "A year's admission to more than 80 Parks Canada places. As listed in November 2026."
+    },
+    {
+      "title": "West Coast Trail, per hiker",
+      "cost": "$208.50",
+      "amount": 208.5,
+      "currencyCode": "CAD",
+      "detail": "The Backcountry Use Permit ($184.75) and orientation fee ($23.75). The Gordon River and Nitinaht Narrows ferries are $28.00 each, plus the reservation fee and entry pass. As listed in November 2026."
+    },
+    {
+      "title": "Green Point Campground, per night",
+      "cost": "$34.00 unserviced / $40.00 with electricity",
+      "amount": 34,
+      "currencyCode": "CAD",
+      "detail": "An oTENTik is $147.50 a night. As listed in November 2026 — check before you go."
+    },
+    {
+      "title": "Backcountry camping, Broken Group Islands",
+      "cost": "$15.00",
+      "amount": 15,
+      "currencyCode": "CAD",
+      "detail": "Per person per night, on top of the entry pass. As listed in November 2026."
+    },
+    {
+      "title": "Reservation fee",
+      "cost": "$11.50 online / $13.50 by phone",
+      "amount": 11.5,
+      "currencyCode": "CAD",
+      "detail": "Per reservation, modification or cancellation. As listed in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Over 5,000 years ago",
+      "text": "People are already using Benson Island in the Broken Group, according to archaeological research there."
+    },
+    {
+      "year": "1873",
+      "text": "The Cape Beale lighthouse is built to guide ships along the coast."
+    },
+    {
+      "year": "1891",
+      "text": "The Carmanah lighthouse begins operating, linked to Victoria by a telegraph line through Huu-ay-aht, Ditidaht and Pacheedaht territory."
+    },
+    {
+      "year": "1906",
+      "text": "The steamship Valencia is wrecked with the loss of more than 125 lives."
+    },
+    {
+      "year": "1907",
+      "text": "The Pachena lighthouse is built as part of the government's response, which also brings lifesaving stations and the Dominion Life Saving Trail."
+    },
+    {
+      "year": "1962",
+      "text": "Green Point Campground opens."
+    },
+    {
+      "year": "1970",
+      "text": "Pacific Rim National Park Reserve is established, the first national park on Canada's Pacific coast."
+    },
+    {
+      "year": "1973",
+      "text": "The lifesaving trail becomes part of the reserve as a recreational hiking route, the West Coast Trail."
+    },
+    {
+      "year": "1995",
+      "text": "Parks Canada begins working with the Nuu-chah-nulth First Nations on managing the reserve."
+    },
+    {
+      "year": "1998",
+      "text": "A cairn commemorating the Battle of Kapyong is placed on Radar Hill."
+    }
+  ],
+  "safety": [
+    "Every beach here faces the open Pacific. Watch for large waves, rip currents and rolling drift logs, keep off the logs when the tide or swell is high, and check the tide table and the wave hazard sign before going onto the shore.",
+    "If you feel strong shaking from an earthquake, or the sea suddenly draws back, move to higher ground at once and follow the tsunami evacuation route signs.",
+    "The sea is 7 to 14 °C even in summer. Wear a wetsuit for surfing or swimming, and take a lesson rather than learning to surf alone.",
+    "The West Coast Trail is a remote Type 3 trail with broken ladders and boardwalks, cable cars and river fords, and help can take more than 24 hours to arrive. Do not cross rivers flowing above your knees, carry tide tables, and have at least one person in each group carry bear spray.",
+    "Paddling to the Broken Group Islands means crossings of three hours or more in weather that can change within minutes. Be able to perform group rescue and self-rescue."
+  ],
+  "regulations": [
+    "Carry a valid national park entry pass at all times, and display it in your vehicle whenever it is stopped in the Long Beach Unit.",
+    "Camp only in authorised campgrounds and designated areas, with a permit. Keep a bare campsite; campers who leave out attractants may have their permit cancelled without a refund.",
+    "Dogs are not allowed on the West Coast Trail or in the Broken Group Islands, are currently prohibited between the Green Point Rocks and the Willowbrae Trail, and must be leashed everywhere else.",
+    "Never feed, approach or follow wildlife. When fires are allowed on the West Coast Trail and in the Broken Group, keep them small and below the high-tide line, and check for fire bans first.",
+    "Do not disturb or remove natural or cultural objects. Landing on the First Nation reserve lands on Effingham and Nettle islands needs the Nation's written permission."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-temperate-rainforest",
+    "theme-islands",
+    "theme-indigenous-heritage",
+    "theme-dunes"
+  ],
+  "photos": [
+    {
+      "file": "File:Long Beach Pacific Rim National Park (3670651019).jpg",
+      "caption": "Long Beach in the Long Beach Unit",
+      "altText": "A wide, empty sandy beach under a pale sky, with a line of dark forest along the shore"
+    },
+    {
+      "file": "File:Rainforest Trail, Pacific Rim National Park1.jpg",
+      "caption": "The boardwalk of the Rainforest Trail",
+      "altText": "A wooden boardwalk running through dense green forest with huge old trees and broad-leaved plants"
+    },
+    {
+      "file": "File:Owen Point.JPG",
+      "caption": "Sea caves near Owen Point on the West Coast Trail",
+      "altText": "A hiker dwarfed by mossy, sea-carved rock walls in a narrow gully on the shore"
+    },
+    {
+      "file": "File:Broken Group Islands of Barkley Sound 01.jpg",
+      "caption": "Rocky islets in the Broken Group, Barkley Sound",
+      "altText": "Small tree-topped rocky islets in calm grey water, with mountains behind under low cloud"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pacific Rim National Park Reserve — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim"
+    },
+    {
+      "title": "Fees — Pacific Rim National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/visit/tarifs-fees"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "West Coast Trail: Hike of a lifetime — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/activ/SCO-WCT"
+    },
+    {
+      "title": "Broken Group Islands — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/activ/broken-group"
+    },
+    {
+      "title": "Camping — Pacific Rim National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/activ/camping"
+    },
+    {
+      "title": "Hiking — Pacific Rim National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/activ/randonnee-hiking"
+    },
+    {
+      "title": "ʔapsčiik t̓ašii multi-use pathway — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/activ/piste-pathway"
+    },
+    {
+      "title": "Kwisitis Visitor Centre — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/activ/kwisitis"
+    },
+    {
+      "title": "Kapyong Memorial at Radar Hill — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/activ/kapyong"
+    },
+    {
+      "title": "Storm watching — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/activ/tempetes-storms"
+    },
+    {
+      "title": "Hours of operation — Pacific Rim National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/visit/heures-hours"
+    },
+    {
+      "title": "Plan your visit — Pacific Rim National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/visit"
+    },
+    {
+      "title": "Dogs and pets — Pacific Rim National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/visit/chiens-dogs"
+    },
+    {
+      "title": "Living with wildlife — Pacific Rim National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/nature/faune-wildlife"
+    },
+    {
+      "title": "Water hazards — Pacific Rim National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/securite-safety/risques-hazards"
+    },
+    {
+      "title": "Important bulletins — Pacific Rim National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/bulletins"
+    },
+    {
+      "title": "Indigenous co-operative management — Pacific Rim National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/info/premieresnations-firstnations"
+    },
+    {
+      "title": "Culture and history — Pacific Rim National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/culture"
+    },
+    {
+      "title": "Rainforest in Canada! Where? — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/nature/foret-pluviale-rainforest"
+    },
+    {
+      "title": "Sand dune restoration — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/nature/restauration-restoration/dunes"
+    },
+    {
+      "title": "Pacific Rim National Park Reserve of Canada: State of the Park Report (2008) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/pacificrim/~/media/98c155d3b6e0481291115488934801fd.ashx"
+    },
+    {
+      "title": "Multi-species action plan for Pacific Rim National Park Reserve of Canada (2016) — Species at Risk Public Registry",
+      "url": "https://www.canada.ca/en/environment-climate-change/services/species-risk-public-registry/action-plans/multiple-species-pacific-rim-2016.html"
+    },
+    {
+      "title": "Canada National Parks Act, Schedule 2 — Justice Laws",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/N-14.01/FullText.html"
+    },
+    {
+      "title": "Pacific Rim National Park Reserve of Canada — Canadian Geographical Names Database",
+      "url": "https://geogratis.gc.ca/services/geoname/en/geonames/JDICS"
+    },
+    {
+      "title": "Gulf Islands National Park Reserve of Canada (national park reserve definition) — BC Geographical Names",
+      "url": "https://apps.gov.bc.ca/pub/bcgnws/names/56317.html"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates, via Nominatim)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

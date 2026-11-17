@@ -1,0 +1,383 @@
+{
+  "placeID": "ca-np-prince-albert",
+  "contentVersion": 1,
+  "summary": "Lakes and boreal forest in central Saskatchewan, where the aspen parkland and fescue grassland of the south give way to spruce and jack pine. Swim and paddle from the resort village of Waskesiu, walk or canoe to Grey Owl's cabin on Ajawaan Lake, or look for one of Canada's few free-ranging herds of plains bison in the Sturgeon River valley.",
+  "facts": {
+    "establishedYear": 1927,
+    "areaHectares": 387500,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Prince Albert National Park protects 3,875 square kilometres of the Southern Boreal Plains and Plateaux natural region, and its reason for being is a transition. In the south-west corner, rare plains rough fescue grassland and aspen parkland meet the forest; northwards the land becomes mid-boreal upland of white spruce, balsam fir, jack pine, black spruce muskeg and tamarack bog. Pleistocene glaciers shaped it, leaving knob-and-kettle hills and a scatter of lakes, among them three large ones: Waskesiu, Kingsmere and Crean. There is little overall change in height across the park, though some trails climb steep hills.",
+    "The mix of habitats makes the park rich in wildlife. More than 200 bird species have been recorded, and each spring the Narrows on Waskesiu Lake, kept thin-iced all winter by its current, opens first and draws migrating waterfowl. Black bears, moose, elk, red foxes and beavers live in the forest, and lake trout, northern pike and walleye in the lakes. On the west side roams the Sturgeon River plains bison herd, descended from about 50 animals released north of the park in 1969. It peaked at more than 450 in 2006–2008 but fell after an anthrax outbreak in 2008 and heavy harvesting outside the park, and Parks Canada now estimates it at about 120.",
+    "This is Treaty 6 territory and the traditional land of the Woods Cree, Plains Cree, Dakota and Dene, and the homeland of the Métis; its waterways were long the routes between communities. The park was declared in 1927 and opened by Prime Minister William Lyon Mackenzie King in August 1928 as 'Saskatchewan's playground'. Parks Canada now acknowledges that this apparent wilderness was made by excluding people: Montreal Lake Cree Nation and Sturgeon Lake First Nation members were kept from hunting, fishing and harvesting here, and in the 1930s park officials removed the Métis trapper Louis Lavallee and his family from Pelican Lake, where they had lived for decades.",
+    "In the 1930s the Englishman Archibald Belaney, who called himself Grey Owl and passed himself off as Indigenous, lived on Ajawaan Lake with his Mohawk wife Gertrude Bernard, Anahareo, and their pet beavers, writing three books and receiving hundreds of visitors. After his death in 1938 a newspaper revealed who he was. His conservation message reached people around the world, but Parks Canada notes that he was celebrated while Indigenous people were barred from their own territory. Belaney, Anahareo and their daughter Shirley Dawn are buried near the cabin."
+  ],
+  "howItWorks": [
+    "Prince Albert is run by Parks Canada and charges daily admission: in 2026 an adult pays $10.00 a day and a family or group arriving in one vehicle $19.50, while admission for anyone 17 or under has been free at every Parks Canada place since 2018. Parks Canada adjusts its fees every two years with the Consumer Price Index, most recently on 1 January 2026. Prince Albert sells its own annual pass, online and in person, with an early-bird price from 1 January to 31 March. A Parks Canada Discovery Pass, $83.50 for an adult or $167.50 for a family or group in 2026, covers admission for twelve months at more than 80 Parks Canada destinations, this park included. Camping, backcountry stays, fishing permits, fire permits and reservations are charged separately.",
+    "Beaver Glen and Red Deer campgrounds in Waskesiu are fully reservable through the Parks Canada Reservation Service, online or on 1-877-737-3783; for 2026 Red Deer opened for bookings on 24 April. Namekus Lake, Sandy Lake and the Narrows are first come, first served. Every overnight trip into the backcountry needs a backcountry permit, and you register at the Visitor Centre or South Gate before you leave. The 15 designated backcountry campgrounds, most of them on Kingsmere Lake and the Bagwa canoe route, are allocated first come, first served. Random backcountry camping is allowed in four zones but not within 2 kilometres of a public highway or designated campground, within 50 metres of a designated trail, or within 2 kilometres of the shores of the main lakes.",
+    "Under the Canada National Parks Act it is illegal to feed wildlife, directly or by leaving food or garbage out, and dogs must be leashed at all times. Parks Canada asks visitors to keep at least 100 metres from black bears, wolves and coyotes, and 30 metres from deer, moose and elk; this is black bear country, so store food, coolers, garbage and toiletries in a vehicle, food locker or bear cache. All watercraft, canoes and paddleboards included, must carry a mandatory aquatic invasive species certification permit and sticker before entering park waters. Anglers need a Prince Albert National Park fishing permit. All Parks Canada places are no-drone zones for recreational use."
+  ],
+  "sights": [
+    {
+      "name": "Waskesiu Lake and Main Beach",
+      "note": "The lake and the beach at the centre of Waskesiu, the only community inside the park, with heritage buildings from the 1930s nearby.",
+      "location": [
+        53.924,
+        -106.083
+      ]
+    },
+    {
+      "name": "Grey Owl's Cabin, Ajawaan Lake",
+      "note": "The 1930s cabin of Archibald Belaney (Grey Owl) and Anahareo, with their graves nearby. Reached on the 20-kilometre Grey Owl Trail or by paddling across Kingsmere Lake.",
+      "location": [
+        54.15,
+        -106.464
+      ]
+    },
+    {
+      "name": "Kingsmere Lake",
+      "note": "A large, clear lake north of Waskesiu ringed by seven backcountry campgrounds; wide open water means crossings can be unsafe in wind.",
+      "location": [
+        54.086,
+        -106.446
+      ]
+    },
+    {
+      "name": "The Narrows",
+      "note": "Where a current keeps Waskesiu Lake thin-iced all winter, giving the first open water of spring and a gathering place for waterfowl in late April and early May.",
+      "location": [
+        53.98,
+        -106.293
+      ]
+    },
+    {
+      "name": "Height of Land Tower",
+      "note": "A 15-metre lookout tower beside Highway 263 over the mixed-wood forest around Shady Lake and Bear Trap Creek.",
+      "location": [
+        53.866,
+        -106.097
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Spruce River Highlands",
+      "note": "An 8.5-kilometre loop across aspen-covered hilltops to a lookout tower above the Spruce River.",
+      "location": [
+        53.711,
+        -106.049
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Boundary Bog Trail",
+      "note": "A 2-kilometre loop through knob-and-kettle country and spruce and tamarack into the heart of a boreal bog.",
+      "location": [
+        53.906,
+        -106.027
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Amyot Lake and the Sturgeon River valley",
+      "note": "Aspen parkland and sedge meadows on the park's west side, often visited by the free-ranging Sturgeon River plains bison herd.",
+      "location": [
+        53.682,
+        -106.66
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Prince Albert National Park Visitor Centre",
+      "note": "On Lakeview Drive in Waskesiu: backcountry registration, fishing permits, trout tags and entry passes. Open all year, with reduced winter days.",
+      "location": [
+        53.923,
+        -106.083
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Waskesiu Nature Centre",
+      "note": "A 1935 heritage building in the Waskesiu townsite. Closed in winter; it reopens on the May long weekend.",
+      "location": [
+        53.923,
+        -106.089
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Highway 263, the Scenic Route, from Highway 2 at Christopher Lake, entering at the park's south end",
+      "Highways 2 and 264 to Waskesiu, about 90 kilometres north of the city of Prince Albert",
+      "The west side, via Highway 240, for the Sturgeon River valley and the bison"
+    ],
+    "reservations": "Beaver Glen and Red Deer campgrounds are 100 per cent reservable through the Parks Canada Reservation Service, online or on 1-877-RESERVE (1-877-737-3783); oTENTiks are reserved the same way. Namekus Lake, Sandy Lake and the Narrows are not reservable, and backcountry campsites are allocated first come, first served when you register. Check before you go with the Visitor Centre, 306-663-4522.",
+    "permits": [
+      "Backcountry permit — required for every overnight trip; register at the Visitor Centre or South Gate",
+      "Aquatic invasive species watercraft certification permit — mandatory for every boat, canoe, kayak and paddleboard before it enters park waters",
+      "Prince Albert National Park fishing permit, from the Visitor Centre, gates, campground kiosks and marinas",
+      "Fire permit, sold by the day where it is not included in the campsite fee",
+      "Dog and cat licence for pets in the park more than 30 days in a year"
+    ],
+    "camping": [
+      "Beaver Glen, Waskesiu: 200 electrical sites with showers",
+      "Red Deer, Waskesiu: 161 fully serviced sites",
+      "The Narrows: 85 unserviced sites near a marina and boat launch",
+      "Namekus Lake and Sandy Lake: smaller unserviced lakeside campgrounds",
+      "Fifteen designated backcountry campgrounds, with tent pads, pit toilets, firewood and bear caches"
+    ],
+    "lodging": [
+      "Ten oTENTiks in Beaver Glen Campground, reserved through the Parks Canada Reservation Service",
+      "Private accommodation in the townsite of Waskesiu Lake, the only community inside the park"
+    ],
+    "seasonalClosures": [
+      "Campgrounds open from mid-May; Sandy Lake closes in mid-September, the Narrows in early October, Beaver Glen and Red Deer in mid-October, Namekus Lake in late October",
+      "The Visitor Centre keeps reduced hours from November to May; in 2026–27 it is closed on Mondays and Tuesdays from 9 November to 19 May",
+      "The Nature Centre is closed in winter and reopens on the May long weekend",
+      "Lake ice breaks up and freezes at different times on different lakes — check before you go with Parks Canada"
+    ]
+  },
+  "weather": "The climate is cool and continental, with long, cold winters, warm summers and big differences between day and night. July and August are the warmest months, but short-sleeve weather is common from mid-May to mid-September. Annual precipitation is 40 to 50 centimetres, most of it rain. The first snow usually falls in early October, lasting snow cover arrives in early December and deepens to about 50 centimetres by the end of January, and by the first week of May almost all the ground is clear. The forest greens from the second week of May and is in full leaf by the end of the month. Winter brings cross-country skiing, snowshoeing and ice fishing on Waskesiu Lake.",
+  "directions": "The park is in central Saskatchewan. Highways 2 and 264 lead to Waskesiu, about 90 kilometres north of the city of Prince Albert, and Highway 263, the Scenic Route, enters from Highway 2 at Christopher Lake; all are paved and open year-round. By car Waskesiu is about an hour from Prince Albert, two and a half hours from Saskatoon or La Ronge and five and a half from Regina. The nearest major airport is John G. Diefenbaker International at Saskatoon. For the bison country on the west side, follow signs from the junction of Highways 263 and 240.",
+  "fees": [
+    {
+      "title": "Daily admission",
+      "cost": "$10.00 adult / $19.50 family or group",
+      "amount": 10,
+      "currencyCode": "CAD",
+      "detail": "Seniors $8.75; youth 17 and under free. A family or group is up to seven people arriving in one vehicle. 2026 rates — check before you go."
+    },
+    {
+      "title": "Annual Prince Albert pass",
+      "cost": "$48.25 adult / $96.75 family or group",
+      "amount": 48.25,
+      "currencyCode": "CAD",
+      "detail": "Seniors $42.50. Early-bird adult price $38.75 from 1 January to 31 March. Valid at Prince Albert only."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50 adult / $167.50 family or group",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "Seniors $71.50. Twelve months' admission to more than 80 Parks Canada destinations. 2026 rates."
+    },
+    {
+      "title": "Front-country camping",
+      "cost": "$19.50 to $48.50",
+      "amount": 19.5,
+      "currencyCode": "CAD",
+      "detail": "Per site per night in peak season: primitive sites at Sandy Lake and Namekus Lake $19.50, the Narrows $38.50, Red Deer full hook-up $43.75, Beaver Glen electrical $48.50 (fire permit included). Online reservation fee $11.50, by phone $13.50."
+    },
+    {
+      "title": "oTENTik",
+      "cost": "$159.25",
+      "amount": 159.25,
+      "currencyCode": "CAD",
+      "detail": "Per night, fire permit included."
+    },
+    {
+      "title": "Backcountry camping",
+      "cost": "$15.00",
+      "amount": 15,
+      "currencyCode": "CAD",
+      "detail": "Per person per night at designated sites, or $105.00 a year; random backcountry camping $8.50 per person per night."
+    },
+    {
+      "title": "Fishing permit",
+      "cost": "$15.00 a day / $51.25 a year",
+      "amount": 15,
+      "currencyCode": "CAD",
+      "detail": "A national park fishing permit is required to fish anywhere in the park."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1927",
+      "text": "Prince Albert National Park is established, after years of lobbying from the city of Prince Albert."
+    },
+    {
+      "year": "1928",
+      "text": "Prime Minister William Lyon Mackenzie King officially opens the park in August."
+    },
+    {
+      "year": "1929",
+      "text": "The boundaries are redrawn without consulting local communities, leaving out Montreal Lake but taking in Pelican Lake, home of the Lavallee family."
+    },
+    {
+      "year": "1931",
+      "text": "After a short spell working at Riding Mountain, Archibald Belaney (Grey Owl) and Anahareo move to Ajawaan Lake with their beavers."
+    },
+    {
+      "year": "1933",
+      "text": "The park's first display herd of plains bison arrives at the Buffalo Paddock near South Gate."
+    },
+    {
+      "year": "1938",
+      "text": "Belaney dies, and a newspaper reveals that Grey Owl was an Englishman, not an Indigenous man."
+    },
+    {
+      "year": "1969",
+      "text": "About 50 plains bison from Elk Island National Park are released in the Thunder Hills; some settle along the Sturgeon River and found the free-ranging herd."
+    },
+    {
+      "year": "1997",
+      "text": "The Buffalo Paddock is removed so that resources can go to the free-ranging Sturgeon River herd."
+    },
+    {
+      "year": "2008",
+      "text": "Anthrax kills an estimated 60 bison of the Sturgeon River herd, beginning its decline."
+    }
+  ],
+  "safety": [
+    "This is black bear country. Make noise on the trail, travel in groups, keep children close and dogs leashed, and back away from any bear; black bears can run at 50 kilometres an hour. Leave the area if you find a dead animal, and report it.",
+    "Kingsmere Lake and the other large lakes have long stretches of open water. In strong wind, wait for calmer conditions rather than crossing.",
+    "Cellphone coverage is limited away from Waskesiu. Check the weather, trail conditions and bulletins before you set out, and tell someone your plans.",
+    "Give the Sturgeon River bison plenty of room; they are wild animals and can be dangerous at close range."
+  ],
+  "regulations": [
+    "Feeding wildlife is illegal, including leaving food or garbage where animals can reach it. Keep dogs on a leash at all times.",
+    "Every watercraft must have an aquatic invasive species certification permit before entering park waters; clean, drain and dry boats and gear between waterbodies.",
+    "Fishing needs a national park fishing permit; live or dead fish may not be used as bait, and lead sinkers and jigs under 50 grams are banned.",
+    "Random backcountry camping is not allowed within 2 kilometres of highways, campgrounds or the main lakeshores, or within 50 metres of trails; gather only deadfall for fires, never wood from standing trees.",
+    "Drones may not be flown for recreation in any Parks Canada place."
+  ],
+  "themes": [
+    "theme-wetland",
+    "theme-indigenous-heritage",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Glow of sunset on the Waskesiu Lake in Prince Albert National Park Saskatchewan, Canada.jpg",
+      "caption": "Sunset over Waskesiu Lake",
+      "altText": "A calm lake glowing orange at sunset with a dark forested shoreline"
+    },
+    {
+      "file": "File:Greyowls cabin ajawaan lake.jpg",
+      "caption": "Grey Owl's cabin on the shore of Ajawaan Lake",
+      "altText": "A small log cabin at the edge of a lake among trees"
+    },
+    {
+      "file": "File:HeightOfLandViewSummer.jpg",
+      "caption": "Boreal forest from the Height of Land tower in summer",
+      "altText": "A wide view from a wooden lookout deck over unbroken green forest to the horizon"
+    },
+    {
+      "file": "File:BoundaryBogWoodTrail.jpg",
+      "caption": "The boardwalk of the Boundary Bog Trail",
+      "altText": "A wooden boardwalk running through tall grass towards spruce and tamarack trees"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Prince Albert National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert"
+    },
+    {
+      "title": "Nature and science — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/nature"
+    },
+    {
+      "title": "Foundation of Prince Albert National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/culture/creation-foundation"
+    },
+    {
+      "title": "Early History of Recreation and Leisure — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/culture/loisirs-leisure"
+    },
+    {
+      "title": "Archibald Belaney and Gertrude Bernard (Grey Owl and Anahareo) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/culture/histoire-history"
+    },
+    {
+      "title": "Sturgeon River plains bison herd — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/nature/bisons"
+    },
+    {
+      "title": "Grasslands — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/nature/integrite_ecologique-ecological_integrity/prairies-grasslands"
+    },
+    {
+      "title": "Fees — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/visit/tarifs-fees"
+    },
+    {
+      "title": "Hiking — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/randonee-hiking"
+    },
+    {
+      "title": "Tent and RV camping — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/camping/avantpays-frontcountry"
+    },
+    {
+      "title": "Backcountry Campgrounds — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/camping/arrierepays-backcountry"
+    },
+    {
+      "title": "Kingsmere Lake Backcountry Campgrounds — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/camping/arrierepays-backcountry/kingsmere"
+    },
+    {
+      "title": "Bird Watching — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/oiseaux-bird"
+    },
+    {
+      "title": "Bison — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/bisons"
+    },
+    {
+      "title": "Lookout towers and viewpoints — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/observation-lookout"
+    },
+    {
+      "title": "Fishing — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/activ/experiences/peche-fishing"
+    },
+    {
+      "title": "Aquatic invasive species (AIS) prevention — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/nature/conservation/aquatiques_aquatic"
+    },
+    {
+      "title": "You Are in Black Bear Country — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/securite-safety/ours-bear"
+    },
+    {
+      "title": "Hours of operation — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/visit/heures-hours"
+    },
+    {
+      "title": "How to get here — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/visit/directions"
+    },
+    {
+      "title": "Weather — Prince Albert National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/sk/princealbert/visit/meteo-weather"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Travel trade admission fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/voyagistes-traveltrade/visit/fee"
+    },
+    {
+      "title": "Top tips to respect wildlife and stay safe — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/conseils-tips/faune-wildlife"
+    },
+    {
+      "title": "Prince Albert National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prince_Albert_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight locations)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

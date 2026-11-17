@@ -1,0 +1,311 @@
+{
+  "placeID": "ca-np-qausuittuq",
+  "contentVersion": 1,
+  "summary": "Qausuittuq, \"place where the sun doesn't rise\", protects the northern half of Bathurst Island and the islands around it in Nunavut's High Arctic: about 11,000 square kilometres of polar desert, rolling tundra, wetlands and low plateaus. It was created in 2015 above all for the threatened Peary caribou, which calve and winter here alongside herds of muskoxen. The only way in is a chartered aircraft from Resolute Bay, 200 kilometres away.",
+  "facts": {
+    "establishedYear": 2015,
+    "areaHectares": 1100800,
+    "bestSeasons": [
+      "summer",
+      "spring"
+    ],
+    "suggestedTime": "Several days, with spare days for weather"
+  },
+  "story": [
+    "Qausuittuq lies at 76 degrees north in the Queen Elizabeth Islands and represents Canada's Western High Arctic natural region. It takes in northern Bathurst Island, north of the Polar Bear Pass National Wildlife Area, together with the Governor General Islands, the Berkeley Group and smaller islands to the west and north. The rocks are sedimentary — limestone, sandstone and dolomite — and eskers, moraines and raised beaches show where ice once lay. The land is a quiet mix of plateaus, hills, wetlands and lowlands, with uplands that reach about 411 metres.",
+    "Despite the sea on every side, this is a polar desert. Mean temperatures run from about minus 35°C in January to 5°C in July, and less than 130 millimetres of precipitation falls in a year. Soils are thin and plants scarce: purple saxifrage, dwarf willow, sedges, grasses, lichens and mosses. Yet the park's reason for being is an animal. It protects travel routes, calving grounds and wintering grounds of Peary caribou, listed as threatened under the Species at Risk Act. Muskoxen, polar bears, Arctic wolves, foxes, hares and collared lemmings share the land; snowy owls, snow geese, king eiders and jaegers nest here; and the waters hold seals, walrus, bowhead whales, belugas and narwhal.",
+    "People have used the Bathurst Island area for some 4,500 years. Pre-Dorset, Dorset and Thule Inuit sites lie mostly south and east of the park, but there are Late Dorset sites, from about 500 to 1200 AD, along Bracebridge Inlet. From 1819 British naval expeditions searched these waters for the Northwest Passage and then for Franklin's lost ships, and between 1850 and 1854 search parties left cairns and supply depots on the islands north of Bathurst, among them a large cairn on Helena Island built in 1853. Joseph-Elzéar Bernier's expeditions of 1906 to 1911 followed, then police patrols, survey flights and, in the 1960s and 1970s, exploratory drilling for oil, gas and minerals.",
+    "In September 1953 Inuit families from Hudson Bay were set down at what became Resolute, on Cornwallis Island. A Resolute Elder recalls how, short of caribou meat in their second winter, hunters crossed to Bathurst Island and came back with caribou; they have called it the place where you hunt caribou ever since. A park on Bathurst Island was first discussed with Resolute's hunters and trappers in 1994. After years of study and negotiation, the Inuit Impact and Benefit Agreement came into effect on 1 April 2015 and the park was legislated on 1 September 2015, Canada's 45th national park. Inuit and Parks Canada manage it together through the Qausuittuq Park Management Committee."
+  ],
+  "howItWorks": [
+    "Since 1 July 2022 entry into and travel within Qausuittuq has been designated a hazardous activity, and every visitor must register before entering and de-register afterwards; the order does not apply to Nunavut Inuit exercising their harvesting rights. Registration includes an orientation on the park's hazards, regulations, route conditions, weather, closures and recent polar bear sightings. Book it at least 48 hours ahead; before May, sessions are held at the Parks Canada office in Iqaluit, and the Resolute office (867-252-3000) can advise on arrangements at other times. You must de-register within 24 hours of finishing your trip. Travel on Inuit-owned land needs permission from the Qikiqtani Inuit Association.",
+    "The park can be reached only by chartered aircraft, and every trip starts in Resolute Bay. Parks Canada provides no transport; Kenn Borek Air flies Twin Otter charters from Resolute Bay to the park, and Parks Canada suggests budgeting about CA$10,000 for a return flight. Book well ahead, because charters are busy in summer, and carry extra food and medication for delays that usually last a day or two but can be much longer. Visitors must be self-reliant and ready for extreme, fast-changing weather, river crossings, high winds and travel in polar bear country; anyone unsure of their skills should consider an experienced guide or bear guard. Firearms are not allowed without a permit, except for Nunavut Agreement beneficiaries engaged in traditional activities.",
+    "Qausuittuq charges the Northern Park Backcountry fees. As Parks Canada listed them in November 2026: CA$17.75 per person per day, CA$37.00 per person per night, or CA$259.00 for an annual pass valid in eleven northern parks; youth 17 and under are free. Operating a business, filming, research, drones, landing an aircraft, caches and base camps all need permits, some taking 90 days or more. Pets, sled dogs and service animals are not allowed in the park (Inuit excepted). The park still has no final management plan; an interim guide, Foundations for the Future, has directed its management since March 2020."
+  ],
+  "sights": [
+    {
+      "name": "Helena Island",
+      "note": "One of the Berkeley Group off northern Bathurst Island, crowned by a large cairn built in 1853 by a British naval expedition searching for Franklin.",
+      "location": [
+        76.65,
+        -101.0667
+      ]
+    },
+    {
+      "name": "Berkeley Group",
+      "note": "The islands off Bathurst Island's north coast, all within the park, where Franklin search parties left cairns and supply depots between 1850 and 1854.",
+      "location": [
+        76.7167,
+        -100.6667
+      ]
+    },
+    {
+      "name": "Stokes Range",
+      "note": "The hills of northern Bathurst Island, part of the Arctic Cordillera and the island's highest ground.",
+      "location": [
+        76.3333,
+        -101.5833
+      ]
+    },
+    {
+      "name": "Erskine Inlet",
+      "note": "On the inlet's shore stands Dome Camp, two hard-sided domes with one shelter open to the public as a base camp, emergency supplies and an aircraft landing site.",
+      "location": [
+        76.0333,
+        -102.0833
+      ]
+    },
+    {
+      "name": "Dundee Bight",
+      "note": "Site of a Parks Canada camp of two cabins, one of them open to visitors and for emergencies, used for monitoring and community use.",
+      "location": [
+        76.0667,
+        -100.1667
+      ]
+    },
+    {
+      "name": "Île Vanier",
+      "note": "One of the Governor General Islands west of Bathurst Island, taken into the park together with Massey Island, Alexander Island, Île Pauline and Île Marc.",
+      "location": [
+        76.1667,
+        -103.25
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "By chartered Twin Otter from Resolute Bay on Cornwallis Island, about 200 km south-east",
+      "Dome Camp on Erskine Inlet, where authorised aircraft can land, serves as a public base camp and entry or exit point"
+    ],
+    "reservations": "Arrange your charter flight from Resolute Bay well in advance, and book your mandatory registration and orientation at least 48 hours ahead with Parks Canada. There are no campgrounds and few facilities. Check the important bulletins for closures before you plan, and leave several days between the legs of your journey for weather.",
+    "permits": [
+      "Mandatory registration and orientation before entering, and de-registration within 24 hours of leaving",
+      "Restricted activity permits for landing an aircraft, caches and base camps, drones, commercial filming, research and operating a business",
+      "Permission from the Qikiqtani Inuit Association to travel on Inuit-owned land"
+    ],
+    "camping": [
+      "No designated campsites: camp anywhere except archaeological sites, special preservation areas, rockfall areas and wildlife habitat",
+      "No fires; carry a white-gas stove — fuel can be bought in Resolute Bay, but call ahead",
+      "A public shelter at Dome Camp and a public cabin at Dundee Bight, both also for emergencies"
+    ],
+    "lodging": [
+      "None in the park beyond the shelters at Dome Camp and Dundee Bight; accommodation in Resolute Bay"
+    ],
+    "seasonalClosures": [
+      "No closure dates are set, but the park lies in round-the-clock darkness from late October to mid-February; Parks Canada recommends late June to early August, or mid-April to mid-May for winter activities"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "Qausuittuq is one of the harshest and driest places on Earth: a polar desert where mean temperatures run from about minus 35°C in January to 5°C in July and less than 130 millimetres of precipitation falls in a year. The sun stays below the horizon from late October until mid-February, which gives the park its name. Parks Canada recommends late June to early August for summer activities such as hiking and wildlife viewing, and mid-April to mid-May for ski touring. Weather can ground charter flights for a day or two or longer, in either direction.",
+  "directions": "Canadian North flies to Iqaluit from Ottawa, Montreal and Yellowknife, and on to Resolute Bay year-round. From Resolute Bay, the park, about 200 kilometres to the north-west, can be reached only by private chartered aircraft; Kenn Borek Air flies Twin Otters directly to the park. Costs depend on the price of fuel, but Parks Canada advises budgeting about CA$10,000 for a return flight. Local outfitters and community tours can be found through the Hamlet Office in Resolute Bay, and tour companies offer fully guided trips.",
+  "fees": [
+    {
+      "title": "Northern Park Backcountry daily excursion",
+      "cost": "CA$17.75 per person per day",
+      "amount": 17.75,
+      "currencyCode": "CAD",
+      "detail": "As listed by Parks Canada in November 2026; youth 17 and under are free."
+    },
+    {
+      "title": "Northern Park Backcountry excursion/camping",
+      "cost": "CA$37.00 per person per night",
+      "amount": 37.0,
+      "currencyCode": "CAD",
+      "detail": "Or CA$259.00 for an annual pass, valid at Aulavik, Auyuittuq, Ivvavik, Nahanni, Nááts'įhch'oh, Quttinirpaaq, Sirmilik, Tuktut Nogait, Vuntut, Qausuittuq and Ukkusiksalik. As listed by Parks Canada in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 4,500 years ago",
+      "text": "The earliest evidence of people in the Bathurst Island area."
+    },
+    {
+      "year": "c. 500–1200 AD",
+      "text": "Late Dorset people camp along Bracebridge Inlet."
+    },
+    {
+      "year": "1819",
+      "text": "British naval expeditions begin exploring the Bathurst Island area for the Northwest Passage."
+    },
+    {
+      "year": "1853",
+      "text": "A Franklin search expedition builds the great cairn on Helena Island."
+    },
+    {
+      "year": "1906–1911",
+      "text": "Joseph-Elzéar Bernier leads three expeditions to assert Canadian sovereignty over the Arctic islands."
+    },
+    {
+      "year": "1953",
+      "text": "Resolute is established on Cornwallis Island; its Inuit soon begin hunting caribou on Bathurst Island."
+    },
+    {
+      "year": "1994",
+      "text": "A national park on Bathurst Island is first discussed with the Resolute Hunters and Trappers Organization."
+    },
+    {
+      "year": "1996",
+      "text": "The first interim land withdrawal for the park study area is approved."
+    },
+    {
+      "year": "2009",
+      "text": "The Qikiqtani Inuit Association and Parks Canada resume work on the park proposal."
+    },
+    {
+      "year": "2015",
+      "text": "The Inuit Impact and Benefit Agreement takes effect on 1 April; the park is legislated on 1 September."
+    },
+    {
+      "year": "2017",
+      "text": "The park is officially opened at a ceremony in Resolute in August."
+    },
+    {
+      "year": "2020",
+      "text": "An interim management guide, Foundations for the Future, is approved in March."
+    },
+    {
+      "year": "2022",
+      "text": "Visitor registration becomes mandatory from 1 July."
+    }
+  ],
+  "safety": [
+    "The park is remote and rescue capability limited. Be self-reliant, with advanced wilderness first-aid skills and a way to call for help, such as a satellite phone or inReach. Emergency line: 1-780-852-3100.",
+    "Polar bears live here. Keep watch, store food carefully, and consider travelling with an experienced guide or bear guard if you are unsure of your skills.",
+    "Weather is extreme and changes fast, with high winds; flights in and out can be delayed for days, so carry spare food and medication.",
+    "River crossings can be unpredictable; be ready to wait or change your route."
+  ],
+  "regulations": [
+    "Registration and orientation before entering and de-registration within 24 hours of leaving are mandatory.",
+    "No fires and no recreational drones; firearms only under permit (Nunavut Agreement beneficiaries excepted).",
+    "Pets, sled dogs and service animals are prohibited (not applicable to Inuit).",
+    "Do not disturb wildlife, and avoid nesting, calving and denning areas; do not collect plants, rocks, fossils, antlers or artefacts, or build cairns.",
+    "Pack out all garbage and toilet paper; leave human waste exposed at least 100 metres from water and travel routes."
+  ],
+  "themes": [
+    "theme-arctic",
+    "theme-tundra",
+    "theme-desert",
+    "theme-islands",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Stokes Range.jpg",
+      "caption": "The Stokes Range, Bathurst Island, in July",
+      "altText": "Low, bare hills under an open Arctic sky"
+    },
+    {
+      "file": "File:Looking east across May inlet.jpg",
+      "caption": "Looking east across May Inlet",
+      "altText": "A wide inlet with low tundra shores"
+    },
+    {
+      "file": "File:Hiking the rocks below the Stoke's Range.jpg",
+      "caption": "Hiking over rocky ground below the Stokes Range",
+      "altText": "A hiker crossing stony ground below low hills"
+    },
+    {
+      "file": "File:Arctic poppy among rocks.jpg",
+      "caption": "An Arctic poppy in flower among the rocks",
+      "altText": "A small yellow flower growing between stones"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qausuittuq National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq"
+    },
+    {
+      "title": "Plan your visit — Qausuittuq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/visit"
+    },
+    {
+      "title": "How to get here — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/visit/directions"
+    },
+    {
+      "title": "Best times to visit — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/visit/circulation-traffic"
+    },
+    {
+      "title": "Improvements and infrastructure — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/visit/infrastructure"
+    },
+    {
+      "title": "Local guides and outfitters — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/visit/guides"
+    },
+    {
+      "title": "Fees — Qausuittuq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/visit/tarifs-fees"
+    },
+    {
+      "title": "Safety and guidelines — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/securite-safety"
+    },
+    {
+      "title": "Visitor guidelines — Qausuittuq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/securite-safety/comportements-guidelines"
+    },
+    {
+      "title": "Important bulletins (mandatory registration) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/securite-safety/bulletins"
+    },
+    {
+      "title": "Nature and science — Qausuittuq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/nature"
+    },
+    {
+      "title": "Culture and history — Qausuittuq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/culture"
+    },
+    {
+      "title": "History of establishment — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/info/etablissement-establishment"
+    },
+    {
+      "title": "Cooperative management — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/info/gestion-management"
+    },
+    {
+      "title": "Permits and licenses — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/info/permis-permits"
+    },
+    {
+      "title": "Contact — Qausuittuq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/qausuittuq/info/contact"
+    },
+    {
+      "title": "Parc national Qausuittuq — Parcs Canada",
+      "url": "https://parcs.canada.ca/pn-np/nu/qausuittuq"
+    },
+    {
+      "title": "Canada National Parks Act, Schedule 1, Part 13 — Justice Laws",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/N-14.01/FullText.html"
+    },
+    {
+      "title": "Canadian Geographical Names Database — Natural Resources Canada (coordinates)",
+      "url": "https://geonames.nrcan.gc.ca/"
+    },
+    {
+      "title": "Qausuittuq National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qausuittuq_National_Park"
+    },
+    {
+      "title": "Stokes Range — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stokes_Range"
+    },
+    {
+      "title": "Helena Island — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Helena_Island"
+    },
+    {
+      "title": "Bathurst Island (Nunavut) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bathurst_Island_(Nunavut)"
+    },
+    {
+      "title": "Qausuittuq National Park boundary — OpenStreetMap",
+      "url": "https://www.openstreetmap.org/relation/15673837"
+    }
+  ]
+}

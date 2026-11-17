@@ -1,0 +1,237 @@
+{
+  "placeID": "ca-np-mealy-mountains",
+  "contentVersion": 1,
+  "summary": "The largest national park in eastern Canada: 10,700 square kilometres of bare, ice-rounded mountains, boreal forest, wild salmon rivers and a 50-kilometre run of sandy beach on the Labrador Sea. Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve is a shared home of the Innu and Inuit of Labrador, managed by Parks Canada cooperatively with them. It has no roads or facilities; every trip is planned with Parks Canada in advance.",
+  "facts": {
+    "establishedYear": 2015,
+    "areaHectares": 1070000,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "A week or more, with spare days for weather"
+  },
+  "story": [
+    "The park's names come from the people who know it best. Akami-Uapishkᵁ is Innu-aimun for white mountains across, and KakKasuak is the Labrador Inuit word for mountain. For the Innu this is part of Nitassinan, their homeland: a cultural landscape crossed by travel routes through places of spiritual meaning, where Innu families walked with atiku, the caribou, for thousands of years. Inuit and other Labradorians carry on traditional activities here too.",
+    "The Mealy Mountains are glacially rounded summits of bare rock rising to 1,180 metres above Lake Melville. From them a forested landscape falls away eastwards to the cold Labrador Sea, drained by whole watersheds that are untouched from source to sea. The White Bear, North and English Rivers run through it, with rapids, waterfalls, Atlantic salmon and brook trout. Where the park meets the sea lie the Wunderstrands, some 50 kilometres of remote sandy beach, rare this far north. The reserve protects an example of the East Coast Boreal natural region, from mountain tundra to coastal barrens, wetlands and islands.",
+    "The park protects much of the habitat of the threatened Mealy Mountains caribou herd, including key coastal and offshore island ranges. The boreal forest north of Sandwich Bay and along the south shore of Lake Melville holds wolves, black bears, marten and foxes as well as caribou, and polar bears turn up on occasion. In the south of the park, broad wetlands give ducks, geese and other migratory birds places to nest and rest.",
+    "The area was first considered for a national park in the mid-1970s. A feasibility study was completed in 2001, and in 2010 Parks Canada began negotiating with the Government of Newfoundland and Labrador and with Innu Nation. The reserve was established on 31 July 2015 as Canada's 46th national park, the same day Innu Nation signed its park impacts and benefits agreement, and the province handed over the land on 10 July 2017. It remains a national park reserve while Indigenous claims to the area are negotiated, and Innu Nation is leading Kanakatuentak Assinu Nte Akamiu-Uapishku, We Who Look After the Lands of Akamiu-Uapishku, a stewardship plan for the wider region of about 21,000 square kilometres that will inform the park's first management plan. For the stories of the people who lived on this land, Parks Canada points readers to the 2006 issue of Them Days magazine, Stories of the Mealy Mountains."
+  ],
+  "howItWorks": [
+    "This is a national park reserve, the category the Canada National Parks Act uses where Indigenous claims accepted for negotiation remain outstanding. It is managed cooperatively. Innu Nation, whose area of interest covers the whole park, kept its use of the land and resources and sits with Parks Canada on a Cooperative Management Board. About eight per cent of the park lies in the Labrador Inuit Settlement Area, covered by an agreement with the Nunatsiavut Government, and an agreement with the NunatuKavut Community Council keeps its members' traditional activities. Non-Indigenous residents who have traditionally used the area may also carry on. The Innu communities on Quebec's North Shore also have an accepted claim that takes in part of the area. The reserve will be brought formally under the Canada National Parks Act only once the remaining agreements are concluded and a bill is tabled in Parliament, which Parks Canada expects to take a number of years.",
+    "Anyone may visit, but the park is still in its early years: programmes and services are limited, infrastructure is minimal and so is search-and-rescue capability. All visitors must contact Parks Canada in advance to discuss their trip plan, and Parks Canada reviews each request with Innu Nation; access may be limited in some areas to protect cultural and natural values. There are no established hiking routes, so ask Parks Canada for route suggestions and to check your plan. Contact the Happy Valley-Goose Bay office on 1-709-896-2394 or at mealys@pc.gc.ca.",
+    "The park is reached by helicopter or floatplane, by boat or by snowmobile, arranged with operators in nearby communities, and aircraft access inside it is restricted and needs Parks Canada's authorisation. Using a drone for filming or photography needs a Transport Canada special flight operations certificate and permission from the field unit superintendent. Parks Canada publishes no admission fee for the park reserve, and it is not among the Discovery Pass places."
+  ],
+  "sights": [
+    {
+      "name": "Mealy Mountains (Akami-Uapishkᵁ)",
+      "note": "Glacially rounded summits of bare rock rising to 1,180 metres above Lake Melville, with mountain tundra at the heart of the park reserve.",
+      "location": [
+        53.3833,
+        -59.4667
+      ]
+    },
+    {
+      "name": "The Wunderstrands",
+      "note": "Some 50 kilometres of remote sandy beach where the park meets the Labrador Sea, around Cape Porcupine. Reached by kayak or boat from Cartwright or Rigolet.",
+      "location": [
+        53.9379,
+        -57.1274
+      ]
+    },
+    {
+      "name": "English River",
+      "note": "One of the park's three named wild rivers, with Atlantic salmon and brook trout.",
+      "location": [
+        53.8304,
+        -58.5369
+      ]
+    },
+    {
+      "name": "North River",
+      "note": "A wild river through the park's boreal forest, with Atlantic salmon and brook trout.",
+      "location": [
+        53.8325,
+        -57.9325
+      ]
+    },
+    {
+      "name": "White Bear River",
+      "note": "A wild river of the park reserve, home to Atlantic salmon and brook trout.",
+      "location": [
+        53.4655,
+        -57.9845
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Happy Valley-Goose Bay — the nearest airport, aircraft charters and the Parks Canada office",
+      "Sheshatshiu, 41 kilometres by road from Happy Valley-Goose Bay",
+      "Rigolet, a 40-minute flight from Happy Valley-Goose Bay or by coastal boat; no road",
+      "Cartwright, 398 kilometres by road from Happy Valley-Goose Bay, or by coastal boat"
+    ],
+    "reservations": "There is nothing to book with Parks Canada, but every visitor must contact Parks Canada well in advance to discuss a trip plan; requests are reviewed with Innu Nation. Charters and guides are arranged with local operators. Check before you go.",
+    "permits": [
+      "A trip plan discussed with Parks Canada before entering, for every visitor",
+      "Parks Canada authorisation for any aircraft access",
+      "Transport Canada certificate and superintendent's permission to use a drone for filming",
+      "Film or photography agreement, applied for at least 20 business days ahead"
+    ],
+    "camping": [
+      "No campgrounds, marked trails or facilities; all camping is wilderness camping",
+      "Carry everything you need, be self-reliant, and take precautions against black bears and occasionally polar bears"
+    ],
+    "lodging": [
+      "None in the park reserve; trips start from Happy Valley-Goose Bay or the gateway communities"
+    ],
+    "seasonalClosures": [
+      "Spring trips are possible only until the ice on Lake Melville starts to break up in May",
+      "Winter travel only once the ice is safe, in most years from early January to late April",
+      "Coastal boats reach Rigolet and Cartwright only between break-up and November"
+    ]
+  },
+  "weather": "The park can be visited in winter and in summer, and the seasons set the travel schedule. The most dependable access is in July and August. Black flies and mosquitoes appear from mid-June and peak from mid-July to mid-August, so late summer into early autumn, when the insects die down before the cold sets in, may be the best time of all; coastal breezes give some relief on the Wunderstrands. Winter trips depend on the ice, usually safe from early January to late April, and spring trips end when Lake Melville starts to break up in May. Weather can keep a party in its tents for days, so build spare time into any plan.",
+  "directions": "There are no roads into the park. Happy Valley-Goose Bay has the nearest major airport, with direct flights generally from Deer Lake, St. John's, Halifax and Montreal, and charter companies near the airport fly helicopters and floatplanes into the park year-round. From the island of Newfoundland, the ferry from St. Barbe to Blanc-Sablon and the Trans-Labrador Highway lead to Cartwright (at least 420 kilometres, five and a half hours, from Blanc-Sablon) and Happy Valley-Goose Bay (618 kilometres, eight hours); from Quebec, the road from Baie-Comeau through Labrador City is about 1,115 kilometres. Most of Labrador has no cell coverage, and the province lends free satellite phones for the Trans-Labrador Highway.",
+  "fees": [],
+  "chronology": [
+    {
+      "year": "Mid-1970s",
+      "text": "The Mealy Mountains are first considered as the site of a national park reserve."
+    },
+    {
+      "year": "2001",
+      "text": "A park feasibility assessment is completed."
+    },
+    {
+      "year": "2010",
+      "text": "Parks Canada begins negotiations with the Government of Newfoundland and Labrador and Innu Nation."
+    },
+    {
+      "year": "2015",
+      "text": "The reserve is established on 31 July as Canada's 46th national park, the day Innu Nation's park impacts and benefits agreement is signed; NunatuKavut's agreement follows on 21 September."
+    },
+    {
+      "year": "2017",
+      "text": "On 10 July the province transfers the land, and Parks Canada signs its agreement with the Nunatsiavut Government."
+    },
+    {
+      "year": "2021",
+      "text": "Innu Nation signs an Incremental Treaty Agreement with Crown-Indigenous Relations and Northern Affairs Canada."
+    },
+    {
+      "year": "2025",
+      "text": "Innu Nation and Parks Canada publish interim management guidelines for the park reserve in June."
+    }
+  ],
+  "safety": [
+    "Search-and-rescue capability is minimal. Be self-reliant and able to handle any medical or wildlife emergency yourself.",
+    "Black bears live throughout the park and polar bears come ashore at times. Take precautions in camp and on the move.",
+    "Weather delays are part of every trip; carry enough food and fuel to wait out several days.",
+    "Black flies and mosquitoes are thick from mid-July to mid-August. Bring repellent, a bug jacket and first aid for bites.",
+    "There is no cell coverage. Carry a satellite phone and GPS and have advanced map-and-compass skills; check whether your topographic map uses the older NAD27 datum, which can put a GPS position off by more than 200 metres.",
+    "In an emergency call Parks Canada dispatch on 1-780-852-3100, which works from a satellite phone."
+  ],
+  "regulations": [
+    "Contact Parks Canada and discuss your trip plan before you go; some areas may be closed to protect cultural and natural values.",
+    "Aircraft access is restricted and needs Parks Canada's authorisation.",
+    "Drone filming needs a Transport Canada certificate and the superintendent's permission.",
+    "Respect the traditional activities of the Innu, Inuit and other residents who hunt, fish and travel in the park."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-coastal",
+    "theme-tundra",
+    "theme-wetland",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Mealy Mountains Labrador 1.jpg",
+      "caption": "A lake deep in the Mealy Mountains, seen from the air",
+      "altText": "A long dark lake winding between steep green-and-grey hills"
+    },
+    {
+      "file": "File:Mealy Mountains Labrador Cave Creature Lake.jpg",
+      "caption": "A lake below a rocky rim in the Mealy Mountains",
+      "altText": "A deep blue lake under a cliff-ringed bowl of bare rock and tundra"
+    },
+    {
+      "file": "File:Mealy Mountains Labrador rainbow.jpg",
+      "caption": "A rainbow over the eastern lowlands of the park reserve",
+      "altText": "A rainbow above a wide plain of forest and lakes seen from a rocky slope"
+    },
+    {
+      "file": "File:Mealy Mountains Labrador 3.jpg",
+      "caption": "The western edge of the Mealy Mountains from the air",
+      "altText": "Rolling bare rock hills scattered with small lakes, stretching to the horizon"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nl/mealy"
+    },
+    {
+      "title": "Stewardship and management — Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/mealy/info"
+    },
+    {
+      "title": "Park management — Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/mealy/info/index"
+    },
+    {
+      "title": "Innu Nation – Parks Canada Interim Park Management Guidelines (2025) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nl/mealy/info/index/plan"
+    },
+    {
+      "title": "Nature and science — Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/mealy/nature"
+    },
+    {
+      "title": "Plan your visit — Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/mealy/visit"
+    },
+    {
+      "title": "Getting here — Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/mealy/visit/visit2"
+    },
+    {
+      "title": "Maps and brochures — Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/mealy/visit/map"
+    },
+    {
+      "title": "Activities and experiences — Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/mealy/activ"
+    },
+    {
+      "title": "Commercial permits — Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/mealy/info/permis-permit"
+    },
+    {
+      "title": "Contact us — Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/mealy/info/contact"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Mealy Mountains National Park Reserve — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mealy_Mountains_National_Park_Reserve"
+    },
+    {
+      "title": "Mealy Mountains — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mealy_Mountains"
+    },
+    {
+      "title": "Cape Porcupine, Newfoundland and Labrador — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cape_Porcupine,_Newfoundland_and_Labrador"
+    },
+    {
+      "title": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

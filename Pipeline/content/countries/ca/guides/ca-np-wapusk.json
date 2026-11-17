@@ -1,0 +1,315 @@
+{
+  "placeID": "ca-np-wapusk",
+  "contentVersion": 1,
+  "summary": "A roadless sweep of peat, tundra ponds and stunted spruce on the western shore of Hudson Bay, south and east of Churchill, Manitoba. It protects one of the largest polar bear maternity denning areas in the world. Almost no one walks in: visitors see it from the air, from a licensed operator's lodge or tundra vehicle, or watch mothers and cubs leave their dens in late winter.",
+  "facts": {
+    "establishedYear": 1996,
+    "areaHectares": 1147500,
+    "bestSeasons": [
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "One to several days with a licensed operator"
+  },
+  "story": [
+    "Wapusk is Cree for 'white bear'. The park covers 11,475 square kilometres of the Hudson-James Bay Lowlands, a vast, flat, poorly drained plain where lakes, bogs, fens, streams and rivers cover half the surface. Continuous permafrost lies beneath it, topped by North America's most extensive mantle of peat; on the interior peat plateau two to three metres of peat sit on the frozen ground.",
+    "This is young land, and it is still rising. Pressed down by the continental ice sheets, it has been rebounding since the glaciers melted about 9,000 years ago, at roughly a metre a century. Each old shoreline was lifted clear of the bay in turn, and the result is a series of ancient beach ridges running parallel to the coast as far as 100 kilometres inland. At the coast itself, salt marsh, dunes and an intertidal zone up to 10 kilometres wide give way inland to sedge meadows and tundra ponds, and in the south-west to a patchy taiga of spruce, tamarack and willow.",
+    "The bears are why the park exists. When the ice on Hudson Bay breaks up, anywhere from early June to late July, the Western Hudson Bay polar bears come ashore. Pregnant females travel inland and dig maternity dens in the peat, where they give birth over the winter and fast for about eight months before leading their cubs out in early spring. From late September to mid-November other bears gather along the coast of the Cape Churchill peninsula, waiting for the bay to freeze. The park also holds the calving grounds of the Cape Churchill caribou herd, at least 38 kinds of mammal and more than 200 species of birds, from red knots and Hudsonian godwits to the lesser snow geese, now so numerous that they are over-grazing their nesting and staging grounds.",
+    "People have used this coast for about 3,000 years, mostly in seasonal camps on the beach ridges at the north end of the park. The Cree of York Factory First Nation and Fox Lake Cree Nation, both Treaty 5 signatories, have long ties here, and the Sayisi Dene and Inuit regard the northern coast as a southern edge of their own lands. During the fur trade the land between York Factory and Prince of Wales Fort supplied both posts with furs and food and served as the route between them. From the 1940s to the 1980s the military used it for manoeuvres and as an impact area for rockets fired from the Churchill Research Range. The park was created by a federal-provincial agreement signed on 24 April 1996."
+  ],
+  "howItWorks": [
+    "Wapusk is a Parks Canada national park, but it works like no southern one. Parks Canada says that a licensed tour operator is required for all activities in the park, and visits are made almost entirely through operators based in Churchill. As of 2026 two companies hold licences: Wat'chee Expeditions, which offers polar bear viewing in February and March when mothers and cubs leave their dens, and Hudson Bay Helicopters, which flies aerial tours over the park. There are no roads, trails, campgrounds or visitor facilities inside the park; on average it receives about 150 visitors a year.",
+    "Wapusk charges no admission fee. Across most of Parks Canada's system, daily admission is paid at the gate or covered by a Parks Canada Discovery Pass, which in 2026 costs $83.50 for an adult, $71.50 for a senior and $167.50 for a family or group of up to seven in one vehicle and gives twelve months' admission at more than 80 Parks Canada places; youth aged 17 and under have been admitted free everywhere since 2018. Parks Canada adjusts these fees every two years, most recently on 1 January 2026. In Churchill the only charge is $10 a person for the enhanced cultural and natural history presentations at the Parks Canada Visitor Centre in the railway station.",
+    "The rules are those of the Canada National Parks Act, with additions for the north. No one may hunt, disturb, touch or feed wildlife; campfires are not allowed; and all garbage must be packed out. Visitors may not carry firearms in a national park, and Parks Canada says that Wapusk, like Prince of Wales Fort and York Factory, should never be visited without a licensed guide or Parks Canada staff because of the high risk of polar bear encounters. Parks Canada's general advice is to keep at least 100 metres from bears, wolves and other large predators, and drones are prohibited in all Parks Canada places. The 1996 agreement lets named Indigenous and local beneficiaries continue caribou hunting and trapping on registered traplines within the park."
+  ],
+  "sights": [
+    {
+      "name": "Cape Churchill",
+      "note": "The northern tip of the park on Hudson Bay, where polar bears gather in autumn waiting for the ice. Seen from tundra vehicles and aircraft; the tip itself is strictly protected.",
+      "location": [
+        58.763,
+        -93.218
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Thompson Point",
+      "note": "A point on the park's Hudson Bay shore south of Cape Churchill, beside the tidal flats that shorebirds and waterfowl use on migration.",
+      "location": [
+        58.315,
+        -92.977
+      ]
+    },
+    {
+      "name": "Broad River compound",
+      "note": "One of two bear-proof fenced compounds Parks Canada owns in the park, with basic water and washroom facilities. Reached by canoe, aircraft or helicopter.",
+      "location": [
+        58.1252,
+        -92.9545
+      ]
+    },
+    {
+      "name": "Owl River compound",
+      "note": "Parks Canada's southern fenced compound near the Hudson Bay shore, used for research, park work and safe camping by arrangement with the park.",
+      "location": [
+        57.8278,
+        -92.8065
+      ]
+    },
+    {
+      "name": "Nester One research camp",
+      "note": "A privately owned fenced research camp south of Cape Churchill, which Parks Canada lists as an emergency shelter.",
+      "location": [
+        58.662,
+        -93.1906
+      ]
+    },
+    {
+      "name": "Parks Canada Visitor Centre, Churchill",
+      "note": "In Churchill's heritage railway station: exhibits on Wapusk and the region's history, a life-size polar bear maternity den, and talks. Seasonal hours.",
+      "location": [
+        58.7678,
+        -94.1744
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Churchill, the gateway town, reached by air or by VIA Rail but not by road; tours leave from here",
+      "Gillam, reached by Provincial Road 280 from Thompson, for the southern part of the park"
+    ],
+    "reservations": "All trips into the park are booked with a licensed operator, who sets the dates and prices; contact the operators directly. Parks Canada's own programmes in Churchill run at the Visitor Centre during its open season. Check before you go with Parks Canada in Churchill, 204-675-8863.",
+    "permits": [
+      "No admission permit, but every activity in the park is with a licensed tour operator",
+      "Filming and commercial photography need a Parks Canada permit",
+      "Outfitters wanting their guides to carry firearms in the park must apply to Parks Canada"
+    ],
+    "camping": [
+      "No campgrounds. Parks Canada's fenced compounds on the Broad and Owl rivers can be used for safe camping by arrangement with the park"
+    ],
+    "lodging": [
+      "Hotels, inns and lodges in Churchill",
+      "Operator-run lodges and camps used on licensed tours"
+    ],
+    "seasonalClosures": [
+      "The Parks Canada Visitor Centre in Churchill opens seasonally; in 2026 it closed on 21 November — check before you go",
+      "Polar bear viewing as mothers and cubs leave their dens is offered only in February and March"
+    ]
+  },
+  "weather": "Wapusk has a subarctic climate shaped by Hudson Bay, which stays frozen for much of the year. Parks Canada's climate summary gives an average annual temperature of −5.8°C for 1961–1990, with about 183 days a year that stay below freezing, about 520 millimetres of precipitation and a frost-free season of under three months. The ice breaks up between early June and late July and the bay refreezes from late autumn, which is when bears crowd the Cape Churchill coast. Winter brings severe cold, deep snow and few landmarks, so even routine travel is hazardous. The ice-free season on western Hudson Bay has lengthened by nearly a month since the 1980s.",
+  "directions": "There is no road to Churchill. Calm Air flies to Churchill and to Gillam from Winnipeg and Thompson, and there are regular flights from communities in Nunavut; VIA Rail runs to Churchill's station, which houses the Parks Canada Visitor Centre. Gillam, the gateway for the southern part of the park, is reached on Provincial Road 280 from Thompson. From either town the only way into the park is with a licensed operator, by aircraft, helicopter, tundra or over-snow vehicle.",
+  "fees": [
+    {
+      "title": "Admission",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "CAD",
+      "detail": "No entry fee at Wapusk. Tour prices are set by the licensed operators. As listed by Parks Canada in November 2026."
+    },
+    {
+      "title": "Enhanced programmes, Parks Canada Visitor Centre",
+      "cost": "$10.00",
+      "amount": 10.0,
+      "currencyCode": "CAD",
+      "detail": "Per person, for presentations on the cultural and natural history of the area in Churchill. As listed by Parks Canada in November 2026; check before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 3,000 years ago",
+      "text": "The earliest known human occupation of the park area, in seasonal camps on the beach ridges at its north end."
+    },
+    {
+      "year": "1610",
+      "text": "Henry Hudson reaches the shores of Hudson Bay, the first European to do so."
+    },
+    {
+      "year": "1684",
+      "text": "The Hudson's Bay Company establishes York Fort, later York Factory, near the mouth of the Hayes River south of the park."
+    },
+    {
+      "year": "1717",
+      "text": "The Hudson's Bay Company builds its Churchill River post; rebuilding in stone as Prince of Wales Fort begins in 1731."
+    },
+    {
+      "year": "1782",
+      "text": "French forces destroy Prince of Wales Fort."
+    },
+    {
+      "year": "1940s–1980s",
+      "text": "The military uses the area for manoeuvres and as an impact zone for rockets launched from the Churchill Research Range."
+    },
+    {
+      "year": "1978",
+      "text": "Manitoba establishes the Churchill Wildlife Management Area, from which the park is later drawn."
+    },
+    {
+      "year": "1996",
+      "text": "Canada and Manitoba sign the agreement creating Wapusk National Park on 24 April; the Wapusk Management Board is set up the same year."
+    },
+    {
+      "year": "2011",
+      "text": "Remote trail cameras begin recording polar bears and other animals in the park."
+    },
+    {
+      "year": "2017",
+      "text": "A new management plan for the park, prepared with the Wapusk Management Board, is published."
+    }
+  ],
+  "safety": [
+    "Polar bears are large, unpredictable and extremely dangerous, and in this region they can turn up at any time and anywhere. Never enter the park without a licensed guide or Parks Canada staff, and follow your operator's instructions.",
+    "Cell phones do not work in Wapusk. Carry a satellite phone or a satellite messenger, know how to use its SOS and messaging functions, and tell your contact how to reach Parks Canada's 24-hour emergency dispatch at 1-877-852-3100.",
+    "The park is remote and rescue capability is limited. Be self-reliant and equipped for extreme cold, deep snow and sudden weather changes.",
+    "In Churchill, call the Polar Bear Alert line, 204-675-2327, after any encounter or if you see a bear in or near town."
+  ],
+  "regulations": [
+    "Do not hunt, disturb, touch or feed any wildlife in the park.",
+    "Campfires are not permitted. Pack out all garbage and dispose of human waste responsibly.",
+    "Do not remove or damage plants, natural objects, artefacts or historic structures.",
+    "Visitors may not carry firearms in a national park, and drones are prohibited in all Parks Canada places."
+  ],
+  "themes": [
+    "theme-tundra",
+    "theme-arctic",
+    "theme-wetland",
+    "theme-coastal",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Dungarees the polar bear (Wapusk National Park) (6375873931).jpg",
+      "caption": "A polar bear on the snow in Wapusk National Park",
+      "altText": "A large cream-coloured polar bear standing on snow and ice, looking at the camera"
+    },
+    {
+      "file": "File:Cape Churchill 2000-11-22.jpg",
+      "caption": "Cape Churchill in November, as the bay begins to freeze",
+      "altText": "A snow-covered shoreline curving out into a frozen bay under a clear sky"
+    },
+    {
+      "file": "File:Wapusk 2 1996-08-12.jpg",
+      "caption": "Cape Churchill in summer from the air",
+      "altText": "A long gravel spit running out into a calm blue sea, with green tundra in the foreground"
+    },
+    {
+      "file": "File:Geburtshöhlen 1999-07-02.jpg",
+      "caption": "The polar bear denning area in summer",
+      "altText": "Dark openings dug into a bank among spruce trees and moss"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wapusk National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk"
+    },
+    {
+      "title": "Parc national Wapusk — Parcs Canada",
+      "url": "https://parcs.canada.ca/pn-np/mb/wapusk"
+    },
+    {
+      "title": "Facilities and services — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/visit/services"
+    },
+    {
+      "title": "How to get here — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/visit/directions"
+    },
+    {
+      "title": "Fees — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/visit/tarifs-fees"
+    },
+    {
+      "title": "Polar bear viewing opportunities — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/activ/ours-bears"
+    },
+    {
+      "title": "Aerial tours — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/activ/aerienne-aerial"
+    },
+    {
+      "title": "Parks Canada Visitor Centre in Churchill — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/activ/centre"
+    },
+    {
+      "title": "Safety and guidelines — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/securite-safety"
+    },
+    {
+      "title": "Safety in polar bear country — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/securite-safety/ours-bear"
+    },
+    {
+      "title": "Regulations — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/info/gestion-management/reglements-regulations"
+    },
+    {
+      "title": "Park management — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/info/gestion-management"
+    },
+    {
+      "title": "Wapusk National Park Management Plan 2017 — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/info/gestion-management/gestion-management-2017"
+    },
+    {
+      "title": "Stewardship and management — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/info"
+    },
+    {
+      "title": "Culture and history — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/culture"
+    },
+    {
+      "title": "Nature and science — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/nature"
+    },
+    {
+      "title": "Landscape — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/nature/environnement-environment/paysage-landscape"
+    },
+    {
+      "title": "Ecosystems and habitats — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/nature/environnement-environment/habitats"
+    },
+    {
+      "title": "Polar bears — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/nature/faune-animals/mammiferes-mammals/ours-bears/polaire-polar"
+    },
+    {
+      "title": "Birds — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/nature/faune-animals/oiseaux-birds"
+    },
+    {
+      "title": "Climate summary — Wapusk National Park",
+      "url": "https://parks.canada.ca/pn-np/mb/wapusk/nature/climatique-climate"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Travel trade admission fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/voyagistes-traveltrade/visit/fee"
+    },
+    {
+      "title": "Fees — Riding Mountain National Park (Discovery Pass prices)",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/visit/tarifs-fees"
+    },
+    {
+      "title": "Top tips to respect wildlife and stay safe — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/conseils-tips/faune-wildlife"
+    },
+    {
+      "title": "Canadian Geographical Names Database — Natural Resources Canada (Cape Churchill, Thompson Point)",
+      "url": "https://geogratis.gc.ca/services/geoname/en/geonames?q=Cape%20Churchill"
+    },
+    {
+      "title": "Churchill station — OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/2698611800"
+    },
+    {
+      "title": "Wapusk National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wapusk_National_Park"
+    }
+  ]
+}

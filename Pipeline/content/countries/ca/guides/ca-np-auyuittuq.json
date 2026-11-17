@@ -1,0 +1,366 @@
+{
+  "placeID": "ca-np-auyuittuq",
+  "contentVersion": 1,
+  "summary": "Auyuittuq, \"the land that never melts\", covers the mountains, ice and fiords of the Cumberland Peninsula on south-eastern Baffin Island, astride the Arctic Circle. Almost every visitor comes for Akshayuk Pass, a 97-kilometre corridor between Pangnirtung Fiord and North Pangnirtung Fiord, walked in summer and skied in spring beneath the sheer walls of Thor Peak and the twin towers of Mount Asgard. There are no roads: outfitters bring you in by boat or snowmobile.",
+  "facts": {
+    "establishedYear": 1976,
+    "areaHectares": 1908900,
+    "bestSeasons": [
+      "spring",
+      "summer"
+    ],
+    "suggestedTime": "Five to twelve days"
+  },
+  "story": [
+    "Auyuittuq is a park of rock and ice on the north-eastern edge of the Canadian Shield. At its heart lies the Penny Ice Cap, some 6,000 square kilometres of ice and snow, and glaciers and permanent ice cover about 40 per cent of the park. Ice has cut the valleys below sea level along the coast, leaving deep, narrow fiords with walls up to 900 metres high, and the peaks between them are among the highest on Baffin Island and the Canadian Shield. Inuit chose the park's name, Inuktitut for \"land that never melts\", because ice in so many forms shapes the place and how people live with it.",
+    "The park straddles the Arctic Circle, in the transition between High and Low Arctic vegetation, and only about a fifth of it is covered by plants, mostly on valley floors below 500 metres. Caribou, Arctic hares, Arctic wolves and foxes live on the tundra, landlocked Arctic char in its small lakes, and 28 species of birds breed here. The fiords are richer: polar bears, narwhal, bowhead whales, belugas, walrus and seals use them, and Fisheries and Oceans Canada counts them as part of an ecologically significant stretch of the Baffin coast. Polar bear, snowy owl, barren-ground caribou and Atlantic walrus are all species at risk found in the park.",
+    "People have lived here for more than 3,500 years. Paleo-Inuit arrived from the west; Tuniit (Dorset) people were in the region around 2,800 years ago and Thule Inuit, the ancestors of today's Inuit, around 700 years ago. The 2010 management plan counted 134 archaeological sites. John Davis sailed along the Cumberland Peninsula in 1585, and from the 1850s American and British whalers wintered in Cumberland Sound. In the 1950s and 1960s Inuit were pressed to settle in Pangnirtung and Qikiqtarjuaq; at Qivittuuq (Kivitoo) homes were bulldozed in a forced relocation in 1963, a history the Qikiqtani Truth Commission has recorded.",
+    "Akshayuk Pass is named after a hunter and whaler from Qikiqtat (Kekerten) who travelled through it around 1900. His stepson Etuangat Akshayuk followed the route by dog team to bring people to the hospital in Pangnirtung, and was made a member of the Order of Canada in 1995. Land was set aside for a Baffin Island national park in 1972; after a naming competition in Pangnirtung and Broughton Island in 1975, Auyuittuq National Park Reserve was established on 9 April 1976, Nunavut's first, with Inuit keeping the right to hunt, fish and trap. Under the 1993 land claim Inuit selected about 3,500 square kilometres as their own land, and the park of 19,089 square kilometres became a full national park on 19 February 2001."
+  ],
+  "howItWorks": [
+    "Since March 2022 entry into and travel within Auyuittuq has been designated a hazardous activity, and every visitor must register before entering and de-register afterwards; the rule does not apply to Nunavut Inuit exercising their harvesting rights, who are not considered visitors in their own homeland. Registration is a mandatory orientation of about three hours at the Parks Canada office in Pangnirtung or Qikiqtarjuaq, booked by phone or email two or more weeks ahead if possible; it covers the park's hazards, regulations, route conditions, closures and recent polar bear sightings, and is where park fees are paid. Within 24 hours of leaving the park you must de-register in person or by phone; if you are 48 hours overdue, a search may begin. Travel on the Inuit-owned land around the park needs permission from the Qikiqtani Inuit Association.",
+    "There are no roads. Pangnirtung lies 28 kilometres south of the park boundary along Pangnirtung Fiord, and Qikiqtarjuaq, on Broughton Island, 34 kilometres north-east of it along North Pangnirtung Fiord. Outfitters holding a national park business licence carry visitors by snowmobile over the sea ice in spring and by boat once the fiords clear, usually from mid-July; during break-up no outfitter can make the trip. Landing an aircraft in the park needs a permit. Polar bears can be met at any time of year anywhere in the park, glaciers included; they are most active along the Davis Strait coast, especially in March and April, when females and cubs leave their dens, and from August to November, when the sea ice is gone. Groups of up to 12 are permitted, and larger groups are less likely to meet a bear. Only licensed guides or bear monitors with a permit may carry a firearm (Inuit beneficiaries excepted), so visitors rely on vigilance, bear spray, noisemakers and alarm systems.",
+    "Auyuittuq charges the Northern Park Backcountry fees that apply across Canada's northern parks. As Parks Canada listed them in November 2026: CA$17.75 per person for a day trip, CA$37.00 per person per night, or CA$259.00 for an annual pass valid in eleven northern parks and reserves; a fishing permit is CA$15.00 a day or CA$51.25 a year, and admission is free for youth 17 and under. Inside the park only Zone III areas, including Akshayuk Pass, North Pangnirtung Fiord and Coronation and Maktak fiords, are open to motorised travel, and parts of the coast close seasonally for Inuit harvesting and denning bears."
+  ],
+  "sights": [
+    {
+      "name": "Akshayuk Pass",
+      "note": "The 97-kilometre corridor between Pangnirtung Fiord and North Pangnirtung Fiord along the Weasel and Owl rivers. Unmarked, with nine emergency shelters about a day apart.",
+      "location": [
+        66.6667,
+        -65.1333
+      ]
+    },
+    {
+      "name": "Qaiqsualuk (Thor Peak)",
+      "note": "A peak above the Weasel River whose sheer face is the best-known landmark in the pass. Climbing it is for self-reliant, experienced parties only.",
+      "location": [
+        66.5333,
+        -65.3167
+      ]
+    },
+    {
+      "name": "Qattaujannguaq (Mount Asgard)",
+      "note": "Twin barrel-shaped rock towers above the pass north of Summit Lake, which Parks Canada counts among the most distinctive peaks of the Canadian Shield.",
+      "location": [
+        66.6667,
+        -65.2667
+      ]
+    },
+    {
+      "name": "Tasiruluk (Summit Lake)",
+      "note": "The high point of Akshayuk Pass, feeding the Weasel River south and the Owl River north. Overlord to Summit Lake and back is the most common five- to six-day hike.",
+      "location": [
+        66.6376,
+        -65.1746
+      ]
+    },
+    {
+      "name": "Crater Lake",
+      "note": "A lake near the southern end of the pass. Parks Canada's guided spring day trips from Pangnirtung stop below it before walking on to cross the Arctic Circle.",
+      "location": [
+        66.4722,
+        -65.5167
+      ]
+    },
+    {
+      "name": "Windy Lake",
+      "note": "Site of a staff cabin and emergency shelter. The suspension bridge here was washed out by flooding in 2008, so hikers keep to one side of the river.",
+      "location": [
+        66.5153,
+        -65.4625
+      ]
+    },
+    {
+      "name": "Overlord Peak",
+      "note": "The peak at the southern end of the pass, above Pangnirtung Fiord, where outfitters from Pangnirtung bring walkers in. Overlord is the southernmost of the nine shelters.",
+      "location": [
+        66.3833,
+        -65.45
+      ]
+    },
+    {
+      "name": "Penny Ice Cap",
+      "note": "About 6,000 square kilometres of ice and snow at the centre of the park, feeding the glaciers, rivers and lakes around it.",
+      "location": [
+        67.2833,
+        -66.2167
+      ]
+    },
+    {
+      "name": "Piqalujaqtuuq (Greenshield Lake)",
+      "note": "The largest lake in the park, set in vegetated tundra in the west and important wildlife habitat. Few visitors travel this far from the pass.",
+      "location": [
+        67.0833,
+        -66.75
+      ]
+    },
+    {
+      "name": "Panniqtuuruluk (North Pangnirtung Fiord)",
+      "note": "The northern gateway to the pass, reached by boat or snowmobile from Qikiqtarjuaq. Parks Canada advises travelling three to four hours inland before camping.",
+      "location": [
+        67.15,
+        -64.2833
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Pangnirtung, 28 km south of the park along Pangnirtung Fiord — outfitters run to the Overlord trailhead at the south end of Akshayuk Pass",
+      "Qikiqtarjuaq, on Broughton Island, 34 km north-east of the park — outfitters run to North Pangnirtung Fiord at the north end of the pass"
+    ],
+    "reservations": "Book your orientation two or more weeks ahead and arrange a licensed outfitter; the Qikiqtarjuaq office opens only from mid-March to mid-September. Parks Canada's guided day trips from Pangnirtung, to the Arctic Circle by snowmobile in April and to Ulu Peak by boat in July and August, must be reserved by 10 am on the Friday before; dates change yearly, so check before you go.",
+    "permits": [
+      "Mandatory registration and orientation before entering, and de-registration within 24 hours of leaving",
+      "Fishing permit for recreational angling (not required for Nunavut Inuit)",
+      "Restricted activity permits for landing an aircraft, caches and base camps, commercial filming, research and operating a business",
+      "Permission from the Qikiqtani Inuit Association to travel on Inuit-owned land"
+    ],
+    "camping": [
+      "No designated campsites: camp anywhere except archaeological sites, special preservation areas, rockfall areas and wildlife habitat such as sedge meadows",
+      "No fires; carry a stove that burns white gas, which can be bought in Pangnirtung and Qikiqtarjuaq but cannot travel on scheduled flights except as dangerous goods",
+      "Nine emergency shelters with outhouses line Akshayuk Pass, for emergencies only — no sleeping, cooking or storing gear in them"
+    ],
+    "lodging": [
+      "None in the park; hotels, bed and breakfasts and campgrounds in Pangnirtung and Qikiqtarjuaq"
+    ],
+    "seasonalClosures": [
+      "Marine areas and sea ice of the fiords north of Narpaing Fiord are closed to non-Inuit from 1 March to 31 May for denning polar bears",
+      "Maktak and Coronation fiords close to non-Inuit from the first narwhals, usually late August or early September, until freeze-up",
+      "The north shore of Maktak Fiord closes to non-Inuit during berry picking, generally mid-August to mid-October — check exact dates with the park office",
+      "During sea-ice break-up, early to mid-June at Pangnirtung and mid-July at Qikiqtarjuaq, outfitters cannot reach the park"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "Auyuittuq has a polar marine climate of long, cold winters and short, cool summers. Summer brings almost endless daylight, yet for a quarter of the year direct sunlight does not reach the park. Winds of 15 to 20 km/h are common all year, stronger from late summer to early winter, with gusts to 100 km/h funnelled along the pass; expect blowing sand in summer and whiteouts in the snow season. Precipitation is light, but late summer is the wettest time and new snow is common in the pass by mid-August. From March to early May the fiords are frozen and travel is on skis or by snowmobile; mid-July to early September is the hiking season, with river flooding most likely in late July and early August. From October to February, cold and near-constant darkness make multi-day trips inadvisable.",
+  "directions": "Iqaluit is the air hub for Nunavut, with Canadian North flights from Ottawa, Montreal and Yellowknife. From Iqaluit, Canadian North flies to both Pangnirtung and Qikiqtarjuaq, and Air Nunavut and Unaalik Aviation offer charters. There are no roads from either community: a licensed outfitter takes you to the park by snowmobile or boat, depending on the season, and the park office can give you the current list. Walking the 31 kilometres from Pangnirtung along the fiord in summer takes two to three days and is not recommended. Allow three to five days for weather delays.",
+  "fees": [
+    {
+      "title": "Northern Park Backcountry daily excursion",
+      "cost": "CA$17.75 per person",
+      "amount": 17.75,
+      "currencyCode": "CAD",
+      "detail": "A day visit with no overnight stay; CA$4.75 per person for educational groups. As listed by Parks Canada in November 2026; youth 17 and under are free."
+    },
+    {
+      "title": "Northern Park Backcountry excursion/camping",
+      "cost": "CA$37.00 per person per night",
+      "amount": 37.0,
+      "currencyCode": "CAD",
+      "detail": "Or CA$259.00 for an annual pass, valid at Aulavik, Auyuittuq, Ivvavik, Nahanni, Nááts'įhch'oh, Quttinirpaaq, Sirmilik, Tuktut Nogait, Vuntut, Qausuittuq and Ukkusiksalik. As listed by Parks Canada in November 2026."
+    },
+    {
+      "title": "Fishing permit",
+      "cost": "CA$15.00 per day",
+      "amount": 15.0,
+      "currencyCode": "CAD",
+      "detail": "CA$51.25 for an annual permit. Angling only; no closed season. As listed by Parks Canada in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 2,800 years ago",
+      "text": "Tuniit (Dorset) people are in the region, following Paleo-Inuit who arrived more than 3,500 years ago."
+    },
+    {
+      "year": "c. 700 years ago",
+      "text": "Thule Inuit, ancestors of today's Inuit, settle the area."
+    },
+    {
+      "year": "1585",
+      "text": "John Davis is the first European to explore the Cumberland Peninsula."
+    },
+    {
+      "year": "1839",
+      "text": "William Penny enters Cumberland Sound, the first recorded contact between Europeans and Inuit here; whalers winter in the sound from 1852."
+    },
+    {
+      "year": "1963",
+      "text": "Inuit at Qivittuuq (Kivitoo) are forcibly relocated and their buildings bulldozed."
+    },
+    {
+      "year": "1972",
+      "text": "Land is withdrawn on 22 February for a Baffin Island National Park."
+    },
+    {
+      "year": "1975",
+      "text": "A competition in Broughton Island and Pangnirtung chooses the name Auyuittuq."
+    },
+    {
+      "year": "1976",
+      "text": "Auyuittuq National Park Reserve is established on 9 April, protecting 22,600 square kilometres."
+    },
+    {
+      "year": "1993",
+      "text": "The Nunavut Land Claims Agreement is signed; Inuit land selections reduce the park to 19,089 square kilometres."
+    },
+    {
+      "year": "1999",
+      "text": "The Inuit Impact and Benefit Agreement for Auyuittuq, Quttinirpaaq and Sirmilik is signed on 12 August."
+    },
+    {
+      "year": "2001",
+      "text": "Auyuittuq becomes a national park on 19 February, under the Canada National Parks Act."
+    },
+    {
+      "year": "2008",
+      "text": "Heavy rain and warm weather flood the pass and wash out the Windy Lake bridge."
+    },
+    {
+      "year": "2022",
+      "text": "Travel in the park is designated hazardous and visitor registration made mandatory year-round."
+    }
+  ],
+  "safety": [
+    "Rivers are glacier-fed and rise through the day and after rain; crossings are among the main hazards, and flooding has closed the whole pass. Cross early, scout carefully and be ready to wait.",
+    "Polar bears can appear anywhere, at any time of year, including on glaciers. Keep watch, camp away from the coast where you can, store food well away from tents and carry deterrents you know how to use.",
+    "Rescue is limited and can be delayed for days by weather. Carry a satellite phone, InReach or personal locator beacon; for technical rescues help must come from outside Nunavut. Emergency line: 1-780-852-3100.",
+    "Snow can fall in any month and whiteouts can happen at any time of year. The park lies in the zone where compasses are unreliable: navigate by GPS with spare batteries and 1:50,000 maps."
+  ],
+  "regulations": [
+    "Registration and orientation before entering and de-registration after leaving are mandatory for all visitors.",
+    "No fires; no recreational drones; no firearms except under permit (Inuit beneficiaries excepted).",
+    "Disturbing wildlife, and collecting plants, rocks, fossils, antlers or artefacts, are illegal; do not move stones at tent rings, caches or fox traps, and do not build cairns.",
+    "Pack out all garbage, including toilet paper; leave human waste at least 100 metres from water and travel routes."
+  ],
+  "themes": [
+    "theme-arctic",
+    "theme-glaciers",
+    "theme-mountains",
+    "theme-fjords",
+    "theme-tundra",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Mount Thor, Akshayuk Pass, Baffin Island.jpg",
+      "caption": "Cloud shadows on the face of Thor Peak, Akshayuk Pass",
+      "altText": "A huge sheer rock face rising above a valley, patched with cloud shadow"
+    },
+    {
+      "file": "File:Auyuittuq SouthEnd 2007.JPG",
+      "caption": "Hiking north through Akshayuk Pass towards Windy Lake",
+      "altText": "A broad valley between steep mountains on the route north through the pass"
+    },
+    {
+      "file": "File:Penny Ice Cap.jpg",
+      "caption": "An outlet glacier of the Penny Ice Cap from the air",
+      "altText": "A glacier flowing from an ice cap between rocky ridges, seen from the air"
+    },
+    {
+      "file": "File:Arctic Circle Sign - Auyuittuq National Park, Baffin Island, Nunavut, Canada.jpg",
+      "caption": "The Parks Canada Arctic Circle sign in Auyuittuq",
+      "altText": "A Parks Canada sign marking the Arctic Circle"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Auyuittuq National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq"
+    },
+    {
+      "title": "Plan your visit and How to get here — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/visit/directions"
+    },
+    {
+      "title": "Fees — Auyuittuq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/visit/tarifs-fees"
+    },
+    {
+      "title": "Visitor guidelines — Auyuittuq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/securite-safety/comportements-guidelines"
+    },
+    {
+      "title": "Important bulletins (mandatory registration, seasonal closures) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/securite-safety/bulletins"
+    },
+    {
+      "title": "Polar bear safety — Auyuittuq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/securite-safety/ours-bears"
+    },
+    {
+      "title": "Deterrents and warning systems — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/securite-safety/ours-bears/dispositifs-deterrents"
+    },
+    {
+      "title": "Emergencies and rescue capability — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/securite-safety/urgence-emergency"
+    },
+    {
+      "title": "Terrain hazards — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/securite-safety/terrestre-land"
+    },
+    {
+      "title": "Tides and ice break-up — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/securite-safety/marees-tides"
+    },
+    {
+      "title": "Weather and best times to visit — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/visit/meteo-weather"
+    },
+    {
+      "title": "Facilities and services — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/visit/services"
+    },
+    {
+      "title": "Local guides and outfitters — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/visit/guides"
+    },
+    {
+      "title": "Hours of operation — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/visit/heures-hours"
+    },
+    {
+      "title": "Brochures and publications (maps, navigation) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/visit/cartes-maps"
+    },
+    {
+      "title": "Hiking — Auyuittuq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/activ/randonnee-hiking"
+    },
+    {
+      "title": "Experience the Arctic Circle — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/activ/decouverte-tours/cercle-circle"
+    },
+    {
+      "title": "Discover Ulu Peak — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/activ/decouverte-tours/pic-ulu-peak"
+    },
+    {
+      "title": "Permits and licenses — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/info/permis-licenses-permits"
+    },
+    {
+      "title": "Culture and history — Auyuittuq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/culture"
+    },
+    {
+      "title": "Auyuittuq National Park Draft Management Plan 2026 — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/info/plan/ebauche-plan-draft-plan-2026"
+    },
+    {
+      "title": "Auyuittuq National Park Management Plan 2010 — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/auyuittuq/info/plan/gestion-management-2010"
+    },
+    {
+      "title": "Parc national Auyuittuq — Parcs Canada",
+      "url": "https://parcs.canada.ca/pn-np/nu/auyuittuq"
+    },
+    {
+      "title": "Canada National Parks Act, Schedule 1, Part 13 — Justice Laws",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/N-14.01/FullText.html"
+    },
+    {
+      "title": "Canadian Geographical Names Database — Natural Resources Canada (coordinates)",
+      "url": "https://geonames.nrcan.gc.ca/"
+    },
+    {
+      "title": "Auyuittuq National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Auyuittuq_National_Park"
+    },
+    {
+      "title": "Auyuittuq National Park boundary — OpenStreetMap",
+      "url": "https://www.openstreetmap.org/relation/9460113"
+    }
+  ]
+}

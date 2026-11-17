@@ -1,0 +1,345 @@
+{
+  "placeID": "ca-np-georgian-bay-islands",
+  "contentVersion": 1,
+  "summary": "Canada's smallest national park: dozens of granite islands in the 30,000 Islands of southern Georgian Bay, reached only by boat. Most visitors land on Beausoleil Island to walk or cycle its trails, swim off its beaches and camp beside the bay. The island is also a national historic site, a cultural landscape of the Anishinaabeg, and the park is a refuge for more than 30 species of reptiles and amphibians.",
+  "facts": {
+    "establishedYear": 1929,
+    "areaHectares": 1400,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "A day to three days"
+  },
+  "story": [
+    "The park lies in the 30,000 Islands, the world's largest freshwater archipelago, along the eastern shore of Georgian Bay, and it is a core protected area of the UNESCO Georgian Bay Biosphere Reserve. Glaciers scraped the hard rock of the Canadian Shield bare in places and left thick till in others, then scooped out hollows that are now bogs and ponds. Out on the open water the smallest islands are smooth, wave-worn domes the park calls whalesbacks, home to little more than lichens, a few dwarfed trees and colonies of nesting gulls and terns. Beausoleil Island, the largest, carries both Shield granite and soils formed over limestone.",
+    "The islands sit where several things meet: northern and southern species, the hardwood forests that run into the United States and the boreal forest of the north, wet ground and dry. So a small area holds a lot of life. On the north of Beausoleil, windswept white pines, junipers and red oak grow from bare granite; in the south there are stands of beech and sugar maple. Above all the park is a refuge for reptiles and amphibians: more than 30 species, 13 of them species at risk, enough for the Canadian Herpetological Society to name it an Important Amphibian and Reptile Area. Among them are the threatened Massasauga rattlesnake, Zhiishiigweg in Anishinaabemowin, the eastern foxsnake and skinks.",
+    "Archaeology shows people stopping and camping on these islands for more than 5,500 years. Beausoleil, called Bimadinaagogi by the Anishinaabeg, is the setting of creation stories: in one, two supernatural beings fought over a girl picking berries here, and their bodies became Beausoleil and Giant's Tomb islands. The island is strongly linked with women, who gathered its berries and held coming-of-age ceremonies here. In 1838, under pressure from settlement, Chief John Assance's people gave up their lands at Coldwater and moved to a reserve on Beausoleil, but its sandy soil would not support farming, and by 1855 most had moved on to Christian Island, today the home of Beausoleil First Nation.",
+    "Georgian Bay Islands National Park was established in 1929. It is still Canada's smallest national park, about 14 square kilometres in all, and Beausoleil makes up more than 78 percent of it. Two YMCA camps, one of them older than the park, operate on the island and introduce more than 4,500 young campers to the park each year. In 2011 Beausoleil Island was designated a national historic site, a nomination started by the park's Cultural Advisory Circle of First Nations and Métis communities. The bare rock and bent pines of the north end are the scenery that inspired the Group of Seven painters."
+  ],
+  "howItWorks": [
+    "There is no road and no bridge: every part of the park is on an island and reached by boat. Since 2025 all visitors pay a daily admission fee; in 2026 it is $7.25 for an adult, $6.25 for a senior and $15.00 for a family or group of up to seven, and youth 17 and under get in free at every Parks Canada place. Parks Canada adjusts its fees every two years with inflation, most recently on 1 January 2026. A Parks Canada Discovery Pass, $83.50 for an adult, $71.50 for a senior or $167.50 for a family or group, covers admission at more than 80 Parks Canada places for 12 months. Under the Canada Strong Pass admission was free from 19 June to 7 September 2026. Fees are paid at the Honey Harbour kiosk, the Cedar Spring Visitor Centre or with the self-registration forms at each dock and campground.",
+    "How you cross decides how you visit. Day visitors book Landmark Cruises, the park's official shuttle from the Port of Honey Harbour, for a half-day on Beausoleil; admission is charged with the booking, and pets, bicycles and canoes are not allowed aboard. Cabin and oTENTik bookings include the park's own boat from 2611 Honey Harbour Road. Campers at Cedar Spring or the backcountry sites must bring their own boat or book a licensed water taxi. Boaters need a mooring permit to tie up at any Parks Canada dock, bought at the self-registration kiosks and charged by boat length; docks are first come, first served and cannot be reserved, and anyone landing from an anchored boat needs a daily entry permit.",
+    "Campsites and roofed accommodation are booked through the Parks Canada Reservation Service at reservation.pc.gc.ca or 1-877-737-3783; reservations for 2026 opened on 2 February. Camping is allowed only in the designated campgrounds, and a registration permit is required before you occupy a site. The seven backcountry campgrounds have no running water, and food goes in the central lockers. Feeding wildlife, directly or by leaving food and garbage where animals can reach it, is illegal under the Canada National Parks Act, and pursuing animals with a camera counts as harassment. Parks Canada asks you to stay at least 30 metres from deer and 100 metres from bears. Pets must be on a leash of no more than 3 metres, and drones may not take off or land without a Restricted Activity Permit."
+  ],
+  "sights": [
+    {
+      "name": "Fairy Lake",
+      "note": "An inland lake on northern Beausoleil, circled by the 2.5-kilometre Fairy Trail, the park's must-hike loop, with a self-guided audio tour in the Parks Canada app.",
+      "location": [
+        44.8944,
+        -79.8535
+      ]
+    },
+    {
+      "name": "Chimney Bay",
+      "note": "A sheltered bay at the north end, popular with anchored boats, with a backcountry campground and access to the rugged northern trails.",
+      "location": [
+        44.8891,
+        -79.852
+      ]
+    },
+    {
+      "name": "Honeymoon Bay",
+      "note": "A small sand beach with a marked swimming area at the north tip of Beausoleil, with backcountry campsites and sunsets over Georgian Bay.",
+      "location": [
+        44.9003,
+        -79.8556
+      ]
+    },
+    {
+      "name": "Long Bay",
+      "note": "The view at the end of the mossy Dossyonshing Trail, one of the island's more challenging walks.",
+      "location": [
+        44.8906,
+        -79.8642
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Little Dog Channel",
+      "note": "A narrow channel off northern Beausoleil, followed by the Cambrian Trail through pine forest as an extension of the Fairy Trail.",
+      "location": [
+        44.8863,
+        -79.838
+      ]
+    },
+    {
+      "name": "Tonch Point",
+      "note": "A peninsula on the east side of the island, reached from Cedar Spring by the narrow 3.8-kilometre Treasure Trail, with three backcountry campgrounds.",
+      "location": [
+        44.8702,
+        -79.8521
+      ]
+    },
+    {
+      "name": "Lookout Trail",
+      "note": "A 1.5-kilometre trail in the south of the island with views over Georgian Bay and a platform looking into the forest canopy.",
+      "location": [
+        44.8496,
+        -79.8698
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Christian Beach",
+      "note": "A beach on Beausoleil Island with four remote cabins for two, a composting toilet and ice delivered daily.",
+      "location": [
+        44.8465,
+        -79.8785
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Port of Honey Harbour, 1 Delawana Road — Landmark Cruises shuttle for day visits",
+      "2611 Honey Harbour Road — the park's boat for cabin and oTENTik guests, and the Honey Harbour kiosk",
+      "Cedar Spring, at the south end of Beausoleil Island — visitor centre, campground and Tobey Dock",
+      "Docks along Beausoleil's northern and eastern shores for private boats"
+    ],
+    "reservations": "Day visits by the Landmark Cruises shuttle must be reserved and fill quickly. Cedar Spring campsites, some backcountry sites, cabins and oTENTiks are booked through the Parks Canada Reservation Service; cabins and oTENTiks need at least two nights, with no check-ins on Wednesday or Thursday. Docks cannot be reserved. Campers must also book their own water taxi. Check before you go.",
+    "permits": [
+      "Registration permit for any campsite, obtained before you occupy it",
+      "Mooring permit to use any Parks Canada dock, and a beaching permit for dinghies, from the self-registration kiosks",
+      "Restricted Activity Permit to take off or land any aircraft or drone"
+    ],
+    "camping": [
+      "Cedar Spring Campground — 45 unserviced tent sites with showers, flush toilets and potable water",
+      "Seven backcountry campgrounds of 4 to 10 sites each — Honeymoon Bay, Chimney Bay, Oaks, Tonch North, Tonch East, Tonch South and Thumb Point — with no running water"
+    ],
+    "lodging": [
+      "Six Cedar Spring cabins and four oTENTiks, with boat transport included",
+      "Four Christian Beach cabins for two",
+      "Honey Harbour, Midland and the surrounding area on the mainland"
+    ],
+    "seasonalClosures": [
+      "The Cedar Spring Visitor Centre opens from mid-May to mid-October and is closed until May 2027",
+      "Outside the peak summer weeks the visitor centre, cabins and oTENTiks run Friday to Tuesday only",
+      "Landmark Cruises runs weekends in spring and autumn and Friday to Tuesday in peak summer"
+    ]
+  },
+  "weather": "The park is used mainly from May to October. Georgian Bay's huge body of water warms the islands, so their plants and animals differ from those further inland, but weather on the bay is variable and unpredictable: storms, high winds and rain can arrive at any time, and the open water can turn rough very quickly. Boaters should check the marine forecast before setting out. Summer brings the busiest weeks for the shuttle, the campground and the beaches; spring and autumn are quieter, with fewer services.",
+  "directions": "Honey Harbour, the gateway, is about 166 kilometres, roughly two hours, north of Toronto. Take Highway 400 to exit 156 and follow Honey Harbour Road (Muskoka District Road 5) into the village. Day visitors with a Landmark Cruises booking leave from the Port of Honey Harbour at 1 Delawana Road; cabin and oTENTik guests use the park's launch at 2611 Honey Harbour Road; campers arrange a water taxi. Boaters should use nautical chart 2202 for the eastern shore of Georgian Bay; the park has no boat launch, but marinas in and around Honey Harbour do.",
+  "fees": [
+    {
+      "title": "Daily admission",
+      "cost": "$7.25 adult / $6.25 senior / $15.00 family or group",
+      "amount": 7.25,
+      "currencyCode": "CAD",
+      "detail": "Charged to all visitors since 2025; youth 17 and under free. Seasonal pass $36.75 adult. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50 adult / $71.50 senior / $167.50 family or group",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "Admission to more than 80 Parks Canada places for 12 months. 2026 price."
+    },
+    {
+      "title": "Cedar Spring campsite",
+      "cost": "$31.75",
+      "amount": 31.75,
+      "currencyCode": "CAD",
+      "detail": "Per site per night, unserviced, with showers and toilets. Backcountry campsites $19.50. Online reservation fee $11.50. As listed by Parks Canada in November 2026."
+    },
+    {
+      "title": "Cabins and oTENTiks",
+      "cost": "$206.92 to $265.84",
+      "amount": 206.92,
+      "currencyCode": "CAD",
+      "detail": "Per night: oTENTik $206.92, Christian Beach cabin $225.17, Cedar Spring cabin $265.84, boat transport included. As listed by Parks Canada in November 2026."
+    },
+    {
+      "title": "Mooring",
+      "cost": "$1.00 per foot (day) / $1.50 per foot (overnight)",
+      "amount": 1.0,
+      "currencyCode": "CAD",
+      "detail": "Day mooring up to 12 hours; overnight includes day mooring; season $12.25 per foot. Beaching $7.25 a day. As listed by Parks Canada in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Over 5,500 years ago",
+      "text": "People are already stopping and camping on the islands of Georgian Bay, as archaeology shows."
+    },
+    {
+      "year": "Late 1600s",
+      "text": "Ojibway-Anishinaabe nations settle the south Georgian Bay region and set up seasonal camps on Beausoleil Island."
+    },
+    {
+      "year": "1838",
+      "text": "Chief John Assance's people surrender their Coldwater lands and move to a new reserve on Beausoleil Island."
+    },
+    {
+      "year": "1855",
+      "text": "By this year most of the Anishinaabeg on Beausoleil have moved to Christian Island."
+    },
+    {
+      "year": "1929",
+      "text": "Georgian Bay Islands National Park is established."
+    },
+    {
+      "year": "2011",
+      "text": "Beausoleil Island is designated a national historic site."
+    },
+    {
+      "year": "2022",
+      "text": "A new management plan for the park and the national historic site is completed."
+    },
+    {
+      "year": "2025",
+      "text": "A daily admission fee is introduced for all visitors."
+    }
+  ],
+  "safety": [
+    "Weather on Georgian Bay changes quickly and large waves build on open water. Carry charts, know the shoals and channels, and check the marine forecast before crossing.",
+    "There are no lifeguards, and water quality at Beausoleil's beaches is not monitored. Never swim alone, and stay out of water that looks cloudy or discoloured or after heavy rain.",
+    "Massasauga rattlesnakes live on the island. Wear boots and long trousers, never pick up a snake, and if bitten keep still and call 911 or park staff.",
+    "Black bears visit the islands in the warmer months, and raccoons raid campsites; keep food and scented items in the lockers or on your boat.",
+    "Poison ivy grows along trails and in campgrounds, and blacklegged ticks that can carry Lyme disease are found in Ontario."
+  ],
+  "regulations": [
+    "Do not feed, touch or harass any animal, and never leave food or garbage where wildlife can reach it.",
+    "Fires only in the designated fire pits, with firewood bought in the park; do not bring firewood in or collect deadwood.",
+    "Alcohol only on your registered site or aboard a properly moored boat; quiet hours, with no alcohol or cannabis, run from 11 pm to 8 am.",
+    "Fishing is not allowed on the inland lakes, including Fairy Lake and Goblin Lake; in the waters of Georgian Bay, Ontario's licences and rules apply.",
+    "Collecting plants, berries, rocks, driftwood or artefacts is illegal; yellow lines on docks are kept clear for emergency vessels."
+  ],
+  "themes": [
+    "theme-islands",
+    "theme-indigenous-heritage",
+    "theme-wetland"
+  ],
+  "photos": [
+    {
+      "file": "File:Beausoleil Windswept Pines.jpg",
+      "caption": "Windswept pines on Beausoleil Island",
+      "altText": "Pine trees bent by the wind on a rocky shore above blue water"
+    },
+    {
+      "file": "File:Beausoleil Island east shore.jpg",
+      "caption": "Severn Sound from the eastern shore of Beausoleil Island",
+      "altText": "Calm open water with an anchored sailboat and two kayakers, a low wooded shore beyond"
+    },
+    {
+      "file": "File:Beausoleil Sunset.jpg",
+      "caption": "Dusk over still water on Beausoleil Island",
+      "altText": "A rock outcrop in the foreground of calm water between dark wooded shores at sunset"
+    },
+    {
+      "file": "File:BeausoleilIslandCedarSprings2004.jpg",
+      "caption": "Marsh and granite at Cedar Spring, on Beausoleil Island",
+      "altText": "A grassy marsh and calm bay beyond pink granite rock and trees"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Georgian Bay Islands National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/on/georg"
+    },
+    {
+      "title": "Parc national des Îles-de-la-Baie-Georgienne — Parcs Canada",
+      "url": "https://parcs.canada.ca/pn-np/on/georg"
+    },
+    {
+      "title": "Plan your visit — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/visit"
+    },
+    {
+      "title": "Getting here — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/visit/directions"
+    },
+    {
+      "title": "Boat shuttle service for day visits to Beausoleil Island — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/visit/navette-bateau-shuttle-boat"
+    },
+    {
+      "title": "Know before you go — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/visit/know-before-you-go"
+    },
+    {
+      "title": "Fees — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/visit/tarifs-fees"
+    },
+    {
+      "title": "Hours of operation — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/visit/heures-hours"
+    },
+    {
+      "title": "Camping, mooring and overnight accommodations — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/activ/camping"
+    },
+    {
+      "title": "Cedar Spring Campground — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/activ/camping/cedarspring"
+    },
+    {
+      "title": "Backcountry campgrounds — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/activ/camping/prim-camp-sauv"
+    },
+    {
+      "title": "Boating, mooring and anchoring — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/activ/camping/boat-nav"
+    },
+    {
+      "title": "Hiking and walking — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/activ/hike-randonne"
+    },
+    {
+      "title": "Top 5 things to do in a day on Beausoleil Island — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/activ/top5"
+    },
+    {
+      "title": "Beausoleil Island National Historic Site — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/on/georg/info/beausoleil"
+    },
+    {
+      "title": "Georgian Bay Islands National Park of Canada and Beausoleil Island National Historic Site of Canada Management Plan, 2022",
+      "url": "https://parks.canada.ca/pn-np/on/georg/info/gestion-management/plan-2022"
+    },
+    {
+      "title": "Environment — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/nature/environnement-environment"
+    },
+    {
+      "title": "Outer islands — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/nature/environnement-environment/isle-islands"
+    },
+    {
+      "title": "Massasauga Rattlesnake — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/nature/massasauga"
+    },
+    {
+      "title": "Park regulations — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/securite-safety/reglements-regulations"
+    },
+    {
+      "title": "Wildlife safety — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/securite-safety/faune-wildlife"
+    },
+    {
+      "title": "Water safety — Georgian Bay Islands National Park",
+      "url": "https://parks.canada.ca/pn-np/on/georg/securite-safety/marine"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Travel trade admission fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/voyagistes-traveltrade/visit/fee"
+    },
+    {
+      "title": "Top tips to respect wildlife and stay safe — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/conseils-tips/faune-wildlife"
+    },
+    {
+      "title": "Canada National Parks Act, Schedule 1 — Justice Laws Website",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/N-14.01/FullText.html"
+    },
+    {
+      "title": "OpenStreetMap (sight locations)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "placeID": "ca-np-la-mauricie",
+  "contentVersion": 1,
+  "summary": "Rolling Laurentian hills, mixed forest and some 150 lakes between Montréal and Québec City. Drive the 63-kilometre Parkway between lookouts over long, narrow Wapizagonke Lake, paddle to backcountry campsites and the 27-metre Waber Falls, cool off in the pools of Les Cascades, or ski and snowshoe from the Saint-Jean-des-Piles entrance in winter. A century of logging and private fishing clubs shaped the land before the park was created in 1970.",
+  "facts": {
+    "establishedYear": 1970,
+    "areaHectares": 53600,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "La Mauricie protects 536 square kilometres of the Laurentians, a landscape representative of the Precambrian region of the St. Lawrence and the Great Lakes: forested hills and valleys, rivers, streams and waterfalls. When the glaciers retreated about 10,000 years ago they left more than 150 lakes. Small, dark, acid lakes in bogs sit on the higher ground, and large, deep, clear lakes fill the valley bottoms, all linked by brooks and cascading streams that drain to the Matawin and Saint-Maurice rivers. The lakes are young and low in nutrients, and four large ones in the Lac du Caribou sector hold only brook trout.",
+    "Forest covers 93 per cent of the park, with 30 species of trees among them maple, birch, pine, fir and spruce. Some 50 species of mammals live here: moose and black bears, beavers, otters and mink along the water, martens, fishers, lynx, wolves and coyotes in the woods. More than 210 bird species have been recorded, and Lac Français holds the park's only population of Arctic char.",
+    "People have travelled these lakes for thousands of years. Since 1971, 43 Indigenous archaeological sites have been recorded, many around Caribou, Waber and Dauphinais lakes and Cobb Bay, with tools and projectile points dating back to 4000 BCE; and a cliff on Wapizagonke Lake bears rock paintings, among them a turtle. When a trading post was set up at Trois-Rivières in 1634, the Atikamekw held the whole Saint-Maurice basin, and their descendants live today in Weymontachie, Obedjiwan and Manouane, in Upper Mauricie. The W8banaki and Atikamekw Nehirowisiw nations both have close ties to the park.",
+    "From about 1850 the forest was logged for a century and more: first white and red pine for ships and growing cities, then spruce and fir for the paper mills that made the region the world's newsprint capital. An estimated 95 per cent of the park was cut at least once, logs were floated down dammed lakes, and thousands still lie on lake bottoms. Private hunting and fishing clubs, such as the Laurentian Club founded in 1886, kept large territories for wealthy members, mostly English-speaking Canadians and Americans. Since the park was created in 1970, Parks Canada has been removing dams and sunken logs and using fire to help the forest recover."
+  ],
+  "howItWorks": [
+    "La Mauricie is run by Parks Canada and charges daily admission: in 2026 an adult pays $10.00 and a family or group arriving in one vehicle $19.50, with lower rates in the spring and autumn low seasons, while admission for anyone 17 or under has been free at every Parks Canada place since 2018. Parks Canada adjusts its fees every two years with the Consumer Price Index, most recently on 1 January 2026. The park sells seasonal summer and winter passes, and a Parks Canada Discovery Pass, $83.50 for an adult or $167.50 for a family or group in 2026, covers twelve months' admission at more than 80 Parks Canada destinations and gives year-round access to the park's open sectors. Cross-country skiing carries its own daily fee on top of admission. Families whose land was expropriated to create the park can apply for a pass to revisit it.",
+    "The park opens by sector through the year: the Parkway is fully open from late May to mid-October, and every service runs from late June to early September. The more than 500 semi-serviced sites in the Mistagance, Wapizagonke and Rivière à la Pêche campgrounds, the oTENTiks and the Saint-Jean-des-Piles cabins are booked through the Parks Canada Reservation Service, online or on 1-877-737-3783; the cabins must be reserved. Backcountry camping is by reservation too, under 'Backcountry Camping': 40 sites with 132 campsites on 12 lakes, reached by canoe, kayak or paddleboard and some by bike or on foot, with a limit of two people per tent. The W8banaki and Andrew heritage lodges are booked through the park's partner, ecoparc.ca.",
+    "Under the Canada National Parks Act it is illegal to attract, disturb, touch, harass, capture or feed wild animals, and food and garbage must be kept out of their reach. Parks Canada asks visitors to keep at least 100 metres from bears, wolves and coyotes and 30 metres from moose and deer. Pets are allowed only in the three developed campgrounds and along the Parkway corridor, leashed; never on trails or beaches, in boats or in the backcountry. Gas and electric motors are banned on every lake, landing on islands is forbidden, and fires are allowed only in metal fire boxes with firewood bought in the park. Recreational drones are prohibited in all Parks Canada places."
+  ],
+  "sights": [
+    {
+      "name": "Le Passage Lookout",
+      "note": "The park's best-known view, along Wapizagonke Lake from the Parkway. Closed for reconstruction; reopening is scheduled for spring 2027.",
+      "location": [
+        46.755,
+        -73.049
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Vide-Bouteille Lookout",
+      "note": "An easily reached Parkway lookout over Wapizagonke Lake, with a giant red chair.",
+      "location": [
+        46.709,
+        -73.034
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Les Cascades",
+      "note": "A stream with many natural pools, reached by trail near the Shewenegan picnic area: a favourite spot to eat on the rocks and cool off.",
+      "location": [
+        46.674,
+        -73.014
+      ]
+    },
+    {
+      "name": "Waber Falls (Chutes Waber)",
+      "note": "A 27-metre waterfall reached by paddling 4.6 kilometres up Wapizagonke Lake, then hiking 3.4 kilometres; about three hours each way.",
+      "location": [
+        46.766,
+        -73.136
+      ]
+    },
+    {
+      "name": "Lac du Caribou",
+      "note": "One of four large lakes in the western backcountry that hold only brook trout, with canoe-camping sites and scuba diving by free permit.",
+      "location": [
+        46.728,
+        -73.112
+      ]
+    },
+    {
+      "name": "Lac Édouard",
+      "note": "A lake with a beach, picnic area and boat rental, about 12 kilometres from the Rivière à la Pêche campground; site of Quebec's first experimental forest.",
+      "location": [
+        46.749,
+        -72.918
+      ]
+    },
+    {
+      "name": "Lac aux Chevaux Lookout",
+      "note": "Red chairs above both arms of Lac aux Chevaux, reached all year on the Lac Solitaire or Lac aux Chevaux trails from Rivière à la Pêche.",
+      "location": [
+        46.746,
+        -72.84
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "W8banaki and Andrew lodges",
+      "note": "Heritage buildings of the Laurentian Club on Lac à la Pêche; the W8banaki, built between 1886 and 1914, is the oldest in the park. A 3.7-kilometre trail from Saint-Gérard.",
+      "location": [
+        46.677,
+        -72.864
+      ]
+    },
+    {
+      "name": "Rivière à la Pêche Service Centre",
+      "note": "Beside the Rivière à la Pêche campground, 6 kilometres from the Saint-Jean-des-Piles entrance, in the sector open all year; firewood is sold here in winter.",
+      "location": [
+        46.756,
+        -72.812
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Saint-Jean-des-Piles, Highway 55 exit 226 — open all year",
+      "Saint-Mathieu, Highway 55 exit 217 towards Saint-Mathieu-du-Parc — open from late May to mid-October",
+      "Saint-Gérard, off Road 351 — trail access only, not connected to the Parkway; open all year"
+    ],
+    "reservations": "Campsites, oTENTiks, cabins and backcountry canoe-camping sites are booked through the Parks Canada Reservation Service, online at reservation.pc.gc.ca or on 1-877-RESERVE (1-877-737-3783); the Saint-Jean-des-Piles cabins must be reserved. Recreational fishing is also reserved, for a small fee. The W8banaki and Andrew lodges are booked through ecoparc.ca. Check before you go with the park.",
+    "permits": [
+      "Daily park admission or a seasonal or Discovery Pass",
+      "Daily fishing permit, reserved in advance",
+      "Free scuba diving permit, from an entrance on arrival, for Wapizagonke, du Caribou and Édouard lakes",
+      "Permit for commercial filming, photography or special events, applied for at least 20 business days ahead"
+    ],
+    "camping": [
+      "Rivière à la Pêche campground, 6 kilometres from the Saint-Jean-des-Piles entrance: 222 sites, 98 with electricity, and four-season oTENTiks",
+      "Mistagance and Wapizagonke campgrounds, semi-serviced like Rivière à la Pêche",
+      "Canoe-camping: 40 backcountry sites on 12 lakes, each with a dry toilet and a bear-proof food hanger",
+      "La Clairière group campground, for 15 to 70 people"
+    ],
+    "lodging": [
+      "Two modern, accessible Saint-Jean-des-Piles cabins for up to 10 people each",
+      "The W8banaki (up to 30 people) and Andrew (up to 24) heritage lodges on Lac à la Pêche",
+      "oTENTiks, including winter oTENTiks at Rivière à la Pêche"
+    ],
+    "seasonalClosures": [
+      "In 2026 the Parkway was fully open from 28 May to 12 October; from 26 October 2026 to 27 May 2027 only its first 6 kilometres from Saint-Jean-des-Piles are open",
+      "The Saint-Mathieu entrance closes from mid-October to late May",
+      "Le Passage Lookout is closed for reconstruction until spring 2027",
+      "The 'M' bridge and the section under it at the Shewenegan picnic area are closed until further notice — check before you go with Parks Canada"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "La Mauricie has four distinct seasons, and the park is organised around two of them. The summer season runs from mid-May to late October, with everything open from late June to early September; autumn colours and mild temperatures draw hikers in the low season that follows. In winter the Rivière à la Pêche and Saint-Gérard sectors stay open for cross-country skiing, snowshoeing and winter camping. In every season the weather changes quickly, and even on sunny days strong winds, rain and storms can arrive.",
+  "directions": "La Mauricie is in the centre of Quebec, 60 kilometres north of Trois-Rivières and about halfway between Montréal (200 kilometres) and Québec City (190 kilometres), 15 kilometres north-west of Shawinigan. Leave Highway 55 at exit 226 for the Saint-Jean-des-Piles entrance, or at exit 217 for Saint-Mathieu-du-Parc and the Saint-Mathieu entrance; Road 351 leads from there to the Saint-Gérard entrance. The two main entrances are 64 kilometres apart inside the park by the Parkway and 41 kilometres apart outside it, so check the park map for the nearer one. There are electric-vehicle chargers at the Rivière à la Pêche and Shewenegan parking lots.",
+  "fees": [
+    {
+      "title": "Daily admission, summer and winter seasons",
+      "cost": "$10.00 adult / $19.50 family or group",
+      "amount": 10,
+      "currencyCode": "CAD",
+      "detail": "Seniors $8.75; youth 17 and under free. In the low seasons $7.25 adult and $15.00 family or group. 2026 rates — check before you go."
+    },
+    {
+      "title": "Seasonal pass (summer or winter)",
+      "cost": "$48.25 adult / $96.75 family or group",
+      "amount": 48.25,
+      "currencyCode": "CAD",
+      "detail": "Seniors $42.50. Early-bird adult price $38.75, sold at the park in late May only."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50 adult / $167.50 family or group",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "Seniors $71.50. Twelve months' admission to more than 80 Parks Canada destinations, valid in all seasons here. 2026 rates."
+    },
+    {
+      "title": "Semi-serviced camping",
+      "cost": "$33.75 to $42.00",
+      "amount": 33.75,
+      "currencyCode": "CAD",
+      "detail": "Per site per night: without electricity $33.75 ($36.00 at high occupancy), with electricity $38.75 ($42.00). Online reservation fee $11.50, by phone $13.50."
+    },
+    {
+      "title": "Backcountry camping",
+      "cost": "$19.50 / $30.25",
+      "amount": 19.5,
+      "currencyCode": "CAD",
+      "detail": "Per site per night, without or with a fireplace."
+    },
+    {
+      "title": "oTENTik",
+      "cost": "$164.50",
+      "amount": 164.5,
+      "currencyCode": "CAD",
+      "detail": "Per night in summer; $184.50 in winter. A Saint-Jean-des-Piles cabin for up to 10 people is $530.75 a night."
+    },
+    {
+      "title": "Cross-country skiing",
+      "cost": "$11.25 a day",
+      "amount": 11.25,
+      "currencyCode": "CAD",
+      "detail": "Adults and seniors, on top of admission; youth free. Season pass $109.75."
+    },
+    {
+      "title": "Fishing permit",
+      "cost": "$22.25 a day",
+      "amount": 22.25,
+      "currencyCode": "CAD",
+      "detail": "Plus a reservation fee of $3.50 online or $5.50 by phone."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 4000 BCE",
+      "text": "People are hunting, fishing and travelling along the park's lakes; projectile points and tools found here date back this far."
+    },
+    {
+      "year": "1634",
+      "text": "A trading post is set up at Trois-Rivières; the Atikamekw occupy the whole Saint-Maurice watershed."
+    },
+    {
+      "year": "1827",
+      "text": "The oldest dam in the park is built on Wapizagonke Lake."
+    },
+    {
+      "year": "c. 1850",
+      "text": "Commercial logging of white and red pine begins, and lasts in one form or another until 1970."
+    },
+    {
+      "year": "1886",
+      "text": "The Laurentian Club is founded; with the Shawinigan Club (1883) and the Commodore Club (1905), it is one of the area's main private hunting and fishing clubs."
+    },
+    {
+      "year": "1918",
+      "text": "Quebec's first experimental forest is established around Lac Édouard."
+    },
+    {
+      "year": "1930–1932",
+      "text": "Laurentide Pulp and Paper plants 426 hectares of abandoned farmland along the Saint-Maurice with white spruce."
+    },
+    {
+      "year": "1932",
+      "text": "Consolidated Paper receives a concession over most of the area, which it works until the park is created."
+    },
+    {
+      "year": "1970",
+      "text": "La Mauricie National Park is created; 16 hunting and fishing clubs are still active when it opens."
+    }
+  ],
+  "safety": [
+    "Many lakes are in the backcountry, where help can take a long time to arrive. Wear a lifejacket, carry the required boating safety equipment, choose water suited to your experience and turn back if the wind rises; weather changes quickly.",
+    "Swimming is unsupervised everywhere in the park.",
+    "Black bears live here. Hang all food and garbage on the food hangers at backcountry sites (bring 10 metres of rope), never keep food in your tent, and store food in your vehicle at campgrounds.",
+    "The Parkway has sharp curves and is shared with cyclists, hikers, people portaging and wildlife; slow down and keep to the rules of the road.",
+    "Visitors must be self-sufficient in an emergency. The park's emergency number is 819-536-3180."
+  ],
+  "regulations": [
+    "It is forbidden to attract, disturb, touch, harass, capture or feed wild animals, or to pick or trample plants.",
+    "Gas and electric motors are banned on all lakes, and landing on or walking around the islands is forbidden.",
+    "Fires only in the metal fire boxes provided, with firewood bought in the park; bringing firewood in is prohibited, and fires are not allowed at all at the Des Cinq, Dauphinais, Waber and Anticagamac backcountry sites.",
+    "Pets are allowed only, on a leash, in the developed campgrounds and the Parkway corridor; never on trails or beaches, in boats or in the backcountry.",
+    "Hunting, fireworks, recreational drones and off-road vehicles are prohibited, and overnight parking is allowed only for campers."
+  ],
+  "themes": [
+    "theme-deciduous-forest",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:La Mauricie.jpg",
+      "caption": "Wapizagonke Lake between forested hills",
+      "altText": "A panorama of a long lake between forested hills"
+    },
+    {
+      "file": "File:Chutes Waber - Parc national de la Mauricie, Québec.jpg",
+      "caption": "Waber Falls, reached by canoe and trail",
+      "altText": "White water cascading over broad steps of dark rock in a forest"
+    },
+    {
+      "file": "File:Lac aux Chevaux.jpg",
+      "caption": "Lac aux Chevaux, near Rivière à la Pêche",
+      "altText": "A calm lake ringed by forested hills under a partly cloudy sky"
+    },
+    {
+      "file": "File:Autumn colours on the trail to Lac Gabet in La Mauricie National Park.JPG",
+      "caption": "Autumn colours on the trail to Lac Gabet",
+      "altText": "A forest trail lined with trees in red, orange and yellow leaves"
+    }
+  ],
+  "sources": [
+    {
+      "title": "La Mauricie National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie"
+    },
+    {
+      "title": "La Mauricie National Park of Canada Management Plan, 2021 — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/gestion-management/plan-2021"
+    },
+    {
+      "title": "About — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/gestion-management/info"
+    },
+    {
+      "title": "Indigenous culture — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/culture/paysage-culturel-cultural-landscape/autochtone-indigenous"
+    },
+    {
+      "title": "The logging industry — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/culture/paysage-culturel-cultural-landscape/bois-logging"
+    },
+    {
+      "title": "Hunting and fishing clubs — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/culture/paysage-culturel-cultural-landscape/clubs"
+    },
+    {
+      "title": "Nature and science — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/nature"
+    },
+    {
+      "title": "Lakes — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/nature/environnement-environment/lacs-lakes"
+    },
+    {
+      "title": "Mammals — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/nature/faune-animals/mammiferes-mammals"
+    },
+    {
+      "title": "Animals — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/nature/faune-animals"
+    },
+    {
+      "title": "Fees — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/visit/tarifs-fees"
+    },
+    {
+      "title": "Dates and hours of operation — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/visit/heures-hours"
+    },
+    {
+      "title": "How to get here — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/visit/directions"
+    },
+    {
+      "title": "Lookouts — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/visit/belvedere-lookout"
+    },
+    {
+      "title": "Semi-serviced campgrounds — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/activ/camping/camping-campground"
+    },
+    {
+      "title": "Canoe-camping — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/activ/camping/canot-camping-canoe"
+    },
+    {
+      "title": "Cabins — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/activ/camping/chalet-cabin"
+    },
+    {
+      "title": "Visitor guidelines — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/securite-safety/directives-guidelines"
+    },
+    {
+      "title": "Domestic animals — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/visit/animaux-animals"
+    },
+    {
+      "title": "Safety on the water — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/securite-safety/secur_eau-water"
+    },
+    {
+      "title": "Safety and wildlife — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/securite-safety/secur_faune-fauna"
+    },
+    {
+      "title": "Pass - expropriated — La Mauricie National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/qc/mauricie/gestion-management/expro"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Travel trade admission fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/voyagistes-traveltrade/visit/fee"
+    },
+    {
+      "title": "Top tips to respect wildlife and stay safe — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/conseils-tips/faune-wildlife"
+    },
+    {
+      "title": "La Mauricie National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/La_Mauricie_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight locations)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "placeID": "ca-np-prince-edward-island",
+  "contentVersion": 1,
+  "summary": "A narrow strip of beaches, dunes and red sandstone cliffs along Prince Edward Island's north shore, 24 kilometres from Charlottetown. It is one of Canada's smallest national parks and a summer playground: supervised beaches, cycle paths along the Gulf, two large campgrounds, and the moving parabolic dunes of Greenwich at its eastern end.",
+  "facts": {
+    "establishedYear": 1937,
+    "areaHectares": 2220,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "The park represents the Maritime Plain, a low, gently rolling land of soft sandstone, conglomerate and shale. Its red cliffs are sediment worn from an ancient mountain range and laid down about 285 million years ago; the colour comes from hematite, iron oxidised in the rock. The cliffs hold Permian fossils, including giant ferns and remains of Dimetrodon, and because the sandstone crumbles easily the coast is always moving. Rising seas have reshaped it for more than 8,000 years, and stronger storms and shrinking sea ice now speed the erosion.",
+    "Sand worn from that sandstone builds the beaches, spits, barrier islands and dunes. Marram grass holds the dunes together with a net of roots and rhizomes, and as few as ten footsteps can kill a colony; once it goes, the wind carves blowouts. Behind the dunes lie barachois ponds, salt marshes and regenerating Acadian forest, most of the original forest having been cleared for farms, fuel and lumber by the 1900s. The endangered piping plover nests on the beaches and the threatened bank swallow in the cliffs. Hurricane Fiona battered the dunes in 2022; researchers have since watched them rebuild.",
+    "At Greenwich, on the peninsula between St. Peters Bay and the Gulf, unusually large, mobile parabolic dunes stand with their counter-ridges, or Gegenwälle — a feature very rare in North America. Excavations there between 1983 and 2002 found traces of 10,000 years of people: early Mi'kmaw communities, French and Acadian settlers, and Scottish, Irish and English immigrants. The park is on unceded Mi'kmaq territory and is co-managed with the Mi'kmaq of Prince Edward Island under an agreement called Toquktmekl.",
+    "The park was established in 1937. Dalvay-by-the-Sea, built between 1896 and 1899 as the summer home of the American industrialist Alexander McDonald, passed to the federal government with the park and became a hotel. Green Gables, the farm that inspired Lucy Maud Montgomery, lies within it. Greenwich joined the park in 1998, and by 2026 Parks Canada had taken on land at French River, west of Cavendish."
+  ],
+  "howItWorks": [
+    "A park pass is needed in season. Daily admission is $10.00 for an adult, with a lower shoulder-season rate of $5.00, as listed in November 2026; youth 17 and under enter free. The national Discovery Pass — $83.50 adult, $71.50 senior, $167.50 for a family or group of up to seven people arriving in one vehicle, as listed in November 2026 — covers admission for 12 months here and at more than 80 Parks Canada places, and PEI National Park sells its own seasonal pass. The Canada Strong Pass gave free admission from 19 June to 7 September 2026; regular fees resumed on 8 September 2026. Day passes are sold at the park entrance gates in season, at Green Gables Heritage Place and at Ardgowan National Historic Site in Charlottetown.",
+    "Cavendish and Stanhope campgrounds are booked through the Parks Canada Reservation Service, online at reservation.pc.gc.ca or on 1-877-737-3783; reservations for 2027 open on Wednesday 10 February 2027 at 8 am Atlantic time. The park has three separate regions — Cavendish-North Rustico, Brackley-Dalvay and Greenwich — divided by bays and not linked directly by road.",
+    "Much of the park is closed ground. All coastal dunes are closed to the public, and beaches where piping plovers or bank swallows are nesting are closed when signs are posted, each with a minimum fine of $150. Dogs are banned from every beach from 1 April to 15 October and must be on a leash no longer than 3 metres elsewhere. Drones may not take off or land in the park, pool floaties are banned in the water, roadside parking is not allowed, and firewood may not be brought in unless it is kiln-dried and sealed."
+  ],
+  "sights": [
+    {
+      "name": "Cavendish Beach and Dunelands",
+      "note": "The park's best-known beach, supervised in summer, with a 2.4 km trail past dunes and freshwater ponds and a floating boardwalk.",
+      "location": [
+        46.4982,
+        -63.3919
+      ]
+    },
+    {
+      "name": "Oceanview Lookoff",
+      "note": "A lookout over red sandstone cliffs at the start of the Gulf Shore Way West to North Rustico. The cliff edges beyond the fences are closed.",
+      "location": [
+        46.4995,
+        -63.3827
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Green Gables Heritage Place",
+      "note": "The farm that inspired Lucy Maud Montgomery's Anne of Green Gables, part of L.M. Montgomery's Cavendish National Historic Site, with the Haunted Wood and Balsam Hollow trails. Separate admission.",
+      "location": [
+        46.4917,
+        -63.385
+      ]
+    },
+    {
+      "name": "Robinsons Island",
+      "note": "Reached by a 3.2 km gravel trail along the causeway from Brackley Beach, with a 5 km loop of lookouts, beach access and mountain-bike features.",
+      "location": [
+        46.4295,
+        -63.198
+      ]
+    },
+    {
+      "name": "Covehead Harbour Lighthouse",
+      "note": "A small lighthouse above a sandy dune path by Covehead Harbour, on the Gulf Shore Parkway at Stanhope.",
+      "location": [
+        46.4301,
+        -63.1432
+      ]
+    },
+    {
+      "name": "Dalvay-by-the-Sea",
+      "note": "A Victorian summer house built between 1896 and 1899, now a national historic site and inn, at the east end of the Gulf Shore Parkway.",
+      "location": [
+        46.4149,
+        -63.0733
+      ]
+    },
+    {
+      "name": "Greenwich Dunes Trail",
+      "note": "A 4.6 km walk across old homestead fields and a floating boardwalk over Bowley Pond to the island's largest sand dunes, with interpretive signs.",
+      "location": [
+        46.444,
+        -62.6941
+      ]
+    },
+    {
+      "name": "Greenwich Beach",
+      "note": "A long white-sand beach on the Greenwich peninsula, supervised in summer, with a solar-powered beach facility and the Greenwich Interpretation Centre nearby.",
+      "location": [
+        46.4433,
+        -62.7316
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Cavendish-North Rustico, reached by Route 6 and Route 13 — Cavendish Beach, the campground, Green Gables and the Gulf Shore Parkway",
+      "Brackley-Dalvay, reached by Route 15 (Brackley Point Road) from Charlottetown — the Gulf Shore Parkway runs 12 km from Brackley to Dalvay",
+      "Greenwich, by Route 2 to St. Peters and Route 313 to the Greenwich Interpretation Centre"
+    ],
+    "reservations": "Campsites, oTENTiks, bunkies and equipped campsites at Cavendish and Stanhope are booked through the Parks Canada Reservation Service; 2027 bookings open on 10 February 2027 at 8 am Atlantic time. No booking is needed for beaches or trails. Check with Parks Canada before you go.",
+    "permits": [
+      "A park pass or Discovery Pass in season",
+      "Separate admission at Green Gables Heritage Place"
+    ],
+    "camping": [
+      "Cavendish Campground, more than 200 sites with its own beach",
+      "Stanhope Campground, more than 100 sites, with equipped campsites and group camping",
+      "oTENTiks and bunkies at both; campfires only in the metal fire boxes"
+    ],
+    "lodging": [
+      "Dalvay-by-the-Sea, a historic inn inside the park",
+      "Accommodation in the communities next to the park, among them the Cavendish Resort Municipality and North Rustico"
+    ],
+    "seasonalClosures": [
+      "Visitor services and facilities run from mid-May to October, with full services in July and August — check with Parks Canada before you go",
+      "Beach boardwalks and stairs are in place from the Victoria Day weekend to late September; surfguards are on duty from late June to early September",
+      "Cavendish and Stanhope campgrounds open from June to September",
+      "In winter facilities close, but the Gulf Shore Parkway is kept clear between Cavendish and North Rustico and between Brackley and Dalvay"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "Summer is the season here: July and August bring full services and surfguards on the main beaches. The north shore changes quickly with the wind, and a gentle lap of waves can become heavy surf with strong rip currents within hours; Parks Canada posts surf conditions each morning from 1 July to Labour Day. Spring and autumn are quieter, with fewer services and the shoulder-season rate. In winter the park stays open for walking, snowshoeing and skiing, but trails are not groomed or cleared of fallen trees and emergency services are limited.",
+  "directions": "The park is 24 kilometres from Charlottetown. From the Confederation Bridge at Borden-Carleton, take Route 1 and Route 1A, then Route 2 to Kensington and Route 6 north to Cavendish; from the Wood Islands ferry, follow Route 1 to Charlottetown. For Brackley Beach, take Route 15 north from Charlottetown for 17 kilometres. Greenwich is 52 kilometres east of Charlottetown by Route 2 to St. Peters, then Route 313. There is no direct road between the three parts of the park. Electric vehicle chargers are at Green Gables, Brackley Beach, Stanhope, Dalvay and Greenwich.",
+  "fees": [
+    {
+      "title": "Daily admission",
+      "cost": "$10.00",
+      "amount": 10.0,
+      "currencyCode": "CAD",
+      "detail": "Adult. Senior $8.75; family or group $19.50; youth free. Shoulder season $5.00 for an adult. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Seasonal pass",
+      "cost": "$48.25",
+      "amount": 48.25,
+      "currencyCode": "CAD",
+      "detail": "Adult. Senior $42.50; family or group $96.75; an early-bird pass costs $24.50 for an adult. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "Adult, 12 months at more than 80 Parks Canada places. Senior $71.50; family or group $167.50. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Unserviced campsite, Cavendish or Stanhope",
+      "cost": "$34.00",
+      "amount": 34.0,
+      "currencyCode": "CAD",
+      "detail": "Per night in peak season; $27.25 in the shoulder season. Serviced sites from $40.00. As listed by Parks Canada in November 2026; check before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 10,000 years ago",
+      "text": "People begin to leave traces at Greenwich, the start of a record that runs through Mi'kmaw, Acadian and British settlement."
+    },
+    {
+      "year": "1896–1899",
+      "text": "Alexander McDonald builds Dalvay-by-the-Sea as a summer home."
+    },
+    {
+      "year": "1937",
+      "text": "Prince Edward Island National Park is established; Dalvay-by-the-Sea passes to the federal government."
+    },
+    {
+      "year": "1983–2002",
+      "text": "Archaeological digs at Greenwich by the Canadian Museum of Civilization and Parks Canada."
+    },
+    {
+      "year": "1998",
+      "text": "The western tip of the Greenwich peninsula becomes part of the park."
+    },
+    {
+      "year": "2017",
+      "text": "A new management plan is tabled in Parliament; the bank swallow is listed as threatened."
+    },
+    {
+      "year": "2022",
+      "text": "Hurricane Fiona strikes the north shore and scours the dunes."
+    },
+    {
+      "year": "2025",
+      "text": "Parks Canada closes the cliff areas at Oceanview for safety and to protect them."
+    },
+    {
+      "year": "2026",
+      "text": "Parks Canada now administers 135 acres of farmland, cliffs and beach at French River, west of Cavendish; no fee is charged there in 2026."
+    }
+  ],
+  "safety": [
+    "Rip currents form off the sandbars and can pull strong swimmers out to sea. Swim at supervised beaches, check surf conditions, and if caught, swim out of the current before heading for shore.",
+    "Sandstone cliffs are undercut and crumble without warning, even where they look solid from above. Keep back from edges and off the rocks below.",
+    "Do not light fires outside the metal fire boxes, including on beaches, and check for fire bans; illegal burning can bring a fine of up to $25,000.",
+    "In winter there are limited emergency services; trails are not maintained and visitors are responsible for their own safety."
+  ],
+  "regulations": [
+    "Keep off all sand dunes and use the boardwalks and marked crossings; closed beaches for nesting piping plovers and bank swallows are off limits.",
+    "No dogs on any beach from 1 April to 15 October; elsewhere on a leash of no more than 3 metres.",
+    "No drones, no pool floaties in the water, no roadside parking, and no feeding of wildlife.",
+    "Do not take shells, rocks, fossils, plants or artefacts; report a significant find to Parks Canada and leave it in place."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-dunes",
+    "theme-wetland",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Covehead Lighthouse above a sandy dune path, Prince Edward Island National Park.jpg",
+      "caption": "Covehead Harbour Lighthouse above a path through the dunes",
+      "altText": "A small white and red lighthouse at the end of a sandy path between grassy dunes and wild roses"
+    },
+    {
+      "file": "File:Greenwich mobile parabolic dunes and Gegenwälle ridges seen from the west, Prince Edward Island, Canada - panoramio.jpg",
+      "caption": "The parabolic dunes at Greenwich",
+      "altText": "A tall bare sand dune behind a green hollow of low shrubs and marram grass"
+    },
+    {
+      "file": "File:Beach and dunes looking east from Stanhope Beach, Prince Edward Island National Park.jpg",
+      "caption": "Beach and dunes looking east from Stanhope Beach",
+      "altText": "A long reddish sand beach curving away beside shrub-covered dunes"
+    },
+    {
+      "file": "File:Red Cliffs, Prince Edward Island National Park.jpg",
+      "caption": "Layered red sandstone on the north shore",
+      "altText": "Close view of red sandstone in thin wavy layers, with water beyond"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Prince Edward Island National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe"
+    },
+    {
+      "title": "Plan your visit — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/visit"
+    },
+    {
+      "title": "Getting here — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/visit/arrive"
+    },
+    {
+      "title": "Hours of operation — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/visit/heures-hours"
+    },
+    {
+      "title": "Fees — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/visit/tarifs-fees"
+    },
+    {
+      "title": "Camping — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/activ/camping"
+    },
+    {
+      "title": "Trails — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/activ/sentiers-trails"
+    },
+    {
+      "title": "Cavendish Dunelands — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/activ/sentiers-trails/cavendish-dune"
+    },
+    {
+      "title": "Robinsons Island Trail System — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/activ/sentiers-trails/robinsons"
+    },
+    {
+      "title": "Greenwich Dunes — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/activ/sentiers-trails/greenwich-dune"
+    },
+    {
+      "title": "Greenwich — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/visit/greenwich"
+    },
+    {
+      "title": "Supervised beaches — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/activ/natation-swim/plages-beaches"
+    },
+    {
+      "title": "Water safety — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/securite-safety/nautique-water"
+    },
+    {
+      "title": "Fire safety — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/securite-safety/fire-feu"
+    },
+    {
+      "title": "Visitor guidelines — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/visit/visiteurs-visitors"
+    },
+    {
+      "title": "You and your dog — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/visit/chien-dog"
+    },
+    {
+      "title": "Environment — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/nature/environnement-environment"
+    },
+    {
+      "title": "Sandstone cliffs in PEI National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/nature/conservation/oceanview"
+    },
+    {
+      "title": "Dune recovery — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/nature/conservation/baby-dunes-bebe"
+    },
+    {
+      "title": "Parks Canada administered land in French River - Park Corner — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/land-terre"
+    },
+    {
+      "title": "Prince Edward Island National Park Management Plan (2018) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/info/gestion-management/gestion-management-2018"
+    },
+    {
+      "title": "Toquktmekl co-management agreement — Prince Edward Island National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/pe/pei-ipe/info/gestion-management-2024"
+    },
+    {
+      "title": "Parks Canada reservations — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/reserve"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Wikidata — Covehead Harbour Lighthouse, Dalvay-by-the-Sea, Green Gables (coordinates)",
+      "url": "https://www.wikidata.org/wiki/Q45324426"
+    }
+  ]
+}

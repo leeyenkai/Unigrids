@@ -1,0 +1,408 @@
+{
+  "placeID": "ca-np-jasper",
+  "contentVersion": 1,
+  "summary": "The largest and most northerly of the Canadian Rocky Mountain parks: 11,228 square kilometres of icefields, glacial lakes, wide valleys and wild rivers. Drive the Icefields Parkway to the foot of the Athabasca Glacier, paddle or take a boat down Maligne Lake to Spirit Island, and look for elk, bighorn sheep and bears. It is recovering from the wildfire that burned into the town of Jasper in July 2024.",
+  "facts": {
+    "establishedYear": 1907,
+    "areaHectares": 1122800,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "Jasper takes in the eastern slopes of the Rockies from the Columbia Icefield north to the foothills. The icefield covers more than 300 square kilometres and feeds some 25 glaciers, among them the Athabasca, which Parks Canada calls the most accessible glacier in Canada. Meltwater from the summit of Snow Dome runs to three oceans, the Pacific, the Arctic and, by way of Hudson Bay, the Atlantic. The ice is shrinking: Parks Canada reports that the park lost 21.8 per cent of its glacier mass between 1985 and 2024.",
+    "Water and rock have made the park's best-known places. The Maligne River runs underground from Medicine Lake, which drains through sinkholes in its bed, and resurfaces in Maligne Canyon, a limestone slot up to 55 metres deep. Maligne Lake, at the head of the valley, is the largest glacially fed lake in the Canadian Rockies. Grizzly and black bears, wolves, wolverines, mountain goats and woodland caribou live here, but the caribou are in trouble: the Maligne herd was declared gone in 2020, and the Tonquin herd had fewer than 45 animals by 2021.",
+    "People lived on this land long before the park. Parks Canada names the Anishinabe, Aseniwuche Winewak, Dene-zaa, Nêhiyawak, Secwépemc, Stoney Nakoda and Métis among the nations whose territories it lies in. The fur trade came through in the early 1800s over the Athabasca and Yellowhead passes, and a North West Company post taken over by Jasper Haws in 1815 became Jasper's House, which gives the park its name. When Jasper Forest Park was created in 1907, Indigenous people were forcibly removed, and Métis families who had homesteaded in the valley were made to leave within a few years.",
+    "The Grand Trunk Pacific Railway reached Jasper in 1911, the park became Jasper National Park under the National Parks Act of 1930, and in 1984 it became part of the Canadian Rocky Mountain Parks World Heritage Site. On the evening of 22 July 2024 lightning started several fires around the town. Driven by winds of up to 87 kilometres an hour, they merged into the Jasper Wildfire Complex, which burned 32,722 hectares and destroyed 358 of the town's 1,113 structures. Morgan Kitchen, a firefighter from Calgary, lost his life fighting the fire on 3 August."
+  ],
+  "howItWorks": [
+    "Visitors need a park pass, and Parks Canada stresses that this includes everyone on the Icefields Parkway. A daily pass is valid until 4 pm on the day after you buy it and covers Jasper, Banff, Kootenay, Yoho, Mount Revelstoke, Glacier, Waterton Lakes and Elk Island national parks; youth aged 17 and under get in free. A Parks Canada Discovery Pass covers more than 80 Parks Canada places for twelve months. Passes are sold at the park gates, information centres and campgrounds and online. Under the Canada Strong Pass, admission was free for three periods in 2025 and 2026; the last ended on 7 September 2026 and regular fees apply again.",
+    "Camping is allowed only in designated campgrounds with a camping permit as well as a park pass; sleeping in a vehicle at pullouts, trailheads or day-use areas is not. Frontcountry sites are booked through the Parks Canada Reservation Service, which opened for 2026 on 27 January; some campgrounds are first come, first served, and the busiest months are July and August. Every overnight trip into the backcountry needs a backcountry camping permit for the specific campgrounds on specific nights, booked the same way from 28 January in 2026. Random camping, in 30 designated areas at least a full day's travel from trails or roads, needs a permit by phone from the information centre. After the 2024 wildfire Parks Canada is offering 77 per cent of the park's pre-fire frontcountry campsites in 2026, and all of its backcountry sites.",
+    "Wildlife rules are law here. Within 400 metres of any road or parking area you may not approach within 100 metres of a bear, cougar or wolf, or within 30 metres of an elk, moose, caribou, sheep or goat, unless you stay inside your vehicle; the maximum penalty is $25,000. Store food and anything scented in your vehicle or a bear-proof locker. Recreational drones are banned throughout the park. From 1 November to 15 May the Tonquin and À la Pêche caribou ranges are closed to all travel, and anyone bringing a boat or paddleboard must clean, drain and dry it to keep out aquatic invasive species such as whirling disease."
+  ],
+  "sights": [
+    {
+      "name": "Athabasca Glacier",
+      "note": "The Columbia Icefield's best-known glacier, beside the Icefields Parkway. The Toe of the Glacier and Forefield trails approach it; go onto the ice only with a guide or tour.",
+      "location": [
+        52.1986,
+        -117.2436
+      ]
+    },
+    {
+      "name": "Maligne Lake",
+      "note": "A 22-kilometre glacial lake at the end of the Maligne Lake Road, with tour boats to Spirit Island and three backcountry canoe campgrounds. Gas motors are banned.",
+      "location": [
+        52.6644,
+        -117.5336
+      ]
+    },
+    {
+      "name": "Athabasca Falls",
+      "note": "The Athabasca River drops 24 metres over hard quartzite into a short gorge, 30 kilometres south of Jasper, with viewing platforms and trails.",
+      "location": [
+        52.6642,
+        -117.8836
+      ]
+    },
+    {
+      "name": "Sunwapta Falls",
+      "note": "A waterfall on the Sunwapta River, 54 kilometres south of Jasper just off the Icefields Parkway, with a picnic site.",
+      "location": [
+        52.5322,
+        -117.6453
+      ]
+    },
+    {
+      "name": "Medicine Lake",
+      "note": "A lake on the Maligne Lake Road that drains through sinkholes in its bed; much of the Maligne River runs underground from here to Maligne Canyon.",
+      "location": [
+        52.8575,
+        -117.7597
+      ]
+    },
+    {
+      "name": "Pyramid Lake",
+      "note": "A lake on the bench above town below Pyramid Mountain, with a beach and Pyramid Island day-use area. Electric motors only.",
+      "location": [
+        52.9223,
+        -118.0989
+      ]
+    },
+    {
+      "name": "Miette Hot Springs",
+      "note": "The hottest springs in the Canadian Rockies, up the Fiddle valley: water leaves the mountain at 54 °C and is cooled to 40 °C for the pools. Closed in winter.",
+      "location": [
+        53.1303,
+        -117.7698
+      ]
+    },
+    {
+      "name": "Valley of the Five Lakes",
+      "note": "A trail to five small lakes south of town off the Icefields Parkway, reopened in summer 2026 with a realigned section and new rest areas after the wildfire.",
+      "location": [
+        52.8081,
+        -118.0222
+      ]
+    },
+    {
+      "name": "Jasper Park Information Centre",
+      "note": "Parks Canada's information centre on Connaught Drive in the town, built in 1913 and a national historic site; open all year.",
+      "location": [
+        52.8773,
+        -118.0808
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Columbia Icefield Discovery and Information Centre",
+      "note": "Summer-only information centre by the Athabasca Glacier on the Icefields Parkway, 104 kilometres south of Jasper.",
+      "location": [
+        52.2203,
+        -117.2242
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "East Gate on Highway 16 (the Yellowhead Highway), from Edmonton and Hinton",
+      "Highway 16 from the west, over the Yellowhead Pass from British Columbia",
+      "The Icefields Parkway (Highway 93 North) from Lake Louise in Banff National Park, 232 kilometres to the town of Jasper",
+      "The town of Jasper, with the railway station and the Jasper Park Information Centre"
+    ],
+    "reservations": "Frontcountry campsites, oTENTiks and all backcountry campgrounds are booked through the Parks Canada Reservation Service, online at reservation.pc.gc.ca or on 1-877-737-3783; booking opens in late January each year. Several campgrounds along the Icefields Parkway are first come, first served. Wabasso Campground, Whirlpool Group Campground and part of Wapiti Campground stay closed in 2026 for rebuilding after the wildfire. Check before you go with Parks Canada.",
+    "permits": [
+      "Park pass for every visitor who stops in the park, including on the Icefields Parkway",
+      "Backcountry camping permit for every overnight trip, for named campgrounds on named nights",
+      "Random camping permit, by phone from the Jasper information service",
+      "National park fishing permit; provincial licences are not valid",
+      "Fire permit to use a fire pit in a road-accessible campground, when no fire ban is in force"
+    ],
+    "camping": [
+      "Whistlers and Wapiti, near town, reservable; Whistlers has oTENTiks and evening programmes",
+      "Miette, near the east boundary, reservable",
+      "Snaring, Kerkeslin, Honeymoon Lake, Jonas, Wilcox and the Icefield campgrounds, first come, first served, mostly summer only",
+      "Backcountry campgrounds on trails such as the Skyline, Brazeau and Tonquin Valley, and three canoe campgrounds on Maligne Lake",
+      "Maximum stay 14 days; quiet hours, with no fires or alcohol, from 11 pm to 7 am"
+    ],
+    "lodging": [
+      "Hotels, cabins, hostels and private home accommodation in the town of Jasper",
+      "Lodges along the Icefields Parkway, including at the Columbia Icefield",
+      "Alpine Club of Canada huts and commercial backcountry lodges"
+    ],
+    "seasonalClosures": [
+      "Cavell Road and Maligne Canyon remain closed for the 2026 season for slope stabilisation after the wildfire — check before you go with Parks Canada",
+      "The Tonquin and À la Pêche caribou ranges are closed to all travel from 1 November to 15 May",
+      "Miette Hot Springs closes for the winter and reopens in spring",
+      "The Columbia Icefield centre and most Icefields Parkway campgrounds are open in summer only; the parkway has limited services and no mobile coverage, and in winter travellers must be self-reliant"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "weather": "Jasper has warm summers and cold winters. In the town, summer days usually reach about 21 °C with nights near 7 °C, and winter days hover around −2 °C with nights near −12 °C; snow is possible in any month at Maligne Lake and on the high ground. June to August is the peak season, when the campgrounds fill and the Icefields Parkway is busiest. Autumn is quieter, and October is the park's dark-sky month, with an annual festival. In winter the town stays open for cross-country skiing, skating, snowshoeing and ice climbing, but the parkway becomes a remote road where travellers must be self-reliant.",
+  "directions": "The town of Jasper is 370 kilometres west of Edmonton, 404 kilometres northwest of Calgary and 805 kilometres northeast of Vancouver. Highway 16, the Yellowhead Highway, crosses the park east to west and is the main route in; the Icefields Parkway (93 North) runs 232 kilometres south to Lake Louise and the Trans-Canada Highway, with steep grades near Sunwapta Pass and no commercial trucks over 4,550 kilograms. VIA Rail trains reach Jasper from Edmonton and Vancouver. SunDog runs a daily shuttle from Edmonton and Brewster Express runs buses from Banff along the parkway. The nearest international airports are Edmonton, Calgary and Vancouver. Check Alberta 511 for road conditions before you set out.",
+  "fees": [
+    {
+      "title": "Daily admission",
+      "cost": "$12.25 adult / $10.75 senior / $24.50 family or group",
+      "amount": 12.25,
+      "currencyCode": "CAD",
+      "detail": "Youth aged 17 and under free. A family or group is up to seven people arriving in one vehicle. Valid until 4 pm the next day in the mountain parks and Elk Island. As listed by Parks Canada in November 2026 — check before you go."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50 adult / $71.50 senior / $167.50 family or group",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "Twelve months' admission to more than 80 Parks Canada places, valid to the end of the month of purchase a year later. As listed in November 2026."
+    },
+    {
+      "title": "Frontcountry camping",
+      "cost": "$22.00–$61.00",
+      "amount": 22,
+      "currencyCode": "CAD",
+      "detail": "Per site per night, from a primitive site with no fire pit to full service with a fire pit; an oTENTik is $147.50. Online reservation fee $11.50. As listed in November 2026."
+    },
+    {
+      "title": "Backcountry camping",
+      "cost": "$15.00",
+      "amount": 15,
+      "currencyCode": "CAD",
+      "detail": "Per person per night, in addition to the park pass. As listed in November 2026."
+    },
+    {
+      "title": "National park fishing permit",
+      "cost": "$15.00 daily / $51.25 annual",
+      "amount": 15,
+      "currencyCode": "CAD",
+      "detail": "Valid in Banff, Jasper, Yoho and Kootenay national parks. As listed in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1811",
+      "text": "David Thompson's brigade crosses Athabasca Pass in January, opening a fur-trade route over the Rockies."
+    },
+    {
+      "year": "1815",
+      "text": "Jasper Haws takes charge of a North West Company post on the Athabasca, which becomes known as Jasper's House."
+    },
+    {
+      "year": "1907",
+      "text": "Jasper Forest Park is established by order in council on 14 September; Indigenous people are removed from the park."
+    },
+    {
+      "year": "1911",
+      "text": "The Grand Trunk Pacific Railway reaches Jasper."
+    },
+    {
+      "year": "1930",
+      "text": "The National Parks Act makes it Jasper National Park."
+    },
+    {
+      "year": "1940",
+      "text": "The Icefields Highway between Lake Louise and Jasper is completed after nearly ten years of work, mostly by hand."
+    },
+    {
+      "year": "1961",
+      "text": "The paved and realigned Icefields Parkway officially opens."
+    },
+    {
+      "year": "1984",
+      "text": "Jasper becomes part of the Canadian Rocky Mountain Parks World Heritage Site."
+    },
+    {
+      "year": "2011",
+      "text": "The Royal Astronomical Society of Canada designates the park a Dark-Sky Preserve on 26 March."
+    },
+    {
+      "year": "2024",
+      "text": "Lightning-caused fires on 22 July become the Jasper Wildfire Complex, which burns 32,722 hectares and reaches the town within two days; it is declared under control on 7 September."
+    },
+    {
+      "year": "2026",
+      "text": "On 30 June the federal government announces $520 million more for the park's rebuild and recovery."
+    }
+  ],
+  "safety": [
+    "Grizzly and black bears live throughout the park. Carry bear spray and know how to use it, make noise on the trail, and keep food and scented items locked away.",
+    "Never walk onto the Athabasca Glacier or any glacier ice without a certified guide or a tour: crevasses lie hidden under snow.",
+    "In burned areas trees can fall without warning, especially in wind, and hidden ash pits can smoulder for months. Stay on trails and move through fire-affected areas quickly.",
+    "The Icefields Parkway has no mobile coverage and few services, and its weather changes by the hour. Plan for limited services, check the road report and carry warm clothing; in an emergency call 911 or Jasper Dispatch on 780-852-6155.",
+    "Maligne Lake stays near 4 °C all summer and can be whipped up by sudden wind. Wear a life jacket and stay near shore in poor weather."
+  ],
+  "regulations": [
+    "Stay 100 metres from bears, cougars and wolves and 30 metres from elk, moose, caribou, sheep and goats; never feed, entice or pursue wildlife.",
+    "Recreational drones may not take off or land anywhere in the park.",
+    "Camp only in designated campgrounds, with a permit; gas motors are banned on every lake, and electric motors are allowed only on Maligne, Medicine, Talbot, Pyramid and Patricia lakes.",
+    "Keep pets on a leash at all times. Collecting plants, antlers, rocks, fossils or any natural or historic object is illegal.",
+    "Entering a closed area is an offence with a maximum fine of $25,000; closures are posted at trailheads and on Parks Canada's bulletins page."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-glaciers",
+    "theme-alpine",
+    "theme-hot-springs",
+    "theme-caves",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Spirit Island on Maligne Lake1.jpg",
+      "caption": "Spirit Island on Maligne Lake",
+      "altText": "A small island of conifers in a turquoise lake, with a tour boat and rugged grey mountains beyond"
+    },
+    {
+      "file": "File:Athabasca Glacier and Columbia Icefield 01.jpg",
+      "caption": "Icefalls on the Athabasca Glacier below the Columbia Icefield",
+      "altText": "Broken blue-white ice of a glacier icefall beneath smooth snowfields"
+    },
+    {
+      "file": "File:Athabasca Falls, Jasper National Park 02.jpg",
+      "caption": "The gorge below Athabasca Falls",
+      "altText": "White water rushing through a narrow rock gorge lined with conifers"
+    },
+    {
+      "file": "File:Pyramid Mountain and Lake at dawn.jpg",
+      "caption": "Pyramid Mountain above Pyramid Lake at dawn",
+      "altText": "A mountain lit orange at dawn above a still, misty lake and dark forest"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jasper National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper"
+    },
+    {
+      "title": "Fees — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/visit/tarifs-fees"
+    },
+    {
+      "title": "Park passes — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/visit/tarifs-fees/portes-gates"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Jasper National Park of Canada Management Plan 2022 — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/gestion-management/plan/involved/plandirecteur-mgntplan"
+    },
+    {
+      "title": "Jasper Wildfire 2024 — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/visit/feu-alert-fire/feudeforet-jasper-wildfire"
+    },
+    {
+      "title": "Park recovery — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/gestion-management/serviceimmobilier-realty/retablissement-recovery/pc-recovery"
+    },
+    {
+      "title": "What's open in Jasper National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/visit/ouvert-fermee-open-closed"
+    },
+    {
+      "title": "Indigenous connections — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/autochtones-indigenous"
+    },
+    {
+      "title": "Glaciers and icefields — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/nature/environment/ecosys/glaciers"
+    },
+    {
+      "title": "Tent and RV camping — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/passez-stay/camping"
+    },
+    {
+      "title": "Backcountry camping — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/passez-stay/arrierepays-backcountry"
+    },
+    {
+      "title": "Random camping — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/passez-stay/arrierepays-backcountry/sugg-sentiers_trip-ideas/camping-sauvage-random"
+    },
+    {
+      "title": "Maligne Lake canoe camping — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/passez-stay/arrierepays-backcountry/sugg-sentiers_trip-ideas/Maligne"
+    },
+    {
+      "title": "National Park Regulations — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/securite-safety/regles-rules"
+    },
+    {
+      "title": "Restricted Activity: Wildlife viewing practices in Jasper National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/bulletins/A8A66AB1-D0DB-4300-B227-8EB8F57D88AE"
+    },
+    {
+      "title": "Area Closure: Seasonal closures for caribou conservation — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/bulletins/F5ABD01D-F731-497E-AB08-8425B6E1F000"
+    },
+    {
+      "title": "Protect lakes and rivers from invasive species — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/experience/ete-summer/activitesnautiques-wateractivities/especes-aquatiques-envahissantes-aquatic-invasive-species"
+    },
+    {
+      "title": "Post-fire area safety — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/securite-safety/apres-incendie-post-wildfire"
+    },
+    {
+      "title": "Travelling the Icefields Parkway — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/itineraires-itineraries/promenadedesglaciers-icefieldsparkway"
+    },
+    {
+      "title": "A brief history of the Icefields Parkway — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/itineraires-itineraries/promenadedesglaciers-icefieldsparkway/PGhistoire-IPhistory"
+    },
+    {
+      "title": "Jasper National Park's Dark Sky Preserve — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/gestion-management/designation/cieletoile-darksky"
+    },
+    {
+      "title": "Designation information — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/gestion-management/designation"
+    },
+    {
+      "title": "Miette Hot Springs — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs"
+    },
+    {
+      "title": "Getting here — Jasper National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/visit/rendre-gethere"
+    },
+    {
+      "title": "Bear safety — Mountain national parks, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/mtn/ours-bears/securite-safety"
+    },
+    {
+      "title": "Jasper National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jasper_National_Park"
+    },
+    {
+      "title": "Jasper, Alberta — Wikipedia (climate)",
+      "url": "https://en.wikipedia.org/wiki/Jasper,_Alberta"
+    },
+    {
+      "title": "OpenStreetMap Nominatim (coordinates)",
+      "url": "https://nominatim.openstreetmap.org/"
+    },
+    {
+      "title": "Canadian Rocky Mountain Parks — Canada's World Heritage Sites, Parks Canada",
+      "url": "https://parks.canada.ca/culture/spm-whs/sites-canada/sec02h"
+    },
+    {
+      "title": "Jasper Haws — Jasper House National Historic Site, Parks Canada",
+      "url": "https://parks.canada.ca/lhn-nhs/ab/jasperhouse/culture"
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "placeID": "ca-np-forillon",
+  "contentVersion": 1,
+  "summary": "At the north-eastern tip of the Gaspé Peninsula, where the Appalachians end in limestone cliffs above the Gulf of St. Lawrence, Forillon packs sea, forest and fishing history into 245 square kilometres. People come to walk out to Cap Gaspé, Land's End, to watch whales and seals from the shore, to climb Mont Saint-Alban for the view, and to hear the story of the families who fished here before the park.",
+  "facts": {
+    "establishedYear": 1970,
+    "areaHectares": 24480,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Forillon is the northernmost tip of the Appalachians on the North American mainland, and its rocks record two of the mountain-building episodes that raised them. The northern half of the park belongs to the Taconic orogeny of about 450 million years ago, the southern half to the Acadian orogeny of about 380 million years ago. Ten geological formations crowd into this small territory, with fossils from the Ordovician, Silurian and Devonian, and the sea has cut the coast into cliffs, benches, coves and caves.",
+    "The park is almost entirely forest, home to 43 species of mammals including moose, black bear, red fox, lynx, porcupine and beaver. About 45 Arctic-alpine plants cling to the cliffs and to the meadows at Cap Gaspé, rare at this latitude and so close to sea level; they took hold after the glaciers retreated some 10,000 years ago, on rock where forest could not crowd them out. On the Penouille sand spit a low taiga of lichen and stunted conifers grows beside a salt marsh. Offshore, harbour seals live year-round and grey seals come for the summer; minke and humpback whales, white-sided dolphins, and the endangered fin whale, blue whale and harbour porpoise all feed in these waters. The cliffs hold the largest black-legged kittiwake colony in eastern Canada.",
+    "The Mi'gmaq and their ancestors used this land for thousands of years: spear points found on the terrace above Penouille are thought to be between 9,000 and 6,000 years old, and the Anse-au-Griffon valley was a portage route across the peninsula. In Mi'gmaq, Gespeg means \"where the land ends\". Jacques Cartier anchored in Gaspé Bay in July 1534, but Basque, French, Portuguese and Spanish fishermen were already coming each summer for cod. After the British conquest, merchants from Jersey and Guernsey built the cod trade around Gaspé Bay; at Grande-Grave the Janvrin company set up in 1798 and William Hyman in 1845, and in the late 19th century more than 400 people lived there, salting and drying cod for Italy, Spain and the Caribbean.",
+    "During the Second World War German U-boats sank 23 Allied ships in the Gulf and River of St. Lawrence between 1942 and 1944, five of them off Forillon, and Gaspé Bay became a naval base guarded by the shore battery at Fort Peninsula. In 1970 the province of Quebec expropriated the land at Parks Canada's request and transferred it to the federal government to create the first national park of the Canadian system in Quebec. Some 225 families left their homes and nearly 1,200 landowners lost woodlots and fields, and the Mi'gmaq lost free access to their territory. Parks Canada now works with the association of expropriated families to tell their story, and in 2024 signed a Rights and Reconciliation Agreement with the Nation Micmac de Gespeg."
+  ],
+  "howItWorks": [
+    "Forillon is a national park run by Parks Canada, and an entry fee is charged for everyone travelling in its North and South areas from the Saturday closest to 1 June to the Monday of Thanksgiving weekend; outside that period the park stays open but trails and facilities are not maintained. As listed in November 2026, daily admission in peak season is $10.00 for an adult, and youth aged 17 and under get in free at every Parks Canada place. A Parks Canada Discovery Pass, $83.50 for an adult, $71.50 for a senior or $167.50 for a family or group of up to seven people arriving in one vehicle, covers admission at more than 80 Parks Canada places for 12 months. Under the Canada Strong Pass admission was free from 19 June to 7 September 2026; regular fees resumed on 8 September 2026.",
+    "Campsites at Cap-Bon-Ami, Des-Rosiers and Petit-Gaspé, the oTENTik, MicrOcube and Ôasis units and the backcountry sites are booked through the Parks Canada Reservation Service at reservation.pc.gc.ca or 1-877-737-3783. Bookings for the 2027 season open on Thursday 4 February 2027 at 8 am Eastern time. Camping is allowed only on designated sites with a permit, for up to seven people or one family with one vehicle. The backcountry sites and two lean-to shelters lie on the long Les Crêtes and Les Lacs trails and are reserved the same way.",
+    "The park's regulations protect what is here. Hunting, trapping, feeding or disturbing animals is prohibited, and so is taking anything natural or cultural, from plants and fossils to driftwood. Freshwater fishing is not allowed; from the shore you may take up to ten mackerel a day, and no permit is needed to fish for mackerel off the Grande-Grave wharf. Recreational drones are banned, as are personal watercraft, snowmobiles and all-terrain vehicles."
+  ],
+  "sights": [
+    {
+      "name": "Cap Gaspé",
+      "note": "Land's End: a concrete lighthouse of 1950 on a 95-metre cliff, at the end of the Les Graves trail or a 4-kilometre walk or ride from L'Anse-aux-Amérindiens.",
+      "location": [
+        48.7511,
+        -64.1626
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Grande-Grave heritage site",
+      "note": "The last buildings of a Gaspé cod-fishing village: the Hyman & Sons general store and the Dolbel-Roberts house, open with guide-interpreters in summer.",
+      "location": [
+        48.7913,
+        -64.2229
+      ]
+    },
+    {
+      "name": "Anse-Blanchette",
+      "note": "The Blanchette house and its fishing outbuildings in a small cove, reached on the Les Parages loop from Grande-Grave.",
+      "location": [
+        48.7872,
+        -64.2179
+      ]
+    },
+    {
+      "name": "Mont Saint-Alban",
+      "note": "An observation tower at 285 metres, looking out over sea and cliffs, reached by loops from Petit-Gaspé beach or, more steeply, from Cap-Bon-Ami.",
+      "location": [
+        48.8126,
+        -64.2278
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Cap-Bon-Ami",
+      "note": "A pebble beach beneath the cliffs, good for seabirds and for the view of Cap Gaspé.",
+      "location": [
+        48.809,
+        -64.2201
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Penouille",
+      "note": "A sand spit in Gaspé Bay with a beach warm enough for swimming, a rare low-lying taiga on La Taïga trail and a visitor centre at its entrance.",
+      "location": [
+        48.852,
+        -64.4236
+      ]
+    },
+    {
+      "name": "Fort Peninsula",
+      "note": "The only completely preserved Second World War shore battery open to the public in Quebec, with guns, tunnels and storerooms of the Gaspé naval base.",
+      "location": [
+        48.853,
+        -64.3964
+      ]
+    },
+    {
+      "name": "La Chute",
+      "note": "A short, steep loop through maple and cedar groves to a 17-metre waterfall, from a car park on Route 132 between the North and South areas.",
+      "location": [
+        48.8439,
+        -64.2655
+      ]
+    },
+    {
+      "name": "Le Castor",
+      "note": "A level stone-dust trail beside beaver ponds, with an observation platform, on a former stretch of Route 132 that is being returned to nature.",
+      "location": [
+        48.8412,
+        -64.2401
+      ]
+    },
+    {
+      "name": "Penouille Visitor Centre",
+      "note": "At the entrance to the Penouille sand spit on the Gaspé Bay side, with park information, a Parks Canada shop and a sheltered picnic area.",
+      "location": [
+        48.856,
+        -64.4125
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "North Area toll booth, 1440 boulevard de Cap-des-Rosiers, Gaspé — for Cap-des-Rosiers, Des-Rosiers and Cap-Bon-Ami",
+      "South Area toll booth, 2286 boulevard de Grande-Grève, Gaspé — for Petit-Gaspé, Grande-Grave and the walk to Cap Gaspé",
+      "Penouille, on boulevard de Forillon on the Gaspé Bay side",
+      "Route 197 at Rivière-au-Renard, the northern start of the Les Lacs trail"
+    ],
+    "reservations": "Campsites, ready-to-camp units and backcountry sites are booked through the Parks Canada Reservation Service; 2027 bookings open on 4 February 2027 at 8 am Eastern time. The whale-watching cruise from Grande-Grave and the Croisière Forillon from Cap-des-Rosiers are run by private operators and booked with them. Check before you go with Parks Canada.",
+    "permits": [
+      "A camping permit for any overnight stay, on a designated site only",
+      "No permit is needed to fish for mackerel from the Grande-Grave wharf; freshwater fishing is not allowed",
+      "A Restricted Activity Permit from the superintendent for any drone use, which is granted only for park management, safety or enforcement purposes"
+    ],
+    "camping": [
+      "Petit-Gaspé, in the South Area, and Des-Rosiers and Cap-Bon-Ami, in the North Area, with oTENTik, MicrOcube and Ôasis units",
+      "Backcountry sites with pit toilets on the Les Crêtes and Les Lacs trails, each for up to three tents and twelve people, and two lean-to shelters for four"
+    ],
+    "lodging": [
+      "Heritage houses at Grande-Grave are being restored for overnight stays with the association of expropriated families; work on the Elias Gavey house is scheduled to finish in October 2028",
+      "Hotels, motels and inns in Gaspé and the villages along Route 132"
+    ],
+    "seasonalClosures": [
+      "Toll booths, visitor centres, heritage buildings and campgrounds close for the winter; in 2026 the operational season ended on 15 October",
+      "The gates to the North and South areas close after the first snow, though the park stays accessible and trails are not maintained in the off-season",
+      "The Gavey-Bartlett houses area at Grande-Grave, on the Les Parages trail, is closed until further notice — check before you go with Parks Canada"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "Forillon's season follows the Gulf. Facilities open at the end of May and peak season runs from late June to the start of September, when the whale-watching cruises run and the grey seals are in from the south of the Gulf. Autumn brings colour to the hardwood slopes, and Parks Canada singles out the Les Lacs trail at that season; the operational season ends in mid-October. In winter the park is not maintained, the gates close after the first snow, and visitors come on skis and snowshoes. On the cliffs and on the water conditions change quickly, and the sea stays cold, so dress for wind whatever the month.",
+  "directions": "Forillon lies at the end of Route 132 around the Gaspé Peninsula, about 700 kilometres from Québec City, 400 from Rimouski and 350 from the New Brunswick border. Orléans Express buses reach the Gaspé region from cities in Quebec, and the regional transit service RÉGÎM runs local buses. Michel-Pouliot Gaspé Airport is 43 kilometres from the South Area entrance. Inside the park Route 132 links the North Area at Cap-des-Rosiers with the South Area on Gaspé Bay, and a car or bicycle is the practical way to move between them.",
+  "fees": [
+    {
+      "title": "Daily admission, peak season",
+      "cost": "$10.00 adult / $8.75 senior / $19.50 family or group",
+      "amount": 10.0,
+      "currencyCode": "CAD",
+      "detail": "From 25 June to 1 September 2026; shoulder season (30 May to 24 June and 2 September to 13 October 2026) $7.25 adult. Youth 17 and under free. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Seasonal pass",
+      "cost": "$48.25 adult / $42.50 senior / $96.75 family or group",
+      "amount": 48.25,
+      "currencyCode": "CAD",
+      "detail": "Valid from 30 May to 13 October 2026 at Forillon only. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Frontcountry campsite, unserviced",
+      "cost": "$34.00",
+      "amount": 34.0,
+      "currencyCode": "CAD",
+      "detail": "Per site per night, with washrooms and showers; $40.00 with electricity, $43.75 with electricity and water; oTENTik $162.50. Reservation fee $11.50 online. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Backcountry camping",
+      "cost": "$15.00",
+      "amount": 15.0,
+      "currencyCode": "CAD",
+      "detail": "Per person per night; $18.75 per person in a lean-to shelter. As listed by Parks Canada in November 2026; check before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 9,000–6,000 years ago",
+      "text": "People camp on the terrace above the Penouille salt marsh, leaving spear points behind."
+    },
+    {
+      "year": "1534",
+      "text": "Jacques Cartier sails along the Forillon shore and anchors in Gaspé Bay on 14 July."
+    },
+    {
+      "year": "1798",
+      "text": "The Jersey firm of the Janvrin brothers sets up at Grande-Grave and takes control of the fish trade around Gaspé Bay."
+    },
+    {
+      "year": "1845",
+      "text": "William Hyman founds a second fishing company at Grande-Grave."
+    },
+    {
+      "year": "1873",
+      "text": "The first lighthouse is built on Cap Gaspé; the present concrete tower dates from 1950."
+    },
+    {
+      "year": "1942",
+      "text": "The Gaspé naval base opens on 1 May; U-boats sink ships off Cap Gaspé and Cap-des-Rosiers that September."
+    },
+    {
+      "year": "1970",
+      "text": "Quebec expropriates the land for Forillon National Park, the first Canadian national park in Quebec; some 225 families leave their homes."
+    },
+    {
+      "year": "2024",
+      "text": "The Nation Micmac de Gespeg and the Government of Canada announce a Rights and Reconciliation Agreement for the park on 3 April."
+    }
+  ],
+  "safety": [
+    "Black bears and moose live throughout the park. Keep at least 50 metres from a moose, and take extra care in the rut from mid-September to early October; store food and garbage where animals cannot reach them.",
+    "None of the beaches has lifeguards, the water is cold, and some stretches of shore are closed to swimming, diving and landing. Check the marine safety advice before going on the water.",
+    "Stay back from cliff edges, and do not leave the Les Graves trail beyond the Cap-Gaspé lighthouse, where entry is prohibited.",
+    "The Les Crêtes and Les Lacs trails are long mountain hikes of 13 to 14 hours return. Carry water, food and warm clothing, and tell someone your plans.",
+    "Route 132 runs through the park; watch for wildlife and cyclists on the road. For any emergency call 911, or the Parks Canada dispatch service at 1-888-762-1422."
+  ],
+  "regulations": [
+    "No hunting, trapping, feeding, attracting or disturbing wildlife, and no removing plants, fossils, driftwood or other natural or cultural objects.",
+    "Camp only on designated sites with a permit, and light fires only in the fireplaces provided.",
+    "Keep out of the closed areas, among them the Penouille salt marsh and the rock called Le Quai at Cap-Bon-Ami.",
+    "Recreational drones are prohibited, as are personal watercraft, snowmobiles and all-terrain vehicles; bicycles are allowed only on the multi-use trails and the gravel roads to Cap Gaspé and Penouille.",
+    "Dogs on a leash of 3 metres or less at all times, and not inside service buildings."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-mountains",
+    "theme-fossils",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Forillon National Park of Canada 1.jpg",
+      "caption": "The cliffs of Cap Bon-Ami on the north side of the Forillon peninsula",
+      "altText": "Forested limestone cliffs dropping into a calm sea"
+    },
+    {
+      "file": "File:View from lookout tower of Cap Gaspé at Cap-Bon-Ami in Forillon National Park in Gaspé, Québec.jpg",
+      "caption": "Cap Gaspé seen from the lookout at Cap-Bon-Ami",
+      "altText": "A wooded headland jutting into the sea beyond spruce trees"
+    },
+    {
+      "file": "File:William Hyman and Sons Store and Warehouse, Grande-Grave, Forillon National Park.jpg",
+      "caption": "The William Hyman and Sons store and warehouse at Grande-Grave",
+      "altText": "A pale yellow wooden building on a green slope above the sea"
+    },
+    {
+      "file": "File:Plage de Penouille.jpg",
+      "caption": "Penouille beach on Gaspé Bay",
+      "altText": "A sandy beach with driftwood under a blue sky"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Forillon National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon"
+    },
+    {
+      "title": "Parc national Forillon — Parcs Canada",
+      "url": "https://parcs.canada.ca/pn-np/qc/forillon"
+    },
+    {
+      "title": "Plan your visit — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/visit"
+    },
+    {
+      "title": "Fees — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/visit/tarifs-fees"
+    },
+    {
+      "title": "Dates and hours of operation — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/visit/heures-hours"
+    },
+    {
+      "title": "Hiking — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/activ/randonnee-hiking"
+    },
+    {
+      "title": "Backcountry camping — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/activ/camping/arriere-backcountry"
+    },
+    {
+      "title": "Our beaches — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/activ/plages-beaches"
+    },
+    {
+      "title": "Visitor guidelines — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/info/reglements-regulations"
+    },
+    {
+      "title": "Drones or unmanned air vehicles (UAV) — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/info/drone"
+    },
+    {
+      "title": "Wildlife safety — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/securite-safety/faune-wildlife"
+    },
+    {
+      "title": "Geology — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/nature/environnement-environment/geologie"
+    },
+    {
+      "title": "Marine environment — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/nature/environnement-environment/marine"
+    },
+    {
+      "title": "Mammals — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/nature/faune-wildlife/mammiferes-mammals"
+    },
+    {
+      "title": "Arctic-alpine plants — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/nature/flore-flora/alpine-arctic"
+    },
+    {
+      "title": "The Mi'gmaq and their ancestors — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/culture/premiers-first"
+    },
+    {
+      "title": "The French Regime — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/culture/regime-french-francais"
+    },
+    {
+      "title": "The English Regime — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/culture/regime-english-anglais"
+    },
+    {
+      "title": "Grande-Grave, a typical Gaspé fishing village — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/culture/grande-grave-morue-cod"
+    },
+    {
+      "title": "Cape Gaspé, a lighthouse at Land's End — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/culture/cap-gaspe"
+    },
+    {
+      "title": "World War II at Forillon's gate — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/culture/fort-peninsule"
+    },
+    {
+      "title": "Context to the creation of Forillon National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/culture/contexte-creation-forillon"
+    },
+    {
+      "title": "Rights and Reconciliation Agreement — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/info/accord-agreement"
+    },
+    {
+      "title": "Forillon National Park management plan — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/info/plan"
+    },
+    {
+      "title": "Grande-Grave Heritage Accommodation Project — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/info/projet-hebergement-grande-grave-heritage-accommodation-project"
+    },
+    {
+      "title": "Visitor information and discovery centre — Forillon National Park",
+      "url": "https://parks.canada.ca/pn-np/qc/forillon/activ/visitor-centre-accueil"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Parks Canada reservations — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/reserve"
+    },
+    {
+      "title": "OpenStreetMap (Nominatim and Photon) — sight locations",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

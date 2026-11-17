@@ -1,0 +1,374 @@
+{
+  "placeID": "ca-np-yoho",
+  "contentVersion": 1,
+  "summary": "The western slope of the Great Divide in British Columbia: 1,313 square kilometres of rock walls, waterfalls and glacial lakes around the railway village of Field. Walk to the foot of Takakkaw Falls, circle green Emerald Lake, win a seat on the bus to Lake O'Hara, or join a guided hike to the Burgess Shale, where fossils more than 500 million years old keep their soft parts.",
+  "facts": {
+    "establishedYear": 1886,
+    "areaHectares": 131312,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to three days"
+  },
+  "story": [
+    "Yoho protects the western slopes of the Main Ranges of the Rockies, where glacial meltwater feeds waterfalls, turquoise lakes and the Kicking Horse River. High above the valley floor lies the Burgess Shale. More than 500 million years ago this land lay under a shallow sea, and the mud that settled on its floor preserved soft-bodied animals in such detail that eyes, guts and even brains can still be seen. Charles Walcott found the beds in 1909; they are among the most important fossil sites on Earth, and the reason the Canadian Rocky Mountain Parks are a World Heritage Site for their geology as well as their scenery.",
+    "The park is home to at least 224 species of birds and 58 of mammals, among them mountain goats, grizzly bears and pikas in the alpine, which is also important habitat for whitebark pine. Only four species of fish are native. Parks Canada's 2024 climate summary reports that Yoho, like the rest of Canada, is warming faster than the global average.",
+    "These are the traditional lands of the Ktunaxa and Secwépemc peoples, who hunted, fished and gathered here, and for many generations used the Kicking Horse and Amiskwi valleys as travel routes between the Columbia Valley and the plains east of the Rockies. To the Ktunaxa the park lies within ʔaknuqⱡuⱡam ʔamakʔis, the Land of the Eagle. When the park was created, Indigenous people were excluded from it and lost their ties to places within their own territories; Parks Canada now works with the Ktunaxa Nation Council and the Secwépemc Columbia Campfire Collaborative.",
+    "The railway made the park. The explorer James Hector was kicked in the chest by his horse near the pass in 1858 and named it Kicking Horse Pass; the Canadian Pacific Railway chose it for its line, and built a hotel at the foot of Mount Stephen so that heavy dining cars need not be hauled over the summit. A reserve around Mount Stephen was set aside in 1886, a year after Banff, and in 1901 it was renamed Yoho, from a Cree expression of surprise. In 1909 the Spiral Tunnels replaced the railway's steep Big Hill."
+  ],
+  "howItWorks": [
+    "Every visitor who stops in Yoho needs a park pass, bought at the park gates, visitor centres, staffed campground kiosks or online. A daily pass is valid until 4 pm the day after purchase and also covers Banff, Jasper, Kootenay, Mount Revelstoke, Glacier, Waterton Lakes and Elk Island; youth aged 17 and under get in free. The Parks Canada Discovery Pass covers more than 80 Parks Canada destinations for twelve months. Admission was free during the Canada Strong Pass periods of 2025 and 2026; the last ended on 7 September 2026 and regular fees apply again.",
+    "Lake O'Hara is managed to protect a small and sensitive alpine area. Access is managed through reservations on the Parks Canada bus up the 11-kilometre road, on which cycling is prohibited: in 2026 day-use seats were allotted by random draw, with applications from 2 to 23 March, and the bus ran from 19 June to 4 October. The 30-site Lake O'Hara campground must be booked ahead, opened for 2026 on 10 February, and allows at most three nights. You may walk the road, 22 kilometres there and back, but may not camp without a reservation. The Burgess Shale beds at Walcott Quarry and Mount Stephen can be visited only on Parks Canada guided hikes, which are booked in advance.",
+    "Camping is allowed only in designated campgrounds with a camping permit and a park pass. Frontcountry sites are booked through the Parks Canada Reservation Service, which opened for 2026 on 20 January. Every overnight trip into the backcountry needs a backcountry permit, booked the same way from 26 January in 2026, with a maximum of three nights at any one campground; random camping is allowed only in designated areas, by permit, and campfires are not allowed anywhere in the backcountry. To stop the spread of whirling disease, every lake and river in Yoho and Kootenay is closed to boats, paddleboards and angling until 31 March 2027. Recreational drones are banned, with fines up to $25,000."
+  ],
+  "sights": [
+    {
+      "name": "Takakkaw Falls",
+      "note": "Canada's second-highest waterfall, reached by a flat, paved 0.9-kilometre path at the end of Yoho Valley Road, 17 kilometres from Field. The road opens mid-June to mid-October.",
+      "location": [
+        51.5002,
+        -116.4735
+      ]
+    },
+    {
+      "name": "Emerald Lake",
+      "note": "A green lake ringed by peaks, with a lodge and a 5.2-kilometre shoreline loop. The road from the Trans-Canada Highway is open all year.",
+      "location": [
+        51.4431,
+        -116.5314
+      ]
+    },
+    {
+      "name": "Lake O'Hara",
+      "note": "An alpine lake ringed by high routes, reached by reserved bus, an 11-kilometre walk, or a stay at the lodge, hut or campground. Best hiking July to late September.",
+      "location": [
+        51.3558,
+        -116.3308
+      ]
+    },
+    {
+      "name": "Spiral Tunnels Viewpoint",
+      "note": "Watch trains disappear into one tunnel and emerge from another at a different height; 25 to 30 pass daily, on no fixed schedule. Closed mid-October to mid-May.",
+      "location": [
+        51.4313,
+        -116.4038
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Walcott Quarry",
+      "note": "The classic Burgess Shale fossil site, open only to Parks Canada guided hikes: 24 kilometres and 900 metres of climbing from Takakkaw Falls in about 11 hours.",
+      "location": [
+        51.4383,
+        -116.4723
+      ]
+    },
+    {
+      "name": "Mount Stephen",
+      "note": "The peak above Field, with Burgess Shale trilobite beds reached on a steep guided hike of 8 kilometres and 800 metres of climbing from the visitor centre.",
+      "location": [
+        51.3992,
+        -116.4364
+      ]
+    },
+    {
+      "name": "Wapta Falls",
+      "note": "The widest waterfall on the Kicking Horse River: a family walk of 2.2 kilometres each way, near the park's west boundary. Its road closes late October to late May.",
+      "location": [
+        51.1873,
+        -116.5758
+      ]
+    },
+    {
+      "name": "Kicking Horse Pass National Historic Site",
+      "note": "The highest point on the Trans-Canada Highway, at the park's eastern edge, where the railway crossed the Great Divide and opened British Columbia to the rest of Canada by rail.",
+      "location": [
+        51.4528,
+        -116.2847
+      ]
+    },
+    {
+      "name": "Yoho National Park Visitor Centre",
+      "note": "On the Trans-Canada Highway in Field, with park staff, a small Burgess Shale fossil exhibit and the Friends of Yoho shop. Open 1 May to 12 October in 2026.",
+      "location": [
+        51.398,
+        -116.4917
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The Trans-Canada Highway (Highway 1) from Lake Louise in the east, over Kicking Horse Pass; Field is 30 kilometres from Lake Louise",
+      "The Trans-Canada Highway from Golden in the west, 58 kilometres from Field",
+      "The Lake O'Hara parking lot, 12 kilometres west of Lake Louise and 13 kilometres east of Field, for the Lake O'Hara bus",
+      "Yoho Valley Road, 5 kilometres east of Field, to Takakkaw Falls and the Yoho Valley trailheads"
+    ],
+    "reservations": "The Lake O'Hara day-use bus is allotted by random draw in March and the Lake O'Hara campground opens for booking in February; frontcountry campsites, backcountry campgrounds and Burgess Shale guided hikes are booked through the Parks Canada Reservation Service, online at reservation.pc.gc.ca or on 1-877-737-3783. Hoodoo Creek is first come, first served. Dates change every year — check before you go with Parks Canada.",
+    "permits": [
+      "Park pass for every visitor who stops in the park",
+      "Backcountry permit for every overnight trip, for named campgrounds on named nights",
+      "Random camping only in designated backcountry areas, by permit",
+      "Fire permit for a campfire in a frontcountry campground; firewood is included",
+      "Burgess Shale fossil beds only with a Parks Canada guided hike"
+    ],
+    "camping": [
+      "Kicking Horse, 88 sites at the foot of Yoho Valley Road, with evening programmes in its theatre",
+      "Monarch, 44 sites near Field below the old Kicking Horse mine shafts, across the valley from Mount Stephen",
+      "Takakkaw Falls, 35 walk-in tent sites at the end of Yoho Valley Road",
+      "Hoodoo Creek, 30 sites, first come, first served",
+      "Lake O'Hara, 30 tent pads, reservation only, a maximum of three nights",
+      "Backcountry campgrounds in the Yoho Valley, among them Laughing Falls and Twin Falls; maximum stay 14 nights frontcountry and 3 nights backcountry"
+    ],
+    "lodging": [
+      "Guest houses and lodges in the village of Field",
+      "Emerald Lake Lodge on Emerald Lake",
+      "Lake O'Hara Lodge, open mid-June to early October and late January to early April",
+      "The Alpine Club of Canada's Elizabeth Parker Hut at Lake O'Hara, open all year; summer places are allotted by lottery the previous autumn"
+    ],
+    "seasonalClosures": [
+      "Yoho Valley Road to Takakkaw Falls is closed from mid-October to mid-June because of avalanche risk; vehicles over 7 metres must reverse round its switchbacks and trailers are not allowed",
+      "The Lake O'Hara bus and campground run only from late June to early October (19 June to 4 October in 2026) — check before you go with Parks Canada",
+      "Wapta Falls Road is not maintained from late October to late May",
+      "Campgrounds, picnic areas and the Spiral Tunnels Viewpoint close from mid-October to mid-May; the visitor centre closes from mid-October to the end of April",
+      "Odaray Prospect and Plateau near Lake O'Hara are closed from 1 May to 30 November to limit disturbance in a wildlife corridor"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "weather": "Yoho's weather is pleasant but unpredictable. In spring and summer daytime highs average 16 to 23°C, but nights can drop below freezing, and rain, snow or hail can fall at any time of year. The roads to the high country open only in summer: Yoho Valley Road from mid-June, and at Lake O'Hara many higher routes stay snowbound, some under avalanche hazard, until late June, so July to late September is the prime hiking season. From October the park turns to winter. Winter or mud-and-snow tyres are required on the Trans-Canada Highway from 1 October to 30 April, and the highway is controlled for avalanches.",
+  "directions": "The Trans-Canada Highway runs 45 kilometres through the middle of the park and is its only major road. Field, the only community inside the park, is 30 kilometres west of Lake Louise, 85 kilometres from Banff and 58 kilometres east of Golden, the nearest full-service towns. There is no public transport in the park, so most visitors drive; cars can be hired in Golden, Banff and Lake Louise. The Lake O'Hara bus leaves from its own parking lot on Highway 1 between Lake Louise and Field, and Yoho Valley Road and Emerald Lake Road branch off near Field. Mobile coverage is limited.",
+  "fees": [
+    {
+      "title": "Daily admission",
+      "cost": "$12.25 adult / $10.75 senior / $24.50 family or group",
+      "amount": 12.25,
+      "currencyCode": "CAD",
+      "detail": "Youth aged 17 and under free. A family or group is up to seven people arriving in one vehicle. As listed by Parks Canada in November 2026 — check before you go."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50 adult / $71.50 senior / $167.50 family or group",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "Twelve months' admission to more than 80 Parks Canada destinations. As listed in November 2026."
+    },
+    {
+      "title": "Lake O'Hara bus",
+      "cost": "$25.50",
+      "amount": 25.5,
+      "currencyCode": "CAD",
+      "detail": "Per person, return. Reservation fee $3.50 online or $5.50 by phone. As listed in November 2026."
+    },
+    {
+      "title": "Frontcountry camping",
+      "cost": "$19.50–$34.00",
+      "amount": 19.5,
+      "currencyCode": "CAD",
+      "detail": "Per site per night, from Hoodoo Creek to Kicking Horse with showers; Monarch and Takakkaw Falls walk-in $22.00. Fire permit $17.00 a day; online reservation fee $11.50. As listed in November 2026."
+    },
+    {
+      "title": "Backcountry camping",
+      "cost": "$15.00",
+      "amount": 15,
+      "currencyCode": "CAD",
+      "detail": "Per person per night, plus $12.75 per permit to reserve. As listed in November 2026."
+    },
+    {
+      "title": "Burgess Shale guided hike",
+      "cost": "$131.00 Walcott Quarry / $101.75 Mount Stephen",
+      "amount": 131,
+      "currencyCode": "CAD",
+      "detail": "Adult prices; seniors and youth pay less. The Stanley Glacier hike in Kootenay is $88.25. As listed in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1858",
+      "text": "James Hector of the Palliser Expedition is kicked by his horse and names Kicking Horse Pass."
+    },
+    {
+      "year": "1886",
+      "text": "A reserve is created around Mount Stephen, one year after Banff, the beginning of Yoho National Park."
+    },
+    {
+      "year": "1901",
+      "text": "The Mount Stephen reserve is renamed Yoho."
+    },
+    {
+      "year": "1909",
+      "text": "Charles Walcott discovers the Burgess Shale fossils."
+    },
+    {
+      "year": "1909",
+      "text": "The Spiral Tunnels open, replacing the steep grade of the Big Hill."
+    },
+    {
+      "year": "1984",
+      "text": "Yoho, with the Burgess Shale, becomes part of the Canadian Rocky Mountain Parks World Heritage Site."
+    },
+    {
+      "year": "2026",
+      "text": "Lake O'Hara day-use bus seats are allotted by random draw; every lake and river stays closed to boats and angling against whirling disease until 31 March 2027."
+    }
+  ],
+  "safety": [
+    "Grizzly and black bears live throughout the park. Carry bear spray and know how to use it, stay alert without headphones, and keep all food and scented items in a hard-sided vehicle or food locker.",
+    "Snow can fall in any month, and high routes around Lake O'Hara and the Yoho Valley stay snowbound and may carry avalanche hazard into late June. Check trail conditions before setting out.",
+    "Mobile coverage is limited. In the backcountry carry a first-aid kit and a satellite messenger, and plan for at least a day longer than your trip.",
+    "At Takakkaw Falls and Wapta Falls stay on the path: climbing on the rocks is dangerous, and there is no maintained trail to the base of Wapta Falls."
+  ],
+  "regulations": [
+    "Never feed or leave food for wildlife; all food and garbage must be stored in bear-proof containers or packed out.",
+    "Recreational drones may not take off or land in the park, with fines up to $25,000.",
+    "All lakes and rivers are closed to watercraft and angling until 31 March 2027 to stop the spread of whirling disease.",
+    "Collecting plants, antlers, fossils, rocks or any natural or historic object is illegal; the Burgess Shale beds may be visited only with a Parks Canada guide.",
+    "Camp only in designated campgrounds with a permit; fires only in park fire boxes, and none anywhere in the backcountry. Keep pets on a leash; they are not allowed on the Lake O'Hara bus or in its campground."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-glaciers",
+    "theme-alpine",
+    "theme-fossils"
+  ],
+  "photos": [
+    {
+      "file": "File:Takakkaw Falls, west view 20240825 3.jpg",
+      "caption": "Takakkaw Falls at the head of the Yoho Valley",
+      "altText": "A tall white waterfall dropping from a cliff into a rocky, forested valley"
+    },
+    {
+      "file": "File:Emerald lake yoho nationalpark.JPG",
+      "caption": "Emerald Lake in summer",
+      "altText": "A green lake with forested shores below a flat-topped mountain"
+    },
+    {
+      "file": "File:Lake O Hara from Yukness Ledge Alpine Route.jpg",
+      "caption": "Lake O'Hara from the Yukness Ledge alpine route",
+      "altText": "A deep blue lake in a forested basin seen from high above, with snowy peaks behind"
+    },
+    {
+      "file": "File:Lower Spiral Tunnel Mouth, Yoho National Park, British Columbia, 2025-07-11.jpg",
+      "caption": "The mouth of the lower Spiral Tunnel",
+      "altText": "A stone railway tunnel portal in a steep, forested hillside"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yoho National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho"
+    },
+    {
+      "title": "Fees — Yoho National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/visit/tarifs-fees"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Park passes — Banff National Park, Parks Canada (daily pass coverage)",
+      "url": "https://parks.canada.ca/pn-np/ab/banff/visit/passer-passes"
+    },
+    {
+      "title": "Plan a trip to Lake O'Hara — Yoho National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/activ/randonnee-hike/ohara/visit"
+    },
+    {
+      "title": "Frontcountry camping — Yoho National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/activ/camping/avantpays-frontcountry"
+    },
+    {
+      "title": "Backcountry camping — Yoho National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/activ/arrierepays-backcountry"
+    },
+    {
+      "title": "Hikes and walks — Yoho National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/activ/randonnee-hike/jour-day"
+    },
+    {
+      "title": "Hours of operation and seasonal closures — Yoho National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/visit/heures-hours"
+    },
+    {
+      "title": "Getting here — Yoho National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/visit/directions"
+    },
+    {
+      "title": "Visitor guidelines — Yoho National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/visit/regs"
+    },
+    {
+      "title": "Guided hikes — Yoho National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/activ/guidee-conservation-guided"
+    },
+    {
+      "title": "Burgess Shale fossil hikes — Kootenay National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/kootenay/activ/burgess"
+    },
+    {
+      "title": "Nature and science — Yoho National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/nature"
+    },
+    {
+      "title": "Indigenous connections — Yoho National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/autochtone-indigenous"
+    },
+    {
+      "title": "Culture — Yoho National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/culture"
+    },
+    {
+      "title": "Kicking Horse Pass National Historic Site — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/culture/kickinghorse"
+    },
+    {
+      "title": "Canadian Rocky Mountain Parks — Parks Canada, World Heritage in Canada",
+      "url": "https://parks.canada.ca/culture/spm-whs/sites-canada/sec02h"
+    },
+    {
+      "title": "Canada National Parks Act, Schedule 1 — Justice Laws Website",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/n-14.01/"
+    },
+    {
+      "title": "Yoho National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yoho_National_Park"
+    },
+    {
+      "title": "Spiral Tunnels — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spiral_Tunnels"
+    },
+    {
+      "title": "Banff National Park — Wikipedia (Hector's 1858 crossing of Kicking Horse Pass)",
+      "url": "https://en.wikipedia.org/wiki/Banff_National_Park"
+    },
+    {
+      "title": "Canadian Geographical Names Database — Natural Resources Canada (coordinates)",
+      "url": "https://geogratis.gc.ca/services/geoname/en/geonames"
+    },
+    {
+      "title": "OpenStreetMap Nominatim (coordinates of falls, viewpoint, quarry and visitor centre)",
+      "url": "https://nominatim.openstreetmap.org/"
+    },
+    {
+      "title": "Spiral Tunnels — Kicking Horse Pass National Historic Site, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/culture/kickinghorse/visit/spirale-spiral"
+    },
+    {
+      "title": "Yoho National Park of Canada Management Plan, 2022 — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/gestion-mgmt/plandirecteur-mgmtplan/plan-2022"
+    },
+    {
+      "title": "Burgess Shale timeline — Royal Ontario Museum",
+      "url": "https://burgess-shale.rom.on.ca/history/historical-context/timeline/"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "placeID": "ca-np-thaidene-nene",
+  "contentVersion": 1,
+  "summary": "Thaıdene Nëné, \"the Land of the Ancestors\" in Dënesųłiné Yati, spreads from the cliffs and islands of Great Slave Lake's East Arm through forested canyons and out onto the barrens, where boreal forest gives way to tundra. There are no roads: visitors come by floatplane, boat or snowmobile, often through the Dene community of Łutsël K'é, to paddle, fish, hike unmarked country and watch for muskoxen and caribou.",
+  "facts": {
+    "establishedYear": 2019,
+    "areaHectares": 1407000,
+    "bestSeasons": [
+      "summer",
+      "winter"
+    ],
+    "suggestedTime": "A day by floatplane, or a week or more by canoe or boat"
+  },
+  "story": [
+    "The park reserve lies on the East Arm of Tu Nedhé, Great Slave Lake, the tenth-largest lake in the world at 28,568 square kilometres and the deepest in North America, plunging to 614 metres in Christie Bay near Łutsël K'é. About 700 kilometres of its shoreline fall inside the park, a country of sharp cliffs, rocky islands and deep bays. Inland the land rises through forested canyons and rushing rivers to the barrens, a dramatic transition from the boreal forest of the Taiga Shield to the southern Arctic tundra above the tree line.",
+    "That meeting of forest, fresh water and tundra makes room for a wide range of animals. Barren-ground caribou and muskoxen graze the open country; wolves, grizzly and black bears, moose, lynx and wolverines range through it; lake trout fill the deep, clear water. For the Łutsël K'é Dene, this is the heart of their homeland. Ɂedacho Tué, Artillery Lake, means the lake of the big caribou crossing, and around it lie many cultural sites. Kaché Kaɂá, Pike's Portage, is the old route to the tundra, travelled in autumn to meet the migrating caribou and now mostly in winter.",
+    "Łutsël K'é, \"place of small fish\", is the only settlement on the East Arm. Once known as Snowdrift, it grew up around a Hudson's Bay Company post opened in 1925 and a Roman Catholic church, and Denesǫłine families from ancestral villages across Thaıdene Nëné began to live there more permanently when a school opened in the 1960s. Today about 300 people live there. The Ni Hat'ni Dene, \"watchers of the land\", are the area's Indigenous guardians, protecting cultural sites, monitoring the environment and meeting visitors.",
+    "Canada first identified the area as a possible national park in the late 1960s, and in 1970 withdrew about 7,340 square kilometres of land, but the Łutsël K'é Dene First Nation did not then support a park and the idea stalled. In 2000 Chief Felix Lockhart reopened the talks to protect part of the First Nation's territory from development. A larger withdrawal followed in 2007, and after land and resources passed to the Northwest Territories in 2014 the parties agreed on a park reserve of about 14,000 square kilometres within a wider protected area. It was created in August 2019."
+  ],
+  "howItWorks": [
+    "Thaıdene Nëné National Park Reserve is the core of the Thaıdene Nëné Indigenous Protected Area, which also takes in a territorial protected area and a wildlife conservation area run by the Government of the Northwest Territories. Parks Canada shares management with the Łutsël K'é Dene First Nation, the Northwest Territory Métis Nation, Deninu Kųę First Nation and Yellowknives Dene First Nation, making decisions by consensus through two management boards. Some rules differ from other national parks: visitors may pick berries and healing plants for personal use, cut and collect wood for campfires and temporary shelters, travel by snowmobile, and carry firearms, but only for defence against wildlife and as a last resort. Visitors may not hunt; that is left to traditional harvesters and holders of certain licences.",
+    "Every visitor entering or travelling through the park reserve must register online first and accept the visitor code of conduct; registration is free, and a tour operator registers guided guests. Groups are asked to keep to 15 people. Parks Canada does not ask groups to de-register, so leave your route with an emergency contact who will call the 24-hour emergency line if you are more than 24 hours overdue. Fishing needs a Parks Canada fishing permit — a Northwest Territories licence is not valid here — but the permit fee was waived as Parks Canada listed it in November 2026. Indigenous people harvesting or practising their traditions are not visitors and do not register.",
+    "There are no roads, campgrounds or maintained trails. Visitors arrive by air charter on floats or skis, by boat or by snowmobile; licensed charters fly from Yellowknife, about 190 kilometres away, and from Hoarfrost River and Fort Smith, and Łutsël K'é has daily scheduled flights from Yellowknife and lies about 15 minutes by boat from the boundary. Every landing needs an aircraft access permit, held by commercial operators and free to private pilots. Grizzly and black bears live here: carry bear spray, and use bear-resistant food canisters on overnight trips between 1 April and 15 November. Stay at least 100 metres from muskoxen and all other wildlife. Old village sites may be visited only with Łutsël K'é Dene First Nation or Parks Canada staff or a licensed Indigenous guide, and some places are closed altogether."
+  ],
+  "sights": [
+    {
+      "name": "Kaché Kaɂá (Pike's Portage)",
+      "note": "The historic overland route from the East Arm to the barrens, unmarked and unmaintained, travelled by Indigenous Peoples for generations to meet the caribou.",
+      "location": [
+        62.7502,
+        -108.6676
+      ]
+    },
+    {
+      "name": "Ɂedacho Tué (Artillery Lake)",
+      "note": "\"The lake of the big caribou crossing\", where the tree line meets the barrenlands, with many cultural sites; some, such as Timber Bay's village site, are restricted or closed.",
+      "location": [
+        63.1503,
+        -107.8676
+      ]
+    },
+    {
+      "name": "Crystal Island",
+      "note": "An island in Artillery Lake, one of the stopovers offered on flightseeing tours to the edge of the barrens.",
+      "location": [
+        63.0669,
+        -107.9509
+      ]
+    },
+    {
+      "name": "Hak'ós Tué Tsën Tłazį (Charlton Bay)",
+      "note": "A bay of the East Arm of Great Slave Lake, one of the paddling destinations Parks Canada lists.",
+      "location": [
+        62.7002,
+        -109.1176
+      ]
+    },
+    {
+      "name": "Nıtłër Nu Naá Tłazį (Wildbread Bay)",
+      "note": "A bay on the East Arm, linked to McLeod Bay by the Lost Channel Portage, a traditional route; a paddling destination.",
+      "location": [
+        62.7627,
+        -110.1191
+      ]
+    },
+    {
+      "name": "Siltaza Lake",
+      "note": "Where most paddlers on Tędhul Dezé, the Snowdrift River, take out. Below Austin Lake the river has Class IV and V rapids and a waterfall, for expert paddlers only.",
+      "location": [
+        62.2169,
+        -109.6342
+      ]
+    },
+    {
+      "name": "Eileen Lake",
+      "note": "A lake on the park's southern boundary and one of the paddling destinations Parks Canada lists away from Great Slave Lake.",
+      "location": [
+        62.244,
+        -107.6404
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Łutsël K'é, the only community on the East Arm: daily scheduled flights from Yellowknife (45 minutes), then about 15 minutes by boat to the park boundary",
+      "By air charter on floats or skis from Yellowknife, Hoarfrost River or Fort Smith",
+      "By boat or kayak from Yellowknife or Fort Resolution, for experienced groups prepared to wait out wind and waves",
+      "By snowmobile in winter"
+    ],
+    "reservations": "No reservations are needed, but every visitor must register online before entering, and guided guests are registered by their operator. Weather on Great Slave Lake can delay flights and boats for days; plan for it. Contact the Łutsël K'é Thaıdene Nëné Department before visiting the community, and check Parks Canada's bulletins for closures before you go.",
+    "permits": [
+      "Online visitor registration (free)",
+      "Parks Canada fishing permit, for anyone 16 or older; NWT licences are not valid",
+      "Aircraft access permit for any landing or take-off (free seasonal permits for private aircraft)",
+      "Permits for food or fuel caches (including the Reliance fuel cache), commercial filming, research and building any structure"
+    ],
+    "camping": [
+      "No established campgrounds or sites; camp where you like and leave no trace",
+      "Wood may be cut and collected for campfires and temporary shelters",
+      "Bear-resistant food canisters recommended on overnight trips, 1 April to 15 November"
+    ],
+    "lodging": [
+      "None run by Parks Canada; a hotel in Łutsël K'é and the community-owned Frontier Lodge on the Stark River nearby, and guided trips with local outfitters"
+    ],
+    "seasonalClosures": [
+      "Desnéthcheé, the Rat Lodge and Beaver Lodge sites on Artillery Lake, an island in Timber Bay, the Lockhart River and an island at its mouth are closed to visitors until further notice",
+      "Village sites — Taché/Kaché at the mouth of the Lockhart, Timber Bay, Whitefish Lake and others — only with an authorised escort"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "Great Slave Lake makes the weather here, and it changes fast and varies from place to place. Near the lake and out on the barrens it is generally colder and harder to predict. Rain or snow can fall at any time of year and freezing temperatures are possible even in summer. Heavy fog, high waves and strong winds can stop planes and boats; waiting a day or two is normal and delays of a week or more are possible, so carry food for extra days. In winter the park is a place for skiing, ice fishing, dog sledding and snowmobiling, but frostbite and hypothermia are real risks.",
+  "directions": "There is no road. Fly to Yellowknife and on to Łutsël K'é, a 45-minute scheduled flight at least once a day, where local outfitters can take you by boat to the park; or charter a floatplane or ski plane from Yellowknife straight into the park. Experienced boaters can come across Great Slave Lake from Yellowknife or Fort Resolution, but must be prepared to wait for safe wind and waves. Use the 1:50,000 NTS maps for navigation and, on the lake, Canadian Hydrographic Service chart 6341 (Great Slave Lake East).",
+  "fees": [
+    {
+      "title": "Fishing permit",
+      "cost": "Fee waived",
+      "amount": 0,
+      "currencyCode": "CAD",
+      "detail": "A Parks Canada fishing permit is still required, from 16 years old. Parks Canada says the fee will later align with other parks, at CA$10.25 a day or CA$35.75 a season at 2025 rates. Visitor registration is also free. As listed by Parks Canada in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1925",
+      "text": "A Hudson's Bay Company trading post opens at Snowdrift, today Łutsël K'é."
+    },
+    {
+      "year": "1970",
+      "text": "About 7,340 square kilometres are withdrawn for a possible national park; Łutsël K'é Dene First Nation does not support it and the proposal is put on hold."
+    },
+    {
+      "year": "2000",
+      "text": "Chief Felix Lockhart of Łutsël K'é Dene First Nation asks Canada to reopen talks on a national park."
+    },
+    {
+      "year": "2007",
+      "text": "A further 26,350 square kilometres are withdrawn, making a study area of 33,690 square kilometres."
+    },
+    {
+      "year": "2019",
+      "text": "Thaıdene Nëné National Park Reserve is created in August, within the Thaıdene Nëné Indigenous Protected Area."
+    },
+    {
+      "year": "2026",
+      "text": "Superintendent's orders of June close several cultural sites and restrict entry to old village sites."
+    }
+  ],
+  "safety": [
+    "You must be self-reliant. Cell phones do not work in most of the park, and search and rescue may take a long time; carry a satellite phone, GPS and compass and know how to use them.",
+    "Great Slave Lake is big, cold water. Fog, waves and wind come up quickly; stay ashore when they do, and plan for days of delay.",
+    "Hypothermia most often strikes between −1 °C and 10 °C. Dress in layers that stay warm when wet, eat often and make camp before anyone is exhausted.",
+    "Grizzly and black bears live here. Carry bear spray where you can reach it. Muskoxen charge when threatened: keep 100 metres away, and if one charges, run for cover behind trees or boulders."
+  ],
+  "regulations": [
+    "Register before entering; Indigenous harvesters are exempt.",
+    "Recreational drones are prohibited; flying one can bring a fine of up to $25,000.",
+    "Keep at least 10 metres from known or marked burial sites, and do not disturb or collect cultural objects.",
+    "No sewage discharge into any water; boat toilets must use a holding tank or an approved treatment device.",
+    "Visitors may not hunt; firearms only for defence against wildlife. Barbless hooks only, with NWT catch limits — one lake trout a day."
+  ],
+  "themes": [
+    "theme-tundra",
+    "theme-indigenous-heritage",
+    "theme-sacred-places",
+    "theme-islands"
+  ],
+  "photos": [
+    {
+      "file": "File:Near Pike's Portage, Thaidene Nene National Park Reserve.jpg",
+      "caption": "A ridge above Great Slave Lake near Pike's Portage",
+      "altText": "A rocky ridge with scattered spruce looking out over a wide blue lake and forested shores"
+    },
+    {
+      "file": "File:Muskox in Thaidene Nene National Park Reserve.jpg",
+      "caption": "A muskox in the park reserve",
+      "altText": "A shaggy dark-brown muskox standing on low tundra vegetation"
+    },
+    {
+      "file": "File:Eileen Lake, NWT, Canada 1.jpg",
+      "caption": "Eileen Lake, on the southern boundary",
+      "altText": "A long lake among low rocky hills and sparse forest seen from the air"
+    },
+    {
+      "file": "File:Thaidene Nene National Park Reserve, NWT, Canada.jpg",
+      "caption": "Muskox tracks on an esker",
+      "altText": "A sandy ridge crossed by animal tracks, with lakes and low forest stretching away"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thaıdene Nëné National Park Reserve — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene"
+    },
+    {
+      "title": "Plan your visit — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/visit"
+    },
+    {
+      "title": "Visitor registration — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/visit/inscription-registration"
+    },
+    {
+      "title": "Rules and regulations — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/visit/directive-guideline/regles-rules"
+    },
+    {
+      "title": "Maps — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/visit/carte-map"
+    },
+    {
+      "title": "Thaıdene Nëné National Park Reserve boundary (KML) — Parks Canada",
+      "url": "https://pcweb2.azureedge.net/-/media/pn-np/nt/thaidene-nene/visit/Thaidene_Nene_NPR_Boundary_2019.kml"
+    },
+    {
+      "title": "Thaıdene Nëné brochure 2026 — Parks Canada",
+      "url": "https://pcweb2.azureedge.net/-/media/pn-np/nt/thaidene-nene/visit/depliants-brochures/Brochure-2026.pdf"
+    },
+    {
+      "title": "Contact us — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/visit/contact"
+    },
+    {
+      "title": "Stewardship and management — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/info"
+    },
+    {
+      "title": "Creating a park — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/info/histoire-history"
+    },
+    {
+      "title": "Permits and licences — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/info/permits"
+    },
+    {
+      "title": "Fishing permits — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/activ/peche-fishing/permis-permit-info"
+    },
+    {
+      "title": "Paddling (with Denesǫłine Yati place names) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/activ/pagayer-paddle/denesoline"
+    },
+    {
+      "title": "Hiking, boating and camping — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/activ/randonee-hiking"
+    },
+    {
+      "title": "Flightseeing and air charters — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/activ/vol-flight"
+    },
+    {
+      "title": "Cultural experiences and Łutsël K'é — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/activ/culturelle-cultural/lutsel-ke"
+    },
+    {
+      "title": "Safety and guidelines — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/security-safety"
+    },
+    {
+      "title": "Backcountry safety — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/security-safety/backcountry"
+    },
+    {
+      "title": "Bear safety — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/security-safety/ours-bears"
+    },
+    {
+      "title": "Muskox safety — Thaıdene Nëné National Park Reserve, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/security-safety/muskox"
+    },
+    {
+      "title": "Superintendent's Orders — Prohibited activities (June 2026) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/security-safety/bulletins/266FF6F3-2621-4669-AEE8-5FFECE6E2E0A"
+    },
+    {
+      "title": "Superintendent's Orders — Restricted entry (June 2026) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/security-safety/bulletins/3E3B57D4-8E87-4B87-8726-D2A3061C03FD"
+    },
+    {
+      "title": "Superintendent's Orders — Area closures (June 2026) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nt/thaidene-nene/security-safety/bulletins/6175B315-DF31-4339-877C-AECC3B749E1B"
+    },
+    {
+      "title": "Thaidene Nëné National Park Reserve — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thaidene_N%C3%ABn%C3%A9_National_Park_Reserve"
+    },
+    {
+      "title": "Canadian Geographical Names Database — Natural Resources Canada (coordinates)",
+      "url": "https://geonames.nrcan.gc.ca/"
+    }
+  ]
+}

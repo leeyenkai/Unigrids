@@ -1,0 +1,350 @@
+{
+  "placeID": "ca-np-terra-nova",
+  "contentVersion": 1,
+  "summary": "Canada's most easterly national park and the first in Newfoundland and Labrador: a ragged shore of sounds, coves and headlands on Bonavista Bay, backed by boreal forest, bogs and ponds. The Trans-Canada Highway runs straight through it. People come to camp by Newman Sound, paddle the sheltered arms, hike to old sawmill coves and hilltop lookouts, and watch the stars in a dark-sky preserve.",
+  "facts": {
+    "establishedYear": 1957,
+    "areaHectares": 40200,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to three days"
+  },
+  "story": [
+    "Terra Nova lies on the north-east coast of Newfoundland, where Bonavista Bay breaks into long arms and sounds. The land belongs to the Appalachian system but is low and rounded, a country of hills rising to about 200 metres. Ice shaped it: Pleistocene glaciers left the indented coastline, the bogs, the many ponds and the spreads of glacial till, and the sea has since cut arches and caves into the rocky headlands. Louil Hill is the only granite hill in the park. The cold Labrador Current offshore gives the place brief, cool summers and moderate winters.",
+    "Most of the park is forest, with black spruce the main tree and smaller stands of balsam fir, white birch, red maple and trembling aspen. Bogs and fens spread over the rolling west, while the coast to the east is rockier and barer. Of 21 kinds of land mammal found here, only twelve are native to the island, among them woodland caribou and the rare Newfoundland marten. Moose, snowshoe hare and red squirrel were all brought in, and the park runs a programme to bring down its unnaturally high moose numbers. About 169 bird species have been recorded, 63 of them breeding, and inner Newman Sound and Southwest Arm form a migratory bird sanctuary.",
+    "People have used this coast for about 5,000 years. Of 32 archaeological sites known in the park, fourteen were left by Indigenous peoples before European contact; the groups that used Bonavista Bay lived chiefly from the coast. The Beothuk are known from a site nearby in Bloody Bay Reach, though not yet from inside the park, and the Mi'kmaq later extended their range into Bonavista Bay. European fishermen worked these waters from the early 1500s, English settlement reached the bay from the 1670s, and by 1900 villages such as Glovertown, Traytown, Charlottetown and Terra Nova stood around the land that became the park. Twentieth-century sawmills left their traces at Park Harbour, Minchins Cove and Clode Sound.",
+    "Terra Nova was established in 1957, chosen as the first national park in Newfoundland and Labrador for its rugged coast, forests, lakes and rivers. It now protects about 402 square kilometres as a sample of the Eastern Newfoundland Atlantic region. In February 2018 the Royal Astronomical Society of Canada named it a Dark Sky Preserve, the first in the province, and the park has committed to cutting back its own lighting and asks campers to do the same."
+  ],
+  "howItWorks": [
+    "Terra Nova is run by Parks Canada. Daily admission is $7.25 for an adult, $6.25 for a senior and $15.00 for a family or group of up to seven arriving in one vehicle, and youth 17 and under enter free. The park also sells an annual pass, and it accepts the Parks Canada Discovery Pass, which covers admission to more than 80 Parks Canada places for 12 months and was listed in November 2026 at $83.50 for an adult, $71.50 for a senior and $167.50 for a family or group. Admission includes use of the boat launches. Under the Canada Strong Pass, admission to Parks Canada places was free from 19 June to 7 September 2026; regular fees resumed on 8 September.",
+    "Visitor services, including the campgrounds, run from the Victoria Day weekend in May to Thanksgiving in October. Campsites, oTENTiks and the backcountry sites are booked through the Parks Canada Reservation Service, online at reservation.pc.gc.ca or on 1-877-737-3783. For 2027, long-term sites at Newman Sound open for booking on 10 February 2027 and all other camping on 11 February 2027, both at 8:30 am Newfoundland time. Backcountry campers must pick up a permit at a campground kiosk even with a reservation, early enough to reach camp before dark, and return it after the trip so staff know they are out; late departures are refused, and staff may stop a trip in bad weather.",
+    "Fishing needs a national park fishing permit as well as admission, and salmon fishing on the Northwest River also needs provincial licences and tags. Brooks are fly-fishing only, some ponds are permanently closed, and lead sinkers and jigs are banned. All Parks Canada places are no-drone zones for recreation, and flying one without approval can bring a fine of up to $25,000. From October to January most of the park is a moose management area where licensed harvesters hunt under a superintendent's permit; campgrounds, Louil Hill, Mill Cove and the Coastal Trail are closed to hunting."
+  ],
+  "sights": [
+    {
+      "name": "Ochre Hill",
+      "note": "A former fire-watch hill near the middle of the park with a panoramic view; a nearby trail climbs to a look-off over Bread Cove and Clode Sound.",
+      "location": [
+        48.5092,
+        -53.9523
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Sandy Pond",
+      "note": "A day-use area with a swimming beach, picnic tables and an easy 3-kilometre loop through boreal forest. Rated the darkest sky in the park, and a start for paddling trips.",
+      "location": [
+        48.4907,
+        -54.0212
+      ]
+    },
+    {
+      "name": "Newman Sound",
+      "note": "The long, sheltered sound at the heart of the park, with the main campground, the Coastal Trail along its inner shore and a migratory bird sanctuary on its mud flats.",
+      "location": [
+        48.6024,
+        -53.7894
+      ]
+    },
+    {
+      "name": "Mount Stamford",
+      "note": "A summit lookout reached by a 1.2-kilometre side trail about 9 kilometres along the Outport Trail, the park's longest, which runs 35 kilometres return from Newman Sound.",
+      "location": [
+        48.5644,
+        -53.9051
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Minchins Cove",
+      "note": "The remains of a sawmilling settlement on the Outport Trail, reached on foot or by boat, with backcountry campsites and a dock.",
+      "location": [
+        48.5645,
+        -53.8774
+      ]
+    },
+    {
+      "name": "Malady Head",
+      "note": "A steep 3.4-kilometre trail from Malady Head Campground to a cliff-top view over Southwest Arm, the Eastport causeway and Alexander Bay.",
+      "location": [
+        48.6472,
+        -53.9215
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Louil Hill",
+      "note": "A 3.7-kilometre loop for walkers and cyclists through forest damaged by insects and browsing, with stairs up to a bare granite top above Alexander Bay.",
+      "location": [
+        48.6453,
+        -53.9609
+      ]
+    },
+    {
+      "name": "Dunphy's Pond",
+      "note": "The park's largest pond, off the Trans-Canada Highway, reached by a 10-kilometre return trail or by canoe; backcountry sites on its shore and island.",
+      "location": [
+        48.4702,
+        -54.1053
+      ]
+    },
+    {
+      "name": "Terra Nova Visitor Centre",
+      "note": "On the shore of Newman Sound: exhibits, a marine touch tank, programmes, boat tours and kayak trips with a local operator, and the start of the Coastal Trail. Open mid-May to mid-October.",
+      "location": [
+        48.5793,
+        -53.9477
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The Trans-Canada Highway (Route 1), which runs through the park 60 kilometres south-east of Gander",
+      "Route 310 from the Trans-Canada towards Eastport, for Malady Head and Louil Hill",
+      "The Visitor Centre at Saltons, on Newman Sound, and the nearby Newman Sound Campground",
+      "By sea: docks in inner Newman Sound and boat launches at Saltons Brook and at the mouth of Southwest Arm"
+    ],
+    "reservations": "Campsites, oTENTiks and backcountry sites are booked through the Parks Canada Reservation Service (reservation.pc.gc.ca, 1-877-737-3783). For 2027, long-term Newman Sound sites open for booking on 10 February and all other camping on 11 February, at 8:30 am NT. Check with Parks Canada before you go.",
+    "permits": [
+      "Backcountry camping permit, collected at a campground kiosk before setting out and returned afterwards",
+      "National park fishing permit; for Northwest River salmon also a free park salmon licence and provincial licence and tag",
+      "Film, photography and special-event permits, applied for at least six weeks ahead"
+    ],
+    "camping": [
+      "Newman Sound Campground: 267 sites and 20 oTENTiks, with showers",
+      "Malady Head Campground: 89 sites and 10 oTENTiks, with showers",
+      "29 backcountry sites at seven locations, from Southwest Arm, a kilometre's walk, to Minchins Cove and South Broad Cove on the Outport Trail; campfires only at those three",
+      "Keep a bare campsite: store all food and scented items in a hard-sided vehicle or food locker, never in a tent"
+    ],
+    "lodging": [
+      "oTENTiks at Newman Sound and Malady Head campgrounds"
+    ],
+    "seasonalClosures": [
+      "Campgrounds, the Visitor Centre and day-use areas run from mid-May to mid-October; check dates with Parks Canada before you go",
+      "Trout fishing is open from mid-May to mid-August, and ice fishing on Dunphy's Pond only in late winter if the ice is safe",
+      "From mid-October to the end of January, most of the park is shared with licensed moose harvesters"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "The Labrador Current keeps Terra Nova's climate maritime, with brief, cool summers and moderate winters. Coastal weather changes quickly, so even on a short walk carry wind- and water-resistant clothing. The season for most visitors runs from late May to early October, when the campgrounds and services are open; bring insect repellent. In winter the park is quiet: snowshoers and cross-country skiers use the trails, and in late winter Dunphy's Pond may open for ice fishing if the ice is safe.",
+  "directions": "Terra Nova is on the Trans-Canada Highway, which runs through the park: about 250 kilometres north-west of St. John's and 60 kilometres south-east of Gander. Gander International Airport is the nearest, about 60 kilometres away, and St. John's International about 250. DRL runs a daily bus service across the island. Ferries from North Sydney, Nova Scotia, reach Port aux Basques year-round and Argentia from mid-June to late September. Boaters can enter by sea, with docks in inner Newman Sound.",
+  "fees": [
+    {
+      "title": "Daily admission",
+      "cost": "$7.25",
+      "amount": 7.25,
+      "currencyCode": "CAD",
+      "detail": "Per adult; senior $6.25, family/group $15.00, youth 17 and under free. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Annual admission",
+      "cost": "$36.75",
+      "amount": 36.75,
+      "currencyCode": "CAD",
+      "detail": "Per adult; senior $30.50, family/group $72.50. A cheaper early-bird pass is sold until 30 June and also brings lower camping rates. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Newman Sound campsite, unserviced",
+      "cost": "$31.75",
+      "amount": 31.75,
+      "currencyCode": "CAD",
+      "detail": "Per night, with washrooms and showers. Fully serviced sites $47.25; oTENTiks $147.50. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Backcountry campsite",
+      "cost": "$19.50",
+      "amount": 19.5,
+      "currencyCode": "CAD",
+      "detail": "Per night at a primitive site with pit privies. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Fishing permit",
+      "cost": "$15.00",
+      "amount": 15,
+      "currencyCode": "CAD",
+      "detail": "Daily; annual permit $51.25. As listed by Parks Canada in November 2026; check before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 5,000 years ago",
+      "text": "People begin using the coast of Bonavista Bay; fourteen pre-contact Indigenous sites are known inside the park."
+    },
+    {
+      "year": "Early 1500s",
+      "text": "European fishermen begin working the waters of Newfoundland and Labrador."
+    },
+    {
+      "year": "1670s",
+      "text": "English settlement begins to extend into Bonavista Bay, starting with Salvage."
+    },
+    {
+      "year": "Late 1800s",
+      "text": "By the end of the century, Glovertown, Traytown, Eastport, Terra Nova and other villages stand around the future park."
+    },
+    {
+      "year": "1957",
+      "text": "Terra Nova National Park is established, the first national park in Newfoundland and Labrador."
+    },
+    {
+      "year": "2018",
+      "text": "The Royal Astronomical Society of Canada designates the park a Dark Sky Preserve in February, the first in the province."
+    }
+  ],
+  "safety": [
+    "Coastal weather is unpredictable. Check the forecast, carry wind- and water-resistant clothing, and tell someone your route and return time.",
+    "Black bears and moose live here. Keep at least 100 metres from bears and moose and 30 to 50 metres from other animals, travel in groups, make noise, and carry bear spray or a whistle.",
+    "Surface water may be unsafe to drink; carry enough water or treat it.",
+    "Cell coverage is limited in parts of the park. In an emergency dial 911 or Parks Canada dispatch on 1-877-852-3100.",
+    "From October to January, hunters may be in most of the park outside the campgrounds and closed trails."
+  ],
+  "regulations": [
+    "Keep a bare campsite: food, coolers, dishes and toiletries go in a hard-sided vehicle or food locker whenever not in use; staff remove items left out.",
+    "Do not feed, touch or approach wildlife, and keep dogs on a leash at all times.",
+    "Fires only in the fire pits provided; open fires are restricted or banned when fire danger is high.",
+    "Recreational drones are not allowed; flying one without approval can bring a fine of up to $25,000.",
+    "Leave rocks, fossils, artefacts, antlers, wildflowers and nests where you find them."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-wetland"
+  ],
+  "photos": [
+    {
+      "file": "File:NLC TerraNova1 tango7174.jpg",
+      "caption": "The park from Ochre Hill, looking north over Rocky Pond towards Newman Sound",
+      "altText": "A wide view over dense evergreen forest, ponds and a distant sound, with a lookout platform below"
+    },
+    {
+      "file": "File:Terra Nova National Park - Newfoundland 2019-08-21 (03).jpg",
+      "caption": "Calm water below forested hills in Terra Nova",
+      "altText": "A still bay reflecting a forested headland under a blue sky"
+    },
+    {
+      "file": "File:Terra Nova National Park - Newfoundland 2019-08-21 (04).jpg",
+      "caption": "The wooden bridge over Saltons Brook",
+      "altText": "A long wooden footbridge crossing a marshy brook towards forested hills"
+    },
+    {
+      "file": "File:Visitor's Centre, Terra Nova National Park.jpg",
+      "caption": "The Visitor Centre on Newman Sound",
+      "altText": "A red building with a white roof beside the water and a small dock"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Terra Nova National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova"
+    },
+    {
+      "title": "About — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/info"
+    },
+    {
+      "title": "Terra Nova National Park of Canada Management Plan, 2019 — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/info/gestion-management-2019"
+    },
+    {
+      "title": "Plan your visit — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/visit"
+    },
+    {
+      "title": "How to get here — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/visit/com-get"
+    },
+    {
+      "title": "Hours of operation — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/visit/heu-hou"
+    },
+    {
+      "title": "Fees — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/visit/tarifs-fees"
+    },
+    {
+      "title": "Camping — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/activ/camping"
+    },
+    {
+      "title": "Backcountry locations — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/activ/camping/bc"
+    },
+    {
+      "title": "Hiking — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/activ/ran-hik"
+    },
+    {
+      "title": "Outport trail — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/activ/ran-hik/outport"
+    },
+    {
+      "title": "Ochre Hill trail — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/activ/ran-hik/ochre"
+    },
+    {
+      "title": "Malady Head trail — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/activ/ran-hik/malady"
+    },
+    {
+      "title": "Louil Hill trail — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/activ/ran-hik/louil"
+    },
+    {
+      "title": "Sandy Pond trail — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/activ/ran-hik/sandy"
+    },
+    {
+      "title": "Dunphys Pond trail — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/activ/ran-hik/dunphys"
+    },
+    {
+      "title": "Visitor centre — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/activ/cen-cen"
+    },
+    {
+      "title": "Fishing — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/activ/fish"
+    },
+    {
+      "title": "Preserving the dark sky — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/nature/ciel-sky"
+    },
+    {
+      "title": "Information for harvesters — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/nature/forets-forests/harv"
+    },
+    {
+      "title": "Hiking safety — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/sec-saf/hike-safety"
+    },
+    {
+      "title": "Camping safety — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/sec-saf/camp-safety"
+    },
+    {
+      "title": "Permits — Terra Nova National Park (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/nl/terranova/info/perm"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Parks Canada reservations — 2027 reservation launch dates",
+      "url": "https://parks.canada.ca/voyage-travel/reserve"
+    },
+    {
+      "title": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

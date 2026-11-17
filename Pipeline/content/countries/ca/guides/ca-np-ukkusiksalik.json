@@ -1,0 +1,295 @@
+{
+  "placeID": "ca-np-ukkusiksalik",
+  "contentVersion": 1,
+  "summary": "Wager Bay, a tidal fjord reaching more than 150 kilometres inland from Hudson Bay, and the rolling tundra around it in Nunavut's Kivalliq region. Polar bears are far more common here than in most Arctic parks, and caribou, wolves and belugas share the bay and its shores. Hundreds of archaeological sites tell of Inuit life over thousands of years. Visitors come with a licensed outfitter, by boat from Naujaat or by charter flight.",
+  "facts": {
+    "establishedYear": 2003,
+    "areaHectares": 2088500,
+    "bestSeasons": [
+      "summer",
+      "spring"
+    ],
+    "suggestedTime": "A long day by boat from Naujaat, or several days at an outfitter's base camp"
+  },
+  "story": [
+    "Ukkusiksalik is an Inuktitut name meaning \"place where there is stone to carve pots and oil lamps\". Soapstone deposits here gave Inuit the stone for qulliqs, the lamps that heated and lit their homes, for ukkusiks, cooking pots, and for carvings traded far afield. The bedrock is granite and gneiss of the Canadian Shield, more than 2.5 billion years old. Seven thousand years ago the last of the Laurentide Ice Sheet still covered the land; it left polished, scratched rock and a flooded plain as it melted, and today low ridges, jigsaw lakes and broad rivers cross a tundra of dwarf birch, willow and mountain avens.",
+    "At the park's heart is Wager Bay, an inland sea more than 150 kilometres long, entered through a narrow bottleneck from Roes Welcome Sound. Its tides rise and fall by up to eight metres and the currents at its mouth have been recorded at up to eight knots. At its western end the bay meets Ford Lake at a set of reversing tidal falls. The sea ice stays until mid-July, and the shores hold mudflats and polynyas, patches of open water in the ice, that support the park's marine life.",
+    "People first came here with the Pre-Dorset culture, from about 2000 BC; the Dorset followed, and the Thule arrived in north-western Hudson Bay around AD 1200. The Inuit who lived here until recent times are the Aivilingmiut. About 449 cultural sites are known — tent rings, food caches, fox traps and a large site named after the rope game. In 1925 the Hudson's Bay Company built a trading post at the head of the bay, above the reversing falls; it was the first post run by an Inuk manager, and its buildings still stand. Many Inuit born before the settlements grew up on these shores, and families still camp and harvest here.",
+    "Polar bears are the park's defining animal, and Wager Bay's south shore is denning country. Barren-ground caribou move towards the shore in spring to escape the inland mosquitoes; wolves, muskoxen, grizzly bears, wolverines, Arctic foxes and hares range the tundra, and peregrine falcons, gyrfalcons and golden eagles hunt over it. Lands around the bay were reserved for a park in 1996, and the Inuit Impact and Benefit Agreement that created it was signed in 2003; the park was formally established under the Canada National Parks Act in 2014 and officially opened in July 2015."
+  ],
+  "howItWorks": [
+    "Ukkusiksalik is managed jointly by Inuit and Parks Canada under the Nunavut Agreement and the park's Inuit Impact and Benefit Agreement, advised by a Joint Park Management Committee. Inuit may harvest wildlife, quarry carving stone and travel through the park by motorised vehicle for traditional activities. There are no facilities or services, and the park office is in Naujaat, the nearest community. Because polar bears are so dense in Wager Bay, Parks Canada requires visitors to travel with a licensed guide experienced in polar bear country, and encounters are likely on any trip. Kayaking is discouraged, and camping is recommended only behind a working solar-powered electric fence with someone on watch.",
+    "Every visitor must attend a mandatory orientation, register, pay the fees and obtain a park entry permit before entering. Book the orientation with the Parks Canada office in Naujaat at least a week ahead; sessions run on weekdays during business hours, take 60 to 90 minutes and do not start after 3.30 pm. Within 24 hours of leaving the park you must de-register in person or by phone, or park staff will start an investigation. To cross Inuit-owned land you need the permission of the Kivalliq Inuit Association. Fees, as Parks Canada listed them in November 2026, are CA$17.75 per person for a day visit and CA$37 per person per night for overnight trips, or CA$259 for an annual northern backcountry pass; youth 17 and under are free.",
+    "Getting in depends on the ice. From March to mid-May trips by snowmobile or dog team are usually possible from Naujaat. During break-up, from June to mid-July, the park can be reached only by chartered aircraft, from Baker Lake or Rankin Inlet. From mid-July to late October licensed outfitters in Naujaat run boat trips of about seven hours to the park, and mid-July through August is the best time for hiking and camping. From November to March Parks Canada advises against visiting, because of bear hazard, weather and darkness. Aircraft may land only with a Parks Canada permit; the old airstrip at Sila Lodge and floatplane access on Ford Lake are the two areas identified for it."
+  ],
+  "sights": [
+    {
+      "name": "Wager Bay",
+      "note": "A tidal fjord more than 150 kilometres long, with eight-metre tides. Outfitters' boats offer the safest way to see polar bears, seals, belugas and, occasionally, walrus, orcas, bowheads and narwhals.",
+      "location": [
+        65.433,
+        -88.667
+      ]
+    },
+    {
+      "name": "Reversing Falls",
+      "note": "Reversing tidal falls at the head of Wager Bay, where the bay meets Ford Lake; one of the features Parks Canada points visitors to, with old habitation sites nearby.",
+      "location": [
+        65.883,
+        -90.467
+      ]
+    },
+    {
+      "name": "Ford Lake and the Hudson's Bay Company post",
+      "note": "The trading post opened in 1925, the first run by an Inuk manager. Its old buildings stand; visit only with an approved guide or Parks Canada staff.",
+      "location": [
+        65.9,
+        -90.55
+      ]
+    },
+    {
+      "name": "Douglas Harbour",
+      "note": "A harbour on Wager Bay with a Government of Nunavut wildlife research cabin, also used by Inuit harvesters; protected cultural sites lie on its north shore.",
+      "location": [
+        65.65,
+        -88.667
+      ]
+    },
+    {
+      "name": "Nuvukliit and the Savage Islands",
+      "note": "An island archipelago in Wager Bay, among them Main Savage Island, with a mission site and other protected cultural sites.",
+      "location": [
+        65.45,
+        -88.433
+      ]
+    },
+    {
+      "name": "Piksimanik River",
+      "note": "A river flowing into Wager Bay, followed by the North and South Piksimanik over-snow routes into the park; protected cultural sites lie along its lower reaches.",
+      "location": [
+        65.633,
+        -88.4
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Naujaat: boat trips of about seven hours with licensed outfitters, mid-July to October, and snowmobile trips in spring",
+      "Charter flights from Baker Lake or Rankin Inlet, landing at the Sila Lodge airstrip or on Ford Lake with a Parks Canada permit",
+      "Gateway communities with scheduled flights: Naujaat, Baker Lake, Rankin Inlet, Chesterfield Inlet and Coral Harbour"
+    ],
+    "reservations": "Book your mandatory orientation and registration with the Parks Canada office in Naujaat at least a week ahead, and arrange a licensed guide or outfitter, who is required in this park. Ice and weather change the access dates every year: ask the park office for this year's likeliest season and check the Canadian Ice Service before you go.",
+    "permits": [
+      "Mandatory orientation, registration and park entry permit; de-registration within 24 hours of leaving",
+      "Kivalliq Inuit Association permission to travel on Inuit-owned land",
+      "Restricted activity permits for landing an aircraft, caches or base camps, carrying a firearm through the park, research (issued only in winter or spring), filming and commercial photography, and business licences — some take 90 days or more"
+    ],
+    "camping": [
+      "No designated campsites: camp anywhere except archaeological sites, special preservation areas, rockfall areas and wildlife habitat",
+      "Camping recommended only with a solar-powered electric fence and a sentry; outfitters may set up a base camp",
+      "No fires: carry a stove and white gas, which can be bought in Naujaat but cannot go on scheduled flights except as dangerous goods"
+    ],
+    "lodging": [
+      "None in the park; hotels and bed and breakfasts in Naujaat, Rankin Inlet, Baker Lake, Chesterfield Inlet and Coral Harbour"
+    ],
+    "seasonalClosures": [
+      "Polar bear denning areas are closed from 1 March to 1 July",
+      "Caribou calving areas are closed from mid-May to 1 July",
+      "Seabird and eider colonies are closed while birds are on the nest",
+      "The large archaeological site named after the rope game is closed to visitors"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "Ukkusiksalik has a marine Arctic climate: little precipitation, low temperatures and high winds, which together bring some of the highest wind chills and most blowing snow in North America. July is the warmest month, averaging 16.7 °C by day and 6 °C at night; August is a little cooler, and June averages 9.2 °C by day and just above freezing at night. Hudson Bay keeps summers cool, onshore winds bring summer fog and autumn snowstorms, and snow can fall anywhere at any time. Winter is long and severe, with January averaging −28.7 °C by day and −35.8 °C at night.",
+  "directions": "Rankin Inlet is the air hub, with scheduled flights from Winnipeg (Calm Air) and from Ottawa, Edmonton and Montreal (Canadian North); both airlines fly on to Naujaat, Baker Lake, Chesterfield Inlet and Coral Harbour. From Naujaat, where the park office is, outfitters take visitors by boat or, in spring, by snowmobile; charter aircraft fly from Baker Lake or Rankin Inlet. Arctic weather can hold up any of these for days, so leave room in your plans. Bear spray and noisemakers cannot travel on scheduled flights; Parks Canada can lend a limited number of deterrents.",
+  "fees": [
+    {
+      "title": "Northern Park Backcountry daily excursion",
+      "cost": "CA$17.75 per person per day",
+      "amount": 17.75,
+      "currencyCode": "CAD",
+      "detail": "CA$4.75 per person per day for school groups. Youth 17 and under are free. As listed by Parks Canada in November 2026."
+    },
+    {
+      "title": "Northern Park Backcountry excursion/camping",
+      "cost": "CA$37.00 per person per night",
+      "amount": 37.0,
+      "currencyCode": "CAD",
+      "detail": "CA$259.00 for an annual pass, valid at Aulavik, Auyuittuq, Ivvavik, Nahanni, Quttinirpaaq, Sirmilik, Tuktut Nogait, Vuntut, Qausuittuq and Ukkusiksalik. As listed by Parks Canada in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 2000 BC",
+      "text": "Nomadic groups of the Pre-Dorset culture become the first people in the Wager Bay area; the Dorset culture follows from about 800 BC."
+    },
+    {
+      "year": "c. 1200",
+      "text": "People of the Thule culture arrive in north-western Hudson Bay."
+    },
+    {
+      "year": "1925",
+      "text": "The Hudson's Bay Company opens a trading post at the head of Wager Bay, the first run by an Inuk manager."
+    },
+    {
+      "year": "1978",
+      "text": "A park at Wager Bay is first proposed, in the \"6 North of 60\" consultations."
+    },
+    {
+      "year": "1996",
+      "text": "Lands around Wager Bay are reserved for a national park."
+    },
+    {
+      "year": "2003",
+      "text": "The Inuit Impact and Benefit Agreement for the park is signed, and the park begins operating."
+    },
+    {
+      "year": "2014",
+      "text": "Ukkusiksalik is formally established under the Canada National Parks Act."
+    },
+    {
+      "year": "2015",
+      "text": "The park is officially opened in July, as Repulse Bay formally adopts its Inuktitut name, Naujaat."
+    },
+    {
+      "year": "2018",
+      "text": "The park's first management plan is completed."
+    }
+  ],
+  "safety": [
+    "Polar bears are abundant and encounters are likely on any trip. Travel only with a licensed guide experienced in polar bear country, report every sighting, and never camp without an electric fence and a sentry.",
+    "Currents at the mouth of Wager Bay reach up to eight knots and the tides are huge; tidal flats and currents decide when boats can land. Follow your outfitter's advice on wind, rough water and dangerous points.",
+    "Rivers are cold and change their channels; cross with poles and footwear for cold water, unbuckle your pack, and be ready to turn back.",
+    "Hypothermia and frostbite are real risks even in summer. Carry warm, windproof clothing and food for delays. Non-residents pay the full cost of any medical evacuation, so buy travel insurance."
+  ],
+  "regulations": [
+    "Fires are not permitted; fishing is prohibited for anyone but Inuit.",
+    "Possessing a firearm requires a permit, except for Inuit beneficiaries engaged in traditional activities.",
+    "Recreational drones are not allowed; landing any aircraft needs a permit.",
+    "Do not collect plants, antlers, fossils, driftwood or rocks, disturb tent rings, fox traps or caches, or build cairns.",
+    "Pack out all garbage, including toilet paper; keep pets and sled dogs under physical control."
+  ],
+  "themes": [
+    "theme-arctic",
+    "theme-tundra",
+    "theme-fjords",
+    "theme-coastal",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Wager Bay Nunavut.jpg",
+      "caption": "The north shore of Wager Bay, looking east",
+      "altText": "A wide grey bay with a rocky tundra shoreline and low hills on the far shore"
+    },
+    {
+      "file": "File:Sila River July 2014.jpg",
+      "caption": "The Sila River running south towards Wager Bay",
+      "altText": "A river flowing through rocky tundra valley towards open water in the distance"
+    },
+    {
+      "file": "File:HBC Ford Lake 1996-08-01.jpg",
+      "caption": "The abandoned Hudson's Bay Company post at Ford Lake",
+      "altText": "Weathered wooden buildings on bare tundra beside a lake"
+    },
+    {
+      "file": "File:Sila River waterfalls July 2014.jpg",
+      "caption": "Waterfalls on the Sila River",
+      "altText": "Water spilling over two rocky ledges between low tundra banks"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ukkusiksalik National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik"
+    },
+    {
+      "title": "Plan your visit — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/visit"
+    },
+    {
+      "title": "How to get here — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/visit/directions"
+    },
+    {
+      "title": "Hours of operation — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/visit/heures-hours"
+    },
+    {
+      "title": "Fees — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/visit/tarifs-fees"
+    },
+    {
+      "title": "Visitor guidelines — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/securite-safety/comportements-guidelines"
+    },
+    {
+      "title": "Polar bear safety — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/securite-safety/ours-bears"
+    },
+    {
+      "title": "Weather, hypothermia and frostbite — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/securite-safety/meteo-weather"
+    },
+    {
+      "title": "Travel — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/securite-safety/voyage-travel"
+    },
+    {
+      "title": "River crossings — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/securite-safety/rivieres-rivers"
+    },
+    {
+      "title": "Backcountry camping — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/activ/camping/arriere-pays-backcountry"
+    },
+    {
+      "title": "Nearby accommodations — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/activ/camping/loger-stay"
+    },
+    {
+      "title": "Boating, hiking and wildlife tours — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/activ/randonnees-hiking"
+    },
+    {
+      "title": "Cultural sites — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/activ/culture"
+    },
+    {
+      "title": "Cultural experiences — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/activ/inuit"
+    },
+    {
+      "title": "Geology — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/nature/environnement-environment/geologie-geology"
+    },
+    {
+      "title": "Ecosystems — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/nature/environnement-environment/habitats"
+    },
+    {
+      "title": "Mammals — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/nature/faune-wildlife/mammifieres-mammals"
+    },
+    {
+      "title": "Stewardship and management — Ukkusiksalik National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/info"
+    },
+    {
+      "title": "Ukkusiksalik National Park of Canada Management Plan, 2018 — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/ukkusiksalik/info/plan/gestion-management-2018"
+    },
+    {
+      "title": "Ukkusiksalik National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ukkusiksalik_National_Park"
+    },
+    {
+      "title": "Wager Bay — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wager_Bay"
+    },
+    {
+      "title": "Canadian Geographical Names Database — Natural Resources Canada (coordinates)",
+      "url": "https://geonames.nrcan.gc.ca/"
+    }
+  ]
+}

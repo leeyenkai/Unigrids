@@ -1,0 +1,363 @@
+{
+  "placeID": "ca-np-point-pelee",
+  "contentVersion": 1,
+  "summary": "A ten-kilometre spit of sand, marsh and southern forest pointing into Lake Erie, ending at the southernmost tip of mainland Canada. One of the country's smallest national parks, it is one of its richest in life: more than 390 bird species have been recorded, and each May birders come for the spring migration. Walk the Marsh Boardwalk, take the shuttle to the Tip, or paddle the cattail channels.",
+  "facts": {
+    "establishedYear": 1918,
+    "areaHectares": 1490,
+    "bestSeasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "One full day"
+  },
+  "story": [
+    "Point Pelee is a sand spit and marsh complex about ten kilometres long, reaching south into Lake Erie. Of the park's roughly 1,490 hectares, about 1,070 are freshwater marsh, a remnant of a once larger marsh but still one of the largest left in southern Ontario; the park has been a Ramsar wetland of international importance since 1987. Along the spit the habitats grade into one another: open beach, then Lake Erie sand spit savannah with red cedar and prickly pear cactus, then woodland, swamp forest in the troughs between old beach ridges, and finally dry forest hung with wild grape and poison ivy vines.",
+    "The park lies in Canada's Carolinian zone, the northern end of the deciduous forest that stretches up from the Carolinas. It reaches into Canada here because this corner of Ontario runs south to the 42nd parallel and because the surrounding lakes soften both summer heat and winter cold. The zone covers less than a quarter of one per cent of Canada but holds more rare species than any other region of the country. In the park grow hackberry, black walnut, sassafras, tuliptree and chinquapin oak, and more than 60 species at risk find habitat here, among them the red-headed woodpecker; southern flying squirrels have been reintroduced.",
+    "Birds are what made the park. Point Pelee sits where two major migratory flyways cross the north shore of Lake Erie, and its narrow point funnels migrants into a small area, a 'migrant trap'. More than 390 species have been recorded in the Point Pelee birding area, and the peak of spring migration comes in May, when the Festival of Birds is held. In autumn the songbirds return south, with dragonflies and monarch butterflies drifting through. In 1918 Point Pelee became the first national park in Canada established for conservation.",
+    "People have used the point for at least 6,000 years. It is within the traditional territory of the Caldwell First Nation and the Walpole Island First Nation, who work with the park on marsh restoration, deer management and ceremonies, and Parks Canada acknowledges the Three Fires Confederacy of the Ojibwa, Odawa and Potawatomi. Later came homesteaders, farmers, fishers and cottagers, whose story is told at the DeLaurier Homestead. Today the park's greatest challenge is erosion: storms, high lake levels and human changes to the shoreline are wearing away both sides of the spit, and the Tip itself keeps moving."
+  ],
+  "howItWorks": [
+    "Point Pelee is open all year, and admission is charged at the front gate. In 2026 a day costs $10.00 for an adult, $8.75 for a senior and $19.50 for a family or group of up to seven in one vehicle from April to October, and less in winter; anyone 17 or under has been admitted free at every Parks Canada place since 2018. Parks Canada adjusts its fees every two years with the Consumer Price Index, most recently on 1 January 2026. An annual pass for Point Pelee alone is sold at the gate, and a Parks Canada Discovery Pass — $83.50 for an adult, $71.50 for a senior or $167.50 for a family or group in 2026 — covers twelve months' admission at more than 80 Parks Canada places, this one included. Boaters landing on the beaches must also buy a day pass at the gate.",
+    "The only overnight stays are the 24 oTENTiks at Camp Henry, heated A-frame tent cabins open all year and booked through the Parks Canada Reservation Service, online or at 1-877-RESERVE (1-877-737-3783); park entry is paid on top. Bookings for April 2026 to March 2027 opened on 2 February 2026. Camping anywhere else, including sleeping in a vehicle, is not allowed, and there is no backcountry. Picnic shelters such as White Pine and the Northwest Beach pavilion can be rented. From November to March the park runs off-peak, with fewer services, and some roads close after the first snow.",
+    "The Canada National Parks Act applies: do not entice, touch, harass or feed animals, and chasing them with a camera counts as harassment. Parks Canada's general advice is to keep 30 metres from large animals such as deer and 100 metres from predators such as coyotes. Pets must be leashed or confined, drones may not be flown, e-bikes are not allowed on trails, and only non-motorised boats may use the marsh, where fishing is banned to protect the marsh and its species at risk. Swimming or wading at the Tip, which includes every beach south of the Tip exhibit area, is prohibited and carries fines of up to $10,000. Middle Island, the southernmost land in Canada, is part of the park but closed to visitors from 1 March to 1 September each year."
+  ],
+  "sights": [
+    {
+      "name": "The Tip",
+      "note": "The southernmost point of mainland Canada: a shifting sand spit reached by a 1-kilometre loop from the shuttle stop. Swimming and wading here are banned because of strong currents.",
+      "location": [
+        41.912,
+        -82.509
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Tip Tower",
+      "note": "An observation tower at the Tip exhibit area, reopened in 2025 after its guard rails were restored, looking over the forest, the beaches and Lake Erie.",
+      "location": [
+        41.914,
+        -82.51
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Marsh Boardwalk",
+      "note": "A 1-kilometre floating loop through cattails, ponds and lily pads, with an observation tower and telescopes. Turtles, muskrats, frogs and dragonflies; canoes and kayaks for hire nearby.",
+      "location": [
+        41.969,
+        -82.529
+      ]
+    },
+    {
+      "name": "DeLaurier Homestead and Trail",
+      "note": "A 1.2-kilometre loop past the DeLaurier homestead, telling 10,000 years of human history on the point, from the First Peoples to homesteaders, farmers, fishers and cottagers.",
+      "location": [
+        41.948,
+        -82.52
+      ]
+    },
+    {
+      "name": "Tilden Woods Trail",
+      "note": "A 1-kilometre loop on boardwalks through mature swamp forest and savannah, with spring wildflowers such as spring beauty and mayapple.",
+      "location": [
+        41.936,
+        -82.513
+      ]
+    },
+    {
+      "name": "Woodland Nature Trail",
+      "note": "A 2.75-kilometre loop through the park's oldest forest, with a side path to the redbud trees that flower near the end of May.",
+      "location": [
+        41.93,
+        -82.51
+      ]
+    },
+    {
+      "name": "Northwest Beach",
+      "note": "A beach on the west shore with a pavilion that can be rented for the day. Closed from 1 November to 31 March.",
+      "location": [
+        41.967,
+        -82.534
+      ]
+    },
+    {
+      "name": "Middle Island",
+      "note": "An 18.5-hectare island in Lake Erie, the southernmost land in Canada, added to the park in 2000. Strictly protected; no landings from 1 March to 1 September and no tours.",
+      "location": [
+        41.683,
+        -82.683
+      ]
+    },
+    {
+      "name": "Point Pelee Visitor Centre",
+      "note": "Exhibits, a theatre, the Nature Nook bookstore and park staff; the free shuttle to the Tip leaves from here. Seasonal: closed from 2 November 2026 to 31 March 2027.",
+      "location": [
+        41.932,
+        -82.513
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The front gate on Point Pelee Drive, south of Leamington — the only road entrance",
+      "By boat from Lake Erie to the beaches, with a day pass bought at the gate"
+    ],
+    "reservations": "Camp Henry oTENTiks are booked through the Parks Canada Reservation Service, online or on 1-877-RESERVE (1-877-737-3783); a two-night minimum applies on weekends. Picnic shelters are booked through the park on 519-322-5700. Park hours change through the year and the park can close at short notice — it was closed from 12 to 23 November 2026. Check before you go with Point Pelee National Park.",
+    "permits": [
+      "Day or annual admission, bought at the front gate",
+      "A park permit for unusual or commercial activities, and a business licence for guided services"
+    ],
+    "camping": [
+      "Camp Henry oTENTik village: 24 walk-in A-frame tent cabins sleeping up to six, heated and open all year, with comfort stations nearby; two sites take pets",
+      "Group camping at some locations during the Festival of Birds, by arrangement with the park"
+    ],
+    "lodging": [
+      "Accommodation in Leamington and the surrounding area"
+    ],
+    "seasonalClosures": [
+      "Off-peak operations from 1 November to 31 March: limited services, and roads to some areas, including picnic areas and the DeLaurier Homestead, close after the first snowfall",
+      "The Visitor Centre and the Tip shuttle are closed from 2 November 2026 to 31 March 2027; when the shuttle runs, the road to the Tip is closed to cars",
+      "Northwest Beach is closed from 1 November to 31 March",
+      "The Anders and Chinquapin Oak cycling loops close during spring birding season, mid-April through May",
+      "Middle Island is closed to visitors from 1 March to 1 September"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": "Point Pelee has the mildest climate in mainland Canada. It lies south of the line where the average daily temperature for the year is 8°C, and Lake Erie, slow to warm and slow to cool, takes the edge off both summer heat and winter cold. Spring migration peaks in May. Summer is the season for swimming at the beaches north of the Tip. Autumn brings the southward songbird migration and monarch butterflies, and the forest colours. Winter can bring snow and ice to the trails, which are not maintained then, and storms on the lake drive waves against both shores.",
+  "directions": "The park is at 1118 Point Pelee Drive, south of Leamington: 65 kilometres from Windsor, 180 kilometres from London and 355 kilometres from Toronto. From the east, leave Highway 401 at exit 48 and follow Highway 77 south, then County Roads 33 and 20 and Bevel Line, which becomes Point Pelee Drive. From Windsor, follow Highway 3 east, which becomes County Road 33. There is no public transit to the park; the nearest train and bus stations are in Windsor and Chatham, and boats can use Leamington Marina. Inside the park, a 9-kilometre road and the 6-kilometre Centennial Hike and Bike Trail run south to the Visitor Centre.",
+  "fees": [
+    {
+      "title": "Daily admission, April to October",
+      "cost": "$10.00 adult / $8.75 senior / $19.50 family or group",
+      "amount": 10.0,
+      "currencyCode": "CAD",
+      "detail": "From November to March: $7.75 adult, $6.75 senior, $15.00 family or group. Youth 17 and under free. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Point Pelee annual pass",
+      "cost": "$48.25 adult / $42.50 senior / $96.75 family or group",
+      "amount": 48.25,
+      "currencyCode": "CAD",
+      "detail": "Admission to Point Pelee only, sold at the front gate. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50 adult / $71.50 senior / $167.50 family or group",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "Twelve months' admission at more than 80 Parks Canada places. 2026 prices; check before you go."
+    },
+    {
+      "title": "oTENTik, Camp Henry",
+      "cost": "$147.50",
+      "amount": 147.5,
+      "currencyCode": "CAD",
+      "detail": "Per night, including parking for one vehicle; park entry not included. Online reservation fee $11.50, by phone $13.50. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Guided freighter canoe excursion",
+      "cost": "$15.00",
+      "amount": 15.0,
+      "currencyCode": "CAD",
+      "detail": "Per person, maximum ten people; migration hike $32.50 per person. As listed by Parks Canada in November 2026; check before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 6,000 years ago",
+      "text": "The earliest evidence of people living on the point."
+    },
+    {
+      "year": "1918",
+      "text": "Point Pelee becomes the first national park in Canada established for conservation."
+    },
+    {
+      "year": "1987",
+      "text": "The park is designated a Ramsar wetland of international importance on 27 May."
+    },
+    {
+      "year": "1999",
+      "text": "The Nature Conservancy of Canada, with Parks Canada and others, buys Middle Island at auction in July."
+    },
+    {
+      "year": "2000",
+      "text": "Middle Island becomes part of the park, managed as a special preservation zone."
+    },
+    {
+      "year": "2006",
+      "text": "The Windsor Centre of the Royal Astronomical Society of Canada designates the park a Dark Sky Preserve."
+    },
+    {
+      "year": "2018",
+      "text": "The park marks its centenary; a State of the Park Assessment identifies shoreline erosion as its most serious challenge."
+    },
+    {
+      "year": "2025",
+      "text": "The Tip Tower reopens in February after its guard rails are restored."
+    }
+  ],
+  "safety": [
+    "Never swim or wade at the Tip: strong currents make the water there very dangerous, and it is a fineable offence. Swim only at the other beaches, which have no lifeguards.",
+    "Black-legged ticks, which can carry Lyme disease, live in the park's woods and grasses. Stay on trails, cover up, use repellent and check yourself and your pets afterwards.",
+    "Poison ivy grows along trail edges as a bush, a low plant and a climbing vine. Learn its three-leaf clusters and keep to the path.",
+    "Trails are not maintained in winter and can be icy; services are limited from November to March. In an emergency call 911."
+  ],
+  "regulations": [
+    "Do not entice, touch, harass or feed wildlife, and keep food and garbage away from animals.",
+    "Pets must be on a leash or confined, and may not be left in vehicles.",
+    "Drones, fireworks and metal detectors are prohibited, and e-bikes are not allowed on trails.",
+    "Fires only in the metal fire pits at Camp Henry or the Northwest Beach pavilion, with park firewood; alcohol only at registered campsites.",
+    "Only non-motorised boats in the marsh; no fishing in the marsh; boats must keep 100 metres from the Tip."
+  ],
+  "themes": [
+    "theme-wetland",
+    "theme-coastal",
+    "theme-deciduous-forest",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Point Pelee from the tip.jpg",
+      "caption": "The sand spit at the Tip, the southernmost point of mainland Canada",
+      "altText": "A narrow beach of sand and pebbles running between two shores of a lake towards a clump of trees"
+    },
+    {
+      "file": "File:Marches in Point Pelee.jpg",
+      "caption": "Lily pads and cattails in the Point Pelee marsh",
+      "altText": "A channel of still water edged with broad floating leaves and tall green reeds"
+    },
+    {
+      "file": "File:View from Observation Tower, Tip, Point Pelee National Park, Leamington, Ontario, 2026-10-24 01.jpg",
+      "caption": "Autumn forest and the lakeshore from the Tip Tower",
+      "altText": "A canopy of green and yellow trees stretching to a pale beach and blue lake under a cloudy sky"
+    },
+    {
+      "file": "File:Pt Pelee Marsh Boardwalk.jpg",
+      "caption": "The Marsh Boardwalk winding through the cattails",
+      "altText": "A wide panorama of brown reed marsh with a boardwalk and channels of open water"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Point Pelee National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/on/pelee"
+    },
+    {
+      "title": "Parc national de la Pointe-Pelée — Parcs Canada",
+      "url": "https://parcs.canada.ca/pn-np/on/pelee"
+    },
+    {
+      "title": "Plan your visit — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/visit"
+    },
+    {
+      "title": "Fees — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/visit/tarifs-fees"
+    },
+    {
+      "title": "Hours of operation — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/visit/heures-hours"
+    },
+    {
+      "title": "Visiting in winter — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/visit/hiver-winter"
+    },
+    {
+      "title": "Camping and overnight accommodation — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/otentik"
+    },
+    {
+      "title": "Trails — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/randonnee-hiking"
+    },
+    {
+      "title": "Bird watching — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/oiseaux-birds"
+    },
+    {
+      "title": "Shuttle to the Tip — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/navette-shuttle"
+    },
+    {
+      "title": "Dark Sky Nights — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/activ/sky-ciel"
+    },
+    {
+      "title": "Park regulations — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/securite-safety/reglementation-guidelines"
+    },
+    {
+      "title": "Hazards — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/securite-safety/dangers-hazards"
+    },
+    {
+      "title": "Tip Tower updates — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/securite-safety/tour-tower"
+    },
+    {
+      "title": "Stewardship and management — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/info"
+    },
+    {
+      "title": "Point Pelee National Park draft management plan — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/info/plan/gestion-management"
+    },
+    {
+      "title": "Middle Island Conservation Plan — Parks Canada",
+      "url": "https://pcweb2.azureedge.net/-/media/pn-np/on/pelee/pdfs/middle-island-plan-conservation-eng.pdf"
+    },
+    {
+      "title": "Nature and science — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/nature"
+    },
+    {
+      "title": "Climate — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/nature/enviro/climat-climate"
+    },
+    {
+      "title": "Ecosystems and habitats — Point Pelee National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pelee/nature/enviro/habitats"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Travel trade admission fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/voyagistes-traveltrade/visit/fee"
+    },
+    {
+      "title": "Top tips to respect wildlife and stay safe — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/conseils-tips/faune-wildlife"
+    },
+    {
+      "title": "Point Pelee National Park features (Tip Trail, Marsh Boardwalk, DeLaurier Homestead, Visitor Centre) — OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/175345618"
+    },
+    {
+      "title": "Canadian Geographical Names Database — Natural Resources Canada (Middle Island)",
+      "url": "https://geogratis.gc.ca/services/geoname/en/geonames?q=Middle%20Island"
+    },
+    {
+      "title": "Point Pelee National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Point_Pelee_National_Park"
+    },
+    {
+      "title": "Middle Island (Lake Erie) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Middle_Island_(Lake_Erie)"
+    },
+    {
+      "title": "Point Pelee — Ramsar Sites Information Service",
+      "url": "https://rsis.ramsar.org/ris/368"
+    }
+  ]
+}

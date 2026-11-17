@@ -1,0 +1,405 @@
+{
+  "placeID": "ca-np-quttinirpaaq",
+  "contentVersion": 1,
+  "summary": "Canada's northernmost national park covers 37,775 square kilometres at the top of Ellesmere Island: ice caps and glaciers, dark peaks, polar desert and the warm oasis of Lake Hazen. Barbeau Peak, the highest mountain in Nunavut, is here, and so is the 4,000-year-old Muskox Way. A chartered Twin Otter from Resolute Bay lands visitors at Tanquary Fiord, the start of hikes such as the nine- to ten-day loop around the Ad Astra and Viking ice caps.",
+  "facts": {
+    "establishedYear": 1988,
+    "areaHectares": 3777500,
+    "bestSeasons": [
+      "spring",
+      "summer"
+    ],
+    "suggestedTime": "One to two weeks"
+  },
+  "story": [
+    "Quttinirpaaq is Inuktitut for \"at the top\", and the park lies at the top of the world: northern Ellesmere Island, less than 800 kilometres from the North Pole. It is Canada's second-largest national park and represents the Eastern High Arctic. Ice caps enclose its mountains, glaciers fill its valleys and spill into deep fiords on the north coast, and multi-year ice shelves there support unique, ice-dependent communities of life. Barbeau Peak, the highest mountain in Nunavut and the Canadian Arctic, rises among them. Most of the rest is polar desert, cold and dry, with sparse tundra.",
+    "The exception is the Lake Hazen basin. Lake Hazen, Tasialuk to many Inuit, is one of the largest and deepest lakes north of the Arctic Circle, and with mountains to the north and a plateau to the south its basin holds a microclimate warmer than the desert around it. Parks Canada calls it a polar oasis: meadows of grasses and marshes of flowers, and more wildlife than anywhere else in the park. Muskoxen, small herds of Peary caribou, Arctic wolves and Arctic hares live here, largely unused to people, and Parks Canada protects rarer species such as Porsild's bryum moss.",
+    "People have crossed this land for more than 4,000 years. Independence I people migrated from the sub-Arctic to Greenland along the Muskox Way, a corridor between mountain and glacier past Lake Hazen, and the park holds some of the oldest and densest concentrations of early Arctic archaeological sites. Thule Inuit, direct ancestors of today's Inuit, arrived about 1,000 years ago and lived here year-round, and Greenlandic Inughuit hunted and fished around Lake Hazen until quite recently. Explorers followed: George Nares's British Arctic Expedition in 1875–1876, Adolphus Greely's American base at Fort Conger for the first International Polar Year, and Robert Peary, whose camps there date from as late as 1909.",
+    "Science never left. The Canadian Defence Research Board set up three camps here between the 1950s and the 1970s, and the park remains a reference point for studying climate change, which is already eroding the coast at Fort Conger. Ellesmere Island National Park Reserve was established in 1988. After the Nunavut Agreement and the 1999 Inuit Impact and Benefit Agreement, it became a national park in 2001, named Quttinirpaaq by the people of Grise Fiord and Resolute, and it has been managed since with Inuit through a joint committee. In 2004 Canada placed it on its tentative list for World Heritage status."
+  ],
+  "howItWorks": [
+    "Entry into and travel within Quttinirpaaq has been designated a hazardous activity since March 2022, so every visitor must register and attend a mandatory orientation before setting out and de-register afterwards; the order does not apply to Inuit exercising harvesting rights. In the operating season, roughly May to August, the session of one to two hours is held at an operations station in the park, usually Tanquary Fiord, during office hours, and your charter company should tell park staff your arrival time. Before May it is held at the Parks Canada office in Iqaluit. Book at least 48 hours ahead, and de-register within 24 hours of finishing your trip at Tanquary Fiord or by phone. North Pole expeditions leaving from Ward Hunt Island, McClintock Inlet or Cape Columbia must contact the park and may need to register in person in Iqaluit.",
+    "There is no scheduled access. Canadian North flies to Resolute Bay from Iqaluit, and from there Kenn Borek Air charters a Twin Otter, which carries eight or nine people and up to 1,200 kilograms; Parks Canada puts a return flight to Tanquary Fiord at about CA$70,000, depending on fuel, with more for other landing sites. Licensed tour operators can arrange the trip, and icebreaking cruise ships occasionally stop. Polar bear encounters are infrequent, but bears may be met anywhere and at any time, including on glaciers, along the coast and around Lake Hazen and Tanquary Fiord. Only licensed guides or bear guards with a permit may carry firearms, apart from Inuit beneficiaries; Parks Canada keeps deterrents for visitors to use, since bear spray and bangers cannot travel on aircraft.",
+    "Quttinirpaaq charges the Northern Park Backcountry fees used across the northern parks. As Parks Canada listed them in November 2026: CA$17.75 per person for a day trip with no overnight, CA$37.00 per person per night, or CA$259.00 for an annual pass valid in eleven northern parks; the Weatherhaven tent-cabin at Tanquary Fiord costs CA$37.25 a night single or CA$31.00 double. Admission is free for youth 17 and under. Sport fishing is closed throughout the park, pets and sled dogs are not allowed (Inuit excepted), and Fort Conger may be visited only with Parks Canada staff."
+  ],
+  "sights": [
+    {
+      "name": "Tanquary Fiord",
+      "note": "The park's main operations station and visitor hub, with an airstrip, visitor centre, kitchen tent, Weatherhaven accommodation and a small museum of 1960s research finds.",
+      "location": [
+        81.4094,
+        -76.8817
+      ]
+    },
+    {
+      "name": "Gull Glacier",
+      "note": "A glacier visible from the Tanquary Fiord camp, one of many that fill the views on hikes from the station.",
+      "location": [
+        81.41,
+        -77.4167
+      ]
+    },
+    {
+      "name": "Kettle Lake",
+      "note": "An area of ancient cultural sites near Tanquary Fiord, with a Parks Canada walking-tour guide.",
+      "location": [
+        81.4,
+        -76.7167
+      ]
+    },
+    {
+      "name": "Ad Astra Ice Cap",
+      "note": "With the Viking Ice Cap, the centre of the park's best-known hike, a nine- to ten-day loop from Tanquary Fiord.",
+      "location": [
+        81.6,
+        -76.25
+      ]
+    },
+    {
+      "name": "Lake Hazen (Tasialuk)",
+      "note": "One of the largest and deepest lakes north of the Arctic Circle, in a warmer polar oasis rich in plants, wildlife and archaeological sites. A staffed Parks Canada camp stands on its shore.",
+      "location": [
+        81.7972,
+        -71.0167
+      ]
+    },
+    {
+      "name": "Henrietta Nesmith Glacier",
+      "note": "One of the glaciers that feed Lake Hazen, above the Henrietta River delta on the lake's north-western shore.",
+      "location": [
+        81.7983,
+        -72.8767
+      ]
+    },
+    {
+      "name": "Barbeau Peak",
+      "note": "The highest mountain in Nunavut and the Canadian Arctic. A goal for strong, self-sufficient ski-touring parties in spring.",
+      "location": [
+        81.9083,
+        -75.025
+      ]
+    },
+    {
+      "name": "Fort Conger",
+      "note": "Remains of the base camps of Nares, Greely and Peary on Lady Franklin Bay, 1875–1909. A special preservation area: visits only with Parks Canada staff.",
+      "location": [
+        81.75,
+        -64.75
+      ]
+    },
+    {
+      "name": "Ward Hunt Island",
+      "note": "A small island off the north coast, with a Parks Canada camp, emergency radio and airstrip; a base for research and a departure point for North Pole expeditions.",
+      "location": [
+        83.1,
+        -74.1667
+      ]
+    },
+    {
+      "name": "Cape Columbia",
+      "note": "Northern tip of Ellesmere Island and the most northerly land in Canada, used as a starting point for attempts on the North Pole.",
+      "location": [
+        83.1114,
+        -69.9536
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Tanquary Fiord, by chartered Twin Otter from Resolute Bay — the main operations station and visitor hub",
+      "Lake Hazen and Ward Hunt Island, both with Parks Canada camps and airstrips, by charter at extra cost",
+      "By icebreaking cruise ship, on occasional short visits"
+    ],
+    "reservations": "Charter flights must be arranged well in advance, because charter companies are busy all summer; the Weatherhaven accommodation at Tanquary Fiord must be reserved with the park. Book your mandatory orientation at least 48 hours ahead — at Tanquary Fiord in the operating season, or in Iqaluit before May. The Tanquary Fiord and Lake Hazen camps are staffed only during the summer field season, so check dates with Parks Canada before you go.",
+    "permits": [
+      "Mandatory registration and orientation before entering, and de-registration within 24 hours of finishing",
+      "Restricted activity permits for landing an aircraft, caches and base camps, drones, commercial filming, research and operating a business",
+      "Visits to Fort Conger only in the company of Parks Canada staff",
+      "Permission from the Qikiqtani Inuit Association to travel on Inuit-owned land"
+    ],
+    "camping": [
+      "No designated campsites: camp anywhere except archaeological sites, special preservation areas, rockfall areas and wildlife habitat such as sedge meadows",
+      "No fires; carry a white-gas stove, and buy fuel in Resolute Bay or Grise Fiord, since used stoves and fuel are restricted on airlines",
+      "Kitchen tent, outhouses, solar shower and picnic tables at Tanquary Fiord"
+    ],
+    "lodging": [
+      "Weatherhaven semi-private accommodation at Tanquary Fiord: one insulated tent-cabin with four double bedrooms, no cooking inside, reservations required",
+      "Hotels in Resolute Bay, and the Grise Fiord Lodge in Grise Fiord"
+    ],
+    "seasonalClosures": [
+      "Parts of the park, including river crossings and glacier toes on hiking routes, may close for flooding from mid-July to 1 August",
+      "Fort Conger is restricted all year: entry only with Parks Canada staff",
+      "Sport fishing is closed throughout the park all year"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "Quttinirpaaq is a polar desert, cold and dry with little precipitation. Winters are among the coldest in Canada, and the sun is down around the clock from November to February; from May to August it never sets. Summers are short, cool on the coast and surprisingly warm in the Lake Hazen basin, but snow can fall at any time and whiteouts can happen in any month. Winds are generally light except on the ice caps. Parks Canada gives late May to mid-August as the best time to visit; April and May bring relatively stable weather for ski touring. In warm spells the glacier-fed rivers rise through the day and are usually lowest between 2 and 7 am.",
+  "directions": "Resolute Bay, on Cornwallis Island, is the launching point. Canadian North flies to Iqaluit from Ottawa, Montreal and Yellowknife, and on from Iqaluit to Resolute Bay. From Resolute Bay, Kenn Borek Air charters Twin Otters to the park, usually to the airstrip at Tanquary Fiord; transport can also be arranged through a licensed tour operator. Resolute and Grise Fiord, Canada's most northerly community, are too far away for local outfitters to bring visitors to the park. Weather can hold flights for days, so build spare days into your plans.",
+  "fees": [
+    {
+      "title": "Northern Park Backcountry daily excursion",
+      "cost": "CA$17.75 per person",
+      "amount": 17.75,
+      "currencyCode": "CAD",
+      "detail": "A day visit with no overnight stay. As listed by Parks Canada in November 2026; youth 17 and under are free."
+    },
+    {
+      "title": "Northern Park Backcountry excursion/camping",
+      "cost": "CA$37.00 per person per night",
+      "amount": 37.0,
+      "currencyCode": "CAD",
+      "detail": "Or CA$259.00 for an annual pass, valid at Aulavik, Auyuittuq, Ivvavik, Nahanni, Nááts'įhch'oh, Quttinirpaaq, Sirmilik, Tuktut Nogait, Vuntut, Qausuittuq and Ukkusiksalik. As listed by Parks Canada in November 2026."
+    },
+    {
+      "title": "Weatherhaven accommodation, Tanquary Fiord",
+      "cost": "CA$37.25 per night (single occupancy)",
+      "amount": 37.25,
+      "currencyCode": "CAD",
+      "detail": "CA$31.00 per night for double occupancy; booked for the length of your stay but charged by the night. As listed by Parks Canada in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "More than 4,000 years ago",
+      "text": "Independence I people cross northern Ellesmere to Greenland along the Muskox Way."
+    },
+    {
+      "year": "About 1,000 years ago",
+      "text": "Thule Inuit, ancestors of today's Inuit, arrive and live in the area year-round."
+    },
+    {
+      "year": "1875–1876",
+      "text": "George Nares's British Arctic Expedition explores northern Ellesmere Island."
+    },
+    {
+      "year": "1881",
+      "text": "Adolphus Greely sets up an American base at Fort Conger for the first International Polar Year."
+    },
+    {
+      "year": "1950s–1970s",
+      "text": "The Canadian Defence Research Board runs three research camps in what is now the park."
+    },
+    {
+      "year": "1957–1958",
+      "text": "The first International Geophysical Year makes the area a hub for science."
+    },
+    {
+      "year": "1988",
+      "text": "Ellesmere Island National Park Reserve is established."
+    },
+    {
+      "year": "1999",
+      "text": "The Inuit Impact and Benefit Agreement for Auyuittuq, Quttinirpaaq and Sirmilik is signed."
+    },
+    {
+      "year": "2001",
+      "text": "The park is named Quttinirpaaq by the people of Grise Fiord and Resolute and becomes a national park under the Canada National Parks Act."
+    },
+    {
+      "year": "2004",
+      "text": "Canada adds Quttinirpaaq to its tentative list for World Heritage nomination."
+    },
+    {
+      "year": "2022",
+      "text": "Travel in the park is designated hazardous, registration is made mandatory and sport fishing is closed."
+    },
+    {
+      "year": "2024",
+      "text": "A new management plan for the park is published, replacing the previous plan."
+    }
+  ],
+  "safety": [
+    "River crossings are the most significant hazard in summer. Rivers are glacier-fed and rise through the day; cross in the early morning, be ready to wait for hours or days, and turn back if a crossing is beyond anyone in the group.",
+    "Rescue is very limited and can take a week or more; high-angle rescues need help from outside Nunavut. Carry an Iridium satellite phone or InReach — SPOT devices do not work at this latitude. Emergency line: 1-780-852-3100.",
+    "Polar bears are rarely met but can turn up anywhere, even on glaciers. Camp inland with a clear view, cook at least 50 metres from your tents, store food sealed and within sight, and keep watch around the clock.",
+    "Wildlife here has little fear of people. Muskoxen can charge, and foxes and wolves may carry rabies; keep your distance.",
+    "The park lies where compasses are unreliable, and whiteouts can happen at any time. Navigate by GPS with spare batteries and 1:50,000 maps."
+  ],
+  "regulations": [
+    "Registration and orientation before entering and de-registration after leaving are mandatory for all visitors.",
+    "No fires, no recreational drones, no pets or sled dogs, and no sport fishing; Inuit harvesting rights are not affected.",
+    "Fort Conger, including its landing site, may be entered only with Parks Canada staff.",
+    "Do not disturb wildlife or collect plants, rocks, fossils, antlers or artefacts; leave tent rings, caches and fox traps untouched and build no cairns.",
+    "Pack out all garbage and toilet paper; leave human waste at least 100 metres from water and travel routes."
+  ],
+  "themes": [
+    "theme-arctic",
+    "theme-glaciers",
+    "theme-mountains",
+    "theme-tundra",
+    "theme-desert",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Tanquary Fiord 12 1997-08-05.jpg",
+      "caption": "Tanquary Fiord, looking towards the Conger Range and the Ad Astra Ice Cap",
+      "altText": "A long fiord between bare slopes, with mountains and an ice cap beyond"
+    },
+    {
+      "file": "File:Henrietta Nesmith Glacier 1997-08-05.jpg",
+      "caption": "The Henrietta River delta below Henrietta Nesmith Glacier on Lake Hazen",
+      "altText": "A glacier above a river delta on the shore of a large lake"
+    },
+    {
+      "file": "File:AirForceGlacier.jpg",
+      "caption": "Hiking beside the Air Force Glacier",
+      "altText": "A hiker walking beside a glacier"
+    },
+    {
+      "file": "File:Ward Hunt Island north.jpg",
+      "caption": "The north coast of Ward Hunt Island, with a grounded ice island offshore",
+      "altText": "A barren coast facing sea ice, with a large grounded iceberg"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Quttinirpaaq National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq"
+    },
+    {
+      "title": "Plan your visit — Quttinirpaaq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/visit"
+    },
+    {
+      "title": "How to get here — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/visit/directions"
+    },
+    {
+      "title": "Fees — Quttinirpaaq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/visit/tarifs-fees"
+    },
+    {
+      "title": "Facilities and services — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/visit/services"
+    },
+    {
+      "title": "Hours of operation — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/visit/heures-hours"
+    },
+    {
+      "title": "Weather — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/visit/meteo-weather"
+    },
+    {
+      "title": "Local guides and outfitters — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/visit/guides"
+    },
+    {
+      "title": "Visitor guidelines — Quttinirpaaq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/securite-safety/comportements-guidelines"
+    },
+    {
+      "title": "Important bulletins (registration, fishing closure, Fort Conger) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/securite-safety/bulletins"
+    },
+    {
+      "title": "Polar bear safety — Quttinirpaaq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/securite-safety/ours-bears"
+    },
+    {
+      "title": "Choosing a safe campsite — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/securite-safety/ours-bears/camping"
+    },
+    {
+      "title": "Deterrents and warning systems — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/securite-safety/ours-bears/dispositifs-deterrents"
+    },
+    {
+      "title": "River crossings — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/securite-safety/marine"
+    },
+    {
+      "title": "Weather, hypothermia and frostbite — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/securite-safety/meteo-weather"
+    },
+    {
+      "title": "Communications — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/securite-safety/communications"
+    },
+    {
+      "title": "Emergencies and rescue capability — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/securite-safety/urgence-emergency"
+    },
+    {
+      "title": "Wildlife safety — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/securite-safety/faune-wildlife"
+    },
+    {
+      "title": "Travel (dangerous goods) — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/securite-safety/voyage-travel"
+    },
+    {
+      "title": "Hiking — Quttinirpaaq National Park, Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/activ/randonnees-hiking"
+    },
+    {
+      "title": "Skiing — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/activ/ski"
+    },
+    {
+      "title": "Glacier travel — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/activ/escalade-climb"
+    },
+    {
+      "title": "Travelling to the North Pole — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/activ/nord-pole-north"
+    },
+    {
+      "title": "Camping and overnight accommodations — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/activ/loger-stay"
+    },
+    {
+      "title": "Nature and science — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/nature"
+    },
+    {
+      "title": "Science and conservation — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/nature/conservation"
+    },
+    {
+      "title": "Quttinirpaaq National Park Management Plan 2023 — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nu/quttinirpaaq/info/plan/gestion-management-2023"
+    },
+    {
+      "title": "Parc national Quttinirpaaq — Parcs Canada",
+      "url": "https://parcs.canada.ca/pn-np/nu/quttinirpaaq"
+    },
+    {
+      "title": "Canada National Parks Act, Schedule 1, Part 13 — Justice Laws",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/N-14.01/FullText.html"
+    },
+    {
+      "title": "Canadian Geographical Names Database — Natural Resources Canada (coordinates)",
+      "url": "https://geonames.nrcan.gc.ca/"
+    },
+    {
+      "title": "Quttinirpaaq National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quttinirpaaq_National_Park"
+    },
+    {
+      "title": "Lake Hazen — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lake_Hazen"
+    },
+    {
+      "title": "Fort Conger — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fort_Conger"
+    },
+    {
+      "title": "Ward Hunt Island — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ward_Hunt_Island"
+    },
+    {
+      "title": "Barbeau Peak — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Barbeau_Peak"
+    },
+    {
+      "title": "Tanquary Fiord Airport — Wikipedia (coordinates)",
+      "url": "https://en.wikipedia.org/wiki/Tanquary_Fiord_Airport"
+    },
+    {
+      "title": "Quttinirpaaq National Park boundary — OpenStreetMap",
+      "url": "https://www.openstreetmap.org/relation/6263263"
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "placeID": "ca-np-pukaskwa",
+  "contentVersion": 1,
+  "summary": "Ontario's only wilderness national park: 1,878 square kilometres of granite shore and boreal forest on the north coast of Lake Superior, reached by a single highway that ends at Hattie Cove. Walk to a sandy horseshoe beach or a suspension bridge over a waterfall, or set out on the 60-kilometre Coastal Hiking Trail, which Parks Canada calls the wildest hike on the wildest shore of the Great Lakes.",
+  "facts": {
+    "establishedYear": 1978,
+    "areaHectares": 187800,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two days; a week for the Coastal Hiking Trail"
+  },
+  "story": [
+    "Pukaskwa is a piece of the Canadian Shield, ancient igneous and metamorphic rock that glaciers ground into rounded domes between 10,000 and 20,000 years ago. Along Lake Superior the result is a coast of pink-and-slate granite cliffs broken by small sand and cobble beaches; inland it is a rocky, domed upland of lakes, wetlands and rivers, the largest of them the White and the Pukaskwa, all draining to the lake. Tip Top Mountain, which Parks Canada gives as 646 metres, is one of the highest points in Ontario. Waterfalls along the coast have kept many non-native fish out of the inland lakes, which still hold native brook trout, pike and walleye.",
+    "The park represents the Central Boreal Uplands, a natural region stretching from northern Saskatchewan to western Quebec, and it is the only national park that does. Lying at the southern edge of the boreal forest, it mixes northern and southern trees: white birch, trembling aspen, black and white spruce, jack pine and white pine. Arctic-alpine plants cling to the bare rock of the shore, the endangered Pitcher's thistle grows on the coastal dunes, and mountain huckleberry grows nowhere else in Ontario. Moose, black bears, grey wolves, lynx, beavers and otters live here. Fire has shaped this forest for more than 9,000 years, and since 1998 the park has set prescribed burns to bring it back.",
+    "People have lived on this shore for thousands of years, from hunter-gatherers of the Palaeo and Archaic periods to the makers of distinctive Woodland pottery. On the cobble beaches are the Pukaskwa Pits, Maandawaab-kinganan, hollows built into the stones, some perhaps thousands of years old; no one knows for sure what they were for, and at the request of local First Nations their locations are not published. The park lies in the traditional territory of Biigtigong Nishnaabeg and Netmizaaggamig Nishnaabeg, within the Robinson-Superior Treaty area of 1850, and Anishinaabe people still camp, fish, harvest and hold ceremonies here. Even the name is uncertain: one account traces it to a word for cooking the marrow of bones.",
+    "From the 1700s fur traders, loggers, miners and ships worked the coast. From 1917 until the Great Depression the Pukaskwa Depot at Imogene Cove, a village of 23 buildings and up to 400 people, mostly from Quebec, sent about 30,000 cords of wood a year to the pulp mill at Sault Ste. Marie; only ruins remain. In 1978 Canada and Ontario signed the agreement creating the park and Ontario transferred the land, and Pukaskwa opened to the public in 1983. It has been kept as a wilderness, with visitor services at Hattie Cove and little more than trails and campsites beyond."
+  ],
+  "howItWorks": [
+    "Pukaskwa is a three-season park: facilities open from 15 May to mid-October and close from November. Campers and backcountry visitors register at the park kiosk at Hattie Cove, or by self-registration when it is closed. In 2026 daily admission costs $7.25 for an adult, $6.25 for a senior and $15.00 for a family or group of up to seven in one vehicle, with lower off-season rates, and youth 17 and under get in free at every Parks Canada place. Parks Canada adjusts its fees every two years with inflation, most recently on 1 January 2026. A Parks Canada Discovery Pass, $83.50 for an adult, $71.50 for a senior or $167.50 for a family or group, covers admission at more than 80 Parks Canada places for 12 months, and a seasonal pass for Pukaskwa alone is sold too. Under the Canada Strong Pass admission was free from 19 June to 7 September 2026.",
+    "The 67 sites at Hattie Cove Campground are first come, first stay; only the five oTENTiks and the backcountry campsites are reserved, through the Parks Canada Reservation Service at reservation.pc.gc.ca or 1-877-737-3783. The backcountry, the 60-kilometre Coastal Hiking Trail, the Mdaabii Miikna loop and the 135-kilometre Coastal Paddling Route, is open from 15 May to mid-October. After booking, every party must take a mandatory safety orientation from park staff, online or in person, before setting out, then check in and pay admission at the kiosk on arrival and register out at the end. Boat shuttles down the coast are run by licensed private businesses and are often cancelled by waves, especially in September and October.",
+    "Wildlife rules are national: feeding any animal, directly or by leaving food or garbage out, is illegal under the Canada National Parks Act, and the campground runs a BARE campsite programme in which nothing that attracts wildlife is ever left unattended. Parks Canada asks you to stay at least 30 metres from moose and 100 metres from bears and wolves. Firearms are prohibited; Parks Canada advises carrying a legal deterrent such as bear spray. Dogs must be leashed, drones need a permit, firewood must come from within 80 kilometres of the park, and anglers need an Ontario fishing licence and follow Ontario's rules. Zone 1 preservation areas, including those near Middle Beach, Otter Island, Oiseau Bay and every petroform site, are closed to visitors. Parks Canada notes that these rules do not diminish Indigenous or treaty rights."
+  ],
+  "sights": [
+    {
+      "name": "Hattie Cove (Bii to bii gong)",
+      "note": "A sheltered inlet, 'water between two rocks' in Anishinaabemowin, that stays calm on Superior's roughest days. The campground, visitor centre and canoe rentals are here.",
+      "location": [
+        48.5909,
+        -86.2809
+      ]
+    },
+    {
+      "name": "Horseshoe Bay",
+      "note": "A crescent of golden sand and driftwood between granite headlands, reached by the accessible 1.2-kilometre Boardwalk Beach Trail past the dunes.",
+      "location": [
+        48.5895,
+        -86.2977
+      ]
+    },
+    {
+      "name": "Southern Headland Trail",
+      "note": "A rugged 2.2-kilometre return walk onto bare rock jutting into Lake Superior, with views of Hattie Cove, Pulpwood Harbour and Horseshoe Bay and tiny arctic-alpine plants.",
+      "location": [
+        48.5894,
+        -86.2965
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Manito Miikana",
+      "note": "'The Spirit Trail': a 2-kilometre climb through a rocky ravine to two viewing decks over Lake Superior and the Pic River dunes.",
+      "location": [
+        48.5886,
+        -86.3071
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Halfway Lake",
+      "note": "An inland lake circled by Bimose Kinoomagewnan, the 'Walk of Teachings', where elders' stories and youth artwork tell the Seven Grandfather Teachings.",
+      "location": [
+        48.5949,
+        -86.2949
+      ]
+    },
+    {
+      "name": "Pulpwood Harbour",
+      "note": "A harbour of islands and inlets just outside Hattie Cove, a paddle for calm days only.",
+      "location": [
+        48.5859,
+        -86.2853
+      ]
+    },
+    {
+      "name": "White River Suspension Bridge",
+      "note": "A bridge 23 metres above Chigamiwinigum Falls on the Coastal Hiking Trail: an 18-kilometre, full-day return hike from Hattie Cove.",
+      "location": [
+        48.5595,
+        -86.2334
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Oiseau Bay",
+      "note": "A bay on the Coastal Hiking Trail, with campsites and a colony of the endangered Pitcher's thistle.",
+      "location": [
+        48.393,
+        -86.182
+      ]
+    },
+    {
+      "name": "Hattie Cove Visitor Centre",
+      "note": "The hub for park programmes, the park store and backcountry information; open daily in summer.",
+      "location": [
+        48.5903,
+        -86.2906
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Hattie Cove, at the end of Highway 627 — the only road access, with the kiosk, campground, visitor centre and day-use areas",
+      "The Lake Superior coast by private boat shuttle, for backcountry hikers and paddlers starting or finishing down the shore",
+      "North Swallow River, the far end of the Coastal Hiking Trail, reached on foot or by boat shuttle"
+    ],
+    "reservations": "oTENTiks and all backcountry campsites on the Coastal Hiking Trail, Mdaabii Miikna and the Coastal Paddling Route are reserved through the Parks Canada Reservation Service; reservation opening dates are posted on the park's website. Hattie Cove campsites are not reservable. Boat shuttles are booked directly with the operators. Check before you go.",
+    "permits": [
+      "Backcountry camping permit, with a mandatory safety orientation before you start and registration in and out",
+      "Ontario fishing licence for any fishing in the park",
+      "Permit to fly a drone or to moor overnight in Hattie Cove"
+    ],
+    "camping": [
+      "Hattie Cove Campground — 67 vehicle sites, some with electricity, with flush toilets and showers",
+      "Five oTENTiks at Hattie Cove, reservable",
+      "Backcountry sites along the Coastal Hiking Trail, Mdaabii Miikna and the Coastal Paddling Route, with pit privies and food lockers at many"
+    ],
+    "lodging": [
+      "oTENTiks at Hattie Cove, with beds, electricity and a wood stove",
+      "Marathon, the nearest full-service town, and Biigtigong Nishnaabeg, the nearest community"
+    ],
+    "seasonalClosures": [
+      "Facilities close from November to mid-May; season dates depend on the weather",
+      "The backcountry trails and paddling route are open from 15 May to mid-October",
+      "The Hattie Cove Visitor Centre opens from 15 June to 15 September"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "Summer days on the Superior shore are cool: Parks Canada gives average highs of about 14°C in May, 20°C in July and August and 9°C in October, with lows from 1°C to 10°C, and snow can fall in June and September. Rain is spread through the season, heaviest in September. The weather is remarkably changeable, with sunny skies clouding over and storms arriving fast, and fog can sit on the coast for days. The lake itself averages only 4°C all year. Paddlers should expect to be windbound on about one day in five in early summer and far more often from August. Blackflies peak in late May and June, mosquitoes from mid-June into July.",
+  "directions": "Pukaskwa lies on the north shore of Lake Superior near Marathon, about three and a half hours' drive from Thunder Bay and five from Sault Ste. Marie. Follow the Trans-Canada Highway (Highway 17) to Highway 627, just east of Marathon, and take it south to its end; the park office is the first left after the Pic River bridge, and Hattie Cove is 2 kilometres further. Thunder Bay and Sault Ste. Marie have the nearest airports. Kasper Transportation runs buses from Thunder Bay to Marathon, with taxis on to the park. Boaters arriving at Hattie Cove should watch carefully: the sheltered entrance is easy to miss.",
+  "fees": [
+    {
+      "title": "Daily admission",
+      "cost": "$7.25 adult / $6.25 senior / $15.00 family or group",
+      "amount": 7.25,
+      "currencyCode": "CAD",
+      "detail": "Youth 17 and under free. Off-season $4.00 adult. Seasonal pass $36.75 adult, $27.25 if bought by 15 June. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50 adult / $71.50 senior / $167.50 family or group",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "Admission to more than 80 Parks Canada places for 12 months. 2026 price."
+    },
+    {
+      "title": "Hattie Cove campsite",
+      "cost": "$31.75",
+      "amount": 31.75,
+      "currencyCode": "CAD",
+      "detail": "Per site per night in peak season, unserviced; with electricity $36.75; shoulder season $19.50 and $24.50. oTENTik $147.50. As listed by Parks Canada in November 2026."
+    },
+    {
+      "title": "Backcountry camping",
+      "cost": "$15.00",
+      "amount": 15.0,
+      "currencyCode": "CAD",
+      "detail": "Per person per night on the Coastal Hiking Trail and paddling routes, plus daily admission paid on arrival and a reservation fee of $11.50 online. As listed by Parks Canada in November 2026."
+    },
+    {
+      "title": "Canoe or kayak rental",
+      "cost": "$21.00 canoe / $16.00 kayak",
+      "amount": 21.0,
+      "currencyCode": "CAD",
+      "detail": "For two hours, at Hattie Cove. As listed by Parks Canada in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "7500 BCE – 200 CE",
+      "text": "Hunter-gatherers of the Palaeo and Archaic periods live along the shore."
+    },
+    {
+      "year": "200 – 1750 CE",
+      "text": "The Woodland periods, from which most of the park's archaeological finds date; some Pukaskwa Pits may have been made then."
+    },
+    {
+      "year": "1850",
+      "text": "The Robinson-Superior Treaty assures First Nations their harvesting rights."
+    },
+    {
+      "year": "1917",
+      "text": "The Pukaskwa Depot logging base begins cutting about 30,000 cords of wood a year, until the Great Depression."
+    },
+    {
+      "year": "1978",
+      "text": "Canada and Ontario sign the agreement establishing Pukaskwa National Park, and the land is transferred."
+    },
+    {
+      "year": "1983",
+      "text": "The park officially opens to the public."
+    },
+    {
+      "year": "1998",
+      "text": "The park's first prescribed fire, a 25-hectare burn to restore white pine."
+    },
+    {
+      "year": "2012",
+      "text": "A prescribed fire of about a hectare at Hattie Cove, now walked by the Hattie Cove Fire Walk."
+    }
+  ],
+  "safety": [
+    "Lake Superior averages 4°C and hypothermia can begin within 5 to 10 minutes in the water without a wetsuit or drysuit. Fog can last for days; carry a compass.",
+    "The Coastal Hiking Trail has no signs, only rock cairns, with steep climbs, slippery rock and cobble, and river crossings that can be thigh-deep; the North Swallow River crossing is the hardest. Never hike or paddle alone.",
+    "This is a remote place where help can take more than 24 hours to arrive. Cellphone service is unreliable, so carry a personal locator beacon or satellite phone.",
+    "Black bears live throughout the park. Store food in lockers or odour-proof containers, and carry bear spray.",
+    "Treat all surface water: boil it for at least two minutes, or filter it and then disinfect it."
+  ],
+  "regulations": [
+    "Never feed wildlife or leave food, garbage or other attractants unattended at any campsite.",
+    "Do not disturb, enter or photograph and share the locations of Pukaskwa Pits or other cultural sites, and stay out of Zone 1 preservation areas.",
+    "Fires only in the fire pits and metal fire boxes provided, with wood from within 80 kilometres; no motorboats in Hattie Cove beyond the visitor centre or on Halfway Lake.",
+    "No collecting of berries, plants, driftwood, rocks or artefacts, no off-trail walking, and no cycling except on roads.",
+    "Pets on a leash at all times; quiet hours from 11 pm to 7 am; no ATVs, jet skis or firearms."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-indigenous-heritage",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:Horseshoe Bay Beach, Pukaskwa National Park.jpg",
+      "caption": "Horseshoe Bay beach, near Hattie Cove",
+      "altText": "A sandy beach strewn with driftwood below a rocky point covered in spruce"
+    },
+    {
+      "file": "File:Hattie Cove Pukaskwa Park.jpg",
+      "caption": "Granite outcrops near Hattie Cove",
+      "altText": "Bare lichen-covered rock and shrubs above a hazy lake and a wooded headland"
+    },
+    {
+      "file": "File:Pukaskwa National Park southern headland trail.JPG",
+      "caption": "Boreal forest seen from the Southern Headland Trail",
+      "altText": "Forested hills around a long inlet under a blue sky with white clouds"
+    },
+    {
+      "file": "File:The Suspension Bridge (3361835850).jpg",
+      "caption": "The White River Suspension Bridge on the Coastal Hiking Trail",
+      "altText": "A narrow metal suspension footbridge leading into dense forest"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pukaskwa National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa"
+    },
+    {
+      "title": "Parc national Pukaskwa — Parcs Canada",
+      "url": "https://parcs.canada.ca/pn-np/on/pukaskwa"
+    },
+    {
+      "title": "Plan your visit — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/visit"
+    },
+    {
+      "title": "Fees — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/visit/tarifs-fees"
+    },
+    {
+      "title": "Hours of operation — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/visit/heures-hours"
+    },
+    {
+      "title": "Hattie Cove campground — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/activ/camping/avant-front"
+    },
+    {
+      "title": "oTENTik campsites — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/activ/camping/otentik"
+    },
+    {
+      "title": "Backcountry hiking and paddling — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/activ/experience/arriere-back"
+    },
+    {
+      "title": "Mdaabii Miikna & Coastal Hiking Trail — Trip Planner (Parks Canada)",
+      "url": "https://pcweb2.azureedge.net/-/media/pn-np/on/pukaskwa/pdf/2025/English-CHT-Planner-2025.pdf"
+    },
+    {
+      "title": "Day hiking — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/activ/experience/randonnees-hiking"
+    },
+    {
+      "title": "Day paddling — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/activ/experience/pagayer-paddle"
+    },
+    {
+      "title": "Horseshoe Beach — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/activ/experience/plages-beaches"
+    },
+    {
+      "title": "Rules and regulations — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/visit/reglement-rules-and-regulations"
+    },
+    {
+      "title": "Visitor safety — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/securite-safety"
+    },
+    {
+      "title": "Lake Superior — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/securite-safety/eau-water"
+    },
+    {
+      "title": "Stewardship and management — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/info"
+    },
+    {
+      "title": "Geology — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/nature/environnement-environment/geologie-geology"
+    },
+    {
+      "title": "Forests — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/nature/environnement-environment/foret-forest"
+    },
+    {
+      "title": "Lakes and rivers — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/nature/environnement-environment/lac-lake"
+    },
+    {
+      "title": "Mammals — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/nature/faune-wildlife/mammiferes-mammals"
+    },
+    {
+      "title": "The role of fire — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/nature/conservation/feu-fire"
+    },
+    {
+      "title": "Park history — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/culture/histoire-history/parc-park"
+    },
+    {
+      "title": "Pukaskwa Depot — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/culture/histoire-history/depot"
+    },
+    {
+      "title": "Origin of the name Pukaskwa — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/culture/histoire-history/nom-name"
+    },
+    {
+      "title": "Anishinaabe culture — Pukaskwa National Park",
+      "url": "https://parks.canada.ca/pn-np/on/pukaskwa/culture/autochtone-indigenous"
+    },
+    {
+      "title": "Pukaskwa National Park of Canada Management Plan (2015)",
+      "url": "https://pcweb2.azureedge.net/-/media/pn-np/on/pukaskwa/pdf/2015_pnp_managementplan_e.pdf"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Travel trade admission fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/voyagistes-traveltrade/visit/fee"
+    },
+    {
+      "title": "Top tips to respect wildlife and stay safe — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/conseils-tips/faune-wildlife"
+    },
+    {
+      "title": "Pukaskwa National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pukaskwa_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight locations)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

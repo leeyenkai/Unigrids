@@ -1,0 +1,341 @@
+{
+  "placeID": "ca-np-sable-island",
+  "contentVersion": 1,
+  "summary": "A 42-kilometre crescent of sand at the edge of the continental shelf, 290 kilometres south-east of Halifax. Some 420 wild horses graze its dunes, the world's largest breeding colony of grey seals hauls out on its beaches, and more than 350 recorded shipwrecks lie off its shores. Visits are day trips only, by plane, helicopter or boat, and every visitor needs Parks Canada's permission in advance.",
+  "facts": {
+    "establishedYear": 2013,
+    "areaHectares": 3400,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "A day trip"
+  },
+  "story": [
+    "Sable Island is the part of a large underwater bank that stands above the sea. Glaciers of the last ice age reached the edge of the continental shelf here and, as they melted, left a moraine of sand and gravel; rising seas then drowned all but this narrow strip. The island is about 42 kilometres long and no more than 1.3 wide, with long parallel beaches to north and south, flat sand spits two to six kilometres long at each end, and down the middle one of Eastern Canada's largest dune systems. The sand is mostly quartz and never stops moving: winter winds blow it out to sea, summer waves bring it back.",
+    "There are no native trees. Marram grass, sandwort and heath hold the dunes together, and all fresh water comes from rain and fog, collecting in a lens that floats on the salt water beneath. Where that lens reaches the surface in the west it forms ponds; in the east, with no ponds, the horses dig for water. Lake Wallace, a saltwater lagoon 22 kilometres long in 1777, filled with blown sand until in late 2011 it ceased to exist as a permanent feature.",
+    "Life here is shaped by the sea. Several hundred thousand grey seals come ashore to breed in December and January, and Sable accounts for about 85 per cent of the grey seal pups born in Canada; their droppings feed the plants the horses eat. The Ipswich sparrow nests nowhere else in the world, the Sable Island sweat bee lives nowhere else, and more than 350 bird species have been recorded. The horses descend from animals landed in the 1700s, probably first by the Boston minister Andrew LeMercier in 1737 and 1738 and later by the shipowner Thomas Hancock, who brought horses taken from deported Acadians. They have lived without human interference since 1961.",
+    "Portuguese explorers made the first documented visit early in the 16th century, and settlement attempts in the 1600s and 1700s failed. Rough seas, fog and far-reaching sandbars on a busy shipping route earned the island the name 'Graveyard of the Atlantic'. Nova Scotia set up the first life-saving station in 1801; a meteorological station built in the early 1890s grew into today's Main Station. The island is part of Mi'kma'ki, and the Mi'kmaq of Nova Scotia assert Aboriginal rights and title here — which is why it is a national park reserve. It came under the Canada National Parks Act on 1 December 2013."
+  ],
+  "howItWorks": [
+    "Sable Island works unlike any other park in the region. Entry is prohibited without approval from Parks Canada: every visitor must either travel with a Parks Canada-licensed operator or obtain written authorisation in advance. Licensed air operators fly from Halifax Stanfield International Airport — Sable Aviation by fixed-wing plane, Vision Air Services by helicopter — and Kattuk Expeditions, Picture Perfect Tours and Sable Ocean Adventures run guided trips. Private vessels need a private-vessel visitor request form and written conditions of entry; small expedition ships of 20 to 200 passengers must apply, with approval needed nine months before the landing date. Only day visits are allowed, and camping is not.",
+    "The park's day-use fee, $37.00 per person, is collected by Parks Canada from visitors arriving by private vessel, and by the approved air transporters and tour operators, whose rates include it. All groups must have a guide. Sable Island is not on Parks Canada's list of places where the national Discovery Pass ($83.50 adult, $71.50 senior, $167.50 family or group of up to seven people arriving in one vehicle, as listed in November 2026) is sold or used; landing support, guided tours and emergency accommodation are charged separately. Youth 17 and under are admitted free across Parks Canada, and the Canada Strong Pass gave free admission from 19 June to 7 September 2026, with regular fees resuming on 8 September 2026.",
+    "Biosecurity comes first. Footwear must be cleaned and disinfected before you travel, with disinfectant provided at the airport hangar and on the island for boat arrivals; no riding or horse-care equipment, and no footwear worn on a horse farm, may come ashore, and clothing worn around horses must be washed and stored for five days before arrival. Pets, drones and metal detectors are not permitted. The horses are protected as a naturalised species under the Canada National Parks Act; keep at least 20 metres from them, and never touch or feed them."
+  ],
+  "sights": [
+    {
+      "name": "Main Station",
+      "note": "The island's operational hub, centred on the weather station, where every visitor arrives. Restrooms and drinking water; many of the island's best-known places are within walking distance.",
+      "location": [
+        43.933,
+        -60.0069
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "West Light ponds",
+      "note": "Freshwater ponds near West Light on the island's western half, where the freshwater lens surfaces and horses come to drink. Parks Canada suggests them for quiet reflection.",
+      "location": [
+        43.932,
+        -60.0228
+      ]
+    },
+    {
+      "name": "South Beach",
+      "note": "The long ocean-facing beach. Hard-packed sand makes it the easiest walking on the island; fixed-wing planes land on the beach runway.",
+      "location": [
+        43.929,
+        -59.96
+      ]
+    },
+    {
+      "name": "North Beach",
+      "note": "The northern shore opposite Main Station, where grey seals haul out and where boats anchor offshore before a wet landing by zodiac.",
+      "location": [
+        43.9351,
+        -60.0065
+      ]
+    },
+    {
+      "name": "Bald Dune",
+      "note": "A bare dune beside Iris Pond towards the east end of the island, reached from North Beach.",
+      "location": [
+        43.9359,
+        -59.8766
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Lake Wallace",
+      "note": "Once a 22-kilometre saltwater lagoon; blown sand filled it until it ceased to be a permanent lake in 2011. The area still floods after heavy rain or storm overwash.",
+      "location": [
+        43.9308,
+        -59.9848
+      ]
+    },
+    {
+      "name": "East Light and the East Spit",
+      "note": "The lighthouse near the eastern end of the island, beyond which the flat East Spit runs out towards the submerged East Bar.",
+      "location": [
+        43.96,
+        -59.7906
+      ]
+    },
+    {
+      "name": "West Spit",
+      "note": "The flat sand tip at the western end, where vegetation and dunes have been spreading in recent years.",
+      "location": [
+        43.969,
+        -60.1536
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "By fixed-wing plane from Halifax Stanfield International Airport (Gateway Facilities hangar) with Sable Aviation — flights of 75 to 120 minutes, landing on the beach",
+      "By helicopter from Halifax Stanfield International Airport with Vision Air Services — flights of 75 to 90 minutes",
+      "By private vessel with written permission, anchoring off the north side opposite Main Station and landing through the surf by zodiac",
+      "By chartered tour boat with Sable Ocean Adventures, or by small expedition ship with advance approval"
+    ],
+    "reservations": "There is no campsite or online booking; a visit is arranged through a Parks Canada-licensed operator, or, for a private vessel, by submitting the private-vessel visitor request form and receiving written authorisation. Trip dates are set in advance — fixed-wing flights on Saturdays with Sundays as the alternate, helicopter flights on Tuesdays and Thursdays with Wednesdays and Fridays as alternates. Delays and cancellations are common; check with Parks Canada and your operator before you go.",
+    "permits": [
+      "Advance approval from Parks Canada, or travel with a Parks Canada-licensed operator, for every visitor",
+      "Private-vessel visitor request form and written conditions of entry for private boats",
+      "A film permit or business licence for commercial filming or photography"
+    ],
+    "camping": [
+      "Camping is not permitted; only day visits are allowed"
+    ],
+    "lodging": [
+      "None for visitors. If weather strands you overnight, standard fees apply for accommodation and emergency food rations",
+      "Visitors on a chartered vessel or expedition ship sleep aboard"
+    ],
+    "seasonalClosures": [
+      "Visits run on a few select dates in January and February and about three times a week from the end of May to the end of October — check the visitor dates with Parks Canada before you go",
+      "Partially guided day trips run from June to mid-August only"
+    ],
+    "seasonalClosureMonths": [
+      3,
+      4,
+      11,
+      12
+    ]
+  },
+  "weather": "The ocean tempers Sable's climate, which is usually milder than mainland Nova Scotia's. It is the windiest place in the province and fog is frequent in every season. Winter temperatures rarely fall below −13 °C, with normals between −5 and 5 °C, and in August they seldom rise above 25 °C. Storms can be severe, and in extreme winds debris and loose parts of buildings can become airborne with little warning: in high winds stay indoors where you can, leave by the downwind side of buildings, and in lightning stay inside. Summer and early autumn bring the main visitor season; the January and February trips are for the seal pupping season.",
+  "directions": "The island lies 290 kilometres south-east of Halifax and 161 kilometres from the nearest landfall at Canso. There is no ferry, wharf or mooring buoy. Most visitors fly from Halifax Stanfield International Airport with a licensed operator, in small aircraft of up to seven seats by plane or eight by helicopter; flights are weather-dependent and the beach runway must be usable. Arriving by sea, contact the island on marine VHF channel 8 or 16 within 10 nautical miles, anchor off the north side opposite Main Station, keep about 500 metres from the submerged sandbars and come ashore by zodiac with life jackets, only once Parks Canada staff are on the beach to meet you. Parks Canada staff carry visitors arriving by plane and their gear from the south beach to Main Station.",
+  "fees": [
+    {
+      "title": "Day use",
+      "cost": "$37.00",
+      "amount": 37.0,
+      "currencyCode": "CAD",
+      "detail": "Per person. Collected by Parks Canada from private-vessel visitors; air transporters and tour operators include it in their rates. Youth 17 and under free. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Parks Canada guided tour",
+      "cost": "$314.00",
+      "amount": 314.0,
+      "currencyCode": "CAD",
+      "detail": "Per group, two hours. All groups must have a guide; groups with an approved third-party guide do not pay this fee. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Landing support, private vessel",
+      "cost": "$205.25",
+      "amount": 205.25,
+      "currencyCode": "CAD",
+      "detail": "Per landing. Fixed-wing aircraft $648.50 and helicopters $342.00 per landing. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Accommodation when stranded",
+      "cost": "$298.50",
+      "amount": 298.5,
+      "currencyCode": "CAD",
+      "detail": "Per person per night, charged only when weather prevents departure. As listed by Parks Canada in November 2026; check before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Early 1500s",
+      "text": "Portuguese explorers make the first documented visit to the island."
+    },
+    {
+      "year": "1583",
+      "text": "The first of more than 350 recorded shipwrecks off Sable Island."
+    },
+    {
+      "year": "1737–1738",
+      "text": "The Boston minister Andrew LeMercier is generally held to have landed the first horses."
+    },
+    {
+      "year": "1801",
+      "text": "Nova Scotia establishes the first life-saving station on the island."
+    },
+    {
+      "year": "Early 1890s",
+      "text": "A meteorological station is built; it grows into today's Main Station."
+    },
+    {
+      "year": "1960s",
+      "text": "Up to nine oil wells are drilled from the surface of the island."
+    },
+    {
+      "year": "1961",
+      "text": "The last attempts to manage or breed the horses end; they have lived without human interference since."
+    },
+    {
+      "year": "2011",
+      "text": "Canada and Nova Scotia sign the agreement to establish a national park on 17 October; Lake Wallace ceases to be a permanent lake late in the year."
+    },
+    {
+      "year": "2013",
+      "text": "Sable Island National Park Reserve comes under the Canada National Parks Act on 1 December, with a ban on drilling from the island and out to one nautical mile."
+    },
+    {
+      "year": "2021",
+      "text": "Mi'kmaq youth and Elders visit and write the Mi'kma'ki Sable Island Pledge for future visitors."
+    }
+  ],
+  "safety": [
+    "This is an extremely remote place with no medical facility, pharmacy or cellular reception. Bring your own medication with extra for delays, food, water and dry clothing, and tell someone on the island your route and expected return.",
+    "Trips are often delayed or cancelled by weather or beach conditions, sometimes for several days. Build flexibility into your plans.",
+    "Watch for quicksand, saltwater slush, flooding, unstable banks and steep slopes, and debris on the beaches. There are no formal trails, and walking for hours in soft sand is hard work.",
+    "Swimming is not permitted: 18 kinds of shark live in the waters of the Scotian Shelf. Back away from horses that approach, and avoid tern and gull colonies, whose birds defend their nests aggressively."
+  ],
+  "regulations": [
+    "Entry is prohibited without approval from Parks Canada or a Parks Canada-licensed operator. Day visits only; no camping.",
+    "Keep at least 20 metres from the horses, and never touch, feed or harass them; do not disturb seals or nesting birds.",
+    "No pets, drones, metal detectors or firearms, and no open fires of any kind. Pack out all your garbage.",
+    "Do not collect shells, plants, bones or artefacts; photograph a find and report it to Parks Canada. Keep off steep dune slopes and follow horse paths where you can."
+  ],
+  "themes": [
+    "theme-dunes",
+    "theme-islands",
+    "theme-coastal",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Horses and seals.jpg",
+      "caption": "Wild horses above grey seals hauled out on the beach",
+      "altText": "Horses standing on a grassy dune above a beach where grey seals lie at the water's edge"
+    },
+    {
+      "file": "File:Stallion and harem on Sable Island.jpg",
+      "caption": "A stallion and his band among the dunes",
+      "altText": "Dark, shaggy horses grazing on grass-covered sand dunes, a mare and foal in front"
+    },
+    {
+      "file": "File:Lone horse 01.jpg",
+      "caption": "A lone horse among the dunes",
+      "altText": "A single dark horse standing in tall grass among pale sand dunes"
+    },
+    {
+      "file": "File:NAAMES Sable Island (36031998560).jpg",
+      "caption": "Sable Island from the air, May 2016",
+      "altText": "A long, thin spit of sand stretching into a grey sea under a low sun"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sable Island National Park Reserve — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ns/sable"
+    },
+    {
+      "title": "How to get here — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/visit/directions"
+    },
+    {
+      "title": "Passes and permits — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/visit/permis-permits"
+    },
+    {
+      "title": "Private vessel visitor request form — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/visit/enregistrement-visiteur-visitor-registration"
+    },
+    {
+      "title": "Critical guidelines for safe landing — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/visit/directives-essentielles-critical-guidelines"
+    },
+    {
+      "title": "Visitor dates — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/visit/heures-hours"
+    },
+    {
+      "title": "Fees — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/visit/tarifs-fees"
+    },
+    {
+      "title": "Prepare for your trip to Sable Island — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/visit/preparez-prepare"
+    },
+    {
+      "title": "Protecting Sable Island — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/securite-safety/proteger-protect"
+    },
+    {
+      "title": "Guided tours — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/activ/visites-guidees-guided-tours"
+    },
+    {
+      "title": "On-island travel — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/activ/deplacement-travel"
+    },
+    {
+      "title": "Weather — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/visit/meteo-weather"
+    },
+    {
+      "title": "Horses — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/nature/animaux-animals/chevaux-horses"
+    },
+    {
+      "title": "Grey seals — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/nature/animaux-animals/phoques-gris-grey-seals"
+    },
+    {
+      "title": "Birds — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/nature/animaux-animals/oiseaux-birds"
+    },
+    {
+      "title": "Sable Island Sweat Bee — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/nature/Sable-Island-Sweat-Bee"
+    },
+    {
+      "title": "Plants — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/nature/plantes-plants"
+    },
+    {
+      "title": "Geomorphology — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/nature/env/geomorphologie-geomorphology"
+    },
+    {
+      "title": "Freshwater ponds — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/nature/env/hydrologie-hydrology"
+    },
+    {
+      "title": "Cultural history — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/culture/histoire-history"
+    },
+    {
+      "title": "Park establishment — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/culture/creation"
+    },
+    {
+      "title": "Stewardship and management — Sable Island National Park Reserve (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/info"
+    },
+    {
+      "title": "The Mi'kma'ki Sable Island Pledge — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ns/sable/activ/engagement-pledge"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Sable Island — OpenStreetMap",
+      "url": "https://www.openstreetmap.org/relation/14923704"
+    }
+  ]
+}

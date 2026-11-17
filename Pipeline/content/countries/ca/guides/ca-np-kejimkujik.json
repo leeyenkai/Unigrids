@@ -1,0 +1,360 @@
+{
+  "placeID": "ca-np-kejimkujik",
+  "contentVersion": 1,
+  "summary": "Lakes, rivers and old-growth forest in the heart of south-west Nova Scotia, travelled by the Mi'kmaq for thousands of years and the first national park that is also, in large part, a national historic site. Most visitors paddle, camp and walk inland; the Dark-Sky Preserve draws stargazers, and Kejimkujik Seaside, 100 kilometres away by road, guards a stretch of wild Atlantic coast.",
+  "facts": {
+    "establishedYear": 1974,
+    "areaHectares": 40500,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Kejimkujik takes its name from the Mi'kmaw Kejimkuji'jk, 'little fairies'; Kejimkujik Lake was long called Fairy Lake, and one of its bays is still Fairy Bay. The park lies in Kespukwitk, 'Land's End', a district of Mi'kma'ki, and people have lived here for 3,000 to 4,000 years. Its lakes and rivers were travel routes, and the land holds encampments, fish weirs, hunting territories, portages, burials and petroglyphs — elapskɨta'sikl kun'tal, carvings in stone — found along the lakeshores, among them hunting and fishing scenes and the peaked hats of Mi'kmaw women.",
+    "Europeans arrived around the 1820s. A few farms were cleared on the drumlins, the smooth hills left by glaciers; nearly all the forest was logged at some time, the logs driven down the lakes and rivers; and three small gold mines yielded more stories than ore. From the early 1900s sportsmen came to hunt and fish, staying at lodges such as Kedge Lodge with local men as their guides.",
+    "Some old forest survived. Hemlocks more than 300 years old, among Nova Scotia's oldest trees, stand along Big Dam Lake and the Hemlocks and Hardwoods trail, and the park is a refuge for species that need such forests. It is also a stronghold of the endangered Blanding's turtle, whose nesting beaches and wintering waters around Kejimkujik Lake and the Mersey River are protected. The hemlock woolly adelgid, an invasive insect, now threatens the hemlocks, and invasive chain pickerel have reached the lakes.",
+    "The inland park opened in 1969 and was formally established in 1974 to represent the Atlantic Coast Uplands. Kejimkujik Seaside, on the coast between Port Mouton and Port Joli, was added in 1985: barrens, headlands, white beaches and lagoons where piping plovers nest and seals haul out. In 1995 the inland park's Mi'kmaw cultural landscape was designated a national historic site. The park is the core of the Southwest Nova Biosphere Reserve, and since 2010 a Dark-Sky Preserve."
+  ],
+  "howItWorks": [
+    "Kejimkujik has two parts 100 kilometres apart by road. The inland park, which is also the national historic site, charges admission from the Victoria Day weekend in May to 31 October: $7.25 a day for an adult as listed in November 2026, with youth 17 and under free. From 1 November until the Victoria Day weekend no fees are charged, most facilities close, and trails are neither maintained nor patrolled. Kejimkujik Seaside is a day-use area with free admission. The national Discovery Pass — $83.50 adult, $71.50 senior, $167.50 for a family or group of up to seven people arriving in one vehicle, as listed in November 2026 — covers admission for 12 months here and at more than 80 Parks Canada places. The Canada Strong Pass gave free admission from 19 June to 7 September 2026; regular fees resumed on 8 September 2026. The Mi'kmaq of Nova Scotia enter without charge.",
+    "Campsites, roofed accommodation and all backcountry sites are booked through the Parks Canada Reservation Service, online at reservation.pc.gc.ca or on 1-877-737-3783; reservations for 2027 open on Thursday 11 February 2027 at 8 am Atlantic time. There are no first-come backcountry sites. Before a backcountry trip you must check in — by replying to the park's email, at the Visitor Centre, or by phone if you arrive after hours — and collect permits for camping, parking, firewood and fishing. The permit holder must be 18 or over; you may stay two consecutive nights on a site and 21 nights in all.",
+    "Since 2026 motorised watercraft have been prohibited without the superintendent's written authorisation. Entering the Mi'kmaw petroglyph sites at Fairy Bay, Peter Point and Eel Weir without authorisation is prohibited; the carvings are seen on guided programmes. Fishing needs a national park fishing permit — provincial licences do not apply — and the season runs from 1 April to 31 August. Only approved, kiln-dried firewood may be burned, with a free firewood permit, and only in the metal fire boxes. Places run by Parks Canada are no-drone zones for recreational use."
+  ],
+  "sights": [
+    {
+      "name": "Kejimkujik Lake",
+      "note": "A lake dotted with islands, once called Fairy Lake. Canoes and kayaks can be hired in the park, and one backcountry site lies on Ritchie Island.",
+      "location": [
+        44.3833,
+        -65.25
+      ]
+    },
+    {
+      "name": "Merrymakedge Beach",
+      "note": "A sandy beach on Kejimkujik Lake with an encampment site, a café and, in fall, winter and spring, a fine view of the southern night sky.",
+      "location": [
+        44.3835,
+        -65.1988
+      ]
+    },
+    {
+      "name": "Big Dam Lake",
+      "note": "Old-growth hemlocks more than 300 years old grow along the north side of the lake. The Big Dam parking lot is the start of the Liberty Lake backcountry trail.",
+      "location": [
+        44.4569,
+        -65.2814
+      ]
+    },
+    {
+      "name": "Peter Point",
+      "note": "A secluded sandy point reached by a 1.9 km trail through maple and hemlock. The petroglyph site here may be entered only with authorisation.",
+      "location": [
+        44.3835,
+        -65.2155
+      ]
+    },
+    {
+      "name": "Jeremys Bay",
+      "note": "The main campground's bay on Kejimkujik Lake, with serviced and unserviced sites, oTENTiks and the Slapfoot Trail along the shore.",
+      "location": [
+        44.4028,
+        -65.2611
+      ]
+    },
+    {
+      "name": "Visitor Centre and Mill Falls",
+      "note": "Passes, permits, backcountry check-in and Mi'kmaw birchbark canoes. Behind it, a 2 km return trail follows the Mersey River to Mill Falls. Open late May to 31 October.",
+      "location": [
+        44.4383,
+        -65.2086
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Harbour Rocks",
+      "note": "At Kejimkujik Seaside, the end of a 2.8 km trail through coastal forest and barrens to rocky islets where harbour and grey seals haul out; a viewing scope is provided.",
+      "location": [
+        43.8337,
+        -64.8327
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "St. Catherines River Beach",
+      "note": "A beach of white quartzite sand that squeaks underfoot, seen from a platform on the Harbour Rocks Trail. Closed during the piping plover nesting season.",
+      "location": [
+        43.8447,
+        -64.8263
+      ]
+    },
+    {
+      "name": "Kejimkujik Seaside trailhead",
+      "note": "The parking area, washrooms and start of the Harbour Rocks and Port Joli Head trails, on St. Catherines River Road near Port Joli.",
+      "location": [
+        43.8379,
+        -64.8562
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The inland park at Maitland Bridge on Route 8, 18 km from Caledonia and 46 km from Annapolis Royal",
+      "Kejimkujik Seaside, 1188 St. Catherines River Road, Port Joli, off Highway 103"
+    ],
+    "reservations": "Frontcountry campsites at Jeremys Bay and Jakes Landing, roofed accommodation, group camping and every backcountry site are booked through the Parks Canada Reservation Service; 2027 bookings open on 11 February 2027 at 8 am Atlantic time. Canoes, kayaks, bicycles and guided trips are booked with the park's outfitter. Check with Parks Canada before you go.",
+    "permits": [
+      "Backcountry check-in and permits for camping, parking, firewood and fishing before you set out",
+      "A national park fishing permit, daily or seasonal",
+      "Written authorisation to enter the petroglyph sites or to operate a motorised boat",
+      "A film permit or business licence for commercial work"
+    ],
+    "camping": [
+      "Jeremys Bay campground, serviced and unserviced sites and oTENTiks",
+      "Jim Charles Point, with oTENTiks, Ôasis pods, a rustic cabin and group camping; tent sites and a rustic cabin at Jakes Landing",
+      "Forty-six backcountry sites on 17 lakes, reached by canoe or on foot, and two rustic backcountry cabins",
+      "No camping at the Seaside; Thomas Raddall Provincial Park is nearby"
+    ],
+    "lodging": [
+      "oTENTiks, Ôasis pods, a yurt and rustic cabins inside the inland park, booked as camping"
+    ],
+    "seasonalClosures": [
+      "From 1 November to the Victoria Day weekend no fees are charged, most facilities close and trails are not maintained or patrolled",
+      "Camping, including backcountry camping, runs only from the Victoria Day weekend to the end of October",
+      "The Seaside access road and parking lot are not ploughed in winter",
+      "St. Catherines River Beach closes during the piping plover nesting season — check with Parks Canada before you go"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "Full services run in July and August. In spring, high water can make brooks impassable — the Channel Lake trail fords Still Brook, which may not be crossable in flood. Ticks are active in the warm months, and on hot days dehydration and heat exhaustion are real risks. From November to mid-May the park is open for hiking, cycling, picnicking and stargazing, weather permitting, but with no services; roads can be icy or snow-covered, and Parks Canada warns of hypothermia and thin ice. At the Seaside the sea stays cold, dangerous currents and undertows occur, and unusually large waves can sweep people off the rocky headlands.",
+  "directions": "The inland park is about 167 kilometres from Halifax, roughly two hours' drive: take Highway 103 to exit 13 at Bridgewater, then Highways 325 and 208 to Route 8 and on through Caledonia. From the Annapolis Valley take exit 22 off Highway 101 and follow Route 8 south for 46 kilometres; from Liverpool on the South Shore, Route 8 north for 66 kilometres. Parkbus runs day trips from Halifax on select dates. Kejimkujik Seaside is 180 kilometres from Halifax by Highway 103 and about 99 kilometres from the inland park, by Route 8 to Liverpool and west on Highway 103. Ferries reach south-western Nova Scotia at Digby and Yarmouth.",
+  "fees": [
+    {
+      "title": "Daily admission, inland park",
+      "cost": "$7.25",
+      "amount": 7.25,
+      "currencyCode": "CAD",
+      "detail": "Adult. Senior $6.25; family or group $15.00; youth free. Seasonal pass $36.75 for an adult. No fee from 1 November to the Victoria Day weekend, and none at Kejimkujik Seaside. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Parks Canada Discovery Pass",
+      "cost": "$83.50",
+      "amount": 83.5,
+      "currencyCode": "CAD",
+      "detail": "Adult, 12 months at more than 80 Parks Canada places. Senior $71.50; family or group $167.50. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Backcountry campsite",
+      "cost": "$37.00",
+      "amount": 37.0,
+      "currencyCode": "CAD",
+      "detail": "Per site per night; a backcountry rustic cabin is $68.00. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Jeremys Bay unserviced campsite, peak season",
+      "cost": "$34.00",
+      "amount": 34.0,
+      "currencyCode": "CAD",
+      "detail": "Per night, from 26 June to 8 September 2026 and on holiday weekends; $31.75 in the shoulder season. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "National park fishing permit",
+      "cost": "$15.00",
+      "amount": 15.0,
+      "currencyCode": "CAD",
+      "detail": "Daily; annual $51.25. As listed by Parks Canada in November 2026; check before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "3,000–4,000 years ago",
+      "text": "The earliest evidence of people in the Kejimkujik area dates from the Late Archaic, 3,000 to 4,000 years ago."
+    },
+    {
+      "year": "1820s",
+      "text": "European settlement begins, followed by logging, small gold mines and, from the early 1900s, sporting lodges."
+    },
+    {
+      "year": "1865",
+      "text": "A lighthouse is built on Little Hope Island off the future Seaside; it falls in 2003 after Hurricane Juan and a December storm."
+    },
+    {
+      "year": "1969",
+      "text": "The inland park begins operating as a national park."
+    },
+    {
+      "year": "1974",
+      "text": "Kejimkujik is formally established as a national park."
+    },
+    {
+      "year": "1985",
+      "text": "Kejimkujik Seaside is added to the park."
+    },
+    {
+      "year": "1995",
+      "text": "Kejimkujik is designated a national historic site for its Mi'kmaw cultural landscape, the first national park with this dual status."
+    },
+    {
+      "year": "2001",
+      "text": "UNESCO designates the Southwest Nova Biosphere Reserve, with Kejimkujik at its core."
+    },
+    {
+      "year": "2010",
+      "text": "The Royal Astronomical Society of Canada designates Kejimkujik a Dark-Sky Preserve."
+    },
+    {
+      "year": "2025",
+      "text": "The Mi'kmaq of Nova Scotia and Parks Canada sign the Toqi'maliaptmu'k co-management Arrangement."
+    }
+  ],
+  "safety": [
+    "Backcountry travel is hard: expect fallen trees, washed-out paths and boardwalks, and brooks that cannot be crossed. Mobile coverage is limited or absent. Ask staff about water levels and hazards before you go.",
+    "Check yourself for ticks after every walk, stay on trails and cover up. Poison ivy grows in parts of the park.",
+    "Black bears and coyotes live here. Keep a clean campsite, hang food from the bear cables provided, and pack out all food and garbage from the backcountry.",
+    "At the Seaside, the water is cold and has strong undertows, and large waves can sweep people from the rocks. Do not approach seals on the beach."
+  ],
+  "regulations": [
+    "No motorised watercraft, ATVs, snowmobiles or off-road vehicles; bicycles only on designated trails and never at the Seaside.",
+    "Do not enter the petroglyph sites without authorisation, and do not collect plants, antlers, rocks or any historic or natural object.",
+    "Burn only approved, kiln-dried firewood under a firewood permit, in the metal fire boxes; obey any fire ban.",
+    "Keep pets on a leash; they are not allowed on beaches except part of Merrymakedge Beach. Recreational drones and metal detectors are prohibited."
+  ],
+  "themes": [
+    "theme-indigenous-heritage",
+    "theme-deciduous-forest",
+    "theme-wetland",
+    "theme-coastal"
+  ],
+  "photos": [
+    {
+      "file": "File:Kejimkujik Lake from Kedge Beach - Kejimkujik National Park.jpg",
+      "caption": "Kejimkujik Lake from Kedge Beach",
+      "altText": "Grey water lapping towards a forested point under a cloudy sky"
+    },
+    {
+      "file": "File:Big Dam Lake Trail - Kejimkujik National Park 1.jpg",
+      "caption": "Forest on the short trail to Big Dam Lake",
+      "altText": "Ferns and young trees on the floor of a mixed forest"
+    },
+    {
+      "file": "File:Harbour Rocks Trail, Kejimkujik Seaside, Nova Scotia (23370548583).jpg",
+      "caption": "Coastal barrens on the Harbour Rocks Trail",
+      "altText": "Scattered spruce and low shrubs with the sea and a distant shore beyond"
+    },
+    {
+      "file": "File:Kejimkujik National Park Seaside - Harbour Rocks Panorama (23526266706).jpg",
+      "caption": "Harbour Rocks at Kejimkujik Seaside",
+      "altText": "Seaweed-covered rocks on a pale sandy beach beside the open sea"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kejimkujik National Park and National Historic Site — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik"
+    },
+    {
+      "title": "Plan your visit — Kejimkujik National Park and National Historic Site (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/visit"
+    },
+    {
+      "title": "Getting here — Kejimkujik National Park and National Historic Site (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/visit/directions"
+    },
+    {
+      "title": "Hours of operation — Kejimkujik National Park and National Historic Site (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/visit/heures-hours"
+    },
+    {
+      "title": "Fees — Kejimkujik National Park and National Historic Site (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/visit/tarifs-fees"
+    },
+    {
+      "title": "Passes and permits — Kejimkujik National Park and National Historic Site (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/visit/permis-permits"
+    },
+    {
+      "title": "Backcountry camping — Kejimkujik National Park and National Historic Site (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/activ/camping/arriere-back"
+    },
+    {
+      "title": "Hiking — Kejimkujik National Park and National Historic Site (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/activ/rando-hiking"
+    },
+    {
+      "title": "Explore the dark sky — Kejimkujik National Park and National Historic Site (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/activ/reserve-etoile-sky-preserve"
+    },
+    {
+      "title": "Visitor guidelines — Kejimkujik National Park and National Historic Site (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/securite-safety/regles-rules"
+    },
+    {
+      "title": "Notices — Kejimkujik National Park and National Historic Site (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/info/avis-notices"
+    },
+    {
+      "title": "Kejimkujik National Park Seaside — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/visit/seaside-bord-de-mer"
+    },
+    {
+      "title": "Safety at Kejimkujik National Park Seaside — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/securite-safety/securite-borddemer-safety-seaside"
+    },
+    {
+      "title": "Culture and history — Kejimkujik National Park and National Historic Site (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/culture"
+    },
+    {
+      "title": "History — Kejimkujik National Park and National Historic Site (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/culture/histoire-history"
+    },
+    {
+      "title": "National Historic Site Designation — Kejimkujik (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/culture/histoire-history/designation"
+    },
+    {
+      "title": "European settlement — Kejimkujik (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/culture/histoire-history/europeen-european"
+    },
+    {
+      "title": "History of Kejimkujik Seaside — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/culture/histoire-history/bordemer-seaside"
+    },
+    {
+      "title": "Indigenous culture — Kejimkujik (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/culture/autochtone-indigenous"
+    },
+    {
+      "title": "Nature and science — Kejimkujik (Parks Canada)",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/nature"
+    },
+    {
+      "title": "Kejimkujik National Park and National Historic Site Management Plan 2022 — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/ns/kejimkujik/info/plan-2022"
+    },
+    {
+      "title": "The Toqi'maliaptmu'k Arrangement — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/promotion/nouvelle-ecosse-nova-scotia/toqimaliaptmuk"
+    },
+    {
+      "title": "Parks Canada reservations — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/reserve"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Wikidata — Kejimkujik Lake, Big Dam Lake, Merrymakedge Beach, Jeremys Bay, Peter Point, Harbour Rocks, St. Catherines River Beach (coordinates)",
+      "url": "https://www.wikidata.org/wiki/Q3214976"
+    }
+  ]
+}

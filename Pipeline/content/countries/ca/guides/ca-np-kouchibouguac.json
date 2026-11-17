@@ -1,0 +1,326 @@
+{
+  "placeID": "ca-np-kouchibouguac",
+  "contentVersion": 1,
+  "summary": "On New Brunswick's Acadian coast, Kouchibouguac protects golden dunes and barrier beaches, warm lagoons, salt marshes, peat bogs and Acadian woodland, all under the dark sky of a Dark-Sky Preserve. Visitors swim at Kellys Beach, cycle 60 kilometres of gravel paths, paddle out towards the grey seals and dig for clams, and come back in winter to ski and snowshoe.",
+  "facts": {
+    "establishedYear": 1969,
+    "areaHectares": 23800,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "Kouchibouguac represents the Maritime Plain, the low, flat country along the Northumberland Strait. Its 238 square kilometres hold a mosaic of habitats: barrier beaches and dunes held together by marram grass, shallow lagoons and estuaries with eelgrass beds, salt marshes of cordgrass, raised peat bogs, rivers and Acadian woodland. The coast makes up about 22 per cent of the park's land, and the waters off it are warm enough for swimming from June through August.",
+    "The coast draws birds and seals. The park holds the largest common tern colony in Canada, grey seals gather offshore in summer, and great blue herons stalk the shallows. Piping plovers nest on the open sand and bank swallows in the eroding coastal banks, both species at risk, and the park reseeds the rare Gulf of St. Lawrence aster in its sandy habitat. The invasive green crab is one of the threats it is fighting, because it eats native species and tears up the eelgrass of the lagoons.",
+    "The name is Mi'gmaq and means \"river of the long tides\". The park lies within Mi'gma'ki, the traditional territory of the Mi'gmaq, and 26 Indigenous archaeological sites are known inside it, the oldest evidence going back about 4,000 years; the sea once supplied more than nine-tenths of the year's food. French explorers came to New Brunswick in the early 1600s, but permanent European settlement here began only in the late 1700s, with United Empire Loyalists and Scottish, Irish, English and Prussian immigrants on the Kouchibouguac River and Acadians from Memramcook on the Kouchibouguacis. They built ships, cut timber, fished and farmed.",
+    "When the park was created in 1969, about 1,200 people in 228 households lived in seven villages and settlements within its boundaries, among them Cap-Saint-Louis, Claire-Fontaine, Guimond Village, Rivière-du-Portage and Saint-Olivier. Their land was expropriated between 1969 and 1972 and most moved to nearby communities; some still fish commercially in the park. Since 2011 Parks Canada has given these families and their descendants a free admission pass, honoured for life from 2026. Earlier, on 8 February 1943, a Lockheed Ventura on a training flight had crashed on the Aldouane Peninsula, killing its three airmen; an exhibit at the visitor centre remembers them."
+  ],
+  "howItWorks": [
+    "Kouchibouguac is open all year. As listed in November 2026, daily admission in peak season is $10.00 for an adult, halved in the shoulder season, and in winter, until 31 March, a winter trail-use fee applies instead; youth aged 17 and under get in free at every Parks Canada place. A Parks Canada Discovery Pass, $83.50 for an adult, $71.50 for a senior or $167.50 for a family or group of up to seven people arriving in one vehicle, covers admission at more than 80 Parks Canada places for 12 months. Under the Canada Strong Pass admission was free from 19 June to 7 September 2026; regular fees resumed on 8 September 2026.",
+    "South Kouchibouguac and Côte-à-Fabien campgrounds, the oTENTiks and the three backcountry sites, Petit-Large, Pointe-à-Maxime and Sipu, are booked through the Parks Canada Reservation Service at reservation.pc.gc.ca or 1-877-737-3783. Bookings for the 2027 season open on Friday 5 February 2027 at 8 am Atlantic time. Petit-Large stays open all winter for primitive camping, reached on foot, skis or snowshoes; Pointe-à-Maxime can be reached only by canoe or kayak.",
+    "Fishing needs a national park fishing permit, and digging softshell clams a park clam licence, sold at the park office, visitor centre and campgrounds; in 2026 the season ran from 15 May to 15 September, with a limit of 75 clams of at least 5 centimetres a day. Bringing firewood into the park is prohibited, and fires are allowed only in the fire boxes provided. Recreational drones are banned at all Parks Canada places, off-road vehicles are not allowed, and bicycles are kept off the beaches, dunes and lagoons."
+  ],
+  "sights": [
+    {
+      "name": "Kellys Beach",
+      "note": "A 1.2-kilometre boardwalk across salt marsh and lagoon to a barrier beach on the Northumberland Strait. Lifeguards and a canteen in summer; no pets.",
+      "location": [
+        46.8268,
+        -64.9063
+      ]
+    },
+    {
+      "name": "Callanders Beach",
+      "note": "A shallow lagoon behind a barrier beach, good for wading, paddling and clam digging, with a giant wigwam for Mi'gmaq programmes and the Mi'gmaq Cedar trail. Dogs allowed on a leash.",
+      "location": [
+        46.8096,
+        -64.9059
+      ]
+    },
+    {
+      "name": "The Bog",
+      "note": "A 1.8-kilometre trail onto a raised peat bog, through forest and past fresh water.",
+      "location": [
+        46.8116,
+        -64.9504
+      ]
+    },
+    {
+      "name": "Pointe-à-Maxime",
+      "note": "A paddle-in backcountry site on the Kouchibouguacis River, 2.5 kilometres from Cap-Saint-Louis wharf, and a base for visiting the seals in the Blacklands gully.",
+      "location": [
+        46.779,
+        -64.8973
+      ]
+    },
+    {
+      "name": "Sipu",
+      "note": "A backcountry site on the Kouchibouguac River, its Mi'gmaq name meaning river: about 5.5 kilometres by canoe from Ryans or 5 kilometres on foot from Pijeboogwek.",
+      "location": [
+        46.8024,
+        -64.9959
+      ]
+    },
+    {
+      "name": "Petit-Large",
+      "note": "A primitive campground in a forest clearing, open all year; in winter a ski-toboggan helps haul gear the 3.5 kilometres from Pijeboogwek.",
+      "location": [
+        46.7939,
+        -64.9765
+      ]
+    },
+    {
+      "name": "South Kouchibouguac",
+      "note": "The park's main campground, with serviced sites and oTENTiks, 5 kilometres from Callanders Beach.",
+      "location": [
+        46.8255,
+        -64.9369
+      ]
+    },
+    {
+      "name": "Visitor Reception Centre",
+      "note": "At 186 Route 117 near the park entrance: information, exhibits including the Ventura memorial, and a gift shop. Pijeboogwek nearby serves winter visitors.",
+      "location": [
+        46.7727,
+        -65.0051
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Main entrance and Visitor Reception Centre at 186 Route 117, Kouchibouguac, off Highway 11",
+      "Cap-Saint-Louis wharf in the south of the park, for paddling to Pointe-à-Maxime and the seals",
+      "Pijeboogwek, staffed in winter, the start of the walk or ski to Petit-Large and Sipu"
+    ],
+    "reservations": "Campsites, oTENTiks and backcountry sites are booked through the Parks Canada Reservation Service; 2027 bookings open on 5 February 2027 at 8 am Atlantic time. Kellys Beach is busiest in July and August. Check before you go with Parks Canada.",
+    "permits": [
+      "National park fishing permit; provincial licences do not apply",
+      "Park softshell clam licence, with a daily limit of 75 clams; plungers are prohibited",
+      "Restricted Activity Permit for any drone use"
+    ],
+    "camping": [
+      "South Kouchibouguac, with unserviced and serviced sites and oTENTiks, from late May to mid-October",
+      "Côte-à-Fabien, primitive and group camping, in summer",
+      "Backcountry sites at Petit-Large (year-round), Pointe-à-Maxime (paddle-in) and Sipu, with fireplaces and pit toilets",
+      "Parking-lot camping, per vehicle, from November to April"
+    ],
+    "lodging": [
+      "oTENTiks at South Kouchibouguac, which sleep a family under a roof",
+      "A rustic shelter for winter stays"
+    ],
+    "seasonalClosures": [
+      "The Visitor Reception Centre, South Kouchibouguac campground and laundromat open from about 20 May to 12 October",
+      "Côte-à-Fabien opens only from late June to early September",
+      "Pointe-à-Maxime and Sipu are open from Victoria Day weekend to Thanksgiving weekend — check before you go with Parks Canada"
+    ]
+  },
+  "weather": "The Northumberland Strait warms through the summer, and the park's beach water is generally warm enough for swimming from June through August; in spring and autumn the water is cold enough to bring a risk of hypothermia. July and August are the busy months at Kellys Beach, and mosquitoes and lion's mane jellyfish are part of summer here. In winter the park grooms 15 kilometres of cross-country ski trails, marks more than 30 kilometres for snowshoeing and grooms trails for fat bikes, and stargazing in the Dark-Sky Preserve is among the winter activities the park lists.",
+  "directions": "The park is on New Brunswick's east coast in Kent County, about an hour's drive north of Moncton and two and a half hours north-east of Fredericton. From Moncton take Highway 15 to Shediac and then Highway 11 north, or the slower Acadian Coastal Drive; from Miramichi take Highway 11 south, or Route 117 along the coast. VIA Rail trains stop at Miramichi and Moncton, 45 minutes and an hour away, both with car rental, and the nearest major airport is Greater Moncton Roméo LeBlanc International. There is no public transport to the park.",
+  "fees": [
+    {
+      "title": "Daily admission, peak season",
+      "cost": "$10.00 adult / $8.75 senior / $19.50 family or group",
+      "amount": 10.0,
+      "currencyCode": "CAD",
+      "detail": "Shoulder season (1 April to the last Friday in June, and the day after Labour Day to 30 November) $5.00 adult. Youth 17 and under free. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Winter trail use, daily",
+      "cost": "$12.00 adult / $10.00 senior / $23.25 family or group",
+      "amount": 12.0,
+      "currencyCode": "CAD",
+      "detail": "Until 31 March; seasonal winter pass $57.50 adult. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "South Kouchibouguac campsite, unserviced",
+      "cost": "$34.00",
+      "amount": 34.0,
+      "currencyCode": "CAD",
+      "detail": "Per site per night, last full week of June to Labour Day; $26.75 in the shoulder season; electricity, water and sewer $47.25; oTENTik $147.50; Côte-à-Fabien primitive $19.50. Reservation fee $11.50 online. As listed by Parks Canada in November 2026; check before you go."
+    },
+    {
+      "title": "Backcountry camping",
+      "cost": "$15.00",
+      "amount": 15.0,
+      "currencyCode": "CAD",
+      "detail": "Per person per night; annual backcountry pass $105.00. As listed by Parks Canada in November 2026; check before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 4,000 years ago",
+      "text": "The earliest archaeological evidence of Indigenous people living and harvesting at Kouchibouguac."
+    },
+    {
+      "year": "Late 1700s",
+      "text": "Permanent European settlement begins; by 1806 all the major estuaries from Escuminac Point to Cape Tormentine are settled."
+    },
+    {
+      "year": "1943",
+      "text": "A Lockheed Ventura of No. 34 Operational Training Unit crashes on the Aldouane Peninsula on 8 February during a training flight, killing all three aboard."
+    },
+    {
+      "year": "1969",
+      "text": "Kouchibouguac National Park is created; expropriation of the seven communities inside it runs until 1972."
+    },
+    {
+      "year": "2011",
+      "text": "Parks Canada introduces an admission pass for expropriated families and their descendants."
+    },
+    {
+      "year": "2016",
+      "text": "An advisory committee of Parks Canada and Mi'gmaq leadership is set up for the parks in New Brunswick."
+    },
+    {
+      "year": "2026",
+      "text": "The pass for expropriated families, which covers up to six generations, becomes valid for life."
+    }
+  ],
+  "safety": [
+    "Currents off the beaches can be strong even for good swimmers, and of the two groomed beaches only Kellys has lifeguards. Swim with a buddy and keep watch over children.",
+    "Paddling on the sea needs knowledge of currents and weather, and the rivers are cold. Always wear a life jacket, and watch for tides, strong currents and fishing boats near Pointe-à-Maxime.",
+    "Lion's mane jellyfish can sting; rubbing wet sand on the skin usually eases it.",
+    "Well water at Petit-Large and Sipu is under a boil-water advisory; carry your own or treat it. The park is remote, so help may take time to arrive."
+  ],
+  "regulations": [
+    "Do not feed, entice or harass wildlife, and do not collect plants, driftwood, rocks or any other natural or historic object without a permit.",
+    "No firewood may be brought into the park; fires only in the fire boxes provided.",
+    "Camp only in designated campgrounds; sleeping in vehicles at pullouts, trailheads and day-use areas is not allowed.",
+    "No bicycles on beaches, dunes, lagoons or rivers; no off-road vehicles; no recreational drones.",
+    "Pets on a leash at all times; they are not allowed at Kellys Beach or on the cross-country ski trails."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-dunes",
+    "theme-wetland",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Passerelle de la plage Kellys.jpg",
+      "caption": "The boardwalk to Kellys Beach",
+      "altText": "A long wooden boardwalk crossing marsh grass and a lagoon"
+    },
+    {
+      "file": "File:Dunes Kouchibouguac.jpg",
+      "caption": "Dunes and lagoon at Kouchibouguac",
+      "altText": "Sand dunes with grass beside a shallow lagoon under a blue sky"
+    },
+    {
+      "file": "File:Kellys Beach, Kouchibouguac National Park, NB (41553936500).jpg",
+      "caption": "Kellys Beach on the Northumberland Strait",
+      "altText": "A wide sandy beach meeting the sea"
+    },
+    {
+      "file": "File:Sentier La Tourbière.JPG",
+      "caption": "The Bog trail",
+      "altText": "A boardwalk winding across a flat green peat bog"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kouchibouguac National Park — Parks Canada",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac"
+    },
+    {
+      "title": "Parc national Kouchibouguac — Parcs Canada",
+      "url": "https://parcs.canada.ca/pn-np/nb/kouchibouguac"
+    },
+    {
+      "title": "Plan your visit — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/visit"
+    },
+    {
+      "title": "Fees — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/visit/tarifs-fees"
+    },
+    {
+      "title": "Hours of operation — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/visit/heures-hours"
+    },
+    {
+      "title": "Beaches — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/activ/plages-beaches"
+    },
+    {
+      "title": "Callanders Beach — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/activ/plages-beaches/callanders"
+    },
+    {
+      "title": "Hiking — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/activ/randonnee-hiking"
+    },
+    {
+      "title": "Cycling — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/activ/velo-bike"
+    },
+    {
+      "title": "Clam fishing — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/activ/coques-clams"
+    },
+    {
+      "title": "Winter activities — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/activ/hiver-winter"
+    },
+    {
+      "title": "Backcountry camping — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/activ/camping/arrierepays-backcountry"
+    },
+    {
+      "title": "Visitor guidelines — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/visit/reg/guidelines-directives"
+    },
+    {
+      "title": "Water safety — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/visit/securite-safety/eau-water"
+    },
+    {
+      "title": "Nature and science — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/nature"
+    },
+    {
+      "title": "Coastal ecosystem — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/nature/eco/cote-coastal"
+    },
+    {
+      "title": "Dark-sky preserve — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/nature/ciel-sky"
+    },
+    {
+      "title": "The Mi'gmaq and Kouchibouguac — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/culture/migmaq"
+    },
+    {
+      "title": "European settlers and former park residents — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/culture/communautes-communities"
+    },
+    {
+      "title": "Ventura bomber crash — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/culture/ventura"
+    },
+    {
+      "title": "Passes for expropriated families — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/info/laissez-passer-pass"
+    },
+    {
+      "title": "Parks Canada and the Mi'gmaq in New Brunswick — Kouchibouguac National Park",
+      "url": "https://parks.canada.ca/pn-np/nb/kouchibouguac/info/gouvernance-governance/nb"
+    },
+    {
+      "title": "Passes, permits and fees — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "title": "Parks Canada reservations — Parks Canada",
+      "url": "https://parks.canada.ca/voyage-travel/reserve"
+    },
+    {
+      "title": "OpenStreetMap (Nominatim and Photon) — sight locations",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}
