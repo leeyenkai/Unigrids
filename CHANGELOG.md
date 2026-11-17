@@ -109,6 +109,10 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- A stamp's lettering keeps its region ink's full strength, so a lightly inked impression
+  no longer drops below 4.5:1 on the page; only the rings print lighter. A long English
+  name round a Japanese stamp breaks onto two lines at its hyphens rather than shrinking
+  to about 4 points.
 - Japanese names of trails, sights, huts, visitor centres and stations are typeset as
   Japanese, so a name such as 表銀座 takes its Japanese glyph forms rather than Chinese ones.
 - Varsom's avalanche danger badges show on the map for every Norwegian national park as

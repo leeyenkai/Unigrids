@@ -51,11 +51,14 @@ public struct StampView: View {
 
     private var usCancellation: some View {
         ZStack {
-            Circle()
-                .stroke(ink, lineWidth: diameter * 0.022)
-            Circle()
-                .stroke(ink, lineWidth: diameter * 0.012)
-                .padding(diameter * 0.055)
+            Group {
+                Circle()
+                    .stroke(ink, lineWidth: diameter * 0.022)
+                Circle()
+                    .stroke(ink, lineWidth: diameter * 0.012)
+                    .padding(diameter * 0.055)
+            }
+            .opacity(face.impression.inkDensity)
 
             VStack(spacing: diameter * 0.03) {
                 Text(face.siteName.uppercased())
@@ -89,9 +92,8 @@ public struct StampView: View {
                     .accessibilityHidden(true)
             }
         }
-        // A tired pad prints lighter. Ink density is the one part of the impression a
-        // reader notices without being able to name.
-        .opacity(face.impression.inkDensity)
+        // A tired pad prints lighter, in the rings: the lettering stays at the region
+        // ink's full strength, which is what holds it to 4.5:1 on the page.
     }
 
     /// After the commemorative stamps (記念スタンプ) at Japan's visitor centres and
@@ -101,15 +103,9 @@ public struct StampView: View {
         ZStack {
             Circle()
                 .stroke(ink, lineWidth: diameter * 0.04)
+                .opacity(face.impression.inkDensity)
             VStack(spacing: diameter * 0.025) {
-                // One line over the kanji, shrunk to fit rather than broken at a hyphen:
-                // "FUJI-HAKONE-" over "IZU" reads as two names.
-                Text(face.siteName.uppercased().replacingOccurrences(of: "-", with: "\u{2011}"))
-                    .font(.system(size: diameter * 0.07, weight: .semibold))
-                    .tracking(diameter * 0.006)
-                    .multilineTextAlignment(.center)
-                    .minimumScaleFactor(0.45)
-                    .lineLimit(1)
+                rimName
                 Text(face.localName ?? face.siteName)
                     .font(.system(size: diameter * 0.16, weight: .heavy))
                     .typesettingLanguage(Locale.Language(identifier: "ja"))
@@ -129,18 +125,44 @@ public struct StampView: View {
             .foregroundStyle(ink)
             verifiedMark
         }
-        .opacity(face.impression.inkDensity)
+    }
+
+    /// The English name over the kanji: one line where it fits without shrinking far —
+    /// "FUJI-HAKONE-" over "IZU" reads as two names — and two, broken at its hyphens,
+    /// where one line would shrink it past reading (Rishiri-Rebun-Sarobetsu).
+    private var rimName: some View {
+        let name = face.siteName.uppercased()
+        let size = diameter * 0.07
+        return ViewThatFits(in: .horizontal) {
+            Text(name.replacingOccurrences(of: "-", with: "\u{2011}"))
+                .font(.system(size: size, weight: .semibold))
+                .tracking(diameter * 0.006)
+                .lineLimit(1)
+                .fixedSize()
+            Text(name.replacingOccurrences(of: "-", with: "\u{2011}"))
+                .font(.system(size: size * 0.8, weight: .semibold))
+                .lineLimit(1)
+                .fixedSize()
+            Text(name.replacingOccurrences(of: "-", with: "-\u{200B}"))
+                .font(.system(size: size * 0.8, weight: .semibold))
+                .multilineTextAlignment(.center)
+                .minimumScaleFactor(0.8)
+                .lineLimit(2)
+        }
     }
 
     /// After a Norwegian postmark: two rings, the name round the top, the date between
     /// bars that run out to the inner ring, the county and NORGE at the foot.
     private var norwegianPostmark: some View {
         ZStack {
-            Circle()
-                .stroke(ink, lineWidth: diameter * 0.018)
-            Circle()
-                .stroke(ink, lineWidth: diameter * 0.01)
-                .padding(diameter * 0.07)
+            Group {
+                Circle()
+                    .stroke(ink, lineWidth: diameter * 0.018)
+                Circle()
+                    .stroke(ink, lineWidth: diameter * 0.01)
+                    .padding(diameter * 0.07)
+            }
+            .opacity(face.impression.inkDensity)
             VStack(spacing: diameter * 0.03) {
                 Text(face.siteName.uppercased())
                     .font(.system(size: diameter * 0.09, weight: .semibold))
@@ -166,7 +188,6 @@ public struct StampView: View {
             .foregroundStyle(ink)
             verifiedMark
         }
-        .opacity(face.impression.inkDensity)
     }
 
     @ViewBuilder private var verifiedMark: some View {
