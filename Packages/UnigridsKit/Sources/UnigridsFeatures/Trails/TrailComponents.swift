@@ -389,6 +389,8 @@ extension TrailDetailScreen {
             + "Database Licence (ODbL). "
         case "kartverket": "Trail line from Kartverket's national database of marked routes "
             + "(Turrutebasen), CC BY 4.0. "
+        case "doc": "Trail line from the Department of Conservation's tracks data, "
+            + "Crown Copyright, CC BY 4.0. "
         default: "Trail line from the National Park Service's public trails data. "
         }
         // The US is measured on USGS 3DEP; abroad, on one global model for both countries.

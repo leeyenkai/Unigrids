@@ -15,6 +15,9 @@ public struct TrailGrade: Hashable, Sendable, Codable {
         /// A Japanese prefecture's mountain grading (山のグレーディング): stamina from 1 to
         /// 10 and technical difficulty from A to E, written together as "3C".
         case japaneseMountainGrading
+        /// New Zealand's Department of Conservation track categories, from a
+        /// wheelchair-accessible short walk to an expert route.
+        case newZealandTrackCategory
     }
 
     public let system: System
@@ -40,6 +43,8 @@ public struct TrailGrade: Hashable, Sendable, Codable {
         case .japaneseMountainGrading:
             guard let parts = japaneseParts else { return nil }
             return "Stamina \(parts.stamina), technical \(parts.technical)"
+        case .newZealandTrackCategory:
+            return Self.trackCategories[grade] == nil ? nil : grade
         }
     }
 
@@ -62,8 +67,20 @@ public struct TrailGrade: Hashable, Sendable, Codable {
             let technical = "ABCDE".distance(from: "ABCDE".startIndex, to: letter)
             let stamina = (parts.stamina - 1) / 2
             return TrailDifficulty.allCases[max(technical, stamina)]
+        case .newZealandTrackCategory:
+            return Self.trackCategories[grade]
         }
     }
+
+    /// DOC's six categories, read into the catalogue's bands.
+    private static let trackCategories: [String: TrailDifficulty] = [
+        "Wheelchair-accessible short walk": .easy,
+        "Easy short walk": .easy,
+        "Easy to intermediate walking track": .moderate,
+        "Intermediate tramping track": .moderatelyStrenuous,
+        "Advanced tramping track": .strenuous,
+        "Expert route": .veryStrenuous,
+    ]
 
     private static let norwegianColours = [
         "G": "Green", "B": "Blue", "R": "Red", "S": "Black", "I": "Not graded",

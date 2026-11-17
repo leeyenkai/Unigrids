@@ -152,3 +152,20 @@ struct SixCountriesTests {
         #expect(MapRegions.world.contains(.init(latitude: -46.9, longitude: 168.1)))
     }
 }
+
+@Suite("New Zealand's track categories")
+struct TrackCategoryTests {
+    @Test("DOC's six categories read as published and into the bands; others are unsaid")
+    func categories() {
+        let milford = TrailGrade(
+            system: .newZealandTrackCategory,
+            grade: "Intermediate tramping track"
+        )
+        #expect(milford.label == "Intermediate tramping track")
+        #expect(milford.band == .moderatelyStrenuous)
+        #expect(TrailGrade(system: .newZealandTrackCategory, grade: "Expert route")
+            .band == .veryStrenuous)
+        let unknown = TrailGrade(system: .newZealandTrackCategory, grade: "Great Walk")
+        #expect(unknown.label == nil && unknown.band == nil)
+    }
+}
