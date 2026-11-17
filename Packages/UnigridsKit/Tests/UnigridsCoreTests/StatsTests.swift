@@ -165,6 +165,41 @@ struct StatsTests {
         #expect(report.themeProgress.first?.completion == Completion(visited: 1, total: 2))
     }
 
+    @Test("themes count the countries the reader has been to, so US figures hold")
+    func themesByCountry() {
+        let volcanoes = Theme(id: "theme-volcanoes", family: .geology, name: "Volcanoes")
+        let fuji = Place(
+            id: "jp-np-fuji-hakone-izu", name: "Fuji-Hakone-Izu", designation: "National Park",
+            kind: .nationalPark, states: [], centre: Coordinate(latitude: 35.4, longitude: 138.7),
+            themes: ["theme-volcanoes"], country: .japan
+        )
+        let places = [
+            place("np-havo", name: "Hawaii Volcanoes", states: ["HI"], themes: ["theme-volcanoes"]),
+            place("np-lavo", name: "Lassen", states: ["CA"], themes: ["theme-volcanoes"]),
+            fuji,
+        ]
+        let home = StatsReport(
+            places: places,
+            visits: [VisitSummary(placeID: "np-havo", date: date(2025))],
+            themes: [volcanoes],
+            calendar: utcCalendar
+        )
+        #expect(home.themeProgress.first?.completion == Completion(visited: 1, total: 2))
+        #expect(home.allPlaces.total == 2)
+        let travelled = StatsReport(
+            places: places,
+            visits: [
+                VisitSummary(placeID: "np-havo", date: date(2025)),
+                VisitSummary(placeID: "jp-np-fuji-hakone-izu", date: date(2025)),
+            ],
+            themes: [volcanoes],
+            calendar: utcCalendar
+        )
+        #expect(travelled.themeProgress.first?.completion == Completion(visited: 2, total: 3))
+        #expect(StatsReport(places: places, visits: [], themes: [volcanoes])
+            .themeProgress.first?.completion.total == 2)
+    }
+
     @Test("a partial hike counts half, and claims no high point")
     func partialHikesCountHalf() {
         let trail = Trail(

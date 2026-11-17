@@ -29,8 +29,8 @@ public struct StatsScreen: View {
     private var report: StatsReport {
         StatsReport(
             places: store.places,
-            visits: visits.map(\.summary),
-            hikes: hikes.map(\.summary),
+            visits: store.placeDaySummaries(visits),
+            hikes: store.placeDaySummaries(hikes),
             trails: store.allTrails,
             themes: store.themes,
             origin: origin
@@ -72,7 +72,7 @@ public struct StatsScreen: View {
                         ShareableSection("Figures") { figures(report) }
                         if !visits.isEmpty {
                             ShareableSection("In a row") {
-                                StreaksSection(visits: visits.map(\.summary))
+                                StreaksSection(visits: store.placeDaySummaries(visits))
                             }
                         }
                         ShareableSection("Kinds of place") { KindsOfPlaceSection(visits: visits) }
@@ -110,13 +110,22 @@ public struct StatsScreen: View {
     }
 
     private func figures(_ report: StatsReport) -> some View {
-        let byTier = Dictionary(
-            grouping: Set(visits.map(\.place)).compactMap(store.place),
-            by: \.tier
-        )
+        let visited = Set(visits.map(\.place)).compactMap(store.place)
+        // By kind, not tier: Japan's quasi-national parks share the state parks' tier and
+        // circle, but they are not state parks.
+        let quasi = visited.count { $0.kind == .quasiNationalPark }
+        let landscapes = visited.count {
+            $0.kind == .protectedLandscape || $0.kind == .natureReserve
+        }
         return FigureGrid(minimum: 140, spacing: 16) {
-            FigureBlock(value: "\(byTier[.npsUnit]?.count ?? 0)", label: "Other NPS sites")
-            FigureBlock(value: "\(byTier[.statePark]?.count ?? 0)", label: "State parks")
+            FigureBlock(value: "\(visited.count { $0.tier == .npsUnit })", label: "Other NPS sites")
+            FigureBlock(value: "\(visited.count { $0.kind == .statePark })", label: "State parks")
+            if quasi > 0 {
+                FigureBlock(value: "\(quasi)", label: "Quasi-national parks")
+            }
+            if landscapes > 0 {
+                FigureBlock(value: "\(landscapes)", label: "Landscapes and reserves")
+            }
             if report.regionsByCountry.count > 1 {
                 FigureBlock(value: report.countries.description, label: "Countries")
                 ForEach(report.regionsByCountry) { figure in

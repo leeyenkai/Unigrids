@@ -31,19 +31,24 @@ public enum TripCalendar {
         /// Set when the stop has a time of day, not just a day.
         public let time: Date?
         public let notes: String?
+        /// The calendar of the stop's place, whose day an all-day event is: a stop at Fuji
+        /// stored as noon in Tokyo is that day's event in any reader's calendar app.
+        public let calendar: Calendar?
 
         public init(
             uid: String,
             title: String,
             day: Date,
             time: Date? = nil,
-            notes: String? = nil
+            notes: String? = nil,
+            calendar: Calendar? = nil
         ) {
             self.uid = uid
             self.title = title
             self.day = day
             self.time = time
             self.notes = notes
+            self.calendar = calendar
         }
     }
 
@@ -78,11 +83,12 @@ public enum TripCalendar {
                     "DTEND:\(timestamp(time.addingTimeInterval(3600)))",
                 ]
             } else {
-                let start = calendar.startOfDay(for: event.day)
-                let end = calendar.date(byAdding: .day, value: 1, to: start) ?? start
+                let own = event.calendar ?? calendar
+                let start = own.startOfDay(for: event.day)
+                let end = own.date(byAdding: .day, value: 1, to: start) ?? start
                 lines += [
-                    "DTSTART;VALUE=DATE:\(day(start, calendar: calendar))",
-                    "DTEND;VALUE=DATE:\(day(end, calendar: calendar))",
+                    "DTSTART;VALUE=DATE:\(day(start, calendar: own))",
+                    "DTEND;VALUE=DATE:\(day(end, calendar: own))",
                 ]
             }
             lines.append("SUMMARY:\(escape(event.title))")

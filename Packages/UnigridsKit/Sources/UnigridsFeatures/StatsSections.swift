@@ -57,8 +57,8 @@ struct VisitsByMonthSection: View {
     let visits: [Visit]
 
     var body: some View {
-        let counts = StatsReport.visitsByMonth(visits.map(\.summary))
-        let months = Calendar.current.shortMonthSymbols
+        let counts = StatsReport.visitsByMonth(store.placeDaySummaries(visits))
+        let months = Calendar.unigrids.shortMonthSymbols
         let points = counts.enumerated().map { (month: months[$0.offset], visits: $0.element) }
         return VStack(alignment: .leading, spacing: 12) {
             SectionHead("Visits by month")

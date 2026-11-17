@@ -14,6 +14,19 @@ public struct VisitSummary: Hashable, Sendable {
     }
 }
 
+extension VisitSummary {
+    /// The visit re-dated to noon, in `calendar`, on the day it fell on at its place
+    /// (ADR 0012). The stats reckon years, months, seasons and streaks in the reader's
+    /// calendar, and without this a visit to Shiretoko on 1 January, stored as noon in
+    /// Tokyo, would count as 31 December to a reader in California.
+    public func onPlaceDay(_ placeCalendar: Calendar, in calendar: Calendar) -> VisitSummary {
+        VisitSummary(
+            placeID: placeID,
+            date: UnigridsCalendar.noon(onDayOf: date, shownIn: placeCalendar, in: calendar)
+        )
+    }
+}
+
 /// A hiked trail, reduced to what the stats need.
 public struct HikeSummary: Hashable, Sendable {
     public let trailID: UnigridsID
@@ -24,6 +37,15 @@ public struct HikeSummary: Hashable, Sendable {
         self.trailID = trailID
         self.date = date
         self.completion = completion
+    }
+
+    /// The hike re-dated onto its park's own day, as `VisitSummary.onPlaceDay` does.
+    public func onPlaceDay(_ placeCalendar: Calendar, in calendar: Calendar) -> HikeSummary {
+        HikeSummary(
+            trailID: trailID,
+            date: UnigridsCalendar.noon(onDayOf: date, shownIn: placeCalendar, in: calendar),
+            completion: completion
+        )
     }
 }
 
@@ -149,7 +171,14 @@ public struct StatsReport: Sendable {
             visited: parks.count { visitedPlaceIDs.contains($0.id) },
             total: parks.count
         )
-        allPlaces = Completion(visited: visitedPlaces.count, total: places.count)
+        // Places and themes are counted over the countries the reader has been to — the
+        // US before any visit — so a reader who has never left the US keeps the figures
+        // they had, rather than finding Japan's volcanoes in their denominator.
+        let scope = Set(visitedPlaces.map(\.country)).union(
+            visitedPlaces.isEmpty ? [.unitedStates] : []
+        )
+        let counted = places.filter { scope.contains($0.country) }
+        allPlaces = Completion(visited: visitedPlaces.count, total: counted.count)
 
         visitedStates = Self.states(in: visitedPlaces)
         states = Completion(visited: visitedStates.count, total: USState.all.count)
@@ -164,7 +193,7 @@ public struct StatsReport: Sendable {
         visitsBySeason = Self.bySeason(visits, calendar: calendar)
         themeProgress = Self.progress(
             themes: themes,
-            places: places,
+            places: counted,
             visitedPlaceIDs: visitedPlaceIDs
         )
 

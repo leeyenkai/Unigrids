@@ -66,7 +66,7 @@ struct YearInReviewScreen: View {
     @State private var year: Int?
 
     private var summaries: [VisitSummary] {
-        visits.map(\.summary)
+        store.placeDaySummaries(visits)
     }
 
     private var years: [Int] {
@@ -79,7 +79,7 @@ struct YearInReviewScreen: View {
                 year: $0,
                 places: store.places,
                 visits: summaries,
-                hikes: hikes.map(\.summary),
+                hikes: store.placeDaySummaries(hikes),
                 trails: store.allTrails
             )
         }

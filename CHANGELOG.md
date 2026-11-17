@@ -87,6 +87,12 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- Days abroad are the place's own, wherever the app is read: a stop at Fuji on 20 July
+  sits under 20 July in a trip's day-by-day and its calendar export, and a visit to
+  Shiretoko on New Year's Day counts in that year's stats, streaks and Year in review on a
+  phone set to New York. Stats count Japan's quasi-national parks and Norway's landscapes
+  and reserves on their own, not as state parks, and theme progress counts the countries
+  you have visited, so a reader who has never left the US keeps the figures they had.
 - A trail's own grade shows as published — "Grade, by Kartverket: Red (R)" — and its
   effort is no longer labelled an estimate when it comes from that grade; catalogue rows
   say "Red grade", or mark an estimate as such.

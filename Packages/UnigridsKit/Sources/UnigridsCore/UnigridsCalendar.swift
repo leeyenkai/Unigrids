@@ -27,6 +27,18 @@ public enum UnigridsCalendar {
         gregorian(timeZone(for: place))
     }
 
+    /// The calendar for days at the place `id` names, when the dataset may no longer hold
+    /// it: a place gone from the data still keeps its country's zone, read from its ID.
+    public static func gregorian(at place: Place?, id: UnigridsID) -> Calendar {
+        if let place {
+            return gregorian(at: place)
+        }
+        let country = Country.inferred(from: id)
+        let zone = country == .unitedStates ? nil
+            : country.mainTimeZoneID.flatMap(TimeZone.init(identifier:))
+        return gregorian(zone ?? .current)
+    }
+
     /// The time zone a place keeps.
     public static func timeZone(for place: Place?) -> TimeZone {
         guard let place else { return .current }

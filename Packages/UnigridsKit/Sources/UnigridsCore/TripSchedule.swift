@@ -42,10 +42,15 @@ public enum TripSchedule {
     /// A leg belongs to the day of the stop it arrives at, because that is the day the
     /// driving happens on. Stops without a date are left out of the days and their legs
     /// uncounted, rather than guessed onto a day.
+    ///
+    /// Each stop's day is its own place's (`calendars`, by stop): a stop at Fuji on 12 May
+    /// is stored as noon in Tokyo, which is 11 May in New York, and belongs to the 12th
+    /// wherever the trip is read. `calendar` is the reader's, in which the days are given.
     public static func days(
         stops: [(id: UnigridsID, date: Date?)],
         legs: [DriveLeg],
-        calendar: Calendar = UnigridsCalendar.gregorian()
+        calendar: Calendar = UnigridsCalendar.gregorian(),
+        calendars: [UnigridsID: Calendar] = [:]
     ) -> [TripDay] {
         var order: [Date] = []
         var stopsByDay: [Date: [UnigridsID]] = [:]
@@ -57,7 +62,10 @@ public enum TripSchedule {
         )
         for (index, stop) in stops.enumerated() {
             guard let date = stop.date else { continue }
-            let day = calendar.startOfDay(for: date)
+            let own = calendars[stop.id] ?? calendar
+            let day = calendar.startOfDay(
+                for: UnigridsCalendar.noon(onDayOf: date, shownIn: own, in: calendar)
+            )
             if stopsByDay[day] == nil {
                 order.append(day)
             }

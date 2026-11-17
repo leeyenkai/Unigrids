@@ -135,7 +135,12 @@ extension String {
 }
 
 extension ResolvedStop {
-    /// The calendar event for a dated stop.
+    /// The calendar of the day a stop is planned for: its place's own, else `fallback`.
+    func dayCalendar(fallback: Calendar) -> Calendar {
+        place.map { UnigridsCalendar.gregorian(at: $0) } ?? fallback
+    }
+
+    /// The calendar event for a dated stop, on its place's own day.
     func calendarEvent(calendar: Calendar) -> TripCalendar.Event? {
         guard let day = stop.plannedDate else { return nil }
         let title = switch stop.target {
@@ -150,7 +155,8 @@ extension ResolvedStop {
             title: title,
             day: day,
             time: stop.isTimed ? day : nil,
-            notes: stop.notes
+            notes: stop.notes,
+            calendar: dayCalendar(fallback: calendar)
         )
     }
 

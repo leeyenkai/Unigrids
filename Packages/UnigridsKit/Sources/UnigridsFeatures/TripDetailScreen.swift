@@ -221,9 +221,15 @@ struct TripDetailScreen: View {
     }
 
     private var days: [TripDay] {
-        TripSchedule.days(
+        let calendar = UnigridsCalendar.gregorian()
+        return TripSchedule.days(
             stops: stops.map { (id: $0.scheduleID, date: $0.stop.plannedDate) },
-            legs: routedLegs
+            legs: routedLegs,
+            calendar: calendar,
+            calendars: Dictionary(
+                stops.map { ($0.scheduleID, $0.dayCalendar(fallback: calendar)) },
+                uniquingKeysWith: { first, _ in first }
+            )
         )
     }
 
