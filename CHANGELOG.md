@@ -109,6 +109,9 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- "Share my parks" draws each country you have been to on its own map, Japan's parks on
+  Japan's prefectures and Norway's on its counties, rather than all 146 parks over the US
+  states.
 - A stamp's lettering keeps its region ink's full strength, so a lightly inked impression
   no longer drops below 4.5:1 on the page; only the rings print lighter. A long English
   name round a Japanese stamp breaks onto two lines at its hyphens rather than shrinking

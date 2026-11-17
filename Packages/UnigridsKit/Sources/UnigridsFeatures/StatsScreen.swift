@@ -58,7 +58,8 @@ public struct StatsScreen: View {
                                 StatsShareCard(
                                     report: report,
                                     parks: store.nationalParks,
-                                    index: VisitIndex(visits: visits, trips: trips)
+                                    index: VisitIndex(visits: visits, trips: trips),
+                                    subdivisions: visitedSubdivisions
                                 )
                             }
                             NavigationLink {
@@ -359,5 +360,14 @@ extension StatsScreen {
                     .foregroundStyle(style.inkSecondary)
             }
         }
+    }
+}
+
+extension StatsScreen {
+    /// States, prefectures and counties with a visit, by country, for the share card.
+    private var visitedSubdivisions: [Country: Set<String>] {
+        let places = Set(visits.map(\.place)).compactMap(store.place)
+        return Dictionary(grouping: places, by: \.country)
+            .mapValues { Set($0.flatMap(\.subdivisions).map(\.code)) }
     }
 }

@@ -82,27 +82,74 @@ struct StateTile: View {
     }
 }
 
-/// The share card itself: the band, the figure, the grid, the states.
+/// The share card itself: the band, the figure, and for each country the reader has
+/// been to its grid of national parks and its map — a Japanese park on Japan's map, not
+/// on the US one.
 struct StatsShareCard: View {
     @Environment(\.unigrid) private var style
     let report: StatsReport
     let parks: [Place]
     let index: VisitIndex
+    /// States, prefectures and counties visited, by country.
+    let subdivisions: [Country: Set<String>]
+
+    /// The countries with a national park visited; the first in the data if none is.
+    private var countries: [StatsReport.CountryCompletion] {
+        let visited = report.nationalParksByCountry.filter { $0.completion.visited > 0 }
+        return visited.isEmpty ? Array(report.nationalParksByCountry.prefix(1)) : visited
+    }
+
+    private var detail: String {
+        let shown = countries
+        if shown.count > 1 {
+            return "of \(report.nationalParks.total) · \(shown.count) countries"
+        }
+        guard let only = shown.first else { return "" }
+        let regions = only.country == .unitedStates
+            ? "\(report.states.visited) states"
+            : "\(subdivisions[only.country]?.count ?? 0) "
+            + only.country.subdivisionsTitle.lowercased()
+        return "of \(only.completion.total) · \(regions)"
+    }
+
+    /// One country's own count, or every country's together.
+    private func figure(_ shown: [StatsReport.CountryCompletion]) -> Int {
+        shown.count == 1 ? shown[0].completion.visited : report.nationalParks.visited
+    }
 
     var body: some View {
+        let shown = countries
         VStack(alignment: .leading, spacing: 0) {
             BandHeader("My national parks", kicker: "Unigrids")
             VStack(alignment: .leading, spacing: 16) {
                 HStack(alignment: .firstTextBaseline, spacing: 8) {
-                    Text("\(report.nationalParks.visited)")
+                    Text("\(figure(shown))")
                         .font(.custom("HelveticaNeue-Bold", size: 64))
                         .foregroundStyle(style.ink)
-                    Text("of \(report.nationalParks.total) · \(report.states.visited) states")
+                    Text(detail)
                         .font(UnigridStyle.rowDetail)
                         .foregroundStyle(style.inkSecondary)
                 }
-                ParkGrid(parks: parks, index: index, side: 30)
-                USTileMap(visited: Set(report.visitedStates.map(\.code)))
+                ForEach(shown) { figure in
+                    VStack(alignment: .leading, spacing: 10) {
+                        if shown.count > 1 {
+                            Kicker("\(figure.country.name) · \(figure.completion.description)")
+                        }
+                        ParkGrid(
+                            parks: parks.filter { $0.country == figure.country },
+                            index: index,
+                            side: shown.count > 1 ? 22 : 30
+                        )
+                        if figure.country == .unitedStates {
+                            USTileMap(visited: Set(report.visitedStates.map(\.code)))
+                        } else {
+                            SubdivisionTileMap(
+                                grid: .grid(for: figure.country),
+                                visited: subdivisions[figure.country] ?? []
+                            )
+                        }
+                    }
+                }
             }
             .padding(20)
         }
