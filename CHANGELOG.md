@@ -87,6 +87,13 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- Live warnings abroad: a JMA eruption warning badges its park's pin as soon as it is
+  fetched; a park the background watch could not reach keeps its place, so its next
+  closure still notifies; a feed whose shape has changed says the service could not be
+  read instead of "no warnings"; leaving a page mid-fetch no longer counts as the service
+  failing; Varsom is asked for Norway's date; and a Japanese park with no volcano JMA
+  monitors says so. An alert list left open for days shows the date it was fetched. The
+  background watch asks the NPS for the whole feed and keeps the trip's parks to itself.
 - The offline Park maps draw a lake mapped in pieces as one body of water, not as
   slivers closed by straight lines: Yellowstone Lake was cut in two, and a stretch of the
   Yellowstone River drawn as a lake.

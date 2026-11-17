@@ -49,6 +49,34 @@ struct AlertsTests {
 
 @Suite("Warnings abroad")
 struct AlertsAbroadTests {
+    @Test("a feed whose entries all fail to decode is an error, not an all-clear")
+    func changedShape() throws {
+        let renamed = Data(#"[{"RegionId": 3011, "RegionName": "Tromsø", "DangerLevel": 3}]"#.utf8)
+        #expect(throws: DecodingError.self) {
+            try lossyValues(JSONDecoder().decode(
+                [Lossy<VarsomAvalanche.Forecast>].self, from: renamed
+            ))
+        }
+        let empty = try lossyValues(JSONDecoder().decode(
+            [Lossy<VarsomAvalanche.Forecast>].self, from: Data("[]".utf8)
+        ))
+        #expect(empty.isEmpty)
+    }
+
+    @Test("Varsom is asked for Norway's date, not UTC's")
+    func varsomDay() throws {
+        // 23:30 UTC on 14 January is 00:30 on the 15th in Oslo.
+        let moment = try #require(ISO8601DateFormatter().date(from: "2027-01-14T23:30:00Z"))
+        #expect(VarsomAvalanche.forecastDay(moment) == "2027-01-15")
+    }
+
+    @Test("a cancelled request is not a failure")
+    func cancellation() {
+        #expect(isCancellation(CancellationError()))
+        #expect(isCancellation(URLError(.cancelled)))
+        #expect(!isCancellation(URLError(.timedOut)))
+    }
+
     @Test("JMA's warnings are read per volcano, and levels in its own words")
     func jmaWarnings() throws {
         let json = Data(#"""

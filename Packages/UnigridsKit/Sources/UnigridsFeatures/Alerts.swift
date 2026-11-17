@@ -90,9 +90,8 @@ enum NPSAlerts {
         init(from decoder: any Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             // Each alert on its own: one posted with a missing field costs that alert, not
-            // the page.
-            data = try container.decode([Lossy<ParkAlert>].self, forKey: .data)
-                .compactMap(\.value)
+            // the page. A page where none decodes has changed shape, and is an error.
+            data = try lossyValues(container.decode([Lossy<ParkAlert>].self, forKey: .data))
             // The API sends its counts as strings.
             if let text = try? container.decode(String.self, forKey: .total) {
                 total = Int(text)
@@ -169,6 +168,23 @@ struct Lossy<Value: Decodable>: Decodable {
     }
 }
 
+/// The elements of a feed that decoded. A feed with entries of which none decoded has
+/// changed its shape, so this throws: the panel then says the service could not be read,
+/// never that nothing is posted.
+func lossyValues<Value>(_ items: [Lossy<Value>]) throws -> [Value] {
+    let values = items.compactMap(\.value)
+    guard values.isEmpty, !items.isEmpty else { return values }
+    throw DecodingError.dataCorrupted(
+        .init(codingPath: [], debugDescription: "None of \(items.count) entries decoded")
+    )
+}
+
+/// Whether an error only says the request was given up, as when the view that asked for
+/// it went away: not a failure to remember or back off from.
+func isCancellation(_ error: any Error) -> Bool {
+    error is CancellationError || (error as? URLError)?.code == .cancelled
+}
+
 /// Every park's live alerts, fetched once for the whole system and shared by the map's
 /// badges, the guides and leaflets, and the planner's conflict flags (SPECIFICATION.md §5,
 /// §10).
@@ -191,7 +207,13 @@ public final class AlertsCenter {
     private(set) var abroad: [UnigridsID: [ParkAlert]] = [:]
     private(set) var abroadUpdated: [UnigridsID: Date] = [:]
     private(set) var abroadFailed: Set<UnigridsID> = []
-    private var jmaFetched: Date?
+    /// Bumped whenever a warning abroad is recorded, so the map rebuilds its badges: the
+    /// NPS's `lastUpdated` says nothing about JMA's or Varsom's.
+    private(set) var abroadRevision = 0
+    /// How many of the volcanoes JMA monitors lie in each Japanese park, from the last
+    /// fetch: a park with none has no eruption warning to give, which the panel says
+    /// rather than implying a quiet volcano.
+    private(set) var volcanoCount: [UnigridsID: Int] = [:]
 
     public init() {}
 
@@ -212,7 +234,12 @@ public final class AlertsCenter {
         }
         loading = true
         defer { loading = false }
-        guard let alerts = try? await NPSAlerts.fetchAll() else {
+        let alerts: [ParkAlert]
+        do {
+            alerts = try await NPSAlerts.fetchAll()
+        } catch {
+            // Leaving the screen is not the service failing.
+            guard !isCancellation(error) else { return }
             failures += 1
             lastFailed = true
             // Two minutes, then four, eight… up to an hour.
@@ -272,7 +299,7 @@ public final class AlertsCenter {
     /// volcanoes inside its outline, Varsom's where its centre lies.
     func refreshAbroad(_ place: Place, boundary: PlaceBoundary?) async {
         guard place.country != .unitedStates, Self.covers(place) else { return }
-        if let updated = abroadUpdated[place.id], Date().timeIntervalSince(updated) < 3600 {
+        if isFresh(place.id) {
             return
         }
         switch place.country {
@@ -283,6 +310,7 @@ public final class AlertsCenter {
                 let alerts = try await VarsomAvalanche.alerts(at: place.centre)
                 record(alerts, for: place.id)
             } catch {
+                guard !isCancellation(error) else { return }
                 abroadFailed.insert(place.id)
             }
         case .unitedStates:
@@ -294,17 +322,20 @@ public final class AlertsCenter {
     /// and the warnings in force; at most hourly.
     func refreshJapan(_ parks: [(Place, PlaceBoundary?)], force: Bool = false) async {
         guard !parks.isEmpty else { return }
-        let fresh = jmaFetched.map { Date().timeIntervalSince($0) < 3600 } ?? false
-        if !force, fresh, parks.allSatisfy({ abroadUpdated[$0.0.id] != nil }) {
+        if !force, parks.allSatisfy({ isFresh($0.0.id) }) {
             return
         }
-        guard let (volcanoes, warnings) = try? await JMAVolcanoes.fetch() else {
+        let volcanoes: [JMAVolcanoes.Volcano]
+        let warnings: [JMAVolcanoes.Warning]
+        do {
+            (volcanoes, warnings) = try await JMAVolcanoes.fetch()
+        } catch {
+            guard !isCancellation(error) else { return }
             for (place, _) in parks {
                 abroadFailed.insert(place.id)
             }
             return
         }
-        jmaFetched = Date()
         let byCode = Dictionary(grouping: warnings, by: \.volcanoCode)
         for (place, boundary) in parks {
             // A volcano is the park's when its summit lies inside the outline, or, for a
@@ -316,6 +347,7 @@ public final class AlertsCenter {
             let alerts = inside.flatMap { volcano in
                 (byCode[volcano.code] ?? []).map { JMAVolcanoes.alert(for: $0, volcano: volcano) }
             }
+            volcanoCount[place.id] = inside.count
             record(alerts, for: place.id)
         }
     }
@@ -324,6 +356,13 @@ public final class AlertsCenter {
         abroad[id] = alerts.sorted { ($0.kind, $0.title) < ($1.kind, $1.title) }
         abroadUpdated[id] = Date()
         abroadFailed.remove(id)
+        abroadRevision += 1
+    }
+
+    /// Whether a place abroad was fetched in the last hour: each park by its own time, so
+    /// opening one park does not make another's hour-old warnings look new.
+    private func isFresh(_ id: UnigridsID) -> Bool {
+        abroadUpdated[id].map { Date().timeIntervalSince($0) < 3600 } ?? false
     }
 
     /// The badge a place's pin carries, if any: danger outranks closure, and cautions and
@@ -357,128 +396,6 @@ struct AlertsPanel: View {
             } else {
                 await center?.refreshAbroad(place, boundary: store.boundary(for: place.id))
             }
-        }
-    }
-}
-
-/// A park's alerts as a list, with when they were fetched: for the guide's panel, a
-/// leaflet and the map's overview card.
-struct AlertList: View {
-    @Environment(\.unigrid) private var style
-    @Environment(AlertsCenter.self) private var center: AlertsCenter?
-    let place: Place
-
-    private var source: AlertSource {
-        AlertsCenter.source(for: place)
-    }
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            if let center, let updated = center.updated(for: place) {
-                let alerts = center.alerts(for: place)
-                if alerts.isEmpty {
-                    Text(source.noneText)
-                        .font(UnigridStyle.prose)
-                        .foregroundStyle(style.inkSecondary)
-                } else {
-                    ForEach(alerts) { alert in
-                        AlertRow(alert: alert)
-                        if alert.id != alerts.last?.id {
-                            Hairline()
-                        }
-                    }
-                }
-                Text("Live from \(source.name) · updated "
-                    + updated.formatted(date: .omitted, time: .shortened))
-                    .font(UnigridStyle.caption)
-                    .foregroundStyle(style.inkSecondary)
-            } else if center?.failed(for: place) == true {
-                Text(source.unreachable)
-                    .font(UnigridStyle.prose)
-                    .foregroundStyle(style.inkSecondary)
-            } else {
-                ProgressView()
-                    .frame(maxWidth: .infinity, alignment: .leading)
-            }
-        }
-    }
-}
-
-/// A card's short version: the dangers and closures by title — what the pin's badge stands
-/// for — and how many cautions and notices the full list holds.
-struct CardAlerts: View {
-    @Environment(\.unigrid) private var style
-    @Environment(AlertsCenter.self) private var center: AlertsCenter?
-    let place: Place
-
-    var body: some View {
-        let all = center?.alerts(for: place) ?? []
-        let urgent = all.filter { $0.kind <= .closure }
-        VStack(alignment: .leading, spacing: 8) {
-            SectionHead("Alerts", detail: "\(urgent.count)")
-            ForEach(urgent.prefix(3)) { alert in
-                HStack(alignment: .firstTextBaseline, spacing: 8) {
-                    Kicker(alert.kind.name)
-                    Text(alert.title)
-                        .font(UnigridStyle.rowDetail)
-                        .foregroundStyle(style.ink)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-                .accessibilityElement(children: .combine)
-            }
-            let more = all.count - min(urgent.count, 3)
-            if more > 0 {
-                Text("\(more) more on its page.")
-                    .font(UnigridStyle.caption)
-                    .foregroundStyle(style.inkSecondary)
-            }
-        }
-    }
-}
-
-struct AlertRow: View {
-    @Environment(\.unigrid) private var style
-    let alert: ParkAlert
-    @State private var expanded = false
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            HStack(spacing: 6) {
-                Rectangle()
-                    .fill(ink)
-                    .frame(width: 9, height: 9)
-                Kicker(alert.kind.name)
-            }
-            Text(alert.title)
-                .font(UnigridStyle.itemTitle)
-                .foregroundStyle(style.ink)
-                .fixedSize(horizontal: false, vertical: true)
-            Button {
-                expanded.toggle()
-            } label: {
-                Text(alert.description)
-                    .font(UnigridStyle.prose)
-                    .foregroundStyle(style.inkSecondary)
-                    .lineLimit(expanded ? nil : 3)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .multilineTextAlignment(.leading)
-            }
-            .buttonStyle(.plain)
-            .accessibilityHint(expanded ? "Shows less" : "Shows the whole alert")
-            if let link = alert.url.flatMap(URL.init(string:)), !(alert.url ?? "").isEmpty {
-                Link(alert.source.linkLabel, destination: link)
-                    .font(UnigridStyle.caption)
-            }
-        }
-        .accessibilityElement(children: .contain)
-    }
-
-    private var ink: Color {
-        switch alert.kind {
-        case .danger: style.seal
-        case .closure: style.ink
-        case .caution: style.trail
-        case .information: style.inkSecondary
         }
     }
 }

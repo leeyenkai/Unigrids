@@ -34,18 +34,29 @@ public enum AlertDiff {
     }
 
     /// The alerts to tell the reader about, and what has now been seen. `watching` is the
-    /// set of park codes the fetch covered.
+    /// set of park codes the fetch covered; `unreached`, the parks it meant to cover but
+    /// could not, whose alerts are therefore missing from `alerts`.
     public static func check(
         _ alerts: [Alert],
         watching: Set<String>,
+        unreached: Set<String> = [],
         seen: Seen
     ) -> (notify: [Alert], seen: Seen) {
         let watching = Set(watching.map { $0.lowercased() })
+        // A park that could not be reached keeps its place: dropped, its next warning would
+        // be taken in silently as a newly added park's.
+        let kept = Set(unreached.map { $0.lowercased() }).intersection(seen.parks)
         let notify = alerts.filter {
             $0.isUrgent && seen.parks.contains($0.parkCode) && !seen.alerts.contains($0.id)
         }
-        // Only what is posted now is remembered, so the list never grows past the live feed.
-        let now = Seen(parks: watching, alerts: Set(alerts.map(\.id)))
+        // Only what is posted now is remembered, so the list never grows past the live feed;
+        // while a park is unreached, what was seen before is kept, since its share of the
+        // list cannot be told apart.
+        let posted = Set(alerts.map(\.id))
+        let now = Seen(
+            parks: watching.union(kept),
+            alerts: kept.isEmpty ? posted : posted.union(seen.alerts)
+        )
         return (notify, now)
     }
 }

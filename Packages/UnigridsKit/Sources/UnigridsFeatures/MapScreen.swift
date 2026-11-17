@@ -104,6 +104,7 @@ public struct MapScreen: View {
         key.combine(index.visitedPlaceIDs)
         key.combine(index.plannedPlaceIDs)
         key.combine(alerts?.lastUpdated)
+        key.combine(alerts?.abroadRevision)
         key.combine(store.places.count)
         return atlasCache.places(for: key.finalize()) { atlasPlaces(index: index) }
     }

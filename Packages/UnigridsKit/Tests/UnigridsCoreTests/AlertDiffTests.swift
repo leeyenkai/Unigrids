@@ -33,4 +33,19 @@ struct AlertDiffTests {
         let back = AlertDiff.check([closure], watching: ["zion"], seen: left.seen)
         #expect(back.notify.isEmpty)
     }
+
+    @Test("a park the watch could not reach keeps its place, so its next closure is news")
+    func unreached() {
+        let seen = AlertDiff.Seen(parks: ["zion", "yell"], alerts: ["old"])
+        // Yellowstone's request failed: Zion's alerts came back, Yellowstone's did not.
+        let failed = AlertDiff.check([caution], watching: ["zion"], unreached: ["yell"], seen: seen)
+        #expect(failed.seen.parks == ["zion", "yell"])
+        #expect(failed.seen.alerts.contains("old"))
+        let yellowstone = AlertDiff.Alert(id: "y1", parkCode: "yell", isUrgent: true)
+        let next = AlertDiff.check([yellowstone], watching: ["zion", "yell"], seen: failed.seen)
+        #expect(next.notify == [yellowstone])
+        // A park never seen before is still taken in silently when it is first reached.
+        let fresh = AlertDiff.check([], watching: [], unreached: ["grca"], seen: .init())
+        #expect(fresh.seen.parks.isEmpty)
+    }
 }

@@ -59,8 +59,11 @@ public enum AlertWatch {
             save(AlertDiff.Seen(parks: [], alerts: seen.alerts))
             return
         }
-        guard let alerts = try? await NPSAlerts.fetch(parkCodes: Array(watching).sorted())
-        else { return }
+        // The whole feed, filtered here: asking for the trip's parks by code would tell the
+        // NPS where the reader is going.
+        guard let alerts = try? await NPSAlerts.fetchAll().filter({
+            $0.parkCode.map { watching.contains($0.lowercased()) } ?? false
+        }) else { return }
         let byID = Dictionary(alerts.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
         let result = AlertDiff.check(
             alerts.compactMap { alert in
@@ -131,6 +134,7 @@ public enum AlertWatch {
         let result = AlertDiff.check(
             alerts,
             watching: Set(reached.map(\.id.rawValue)),
+            unreached: Set(parks.filter { center.failed(for: $0) }.map(\.id.rawValue)),
             seen: seen
         )
         save(result.seen, key: seenAbroadKey)

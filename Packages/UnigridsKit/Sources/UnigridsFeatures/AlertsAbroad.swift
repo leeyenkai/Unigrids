@@ -94,7 +94,7 @@ enum JMAVolcanoes {
             let name_jp: String // swiftlint:disable:this identifier_name
             let name_en: String // swiftlint:disable:this identifier_name
         }
-        return try JSONDecoder().decode([Lossy<Row>].self, from: data).compactMap(\.value)
+        return try lossyValues(JSONDecoder().decode([Lossy<Row>].self, from: data))
             .compactMap { row in
                 guard row.latlon.count == 2, let lat = Double(row.latlon[0]),
                       let lon = Double(row.latlon[1]) else { return nil }
@@ -122,7 +122,7 @@ enum JMAVolcanoes {
             let reportDatetime: String?
             let volcanoInfos: [Info]
         }
-        let reports = try JSONDecoder().decode([Lossy<Report>].self, from: data).compactMap(\.value)
+        let reports = try lossyValues(JSONDecoder().decode([Lossy<Report>].self, from: data))
         let dates = ISO8601DateFormatter()
         return reports.flatMap { report in
             report.volcanoInfos
@@ -211,17 +211,22 @@ enum VarsomAvalanche {
     /// Today's forecast where `point` lies, in English. Outside the season (December to
     /// May on the mainland) the region carries no rating, and no alert results.
     static func alerts(at point: Coordinate, on day: Date = Date()) async throws -> [ParkAlert] {
-        let format = Date.ISO8601FormatStyle().year().month().day()
-        let date = day.formatted(format)
+        let date = forecastDay(day)
         let path = "https://api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/"
             + "AvalancheWarningByCoordinates/Simple/"
             + String(format: "%.4f/%.4f", point.latitude, point.longitude)
             + "/2/\(date)/\(date)"
         guard let url = URL(string: path) else { throw URLError(.badURL) }
         let data = try await AbroadFetch.data(url)
-        let forecasts = try JSONDecoder().decode([Lossy<Forecast>].self, from: data)
-            .compactMap(\.value)
+        let forecasts = try lossyValues(JSONDecoder().decode([Lossy<Forecast>].self, from: data))
         return forecasts.compactMap(alert(for:))
+    }
+
+    /// The forecast day as Varsom names it: Norway's date, not UTC's, so half past
+    /// midnight in Oslo asks for today's forecast rather than yesterday's.
+    static func forecastDay(_ day: Date) -> String {
+        let oslo = TimeZone(identifier: "Europe/Oslo") ?? .gmt
+        return day.formatted(Date.ISO8601FormatStyle(timeZone: oslo).year().month().day())
     }
 
     /// Danger levels 4 and 5 are dangers, 3 a caution, 2 and below information; 0 is no
