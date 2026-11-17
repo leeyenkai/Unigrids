@@ -126,3 +126,26 @@ struct BundledAbroadTests {
         #expect(store.search("kuju").contains { $0.id == "jp-np-aso-kuju" })
     }
 }
+
+extension BundledAbroadTests {
+    /// The stations a reader travels from, which Overpass's partial answers once left out:
+    /// Japan's OpenStreetMap is now read whole from a Geofabrik extract.
+    @Test("Japan's main stations are on the rail network, with their lines")
+    func mainStations() throws {
+        let network = try store.transportNetwork()
+        let japan = network.railStations.filter { $0.country == .japan }
+        for name in ["Tokyo", "Sapporo", "Shin-Osaka", "Hakata", "Matsumoto"] {
+            let station = japan.first { $0.name.contains(name) && !($0.lines ?? []).isEmpty }
+            #expect(station != nil, "\(name) is missing")
+        }
+    }
+
+    @Test("most of Japan's national parks list their huts")
+    func japaneseHuts() {
+        let parks = store.nationalParks.filter { $0.country == .japan }
+        let withHuts = parks.count { park in
+            store.pointsOfInterest(in: park.id).contains { $0.kind == .hut }
+        }
+        #expect(withHuts >= 15)
+    }
+}
