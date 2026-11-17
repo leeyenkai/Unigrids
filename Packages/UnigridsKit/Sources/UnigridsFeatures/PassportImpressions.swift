@@ -54,7 +54,8 @@ struct America250Page: View {
                                             isVerifiedOnSite: stamp.isVerifiedOnSite,
 
                                             calendar: UnigridsCalendar.gregorian(at: place),
-                                            localName: place.leadLocalName?.text
+                                            localName: place.leadLocalName?.text,
+                                            emblem: store.emblem(for: place)
                                         ),
                                         diameter: 120
                                     )
@@ -187,6 +188,7 @@ struct ImpressionsSheet: View {
 /// One impression, large, with what it records.
 private struct ImpressionRow: View {
     @Environment(\.modelContext) private var context
+    @Environment(\.referenceStore) private var store
     @Environment(\.unigrid) private var style
     @Bindable var stamp: Stamp
     let place: Place
@@ -205,7 +207,8 @@ private struct ImpressionRow: View {
                     isVerifiedOnSite: stamp.isVerifiedOnSite,
 
                     calendar: UnigridsCalendar.gregorian(at: place),
-                    localName: place.leadLocalName?.text
+                    localName: place.leadLocalName?.text,
+                    emblem: store.emblem(for: place)
                 ),
                 diameter: 104
             )

@@ -14,6 +14,7 @@ Writes, into ``UnigridsReference/Resources/reference/``:
 ``trails.json``       every national park trail, measured (``trail_catalogue``)
 ``brochures.json``    each NPS unit's official PDFs and maps page (``brochures``)
 ``climate.json``      monthly climate at each national park (``climate``)
+``emblems.json``      the stamps' pictures, drawn in ``content/emblems/`` (``emblems``)
 ``images/``           each national park's photographs, resized
 
 This module is the frame. Each country named on the command line assembles its own share
@@ -32,7 +33,7 @@ from collections.abc import Sequence
 from datetime import UTC, date, datetime
 from typing import Any
 
-from . import config, countries, outline, reference_content
+from . import config, countries, emblems, outline, reference_content
 from .countries import BuildContext, Contribution
 from .countries.common import encode_outline
 
@@ -93,6 +94,8 @@ def build(*, online: bool = False, codes: Sequence[str] = countries.DEFAULT) -> 
             note if note.startswith(f"{country.NAME}:") else f"{country.NAME}: {note}"
             for (country, _), note in zip(shares, notes, strict=True)
         ]
+    drawn = emblems.load()
+    undrawn = emblems.attach(places, drawn)
     _write("manifest", _manifest(notes, countries=len(notes)))
     _write("places", places)
     _write("pois", merged.pois)
@@ -108,6 +111,7 @@ def build(*, online: bool = False, codes: Sequence[str] = countries.DEFAULT) -> 
         _write("brochures", merged.documents, compact=True)
     if merged.climate is not None:
         _write("climate", merged.climate, compact=True)
+    _write("emblems", drawn, compact=True)
     for place_id, guide in guides.items():
         _write(f"guides/{place_id}", guide)
     for stale in guides_dir.glob("*.json"):
@@ -125,6 +129,7 @@ def build(*, online: bool = False, codes: Sequence[str] = countries.DEFAULT) -> 
         tiers[place["kind"]] = tiers.get(place["kind"], 0) + 1
     print(f"    places: {len(places)} {tiers}")
     print(f"    points of interest: {len(merged.pois)}")
+    print(f"    stamp pictures: {len(drawn)}; national parks still on a motif: {len(undrawn)}")
     print(f"    outlines: {len(boundaries)}, {outline_bytes / 1e6:.2f} MB")
     print(f"    photographs: {len(list(images_dir.iterdir()))}, {image_bytes / 1e6:.1f} MB")
     written = sum(1 for guide in guides.values() if guide.get("story"))

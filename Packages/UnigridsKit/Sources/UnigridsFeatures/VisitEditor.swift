@@ -143,7 +143,8 @@ struct VisitEditor: View {
                     seed: stamp.seed,
                     isVerifiedOnSite: stamp.isVerifiedOnSite,
                     calendar: calendar,
-                    localName: place?.leadLocalName?.text
+                    localName: place?.leadLocalName?.text,
+                    emblem: place.flatMap { store.emblem(for: $0) }
                 )
             }
         )

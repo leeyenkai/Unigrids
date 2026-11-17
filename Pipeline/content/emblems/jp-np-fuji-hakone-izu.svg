@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="Mount Fuji over a lake">
+  <path d="M6 44 C22 39 33 28 42 15.5 H58 C67 28 78 39 94 44"/>
+  <path class="fill" d="M42 15.5 H58 L63.5 23 L59 21.5 L56 25 L52.5 21.5 L49 25.5 L45.5 21.5 L37 23.5 Z"/>
+  <path d="M4 44 H96"/>
+  <path d="M12 49 H40 M54 49 H88 M24 54 H76"/>
+</svg>

@@ -71,7 +71,8 @@ public struct StampSheet: View {
             seed: seed,
             isVerifiedOnSite: verified,
             calendar: calendar,
-            localName: place.leadLocalName?.text
+            localName: place.leadLocalName?.text,
+            emblem: store.emblem(for: place)
         )
     }
 

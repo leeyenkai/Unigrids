@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="a flag on a staff">
+  <path d="M40 54 V10"/>
+  <path class="fill" d="M40 11 C47.5 8 54 15 64 11 V25.5 C54 29.5 47.5 22.5 40 25.5 Z"/>
+  <path d="M26 54 Q40 49 54 54"/>
+</svg>

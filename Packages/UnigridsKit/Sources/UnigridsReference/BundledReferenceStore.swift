@@ -38,6 +38,9 @@ public struct BundledReferenceStore: ReferenceStore {
     private let climateByPlace: [UnigridsID: MonthlyClimate]
     public let overviewBoundaries: [UnigridsID: PlaceBoundary]
     public let placesWithStampLocations: Set<UnigridsID>
+    /// The stamps' pictures by key (`Emblem`): each national park's own drawing and the
+    /// shared motifs.
+    public let emblems: [String: Emblem]
     /// Where the dataset's files are, for what is read on demand; `nil` in memory.
     private let referenceBundle: Bundle?
     /// Where bundled photographs live, or `nil` for a store built in memory.
@@ -102,6 +105,9 @@ public struct BundledReferenceStore: ReferenceStore {
         themesByID = Self.keyed(themes, by: \.id)
         poisByPlace = Dictionary(grouping: pois, by: \.placeID)
         placesWithStampLocations = Set(pois.filter(\.hasStamp).map(\.placeID))
+        // Pictures arrived with 0.11.0; an older dataset's stamps carry none.
+        emblems = try Self.decodeIfPresent([String: Emblem].self, "emblems", bundle, decoder)
+            ?? [:]
 
         var guides: [UnigridsID: GuideContent] = [:]
         for place in places where place.tier.hasGuide {
@@ -140,6 +146,7 @@ public struct BundledReferenceStore: ReferenceStore {
         documentsByPlace = [:]
         climateByPlace = [:]
         placesWithStampLocations = Set(pois.filter(\.hasStamp).map(\.placeID))
+        emblems = [:]
         referenceBundle = nil
         imageDirectory = nil
     }

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="a historic house">
+  <path d="M28 54 V30 L50 15 L72 30 V54"/>
+  <path d="M45 54 V41 H55 V54"/>
+  <path d="M33 34 H41 V41 H33 Z"/>
+  <path d="M59 34 H67 V41 H59 Z"/>
+  <path d="M62 23 V14 H67 V26.5"/>
+  <path d="M6 54 H94"/>
+</svg>

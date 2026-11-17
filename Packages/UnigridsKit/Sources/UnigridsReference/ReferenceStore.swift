@@ -43,6 +43,8 @@ public protocol ReferenceStore: Sendable {
     var themes: [Theme] { get }
 
     func place(_ id: UnigridsID) -> Place?
+    /// Every stamp picture, by key.
+    var emblems: [String: Emblem] { get }
     func theme(_ id: UnigridsID) -> Theme?
     func pointsOfInterest(in placeID: UnigridsID) -> [PointOfInterest]
     func trails(in placeID: UnigridsID) -> [Trail]
@@ -82,6 +84,12 @@ public protocol ReferenceStore: Sendable {
 }
 
 extension ReferenceStore {
+    /// The picture a place's stamp carries: its own drawing, else its kind's motif, else
+    /// none (an older dataset).
+    public func emblem(for place: Place) -> Emblem? {
+        emblems[EmblemMotif.key(for: place)] ?? emblems[EmblemMotif.motifKey(for: place)]
+    }
+
     /// The 63 national parks, by name.
     public var nationalParks: [Place] {
         places

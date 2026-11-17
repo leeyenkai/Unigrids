@@ -1,12 +1,20 @@
 import SwiftUI
 import UnigridsCore
 
-/// One passport impression, drawn the way a rubber cancellation lands on paper
+/// One passport impression, drawn the way a rubber stamp lands on paper
 /// (SPECIFICATION.md §9).
 ///
-/// Everything irregular about it — the tilt, the offset, how heavily it inked — comes
-/// from the seed stored with the stamp, so the same impression renders identically every
-/// time, on every device, after every sync.
+/// Every book shares one layout — the place's name across the top, its picture in the
+/// centre, the date and the place's mark beneath — and each country's face gives it its
+/// own national character: a US ranger-station cancellation, a Japanese commemorative
+/// stamp, a Norwegian postmark, a New Zealand hut-book stamp, an Australian bush-post
+/// cancellation, a bilingual Canadian one. None borrows an official mark.
+///
+/// Everything irregular — the tilt, the offset, how heavily the rings inked — comes from
+/// the seed stored with the stamp, so an impression renders identically every time, on
+/// every device, after every sync. The lettering keeps the region ink's full strength,
+/// which is what holds it to 4.5:1 on the page; only the rings and the picture print
+/// lighter on a tired pad.
 public struct StampView: View {
     private let face: StampFace
     private let diameter: CGFloat
@@ -26,10 +34,10 @@ public struct StampView: View {
 
     public var body: some View {
         ZStack {
-            cancellation
+            StampFaceView(face: face, diameter: diameter, ink: ink)
             if face.hasAmerica250Seal {
                 america250Seal
-                    .offset(x: diameter * 0.26, y: -diameter * 0.26)
+                    .offset(x: diameter * 0.27, y: -diameter * 0.27)
             }
         }
         .frame(width: diameter, height: diameter)
@@ -39,182 +47,19 @@ public struct StampView: View {
         .accessibilityLabel(accessibilityLabel)
     }
 
-    /// Each book's own face, over the one impression system (ADR 0013): the US book's
-    /// cancellation, a Japanese visitor-centre stamp, a Norwegian postmark.
-    @ViewBuilder private var cancellation: some View {
-        switch face.country {
-        case .unitedStates: usCancellation
-        case .japan: japaneseStamp
-        case .norway: norwegianPostmark
-        // Until their own faces land (the stamp rework): a cancellation.
-        case .newZealand, .australia, .canada: usCancellation
-        }
-    }
-
-    private var usCancellation: some View {
-        ZStack {
-            Group {
-                Circle()
-                    .stroke(ink, lineWidth: diameter * 0.022)
-                Circle()
-                    .stroke(ink, lineWidth: diameter * 0.012)
-                    .padding(diameter * 0.055)
-            }
-            .opacity(face.impression.inkDensity)
-
-            VStack(spacing: diameter * 0.03) {
-                Text(face.siteName.uppercased())
-                    .font(.system(size: diameter * 0.095, weight: .semibold))
-                    .multilineTextAlignment(.center)
-                    .minimumScaleFactor(0.6)
-                    .lineLimit(3)
-
-                Rectangle()
-                    .frame(height: diameter * 0.012)
-
-                Text(face.dateLine())
-                    .font(.system(size: diameter * 0.115, weight: .bold))
-                    .monospacedDigit()
-
-                Rectangle()
-                    .frame(height: diameter * 0.012)
-
-                Text(face.stateCode.uppercased())
-                    .font(.system(size: diameter * 0.09, weight: .medium))
-                    .tracking(diameter * 0.015)
-            }
-            .padding(.horizontal, diameter * 0.16)
-            .foregroundStyle(ink)
-
-            if face.isVerifiedOnSite {
-                Image(.verified)
-                    .font(.system(size: diameter * 0.13))
-                    .foregroundStyle(ink)
-                    .offset(y: diameter * 0.37)
-                    .accessibilityHidden(true)
-            }
-        }
-        // A tired pad prints lighter, in the rings: the lettering stays at the region
-        // ink's full strength, which is what holds it to 4.5:1 on the page.
-    }
-
-    /// After the commemorative stamps (記念スタンプ) at Japan's visitor centres and
-    /// stations: one heavy ring, one ink, the park's name in kanji set large, the English
-    /// name over it, the date as Japan writes it, the prefecture beneath.
-    private var japaneseStamp: some View {
-        ZStack {
-            Circle()
-                .stroke(ink, lineWidth: diameter * 0.04)
-                .opacity(face.impression.inkDensity)
-            VStack(spacing: diameter * 0.025) {
-                rimName
-                Text(face.localName ?? face.siteName)
-                    .font(.system(size: diameter * 0.16, weight: .heavy))
-                    .typesettingLanguage(Locale.Language(identifier: "ja"))
-                    .multilineTextAlignment(.center)
-                    .minimumScaleFactor(0.45)
-                    .lineLimit(2)
-                Text(face.dateLine())
-                    .font(.system(size: diameter * 0.1, weight: .bold))
-                    .monospacedDigit()
-                Text(face.stateCode.uppercased())
-                    .font(.system(size: diameter * 0.075, weight: .medium))
-                    .tracking(diameter * 0.012)
-                    .minimumScaleFactor(0.6)
-                    .lineLimit(1)
-            }
-            .padding(.horizontal, diameter * 0.15)
-            .foregroundStyle(ink)
-            verifiedMark
-        }
-    }
-
-    /// The English name over the kanji: one line where it fits without shrinking far —
-    /// "FUJI-HAKONE-" over "IZU" reads as two names — and two, broken at its hyphens,
-    /// where one line would shrink it past reading (Rishiri-Rebun-Sarobetsu).
-    private var rimName: some View {
-        let name = face.siteName.uppercased()
-        let size = diameter * 0.07
-        return ViewThatFits(in: .horizontal) {
-            Text(name.replacingOccurrences(of: "-", with: "\u{2011}"))
-                .font(.system(size: size, weight: .semibold))
-                .tracking(diameter * 0.006)
-                .lineLimit(1)
-                .fixedSize()
-            Text(name.replacingOccurrences(of: "-", with: "\u{2011}"))
-                .font(.system(size: size * 0.8, weight: .semibold))
-                .lineLimit(1)
-                .fixedSize()
-            Text(name.replacingOccurrences(of: "-", with: "-\u{200B}"))
-                .font(.system(size: size * 0.8, weight: .semibold))
-                .multilineTextAlignment(.center)
-                .minimumScaleFactor(0.8)
-                .lineLimit(2)
-        }
-    }
-
-    /// After a Norwegian postmark: two rings, the name round the top, the date between
-    /// bars that run out to the inner ring, the county and NORGE at the foot.
-    private var norwegianPostmark: some View {
-        ZStack {
-            Group {
-                Circle()
-                    .stroke(ink, lineWidth: diameter * 0.018)
-                Circle()
-                    .stroke(ink, lineWidth: diameter * 0.01)
-                    .padding(diameter * 0.07)
-            }
-            .opacity(face.impression.inkDensity)
-            VStack(spacing: diameter * 0.03) {
-                Text(face.siteName.uppercased())
-                    .font(.system(size: diameter * 0.09, weight: .semibold))
-                    .multilineTextAlignment(.center)
-                    .minimumScaleFactor(0.6)
-                    .lineLimit(2)
-                    .padding(.horizontal, diameter * 0.08)
-                Rectangle()
-                    .frame(height: diameter * 0.02)
-                Text(face.dateLine())
-                    .font(.system(size: diameter * 0.11, weight: .bold))
-                    .monospacedDigit()
-                Rectangle()
-                    .frame(height: diameter * 0.02)
-                Text("\(face.stateCode) · NORGE".uppercased())
-                    .font(.system(size: diameter * 0.068, weight: .medium))
-                    .tracking(diameter * 0.01)
-                    .minimumScaleFactor(0.55)
-                    .lineLimit(1)
-                    .padding(.horizontal, diameter * 0.08)
-            }
-            .padding(.horizontal, diameter * 0.09)
-            .foregroundStyle(ink)
-            verifiedMark
-        }
-    }
-
-    @ViewBuilder private var verifiedMark: some View {
-        if face.isVerifiedOnSite {
-            Image(.verified)
-                .font(.system(size: diameter * 0.13))
-                .foregroundStyle(ink)
-                .offset(y: diameter * 0.39)
-                .accessibilityHidden(true)
-        }
-    }
-
     /// The America 250 overprint: a red seal stamped across the corner of the regular
-    /// impression, for any stamp dated in 2026.
+    /// impression, for any US stamp dated in 2026.
     private var america250Seal: some View {
         VStack(spacing: 0) {
             Text("AMERICA")
-                .font(.system(size: diameter * 0.075, weight: .heavy))
+                .font(.system(size: diameter * 0.07, weight: .heavy))
             Text("250")
-                .font(.system(size: diameter * 0.135, weight: .heavy))
+                .font(.system(size: diameter * 0.125, weight: .heavy))
         }
         .tracking(diameter * 0.006)
         .foregroundStyle(style.seal)
-        .padding(.horizontal, diameter * 0.055)
-        .padding(.vertical, diameter * 0.03)
+        .padding(.horizontal, diameter * 0.05)
+        .padding(.vertical, diameter * 0.025)
         .overlay {
             RoundedRectangle(cornerRadius: diameter * 0.03)
                 .stroke(style.seal, lineWidth: diameter * 0.018)
@@ -229,6 +74,9 @@ public struct StampView: View {
                 + ", stamped \(face.dateLine()), \(face.stateCode)",
             "\(face.region.name) region",
         ]
+        if let emblem = face.emblem {
+            parts.append("picture: \(emblem.subject)")
+        }
         if face.hasAmerica250Seal {
             parts.append("with the America 250 seal")
         }
@@ -265,5 +113,65 @@ public struct StampSlotView: View {
             }
             .accessibilityLabel("\(siteName), not yet stamped")
             .accessibilityAddTraits(.isButton)
+    }
+}
+
+/// A stamp's picture: an `Emblem` drawn in one ink, scaled to fit its band, its lines a
+/// weight that reads at every size a stamp is shown.
+public struct EmblemView: View {
+    private let emblem: Emblem
+    private let ink: Color
+    private let lineWidth: CGFloat
+
+    public init(emblem: Emblem, ink: Color, lineWidth: CGFloat) {
+        self.emblem = emblem
+        self.ink = ink
+        self.lineWidth = lineWidth
+    }
+
+    public var body: some View {
+        ZStack {
+            ForEach(Array(emblem.parts.enumerated()), id: \.offset) { _, part in
+                let shape = EmblemShape(emblem: emblem, part: part)
+                if part.fill {
+                    shape.fill(ink)
+                } else {
+                    shape.stroke(
+                        ink,
+                        style: StrokeStyle(lineWidth: lineWidth, lineCap: .round, lineJoin: .round)
+                    )
+                }
+            }
+        }
+        .aspectRatio(emblem.width / emblem.height, contentMode: .fit)
+        .accessibilityHidden(true)
+    }
+}
+
+/// One part of an emblem as a shape, its canvas fitted to the frame it is given.
+public struct EmblemShape: Shape {
+    let emblem: Emblem
+    let part: Emblem.Part
+
+    public func path(in rect: CGRect) -> Path {
+        let scale = min(rect.width / emblem.width, rect.height / emblem.height)
+        let originX = rect.midX - emblem.width * scale / 2
+        let originY = rect.midY - emblem.height * scale / 2
+        func point(_ value: EmblemPoint) -> CGPoint {
+            CGPoint(x: originX + value.x * scale, y: originY + value.y * scale)
+        }
+        var path = Path()
+        for segment in part.segments {
+            switch segment {
+            case let .move(to): path.move(to: point(to))
+            case let .line(to): path.addLine(to: point(to))
+            case let .quad(control, to):
+                path.addQuadCurve(to: point(to), control: point(control))
+            case let .cubic(control1, control2, to):
+                path.addCurve(to: point(to), control1: point(control1), control2: point(control2))
+            case .close: path.closeSubpath()
+            }
+        }
+        return path
     }
 }

@@ -134,7 +134,8 @@ struct PassportRegionPage: View {
                 isVerifiedOnSite: stamp.isVerifiedOnSite,
 
                 calendar: UnigridsCalendar.gregorian(at: place),
-                localName: place.leadLocalName?.text
+                localName: place.leadLocalName?.text,
+                emblem: store.emblem(for: place)
             )
         }
         let stampedPlaces = Set(stamps.map(\.place))
@@ -281,7 +282,8 @@ struct PassportRegionPage: View {
             isVerifiedOnSite: stamp.isVerifiedOnSite,
 
             calendar: UnigridsCalendar.gregorian(at: place),
-            localName: place.leadLocalName?.text
+            localName: place.leadLocalName?.text,
+            emblem: store.emblem(for: place)
         )
     }
 

@@ -55,6 +55,8 @@ public struct StampFace: Hashable, Sendable {
     public let country: Country
     /// The place's name in its own script, set large on a Japanese face: 知床国立公園.
     public let localName: String?
+    /// The picture in the face's centre band: the park's own drawing or its kind's motif.
+    public let emblem: Emblem?
 
     /// `country` decides the America 250 seal, which only a US stamp carries; it has no
     /// default so no caller can forget it.
@@ -67,7 +69,8 @@ public struct StampFace: Hashable, Sendable {
         seed: UInt64,
         isVerifiedOnSite: Bool = false,
         calendar: Calendar = UnigridsCalendar.gregorian(),
-        localName: String? = nil
+        localName: String? = nil,
+        emblem: Emblem? = nil
     ) {
         self.siteName = siteName
         self.date = date
@@ -79,6 +82,7 @@ public struct StampFace: Hashable, Sendable {
         self.calendar = calendar
         self.country = country
         self.localName = localName
+        self.emblem = emblem
     }
 
     /// The date as the book's cancellations print it — `18 OCT 2026` in the US and

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="a lighthouse above the sea">
+  <path d="M44 50 L46 22 H54 L56 50"/>
+  <path d="M45.2 41 H54.8 M45.7 31.5 H54.3"/>
+  <path d="M45.5 22 V16.5 H54.5 V22"/>
+  <path class="fill" d="M44 16.5 L50 11 L56 16.5 Z"/>
+  <path d="M58.5 17.5 L80 12.5 M58.5 20.5 L80 25.5"/>
+  <path class="fill" d="M36 52 Q43 47 50 49.5 Q57 47 64 52 Z"/>
+  <path d="M6 55 Q9 53.4 12 55 Q15 56.6 18 55 Q21 53.4 24 55 Q27 56.6 30 55"/>
+  <path d="M70 55 Q73 53.4 76 55 Q79 56.6 82 55 Q85 53.4 88 55 Q91 56.6 94 55"/>
+</svg>

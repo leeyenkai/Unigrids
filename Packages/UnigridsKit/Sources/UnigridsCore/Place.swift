@@ -173,6 +173,10 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
     /// from the guide's own directions: "Ferry from Tokyo, about 24 hours". A trip shows
     /// it in place of a failed road route (SPECIFICATION.md §10). Nil for most places.
     public let reachedBy: String?
+    /// The key of the picture the place's stamp carries (`Emblem`, `emblems.json`): its
+    /// own ID for a park with a drawing of its own, else a shared motif. Nil leaves the
+    /// motif to `EmblemMotif`.
+    public let emblem: String?
 
     public var tier: PlaceTier {
         kind.tier
@@ -223,7 +227,8 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         country: Country = .unitedStates,
         subdivisions: [Subdivision]? = nil,
         localNames: [LocalName] = [],
-        reachedBy: String? = nil
+        reachedBy: String? = nil,
+        emblem: String? = nil
     ) {
         self.id = id
         self.name = name
@@ -254,6 +259,7 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         self.subdivisions = subdivisions ?? states.map(Subdivision.init(state:))
         self.localNames = localNames
         self.reachedBy = reachedBy
+        self.emblem = emblem
     }
 
     public init(from decoder: any Decoder) throws {
@@ -297,6 +303,7 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
             ?? states.map(Subdivision.init(state:))
         localNames = try container.decodeIfPresent([LocalName].self, forKey: .localNames) ?? []
         reachedBy = try container.decodeIfPresent(String.self, forKey: .reachedBy)
+        emblem = try container.decodeIfPresent(String.self, forKey: .emblem)
     }
 
     private static func defaultDesignation(for kind: PlaceKind) -> String {

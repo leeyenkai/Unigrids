@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="Old Faithful erupting">
+  <path class="fill" d="M47.5 46 C46 40 44 35 42 30.5 C37.5 30 35.5 25 39 22 C36.5 17 41.5 12.5 46 14.5 C47.5 9.5 54.5 8.5 56.5 13.5 C61 12 65 17 61.5 21 C64.5 24.5 62 29.5 58 30.5 C56 35.5 54 40.5 52.5 46 Z"/>
+  <path d="M66 18 C70 16 73 19 71 22 M32 26 C28 25 27 29 30 30.5"/>
+  <path class="fill" d="M30 52 Q40 45 50 46.5 Q60 45 70 52 Z"/>
+  <path d="M6 54 H94"/>
+</svg>

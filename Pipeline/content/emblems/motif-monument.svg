@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="a monument">
+  <path class="fill" d="M46.5 48 L48 14 L50 9 L52 14 L53.5 48 Z"/>
+  <path class="fill" d="M40 48 H60 V52 H40 Z"/>
+  <path d="M6 54 H94"/>
+</svg>
