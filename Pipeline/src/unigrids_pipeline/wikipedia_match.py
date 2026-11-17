@@ -8,9 +8,10 @@ place, because a summary of the wrong place is a false fact delivered with confi
 
 1. **Title.** The article reached by one of the place's own names — "<name>
    <designation>", then with the state appended the way Wikipedia disambiguates — and,
-   after redirects, still titled with the place's name, or opening by saying it was
-   formerly called by the place's full name, as a renamed or merged park's article does.
-   Disambiguation pages never count.
+   after redirects, still titled with the place's name, or with a subject that goes by
+   the place's full name: the article's own subject, a former name (a renamed or merged
+   park) or another official name ("officially…", "also known as…"). Disambiguation
+   pages never count.
 2. **Location.** The article's coordinates fall inside the place's outline, or within
    ``NEAR_KM`` of it, or of the point or route a place without an outline has.
 
@@ -94,8 +95,17 @@ _ROAD_WORDS = re.compile(
 # Island" a village.
 _BARE_NAME_KINDS = frozenset({"naturalLandmark", "scenicByway"})
 
-# How an article's opening says what its subject used to be called.
+# How an article's opening says what its subject used to be called, and what else it is
+# called: "formerly known as Hart State Park", "officially Mary Minerva McCroskey State
+# Park", "also known as Raymond B. Winter State Park".
 _FORMERLY = r"(?:formerly|previously|originally)(?:-known-as|-called|-named)?|renamed-from"
+_ALSO = (
+    r"(?:also|commonly|officially)(?:-known-as|-called|-named|-referred-to-as)?"
+    r"|sometimes-called"
+)
+# What separates the names in an article's subject: commas, brackets, em dashes, a spaced
+# en dash. An unspaced en dash or hyphen joins a name ("Kohler–Andrae", "Geo-Karis").
+_SUBJECT_BREAK = re.compile(r"[,;()\[\]—]|\s–\s")
 
 
 def wants(place: dict[str, Any]) -> bool:
@@ -288,6 +298,14 @@ def enrich(
             counts["closed"] += 1
             report.append({"id": place["id"], "name": place["name"], "reason": "closed"})
             continue
+        if left_state_system(decision["extract"], place):
+            # Still a park, but the state no longer runs it (Hart, now a city park).
+            place["closed"] = True
+            counts["closed"] += 1
+            report.append({
+                "id": place["id"], "name": place["name"], "reason": "no longer a state park"
+            })
+            continue
         counts["matched"] += 1
         place["summary"] = lead(decision["extract"])
         place["summarySource"] = "Wikipedia"
@@ -330,8 +348,11 @@ def _match(
         if not page.get("extract"):
             reasons.append(f"{title}: no lead text")
             continue
+        if describes_settlement(page["extract"]):
+            reasons.append(f"{title}: resolved to a settlement, {page.get('title')!r}")
+            continue
         named = _title_names_place(page.get("title") or "", place["name"])
-        if not named and not _renamed_from(page["extract"], place):
+        if not named and not _subject_names_place(page["extract"], place):
             reasons.append(f"{title}: resolved to {page.get('title')!r}")
             continue
         latitude, longitude = page.get("latitude"), page.get("longitude")
@@ -369,22 +390,70 @@ def _same_noun(word: str, other: str) -> bool:
     return word == other or other in plurals(word) or word in plurals(other)
 
 
-def _renamed_from(extract: str, place: dict[str, Any]) -> bool:
-    """Whether an article opens by saying its subject was formerly the place, under the
-    place's full name: "Hartwell Lakeside Park, formerly known as Hart State Park, is…", or
-    one of several merged under a new title, "Colorado River State Historic Park, formerly
-    Yuma Crossing State Historic Park and Yuma Quartermaster Depot State Historic Park".
+def _subject_names_place(extract: str, place: dict[str, Any]) -> bool:
+    """Whether an article's own subject goes by the place's full name, when its title does
+    not: the subject is the place ("The Arthur R. Marshall Loxahatchee National Wildlife
+    Refuge is…", under the title "Loxahatchee National Wildlife Refuge"), was it ("Hartwell
+    Lakeside Park, formerly known as Hart State Park, is…"), was one of several merged
+    under a new title ("…formerly Yuma Crossing State Historic Park and Yuma Quartermaster
+    Depot State Historic Park"), or is also called it ("McCroskey State Park—officially
+    Mary Minerva McCroskey State Park—is…").
 
-    Only the words before the first verb count, so the old name belongs to the article's
-    own subject rather than to a neighbour it mentions ("…is a lake beside Hart State
-    Park, formerly…"). A landmark or byway, titled by its bare name, never qualifies."""
+    Only the words before the first verb count, so the name belongs to the article's own
+    subject rather than to a neighbour it mentions ("…is a lake beside Hart State Park").
+    Each name must be the place's whole name, not part of a longer one. A landmark or
+    byway, titled by its bare name, never qualifies."""
     if place["kind"] in _BARE_NAME_KINDS:
         return False
     full = ids.slug(f"{place['name']} {place.get('designation') or ''}")
+    if not full:
+        return False
+    first, *others = _subject_parts(extract)
+    if first.removeprefix("the-") == full:
+        return True
+    return any(_lists_name(part, full, f"{_FORMERLY}|{_ALSO}") for part in others)
+
+
+def _subject_parts(extract: str) -> list[str]:
+    """The article's subject, before its first verb, cut into the names it gives, each as
+    a slug: "Hartwell Lakeside Park, formerly known as Hart State Park, is…" gives
+    ``["hartwell-lakeside-park", "formerly-known-as-hart-state-park"]``."""
     subject = re.split(r"\s(?:is|was|are|were)\s", re.sub(r"\s+", " ", extract), maxsplit=1)[0]
-    # A merger lists the old names: allow other words before the place's, ending "and"/"or".
-    pattern = rf"-(?:{_FORMERLY})(?:-the)?(?:-[a-z0-9-]+?-(?:and|or)(?:-the)?)?-{re.escape(full)}-"
-    return bool(full) and re.search(pattern, f"-{ids.slug(subject)}-") is not None
+    parts = [ids.slug(part) for part in _SUBJECT_BREAK.split(subject)]
+    return [part for part in parts if part] or [""]
+
+
+def _lists_name(part: str, full: str, markers: str) -> bool:
+    """Whether one part of a subject is a marker followed by the name, alone or in a list
+    of names joined by "and" or "or": "formerly-yuma-crossing-state-historic-park-and-yuma-
+    quartermaster-depot-state-historic-park" lists both Yuma parks."""
+    found = re.fullmatch(rf"(?:{markers})(?:-the)?-(.+)", part)
+    if not found:
+        return False
+    # "renamed from Old Davidsonville State Park in 2001": the year of the change aside.
+    names = re.sub(r"-in-\d{4}$", "", found.group(1))
+    joined = r"(?:and|or)(?:-the)?"
+    return names == full or re.search(
+        rf"(?:^|-{joined}-){re.escape(full)}(?:$|-{joined}-)", names
+    ) is not None
+
+
+def left_state_system(extract: str, place: dict[str, Any]) -> bool:
+    """Whether a state park's article says it was once the park and no longer calls it a
+    state park: "Hartwell Lakeside Park, formerly known as Hart State Park, is a 147 acres
+    (59 ha) park in Hartwell". Its new name and its first sentence must both leave out the
+    word "state"; a park that only changed its name ("Sue-meg State Park (formerly
+    Patrick's Point State Park) is a 640-acre California State Park") is still one."""
+    if place.get("kind") != "statePark":
+        return False
+    full = ids.slug(f"{place['name']} {place.get('designation') or ''}")
+    first, *others = _subject_parts(extract)
+    if not any(_lists_name(part, full, _FORMERLY) for part in others):
+        return False
+    text = re.sub(r"\s+", " ", extract)
+    predicate = re.split(r"\s(?:is|was|are|were)\s", text, maxsplit=1)[-1]
+    sentence = re.split(r"\.\s+(?=[A-Z])", predicate, maxsplit=1)[0]
+    return "state" not in f"{first}-{ids.slug(sentence)}".split("-")
 
 
 def _distance_to_place(
@@ -431,6 +500,26 @@ CLOSED_LEAD = re.compile(
     r"|^[^.]*?\bstate park\s+was\s+a\s+state park\b",
     re.IGNORECASE,
 )
+
+
+# A first sentence about a town rather than a park: "Boswell is a town in Choctaw County",
+# "Jackson Lake is an unincorporated community and a census-designated place". A park
+# named after a town redirects to the town's article, which passes the title and location
+# tests and describes the wrong thing. A ghost town that is the park ("Bannack is a ghost
+# town") is not one of these.
+SETTLEMENT_LEAD = re.compile(
+    r"^[^.]*?\b(?:is|was)\s+(?:a|an)\s+(?:small\s+|rural\s+)?"
+    r"(?:town|city|village|hamlet|borough|census[- ]designated place|unincorporated community"
+    r"|neighbou?rhood|township|municipality)\b",
+    re.IGNORECASE,
+)
+
+
+def describes_settlement(extract: str) -> bool:
+    """Whether an article's first sentence says its subject is a town, not a park."""
+    text = re.sub(r"\s+", " ", extract).strip()
+    first = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9“\"])", text, maxsplit=1)[0]
+    return bool(SETTLEMENT_LEAD.search(first))
 
 
 def says_closed(extract: str) -> bool:
