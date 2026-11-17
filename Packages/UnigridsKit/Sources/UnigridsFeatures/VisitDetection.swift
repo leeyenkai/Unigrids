@@ -89,6 +89,20 @@ public final class DetectedVisits {
         defaults.removeObject(forKey: Self.mutedKey)
     }
 
+    /// How long an arrival is remembered: the longest gap a place is held to, a week, and a
+    /// day's grace.
+    static let memory: TimeInterval = 8 * 86400
+
+    /// Forget every arrival and unanswered suggestion, when detection is turned off or the
+    /// reader deletes their data. The places muted stay muted: that is a choice, not a
+    /// record of where anyone was.
+    func forgetArrivals() {
+        defaults.removeObject(forKey: Self.lastKey)
+        pending = []
+        loaded = true
+        defaults.removeObject(forKey: Self.key)
+    }
+
     /// Note an arrival, once per place per day — and no more than once in `minimumGap`
     /// for a place where people live — unless the reader has asked not to be asked there.
     func add(
@@ -104,6 +118,9 @@ public final class DetectedVisits {
             return false
         }
         last[placeID.rawValue] = date.timeIntervalSince1970
+        // Only as long as the gap needs: an older arrival decides nothing, and kept it would
+        // become a dated record of where the reader has been.
+        last = last.filter { date.timeIntervalSince1970 - $0.value < Self.memory }
         defaults.set(last, forKey: Self.lastKey)
         guard !pending.contains(where: {
             $0.placeID == placeID.rawValue
@@ -208,6 +225,7 @@ extension AppServices {
 
         static func disable() async {
             UserDefaults.standard.set(false, forKey: DetectedVisits.enabledKey)
+            AppServices.detected.forgetArrivals()
             listening?.cancel()
             listening = nil
             let monitor = await monitor()

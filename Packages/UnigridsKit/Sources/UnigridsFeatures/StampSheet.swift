@@ -28,6 +28,9 @@ public struct StampSheet: View {
     @State private var stampLocationID: UnigridsID?
     @State private var realStampCollected = false
     @State private var stamped: Stamp?
+    /// The save under way, so Cancel or a swipe down can stop it while the location check
+    /// runs: a stamp the reader cancelled must not land a few seconds later.
+    @State private var saving: Task<Void, Never>?
     @State private var checking = false
     @State private var error: String?
     @State private var onSite = OnSiteCheck()
@@ -76,7 +79,10 @@ public struct StampSheet: View {
         SheetPage(
             stamped == nil ? "Stamp" : "Stamped",
             kicker: place.name,
-            actions: stamped == nil ? .cancel { dismiss() } : .done { dismiss() },
+            actions: stamped == nil ? .cancel {
+                saving?.cancel()
+                dismiss()
+            } : .done { dismiss() },
             width: 520,
             height: 700
         ) {
@@ -92,6 +98,7 @@ public struct StampSheet: View {
                 .padding(24)
             }
         }
+        .onDisappear { saving?.cancel() }
     }
 
     private var preview: some View {
@@ -182,7 +189,7 @@ public struct StampSheet: View {
         // day wherever it is read.
         let stampDate = today ? Date()
             : UnigridsCalendar.noon(onDayOf: date, shownIn: calendar, in: calendar)
-        Task {
+        saving = Task {
             // Only a stamp dated today can have been made on site, so only then is the
             // reader's location asked for (SPECIFICATION.md §9, §15), and for no more
             // than a few seconds.
@@ -192,6 +199,7 @@ public struct StampSheet: View {
                 verified = await onSite.isOnSite(at: place, boundary: store.boundary(for: place.id))
                 checking = false
             }
+            guard !Task.isCancelled else { return }
             do {
                 let madeVisit = try log
                     .visit(to: place.id, on: stampDate, calendar: calendar) == nil

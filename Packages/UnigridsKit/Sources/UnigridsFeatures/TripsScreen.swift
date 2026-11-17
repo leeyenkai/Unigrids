@@ -19,6 +19,9 @@ public struct TripsScreen: View {
     @Query(sort: \Trip.createdAt, order: .reverse) private var trips: [Trip]
 
     @State private var editing: Visit?
+    /// A visit about to be deleted from a swipe or a menu, asked about first: its stamps,
+    /// hikes and check-ins go with it.
+    @State private var deleting: Visit?
     @State private var creatingTrip = false
     @State private var importingPhotos = false
     @State private var path = NavigationPath()
@@ -97,7 +100,7 @@ public struct TripsScreen: View {
                                 .listRowBackground(Color.clear)
                                 .swipeActions(edge: .trailing) {
                                     Button(role: .destructive) {
-                                        delete(visit)
+                                        deleting = visit
                                     } label: {
                                         Label("Delete", symbol: .delete)
                                     }
@@ -107,7 +110,7 @@ public struct TripsScreen: View {
                                         Label("Edit", symbol: .edit)
                                     }
                                     Button(role: .destructive) {
-                                        delete(visit)
+                                        deleting = visit
                                     } label: {
                                         Label("Delete", symbol: .delete)
                                     }
@@ -155,6 +158,23 @@ public struct TripsScreen: View {
                 }
                 .unigridsSheet(item: $editing) { visit in
                     VisitEditor(visit: visit)
+                }
+                .confirmationDialog(
+                    "Delete this visit?",
+                    isPresented: Binding(
+                        get: { deleting != nil },
+                        set: {
+                            if !$0 {
+                                deleting = nil
+                            }
+                        }
+                    ),
+                    titleVisibility: .visible,
+                    presenting: deleting
+                ) { visit in
+                    Button("Delete", role: .destructive) { delete(visit) }
+                } message: { visit in
+                    Text(visit.deleteMessage)
                 }
                 .unigridsSheet(item: $loggingArrival) { suggestion in
                     ArrivalCheckIn(suggestion: suggestion)

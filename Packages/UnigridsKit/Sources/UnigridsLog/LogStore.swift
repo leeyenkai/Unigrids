@@ -341,7 +341,7 @@ public final class LogStore {
     }
 
     /// The trip a visit logged without one belongs to, by `TripMatching`'s rule.
-    private func matchingTrip(
+    public func matchingTrip(
         for placeID: UnigridsID,
         on date: Date,
         calendar: Calendar

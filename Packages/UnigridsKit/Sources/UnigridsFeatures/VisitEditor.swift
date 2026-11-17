@@ -108,7 +108,7 @@ struct VisitEditor: View {
         ) {
             Button("Delete", role: .destructive) { deleteVisit() }
         } message: {
-            Text(deleteMessage)
+            Text(visit.deleteMessage)
         }
     }
 
@@ -136,7 +136,7 @@ struct VisitEditor: View {
                 StampFace(
                     siteName: place?.name ?? "",
                     date: stamp.date,
-                    stateCode: place?.stampMark ?? "US",
+                    stateCode: place?.stampMark ?? Country.inferred(from: stamp.place).rawValue,
                     region: place?.resolvedPassportRegion
                         ?? PassportRegion.fallback(in: Country.inferred(from: stamp.place)),
                     country: place?.country ?? Country.inferred(from: stamp.place),
@@ -147,24 +147,6 @@ struct VisitEditor: View {
                 )
             }
         )
-    }
-
-    /// What goes with the visit, said before it goes (SPECIFICATION.md §9: the passport and
-    /// the log always agree, so a deleted visit takes its stamps).
-    private var deleteMessage: String {
-        let parts = [
-            Self.count(visit.stamps?.count ?? 0, "stamp"),
-            Self.count(visit.hikes?.count ?? 0, "hike"),
-            Self.count(visit.checkIns?.count ?? 0, "check-in"),
-        ].compactMap(\.self)
-        guard !parts.isEmpty else { return "You can undo this straight after." }
-        let list = parts.count == 1 ? parts[0]
-            : parts.dropLast().joined(separator: ", ") + " and " + parts[parts.count - 1]
-        return "Its \(list) go with it. You can undo this straight after."
-    }
-
-    private static func count(_ count: Int, _ noun: String) -> String? {
-        count == 0 ? nil : "\(count) \(noun)\(count == 1 ? "" : "s")"
     }
 
     private func save() {
@@ -317,5 +299,25 @@ private struct VisitContents: View {
         } catch {
             onError(error.localizedDescription)
         }
+    }
+}
+
+extension Visit {
+    /// What goes with the visit, said before it goes (SPECIFICATION.md §9: the passport and
+    /// the log always agree, so a deleted visit takes its stamps).
+    var deleteMessage: String {
+        let parts = [
+            Self.count(stamps?.count ?? 0, "stamp"),
+            Self.count(hikes?.count ?? 0, "hike"),
+            Self.count(checkIns?.count ?? 0, "check-in"),
+        ].compactMap(\.self)
+        guard !parts.isEmpty else { return "You can undo this straight after." }
+        let list = parts.count == 1 ? parts[0]
+            : parts.dropLast().joined(separator: ", ") + " and " + parts[parts.count - 1]
+        return "Its \(list) go with it. You can undo this straight after."
+    }
+
+    private static func count(_ count: Int, _ noun: String) -> String? {
+        count == 0 ? nil : "\(count) \(noun)\(count == 1 ? "" : "s")"
     }
 }

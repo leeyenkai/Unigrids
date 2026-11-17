@@ -161,6 +161,13 @@ struct YourDataSection: View {
         do {
             ReminderScheduler.cancel(reminders.map(\.id))
             try LogStore(context: context).eraseEverything()
+            // Arrivals noticed but not logged, and the backup files written for sharing,
+            // are the reader's data too.
+            AppServices.detected.forgetArrivals()
+            if let exported {
+                try? FileManager.default.removeItem(at: exported.json)
+                try? FileManager.default.removeItem(at: exported.csv)
+            }
             exported = nil
             message = "Your log is empty."
         } catch {

@@ -149,11 +149,11 @@ public struct CheckInSheet: View {
             .formStyle(.grouped)
         }
         .onAppear {
-            // An unfinished trip that already has this place as a stop is the likely home
-            // for the visit.
-            tripID = openTrips.first { trip in
-                trip.orderedStops.contains { $0.place == place.id }
-            }?.id
+            // The trip the log would file the visit under by itself: one that lists the
+            // place and whose days cover the visit's, not a trip next spring that also
+            // lists it.
+            tripID = (try? LogStore(context: context)
+                .matchingTrip(for: place.id, on: date, calendar: calendar))?.id
             findExisting()
         }
         .onChange(of: date) { findExisting() }

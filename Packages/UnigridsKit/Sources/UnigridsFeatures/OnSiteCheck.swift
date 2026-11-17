@@ -59,10 +59,18 @@ final class OnSiteCheck: NSObject, CLLocationManagerDelegate {
     /// while the prompt is still up. Gives up after `timeout`.
     private func currentLocation(timeout: Duration) async -> CLLocation? {
         if manager.authorizationStatus == .notDetermined {
+            // With Location Services off the prompt never shows and no answer comes: after
+            // half a minute the check goes on without one, and the stamp is unverified.
+            let patience = Task { [weak self] in
+                try? await Task.sleep(for: .seconds(30))
+                guard !Task.isCancelled else { return }
+                self?.answered()
+            }
             await withCheckedContinuation { continuation in
                 authorizing = continuation
                 manager.requestWhenInUseAuthorization()
             }
+            patience.cancel()
         }
         switch manager.authorizationStatus {
         case .authorizedAlways, .authorizedWhenInUse:
@@ -98,12 +106,17 @@ final class OnSiteCheck: NSObject, CLLocationManagerDelegate {
         let status = manager.authorizationStatus
         Task { @MainActor in
             guard status != .notDetermined else { return }
-            self.authorizing?.resume()
-            self.authorizing = nil
+            self.answered()
             if status == .denied || status == .restricted {
                 self.finish(nil)
             }
         }
+    }
+
+    /// The permission question is settled, or given up on: resumed once, whichever is first.
+    private func answered() {
+        authorizing?.resume()
+        authorizing = nil
     }
 
     private func finish(_ location: CLLocation?) {

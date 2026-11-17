@@ -87,6 +87,13 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- Arrivals noticed by visit detection are remembered only for the week the once-a-week
+  rule needs, and are forgotten when detection is turned off or you delete your data,
+  which also removes the backup files it wrote for sharing. Cancelling a stamp while it
+  checks you are on site no longer saves it a few seconds later, and with Location
+  Services off the check gives up instead of spinning. Deleting a visit from a swipe or a
+  menu asks first, saying which stamps, hikes and check-ins go with it. Check-in no longer
+  files today's visit under a trip months away that lists the same park.
 - Days abroad are the place's own, wherever the app is read: a stop at Fuji on 20 July
   sits under 20 July in a trip's day-by-day and its calendar export, and a visit to
   Shiretoko on New Year's Day counts in that year's stats, streaks and Year in review on a
