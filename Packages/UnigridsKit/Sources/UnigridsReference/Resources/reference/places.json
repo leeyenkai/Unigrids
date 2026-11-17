@@ -195009,5 +195009,2283 @@
    "east": 7.19721
   },
   "timeZoneID": "Europe/Oslo"
+ },
+ {
+  "id": "nz-np-tongariro",
+  "name": "Tongariro",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-MWT",
+   "NZ-WKO"
+  ],
+  "centre": {
+   "latitude": -39.23465,
+   "longitude": 175.54053
+  },
+  "themes": [
+   "theme-volcanoes",
+   "theme-mountains",
+   "theme-alpine",
+   "theme-hot-springs",
+   "theme-indigenous-heritage",
+   "theme-sacred-places",
+   "theme-conservation-movement"
+  ],
+  "facts": {
+   "establishedYear": 1894,
+   "areaHectares": 79598,
+   "bestSeasons": [
+    "summer",
+    "autumn"
+   ],
+   "suggestedTime": "One to four days",
+   "lowestElevationMetres": 490,
+   "highestElevationMetres": 2772,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "northIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/",
+  "summary": "New Zealand's oldest national park, built around three active volcanoes: Ruapehu, the North Island's highest mountain, the young cone of Ngāuruhoe and the craters of Tongariro. Its heart was a gift from Ngāti Tūwharetoa in 1887, and it is a World Heritage site for both its volcanoes and its Māori cultural landscape. Most visitors come for the Tongariro Alpine Crossing, a full-day walk past steaming vents and vivid crater lakes.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "Marcus Holland-Moritz, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "nz-np-tongariro-8dfbc34db4.jpg",
+   "caption": "Ngā Rotopounamu, the Emerald Lakes, on the Tongariro Alpine Crossing",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Emerald_Lakes,_New_Zealand.jpg",
+   "altText": "Bright green-blue crater lakes in a barren landscape of dark volcanic rock and scree",
+   "licence": "CC BY-SA 2.0"
+  },
+  "extent": {
+   "south": -39.41091,
+   "west": 175.3589,
+   "north": -38.97598,
+   "east": 175.81872
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-tongariro"
+ },
+ {
+  "id": "nz-np-te-papa-kura-o-taranaki",
+  "name": "Te Papa-Kura-o-Taranaki",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-TKI"
+  ],
+  "centre": {
+   "latitude": -39.29376,
+   "longitude": 174.06377
+  },
+  "themes": [
+   "theme-volcanoes",
+   "theme-mountains",
+   "theme-alpine",
+   "theme-temperate-rainforest",
+   "theme-wetland",
+   "theme-indigenous-heritage",
+   "theme-sacred-places"
+  ],
+  "facts": {
+   "establishedYear": 1900,
+   "bestSeasons": [
+    "summer",
+    "autumn"
+   ],
+   "suggestedTime": "One to three days",
+   "areaHectares": 34171,
+   "lowestElevationMetres": 88,
+   "highestElevationMetres": 2490,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "northIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/",
+  "summary": "The near-perfect cone of Taranaki Maunga, 2,518 metres, ringed by rainforest and standing alone above the farmland of the North Island's west coast. Formerly Egmont National Park, it took its name, Te Papa-Kura-o-Taranaki, in 2025. Come for goblin forest, waterfalls and the reflection of the mountain in the Pouākai tarns; fit, well-equipped climbers can reach the crater in summer.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "Phillip Capper from Wellington, New Zealand, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "nz-np-te-papa-kura-o-taranaki-61c6005ee7.jpg",
+   "caption": "Taranaki Maunga and its ring of forest from the air",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Taranaki_Egmont_National_Park_aerial_view.jpg",
+   "altText": "A snow-capped cone-shaped volcano rising above a circle of dark green forest and farmland",
+   "licence": "CC BY 2.0"
+  },
+  "extent": {
+   "south": -39.40067,
+   "west": 173.92876,
+   "north": -39.1333,
+   "east": 174.1909
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-te-papa-kura-o-taranaki"
+ },
+ {
+  "id": "nz-np-whanganui",
+  "name": "Whanganui",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-MWT",
+   "NZ-TKI"
+  ],
+  "centre": {
+   "latitude": -39.38095,
+   "longitude": 174.88301
+  },
+  "themes": [
+   "theme-temperate-rainforest",
+   "theme-canyons",
+   "theme-indigenous-heritage",
+   "theme-sacred-places"
+  ],
+  "facts": {
+   "establishedYear": 1986,
+   "areaHectares": 74231,
+   "bestSeasons": [
+    "summer",
+    "autumn"
+   ],
+   "suggestedTime": "Three to five days",
+   "lowestElevationMetres": 9,
+   "highestElevationMetres": 747,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "northIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/manawatu-whanganui/places/whanganui-national-park/",
+  "summary": "A park of lowland forest, papa gorges and a great river. The Whanganui winds through it from the volcanic plateau towards the Tasman Sea, and the classic way in is by canoe: the Whanganui Journey, a Great Walk paddled over three or five days, past the abandoned Bridge to Nowhere and the marae at Tīeke. Of all New Zealand's national parks it is the one most bound up with people.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "Evan Goldenberg, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "nz-np-whanganui-913022eaea.jpg",
+   "caption": "The Bridge to Nowhere over the Mangapurua Stream",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Bridge_to_Nowhere.jpg",
+   "altText": "A concrete arch bridge with railings spanning a forested ravine",
+   "licence": "CC BY-SA 2.0"
+  },
+  "extent": {
+   "south": -39.73478,
+   "west": 174.76208,
+   "north": -38.92615,
+   "east": 175.24495
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-whanganui"
+ },
+ {
+  "id": "nz-np-abel-tasman",
+  "name": "Abel Tasman",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-TAS"
+  ],
+  "centre": {
+   "latitude": -40.91567,
+   "longitude": 172.94157
+  },
+  "themes": [
+   "theme-coastal",
+   "theme-islands",
+   "theme-conservation-movement"
+  ],
+  "facts": {
+   "establishedYear": 1942,
+   "areaHectares": 22530,
+   "bestSeasons": [
+    "summer",
+    "autumn",
+    "spring"
+   ],
+   "suggestedTime": "Three to five days",
+   "lowestElevationMetres": 0,
+   "highestElevationMetres": 1159,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "upperSouthIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/",
+  "summary": "New Zealand's smallest national park: golden beaches, granite headlands, clear estuaries and regenerating coastal forest at the top of the South Island. Most people walk or kayak the Abel Tasman Coast Track, a Great Walk of three to five days, and ride a water taxi one way. Fur seals bask on the headlands and little penguins nest on the islands offshore.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "Christoph Strässler from Oberdorf BL, Schweiz, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "nz-np-abel-tasman-faa73bd081.jpg",
+   "caption": "Anchorage Bay on the Abel Tasman Coast Track",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Anchorage_Bay,_Abel_Tasman_National_Park_(16351895238).jpg",
+   "altText": "A curved golden beach and turquoise water framed by forested hills",
+   "licence": "CC BY-SA 2.0"
+  },
+  "extent": {
+   "south": -40.99895,
+   "west": 172.83169,
+   "north": -40.78105,
+   "east": 173.069
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-abel-tasman"
+ },
+ {
+  "id": "nz-np-kahurangi",
+  "name": "Kahurangi",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-TAS",
+   "NZ-WTC"
+  ],
+  "centre": {
+   "latitude": -41.20394,
+   "longitude": 172.46437
+  },
+  "themes": [
+   "theme-mountains",
+   "theme-caves",
+   "theme-fossils",
+   "theme-alpine",
+   "theme-temperate-rainforest",
+   "theme-coastal",
+   "theme-conservation-movement"
+  ],
+  "facts": {
+   "establishedYear": 1996,
+   "areaHectares": 452002,
+   "bestSeasons": [
+    "summer",
+    "autumn"
+   ],
+   "suggestedTime": "Four to six days",
+   "lowestElevationMetres": 0,
+   "highestElevationMetres": 1871,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "upperSouthIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/",
+  "summary": "New Zealand's second-largest national park fills the north-western corner of the South Island: limestone and marble country riddled with caves, open tussock downs, glacier-carved valleys, and a wild coast of nīkau palms. The Heaphy Track, a Great Walk, crosses it from Golden Bay to the West Coast; elsewhere there are high plateaux, limestone arches and untracked wilderness.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "peterhallwright, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "nz-np-kahurangi-f85239a26d.jpg",
+   "caption": "The tussock of the Gouland Downs on the Heaphy Track",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Gouland_Downs_scene_-_Heaphy_Track.jpg",
+   "altText": "Open golden tussock country with patches of forest under cloudy hills",
+   "licence": "CC BY 2.0"
+  },
+  "extent": {
+   "south": -41.78847,
+   "west": 171.9928,
+   "north": -40.50769,
+   "east": 172.92125
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-kahurangi"
+ },
+ {
+  "id": "nz-np-nelson-lakes",
+  "name": "Nelson Lakes",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-TAS",
+   "NZ-CAN",
+   "NZ-MBH"
+  ],
+  "centre": {
+   "latitude": -42.04165,
+   "longitude": 172.62864
+  },
+  "themes": [
+   "theme-mountains",
+   "theme-glaciers",
+   "theme-alpine",
+   "theme-sacred-places",
+   "theme-conservation-movement"
+  ],
+  "facts": {
+   "establishedYear": 1956,
+   "areaHectares": 102000,
+   "bestSeasons": [
+    "summer",
+    "autumn"
+   ],
+   "suggestedTime": "Two to seven days",
+   "lowestElevationMetres": 440,
+   "highestElevationMetres": 2294,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "upperSouthIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/nelson-lakes-national-park/",
+  "summary": "The northern end of the Southern Alps: two long glacial lakes, Rotoiti and Rotoroa, beech forest loud with bellbirds, and craggy ranges full of tarns. St Arnaud, on the shore of Lake Rotoiti, is the gateway. Walk the lakeshore for an hour, climb Robert Ridge to Lake Angelus, or tramp the Travers–Sabine Circuit over an alpine pass.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "Kris Jacques ( Kris ), via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "nz-np-nelson-lakes-02b61ee44a.jpg",
+   "caption": "Lake Rotoiti and the mountains of Nelson Lakes",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_Rotoiti_at_Nelson_Lakes_National_Park.jpg",
+   "altText": "A long lake between forested mountain slopes, with higher peaks beyond",
+   "licence": "CC BY-SA 2.5"
+  },
+  "extent": {
+   "south": -42.30557,
+   "west": 172.34272,
+   "north": -41.77772,
+   "east": 172.92648
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-nelson-lakes"
+ },
+ {
+  "id": "nz-np-paparoa",
+  "name": "Paparoa",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-WTC"
+  ],
+  "centre": {
+   "latitude": -42.12643,
+   "longitude": 171.49382
+  },
+  "themes": [
+   "theme-coastal",
+   "theme-caves",
+   "theme-canyons",
+   "theme-temperate-rainforest",
+   "theme-mountains",
+   "theme-indigenous-heritage"
+  ],
+  "facts": {
+   "establishedYear": 1987,
+   "areaHectares": 42971,
+   "bestSeasons": [
+    "summer",
+    "autumn",
+    "spring"
+   ],
+   "suggestedTime": "One to three days",
+   "lowestElevationMetres": 0,
+   "highestElevationMetres": 1405,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "upperSouthIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/paparoa-national-park/",
+  "summary": "Limestone country on the South Island's West Coast: the stacked Pancake Rocks and roaring blowholes at Punakaiki, river gorges walled by white cliffs, caves, and coastal forest thick with nīkau palms, beneath the granite Paparoa Range. The Paparoa Track, a Great Walk, crosses the range to the coast, joined by the Pike29 Memorial Track for the 29 men lost at Pike River.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "W. Bulach, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "nz-np-paparoa-789d84ade3.jpg",
+   "caption": "The Pancake Rocks at Dolomite Point, Punakaiki",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:00_1273_Pancake_Rocks_-_Paparoa-Nationalpark_(New_Zealand).jpg",
+   "altText": "Grey limestone cliffs eroded into thin stacked layers like piles of pancakes above the sea",
+   "licence": "CC BY-SA 4.0"
+  },
+  "extent": {
+   "south": -42.25126,
+   "west": 171.32582,
+   "north": -41.85082,
+   "east": 171.92544
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-paparoa"
+ },
+ {
+  "id": "nz-np-arthurs-pass",
+  "name": "Arthur's Pass",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-CAN",
+   "NZ-WTC"
+  ],
+  "centre": {
+   "latitude": -42.8943,
+   "longitude": 171.73111
+  },
+  "themes": [
+   "theme-mountains",
+   "theme-alpine",
+   "theme-temperate-rainforest"
+  ],
+  "facts": {
+   "establishedYear": 1929,
+   "areaHectares": 119000,
+   "bestSeasons": [
+    "summer",
+    "autumn"
+   ],
+   "suggestedTime": "One to three days",
+   "lowestElevationMetres": 247,
+   "highestElevationMetres": 2381,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "upperSouthIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/",
+  "summary": "The South Island's first national park straddles the main divide of the Southern Alps/Kā Tiritiri o te Moana, with State Highway 73 and the Midland railway running through its heart. Beech forest on the dry eastern side gives way to rātā rainforest on the wet western side, and above both rise scree, snow tussock and steep routes marked only by poles and cairns.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "Michal Klajban, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "nz-np-arthurs-pass-ccaf1af3b0.jpg",
+   "caption": "Avalanche Peak and Mount Rolleston/Kaimatau",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Avalanche_Peak_and_Mt_Rolleston,_Arthur%27s_Pass_National_Park,_New_Zealand_05.jpg",
+   "altText": "Tawny tussock ridges rising to a rocky peak with patches of snow under a pale blue sky",
+   "licence": "CC BY-SA 4.0"
+  },
+  "extent": {
+   "south": -43.05948,
+   "west": 171.37431,
+   "north": -42.72887,
+   "east": 172.07398
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-arthurs-pass"
+ },
+ {
+  "id": "nz-np-westland-tai-poutini",
+  "name": "Westland Tai Poutini",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-WTC"
+  ],
+  "centre": {
+   "latitude": -43.5679,
+   "longitude": 170.04275
+  },
+  "themes": [
+   "theme-glaciers",
+   "theme-mountains",
+   "theme-temperate-rainforest",
+   "theme-wetland"
+  ],
+  "facts": {
+   "establishedYear": 1960,
+   "bestSeasons": [
+    "summer",
+    "autumn"
+   ],
+   "suggestedTime": "Two to three days",
+   "areaHectares": 131978,
+   "lowestElevationMetres": 0,
+   "highestElevationMetres": 3420,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "upperSouthIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/westland-tai-poutini-national-park/",
+  "summary": "From the highest peaks of the Southern Alps/Kā Tiritiri o te Moana to the wild beaches of the West Coast, Westland Tai Poutini packs glaciers, rainforest, lakes and wetlands into a short drive on State Highway 6. Franz Josef Glacier/Kā Roimata o Hine Hukatere and Fox Glacier/Te Moeka o Tuawe end in rainforest less than 300 metres above the sea, and Lake Matheson mirrors Aoraki/Mount Cook on still mornings.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "Pseudopanax at English Wikipedia, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "nz-np-westland-tai-poutini-0dac6276a3.jpg",
+   "caption": "Franz Josef Glacier/Kā Roimata o Hine Hukatere from Rata Lookout on the Alex Knob Track",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Franz_Josef_Glacier_valley_from_Rata_Lookout.jpg",
+   "altText": "A white glacier descending between steep grey slopes, framed by dark green rainforest under a blue sky",
+   "licence": "CC BY 3.0"
+  },
+  "localNames": [
+   {
+    "language": "mi",
+    "text": "Tai Poutini National Park"
+   }
+  ],
+  "extent": {
+   "south": -43.75249,
+   "west": 169.76803,
+   "north": -43.09751,
+   "east": 170.48395
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-westland-tai-poutini"
+ },
+ {
+  "id": "nz-np-aoraki-mount-cook",
+  "name": "Aoraki/Mount Cook",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-CAN",
+   "NZ-WTC"
+  ],
+  "centre": {
+   "latitude": -43.60499,
+   "longitude": 170.24099
+  },
+  "themes": [
+   "theme-mountains",
+   "theme-glaciers",
+   "theme-alpine",
+   "theme-sacred-places",
+   "theme-indigenous-heritage"
+  ],
+  "facts": {
+   "establishedYear": 1953,
+   "areaHectares": 70728,
+   "bestSeasons": [
+    "summer",
+    "autumn"
+   ],
+   "suggestedTime": "Two to three days",
+   "lowestElevationMetres": 609,
+   "highestElevationMetres": 3658,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "upperSouthIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/aoraki-mount-cook-national-park/",
+  "summary": "A land of ice and rock in the central Southern Alps: 19 peaks over 3,000 metres, among them New Zealand's highest, the 3,724-metre Aoraki/Mount Cook, and glaciers over 40 per cent of the park. The Hooker Valley Track leads to an iceberg-flecked lake at the mountain's foot, and the tiny alpine village at the end of State Highway 80 is a base for walkers, climbers and stargazers.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "Pseudopanax at English Wikipedia, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "nz-np-aoraki-mount-cook-211c77ec17.jpg",
+   "caption": "Icebergs on Hooker Lake beneath Aoraki/Mount Cook",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Icebergs_in_Hooker_Glacier_Lake_in_front_of_Aoraki_Mount_Cook.jpg",
+   "altText": "A snow-covered pyramid peak above a pale grey-green lake with small white icebergs",
+   "licence": "CC BY 3.0"
+  },
+  "extent": {
+   "south": -43.80009,
+   "west": 169.97652,
+   "north": -43.40998,
+   "east": 170.61558
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-aoraki-mount-cook"
+ },
+ {
+  "id": "nz-np-mount-aspiring",
+  "name": "Mount Aspiring",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-WTC",
+   "NZ-OTA",
+   "NZ-STL"
+  ],
+  "centre": {
+   "latitude": -44.3499,
+   "longitude": 168.71485
+  },
+  "themes": [
+   "theme-mountains",
+   "theme-glaciers",
+   "theme-alpine"
+  ],
+  "facts": {
+   "establishedYear": 1964,
+   "areaHectares": 355543,
+   "bestSeasons": [
+    "summer",
+    "autumn"
+   ],
+   "suggestedTime": "Two to four days",
+   "lowestElevationMetres": 5,
+   "highestElevationMetres": 2894,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "lowerSouthIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/",
+  "summary": "Remote wilderness, high mountains and long beech-forested valleys at the southern end of the Southern Alps, west of Lake Wānaka. Mount Aspiring/Tititea, the only peak over 3,000 metres outside Aoraki/Mount Cook National Park, gives the park its name. Day walkers come for Rob Roy Glacier and the Blue Pools; trampers and climbers for the Matukituki, Gillespie Pass and the start of the Routeburn Track.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "Alex Proimos from Sydney, Australia, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "nz-np-mount-aspiring-ef6ecfb351.jpg",
+   "caption": "Mount Aspiring/Tititea from the air, with Mount Avalanche and Popes Nose",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Aspiring_Tititea,_Mount_Avalanche,_and_Popes_Nose.jpg",
+   "altText": "A sharp snow-covered summit above broad glaciers and jagged rocky ridges",
+   "licence": "CC BY 2.0"
+  },
+  "extent": {
+   "south": -44.77437,
+   "west": 168.16919,
+   "north": -43.92539,
+   "east": 169.59288
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-mount-aspiring"
+ },
+ {
+  "id": "nz-np-fiordland",
+  "name": "Fiordland",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-STL"
+  ],
+  "centre": {
+   "latitude": -45.41164,
+   "longitude": 167.41584
+  },
+  "themes": [
+   "theme-fjords",
+   "theme-mountains",
+   "theme-temperate-rainforest",
+   "theme-glaciers"
+  ],
+  "facts": {
+   "establishedYear": 1952,
+   "areaHectares": 1260740,
+   "bestSeasons": [
+    "summer",
+    "autumn"
+   ],
+   "suggestedTime": "Three to five days",
+   "lowestElevationMetres": 0,
+   "highestElevationMetres": 2709,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "lowerSouthIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/",
+  "summary": "New Zealand's largest national park fills the south-west corner of the South Island: fourteen ice-carved fiords, hundreds of lakes, rainforest and granite peaks. Most visitors drive the Milford Road to Milford Sound/Piopiotahi and Mitre Peak, or cruise Doubtful Sound/Patea; trampers come for three Great Walks — the Milford, Kepler and Routeburn — from Te Anau, the gateway town.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "Bernard Spragg. NZ, via Wikimedia Commons",
+   "isPublicDomain": true,
+   "assetName": "nz-np-fiordland-1ec2f85224.jpg",
+   "caption": "Mitre Peak across the still water of Milford Sound/Piopiotahi",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Mitre_Peak_of_Milford_Sound,_New_Zealand;_February_2015.jpg",
+   "altText": "A pointed mountain rising from a calm fiord, its slopes reflected in the water under a clear sky"
+  },
+  "extent": {
+   "south": -46.57933,
+   "west": 166.42614,
+   "north": -44.33149,
+   "east": 168.23979
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-fiordland"
+ },
+ {
+  "id": "nz-np-rakiura",
+  "name": "Rakiura",
+  "designation": "National Park",
+  "kind": "nationalPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-STL"
+  ],
+  "centre": {
+   "latitude": -46.98675,
+   "longitude": 167.88039
+  },
+  "themes": [
+   "theme-islands",
+   "theme-coastal",
+   "theme-temperate-rainforest",
+   "theme-dunes"
+  ],
+  "facts": {
+   "establishedYear": 2002,
+   "areaHectares": 157000,
+   "bestSeasons": [
+    "summer",
+    "autumn"
+   ],
+   "suggestedTime": "Two to four days",
+   "lowestElevationMetres": 0,
+   "highestElevationMetres": 979,
+   "elevationNote": "Measured by Unigrids from Copernicus GLO-30"
+  },
+  "passportRegion": "lowerSouthIsland",
+  "officialURL": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/",
+  "summary": "New Zealand's newest national park covers 85 per cent of Stewart Island/Rakiura, a ferry ride or short flight south of the South Island. It is a land of sheltered inlets, empty beaches, coastal forest and deep mud, where kiwi can be seen in the wild — sometimes by day. The three-day Rakiura Track is a year-round Great Walk; the muddy North West Circuit takes nine to eleven days.",
+  "summarySource": "Unigrids",
+  "image": {
+   "credit": "Pseudopanax at English Wikipedia, via Wikimedia Commons",
+   "isPublicDomain": true,
+   "assetName": "nz-np-rakiura-a620087614.jpg",
+   "caption": "Mason Bay from the air, looking north",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Mason_Bay_towards_north_(from_the_air).jpg",
+   "altText": "A long curving beach with white surf, backed by wide grassy sand dunes and green hills"
+  },
+  "reachedBy": "Ferry from Bluff, or a flight from Invercargill",
+  "extent": {
+   "south": -47.28982,
+   "west": 167.44711,
+   "north": -46.68351,
+   "east": 168.16243
+  },
+  "timeZoneID": "Pacific/Auckland",
+  "emblem": "nz-np-rakiura"
+ },
+ {
+  "id": "nz-cp-pureora",
+  "name": "Pureora",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-WKO",
+   "NZ-MWT"
+  ],
+  "centre": {
+   "latitude": -38.65797,
+   "longitude": 175.58435
+  },
+  "facts": {
+   "areaHectares": 73854
+  },
+  "passportRegion": "northIsland",
+  "summary": "Pureora Forest Park is a 760-square-kilometre (290 sq mi) protected area in the North Island of New Zealand. Within its rich rainforest are an abundance of 1,000-year-old podocarp trees. It is \"recognised as one of the finest rain forests in the world\".",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Pureora_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Pureora_Forest_Park",
+  "image": {
+   "credit": "Thomas Camp, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Te_Pureora_forest_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Te_Pureora_forest_1.jpg",
+   "licence": "CC BY 2.0"
+  },
+  "extent": {
+   "south": -38.88667,
+   "west": 175.35023,
+   "north": -38.22133,
+   "east": 175.77222
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-kaimanawa",
+  "name": "Kaimanawa",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-WKO",
+   "NZ-MWT",
+   "NZ-HKB"
+  ],
+  "centre": {
+   "latitude": -39.11079,
+   "longitude": 175.91354
+  },
+  "facts": {
+   "areaHectares": 75957
+  },
+  "passportRegion": "northIsland",
+  "summary": "Kaimanawa Forest Park is a protected area south of Lake Taupō and east of Mount Tongariro in the Taupō Volcanic Zone. It is situated in the Rangitikei District and Manawatū-Whanganui Region of New Zealand's North Island. The park is managed by the New Zealand Department of Conservation.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Kaimanawa_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Kaimanawa_Forest_Park",
+  "image": {
+   "credit": "patchtok, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Sunset_over_Kaimanawas.jpg/1280px-Sunset_over_Kaimanawas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Sunset_over_Kaimanawas.jpg",
+   "licence": "CC BY 2.0"
+  },
+  "extent": {
+   "south": -39.30032,
+   "west": 175.74121,
+   "north": -38.92146,
+   "east": 176.2807
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-whirinaki-te-pua-a-tane",
+  "name": "Whirinaki Te Pua-a-Tane",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-BOP",
+   "NZ-HKB"
+  ],
+  "centre": {
+   "latitude": -38.76333,
+   "longitude": 176.69689
+  },
+  "facts": {
+   "areaHectares": 56175
+  },
+  "passportRegion": "northIsland",
+  "summary": "Whirinaki Te Pua-a-Tāne Conservation Park is a publicly accessible conservation park in the North Island of New Zealand. The park is centered on the town of Minginui and part of the eastern boundary flanks Te Urewera. The Whirinaki Forest is one of the world's last prehistoric rainforests.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Whirinaki_Te_Pua-a-T%C4%81ne_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Whirinaki_Te_Pua-a-T%C4%81ne_Conservation_Park",
+  "image": {
+   "credit": "Pseudopanax at English Wikipedia, via Wikimedia Commons",
+   "isPublicDomain": true,
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Arohaki_Lagoon_with_kahikatea_background_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Arohaki_Lagoon_with_kahikatea_background_2.jpg"
+  },
+  "extent": {
+   "south": -38.9365,
+   "west": 176.55677,
+   "north": -38.49419,
+   "east": 176.86556
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-kaimai-mamaku",
+  "name": "Kaimai Mamaku",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-BOP",
+   "NZ-WKO"
+  ],
+  "centre": {
+   "latitude": -37.95478,
+   "longitude": 175.96667
+  },
+  "facts": {
+   "areaHectares": 40057
+  },
+  "passportRegion": "northIsland",
+  "summary": "The Kaimai Mamaku Conservation Park is a protected area in the North Island of New Zealand. It was formed in 1975 as the Kaimai-Mamaku Forest Park, defined as a Conservation Park in 1987, and renamed in 2009. The park forms a barrier between the Waikato and Bay of Plenty regions, and runs from the Karangahake Gorge in the north, almost to Rotorua in the south.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Kaimai_Mamaku_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Kaimai_Mamaku_Conservation_Park",
+  "extent": {
+   "south": -38.03112,
+   "west": 175.70086,
+   "north": -37.42162,
+   "east": 176.05993
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-coromandel",
+  "name": "Coromandel",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-WKO"
+  ],
+  "centre": {
+   "latitude": -37.05414,
+   "longitude": 175.65465
+  },
+  "facts": {
+   "areaHectares": 71899
+  },
+  "passportRegion": "northIsland",
+  "summary": "Coromandel Forest Park is a protected area and conservation park administered by the Department of Conservation, covering 71,899 hectares of the Coromandel Peninsula, in the Thames Coromandel District of the Waikato Region. It consists of hills and valleys covered in dense native bush. One of the valleys, Kauaeranga Valley, also includes several swimming holes.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Coromandel_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Coromandel_Forest_Park",
+  "image": {
+   "credit": "Ulrich Lange, Bochum, Germany, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Coromandel_Forest_Park_%28Coroglen_to_Tapu%29.jpg/1280px-Coromandel_Forest_Park_%28Coroglen_to_Tapu%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Coromandel_Forest_Park_(Coroglen_to_Tapu).jpg",
+   "licence": "CC BY-SA 4.0"
+  },
+  "extent": {
+   "south": -37.41845,
+   "west": 175.34172,
+   "north": -36.50147,
+   "east": 175.88533
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-aorangi",
+  "name": "Aorangi",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-WGN"
+  ],
+  "centre": {
+   "latitude": -41.45562,
+   "longitude": 175.32262
+  },
+  "facts": {
+   "areaHectares": 19341
+  },
+  "passportRegion": "northIsland",
+  "summary": "Aorangi Forest Park is a 194-square-kilometre (75 sq mi) protected area in the Wellington Region of New Zealand administered by the Department of Conservation (DOC). It had been called the Haurangi Forest Park but DOC changed to reflect the Māori name of the range protected by the park. The park has six backcountry huts and a recreational hunting area in the park.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Aorangi_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Aorangi_Forest_Park",
+  "image": {
+   "credit": "Michal Klajban, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Aorangi_Forest_Park%2C_New_Zealand_%286%29.JPG/1280px-Aorangi_Forest_Park%2C_New_Zealand_%286%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Aorangi_Forest_Park,_New_Zealand_(6).JPG",
+   "licence": "CC BY-SA 4.0"
+  },
+  "extent": {
+   "south": -41.60417,
+   "west": 175.21732,
+   "north": -41.30707,
+   "east": 175.4045
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-tararua",
+  "name": "Tararua",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-WGN",
+   "NZ-MWT"
+  ],
+  "centre": {
+   "latitude": -40.79015,
+   "longitude": 175.37713
+  },
+  "facts": {
+   "areaHectares": 114903
+  },
+  "passportRegion": "northIsland",
+  "summary": "Tararua Forest Park, often called the Tararuas is a protected area in the Wellington region of New Zealand. Its area is 1,150 square kilometres (440 sq mi), and its highest point, a peak called Mitre, is at 1571 m above sea level. It was established in 1954, as New Zealand's first Forest Park, and is managed by the Department of Conservation (DOC) under the Conservation Act.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Tararua_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Tararua_Forest_Park",
+  "image": {
+   "credit": "Pipe42, via Wikimedia Commons",
+   "isPublicDomain": true,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Otaki_Forks_Otaki_River.jpg/1280px-Otaki_Forks_Otaki_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Otaki_Forks_Otaki_River.jpg"
+  },
+  "extent": {
+   "south": -41.11474,
+   "west": 175.10825,
+   "north": -40.46555,
+   "east": 175.68919
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-pirongia",
+  "name": "Pirongia",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-WKO"
+  ],
+  "centre": {
+   "latitude": -37.97489,
+   "longitude": 175.04031
+  },
+  "facts": {
+   "areaHectares": 16775
+  },
+  "passportRegion": "northIsland",
+  "summary": "Pirongia Forest Park is a protected area 30 kilometres (19 miles) southwest of Hamilton, New Zealand. It covers 167.7 square kilometres (64.7 sq mi) across four blocks of land - Pirongia (the largest), Te Maunga O Karioi Block, and the small Mangakino Block and Te Rauamoa Block. The park encompasses Mount Pirongia west of Pirongia and Mount Karioi near the coast southwest of Raglan.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Pirongia_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Pirongia_Forest_Park",
+  "image": {
+   "credit": "Pseudopanax at English Wikipedia, via Wikimedia Commons",
+   "isPublicDomain": true,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Native_bush_in_Pirongia_Forest.jpg/1280px-Native_bush_in_Pirongia_Forest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Native_bush_in_Pirongia_Forest.jpg"
+  },
+  "extent": {
+   "south": -38.14449,
+   "west": 174.77523,
+   "north": -37.84016,
+   "east": 175.15458
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-kaiikanui-forest",
+  "name": "Kaiikanui Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.47342,
+   "longitude": 174.40348
+  },
+  "facts": {
+   "areaHectares": 1165
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.51446,
+   "west": 174.3439,
+   "north": -35.45695,
+   "east": 174.41976
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-pukenui-forest",
+  "name": "Pukenui Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.71235,
+   "longitude": 174.25643
+  },
+  "facts": {
+   "areaHectares": 593
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.72452,
+   "west": 174.23563,
+   "north": -35.70018,
+   "east": 174.26505
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-tangihua-forest",
+  "name": "Tangihua Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.86649,
+   "longitude": 174.11423
+  },
+  "facts": {
+   "areaHectares": 3240
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.89677,
+   "west": 174.06401,
+   "north": -35.83638,
+   "east": 174.18628
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-waima-forest",
+  "name": "Waimā Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.5253,
+   "longitude": 173.54651
+  },
+  "facts": {
+   "areaHectares": 4365
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.56497,
+   "west": 173.43494,
+   "north": -35.48563,
+   "east": 173.58829
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-mataraua-forest",
+  "name": "Mataraua Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.5897,
+   "longitude": 173.65116
+  },
+  "facts": {
+   "areaHectares": 5704
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.63351,
+   "west": 173.5873,
+   "north": -35.52772,
+   "east": 173.75077
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-waipoua-forest",
+  "name": "Waipoua Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.63523,
+   "longitude": 173.60513
+  },
+  "facts": {
+   "areaHectares": 12411
+  },
+  "passportRegion": "northIsland",
+  "image": {
+   "credit": "Szilas, via Wikimedia Commons",
+   "isPublicDomain": true,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Waipoua_Forest%2C_view_from_the_fire_lookout_tower-2.jpg/1280px-Waipoua_Forest%2C_view_from_the_fire_lookout_tower-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Waipoua_Forest,_view_from_the_fire_lookout_tower-2.jpg"
+  },
+  "extent": {
+   "south": -35.69401,
+   "west": 173.41904,
+   "north": -35.58021,
+   "east": 173.65352
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-herekino-forest",
+  "name": "Herekino Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.20241,
+   "longitude": 173.24009
+  },
+  "facts": {
+   "areaHectares": 4406
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.24049,
+   "west": 173.19079,
+   "north": -35.15771,
+   "east": 173.3076
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-raetea-forest",
+  "name": "Raetea Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.20578,
+   "longitude": 173.4271
+  },
+  "facts": {
+   "areaHectares": 7132
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.25125,
+   "west": 173.31072,
+   "north": -35.16031,
+   "east": 173.48222
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-omahuta-forest",
+  "name": "Ōmahuta Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.2248,
+   "longitude": 173.64414
+  },
+  "facts": {
+   "areaHectares": 6572
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.28977,
+   "west": 173.58523,
+   "north": -35.13768,
+   "east": 173.69003
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-warawara-forest",
+  "name": "Warawara Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.38343,
+   "longitude": 173.28857
+  },
+  "facts": {
+   "areaHectares": 6943
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.4336,
+   "west": 173.24606,
+   "north": -35.33326,
+   "east": 173.36839
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-marlborough-forest",
+  "name": "Marlborough Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.68154,
+   "longitude": 173.72956
+  },
+  "facts": {
+   "areaHectares": 4796
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.71665,
+   "west": 173.67805,
+   "north": -35.62762,
+   "east": 173.81051
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-waikino-forest",
+  "name": "Waikino Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.34748,
+   "longitude": 174.15302
+  },
+  "facts": {
+   "areaHectares": 979
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.3636,
+   "west": 174.12883,
+   "north": -35.31681,
+   "east": 174.17768
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-russell-forest",
+  "name": "Russell Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.38715,
+   "longitude": 174.27312
+  },
+  "facts": {
+   "areaHectares": 7131
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.44664,
+   "west": 174.1656,
+   "north": -35.34286,
+   "east": 174.32034
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-puketi-forest",
+  "name": "Puketī Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.22435,
+   "longitude": 173.74565
+  },
+  "facts": {
+   "areaHectares": 7345
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.27791,
+   "west": 173.67641,
+   "north": -35.1708,
+   "east": 173.80184
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-opua-forest",
+  "name": "Ōpua Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.30736,
+   "longitude": 174.0659
+  },
+  "facts": {
+   "areaHectares": 1933
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.35197,
+   "west": 174.00535,
+   "north": -35.28964,
+   "east": 174.09552
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-kaihu-forest",
+  "name": "Kaihū Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.75236,
+   "longitude": 173.78284
+  },
+  "facts": {
+   "areaHectares": 2425
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.7795,
+   "west": 173.73967,
+   "north": -35.72522,
+   "east": 173.85086
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-houto-forest",
+  "name": "Hōuto Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.74669,
+   "longitude": 173.945
+  },
+  "facts": {
+   "areaHectares": 938
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.79958,
+   "west": 173.90825,
+   "north": -35.73388,
+   "east": 173.96277
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-maungataniwha-forest",
+  "name": "Maungataniwha Forest",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-NTL"
+  ],
+  "centre": {
+   "latitude": -35.15457,
+   "longitude": 173.52436
+  },
+  "facts": {
+   "areaHectares": 1177
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -35.17485,
+   "west": 173.44332,
+   "north": -35.13429,
+   "east": 173.56209
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-remutaka",
+  "name": "Remutaka",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-WGN"
+  ],
+  "centre": {
+   "latitude": -41.25804,
+   "longitude": 175.1087
+  },
+  "facts": {
+   "areaHectares": 19647
+  },
+  "passportRegion": "northIsland",
+  "summary": "Remutaka Forest Park (spelled Rimutaka Forest Park prior to 2017) is a protected area near Wellington, New Zealand. Popular access points are south of Wainuiomata and in the upper Hutt Valley. The park covers 220 square kilometres (85 sq mi), encompassing the Catchpool Valley and the Ōrongorongo Valley at the southern end of the Remutaka Range.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Remutaka_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Remutaka_Forest_Park",
+  "image": {
+   "credit": "Pseudopanax at en.wikipedia, via Wikimedia Commons",
+   "isPublicDomain": true,
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/View_up_Catchpool_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:View_up_Catchpool_Valley.jpg"
+  },
+  "extent": {
+   "south": -41.40487,
+   "west": 174.90077,
+   "north": -41.1112,
+   "east": 175.26158
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-hanmer",
+  "name": "Hanmer",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-CAN"
+  ],
+  "centre": {
+   "latitude": -42.50128,
+   "longitude": 172.66592
+  },
+  "facts": {
+   "areaHectares": 11780
+  },
+  "passportRegion": "upperSouthIsland",
+  "extent": {
+   "south": -42.55539,
+   "west": 172.58674,
+   "north": -42.44717,
+   "east": 172.93229
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-catlins",
+  "name": "Catlins",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-OTA",
+   "NZ-STL"
+  ],
+  "centre": {
+   "latitude": -46.43693,
+   "longitude": 169.30325
+  },
+  "facts": {
+   "areaHectares": 53041
+  },
+  "passportRegion": "lowerSouthIsland",
+  "summary": "Catlins Conservation Park is a protected area in the Otago region of New Zealand, covering 53,041 hectares in The Catlins, within the Clutha District. The park includes the McLean Falls, and a range of tramping tracks.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Catlins_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Catlins_Conservation_Park",
+  "extent": {
+   "south": -46.64806,
+   "west": 168.92601,
+   "north": -46.27417,
+   "east": 169.67584
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-eyre-mountains-taka-ra-haka",
+  "name": "Eyre Mountains/Taka Ra Haka",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-STL",
+   "NZ-OTA"
+  ],
+  "centre": {
+   "latitude": -45.42757,
+   "longitude": 168.29197
+  },
+  "facts": {
+   "areaHectares": 65160
+  },
+  "passportRegion": "lowerSouthIsland",
+  "summary": "Eyre Mountains/Taka Ra Haka Conservation Park is a protected area and mountain range in the Southland District and Southland Region of New Zealand's South Island.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Eyre_Mountains_/_Taka_Ra_Haka_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Eyre_Mountains_/_Taka_Ra_Haka_Conservation_Park",
+  "extent": {
+   "south": -45.60957,
+   "west": 168.117,
+   "north": -45.24557,
+   "east": 168.66189
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-kaweka",
+  "name": "Kaweka",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-HKB"
+  ],
+  "centre": {
+   "latitude": -39.25612,
+   "longitude": 176.3856
+  },
+  "facts": {
+   "areaHectares": 58272
+  },
+  "passportRegion": "northIsland",
+  "summary": "Kaweka Forest Park is in the Hawke's Bay region of New Zealand, adjacent to Kaimanawa Forest Park. This region of the central North Island contains large tracts of pine plantations, some of them also within the park, and as a consequence, invasive wilding conifers are present throughout the 594 km2 (229 sq mi) park. The highest peak in the park is Kaweka at 1,724 metres (5,656 ft).",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Kaweka_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Kaweka_Forest_Park",
+  "image": {
+   "credit": "Michal Klajban, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Kaweka_Range%2C_New_Zealand_05.JPG/1280px-Kaweka_Range%2C_New_Zealand_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Kaweka_Range,_New_Zealand_05.JPG",
+   "licence": "CC BY-SA 4.0"
+  },
+  "extent": {
+   "south": -39.528,
+   "west": 176.17637,
+   "north": -39.09788,
+   "east": 176.50296
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-ruahine",
+  "name": "Ruahine",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-MWT",
+   "NZ-HKB"
+  ],
+  "centre": {
+   "latitude": -39.88574,
+   "longitude": 176.09046
+  },
+  "facts": {
+   "areaHectares": 95266
+  },
+  "passportRegion": "northIsland",
+  "summary": "Ruahine Forest Park is a protected area in New Zealand's North Island, predominantly in Rangitikei District in Manawatū-Whanganui. The park is managed by the New Zealand Department of Conservation.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Ruahine_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Ruahine_Forest_Park",
+  "image": {
+   "credit": "Michal Klajban, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Ruahine_Mountains%2C_along_the_Daphne_Spur_%281%29.JPG/1280px-Ruahine_Mountains%2C_along_the_Daphne_Spur_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Ruahine_Mountains,_along_the_Daphne_Spur_(1).JPG",
+   "licence": "CC BY-SA 4.0"
+  },
+  "extent": {
+   "south": -40.2696,
+   "west": 175.83004,
+   "north": -39.50188,
+   "east": 176.35773
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-raukumara",
+  "name": "Raukumara",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-BOP",
+   "NZ-GIS"
+  ],
+  "centre": {
+   "latitude": -37.92739,
+   "longitude": 177.93179
+  },
+  "facts": {
+   "areaHectares": 111021
+  },
+  "passportRegion": "northIsland",
+  "summary": "Raukūmara Conservation Park is a protected area in the Gisborne District of New Zealand's North Island. The park is managed by the New Zealand Department of Conservation.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Rauk%C5%ABmara_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Rauk%C5%ABmara_Conservation_Park",
+  "image": {
+   "credit": "Phillip Capper from Wellington, New Zealand, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Hikurangi%2C_East_Coast%2C_New_Zealand%2C_14th._Dec._2010_-_Flickr_-_PhillipC.jpg/1280px-Hikurangi%2C_East_Coast%2C_New_Zealand%2C_14th._Dec._2010_-_Flickr_-_PhillipC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Hikurangi,_East_Coast,_New_Zealand,_14th._Dec._2010_-_Flickr_-_PhillipC.jpg",
+   "licence": "CC BY 2.0"
+  },
+  "extent": {
+   "south": -38.19683,
+   "west": 177.50894,
+   "north": -37.6933,
+   "east": 178.25203
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-sugar-loaf-islands",
+  "name": "Sugar Loaf Islands",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-TKI"
+  ],
+  "centre": {
+   "latitude": -39.05379,
+   "longitude": 174.00995
+  },
+  "facts": {
+   "areaHectares": 722
+  },
+  "passportRegion": "northIsland",
+  "extent": {
+   "south": -39.06981,
+   "west": 173.99296,
+   "north": -39.03788,
+   "east": 174.03123
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-ka-whata-tu-o-rakihouia",
+  "name": "Ka Whata Tu o Rakihouia",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-CAN",
+   "NZ-MBH"
+  ],
+  "centre": {
+   "latitude": -42.2254,
+   "longitude": 173.4435
+  },
+  "facts": {
+   "areaHectares": 88065
+  },
+  "passportRegion": "upperSouthIsland",
+  "summary": "Ka Whata Tu O Rakihouia Conservation Park is a protected area covering part of the Seaward Kaikoura Range. It is located between Kaikōura and Clarence in the Kaikōura District and Canterbury Region of New Zealand's South Island. The main breeding colony of the endangered Hutton's shearwater is located in the headwaters of the Kowhai River.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Ka_Whata_Tu_O_Rakihouia_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Ka_Whata_Tu_O_Rakihouia_Conservation_Park",
+  "extent": {
+   "south": -42.40737,
+   "west": 173.24102,
+   "north": -41.99845,
+   "east": 173.9382
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-north-west-nelson",
+  "name": "North-west Nelson",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-TAS"
+  ],
+  "centre": {
+   "latitude": -40.74315,
+   "longitude": 172.4076
+  },
+  "facts": {
+   "areaHectares": 31665
+  },
+  "passportRegion": "upperSouthIsland",
+  "summary": "North-west Nelson Forest Park, also spelled Northwest Nelson Forest Park and North West Nelson Forest Park, is a forest park that was initially very large and managed by the New Zealand Forest Service until the Department of Conservation was formed in 1987. It existed in its initial form from 1970 until 1996, when most of it became Kahurangi National Park. Since then, the remainder of the forest park has been made up of many disparate and unconnected areas around the perimeter of the national park.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/North-west_Nelson_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/North-west_Nelson_Forest_Park",
+  "extent": {
+   "south": -41.35308,
+   "west": 172.1067,
+   "north": -40.51222,
+   "east": 172.78728
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-mount-richmond",
+  "name": "Mount Richmond",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-MBH",
+   "NZ-TAS",
+   "NZ-NSN"
+  ],
+  "centre": {
+   "latitude": -41.4663,
+   "longitude": 173.37969
+  },
+  "facts": {
+   "areaHectares": 165946
+  },
+  "passportRegion": "upperSouthIsland",
+  "summary": "Mount Richmond Forest Park is a forest park in New Zealand, administered by the Department of Conservation. Established in 1977, the forest park is located between Nelson and Marlborough and consists of 1,659 km2 (641 sq mi) of conservation estate. Around 80% of the area is covered in bush.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Mount_Richmond_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Mount_Richmond_Forest_Park",
+  "extent": {
+   "south": -41.76186,
+   "west": 172.89673,
+   "north": -41.06443,
+   "east": 173.96075
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-hawea",
+  "name": "Hawea",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-OTA",
+   "NZ-CAN"
+  ],
+  "centre": {
+   "latitude": -44.24995,
+   "longitude": 169.35393
+  },
+  "facts": {
+   "areaHectares": 105261
+  },
+  "passportRegion": "lowerSouthIsland",
+  "summary": "The Hāwea Conservation Park is a protected area in the South Island of New Zealand. It was created in September 2008 from land that previously had a number of separate tenures. The majority of the land forming the park was public conservation land but some previously unallocated Crown land and land from the tenure review process also formed part of the park.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/H%C4%81wea_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/H%C4%81wea_Conservation_Park",
+  "extent": {
+   "south": -44.54448,
+   "west": 169.17767,
+   "north": -43.95542,
+   "east": 169.71799
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-ahuriri",
+  "name": "Ahuriri",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-CAN"
+  ],
+  "centre": {
+   "latitude": -44.25856,
+   "longitude": 169.69053
+  },
+  "facts": {
+   "areaHectares": 47316
+  },
+  "passportRegion": "upperSouthIsland",
+  "summary": "Ahuriri Conservation Park is a protected area of 49,000 hectares including tussock grasslands, forest, and river habitat, located in Canterbury, South Island, New Zealand, and centred around the headwaters of the Ahuriri River. The park includes trails and huts. The mountains, forests, tussock lands and river valleys are used for tramping, fishing kayaking, horse riding and hunting.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Ahuriri_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Ahuriri_Conservation_Park",
+  "image": {
+   "credit": "Krzysztof Golik, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Ahuriri_River_06.jpg/1280px-Ahuriri_River_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Ahuriri_River_06.jpg",
+   "licence": "CC BY-SA 4.0"
+  },
+  "extent": {
+   "south": -44.45413,
+   "west": 169.5432,
+   "north": -44.06771,
+   "east": 169.8754
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-ruataniwha",
+  "name": "Ruataniwha",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-CAN"
+  ],
+  "centre": {
+   "latitude": -44.07233,
+   "longitude": 170.03102
+  },
+  "facts": {
+   "areaHectares": 37145
+  },
+  "passportRegion": "upperSouthIsland",
+  "summary": "Ruataniwha Conservation Park is a protected area near Twizel, in the Mackenzie District and Canterbury Region of New Zealand's South Island. The park is managed by the New Zealand Department of Conservation.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Ruataniwha_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Ruataniwha_Conservation_Park",
+  "extent": {
+   "south": -44.27462,
+   "west": 169.71461,
+   "north": -43.79501,
+   "east": 170.13371
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-te-papanui",
+  "name": "Te Papanui",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-OTA"
+  ],
+  "centre": {
+   "latitude": -45.67074,
+   "longitude": 169.80996
+  },
+  "facts": {
+   "areaHectares": 20591
+  },
+  "passportRegion": "lowerSouthIsland",
+  "summary": "Te Papanui Conservation Park is a mainland island in the Otago Region of New Zealand. It is managed by the Department of Conservation, and opened in its current form in March 2003.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Te_Papanui_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Te_Papanui_Conservation_Park",
+  "extent": {
+   "south": -45.80838,
+   "west": 169.66357,
+   "north": -45.6179,
+   "east": 169.90001
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-hakatere",
+  "name": "Hakatere",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-CAN"
+  ],
+  "centre": {
+   "latitude": -43.45765,
+   "longitude": 171.34125
+  },
+  "facts": {
+   "areaHectares": 59570
+  },
+  "passportRegion": "upperSouthIsland",
+  "summary": "Hakatere Conservation Park is a protected area of high country between the Rangitata and Rakaia River rivers in the Ashburton District of the South Island of New Zealand. The park was established in 2007 and covers 68,000 ha (170,000 acres) of rugged mountains and mountain basins, tussocklands and beech forest, and includes alpine and sub-alpine ecosystems, braided rivers, lakes and wetlands. These diverse environments provide significant wildlife habitat.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Hakatere_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Hakatere_Conservation_Park",
+  "image": {
+   "credit": "Michal Klajban, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/View_of_Hakatere_Conservation_Park%2C_Canterbury%2C_New_Zealand.jpg/1280px-View_of_Hakatere_Conservation_Park%2C_Canterbury%2C_New_Zealand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:View_of_Hakatere_Conservation_Park,_Canterbury,_New_Zealand.jpg",
+   "licence": "CC BY-SA 4.0"
+  },
+  "extent": {
+   "south": -43.71252,
+   "west": 170.68568,
+   "north": -43.27432,
+   "east": 171.57119
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-lake-sumner-hoka-kura",
+  "name": "Lake Sumner (Hoka Kura)",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-CAN"
+  ],
+  "centre": {
+   "latitude": -42.74363,
+   "longitude": 172.39599
+  },
+  "facts": {
+   "areaHectares": 105132
+  },
+  "passportRegion": "upperSouthIsland",
+  "extent": {
+   "south": -42.8715,
+   "west": 171.88281,
+   "north": -42.38075,
+   "east": 172.63615
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-victoria",
+  "name": "Victoria",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-WTC",
+   "NZ-TAS"
+  ],
+  "centre": {
+   "latitude": -42.06419,
+   "longitude": 172.05061
+  },
+  "facts": {
+   "areaHectares": 218343
+  },
+  "passportRegion": "upperSouthIsland",
+  "summary": "Victoria Forest Park, is situated on the West Coast of the South Island of New Zealand. At 2,069 square kilometres (799 sq mi) it is New Zealand's largest forest park. The park is administered by the Department of Conservation (DOC).",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Victoria_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Victoria_Forest_Park",
+  "image": {
+   "credit": "Michal Klajban, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Bush_in_Victoria_Forest_Park%2C_West_Coast%2C_New_Zealand_09.jpg/1280px-Bush_in_Victoria_Forest_Park%2C_West_Coast%2C_New_Zealand_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Bush_in_Victoria_Forest_Park,_West_Coast,_New_Zealand_09.jpg",
+   "licence": "CC BY-SA 4.0"
+  },
+  "extent": {
+   "south": -42.50622,
+   "west": 171.70326,
+   "north": -41.78524,
+   "east": 172.35933
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-te-kahui-kaupeka",
+  "name": "Te Kahui Kaupeka",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-CAN"
+  ],
+  "centre": {
+   "latitude": -43.59991,
+   "longitude": 170.73157
+  },
+  "facts": {
+   "areaHectares": 94033
+  },
+  "passportRegion": "upperSouthIsland",
+  "summary": "Te Kahui Kaupeka Conservation Park is a protected area in the Timaru District and Canterbury Region of New Zealand's South Island. The park is managed by the New Zealand Department of Conservation.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Te_Kahui_Kaupeka_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Te_Kahui_Kaupeka_Conservation_Park",
+  "extent": {
+   "south": -43.99333,
+   "west": 170.50089,
+   "north": -43.38814,
+   "east": 170.91905
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-craigieburn",
+  "name": "Craigieburn",
+  "designation": "Forest Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-CAN"
+  ],
+  "centre": {
+   "latitude": -43.10768,
+   "longitude": 171.58123
+  },
+  "facts": {
+   "areaHectares": 44695
+  },
+  "passportRegion": "upperSouthIsland",
+  "summary": "Craigieburn Forest Park is a protected area in the South Island of New Zealand, adjacent to Arthur's Pass National Park to the north. The park is administered by the Department of Conservation, and features the Broken River Ski Area and the Craigieburn Valley Ski Area. The park is popular for a range of recreational activities, particularly for people from Christchurch.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Craigieburn_Forest_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Craigieburn_Forest_Park",
+  "image": {
+   "credit": "Michal Klajban, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Baldy_Hill_from_Snowslide_Valley%2C_Craigieburn_Range%2C_Canterbury%2C_New_Zealand.jpg/1280px-Baldy_Hill_from_Snowslide_Valley%2C_Craigieburn_Range%2C_Canterbury%2C_New_Zealand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Baldy_Hill_from_Snowslide_Valley,_Craigieburn_Range,_Canterbury,_New_Zealand.jpg",
+   "licence": "CC BY-SA 4.0"
+  },
+  "extent": {
+   "south": -43.25608,
+   "west": 171.20836,
+   "north": -42.96067,
+   "east": 171.76783
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-korowai-torlesse-tussocklands-park",
+  "name": "Korowai/Torlesse Tussocklands Park",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-CAN"
+  ],
+  "centre": {
+   "latitude": -43.24873,
+   "longitude": 171.81353
+  },
+  "facts": {
+   "areaHectares": 20739
+  },
+  "passportRegion": "upperSouthIsland",
+  "summary": "Korowai / Torlesse Tussocklands Park is a protected area in Canterbury, New Zealand. Covering around 21,000 hectares, it is located on both sides of State Highway 73, from east of Porters Pass to south of Castle Hill Village. The park is important for the preservation of South Island high country ecosystems.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Korowai_/_Torlesse_Tussocklands_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Korowai_/_Torlesse_Tussocklands_Park",
+  "image": {
+   "credit": "Stuartralston, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Walking_down_from_Trig_%27M%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Walking_down_from_Trig_%27M%27.jpg",
+   "licence": "CC BY-SA 4.0"
+  },
+  "extent": {
+   "south": -43.42596,
+   "west": 171.62989,
+   "north": -43.1887,
+   "east": 171.94268
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-oteake",
+  "name": "Oteake",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-CAN",
+   "NZ-OTA"
+  ],
+  "centre": {
+   "latitude": -44.82598,
+   "longitude": 170.31318
+  },
+  "facts": {
+   "areaHectares": 64274
+  },
+  "passportRegion": "upperSouthIsland",
+  "summary": "Oteake Conservation Park is a protected area in the Waitaki District and the Canterbury and Otago regions of New Zealand's South Island. The Kāi Tahu iwi believe that Oteake (\"place of the ake\") is named for the akeake (Olearia avicenniifolia), a shrub daisy found throughout the park. The park is managed by the New Zealand Department of Conservation.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Oteake_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Oteake_Conservation_Park",
+  "extent": {
+   "south": -44.98538,
+   "west": 169.74102,
+   "north": -44.60747,
+   "east": 170.45209
+  },
+  "timeZoneID": "Pacific/Auckland"
+ },
+ {
+  "id": "nz-cp-aotea",
+  "name": "Aotea",
+  "designation": "Conservation Park",
+  "kind": "conservationPark",
+  "agency": "conservationDepartmentNZ",
+  "country": "NZ",
+  "subdivisions": [
+   "NZ-AUK"
+  ],
+  "centre": {
+   "latitude": -36.20414,
+   "longitude": 175.39774
+  },
+  "facts": {
+   "areaHectares": 12310
+  },
+  "passportRegion": "northIsland",
+  "summary": "Aotea Conservation Park is a 12,300 hectare protected area on Great Barrier Island in New Zealand's Hauraki Gulf. It was established in 2015, and comprises 43 percent of the island. The park includes various habitats including coastal bluffs and freshwater areas.",
+  "summarySource": "Wikipedia",
+  "summaryLicence": "CC BY-SA 4.0",
+  "summaryURL": "https://en.wikipedia.org/wiki/Aotea_Conservation_Park",
+  "infoURL": "https://en.wikipedia.org/wiki/Aotea_Conservation_Park",
+  "image": {
+   "credit": "Ingolfson at English Wikipedia ( Original text: Uploader. ), via Wikimedia Commons",
+   "isPublicDomain": true,
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mount_Hobson_Great_Barrier_Island.jpg/1280px-Mount_Hobson_Great_Barrier_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Hobson_Great_Barrier_Island.jpg"
+  },
+  "extent": {
+   "south": -36.34868,
+   "west": 175.33729,
+   "north": -36.04098,
+   "east": 175.54816
+  },
+  "timeZoneID": "Pacific/Auckland"
  }
 ]

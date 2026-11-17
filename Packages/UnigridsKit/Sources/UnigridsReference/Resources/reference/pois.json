@@ -39189,5 +39189,6122 @@
   "rank": 0,
   "hasStamp": false,
   "summary": "The park's authorised visitor centre at Svanvik: exhibitions on the forest, the brown bear and the Skolt Sámi, a botanical garden, and rooms to stay."
+ },
+ {
+  "id": "poi-nz-tongariro-tongariro-alpine-crossing",
+  "placeID": "nz-np-tongariro",
+  "kind": "sight",
+  "name": "Tongariro Alpine Crossing",
+  "location": {
+   "latitude": -39.13547,
+   "longitude": 175.65034
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "A 20-kilometre one-way walk from Mangatepōpō over Red Crater, at 1,886 metres the highest point, down to Ketetahi Road. Seven to eight hours in summer."
+ },
+ {
+  "id": "poi-nz-tongariro-nga-rotopounamu-emerald-lakes",
+  "placeID": "nz-np-tongariro",
+  "kind": "viewpoint",
+  "name": "Ngā Rotopounamu / Emerald Lakes",
+  "location": {
+   "latitude": -39.13447,
+   "longitude": 175.65279
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "Old explosion pits below Red Crater, coloured by minerals washed down from its thermal area. Sacred lakes: do not touch or enter the water."
+ },
+ {
+  "id": "poi-nz-tongariro-te-wai-whakaata-o-te-rangihiroa-blue-lake",
+  "placeID": "nz-np-tongariro",
+  "kind": "viewpoint",
+  "name": "Te Wai Whakaata o Te Rangihīroa / Blue Lake",
+  "location": {
+   "latitude": -39.1269,
+   "longitude": 175.66011
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "Rangihīroa's mirror: cold fresh water filling an old vent beside the Alpine Crossing, across Central Crater from Red Crater."
+ },
+ {
+  "id": "poi-nz-tongariro-ngauruhoe",
+  "placeID": "nz-np-tongariro",
+  "kind": "sight",
+  "name": "Ngāuruhoe",
+  "location": {
+   "latitude": -39.15683,
+   "longitude": 175.63217
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "The symmetrical young cone of the Tongariro complex, about 7,000 years old. Its summit is sacred; enjoy it from the Crossing and the Northern Circuit."
+ },
+ {
+  "id": "poi-nz-tongariro-ruapehu",
+  "placeID": "nz-np-tongariro",
+  "kind": "sight",
+  "name": "Ruapehu",
+  "location": {
+   "latitude": -39.2812,
+   "longitude": 175.56429
+  },
+  "rank": 5,
+  "hasStamp": false,
+  "summary": "The North Island's highest mountain, 2,797 metres, with glaciers, the Whakapapa and Tūroa ski areas, and Te Wai ā-moe/Crater Lake in its active vent."
+ },
+ {
+  "id": "poi-nz-tongariro-taranaki-falls",
+  "placeID": "nz-np-tongariro",
+  "kind": "sight",
+  "name": "Taranaki Falls",
+  "location": {
+   "latitude": -39.1975,
+   "longitude": 175.56436
+  },
+  "rank": 6,
+  "hasStamp": false,
+  "summary": "A waterfall plunging into a boulder-ringed pool, on one of the park's best short loop walks from Whakapapa Village; each half of the loop takes about an hour."
+ },
+ {
+  "id": "poi-nz-tongariro-tama-lakes",
+  "placeID": "nz-np-tongariro",
+  "kind": "sight",
+  "name": "Tama Lakes",
+  "location": {
+   "latitude": -39.2,
+   "longitude": 175.61667
+  },
+  "rank": 7,
+  "hasStamp": false,
+  "summary": "Two infilled explosion craters on Tama Saddle between Ruapehu and Ngāuruhoe, named after Tamatea, high chief of the Takitimu canoe. The upper lake is a steep climb further."
+ },
+ {
+  "id": "poi-nz-tongariro-ohinepango-springs",
+  "placeID": "nz-np-tongariro",
+  "kind": "sight",
+  "name": "Ohinepango Springs",
+  "location": {
+   "latitude": -39.21616,
+   "longitude": 175.67633
+  },
+  "rank": 8,
+  "hasStamp": false,
+  "summary": "Clear, cold water bubbling up from beneath an old lava flow, an hour's return side trip from Waihohonu Hut."
+ },
+ {
+  "id": "poi-nz-tongariro-lake-rotopounamu",
+  "placeID": "nz-np-tongariro",
+  "kind": "sight",
+  "name": "Lake Rotopounamu",
+  "location": {
+   "latitude": -39.0267,
+   "longitude": 175.7382
+  },
+  "rank": 9,
+  "hasStamp": false,
+  "summary": "A forest-ringed lake beneath Pihanga, in the Pihanga Scenic Reserve, the detached northern part of the park near Tūrangi."
+ },
+ {
+  "id": "poi-nz-tongariro-tongariro-national-park-visitor-centre",
+  "placeID": "nz-np-tongariro",
+  "kind": "visitorCentre",
+  "name": "Tongariro National Park Visitor Centre",
+  "location": {
+   "latitude": -39.20138,
+   "longitude": 175.54022
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "DOC's visitor centre in Whakapapa Village, for track conditions, volcanic and avalanche advice and Alpine Crossing bookings."
+ },
+ {
+  "id": "poi-nz-tongariro-mangahuia-campsite",
+  "placeID": "nz-np-tongariro",
+  "kind": "campground",
+  "name": "Mangahuia Campsite",
+  "location": {
+   "latitude": -39.18006,
+   "longitude": 175.46979
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 21 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/2bd99c0658c34f78a0ff0cb38e8928e7.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-mangatepopo-campsite-tnc",
+  "placeID": "nz-np-tongariro",
+  "kind": "campground",
+  "name": "Mangatepopo Campsite (TNC)",
+  "location": {
+   "latitude": -39.14476,
+   "longitude": 175.5964
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · Bookable",
+  "url": "https://www.doc.govt.nz/link/164b5dfa7a064b49a369bb556a6de369.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-mangawhero-campsite",
+  "placeID": "nz-np-tongariro",
+  "kind": "campground",
+  "name": "Mangawhero Campsite",
+  "location": {
+   "latitude": -39.39169,
+   "longitude": 175.4308
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 12 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/c8187c41e46644f2bb1944557383ba2d.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-oturere-campsite-tnc",
+  "placeID": "nz-np-tongariro",
+  "kind": "campground",
+  "name": "Oturere Campsite (TNC)",
+  "location": {
+   "latitude": -39.15879,
+   "longitude": 175.68938
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · Bookable",
+  "url": "https://www.doc.govt.nz/link/25885b59856843ab834848fe37c7d3f2.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-waihohonu-campsite-tnc",
+  "placeID": "nz-np-tongariro",
+  "kind": "campground",
+  "name": "Waihohonu Campsite (TNC)",
+  "location": {
+   "latitude": -39.20868,
+   "longitude": 175.67917
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · Bookable",
+  "url": "https://www.doc.govt.nz/link/6c7eee2391204afbb9a8716c2a930957.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-whakapapa-holiday-park-whp",
+  "placeID": "nz-np-tongariro",
+  "kind": "campground",
+  "name": "Whakapapa Holiday Park (WHP)",
+  "location": {
+   "latitude": -39.20205,
+   "longitude": 175.53941
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced campsite · 59 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/5e51aedd41764389a86994e2bb8ae116.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-blyth-hut-rtmt",
+  "placeID": "nz-np-tongariro",
+  "kind": "hut",
+  "name": "Blyth Hut (RTMT)",
+  "location": {
+   "latitude": -39.3318,
+   "longitude": 175.52491
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 18 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/0ca39d7f38e045778d4cbd32856e5e8e.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-mangaehuehu-hut-rtmt",
+  "placeID": "nz-np-tongariro",
+  "kind": "hut",
+  "name": "Mangaehuehu Hut (RTMT)",
+  "location": {
+   "latitude": -39.34311,
+   "longitude": 175.55004
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 16 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/cd5521b4fd8745d4b72c98459a28e09d.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-mangatepopo-hut-tnc",
+  "placeID": "nz-np-tongariro",
+  "kind": "hut",
+  "name": "Mangatepopo Hut (TNC)",
+  "location": {
+   "latitude": -39.14467,
+   "longitude": 175.59669
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 20 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/3aad802a585e496ba8fdd614ddf1b377.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-mangaturuturu-hut-rtmt",
+  "placeID": "nz-np-tongariro",
+  "kind": "hut",
+  "name": "Mangaturuturu Hut (RTMT)",
+  "location": {
+   "latitude": -39.29733,
+   "longitude": 175.50203
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 8 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/7d07c815afab4174a4293e22866cdda4.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-rangipo-hut-rtmt",
+  "placeID": "nz-np-tongariro",
+  "kind": "hut",
+  "name": "Rangipo Hut (RTMT)",
+  "location": {
+   "latitude": -39.30011,
+   "longitude": 175.62378
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 20 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/eee3692307b0468c91d966cdb1efe516.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-t3-lupton-hut-rtmt",
+  "placeID": "nz-np-tongariro",
+  "kind": "hut",
+  "name": "T3 Lupton Hut (RTMT)",
+  "location": {
+   "latitude": -39.33277,
+   "longitude": 175.52217
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 8 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/9ad6cf5485b3472796cafcf3504a4e37.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-t3-whangaehu-hut-rtmt-nzac",
+  "placeID": "nz-np-tongariro",
+  "kind": "hut",
+  "name": "T3 Whangaehu Hut (RTMT) (NZAC)",
+  "location": {
+   "latitude": -39.28247,
+   "longitude": 175.58865
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/242cb77a259b4571a54db5c7c289b1e9.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-waihohonu-hut-tnc",
+  "placeID": "nz-np-tongariro",
+  "kind": "hut",
+  "name": "Waihohonu Hut (TNC)",
+  "location": {
+   "latitude": -39.20949,
+   "longitude": 175.67988
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 28 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/8d2c9df7e97c4a178fcb02057bd891de.aspx"
+ },
+ {
+  "id": "poi-nz-tongariro-whakapapaiti-hut-rtmt",
+  "placeID": "nz-np-tongariro",
+  "kind": "hut",
+  "name": "Whakapapaiti Hut (RTMT)",
+  "location": {
+   "latitude": -39.23758,
+   "longitude": 175.51787
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 16 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/547fba0f237d4b04b58d64c05a1cc4ca.aspx"
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-taranaki-maunga",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "sight",
+  "name": "Taranaki Maunga",
+  "location": {
+   "latitude": -39.29639,
+   "longitude": 174.06472
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "The 2,518-metre summit, a demanding climb of 1.6 vertical kilometres from North Egmont, best attempted January to April. Ice lies in the crater all year."
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-pouakai-tarns",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "viewpoint",
+  "name": "Pouākai tarns",
+  "location": {
+   "latitude": -39.23396,
+   "longitude": 174.04723
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "Small alpine pools on the Pouākai Range where, on a fine day, the mountain is mirrored. Keep to the boardwalk and do not enter the pools."
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-ahukawakawa",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "sight",
+  "name": "Ahukawakawa",
+  "location": {
+   "latitude": -39.25201,
+   "longitude": 174.05092
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "An alpine swamp between the mountain and the Pouākai Range, home to a third of the park's plant species, crossed on a boardwalk."
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-te-rere-o-tahurangi-falls",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "sight",
+  "name": "Te Rere-o-Tahurangi Falls",
+  "location": {
+   "latitude": -39.26057,
+   "longitude": 174.03981
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "A 31-metre waterfall where the Hangatahua River has cut through an ancient lava flow; an hour's return side trip from Holly Hut."
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-dawson-falls-te-rere-o-noke",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "sight",
+  "name": "Dawson Falls / Te Rere o Noke",
+  "location": {
+   "latitude": -39.32516,
+   "longitude": 174.10744
+  },
+  "rank": 5,
+  "hasStamp": false,
+  "summary": "An 18-metre waterfall near the Dawson Falls road end, on the mountain's south-eastern side."
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-wilkies-pools",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "sight",
+  "name": "Wilkies Pools",
+  "location": {
+   "latitude": -39.3164,
+   "longitude": 174.09502
+  },
+  "rank": 6,
+  "hasStamp": false,
+  "summary": "Pools scoured from 20,000-year-old lava, reached through goblin forest in 20 minutes from Dawson Falls; the first 900 metres suit buggies and wheelchairs."
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-panitahi",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "sight",
+  "name": "Panitahi",
+  "location": {
+   "latitude": -39.31044,
+   "longitude": 174.06609
+  },
+  "rank": 7,
+  "hasStamp": false,
+  "summary": "The secondary vent on the mountain's southern flank, formed where magma found a weak point in the volcano; the Around the Mountain Circuit passes below it."
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-dawson-falls-power-station",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "sight",
+  "name": "Dawson Falls Power Station",
+  "location": {
+   "latitude": -39.32278,
+   "longitude": 174.10387
+  },
+  "rank": 8,
+  "hasStamp": false,
+  "summary": "Installed in 1935 to power the tourist lodge; its generator is the oldest in continuous operation in New Zealand. View the machine room from outside."
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-north-taranaki-visitor-centre",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "visitorCentre",
+  "name": "North Taranaki Visitor Centre",
+  "location": {
+   "latitude": -39.2703,
+   "longitude": 174.09595
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "DOC visitor centre at the top of Egmont Road, start of the summit climb and Pouākai Crossing. A new centre is being built; check opening hours."
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-dawson-falls-visitor-centre",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "visitorCentre",
+  "name": "Dawson Falls Visitor Centre",
+  "location": {
+   "latitude": -39.32367,
+   "longitude": 174.10335
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "A small visitor centre at the end of Manaia Road, with displays that include the old Syme Hut rebuilt inside."
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-holly-hut",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "hut",
+  "name": "Holly Hut",
+  "location": {
+   "latitude": -39.26541,
+   "longitude": 174.04593
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 32 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/3ad19baad1444c95a1b3d4ccdd6e1b49.aspx"
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-kahui-hut",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "hut",
+  "name": "Kahui Hut",
+  "location": {
+   "latitude": -39.29424,
+   "longitude": 174.01457
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/2021fc96a37445de9d43d8849a4c81e2.aspx"
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-maketawa-hut",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "hut",
+  "name": "Maketawa Hut",
+  "location": {
+   "latitude": -39.28163,
+   "longitude": 174.09905
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 20 bunks",
+  "url": "https://www.doc.govt.nz/link/af6353d23b154dd2ba0a0974efd8c959.aspx"
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-pouakai-hut-404823-2025",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "hut",
+  "name": "Pouakai Hut (404823) 2025",
+  "location": {
+   "latitude": -39.23517,
+   "longitude": 174.03744
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 0 bunks"
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-syme-hut",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "hut",
+  "name": "Syme Hut",
+  "location": {
+   "latitude": -39.30845,
+   "longitude": 174.06633
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/02540fabba2f4eea903fc0a273dd47fb.aspx"
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-waiaua-gorge-hut",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "hut",
+  "name": "Waiaua Gorge Hut",
+  "location": {
+   "latitude": -39.3252,
+   "longitude": 174.0037
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 20 bunks",
+  "url": "https://www.doc.govt.nz/link/493ccefebd954a00af71045d69880754.aspx"
+ },
+ {
+  "id": "poi-nz-te-papa-kura-o-taranaki-waingongoro-hut",
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "kind": "hut",
+  "name": "Waingongoro Hut",
+  "location": {
+   "latitude": -39.31874,
+   "longitude": 174.1104
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 20 bunks",
+  "url": "https://www.doc.govt.nz/link/670e92f97926452fafcd6730e497a2bd.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-bridge-to-nowhere",
+  "placeID": "nz-np-whanganui",
+  "kind": "sight",
+  "name": "Bridge to Nowhere",
+  "location": {
+   "latitude": -39.27104,
+   "longitude": 174.97239
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "A concrete bridge nearly 40 metres above the Mangapurua Stream, opened in 1936 for a soldier settlement that had already failed. A 40-minute walk from Mangapurua Landing."
+ },
+ {
+  "id": "poi-nz-whanganui-mangapurua-landing",
+  "placeID": "nz-np-whanganui",
+  "kind": "sight",
+  "name": "Mangapurua Landing",
+  "location": {
+   "latitude": -39.28279,
+   "longitude": 174.96372
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "The river landing for the Bridge to Nowhere, reached by canoe or jet boat. The rock is very slippery when wet and often crowded with boats."
+ },
+ {
+  "id": "poi-nz-whanganui-whanganui-journey",
+  "placeID": "nz-np-whanganui",
+  "kind": "trailhead",
+  "name": "Whanganui Journey",
+  "location": {
+   "latitude": -39.10833,
+   "longitude": 175.07083
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "The Great Walk by canoe: 88 kilometres from Whakahoro to Pipiriki in about three days, through the most scenic gorges, or 145 kilometres from Taumarunui in five."
+ },
+ {
+  "id": "poi-nz-whanganui-matemateaonga-track",
+  "placeID": "nz-np-whanganui",
+  "kind": "sight",
+  "name": "Matemateāonga Track",
+  "location": {
+   "latitude": -39.33933,
+   "longitude": 174.99198
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "A 42-kilometre tramp of three to five days along an old Māori trail and settlers' dray road on the crest of the Matemateāonga Range, ending at the river."
+ },
+ {
+  "id": "poi-nz-whanganui-whakaihuwaka-maunga",
+  "placeID": "nz-np-whanganui",
+  "kind": "viewpoint",
+  "name": "Whakaihuwaka Maunga",
+  "location": {
+   "latitude": -39.31365,
+   "longitude": 174.81283
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "A 732-metre summit off the Matemateāonga Track with a view of three national parks: Whanganui, Te Papa-Kura-o-Taranaki and Tongariro."
+ },
+ {
+  "id": "poi-nz-whanganui-atene-skyline-track",
+  "placeID": "nz-np-whanganui",
+  "kind": "sight",
+  "name": "Atene Skyline Track",
+  "location": {
+   "latitude": -39.70472,
+   "longitude": 175.17886
+  },
+  "rank": 5,
+  "hasStamp": false,
+  "summary": "A 12.5-kilometre ridge walk from the Whanganui River Road around Puketapu hill and a cut-off meander of the river, rising to 572 metres at Taumata Trig."
+ },
+ {
+  "id": "poi-nz-whanganui-bettjemann-campsite",
+  "placeID": "nz-np-whanganui",
+  "kind": "campground",
+  "name": "Bettjemann Campsite",
+  "location": {
+   "latitude": -39.20287,
+   "longitude": 174.99918
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite",
+  "url": "https://www.doc.govt.nz/link/0710f0154d4e40ceb88ea4404959bf25.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-hellawells-campsite",
+  "placeID": "nz-np-whanganui",
+  "kind": "campground",
+  "name": "Hellawell's Campsite",
+  "location": {
+   "latitude": -39.23333,
+   "longitude": 174.98076
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite",
+  "url": "https://www.doc.govt.nz/link/45afe47f2f104518b06aaa390d975c19.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-john-coull-campsite",
+  "placeID": "nz-np-whanganui",
+  "kind": "campground",
+  "name": "John Coull Campsite",
+  "location": {
+   "latitude": -39.23317,
+   "longitude": 174.91416
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 26 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/851b887589be46b89cf9ac49284cbfad.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-johnsons-campsite",
+  "placeID": "nz-np-whanganui",
+  "kind": "campground",
+  "name": "Johnsons Campsite",
+  "location": {
+   "latitude": -39.19812,
+   "longitude": 175.03289
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite",
+  "url": "https://www.doc.govt.nz/link/3ab7d98d4d2e4cbfaaa186b4cd2ca437.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-mangapapa-campsite",
+  "placeID": "nz-np-whanganui",
+  "kind": "campground",
+  "name": "Mangapapa Campsite",
+  "location": {
+   "latitude": -39.12933,
+   "longitude": 174.99925
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 17 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/6428b51413ae4d68a194f66ed7c1c439.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-mangapurua-campsite",
+  "placeID": "nz-np-whanganui",
+  "kind": "campground",
+  "name": "Mangapurua Campsite",
+  "location": {
+   "latitude": -39.28184,
+   "longitude": 174.9667
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 10 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/02535ee3e5cf478ea06216ae3d97d2c9.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-mosleys-campsite",
+  "placeID": "nz-np-whanganui",
+  "kind": "campground",
+  "name": "Mosley's Campsite",
+  "location": {
+   "latitude": -39.17604,
+   "longitude": 175.07928
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite",
+  "url": "https://www.doc.govt.nz/link/0a09d2727bee4a39a5de167fd045780d.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-ngaporo-campsite",
+  "placeID": "nz-np-whanganui",
+  "kind": "campground",
+  "name": "Ngaporo Campsite",
+  "location": {
+   "latitude": -39.42503,
+   "longitude": 175.03561
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 32 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/90002a5fb427415a9343553c9a532c84.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-poukaria-campsite",
+  "placeID": "nz-np-whanganui",
+  "kind": "campground",
+  "name": "Poukaria Campsite",
+  "location": {
+   "latitude": -38.99191,
+   "longitude": 175.1195
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 12 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/4a1a98d1d42a4023a7e15d9b98212760.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-t3-atene-skyline-campsite",
+  "placeID": "nz-np-whanganui",
+  "kind": "campground",
+  "name": "T3 Atene Skyline Campsite",
+  "location": {
+   "latitude": -39.70027,
+   "longitude": 175.17122
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite",
+  "url": "https://www.doc.govt.nz/link/1f05774ce4f345b9bb97f6f0be844f60.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-tieke-kainga-campsite",
+  "placeID": "nz-np-whanganui",
+  "kind": "campground",
+  "name": "Tieke Kainga Campsite",
+  "location": {
+   "latitude": -39.33757,
+   "longitude": 174.9927
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 28 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/e7bbf631c06c4ae58cfd5bf5d7e9dd28.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-whakahoro-campsite",
+  "placeID": "nz-np-whanganui",
+  "kind": "campground",
+  "name": "Whakahoro Campsite",
+  "location": {
+   "latitude": -39.10924,
+   "longitude": 175.07088
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 36 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/afc10f759fa74e848e4f7c5643dccee9.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-downes-hut",
+  "placeID": "nz-np-whanganui",
+  "kind": "hut",
+  "name": "Downes Hut",
+  "location": {
+   "latitude": -39.72642,
+   "longitude": 175.13165
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 5 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/e7545c0b272d40de9218b860bd5b2b48.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-john-coull-hut",
+  "placeID": "nz-np-whanganui",
+  "kind": "hut",
+  "name": "John Coull Hut",
+  "location": {
+   "latitude": -39.2334,
+   "longitude": 174.91347
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 24 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/050de1dd02ec4a3a80cc853c77b22706.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-t3-puteore-hut",
+  "placeID": "nz-np-whanganui",
+  "kind": "hut",
+  "name": "T3 Puteore Hut",
+  "location": {
+   "latitude": -39.36933,
+   "longitude": 174.78975
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/171f520bd1644987b77831654a0d9279.aspx"
+ },
+ {
+  "id": "poi-nz-whanganui-tieke-kainga-whare-kai",
+  "placeID": "nz-np-whanganui",
+  "kind": "hut",
+  "name": "Tieke Kainga (Whare Kai)",
+  "location": {
+   "latitude": -39.33739,
+   "longitude": 174.99312
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 20 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/2da1ed56c192451b95ece33630dcf982.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-te-pukatea-bay",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "sight",
+  "name": "Te Pukatea Bay",
+  "location": {
+   "latitude": -40.95327,
+   "longitude": 173.06543
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "A bay beside Anchorage with a Coast Track campsite, about four hours' walk from Mārahau."
+ },
+ {
+  "id": "poi-nz-abel-tasman-cascade-falls",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "sight",
+  "name": "Cascade Falls",
+  "location": {
+   "latitude": -40.9381,
+   "longitude": 173.03661
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "A waterfall hidden in native bush, a steep 1 hour 30 minute return side trip on the Coast Track section from Anchorage to Bark Bay."
+ },
+ {
+  "id": "poi-nz-abel-tasman-falls-river-suspension-bridge",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "sight",
+  "name": "Falls River suspension bridge",
+  "location": {
+   "latitude": -40.92879,
+   "longitude": 173.04861
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "A 47-metre suspension bridge over the inlet of Falls River, between Torrent Bay and Bark Bay."
+ },
+ {
+  "id": "poi-nz-abel-tasman-onetahuti-bay",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "sight",
+  "name": "Onetahuti Bay",
+  "location": {
+   "latitude": -40.8854,
+   "longitude": 173.0514
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "One of the longest beaches in the park, reached after a climb through mānuka from Bark Bay and the old granite workings at Tonga Quarry."
+ },
+ {
+  "id": "poi-nz-abel-tasman-tonga-island",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "viewpoint",
+  "name": "Tonga Island",
+  "location": {
+   "latitude": -40.8905,
+   "longitude": 173.06633
+  },
+  "rank": 5,
+  "hasStamp": false,
+  "summary": "A specially protected island where fur seals breed, off Onetahuti Bay. Landing needs a permit."
+ },
+ {
+  "id": "poi-nz-abel-tasman-awaroa-inlet",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "sight",
+  "name": "Awaroa Inlet",
+  "location": {
+   "latitude": -40.86278,
+   "longitude": 173.01163
+  },
+  "rank": 6,
+  "hasStamp": false,
+  "summary": "A wide sandy estuary on the Coast Track that can be crossed only in daylight, from 1 hour 30 minutes before to 2 hours after low tide."
+ },
+ {
+  "id": "poi-nz-abel-tasman-totaranui",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "sight",
+  "name": "Tōtaranui",
+  "location": {
+   "latitude": -40.82249,
+   "longitude": 173.00506
+  },
+  "rank": 7,
+  "hasStamp": false,
+  "summary": "A beach and campsite at the northern end of the water-taxi service, with the historic Ngarata homestead; farmed until 1974."
+ },
+ {
+  "id": "poi-nz-abel-tasman-separation-point-te-matau",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "sight",
+  "name": "Separation Point / Te Matau",
+  "location": {
+   "latitude": -40.78172,
+   "longitude": 172.99833
+  },
+  "rank": 8,
+  "hasStamp": false,
+  "summary": "The granite headland at the park's northern tip, where fur seals rest on the rocks and bryozoans build coral-like colonies under water."
+ },
+ {
+  "id": "poi-nz-abel-tasman-motuareronui-adele-island",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "sight",
+  "name": "Motuareronui / Adele Island",
+  "location": {
+   "latitude": -40.98059,
+   "longitude": 173.05963
+  },
+  "rank": 9,
+  "hasStamp": false,
+  "summary": "An island free of introduced mammal predators. Land by boat or kayak, check your gear for stowaway pests, and take everything away again."
+ },
+ {
+  "id": "poi-nz-abel-tasman-anapai-bay-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Anapai Bay Campsite",
+  "location": {
+   "latitude": -40.80273,
+   "longitude": 173.00427
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 6 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/6b8984ad28c74b25b54780661cf0676a.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-anchorage-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Anchorage Campsite",
+  "location": {
+   "latitude": -40.95713,
+   "longitude": 173.05916
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 50 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/2d0a262fa4584d1bb3dcb3cf3dd13229.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-awaroa-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Awaroa Campsite",
+  "location": {
+   "latitude": -40.86478,
+   "longitude": 173.01884
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 2 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/a940d9d198584655acc4ad70d45913a8.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-mosquito-bay-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Mosquito Bay Campsite",
+  "location": {
+   "latitude": -40.91227,
+   "longitude": 173.05943
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 20 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/a0a434c1370f4fcbbf8df066e9f317e8.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-mutton-cove-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Mutton Cove Campsite",
+  "location": {
+   "latitude": -40.79091,
+   "longitude": 172.994
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 20 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/179f12e72cbe47b5b8f05ae94e6187cc.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-observation-beach-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Observation Beach Campsite",
+  "location": {
+   "latitude": -40.96567,
+   "longitude": 173.05192
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 6 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/fc754e4f72204a1688a6f7422e947fd8.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-onetahuti-bay-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Onetahuti Bay Campsite",
+  "location": {
+   "latitude": -40.88901,
+   "longitude": 173.0466
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 20 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/9a75450d21744942b755a470d29ca5fc.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-te-pukatea-bay-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Te Pukatea Bay Campsite",
+  "location": {
+   "latitude": -40.95321,
+   "longitude": 173.06397
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 7 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/989e154c82cf439c87a3924c7cae9fa7.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-tinline-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Tinline Campsite",
+  "location": {
+   "latitude": -40.98851,
+   "longitude": 173.02478
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 15 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/d813cbade3224f9d9e1af0b77cd0c3bc.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-totaranui-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Totaranui Campsite",
+  "location": {
+   "latitude": -40.81861,
+   "longitude": 173.00491
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 269 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/46ec985c84aa4df993cec51b96d8f6e3.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-totaranui-great-walk-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Totaranui Great Walk Campsite",
+  "location": {
+   "latitude": -40.82289,
+   "longitude": 173.00433
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 20 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/ca1d349524a74430b13cdd9619f2ed8a.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-waiharakeke-bay-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Waiharakeke Bay Campsite",
+  "location": {
+   "latitude": -40.84923,
+   "longitude": 173.01559
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 10 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/0ba5c29cd30347c5a53ff5494bf0bb82.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-whariwharangi-bay-campsite",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "campground",
+  "name": "Whariwharangi Bay Campsite",
+  "location": {
+   "latitude": -40.78852,
+   "longitude": 172.97475
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 20 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/e39ee1f445914004a4666fcff60980e8.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-anchorage-hut",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "hut",
+  "name": "Anchorage Hut",
+  "location": {
+   "latitude": -40.95691,
+   "longitude": 173.05767
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 34 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/70231cabc76c4a13aee27ae26d622912.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-awapoto-hut",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "hut",
+  "name": "Awapoto Hut",
+  "location": {
+   "latitude": -40.8628,
+   "longitude": 172.93881
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/32cb02c3c8274931b7dc279e4245625f.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-awaroa-hut",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "hut",
+  "name": "Awaroa Hut",
+  "location": {
+   "latitude": -40.86526,
+   "longitude": 173.01757
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 30 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/fa959cd412db43108f99eb3a55b6e25a.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-bark-bay-hut",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "hut",
+  "name": "Bark Bay Hut",
+  "location": {
+   "latitude": -40.9161,
+   "longitude": 173.04858
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 34 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/832ade20d9634a57839035c7a860113d.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-castle-rock-hut",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "hut",
+  "name": "Castle Rock Hut",
+  "location": {
+   "latitude": -40.96179,
+   "longitude": 172.95368
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 8 bunks",
+  "url": "https://www.doc.govt.nz/link/daa669448dfc4b108a6042744951d4b3.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-holyoakes-shelter",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "hut",
+  "name": "Holyoakes Shelter",
+  "location": {
+   "latitude": -40.96402,
+   "longitude": 173.00164
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/28cb8ee8a4ac4acfba74fe0ebb59c87b.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-wainui-hut",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "hut",
+  "name": "Wainui Hut",
+  "location": {
+   "latitude": -40.91443,
+   "longitude": 172.92039
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/6f31cd31c67d4e7a9ede3e9b8ca7a5d8.aspx"
+ },
+ {
+  "id": "poi-nz-abel-tasman-whariwharangi-hut",
+  "placeID": "nz-np-abel-tasman",
+  "kind": "hut",
+  "name": "Whariwharangi Hut",
+  "location": {
+   "latitude": -40.78903,
+   "longitude": 172.97435
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 20 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/e159d6234b5a44e9a671d19bb58623fb.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-flanagans-corner",
+  "placeID": "nz-np-kahurangi",
+  "kind": "viewpoint",
+  "name": "Flanagans Corner",
+  "location": {
+   "latitude": -40.90398,
+   "longitude": 172.42058
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "A viewpoint just off the Heaphy Track near Perry Saddle, at 915 metres the highest point of the track."
+ },
+ {
+  "id": "poi-nz-kahurangi-gouland-downs",
+  "placeID": "nz-np-kahurangi",
+  "kind": "sight",
+  "name": "Gouland Downs",
+  "location": {
+   "latitude": -40.89567,
+   "longitude": 172.31713
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "Open tussock downs on the Heaphy Track, with limestone arches, a cave-fed waterfall and great spotted kiwi. Easy to get lost in when the mist comes down."
+ },
+ {
+  "id": "poi-nz-kahurangi-scotts-beach",
+  "placeID": "nz-np-kahurangi",
+  "kind": "sight",
+  "name": "Scotts Beach",
+  "location": {
+   "latitude": -41.08835,
+   "longitude": 172.10467
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "A clearing behind a wild West Coast beach near the Kohaihai end of the Heaphy Track, among nīkau palms. Do not swim at the river mouths."
+ },
+ {
+  "id": "poi-nz-kahurangi-oparara-arch",
+  "placeID": "nz-np-kahurangi",
+  "kind": "sight",
+  "name": "Ōparara Arch",
+  "location": {
+   "latitude": -41.14611,
+   "longitude": 172.18734
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "A 35-million-year-old limestone arch over the Ōparara River, a 30-minute walk through beech and podocarp forest, off the road between Kohaihai and Karamea."
+ },
+ {
+  "id": "poi-nz-kahurangi-mount-arthur",
+  "placeID": "nz-np-kahurangi",
+  "kind": "sight",
+  "name": "Mount Arthur",
+  "location": {
+   "latitude": -41.21826,
+   "longitude": 172.68151
+  },
+  "rank": 5,
+  "hasStamp": false,
+  "summary": "The peak above Flora car park, the start of several day and overnight walks; the access road is steep and 4WD is recommended in winter."
+ },
+ {
+  "id": "poi-nz-kahurangi-lake-peel",
+  "placeID": "nz-np-kahurangi",
+  "kind": "sight",
+  "name": "Lake Peel",
+  "location": {
+   "latitude": -41.14564,
+   "longitude": 172.60248
+  },
+  "rank": 6,
+  "hasStamp": false,
+  "summary": "A lake in the Cobb Valley area, where winter snow can lie into early summer."
+ },
+ {
+  "id": "poi-nz-kahurangi-aorere-shelter-campsite",
+  "placeID": "nz-np-kahurangi",
+  "kind": "campground",
+  "name": "Aorere Shelter Campsite",
+  "location": {
+   "latitude": -40.89466,
+   "longitude": 172.43972
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 4 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/94d6bd8d8a534778be98b7109d2c5805.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-brown-campsite",
+  "placeID": "nz-np-kahurangi",
+  "kind": "campground",
+  "name": "Brown Campsite",
+  "location": {
+   "latitude": -40.85031,
+   "longitude": 172.44721
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 10 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/8185027d6e9d454593ecefca0dab9360.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-cobb-river-campsite",
+  "placeID": "nz-np-kahurangi",
+  "kind": "campground",
+  "name": "Cobb River Campsite",
+  "location": {
+   "latitude": -41.12874,
+   "longitude": 172.61505
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic campsite · 20 sites",
+  "url": "https://www.doc.govt.nz/link/258bb2b2f02741289504b2e7fc9a4675.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-courthouse-flat-campsite",
+  "placeID": "nz-np-kahurangi",
+  "kind": "campground",
+  "name": "Courthouse Flat Campsite",
+  "location": {
+   "latitude": -41.46751,
+   "longitude": 172.56759
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 25 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/895b8841ed1b44ed92f7c6ca57cabf9f.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-gouland-downs-campsite",
+  "placeID": "nz-np-kahurangi",
+  "kind": "campground",
+  "name": "Gouland Downs Campsite",
+  "location": {
+   "latitude": -40.89056,
+   "longitude": 172.35335
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 5 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/f021b77cdb094215ab3bc44ecc54d85e.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-heaphy-campsite",
+  "placeID": "nz-np-kahurangi",
+  "kind": "campground",
+  "name": "Heaphy Campsite",
+  "location": {
+   "latitude": -40.98691,
+   "longitude": 172.11021
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 20 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/b566462170cb471a93e7d805a70c3376.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-heaphy-katipo-creek-shelter-campsite",
+  "placeID": "nz-np-kahurangi",
+  "kind": "campground",
+  "name": "Heaphy Katipo Creek Shelter Campsite",
+  "location": {
+   "latitude": -41.04428,
+   "longitude": 172.10684
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 5 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/e4a2b0c612a34611afd12cb32a2f9a4a.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-mackay-campsite",
+  "placeID": "nz-np-kahurangi",
+  "kind": "campground",
+  "name": "Mackay Campsite",
+  "location": {
+   "latitude": -40.88585,
+   "longitude": 172.21737
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 4 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/b245e62f63674f5b90b89c263ca9d003.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-perry-saddle-campsite",
+  "placeID": "nz-np-kahurangi",
+  "kind": "campground",
+  "name": "Perry Saddle Campsite",
+  "location": {
+   "latitude": -40.901,
+   "longitude": 172.40268
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 5 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/b2ba8d8b504b471fa43bd91386d3068b.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-saxon-campsite",
+  "placeID": "nz-np-kahurangi",
+  "kind": "campground",
+  "name": "Saxon Campsite",
+  "location": {
+   "latitude": -40.88648,
+   "longitude": 172.30849
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 5 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/42a92c10a64944658691f386a2bd2186.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-adelaide-tarn-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Adelaide Tarn Hut",
+  "location": {
+   "latitude": -40.94262,
+   "longitude": 172.54336
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/d9364f0b44224fdc94b7ec255fdabe77.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-anatoki-forks-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Anatoki Forks Hut",
+  "location": {
+   "latitude": -40.93919,
+   "longitude": 172.60825
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/94bcbf42bda944bbb5d3a504e6ea68a1.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-asbestos-cottage",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Asbestos Cottage",
+  "location": {
+   "latitude": -41.12965,
+   "longitude": 172.69226
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/04ed693978d7479593dd0aa1e8d5ee33.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-balloon-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Balloon Hut",
+  "location": {
+   "latitude": -41.16909,
+   "longitude": 172.62236
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 14 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/a4188462c19f4d4b869c61af0878f71a.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-belltown-manunui-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Belltown Manunui Hut",
+  "location": {
+   "latitude": -41.34708,
+   "longitude": 172.22699
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/a9d0774f7df549a8bbb438529f678d9b.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-boulder-lake-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Boulder Lake Hut",
+  "location": {
+   "latitude": -40.90013,
+   "longitude": 172.57873
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 8 bunks",
+  "url": "https://www.doc.govt.nz/link/97743f4c5306461a923b94148f5adabf.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-branch-creek-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Branch Creek Hut",
+  "location": {
+   "latitude": -41.52384,
+   "longitude": 172.51118
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/45360d525f394523841dd32190e2a2ce.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-brown-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Brown Hut",
+  "location": {
+   "latitude": -40.85039,
+   "longitude": 172.44716
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 16 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/8871ac52271e45fd8f57ae53f1a50bce.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-cecil-kings-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Cecil Kings Hut",
+  "location": {
+   "latitude": -41.46705,
+   "longitude": 172.47937
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/b1cd86cffc6d4dd79db79eb2c3ac23a4.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-chaffey-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Chaffey Hut",
+  "location": {
+   "latitude": -41.09474,
+   "longitude": 172.5709
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 3 bunks",
+  "url": "https://www.doc.govt.nz/link/d5bb3e32e8774703b19941f7086b270b.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-cobb-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Cobb Hut",
+  "location": {
+   "latitude": -41.05595,
+   "longitude": 172.52505
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/63e7287332c84662ab218ae229ebd89d.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-crow-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Crow Hut",
+  "location": {
+   "latitude": -41.29258,
+   "longitude": 172.46863
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/77043b1591754a579bb78cf849703331.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-ellis-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Ellis Hut",
+  "location": {
+   "latitude": -41.23774,
+   "longitude": 172.68576
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/63e73168615748b3808fb22cd22b647e.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-fenella-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Fenella Hut",
+  "location": {
+   "latitude": -41.04964,
+   "longitude": 172.5253
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 12 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/b913f6fcb6904bc298847fe87da50989.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-flanagans-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Flanagans Hut",
+  "location": {
+   "latitude": -41.27165,
+   "longitude": 172.5912
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 8 bunks",
+  "url": "https://www.doc.govt.nz/link/94bc9d5ba47e4740b54bb4f8815ca034.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-flora-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Flora Hut",
+  "location": {
+   "latitude": -41.18251,
+   "longitude": 172.73012
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/e4291b5c8bb6414d88af8b5dfbdc8647.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-ghost-lake-hut-3po",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Ghost Lake Hut 3PO",
+  "location": {
+   "latitude": -41.69998,
+   "longitude": 172.15901
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 18 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/822aa830e6f8408b9882ab977d216464.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-goat-creek-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Goat Creek Hut",
+  "location": {
+   "latitude": -41.60587,
+   "longitude": 172.19888
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/fdc57b25bf3d4f41b27de77ab8d41526.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-gouland-downs-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Gouland Downs Hut",
+  "location": {
+   "latitude": -40.89057,
+   "longitude": 172.35328
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 8 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/f18c2f49e0cb4b7299b034bec1279968.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-granity-pass-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Granity Pass Hut",
+  "location": {
+   "latitude": -41.52303,
+   "longitude": 172.56113
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/732a35c3baf3442da262633891a9b7a5.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-greys-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Greys Hut",
+  "location": {
+   "latitude": -41.23824,
+   "longitude": 172.27569
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/74d83418a284489ea5e4315eaeffc4da.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-heaphy-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Heaphy Hut",
+  "location": {
+   "latitude": -40.9866,
+   "longitude": 172.1107
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 32 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/c7ebf8dfa6374779a35da1dbc3d0308f.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-helicopter-flat-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Helicopter Flat Hut",
+  "location": {
+   "latitude": -41.41602,
+   "longitude": 172.36131
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/63c0ed3ac37a49a49a8db998fa830ae6.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-honeycomb-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Honeycomb Hut",
+  "location": {
+   "latitude": -41.12652,
+   "longitude": 172.19284
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut"
+ },
+ {
+  "id": "poi-nz-kahurangi-hurricane-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Hurricane Hut",
+  "location": {
+   "latitude": -41.50677,
+   "longitude": 172.38258
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/cb206349053949c28007cde6f62dc83b.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-john-reid-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "John Reid Hut",
+  "location": {
+   "latitude": -41.40222,
+   "longitude": 172.54952
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/f6193fb61007477a8a7e172e0a6d4483.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-johnson-hut-3pm",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Johnson Hut 3PM",
+  "location": {
+   "latitude": -41.46742,
+   "longitude": 172.27669
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/2829b9d305964f05a1d7314522df3786.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-kahurangi-keepers-house",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Kahurangi Keepers House",
+  "location": {
+   "latitude": -40.77535,
+   "longitude": 172.22797
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 24 bunks",
+  "url": "https://www.doc.govt.nz/link/4cfc25f704064baa877cd58fa0d7ee69.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-karamea-bend-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Karamea Bend Hut",
+  "location": {
+   "latitude": -41.23285,
+   "longitude": 172.511
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 22 bunks",
+  "url": "https://www.doc.govt.nz/link/df481809de494cf1a49c930d2e929e04.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-kings-creek-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Kings Creek Hut",
+  "location": {
+   "latitude": -41.46558,
+   "longitude": 172.4812
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 20 bunks",
+  "url": "https://www.doc.govt.nz/link/d1009d67429f4792baee046c5fe6152c.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-kiwi-saddle-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Kiwi Saddle Hut",
+  "location": {
+   "latitude": -41.40715,
+   "longitude": 172.49437
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/dd43fa5428174e34b4557a509669df9f.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-kakapo-hut-3pm",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Kākāpō Hut 3PM",
+  "location": {
+   "latitude": -41.33237,
+   "longitude": 172.30384
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/0b1924ec163b46b19fe150e97c9b7a2d.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-lake-matiri-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Lake Matiri Hut",
+  "location": {
+   "latitude": -41.65602,
+   "longitude": 172.33029
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 8 bunks",
+  "url": "https://www.doc.govt.nz/link/793957c963dd4849940263bf5e7b75ea.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-larrikin-creek-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Larrikin Creek Hut",
+  "location": {
+   "latitude": -41.55978,
+   "longitude": 172.31597
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/826771b5e20e4548901a0a8540971291.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-lonely-lake-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Lonely Lake Hut",
+  "location": {
+   "latitude": -40.98262,
+   "longitude": 172.5581
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 3 bunks",
+  "url": "https://www.doc.govt.nz/link/722a9a401a044e7aaf9a8fdd5ef253ad.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-mackay-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Mackay Hut",
+  "location": {
+   "latitude": -40.88606,
+   "longitude": 172.21689
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 28 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/1e6478388d4e4b758743f09b76f98de6.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-mcconchies-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Mcconchies Hut",
+  "location": {
+   "latitude": -41.58748,
+   "longitude": 172.36429
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/4a005d39a23043e181e364257a8e7b98.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-ministry-of-works-historic-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Ministry Of Works Historic Hut",
+  "location": {
+   "latitude": -40.84298,
+   "longitude": 172.24156
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/06042de05e0d46378b0882be536a409b.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-mokihinui-forks-hut-3pm",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Mokihinui Forks Hut 3PM",
+  "location": {
+   "latitude": -41.54817,
+   "longitude": 172.1786
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/b9da46ab811d4a059b63f08c0c04536b.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-mt-arthur-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Mt Arthur Hut",
+  "location": {
+   "latitude": -41.19769,
+   "longitude": 172.71565
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 8 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/a8935f9e84db49c097c4dfbc42e1572a.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-myttons-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Myttons Hut",
+  "location": {
+   "latitude": -41.13565,
+   "longitude": 172.62144
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/1071c6aad5df49aa8520c946c70bcedf.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-perry-saddle-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Perry Saddle Hut",
+  "location": {
+   "latitude": -40.90089,
+   "longitude": 172.40286
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 28 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/376452da1c0c4759b12d07165cf8e2fd.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-poor-petes-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Poor Pete's Hut",
+  "location": {
+   "latitude": -41.61392,
+   "longitude": 172.32218
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/a1de8a1b621540f7814b96526e283abf.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-roaring-lion-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Roaring Lion Hut",
+  "location": {
+   "latitude": -41.19788,
+   "longitude": 172.43362
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 5 bunks",
+  "url": "https://www.doc.govt.nz/link/dd66588e5eef49e1a828e9841d184ed3.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-salisbury-lodge",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Salisbury Lodge",
+  "location": {
+   "latitude": -41.18596,
+   "longitude": 172.6488
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 22 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/ce78aa7495414d47948ff9f47756e353.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-saxon-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Saxon Hut",
+  "location": {
+   "latitude": -40.88621,
+   "longitude": 172.30822
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 16 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/e0f74224da17469da64a8cd3ac4cc208.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-soper-shelter-tent-camp",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Soper Shelter (Tent Camp)",
+  "location": {
+   "latitude": -41.00629,
+   "longitude": 172.59681
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/451f2d7ff2224df69eb30b88c1e3e887.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-specimen-point-hut-3po",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Specimen Point Hut 3PO",
+  "location": {
+   "latitude": -41.54464,
+   "longitude": 172.15222
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 14 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/f5c95048f76d4e2493a4f2a532382911.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-splugeons-rock-shelter",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Splugeons Rock Shelter",
+  "location": {
+   "latitude": -41.20549,
+   "longitude": 172.60828
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 5 bunks",
+  "url": "https://www.doc.govt.nz/link/a479281a21ee4278853a25aeb153c60a.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-stag-flat-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Stag Flat Hut",
+  "location": {
+   "latitude": -41.39651,
+   "longitude": 172.29497
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/6b1a615e19e24eedb3b2b1e6034d63b7.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-stern-valley-hut-3po",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Stern Valley Hut 3PO",
+  "location": {
+   "latitude": -41.6637,
+   "longitude": 172.19892
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 10 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/88af92cd1e9341ff851b4dce192923c9.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-stone-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Stone Hut",
+  "location": {
+   "latitude": -41.4208,
+   "longitude": 172.4393
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/4f1c944492004248b8456ecb3f4e7469.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-sylvester-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Sylvester Hut",
+  "location": {
+   "latitude": -41.10621,
+   "longitude": 172.6443
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 12 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/64b94705bca6445cad4f10af0077157b.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-taipo-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Taipo Hut",
+  "location": {
+   "latitude": -41.39793,
+   "longitude": 172.31367
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 16 bunks",
+  "url": "https://www.doc.govt.nz/link/941d30f258e1486a89cdf5d0c91a872d.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-tent-camp",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Tent Camp",
+  "location": {
+   "latitude": -41.06621,
+   "longitude": 172.53643
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/9ed3cd0f6dfa4350b93deb1069114b9f.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-thor-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Thor Hut",
+  "location": {
+   "latitude": -41.35298,
+   "longitude": 172.43765
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/6d087f3af275431580e1c072c940b787.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-trevor-carter-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Trevor Carter Hut",
+  "location": {
+   "latitude": -41.39805,
+   "longitude": 172.39034
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/5badb658bd88406eb5bf4005715164cd.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-trilobite-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Trilobite Hut",
+  "location": {
+   "latitude": -41.13021,
+   "longitude": 172.60883
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/48128f3d34e94aca96872a5dca8b0d21.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-upper-gridiron-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Upper Gridiron Hut",
+  "location": {
+   "latitude": -41.17047,
+   "longitude": 172.69634
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 3 bunks",
+  "url": "https://www.doc.govt.nz/link/671389d85c2e4837a9379dbe72c38f04.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-venus-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Venus Hut",
+  "location": {
+   "latitude": -41.31662,
+   "longitude": 172.43932
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/f47f2abd98f74b30bc0f33371c285883.aspx"
+ },
+ {
+  "id": "poi-nz-kahurangi-waingaro-forks-hut",
+  "placeID": "nz-np-kahurangi",
+  "kind": "hut",
+  "name": "Waingaro Forks Hut",
+  "location": {
+   "latitude": -41.04553,
+   "longitude": 172.6742
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/93d6b655711f4319b0a2897c04685d05.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-lake-rotoiti-and-kerr-bay",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "sight",
+  "name": "Lake Rotoiti and Kerr Bay",
+  "location": {
+   "latitude": -41.80912,
+   "longitude": 172.84485
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "The glacial lake at St Arnaud, ringed by beech forest, with a campsite, boat ramp, lakeshore walks and the bird-filled Rotoiti Nature Recovery Project."
+ },
+ {
+  "id": "poi-nz-nelson-lakes-lake-rotoroa",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "sight",
+  "name": "Lake Rotoroa",
+  "location": {
+   "latitude": -41.85439,
+   "longitude": 172.64045
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "The 'long lake', reached by a side road between St Arnaud and Murchison; a water taxi links Rotoroa village with Sabine Hut."
+ },
+ {
+  "id": "poi-nz-nelson-lakes-mount-robert",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "viewpoint",
+  "name": "Mount Robert",
+  "location": {
+   "latitude": -41.83235,
+   "longitude": 172.81108
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "The peak above Lake Rotoiti; from Mount Robert car park the Pinchgut Track and the Robert Ridge route lead to Lake Angelus."
+ },
+ {
+  "id": "poi-nz-nelson-lakes-rotomaninitua-lake-angelus",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "sight",
+  "name": "Rotomaninitua / Lake Angelus",
+  "location": {
+   "latitude": -41.88697,
+   "longitude": 172.74598
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "An alpine lake at 1,650 metres in the Travers Range, with Angelus Hut on its shore. Frozen in most winters, May to October."
+ },
+ {
+  "id": "poi-nz-nelson-lakes-whisky-falls",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "sight",
+  "name": "Whisky Falls",
+  "location": {
+   "latitude": -41.84817,
+   "longitude": 172.82746
+  },
+  "rank": 5,
+  "hasStamp": false,
+  "summary": "A waterfall a short diversion off the Lakeside Track on the western shore of Lake Rotoiti, on the way to Coldwater Hut."
+ },
+ {
+  "id": "poi-nz-nelson-lakes-travers-falls",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "sight",
+  "name": "Travers Falls",
+  "location": {
+   "latitude": -41.98871,
+   "longitude": 172.75692
+  },
+  "rank": 6,
+  "hasStamp": false,
+  "summary": "A 20-metre cascade plunging into a deep bowl, a short side track above John Tait Hut on the Travers–Sabine Circuit."
+ },
+ {
+  "id": "poi-nz-nelson-lakes-poukirikiri-travers-saddle",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "sight",
+  "name": "Poukirikiri / Travers Saddle",
+  "location": {
+   "latitude": -42.02619,
+   "longitude": 172.73285
+  },
+  "rank": 7,
+  "hasStamp": false,
+  "summary": "The circuit's alpine pass, 450 metres above Upper Travers Hut, with panoramic views and a steep 1,000-metre descent to the Sabine forks. Freezing conditions possible all year."
+ },
+ {
+  "id": "poi-nz-nelson-lakes-rotomairewhenua-blue-lake",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "sight",
+  "name": "Rotomairewhenua / Blue Lake",
+  "location": {
+   "latitude": -42.05934,
+   "longitude": 172.65825
+  },
+  "rank": 8,
+  "hasStamp": false,
+  "summary": "Thought to be the clearest natural freshwater lake in the world, an overnight side trip up the West Sabine. Tapu: do not touch the water."
+ },
+ {
+  "id": "poi-nz-nelson-lakes-nelson-lakes-visitor-centre",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "visitorCentre",
+  "name": "Nelson Lakes Visitor Centre",
+  "location": {
+   "latitude": -41.80475,
+   "longitude": 172.84377
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "DOC visitor centre in St Arnaud for track and weather information, hut bookings, shower tokens and bag storage."
+ },
+ {
+  "id": "poi-nz-nelson-lakes-angelus-hut-campsite",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "campground",
+  "name": "Angelus Hut Campsite",
+  "location": {
+   "latitude": -41.88825,
+   "longitude": 172.74869
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite · Bookable",
+  "url": "https://www.doc.govt.nz/link/d3c83ac2158749278231116684f853b8.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-blue-lake-campsite",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "campground",
+  "name": "Blue Lake Campsite",
+  "location": {
+   "latitude": -42.0582,
+   "longitude": 172.65542
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-buller-campground",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "campground",
+  "name": "Buller Campground",
+  "location": {
+   "latitude": -41.80093,
+   "longitude": 172.82228
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · Bookable",
+  "url": "https://www.doc.govt.nz/link/173601953b7f450f90cad8b053e34841.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-jetty-campground",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "campground",
+  "name": "Jetty Campground",
+  "location": {
+   "latitude": -41.79784,
+   "longitude": 172.82739
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 40 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/4a8205d84af948959bf1232770f6f3e8.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-kerr-bay-campsite",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "campground",
+  "name": "Kerr Bay Campsite",
+  "location": {
+   "latitude": -41.80577,
+   "longitude": 172.84796
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced campsite · 25 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/d734a70dd6584ff995102388fb169168.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-lake-rotoroa-campsite",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "campground",
+  "name": "Lake Rotoroa Campsite",
+  "location": {
+   "latitude": -41.79406,
+   "longitude": 172.59788
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 10 sites",
+  "url": "https://www.doc.govt.nz/link/3e2030f135604da3840f551be35849b3.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-angelus-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Angelus Hut",
+  "location": {
+   "latitude": -41.88825,
+   "longitude": 172.74869
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 28 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/fed663cc1eca4cdd9036423746e566c4.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-blue-lake-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Blue Lake Hut",
+  "location": {
+   "latitude": -42.05795,
+   "longitude": 172.65573
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 16 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/0f9daff8b2c44b1a9c2260c216c7f236.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-bobs-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Bobs Hut",
+  "location": {
+   "latitude": -42.22477,
+   "longitude": 172.48641
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 8 bunks",
+  "url": "https://www.doc.govt.nz/link/4ea9d3c5a28c4bb6a8fedbbecfca24e1.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-burn-creek-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Burn Creek Hut",
+  "location": {
+   "latitude": -42.15651,
+   "longitude": 172.44925
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/7dc3bfcff52b40c1b9c5682c869b80cf.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-bushline-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Bushline Hut",
+  "location": {
+   "latitude": -41.83673,
+   "longitude": 172.8231
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 14 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/2299960bc81c42ada215cb48204703ae.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-coldwater-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Coldwater Hut",
+  "location": {
+   "latitude": -41.87035,
+   "longitude": 172.81704
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/ec243547389e4a94b83f927a8a98afa9.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-cupola-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Cupola Hut",
+  "location": {
+   "latitude": -41.97189,
+   "longitude": 172.73287
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 8 bunks",
+  "url": "https://www.doc.govt.nz/link/cf11ce41660d42ccbd20804e48638f23.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-durville-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "D'urville Hut",
+  "location": {
+   "latitude": -41.90576,
+   "longitude": 172.64572
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/f9317bc5a8ee47f394703c69087ab6ce.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-east-matakitaki-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "East Matakitaki Hut",
+  "location": {
+   "latitude": -42.19446,
+   "longitude": 172.55688
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/bdba6d2f81114a23849a13a8ad1ff0cb.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-george-lyon-formerly-ella-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "George Lyon (Formerly Ella) Hut",
+  "location": {
+   "latitude": -42.04698,
+   "longitude": 172.60505
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 16 bunks",
+  "url": "https://www.doc.govt.nz/link/246b27310b3b481088066c2cd7693b7c.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-hopeless-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Hopeless Hut",
+  "location": {
+   "latitude": -41.93039,
+   "longitude": 172.75649
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/a292bef512e64014b4f8058975615935.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-john-tait-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "John Tait Hut",
+  "location": {
+   "latitude": -41.97475,
+   "longitude": 172.76868
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 26 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/9365d0e637ea4bc59f3dd2692b942f7c.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-lakehead-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Lakehead Hut",
+  "location": {
+   "latitude": -41.87565,
+   "longitude": 172.82198
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 28 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/9f587ce82e1844828f736a7c2dbc5a67.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-morgan-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Morgan Hut",
+  "location": {
+   "latitude": -41.98256,
+   "longitude": 172.63007
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/4057b9b3a8a74314b92b1bb034c33878.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-mount-misery-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Mount Misery Hut",
+  "location": {
+   "latitude": -41.93414,
+   "longitude": 172.67053
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 3 bunks",
+  "url": "https://www.doc.govt.nz/link/c2d0fb1f0c384021bb0aacae81dd2cdd.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-nardoo-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Nardoo Hut",
+  "location": {
+   "latitude": -42.09697,
+   "longitude": 172.42921
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/c6b9454aadee4bb09cd29e2ab2ec07a9.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-sabine-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Sabine Hut",
+  "location": {
+   "latitude": -41.90137,
+   "longitude": 172.68071
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 32 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/a3f4c1f4e4bd4f3b9b883368e1386e96.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-upper-durville-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Upper D'urville Hut",
+  "location": {
+   "latitude": -42.10821,
+   "longitude": 172.60586
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/6e221a3717804a82b97d686fd7ac64a0.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-upper-travers-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "Upper Travers Hut",
+  "location": {
+   "latitude": -42.02029,
+   "longitude": 172.74985
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 24 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/ed5dfe642ef840c7bac4187bef46cb08.aspx"
+ },
+ {
+  "id": "poi-nz-nelson-lakes-west-sabine-hut",
+  "placeID": "nz-np-nelson-lakes",
+  "kind": "hut",
+  "name": "West Sabine Hut",
+  "location": {
+   "latitude": -42.0078,
+   "longitude": 172.68395
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 30 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/9bd89fc2385b420a88ef166676c48f6d.aspx"
+ },
+ {
+  "id": "poi-nz-paparoa-pancake-rocks-and-blowholes",
+  "placeID": "nz-np-paparoa",
+  "kind": "sight",
+  "name": "Pancake Rocks and Blowholes",
+  "location": {
+   "latitude": -42.11387,
+   "longitude": 171.32693
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "Layered limestone stacks, surge pools and blowholes at Dolomite Point, on a 30-minute paved loop mostly suitable for wheelchairs. Best at high tide with a south-westerly swell."
+ },
+ {
+  "id": "poi-nz-paparoa-truman-track",
+  "placeID": "nz-np-paparoa",
+  "kind": "viewpoint",
+  "name": "Truman Track",
+  "location": {
+   "latitude": -42.09197,
+   "longitude": 171.33808
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "A 30-minute return walk from the highway north of Punakaiki through nīkau forest and flax to platforms above a wild beach and a waterfall off sandstone cliffs."
+ },
+ {
+  "id": "poi-nz-paparoa-pororari-river-gorge",
+  "placeID": "nz-np-paparoa",
+  "kind": "sight",
+  "name": "Pororari River gorge",
+  "location": {
+   "latitude": -42.11564,
+   "longitude": 171.3586
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "A limestone gorge with huge boulders and deep pools, a lookout 15 minutes from the road, and the walkers' entry to the Paparoa Track. Rockfall: don't linger in the gorge."
+ },
+ {
+  "id": "poi-nz-paparoa-ballroom-overhang",
+  "placeID": "nz-np-paparoa",
+  "kind": "sight",
+  "name": "Ballroom Overhang",
+  "location": {
+   "latitude": -42.04333,
+   "longitude": 171.44361
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "A huge limestone overhang up the Fox River, with a toilet and room to camp. A demanding 4-hour return with unbridged river crossings; avoid after rain."
+ },
+ {
+  "id": "poi-nz-paparoa-pike29-memorial-track",
+  "placeID": "nz-np-paparoa",
+  "kind": "trailhead",
+  "name": "Pike29 Memorial Track",
+  "location": {
+   "latitude": -42.20516,
+   "longitude": 171.48221
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Climbs about 800 metres from the former Pike River mine site to the Paparoa Track, with views of the mine's vent shaft; dedicated to the 29 men killed in 2010."
+ },
+ {
+  "id": "poi-nz-paparoa-paparoa-national-park-visitor-centre-2",
+  "placeID": "nz-np-paparoa",
+  "kind": "visitorCentre",
+  "name": "Paparoa National Park Visitor Centre",
+  "location": {
+   "latitude": -42.11587,
+   "longitude": 171.33015
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "DOC visitor centre on the Coast Road at Punakaiki, for the latest track and river conditions."
+ },
+ {
+  "id": "poi-nz-paparoa-ballroom-overhang-campsite",
+  "placeID": "nz-np-paparoa",
+  "kind": "campground",
+  "name": "Ballroom Overhang Campsite",
+  "location": {
+   "latitude": -42.04324,
+   "longitude": 171.44322
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite",
+  "url": "https://www.doc.govt.nz/link/cbaccc2fb5db475294c45dca67687652.aspx"
+ },
+ {
+  "id": "poi-nz-paparoa-moonlight-tops-hut",
+  "placeID": "nz-np-paparoa",
+  "kind": "hut",
+  "name": "Moonlight Tops Hut",
+  "location": {
+   "latitude": -42.24154,
+   "longitude": 171.40549
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 20 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/f7728dfc218d4a87a8363a93ffa6d0ca.aspx"
+ },
+ {
+  "id": "poi-nz-paparoa-pororari-hut",
+  "placeID": "nz-np-paparoa",
+  "kind": "hut",
+  "name": "Pororari Hut",
+  "location": {
+   "latitude": -42.17079,
+   "longitude": 171.42484
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 20 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/de782835cec24461ab377033af75de2f.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-devils-punchbowl-falls-te-tautea-o-hinekakai",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "sight",
+  "name": "Devils Punchbowl Falls/Te Tautea o Hinekakai",
+  "location": {
+   "latitude": -42.9328,
+   "longitude": 171.5683
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "A 131-metre waterfall at the north end of the village, reached by 400-plus steps through mountain beech to a platform at its base; about an hour return."
+ },
+ {
+  "id": "poi-nz-arthurs-pass-avalanche-peak",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "sight",
+  "name": "Avalanche Peak",
+  "location": {
+   "latitude": -42.9431,
+   "longitude": 171.5361
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "At 1,833 metres, the only peak in the park with a marked route to the top: 1,100 metres of climbing from the village. People have died on it."
+ },
+ {
+  "id": "poi-nz-arthurs-pass-arthurs-pass-and-the-dobson-nature-walk",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "sight",
+  "name": "Arthur's Pass and the Dobson Nature Walk",
+  "location": {
+   "latitude": -42.9074,
+   "longitude": 171.5594
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "The summit of the pass on SH73. A short walk from the Temple Basin car park passes alpine plants, including the Mt Cook buttercup, which flower from November to February."
+ },
+ {
+  "id": "poi-nz-arthurs-pass-otira-viaduct",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "sight",
+  "name": "Ōtira Viaduct",
+  "location": {
+   "latitude": -42.8861,
+   "longitude": 171.5553
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "The highway's bridge across the slips and rockfall of the Ōtira Gorge on the West Coast side, built between 1998 and 1999."
+ },
+ {
+  "id": "poi-nz-arthurs-pass-otira-valley-track",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "trailhead",
+  "name": "Otira Valley Track",
+  "location": {
+   "latitude": -42.8985,
+   "longitude": 171.5587
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "A graded track under the north flank of Mount Rolleston/Kaimatau to the Otira River footbridge, with summer alpine flowers. Avalanches cross it from May to November."
+ },
+ {
+  "id": "poi-nz-arthurs-pass-bealey-spur",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "sight",
+  "name": "Bealey Spur",
+  "location": {
+   "latitude": -43.0305,
+   "longitude": 171.6242
+  },
+  "rank": 5,
+  "hasStamp": false,
+  "summary": "A gentle climb through mountain beech and tussock past tarns, with wide views of the Waimakariri valley. Often drier than the village when north-westerlies bring rain."
+ },
+ {
+  "id": "poi-nz-arthurs-pass-goat-pass",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "sight",
+  "name": "Goat Pass",
+  "location": {
+   "latitude": -42.902,
+   "longitude": 171.6252
+  },
+  "rank": 6,
+  "hasStamp": false,
+  "summary": "The crossing of the main divide on the two-to-three-day Mingha–Deception route, part of Te Araroa and of the Coast to Coast race. For experienced, well-equipped trampers only."
+ },
+ {
+  "id": "poi-nz-arthurs-pass-mount-rolleston-kaimatau",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "sight",
+  "name": "Mount Rolleston/Kaimatau",
+  "location": {
+   "latitude": -42.9143,
+   "longitude": 171.5174
+  },
+  "rank": 7,
+  "hasStamp": false,
+  "summary": "The glacier-hung massif that dominates the view west of the pass, seen from the Avalanche Peak route and the Otira Valley. A climb for mountaineers."
+ },
+ {
+  "id": "poi-nz-arthurs-pass-arthurs-pass-national-park-visitor-centre",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "visitorCentre",
+  "name": "Arthur's Pass National Park Visitor Centre",
+  "location": {
+   "latitude": -42.9412,
+   "longitude": 171.5628
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "DOC's visitor centre at 104 West Coast Road, for track conditions, the avalanche advisory and the weather forecast before you set out."
+ },
+ {
+  "id": "poi-nz-arthurs-pass-hawdon-shelter-campsite",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "campground",
+  "name": "Hawdon Shelter Campsite",
+  "location": {
+   "latitude": -42.98787,
+   "longitude": 171.74789
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 30 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/f3e789b9421f4b1db30e1b51a6f9651e.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-klondyke-corner-campsite",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "campground",
+  "name": "Klondyke Corner Campsite",
+  "location": {
+   "latitude": -43.00203,
+   "longitude": 171.58925
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 40 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/85fde6766e364d50916d8bd9a296c4c7.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-anti-crow-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Anti Crow Hut",
+  "location": {
+   "latitude": -42.99966,
+   "longitude": 171.51141
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/1fcd55310a8f4e089af6aa3302d0913e.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-barker-memorial-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Barker Memorial Hut",
+  "location": {
+   "latitude": -42.98895,
+   "longitude": 171.39764
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/2adb5e4157ca4d699f20e20340f5f965.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-bealey-spur-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Bealey Spur Hut",
+  "location": {
+   "latitude": -43.03425,
+   "longitude": 171.57027
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/a14d11ea44094955852f280abbfa626b.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-bull-creek-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Bull Creek Hut",
+  "location": {
+   "latitude": -42.89313,
+   "longitude": 171.96832
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/293c15cd2ee04bf79a3ee44efc9f99f3.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-candlesticks-bivvy",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Candlesticks Bivvy",
+  "location": {
+   "latitude": -42.82901,
+   "longitude": 172.02364
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/dcb36c2c19794d5ebb709476603a22a3.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-carrington-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Carrington Hut",
+  "location": {
+   "latitude": -42.95988,
+   "longitude": 171.44834
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 36 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/88f5b1e015b54e2ca6dd05944f980277.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-carroll-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Carroll Hut",
+  "location": {
+   "latitude": -42.79108,
+   "longitude": 171.55264
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/dfd8f1636e7a4aa89c9189a2b98d4311.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-casey-hut-2020",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Casey Hut 2020",
+  "location": {
+   "latitude": -42.89587,
+   "longitude": 171.87113
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 12 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/d00b8874912d4ba8ac24133230e2a823.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-crow-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Crow Hut",
+  "location": {
+   "latitude": -42.94346,
+   "longitude": 171.51701
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/4a37973e08b94c35b25ca03ff8b71a86.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-east-hawdon-biv",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "East Hawdon Biv",
+  "location": {
+   "latitude": -42.90001,
+   "longitude": 171.77566
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/ae4e962a1f3b404c948422342ec03792.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-edwards-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Edwards Hut",
+  "location": {
+   "latitude": -42.9426,
+   "longitude": 171.64711
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 16 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/1c7a07b6248b4c77b477562e060b56fb.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-goat-pass-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Goat Pass Hut",
+  "location": {
+   "latitude": -42.90156,
+   "longitude": 171.62482
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 20 bunks",
+  "url": "https://www.doc.govt.nz/link/c4c0cef1b00541e29d54b1868c31a10c.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-hawdon-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Hawdon Hut",
+  "location": {
+   "latitude": -42.9111,
+   "longitude": 171.73269
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 20 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/024a190a2041400eaaef7bdf0e5a7486.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-koropuku-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Koropuku Hut",
+  "location": {
+   "latitude": -42.81216,
+   "longitude": 171.73435
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/a859b9172e554cc5b76b663c9da23a31.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-locke-stream-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Locke Stream Hut",
+  "location": {
+   "latitude": -42.73987,
+   "longitude": 171.83021
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 18 bunks",
+  "url": "https://www.doc.govt.nz/link/e91a86acf13b4d3f9c500dfdcff98293.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-minchin-bivvy",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Minchin Bivvy",
+  "location": {
+   "latitude": -42.79452,
+   "longitude": 171.8099
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/bf4b22b51d0a4898a8afcaf61e5f0cd6.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-mingha-bivvy",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Mingha Bivvy",
+  "location": {
+   "latitude": -42.92264,
+   "longitude": 171.63011
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/d9bca4c384cd4dde80dd34c0a44f7246.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-otehake-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Otehake Hut",
+  "location": {
+   "latitude": -42.85753,
+   "longitude": 171.71078
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/4602c447749e47be914572b80999ed01.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-pfeifer-bivvy",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Pfeifer Bivvy",
+  "location": {
+   "latitude": -42.80336,
+   "longitude": 171.66527
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/eb6167983906410c9bac9b9424c2a0b4.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-poulter-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Poulter Hut",
+  "location": {
+   "latitude": -42.84941,
+   "longitude": 171.80991
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/9f9ef01cd1bf4acc8fe3013c7599ec9b.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-poulter-valley-bivvy",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Poulter Valley Bivvy",
+  "location": {
+   "latitude": -42.81531,
+   "longitude": 171.77061
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/21ae0557150e43cba4a6889c30c96d8e.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-ranger-bivvy",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Ranger Bivvy",
+  "location": {
+   "latitude": -42.85636,
+   "longitude": 171.89613
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/a8db45ae45a54af3b40739e17669c780.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-sudden-valley-bivvy",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Sudden Valley Bivvy",
+  "location": {
+   "latitude": -42.94944,
+   "longitude": 171.70469
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/a22b366ff86747a5bcb6ec922df5a38e.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-townsend-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Townsend Hut",
+  "location": {
+   "latitude": -42.77421,
+   "longitude": 171.77748
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/4c36966321044235a45bb4dbbdc203ad.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-trust-poulter-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Trust Poulter Hut",
+  "location": {
+   "latitude": -42.85471,
+   "longitude": 171.84278
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/8fa63f7129084db291cc202bf1ca870f.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-upper-deception-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Upper Deception Hut",
+  "location": {
+   "latitude": -42.88372,
+   "longitude": 171.61657
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/54f96dad3b8f4e758a282bce909bb920.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-waimakariri-falls-hut",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Waimakariri Falls Hut",
+  "location": {
+   "latitude": -42.9179,
+   "longitude": 171.48773
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/f1a71eedc456422cb11bf998ec99c695.aspx"
+ },
+ {
+  "id": "poi-nz-arthurs-pass-worsley-bivvy",
+  "placeID": "nz-np-arthurs-pass",
+  "kind": "hut",
+  "name": "Worsley Bivvy",
+  "location": {
+   "latitude": -42.85127,
+   "longitude": 171.78312
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 3 bunks",
+  "url": "https://www.doc.govt.nz/link/1d723225b48c4a1786aaa53ebe51eb2f.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-franz-josef-glacier-ka-roimata-o-hine-hukatere",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "sight",
+  "name": "Franz Josef Glacier/Kā Roimata o Hine Hukatere",
+  "location": {
+   "latitude": -43.4669,
+   "longitude": 170.1917
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "A 30-minute return walk through rainforest to a view up the glacier valley. The Waiho River has cut off access further up; never go past the barriers."
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-sentinel-rock",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "viewpoint",
+  "name": "Sentinel Rock",
+  "location": {
+   "latitude": -43.425,
+   "longitude": 170.1689
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "A glacier-smoothed schist knoll in the Franz Josef valley, with views of the glacier, the valley and the Waiho River. Ice pressed against nearby Harper Rock until 1909."
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-roberts-point",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "viewpoint",
+  "name": "Roberts Point",
+  "location": {
+   "latitude": -43.4459,
+   "longitude": 170.1781
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "A challenging 12.3-kilometre return hike past historic Hende's Gallery to a lookout high above the Franz Josef ice. Unbridged creeks and slippery slabs; choose a dry day."
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-alex-knob",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "sight",
+  "name": "Alex Knob",
+  "location": {
+   "latitude": -43.4277,
+   "longitude": 170.1513
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "An eight-hour return climb from rainforest to alpine meadows, with what DOC calls the best views of Franz Josef Glacier without a helicopter. Start early to beat the afternoon cloud."
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-fox-glacier-te-moeka-o-tuawe",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "viewpoint",
+  "name": "Fox Glacier/Te Moeka o Tuawe",
+  "location": {
+   "latitude": -43.4914,
+   "longitude": 170.0294
+  },
+  "rank": 5,
+  "hasStamp": false,
+  "summary": "The South Side Walkway follows the Fox River through podocarp forest to a glacier viewpoint, 6.4 km return. The glacier is the moeka, final resting place, of Tuawe."
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-lake-matheson-te-ara-kairaumati",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "sight",
+  "name": "Lake Matheson/Te Ara Kairaumati",
+  "location": {
+   "latitude": -43.4392,
+   "longitude": 169.9652
+  },
+  "rank": 6,
+  "hasStamp": false,
+  "summary": "A glacier-formed lake whose dark water mirrors Aoraki/Mount Cook and Mount Tasman/Te Horokōau on calm days. A 4.4-km loop; the first section to Jetty Lookout suits wheelchairs."
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-okarito-lagoon",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "sight",
+  "name": "Ōkārito Lagoon",
+  "location": {
+   "latitude": -43.1953,
+   "longitude": 170.2141
+  },
+  "rank": 7,
+  "hasStamp": false,
+  "summary": "A wide coastal lagoon on the park's northern edge, famous for the kōtuku/white heron; the old gold-rush settlement of Ōkārito stands beside it."
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-lake-mapourika",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "sight",
+  "name": "Lake Māpōurika",
+  "location": {
+   "latitude": -43.3127,
+   "longitude": 170.1965
+  },
+  "rank": 8,
+  "hasStamp": false,
+  "summary": "A lake north of Franz Josef/Waiau, home to the threatened kāmana/crested grebe."
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-welcome-flat-hot-pools",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "sight",
+  "name": "Welcome Flat hot pools",
+  "location": {
+   "latitude": -43.6305,
+   "longitude": 169.9465
+  },
+  "rank": 9,
+  "hasStamp": false,
+  "summary": "Natural hot pools by Welcome Flat Hut, seven hours up the Copland Track, facing the Sierra Range. No soap, no digging; keep your head above water."
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-westland-tai-poutini-national-park-visitor-centre",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "visitorCentre",
+  "name": "Westland Tai Poutini National Park Visitor Centre",
+  "location": {
+   "latitude": -43.3842,
+   "longitude": 170.1846
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "DOC's visitor centre at 69 Cron Street, Franz Josef/Waiau, for weather, track conditions and the region's history; the historic Cape Defiance Hut is on display here."
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-welcome-flat-campsite",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "campground",
+  "name": "Welcome Flat Campsite",
+  "location": {
+   "latitude": -43.63116,
+   "longitude": 169.94658
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite · Bookable",
+  "url": "https://www.doc.govt.nz/link/cd000c58d50b4dba944f2fb7a72c887b.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-almer-hut",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "hut",
+  "name": "Almer Hut",
+  "location": {
+   "latitude": -43.47457,
+   "longitude": 170.20848
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/4da66eff68f345e78a709b6236ee4752.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-architect-creek-hut",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "hut",
+  "name": "Architect Creek Hut",
+  "location": {
+   "latitude": -43.61111,
+   "longitude": 169.88595
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/af61db02aa2443468f5424b45ed86611.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-cassel-flat-hut",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "hut",
+  "name": "Cassel Flat Hut",
+  "location": {
+   "latitude": -43.65858,
+   "longitude": 169.82677
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/1f1295a7d0404adba54d21c4ac9b5975.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-castle-rocks-hut",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "hut",
+  "name": "Castle Rocks Hut",
+  "location": {
+   "latitude": -43.45316,
+   "longitude": 170.16688
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/e39f797cde514106984f10620913ff80.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-centennial-hut-3pm",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "hut",
+  "name": "Centennial Hut 3PM",
+  "location": {
+   "latitude": -43.51117,
+   "longitude": 170.23374
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 17 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/4d132e58a96f4257a833be0ac8924bb0.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-chancellor-hut",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "hut",
+  "name": "Chancellor Hut",
+  "location": {
+   "latitude": -43.51035,
+   "longitude": 170.10852
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/f76c189f5c4b4992987b12c75b2315b3.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-christmas-flat-hut",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "hut",
+  "name": "Christmas Flat Hut",
+  "location": {
+   "latitude": -43.71889,
+   "longitude": 169.90764
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/00b22656ec2e487aac2baf171c7f82ae.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-douglas-rock-hut",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "hut",
+  "name": "Douglas Rock Hut",
+  "location": {
+   "latitude": -43.65266,
+   "longitude": 170.01894
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 8 bunks",
+  "url": "https://www.doc.govt.nz/link/e54eb2196ea9468382401bc92f882c8d.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-horace-walker-hut",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "hut",
+  "name": "Horace Walker Hut",
+  "location": {
+   "latitude": -43.68892,
+   "longitude": 169.92182
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/1d4a8f4b84bb409e9680666883b763a4.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-lame-duck-hut-3po",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "hut",
+  "name": "Lame Duck Hut 3PO",
+  "location": {
+   "latitude": -43.7068,
+   "longitude": 169.86694
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/9a0dd08fb50a41a2a77c40e9eda99fc4.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-pioneer-hut-3pm",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "hut",
+  "name": "Pioneer Hut 3PM",
+  "location": {
+   "latitude": -43.53079,
+   "longitude": 170.18115
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 13 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/03d097a342b64f05a0dd706acfed1d6a.aspx"
+ },
+ {
+  "id": "poi-nz-westland-tai-poutini-welcome-flat-hut",
+  "placeID": "nz-np-westland-tai-poutini",
+  "kind": "hut",
+  "name": "Welcome Flat Hut",
+  "location": {
+   "latitude": -43.63057,
+   "longitude": 169.94647
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 31 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/bbe7f413c0a4462693220dca0d311bd7.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-aoraki-mount-cook",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "sight",
+  "name": "Aoraki/Mount Cook",
+  "location": {
+   "latitude": -43.595,
+   "longitude": 170.1419
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "New Zealand's highest mountain at 3,724 metres, sacred to Ngāi Tahu as their most revered ancestor. Seen from the Hooker Valley Track, Kea Point and Tasman Glacier View."
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-hooker-valley-track",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "sight",
+  "name": "Hooker Valley Track",
+  "location": {
+   "latitude": -43.676,
+   "longitude": 170.1107
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "Ten kilometres return from White Horse Hill to Hooker Lake at the foot of Aoraki, over three swing bridges, one the country's longest at 189 m. Icebergs in summer."
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-tasman-glacier-view-and-the-blue-lakes",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "viewpoint",
+  "name": "Tasman Glacier View and the Blue Lakes",
+  "location": {
+   "latitude": -43.6929,
+   "longitude": 170.164
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "Over 300 steps up a moraine wall to a view across Tasman Lake to Haupapa/Tasman Glacier; a side track reaches the first Blue Lake, now green with rainwater."
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-haupapa-tasman-glacier",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "sight",
+  "name": "Haupapa/Tasman Glacier",
+  "location": {
+   "latitude": -43.6167,
+   "longitude": 170.2
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "New Zealand's largest and longest glacier, 23 km long and up to 3 km wide, its lower reaches covered in rock. Visible from the highway at the park entrance."
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-kea-point",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "viewpoint",
+  "name": "Kea Point",
+  "location": {
+   "latitude": -43.7106,
+   "longitude": 170.0843
+  },
+  "rank": 5,
+  "hasStamp": false,
+  "summary": "A gentle walk across subalpine grassland to a deck on the Mueller Glacier moraine wall, facing Mount Sefton, the Hooker Valley and Aoraki. Two hours return from the village."
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-sealy-tarns",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "sight",
+  "name": "Sealy Tarns",
+  "location": {
+   "latitude": -43.7132,
+   "longitude": 170.074
+  },
+  "rank": 6,
+  "hasStamp": false,
+  "summary": "The 'stairway to heaven': 2,200 steps and 600 metres of climbing to small alpine lakes above the Hooker Valley. No shelter; turn back if north-west weather approaches."
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-aoraki-mount-cook-national-park-visitor-centre",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "visitorCentre",
+  "name": "Aoraki/Mount Cook National Park Visitor Centre",
+  "location": {
+   "latitude": -43.7332,
+   "longitude": 170.0953
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "DOC's visitor centre at 1 Larch Grove in the village, with exhibits, an art collection, and advice on huts, weather and avalanche conditions."
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-white-horse-hill-campground",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "campground",
+  "name": "White Horse Hill Campground",
+  "location": {
+   "latitude": -43.71797,
+   "longitude": 170.09245
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 60 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/81173e8283b84a1eb09e9bd87533360e.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-ball-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Ball Hut",
+  "location": {
+   "latitude": -43.62474,
+   "longitude": 170.19084
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 3 bunks",
+  "url": "https://www.doc.govt.nz/link/f44bec2eac554a14b2faf9aa47b9c2b7.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-barron-saddle-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Barron Saddle Hut",
+  "location": {
+   "latitude": -43.76006,
+   "longitude": 170.00017
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 8 bunks",
+  "url": "https://www.doc.govt.nz/link/4a0ca61987fd46d782ff266008d7536a.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-beetham-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Beetham Hut",
+  "location": {
+   "latitude": -43.56646,
+   "longitude": 170.24867
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/c2ab699b44d04a779a6b8e78499fa2f8.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-eade-memorial-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Eade Memorial Hut",
+  "location": {
+   "latitude": -43.51924,
+   "longitude": 170.48225
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 3 bunks",
+  "url": "https://www.doc.govt.nz/link/21f5309f0fa6477199b04cc40feb3c70.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-empress-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Empress Hut",
+  "location": {
+   "latitude": -43.59479,
+   "longitude": 170.12175
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/9fabebbbdb81409bbbdac83f63a7206c.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-godley-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Godley Hut",
+  "location": {
+   "latitude": -43.48042,
+   "longitude": 170.5106
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 8 bunks",
+  "url": "https://www.doc.govt.nz/link/fa4950ff2c3f459a85723c40e8fbe70b.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-hooker-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Hooker Hut",
+  "location": {
+   "latitude": -43.69915,
+   "longitude": 170.09269
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 8 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/064466804b48485f8bfb6b98b82df096.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-kelman-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Kelman Hut",
+  "location": {
+   "latitude": -43.51852,
+   "longitude": 170.36058
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 24 bunks",
+  "url": "https://www.doc.govt.nz/link/07df1841aab74689b52356cbbd2da3df.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-liebig-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Liebig Hut",
+  "location": {
+   "latitude": -43.62914,
+   "longitude": 170.31014
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/5085e07db4164419a3b8ee44352f599c.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-mueller-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Mueller Hut",
+  "location": {
+   "latitude": -43.72111,
+   "longitude": 170.0646
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 28 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/ca3bf5da422f462781809b92757e7278.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-onslow-hut-steffan-memorial-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Onslow Hut (Steffan Memorial Hut)",
+  "location": {
+   "latitude": -43.61014,
+   "longitude": 170.30603
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/70da3e2543dd46289c1cb750362b9008.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-plateau-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Plateau Hut",
+  "location": {
+   "latitude": -43.58373,
+   "longitude": 170.18411
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 33 bunks",
+  "url": "https://www.doc.govt.nz/link/2184c16d3fdd4e30a3efb632dc0b5179.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-sefton-bivvy",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Sefton Bivvy",
+  "location": {
+   "latitude": -43.6879,
+   "longitude": 170.07588
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/1b4054cd45c84813a7a3baa4c27c23c6.aspx"
+ },
+ {
+  "id": "poi-nz-aoraki-mount-cook-tasman-saddle-hut",
+  "placeID": "nz-np-aoraki-mount-cook",
+  "kind": "hut",
+  "name": "Tasman Saddle Hut",
+  "location": {
+   "latitude": -43.51384,
+   "longitude": 170.34189
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 16 bunks",
+  "url": "https://www.doc.govt.nz/link/a596c6fd385f47b682cc7bcead514212.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-mount-aspiring-tititea",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "sight",
+  "name": "Mount Aspiring/Tititea",
+  "location": {
+   "latitude": -44.3842,
+   "longitude": 168.7279
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "The park's namesake, the only peak over 3,000 metres outside Aoraki/Mount Cook National Park; its Māori name means the steep peak of glistening white. A mountaineer's summit."
+ },
+ {
+  "id": "poi-nz-mount-aspiring-rob-roy-track",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "sight",
+  "name": "Rob Roy Track",
+  "location": {
+   "latitude": -44.4667,
+   "longitude": 168.7167
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "Ten kilometres return from Raspberry Creek, over a swing bridge and up through beech forest to views of Rob Roy Glacier. From May to November, stop at the lower lookout."
+ },
+ {
+  "id": "poi-nz-mount-aspiring-cascade-saddle",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "sight",
+  "name": "Cascade Saddle",
+  "location": {
+   "latitude": -44.476,
+   "longitude": 168.6245
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "An exposed alpine crossing from the West Matukituki to the Dart, best in mid to late summer and only for experienced, well-equipped trampers. Multiple people have died on it."
+ },
+ {
+  "id": "poi-nz-mount-aspiring-blue-pools",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "sight",
+  "name": "Blue Pools",
+  "location": {
+   "latitude": -44.1615,
+   "longitude": 169.2718
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "Snow-fed pools in the Makarora River, clear and blue after dry weather; an easy 1.5-hour return walk through silver beech and over two swing bridges. No jumping off them."
+ },
+ {
+  "id": "poi-nz-mount-aspiring-haast-pass-tioripatea-lookout",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "viewpoint",
+  "name": "Haast Pass/Tioripatea Lookout",
+  "location": {
+   "latitude": -44.1059,
+   "longitude": 169.352
+  },
+  "rank": 5,
+  "hasStamp": false,
+  "summary": "A one-hour return climb of 150 metres from the top of the pass to a viewpoint above the beech forest, with Mount Brewster prominent to the north-east."
+ },
+ {
+  "id": "poi-nz-mount-aspiring-gillespie-pass",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "sight",
+  "name": "Gillespie Pass",
+  "location": {
+   "latitude": -44.1565,
+   "longitude": 169.0709
+  },
+  "rank": 6,
+  "hasStamp": false,
+  "summary": "The high point of a 56-km, three-to-four-day circuit through the Young and Wilkin valleys, with a side trip to Crucible Lake. For experienced parties with river-crossing skills."
+ },
+ {
+  "id": "poi-nz-mount-aspiring-routeburn-falls",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "sight",
+  "name": "Routeburn Falls",
+  "location": {
+   "latitude": -44.7249,
+   "longitude": 168.1991
+  },
+  "rank": 7,
+  "hasStamp": false,
+  "summary": "The cascade at the bushline above the Routeburn Flats, two and a half to four hours up the Routeburn Track from the Routeburn Shelter, below the climb to Harris Saddle."
+ },
+ {
+  "id": "poi-nz-mount-aspiring-wanaka-tititea-mount-aspiring-national-park-visitor-centre",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "visitorCentre",
+  "name": "Wānaka Tititea/Mount Aspiring National Park Visitor Centre",
+  "location": {
+   "latitude": -44.6945,
+   "longitude": 169.143
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "DOC's visitor centre in Wānaka, for weather, track and road conditions and hut bookings before heading into the park."
+ },
+ {
+  "id": "poi-nz-mount-aspiring-cameron-flat-campsite",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "campground",
+  "name": "Cameron Flat Campsite",
+  "location": {
+   "latitude": -44.16123,
+   "longitude": 169.28731
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 30 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/0c9f620a83ed40a599d91557a7235432.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-daleys-flat-campsite-lawn-at-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "campground",
+  "name": "Daleys Flat Campsite (Lawn At Hut)",
+  "location": {
+   "latitude": -44.54823,
+   "longitude": 168.37447
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite",
+  "url": "https://www.doc.govt.nz/link/e6d1636495ad4c799e922c59d10e8762.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-dart-campsite-near-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "campground",
+  "name": "Dart Campsite (Near Hut)",
+  "location": {
+   "latitude": -44.52218,
+   "longitude": 168.55643
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite",
+  "url": "https://www.doc.govt.nz/link/76c6ae7a63c94bbdaf6ee54a9886c808.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-diamond-lake-campsite",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "campground",
+  "name": "Diamond Lake Campsite",
+  "location": {
+   "latitude": -44.73195,
+   "longitude": 168.38132
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 10 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/35d86e8966d74ab48124fc6b29ca26f6.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-lake-sylvan-campsite",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "campground",
+  "name": "Lake Sylvan Campsite",
+  "location": {
+   "latitude": -44.72577,
+   "longitude": 168.31466
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 36 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/dca526300253491da2e08ad9af757896.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-pleasant-flat-campsite",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "campground",
+  "name": "Pleasant Flat Campsite",
+  "location": {
+   "latitude": -44.01179,
+   "longitude": 169.38101
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 22 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/6a4b26aec95442bb8704ffc06a1871a7.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-routeburn-flats-campsite",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "campground",
+  "name": "Routeburn Flats Campsite",
+  "location": {
+   "latitude": -44.72503,
+   "longitude": 168.21092
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 15 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/8effd736a4104c9a9e6a4f1c8633f1b4.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-shelter-rock-campsite-lawn-at-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "campground",
+  "name": "Shelter Rock Campsite (Lawn At Hut)",
+  "location": {
+   "latitude": -44.55857,
+   "longitude": 168.50876
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite",
+  "url": "https://www.doc.govt.nz/link/7739d541ff19438a8f56e2e56e750129.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-young-forks-campsite",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "campground",
+  "name": "Young Forks Campsite",
+  "location": {
+   "latitude": -44.17165,
+   "longitude": 169.14308
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite",
+  "url": "https://www.doc.govt.nz/link/3fb3db2a9c0a4e9a86c1877cb9751810.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-brewster-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Brewster Hut",
+  "location": {
+   "latitude": -44.08783,
+   "longitude": 169.41226
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 12 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/4696282a70644290aed8784edea0fa57.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-cameron-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Cameron Hut",
+  "location": {
+   "latitude": -44.1991,
+   "longitude": 169.31589
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/b4eb04c5f5a54e5b8ec4c59d5874127f.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-colin-todd-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Colin Todd Hut",
+  "location": {
+   "latitude": -44.37205,
+   "longitude": 168.69457
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/fb7626fa35214fd0abe173a0b20ed648.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-daleys-flat-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Daleys Flat Hut",
+  "location": {
+   "latitude": -44.54823,
+   "longitude": 168.37447
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 20 bunks",
+  "url": "https://www.doc.govt.nz/link/88284d007a2642a6b5a6aef96dddff1d.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-dart-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Dart Hut",
+  "location": {
+   "latitude": -44.52166,
+   "longitude": 168.55451
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 32 bunks",
+  "url": "https://www.doc.govt.nz/link/47120c138c47446a923dc5a76dd8b806.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-earnslaw-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Earnslaw Hut",
+  "location": {
+   "latitude": -44.62208,
+   "longitude": 168.44808
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/d91659f456844e6ea6073f1ec4e2a2cb.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-esquilant-bivvy-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Esquilant Bivvy Hut",
+  "location": {
+   "latitude": -44.6153,
+   "longitude": 168.40704
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/1a4a166df12c4c9aa47dc380791b54df.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-french-ridge-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "French Ridge Hut",
+  "location": {
+   "latitude": -44.42868,
+   "longitude": 168.69388
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 16 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/af310f0f639a4b76a7b69998e5400c98.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-liverpool-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Liverpool Hut",
+  "location": {
+   "latitude": -44.43116,
+   "longitude": 168.66526
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced-Alpine Hut · 10 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/1b7633b7c9de4b85883b5cebe7d675ac.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-makarora-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Makarora Hut",
+  "location": {
+   "latitude": -44.12931,
+   "longitude": 169.44044
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/93f929bafbca4409b20a7cdb3eabaf2a.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-olivine-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Olivine Hut",
+  "location": {
+   "latitude": -44.44378,
+   "longitude": 168.21385
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/58d63ee83828448aacf7fa916222412a.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-routeburn-falls-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Routeburn Falls Hut",
+  "location": {
+   "latitude": -44.72597,
+   "longitude": 168.19935
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 48 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/4fbe11d0013f41e588d9bba8edf42fa4.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-routeburn-flats-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Routeburn Flats Hut",
+  "location": {
+   "latitude": -44.72559,
+   "longitude": 168.21535
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 20 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/e69181c9097d42fe9265a93be8fd9bd4.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-shelter-rock-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Shelter Rock Hut",
+  "location": {
+   "latitude": -44.55865,
+   "longitude": 168.50895
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 22 bunks",
+  "url": "https://www.doc.govt.nz/link/a0e292d34190456f84bda1210fbe1ee6.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-siberia-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Siberia Hut",
+  "location": {
+   "latitude": -44.20482,
+   "longitude": 169.06166
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 20 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/3e2405a1da5b419391e9a1d636297ed2.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-top-forks-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Top Forks Hut",
+  "location": {
+   "latitude": -44.27443,
+   "longitude": 168.89109
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/d46be1fe7a684b5885e6a42a7e903f33.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-top-forks-old-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Top Forks Old Hut",
+  "location": {
+   "latitude": -44.27448,
+   "longitude": 168.89102
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 8 bunks"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-wills-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Wills Hut",
+  "location": {
+   "latitude": -44.03922,
+   "longitude": 169.45865
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/9ea7b21d8eb142c4a473a4687ca1a67d.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-young-hut",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "hut",
+  "name": "Young Hut",
+  "location": {
+   "latitude": -44.1746,
+   "longitude": 169.08991
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 20 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/64bfd6f160fa45aa90da8728460eedf4.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-milford-sound-piopiotahi",
+  "placeID": "nz-np-fiordland",
+  "kind": "sight",
+  "name": "Milford Sound/Piopiotahi",
+  "location": {
+   "latitude": -44.6481,
+   "longitude": 167.9056
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "The fiord at the end of the Milford Road, 16 km long and up to 265 m deep. Cruises leave from the visitor terminal; a marine reserve protects its waters."
+ },
+ {
+  "id": "poi-nz-fiordland-mitre-peak",
+  "placeID": "nz-np-fiordland",
+  "kind": "sight",
+  "name": "Mitre Peak",
+  "location": {
+   "latitude": -44.6325,
+   "longitude": 167.8561
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "Sheer rock walls rising 1,692 metres straight from the water, one of the world's most photographed peaks. The Milford Sound Foreshore Walk has some of the best views."
+ },
+ {
+  "id": "poi-nz-fiordland-sutherland-falls",
+  "placeID": "nz-np-fiordland",
+  "kind": "sight",
+  "name": "Sutherland Falls",
+  "location": {
+   "latitude": -44.8007,
+   "longitude": 167.7295
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "Falls dropping 580 metres in three leaps from Lake Quill, a side trip of 1 hr 30 min return on the third day of the Milford Track, below Omanui/McKinnon Pass."
+ },
+ {
+  "id": "poi-nz-fiordland-mirror-lakes",
+  "placeID": "nz-np-fiordland",
+  "kind": "viewpoint",
+  "name": "Mirror Lakes",
+  "location": {
+   "latitude": -45.0284,
+   "longitude": 168.011
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "Small lakes beside the Milford Road, about 56 km from Te Anau, reflecting the Earl Mountains. A 10-minute wheelchair-accessible stroll."
+ },
+ {
+  "id": "poi-nz-fiordland-key-summit",
+  "placeID": "nz-np-fiordland",
+  "kind": "viewpoint",
+  "name": "Key Summit",
+  "location": {
+   "latitude": -44.8151,
+   "longitude": 168.1274
+  },
+  "rank": 5,
+  "hasStamp": false,
+  "summary": "A side trip from the Routeburn Track near The Divide to an alpine wetland, with views of the Darran Mountains and Hollyford Valley; 1–1.5 hours return."
+ },
+ {
+  "id": "poi-nz-fiordland-lake-marian",
+  "placeID": "nz-np-fiordland",
+  "kind": "sight",
+  "name": "Lake Marian",
+  "location": {
+   "latitude": -44.785,
+   "longitude": 168.075
+  },
+  "rank": 6,
+  "hasStamp": false,
+  "summary": "An alpine lake in a glacier-carved hanging valley, 1.5 hours up a steep track off Hollyford Road; waterfalls 10 minutes in. Keep off the lake edge in winter and spring."
+ },
+ {
+  "id": "poi-nz-fiordland-homer-tunnel",
+  "placeID": "nz-np-fiordland",
+  "kind": "sight",
+  "name": "Homer Tunnel",
+  "location": {
+   "latitude": -44.7643,
+   "longitude": 167.9896
+  },
+  "rank": 7,
+  "hasStamp": false,
+  "summary": "The Milford Road's tunnel, begun in 1935 and finished in 1954. Traffic signals can hold you up to 20 minutes; kea are often seen here."
+ },
+ {
+  "id": "poi-nz-fiordland-doubtful-sound-patea",
+  "placeID": "nz-np-fiordland",
+  "kind": "sight",
+  "name": "Doubtful Sound/Patea",
+  "location": {
+   "latitude": -45.3167,
+   "longitude": 166.9833
+  },
+  "rank": 8,
+  "hasStamp": false,
+  "summary": "A large, remote fiord with three main arms and no road, home to one of the southernmost bottlenose dolphin populations. Reached by boat and coach via Lake Manapōuri."
+ },
+ {
+  "id": "poi-nz-fiordland-mount-luxmore",
+  "placeID": "nz-np-fiordland",
+  "kind": "viewpoint",
+  "name": "Mount Luxmore",
+  "location": {
+   "latitude": -45.3862,
+   "longitude": 167.5905
+  },
+  "rank": 9,
+  "hasStamp": false,
+  "summary": "The highest point of the Kepler Track at 1,472 metres, a 30-minute side trip from the ridge, with views over Lake Te Anau's South Fiord to the Murchison Mountains."
+ },
+ {
+  "id": "poi-nz-fiordland-lake-hauroko",
+  "placeID": "nz-np-fiordland",
+  "kind": "sight",
+  "name": "Lake Hauroko",
+  "location": {
+   "latitude": -45.9552,
+   "longitude": 167.3042
+  },
+  "rank": 10,
+  "hasStamp": false,
+  "summary": "New Zealand's deepest lake, 462 metres, in the south of the park, reached by road off the Southern Scenic Route; boats can be launched here."
+ },
+ {
+  "id": "poi-nz-fiordland-te-rua-o-te-moko-fiordland-national-park-visitor-centre-2",
+  "placeID": "nz-np-fiordland",
+  "kind": "visitorCentre",
+  "name": "Te Rua-o-te-moko/Fiordland National Park Visitor Centre",
+  "location": {
+   "latitude": -45.4239,
+   "longitude": 167.7189
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "DOC's visitor centre at 1 Lakefront Drive, Te Anau, for Great Walk bookings, track and road conditions, hunting and boating advice."
+ },
+ {
+  "id": "poi-nz-fiordland-brod-bay-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Brod Bay Campsite",
+  "location": {
+   "latitude": -45.40484,
+   "longitude": 167.67466
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 15 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/ef2281c8f2234381893f0bda7da30ef4.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-cascade-creek-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Cascade Creek Campsite",
+  "location": {
+   "latitude": -44.89421,
+   "longitude": 168.07529
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 120 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/1b40c89315e5410e930a629c174a093e.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-deer-flat-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Deer Flat Campsite",
+  "location": {
+   "latitude": -44.9995,
+   "longitude": 168.00793
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 15 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/fc407f5f116d453eabc90150ae922274.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-greenstone-saddle-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Greenstone Saddle Campsite",
+  "location": {
+   "latitude": -44.8278,
+   "longitude": 168.13737
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic campsite",
+  "url": "https://www.doc.govt.nz/link/51ed184be9f34ab293ce87bfc5013dc2.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-hall-arm-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Hall Arm Campsite",
+  "location": {
+   "latitude": -45.47164,
+   "longitude": 167.08008
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite · 6 sites",
+  "url": "https://www.doc.govt.nz/link/49d79eccf49e48fda06e2e6e9c324fc5.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-henry-creek-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Henry Creek Campsite",
+  "location": {
+   "latitude": -45.23161,
+   "longitude": 167.81184
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 40 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/d87709f11ea7429084acc481422878e1.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-iris-burn-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Iris Burn Campsite",
+  "location": {
+   "latitude": -45.39891,
+   "longitude": 167.5088
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 15 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/d89e85a5fa37484783f259117f24fc91.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-kiosk-creek-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Kiosk Creek Campsite",
+  "location": {
+   "latitude": -44.96291,
+   "longitude": 168.01882
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 10 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/48d5461385ce4e75a35bd2e1254dfc6f.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-lake-mackenzie-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Lake Mackenzie Campsite",
+  "location": {
+   "latitude": -44.76423,
+   "longitude": 168.17635
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 9 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/566d563d09094f05802ef3714a758157.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-south-arm-campsite-lake-manapouri",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "South Arm Campsite (Lake Manapouri)",
+  "location": {
+   "latitude": -45.58653,
+   "longitude": 167.37386
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite · 1 site",
+  "url": "https://www.doc.govt.nz/link/c594bee1d29549418cba750b518f538f.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-thicket-burn-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Thicket Burn Campsite",
+  "location": {
+   "latitude": -46.00779,
+   "longitude": 167.45491
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic campsite · 20 sites",
+  "url": "https://www.doc.govt.nz/link/755d59b6789046848bf4ea41b6f5f8fa.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-totara-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Totara Campsite",
+  "location": {
+   "latitude": -45.07603,
+   "longitude": 167.98482
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 20 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/5967397fe0094551826e8cd65e45dbf8.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-upper-eglinton-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Upper Eglinton Campsite",
+  "location": {
+   "latitude": -44.9275,
+   "longitude": 168.03187
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 3 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/fa708d6242b9421399e2e078c957695a.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-walker-creek-campsite",
+  "placeID": "nz-np-fiordland",
+  "kind": "campground",
+  "name": "Walker Creek Campsite",
+  "location": {
+   "latitude": -45.10137,
+   "longitude": 167.96608
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard campsite · 5 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/03ef3fdd743c4311b4e23a596b45e176.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-back-valley-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Back Valley Hut",
+  "location": {
+   "latitude": -45.60041,
+   "longitude": 167.58142
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/17ace59d7c29406aa2faf2cf1ef72107.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-borland-bivvy",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Borland Bivvy",
+  "location": {
+   "latitude": -45.7397,
+   "longitude": 167.3734
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/bfac6bef81e04b2795cb60161d142d66.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-caroline-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Caroline Hut",
+  "location": {
+   "latitude": -45.94132,
+   "longitude": 167.28329
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/3dd6cdd6419a46dc90d86fea9177e995.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-caswell-sound-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Caswell Sound Hut",
+  "location": {
+   "latitude": -45.04802,
+   "longitude": 167.30905
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 3 bunks",
+  "url": "https://www.doc.govt.nz/link/bbed85cec2804b49999384732b9a5df0.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-clark-hut-a-frame",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Clark Hut - A Frame",
+  "location": {
+   "latitude": -45.79232,
+   "longitude": 167.33136
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 3 bunks",
+  "url": "https://www.doc.govt.nz/link/9bd95ee2e3964efdbd58a5134f61ef4f.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-clinton-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Clinton Hut",
+  "location": {
+   "latitude": -44.90572,
+   "longitude": 167.90828
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 44 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/95b97909f4e748df8ec60e9d3ebf0d02.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-deas-cove-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Deas Cove Hut",
+  "location": {
+   "latitude": -45.19366,
+   "longitude": 166.97333
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/3ab02d6b60b84e139dcd744fa1252812.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-demon-trail-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Demon Trail Hut",
+  "location": {
+   "latitude": -44.49399,
+   "longitude": 168.07318
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 12 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/8a9cca1bd9cd4ab1bab2613e2aec039e.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-dumpling-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Dumpling Hut",
+  "location": {
+   "latitude": -44.76854,
+   "longitude": 167.76512
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 44 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/03a16bb5113c44e9bf5e947013e85fc1.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-eel-creek-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Eel Creek Hut",
+  "location": {
+   "latitude": -45.88227,
+   "longitude": 167.36135
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/a84c2dd33a2d4a5e927b8e3f9151de3c.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-freeman-burn-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Freeman Burn Hut",
+  "location": {
+   "latitude": -45.44057,
+   "longitude": 167.38054
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 8 bunks",
+  "url": "https://www.doc.govt.nz/link/b3966fe23ce24c40a444fbae3be992a7.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-glaisnock-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Glaisnock Hut",
+  "location": {
+   "latitude": -44.99816,
+   "longitude": 167.69682
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/fc6eeee962e245e0bc45e7e7b0101a05.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-green-lake-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Green Lake Hut",
+  "location": {
+   "latitude": -45.78551,
+   "longitude": 167.40003
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/69b1ff9fd03740eaa4499728607ca743.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-halfway-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Halfway Hut",
+  "location": {
+   "latitude": -45.75973,
+   "longitude": 167.14292
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/399da3dfc7844dc28acbbb3dd23385c7.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-hauroko-burn-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Hauroko Burn Hut",
+  "location": {
+   "latitude": -45.83065,
+   "longitude": 167.14548
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 10 bunks",
+  "url": "https://www.doc.govt.nz/link/da0d63059452438b88f4ac898c2580b0.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-hidden-falls-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Hidden Falls Hut",
+  "location": {
+   "latitude": -44.62385,
+   "longitude": 168.11427
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 12 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/bb53388643294e6092adceda45cf3cf3.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-historic-clark-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Historic Clark Hut",
+  "location": {
+   "latitude": -45.78449,
+   "longitude": 167.31851
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks",
+  "url": "https://www.doc.govt.nz/link/996a6ec1b57a4ac98aa2a8da92959416.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-hope-arm-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Hope Arm Hut",
+  "location": {
+   "latitude": -45.58991,
+   "longitude": 167.54143
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/32144a964abe4ad0a1a3b6c057236da5.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-iris-burn-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Iris Burn Hut",
+  "location": {
+   "latitude": -45.39904,
+   "longitude": 167.50951
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 56 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/59306afc10ef4acb9e3592232f4111a1.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-junction-burn-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Junction Burn Hut",
+  "location": {
+   "latitude": -45.15098,
+   "longitude": 167.49766
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/b7ffc98545ee4f1da61a5e8404f96905.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-kaipo-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Kaipo Hut",
+  "location": {
+   "latitude": -44.48906,
+   "longitude": 167.94301
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 7 bunks",
+  "url": "https://www.doc.govt.nz/link/cc1f9f2181e44f5f8acfb6319b35ef43.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-kintail-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Kintail Hut",
+  "location": {
+   "latitude": -45.61456,
+   "longitude": 167.11585
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/8007c4b754e842a8b4c42d8bb1279bbe.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-lake-alabaster-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Lake Alabaster Hut",
+  "location": {
+   "latitude": -44.54592,
+   "longitude": 168.14411
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 26 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/e95fae86b9b24abb94ea559183bacc7a.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-lake-hankinson-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Lake Hankinson Hut",
+  "location": {
+   "latitude": -45.04618,
+   "longitude": 167.56546
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 11 bunks",
+  "url": "https://www.doc.govt.nz/link/087a1745215542ee8613b5996d349e41.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-lake-mackenzie-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Lake Mackenzie Hut",
+  "location": {
+   "latitude": -44.76763,
+   "longitude": 168.17355
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 57 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/c19f6d024f754aba83004008fa0364e8.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-lake-poteriteri-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Lake Poteriteri Hut",
+  "location": {
+   "latitude": -46.11076,
+   "longitude": 167.15282
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/520db01900654f82a705d9a56394c4f8.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-lake-roe-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Lake Roe Hut",
+  "location": {
+   "latitude": -45.70354,
+   "longitude": 167.14361
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/b92a6a2658c849c99d14f33c68a8b5b2.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-lake-thomson-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Lake Thomson Hut",
+  "location": {
+   "latitude": -45.02521,
+   "longitude": 167.53729
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 8 bunks",
+  "url": "https://www.doc.govt.nz/link/3c4734c39a7442789af76aa495511bac.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-loch-maree-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Loch Maree Hut",
+  "location": {
+   "latitude": -45.68487,
+   "longitude": 167.06567
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/e2a6fdf2480f4e489e83ba252fd7a2f6.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-luxmore-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Luxmore Hut",
+  "location": {
+   "latitude": -45.38523,
+   "longitude": 167.61916
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 54 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/dc756fa57891438b8f3fa03813fb7260.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-martins-bay-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Martins Bay Hut",
+  "location": {
+   "latitude": -44.33507,
+   "longitude": 168.00321
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 24 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/ad6e3a6a055c4f5593b6a0eb5d6c9743.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-mckerrow-island-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Mckerrow Island Hut",
+  "location": {
+   "latitude": -44.51863,
+   "longitude": 168.0627
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/bb8fd9ba888d4090b02ef07797c232f9.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-mintaro-hut-2021",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Mintaro Hut (2021)",
+  "location": {
+   "latitude": -44.80926,
+   "longitude": 167.77019
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 48 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/d9e9faa1d48c48da8450019920aa542b.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-monowai-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Monowai Hut",
+  "location": {
+   "latitude": -45.8343,
+   "longitude": 167.34942
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/b59a768bcb784fc486bf7a67b3264790.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-moturau-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Moturau Hut",
+  "location": {
+   "latitude": -45.48168,
+   "longitude": 167.61071
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 40 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/62e02f6c0f384e6982a51bb1f54170c3.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-north-borland-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "North Borland Hut",
+  "location": {
+   "latitude": -45.68587,
+   "longitude": 167.48611
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/22bbc8dac00a47d3a901b9ced6d035f9.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-port-craig-school-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Port Craig School Hut",
+  "location": {
+   "latitude": -46.22259,
+   "longitude": 167.36148
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Serviced Hut · 19 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/97aaabe5c8164be0bf696c0640dc67a4.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-rodger-inlet-historic-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Rodger Inlet Historic Hut",
+  "location": {
+   "latitude": -45.85722,
+   "longitude": 167.44276
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/1e8f4386a49b4fa79db2579e09480e35.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-rodger-inlet-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Rodger Inlet Hut",
+  "location": {
+   "latitude": -45.85744,
+   "longitude": 167.44314
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/2f24decd71fe44b19ec803e410640621.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-shallow-bay-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Shallow Bay Hut",
+  "location": {
+   "latitude": -45.49326,
+   "longitude": 167.61264
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/3d372033a3f24130bb756e9e12c7a57d.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-slaughterburn-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Slaughterburn Hut",
+  "location": {
+   "latitude": -46.19217,
+   "longitude": 167.06574
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/871b0575cf54466dbb7be8ce04fb35f7.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-supper-cove-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Supper Cove Hut",
+  "location": {
+   "latitude": -45.70219,
+   "longitude": 166.94408
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/8ca791f5f94f4f8a8c9e0f2a0b5f484a.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-te-oneroa-a-frame-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Te Oneroa A-Frame Hut",
+  "location": {
+   "latitude": -46.12328,
+   "longitude": 166.6721
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 2 bunks",
+  "url": "https://www.doc.govt.nz/link/ce333a20ba44472ba08c74288596d511.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-teal-bay-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Teal Bay Hut",
+  "location": {
+   "latitude": -46.06654,
+   "longitude": 167.29471
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/0a0f44b069f6443aaa9a5a0f3ef00471.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-the-gut-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "The Gut Hut",
+  "location": {
+   "latitude": -45.29565,
+   "longitude": 166.95614
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/31dbb37f7e554a92b3a151a51e5dafb9.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-upper-spey-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Upper Spey Hut",
+  "location": {
+   "latitude": -45.58024,
+   "longitude": 167.16321
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/ebae99df89d947f783a4bb4ec8cdb992.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-waitutu-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Waitutu Hut",
+  "location": {
+   "latitude": -46.23694,
+   "longitude": 167.06335
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 14 bunks",
+  "url": "https://www.doc.govt.nz/link/fa4c01e62bf14f13b2e7306bf62573f9.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-west-arm-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "West Arm Hut",
+  "location": {
+   "latitude": -45.52542,
+   "longitude": 167.26319
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/110902dfe32543de860db613107d8cc9.aspx"
+ },
+ {
+  "id": "poi-nz-fiordland-worsley-hut",
+  "placeID": "nz-np-fiordland",
+  "kind": "hut",
+  "name": "Worsley Hut",
+  "location": {
+   "latitude": -44.94269,
+   "longitude": 167.83392
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/278b956ad1b941b6b9116504143a76fb.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-lee-bay",
+  "placeID": "nz-np-rakiura",
+  "kind": "entrance",
+  "name": "Lee Bay",
+  "location": {
+   "latitude": -46.858,
+   "longitude": 168.1214
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "The official entrance to the park, 5 km from Oban, where the Rakiura Track passes through a chain-link sculpture recalling the island as the anchor of Māui's canoe."
+ },
+ {
+  "id": "poi-nz-rakiura-maori-beach",
+  "placeID": "nz-np-rakiura",
+  "kind": "sight",
+  "name": "Māori Beach",
+  "location": {
+   "latitude": -46.8547,
+   "longitude": 168.083
+  },
+  "rank": 1,
+  "hasStamp": false,
+  "summary": "A Rakiura Track beach that was a sawmilling settlement, with a school, until the 1930s; a boiler and steam engine remain. A 6–7 hour return day walk from Oban."
+ },
+ {
+  "id": "poi-nz-rakiura-garden-mound",
+  "placeID": "nz-np-rakiura",
+  "kind": "sight",
+  "name": "Garden Mound",
+  "location": {
+   "latitude": -46.8678,
+   "longitude": 168.1176
+  },
+  "rank": 2,
+  "hasStamp": false,
+  "summary": "A steep, muddy climb to 160 metres through unmilled rimu, rātā, miro and kāmahi, with views over Oban; return by the coast via Lee Bay. Four to five hours."
+ },
+ {
+  "id": "poi-nz-rakiura-ulva-island-te-wharawhara",
+  "placeID": "nz-np-rakiura",
+  "kind": "sight",
+  "name": "Ulva Island/Te Wharawhara",
+  "location": {
+   "latitude": -46.9315,
+   "longitude": 168.1339
+  },
+  "rank": 3,
+  "hasStamp": false,
+  "summary": "A predator-free open sanctuary in Paterson Inlet, a short boat ride from Halfmoon Bay or Golden Bay, where saddleback, mohua and kiwi thrive. Day visits only."
+ },
+ {
+  "id": "poi-nz-rakiura-mason-bay",
+  "placeID": "nz-np-rakiura",
+  "kind": "sight",
+  "name": "Mason Bay",
+  "location": {
+   "latitude": -46.9138,
+   "longitude": 167.709
+  },
+  "rank": 4,
+  "hasStamp": false,
+  "summary": "A long west-coast beach backed by great dunes, on the North West and Southern circuits. Its northern end can be passed only at low tide; check tide times with DOC."
+ },
+ {
+  "id": "poi-nz-rakiura-mount-anglem-hananui",
+  "placeID": "nz-np-rakiura",
+  "kind": "sight",
+  "name": "Mount Anglem/Hananui",
+  "location": {
+   "latitude": -46.7406,
+   "longitude": 167.9164
+  },
+  "rank": 5,
+  "hasStamp": false,
+  "summary": "The island's highest point, 980 metres: a six-hour return side trip from Christmas Village Hut on the North West Circuit, through forest and leatherwood. Often muddy and foggy."
+ },
+ {
+  "id": "poi-nz-rakiura-rakiura-national-park-visitor-centre-2",
+  "placeID": "nz-np-rakiura",
+  "kind": "visitorCentre",
+  "name": "Rakiura National Park Visitor Centre",
+  "location": {
+   "latitude": -46.8982,
+   "longitude": 168.1264
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "DOC's visitor centre at 15 Main Road, Oban, for track and weather updates, Mason Bay tide times, hut passes and hunting permits."
+ },
+ {
+  "id": "poi-nz-rakiura-lucky-beach-hunters-campsite",
+  "placeID": "nz-np-rakiura",
+  "kind": "campground",
+  "name": "Lucky Beach Hunters Campsite",
+  "location": {
+   "latitude": -46.70945,
+   "longitude": 167.94166
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite",
+  "url": "https://www.doc.govt.nz/link/99249880348449b888595324ff42b758.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-north-arm-campsite",
+  "placeID": "nz-np-rakiura",
+  "kind": "campground",
+  "name": "North Arm Campsite",
+  "location": {
+   "latitude": -46.8829,
+   "longitude": 168.01833
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk campsite · 4 sites · Bookable",
+  "url": "https://www.doc.govt.nz/link/4c17d6ce34ad4baa902db5201b8016fe.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-west-ruggedy-beach-hunters-campsite",
+  "placeID": "nz-np-rakiura",
+  "kind": "campground",
+  "name": "West Ruggedy Beach Hunters Campsite",
+  "location": {
+   "latitude": -46.74575,
+   "longitude": 167.71938
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Backcountry campsite",
+  "url": "https://www.doc.govt.nz/link/55ad35c598f04fbd804ed294c1915572.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-abrahams-bay-hunters-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Abrahams Bay Hunters' Hut",
+  "location": {
+   "latitude": -46.94799,
+   "longitude": 168.02339
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/21950157e3e34f1fb39079819245d906.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-big-hellfire-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Big Hellfire Hut",
+  "location": {
+   "latitude": -46.81419,
+   "longitude": 167.73792
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/9e996df67e82429380f9a0852d99b55f.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-bungaree-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Bungaree Hut",
+  "location": {
+   "latitude": -46.80905,
+   "longitude": 168.03357
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 16 bunks",
+  "url": "https://www.doc.govt.nz/link/b5d19a0c79db428aaa986c82fc841ef1.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-cavalier-hunters-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Cavalier Hunters Hut",
+  "location": {
+   "latitude": -46.9632,
+   "longitude": 167.72255
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/5e952bca6f244d5480934931d7351f19.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-christmas-village-hunters-hut-2017",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Christmas Village Hunters Hut - 2017",
+  "location": {
+   "latitude": -46.75089,
+   "longitude": 167.98144
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/e85bf64bb3c64e629b0a18e36e544ada.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-christmas-village-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Christmas Village Hut",
+  "location": {
+   "latitude": -46.74392,
+   "longitude": 167.97941
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/8bb72652b24741a6a653cac7e40d7450.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-doughboy-bay-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Doughboy Bay Hut",
+  "location": {
+   "latitude": -47.03129,
+   "longitude": 167.70605
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 8 bunks",
+  "url": "https://www.doc.govt.nz/link/9083acc7b01f4a6e96f62a451442643a.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-east-ruggedy-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "East Ruggedy Hut",
+  "location": {
+   "latitude": -46.72348,
+   "longitude": 167.74617
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/45f90e681e0f41aa89380bfc63a0d725.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-freds-camp-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Freds Camp Hut",
+  "location": {
+   "latitude": -46.92855,
+   "longitude": 167.97769
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 9 bunks",
+  "url": "https://www.doc.govt.nz/link/5f52c08599ec44f3aeb98470e34cd743.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-freshwater-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Freshwater Hut",
+  "location": {
+   "latitude": -46.86826,
+   "longitude": 167.91979
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 16 bunks",
+  "url": "https://www.doc.govt.nz/link/edebfc2899794de09111b2d5844007bd.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-homestead-hunters-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Homestead Hunters Hut",
+  "location": {
+   "latitude": -46.92054,
+   "longitude": 167.79698
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/466d2bef791f408ab3e6a040bdaf053d.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-little-hellfire-hunters-hut-2018",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Little Hellfire Hunters Hut - 2018",
+  "location": {
+   "latitude": -46.86026,
+   "longitude": 167.75847
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/628939bd4bb74cf9889d60a276e77992.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-long-harry-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Long Harry Hut",
+  "location": {
+   "latitude": -46.6944,
+   "longitude": 167.80763
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 12 bunks",
+  "url": "https://www.doc.govt.nz/link/44994f9232584d58a4fbf60edfc4170b.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-martins-creek-hunters-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Martins Creek Hunters Hut",
+  "location": {
+   "latitude": -46.93911,
+   "longitude": 167.76092
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 4 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/7547310e4eea4a4687054d93b428dcbb.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-mason-bay-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Mason Bay Hut",
+  "location": {
+   "latitude": -46.92652,
+   "longitude": 167.78033
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 20 bunks",
+  "url": "https://www.doc.govt.nz/link/4d811eb48e3a4a6d97b87852e05b1b7b.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-murray-river-hunters-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Murray River Hunters Hut",
+  "location": {
+   "latitude": -46.78166,
+   "longitude": 167.99834
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/321e790e5d8e4b32b72f15f38e13d4bb.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-north-arm-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "North Arm Hut",
+  "location": {
+   "latitude": -46.88298,
+   "longitude": 168.01843
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 24 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/a0c477f605ca4b9ba53d4851b86f8cc3.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-north-big-glory-hunters-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "North Big Glory Hunters Hut",
+  "location": {
+   "latitude": -46.95949,
+   "longitude": 168.12443
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/1cd8572aa21a416b92c9320fb237277b.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-north-pegasus-hunters-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "North Pegasus Hunters Hut",
+  "location": {
+   "latitude": -47.19429,
+   "longitude": 167.66789
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 8 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/97ac993fa5e84bf2962a6e45f1702fe3.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-port-william-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Port William Hut",
+  "location": {
+   "latitude": -46.8358,
+   "longitude": 168.08709
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Great Walk Hut · 24 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/ccadff28ba044ee6a4066c6b8b8dacd9.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-rakeahua-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Rakeahua Hut",
+  "location": {
+   "latitude": -46.98219,
+   "longitude": 167.88098
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 6 bunks",
+  "url": "https://www.doc.govt.nz/link/fad1a59c35864bd2908b99a5339209f4.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-smoky-hunter-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Smoky Hunter Hut",
+  "location": {
+   "latitude": -46.70442,
+   "longitude": 167.83141
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/6f9bb9c94b9540f98c8f7a6a3ff2dd13.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-south-pegasus-hunters-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "South Pegasus Hunters Hut",
+  "location": {
+   "latitude": -47.19822,
+   "longitude": 167.63811
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 8 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/62aec770e8d346cc8fea4f2bb890a86f.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-southwest-arm-hunters-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Southwest Arm Hunters' Hut",
+  "location": {
+   "latitude": -46.93562,
+   "longitude": 167.98424
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Basic/Bivvy Hut · 6 bunks · Bookable",
+  "url": "https://www.doc.govt.nz/link/99ca295f6969432c9853d8c7edfb8924.aspx"
+ },
+ {
+  "id": "poi-nz-rakiura-yankee-river-hut",
+  "placeID": "nz-np-rakiura",
+  "kind": "hut",
+  "name": "Yankee River Hut",
+  "location": {
+   "latitude": -46.69474,
+   "longitude": 167.88821
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Standard Hut · 16 bunks",
+  "url": "https://www.doc.govt.nz/link/ab1f69f3a7414cbeb7013ef92014e195.aspx"
+ },
+ {
+  "id": "poi-nz-mount-aspiring-awarua-haast-visitor-centre",
+  "placeID": "nz-np-mount-aspiring",
+  "kind": "visitorCentre",
+  "name": "Awarua / Haast Visitor Centre",
+  "location": {
+   "latitude": -43.86083,
+   "longitude": 169.04569
+  },
+  "rank": 0,
+  "hasStamp": false,
+  "summary": "Department of Conservation visitor centre, Haast"
  }
 ]
