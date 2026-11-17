@@ -27,7 +27,7 @@ private struct PictureBand: View {
     let face: StampFace
     let d: CGFloat // swiftlint:disable:this identifier_name
     let ink: Color
-    var height: CGFloat = 0.27
+    var height: CGFloat = 0.3
 
     var body: some View {
         Group {
@@ -38,7 +38,7 @@ private struct PictureBand: View {
                 Color.clear
             }
         }
-        .frame(width: d * 0.56, height: d * height)
+        .frame(width: d * 0.6, height: d * height)
     }
 }
 
@@ -49,13 +49,16 @@ private struct NameLine: View {
     let size: CGFloat
     var lines = 2
     var weight: Font.Weight = .semibold
+    /// Narrower than the face: near the top the circle's chord is short.
+    var width: CGFloat = .infinity
 
     var body: some View {
         Text(text.uppercased().replacingOccurrences(of: "-", with: "\u{2011}"))
             .font(.system(size: size, weight: weight))
             .multilineTextAlignment(.center)
-            .minimumScaleFactor(0.6)
+            .minimumScaleFactor(0.55)
             .lineLimit(lines)
+            .frame(maxWidth: width)
     }
 }
 
@@ -83,7 +86,8 @@ private struct MarkLine: View {
             .font(.system(size: size, weight: .medium))
             .tracking(d * tracking)
             .lineLimit(1)
-            .minimumScaleFactor(0.55)
+            .minimumScaleFactor(0.5)
+            .frame(maxWidth: d * 0.52)
     }
 }
 
@@ -144,7 +148,7 @@ private struct AmericanCancellation: View {
             }
             .opacity(face.impression.inkDensity)
             VStack(spacing: d * 0.018) {
-                NameLine(text: face.siteName, size: d * 0.078)
+                NameLine(text: face.siteName, size: d * 0.078, width: d * 0.62)
                 PictureBand(face: face, d: d, ink: ink)
                 Rectangle().frame(width: d * 0.5, height: d * 0.01)
                 DateLine(face: face, size: d * 0.098)
@@ -172,7 +176,7 @@ private struct JapaneseStamp: View {
             Circle().stroke(ink, lineWidth: d * 0.04).opacity(face.impression.inkDensity)
             VStack(spacing: d * 0.012) {
                 rimName
-                PictureBand(face: face, d: d, ink: ink, height: 0.25)
+                PictureBand(face: face, d: d, ink: ink, height: 0.27)
                 Text(face.localName ?? face.siteName)
                     .font(.system(size: d * 0.1, weight: .heavy))
                     .typesettingLanguage(Locale.Language(identifier: "ja"))
@@ -224,7 +228,7 @@ private struct NorwegianPostmark: View {
             }
             .opacity(face.impression.inkDensity)
             VStack(spacing: d * 0.016) {
-                NameLine(text: face.siteName, size: d * 0.074)
+                NameLine(text: face.siteName, size: d * 0.074, width: d * 0.62)
                 PictureBand(face: face, d: d, ink: ink)
                 HStack(spacing: d * 0.025) {
                     Rectangle().frame(height: d * 0.016)
@@ -264,7 +268,7 @@ private struct HutBookStamp: View {
             }
             .opacity(face.impression.inkDensity)
             VStack(spacing: d * 0.016) {
-                NameLine(text: face.siteName, size: d * 0.072)
+                NameLine(text: face.siteName, size: d * 0.072, width: d * 0.62)
                 PictureBand(face: face, d: d, ink: ink)
                 DateLine(face: face, size: d * 0.09)
                 HStack(spacing: d * 0.02) {
@@ -293,7 +297,7 @@ private struct BushPostCancellation: View {
             }
             .opacity(face.impression.inkDensity)
             VStack(spacing: d * 0.016) {
-                NameLine(text: face.siteName, size: d * 0.074)
+                NameLine(text: face.siteName, size: d * 0.074, width: d * 0.62)
                 PictureBand(face: face, d: d, ink: ink)
                 DateLine(face: face, size: d * 0.09)
                 HStack(spacing: d * 0.03) {
@@ -333,8 +337,8 @@ private struct BilingualCancellation: View {
             }
             .opacity(face.impression.inkDensity)
             VStack(spacing: d * 0.014) {
-                NameLine(text: face.siteName, size: d * 0.07)
-                PictureBand(face: face, d: d, ink: ink, height: 0.25)
+                NameLine(text: face.siteName, size: d * 0.07, width: d * 0.62)
+                PictureBand(face: face, d: d, ink: ink, height: 0.27)
                 DateLine(face: face, size: d * 0.085)
                 if let french = face.localName {
                     Text(french)

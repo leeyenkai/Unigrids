@@ -74,6 +74,15 @@ makes the change. A release moves that block under a version heading with its da
 - Photos on a check-in: pick them from your library when you log a visit by hand, not only
   through photo import. Only the library's references are kept, and removing one from a
   visit leaves the photo in the library.
+- Reworked passport stamps. Every book shares one layout — the name across the top, a
+  picture in the centre, the date and the place's mark beneath — and each country has its
+  own face: a US ranger-station cancellation, a Japanese commemorative stamp, a Norwegian
+  postmark, a New Zealand hut-book stamp, an Australian bush-post cancellation and a
+  bilingual Canadian one. Every national park's stamp carries its own original drawing of
+  the park's signature landmark, animal or sky, chosen from its guide — Half Dome, Brooks
+  Falls bears, red-crowned cranes at Kushiro, musk oxen on Dovrefjell, a polar bear under
+  the aurora on Svalbard — and every other place a motif for its kind: a lighthouse, a
+  cannon, a forest.
 
 ### Changed
 
