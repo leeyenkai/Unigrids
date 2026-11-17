@@ -178,6 +178,16 @@ struct TrackCategoryTests {
         #expect(grades.map(\.band) == [.easy, .moderate, .strenuous, .veryStrenuous])
         #expect(TrailGrade(system: .parksCanadaDifficulty, grade: "Expert").band == nil)
     }
+
+    @Test("the Australian standard's grades read as \"Grade 3\" and into the bands")
+    func australian() {
+        let grades = ["1", "2", "3", "4", "5"].map {
+            TrailGrade(system: .australianWalkingTrackGrade, grade: $0)
+        }
+        #expect(grades[2].label == "Grade 3")
+        #expect(grades.map(\.band) == [.easy, .easy, .moderate, .strenuous, .veryStrenuous])
+        #expect(TrailGrade(system: .australianWalkingTrackGrade, grade: "6").label == nil)
+    }
 }
 
 @Suite("Visitor counts by fiscal year")

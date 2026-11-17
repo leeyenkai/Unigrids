@@ -21,6 +21,9 @@ public struct TrailGrade: Hashable, Sendable, Codable {
         /// Parks Canada's summer difficulty rating: Easy, Moderate, Difficult, Most
         /// difficult.
         case parksCanadaDifficulty
+        /// The Australian Walking Track Grading System's grades 1 to 5, as Queensland
+        /// publishes them ("Track class 3 to AS 2156.1").
+        case australianWalkingTrackGrade
     }
 
     public let system: System
@@ -50,6 +53,8 @@ public struct TrailGrade: Hashable, Sendable, Codable {
             return Self.trackCategories[grade] == nil ? nil : grade
         case .parksCanadaDifficulty:
             return Self.parksCanadaRatings[grade] == nil ? nil : grade
+        case .australianWalkingTrackGrade:
+            return Self.australianGrades[grade] == nil ? nil : "Grade \(grade)"
         }
     }
 
@@ -76,6 +81,8 @@ public struct TrailGrade: Hashable, Sendable, Codable {
             return Self.trackCategories[grade]
         case .parksCanadaDifficulty:
             return Self.parksCanadaRatings[grade]
+        case .australianWalkingTrackGrade:
+            return Self.australianGrades[grade]
         }
     }
 
@@ -96,6 +103,13 @@ public struct TrailGrade: Hashable, Sendable, Codable {
         "Moderate": .moderate,
         "Difficult": .strenuous,
         "Most difficult": .veryStrenuous,
+    ]
+
+    /// The Australian standard's five grades, read into the catalogue's bands: 1 and 2
+    /// need no experience, 3 suits most fit walkers, 4 calls for experience and 5 for
+    /// specialised skills.
+    private static let australianGrades: [String: TrailDifficulty] = [
+        "1": .easy, "2": .easy, "3": .moderate, "4": .strenuous, "5": .veryStrenuous,
     ]
 
     private static let norwegianColours = [

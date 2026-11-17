@@ -393,6 +393,8 @@ extension TrailDetailScreen {
             + "Crown Copyright, CC BY 4.0. "
         case "parksCanada": "Trail line from Parks Canada's trails data, Open Government "
             + "Licence – Canada. "
+        case "qpws": "Trail line from the Queensland Parks and Wildlife Service's tracks "
+            + "data, © State of Queensland, CC BY 4.0. "
         default: "Trail line from the National Park Service's public trails data. "
         }
         // The US is measured on USGS 3DEP; abroad, on one global model for both countries.
