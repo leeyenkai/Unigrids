@@ -254,7 +254,7 @@ public enum TransportLayer: String, CaseIterable, Sendable, Codable, Identifiabl
 
     public func detail(withRailAbroad abroad: Bool) -> String {
         self == .amtrak && abroad
-            ? "Amtrak's routes, and Japan's and Norway's passenger railways, with their "
+            ? "Amtrak's routes, and the passenger railways abroad, with their "
             + "stations close up"
             : detail
     }

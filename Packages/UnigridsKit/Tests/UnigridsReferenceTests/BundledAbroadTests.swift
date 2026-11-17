@@ -19,7 +19,7 @@ struct BundledAbroadTests {
     }
 
     @Test("each country's national parks are all there, once", arguments: [
-        (Country.japan, 35), (Country.norway, 48),
+        (Country.japan, 35), (Country.norway, 48), (Country.newZealand, 13),
     ])
     func parkCounts(country: Country, expected: Int) {
         let parks = store.nationalParks.filter { $0.country == country }
@@ -29,6 +29,7 @@ struct BundledAbroadTests {
 
     @Test("each country's second tier ships whole", arguments: [
         (PlaceKind.quasiNationalPark, 58), (PlaceKind.protectedLandscape, 195),
+        (PlaceKind.conservationPark, 49),
     ])
     func secondTier(kind: PlaceKind, expected: Int) {
         #expect(store.places.count { $0.kind == kind } == expected)
@@ -81,7 +82,7 @@ struct BundledAbroadTests {
     }
 
     @Test("a place abroad carries its own country's region, zone and agency", arguments: [
-        Country.japan, Country.norway,
+        Country.japan, Country.norway, Country.newZealand,
     ])
     func noUSFallbacks(country: Country) {
         for place in places(in: country) {
@@ -138,6 +139,26 @@ extension BundledAbroadTests {
             let station = japan.first { $0.name.contains(name) && !($0.lines ?? []).isEmpty }
             #expect(station != nil, "\(name) is missing")
         }
+    }
+
+    /// Tongariro, gifted in 1887 and made a park by the Act of 1894, is the founding
+    /// year the guide gives; DOC's track categories ride on its tracks.
+    @Test("New Zealand's parks carry DOC's huts, graded tracks and te reo names")
+    func newZealand() throws {
+        let tongariro = try #require(store.place("nz-np-tongariro"))
+        #expect(tongariro.timeZoneID == "Pacific/Auckland")
+        #expect(tongariro.agency == .conservationDepartmentNZ)
+        let parks = store.nationalParks.filter { $0.country == .newZealand }
+        let withHuts = parks.count { park in
+            store.pointsOfInterest(in: park.id).contains { $0.kind == .hut }
+        }
+        #expect(withHuts == parks.count)
+        let graded = store.trails(in: tongariro.id).filter {
+            $0.publishedGrade?.system == .newZealandTrackCategory
+        }
+        #expect(!graded.isEmpty)
+        let westland = try #require(store.place("nz-np-westland-tai-poutini"))
+        #expect(westland.localNames.contains { $0.language == "mi" })
     }
 
     @Test("most of Japan's national parks list their huts")

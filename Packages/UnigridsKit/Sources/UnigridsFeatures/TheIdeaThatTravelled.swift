@@ -3,12 +3,13 @@ import UnigridsCore
 import UnigridsDesign
 import UnigridsReference
 
-// The homage the app is built on, told once Japan's or Norway's parks ship: the national
+// The homage the app is built on, told once parks abroad ship: the national
 // park idea began at Yellowstone and travelled (SPECIFICATION.md §1, ADR 0013).
 
 /// The idea in dates. Each one is checked: Yellowstone and Roosevelt's record from the
-/// NPS, Japan's dates from the Ministry of the Environment's own history of its parks,
-/// Rondane from the Norwegian Environment Agency.
+/// NPS, Tongariro's from the Department of Conservation and the Act of 1894, Japan's dates
+/// from the Ministry of the Environment's own history of its parks, Rondane from the
+/// Norwegian Environment Agency.
 enum TheIdeaThatTravelled {
     static let title = "The idea that travelled"
 
@@ -16,12 +17,14 @@ enum TheIdeaThatTravelled {
         + "Theodore Roosevelt, president from 1901 to 1909, made conservation national "
         + "policy: five national parks, eighteen national monuments and 150 national forests. "
         + "The National Park Service followed in 1916, and in 1977 it gave its brochures the "
-        + "black band and grid these guides are drawn in. The idea travelled. Japan passed "
-        + "its National Parks Act in 1931 and named its first three parks — Setonaikai, Unzen "
-        + "and Kirishima — on 16 March 1934. Norway made Rondane its first in 1962."
+        + "black band and grid these guides are drawn in. The idea travelled. New Zealand made "
+        + "Tongariro its first in 1894, on peaks Te Heuheu Tūkino IV had gifted in 1887. "
+        + "Japan passed its National Parks Act in 1931 and named its first three parks — "
+        + "Setonaikai, Unzen and Kirishima — on 16 March 1934. Norway made Rondane its first in 1962."
 
     static let milestones: [(year: String, text: String)] = [
         ("1872", "Yellowstone"),
+        ("1894", "Tongariro"),
         ("1916", "The National Park Service"),
         ("1934", "Setonaikai, Unzen, Kirishima"),
         ("1962", "Rondane"),
@@ -52,7 +55,7 @@ struct IdeaTimelineArt: View {
     }
 }
 
-/// Shown once to a reader who saw the welcome before Japan and Norway arrived: what is
+/// Shown once to a reader who saw the welcome before the parks abroad arrived: what is
 /// new, and why it still looks like an American park brochure.
 struct WorldWelcomeView: View {
     @Environment(\.unigrid) private var style
@@ -65,8 +68,8 @@ struct WorldWelcomeView: View {
                 number: 1,
                 title: TheIdeaThatTravelled.title,
                 text: TheIdeaThatTravelled.text
-                    + " Unigrids now has Japan's and Norway's national parks, each with a full "
-                    + "guide and a passport book of its own."
+                    + " Unigrids now has the national parks of Japan, Norway and New Zealand, "
+                    + "each with a full guide and a passport book of its own."
             ) {
                 IdeaTimelineArt()
             }

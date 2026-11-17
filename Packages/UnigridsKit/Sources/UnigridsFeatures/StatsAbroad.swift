@@ -114,8 +114,9 @@ struct NationalParksByCountry: View {
                 }
             }
             // The homage the app is built on: the idea began at Yellowstone.
-            Text("Yellowstone, in 1872, was the first national park. Japan named its "
-                + "first in 1934, and Norway in 1962.")
+            Text("Yellowstone, in 1872, was the first national park. New Zealand made "
+                + "Tongariro its first in 1894, Japan named its first in 1934, and Norway "
+                + "in 1962.")
                 .font(UnigridStyle.proseSmall)
                 .foregroundStyle(style.inkSecondary)
                 .fixedSize(horizontal: false, vertical: true)

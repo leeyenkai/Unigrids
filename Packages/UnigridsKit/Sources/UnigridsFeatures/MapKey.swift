@@ -235,7 +235,7 @@ struct MapKeySheet: View {
                         "Roads and railways from the US DOT National Transportation Atlas "
                             + "Database. US highways appear from regional zoom, Amtrak stations "
                             + "close up."
-                            + (hasAbroad ? " Railways in Japan and Norway from OpenStreetMap "
+                            + (hasAbroad ? " Railways abroad from OpenStreetMap "
                                 + "contributors, ODbL." : "")
                     )
                 }

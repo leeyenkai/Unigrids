@@ -122,8 +122,9 @@ public struct SettingsScreen: View {
                     value: NPSAlerts.isConfigured ? "On" : "Off, no NPS key"
                 )
                 if store.nationalParks.contains(where: { $0.country != .unitedStates }) {
-                    // JMA's and Varsom's warnings need no key, so they are on in every build.
-                    LabeledContent("Live warnings, Japan and Norway", value: "On")
+                    // JMA's, Varsom's and GeoNet's warnings need no key, so they are on in
+                    // every build.
+                    LabeledContent("Live warnings abroad", value: "On")
                 }
                 if let note = store.manifest.note {
                     Text(note)
@@ -328,8 +329,21 @@ struct Attribution: Identifiable {
                 + "boundaries from Natural Earth, public domain."
         ),
         Attribution(
+            name: "Department of Conservation, New Zealand",
+            terms: "New Zealand's national, conservation and forest parks, its tracks with "
+                + "their categories, huts, campsites and visitor centres, from DOC's open data "
+                + "under CC BY 4.0; edited by Unigrids. Guides are written for Unigrids from "
+                + "DOC's pages and others, named in each."
+        ),
+        Attribution(
+            name: "GeoNet and Stats NZ",
+            terms: "Volcanic alert levels from GeoNet, © Earth Sciences New Zealand, CC BY "
+                + "3.0 NZ; regional council boundaries from Stats NZ, hosted by Eagle "
+                + "Technology, CC BY 4.0."
+        ),
+        Attribution(
             name: "Copernicus GLO-30",
-            terms: "Elevation in Japan and Norway — trail profiles, each park's measured "
+            terms: "Elevation outside the US — trail profiles, each park's measured "
                 + "lowest and highest ground, relief on their offline park maps. © DLR e.V. "
                 + "2010–2014 and © Airbus Defence and Space GmbH 2014–2018, provided under "
                 + "COPERNICUS by the European Union and ESA; all rights reserved. The "
@@ -344,15 +358,15 @@ struct Attribution: Identifiable {
         ),
         Attribution(
             name: "Wikimedia Commons",
-            terms: "Photographs of state parks, monuments and refuges, and of Japan's and "
-                + "Norway's parks, each credited to its photographer under the licence shown "
+            terms: "Photographs of state parks, monuments and refuges, and of the parks "
+                + "abroad, each credited to its photographer under the licence shown "
                 + "with it."
         ),
         Attribution(
             name: "OpenStreetMap",
             terms: "Trail lines in Sequoia and Kings Canyon, in Japan, and in Norway's parks "
                 + "Turrutebasen does not cover; outlines of Japan's quasi-national "
-                + "parks; huts, railway stations and lines in Japan and Norway; and the roads "
+                + "parks; huts, railway stations and lines abroad; and the roads "
                 + "and water drawn in the offline park maps: © OpenStreetMap contributors, "
                 + "available under the Open Database Licence (ODbL)."
         ),
