@@ -109,6 +109,8 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- A park's notification tapped while the app was still waking opens its park once the app
+  is active, as a trip's already did.
 - "Share my parks" draws each country you have been to on its own map, Japan's parks on
   Japan's prefectures and Norway's on its counties, rather than all 146 parks over the US
   states.

@@ -250,6 +250,8 @@ public struct MapScreen: View {
             .task { await refreshAlerts() }
             .onAppear(perform: applyDebugLaunch)
             .onChange(of: router?.pending, initial: true) { takeRoute() }
+            // A notification tapped while the app was inactive is taken once it is active.
+            .onChange(of: scenePhase) { takeRoute() }
         }
     }
 
