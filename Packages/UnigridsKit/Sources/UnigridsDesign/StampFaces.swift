@@ -330,6 +330,10 @@ private struct BilingualCancellation: View {
     let d: CGFloat // swiftlint:disable:this identifier_name
     let ink: Color
 
+    private var wrapsFrench: Bool {
+        (face.localName?.count ?? 0) > 24
+    }
+
     var body: some View {
         ZStack {
             Group {
@@ -346,14 +350,21 @@ private struct BilingualCancellation: View {
             .opacity(face.impression.inkDensity)
             VStack(spacing: d * 0.014) {
                 NameLine(text: face.siteName, size: d * 0.07, width: d * 0.62)
-                PictureBand(face: face, d: d, ink: ink, height: 0.27)
+                // A French name long enough to take two lines takes its room from the
+                // picture, so the province line stays clear of the ring.
+                PictureBand(face: face, d: d, ink: ink, height: wrapsFrench ? 0.2 : 0.27)
                 DateLine(face: face, size: d * 0.085)
                 if let french = face.localName {
+                    // A long official name ("Parc national des Hautes-Terres-du-Cap-Breton")
+                    // takes two lines rather than being cut short.
                     Text(french)
-                        .font(.system(size: d * 0.056, weight: .regular).italic())
+                        .font(.system(size: d * 0.05, weight: .regular).italic())
                         .typesettingLanguage(Locale.Language(identifier: "fr"))
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.6)
+                        .multilineTextAlignment(.center)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.7)
+                        .frame(maxWidth: d * 0.6)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 HStack(spacing: d * 0.02) {
                     MarkLine(text: "\(face.stateCode) · Canada", size: d * 0.054, d: d)
