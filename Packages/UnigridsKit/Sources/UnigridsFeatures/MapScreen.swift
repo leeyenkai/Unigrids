@@ -252,6 +252,8 @@ public struct MapScreen: View {
                 // One fetch covers every Japanese park's volcanoes, for the map's badges.
                 let japan = store.nationalParks.filter { $0.country == .japan }
                 await alerts?.refreshJapan(japan.map { ($0, store.boundary(for: $0.id)) })
+                // Varsom answers by position: every Norwegian park, a few at a time.
+                await alerts?.refreshNorway(store.nationalParks.filter { $0.country == .norway })
             }
             .onAppear(perform: applyDebugLaunch)
             .onChange(of: router?.pending, initial: true) { takeRoute() }

@@ -109,6 +109,10 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- Varsom's avalanche danger badges show on the map for every Norwegian national park as
+  soon as the map opens, not only for a park whose page has been opened. The map asks for
+  all of them alike, a few at a time and at most hourly, so the requests say nothing about
+  which park you care about.
 - Trip reminders schedule the soonest 50 at a time, so iOS's limit of 64 waiting
   notifications no longer drops later reminders, arrivals or alerts without a word.
   Onboarding no longer says the log syncs through iCloud, which this build does not do;

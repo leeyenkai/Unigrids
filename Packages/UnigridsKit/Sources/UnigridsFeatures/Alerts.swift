@@ -352,6 +352,36 @@ public final class AlertsCenter {
         }
     }
 
+    /// Varsom's forecast for every Norwegian park given, for the map's badges: asked for
+    /// all of them alike, so the requests say nothing about which park a reader cares
+    /// about. Four at a time, and each park at most hourly.
+    func refreshNorway(_ parks: [Place]) async {
+        let stale = parks.filter { !isFresh($0.id) }
+        for start in stride(from: 0, to: stale.count, by: 4) {
+            let batch = stale[start ..< min(start + 4, stale.count)]
+            let answers = await withTaskGroup(of: (UnigridsID, [ParkAlert]?).self) { group in
+                for park in batch {
+                    let (id, centre) = (park.id, park.centre)
+                    group.addTask { await (id, try? VarsomAvalanche.alerts(at: centre)) }
+                }
+                var answers: [(UnigridsID, [ParkAlert]?)] = []
+                for await answer in group {
+                    answers.append(answer)
+                }
+                return answers
+            }
+            // Leaving the map is not Varsom failing.
+            guard !Task.isCancelled else { return }
+            for (id, alerts) in answers {
+                if let alerts {
+                    record(alerts, for: id)
+                } else {
+                    abroadFailed.insert(id)
+                }
+            }
+        }
+    }
+
     private func record(_ alerts: [ParkAlert], for id: UnigridsID) {
         abroad[id] = alerts.sorted { ($0.kind, $0.title) < ($1.kind, $1.title) }
         abroadUpdated[id] = Date()
