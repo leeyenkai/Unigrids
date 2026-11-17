@@ -1,3 +1,74 @@
+# 0.11.0 — New Zealand, Australia and Canada
+
+The brief, as ADR 0014 records it: add New Zealand, Australia and Canada at the depth Japan
+and Norway reached in 0.10.0 — every national park with a full guide, the second tier as
+pins and leaflets, a passport book each — with live warnings from each country's own
+services.
+Alongside: Japan's Shinkansen named by line, and the passport stamps reworked so that every
+national park carries its own picture. The model change is
+[ADR 0014](adr/0014-six-countries.md); the sources are
+[`sources-nz-au-ca.md`](sources-nz-au-ca.md); the assumptions taken are
+`SPECIFICATION.md` §17, items 27–36.
+
+## Built
+
+| Area | What changed | Specification |
+|---|---|---|
+| Model | Three countries, their subdivisions (New Zealand's regions and the Chatham Islands; Australia's states and territories and its island territories; Canada's provinces and territories), a time zone per subdivision, four agencies, four kinds of place; no user-data change | §13, ADR 0014 |
+| Data | 6,709 places. New Zealand: 13 national parks, 49 conservation and forest parks of 5 km² or more (DOC's Public Conservation Land). Canada: its 47 national parks and park reserves and Rouge National Urban Park (48, as Parks Canada lists them), 5 national marine conservation areas and 254 provincial and territorial parks of 100 km² or more (CPCAD). Australia: 51 national parks with a guide and 666 other national parks (CAPAD 2024). Every place in the three is outlined | §12, §16 |
+| Guides | 112 guides written for Unigrids from DOC's, Parks Canada's and the state and Commonwealth agencies' pages, then checked a second time claim by claim (in Canada 18 claims corrected or removed across 15 guides; in Australia 30 guides corrected); How this park works; Canada's French names under the English; Canada's attendance as "Visitors, 2025–26" (38 of 48 parks carry a figure) | §6 |
+| Which Australian parks | A fixed rule, recorded with each park's reason: the six Commonwealth parks, 34 state and territory parks within an Australian World Heritage property, and 11 agency flagships | §6, §17 item 27, ADR 0014 |
+| Facts | Founding years are the guides' alone (CAPAD's gazettal dates are not founding years); an area is left absent where the sources disagree. The parks that knowingly lack a year (7), an area (6) or three sights (3) are named with the reason in the bundled tests' `KnownGaps` | §6, §17 items 29–30 |
+| Trails | New Zealand: DOC's 610 tracks in 13 parks, 605 with DOC's track category. Canada: 1,357 trails in 32 parks, 498 from Parks Canada (425 with its rating) and the rest from OpenStreetMap. Australia: 1,261 trails in 47 parks, 240 from the Queensland Parks and Wildlife Service (192 with an Australian Walking Track Grading System grade) and the rest from OpenStreetMap. All measured on Copernicus GLO-30 | §8 |
+| Points | DOC's 258 huts and 78 campsites; Parks Canada's 335 campgrounds and 17 huts, with 19 more huts from OpenStreetMap; Australia's 498 campgrounds and 112 huts from OpenStreetMap. Visitor centres (12, 48 and 38) mostly from the guides, the rest from DOC's, Parks Canada's or OpenStreetMap's layers | §6 |
+| Kinds of place | Conservation parks and marine conservation areas as hexagons (conservation amber, water blue); state national parks and provincial parks as circles in the state-park violet; the palette stays at eleven colours. The map key says what each shape marks in each country shown | §5, ADR 0009 |
+| Map | The region bar gains New Zealand, Australia and Canada with their own shortcuts; the world view runs from Rakiura to Canada's Arctic islands. Rail: New Zealand's passenger lines (22 lines, 12 stations), VIA Rail (13 routes, 121 stations) and Australia's (98 lines, 493 stations), all from OpenStreetMap | §5 |
+| Shinkansen | Japan's ten Shinkansen lines named by line, not by train; shared track drawn once; Japan's other lines without their stops in their names | §5 |
+| Alerts | GeoNet's volcanic alert levels; Environment Canada's weather alerts and Avalanche Canada's forecasts; the fire services of New South Wales, Victoria, Queensland, Western Australia and Tasmania, and the NSW NPWS's park alerts. No key | §10 |
+| Passport | Three new books (New Zealand's three regions, Australia's eight, Canada's six); one stamp layout with six national faces; an original drawing for each of the 258 national parks and 16 shared motifs for every other place, authored as SVG path data in `Pipeline/content/emblems/`; past three books, the book is chosen from a menu | §9 |
+| Stats | National park grids and tile maps for New Zealand's regions, Australia's states and territories and Canada's provinces and territories | §11 |
+| Onboarding and icons | "The idea that travelled" gains Royal (1879), Banff (1885) and Tongariro (1894); three alternate icons — Aoraki/Mount Cook, Banff (Moraine Lake) and Cradle Mountain–Lake St Clair; the non-affiliation line names DOC, Parks Canada, Parks Australia and the state and territory agencies | §14 |
+| Pipeline | `--countries us,jp,no,nz,ca,au`; each park's measured lowest and highest ground kept in the raw store with a fingerprint of its outline, so a build without elevation tiles reuses it | §12 |
+| Offline | The pipeline builds a pack for any national park abroad; the Park maps for Tongariro, the Blue Mountains and Banff are being added and are not in the bundle yet | §8 |
+
+## Not yet built
+
+- **Track grades for New South Wales and Victoria.** Neither state publishes an open layer
+  of its tracks with their grades, so their parks' trails come from OpenStreetMap and show
+  the estimate.
+- **Live warnings for South Australia, the Northern Territory and the island territories.**
+  None publishes a feed a request can read; their parks say so rather than show an empty
+  list that would read as all clear.
+- **Aboriginal-language names** as `localNames` for Australia's parks. Only names that are
+  already the park's name (Uluṟu-Kata Tjuṯa, Budj Bim, Nitmiluk) show; a dual name the
+  agency uses beside the English one is not yet carried.
+- **Offline packs beyond the pilots.** One pilot per country (Tongariro, Blue Mountains and
+  Banff, being added); the other parks need on-demand delivery, which needs signing
+  (ADR 0010).
+- **Map flights across the world.** In the Simulator, choosing a country on the other side
+  of the world from the one on screen takes several seconds to settle. Not yet looked at on
+  a device.
+- Te Urewera is not on the map: since the Te Urewera Act 2014 it is not conservation land,
+  and DOC's layer does not carry it.
+- Ten Canadian parks carry no attendance figure: seven have no row in Parks Canada's
+  table, Mount Revelstoke and Glacier are counted together there, and Gros Morne has none
+  in this build. Sixteen have no trails in either Parks Canada's layer or OpenStreetMap.
+
+## Checked, and not checked
+
+- [x] The UnigridsKit suite, `swift test` at `cd7048c`: 384 tests passed, among them the
+      bundled tests that hold New Zealand to 13 national parks and 49 conservation parks,
+      Canada to 48 and 5, Australia to 51 and 666, and every national park to a year, an
+      area and three sights unless `KnownGaps` names it with a reason.
+- [x] Every figure in this section read from the bundled data or the pipeline's rules at
+      `cd7048c`.
+- [ ] `scripts/build.sh` and the pipeline's tests were not run for this note; the commits
+      that built each country say what they ran.
+- [ ] The new countries screen by screen on iPad, the Mac and at the largest
+      accessibility size, as 0.9.0 did for the US.
+- [ ] **On a signed device**, as in 0.9.0: arrival detection, notifications for warnings
+      abroad, background refresh.
+
 # 0.10.0 — Japan and Norway
 
 The owner's brief: grow from a guide to US public lands into a guide to the world's,
