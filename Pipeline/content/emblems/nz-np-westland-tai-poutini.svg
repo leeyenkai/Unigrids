@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="Franz Josef Glacier descending from the Alps into the rainforest" data-source="Guide sight: Franz Josef Glacier/Kā Roimata o Hine Hukatere, ending in rainforest less than 300 metres above the sea">
+  <path class="fill" d="M6 46 L6 26 L14 14 L20 20 L29 7 L36 16 L41 13 C42 22 41 32 38 40 C37 43 35 45 33 46 Z"/>
+  <path class="fill" d="M94 46 L94 22 L86 12 L79 17 L70 6 L63 15 L59 12 C58.5 22 60 32 63 40 C64 43 66 45 68 46 Z"/>
+  <path d="M43 21 C46 22.5 54 22.5 57 21 M41.5 30 C46 32 54 32 58.5 30 M40 38.5 C45 41 55 41 61 38.5"/>
+  <path class="fill" d="M6 50 C6 44.6 13.2 44.6 13.2 50 C13.2 41.6 22.6 41.6 22.6 50 C22.6 43.5 28.8 43.5 28.8 50 C28.8 43.8 37.1 43.8 37.1 50 C37.1 40.7 47.4 40.7 47.4 50 C47.4 42.4 54.7 42.4 54.7 50 C54.7 43.8 62.9 43.8 62.9 50 C62.9 44.4 69.2 44.4 69.2 50 C69.2 40.2 78.5 40.2 78.5 50 C78.5 44.6 85.7 44.6 85.7 50 C85.7 42.5 94 42.5 94 50 L94 54 L6 54 Z"/>
+  <path d="M6 55.5 H94"/>
+</svg>
