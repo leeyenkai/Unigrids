@@ -81,7 +81,7 @@ struct PassportRegionPage: View {
                 }
             }
         }
-        .onGeometryChange(for: Bool.self) { $0.size.width >= 760 } action: { isSpread = $0 }
+        .onGeometryChange(for: Bool.self) { $0.size.width >= 700 } action: { isSpread = $0 }
         .background(style.page)
         .navigationTitle(region.name)
         .toolbarTitleDisplayMode(.inline)
