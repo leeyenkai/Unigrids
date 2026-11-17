@@ -281,7 +281,10 @@ def _national_park(
     if fee := _fee_summary(fees):
         place_facts.setdefault("entranceFee", fee)
 
-    centre = coordinate(park) or {"latitude": row["centre"][0], "longitude": row["centre"][1]}
+    # Parks filed under one shared API record (Sequoia and Kings Canyon, as SEKI) would
+    # share its one coordinate, which lies in only one of them; each keeps its own.
+    own_centre = {"latitude": row["centre"][0], "longitude": row["centre"][1]}
+    centre = (coordinate(park) if api_code == code else None) or own_centre
     summary = content.get("summary")
     official = park.get("url") or f"https://www.nps.gov/{code.lower()}/"
     place = {
@@ -304,11 +307,14 @@ def _national_park(
     if hero:
         place["image"] = hero
 
-    pois = _sights(slug, place_id, content, mine(api.places_for(api_code)))
-    pois.extend(
-        _visitor_centres(slug, place_id, mine(api.visitor_centres_for(api_code)), api, api_code)
-    )
-    pois.extend(_campgrounds(slug, place_id, mine(api.campgrounds_for(api_code))))
+    # One set of identifiers across kinds: a sight and a campground both called Wonder
+    # Lake are two points of interest, and a log must be able to name each.
+    taken: dict[str, str] = {}
+    pois = _sights(slug, place_id, content, mine(api.places_for(api_code)), taken)
+    pois.extend(_visitor_centres(
+        slug, place_id, mine(api.visitor_centres_for(api_code)), api, api_code, taken
+    ))
+    pois.extend(_campgrounds(slug, place_id, mine(api.campgrounds_for(api_code)), taken))
 
     sources = [*content.get("sources", [])]
     if not any("nps.gov" in (source.get("url") or "") for source in sources):
@@ -354,9 +360,15 @@ def _national_park(
 
 
 def _sights(
-    slug: str, place_id: str, content: dict[str, Any], places: list[dict[str, Any]]
+    slug: str,
+    place_id: str,
+    content: dict[str, Any],
+    places: list[dict[str, Any]],
+    taken: dict[str, str] | None = None,
 ) -> list[dict[str, Any]]:
-    """The guide's ranked sights: Unigrids chooses them, the NPS places them."""
+    """The guide's ranked sights: Unigrids chooses them, the NPS places them. Each claims
+    its bare identifier in ``taken`` (identifier → kind), ahead of any facility."""
+    taken = {} if taken is None else taken
     by_title = {_normal(place.get("title") or ""): place for place in places}
     result = []
     for rank, sight in enumerate(content.get("sights", []), start=1):
@@ -370,8 +382,10 @@ def _sights(
         if location is None:
             print(f"    {place_id}: no location for sight {sight['name']!r}, left out")
             continue
+        poi_id = ids.poi_id(slug, sight["name"])
+        taken[poi_id] = sight.get("kind", "sight")
         poi: dict[str, Any] = {
-            "id": ids.poi_id(slug, sight["name"]),
+            "id": poi_id,
             "placeID": place_id,
             "kind": sight.get("kind", "sight"),
             "name": sight["name"],
@@ -392,18 +406,24 @@ def _sights(
 
 
 def _visitor_centres(
-    slug: str, place_id: str, centres: list[dict[str, Any]], api: _NPSData, code: str
+    slug: str,
+    place_id: str,
+    centres: list[dict[str, Any]],
+    api: _NPSData,
+    code: str,
+    taken: dict[str, str] | None = None,
 ) -> list[dict[str, Any]]:
     stamps = api.stamp_labels_for(code)
     result = []
-    seen = set()
+    taken = {} if taken is None else taken
     for centre in sorted(centres, key=lambda c: c.get("name") or ""):
         location = coordinate(centre)
         name = (centre.get("name") or "").strip()
-        poi_id = ids.poi_id(slug, name)
-        if not location or not name or poi_id in seen:
+        if not location or not name:
             continue
-        seen.add(poi_id)
+        poi_id = _facility_id(slug, name, "visitorCentre", "visitor centre", taken)
+        if poi_id is None:
+            continue
         normal = _normal(name)
         has_stamp = str(centre.get("isPassportStampLocation")).lower() in ("1", "true") or any(
             label and (normal in label or label in normal) for label in stamps
@@ -426,16 +446,22 @@ def _visitor_centres(
     return result
 
 
-def _campgrounds(slug: str, place_id: str, camps: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def _campgrounds(
+    slug: str,
+    place_id: str,
+    camps: list[dict[str, Any]],
+    taken: dict[str, str] | None = None,
+) -> list[dict[str, Any]]:
     result = []
-    seen = set()
+    taken = {} if taken is None else taken
     for camp in camps:
         location = coordinate(camp)
         name = (camp.get("name") or "").strip()
-        poi_id = ids.poi_id(slug, name)
-        if not location or not name or poi_id in seen:
+        if not location or not name:
             continue
-        seen.add(poi_id)
+        poi_id = _facility_id(slug, name, "campground", "campground", taken)
+        if poi_id is None:
+            continue
         result.append({
             "id": poi_id,
             "placeID": place_id,
@@ -447,6 +473,25 @@ def _campgrounds(slug: str, place_id: str, camps: list[dict[str, Any]]) -> list[
             "hasStamp": False,
         })
     return result
+
+
+def _facility_id(
+    slug: str, name: str, kind: str, qualifier: str, taken: dict[str, str]
+) -> str | None:
+    """A visitor centre's or campground's identifier, claimed in ``taken``.
+
+    The bare one (``poi-denali-wonder-lake``) unless a sight or another kind of facility
+    holds it, then one qualified by its kind (``poi-denali-wonder-lake-campground``). A
+    second record of the same kind and name is a duplicate, and gets None.
+    """
+    for candidate in (ids.poi_id(slug, name), ids.poi_id(slug, f"{name} {qualifier}")):
+        holder = taken.get(candidate)
+        if holder is None:
+            taken[candidate] = kind
+            return candidate
+        if holder == kind:
+            return None
+    return None
 
 
 def _camping_lines(camps: list[dict[str, Any]]) -> list[str]:

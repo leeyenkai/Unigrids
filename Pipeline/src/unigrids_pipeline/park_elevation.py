@@ -28,6 +28,11 @@ URL = (
 SOURCE = "park-elevation"
 FILE = "extremes.json"
 NOTE = "Highest and lowest ground measured from USGS 3DEP elevation within the park boundary"
+# Where the park's own material gives one figure and the other is measured, the note says
+# which: the app shows one note under the whole range, and a published summit must not
+# read as Unigrids' measurement.
+NOTE_HIGHEST = "Highest point measured by Unigrids from USGS 3DEP"
+NOTE_LOWEST = "Lowest point measured by Unigrids from USGS 3DEP"
 
 TERMS = SourceTerms(
     identifier="usgs-3dep-statistics",
@@ -114,17 +119,21 @@ def attach(places: list[dict[str, Any]], directory: Path | None) -> int:
         if not entry:
             continue
         facts = place.setdefault("facts", {})
-        added = False
-        if "highestElevationMetres" not in facts:
+        measured_high = "highestElevationMetres" not in facts
+        measured_low = "lowestElevationMetres" not in facts
+        if measured_high:
             facts["highestElevationMetres"] = round(entry["max"])
-            added = True
-        if "lowestElevationMetres" not in facts:
+        if measured_low:
             # Within a few metres of zero is the sea, not a measured hollow.
             low = round(entry["min"])
             facts["lowestElevationMetres"] = 0 if -3 <= low <= 3 else low
-            added = True
-        if added:
+        if measured_high and measured_low:
             facts["elevationNote"] = NOTE
+        elif measured_high:
+            facts["elevationNote"] = NOTE_HIGHEST
+        elif measured_low:
+            facts["elevationNote"] = NOTE_LOWEST
+        if measured_high or measured_low:
             filled += 1
     print(f"    park-elevation: {filled} parks' ranges measured")
     return filled

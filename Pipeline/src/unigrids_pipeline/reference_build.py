@@ -27,6 +27,7 @@ from __future__ import annotations
 
 import json
 import os
+from collections import Counter
 from collections.abc import Sequence
 from datetime import UTC, date, datetime
 from typing import Any
@@ -172,6 +173,10 @@ def merge(shares: Sequence[Contribution]) -> Contribution:
             _join(merged.climate, share.climate, "climate")
         merged.expects_summary |= share.expects_summary
         merged.registries.extend(share.registries)
+    # A point of interest is named in a log by its identifier alone, so it must name one.
+    counts = Counter(poi["id"] for poi in merged.pois)
+    if shared := sorted(identifier for identifier, count in counts.items() if count > 1):
+        raise ValueError(f"points of interest share an identifier: {', '.join(shared[:5])}")
     return merged
 
 

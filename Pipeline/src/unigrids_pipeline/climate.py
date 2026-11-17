@@ -13,6 +13,7 @@ Open-Meteo is free for non-commercial use and its data is CC BY 4.0, credited in
 
 from __future__ import annotations
 
+import calendar
 import json
 import time
 from collections.abc import Mapping
@@ -125,6 +126,7 @@ def _monthly(daily: dict[str, Any]) -> list[list[float]] | None:
     low_sum = [0.0] * 12
     counts = [0] * 12
     precipitation: dict[tuple[int, int], float] = {}
+    measured_days: dict[tuple[int, int], int] = {}
     for index, day in enumerate(times):
         year, month = int(day[:4]), int(day[5:7])
         high = highs[index] if index < len(highs) else None
@@ -136,15 +138,23 @@ def _monthly(daily: dict[str, Any]) -> list[list[float]] | None:
         value = rain[index] if index < len(rain) else None
         if value is not None:
             precipitation[(year, month)] = precipitation.get((year, month), 0.0) + value
+            measured_days[(year, month)] = measured_days.get((year, month), 0) + 1
     if not all(counts):
         return None
-    years = {year for year, _ in precipitation}
-    months = []
-    for month in range(12):
-        totals = [precipitation.get((year, month + 1), 0.0) for year in years]
-        months.append([
+    # A month's total counts only when every one of its days was measured: a missing day
+    # is not a dry one. The table has no way to show temperatures without precipitation,
+    # so a calendar month with no complete year leaves the place without a table.
+    totals: list[list[float]] = [[] for _ in range(12)]
+    for (year, month), total in precipitation.items():
+        if measured_days[(year, month)] == calendar.monthrange(year, month)[1]:
+            totals[month - 1].append(total)
+    if not all(totals):
+        return None
+    return [
+        [
             round(high_sum[month] / counts[month], 1),
             round(low_sum[month] / counts[month], 1),
-            round(sum(totals) / len(totals), 1) if totals else 0.0,
-        ])
-    return months
+            round(sum(totals[month]) / len(totals[month]), 1),
+        ]
+        for month in range(12)
+    ]
