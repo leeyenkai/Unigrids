@@ -5,7 +5,8 @@
 <h1 align="center">Unigrids</h1>
 
 <p align="center">
-  Plan, explore and log visits to public lands in the US, Japan and Norway, all on one map.<br>
+  Plan, explore and log visits to public lands in the US, Japan, Norway, New Zealand,<br>
+  Australia and Canada, all on one map.<br>
   A free, private, native app for iPhone, iPad and Mac.
 </p>
 
@@ -26,28 +27,36 @@
 
 ## Features
 
-- **Public lands on one map.** 5,623 places in three countries. In the US, every NPS unit,
+- **Public lands on one map.** 6,709 places in six countries. In the US, every NPS unit,
   national forest and grassland, wildlife refuge, BLM monument and conservation area,
   National Natural Landmark, scenic byway and state park; Japan's national and
   quasi-national parks; Norway's national parks, protected landscapes and larger nature
-  reserves. Each is marked by type, with highway and rail layers.
-- **A guide for every national park** — 63 in the US, 35 in Japan, 48 in Norway — laid
-  out like the NPS Unigrid brochures, with the official brochure where one is published,
-  a 3D view and, for 129 parks, a measured trail catalogue.
+  reserves; New Zealand's national, conservation and forest parks; Canada's national
+  parks, marine conservation areas and larger provincial parks; Australia's national
+  parks. Each is marked by type, with highway and rail layers.
+- **258 national park guides** — 63 in the US, 35 in Japan, 48 in Norway, 13 in New
+  Zealand, 48 in Canada and 51 of Australia's best known — laid out like the NPS Unigrid
+  brochures, with the official documents where they are published, a 3D view and, for
+  227 parks, a measured trail catalogue, with each agency's own grades where it
+  publishes them.
 - **Trips** of parks, sights, trails and lodging, with drive times, forecasts, live
-  closures and warnings (the NPS's, Japan's volcano warnings and Norway's avalanche
-  forecasts) and notifications for parks you are about to visit.
+  closures and warnings (the NPS's; Japan's volcano warnings and Norway's avalanche
+  forecasts; GeoNet's volcanic alert levels; Environment Canada's alerts and Avalanche
+  Canada's forecasts; Australia's state fire services and the NSW parks service) and
+  notifications for parks you are about to visit.
 - **A visit log** you fill by hand, on arrival or from Photos. It stamps a passport book
-  per country, turns into stats and share cards, and exports in full.
+  per country — each national park with its own drawing on the stamp — turns into stats
+  and share cards, and exports in full.
 - **Offline park maps** for Zion, Acadia, Yellowstone, Great Smoky Mountains,
-  Chubu-Sangaku and Jotunheimen.
+  Chubu-Sangaku and Jotunheimen; Tongariro, the Blue Mountains and Banff are being added.
 - **Private by design.** No accounts, no analytics and no server of its own. Your log
   stays on your device, and syncs only through your own iCloud.
 
 ## Status
 
 Version **0.9.0**, the production pass, is the latest release. `main` carries 0.10.0,
-which adds Japan and Norway; offline maps for the other parks follow. iCloud sync and WeatherKit wait on code signing, so this build keeps the log on
+which adds Japan and Norway, and 0.11.0, which adds New Zealand, Australia and Canada;
+offline maps for the other parks follow. iCloud sync and WeatherKit wait on code signing, so this build keeps the log on
 the device. It is not on the App Store yet; build it from source. What has and has not been checked is in
 [`docs/mvp-scope.md`](docs/mvp-scope.md); what changed is in [`CHANGELOG.md`](CHANGELOG.md).
 
@@ -67,8 +76,8 @@ Or open `App/Unigrids.xcodeproj` and run the `Unigrids` scheme.
 
 Live park alerts are optional: put a free [NPS API key](https://www.nps.gov/subjects/developer/get-started.htm)
 in `.env` as `NPS_API_KEY=…` and run `scripts/write-secrets.sh` before building. Without
-it the app runs normally and US parks show no alerts panel. Japan's and Norway's warning
-services need no key.
+it the app runs normally and US parks show no alerts panel. The warning services abroad
+need no key.
 
 ## How it is built
 
@@ -103,6 +112,8 @@ The code is [MIT licensed](LICENSE). Bundled NPS material and third-party open d
 their own terms, listed with every data source in [`NOTICE.md`](NOTICE.md).
 
 Unigrids is an independent project and is **not affiliated with or endorsed by the
-National Park Service, Japan's Ministry of the Environment or the Norwegian Environment
-Agency**. It uses public-domain NPS material and never the NPS arrowhead, Japan's national
-park mark or the Norwegian national park brand.
+National Park Service, Japan's Ministry of the Environment, the Norwegian Environment
+Agency, New Zealand's Department of Conservation, Parks Canada, Parks Australia or the
+Australian state and territory park agencies**. It uses public-domain NPS material and
+never the NPS arrowhead, Japan's national park mark, the Norwegian national park brand,
+DOC's logo, Parks Canada's beaver or wordmark, or any Australian park agency's logo.

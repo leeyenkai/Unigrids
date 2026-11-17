@@ -10,13 +10,15 @@ absent, which is correct.
 
 | File or directory | Holds |
 |---|---|
-| `national-parks.json` | The 63 national parks: id, name, states, centre, NPS park code (and API code where parks share one, as Sequoia and Kings Canyon do), themes |
+| `national-parks.json` | The US's 63 national parks: id, name, states, centre, NPS park code (and API code where parks share one, as Sequoia and Kings Canyon do), themes |
 | `national-park-facts.json` | Date established, area and 2025 recreation visits for each park, with sources |
 | `state-parks.json`, `federal-sites.json` | The curated state parks, monuments and refuges: PAD-US name patterns for the outline, Wikipedia article for the photograph, and a written summary |
 | `themes.json` | Theme tags |
 | `guides/np-*.json` | One guide per national park: summary, at-a-glance extras, story, sights (matched to NPS places by name, or given a location), plan your visit, chronology, safety, regulations, sources. A `heroOverride` photograph, chosen by hand where the NPS record has none Unigrids may reuse, states its `credit` and its `licence` as published; the build refuses one without them |
 | `curated/` | Permit and timed-entry rules, seasonal notes, passport region assignments, theme overrides, sight rankings |
 | `ids/places.json` | The US's identifier registry: source key → place identifier, so a renamed record keeps its identifier |
+| `countries/<code>/` | Each country after the US — `jp`, `no`, `nz`, `ca`, `au` — with its park list (`national-parks.json`) and one guide per national park (`guides/`); see `countries/README.md` |
+| `emblems/` | The stamp pictures: one original drawing per national park in all six countries (258, named for the park's ID) and 16 shared motifs for every other place (`motif-lighthouse.svg`), each one ink on a 100 × 60 canvas in SVG path data the app can draw. The build checks them and writes `emblems.json` |
 | `ids/<country>/` | The same for a country added after the US, one file each for `places`, `pois` and `trails`, keyed on each source's own identifier (`osm:node/123`, `turrutebasen:1234`) |
 
 Two of these need curation that does not exist yet, both tracked in `SPECIFICATION.md`
