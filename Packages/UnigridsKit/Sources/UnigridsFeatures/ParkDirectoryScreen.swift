@@ -19,7 +19,17 @@ public struct ParkDirectoryScreen: View {
             rawValue
         }
 
+        /// Short enough for four segments across an iPhone.
         var name: String {
+            switch self {
+            case .nationalParks: "National"
+            case .everything: "All"
+            case .wishlist: "Wishlist"
+            case .trails: "Trails"
+            }
+        }
+
+        var spokenName: String {
             switch self {
             case .nationalParks: "National parks"
             case .everything: "Every place"
@@ -177,7 +187,11 @@ public struct ParkDirectoryScreen: View {
                     .listRowBackground(Color.clear)
 
                     Picker("Show", selection: $scope) {
-                        ForEach(Scope.allCases) { Text($0.name).tag($0) }
+                        ForEach(Scope.allCases) { scope in
+                            Text(scope.name)
+                                .accessibilityLabel(scope.spokenName)
+                                .tag(scope)
+                        }
                     }
                     .pickerStyle(.segmented)
                     .labelsHidden()
@@ -374,7 +388,7 @@ struct ParkGrid: View {
                             tint,
                             style: StrokeStyle(
                                 lineWidth: 1.5,
-                                dash: status == .planned ? [3, 2] : []
+                                dash: status.isRinged ? [3, 2] : []
                             )
                         )
                     }
