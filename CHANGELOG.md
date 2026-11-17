@@ -87,6 +87,10 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- A passport region page with many places and a long log no longer stalls while it draws;
+  its America 250 count matches the stamps it shows. A reminder's date is read as a
+  Gregorian date on a phone set to the Buddhist or Japanese calendar, and saving one whose
+  time has passed says so rather than blaming notifications.
 - Arrivals noticed by visit detection are remembered only for the week the once-a-week
   rule needs, and are forgotten when detection is turned off or you delete your data,
   which also removes the backup files it wrote for sharing. Cancelling a stamp while it

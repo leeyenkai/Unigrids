@@ -33,8 +33,12 @@ public struct PassportScreen: View {
         Set(stamps.map(\.place))
     }
 
+    /// The sealed stamps the page can show: one whose place has left the data is not on
+    /// the page, so it is not in the count either.
     private var stampsIn2026: [Stamp] {
-        stamps.filter { $0.hasAmerica250Seal(at: store.place($0.place)) }
+        stamps.filter { stamp in
+            store.place(stamp.place).map { stamp.hasAmerica250Seal(at: $0) } ?? false
+        }
     }
 
     @State private var path = NavigationPath()
@@ -222,23 +226,29 @@ struct PassportRegionPage: View {
         store.placesByPassportRegion()[region] ?? []
     }
 
+    /// The stamps by place, built once per redraw and handed down: built per slot and per
+    /// sort comparison, a region of a thousand places with a long log stalled the page.
     private var stampsByPlace: [UnigridsID: [Stamp]] {
         Dictionary(grouping: stamps, by: \.place)
     }
 
     var body: some View {
+        let byPlace = stampsByPlace
         let parks = places.filter { $0.tier == .nationalPark }
         let units = places.filter { $0.tier == .npsUnit }
+        let firsts = byPlace.mapValues { $0.map(\.date).min() ?? .distantFuture }
         let beyond = places
-            .filter { !$0.isNationalParkSystemSite && stampsByPlace[$0.id]?.isEmpty == false }
-            .sorted { first($0) < first($1) }
+            .filter { !$0.isNationalParkSystemSite && byPlace[$0.id]?.isEmpty == false }
+            .sorted { (firsts[$0.id] ?? .distantFuture) < (firsts[$1.id] ?? .distantFuture) }
         ScrollView {
             VStack(alignment: .leading, spacing: 28) {
-                titlePage(npsSites: parks + units)
-                slotSection("National parks", places: parks)
-                slotSection("Other NPS sites", places: units)
+                titlePage(npsSites: parks + units, byPlace: byPlace)
+                slotSection("National parks", places: parks, byPlace: byPlace)
+                slotSection("Other NPS sites", places: units, byPlace: byPlace)
                 if !beyond.isEmpty {
-                    slotSection(region.country.passportBeyondTitle, places: beyond)
+                    slotSection(
+                        region.country.passportBeyondTitle, places: beyond, byPlace: byPlace
+                    )
                 }
             }
             .padding(.bottom, 20)
@@ -319,12 +329,8 @@ struct PassportRegionPage: View {
         return CGImageDestinationFinalize(destination) ? url : nil
     }
 
-    private func first(_ place: Place) -> Date {
-        stampsByPlace[place.id]?.map(\.date).min() ?? .distantFuture
-    }
-
-    private func titlePage(npsSites: [Place]) -> some View {
-        let stamped = npsSites.count { stampsByPlace[$0.id]?.isEmpty == false }
+    private func titlePage(npsSites: [Place], byPlace: [UnigridsID: [Stamp]]) -> some View {
+        let stamped = npsSites.count { byPlace[$0.id]?.isEmpty == false }
         return VStack(alignment: .leading, spacing: 0) {
             BandHeader(
                 region.name,
@@ -339,7 +345,11 @@ struct PassportRegionPage: View {
     }
 
     @ViewBuilder
-    private func slotSection(_ title: String, places: [Place]) -> some View {
+    private func slotSection(
+        _ title: String,
+        places: [Place],
+        byPlace: [UnigridsID: [Stamp]]
+    ) -> some View {
         if !places.isEmpty {
             VStack(alignment: .leading, spacing: 16) {
                 SectionHead(title, detail: "\(places.count)")
@@ -349,7 +359,10 @@ struct PassportRegionPage: View {
                     spacing: 24
                 ) {
                     ForEach(places.flatMap(slots)) { slot in
-                        slotView(slot)
+                        slotView(
+                            slot,
+                            stamps: slot.impressions(among: byPlace[slot.place.id] ?? [])
+                        )
                     }
                 }
                 .padding(.horizontal, 16)
@@ -369,14 +382,9 @@ struct PassportRegionPage: View {
         }
     }
 
-    /// A slot's impressions, latest first, by `PassportSlotRule`.
-    private func impressions(in slot: PassportSlot) -> [Stamp] {
-        slot.impressions(among: stampsByPlace[slot.place.id] ?? [])
-    }
-
+    /// A slot and its impressions, latest first, by `PassportSlotRule`.
     @ViewBuilder
-    private func slotView(_ slot: PassportSlot) -> some View {
-        let slotStamps = impressions(in: slot)
+    private func slotView(_ slot: PassportSlot, stamps slotStamps: [Stamp]) -> some View {
         let place = slot.place
         VStack(spacing: 8) {
             if let latest = slotStamps.first {

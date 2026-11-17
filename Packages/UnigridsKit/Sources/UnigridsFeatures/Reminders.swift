@@ -74,6 +74,8 @@ enum ReminderScheduler {
             [.year, .month, .day, .hour, .minute], from: request.date
         )
         parts.timeZone = request.timeZone
+        // The year is a Gregorian one: read in a Buddhist or Japanese calendar it is not.
+        parts.calendar = UnigridsCalendar.gregorian(request.timeZone)
         let notification = UNNotificationRequest(
             identifier: prefix + request.id.uuidString,
             content: content,
@@ -368,7 +370,9 @@ struct ReminderEditor: View {
         if await ReminderScheduler.schedule(saved) {
             dismiss()
         } else {
-            notice = "Saved, but notifications are off for Unigrids, so it will not alert you. "
+            notice = saved.date <= Date()
+                ? "Saved. Its time has passed, so it will not alert you."
+                : "Saved, but notifications are off for Unigrids, so it will not alert you. "
                 + "Turn them on in Settings."
             try? await Task.sleep(for: .seconds(2.5))
             dismiss()
