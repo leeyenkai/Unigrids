@@ -6,15 +6,25 @@ them with what the source publishes: a name, a designation, a boundary, an area 
 state. That is a state park system's own unit list, so it holds state beaches, historic
 parks, natural areas and recreation areas as well as parks by that name.
 
+PAD-US also designates local land 'SP': Buffalo's traffic triangles and medians, town
+playgrounds, county and private parcels. A record counts only when a state body manages
+it or its own name carries a state designation (``is_state_park_record``), so a
+county-run "Scales Lake State Beach" stays and the City of Buffalo's "4Th St" does not.
+
 PAD-US is a compilation, and its unit names show it. A park is often split across
 several records ("Bonny Lake State Park" and "Bonny Lake State Park/South Republican
 State Wildlife Area"), so records are merged on a cleaned name within a state. Units
 PAD-US marks as closed to the public are left out: a pin is an invitation.
+
+PAD-US also files land by state, so a park that reaches a state line can leave a sliver
+under its own name in the neighbouring state's file (``fold_slivers``). That sliver is
+part of the park beside it, not a second park.
 """
 
 from __future__ import annotations
 
 import json
+import math
 import re
 from collections.abc import Iterable
 from pathlib import Path
@@ -76,8 +86,41 @@ DESIGNATIONS = (
 # Units PAD-US marks closed to the public (``XA``).
 CLOSED = "XA"
 
+# PAD-US manager names (``Mang_Name``) for a state body: state parks and recreation,
+# natural resources, conservation, fish and wildlife, land, other state, state land
+# board, and a state record whose agency is not known.
+STATE_MANAGERS = frozenset({"SPR", "SDNR", "SDC", "SFW", "SDOL", "OTHS", "SLB", "UNK"})
+
+# What PAD-US writes in ``Loc_Mang`` when it does not know the manager.
+NO_MANAGER = frozenset({"", "unknown", "unk"})
+
 # Outline generalisation, as for the other non-park tiers (about 110 m).
 TOLERANCE = 0.0011
+
+# A unit is a sliver of a same-named park in another state when it lies within this
+# distance of that park...
+SLIVER_GAP_M = 1_000.0
+# ...and either has no area of its own, or is at most this share of the park's area and
+# is managed by the park's manager or by an agency that names the park's state. Twin
+# parks across a line (Bear Lake, Pymatuning, White Clay Creek, Mayo River) are each run
+# by their own state, so the manager is what tells them apart from a sliver.
+SLIVER_SHARE = 0.02
+
+# The names an agency uses for its state ("NJ Department of…", "State of Minnesota").
+STATE_NAMES = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
+    "CO": "Colorado", "CT": "Connecticut", "DC": "District of Columbia", "DE": "Delaware",
+    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois",
+    "IN": "Indiana", "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana",
+    "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts", "MI": "Michigan",
+    "MN": "Minnesota", "MS": "Mississippi", "MO": "Missouri", "MT": "Montana",
+    "NE": "Nebraska", "NV": "Nevada", "NH": "New Hampshire", "NJ": "New Jersey",
+    "NM": "New Mexico", "NY": "New York", "NC": "North Carolina", "ND": "North Dakota",
+    "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon", "PA": "Pennsylvania",
+    "RI": "Rhode Island", "SC": "South Carolina", "SD": "South Dakota", "TN": "Tennessee",
+    "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia", "WA": "Washington",
+    "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming",
+}
 
 
 def fetch(version: str) -> Path:
@@ -121,8 +164,12 @@ def build(
     features = json.loads(path.read_text()).get("features") or []
     taken = {place["id"] for place in places}
     curated_patterns = _curated_patterns(curated)
+    units = merge(features, curated_patterns)
+    slivers = fold_slivers(units, _curated_units(curated, places, boundaries))
+    if slivers:
+        print(f"    state parks: {len(slivers)} slivers across a state line joined to their park")
     added = 0
-    for key, unit in sorted(merge(features, curated_patterns).items()):
+    for key, unit in sorted(units.items()):
         place, entry = _place(unit)
         identifier = registry.resolve(key, place["id"], qualifier=unit["state"])
         if identifier in taken:
@@ -150,7 +197,7 @@ def merge(
             continue
         state = (properties.get("State_Nm") or "").strip().upper()
         raw = (properties.get("Unit_Nm") or properties.get("Loc_Nm") or "").strip()
-        if not state or not raw:
+        if not state or not raw or not is_state_park_record(properties):
             continue
         if any(p.fullmatch(raw) for p in curated_patterns.get(state, [])):
             continue
@@ -167,11 +214,174 @@ def merge(
                 "state": state,
                 "polygons": [],
                 "acres": 0.0,
-                "manager": (properties.get("Loc_Mang") or "").strip() or None,
+                "manager": _manager(properties.get("Loc_Mang")),
             },
         )
         unit["polygons"].extend(outline.polygons_of(feature.get("geometry")))
         unit["acres"] += float(properties.get("GIS_Acres") or 0)
+    return units
+
+
+def fold_slivers(
+    units: dict[str, dict[str, Any]],
+    curated: dict[str, dict[str, Any]] | None = None,
+) -> dict[str, str]:
+    """Join each sliver PAD-US filed across a state line to the park it belongs to.
+
+    A sliver is a unit named as a park in another state, lying within ``SLIVER_GAP_M`` of
+    it, that has no area of its own or is a small share of the park's and is run by the
+    park's manager or by an agency of the park's state (``_is_sliver``). It is removed from
+    ``units``; its outline and acres join the park's when the park is in ``units``, and
+    it is simply left out when the park is a curated one (``curated``, keyed by place
+    identifier), whose outline is drawn from its own records. The park keeps its states:
+    a sliver is not a claim that the park reaches the next state.
+
+    Returns sliver key → the key (or curated identifier) of the park it joined.
+    """
+    curated = curated or {}
+    candidates = {**units, **curated}
+    by_name: dict[str, list[str]] = {}
+    for key, unit in candidates.items():
+        by_name.setdefault(_full_name(unit), []).append(key)
+
+    parent: dict[str, str] = {}
+    for key, unit in sorted(units.items()):
+        beside = [
+            (_gap_m(unit["polygons"], candidates[other]["polygons"]), -candidates[other]["acres"],
+             other)
+            for other in by_name[_full_name(unit)]
+            if other != key and _is_sliver(unit, candidates[other])
+        ]
+        beside = [entry for entry in beside if entry[0] <= SLIVER_GAP_M]
+        if beside:
+            parent[key] = min(beside)[2]
+
+    def park_of(key: str) -> str:
+        # A sliver of a sliver joins the park at the end of the chain. Each step is to a
+        # strictly larger unit, so the chain ends.
+        while key in parent:
+            key = parent[key]
+        return key
+
+    joined: dict[str, str] = {}
+    for key in sorted(parent):
+        park_key = park_of(key)
+        sliver = units.pop(key)
+        joined[key] = park_key
+        if park_key in units:
+            park = units[park_key]
+            park["polygons"].extend(sliver["polygons"])
+            park["acres"] += sliver["acres"]
+    return joined
+
+
+def _full_name(unit: dict[str, Any]) -> str:
+    return f"{unit['name']} {unit['designation']}".casefold()
+
+
+def _is_sliver(unit: dict[str, Any], park: dict[str, Any]) -> bool:
+    """Whether ``unit`` could be a sliver of ``park`` by state, area and manager; distance is
+    checked by the caller, as it is the costly test."""
+    states = park.get("states") or [park["state"]]
+    if unit["state"] in states or park["acres"] <= unit["acres"]:
+        return False
+    if unit["acres"] < 1:
+        return True
+    if unit["acres"] > SLIVER_SHARE * park["acres"]:
+        return False
+    manager = (unit.get("manager") or "").strip()
+    park_manager = (park.get("manager") or "").strip()
+    if manager.casefold() not in ("", "unknown") and manager.casefold() == park_manager.casefold():
+        return True
+    return any(_names_state(manager, state) for state in states)
+
+
+def _names_state(manager: str, state: str) -> bool:
+    """Whether an agency's name names a state: "NJ Department of…", "New York State"."""
+    if not manager:
+        return False
+    if re.search(rf"\b{re.escape(state)}\b", manager):
+        return True
+    name = STATE_NAMES.get(state)
+    if not name:
+        return False
+    # "Virginia" inside "West Virginia" names the other state.
+    guard = r"(?<!West )" if state == "VA" else ""
+    return re.search(rf"{guard}\b{re.escape(name)}\b", manager, re.IGNORECASE) is not None
+
+
+def _gap_m(first: list[outline.Polygon], second: list[outline.Polygon]) -> float:
+    """The ground distance between two outlines in metres, 0 where they touch or overlap,
+    infinite where either is empty. Flat-Earth, which is plenty within a kilometre."""
+    box_a, box_b = outline.bbox(first), outline.bbox(second)
+    if box_a is None or box_b is None:
+        return math.inf
+    latitude = (box_a[0] + box_a[2]) / 2
+    metres_x = 111_320.0 * math.cos(math.radians(latitude))
+    metres_y = 110_574.0
+    # Boxes further apart than the gap that matters need no closer look.
+    margin_lat = SLIVER_GAP_M / metres_y
+    margin_lon = SLIVER_GAP_M / max(metres_x, 1.0)
+    if box_a[0] > box_b[2] + margin_lat or box_b[0] > box_a[2] + margin_lat:
+        return math.inf
+    if box_a[1] > box_b[3] + margin_lon or box_b[1] > box_a[3] + margin_lon:
+        return math.inf
+    for one, other in ((first, second), (second, first)):
+        if any(outline.contains(other, *polygon[0][0]) for polygon in one if polygon[0]):
+            return 0.0
+
+    def projected(polygons: list[outline.Polygon]) -> list[list[tuple[float, float]]]:
+        return [
+            [(lon * metres_x, lat * metres_y) for lon, lat in ring]
+            for polygon in polygons
+            for ring in polygon
+        ]
+
+    rings_a, rings_b = projected(first), projected(second)
+    best = math.inf
+    for points, rings in ((rings_a, rings_b), (rings_b, rings_a)):
+        for point in (point for ring in points for point in ring):
+            for ring in rings:
+                for start, end in zip(ring, ring[1:] + ring[:1], strict=True):
+                    best = min(best, _segment_distance(point, start, end))
+    return best
+
+
+def _segment_distance(
+    point: tuple[float, float], start: tuple[float, float], end: tuple[float, float]
+) -> float:
+    (px, py), (ax, ay), (bx, by) = point, start, end
+    dx, dy = bx - ax, by - ay
+    if dx == 0 and dy == 0:
+        return math.hypot(px - ax, py - ay)
+    t = max(0.0, min(1.0, ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy)))
+    return math.hypot(px - (ax + t * dx), py - (ay + t * dy))
+
+
+def _curated_units(
+    curated: list[dict[str, Any]],
+    places: list[dict[str, Any]],
+    boundaries: dict[str, Any],
+) -> dict[str, dict[str, Any]]:
+    """The curated state parks already among ``places``, shaped as census units so a
+    sliver beside one can be recognised (``fold_slivers``)."""
+    by_id = {place["id"]: place for place in places}
+    units: dict[str, dict[str, Any]] = {}
+    for site in curated:
+        place = by_id.get(site["id"])
+        entry = boundaries.get(site["id"])
+        if site.get("kind") != "statePark" or place is None or not entry:
+            continue
+        units[site["id"]] = {
+            "name": site["name"],
+            "designation": site["designation"],
+            "states": list(site.get("states") or []),
+            "polygons": [
+                [outline.decode(ring) for ring in polygon] for polygon in entry["polygons"]
+            ],
+            "acres": float((place.get("facts") or {}).get("areaAcres") or 0),
+            "manager": place.get("managedBy"),
+        }
     return units
 
 
@@ -203,6 +413,23 @@ def _designation_of(text: str) -> str | None:
             # Keep the source's own capitalisation of the words, normalised to title case.
             return designation
     return None
+
+
+def is_state_park_record(properties: dict[str, Any]) -> bool:
+    """Whether a PAD-US record is state park land: a state body manages it, or its own
+    name carries a state designation (a TVA parcel of a Tennessee state park, a
+    county-run state beach). Asked of each record before any merging, so a private parcel
+    named for the park it lies in still joins that park."""
+    if (properties.get("Mang_Name") or "").strip().upper() in STATE_MANAGERS:
+        return True
+    raw = (properties.get("Unit_Nm") or properties.get("Loc_Nm") or "").strip()
+    return any(_designation_of(part) for part in re.split(r"\s*/\s*", raw) if part.strip())
+
+
+def _manager(text: str | None) -> str | None:
+    """The managing agency as PAD-US names it, or None where it says it does not know."""
+    manager = (text or "").strip()
+    return None if manager.casefold() in NO_MANAGER else manager
 
 
 def proposed_id(name: str, designation: str, state: str) -> str:
