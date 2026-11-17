@@ -267,8 +267,9 @@ public final class AlertsCenter {
         case .unitedStates: place.npsParkCode != nil && NPSAlerts.isConfigured
         case .japan, .norway: place.kind == .nationalPark
         case .newZealand, .canada: place.kind == .nationalPark
-        // Its providers join with the country's data (0.11.0).
-        case .australia: false
+        // South Australia, the Northern Territory and the island territories publish no
+        // feed a request can read.
+        case .australia: place.kind == .nationalPark && AustralianFires.feed(for: place) != nil
         }
     }
 
@@ -323,7 +324,9 @@ public final class AlertsCenter {
             await refreshNewZealand([(place, boundary)])
         case .canada:
             await refreshCanada([(place, boundary)])
-        case .unitedStates, .australia:
+        case .australia:
+            await refreshAustralia([(place, boundary)])
+        case .unitedStates:
             break
         }
     }
