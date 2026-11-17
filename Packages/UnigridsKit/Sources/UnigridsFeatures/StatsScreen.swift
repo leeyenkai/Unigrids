@@ -105,36 +105,8 @@ public struct StatsScreen: View {
         }
     }
 
-    private func nationalParks(_ report: StatsReport) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
-            SectionHead("National parks", detail: report.nationalParks.description)
-            HStack(alignment: .firstTextBaseline, spacing: 8) {
-                Text("\(report.nationalParks.visited)")
-                    .font(.custom("HelveticaNeue-Bold", size: 56, relativeTo: .largeTitle))
-                    .monospacedDigit()
-                    .foregroundStyle(style.ink)
-                Text("of \(report.nationalParks.total) visited")
-                    .font(UnigridStyle.rowDetail)
-                    .foregroundStyle(style.inkSecondary)
-            }
-            ParkGrid(
-                parks: store.nationalParks,
-                index: VisitIndex(visits: visits, trips: trips),
-                side: 26
-            )
-            if visits.isEmpty {
-                Text("Check in or stamp the passport anywhere, and the squares start to fill.")
-                    .font(UnigridStyle.proseSmall)
-                    .foregroundStyle(style.inkSecondary)
-            }
-        }
-    }
-
     private func statesSection(_ report: StatsReport) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
-            SectionHead("States and territories", detail: report.states.description)
-            USTileMap(visited: Set(report.visitedStates.map(\.code)))
-        }
+        SubdivisionMapsSection(report: report, visits: visits)
     }
 
     private func figures(_ report: StatsReport) -> some View {
@@ -145,7 +117,17 @@ public struct StatsScreen: View {
         return FigureGrid(minimum: 140, spacing: 16) {
             FigureBlock(value: "\(byTier[.npsUnit]?.count ?? 0)", label: "Other NPS sites")
             FigureBlock(value: "\(byTier[.statePark]?.count ?? 0)", label: "State parks")
-            FigureBlock(value: report.regions.description, label: "Passport regions")
+            if report.regionsByCountry.count > 1 {
+                FigureBlock(value: report.countries.description, label: "Countries")
+                ForEach(report.regionsByCountry) { figure in
+                    FigureBlock(
+                        value: figure.completion.description,
+                        label: "Passport regions, \(figure.country.name)"
+                    )
+                }
+            } else {
+                FigureBlock(value: report.regions.description, label: "Passport regions")
+            }
             FigureBlock(value: "\(report.totalVisits)", label: "Visits logged")
             if let first = report.firstVisit {
                 FigureBlock(
@@ -306,7 +288,7 @@ public struct StatsScreen: View {
                             Text(
                                 UnigridsFormat.distance(metres: nearest.distanceMetres)
                                     + " away, as the crow flies · "
-                                    + nearest.place.statesDescription
+                                    + nearest.place.bandLine
                             )
                             .font(UnigridStyle.rowDetail)
                             .foregroundStyle(style.inkSecondary)
@@ -331,6 +313,40 @@ public struct StatsScreen: View {
                 .disabled(locating)
                 Text("Your location is used once, on this device, and not kept.")
                     .font(UnigridStyle.caption)
+                    .foregroundStyle(style.inkSecondary)
+            }
+        }
+    }
+}
+
+extension StatsScreen {
+    private func nationalParks(_ report: StatsReport) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            SectionHead("National parks", detail: report.nationalParks.description)
+            HStack(alignment: .firstTextBaseline, spacing: 8) {
+                Text("\(report.nationalParks.visited)")
+                    .font(.custom("HelveticaNeue-Bold", size: 56, relativeTo: .largeTitle))
+                    .monospacedDigit()
+                    .foregroundStyle(style.ink)
+                Text("of \(report.nationalParks.total) visited")
+                    .font(UnigridStyle.rowDetail)
+                    .foregroundStyle(style.inkSecondary)
+            }
+            if report.nationalParksByCountry.count > 1 {
+                NationalParksByCountry(
+                    figures: report.nationalParksByCountry,
+                    index: VisitIndex(visits: visits, trips: trips)
+                )
+            } else {
+                ParkGrid(
+                    parks: store.nationalParks,
+                    index: VisitIndex(visits: visits, trips: trips),
+                    side: 26
+                )
+            }
+            if visits.isEmpty {
+                Text("Check in or stamp the passport anywhere, and the squares start to fill.")
+                    .font(UnigridStyle.proseSmall)
                     .foregroundStyle(style.inkSecondary)
             }
         }

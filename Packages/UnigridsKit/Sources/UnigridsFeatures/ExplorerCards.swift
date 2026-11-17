@@ -176,7 +176,9 @@ struct ExplorerTrailCard: View {
 
     var body: some View {
         ExplorerCardFrame(
-            kicker: trail.estimatedDifficulty.map { "\($0.name), est." } ?? "Trail",
+            kicker: trail.estimatedDifficulty.map {
+                trail.isDifficultyEstimated ? "\($0.name), est." : $0.name
+            } ?? "Trail",
             title: trail.name,
             onClose: onClose
         ) {

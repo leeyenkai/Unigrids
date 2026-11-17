@@ -112,6 +112,7 @@ enum ReminderScheduler {
 struct TripRemindersSection: View {
     @Environment(\.unigrid) private var style
     @Environment(\.modelContext) private var context
+    @Environment(\.referenceStore) private var store
     @Environment(UndoCenter.self) private var undo: UndoCenter?
     let trip: Trip
     @State private var adding = false
@@ -159,8 +160,10 @@ struct TripRemindersSection: View {
             ListNotes {
                 FormNote(
                     "For permit lotteries, timed-entry slots and booking windows. Booking itself "
-                        + "happens on Recreation.gov or the park's own site; Unigrids never "
-                        + "handles it."
+                        + (trip.booksOnRecreationGov(store)
+                            ? "happens on Recreation.gov or the park's own site"
+                            : "happens on the park's, the hut's or the operator's own site")
+                        + "; Unigrids never handles it."
                 )
             }
         } header: {
@@ -296,11 +299,13 @@ struct ReminderEditor: View {
                         .keyboardType(.URL)
                         .textInputAutocapitalization(.never)
                     #endif
-                    Link(
-                        "Find it on Recreation.gov",
-                        destination: URL(string: "https://www.recreation.gov/")
-                            ?? URL(fileURLWithPath: "/")
-                    )
+                    if trip.booksOnRecreationGov(store) {
+                        Link(
+                            "Find it on Recreation.gov",
+                            destination: URL(string: "https://www.recreation.gov/")
+                                ?? URL(fileURLWithPath: "/")
+                        )
+                    }
                 } header: {
                     SectionHead("Booking")
                 }
@@ -380,5 +385,15 @@ struct ReminderEditor: View {
         } catch {
             notice = error.localizedDescription
         }
+    }
+}
+
+extension Trip {
+    /// Whether Recreation.gov, which books American federal sites only, is any use for
+    /// this trip: true when a stop is in the US, or when no stop resolves to say otherwise.
+    @MainActor
+    func booksOnRecreationGov(_ store: any ReferenceStore) -> Bool {
+        let countries = Set(orderedStops.compactMap { store.place($0.place)?.country })
+        return countries.isEmpty || countries.contains(.unitedStates)
     }
 }

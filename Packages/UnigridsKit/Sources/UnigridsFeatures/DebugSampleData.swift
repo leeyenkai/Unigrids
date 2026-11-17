@@ -41,6 +41,13 @@ public enum DebugSampleData {
             Sample("np-rocky-mountain", past(2023, 12, 28), [-4, -15, 6], "Snow"),
             Sample("nps-stli", past(2026, 4, 2), [14, 6, 0], "Clear"),
             Sample("nf-white-river", past(2023, 12, 27), [-6, -18, 3], "Snow"),
+            // Abroad (0.10.0): a 2026 stamp in Japan shows the book's face, and no America
+            // 250 seal; Svalbard checks the far north.
+            Sample("jp-np-shiretoko", past(2026, 8, 3), [21, 13, 2], "Showers"),
+            Sample("jp-np-fuji-hakone-izu", past(2025, 7, 20), [27, 21, 8], "Rain"),
+            Sample("no-np-jotunheimen", past(2026, 7, 15), [14, 5, 1], "Clear"),
+            Sample("no-np-rondane", past(2026, 7, 18), [17, 6, 0], "Clear"),
+            Sample("no-np-nordvest-spitsbergen", past(2025, 6, 10), [4, 0, 0], "Clear"),
         ]
     }
 
@@ -101,6 +108,22 @@ public enum DebugSampleData {
                 trip: trip
             )
             container.mainContext.insert(reminder)
+
+            // A trip abroad in planning, for its flags, forecasts and warnings.
+            if let norway = try? log.createTrip(
+                name: "Jotunheimen and Rondane",
+                startDate: day(30),
+                endDate: day(34)
+            ) {
+                let oslo = UnigridsCalendar
+                    .gregorian(TimeZone(identifier: "Europe/Oslo") ?? .current)
+                for (place, offset) in [("no-np-jotunheimen", 30), ("no-np-rondane", 33)] {
+                    let date = UnigridsCalendar.noon(
+                        onDayOf: day(offset), shownIn: calendar, in: oslo
+                    )
+                    _ = try? log.addStop(UnigridsID(place), to: norway, on: date)
+                }
+            }
 
             for sample in samples(past: past) {
                 logVisit(sample, log: log, container: container)

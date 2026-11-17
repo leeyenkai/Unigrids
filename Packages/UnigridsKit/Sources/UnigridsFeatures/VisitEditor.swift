@@ -128,7 +128,7 @@ struct VisitEditor: View {
         }
         return VisitCardData(
             placeName: place?.name ?? "A park",
-            kicker: place.map { "\($0.designation) · \($0.statesDescription)" } ?? "Unigrids",
+            kicker: place.map { "\($0.designation) · \($0.bandLine)" } ?? "Unigrids",
             day: visit.date.formatted(UnigridsFormat.day(in: calendar)),
             rating: visit.rating,
             lines: lines,
@@ -136,11 +136,14 @@ struct VisitEditor: View {
                 StampFace(
                     siteName: place?.name ?? "",
                     date: stamp.date,
-                    stateCode: place?.states.first?.code ?? "US",
-                    region: place?.resolvedPassportRegion ?? .midAtlantic,
+                    stateCode: place?.stampMark ?? "US",
+                    region: place?.resolvedPassportRegion
+                        ?? PassportRegion.fallback(in: Country.inferred(from: stamp.place)),
+                    country: place?.country ?? Country.inferred(from: stamp.place),
                     seed: stamp.seed,
                     isVerifiedOnSite: stamp.isVerifiedOnSite,
-                    calendar: calendar
+                    calendar: calendar,
+                    localName: place?.leadLocalName?.text
                 )
             }
         )

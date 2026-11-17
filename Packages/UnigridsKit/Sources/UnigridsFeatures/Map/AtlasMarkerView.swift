@@ -162,7 +162,7 @@ final class AtlasMarkerView: MKAnnotationView {
         let alert = annotation.alert.map { ", \($0.spokenName) alert posted" } ?? ""
         setSpokenLabel(
             "\(annotation.place.name) \(annotation.place.designation), "
-                + "\(annotation.place.statesDescription)\(status)\(alert)"
+                + "\(annotation.place.bandLine)\(status)\(alert)"
         )
     }
 

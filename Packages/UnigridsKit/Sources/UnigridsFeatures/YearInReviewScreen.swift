@@ -139,10 +139,21 @@ struct YearCardContent: View {
                     label: review.places == 1 ? "Place" : "Places"
                 )
                 FigureBlock(value: "\(review.firstTimePlaces)", label: "New to you")
-                FigureBlock(
-                    value: "\(review.states.count)",
-                    label: review.states.count == 1 ? "State" : "States and territories"
-                )
+                if review.countries.contains(where: { $0 != .unitedStates }) {
+                    FigureBlock(
+                        value: "\(review.countries.count)",
+                        label: review.countries.count == 1 ? "Country" : "Countries"
+                    )
+                    FigureBlock(
+                        value: "\(review.subdivisions.count)",
+                        label: review.subdivisions.count == 1 ? "Region" : "Regions"
+                    )
+                } else {
+                    FigureBlock(
+                        value: "\(review.states.count)",
+                        label: review.states.count == 1 ? "State" : "States and territories"
+                    )
+                }
                 if review.trailsHiked > 0 {
                     FigureBlock(
                         value: UnigridsFormat.distance(metres: review.hikedMetres),
@@ -188,6 +199,13 @@ struct YearCardContent: View {
             }
             if !review.states.isEmpty {
                 USTileMap(visited: Set(review.states.map(\.code)))
+            }
+            ForEach(review.countries.filter { $0 != .unitedStates }) { country in
+                Kicker(country.subdivisionsTitle)
+                SubdivisionTileMap(
+                    grid: .grid(for: country),
+                    visited: Set(review.subdivisions.map(\.code))
+                )
             }
         }
     }

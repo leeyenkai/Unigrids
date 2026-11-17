@@ -22,13 +22,16 @@ struct WeatherPanel: View {
                 if let climate = store.climate(for: place.id) {
                     ClimateChart(climate: climate)
                 }
+                PolarDaylightLine(latitude: place.centre.latitude)
                 // Weather beside crowds: the question of when to go (§10).
                 if let visitation = place.visitation {
                     VisitationChart(visitation: visitation)
                 }
                 if let note, !note.isEmpty {
                     VStack(alignment: .leading, spacing: 6) {
-                        GuideFieldLabel("From the National Park Service")
+                        if place.country == .unitedStates {
+                            GuideFieldLabel("From the National Park Service")
+                        }
                         Text(note)
                             .font(UnigridStyle.prose)
                             .foregroundStyle(style.ink)
@@ -196,5 +199,49 @@ struct ClimateChart: View {
         return parts.joined(separator: "; ") + ". Bars show the mean daily high and low; "
             + "precipitation below. One point stands for the whole park, so higher ground "
             + "runs colder."
+    }
+}
+
+/// Midnight sun and polar night at the park's centre, for a park far enough north or
+/// south to have either; nothing anywhere else.
+private struct PolarDaylightLine: View {
+    @Environment(\.unigrid) private var style
+    let latitude: Double
+
+    private var text: String? {
+        var parts: [String] = []
+        if let sun = PolarDaylight.midnightSun(latitude: latitude) {
+            parts.append(
+                "Midnight sun from about \(Self.name(sun.first)) to \(Self.name(sun.last))."
+            )
+        }
+        if let night = PolarDaylight.polarNight(latitude: latitude) {
+            parts.append(
+                "Polar night, the sun below the horizon all day, from about "
+                    + "\(Self.name(night.first)) to \(Self.name(night.last))."
+            )
+        }
+        return parts.isEmpty ? nil : parts.joined(separator: " ")
+    }
+
+    /// "20 April", in the reader's own order of day and month.
+    private static func name(_ day: PolarDaylight.MonthDay) -> String {
+        let components = DateComponents(year: 2025, month: day.month, day: day.day)
+        guard let date = Calendar(identifier: .gregorian).date(from: components) else {
+            return ""
+        }
+        return date.formatted(.dateTime.day().month(.wide))
+    }
+
+    var body: some View {
+        if let text {
+            VStack(alignment: .leading, spacing: 6) {
+                GuideFieldLabel("Daylight, at the park's centre")
+                Text(text)
+                    .font(UnigridStyle.prose)
+                    .foregroundStyle(style.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
     }
 }

@@ -42,7 +42,7 @@ struct TrailCatalogueSections: View {
         Section {
             if shown.isEmpty {
                 Text(trails.isEmpty
-                    ? "No trails are in the NPS public trails data for this park."
+                    ? "No trails are mapped for this park in the trail data Unigrids uses."
                     : "No trails match these filters.")
                     .font(UnigridStyle.prose)
                     .foregroundStyle(style.inkSecondary)
@@ -359,21 +359,6 @@ struct TrailDetailScreen: View {
         .toolbarTitleDisplayMode(.inline)
         .modifier(TrailExplorerPresenter(isPresented: $showExplorer, trail: trail, place: place))
         .modifier(TrailParkMapPresenter(isPresented: $showParkMap, trail: trail, place: place))
-    }
-}
-
-extension TrailDetailScreen {
-    /// The trail's own source first — the NPS's public trails data, or OpenStreetMap under
-    /// the ODbL — then how Unigrids measured it.
-    static func credit(for trail: Trail) -> String {
-        let line = trail.isFromOpenStreetMap
-            ? "Trail line © OpenStreetMap contributors, available under the Open Database "
-            + "Licence (ODbL). "
-            : "Trail line from the National Park Service's public trails data. "
-        return line
-            + "Length, climb and profile measured by Unigrids from USGS 3DEP elevation at a "
-            + "station every 30 m; effort estimated from them by Shenandoah National Park's "
-            + "published rating. For planning, not navigation."
     }
 }
 

@@ -163,6 +163,9 @@ final class StationMarkerView: MKAnnotationView {
             labelLayer.foregroundColor = ink.ink.cg
         }
         CATransaction.commit()
-        setSpokenLabel("Amtrak station, \(station.station.name)")
+        setSpokenLabel(
+            station.station.isAmtrak ? "Amtrak station, \(station.station.name)"
+                : "Railway station, \(station.station.name)"
+        )
     }
 }

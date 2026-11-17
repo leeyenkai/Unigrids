@@ -13,6 +13,10 @@ import UnigridsReference
 public struct RootTabView: View {
     @Environment(\.referenceStore) private var store
     @AppStorage(OnboardingDefaults.seen) private var onboardingSeen = false
+    /// Whether the reader has seen how the idea travelled: in the welcome, or once on its
+    /// own after Japan and Norway arrived. A key of its own, since everyone who installed
+    /// before then has seen the welcome already.
+    @AppStorage("onboarding.world.seen") private var worldSeen = false
     @Query private var trips: [Trip]
     @Query private var visits: [Visit]
     @Environment(\.modelContext) private var context
@@ -89,7 +93,13 @@ public struct RootTabView: View {
         }
         #endif
         .onboarding(isPresented: showOnboarding) {
-            OnboardingView { onboardingSeen = true }
+            OnboardingView {
+                onboardingSeen = true
+                worldSeen = true
+            }
+        }
+        .onboarding(isPresented: showWorldWelcome) {
+            WorldWelcomeView { worldSeen = true }
         }
     }
 
@@ -117,6 +127,20 @@ public struct RootTabView: View {
             .filter { $0.status(on: Date()) != .done }
             .flatMap(\.orderedStops)
             .map(\.place)
+    }
+
+    private var showWorldWelcome: Binding<Bool> {
+        Binding(
+            get: {
+                onboardingSeen && !worldSeen
+                    && store.nationalParks.contains { $0.country != .unitedStates }
+            },
+            set: {
+                if !$0 {
+                    worldSeen = true
+                }
+            }
+        )
     }
 
     private var showOnboarding: Binding<Bool> {

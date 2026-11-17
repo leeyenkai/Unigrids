@@ -39,7 +39,17 @@ public struct StampView: View {
         .accessibilityLabel(accessibilityLabel)
     }
 
-    private var cancellation: some View {
+    /// Each book's own face, over the one impression system (ADR 0013): the US book's
+    /// cancellation, a Japanese visitor-centre stamp, a Norwegian postmark.
+    @ViewBuilder private var cancellation: some View {
+        switch face.country {
+        case .unitedStates: usCancellation
+        case .japan: japaneseStamp
+        case .norway: norwegianPostmark
+        }
+    }
+
+    private var usCancellation: some View {
         ZStack {
             Circle()
                 .stroke(ink, lineWidth: diameter * 0.022)
@@ -84,6 +94,91 @@ public struct StampView: View {
         .opacity(face.impression.inkDensity)
     }
 
+    /// After the commemorative stamps (記念スタンプ) at Japan's visitor centres and
+    /// stations: one heavy ring, one ink, the park's name in kanji set large, the English
+    /// name over it, the date as Japan writes it, the prefecture beneath.
+    private var japaneseStamp: some View {
+        ZStack {
+            Circle()
+                .stroke(ink, lineWidth: diameter * 0.04)
+            VStack(spacing: diameter * 0.025) {
+                // One line over the kanji, shrunk to fit rather than broken at a hyphen:
+                // "FUJI-HAKONE-" over "IZU" reads as two names.
+                Text(face.siteName.uppercased().replacingOccurrences(of: "-", with: "\u{2011}"))
+                    .font(.system(size: diameter * 0.07, weight: .semibold))
+                    .tracking(diameter * 0.006)
+                    .multilineTextAlignment(.center)
+                    .minimumScaleFactor(0.45)
+                    .lineLimit(1)
+                Text(face.localName ?? face.siteName)
+                    .font(.system(size: diameter * 0.16, weight: .heavy))
+                    .typesettingLanguage(Locale.Language(identifier: "ja"))
+                    .multilineTextAlignment(.center)
+                    .minimumScaleFactor(0.45)
+                    .lineLimit(2)
+                Text(face.dateLine())
+                    .font(.system(size: diameter * 0.1, weight: .bold))
+                    .monospacedDigit()
+                Text(face.stateCode.uppercased())
+                    .font(.system(size: diameter * 0.075, weight: .medium))
+                    .tracking(diameter * 0.012)
+                    .minimumScaleFactor(0.6)
+                    .lineLimit(1)
+            }
+            .padding(.horizontal, diameter * 0.15)
+            .foregroundStyle(ink)
+            verifiedMark
+        }
+        .opacity(face.impression.inkDensity)
+    }
+
+    /// After a Norwegian postmark: two rings, the name round the top, the date between
+    /// bars that run out to the inner ring, the county and NORGE at the foot.
+    private var norwegianPostmark: some View {
+        ZStack {
+            Circle()
+                .stroke(ink, lineWidth: diameter * 0.018)
+            Circle()
+                .stroke(ink, lineWidth: diameter * 0.01)
+                .padding(diameter * 0.07)
+            VStack(spacing: diameter * 0.03) {
+                Text(face.siteName.uppercased())
+                    .font(.system(size: diameter * 0.09, weight: .semibold))
+                    .multilineTextAlignment(.center)
+                    .minimumScaleFactor(0.6)
+                    .lineLimit(2)
+                    .padding(.horizontal, diameter * 0.08)
+                Rectangle()
+                    .frame(height: diameter * 0.02)
+                Text(face.dateLine())
+                    .font(.system(size: diameter * 0.11, weight: .bold))
+                    .monospacedDigit()
+                Rectangle()
+                    .frame(height: diameter * 0.02)
+                Text("\(face.stateCode) · NORGE".uppercased())
+                    .font(.system(size: diameter * 0.068, weight: .medium))
+                    .tracking(diameter * 0.01)
+                    .minimumScaleFactor(0.55)
+                    .lineLimit(1)
+                    .padding(.horizontal, diameter * 0.08)
+            }
+            .padding(.horizontal, diameter * 0.09)
+            .foregroundStyle(ink)
+            verifiedMark
+        }
+        .opacity(face.impression.inkDensity)
+    }
+
+    @ViewBuilder private var verifiedMark: some View {
+        if face.isVerifiedOnSite {
+            Image(.verified)
+                .font(.system(size: diameter * 0.13))
+                .foregroundStyle(ink)
+                .offset(y: diameter * 0.39)
+                .accessibilityHidden(true)
+        }
+    }
+
     /// The America 250 overprint: a red seal stamped across the corner of the regular
     /// impression, for any stamp dated in 2026.
     private var america250Seal: some View {
@@ -107,7 +202,8 @@ public struct StampView: View {
 
     private var accessibilityLabel: String {
         var parts = [
-            "\(face.siteName), stamped \(face.dateLine()), \(face.stateCode)",
+            [face.siteName, face.localName].compactMap(\.self).joined(separator: ", ")
+                + ", stamped \(face.dateLine()), \(face.stateCode)",
             "\(face.region.name) region",
         ]
         if face.hasAmerica250Seal {

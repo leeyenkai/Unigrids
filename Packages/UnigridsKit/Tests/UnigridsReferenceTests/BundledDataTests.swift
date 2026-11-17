@@ -32,16 +32,16 @@ struct BundledDataTests {
     @Test("every tier is on the map")
     func tiers() {
         let byTier = Dictionary(grouping: store.places, by: \.tier)
-        #expect(byTier[.nationalPark]?.count == 63)
+        #expect(byTier[.nationalPark]?.count(where: { $0.country == .unitedStates }) == 63)
         #expect((byTier[.npsUnit]?.count ?? 0) >= 300)
         #expect((byTier[.statePark]?.count ?? 0) >= 50)
         #expect((byTier[.federalSite]?.count ?? 0) >= 15)
         #expect(Set(store.places.map(\.id)).count == store.places.count)
     }
 
-    @Test("all 63 national parks are present, each once")
+    @Test("all 63 US national parks are present, each once")
     func sixtyThreeParks() {
-        let parks = store.nationalParks
+        let parks = store.nationalParks.filter { $0.country == .unitedStates }
         #expect(parks.count == 63)
         #expect(Set(parks.map(\.id)).count == 63)
         #expect(Set(parks.map(\.name)).count == 63)
@@ -54,9 +54,10 @@ struct BundledDataTests {
             #expect(!place.name.isEmpty)
             // The remote Pacific and Caribbean refuges lie in no state or territory the
             // Census draws; they are the only places allowed to have none.
+            // Abroad, a prefecture or county instead (ADR 0013).
             #expect(
-                !place.states.isEmpty || place.kind == .wildlifeRefuge,
-                "\(place.name) has no state"
+                !place.subdivisions.isEmpty || place.kind == .wildlifeRefuge,
+                "\(place.name) has no state, prefecture or county"
             )
             #expect(
                 (-90.0 ... 90.0).contains(place.centre.latitude),
@@ -109,8 +110,10 @@ struct BundledDataTests {
             #expect((place.summary?.count ?? 0) > 80, "\(place.name) summary is thin")
             // Roadless parks such as Kobuk Valley have only a handful of named sights.
             #expect(store.sights(in: place.id).count >= 3, "\(place.name) has too few sights")
+            // Abroad, many parks have no centre of their own: Svalbard's, and most of
+            // Norway's far north.
             #expect(
-                !store.visitorCentres(in: place.id).isEmpty,
+                !store.visitorCentres(in: place.id).isEmpty || place.country != .unitedStates,
                 "\(place.name) has no visitor centre"
             )
         }
@@ -169,9 +172,16 @@ struct BundledDataTests {
     func nationalParkFacts() throws {
         for park in store.nationalParks {
             #expect(park.facts.establishedYear != nil, "\(park.name) has no establishment year")
-            #expect(park.facts.areaAcres != nil, "\(park.name) has no area")
+            #expect(park.facts.area != nil, "\(park.name) has no area")
+        }
+        // The NPS's visitation release covers every US park; abroad, Japan's ministry
+        // counts visitors a year or two behind, and Norway publishes no per-park figure.
+        for park in store.nationalParks where park.country == .unitedStates {
             #expect(park.facts.annualVisits != nil, "\(park.name) has no visitation")
             #expect(park.facts.annualVisitsYear == 2025)
+        }
+        for park in store.nationalParks where park.country == .norway {
+            #expect(park.facts.annualVisits == nil, "\(park.name) has visits from nowhere")
         }
         // Spot checks against the NPS's own published figures: the 2025 visitation release
         // and the 2023 acreage report. A change here is a data change worth a look.
@@ -238,14 +248,23 @@ struct BundledDataTests {
         #expect(kansas == nil)
     }
 
-    @Test("every national park has a bundled NPS photograph that resolves")
+    @Test("every national park has a bundled photograph that resolves")
     func photographs() throws {
         for park in store.nationalParks {
             let guide = try #require(store.guide(for: park.id))
             let hero = try #require(guide.hero, "\(park.name) has no hero photograph")
-            #expect(hero.isPublicDomain)
-            #expect(hero.credit.uppercased().hasPrefix("NPS")
-                || hero.credit.lowercased().hasPrefix("national park service"))
+            if park.country == .unitedStates {
+                #expect(hero.isPublicDomain)
+                #expect(hero.credit.uppercased().hasPrefix("NPS")
+                    || hero.credit.lowercased().hasPrefix("national park service"))
+            } else {
+                // Commons abroad: credited, and public domain only when its licence says so.
+                #expect(!hero.credit.isEmpty, "\(park.name) hero has no credit")
+                #expect(
+                    hero.isPublicDomain || hero.licence != nil,
+                    "\(park.name) hero has no licence"
+                )
+            }
             let url = try #require(store.imageURL(for: hero))
             #expect(url.isFileURL, "\(park.name)'s hero is not bundled")
             for image in guide.gallery {
@@ -306,6 +325,9 @@ struct BundledDataTests {
         #expect(store.search("Maine").contains { $0.id == "np-acadia" })
         #expect(store.search("UT").contains { $0.id == "np-zion" })
         #expect(store.search("lincoln").contains { $0.id == "nps-linc" })
+        // Typed without the macron or the ʻokina.
+        #expect(store.search("haleakala").first?.id == "np-haleakala")
+        #expect(store.search("hawaii volcanoes").first?.id == "np-hawaii-volcanoes")
         #expect(store.searchPointsOfInterest("visitor").isEmpty == false)
         #expect(store.search("   ").isEmpty)
     }

@@ -166,10 +166,10 @@ struct TripDetailScreen: View {
     }
 
     private var tripCard: TripShareCard {
-        let states = Set(stops.compactMap(\.place).flatMap { $0.states.map(\.code) })
+        let regions = RegionFigure.of(stops.compactMap(\.place))
         var figures = [
             (value: "\(stops.count)", label: stops.count == 1 ? "Stop" : "Stops"),
-            (value: "\(states.count)", label: states.count == 1 ? "State" : "States"),
+            (value: "\(regions.count)", label: regions.label),
         ]
         if routedLegs.count == stops.count - 1, !routedLegs.isEmpty {
             figures.append((
@@ -353,6 +353,8 @@ private struct ItinerarySection: View {
                             failed: driveTimes.hasFailed(from: stops[index - 1], to: entry),
                             straightLine: straightLine(from: stops[index - 1], to: entry),
                             sameSpot: stops[index - 1].routeKey == entry.routeKey,
+                            reachedBy: entry.place?.reachedBy
+                                ?? stops[index - 1].place?.reachedBy,
                             onRetry: driveTimes.retry
                         )
                     }
@@ -423,11 +425,16 @@ struct TripFigures: View {
     var body: some View {
         let points = stops.compactMap(\.coordinate)
         let distance = TripRoute.totalDistance(points)
-        let states = Set(stops.compactMap(\.place).flatMap { $0.states.map(\.code) })
+        let regions = RegionFigure.of(stops.compactMap(\.place))
         let allRouted = stops.count > 1 && legs.count == stops.count - 1
         FigureGrid(minimum: 110, spacing: 14) {
             FigureBlock(value: "\(stops.count)", label: "Stops", compact: true)
-            FigureBlock(value: "\(states.count)", label: "States", compact: true)
+            FigureBlock(
+                value: "\(regions.count)",
+                label: regions.label == "State" ? "States" : regions.label == "Region"
+                    ? "Regions" : regions.label,
+                compact: true
+            )
             if let days {
                 FigureBlock(value: "\(days)", label: days == 1 ? "Day" : "Days", compact: true)
             }

@@ -15,10 +15,14 @@ struct OnboardingView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            BandHeader("Unigrids", kicker: "A field guide to America's public lands")
+            BandHeader(
+                "Unigrids",
+                kicker: isWorld ? "A field guide to the world's public lands"
+                    : "A field guide to America's public lands"
+            )
             #if os(iOS)
                 TabView(selection: $page) {
-                    ForEach(0 ..< Self.pageCount, id: \.self) { index in
+                    ForEach(0 ..< pageCount, id: \.self) { index in
                         panel(index).tag(index)
                     }
                 }
@@ -33,9 +37,9 @@ struct OnboardingView: View {
             #endif
 
             HStack(spacing: 12) {
-                PageSquares(count: Self.pageCount, current: page)
+                PageSquares(count: pageCount, current: page)
                 Spacer()
-                if page < Self.pageCount - 1 {
+                if page < pageCount - 1 {
                     Button("Skip", action: onFinish)
                         .buttonStyle(.plain)
                         .font(UnigridStyle.action)
@@ -48,8 +52,8 @@ struct OnboardingView: View {
                     }
                     .buttonStyle(BrochureButtonStyle(.secondary, fullWidth: false))
                 }
-                Button(page < Self.pageCount - 1 ? "Next" : "Start exploring") {
-                    if page < Self.pageCount - 1 {
+                Button(page < pageCount - 1 ? "Next" : "Start exploring") {
+                    if page < pageCount - 1 {
                         withAnimation { page += 1 }
                     } else {
                         onFinish()
@@ -64,14 +68,38 @@ struct OnboardingView: View {
         .interactiveDismissDisabled()
     }
 
-    private static let pageCount = 4
+    /// Whether places beyond the US ship in this build: the welcome then tells how the idea
+    /// travelled, on a page of its own.
+    private var isWorld: Bool {
+        store.nationalParks.contains { $0.country != .unitedStates }
+    }
+
+    private var pageCount: Int {
+        isWorld ? 5 : 4
+    }
 
     @ViewBuilder
     private func panel(_ index: Int) -> some View {
+        // The idea's page comes second, before the guide it explains.
+        if isWorld, index == 1 {
+            OnboardingPanel(
+                number: 2,
+                title: TheIdeaThatTravelled.title,
+                text: TheIdeaThatTravelled.text
+            ) {
+                IdeaTimelineArt()
+            }
+        } else {
+            usPanel(isWorld && index > 1 ? index - 1 : index, number: index + 1)
+        }
+    }
+
+    @ViewBuilder
+    private func usPanel(_ index: Int, number: Int) -> some View {
         switch index {
         case 0:
             OnboardingPanel(
-                number: 1,
+                number: number,
                 title: "Every public land on one map",
                 text: mapText
             ) {
@@ -79,7 +107,7 @@ struct OnboardingView: View {
             }
         case 1:
             OnboardingPanel(
-                number: 2,
+                number: number,
                 title: "A guide for every national park",
                 text: "Laid out like the brochures the Park Service has printed since 1977: "
                     + "the park's story, its sights in order, \(store.allTrails.count.formatted()) "
@@ -90,7 +118,7 @@ struct OnboardingView: View {
             }
         case 2:
             OnboardingPanel(
-                number: 3,
+                number: number,
                 title: "Plan the trip",
                 text: "Put parks, sights, trails and places to sleep in order and see the "
                     + "drive between them, the forecast for each day, closures the NPS has "
@@ -100,7 +128,7 @@ struct OnboardingView: View {
             }
         default:
             OnboardingPanel(
-                number: 4,
+                number: number,
                 title: "A passport that fills itself",
                 text: "Check in, stamp the passport, log your hikes, import visits from your "
                     + "photos, and watch the squares fill. Your log is yours: it lives on your "
@@ -121,8 +149,14 @@ struct OnboardingView: View {
         let lands = "All \(parks) national parks and \(units) more National Park Service sites, "
             + "\(forests) national forests, \(refuges) wildlife refuges, \(stateParks) state "
             + "parks, the BLM's monuments, National Natural Landmarks and scenic byways"
-        return lands + " — each with its own pin, most outlined. Lay Interstates, US highways "
-            + "and Amtrak over the top."
+        let abroad = isWorld
+            ? "; Japan's \(count(.nationalPark, in: .japan)) national parks and "
+            + "\(count(SiteType.quasiNationalPark)) quasi-national parks; Norway's "
+            + "\(count(.nationalPark, in: .norway)) national parks, protected landscapes and "
+            + "nature reserves"
+            : ""
+        return lands + abroad + " — each with its own pin, most outlined. Lay Interstates, US "
+            + "highways and " + (isWorld ? "passenger railways" : "Amtrak") + " over the top."
     }
 
     private func count(_ type: SiteType) -> Int {
@@ -130,7 +164,11 @@ struct OnboardingView: View {
     }
 
     private func count(_ tier: PlaceTier) -> Int {
-        store.places.count { $0.tier == tier }
+        store.places.count { $0.tier == tier && $0.country == .unitedStates }
+    }
+
+    private func count(_ type: SiteType, in country: Country) -> Int {
+        store.places.count { $0.siteType == type && $0.country == country }
     }
 }
 

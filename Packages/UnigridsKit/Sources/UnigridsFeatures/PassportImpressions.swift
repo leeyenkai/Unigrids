@@ -47,12 +47,14 @@ struct America250Page: View {
                                         face: StampFace(
                                             siteName: place.name,
                                             date: stamp.date,
-                                            stateCode: place.states.first?.code ?? "US",
+                                            stateCode: place.stampMark,
                                             region: place.resolvedPassportRegion,
+                                            country: place.country,
                                             seed: stamp.seed,
                                             isVerifiedOnSite: stamp.isVerifiedOnSite,
 
-                                            calendar: UnigridsCalendar.gregorian(at: place)
+                                            calendar: UnigridsCalendar.gregorian(at: place),
+                                            localName: place.leadLocalName?.text
                                         ),
                                         diameter: 120
                                     )
@@ -196,12 +198,14 @@ private struct ImpressionRow: View {
                 face: StampFace(
                     siteName: place.name,
                     date: stamp.date,
-                    stateCode: place.states.first?.code ?? "US",
+                    stateCode: place.stampMark,
                     region: region,
+                    country: place.country,
                     seed: stamp.seed,
                     isVerifiedOnSite: stamp.isVerifiedOnSite,
 
-                    calendar: UnigridsCalendar.gregorian(at: place)
+                    calendar: UnigridsCalendar.gregorian(at: place),
+                    localName: place.leadLocalName?.text
                 ),
                 diameter: 104
             )
@@ -248,7 +252,10 @@ struct PassportPageCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            BandHeader(region.name, kicker: "\(stamped) of \(total) NPS sites stamped")
+            BandHeader(
+                region.name,
+                kicker: "\(stamped) of \(total) \(region.country.passportSlotNoun) stamped"
+            )
             Rectangle().fill(style.regionInk(region)).frame(height: 6)
             LazyVGrid(
                 columns: Array(repeating: GridItem(.fixed(118), spacing: 10), count: 4),

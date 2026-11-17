@@ -39,7 +39,9 @@ public struct ParkDirectoryScreen: View {
         var label: String {
             switch self {
             case .name: "A to Z"
-            case .state: "By state"
+            // Kept as `state` so a choice saved before 0.10.0 still opens; a state,
+            // prefecture or county.
+            case .state: "By region"
             case .visited: "Visited first"
             }
         }
@@ -70,9 +72,10 @@ public struct ParkDirectoryScreen: View {
         case (.nationalParks, false):
             // Searched among the parks themselves: a search of every place would fill its
             // results with state parks before reaching some of them.
-            store.nationalParks.filter {
-                $0.name.localizedStandardContains(query)
-                    || $0.statesDescription.localizedStandardContains(query)
+            store.nationalParks.filter { park in
+                SearchText.contains(park.name, query)
+                    || SearchText.contains(park.regionLine, query)
+                    || park.localNames.contains { SearchText.contains($0.text, query) }
             }
         case (_, true):
             store.places.sorted { $0.name < $1.name }
@@ -83,6 +86,17 @@ public struct ParkDirectoryScreen: View {
         return found.filter { $0.siteType == typeFilter }
     }
 
+    /// US states first, A to Z, then each country's in turn, and "Other" last.
+    private static func regionOrder(_ lhs: String, _ rhs: String) -> Bool {
+        func country(_ key: String) -> Int {
+            if key == "Other" {
+                return Int.max
+            }
+            return Country.allCases.firstIndex { key.hasSuffix(", \($0.name)") } ?? 0
+        }
+        return (country(lhs), lhs) < (country(rhs), rhs)
+    }
+
     private var sections: [(String, [Place])] {
         let index = index
         switch sort {
@@ -90,15 +104,19 @@ public struct ParkDirectoryScreen: View {
             let grouped = Dictionary(grouping: places) { String($0.name.prefix(1)).uppercased() }
             return grouped.keys.sorted().map { ($0, grouped[$0] ?? []) }
         case .state:
-            // A park in three states is listed under each of them.
+            // A park in three states is listed under each of them. Abroad, a prefecture
+            // or county carries its country, so Japan's and Norway's sort after the US's.
             var grouped: [String: [Place]] = [:]
             for place in places {
-                let states = place.states.isEmpty ? ["Other"] : place.states.map(\.name)
+                let regions = place.country == .unitedStates
+                    ? place.states.map(\.name)
+                    : place.subdivisions.map { "\($0.name), \(place.country.name)" }
+                let states = regions.isEmpty ? ["Other"] : regions
                 for state in states {
                     grouped[state, default: []].append(place)
                 }
             }
-            return grouped.keys.sorted().map { key in
+            return grouped.keys.sorted(by: Self.regionOrder).map { key in
                 (key, (grouped[key] ?? []).sorted { $0.name < $1.name })
             }
         case .visited:
@@ -247,7 +265,18 @@ struct DirectoryHeader: View {
                         .foregroundStyle(style.inkSecondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
-                ParkGrid(parks: parks, index: index)
+                let countries = Country.allCases.filter { country in
+                    parks.contains { $0.country == country }
+                }
+                if countries.count > 1 {
+                    // One grid per country, under its name.
+                    ForEach(countries) { country in
+                        Kicker(country.name)
+                        ParkGrid(parks: parks.filter { $0.country == country }, index: index)
+                    }
+                } else {
+                    ParkGrid(parks: parks, index: index)
+                }
             }
             .padding(UnigridStyle.pageMargin)
         }
@@ -309,7 +338,7 @@ struct PlaceRow: View {
                 Text(place.name)
                     .font(UnigridStyle.rowTitle)
                     .foregroundStyle(style.ink)
-                Text("\(place.designation) · \(place.statesDescription)")
+                Text("\(place.designation) · \(place.bandLine)")
                     .font(UnigridStyle.rowDetail)
                     .foregroundStyle(style.inkSecondary)
                     .lineLimit(1)

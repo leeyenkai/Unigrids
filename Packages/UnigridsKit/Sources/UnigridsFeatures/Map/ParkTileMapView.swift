@@ -191,7 +191,11 @@ final class ParkTileCoordinator: NSObject, MKMapViewDelegate {
             view.glyphText = "\(number)"
             view.displayPriority = .required
         } else {
-            view.glyphText = marker.poi.kind == .campground ? "▲" : "i"
+            view.glyphText = switch marker.poi.kind {
+            case .campground: "▲"
+            case .hut: "⌂"
+            default: "i"
+            }
             view.displayPriority = .defaultHigh
         }
         return view

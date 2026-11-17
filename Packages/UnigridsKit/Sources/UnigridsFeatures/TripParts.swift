@@ -110,6 +110,9 @@ struct LegLine: View {
     let straightLine: Double
     /// Two stops at the same point — a park and its own visitor centre, say.
     var sameSpot = false
+    /// How an island or Arctic park is reached, shown when no road route exists, in
+    /// place of a failure the reader can do nothing about.
+    var reachedBy: String?
     var onRetry: (() -> Void)?
 
     var body: some View {
@@ -133,6 +136,13 @@ struct LegLine: View {
                     "Drive, \(UnigridsFormat.duration(leg.seconds)), "
                         + UnigridsFormat.distance(metres: leg.metres)
                 )
+            } else if failed, let reachedBy {
+                Label(
+                    reachedBy + " · "
+                        + UnigridsFormat.distance(metres: straightLine) + " straight line",
+                    systemImage: UnigridsSymbol.ferry.systemName
+                )
+                .fixedSize(horizontal: false, vertical: true)
             } else if failed {
                 Text(
                     "No road route found · "

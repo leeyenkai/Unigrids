@@ -9,25 +9,38 @@ import UnigridsReference
 
 // MARK: - Region shortcuts
 
-/// Alaska, Hawaii and the territories are one tap away (SPECIFICATION.md §5).
+/// Alaska, Hawaii and the territories are one tap away (SPECIFICATION.md §5), and so are
+/// Japan, Norway and their outlying islands once their places ship (`MapRegions`).
 struct RegionShortcutBar: View {
     @Environment(\.unigrid) private var style
+    /// The countries with places in the data, in order.
+    var countries: [Country] = [.unitedStates]
+    /// The country on screen. Its own regions follow its name; the others show only
+    /// their name, so Svalbard is a tap away from Norway without a long scroll past
+    /// the US territories.
+    var inView: Country?
     let onSelect: (BoundingBox) -> Void
 
-    private static let regions: [(String, BoundingBox)] = [
-        ("Lower 48", BoundingBox(south: 24.5, west: -125, north: 49.5, east: -66.5)),
-        ("Alaska", BoundingBox(south: 54.5, west: -168, north: 71.5, east: -137)),
-        ("Hawaiʻi", BoundingBox(south: 18.8, west: -160.4, north: 22.3, east: -154.7)),
-        ("Caribbean", BoundingBox(south: 17.6, west: -67.4, north: 18.6, east: -64.5)),
-        // Guam and Saipan: War in the Pacific and American Memorial Park.
-        ("Guam & N. Marianas", BoundingBox(south: 13.2, west: 144.5, north: 15.4, east: 146.0)),
-        ("American Samoa", BoundingBox(south: -14.4, west: -170.9, north: -14.1, east: -169.4)),
-    ]
+    /// One country: its shortcuts, as before there were others. Several: the world,
+    /// then each country by name, the one in view followed by its regions.
+    private var regions: [(String, BoundingBox)] {
+        guard countries.count > 1 else {
+            return countries.flatMap { country in
+                MapRegions.shortcuts(in: country).map { ($0.name, $0.box) }
+            }
+        }
+        return [("World", MapRegions.world)] + countries.flatMap { country in
+            let name = [(country.name, MapRegions.home(country))]
+            guard country == inView else { return name }
+            // The first shortcut is the country's home view, which its name already frames.
+            return name + MapRegions.shortcuts(in: country).dropFirst().map { ($0.name, $0.box) }
+        }
+    }
 
     var body: some View {
         ScrollView(.horizontal) {
             HStack(spacing: 0) {
-                ForEach(Self.regions, id: \.0) { name, box in
+                ForEach(regions, id: \.0) { name, box in
                     Button {
                         onSelect(box)
                     } label: {
@@ -89,7 +102,7 @@ struct MapSearchSuggestions: View {
                     VStack(alignment: .leading, spacing: 1) {
                         Text(place.name)
                             .font(UnigridStyle.rowTitle)
-                        Text("\(place.designation) · \(place.statesDescription)")
+                        Text("\(place.designation) · \(place.bandLine)")
                             .font(UnigridStyle.rowDetail)
                             .foregroundStyle(style.inkSecondary)
                     }

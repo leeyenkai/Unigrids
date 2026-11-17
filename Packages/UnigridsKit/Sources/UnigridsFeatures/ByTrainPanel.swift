@@ -37,9 +37,15 @@ struct ByTrainPanel: View {
                             value: ListFormatter.localizedString(byJoining: access.services)
                         )
                     }
-                    Text("Straight-line distance. Check Amtrak for schedules and onward travel.")
-                        .font(UnigridStyle.caption)
-                        .foregroundStyle(style.inkSecondary)
+                    Text(
+                        access.station.isAmtrak
+                            ? "Straight-line distance. Check Amtrak for schedules and "
+                            + "onward travel."
+                            : "Straight-line distance. Check the railway's timetable for schedules "
+                            + "and onward travel. Stations and lines from OpenStreetMap, ODbL."
+                    )
+                    .font(UnigridStyle.caption)
+                    .foregroundStyle(style.inkSecondary)
                 }
             }
         }
@@ -64,7 +70,12 @@ struct ByTrainPanel: View {
     }
 
     private func stationLine(_ access: TrainAccess) -> String {
-        [
+        guard access.station.isAmtrak else {
+            return [access.station.city, access.station.country?.name]
+                .compactMap(\.self)
+                .joined(separator: " · ")
+        }
+        return [
             "Amtrak \(access.station.code)",
             access.station.city,
             access.station.state?.name,

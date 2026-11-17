@@ -50,6 +50,8 @@ struct AtlasMapView {
     var showsUserLocation = false
     /// A sight to mark, chosen from search.
     var focus: AtlasFocus?
+    /// The view to open on: the last one, or the reader's home country's.
+    var openingBox: BoundingBox?
     let onSelect: (UnigridsID?) -> Void
     let onRegionChange: (MKCoordinateRegion) -> Void
 
@@ -77,7 +79,11 @@ struct AtlasMapView {
             forAnnotationViewWithReuseIdentifier: StationMarkerView.reuse
         )
         coordinator.attach(to: map)
-        map.setRegion(Self.lower48, animated: false)
+        if let openingBox {
+            map.setVisibleMapRect(MKMapRect(box: openingBox), animated: false)
+        } else {
+            map.setRegion(Self.lower48, animated: false)
+        }
         update(map, coordinator)
         return map
     }
@@ -316,7 +322,11 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
             return overlay(for: item.place, boundary: boundary, overview: true)
         }
         guard let boundary = parent.boundaries[item.place.id] else { return nil }
-        guard tier == .nationalPark || boundary.extent.intersects(visible) else { return nil }
+        // National parks reach further, so one is drawn well before it slides into view;
+        // but not the world over: Japan's and Norway's outlines have no business on the
+        // map while it shows Utah.
+        let reach = tier == .nationalPark ? visible.expanded(by: 2) : visible
+        guard boundary.extent.intersects(reach) else { return nil }
         return overlay(for: item.place, boundary: boundary, overview: false)
     }
 

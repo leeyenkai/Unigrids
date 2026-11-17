@@ -57,7 +57,7 @@ struct ResolvedStop: Identifiable {
         switch stop.target {
         case .place:
             title = place?.name ?? "Unknown place"
-            subtitle = place.map { "\($0.designation) · \($0.statesDescription)" }
+            subtitle = place.map { "\($0.designation) · \($0.bandLine)" }
                 ?? stop.placeID
             coordinate = place?.centre
         case let .pointOfInterest(id):

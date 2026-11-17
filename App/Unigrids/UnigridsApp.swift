@@ -51,14 +51,14 @@ struct UnigridsApp: App {
             case .active:
                 Task { await AlertWatch.run(log: log, store: reference.store) }
             case .background:
-                Task { await AlertWatch.schedule() }
+                Task { await AlertWatch.schedule(store: reference.store) }
             default:
                 break
             }
         }
         .backgroundTask(.appRefresh(AlertWatch.taskID)) { [log, store = reference.store] in
             await AlertWatch.run(log: log, store: store)
-            await AlertWatch.schedule()
+            await AlertWatch.schedule(store: store)
         }
         #endif
 

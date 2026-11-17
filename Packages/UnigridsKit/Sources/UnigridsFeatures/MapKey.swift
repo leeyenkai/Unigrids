@@ -83,6 +83,13 @@ struct KeySwatch: View {
 
 /// Base map and transport layers, one tap from the toolbar.
 struct MapLayersMenu: View {
+    @Environment(\.referenceStore) private var abroadStore
+
+    /// Whether railways abroad ship, so the rail layer is more than Amtrak's.
+    private var hasAbroad: Bool {
+        abroadStore.nationalParks.contains { $0.country != .unitedStates }
+    }
+
     @Binding var layers: Set<TransportLayer>
     @Binding var basemap: AtlasBasemap
 
@@ -96,7 +103,10 @@ struct MapLayersMenu: View {
             Section("Overlay") {
                 ForEach(TransportLayer.allCases) { layer in
                     Toggle(isOn: binding(for: layer)) {
-                        Label(layer.name, systemImage: UnigridsSymbol.transport(layer))
+                        Label(
+                            layer.name(withRailAbroad: hasAbroad),
+                            systemImage: UnigridsSymbol.transport(layer)
+                        )
                     }
                 }
             }
@@ -122,6 +132,13 @@ struct MapLayersMenu: View {
 // MARK: - The sheet
 
 struct MapKeySheet: View {
+    @Environment(\.referenceStore) private var abroadStore
+
+    /// Whether railways abroad ship, so the rail layer is more than Amtrak's.
+    private var hasAbroad: Bool {
+        abroadStore.nationalParks.contains { $0.country != .unitedStates }
+    }
+
     @Environment(\.dismiss) private var dismiss
     @Environment(\.unigrid) private var style
     @Binding var filter: MapFilter
@@ -140,7 +157,9 @@ struct MapKeySheet: View {
             List {
                 ForEach(SiteType.Group.allCases) { group in
                     Section {
-                        ForEach(group.types) { type in
+                        // A kind with no places behind it — another country's, before its
+                        // data ships — has no row.
+                        ForEach(group.types.filter { counts[$0, default: 0] > 0 }) { type in
                             SiteTypeToggle(
                                 type: type,
                                 count: counts[type] ?? 0,
@@ -182,10 +201,10 @@ struct MapKeySheet: View {
                         )
                     }
                     NavigationLink {
-                        StateFilterList(selection: $filter.states)
+                        SubdivisionFilterList(countries: countries, selection: $filter.states)
                     } label: {
                         FilterSummaryRow(
-                            title: "States and territories",
+                            title: countries.count > 1 ? "Regions" : "States and territories",
                             symbol: "map",
                             summary: stateSummary
                         )
@@ -216,6 +235,8 @@ struct MapKeySheet: View {
                         "Roads and railways from the US DOT National Transportation Atlas "
                             + "Database. US highways appear from regional zoom, Amtrak stations "
                             + "close up."
+                            + (hasAbroad ? " Railways in Japan and Norway from OpenStreetMap "
+                                + "contributors, ODbL." : "")
                     )
                 }
 
@@ -241,9 +262,19 @@ struct MapKeySheet: View {
             .joined(separator: ", ")
     }
 
+    /// The countries with places in the data, the US first.
+    private var countries: [Country] {
+        let present = Set(abroadStore.nationalParks.map(\.country))
+        return Country.allCases.filter(present.contains)
+    }
+
+    /// "AZ, UT" for states, as it always read; a prefecture or county by name.
     private var stateSummary: String {
         filter.states.isEmpty ? "Everywhere"
-            : filter.states.sorted().joined(separator: ", ")
+            : filter.states.compactMap(Subdivision.named)
+            .map { $0.usState?.code ?? $0.name }
+            .sorted()
+            .joined(separator: ", ")
     }
 
     private func typeBinding(_ type: SiteType) -> Binding<Bool> {
@@ -328,7 +359,13 @@ private struct SiteTypeToggle: View {
 /// A transport layer in the key, with a sample of how it is drawn.
 private struct TransportLayerToggle: View {
     @Environment(\.unigrid) private var style
+    @Environment(\.referenceStore) private var store
     let layer: TransportLayer
+
+    private var abroad: Bool {
+        store.nationalParks.contains { $0.country != .unitedStates }
+    }
+
     @Binding var isOn: Bool
 
     var body: some View {
@@ -337,9 +374,9 @@ private struct TransportLayerToggle: View {
                 TransportSample(layer: layer)
                     .frame(width: 30, height: 14)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(layer.name)
+                    Text(layer.name(withRailAbroad: abroad))
                         .font(UnigridStyle.rowTitle)
-                    Text(layer.detail)
+                    Text(layer.detail(withRailAbroad: abroad))
                         .font(UnigridStyle.rowDetail)
                         .foregroundStyle(style.inkSecondary)
                 }
@@ -400,61 +437,6 @@ private struct ActivityFilterList: View {
         }
         .paperPage()
         .navigationTitle("Activities")
-        .toolbar {
-            ToolbarItem {
-                Button("Clear") { selection = [] }
-                    .disabled(selection.isEmpty)
-            }
-        }
-    }
-}
-
-/// Pick states and territories to narrow the map to.
-private struct StateFilterList: View {
-    @Environment(\.unigrid) private var style
-    @Binding var selection: Set<String>
-    @State private var query = ""
-
-    private var states: [USState] {
-        let sorted = USState.all.sorted()
-        guard !query.isEmpty else { return sorted }
-        return sorted.filter {
-            $0.name.localizedCaseInsensitiveContains(query) || $0.code.caseInsensitiveCompare(
-                query
-            ) == .orderedSame
-        }
-    }
-
-    var body: some View {
-        List {
-            ForEach(states) { state in
-                Button {
-                    if selection.contains(state.code) {
-                        selection.remove(state.code)
-                    } else {
-                        selection.insert(state.code)
-                    }
-                } label: {
-                    HStack {
-                        Text(state.name)
-                        Spacer()
-                        Text(state.code)
-                            .font(UnigridStyle.dataLabel)
-                            .foregroundStyle(style.inkSecondary)
-                        if selection.contains(state.code) {
-                            Image(.seen)
-                                .fontWeight(.semibold)
-                        }
-                    }
-                    .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
-                .accessibilityAddTraits(selection.contains(state.code) ? .isSelected : [])
-            }
-        }
-        .paperPage()
-        .searchable(text: $query, prompt: "State or territory")
-        .navigationTitle("States")
         .toolbar {
             ToolbarItem {
                 Button("Clear") { selection = [] }

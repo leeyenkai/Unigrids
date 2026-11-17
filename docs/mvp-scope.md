@@ -1,3 +1,47 @@
+# 0.10.0 — Japan and Norway
+
+The owner's brief: grow from a guide to US public lands into a guide to the world's,
+starting with Japan's and Norway's national parks at the same depth as a US national park,
+and keep the Unigrid identity as a homage to the NPS and to Yellowstone, the first
+national park. Decided in planning: each country's second tier as pins (Japan's
+quasi-national parks; Norway's protected landscapes and major nature reserves), a passport
+book per country, one offline pilot pack per country, and this milestone before widgets
+and the Watch app. The model change is [ADR 0013](adr/0013-countries-in-the-reference-model.md);
+the assumptions taken are `SPECIFICATION.md` §17, items 21–26.
+
+## Built
+
+| Area | What changed | Specification |
+|---|---|---|
+| Model | A country on every place (defaulting to the US), ISO subdivisions beside US states, local names, the country read from an identifier, an access line for parks no road reaches; no user-data change | §13, ADR 0013 |
+| Data | Japan: 35 national parks and 58 quasi-national parks (2 outlined, 56 as points: OpenStreetMap maps few, and no national dataset exists). Norway: 48 national parks, 195 protected landscapes and 230 nature reserves of 10 km² or more. Dataset version 5; the US records unchanged | §12, §16 |
+| Guides | 83 guides written for Unigrids, every claim checked against the authorities (about 6,150; some 320 corrected, 150 removed); How this park works; Huts and cabins; local names typeset in their own language; fees in their own currency; midnight sun and polar night | §6 |
+| Kinds of place | Quasi-national parks, protected landscapes and nature reserves, each with its tier, ink and pictogram; the map key lists only kinds that have places | §5, ADR 0009 |
+| Map | Opens on the reader's country; region bar by country; Regions filter; detail scaled above 50°; outlines culled to the view; rail abroad | §5 |
+| Alerts | JMA eruption warnings and Varsom avalanche forecasts, no key; asked for by place, with their own watch keys | §10 |
+| Passport | A book per country with its own regions, inks and stamp face; the America 250 seal on US stamps only | §9 |
+| Stats | National parks, subdivisions and regions per country; tile maps of Japan and Norway; countries visited | §11 |
+| Trails and elevation | Norway: Turrutebasen's marked routes with their published grades (OpenStreetMap where it has none); Japan: OpenStreetMap; measured on Copernicus GLO-30 as the US's are on 3DEP; each park's measured lowest and highest ground | §8 |
+| Offline | Park maps for Chubu-Sangaku and Jotunheimen, zoom 10–15, credited from their own manifests | §8, ADR 0010 |
+| Trips | Access lines for island and Arctic parks; closure months from the guide; Recreation.gov only for US trips | §10 |
+| Search | Folded for accents, Nordic and Sámi letters, the ʻokina, width and kana; local names | §5 |
+| Onboarding and icons | "The idea that travelled"; Fuji and Jotunheimen app icons | §14 |
+
+## Not yet built
+
+- Japan's park zones and Norway's dated restriction areas drawn on the guide's map: the
+  guides give them in words; the 15,293 zone polygons need simplifying before they ship.
+- Huts and nearby stations for 30 Japanese parks: OpenStreetMap's query service refused
+  this machine partway through the fetch, which resumes on a second run.
+- Outlines for 56 quasi-national parks, until a source maps them.
+- Trails for six Japanese parks — Daisetsuzan, Fuji-Hakone-Izu, Chubu-Sangaku, Ise-Shima,
+  Unzen-Amakusa, Kirishima-Kinkowan — for the same Overpass reason; Chubu-Sangaku's Park
+  map draws OpenStreetMap's footpaths meanwhile, and its trail list follows a re-fetch.
+- Norwegian routes Turrutebasen leaves unnamed ("Ukjent") are not listed — Besseggen
+  among them — as the US leaves unnamed trails out; Jotunheimen's Park map still draws
+  them. OpenStreetMap
+  names many where the lines coincide; matching them is a follow-up.
+
 # 0.9.0 — Production pass
 
 The owner's brief: take the app to a standard they would use every day and show to

@@ -107,13 +107,24 @@ struct ExplorerMap: View {
 }
 
 /// A visitor centre or campground on the explorer's map.
+extension POIKind {
+    /// The glyph a facility's marker carries.
+    var facilitySymbol: String {
+        switch self {
+        case .campground: "tent.fill"
+        case .hut: "house.lodge.fill"
+        default: "info"
+        }
+    }
+}
+
 struct FacilityMarker: View {
     @Environment(\.unigrid) private var style
     let kind: POIKind
     var isSelected = false
 
     var body: some View {
-        Image(systemName: kind == .campground ? "tent.fill" : "info")
+        Image(systemName: kind.facilitySymbol)
             .font(.system(size: 10, weight: .bold))
             .foregroundStyle(isSelected ? style.onAccent : style.ink)
             .frame(width: 20, height: 20)

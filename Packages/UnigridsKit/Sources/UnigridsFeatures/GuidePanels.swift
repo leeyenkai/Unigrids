@@ -11,15 +11,20 @@ import UnigridsReference
 /// Panel 3: the figures a guide opens with. Absent figures render as absent.
 struct AtAGlancePanel: View {
     let facts: PlaceFacts
+    var country: Country = .unitedStates
 
     var body: some View {
         UnigridPanel(title: GuidePanel.atAGlance.title) {
             VStack(alignment: .leading, spacing: 12) {
                 if let year = facts.establishedYear {
-                    UnigridDataRow(label: "Established as a national park", value: String(year))
+                    UnigridDataRow(
+                        label: country == .japan ? "Designated as a national park"
+                            : "Established as a national park",
+                        value: String(year)
+                    )
                 }
-                if let acres = facts.areaAcres {
-                    UnigridDataRow(label: "Area", value: UnigridsFormat.area(acres: acres))
+                if let area = facts.area {
+                    UnigridDataRow(label: "Area", value: UnigridsFormat.area(area))
                 }
                 if let range = UnigridsFormat.elevationRange(
                     lowest: facts.lowestElevationMetres,
@@ -34,8 +39,12 @@ struct AtAGlancePanel: View {
                 }
                 if let annual = facts.annualVisits {
                     UnigridDataRow(
-                        label: facts.annualVisitsYear.map { "Recreation visits, \($0)" }
-                            ?? "Annual visits",
+                        // "Recreation visits" is the NPS's own measure; abroad, the
+                        // ministry counts visitors.
+                        label: facts.annualVisitsYear.map {
+                            country == .unitedStates
+                                ? "Recreation visits, \($0)" : "Visitors, \($0)"
+                        } ?? "Annual visits",
                         value: UnigridsFormat.visitors(annual)
                     )
                 }
@@ -197,6 +206,7 @@ struct PlanYourVisitPanel: View {
     let plan: PlanYourVisit
     let fees: [EntranceFee]
     let hours: String?
+    var country: Country = .unitedStates
 
     var body: some View {
         UnigridPanel(title: GuidePanel.planYourVisit.title) {
@@ -213,7 +223,7 @@ struct PlanYourVisitPanel: View {
                                     .font(UnigridStyle.dataValue)
                                     .foregroundStyle(style.ink)
                                 Spacer(minLength: 8)
-                                Text(fee.cost)
+                                Text(fee.displayCost())
                                     .font(.custom(
                                         "HelveticaNeue-Bold",
                                         size: 15,
@@ -224,8 +234,11 @@ struct PlanYourVisitPanel: View {
                             }
                         }
                         Text(
-                            "Fees as the NPS publishes them. "
+                            country == .unitedStates
+                                ? "Fees as the NPS publishes them. "
                                 + "Annual and lifetime passes cover entry."
+                                : "Charges as their collectors publish them; entry to the "
+                                + "park itself is free. Check before you go."
                         )
                         .font(UnigridStyle.caption)
                         .foregroundStyle(style.inkSecondary)
@@ -249,7 +262,8 @@ struct NotePanel: View {
     @Environment(\.unigrid) private var style
     let panel: GuidePanel
     let text: String
-    let source: String
+    /// Whose text it is, when it is not Unigrids' own.
+    let source: String?
 
     var body: some View {
         UnigridPanel(title: panel.title) {
@@ -258,9 +272,11 @@ struct NotePanel: View {
                     .font(UnigridStyle.prose)
                     .foregroundStyle(style.ink)
                     .fixedSize(horizontal: false, vertical: true)
-                Text("From the \(source)")
-                    .font(UnigridStyle.caption)
-                    .foregroundStyle(style.inkSecondary)
+                if let source {
+                    Text("From the \(source)")
+                        .font(UnigridStyle.caption)
+                        .foregroundStyle(style.inkSecondary)
+                }
             }
         }
     }
@@ -341,6 +357,7 @@ struct GuideCreditsPanel: View {
     let credits: [String]
     let sources: [GuideSource]
     var photos: [GuideImage] = []
+    var country: Country = .unitedStates
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -382,7 +399,9 @@ struct GuideCreditsPanel: View {
             return "\(caption), \(image.credit)"
         }
         return "Photographs: \(entries.joined(separator: "; ")). "
-            + "Photographs credited to the NPS are public domain."
+            + (country == .unitedStates ? "Photographs credited to the NPS are public domain."
+                : "Each photograph is used under the licence its author chose on Wikimedia "
+                + "Commons, named on its page there.")
     }
 }
 

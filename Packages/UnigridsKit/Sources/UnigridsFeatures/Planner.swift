@@ -317,7 +317,7 @@ enum StopFlag: Hashable, Identifiable {
         guide: GuideContent?
     ) -> [StopFlag] {
         var flags: [StopFlag] = []
-        let posted = alerts?.alerts(for: place.npsParkCode) ?? []
+        let posted = alerts?.alerts(for: place) ?? []
         for alert in posted where alert.kind == .closure || alert.kind == .danger {
             flags.append(.alert(
                 kind: alert.kind.name,
@@ -329,7 +329,14 @@ enum StopFlag: Hashable, Identifiable {
             flags.append(.reservations(reservations))
         }
         let closures = guide?.planYourVisit.seasonalClosures ?? []
-        if let date, TripSchedule.isClosureSeason(date), !closures.isEmpty {
+        let inSeason = date.map {
+            TripSchedule.isClosureSeason(
+                $0,
+                months: guide?.planYourVisit.seasonalClosureMonths ?? [],
+                calendar: UnigridsCalendar.gregorian(at: place)
+            )
+        } ?? false
+        if inSeason, !closures.isEmpty {
             flags.append(.seasonalClosures(closures))
         }
         return flags

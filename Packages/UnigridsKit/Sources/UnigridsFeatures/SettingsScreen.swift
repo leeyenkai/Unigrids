@@ -117,9 +117,14 @@ public struct SettingsScreen: View {
                     )
                 }
                 LabeledContent(
-                    "Live park alerts",
+                    store.nationalParks.contains { $0.country != .unitedStates }
+                        ? "Live park alerts, US" : "Live park alerts",
                     value: NPSAlerts.isConfigured ? "On" : "Not in this build"
                 )
+                if store.nationalParks.contains(where: { $0.country != .unitedStates }) {
+                    // JMA's and Varsom's warnings need no key, so they are on in every build.
+                    LabeledContent("Live warnings, Japan and Norway", value: "On")
+                }
                 if let note = store.manifest.note {
                     Text(note)
                         .font(UnigridStyle.caption)
@@ -303,15 +308,53 @@ struct Attribution: Identifiable {
                 + "nps.gov and shown as published, with their credits."
         ),
         Attribution(
+            name: "Ministry of the Environment, Japan",
+            terms: "Japan's national park areas and zones (the ministry's nps.zip), its lists "
+                + "of national and quasi-national parks, and its annual visitor counts, under "
+                + "the Public Data License 1.0; edited by Unigrids. Guides to Japan's parks are "
+                + "written for Unigrids from the ministry's pages and others, named in each."
+        ),
+        Attribution(
+            name: "Norwegian Environment Agency",
+            terms: "Norway's national parks, protected landscapes and nature reserves — "
+                + "boundaries, official names in every language, dates and managers — from "
+                + "Naturvernområder. Kilde: Miljødirektoratet. Norwegian Licence for Open "
+                + "Government Data (NLOD 2.0)."
+        ),
+        Attribution(
+            name: "Kartverket and Natural Earth",
+            terms: "Norway's county boundaries and its marked trails with their published "
+                + "grades (Turrutebasen), ©Kartverket, CC BY 4.0; Japan's prefecture "
+                + "boundaries from Natural Earth, public domain."
+        ),
+        Attribution(
+            name: "Copernicus GLO-30",
+            terms: "Elevation in Japan and Norway — trail profiles, each park's measured "
+                + "lowest and highest ground, relief on their offline park maps. © DLR e.V. "
+                + "2010–2014 and © Airbus Defence and Space GmbH 2014–2018, provided under "
+                + "COPERNICUS by the European Union and ESA; all rights reserved. The "
+                + "organisations in charge of the Copernicus programme by law or by "
+                + "delegation do not incur any liability for any use of the Copernicus "
+                + "WorldDEM-30. Measured by Unigrids."
+        ),
+        Attribution(
+            name: "Wikidata",
+            terms: "The links between places abroad and their Wikipedia articles and "
+                + "photographs, CC0."
+        ),
+        Attribution(
             name: "Wikimedia Commons",
-            terms: "Photographs of state parks, monuments and refuges, each credited to its "
-                + "photographer under the licence shown with it."
+            terms: "Photographs of state parks, monuments and refuges, and of Japan's and "
+                + "Norway's parks, each credited to its photographer under the licence shown "
+                + "with it."
         ),
         Attribution(
             name: "OpenStreetMap",
-            terms: "Trail lines in Sequoia and Kings Canyon, and the roads and water drawn in "
-                + "the offline park maps: © OpenStreetMap contributors, available under the "
-                + "Open Database Licence (ODbL)."
+            terms: "Trail lines in Sequoia and Kings Canyon, in Japan, and in Norway's parks "
+                + "Turrutebasen does not cover; outlines of Japan's quasi-national "
+                + "parks; huts, railway stations and lines in Japan and Norway; and the roads "
+                + "and water drawn in the offline park maps: © OpenStreetMap contributors, "
+                + "available under the Open Database Licence (ODbL)."
         ),
         Attribution(
             name: "Apple Maps",

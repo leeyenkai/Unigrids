@@ -38,13 +38,21 @@ public enum AlertWatch {
         })
     }
 
+    /// Whether there is anything to watch in this build: the NPS feed, given a key, or
+    /// the warning services abroad, given parks there.
+    static func isActive(store: any ReferenceStore) -> Bool {
+        NPSAlerts.isConfigured || store.nationalParks.contains { $0.country != .unitedStates }
+    }
+
     /// Look once: fetch the watched parks' alerts, notify what is new, remember the rest.
     public static func run(log: StoreLoader, store: any ReferenceStore) async {
         // Before the first unlock the log cannot be read; the next run will look.
-        guard NPSAlerts.isConfigured, ProtectedData.isAvailable else { return }
+        guard isActive(store: store), ProtectedData.isAvailable else { return }
         await log.load()
         guard let container = log.container else { return }
         let trips = (try? container.mainContext.fetch(FetchDescriptor<Trip>())) ?? []
+        await runAbroad(trips: trips, store: store)
+        guard NPSAlerts.isConfigured else { return }
         let watching = parkCodes(trips: trips, store: store, now: Date())
         let seen = loadSeen()
         guard !watching.isEmpty else {
@@ -75,6 +83,81 @@ public enum AlertWatch {
         }
     }
 
+    /// The parks abroad on trips under way or starting within thirty days.
+    static func parksAbroad(trips: [Trip], store: any ReferenceStore, now: Date) -> [Place] {
+        let horizon = now.addingTimeInterval(30 * 86400)
+        let soon = trips.filter { trip in
+            switch trip.status(on: now) {
+            case .active: true
+            case .planned: trip.startDate.map { $0 <= horizon } ?? false
+            case .done: false
+            }
+        }
+        let places = soon.flatMap(\.orderedStops).compactMap { store.place($0.place) }
+            .filter { $0.country != .unitedStates && AlertsCenter.covers($0) }
+        var seen = Set<UnigridsID>()
+        return places.filter { seen.insert($0.id).inserted }
+    }
+
+    /// The same look for parks abroad, against JMA and Varsom, remembered apart from the
+    /// NPS's so neither can make the other's alerts look new. A service that cannot be
+    /// reached leaves what was seen as it was.
+    private static func runAbroad(trips: [Trip], store: any ReferenceStore) async {
+        let parks = parksAbroad(trips: trips, store: store, now: Date())
+        let seen = loadSeen(key: seenAbroadKey)
+        guard !parks.isEmpty else {
+            save(AlertDiff.Seen(parks: [], alerts: seen.alerts), key: seenAbroadKey)
+            return
+        }
+        let center = AlertsCenter()
+        let japan = parks.filter { $0.country == .japan }
+        await center.refreshJapan(japan.map { ($0, store.boundary(for: $0.id)) }, force: true)
+        for park in parks where park.country == .norway {
+            await center.refreshAbroad(park, boundary: nil)
+        }
+        let reached = parks.filter { !center.failed(for: $0) }
+        guard !reached.isEmpty else { return }
+        var byID: [String: (ParkAlert, Place)] = [:]
+        let alerts = reached.flatMap { park in
+            center.alerts(for: park).map { alert in
+                byID[alert.id] = (alert, park)
+                return AlertDiff.Alert(
+                    id: alert.id,
+                    parkCode: park.id.rawValue,
+                    isUrgent: alert.kind == .danger || alert.kind == .closure
+                )
+            }
+        }
+        let result = AlertDiff.check(
+            alerts,
+            watching: Set(reached.map(\.id.rawValue)),
+            seen: seen
+        )
+        save(result.seen, key: seenAbroadKey)
+        for item in result.notify {
+            if let (alert, park) = byID[item.id] {
+                await post(alert, at: park)
+            }
+        }
+    }
+
+    private static func post(_ alert: ParkAlert, at place: Place) async {
+        let center = UNUserNotificationCenter.current()
+        _ = try? await center.requestAuthorization(options: [.alert, .sound, .provisional])
+        let content = UNMutableNotificationContent()
+        content.title = "\(alert.kind.name) at \(place.name)"
+        content.body = alert.title
+        content.sound = .default
+        content.userInfo = [
+            NotificationRoute.key: NotificationRoute.alert.rawValue,
+            "place": place.id.rawValue,
+        ]
+        let request = UNNotificationRequest(
+            identifier: prefix + alert.id, content: content, trigger: nil
+        )
+        try? await center.add(request)
+    }
+
     private static func post(_ alert: ParkAlert, store: any ReferenceStore) async {
         let center = UNUserNotificationCenter.current()
         _ = try? await center.requestAuthorization(options: [.alert, .sound, .provisional])
@@ -94,21 +177,24 @@ public enum AlertWatch {
         try? await center.add(request)
     }
 
-    private static func loadSeen() -> AlertDiff.Seen {
-        UserDefaults.standard.data(forKey: seenKey)
+    /// Parks abroad keep their own record, keyed by place identifier.
+    static let seenAbroadKey = "alerts.watch.seen.abroad"
+
+    private static func loadSeen(key: String = seenKey) -> AlertDiff.Seen {
+        UserDefaults.standard.data(forKey: key)
             .flatMap { try? JSONDecoder().decode(AlertDiff.Seen.self, from: $0) } ?? AlertDiff
             .Seen()
     }
 
-    private static func save(_ seen: AlertDiff.Seen) {
-        UserDefaults.standard.set(try? JSONEncoder().encode(seen), forKey: seenKey)
+    private static func save(_ seen: AlertDiff.Seen, key: String = seenKey) {
+        UserDefaults.standard.set(try? JSONEncoder().encode(seen), forKey: key)
     }
 
     #if os(iOS)
         /// Ask iOS to wake the app to look again in a few hours. iOS decides when, or
         /// whether: background refresh is a request, not a timer.
-        public static func schedule() async {
-            guard NPSAlerts.isConfigured else { return }
+        public static func schedule(store: any ReferenceStore) async {
+            guard isActive(store: store) else { return }
             let request = BGAppRefreshTaskRequest(identifier: taskID)
             request.earliestBeginDate = Date().addingTimeInterval(3 * 3600)
             try? await BGTaskScheduler.shared.submitTaskRequest(request)
@@ -116,7 +202,7 @@ public enum AlertWatch {
     #else
         /// Look every three hours while the app is open.
         public static func keepWatching(log: StoreLoader, store: any ReferenceStore) async {
-            guard NPSAlerts.isConfigured else { return }
+            guard isActive(store: store) else { return }
             while !Task.isCancelled {
                 await run(log: log, store: store)
                 try? await Task.sleep(for: .seconds(3 * 3600))

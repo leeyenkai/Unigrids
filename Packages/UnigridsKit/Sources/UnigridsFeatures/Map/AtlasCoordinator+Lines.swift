@@ -104,7 +104,7 @@ extension AtlasCoordinator {
     func syncStations(_ view: AtlasMapView, on map: MKMapView) {
         let wanted = view.layers.contains(.amtrak) && latitudeSpan <= MapDetail.stationSpan
         if wanted, stationAnnotations.isEmpty {
-            stationAnnotations = view.transport.amtrakStations.map(StationAnnotation.init)
+            stationAnnotations = view.transport.allStations.map(StationAnnotation.init)
             map.addAnnotations(stationAnnotations)
         } else if !wanted, !stationAnnotations.isEmpty {
             map.removeAnnotations(stationAnnotations)

@@ -62,11 +62,13 @@ public struct StampSheet: View {
         StampFace(
             siteName: place.name,
             date: date,
-            stateCode: place.states.first?.code ?? "US",
+            stateCode: place.stampMark,
             region: region,
+            country: place.country,
             seed: seed,
             isVerifiedOnSite: verified,
-            calendar: calendar
+            calendar: calendar,
+            localName: place.leadLocalName?.text
         )
     }
 
@@ -98,7 +100,7 @@ public struct StampSheet: View {
             // the preview does not pretend to be the exact impression you will get.
             StampView(face: face(seed: 0xC0FF_EE00, date: date, verified: false), diameter: 150)
             Kicker("\(region.name) region")
-            if America250.applies(to: date, calendar: calendar) {
+            if America250.applies(to: date, in: place.country, calendar: calendar) {
                 Label {
                     Text("Dated in 2026 — this impression gets the America 250 seal")
                 } icon: {

@@ -40,7 +40,7 @@ struct ParkExplorer: View {
 
     private var facilities: [PointOfInterest] {
         store.pointsOfInterest(in: place.id)
-            .filter { $0.kind == .visitorCentre || $0.kind == .campground }
+            .filter(\.kind.isFacility)
     }
 
     private var trails: [Trail] {

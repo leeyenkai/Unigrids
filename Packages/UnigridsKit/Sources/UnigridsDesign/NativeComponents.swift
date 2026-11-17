@@ -27,7 +27,9 @@ public struct NonAffiliationNotice: View {
     public var body: some View {
         Text(
             "Unigrids is not affiliated with, endorsed by or sponsored by the "
-                + "National Park Service or any other government agency."
+                + "National Park Service, Japan's Ministry of the Environment, the Norwegian "
+                + "Environment Agency or any other government agency, and uses none of their "
+                + "marks."
         )
         .font(.footnote)
         .foregroundStyle(style.inkSecondary)

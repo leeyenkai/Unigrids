@@ -26,9 +26,7 @@ struct PlaceOverviewPanel: View {
 
     /// Dangers and closures: what the pin's badge stands for.
     private var urgentCount: Int {
-        place.npsParkCode.map { code in
-            alerts?.alerts(for: code).count { $0.kind <= .closure } ?? 0
-        } ?? 0
+        alerts?.alerts(for: place).count { $0.kind <= .closure } ?? 0
     }
 
     private var placeVisits: [Visit] {
@@ -49,8 +47,8 @@ struct PlaceOverviewPanel: View {
                     VisitStatusLine(visits: placeVisits)
                     // The map badges a park with a posted closure or danger; this is where
                     // the badge leads.
-                    if let code = place.npsParkCode, urgentCount > 0 {
-                        CardAlerts(parkCode: code)
+                    if urgentCount > 0 {
+                        CardAlerts(place: place)
                     }
                     if place.summary != nil {
                         OverviewSummary(place: place)
@@ -88,7 +86,7 @@ struct OverviewBand: View {
     let onClose: () -> Void
 
     var body: some View {
-        BandHeader(place.name, kicker: "\(place.designation) · \(place.statesDescription)") {
+        BandHeader(place.name, kicker: "\(place.designation) · \(place.bandLine)") {
             BandCloseButton(action: onClose)
         }
         .accessibilityElement(children: .contain)
@@ -161,10 +159,13 @@ struct OverviewFigures: View {
     @Environment(\.referenceStore) private var store
     let place: Place
 
-    /// A landmark or a byway is designated, not established.
+    /// A landmark or a byway is designated, not established; so is a park in Japan, and
+    /// a reserve or landscape in Norway is protected.
     private var yearLabel: String {
         switch place.kind {
-        case .naturalLandmark, .scenicByway: "Designated"
+        case .naturalLandmark, .scenicByway, .quasiNationalPark: "Designated"
+        case .protectedLandscape, .natureReserve: "Protected"
+        case .nationalPark where place.country == .japan: "Designated"
         default: "Established"
         }
     }
@@ -176,9 +177,9 @@ struct OverviewFigures: View {
                 if let year = facts.establishedYear {
                     FigureBlock(value: String(year), label: yearLabel, compact: true)
                 }
-                if let acres = facts.areaAcres {
+                if let area = facts.area {
                     FigureBlock(
-                        value: UnigridsFormat.area(acres: acres),
+                        value: UnigridsFormat.area(area),
                         label: place.kind == .nationalForest ? "Within boundary" : "Area",
                         compact: true
                     )
@@ -288,7 +289,7 @@ func openInMaps(_ place: Place) {
     let location = CLLocation(latitude: place.centre.latitude, longitude: place.centre.longitude)
     let item = MKMapItem(
         location: location,
-        address: MKAddress(fullAddress: place.statesDescription, shortAddress: place.name)
+        address: MKAddress(fullAddress: place.bandLine, shortAddress: place.name)
     )
     item.name = "\(place.name) \(place.designation)"
     item.openInMaps()

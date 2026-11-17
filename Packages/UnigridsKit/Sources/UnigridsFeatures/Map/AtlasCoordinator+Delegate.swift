@@ -90,7 +90,10 @@ extension AtlasCoordinator {
     }
 
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated _: Bool) {
-        let span = mapView.region.span.latitudeDelta
+        let span = MapDetail.detailSpan(
+            latitudeSpan: mapView.region.span.latitudeDelta,
+            centerLatitude: mapView.region.center.latitude
+        )
         let crossedLabelThreshold = Self.labelBand(span) != Self.labelBand(latitudeSpan)
         let crossedOutlineThreshold = (span > MapDetail.allOutlinesSpan)
             != (latitudeSpan > MapDetail.allOutlinesSpan)

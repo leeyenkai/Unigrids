@@ -2,8 +2,10 @@ import Foundation
 import SwiftUI
 import UnigridsCore
 import UnigridsDesign
+import UnigridsReference
 
-/// One live NPS alert (SPECIFICATION.md §10, "Live park alerts").
+/// One live alert (SPECIFICATION.md §10, "Live park alerts"), decoded from the NPS API's
+/// shape.
 struct ParkAlert: Decodable, Identifiable, Hashable, Sendable {
     let id: String
     let title: String
@@ -12,6 +14,12 @@ struct ParkAlert: Decodable, Identifiable, Hashable, Sendable {
     let url: String?
     /// The NPS park code the alert is posted for, lower case as the API sends it.
     let parkCode: String?
+    /// Who posted it. Not in the NPS's JSON: everything decoded here is the NPS's.
+    var source: AlertSource = .nps
+
+    private enum CodingKeys: String, CodingKey {
+        case id, title, description, category, url, parkCode
+    }
 
     var kind: Kind {
         switch category.lowercased() {
@@ -178,6 +186,12 @@ public final class AlertsCenter {
     private var loading = false
     private var failures = 0
     private var retryAfter: Date?
+    /// Warnings abroad, by place, from JMA and Varsom: fetched for a place when its page
+    /// opens, and for every Japanese park at once for the map's badges.
+    private(set) var abroad: [UnigridsID: [ParkAlert]] = [:]
+    private(set) var abroadUpdated: [UnigridsID: Date] = [:]
+    private(set) var abroadFailed: Set<UnigridsID> = []
+    private var jmaFetched: Date?
 
     public init() {}
 
@@ -217,15 +231,105 @@ public final class AlertsCenter {
         lastUpdated = Date()
     }
 
-    func alerts(for parkCode: String?) -> [ParkAlert] {
-        guard let parkCode else { return [] }
+    /// Whether this build can show live alerts for a place: an NPS site, in a build that
+    /// carries a key. Every screen asks this rather than looking for a park code, so
+    /// another country's warning service joins here and nowhere else.
+    /// Abroad, every national park: JMA's warnings need no key, nor do Varsom's.
+    static func covers(_ place: Place) -> Bool {
+        switch place.country {
+        case .unitedStates: place.npsParkCode != nil && NPSAlerts.isConfigured
+        case .japan, .norway: place.kind == .nationalPark
+        }
+    }
+
+    /// Who posts a place's alerts.
+    static func source(for place: Place) -> AlertSource {
+        switch place.country {
+        case .unitedStates: .nps
+        case .japan: .jma
+        case .norway: .varsom
+        }
+    }
+
+    /// A place's alerts, most urgent first.
+    func alerts(for place: Place) -> [ParkAlert] {
+        guard place.country == .unitedStates else { return abroad[place.id] ?? [] }
+        guard let parkCode = place.npsParkCode else { return [] }
         return byPark[parkCode.uppercased()] ?? []
     }
 
-    /// The badge a park's pin carries, if any: danger outranks closure, and cautions and
+    /// When a place's alerts were last fetched, if they have been.
+    func updated(for place: Place) -> Date? {
+        place.country == .unitedStates ? lastUpdated : abroadUpdated[place.id]
+    }
+
+    /// Whether the last fetch of a place's alerts failed.
+    func failed(for place: Place) -> Bool {
+        place.country == .unitedStates ? lastFailed : abroadFailed.contains(place.id)
+    }
+
+    /// A place's warnings abroad, unless fetched in the last hour: JMA's for the
+    /// volcanoes inside its outline, Varsom's where its centre lies.
+    func refreshAbroad(_ place: Place, boundary: PlaceBoundary?) async {
+        guard place.country != .unitedStates, Self.covers(place) else { return }
+        if let updated = abroadUpdated[place.id], Date().timeIntervalSince(updated) < 3600 {
+            return
+        }
+        switch place.country {
+        case .japan:
+            await refreshJapan([(place, boundary)])
+        case .norway:
+            do {
+                let alerts = try await VarsomAvalanche.alerts(at: place.centre)
+                record(alerts, for: place.id)
+            } catch {
+                abroadFailed.insert(place.id)
+            }
+        case .unitedStates:
+            break
+        }
+    }
+
+    /// JMA's warnings for every Japanese park given, from one fetch of the volcano list
+    /// and the warnings in force; at most hourly.
+    func refreshJapan(_ parks: [(Place, PlaceBoundary?)], force: Bool = false) async {
+        guard !parks.isEmpty else { return }
+        let fresh = jmaFetched.map { Date().timeIntervalSince($0) < 3600 } ?? false
+        if !force, fresh, parks.allSatisfy({ abroadUpdated[$0.0.id] != nil }) {
+            return
+        }
+        guard let (volcanoes, warnings) = try? await JMAVolcanoes.fetch() else {
+            for (place, _) in parks {
+                abroadFailed.insert(place.id)
+            }
+            return
+        }
+        jmaFetched = Date()
+        let byCode = Dictionary(grouping: warnings, by: \.volcanoCode)
+        for (place, boundary) in parks {
+            // A volcano is the park's when its summit lies inside the outline, or, for a
+            // park drawn without one, within ten kilometres of its centre.
+            let inside = volcanoes.filter { volcano in
+                boundary.map { $0.contains(volcano.location) }
+                    ?? (volcano.location.distance(to: place.centre) < 10000)
+            }
+            let alerts = inside.flatMap { volcano in
+                (byCode[volcano.code] ?? []).map { JMAVolcanoes.alert(for: $0, volcano: volcano) }
+            }
+            record(alerts, for: place.id)
+        }
+    }
+
+    private func record(_ alerts: [ParkAlert], for id: UnigridsID) {
+        abroad[id] = alerts.sorted { ($0.kind, $0.title) < ($1.kind, $1.title) }
+        abroadUpdated[id] = Date()
+        abroadFailed.remove(id)
+    }
+
+    /// The badge a place's pin carries, if any: danger outranks closure, and cautions and
     /// notices do not badge at all.
-    func mapLevel(for parkCode: String?) -> MapAlertLevel? {
-        let kinds = Set(alerts(for: parkCode).map(\.kind))
+    func mapLevel(for place: Place) -> MapAlertLevel? {
+        let kinds = Set(alerts(for: place).map(\.kind))
         if kinds.contains(.danger) {
             return .danger
         }
@@ -239,14 +343,21 @@ public final class AlertsCenter {
 /// The guide's Alerts panel: what the park has posted right now, from the shared fetch.
 struct AlertsPanel: View {
     @Environment(\.unigrid) private var style
+    @Environment(\.referenceStore) private var store
     @Environment(AlertsCenter.self) private var center: AlertsCenter?
-    let parkCode: String
+    let place: Place
 
     var body: some View {
         UnigridPanel(title: GuidePanel.alerts.title) {
-            AlertList(parkCode: parkCode)
+            AlertList(place: place)
         }
-        .task(id: parkCode) { await center?.refreshIfStale() }
+        .task(id: place.id) {
+            if place.country == .unitedStates {
+                await center?.refreshIfStale()
+            } else {
+                await center?.refreshAbroad(place, boundary: store.boundary(for: place.id))
+            }
+        }
     }
 }
 
@@ -255,14 +366,18 @@ struct AlertsPanel: View {
 struct AlertList: View {
     @Environment(\.unigrid) private var style
     @Environment(AlertsCenter.self) private var center: AlertsCenter?
-    let parkCode: String
+    let place: Place
+
+    private var source: AlertSource {
+        AlertsCenter.source(for: place)
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            if let center, let updated = center.lastUpdated {
-                let alerts = center.alerts(for: parkCode)
+            if let center, let updated = center.updated(for: place) {
+                let alerts = center.alerts(for: place)
                 if alerts.isEmpty {
-                    Text("No alerts posted right now.")
+                    Text(source.noneText)
                         .font(UnigridStyle.prose)
                         .foregroundStyle(style.inkSecondary)
                 } else {
@@ -273,12 +388,12 @@ struct AlertList: View {
                         }
                     }
                 }
-                Text("Live from the National Park Service · updated "
+                Text("Live from \(source.name) · updated "
                     + updated.formatted(date: .omitted, time: .shortened))
                     .font(UnigridStyle.caption)
                     .foregroundStyle(style.inkSecondary)
-            } else if center?.lastFailed == true {
-                Text("The NPS could not be reached. Alerts need a connection.")
+            } else if center?.failed(for: place) == true {
+                Text(source.unreachable)
                     .font(UnigridStyle.prose)
                     .foregroundStyle(style.inkSecondary)
             } else {
@@ -294,10 +409,10 @@ struct AlertList: View {
 struct CardAlerts: View {
     @Environment(\.unigrid) private var style
     @Environment(AlertsCenter.self) private var center: AlertsCenter?
-    let parkCode: String
+    let place: Place
 
     var body: some View {
-        let all = center?.alerts(for: parkCode) ?? []
+        let all = center?.alerts(for: place) ?? []
         let urgent = all.filter { $0.kind <= .closure }
         VStack(alignment: .leading, spacing: 8) {
             SectionHead("Alerts", detail: "\(urgent.count)")
@@ -351,7 +466,7 @@ struct AlertRow: View {
             .buttonStyle(.plain)
             .accessibilityHint(expanded ? "Shows less" : "Shows the whole alert")
             if let link = alert.url.flatMap(URL.init(string:)), !(alert.url ?? "").isEmpty {
-                Link("More on nps.gov", destination: link)
+                Link(alert.source.linkLabel, destination: link)
                     .font(UnigridStyle.caption)
             }
         }

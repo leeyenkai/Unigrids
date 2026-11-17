@@ -22,8 +22,10 @@ struct BundledLandsTests {
         #expect((byType[.conservationArea]?.count ?? 0) >= 15)
         #expect((byType[.naturalLandmark]?.count ?? 0) >= 500)
         #expect((byType[.scenicByway]?.count ?? 0) >= 150)
-        // Every type in the key has places behind it.
-        for type in SiteType.allCases {
+        // Every type of every country in the data has places behind it. Another
+        // country's types join this check when its data ships.
+        let countries = Set(store.places.map(\.country))
+        for type in SiteType.allCases where type.homeCountry.map(countries.contains) ?? true {
             #expect(byType[type]?.isEmpty == false, "no \(type.name) in the dataset")
         }
     }

@@ -12,7 +12,73 @@ makes the change. A release moves that block under a version heading with its da
 
 ## [Unreleased]
 
+### Added
+
+- **Japan and Norway.** The idea that began at Yellowstone in 1872 travelled; so does
+  Unigrids. Japan's 35 national parks and Norway's 48 — seven of them on Svalbard — each
+  have a full Unigrid guide written for Unigrids and checked claim by claim against the
+  parks' own authorities: the park's name in its own language and script under the
+  English one, its prefectures or counties, sights, plan your visit, chronology, safety,
+  regulations, credited photographs from Wikimedia Commons, climate, official brochures,
+  and a new panel, "How this park works" — Japan's zoned parks with towns and shrines
+  inside them, Norway's right to roam and each park's own rules, Svalbard's notification
+  and polar bear rules — and another, "Huts and cabins".
+- The second tier as pins and leaflets: Japan's 58 quasi-national parks, and Norway's
+  195 protected landscapes and 230 nature reserves of 10 km² or more, with the year each
+  was protected where the authority publishes it, its area, its manager and a credited
+  summary.
+- Live warnings from each country's own service, with no key: the Japan Meteorological
+  Agency's eruption warnings for the volcanoes in a park, and Varsom's avalanche forecast
+  where a Norwegian park lies.
+- A passport book per country. Japan's echoes the visitor-centre commemorative stamp —
+  one ring, the park's name in kanji, the date as 2026.07.20 — and Norway's a postmark;
+  the America 250 seal stays on US stamps.
+- Stats count national parks per country and overall, with a tile map of Japan's 47
+  prefectures in kanji and Norway's counties beside the states, and countries visited.
+- A new onboarding page, "The idea that travelled": Yellowstone in 1872, the Park Service
+  in 1916, Japan's first parks in 1934, Rondane in 1962.
+- The map opens on the reader's own country if its parks ship. Its region bar reads
+  World, then each country by name, the one on screen followed by its own regions —
+  Hokkaido, Okinawa & Amami, Ogasawara; Svalbard. The state filter becomes Regions, with
+  prefectures and counties. Japan's and Norway's passenger railways are on the rail layer.
+- A trip to an island or Arctic park says how it is reached where no road does — "Fly to
+  Longyearbyen, then by boat", "Ferry from Tokyo, about 24 hours" — instead of a failed
+  route.
+- A guide for a park far enough north or south gives the dates of its midnight sun and
+  polar night, worked out for the park's centre.
+- Trails abroad, measured as the US's are: Norway's marked routes from Kartverket's
+  Turrutebasen, with their published grade (green, blue, red, black), and Japan's from
+  OpenStreetMap, each with its profile on Copernicus elevation. Each park abroad also
+  shows its lowest and highest ground, measured by Unigrids.
+- Offline Park maps for Chubu-Sangaku (the Japan Alps) and Jotunheimen, in the bundle.
+- The map reopens where you left it.
+- An arrival suggestion can be turned off for a place ("Don't suggest here again", or
+  swipe), and Settings brings them all back.
+- Two app icons from abroad, chosen in Settings on iPhone and iPad: Fuji-Hakone-Izu
+  (Mount Fuji over its lakes) and Jotunheimen (a green lake under snowy peaks).
+
 ### Changed
+
+- The whole of Norway on screen reads at the detail the Lower 48 does — grouped park
+  pins, no names — because the map's detail now allows for how far it stretches north of
+  50°; in Alaska too, names and smaller pins arrive a little closer in. The Lower 48,
+  Hawaiʻi and Japan are unchanged.
+- A trail's elevation profile reads in miles and feet for a US reader, as the figures
+  beside it already did.
+- Reminders offer Recreation.gov only for a trip with a stop in the US.
+
+- The map draws a national park's outline only when the park is within reach of the view,
+  which keeps panning quick as more parks join.
+- The non-affiliation line also names Japan's Ministry of the Environment and the
+  Norwegian Environment Agency.
+
+- Search finds a name typed without its accents or marks: "haleakala" finds Haleakalā,
+  "hawaii volcanoes" Hawaiʻi Volcanoes, on the map and among the national parks in Parks.
+- A saved map filter now keeps through later releases: a kind of place added since is
+  shown rather than hidden, and nothing it does not recognise resets it.
+- A trip stop's seasonal-closure flag goes by the month at the park, not on the device.
+- The map key's national park line no longer spells out how many there are; the count
+  beside it does.
 
 - A place card's alerts are now short: the park's dangers and closures by title, three
   at most, and a count of the rest, which are on its page. National monuments, historic
@@ -20,6 +86,10 @@ makes the change. A release moves that block under a version heading with its da
   with a guide already did.
 
 ### Fixed
+
+- The offline Park maps draw a lake mapped in pieces as one body of water, not as
+  slivers closed by straight lines: Yellowstone Lake was cut in two, and a stretch of the
+  Yellowstone River drawn as a lake.
 
 - Moving a visit to a day that already has a visit to the same place joins the two,
   instead of leaving two visits on one day. Importing a backup from another device does

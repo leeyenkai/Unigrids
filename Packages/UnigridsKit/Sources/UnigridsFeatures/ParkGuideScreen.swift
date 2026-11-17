@@ -45,7 +45,9 @@ public struct ParkGuideScreen: View {
                 UnigridTitleBand(
                     name: place.name,
                     designation: place.designation,
-                    states: place.statesDescription
+                    states: place.bandLine,
+                    localName: place.leadLocalName?.text,
+                    localLanguage: place.leadLocalName?.language
                 )
                 if let guide = store.guide(for: place.id) {
                     if let hero = guide.hero {
@@ -176,13 +178,15 @@ public struct ParkGuideScreen: View {
         let sights = store.sights(in: place.id)
         let centres = store.visitorCentres(in: place.id)
         let trails = store.trails(in: place.id)
+        let huts = store.huts(in: place.id)
         let panels = guide.panels(
             placeHasFacts: !place.facts.isEmpty,
             sightCount: sights.count,
             visitorCentreCount: centres.count,
             hasTrails: !trails.isEmpty,
             hasMap: store.boundary(for: place.id) != nil || !sights.isEmpty,
-            showsAlerts: place.npsParkCode != nil && NPSAlerts.isConfigured
+            showsAlerts: AlertsCenter.covers(place),
+            hutCount: huts.count
         )
         // The hero sits full-bleed under the band, not on the grid.
         .filter {
@@ -224,7 +228,8 @@ public struct ParkGuideScreen: View {
             GuideCreditsPanel(
                 credits: guide.credits,
                 sources: guide.sources,
-                photos: [guide.hero].compactMap(\.self) + guide.gallery
+                photos: [guide.hero].compactMap(\.self) + guide.gallery,
+                country: place.country
             )
         }
         .padding(UnigridStyle.pageMargin)
@@ -241,9 +246,11 @@ public struct ParkGuideScreen: View {
         case let .hero(image), let .map(image):
             GuideImagePanel(image: image)
         case .atAGlance:
-            AtAGlancePanel(facts: place.facts)
+            AtAGlancePanel(facts: place.facts, country: place.country)
         case .story:
             StoryPanel(paragraphs: guide.story)
+        case .howItWorks:
+            HowItWorksPanel(paragraphs: guide.howItWorks)
         case .gallery:
             GalleryPanel(images: guide.gallery)
         case .parkMap:
@@ -263,25 +270,29 @@ public struct ParkGuideScreen: View {
             )
         case .visitorCentres:
             VisitorCentresPanel(centres: centres)
+        case .huts:
+            HutsPanel(huts: store.huts(in: place.id))
         case .trailHighlights:
             TrailHighlightsPanel(
                 place: place, trails: store.trails(in: place.id), named: guide.trailHighlightIDs
             )
         case .alerts:
-            AlertsPanel(parkCode: place.npsParkCode ?? "")
+            AlertsPanel(place: place)
         case .planYourVisit:
             PlanYourVisitPanel(
                 plan: guide.planYourVisit,
                 fees: guide.fees,
-                hours: guide.operatingHours
+                hours: guide.operatingHours,
+                country: place.country
             )
         case .weather:
             WeatherPanel(place: place, note: guide.weather)
         case .gettingThere:
+            // The NPS's own text at home; written for Unigrids abroad, credited in Sources.
             NotePanel(
                 panel: .gettingThere,
                 text: guide.directions ?? "",
-                source: "National Park Service"
+                source: place.country == .unitedStates ? "National Park Service" : nil
             )
         case .chronology:
             ChronologyPanel(entries: guide.chronology)

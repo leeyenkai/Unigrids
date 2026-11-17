@@ -20,19 +20,24 @@ struct TrailProfileChart: View {
     @ViewBuilder
     private var content: some View {
         if trail.profile.count >= 2 {
-            let low = trail.profile.map(\.elevationMetres).min() ?? 0
-            let high = trail.profile.map(\.elevationMetres).max() ?? 0
-            let pad = max((high - low) * 0.15, 10)
+            // The axes read in the units the figures beside them do: miles and feet for a
+            // US reader, kilometres and metres for everyone else.
+            let usUnits = UnigridsFormat.usesUSUnits(.current)
+            let along = usUnits ? 1609.344 : 1000
+            let up = usUnits ? 0.3048 : 1
+            let low = (trail.profile.map(\.elevationMetres).min() ?? 0) / up
+            let high = (trail.profile.map(\.elevationMetres).max() ?? 0) / up
+            let pad = max((high - low) * 0.15, usUnits ? 30 : 10)
             Chart(trail.profile, id: \.distanceMetres) { point in
                 AreaMark(
-                    x: .value("Distance", point.distanceMetres / 1000),
+                    x: .value("Distance", point.distanceMetres / along),
                     yStart: .value("Floor", low - pad),
-                    yEnd: .value("Elevation", point.elevationMetres)
+                    yEnd: .value("Elevation", point.elevationMetres / up)
                 )
                 .foregroundStyle(style.trail.opacity(0.22))
                 LineMark(
-                    x: .value("Distance", point.distanceMetres / 1000),
-                    y: .value("Elevation", point.elevationMetres)
+                    x: .value("Distance", point.distanceMetres / along),
+                    y: .value("Elevation", point.elevationMetres / up)
                 )
                 .foregroundStyle(style.trail)
                 .lineStyle(StrokeStyle(lineWidth: 2))
@@ -40,13 +45,14 @@ struct TrailProfileChart: View {
             .chartYScale(domain: (low - pad) ... (high + pad))
             .chartXAxis(showsAxes ? .automatic : .hidden)
             .chartYAxis(showsAxes ? .automatic : .hidden)
-            .chartXAxisLabel(showsAxes ? "km" : "", alignment: .trailing)
+            .chartXAxisLabel(showsAxes ? (usUnits ? "mi" : "km") : "", alignment: .trailing)
+            .chartYAxisLabel(showsAxes ? (usUnits ? "ft" : "m") : "", position: .top)
             .frame(height: height)
             .accessibilityLabel("Elevation profile")
             .accessibilityValue(
                 "From \(UnigridsFormat.elevation(trail.profile.first?.elevationMetres ?? 0)) "
                     + "to \(UnigridsFormat.elevation(trail.profile.last?.elevationMetres ?? 0)), "
-                    + "highest \(UnigridsFormat.elevation(high))"
+                    + "highest \(UnigridsFormat.elevation(high * up))"
             )
         }
     }
@@ -368,5 +374,32 @@ struct HikeSheet: View {
         } catch {
             self.error = "This hike could not be saved: \(error.localizedDescription)"
         }
+    }
+}
+
+extension TrailDetailScreen {
+    /// The trail's own source first — the NPS's public trails data, or OpenStreetMap under
+    /// the ODbL — then how Unigrids measured it.
+    static func credit(for trail: Trail) -> String {
+        let line = switch trail.source {
+        case "osm": "Trail line © OpenStreetMap contributors, available under the Open "
+            + "Database Licence (ODbL). "
+        case "kartverket": "Trail line from Kartverket's national database of marked routes "
+            + "(Turrutebasen), CC BY 4.0. "
+        default: "Trail line from the National Park Service's public trails data. "
+        }
+        // The US is measured on USGS 3DEP; abroad, on one global model for both countries.
+        let elevation = Country.inferred(from: trail.placeID) == .unitedStates
+            ? "USGS 3DEP elevation"
+            : "Copernicus GLO-30 elevation (© DLR e.V. 2010–2014 and © Airbus Defence and "
+            + "Space GmbH 2014–2018, provided under COPERNICUS by the European Union and ESA)"
+        let effort = if let grade = trail.publishedGrade, grade.band != nil {
+            "effort as \(grade.publisher ?? "its authority") grades it, read into Unigrids' "
+                + "five bands"
+        } else {
+            "effort estimated from them by Shenandoah National Park's published rating"
+        }
+        return line + "Length, climb and profile measured by Unigrids from \(elevation) at a "
+            + "station every 30 m; \(effort). For planning, not navigation."
     }
 }

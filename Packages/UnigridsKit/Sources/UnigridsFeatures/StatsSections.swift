@@ -21,7 +21,7 @@ struct KindsOfPlaceSection: View {
             VStack(alignment: .leading, spacing: 12) {
                 SectionHead(
                     "Kinds of place",
-                    detail: "\(byType.count) of \(SiteType.allCases.count)"
+                    detail: "\(byType.count) of \(Set(store.places.map(\.siteType)).count)"
                 )
                 LazyVGrid(
                     columns: [GridItem(.adaptive(minimum: 150), spacing: 12, alignment: .leading)],

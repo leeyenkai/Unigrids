@@ -31,7 +31,7 @@ struct ParkMapScreen: View {
                 trails: store.trails(in: place.id),
                 sights: store.sights(in: place.id),
                 facilities: store.pointsOfInterest(in: place.id)
-                    .filter { $0.kind == .visitorCentre || $0.kind == .campground },
+                    .filter(\.kind.isFacility),
                 focusTrail: focusTrail,
                 showsUserLocation: showsUserLocation,
                 inks: ParkTileMapView.Inks(

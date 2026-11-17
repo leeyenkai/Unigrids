@@ -83,6 +83,8 @@ public enum UnigridsSymbol: String, CaseIterable, Sendable {
     case drive = "car"
     case roads = "road.lanes"
     case train = "tram"
+    /// A leg no road covers: an island park, Svalbard.
+    case ferry
     case elevation = "arrow.up.right"
     case highPoint = "mountain.2"
     case pending = "hourglass"
@@ -118,6 +120,9 @@ public enum UnigridsSymbol: String, CaseIterable, Sendable {
         case .wildlifeRefuge: "bird.fill"
         case .naturalLandmark: "sparkles"
         case .scenicByway: "road.lanes"
+        case .quasiNationalPark: "leaf.fill"
+        case .protectedLandscape: "mountain.2.fill"
+        case .natureReserve: "pawprint.fill"
         }
     }
 }
@@ -150,6 +155,9 @@ extension UnigridsSymbol {
         case .conservationArea: "binoculars.fill"
         case .naturalLandmark: "sparkles"
         case .scenicByway: "car.fill"
+        case .quasiNationalPark: "mountain.2.fill"
+        case .protectedLandscape: "sun.horizon.fill"
+        case .natureReserve: "pawprint.fill"
         }
     }
 

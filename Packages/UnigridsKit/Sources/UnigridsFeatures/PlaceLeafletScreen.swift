@@ -46,7 +46,9 @@ struct PlaceLeafletScreen: View {
                 UnigridTitleBand(
                     name: place.name,
                     designation: place.designation,
-                    states: place.statesDescription
+                    states: place.bandLine,
+                    localName: place.leadLocalName?.text,
+                    localLanguage: place.leadLocalName?.language
                 )
                 if let image = place.image {
                     GuideHero(image: image)
@@ -122,8 +124,8 @@ struct PlaceLeafletScreen: View {
                             ManagerRow(place: place)
                         }
                     }
-                    if let code = place.npsParkCode, NPSAlerts.isConfigured {
-                        AlertsPanel(parkCode: code)
+                    if AlertsCenter.covers(place) {
+                        AlertsPanel(place: place)
                     }
                     if let info = place.visitorInfo {
                         VisitorInfoPanels(info: info)
@@ -202,10 +204,19 @@ enum PlaceCredits {
 
     private static func outline(_ place: Place) -> String {
         switch place.kind {
+        case .nationalPark where place.country == .japan:
+            "Park area from Japan's Ministry of the Environment."
+        case .nationalPark where place.country == .norway:
+            "Boundary from the Norwegian Environment Agency (Miljødirektoratet), NLOD."
         case .nationalPark, .npsUnit:
             "Outline from the NPS Land Resources Division."
                 + (place.visitation == nil ? ""
                     : " Visits from NPS Visitor Use Statistics, CC0.")
+        case .quasiNationalPark:
+            "Park area from Japanese government open data."
+        case .protectedLandscape, .natureReserve:
+            "Boundary, protection date and area from the Norwegian Environment Agency "
+                + "(Miljødirektoratet), NLOD."
         case .statePark:
             "Outline and area from the USGS Protected Areas Database (PAD-US)."
         case .nationalForest, .nationalGrassland:

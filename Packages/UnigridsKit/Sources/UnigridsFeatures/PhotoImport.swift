@@ -181,7 +181,9 @@ struct PhotoImportScreen: View {
     }
 
     private func tripName(_ trip: ProposedTrip) -> String {
-        let states = trip.visits.compactMap { store.place($0.placeID)?.states.first?.name }
+        let states = trip.visits.compactMap {
+            store.place($0.placeID)?.subdivisions.first?.name
+        }
         let main = Dictionary(grouping: states, by: \.self).max { $0.value.count < $1.value.count }?
             .key
         let when = trip.start.formatted(UnigridsFormat.month())

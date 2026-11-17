@@ -68,12 +68,43 @@ public final class DetectedVisits {
         }
     }
 
-    /// Note an arrival, once per place per day.
+    /// When each place was last suggested, and the places the reader has asked never to
+    /// be suggested again. Japan's parks hold whole towns — Hakone, Nikko, Ise — and someone
+    /// who lives in one should not be asked every day whether they have arrived.
+    private static let lastKey = "visits.detected.last"
+    static let mutedKey = "visits.detected.muted"
+
+    /// The places not to suggest, by identifier.
+    var muted: Set<String> {
+        Set(defaults.stringArray(forKey: Self.mutedKey) ?? [])
+    }
+
+    /// Never suggest this place again; the Settings switch clears the list.
+    func mute(_ suggestion: Suggestion) {
+        defaults.set(Array(muted.union([suggestion.placeID])).sorted(), forKey: Self.mutedKey)
+        dismiss(suggestion)
+    }
+
+    func clearMuted() {
+        defaults.removeObject(forKey: Self.mutedKey)
+    }
+
+    /// Note an arrival, once per place per day — and no more than once in `minimumGap`
+    /// for a place where people live — unless the reader has asked not to be asked there.
     func add(
         _ placeID: UnigridsID,
         at date: Date,
-        calendar: Calendar = UnigridsCalendar.gregorian()
+        calendar: Calendar = UnigridsCalendar.gregorian(),
+        minimumGap: TimeInterval = 0
     ) -> Bool {
+        guard !muted.contains(placeID.rawValue) else { return false }
+        var last = defaults.dictionary(forKey: Self.lastKey) as? [String: Double] ?? [:]
+        let sinceLast = last[placeID.rawValue].map { date.timeIntervalSince1970 - $0 }
+        if minimumGap > 0, let sinceLast, sinceLast < minimumGap {
+            return false
+        }
+        last[placeID.rawValue] = date.timeIntervalSince1970
+        defaults.set(last, forKey: Self.lastKey)
         guard !pending.contains(where: {
             $0.placeID == placeID.rawValue
                 && UnigridsCalendar.isSameDay($0.date, date, calendar: calendar)
@@ -263,7 +294,9 @@ extension AppServices {
                   AppServices.detected.add(
                       placeID,
                       at: now,
-                      calendar: UnigridsCalendar.gregorian(at: place)
+                      calendar: UnigridsCalendar.gregorian(at: place),
+                      // Japan's parks are lived in: a week between suggestions there.
+                      minimumGap: place.country == .japan ? 7 * 86400 : 0
                   )
             else { return }
             let content = UNMutableNotificationContent()
@@ -413,6 +446,14 @@ struct DetectedVisitsSection: View {
                         .accessibilityLabel("Not now")
                     }
                     .listRowBackground(Color.clear)
+                    .contextMenu {
+                        Button("Don't suggest \(place?.name ?? "this place") again") {
+                            detected?.mute(suggestion)
+                        }
+                    }
+                    .swipeActions {
+                        Button("Never here") { detected?.mute(suggestion) }
+                    }
                 }
                 ListNotes {
                     Text("Noticed on this device. Nothing is logged until you say so.")
@@ -422,43 +463,5 @@ struct DetectedVisitsSection: View {
                 SectionHead("Did you arrive?", detail: "\(suggestions.count)")
             }
         }
-    }
-}
-
-/// The Settings switch for detection.
-struct VisitDetectionToggle: View {
-    @Environment(\.referenceStore) private var store
-    @Environment(\.unigrid) private var style
-    @AppStorage(DetectedVisits.enabledKey) private var enabled = false
-    @State private var notice: String?
-
-    var body: some View {
-        #if os(iOS)
-            VStack(alignment: .leading, spacing: 6) {
-                Toggle("Suggest a visit when I arrive", isOn: Binding(
-                    get: { enabled },
-                    set: { isOn in
-                        Task {
-                            if isOn {
-                                let granted = await VisitDetection.enable(store: store)
-                                notice = granted ? nil
-                                    : "Needs location access set to Always in Settings › Privacy."
-                            } else {
-                                await VisitDetection.disable()
-                            }
-                        }
-                    }
-                ))
-                if let notice {
-                    Text(notice)
-                        .font(UnigridStyle.caption)
-                        .foregroundStyle(style.seal)
-                }
-            }
-        #else
-            Text("Arrival suggestions are on iPhone and iPad, where the device travels with you.")
-                .font(UnigridStyle.rowDetail)
-                .foregroundStyle(style.inkSecondary)
-        #endif
     }
 }

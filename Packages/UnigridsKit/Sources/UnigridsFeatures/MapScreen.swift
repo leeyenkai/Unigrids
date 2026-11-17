@@ -37,6 +37,8 @@ public struct MapScreen: View {
     /// The place the marked sight is in; choosing any other place clears the mark.
     @State private var focusPlace: UnigridsID?
     @State private var atlasCache = AtlasPlacesCache()
+    /// The country the map is showing, whose own regions the shortcut bar spells out.
+    @State private var countryInView: Country?
     @AppStorage("map.basemap") private var basemap = AtlasBasemap.standard
     #if os(iOS)
         @Environment(\.horizontalSizeClass) private var sizeClass
@@ -119,7 +121,7 @@ public struct MapScreen: View {
             return AtlasPlace(
                 place: place,
                 status: status,
-                alert: alerts?.mapLevel(for: place.npsParkCode)
+                alert: alerts?.mapLevel(for: place)
             )
         }
     }
@@ -152,8 +154,9 @@ public struct MapScreen: View {
                 ),
                 showsUserLocation: showsUserLocation,
                 focus: focus,
+                openingBox: openingBox,
                 onSelect: { selection = $0 },
-                onRegionChange: { _ in }
+                onRegionChange: regionChanged
             )
             .ignoresSafeArea(edges: [.bottom, .horizontal])
             .overlay(alignment: .bottomLeading) {
@@ -165,7 +168,13 @@ public struct MapScreen: View {
             }
             .safeAreaInset(edge: .top, spacing: 0) {
                 VStack(alignment: .leading, spacing: 0) {
-                    RegionShortcutBar { box in
+                    RegionShortcutBar(
+                        countries: countries,
+                        inView: countryInView ?? MapRegions.country(
+                            at: openingBox.centre,
+                            among: countries
+                        )
+                    ) { box in
                         camera = AtlasCameraRequest(box: box)
                     }
                     MapStatusChips(
@@ -237,6 +246,9 @@ public struct MapScreen: View {
             }
             .task {
                 await alerts?.refreshIfStale()
+                // One fetch covers every Japanese park's volcanoes, for the map's badges.
+                let japan = store.nationalParks.filter { $0.country == .japan }
+                await alerts?.refreshJapan(japan.map { ($0, store.boundary(for: $0.id)) })
             }
             .onAppear(perform: applyDebugLaunch)
             .onChange(of: router?.pending, initial: true) { takeRoute() }
@@ -281,10 +293,6 @@ public struct MapScreen: View {
                 }
             }
         )
-    }
-
-    private var typeCounts: [SiteType: Int] {
-        Dictionary(grouping: store.places, by: \.siteType).mapValues(\.count)
     }
 
     private func loadTransportIfNeeded() async {
@@ -443,5 +451,36 @@ final class AtlasPlacesCache {
             revision += 1
         }
         return (places, revision)
+    }
+}
+
+extension MapScreen {
+    /// The countries with places in the data, the US first.
+    private var countries: [Country] {
+        let present = Set(store.nationalParks.map(\.country))
+        return Country.allCases.filter(present.contains)
+    }
+
+    private var openingBox: BoundingBox {
+        MapViewMemory.openingBox(among: countries)
+    }
+
+    private func regionChanged(_ region: MKCoordinateRegion) {
+        MapViewMemory.save(region)
+        let centre = Coordinate(
+            latitude: region.center.latitude,
+            longitude: region.center.longitude
+        )
+        // Over open sea the bar keeps the last country rather than folding up.
+        guard let country = MapRegions.country(at: centre, among: countries) else { return }
+        if country != countryInView {
+            countryInView = country
+        }
+    }
+}
+
+extension MapScreen {
+    private var typeCounts: [SiteType: Int] {
+        Dictionary(grouping: store.places, by: \.siteType).mapValues(\.count)
     }
 }

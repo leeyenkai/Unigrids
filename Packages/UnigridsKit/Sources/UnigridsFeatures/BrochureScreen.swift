@@ -58,13 +58,15 @@ struct BrochureScreen: View {
         if documents?.documents.isEmpty ?? true {
             unavailable(
                 title: "No brochure to show",
-                message: "The NPS does not link a PDF from \(place.name)'s maps page. Its maps "
-                    + "and brochure may be on nps.gov."
+                message: "\(place.country.documentPublisher.capitalisedFirst) links no PDF for "
+                    + "\(place.name) that Unigrids found. Its maps and brochure may be on "
+                    + "\(place.country.documentSite)."
             )
         } else if failed {
             unavailable(
                 title: "This brochure could not be opened",
-                message: "It needs a connection the first time, and the NPS may have moved it. "
+                message: "It needs a connection the first time, and "
+                    + "\(place.country.documentPublisher) may have moved it. "
                     + "The park's maps page will have the current one.",
                 retry: { retries += 1 }
             )
@@ -74,7 +76,7 @@ struct BrochureScreen: View {
         } else {
             VStack(spacing: 10) {
                 ProgressView()
-                Text("Fetching from nps.gov" + (selected?.bytes.map {
+                Text("Fetching from \(place.country.documentSite)" + (selected?.bytes.map {
                     ", " + ByteCountFormatter.string(fromByteCount: Int64($0), countStyle: .file)
                 } ?? ""))
                     .font(UnigridStyle.rowDetail)
@@ -261,11 +263,14 @@ struct BrochurePanel: View {
                         }
                         .buttonStyle(BrochureButtonStyle(.secondary))
                     } else if let page = documents.page {
-                        Text("The NPS publishes this park's maps and brochure on its own site.")
-                            .font(UnigridStyle.prose)
-                            .foregroundStyle(style.inkSecondary)
+                        Text(
+                            "\(place.country.documentPublisher.capitalisedFirst) publishes this "
+                                + "park's maps and brochure on its own site."
+                        )
+                        .font(UnigridStyle.prose)
+                        .foregroundStyle(style.inkSecondary)
                         Link(destination: page) {
-                            Label("Maps on nps.gov", symbol: .website)
+                            Label("Maps on \(place.country.documentSite)", symbol: .website)
                         }
                         .buttonStyle(BrochureButtonStyle(.secondary))
                     }
@@ -275,7 +280,10 @@ struct BrochurePanel: View {
     }
 
     private func detail(_ document: ParkDocument, count: Int) -> String {
-        var parts = ["PDF from the National Park Service"]
+        var parts = ["PDF from \(place.country.documentPublisherName)"]
+            + (document.language == "ja" ? ["in Japanese"] : [])
+            + (document.language.map { ["nb", "nn", "no"].contains($0) } == true
+                ? ["in Norwegian"] : [])
         if let bytes = document.bytes {
             parts.append(ByteCountFormatter.string(fromByteCount: Int64(bytes), countStyle: .file))
         }

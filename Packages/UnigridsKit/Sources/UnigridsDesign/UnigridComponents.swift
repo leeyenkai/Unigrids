@@ -9,11 +9,24 @@ public struct UnigridTitleBand: View {
     private let name: String
     private let designation: String
     private let states: String
+    private let localName: String?
+    private let localLanguage: String?
 
-    public init(name: String, designation: String, states: String) {
+    /// `localName` is the place's name in its own language and script — 知床国立公園 —
+    /// set beneath the English one, typeset in `localLanguage` so kanji take Japanese
+    /// forms. It is never uppercased or tracked: neither means anything to kanji.
+    public init(
+        name: String,
+        designation: String,
+        states: String,
+        localName: String? = nil,
+        localLanguage: String? = nil
+    ) {
         self.name = name
         self.designation = designation
         self.states = states
+        self.localName = localName
+        self.localLanguage = localLanguage
     }
 
     public var body: some View {
@@ -22,6 +35,13 @@ public struct UnigridTitleBand: View {
                 .font(UnigridStyle.bandTitle())
                 .foregroundStyle(style.bandInk)
                 .fixedSize(horizontal: false, vertical: true)
+            if let localName {
+                Text(localName)
+                    .font(.system(.title3, weight: .medium))
+                    .foregroundStyle(style.bandInk)
+                    .typesettingLanguage(Locale.Language(identifier: localLanguage ?? "und"))
+                    .fixedSize(horizontal: false, vertical: true)
+            }
             Text("\(designation)  ·  \(states)".uppercased())
                 .font(UnigridStyle.dataLabel)
                 .tracking(1.2)
@@ -32,7 +52,10 @@ public struct UnigridTitleBand: View {
         .padding(.vertical, 22)
         .background(style.band)
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(name) \(designation), \(states)")
+        .accessibilityLabel(
+            [name, localName].compactMap(\.self).joined(separator: ", ")
+                + " \(designation), \(states)"
+        )
     }
 }
 

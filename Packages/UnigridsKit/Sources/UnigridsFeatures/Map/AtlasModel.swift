@@ -109,7 +109,7 @@ final class PlaceAnnotation: NSObject, MKAnnotation {
     }
 }
 
-/// An Amtrak station on the rail layer.
+/// A passenger station on the rail layer: Amtrak's, or a railway's abroad.
 final class StationAnnotation: NSObject, MKAnnotation {
     let station: RailStation
     let coordinate: CLLocationCoordinate2D
@@ -120,9 +120,11 @@ final class StationAnnotation: NSObject, MKAnnotation {
         self.station = station
         coordinate = station.location.clCoordinate
         title = station.name
-        subtitle = ["Amtrak", station.code, station.state?.name]
+        subtitle = station.isAmtrak
+            ? ["Amtrak", station.code, station.state?.name]
             .compactMap(\.self)
             .joined(separator: " · ")
+            : station.lines?.prefix(3).joined(separator: " · ")
     }
 }
 

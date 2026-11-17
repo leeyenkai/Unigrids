@@ -6,9 +6,10 @@ import UnigridsLog
 import UnigridsReference
 
 /// The passport: a digital stamp book in the style of the paper NPS passport
-/// (SPECIFICATION.md §9).
+/// (SPECIFICATION.md §9), one book per country with parks in the data (ADR 0013).
 ///
-/// Nine colour-coded regions, each stamping in its own ink. A region opens with a title
+/// The US book's nine colour-coded regions, each stamping in its own ink; Japan's eight
+/// and Norway's six are Unigrids' own. A region opens with a title
 /// page carrying a stamped-so-far count, then a slot for every NPS site — national parks
 /// first — where an empty slot stays a faint outline so the gaps show what is left. State
 /// parks and other agencies' sites follow under "Beyond the NPS", in the order stamped.
@@ -18,6 +19,15 @@ public struct PassportScreen: View {
     @Query private var stamps: [Stamp]
 
     public init() {}
+
+    /// The book open, kept per device.
+    @AppStorage("passport.book") private var bookCode = Country.unitedStates.rawValue
+
+    private var book: Country {
+        let books = store.passportBooks
+        return Country(rawValue: bookCode).flatMap { books.contains($0) ? $0 : nil }
+            ?? .unitedStates
+    }
 
     private var stampedPlaceIDs: Set<UnigridsID> {
         Set(stamps.map(\.place))
@@ -44,26 +54,24 @@ public struct PassportScreen: View {
                     .listRowBackground(Color.clear)
                 }
 
-                Section {
-                    NavigationLink {
-                        America250Page(stamps: stampsIn2026)
-                    } label: {
-                        America250Row(stampCount: stampsIn2026.count)
+                if store.passportBooks.count > 1 {
+                    Section {
+                        Picker("Book", selection: $bookCode) {
+                            ForEach(store.passportBooks) { country in
+                                Text(country.name).tag(country.rawValue)
+                            }
+                        }
+                        .pickerStyle(.segmented)
+                        .listRowBackground(Color.clear)
                     }
-                    .listRowBackground(Color.clear)
-                    ListNotes {
-                        Text(
-                            "Every stamp dated in 2026 — the 250th anniversary year — carries "
-                                + "the America 250 seal, and is gathered on this page."
-                        )
-                        .font(UnigridStyle.caption)
-                    }
-                } header: {
-                    SectionHead("Commemorative")
+                }
+
+                if book == .unitedStates {
+                    commemorative
                 }
 
                 Section {
-                    ForEach(PassportRegion.allCases) { region in
+                    ForEach(PassportRegion.regions(in: book)) { region in
                         NavigationLink {
                             PassportRegionPage(region: region)
                         } label: {
@@ -72,14 +80,11 @@ public struct PassportScreen: View {
                         .listRowBackground(Color.clear)
                     }
                     ListNotes {
-                        Text(
-                            "Regions follow the paper passport's nine. Sites outside the NPS go by "
-                                + "their state, and appear on a region's page once stamped."
-                        )
-                        .font(UnigridStyle.caption)
+                        Text(book.passportRegionsNote)
+                            .font(UnigridStyle.caption)
                     }
                 } header: {
-                    SectionHead("Regions", detail: "NPS sites stamped")
+                    SectionHead("Regions", detail: "\(book.passportSlotNoun.capitalized) stamped")
                 }
 
                 UnknownPlaceStamps(stamps: stamps.filter { store.place($0.place) == nil })
@@ -97,15 +102,38 @@ public struct PassportScreen: View {
                 .onAppear {
                     let region = DebugLaunch.passportRegion.flatMap(PassportRegion.init(rawValue:))
                     if path.isEmpty, let region {
+                        bookCode = region.country.rawValue
                         path.append(region)
                     }
                 }
         }
     }
 
+    /// The America 250 page: the US book's alone.
+    private var commemorative: some View {
+        Section {
+            NavigationLink {
+                America250Page(stamps: stampsIn2026)
+            } label: {
+                America250Row(stampCount: stampsIn2026.count)
+            }
+            .listRowBackground(Color.clear)
+            ListNotes {
+                Text(
+                    "Every stamp dated in 2026 — the 250th anniversary year — carries "
+                        + "the America 250 seal, and is gathered on this page."
+                )
+                .font(UnigridStyle.caption)
+            }
+        } header: {
+            SectionHead("Commemorative")
+        }
+    }
+
     /// Progress through a region's NPS sites — the slots the paper book prints.
     private func completion(for region: PassportRegion) -> Completion {
-        let places = (store.placesByPassportRegion()[region] ?? []).filter { $0.agency == .nps }
+        let places = (store.placesByPassportRegion()[region] ?? [])
+            .filter(\.isNationalParkSystemSite)
         let stamped = places.count { stampedPlaceIDs.contains($0.id) }
         return Completion(visited: stamped, total: places.count)
     }
@@ -144,7 +172,10 @@ struct RegionRow: View {
         }
         .padding(.vertical, 4)
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(region.name), \(completion.description) NPS sites stamped")
+        .accessibilityLabel(
+            "\(region.name), \(completion.description) "
+                + "\(region.country.passportSlotNoun) stamped"
+        )
     }
 }
 
@@ -199,7 +230,7 @@ struct PassportRegionPage: View {
         let parks = places.filter { $0.tier == .nationalPark }
         let units = places.filter { $0.tier == .npsUnit }
         let beyond = places
-            .filter { $0.agency != .nps && stampsByPlace[$0.id]?.isEmpty == false }
+            .filter { !$0.isNationalParkSystemSite && stampsByPlace[$0.id]?.isEmpty == false }
             .sorted { first($0) < first($1) }
         ScrollView {
             VStack(alignment: .leading, spacing: 28) {
@@ -207,7 +238,7 @@ struct PassportRegionPage: View {
                 slotSection("National parks", places: parks)
                 slotSection("Other NPS sites", places: units)
                 if !beyond.isEmpty {
-                    slotSection("Beyond the NPS", places: beyond)
+                    slotSection(region.country.passportBeyondTitle, places: beyond)
                 }
             }
             .padding(.bottom, 20)
@@ -257,16 +288,18 @@ struct PassportRegionPage: View {
             return StampFace(
                 siteName: place.name,
                 date: stamp.date,
-                stateCode: place.states.first?.code ?? "US",
+                stateCode: place.stampMark,
                 region: region,
+                country: place.country,
                 seed: stamp.seed,
                 isVerifiedOnSite: stamp.isVerifiedOnSite,
 
-                calendar: UnigridsCalendar.gregorian(at: place)
+                calendar: UnigridsCalendar.gregorian(at: place),
+                localName: place.leadLocalName?.text
             )
         }
         let stampedPlaces = Set(stamps.map(\.place))
-        let npsSites = places.filter { $0.agency == .nps }
+        let npsSites = places.filter(\.isNationalParkSystemSite)
         let card = PassportPageCard(
             region: region,
             faces: faces,
@@ -293,7 +326,11 @@ struct PassportRegionPage: View {
     private func titlePage(npsSites: [Place]) -> some View {
         let stamped = npsSites.count { stampsByPlace[$0.id]?.isEmpty == false }
         return VStack(alignment: .leading, spacing: 0) {
-            BandHeader(region.name, kicker: "\(stamped) of \(npsSites.count) NPS sites stamped")
+            BandHeader(
+                region.name,
+                kicker: "\(stamped) of \(npsSites.count) "
+                    + "\(region.country.passportSlotNoun) stamped"
+            )
             // The region's ink, as the paper passport colours its pages.
             Rectangle()
                 .fill(style.regionInk(region))
@@ -323,7 +360,7 @@ struct PassportRegionPage: View {
     /// A site with several official stamp locations gets one slot per location (§9);
     /// every other site gets one.
     private func slots(for place: Place) -> [PassportSlot] {
-        let locations = place.agency == .nps ? store.stampLocations(in: place.id) : []
+        let locations = place.isNationalParkSystemSite ? store.stampLocations(in: place.id) : []
         guard locations.count >= 2 else {
             return [PassportSlot(place: place, location: nil, siblings: [])]
         }
@@ -399,12 +436,14 @@ struct PassportRegionPage: View {
         StampFace(
             siteName: stampLocationName(stamp, place: place),
             date: stamp.date,
-            stateCode: place.states.first?.code ?? "US",
+            stateCode: place.stampMark,
             region: region,
+            country: place.country,
             seed: stamp.seed,
             isVerifiedOnSite: stamp.isVerifiedOnSite,
 
-            calendar: UnigridsCalendar.gregorian(at: place)
+            calendar: UnigridsCalendar.gregorian(at: place),
+            localName: place.leadLocalName?.text
         )
     }
 
