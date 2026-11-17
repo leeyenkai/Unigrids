@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="Iwate-san's lopsided cone over the beech forest" data-source="Guide story: Iwate-san, the park's highest peak, whose lopsided profile is called the half-Fuji of Nanbu">
+  <path d="M8 46 C16 41 22 36 27 31.6 C30 29 33 27.6 36 27.6 C40 27.6 44 26 48 23 C53 19 57 16 60.6 14.2 C62.6 13.6 64.4 13.8 65.4 15 C69 21 74 31 80 38.6 C84 43 88 45 92 46"/>
+  <path class="fill" d="M6 54 L6 46 C7 43 10 42 12.4 43.4 C14 41 18 41 19.4 43.6 C21.4 41.6 25 42 26 44.4 C28 42.6 31.6 43 32.4 45.4 L34 46 L66 46 L67.6 45.4 C68.4 43 72 42.6 74 44.4 C75 42 78.6 41.6 80.6 43.6 C82 41 86 41 87.6 43.4 C90 42 93 43 94 46 L94 54 Z"/>
+  <path d="M34 46 H66"/>
+  <path d="M36 51 H64"/>
+</svg>

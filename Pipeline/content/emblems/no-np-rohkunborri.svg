@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="a snowy owl on a boulder below glacier-carrying mountains" data-source="Guide story: golden eagles, gyrfalcons and snowy owls nest; mountains over 1,500 m still carry glaciers">
+  <path d="M50 11.6 Q59.6 11.6 60.6 19.6 Q61.4 25.6 58.4 28.8 Q63.4 33.6 62.6 41.6 Q61.4 48.4 50 48.4 Q38.6 48.4 37.4 41.6 Q36.6 33.6 41.6 28.8 Q38.6 25.6 39.4 19.6 Q40.4 11.6 50 11.6 Z"/>
+  <path class="fill" d="M47.7 20.4 C47.7 21.7 46.7 22.7 45.4 22.7 C44.1 22.7 43.1 21.7 43.1 20.4 C43.1 19.1 44.1 18.1 45.4 18.1 C46.7 18.1 47.7 19.1 47.7 20.4 Z M56.9 20.4 C56.9 21.7 55.9 22.7 54.6 22.7 C53.3 22.7 52.3 21.7 52.3 20.4 C52.3 19.1 53.3 18.1 54.6 18.1 C55.9 18.1 56.9 19.1 56.9 20.4 Z M48.6 24 L51.4 24 L50 27.4 Z"/>
+  <path d="M44 35 L46.4 37 L48.8 35 M51.2 35 L53.6 37 L56 35 M47.6 41 L50 43 L52.4 41"/>
+  <path class="fill" d="M30 54 Q30.6 49.6 36 48.4 H64 Q69.4 49.6 70 54 Z"/>
+  <path d="M4 40 L12 30 L18 33 L26 22 L33 30 M67 30 L74 20 L80 26 L86 22 L96 36"/>
+  <path d="M4 54 H96"/>
+</svg>

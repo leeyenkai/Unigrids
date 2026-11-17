@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="Wizard Island in the caldera" data-source="Guide sight: Wizard Island, a cinder cone rising from the lake">
+  <path d="M4 36 L8 26 L14 22 L22 21 L32 18.5 L42 20 L52 19 L60 16 L66 18 L76 18.5 L84 21 L90 24 L96 32"/>
+  <path class="fill" d="M16 39 L22 35 L27 30.5 L30 27.5 L32 28.5 L34 27.5 L37 30.5 L42 35 L48 39 Z"/>
+  <path class="fill" d="M60 56 L64 50 L70 46 L78 42.5 L86 41.5 L96 39 L96 56 Z M79.5 43 L79.5 41.3 L76.5 41.3 L78.6 37.1 L77.3 37.1 L79 33.5 L78.2 33.5 L80 29 L81.8 33.5 L81 33.5 L82.7 37.1 L81.4 37.1 L83.5 41.3 L80.5 41.3 L80.5 43 Z M87.3 41.5 L87.3 39.2 L83.2 39.2 L86.1 33.5 L84.4 33.5 L86.7 28.6 L85.5 28.6 L88 22.5 L90.5 28.6 L89.3 28.6 L91.6 33.5 L89.9 33.5 L92.8 39.2 L88.7 39.2 L88.7 41.5 Z"/>
+  <path d="M4 39 H58"/>
+  <path d="M10 44.5 H34 M40 44.5 H58 M18 50 H46"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="the wooded islets of Kujukushima" data-source="Guide sight: Kujukushima, officially 208 islands off Sasebo">
+  <path class="fill" d="M7 46 C8 41.5 10.5 39 13.6 38.6 C15.4 36.6 18.6 36.6 20.4 38.6 C23 39.6 24.6 42.4 25 46 Z M27.4 46 C28.2 43.4 29.8 42 31.6 42 C33.4 42 34.8 43.4 35.6 46 Z M38.6 46 C39.4 39.4 42 34.8 45.6 34 C47.2 31.4 51.6 31 53.6 33.6 C57 34.6 59.2 39 59.8 46 Z M63 46 C63.8 43 65.4 41.4 67.4 41.4 C69.4 41.4 71 43 71.8 46 Z M74.8 46 C75.6 41.6 78 39 81 38.8 C83 36.8 86.6 37.2 88 39.6 C90.4 40.8 92 43 92.6 46 Z"/>
+  <path d="M6 46 H94"/>
+  <path d="M12 51 H34 M44 51 H60 M70 51 H88"/>
+  <path d="M22 56 H48 M56 56 H78"/>
+</svg>

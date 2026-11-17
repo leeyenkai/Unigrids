@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="Dovre poppies on the high plateau" data-source="Guide story: the rich soils make Dovre a core area for Norwegian mountain plants, among them rarities such as the Dovre poppy">
+  <path d="M6 30 C16 23 24 23 30 26 M70 25 C78 21 88 21 94 27"/>
+  <path class="fill" d="M25 22 C25 26 29 28 34 28 C39 28 43 26 43 22 C42.5 20 39.5 20 38 21.4 C37 19.2 31 19.2 30 21.4 C28.5 20 25.5 20 25 22 Z M42.6 12.7 C42.6 17.3 47.2 19.6 53 19.6 C58.8 19.6 63.4 17.3 63.4 12.7 C62.8 10.4 59.3 10.4 57.6 12 C56.5 9.5 49.5 9.5 48.4 12 C46.7 10.4 43.2 10.4 42.6 12.7 Z M72 25 C74.8 26 74.6 31.5 72 32.5 C69.4 31.5 69.2 26 72 25 Z"/>
+  <path d="M34 28 C35 38 41 45 47 51 M53 19.6 C52.5 32 51.5 42 50 51 M53 51 C60 42 66 30 69 23 C70 20.5 72 20.5 72 25"/>
+  <path class="fill" d="M36 52 C40 50 44 47 47 44 C47 48 48 50 49 50 C50 44 51 40 51.5 38 C52 42 52 47 53 50 C55 47 58 45 63 44 C60 47 58 50 57 52 Z"/>
+  <path d="M6 52 H94"/>
+</svg>

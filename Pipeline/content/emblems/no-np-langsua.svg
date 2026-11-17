@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="bearded bellflowers on the grazed fells" data-source="Guide story: the bearded bellflower, a plant of the Alps whose only northern European sites are on these grazed hills">
+  <path d="M6 34 C16 24 26 22 36 26 C44 18 56 16 66 22 C76 20 88 24 94 30"/>
+  <path d="M48 52 C47 42 48 30 53 21 C55 17.5 58 16 61 16.5 M47.6 40 C44 38.5 41 36 39.5 32 M48.4 31 C51 29 54 28.5 57 29.5"/>
+  <path class="fill" d="M59.2 17.3 C57.3 19.8 59.9 24.7 59.2 29.1 Q61.7 26.4 65.6 26.4 Q68.1 23.4 71.8 23.2 C68 21 65.9 15.8 62.8 15.7 Z M37.8 31.2 C34.8 31.3 32.7 36.3 29 38.4 Q32.7 38.6 35 41.5 Q38.8 41.5 41.3 44.2 C40.6 39.9 43.1 35.2 41.2 32.8 Z M55.4 30.1 C53.4 32.1 55.4 36.7 54.4 40.6 Q56.9 38.3 60.3 38.7 Q62.8 36.2 66.1 36.3 C62.9 34 61.4 29.2 58.6 28.9 Z"/>
+  <path class="fill" d="M40 52 C43 49 45 47 47.5 46 C47 49 47.5 51 48 52 Z M49 52 C50 49 53 47 57 46.5 C54 48.5 52.5 50.5 52 52 Z"/>
+  <path d="M6 52 H94"/>
+</svg>

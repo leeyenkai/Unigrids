@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="a sinkhole in grooved limestone pavement" data-source="Guide story: Norway's largest continuous alpine karst: grooved pavements, sinkholes and caves where the cave country breaks the surface">
+  <path d="M6 32 C16 24 28 22 38 26 C48 18 62 18 70 24 C80 22 90 26 94 30"/>
+  <path class="fill" d="M6 52 L6 40 L15 40 L15 52 Z M17.4 52 L17.4 40.1 L25.4 40.7 L25.4 52 Z M27.8 52 L27.8 41.2 L35.8 44.5 L35.8 52 Z M38.2 52 L38.2 45.9 L45.2 49.9 L45.2 52 Z M47.6 52 L47.6 50.7 L54.6 50 L54.6 52 Z M85 52 L85 40 L94 40 L94 52 Z M74.6 52 L74.6 40.7 L82.6 40.1 L82.6 52 Z M64.2 52 L64.2 44.5 L72.2 41.2 L72.2 52 Z M54.8 52 L54.8 49.9 L61.8 45.9 L61.8 52 Z M45.4 52 L45.4 50 L52.4 50.7 L52.4 52 Z"/>
+  <path class="fill" d="M42 52 C43 50 46 49.4 50 49.4 C54 49.4 57 50 58 52 L54.5 56.5 H45.5 Z"/>
+  <path d="M6 52 H42 M58 52 H94"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="the Tottori Sand Dunes above the sea" data-source="Guide sight: the Tottori Sand Dunes, whose crests and wind ripples shift with every storm">
+  <path class="fill" d="M6 46 C20 40 36 30 50 23.6 C53.4 22 56.4 21.4 59 21.8 C60.6 28 63.4 37 71 46 Z"/>
+  <path class="fill" d="M64 46 C70 41 75 37.4 81.4 35.4 L84 35.4 C85.4 39.4 88.4 43 94 46 Z"/>
+  <path d="M6 46 H94"/>
+  <path d="M66 30 H94"/>
+  <path d="M10 51.4 C16 49.4 22 49.4 28 51.4 M36 51.4 C42 49.4 48 49.4 54 51.4 M62 51.4 C68 49.4 74 49.4 80 51.4"/>
+  <path d="M22 56 C28 54 34 54 40 56 M50 56 C56 54 62 54 68 56"/>
+</svg>

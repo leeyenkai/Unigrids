@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="a saguaro cactus in the Sonoran Desert" data-source="Guide story: the saguaro grows only in the Sonoran Desert; Rincon Mountains">
+  <path d="M6 42 L14 36 L20 38 L28 31 L33 34 M66 34 L72 27 L76 30 L84 25 L94 34"/>
+  <path class="fill" d="M43.8 54 V11.2 C43.8 5.5 52.2 5.5 52.2 11.2 V54 Z M77.8 54 V36.2 C77.8 33.2 82.2 33.2 82.2 36.2 V54 Z"/>
+  <path class="fill" d="M44.2 36 H35 Q31.5 36 31.5 32.5 V20.5 C31.5 15.6 38.5 15.6 38.5 20.5 V29 H44.2 Z M51.8 30 H61 Q64.5 30 64.5 26.5 V16.5 C64.5 11.6 57.5 11.6 57.5 16.5 V23 H51.8 Z"/>
+  <path class="fill" d="M78.3 46 H74.5 Q72.7 46 72.7 44.2 V40.8 C72.7 38.3 76.3 38.3 76.3 40.8 V42.4 H78.3 Z"/>
+  <path d="M6 54 H94"/>
+</svg>

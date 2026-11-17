@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" data-subject="the New River Gorge Bridge" data-source="Guide sight: the New River Gorge Bridge, a steel arch 876 feet above the river">
+  <path class="fill" d="M4 54 V21 H22 C24 27 25.5 36 29.5 45 L33 54 Z"/>
+  <path class="fill" d="M96 54 V21 H78 C76 27 74.5 36 70.5 45 L67 54 Z"/>
+  <path class="fill" d="M25.5 37 Q50 3 74.5 37 L71 37 Q50 9.5 29 37 Z"/>
+  <path d="M4 18.5 H96 M33 18.5 V28.2 M39.5 18.5 V23.1 M60.5 18.5 V23.1 M67 18.5 V28.2"/>
+  <path d="M37 51 Q40.2 49.6 43.5 51 Q46.8 52.4 50 51 Q53.2 49.6 56.5 51 Q59.8 52.4 63 51"/>
+</svg>
