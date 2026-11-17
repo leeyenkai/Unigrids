@@ -166,13 +166,24 @@
   }
  ],
  "hero": {
-  "credit": "Pattercakes at en.wikipedia, via Wikimedia Commons",
-  "isPublicDomain": true,
-  "assetName": "au-np-hinchinbrook-island-93c3293335.jpg",
-  "caption": "Zoe Falls",
-  "sourceURL": "https://commons.wikimedia.org/wiki/File:Zoe_Falls_on_Hinchinbrook_Island.JPG",
-  "altText": "A broad waterfall pouring over dark granite into a deep pool fringed with forest"
+  "credit": "Tatters ✾ from Brisbane, Australia, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "au-np-hinchinbrook-island-1bc2a2f1ec.jpg",
+  "caption": "Little Ramsay Bay below Mount Bowen",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Little_Ramsay_Bay_and_Mt._Bowen_in_Hinchinbrook_island_(3807991040).jpg",
+  "altText": "Red granite rocks and a sandy beach beneath jagged forested mountains under a blue sky",
+  "licence": "CC BY 2.0"
  },
+ "gallery": [
+  {
+   "credit": "Pattercakes at en.wikipedia, via Wikimedia Commons",
+   "isPublicDomain": true,
+   "assetName": "au-np-hinchinbrook-island-93c3293335.jpg",
+   "caption": "Zoe Falls",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Zoe_Falls_on_Hinchinbrook_Island.JPG",
+   "altText": "A broad waterfall pouring over dark granite into a deep pool fringed with forest"
+  }
+ ],
  "weather": "Hinchinbrook has a mild subtropical climate in name, but daytime heat and humidity can be high in any month and nights can be very cool. April to September is the best time to visit. From October to March conditions on the Thorsborne Trail are extremely hot and humid, freshwater sources often dry up between October and December, and once the wet season begins, usually in December, heavy rain makes creeks rise fast and crossings dangerous. That is why the trail closes in January and February. Pack for all extremes.",
  "directions": "Hinchinbrook Island lies 8 kilometres off Cardwell, about 171 kilometres north of Townsville and 203 kilometres south of Cairns; Lucinda, at its southern end, is about 140 kilometres north of Townsville. There is no bridge or public ferry to the park itself: launch a private boat from Cardwell or Lucinda (Dungeness), checking tides, weather and the transit lanes and speed limits that protect dugong and turtles, or travel with a permitted tour or transfer operator. Services vary with weather, tides and season, so book transfers as soon as your permit is confirmed."
 }

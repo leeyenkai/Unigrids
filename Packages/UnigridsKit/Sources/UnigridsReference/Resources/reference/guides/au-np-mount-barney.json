@@ -180,6 +180,15 @@
  },
  "gallery": [
   {
+   "credit": "Tatters ✾ from Brisbane, Australia, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-mount-barney-e4a88ecf5e.jpg",
+   "caption": "Mount Barney from the grassy foothills",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Barney,_1350m_(48126000802).jpg",
+   "altText": "Rocky twin summits beyond a line of eucalypts and a green grassy slope",
+   "licence": "CC BY-SA 2.0"
+  },
+  {
    "credit": "Kate Harbison, via Wikimedia Commons",
    "isPublicDomain": false,
    "assetName": "au-np-mount-barney-d039943a63.jpg",

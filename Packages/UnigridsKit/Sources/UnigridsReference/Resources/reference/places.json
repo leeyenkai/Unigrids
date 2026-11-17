@@ -210483,12 +210483,13 @@
   "summary": "A mountainous island of jagged granite peaks, mangrove channels and empty beaches off Cardwell, protected since 1932 and part of the Great Barrier Reef World Heritage Area. Its Traditional Owners, the Bandjin and Girramay people, call the landscape Munamudanamy. Most visitors come to walk the Thorsborne Trail, 32 kilometres down the wild east coast, on one of a few permits issued each day.",
   "summarySource": "Unigrids",
   "image": {
-   "credit": "Pattercakes at en.wikipedia, via Wikimedia Commons",
-   "isPublicDomain": true,
-   "assetName": "au-np-hinchinbrook-island-93c3293335.jpg",
-   "caption": "Zoe Falls",
-   "sourceURL": "https://commons.wikimedia.org/wiki/File:Zoe_Falls_on_Hinchinbrook_Island.JPG",
-   "altText": "A broad waterfall pouring over dark granite into a deep pool fringed with forest"
+   "credit": "Tatters ✾ from Brisbane, Australia, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-hinchinbrook-island-1bc2a2f1ec.jpg",
+   "caption": "Little Ramsay Bay below Mount Bowen",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Little_Ramsay_Bay_and_Mt._Bowen_in_Hinchinbrook_island_(3807991040).jpg",
+   "altText": "Red granite rocks and a sandy beach beneath jagged forested mountains under a blue sky",
+   "licence": "CC BY 2.0"
   },
   "extent": {
    "south": -18.49423,
