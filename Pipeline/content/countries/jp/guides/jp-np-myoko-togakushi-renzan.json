@@ -1,0 +1,362 @@
+{
+  "placeID": "jp-np-myoko-togakushi-renzan",
+  "contentVersion": 1,
+  "summary": "A compact park of volcanoes and sacred mountains on the Niigata–Nagano border, in some of the snowiest country in Japan. Climb Myōkō or Hiuchi past high-moor ponds where Japan's northernmost ptarmigan live, walk the cedar avenue to Togakushi Shrine, ski the deep snow of Myōkō Kōgen, or paddle Lake Nojiri, whose bed has yielded the bones of Naumann's elephant.",
+  "facts": {
+    "establishedYear": 2015,
+    "areaHectares": 39772,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Two to three days"
+  },
+  "story": [
+    "Myōkō-Togakushi Renzan packs very different mountains into a small space. Myōkō-san (2,454 m) is a volcano within a volcano: a central lava dome rising inside the broken rim of an older crater. Its neighbour Yakeyama still sends up plumes of steam. The Togakushi range is something else again, the remains of submarine volcanoes lifted and worn into a steep, jagged ridge, with fossil shells near its summit. In the north-west the park reaches into Itoigawa, a UNESCO Global Geopark built around the Itoigawa–Shizuoka Tectonic Line, the fault that marks the western edge of the Fossa Magna, the great rift across central Honshū.",
+    "Snow defines the place. At Sekiyama, at the eastern foot of Myōkō, more than ten metres falls in an average winter, and on the high ground it lies into May. The late snow feeds high moors between Myōkō and Hiuchi, at Kurosawa-ike, Kōya-ike and Tengu-no-niwa, where cotton grass and Hakusan primroses grow around the pools. Hiuchi's rock ptarmigan are the northernmost in Japan: a small population living low enough that a warming climate threatens it. Below, beech forest covers Yumemidaira and the slopes of Amakazari and Kurohime, and the plateaus of Togakushi and Myōkō are among the country's richest places for birds, with more than a hundred species seen in a year.",
+    "These mountains have long been holy. Togakushi grew into one of Japan's great centres of mountain asceticism (修験道 Shugendō) under the Tendai temple Kenkō-ji, and tradition holds that Mount Togakushi is the rock door flung down to earth when the gods drew the sun goddess Amaterasu out of her cave. In the first years of Meiji the government separated Shinto from Buddhism, and the temple became Togakushi Shrine, whose five sanctuaries are still joined by old paths. The pilgrims' lodgings (宿坊 shukubō) at Chūsha and Hōkōsha still stand, and in 2017 they were listed as a national preservation district for traditional buildings.",
+    "Lake Nojiri, on the park's eastern edge, keeps a far older record: its bed and shores have yielded the bones of Naumann's elephant and Yabe's giant deer, with stone tools beside them. The whole area was added to Jōshin'etsu-kōgen National Park in 1956, but it lay well apart from that park's other mountains and had a different character, and on 27 March 2015 it became a national park in its own right. Myōkō City and its partners now ask climbers on Myōkō and Hiuchi for a voluntary fee towards trail work and the ptarmigan."
+  ],
+  "howItWorks": [
+    "Like every Japanese national park, Myōkō-Togakushi Renzan is a zoned area rather than an estate: the Ministry of the Environment sets the rules on land it mostly does not own. About 83 per cent of the park is national land, about 4 per cent belongs to prefectures and municipalities and about 13 per cent is private. It spreads across Myōkō and Itoigawa in Niigata and Nagano City, Otari, Shinano and Iizuna in Nagano. The ski resorts and hot springs of Myōkō Kōgen, the shrine villages of Togakushi and the shore of Lake Nojiri lie in or against it, and you use their roads, inns and buses as you would anywhere. There is no gate and no ticket.",
+    "Unusually, the park has no ordinary zone: all 39,772 ha are special zone or special protection zone. In the special protection zone (特別保護地区), about 3,550 ha of the most valuable ground, almost nothing may be picked, caught, cut or removed without the Minister of the Environment's permission, down to fallen leaves and branches. In the special zones of classes 1 to 3 (特別地域), about 36,200 ha, building, felling, quarrying and taking the listed plants and animals need a permit. Around Sasagamine a 2,568 ha restriction area keeps off-road vehicles and snowmobiles off the land.",
+    "Two local arrangements matter to hikers. A Niigata prefectural ordinance in force since June 2015 makes a climbing notice (登山届) compulsory for anyone entering the ground within 2 km of Yakeyama's summit, with penalties for not filing one. On Myōkō and Hiuchi, a council run from Myōkō City (生命地域妙高環境会議) asks each climber for a voluntary ¥500 entry fee, spent on ptarmigan conservation and trail upkeep. The park's Itoigawa section, around Mount Amakazari, also lies within the Itoigawa UNESCO Global Geopark."
+  ],
+  "sights": [
+    {
+      "name": "Myōkō-san (妙高山)",
+      "note": "The park's signature volcano, 2,454 m: a lava dome inside the rim of an older crater. Trails climb from Tsubame, Seki and Akakura onsen and from Sasagamine.",
+      "location": [
+        36.8913,
+        138.1134
+      ]
+    },
+    {
+      "name": "Tengu-no-niwa and Kōya-ike (天狗の庭・高谷池)",
+      "note": "High moor and pools below Mount Hiuchi, with a mountain hut at Kōya-ike. Autumn colour peaks in the second half of September.",
+      "location": [
+        36.9154,
+        138.0797
+      ]
+    },
+    {
+      "name": "Togakushi Shrine (戸隠神社)",
+      "note": "Five shrines joined by old paths. The walk to Okusha passes a thatched gate and an avenue of cedars about 400 years old.",
+      "location": [
+        36.7428,
+        138.0853
+      ]
+    },
+    {
+      "name": "Kagami-ike (鏡池)",
+      "note": "A still pond in the forest that mirrors the jagged Togakushi range.",
+      "location": [
+        36.7504,
+        138.0623
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Lake Nojiri (野尻湖)",
+      "note": "A lake below Kurohime and Myōkō for canoeing, sailing and paddleboarding; Naumann's elephant fossils have come from its bed.",
+      "location": [
+        36.825,
+        138.2222
+      ]
+    },
+    {
+      "name": "Imori-ike (いもり池)",
+      "note": "A pond at Myōkō Kōgen with the mountain reflected in it, beside the visitor centre.",
+      "location": [
+        36.8664,
+        138.175
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Naena Falls (苗名滝)",
+      "note": "A 55 m waterfall on the upper Seki river, called jishin-daki, the earthquake falls, for its roar.",
+      "location": [
+        36.8503,
+        138.1329
+      ]
+    },
+    {
+      "name": "Kamaike (鎌池)",
+      "note": "A pond in beech forest at the foot of Mount Amakazari, with a path around it.",
+      "location": [
+        36.8687,
+        137.9729
+      ]
+    },
+    {
+      "name": "Myōkō Kōgen Visitor Center (妙高高原ビジターセンター)",
+      "note": "Beside Imori-ike: the area's wildlife, plants and culture, and current trail news.",
+      "location": [
+        36.8652,
+        138.1744
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "82 Mori-no-Manabiya Forest Learning Centre",
+      "note": "At the Togakushi Forest Botanical Garden: the forest's plants and birds, with guided walks on Sundays from May to October. Closed from December to late April.",
+      "location": [
+        36.752,
+        138.077
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Nojiri-ko Naumann Elephant Museum (野尻湖ナウマンゾウ博物館)",
+      "note": "Fossils and finds from the lake bed, including Naumann's elephant and Yabe's giant deer.",
+      "location": [
+        36.8323,
+        138.2062
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Myōkō-Kōgen Station, 45 minutes from Nagano by train, for Akakura Onsen, Imori-ike, Naena Falls and the Myōkō Kōgen resorts",
+      "Togakushi, by Alpico bus from Nagano Station, for the shrines, Kagami-ike and the Togakushi range",
+      "Sasagamine, the southern trailhead for Hiuchi and Myōkō",
+      "Lake Nojiri, on the park's eastern edge in Shinano",
+      "Mount Amakazari and Otari Onsen in the north-west; Itoigawa Station on the Hokuriku Shinkansen is the gateway for Amakazari"
+    ],
+    "reservations": "The park needs no entry reservation, and the ¥500 fee on Myōkō and Hiuchi is a voluntary contribution. Buses to Myōkō Kōgen and Togakushi and the roads to the high trailheads run to seasonal timetables and opening dates; check with Myōkō City, Nagano City and the bus operators before you go.",
+    "permits": [
+      "Yakeyama: a climbing notice (登山届) is compulsory within 2 km of the summit under a Niigata prefectural ordinance. File it with the prefecture, online or by post, or in the boxes at the Myōkō and Itoigawa trailheads",
+      "Everywhere else, Niigata Prefecture asks climbers to file a climbing plan as a matter of course",
+      "Off-road vehicles and snowmobiles may not be driven on the land of the Sasagamine restriction area"
+    ],
+    "camping": [
+      "Sasagamine campground, at the trailhead for Hiuchi",
+      "Tent pitches at the Kōya-ike and Kurosawa-ike huts on the Hiuchi–Myōkō traverse",
+      "Campsites around Lake Nojiri"
+    ],
+    "lodging": [
+      "Hot-spring inns at Akakura, Seki, Tsubame and the other spas of Myōkō Kōgen",
+      "Shukubō, the pilgrim lodgings of Togakushi's Chūsha and Hōkōsha",
+      "Otari Onsen, a spa in use for more than 450 years, and Amakazari Onsen in the north-west",
+      "Mountain huts at Kōya-ike and Kurosawa-ike, between Hiuchi and Myōkō"
+    ],
+    "seasonalClosures": [
+      "The prefectural road from Suginosawa up to Sasagamine closes for the winter and has reopened in late April in recent years; check with Niigata Prefecture's Jōetsu office before you go",
+      "82 Mori-no-Manabiya closes from 1 December to late April",
+      "Snow lies on the high ground into May and later on the summits; check trail conditions at a visitor centre before you go"
+    ],
+    "seasonalClosureMonths": [
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "This is snow country. At Sekiyama, 350 m up at the eastern foot of Myōkō, more than ten metres of snow falls in an average winter, most of it from December to February, and the deepest cover averages about 2 m; January's mean temperature is 0.0°C. The high ground holds snow into May. Summer is warm in the valleys — August averages 24.4°C at Sekiyama, with afternoon highs near 29°C — and cooler on the plateaus: Sasagamine, at about 1,300 m, stays fresh even in midsummer. Autumn colour reaches the moor at Kōya-ike in the second half of September.",
+  "directions": "Nagano Station on the Hokuriku Shinkansen, 80 to 100 minutes from Tokyo, is the main gateway. From there Alpico buses climb to Togakushi, and the Kita-Shinano Line reaches Myōkō-Kōgen Station in about 45 minutes, for Akakura Onsen and the Myōkō Kōgen resorts. On the Niigata side, Jōetsu-Myōkō Station on the Shinkansen serves the north of the park and Itoigawa Station the area around Mount Amakazari. Buses into Myōkō Kōgen run from Jōetsu-Myōkō in winter and from Myōkō-Kōgen Station in summer, about three times a day. Public transport elsewhere is thin, and a car or taxi is needed for Naena Falls and most of the quieter trailheads.",
+  "fees": [
+    {
+      "title": "Voluntary entry fee, Mount Myōkō and Mount Hiuchi",
+      "cost": "¥500",
+      "amount": 500,
+      "currencyCode": "JPY",
+      "detail": "Per climber, voluntary. Asked by the Myōkō environmental council (secretariat: Myōkō City) and spent on ptarmigan conservation and trail upkeep. Check the current arrangements before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 1600",
+      "text": "The avenue of cedars on the approach to Togakushi's Okusha takes shape, in stages between the 1590s and the 1640s; its trees are now about 400 years old."
+    },
+    {
+      "year": "1869",
+      "text": "The Meiji separation of Shinto and Buddhism turns Togakushi's temple, Kenkō-ji, into Togakushi Shrine."
+    },
+    {
+      "year": "1956",
+      "text": "The Myōkō–Togakushi area is added to Jōshin'etsu-kōgen National Park on 10 July."
+    },
+    {
+      "year": "1974",
+      "text": "A steam-driven eruption of Yakeyama on 28 July kills three university students camping near the summit."
+    },
+    {
+      "year": "2015",
+      "text": "On 27 March the area leaves Jōshin'etsu-kōgen and is designated Myōkō-Togakushi Renzan National Park, with a vehicle-restriction area around Sasagamine; in June Niigata's Yakeyama climbing-notice ordinance takes effect."
+    },
+    {
+      "year": "2017",
+      "text": "Togakushi's shukubō districts at Chūsha and Hōkōsha are listed as a national preservation district for traditional buildings."
+    },
+    {
+      "year": "2018",
+      "text": "Climbers on Myōkō and Hiuchi are first asked for a voluntary entry fee, in a three-week trial in October; Myōkō City has asked for it each season since 2020."
+    }
+  ],
+  "safety": [
+    "Yakeyama (2,400 m) is watched around the clock by the Japan Meteorological Agency under its five-step volcanic alert levels: 1, an active volcano to bear in mind; 2, keep away from the crater; 3, keep off the mountain; 4, elderly and vulnerable people evacuate; 5, evacuate. Its 1974 eruption killed three campers. Check JMA's current level and Niigata Prefecture's notices before you go; Myōkō is also listed as an active volcano.",
+    "The Togakushi range is steep, rocky and suited only to experienced climbers; Iizuna is the gentler hill for beginners. Carry a map, choose a route within your fitness and skill, and turn back rather than push on if you lose the way.",
+    "Asian black bears live throughout the park. Carry a bell or talk as you walk, keep food packed away, and never feed any wild animal.",
+    "Snow lies on the high trails into May and later in gullies. Check conditions at a visitor centre and carry clothing for cold, wet weather even in summer."
+  ],
+  "regulations": [
+    "Entering within 2 km of Yakeyama's summit without filing a climbing notice breaks Niigata's prefectural ordinance and carries a penalty.",
+    "Keep to the path, and do not pick plants, take animals or feed wildlife: the plants of the moors are easily trampled.",
+    "In the grove around Togakushi's Okusha, a prefectural natural monument, keep off the forest floor.",
+    "Smoking while walking is not allowed, and fires may be lit only at designated places. Take all litter home, toilet paper included.",
+    "The Ministry of the Environment asks that drones not be flown where rare wildlife has been seen nearby."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-mountains",
+    "theme-sacred-places",
+    "theme-wetland",
+    "theme-alpine",
+    "theme-hot-springs",
+    "theme-deciduous-forest"
+  ],
+  "photos": [
+    {
+      "file": "File:Imori-ike with Mout Myoko (7697997840).jpg",
+      "caption": "Myōkō-san above Imori-ike at Myōkō Kōgen",
+      "altText": "A broad volcanic mountain rising beyond a still pond fringed with reeds and trees"
+    },
+    {
+      "file": "File:Mount Togakushi from Kagami Pond.jpg",
+      "caption": "The Togakushi range from Kagami-ike",
+      "altText": "A jagged rocky ridge above forest and a calm pond"
+    },
+    {
+      "file": "File:天狗の庭から見た火打山.jpg",
+      "caption": "Mount Hiuchi from the moor of Tengu-no-niwa",
+      "altText": "A rounded mountain above a high moor with small pools"
+    },
+    {
+      "file": "File:230807 Lake Nojiri Shinano Nagano pref Japan01s3.jpg",
+      "caption": "Lake Nojiri, on the park's eastern edge",
+      "altText": "A wide lake with wooded shores and hills behind"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Myoko-Togakushi renzan National Park — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/myoko-togakushi-renzan/"
+    },
+    {
+      "title": "Explore Myoko-Togakushi Renzan National Park — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/myoko-togakushi-renzan/explore/"
+    },
+    {
+      "title": "How to get there — Myoko-Togakushi renzan — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/myoko-togakushi-renzan/how-to-get-there/"
+    },
+    {
+      "title": "82 Mori-no-Manabiya (Forest Learning Center) — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/myoko-togakushi-renzan/see-and-do/82-mori-no-manabiya/"
+    },
+    {
+      "title": "妙高戸隠連山国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/myokotogakushi/"
+    },
+    {
+      "title": "妙高戸隠連山国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/myokotogakushi/intro/index.html"
+    },
+    {
+      "title": "妙高戸隠連山国立公園 公園の特長 — 環境省",
+      "url": "https://www.env.go.jp/park/myokotogakushi/point/index.html"
+    },
+    {
+      "title": "妙高戸隠連山国立公園の取組み（入域料） — 環境省",
+      "url": "https://www.env.go.jp/park/myokotogakushi/effort.html"
+    },
+    {
+      "title": "妙高戸隠連山国立公園 利用上の注意 — 環境省",
+      "url": "https://www.env.go.jp/park/myokotogakushi/attention.html"
+    },
+    {
+      "title": "規制される行為やその手続き等 — 環境省",
+      "url": "https://www.env.go.jp/park/apply/park_apply.html"
+    },
+    {
+      "title": "新潟焼山における火山災害による遭難の防止に関する条例について — 新潟県",
+      "url": "https://www.pref.niigata.lg.jp/sec/bosaikikaku/yakeyama.html"
+    },
+    {
+      "title": "冬期通行止め区間の通行規制の解除 — 新潟県上越地域振興局",
+      "url": "https://www.pref.niigata.lg.jp/site/jouetsu-seibi/haru-josethu.html"
+    },
+    {
+      "title": "新潟焼山 1974年の噴火 — 気象庁新潟地方気象台",
+      "url": "https://www.data.jma.go.jp/niigata/menu/2024project/1974_niigata-yakeyama_hunka.htm"
+    },
+    {
+      "title": "活動中の火山・噴火警報の発表状況 — 気象庁",
+      "url": "https://www.data.jma.go.jp/vois/data/tokyo/STOCK/activity_info/map_0.html"
+    },
+    {
+      "title": "関山 平年値 — 気象庁",
+      "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=54&block_no=0998&year=&month=&day=&view="
+    },
+    {
+      "title": "戸隠神社の歴史 — 戸隠神社",
+      "url": "https://www.togakushi-jinja.jp/about"
+    },
+    {
+      "title": "奥社の杜をつなぐ — 戸隠神社",
+      "url": "https://www.togakushi-jinja.jp/okusha"
+    },
+    {
+      "title": "火打山 — にいがた観光ナビ",
+      "url": "https://niigata-kankou.or.jp/spot/8514"
+    },
+    {
+      "title": "妙高戸隠連山国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A6%99%E9%AB%98%E6%88%B8%E9%9A%A0%E9%80%A3%E5%B1%B1%E5%9B%BD%E7%AB%8B%E5%85%AC%E5%9C%92"
+    },
+    {
+      "title": "妙高山 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A6%99%E9%AB%98%E5%B1%B1"
+    },
+    {
+      "title": "火打山 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E7%81%AB%E6%89%93%E5%B1%B1"
+    },
+    {
+      "title": "新潟焼山 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E6%96%B0%E6%BD%9F%E7%84%BC%E5%B1%B1"
+    },
+    {
+      "title": "Togakushi Shrine — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Togakushi_Shrine"
+    },
+    {
+      "title": "野尻湖 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E9%87%8E%E5%B0%BB%E6%B9%96"
+    },
+    {
+      "title": "苗名滝 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E8%8B%97%E5%90%8D%E6%BB%9D"
+    },
+    {
+      "title": "戸隠神社 — コトバンク (日本大百科全書)",
+      "url": "https://kotobank.jp/word/%E6%88%B8%E9%9A%A0%E7%A5%9E%E7%A4%BE"
+    },
+    {
+      "title": "日本の主な山岳標高 — 国土地理院",
+      "url": "https://www.gsi.go.jp/kihonjohochousa/kihonjohochousa41139.html"
+    },
+    {
+      "title": "噴火警戒レベルの説明 — 気象庁",
+      "url": "https://www.jma.go.jp/jma/kishou/know/kazan/level_toha/level_toha.html"
+    },
+    {
+      "title": "戸隠山 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E6%88%B8%E9%9A%A0%E5%B1%B1"
+    }
+  ]
+}

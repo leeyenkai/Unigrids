@@ -1,0 +1,215 @@
+{
+  "placeID": "no-np-rohkunborri",
+  "contentVersion": 1,
+  "summary": "One of the wildest corners of Troms, on the Swedish border in Bardu: the Sørdalen gorge, cut by Ice Age meltwater between glaciated mountains over 1,500 metres, and in the east the great Rohkunborri massif above birch valleys, alpine wetlands and lakes full of big char. Lime-rich rock feeds a colourful mountain flora, and Norwegian and Swedish Sámi reindeer share the grazing. The Arctic Trail runs through it.",
+  "facts": {
+    "establishedYear": 2011,
+    "areaHectares": 57100,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Two to five days"
+  },
+  "story": [
+    "Rohkunborri is wilderness on a large scale. In the west, the valley of Sørdalen narrows into the Boldnoávži gorge, cut through the Caledonian bedrock at the end of the last ice age by meltwater pouring north from the thawing ice on the Swedish side, where Torneträsk lies today — a textbook example of how melting ice shaped this country. Mountains over 1,500 metres, still carrying glaciers, stand on both sides. In the east the Rohkunborri massif rises above wooded valleys, alpine wetlands and the large, deep lake Geavdnjajávri.",
+    "The park sits on a geological boundary: ancient granite and syenite to the east, younger mica schist and marble to the west. The lime in that younger rock feeds colourful alpine gardens of mountain avens, purple saxifrage and Lapland rhododendron, which paints the slopes violet in spring. Sørdalen has tall-herb birch woods and grey alder with meadows of ostrich fern; Stordalen holds tall birch forest that has barely been touched. Some lakes teem with big char, while others, along the gorge and the Jordbru river, have never held fish and instead hold rare crustaceans that feed scaup, long-tailed duck and scoters.",
+    "Wolverine, lynx and brown bear live here, and golden eagles, gyrfalcons and snowy owls nest. The regulation names the arctic fox as a species to take special care of: it breeds just across the border, and the hope is that it will settle on the Norwegian side too. People have used the area since the end of the Mesolithic, and the whole park is a Sámi cultural landscape, with several systems of pitfall traps. Norwegian reindeer graze here year-round, and herds of the Swedish Sámi community of Talma come to calve in spring.",
+    "The park was established on 25 February 2011, entirely on state land. To the south it meets Vadvetjåkka, Sweden's northernmost national park, protected in 1920, and Øvre Dividal National Park lies less than ten kilometres to the north. The Arctic Trail — Nordkalottruta — ties them together, running from Øvre Dividal through Sørdalen and past the cabin at Lappjord into Sweden."
+  ],
+  "howItWorks": [
+    "Norway's right to roam (allemannsretten) applies: you may walk and ski where you like, pitch a tent where you like, and pick berries, mushrooms and common plants for your own use, taking extra care in the breeding season. Fires are allowed with care, but national law bans fires in or near woodland from 15 April to 15 September unless a fire plainly cannot spread or the municipality allows it. Dogs must be kept on a lead from 1 April to 20 August.",
+    "Motor traffic is banned on land, on water and in the air below 300 metres, and that includes electric bicycles; motorised model aircraft and drones are banned too. Cycling and organised riding are allowed on roads and on routes approved in the management plan. Organised walking needs no permit as long as the land is not damaged; organised activity that could harm the natural environment needs permission from the Rohkunborri National Park Board. Anglers may use boats with motors of up to 10 horsepower on Geavdnjajávri, and the armed forces may fly low over the park from 15 July to 30 April.",
+    "The park is grazing land for both Norwegian and Swedish reindeer, and the herds are moved here to calve in May and June. Keep your distance from reindeer during calving. The regulation lets reindeer herders cut birch for fuel and reindeer fences, and allows the gathering of materials for duodji, traditional Sámi handicraft, as well as shoe hay and floor brush for turf huts and lávvus."
+  ],
+  "sights": [
+    {
+      "name": "Sørdalen gorge (Boldnoávži)",
+      "note": "A deep canyon cut by Ice Age meltwater between glaciated peaks. The Arctic Trail follows Sørdalen to Lappjord, with views down into the gorge.",
+      "location": [
+        68.559,
+        18.625
+      ]
+    },
+    {
+      "name": "Rohkunborri",
+      "note": "The massif that gives the park its name, rising above the wooded valleys and wetlands of the east.",
+      "location": [
+        68.556,
+        19.354
+      ]
+    },
+    {
+      "name": "Geavdnjajávri",
+      "note": "A large, deep lake whose fish stocks are unaffected by stocking or watercourse regulation. Known for big char, summer and winter, with cloudberry bogs around it.",
+      "location": [
+        68.504,
+        19.348
+      ]
+    },
+    {
+      "name": "Stordalen (Hávgavuopmi)",
+      "note": "A valley of particularly tall, untouched birch forest with a rich ground flora, below the Rohkunborri massif.",
+      "location": [
+        68.576,
+        19.205
+      ]
+    },
+    {
+      "name": "Jordbruelva",
+      "note": "A watercourse whose lakes have never held fish; instead they hold fairy shrimp and tadpole shrimp, food for upland ducks.",
+      "location": [
+        68.56,
+        19.125
+      ]
+    },
+    {
+      "name": "Eartebealjávri",
+      "note": "A lake in the far east of the park, ringed by cloudberry bogs and known for unusually big char.",
+      "location": [
+        68.448,
+        19.616
+      ]
+    },
+    {
+      "name": "Isdalen",
+      "note": "A side valley on the park's north-western edge, one of the places the park brochure singles out for a visit.",
+      "location": [
+        68.641,
+        18.451
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Sørdalen, from Setermoen by the Altevatn road — car park and toilet, and the Arctic Trail south up the valley",
+      "Bones in Salangsdalen, off the E6 — car park and toilet",
+      "Altevatnet, at the end of the Altevatn road, a good start in summer and winter"
+    ],
+    "reservations": "No permit or booking is needed to enter the park. The Norwegian Trekking Association's cabin at Lappjord in Sørdalen lies on the Arctic Trail inside the park.",
+    "permits": [
+      "Organised activity that could harm the natural environment needs permission from the Rohkunborri National Park Board",
+      "Hunting (willow grouse, ptarmigan and elk) and fishing need licences"
+    ],
+    "camping": [
+      "Wild camping under the right to roam; the park suits simple trips with a tent, stove and fishing rod"
+    ],
+    "lodging": [
+      "DNT cabins at Lappjord in Sørdalen and at Altevatnet",
+      "Local firms at the west end of Altevatnet have offered cabins and transport across the lake — by boat in summer, dog sledge or snowmobile in winter; check current services with Visit Bardu"
+    ],
+    "seasonalClosures": []
+  },
+  "weather": "Rohkunborri is used in every season: skiing and fishing through the ice in winter, walking, angling and summit climbs in summer. The reindeer are brought in to calve in May and June; in summer the snow lingering on the tops gives them relief from insects, and in late autumn the Swedish herds move back to winter grazing in Sweden. Cloudberries grow on the bogs in Stordalen and around Geavdnjajávri and Eartebealjávri, and the birch woods of Sørdalen turn colour in autumn.",
+  "directions": "The park lies in inner Troms between Narvik and Tromsø, about an hour's drive from Narvik and three hours from Tromsø. The nearest airports are Bardufoss and Evenes, with onward travel by bus and car. Drive the E6 to Setermoen and take the Altevatn road, which branches for Sørdalen and for Altevatnet; or follow the E6 through Salangsdalen and turn off for Bones. On foot, the Arctic Trail comes in from Øvre Dividal National Park in the north and continues south into Sweden towards Abisko.",
+  "chronology": [
+    {
+      "year": "End of the last ice age",
+      "text": "Meltwater from the ice on the Swedish side pours north and cuts the Sørdalen gorge."
+    },
+    {
+      "year": "End of the Mesolithic",
+      "text": "People leave the earliest traces yet found in the park."
+    },
+    {
+      "year": "Neolithic and Bronze Age",
+      "text": "People leave cultural remains that survive in the park, alongside later relics of Sámi prehistory."
+    },
+    {
+      "year": "1920",
+      "text": "Sweden protects Vadvetjåkka, now the park's neighbour across the border, as a national park."
+    },
+    {
+      "year": "1971",
+      "text": "Øvre Dividal National Park is established to the north."
+    },
+    {
+      "year": "2011",
+      "text": "On 25 February Rohkunborri National Park is established."
+    }
+  ],
+  "safety": [
+    "This is remote country with long distances between roads. Carry a tent and everything you need to look after yourself in any weather.",
+    "Wolverine, lynx and brown bear live in the park. Keep your distance from any large predator and from reindeer with calves.",
+    "Keep well back from the edges of the Sørdalen gorge, whose sides fall steeply to the river."
+  ],
+  "regulations": [
+    "Motor traffic, electric bicycles and drones are banned; aircraft may not fly lower than 300 metres except on permitted business.",
+    "Dogs must be on a lead from 1 April to 20 August.",
+    "Cycling and organised riding are allowed only on roads and approved routes.",
+    "Boats with motors of up to 10 horsepower may be used on Geavdnjajávri for fishing; elsewhere motorboats are banned.",
+    "Never use live fish as bait, or move live fish from one river or lake to another."
+  ],
+  "themes": [
+    "theme-canyons",
+    "theme-mountains",
+    "theme-alpine",
+    "theme-wetland",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Canyon in Rohkunborri National Park.jpg",
+      "caption": "The Sørdalen canyon, looking north from near Stággonjunni",
+      "altText": "A deep, steep-sided green valley between high mountains with patches of snow"
+    },
+    {
+      "file": "File:Rohkunborri Canyon West Side Panorama.jpg",
+      "caption": "Peaks on the west side of the Sørdalen canyon, from midway down the gorge",
+      "altText": "A wide panorama of snow-patched peaks above a deep canyon with a waterfall"
+    },
+    {
+      "file": "File:RohkunDyrelivPaaFjellet.jpg",
+      "caption": "Reindeer escaping insects on a snow patch below Kjeleelvtinden",
+      "altText": "A herd of reindeer standing on a large snowfield below a bare mountain under a blue sky"
+    },
+    {
+      "file": "File:Tornetresk fra Rohkunborri.jpg",
+      "caption": "Torneträsk and the arch of Lapporten in Sweden, seen from the park",
+      "altText": "A long lake far below green slopes, with mountains on the far shore"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rohkunborri nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/rohkunborri/"
+    },
+    {
+      "title": "Rohkunborri nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00003005"
+    },
+    {
+      "title": "Forskrift om vern av Rohkunborri nasjonalpark, Bardu kommune, Troms — Lovdata",
+      "url": "https://lovdata.no/forskrift/2011-02-25-224"
+    },
+    {
+      "title": "Rohkunborri National Park (English brochure) — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/globalassets/dokumenter/publikasjoner/brosjyrer/rohkunborri_np_e_nett-mai-2012.pdf"
+    },
+    {
+      "title": "Forskrift om brannforebygging § 3 — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Rohkunborri National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rohkunborri_National_Park"
+    },
+    {
+      "title": "Rohkunborri nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Rohkunborri_nasjonalpark"
+    },
+    {
+      "title": "Vadvetjåkka nationalpark — Wikipedia (svenska)",
+      "url": "https://sv.wikipedia.org/wiki/Vadvetj%C3%A5kka_nationalpark"
+    },
+    {
+      "title": "Canyon in Rohkunborri National Park — Wikimedia Commons (location of the gorge)",
+      "url": "https://commons.wikimedia.org/wiki/File:Canyon_in_Rohkunborri_National_Park.jpg"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

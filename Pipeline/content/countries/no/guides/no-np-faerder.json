@@ -1,0 +1,241 @@
+{
+  "placeID": "no-np-faerder",
+  "contentVersion": 1,
+  "summary": "The skerries at the mouth of the Oslofjord: smooth, ice-polished 'whaleback' rocks, flowering hay meadows, Bronze Age cairns and the Færder lighthouse, in a park that is 96 per cent sea. Paddle between islands, take the summer boat to Bolærne, or walk out to Verdens ende — two hours' drive from Oslo.",
+  "facts": {
+    "establishedYear": 2013,
+    "areaHectares": 34000,
+    "bestSeasons": [
+      "summer",
+      "spring",
+      "autumn"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "Færder National Park is an archipelago of small and large islands at the outer edge of the Oslofjord, east of Nøtterøy and Tjøme, reaching from Ormøy in the north to the Færder lighthouse in the south. Of its 340 square kilometres, about 325 are sea, and the seabed is protected too. Its signature landform is the svaberg: bare rock ground smooth by the ice into the rounded shapes locals call hvalskrotter, whale carcasses, found in few other places. At Moutmarka the ice left its scratches in the rock.",
+    "It is a coastal landscape of great natural richness, largely untouched by heavy development. Sandø, Bolærne, Østre Bustein and Moutmarka are especially rich in plants and insects: 309 red-listed species have been recorded in the park, among them the crested cow-wheat and the yellow horned poppy, which survives on Lille Rauer. On Østre Bolæren alone some 907 species of butterfly and moth have been found. Seabirds nest on the outer skerries, and since 2016 white-tailed eagles have bred in the area.",
+    "People have used these islands for thousands of years. The earliest traces are Bronze Age burial cairns two to three thousand years old, and many islands carry the foundations of old settlement. The landscape still shows the marks of fishing, farming and grazing, and several hay meadows are kept up with old techniques. Bolærne also has a dark war history, told in its defence museum. On Mellom Bolæren stands Grevestuen, one of Norway's oldest hunting lodges, and the protected Færder lighthouse, a 43-metre cast-iron tower first lit in 1857, stands on the Tristein islets at the park's southern tip, near the remains of the older light on Store Færder.",
+    "The park was created on 23 August 2013, absorbing the Ormø–Færder landscape protection area and 23 smaller protected areas, among them fifteen nature reserves set up in 1978 and bird sanctuaries on Store Færder and at Færder lighthouse dating from 1935. Parts of the inhabited islands of Bjerkøy, Nordre Årøy and Søndre Årøy lie within it, and it is run by the Færder national park board. To the east, across the fjord, it borders Ytre Hvaler National Park."
+  ],
+  "howItWorks": [
+    "The right to roam, allemannsretten, applies on land and shore, but the park's regulation sets firm limits around the seabirds. In zone B — the bird-nesting skerries — all traffic on land, and at sea within 50 metres of land, is forbidden from 15 April to 15 July, including surfboards, windsurfers, kites, paragliders and divers. Tents are banned on Ruseodden on Østre Bolæren, on Sandø and Østre Bustein, and in zones B and C (except on Lille Rauer and Hoftøya). Dogs must be on a lead all year in zone B and from 1 April to 15 October elsewhere in the park — longer than the national rule.",
+    "Fires are allowed only in purpose-built fireplaces or on bare, loose ground without vegetation, never close enough to plants, smooth rock or bedrock to damage them, and grills placed directly on the ground are banned everywhere. Only fallen wood may be burned. From 15 April to 15 September the national ban on fires in or near forest and other open country also applies unless the municipality has allowed them; check with Færder municipality before you go.",
+    "Motor traffic on land, on ice and in the air below 300 metres is forbidden, and jet skis are banned throughout. In zone B, motor boats must keep more than 50 metres from land from 15 April to 15 July. Motor-driven model aircraft are banned, and under Miljødirektoratet's rule drones may not take off in a national park or be flown into one without the park board's permission. Emptying sewage into the sea is forbidden. Hunting, trapping and fishing follow the ordinary laws, and you may gather shellfish for your own use."
+  ],
+  "sights": [
+    {
+      "name": "Færder fyr",
+      "note": "A 43-metre cast-iron lighthouse on Tristein (Lille Færder), first lit in 1857 and protected since 1997, marking the entrance to the outer Oslofjord.",
+      "location": [
+        59.027,
+        10.525
+      ]
+    },
+    {
+      "name": "Store Færder",
+      "note": "The island where the first Færder light was lit in 1697, with the remains of the old lighthouse and its protected buildings.",
+      "location": [
+        59.067,
+        10.524
+      ]
+    },
+    {
+      "name": "Østre Bolæren",
+      "note": "The main island destination, with coastal paths, a defence museum, a café and a summer boat service; 907 species of butterfly and moth have been recorded here.",
+      "location": [
+        59.204,
+        10.569
+      ]
+    },
+    {
+      "name": "Grevestuen",
+      "note": "On Mellom Bolæren, one of the oldest hunting lodges in Norway.",
+      "location": [
+        59.211,
+        10.556
+      ]
+    },
+    {
+      "name": "Sandø",
+      "note": "An island rich in plants and insects, with ice-polished rock; tents are not allowed here.",
+      "location": [
+        59.078,
+        10.466
+      ]
+    },
+    {
+      "name": "Lille Rauer",
+      "note": "A small island in the bird-protection zone and the refuge of the threatened yellow horned poppy.",
+      "location": [
+        59.176,
+        10.594
+      ]
+    },
+    {
+      "name": "Besøkssenter Færder nasjonalpark",
+      "note": "The authorised visitor centre at Verdens ende, 'World's End', just outside the boundary — exhibitions, guided walks and a fine view over the islands, with Moutmarka's walking country next door.",
+      "location": [
+        59.058,
+        10.407
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Verdens ende, at the southern tip of Tjøme, with the visitor centre — reached by road",
+      "Tønsberg harbour, one of the three main gateways",
+      "Østre Bolæren, by summer route boat"
+    ],
+    "reservations": "No booking or fee. The route boat to Bolærne runs in summer only; check the timetable before you go.",
+    "permits": [
+      "Drones and any motor traffic on land need a permit"
+    ],
+    "camping": [
+      "Camping is allowed under the right to roam except on Ruseodden on Østre Bolæren, on Sandø and Østre Bustein, and in zones B and C (Lille Rauer and Hoftøya excepted)",
+      "Lean-to shelters on several islands invite an overnight stay"
+    ],
+    "lodging": [
+      "Tjøme, Nøtterøy and Tønsberg",
+      "Østre Bolæren, in summer"
+    ],
+    "seasonalClosures": [
+      "Zone B, the seabird-nesting skerries: no landing and no boats within 50 metres of land from 15 April to 15 July"
+    ],
+    "seasonalClosureMonths": [
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "weather": "Summer is the busy season for boating, paddling, swimming and sunbathing, when the route boat runs to Bolærne. The sheltered bays and narrow channels make the park good paddling country all year, and Verdens ende and Moutmarka are open for walking in every season. The outer islands are exposed to wind and swell, so watch the forecast.",
+  "directions": "The park lies at the outer end of the Oslofjord near Tønsberg, about two hours' drive from Oslo. Roads cross Nøtterøy and Tjøme to Verdens ende, the land-connected gateway. In summer a route boat serves the Bolærne islands; most other islands are reached by private boat or kayak, and several have simple facilities for small boats.",
+  "chronology": [
+    {
+      "year": "Bronze Age",
+      "text": "Bronze Age people raise burial cairns on the islands, the earliest traces of human life here."
+    },
+    {
+      "year": "1697",
+      "text": "The first Færder light, an open coal fire, is lit on Store Færder."
+    },
+    {
+      "year": "1857",
+      "text": "The new cast-iron Færder lighthouse is completed on Tristein, replacing the Store Færder light."
+    },
+    {
+      "year": "1997",
+      "text": "Færder lighthouse is listed as a protected site."
+    },
+    {
+      "year": "2005",
+      "text": "The lighthouse is de-manned."
+    },
+    {
+      "year": "2013",
+      "text": "Færder National Park is created on 23 August, absorbing the Ormø–Færder landscape protection area and several nature reserves."
+    },
+    {
+      "year": "2016",
+      "text": "White-tailed eagles begin breeding in the park."
+    }
+  ],
+  "safety": [
+    "Weather on the outer fjord changes fast. Paddlers should wear buoyancy aids, keep near land and avoid crossing open water in wind.",
+    "Smooth rock is slippery when wet, and swells break hard on the outer skerries.",
+    "Keep well clear of large vessels in the shipping lanes of the outer Oslofjord."
+  ],
+  "regulations": [
+    "No landing or boating within 50 metres of land in the seabird zone (B) from 15 April to 15 July.",
+    "Dogs on a lead all year in zone B and from 1 April to 15 October elsewhere.",
+    "No jet skis; no motor traffic on land or ice, and none in the air below 300 metres.",
+    "Fires only in fireplaces or on bare, loose ground; no grills directly on the ground.",
+    "No tents on Ruseodden, Sandø, Østre Bustein or in zones B and C; no sewage into the sea."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-islands"
+  ],
+  "photos": [
+    {
+      "file": "File:Færder national park, formed by the ice - panoramio.jpg",
+      "caption": "Ice-polished rock in Færder National Park",
+      "altText": "Smooth, rounded granite rocks at the water's edge under a summer sky"
+    },
+    {
+      "file": "File:Færder light house - panoramio.jpg",
+      "caption": "Færder lighthouse at the mouth of the Oslofjord",
+      "altText": "A tall stone lighthouse on a low rocky islet in the sea"
+    },
+    {
+      "file": "File:Tjøme-Moutmarka-skuringsstriper.JPG",
+      "caption": "Glacial striations in the rock at Moutmarka",
+      "altText": "Parallel scratches running across a smooth rock surface"
+    },
+    {
+      "file": "File:Tjøme Sandø c.JPG",
+      "caption": "The shore of Sandø",
+      "altText": "Rounded coastal rocks and low vegetation beside calm water"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Færder nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/faerder/"
+    },
+    {
+      "title": "Færder nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00003084"
+    },
+    {
+      "title": "Forskrift om Færder nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/2013-08-23-1029"
+    },
+    {
+      "title": "Færder nasjonalpark — official website and visitor centre",
+      "url": "https://ferdernasjonalpark.no/"
+    },
+    {
+      "title": "Færder National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/F%C3%A6rder_National_Park"
+    },
+    {
+      "title": "Færder nasjonalpark — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/F%C3%A6rder_nasjonalpark"
+    },
+    {
+      "title": "Færder Lighthouse — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/F%C3%A6rder_Lighthouse"
+    },
+    {
+      "title": "Færder fyr — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/F%C3%A6rder_fyr"
+    },
+    {
+      "title": "Regler for droner i naturen — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/ansvarsomrader/vernet-natur/regler-for-droner-i-naturen/"
+    },
+    {
+      "title": "Lov om friluftslivet (friluftsloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/1957-06-28-16"
+    },
+    {
+      "title": "Forskrift om brannforebygging — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Geologi i Moutmarka (information sign) — Færder nasjonalpark",
+      "url": "https://ferdernasjonalpark.no/wp-content/uploads/2021/12/70x50_liggende_GEOLOGI-MOUTMARKA-lav.pdf"
+    },
+    {
+      "title": "Bolærne — Visit Vestfold",
+      "url": "https://visitvestfold.com/en/attraction/bolaerne/"
+    },
+    {
+      "title": "Sight locations — Kartverket place names (stedsnavn) and address register",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

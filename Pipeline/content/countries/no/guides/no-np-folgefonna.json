@@ -1,0 +1,231 @@
+{
+  "placeID": "no-np-folgefonna",
+  "contentVersion": 1,
+  "summary": "Norway's third-largest ice cap and the mountains around it, on the peninsula between the arms of the Hardangerfjord. Walk from sheltered fjord inlets up valleys of roaring rivers, past blue-green icefalls, to a plateau glacier fed by some of the heaviest precipitation in the country — ski on the ice in the morning and swim in the fjord in the afternoon.",
+  "facts": {
+    "establishedYear": 2005,
+    "areaHectares": 54520,
+    "bestSeasons": [
+      "summer",
+      "spring"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Folgefonna National Park covers almost all of the Folgefonna glacier and the land around it, on the Folgefonna peninsula in Hardanger, between the Sørfjord to the east and the coast road along the outer fjord to the west. Within a small area the landscape runs from sheltered fjord inlets, through open valleys with thundering rivers and past blue-green icefalls, to high mountains looking out over the ice. You can ski on the glacier in the morning and swim in the fjord the same afternoon.",
+    "Folgefonna is really three ice caps — Nordre, Midtre and Søndre Folgefonna — and together they make the third-largest glacier in Norway. The highest point is 1,662 metres. Around 5,500 millimetres of precipitation fall on the highest parts each year, mostly as snow, which is compressed into glacier ice and creeps slowly downhill, grinding the land beneath it. The marks of the ice and the peninsula's long geological history are everywhere; a road tunnel even runs beneath the park and the glacier.",
+    "Between fjord and ice lie bare ground, sheltered pine forest and old pasture. The wet western side is lush, with coastal plants such as foxglove and cross-leaved heath below the tree line, and the mountain forest there is some of the best red deer country in Norway. The white-backed woodpecker lives in the old, untouched coastal woods. Higher up, ptarmigan are the characteristic bird near the ice, along with meadow pipits, golden eagles and rough-legged buzzards, and the lime-rich rock around Skjeggesnuten and Sauanuten carries a rich mountain flora.",
+    "People have long used Folgefonna and its valleys as a route across the peninsula, for summer farming and for the harvest of the outfield. The glacier has drawn tourists for almost two centuries — the first organised trips onto the ice were made in 1833. The national park was created on 29 April 2005 and opened by Queen Sonja on 14 May that year, in Mauranger."
+  ],
+  "howItWorks": [
+    "The right to roam, allemannsretten, applies: you may walk anywhere in the outfield, camp for two nights in one place without asking — longer in remote mountains — at least 150 metres from a house or cabin, and pick berries and mushrooms. Careful use of wood for campfires is allowed, but from 15 April to 15 September it is forbidden across Norway to light a fire in or near forest and other open country unless the municipality has allowed it or a fire plainly cannot spread; check with Kvinnherad, Etne or Ullensvang before you go. Dogs must be on a lead from 1 April to 20 August under the national dog law.",
+    "Motor traffic is forbidden on land, on water and in the air below 300 metres; e-bikes count, and drones may not be flown. Under Miljødirektoratet's rule, drones may not take off in a national park or be flown into one without the park board's permission, and the regulation bans motor-driven model aircraft, model boats and ice drills. Cycling and organised riding are allowed only on routes approved in the management plan.",
+    "Organised walking trips are allowed as long as they do no harm; other organised activities need permission. Hunting and fishing follow the ordinary laws. Wildlife, including dens, nests and spawning grounds, must not be disturbed."
+  ],
+  "sights": [
+    {
+      "name": "Folgefonni",
+      "note": "The ice cap itself, in three parts — Nordre, Midtre and Søndre Folgefonna. At its highest the ice reached 1,662 metres in 2013.",
+      "location": [
+        60.068,
+        6.393
+      ]
+    },
+    {
+      "name": "Bondhusbreen",
+      "note": "A crevassed glacier arm flowing down towards Bondhusdalen and the Maurangsfjord on the western side.",
+      "location": [
+        60.061,
+        6.311
+      ]
+    },
+    {
+      "name": "Buarbreen",
+      "note": "A glacier arm reaching down into Buardalen, about 6 km south-west of Odda, split in two by a small peak.",
+      "location": [
+        60.0401,
+        6.4199
+      ]
+    },
+    {
+      "name": "Melderskin",
+      "note": "A 1,426-metre peak above Rosendal, inside the park — the nearest mountain higher than Ben Nevis.",
+      "location": [
+        60.006,
+        6.083
+      ]
+    },
+    {
+      "name": "Skjeggesnuten",
+      "note": "A lime-rich mountain in the south of the park; with Sauanuten, it carries the park's richest mountain flora.",
+      "location": [
+        59.9504,
+        6.4504
+      ]
+    },
+    {
+      "name": "Sauanuten",
+      "note": "A summit on lime-rich rock in the south-east, part of the same rich mountain flora.",
+      "location": [
+        59.967,
+        6.457
+      ]
+    },
+    {
+      "name": "Folgefonnsenteret",
+      "note": "The authorised visitor centre for Folgefonna National Park in Rosendal, with an interactive exhibition from 2017; the Stone Park, on the peninsula's geology, is ten minutes' walk away.",
+      "location": [
+        59.987,
+        6.007
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Rosendal and the western valleys of Kvinnherad, with the visitor centre",
+      "Mauranger and Sundal on the Maurangsfjord, for Bondhusdalen and the western glacier arms",
+      "Odda and Buer on the Sørfjord, for Buarbreen",
+      "The Folgefonna tunnel road, which runs beneath the park between Mauranger and Odda"
+    ],
+    "reservations": "No booking or fee for the park. Glacier walks are run as guided trips in summer; book with an operator.",
+    "permits": [
+      "Organised activities other than walking trips need permission from the national park board",
+      "Drones and any motor use need a permit"
+    ],
+    "camping": [
+      "Wild camping under the right to roam",
+      "Tourist cabins inside the park: Sauabrehytta, Fonnabu, Breidablikk and Holmaskjer"
+    ],
+    "lodging": [
+      "Rosendal, Mauranger, Odda and the fjord villages of Kvinnherad, Etne and Ullensvang"
+    ],
+    "seasonalClosures": []
+  },
+  "weather": "The highest parts of Folgefonna are among the wettest places in Norway, with around 5,500 millimetres of precipitation a year, most of it falling as snow. The western side, nearest the sea, is the wettest and lushest. Spring, with deep snow and long days, is the popular season for skiing across the glacier; summer is the season for guided glacier walks, fjord kayaking and mountain hikes.",
+  "directions": "The park lies on the Folgefonna peninsula about two hours' drive east of Bergen. Fv 48 runs along the western side and Rv 13 along the Sørfjord on the east, with the E134 to the south; the Folgefonna tunnel passes under the park and the glacier between the two sides. There is no railway on the peninsula.",
+  "chronology": [
+    {
+      "year": "Ice ages",
+      "text": "Glaciers grind out the valleys and fjord arms of the Folgefonna peninsula, leaving traces seen everywhere today."
+    },
+    {
+      "year": "Centuries past",
+      "text": "Folgefonna and its valleys serve as a route across the peninsula and as summer pasture."
+    },
+    {
+      "year": "1833",
+      "text": "The first organised tourist trips are made onto the glacier."
+    },
+    {
+      "year": "2005",
+      "text": "The national park is created on 29 April by a resolution of the Crown Prince Regent."
+    },
+    {
+      "year": "2005",
+      "text": "Queen Sonja opens Folgefonna National Park in Mauranger on 14 May."
+    },
+    {
+      "year": "2017",
+      "text": "The interactive exhibition of the Folgefonna visitor centre opens in Rosendal."
+    }
+  ],
+  "safety": [
+    "Never go onto the glacier without the right equipment, training and a rope team — glacier walks here are run as guided trips. Crevasses can hide under snow.",
+    "Keep well back from glacier fronts and icefalls, where ice can collapse without warning.",
+    "Cloud and fog roll in quickly over the ice cap. Carry map, compass or GPS and turn back if visibility drops.",
+    "Glacial rivers rise during warm afternoons and after rain; cross early or find a bridge."
+  ],
+  "regulations": [
+    "No motor traffic on land, water or in the air below 300 metres; no e-bikes or drones without a permit.",
+    "No motor-driven model aircraft, model boats or ice drills.",
+    "Cycling and organised riding only on approved routes.",
+    "No open fires in or near forest from 15 April to 15 September unless the municipality allows it.",
+    "Dogs on a lead from 1 April to 20 August."
+  ],
+  "themes": [
+    "theme-glaciers",
+    "theme-mountains",
+    "theme-fjords"
+  ],
+  "photos": [
+    {
+      "file": "File:Folgefonna south.JPG",
+      "caption": "The southern part of the Folgefonna ice cap",
+      "altText": "A broad white ice cap stretching to the horizon above dark rock"
+    },
+    {
+      "file": "File:Bondhusbreen Folgefonna Norway.jpg",
+      "caption": "Bondhusbreen, a crevassed arm of Folgefonna on the western side",
+      "altText": "A crevassed glacier tongue flowing down between steep rock walls"
+    },
+    {
+      "file": "File:Buerbreen.JPG",
+      "caption": "Buarbreen, reaching down into Buardalen near Odda",
+      "altText": "A blue-white glacier tongue descending into a green valley"
+    },
+    {
+      "file": "File:Melderskin - Kvinnherad, Norway 2021-07-29.jpg",
+      "caption": "Melderskin, the 1,426-metre peak above Rosendal",
+      "altText": "A steep mountain rising above a fjord village and green hills"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Folgefonna nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/folgefonna/"
+    },
+    {
+      "title": "Folgefonna nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00002339"
+    },
+    {
+      "title": "Forskrift om vern av Folgefonna nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/2005-04-29-389"
+    },
+    {
+      "title": "Folgefonna nasjonalpark — folgefonna.info (park board and visitor centre)",
+      "url": "https://folgefonna.info/"
+    },
+    {
+      "title": "Folgefonna National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Folgefonna_National_Park"
+    },
+    {
+      "title": "Folgefonna nasjonalpark — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/Folgefonna_nasjonalpark"
+    },
+    {
+      "title": "Folgefonna — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/Folgefonna"
+    },
+    {
+      "title": "Melderskin — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Melderskin"
+    },
+    {
+      "title": "Buarbreen — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Buarbreen"
+    },
+    {
+      "title": "Regler for droner i naturen — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/ansvarsomrader/vernet-natur/regler-for-droner-i-naturen/"
+    },
+    {
+      "title": "Lov om friluftslivet (friluftsloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/1957-06-28-16"
+    },
+    {
+      "title": "Forskrift om brannforebygging — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Lov om forsvarlig hundehold (hundeloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+    },
+    {
+      "title": "Sight locations — Kartverket place names (stedsnavn) and OpenStreetMap",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

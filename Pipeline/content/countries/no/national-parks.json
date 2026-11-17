@@ -1,0 +1,304 @@
+{
+  "_about": "Norway's 48 national parks, 41 on the mainland and 7 on Svalbard. IDs are permanent: user logs point at them. 'name' is the park's short official name (Miljødirektoratet's 'navn', first form); 'naturvernId' keys it to the Naturvernområder dataset, from which the pipeline reads the outline, official names in every language, municipalities and manager. Founding dates and areas are curated in each guide's facts with their source, since 'vernedato' is the current regulation's date. 'reachedBy' is how a park with no road to it is reached, in a line taken from its guide's directions; a trip shows it where no road route exists.",
+  "parks": [
+    {
+      "id": "no-np-anarjohka",
+      "name": "Anárjohka",
+      "naturvernId": "VV00000006",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-blafjella-skjaekerfjella",
+      "name": "Blåfjella-Skjækerfjella",
+      "naturvernId": "VV00001562",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-breheimen",
+      "name": "Breheimen",
+      "naturvernId": "VV00002830",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-borgefjell",
+      "name": "Børgefjell",
+      "naturvernId": "VV00000261",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-dovre",
+      "name": "Dovre",
+      "naturvernId": "VV00002230",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-dovrefjell-sunndalsfjella",
+      "name": "Dovrefjell-Sunndalsfjella",
+      "naturvernId": "VV00001897",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-femundsmarka",
+      "name": "Femundsmarka",
+      "naturvernId": "VV00001943",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-folgefonna",
+      "name": "Folgefonna",
+      "naturvernId": "VV00002339",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-forlandet",
+      "name": "Forlandet",
+      "naturvernId": "VV00002572",
+      "svalbard": true,
+      "reachedBy": "Fly to Longyearbyen, then by boat"
+    },
+    {
+      "id": "no-np-forollhogna",
+      "name": "Forollhogna",
+      "naturvernId": "VV00000597",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-fulufjellet",
+      "name": "Fulufjellet",
+      "naturvernId": "VV00003056",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-faerder",
+      "name": "Færder",
+      "naturvernId": "VV00003084",
+      "svalbard": false,
+      "reachedBy": "Road to Verdens ende, then by boat"
+    },
+    {
+      "id": "no-np-gutulia",
+      "name": "Gutulia",
+      "naturvernId": "VV00000604",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-hallingskarvet",
+      "name": "Hallingskarvet",
+      "naturvernId": "VV00002450",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-hardangervidda",
+      "name": "Hardangervidda",
+      "naturvernId": "VV00001878",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-indre-wijdefjorden",
+      "name": "Indre Wijdefjorden",
+      "naturvernId": "VV00002571",
+      "svalbard": true,
+      "reachedBy": "Fly to Longyearbyen, then by boat in summer or snowmobile in winter"
+    },
+    {
+      "id": "no-np-jomfruland",
+      "name": "Jomfruland",
+      "naturvernId": "VV00003264",
+      "svalbard": false,
+      "reachedBy": "Ferry from Kragerø"
+    },
+    {
+      "id": "no-np-jostedalsbreen",
+      "name": "Jostedalsbreen",
+      "naturvernId": "VV00000668",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-jotunheimen",
+      "name": "Jotunheimen",
+      "naturvernId": "VV00001869",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-junkerdal",
+      "name": "Junkerdal",
+      "naturvernId": "VV00000252",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-langsua",
+      "name": "Langsua",
+      "naturvernId": "VV00001144",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-lierne",
+      "name": "Lierne",
+      "naturvernId": "VV00002334",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-lofotodden",
+      "name": "Lofotodden",
+      "naturvernId": "VV00003401",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-lomsdal-visten",
+      "name": "Lomsdal-Visten",
+      "naturvernId": "VV00002750",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-lahko",
+      "name": "Láhko",
+      "naturvernId": "VV00003061",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-moysalen",
+      "name": "Møysalen",
+      "naturvernId": "VV00002196",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-nordre-isfjorden",
+      "name": "Nordre Isfjorden",
+      "naturvernId": "VV00002584",
+      "svalbard": true,
+      "reachedBy": "Fly to Longyearbyen, then by boat across Isfjorden"
+    },
+    {
+      "id": "no-np-nordvest-spitsbergen",
+      "name": "Nordvest-Spitsbergen",
+      "naturvernId": "VV00002573",
+      "svalbard": true,
+      "reachedBy": "Fly to Longyearbyen, then by boat"
+    },
+    {
+      "id": "no-np-raet",
+      "name": "Raet",
+      "naturvernId": "VV00003273",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-rago",
+      "name": "Rago",
+      "naturvernId": "VV00000130",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-reinheimen",
+      "name": "Reinheimen",
+      "naturvernId": "VV00002446",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-reisa",
+      "name": "Reisa",
+      "naturvernId": "VV00000108",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-rohkunborri",
+      "name": "Rohkunborri",
+      "naturvernId": "VV00003005",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-rondane",
+      "name": "Rondane",
+      "naturvernId": "VV00001873",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-saltfjellet-svartisen",
+      "name": "Saltfjellet-Svartisen",
+      "naturvernId": "VV00000235",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-sassen-bunsow-land",
+      "name": "Sassen-Bünsow Land",
+      "naturvernId": "VV00002564",
+      "svalbard": true,
+      "reachedBy": "Fly to Longyearbyen, then by snowmobile in winter or boat in summer"
+    },
+    {
+      "id": "no-np-seiland",
+      "name": "Seiland",
+      "naturvernId": "VV00002436",
+      "svalbard": false,
+      "reachedBy": "Car ferry from Strømsnes, or boat from Alta"
+    },
+    {
+      "id": "no-np-sjunkhatten",
+      "name": "Sjunkhatten",
+      "naturvernId": "VV00002858",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-skarvan-og-roltdalen",
+      "name": "Skarvan og Roltdalen",
+      "naturvernId": "VV00002272",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-stabbursdalen",
+      "name": "Stabbursdalen",
+      "naturvernId": "VV00000067",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-sor-spitsbergen",
+      "name": "Sør-Spitsbergen",
+      "naturvernId": "VV00002565",
+      "svalbard": true,
+      "reachedBy": "Fly to Longyearbyen, then by boat"
+    },
+    {
+      "id": "no-np-van-mijenfjorden",
+      "name": "Van Mijenfjorden",
+      "naturvernId": "VV00002570",
+      "svalbard": true,
+      "reachedBy": "Fly to Longyearbyen, then by snowmobile in winter or boat in summer"
+    },
+    {
+      "id": "no-np-varangerhalvoya",
+      "name": "Varangerhalvøya",
+      "naturvernId": "VV00002437",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-ytre-hvaler",
+      "name": "Ytre Hvaler",
+      "naturvernId": "VV00002752",
+      "svalbard": false,
+      "reachedBy": "Road to Skjærhalden, then by boat"
+    },
+    {
+      "id": "no-np-anderdalen",
+      "name": "Ånderdalen",
+      "naturvernId": "VV00000117",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-ostmarka",
+      "name": "Østmarka",
+      "naturvernId": "VV00003849",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-ovre-dividal",
+      "name": "Øvre Dividal",
+      "naturvernId": "VV00000131",
+      "svalbard": false
+    },
+    {
+      "id": "no-np-ovre-pasvik",
+      "name": "Øvre Pasvik",
+      "naturvernId": "VV00000012",
+      "svalbard": false
+    }
+  ]
+}

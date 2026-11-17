@@ -1,0 +1,169 @@
+{
+  "placeID": "no-np-lahko",
+  "contentVersion": 1,
+  "summary": "Norway's largest continuous area of alpine karst: high limestone country between Bodø and Mo i Rana where water has carved the rock into fissures, pavements, sinkholes and caves. Clear lime-rich lakes, a rich flora and the reindeer of Saltfjellet's herders make it a park for slow, curious walking on marked paths.",
+  "facts": {
+    "establishedYear": 2012,
+    "areaHectares": 18800,
+    "bestSeasons": [
+      "summer"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "Láhko is a landscape made by water dissolving rock. Its mountains hold the largest continuous area of alpine karst in Norway: soft limestone that rain and snowmelt eat into year after year, leaving grooved pavements, odd sculpted shapes, boulders that seem to balance on nothing, sinkholes and caves. In Corbels canyon the cave country under the ground breaks the surface. Most of the park lies above the tree line, and its lowest points are about 330 metres above the sea.",
+    "The soft, lime-rich rock feeds a rich flora: more than 200 plant species have been recorded, many of them threatened or near threatened, and in summer the heaths fill with colour. The lakes are lime lakes, and several are stonewort lakes, a national stronghold for these unusual algae. Rough-legged buzzard, long-tailed skua, golden plover, ringed plover and dotterel nest in the park.",
+    "The name is Lule Sámi, and Sámi heritage runs through the park: there are Sámi cultural sites, and the Saltfjellet reindeer-grazing district uses the area for its herds. Láhko is also a well-loved outing for people from Gildeskål and Meløy, and local hunting and fishing clubs keep cabins by the lakes in the north. Around the park lie large hydropower reservoirs, but inside it there are few traces of construction.",
+    "Planning for protection of the area began in 2008, and the national park was established on 14 December 2012, covering about 188 square kilometres in Gildeskål, Meløy and Beiarn. Its regulation names the karst and its caves, the lime and stonewort lakes and the rich plant life as the reasons for protection, along with the natural basis for Sámi culture. In the south it touches Saltfjellet-Svartisen National Park at a single point on the summit of Nordre Glomvassfjellet."
+  ],
+  "howItWorks": [
+    "Norway's right to roam, allemannsretten, applies here as on any uncultivated land: you may walk, ski and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland. Dogs must be kept on a lead nationwide from 1 April to 20 August.",
+    "The park's regulation protects the landscape from all works and forbids breaking or removing rock, minerals and fossils — the karst formations wear quickly under boots, so the park asks walkers to keep to the marked paths. Cycling and organised riding are allowed only on existing paths and tracks. Motor traffic is banned on land and water and in the air below 300 metres, and motor-driven model aircraft, drones included, and motorised ice augers are not allowed. Animals and their nests and dens are protected; wood may be used carefully for a fire.",
+    "Reindeer herding goes on throughout the park under the regulation, with the motor-traffic exemptions it needs, and the local hunting and fishing associations' cabins by the northern lakes can be rented. The park is managed by the Midtre Nordland national park board."
+  ],
+  "sights": [
+    {
+      "name": "Corbels canyon",
+      "note": "A cleft in the karst where the cave system beneath the mountain shows at the surface.",
+      "location": [
+        66.802,
+        14.2556
+      ]
+    },
+    {
+      "name": "Láhko",
+      "note": "A karst basin in the high limestone country at the heart of the park, bearing the park's Lule Sámi name.",
+      "location": [
+        66.8572,
+        14.3009
+      ]
+    },
+    {
+      "name": "Svalvatnet",
+      "note": "A lake in the south-west of the park, among low alpine heaths and late snowbeds.",
+      "location": [
+        66.7934,
+        14.2139
+      ]
+    },
+    {
+      "name": "Store Sandvatnet",
+      "note": "A lake on the park's western side, near Svalvatnet.",
+      "location": [
+        66.7846,
+        14.1827
+      ]
+    },
+    {
+      "name": "Nordre Glomvassfjellet",
+      "note": "The summit where Láhko meets Saltfjellet-Svartisen National Park at a single point.",
+      "location": [
+        66.7533,
+        14.3281
+      ]
+    },
+    {
+      "name": "Besøkssenter nasjonalpark Nordland",
+      "note": "The authorised visitor centre at Storjord in Saltdal, with exhibitions on geology, wildlife and Sámi and traditional use.",
+      "location": [
+        66.8144,
+        15.3996
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "From the Gildeskål side, about an hour's drive south of Bodø",
+      "The park spans Gildeskål, Meløy and Beiarn municipalities; ask locally about the best starting points"
+    ],
+    "reservations": "There is no entry reservation or permit. Cabins belonging to the local hunting and fishing associations can be rented.",
+    "permits": [
+      "Organised activity that could damage the natural environment needs permission from the national park board",
+      "Fishing and hunting follow the general rules; buy a local licence first"
+    ],
+    "camping": [
+      "Wild camping under the right to roam, at least 150 metres from huts and houses",
+      "No fires in or near woodland from 15 April to 15 September"
+    ],
+    "lodging": [
+      "Rental cabins of the local hunting and fishing associations by the northern lakes",
+      "Lodging in Gildeskål, Meløy and Bodø"
+    ]
+  },
+  "weather": "The park lies north of the Arctic Circle, not far from the coast, and the weather can change quickly; snow lies late on the high ground and returns early. Summer, with its long light, is the time to walk the karst and see the flowers. Fog can settle on the plateau quickly, and the fissured ground is hard going when visibility is poor.",
+  "directions": "Láhko lies midway between Bodø and Mo i Rana. By car it is about an hour's drive south from Bodø; by public transport, take the express boat from Bodø, about an hour and a half, and a taxi for the last stretch. Check Entur for boat timetables.",
+  "chronology": [
+    {
+      "year": "2008",
+      "text": "Work begins on a protection plan for the mountains."
+    },
+    {
+      "year": "2010",
+      "text": "The county governor recommends a national park."
+    },
+    {
+      "year": "2012",
+      "text": "Láhko National Park is established on 14 December."
+    }
+  ],
+  "safety": [
+    "Karst ground is full of fissures, holes and sharp edges, some hidden by snow or vegetation. Watch every step, especially in fog or snow.",
+    "Do not enter caves without proper equipment and experience; they can flood quickly with meltwater or rain.",
+    "Weather changes fast this close to the coast. Carry warm, waterproof clothing, a map and a compass."
+  ],
+  "regulations": [
+    "Do not break, remove or damage rock, minerals, fossils or karst formations; keep to marked paths.",
+    "No motor traffic on land or water and no flying below 300 metres; drones and motor ice augers are banned.",
+    "Cycling and organised riding only on existing paths and tracks.",
+    "Dogs on a lead from 1 April to 20 August, as everywhere in Norway, and under control near reindeer."
+  ],
+  "themes": [
+    "theme-caves",
+    "theme-mountains",
+    "theme-alpine",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Utsikt mot Lahku nasjonalpark fra Skavldalen.jpg",
+      "caption": "Looking towards Láhko from Skavldalen",
+      "altText": "A rugged pale mountain plateau seen across a valley"
+    },
+    {
+      "file": "File:Lactarius salicis-herbaceae (Nordland, Norway).jpg",
+      "caption": "A milkcap fungus in a snowbed between Store Sandvatnet and Svalvatnet",
+      "altText": "A small pale mushroom among low dwarf willow on the ground"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Láhko nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/lahko/"
+    },
+    {
+      "title": "Láhko nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00003061"
+    },
+    {
+      "title": "Forskrift om vern av Láhko nasjonalpark (FOR-2012-12-14-1314) — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/2012-12-14-1314"
+    },
+    {
+      "title": "Láhko National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/L%C3%A1hko_National_Park"
+    },
+    {
+      "title": "Láhko nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/L%C3%A1hko_nasjonalpark"
+    },
+    {
+      "title": "Besøkssentre — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/besokssentre/"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

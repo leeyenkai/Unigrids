@@ -1,0 +1,293 @@
+{
+  "placeID": "no-np-breheimen",
+  "contentVersion": 1,
+  "summary": "The 'home of the glaciers' between the Strynefjellet and Sognefjellet roads: peaks over 2,000 metres, ice caps, barren high plateaus and green summer-farm valleys, with some of the wettest and some of the driest ground in Norway. Wild reindeer country, crossed by old trade routes whose finds are now emerging from the melting ice.",
+  "facts": {
+    "establishedYear": 2009,
+    "areaHectares": 169100,
+    "bestSeasons": [
+      "summer",
+      "spring"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "Breheimen — the name means the home of the glaciers — is one of the most varied of Norway's national parks. It spans from close to sea level to well over 2,000 metres, and it holds some of the rainiest and some of the driest country in Norway. Glaciers, rockfalls, avalanches and frost have shaped it over hundreds of thousands of years, leaving everything from lush valleys of summer farms to barren plateaus, sharp peaks and living ice.",
+    "The highest summit is Nørdre Hestbreapiggen, 2,172 metres, in the Hestbreapiggan massif above Lundadalen; the best known is Tverrådalskyrkja, 2,088 metres, a steep 'church' of rock that towers over the route from Sota to Nørdstedalseter. Between them lie glaciers such as Harbardsbreen, Spørteggbreen and Holåbreen, and long valleys with trout rivers running between 2,000-metre peaks. The park's protection also covers its caves.",
+    "This is wild reindeer country. The Ottadalen reindeer area is the third largest in Norway, and Breheimen makes up its southern part. Life on the high fells is sparse, but wolverines roam here, and golden eagles, gyrfalcons and rough-legged buzzards hunt; snow buntings and wheatears nest among the stones. In the greener valleys there are rarer birds, among them the white-backed woodpecker and the twite.",
+    "People have used these mountains since the end of the last ice age: trapping pits for reindeer, hunting shelters, summer farms and old roads record about 6,000 years of use. The Lendbreen ice patch was a mountain pass from about AD 300 to 1500, and since the 2010s melting ice there has given up finds such as a wool tunic from around AD 300, the oldest garment found in Norway. The park was proposed in the national park plan of the 1980s and created by royal decree on 7 August 2009, together with five landscape protection areas and a nature reserve around it."
+  ],
+  "howItWorks": [
+    "The right to roam, allemannsretten, applies: you may walk anywhere in the outfield, camp for two nights in one place without asking — longer in high mountains far from settlement — at least 150 metres from a house or cabin, and pick berries, mushrooms and common plants for your own use. The park regulation allows careful use of wood for campfires, but from 15 April to 15 September it is forbidden across Norway to light a fire in or near forest and other open country unless the municipality has allowed it or a fire plainly cannot spread; check before you go with Lom, Skjåk or Luster. Pitching a tent for more than a week in one place needs permission, except for an ordinary hiking tent.",
+    "Motor traffic is forbidden on land, on water and in the air below 300 metres, and motor-driven model aircraft are banned; under Miljødirektoratet's rule, drones may not take off in a national park or be flown into one without the park board's permission. Cycling, organised dog sledding and organised riding are allowed only on routes, in areas and at times approved in the management plan. Organised walking is fine as long as it does no harm; other organised activity needs permission.",
+    "Dogs must be kept on a lead from 1 March to 20 August in the areas the management plan sets out — earlier in the year than the national rule, which runs from 1 April to 20 August everywhere. Hunting, trapping and fishing follow the ordinary laws. Nothing may be removed from or damaged in the park's caves, and cultural remains — trapping pits, shelters, old farm buildings — are protected."
+  ],
+  "sights": [
+    {
+      "name": "Nørdre Hestbreapiggen",
+      "note": "The park's highest summit, 2,172 metres, in the Hestbreapiggan massif between Bøverdalen and Lundadalen.",
+      "location": [
+        61.7502,
+        8.0859
+      ]
+    },
+    {
+      "name": "Tverrådalskyrkja",
+      "note": "Perhaps Breheimen's best-known peak, 2,088 metres, towering beside the route from Sota to Nørdstedalseter.",
+      "location": [
+        61.743,
+        7.687
+      ]
+    },
+    {
+      "name": "Lundadalsvatnet",
+      "note": "A long mountain lake at about 1,150 metres beneath Hestbreapiggan, in the upper Lundadalen of Skjåk.",
+      "location": [
+        61.762,
+        8.006
+      ]
+    },
+    {
+      "name": "Lendbreen",
+      "note": "A shrinking ice patch on an ancient mountain pass, used from about AD 300 to 1500; melting ice has revealed a 1,700-year-old tunic.",
+      "location": [
+        61.819,
+        8.313
+      ]
+    },
+    {
+      "name": "Harbardsbreen",
+      "note": "One of the park's larger glaciers, in the high country of Luster between Jostedalen and Fortunsdalen.",
+      "location": [
+        61.678,
+        7.653
+      ]
+    },
+    {
+      "name": "Spørteggbreen",
+      "note": "One of the larger glaciers on the Norwegian mainland, in the south-west of the park between Jostedalsbreen and Harbardsbreen.",
+      "location": [
+        61.603,
+        7.486
+      ]
+    },
+    {
+      "name": "Holåbreen",
+      "note": "A glacier on the boundary between Skjåk and Luster, under the Holåtindan peaks.",
+      "location": [
+        61.733,
+        7.855
+      ]
+    },
+    {
+      "name": "Norsk Fjellsenter",
+      "note": "The Norwegian Mountain Centre in Lom, authorised visitor centre for Breheimen, Jotunheimen and Reinheimen, with the exhibition 'Bergtatt'.",
+      "location": [
+        61.838,
+        8.566
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Breheimsenteret",
+      "note": "Authorised visitor centre for Breheimen and Jostedalsbreen in Jostedalen, with exhibitions on glaciers and climate, and a base for glacier walks.",
+      "location": [
+        61.651,
+        7.275
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Fortunsdalen besøkssenter",
+      "note": "Authorised visitor centre for Breheimen and Jotunheimen in Fortun, at the foot of the Sognefjellet road, with a café.",
+      "location": [
+        61.495,
+        7.689
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "From the east, the Ottadalen and Bøverdalen valleys near Lom and Skjåk, including Lundadalen and Sota",
+      "From the south-west, Jostedalen and Fortunsdalen in Luster",
+      "From the north, Rv 15 over Strynefjellet",
+      "From the south, Fv 55 over Sognefjellet"
+    ],
+    "reservations": "No booking or fee for the park. Most trekking-association cabins here are self-service: carry a DNT key and check opening periods with the association.",
+    "permits": [
+      "Organised activities that could harm the environment need permission from the national park board",
+      "Flying a drone needs the national park board's permission; motor traffic is otherwise banned apart from the regulation's narrow exemptions"
+    ],
+    "camping": [
+      "Wild camping under the right to roam; a permit is needed to keep a tent in one place for more than a week, except an ordinary hiking tent",
+      "Self-service trekking cabins of the Norwegian Trekking Association"
+    ],
+    "lodging": [
+      "Lom, Skjåk, Jostedalen and Fortun"
+    ],
+    "seasonalClosures": [
+      "Fv 55 over Sognefjellet, along the park's southern side, closes for the winter and normally reopens around the start of May; check with Statens vegvesen before you go"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "weather": "Breheimen holds some of the wettest and some of the driest country in Norway. The western valleys in Luster face the fjords and the weather that feeds the glaciers; Skjåk, on the eastern side, lies in the deep rain shadow of the Ottadalen valley, where the driest spots get under 300 mm of precipitation a year, among the lowest figures on the Norwegian mainland, with cold winters and mild summers. On the high ground, snow, fog and wind can arrive in any month. Summer is the season for walking, and late winter and spring for ski touring.",
+  "directions": "The park lies between two mountain roads: Rv 15 over Strynefjellet to the north and Fv 55 over Sognefjellet to the south. The nearest railway is the Dovre Line at Otta in Gudbrandsdalen, from where the road runs west to Lom, the national park village with the Norwegian Mountain Centre. From the west, Jostedalen is reached by road up the valley from Gaupne on the Lustrafjord, and Fortun lies at the western foot of the Sognefjellet road.",
+  "chronology": [
+    {
+      "year": "c. 4000 BC",
+      "text": "Hunters begin leaving the trapping systems, shelters and paths that record some 6,000 years of use."
+    },
+    {
+      "year": "c. AD 300",
+      "text": "The Lendbreen pass comes into use; a wool tunic lost there around this time is the oldest garment yet found in Norway."
+    },
+    {
+      "year": "c. 1500",
+      "text": "Traffic over the Lendbreen pass dies away."
+    },
+    {
+      "year": "1938",
+      "text": "The Sognefjellet road opens along the park's southern side, the highest mountain pass road in northern Europe."
+    },
+    {
+      "year": "1986",
+      "text": "Breheimen is proposed as a national park in the government's second national park plan, adopted by the Storting in 1992."
+    },
+    {
+      "year": "2009",
+      "text": "A royal decree of 7 August creates Breheimen National Park, with five landscape protection areas and a nature reserve around it."
+    },
+    {
+      "year": "2011",
+      "text": "Melting ice at Lendbreen yields the Iron Age tunic."
+    }
+  ],
+  "safety": [
+    "Glaciers are crevassed and their edges unstable. Do not go onto the ice without equipment, training and a rope team; the visitor centre in Jostedalen is the base for organised glacier walks.",
+    "Many routes here are among the more demanding in southern Norway, with few marked paths and self-service cabins. Navigate by map and compass and allow for fog and snow on the high ground in any month.",
+    "Rivers fed by glacier melt rise during warm afternoons; cross early in the day or find a bridge.",
+    "Livestock graze around the summer farms; close gates and keep dogs under control."
+  ],
+  "regulations": [
+    "No motor traffic on land, water or in the air below 300 metres; motor-driven model aircraft are banned, and drones may not be flown without the park board's permission.",
+    "Dogs on a lead from 1 March to 20 August in the areas set by the management plan, and from 1 April everywhere in Norway.",
+    "Cycling only on routes approved in the management plan.",
+    "Do not remove or damage anything in the park's caves, or disturb cultural remains.",
+    "No open fires in or near forest from 15 April to 15 September unless the municipality allows it."
+  ],
+  "themes": [
+    "theme-glaciers",
+    "theme-mountains",
+    "theme-alpine",
+    "theme-caves"
+  ],
+  "photos": [
+    {
+      "file": "File:Hestbreapiggan mountain ridge in Breheimen National Park.jpg",
+      "caption": "The Hestbreapiggan ridge, highest ground in Breheimen, between Bøverdalen and Lundadalen",
+      "altText": "A jagged snow-streaked mountain ridge above a broad valley"
+    },
+    {
+      "file": "File:Holåbreen eastern part of the glacier.jpg",
+      "caption": "The eastern tongue of Holåbreen, with Ytstebreen in front",
+      "altText": "A glacier flowing between dark rock ridges"
+    },
+    {
+      "file": "File:Lundadalsvatnet seen from Valldalen.jpg",
+      "caption": "Lundadalsvatnet from Valldalen, north-east of Hestbreapiggan",
+      "altText": "A long lake in a U-shaped mountain valley"
+    },
+    {
+      "file": "File:Holåtindan mountains in Breheimen National Park.jpg",
+      "caption": "The Holåtindan peaks on the boundary between Skjåk and Luster",
+      "altText": "Sharp rocky peaks rising above snowfields"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Breheimen nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/breheimen/"
+    },
+    {
+      "title": "Breheimen nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00002830"
+    },
+    {
+      "title": "Forskrift om vern av Breheimen nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/2009-08-07-1064"
+    },
+    {
+      "title": "Besøkssentre — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/besokssentre/"
+    },
+    {
+      "title": "Breheimen National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Breheimen_National_Park"
+    },
+    {
+      "title": "Breheimen nasjonalpark — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/Breheimen_nasjonalpark"
+    },
+    {
+      "title": "Lendbreen — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lendbreen"
+    },
+    {
+      "title": "Hestbreapiggan — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Hestbreapiggan"
+    },
+    {
+      "title": "Spørteggbreen — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Sp%C3%B8rteggbreen"
+    },
+    {
+      "title": "Sognefjellsvegen — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Sognefjellsvegen"
+    },
+    {
+      "title": "Sognefjellsvegen — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sognefjellsvegen"
+    },
+    {
+      "title": "Skjåk Municipality — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Skj%C3%A5k_Municipality"
+    },
+    {
+      "title": "Fortunsdalen besøkssenter",
+      "url": "https://fortunsdalen.no/"
+    },
+    {
+      "title": "Regler for droner i naturen — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/ansvarsomrader/vernet-natur/regler-for-droner-i-naturen/"
+    },
+    {
+      "title": "Lov om friluftslivet (friluftsloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/1957-06-28-16"
+    },
+    {
+      "title": "Forskrift om brannforebygging — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Lov om forsvarlig hundehold (hundeloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+    },
+    {
+      "title": "Sight locations — Kartverket place names (stedsnavn)",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    },
+    {
+      "title": "Lake heights — Kartverket elevation service (høydedata)",
+      "url": "https://ws.geonorge.no/hoydedata/v1/"
+    }
+  ]
+}

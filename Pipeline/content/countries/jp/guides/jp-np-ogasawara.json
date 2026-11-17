@@ -1,0 +1,345 @@
+{
+  "placeID": "jp-np-ogasawara",
+  "contentVersion": 1,
+  "summary": "More than thirty subtropical islands about 1,000 kilometres south of Tokyo, reached only by a 24-hour ferry. Never joined to any continent, they have evolved their own snails, plants and birds, and were inscribed as a natural World Heritage Site in 2011. Visitors come for humpback whales, dolphins, green turtles, coral and guided forest walks on Chichijima and Hahajima.",
+  "facts": {
+    "establishedYear": 1972,
+    "areaHectares": 6629,
+    "bestSeasons": [
+      "spring",
+      "summer"
+    ],
+    "suggestedTime": "Six days for a round trip on the ferry, three nights of them on the islands"
+  },
+  "story": [
+    "The Ogasawara (Bonin) Islands were born where the Pacific Plate dives beneath the eastern edge of the Philippine Sea Plate, and they have never been joined to any continent. Chichijima is built largely of boninite, a rare volcanic rock named after the islands themselves. Waves have cut the coasts into cliffs; on Minamijima, limestone that weathered into karst when the sea stood lower has since been drowned by the rising ocean. About 130 kilometres to the west, the volcano Nishinoshima began erupting in 2013 and grew many times larger over the following decade.",
+    "Every plant and animal here arrived across open ocean and then evolved on its own. About a hundred native land snails have been recorded, over nine-tenths of them found nowhere else, and a large share of the native trees and shrubs are endemic too. The Bonin flying fox lives nowhere else; the hahajima-meguro, or Bonin white-eye, lives only on Hahajima and a few islets near it; and the red-headed wood pigeon, once all but lost, is recovering. Humpback whales come to breed in winter, and green turtles haul out to nest on beaches that are their largest rookery in Japan.",
+    "The islands were empty of people when whaling ships began calling in the 1820s. In 1830 a small party of Americans, Europeans and Hawaiians sailed from Oahu to settle Chichijima, and some islanders today descend from them. Japan's rule was recognised in 1876, and Japanese settlers cleared forest for sugar cane and other crops. In 1944 about 7,000 residents were evacuated to the mainland. After the war the United States held the islands and let only the settler families return, until the islands came back to Japan on 26 June 1968.",
+    "The national park followed in 1972 and was enlarged in 2009 to take in more sea and more rare habitat. In 2011 UNESCO inscribed the islands for evolution still visibly under way: snails and plants splitting into new species from one island, and sometimes one valley, to the next. That makes the islands fragile. Feral goats stripped Minamijima's vegetation, and a snail-eating flatworm brought from elsewhere threatens the native snails, so keeping new species out is now part of every visit."
+  ],
+  "howItWorks": [
+    "Most of Ogasawara is held under the strictest rules a Japanese national park has. Of its 6,629 hectares of land, about three-quarters (4,934 hectares) is special protection zone, where nothing may be picked or collected — not even fallen leaves — no animal caught or disturbed and no fire lit without a permit; only 18 hectares are ordinary zone. More than four-fifths of the land is national, and the whole park lies within one municipality, Ogasawara Village. Fourteen marine park zones, about 780 hectares in all, protect reefs and coast. Only Chichijima and Hahajima are inhabited; Iōtō (Iwo Jima) and Minami-Iōtō lie outside the park, and Iōtō is closed to the public.",
+    "World Heritage status, granted in 2011, brought another layer of management. The Ministry of the Environment, the Forestry Agency, the Tokyo Metropolitan Government and Ogasawara Village run the heritage area together, and their rules add to the park's. Under an agreement between Tokyo and the village, Minamijima and the Sekimon forest on Hahajima may be entered only with a Tokyo-certified nature guide: Minamijima takes at most 100 visitors a day, 15 to a guide, for no more than two hours, and closes for about three months from November so its plants can recover; Sekimon takes 50 a day, five to a guide. These limits can change, so check them before you go. Designated routes off the main trails, among them the Forestry Agency's Higashidaira sanctuary for the red-headed wood pigeon on Chichijima, also need an authorised guide or the agency's own course.",
+    "In practice that means booking tours before you sail, keeping to marked routes and scrubbing your shoes. Bring no plants, soil or animals to the islands, use the mats at the gangway when you board and leave the ship, and check bags, clothes and kayaks for seeds and small creatures before walking or moving to another island. Whale watching here follows voluntary rules drawn up by the operators' own association in the late 1980s, when Japan's first whale-watching tours began here; other rare wildlife has voluntary rules and guidelines of its own."
+  ],
+  "sights": [
+    {
+      "name": "Minamijima (南島)",
+      "note": "A drowned-karst islet off Chichijima, with the white cove of Ōgi-ike inside a rock arch. Landing only with a Tokyo-certified guide; closed for about three months from November.",
+      "location": [
+        27.038,
+        142.175
+      ]
+    },
+    {
+      "name": "Weather Station Observatory",
+      "note": "A lookout on Chichijima's west side, crowded at sunset when the sun drops into the open sea, and a good place to watch for humpback whales in season.",
+      "location": [
+        27.0958,
+        142.1846
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Chihiroiwa — Heart Rock (千尋岩)",
+      "note": "A sea cliff on Chichijima's south coast stained red in a heart shape by laterite soil washed down from above, reached on guided treks.",
+      "location": [
+        27.0448,
+        142.2059
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Anijima Marine Park (兄島海域公園)",
+      "note": "Very clear water off Anijima's south shore, with coral and shoals of reef fish, visited on snorkelling and sea-kayak tours.",
+      "location": [
+        27.1088,
+        142.2117
+      ]
+    },
+    {
+      "name": "Miyanohama (宮之浜)",
+      "note": "A beach within walking distance of town, with coral and tropical fish. Currents run fast beyond the bay; swim inside the buoys.",
+      "location": [
+        27.1046,
+        142.1953
+      ]
+    },
+    {
+      "name": "Higashidaira Sanctuary (東平)",
+      "note": "Twenty-eight hectares of Chichijima forest kept for the red-headed wood pigeon and other rare species; walked only with a trained guide or after the Forestry Agency's course.",
+      "location": [
+        27.0758,
+        142.2219
+      ]
+    },
+    {
+      "name": "Mount Chibusa (乳房山)",
+      "note": "At 462 metres the highest point on the inhabited islands: a cloud forest of tree ferns and endemic land snails, with a view over all Hahajima.",
+      "location": [
+        26.6595,
+        142.1614
+      ]
+    },
+    {
+      "name": "Minamizaki (南崎)",
+      "note": "Hahajima's southern tip, through fan-palm and pandanus woods to a coral beach; the path climbs Kofuji for a view over the southern islets.",
+      "location": [
+        26.6095,
+        142.175
+      ]
+    },
+    {
+      "name": "Ogasawara Visitor Center",
+      "note": "Panels, reconstructed models and films on the islands' nature, history and culture, on Chichijima.",
+      "location": [
+        27.0934,
+        142.1922
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Ogasawara World Heritage Centre",
+      "note": "Explains the work to protect the heritage site, breeds endangered species where visitors can watch, and houses the Ministry of the Environment's ranger office.",
+      "location": [
+        27.0939,
+        142.1911
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Ogasawara Village Tourist Association",
+      "note": "In the B-Ship building by Futami Port: the first stop for Chichijima's tours, guides, maps and lodging.",
+      "location": [
+        27.0947,
+        142.1923
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Ogasawara Hahajima Tourist Association",
+      "note": "Hahajima's information centre: tours, maps and lodging on the island.",
+      "location": [
+        26.6389,
+        142.1596
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Futami Port, Chichijima — where the ferry from Tokyo docks",
+      "Oki Port, Hahajima — by the Hahajima Maru from Chichijima"
+    ],
+    "reservations": "Book the Ogasawara Maru with Ogasawara Kaiun, and your lodging, before you travel: there is no other way in and no camping. Minamijima and the Sekimon forest are visited only on guided tours, and places are limited, so book a tour through the tourist associations ahead of time. Sailing dates and the Minamijima closure change from year to year — check before you go.",
+    "permits": [
+      "Minamijima — landing only with a Tokyo-certified nature guide; at most 100 visitors a day and two hours ashore — check the current rules before you go",
+      "Sekimon forest, Hahajima — only with a Tokyo-certified nature guide, five visitors to a guide; the limestone cave is closed — check the current rules before you go",
+      "Designated routes off the main trails, including the Forestry Agency's Higashidaira sanctuary on Chichijima — with an authorised guide, or after the agency's own course",
+      "Pets — consult Ogasawara Village before bringing one, under the village's pet ordinance"
+    ],
+    "camping": [
+      "Camping and sleeping outdoors are banned by Ogasawara Village ordinance"
+    ],
+    "lodging": [
+      "Minshuku, pensions and small hotels on Chichijima and Hahajima; no large resort hotels and no hot springs",
+      "Bookings through the Ogasawara Village Tourist Association for Chichijima, the Hahajima Tourist Association for Hahajima, or the lodgings directly"
+    ],
+    "seasonalClosures": [
+      "Minamijima closes to landings for about three months from early November, apart from the New Year holidays — check the year's dates with the Tokyo Metropolitan Government's Ogasawara Branch Office before you go",
+      "Typhoons and rough seas can change the ferry's schedule — check Ogasawara Kaiun's notices before you go"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1
+    ]
+  },
+  "weather": "Subtropical and warm all year. The Japan Meteorological Agency's 1991–2020 normals for Chichijima give a February mean of about 18°C and an August mean of 28°C, with afternoon highs around 30°C from July to September. About 1,300 millimetres of rain falls in a year, most of it in May and from September to November; February is the driest month. Typhoons can disrupt sailings. The sun is strong even in winter, so bring a hat and sunscreen. Humpback whales are seen close to the islands from about February to April, and dolphins almost all year.",
+  "directions": "The only regular way in is the Ogasawara Maru, an 11,035-tonne passenger and cargo ship run by Ogasawara Kaiun from the Takeshiba Passenger Ship Terminal in central Tokyo, near JR Hamamatsuchō Station and Takeshiba Station on the Yurikamome line, to Futami Port on Chichijima: about 1,000 kilometres and 24 hours. There is no airport. Sailings leave roughly every three or four days in the summer holidays and peak seasons and about once a week otherwise, on no fixed weekday. From Futami the Hahajima Maru reaches Oki Port on Hahajima in about two hours; it takes no reservations, and tickets are sold at its waiting room beside the Ogasawara Maru's. On Chichijima a village bus runs on two routes, and scooters and bicycles can be hired on both islands.",
+  "chronology": [
+    {
+      "year": "1827",
+      "text": "Captain Frederick Beechey of HMS Blossom claims the islands for Britain."
+    },
+    {
+      "year": "1830",
+      "text": "Settlers from Oahu — Americans, Europeans and Hawaiians — make the first permanent settlement on Chichijima."
+    },
+    {
+      "year": "1876",
+      "text": "Japanese rule over the islands is recognised."
+    },
+    {
+      "year": "1944",
+      "text": "About 7,000 residents are evacuated to the mainland."
+    },
+    {
+      "year": "1968",
+      "text": "The islands return from US administration to Japan on 26 June."
+    },
+    {
+      "year": "1972",
+      "text": "Ogasawara National Park is designated on 16 October."
+    },
+    {
+      "year": "1989",
+      "text": "The Ogasawara Whale Watching Association is founded and sets voluntary rules for approaching whales."
+    },
+    {
+      "year": "2003",
+      "text": "Landing on Minamijima is limited to visitors accompanied by Tokyo-certified guides."
+    },
+    {
+      "year": "2009",
+      "text": "The park is enlarged and fourteen marine park zones are designated."
+    },
+    {
+      "year": "2011",
+      "text": "The islands are inscribed as a natural World Heritage Site."
+    }
+  ],
+  "safety": [
+    "Medical care is limited to clinics on Chichijima and Hahajima, and the next ferry may be days away. Bring the medicines you need and take no avoidable risks at sea or on the cliffs.",
+    "Currents run fast beyond sheltered bays. At Miyanohama swim inside the buoys; off Minamizaki the current offshore is strong.",
+    "The sun is strong in every season. Carry water, a hat and sunscreen on every walk.",
+    "Nishinoshima, an active volcano about 130 kilometres west of Chichijima, has been under a Japan Meteorological Agency crater-area warning and a marine warning; check the agency's current warning before any voyage near it."
+  ],
+  "regulations": [
+    "Bring no plants, soil, seeds or animals to the islands. Scrub your shoe soles on the mats when boarding and leaving the ship, and check bags, clothes and kayaks for seeds and small creatures before walking or moving between islands.",
+    "In the special protection zone, three-quarters of the land, nothing may be picked or collected — not even fallen leaves — and no fire lit without a permit. On Minamijima the shells of extinct land snails may not be taken away.",
+    "Keep to designated routes, and enter Minamijima, the Sekimon forest and the restricted forest routes only with an authorised guide (or, for the Forestry Agency's routes, after its course).",
+    "Do not feed or chase wildlife. Whale watching and the viewing of other rare wildlife follow voluntary rules; choose operators that keep to them.",
+    "Camping and sleeping outdoors are prohibited throughout the islands."
+  ],
+  "themes": [
+    "theme-islands",
+    "theme-coastal",
+    "theme-coral-reef",
+    "theme-volcanoes"
+  ],
+  "photos": [
+    {
+      "file": "File:Oogi-ike , minami-jima island - panoramio.jpg",
+      "caption": "Ōgi-ike cove on Minamijima, a drowned-karst islet off Chichijima",
+      "altText": "A small white-sand cove ringed by grey limestone rock, opening to blue sea through an arch"
+    },
+    {
+      "file": "File:Heart rock from minami-jima island - panoramio.jpg",
+      "caption": "Chihiroiwa, the Heart Rock, seen across the water from Minamijima",
+      "altText": "A tall sea cliff with a reddish heart-shaped patch, above deep blue water"
+    },
+    {
+      "file": "File:Minamizaki beach at Hahajima.jpg",
+      "caption": "Minamizaki beach at the southern tip of Hahajima, from Kofuji",
+      "altText": "A curving beach and turquoise reef water below green subtropical hills"
+    },
+    {
+      "file": "File:Mounts Chibusa and Kensaki seen from Port of Oki.jpg",
+      "caption": "Hahajima's forested heights, Mount Chibusa among them, above Oki Port",
+      "altText": "Green forested peaks rising behind a small harbour"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ogasawara National Park — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/ogasawara/"
+    },
+    {
+      "title": "Explore Ogasawara National Park — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/ogasawara/explore/"
+    },
+    {
+      "title": "How to get there: Ogasawara — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/ogasawara/how-to-get-there/"
+    },
+    {
+      "title": "小笠原国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/ogasawara/"
+    },
+    {
+      "title": "小笠原国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/ogasawara/intro/index.html"
+    },
+    {
+      "title": "小笠原国立公園 見どころ・施設 — 環境省",
+      "url": "https://www.env.go.jp/nature/nationalparks/list/ogasawara/spot/"
+    },
+    {
+      "title": "利用ルールの遵守や利用調整に係る仕組みの事例（参考資料3） — 環境省",
+      "url": "https://www.env.go.jp/nature/np/parkarikata/riyou01/mat02-5%20.pdf"
+    },
+    {
+      "title": "Ogasawara Islands — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1362/"
+    },
+    {
+      "title": "To those who visit the islands — Ogasawara Islands World Natural Heritage Area Management Authorities",
+      "url": "https://ogasawara-info.jp/wp-content/uploads/2025/07/for-visitors.pdf"
+    },
+    {
+      "title": "東平アカガシラカラスバトサンクチュアリー — 林野庁関東森林管理局",
+      "url": "https://www.rinya.maff.go.jp/kanto/kanto/ogasawara/content/sanctuary.html"
+    },
+    {
+      "title": "自然公園法 — e-Gov法令検索",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000161"
+    },
+    {
+      "title": "よくある質問 — 小笠原海運",
+      "url": "https://www.ogasawarakaiun.co.jp/faq/"
+    },
+    {
+      "title": "よくある質問（島について） — 小笠原海運",
+      "url": "https://www.ogasawarakaiun.co.jp/faq/faq_island.html"
+    },
+    {
+      "title": "ははじま丸 時刻表 — 小笠原海運",
+      "url": "https://www.ogasawarakaiun.co.jp/service/hahajima.html"
+    },
+    {
+      "title": "Chichijima Island — GO TOKYO",
+      "url": "https://www.gotokyo.org/en/destinations/izu-and-ogasawara-islands/chichijima-island/index.html"
+    },
+    {
+      "title": "過去の気象データ: 父島 平年値 — 気象庁",
+      "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=44&block_no=47971&year=&month=&day=&view="
+    },
+    {
+      "title": "西之島の火山活動解説資料（令和8年4月） — 気象庁",
+      "url": "https://www.data.jma.go.jp/vois/data/report/monthly_v-act_doc/tokyo/26m04/326_26m04.pdf"
+    },
+    {
+      "title": "Bonin Islands — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bonin_Islands"
+    },
+    {
+      "title": "小笠原国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/小笠原国立公園"
+    },
+    {
+      "title": "小笠原諸島 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/小笠原諸島"
+    },
+    {
+      "title": "南島 (東京都) — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/南島_(東京都)"
+    },
+    {
+      "title": "日本の主な山岳標高 — 国土地理院",
+      "url": "https://www.gsi.go.jp/kihonjohochousa/kihonjohochousa41139.html"
+    },
+    {
+      "title": "世界に認められた価値 — 小笠原諸島世界自然遺産",
+      "url": "https://ogasawara-info.jp/about-world/value/"
+    },
+    {
+      "title": "指定ルートの利用 — 林野庁関東森林管理局",
+      "url": "https://www.rinya.maff.go.jp/kanto/kanto/ogasawara/content/shitei-root.html"
+    },
+    {
+      "title": "エコツーリズム — 小笠原村観光局",
+      "url": "https://www.ogasawaramura.com/ecotourism/"
+    }
+  ]
+}

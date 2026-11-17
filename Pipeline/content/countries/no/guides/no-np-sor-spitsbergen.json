@@ -1,0 +1,291 @@
+{
+  "placeID": "no-np-sor-spitsbergen",
+  "contentVersion": 1,
+  "summary": "Norway's largest national park: the whole southern end of Spitsbergen — Wedel Jarlsberg Land, Torell Land and Sørkapp Land — with the sea around it. About two-thirds of the land lies under glaciers and permanent ice. Sharp peaks stand over Hornsund, where glaciers meet the fjord, polar bears range and a Polish research station has run since 1957. There are no roads and no snowmobiles here; the park service recommends coming by ship or with an organised trip.",
+  "facts": {
+    "establishedYear": 1973,
+    "areaHectares": 1328600,
+    "bestSeasons": [
+      "spring",
+      "summer"
+    ],
+    "suggestedTime": "A day or two from a ship; longer on a ski expedition"
+  },
+  "story": [
+    "Sør-Spitsbergen takes in everything south of Bellsund and Van Keulenfjorden: Wedel Jarlsberg Land, Torell Land and Sørkapp Land, with the sea out to the territorial limit. About two-thirds of the land is glacier or permanent snow and ice. Along the west coast the bedrock is old, folded and altered by heat and pressure, and it carries the park's sharpest, most alpine peaks; further east, younger sedimentary rock makes gentler mountains. Hornsund cuts across that whole sequence, and above its southern shore stands Hornsundtind, about 1,430 metres of crystalline limestone.",
+    "The glaciers are in retreat, and Hornsund's shoreline shows it: some of its bays appeared only in the twentieth century as the ice fronts drew back, among them the western arm of Burgerbukta, between 1936 and 1959. The fjord is important ground for polar bears. The west coast is the greener side of the park, and seabird cliffs line its coasts and islands; kittiwakes, Brünnich's guillemots, common eiders and geese all breed here.",
+    "Hornsund got its name in 1610, when the English explorer Jonas Poole's crew brought a reindeer antler aboard. Whalers from England, the Netherlands and Denmark followed within a few years, and archaeologists have excavated a seventeenth-century whaling station at Gåshamna on the fjord's south shore. Overwintering trappers, miners, early tourists, scientists and the Second World War all left their traces too. Since 1957 Poland has kept a research station at Isbjørnhamna, near the mouth of the fjord.",
+    "In 1973 Norway set aside more than half of Svalbard as national parks and nature reserves, and Sør-Spitsbergen was one of the first three parks, with Forlandet and Nordvest-Spitsbergen. Counting its sea, it is the largest national park in Norway. Its regulation, rewritten in 2014 and tightened from 2025, keeps it as a large, essentially untouched reference area for research and for experiencing Svalbard's natural and cultural heritage."
+  ],
+  "howItWorks": [
+    "Svalbard has its own law, the Svalbard Environmental Protection Act. The public right of access applies here too, but all travel must leave no damage, litter or needless disturbance. Polar bears are protected: no one may disturb, attract or pursue one, or come closer than 300 metres — 500 metres from 1 March to 30 June — and anyone who finds a bear inside that distance must withdraw. Everyone outside the settlements, apart from people on an organised tour, must know how to guard against a polar bear attack and carry the means to scare a bear off. Everything people left before 1946 is a protected monument with a 100-metre zone around it, where camping and fires are not allowed (a tent on frozen, snow-covered ground is the exception).",
+    "Since 1 January 2026 a field-safety regulation decides who must tell the Governor of Svalbard (Sysselmesteren) before setting out. All of Sør-Spitsbergen lies outside the 'travel area' drawn around Isfjorden, so an independent visitor must notify the Governor at least four weeks ahead and wait for the reply, carry equipment to raise the alarm and talk both ways, and hold insurance or a guarantee for search and rescue — up to NOK 350,000 per operation in this zone. Residents of Svalbard must notify the Governor before travelling here as well. Tour operators need the Governor's permission, and their passengers travel under it.",
+    "The park's own regulation bans off-road vehicles, snowmobiles included, and aircraft landings, and forbids flying lower than 300 metres within a nautical mile of land. Drones are banned, and ships carrying more than 200 passengers may not enter the park's waters. Tourist landings are allowed only on frozen, snow-covered ground between 1 January and 25 May, or at designated landing sites, and always with a guide. The point of Lægerneset in Recherchefjorden is closed all year to protect its monuments, and the bird reserves at Sørkapp, Dunøyane, Isøyane and Olsholmen are closed to all traffic, on land and on the water around them, from 15 May to 15 August."
+  ],
+  "sights": [
+    {
+      "name": "Hornsund",
+      "note": "The southernmost fjord on Spitsbergen's west coast, ringed by sharp peaks and glaciers. Named in 1610 after a reindeer antler.",
+      "location": [
+        76.972,
+        15.718
+      ]
+    },
+    {
+      "name": "Hornsundtind",
+      "note": "About 1,430 metres of crystalline limestone on the south side of Hornsund, at the northern end of Sørkapp Land.",
+      "location": [
+        76.9205,
+        16.141
+      ]
+    },
+    {
+      "name": "Brepollen",
+      "note": "The innermost basin of Hornsund, below the glaciers Storbreen, Hornbreen, Svalisbreen and Mendeleevbreen.",
+      "location": [
+        76.9903,
+        16.319
+      ]
+    },
+    {
+      "name": "Burgerbukta",
+      "note": "Twin bays on Hornsund's north shore, formed as the glaciers Mühlbacherbreen and Paierlbreen retreated; the western arm opened between 1936 and 1959.",
+      "location": [
+        77.039,
+        15.949
+      ]
+    },
+    {
+      "name": "Gåshamna",
+      "note": "'The goose bay', an open bay on Hornsund's south shore where a seventeenth-century whaling station has been excavated.",
+      "location": [
+        76.944,
+        15.849
+      ]
+    },
+    {
+      "name": "Isbjørnhamna",
+      "note": "A bay in front of the glacier Hansbreen, near the mouth of Hornsund, where Poland has kept a research station since 1957.",
+      "location": [
+        77.002,
+        15.578
+      ]
+    },
+    {
+      "name": "Sørkapp",
+      "note": "Spitsbergen's south cape, the tip of the island Sørkappøya. A bird reserve, closed to all traffic from 15 May to 15 August.",
+      "location": [
+        76.481,
+        16.563
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "By sea along the west coast from Longyearbyen, into Bellsund and Hornsund",
+      "Overland only on foot or on skis — there are no roads, and snowmobiles may not enter the park"
+    ],
+    "reservations": "There is no entry permit, but an independent visitor must notify the Governor of Svalbard at least four weeks before the trip and wait for the reply. Most visitors come on an expedition cruise or an organised trip, as the park service recommends; the operator holds the Governor's permission and handles the formalities.",
+    "permits": [
+      "Notification to the Governor four weeks ahead, with insurance or a guarantee for search and rescue of up to NOK 350,000 per operation",
+      "A rifle for polar bear protection can be hired only from a licensed dealer, and only by someone holding a Norwegian firearms licence, a European firearms pass or a loan permit from the Governor",
+      "Camping in one place for a week or more needs the Governor's permission"
+    ],
+    "camping": [
+      "Wild camping, on bare ground where possible, at least 100 metres from cabins and outside the 100-metre zone around protected monuments (a tent on frozen, snow-covered ground excepted)",
+      "Every camp must keep flare guns, signal pens or other means of scaring off polar bears close at hand"
+    ],
+    "lodging": [
+      "None in the park; Longyearbyen is the nearest town"
+    ],
+    "seasonalClosures": [
+      "The bird reserves at Sørkapp, Dunøyane, Isøyane and Olsholmen are closed to all traffic from 15 May to 15 August",
+      "Outside the designated landing sites, tourist landings are allowed only on frozen, snow-covered ground from 1 January to 25 May",
+      "Lægerneset in Recherchefjorden is closed all year"
+    ]
+  },
+  "weather": "Svalbard's climate is Arctic but milder than its latitude suggests, because the last of the North Atlantic Current warms the west coast; the south of Spitsbergen is a little milder again than the north. Summer means are only about 4–7 °C and January means around −9 to −13 °C, and snow can fall in any month. At Longyearbyen the midnight sun lasts from about 20 April to late August and the polar night from late October to mid-February. Svalbard has warmed several times faster than the world as a whole since the 1970s, and its glaciers are shrinking.",
+  "directions": "Fly to Svalbard Airport, Longyear, which has daily scheduled flights from Oslo and Tromsø. No roads link the settlements, and snowmobiles may not enter the park, so the way in is by sea: expedition cruise ships and smaller boats sail south from Longyearbyen along the west coast into Bellsund and Hornsund. Ships with more than 200 passengers are barred from the park's waters.",
+  "fees": [
+    {
+      "title": "Svalbard environmental fee",
+      "cost": "NOK 150",
+      "amount": 150,
+      "currencyCode": "NOK",
+      "detail": "Paid by every visitor to Svalbard except residents: collected with the ticket for the flight out of Svalbard, or by the travel organiser. It goes to the Svalbard Environmental Protection Fund."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1610",
+      "text": "The English explorer Jonas Poole names Hornsund after a reindeer antler his crew brings aboard."
+    },
+    {
+      "year": "1600s",
+      "text": "English, Dutch and Danish whalers work Hornsund; a whaling station of the period at Gåshamna is later excavated."
+    },
+    {
+      "year": "1957",
+      "text": "Poland opens a research station at Isbjørnhamna, near the mouth of Hornsund."
+    },
+    {
+      "year": "1973",
+      "text": "Sør-Spitsbergen becomes one of Svalbard's first three national parks, as more than half of the archipelago is protected."
+    },
+    {
+      "year": "2014",
+      "text": "A new regulation replaces the 1973 rules for Svalbard's first national parks and nature reserves."
+    },
+    {
+      "year": "2020",
+      "text": "Tour operators must follow site-specific guidelines at Gåshamna, Gnålodden and Ahlstrandhalvøya."
+    },
+    {
+      "year": "2025",
+      "text": "Tourist landings are limited to designated sites and frozen ground, drones are banned and ships with more than 200 passengers are barred from the park's waters."
+    },
+    {
+      "year": "2026",
+      "text": "A new field-safety regulation requires visitors and residents alike to notify the Governor before travelling in the park."
+    }
+  ],
+  "safety": [
+    "Polar bears can turn up anywhere, at any time of year, and Hornsund is important bear country. Keep a constant lookout, carry the means to scare a bear off, and know how to use them.",
+    "The park is far from help. Carry equipment to raise the alarm and talk both ways — outside the travel area the law requires it — and leave a plan with someone who will act on it.",
+    "Glaciers hide crevasses under snow, and their fronts calve without warning. Keep well back from ice cliffs, on land and in a boat.",
+    "Weather changes fast on this exposed coast, and fog and wind can strand a landing party. Carry warm, windproof clothing and food for longer than you plan to stay."
+  ],
+  "regulations": [
+    "Keep at least 300 metres from polar bears, and 500 metres from 1 March to 30 June.",
+    "Snowmobiles and other off-road vehicles, aircraft landings and drones are banned in the park.",
+    "Ships with more than 200 passengers may not enter the park's waters, and tourist landings are allowed only at designated sites or on frozen, snow-covered ground from 1 January to 25 May.",
+    "From 1 April to 31 August no ship's horn, shots or other loud noise within a nautical mile of a bird cliff, and no drone within 500 metres of one.",
+    "Plants and fossils may not be removed, and every trace of people from before 1946 is a protected monument."
+  ],
+  "themes": [
+    "theme-arctic",
+    "theme-glaciers",
+    "theme-fjords",
+    "theme-mountains"
+  ],
+  "photos": [
+    {
+      "file": "File:Torell Land IMG 3965 hornsund brepollen.JPG",
+      "caption": "Inner Hornsund from the air, looking east towards Brepollen",
+      "altText": "A dark fjord winding between snow-covered mountains and glaciers, seen from the air"
+    },
+    {
+      "file": "File:Sörkapp Land IMG 3955 hornsund höferpynten tsjebysevfjellet hornsundtind.JPG",
+      "caption": "Sørkapp Land from the air, with Hornsund, Höferpynten and Hornsundtind",
+      "altText": "Snow-covered mountains rising from a dark sea along a coastline"
+    },
+    {
+      "file": "File:Burgerbukta.jpg",
+      "caption": "Burgerbukta, a bay on the north shore of Hornsund left by retreating glaciers",
+      "altText": "A bay in Hornsund backed by mountains and glacier ice"
+    },
+    {
+      "file": "File:Polar Bear (js) 1.jpg",
+      "caption": "A polar bear at Hornsund",
+      "altText": "A polar bear"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nasjonalparkene på Svalbard — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/svalbard/"
+    },
+    {
+      "title": "Sør-Spitsbergen nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00002565"
+    },
+    {
+      "title": "Forskrift om nasjonalparkene Sør-Spitsbergen, Forlandet og Nordvest-Spitsbergen, om naturreservatene Nordaust-Svalbard og Søraust-Svalbard, og om naturreservatene for fugl på Svalbard — Lovdata",
+      "url": "https://lovdata.no/forskrift/2014-04-04-377"
+    },
+    {
+      "title": "Verneområder på Svalbard — Sysselmesteren på Svalbard",
+      "url": "https://www.sysselmesteren.no/nb/om-sysselmesteren/miljovern/verneomrader-pa-svalbard/"
+    },
+    {
+      "title": "Søke- og meldeplikt for tur på Svalbard — Sysselmesteren på Svalbard",
+      "url": "https://www.sysselmesteren.no/nb/ferdsel-pa-svalbard/meldepliktig-ferdsel/"
+    },
+    {
+      "title": "Lov om miljøvern på Svalbard (svalbardmiljøloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2001-06-15-79"
+    },
+    {
+      "title": "Forskrift om sikkerhet i felt mv. på Svalbard (feltsikkerhetsforskriften) — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2025-06-06-940"
+    },
+    {
+      "title": "Forskrift om motorferdsel på Svalbard — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2002-06-24-723"
+    },
+    {
+      "title": "Forskrift om leiropphold på Svalbard — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2002-06-27-731"
+    },
+    {
+      "title": "Forskrift om miljøavgift for tilreisende til Svalbard — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532"
+    },
+    {
+      "title": "Sysselmesterens retningslinjer for skytevåpen og beskyttelses- og skremmemidler mot isbjørn",
+      "url": "https://www.sysselmesteren.no/en/laws-and-regulations/firearms-and-scare-devices-for-protection-against-polar-bears/"
+    },
+    {
+      "title": "Place names of Svalbard — Norwegian Polar Institute",
+      "url": "https://data.npolar.no/placename"
+    },
+    {
+      "title": "Sør-Spitsbergen National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/S%C3%B8r-Spitsbergen_National_Park"
+    },
+    {
+      "title": "Sør-Spitsbergen nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/S%C3%B8r-Spitsbergen_nasjonalpark"
+    },
+    {
+      "title": "Hornsund — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hornsund"
+    },
+    {
+      "title": "Polish Polar Station, Hornsund — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Polish_Polar_Station,_Hornsund"
+    },
+    {
+      "title": "Svalbard — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Svalbard"
+    },
+    {
+      "title": "Forskrift om endring i forskrift om større naturvernområder og fuglereservater på Svalbard (FOR-2019-12-20-1912) — Lovdata",
+      "url": "https://lovdata.no/dokument/LTI/forskrift/2019-12-20-1912"
+    },
+    {
+      "title": "Forskrift om endringer i forskrift om nasjonalparkene Sør-Spitsbergen, Forlandet og Nordvest-Spitsbergen mv. (FOR-2024-02-09-231) — Lovdata",
+      "url": "https://lovdata.no/dokument/LTI/forskrift/2024-02-09-231"
+    },
+    {
+      "title": "Sysselmesterens retningslinjer for skytevåpen og beskyttelses- og skremmemidler mot isbjørn (FOR-2024-05-13-850) — Lovdata",
+      "url": "https://lovdata.no/dokument/INS/forskrift/2024-05-13-850"
+    },
+    {
+      "title": "Protected areas — Cruise Handbook for Svalbard, Norwegian Polar Institute",
+      "url": "https://cruise-handbook.npolar.no/en/svalbard/protected-areas.html"
+    },
+    {
+      "title": "Hornsund's geology and landscape; history and cultural heritage; wildlife — Cruise Handbook for Svalbard, Norwegian Polar Institute",
+      "url": "https://cruise-handbook.npolar.no/en/hornsund/history-and-cultural-heritage.html"
+    },
+    {
+      "title": "Gåshamna — Cruise Handbook for Svalbard, Norwegian Polar Institute",
+      "url": "https://cruise-handbook.npolar.no/en/hornsund/gashamna.html"
+    },
+    {
+      "title": "Isbjørnhamna – Polska Stacja Polarna — Cruise Handbook for Svalbard, Norwegian Polar Institute",
+      "url": "https://cruise-handbook.npolar.no/en/hornsund/isbjornhamna.html"
+    }
+  ]
+}

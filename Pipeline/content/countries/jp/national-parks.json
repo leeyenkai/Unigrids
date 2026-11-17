@@ -1,0 +1,257 @@
+{
+  "_about": "Japan's 35 national parks. IDs are permanent: user logs point at them. 'name' is the Ministry of the Environment's own English name (www.japan.travel/national-parks/), 'slug' the path of the park's page there; 'localName' the official Japanese name, matched to the MOE outline file (nps.zip) by the pipeline. 'passportRegion' is Unigrids' grouping by the MOE office that administers the park (SPECIFICATION.md §17, item 24), checked against https://www.env.go.jp/park/office.html. 'reachedBy' is how a park with no road to it from the main islands is reached, in a line taken from its guide's directions; a trip shows it where no road route exists.",
+  "parks": [
+    {
+      "id": "jp-np-rishiri-rebun-sarobetsu",
+      "name": "Rishiri-Rebun-Sarobetsu",
+      "slug": "rishiri-rebun-sarobetsu",
+      "localName": "利尻礼文サロベツ国立公園",
+      "passportRegion": "hokkaido",
+      "reachedBy": "Ferry from Wakkanai to Rishiri and Rebun"
+    },
+    {
+      "id": "jp-np-shiretoko",
+      "name": "Shiretoko",
+      "slug": "shiretoko",
+      "localName": "知床国立公園",
+      "passportRegion": "hokkaido"
+    },
+    {
+      "id": "jp-np-akan-mashu",
+      "name": "Akan-Mashu",
+      "slug": "akan-mashu",
+      "localName": "阿寒摩周国立公園",
+      "passportRegion": "hokkaido"
+    },
+    {
+      "id": "jp-np-kushiroshitsugen",
+      "name": "Kushiroshitsugen",
+      "slug": "kushiroshitsugen",
+      "localName": "釧路湿原国立公園",
+      "passportRegion": "hokkaido"
+    },
+    {
+      "id": "jp-np-daisetsuzan",
+      "name": "Daisetsuzan",
+      "slug": "daisetsuzan",
+      "localName": "大雪山国立公園",
+      "passportRegion": "hokkaido"
+    },
+    {
+      "id": "jp-np-hidakasanmyaku-erimo-tokachi",
+      "name": "Hidakasanmyaku-Erimo-Tokachi",
+      "slug": "hidakasanmyaku-erimo-tokachi",
+      "localName": "日高山脈襟裳十勝国立公園",
+      "passportRegion": "hokkaido"
+    },
+    {
+      "id": "jp-np-shikotsu-toya",
+      "name": "Shikotsu-Toya",
+      "slug": "shikotsu-toya",
+      "localName": "支笏洞爺国立公園",
+      "passportRegion": "hokkaido"
+    },
+    {
+      "id": "jp-np-towada-hachimantai",
+      "name": "Towada-Hachimantai",
+      "slug": "towada-hachimantai",
+      "localName": "十和田八幡平国立公園",
+      "passportRegion": "tohoku"
+    },
+    {
+      "id": "jp-np-sanriku-fukko",
+      "name": "Sanriku Fukko",
+      "slug": "sanriku-fukko",
+      "localName": "三陸復興国立公園",
+      "passportRegion": "tohoku"
+    },
+    {
+      "id": "jp-np-bandai-asahi",
+      "name": "Bandai-Asahi",
+      "slug": "bandai-asahi",
+      "localName": "磐梯朝日国立公園",
+      "passportRegion": "tohoku"
+    },
+    {
+      "id": "jp-np-nikko",
+      "name": "Nikko",
+      "slug": "nikko",
+      "localName": "日光国立公園",
+      "passportRegion": "kanto"
+    },
+    {
+      "id": "jp-np-oze",
+      "name": "Oze",
+      "slug": "oze",
+      "localName": "尾瀬国立公園",
+      "passportRegion": "kanto"
+    },
+    {
+      "id": "jp-np-chichibu-tama-kai",
+      "name": "Chichibu-Tama-Kai",
+      "slug": "chichibu-tama-kai",
+      "localName": "秩父多摩甲斐国立公園",
+      "passportRegion": "kanto"
+    },
+    {
+      "id": "jp-np-ogasawara",
+      "name": "Ogasawara",
+      "slug": "ogasawara",
+      "localName": "小笠原国立公園",
+      "passportRegion": "kanto",
+      "reachedBy": "Ferry from Tokyo, about 24 hours; there is no airport"
+    },
+    {
+      "id": "jp-np-fuji-hakone-izu",
+      "name": "Fuji-Hakone-Izu",
+      "slug": "fuji-hakone-izu",
+      "localName": "富士箱根伊豆国立公園",
+      "passportRegion": "kanto"
+    },
+    {
+      "id": "jp-np-minami-alps",
+      "name": "Minami Alps",
+      "slug": "minami-alps",
+      "localName": "南アルプス国立公園",
+      "passportRegion": "kanto"
+    },
+    {
+      "id": "jp-np-joshinetsukogen",
+      "name": "Joshin'etsukogen",
+      "slug": "joshinetsukogen",
+      "localName": "上信越高原国立公園",
+      "passportRegion": "chubu"
+    },
+    {
+      "id": "jp-np-myoko-togakushi-renzan",
+      "name": "Myoko-Togakushi Renzan",
+      "slug": "myoko-togakushi-renzan",
+      "localName": "妙高戸隠連山国立公園",
+      "passportRegion": "chubu"
+    },
+    {
+      "id": "jp-np-chubusangaku",
+      "name": "Chubusangaku",
+      "slug": "chubusangaku",
+      "localName": "中部山岳国立公園",
+      "passportRegion": "chubu"
+    },
+    {
+      "id": "jp-np-hakusan",
+      "name": "Hakusan",
+      "slug": "hakusan",
+      "localName": "白山国立公園",
+      "passportRegion": "chubu"
+    },
+    {
+      "id": "jp-np-ise-shima",
+      "name": "Ise-Shima",
+      "slug": "ise-shima",
+      "localName": "伊勢志摩国立公園",
+      "passportRegion": "chubu"
+    },
+    {
+      "id": "jp-np-yoshino-kumano",
+      "name": "Yoshino-Kumano",
+      "slug": "yoshino-kumano",
+      "localName": "吉野熊野国立公園",
+      "passportRegion": "kinki"
+    },
+    {
+      "id": "jp-np-saninkaigan",
+      "name": "San'inkaigan",
+      "slug": "saninkaigan",
+      "localName": "山陰海岸国立公園",
+      "passportRegion": "kinki"
+    },
+    {
+      "id": "jp-np-setonaikai",
+      "name": "Setonaikai",
+      "slug": "setonaikai",
+      "localName": "瀬戸内海国立公園",
+      "passportRegion": "chugokuShikoku"
+    },
+    {
+      "id": "jp-np-daisen-oki",
+      "name": "Daisen-Oki",
+      "slug": "daisen-oki",
+      "localName": "大山隠岐国立公園",
+      "passportRegion": "chugokuShikoku"
+    },
+    {
+      "id": "jp-np-ashizuri-uwakai",
+      "name": "Ashizuri-Uwakai",
+      "slug": "ashizuri-uwakai",
+      "localName": "足摺宇和海国立公園",
+      "passportRegion": "chugokuShikoku"
+    },
+    {
+      "id": "jp-np-saikai",
+      "name": "Saikai",
+      "slug": "saikai",
+      "localName": "西海国立公園",
+      "passportRegion": "kyushu"
+    },
+    {
+      "id": "jp-np-unzen-amakusa",
+      "name": "Unzen-Amakusa",
+      "slug": "unzen-amakusa",
+      "localName": "雲仙天草国立公園",
+      "passportRegion": "kyushu"
+    },
+    {
+      "id": "jp-np-aso-kuju",
+      "name": "Aso-Kuju",
+      "slug": "aso-kuju",
+      "localName": "阿蘇くじゅう国立公園",
+      "passportRegion": "kyushu"
+    },
+    {
+      "id": "jp-np-kirishima-kinkowan",
+      "name": "Kirishima-Kinkowan",
+      "slug": "kirishima-kinkowan",
+      "localName": "霧島錦江湾国立公園",
+      "passportRegion": "kyushu"
+    },
+    {
+      "id": "jp-np-yakushima",
+      "name": "Yakushima",
+      "slug": "yakushima",
+      "localName": "屋久島国立公園",
+      "passportRegion": "kyushu",
+      "reachedBy": "Fly or take a boat from Kagoshima"
+    },
+    {
+      "id": "jp-np-amamigunto",
+      "name": "Amamigunto",
+      "slug": "amamigunto",
+      "localName": "奄美群島国立公園",
+      "passportRegion": "okinawaAmami",
+      "reachedBy": "Fly to Amami, or take a ferry from Kagoshima or Naha"
+    },
+    {
+      "id": "jp-np-yambaru",
+      "name": "Yambaru",
+      "slug": "yambaru",
+      "localName": "やんばる国立公園",
+      "passportRegion": "okinawaAmami",
+      "reachedBy": "Fly to Naha, then by road"
+    },
+    {
+      "id": "jp-np-keramashoto",
+      "name": "Keramashoto",
+      "slug": "keramashoto",
+      "localName": "慶良間諸島国立公園",
+      "passportRegion": "okinawaAmami",
+      "reachedBy": "Fly to Naha, then by boat from Tomari Port"
+    },
+    {
+      "id": "jp-np-iriomote-ishigaki",
+      "name": "Iriomote-Ishigaki",
+      "slug": "iriomote-ishigaki",
+      "localName": "西表石垣国立公園",
+      "passportRegion": "okinawaAmami",
+      "reachedBy": "Fly to Ishigaki, then by ferry to the other islands"
+    }
+  ]
+}

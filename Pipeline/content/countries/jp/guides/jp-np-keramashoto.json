@@ -1,0 +1,238 @@
+{
+  "placeID": "jp-np-keramashoto",
+  "contentVersion": 1,
+  "summary": "A cluster of small islands in the sea west of Naha, ringed by coral reefs in water so clear its colour has a name of its own, 'Kerama blue'. Snorkel with turtles off white beaches, watch humpback whales from the island lookouts in winter, and walk the quiet villages of Tokashiki, Zamami, Aka and Geruma. Most of the park is sea.",
+  "facts": {
+    "establishedYear": 2014,
+    "areaHectares": 3520,
+    "bestSeasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Two to three days"
+  },
+  "story": [
+    "The Kerama Islands lie about 40 kilometres west of Naha: more than thirty rocky islands and islets with sea cliffs, sandy coves and channels between them, all fringed by coral reefs. The water around them is exceptionally clear, a deep, bright blue known as Kerama blue. Tokashiki is the largest island; Zamami, Aka and Geruma lie to its west, with many uninhabited islets around them.",
+    "The reefs are among the richest in Japan, with some 248 species of coral recorded, mostly branching and table corals, and green turtles feed over them. From about December into spring humpback whales come to these waters to breed and calve, and they can be watched from boats and from lookouts on the islands. Ashore, the islands' forests of pine and chinquapin shelter the small Kerama deer, found only on a few of the islands.",
+    "Four islands are inhabited, and their villages keep old houses behind walls of Ryukyu limestone; the Takara residence on Geruma is an Important Cultural Property. The islands were a staging post for ships between Okinawa and China. On 26 March 1945 American troops landed here, the first landings of the Battle of Okinawa; war memorials stand on the islands.",
+    "The Keramas were added to the Okinawa Kaigan Quasi-National Park in 1978. Parts of their reefs were listed under the Ramsar Convention in 2005, and on 5 March 2014 they became Keramashoto National Park, Japan's thirty-first and the first wholly new national park since 1987. The park's sea extends about seven kilometres from the islands, and at about 90,000 hectares the sea makes up most of the park."
+  ],
+  "howItWorks": [
+    "Keramashoto is a small regional park of land and a very large one of sea. The land, about 3,500 hectares in the villages of Tokashiki and Zamami, is mostly owned by the villages and other local bodies; the island communities, harbours, beaches and lookouts all lie within it. Most of the land is special zone, with a small special protection zone.",
+    "The heart of the park is underwater. A single marine park zone of 8,290 hectares covers the reefs around the islands; within it, collecting the designated corals, fish, shellfish and other marine life needs permission, and so does damaging the sea floor. Beyond it the sea out to about seven kilometres from the islands is ordinary zone, where large works need notice.",
+    "The villages protect the reefs in their own ways too. Tokashiki and Zamami have an ecotourism plan under the national Ecotourism Promotion Act, which lets them limit numbers at designated reef sites, and the local diving businesses have long kept their own rules on anchoring and on removing coral-eating crown-of-thorns starfish. Each village also levies a small environmental tax on everyone arriving by boat or air."
+  ],
+  "sights": [
+    {
+      "name": "Furuzamami Beach (古座間味ビーチ)",
+      "note": "A long white beach on Zamami with reefs and fish a few strokes offshore; one of the best snorkelling beaches in the islands.",
+      "location": [
+        26.2238,
+        127.3087
+      ]
+    },
+    {
+      "name": "Aharen Beach (阿波連ビーチ)",
+      "note": "Tokashiki's main beach, on the west coast beside Aharen village: fine sand, snorkelling and sunsets.",
+      "location": [
+        26.1691,
+        127.3472
+      ]
+    },
+    {
+      "name": "Inazaki Observatory (稲崎展望台)",
+      "note": "A lookout on the north-west of Zamami, among the best places to watch for humpback whales in winter.",
+      "location": [
+        26.2396,
+        127.2958
+      ]
+    },
+    {
+      "name": "Western Observatory, Tokashiki (西展望台)",
+      "note": "A lookout on the west side of Tokashiki, with views over the sea to the other Kerama islands.",
+      "location": [
+        26.2113,
+        127.3629
+      ]
+    },
+    {
+      "name": "Nishibama, Aka (阿嘉島 北浜)",
+      "note": "A white beach on Aka with coral and turtles offshore; bridges link Aka to Geruma and Fukaji.",
+      "location": [
+        26.2004,
+        127.2871
+      ]
+    },
+    {
+      "name": "Geruma (慶留間島)",
+      "note": "A small island linked to Aka by bridge, with the Takara residence, an Important Cultural Property, and Kerama deer.",
+      "location": [
+        26.1814,
+        127.2891
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Tomari Port, Naha — fast boats and car ferries to Tokashiki, Zamami and Aka",
+      "Tokashiki Port, on the east coast of Tokashiki",
+      "Zamami Port and Aka Port, linked by village boats"
+    ],
+    "reservations": "Boats from Naha fill in summer and at holidays; book ahead. Some inter-island boats to Tokashiki's Aharen port need a booking the day before. Whale-watching and diving trips are best booked in advance. Check before you go.",
+    "permits": [],
+    "camping": [],
+    "lodging": [
+      "Small hotels, pensions and minshuku on Tokashiki, Zamami and Aka"
+    ],
+    "seasonalClosures": [
+      "Boats are cancelled in rough seas and typhoons, most often between July and October"
+    ]
+  },
+  "weather": "The islands are subtropical and mild all year, with warm winters that are often windy and grey. The rainy season runs from about May into June. Summer is hot and sunny and the sea at its warmest; it is also the peak season for visitors. Typhoons can strike from July to October and stop the boats for days. Winter is the season for whales, from about December into spring, and the sea is too cool for most swimmers without a wetsuit.",
+  "directions": "From Tokyo, fly to Naha Airport (about three hours). Take the Yui Rail monorail to Miebashi Station and walk to Tomari Port, or a taxi from the airport (10 to 20 minutes). Tokashiki Ferry and the Zamami village boats sail from Tomari: the fast boat to Tokashiki takes about 40 minutes and the car ferry about 70; Zamami is about an hour by fast boat or two by ferry, calling at Aka. Village boats link Zamami, Aka and Tokashiki's Aharen port. On the islands, small buses meet the boats on Tokashiki, and cars, scooters and bicycles can be hired; Aka is small enough to walk.",
+  "fees": [
+    {
+      "title": "Tokashiki environmental cooperation tax (環境協力税)",
+      "cost": "¥100",
+      "amount": 100,
+      "currencyCode": "JPY",
+      "detail": "Levied by Tokashiki village on each arrival by boat or helicopter since April 2011; children of junior-high-school age and under are exempt."
+    },
+    {
+      "title": "Zamami beautiful-island tax (美ら島税)",
+      "cost": "¥100",
+      "amount": 100,
+      "currencyCode": "JPY",
+      "detail": "Levied by Zamami village on each arrival by boat or aircraft since April 2018; children of junior-high-school age and under are exempt."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "19th century",
+      "text": "The islands serve as a staging post for ships sailing between Okinawa and China."
+    },
+    {
+      "year": "1945",
+      "text": "On 26 March American troops land on the Keramas, the first landings of the Battle of Okinawa."
+    },
+    {
+      "year": "1978",
+      "text": "The Kerama Islands are added to Okinawa Kaigan Quasi-National Park."
+    },
+    {
+      "year": "2005",
+      "text": "Parts of the Kerama coral reefs are listed under the Ramsar Convention."
+    },
+    {
+      "year": "2011",
+      "text": "Tokashiki village begins collecting its environmental tax on arrivals."
+    },
+    {
+      "year": "2014",
+      "text": "Keramashoto National Park is designated on 5 March, with an 8,290-hectare marine park zone."
+    },
+    {
+      "year": "2018",
+      "text": "Zamami village begins collecting its island tax on arrivals."
+    }
+  ],
+  "safety": [
+    "Currents run hard through the channels between the islands and over the reef edges, especially on a falling tide. Snorkel close to shore in sheltered water, or with a guide, and never alone.",
+    "Sea turtles are wild animals: keep several metres away, do not touch or chase them, and never stand on coral.",
+    "Box jellyfish (habu-kurage) occur in Okinawan waters in summer; swim inside stinger nets where provided, and leave the water if warned.",
+    "The sun is fierce all year; wear a rash guard and drink plenty of water."
+  ],
+  "regulations": [
+    "In the marine park zone, collecting designated corals, fish, shellfish and other marine life needs permission, and damaging the reef is prohibited.",
+    "Do not anchor on coral; use moorings where they are provided.",
+    "Pay the village environmental tax, normally collected with the boat fare.",
+    "Do not feed or chase the Kerama deer."
+  ],
+  "themes": [
+    "theme-coral-reef",
+    "theme-islands",
+    "theme-coastal"
+  ],
+  "photos": [
+    {
+      "file": "File:Furuzamami beach Okinawa Zamami.jpg",
+      "caption": "Furuzamami Beach on Zamami",
+      "altText": "Clear turquoise water lapping a white sand beach below green headlands"
+    },
+    {
+      "file": "File:Zamami Island, Japan (Panorama).jpg",
+      "caption": "Zamami and its neighbouring islands",
+      "altText": "Green, rocky islands and a sheltered bay seen from a hillside"
+    },
+    {
+      "file": "File:Aharen Beach On Tokashiki Island 2009 (7373).JPG",
+      "caption": "Aharen Beach on Tokashiki",
+      "altText": "A curving white beach along a bright blue bay, with islands offshore"
+    },
+    {
+      "file": "File:The coast of Tokashiki Island as seen from Aharen observation deck, Okinawa, Japan (3) - October 2015.jpg",
+      "caption": "The coast of Tokashiki from the Aharen lookout",
+      "altText": "Turquoise shallows and deep blue water below forested headlands and a white beach"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Keramashoto National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/keramashoto/"
+    },
+    {
+      "title": "慶良間諸島国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/kerama/index.html"
+    },
+    {
+      "title": "慶良間諸島国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/kerama/intro/index.html"
+    },
+    {
+      "title": "国立公園の概要・地種区分別面積（令和8年4月10日現在）— 環境省",
+      "url": "https://www.env.go.jp/park/doc/data/national/np_1.pdf"
+    },
+    {
+      "title": "慶良間諸島国立公園の指定の概要 — 環境省那覇自然環境事務所",
+      "url": "http://kyushu.env.go.jp/naha/data/kerama_040305a_2.pdf"
+    },
+    {
+      "title": "慶良間諸島国立公園 — 環境省「国立公園に、行ってみよう！」",
+      "url": "https://www.env.go.jp/nature/nationalparks/list/kerama-shoto/"
+    },
+    {
+      "title": "座間味村の概要 — 座間味村",
+      "url": "https://www.vill.zamami.okinawa.jp/info/zamami.html"
+    },
+    {
+      "title": "村内航路「みつしま」 — 座間味村",
+      "url": "https://www.vill.zamami.okinawa.jp/sempaku/mitsushima/"
+    },
+    {
+      "title": "Access to Tokashiki Island — 渡嘉敷村",
+      "url": "https://www.vill.tokashiki.okinawa.jp/sempakujoho/3027.html"
+    },
+    {
+      "title": "ザトウクジラ — 座間味村ホエールウォッチング協会",
+      "url": "https://zwwa.okinawa/humpback_whale/"
+    },
+    {
+      "title": "法定外税の概要 — 沖縄県",
+      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/016/781/houteigaizei_gaiyou.pdf"
+    },
+    {
+      "title": "渡嘉敷村「環境協力税」の新設 — 総務省",
+      "url": "https://www.soumu.go.jp/menu_news/s-news/02zeimu02_000022.html"
+    },
+    {
+      "title": "慶良間諸島国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/慶良間諸島国立公園"
+    },
+    {
+      "title": "Kerama Islands — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kerama_Islands"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "placeID": "jp-np-ashizuri-uwakai",
+  "contentVersion": 1,
+  "summary": "The wild south-western corner of Shikoku, where the Kuroshio current brushes the coast. Granite cliffs and a pilgrim temple at Cape Ashizuri, wind-sculpted sandstone and coral gardens at Tatsukushi, clear water around Kashiwajima, the drowned bays and pearl rafts of the Uwa Sea, and the smooth granite ravine of Nametoko inland.",
+  "facts": {
+    "establishedYear": 1972,
+    "areaHectares": 11345,
+    "bestSeasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Two kinds of coast meet here. Around Cape Ashizuri the land has risen, and the sea has cut granite into sheer cliffs, caves and blowholes; at Tatsukushi it has worked sandstone into strange shapes. North-west along the Uwa Sea the land has sunk instead, drowning river valleys into a ria coast of long peninsulas, narrow inlets and islands. Inland, the Meguro River slides over bare granite through the ravine of Nametoko.",
+    "The warm Kuroshio current passes close offshore, and its warmth reaches far up the coast. Subtropical plants grow on the capes, and under the water there are coral communities rich enough to be protected as marine parks, among them large colonies of leaf coral at Tatsukushi. Around Kashiwajima the water is famously clear, and divers there and off Okinoshima find a great variety of fish. Japanese macaques live in the forests, and akebono azalea flowers in the mountains in spring.",
+    "People have lived from this sea for centuries, and still do: fishing, fish farming and pearl culture thrive in the Uwa Sea. The Shikoku pilgrimage of 88 temples follows the coast, and Kongōfukuji, temple number 38, stands near the tip of Cape Ashizuri. Nakahama Manjirō, a fisherman's son born at Nakanohama near the cape in 1827, was shipwrecked in 1841, rescued by an American whaler and became one of the first Japanese to live in the United States.",
+    "On 10 November 1972 the Ashizuri coast and the Uwa Sea coast were made Ashizuri-Uwakai National Park, with marine park zones designated the same day at Tatsukushi, Okinoshima, Kashinishi and in the Uwa Sea. The Nametoko ravine and Mount Sasayama are among the park's inland pieces. More marine park zones followed in 1995, and in 2005 driving on the beach at Shimonokae was restricted to protect the shore."
+  ],
+  "howItWorks": [
+    "Ashizuri-Uwakai is a coastal regional park, a chain of separate pieces around the south-western corner of Shikoku, plus inland areas around Nametoko and Mount Sasayama. About half of the land is privately owned and over a third is national forest. Fishing villages, pearl and fish farms, the pilgrim temple at the cape and the small towns of Tosashimizu, Otsuki and Ainan sit within or beside it.",
+    "Nearly nine-tenths of the land is special zone, in three classes; development, felling and changes to the shore need permission there. About 8.5 per cent is special protection zone, the strictest category. The park is above all a marine park: more than twenty marine park zones protect coral and reef communities at Tatsukushi, Kashinishi, Okinoshima and through the Uwa Sea, and in them collecting designated corals, fish and shells needs permission. Driving onto the beach at Shimonokae is restricted.",
+    "Glass-bottomed boats, diving and snorkelling operators work the marine parks under these rules. The Tatsukushi Visitor Center, Uminowa, is the main source of information on the coast, its tours and its conditions."
+  ],
+  "sights": [
+    {
+      "name": "Cape Ashizuri (足摺岬)",
+      "note": "Granite cliffs at the southern tip of Shikoku, with a lighthouse first lit in 1914 and the pilgrim temple Kongōfukuji close by. The sea below is the Kuroshio.",
+      "location": [
+        32.7239,
+        133.0203
+      ]
+    },
+    {
+      "name": "Hakusan Dōmon (白山洞門)",
+      "note": "A great natural arch of granite near the cape, said to be the largest granite cave in Japan.",
+      "location": [
+        32.7235,
+        133.0139
+      ]
+    },
+    {
+      "name": "Tatsukushi (竜串)",
+      "note": "Sandstone shore weathered into strange shapes. Glass-bottomed boats and an undersea observatory show the coral of the marine park.",
+      "location": [
+        32.7855,
+        132.866
+      ]
+    },
+    {
+      "name": "Minokoshi (見残し)",
+      "note": "More wave-sculpted sandstone near Tatsukushi; the name means 'left unseen'.",
+      "location": [
+        32.7735,
+        132.8668
+      ]
+    },
+    {
+      "name": "Kashiwajima (柏島)",
+      "note": "A small island ringed by famously clear water, a centre for diving and snorkelling.",
+      "location": [
+        32.7695,
+        132.6227
+      ]
+    },
+    {
+      "name": "Okinoshima (沖の島)",
+      "note": "An island reached by ferry, surrounded by marine park zones, with a great variety of fish in its warm water.",
+      "location": [
+        32.7288,
+        132.5509
+      ]
+    },
+    {
+      "name": "Nametoko Ravine (滑床渓谷)",
+      "note": "The Meguro River slides over smooth granite for some 12 kilometres; Yukiwa Falls glides about 80 metres down a single slab. Walking trails and summer canyoning.",
+      "location": [
+        33.2029,
+        132.6537
+      ]
+    },
+    {
+      "name": "Tatsukushi Visitor Center Uminowa (竜串ビジターセンター うみのわ)",
+      "note": "The park's visitor centre on the Tatsukushi coast: exhibits, conditions and the local diving, snorkelling and boat tours.",
+      "location": [
+        32.7911,
+        132.8632
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Nakamura Station in Shimanto, on the Ashizuri limited express from Kōchi, with buses to Cape Ashizuri and Tatsukushi",
+      "The Otsuki coast and Kashiwajima, by road west from Tosashimizu or south from Uwajima",
+      "Uwajima Station, reached by the Uwakai limited express from Matsuyama, for the Uwa Sea and Nametoko"
+    ],
+    "reservations": "No park permit is needed. Glass-bottomed boats, diving, snorkelling, canyoning and kayak tours are best booked ahead, and all depend on the sea and the weather; check before you go.",
+    "permits": [],
+    "camping": [
+      "Campsites on the Otsuki coast"
+    ],
+    "lodging": [
+      "Hotels and inns at Cape Ashizuri, including a hot spring",
+      "Hotels in Shimanto (Nakamura), Sukumo and Uwajima"
+    ],
+    "seasonalClosures": []
+  },
+  "weather": "This is the warm Pacific side of Shikoku, mild in winter and hot and humid in summer. The rainy season runs from June into July, and typhoons often pass close to Cape Ashizuri between late summer and autumn, bringing high seas, landslides and cancelled boats. Summer and early autumn are the season for snorkelling, outside storm days. Spring brings azaleas to the mountains, and autumn colours the forests of Nametoko.",
+  "directions": "The fastest way from Tokyo is to fly to Kochi Ryoma Airport or Matsuyama Airport. For the Ashizuri area, take the airport bus to Kochi Station and the Ashizuri limited express to Nakamura (about 90 minutes); Kochi Seinan Kotsu buses run from Nakamura to the Ashizuri-misaki stop at the cape in about 90 minutes and also serve Tatsukushi, but they are infrequent. For the Uwa Sea and Nametoko, take the bus from Matsuyama Airport to Matsuyama Station and the Uwakai limited express to Uwajima (about 80 minutes); Nametoko is about 50 minutes by car from Uwajima. Cars can be hired at Nakamura and Uwajima, and one is almost essential for the western coast and inland areas.",
+  "chronology": [
+    {
+      "year": "1827",
+      "text": "Nakahama Manjirō is born at Nakanohama, near Cape Ashizuri."
+    },
+    {
+      "year": "1841",
+      "text": "Manjirō's fishing boat is wrecked; rescued by the American whaler John Howland, he goes on to live in the United States."
+    },
+    {
+      "year": "1914",
+      "text": "The Cape Ashizuri lighthouse begins operating."
+    },
+    {
+      "year": "1972",
+      "text": "Ashizuri-Uwakai National Park is designated on 10 November, with marine park zones at Tatsukushi, Okinoshima, Kashinishi and in the Uwa Sea."
+    },
+    {
+      "year": "1995",
+      "text": "The Uwa Sea area is reviewed, and marine park zones are added at Tsutomezaki and Shirigai."
+    },
+    {
+      "year": "2003",
+      "text": "The park plan for the Nametoko area is reviewed."
+    },
+    {
+      "year": "2005",
+      "text": "Driving on the Shimonokae coast is restricted."
+    }
+  ],
+  "safety": [
+    "Typhoons and winter swells make the cliffs and rock shelves dangerous. Stay well back from the edge at Cape Ashizuri, Ōdō and Tatsukushi, and keep off wave-washed rock.",
+    "Currents round the capes are strong. Snorkel and dive with a local operator, and only in sheltered water.",
+    "Nametoko's granite slabs are very slippery when wet; go canyoning only with a guide.",
+    "Roads to the capes are narrow and winding, and many have no fuel or shops for long stretches."
+  ],
+  "regulations": [
+    "In the marine park zones, collecting designated corals, fish, shellfish and seaweed needs permission.",
+    "Plants, animals and rocks are protected in the special protection zone, and many in the special zones.",
+    "Driving onto the beach at Shimonokae is restricted.",
+    "Shellfish and seaweed belong to the local fishing cooperatives; gathering them without a right is poaching."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-coral-reef",
+    "theme-caves",
+    "theme-canyons",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:Ashizuri Cape 03.JPG",
+      "caption": "Cape Ashizuri from Tengu-no-hana",
+      "altText": "A forested headland with a white lighthouse above sea cliffs and offshore rocks"
+    },
+    {
+      "file": "File:Tatsukushi 05.JPG",
+      "caption": "Weathered sandstone on the Tatsukushi coast",
+      "altText": "Long ribs of pale, wave-worn sandstone running towards the sea"
+    },
+    {
+      "file": "File:Nametoko 1.JPG",
+      "caption": "Smooth granite slabs in the Nametoko ravine",
+      "altText": "A shallow stream sliding over broad, smooth rock between forested banks"
+    },
+    {
+      "file": "File:Cape Ashizuri, Kochi (17490137881).jpg",
+      "caption": "The statue of Nakahama Manjirō at Cape Ashizuri",
+      "altText": "A bronze statue on a tall plinth beside a sign for Cape Ashizuri, with trees and a blue sky"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ashizuri-Uwakai National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/ashizuri-uwakai/"
+    },
+    {
+      "title": "足摺宇和海国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/ashizuri/index.html"
+    },
+    {
+      "title": "足摺宇和海国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/ashizuri/intro/index.html"
+    },
+    {
+      "title": "国立公園の概要・地種区分別面積・土地所有別面積（令和8年4月10日現在）— 環境省",
+      "url": "https://www.env.go.jp/park/doc/data/national/np_1.pdf"
+    },
+    {
+      "title": "足摺宇和海国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/足摺宇和海国立公園"
+    },
+    {
+      "title": "Ashizuri-Uwakai National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ashizuri-Uwakai_National_Park"
+    },
+    {
+      "title": "Cape Ashizuri — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cape_Ashizuri"
+    },
+    {
+      "title": "John Manjirō — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John_Manjirō"
+    },
+    {
+      "title": "How to get there, Ashizuri-Uwakai — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/ashizuri-uwakai/how-to-get-there/"
+    },
+    {
+      "title": "足摺岬 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/足摺岬"
+    },
+    {
+      "title": "白山洞門 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/白山洞門"
+    },
+    {
+      "title": "滑床渓谷 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/滑床渓谷"
+    }
+  ]
+}

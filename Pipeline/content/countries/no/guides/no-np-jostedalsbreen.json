@@ -1,0 +1,260 @@
+{
+  "placeID": "no-np-jostedalsbreen",
+  "contentVersion": 1,
+  "summary": "The largest glacier on the European mainland, a plateau of ice more than 60 kilometres long between Sogn and Nordfjord, with arms that pour down into green farming valleys. Walk to the ice fronts of Briksdalsbreen, Nigardsbreen or Bøyabreen, join a guided glacier walk, or learn how the ice shaped this country at three visitor centres around its edge.",
+  "facts": {
+    "establishedYear": 1991,
+    "areaHectares": 131400,
+    "bestSeasons": [
+      "summer",
+      "spring"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Jostedalsbreen is a plateau glacier: a dome of ice lying across the mountains of inner Vestland, a little over 60 kilometres long, with peaks standing up through it. Lodalskåpa, at 2,083 metres, is the highest point in the park. From the plateau, arms of ice spill down into the valleys around it — Nigardsbreen into Jostedalen, Briksdalsbreen into Oldedalen, Bøyabreen towards Fjærland — and below them the landscape the ice has made lies open to read: U-shaped valleys, moraines, polished rock, outwash plains and torrents of meltwater.",
+    "The glacier has not always been this size. In the Little Ice Age, from about 1300 to 1850, it was larger than at any time since the last ice age; in the first half of the 1700s its arms pushed down the valleys, and by 1748 Nigardsbreen had crushed the farm it is named after. The outermost moraines in the valleys mostly date from around 1750. Since then the ice has drawn back, fastest from the 1930s, and lakes have opened in front of arms that once reached the valley floors.",
+    "Below the ice the valleys are green. Grazing animals have shaped the old summer-farm pastures for generations, birch woods fill with birdsong in summer, and only a few hardy plants, glacier buttercup among them, grow at the ice edge. People once crossed the glacier itself between east and west, driving horses and cattle over it, until the ice thinned and split and the routes were abandoned.",
+    "Jostedalsbreen National Park was established by royal decree on 25 October 1991 to protect a large, varied glacier area together with the land from valley floor to high mountain around it, its cultural landscapes and its monuments. It was enlarged to the north-west in 1998 and now covers about 1,314 square kilometres. Three authorised visitor centres stand at its edge, in Oppstryn, Fjærland and Jostedalen."
+  ],
+  "howItWorks": [
+    "Norway's right to roam, allemannsretten, applies here as on any uncultivated land: you may walk, ski and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland. Dogs must be kept on a lead nationwide from 1 April to 20 August.",
+    "The park's regulation protects the landscape from all building and other works, and it is forbidden to break loose stone, minerals or fossils. Vegetation, including dead trees, is protected, though you may pick berries, edible mushrooms and common flowers, and use fallen wood and dry twigs for a fire where fires are allowed. Motor traffic on land and water is banned, and so is landing an aircraft — including picking people up or setting them down while hovering — or flying lower than 300 metres; drones may not be flown.",
+    "The glacier is the park's heart, but much of the land around it is private farmland and summer pasture, and grazing and hunting go on under the general rules. The park is run by the national park board for Jostedalsbreen. Glacier walks are run by guiding companies from the valleys, and the visitor centres can point you to them."
+  ],
+  "sights": [
+    {
+      "name": "Nigardsbreen",
+      "note": "The arm that had crushed the farm Nigard by 1748, now with the lake Nigardsbrevatnet in front of it in Jostedalen. Guided glacier walks start nearby.",
+      "location": [
+        61.6924,
+        7.1817
+      ]
+    },
+    {
+      "name": "Briksdalsbreen",
+      "note": "A steep arm at the head of Oldedalen, about 25 kilometres south of Olden, now ending on dry land behind the small lake it once covered.",
+      "location": [
+        61.6658,
+        6.89
+      ]
+    },
+    {
+      "name": "Bøyabreen",
+      "note": "An arm in Fjærland that reaches far down its valley, to about 300 metres above sea level.",
+      "location": [
+        61.4958,
+        6.7647
+      ]
+    },
+    {
+      "name": "Kjenndalsbreen",
+      "note": "A glacier arm at the head of Kjenndalen, above Loen on the Nordfjord side.",
+      "location": [
+        61.7178,
+        7.0262
+      ]
+    },
+    {
+      "name": "Lodalskåpa",
+      "note": "At 2,083 metres the highest peak in the park, for a long time a nunatak ringed by the ice.",
+      "location": [
+        61.7906,
+        7.2047
+      ]
+    },
+    {
+      "name": "Høgste Breakulen",
+      "note": "The highest point of the ice plateau itself, a broad white dome in the middle of the glacier.",
+      "location": [
+        61.6814,
+        7.0326
+      ]
+    },
+    {
+      "name": "Jostedalsbreen Nasjonalparksenter",
+      "note": "Authorised visitor centre by Oppstrynsvatnet on the north side, with a botanical garden, a geological park, a film and an exhibition.",
+      "location": [
+        61.9111,
+        7.0494
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Norsk Bremuseum",
+      "note": "The Norwegian Glacier Museum in Fjærland, an authorised visitor centre on glaciers and climate, in a building by Sverre Fehn.",
+      "location": [
+        61.4234,
+        6.7629
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Breheimsenteret",
+      "note": "Authorised visitor centre in Jostedalen for Jostedalsbreen and Breheimen, the starting point for glacier walks, kayaking and rafting.",
+      "location": [
+        61.6514,
+        7.2754
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Jostedalen, from Gaupne in Luster — for Nigardsbreen and Breheimsenteret",
+      "Oldedalen from Olden, Stryn — for Briksdalsbreen",
+      "Loen and Kjenndalen, Stryn",
+      "Fjærland, Sogndal — for Bøyabreen and the Glacier Museum",
+      "Oppstryn — for the national park centre on the north side"
+    ],
+    "reservations": "There is no entry permit. Guided glacier walks are booked with the guiding companies, usually through the visitor centres.",
+    "permits": [
+      "Sports events and hunting-dog trials are banned in the park; guiding, glacier walks and courses are allowed within the protection rules",
+      "Hunting and fishing follow the general rules; buy a local licence first"
+    ],
+    "camping": [
+      "Wild camping under the right to roam, at least 150 metres from houses and cabins",
+      "No fires in or near woodland from 15 April to 15 September"
+    ],
+    "lodging": [
+      "Tourist huts inside the park, among them Flatbrehytta, Skålabu and Vetledalseter",
+      "Lodging in the valleys and villages around the glacier: Stryn, Loen, Olden, Fjærland and Jostedalen"
+    ],
+    "seasonalClosures": [
+      "The glacier buses to Nigardsbreen and Briksdal run only in summer — check timetables before you go"
+    ]
+  },
+  "weather": "This is western Norway, and the glacier lives on its heavy snowfall. Spring brings long days and deep snow for ski tours across the plateau, ideally with a guide; from June to September the paths in the valleys are clear, the summer farms are in use and the glacier walks run. Weather on the ice can turn to fog and wind quickly even on a fine day in the valley, and autumn brings rain and early snow on the plateau.",
+  "directions": "No railway reaches the glacier, and public transport is thin outside summer. In summer a glacier bus runs daily from Sogndal through Gaupne and up Jostedalen to Nigardsbreen, and glacier buses also serve Briksdalen and Fjærland. By road, Fjærland, Jostedalen, Olden, Loen and Oppstryn all lie at the ends of valley roads leading towards the ice. Check Entur or the regional operator Kringom for current timetables before you travel.",
+  "chronology": [
+    {
+      "year": "c. 1300–1850",
+      "text": "The Little Ice Age: the glacier grows larger than at any time since the last ice age."
+    },
+    {
+      "year": "1748",
+      "text": "Nigardsbreen ends an advance of some 3 kilometres down Jostedalen since 1700, having crushed the farm Nigard on its way."
+    },
+    {
+      "year": "c. 1750",
+      "text": "The glacier arms reach their outermost limits, leaving the big terminal moraines."
+    },
+    {
+      "year": "1930s",
+      "text": "A rapid retreat begins; lakes open in front of Nigardsbreen and Briksdalsbreen."
+    },
+    {
+      "year": "1991",
+      "text": "Jostedalsbreen National Park is established by royal decree on 25 October."
+    },
+    {
+      "year": "1998",
+      "text": "The park is enlarged to the north-west."
+    }
+  ],
+  "safety": [
+    "Never walk onto a glacier without a rope, the right equipment and someone who knows how to use them. Crevasses hide under snow; join a guided walk instead.",
+    "Keep well back from glacier fronts. Ice can collapse without warning, and meltwater rivers flood suddenly on warm days.",
+    "Fog and wind can close in on the ice plateau within minutes, leaving no landmarks. Do not set out on the glacier without a forecast and a way to navigate.",
+    "Wet rock on the paths to the ice fronts is slippery, and the rivers beside them are fast and cold. Keep children close."
+  ],
+  "regulations": [
+    "No motor traffic on land or water, no aircraft landings and no flying below 300 metres; no drones.",
+    "Do not break loose stone, minerals or fossils.",
+    "Pick berries, edible mushrooms and common flowers for your own use; trees and shrubs, living or dead, are protected, but fallen wood may be burned where fires are allowed.",
+    "No fires in or near woodland from 15 April to 15 September, under Norway's national fire ban."
+  ],
+  "themes": [
+    "theme-glaciers",
+    "theme-mountains",
+    "theme-alpine"
+  ],
+  "photos": [
+    {
+      "file": "File:2023-07-07-Nigardsbreen-6898.jpg",
+      "caption": "Nigardsbreen in July 2023",
+      "altText": "A broad tongue of blue-white ice flowing down between bare rock walls to a valley"
+    },
+    {
+      "file": "File:Bøyabreen, 2011 August.jpg",
+      "caption": "Bøyabreen above Fjærland",
+      "altText": "A steep glacier tumbling from a mountain plateau towards green woodland"
+    },
+    {
+      "file": "File:Briksdalen and Briksdalsbreen, Sogn og Fjordane, Norway, 2013 June.jpg",
+      "caption": "Briksdalsbreen at the head of Briksdalen",
+      "altText": "A glacier spilling between dark cliffs above a green valley with a river"
+    },
+    {
+      "file": "File:Elvekrok and Nigardsbreen glacier, ca. 1898. (12608909375).jpg",
+      "caption": "Nigardsbreen and the farm Elvekrok around 1898, when the ice reached far further down the valley",
+      "altText": "An old photograph of a farm in a valley with a large glacier filling the valley behind it"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jostedalsbreen nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/jostedalsbreen/"
+    },
+    {
+      "title": "Jostedalsbreen nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00000668"
+    },
+    {
+      "title": "Forskrift om vern av Jostedalsbreen nasjonalpark (FOR-1991-10-25-691) — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/1991-10-25-691"
+    },
+    {
+      "title": "Geologi og klima — Jostedalsbreen nasjonalpark",
+      "url": "https://jostedalsbreen.no/geologi-og-klima/"
+    },
+    {
+      "title": "Om nasjonalparken — Jostedalsbreen nasjonalpark",
+      "url": "https://jostedalsbreen.no/om-nasjonalparken/"
+    },
+    {
+      "title": "Historisk bruk — Jostedalsbreen nasjonalpark",
+      "url": "https://jostedalsbreen.no/historisk-bruk/"
+    },
+    {
+      "title": "Nigardsbreen — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Nigardsbreen"
+    },
+    {
+      "title": "Jostedalsbreen — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Jostedalsbreen"
+    },
+    {
+      "title": "Lodalskåpa — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Lodalsk%C3%A5pa"
+    },
+    {
+      "title": "Travel and accommodation — Jostedalsbreen nasjonalpark",
+      "url": "https://jostedalsbreen.no/en/travel-and-accommodation/"
+    },
+    {
+      "title": "Jostedalsbreen National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jostedalsbreen_National_Park"
+    },
+    {
+      "title": "Jostedalsbreen nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Jostedalsbreen_nasjonalpark"
+    },
+    {
+      "title": "Jostedal Glacier; Nigardsbreen; Briksdalsbreen; Norwegian Glacier Museum — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jostedal_Glacier"
+    },
+    {
+      "title": "The Glacier Bus Nigardsbreen — Fjord Norway",
+      "url": "https://www.fjordnorway.com/en/transport/the-glacier-bus-nigardsbreen"
+    },
+    {
+      "title": "Besøkssentre — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/besokssentre/"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "placeID": "jp-np-towada-hachimantai",
+  "contentVersion": 1,
+  "summary": "The volcanic backbone of northern Honshu, in two halves: Lake Towada, its outflow down the mossy Oirase Gorge and the snow-monster forests of the Hakkoda range in the north; the high moors of Hachimantai, Iwate-san and Akita-Komagatake in the south. Between them lie some of Japan's most famous mountain hot springs, from Sukayu to Nyuto.",
+  "facts": {
+    "establishedYear": 1936,
+    "areaHectares": 85534,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Three to four days"
+  },
+  "story": [
+    "Lake Towada fills a double caldera that began to form with volcanic activity about 200,000 years ago. It is the third-deepest lake in Japan, and its shores and outer rim are still covered in natural forest. The lake has a single outlet, the Oirase River, which has cut a U-shaped valley fourteen kilometres long, its stream broken by rapids and waterfalls under natural forest. The lake and the gorge together are a Special Place of Scenic Beauty and a Natural Monument. North of them rise the Hakkoda Mountains, a volcanic group of eighteen peaks topped by Ōdake at 1,584 metres.",
+    "The Hachimantai half of the park, to the south, is one of Japan's great volcanic regions. Long volcanic activity and deep winter snow have left a high plateau of bogs and crater ponds such as Hachiman-numa, ringed by peaks: Hachimantai itself, Akita-Komagatake, and Iwate-san, the park's highest, whose lopsided profile is called Nanbu Kata-Fuji, the half-Fuji of Nanbu. On its north-east flank the Yakehashiri lava flow is still bare black rock. Heat rises everywhere: Goshogake bubbles with mud pots, and Tamagawa's spring, at pH 1.2, pours out 9,000 litres a minute.",
+    "Forests of beech cover the lower slopes and Maries' fir the higher ones, and in winter wind-driven snow and rime freeze the firs into the juhyō, the 'snow monsters' of Hakkoda and Hachimantai. Asiatic black bears (tsukinowaguma) feed on beech mast, and Japanese serow, a Special Natural Monument, live in the forests. Komakusa, a pink alpine poppy, grows in sheets on the volcanic gravel of Akita-Komagatake and the Yakehashiri route on Iwate-san.",
+    "People have long come to these mountains to bathe and to pray. Towada Shrine on the lake's south shore dates its worship to the Heian period; Tamagawa's spring was found by matagi hunters in the late 1600s; Sukayu, on the western flank of Hakkoda, has taken in bathers for about three hundred years. Hakkoda is also remembered for disaster: in January 1902, 199 of 210 soldiers on a winter training march died in a blizzard there. Towada National Park was designated in February 1936; the Hachimantai area was added in 1956, when the park took its present name."
+  ],
+  "howItWorks": [
+    "The park is split into two areas of similar size across Aomori, Akita and Iwate prefectures: Towada-Hakkoda, 45,060 hectares, and Hachimantai, 40,474. Nearly all of it is national land — 80,133 of 85,534 hectares — with 1,348 hectares of public and 4,053 of private land. Among its sights are the lakeside village of Yasumiya and the mountain hot springs — Sukayu, Tsuta, the seven inns of Nyuto Onsen-kyō, and old tōji spas where guests still stay for days and cook for themselves.",
+    "About 13,288 hectares are special protection zone, where picking any plant, collecting fallen leaves or branches, catching animals or lighting a fire needs a permit from the Minister of the Environment. Another 68,165 hectares are special zone, where building, felling, quarrying and picking listed alpine plants need a permit, and only 4,081 hectares are ordinary zone. Vehicle-restriction areas on Hakkoda, Iwate-san and Akita-Komagatake keep snowmobiles and off-road vehicles off the mountains.",
+    "Traffic is managed at the busiest places. Aomori Prefecture is gradually taking cars off the road beside the Oirase stream: private cars were barred for a week in September 2026, all traffic for the first time on 13 September, with shuttle buses instead, and a bypass is being built so that the stream-side road can eventually close. On autumn mornings the viewing deck at Tsuta-numa can be entered only with an advance booking and a conservation fee. On Akita-Komagatake the road to the eighth-station car park is open only to buses, taxis and two-wheelers on weekends and holidays from June to October, and every day from late June to mid-August. Five of the park's volcanoes — Hakkoda, Towada, Akita-Yakeyama, Iwate-san and Akita-Komagatake — are watched around the clock by the Japan Meteorological Agency."
+  ],
+  "sights": [
+    {
+      "name": "Lake Towada (十和田湖)",
+      "note": "A deep caldera lake with sightseeing boats from Yasumiya, canoe tours, Towada Shrine and the Maidens statue on the south shore.",
+      "location": [
+        40.471,
+        140.881
+      ]
+    },
+    {
+      "name": "Oirase Gorge (奥入瀬渓流)",
+      "note": "Fourteen kilometres of stream, waterfalls and mossy boulders below the lake, with a riverside path the whole way from Nenokuchi to Yakeyama.",
+      "location": [
+        40.5387,
+        140.9804
+      ]
+    },
+    {
+      "name": "Hakkoda Ōdake (八甲田大岳)",
+      "note": "The highest of the Hakkoda volcanoes, 1,584 metres, reached on foot from Sukayu or the top of the Hakkoda Ropeway. Snow monsters in winter.",
+      "location": [
+        40.659,
+        140.877
+      ]
+    },
+    {
+      "name": "Tsuta-numa (蔦沼)",
+      "note": "A pond in the beech forest near Tsuta Onsen, famous for reflecting red autumn leaves at dawn. Early-morning entry in peak season is booked.",
+      "location": [
+        40.6008,
+        140.9499
+      ]
+    },
+    {
+      "name": "Hachimantai and Hachiman-numa (八幡平・八幡沼)",
+      "note": "A flat volcanic summit with raised bogs and a crater pond, reached by a short path from the car park on the Aspite Line.",
+      "location": [
+        39.956,
+        140.862
+      ]
+    },
+    {
+      "name": "Goshogake Onsen (後生掛温泉)",
+      "note": "A hot-spring inn with mud baths, next to a nature trail through steaming ground, mud pots and Japan's largest mud volcano.",
+      "location": [
+        39.9723,
+        140.8003
+      ]
+    },
+    {
+      "name": "Iwate-san (岩手山)",
+      "note": "The park's highest peak, a stratovolcano with a crater-rim path lined with Kannon statues and the bare Yakehashiri lava flow on its flank.",
+      "location": [
+        39.853,
+        141.001
+      ]
+    },
+    {
+      "name": "Akita-Komagatake (秋田駒ヶ岳)",
+      "note": "A group of volcanic peaks topped by Onamedake, 1,637 metres, with meadows of komakusa and other alpine flowers.",
+      "location": [
+        39.761,
+        140.799
+      ]
+    },
+    {
+      "name": "Towada Visitor Center",
+      "note": "At Yasumiya on Lake Towada, explaining the lake's double caldera, with seasonal programmes and crafts.",
+      "location": [
+        40.428,
+        140.895
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Oirase Keiryūkan",
+      "note": "At the lower end of the Oirase Gorge, with a diorama, walking maps and stories of the people drawn to Towada.",
+      "location": [
+        40.575,
+        140.979
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Sukayu Information Center",
+      "note": "Beside Sukayu Onsen, with a relief model of the northern Hakkoda trails. Open late April to early November.",
+      "location": [
+        40.649,
+        140.852
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Hachimantai Visitor Center",
+      "note": "At Goshogake on the Akita side of the Aspite Line, with weather, flower and road reports. Open early April to early November.",
+      "location": [
+        39.982,
+        140.802
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Matsuo-Hachimantai Visitor Center",
+      "note": "The information centre for the Iwate side of Hachimantai, with a film theatre of the four seasons.",
+      "location": [
+        39.9201,
+        140.9754
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Amihari Visitor Center",
+      "note": "At Amihari Onsen below Iwate-san, the park's highest peak, with guided programmes.",
+      "location": [
+        39.822,
+        140.942
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Yasumiya, on the south shore of Lake Towada",
+      "Nenokuchi and Yakeyama, at the top and bottom of the Oirase Gorge",
+      "Sukayu and the Hakkoda Ropeway, from Aomori city",
+      "The Hachimantai Aspite Line, between Kazuno in Akita and Hachimantai city in Iwate",
+      "Tazawako Station, for Nyuto Onsen and Akita-Komagatake",
+      "Amihari Onsen and Yakehashiri, for Iwate-san"
+    ],
+    "reservations": "Early-morning entry to the Tsuta-numa viewing deck in the autumn colour season must be booked and paid for in advance. Private cars are barred from the Oirase road on set days in September and from the Akita-Komagatake road on summer weekends, holidays and high-summer weekdays. Dates change each year: check before you go with Towada city, Aomori Prefecture and Senboku city.",
+    "permits": [
+      "No permit is needed for the park's trails; crater areas close when a volcano's alert level rises"
+    ],
+    "camping": [
+      "Sukayu Campground, beside Sukayu Onsen at the foot of northern Hakkoda",
+      "Utarube and Oide campgrounds, on the shores of Lake Towada",
+      "Goshogake (Ōnuma) Campground, at 1,000 metres on the Aspite Line",
+      "Nyuto Campground, at the entrance to Nyuto Onsen-kyō",
+      "Amihari Onsen and Matsukawa campgrounds, below Iwate-san"
+    ],
+    "lodging": [
+      "Yasumiya on Lake Towada",
+      "Sukayu and Tsuta onsens on the Hakkoda side",
+      "Nyuto Onsen-kyō, seven inns with their own springs",
+      "Goshogake, Tamagawa and Matsukawa onsens, some with self-catering tōji stays"
+    ],
+    "seasonalClosures": [
+      "The Hachimantai Aspite Line and National Route 341 close in winter; the Aspite Line reopens in April between walls of snow",
+      "JR buses from Aomori to Lake Towada run from mid-April to early November; in winter they go only as far as Sukayu",
+      "The Hachimantai Visitor Center and Sukayu Information Center close in winter"
+    ],
+    "seasonalClosureMonths": [
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": "Snow is the defining fact of the place. Sukayu, at about 900 metres, can lie under five metres of it, and from January to February the Hakkoda and Hachimantai firs turn into snow monsters and the powder draws back-country skiers. Spring comes late: the Aspite Line opens in April between walls of snow, and new leaves then fill the Oirase Gorge. Summer is cool in the mountains, with alpine flowers on Akita-Komagatake. Autumn is the busiest season, when the beech forests around Lake Towada, Oirase and Tsuta-numa turn colour.",
+  "directions": "For Lake Towada and Hakkoda, take the Tohoku Shinkansen to Shin-Aomori (about 3 hours 10 minutes from Tokyo), then the seasonal JR bus via the Hakkoda Ropeway (about 1 hour 15 minutes) and the Oirase Gorge to the lake (about 2 hours 50 minutes). For Hachimantai, take the Tohoku Shinkansen to Morioka for seasonal buses up to the plateau, or the Akita Shinkansen to Tazawako for buses to Nyuto Onsen and Akita-Komagatake. Aomori, Hanamaki and Akita airports serve the region. Many park roads close in winter; a car makes the most sense outside it.",
+  "fees": [
+    {
+      "title": "Tsuta-numa early-morning conservation fee",
+      "cost": "¥2,000",
+      "amount": 2000,
+      "currencyCode": "JPY",
+      "detail": "Per person for the booked 5:00–7:30 slot at the Tsuta-numa viewing deck in the autumn colour season, plus ¥2,000 per car, as charged in 2025; the scheme ran again from 23 October to 3 November in 2026. A fee is also collected in the daytime. Check before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 200,000 years ago",
+      "text": "Volcanic activity begins that will form the double caldera of Lake Towada."
+    },
+    {
+      "year": "1902",
+      "text": "In January, 199 of 210 soldiers on a winter march in the Hakkoda Mountains die in a blizzard."
+    },
+    {
+      "year": "1936",
+      "text": "Towada National Park is designated on 1 February."
+    },
+    {
+      "year": "1956",
+      "text": "The Hachimantai area is added and the park is renamed Towada-Hachimantai."
+    },
+    {
+      "year": "1990",
+      "text": "Vehicle-restriction areas are designated on Hakkoda, Iwate-san and Akita-Komagatake."
+    },
+    {
+      "year": "2025",
+      "text": "Heavy rain in August sends debris onto the Oirase stream path, which reopens in full in September."
+    },
+    {
+      "year": "2026",
+      "text": "On 13 September the road beside the Oirase stream is closed to all traffic for the first time, a step towards taking it off the gorge for good."
+    }
+  ],
+  "safety": [
+    "Volcanic gas can collect in hollows around Hakkoda, Hachimantai and the hot-spring areas. Stay on marked paths and obey closure signs. Hakkoda, Towada, Akita-Yakeyama, Iwate-san and Akita-Komagatake are monitored by the Japan Meteorological Agency; check the alert level before climbing.",
+    "Asiatic black bears (tsukinowaguma) are common in the beech forests. Make noise, carry bear spray, and check recent sightings at the visitor centres.",
+    "Winter in the mountains is severe and the back-country is easy to get lost in; go with a guide. The 1902 Hakkoda march is the classic warning.",
+    "The Oirase path and mountain roads can close after heavy rain."
+  ],
+  "regulations": [
+    "Do not pick alpine plants such as komakusa; listed species are protected throughout the special zones.",
+    "Picking any plant, collecting fallen branches, catching animals or lighting a fire in the special protection zone needs a permit.",
+    "Follow the seasonal private-car restrictions on the Oirase road and the Akita-Komagatake road.",
+    "Snowmobiles and off-road vehicles are barred from the vehicle-restriction areas on Hakkoda, Iwate-san and Akita-Komagatake."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-mountains",
+    "theme-hot-springs",
+    "theme-deciduous-forest",
+    "theme-alpine",
+    "theme-wetland",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:Lake Towada - Towada7027.jpg",
+      "caption": "Lake Towada",
+      "altText": "A wide lake framed by forested hills"
+    },
+    {
+      "file": "File:Oirase Mountain Stream - Towada, Aomori - DSC00907.jpg",
+      "caption": "The Oirase stream below Lake Towada",
+      "altText": "A clear stream running over mossy rocks under green trees"
+    },
+    {
+      "file": "File:Hakkoda snow monsters (51885476927).jpg",
+      "caption": "Snow monsters on the Hakkoda Mountains",
+      "altText": "Fir trees encased in thick snow and rime, standing like figures"
+    },
+    {
+      "file": "File:Hakkouda and Suirennuma P6021843.jpg",
+      "caption": "The Hakkoda Mountains above Suiren-numa",
+      "altText": "A small marsh pond with volcanic mountains behind"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Towada-Hachimantai National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/towada-hachimantai/"
+    },
+    {
+      "title": "十和田八幡平国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/towada/index.html"
+    },
+    {
+      "title": "十和田八幡平国立公園 見どころ・施設 — 国立公園に、行ってみよう！（環境省）",
+      "url": "https://www.env.go.jp/nature/nationalparks/list/towada-hachimantai/spot/"
+    },
+    {
+      "title": "国立公園一覧 — 環境省",
+      "url": "https://www.env.go.jp/park/parks/index.html"
+    },
+    {
+      "title": "令和８年度 国立公園自動車利用適正化対策等実施計画 — 環境省",
+      "url": "https://www.env.go.jp/park/system/files/np_8.pdf"
+    },
+    {
+      "title": "自然公園法（昭和32年法律第161号）— e-Gov法令検索",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000161"
+    },
+    {
+      "title": "火山の知識（常時観測火山）— 気象庁",
+      "url": "https://www.jma.go.jp/jma/kishou/know/kazan/vol_know.html"
+    },
+    {
+      "title": "初の「完全交通規制」で未来の奥入瀬を体感 — 青森県",
+      "url": "https://www.pref.aomori.lg.jp/release/2026/81264.html"
+    },
+    {
+      "title": "奥入瀬渓流歩道の全区間通行再開 — 青森県",
+      "url": "https://www.pref.aomori.lg.jp/release/2025/78888.html"
+    },
+    {
+      "title": "蔦沼 早朝予約制 — トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2039527.html"
+    },
+    {
+      "title": "十和田湖 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/十和田湖"
+    },
+    {
+      "title": "Hakkōda Mountains incident — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hakkōda_Mountains_incident"
+    },
+    {
+      "title": "日本の主な山岳標高（1003山）— 国土地理院",
+      "url": "https://www.gsi.go.jp/kihonjohochousa/kihonjohochousa41139.html"
+    },
+    {
+      "title": "八甲田山 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/八甲田山"
+    },
+    {
+      "title": "How to get there | Towada-Hachimantai — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/towada-hachimantai/how-to-get-there/"
+    },
+    {
+      "title": "Hachimantai Visitor Center — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/towada-hachimantai/see-and-do/hachimantai-visitor-center/"
+    },
+    {
+      "title": "Sukayu Information Center — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/towada-hachimantai/see-and-do/sukayu-information-center/"
+    }
+  ]
+}

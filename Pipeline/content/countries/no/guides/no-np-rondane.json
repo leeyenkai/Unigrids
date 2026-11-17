@@ -1,0 +1,274 @@
+{
+  "placeID": "no-np-rondane",
+  "contentVersion": 1,
+  "summary": "Norway's first national park, set aside in 1962: a dry, lichen-pale high plateau between Gudbrandsdalen and Østerdalen, where ten summits over 2,000 metres crowd round the long lake Rondvatnet. Marked paths reach Rondslottet and Storronden in a day from Rondvassbu, and one of the last original wild reindeer herds in Europe still crosses ground strewn with trapping pits thousands of years old.",
+  "facts": {
+    "establishedYear": 1962,
+    "areaHectares": 96480,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Rondane is a knot of high, bare summits on the plateau east of Gudbrandsdalen. Ten of them pass 2,000 metres, gathered in the massif around Rondvatnet, the long, narrow lake whose old name, Rond, became the name of the range. The summits are layered sandstone hundreds of millions of years old. The last ice age did the rest: ice ground out the broad, rounded valleys, meltwater cut the steep ones, and stagnant ice left kettle holes and gravel ridges behind it. Too little snow falls now to keep a glacier alive.",
+    "The rock is poor in nutrients, and the plateau shows it. Lichen and heather carpet the stony flats — pale reindeer lichen, yellow-green map lichen — and on the highest slopes little else grows. That lichen feeds one of the last original wild reindeer herds in Europe, animals whose forebears have used these mountains for more than 10,000 years. Wolverine and golden eagle hunt the same ground, and the dotterel nests on the open ground, where the male, not the female, sits on the eggs.",
+    "People hunted those reindeer long before anyone climbed for the view. Trapping pits, bow stands and guiding fences lie scattered across the park, some of them two to three thousand years old. Later, farms in the valleys sent their animals up to summer pastures at Mysusæter, Høvringen and Grimsdalen. Scientists, painters and walkers followed in the 1800s: Ibsen set a scene of Peer Gynt among the Ronde mountains, Rondslottet was first climbed in 1875, and in 1914 Harald Sohlberg finished Winter Night in Rondane, the best-known painting of the range.",
+    "The park was a local idea. Norman Heitkøtter, a mountain warden from Otta who worked in Rondane for more than forty years, saw in the 1950s that growing traffic would become the reindeer's greatest threat, and when the Nature Conservation Act of 1954 made it possible, he set about winning over the local mountain boards. Rondane became Norway's first national park on 21 December 1962. It was enlarged in 2003, when Dovre National Park was created next to it — yet paths and roads have since split the herd, in practice, into three."
+  ],
+  "howItWorks": [
+    "Norway's right to roam (allemannsretten) applies here as in all open country: you may walk and ski where you like, pick berries, mushrooms and common flowers, and pitch a tent at least 150 metres from the nearest house or cabin. The park board asks walkers to keep to the marked paths and staked winter routes, which are laid out to spare the reindeer's most sensitive ground. From 15 April to 15 September national fire law forbids lighting a fire in or near woodland and other open country unless it plainly cannot spread or the municipality has allowed it; the park's own regulation asks only that wood for a campfire be taken sparingly.",
+    "Inside the boundary, motor traffic on land and water is banned, and so is flying lower than 300 metres. Electric bicycles count as motor vehicles even with the motor off, and drones fall under the ban on motorised model aircraft. Ordinary bicycles are allowed only on a few named roads and tracks — chiefly the road from Spranghaugen to Rondvassbu, which the regulation opens to cyclists from 25 June to 25 August. Kites and ski sails are banned. Dogs must be kept on a lead from 1 March to 20 August, and a municipality may set a longer period.",
+    "The reindeer set the calendar. They calve in May and June, and the tourist huts inside the park close from the start of May until around mid-June to leave the plateau quiet. If you meet reindeer at any time of year, stop, keep still and let them move away; frightened animals run far and lose grazing they cannot spare. Trapping pits, hut ruins and old cairns are protected monuments: leave their stones where they lie, and do not build new cairns, which mislead walkers in fog."
+  ],
+  "sights": [
+    {
+      "name": "Rondslottet",
+      "note": "Rondane's highest summit at 2,178 metres, reached by a marked path from Rondvassbu over Vinjeronden: about five hours up and three down.",
+      "location": [
+        61.915,
+        9.851
+      ]
+    },
+    {
+      "name": "Storronden",
+      "note": "A 2,138-metre summit on the east side of Rondvatnet, one of the 2,000-metre tops a marked path reaches.",
+      "location": [
+        61.892,
+        9.862
+      ]
+    },
+    {
+      "name": "Rondvatnet",
+      "note": "The long, narrow lake at the heart of the range, walled in by Storronden and the Smiubelgen peaks. Its old name, Rond, became the mountains' name.",
+      "location": [
+        61.893,
+        9.798
+      ]
+    },
+    {
+      "name": "Smiubelgen",
+      "note": "'The blacksmith's bellows': the jagged massif west of Rondvatnet, with Storsmeden and Veslesmeden among its tops. Officially spelt Smiubelgin.",
+      "location": [
+        61.891,
+        9.679
+      ]
+    },
+    {
+      "name": "Formokampen",
+      "note": "A 1,428-metre top above Høvringen, an hour and a half to two hours on a good path that follows the old reindeer trappers. A family walk with a wide view.",
+      "location": [
+        61.853,
+        9.562
+      ]
+    },
+    {
+      "name": "Sohlbergplassen",
+      "note": "A platform among the pines above Atnsjøen on the National Tourist Route, near one of the spots from which Harald Sohlberg studied Rondane.",
+      "location": [
+        61.8805,
+        10.1851
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Straumbu (Strømbu)",
+      "note": "Rest area by the Atna and the main entrance from the east, with a roof terrace and toilets. The path to Bjørnhollia takes about two hours.",
+      "location": [
+        61.921,
+        10.053
+      ],
+      "kind": "trailhead"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Mysusæter and Spranghaugen, above Otta — the shortest way to Rondvassbu and the high peaks",
+      "Høvringen, on the western edge, for Formokampen and the ski trails",
+      "Straumbu rest area on the Fv27 in Atndalen — the main entrance from the east",
+      "Dørålseter, in the north, by a summer road"
+    ],
+    "reservations": "No permit or booking is needed to enter the park. The tourist huts inside it close from the start of May until around mid-June while the reindeer calve; check opening dates with the Norwegian Trekking Association (DNT) before you go.",
+    "permits": [
+      "Organised or advertised group trips off the marked routes, and events such as guided riding or dog-sledding, need permission from the Rondane-Dovre National Park Board",
+      "Groups camping in one place for more than 30 person-nights need permission",
+      "Hunting and fishing need a licence, sold through inatur.no and local outlets"
+    ],
+    "camping": [
+      "Wild camping under the right to roam, at least 150 metres from houses and cabins",
+      "Tent pitches at Rondvassbu, Bjørnhollia and Grimsdalshytta, with use of the hut facilities for a small fee",
+      "Motorhomes and caravans at Mysusæter or Straumbu; motor vehicles may not be parked in the open country"
+    ],
+    "lodging": [
+      "DNT lodges at Rondvassbu and Bjørnhollia, and Grimsdalshytta just outside the park",
+      "Other lodges, among them Dørålseter and Peer Gynt-hytta",
+      "Hotels, mountain lodges and cabins at Mysusæter, Høvringen and in the valleys"
+    ],
+    "seasonalClosures": [
+      "The road from the top of Tjønnbakkvegen to Spranghaugen is open from 15 June to 1 November, weather permitting — check before you go",
+      "The summer roads to Dørålseter and through Grimsdalen open in June and close on 1 December, weather permitting — check before you go",
+      "The huts inside the park close from May to around mid-June for the reindeer calving"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "weather": "Rondane has an inland climate: dry summers, cold winters, and weather that can change completely within a day. Spring is unpredictable — it may come in April or not until June — and brings high rivers and poor snow; spring ski tours depend on the night frost and an early start. Summer arrives around mid-June and is often over by August. It is usually dry and settled, but snow can fall in any month. Autumn colour runs from early August to mid-October, when winter returns and holds until May, in some years until mid-June, with staked and machine-groomed ski trails.",
+  "directions": "Otta, on the Dovre Line between Oslo and Trondheim, is the nearest railway station, about four hours from either city, and express buses stop there too. Local buses run on into the mountains, and in summer a bus goes from Otta to the car park at Spranghaugen, six kilometres from Rondvassbu by a road you walk or cycle; bikes can be hired at both ends. Drivers follow the E6 through Gudbrandsdalen and turn off at Ringebu or Hjerkinn for the National Tourist Route Rondane (Fv27) and the eastern side, or come up Østerdalen and turn off for Folldal. The last stretch to Spranghaugen is a toll road, paid at the barrier. The nearest airports are Oslo Gardermoen and Trondheim Værnes.",
+  "chronology": [
+    {
+      "year": "2,000–3,000 years ago",
+      "text": "Hunters dig the oldest of the reindeer trapping pits and bow stands still visible on the plateau."
+    },
+    {
+      "year": "1500s",
+      "text": "Summer dairy farming begins in Grimsdalen, beside the park; at its height the valley holds 52 summer farms."
+    },
+    {
+      "year": "1867",
+      "text": "Henrik Ibsen publishes Peer Gynt, with a scene set among the Ronde mountains."
+    },
+    {
+      "year": "1875",
+      "text": "Rondslottet is climbed for the first time; it takes its present name the following year."
+    },
+    {
+      "year": "1914",
+      "text": "Harald Sohlberg completes Winter Night in Rondane."
+    },
+    {
+      "year": "1954",
+      "text": "The Nature Conservation Act makes it possible to protect large landscape areas."
+    },
+    {
+      "year": "1962",
+      "text": "On 21 December Rondane becomes the first national park in Norway, covering about 580 square kilometres."
+    },
+    {
+      "year": "2003",
+      "text": "The park is enlarged to about 963 square kilometres to protect the wild reindeer, and Dovre National Park is created to the north."
+    },
+    {
+      "year": "2006",
+      "text": "The Sohlbergplassen viewpoint opens on the National Tourist Route above Atnsjøen."
+    }
+  ],
+  "safety": [
+    "Weather turns fast in the mountains, and snow can fall in any month. Carry windproof and waterproof layers, a hat, gloves, map and compass, even on a summer day walk.",
+    "The routes to the 2,000-metre summits cross coarse boulder fields that are slow, tiring and slippery when wet. Allow plenty of time, and carry water: there are few places to refill on the tops.",
+    "Mobile coverage is patchy. Download your network's coverage map before you set out.",
+    "From about 20 August to mid-September the hunting season brings hunters onto the plateau."
+  ],
+  "regulations": [
+    "Motor vehicles, electric bicycles and drones are banned in the park, and so is flying lower than 300 metres.",
+    "Dogs must be on a lead from 1 March to 20 August.",
+    "Cycling is allowed only on a few named roads and tracks; on the road from Spranghaugen to Rondvassbu, from 25 June to 25 August.",
+    "Kiting and ski sails are banned, and so is riding or driving a dog team or horse-drawn vehicle between Reinsbommen and Rondvassbu.",
+    "Live fish may not be used as bait, and neither live fish nor wet fishing gear may be moved from one watercourse to another."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-alpine",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Rondvatnet lake seen from the height east of Rondvassbu tourist cabin.jpg",
+      "caption": "Rondvatnet, between Veslesmeden and Storronden, from the slope above Rondvassbu",
+      "altText": "A long, narrow lake in a deep valley between steep grey mountains"
+    },
+    {
+      "file": "File:Rondslottet 01.JPG",
+      "caption": "Rondslottet, 2,178 metres, from the east, with the marked path along Langglupbekken",
+      "altText": "A broad grey summit above a stony valley with a footpath"
+    },
+    {
+      "file": "File:Sohlbergplassen1.jpg",
+      "caption": "Rondane from Sohlbergplassen, from Storronden and Rondslottet to Høgronden",
+      "altText": "A row of snow-streaked peaks beyond a forested valley"
+    },
+    {
+      "file": "File:SmiubelgenFromRondslottet.jpg",
+      "caption": "The Smiubelgen peaks — Storsmeden, Veslesmeden and Trolltinden — seen from Rondslottet",
+      "altText": "A ridge of jagged grey peaks under a pale sky"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rondane nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/rondane/"
+    },
+    {
+      "title": "Rondane nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00001873"
+    },
+    {
+      "title": "Forskrift om verneplan for Rondane, vern av Rondane nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/forskrift/2003-10-24-1266"
+    },
+    {
+      "title": "Om Rondane nasjonalpark — Rondane-Dovre nasjonalparkstyre",
+      "url": "https://rondane-dovre.no/om-rondane-nasjonalpark/"
+    },
+    {
+      "title": "Ferdselsråd og regler — Rondane-Dovre nasjonalparkstyre",
+      "url": "https://rondane-dovre.no/ferdselsrad-og-regler/"
+    },
+    {
+      "title": "Startpunkt — Rondane-Dovre nasjonalparkstyre",
+      "url": "https://rondane-dovre.no/startpunkt/"
+    },
+    {
+      "title": "Rondane og Dovre gjennom året — Rondane-Dovre nasjonalparkstyre",
+      "url": "https://rondane-dovre.no/rondane-gjennom-aret/"
+    },
+    {
+      "title": "Overnatting og reise — Rondane-Dovre nasjonalparkstyre",
+      "url": "https://rondane-dovre.no/reise-og-overnatting/"
+    },
+    {
+      "title": "Forskrift om brannforebygging § 3 — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Rondane National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rondane_National_Park"
+    },
+    {
+      "title": "Rondane nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Rondane_nasjonalpark"
+    },
+    {
+      "title": "Rondslottet — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Rondslottet"
+    },
+    {
+      "title": "Storronden — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Storronden"
+    },
+    {
+      "title": "Smiubelgin — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Smiubelgin"
+    },
+    {
+      "title": "Vinternatt i Rondane — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Vinternatt_i_Rondane"
+    },
+    {
+      "title": "Sohlbergplassen — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Sohlbergplassen"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

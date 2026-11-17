@@ -1,0 +1,224 @@
+{
+  "placeID": "no-np-junkerdal",
+  "contentVersion": 1,
+  "summary": "Limestone mountains on the Swedish border between Sulitjelma and Junkerdalen, counted among the richest places for plants in Norway, with Arctic species at the edge of their range. Sámi reindeer graze the whole park, the lakes hold fine char and trout, and old mining villages stand at its northern gate. A park for long, quiet walks.",
+  "facts": {
+    "establishedYear": 2004,
+    "areaHectares": 68200,
+    "bestSeasons": [
+      "summer"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Junkerdal National Park, Juŋŋkaravuome nasjonalpárkka in Lule Sámi, fills the mountains between Sulitjelma in the north and Junkerdalen in the south, running east to the Swedish border. The north is open upland strung with lakes, the largest of them Balvatnet; small, remote rivers run west down to Saltdalen; the south has broad U-shaped valleys and massive mountains carved by the ice. Much of the bedrock is limestone and other lime-rich rock, and the ore-bearing mountains around Sulitjelma held copper.",
+    "That lime is the reason for the park. Botanists have known these mountains since the 1800s, and many count them among the richest plant sites in Norway: a lot of species here reach their northern or southern limits, among them Arctic plants otherwise found only far to the north or on other continents. Wolverine and lynx live in the park, bears pass through, gyrfalcon and golden eagle nest on the crags, and divers and long-tailed ducks breed on the lakes, which hold some of the best char and trout in this part of Nordland.",
+    "These are Sámi mountains first. Reindeer herding has gone on here for centuries, and herding communities from both Norway and Sweden graze their animals in the park; old tent sites, turf-hut foundations and hearths mark the ground. Industry came from the north: copper and sulphur mining at Sulitjelma ran from 1891 to 1991, and its mountain village of Jakobsbakken had up to 400 inhabitants around 1920. For the miners, the clean high country to the south was where they went to recover.",
+    "Protection came early. In 1928 the plant life of these mountains was protected as the Junkerdalen–Balvatn plant protection area. The national park was established on 9 January 2004, covering 682 square kilometres, to keep a large, near-untouched area with its unique plant life and its cultural heritage, and the regulation states that the land is to remain available for reindeer herding."
+  ],
+  "howItWorks": [
+    "Norway's right to roam, allemannsretten, applies here as on any uncultivated land: you may walk, ski and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland. Dogs must be kept on a lead nationwide from 1 April to 20 August, and never allowed near grazing reindeer.",
+    "The park's regulation protects all vegetation, dead trees and shrubs included: you may burn wood carefully on a fire, but not cut trees, living or dead, for firewood. Berries, edible mushrooms and traditional food and medicinal plants may be picked. Motor traffic is banned on land and water and in the air below 300 metres, and noisy motor-driven model aircraft and boats — drones included — and motorised ice augers are not allowed. Animals and their nests, dens and spawning grounds are protected from disturbance, and organised activity that could harm the area needs permission.",
+    "The park is worked land. Sámi reindeer herders use it all year; there are tourist huts and private cabins, and fishing and moose hunting go on with local licences. The park is managed by the Midtre Nordland national park board, which also runs the neighbouring parks of Saltfjellet-Svartisen, Láhko, Rago and Sjunkhatten."
+  ],
+  "sights": [
+    {
+      "name": "Balvatnet",
+      "note": "Bállávrre in Lule Sámi: the large lake of the northern upland, south of Sulitjelma. A hydropower reservoir, it is left out of the park, which surrounds it.",
+      "location": [
+        66.9492,
+        15.9015
+      ]
+    },
+    {
+      "name": "Junkerdalsura",
+      "note": "A separate nature reserve beside the park's south-western edge: a forested slope from valley floor to bare mountain, famous among botanists for its plants.",
+      "location": [
+        66.8226,
+        15.4443
+      ]
+    },
+    {
+      "name": "Solvågtinden",
+      "note": "The prominent peak above Junkerdalen at the park's southern edge, with views down the valley.",
+      "location": [
+        66.8427,
+        15.4608
+      ]
+    },
+    {
+      "name": "Jakobsbakken",
+      "note": "A mountain mining village of Sulitjelma, home to up to 400 people around 1920; the mine closed in 1968. Now a gateway to the park.",
+      "location": [
+        67.1055,
+        16.0062
+      ]
+    },
+    {
+      "name": "Fuglvatnet",
+      "note": "A lake in the northern upland, just north-west of Balvatnet.",
+      "location": [
+        66.9671,
+        15.8609
+      ]
+    },
+    {
+      "name": "Bjørntoppen",
+      "note": "A summit in the south of the park, above the valley of Rykkjedalen.",
+      "location": [
+        66.816,
+        15.8617
+      ]
+    },
+    {
+      "name": "Besøkssenter nasjonalpark Nordland",
+      "note": "The authorised visitor centre at Storjord in Saltdal, with exhibitions on geology, wildlife and Sámi and traditional use, beside the Adde Zetterquist art gallery.",
+      "location": [
+        66.8144,
+        15.3996
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Jakobsbakken and the villages south of Sulitjelma, on the road from Fauske",
+      "Junkerdalen, on the road from Storjord in Saltdal towards Sweden",
+      "From Saltdalen up the small side valleys on the west"
+    ],
+    "reservations": "There is no entry reservation or permit.",
+    "permits": [
+      "Fishing and hunting need a licence (fiskekort, jaktkort); buy one before you go",
+      "Organised activity that could damage the natural environment needs permission from the national park board"
+    ],
+    "camping": [
+      "Wild camping under the right to roam, at least 150 metres from huts and houses",
+      "No fires in or near woodland from 15 April to 15 September"
+    ],
+    "lodging": [
+      "Tourist huts and simpler cabins inside the park",
+      "Lodging at Jakobsbakken and Sulitjelma, and in Saltdal"
+    ]
+  },
+  "weather": "Summer is the season for walking here, with long light evenings north of the Arctic Circle; snow lingers on the high ground into early summer and returns in autumn. Weather in the mountains can change fast, and fog and rain can close in on the open upland around Balvatnet. In winter the park belongs to skiers and reindeer herders.",
+  "directions": "The nearest railway stations are Rognan and Fauske on the Nordland Line between Trondheim and Bodø. By road, the E6 runs up Saltdalen past the visitor centre at Storjord; Route 77 leaves it there and climbs Junkerdalen towards Sweden along the park's southern side, and a road from Fauske runs east to Sulitjelma and Jakobsbakken in the north. The park is about an hour's drive from Bodø. Check Entur for buses.",
+  "chronology": [
+    {
+      "year": "1500s–1600s",
+      "text": "Sámi reindeer herding takes hold in mountains hunted since the ice retreated."
+    },
+    {
+      "year": "1891",
+      "text": "Copper and sulphur mining begins at Sulitjelma, just north of today's park."
+    },
+    {
+      "year": "c. 1920",
+      "text": "The mountain mining village of Jakobsbakken reaches up to 400 inhabitants."
+    },
+    {
+      "year": "1928",
+      "text": "The plant life is protected as the Junkerdalen–Balvatn plant protection area."
+    },
+    {
+      "year": "1968",
+      "text": "The mine at Jakobsbakken closes."
+    },
+    {
+      "year": "1991",
+      "text": "All mining at Sulitjelma stops."
+    },
+    {
+      "year": "2004",
+      "text": "Junkerdal National Park is established on 9 January."
+    }
+  ],
+  "safety": [
+    "There are few marked routes and long distances between huts. Carry a map, compass and enough food and shelter to sit out bad weather.",
+    "Rivers fed by snowmelt run high in early summer. Cross early in the day and look for bridges.",
+    "Old mine workings around Sulitjelma and Jakobsbakken can be unstable. Keep out of shafts and adits.",
+    "Fog can close in quickly on the open upland, where there are few landmarks."
+  ],
+  "regulations": [
+    "No motor traffic on land or water and no flying below 300 metres; drones, motorised model boats and motor ice augers are banned.",
+    "All vegetation is protected: do not cut living or dead trees for firewood, and dig nothing up.",
+    "Berries, edible mushrooms and traditional food and medicinal plants may be picked.",
+    "Dogs on a lead from 1 April to 20 August, as everywhere in Norway, and always under control near reindeer."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-alpine",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:View of Fuglvatnet and Ballvatnet lakes at Junkerdal nasjonal park.jpg",
+      "caption": "Fuglvatnet and Balvatnet in the north of the park",
+      "altText": "Two mountain lakes in an open upland of rounded hills"
+    },
+    {
+      "file": "File:Balvaten seen from Skajddebukta.jpg",
+      "caption": "Balvatnet from the bay of Skajddebukta",
+      "altText": "A wide lake with a rocky shore and mountains on the far side"
+    },
+    {
+      "file": "File:Bjørnetoppen peak seen from Rykkjedalen in Junkerdal national park.jpg",
+      "caption": "Bjørntoppen above Rykkjedalen",
+      "altText": "A rounded mountain summit above a green valley with patches of snow"
+    },
+    {
+      "file": "File:View towards Tjårrisdalen valley in Junkerdal nasjonal park.jpg",
+      "caption": "Looking towards Tjårrisdalen",
+      "altText": "A long valley running between bare mountain slopes"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Junkerdal nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/junkerdal/"
+    },
+    {
+      "title": "Junkerdal nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00000252"
+    },
+    {
+      "title": "Forskrift om vern av Junkerdal nasjonalpark/Juŋŋkaravuome nasjonalpárkka (FOR-2004-01-09-8) — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/2004-01-09-8"
+    },
+    {
+      "title": "Junkerdal nasjonalpark — Midtre Nordland nasjonalparkstyre",
+      "url": "https://junkerdalnasjonalpark.no/"
+    },
+    {
+      "title": "Junkerdal National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Junkerdal_National_Park"
+    },
+    {
+      "title": "Junkerdal nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Junkerdal_nasjonalpark"
+    },
+    {
+      "title": "Sulitjelma — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sulitjelma"
+    },
+    {
+      "title": "Jakobsbakken — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Jakobsbakken"
+    },
+    {
+      "title": "Balvatnet — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Balvatnet"
+    },
+    {
+      "title": "Junkerdalsura naturreservat — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Junkerdalsura_naturreservat"
+    },
+    {
+      "title": "Besøkssentre — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/besokssentre/"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

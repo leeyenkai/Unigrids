@@ -1,0 +1,283 @@
+{
+  "placeID": "jp-np-bandai-asahi",
+  "contentVersion": 1,
+  "summary": "A vast park across Yamagata, Fukushima and Niigata in three parts: the sacred pilgrim mountains of Dewa Sanzan and the wild Asahi range; the remote Iide range; and the volcanoes of Bandai and Azuma, whose eruptions scattered coloured ponds across the Urabandai plateau above Lake Inawashiro. Walk the Goshikinuma ponds, climb the stone steps of Mount Haguro, or soak in an old mountain spa.",
+  "facts": {
+    "establishedYear": 1950,
+    "areaHectares": 186594,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "In the south, Mount Bandai has been active for around 300,000 years. On 15 July 1888 a steam-driven eruption blew out the north side of Mount Bandai; the debris avalanche buried villages at its foot, killing hundreds of people, and dammed the rivers behind it. The dams created Lake Hibara, Lake Onogawa and the scattered ponds of Goshikinuma, whose waters run from cobalt to emerald and rust with their minerals and the light. Seen from the south Bandai is a neat triangle; from Urabandai, the plateau behind it, the collapse scar is still raw. To the north-east the Azuma volcanoes rise above Jododaira, where a pond called the Witch's Eye changes its shade of blue with the sun.",
+    "North and west rise the Asahi and Iide ranges, together called the Alps of Tohoku: long, wild ridges where beech forest gives way to snowfields and meadows reached only after long approaches. Ōasahi-dake, 1,870 metres, and Iide-san, 2,105 metres, are the main peaks, and traverses take several nights in huts. Plants grow here that are found nowhere else, such as the Iide-rindō gentian, and in the south the Bandai-kuwagata, a speedwell of Mount Bandai. Asiatic black bears and Japanese serow, a Special Natural Monument, live in the forests.",
+    "At the park's northern edge stand the three mountains of Dewa Sanzan — Haguro, Gassan and Yudono — a centre of Shugendō, the mountain religion that blends Shinto, Buddhism and older nature worship. For about 1,400 years yamabushi ascetics and pilgrims have climbed them in turn, Haguro for birth, Gassan for death and Yudono for rebirth. On Mount Haguro a five-storey pagoda, said to be the oldest in Tohoku and a National Treasure, stands among a Special Natural Monument avenue of giant cedars.",
+    "Bandai-Asahi was designated on 5 September 1950. It is the third-largest national park in Japan by land area, and within easy reach of Tokyo and Sendai, so it is busy with hikers, skiers and bathers. Its hot springs are old: Shirabu claims seven hundred years, Takayu more than four hundred, and Takayu still keeps an old rule against noisy instruments."
+  ],
+  "howItWorks": [
+    "The park is three separate areas — Dewa Sanzan-Asahi (76,610 hectares), Iide (41,550) and Bandai-Azuma-Inawashiro (68,434) — across 24 municipalities in Yamagata, Fukushima and Niigata. Of its 186,594 hectares, 162,308 are national land, 1,205 public and 23,081 private. The Ministry counts the shrines of Dewa Sanzan and spa towns such as Tsuchiyu, Takayu, Dake, Shirabu and Ubayu among the park's sights.",
+    "About 18,338 hectares — much of it in the remote Iide and Asahi ranges — are special protection zone, where picking any plant, collecting fallen leaves or branches, catching animals or lighting a fire needs a permit from the Minister of the Environment. Another 154,167 hectares are special zone, where building, felling, quarrying and picking listed alpine plants need a permit, and 14,089 hectares are ordinary zone. The Ogunuma wetland, famous for its daylilies, is a natural monument, and the Goshikinuma and Kamanuma ponds and Ōtori-ike are designated lakes where discharging waste water is controlled. A vehicle-restriction area covers 635 hectares round Jododaira.",
+    "Three of the park's volcanoes — Azuma, Adatara and Bandai — are watched around the clock by the Japan Meteorological Agency, and areas near their craters close when the eruption alert level rises. The scenic roads over the volcanoes, the Bandai-Azuma Skyline, Bandai-Azuma Lakeline and Bandaisan Gold Line, close in winter. The Ministry reviewed the Bandai-Azuma-Inawashiro area's boundaries and plan in February 2025."
+  ],
+  "sights": [
+    {
+      "name": "Goshikinuma (五色沼)",
+      "note": "A cluster of ponds left by the 1888 eruption, each a different blue, green or rust; a path of about four kilometres links them from the Urabandai Visitor Center.",
+      "location": [
+        37.651,
+        140.065
+      ]
+    },
+    {
+      "name": "Mount Bandai (磐梯山)",
+      "note": "A volcano whose 1888 eruption tore away its north side. Trails climb to the top, past the raw scar of the collapse above Urabandai.",
+      "location": [
+        37.601,
+        140.072
+      ]
+    },
+    {
+      "name": "Jododaira and the Witch's Eye (浄土平・魔女の瞳)",
+      "note": "A volcanic plateau at about 1,600 metres on the Bandai-Azuma Skyline, with trails up Issaikyō-zan to view the cobalt crater lake.",
+      "location": [
+        37.7405,
+        140.2402
+      ]
+    },
+    {
+      "name": "Lake Inawashiro (猪苗代湖)",
+      "note": "Japan's fourth-largest lake, called the 'sky mirror'. Tundra swans winter on it, and spray freezes on the shore in deep winter.",
+      "location": [
+        37.532,
+        140.107
+      ]
+    },
+    {
+      "name": "Ogunuma (雄国沼)",
+      "note": "A high wetland west of Bandai, a natural monument, carpeted with Nikkō-kisuge daylilies from mid-June to early July.",
+      "location": [
+        37.6198,
+        140.0027
+      ]
+    },
+    {
+      "name": "Mount Haguro (羽黒山)",
+      "note": "The first of the Dewa Sanzan, climbed through an avenue of giant cedars past a National Treasure five-storey pagoda.",
+      "location": [
+        38.705,
+        139.968
+      ]
+    },
+    {
+      "name": "Ōasahi-dake (大朝日岳)",
+      "note": "The 1,870-metre high point of the Asahi range, usually climbed as part of a traverse of two or three nights or more.",
+      "location": [
+        38.261,
+        139.922
+      ]
+    },
+    {
+      "name": "Iide-san (飯豊山)",
+      "note": "The 2,105-metre main peak of the Iide range, with a shrine on top and flower meadows along gentle ridges at the end of hard approaches.",
+      "location": [
+        37.855,
+        139.707
+      ]
+    },
+    {
+      "name": "Urabandai Visitor Center",
+      "note": "On the Goshikinuma path in Urabandai, with information on nature, culture and current trail conditions.",
+      "location": [
+        37.656,
+        140.092
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Jododaira Visitor Center",
+      "note": "At Jododaira on the Bandai-Azuma Skyline, for the Azuma volcanoes. Closed from mid-November to early April with the road.",
+      "location": [
+        37.723,
+        140.255
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Mount Gassan Visitor Center",
+      "note": "At Mount Haguro, with displays on the nature and climate of Dewa Sanzan.",
+      "location": [
+        38.688,
+        139.983
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Yamagata Prefectural Nature Museum",
+      "note": "In the beech forest on Gassan's eastern side at Nishikawa, with trails for watching plants and birds.",
+      "location": [
+        38.504,
+        139.998
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Urabandai, north of Mount Bandai, by bus from Inawashiro Station",
+      "Jododaira, on the Bandai-Azuma Skyline from Fukushima",
+      "Mount Haguro and Gassan, from Tsuruoka",
+      "The Asahi range trailheads, from Tsuruoka, Ōe or Oguni",
+      "The Iide range trailheads, from the Ban'etsu West Line or the Yonesaka Line"
+    ],
+    "reservations": "No reservation is needed to enter the park. Some Iide trailhead buses must be booked, and many buses run only in summer. Check before you go.",
+    "permits": [
+      "No permit is needed for the park's trails; crater areas on Azuma, Adatara and Bandai close when a volcano's alert level rises"
+    ],
+    "camping": [
+      "Campgrounds around Lake Hibara and the Urabandai lakes"
+    ],
+    "lodging": [
+      "Urabandai's lakeside villages",
+      "Hot-spring towns round the Azuma and Adatara volcanoes: Tsuchiyu, Takayu, Dake, Shirabu and Ubayu",
+      "Mountain huts on the Asahi and Iide traverses"
+    ],
+    "seasonalClosures": [
+      "The Bandai-Azuma Skyline, Bandai-Azuma Lakeline and Bandaisan Gold Line close in winter, generally from mid-November to mid-April",
+      "Jododaira Visitor Center closes while the Skyline is closed",
+      "Buses to the Azuma mountains do not run in winter"
+    ],
+    "seasonalClosureMonths": [
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": "Snow lies deep in winter: Gassan's beech forests are still under snow when they come into leaf in late May, and the snowfields last into summer, when Gassan has summer skiing. The alpine flowers of the Asahi and Iide ranges bloom in July and August, and the Ogunuma daylilies from mid-June to early July. Autumn colour is the high season round the Urabandai lakes and on the Skyline. In deep winter Lake Hibara freezes for ice fishing and spray ice coats the shore of Lake Inawashiro.",
+  "directions": "For Bandai and Urabandai, take the Tohoku Shinkansen to Kōriyama (about 80 minutes from Tokyo) and the JR Ban'etsu West Line to Inawashiro, then a bus to Goshikinuma; for Jododaira and the Azuma range, Fukushima Station (about 95 minutes). For Dewa Sanzan, take the Joetsu Shinkansen to Niigata and the Inaho limited express to Tsuruoka (about two hours), or fly from Tokyo Haneda to Shonai (about an hour), then Shōnai Kōtsū buses. The Asahi and Iide trailheads are reached by local lines and buses from Yamagata, Yonezawa and Niigata, many seasonal. A car is the easiest way round.",
+  "chronology": [
+    {
+      "year": "c. 300,000 years ago",
+      "text": "Eruptions begin to build Mount Bandai."
+    },
+    {
+      "year": "1888",
+      "text": "On 15 July Mount Bandai's north side collapses in an eruption, burying villages and damming the lakes of Urabandai."
+    },
+    {
+      "year": "1950",
+      "text": "Bandai-Asahi National Park is designated on 5 September."
+    },
+    {
+      "year": "1966",
+      "text": "The five-storey pagoda on Mount Haguro is designated a National Treasure."
+    },
+    {
+      "year": "1971",
+      "text": "Kamanuma is designated a protected lake, where discharging waste water is controlled."
+    },
+    {
+      "year": "1990",
+      "text": "A vehicle-restriction area is designated round Jododaira."
+    },
+    {
+      "year": "2025",
+      "text": "The boundaries and plan of the Bandai-Azuma-Inawashiro area are revised in the seventh review."
+    }
+  ],
+  "safety": [
+    "Azuma, Adatara and Bandai are active volcanoes monitored by the Japan Meteorological Agency. Check the eruption alert level, keep out of closed areas, and do not linger where volcanic gas collects in hollows.",
+    "Asiatic black bears (tsukinowaguma) live in the park's forests. Make noise, carry bear spray, and read the bear advice at the visitor centres.",
+    "The Asahi and Iide ranges are remote, with long approaches, late snowfields and fast-changing weather. Plan multi-day traverses carefully and carry winter gear early and late in the season.",
+    "Mountain roads over the volcanoes close at short notice in bad weather and for the winter."
+  ],
+  "regulations": [
+    "Do not pick alpine plants; listed species such as the Iide-rindō are protected throughout the special zones.",
+    "Picking any plant, collecting fallen branches, catching animals or lighting a fire in the special protection zone needs a permit.",
+    "Off-road vehicles and snowmobiles are barred from the Jododaira vehicle-restriction area.",
+    "Dewa Sanzan's shrines are active places of worship; follow the rules posted at each."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-mountains",
+    "theme-alpine",
+    "theme-hot-springs",
+    "theme-deciduous-forest",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:Aizuwakamatsu and Goshikinuma - Goshikinuma7492.jpg",
+      "caption": "One of the Goshikinuma ponds in Urabandai",
+      "altText": "A vividly coloured pond edged by forest"
+    },
+    {
+      "file": "File:Bandai-Landslide1.jpg",
+      "caption": "The collapse scar of the 1888 eruption on Mount Bandai",
+      "altText": "A steep, bare amphitheatre torn into the side of a mountain"
+    },
+    {
+      "file": "File:山形自動車道からの湯殿山・姥ヶ岳・月山.jpg",
+      "caption": "Yudono, Ubagatake and Gassan of Dewa Sanzan",
+      "altText": "A long, snow-streaked mountain ridge above green hills"
+    },
+    {
+      "file": "File:Mt. Higashi-azuma.JPG",
+      "caption": "Higashi-Azuma in the Azuma range",
+      "altText": "A rounded volcanic mountain above alpine shrubs"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bandai-Asahi National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/bandai-asahi/"
+    },
+    {
+      "title": "磐梯朝日国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/bandai/index.html"
+    },
+    {
+      "title": "磐梯朝日国立公園 見どころ・施設 — 国立公園に、行ってみよう！（環境省）",
+      "url": "https://www.env.go.jp/nature/nationalparks/list/bandai-asahi/spot/"
+    },
+    {
+      "title": "国立公園一覧 — 環境省",
+      "url": "https://www.env.go.jp/park/parks/index.html"
+    },
+    {
+      "title": "中央環境審議会 自然公園等小委員会（第52回）— 環境省",
+      "url": "https://www.env.go.jp/council/12nature/_52_1.html"
+    },
+    {
+      "title": "自然公園法（昭和32年法律第161号）— e-Gov法令検索",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000161"
+    },
+    {
+      "title": "火山の知識（常時観測火山）— 気象庁",
+      "url": "https://www.jma.go.jp/jma/kishou/know/kazan/vol_know.html"
+    },
+    {
+      "title": "Mount Bandai — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mount_Bandai"
+    },
+    {
+      "title": "磐梯山 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/磐梯山"
+    },
+    {
+      "title": "磐梯朝日国立公園 概要（公園区域の基礎情報・計画変更などの経緯）— 環境省",
+      "url": "https://www.env.go.jp/park/bandai/intro/index.html"
+    },
+    {
+      "title": "Explore Bandai-Asahi — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/bandai-asahi/explore/"
+    },
+    {
+      "title": "How to get there | Bandai-Asahi — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/bandai-asahi/how-to-get-there/"
+    }
+  ]
+}

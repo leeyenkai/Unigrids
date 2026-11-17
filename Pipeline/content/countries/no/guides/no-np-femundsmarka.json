@@ -1,0 +1,239 @@
+{
+  "placeID": "no-np-femundsmarka",
+  "contentVersion": 1,
+  "summary": "Boulder fields, moraine ridges and countless lakes east of the great lake Femunden, running to the Swedish border: a dead-ice landscape of gnarled old pines and reindeer lichen, laced with rivers for canoeists and anglers. South Sámi reindeer graze free, ospreys fish the lakes, and a lake boat built in 1905 still carries walkers to the trailheads.",
+  "facts": {
+    "establishedYear": 1971,
+    "areaHectares": 57300,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Three to seven days"
+  },
+  "story": [
+    "Femundsmarka is a landscape left by melting ice. When the last ice sheet wasted away here it left dead ice behind, and the result is a rough, hummocky country of boulder fields, moraine ridges, eskers, kettle holes, lakes and streams — water alone covers more than a tenth of the park. The bedrock is a hard, nutrient-poor sandstone that weathers slowly. The terrain is mostly low and broken, but there are fells over 1,000 metres at both ends: Storviglen, 1,561 metres, in the north, and Elgåhogna, Stor-Svuku and Grøthogna in the south.",
+    "Poor rock and a dry, cold inland climate make for sparse, open vegetation. Short, twisted old pines — kraggfuru — stand over ground carpeted in lichen, with birch woods in the north and a tree line at 800 to 900 metres. Many of the species here live on very old or dead trees and are missing from ordinary production forest, among them the rare wolf lichen. That is why dead wood is protected, and why campfires may only use dry twigs.",
+    "Reindeer are a common sight. They belong to South Sámi herders, but they range free and find their own food all year. All four of Norway's large predators pass through. Along the water live mountain ducks, black-throated and red-throated divers and the osprey, the park's signature bird; many of them are easily disturbed while nesting.",
+    "The landscape bears the marks of several hundred years of South Sámi reindeer herding, still active today, and the park holds Norway's southernmost Sámi settlement. Older still are trapping pits and Stone Age sites; later came falcon catching in the 1600s and 1700s, timber floating and charcoal burning for the Røros copper works, and permanent farms from the 1700s. Simple unlocked cabins built for loggers and timber floaters are still free to use. The park was created on 9 July 1971, and with the protected areas on the Swedish side it forms the largest continuous wilderness in southern Scandinavia."
+  ],
+  "howItWorks": [
+    "The right to roam, allemannsretten, applies: you may walk anywhere in the outfield, camp for two nights in one place without asking — longer in remote country — at least 150 metres from a house or cabin, and pick berries and mushrooms. But Femundsmarka has stricter camping rules than most parks: no camping on islands, no tent in one place for more than a week without permission, no building of lean-tos, and no leaving boats or canoes behind. All vegetation, including dead trees, is protected; only dry twigs may be burned. From 15 April to 15 September it is forbidden across Norway to light a fire in or near forest and other open country unless the municipality has allowed it or a fire plainly cannot spread; check with Engerdal or Røros before you go. A small twig stove is the way to cook here.",
+    "Cycling and riding are not allowed, though packhorses are; the park board allows cycling only on the tracks Feragen–Ljøsnåvollen, Langen–Nordvika–Svartvika and Elgå–Svukuriset. Motor traffic on land and water, and aircraft below 300 metres, is forbidden, as are motors on ice drills, saws, model aircraft and model boats; under Miljødirektoratet's rule, drones may not take off in a national park or be flown into one without the park board's permission. Walking trips by trekking associations, schools and voluntary groups are allowed; other organised activities need permission.",
+    "Hunting follows the game law, but traps may not be used; fishing follows the freshwater fishing law and needs the ordinary licence. All rubbish must be carried out. Dogs must be on a lead from 1 April to 20 August under the national dog law. Wildlife must not be disturbed — keep your distance from nesting divers and ospreys, and from reindeer during calving. The park board asks walkers to keep out of the calving grounds around Svuku–Grøtådalen and Elgåhogna–Salsfjellet from 25 April to 31 May, and out of the bird nesting area at Røvoltjønnan from 15 May to 1 July."
+  ],
+  "sights": [
+    {
+      "name": "Storviglen",
+      "note": "The park's highest fell, 1,561 metres, at its northern edge.",
+      "location": [
+        62.5387,
+        12.0603
+      ]
+    },
+    {
+      "name": "Røa",
+      "note": "The river through the heart of the park's lake country, in a landscape where water covers more than a tenth of the ground.",
+      "location": [
+        62.353,
+        12.017
+      ]
+    },
+    {
+      "name": "Stor-Svuku",
+      "note": "Svahke in South Sámi. A fell of 1,421 metres in the south of the park, climbed from the DNT cabin Svukuriset.",
+      "location": [
+        62.256,
+        12.063
+      ]
+    },
+    {
+      "name": "Elgåhogna",
+      "note": "At 1,460 metres the highest of the southern fells, near Elgå.",
+      "location": [
+        62.149,
+        12.065
+      ]
+    },
+    {
+      "name": "Grøthogna",
+      "note": "A 1,401-metre fell near the Swedish border, rising above the river Røa.",
+      "location": [
+        62.212,
+        12.227
+      ]
+    },
+    {
+      "name": "Besøkssenter nasjonalpark Femundsmarka og Gutulia",
+      "note": "The authorised visitor centre at Elgå, the southern stop of the lake boat, in a building inspired by Sámi tradition. Open through the summer, with shorter hours the rest of the year.",
+      "location": [
+        62.165,
+        11.944
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Elgå, in the south, with the visitor centre",
+      "Synnervika, at the northern end of Femunden",
+      "The lake boat MS Fæmund II, which runs between Synnervika and Elgå with stops along the way that give access to different parts of the park",
+      "Valdalen in the south and Grövelsjön on the Swedish side",
+      "Røros, the main gateway from the north"
+    ],
+    "reservations": "No booking or fee for the park. Check the lake boat's season and timetable before you go. Trekking-association cabins are run by the association.",
+    "permits": [
+      "Organised activities other than walking trips by trekking associations, schools and voluntary groups need permission",
+      "Drones and any motor use need a permit"
+    ],
+    "camping": [
+      "Wild camping under the right to roam — but never on islands, and no longer than a week in one place without permission",
+      "Simple unlocked cabins (åpne buer) built for loggers, free to use; 17 lie inside the protected area, most of them kept up by Statskog",
+      "Norwegian Trekking Association cabins: self-service Røvollen inside the park, and staffed Svukuriset just outside it"
+    ],
+    "lodging": [
+      "Elgå, Røros and the farms and lodges around Femunden"
+    ],
+    "seasonalClosures": [
+      "The DNT cabin Røvollen is closed from 1 May to 10 June for reindeer calving; check before you go"
+    ]
+  },
+  "weather": "Femundsmarka has a dry, cold inland climate on poor soils, which is why the vegetation is so sparse. The park can be enjoyed all year, on skis as well as on foot, but July and August are the most popular months, when the lakes are open for canoeing and fishing and the boat runs on Femunden.",
+  "directions": "The main gateways are Røros, in the north, and Elgå, in the south. Røros lies on the Røros Line between Hamar and Trondheim. From Synnervika, at the northern end of Femunden, the lake boat MS Fæmund II carries walkers and canoes south to Elgå, stopping at landings along the way. The park can also be reached from Valdalen in the south and from Grövelsjön in Sweden.",
+  "chronology": [
+    {
+      "year": "Stone Age",
+      "text": "Hunters leave dwelling sites and trapping pits around the lakes."
+    },
+    {
+      "year": "1600s–1700s",
+      "text": "Falcons are caught in the area for falconry."
+    },
+    {
+      "year": "Copper-works era",
+      "text": "Timber floating and charcoal burning for the Røros copper works leave their mark on the forests."
+    },
+    {
+      "year": "1700s",
+      "text": "Permanent farms are settled in the area."
+    },
+    {
+      "year": "1905",
+      "text": "The lake boat Fæmund II begins sailing on Femunden; it still carries walkers and their gear today."
+    },
+    {
+      "year": "1971",
+      "text": "Femundsmarka National Park is created on 9 July."
+    },
+    {
+      "year": "2003",
+      "text": "The park's regulation is rewritten on 21 February, with boundaries redrawn on a 2002 map."
+    }
+  ],
+  "safety": [
+    "Boulder fields are slow, ankle-twisting going; plan shorter days than the distance suggests.",
+    "Lakes and rivers are cold even in summer. Canoeists should wear buoyancy aids, keep close to shore in wind, and scout rapids before running them.",
+    "There are marked trails and DNT cabins, but much of the park is trackless; carry map and compass.",
+    "Bears, wolves, lynx and wolverines all pass through. Keep a clean camp and never approach a den."
+  ],
+  "regulations": [
+    "No camping on islands; no tent in one place for more than a week without permission; no lean-tos.",
+    "Burn only dry twigs — never cut or break standing or fallen trees, alive or dead.",
+    "No riding, and no cycling except on the tracks Feragen–Ljøsnåvollen, Langen–Nordvika–Svartvika and Elgå–Svukuriset; packhorses are allowed.",
+    "No motor traffic or aircraft below 300 metres; drones need a permit.",
+    "Take all rubbish out. No open fires near forest from 15 April to 15 September unless the municipality allows it; dogs on a lead from 1 April to 20 August."
+  ],
+  "themes": [
+    "theme-wetland",
+    "theme-mountains",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Femundsmarka I.jpg",
+      "caption": "Lake and pine country in the heart of Femundsmarka",
+      "altText": "A calm lake among low, sparsely wooded hills"
+    },
+    {
+      "file": "File:Stor-Svuku Femundsmarka.jpg",
+      "caption": "The four tops of Stor-Svuku, in the south of the park",
+      "altText": "A long fell with several rounded summits above pine forest"
+    },
+    {
+      "file": "File:Grothogna Femundsmarka.jpg",
+      "caption": "Grøthogna above the river Røa",
+      "altText": "A rounded mountain rising beyond a winding river and open pine woods"
+    },
+    {
+      "file": "File:Blockfield in Femundsmarka national park - Ida Brennodden.png",
+      "caption": "A boulder field, typical of Femundsmarka's dead-ice landscape",
+      "altText": "A slope covered in jumbled grey boulders with scattered pines"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Femundsmarka nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/femundsmarka/"
+    },
+    {
+      "title": "Femundsmarka nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00001943"
+    },
+    {
+      "title": "Forskrift om Femundsmarka nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/1971-07-09-6"
+    },
+    {
+      "title": "Femundsmarka nasjonalpark — official website",
+      "url": "https://femundsmarkanasjonalpark.no/"
+    },
+    {
+      "title": "Om nasjonalparken — Femundsmarka nasjonalpark",
+      "url": "https://femundsmarkanasjonalpark.no/om-nasjonalparken/"
+    },
+    {
+      "title": "Hytter og åpne buer — Femundsmarka nasjonalpark",
+      "url": "https://femundsmarkanasjonalpark.no/hyttene/"
+    },
+    {
+      "title": "Sårbare perioder og områder — Femundsmarka nasjonalpark",
+      "url": "https://femundsmarkanasjonalpark.no/sarbare-perioder-og-omrader/"
+    },
+    {
+      "title": "MS «Fæmund II» — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/MS_%C2%ABF%C3%A6mund_II%C2%BB"
+    },
+    {
+      "title": "Stor-Svuku — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/Stor-Svuku"
+    },
+    {
+      "title": "Femundsmarka National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Femundsmarka_National_Park"
+    },
+    {
+      "title": "Femundsmarka nasjonalpark — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/Femundsmarka_nasjonalpark"
+    },
+    {
+      "title": "Regler for droner i naturen — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/ansvarsomrader/vernet-natur/regler-for-droner-i-naturen/"
+    },
+    {
+      "title": "Lov om friluftslivet (friluftsloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/1957-06-28-16"
+    },
+    {
+      "title": "Forskrift om brannforebygging — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Lov om forsvarlig hundehold (hundeloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+    },
+    {
+      "title": "Sight locations — Kartverket place names (stedsnavn) and OpenStreetMap",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

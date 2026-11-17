@@ -1,0 +1,234 @@
+{
+  "placeID": "no-np-seiland",
+  "contentVersion": 1,
+  "summary": "An alpine island off the coast of West Finnmark, Seiland — Sievju in Sámi — rises from the sea to two glaciers, the northernmost in Scandinavia. The park covers a little over half the island: steep fjords, boulder fields, flower-rich slopes kept open by generations of haymaking, and summer pasture for reindeer. There are no marked paths or open huts inside, and you arrive by boat.",
+  "facts": {
+    "establishedYear": 2006,
+    "areaHectares": 31630,
+    "bestSeasons": [
+      "summer"
+    ],
+    "suggestedTime": "One day from Hønseby or Altneset; three to five days to cross the park"
+  },
+  "story": [
+    "Seiland is the second-largest island in Finnmark, and the eastern end of Norway's alpine coast: a mass of peaks above 800 metres cut by fjords on every side, rising to Seilandstuva at 1,078 metres. Its two glaciers, Seilandsjøkelen and Nordmannsjøkelen, are the northernmost in Scandinavia and lie lower above the sea than any others there. They are shrinking fast; Nordmannsjøkelen has already broken into separate patches. Much of the rock is magma that crystallised tens of kilometres underground and was later pushed to the surface, which has made the island well known among geologists.",
+    "Below the ice, meltwater from Seilandsjøkelen collects in Melkevatna, a plateau of milky turquoise lakes, and zigzags down Melkelva along faults in the bedrock to the sea. The mountains in the south of the park are rich in nutrients and hold rare alpine plants that are retreating elsewhere in Norway as the climate warms. White-tailed and golden eagles nest on the sea cliffs with gyrfalcon, merlin and rough-legged buzzard. Apart from reindeer and sheep there are no large mammals, but otters fish along the shore and hares live all over the island.",
+    "People have lived in almost every fjord and cove of Seiland since the Stone Age, most of them Sámi, fishing first and keeping sheep, a few goats and cows. For winter fodder they cut grass on the steep slopes above the fjords, rolling it down to the boats in net bags; in Store Bekkarfjord alone nearly 200 narrow hay strips were measured and registered in 1783. In November 1944 the retreating German army burned almost every building on the island. Many places were rebuilt, but the last fjords inside today's park were abandoned in the 1960s.",
+    "The reindeer still come. Three herding groups (siidas) use Seiland as spring, summer and autumn pasture: the animals once swam the sound, and now cross by barge in late April or by trailer on the ferry. They calve on the island in May and June and leave again in October. The national park was created in 2006 to protect this alpine coastal landscape and its cultural traces, and it has no marked paths or open huts — it has been called Norway's most inaccessible national park."
+  ],
+  "howItWorks": [
+    "The right to roam (allemannsretten) applies: you may walk and ski where you like, pick berries and mushrooms, and camp. Hunting and fishing follow the same rules as elsewhere in Finnmark's outfield, with licences from the Finnmark Estate (Finnmarkseiendommen, FeFo). From 15 April to 15 September national fire law forbids lighting a fire in or near woodland and other open country unless it plainly cannot spread; the park board asks you to use existing fire sites, bring your own wood and burn only fallen twigs, since cutting trees is banned and there is little wood to find. You may pocket a small stone, but not larger stones or quantities.",
+    "Motor traffic is banned on land and fresh water, and so are flying lower than 300 metres and landing a helicopter; boats with engines may use the sea. Motorised model aircraft — drones included — are banned. Dogs must be kept on a lead from 1 April to 20 August and under control at all times. Cycling, large events and groups staying several nights in one place need permission from the Seiland/Sievjju National Park Board.",
+    "Reindeer calve on the island in May and June, when the females are worn from winter. If you meet them in spring, stop and choose a route that will not scare them — turn back if you must, because a female frightened from her calf can lose it. If a herd comes towards you, crouch and wait for it to pass. The herders gather the animals in September for the October crossing to the mainland, and in some years in July for calf marking."
+  ],
+  "sights": [
+    {
+      "name": "Seilandsjøkelen",
+      "note": "The island's largest glacier, lying unusually low, whose meltwater turns the lakes below it milky turquoise.",
+      "location": [
+        70.419,
+        23.228
+      ]
+    },
+    {
+      "name": "Nordmannsjøkelen",
+      "note": "A glacier now split into separate patches, listed on the Global Glacier Casualty List. Crevasses ring part of Seilandstuva.",
+      "location": [
+        70.454,
+        23.084
+      ]
+    },
+    {
+      "name": "Seilandstuva",
+      "note": "Seiland's highest point at 1,078 metres: a long, demanding ascent, usually from Kufjordbotn. Struve's surveyors built its cairn in 1847 for the meridian arc.",
+      "location": [
+        70.446,
+        23.096
+      ]
+    },
+    {
+      "name": "Melkevatna",
+      "note": "A hummocky plateau of glacier-fed lakes south of Seilandsjøkelen, drained by Melkelva. There is no bridge over the river, and fording it is dangerous.",
+      "location": [
+        70.378,
+        23.257
+      ]
+    },
+    {
+      "name": "Store Bekkarfjord",
+      "note": "A fjord of steep, grassy hay slopes with a public floating jetty, a fire site and an artwork telling the haymakers' story. No public transport; several firms run boat trips.",
+      "location": [
+        70.337,
+        23.324
+      ]
+    },
+    {
+      "name": "Bårdfjorden",
+      "note": "An abandoned fjord settlement on the west side; Bårdfjorddalen and Pederdalen offer relatively easy walking.",
+      "location": [
+        70.405,
+        22.934
+      ]
+    },
+    {
+      "name": "Jøfjorden",
+      "note": "A long fjord that almost cuts the island in two; from Breihovddalen above it a route climbs towards Seilandsjøkelen.",
+      "location": [
+        70.484,
+        23.26
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Hønseby, on the north side — food shop, an exhibition about the park, and a marked 9-kilometre path to the park boundary",
+      "Altneset, on the south side — marked day routes to Vardefjellet, Gryttind and a fore-top of Piggfjellet",
+      "Store Bekkarfjord, inside the park, by hired boat to the summer jetty"
+    ],
+    "reservations": "No permit is needed to enter the park. Many departures of the fast boat to Altneset must be booked in advance, and so must lodging and boat hire between Altneset and Hakkstabben; there is no food shop on southern Seiland.",
+    "permits": [
+      "Cycling, large events and groups staying several nights in one place need permission from the Seiland/Sievjju National Park Board",
+      "Hunting and fishing licences from the Finnmark Estate (FeFo)"
+    ],
+    "camping": [
+      "Wild camping only: there are no marked paths or open huts inside the park, so bring a tent and everything you need"
+    ],
+    "lodging": [
+      "Hønseby, on northern Seiland",
+      "Rooms and cabins to book between Altneset and Hakkstabben",
+      "Hammerfest and Alta on the mainland"
+    ],
+    "seasonalClosures": [
+      "The floating jetty in Store Bekkarfjord is in place from 23 June until October or November",
+      "The summer paths outside the park are under snow from about October or November to May or June, and higher ground inside the park often holds snow until mid-June"
+    ]
+  },
+  "weather": "Seiland is mostly visited between June and September. Snow often lies on the higher ground until the middle of June, and ice can stay on the mountain lakes into the second half of the month. Hammerfest, just north of the island, has short, cool summers and long, cold winters that are mild for the latitude — about −3.5 °C in January and 11 °C in July on average — and the midnight sun stays up from mid-May to the end of July. Sea fog, wind and snow can close in on the tops: Struve's surveyors needed five attempts to measure from Seilandstuva. In winter there are no tracked or marked routes; check avalanche danger on varsom.no and go with a local operator unless you know northern coastal ski touring.",
+  "directions": "For northern Seiland, take the car ferry from Strømsnes, nine kilometres south of Hammerfest, to Kjerringholmen; from there a narrow 19-kilometre road with wide views runs to Hønseby. For southern Seiland, take the fast boat or combined boat from Alta or Storekorsnes to Altneset, booking ahead where required; a small road continues eight kilometres south to Hakkstabben. Timetables are on snelandia.no. There is no public transport to the fjords inside the park, but several firms run boat trips to Store Bekkarfjord.",
+  "chronology": [
+    {
+      "year": "Stone Age",
+      "text": "People settle the fjords and coves of Seiland; traces of settlement survive from this time on."
+    },
+    {
+      "year": "1783",
+      "text": "Nearly 200 private hay strips are measured and registered on the steep slopes of Store Bekkarfjord."
+    },
+    {
+      "year": "1847",
+      "text": "Surveyors for Struve's meridian arc build the cairn on Seilandstuva; sea fog, wind and snow make them try five times before they can take their measurements."
+    },
+    {
+      "year": "1944",
+      "text": "In November the retreating German army burns almost every building on the island."
+    },
+    {
+      "year": "1960s",
+      "text": "The last permanently settled fjords inside today's park, among them Bårdfjorden and Jøfjorden, are abandoned."
+    },
+    {
+      "year": "2006",
+      "text": "Seiland National Park is created on 8 December, covering 316 square kilometres, 9.6 of them sea."
+    }
+  ],
+  "safety": [
+    "The terrain is harder than the map suggests: loose scree, impassable boulder fields, cliffs and rivers that cannot be crossed. Ask local people about your route before you set out. It is said to be hard to get lost on Seiland, but easy to get stuck.",
+    "There is no bridge over Melkelva and fording it is very risky. Plan which side of the river you want to walk on and start on that side.",
+    "Nordmannsjøkelen has crevasses around parts of Seilandstuva. Do not cross the ice without glacier equipment and experience.",
+    "In winter, check the avalanche forecast and slope-steepness map on varsom.no, and do not ski alone in the mountains without experience of northern coastal terrain."
+  ],
+  "regulations": [
+    "Motor traffic on land and fresh water, flying below 300 metres, helicopter landings and drones are all banned.",
+    "Dogs must be on a lead from 1 April to 20 August.",
+    "Cycling needs permission from the park board.",
+    "Trees may not be cut; use fallen twigs or bring your own firewood.",
+    "Litter is banned; where groups stay over time, take toilet paper out too."
+  ],
+  "themes": [
+    "theme-glaciers",
+    "theme-islands",
+    "theme-coastal",
+    "theme-mountains",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Seiland2.JPG",
+      "caption": "The rocky shore of Seiland near Bårdfjorden",
+      "altText": "A stony beach below steep, bare mountain slopes"
+    },
+    {
+      "file": "File:Seiland1.JPG",
+      "caption": "The view from Bårdfjorddalen",
+      "altText": "A green valley opening towards a fjord between mountains"
+    },
+    {
+      "file": "File:Utsikt mot Seiland og Stjernøya.jpg",
+      "caption": "Seiland and Stjernøya seen across the water from the mainland",
+      "altText": "Mountainous islands across a wide stretch of sea"
+    },
+    {
+      "file": "File:Samit sievjjus.JPG",
+      "caption": "Sámi on Seiland, drawn in 1838",
+      "altText": "An old drawing of people by a turf hut on a coast"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Seiland nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/seiland/"
+    },
+    {
+      "title": "Seiland nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00002436"
+    },
+    {
+      "title": "Forskrift om vern av Seiland nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/forskrift/2006-12-08-1364"
+    },
+    {
+      "title": "Om nasjonalparken — Seiland/Sievju nasjonalparkstyre",
+      "url": "https://seilandnasjonalpark.no/om-nasjonalparken/"
+    },
+    {
+      "title": "Opplev Seiland — Seiland/Sievju nasjonalparkstyre",
+      "url": "https://seilandnasjonalpark.no/opplev-seiland/"
+    },
+    {
+      "title": "Landskap og geologi — Seiland/Sievju nasjonalparkstyre",
+      "url": "https://seilandnasjonalpark.no/landskap-og-geologi/"
+    },
+    {
+      "title": "Historie — Seiland/Sievju nasjonalparkstyre",
+      "url": "https://seilandnasjonalpark.no/historie/"
+    },
+    {
+      "title": "Reindrift — Seiland/Sievju nasjonalparkstyre",
+      "url": "https://seilandnasjonalpark.no/reindrift/"
+    },
+    {
+      "title": "Planter og dyreliv — Seiland/Sievju nasjonalparkstyre",
+      "url": "https://seilandnasjonalpark.no/planter-og-dyreliv/"
+    },
+    {
+      "title": "Forskrift om brannforebygging § 3 — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Seiland National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Seiland_National_Park"
+    },
+    {
+      "title": "Seiland nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Seiland_nasjonalpark"
+    },
+    {
+      "title": "Hammerfest — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hammerfest"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

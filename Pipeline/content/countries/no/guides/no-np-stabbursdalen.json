@@ -1,0 +1,222 @@
+{
+  "placeID": "no-np-stabbursdalen",
+  "contentVersion": 1,
+  "summary": "The valley of the Stabburselva on the west side of Porsangerfjorden, home to the northernmost pine forest in the world — crooked, slow-grown trees, some more than 500 years old. Above the forest lie open plateaus and the bare gáisá summits; in it, the lush river meadows of Lompola and a salmon river running up to Njáhkagorži. In Northern Sámi the park is Rávttošvuomi álbmotmeahcci.",
+  "facts": {
+    "establishedYear": 1970,
+    "areaHectares": 74690,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "One day for Lompola and Stabbursfossen; four to five days for the route from Okselv"
+  },
+  "story": [
+    "Stabbursdalen lies on the west side of Porsangerfjorden, Norway's fourth-longest fjord. Through it runs the Stabburselva, a river of about 60 kilometres born of meltwater at the end of the last ice age. In its lower valley the meltwater laid down sand and gravel that the rising land has lifted into a broad terrace 60 to 70 metres above the sea; inside the forest the valley closes into a gorge of falls, rapids and rock scoured smooth. To the south-east stand the gáisát, bare mountains over 1,000 metres that rise high above the otherwise flat landscape of Finnmark.",
+    "Between 7,500 and 5,000 years ago, when the climate was warmer, pine spread over large areas of Finnmark. As it cooled the forest drew back, and in sheltered Stabbursdalen it survives as the northernmost pine forest in the world. The trees grow slowly and are shaped by hard weather; some of the crooked old ones are more than 500 years old. Siberian jay, red squirrel and capercaillie are among the animals living here at the northern edge of their range, and lynx, wolverine, golden eagle and gyrfalcon hunt the valley.",
+    "In the middle of the dry pine forest lies Lompola, where the river slows into a chain of winding pools and sedge marsh — unusually lush this far north. For the Sea Sámi of Porsanger the valley was part of the year's living: hunting, fishing, and cutting sedge in Lompola for winter fodder. Trapping pits remain from the hunting of wild reindeer, which gave way to reindeer herding in the 1600s. Herders still keep their reindeer here from April to November, and for some siidas without coastal pasture Stabbursdalen is home for most of the year.",
+    "The national park was created in 1970 to protect the forest around the river, about 98 square kilometres. In 2002 it was enlarged to take in the plateaus, lakes and gáisát around it, and it now covers 747 square kilometres. The Stabburselva is still a river for salmon fishers: salmon run up to Njáhkagorži, and above that trout are fished in the river and in the mountain lakes."
+  ],
+  "howItWorks": [
+    "The right to roam (allemannsretten) applies: you may walk or ski where you like and pitch a tent overnight, and you take your rubbish home. From 15 April to 15 September national fire law forbids lighting a fire in or near woodland and other open country unless it plainly cannot spread or the municipality allows it. The park's own rule is stricter about pine: wood may be used sparingly for a campfire, but never the dead standing pines (tørrfuru), however tempting.",
+    "Motor traffic is banned on land and water, and so is flying lower than 300 metres, except for aircraft approaching Banak airport, the Defence Forces at the Halkavarre range, and reindeer herding. Motorised model aircraft, drones included, are banned, and so are electric bicycles; ordinary bicycles are allowed only on routes approved in the park's management plan. Dogs must be kept on a lead from 1 April to 20 August.",
+    "Fishing and hunting need licences. Fishing licences for the Stabburselva are sold at Stabbursnes Naturhus on behalf of the landowners' association, and anglers must disinfect their gear. Reindeer are in the valley from April to November: give them room, and keep dogs close."
+  ],
+  "sights": [
+    {
+      "name": "Lompola",
+      "note": "The slow-flowing stretch of the Stabburselva, a chain of winding pools and sedge marsh inside the pine forest — unusually lush this far north.",
+      "location": [
+        70.148,
+        24.762
+      ]
+    },
+    {
+      "name": "Stabbursfossen",
+      "note": "A waterfall on the Stabburselva, 5.5 kilometres from the Lombolaveien car park on a blue-marked path through pine, birch and open plain. Watch for salmon jumping.",
+      "location": [
+        70.126,
+        24.687
+      ]
+    },
+    {
+      "name": "Stuorra Biŋalvárri",
+      "note": "A 528-metre top 7.5 kilometres from the car park on a red-marked path, from pine forest past Lompola to bare mountain, with a view over the valley and Porsangerfjorden.",
+      "location": [
+        70.11,
+        24.699
+      ]
+    },
+    {
+      "name": "Čohkarášša",
+      "note": "The highest of the bare gáisá summits in the middle of the park, standing high above the flat plateaus of Finnmark.",
+      "location": [
+        69.964,
+        24.554
+      ]
+    },
+    {
+      "name": "Upper Stabburselva",
+      "note": "Above Njáhkagorži, where the salmon stop, the river runs on through open plateau; trout are fished here and in the mountain lakes.",
+      "location": [
+        69.918,
+        24.215
+      ]
+    },
+    {
+      "name": "Stabbursnes Naturhus og Museum",
+      "note": "The park's authorised visitor centre, where the Stabburselva meets the fjord: an exhibition and film on Finnmark's nature and culture. Open all year.",
+      "location": [
+        70.179,
+        24.91
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The car park at the end of Lombolaveien, 8 kilometres from Stabbursnes Naturhus — the start of the marked paths to Rørkulpen, Stabbursfossen and Stuorra Biŋalvárri",
+      "Okselv, about 50 kilometres north of Alta on the E6 — the start of the long route over the plateau to Stabbursnes"
+    ],
+    "reservations": "No permit or booking is needed to enter the park. Opening hours at Stabbursnes Naturhus vary through the year, with daily opening in summer — check before you go.",
+    "permits": [
+      "Fishing licences for the Stabburselva, sold at Stabbursnes Naturhus",
+      "Small-game hunting needs a licence",
+      "Organised activities other than walking and skiing need permission from the park's management authority"
+    ],
+    "camping": [
+      "Wild camping under the right to roam",
+      "Bastingammen, an open turf hut with two sleeping places, on the route from Okselv",
+      "Ivarstua, an open cabin with six sleeping places, a wood stove, firewood and cooking gear"
+    ],
+    "lodging": [
+      "Lakselv, at the head of Porsangerfjorden, 20 minutes' drive away"
+    ],
+    "seasonalClosures": []
+  },
+  "weather": "Lakselv, at the head of the fjord, has a boreal climate with modest precipitation — about 380 millimetres a year — and long winters. In the 1991–2020 normals for Banak, January averages about −8 °C and July about 13 °C, with summer highs around 17 °C. In Porsanger the midnight sun lasts from 16 May to 27 July, and the polar night from 25 November to 16 January.",
+  "directions": "Stabbursnes Naturhus stands where the Stabburselva meets Porsangerfjorden, 20 minutes' drive from Lakselv, and buses run from Stabbursnes to Alta, Hammerfest and Lakselv. The marked paths start from the car park at the end of Lombolaveien, 8 kilometres from the visitor centre. The long route over the plateau starts at Okselv, about 50 kilometres north of Alta on the E6, which you can reach by car or by bus from Alta or Skaidi. Lakselv Airport, Banak, has flights to Tromsø, Alta and Kirkenes; routes change, so check before you go.",
+  "chronology": [
+    {
+      "year": "End of the last ice age",
+      "text": "Meltwater from the retreating ice carves the valley of the Stabburselva and lays down the sand and gravel of its lower terrace."
+    },
+    {
+      "year": "7,500–5,000 years ago",
+      "text": "In a warmer climate, pine forest spreads over large areas of Finnmark."
+    },
+    {
+      "year": "Before the 1600s",
+      "text": "Hunters trap wild reindeer in pits whose remains can still be seen in the park."
+    },
+    {
+      "year": "1600s",
+      "text": "Reindeer herding takes over from the hunting of wild reindeer."
+    },
+    {
+      "year": "1970",
+      "text": "Stabbursdalen National Park is created to protect about 98 square kilometres of pine forest around the river."
+    },
+    {
+      "year": "2002",
+      "text": "On 20 December the park is enlarged to about 747 square kilometres, taking in the plateaus and the gáisá mountains."
+    }
+  ],
+  "safety": [
+    "There is no mobile coverage in the park. Be an experienced walker before setting out on a long trip, and leave word of your route.",
+    "Only a few paths are marked. Carry the 1:50,000 map 'Stabbursdalen', which covers the whole area, and a compass.",
+    "Winters are long and cold, and the sun does not rise from late November to mid-January. Winter trips need full cold-weather equipment and experience."
+  ],
+  "regulations": [
+    "Motor traffic, drones and flying below 300 metres are banned.",
+    "Electric bicycles are banned; ordinary bicycles are allowed only on approved routes.",
+    "Dead standing pines may not be used for firewood.",
+    "Dogs must be on a lead from 1 April to 20 August.",
+    "Fishing needs a licence, and fishing gear must be disinfected."
+  ],
+  "themes": [
+    "theme-indigenous-heritage",
+    "theme-wetland",
+    "theme-mountains"
+  ],
+  "photos": [
+    {
+      "file": "File:Stabburselva under-Stabbursfossen.JPG",
+      "caption": "The Stabburselva below Stabbursfossen",
+      "altText": "A river running over stones through a wooded valley"
+    },
+    {
+      "file": "File:Pinus sylvestris - Furu Stabbursdalen.jpg",
+      "caption": "A pine in Stabbursdalen, the northernmost pine forest in the world",
+      "altText": "A lone, weathered Scots pine"
+    },
+    {
+      "file": "File:Stabbursdalen National Park - 7.jpg",
+      "caption": "Stabbursfossen",
+      "altText": "A waterfall on a river"
+    },
+    {
+      "file": "File:Bru Stabbursdalen.JPG",
+      "caption": "A footbridge in Stabbursdalen",
+      "altText": "A footbridge over a river"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stabbursdalen nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/stabbursdalen/"
+    },
+    {
+      "title": "Stabbursdalen nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00000067"
+    },
+    {
+      "title": "Forskrift om verneplan for Stabbursdalen, vern av Stabbursdalen nasjonalpark/Rávttošvuomi álbmotmeahcci — Lovdata",
+      "url": "https://lovdata.no/forskrift/2002-12-20-1771"
+    },
+    {
+      "title": "Stabbursnes Naturhus og Museum",
+      "url": "https://www.stabbursnes.no/"
+    },
+    {
+      "title": "Stabbursdalen nasjonalpark — Stabbursnes Naturhus og Museum",
+      "url": "https://www.stabbursnes.no/stabbursdalen-nasjonalpark/"
+    },
+    {
+      "title": "Vandring i Stabbursdalen — Stabbursnes Naturhus og Museum",
+      "url": "https://www.stabbursnes.no/vandring/stabbursdalen/"
+    },
+    {
+      "title": "Stabburselva — Stabbursnes Naturhus og Museum",
+      "url": "https://www.stabbursnes.no/jakt-og-fiske/laksefiske/stabburselva-2/"
+    },
+    {
+      "title": "Stabburselva — stabburselva.info",
+      "url": "https://www.stabburselva.info/"
+    },
+    {
+      "title": "Forskrift om brannforebygging § 3 — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Stabbursdalen National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stabbursdalen_National_Park"
+    },
+    {
+      "title": "Stabbursdalen nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Stabbursdalen_nasjonalpark"
+    },
+    {
+      "title": "Porsanger Municipality — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Porsanger_Municipality"
+    },
+    {
+      "title": "Lakselv — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lakselv"
+    },
+    {
+      "title": "Sentralt stedsnavnregister and Adresseregister — Kartverket",
+      "url": "https://ws.geonorge.no/"
+    }
+  ]
+}

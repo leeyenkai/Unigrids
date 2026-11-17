@@ -1,0 +1,261 @@
+{
+  "placeID": "jp-np-hidakasanmyaku-erimo-tokachi",
+  "contentVersion": 1,
+  "summary": "Japan's largest national park by land area, and one of its wildest: the Hidaka range, 140 kilometres of steep, glacier-carved ridges running down the middle of southern Hokkaido to the windswept point of Cape Erimo. Only a few roads cross it, and most visitors see the peaks from the Tokachi Plain, walk the flowers of Mount Apoi, or watch harbour seals on the reefs off Erimo.",
+  "facts": {
+    "establishedYear": 2024,
+    "areaHectares": 245668,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "The Hidaka Mountains were pushed up from the Neogene onwards where two continental plates collided. As they met, the crust of the eastern plate was peeled up and tipped on its side, so that rocks which formed deep underground are laid out in sequence at the surface — a rare thing anywhere in the world. Around Mount Apoi at the southern end, fresh, unweathered peridotite from the Earth's mantle comes to the surface. During the ice ages glaciers carved cirques, horns and knife-edged arêtes into the high ridges; the Nanatsunuma cirque below Poroshiri, the range's only summit over 2,000 metres, is listed among Japan's hundred geological heritage sites.",
+    "Because the range runs so far north to south and climbs from the sea to over 2,000 metres, it holds an unusual mix of plants. Its alpine flora, with flowers such as Hidaka-genge and Hidaka-kinbaisō, differs from that of other ranges, and the low dome of Mount Apoi, only 810 metres high, carries alpine plants from about 350 metres up, among them the endemic Hidaka-sō. Brown bears and sika deer live in the forests, fish owls and mountain hawk-eagles along the rivers, pikas among the rocks, and harbour seals haul out on the reefs off Cape Erimo.",
+    "Ainu people lived in the foothills long before Japanese settlers arrived in the Edo period. Nibutani, on the middle Saru River, is still one of the most important centres of Ainu culture in Hokkaido, and the Saru's headwaters reach Poroshiri, a sacred mountain whose name means 'great mountain'. Apoi and the rock stacks of Cape Enrumu feature in Ainu stories. On the coast, kelp — the local Mitsuishi or Hidaka kombu — and sea urchin are harvested every summer.",
+    "The range was protected as a quasi-national park in 1981, and Mount Apoi has been a UNESCO Global Geopark since 2015. After a large-scale theft of alpine plants from Apoi in the late 1990s, local people began patrolling the mountain, and the town of Samani and Hokkaido have since worked to restore its flowers. On 25 June 2024 the quasi-national park was enlarged and redesignated as Japan's 35th national park, taking over from Daisetsuzan as the largest."
+  ],
+  "howItWorks": [
+    "The park covers 245,668 hectares on land, almost all of it in public hands: 213,256 hectares are national land, mostly national forest, with 27,745 of public and 4,667 of private land. It touches thirteen municipalities, from the city of Obihiro and the farming towns of the Tokachi Plain on the east to Hidaka, Biratori and Samani on the west and Erimo at the southern tip. Most people see the range from the farmland of the Tokachi Plain or from the coast; inside the park are only a few roads and a great deal of roadless mountain.",
+    "Some 73,743 hectares are special protection zone, where picking any plant, collecting fallen leaves or branches, catching animals or lighting a fire all need a permit from the Minister of the Environment. Another 120,533 hectares are special zone, where building, felling, quarrying and picking listed alpine plants need a permit, and 51,392 hectares are ordinary zone. Other laws protect particular places: the alpine plant community of Mount Apoi is a Special Natural Monument, the primeval forest at the head of the Saru River and the native five-needle pines of Mount Horoman are natural monuments, and Hokkaido has made Apoi and Horoman habitat reserves for the Hidaka-sō, with restricted entry.",
+    "For a visitor this means a park experienced mostly from its edges. The Hidaka Range Mountain Center on the Satsunai River, the Mount Apoi Geopark Visitor Center at Samani and the Kaze-no-Yakata at Cape Erimo are the places to ask about conditions. The Ministry describes the main ridge as deep, steep mountain country that does not let people come close easily, and it has put trail counters and bear cameras on the route up Kamuiekuuchikaushi."
+  ],
+  "sights": [
+    {
+      "name": "Poroshiri-dake (幌尻岳)",
+      "note": "The highest peak in the range, 2,052 metres, with cirques on its ridges. Sacred to the Ainu, and one of the hardest of Japan's hundred famous mountains.",
+      "location": [
+        42.719,
+        142.683
+      ]
+    },
+    {
+      "name": "Tokachi-Poroshiri-dake (十勝幌尻岳)",
+      "note": "Known locally as Kachi-Poro: a steep climb on a ridge east of the main range, with views over the Tokachi Plain and the whole chain.",
+      "location": [
+        42.695,
+        142.859
+      ]
+    },
+    {
+      "name": "Mount Apoi (アポイ岳)",
+      "note": "A low mountain of mantle peridotite, 810 metres, famous for alpine flowers from late April to October and the centre of the Apoi Geopark.",
+      "location": [
+        42.108,
+        143.026
+      ]
+    },
+    {
+      "name": "Cape Erimo (襟裳岬)",
+      "note": "The range's last ridge running out into the Pacific as a line of reefs. Windy all year; harbour seals rest on the rocks.",
+      "location": [
+        41.925,
+        143.249
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Lake Toyoni (豊似湖)",
+      "note": "A small natural lake in the forest north of Erimo, called the 'heart lake' for its shape from the air.",
+      "location": [
+        42.0896,
+        143.2717
+      ]
+    },
+    {
+      "name": "Funbe Falls (フンベの滝)",
+      "note": "Spring water pouring off a coastal cliff beside National Route 336, frozen into icicles in winter. Funbe is Ainu for 'whale'.",
+      "location": [
+        42.267,
+        143.314
+      ]
+    },
+    {
+      "name": "Nissho Pass (日勝峠)",
+      "note": "The 1,106-metre pass on National Route 274 between Hidaka and Tokachi, among stone birch and meadow flowers.",
+      "location": [
+        42.971,
+        142.752
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Saru River source primeval forest (沙流川源流原始林)",
+      "note": "A natural monument of Ezo spruce and Sakhalin fir at the head of the Saru River, seen from National Route 274.",
+      "location": [
+        42.988,
+        142.764
+      ]
+    },
+    {
+      "name": "Hidaka Range Mountain Center",
+      "note": "Information centre for the Satsunai River area, with exhibits on the range and its history of mountain accidents. Closed from early November to April.",
+      "location": [
+        42.595,
+        142.952
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Mount Apoi Geopark Visitor Center",
+      "note": "At the foot of Mount Apoi in Samani: the geology, plants and culture of the geopark, and current bear and flower news for the climb.",
+      "location": [
+        42.112,
+        142.989
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Cape Erimo 'Kaze-no-Yakata'",
+      "note": "A wind museum at Cape Erimo with a glass-walled room for watching the seals, and exhibits on kelp and salmon fishing.",
+      "location": [
+        41.926,
+        143.245
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The Satsunai River and the Hidaka Range Mountain Center, from Obihiro and Nakasatsunai",
+      "Samani and Mount Apoi, on the Pacific coast in the south-west",
+      "Cape Erimo and the coast road (National Route 336)",
+      "Nissho Pass on National Route 274 and the Tenma Kaidō (National Route 236), the roads that cross the range"
+    ],
+    "reservations": "No reservation is needed to enter the park. Public transport is sparse — one express bus a day from Sapporo to Cape Erimo, and few local buses — so plan connections and check timetables before you go.",
+    "permits": [
+      "Entry to the Hidaka-sō habitat reserves on Apoi and Mount Horoman is restricted under Hokkaido's ordinance; keep to the marked trail"
+    ],
+    "camping": [],
+    "lodging": [
+      "Obihiro, the nearest city, for the northern and eastern side",
+      "The coastal towns of Samani and Erimo, for the southern end"
+    ],
+    "seasonalClosures": [
+      "The Hidaka Range Mountain Center closes from early November to the end of April"
+    ]
+  },
+  "weather": "Cape Erimo is windy all year round. Mount Apoi's flowers bloom from late April to October, starting only about 350 metres above the sea. Stone birch and meadow flowers line Nissho Pass in summer, and the forests along National Route 274 turn in autumn. The Hidaka Range Mountain Center is closed from early November to the end of April, and winter in the high range is only for experienced mountaineers.",
+  "directions": "Fly from Tokyo Haneda to New Chitose or Obihiro (about 95 minutes each) and hire a car. From New Chitose it is about three hours to the Mount Apoi Geopark Visitor Center and just under four to Cape Erimo; from Obihiro Airport it is about 40 minutes to the Mountain Center and a little over two hours to Cape Erimo. By public transport, take the JR limited express from Sapporo to Tomakomai or Obihiro, then local buses to Shizunai, Samani, Erimo or Hiroo, which run only a few times a day. National Routes 274 and 236 cross the range; Route 336 follows the coast round Cape Erimo.",
+  "chronology": [
+    {
+      "year": "Neogene",
+      "text": "A collision between plates begins to push up the Hidaka range, turning deep crust on its side."
+    },
+    {
+      "year": "1952",
+      "text": "The alpine plant community of Mount Apoi is designated a Special Natural Monument."
+    },
+    {
+      "year": "1981",
+      "text": "Hidaka-sanmyaku Erimo Quasi-National Park is designated, covering about 103,000 hectares."
+    },
+    {
+      "year": "Late 1990s",
+      "text": "Mass theft of alpine plants on Mount Apoi leads local people to start patrolling the mountain."
+    },
+    {
+      "year": "2015",
+      "text": "Mount Apoi is recognised as a UNESCO Global Geopark."
+    },
+    {
+      "year": "2024",
+      "text": "On 25 June the area is enlarged and designated Hidakasanmyaku-Erimo-Tokachi National Park, Japan's 35th and largest."
+    }
+  ],
+  "safety": [
+    "Brown bears (higuma) are common throughout the range and its foothills. Carry bear spray, make noise, never camp with food in your tent, and check recent sightings at the visitor centres; the Ministry now monitors bears on the Kamuiekuuchikaushi route by camera.",
+    "The main ridge is remote and steep, and the Mountain Center's exhibits record the range's history of mountain accidents. Go with experience, a route plan and margin for bad weather.",
+    "Cape Erimo is windy all year; take care near the cliff edges."
+  ],
+  "regulations": [
+    "Do not pick or dig up plants. Mount Apoi's flowers are a Special Natural Monument, and the endemic Hidaka-sō is protected by Hokkaido ordinance after years of poaching.",
+    "Picking any plant, collecting fallen branches, catching animals or lighting a fire in the special protection zone needs a permit.",
+    "Keep away from the harbour seals on Erimo's reefs; watch from the cape or the Kaze-no-Yakata."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-glaciers",
+    "theme-alpine",
+    "theme-coastal",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Hidaka Mountains southern and middle parts 2014.jpg",
+      "caption": "The southern and central Hidaka range",
+      "altText": "A long chain of rugged, snow-streaked mountains"
+    },
+    {
+      "file": "File:Erimo misaki 01.JPG",
+      "caption": "Cape Erimo running out into the Pacific",
+      "altText": "A grassy headland with a line of rocky reefs stretching out to sea"
+    },
+    {
+      "file": "File:エンルム岬から望むアポイ岳とピンネシリ（2014年8月）.jpg",
+      "caption": "Mount Apoi and Pinneshiri from Cape Enrumu",
+      "altText": "Green coastal mountains seen across a bay"
+    },
+    {
+      "file": "File:Lake Toyoni aerial photo.jpg",
+      "caption": "Lake Toyoni from the air",
+      "altText": "A small heart-shaped lake surrounded by forest"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hidakasanmyaku-Erimo-Tokachi National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/hidakasanmyaku-erimo-tokachi/"
+    },
+    {
+      "title": "日高山脈襟裳十勝国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/hidaka/index.html"
+    },
+    {
+      "title": "日高山脈襟裳十勝国立公園の特徴 — 国立公園に、行ってみよう！（環境省）",
+      "url": "https://www.env.go.jp/nature/nationalparks/list/hidakasanmyaku-erimo-tokachi/feature/"
+    },
+    {
+      "title": "日高山脈襟裳十勝国立公園 見どころ・施設 — 国立公園に、行ってみよう！（環境省）",
+      "url": "https://www.env.go.jp/nature/nationalparks/list/hidakasanmyaku-erimo-tokachi/spot/"
+    },
+    {
+      "title": "国立公園一覧 — 環境省",
+      "url": "https://www.env.go.jp/park/parks/index.html"
+    },
+    {
+      "title": "日高山脈襟裳十勝国立公園 — 環境イノベーション情報機構 環境用語集",
+      "url": "https://www.eic.or.jp/ecoterm/?act=view&serial=5014"
+    },
+    {
+      "title": "自然公園法（昭和32年法律第161号）— e-Gov法令検索",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000161"
+    },
+    {
+      "title": "日高山脈の登山道にカメラ設置 ヒグマ出没を監視 — 北海道新聞",
+      "url": "https://www.hokkaido-np.co.jp/article/1336081/"
+    },
+    {
+      "title": "日高山脈襟裳十勝国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/日高山脈襟裳十勝国立公園"
+    },
+    {
+      "title": "日高山脈襟裳十勝国立公園 概要（公園区域の基礎情報）— 環境省",
+      "url": "https://www.env.go.jp/park/hidaka/intro/index.html"
+    },
+    {
+      "title": "沙流川 — 日本の川（国土交通省 水管理・国土保全局）",
+      "url": "https://www.mlit.go.jp/river/toukei_chousa/kasen/jiten/nihon_kawa/0104_sarukawa/0104_sarukawa_00.html"
+    },
+    {
+      "title": "沙流川 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/沙流川"
+    },
+    {
+      "title": "How to get there | Hidakasanmyaku-Erimo-Tokachi — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/hidakasanmyaku-erimo-tokachi/how-to-get-there/"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "placeID": "no-np-fulufjellet",
+  "contentVersion": 1,
+  "summary": "One mountain, two national parks, two countries: a flat-topped sandstone plateau on the Swedish border in eastern Trysil, with steep slopes of old conifer forest, gorges and waterfalls. Untouched lichen carpets, bear country and Siberian jays begging at lunch — easy to reach, yet a place to walk all day without meeting anyone.",
+  "facts": {
+    "establishedYear": 2012,
+    "areaHectares": 8250,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "One to two days"
+  },
+  "story": [
+    "Fulufjellet is one mountain with a national park on each side of the border: Norway's Fulufjellet and Sweden's much larger Fulufjället. Where other mountain areas have peaks, Fulufjellet has a plateau — flat on top, with steep slopes of valuable old forest. The bedrock is uniform Precambrian sandstone, the Trysil sandstone, but the landscape is varied, with wide gorges and cuts where water has eroded the rock. On the Norwegian side the rivers Bergåa and Gira slice the plateau into three parts. The highest point of both parks is Slottet, 1,047 metres, on the Norwegian side.",
+    "Most of the park is bare fell dominated by boulder fields, with scree on the slopes. Because there is no reindeer grazing here, the lichen carpets are intact, and the plateau's vegetation is among the poorest in species anywhere, of national and international interest for exactly that reason. Yellow-green map lichen draws patterns on the stones. Down on the slopes the spruce and pine forest is in places close to primeval, rich in rare lichens and fungi; across the border, in the Swedish park, stands what the park authority calls the world's oldest tree, 9,550 years old.",
+    "This is bear country, and wolf, wolverine and lynx are found here too; bears keep to the deep forest and prefer not to meet you. Capercaillie, black grouse, hazel grouse and ptarmigan are the characteristic birds, and the Siberian jay will welcome you in the forest around the plateau — and come very close in the hope of a share of your packed lunch.",
+    "The Swedish park was created in 2002. The Norwegian park followed in 2012, together with the adjoining Fregn nature reserve, and the two countries have since drawn up a joint strategy for the mountain they share. The area has long been used for hunting, fishing and outdoor life, and the regulation keeps it open for all three."
+  ],
+  "howItWorks": [
+    "The right to roam, allemannsretten, applies on the Norwegian side: you may walk anywhere in the outfield, camp for two nights in one place without asking, at least 150 metres from a house or cabin, and pick berries and mushrooms. Wood may be used for campfires with care, but never fell trees for a fire. From 15 April to 15 September it is forbidden across Norway to light a fire in or near forest and other open country unless the municipality has allowed it or a fire plainly cannot spread; check with Trysil municipality before you go. Dogs must be on a lead from 1 April to 20 August under the national dog law.",
+    "Motor traffic on land and water, and aircraft below 300 metres, is forbidden, and motor-driven model aircraft are banned; drones may not be flown. Under Miljødirektoratet's rule, drones may not take off in a national park or be flown into one without the park board's permission. The regulation allows cycling and organised riding only on roads and on routes approved in the management plan, and the park board states that neither is allowed in the Norwegian park; in the Swedish park both are limited to roads. Organised walking is fine as long as it does no harm to the environment; other organised activities need permission.",
+    "Hunting, trapping and fishing follow the ordinary laws. Remember that the Swedish national park next door has rules of its own, which differ from Norway's."
+  ],
+  "sights": [
+    {
+      "name": "Slottet",
+      "note": "'The Castle', 1,047 metres — the highest point of both the Norwegian and the Swedish park.",
+      "location": [
+        61.494,
+        12.642
+      ]
+    },
+    {
+      "name": "Brynflået",
+      "note": "The border on the southern plateau, reached by a well-marked path from Storbekkåsen whose steepest section is stone-paved.",
+      "location": [
+        61.421,
+        12.778
+      ]
+    },
+    {
+      "name": "Bråtafallet",
+      "note": "A waterfall in Bergådalen, at the park's western edge, with a rest area beside it.",
+      "location": [
+        61.468,
+        12.581
+      ]
+    },
+    {
+      "name": "Gira",
+      "note": "One of the two rivers that cut the Norwegian plateau into three.",
+      "location": [
+        61.452,
+        12.729
+      ]
+    },
+    {
+      "name": "Storgnollen",
+      "note": "With Steinknøsen and Furuknøsen, a stretch of boulder fields, gorges and steep relief prized for its landscape and its traces of the ice age.",
+      "location": [
+        61.394,
+        12.788
+      ]
+    },
+    {
+      "name": "Naturum Fulufjället",
+      "note": "In Sweden: the visitor centre of Fulufjällets nationalpark, at its main entrance by the Njupeskär waterfall, and a good starting point for walks and for learning about both parks.",
+      "location": [
+        61.636,
+        12.715
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The road past the Fulufjellet ski centre, which runs almost to the park boundary; a marked path leads on to the border cairn on the southern plateau",
+      "Storbekkåsen, with the marked path up to the border at Brynflået",
+      "Bergådalen, with the rest area at Bråtafallet",
+      "From Sweden, the Njupeskär entrance of the Swedish park, with Naturum Fulufjället"
+    ],
+    "reservations": "No booking or fee. There is a network of marked summer paths and ski trails, several of them crossing into Sweden.",
+    "permits": [
+      "Organised activities that could harm the environment need permission",
+      "Drones and any motor use need a permit"
+    ],
+    "camping": [
+      "Wild camping under the right to roam on the Norwegian side; check Swedish rules before camping across the border"
+    ],
+    "lodging": [
+      "Trysil and the area around the Fulufjellet ski centre"
+    ],
+    "seasonalClosures": []
+  },
+  "weather": "Fulufjellet is easy to reach in every season. In summer and autumn the marked paths lead up through the forest to the open plateau, where wind and weather are more exposed than in the sheltered valleys; in winter a network of ski trails crosses the mountain and the border.",
+  "directions": "The park lies at the far eastern edge of Trysil, about 250 km north-east of Oslo, against the Swedish border. From the Norwegian side the southernmost of the three plateaus is the easiest to reach: the road past the Fulufjellet ski centre ends close to the boundary, and a marked path leads on to the border. Naturum Fulufjället, at Njupeskär on the Swedish side, is reached by road through Sweden.",
+  "chronology": [
+    {
+      "year": "Precambrian",
+      "text": "The sandstone that forms the plateau, the Trysil sandstone, is laid down."
+    },
+    {
+      "year": "Last ice age",
+      "text": "Ice and meltwater shape the boulder fields, gorges and cuts that still mark the plateau."
+    },
+    {
+      "year": "c. 7550 BC",
+      "text": "The tree now called the world's oldest begins to grow on the Swedish side of the mountain."
+    },
+    {
+      "year": "2002",
+      "text": "Sweden creates Fulufjällets nationalpark on its side of the mountain."
+    },
+    {
+      "year": "2012",
+      "text": "Norway creates Fulufjellet National Park and the adjoining Fregn nature reserve."
+    },
+    {
+      "year": "Since 2012",
+      "text": "Norway and Sweden manage the mountain under a joint strategy for its two national parks."
+    }
+  ],
+  "safety": [
+    "The plateau is open and exposed; fog and wind can make navigation hard. Keep to the marked paths in poor visibility.",
+    "Boulder fields and scree are slow and awkward, especially when wet.",
+    "This is bear country. Bears keep away from people, but make noise in dense forest and never approach a bear."
+  ],
+  "regulations": [
+    "Do not fell trees for fires; use wood with care.",
+    "No drones; no motor traffic on land, water or in the air below 300 metres.",
+    "No cycling or organised riding in the Norwegian park, says the park board; the regulation allows them only on roads and approved routes.",
+    "No open fires in or near forest from 15 April to 15 September unless the municipality allows it; dogs on a lead from 1 April to 20 August.",
+    "Rules differ across the border in the Swedish national park: there, for instance, dogs must always be on a lead."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-tundra"
+  ],
+  "photos": [
+    {
+      "file": "File:Fulufjellet nasjonalpark.JPG",
+      "caption": "On the southern plateau of Fulufjellet",
+      "altText": "A flat, open mountain plateau of boulders and pale lichen under a wide sky"
+    },
+    {
+      "file": "File:Fulufjellet nasjonalpark 005.JPG",
+      "caption": "The southern plateau, near the Swedish border",
+      "altText": "Lichen-covered stony ground stretching away to a distant horizon"
+    },
+    {
+      "file": "File:Fulufjellet nasjonalpark 008.JPG",
+      "caption": "Styggskora, on the way up to the southern plateau",
+      "altText": "A rocky cleft in the hillside with scattered conifers"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fulufjellet nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/fulufjellet/"
+    },
+    {
+      "title": "Fulufjellet nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00003056"
+    },
+    {
+      "title": "Forskrift om vern av Fulufjellet nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/2012-04-27-365"
+    },
+    {
+      "title": "Fulufjellet nasjonalpark — official website",
+      "url": "https://fulufjelletnasjonalpark.no/"
+    },
+    {
+      "title": "Naturum Fulufjället — Sveriges nationalparker",
+      "url": "https://www.sverigesnationalparker.se/sv/upptack-nationalparkerna/fulufjallets-nationalpark/att-gora-i-parken/sevardheter/naturum-fulufjallet"
+    },
+    {
+      "title": "Fulufjellet National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fulufjellet_National_Park"
+    },
+    {
+      "title": "Fulufjellet nasjonalpark — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/Fulufjellet_nasjonalpark"
+    },
+    {
+      "title": "Regler for droner i naturen — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/ansvarsomrader/vernet-natur/regler-for-droner-i-naturen/"
+    },
+    {
+      "title": "Lov om friluftslivet (friluftsloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/1957-06-28-16"
+    },
+    {
+      "title": "Forskrift om brannforebygging — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Lov om forsvarlig hundehold (hundeloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+    },
+    {
+      "title": "Sight locations — Kartverket place names (stedsnavn) and OpenStreetMap",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

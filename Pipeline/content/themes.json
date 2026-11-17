@@ -90,6 +90,26 @@
    "id": "theme-conservation-movement",
    "family": "history",
    "name": "Conservation movement"
+  },
+  {
+   "id": "theme-fjords",
+   "family": "geology",
+   "name": "Fjords"
+  },
+  {
+   "id": "theme-islands",
+   "family": "ecosystem",
+   "name": "Islands"
+  },
+  {
+   "id": "theme-arctic",
+   "family": "ecosystem",
+   "name": "Arctic"
+  },
+  {
+   "id": "theme-sacred-places",
+   "family": "history",
+   "name": "Sacred places and pilgrimage"
   }
  ]
 }

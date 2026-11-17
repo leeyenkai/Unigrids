@@ -1,0 +1,362 @@
+{
+  "placeID": "jp-np-joshinetsukogen",
+  "contentVersion": 1,
+  "summary": "A broad spread of volcanoes and high plateaus across Gunma, Nagano and Niigata: the smoking cone of Asama, the acid crater lake of Kusatsu-Shirane, the rock walls of Tanigawa-dake and the ponds and ski slopes of Shiga Kogen. People come for hot springs, skiing and summer walks in cool upland air, and to watch the macaques of Jigokudani bathe.",
+  "facts": {
+    "establishedYear": 1949,
+    "areaHectares": 151053,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "Jōshin'etsu-kōgen takes its name from three old provinces, Kōzuke, Shinano and Echigo, now Gunma, Nagano and Niigata, and from the word for plateau. Most of it is volcanic. Asama (2,568 m), the park's highest summit, still erupts; Kusatsu-Shirane holds an acid crater lake, Yugama (湯釜), in a bare volcanic crater; older volcanoes such as Naeba and Shiga have worn down to broad lava plateaus whose hollows filled with ponds and peat. The exception is the Tanigawa range on the Gunma–Niigata border, a non-volcanic ridge of around 2,000 m whose rock walls look more like the European Alps than anything else in the park.",
+    "Forest follows altitude. Beech and other broadleaf trees cover the slopes to about 1,500 m; above them come the dark conifers of the subalpine belt, Maries' fir and northern Japanese hemlock. On the active volcanoes no forest has closed over the ground, and rowan, crowberry and bog bilberry grow stunted among the scree, while on Kusatsu-Shirane and in Shiga Kogen dwarf Siberian pine grows below 2,000 m. Serow, Asian black bears, stoats and Japanese dormice live here, golden eagles and mountain hawk-eagles hunt the ridges, and in the Yokoyu valley the Japanese macaques of Jigokudani sit in the hot springs.",
+    "The volcanoes heat the water, and spa towns grew up in and around the park long before it existed: Kusatsu, Shima, Manza, Kazawa, Yamada. Shima Onsen was one of the first three spas to be named a national health hot-spring resort (国民保養温泉地), in 1954. The mountains were sacred too. Pilgrims climbed Naeba and Tanigawa, and mountain ascetics still purify themselves in summer beneath Fudō-daki, one of the twin falls of Yonako. The north foot of Asama tells a harder story: in 1783 an eruption sent lava down that side of the mountain, and its black, jumbled blocks are now the Onioshidashi lava field.",
+    "The park was designated in September 1949. In 1956 it took in the Myōkō and Togakushi mountains to the west, a separate block of country that left in 2015 to become a national park of its own. Skiing has shaped the place as much as protection has: Shiga Kogen's slopes held alpine events at the 1998 Nagano Winter Olympics. Since then the Ministry of the Environment has tightened the rules where the land is most fragile, redrawing Shiga Kogen in 2019 so that about 85 per cent of it lies in special zones."
+  ],
+  "howItWorks": [
+    "Like every Japanese national park, Jōshin'etsu-kōgen is a zoned area, not a fenced estate. The Ministry of the Environment draws the boundary and sets the rules, but the land itself has other owners, above all the national forests. Of the park's 151,053 ha, about 71 per cent is national land, about 6 per cent belongs to prefectures and municipalities and about 24 per cent is private. Seven cities, nine towns and five villages in three prefectures share it, and hot-spring villages, ski resorts, pastures, golf courses and the vegetable fields of the Asama plateau carry on inside the boundary. You need no ticket or permit to enter.",
+    "The land is graded by how strictly it is protected. The special protection zone (特別保護地区), about 9,200 ha, holds the most valuable core; there almost nothing may be picked, caught, cut or removed without the Minister of the Environment's permission, down to fallen leaves and branches. Special zones of classes 1 to 3 (特別地域), about 62,900 ha together, protect the scenery around it: building, felling, quarrying and taking the listed plants and animals need a permit. The rest, just over half the park at about 78,900 ha, is ordinary zone (普通地域), where the towns and most of the farmland lie and only large works must be notified.",
+    "Parts of the park carry international recognition. The Yoshigadaira wetlands (芳ヶ平湿地群), 887 ha of volcanic bog and pond on the flank of Kusatsu-Shirane, were listed under the Ramsar Convention in 2015. Shiga Kogen has been a UNESCO biosphere reserve since 1980, and the Minakami biosphere reserve, which takes in Tanigawa-dake, followed in 2017. Two kinds of local rule bear on visitors: Gunma Prefecture's Tanigawa-dake Accident Prevention Ordinance (谷川岳遭難防止条例), which governs the mountain's rock-wall danger zone, and the access limits set around Asama and Kusatsu-Shirane whenever the Japan Meteorological Agency raises their volcanic alert levels."
+  ],
+  "sights": [
+    {
+      "name": "Yugama (湯釜), Kusatsu-Shirane",
+      "note": "An acid, milky-green crater lake in a bare volcanic bowl. Access to the rim depends on the volcanic alert level; check before you go.",
+      "location": [
+        36.6431,
+        138.5357
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Onioshidashi (鬼押出し)",
+      "note": "A field of black lava blocks left by Asama's 1783 eruption, with paths through it and the volcano rising behind.",
+      "location": [
+        36.4432,
+        138.5304
+      ]
+    },
+    {
+      "name": "Jigokudani Yaen-kōen (地獄谷野猿公苑)",
+      "note": "Wild Japanese macaques bathing in a hot spring in the Yokoyu valley, reached by a 2 km forest path.",
+      "location": [
+        36.7328,
+        138.4627
+      ]
+    },
+    {
+      "name": "Yonjūhachi-ike (四十八池), Shiga Kogen",
+      "note": "A high moor at about 1,880 m scattered with dozens of small ponds, among the lava-plateau wetlands of Shiga Kogen.",
+      "location": [
+        36.6953,
+        138.5179
+      ]
+    },
+    {
+      "name": "Ichinokura-sawa (一ノ倉沢)",
+      "note": "A valley head below Tanigawa-dake's sheer rock walls, where most of the mountain's climbing accidents have happened. A place to look up from unless you are an expert.",
+      "location": [
+        36.8492,
+        138.9514
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Yoshigadaira wetlands (芳ヶ平湿地群)",
+      "note": "Ramsar-listed volcanic bogs and ponds on the flank of Kusatsu-Shirane.",
+      "location": [
+        36.6569,
+        138.5464
+      ]
+    },
+    {
+      "name": "Naeba-san (苗場山)",
+      "note": "A flat lava summit at 2,145 m covered by a broad high moor.",
+      "location": [
+        36.8458,
+        138.6903
+      ]
+    },
+    {
+      "name": "Yonako Falls (米子大瀑布)",
+      "note": "Twin waterfalls, Fudō-daki and Gongen-daki, above Suzaka; long a place of Shugendō practice, where ascetics still bathe under the falls in summer.",
+      "location": [
+        36.5706,
+        138.4065
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Shiga Kogen Nature Conservation Centre (志賀高原自然保護センター)",
+      "note": "In the Shiga Kogen Sōgō Kaikan 98 at Hasuike: models and panels on the plateau's forests, moors and people, with a guides' association alongside. Open all year.",
+      "location": [
+        36.7197,
+        138.4907
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Tanigawa-dake Information Centre (谷川岳インフォメーションセンター)",
+      "note": "At Doai, by the Tanigawa-dake Ropeway: geology, wildlife and route exhibits, and current flower and trail news.",
+      "location": [
+        36.8347,
+        138.9616
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Manza Nature Information Centre (万座しぜん情報館)",
+      "note": "At Manza Onsen: displays, seasonal guided walks, a small amphibian aquarium and a terrace over the fumaroles of Karabuki.",
+      "location": [
+        36.6345,
+        138.5072
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Asama North Foot Visitor Center (浅間山北麓ビジターセンター)",
+      "note": "At Asama-en on the volcano's north foot: a diorama of how Asama formed and its plants changed, rocks and Geopark displays. Fridays to Sundays only from December to March.",
+      "location": [
+        36.4389,
+        138.5347
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Kusatsu Onsen, for Kusatsu-Shirane, Yoshigadaira and the Shiga–Kusatsu road (Route 292)",
+      "Shiga Kogen and Yudanaka, by bus from Nagano Station, for the Shiga plateau and Jigokudani",
+      "Doai and the Tanigawa-dake Ropeway, by bus from Jōmō-Kōgen Station, for Tanigawa-dake",
+      "Karuizawa and the north foot of Asama, for Onioshidashi and the Asama plateau",
+      "Echigo-Yuzawa Station, then about 40 minutes by taxi, for the Wada-goya trailhead on Naeba-san"
+    ],
+    "reservations": "The park needs no entry reservation or permit. What changes from season to season is access: the Shiga–Kusatsu road over Route 292 and the ground around the crater lakes of Kusatsu-Shirane and the summit of Asama open and close with the snow and with the Japan Meteorological Agency's volcanic alert levels. Check with the town of Kusatsu, Gunma and Nagano prefectures and JMA before you go.",
+    "permits": [
+      "Tanigawa-dake: Gunma Prefecture asks every climber to file a climbing plan (登山計画書), online, through the YAMAP or Compass apps, or at the Tanigawa-dake Climbing Guidance Centre",
+      "The rock walls of Tanigawa-dake's danger zone close each spring thaw under the Tanigawa-dake Accident Prevention Ordinance; check Gunma Prefecture's dates before you go",
+      "Building, felling, quarrying or collecting plants and animals in the special zones needs the Ministry of the Environment's permission"
+    ],
+    "camping": [
+      "Campgrounds at Kazawa Onsen in Tsumagoi, near the Yunomaru plateau"
+    ],
+    "lodging": [
+      "Hot-spring inns at Kusatsu, Manza (about 1,800 m up), Shima, Kazawa and the Minakami spa towns below Tanigawa-dake",
+      "Nearly a hundred hotels and inns in some sixteen districts of Shiga Kogen",
+      "Hotels and pensions at Sugadaira and Karuizawa",
+      "Mountain huts along the Tanigawa ridge and on Naeba's summit"
+    ],
+    "seasonalClosures": [
+      "The Shiga–Kusatsu road (Route 292) over Shibu Pass closes from November to late April, and later after a heavy winter; check with Gunma and Nagano prefectures before you go",
+      "Roads and trails near the crater lakes of Kusatsu-Shirane and the summit of Asama close when the volcanic alert level rises; check JMA and the local towns before you go",
+      "Tanigawa-dake's danger zone closes during the spring thaw, for 35 to 42 days between March and the end of April in recent years",
+      "Several visitor centres on the Asama and Tsumagoi side close, or open only at weekends, from December to March"
+    ],
+    "seasonalClosureMonths": [
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "The park is high and cold in winter. At Kusatsu, 1,223 m up, the January mean is −4.1°C and August averages 19.6°C, with afternoon highs around 24°C; Sugadaira, at 1,253 m, averages 6.6°C over the year and January nights fall to about −13°C. Summer is the wet season — June to September each bring more than 200 mm of rain at Kusatsu — but the plateaus stay cool while the lowlands swelter. Snow lies from December into April. On the slopes of Tanigawa-dake it has measured between 1.7 and 5 m around the start of March in recent winters. Yunomaru's wild azaleas flower in summer.",
+  "directions": "Two Shinkansen lines bracket the park. The Hokuriku Shinkansen stops at Karuizawa, at the southern end below Asama, and at Nagano, where buses leave for Shiga Kogen (about an hour) and the Jigokudani monkey park (about 40 minutes). The Jōetsu Shinkansen stops at Jōmō-Kōgen, for buses to the Tanigawa-dake Ropeway (about 50 minutes), and at Echigo-Yuzawa, for Naeba. Kusatsu has no railway: take a limited express from Ueno to Naganohara-Kusatsuguchi and a JR bus on from there (about 30 minutes), or a direct highway bus from Tokyo in about four hours. The JR Jōetsu Line passes under the Tanigawa range in tunnels and stops at Doai, at the foot of Tanigawa-dake. In winter the Shiga–Kusatsu road is shut and moving between the park's areas means going round by the valleys.",
+  "chronology": [
+    {
+      "year": "1783",
+      "text": "A great eruption of Asama sends lava down the north side of the mountain, leaving the Onioshidashi lava field."
+    },
+    {
+      "year": "1949",
+      "text": "Jōshin'etsu-kōgen National Park is designated on 7 September, from the Mikuni mountains to Asama."
+    },
+    {
+      "year": "1954",
+      "text": "Shima Onsen becomes one of the first three national health hot-spring resorts."
+    },
+    {
+      "year": "1956",
+      "text": "The Myōkō–Togakushi mountains are added to the park on 10 July."
+    },
+    {
+      "year": "1980",
+      "text": "Shiga Kogen is named a UNESCO biosphere reserve."
+    },
+    {
+      "year": "2015",
+      "text": "The Myōkō–Togakushi area leaves on 27 March to become its own national park; in May the Yoshigadaira wetlands are listed under the Ramsar Convention."
+    },
+    {
+      "year": "2017",
+      "text": "The Minakami biosphere reserve, taking in Tanigawa-dake, is designated."
+    },
+    {
+      "year": "2018",
+      "text": "Moto-Shirane, part of Kusatsu-Shirane, erupts without warning on 23 January, killing one person and injuring others at the ski area below."
+    },
+    {
+      "year": "2019",
+      "text": "Shiga Kogen's zoning is redrawn, placing about 85 per cent of it in special zones."
+    },
+    {
+      "year": "2024",
+      "text": "The boundary and park plan of the Naeba area are re-examined and revised."
+    }
+  ],
+  "safety": [
+    "Asama and the two vents of Kusatsu-Shirane, Yugama and Moto-Shirane, are watched around the clock by the Japan Meteorological Agency under its five-step volcanic alert levels: 1, an active volcano to bear in mind; 2, keep away from the crater; 3, keep off the mountain; 4, elderly and vulnerable people evacuate; 5, evacuate. Closures follow the level. Check JMA's current level before you go: Moto-Shirane's 2018 eruption came without warning.",
+    "Tanigawa-dake is low but deadly. By 2012 more than 800 climbers had died on it since records began in 1931, most of them on the rock walls around Ichinokura-sawa, and in spring the prefecture closes the danger zone because of avalanches. File a climbing plan and keep to the ordinary routes unless you are equipped and trained for rock and snow.",
+    "Asian black bears live throughout the park. Carry a bell or talk as you walk, keep food packed away, and never feed any wild animal.",
+    "Some trails have no toilets and few markers. Carry a map, choose a route within your fitness and skill, allow time to spare, and use a toilet before you set out or carry a portable one."
+  ],
+  "regulations": [
+    "Do not pick plants, take animals or feed wildlife, and keep to the path: the plants of the moors and wetlands are easily trampled.",
+    "Smoking while walking is not allowed, and fires may be lit only at designated places.",
+    "Take all litter home.",
+    "Gunma Prefecture's Tanigawa-dake Accident Prevention Ordinance closes the danger zone on the mountain's rock walls during the spring thaw; the ordinary routes stay open.",
+    "Before flying a drone, check the Ministry of the Environment's guidance for national parks and the rules of the landowner."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-mountains",
+    "theme-hot-springs",
+    "theme-wetland",
+    "theme-alpine",
+    "theme-deciduous-forest",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:Mt.Asama from Onioshidashi.jpg",
+      "caption": "Asama from Onioshidashi, the lava field of its 1783 eruption",
+      "altText": "A broad volcanic cone above a field of dark, broken lava blocks"
+    },
+    {
+      "file": "File:Lake Yugama - the crater lake of Mt.Kusatsu Shirane. - panoramio.jpg",
+      "caption": "Yugama, the acid crater lake of Kusatsu-Shirane",
+      "altText": "A pale green lake in a round crater of grey volcanic ash"
+    },
+    {
+      "file": "File:Ichinokura-sawa (25084338898).jpg",
+      "caption": "Tanigawa-dake and Ichinokura-dake from the east, with Ichinokura-sawa between them",
+      "altText": "Steep mountain walls rising above a valley, with snow in the gullies"
+    },
+    {
+      "file": "File:Shijuhachi-ike.jpg",
+      "caption": "Yonjūhachi-ike, the moor of small ponds in Shiga Kogen",
+      "altText": "Small ponds among grass and low conifers on a high plateau"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Joshin'etsukogen National Park — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/joshinetsukogen/"
+    },
+    {
+      "title": "Explore Joshin'etsukogen National Park — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/joshinetsukogen/explore/"
+    },
+    {
+      "title": "How to get there — Joshin'etsukogen — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/joshinetsukogen/how-to-get-there/"
+    },
+    {
+      "title": "上信越高原国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/joshinetsu/"
+    },
+    {
+      "title": "上信越高原国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/joshinetsu/intro/index.html"
+    },
+    {
+      "title": "上信越高原国立公園 公園の特長 — 環境省",
+      "url": "https://www.env.go.jp/park/joshinetsu/point/index.html"
+    },
+    {
+      "title": "上信越高原国立公園 アクセス・施設 — 環境省",
+      "url": "https://www.env.go.jp/park/joshinetsu/access/index.html"
+    },
+    {
+      "title": "上信越高原国立公園 利用上の注意 — 環境省",
+      "url": "https://www.env.go.jp/park/joshinetsu/attention.html"
+    },
+    {
+      "title": "規制される行為やその手続き等 — 環境省",
+      "url": "https://www.env.go.jp/park/apply/park_apply.html"
+    },
+    {
+      "title": "Yoshigadaira Wetlands — Ramsar sites in Japan, Ministry of the Environment",
+      "url": "https://www.env.go.jp/nature/ramsar/conv/ramsarleaflet/24_Yoshigadaira_Wetlands.pdf"
+    },
+    {
+      "title": "ユネスコエコパーク（みなかみ）の登録について — 文部科学省",
+      "url": "https://www.mext.go.jp/unesco/001/2017/1386813.htm"
+    },
+    {
+      "title": "谷川岳遭難防止条例に基づく危険地区への登山禁止について — 群馬県",
+      "url": "https://www.pref.gunma.jp/site/houdou/746690.html"
+    },
+    {
+      "title": "活動中の火山・噴火警報の発表状況 — 気象庁",
+      "url": "https://www.data.jma.go.jp/vois/data/tokyo/STOCK/activity_info/map_0.html"
+    },
+    {
+      "title": "草津 平年値 — 気象庁",
+      "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=42&block_no=0343&year=&month=&day=&view="
+    },
+    {
+      "title": "菅平 平年値 — 気象庁",
+      "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=48&block_no=0992&year=&month=&day=&view="
+    },
+    {
+      "title": "Jōshin'etsu-kōgen National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/J%C5%8Dshin%27etsu-k%C5%8Dgen_National_Park"
+    },
+    {
+      "title": "上信越高原国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E4%BF%A1%E8%B6%8A%E9%AB%98%E5%8E%9F%E5%9B%BD%E7%AB%8B%E5%85%AC%E5%9C%92"
+    },
+    {
+      "title": "Mount Asama — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mount_Asama"
+    },
+    {
+      "title": "Mount Kusatsu-Shirane — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mount_Kusatsu-Shirane"
+    },
+    {
+      "title": "谷川岳 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E8%B0%B7%E5%B7%9D%E5%B2%B3"
+    },
+    {
+      "title": "志賀高原 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%BF%97%E8%B3%80%E9%AB%98%E5%8E%9F"
+    },
+    {
+      "title": "Jigokudani Monkey Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jigokudani_Monkey_Park"
+    },
+    {
+      "title": "浅間園（浅間火山博物館） — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B5%85%E9%96%93%E7%81%AB%E5%B1%B1%E5%8D%9A%E7%89%A9%E9%A4%A8"
+    },
+    {
+      "title": "志賀草津道路 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%BF%97%E8%B3%80%E8%8D%89%E6%B4%A5%E9%81%93%E8%B7%AF"
+    },
+    {
+      "title": "国民保養温泉地 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%BD%E6%B0%91%E4%BF%9D%E9%A4%8A%E6%B8%A9%E6%B3%89%E5%9C%B0"
+    },
+    {
+      "title": "日本の主な山岳標高（2026年3月31日版） — 国土地理院",
+      "url": "https://www.gsi.go.jp/kihonjohochousa/kihonjohochousa41139.html"
+    }
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "placeID": "jp-np-nikko",
+  "contentVersion": 1,
+  "summary": "The shrines and temples of Nikkō, a World Heritage Site, stand at the foot of a volcanic upland of lakes, waterfalls and marsh: Lake Chūzenji under Mount Nantai, the 97-metre Kegon Falls, the moor of Senjōgahara. To the north-east are the steaming summit of Nasu-dake and the hot-spring gorges of Shiobara and Kinugawa. Designated in 1934, it is one of Japan's oldest national parks.",
+  "facts": {
+    "establishedYear": 1934,
+    "areaHectares": 114908,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Nikkō is volcano country. The peaks of the Nasu volcanic belt run through the park, and the young ones shaped what most visitors come to see. About 20,000 years ago Mount Nantai (男体山), a 2,486-metre cone, sent lava across the valley and dammed it: the water behind became Lake Chūzenji (中禅寺湖 Chūzenji-ko), which spills over the lava's edge as Kegon Falls. Upstream, a second dammed lake filled with silt, ash and peat and became the marsh of Senjōgahara (戦場ヶ原). Mount Nikkō-Shirane, at 2,578 metres the highest peak in the Kantō region, is the only volcano in the Nikkō group with eruptions in the written record.",
+    "Height brings variety. Beech, maple and oak cover the lower slopes, with conifers above, and a walk from the lake to Yumoto climbs through both. Japanese macaques, sika deer, Japanese serow and Asian black bears live throughout the park. Senjōgahara, about 1,400 metres up, is known for its birds and for the flowers that open across it from June to August. Sika numbers rose from the 1980s and the deer began stripping the marsh, so in 2001 the Ministry of the Environment fenced Senjōgahara and neighbouring Odashirogahara against them; other animals can still pass through.",
+    "The mountains were sacred long before they were scenery. The monk Shōdō reached the summit of Nantai in 782, and the temples he and his successors founded made Nikkō a centre of mountain worship. In 1617 the remains of Tokugawa Ieyasu, founder of the shogunate, were brought here and enshrined at Tōshō-gū (東照宮); his grandson Iemitsu rebuilt the shrine in its present lacquered and carved form, finishing in 1636, twenty years after Ieyasu's death. With Futarasan Shrine and Rinnō-ji temple it was inscribed as a World Heritage Site in 1999.",
+    "In the late nineteenth century the cool lakeshore drew Tokyo's foreign diplomats. Ernest Satow built a villa on Lake Chūzenji in 1896, later the British embassy's, and the Italian embassy's villa followed in 1928; both are now open as memorial parks. The national park was designated on 4 December 1934, one of five created that day, and grew in 1950 to take in Nasu, Shiobara and Kinugawa. Oze left in 2007 to become a park of its own, and in 2011 half of the imperial villa estate at Nasu opened to the public as Nasu Heisei-no-Mori."
+  ],
+  "howItWorks": [
+    "Like every Japanese national park, Nikko is a zoned area over land with many owners, not a fenced reserve. About 69 per cent of its 114,908 hectares is national land; 27 per cent is private and the rest belongs to prefectures and towns. It spans Tochigi, Gunma and Fukushima prefectures and eight municipalities, and within it are working shrines and temples, the hot-spring towns of Yumoto, Chūzenji, Kinugawa, Shiobara, Itamuro, Kashi and Nasu, and the farms and dairy country of Nasu. The summit of Mount Nantai is shrine land belonging to Futarasan Shrine.",
+    "The Ministry of the Environment grades the land by how strictly it is protected. Only about 1 per cent is special protection zone, the strictest grade, where even taking fallen wood or leaves needs permission. Just under half is special zone, in three classes, where building, felling and digging need a permit and listed plants and animals may not be taken. The remaining half is ordinary zone, which covers the towns, roads and farms and asks little of a visitor beyond the usual rules.",
+    "Several local rules matter more day to day. Private cars have been barred since 1993 from the road between Akanuma and Senjugahama, on the western shore of Lake Chūzenji; a low-emission bus runs instead in season. Snowmobiles and off-road vehicles are banned across a 13,865-hectare restricted area in Oku-Nikkō. The marshes of Senjōgahara, Odashirogahara, Lake Yunoko and the Yu River were listed together under the Ramsar Convention in 2005, and Nikkō city has banned the feeding of wild monkeys since 2000."
+  ],
+  "sights": [
+    {
+      "name": "Tōshō-gū and the Shrines and Temples of Nikkō",
+      "note": "Tōshō-gū, Futarasan Shrine and Rinnō-ji: 103 buildings in cedar forest above the town, including the carved Yōmeimon gate. A World Heritage Site.",
+      "location": [
+        36.7581,
+        139.5989
+      ]
+    },
+    {
+      "name": "Kegon Falls",
+      "note": "華厳滝 Kegon-no-taki: the outflow of Lake Chūzenji drops 97 metres over the edge of an old lava flow.",
+      "location": [
+        36.7379,
+        139.502
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Lake Chūzenji",
+      "note": "A lake dammed by Mount Nantai's lava about 20,000 years ago, with the former British and Italian embassy villas on its shore.",
+      "location": [
+        36.7406,
+        139.4622
+      ]
+    },
+    {
+      "name": "Senjōgahara",
+      "note": "A former lake turned high moor, crossed by a boardwalk nature trail beside the Yu River, with Mount Nantai on the skyline.",
+      "location": [
+        36.7785,
+        139.4428
+      ]
+    },
+    {
+      "name": "Mount Nantai",
+      "note": "The sacred 2,486-metre volcano above Lake Chūzenji, climbed from the gate of Futarasan Shrine's Chūgūshi in the climbing season.",
+      "location": [
+        36.7619,
+        139.4939
+      ]
+    },
+    {
+      "name": "Mount Nikkō-Shirane",
+      "note": "The highest peak in Kantō, at 2,578 metres; climbed from Yumoto, Lake Suganuma or the top of the Marunuma ropeway.",
+      "location": [
+        36.7983,
+        139.3742
+      ]
+    },
+    {
+      "name": "Nasu-dake (Chausu-dake)",
+      "note": "The steaming 1,915-metre main peak of the Nasu range, an active volcano reached on foot from the top of the Nasu Ropeway.",
+      "location": [
+        37.125,
+        139.964
+      ]
+    },
+    {
+      "name": "Sesshō-seki",
+      "note": "殺生石, the 'killing stone' of legend, among volcanic gas vents at Nasu Yumoto. It was found split in two in March 2022.",
+      "location": [
+        37.1017,
+        139.9986
+      ]
+    },
+    {
+      "name": "Nikko Yumoto Visitor Center",
+      "note": "The Ministry's centre at Yumoto Onsen: trail and wildlife news for Oku-Nikkō, nature walks, and snowshoe hire in winter.",
+      "location": [
+        36.8049,
+        139.4228
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Tochigi Prefectural Nikko Natural Science Museum",
+      "note": "Beside Kegon Falls on Lake Chūzenji: exhibits on Oku-Nikkō's nature and current conditions. Admission is charged.",
+      "location": [
+        36.7386,
+        139.5001
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Nasu Heisei-no-Mori Field Centre",
+      "note": "Base for guided walks in the forest opened in 2011 on former imperial villa land.",
+      "location": [
+        37.1174,
+        140.0084
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Shiobara Onsen Visitor Center",
+      "note": "Information for the walks along the Hōki River gorge and its waterfalls at Shiobara.",
+      "location": [
+        36.9666,
+        139.8336
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Nikkō town and the World Heritage shrines, at the end of the JR Nikkō Line and the Tōbu Nikkō Line",
+      "Oku-Nikkō — Lake Chūzenji, Senjōgahara and Yumoto — by bus or car up the Irohazaka switchbacks",
+      "Nasu Kōgen and Nasu-dake, from Nasushiobara or Kuroiso station",
+      "Shiobara Onsen and Kinugawa Onsen, the hot-spring towns in the river gorges"
+    ],
+    "reservations": "The park itself needs no reservation and charges no entry fee. Tōbu limited expresses from Asakusa and the JR–Tōbu through trains from Shinjuku need seat reservations. The low-emission bus to Odashirogahara, Nishinoko and Senjugahama runs only from late April to the end of November; check the timetable with the Nikko Natural Science Museum before you go.",
+    "permits": [
+      "Mount Nantai is shrine land: climbers enter through the gate at Futarasan Shrine's Chūgūshi, pay a climbing fee there, and may climb only while the gate is open each year — check dates with the shrine before you go"
+    ],
+    "camping": [
+      "Nikkō Yumoto campground, by Lake Yunoko, open from early summer into autumn — check with the Nikko Yumoto Visitor Centre before you go"
+    ],
+    "lodging": [
+      "Hot-spring inns at Yumoto Onsen and Chūzenji Onsen in Oku-Nikkō",
+      "Kinugawa Onsen, one of the largest hot-spring towns in Kantō, in the Kinugawa gorge",
+      "Hotels and pensions across Nasu Kōgen, and the hot springs of Itamuro, Shiobara and Kashi"
+    ],
+    "seasonalClosures": [
+      "Route 120 over Konsei Pass, between Yumoto and Gunma, closes for the winter, usually from late December until late April; check with Tochigi and Gunma road information before you go",
+      "The low-emission bus to Senjugahama stops from December until late April",
+      "The climbing gate on Mount Nantai is closed from late autumn until spring"
+    ],
+    "seasonalClosureMonths": [
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weather": "Nikkō town and the high country above it have different climates. The Japan Meteorological Agency's station on the shore of Lake Chūzenji, at Oku-Nikkō, averages −3.9 °C in January and 18.8 °C in August, and records about 2,200 mm of precipitation a year, more than half of it from June to September; September is the wettest month. Summers on the plateau are cool, which is why diplomats once moved up here for the season, but they are also the wet season. Snow lies from December to March, enough for snowshoeing and skiing at Yumoto. Autumn colour arrives first on the high ground and draws heavy traffic to the Irohazaka road.",
+  "directions": "From Tokyo, the Tōbu Railway runs from Asakusa to Tōbu-Nikkō, about two hours by limited express, and JR and Tōbu run through trains from Shinjuku. By JR, take the Tōhoku Shinkansen to Utsunomiya and change to the Nikkō Line, about 1 hour 40 minutes in all. Tōbu buses climb from the Nikkō stations to Chūzenji Onsen in about 50 minutes and to Yumoto Onsen in about 80, by way of the two one-way Irohazaka roads. For Nasu, the shinkansen reaches Nasushiobara in about 75 minutes; buses run from there and from Kuroiso up to Nasu Yumoto and the ropeway. Route 120 continues west from Yumoto over Konsei Pass towards Oze and Gunma.",
+  "chronology": [
+    {
+      "year": "782",
+      "text": "The monk Shōdō reaches the summit of Mount Nantai, beginning centuries of mountain worship at Nikkō."
+    },
+    {
+      "year": "1617",
+      "text": "Tokugawa Ieyasu's remains are moved to Nikkō and the first Tōshō-gū shrine is built."
+    },
+    {
+      "year": "1636",
+      "text": "The shogun Iemitsu completes the rebuilding of Tōshō-gū in its present form."
+    },
+    {
+      "year": "1896",
+      "text": "Ernest Satow builds a villa on Lake Chūzenji, later used by the British embassy."
+    },
+    {
+      "year": "1934",
+      "text": "Nikko National Park is designated on 4 December, one of five parks created that day, taking in Nikkō, Oze and Oku-Kinu."
+    },
+    {
+      "year": "1950",
+      "text": "Nasu, Kashi, Shiobara, Kinugawa and neighbouring areas are added to the park."
+    },
+    {
+      "year": "1999",
+      "text": "The Shrines and Temples of Nikkō are inscribed as a World Heritage Site."
+    },
+    {
+      "year": "2005",
+      "text": "The Oku-Nikkō wetlands are listed under the Ramsar Convention."
+    },
+    {
+      "year": "2007",
+      "text": "The Oze area is removed to form Oze National Park."
+    },
+    {
+      "year": "2011",
+      "text": "Nasu Heisei-no-Mori opens on half of the Nasu imperial villa estate."
+    }
+  ],
+  "safety": [
+    "Nasu-dake and Mount Nikkō-Shirane are active volcanoes covered by the Japan Meteorological Agency's five-level volcanic alert system. Check the current level, and any no-entry area, on the JMA website before you climb either.",
+    "Volcanic gas seeps from the ground around Sesshō-seki and near the Nasu-dake summit crater. Stay on marked paths and leave the area if you feel unwell.",
+    "Asian black bears live throughout the park and are seen around Senjōgahara and in the Shiobara gorge. Carry a bell, keep food sealed, and be most alert at dawn, dusk and in poor visibility.",
+    "Do not feed or show food to the monkeys around the Irohazaka road and Lake Chūzenji; animals used to people snatch bags and enter cars and shops.",
+    "Oku-Nikkō averages below freezing from December to February, and snow and ice make the mountain roads hazardous. Fit winter tyres and check road conditions before driving up."
+  ],
+  "regulations": [
+    "Feeding wild monkeys is prohibited by Nikkō city ordinance.",
+    "Private cars may not use the road from Akanuma to Senjugahama; take the low-emission bus or walk.",
+    "Snowmobiles and off-road vehicles are banned in the Oku-Nikkō vehicle-restriction area.",
+    "In the special zones, listed plants and animals may not be taken without a permit. Keep to the boardwalks across Senjōgahara and Odashirogahara."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-mountains",
+    "theme-wetland",
+    "theme-sacred-places",
+    "theme-hot-springs",
+    "theme-deciduous-forest"
+  ],
+  "photos": [
+    {
+      "file": "File:Lake Chuzenji and Mt. Nantai view from Mt. Hangetsu Observatory.jpg",
+      "caption": "Lake Chūzenji and Mount Nantai from the Hangetsu-yama observatory",
+      "altText": "A deep blue lake below a bare cone-shaped mountain, with autumn hills around it and conifers in the foreground"
+    },
+    {
+      "file": "File:Kegon Falls - Nikko National Park.jpg",
+      "caption": "Kegon Falls in midwinter",
+      "altText": "A tall waterfall pouring down a dark rock face streaked with ice"
+    },
+    {
+      "file": "File:Mount Nantai @ Senjogahara Marsh @ Nikko (9821597635).jpg",
+      "caption": "The boardwalk across Senjōgahara, with Mount Nantai on the right",
+      "altText": "A wooden boardwalk running through golden grassland towards forested volcanic peaks under a blue sky"
+    },
+    {
+      "file": "File:Nikko Toshogu Yomeimon Gate 2024.jpg",
+      "caption": "The Yōmeimon gate at Tōshō-gū",
+      "altText": "An ornate white, gold and black gate covered in carvings, at the top of a flight of stone steps"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nikko National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/nikko/"
+    },
+    {
+      "title": "Explore Nikko National Park — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/nikko/explore/"
+    },
+    {
+      "title": "Nikko Story — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/nikko/story/"
+    },
+    {
+      "title": "How to get there: Nikko — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/nikko/how-to-get-there/"
+    },
+    {
+      "title": "日光国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/nikko/"
+    },
+    {
+      "title": "日光国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/nikko/intro/index.html"
+    },
+    {
+      "title": "日光国立公園 アクセス・施設 — 環境省",
+      "url": "https://www.env.go.jp/park/nikko/access/index.html"
+    },
+    {
+      "title": "保護と利用 — 環境省 日本の国立公園",
+      "url": "https://www.env.go.jp/park/about/protect/index.html"
+    },
+    {
+      "title": "National Parks Story — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/discover/national-park-story/"
+    },
+    {
+      "title": "Ramsar site leaflet: Oku-Nikko-shitsugen — Ministry of the Environment",
+      "url": "https://www.env.go.jp/nature/ramsar/conv/ramsarleaflet/23_Oku-Nikko-shitsugen.pdf"
+    },
+    {
+      "title": "低公害バス — 栃木県立日光自然博物館",
+      "url": "http://www.nikko-nsm.co.jp/bus.html"
+    },
+    {
+      "title": "英国大使館別荘記念公園 — 栃木県立日光自然博物館",
+      "url": "http://www.nikko-nsm.co.jp/british.html"
+    },
+    {
+      "title": "イタリア大使館別荘記念公園 — 栃木県立日光自然博物館",
+      "url": "http://www.nikko-nsm.co.jp/italy.html"
+    },
+    {
+      "title": "火山 — 宇都宮地方気象台 (Japan Meteorological Agency)",
+      "url": "https://www.data.jma.go.jp/utsunomiya/bousai/kazan.html"
+    },
+    {
+      "title": "奥日光 平年値 — 気象庁",
+      "url": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=41&block_no=47690&year=&month=&day=&view="
+    },
+    {
+      "title": "国道120号（金精道路）冬期通行止め — 栃木県",
+      "url": "https://www.pref.tochigi.lg.jp/h53/documents/20250424174810.pdf"
+    },
+    {
+      "title": "ニホンザルの保護管理 — 栃木県",
+      "url": "https://www.pref.tochigi.lg.jp/d04/eco/shizenkankyou/shizen/saruhogokannri3.html"
+    },
+    {
+      "title": "Visitor centre exhibit: deer measures at Senjogahara — Japan Tourism Agency multilingual database",
+      "url": "https://www.mlit.go.jp/tagengo-db/H30-00321.html"
+    },
+    {
+      "title": "Nikkō National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nikk%C5%8D_National_Park"
+    },
+    {
+      "title": "日光国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E5%85%89%E5%9B%BD%E7%AB%8B%E5%85%AC%E5%9C%92"
+    },
+    {
+      "title": "Shrines and Temples of Nikkō — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shrines_and_Temples_of_Nikk%C5%8D"
+    },
+    {
+      "title": "Lake Chūzenji — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lake_Ch%C5%ABzenji"
+    },
+    {
+      "title": "Mount Nantai — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mount_Nantai"
+    },
+    {
+      "title": "Kegon Falls — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kegon_Falls"
+    },
+    {
+      "title": "日光東照宮 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E5%85%89%E6%9D%B1%E7%85%A7%E5%AE%AE"
+    },
+    {
+      "title": "戦場ヶ原 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E6%88%A6%E5%A0%B4%E3%83%B6%E5%8E%9F"
+    },
+    {
+      "title": "日光白根山 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E5%85%89%E7%99%BD%E6%A0%B9%E5%B1%B1"
+    },
+    {
+      "title": "那須岳 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E9%82%A3%E9%A0%88%E5%B2%B3"
+    },
+    {
+      "title": "那須平成の森 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E9%82%A3%E9%A0%88%E5%B9%B3%E6%88%90%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "title": "殺生石 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E6%AE%BA%E7%94%9F%E7%9F%B3"
+    },
+    {
+      "title": "日本の主な山岳標高 — 国土地理院",
+      "url": "https://www.gsi.go.jp/kihonjohochousa/kihonjohochousa41139.html"
+    }
+  ]
+}

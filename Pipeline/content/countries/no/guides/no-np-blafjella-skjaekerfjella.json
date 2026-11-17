@@ -1,0 +1,238 @@
+{
+  "placeID": "no-np-blafjella-skjaekerfjella",
+  "contentVersion": 1,
+  "summary": "A big, little-visited sweep of low mountains, old-growth forest, mires and boulder fields in north-east Trøndelag, running to the Swedish border. South Sámi reindeer country for more than five centuries, home to arctic fox and all of Norway's large predators, and the place where the Americans' only land operation in occupied Norway was based in 1945.",
+  "facts": {
+    "establishedYear": 2004,
+    "areaHectares": 196800,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "spring"
+    ],
+    "suggestedTime": "Three to six days"
+  },
+  "story": [
+    "Blåfjella-Skjækerfjella — Låarte-Skæhkere in South Sámi — is Norway's fourth-largest national park and one of the largest areas of true wilderness left in the country. It is mostly low, rolling mountain with gentle slopes, broken by boulder fields and old-growth forest, and two near-separate halves. In the south, Skjækerfjella rises around Skjækerhatten, with green valleys and summits up to about 1,100 metres. In the north-east, the Blåfjella massif carries the park's highest point, Midtiklumpen at 1,333 metres, and to the north-west lies the barren country around Gressåmoen and Bukvassfjellet.",
+    "The bedrock decides the plant life. Softer, varied rocks in the south give rich vegetation; poor gneiss in the north gives a sparse one. The park lies in the region where spruce first spread into Norway, and the valley forests include old-growth stands where capercaillie display in spring. Twenty-eight species of mammal have been recorded: arctic fox breed in the mountains, and brown bear, lynx and wolverine all live here, along with moose. Golden eagles hunt over the high ground.",
+    "This has been South Sámi reindeer country for more than 500 years, and it still is: herding is one of the reasons the park exists, and South Sámi cultural remains lie scattered across it. Traces of hunting and fishing go back to the Stone Age. On the eastern side, beyond the main watershed towards Sweden, mountain farms were settled at Gaundalen, Holden and Gjevsjøen, and summer dairy farms worked the valleys of Verdal and Snåsa.",
+    "Those remote farms mattered in the Second World War. In March 1945 an American parachute force of the Office of Strategic Services, led by Major William Colby, later director of the CIA, set up its base at Gjefsjøen farm. Operation Rype was the only American-led land operation in occupied Norway, and from here the group blew up the Tangen bridge south of Snåsa and a stretch of the Nordland Line in Lurudalen. Part of the area became Gressåmoen National Park in 1970; on 17 December 2004 it was folded into the new, far larger Blåfjella-Skjækerfjella, created the same day as neighbouring Lierne National Park."
+  ],
+  "howItWorks": [
+    "The right to roam, allemannsretten, applies in full: you may walk anywhere in the outfield, camp for two nights in one place without asking — longer in remote mountain country — at least 150 metres from a house or cabin, and pick berries and mushrooms. The park regulation allows careful use of wood for campfires and twigs for traditional snaring, but standing dead pines must not be felled. From 15 April to 15 September it is forbidden across Norway to light a fire in or near forest and other open country unless the municipality has allowed it or a fire plainly cannot spread; check before you go. Dogs must be on a lead from 1 April to 20 August under the national dog law.",
+    "Motor traffic is forbidden on land and water and in the air below 300 metres, which rules out drones and e-bikes; Miljødirektoratet's rule is that drones may not take off in a national park or be flown into one without the management board's permission. There are fixed exceptions for reindeer herding, the permanently occupied mountain farms at Gjevsjøen and Gaundalen, the road from Gaundalen to Sweden, and motorboats on Vivassfiskløysa, Holderen, Gjevsjøen and Gauna. Horse-drawn carts are allowed only on routes the management authority has set. Unnecessary noise from loudspeakers, machines and motors is banned.",
+    "Walking trips run by trekking associations, schools, kindergartens and voluntary organisations are allowed; other organised traffic needs permission. Hunting and fishing follow the ordinary laws, except that moose and other deer may not be hunted in the area that was Gressåmoen National Park. Cultural remains — Sámi sites included — must not be moved or damaged."
+  ],
+  "sights": [
+    {
+      "name": "Midtiklumpen",
+      "note": "Åakerebahke in South Sámi. The park's highest summit, 1,333 metres, in the Blåfjella massif of the north-east.",
+      "location": [
+        64.109,
+        13.375
+      ]
+    },
+    {
+      "name": "Skjækerhatten",
+      "note": "Huvhpie in South Sámi. The landmark peak of the southern Skjækerfjella, where the park's valleys are greenest.",
+      "location": [
+        64.014,
+        12.482
+      ]
+    },
+    {
+      "name": "Skjækerdalen",
+      "note": "The southern valley named in the park's protection purpose as one of its most important landscapes; trails lead in from Vera and Skjækerfossen.",
+      "location": [
+        63.926,
+        12.253
+      ]
+    },
+    {
+      "name": "Gaundalen",
+      "note": "A valley named in the park's protection purpose, with a mountain farm that visitors reach by boat from the Swedish side.",
+      "location": [
+        64.037,
+        12.617
+      ]
+    },
+    {
+      "name": "Holderen",
+      "note": "A lake with Holden mountain farm on its shore, now a waypoint on the route between Gaundalen and Gjevsjøen.",
+      "location": [
+        64.052,
+        12.892
+      ]
+    },
+    {
+      "name": "Gjevsjøen",
+      "note": "The lake beside Gjefsjøen farm, base of the American Operation Rype in the spring of 1945.",
+      "location": [
+        64.0805,
+        13.0513
+      ]
+    },
+    {
+      "name": "Bukvassfjellet",
+      "note": "Bare gneiss fells in the barren north, once Gressåmoen National Park, where moose and deer may still not be hunted.",
+      "location": [
+        64.353,
+        13.126
+      ]
+    },
+    {
+      "name": "Lierne Nasjonalparksenter",
+      "note": "The authorised visitor centre for Blåfjella-Skjækerfjella and Lierne, at Nordli, with an exhibition on living from nature and with predators, and a geology park outside.",
+      "location": [
+        64.464,
+        13.593
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "South, from Stiklestad along Fv 757 towards Vera; trails start at Skjækerfossen, Storlunet and Vera",
+      "West, from Steinkjer on Fv 762 via Gaulstad to Lustadvatnet, then a path towards Skjækervatnet",
+      "West, from Snåsa on Fv 763 to Breide and Grønningen, or via Agle and Skromo to the car park at Storåskammen, or up the Lurudal road to Gressåmoen farm",
+      "North, from Formofoss on Fv 74 to Nordli, turning off at Trongen or parking at Gosen on Lifjellet",
+      "East, along Fv 765 through Sørli, turning off at Jule, Bruvoll or Eide",
+      "From Sweden: 55 km from Kallsedet via Övereng to Edevik, then by boat to Gaundalen farm"
+    ],
+    "reservations": "No booking or entry fee for the park itself. Trekking-association cabins and farm lodgings are run by their owners; check with them before you go. There are no marked or groomed ski trails in winter.",
+    "permits": [
+      "Organised activities other than walking trips by trekking associations, schools and voluntary groups need permission from the management authority",
+      "Any motor use, including snowmobiles and drones, needs a permit"
+    ],
+    "camping": [
+      "Wild camping anywhere under the right to roam",
+      "Nord-Trøndelag Turistforening runs Skjækerdalshytta, Sætertjønnhytta and Bekkstuggu at Holden mountain farm"
+    ],
+    "lodging": [
+      "Gressåmoen mountain farm, just outside the north-western boundary",
+      "Verdal, Steinkjer, Snåsa and Lierne"
+    ],
+    "seasonalClosures": []
+  },
+  "weather": "This is inland mountain country at 64°N, and the winter is long. The park authority names July, August and September as the best months for walking, when the snow has gone from the fells; midges and mosquitoes come with high summer, so bring repellent. April and May are the months for ski touring, with long days as the land comes back to life after the winter. There are no marked winter trails, and large areas have no mobile coverage.",
+  "directions": "The park lies about three hours' drive north-east of Trondheim. The Nordland Line from Trondheim runs along the park's western side through Verdal, Steinkjer and Snåsa, the towns where the roads to the western and southern trailheads begin; Fv 74 and Fv 765 reach the northern and eastern sides through Lierne. There is also an approach from Sweden by road to Edevik and boat to Gaundalen.",
+  "chronology": [
+    {
+      "year": "Stone Age",
+      "text": "Hunters and fishers leave the earliest traces of people in the area."
+    },
+    {
+      "year": "Over 500 years ago",
+      "text": "South Sámi reindeer herding is established; it has continued here for more than 500 years."
+    },
+    {
+      "year": "1945",
+      "text": "Operation Rype, an American OSS parachute force led by William Colby, operates from Gjefsjøen farm and sabotages the Nordland Line."
+    },
+    {
+      "year": "1970",
+      "text": "Gressåmoen National Park is created in the north-west of today's park."
+    },
+    {
+      "year": "2004",
+      "text": "On 17 December Blåfjella-Skjækerfjella National Park is created, absorbing Gressåmoen; Lierne National Park is created the same day."
+    },
+    {
+      "year": "2015–2024",
+      "text": "The boundary is adjusted several times, bringing the area to about 1,968 square kilometres."
+    }
+  ],
+  "safety": [
+    "There are few marked trails and none in winter. Carry map and compass and do not count on mobile coverage, which is missing across large areas.",
+    "Boulder fields and mires make for slow, ankle-turning going; plan shorter days than the distance suggests.",
+    "Bears, lynx and wolverines live here. Keep food out of reach in camp and never approach a den or a female with young.",
+    "Rivers have few bridges and run high with snowmelt in early summer; cross with care or go round."
+  ],
+  "regulations": [
+    "No motor traffic on land, water or in the air below 300 metres — drones and e-bikes included — without a permit.",
+    "Organised activities other than walking trips by trekking associations, schools and voluntary groups need permission.",
+    "No hunting of moose or other deer in the former Gressåmoen National Park.",
+    "Do not fell standing dead pines; use wood for fires sparingly.",
+    "No open fires in or near forest from 15 April to 15 September unless the municipality allows it; dogs on a lead from 1 April to 20 August."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-wetland",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Skjækerhatten.jpg",
+      "caption": "Skjækerhatten, Huvhpie in South Sámi, the landmark of the southern Skjækerfjella",
+      "altText": "A rounded mountain summit rising above open fell country"
+    },
+    {
+      "file": "File:Gjevsjøen.jpg",
+      "caption": "Gjevsjøen from Gjefsjøen mountain farm, base of Operation Rype in 1945",
+      "altText": "A wide lake between low wooded hills under a broad sky"
+    },
+    {
+      "file": "File:Gressaamoen.JPG",
+      "caption": "Infields and farmstead at Gressåmoen, on the park's north-western edge",
+      "altText": "Old timber farm buildings in a clearing surrounded by mountain forest"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Blåfjella-Skjækerfjella nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/blafjella-skjakerfjella/"
+    },
+    {
+      "title": "Blåfjella-Skjækerfjella nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00001562"
+    },
+    {
+      "title": "Blåfjella-Skjækerfjella / Låarte-Skæhkere nasjonalpark — nasjonalparken.no (park board and visitor centre)",
+      "url": "https://nasjonalparken.no/nasjonalparker/blafjella-skjaekerfjella-laarte-skaehkere-nasjonalpark/"
+    },
+    {
+      "title": "Forskrift om verneplan for Verdal-Snåsa-Lierne (Blåfjella-Skjækerfjella nasjonalpark) — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/2004-12-17-1691"
+    },
+    {
+      "title": "Blåfjella–Skjækerfjella National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bl%C3%A5fjella%E2%80%93Skj%C3%A6kerfjella_National_Park"
+    },
+    {
+      "title": "Blåfjella-Skjækerfjella nasjonalpark — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/Bl%C3%A5fjella-Skj%C3%A6kerfjella_nasjonalpark"
+    },
+    {
+      "title": "Operasjon Rype — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/Operasjon_Rype"
+    },
+    {
+      "title": "Fylkesvei 74 — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/Fylkesvei_74"
+    },
+    {
+      "title": "Fylkesvei 765 — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/Fylkesvei_765"
+    },
+    {
+      "title": "Regler for droner i naturen — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/ansvarsomrader/vernet-natur/regler-for-droner-i-naturen/"
+    },
+    {
+      "title": "Lov om friluftslivet (friluftsloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/1957-06-28-16"
+    },
+    {
+      "title": "Forskrift om brannforebygging — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Lov om forsvarlig hundehold (hundeloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+    },
+    {
+      "title": "Sight locations — Kartverket place names (stedsnavn) and address register",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

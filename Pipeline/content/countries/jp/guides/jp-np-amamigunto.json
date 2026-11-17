@@ -1,0 +1,249 @@
+{
+  "placeID": "jp-np-amamigunto",
+  "contentVersion": 1,
+  "summary": "Eight subtropical islands between Kyushu and Okinawa. On Amami Ōshima and Tokunoshima, dense evergreen forest shelters the Amami rabbit and other animals found nowhere else, and is part of a World Heritage Site; mangroves line the river mouths. The flatter coral islands of Kikaijima, Okinoerabujima and Yoron offer caves, raised reefs, white sand and clear water.",
+  "facts": {
+    "establishedYear": 2017,
+    "areaHectares": 42196,
+    "bestSeasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Three to six days"
+  },
+  "story": [
+    "The Amami Islands were once part of the eastern edge of the Asian continent; about two million years ago movements of the earth's crust split the Ryukyu chain off from it. Amami Ōshima, Kakeromajima, Ukejima, Yoroshima and Tokunoshima are steep and mountainous, with mountains running down to cliffed coasts; Kikaijima, Okinoerabujima and Yoron are low islands of raised coral limestone, with terraces, karst and caves, and Tokunoshima too has wide areas of limestone, sea caves and karst.",
+    "Isolation turned the forests of the high islands into a refuge. Evergreen broadleaf forest of chinquapin and oak, often wrapped in cloud on the summits, shelters species that survive nowhere else: the Amami rabbit, a short-eared, dark rabbit from an old lineage that has died out elsewhere; Amami and Tokunoshima spiny rats; Lidth's jay; and Amami Ishikawa's frog. The habu, a venomous pit viper, lives in the forests and fields. At the river mouths of Sumiyō on Amami Ōshima grows one of the largest mangrove forests in Japan.",
+    "The islands' wildlife nearly paid for a mistake. Around 1979 about thirty mongooses were released on Amami Ōshima to kill habu; they multiplied to an estimated ten thousand by 2000 and preyed on the native animals instead. A long trapping campaign followed, native animals such as the Amami spiny rat recovered, and in September 2024 the Ministry of the Environment declared the mongoose eradicated from the island.",
+    "The coasts were protected as a quasi-national park from 1974. On 7 March 2017 Amamigunto National Park was created, Japan's thirty-fourth, taking in the forests of the high islands as well. In July 2021, the forests of Amami Ōshima and Tokunoshima were inscribed, with northern Okinawa and Iriomote, as the World Heritage Site 'Amami-Ōshima Island, Tokunoshima Island, Northern Part of Okinawa Island, and Iriomote Island'."
+  ],
+  "howItWorks": [
+    "Amamigunto is a regional park spread across eight islands and the sea around them. Land ownership is mixed: about a fifth is state land, a quarter belongs to local government, and nearly half is private. Villages, sugar-cane fields, harbours and the town of Naze lie among its pieces, and on Yoron almost the entire coast is inside the park.",
+    "The strictest zones — the special protection zone and Class 1 special zone, together about a third of the land — cover the old forests of Amami Ōshima and Tokunoshima that make up the World Heritage Site. Most of the remaining land is Class 2 special zone. At sea, marine park zones protect the reefs of the Kasari Peninsula, Surikozaki, the Ōshima Strait and Yoron's lagoon and coast.",
+    "Local rules control access to the most sensitive forest. Since February 2019 visitors to the Kinsakubaru forest on Amami Ōshima have normally had to go with a certified Amami eco-tour guide, with limits on the number of vehicles at a time, and some forest roads on Tokunoshima need a guide or advance application. Some forest roads also have rules for night driving, meant to stop rare animals being run over. Rules change; check with Kagoshima Prefecture and the local municipalities before you go."
+  ],
+  "sights": [
+    {
+      "name": "Kinsakubaru (金作原)",
+      "note": "Old subtropical forest with giant evergreen oaks on Amami Ōshima, visited with a certified local guide along a forest road.",
+      "location": [
+        28.3308,
+        129.4564
+      ]
+    },
+    {
+      "name": "Sumiyō Mangroves (住用のマングローブ林)",
+      "note": "One of Japan's largest mangrove forests, at the mouths of the Sumiyō and Yakugachi rivers; explore it by kayak.",
+      "location": [
+        28.2595,
+        129.4082
+      ]
+    },
+    {
+      "name": "Yuwandake (湯湾岳)",
+      "note": "Amami Ōshima's highest mountain, cloaked in evergreen forest and often in cloud.",
+      "location": [
+        28.296,
+        129.3211
+      ]
+    },
+    {
+      "name": "Ayamaru Cape (あやまる岬)",
+      "note": "A headland on the Kasari Peninsula looking over coral reefs and the open sea.",
+      "location": [
+        28.473,
+        129.7163
+      ]
+    },
+    {
+      "name": "Inokawadake (井之川岳)",
+      "note": "A forested mountain on Tokunoshima, known for its ferns and endemic plants.",
+      "location": [
+        27.7787,
+        128.9831
+      ]
+    },
+    {
+      "name": "Mushiro-se (ムシロ瀬)",
+      "note": "Broad rock shelves cut flat by the waves on Tokunoshima's north coast.",
+      "location": [
+        27.8935,
+        128.9012
+      ]
+    },
+    {
+      "name": "Shōryūdō Cave (昇竜洞)",
+      "note": "A limestone cave on Okinoerabujima, one of hundreds on the island, with a lit section open to visitors.",
+      "location": [
+        27.3627,
+        128.5525
+      ]
+    },
+    {
+      "name": "Yurigahama (百合ヶ浜)",
+      "note": "A white sandbar that appears off Yoron at low tide, changing shape and position from year to year.",
+      "location": [
+        27.0389,
+        128.4655
+      ]
+    },
+    {
+      "name": "Amami Wildlife Center (奄美野生生物保護センター)",
+      "note": "The Ministry of the Environment's conservation centre in Yamato village: the islands' wildlife, the mongoose campaign and forest rules.",
+      "location": [
+        28.3556,
+        129.3929
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Amami Airport and Naze Port, Amami Ōshima — the forests, mangroves and the Ōshima Strait",
+      "Setouchi, at the south of Amami Ōshima, facing Kakeromajima, Ukejima and Yoroshima across the Ōshima Strait",
+      "Tokunoshima Airport and Kametoku Port",
+      "Kikai Airport, Kikaijima",
+      "Okinoerabu Airport and Wadomari Port",
+      "Yoron Airport and Yoron Port"
+    ],
+    "reservations": "No park permit is needed, but Kinsakubaru is normally visited only with a certified guide, and some forest roads on Tokunoshima need a guide or advance application; book a guide ahead. Flights and ferries between the islands are limited and cancelled in bad weather. Check before you go.",
+    "permits": [
+      "Kinsakubaru forest — normally with a certified Amami eco-tour guide",
+      "Some forest roads on Tokunoshima — certified guide or advance application"
+    ],
+    "camping": [],
+    "lodging": [
+      "Hotels and guesthouses in Naze and around the airport on Amami Ōshima",
+      "Small inns on Kakeromajima, Tokunoshima, Okinoerabujima and Yoron"
+    ],
+    "seasonalClosures": []
+  },
+  "weather": "The Amami Islands are subtropical: warm all year, with mild, often cloudy winters and long, hot, humid summers. The rainy season comes earlier than on the mainland, from about May into June. Typhoons are frequent from July to October and can cut the islands off for days, cancelling ferries and flights. The forests are wet at any time of year. Spring and autumn are the most comfortable seasons for walking; summer is the time for the sea.",
+  "directions": "Flights from Tokyo Haneda and Narita reach Amami Airport on Amami Ōshima in two and a half to three hours, and there are flights from Kagoshima, Osaka, Fukuoka and Naha. Kagoshima also has flights to Tokunoshima, Kikai and Okinoerabu, and Naha to Yoron and Okinoerabu. Ferries run by Marix Line and A-Line link Kagoshima and Naha, calling at Naze, Kametoku on Tokunoshima, Wadomari on Okinoerabujima and Yoron; Kagoshima to Naze takes about eleven hours. On Amami Ōshima, Shima Bus serves Naze, the airport and the south of the island; on the other islands buses are scarce and a hire car is the practical choice.",
+  "chronology": [
+    {
+      "year": "1974",
+      "text": "Amami Guntō Quasi-National Park is designated on 15 February, mainly along the coasts."
+    },
+    {
+      "year": "c. 1979",
+      "text": "About thirty mongooses are released on Amami Ōshima to control habu."
+    },
+    {
+      "year": "2017",
+      "text": "Amamigunto National Park is designated on 7 March, replacing the quasi-national park."
+    },
+    {
+      "year": "2019",
+      "text": "Rules for visiting the Kinsakubaru forest with certified guides come into force in February."
+    },
+    {
+      "year": "2021",
+      "text": "Amami Ōshima and Tokunoshima are inscribed as part of a natural World Heritage Site with northern Okinawa and Iriomote."
+    },
+    {
+      "year": "2024",
+      "text": "The Ministry of the Environment declares the mongoose eradicated from Amami Ōshima on 3 September."
+    }
+  ],
+  "safety": [
+    "Habu, a venomous snake, live throughout the forests and fields and are most active at night and in warm months. Keep to paths, carry a torch after dark, and do not reach into vegetation or stone walls. If bitten, keep still and get to hospital at once.",
+    "Typhoons can strike from July to October. Follow local warnings and expect transport to stop.",
+    "Currents over the reefs and through channels are strong, especially on a falling tide. Snorkel with a guide or in sheltered lagoons.",
+    "Drive slowly on forest roads, especially at night, when rare animals such as the Amami rabbit cross them."
+  ],
+  "regulations": [
+    "Do not catch, feed or disturb wild animals; the Amami rabbit and many other species are protected by law.",
+    "Follow the Kinsakubaru and forest-road rules on guides, vehicles and night driving.",
+    "In the marine park zones, collecting designated corals, fish and shells needs permission.",
+    "Do not bring cats, dogs or other animals into the forest, and clean seeds and soil from boots."
+  ],
+  "themes": [
+    "theme-islands",
+    "theme-coral-reef",
+    "theme-wetland",
+    "theme-caves",
+    "theme-coastal"
+  ],
+  "photos": [
+    {
+      "file": "File:Kinsakubaru wildwood.jpg",
+      "caption": "The Kinsakubaru forest on Amami Ōshima",
+      "altText": "A forest track through dense subtropical growth with large tree ferns"
+    },
+    {
+      "file": "File:Mangrove forest in Amami Oshima.jpg",
+      "caption": "Mangroves along a river on Amami Ōshima",
+      "altText": "A small river winding between mangroves and thick vegetation below forested hills"
+    },
+    {
+      "file": "File:Yurigahama.jpg",
+      "caption": "Yurigahama, the sandbar off Yoron that appears at low tide",
+      "altText": "Visitors and a boat on a bright white sandbar in shallow turquoise water"
+    },
+    {
+      "file": "File:In no jofuta coast.jpg",
+      "caption": "Inu-no-jōfuta coast on Tokunoshima",
+      "altText": "Green-topped limestone cliffs above a rocky shore and breaking surf"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amamigunto National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/amamigunto/"
+    },
+    {
+      "title": "奄美群島国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/amami/index.html"
+    },
+    {
+      "title": "奄美群島国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/amami/intro/index.html"
+    },
+    {
+      "title": "国立公園の概要・地種区分別面積（令和8年4月10日現在）— 環境省",
+      "url": "https://www.env.go.jp/park/doc/data/national/np_1.pdf"
+    },
+    {
+      "title": "金作原 — 鹿児島県",
+      "url": "https://www.pref.kagoshima.jp/ad13/kurashi-kankyo/kankyo/amami/kinsakubaru.html"
+    },
+    {
+      "title": "奄美大島におけるフイリマングースの根絶について — 環境省九州地方環境事務所",
+      "url": "https://kyushu.env.go.jp/okinawa/awcc/pdf/20240903-1.pdf"
+    },
+    {
+      "title": "奄美群島国立公園 公園の特徴 — 環境省「国立公園に、行ってみよう！」",
+      "url": "https://www.env.go.jp/nature/nationalparks/list/amami-gunto/feature/"
+    },
+    {
+      "title": "林道山クビリ線における利用ルールの運用について — 鹿児島県",
+      "url": "https://www.pref.kagoshima.jp/ad13/kurashi-kankyo/kankyo/amami/yamakubiri.html"
+    },
+    {
+      "title": "奄美大島の三太郎線周辺における夜間利用ルール — 鹿児島県",
+      "url": "https://www.pref.kagoshima.jp/ad13/kurashi-kankyo/kankyo/amami/santarou2.html"
+    },
+    {
+      "title": "奄美空港 — 鹿児島県",
+      "url": "https://www.pref.kagoshima.jp/ah09/infra/port/kuko/amami.html"
+    },
+    {
+      "title": "奄美群島国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/奄美群島国立公園"
+    },
+    {
+      "title": "Amami Guntō National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amami_Guntō_National_Park"
+    },
+    {
+      "title": "Amami Ōshima — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amami_Ōshima"
+    },
+    {
+      "title": "奄美大島 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/奄美大島"
+    }
+  ]
+}

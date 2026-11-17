@@ -1,0 +1,241 @@
+{
+  "placeID": "no-np-ovre-pasvik",
+  "contentVersion": 1,
+  "summary": "Norway's largest old-growth pine forest, at the far end of Pasvikdalen between Finland and Russia: the north-western corner of the Siberian taiga, a quiet mosaic of ancient pines, shallow lakes and bogs where brown bears roam and the birds are those of the eastern taiga. A five-kilometre path leads to Treriksrøysa, where Norway, Finland and Russia meet. In Northern Sámi the park is Báhčaveaji álbmotmeahcci; in Skolt Sámi, Paččjooǥǥ meermeäʹcc.",
+  "facts": {
+    "establishedYear": 1970,
+    "areaHectares": 11900,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "One to two days"
+  },
+  "story": [
+    "Øvre Pasvik lies at the southern end of Pasvikdalen, the valley that runs between Finland and Russia about 100 kilometres south of Kirkenes. It is the north-western corner of the Siberian taiga, and unusually flat for Norway. During the last ice age the ice lay still over this level ground instead of grinding across it, so it left the lakes shallow; the largest of them is Ellenvatnet. The bedrock is gneiss, which makes poor soil, and the climate is dry, with little rain or snow and cold, dry winters.",
+    "The forest is the reason for the park: the largest old-growth pine forest in Norway, a mosaic of pine, lakes and bogs largely untouched by modern forestry. Dead and fallen trees lie where they fall and feed rare lichens and bracket fungi. Pasvikdalen has Norway's densest population of brown bears, and the birds are those of the eastern taiga — Siberian jay, smew, Siberian tit and pine grosbeak. Labrador tea grows in the bogs, and the lakes are rich in perch, pike and grayling.",
+    "People have lived in Pasvikdalen since the Stone Age. In historical times this was Skolt Sámi country, and old pines in the park still carry the scars where bark was cut, a trace of Sámi settlement; some 300 such trees in Øvre Pasvik have been mapped, dated from 1778 to 1903. Today the park is important winter grazing for reindeer herders, and visitors are asked to take extra care not to disturb the animals.",
+    "The national park was created in 1970. In 2003 it was enlarged to 119 square kilometres, and the Øvre Pasvik Landscape Protection Area was set up beside it. With Pasvik Nature Reserve, Finland's Vätsäri wilderness and the Russian part of the reserve, the park forms the Pasvik–Inari Trilateral Park, a cooperation between the three countries that began in the late 1980s."
+  ],
+  "howItWorks": [
+    "The right to roam (allemannsretten) applies: you may walk where you like, pick berries and mushrooms, and camp. From 15 April to 15 September national fire law forbids lighting a fire in or near woodland and other open country unless it plainly cannot spread or the municipality allows it. The park's own rule protects its dead trees: burn only fallen wood and dry twigs, and never a dead standing pine (tørrfuru), however tempting. Hunting is allowed under the game laws except in the area of the original 1970 park, and nobody may put out bait or feed wildlife for photography.",
+    "Motor traffic is banned on land and water, and so is flying lower than 300 metres; motorised model aircraft, drones included, are banned. Cycling and organised riding are allowed only on routes set out in the management plan, and organised activity other than ordinary walking needs permission from the Øvre Pasvik National Park Board.",
+    "This is a border area, and the police enforce special rules. The Russian border is also the outer border of the Schengen area and may be crossed only at Storskog. Near it you may not talk to or make contact with anyone across the border, make threatening gestures, damage or move border markings, walk round or climb the border cairns and concrete posts, or photograph Russian military equipment or personnel. Keep to the path and out of the cleared border strip; the border guard patrols the area, and breaking the rules is a criminal offence."
+  ],
+  "sights": [
+    {
+      "name": "Treriksrøysa",
+      "note": "The cairn on Krokfjellet where Norway, Finland and Russia meet, about 5 km by path from Grensefoss. You may not walk round it or climb it.",
+      "location": [
+        69.052,
+        28.929
+      ]
+    },
+    {
+      "name": "Ellenvatnet",
+      "note": "The park's largest lake, in its centre. A marked path from Sortbrysttjern leads to the open cabin Ellenvannskoia.",
+      "location": [
+        69.12,
+        28.904
+      ]
+    },
+    {
+      "name": "Ødevatnet",
+      "note": "A long, narrow lake lying in a deep fault in the bedrock; the same fault runs on north-east to the cliffs of Revsaksskaret.",
+      "location": [
+        69.065,
+        28.989
+      ]
+    },
+    {
+      "name": "Revsaksskaret",
+      "note": "Steep cliffs in the south-east of the park, on the fault line that runs north-east from Ødevatnet.",
+      "location": [
+        69.092,
+        29.052
+      ]
+    },
+    {
+      "name": "Sortbrysttjern",
+      "note": "Trailhead with parking, a shelter, fire site and toilet. The path to Ellenvannskoia carries boards on nature and Sámi culture, and continues into Finland's Vätsäri wilderness.",
+      "location": [
+        69.159,
+        28.98
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Grensefoss",
+      "note": "Trailhead for Treriksrøysa, with parking, a shelter, fire site and toilet; the path runs about 5 km to the cairn.",
+      "location": [
+        69.024,
+        29.029
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Besøkssenter Øvre Pasvik nasjonalpark (NIBIO Svanhovd)",
+      "note": "The park's authorised visitor centre at Svanvik: exhibitions on the forest, the brown bear and the Skolt Sámi, a botanical garden, and rooms to stay.",
+      "location": [
+        69.454,
+        30.04
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Sortbrysttjern — the path to Ellenvannskoia and on into Finland's Vätsäri wilderness",
+      "Grensefoss — the path to Treriksrøysa"
+    ],
+    "reservations": "No permit or booking is needed to enter the park. The visitor centre at Svanhovd posts its opening times and events on its own pages — check before you go.",
+    "permits": [
+      "Organised activity other than walking needs permission from the Øvre Pasvik National Park Board",
+      "Hunting and fishing need licences; there is no hunting in the area of the original 1970 park"
+    ],
+    "camping": [
+      "Wild camping under the right to roam",
+      "Two open cabins, Ellenvannskoia and Piilolakoia on the Finnish border, and shelters with fire sites at the trailheads"
+    ],
+    "lodging": [
+      "Rooms at NIBIO Svanhovd, Svanvik",
+      "Kirkenes, about 100 kilometres to the north"
+    ],
+    "seasonalClosures": [
+      "The roads to Sortbrysttjern and Grensefoss can be driven only in the summer half of the year; the gravel forest road towards Grensefoss is poorest during the spring thaw — check before you go"
+    ]
+  },
+  "weather": "Pasvikdalen has an inland climate with little precipitation — about 350 millimetres a year — and cold, dry winters; −45 °C has been measured in the park. The midnight sun shines for about 60 days in summer. The park is easiest to reach in summer, when the roads to the trailheads are open and the marked paths are clear of snow; June to October is the walking season.",
+  "directions": "Fly to Kirkenes, which has direct flights from Oslo and from Tromsø, or arrive on the Hurtigruten coastal ship. The visitor centre at Svanhovd is about 35 kilometres south of Kirkenes on the Fv 8850 through Pasvikdalen, and the park lies at the end of the valley, about 100 kilometres from Kirkenes — two and a half to three hours' drive to the Treriksrøysa trailhead. A car is the easiest way; the visitor centre can also be reached by Boreal bus (timetables on snelandia.no) or by taxi. For Treriksrøysa, turn off at the Gjøkåsen border station near the end of the valley road and follow the gravel forest road to the car park.",
+  "chronology": [
+    {
+      "year": "Stone Age",
+      "text": "People first live in Pasvikdalen."
+    },
+    {
+      "year": "c. 500–1800",
+      "text": "There is Sámi settlement in the area."
+    },
+    {
+      "year": "1970",
+      "text": "Øvre Pasvik National Park is created to protect the old-growth pine forest."
+    },
+    {
+      "year": "Late 1980s",
+      "text": "Norway, Finland and Russia begin cooperating on their neighbouring protected areas, later the Pasvik–Inari Trilateral Park."
+    },
+    {
+      "year": "2001",
+      "text": "The national park visitor centre opens at Svanhovd."
+    },
+    {
+      "year": "2003",
+      "text": "On 29 August the park is enlarged to 119 square kilometres, and the Øvre Pasvik Landscape Protection Area is created beside it."
+    }
+  ],
+  "safety": [
+    "The forest is flat with few landmarks, and it is easy to lose your way. Carry a map, compass and GPS, and use lakes and streams to keep your bearings.",
+    "Brown bears live in and around the park. They are shy, and you are more likely to find their tracks than to see one; if you do, keep your distance.",
+    "Crossing the Russian border anywhere except the Storskog border station is a criminal offence. Follow the signs at the Grensefoss car park and at Treriksrøysa, and the border guard's instructions.",
+    "Winters are long and very cold. Winter trips need full cold-weather equipment and experience."
+  ],
+  "regulations": [
+    "Motor traffic, flying below 300 metres and drones are banned.",
+    "Dead standing pines may not be burned; use fallen wood and dry twigs.",
+    "Baiting or feeding wildlife for photography is banned.",
+    "There is no hunting in the area of the original 1970 park.",
+    "Do not walk round or climb Treriksrøysa or other border markers, and do not photograph Russian military equipment or personnel."
+  ],
+  "themes": [
+    "theme-wetland",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:TER - Treriksroysa Finland-Norway-Russia tripoint, 2024.jpg",
+      "caption": "Treriksrøysa, where the borders of Norway, Finland and Russia meet",
+      "altText": "A border cairn in a forest clearing"
+    },
+    {
+      "file": "File:TER - Trail to the Finland-Norway-Russia tripoint from Norway, 2024.jpg",
+      "caption": "The forest path to Treriksrøysa from the Norwegian side",
+      "altText": "A narrow path through pine forest"
+    },
+    {
+      "file": "File:Russia-Norway-Finland border.jpg",
+      "caption": "The tripoint cairn on Krokfjellet; walking round it is not permitted",
+      "altText": "The border cairn at the meeting point of three countries"
+    },
+    {
+      "file": "File:Norway Finland Russia cairn.jpg",
+      "caption": "Four men at Treriksrøysa, photographed by Ellisif Wessel",
+      "altText": "An old photograph of four men standing by a stone cairn"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Øvre Pasvik nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/ovre-pasvik/"
+    },
+    {
+      "title": "Øvre Pasvik nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00000012"
+    },
+    {
+      "title": "Forskrift om vern av Øvre Pasvik nasjonalpark/Báhčaveaji álbmotmeahcci — Lovdata",
+      "url": "https://lovdata.no/forskrift/2003-08-29-1104"
+    },
+    {
+      "title": "Om Øvre Pasvik nasjonalpark — Besøkssenter Øvre Pasvik nasjonalpark",
+      "url": "https://pasvik.no/om-oss/"
+    },
+    {
+      "title": "Innfallsporter — Besøkssenter Øvre Pasvik nasjonalpark",
+      "url": "https://pasvik.no/innfallsporter/"
+    },
+    {
+      "title": "Om besøkssenteret — Besøkssenter Øvre Pasvik nasjonalpark",
+      "url": "https://pasvik.no/om-besokssenter/"
+    },
+    {
+      "title": "Pasvik-Enare trilaterale park — Besøkssenter Øvre Pasvik nasjonalpark",
+      "url": "https://pasvik.no/pasvik-enare-trilaterale-park/"
+    },
+    {
+      "title": "Samiske kulturminner — Besøkssenter Øvre Pasvik nasjonalpark",
+      "url": "https://pasvik.no/samisk-ord-begrep-og-bruk-av-omradet/"
+    },
+    {
+      "title": "Den norsk-russiske grensen — Politiet",
+      "url": "https://politiet.no/en/rad/grensepassering/den-norsk-russiske-grensen"
+    },
+    {
+      "title": "Treriksrøysa — Travel North",
+      "url": "https://www.travel-north.no/sor-varanger-treriksroysa/"
+    },
+    {
+      "title": "Treriksrøysa Pasvikdalen — UT.no",
+      "url": "https://ut.no/turforslag/117658"
+    },
+    {
+      "title": "Forskrift om brannforebygging § 3 — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Øvre Pasvik National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Øvre_Pasvik_National_Park"
+    },
+    {
+      "title": "Øvre Pasvik nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Øvre_Pasvik_nasjonalpark"
+    },
+    {
+      "title": "Øvre Pasvik nasjonalpark — Store norske leksikon",
+      "url": "https://snl.no/Øvre_Pasvik_nasjonalpark"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

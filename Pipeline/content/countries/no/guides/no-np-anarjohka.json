@@ -1,0 +1,193 @@
+{
+  "placeID": "no-np-anarjohka",
+  "contentVersion": 1,
+  "summary": "The quiet south-eastern corner of Finnmarksvidda, against the Finnish border: low ridges of heather and reindeer lichen, wide bogs, countless lakes, and birch and pine along the headwaters of the Anárjohka and Kárášjohka. No marked trails, no open huts and no facilities. Sámi reindeer herds winter here, and brown bears den in the forest.",
+  "facts": {
+    "establishedYear": 1975,
+    "areaHectares": 139000,
+    "bestSeasons": [
+      "summer"
+    ],
+    "suggestedTime": "Several days"
+  },
+  "story": [
+    "Anárjohka lies on the south-eastern edge of Finnmarksvidda, the high plateau of inner Finnmark, where the land rolls in low, dry ridges between bogs and lakes. Roughly half the park is treeless tundra and mire. Heather, dwarf shrubs and wide mats of reindeer lichen cover the ridges; birch and pine forest follow the river valleys and run on, unbroken, into the pine forests of Finnish Lapland. Some of the bogs are kilometres long, and walkers have to go round them.",
+    "The park takes in the upper catchments of two rivers, the Anárjohka and the Kárášjohka, which run north past Karasjok and join to form the Tana, Deatnu in Northern Sámi. The Anárjohka rises here and forms the border with Finland, and across it lies Finland's Lemmenjoki National Park. Gavdnjajávri is the largest of its more than 700 lakes and ponds.",
+    "This is part of a core area for brown bears in Norway, shared with a larger Finnish population; bears den and breed in the park, and wolverines pass through. Moose are the largest animals. The northern red-backed vole, a Siberian species that in Norway lives only in Finnmark, is the park's signature mammal. The birdlife leans east too: bar-tailed godwits, spotted redshanks and jack snipe breed on the mires, with bean geese and whooper swans on the lakes, and the numbers of ptarmigan, birds of prey and long-tailed skuas rise and fall with the vole and lemming years.",
+    "The landscape has been shaped by centuries of North Sámi reindeer herding, and it is still a working one: the park is winter pasture, where the cold, stable, thin-snow winters keep the lichen within reach of the herds. The park was created by royal decree on 19 December 1975 as Øvre Anarjokka — Upper Anarjokka — to keep a representative piece of Finnmarksvidda as free of human influence as possible. In 2021 it took its present names, Anárjoga álbmotmeahcci in Northern Sámi and Anárjohka nasjonalpark in Norwegian."
+  ],
+  "howItWorks": [
+    "Anyone may walk here under the right to roam, allemannsretten: on foot anywhere in the uncultivated outfield, all year, with care. You may camp without asking the landowner for two nights in one place, and longer in remote country like this, as long as the tent is at least 150 metres from a house or cabin. Berry picking is allowed, and so is taking wood for a fire on the spot, though hollow trees and trunks that birds might nest in must be left standing. From 15 April to 15 September it is forbidden across Norway to light a fire in or near forest and other open country unless the municipality has allowed it or a fire plainly cannot spread; check before you go with Karasjok or Kautokeino municipality. Dogs must be kept on a lead from 1 April to 20 August under the national dog law.",
+    "The park's own regulation dates from 1975 and is unusually strict about groups. All organised traffic is banned, which includes military and civil exercises, organised training courses, organised walking tourism and dog trials. Motor traffic on land and water, and landing with aircraft, is forbidden except for border patrols, police, ambulance and the supervision of reindeer herding, hunting, fishing and the park itself. Treat drones as banned: Miljødirektoratet's general rule is that drones are banned in national parks, both taking off inside one and flying in from outside, and that permission is a matter for the national park board. Marking trails is also forbidden, which is why there are none.",
+    "Wild mammals and birds and their nests are protected, and so are plants beyond what ordinary walking, herding, hunting and fishing disturb. Fishing follows the ordinary rules. Reindeer herders have the right to use the park and may drive snowmobiles here in winter with a permit; keep your distance from herds, especially in winter and spring."
+  ],
+  "sights": [
+    {
+      "name": "Anárjohka",
+      "note": "The border river with Finland, Inarijoki in Finnish. It rises in the park and flows north to join the Kárášjohka and form the Tana.",
+      "location": [
+        68.886,
+        25.331
+      ]
+    },
+    {
+      "name": "Gavdnjajávri",
+      "note": "The largest lake in the park, on the open vidda west of the Anárjohka.",
+      "location": [
+        68.743,
+        24.588
+      ]
+    },
+    {
+      "name": "Kárášjohka",
+      "note": "The headwaters of the river that gives Karasjok its name, rising in the western part of the park.",
+      "location": [
+        68.762,
+        24.286
+      ]
+    },
+    {
+      "name": "Bávttajohka",
+      "note": "One of the larger rivers draining the park northward towards the Tana.",
+      "location": [
+        68.824,
+        24.604
+      ]
+    },
+    {
+      "name": "Goššjohka",
+      "note": "The valley used as a northern way in: a road of about 12 kilometres up the valley, then about 15 kilometres on foot to the park boundary.",
+      "location": [
+        68.932,
+        25.005
+      ]
+    },
+    {
+      "name": "Skiehččanjohka",
+      "note": "One of the park's larger rivers, in the eastern part of the park near the Finnish border.",
+      "location": [
+        68.743,
+        25.124
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The Anárjohka valley: a gravel forest road leaves the Karasjok–Finland road about 17 km from Karasjok and runs some 70 km up the valley; from its end it is about 5 km on foot to the park boundary. Most summer visitors come in this way",
+      "The Goššjohka valley: a road of about 12 km up the valley, then roughly 15 km on foot to the boundary",
+      "From Kautokeino on foot, by way of Ávži or Šihččajávri — longer, and usually with a night out on the way"
+    ],
+    "reservations": "Nothing to book and nothing to pay. There are no open huts, shelters or marked trails inside the park, so plan to carry a tent and navigate by map and compass.",
+    "permits": [
+      "Organised groups — guided walking tours, courses, exercises — are banned by the 1975 regulation unless the management authority grants an exemption",
+      "Any motorised transport, including snowmobiles and aircraft landings, needs a permit and is granted essentially only for reindeer herding and supervision"
+    ],
+    "camping": [
+      "Wild camping anywhere under the right to roam; there is no campsite or hut inside the park",
+      "The Andreas Nilsen hut, an open cabin just outside the boundary, makes a base for day trips"
+    ],
+    "lodging": [
+      "Karasjok and Kautokeino, the nearest towns"
+    ],
+    "seasonalClosures": []
+  },
+  "weather": "The park lies well north of the Arctic Circle, in the continental interior of Finnmark. Winters are long, cold and stable, with relatively little snow, which is what makes the vidda good winter grazing for reindeer. The walking season is short: the park authority names July and August as the best months, with the midnight sun around midsummer. The larger rivers can run low, which matters if you plan to travel by canoe or packraft.",
+  "directions": "There is no railway in Finnmark. The usual approach is by road to Karasjok on the E6, then about 17 km along the road towards the Finnish border before turning south up the Anárjohka valley on a long gravel forest road. The park can also be reached on foot from Kautokeino, and the walk in is somewhat shorter from the Finnish side. Canoeists and packrafters use the larger rivers as routes, but must expect to walk long stretches when the water is low.",
+  "chronology": [
+    {
+      "year": "After the last ice age",
+      "text": "Reindeer — wild at first, herded for the last few centuries — begin moving between winter grazing here and summer pastures on the coast."
+    },
+    {
+      "year": "1956",
+      "text": "Finland creates Lemmenjoki National Park, across the Anárjohka from the future Norwegian park."
+    },
+    {
+      "year": "1974",
+      "text": "A boundary is drawn up for a proposed Øvre Anarjokka National Park."
+    },
+    {
+      "year": "1975",
+      "text": "A royal decree of 19 December creates Øvre Anarjokka National Park in Karasjok and Kautokeino."
+    },
+    {
+      "year": "1976",
+      "text": "The protection rules take effect on 1 April."
+    },
+    {
+      "year": "2021",
+      "text": "The park is renamed Anárjoga álbmotmeahcci / Anárjohka nasjonalpark, dropping 'Øvre', upper."
+    }
+  ],
+  "safety": [
+    "This is genuine wilderness with no marked paths, no huts and long distances to help. Carry map, compass and a way to call for help, and leave a route plan with someone at home.",
+    "Bogs can stretch for kilometres and rivers have no bridges. Plan routes around the mires and expect to ford or detour.",
+    "Brown bears live and breed here. Make noise in thick forest, keep a clean camp, and never approach a bear or a den.",
+    "Rivers rise quickly with snowmelt and heavy rain and fall low in dry spells; judge every crossing on the day, and do not rely on paddling the whole way."
+  ],
+  "regulations": [
+    "All organised traffic — guided tours, courses, exercises — is banned without an exemption.",
+    "No motor vehicles, boats with motors or aircraft landings; drones need permission from the management board.",
+    "Trail marking is forbidden; leave no cairns or tape.",
+    "No open fires in or near forest from 15 April to 15 September unless the municipality allows it.",
+    "Dogs on a lead from 1 April to 20 August."
+  ],
+  "themes": [
+    "theme-tundra",
+    "theme-wetland",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Ravdojavri-02.jpg",
+      "caption": "Nuortitt Rávdojávri, where the Kárášjohka has its source, looking west",
+      "altText": "A calm lake among low, sparsely wooded ridges on an open plateau"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Anárjohka nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/anarjohka/"
+    },
+    {
+      "title": "Anárjohka nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00000006"
+    },
+    {
+      "title": "Forskrift om fredning av Anárjoga álbmotmeahcci / Anárjohka nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/1975-12-19-19"
+    },
+    {
+      "title": "Anárjohka National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/An%C3%A1rjohka_National_Park"
+    },
+    {
+      "title": "Anárjohka nasjonalpark — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/An%C3%A1rjohka_nasjonalpark"
+    },
+    {
+      "title": "Lemmenjoki National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lemmenjoki_National_Park"
+    },
+    {
+      "title": "Regler for droner i naturen — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/ansvarsomrader/vernet-natur/regler-for-droner-i-naturen/"
+    },
+    {
+      "title": "Lov om friluftslivet (friluftsloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/1957-06-28-16"
+    },
+    {
+      "title": "Forskrift om brannforebygging — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Lov om forsvarlig hundehold (hundeloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+    },
+    {
+      "title": "Sight locations — OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

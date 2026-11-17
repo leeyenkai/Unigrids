@@ -1,0 +1,233 @@
+{
+  "placeID": "no-np-sjunkhatten",
+  "contentVersion": 1,
+  "summary": "A wild block of peaks, lakes and fjords on Bodø's doorstep, protected in 2010 and known as 'the children's national park' because nearly half of Nordland's young people live within reach of it. Ski the classic top of Kvalhornet, walk to Finnkonnakken, or follow the fjord into Sjunkfjorden below the 1,185-metre summit that gives the park its name. In Lule Sámi the park is Dávga.",
+  "facts": {
+    "establishedYear": 2010,
+    "areaHectares": 41750,
+    "bestSeasons": [
+      "winter",
+      "summer"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "Sjunkhatten is a mountain peninsula between Saltfjorden and Sørfolda, north-east of Bodø, where ice carved sharp peaks and rounded tops, steep walls, cirques and the open valley of Fridalen, and where the land, rising since the ice left, has left old shorelines and terraces on the slopes. The summit of Sjunkhatten, 1,185 metres above the west side of Sjunkfjorden, is the highest point; from there the park runs down to sea level and takes in nearly 40 square kilometres of fjord.",
+    "Parts of the park are karst. The shoulder of hills above Øvre Valnesfjord has an unusually high density of caves and ranks among the more important cave areas in Norway, and streams here simply vanish underground. The lakes and bogs round Sætervatnet and Halsvatnet are breeding grounds for red- and black-throated divers, velvet scoter and horned grebe, and Sjunkfjorden, like the rest of inner Sørfolda, is an important water for salmon and sea trout.",
+    "People have used this country for a very long time: the oldest known traces are some 8,000 to 9,000 years old. Many later remains are Sámi — offering sites, graves, hearths, storage pits and reindeer fences, thickest between Heggvassbotn and Midtiskardet — and some may come from a Sámi hunting culture older than reindeer herding. From the 1500s Norwegian farms spread into the fjords, living from outfield grazing and fishing, and a few families still farm and fish in Sjunkfjorden today. The Duokta grazing district, a Lule Sámi herding area, still has its calving land almost entirely inside the park.",
+    "Sjunkhatten became a national park by royal decree on 5 February 2010. Its regulation names children and young people in its purpose, and the park board has built its plans around that: the main entrances at Heia outside Bodø, Fridalen in Øvre Valnesfjord and Røsvik on the Sørfold coast are chosen to be easy to reach from schools, towns and the sea."
+  ],
+  "howItWorks": [
+    "Norway's right to roam (allemannsretten) applies throughout: you may walk, ski and camp freely, pick berries and mushrooms, and pick common plants for your own use. Organised walking trips are allowed as long as nature does not suffer. From 15 April to 15 September national fire law forbids lighting a fire in or near woodland and other open country unless it plainly cannot spread or the municipality has allowed it; the regulation allows wood to be used sparingly for a campfire. Dogs must be kept on a lead from 1 April to 20 August under the national Dog Act.",
+    "Motor traffic on land, on fresh water and in the air below 300 metres is banned; boats on the fjords are not affected. Motorised model aircraft, and so drones, are banned, and electric bicycles may not be used in the park. Cycling and organised riding are allowed only on routes approved in the management plan. Caving is permitted in Kjøttkjerstihola and Singelhola; organised trips into any other cave need the park board's permission. Around Sætervatnet and Halsvatnet, organised activities off the marked paths between 15 April and 1 August need permission, to spare nesting water birds.",
+    "The park is part of the Duokta reindeer grazing district, and its spring calving land stretches from Øvre Valnesfjord north-west to Sjunkfjorden. Give herds a wide berth in spring and during calf-marking in summer, and keep dogs leashed whenever reindeer may be near. Cultural monuments, including the many Sámi sites, are protected: leave stones and loose finds where they lie."
+  ],
+  "sights": [
+    {
+      "name": "Sjunkhatten",
+      "note": "The park's highest summit at 1,185 metres, a landmark on the west side of Sjunkfjorden that gives the park its name.",
+      "location": [
+        67.479,
+        15.127
+      ]
+    },
+    {
+      "name": "Sjunkfjorden",
+      "note": "A fjord reaching into the heart of the park, where a few families still live from farming and fishing on the old infields.",
+      "location": [
+        67.465,
+        15.182
+      ]
+    },
+    {
+      "name": "Kvalhornet",
+      "note": "One of the classic ski tops of Sjunkhatten, with easy access, reliable snow and a view over the park's fjords and peaks.",
+      "location": [
+        67.374,
+        15.158
+      ]
+    },
+    {
+      "name": "Finnkonnakken",
+      "note": "A popular walk on the Bodø side. Its traffic rose sharply when it joined Bodø's 'ten summits' list, and boardwalks have since been laid over wet ground.",
+      "location": [
+        67.4368,
+        14.8196
+      ]
+    },
+    {
+      "name": "Sætervatnet",
+      "note": "A lake and wetland in Øvre Valnesfjord where divers, velvet scoter and horned grebe breed; one of the park's most important places for water birds.",
+      "location": [
+        67.436,
+        15.384
+      ]
+    },
+    {
+      "name": "Steigtinden",
+      "note": "A landmark peak on the Bodø side of the park, climbed by groups from Sjunkhatten camp school.",
+      "location": [
+        67.3882,
+        14.7399
+      ]
+    },
+    {
+      "name": "Besøkssenter nasjonalpark Nordland",
+      "note": "The authorised visitor centre for Sjunkhatten, at Storjord on the E6 in Saltdal, with exhibitions, maps and route advice.",
+      "location": [
+        66.8144,
+        15.3996
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Heia, outside Bodø — the main entrance on the Bodø side and the start of the winter route to Erlingbu",
+      "Fridalen in Øvre Valnesfjord, Fauske — the main entrance on the Fauske side, with groomed ski trails nearby",
+      "Røsvik, Sørfold — the coastal entrance, where boats can carry visitors into the park",
+      "Smaller starting points include Finnkonnakken, Festvåg, Vatnlia and Kvalhornet"
+    ],
+    "reservations": "No permit or booking is needed to visit. The park has about 77 kilometres of paths.",
+    "permits": [
+      "Organised trips off the marked paths around Sætervatnet and Halsvatnet from 15 April to 1 August need permission from the Midtre Nordland National Park Board",
+      "Organised trips into caves other than Kjøttkjerstihola and Singelhola need permission",
+      "Organised horse riding outside the approved routes needs permission"
+    ],
+    "camping": [
+      "Wild camping under the right to roam"
+    ],
+    "lodging": [],
+    "seasonalClosures": []
+  },
+  "weather": "Sjunkhatten lies on the western side of the Scandinavian mountain chain and has an oceanic climate, cool and damp. About 1,100 millimetres of rain and snow fall in a year, most of it from September to November and least from April to August. Winter is the park's busiest season: Fridalen and the routes to Erlingbu fill with skiers, and ski tourers head for tops such as Kvalhornet.",
+  "directions": "The park lies just outside Bodø, whose airport, railway station and Hurtigruten quay are all close at hand. The Bodø entrance is at Heia; Fauske's is Fridalen in Øvre Valnesfjord, and Røsvik on the Sørfold coast is the entrance from the sea. Some summits on the park's edge can be reached by train and bus.",
+  "chronology": [
+    {
+      "year": "8,000–9,000 years ago",
+      "text": "People leave the oldest traces yet found in the area, in the Early Stone Age."
+    },
+    {
+      "year": "Before reindeer herding",
+      "text": "Sámi hunters leave offering sites, graves and trapping sites in the mountains."
+    },
+    {
+      "year": "1500s–1600s",
+      "text": "Norwegian farms spread into the fjords and valleys, into land long used by the Sámi."
+    },
+    {
+      "year": "1600s onwards",
+      "text": "Sámi families clear small farms of their own, as in Sørfjorden."
+    },
+    {
+      "year": "2010",
+      "text": "On 5 February Sjunkhatten National Park is created by royal decree, covering 417.5 square kilometres."
+    },
+    {
+      "year": "2010",
+      "text": "On 12 June the park is formally opened by the environment minister, Erik Solheim."
+    },
+    {
+      "year": "2020",
+      "text": "The park board adopts a visitor strategy built round three main entrances at Heia, Fridalen and Røsvik."
+    }
+  ],
+  "safety": [
+    "Steep slopes on the ski tops can avalanche. Check the forecast at varsom.no and choose routes to suit it.",
+    "Weather off the coast changes fast, and autumn is the wettest season. Carry windproof and waterproof layers on every trip.",
+    "Caves flood and are cold and dark; go underground only with proper equipment and someone who knows the cave, and only where caving is allowed."
+  ],
+  "regulations": [
+    "Motor traffic on land and fresh water, flying lower than 300 metres and drones are banned.",
+    "Electric bicycles may not be used; cycling only on approved routes.",
+    "Dogs must be kept on a lead from 1 April to 20 August.",
+    "Caving only in Kjøttkjerstihola and Singelhola without permission."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-fjords",
+    "theme-caves",
+    "theme-indigenous-heritage",
+    "theme-wetland"
+  ],
+  "photos": [
+    {
+      "file": "File:Sjunkhatten and the mountain ridge of Osatinden seen from Sørskarfjellet.jpg",
+      "caption": "Sjunkhatten and the ridge of Osatinden from Sørskarfjellet",
+      "altText": "A dark, steep-sided summit beside a jagged ridge"
+    },
+    {
+      "file": "File:Sjunkfjorden seen from Sørskarfjellet.jpg",
+      "caption": "Sjunkfjorden from Sørskarfjellet",
+      "altText": "A narrow fjord between steep mountainsides seen from above"
+    },
+    {
+      "file": "File:Stream from Langvatnet that disappears into a cave system.jpg",
+      "caption": "A stream from Langvatnet disappearing into a cave system",
+      "altText": "A small stream running into a hole in limestone rock"
+    },
+    {
+      "file": "File:Sjunkhatten i blått januarlys.jpg",
+      "caption": "Sjunkhatten in the blue light of January",
+      "altText": "A snow-covered mountain under a deep blue winter sky"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sjunkhatten nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/sjunkhatten/"
+    },
+    {
+      "title": "Sjunkhatten nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00002858"
+    },
+    {
+      "title": "Forskrift om Sjunkhatten nasjonalpark/Dávga suoddjimpárkka — Lovdata",
+      "url": "https://lovdata.no/forskrift/2010-02-05-131"
+    },
+    {
+      "title": "Sjunkhatten nasjonalpark — Midtre Nordland nasjonalparkstyre",
+      "url": "https://www.nasjonalparkstyre.no/Midtre-Nordland/verneomrader/sjunkhatten-nasjonalpark"
+    },
+    {
+      "title": "Ofte stilte spørsmål — Midtre Nordland nasjonalparkstyre",
+      "url": "https://www.nasjonalparkstyre.no/Midtre-Nordland/faq"
+    },
+    {
+      "title": "Besøksstrategi Sjunkhatten nasjonalpark (2020) — Midtre Nordland nasjonalparkstyre",
+      "url": "https://www.nasjonalparkstyre.no/uploads/files_midtre_nordland/Besoksstrategi-Sjunkhatten-nasjonalpark-godkjent-2020.pdf"
+    },
+    {
+      "title": "Forvaltningsplan Sjunkhatten nasjonalpark/Dávga suoddjimpárkka — Midtre Nordland nasjonalparkstyre",
+      "url": "https://www.nasjonalparkstyre.no/uploads/files_midtre_nordland/Forvaltningsplan-Sjunkhatten-nasjonalpark-Davga-suoddjimparkka.pdf"
+    },
+    {
+      "title": "Besøkssenter nasjonalpark Nordland",
+      "url": "https://www.nordlandsnaturen.no/besokssenter-nasjonalpark/"
+    },
+    {
+      "title": "Forskrift om brannforebygging § 3 — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Lov om hundehold (hundeloven) § 6 — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+    },
+    {
+      "title": "Sjunkhatten National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sjunkhatten_National_Park"
+    },
+    {
+      "title": "Sjunkhatten nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Sjunkhatten_nasjonalpark"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    },
+    {
+      "title": "Nordland nasjonalparksenter — OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/3685853029"
+    }
+  ]
+}

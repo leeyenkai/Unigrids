@@ -1,0 +1,258 @@
+{
+  "placeID": "jp-np-shikotsu-toya",
+  "contentVersion": 1,
+  "summary": "A museum of living volcanoes an hour from Sapporo: two great caldera lakes, Shikotsu and Toya, the near-perfect cone of Mount Yotei, and Usu, which has erupted four times in a century and raised a whole new mountain out of a wheat field. Soak in Noboribetsu or Jozankei, walk the craters of the 2000 eruption, or paddle one of the clearest lakes in Japan.",
+  "facts": {
+    "establishedYear": 1949,
+    "areaHectares": 99473,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Two to three days"
+  },
+  "story": [
+    "The park's two lakes fill calderas left by enormous eruptions. Lake Toya, eight to eleven kilometres across, formed about 110,000 years ago; Lake Shikotsu, more than 40,000 years ago. Shikotsu is the second-deepest lake in Japan and the northernmost lake in the country that does not freeze in winter, and its water is among the clearest in the country. New volcanoes then grew on the rims: Eniwa-dake on Shikotsu's northern shore and Tarumae on its southern, which still fumes from a lava dome inside its crater, and on Toya's southern rim, Usu.",
+    "Usu erupts every few decades. An eruption in 1910 raised a new hill, Meiji-shinzan, and brought the hot springs that became Toyako Onsen. From late 1943 the ground near its eastern foot began to swell, and by 1945 a wheat field had been pushed up into Showa-shinzan, a lava dome that is now a Special Natural Monument. Usu erupted again in 1977, and on 31 March 2000 it burst open at its western foot; scientists had forecast the eruption, and more than ten thousand people had already been evacuated. The craters and wrecked roads from 2000 are now walking trails.",
+    "To the north-west rises Mount Yotei, 1,898 metres, a stratovolcano so symmetrical it is called Ezo Fuji. Its slopes show the full sequence of Hokkaido's vegetation, from broadleaf forest through conifers to alpine flowers such as yellow rhododendron at the top, and the summit's alpine plant zone is a natural monument. Ezo red squirrels and black woodpeckers live in the forests around Shikotsu, and the lakes hold himemasu, landlocked sockeye salmon known in Hokkaido by the Ainu-derived name chip.",
+    "Volcanic heat feeds some of Hokkaido's best-known hot-spring towns. Noboribetsu's waters, from the steaming explosion crater of Jigokudani, were known in the Edo period, and inns opened there in the Meiji era. Jozankei, in the gorge of the Toyohira River south-west of Sapporo, draws on dozens of springs rising from cracks in the riverbed. The park was designated on 16 May 1949, and the Toya caldera and Usu are also a UNESCO Global Geopark."
+  ],
+  "howItWorks": [
+    "Shikotsu-Toya is a zoned park laid over national forest, farmland and resort towns. Of its 99,473 hectares, 88,507 are national land, 6,774 public and 4,192 private. It reaches into fourteen municipalities, from the city of Sapporo and the airport city of Chitose to Date, Noboribetsu and the small towns around Mount Yotei. The hot-spring towns of Noboribetsu, Toyako, Shikotsuko and Jozankei sit within or beside it, and farms spread over the plateau around Lake Toya.",
+    "Only 2,706 hectares are special protection zone, where picking any plant, collecting fallen leaves or branches, catching animals or lighting a fire all need a permit from the Minister of the Environment. About 57,000 hectares are special zone, where building, felling, quarrying and picking listed alpine plants need a permit, and 39,792 hectares — a large share — are ordinary zone, where only large-scale development must be notified. Three vehicle-restriction areas, around Lake Shikotsu, Muine-yama and Mount Yotei, keep off-road vehicles and snowmobiles out.",
+    "Three of the park's volcanoes — Usu, Tarumae, and Kuttara, the caldera beside Noboribetsu — are watched around the clock by the Japan Meteorological Agency, and paths near their craters close when the eruption alert level rises. At Hoheikyo, above Jozankei, the road to the dam is closed to private cars from early May to early November, and hybrid and electric buses carry visitors the last stretch instead."
+  ],
+  "sights": [
+    {
+      "name": "Lake Shikotsu (支笏湖)",
+      "note": "A deep, clear caldera lake ringed by forest and volcanoes, with sightseeing boats, canoes and the ice festival in winter.",
+      "location": [
+        42.76217,
+        141.32002
+      ]
+    },
+    {
+      "name": "Tarumae-zan (樽前山)",
+      "note": "A volcano south of Lake Shikotsu with a steaming lava dome inside its outer crater rim, and alpine flowers on its upper slopes.",
+      "location": [
+        42.689,
+        141.387
+      ]
+    },
+    {
+      "name": "Lake Toya and Nakajima (洞爺湖・中島)",
+      "note": "A round caldera lake with lava-dome islands at its centre, reached by sightseeing boat; Nakajima has walks of 45 minutes to three hours.",
+      "location": [
+        42.596,
+        140.845
+      ]
+    },
+    {
+      "name": "Nishiyama and Kompira crater trails (西山火口・金比羅火口散策路)",
+      "note": "Footpaths among the craters of Usu's 2000 eruption, past buckled roads and abandoned buildings.",
+      "location": [
+        42.564,
+        140.814
+      ]
+    },
+    {
+      "name": "Showa-shinzan (昭和新山)",
+      "note": "A lava dome pushed up out of a wheat field in 1943–45, now a Special Natural Monument and one of Japan's hundred geological heritage sites.",
+      "location": [
+        42.541,
+        140.859
+      ]
+    },
+    {
+      "name": "Mount Yotei (羊蹄山)",
+      "note": "The 1,898-metre cone of 'Ezo Fuji', climbed by four trails; the Kutchan route and the alpine summit zone are a natural monument.",
+      "location": [
+        42.827,
+        140.811
+      ]
+    },
+    {
+      "name": "Noboribetsu Jigokudani (登別地獄谷)",
+      "note": "An explosion crater about 450 metres long, full of steam vents and boiling pools, and the source of Noboribetsu Onsen's water.",
+      "location": [
+        42.498,
+        141.146
+      ]
+    },
+    {
+      "name": "Hoheikyo (豊平峡)",
+      "note": "A forested gorge above Jozankei, busy in the autumn colour season. The road to the dam is bus-only from May to November.",
+      "location": [
+        42.914,
+        141.152
+      ]
+    },
+    {
+      "name": "Lake Shikotsu Visitor Center",
+      "note": "At Shikotsuko Onsen, with displays and models on the lake and its volcanoes, in a building heated and lit by renewable energy.",
+      "location": [
+        42.773,
+        141.404
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Toyako Visitor Center and Volcano Science Museum",
+      "note": "At Toyako Onsen, on how Usu and the lake were formed, with aerial photographs of the eruptions. The museum charges admission.",
+      "location": [
+        42.564,
+        140.815
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Toya Takarada Nature Experience House",
+      "note": "On Toya's north shore, lending nets, binoculars and winter snowshoes free for the lakeside nature trail.",
+      "location": [
+        42.6417,
+        140.8498
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Shikotsuko Onsen, on the east shore of Lake Shikotsu, by bus from New Chitose Airport",
+      "Toyako Onsen, on Lake Toya's south shore, for Usu and Showa-shinzan",
+      "Noboribetsu Onsen, for Jigokudani and Lake Kuttara",
+      "Jozankei Onsen, south-west of Sapporo, for Hoheikyo",
+      "The Mount Yotei trailheads at Kutchan, Makkari, Kimobetsu and Kyōgoku"
+    ],
+    "reservations": "No reservation is needed to enter the park. There is no public transport between Lake Shikotsu and Lake Toya, and some trailheads, including Tarumae's, are reachable only by car or tour. Check bus timetables before you go.",
+    "permits": [
+      "No permit is needed for the park's trails; crater areas close when the eruption alert level rises"
+    ],
+    "camping": [
+      "Jozankei Nature Village, with tents and sleeping bags for hire"
+    ],
+    "lodging": [
+      "Noboribetsu Onsen and Karurusu Onsen",
+      "Toyako Onsen, one of the largest hot-spring towns in Hokkaido",
+      "Shikotsuko Onsen and Marukoma Onsen on Lake Shikotsu",
+      "Jozankei Onsen"
+    ],
+    "seasonalClosures": [
+      "The Hoheikyo dam road is closed to private cars from early May to early November, when hybrid and electric buses run"
+    ]
+  },
+  "weather": "Winters are snowy, but Lake Shikotsu does not freeze, and from late January to mid-February its shore hosts an ice festival of lit ice sculptures. In early summer the shiraneaoi flowers on Orofure-yama in mid-June, and alpine flowers bloom on the summits of Yotei and Tarumae. Autumn colour draws crowds from Sapporo to Hoheikyo.",
+  "directions": "New Chitose Airport, about 90 minutes from Tokyo, is the gateway: Hokkaido Chuo buses run to Lake Shikotsu in about 55 minutes, and JR trains run to Noboribetsu Station via Minami-Chitose. From Sapporo, the Hokuto limited express reaches Noboribetsu in about 1 hour 15 minutes and Tōya Station in about 1 hour 40 minutes; Jōtetsu buses run from Sapporo Station to Jozankei Onsen in about 1 hour 15 minutes. There is no direct public transport from Sapporo to Lake Shikotsu, and none between the two lakes; a car or a bus tour is the easiest way round.",
+  "chronology": [
+    {
+      "year": "c. 110,000 years ago",
+      "text": "A huge eruption forms the Toya caldera."
+    },
+    {
+      "year": "c. 40,000 years ago",
+      "text": "The Shikotsu caldera forms; Tarumae and Eniwa-dake later grow on its rim."
+    },
+    {
+      "year": "1910",
+      "text": "Usu erupts, raising Meiji-shinzan and bringing the hot springs of Toyako Onsen."
+    },
+    {
+      "year": "1943–45",
+      "text": "The ground near Usu's eastern foot swells into the lava dome of Showa-shinzan."
+    },
+    {
+      "year": "1949",
+      "text": "Shikotsu-Toya National Park is designated on 16 May."
+    },
+    {
+      "year": "2000",
+      "text": "Usu erupts on 31 March after a forecast that let more than ten thousand people be evacuated in time."
+    }
+  ],
+  "safety": [
+    "Usu, Tarumae and Kuttara are active volcanoes watched around the clock by the Japan Meteorological Agency. Check the eruption alert level, keep to the paths at Jigokudani and the Usu craters, and keep away from steaming ground and gas.",
+    "Brown bears (higuma) live in Hokkaido's forests, including these. Make noise on the trails, carry bear spray, and keep food sealed.",
+    "Mount Yotei rises to 1,898 metres from low farmland, so every route up it is a long, steep day. Start early and turn back in bad weather.",
+    "Lake Shikotsu is deep and cold; wear a buoyancy aid when paddling."
+  ],
+  "regulations": [
+    "Do not pick alpine plants; Yotei's summit flora and Showa-shinzan are protected as natural monuments.",
+    "Picking any plant, collecting fallen branches, catching animals or lighting a fire in the special protection zone needs a permit.",
+    "Private cars may not use the Hoheikyo dam road during the restriction season.",
+    "Snowmobiles and off-road vehicles are barred from the vehicle-restriction areas around Lake Shikotsu, Muine-yama and Mount Yotei."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-hot-springs",
+    "theme-mountains",
+    "theme-canyons"
+  ],
+  "photos": [
+    {
+      "file": "File:Lake Tōya and Mount Yotei 01.jpg",
+      "caption": "Lake Toya with Mount Yotei behind",
+      "altText": "A wide lake with a cone-shaped volcano rising beyond it"
+    },
+    {
+      "file": "File:20181107 Shikotsuko 6297 (48436883181).jpg",
+      "caption": "Lake Shikotsu",
+      "altText": "A clear blue lake below forested volcanic hills"
+    },
+    {
+      "file": "File:Mount Showa-shinzan and touyako.JPG",
+      "caption": "Showa-shinzan, the dome raised from a wheat field in the 1940s",
+      "altText": "A bare reddish lava dome rising from wooded ground"
+    },
+    {
+      "file": "File:Oyunuma river.jpg",
+      "caption": "The warm Oyunuma River near Noboribetsu",
+      "altText": "A steaming stream running through forest"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Shikotsu-Toya National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/shikotsu-toya/"
+    },
+    {
+      "title": "支笏洞爺国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/shikotsu/index.html"
+    },
+    {
+      "title": "支笏洞爺国立公園 見どころ・施設 — 国立公園に、行ってみよう！（環境省）",
+      "url": "https://www.env.go.jp/nature/nationalparks/list/shikotsu-toya/spot/"
+    },
+    {
+      "title": "国立公園一覧 — 環境省",
+      "url": "https://www.env.go.jp/park/parks/index.html"
+    },
+    {
+      "title": "令和８年度 国立公園自動車利用適正化対策等実施計画 — 環境省",
+      "url": "https://www.env.go.jp/park/system/files/np_8.pdf"
+    },
+    {
+      "title": "自然公園法（昭和32年法律第161号）— e-Gov法令検索",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000161"
+    },
+    {
+      "title": "北海道の火山 — 北海道",
+      "url": "https://www.pref.hokkaido.lg.jp/sm/ktk/bsb/kazan.html"
+    },
+    {
+      "title": "有珠山 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/有珠山"
+    },
+    {
+      "title": "支笏洞爺国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/支笏洞爺国立公園"
+    },
+    {
+      "title": "Explore Shikotsu-Toya — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/shikotsu-toya/explore/"
+    },
+    {
+      "title": "How to get there | Shikotsu-Toya — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/shikotsu-toya/how-to-get-there/"
+    }
+  ]
+}

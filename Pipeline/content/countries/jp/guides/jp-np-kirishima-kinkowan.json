@@ -1,0 +1,279 @@
+{
+  "placeID": "jp-np-kirishima-kinkowan",
+  "contentVersion": 1,
+  "summary": "Volcano country in southern Kyushu. In the north, the Kirishima range: more than twenty volcanoes, crater lakes, azaleas and the mountain where the gods are said to have descended. In the south, Kagoshima Bay, a drowned caldera, with Sakurajima erupting in the middle, the cone of Kaimondake on the Satsuma Peninsula and Cape Sata at the tip of mainland Japan. One of Japan's first three national parks.",
+  "facts": {
+    "establishedYear": 1934,
+    "areaHectares": 36605,
+    "bestSeasons": [
+      "spring",
+      "autumn"
+    ],
+    "suggestedTime": "Three to four days"
+  },
+  "story": [
+    "The Kirishima range is a crowd of more than twenty volcanoes, large and small, packed together on the border of Kagoshima and Miyazaki. Their craters hold lakes such as Ōnamiike and Miike, and the highest summit, Karakunidake, reaches 1,700 metres. Several are still active. Shinmoedake erupted violently in 2011, again in 2017 and 2018, and in June 2025, when the area within about three kilometres of the crater was closed.",
+    "To the south lies Kagoshima Bay — Kinkōwan — whose northern basin is the Aira caldera, formed in an enormous eruption nearly thirty thousand years ago. Sakurajima rose inside the Aira caldera and is one of Japan's most active volcanoes, throwing up ash many times in most years. In January 1914 it erupted so heavily that lava filled the strait to the east and joined the island to the Ōsumi Peninsula. Under the bay, at Wakamiko, hydrothermal vents still bubble from the floor of a submerged caldera.",
+    "Life here grows on fresh volcanic ground. Miyama-kirishima, a dwarf azalea named after these mountains, colours the Kirishima slopes in late spring; red pine and evergreen broadleaf forest cover the lower slopes; and at the far south, Cape Sata has subtropical plants such as Chinese fan palms. Sakurajima's ash-rich soil grows famously huge radishes, and across the bay the pine-backed beach and tidal flats of Shigetomi look out on the volcano.",
+    "The Kirishima mountains are sacred in Japanese myth: Ninigi-no-Mikoto, grandson of the sun goddess, is said to have descended from heaven on Takachiho-no-mine, and Kirishima Jingū at its foot is dedicated to him. Kirishima became one of Japan's first three national parks on 16 March 1934, with Setonaikai and Unzen. In 1964 Kagoshima Bay and Yakushima were added and the park became Kirishima-Yaku; in 2012 Yakushima became a park of its own, the northern part of the Aira caldera was added, and the park took its present name."
+  ],
+  "howItWorks": [
+    "Kirishima-Kinkōwan is a regional park in two main parts — the Kirishima range and the shores and islands of Kagoshima Bay — across two prefectures. About half the land is national forest and about 40 per cent privately owned. Sakurajima's villages and farms, the hot-spring towns of Kirishima and Ibusuki, shrines, fishing ports and parts of the city of Kagoshima lie inside or beside the park.",
+    "About 14 per cent of the land is special protection zone, and about half is special zone in three classes; the remaining third is ordinary zone. Marine park zones protect Sakurajima's lava coast, the sea off Cape Sata, the hydrothermal vents of Wakamiko and the tidal flats of Shigetomi. Vehicles are restricted around Lake Miike.",
+    "The volcanoes set the rules from day to day. The Japan Meteorological Agency issues Volcanic Alert Levels for the Kirishima volcanoes, including Shinmoedake, and for Sakurajima. On Sakurajima the area within about two kilometres of the craters is closed at all times, and the summit cannot be climbed. In Kirishima, trails close in rings around whichever crater is restless, so routes that were open last year may not be now."
+  ],
+  "sights": [
+    {
+      "name": "Karakunidake (韓国岳)",
+      "note": "The highest Kirishima summit, 1,700 metres, climbed from Ebino Kōgen; views over the crater lakes, Shinmoedake and, on clear days, Sakurajima. Check which trails are open.",
+      "location": [
+        31.9342,
+        130.8616
+      ]
+    },
+    {
+      "name": "Ōnamiike (大浪池)",
+      "note": "A round crater lake below Karakunidake, circled by a trail of about two hours; at its best in autumn colour.",
+      "location": [
+        31.9223,
+        130.8502
+      ]
+    },
+    {
+      "name": "Takachiho-no-mine (高千穂峰)",
+      "note": "The sacred mountain of the Kirishima range, a steep climb from Takachihogawara to the summit where myth says the gods descended.",
+      "location": [
+        31.8863,
+        130.9189
+      ]
+    },
+    {
+      "name": "Lake Miike (御池)",
+      "note": "A crater lake in forest on the Miyazaki side, with a lakeside campsite and good birdwatching.",
+      "location": [
+        31.8838,
+        130.9703
+      ]
+    },
+    {
+      "name": "Sakurajima and Yunohira Observatory (桜島・湯之平展望所)",
+      "note": "A viewpoint high on the flank of Kagoshima's restless volcano, looking up at the summit and across the bay. Sakurajima is 15 minutes by ferry from Kagoshima.",
+      "location": [
+        31.5915,
+        130.63
+      ]
+    },
+    {
+      "name": "Kaimondake (開聞岳)",
+      "note": "A graceful volcanic cone at the southern tip of the Satsuma Peninsula.",
+      "location": [
+        31.18,
+        130.5284
+      ]
+    },
+    {
+      "name": "Cape Sata (佐多岬)",
+      "note": "The southernmost point of mainland Japan: sea cliffs, subtropical palms and an observatory looking out over the ocean.",
+      "location": [
+        30.9945,
+        130.6603
+      ]
+    },
+    {
+      "name": "Ogawa Falls (雄川の滝)",
+      "note": "A waterfall in a gorge on the Ōsumi Peninsula, added to the park in 2018.",
+      "location": [
+        31.2006,
+        130.8249
+      ]
+    },
+    {
+      "name": "Takachihogawara Visitor Center (高千穂河原ビジターセンター)",
+      "note": "At the trailhead for Takachiho-no-mine: trail and volcano information.",
+      "location": [
+        31.8857,
+        130.8959
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Sakurajima Visitor Center (桜島ビジターセンター)",
+      "note": "Near the ferry terminal: Sakurajima's eruptions, how people live with them, and the lava-shore Nagisa promenade.",
+      "location": [
+        31.5908,
+        130.5942
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Ebino Kōgen, by road from Kirishima Onsen — Karakunidake and the crater lakes",
+      "Takachihogawara, by road from Kirishima Jingū — Takachiho-no-mine",
+      "Kirishima Jingū Station and Kirishima Onsen, by JR limited express from Kagoshima-Chūō and Kagoshima Kōtsū buses",
+      "Kagoshima Port, with frequent ferries to Sakurajima",
+      "Ibusuki, by JR train from Kagoshima-Chūō — Kaimondake and the Satsuma Peninsula",
+      "Cape Sata, by road down the Ōsumi Peninsula"
+    ],
+    "reservations": "No park permit is needed. Which Kirishima trails are open depends on the alert levels of the individual volcanoes and changes often; check with the visitor centres and the Japan Meteorological Agency before you go.",
+    "permits": [],
+    "camping": [
+      "Lake Miike campsite on the Miyazaki side of Kirishima"
+    ],
+    "lodging": [
+      "Kirishima Onsen and the other hot-spring villages on the mountain's slopes",
+      "Ibusuki, known for its sand baths",
+      "Kagoshima city, a short ferry ride from Sakurajima"
+    ],
+    "seasonalClosures": [
+      "Trails on the Kirishima volcanoes close around any crater whose alert level rises; check before you go"
+    ]
+  },
+  "weather": "Southern Kyushu is warm and very wet. Winters are mild in Kagoshima but cold on the Kirishima uplands, which see snow. Spring is the best season, when the Miyama-kirishima azaleas flower on the mountains. The rainy season, from June into July, is heavy, and typhoons often cross the region from August to October. Sakurajima's ash falls wherever the wind carries it. Autumn is clear, with colour in the Kirishima forests.",
+  "directions": "From Tokyo, fly to Kagoshima Airport (about two hours). Kagoshima Kōtsū buses run from the airport to Kirishima Onsen, and airport buses run to Kagoshima-Chūō Station. By rail, the Kyushu Shinkansen runs to Kagoshima-Chūō; from there JR limited expresses reach Kirishima-Jingū Station, with infrequent buses on to Kirishima Onsen and the trailheads, and the JR Ibusuki Makurazaki Line runs south along the Satsuma Peninsula. Sakurajima ferries leave Kagoshima Port, a short walk from Kagoshima Station, and take about 15 minutes. Buses in the park are infrequent, and a car from Kagoshima or the airport makes it far easier to reach the trailheads and Cape Sata.",
+  "chronology": [
+    {
+      "year": "c. 29,000 years ago",
+      "text": "A gigantic eruption forms the Aira caldera, the northern basin of Kagoshima Bay."
+    },
+    {
+      "year": "1715",
+      "text": "Kirishima Jingū's present shrine buildings are erected; earlier shrines nearer the craters had been destroyed by eruptions."
+    },
+    {
+      "year": "1914",
+      "text": "Sakurajima's Taishō eruption begins in January; lava joins the island to the Ōsumi Peninsula."
+    },
+    {
+      "year": "1934",
+      "text": "On 16 March Kirishima becomes one of Japan's first three national parks, together with Setonaikai and Unzen."
+    },
+    {
+      "year": "1964",
+      "text": "Kagoshima Bay and Yakushima are added, and the park is renamed Kirishima-Yaku."
+    },
+    {
+      "year": "2011",
+      "text": "Shinmoedake erupts in January and February, scattering ash and volcanic bombs."
+    },
+    {
+      "year": "2012",
+      "text": "Yakushima becomes a separate park, the northern Aira caldera is added and the park is renamed Kirishima-Kinkōwan."
+    },
+    {
+      "year": "2018",
+      "text": "Ogawa Falls and the surrounding gorge are added."
+    },
+    {
+      "year": "2025",
+      "text": "Shinmoedake erupts in June; its alert level stays at 3 until October."
+    }
+  ],
+  "safety": [
+    "These are active volcanoes. Check the Japan Meteorological Agency's Volcanic Alert Levels for the Kirishima volcanoes and Sakurajima before you go; at level 2 the area around a crater is closed, at level 3 the mountain.",
+    "Never enter Sakurajima's restricted zone, which covers about two kilometres around the craters at all times. Carry a mask and eye protection if ash is falling.",
+    "Volcanic gas collects near vents and in hollows on the Kirishima uplands. Keep to the open trails and leave quickly if you smell sulphur strongly or feel unwell.",
+    "The climb of Takachiho-no-mine crosses loose scree and is exposed to wind and lightning; turn back in poor weather."
+  ],
+  "regulations": [
+    "Trails closed because of volcanic activity must not be entered.",
+    "Sakurajima's summit and the area within about two kilometres of its craters are closed to everyone at all times.",
+    "Vehicles are restricted around Lake Miike, and plants and animals are protected in the special protection zone.",
+    "In the marine park zones, collecting designated marine life needs permission."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-mountains",
+    "theme-hot-springs",
+    "theme-sacred-places",
+    "theme-coastal"
+  ],
+  "photos": [
+    {
+      "file": "File:Mount Shinmoe and Mount Takachihonomine 2012-11-18 (8337230446).jpg",
+      "caption": "Shinmoedake, steaming, with Takachiho-no-mine behind",
+      "altText": "A broad volcanic crater with white steam in the foreground and a pointed peak beyond in haze"
+    },
+    {
+      "file": "File:Mount Karakuni and Byakushi pond 2012 (17293331360).jpg",
+      "caption": "Karakunidake above Byakushi pond",
+      "altText": "A round blue crater lake ringed by forest below a bare, rounded volcanic summit"
+    },
+    {
+      "file": "File:Sakurajima from Yu no Hira.jpg",
+      "caption": "Sakurajima erupting, seen from Yunohira",
+      "altText": "A grey volcano with a plume of ash rising from its summit, seen from a viewing platform"
+    },
+    {
+      "file": "File:Kaimondake 2005 3 19.jpg",
+      "caption": "Kaimondake at the tip of the Satsuma Peninsula",
+      "altText": "A symmetrical volcanic cone above a rough sea with breaking white waves"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kirishima-Kinkowan National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/kirishima-kinkowan/"
+    },
+    {
+      "title": "霧島錦江湾国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/kirishima/index.html"
+    },
+    {
+      "title": "霧島錦江湾国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/kirishima/intro/index.html"
+    },
+    {
+      "title": "国立公園の概要・地種区分別面積（令和8年4月10日現在）— 環境省",
+      "url": "https://www.env.go.jp/park/doc/data/national/np_1.pdf"
+    },
+    {
+      "title": "霧島錦江湾国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/霧島錦江湾国立公園"
+    },
+    {
+      "title": "Kirishima-Kinkowan National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kirishima-Kinkōwan_National_Park"
+    },
+    {
+      "title": "Sakurajima — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sakurajima"
+    },
+    {
+      "title": "Shinmoedake — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shinmoedake"
+    },
+    {
+      "title": "霧島山（新燃岳）の噴火警戒レベルの引上げ（2025年6月23日）— 気象庁",
+      "url": "https://www.jma.go.jp/jma/press/2506/23a/20250623_shinmoedake.html"
+    },
+    {
+      "title": "Volcanic Warnings and Volcanic Alert Levels — Japan Meteorological Agency",
+      "url": "https://www.data.jma.go.jp/svd/vois/data/tokyo/STOCK/kaisetsu/English/level.html"
+    },
+    {
+      "title": "霧島山（新燃岳）の火山活動 — 気象庁",
+      "url": "https://www.data.jma.go.jp/vois/data/tokyo/STOCK/activity_info/551.html"
+    },
+    {
+      "title": "霧島山 — 気象庁",
+      "url": "https://www.data.jma.go.jp/vois/data/fukuoka/505_Kirishimayama/505_index.html"
+    },
+    {
+      "title": "桜島ビジターセンター",
+      "url": "https://www.sakurajima.gr.jp/"
+    },
+    {
+      "title": "霧島神宮 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/霧島神宮"
+    },
+    {
+      "title": "大浪池 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/大浪池"
+    },
+    {
+      "title": "御池 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/御池"
+    }
+  ]
+}

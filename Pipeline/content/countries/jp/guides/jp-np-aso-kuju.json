@@ -1,0 +1,284 @@
+{
+  "placeID": "jp-np-aso-kuju",
+  "contentVersion": 1,
+  "summary": "Volcanoes and grassland in the heart of Kyushu. Mount Aso's caldera, 25 kilometres long, holds towns, rice fields and the smoking crater of Nakadake; around it roll grasslands kept open by fire for more than a thousand years. To the north-east rise the Kujū mountains, the highest on the Kyushu mainland, with their Ramsar-listed marshes, and Mount Yufu and Mount Tsurumi above the hot springs of Yufuin and Beppu.",
+  "facts": {
+    "establishedYear": 1934,
+    "areaHectares": 76289,
+    "bestSeasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Three to four days"
+  },
+  "story": [
+    "Aso is one of the largest calderas in the world, about 25 kilometres from north to south and 18 from east to west, the collapsed remains of a volcano emptied by a series of colossal eruptions. Its floor is flat enough to farm, and towns and railways run across it. In the middle stand the five peaks of Aso — Takadake, the highest at 1,592 metres, Nakadake, Nekodake, Eboshidake and Kishimadake — and Nakadake is still active: its northern crater holds a hot, pale green lake that steams constantly, and it has erupted repeatedly, including in 2016 and 2021.",
+    "Around the caldera rim and on its outer slopes spread wide grasslands. They are not natural. Farmers have kept them open for more than a thousand years by grazing horses and red Aso cattle, cutting grass and burning the slopes each spring, a practice called noyaki, which clears shrubs and lets the grasses return. The open land supports rare grassland flowers and butterflies, and in 2013 the Aso grasslands were recognised as a Globally Important Agricultural Heritage System.",
+    "To the north-east, the Kujū mountains are a cluster of volcanoes whose highest summit, Nakadake at 1,791 metres, is the top of the Kyushu mainland. In early summer their slopes turn pink with Miyama-kirishima azalea. Among the peaks lies the high marsh of Bōgatsuru, and at their northern foot that of Tadewara; the two are listed together under the Ramsar Convention. Further north again, Mount Yufu and Mount Tsurumi stand over the hot-spring towns of Yufuin and Beppu.",
+    "Aso National Park was designated on 4 December 1934, one of five parks created that day. Mount Yufu, Mount Tsurumi and Takasakiyama were added in 1953, when the Yamanami Highway was planned across the uplands, and Takasakiyama passed to Setonaikai in 1956. The Yamanami Highway, opened as a toll road in 1964, still carries visitors across the uplands between Aso and Beppu. In 1986 the park was renamed Aso-Kujū, and in 2025 it was enlarged again."
+  ],
+  "howItWorks": [
+    "Aso-Kujū is a regional park in which people live and farm on a large scale. Only about 15 per cent of the land is national; more than 40 per cent belongs to local government, and the rest is private. The towns of Aso and Minamiaso, farms, ranches, shrines and hot-spring villages lie inside or beside it, and the grasslands survive only because farmers and volunteers keep burning and grazing them.",
+    "Just over half the park is special zone, in three classes, and only about 2.5 per cent special protection zone; much of the remainder is ordinary zone, where large works need only notice. Driving off-road is restricted around the ponds of Odanoike and Yamashitaike. The wetlands of Bōgatsuru and Tadewara are a Ramsar site, and the Aso caldera and its surroundings form a UNESCO Global Geopark, recognised in 2014.",
+    "The volcanoes set their own rules. The Japan Meteorological Agency watches Aso around the clock and sets a Volcanic Alert Level from 1 to 5 for Nakadake. The crater area is closed at level 2 and above, and also whenever the volcanic gas at the rim is too strong, so access changes from day to day. The crater was closed for much of 2026, first after an accident in January and then from June, when the alert level was raised; check before you go."
+  ],
+  "sights": [
+    {
+      "name": "Nakadake Crater (中岳火口)",
+      "note": "Aso's active crater, with a steaming lake of pale green water. Reached from the Aso-sanjō terminal by the crater shuttle or the toll road when the crater is open.",
+      "location": [
+        32.8817,
+        131.0846
+      ]
+    },
+    {
+      "name": "Kusasenri (草千里ヶ浜)",
+      "note": "A broad grassy meadow with a pond among Aso's central peaks; horse riding.",
+      "location": [
+        32.8815,
+        131.0536
+      ]
+    },
+    {
+      "name": "Komezuka (米塚)",
+      "note": "A small, almost perfectly shaped volcanic cone about 80 metres high on the slopes above the caldera floor.",
+      "location": [
+        32.9057,
+        131.0444
+      ]
+    },
+    {
+      "name": "Daikanbō (大観峰)",
+      "note": "A lookout on the northern caldera rim, over the farmed caldera floor to the five peaks of Aso.",
+      "location": [
+        32.9957,
+        131.0671
+      ]
+    },
+    {
+      "name": "Kujūsan (久住山)",
+      "note": "The Kujū range's namesake peak, 1,786 metres, climbed from Makinoto Pass; Nakadake, the Kyushu mainland's highest, is a short walk on.",
+      "location": [
+        33.0822,
+        131.2409
+      ]
+    },
+    {
+      "name": "Tadewara Marsh (タデ原)",
+      "note": "A Ramsar-listed highland marsh with a walking trail, beside the Chōjabaru Visitor Center.",
+      "location": [
+        33.1179,
+        131.2323
+      ]
+    },
+    {
+      "name": "Bōgatsuru (坊ガツル)",
+      "note": "A high marshy basin among the Kujū peaks, part of the Ramsar site, reached only on foot.",
+      "location": [
+        33.0979,
+        131.2592
+      ]
+    },
+    {
+      "name": "Mount Yufu (由布岳)",
+      "note": "A volcano of 1,583 metres above Yufuin; about four and a half hours up and back from the central trailhead.",
+      "location": [
+        33.2823,
+        131.3902
+      ]
+    },
+    {
+      "name": "Chōjabaru Visitor Center (長者原ビジターセンター)",
+      "note": "At the northern trailhead for the Kujū mountains, beside Tadewara: trail and volcano information.",
+      "location": [
+        33.119,
+        131.2304
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Aso Grassland Conservation Center (阿蘇草原保全活動センター)",
+      "note": "In Uchinomaki on the caldera floor: the grasslands, noyaki burning and how to volunteer.",
+      "location": [
+        32.9756,
+        131.0527
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Aso Volcano Museum (阿蘇火山博物館)",
+      "note": "Beside Kusasenri: the forces that shaped the Aso caldera and the Nakadake crater.",
+      "location": [
+        32.8855,
+        131.0521
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Aso Station on the JR Hōhi Line, with buses up to the Aso-sanjō terminal and the crater shuttle",
+      "Makinoto Pass and Chōjabaru on the Yamanami Highway — the Kujū mountains",
+      "Yufuin, by bus from Beppu — Mount Yufu",
+      "Beppu, for Mount Tsurumi and its ropeway"
+    ],
+    "reservations": "No park permit is needed. Access to the Nakadake crater depends on the volcanic alert level and on the day's gas readings, and it was closed for long periods in 2026; check the operator's and the Japan Meteorological Agency's information before you go.",
+    "permits": [],
+    "camping": [
+      "Campsites around the Aso caldera and on the Kujū highlands"
+    ],
+    "lodging": [
+      "Hot-spring inns in the Aso caldera",
+      "Hokke-in Onsen, high in the Kujū mountains",
+      "Hot springs on the Kujū highlands, such as Chōjabaru, Sujiyu and Hōsenji",
+      "Yufuin and Beppu"
+    ],
+    "seasonalClosures": [
+      "The Nakadake crater closes whenever the alert level is 2 or above or gas levels are high, and was closed for long stretches in 2026 — check before you go",
+      "Noyaki burning, from February to April, may close grassland roads and trails on burn days — check locally"
+    ]
+  },
+  "weather": "Central Kyushu's uplands are cooler than the coast. Winters are cold, with snow and ice on the Kujū peaks and the caldera rim and occasional road closures. Noyaki blackens the slopes in early spring, and the grass greens again in April and May. The azaleas flower on Kujū in late May and June. The rainy season from June into July is very wet here, and heavy rain can cause landslides around the caldera. Summer is mild on the grasslands, and the silver pampas grass of autumn is one of the park's sights.",
+  "directions": "From Tokyo, fly to Aso Kumamoto Airport; the Kyushu Ōdan bus runs from the airport to Aso Station and on to the Kujū trailheads at Makinoto Pass and Kujū-tozanguchi and to Yufuin. By rail, the JR Hōhi Line links Kumamoto, Aso and Ōita, and from Beppu the JR Nippō and Hōhi lines reach Aso via Ōita. Buses connect Beppu and Yufuin. From Aso Station, buses climb to the Aso-sanjō terminal, where a shuttle bus continues to the crater when it is open. The Yamanami Highway crosses the Kujū uplands between Aso and Yufuin, and a car is the most flexible way to reach the trailheads.",
+  "chronology": [
+    {
+      "year": "1934",
+      "text": "Aso National Park is designated on 4 December, one of five parks created that day."
+    },
+    {
+      "year": "1953",
+      "text": "Mount Yufu, Mount Tsurumi and Takasakiyama are added as the Yamanami Highway is planned."
+    },
+    {
+      "year": "1956",
+      "text": "Takasakiyama is transferred to Setonaikai National Park."
+    },
+    {
+      "year": "1964",
+      "text": "The Yamanami Highway opens as a toll road across the uplands."
+    },
+    {
+      "year": "1986",
+      "text": "The park is renamed Aso-Kujū on 10 September."
+    },
+    {
+      "year": "2013",
+      "text": "The Aso grasslands are recognised as a Globally Important Agricultural Heritage System."
+    },
+    {
+      "year": "2014",
+      "text": "Aso becomes a Global Geopark."
+    },
+    {
+      "year": "2021",
+      "text": "Nakadake erupts on 20 October."
+    },
+    {
+      "year": "2025",
+      "text": "A review enlarges the park on 28 February."
+    }
+  ],
+  "safety": [
+    "Aso is an active volcano. Check the Japan Meteorological Agency's Volcanic Alert Level and the crater access information before you go; at level 2 the crater area is closed.",
+    "Volcanic gas at the crater rim, mainly sulphur dioxide, is dangerous, above all for people with asthma, heart or lung conditions. Leave at once if you start to cough.",
+    "Fog rolls over the Kujū plateau quickly and the trails cross open, featureless ground; carry a map and turn back if you lose the route.",
+    "Heavy rain causes landslides around the caldera; heed road closures in the rainy season and typhoons."
+  ],
+  "regulations": [
+    "Do not enter the crater area when it is closed.",
+    "Stay on the paths at Tadewara and Bōgatsuru; the marshes are fragile.",
+    "Off-road driving is restricted around Odanoike and Yamashitaike, and plants and animals are protected in the special zones.",
+    "Grassland is private or common land used for grazing: close gates, keep away from cattle and horses, and keep off during noyaki burning."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-mountains",
+    "theme-hot-springs",
+    "theme-wetland"
+  ],
+  "photos": [
+    {
+      "file": "File:Mount Aso 2010-05 01.jpg",
+      "caption": "The steaming crater of Nakadake, Mount Aso",
+      "altText": "Clouds of white steam rising from a deep crater ringed by layered grey walls"
+    },
+    {
+      "file": "File:Kuju Mountains and Kuju Plateau.jpg",
+      "caption": "The Kujū mountains above the Kujū plateau",
+      "altText": "A range of bare volcanic peaks rising beyond flat green grassland"
+    },
+    {
+      "file": "File:Kusasenri 2011-10 01.jpg",
+      "caption": "Kusasenri and Eboshidake",
+      "altText": "A wide grassy meadow below a rounded green mountain, with a car park in the foreground"
+    },
+    {
+      "file": "File:Mount Yufu October 2011 01.jpg",
+      "caption": "Mount Yufu from Sagiridai",
+      "altText": "A twin-topped volcanic peak above green grassy slopes and a mountain road"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Aso-Kuju National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/aso-kuju/"
+    },
+    {
+      "title": "阿蘇くじゅう国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/aso/index.html"
+    },
+    {
+      "title": "阿蘇くじゅう国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/aso/intro/index.html"
+    },
+    {
+      "title": "Sustaining the grasslands — Ministry of the Environment",
+      "url": "https://www.env.go.jp/park/aso/data/mtasovc/sustaining-glasslands.html"
+    },
+    {
+      "title": "国立公園の概要・地種区分別面積（令和8年4月10日現在）— 環境省",
+      "url": "https://www.env.go.jp/park/doc/data/national/np_1.pdf"
+    },
+    {
+      "title": "阿蘇くじゅう国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/阿蘇くじゅう国立公園"
+    },
+    {
+      "title": "Aso Kujū National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aso_Kujū_National_Park"
+    },
+    {
+      "title": "Mount Aso — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mount_Aso"
+    },
+    {
+      "title": "Volcanic Warnings and Volcanic Alert Levels — Japan Meteorological Agency",
+      "url": "https://www.data.jma.go.jp/svd/vois/data/tokyo/STOCK/kaisetsu/English/level.html"
+    },
+    {
+      "title": "阿蘇山 火山の状況に関する解説情報 第32号（2026年11月13日）— 福岡管区気象台",
+      "url": "https://www.data.jma.go.jp/vois/data/report/volinfo/VK20261113160000_503.html"
+    },
+    {
+      "title": "阿蘇中岳の噴火警戒レベル引き上げと火口見学の休止（2026年6月22日のニュース）— KAB熊本朝日放送",
+      "url": "https://www.kab.co.jp/news/article/16664028"
+    },
+    {
+      "title": "阿蘇山火口シャトル — 九州産交バス",
+      "url": "https://www.sankobus.jp/site/aso/"
+    },
+    {
+      "title": "九州横断バス — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/九州横断バス"
+    },
+    {
+      "title": "タデ原 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/タデ原"
+    },
+    {
+      "title": "由布岳登山案内 — 由布岳カントリーロードユースホステル",
+      "url": "http://www.countryroadyh.com/tozan"
+    }
+  ]
+}

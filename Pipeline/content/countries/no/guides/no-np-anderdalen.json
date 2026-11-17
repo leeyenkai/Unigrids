@@ -1,0 +1,287 @@
+{
+  "placeID": "no-np-anderdalen",
+  "contentVersion": 1,
+  "summary": "A cross-section of Senja, Norway's second-largest island, running from sheltered Tranøybotn on the fjord side to sharp granite peaks above the open sea. Old coastal pine forest, some trees more than 500 years old, fills the lower valley; above it lie birch woods, mires, lakes and bare tops. Troms's oldest national park, and calving land for the Sámi reindeer herds of southern Senja.",
+  "facts": {
+    "establishedYear": 1970,
+    "areaHectares": 13390,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "One to two days"
+  },
+  "story": [
+    "Ånderdalen crosses the south of Senja from sea to sea. The rock is hard granite, formed about 1.7 billion years ago, and the last ice age treated its two sides differently. On the inner, eastern side the ice rode over everything and ground the hills round; on the outer side the summits stood above the ice and kept their points. Where the ice stagnated it dumped moraine hummocks and big boulders around Kapervatnet and Åndervatnet, whose islets are moraine mounds, and south of Åndervatnet streams have cut canyons up to 40 metres deep.",
+    "Old coastal pine forest is rare this far north, and the silver-grey dead pines standing among the living ones were one of the reasons the valley was protected; some of the pines are more than 500 years old. Above them grow birch woods — tall and little touched in narrow Trolldalen — and wide, wet mires, the mark of a coast open to the west. Granite makes poor soil, so plant species are few. Elk walked in during the 1940s and stayed, and the pinewoods hold three-toed woodpecker, crossbills and hawk owl, with white-tailed and golden eagles overhead.",
+    "Sea Sámi lived on Senja by the saga age or earlier and hunted and fished in Ånderdalen; later, some of the Sámi families who drove reindeer from Jukkasjärvi in Sweden each spring settled on the island. Old paths, trapping systems, bow stands for hunting wild reindeer and the remains of turf huts are still found in the park. After the church on Tranøya was built in the 1200s the forests passed to the church and later the state. At Skoglia, just outside the boundary, Jørgen Jørgensen tried farming in 1796 and gave up because of bears; the hunter Nils Olai Olsen Skogli arrived in 1890 and stayed 75 years.",
+    "The poet and conservationist Hans Kristian Eriksen came to southern Senja in 1954, fell for the valley's pine forest and proposed protecting it. Ånderdalen became a national park by royal decree on 6 February 1970 — the first in Troms, created the same day as Stabbursdalen and Øvre Pasvik in Finnmark. It has been enlarged three times since, most recently in 2018. The Sør-Senja reindeer grazing district uses the park all year and calves its herds in its forests each spring."
+  ],
+  "howItWorks": [
+    "Norway's right to roam (allemannsretten) applies: you may walk and ski where you like, pick berries and mushrooms, and pitch a tent anywhere in the open country at least 150 metres from the nearest inhabited house or cabin — for up to two nights in one place, longer in the mountains or far from settlement. From 15 April to 15 September national fire law bans fires in or near woodland and open country, unless the municipality allows it or a fire plainly cannot spread. The park's own rules go further: no tree may be felled for firewood, and the tempting dry pines may not be burnt at all.",
+    "Motor traffic is banned on land, on fresh water and in the air below 300 metres, and drones, as in Norwegian national parks generally, are not allowed. Cycling and organised riding are permitted only on routes approved in the management plan — at present the accessible path at Tranøybotn — and there are no bridleways. Walking groups of trekking associations, schools and clubs need no permit, but camps, races, hunting-dog trials and other larger events need permission from the Ånderdalen National Park Board.",
+    "Ånderdalen is the main calving land of the Sør-Senja reindeer grazing district, and calving runs from mid-April to mid-June. If you meet reindeer then, stop and find a way round that does not scatter them; a cow driven from her calf can lose it. Dogs must be on a lead from 1 April to 20 August and under control at other times. During the rut, from September to mid-November, some bulls can be aggressive, so keep away from herds."
+  ],
+  "sights": [
+    {
+      "name": "Åndervatnet",
+      "note": "The lake at the heart of the park, its islets moraine mounds left by stagnant ice. A boardwalked path leads in from Tranøybotn to a lakeside rest area.",
+      "location": [
+        69.219,
+        17.313
+      ]
+    },
+    {
+      "name": "Kvænan",
+      "note": "The park's highest summit at 964 metres, and the second highest on Senja: a sharp outer-coast peak and a popular ski-touring top in winter.",
+      "location": [
+        69.206,
+        17.136
+      ]
+    },
+    {
+      "name": "Istinden",
+      "note": "An 851-metre peak marking the park's northern edge, where the Senja på langs route climbs in from Kaperdalen. A favourite ski-touring top.",
+      "location": [
+        69.285,
+        17.27
+      ]
+    },
+    {
+      "name": "Kolkjerka",
+      "note": "A prominent 745-metre summit rising from the middle of the park.",
+      "location": [
+        69.237,
+        17.274
+      ]
+    },
+    {
+      "name": "Kapervatnet",
+      "note": "A lake north of Åndervatnet, lined with moraine hummocks and big boulders, on the river that comes down from Kaperfjellet through a deep, narrow gorge.",
+      "location": [
+        69.244,
+        17.308
+      ]
+    },
+    {
+      "name": "Trolldalen",
+      "note": "A long, narrow side valley with tall birch forest that has been left largely alone.",
+      "location": [
+        69.232,
+        17.382
+      ]
+    },
+    {
+      "name": "Ånderelva",
+      "note": "The river that runs in falls and rapids from Åndervatnet to the sea at Tranøybotn; salmon, sea trout and sea char run its lower reaches.",
+      "location": [
+        69.199,
+        17.38
+      ]
+    },
+    {
+      "name": "Sážžá Senja naturhus & museum",
+      "note": "The park board's base at Øverbotn, shared with Midt-Troms Museum: a permanent exhibition on Senja's nature and culture centred on Ånderdalen, open in summer. Check opening times before you go.",
+      "location": [
+        69.211,
+        17.618
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Tranøybotn, in the south-east — car park, toilet and a gravel path about 2 km towards the boundary, with a rest area and fire pits on the way and a viewpoint shelter on a loop trail",
+      "Kaperdalen, by Bumannsvatnet on the Fv7862, where the Senja på langs route enters by Istinden",
+      "Olaheimen, in the south — about 9 km on foot from the car park to the boundary",
+      "Gjeska, on the outer coast, for the path across the park via Sør-Kapervatnet and Åndervatnet to Tranøybotn",
+      "Selfjorden, by boat or kayak from Flakstadvåg; no path leads in from the village"
+    ],
+    "reservations": "No permit or booking is needed to enter the park. The only shelters inside it are the open hut Ånderbu and the turf hut Åndergammen at Åndervatnet, so bring a tent and gear to look after yourself if you plan to stay the night.",
+    "permits": [
+      "Camps, sports events, hunting-dog trials and other larger organised events need permission from the Ånderdalen National Park Board",
+      "Fishing in the park's lakes needs a licence from inatur.no; under-20s and over-67s fish free in lakes on Statskog land",
+      "Salmon, sea trout and sea char in the rivers need the state fishing fee and a landowner's licence"
+    ],
+    "camping": [
+      "Wild camping anywhere in the open country under the right to roam, with good pitches along the marked routes"
+    ],
+    "lodging": [
+      "Ånderbu, Statskog's open warden's hut, and the traditional turf hut Åndergammen, both at Åndervatnet and free to use",
+      "Accommodation around Senja through Visit Senja Region"
+    ],
+    "seasonalClosures": []
+  },
+  "weather": "Ånderdalen has the wet, open climate of an island facing the Atlantic, which is why mires and damp forest floor cover so much of it. July and August are the best months for walking, and autumn colours the birch and the mires. In winter the park is crossed on skis or snowshoes and you break your own track; Kvænan and Istind are popular ski-touring summits, and the northern lights show over the valley in the dark months.",
+  "directions": "Ånderdalen lies on the south of Senja, about three hours' drive from Tromsø. Senja is joined to the mainland by the Gisund Bridge at Finnsnes, where buses and taxis connect with Bardufoss airport, and an express boat links Skrolsvik, in the south of the island, with Harstad (check timetables before you go). Roads reach the entrances at Tranøybotn, at Bumannsvatnet in Kaperdalen (Fv7862), at Olaheimen and at Flakstadvåg (Fv7864). The park board's office and exhibition are at Sážžá in Øverbotn, on the fjord side of the island.",
+  "chronology": [
+    {
+      "year": "c. 1.7 billion years ago",
+      "text": "The granite that forms the park's mountains crystallises."
+    },
+    {
+      "year": "AD 860",
+      "text": "Charcoal remains show people using the area by this date at the latest."
+    },
+    {
+      "year": "1200s",
+      "text": "The church on Tranøya is built; Senja's forests pass to the church and later the state."
+    },
+    {
+      "year": "1500s–1800s",
+      "text": "People live year-round at Gjeska, on the outer coast, where their house sites survive."
+    },
+    {
+      "year": "1796",
+      "text": "Jørgen Jørgensen from Gauldalen tries farming at Skoglia, but bears drive him out."
+    },
+    {
+      "year": "1890",
+      "text": "The hunter Nils Olai Olsen Skogli settles at Skoglia and lives there for 75 years."
+    },
+    {
+      "year": "1940s",
+      "text": "Elk reach Ånderdalen and establish a permanent population."
+    },
+    {
+      "year": "1970",
+      "text": "On 6 February Ånderdalen becomes the first national park in Troms, on the same day as Stabbursdalen and Øvre Pasvik."
+    },
+    {
+      "year": "1975",
+      "text": "The park is enlarged for the first time."
+    },
+    {
+      "year": "2004",
+      "text": "A new regulation enlarges the park."
+    },
+    {
+      "year": "2018",
+      "text": "The latest enlargement brings the park to 133.9 square kilometres."
+    }
+  ],
+  "safety": [
+    "The outer side of the park is steep, with sharp ridges and long drops to the sea. The high tops are for experienced walkers in good weather.",
+    "Expect many stream crossings and wet, boggy ground, and carry a tent: the two open huts are the only shelter in the park.",
+    "In winter the steep slopes of the ski-touring peaks are avalanche terrain. Check the regional avalanche forecast and conditions before you go.",
+    "Reindeer bulls can be aggressive in the rut, from September to mid-November. Give herds a wide berth."
+  ],
+  "regulations": [
+    "Motor traffic is banned on land, on fresh water and in the air below 300 metres, and drones are not allowed.",
+    "No tree may be felled or damaged, living or dead; dry pines may not be used for firewood.",
+    "Dogs must be on a lead from 1 April to 20 August.",
+    "Cycling and organised riding are allowed only on approved routes; larger organised events need permission.",
+    "Cultural remains are protected, and loose objects from them may not be moved or taken."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-islands",
+    "theme-mountains",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:View over the Åndervatnet in Åderderdalen National Park.jpg",
+      "caption": "Åndervatnet and its moraine islets, seen from the slopes above",
+      "altText": "A lake with small islands below green, rounded hills and scattered pines"
+    },
+    {
+      "file": "File:Ånderdalen Nasjonalpark gammel furu foto Silje Grotle Nilssen.jpg",
+      "caption": "A dead 'silver pine' in Ånderdalen's old coastal pine forest",
+      "altText": "Bare, silver-white branches of a dead pine against a blue sky with cloud"
+    },
+    {
+      "file": "File:A view of Inner Ånderdalen in Ånderdalen National Park.jpg",
+      "caption": "Inner Ånderdalen, with boulders, mire and a lake below the peaks",
+      "altText": "A green valley floor strewn with boulders, a small lake and pointed mountains beyond"
+    },
+    {
+      "file": "File:Ånderdalen Nasjonalpark klopper foto Silje Grotle Nilssen.jpg",
+      "caption": "A plank walkway across a mire towards the pinewoods",
+      "altText": "A narrow wooden boardwalk crossing brown grassy mire towards pine trees"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ånderdalen nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/anderdalen/"
+    },
+    {
+      "title": "Ånderdalen nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00000117"
+    },
+    {
+      "title": "Forskrift om verneplan for kystregionen i Troms, vedlegg 25, Ånderdalen nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/forskrift/2004-06-04-866"
+    },
+    {
+      "title": "Om nasjonalparken — Ånderdalen nasjonalparkstyre",
+      "url": "https://anderdalennasjonalpark.no/om-nasjonalparken/"
+    },
+    {
+      "title": "Historie — Ånderdalen nasjonalparkstyre",
+      "url": "https://anderdalennasjonalpark.no/historie/"
+    },
+    {
+      "title": "Innfallsporter — Ånderdalen nasjonalparkstyre",
+      "url": "https://anderdalennasjonalpark.no/innfallsporter/"
+    },
+    {
+      "title": "Landskap og geologi — Ånderdalen nasjonalparkstyre",
+      "url": "https://anderdalennasjonalpark.no/landskap-og-geologi/"
+    },
+    {
+      "title": "Planter og dyreliv — Ånderdalen nasjonalparkstyre",
+      "url": "https://anderdalennasjonalpark.no/planter-og-dyreliv/"
+    },
+    {
+      "title": "Reindrift — Ånderdalen nasjonalparkstyre",
+      "url": "https://anderdalennasjonalpark.no/reindrift/"
+    },
+    {
+      "title": "Opplevelser — Ånderdalen nasjonalparkstyre",
+      "url": "https://anderdalennasjonalpark.no/opplevelser/"
+    },
+    {
+      "title": "Besøksstrategi Ånderdalen nasjonalpark, vedlegg 1: lokalitetsbeskrivelser — Ånderdalen nasjonalparkstyre",
+      "url": "https://www.nasjonalparkstyre.no/uploads/files_anderdalen/Besoksstrategi/Vedlegg-1_besoksstrategi_lokalitetsbeskrivelse_Anp.pdf"
+    },
+    {
+      "title": "Ånderdalen National Park (English brochure) — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/globalassets/dokumenter/publikasjoner/brosjyrer/anderdalen_np_e_nett-230112.pdf"
+    },
+    {
+      "title": "Sážža Senja nature and culture centre — Visit Senja",
+      "url": "https://www.visitsenja.no/en/sazza-senja-nature-and-culture-center"
+    },
+    {
+      "title": "Ferries and express boats in the Senja region — Visit Senja",
+      "url": "https://www.visitsenja.no/en/ferge-og-hurtigbat-i-senjaregionen"
+    },
+    {
+      "title": "Regler for droner i naturen — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/ansvarsomrader/vernet-natur/regler-for-droner-i-naturen/"
+    },
+    {
+      "title": "Forskrift om brannforebygging § 3 — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Ånderdalen National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/%C3%85nderdalen_National_Park"
+    },
+    {
+      "title": "Ånderdalen nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/%C3%85nderdalen_nasjonalpark"
+    },
+    {
+      "title": "Senja — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Senja"
+    },
+    {
+      "title": "Sentralt stedsnavnregister and address register — Kartverket",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

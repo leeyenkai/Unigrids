@@ -1,0 +1,350 @@
+{
+  "placeID": "jp-np-minami-alps",
+  "contentVersion": 1,
+  "summary": "The southern end of the Japanese Alps: a 50-kilometre chain of peaks on the borders of Yamanashi, Nagano and Shizuoka, with Kitadake (3,193 m), Japan's second-highest mountain, and more than ten summits over 3,000 metres. Forest climbs almost to the ridges, ice-age glaciers left their cirques, and no road is open to private cars: hikers arrive by bus and sleep in mountain huts.",
+  "facts": {
+    "establishedYear": 1964,
+    "areaHectares": 35752,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "The Minami Alps are not volcanoes. They are old seabed: mud, sand and volcanic ash laid down under the ocean, scraped onto the edge of Japan as an ocean plate slid beneath it, then squeezed up from east and west over about the last million years. The squeeze goes on. The range is rising by three to four millimetres a year, faster than any other mountains in Japan, and heavy rain wears it away so fast that the peaks gain height each year while losing bulk. Only the northern end differs: Kaikomagatake and the Hōō Sanzan are pale granite.",
+    "Around 20,000 years ago small glaciers sat in the highest hollows. They left cirques on Senjōgatake, Ainodake and the Arakawa Sanzan, the southernmost clear glacial landforms in Japan, and frost later sorted stones into patterned ground. Because the range is southerly, wet in summer and light on snow in winter, forest grows unusually high: broadleaf and mixed woods to about 1,600 metres, evergreen conifers up to a tree line near 2,700 metres, and above it bent Erman's birch and creeping pine. Ice-age survivors live above it: the rock ptarmigan, alpine butterflies and Kitadake-sō, a white flower found nowhere but the top of Kitadake.",
+    "People climbed here for faith long before sport. Kaikomagatake was opened as a sacred mountain in the late Edo period, in the 1800s, and the Kuroto ridge route up from Komagatake Shrine still passes the stone monuments and statues pilgrims left. On the Hōō Sanzan, the saddle below Jizōdake's granite spire is crowded with small stone Jizō statues. The national park was designated in 1964 over the three main massifs, Kaikoma–Hōō, the Shirane Sanzan and the Akaishi range, and in 2014 the mountains and their foothills became a UNESCO Biosphere Reserve.",
+    "The newer threats are grazing and washouts. Sika deer began eating into the high flower meadows in the late 1990s, and the damage spread fast; the agencies that run the mountains now cull deer, fence meadows on the ridges and hold bared soil against erosion. Kitadake-sō and the ptarmigan have recovery programmes under the national species-protection law, with patrols against plant theft. Access is fragile too. In 2019 Typhoon Hagibis brought down the forest road between Hirogawara and Kitazawa Pass, and the bus that linked the Yamanashi and Nagano sides has not run over it since."
+  ],
+  "howItWorks": [
+    "All 35,752 hectares are special zone; the park has no ordinary zone. About a quarter, the main ridges and summits, is special protection zone, where picking or damaging any plant, taking animals, collecting stones and lighting fires are forbidden without a permit; in the rest, designated alpine plants are protected. The land is almost all public. About two-fifths is national forest, nearly all of it on the Nagano side, and half is public land, mostly Yamanashi Prefecture's forests. The private tenth lies almost entirely in Shizuoka, mostly within a company-owned forest at the head of the Ōi River, where companies of the same group run the Sawarajima lodge, the huts and the shuttle bus for hut guests.",
+    "No public road crosses the park and none of its access roads is open to private cars. In Yamanashi the prefectural forest road from the Yashajin gate and the prefectural road from Narada both reach Hirogawara, but only buses and taxis may use them, in a season Yamanashi Prefecture sets each year from late June to early November; in winter they close to all vehicles. Drivers park at Ashiyasu or Narada, and a voluntary contribution of ¥300 per person per trip helps fund the scheme. Kitazawa Pass is reached only by Ina City's forest-road bus, and on the Shizuoka side the forest road beyond Numadaira is closed to general traffic all year.",
+    "The Minami Alps UNESCO Biosphere Reserve, recognised in 2014, spreads over ten municipalities in the three prefectures, and the Nagano-side valleys along the Median Tectonic Line form the Minami Alps (Median Tectonic Line Area) Geopark, a Japanese Geopark since 2008. On the Nagano side the prefecture's mountain-safety ordinance requires a climbing plan to be filed before walking designated trails, among them those on Kaikomagatake, Senjōgatake and Akaishidake."
+  ],
+  "sights": [
+    {
+      "name": "Kitadake (北岳)",
+      "note": "Japan's second-highest peak at 3,193 m, and with Ainodake and Nōtoridake the Shirane Sanzan. Its east face falls 600 m as the Kitadake Buttress.",
+      "location": [
+        35.675,
+        138.2388
+      ]
+    },
+    {
+      "name": "Senjōgatake (仙丈ヶ岳)",
+      "note": "The 'Queen of the Minami Alps', 3,033 m: a broad, gentle mountain with glacial cirques, among the easiest of the high peaks from Kitazawa Pass.",
+      "location": [
+        35.7207,
+        138.1833
+      ]
+    },
+    {
+      "name": "Kaikomagatake (甲斐駒ヶ岳)",
+      "note": "A pale granite peak of 2,967 m, sacred since the 1800s. The Kuroto ridge route passes stone monuments and statues left by generations of pilgrims.",
+      "location": [
+        35.7585,
+        138.2364
+      ]
+    },
+    {
+      "name": "Hōō Sanzan (鳳凰三山)",
+      "note": "Yakushidake, Kannondake and Jizōdake: granite summits around 2,800 m with white granite slopes, and a saddle crowded with small stone Jizō statues below Jizōdake.",
+      "location": [
+        35.7026,
+        138.3044
+      ]
+    },
+    {
+      "name": "Ainodake (間ノ岳)",
+      "note": "A massive 3,190 m summit at the source of the Ōi River, with the Kitazawa and Hosozawa cirques on its flanks.",
+      "location": [
+        35.6461,
+        138.2284
+      ]
+    },
+    {
+      "name": "Shiomidake (塩見岳)",
+      "note": "A twin-topped dome at the south end of the long Senshō ridge: the east peak is higher, 3,052 m, the west peak carries the survey point.",
+      "location": [
+        35.5739,
+        138.1831
+      ]
+    },
+    {
+      "name": "Arakawa Sanzan (荒川三山)",
+      "note": "Warusawadake, Nakadake and Maedake, over 3,000 m: the southernmost clear glacial landforms in Japan, and flower meadows on Maedake's south-east slope.",
+      "location": [
+        35.4991,
+        138.1813
+      ]
+    },
+    {
+      "name": "Akaishidake (赤石岳)",
+      "note": "A broad 3,121 m peak with Japan's highest first-order survey point. The whole Akaishi range takes its name from it.",
+      "location": [
+        35.4614,
+        138.1573
+      ]
+    },
+    {
+      "name": "Norogawa-Hirogawara Information Centre",
+      "note": "Above the bus and taxi terminal at Hirogawara, the Kitadake trailhead: trail and weather information, and a police post in summer. Closed mid-November to early June.",
+      "location": [
+        35.6972,
+        138.2709
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Ashiyasu Mountain Museum (芦安山岳館)",
+      "note": "Exhibits on the range's nature, history and climbing, with a mountain library, near the Ashiyasu bus stop for Hirogawara. Admission charged.",
+      "location": [
+        35.6331,
+        138.3611
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Minami Alps Hase Visitor Center",
+      "note": "Outdoor and tourist information beside the Minami Alps-mura Hase roadside station, on the Nagano approach to Kitazawa Pass.",
+      "location": [
+        35.8093,
+        138.0838
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Minami Alps Shizen Fureai Centre",
+      "note": "Trail and weather information at Sawarajima Lodge, the southern trailhead in Shizuoka. Closed December to April.",
+      "location": [
+        35.4313,
+        138.2075
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Hirogawara (広河原), Yamanashi: trailhead for Kitadake and the Shirane Sanzan, by bus or taxi from Kōfu Station, the Ashiyasu car park or Narada",
+      "Kitazawa Pass (北沢峠): trailhead for Senjōgatake and Kaikomagatake, by Ina City's forest-road bus from Todai Park near Senryū-sō in Hase, Nagano",
+      "Kuroto ridge (黒戸尾根): the old pilgrims' route up Kaikomagatake from the Yamanashi side",
+      "Sawarajima (椹島), Shizuoka: southern trailhead for Akaishidake and the Arakawa Sanzan, reached by the lodge's shuttle for hut guests from Hatanagi"
+    ],
+    "reservations": "Staffed huts open only from early summer to mid-autumn, and most now take guests by advance booking only, some through online systems: book before you set out. Bus seasons and timetables to Hirogawara, Kitazawa Pass and Sawarajima change every year, and rainfall limits close the roads to buses too. Check Yamanashi Prefecture, Ina City and the huts before you go.",
+    "permits": [
+      "No permit is needed to hike",
+      "Nagano side: a climbing plan (登山計画書) must be filed for designated trails, including those on Kaikomagatake, Senjōgatake and Akaishidake (Nagano Prefecture mountain-safety ordinance)"
+    ],
+    "camping": [
+      "Tents only at designated sites beside the main huts; several huts have no tent site, so check before you carry one"
+    ],
+    "lodging": [
+      "Mountain huts on the main routes, most staffed from about July to October, a few from late April; some unstaffed shelters stay open all year",
+      "Sawarajima Lodge and Nikenkoya Lodge in the company forest on the Shizuoka side",
+      "Hotels in the gateway towns of Kōfu in Yamanashi and Ina in Nagano"
+    ],
+    "seasonalClosures": [
+      "The roads to Hirogawara close to all vehicles, buses included, outside the season Yamanashi Prefecture sets each year (roughly early November to late June)",
+      "The Norogawa-Hirogawara Information Centre closes from mid-November to early June",
+      "Staffed huts close from mid-autumn to early summer; winter ascents are for experienced alpine climbers only"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "weather": "The Minami Alps are wet in summer and get less snow in winter than the rest of the Japanese Alps. The rainy season usually lasts from June into July, and heavy rain can close the access roads at any time in summer and autumn, typhoons included. The walking season on the high ridges runs from about July to October, when the huts are open and the buses run; Kitadake-sō flowers in late June and early July, and the meadows of Senjōgatake and the Arakawa Sanzan follow through high summer. Nights at 3,000 metres are cold even in August. From November the range turns to winter, with snow, high wind and avalanches; the roads close and the staffed huts are shut.",
+  "directions": "For Kitadake, take the JR Chūō Line to Kōfu (about 90 minutes by limited express from Shinjuku), then Yamanashi Kōtsū's bus to Hirogawara, about two hours, in the season it runs. Drivers leave cars at Ashiyasu, reached from the Chūō Expressway's Kōfu-Shōwa interchange, and change to the bus or a taxi; from the south, the Minobu Line and a Hayakawa bus reach Narada, where another bus continues to Hirogawara. For Senjōgatake and Kaikomagatake, go to Ina-shi on the JR Iida Line, take buses via Takatō to Todai Park in Hase, then Ina City's forest-road bus to Kitazawa Pass, about 55 minutes. The bus between Hirogawara and Kitazawa Pass has been suspended since 2019. For the southern peaks, drive from Shizuoka city up the Ōi valley to Hatanagi, where huts' guests transfer to the shuttle for Sawarajima.",
+  "chronology": [
+    {
+      "year": "c. 1 million years ago",
+      "text": "Squeezed from east and west, rocks formed on the seabed have already been pushed up into high mountains."
+    },
+    {
+      "year": "c. 20,000 years ago",
+      "text": "Glaciers in the last ice age carve cirques on the highest peaks."
+    },
+    {
+      "year": "1800s",
+      "text": "Kaikomagatake is opened as a sacred mountain, with a pilgrims' route up the Kuroto ridge from Komagatake Shrine."
+    },
+    {
+      "year": "1964",
+      "text": "Minami Alps National Park is designated on 1 June over the Kaikoma–Hōō, Shirane and Akaishi massifs."
+    },
+    {
+      "year": "1976",
+      "text": "47 hectares in the Ōi River's headwaters leave the park to become part of a Wilderness Area."
+    },
+    {
+      "year": "2008",
+      "text": "The Nagano-side valleys are certified as the Minami Alps (Median Tectonic Line Area) Geopark."
+    },
+    {
+      "year": "2014",
+      "text": "The range and its foothills become the Minami Alps UNESCO Biosphere Reserve."
+    },
+    {
+      "year": "2019",
+      "text": "Typhoon Hagibis closes the forest road between Hirogawara and Kitazawa Pass."
+    }
+  ],
+  "safety": [
+    "Kitadake and more than ten other summits pass 3,000 metres. Climb gradually, sleep lower on the first night where you can, and go down if headache, nausea or breathlessness set in.",
+    "Weather on the ridges changes fast. Cloud, rain and wind can arrive within hours even in summer, and from late autumn snow, high wind and avalanches make the range a winter mountaineering objective, dangerous even for the experienced.",
+    "Heavy rain closes the access roads to buses as well as cars under rainfall limits. Plan a spare day, and check road status with Yamanashi Prefecture before setting out.",
+    "Asiatic black bears live in the forests below the ridges. Walk in company, make noise, and take most care at dawn and dusk and where you cannot see far.",
+    "Landslides close trails and trailheads for years: the road to the Benigashima trailhead for Hijiridake in Nagano has been closed since 2015. Check Nagano and Shizuoka prefectures' trail notices before you go."
+  ],
+  "regulations": [
+    "Private cars are banned on every road into the park; use the buses, taxis or lodge shuttles.",
+    "Camp only at the designated sites beside the main huts.",
+    "In the special protection zone nothing may be picked, dug or collected, plants and stones included, and no fires may be lit.",
+    "Kitadake-sō and the rock ptarmigan are protected under the Act on Conservation of Endangered Species; stay outside the fences round Kitadake-sō's habitat and never disturb ptarmigan."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-alpine",
+    "theme-glaciers",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:Kitadake (13982793726).jpg",
+      "caption": "Kitadake, Japan's second-highest mountain, from the south",
+      "altText": "A steep green-and-grey pyramid of a peak with a small red-roofed hut on its shoulder, under a blue sky"
+    },
+    {
+      "file": "File:Senjogatake from Kitadake 2001-10-3.jpg",
+      "caption": "Senjōgatake from Kitadake",
+      "altText": "A broad mountain with pale upper slopes rising above deep, forested valleys"
+    },
+    {
+      "file": "File:賽ノ河原の地蔵と甲斐駒ヶ岳.jpg",
+      "caption": "Jizō statues on the Hōō Sanzan, with Kaikomagatake behind",
+      "altText": "Rows of small stone statues on a pale rocky slope at dawn, with dark peaks rising above a sea of cloud"
+    },
+    {
+      "file": "File:Callianthemum hondoense in Mount Kita 2001-07-02.jpg",
+      "caption": "Kitadake-sō in flower on Kitadake, early July",
+      "altText": "White, many-petalled flowers with yellow-green centres among finely divided green leaves"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Minami Alps National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/minami-alps/"
+    },
+    {
+      "title": "Explore Minami Alps National Park — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/minami-alps/explore/"
+    },
+    {
+      "title": "南アルプス国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/minamialps/"
+    },
+    {
+      "title": "南アルプス国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/minamialps/intro/index.html"
+    },
+    {
+      "title": "南アルプス国立公園 アクセス・施設 — 環境省",
+      "url": "https://www.env.go.jp/park/minamialps/access/index.html"
+    },
+    {
+      "title": "南アルプス国立公園 取組み — 環境省",
+      "url": "https://www.env.go.jp/park/minamialps/effort.html"
+    },
+    {
+      "title": "南アルプス国立公園 見どころ・施設 — 環境省",
+      "url": "https://www.env.go.jp/nature/nationalparks/list/minamialps/spot/"
+    },
+    {
+      "title": "南アルプスマイカー規制について — 山梨県",
+      "url": "https://www.pref.yamanashi.jp/minami-alps-ks/50915161945.html"
+    },
+    {
+      "title": "長野県山小屋情報ポータルサイト（南アルプス） — 長野県",
+      "url": "https://www.pref.nagano.lg.jp/kankoki/sangyo/kanko/sotaikyo/yamagoya/yamagoya_minamialps.html"
+    },
+    {
+      "title": "長野県登山安全条例 — 長野県",
+      "url": "https://www.pref.nagano.lg.jp/kankoki/tozanjorei/tozanjorei.html"
+    },
+    {
+      "title": "南アルプスについて / 南アルプスの地形と地質 — 観光庁 多言語解説文データベース",
+      "url": "https://www.mlit.go.jp/tagengo-db/common/001927665.pdf"
+    },
+    {
+      "title": "十山株式会社 井川山林 — 静岡県",
+      "url": "https://www.pref.shizuoka.jp/kurashikankyo/shizenkankyo/1058006/1084954/1084956.html"
+    },
+    {
+      "title": "ユネスコエコパークの新規登録について（2014年） — 文部科学省",
+      "url": "https://www.mext.go.jp/unesco/001/2014/1348717.htm"
+    },
+    {
+      "title": "南アルプス国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/南アルプス国立公園"
+    },
+    {
+      "title": "赤石山脈 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/赤石山脈"
+    },
+    {
+      "title": "Akaishi Mountains — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Akaishi_Mountains"
+    },
+    {
+      "title": "南アルプスの地形と地質 — 観光庁 多言語解説文データベース",
+      "url": "https://www.mlit.go.jp/tagengo-db/common/001927666.pdf"
+    },
+    {
+      "title": "南アルプスの花と森 — 観光庁 多言語解説文データベース",
+      "url": "https://www.mlit.go.jp/tagengo-db/common/001927667.pdf"
+    },
+    {
+      "title": "2026年 南アルプスマイカー規制 チラシ（時刻表） — 山梨県",
+      "url": "https://www.pref.yamanashi.jp/documents/2071/r8-mycar.pdf"
+    },
+    {
+      "title": "南アルプス林道 通行規制情報 — 山梨県",
+      "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=4"
+    },
+    {
+      "title": "長野県登山安全条例 周知チラシ — 長野県",
+      "url": "https://www.pref.nagano.lg.jp/kankoki/tozanjorei/documents/chirashi_160323.pdf"
+    },
+    {
+      "title": "日本の主な山岳標高（2026年3月31日版） — 国土地理院",
+      "url": "https://www.gsi.go.jp/kihonjohochousa/kihonjohochousa41139.html"
+    },
+    {
+      "title": "甲斐駒ヶ岳 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E7%94%B2%E6%96%90%E9%A7%92%E3%83%B6%E5%B2%B3"
+    },
+    {
+      "title": "鳳凰山 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E9%B3%B3%E5%87%B0%E5%B1%B1"
+    },
+    {
+      "title": "赤石岳 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E8%B5%A4%E7%9F%B3%E5%B2%B3"
+    },
+    {
+      "title": "北岳 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E5%B2%B3"
+    },
+    {
+      "title": "戸台パーク（仙流荘）登山口 — ヤマケイオンライン",
+      "url": "https://www.yamakei-online.com/trailhead/detail.php?id=1698"
+    }
+  ]
+}

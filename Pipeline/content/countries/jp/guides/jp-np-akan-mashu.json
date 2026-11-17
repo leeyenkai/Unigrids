@@ -1,0 +1,275 @@
+{
+  "placeID": "jp-np-akan-mashu",
+  "contentVersion": 1,
+  "summary": "Three volcanic calderas in the forests of eastern Hokkaido, each holding a lake: Akan, home of the round green marimo; Mashu, once measured as the clearest lake in the world; and Kussharo, the largest caldera lake in Japan. Climb the steaming crater of Meakandake, walk among the sulphur vents of Atosanupuri, and visit the Ainu village at Akanko Onsen.",
+  "facts": {
+    "establishedYear": 1934,
+    "areaHectares": 91413,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Two to three days"
+  },
+  "story": [
+    "The park is built on three calderas — Akan, Kussharo and Mashu — left where the ground collapsed after great eruptions along the Kuril volcanic arc. Kussharo is the largest, and its lake is the biggest caldera lake in Japan. The Mashu caldera was formed by an eruption about 7,000 years ago, and in 1931 a transparency of 41.6 metres was measured there, then the clearest water recorded anywhere. Volcanoes have kept growing inside and around the calderas, so each lake has a mountain beside it: Meakandake and Oakandake at Akan, Atosanupuri at Kussharo.",
+    "Most of the park is natural subarctic forest of mixed conifers and broadleaves, among the most untouched of any Japanese national park. Heat from below shapes its life in odd ways. At the foot of Atosanupuri, Labrador tea — an alpine shrub — covers about a hundred hectares at only 150 metres above sea level, flowering white in June and early July. On the Wakoto Peninsula the ground is warm enough that parts stay unfrozen all winter, letting minmin cicadas and other creatures survive there. Lake Kussharo's warm shallows keep whooper swans through the winter.",
+    "Lake Akan is famous for marimo, a freshwater green alga that here grows into velvety balls, protected as a Special Natural Monument. The lake is also a Ramsar wetland. Much of the forest around it belongs to the Maeda Ippoen Foundation, set up by the family of Maeda Masana, who took the land over from the state; the foundation still manages about 3,600 hectares of woodland round the lake.",
+    "The Ainu used the hot springs at Akan long before the resort town grew up beside them, and the Ainu Kotan on the west side of Akanko Onsen, about thirty households, is one of the largest Ainu communities in Hokkaido; its theatre stages traditional dances that UNESCO lists as intangible cultural heritage. The park was among the first in Japan, designated as Akan National Park in December 1934 alongside Daisetsuzan. It took its present name in 2017, when Kaminoko-ike and the outer slopes of the Mashu caldera were added."
+  ],
+  "howItWorks": [
+    "Akan-Mashu is a zoned national park laid over land with several owners. Of its 91,413 hectares, 79,523 are national land, mostly national forest, and 11,603 are private, including the Maeda Ippoen forest at Lake Akan. The Ministry counts the hot-spring towns of Akanko Onsen, on the south shore of Lake Akan, and Kawayu Onsen, below Atosanupuri, among the park's sights, along with the hot springs scattered round the shore of Lake Kussharo. The park reaches into eleven municipalities, from Kushiro city to the towns of Teshikaga, Ashoro and Kiyosato.",
+    "About 10,460 hectares are special protection zone, where picking any plant, collecting fallen leaves or branches, catching animals or lighting fires all need a permit from the Minister of the Environment. Another 62,400 hectares are special zone of the first to third class, where building, felling and quarrying need a permit and listed alpine plants may not be picked, and 18,550 hectares are ordinary zone. Four vehicle-restriction areas — round Meakandake and northern Lake Akan, the Mashu rim and Nishibetsu-dake, Mokoto-yama and Bihoro Pass, and since 2021 Lake Kussharo — keep off-road vehicles and snowmobiles out. On Nishibetsu-dake, planting komakusa, an alpine flower that does not belong there, has been banned since 2021.",
+    "Two of the park's volcanoes, Meakandake and Atosanupuri, are among the volcanoes the Japan Meteorological Agency watches around the clock, with published eruption alert levels; trails near the craters close when the level rises. Lake Akan has been a Ramsar wetland since 2005, and its marimo are protected as a Special Natural Monument, so taking them from the lake is a crime."
+  ],
+  "sights": [
+    {
+      "name": "Lake Akan (阿寒湖)",
+      "note": "The caldera lake of the marimo, with Oakandake across the water. Sightseeing boats run to a marimo exhibition on Churui Island.",
+      "location": [
+        43.461,
+        144.104
+      ]
+    },
+    {
+      "name": "Meakandake (雌阿寒岳)",
+      "note": "An active volcano south-west of Lake Akan with fuming craters at the top. Three trails, one starting from Lake Onneto. Check the alert level first.",
+      "location": [
+        43.388,
+        144.009
+      ]
+    },
+    {
+      "name": "Onneto (オンネトー)",
+      "note": "A small lake at the park's western edge whose colour shifts from emerald to deep blue with the light, wind and season.",
+      "location": [
+        43.384,
+        143.969
+      ]
+    },
+    {
+      "name": "Lake Mashu First Observatory (摩周第一展望台)",
+      "note": "The most visited of three viewpoints on the rim above Lake Mashu, beside the Mashu-ko Kamui Terrace rest house. Often in fog or above a sea of cloud.",
+      "location": [
+        43.558,
+        144.504
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Kaminoko-ike (神の子池)",
+      "note": "A small pond of clear, vivid blue water in the forest north of the Mashu caldera, added to the park in 2017.",
+      "location": [
+        43.6454,
+        144.5499
+      ]
+    },
+    {
+      "name": "Atosanupuri (アトサヌプリ)",
+      "note": "Mount Iō: a bare, active volcano with more than 1,500 steam vents crusted in yellow sulphur, once mined. Reached from Kawayu Onsen on foot.",
+      "location": [
+        43.618,
+        144.443
+      ]
+    },
+    {
+      "name": "Wakoto Peninsula (和琴半島)",
+      "note": "A small volcano jutting into Lake Kussharo, ringed by a 2.5-kilometre trail past steaming vents at Oyakotsu Jigoku.",
+      "location": [
+        43.584,
+        144.313
+      ]
+    },
+    {
+      "name": "Bihoro Pass (美幌峠)",
+      "note": "A roadside station and lookout on the Kussharo caldera rim, over the whole lake to Atosanupuri and, on clear days, the Shiretoko range.",
+      "location": [
+        43.645,
+        144.248
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Akanko-han Visitor Center",
+      "note": "The Ministry's centre for the Akan side, at Akanko Onsen, with live marimo and lake fish. Start of the lakeside walk to the bokke mud pots.",
+      "location": [
+        43.435,
+        144.101
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Akanko Marimukan",
+      "note": "Tourist information in the middle of Akanko Onsen, open daily, with snowshoe and cross-country ski hire in winter.",
+      "location": [
+        43.433,
+        144.096
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Kawayu Visitor Center",
+      "note": "The centre for the Mashu and Kussharo side, at Kawayu Onsen, and the start of the Tsutsujigahara trail to Atosanupuri.",
+      "location": [
+        43.637,
+        144.434
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Wakoto Field House",
+      "note": "Displays on the wildlife of the Wakoto Peninsula, at the neck of the peninsula. Closed from November to mid-April.",
+      "location": [
+        43.5768,
+        144.3104
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Akanko Onsen, on Lake Akan — the base for the Akan side, Meakandake and Onneto",
+      "Kawayu Onsen — the base for Lake Mashu, Atosanupuri and Lake Kussharo",
+      "Bihoro Pass, on the caldera rim above Lake Kussharo"
+    ],
+    "reservations": "No reservation is needed to enter the park. Seasonal buses link Akanko Onsen with Lake Mashu and Lake Kussharo in summer and winter only, so a hire car is the practical way round; check bus timetables before you go.",
+    "permits": [
+      "No permit is needed for the park's trails; Meakandake's summit routes close whenever the eruption alert level is raised"
+    ],
+    "camping": [
+      "The campground at the neck of the Wakoto Peninsula on Lake Kussharo, open from mid-June to September"
+    ],
+    "lodging": [
+      "Akanko Onsen, a hot-spring town of hotels and inns on Lake Akan",
+      "Kawayu Onsen, with a hot river running through the town",
+      "Hot springs along the shore of Lake Kussharo"
+    ],
+    "seasonalClosures": [
+      "Wakoto Field House closes from November to mid-April, and its campground from October to mid-June",
+      "Buses to Lake Mashu and Lake Kussharo run only in the summer and winter seasons"
+    ]
+  },
+  "weather": "Summers are short and winters long and cold. Fog often fills the Mashu caldera, and on early mornings from June to October the observatories can look down on a sea of cloud. Labrador tea flowers at Atosanupuri in June and early July. In midwinter the lakes freeze: frost flowers form on the ice of Akan and Kussharo, pressure ridges called omiwatari split Lake Kussharo's ice for up to ten kilometres, and whooper swans gather where hot springs keep the shore open.",
+  "directions": "Fly from Tokyo Haneda to Kushiro (about 95 minutes) or Memanbetsu (about 105 minutes). Akanko Onsen is about an hour's drive from Kushiro Airport on National Route 240, and buses run from the airport to the town. For the Mashu side, take the JR Senmō Main Line from Kushiro or Abashiri to Kawayu-Onsen Station; from Shiretoko-Shari Station it is about 45 minutes. The Super Ozora express runs from Sapporo to Kushiro in about 4 hours 30 minutes. Public transport inside the park is thin, so most visitors drive or join tours.",
+  "chronology": [
+    {
+      "year": "c. 7,000 years ago",
+      "text": "A huge eruption forms the Mashu caldera."
+    },
+    {
+      "year": "1931",
+      "text": "A transparency of 41.6 metres is measured in Lake Mashu, the clearest water then recorded in the world."
+    },
+    {
+      "year": "1934",
+      "text": "Akan National Park is designated on 4 December, among Japan's first national parks."
+    },
+    {
+      "year": "1952",
+      "text": "Lake Akan's marimo, a natural monument since 1921, are raised to a Special Natural Monument."
+    },
+    {
+      "year": "2005",
+      "text": "Lake Akan is registered as a Ramsar wetland on 8 November."
+    },
+    {
+      "year": "2017",
+      "text": "Kaminoko-ike and the outer slopes of the Mashu caldera are added and the park is renamed Akan-Mashu on 8 August."
+    },
+    {
+      "year": "2021",
+      "text": "Lake Kussharo becomes a vehicle-restriction area, and planting komakusa on Nishibetsu-dake is banned."
+    }
+  ],
+  "safety": [
+    "Meakandake and Atosanupuri are active volcanoes watched around the clock by the Japan Meteorological Agency. Check the eruption alert level before climbing, keep out of closed areas, and do not linger where volcanic gas collects in hollows.",
+    "Brown bears (higuma) live throughout the park's forests. Make noise on the trails, carry bear spray, and keep food sealed.",
+    "The ground near the fumaroles at Atosanupuri, the Wakoto Peninsula and the bokke mud pots is scalding. Stay on the marked paths.",
+    "Winter is severe; frozen lakes are not safe to walk on except where activities are organised."
+  ],
+  "regulations": [
+    "Marimo are a Special Natural Monument; do not touch or remove them.",
+    "Picking plants, collecting fallen branches, catching animals or lighting a fire in the special protection zone needs a permit.",
+    "Snowmobiles and off-road vehicles are barred from the four vehicle-restriction areas."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-hot-springs",
+    "theme-mountains",
+    "theme-wetland",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Lake Mashū 20140809-1.jpg",
+      "caption": "Lake Mashu in its caldera",
+      "altText": "A deep blue lake surrounded by steep forested crater walls"
+    },
+    {
+      "file": "File:紅葉のオンネトー（Autumn in Onneto） - panoramio.jpg",
+      "caption": "Onneto in autumn",
+      "altText": "A small lake edged by autumn-coloured trees"
+    },
+    {
+      "file": "File:雌阿寒噴火口（Crater of the Mt.Meakan） - panoramio.jpg",
+      "caption": "The crater of Meakandake",
+      "altText": "A barren volcanic crater with steam rising from it"
+    },
+    {
+      "file": "File:Mud pot, Akan National Park, Japan.jpg",
+      "caption": "A bubbling mud pot near Lake Akan",
+      "altText": "Grey mud bubbling in a small volcanic pool"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Akan-Mashu National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/akan-mashu/"
+    },
+    {
+      "title": "阿寒摩周国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/akan/index.html"
+    },
+    {
+      "title": "阿寒摩周国立公園 見どころ・施設 — 国立公園に、行ってみよう！（環境省）",
+      "url": "https://www.env.go.jp/nature/nationalparks/list/akan-mashu/spot/"
+    },
+    {
+      "title": "国立公園一覧 — 環境省",
+      "url": "https://www.env.go.jp/park/parks/index.html"
+    },
+    {
+      "title": "阿寒湖 — ラムサール条約湿地（環境省）",
+      "url": "https://www.env.go.jp/nature/ramsar/conv/ramsarleaflet/6_Akan-ko.pdf"
+    },
+    {
+      "title": "自然公園法（昭和32年法律第161号）— e-Gov法令検索",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000161"
+    },
+    {
+      "title": "北海道の火山 — 北海道",
+      "url": "https://www.pref.hokkaido.lg.jp/sm/ktk/bsb/kazan.html"
+    },
+    {
+      "title": "火山の知識 — 気象庁",
+      "url": "https://www.jma.go.jp/jma/kishou/know/kazan/vol_know.html"
+    },
+    {
+      "title": "History of the Maeda Ippoen Foundation — Japan Tourism Agency multilingual commentary database",
+      "url": "https://www.mlit.go.jp/tagengo-db/en/H30-00042.html"
+    },
+    {
+      "title": "阿寒摩周国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/阿寒摩周国立公園"
+    },
+    {
+      "title": "公益財団法人 前田一歩園財団",
+      "url": "https://www.ippoen.or.jp/"
+    },
+    {
+      "title": "和琴半島自然探勝路 — 川湯エコミュージアムセンター",
+      "url": "https://www.kawayu-eco-museum.com/wakotonaturetrail/"
+    }
+  ]
+}

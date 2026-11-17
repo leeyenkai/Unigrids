@@ -1,0 +1,274 @@
+{
+  "placeID": "no-np-sassen-bunsow-land",
+  "contentVersion": 1,
+  "summary": "Broad valleys, a glacier-fed fjord and the cathedral-like cliffs of Templet at the inner end of Isfjorden, north-east of Longyearbyen. The park takes in Sassendalen, Tempelfjorden and the peninsula of Bünsow Land, with Tunabreen and Von Postbreen meeting at the fjord's head. It lies inside the zone where visitors may travel without notifying the Governor and may drive snowmobiles in winter, so it can be reached from Longyearbyen without the formalities the remoter parks demand.",
+  "facts": {
+    "establishedYear": 2003,
+    "areaHectares": 123000,
+    "bestSeasons": [
+      "spring",
+      "summer"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "Sassen-Bünsow Land holds the inner end of Isfjorden: the broad, open valley of Sassendalen, the fjord arm of Tempelfjorden, and Bünsow Land, the peninsula between Tempelfjorden, Sassenfjorden and Billefjorden. Over Tempelfjorden's north shore stands Templet, 766 metres high, its banded cliffs cut by gullies into shapes that reminded its namers of a ruined Gothic cathedral. Two glaciers meet at the head of the fjord — Tunabreen, about 23 kilometres long, from the north, and Von Postbreen from the east — and Gipsdalen, an ice-free valley through southern Bünsow Land, is named for the gypsum beds in its mountains.",
+    "This is one of the greener corners of Svalbard. The park's regulation protects large stretches of continuous vegetation with vulnerable plant species, and wide wetlands where geese, waders and seabirds nest, feed and moult. A large population of Svalbard reindeer grazes the valley floors. The ground itself is part of the reason for protection: the regulation singles out well-developed geological and ice-age formations and deposits.",
+    "The origin of the name Sassen is uncertain; one explanation ties it to sas, a word for a sluice or an entrance from the sea. In the twentieth century Sassen was the home ground of the trapper Hilmar Nøis — 'the King of Sassen', who spent 38 winters on Svalbard. In 1924 he began building the main house at Fredheim, on the shore where Sassendalen meets the fjord, and he wintered there for the last time in 1963, at 72; the station now belongs to the Norwegian state. In the park's north-west corner, on Billefjorden, stand the empty houses of Brucebyen, named after the Scottish polar explorer William Speirs Bruce.",
+    "The park was created on 26 September 2003, on the same day as national parks at Nordenskiöld Land and Nordre Isfjorden, to keep a large, essentially untouched Arctic fjord and valley landscape as an area for research and for experiencing Svalbard's natural and cultural heritage. It forms the eastern edge of the area around Isfjorden that visitors may travel without notifying the Governor, and its wide valleys are open to snowmobiles in winter — with new limits, since 2025, on the fjord ice."
+  ],
+  "howItWorks": [
+    "Svalbard has its own law, the Svalbard Environmental Protection Act. The public right of access applies here too, but all travel must leave no damage, litter or needless disturbance. Polar bears are protected: no one may disturb, attract or pursue one, or come closer than 300 metres — 500 metres from 1 March to 30 June — and anyone who finds a bear inside that distance must withdraw. Everyone outside the settlements, apart from people on an organised tour, must know how to guard against a polar bear attack and carry the means to scare a bear off. Everything people left before 1946, Fredheim and Brucebyen included, is a protected monument with a 100-metre zone around it, where camping and fires are not allowed (a tent on frozen, snow-covered ground is the exception).",
+    "Since 1 January 2026 a field-safety regulation decides who must tell the Governor of Svalbard (Sysselmesteren) before setting out. Sassen-Bünsow Land lies inside the 'travel area' drawn around Isfjorden, formerly known as area 10, so an independent visitor does not need to notify the Governor before a trip here — though everyone must look after their own safety. Going on beyond the park's eastern edge, to the east coast at Mohnbukta or Agardhbukta for example, takes you outside the travel area: that means notifying the Governor four weeks ahead and waiting for the reply, carrying equipment to raise the alarm and talk both ways, and holding search-and-rescue insurance. Tour operators need the Governor's permission for all their trips.",
+    "Snowmobiles may be driven in the park on frozen, snow-covered ground, but never on bare ground, and after 1 March they may not go out on the ice of Tempelfjorden except to cross it by the shortest safe route. Bicycles too are allowed only on frozen, snowy ground. Aircraft may not land, or fly lower than 300 metres within a nautical mile of the shore; drones are banned; and ships carrying more than 200 passengers may not enter the park's waters. Keep a good distance from wildlife and from old monuments, and put back any stones or driftwood you move."
+  ],
+  "sights": [
+    {
+      "name": "Templet",
+      "note": "A 766-metre mountain on the north side of Tempelfjorden, its layered cliffs cut by gullies into the likeness of a ruined cathedral.",
+      "location": [
+        78.4196,
+        16.727
+      ]
+    },
+    {
+      "name": "Tempelfjorden",
+      "note": "The innermost arm of Sassenfjorden, between Bünsow Land and Sabine Land, with two glaciers at its head. After 1 March snowmobiles may only cross its ice.",
+      "location": [
+        78.402,
+        17.041
+      ]
+    },
+    {
+      "name": "Tunabreen",
+      "note": "A glacier about 23 kilometres long, flowing from the ice field Lomonosovfonna down to the head of Tempelfjorden.",
+      "location": [
+        78.497,
+        17.432
+      ]
+    },
+    {
+      "name": "Von Postbreen",
+      "note": "About 15 kilometres of glacier ending at the head of Tempelfjorden, named after the Swedish geologist Hampus von Post.",
+      "location": [
+        78.418,
+        17.715
+      ]
+    },
+    {
+      "name": "Sassendalen",
+      "note": "A broad, open valley running south-east and then east from Sassenfjorden to the glacier Rabotbreen.",
+      "location": [
+        78.271,
+        17.172
+      ]
+    },
+    {
+      "name": "Gipsdalen",
+      "note": "An ice-free valley about 22 kilometres long through southern Bünsow Land, named for the gypsum beds in the mountains around it.",
+      "location": [
+        78.499,
+        16.872
+      ]
+    },
+    {
+      "name": "Brucebyen",
+      "note": "Empty houses near Kapp Napier on Billefjorden, named after the Scottish polar explorer William Speirs Bruce; a protected cultural monument.",
+      "location": [
+        78.637,
+        16.7296
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Overland from Longyearbyen by way of Adventdalen and Sassendalen — by snowmobile on frozen, snowy ground in winter and spring, on foot in summer",
+      "By boat across Isfjorden into Sassenfjorden, Tempelfjorden or Billefjorden when the water is open"
+    ],
+    "reservations": "No permit or notification is needed for an independent trip inside the park, which lies within the travel area around Isfjorden. Operators in Longyearbyen, licensed by the Governor of Svalbard, run guided trips. A trip on to the east coast, beyond the travel area, must be notified to the Governor four weeks ahead.",
+    "permits": [
+      "Notification to the Governor four weeks ahead for travel beyond the park, outside the travel area, with search-and-rescue insurance",
+      "A rifle for polar bear protection can be hired only from a licensed dealer, and only by someone holding a Norwegian firearms licence, a European firearms pass or a loan permit from the Governor",
+      "Camping in one place for a week or more needs the Governor's permission"
+    ],
+    "camping": [
+      "Wild camping, on bare ground where possible, at least 100 metres from cabins and outside the 100-metre zone around protected monuments (a tent on frozen, snow-covered ground excepted)",
+      "Every camp must keep flare guns, signal pens or other means of scaring off polar bears close at hand"
+    ],
+    "lodging": [
+      "None in the park; Longyearbyen is the nearest town"
+    ],
+    "seasonalClosures": [
+      "After 1 March snowmobiles may not travel on the sea ice of Tempelfjorden except to cross it by the shortest safe route",
+      "Snowmobiles only on frozen, snow-covered ground; once the snow goes, there is no motorised travel over land"
+    ]
+  },
+  "weather": "Svalbard's climate is Arctic but milder than its latitude suggests, because the last of the North Atlantic Current warms the west coast. Sheltered inner fjords and valleys like these run a couple of degrees warmer than the coast in summer and a few degrees colder in winter. Summer means are only about 4–7 °C and January means around −9 to −13 °C, and snow can fall in any month. At Longyearbyen the midnight sun lasts from about 20 April to late August and the polar night from late October to mid-February. Svalbard has warmed several times faster than the world as a whole since the 1970s.",
+  "directions": "Fly to Svalbard Airport, Longyear, which has daily scheduled flights from Oslo and Tromsø. No roads link Longyearbyen to the rest of Spitsbergen. The park lies inside the zone where visitors may drive snowmobiles on frozen, snow-covered ground, so in winter and spring it can be reached overland from Longyearbyen by way of Adventdalen and Sassendalen, independently or on a guided tour. In summer motor traffic over land is banned, and the way in is on foot or by boat across Isfjorden.",
+  "fees": [
+    {
+      "title": "Svalbard environmental fee",
+      "cost": "NOK 150",
+      "amount": 150,
+      "currencyCode": "NOK",
+      "detail": "Paid by every visitor to Svalbard except residents: collected with the ticket for the flight out of Svalbard, or by the travel organiser. It goes to the Svalbard Environmental Protection Fund."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1896",
+      "text": "The businessman F. C. E. Bünsow backs Gerhard De Geer's Swedish expedition; Bünsow Land is later named after him."
+    },
+    {
+      "year": "1924",
+      "text": "The trapper Hilmar Nøis begins building the main house at Fredheim, where Sassendalen meets the fjord."
+    },
+    {
+      "year": "1963",
+      "text": "Nøis winters at Fredheim for the last time, aged 72; the station now belongs to the Norwegian state."
+    },
+    {
+      "year": "2003",
+      "text": "Sassen-Bünsow Land National Park is created on 26 September, with about 1,157 square kilometres of land and 73 of sea."
+    },
+    {
+      "year": "2025",
+      "text": "Drones are banned, ships with more than 200 passengers are barred, and snowmobiles may only cross Tempelfjorden's ice after 1 March."
+    },
+    {
+      "year": "2026",
+      "text": "A new field-safety regulation takes effect; the park lies inside its travel area, where visitors need not notify the Governor."
+    }
+  ],
+  "safety": [
+    "Polar bears can appear anywhere, at any time of year, on land or on the fjord ice. Keep a constant lookout, carry the means to scare a bear off, and know how to use them.",
+    "Sea ice can be thin or break up without warning. Ask locally about ice conditions before you go out on Tempelfjorden, and remember that after 1 March snowmobiles may only cross it.",
+    "The glacier fronts of Tunabreen and Von Postbreen calve without warning. Keep well back from the ice cliffs, on the ice and in a boat.",
+    "Weather turns fast, and winter whiteouts erase the landscape. Carry navigation, warm clothing, food for longer than planned and a way to call for help."
+  ],
+  "regulations": [
+    "Keep at least 300 metres from polar bears, and 500 metres from 1 March to 30 June.",
+    "Drones are banned, and aircraft may not land or fly lower than 300 metres within a nautical mile of land.",
+    "Snowmobiles and bicycles only on frozen, snow-covered ground; after 1 March snowmobiles may only cross Tempelfjorden's ice.",
+    "Ships with more than 200 passengers may not enter the park's waters.",
+    "Every trace of people from before 1946 is a protected monument, with a 100-metre zone where camping and fires are not allowed."
+  ],
+  "themes": [
+    "theme-arctic",
+    "theme-glaciers",
+    "theme-fjords",
+    "theme-tundra"
+  ],
+  "photos": [
+    {
+      "file": "File:Templet-April.jpg",
+      "caption": "Templet across Tempelfjorden, seen from Fredheim in April",
+      "altText": "A long, flat-topped mountain banded with snow and dark rock, reflected in calm water"
+    },
+    {
+      "file": "File:Tunabreen-2021.jpg",
+      "caption": "Tunabreen reaching Tempelfjorden; Von Postbreen joins it from behind the mountain on the right",
+      "altText": "A broad glacier flowing down between mountains to a fjord"
+    },
+    {
+      "file": "File:Sassendalen 1.jpg",
+      "caption": "A Svalbard reindeer in Sassendalen",
+      "altText": "A reindeer on open Arctic ground"
+    },
+    {
+      "file": "File:Brucebyen Svalbard 2022 PI.jpg",
+      "caption": "Brucebyen, on the shore of Billefjorden",
+      "altText": "Old buildings standing on a bare Arctic shore"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nasjonalparkene på Svalbard — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/svalbard/"
+    },
+    {
+      "title": "Sassen-Bünsow Land nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00002564"
+    },
+    {
+      "title": "Forskrift om fredning av Sassen-Bünsow Land nasjonalpark på Svalbard — Lovdata",
+      "url": "https://lovdata.no/forskrift/2003-09-26-1189"
+    },
+    {
+      "title": "Søke- og meldeplikt for tur på Svalbard — Sysselmesteren på Svalbard",
+      "url": "https://www.sysselmesteren.no/nb/ferdsel-pa-svalbard/meldepliktig-ferdsel/"
+    },
+    {
+      "title": "Verneområder på Svalbard — Sysselmesteren på Svalbard",
+      "url": "https://www.sysselmesteren.no/nb/om-sysselmesteren/miljovern/verneomrader-pa-svalbard/"
+    },
+    {
+      "title": "Villa Fredheim: Hilmar Nøis' fangststasjon og hjem — Sysselmannen på Svalbard",
+      "url": "https://www.sysselmesteren.no/contentassets/60aa8002657c4e6390198e664a241bf5/villa-fredheim.pdf"
+    },
+    {
+      "title": "Lov om miljøvern på Svalbard (svalbardmiljøloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2001-06-15-79"
+    },
+    {
+      "title": "Forskrift om sikkerhet i felt mv. på Svalbard (feltsikkerhetsforskriften) — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2025-06-06-940"
+    },
+    {
+      "title": "Forskrift om motorferdsel på Svalbard — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2002-06-24-723"
+    },
+    {
+      "title": "Forskrift om leiropphold på Svalbard — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2002-06-27-731"
+    },
+    {
+      "title": "Forskrift om miljøavgift for tilreisende til Svalbard — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532"
+    },
+    {
+      "title": "Sysselmesterens retningslinjer for skytevåpen og beskyttelses- og skremmemidler mot isbjørn",
+      "url": "https://www.sysselmesteren.no/en/laws-and-regulations/firearms-and-scare-devices-for-protection-against-polar-bears/"
+    },
+    {
+      "title": "Place names of Svalbard — Norwegian Polar Institute",
+      "url": "https://data.npolar.no/placename"
+    },
+    {
+      "title": "Sassen–Bünsow Land National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sassen%E2%80%93B%C3%BCnsow_Land_National_Park"
+    },
+    {
+      "title": "Sassen-Bünsow Land nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Sassen-B%C3%BCnsow_Land_nasjonalpark"
+    },
+    {
+      "title": "Hilmar Nøis — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Hilmar_N%C3%B8is"
+    },
+    {
+      "title": "Svalbard — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Svalbard"
+    },
+    {
+      "title": "Forskrift om endringer i forskriftene for Indre Wijdefjorden, Sassen-Bünsow Land, Nordre Isfjorden og Van Mijenfjorden nasjonalparker mv. (FOR-2024-02-09-230) — Lovdata",
+      "url": "https://lovdata.no/dokument/LTI/forskrift/2024-02-09-230"
+    },
+    {
+      "title": "Sysselmesterens retningslinjer for skytevåpen og beskyttelses- og skremmemidler mot isbjørn (FOR-2024-05-13-850) — Lovdata",
+      "url": "https://lovdata.no/dokument/INS/forskrift/2024-05-13-850"
+    },
+    {
+      "title": "Protected areas — Cruise Handbook for Svalbard, Norwegian Polar Institute",
+      "url": "https://cruise-handbook.npolar.no/en/svalbard/protected-areas.html"
+    },
+    {
+      "title": "Isfjorden's history and cultural remains; vegetation — Cruise Handbook for Svalbard, Norwegian Polar Institute",
+      "url": "https://cruise-handbook.npolar.no/en/isfjorden/history-and-cultural-remains.html"
+    },
+    {
+      "title": "Brucebyen — Cruise Handbook for Svalbard, Norwegian Polar Institute",
+      "url": "https://cruise-handbook.npolar.no/en/isfjorden/brucebyen.html"
+    }
+  ]
+}

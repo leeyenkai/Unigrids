@@ -1,0 +1,253 @@
+{
+  "placeID": "no-np-dovrefjell-sunndalsfjella",
+  "contentVersion": 1,
+  "summary": "The high mountain heart of Norway, where Innlandet, Trøndelag and Møre og Romsdal meet: Snøhetta's 2,286-metre summit, wide plateaus with Norway's most original wild reindeer, muskox brought from Greenland, a rich mountain flora, and the old road between south and north. Long days, few cabins and fickle weather in the west.",
+  "facts": {
+    "establishedYear": 2002,
+    "areaHectares": 182950,
+    "bestSeasons": [
+      "summer"
+    ],
+    "suggestedTime": "Two to five days"
+  },
+  "story": [
+    "Dovrefjell has long stood for the permanent and unshakeable in Norway: the men who wrote the constitution in 1814 swore to stay united and loyal 'until Dovre falls'. The mountains have been both a barrier and a highway between the south and Trøndelag. The national park covers about 1,830 square kilometres of Dovrefjell and the Sunndal mountains, and another 2,730 square kilometres around it are protected as landscape and habitat areas. Snøhetta, 2,286 metres, stands at its natural centre.",
+    "The park spans a wide range of Norwegian mountain country, from steep, barren ground in the west to gentle, lime-rich and fertile fells in the east. There are high peaks, deep valleys, wide plateaus, roaring rivers, waterfalls and still mountain lakes. The plant life is exceptionally rich — around 600 species have been recorded on Dovrefjell, and the Knutshøene fells are a classic site for mountain botany.",
+    "The wild reindeer of the Snøhetta and Knutshø areas are, with those of Rondane and Sølnkletten, genetically distinct from other Norwegian reindeer: Norway's most original wild mountain reindeer, and much shyer than other herds. Muskox, an ice-age animal that probably lived here in earlier interglacials, were brought from Greenland in the 1930s and again between 1947 and 1953, and now roam the central parts of the park. The arctic fox died out around 1990 and has been reintroduced since 2010, with success. Wolverine, golden eagles, gyrfalcons, rough-legged buzzards and hen harriers live here, and the wetlands are full of waders and ducks.",
+    "The park is a core area for prehistoric reindeer trapping, with large systems of guiding fences, pits and bow emplacements. Later the old roads over the mountain — royal roads and pilgrim routes — needed mountain lodges, and Fokstugu, Hjerkinn, Kongsvold and Drivstua began as staging posts on the way from Dovre to Oppdal. Dovrefjell National Park was created in 1974; in 2002 it was absorbed into the much larger Dovrefjell-Sunndalsfjella, and in 2018 most of the former Hjerkinn military firing range was added and is being restored to nature."
+  ],
+  "howItWorks": [
+    "The right to roam, allemannsretten, applies: you may walk anywhere in the outfield, camp for two nights in one place without asking — longer high in the mountains — at least 150 metres from a house or cabin, and pick berries and mushrooms. A tent may stay more than a week in one place only with permission, unless it is an ordinary hiking tent, and the management plan bans tents in a few delimited areas. From 15 April to 15 September it is forbidden across Norway to light a fire in or near forest and other open country unless the municipality has allowed it or a fire plainly cannot spread; check before you go. Dogs must be on a lead from 1 April to 20 August, and municipalities may set longer periods.",
+    "Motor traffic is forbidden on land, on water and in the air below 300 metres, and e-bikes count as motor traffic. Drones need special permission from the management authority, and motor-driven model aircraft are banned. Ordinary cycling is allowed only on routes and at times approved in the management plan: the park authority allows cycling to Snøheim from 1 June to 15 July only. Organised activities that could harm the environment, dog sledding and organised riding need permission. Hunting and fishing are allowed with a valid licence.",
+    "Two animals set the rules of conduct. Muskox can be dangerous: the park board's minimum safe distance is 200 metres, and the marked muskox trail is the best way to see them. The wild reindeer are easily disturbed; from February to July, and into August for some species, take extra care during calving and breeding."
+  ],
+  "sights": [
+    {
+      "name": "Snøhetta",
+      "note": "The park's natural centre, 2,286 metres, and its great draw. The usual ascent starts at Snøheim, reached by shuttle bus from Hjerkinn.",
+      "location": [
+        62.3198,
+        9.2677
+      ]
+    },
+    {
+      "name": "Storstyggesvånåtinden",
+      "note": "Also called Storsvånåtinden: a peak of over 2,200 metres in the Svånåtindan range, about 5 km south-west of Snøhetta.",
+      "location": [
+        62.284,
+        9.188
+      ]
+    },
+    {
+      "name": "Storskrymten",
+      "note": "1,985 metres, the highest mountain in Trøndelag, where Oppdal, Sunndal and Lesja meet.",
+      "location": [
+        62.373,
+        9.062
+      ]
+    },
+    {
+      "name": "Stroplsjødalen",
+      "note": "A heath-covered valley in the eastern part of the park and sensitive wild reindeer country; the park board's marked Muskox Trail keeps walkers out of it.",
+      "location": [
+        62.3235,
+        9.4996
+      ]
+    },
+    {
+      "name": "Besøkssenter villrein",
+      "note": "The authorised wild reindeer visitor centre at Hjerkinn, with the park's information and offices; a short walk leads to Viewpoint Snøhetta, looking into the park.",
+      "location": [
+        62.221,
+        9.546
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Hjerkinn, on the E6 and the Dovre Line, with the shuttle bus to Snøheim",
+      "Kongsvoll, on the E6 about midway between Dombås and Oppdal",
+      "Oppdal, the natural approach from the north",
+      "Gjøra, at the eastern end of Sunndalen",
+      "Eikesdal, at the southern end of Eikesdalsvatnet",
+      "Lesja, Bjorli and Dombås, on the southern side"
+    ],
+    "reservations": "No booking or fee for the park. A shuttle bus runs from Hjerkinn to Snøheim, the start of the Snøhetta ascent; check its season and timetable before you go.",
+    "permits": [
+      "Drones need special permission from the national park board",
+      "Organised activities that could harm the environment, dog sledding and organised riding need permission",
+      "Hunting and fishing need the ordinary licences"
+    ],
+    "camping": [
+      "Wild camping under the right to roam, except in a few areas where the management plan bans tents",
+      "The park board recommends using the tent sites at the trekking cabins"
+    ],
+    "lodging": [
+      "Snøheim, staffed in summer only",
+      "Self-service cabins at Reinheim, Åmotdalshytta and Raubergshytta; Reinheim now closes for part of the year to protect wild reindeer, so check its opening with DNT before you go",
+      "Dombås, Hjerkinn, Kongsvoll, Oppdal and Sunndalen"
+    ],
+    "seasonalClosures": [
+      "Cycling to Snøheim is allowed only from 1 June to 15 July"
+    ]
+  },
+  "weather": "The park authority names July and August as the finest months for walking. East of Snøhetta the weather is steadier and drier; to the west the terrain grows rougher and the climate harder, with unstable weather, strong winds and much more rain and snow. Winters are tough on the plateaus, with few marked ski trails.",
+  "directions": "The Dovre Line between Oslo and Trondheim crosses Dovrefjell with stations at Dombås, Hjerkinn, Kongsvoll and Oppdal, and the E6 follows the same route. From Dombås the Rauma Line runs west to Bjorli and Åndalsnes, giving access to the southern and western sides, and Sunndalen is reached by road from Oppdal.",
+  "chronology": [
+    {
+      "year": "Prehistory",
+      "text": "Hunters build large systems of guiding fences, pits and bow emplacements to trap wild reindeer."
+    },
+    {
+      "year": "1814",
+      "text": "The founders of the constitution swear to stand 'united and loyal until Dovre falls'."
+    },
+    {
+      "year": "1930s",
+      "text": "Muskox from Greenland are first released on Dovrefjell."
+    },
+    {
+      "year": "1947–1953",
+      "text": "Muskox are released again; their descendants roam the park today."
+    },
+    {
+      "year": "1974",
+      "text": "Dovrefjell National Park is created, covering 265 square kilometres."
+    },
+    {
+      "year": "c. 1990",
+      "text": "The arctic fox dies out on Dovrefjell."
+    },
+    {
+      "year": "2002",
+      "text": "Dovrefjell-Sunndalsfjella National Park is created, absorbing the old park."
+    },
+    {
+      "year": "2010",
+      "text": "The reintroduction of arctic foxes begins; so far it has succeeded."
+    },
+    {
+      "year": "2018",
+      "text": "Most of the former Hjerkinn firing range is added to the park, which reaches about 1,830 square kilometres."
+    }
+  ],
+  "safety": [
+    "Muskox are dangerous animals. Keep at least 200 metres away, and back off at once if one approaches.",
+    "Distances between cabins are long and many day stages are demanding. West of Snøhetta the ground is steep and stony and the weather unstable — it calls for experience.",
+    "Fog and snow can close in on the plateaus in any month; carry map, compass and warm clothing even on a fine summer day.",
+    "Explosive remnants may remain in the former Hjerkinn firing range; never touch suspicious objects, and report them."
+  ],
+  "regulations": [
+    "Keep 200 metres from muskox, and give wild reindeer a wide berth.",
+    "No motor traffic on land, water or in the air below 300 metres; e-bikes count as motor traffic, and drones need special permission.",
+    "Cycling only on approved routes and times — to Snøheim from 1 June to 15 July.",
+    "Dogs on a lead from 1 April to 20 August, longer where the municipality says so.",
+    "No open fires in or near forest from 15 April to 15 September unless the municipality allows it."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-tundra",
+    "theme-alpine"
+  ],
+  "photos": [
+    {
+      "file": "File:Snøhetta with Large-, Central and West Summit.jpg",
+      "caption": "Snøhetta, with its main, central and western summits",
+      "altText": "A broad, snow-flecked mountain massif with several summits above a lake"
+    },
+    {
+      "file": "File:Ovibos moschatus Stroplsjødalen.jpg",
+      "caption": "Muskox in Stroplsjødalen, in the eastern part of the park",
+      "altText": "Shaggy dark-brown muskox grazing on an open mountain heath"
+    },
+    {
+      "file": "File:Storskrymten Litlskrymten and Grytkollen.jpg",
+      "caption": "Storskrymten, Litlskrymten and Grytkollen above Grytholtjønnin",
+      "altText": "Grey mountain summits rising behind a small tarn in autumn light"
+    },
+    {
+      "file": "File:Heath Stroplsjødalen.jpg",
+      "caption": "Heath in Stroplsjødalen, looking east",
+      "altText": "Low heath vegetation stretching across a broad mountain valley"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dovrefjell-Sunndalsfjella nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/dovrefjell-sunndalsfjella/"
+    },
+    {
+      "title": "Dovrefjell-Sunndalsfjella nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00001897"
+    },
+    {
+      "title": "Forskrift om vern av Dovrefjell-Sunndalsfjella nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/2018-04-20-607"
+    },
+    {
+      "title": "Dovrefjell-Sunndalsfjella — Dovrefjell nasjonalparkstyre",
+      "url": "https://dovrefjell-sunndalsfjella.no/"
+    },
+    {
+      "title": "Ferdselsråd og regler — Dovrefjell nasjonalparkstyre",
+      "url": "https://dovrefjell-sunndalsfjella.no/ferdselsrad-og-regler"
+    },
+    {
+      "title": "Moskus — Dovrefjell nasjonalparkstyre",
+      "url": "https://dovrefjell-sunndalsfjella.no/moskus/"
+    },
+    {
+      "title": "Innfallsporter — Dovrefjell nasjonalparkstyre",
+      "url": "https://dovrefjell-sunndalsfjella.no/innfallsporter/"
+    },
+    {
+      "title": "Dovrefjell–Sunndalsfjella National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dovrefjell%E2%80%93Sunndalsfjella_National_Park"
+    },
+    {
+      "title": "Dovrefjell-Sunndalsfjella nasjonalpark — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/Dovrefjell-Sunndalsfjella_nasjonalpark"
+    },
+    {
+      "title": "Dovrefjell gjennom året — Dovrefjell nasjonalparkstyre",
+      "url": "https://dovrefjell-sunndalsfjella.no/dovrefjell-gjennom-aret/"
+    },
+    {
+      "title": "Snøheim — UT.no, Den Norske Turistforening",
+      "url": "https://ut.no/hytte/10917"
+    },
+    {
+      "title": "Reinheim — UT.no, Den Norske Turistforening",
+      "url": "https://ut.no/hytte/10918"
+    },
+    {
+      "title": "Raubergshytta — UT.no, Den Norske Turistforening",
+      "url": "https://ut.no/hytte/10798"
+    },
+    {
+      "title": "Storskrymten — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Storskrymten"
+    },
+    {
+      "title": "Storstyggesvånåtinden — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Storstyggesv%C3%A5n%C3%A5tinden"
+    },
+    {
+      "title": "Lov om friluftslivet (friluftsloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/1957-06-28-16"
+    },
+    {
+      "title": "Forskrift om brannforebygging — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Lov om forsvarlig hundehold (hundeloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+    },
+    {
+      "title": "Sight locations — Kartverket place names (stedsnavn) and OpenStreetMap",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

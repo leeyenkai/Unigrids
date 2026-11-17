@@ -1,0 +1,269 @@
+{
+  "placeID": "no-np-langsua",
+  "contentVersion": 1,
+  "summary": "A broad, rolling low-mountain wilderness between Gudbrandsdalen and Valdres, about 200 kilometres north of Oslo. Old pine and spruce forest, birch slopes, mires and lakes climb to open fells, with Skaget at 1,685 metres the landmark summit. Come for easy walks with long views, trout fishing, great snipe displaying on early-summer nights, and the bearded bellflower, which grows nowhere else in northern Europe.",
+  "facts": {
+    "establishedYear": 2011,
+    "areaHectares": 53710,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Langsua is the typical landscape of eastern Norway's inland: forest in the valleys, birch on the slopes and wide, rounded fells above, between about 700 and 1,700 metres. Two summits stand out as landmarks, Skaget at 1,685 metres in the west and Langsua itself at 1,553 metres. The last ice age left its mark everywhere, in moraines, eskers, terraces and the dry channels cut by meltwater, and between them lie countless mires, tarns and lakes full of brown trout.",
+    "Centuries of grazing have given these hills an unusual wealth of plants and birds. On open, grazed ground grows the bearded bellflower, skjeggklokke, a plant of the Alps and the Carpathians whose only northern European sites are here. On summer-farm meadows and mires the great snipe gathers to display on early-summer nights, and rare birds such as the hen harrier and broad-billed sandpiper live in the wetlands. In Dokkfaret, in the south, pines several hundred years old stand along the rivers and lakes.",
+    "People have used these hills for a very long time. Trapping pits for elk and wild reindeer, the sites of old iron furnaces and charcoal kilns all survive, and summer farms on sunny slopes are still grazed. Tame reindeer are herded in the area, and the trekking association keeps huts in and around the park; its only staffed lodge, Liomseter, stands just outside the boundary in Dokkfaret.",
+    "The first protected piece was Ormtjernkampen, a pocket of virgin spruce forest made Norway's smallest national park in 1968. Langsua took it over on 11 March 2011, when the government created a park of 537 square kilometres across six municipalities, together with ten neighbouring nature reserves and landscape protection areas. Counted together, the protected land here is just over 1,000 square kilometres."
+  ],
+  "howItWorks": [
+    "Norway's right to roam, allemannsretten, applies here as on any uncultivated land: you may walk, ski and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland, unless there is clearly no risk of fire. Dogs must be kept on a lead nationwide from 1 April to 20 August, and the park's municipalities extend that into the autumn, to 30 September or 15 October, so check the local rules for where you are walking.",
+    "On top of that the park's own regulation applies. Motor traffic is banned on land, on water and in the air below 300 metres, and motor-driven model aircraft, which includes drones, may not be used. Electric bicycles count as motor traffic and are allowed only on roads open to cars; ordinary cycling and organised riding are allowed only on the routes the management plan approves. Camping in one place for more than a week needs permission, though ordinary hiking tents are exempt. Dry branches lying on the ground may be used sparingly for a fire, but trees may not be cut. Picking berries, mushrooms and common plants is allowed.",
+    "Langsua is wild but worked. Summer farms, grazing cattle and sheep, tame-reindeer herding, hunting and fishing all continue, and one fishing licence covers the whole area. The park and its ten neighbouring protected areas are run by the Langsua national park board, with park managers at the County Governor's office, and organised activity that could damage the land needs its permission."
+  ],
+  "sights": [
+    {
+      "name": "Skaget",
+      "note": "One of the park's two landmark summits, 1,685 metres, in the west above Øystre Slidre. The national park path leads towards it from the car park at Storeskag.",
+      "location": [
+        61.2911,
+        9.1999
+      ]
+    },
+    {
+      "name": "Langsua",
+      "note": "The fell that gives the park its name, 1,553 metres high, with wide views over the low mountains around it.",
+      "location": [
+        61.3051,
+        9.374
+      ]
+    },
+    {
+      "name": "Ormtjernkampen",
+      "note": "A 1,128-metre hill above old spruce forest in the south-east, protected as Norway's smallest national park from 1968 until Langsua absorbed it.",
+      "location": [
+        61.1923,
+        9.8252
+      ]
+    },
+    {
+      "name": "Dokkfaret",
+      "note": "A valley of massive old pines, some 300 to 400 years old, along the summer road from Holsbru to Liomseter, protected as a landscape area beside the park.",
+      "location": [
+        61.2123,
+        9.8161
+      ]
+    },
+    {
+      "name": "Holsfossen",
+      "note": "The waterfall at Holsbru, a south-eastern entrance to the park, with parking, information and a trekking-association café.",
+      "location": [
+        61.1789,
+        9.8727
+      ]
+    },
+    {
+      "name": "Hersjømyrin",
+      "note": "A wetland nature reserve of mires beside the park's northern edge, protected at the same time as the park. The information point at Veslefjell looks out over it.",
+      "location": [
+        61.3689,
+        9.3263
+      ]
+    },
+    {
+      "name": "Kittilbu utmarksmuseum",
+      "note": "An outfield museum in Gausdal Vestfjell with exhibitions, information on the park, a café, nature and cultural trails and a bird hide nearby. Not an authorised national park centre.",
+      "location": [
+        61.1744,
+        9.9529
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Holsbru in Vestre Gausdal, signposted from Forset — parking, information and a café; the summer road on to Liomseter runs through Dokkfaret",
+      "Storeskag in Øystre Slidre — parking and toilets, for the national park path and Skaget",
+      "Verksodden in Espedalen, beside Fv255 — an information point and a marked 2.5-kilometre loop",
+      "Veslefjell and Bjødnhølen on the Jotunheimvegen toll road, on the northern side",
+      "Lenningen in Etnedal and Storlægerplassen in Nordre Land, on the southern side"
+    ],
+    "reservations": "There is no entry reservation or permit. The staffed lodge at Liomseter takes bookings, and the many small rental cabins around the park are booked through inatur.no.",
+    "permits": [
+      "Buy a fishing licence before you fish; one licence covers the whole area",
+      "Camping for more than a week in one place needs permission from the national park board, except in an ordinary hiking tent",
+      "Organised activity that could damage the natural environment needs permission from the national park board"
+    ],
+    "camping": [
+      "Wild camping under the right to roam, at least 150 metres from houses and cabins",
+      "No fires in or near woodland from 15 April to 15 September, unless there is clearly no fire risk; never cut trees for firewood"
+    ],
+    "lodging": [
+      "Liomseter, the only staffed trekking-association lodge, and several self-service huts in and around the park",
+      "Mountain lodges and rental cabins around the edges, among them at Espedalen, Lenningen and Haugseter"
+    ],
+    "seasonalClosures": [
+      "Most roads into the park are open only from the start of June until some time in October — check road status with the park board and the road owners before you go",
+      "The Jotunheimvegen toll road to Veslefjell and Bjødnhølen is summer-only, from late June until the first snow, usually in October — check before you go",
+      "In winter, ski in from the entrances in the surrounding protected areas — check track conditions before you go"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "weather": "Langsua is low mountain country, and the season is set by its roads, which open in early June and close in October. Early summer is the time for flowering mires and displaying great snipe; July and August are the main walking months, with long days and the fishing season under way. Autumn brings colour to the birch and the dwarf shrubs on the open fell, and the first snow on the summits. Through the winter and into spring the park belongs to skiers, who start from the entrances around its edges.",
+  "directions": "Langsua lies about 200 kilometres north of Oslo, between Gudbrandsdalen and Valdres, and roughly an hour's drive from either Lillehammer or Fagernes. The nearest railway stations are Lillehammer and Vinstra on the Dovre Line, and buses serve Valdres, but the last stretch to any trailhead needs a car or taxi. Holsbru, the main entrance in Gausdal, is reached on Fv204; Espedalen on Fv255; Storeskag from Øystre Slidre; and the northern trailheads from the Jotunheimvegen toll road between Skåbu and Bygdin. Check Entur for public transport, and road status before you set out.",
+  "chronology": [
+    {
+      "year": "End of the last ice age",
+      "text": "Melting ice leaves eskers, moraines and meltwater channels across the low mountains."
+    },
+    {
+      "year": "Prehistory to Middle Ages",
+      "text": "Hunters dig trapping pits for elk and wild reindeer, and iron is smelted here, leaving furnace sites and charcoal kilns."
+    },
+    {
+      "year": "Recent centuries",
+      "text": "Summer farms graze the slopes and mires, shaping the meadows where bearded bellflower and great snipe now thrive."
+    },
+    {
+      "year": "1968",
+      "text": "Ormtjernkampen National Park is created on 14 June to protect virgin spruce forest, the smallest national park in Norway."
+    },
+    {
+      "year": "1990",
+      "text": "Storlonen nature reserve is created in Gausdal."
+    },
+    {
+      "year": "2011",
+      "text": "Langsua National Park is established on 11 March, covering 537.1 square kilometres and replacing Ormtjernkampen National Park and Storlonen nature reserve."
+    },
+    {
+      "year": "2011",
+      "text": "Ten nature reserves and landscape protection areas around the park are protected or enlarged at the same time, bringing the protected land to just over 1,000 square kilometres."
+    }
+  ],
+  "safety": [
+    "The fells are gentle but the weather is not. Carry warm, windproof clothing, a map and compass, and expect snow on the tops early and late in the season.",
+    "Mires and streams are everywhere. Wear waterproof boots, and cross rivers early in the day after snowmelt.",
+    "Several trailheads lie at the end of long mountain roads that close in winter. Check road status before you set out.",
+    "Grazing animals and tame reindeer share the hills. Keep dogs on a lead and close gates behind you."
+  ],
+  "regulations": [
+    "No motor traffic on land or water, no flying lower than 300 metres, and no drones or other motor-driven model aircraft.",
+    "Electric bicycles only on roads open to cars; cycling only on the routes the management plan allows.",
+    "Camping in one place for more than a week needs permission, except in an ordinary hiking tent.",
+    "No fires in or near woodland from 15 April to 15 September, under Norway's national fire ban; never cut trees for firewood.",
+    "Dogs on a lead from 1 April to 20 August, as everywhere in Norway, and under local rules here until 30 September or 15 October, depending on the municipality."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-wetland"
+  ],
+  "photos": [
+    {
+      "file": "File:Langsua mountain in Langsua National Park.jpg",
+      "caption": "Autumn on the open fell in Langsua National Park",
+      "altText": "Rust-red and olive heath strewn with stones and patches of snow, rolling away to a long dark mountain under a cloudy sky"
+    },
+    {
+      "file": "File:Views of Fatkvolven and Hyllefjellet.jpg",
+      "caption": "Fatkvolven and Hyllefjellet dusted with snow",
+      "altText": "A wide upland of tarns and low cliffs dusted with snow, with orange grass and lichen-covered rocks in the foreground"
+    },
+    {
+      "file": "File:Langsua nasjonalpark Ormtjernkampen 1.jpg",
+      "caption": "The summit cairn on Ormtjernkampen, looking out over forest and lakes",
+      "altText": "A stone cairn on a large lichen-covered boulder on a bare summit, with a wide view of forest and lakes beyond"
+    },
+    {
+      "file": "File:Skaget mountain seen from the ski slope towards Storskag tourist cabin.jpg",
+      "caption": "Skaget in winter, from the ski route towards Storeskag",
+      "altText": "A smooth snowfield rising to a rounded white summit under a blue sky with a few clouds"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Langsua nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/langsua/"
+    },
+    {
+      "title": "Langsua nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00001144"
+    },
+    {
+      "title": "Forskrift om vern av Langsua nasjonalpark (FOR-2011-03-11-276) — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/2011-03-11-276"
+    },
+    {
+      "title": "Langsua National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Langsua_National_Park"
+    },
+    {
+      "title": "Langsua nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Langsua_nasjonalpark"
+    },
+    {
+      "title": "Langsua nasjonalpark — the park board's website",
+      "url": "https://www.langsua.no/"
+    },
+    {
+      "title": "Om nasjonalparken — Langsua nasjonalpark",
+      "url": "https://www.langsua.no/om-nasjonalparken/"
+    },
+    {
+      "title": "Aktiviteter og regler for ferdsel — Langsua nasjonalpark",
+      "url": "https://www.langsua.no/aktiviteter-ved-langsua/"
+    },
+    {
+      "title": "Besøkssenter og innfallsporter — Langsua nasjonalpark",
+      "url": "https://www.langsua.no/besokssenter-og-innfallsporter/"
+    },
+    {
+      "title": "Reise og overnatting — Langsua nasjonalpark",
+      "url": "https://www.langsua.no/reise-og-overnatting/"
+    },
+    {
+      "title": "Langsua nasjonalpark brochure (2020) — Langsua nasjonalparkstyre",
+      "url": "https://www.nasjonalparkstyre.no/uploads/files_langsua/Langsua_NO_2020.pdf"
+    },
+    {
+      "title": "Ormtjernkampen National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ormtjernkampen_National_Park"
+    },
+    {
+      "title": "Skaget — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Skaget"
+    },
+    {
+      "title": "Jotunheimvegen — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jotunheimvegen"
+    },
+    {
+      "title": "Ormtjernkampen nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Ormtjernkampen_nasjonalpark"
+    },
+    {
+      "title": "Kittilbu Utmarksmuseum — Lokalhistoriewiki",
+      "url": "https://lokalhistoriewiki.no/wiki/Kittilbu_Utmarksmuseum"
+    },
+    {
+      "title": "Vinstra Station — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vinstra_Station"
+    },
+    {
+      "title": "Lillehammer Station — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lillehammer_Station"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

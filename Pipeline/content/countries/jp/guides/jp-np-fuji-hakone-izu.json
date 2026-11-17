@@ -1,0 +1,444 @@
+{
+  "placeID": "jp-np-fuji-hakone-izu",
+  "contentVersion": 1,
+  "summary": "Japan's most visited national park runs from Mount Fuji, the country's highest peak, through the hot-spring caldera of Hakone and the Izu Peninsula to a chain of volcanic islands in the Pacific. Climb Fuji in its short summer season, ride over the steaming valley of Ōwakudani, walk the lava cliffs of the Izu coast, or take the ferry from Tokyo to the islands.",
+  "facts": {
+    "establishedYear": 1936,
+    "areaHectares": 121755,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two days to climb Fuji; a week for all four areas"
+  },
+  "story": [
+    "Mount Fuji (富士山) is a young volcano and an unfinished one. Layer on layer of lava and ash have built a cone 3,776 metres high. Lava flows dammed the rivers at its northern foot to make the Fuji Five Lakes. Between 864 and 866 the Jōgan eruption poured lava from the north-west flank into a lake called Senoumi, leaving two fragments of it, Saiko and Shōjiko, and the lava plain where the forest of Aokigahara now grows. The last eruption, in 1707, blew open the Hōei crater on the south-east flank and dropped ash on Edo, about 100 km away.",
+    "The rest of the park is volcanic too. Hakone is a complex volcano whose caldera is about 8 km across from east to west; about 3,000 years ago an eruption at its centre left the steaming valley of Ōwakudani and the landslides that dammed Lake Ashi. The Izu Peninsula came from the south. It began as volcanic islands on the Philippine Sea Plate, which carried them north into Honshu until they joined it as a peninsula about 600,000 years ago. Volcanoes kept growing after the collision — lava from Ōmuroyama built the Jōgasaki Coast some 4,000 years ago — and the Izu Islands to the south-east are still active.",
+    "Height and the sea give the park its range. On Fuji, dense woodland on the lower slopes gives way to conifers up to about the sixth station, then to bare volcanic gravel at the top. In Hakone's caldera, the marsh plants of Sengokuhara are a national natural monument, and the pampas-grass slope above them is kept open by burning each March. The Amagi range at the heart of Izu holds a large stand of natural beech forest. Offshore, the islands are home to the Izu thrush and Iijima's leaf warbler; table corals grow off Miyakejima, and wild Indo-Pacific bottlenose dolphins live around Mikurajima and Toshima.",
+    "Fuji has been sacred for as long as there are records. Shrines at its foot were built to calm the mountain's deity, and the summit above the eighth station is still the precinct of Fujisan Hongū Sengen Taisha. In the Edo period, pilgrim confraternities called Fuji-kō climbed it in great numbers; women were barred from the summit until 1872. Fuji and Hakone became a national park in 1936, the Izu Peninsula joined in 1955 and the Izu Islands in 1964. In 2013 Fuji was inscribed as a World Heritage cultural site, 'Fujisan, sacred place and source of artistic inspiration'."
+  ],
+  "howItWorks": [
+    "Like every Japanese national park, Fuji-Hakone-Izu is a zoned regional park, not a fenced reserve. The Ministry of the Environment administers it but owns little of it: of its 121,755 hectares of land, about 18 per cent is national land, 30 per cent belongs to prefectures and towns, and just over half is private. Parts of 36 cities, towns and villages in Tokyo, Kanagawa, Yamanashi and Shizuoka lie inside it, along with the hot-spring resorts of Hakone and the Izu coast, the lakeside towns of the Fuji Five Lakes, farms, shrines and eight inhabited Izu islands. Fuji's summit above the eighth station belongs to Fujisan Hongū Sengen Taisha.",
+    "What you may do depends on the zone. About 6 per cent of the land is special protection zone, Fuji above its fifth stations among it: there, picking plants, catching insects, taking or moving stones, pitching a tent and lighting a fire are all prohibited by law. Two-thirds is special zone in three grades, where building, felling and similar works need a permit, and the remaining quarter is ordinary zone, where only large works must be notified. Driving off the roads is banned across 7,489 hectares of Fuji and along stretches of shore at Lakes Motosu and Saiko, and four marine park zones protect the sea floor off Ōshima, Shikinejima, Kōzushima and Miyakejima.",
+    "Other designations overlap the park. Fuji and a set of shrines, lakes and springs around it make up the World Heritage site; the Izu Peninsula has been a UNESCO Global Geopark since 2018, and Hakone a Japanese Geopark since 2012. Climbing Fuji is run by the two prefectures that share it — Yamanashi on the Yoshida Trail, Shizuoka on the Fujinomiya, Gotemba and Subashiri trails — each with its own registration, rules and fee, and both close the trails outside the summer season."
+  ],
+  "sights": [
+    {
+      "name": "Mount Fuji (富士山)",
+      "note": "Japan's highest mountain at 3,776 m, last in eruption in 1707. Four trails climb from the fifth stations in a season of about ten weeks each summer.",
+      "location": [
+        35.3608,
+        138.7275
+      ]
+    },
+    {
+      "name": "Ōwakudani (大涌谷)",
+      "note": "A valley of steaming vents left by an eruption about 3,000 years ago, crossed by the Hakone Ropeway. Access depends on volcanic activity and gas.",
+      "location": [
+        35.2419,
+        139.0206
+      ]
+    },
+    {
+      "name": "Lake Ashi (芦ノ湖)",
+      "note": "Hakone's caldera lake, crossed by sightseeing boats, with Hakone Shrine and the old Tōkaidō highway at Moto-Hakone on its south-east shore.",
+      "location": [
+        35.2097,
+        139.0044
+      ]
+    },
+    {
+      "name": "Lake Motosu (本栖湖)",
+      "note": "The deepest of the Fuji Five Lakes. Its reflected view of Fuji is the one printed on the back of the ¥1,000 note issued from 2004.",
+      "location": [
+        35.4639,
+        138.5856
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Aokigahara and Fugaku Fuketsu (青木ヶ原・富岳風穴)",
+      "note": "Forest grown on the lava of the 864 Jōgan eruption. Fugaku Fuketsu, a lava tube in the forest, stays around 3°C in midsummer.",
+      "location": [
+        35.4777,
+        138.6578
+      ]
+    },
+    {
+      "name": "Shiraito Falls (白糸の滝)",
+      "note": "Groundwater from Fuji spills from between lava layers in hundreds of threads down a curved cliff about 20 m high. Part of the World Heritage site.",
+      "location": [
+        35.3129,
+        138.5873
+      ]
+    },
+    {
+      "name": "Jōgasaki Coast (城ヶ崎海岸)",
+      "note": "About 9 km of black lava cliffs, left when Ōmuroyama's lava ran into the sea some 4,000 years ago.",
+      "location": [
+        34.8733,
+        139.1225
+      ]
+    },
+    {
+      "name": "Mount Mihara (三原山), Izu Ōshima",
+      "note": "Izu Ōshima's active volcano, watched around the clock by the Japan Meteorological Agency. Its 1986 eruption sent about 11,000 islanders off the island for a month.",
+      "location": [
+        34.7244,
+        139.3947
+      ]
+    },
+    {
+      "name": "Yamanashi Prefectural Mt. Fuji World Heritage Center (山梨県立富士山世界遺産センター)",
+      "note": "Yamanashi Prefecture's centre for the north side of Fuji, at Funatsu in Fujikawaguchiko; its north building is the former Fuji Visitor Center.",
+      "location": [
+        35.4858,
+        138.7706
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Lake Tanuki Nature School (田貫湖ふれあい自然塾)",
+      "note": "The Ministry of the Environment's first nature school, on Lake Tanuki below Fuji's western face, with programmes and cottages.",
+      "location": [
+        35.3376,
+        138.5612
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Hakone Visitor Center (箱根ビジターセンター)",
+      "note": "The Ministry of the Environment's centre for Hakone, near the north shore of Lake Ashi. Maps, trail advice and help in English.",
+      "location": [
+        35.2417,
+        139.002
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Fuji Subaru Line Fifth Station, start of the Yoshida Trail, by bus from Kawaguchiko Station",
+      "Fujinomiya, Subashiri and Gotemba fifth stations on Fuji's south and east sides, by bus in the climbing season",
+      "Hakone-Yumoto and Odawara, the rail gateways to Hakone",
+      "Atami, Mishima and Itō for the Izu Peninsula",
+      "Takeshiba Pier in Tokyo, and the ports of Atami and Shimoda, for the Izu Islands ferries"
+    ],
+    "reservations": "Mount Fuji's trails open only in the summer climbing season, from early July to 10 September, and both prefectures run their own entry system — check before you go. On the Yoshida Trail, Yamanashi Prefecture takes bookings and the fee online through its Yoshida Trail access reservation system, or on the day at the fifth-station gate; the gate closes from 14:00 to 03:00 to anyone without a mountain-hut booking, and once 4,000 climbers have passed in a day. On the Fujinomiya, Gotemba and Subashiri trails, Shizuoka Prefecture requires pre-registration in its FUJI NAVI app, including a short online course on rules and safety, and a hut booking for anyone starting between 14:00 and 03:00; registration can also be done at the trailhead. Book mountain huts well ahead for summer weekends.",
+    "permits": [
+      "Mount Fuji — ¥4,000 per person per climb on every trail in the climbing season, paid to the prefecture (see Fees)",
+      "Yoshida Trail — equipment check at the fifth-station gate: climbers without warm clothing, a separate rain jacket and trousers, and proper boots are turned back"
+    ],
+    "camping": [
+      "No camping on Fuji's climbing routes: climbers stay in mountain huts",
+      "Lakeside campgrounds at Lake Tanuki and Lake Saiko, among others around the Fuji Five Lakes"
+    ],
+    "lodging": [
+      "Mountain huts on all four Fuji trails, open in the climbing season; reserve directly and early",
+      "Hotels and inns around Lake Kawaguchi and the other Fuji Five Lakes",
+      "Hot-spring inns throughout Hakone and along the Izu coast",
+      "Inns and guesthouses on the inhabited Izu Islands"
+    ],
+    "seasonalClosures": [
+      "All four trails to Fuji's summit close outside the climbing season. In 2026 the Yoshida and Subashiri trails opened on 1 July, the Fujinomiya and Gotemba trails on 10 July, and all closed on 10 September; check the dates for your year before you go",
+      "The Shizuoka-side roads to the Fujinomiya, Subashiri and Gotemba fifth stations close in winter (in 2026 they opened on 24 April), and private cars are barred from the Fuji Skyline, Fuji Azami Line and Fuji Subaru Line for most of the climbing season — use the shuttle buses"
+    ],
+    "seasonalClosureMonths": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "weather": "The park spans more than 3,700 metres of height and a long run of ocean, so the weather depends on where you stand. Kawaguchiko, at Fuji's northern foot, averages about 0°C in January and 22°C in August, with nearly 1,600 mm of rain a year; September and October are the wettest months. On the summit the August average is about 6°C and the January average −18°C; even in the climbing season the temperature can fall below freezing before dawn, wind adds to the chill, and afternoon thunderstorms build quickly. Izu Ōshima is mild, about 7.5°C in January and 26°C in August, but wet, with close to 2,900 mm of rain a year and October the wettest month.",
+  "directions": "For the Fuji Five Lakes, highway buses run from Shinjuku and other Tokyo terminals to Kawaguchiko in a little over two hours, and limited-express trains run from Shinjuku to Kawaguchiko Station on the Fujikyu line; local buses go on to the other lakes, and in the climbing season to the fifth stations. From Shin-Fuji on the Tōkaidō Shinkansen, buses serve Shiraito Falls and the Fujinomiya trailhead. For Hakone, the Odakyu Romancecar runs from Shinjuku to Hakone-Yumoto in about 80 minutes, and the Hakone Tozan Railway climbs from Odawara; ropeways and boats cross the caldera. The Izu Peninsula is reached by the Shinkansen to Atami or Mishima, or the Odoriko limited express, with the Izukyu line south of Itō and the Izuhakone Railway to Shuzenji. Tōkai Kisen ships sail to the Izu Islands from Takeshiba Pier in Tokyo and from Atami, Shinshin Kisen's ferry from Shimoda, and there are flights from Haneda to Hachijōjima.",
+  "fees": [
+    {
+      "title": "Hiking fee, Yoshida Trail (Yamanashi)",
+      "cost": "¥4,000",
+      "amount": 4000,
+      "currencyCode": "JPY",
+      "detail": "Per person, per climb, in the climbing season. Paid online through Yamanashi Prefecture's Yoshida Trail access reservation system or at the fifth-station gate. Check before you go."
+    },
+    {
+      "title": "Entry fee, Fujinomiya, Gotemba and Subashiri trails (Shizuoka)",
+      "cost": "¥4,000",
+      "amount": 4000,
+      "currencyCode": "JPY",
+      "detail": "Per person, per climb, in the climbing season. Paid through Shizuoka Prefecture's FUJI NAVI pre-registration or at the fifth station; exemptions on application for people with disabilities and their carers and for school activities. Check before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 4,000 years ago",
+      "text": "Ōmuroyama erupts on the Izu Peninsula; its lava runs into the sea to form the Jōgasaki Coast."
+    },
+    {
+      "year": "c. 3,000 years ago",
+      "text": "An eruption in the Hakone caldera opens Ōwakudani, and landslides dam Lake Ashi."
+    },
+    {
+      "year": "864–866",
+      "text": "The Jōgan eruption buries the lake of Senoumi, leaving Saiko and Shōjiko, and lays the lava on which Aokigahara grows."
+    },
+    {
+      "year": "1707",
+      "text": "The Hōei eruption, Fuji's most recent, opens a crater on the south-east flank and drops ash on Edo."
+    },
+    {
+      "year": "1936",
+      "text": "Fuji-Hakone National Park is designated on 1 February."
+    },
+    {
+      "year": "1955",
+      "text": "The Izu Peninsula is added and the park becomes Fuji-Hakone-Izu."
+    },
+    {
+      "year": "1964",
+      "text": "The Izu Islands, a quasi-national park since 1955, are added to the park."
+    },
+    {
+      "year": "2013",
+      "text": "Fuji is inscribed on the World Heritage List as 'Fujisan, sacred place and source of artistic inspiration'."
+    },
+    {
+      "year": "2024",
+      "text": "Yamanashi puts a gate, a daily limit of 4,000 climbers and a ¥2,000 fee on the Yoshida Trail."
+    },
+    {
+      "year": "2025",
+      "text": "Shizuoka charges ¥4,000 on its three trails for the first time, and Yamanashi doubles its fee to match."
+    }
+  ],
+  "safety": [
+    "Fuji's summit is 3,776 m. Altitude sickness — headache, nausea, dizziness — is common, and worst among people who climb through the night without sleep ('bullet climbing'), which both prefectures warn against. Stay a night in a hut, climb slowly and turn back if symptoms worsen.",
+    "Fuji, Hakone and the Izu Islands volcanoes, among them Izu-Ōshima and Miyakejima, are watched by the Japan Meteorological Agency, which sets a volcanic alert level for each: 1 means stay aware of an active volcano, 2 closes the area around the crater, 3 restricts entry to the mountain, and 4 and 5 mean evacuation. Check JMA's current level and any local closures before you go.",
+    "Ōwakudani's vents give off volcanic gas. In 2015 rising activity and a very small eruption closed the valley for more than a year. The nature trail among the vents reopened in 2022 only for escorted groups booked in advance, and it shuts when gas levels or the weather are bad. Elsewhere, keep to the open areas and follow on-site instructions.",
+    "Out of season Fuji is a winter mountain: the huts and first-aid stations are shut, mobile coverage is patchy, and snow, ice and storm-force wind make falls and exposure likely. Climbing then is strongly discouraged.",
+    "In summer, afternoon thunderstorms build quickly on Fuji, and loose rock falls on crowded upper slopes. Carry rain gear and warm clothing, and consider a helmet."
+  ],
+  "regulations": [
+    "Fuji above the fifth stations is special protection zone: do not pick plants, collect insects, take or move stones, or leave the trail. Tents and fires are not allowed on the climbing routes.",
+    "Carry all rubbish home. There are no bins on Fuji's trails or at the huts, and trail and hut toilets ask a tip of about ¥100–300, so carry coins.",
+    "The landowner bans drones and paragliders above the 8.5th station, and the official climbing guidance asks climbers not to bring pets and to use stoves away from huts and crowds.",
+    "Driving off the roads is banned in designated areas on Fuji and along the shores of Lakes Motosu and Saiko."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-mountains",
+    "theme-sacred-places",
+    "theme-hot-springs",
+    "theme-islands",
+    "theme-coastal",
+    "theme-caves"
+  ],
+  "photos": [
+    {
+      "file": "File:Lake Kawaguchiko Sakura Mount Fuji 4.JPG",
+      "caption": "Mount Fuji over Lake Kawaguchi in cherry-blossom season",
+      "altText": "A snow-covered volcanic cone rising above a calm lake and a lakeside town, framed by a branch of pale pink blossom"
+    },
+    {
+      "file": "File:Lake Ashi & Mt Fuji & Hakone Shrine.jpg",
+      "caption": "Lake Ashi, with the torii of Hakone Shrine at the water's edge and Fuji beyond",
+      "altText": "A wooded lakeshore with a red gate standing in the water, and a snow-capped peak beyond green hills"
+    },
+    {
+      "file": "File:Jōgasaki Coast 01.jpg",
+      "caption": "The Jōgasaki Coast, lava cliffs on the east side of the Izu Peninsula",
+      "altText": "Dark forested headlands and rocks meeting a deep blue sea under scattered cloud"
+    },
+    {
+      "file": "File:Mount Mihara (9609570317).jpg",
+      "caption": "The summit crater of Mount Mihara on Izu Ōshima",
+      "altText": "A steep-walled crater of red and grey rock, with a grassy plateau and the sea beyond"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fuji-Hakone-Izu National Park — National Parks of Japan (Ministry of the Environment / JNTO)",
+      "url": "https://www.japan.travel/national-parks/parks/fuji-hakone-izu/"
+    },
+    {
+      "title": "Explore Fuji-Hakone-Izu National Park — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/fuji-hakone-izu/explore/"
+    },
+    {
+      "title": "How to get there — Fuji-Hakone-Izu — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/fuji-hakone-izu/how-to-get-there/"
+    },
+    {
+      "title": "富士箱根伊豆国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/fujihakone/"
+    },
+    {
+      "title": "富士箱根伊豆国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/fujihakone/intro/index.html"
+    },
+    {
+      "title": "富士箱根伊豆国立公園の見どころ — 環境省",
+      "url": "https://www.env.go.jp/park/fujihakone/guide/view.html"
+    },
+    {
+      "title": "The Official Website for Mt. Fuji Climbing — Council for the Promotion of Appropriate Use of Mt. Fuji",
+      "url": "https://www.fujisan-climb.jp/en/"
+    },
+    {
+      "title": "Things you must know before climbing Mt. Fuji — Official Website for Mt. Fuji Climbing",
+      "url": "https://www.fujisan-climb.jp/en/things-to-know-before-climbing/"
+    },
+    {
+      "title": "Climbing season: operating period for each facility — Official Website for Mt. Fuji Climbing",
+      "url": "https://www.fujisan-climb.jp/en/season/"
+    },
+    {
+      "title": "令和8年度の富士登山について — 山梨県",
+      "url": "https://www.pref.yamanashi.jp/fujisan/annzenn/documents/r8fujitozan.html"
+    },
+    {
+      "title": "静岡県各3登山口における登山規制の実施 — 静岡県",
+      "url": "https://www.pref.shizuoka.jp/kankosports/kanko/mtfuji/1002809/1072062.html"
+    },
+    {
+      "title": "火山活動の状況（富士山）— 気象庁",
+      "url": "https://www.data.jma.go.jp/vois/data/report/activity_info/314.html"
+    },
+    {
+      "title": "火山活動の状況（箱根山）— 気象庁",
+      "url": "https://www.data.jma.go.jp/vois/data/report/activity_info/315.html"
+    },
+    {
+      "title": "昭和61年（1986年）伊豆大島噴火40年 — 気象庁",
+      "url": "https://www.data.jma.go.jp/tokyo/shosai/jikazan/izuoshima40/index.html"
+    },
+    {
+      "title": "平年値（河口湖・富士山・大島）— 気象庁",
+      "url": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=49&block_no=47640&year=&month=&day=&view="
+    },
+    {
+      "title": "Mount Fuji — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mount_Fuji"
+    },
+    {
+      "title": "Mount Hakone — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mount_Hakone"
+    },
+    {
+      "title": "Ōwakudani — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/%C5%8Cwakudani"
+    },
+    {
+      "title": "Lake Ashi — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lake_Ashi"
+    },
+    {
+      "title": "Aokigahara — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aokigahara"
+    },
+    {
+      "title": "Izu Ōshima — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Izu_%C5%8Cshima"
+    },
+    {
+      "title": "Miyake-jima — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Miyake-jima"
+    },
+    {
+      "title": "富士山 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%A3%AB%E5%B1%B1"
+    },
+    {
+      "title": "貞観大噴火 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E8%B2%9E%E8%A6%B3%E5%A4%A7%E5%99%B4%E7%81%AB"
+    },
+    {
+      "title": "宝永大噴火 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%AE%9D%E6%B0%B8%E5%A4%A7%E5%99%B4%E7%81%AB"
+    },
+    {
+      "title": "伊豆半島ジオパーク — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%B1%86%E5%8D%8A%E5%B3%B6%E3%82%B8%E3%82%AA%E3%83%91%E3%83%BC%E3%82%AF"
+    },
+    {
+      "title": "箱根ジオパーク — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E7%AE%B1%E6%A0%B9%E3%82%B8%E3%82%AA%E3%83%91%E3%83%BC%E3%82%AF"
+    },
+    {
+      "title": "富士宮ルート 登山ガイド 2026 — 富士登山オフィシャルサイト",
+      "url": "https://www.fujisan-climb.jp/wp-content/uploads/2026/07/Fujinomiya_guide_2026.pdf"
+    },
+    {
+      "title": "大涌谷 — 神奈川県",
+      "url": "https://www.pref.kanagawa.jp/docs/f4y/hakone/fujihakoneizu/oowakudani.html"
+    },
+    {
+      "title": "箱根山 — 気象庁 日本活火山総覧",
+      "url": "https://www.data.jma.go.jp/vois/data/filing/souran/main/56_Hakoneyama.pdf"
+    },
+    {
+      "title": "山梨県（吉田ルート）からのお知らせ — 富士登山オフィシャルサイト",
+      "url": "https://www.fujisan-climb.jp/yamanashi-notice/"
+    },
+    {
+      "title": "富士登山の前に知っておきたいこと — 富士登山オフィシャルサイト",
+      "url": "https://www.fujisan-climb.jp/things-to-know-before-climbing/"
+    },
+    {
+      "title": "山梨県立富士山世界遺産センター — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E6%A2%A8%E7%9C%8C%E7%AB%8B%E5%AF%8C%E5%A3%AB%E5%B1%B1%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC"
+    },
+    {
+      "title": "Hakone Visitor Center — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/fuji-hakone-izu/see-and-do/hakone-visitor-center/"
+    },
+    {
+      "title": "神新汽船",
+      "url": "https://www.shinshin-kisen.jp/"
+    },
+    {
+      "title": "伊豆諸島航路で唯一の「フェリー」に乗る — 乗りものニュース",
+      "url": "https://trafficnews.jp/post/136323"
+    },
+    {
+      "title": "富士山吉田ルートにゲート設置 — nippon.com（2024年6月）",
+      "url": "https://www.nippon.com/ja/news/l00331/"
+    },
+    {
+      "title": "静岡県側の富士山 入山料4000円 — トラベルボイス（2025年5月）",
+      "url": "https://www.travelvoice.jp/20250509-157663"
+    },
+    {
+      "title": "2025年の国立公園の利用動向について（詳細） — 環境省",
+      "url": "https://www.env.go.jp/content/000383032.pdf"
+    },
+    {
+      "title": "伊豆半島の成り立ち — 伊豆半島ジオパーク",
+      "url": "https://izugeopark.org/intro/intro2/"
+    },
+    {
+      "title": "城ヶ崎海岸 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9F%8E%E3%83%B6%E5%B4%8E%E6%B5%B7%E5%B2%B8"
+    },
+    {
+      "title": "富岳風穴 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%B2%B3%E9%A2%A8%E7%A9%B4"
+    },
+    {
+      "title": "本栖湖 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9C%AC%E6%A0%96%E6%B9%96"
+    },
+    {
+      "title": "白糸の滝 (静岡県) — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E7%B3%B8%E3%81%AE%E6%BB%9D_(%E9%9D%99%E5%B2%A1%E7%9C%8C)"
+    },
+    {
+      "title": "Ijima's leaf warbler — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ijima%27s_leaf_warbler"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "placeID": "jp-np-saikai",
+  "contentVersion": 1,
+  "summary": "More than four hundred islands off north-western Kyushu: the sheltered maze of Kujūkushima off Sasebo, the old trading island of Hirado and windswept Ikitsuki, and the Gotō Islands far out in the East China Sea, with their white beaches, sea cliffs, small volcanoes and the churches of Japan's hidden Christians.",
+  "facts": {
+    "establishedYear": 1955,
+    "areaHectares": 24646,
+    "bestSeasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "Saikai is a park of islands and inlets. Off Sasebo the coast breaks up into Kujūkushima, the 'ninety-nine islands' — officially there are 208 — strung along some 25 kilometres of drowned, saw-toothed shore. Further west the Gotō Islands rise from the open sea, and in between lie Hirado, Ikitsuki and Ojika. Many of the smaller islands are volcanic: Ojika is built of small, single-eruption volcanoes, Mount Onidake on Fukue is a grassy cinder cone above a coast of lava, and on Ikitsuki's western shore the sea cliffs are made of columnar jointed rock. Elsewhere the sea has drowned river valleys into long inlets, such as Tamanoura Bay on Fukue.",
+    "The warm Tsushima Current flows through the islands and keeps them mild, so subtropical plants grow alongside the evergreen forest. Green and loggerhead turtles live in the surrounding sea, wild deer roam the abandoned island of Nozaki, and every autumn Oriental honey buzzards, migrating south, gather over the cliffs of Ōsezaki on their way out across the sea. The waters round the islands are rich fishing grounds.",
+    "These islands were one of Japan's windows on the West. Hirado was once a port for trade with Europe, and missionaries made converts across the region. When Christianity was banned in the Edo period, many believers kept their faith in secret on Hirado and Ikitsuki, and from the late eighteenth century families from Sotome moved out to the Gotō Islands. Their descendants built churches across the islands once the ban was lifted, and villages linked to them became part of a World Heritage Site in 2018.",
+    "Before the war the Sasebo area was a naval district where photography was banned and visitors discouraged. In 1949 the mayor of Sasebo began a campaign to turn the islands into a national park, backed by surveys from the universities of Tokyo, Kyoto and Nagasaki. It succeeded: Saikai National Park — the name means 'western sea' — was designated on 16 March 1955, Japan's eighteenth."
+  ],
+  "howItWorks": [
+    "Saikai is a regional park in which almost nine-tenths of the land is privately owned. It is a park of working islands: fishing harbours, farming villages, churches, towns such as Hirado and Fukue, and the island communities of Ojika and Kamigotō all lie inside or beside its boundaries, and ferries and fishing boats cross its waters every day.",
+    "Nearly all of the land, over 95 per cent, is special zone, in three classes, so building, quarrying and felling need permission and must fit the landscape. Only a tiny fraction is special protection zone. Marine park zones off Fukue and in the Wakamatsu Strait protect the reefs and underwater scenery, and the sea around the islands is part of the park as well.",
+    "Many of the churches inside the park are active places of worship, and some belong to the World Heritage Site 'Hidden Christian Sites in the Nagasaki Region'. Some, including Kashiragashima Church, ask visitors to give notice in advance through the information centre for the Hidden Christian sites; check before you go."
+  ],
+  "sights": [
+    {
+      "name": "Kujūkushima (九十九島)",
+      "note": "Officially 208 islands, in a maze of sheltered water off Sasebo. Cruise or kayak from the Pearl Sea Resort at Kashimae.",
+      "location": [
+        33.167,
+        129.6
+      ]
+    },
+    {
+      "name": "Tenkaihō (展海峰)",
+      "note": "A hilltop viewpoint looking out across the Kujūkushima islands.",
+      "location": [
+        33.1323,
+        129.6929
+      ]
+    },
+    {
+      "name": "Ōbae Lighthouse, Ikitsuki (大バエ灯台)",
+      "note": "On the northernmost point of Ikitsuki, with a viewing platform and wide views over the open sea.",
+      "location": [
+        33.4398,
+        129.4304
+      ]
+    },
+    {
+      "name": "Nozakijima (野崎島)",
+      "note": "An almost abandoned island off Ojika, reached by ferry, where deer graze around the old Nokubi church.",
+      "location": [
+        33.1861,
+        129.127
+      ]
+    },
+    {
+      "name": "Ōsezaki Cliffs and Lighthouse (大瀬崎)",
+      "note": "Sea cliffs at Fukue's south-western tip, the westernmost point of the Gotō Islands; in autumn, honey buzzards pass overhead on migration.",
+      "location": [
+        32.6127,
+        128.6
+      ]
+    },
+    {
+      "name": "Takahama Beach (高浜)",
+      "note": "White sand and glassy water in a sheltered bay on Fukue, beside neighbouring Tonmarihama.",
+      "location": [
+        32.708,
+        128.6616
+      ]
+    },
+    {
+      "name": "Mount Onidake (鬼岳)",
+      "note": "A grass-covered cinder cone above Fukue town, with a large crater and wide views over the islands.",
+      "location": [
+        32.6566,
+        128.8489
+      ]
+    },
+    {
+      "name": "Kujūkushima Visitor Center",
+      "note": "At the Pearl Sea Resort in Kashimae, Sasebo: the islands' nature, boat trips and kayaking.",
+      "location": [
+        33.1625,
+        129.6789
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Abunze Visitor Center (鐙瀬ビジターセンター)",
+      "note": "On Fukue's Abunze lava coast below Mount Onidake: the Gotō Islands' nature and trails.",
+      "location": [
+        32.6418,
+        128.8477
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Sasebo, by the JR Seaside Liner from Nagasaki or by bus from Nagasaki Airport — Kujūkushima",
+      "Hirado and Ikitsuki, by bus from the Sasebo Bus Center or by road over the bridges",
+      "Fukue on Fukuejima, by air from Nagasaki — the southern Gotō Islands",
+      "Nakadōri Island (Kamigotō), by fast boat from Sasebo — the northern Gotō Islands"
+    ],
+    "reservations": "No park permit is needed. Ferries and flights to the Gotō Islands run to limited timetables and can be cancelled in rough weather; rental cars on the islands are limited, so book ahead. Some churches ask for advance notice of a visit — check before you go.",
+    "permits": [],
+    "camping": [],
+    "lodging": [
+      "Hotels in Sasebo and at the Kujūkushima Pearl Sea Resort",
+      "Inns on Hirado",
+      "Hotels and guesthouses in Fukue and on Nakadōri Island"
+    ],
+    "seasonalClosures": []
+  },
+  "weather": "The Tsushima Current keeps the islands mild. Winters are cool rather than cold, but north-westerly winds bring rough seas that can cancel ferries. Spring is fresh and clear. The rainy season runs from June into July, and July and August are hot, humid and the best months for the beaches. Typhoons often cross or pass near the islands between August and October. Autumn is settled and bright, and the time to watch the honey buzzards over Ōsezaki.",
+  "directions": "From Tokyo, fly to Nagasaki Airport; airport buses run to Sasebo in about an hour and a half, and the JR Seaside Liner links Nagasaki and Sasebo stations in about an hour and 40 minutes to two hours. From the Sasebo Bus Center, buses run to Hirado in about an hour and a half and to the Kujūkushima Pearl Sea Resort. For the Gotō Islands, Oriental Air Bridge flies from Nagasaki to Fukue in about 30 minutes, and a fast boat runs from Sasebo to Nakadōri Island in about an hour and a half. Hirado and Ikitsuki are linked to the mainland by bridges. A car makes the outlying sights much easier, and is all but essential in the Gotō Islands; taking one on the ferries is expensive, so hire one on each island.",
+  "chronology": [
+    {
+      "year": "Edo period",
+      "text": "Christianity is banned; believers on Hirado and Ikitsuki keep their faith in secret."
+    },
+    {
+      "year": "Late 18th century",
+      "text": "Hidden Christian families from Sotome begin to settle in the Gotō Islands."
+    },
+    {
+      "year": "1949",
+      "text": "The mayor of Sasebo launches a campaign for a national park around the islands."
+    },
+    {
+      "year": "1955",
+      "text": "Saikai National Park is designated on 16 March, Japan's eighteenth."
+    },
+    {
+      "year": "1972",
+      "text": "Marine park zones are designated off Fukue and in the Wakamatsu Strait."
+    },
+    {
+      "year": "2018",
+      "text": "Hidden Christian villages and churches in the Nagasaki region, several within the park, are inscribed as a World Heritage Site."
+    }
+  ],
+  "safety": [
+    "Winter winds and typhoon swells make the outer coasts dangerous. Keep off wave-washed rocks and away from cliff edges at Ōsezaki and Ikitsuki.",
+    "Ferries to the Gotō Islands are cancelled in rough weather; allow a spare day in island itineraries.",
+    "Swim at beaches with lifeguards in summer, and watch for currents at the mouths of bays.",
+    "Stinging jellyfish can appear in late summer; ask at the beach before swimming."
+  ],
+  "regulations": [
+    "Plants, animals and rocks are protected in the special zones; in the marine park zones, collecting designated marine life needs permission.",
+    "Churches are places of worship: follow their rules on photography and dress, and give notice where it is asked for.",
+    "Shellfish and seaweed belong to the local fishing cooperatives; gathering them without a right is poaching.",
+    "Do not feed the deer on Nozakijima."
+  ],
+  "themes": [
+    "theme-islands",
+    "theme-coastal",
+    "theme-volcanoes",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:Sasebo Kujukushima Islands 2010-08.JPG",
+      "caption": "The Kujūkushima islands off Sasebo",
+      "altText": "Dozens of small wooded islands scattered across a calm blue sea"
+    },
+    {
+      "file": "File:Takahama-beach.jpg",
+      "caption": "Takahama Beach on Fukue in the Gotō Islands",
+      "altText": "A curving white beach and turquoise bay below green hills"
+    },
+    {
+      "file": "File:Ohbae Lighthouse.jpg",
+      "caption": "Ōbae Lighthouse on Ikitsuki",
+      "altText": "A white lighthouse on a rocky point, with visitors on its gallery under a deep blue sky"
+    },
+    {
+      "file": "File:200320 Kujukushima Islands Sasebo Nagasaki pref Japan02s3.jpg",
+      "caption": "Panorama of the Kujūkushima islands",
+      "altText": "A wide view over forested islands spread across a sheltered sea"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Saikai National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/saikai/"
+    },
+    {
+      "title": "西海国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/saikai/index.html"
+    },
+    {
+      "title": "西海国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/saikai/intro/index.html"
+    },
+    {
+      "title": "国立公園の概要・地種区分別面積（令和8年4月10日現在）— 環境省",
+      "url": "https://www.env.go.jp/park/doc/data/national/np_1.pdf"
+    },
+    {
+      "title": "西海国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/西海国立公園"
+    },
+    {
+      "title": "Saikai National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Saikai_National_Park"
+    },
+    {
+      "title": "Kujūku Islands — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kujūku_Islands"
+    },
+    {
+      "title": "西海国立公園 特徴 — 環境省",
+      "url": "https://www.env.go.jp/nature/nationalparks/list/saikai/feature/"
+    },
+    {
+      "title": "Osezaki Lighthouse — Japan Tourism Agency multilingual commentary database",
+      "url": "https://www.mlit.go.jp/tagengo-db/en/R5-00516.html"
+    },
+    {
+      "title": "Obae Lighthouse — Discover Nagasaki",
+      "url": "https://www.discover-nagasaki.com/en/sightseeing/595"
+    },
+    {
+      "title": "教会見学事前連絡 — 長崎と天草地方の潜伏キリシタン関連遺産インフォメーションセンター",
+      "url": "https://kyoukaigun.jp/prior-notice"
+    }
+  ]
+}

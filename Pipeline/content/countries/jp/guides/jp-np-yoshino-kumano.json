@@ -1,0 +1,285 @@
+{
+  "placeID": "jp-np-yoshino-kumano",
+  "contentVersion": 1,
+  "summary": "Mountains, gorges and a warm Pacific shore across the Kii Peninsula, where Nara, Mie and Wakayama meet. Pilgrims have walked here for a thousand years: the park takes in the Ōmine range, stretches of the Kumano Kodo, Nachi Falls and its shrine, the cherry slopes of Mount Yoshino, the high Ōdaigahara plateau and the rock pillars of the Kushimoto coast.",
+  "facts": {
+    "establishedYear": 1936,
+    "areaHectares": 61604,
+    "bestSeasons": [
+      "spring",
+      "autumn"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "The Kii Peninsula is steep, wet and deeply cut. Its spine is the Ōmine range, running south from Mount Yoshino to Kumano and topped by Hakkyōgatake (八経ヶ岳), at 1,915 metres the highest peak in the Kansai region. East of it lies Ōdaigahara (大台ヶ原), a rolling plateau around 1,500 metres high under beech and spruce. The Kitayama River has carved Dorokyō (瀞峡), a gorge of sheer rock and green water, on its way to the Kumano River and the sea.",
+    "The coast is another world. The warm Kuroshio current sweeps past Cape Shionomisaki, the southern tip of Honshu, and keeps the shore mild enough for evergreen broadleaf forest and ferns more at home in the subtropics. Off Kushimoto live some of the world's northernmost coral communities, and the sea there was among the first in Japan to be protected as a marine park. Ashore, the sea has worked volcanic and sedimentary rock into pillars, terraces and cliffs.",
+    "For more than a thousand years these mountains have been holy ground. Shugendō, the mountain religion that fused Buddhism with the worship of mountains, made the Ōmine range its training route, and the Ōmine Okugake trail still links Yoshino with the three Kumano shrines: Hongū, Hayatama and Nachi. At Nachi the waterfall itself is the object of worship. Some customs have not changed: Sanjōgatake, on the Ōmine ridge, is still closed to women.",
+    "The park was designated on 1 February 1936, one of four created that day. Its marine park off Kushimoto followed in 1970, and in 2004 the pilgrimage routes and shrines became part of the World Heritage Site 'Sacred Sites and Pilgrimage Routes in the Kii Mountain Range'. The park has kept growing: in 2015 it took in the Wakayama coast from Minabe through Tanabe and Shirahama to Susami, until then two prefectural parks."
+  ],
+  "howItWorks": [
+    "Like every Japanese national park, Yoshino-Kumano is a regional park: it is drawn over land whatever its ownership, and protection comes from zoning rather than ownership. Here almost two-thirds of the land is private, about a fifth national forest. Whole communities live inside it — the temple town on Mount Yoshino, the shrine and temple at Nachi, hot-spring villages in the Kumano valleys and the fishing ports of the Kushimoto coast — and farming, forestry and fishing go on as before.",
+    "The Ministry of the Environment divides the land into zones. The special protection zone, about 7 per cent of the park and mostly in the Nara mountains, is the strictest: almost any alteration needs permission. Three classes of special zone cover a further 29 per cent. The ordinary zone, nearly two-thirds of the park, needs only notice for large works. At sea, more than twenty marine park zones protect corals and rocky reefs along the coast, and driving onto the beaches of Shichiri-mihama, Ōhama and Senri-no-hama is restricted.",
+    "Two other layers lie over the park. The Kumano Kodo and Ōmine routes are part of a cultural World Heritage Site inscribed in 2004, so the paths, shrines and their forests are protected as heritage as well as landscape. And the western half of Ōdaigahara, Nishi-Ōdai, was made a use-adjusted area in 2006: the number of visitors is limited, and everyone entering must apply in advance and attend a short lecture at the Ōdaigahara Visitor Center."
+  ],
+  "sights": [
+    {
+      "name": "Nachi Falls (那智滝)",
+      "note": "A single drop of 133 metres, Japan's tallest, worshipped as a deity by the Kumano Nachi shrine. Approach by the cedar-lined stone steps of Daimonzaka.",
+      "location": [
+        33.6753,
+        135.8876
+      ]
+    },
+    {
+      "name": "Ōdaigahara (大台ヶ原)",
+      "note": "High plateau of beech, spruce and dwarf bamboo. Trails from the car park lead to Hidegatake (1,695 m), the highest point in Mie, and the rock outcrop of Daijagura.",
+      "location": [
+        34.1852,
+        136.1092
+      ]
+    },
+    {
+      "name": "Mount Yoshino (吉野山)",
+      "note": "A ridge of temples covered with thousands of cherry trees, Japan's best-known blossom hill in early spring, and the northern end of the Ōmine pilgrimage.",
+      "location": [
+        34.3605,
+        135.8671
+      ]
+    },
+    {
+      "name": "Hakkyōgatake (八経ヶ岳)",
+      "note": "At 1,915 metres the highest peak in Kansai, on the Ōmine Okugake ascetic route. A long, steep mountain walk.",
+      "location": [
+        34.1742,
+        135.9067
+      ]
+    },
+    {
+      "name": "Dorokyō Gorge (瀞峡)",
+      "note": "The Kitayama River runs green between sheer rock walls; Doro-hatchō is the best-known stretch. The gorge's jet boats were suspended in 2021 and withdrawn in 2025.",
+      "location": [
+        33.9072,
+        135.8863
+      ]
+    },
+    {
+      "name": "Hashiguiiwa (橋杭岩)",
+      "note": "A line of rock pillars striding out from the shore at Kushimoto — 'bridge-pile rocks', like the piers of an unfinished bridge.",
+      "location": [
+        33.4893,
+        135.7952
+      ]
+    },
+    {
+      "name": "Cape Shionomisaki (潮岬)",
+      "note": "The southern tip of Honshu, a headland looking out over the Kuroshio current.",
+      "location": [
+        33.4377,
+        135.755
+      ]
+    },
+    {
+      "name": "Senjōjiki (千畳敷)",
+      "note": "Broad, wave-cut terraces of layered sandstone and mudstone on the Shirahama coast.",
+      "location": [
+        33.6708,
+        135.3305
+      ]
+    },
+    {
+      "name": "Ōdaigahara Visitor Center",
+      "note": "At the plateau car park: trail conditions, maps, and the compulsory lecture for Nishi-Ōdai.",
+      "location": [
+        34.1801,
+        136.0979
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Ugui Visitor Center",
+      "note": "Visitor centre on the Ugui peninsula in Nachikatsuura, for the Kumano coast.",
+      "location": [
+        33.6563,
+        135.9829
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Nanki Kumano Geopark Center",
+      "note": "On Cape Shionomisaki: how the peninsula's rocks, coast and coral seas came to be.",
+      "location": [
+        33.4377,
+        135.7609
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Yoshino Station, at the end of the Kintetsu Yoshino Line — Mount Yoshino and the northern end of the Ōmine range",
+      "Ōdaigahara, at the end of the Ōdaigahara Driveway, open only in the warmer months",
+      "Shingū and Kii-Katsuura on the JR Kisei Main Line — the Kumano shrines, Nachi Falls and Dorokyō",
+      "Kushimoto and Shirahama, also on the Kisei Main Line — Cape Shionomisaki, Hashiguiiwa and the western coast"
+    ],
+    "reservations": "Most of the park needs no booking. Nishi-Ōdai is the exception: entry is limited, and you must apply to the Ministry of the Environment in advance and attend a lecture at the Ōdaigahara Visitor Center on the day. Dates, numbers and fees change from season to season, so check before you go.",
+    "permits": [
+      "Nishi-Ōdai use-adjusted area — advance approval and a pre-entry lecture"
+    ],
+    "camping": [],
+    "lodging": [
+      "Temple lodgings and inns on Mount Yoshino",
+      "Hot-spring villages along the Kumano valleys and coast: Dorogawa, Kawayu, Yunomine, Katsuura and Shirahama",
+      "Guesthouses along the Kumano Kodo"
+    ],
+    "seasonalClosures": [
+      "The Ōdaigahara Driveway, the road onto the plateau, closes for the winter from about December until April — check with Nara Prefecture before you go",
+      "Trails in the Ōmine range and on Ōdaigahara can be under snow and ice in winter"
+    ],
+    "seasonalClosureMonths": [
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": "The Kii Peninsula is very wet, its mountains among the rainiest in Japan. The coast, warmed by the Kuroshio, is mild in winter and hot and humid in summer; the mountains are much cooler, and snow lies on Ōdaigahara and the Ōmine ridge in winter. Cherry blossom reaches Mount Yoshino in early spring. The rainy season runs from June into July, and typhoons can strike from late summer into autumn, bringing torrential rain, landslides and road closures. October and November bring clear weather and autumn colour to the plateau and the gorges.",
+  "directions": "The park comes in pieces, and each has its own approach. For Mount Yoshino, Kintetsu trains run direct from Osaka Abenobashi to Yoshino Station; from Kyoto or Nara, change at Kashiharajingu-mae. The coast is served by the JR Kisei Main Line, which runs round the peninsula: Kuroshio limited expresses come from Shin-Osaka and Tennōji to Shirahama, Kushimoto and Kii-Katsuura, and Nanki limited expresses from Nagoya to Kumanoshi and Shingū. Inland, buses run by Nara Kotsu, Ryujin Bus, Meiko Bus and Kumano Kotsu link the stations with the shrines, the gorges and the mountain villages, but services are sparse; a car from Shirahama, Kii-Katsuura or Shingū saves a great deal of time. The Ōdaigahara Driveway reaches the plateau from the Nara side.",
+  "chronology": [
+    {
+      "year": "1936",
+      "text": "Yoshino-Kumano National Park is designated on 1 February, one of four parks created that day."
+    },
+    {
+      "year": "1970",
+      "text": "The sea off Kushimoto becomes one of Japan's first marine parks."
+    },
+    {
+      "year": "1975",
+      "text": "The rias of the Owase and Kumano coast in Mie are added, with marine parks at Tategasaki and Nigishima."
+    },
+    {
+      "year": "2004",
+      "text": "The Kumano Kodo, the Ōmine Okugake route and the shrines they link are inscribed as part of the World Heritage Site 'Sacred Sites and Pilgrimage Routes in the Kii Mountain Range'."
+    },
+    {
+      "year": "2006",
+      "text": "Nishi-Ōdai becomes a use-adjusted area, with entry limited and a lecture required."
+    },
+    {
+      "year": "2015",
+      "text": "The park takes in the Wakayama coast from Minabe to Kushimoto, until then two prefectural parks, and eleven new marine park zones."
+    },
+    {
+      "year": "2023",
+      "text": "A review of the Kumano-nada coast adds further marine park zones off Mie."
+    }
+  ],
+  "safety": [
+    "Typhoons and the rainy season bring torrential rain to the Kii Peninsula. Landslides close roads and trails; check the forecast and road information before heading inland.",
+    "The Ōmine routes are long, steep and remote, with rocky, exposed sections. Start early, carry enough water and food, and allow for fog.",
+    "Waves on the rocky Shirahama and Kushimoto coast can sweep people off ledges that look dry. Keep back from the edge in any swell.",
+    "Snow and ice make Ōdaigahara and the Ōmine ridge dangerous in winter."
+  ],
+  "regulations": [
+    "Nishi-Ōdai may be entered only with advance approval and after the pre-entry lecture.",
+    "Plants, animals and rocks may not be collected in the special protection zone, and many are protected in the special zones; in the marine park zones, collecting designated corals, fish and shells needs permission.",
+    "Driving onto the beaches of Shichiri-mihama, Ōhama and Senri-no-hama is restricted.",
+    "Sanjōgatake on the Ōmine ridge is closed to women by religious tradition; the pilgrimage route has a detour round it."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-sacred-places",
+    "theme-coastal",
+    "theme-canyons",
+    "theme-deciduous-forest"
+  ],
+  "photos": [
+    {
+      "file": "File:Nachi Falls 201908-1.jpg",
+      "caption": "Nachi Falls, 133 metres in a single drop",
+      "altText": "A long, narrow waterfall pouring down a grey cliff between steep slopes of dense green forest"
+    },
+    {
+      "file": "File:Mount Odaigahara around Daijagura.jpg",
+      "caption": "Ōdaigahara around Daijagura in autumn",
+      "altText": "Steep mountain slopes in autumn browns and reds above a deep, shadowed valley"
+    },
+    {
+      "file": "File:Hashiguiiwa Rocks - Nov 23, 2020.jpg",
+      "caption": "Hashiguiiwa, the 'bridge-pile rocks' at Kushimoto",
+      "altText": "A line of jagged rock pillars standing in calm blue water off a rocky shore"
+    },
+    {
+      "file": "File:Dorokyo in 2019 August A.jpg",
+      "caption": "Dorokyō Gorge on the Kitayama River, 2019",
+      "altText": "A boat cutting a white wake along a green river between sheer rock walls and forest"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yoshino-Kumano National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/yoshino-kumano/"
+    },
+    {
+      "title": "吉野熊野国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/yoshino/index.html"
+    },
+    {
+      "title": "吉野熊野国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/yoshino/intro/index.html"
+    },
+    {
+      "title": "国立公園地種区分別面積・土地所有別面積（令和8年4月10日現在）— 環境省",
+      "url": "https://www.env.go.jp/park/doc/data/national/np_2.pdf"
+    },
+    {
+      "title": "Yoshino-Kumano National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yoshino-Kumano_National_Park"
+    },
+    {
+      "title": "吉野熊野国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/吉野熊野国立公園"
+    },
+    {
+      "title": "Kumano Kodō — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kumano_Kodō"
+    },
+    {
+      "title": "Mount Hakkyō — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mount_Hakkyō"
+    },
+    {
+      "title": "吉野熊野国立公園（熊野灘・熊野川・那智地域）指定書及び公園計画書（令和5年3月）— 環境省",
+      "url": "https://www.env.go.jp/park/content/000284803.pdf"
+    },
+    {
+      "title": "吉野熊野国立公園（和歌山県海岸地域）公園区域及び公園計画変更書 — 環境省",
+      "url": "https://www.env.go.jp/content/900523275.pdf"
+    },
+    {
+      "title": "日本の主な山岳標高（2026年3月31日版）— 国土地理院",
+      "url": "https://www.gsi.go.jp/KOKUJYOHO/MOUNTAIN/1003zan20260331.pdf"
+    },
+    {
+      "title": "都道府県の最高地点 — 国土地理院",
+      "url": "https://www.gsi.go.jp/KOKUJYOHO/MOUNTAIN/todofuken.pdf"
+    },
+    {
+      "title": "瀞峡ウォータージェット船事業の廃止について（2025年4月10日）— 熊野観光開発",
+      "url": "https://www.nankai.co.jp/lib/groupinfo/news/pdf/250410.pdf"
+    },
+    {
+      "title": "吉野熊野国立公園西大台利用調整地区における利用調整の期間及び利用者の人数の範囲等を定める告示について — 環境省",
+      "url": "https://www.env.go.jp/press/files/jp/9516.pdf"
+    },
+    {
+      "title": "Kintetsu Yoshino Line — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kintetsu_Yoshino_Line"
+    },
+    {
+      "title": "Sacred Sites and Pilgrimage Routes in the Kii Mountain Range — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sacred_Sites_and_Pilgrimage_Routes_in_the_Kii_Mountain_Range"
+    }
+  ]
+}

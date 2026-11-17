@@ -1,0 +1,252 @@
+{
+  "placeID": "no-np-ytre-hvaler",
+  "contentVersion": 1,
+  "summary": "Norway's first marine national park: the outer skerries of Hvaler at the mouth of the Oslofjord, on the Swedish border, where 96 per cent of the park lies under water. Walk the coast path over smooth granite, island-hop by local ferry from Skjærhalden or paddle out to the lighthouses — above the Tisler reef, one of the largest inshore cold-water coral reefs in the world.",
+  "facts": {
+    "establishedYear": 2009,
+    "areaHectares": 35400,
+    "bestSeasons": [
+      "summer"
+    ],
+    "suggestedTime": "One to two days"
+  },
+  "story": [
+    "Ytre Hvaler covers 354 square kilometres of sea, islands and skerries in the far south-east of Norway, where the Hvaler archipelago meets the Swedish border and Sweden's Kosterhavet National Park beyond it. Only about 14 square kilometres are land. The islands are smooth, rounded slabs of granite and gneiss polished by ice, broken here and there by something rarer: on Søsterøyene and Struten the rock is a rough rhomb-porphyry conglomerate, found in few places on Earth.",
+    "Most of the park is out of sight. The Hvaler trench, 470 metres deep, carries cold, salty Atlantic water into the area, while the Glomma, Norway's largest river, influences the water in parts of the park. On the hard bottom grow sponges, soft corals and kelp forests; on the soft bottom and in eelgrass meadows live shrimp, crabs and fish. Off Tisler lies a reef of the white cold-water coral Lophelia, some 1,200 metres long and 200 metres wide at depths of 74 to 160 metres, and more than 8,000 years old.",
+    "On land, the outer islands are a patchwork of bare rock, wind-bent coastal pine and heath. The islands have long been known for their many rare and threatened plants, and more than 950 kinds of butterflies and moths have been recorded. The coastal heath is a made landscape, kept open by grazing and periodic burning, and it is still managed that way. Seabirds breed on the outer islets, and seals pup on a handful of skerries.",
+    "People have fished and sailed here for centuries, and the coast is dotted with their traces, from simple fishing huts on the skerries to the lighthouses that mark the way into the Oslofjord. Four small seabird reserves were set aside in 1978. On 26 June 2009 they were folded into Ytre Hvaler National Park, the first marine national park in Norway. It is also one of the most important areas for outdoor life on the Oslofjord."
+  ],
+  "howItWorks": [
+    "Much of the land in the park is privately owned, with holiday cabins and farms, but Norway's right to roam (allemannsretten) still applies: you may walk anywhere in the outfield, rest, swim and pitch a tent or hammock for up to two nights without the owner's permission, at least 150 metres from the nearest house or cabin. The exceptions are the seabird zones, closed to all access from 15 April to 15 July, and parts of Akerøya, Vesleøya and Heia, where camping is banned all year. Storesand has tent pitches and its own rules for longer stays.",
+    "Fire rules here are stricter than elsewhere. Never light a fire on bare rock, which the heat cracks for good, or on vegetation. Fires and disposable barbecues are allowed only at the water's edge on sand or gravel, or in the fixed grills set out in the park, all year round. From 15 April to 15 September national fire law also forbids fires in or near woodland and other open country, and in very dry spells Hvaler municipality can ban fires altogether.",
+    "On the water, boats may go anywhere except near the seabird islets and seal skerries of zones C and D, which must be given at least 50 metres from 15 April to 15 July — paddlers, divers and surfers included. Some areas have a 5-knot speed limit, jet skis are banned throughout, and emptying boat toilets into the sea is forbidden. Over the coral reefs and other sensitive seabed (zone A) you may not anchor, except to moor against the shore. Drones are banned. Recreational fishing in this part of the Oslofjord is now tightly restricted, with no-take zones, seasonal spawning closures and year-round protection for coastal cod; check the Directorate of Fisheries' current rules before you fish."
+  ],
+  "sights": [
+    {
+      "name": "Tisler and the Tisler reef",
+      "note": "An outer island above one of the world's largest inshore cold-water coral reefs: Lophelia growing 74 to 160 metres down, 1,200 metres long.",
+      "location": [
+        58.988,
+        10.985
+      ]
+    },
+    {
+      "name": "Søsterøyene",
+      "note": "The Sister Islands off Fredrikstad, built of rhomb-porphyry conglomerate, a rock found in few places on Earth. Seabird zones close parts of them in spring.",
+      "location": [
+        59.099,
+        10.778
+      ]
+    },
+    {
+      "name": "Akerøya",
+      "note": "A seabird island with a bird-ringing station. Parts of it are closed from 15 April to 15 July, and camping there is banned all year.",
+      "location": [
+        59.047,
+        10.885
+      ]
+    },
+    {
+      "name": "Torbjørnskjær lighthouse",
+      "note": "A granite lighthouse of 1872 on a skerry marking the east side of the entrance to the Oslofjord, automated since 1990 and now protected.",
+      "location": [
+        58.996,
+        10.782
+      ]
+    },
+    {
+      "name": "Vesterøy coast path",
+      "note": "Six kilometres of the blue-marked Kyststien along the shore from Papperhavn past Kuvauen and Guttormsvauen to Utgård.",
+      "location": [
+        59.092,
+        10.8397
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Storesand",
+      "note": "A beach near Skjærhalden with tent pitches, where the visitor centre runs sessions exploring the shoreline.",
+      "location": [
+        59.025,
+        11.018
+      ]
+    },
+    {
+      "name": "Besøkssenter Ytre Hvaler nasjonalpark",
+      "note": "The authorised visitor centre in the old granary, Kornmagasinet, at Skjærhalden, with an exhibition, maps, guided trips and summer tourist information.",
+      "location": [
+        59.025,
+        11.037
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Skjærhalden on Kirkøy — the visitor centre, guest harbour and the local ferries to the outer islands",
+      "Vesterøy — the coast path from Papperhavn to Utgård",
+      "Asmaløy — gentle paths for birds, butterflies and plants",
+      "By kayak or boat to the islands with no road or ferry"
+    ],
+    "reservations": "No permit or booking is needed. Ferries and boats from Skjærhalden serve Nordre Sandøy, Søndre Sandøy, Herføl and Lauer; check the timetable before you go.",
+    "permits": [
+      "Organised activities that could harm nature need permission from the Ytre Hvaler National Park Board",
+      "Cycling and organised riding are allowed only on routes approved in the management plan",
+      "Hunting is allowed under the game laws except around Vikerkilen and Skipstadkilen on Asmaløy"
+    ],
+    "camping": [
+      "Wild camping for up to two nights under the right to roam, outside the seabird zones",
+      "Tent pitches at Storesand",
+      "No camping all year on parts of Akerøya, Vesleøya and Heia"
+    ],
+    "lodging": [
+      "Lighthouse stations and coastal-route cabins (kystledhytter) to stay in",
+      "Shops, cafés and restaurants in Skjærhalden"
+    ],
+    "seasonalClosures": [
+      "The seabird islets and seal skerries of zones C and D are closed to all access from 15 April to 15 July, at sea as well as on land",
+      "Collecting dead shells is not allowed from 15 April to 20 June"
+    ]
+  },
+  "weather": "Hvaler is among the sunniest places in Norway, and summer is the high season for swimming, sunbathing and boating among the skerries. At Skjærhalden the average temperature is about 17.5 °C in July and around 0 °C in January, and about 920 millimetres of rain and snow fall in a year. The sea itself is shaped by the cold, salty Atlantic water of the Hvaler trench and the fresh water of the Glomma. The visitor centre also opens in spring and autumn; remember that the seabird closures run from mid-April to mid-July.",
+  "directions": "Hvaler lies at the south-eastern tip of Norway, near Fredrikstad and Halden and about two hours by bus from Oslo. A county road, Fastlandsveien, runs from Fredrikstad over bridges and causeways to Vesterøy, Spjærøy and Asmaløy, and the Hvaler tunnel carries it on under the sound of Løperen to Kirkøy and Skjærhalden, about 28 kilometres from Fredrikstad. From Skjærhalden, ferries and boats cross to the outer islands, and a passenger boat runs to Strömstad in Sweden.",
+  "chronology": [
+    {
+      "year": "More than 8,000 years ago",
+      "text": "The Lophelia coral reef off Tisler begins to grow."
+    },
+    {
+      "year": "1872",
+      "text": "Torbjørnskjær lighthouse is lit at the eastern entrance to the Oslofjord."
+    },
+    {
+      "year": "1971",
+      "text": "Fastlandsveien is completed, linking Vesterøy, Spjærøy and Asmaløy to Fredrikstad by road."
+    },
+    {
+      "year": "1978",
+      "text": "Akerøya, Heia, Møren and Søndre Søster are protected as seabird nature reserves."
+    },
+    {
+      "year": "1989",
+      "text": "The Hvaler tunnel opens under Løperen to Kirkøy."
+    },
+    {
+      "year": "1990",
+      "text": "Torbjørnskjær lighthouse is automated and unmanned."
+    },
+    {
+      "year": "2009",
+      "text": "On 26 June Ytre Hvaler becomes Norway's first marine national park, absorbing the four seabird reserves."
+    }
+  ],
+  "safety": [
+    "Wind and swell build quickly on the outer skerries. Check the marine forecast before setting out by kayak or small boat, and stay within your experience.",
+    "Smooth granite is slippery when wet or weedy, and the sea off the outer islands is cold even in summer.",
+    "Keep at least 50 metres from the seabird and seal zones from mid-April to mid-July, as the rules require."
+  ],
+  "regulations": [
+    "No access to the seabird and seal zones (C and D) from 15 April to 15 July.",
+    "Fires only at the water's edge on sand or gravel, or in fixed grills — never on bare rock.",
+    "No jet skis, no drones, no motor traffic on land or ice, and no flying lower than 300 metres.",
+    "No anchoring over the coral reefs and other sensitive seabed (zone A), except mooring to the shore.",
+    "Cycling only on approved routes, and not with electric bicycles."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-islands",
+    "theme-coral-reef"
+  ],
+  "photos": [
+    {
+      "file": "File:Ytre-Hvaler national park.jpg",
+      "caption": "The sea and skerries off the Hvaler islands",
+      "altText": "Low rocky skerries scattered across a calm, open sea"
+    },
+    {
+      "file": "File:Struten fyr Ytre hvaler nasjonalpark Fredrikstad.jpg",
+      "caption": "Struten lighthouse, off Fredrikstad",
+      "altText": "A small lighthouse on a bare rocky islet"
+    },
+    {
+      "file": "File:Ytre Hvaler, Tisler coast.jpg",
+      "caption": "The coast of Tisler",
+      "altText": "Smooth grey rock sloping into the sea"
+    },
+    {
+      "file": "File:Ytre Hvaler, Søsterøyene.jpg",
+      "caption": "Søsterøyene, the Sister Islands",
+      "altText": "Rugged low islands in a grey-blue sea"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ytre Hvaler nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/ytre-hvaler/"
+    },
+    {
+      "title": "Ytre Hvaler nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00002752"
+    },
+    {
+      "title": "Forskrift om vern av Ytre Hvaler nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/forskrift/2009-06-26-883"
+    },
+    {
+      "title": "Om nasjonalparken — Ytre Hvaler nasjonalpark",
+      "url": "https://ytrehvaler.no/om-nasjonalparken/"
+    },
+    {
+      "title": "Råd om ferdsel — Ytre Hvaler nasjonalpark",
+      "url": "https://ytrehvaler.no/rad-om-ferdsel/"
+    },
+    {
+      "title": "Bålregler i Ytre Hvaler nasjonalpark — Ytre Hvaler nasjonalpark",
+      "url": "https://ytrehvaler.no/balregler-i-ytre-hvaler-nasjonalpark/"
+    },
+    {
+      "title": "Besøkssenter Ytre Hvaler — Ytre Hvaler nasjonalpark",
+      "url": "https://ytrehvaler.no/besokssenter-ytre-hvaler/"
+    },
+    {
+      "title": "Turtips — Ytre Hvaler nasjonalpark",
+      "url": "https://ytrehvaler.no/turtips/"
+    },
+    {
+      "title": "Ytre Hvaler nasjonalpark — Ytre Hvaler nasjonalparkstyre",
+      "url": "https://www.nasjonalparkstyre.no/Ytre-Hvaler/verneomrader/ytre-hvaler-nasjonalpark"
+    },
+    {
+      "title": "Forskrift om brannforebygging § 3 — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Ytre Hvaler National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ytre_Hvaler_National_Park"
+    },
+    {
+      "title": "Ytre Hvaler nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Ytre_Hvaler_nasjonalpark"
+    },
+    {
+      "title": "Hvaler kommune — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Hvaler_kommune"
+    },
+    {
+      "title": "Torbjørnskjær Lighthouse — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Torbj%C3%B8rnskj%C3%A6r_Lighthouse"
+    },
+    {
+      "title": "Torbjørnskjær fyr — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Torbj%C3%B8rnskj%C3%A6r_fyr"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    },
+    {
+      "title": "Kornmagasinet, Skjærhalden — OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/366620220"
+    }
+  ]
+}

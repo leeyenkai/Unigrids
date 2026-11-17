@@ -1,0 +1,182 @@
+{
+  "placeID": "no-np-lomsdal-visten",
+  "contentVersion": 1,
+  "summary": "A great roadless sweep of Helgeland, Njaarke in Southern Sámi, from narrow fjords and wide valleys through coastal spruce rainforest to bare plateaus and alpine peaks. There are no marked trails, many rivers to cross and waterfalls everywhere: this is a park for long trips with a tent and a map, reached by express boat from the coast or on foot from the E6.",
+  "facts": {
+    "establishedYear": 2009,
+    "areaHectares": 110500,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Three to six days"
+  },
+  "story": [
+    "Lomsdal-Visten reaches from the fjords of the Helgeland coast to the mountains near the Swedish border: narrow fjords and broad valleys, large continuous forests, plateaus, and high ground that rises into alpine peaks and ridges. The massif of Vistfjellan dominates the land between Velfjorden and Vefsnfjorden. Water shapes everything — rivers in narrow gorges, a long list of powerful waterfalls, and limestone country with caves, underground rivers and karst forms that the park was created, among other things, to protect.",
+    "Norway has rainforest, and this is one of the places to see it: boreal rainforest, a damp, distinctive coastal forest mostly of spruce, hung with lichens. Large areas of old forest give birds and animals room. Lime-rich fens are home to demanding plants: orchids such as fragrant orchid, early marsh-orchid and Lapland marsh-orchid, and the modest alpine meadow-rue with its small yellow-violet flowers.",
+    "People have used this land for some 9,000 years. It is old Southern Sámi country: Sámi culture can be followed here from the hunting and gathering era to today's reindeer herding, and the regulation states that the area is used for reindeer. In Searvoesvuemie (Sørvassdalen) the reindeer herders Gippe and Gunnar Njarka built their turf hut in 1917; it is now protected and restored, and tired walkers may rest and sleep there. In the fjords and valleys stand roadless, abandoned farms, and old cairns still mark the routes from the days when this land linked east and west.",
+    "The national park was established on 29 May 2009, replacing three smaller nature reserves at Skjørlægda, Laksmarkdalen and Strompdalen; Strauman landscape protection area was created at the head of Visten at the same time. An amendment in June 2026 redrew the boundary, and the park now covers about 1,105 square kilometres in Brønnøy, Vevelstad, Vefsn and Grane."
+  ],
+  "howItWorks": [
+    "Norway's right to roam, allemannsretten, applies here as on any uncultivated land: you may walk, ski and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland. Dogs must be kept on a lead nationwide from 1 April to 20 August.",
+    "The park's regulation protects the landscape from all works, including damaging or removing anything from the interior of caves. Plants are protected, but berries, edible mushrooms and traditional food and medicinal plants may be picked, and wood may be used carefully for a fire. Motor traffic is banned on land and fresh water and in the air below 300 metres, and motor-driven model aircraft, drones included, are not allowed. Organised walking trips on foot are fine; other organised activity that could harm the area needs permission.",
+    "Lomsdal-Visten has very little laid on for visitors: no red-marked trails, a few simple rental cabins and open shelters, and rivers that must be waded. Multi-day trips call for a tent and sound navigation. Reindeer herding, hunting and fishing go on under the general rules, and the park is managed by the Lomsdal-Visten national park board, Njaarken vaarjelimmiedajveraerie."
+  ],
+  "sights": [
+    {
+      "name": "Searvoesvuemie (Sørvassdalen)",
+      "note": "The valley where Gippe and Gunnar Njarka built their turf hut in 1917, now protected, restored and open to walkers for the night.",
+      "location": [
+        65.7345,
+        12.9793
+      ]
+    },
+    {
+      "name": "Skjørlægda",
+      "note": "An old mountain farm reached from the east, a good day walk for families; once its own nature reserve.",
+      "location": [
+        65.6395,
+        13.1328
+      ]
+    },
+    {
+      "name": "Krongelvatnet",
+      "note": "A lake in the west of the park, known for its fishing.",
+      "location": [
+        65.6727,
+        12.828
+      ]
+    },
+    {
+      "name": "Visten",
+      "note": "The fjord on the park's western side, reached by express boat, with farms beneath steep walls and a strong tidal current.",
+      "location": [
+        65.7077,
+        12.5873
+      ]
+    },
+    {
+      "name": "Vistkjerringa",
+      "note": "One of the high summits of Vistfjellan, the massif at the heart of the park.",
+      "location": [
+        65.5494,
+        13.0337
+      ]
+    },
+    {
+      "name": "Eiterådalen",
+      "note": "A valley along the park's eastern side.",
+      "location": [
+        65.6737,
+        13.1438
+      ]
+    },
+    {
+      "name": "Blåfjellet",
+      "note": "The mountain in the far south-east of the park, in Grane, above Svenningdalen.",
+      "location": [
+        65.4333,
+        13.2722
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "From the west by express boat into Visten",
+      "From the east, off the E6 in Vefsn and Grane — for the old mountain farm at Skjørlægda"
+    ],
+    "reservations": "There is no entry reservation or permit.",
+    "permits": [
+      "Organised activity beyond ordinary walking that could damage the natural environment needs permission from the national park board",
+      "Hunting and fishing follow the general rules; buy a local licence first"
+    ],
+    "camping": [
+      "Wild camping under the right to roam, at least 150 metres from huts and houses; a tent is essential for longer trips",
+      "No fires in or near woodland from 15 April to 15 September"
+    ],
+    "lodging": [
+      "A few simple rental cabins and open shelters, and the restored Njarka turf hut in Sørvassdalen",
+      "Lodging in Mosjøen, Brønnøysund and the villages around the park"
+    ]
+  },
+  "weather": "The park runs from the coast, where the weather is wet and mild enough to sustain rainforest, inland to high plateaus where snow lies late. Summer and early autumn are the walking seasons. After heavy rain or during snowmelt the many rivers swell quickly, and some crossings become impossible for days; plan routes with that in mind.",
+  "directions": "Lomsdal-Visten lies on Helgeland, roughly midway between Trondheim and Bodø; the train from either city takes about five hours. The Nordland Line and the E6 run along the park's eastern side through Grane and Vefsn, with stations at Trofors and Mosjøen. From the west, an express boat runs into Visten from the coast. Check Entur for train and boat timetables.",
+  "chronology": [
+    {
+      "year": "c. 9,000 years ago",
+      "text": "The oldest known traces of people in the area date from the Mesolithic."
+    },
+    {
+      "year": "1917",
+      "text": "The reindeer herders Gippe and Gunnar Njarka build their turf hut in Sørvassdalen."
+    },
+    {
+      "year": "1992",
+      "text": "Skjørlægda, Laksmarkdalen and Strompdalen are protected as nature reserves."
+    },
+    {
+      "year": "2009",
+      "text": "Lomsdal-Visten National Park is established on 29 May, replacing the three reserves."
+    },
+    {
+      "year": "2026",
+      "text": "The boundary is redrawn; the park now covers about 1,105 square kilometres."
+    }
+  ],
+  "safety": [
+    "There are no marked trails. Carry a map and compass, and know how to use them.",
+    "River crossings are the main hazard. Wade only where it is wide and shallow, unbuckle your pack, and turn back if the water is high.",
+    "Help is far away. Carry food and shelter for longer than you plan, and leave your route with someone at home.",
+    "Do not enter caves without proper equipment and experience; they can flood quickly."
+  ],
+  "regulations": [
+    "No motor traffic on land or fresh water and no flying below 300 metres; drones are banned.",
+    "Caves and karst forms are protected: nothing may be removed from them.",
+    "Berries, edible mushrooms and traditional food and medicinal plants may be picked; other plants are protected.",
+    "Dogs on a lead from 1 April to 20 August, as everywhere in Norway, and under control near reindeer."
+  ],
+  "themes": [
+    "theme-temperate-rainforest",
+    "theme-mountains",
+    "theme-fjords",
+    "theme-caves",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Lomsdalselva-2019.jpg",
+      "caption": "The river Lomsdalselva in Lomsdalen",
+      "altText": "A river winding along the floor of a forested valley between mountains"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lomsdal-Visten nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/lomsdal-visten/"
+    },
+    {
+      "title": "Lomsdal-Visten nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00002750"
+    },
+    {
+      "title": "Forskrift om Lomsdal-Visten nasjonalpark/Njaarken vaarjelimmiedajve (FOR-2009-05-29-553, amended FOR-2026-06-19-1223) — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/2009-05-29-553"
+    },
+    {
+      "title": "Lomsdal-Visten nasjonalpark — Lomsdal-Visten nasjonalparkstyre",
+      "url": "https://lomsdalvisten.no/"
+    },
+    {
+      "title": "Lomsdal–Visten National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lomsdal%E2%80%93Visten_National_Park"
+    },
+    {
+      "title": "Lomsdal-Visten nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Lomsdal-Visten_nasjonalpark"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

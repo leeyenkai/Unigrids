@@ -1,0 +1,262 @@
+{
+  "placeID": "no-np-reinheimen",
+  "contentVersion": 1,
+  "summary": "One of the largest untouched high-mountain areas in southern Norway, and the home of the wild reindeer herd of northern Ottadalen. The west is all sharp peaks, from Tafjordfjella to the Troll Wall above Romsdalen; the east is rolling upland with old trapping pits and summer farms. Little is laid out for visitors beyond the western huts and routes.",
+  "facts": {
+    "establishedYear": 2006,
+    "areaHectares": 196900,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "Reinheimen stretches across the watershed between the fjords of Møre og Romsdal and the inland valleys of Ottadalen and Lesja, and its landscape changes with every step east. In the west the ground is steep and broken: Tafjordfjella rise to peaks near 2,000 metres, and in the north the Trolltindane drop to Romsdalen in the Troll Wall, about 1,700 metres from the valley floor to the top. To the south and east the mountains round off into plateaus and wide, slow valleys. The rock is mostly gneiss, and almost all of it carries the marks of the ice.",
+    "The park exists above all for its wild reindeer. About 2,000 animals winter here, one of the most productive herds in the country, in one of the last great wild-reindeer ranges in Europe. Reindeer are easily disturbed, above all in winter and when the calves are born in spring, and a herd can smell people from several kilometres downwind. Wolverine, golden eagle, gyrfalcon and ptarmigan share the high ground, and the summer-farm valleys at the edges hold a rich variety of plants.",
+    "People have hunted reindeer here since the ice melted some 10,000 years ago. The plateaus are scattered with trapping pits, mass-trapping systems, archers' hides and the remains of hunters' camps. In 2014 a melting ice patch on Digervarden gave up a wooden ski about 1,300 years old, its binding still attached; its partner emerged from the same ice in 2021, making the pair the best preserved from prehistory.",
+    "The name Reinheimen, the home of the reindeer, is young: the mountain warden Olaf Heitkøtter coined it in the 1970s. Proposals to protect the area followed from the 1970s on, held back for years by plans for hydropower. The national park was finally established on 24 November 2006, covering about 1,969 square kilometres, with landscape protection areas around it in Romsdalen, at Trollstigen, in Tafjord and along Ottadalen."
+  ],
+  "howItWorks": [
+    "Norway's right to roam, allemannsretten, applies here as on any uncultivated land: you may walk, ski and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland. Dogs must be kept on a lead nationwide from 1 April to 20 August, and a municipality can set a longer period — check the local rules before you go.",
+    "The park's regulation bans motor traffic on land and water and flying lower than 300 metres, which rules out electric bicycles as well as drones and other motorised model aircraft. Cycling, organised dog-sledding and organised riding are allowed only on roads, routes or areas approved in the management plan. An ordinary hiking tent is fine, but camping for more than a week in one place needs permission. Animals and their nests and dens are protected from disturbance: if you meet reindeer, enjoy the sight, then move away and keep your distance.",
+    "Reinheimen is wild but long used. Summer farms in the valleys are still worked, sheep and cattle graze the pastures, and the area is valued for hunting and fishing under the general rules. Old trapping pits, walls and house sites are protected monuments. The park is run by the national park board for Reinheimen, which must approve organised activities that could harm the natural environment."
+  ],
+  "sights": [
+    {
+      "name": "Trollveggen (the Troll Wall)",
+      "note": "Often called Europe's tallest vertical rock face, on the Trolltindane above Romsdalen; first climbed in 1965. Seen best from the valley road and railway.",
+      "location": [
+        62.4823,
+        7.7263
+      ]
+    },
+    {
+      "name": "Trollstigen",
+      "note": "The hairpin mountain road at the park's north-western edge, and a gateway to the Trolltindane and the high ground beyond.",
+      "location": [
+        62.46,
+        7.6784
+      ]
+    },
+    {
+      "name": "Puttegga",
+      "note": "One of the summits of Tafjordfjella, the steep western massif crossed by marked routes between tourist huts.",
+      "location": [
+        62.2119,
+        7.6956
+      ]
+    },
+    {
+      "name": "Zakariasdammen",
+      "note": "A dam above Tafjord, and the western gateway into Tafjordfjella.",
+      "location": [
+        62.2018,
+        7.49
+      ]
+    },
+    {
+      "name": "Digervarden",
+      "note": "A 1,780-metre mountain in Lesja whose melting ice patch gave up a pair of 1,300-year-old skis in 2014 and 2021.",
+      "location": [
+        62.1155,
+        8.3455
+      ]
+    },
+    {
+      "name": "Gråhøe",
+      "note": "The massif at the heart of the park, between Grotli and Lesjaskog, in the wild reindeer's high country.",
+      "location": [
+        62.0759,
+        8.0709
+      ]
+    },
+    {
+      "name": "Billingen",
+      "note": "A summer-farm settlement in Skjåk on the park's southern edge, one of its marked gateways.",
+      "location": [
+        62.0115,
+        7.8565
+      ]
+    },
+    {
+      "name": "Norsk Fjellsenter",
+      "note": "Authorised visitor centre in Lom for Reinheimen, Jotunheimen and Breheimen, with a separate exhibition on Reinheimen and its wild reindeer.",
+      "location": [
+        61.8379,
+        8.5657
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Norsk Tindesenter",
+      "note": "Authorised visitor centre in Åndalsnes, on the history of Norwegian mountaineering and on Reinheimen.",
+      "location": [
+        62.5678,
+        7.6903
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Trollstigen on the Fv63 road, Rauma — for the Trolltindane",
+      "Zakariasdammen above Tafjord — for Tafjordfjella",
+      "Tunga bru in Brøstdalen, Rauma",
+      "Tussheim in Lesja",
+      "Billingen in Skjåk"
+    ],
+    "reservations": "There is no entry reservation or permit. Tafjordfjella in the west has the park's tourist huts — check their opening periods with the trekking association before you go; elsewhere there is little or no lodging inside the park.",
+    "permits": [
+      "Organised activity that could damage the natural environment needs permission from the national park board",
+      "Camping for more than a week in one place needs permission; ordinary hiking tents do not",
+      "Hunting and fishing follow the general rules; buy a local licence first"
+    ],
+    "camping": [
+      "Wild camping under the right to roam, at least 150 metres from huts and houses",
+      "No fires in or near woodland from 15 April to 15 September"
+    ],
+    "lodging": [
+      "Tourist huts in Tafjordfjella, in the west of the park",
+      "Lodging in Åndalsnes, Lom, Skjåk, Lesja and along Ottadalen"
+    ],
+    "seasonalClosures": [
+      "The Trollstigen road (Fv63) is closed in late autumn and winter; it normally opens in mid-May and closes in October — check road status with Statens vegvesen before you go"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "weather": "Reinheimen spans a long gradient from the fjord country in the west to the inland valleys of Ottadalen in the east, and the weather changes with it. Summer and autumn are the walking seasons, with snow lingering on the high ground into summer and returning early in autumn; the long distances mean even a day walk wants a settled forecast. Winter is long and cold on the plateaus, and the reindeer are at their most vulnerable then and during spring calving, when visitors should give them a wide berth.",
+  "directions": "The Rauma Line runs along the park's northern side from Dombås on the Dovre Line to Åndalsnes, with stations at Lesja, Lesjaverk, Bjorli and Åndalsnes. For the southern side, the nearest station is Otta on the Dovre Line, with buses up Ottadalen towards Lom; check Entur for timetables. By road, the E136 follows Romsdalen to Åndalsnes, and Route 15 runs up Ottadalen past Lom and Skjåk. The park is four to five hours' drive from Oslo or Trondheim and two to three from Ålesund or Molde.",
+  "chronology": [
+    {
+      "year": "c. 10,000 years ago",
+      "text": "As the ice melts, hunters follow the reindeer onto the high ground."
+    },
+    {
+      "year": "c. 1,300 years ago",
+      "text": "A pair of skis is lost on the ice at Digervarden."
+    },
+    {
+      "year": "1965",
+      "text": "The Troll Wall is climbed for the first time."
+    },
+    {
+      "year": "1970s",
+      "text": "Mountain warden Olaf Heitkøtter gives the area the name Reinheimen."
+    },
+    {
+      "year": "2006",
+      "text": "Reinheimen National Park is established on 24 November."
+    },
+    {
+      "year": "2014",
+      "text": "A prehistoric ski with its binding melts out of the ice patch on Digervarden."
+    },
+    {
+      "year": "2021",
+      "text": "The second ski of the pair is recovered from the same ice."
+    }
+  ],
+  "safety": [
+    "Distances are long and there are few huts outside Tafjordfjella. Carry a map, compass and enough food and shelter to sit out bad weather.",
+    "The western peaks are steep, exposed and loose in places. Routes on the Trolltindane and the Troll Wall are for experienced climbers only.",
+    "Snow lies late in the gullies and on north faces; a slip on hard snow can be serious. Carry spikes or turn back.",
+    "Rivers fed by snowmelt can be impassable on warm afternoons. Cross early, or find a bridge."
+  ],
+  "regulations": [
+    "No motor traffic on land or water and no flying below 300 metres; drones and electric bicycles are banned.",
+    "Cycling, organised dog-sledding and organised riding only on approved roads and routes.",
+    "Camping for more than a week in one place needs permission.",
+    "Dogs on a lead from 1 April to 20 August, longer where the municipality sets a longer period; keep dogs well away from reindeer.",
+    "Trapping pits, walls and other old remains are protected — do not move or take anything."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-alpine",
+    "theme-tundra"
+  ],
+  "photos": [
+    {
+      "file": "File:Karitinden seen from Puttegga.jpg",
+      "caption": "Karitinden seen from Puttegga in Tafjordfjella",
+      "altText": "A sharp rocky peak with snowfields, seen across a high mountain valley"
+    },
+    {
+      "file": "File:Trolltindane and Romsdalen from Litlefjellet, 2013 June.jpg",
+      "caption": "The Trolltindane above Romsdalen",
+      "altText": "A jagged mountain wall rising steeply from a green valley floor"
+    },
+    {
+      "file": "File:03 Reinheimen-Nationalpark (Norwegen).jpg",
+      "caption": "High country in Reinheimen",
+      "altText": "Open mountain terrain with snow patches and rounded summits"
+    },
+    {
+      "file": "File:Old bridge at Labben over Ulvåa.jpg",
+      "caption": "An old bridge over the river Ulvåa",
+      "altText": "A small wooden bridge across a clear mountain river among rocks"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Reinheimen nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/reinheimen/"
+    },
+    {
+      "title": "Reinheimen nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00002446"
+    },
+    {
+      "title": "Forskrift om verneplan for Reinheimen, vedlegg 1: Reinheimen nasjonalpark (FOR-2006-11-24-1302) — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/2006-11-24-1302"
+    },
+    {
+      "title": "Reinheimen nasjonalpark — Nasjonalparkstyret for Reinheimen",
+      "url": "https://reinheimen.no/"
+    },
+    {
+      "title": "Kulturhistorie — Reinheimen nasjonalpark",
+      "url": "https://reinheimen.no/kulturhistorie/"
+    },
+    {
+      "title": "Reinheimen National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Reinheimen_National_Park"
+    },
+    {
+      "title": "Reinheimen nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Reinheimen_nasjonalpark"
+    },
+    {
+      "title": "The Best-Preserved Pair of Skis from Prehistory — Secrets of the Ice",
+      "url": "https://secretsoftheice.com/news/2021/10/05/the-best-preserved-pair-of-skis-from-prehistory/"
+    },
+    {
+      "title": "Troll Wall; Trollstigen; Rauma Line; Digervarden — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Troll_Wall"
+    },
+    {
+      "title": "Trollveggen — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Trollveggen"
+    },
+    {
+      "title": "Lov om hundehold (hundeloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+    },
+    {
+      "title": "Besøkssentre — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/besokssentre/"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "placeID": "jp-np-kushiroshitsugen",
+  "contentVersion": 1,
+  "summary": "Japan's largest wetland, on the edge of the city of Kushiro in eastern Hokkaido: a flat sweep of reed, sedge and peat bog crossed by the meandering Kushiro River, home all year to the red-crowned crane. Look out over it from the Hosooka observatory, walk the boardwalk at Onnenai, canoe the river from Lake Toro, or ride the slow train through it.",
+  "facts": {
+    "establishedYear": 1987,
+    "areaHectares": 28788,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "One to two days"
+  },
+  "story": [
+    "Six thousand years ago the sea stood a few metres higher than today and this basin was a shallow bay. As the sea fell back, sandbars closed off its mouth, the bay turned to swamp, and the Kushiro River and its tributaries filled it with silt and peat. The result is Japan's largest wetland, around 26,000 hectares of reed and sedge fen, alder thickets and raised bog, with the river looping slowly through it towards the sea at Kushiro and a cluster of lakes — Toro, Shirarutoro and Takkobu — on its eastern side.",
+    "The wetland is best known for the red-crowned crane, the tancho, which the Ainu called sarurun kamuy, god of the marsh. Overhunting and the draining of wetlands had made it vanish by the end of the Meiji era, until about a dozen birds were found near Kirakotan in 1924. Winter feeding by local people and national protection have brought it back to well over a thousand birds in Hokkaido, and it is a Special Natural Monument. The cranes no longer migrate, and live in the wetland all year. The marsh also holds the Siberian salamander, an Ice Age survivor found in Japan only here and on Kunashiri, and in winter white-tailed and Steller's sea eagles hunt along the river.",
+    "People have lived on the hills around the marsh since the Palaeolithic. At the Hokuto site on its western edge, houses from the Palaeolithic through the Jōmon to the Satsumon period overlap across an area two and a half kilometres long, and five pit dwellings have been rebuilt. Later settlers saw the wetland as useless ground. After the Second World War it was drained for farmland, the river was straightened, and the city spread into it, so that the marsh shrank and dried.",
+    "Local researchers and conservation groups kept campaigning for its value. In 1980 the wetland became Japan's first Ramsar site, and seven years later it was made a national park. Since then a nature-restoration project has begun putting meanders back into straightened stretches of the river."
+  ],
+  "howItWorks": [
+    "The park covers the wetland and the low hills round it across four municipalities: Kushiro city, Kushiro town, Shibecha and Tsurui. Of its 28,788 hectares, 15,338 are national land, 3,458 public and 9,992 private, and the JR Senmō Main Line runs through it beside the river. Much of the wetland itself is closed to the public: there are no paths across it, and the Onnenai boardwalk on the west side is the only walk that goes out onto the marsh. Elsewhere visitors look from a ring of observatories on the surrounding hills, from canoes on the river, or from the train.",
+    "The core of the marsh, 6,490 hectares, is special protection zone, where picking any plant, collecting fallen leaves or branches, catching animals or lighting a fire all need a permit from the Minister of the Environment. A further 13,287 hectares are special zone, where building, felling and changing the water level of rivers and lakes need a permit, and 9,011 hectares are ordinary zone. Since 1990 a 9,714-hectare vehicle-restriction area has kept off-road vehicles and snowmobiles off the wetland.",
+    "The wetland is also protected under other laws. Part of it has been a national natural monument since 1967, and entering the tip of Kirakotan Cape, in the deepest part of the marsh, needs a permit. The cranes are a Special Natural Monument, and the Ministry's Kushiro Shitsugen Wildlife Center treats injured rare birds such as fish owls and sea eagles. The Ramsar site, registered in 1980, covers the central part of the wetland."
+  ],
+  "sights": [
+    {
+      "name": "Hosooka Observatory (細岡展望台)",
+      "note": "Known as the 'great view': the whole marsh and the Kushiro River's loops from the eastern hills, with the Akan mountains beyond. Good at sunset.",
+      "location": [
+        43.099,
+        144.449
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Onnenai boardwalk (温根内木道)",
+      "note": "The only path out onto the marsh: a boardwalk from the Onnenai Visitor Center, with bog plants, flowers and birds close at hand.",
+      "location": [
+        43.105,
+        144.337
+      ]
+    },
+    {
+      "name": "Lake Toro (塘路湖)",
+      "note": "An eastern lake with a lakeside path, guided canoe tours down the dam-free Kushiro River, and ice fishing for smelt in winter.",
+      "location": [
+        43.154,
+        144.509
+      ]
+    },
+    {
+      "name": "Sarubo and Sarurun observatories (サルボ展望台・サルルン展望台)",
+      "note": "A wooded hill walk to two lookouts over the lakes and marsh of the eastern side — a different view from the other observatories.",
+      "location": [
+        43.165,
+        144.498
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Kottaro Shitsugen Observatory (コッタロ湿原展望台)",
+      "note": "Steps up from the road across the north of the marsh to a view over spring-fed wetland. Cranes are sometimes seen with binoculars.",
+      "location": [
+        43.191,
+        144.466
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Yumegaoka Observatory (夢ヶ丘展望台)",
+      "note": "At the top of a steep 2.3-kilometre trail north of Lake Takkobu, past sedge tussocks and springs, looking over the river and the railway.",
+      "location": [
+        43.116,
+        144.468
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Hokuto Site (北斗遺跡)",
+      "note": "Pit-dwelling remains from the Palaeolithic to the Satsumon period on the marsh's western edge, with five houses rebuilt.",
+      "location": [
+        43.067,
+        144.329
+      ]
+    },
+    {
+      "name": "Onnenai Visitor Center",
+      "note": "Start of the Onnenai boardwalk, with current nature notes and a cut-through of a sedge tussock.",
+      "location": [
+        43.1103,
+        144.3272
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Lake Toro Eco-museum Center 'Arukotto'",
+      "note": "Start of the Lake Toro shore path, with displays on water as the lifeline of the wetland.",
+      "location": [
+        43.154,
+        144.507
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Shirarutoro Nature Center",
+      "note": "Displays on the restoration project and the wildlife of Lake Shirarutoro. Closed in winter.",
+      "location": [
+        43.191,
+        144.499
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Kushiro Shitsugen Wildlife Center",
+      "note": "The Ministry's centre for rare birds, with exhibits on fish owls and sea eagles and birds that can no longer return to the wild.",
+      "location": [
+        43.066,
+        144.297
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Onnenai Visitor Center, on the west side, for the boardwalk",
+      "Hosooka, on the east side, near the JR Senmō Main Line",
+      "Lake Toro, on the east side, for canoe tours and the eco-museum centre",
+      "Kottaro, on the road across the north of the marsh"
+    ],
+    "reservations": "No reservation is needed to enter the park. Canoe tours on the Kushiro River and the Norokko and steam trains are booked separately; check before you go with the operators and JR Hokkaido.",
+    "permits": [
+      "Entering the tip of Kirakotan Cape, a natural monument in the heart of the marsh, needs a permit"
+    ],
+    "camping": [
+      "Campgrounds around Lakes Toro, Shirarutoro and Takkobu on the eastern side"
+    ],
+    "lodging": [
+      "Kushiro city, directly south of the park and the usual base"
+    ],
+    "seasonalClosures": [
+      "Shirarutoro Nature Center closes for the winter, from November",
+      "The Kushiro Shitsugen Norokko train runs from spring to autumn, and the SL Fuyu-no-Shitsugen steam train only in winter"
+    ]
+  },
+  "weather": "Summer is the season for the bog's flowers: cranberry flowers pink on the raised bog in June and July, and the Kushiro hanashinobu blooms in June and July. Winter is long and cold. In winter the lakes freeze to several tens of centimetres — thick enough for ice fishing on Lake Toro, and for the ice to buckle into omiwatari ridges — and February is the time to see the cranes' courtship dances.",
+  "directions": "Kushiro Airport has flights from Tokyo Haneda (about 1 hour 30 minutes) and from Sapporo. The JR Super Ozora express runs from Sapporo to Kushiro in about 4 hours 30 minutes. From Kushiro, the JR Senmō Main Line runs north through the park beside the river, stopping at Kushiro-Shitsugen Station for the Hosooka observatory and at Tōro for the lake; Akan Bus serves the Onnenai Visitor Center on the west side. A car makes it much easier to reach the observatories on both sides.",
+  "chronology": [
+    {
+      "year": "c. 6,000 years ago",
+      "text": "The sea stands a few metres higher; the basin is a shallow bay that sandbars later close off."
+    },
+    {
+      "year": "1924",
+      "text": "About a dozen red-crowned cranes, thought extinct in Japan, are found near Kirakotan."
+    },
+    {
+      "year": "1952",
+      "text": "The cranes and their breeding grounds are designated a Special Natural Monument."
+    },
+    {
+      "year": "1967",
+      "text": "The heart of the wetland is designated a national natural monument."
+    },
+    {
+      "year": "1980",
+      "text": "The Kushiro wetland becomes Japan's first Ramsar site on 17 June."
+    },
+    {
+      "year": "1987",
+      "text": "Kushiroshitsugen National Park is designated on 31 July, Japan's 28th national park."
+    },
+    {
+      "year": "1990",
+      "text": "A 9,714-hectare vehicle-restriction area is designated."
+    },
+    {
+      "year": "2011",
+      "text": "The park is enlarged."
+    }
+  ],
+  "safety": [
+    "Stay on boardwalks and paths. Off them the marsh is soft, waterlogged peat, and much of it is closed to entry.",
+    "Canoe the Kushiro River with a guide unless you are experienced on moving water; guided tours run from Lake Toro down to Hosooka.",
+    "Watch cranes and eagles from the observatories with binoculars and keep your distance; the cranes are a Special Natural Monument.",
+    "Winter is very cold. On frozen lakes, go out only where ice fishing is organised."
+  ],
+  "regulations": [
+    "Do not approach, feed or chase red-crowned cranes.",
+    "Kirakotan Cape's tip is a natural monument; entry needs a permit.",
+    "Picking plants, collecting fallen branches, catching animals or lighting a fire in the special protection zone needs a permit, and off-road vehicles and snowmobiles are barred from the wetland."
+  ],
+  "themes": [
+    "theme-wetland",
+    "theme-conservation-movement",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Kushirositsugen Hosooka Tenboudai01.jpg",
+      "caption": "The wetland and the Kushiro River from the Hosooka observatory",
+      "altText": "A vast flat marsh with a river winding across it"
+    },
+    {
+      "file": "File:Kottaro Marsh.jpg",
+      "caption": "Kottaro, in the north of the wetland",
+      "altText": "Wet grassland and pools stretching to wooded hills"
+    },
+    {
+      "file": "File:Kushiro Wetland winter.JPG",
+      "caption": "The wetland in winter",
+      "altText": "A snow-covered marsh under a pale sky"
+    },
+    {
+      "file": "File:Hokuto dwelling replica.JPG",
+      "caption": "A rebuilt pit dwelling at the Hokuto site",
+      "altText": "A thatched, tent-shaped prehistoric house reconstruction"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kushiroshitsugen National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/kushiroshitsugen/"
+    },
+    {
+      "title": "釧路湿原国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/kushiro/index.html"
+    },
+    {
+      "title": "釧路湿原国立公園 見どころ・施設 — 国立公園に、行ってみよう！（環境省）",
+      "url": "https://www.env.go.jp/nature/nationalparks/list/kushiro-shitsugen/spot/"
+    },
+    {
+      "title": "国立公園一覧 — 環境省",
+      "url": "https://www.env.go.jp/park/parks/index.html"
+    },
+    {
+      "title": "自然公園法（昭和32年法律第161号）— e-Gov法令検索",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000161"
+    },
+    {
+      "title": "<タンチョウ100年> — 北海道新聞",
+      "url": "https://www.hokkaido-np.co.jp/article/1101721/"
+    },
+    {
+      "title": "釧路湿原 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/釧路湿原"
+    },
+    {
+      "title": "Kushiro-shitsugen National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kushiro-shitsugen_National_Park"
+    },
+    {
+      "title": "釧路湿原データブック — 釧路湿原国立公園連絡協議会",
+      "url": "https://www.kushiro-shitsugen-np.jp/deta/"
+    },
+    {
+      "title": "シラルトロ自然情報館 — 釧路湿原国立公園連絡協議会",
+      "url": "https://www.kushiro-shitsugen-np.jp/kansatu/shirarutoro/"
+    },
+    {
+      "title": "釧路湿原国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/釧路湿原国立公園"
+    }
+  ]
+}

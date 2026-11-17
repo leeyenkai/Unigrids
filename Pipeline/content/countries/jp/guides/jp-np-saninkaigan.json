@@ -1,0 +1,255 @@
+{
+  "placeID": "jp-np-saninkaigan",
+  "contentVersion": 1,
+  "summary": "Seventy-five kilometres of Sea of Japan coast between Tottori and Kyōtango: the Tottori Sand Dunes, pine-topped islets and sea caves on the Uradome coast, basalt columns at Genbudō and cliffs, coves and fishing villages in between. A Global Geopark that reads like a textbook of how the Sea of Japan opened, and a coast for swimming, snorkelling and boat trips in summer.",
+  "facts": {
+    "establishedYear": 1963,
+    "areaHectares": 9006,
+    "bestSeasons": [
+      "summer",
+      "spring",
+      "autumn"
+    ],
+    "suggestedTime": "Two to three days"
+  },
+  "story": [
+    "San'in Kaigan is a coast that shows its workings. Japan was once the edge of the Asian continent, and the geopark built around this shore tells how it pulled away as the Sea of Japan opened: granite, volcanic rock, lava that cooled into columns, sediments laid down in the new sea. Waves driven by the winter monsoon have since cut the shore into cliffs, sea caves, arches and stacks. At Genbudō, basalt cooled into great columns; it was there, in 1926, that the geophysicist Motonori Matuyama found rock magnetised the 'wrong' way, evidence that Earth's magnetic field has reversed.",
+    "At the western end, sand carried down from the Chūgoku Mountains by the Sendai River has been piled by wind and waves into the Tottori Sand Dunes, a natural monument whose crests and wind ripples shift with every storm. Eastwards, the islets and coves of the Uradome coast give way to the cliffs of Tajima Mihonoura and Kasumi, where the rock face of Yoroi-no-sode stands 65 metres high and 200 metres long. Beyond Toyooka, the sandbar of Shōtenkyō all but closes off Kumihama Bay from the sea.",
+    "The water is clear and the reefs and tide pools are rich: sea slugs, sea hares and shoals of fish draw snorkellers to Takenohama, and greater horseshoe bats roost in the sea caves. Inland, along the Maruyama River near Toyooka, Oriental white storks bred in captivity have been released back into the wild, and they now nest and feed again in the rice fields and wetlands.",
+    "People have fished this coast for a very long time, and its villages of tiled, plank-walled houses still crowd into the coves beneath steep slopes. The coast was protected as a quasi-national park in 1955 and made a national park on 15 July 1963. In 2010 the area around it was recognised as the San'in Kaigan Global Geopark, and in 2014 the marine park zones were extended to cover thousands of hectares of sea along the whole shore."
+  ],
+  "howItWorks": [
+    "San'in Kaigan is a regional park, drawn over land that mostly belongs to other people: about two-thirds of it is privately owned and nearly a third belongs to local government, with only a sliver of national land. The fishing ports, beaches, farms and hot-spring towns along the coast go about their business inside or beside it, and the park's job is to keep development from spoiling the shore.",
+    "Almost all of the park is special zone, graded in three classes by how strictly building, quarrying and felling are controlled; about 7 per cent is special protection zone, where almost nothing may be altered. Off the coast, marine park zones protect reefs, tide pools and sea caves, from the small zones of 1971 to the large eastern, central and western zones added in 2014. Driving onto the Tottori and Tango sand dunes is restricted.",
+    "The park sits inside the larger San'in Kaigan UNESCO Global Geopark, which runs inland across three prefectures and interprets the geology; its museums and trails are a good way into the landscape. The Tottori Sand Dunes are also a natural monument under the cultural properties law, as are Genbudō and Yoroi-no-sode, so their rock and sand are protected twice over."
+  ],
+  "sights": [
+    {
+      "name": "Tottori Sand Dunes (鳥取砂丘)",
+      "note": "Rolling dunes of sand from the Sendai River, a natural monument. Walk, sandboard or paraglide; the wind redraws the ripples daily.",
+      "location": [
+        35.54,
+        134.2275
+      ]
+    },
+    {
+      "name": "Uradome Coast (浦富海岸)",
+      "note": "Granite headlands, pine-topped islets such as Senganmatsushima, sea caves and the quartz-sand coves of Kamogaiso. Best by sightseeing boat or sea kayak.",
+      "location": [
+        35.5902,
+        134.2954
+      ]
+    },
+    {
+      "name": "Tajima Mihonoura (但馬御火浦)",
+      "note": "Eight kilometres of cliffs, sea caves and arches, including the huge Tsurigane Dōmon, and the column-jointed islet of Mio-Ōshima. A scenic place and natural monument.",
+      "location": [
+        35.6661,
+        134.532
+      ]
+    },
+    {
+      "name": "Yoroi-no-sode (鎧の袖)",
+      "note": "A sea cliff of jointed columns 65 metres high and 200 metres long, named for the sleeve of samurai armour it resembles.",
+      "location": [
+        35.6595,
+        134.5866
+      ]
+    },
+    {
+      "name": "Takenohama and Nekozaki (竹野浜・猫崎)",
+      "note": "A white-sand beach beside a cat-shaped peninsula; the snorkelling centre here leads trips over the reefs.",
+      "location": [
+        35.6745,
+        134.7643
+      ]
+    },
+    {
+      "name": "Genbudō (玄武洞)",
+      "note": "Hexagonal basalt columns where Motonori Matuyama found evidence of reversals of Earth's magnetic field in 1926. A natural monument beside the Maruyama River.",
+      "location": [
+        35.5884,
+        134.8049
+      ]
+    },
+    {
+      "name": "Shōtenkyō and Kumihama Bay (小天橋・久美浜湾)",
+      "note": "A pine-covered sandbar that all but seals Kumihama Bay from the Sea of Japan, at the park's eastern end.",
+      "location": [
+        35.6306,
+        134.9288
+      ]
+    },
+    {
+      "name": "Tottori Sand Dunes Visitor Center",
+      "note": "Dune ecology, weather and the day's conditions, at the edge of the dunes.",
+      "location": [
+        35.544,
+        134.2366
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Takeno Snorkeling Center",
+      "note": "Snorkelling lessons, gear and guided trips at Takenohama.",
+      "location": [
+        35.6602,
+        134.748
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Tottori Station on the JR San'in Main Line — buses to the dunes and the Uradome coast",
+      "Iwami Station — the Uradome coast",
+      "Kasumi, Satsu and Takeno stations — the Tajima coast",
+      "Kinosaki Onsen and Toyooka stations — Genbudō, the stork country and the eastern coast",
+      "Kumihama on the Kyoto Tango Railway — Shōtenkyō and the Tango dunes"
+    ],
+    "reservations": "No entry reservation or permit is needed. Sightseeing boats, sea-kayak and snorkelling tours run mostly in the warmer months and stop in rough seas; book ahead in summer and check before you go.",
+    "permits": [
+      "Driving vehicles onto the Tottori and Tango sand dunes is restricted"
+    ],
+    "camping": [
+      "Campsites behind several beaches, including Imagoura on the Satsu coast"
+    ],
+    "lodging": [
+      "Kinosaki Onsen, the old hot-spring town inland from Takenohama",
+      "Fishing-village inns and hot springs at Kasumi, Hamasaka, Takeno and Iwai",
+      "Hotels in Tottori and Toyooka"
+    ],
+    "seasonalClosures": [
+      "Sightseeing boats do not sail in rough seas, which are frequent in winter — check with the operators before you go"
+    ]
+  },
+  "weather": "This is the Sea of Japan side of Honshu, and winter is its hard season: from December to February north-westerly winds drive cold air and heavy seas onto the coast, with snow and grey skies. Spring is mild and bright. The rainy season comes in June and July, and July and August are hot, humid and the best months for swimming and snorkelling, when the sea is at its calmest. Typhoons reach this coast less often than the Pacific side but can still bring storms in late summer and autumn. Autumn is clear and pleasant for walking.",
+  "directions": "From Osaka, the Super Hakuto limited express runs from Shin-Osaka to Tottori in about two and a half hours, and the Konotori limited express runs to Toyooka and Kinosaki Onsen in about three. From Tokyo, take the Tokaido Shinkansen to Shin-Osaka and change. The JR San'in Main Line follows the coast between Tottori and Toyooka, with stations close to most of the park, and the Kyoto Tango Railway continues east from Toyooka towards Kumihama. Buses from Tottori Station reach the dunes in about 20 minutes and the Uradome coast in about 40. The coast road is a fine drive, and cars can be hired at Tottori and Toyooka.",
+  "chronology": [
+    {
+      "year": "1926",
+      "text": "Motonori Matuyama finds reversed magnetism in the basalt at Genbudō."
+    },
+    {
+      "year": "1955",
+      "text": "The coast is designated San'in Kaigan Quasi-National Park."
+    },
+    {
+      "year": "1963",
+      "text": "It becomes San'in Kaigan National Park on 15 July."
+    },
+    {
+      "year": "1971",
+      "text": "The first marine park zones are designated, at Uradome, Hamasaka, Takeno and Toyooka."
+    },
+    {
+      "year": "1990",
+      "text": "Driving on the Tottori Sand Dunes is restricted."
+    },
+    {
+      "year": "2010",
+      "text": "The San'in Kaigan Geopark joins the Global Geoparks Network."
+    },
+    {
+      "year": "2014",
+      "text": "Large marine park zones are designated along the eastern, central and western coast."
+    }
+  ],
+  "safety": [
+    "Winter storms throw big waves at the rocky coast. Keep off ledges and out of sea caves in any swell, and never walk the shore during a storm warning.",
+    "Rip currents form off the beaches. Swim where lifeguards are on duty in summer, and stay out of the water when the flags say so.",
+    "The dunes are hot and shadeless in summer. Carry water, wear shoes on the sand, and keep watch for heat exhaustion.",
+    "Cliff-top paths are unfenced in places and slippery after rain."
+  ],
+  "regulations": [
+    "Driving onto the Tottori and Tango sand dunes is restricted.",
+    "Genbudō, Yoroi-no-sode and the Tottori Sand Dunes are natural monuments: do not chip rock or remove sand.",
+    "In the marine park zones, collecting designated fish, shellfish, seaweed and other marine life needs permission.",
+    "Respect the fishing ports: do not park on quays or interfere with gear, and leave shellfish to the licensed fishers."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-dunes",
+    "theme-caves"
+  ],
+  "photos": [
+    {
+      "file": "File:Tottori Sand Dunes 20170128-1.jpg",
+      "caption": "Snow on the Tottori Sand Dunes in January",
+      "altText": "Sand dunes partly covered with snow, with the sea and dark headlands beyond under a blue sky"
+    },
+    {
+      "file": "File:Uradome Coast Sengan-Matsushima.JPG",
+      "caption": "Senganmatsushima on the Uradome coast",
+      "altText": "A rocky islet with a natural arch and a single pine tree on top, rising from clear green water"
+    },
+    {
+      "file": "File:Yoroi-no-sode in Kasumi Coast Kami Hyogo pref01s5s4200.jpg",
+      "caption": "Yoroi-no-sode, a 65-metre sea cliff on the Kasumi coast",
+      "altText": "A steep forested headland with a pale streaked cliff face dropping into blue sea"
+    },
+    {
+      "file": "File:Genbudo Cave 2018.jpg",
+      "caption": "The basalt columns of Genbudō",
+      "altText": "A cliff of grey basalt columns with dark cave openings at its base"
+    }
+  ],
+  "sources": [
+    {
+      "title": "San'inkaigan National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/saninkaigan/"
+    },
+    {
+      "title": "山陰海岸国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/sanin/index.html"
+    },
+    {
+      "title": "山陰海岸国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/sanin/intro/index.html"
+    },
+    {
+      "title": "国立公園地種区分別面積・土地所有別面積（令和8年4月10日現在）— 環境省",
+      "url": "https://www.env.go.jp/park/doc/data/national/np_2.pdf"
+    },
+    {
+      "title": "山陰海岸国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/山陰海岸国立公園"
+    },
+    {
+      "title": "San'in Kaigan Geopark — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/San'in_Kaigan_Geopark"
+    },
+    {
+      "title": "Tottori Sand Dunes — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tottori_Sand_Dunes"
+    },
+    {
+      "title": "玄武洞 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/玄武洞"
+    },
+    {
+      "title": "山陰海岸国立公園指定書 — 環境省",
+      "url": "https://www.env.go.jp/park/content/000305040.pdf"
+    },
+    {
+      "title": "国立公園土地所有別面積（令和8年4月10日現在）— 環境省",
+      "url": "https://www.env.go.jp/park/doc/data/national/np_3.pdf"
+    },
+    {
+      "title": "How to get there, San'inkaigan — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/saninkaigan/how-to-get-there/"
+    },
+    {
+      "title": "Motonori Matuyama — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Motonori_Matuyama"
+    },
+    {
+      "title": "鎧の袖 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/鎧の袖"
+    },
+    {
+      "title": "但馬御火浦 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/但馬御火浦"
+    }
+  ]
+}

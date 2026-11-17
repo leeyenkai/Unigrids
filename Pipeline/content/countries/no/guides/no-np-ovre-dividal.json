@@ -1,0 +1,223 @@
+{
+  "placeID": "no-np-ovre-dividal",
+  "contentVersion": 1,
+  "summary": "The upper valley of the Divielva and the open, lake-strewn mountains around it, in inner Troms against the Swedish border. Crooked ancient pines and birch woods line the valley; above them lie rounded fells, mires and fishing lakes. Some of the densest wolverine country in northern Europe, summer grazing for Swedish Sámi reindeer, and a stretch of the Arctic Trail. In Northern Sámi, Dieváidvuovddi álbmotmeahcci.",
+  "facts": {
+    "establishedYear": 1971,
+    "areaHectares": 77000,
+    "bestSeasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to five days"
+  },
+  "story": [
+    "Øvre Dividal is the head of a long inland valley in Målselv and the high country either side of it, all state land, running up to the Swedish border. Steep mountains and deep ravines give way to open, lake-dotted plateaus and rounded ridges. Some 600 million years ago a thin cover of conglomerate, sandstone and shale — the Dividal Group — settled on the granite basement here, and it shows on hillsides such as Bumannsberget; sheets of mostly younger, metamorphosed rock were later thrust over it from the west. The ice sheet left erratic boulders on the tops, among them a red granite block from Sweden beside the cairn on the 1,428-metre summit of Jerta.",
+    "Ancient, twisted pines and birch woodland cover the valley floor, with rare lichens, fungi and beetles among them; above the trees, varied bedrock feeds a rich alpine flora, including great numbers of white arctic bell-heather and the small Lapland rhododendron, lapprose. The park is known above all for wolverines: their population is among the densest in northern Europe, and cubs are raised in dens here every year. Brown bears shared with Sweden, lynx and arctic foxes live in the park too, wolves pass through, and the valley is a migration route for birds in spring and autumn.",
+    "The name comes from the Sámi word dievva, a rounded, dry hill. Generations of Sámi have used this country and left sacrificial sites, turf-hut remains, meat caches and the remnants of reindeer fences built of birch. Norwegian settlers from Østerdalen, Gudbrandsdalen and Helgeland, and Kvens from the Torne valley in Sweden, moved into inner Troms towards the end of the 1700s, but Dividalen was taken up late: Frihetsli, the highest farm in the valley, was not cleared until 1844.",
+    "Øvre Dividal became a national park in 1971, to keep a large inland valley and mountain area with few roads or buildings. A new regulation in 2006 enlarged it to about 770 square kilometres and created Dividalen Protected Landscape Area alongside. Reindeer from the Swedish Sámi communities of Lainiovuoma and Saarivuoma still spend the summer here: Lainiovuoma has its summer settlement at Čievččasjávri, and in early July some 30 families, about 200 people, move in for the marking of the year's calves."
+  ],
+  "howItWorks": [
+    "As in all Norway's open country, you may walk and ski where you like, camp where you like and pick berries, mushrooms and common plants for your own use. Campfires are allowed with care, but national law forbids fires in or near woodland from 15 April to 15 September unless a fire plainly cannot spread or the municipality allows it, and in the park you may not fell trees for firewood — not even the tempting dry pines. Dogs must be kept on a lead from 1 April to 20 August under national law, and Miljødirektoratet's park brochure asks for a lead until 1 September.",
+    "Motor traffic is banned on land and water and in the air below 300 metres, and so are motorised model aircraft, a ban that covers drones. Cycling and organised riding are allowed only on roads and routes approved in the management plan. Organised walking needs no permit as long as the land is not damaged; organised activity that could harm the natural environment needs permission from the Øvre Dividal National Park Board. Hunting follows the normal rules except in Hávgavuopmi in the south-east of the park, where all hunting and trapping is banned. Fishing needs a licence, and live fish may never be used as bait or moved between waters.",
+    "This is reindeer country. In spring the herders follow their animals west into the park to calving grounds in its core, and the park asks for extra consideration during the calving season in May and June. If you meet a herd, stop, give it room and let it pass."
+  ],
+  "sights": [
+    {
+      "name": "Skaktardalen",
+      "note": "An impressive canyon cut into the valley side, about an hour's walk from the road in Dividalen.",
+      "location": [
+        68.741,
+        19.801
+      ]
+    },
+    {
+      "name": "Skaktaråsen",
+      "note": "A short climb from the Skaktermoen car park to a view over the high country towards the Swedish border. A culture and nature trail nearby suits children.",
+      "location": [
+        68.739,
+        19.777
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Øvre Divifoss",
+      "note": "A waterfall on the Divielva just outside the park boundary, with potholes worn deep into the rock beside it.",
+      "location": [
+        68.732,
+        19.747
+      ]
+    },
+    {
+      "name": "Jerta",
+      "note": "A 1,428-metre summit in the east of the park. A red granite boulder carried from Sweden by the ice sits beside the summit cairn.",
+      "location": [
+        68.702,
+        19.968
+      ]
+    },
+    {
+      "name": "Anjavassdalen",
+      "note": "The park's western valley, around the lake Anjavatnet and the Anja river.",
+      "location": [
+        68.714,
+        19.441
+      ]
+    },
+    {
+      "name": "Čievččasjávri",
+      "note": "Lake where the Swedish Sámi community of Lainiovuoma has its summer settlement; about 200 people gather here in early July for calf marking.",
+      "location": [
+        68.795,
+        20.042
+      ]
+    },
+    {
+      "name": "Hávgavuopmi",
+      "note": "A forested area in the south-east of the park, the one part where all hunting and trapping is banned.",
+      "location": [
+        68.616,
+        19.892
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The end of the forest road up Dividalen, past Frihetsli, the valley's highest farm — a start for day walks and the Arctic Trail",
+      "Skaktermoen car park, for Skaktaråsen and the culture and nature trail",
+      "Innset at Altevatn, in the south-west, on the Arctic Trail",
+      "Rostadalen, by road to Tverrelvmo"
+    ],
+    "reservations": "No permit or booking is needed to enter the park. The cabins on the Arctic Trail belong to Troms Turlag; Statskog's Ole Nergårdbua is unlocked and open to all.",
+    "permits": [
+      "Organised activity that could harm the natural environment needs permission from the Øvre Dividal National Park Board",
+      "Hunting and fishing need licences; Statskog sells elk-hunting licences",
+      "No hunting or trapping of any kind in Hávgavuopmi"
+    ],
+    "camping": [
+      "Wild camping anywhere under the right to roam, with fine spots beside the fishing lakes"
+    ],
+    "lodging": [
+      "Troms Turlag cabins Dividalshytta and Vuomahytta on the Arctic Trail",
+      "Statskog's unlocked Ole Nergårdbua, open to all",
+      "Hotels and holiday centres in Målselv and around Bardufoss"
+    ],
+    "seasonalClosures": [
+      "The forest road up Dividalen is open to Gambekken in summer but only as far as Skaktarelva in winter — check before you go"
+    ]
+  },
+  "weather": "Øvre Dividal has an inland climate with cold winter months, but the park can be visited all year. Spring and early summer bring light nights and busy bird life in the valley woods, and April and May are the best months for ice fishing, when big char take under the spring ice. Autumn is the time for berries and mushrooms in the pinewoods, where cowberries grow in abundance. The high mountains have a harsh climate in every season.",
+  "directions": "The park lies in inner Troms, about an hour and a half by car from Bardufoss airport and two and a half hours from Tromsø. From Målselv a road climbs Dividalen past Frihetsli and continues as a forest road to the park's edge — to Gambekken in summer, Skaktarelva in winter. A road also runs up Rostadalen to Tverrelvmo, north-west of the park, and in the south-west the Altevatn road from Setermoen in Bardu leads to Innset at Altevatn, where the Arctic Trail can also be joined; the trail continues south through Rohkunborri National Park.",
+  "chronology": [
+    {
+      "year": "c. 600 million years ago",
+      "text": "Conglomerate, sandstone and shale of the Dividal Group settle on the granite basement."
+    },
+    {
+      "year": "End of the last ice age",
+      "text": "The melting ice sheet strands erratic boulders on the summits, including a red granite block from Sweden on Jerta."
+    },
+    {
+      "year": "Late 1700s",
+      "text": "Norwegian settlers and Kvens from the Torne valley begin to farm the valleys of inner Troms."
+    },
+    {
+      "year": "1844",
+      "text": "Frihetsli, the uppermost farm in Dividalen, is cleared."
+    },
+    {
+      "year": "1971",
+      "text": "Øvre Dividal National Park is established."
+    },
+    {
+      "year": "2006",
+      "text": "A new regulation enlarges the park to about 770 square kilometres and creates Dividalen Protected Landscape Area beside it."
+    },
+    {
+      "year": "2011",
+      "text": "Rohkunborri National Park is created a short distance to the south."
+    }
+  ],
+  "safety": [
+    "The high mountains have a harsh climate and long distances between shelters. Go only with mountain experience and the gear to look after yourself in any weather.",
+    "Brown bears live in the park, and females with cubs are seen nearly every year. Keep your distance and never approach a bear.",
+    "The woods and valleys are gentle enough for children, but the open fells are not; plan routes to match the weakest walker."
+  ],
+  "regulations": [
+    "Motor traffic is banned on land and water and in the air below 300 metres; motorised model aircraft and drones are banned.",
+    "No hunting or trapping in Hávgavuopmi; elsewhere hunting and fishing follow the normal rules and need licences.",
+    "Cycling and organised riding only on approved roads and routes.",
+    "Trees may not be felled for firewood, not even dead pines.",
+    "Never use live fish as bait, or move live fish from one river or lake to another."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-alpine",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Dividalen.jpg",
+      "caption": "Dividalen from a hill above the Gambekken stream, looking north-west",
+      "altText": "A wide valley of green birch and pine forest below snow-streaked mountains and a pointed peak"
+    },
+    {
+      "file": "File:Övre dividal anjajohka.jpg",
+      "caption": "The Anja river in its rocky gorge in autumn",
+      "altText": "A river rushing through a deep rock gorge lined with yellow autumn birch"
+    },
+    {
+      "file": "File:Dividal.jpg",
+      "caption": "Old pines on bare rock slabs in Øvre Dividal",
+      "altText": "Scattered pines and autumn-coloured heath among grey, lichen-covered rock slabs"
+    },
+    {
+      "file": "File:Øvre Dividalen sett fra Annabalba (NRA S-1709 B0711).jpg",
+      "caption": "Upper Dividalen from Annabalba, with Skaktaråsen in the foreground — an archive photograph from the National Archives of Norway",
+      "altText": "A black-and-white view from a stony summit over a deep valley and snow-patched mountains"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Øvre Dividal nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/ovre-dividal/"
+    },
+    {
+      "title": "Øvre Dividal nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00000131"
+    },
+    {
+      "title": "Forskrift om vern av Øvre Dividal nasjonalpark/Dieváidvuovddi álbmotmeahcci — Lovdata",
+      "url": "https://lovdata.no/forskrift/2006-12-01-1315"
+    },
+    {
+      "title": "Øvre Dividal National Park (English brochure) — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/globalassets/dokumenter/publikasjoner/brosjyrer/ovre-dividal_np_e_nett-180112.pdf"
+    },
+    {
+      "title": "Regler for droner i naturen — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/ansvarsomrader/vernet-natur/regler-for-droner-i-naturen/"
+    },
+    {
+      "title": "Forskrift om brannforebygging § 3 — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Lov om hundehold (hundeloven) § 6 — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+    },
+    {
+      "title": "Øvre Dividal National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/%C3%98vre_Dividal_National_Park"
+    },
+    {
+      "title": "Øvre Dividal nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/%C3%98vre_Dividal_nasjonalpark"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

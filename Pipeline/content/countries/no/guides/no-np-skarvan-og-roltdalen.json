@@ -1,0 +1,257 @@
+{
+  "placeID": "no-np-skarvan-og-roltdalen",
+  "contentVersion": 1,
+  "summary": "Mountain, old spruce forest and wide bog east of Trondheim, where nature and two thousand years of work meet. Walk the long day in to Schulzhytta in roadless Roltdalen, past millstone quarries cut into Høgfjellet and summer farms where iron was smelted in Roman times, under Fongen, at 1,441 metres the park's highest summit — in a landscape still grazed by South Sámi reindeer herds.",
+  "facts": {
+    "establishedYear": 2004,
+    "areaHectares": 44137,
+    "bestSeasons": [
+      "summer",
+      "winter"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Skarvan og Roltdalen lies in the hills between Selbu, Tydal, Meråker and Stjørdal, east of Trondheim and just south-east of Trondheim Airport, Værnes. The Skarvan massif rises in the north; in the south-east a ridge of fells runs to Fongen, the highest point at 1,441 metres. Between them lies Roltdalen, the largest roadless forest and summer-farm valley in the old county of Sør-Trøndelag, with wide bogs, fast streams and many small lakes holding trout and char.",
+    "The park's greatest botanical treasure is the old spruce forest of Roltdalen, close to virgin forest in places, with huge trees and a rich growth of mosses, lichens and fungi. Crested and coal tits, three-toed woodpecker and capercaillie live in it. Gyrfalcon and golden eagle hunt the open fells, and wolverine, elk, hare and ptarmigan are all found here. Some of the old summer-farm meadows are growing over; others are still mown and grazed, and keep their flowers and grassland fungi.",
+    "Iron was smelted from bog ore in Roltdalen some 2,000 years ago — the furnaces at Liavollen date from about AD 80 to 405 — on such a scale that archaeologists speak of an early export industry. Copper miners came in the 1700s: the Selbo copper works began the Høyås mine here in 1713, and for half a century from 1756 a small mining colony lived at Stormoen. Above all, Selbu farmers cut millstones from the garnet-studded mica schist of Høgfjellet, a trade documented from the 1500s until 1914, and sold them across Norway and abroad.",
+    "Farms in the valley below used Roltdalen for hay and summer grazing — 65 summer-farm sites are recorded in the park, busiest in the mid-1800s — until the last, at Stormoen, closed in 1969. Through all of it this has been South Sámi country: the whole park lies in the Essand reindeer grazing district (Saanti sijte), and its land carries traces of every stage of Sámi herding. The national park was created in 2004."
+  ],
+  "howItWorks": [
+    "Norway's right to roam (allemannsretten) applies throughout: you may walk and ski where you like, camp, and pick berries, mushrooms and common plants for your own use. A tent may stand for up to a week in one place without permission; longer stays need the park board's consent, though ordinary hiking tents and herders' lavvos are exempt. From 15 April to 15 September national fire law forbids lighting a fire in or near woodland and other open country unless it plainly cannot spread or the municipality has allowed it. Outside that period, burn fallen twigs and use existing fire rings rather than building new ones.",
+    "Motor traffic on land and water, and flying lower than 300 metres, are banned. The park is also protected against noise, so drones and motorised ice augers are not allowed. Cycling and organised horse riding are permitted only on roads and routes approved in the management plan, and cycling is banned on the stretches of the long-distance Norge på tvers ('Norway across') route inside the park. Dogs must be kept on a lead from 1 April to 20 August under the national Dog Act; Selbu and Tydal extend that to 10 October and Stjørdal to 31 October, for grazing sheep and reindeer.",
+    "Reindeer of the Essand district graze the park all year, returning from winter grazing near Femund in March and April to calve in spring; birds and other animals nest and breed from late March to mid-July. Let moving herds pass, use binoculars rather than approaching, and take particular care in winter and at calving time. The millstone quarries lie in a stricter zone A: you may explore them, but nothing may be removed, not even loose stones. Paddling and camping are not allowed in the neighbouring Stråsjøen–Prestøyan nature reserve."
+  ],
+  "sights": [
+    {
+      "name": "Fongen",
+      "note": "The park's highest summit at 1,441 metres, rising in the south-east above Schulzhytta and upper Roltdalen.",
+      "location": [
+        63.181,
+        11.631
+      ]
+    },
+    {
+      "name": "Roltdalen",
+      "note": "The largest roadless forest and summer-farm valley in the old county of Sør-Trøndelag, with the park's near-virgin spruce forest.",
+      "location": [
+        63.179,
+        11.491
+      ]
+    },
+    {
+      "name": "Stormoen",
+      "note": "The summer farm beside Schulzhytta, on a slag heap from iron smelting some 2,000 years ago; a mining colony lived here from 1756 to 1810, and dairying went on until 1969.",
+      "location": [
+        63.209,
+        11.508
+      ]
+    },
+    {
+      "name": "Høgfjellet",
+      "note": "Rows of millstone quarries, the densest in the park, crossed by the marked path from Hoemskjølen to Schulzhytta. Explore, but leave every stone.",
+      "location": [
+        63.225,
+        11.409
+      ]
+    },
+    {
+      "name": "Stor-Kvennfjellvatnet",
+      "note": "A mountain lake in the Selbu millstone belt, with many quarries to its north and south.",
+      "location": [
+        63.269,
+        11.429
+      ]
+    },
+    {
+      "name": "Storskarven",
+      "note": "A summit of the Skarvan massif in the north of the park, reached by a marked route from Sildra.",
+      "location": [
+        63.326,
+        11.455
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Vekta, Selbu — car park, information board and a boardwalked path past Stråsjøen–Prestøyan to Prestøyhytta and on to Schulzhytta",
+      "Hoemskjølen, Selbu — summer car park for the path over Høgfjellet to Schulzhytta; in winter park lower down at Synnåsen",
+      "Sildra, Stjørdal — for Sonvatna and Storskarven; ploughed in winter, but with no marked winter routes",
+      "Stordalen and Bjørneggen, Meråker — for Schulzhytta, Ramsjøhytta and Storerikvollen"
+    ],
+    "reservations": "No permit or booking is needed to enter the park. Schulzhytta, in the heart of the park, is staffed at Easter and in the summer high season and self-service at other times; reaching it takes a full day's walk.",
+    "permits": [
+      "Organised activity other than traditional walking trips run by trekking associations, schools and voluntary clubs needs permission from the park board",
+      "Camping in one place for more than a week needs permission, except with ordinary hiking tents",
+      "Hunting and fishing need a licence, sold through inatur.no and the local mountain boards"
+    ],
+    "camping": [
+      "Wild camping under the right to roam",
+      "No camping or paddling in the Stråsjøen–Prestøyan nature reserve"
+    ],
+    "lodging": [
+      "Schulzhytta (Trondhjems Turistforening), 36 beds, staffed at Easter and in high summer",
+      "Prestøyhytta (Nord-Trøndelag Turistforening), self-service, 16 beds, just inside the boundary",
+      "Bjørneggen, Ramsjøhytta and Kvitfjellhytta within a day's walk of the park",
+      "Campsites, farm stays and hotels in the surrounding villages"
+    ],
+    "seasonalClosures": [
+      "The car park at Hoemskjølen is used only in summer; in winter, start from Synnåsen"
+    ]
+  },
+  "directions": "The park lies in Trøndelag just south-east of Trondheim Airport, Værnes, and its entrances can be reached by car. Buses run from Stjørdal along the E14 towards Meråker and along county road 705 towards Tydal; from the bus, take a taxi or walk to the start points at Bjørneggen and Stordalen in Meråker, Sildra in Stjørdal, or Vekta and Hoemskjølen in Selbu. The Norge på tvers ('Norway across') route, 120 kilometres from the Trondheimsfjord to the Swedish border at Sylan, passes through the park by Prestøyhytta and Schulzhytta.",
+  "chronology": [
+    {
+      "year": "AD 80–405",
+      "text": "Iron is smelted from bog ore at Liavollen, one of a dozen early ironworks in Roltdalen."
+    },
+    {
+      "year": "1500s",
+      "text": "Millstone quarrying in the Selbu mountains is first documented."
+    },
+    {
+      "year": "1600s",
+      "text": "South Sámi herding gradually moves from hunting wild reindeer to nomadic herding with milking."
+    },
+    {
+      "year": "1713",
+      "text": "The Selbo copper works begins work on the Høyås mine, or Gammelgruva, in the south of the park; it runs until 1761."
+    },
+    {
+      "year": "1756",
+      "text": "The copper works is licensed to settle a workers' colony at Stormoen; four or five families live there until 1810."
+    },
+    {
+      "year": "1914",
+      "text": "Millstone quarrying in the Selbu mountains comes to an end."
+    },
+    {
+      "year": "1948",
+      "text": "Schulzhytta is completed beside Stormoen."
+    },
+    {
+      "year": "1969",
+      "text": "Summer dairying ends at Stormoen, the last summer farm in use in the area."
+    },
+    {
+      "year": "2004",
+      "text": "On 20 February Skarvan og Roltdalen National Park is created, covering about 441 square kilometres."
+    },
+    {
+      "year": "2013",
+      "text": "A local national park board takes over the park's management."
+    }
+  ],
+  "safety": [
+    "Schulzhytta is a long day's walk from the nearest road over mountain and bog. Plan for wet ground, carry map and compass, and allow plenty of time.",
+    "The Rotla and its side streams rise fast in rain and snowmelt. Cross on the bridges built by the trekking associations.",
+    "Old mine workings and deep quarry pits lie beside some paths. Keep children close and stay back from the edges."
+  ],
+  "regulations": [
+    "Motor traffic, flying lower than 300 metres, drones and motorised ice augers are banned.",
+    "Cycling and organised riding only on approved roads and routes.",
+    "Dogs must be on a lead from 1 April to 20 August, and in Selbu and Tydal until 10 October, in Stjørdal until 31 October.",
+    "Nothing may be removed from the millstone quarries in zone A, not even loose stones."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-wetland",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Storskarven, Skarvan og Roltdalen Nasjonalpark.jpg",
+      "caption": "Storskarven in the Skarvan massif",
+      "altText": "A broad, rounded mountain above open moorland"
+    },
+    {
+      "file": "File:Fongen in the sunset 2.jpg",
+      "caption": "Fongen at sunset in winter, from Gråfjellet near Prestøyhytta",
+      "altText": "A snow-covered mountain lit pink by a low sun"
+    },
+    {
+      "file": "File:Schulzhytta from afar in winter, Sylan, Norway.jpg",
+      "caption": "Schulzhytta in Roltdalen, seen from a distance in winter",
+      "altText": "A cluster of small buildings in a wide, snowy valley"
+    },
+    {
+      "file": "File:Skarvan 1.jpg",
+      "caption": "Skarvan on a March day, seen from Leksvik across the Trondheimsfjord",
+      "altText": "A long, snow-covered mountain ridge on the far side of a fjord"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Skarvan og Roltdalen nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/skarvan-og-roltdalen/"
+    },
+    {
+      "title": "Skarvan og Roltdalen nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00002272"
+    },
+    {
+      "title": "Forskrift om vern av Skarvan og Roltdalen nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/forskrift/2004-02-20-390"
+    },
+    {
+      "title": "Om nasjonalparken — Skarvan og Roltdalen nasjonalpark",
+      "url": "https://skarvanogroltdalennasjonalpark.no/om-nasjonalparken/"
+    },
+    {
+      "title": "Kvernsteinsbruddene — Skarvan og Roltdalen nasjonalpark",
+      "url": "https://skarvanogroltdalennasjonalpark.no/om-nasjonalparken/kvernsteinsbruddene/"
+    },
+    {
+      "title": "Jernutvinning og gruvedrift — Skarvan og Roltdalen nasjonalpark",
+      "url": "https://skarvanogroltdalennasjonalpark.no/om-nasjonalparken/gruvedrift-og-jernutvinning/"
+    },
+    {
+      "title": "Seterdrift — Skarvan og Roltdalen nasjonalpark",
+      "url": "https://skarvanogroltdalennasjonalpark.no/om-nasjonalparken/seterdrift/"
+    },
+    {
+      "title": "Samisk reindrift — Skarvan og Roltdalen nasjonalpark",
+      "url": "https://skarvanogroltdalennasjonalpark.no/om-nasjonalparken/samisk-reindrift/"
+    },
+    {
+      "title": "Innfallsporter — Skarvan og Roltdalen nasjonalpark",
+      "url": "https://skarvanogroltdalennasjonalpark.no/innfallsporter/"
+    },
+    {
+      "title": "Råd om ferdsel — Skarvan og Roltdalen nasjonalpark",
+      "url": "https://skarvanogroltdalennasjonalpark.no/rad-om-ferdsel/"
+    },
+    {
+      "title": "Turisthytter og stier — Skarvan og Roltdalen nasjonalpark",
+      "url": "https://skarvanogroltdalennasjonalpark.no/turisthytter-og-stier/"
+    },
+    {
+      "title": "Reise og overnatting — Skarvan og Roltdalen nasjonalpark",
+      "url": "https://skarvanogroltdalennasjonalpark.no/reise-og-overnatting/"
+    },
+    {
+      "title": "Skarvan og Roltdalen nasjonalpark — Nasjonalparkstyret for Skarvan og Roltdalen og Sylan",
+      "url": "https://www.nasjonalparkstyre.no/Nasjonalparkstyret-for-Skarvan-og-Roltdalen-nasjonalpark-og-Sylan-landskapsvernomrade/verneomrader/skarvan-og-roltdalen-nasjonalpark"
+    },
+    {
+      "title": "Forskrift om brannforebygging § 3 — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Lov om hundehold (hundeloven) § 6 — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+    },
+    {
+      "title": "Skarvan and Roltdalen National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Skarvan_and_Roltdalen_National_Park"
+    },
+    {
+      "title": "Skarvan og Roltdalen nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Skarvan_og_Roltdalen_nasjonalpark"
+    },
+    {
+      "title": "Sentralt stedsnavnregister — Kartverket",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}

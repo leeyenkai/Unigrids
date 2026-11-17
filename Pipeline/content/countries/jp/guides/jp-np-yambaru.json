@@ -1,0 +1,212 @@
+{
+  "placeID": "jp-np-yambaru",
+  "contentVersion": 1,
+  "summary": "The wild northern end of Okinawa Island: low mountains under dense subtropical evergreen forest, home to the flightless Okinawa rail and other animals found nowhere else, with limestone pinnacles, waterfalls, mangroves and the cliffs of Cape Hedo. Part of a natural World Heritage Site since 2021.",
+  "facts": {
+    "establishedYear": 2016,
+    "areaHectares": 17352,
+    "bestSeasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Two to three days"
+  },
+  "story": [
+    "Yambaru is the forested north of Okinawa Island, in the villages of Kunigami, Ōgimi and Higashi. Its backbone is a range of low, rounded mountains of non-limestone rock, among them Yonahadake and Nishimedake, cut by clear streams and waterfalls. In the far north the rock changes to limestone, weathered into the karst pinnacles of Hedo and Mount Nekumachiji, and at Cape Hedo, Okinawa's northern tip, the land ends in sea cliffs.",
+    "The forest is one of the largest remaining tracts of subtropical evergreen broadleaf forest in Japan, dominated by Itajii chinquapin and Okinawa oaks, and in its clouds and streams live animals found only here: the flightless Okinawa rail, the critically endangered Okinawa woodpecker, the Yambaru long-armed scarab beetle, the Okinawa spiny rat and Okinawa Ishikawa's frog. On the east coast, the mangroves of Gesashi Bay are the largest on Okinawa Island.",
+    "Much of this has been under pressure. Clear-cutting removed large areas of forest, and invasive mongooses reached Yambaru and preyed on the rail and other animals. Roads bring another danger, as cars kill rails and other animals crossing them. Today a team of trappers, the Yambaru Mongoose Busters, works daily to remove them, local people patrol against poaching, and road signs warn drivers of the animals crossing.",
+    "Part of the coast had been protected in the Okinawa Kaigan Quasi-National Park. On 15 September 2016 Yambaru National Park was designated, taking in the forested mountains as well. That December the United States returned about four thousand hectares of its Northern Training Area, and in 2018 most of the returned land was added to the park; the rest of the training area still lies next to it. In July 2021 Yambaru was inscribed as part of the World Heritage Site 'Amami-Ōshima Island, Tokunoshima Island, Northern Part of Okinawa Island, and Iriomote Island'."
+  ],
+  "howItWorks": [
+    "Yambaru is a regional park in which most land is public: about 45 per cent belongs to local government and more than a third is state land. The villages' hamlets, farms and fishing harbours sit along the coast, and local people patrol against poaching and work with the authorities on wildlife protection.",
+    "Most of the park is special zone. About 17 per cent of the land is special protection zone and nearly 30 per cent Class 1 special zone, the strictest categories; only about 6 per cent is ordinary zone.",
+    "Rules here are mostly about the wildlife. The Okinawa rail and many other species are protected by law and may not be caught or disturbed. Drive slowly on the forest roads and watch for the warning signs where animals cross. Collecting protected frogs, beetles or other wildlife is forbidden, and local patrols watch for poachers."
+  ],
+  "sights": [
+    {
+      "name": "Cape Hedo (辺戸岬)",
+      "note": "The northern tip of Okinawa Island: limestone sea cliffs, views over the open sea and a monument to the end of the US occupation.",
+      "location": [
+        26.872,
+        128.2656
+      ]
+    },
+    {
+      "name": "Daisekirinzan (大石林山)",
+      "note": "Limestone karst near Cape Hedo, weathered into pinnacles and stone forest.",
+      "location": [
+        26.8614,
+        128.2512
+      ]
+    },
+    {
+      "name": "Hiji Falls (比地大滝)",
+      "note": "At 25.7 metres the tallest waterfall on Okinawa Island, at the end of a 1.5-kilometre forest trail beside the Hiji River.",
+      "location": [
+        26.711,
+        128.1855
+      ]
+    },
+    {
+      "name": "Yonahadake (与那覇岳)",
+      "note": "A forested summit at the heart of Yambaru's mountains.",
+      "location": [
+        26.7171,
+        128.2187
+      ]
+    },
+    {
+      "name": "Gesashi Bay Mangroves (慶佐次湾のヒルギ林)",
+      "note": "The largest mangrove forest on Okinawa Island, with a boardwalk and canoe tours up the river.",
+      "location": [
+        26.6025,
+        128.1446
+      ]
+    },
+    {
+      "name": "Okinawa Rail Ecology Center (ヤンバルクイナ生態展示学習施設)",
+      "note": "Kunigami village's centre for the Okinawa rail and its protection.",
+      "location": [
+        26.7413,
+        128.2959
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Yambaru Wildlife Conservation Center Ufugi Nature Museum (やんばる野生生物保護センター ウフギー自然館)",
+      "note": "The Ministry of the Environment's centre in Kunigami: Yambaru's wildlife, conservation and current rules.",
+      "location": [
+        26.7282,
+        128.1793
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Route 58 up the west coast, past Hentona and Hiji, to Cape Hedo",
+      "The east coast road through Higashi village, for Gesashi Bay",
+      "Hentona Bus Terminal, served by bus from Nago"
+    ],
+    "reservations": "No park permit is needed. Canoe tours at Gesashi are best booked ahead. Check before you go.",
+    "permits": [],
+    "camping": [
+      "Hiji Ōtaki campground, by the trail to Hiji Falls",
+      "Kunigami Village Forest Park, with campsites and bungalows"
+    ],
+    "lodging": [
+      "Small hotels and guesthouses in Kunigami, Ōgimi and Higashi villages",
+      "Larger hotels in Nago and along the west coast to the south"
+    ],
+    "seasonalClosures": [
+      "Forest trails such as the one to Hiji Falls may close after heavy rain and in typhoons — check before you go"
+    ]
+  },
+  "weather": "Yambaru is subtropical and humid all year. Winters are mild but often cloudy and breezy. The rainy season runs from about May into June, and summer is hot, with frequent thunderstorms. Typhoons can strike from July to October, closing trails and roads and bringing down trees. The forest is wet at any time; the cooler, drier months from October to April are the most comfortable for walking.",
+  "directions": "From Tokyo, fly to Naha Airport (about three hours). The park is about two and a half hours' drive north by the Okinawa Expressway and Route 58, and a hire car from Naha is by far the most practical way to explore it. By bus, take route 111 or 120 from the airport to Nago Bus Terminal (about one hour 45 minutes) and route 67 to Hentona Bus Terminal (about 55 minutes); from Hentona a Kunigami village bus runs infrequently up the west coast to Cape Hedo. Hiji Falls trailhead is about 25 minutes' walk from the Okuma Beach Iriguchi bus stop.",
+  "chronology": [
+    {
+      "year": "1999",
+      "text": "The Ministry of the Environment opens the Yambaru Wildlife Conservation Center."
+    },
+    {
+      "year": "2016",
+      "text": "Yambaru National Park is designated on 15 September."
+    },
+    {
+      "year": "2016",
+      "text": "In December the United States returns about four thousand hectares of the Northern Training Area."
+    },
+    {
+      "year": "2018",
+      "text": "On 29 June most of the returned training area is added to the park."
+    },
+    {
+      "year": "2020",
+      "text": "The park's boundaries and plan are revised again."
+    },
+    {
+      "year": "2021",
+      "text": "Yambaru is inscribed as part of a natural World Heritage Site with Amami Ōshima, Tokunoshima and Iriomote."
+    }
+  ],
+  "safety": [
+    "Habu, a venomous snake, live in the forest and the villages and are most active at night and in warm months. Keep to trails, carry a torch after dark and do not reach into undergrowth or stone walls. If bitten, keep still and get to hospital at once.",
+    "Streams rise fast after heavy rain; do not cross a swollen stream or walk forest trails in a storm.",
+    "Typhoons can close roads and cut power; follow local warnings between July and October.",
+    "Hornets and wasps nest in the forest in summer and autumn; move away calmly if you disturb one."
+  ],
+  "regulations": [
+    "Drive slowly on forest roads; Okinawa rails and other animals are killed by cars.",
+    "Do not catch, collect or disturb wildlife; the Okinawa rail, Okinawa woodpecker and Yambaru long-armed scarab are among the species protected by law.",
+    "Do not feed or release animals, and keep pets under control; cats and dogs prey on native species.",
+    "Do not enter the US Northern Training Area next to the park."
+  ],
+  "themes": [
+    "theme-temperate-rainforest",
+    "theme-mountains",
+    "theme-wetland",
+    "theme-coastal"
+  ],
+  "photos": [
+    {
+      "file": "File:Subtropical Forest of Yanbaru National Park Okinawa 2018.jpg",
+      "caption": "Subtropical evergreen forest in Yambaru",
+      "altText": "Rolling hills covered with dense green forest under a partly cloudy sky"
+    },
+    {
+      "file": "File:Cape Hedo 202011.jpg",
+      "caption": "Cape Hedo, the northern tip of Okinawa Island",
+      "altText": "A grassy headland with a monument at its end, above a deep blue sea"
+    },
+    {
+      "file": "File:Hiji Waterfall 202105.jpg",
+      "caption": "Hiji Falls in the Yambaru forest",
+      "altText": "A waterfall pouring down dark rock into a pool, framed by green leaves"
+    },
+    {
+      "file": "File:Mangrove of Gesashi Bay.jpg",
+      "caption": "Mangroves at Gesashi Bay",
+      "altText": "A dense, even canopy of mangrove trees with forested hills behind"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yambaru National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/yambaru/"
+    },
+    {
+      "title": "やんばる国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/yambaru/index.html"
+    },
+    {
+      "title": "やんばる国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/yambaru/intro/index.html"
+    },
+    {
+      "title": "国立公園の概要・地種区分別面積（令和8年4月10日現在）— 環境省",
+      "url": "https://www.env.go.jp/park/doc/data/national/np_1.pdf"
+    },
+    {
+      "title": "How to Get There — Yambaru National Park — National Parks of Japan",
+      "url": "https://www.japan.travel/national-parks/parks/yambaru/how-to-get-there/"
+    },
+    {
+      "title": "東村エコツーリズム推進全体構想の概要 — 環境省",
+      "url": "https://www.env.go.jp/content/000402428.pdf"
+    },
+    {
+      "title": "やんばる国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/やんばる国立公園"
+    },
+    {
+      "title": "Yambaru National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yambaru_National_Park"
+    },
+    {
+      "title": "Yanbaru — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yanbaru"
+    }
+  ]
+}

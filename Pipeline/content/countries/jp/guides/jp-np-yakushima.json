@@ -1,0 +1,282 @@
+{
+  "placeID": "jp-np-yakushima",
+  "contentVersion": 1,
+  "summary": "A round granite island in the ocean south of Kyushu, rising to the highest peaks in Kyushu and soaked by some of the heaviest rain in Japan. Its mossy forests of ancient cedar, the yakusugi, are a World Heritage Site; turtles nest on its beaches. The park also covers the whole of Kuchinoerabujima, an active volcanic island to the west.",
+  "facts": {
+    "establishedYear": 2012,
+    "areaHectares": 24566,
+    "bestSeasons": [
+      "spring",
+      "autumn"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "Yakushima is a block of granite pushed up out of the sea, about 25 kilometres across and crowded with mountains: at least 45 of its summits pass 1,000 metres, and Miyanouradake, at 1,936 metres, is the highest point in Kyushu. Warm, wet air off the Kuroshio current runs into those mountains and drops several metres of rain a year, more on the peaks than on the coast. Rivers pour off the island in waterfalls such as Ōko-no-taki, 88 metres high, near the shore.",
+    "Climbing from the sea to the summits, the forest changes from subtropical banyan and evergreen broadleaf trees to cedar, fir and hemlock, then to dwarf bamboo and rhododendron on the granite tops; a day's walk passes through several climate zones. The yakusugi, Yakushima's cedars, live for well over a thousand years; the oldest known, Jōmon Sugi, is thousands of years old, though estimates of its age vary widely. Yakushima's own subspecies of macaque and sika deer live in the forest, and loggerhead turtles come ashore to nest on the beaches of Nagata.",
+    "The cedars have been logged at least since the early Edo period, when the island belonged to the Satsuma domain. Logging went on into the twentieth century, with large-scale felling in the 1950s and 1960s; the logging settlement of Kosugidani closed in 1970, and protection of what remained followed. About twelve thousand people now live on the island, almost all of them around the coast. Yakushima became part of Kirishima-Yaku National Park in 1964, and its Hanayama district was made a wilderness area in 1975.",
+    "In 1993 a fifth of the island became, with Shirakami-Sanchi, one of Japan's first two natural World Heritage Sites. Kuchinoerabujima joined the park in 2007, and on 16 March 2012 Yakushima and Kuchinoerabujima became a national park of their own. Three years later, on 29 May 2015, Shindake on Kuchinoerabujima erupted explosively; it was the first time Japan's top volcanic alert level was ever issued, and all the island's residents were evacuated to Yakushima."
+  ],
+  "howItWorks": [
+    "Yakushima is unusual among Japan's national parks in that most of it is state land: about 86 per cent of the park is national forest, managed by the Forestry Agency alongside the Ministry of the Environment. On Yakushima the park covers about two-fifths of the island — the mountainous interior and much of the west coast — while the villages, ports and farms around the rest of the coast lie outside it, and the whole of Kuchinoerabujima, with its small community, is inside.",
+    "About 31 per cent of the park is special protection zone and nearly all the rest special zone; there is almost no ordinary zone. Marine park zones protect the reefs and tide pools at Kurio on Yakushima and around Megasaki on Kuchinoerabujima. Overlapping these are the World Heritage Site, a UNESCO biosphere reserve covering both islands, and the Ramsar site at Nagata-hama, where turtle-watching follows strict local rules; the Yakushima Wilderness Area at Hanayama, taken out of the park in 1975, adjoins the park.",
+    "Visiting the mountains comes with local arrangements. Since 2017 hikers have been asked to pay a mountain environment conservation contribution towards the upkeep of the mountains. From March to November private cars may not drive to the Arakawa trailhead, the usual start for Jōmon Sugi; a shuttle bus runs from the Yakusugi Museum instead."
+  ],
+  "sights": [
+    {
+      "name": "Jōmon Sugi (縄文杉)",
+      "note": "The best known of the ancient cedars, reached by a long day's hike from the Arakawa trailhead.",
+      "location": [
+        30.3608,
+        130.5319
+      ]
+    },
+    {
+      "name": "Shiratani Unsuikyō (白谷雲水峡)",
+      "note": "A ravine of moss-covered rocks, streams and old cedars, with trails of several lengths; the longest climbs to the viewpoint of Taikoiwa rock.",
+      "location": [
+        30.3806,
+        130.575
+      ]
+    },
+    {
+      "name": "Miyanouradake (宮之浦岳)",
+      "note": "Kyushu's highest summit, 1,936 metres, above dwarf bamboo and weathered granite outcrops; a long day's climb.",
+      "location": [
+        30.3361,
+        130.5042
+      ]
+    },
+    {
+      "name": "Yakusugi Land (ヤクスギランド)",
+      "note": "Forest trails of different lengths among yakusugi cedars and moss, in the mountains above Anbō.",
+      "location": [
+        30.3048,
+        130.5754
+      ]
+    },
+    {
+      "name": "Ōko-no-taki (大川の滝)",
+      "note": "An 88-metre waterfall near the south-west coast, one of Japan's Top 100 Waterfalls.",
+      "location": [
+        30.2996,
+        130.4135
+      ]
+    },
+    {
+      "name": "Nagata-hama (永田浜)",
+      "note": "Beaches on the north-west coast where loggerhead turtles nest from May to July; night viewing only on organised watches.",
+      "location": [
+        30.4087,
+        130.4346
+      ]
+    },
+    {
+      "name": "Kuchinoerabujima (口永良部島)",
+      "note": "An active volcanic island west of Yakushima, with simple hot springs, sea cliffs, tide pools and the rare Erabu flying fox.",
+      "location": [
+        30.4561,
+        130.2229
+      ]
+    },
+    {
+      "name": "Yakushima World Heritage Conservation Center (屋久島世界遺産センター)",
+      "note": "The Ministry of the Environment's centre at Anbō: trail conditions, the World Heritage forest and the mountain rules.",
+      "location": [
+        30.3088,
+        130.6316
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Yakusugi Museum (屋久杉自然館)",
+      "note": "The cedars, the logging era and the forest; the Arakawa shuttle bus leaves from here.",
+      "location": [
+        30.3091,
+        130.6329
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Miyanoura Port, on the north-east coast, with fast boats and car ferries from Kagoshima",
+      "Anbō Port, on the east coast, with fast boats from Kagoshima",
+      "Yakushima Airport, on the north-east coast, with flights from Kagoshima, Fukuoka and Osaka (Itami)",
+      "Arakawa trailhead, by shuttle bus from the Yakusugi Museum from March to November — Jōmon Sugi"
+    ],
+    "reservations": "Fast boats, ferries and flights to Yakushima fill at holidays and in spring; book ahead. Check the Arakawa shuttle bus timetable and how to buy tickets before the day, and pay the mountain conservation contribution before setting out. Turtle watching at Nagata-hama is by organised programme only. Check before you go.",
+    "permits": [
+      "Arakawa trailhead — reached only by the shuttle bus from March to November",
+      "Turtle watching at Nagata-hama — organised programme only",
+      "Kuchinoerabujima — entry restrictions near Shindake follow the volcanic alert level"
+    ],
+    "camping": [],
+    "lodging": [
+      "Hotels, inns and guesthouses around Miyanoura, Anbō and the coast road"
+    ],
+    "seasonalClosures": [
+      "Private cars may not use the road to the Arakawa trailhead from March to November; the shuttle bus runs instead",
+      "Snow and ice cover the high mountains in winter, and mountain roads can close"
+    ]
+  },
+  "weather": "It rains on Yakushima in every season, and the mountains are wetter still than the coast. Winters are mild at sea level but snowy on the peaks. Spring is the favourite season for hiking, with Yakushima rhododendrons flowering on the high ground. The rainy season from late May into July brings torrential downpours that flood rivers within hours. Summer is hot and humid on the coast, and typhoons often pass between August and October, cancelling boats and flights. Autumn is the most settled season.",
+  "directions": "From Tokyo, fly to Kagoshima and change to a flight to Yakushima Airport (about 40 minutes). From Kagoshima Port, fast boats reach Miyanoura or Anbō in two to three hours, and a car ferry sails to Miyanoura in about four. Two bus companies, Tanegashima-Yakushima Kōtsū and Matsubanda Kōtsū, run round the coast road and up to some trailheads, but services are infrequent; cars can be hired at the airport and the ports. From March to November the Arakawa trailhead is reached only by the shuttle bus from the Yakusugi Museum (about 35 minutes). Kuchinoerabujima is reached by the Yakushima town ferry.",
+  "fees": [
+    {
+      "title": "Mountain environment conservation contribution — day trip",
+      "cost": "¥1,000",
+      "amount": 1000,
+      "currencyCode": "JPY",
+      "detail": "Asked of everyone of junior-high-school age and over entering Yakushima's mountain area for the day; paid before setting out, or with the shuttle bus ticket for Arakawa. Visitors to Shiratani Unsuikyō alone pay that ravine's own forest contribution instead. Check before you go with Yakushima Town."
+    },
+    {
+      "title": "Mountain environment conservation contribution — overnight",
+      "cost": "¥2,000",
+      "amount": 2000,
+      "currencyCode": "JPY",
+      "detail": "For hikers spending a night in the mountains, junior-high-school age and over."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Edo period",
+      "text": "Under the Satsuma domain, Yakushima's cedars are felled for shingles and timber."
+    },
+    {
+      "year": "1964",
+      "text": "Yakushima becomes part of Kirishima-Yaku National Park on 16 March."
+    },
+    {
+      "year": "1975",
+      "text": "The Hanayama district is taken out of the park and set aside as the Yakushima Wilderness Area."
+    },
+    {
+      "year": "1980",
+      "text": "Yakushima is designated a UNESCO biosphere reserve."
+    },
+    {
+      "year": "1993",
+      "text": "Yakushima becomes one of Japan's first two natural World Heritage Sites, with Shirakami-Sanchi."
+    },
+    {
+      "year": "2007",
+      "text": "Kuchinoerabujima is added to the park."
+    },
+    {
+      "year": "2012",
+      "text": "Yakushima National Park is designated on 16 March, separated from Kirishima-Yaku."
+    },
+    {
+      "year": "2015",
+      "text": "Shindake on Kuchinoerabujima erupts on 29 May; the first-ever alert level 5 is issued and the island is evacuated."
+    },
+    {
+      "year": "2017",
+      "text": "The mountain environment conservation contribution is introduced."
+    }
+  ],
+  "safety": [
+    "Rain on Yakushima is heavy and sudden. Streams on the trails rise within an hour and can become impassable; never cross a swollen stream, and wait or turn back.",
+    "The Jōmon Sugi and Miyanouradake routes are long. Start at first light, carry a headtorch, rain gear and warm layers, and file a climbing plan.",
+    "Snow and ice make the high mountains dangerous from December to March; only experienced, equipped parties should go up then.",
+    "Kuchinoerabujima's Shindake is an active volcano. Check the Japan Meteorological Agency's Volcanic Alert Level before visiting, and respect the restricted area around the crater."
+  ],
+  "regulations": [
+    "Do not touch, climb on or take bark or cuttings from the yakusugi; keep to the boardwalks around Jōmon Sugi and other named trees.",
+    "Use the designated toilets in the mountains or carry your waste out.",
+    "During the nesting season, follow the local rules at Nagata's beaches: no torches or flash at night, and watch turtles only on an organised programme.",
+    "Plants, animals and rocks may not be taken in the special protection zone."
+  ],
+  "themes": [
+    "theme-temperate-rainforest",
+    "theme-mountains",
+    "theme-islands",
+    "theme-volcanoes",
+    "theme-coastal"
+  ],
+  "photos": [
+    {
+      "file": "File:Yakushima Miyanouradake.JPG",
+      "caption": "Granite boulders on the trail near Miyanouradake",
+      "altText": "Rounded granite boulders on a scrub-covered ridge below a rocky summit"
+    },
+    {
+      "file": "File:Jomon Sugi 01.jpg",
+      "caption": "Jōmon Sugi, the best known of Yakushima's ancient cedars",
+      "altText": "An enormous gnarled cedar trunk with spreading branches in misty forest"
+    },
+    {
+      "file": "File:Shiratani Unsuikyo (4196797010).jpg",
+      "caption": "An old cedar in Shiratani Unsuikyō",
+      "altText": "A massive, moss-covered tree trunk among dense green forest"
+    },
+    {
+      "file": "File:Kuchinoerabu Island aerial photo 2018.jpg",
+      "caption": "Kuchinoerabujima from the air",
+      "altText": "A green volcanic island with a bare, steaming summit in a deep blue sea"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yakushima (Island) National Park — National Parks of Japan (Ministry of the Environment)",
+      "url": "https://www.japan.travel/national-parks/parks/yakushima/"
+    },
+    {
+      "title": "屋久島国立公園 — 環境省",
+      "url": "https://www.env.go.jp/park/yakushima/index.html"
+    },
+    {
+      "title": "World Natural Heritage Yakushima Mountain Environment Conservation Donation — Ministry of the Environment",
+      "url": "https://www.env.go.jp/en/park/yakushima/ywhcc/tozan/donation.html"
+    },
+    {
+      "title": "国立公園の概要・地種区分別面積（令和8年4月10日現在）— 環境省",
+      "url": "https://www.env.go.jp/park/doc/data/national/np_1.pdf"
+    },
+    {
+      "title": "屋久島国立公園 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/屋久島国立公園"
+    },
+    {
+      "title": "Yakushima National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yakushima_National_Park"
+    },
+    {
+      "title": "Yakushima — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yakushima"
+    },
+    {
+      "title": "口永良部島の噴火警戒レベルの引上げ（2015年5月29日）— 気象庁",
+      "url": "https://www.jma.go.jp/jma/press/1505/29a/kuchinoerabu150529.html"
+    },
+    {
+      "title": "Volcanic Warnings and Volcanic Alert Levels — Japan Meteorological Agency",
+      "url": "https://www.data.jma.go.jp/svd/vois/data/tokyo/STOCK/kaisetsu/English/level.html"
+    },
+    {
+      "title": "屋久島国立公園 概要・計画書 — 環境省",
+      "url": "https://www.env.go.jp/park/yakushima/intro/index.html"
+    },
+    {
+      "title": "屋久島国立公園指定書・公園計画書（平成24年3月）— 環境省",
+      "url": "http://www.env.go.jp/park/yakushima/intro/files/plan_2.pdf"
+    },
+    {
+      "title": "協力金について — 世界自然遺産屋久島山岳部環境保全協力金（屋久島町）",
+      "url": "http://yakushima-tozan.com/kyouryokukin/"
+    },
+    {
+      "title": "車両乗入れ規制と登山バスについて — 世界自然遺産屋久島山岳部環境保全協力金（屋久島町）",
+      "url": "http://yakushima-tozan.com/bus/"
+    },
+    {
+      "title": "屋久島空港 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/屋久島空港"
+    },
+    {
+      "title": "大川の滝 — Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/大川の滝"
+    }
+  ]
+}

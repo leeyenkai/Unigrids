@@ -1,0 +1,274 @@
+{
+  "placeID": "no-np-nordre-isfjorden",
+  "contentVersion": 1,
+  "summary": "The north shore of Isfjorden, across the water from Longyearbyen: broad green coastal plains, glaciers calving into quiet side fjords, the bird cliff of Alkhornet and the sheltered bay of Trygghamna, where whalers, Russian Pomor hunters and Norwegian trappers all left their mark. Lusher than most of Svalbard, and full of geese in summer.",
+  "facts": {
+    "establishedYear": 2003,
+    "areaHectares": 295400,
+    "bestSeasons": [
+      "summer"
+    ],
+    "suggestedTime": "A day trip by boat, or several days on a guided expedition"
+  },
+  "story": [
+    "The park runs along the north side of Isfjorden, from Skansbukta in Dickson Land in the east to Eidembukta in Oscar II Land in the west, and up Nordfjorden into its two arms, Ekmanfjorden and Dicksonfjorden. Glaciers flow south off the uplands and calve into the fjords; between them lie wide strandflats such as Bohemanflya, Erdmannflya and Daudmannsøyra, and above them stand landmark mountains, Skansen and Alkhornet among them. The rock spans a vast age: Alkhornet's carbonate is more than a billion years old, while the plain at Erdmannflya is made of sea-floor sediment laid down since the last ice age.",
+    "For Svalbard this is green country. The plains carry large areas of lush, species-rich vegetation and, unusually for the archipelago, thick deposits of peat. Wetlands and shallow water draw geese, eiders and waders to breed, moult and feed; Alkhornet's cliff holds Brünnich's guillemots in their hundreds of thousands and a large colony of kittiwakes. Ringed seals give birth on the fjord ice in spring, and polar bears come to hunt them.",
+    "People have used this shore for four centuries. Whalers rendered blubber on the beach at Trygghamna, the 'safe harbour', in the 1600s; after them came Pomor hunters from the White Sea, who left the ruins of one of the largest Russian trapping stations in Svalbard. Norwegian trappers followed, and the station at Kapp Wijk is still in use. In 1899 a coal claim was staked on Bohemanflya, and in the twentieth century miners dug gypsum at Skansbukta.",
+    "Nordre Isfjorden National Park was created on 26 September 2003 to keep a large, largely untouched Arctic coast and fjord landscape as a reference area for research and for experiencing Svalbard's natural and cultural heritage. It covers about 2,050 square kilometres of land and 904 of sea. Its fjords, a strip of shore and its land in Dickson Land lie inside the travel area around Isfjorden; elsewhere in the park, anyone travelling on their own must first notify the Governor."
+  ],
+  "howItWorks": [
+    "Svalbard has its own law, the Svalbard Environmental Protection Act. The public right of access applies here too, but no travel may damage, litter or needlessly disturb people or wildlife. Polar bears may not be disturbed, attracted or pursued, and no one may come closer to a bear than 300 metres, or 500 metres from 1 March to 30 June; anyone who finds a bear inside that distance must withdraw. Everyone outside the settlements, except people on an organised tour, must know how to guard against a polar bear attack and carry the means to scare one off. Every trace of people from before 1946 is a protected monument with a 100-metre zone around it, where you may not pitch a tent or light a fire without permission (a tent on frozen, snow-covered ground is the exception). From 1 April to 31 August no ship's horn, shot or other loud noise is allowed within a nautical mile of a bird cliff, and no drone within 500 metres of one.",
+    "The field-safety regulation (feltsikkerhetsforskriften, FOR-2025-06-06-940), in force since 1 January 2026, decides who must tell the Governor of Svalbard (Sysselmesteren) before setting out. Part of Nordre Isfjorden lies inside the 'travel area' (ferdselsområde, the former management area 10): the fjords, a strip 500 metres inland along the north shore of Isfjorden and its side fjords, and most of the park's land in Dickson Land, east of Dicksonfjorden. Elsewhere in the park an independent visitor must notify the Governor at least four weeks ahead and wait for the reply, carry equipment to raise the alarm and talk both ways, and hold insurance or a guarantee for search and rescue, with a ceiling of NOK 120,000 to 650,000 per operation depending on the zone. Tour operators need the Governor's permission; a requirement for them to use approved Svalbard guides has been adopted, but its start date has yet to be set.",
+    "The park's own regulation bans driving on thawed, bare ground; travel over frozen, snow-covered ground and on the water follows Svalbard's general motor-traffic rules. Bicycles are allowed only on frozen, snow-covered ground. Aircraft may not land, may not fly lower than 300 metres within a nautical mile of the coast, and must keep a nautical mile from large concentrations of birds and mammals. Drones are banned, and ships with more than 200 passengers may not enter the park's waters. The islets south of Bohemanflya form the Boheman bird reserve, closed to all traffic from 15 May to 15 August, though kayaks and other unpowered boats may follow the coast through it."
+  ],
+  "sights": [
+    {
+      "name": "Alkhornet",
+      "note": "The cliff at the northern mouth of Isfjorden, a seabird colony above a green slope where Arctic foxes den. Keep well away from the dens.",
+      "location": [
+        78.214,
+        13.8049
+      ]
+    },
+    {
+      "name": "Trygghamna",
+      "note": "The 'safe harbour': a sheltered bay with whalers' tryworks, Russian Pomor ruins and graves, and two glaciers at its head. Do not walk on the ruins.",
+      "location": [
+        78.2435,
+        13.8245
+      ]
+    },
+    {
+      "name": "Daudmannsøyra",
+      "note": "A coastal plain some 23 kilometres long, wetland and tundra important for geese and waders.",
+      "location": [
+        78.263,
+        13.1082
+      ]
+    },
+    {
+      "name": "Bohemanneset",
+      "note": "The spit at the tip of Bohemanflya, a peninsula claimed for its coal in 1899. The islets to the south are a bird reserve, closed 15 May to 15 August.",
+      "location": [
+        78.385,
+        14.7522
+      ]
+    },
+    {
+      "name": "Ekmanfjorden",
+      "note": "An 18-kilometre arm of Nordfjorden where the glacier Sefströmbreen reaches the sea beside the island of Coraholmen.",
+      "location": [
+        78.6623,
+        14.6167
+      ]
+    },
+    {
+      "name": "Kapp Wijk",
+      "note": "A broad point in Dickson Land with a trappers' station, three generations of huts and still in use.",
+      "location": [
+        78.597,
+        15.1585
+      ]
+    },
+    {
+      "name": "Skansbukta",
+      "note": "A sheltered bay under the cliffs of Skansen, with the remains of a gypsum mine and warmth-loving plants on the slope. Keep off the scree.",
+      "location": [
+        78.5234,
+        16.0301
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "By boat across Isfjorden from Longyearbyen, to landings such as Alkhornet, Trygghamna and Skansbukta",
+      "In winter over frozen, snow-covered ground; motorised travel follows Svalbard's general motor-traffic rules, so ask the Governor first"
+    ],
+    "reservations": "There is no entry permit. The fjords, the shore strip and the Dickson Land side lie inside the travel area; for a trip elsewhere in the park an independent visitor must notify the Governor of Svalbard at least four weeks ahead and wait for the reply. Most visitors come with a tour operator, as the national park service recommends; the operator holds the Governor's permission and takes care of the formalities.",
+    "permits": [
+      "Notification to the Governor four weeks ahead for travel outside the travel area, with insurance or a guarantee for search and rescue",
+      "Camping in the same place for a week or more needs the Governor's permission",
+      "A rifle for polar bear protection can be hired only with a firearms licence, a European Firearms Pass or the Governor's permission — check the current rules"
+    ],
+    "camping": [
+      "Wild camping is allowed under the right of access, outside the 100-metre zone around protected monuments (a tent on frozen, snow-covered ground excepted)",
+      "Keep the means to scare off a polar bear at hand in every camp"
+    ],
+    "lodging": [
+      "None open to the public in the park; Longyearbyen is the base"
+    ],
+    "seasonalClosures": [
+      "The Boheman bird reserve, the islets south of Bohemanflya, is closed to all traffic from 15 May to 15 August",
+      "Rules change: check the Governor of Svalbard's current regulations before you go"
+    ]
+  },
+  "weather": "The climate is Arctic, softened on the west coast of Spitsbergen by the last of the warm Atlantic current. Summer is cool, often grey, and snow can fall in any month; wind funnels down Isfjorden and can make the crossing rough. At Longyearbyen, across the fjord, the midnight sun lasts from about 20 April to late August and the polar night from late October to mid-February. Most visitors come by boat in summer, when the fjord is open and the plains are green.",
+  "directions": "Fly to Svalbard Airport, Longyear, which has scheduled flights from Oslo and Tromsø. No roads link the settlements; the park lies across Isfjorden from Longyearbyen and is reached by boat in summer, with landings at places such as Alkhornet, Trygghamna and Skansbukta. Ships with more than 200 passengers may not enter the park's waters.",
+  "chronology": [
+    {
+      "year": "1600s",
+      "text": "Whalers render blubber on the beach at Trygghamna, at the mouth of Isfjorden."
+    },
+    {
+      "year": "18th–19th centuries",
+      "text": "Pomor hunters from the White Sea overwinter around Isfjorden; one of their largest stations stands in Trygghamna."
+    },
+    {
+      "year": "1800s–1900s",
+      "text": "Norwegian trappers overwinter on the north shore; their station at Kapp Wijk is still in use."
+    },
+    {
+      "year": "1899",
+      "text": "A coal claim is staked on Bohemanflya."
+    },
+    {
+      "year": "2003",
+      "text": "Nordre Isfjorden National Park is established on 26 September."
+    },
+    {
+      "year": "2025",
+      "text": "Drones are banned in the park and ships with more than 200 passengers barred from its waters."
+    },
+    {
+      "year": "2026",
+      "text": "The field-safety regulation takes effect: independent visitors must notify the Governor four weeks ahead to travel beyond its travel area."
+    }
+  ],
+  "safety": [
+    "Polar bears can appear anywhere, at any time of year. Keep a constant lookout, carry the means to scare a bear off, and know how to use them; the Governor recommends a rifle as the primary protection.",
+    "The crossing of Isfjorden can turn rough fast. Go with a boat and skipper equipped for Arctic water, and carry warm, windproof clothing and food for longer than you plan to stay.",
+    "Glacier fronts calve without warning. Keep well back from ice cliffs, on land and in a boat.",
+    "Carry equipment to raise the alarm and talk both ways — outside the travel area the law requires it — and leave your plan with someone who will act on it."
+  ],
+  "regulations": [
+    "Keep at least 300 metres from polar bears, and 500 metres from 1 March to 30 June.",
+    "No driving on bare ground, no bicycles except on frozen, snow-covered ground, no aircraft landings and no drones.",
+    "Ships with more than 200 passengers may not enter the park's waters.",
+    "Everything left by people before 1946 is a protected monument: do not touch, move or take it.",
+    "The Boheman bird reserve is closed to all traffic from 15 May to 15 August."
+  ],
+  "themes": [
+    "theme-arctic",
+    "theme-fjords",
+    "theme-glaciers",
+    "theme-tundra",
+    "theme-wetland"
+  ],
+  "photos": [
+    {
+      "file": "File:Trygghamna Bay with Glaciers, Svalbard.jpg",
+      "caption": "Trygghamna, with the glaciers Kjerulfbreen and Harrietbreen at its head",
+      "altText": "A calm bay ringed by dark mountains, with two glaciers reaching down towards the water"
+    },
+    {
+      "file": "File:Alkhornet, Svalbard, Arctic (20283881015).jpg",
+      "caption": "Alkhornet at the mouth of Isfjorden",
+      "altText": "A steep rocky peak rising above a green coastal slope"
+    },
+    {
+      "file": "File:Ekmanfjorden seen from Bertilryggen, Svalbard 2023-08-18.jpg",
+      "caption": "Ekmanfjorden from Bertilryggen",
+      "altText": "A wide fjord seen from a ridge, with flat-topped mountains and a glacier beyond"
+    },
+    {
+      "file": "File:Skansbukta.Billefjorden.jpg",
+      "caption": "Skansbukta, below the cliffs of Skansen",
+      "altText": "A small bay with a shoreline and buildings beneath layered cliffs"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nasjonalparkene på Svalbard — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/svalbard/"
+    },
+    {
+      "title": "Nordre Isfjorden nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00002584"
+    },
+    {
+      "title": "Forskrift om fredning av Nordre Isfjorden nasjonalpark på Svalbard (FOR-2003-09-26-1187) — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2003-09-26-1187"
+    },
+    {
+      "title": "Forskrift om nasjonalparkene og naturreservatene på Svalbard (FOR-2014-04-04-377), Boheman bird reserve — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2014-04-04-377"
+    },
+    {
+      "title": "Lov om miljøvern på Svalbard (svalbardmiljøloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/2001-06-15-79"
+    },
+    {
+      "title": "Forskrift om sikkerhet i felt mv. på Svalbard (feltsikkerhetsforskriften, FOR-2025-06-06-940) — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2025-06-06-940"
+    },
+    {
+      "title": "Forskrift om leiropphold på Svalbard (FOR-2002-06-27-731) — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2002-06-27-731"
+    },
+    {
+      "title": "New regulations on field safety in Svalbard from 1 January — Sysselmesteren på Svalbard",
+      "url": "https://www.sysselmesteren.no/en/news/2025/11/new-regulations-on-field-safety-in-svalbard-from-1-january/"
+    },
+    {
+      "title": "Borrowing firearms for polar bear protection — Sysselmesteren på Svalbard",
+      "url": "https://www.sysselmesteren.no/en/weapon/renting-firearms/"
+    },
+    {
+      "title": "Isfjorden: Alkhornet and Trygghamna; Skansbukta; History — Cruise Handbook for Svalbard, Norwegian Polar Institute",
+      "url": "https://cruise-handbook.npolar.no/en/isfjorden/index.html"
+    },
+    {
+      "title": "Place names of Svalbard — Norwegian Polar Institute (coordinates)",
+      "url": "https://placenames.npolar.no/"
+    },
+    {
+      "title": "Nordre Isfjorden National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nordre_Isfjorden_National_Park"
+    },
+    {
+      "title": "Nordre Isfjorden nasjonalpark — Wikipedia (bokmål)",
+      "url": "https://no.wikipedia.org/wiki/Nordre_Isfjorden_nasjonalpark"
+    },
+    {
+      "title": "Bohemanflya — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bohemanflya"
+    },
+    {
+      "title": "Forskrift om miljøavgift for tilreisende til Svalbard — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532"
+    },
+    {
+      "title": "Forskrift om endringer i forskriftene for Indre Wijdefjorden, Sassen-Bünsow Land, Nordre Isfjorden og Van Mijenfjorden nasjonalparker mv. (FOR-2024-02-09-230) — Lovdata",
+      "url": "https://lovdata.no/dokument/LTI/forskrift/2024-02-09-230"
+    },
+    {
+      "title": "Forskrift om endring i feltsikkerhetsforskriften (FOR-2026-11-13-2343) — Lovdata",
+      "url": "https://lovdata.no/dokument/LTI/forskrift/2026-11-13-2343"
+    },
+    {
+      "title": "Sysselmesterens retningslinjer for skytevåpen og beskyttelses- og skremmemidler mot isbjørn (FOR-2024-05-13-850) — Lovdata",
+      "url": "https://lovdata.no/dokument/INS/forskrift/2024-05-13-850"
+    },
+    {
+      "title": "Alkhornet and Trygghamna — Cruise Handbook for Svalbard, Norwegian Polar Institute",
+      "url": "https://cruise-handbook.npolar.no/en/isfjorden/alkhornet-and-trygghamna.html"
+    },
+    {
+      "title": "Skansbukta — Cruise Handbook for Svalbard, Norwegian Polar Institute",
+      "url": "https://cruise-handbook.npolar.no/en/isfjorden/skansbukta.html"
+    },
+    {
+      "title": "Isfjorden's history and cultural remains; wildlife — Cruise Handbook for Svalbard, Norwegian Polar Institute",
+      "url": "https://cruise-handbook.npolar.no/en/isfjorden/history-and-cultural-remains.html"
+    }
+  ],
+  "fees": [
+    {
+      "title": "Svalbard environmental fee",
+      "cost": "NOK 150",
+      "amount": 150,
+      "currencyCode": "NOK",
+      "detail": "Paid by every visitor to Svalbard except residents: collected with the ticket for the flight out of Svalbard, or by the travel organiser. It goes to the Svalbard Environmental Protection Fund."
+    }
+  ]
+}

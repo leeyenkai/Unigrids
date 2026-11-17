@@ -1,0 +1,230 @@
+{
+  "placeID": "no-np-hardangervidda",
+  "contentVersion": 1,
+  "summary": "Mainland Norway's largest national park, on the largest mountain plateau in northern Europe: endless treeless moorland, lakes and rivers between the steep fjord mountains of Hardanger and the gentle eastern vidda. Home to Europe's largest wild reindeer herd, laced with ancient trails and a network of trekking cabins — walk it in summer, ski it in late winter.",
+  "facts": {
+    "establishedYear": 1981,
+    "areaHectares": 342200,
+    "bestSeasons": [
+      "summer",
+      "spring"
+    ],
+    "suggestedTime": "Three to seven days"
+  },
+  "story": [
+    "Hardangervidda is the largest high mountain plateau in northern Europe, a peneplain worn down from ancient mountains by the ice. It changes from steep western mountains above the Hardanger fjords to the slack, rolling vidda of the east, and the whole plateau lies above the tree line: barren moorland broken by countless pools, lakes, rivers and streams. The west is rockier, wetter and more dramatic, with high peaks, deep valleys and waterfalls; the east is flatter, greener and drier. The prominent summit of Hårteigen, 1,690 metres, can be seen from much of the plateau. About half of it is protected as the national park, the largest on the Norwegian mainland.",
+    "The vidda's alpine climate lets many arctic plants and animals live further south here than anywhere else in Europe; it is the southern outpost of the arctic fox and the snowy owl. Europe's largest herd of wild reindeer roams freely across it, wintering on the lichen of the dry east and moving to the richer west to calve. The reindeer shun people, so keep your distance. Arctic foxes have been released here again in recent years and seem to be doing well. Shallow lakes and mires are full of wetland birds, and gyrfalcons, merlins and rough-legged buzzards rise and fall with the numbers of their prey. The lakes and rivers are known for their mountain trout.",
+    "People have used the vidda for thousands of years. Between 9,000 and 5,000 years ago the climate was warmer and much of the plateau was wooded — pine logs are still preserved in bogs far above today's tree line — and several hundred Stone Age camps have been found, most of them linked to the reindeer migrations. Many trapping systems for reindeer and elk survive from earlier hunting. Ancient trails such as Nordmannsslepa, the oldest inland routes between eastern and western Norway, cross the plateau, and many farms in Hardanger had summer pastures several days' walk into the vidda; old dairy huts and stone shelters still dot the landscape.",
+    "More than half the park is private land, harvested by hunting, fishing, summer farming and grazing since time out of mind, and the landowners keep their rights. The national park was created by royal decree on 10 April 1981 and came into force on 1 June that year. Two further areas — 551 square kilometres around the Hardangerjøkulen glacier in the north and 299 square kilometres east of Møsvatn in the south — are protected as landscape protection areas."
+  ],
+  "howItWorks": [
+    "The right to roam, allemannsretten, applies: you may walk anywhere in the outfield, camp for two nights in one place without asking — longer high in the mountains — at least 150 metres from a house or cabin, and pick berries, mushrooms and plants, as long as you leave the roots. Stones, minerals and fossils may not be taken. From 15 April to 15 September it is forbidden across Norway to light a fire in or near forest and other open country unless the municipality has allowed it or a fire plainly cannot spread; check with the municipality before you go.",
+    "Hardangervidda is stricter than most parks about dogs: they may not be let loose anywhere in the park at any time of year, except hunting dogs in the legal season, herding dogs at work and police and mountain-rescue dogs. Cycling is forbidden except on approved tractor tracks and the Tinnhølvegen road. Motor traffic on land and water, landing with aircraft and flying below 300 metres are forbidden; under Miljødirektoratet's rule, drones may not take off in a national park or be flown into one without permission from the management authority. Organised activities that could harm the area may need permission.",
+    "Hunting follows the game law and fishing the freshwater fishing law, with the ordinary licences; stocking fish is forbidden without permission. Above all, give the reindeer room: they are shy, and a herd disturbed in winter or at calving time pays for it in lost condition."
+  ],
+  "sights": [
+    {
+      "name": "Hårteigen",
+      "note": "A 1,690-metre block of rock rising from the western vidda, visible from much of the plateau — Hardangervidda's landmark.",
+      "location": [
+        60.194,
+        7.069
+      ]
+    },
+    {
+      "name": "Litlosvatnet",
+      "note": "A lake on the western vidda by the Litlos lodge, in the dramatic country near Hårteigen.",
+      "location": [
+        60.084,
+        7.142
+      ]
+    },
+    {
+      "name": "Nordmannslågen",
+      "note": "A great lake in the heart of the plateau, on the Eidfjord side, in classic trout-fishing country.",
+      "location": [
+        60.197,
+        7.408
+      ]
+    },
+    {
+      "name": "Bjornesfjorden",
+      "note": "A long lake on the open, gentler eastern vidda in Nore og Uvdal.",
+      "location": [
+        60.171,
+        7.668
+      ]
+    },
+    {
+      "name": "Langesjøen",
+      "note": "A lake on the eastern vidda in Nore og Uvdal, among wide moorland and mires.",
+      "location": [
+        60.236,
+        7.702
+      ]
+    },
+    {
+      "name": "Norsk Natursenter",
+      "note": "The authorised visitor centre in Øvre Eidfjord, near Vøringsfossen, with a panoramic film and exhibitions on landscape, wildlife and climate. Open late March to October; check before you go.",
+      "location": [
+        60.423,
+        7.135
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Hardangervidda nasjonalparksenter",
+      "note": "The authorised visitor centre at Skinnarbu, south of the vidda by Møsvatn, with an award-winning interactive wild reindeer exhibition, a nature trail and a café with a wide view.",
+      "location": [
+        59.815,
+        8.309
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Finse, on the Bergen Line, in the north",
+      "Rv 7 across the plateau between Eidfjord and Geilo, with Haugastøl and Dyranut",
+      "Haukeliseter and Mogen, in the south",
+      "Rjukan and Skinnarbu, in the south-east",
+      "Eidfjord and Odda, in the west"
+    ],
+    "reservations": "No booking or fee for the park. A large network of paths and ski trails links staffed and self-service trekking cabins; check the cabins' opening periods with the Norwegian Trekking Association.",
+    "permits": [
+      "Organised activities that could harm the area may need permission",
+      "Drones and any motor use need a permit"
+    ],
+    "camping": [
+      "Wild camping under the right to roam",
+      "Staffed and self-service cabins of the Norwegian Trekking Association across the plateau"
+    ],
+    "lodging": [
+      "Finse, Geilo, Eidfjord, Odda, Rjukan and Rauland",
+      "Mountain lodges along Rv 7 and at Haukeliseter"
+    ],
+    "seasonalClosures": []
+  },
+  "weather": "Hardangervidda is open all year, but its moods differ by season. The park authority names July and August as the best time for walking; late winter is the finest season for long ski tours from cabin to cabin, and Easter is a popular time to go. The west is markedly wetter than the east, with over 1,000 millimetres of precipitation a year in places. On the open plateau wind, fog and snow can arrive in any month.",
+  "directions": "Finse station on the Bergen Line is four hours by train from Oslo and two hours twenty minutes from Bergen; by car or bus the plateau is about four hours from either city. The Bergen Line and Rv 7 both cross the vidda. The trekking network reaches it from Haukeliseter and Mogen in the south, Finse in the north, Rjukan and Geilo in the east, and Eidfjord and Odda in the west.",
+  "chronology": [
+    {
+      "year": "c. 7000–3000 BC",
+      "text": "A warmer climate lets pine forest spread across much of the plateau; logs from it survive in the bogs."
+    },
+    {
+      "year": "Stone Age",
+      "text": "Hunters following the reindeer leave several hundred camps across the vidda."
+    },
+    {
+      "year": "Ancient times",
+      "text": "Nordmannsslepa and other trails link eastern and western Norway across the plateau."
+    },
+    {
+      "year": "1909",
+      "text": "The Bergen Line opens across the northern edge of the vidda."
+    },
+    {
+      "year": "1981",
+      "text": "A royal decree of 10 April creates Hardangervidda National Park; it takes effect on 1 June."
+    },
+    {
+      "year": "2002",
+      "text": "The park's regulation is revised and republished in full."
+    },
+    {
+      "year": "2016",
+      "text": "On the night of 26 August, lightning kills 323 wild reindeer on the plateau."
+    }
+  ],
+  "safety": [
+    "The vidda is vast and featureless in fog and snow. Carry map and compass, follow the marked routes in poor weather, and check the forecast before long crossings.",
+    "Thunderstorms are dangerous on the open plateau; get off ridges and summits and away from water when one approaches.",
+    "Rivers and streams can be deep and fast with snowmelt; cross at bridges where the routes provide them.",
+    "Winter conditions on the plateau are severe, and avalanches can run on steep slopes in the western valleys."
+  ],
+  "regulations": [
+    "Dogs may never run loose in the park, at any time of year.",
+    "Cycling only on approved tractor tracks and the Tinnhølvegen road.",
+    "No motor traffic, aircraft landings or flying below 300 metres; drones need a permit.",
+    "Pick plants without their roots; do not take stones, minerals or fossils.",
+    "No open fires in or near forest from 15 April to 15 September unless the municipality allows it."
+  ],
+  "themes": [
+    "theme-tundra",
+    "theme-mountains",
+    "theme-wetland"
+  ],
+  "photos": [
+    {
+      "file": "File:Hårteigen 1.jpg",
+      "caption": "Hårteigen, the landmark of the western vidda",
+      "altText": "A flat-topped block of mountain rising alone above a rolling plateau"
+    },
+    {
+      "file": "File:Vidda.jpg",
+      "caption": "Litlosvatnet and Kvennsjøen from Velurenuten",
+      "altText": "Two lakes spread across a wide, treeless upland"
+    },
+    {
+      "file": "File:Vidda2.JPG",
+      "caption": "Sunset over the vidda towards Hårteigen, near Rauhelleren",
+      "altText": "An evening sky glowing over flat, dark moorland"
+    },
+    {
+      "file": "File:Langesjøen Nore og Uvdal.jpg",
+      "caption": "Langesjøen, on the eastern vidda",
+      "altText": "A long lake among low, open hills"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hardangervidda nasjonalpark — Norges nasjonalparker",
+      "url": "https://www.norgesnasjonalparker.no/nasjonalparker/hardangervidda/"
+    },
+    {
+      "title": "Hardangervidda nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+      "url": "https://faktaark.naturbase.no/?id=VV00001878"
+    },
+    {
+      "title": "Forskrift om Hardangervidda nasjonalpark — Lovdata",
+      "url": "https://lovdata.no/dokument/LF/forskrift/1981-04-10-4830"
+    },
+    {
+      "title": "Hardangervidda nasjonalpark — Statsforvalteren i Vestfold og Telemark",
+      "url": "https://www.statsforvalteren.no/vestfold-og-telemark/miljo-og-klima/verneomrader/hardangervidda-nasjonalpark/"
+    },
+    {
+      "title": "Norsk Natursenter",
+      "url": "https://norsknatursenter.no/"
+    },
+    {
+      "title": "Hardangervidda nasjonalparksenter",
+      "url": "http://hardangerviddanasjonalparksenter.no/"
+    },
+    {
+      "title": "Hardangervidda National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hardangervidda_National_Park"
+    },
+    {
+      "title": "Hardangervidda nasjonalpark — Wikipedia (Norwegian)",
+      "url": "https://no.wikipedia.org/wiki/Hardangervidda_nasjonalpark"
+    },
+    {
+      "title": "Regler for droner i naturen — Miljødirektoratet",
+      "url": "https://www.miljodirektoratet.no/ansvarsomrader/vernet-natur/regler-for-droner-i-naturen/"
+    },
+    {
+      "title": "Lov om friluftslivet (friluftsloven) — Lovdata",
+      "url": "https://lovdata.no/dokument/NL/lov/1957-06-28-16"
+    },
+    {
+      "title": "Forskrift om brannforebygging — Lovdata",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+    },
+    {
+      "title": "Sight locations — Kartverket place names (stedsnavn) and address register",
+      "url": "https://ws.geonorge.no/stedsnavn/v1/"
+    }
+  ]
+}
