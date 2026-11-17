@@ -30,6 +30,18 @@ extension Country {
             "Norway has no paper passport. Its six regions are Unigrids' own, after the "
                 + "landsdeler, with Svalbard a book of its own. Protected landscapes and "
                 + "nature reserves appear on a region's page once stamped."
+        case .newZealand:
+            "New Zealand has no paper passport. Its three regions are Unigrids' own: the "
+                + "North Island, the top of the South Island, and the south with Rakiura. "
+                + "Conservation and forest parks appear on a region's page once stamped."
+        case .australia:
+            "Australia has no paper passport. Its regions are its states and territories, "
+                + "the island territories together. State national parks without a full "
+                + "guide appear on a region's page once stamped."
+        case .canada:
+            "Canada has no paper passport here. Its six regions are Unigrids' own, after "
+                + "the country's own regions. Marine conservation areas and provincial "
+                + "parks appear on a region's page once stamped."
         }
     }
 }
@@ -50,6 +62,9 @@ extension Country {
         case .unitedStates: "the NPS"
         case .japan: "the Ministry of the Environment"
         case .norway: "Norway's national parks"
+        case .newZealand: "the Department of Conservation"
+        case .australia: "the park's own agency"
+        case .canada: "Parks Canada"
         }
     }
 
@@ -59,6 +74,9 @@ extension Country {
         case .unitedStates: "the National Park Service"
         case .japan: "Japan's Ministry of the Environment"
         case .norway: "Norges nasjonalparker"
+        case .newZealand: "New Zealand's Department of Conservation"
+        case .australia: "the park's state, territory or Commonwealth agency"
+        case .canada: "Parks Canada"
         }
     }
 
@@ -68,6 +86,9 @@ extension Country {
         case .unitedStates: "nps.gov"
         case .japan: "japan.travel"
         case .norway: "norgesnasjonalparker.no"
+        case .newZealand: "doc.govt.nz"
+        case .australia: "the park's own site"
+        case .canada: "parks.canada.ca"
         }
     }
 }

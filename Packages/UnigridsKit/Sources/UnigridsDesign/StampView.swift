@@ -46,6 +46,8 @@ public struct StampView: View {
         case .unitedStates: usCancellation
         case .japan: japaneseStamp
         case .norway: norwegianPostmark
+        // Until their own faces land (the stamp rework): a cancellation.
+        case .newZealand, .australia, .canada: usCancellation
         }
     }
 

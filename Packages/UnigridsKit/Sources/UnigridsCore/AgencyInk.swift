@@ -47,9 +47,11 @@ public enum AgencyInk: String, CaseIterable, Sendable {
         case .forestService: .forestService
         case .blm: .blm
         case .fishAndWildlife: .fishAndWildlife
-        case .stateAgency, .prefecture: .stateAgency
+        case .stateAgency, .prefecture, .provincialAgency:
+            tier == .nationalPark ? .nationalPark : .stateAgency
         case .other: .other
-        case .environmentMinistryJapan, .environmentAgencyNorway:
+        case .environmentMinistryJapan, .environmentAgencyNorway, .conservationDepartmentNZ,
+             .parksAustralia, .parksCanada:
             tier == .nationalPark ? .nationalPark : .other
         }
     }

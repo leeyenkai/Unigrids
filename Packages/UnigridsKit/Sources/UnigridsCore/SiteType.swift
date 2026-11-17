@@ -30,6 +30,10 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
     case quasiNationalPark
     case protectedLandscape
     case natureReserve
+    case conservationPark
+    case stateNationalPark
+    case marineConservationArea
+    case provincialPark
 
     public var id: String {
         rawValue
@@ -65,6 +69,10 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .quasiNationalPark: .quasiNationalPark
         case .protectedLandscape: .protectedLandscape
         case .natureReserve: .natureReserve
+        case .conservationPark: .conservationPark
+        case .stateNationalPark: .stateNationalPark
+        case .marineConservationArea: .marineConservationArea
+        case .provincialPark: .provincialPark
         case .blmMonument:
             designation.lowercased().contains("monument") ? .nationalMonument
                 : .conservationArea
@@ -115,6 +123,10 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .quasiNationalPark: "Quasi-national parks"
         case .protectedLandscape: "Protected landscapes"
         case .natureReserve: "Nature reserves"
+        case .conservationPark: "Conservation and forest parks"
+        case .stateNationalPark: "State national parks"
+        case .marineConservationArea: "Marine conservation areas"
+        case .provincialPark: "Provincial parks"
         }
     }
 
@@ -142,6 +154,10 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .quasiNationalPark: "Quasi-national park"
         case .protectedLandscape: "Protected landscape"
         case .natureReserve: "Nature reserve"
+        case .conservationPark: "Conservation park"
+        case .stateNationalPark: "National park"
+        case .marineConservationArea: "Marine conservation area"
+        case .provincialPark: "Provincial park"
         }
     }
 
@@ -169,6 +185,10 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .quasiNationalPark: "Japan's, designated by the ministry and run by the prefectures"
         case .protectedLandscape: "Norway's landscape protection areas"
         case .natureReserve: "Norway's nature reserves of 10 km² or more"
+        case .conservationPark: "New Zealand's, run by the Department of Conservation"
+        case .stateNationalPark: "Australia's, run by the states and territories"
+        case .marineConservationArea: "Canada's, run by Parks Canada"
+        case .provincialPark: "Canada's of 100 km² or more"
         }
     }
 
@@ -181,9 +201,10 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .nationalMonument, .nationalPreserve, .historicSite, .battlefield, .memorial,
              .seashore, .recreationArea, .river, .parkway, .otherNPSSite:
             .npsUnit
-        case .statePark, .quasiNationalPark: .statePark
+        case .statePark, .quasiNationalPark, .stateNationalPark, .provincialPark: .statePark
         case .nationalForest, .nationalGrassland, .wildlifeRefuge, .conservationArea,
-             .naturalLandmark, .scenicByway, .protectedLandscape, .natureReserve:
+             .naturalLandmark, .scenicByway, .protectedLandscape, .natureReserve,
+             .conservationPark, .marineConservationArea:
             .federalSite
         }
     }
@@ -202,6 +223,10 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .naturalLandmark, .scenicByway: .other
         case .quasiNationalPark: .prefecture
         case .protectedLandscape, .natureReserve: .environmentAgencyNorway
+        case .conservationPark: .conservationDepartmentNZ
+        case .stateNationalPark: .stateAgency
+        case .marineConservationArea: .parksCanada
+        case .provincialPark: .provincialAgency
         }
     }
 
@@ -212,6 +237,9 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .nationalPark: nil
         case .quasiNationalPark: .japan
         case .protectedLandscape, .natureReserve: .norway
+        case .conservationPark: .newZealand
+        case .stateNationalPark: .australia
+        case .marineConservationArea, .provincialPark: .canada
         default: .unitedStates
         }
     }
@@ -245,9 +273,10 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
              .memorial, .seashore, .recreationArea, .river, .parkway, .otherNPSSite:
             .nationalParkService
         case .nationalForest, .nationalGrassland, .wildlifeRefuge, .conservationArea,
-             .protectedLandscape, .natureReserve:
+             .protectedLandscape, .natureReserve, .conservationPark, .marineConservationArea:
             .otherPublicLands
-        case .statePark, .quasiNationalPark, .naturalLandmark, .scenicByway:
+        case .statePark, .quasiNationalPark, .naturalLandmark, .scenicByway,
+             .stateNationalPark, .provincialPark:
             .statesAndLandmarks
         }
     }
@@ -277,7 +306,15 @@ extension Place {
         case .nps, .forestService, .blm, .fishAndWildlife:
             sentence += ", managed by the \(agency.name)"
         case .stateAgency:
-            sentence += ", run by the state"
+            // A US state park's sentence stays as it was; abroad the record names the
+            // agency (NPWS, Parks Victoria).
+            sentence += country == .unitedStates ? ", run by the state"
+                : managedBy.map { ", run by \($0)" } ?? ", run by the state"
+        case .provincialAgency:
+            sentence += managedBy.map { ", run by \($0)" } ?? ", run by the province"
+        case .conservationDepartmentNZ, .parksAustralia, .parksCanada:
+            sentence += managedBy.map { ", managed by \($0)" }
+                ?? ", managed by \(agency.name)"
         case .environmentMinistryJapan:
             sentence += ", designated by Japan's Ministry of the Environment"
         case .prefecture:

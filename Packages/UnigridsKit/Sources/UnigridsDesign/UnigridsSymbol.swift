@@ -125,6 +125,10 @@ public enum UnigridsSymbol: String, CaseIterable, Sendable {
         case .quasiNationalPark: "leaf.fill"
         case .protectedLandscape: "mountain.2.fill"
         case .natureReserve: "pawprint.fill"
+        case .conservationPark: "tree.fill"
+        case .stateNationalPark: "leaf.fill"
+        case .marineConservationArea: "fish.fill"
+        case .provincialPark: "leaf.fill"
         }
     }
 }
@@ -160,6 +164,10 @@ extension UnigridsSymbol {
         case .quasiNationalPark: "mountain.2.fill"
         case .protectedLandscape: "sun.horizon.fill"
         case .natureReserve: "pawprint.fill"
+        case .conservationPark: "leaf.arrow.triangle.circlepath"
+        case .stateNationalPark: "sun.max.fill"
+        case .marineConservationArea: "fish.fill"
+        case .provincialPark: "tent.fill"
         }
     }
 

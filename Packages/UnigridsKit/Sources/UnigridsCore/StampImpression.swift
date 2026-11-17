@@ -81,8 +81,9 @@ public struct StampFace: Hashable, Sendable {
         self.localName = localName
     }
 
-    /// The date as the book's cancellations print it — `18 OCT 2026` in the US book,
-    /// `2026.10.18` in Japan's, `18.10.2026` in Norway's — in the calendar the seal was
+    /// The date as the book's cancellations print it — `18 OCT 2026` in the US and
+    /// Australian books, `2026.10.18` in Japan's, `18.10.2026` in Norway's and New
+    /// Zealand's, `2026-10-18` in Canada's — in the calendar the seal was
     /// decided in, so the face and the overprint can never disagree about the year.
     public func dateLine() -> String {
         let parts = calendar.dateComponents([.day, .month, .year], from: date)
@@ -91,8 +92,10 @@ public struct StampFace: Hashable, Sendable {
         }
         switch country {
         case .japan: return String(format: "%d.%02d.%02d", year, month, day)
-        case .norway: return String(format: "%02d.%02d.%d", day, month, year)
-        case .unitedStates: break
+        case .norway, .newZealand: return String(format: "%02d.%02d.%d", day, month, year)
+        // Canada's bilingual cancellations print the date as numbers, year first.
+        case .canada: return String(format: "%d-%02d-%02d", year, month, day)
+        case .unitedStates, .australia: break
         }
         let months = [
             "JAN", "FEB", "MAR", "APR", "MAY", "JUN",

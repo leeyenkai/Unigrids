@@ -15,6 +15,9 @@ extension Country {
         case .unitedStates: "States and territories"
         case .japan: "Prefectures"
         case .norway: "Counties and Svalbard"
+        case .newZealand: "Regions"
+        case .australia: "States and territories"
+        case .canada: "Provinces and territories"
         }
     }
 }

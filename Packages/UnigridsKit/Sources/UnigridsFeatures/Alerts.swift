@@ -266,6 +266,8 @@ public final class AlertsCenter {
         switch place.country {
         case .unitedStates: place.npsParkCode != nil && NPSAlerts.isConfigured
         case .japan, .norway: place.kind == .nationalPark
+        // Their providers join with the countries' data (0.11.0).
+        case .newZealand, .australia, .canada: false
         }
     }
 
@@ -275,6 +277,9 @@ public final class AlertsCenter {
         case .unitedStates: .nps
         case .japan: .jma
         case .norway: .varsom
+        case .newZealand: .geonet
+        case .australia: .australianFeeds
+        case .canada: .eccc
         }
     }
 
@@ -313,7 +318,7 @@ public final class AlertsCenter {
                 guard !isCancellation(error) else { return }
                 abroadFailed.insert(place.id)
             }
-        case .unitedStates:
+        case .unitedStates, .newZealand, .australia, .canada:
             break
         }
     }

@@ -9,6 +9,12 @@ enum AlertSource: String, Hashable, Sendable {
     case jma
     /// The Norwegian Avalanche Warning Service, Varsom, run by NVE.
     case varsom
+    /// GeoNet's volcanic alert levels, for New Zealand (`AlertsSouth.swift`).
+    case geonet
+    /// Fire and park closure feeds for Australia's parks (`AlertsSouth.swift`).
+    case australianFeeds
+    /// Environment and Climate Change Canada's weather alerts (`AlertsCanada.swift`).
+    case eccc
 
     /// "Live from the National Park Service".
     var name: String {
@@ -16,6 +22,9 @@ enum AlertSource: String, Hashable, Sendable {
         case .nps: "the National Park Service"
         case .jma: "the Japan Meteorological Agency"
         case .varsom: "Varsom, the Norwegian Avalanche Warning Service (NVE, NLOD)"
+        case .geonet: "GeoNet (Earth Sciences New Zealand, CC BY 3.0 NZ)"
+        case .australianFeeds: "the state fire and park services"
+        case .eccc: "Environment and Climate Change Canada"
         }
     }
 
@@ -24,6 +33,10 @@ enum AlertSource: String, Hashable, Sendable {
         case .nps: "The NPS could not be reached. Alerts need a connection."
         case .jma: "JMA could not be reached. Warnings need a connection."
         case .varsom: "Varsom could not be reached. Warnings need a connection."
+        case .geonet: "GeoNet could not be reached. Alert levels need a connection."
+        case .australianFeeds: "The warning services could not be reached. Warnings need "
+            + "a connection."
+        case .eccc: "Environment Canada could not be reached. Alerts need a connection."
         }
     }
 
@@ -32,6 +45,9 @@ enum AlertSource: String, Hashable, Sendable {
         case .nps: "More on nps.gov"
         case .jma: "More on jma.go.jp"
         case .varsom: "More on varsom.no"
+        case .geonet: "More on geonet.org.nz"
+        case .australianFeeds: "More from the park's agency"
+        case .eccc: "More on weather.gc.ca"
         }
     }
 
@@ -44,6 +60,11 @@ enum AlertSource: String, Hashable, Sendable {
             + "climb."
         case .varsom: "No avalanche warning is in force here today. Varsom forecasts the "
             + "mainland from December to May, and Svalbard's Nordenskiöld Land in winter."
+        case .geonet: "No volcano in this park is above alert level 0 or 1. Check GeoNet and "
+            + "the Department of Conservation before you go."
+        case .australianFeeds: "No fire incident or closure is posted for this park right "
+            + "now. Check the park's agency before you go."
+        case .eccc: "No weather alert is in force here right now."
         }
     }
 }

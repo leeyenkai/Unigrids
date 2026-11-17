@@ -1,7 +1,8 @@
 import Foundation
 
 /// A region of a passport book (SPECIFICATION.md §9): the nine the paper NPS passport
-/// organises its stamp pages by, then Japan's eight and Norway's six (ADR 0013).
+/// organises its stamp pages by, then Japan's eight, Norway's six, New Zealand's three,
+/// Australia's eight and Canada's six (ADR 0013, 0014).
 ///
 /// Each region cancels in its own ink colour, as the paper book does, and each opens with
 /// a title page carrying a small map and a stamped-so-far count. The regions abroad are
@@ -36,6 +37,26 @@ public enum PassportRegion: String, CaseIterable, Sendable, Codable, Identifiabl
     case southernNorway
     case svalbard
 
+    case northIsland
+    case upperSouthIsland
+    case lowerSouthIsland
+
+    case newSouthWales
+    case victoria
+    case queensland
+    case southAustralia
+    case westernAustralia
+    case tasmania
+    case northernTerritory
+    case externalTerritories
+
+    case atlantic
+    case quebec
+    case ontario
+    case prairies
+    case mountainsAndPacific
+    case north
+
     public var id: String {
         rawValue
     }
@@ -65,6 +86,23 @@ public enum PassportRegion: String, CaseIterable, Sendable, Codable, Identifiabl
         case .easternNorway: "Eastern Norway"
         case .southernNorway: "Southern Norway"
         case .svalbard: "Svalbard"
+        case .northIsland: "North Island"
+        case .upperSouthIsland: "Upper South Island"
+        case .lowerSouthIsland: "Lower South Island and Rakiura"
+        case .newSouthWales: "New South Wales and the ACT"
+        case .victoria: "Victoria"
+        case .queensland: "Queensland"
+        case .southAustralia: "South Australia"
+        case .westernAustralia: "Western Australia"
+        case .tasmania: "Tasmania"
+        case .northernTerritory: "Northern Territory"
+        case .externalTerritories: "External territories"
+        case .atlantic: "Atlantic Canada"
+        case .quebec: "Québec"
+        case .ontario: "Ontario"
+        case .prairies: "The Prairies"
+        case .mountainsAndPacific: "Mountains and Pacific"
+        case .north: "The North"
         }
     }
 
@@ -80,6 +118,13 @@ public enum PassportRegion: String, CaseIterable, Sendable, Codable, Identifiabl
         case .northernNorway, .trondelag, .westernNorway, .easternNorway, .southernNorway,
              .svalbard:
             .norway
+        case .northIsland, .upperSouthIsland, .lowerSouthIsland:
+            .newZealand
+        case .newSouthWales, .victoria, .queensland, .southAustralia, .westernAustralia,
+             .tasmania, .northernTerritory, .externalTerritories:
+            .australia
+        case .atlantic, .quebec, .ontario, .prairies, .mountainsAndPacific, .north:
+            .canada
         }
     }
 
@@ -133,6 +178,23 @@ public enum PassportRegion: String, CaseIterable, Sendable, Codable, Identifiabl
         case .easternNorway: "8A4B1F"
         case .southernNorway: "A3402E"
         case .svalbard: "5A4A86"
+        case .northIsland: "2F6B8A"
+        case .upperSouthIsland: "3F6E3A"
+        case .lowerSouthIsland: "6A4A8C"
+        case .newSouthWales: "1F5A8A"
+        case .victoria: "5A3F8A"
+        case .queensland: "8C2F4E"
+        case .southAustralia: "A3462B"
+        case .westernAustralia: "8A6412"
+        case .tasmania: "2E6B3C"
+        case .northernTerritory: "0E6E74"
+        case .externalTerritories: "4C5A1C"
+        case .atlantic: "1F4E79"
+        case .quebec: "5B3D8A"
+        case .ontario: "1D6F42"
+        case .prairies: "8A6A12"
+        case .mountainsAndPacific: "1C6E7E"
+        case .north: "8C2F39"
         }
     }
 
@@ -161,6 +223,23 @@ public enum PassportRegion: String, CaseIterable, Sendable, Codable, Identifiabl
         case .easternNorway: "D68348"
         case .southernNorway: "D78070"
         case .svalbard: "9D90C2"
+        case .northIsland: "62A3C6"
+        case .upperSouthIsland: "6CAA62"
+        case .lowerSouthIsland: "A68BC9"
+        case .newSouthWales: "5F98CF"
+        case .victoria: "AA97D8"
+        case .queensland: "D27D99"
+        case .southAustralia: "E0806A"
+        case .westernAustralia: "C99A2A"
+        case .tasmania: "5FAE71"
+        case .northernTerritory: "15A8B1"
+        case .externalTerritories: "8EA03A"
+        case .atlantic: "5F9DD6"
+        case .quebec: "A189CC"
+        case .ontario: "2DAD67"
+        case .prairies: "BD9219"
+        case .mountainsAndPacific: "2AA6BE"
+        case .north: "D5818A"
         }
     }
 
@@ -178,6 +257,9 @@ public enum PassportRegion: String, CaseIterable, Sendable, Codable, Identifiabl
         case .unitedStates: .western
         case .japan: .hokkaido
         case .norway: .northernNorway
+        case .newZealand: .northIsland
+        case .australia: .newSouthWales
+        case .canada: .mountainsAndPacific
         }
     }
 

@@ -264,7 +264,8 @@ public enum MapDetail {
             true
         case .statePark, .nationalForest, .nationalGrassland, .wildlifeRefuge, .blmMonument,
              .blmConservationArea, .naturalLandmark, .scenicByway, .quasiNationalPark,
-             .protectedLandscape, .natureReserve:
+             .protectedLandscape, .natureReserve, .conservationPark, .stateNationalPark,
+             .marineConservationArea, .provincialPark:
             latitudeSpan <= allOutlinesSpan
         }
     }

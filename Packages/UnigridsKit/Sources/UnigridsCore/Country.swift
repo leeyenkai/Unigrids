@@ -8,6 +8,9 @@ public enum Country: String, CaseIterable, Sendable, Codable, Identifiable {
     case unitedStates = "US"
     case japan = "JP"
     case norway = "NO"
+    case newZealand = "NZ"
+    case australia = "AU"
+    case canada = "CA"
 
     public var id: String {
         rawValue
@@ -23,6 +26,9 @@ public enum Country: String, CaseIterable, Sendable, Codable, Identifiable {
         case .unitedStates: "United States"
         case .japan: "Japan"
         case .norway: "Norway"
+        case .newZealand: "New Zealand"
+        case .australia: "Australia"
+        case .canada: "Canada"
         }
     }
 
@@ -33,6 +39,10 @@ public enum Country: String, CaseIterable, Sendable, Codable, Identifiable {
         case .unitedStates: "National Park Service"
         case .japan: "Ministry of the Environment"
         case .norway: "Norwegian Environment Agency"
+        case .newZealand: "Department of Conservation"
+        // Six parks are the Commonwealth's; the rest belong to the states and territories.
+        case .australia: "Parks Australia and the state and territory park agencies"
+        case .canada: "Parks Canada"
         }
     }
 
@@ -42,16 +52,21 @@ public enum Country: String, CaseIterable, Sendable, Codable, Identifiable {
         case .unitedStates: ("state", "states")
         case .japan: ("prefecture", "prefectures")
         case .norway: ("county", "counties")
+        case .newZealand: ("region", "regions")
+        case .australia: ("state or territory", "states and territories")
+        case .canada: ("province or territory", "provinces and territories")
         }
     }
 
     /// The zone most of the country keeps, for a place whose record names none. Nil for
-    /// the US, which spans six and falls back by state instead.
+    /// the US, Australia and Canada, which span several and fall back by state, province
+    /// or territory instead (`Subdivision.mainTimeZoneID`).
     public var mainTimeZoneID: String? {
         switch self {
-        case .unitedStates: nil
+        case .unitedStates, .australia, .canada: nil
         case .japan: "Asia/Tokyo"
         case .norway: "Europe/Oslo"
+        case .newZealand: "Pacific/Auckland"
         }
     }
 
@@ -62,6 +77,9 @@ public enum Country: String, CaseIterable, Sendable, Codable, Identifiable {
         case .unitedStates: nil
         case .japan: "jp"
         case .norway: "no"
+        case .newZealand: "nz"
+        case .australia: "au"
+        case .canada: "ca"
         }
     }
 
@@ -124,7 +142,10 @@ extension Place {
     public var stampMark: String {
         switch country {
         case .unitedStates: states.first?.code ?? "US"
-        case .japan, .norway: subdivisions.first?.name ?? country.name
+        case .japan, .norway, .newZealand: subdivisions.first?.name ?? country.name
+        // A state or province by its short code, as their own post marks them: NSW, BC.
+        case .australia, .canada: subdivisions.first.map { String($0.code.dropFirst(3)) }
+            ?? country.code
         }
     }
 
@@ -134,7 +155,7 @@ extension Place {
     public var isNationalParkSystemSite: Bool {
         switch country {
         case .unitedStates: agency == .nps
-        case .japan, .norway: kind == .nationalPark
+        case .japan, .norway, .newZealand, .australia, .canada: kind == .nationalPark
         }
     }
 }

@@ -314,6 +314,10 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         case .quasiNationalPark: "Quasi-National Park"
         case .protectedLandscape: "Protected Landscape"
         case .natureReserve: "Nature Reserve"
+        case .conservationPark: "Conservation Park"
+        case .stateNationalPark: "National Park"
+        case .marineConservationArea: "National Marine Conservation Area"
+        case .provincialPark: "Provincial Park"
         }
     }
 }

@@ -28,6 +28,9 @@ public struct SubdivisionTileGrid: Sendable {
         case .unitedStates: unitedStates
         case .japan: japan
         case .norway: norway
+        case .newZealand: newZealand
+        case .australia: australia
+        case .canada: canada
         }
     }
 
@@ -126,4 +129,46 @@ public struct SubdivisionTileGrid: Sendable {
             self.column = column
         }
     }
+
+    /// A grid from cells written `CODE row column`, comma-separated, labelled by the code
+    /// after the country's.
+    private static func coded(
+        _ country: String, columns: Int, rows: Int, _ cells: String
+    ) -> SubdivisionTileGrid {
+        let tiles = cells.split(separator: ",").compactMap { cell -> Tile? in
+            let parts = cell.split(separator: " ")
+            guard parts.count == 3, let row = Int(parts[1]), let column = Int(parts[2])
+            else { return nil }
+            return Tile(
+                code: "\(country)-\(parts[0])",
+                label: String(parts[0]),
+                row: row,
+                column: column
+            )
+        }
+        return SubdivisionTileGrid(columns: columns, rows: rows, tiles: tiles, labelLanguage: "en")
+    }
+
+    /// New Zealand's regions down the two islands, the Chathams off to the east.
+    static let newZealand = coded(
+        "NZ", columns: 4, rows: 9,
+        "NTL 0 1, AUK 1 1, BOP 1 2, WKO 2 1, GIS 2 2, TKI 3 0, MWT 3 1, HKB 3 2, WGN 4 1, "
+            + "TAS 5 0, NSN 5 1, MBH 5 2, WTC 6 0, CAN 6 1, CIT 6 3, OTA 7 1, STL 8 0"
+    )
+
+    /// Australia's states and territories, the island territories at the edges: Cocos and
+    /// Christmas Island to the west, Norfolk to the east, Jervis Bay beside the ACT.
+    static let australia = coded(
+        "AU", columns: 5, rows: 4,
+        "CC 0 0, CX 0 1, NT 0 2, QLD 0 3, NF 0 4, WA 1 1, SA 1 2, NSW 1 3, VIC 2 2, "
+            + "ACT 2 3, JBT 2 4, TAS 3 2"
+    )
+
+    /// Canada's provinces west to east, the territories above them, the Maritimes below
+    /// Newfoundland and Labrador.
+    static let canada = coded(
+        "CA", columns: 7, rows: 4,
+        "YT 0 0, NT 0 1, NU 0 2, NL 0 6, BC 1 0, AB 1 1, SK 1 2, MB 1 3, ON 1 4, QC 1 5, "
+            + "NB 2 5, PE 2 6, NS 3 6"
+    )
 }

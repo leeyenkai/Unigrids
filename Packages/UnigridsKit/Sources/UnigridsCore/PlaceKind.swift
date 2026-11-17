@@ -39,6 +39,16 @@ public enum Agency: String, CaseIterable, Sendable, Codable {
     /// The Norwegian Environment Agency (Miljødirektoratet). Each park or reserve is run
     /// locally — by a board or the county governor — and `Place.managedBy` names that body.
     case environmentAgencyNorway
+    /// New Zealand's Department of Conservation (Te Papa Atawhai), which runs the national
+    /// parks and the conservation and forest parks.
+    case conservationDepartmentNZ
+    /// Parks Australia, which runs the six Commonwealth national parks, three of them
+    /// jointly with their Traditional Owners. The rest are the states' (`.stateAgency`).
+    case parksAustralia
+    /// Parks Canada, which runs the national parks, reserves and marine conservation areas.
+    case parksCanada
+    /// A Canadian province's park agency.
+    case provincialAgency
 
     public var shortName: String {
         switch self {
@@ -51,6 +61,10 @@ public enum Agency: String, CaseIterable, Sendable, Codable {
         case .environmentMinistryJapan: "MOE"
         case .prefecture: "Prefecture"
         case .environmentAgencyNorway: "Miljødirektoratet"
+        case .conservationDepartmentNZ: "DOC"
+        case .parksAustralia: "Parks Australia"
+        case .parksCanada: "Parks Canada"
+        case .provincialAgency: "Province"
         }
     }
 
@@ -65,6 +79,10 @@ public enum Agency: String, CaseIterable, Sendable, Codable {
         case .environmentMinistryJapan: "Ministry of the Environment, Japan"
         case .prefecture: "Prefectural government"
         case .environmentAgencyNorway: "Norwegian Environment Agency"
+        case .conservationDepartmentNZ: "Department of Conservation, New Zealand"
+        case .parksAustralia: "Parks Australia"
+        case .parksCanada: "Parks Canada"
+        case .provincialAgency: "Provincial park agency"
         }
     }
 }
@@ -88,15 +106,26 @@ public enum PlaceKind: String, CaseIterable, Sendable, Codable {
     case protectedLandscape
     /// Norway's larger nature reserves (naturreservater), SPECIFICATION.md §17, item 22.
     case natureReserve
+    /// New Zealand's conservation and forest parks, and Te Urewera: run by DOC (Te Urewera
+    /// by its board), below the national parks.
+    case conservationPark
+    /// An Australian state's or territory's national park without a full guide: named a
+    /// national park by its state, drawn as a state park is (ADR 0014).
+    case stateNationalPark
+    /// Canada's national marine conservation areas, run by Parks Canada.
+    case marineConservationArea
+    /// A Canadian provincial park of 100 km² or more — Québec's *parcs nationaux* among
+    /// them, which are provincial whatever their name.
+    case provincialPark
 
     public var tier: PlaceTier {
         switch self {
         case .nationalPark: .nationalPark
         case .npsUnit: .npsUnit
-        case .statePark, .quasiNationalPark: .statePark
+        case .statePark, .quasiNationalPark, .stateNationalPark, .provincialPark: .statePark
         case .nationalForest, .nationalGrassland, .blmMonument, .blmConservationArea,
              .wildlifeRefuge, .naturalLandmark, .scenicByway, .protectedLandscape,
-             .natureReserve:
+             .natureReserve, .conservationPark, .marineConservationArea:
             .federalSite
         }
     }
@@ -113,6 +142,10 @@ public enum PlaceKind: String, CaseIterable, Sendable, Codable {
         case .unitedStates: defaultAgency
         case .japan: self == .quasiNationalPark ? .prefecture : .environmentMinistryJapan
         case .norway: .environmentAgencyNorway
+        case .newZealand: .conservationDepartmentNZ
+        // Each record names its agency; the states run all but six parks.
+        case .australia: .stateAgency
+        case .canada: self == .provincialPark ? .provincialAgency : .parksCanada
         }
     }
 
@@ -126,6 +159,10 @@ public enum PlaceKind: String, CaseIterable, Sendable, Codable {
         case .scenicByway: .other
         case .quasiNationalPark: .prefecture
         case .protectedLandscape, .natureReserve: .environmentAgencyNorway
+        case .conservationPark: .conservationDepartmentNZ
+        case .stateNationalPark: .stateAgency
+        case .marineConservationArea: .parksCanada
+        case .provincialPark: .provincialAgency
         }
     }
 }

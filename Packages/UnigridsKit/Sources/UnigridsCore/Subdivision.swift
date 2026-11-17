@@ -74,8 +74,35 @@ public struct Subdivision: Hashable, Sendable, Codable, Identifiable, Comparable
         case .unitedStates: USState.all.map(Subdivision.init(state:))
         case .japan: prefectures
         case .norway: norwegianCounties
+        case .newZealand: newZealandRegions
+        case .australia: australianStates
+        case .canada: canadianProvinces
         }
     }
+
+    /// The zone a place in this subdivision keeps when its record names none, for the
+    /// countries that span several: Australia's states, Canada's provinces, and New
+    /// Zealand's Chatham Islands (45 minutes ahead of the mainland).
+    public var mainTimeZoneID: String? {
+        Self.zones[code]
+    }
+
+    private static let zones: [String: String] = [
+        "NZ-CIT": "Pacific/Chatham",
+        "AU-NSW": "Australia/Sydney", "AU-VIC": "Australia/Melbourne",
+        "AU-QLD": "Australia/Brisbane", "AU-SA": "Australia/Adelaide",
+        "AU-WA": "Australia/Perth", "AU-TAS": "Australia/Hobart",
+        "AU-NT": "Australia/Darwin", "AU-ACT": "Australia/Sydney",
+        "AU-JBT": "Australia/Sydney", "AU-CX": "Indian/Christmas",
+        "AU-CC": "Indian/Cocos", "AU-NF": "Pacific/Norfolk",
+        "CA-BC": "America/Vancouver", "CA-AB": "America/Edmonton",
+        "CA-SK": "America/Regina", "CA-MB": "America/Winnipeg",
+        "CA-ON": "America/Toronto", "CA-QC": "America/Toronto",
+        "CA-NB": "America/Moncton", "CA-NS": "America/Halifax",
+        "CA-PE": "America/Halifax", "CA-NL": "America/St_Johns",
+        "CA-YT": "America/Whitehorse", "CA-NT": "America/Yellowknife",
+        "CA-NU": "America/Iqaluit",
+    ]
 
     private static let lookup: [String: Subdivision] = Dictionary(
         uniqueKeysWithValues: Country.allCases.flatMap { all(in: $0) }.map { ($0.code, $0) }
@@ -101,4 +128,34 @@ public struct Subdivision: Hashable, Sendable, Codable, Identifiable, Comparable
         ("34", "Innlandet"), ("39", "Vestfold"), ("40", "Telemark"), ("42", "Agder"),
         ("46", "Vestland"), ("50", "Trøndelag"), ("55", "Troms"), ("56", "Finnmark"),
     ].map { Subdivision(code: "NO-\($0.0)", name: $0.1) }
+
+    /// New Zealand's sixteen regions, in ISO 3166-2:NZ, and the Chatham Islands Territory.
+    public static let newZealandRegions: [Subdivision] = [
+        ("AUK", "Auckland"), ("BOP", "Bay of Plenty"), ("CAN", "Canterbury"),
+        ("CIT", "Chatham Islands"), ("GIS", "Gisborne"), ("HKB", "Hawke's Bay"),
+        ("MBH", "Marlborough"), ("MWT", "Manawatū-Whanganui"), ("NSN", "Nelson"),
+        ("NTL", "Northland"), ("OTA", "Otago"), ("STL", "Southland"),
+        ("TAS", "Tasman"), ("TKI", "Taranaki"), ("WGN", "Wellington"),
+        ("WKO", "Waikato"), ("WTC", "West Coast"),
+    ].map { Subdivision(code: "NZ-\($0.0)", name: $0.1) }
+
+    /// Australia's six states and two mainland territories in ISO 3166-2:AU, then the
+    /// territories ISO lists as countries of their own — Christmas Island, Cocos (Keeling)
+    /// and Norfolk Island — and Jervis Bay, which has no code: Booderee lies there.
+    public static let australianStates: [Subdivision] = [
+        ("ACT", "Australian Capital Territory"), ("NSW", "New South Wales"),
+        ("NT", "Northern Territory"), ("QLD", "Queensland"), ("SA", "South Australia"),
+        ("TAS", "Tasmania"), ("VIC", "Victoria"), ("WA", "Western Australia"),
+        ("CX", "Christmas Island"), ("CC", "Cocos (Keeling) Islands"),
+        ("JBT", "Jervis Bay Territory"), ("NF", "Norfolk Island"),
+    ].map { Subdivision(code: "AU-\($0.0)", name: $0.1) }
+
+    /// Canada's ten provinces and three territories, in ISO 3166-2:CA.
+    public static let canadianProvinces: [Subdivision] = [
+        ("AB", "Alberta"), ("BC", "British Columbia"), ("MB", "Manitoba"),
+        ("NB", "New Brunswick"), ("NL", "Newfoundland and Labrador"),
+        ("NS", "Nova Scotia"), ("NT", "Northwest Territories"), ("NU", "Nunavut"),
+        ("ON", "Ontario"), ("PE", "Prince Edward Island"), ("QC", "Quebec"),
+        ("SK", "Saskatchewan"), ("YT", "Yukon"),
+    ].map { Subdivision(code: "CA-\($0.0)", name: $0.1) }
 }

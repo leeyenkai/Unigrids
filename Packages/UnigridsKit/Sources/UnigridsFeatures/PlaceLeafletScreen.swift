@@ -211,6 +211,16 @@ enum PlaceCredits {
             "Park area from Japan's Ministry of the Environment."
         case .nationalPark where place.country == .norway:
             "Boundary from the Norwegian Environment Agency (Miljødirektoratet), NLOD."
+        case .nationalPark where place.country == .newZealand, .conservationPark:
+            "Boundary from the Department of Conservation's Public Conservation Land, "
+                + "CC BY 4.0."
+        case .nationalPark where place.country == .australia, .stateNationalPark:
+            "Boundary from the Collaborative Australian Protected Areas Database (CAPAD), "
+                + "CC BY 4.0."
+        case .nationalPark where place.country == .canada, .marineConservationArea,
+             .provincialPark:
+            "Boundary from the Canadian Protected and Conserved Areas Database (CPCAD), "
+                + "Open Government Licence – Canada."
         case .nationalPark, .npsUnit:
             "Outline from the NPS Land Resources Division."
                 + (place.visitation == nil ? ""
