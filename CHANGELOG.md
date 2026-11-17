@@ -19,14 +19,17 @@ makes the change. A release moves that block under a version heading with its da
   have a full Unigrid guide written for Unigrids and checked claim by claim against the
   parks' own authorities: the park's name in its own language and script under the
   English one, its prefectures or counties, sights, plan your visit, chronology, safety,
-  regulations, credited photographs from Wikimedia Commons, climate, official brochures,
-  and a new panel, "How this park works" — Japan's zoned parks with towns and shrines
-  inside them, Norway's right to roam and each park's own rules, Svalbard's notification
-  and polar bear rules — and another, "Huts and cabins".
+  regulations, credited photographs from Wikimedia Commons, climate, the official
+  brochure for each Japanese park (a Norwegian guide links to its park's page), and a new
+  panel, "How this park works" — Japan's zoned parks with towns and shrines inside them,
+  Norway's right to roam and each park's own rules, Svalbard's notification and polar
+  bear rules — and another, "Huts and cabins", for the 32 parks where OpenStreetMap maps
+  huts.
 - The second tier as pins and leaflets: Japan's 58 quasi-national parks, and Norway's
   195 protected landscapes and 230 nature reserves of 10 km² or more, with the year each
-  was protected where the authority publishes it, its area, its manager and a credited
-  summary.
+  was designated where a source gives it (Wikidata for Japan's, Miljødirektoratet for
+  Norway's), Norway's areas, its manager, and a credited Wikipedia summary where one
+  matches.
 - Live warnings from each country's own service, with no key: the Japan Meteorological
   Agency's eruption warnings for the volcanoes in a park, and Varsom's avalanche forecast
   where a Norwegian park lies.
@@ -40,17 +43,21 @@ makes the change. A release moves that block under a version heading with its da
 - The map opens on the reader's own country if its parks ship. Its region bar reads
   World, then each country by name, the one on screen followed by its own regions —
   Hokkaido, Okinawa & Amami, Ogasawara; Svalbard. The state filter becomes Regions, with
-  prefectures and counties. Japan's and Norway's passenger railways are on the rail layer.
+  prefectures and counties. Norway's passenger railways are on the rail layer, and part of
+  Japan's: some main stations and Shinkansen lines are still missing.
 - A trip to an island or Arctic park says how it is reached where no road does — "Fly to
   Longyearbyen, then by boat", "Ferry from Tokyo, about 24 hours" — instead of a failed
   route.
 - A guide for a park far enough north or south gives the dates of its midnight sun and
   polar night, worked out for the park's centre.
 - Trails abroad, measured as the US's are: Norway's marked routes from Kartverket's
-  Turrutebasen, with their published grade (green, blue, red, black), and Japan's from
-  OpenStreetMap, each with its profile on Copernicus elevation. Each park abroad also
-  shows its lowest and highest ground, measured by Unigrids.
-- Offline Park maps for Chubu-Sangaku (the Japan Alps) and Jotunheimen, in the bundle.
+  Turrutebasen, with the published grade where Kartverket records one (green, blue, red,
+  black; 240 of 556), and Japan's for 27 parks from OpenStreetMap, each with its profile
+  on Copernicus elevation. Each park abroad also shows its lowest and highest ground,
+  measured by Unigrids.
+- Offline Park maps for Chubu-Sangaku (the Japan Alps) and Jotunheimen, built by the
+  pipeline into the app like the US packs. Chubu-Sangaku's draws OpenStreetMap's paths
+  but lists no trails yet.
 - The map reopens where you left it.
 - An arrival suggestion can be turned off for a place ("Don't suggest here again", or
   swipe), and Settings brings them all back.

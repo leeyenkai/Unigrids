@@ -39,7 +39,7 @@ These came out of two brainstorm rounds on 16 Oct 2026 and frame the rest of thi
 | Planning | Trip itineraries, live NPS alerts, permit and timed-entry reminders, weather and seasons |
 | Design | Unigrid look applies to park guides only; map, log, planner and stats use a native look |
 | Major sites | National forests and grasslands, BLM national monuments and conservation areas, national wildlife refuges, all National Natural Landmarks, nationally designated scenic byways and All-American Roads |
-| State parks | PAD-US, patched from state agency data where it is thin |
+| State parks | PAD-US units a state body manages or whose name carries a state designation (PAD-US also files city parks as state parks), patched from state agency data where it is thin |
 | Stats | Completion and coverage, weather and season, themes and landscapes, trail distance and elevation |
 | Pilot | Zion, Acadia, Yellowstone and Great Smoky Mountains |
 | Beyond the US (16 Nov 2026) | `0.10.0` adds Japan's 35 and Norway's 48 national parks at full depth, and each country's second tier as pins (Japan's quasi-national parks; Norway's protected landscapes and major nature reserves). A passport book per country; offline packs for one pilot park each (Chubu-Sangaku, Jotunheimen). The Unigrid identity stays, as a homage to the NPS and to Yellowstone as the first national park ([ADR 0013](docs/adr/0013-countries-in-the-reference-model.md)) |
@@ -328,7 +328,7 @@ Stats turn the log into four families of insight, each a scrollable page of char
 |---|---|---|
 | Completion and coverage | 23 of 63 national parks; NPS units visited; states and regions with a visit; a US map that fills in; nearest unvisited park | Visits + place list |
 | Weather and season | Hottest, coldest and wettest visit; visits by season and month; snow days; "fair-weather visitor or storm chaser" | Weather snapshot per visit (WeatherKit for recent dates, Open-Meteo archive for older ones) |
-| Themes and landscapes | Share of visits by geology (canyons, volcanoes, glaciers, caves, dunes), ecosystem (desert, alpine, rainforest, reef) and history era; "4 of 6 volcanic parks seen" | Theme tags per park, curated in the pipeline and seeded from NPS API topics and activities |
+| Themes and landscapes | Share of visits by geology (canyons, volcanoes, glaciers, caves, dunes), ecosystem (desert, alpine, rainforest, reef) and history era; "4 of 6 volcanic parks seen", counted over the countries the reader has visited (the US before any visit) | Theme tags per park, curated in the pipeline and seeded from NPS API topics and activities |
 | Trail and elevation | Distance hiked; elevation gained; highest and lowest points reached; longest hike; gain expressed in Everests | Hiked trails + catalogue measurements |
 
 Presentation
