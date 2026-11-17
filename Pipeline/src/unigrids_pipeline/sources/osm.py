@@ -102,7 +102,11 @@ def download_query(
     endpoints: Sequence[str] = ENDPOINTS,
 ) -> dict[str, Any]:
     """Run an Overpass query, trying each endpoint in turn. A caller may name its own
-    endpoints, in the order it prefers them."""
+    endpoints, in the order it prefers them.
+
+    A query that runs out of time or memory still answers 200, with what it had so far
+    and a ``remark`` reporting the runtime error. That answer is partial — half a park's
+    roads would draw as all of them — so it is refused like a failure, never kept."""
     politeness = http.Politeness(attempts=4, backoff_seconds=15.0, timeout_seconds=420.0)
     problems: list[str] = []
     for endpoint in endpoints:
@@ -116,6 +120,10 @@ def download_query(
         payload = response.json()
         if "elements" not in payload:
             problems.append(f"{endpoint}: no elements in the response")
+            continue
+        remark = str(payload.get("remark") or "")
+        if "runtime error" in remark.lower():
+            problems.append(f"{endpoint}: partial answer ({remark})")
             continue
         if record is not None:
             record.add_request(endpoint, {"data": query}, elements=len(payload["elements"]))
