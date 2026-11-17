@@ -266,8 +266,9 @@ public final class AlertsCenter {
         switch place.country {
         case .unitedStates: place.npsParkCode != nil && NPSAlerts.isConfigured
         case .japan, .norway: place.kind == .nationalPark
+        case .newZealand: place.kind == .nationalPark
         // Their providers join with the countries' data (0.11.0).
-        case .newZealand, .australia, .canada: false
+        case .australia, .canada: false
         }
     }
 
@@ -318,7 +319,9 @@ public final class AlertsCenter {
                 guard !isCancellation(error) else { return }
                 abroadFailed.insert(place.id)
             }
-        case .unitedStates, .newZealand, .australia, .canada:
+        case .newZealand:
+            await refreshNewZealand([(place, boundary)])
+        case .unitedStates, .australia, .canada:
             break
         }
     }
@@ -387,7 +390,12 @@ public final class AlertsCenter {
         }
     }
 
-    private func record(_ alerts: [ParkAlert], for id: UnigridsID) {
+    /// A place abroad whose service could not be reached this time.
+    func markFailed(_ id: UnigridsID) {
+        abroadFailed.insert(id)
+    }
+
+    func record(_ alerts: [ParkAlert], for id: UnigridsID) {
         abroad[id] = alerts.sorted { ($0.kind, $0.title) < ($1.kind, $1.title) }
         abroadUpdated[id] = Date()
         abroadFailed.remove(id)
@@ -396,7 +404,7 @@ public final class AlertsCenter {
 
     /// Whether a place abroad was fetched in the last hour: each park by its own time, so
     /// opening one park does not make another's hour-old warnings look new.
-    private func isFresh(_ id: UnigridsID) -> Bool {
+    func isFresh(_ id: UnigridsID) -> Bool {
         abroadUpdated[id].map { Date().timeIntervalSince($0) < 3600 } ?? false
     }
 
