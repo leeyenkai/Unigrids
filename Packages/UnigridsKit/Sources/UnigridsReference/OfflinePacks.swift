@@ -65,7 +65,7 @@ public struct OfflinePackCatalogue: Sendable {
                 maxZoom: manifest.tiles.maxZoom,
                 rendered: rendered,
                 park: park,
-                attribution: Self.attribution,
+                attribution: Self.credit(manifest.attribution),
                 tilesURL: tiles
             )
         }
@@ -75,9 +75,21 @@ public struct OfflinePackCatalogue: Sendable {
         packs.first { $0.placeID == placeID }
     }
 
-    /// The tiles' sources, as each pack's ATTRIBUTION.md sets them out.
+    /// The tiles' sources for a pack whose manifest names none: the four US packs, built
+    /// before manifests carried their own (a pack abroad names Copernicus, OpenStreetMap
+    /// and its country's trail data).
     static let attribution = "Elevation USGS 3DEP · Roads and water © OpenStreetMap "
         + "contributors (ODbL) · Trails NPS"
+
+    /// The credit a manifest gives, or the US packs' line where it gives none. The US
+    /// manifests' `attribution` names the file the credits are in, `ATTRIBUTION.md`,
+    /// which is no credit to print under a map.
+    static func credit(_ written: String?) -> String {
+        guard let written = written?.trimmingCharacters(in: .whitespaces), !written.isEmpty,
+              !written.lowercased().hasSuffix(".md")
+        else { return attribution }
+        return written
+    }
 
     private struct Index: Decodable {
         struct Entry: Decodable {
@@ -120,6 +132,8 @@ public struct OfflinePackCatalogue: Sendable {
         let name: String
         let bounds: Bounds
         let tiles: Tiles
+        /// The credit line the pack's tiles carry, where the pipeline wrote one.
+        let attribution: String?
     }
 }
 

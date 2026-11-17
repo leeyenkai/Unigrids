@@ -176,6 +176,21 @@ struct TripScheduleTests {
         #expect(TripSchedule.isClosureSeason(january, calendar: calendar))
         #expect(!TripSchedule.isClosureSeason(july, calendar: calendar))
     }
+
+    @Test("a guide's own closure months replace November to April")
+    func closureMonthsFromGuide() throws {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = try #require(TimeZone(identifier: "Europe/Oslo"))
+        let may = try #require(calendar.date(from: DateComponents(year: 2027, month: 5, day: 20)))
+        let october = try #require(
+            calendar.date(from: DateComponents(year: 2027, month: 10, day: 20))
+        )
+        // Sognefjellet: closed from late autumn until it is cleared in May or June.
+        let months = [11, 12, 1, 2, 3, 4, 5]
+        #expect(TripSchedule.isClosureSeason(may, months: months, calendar: calendar))
+        #expect(!TripSchedule.isClosureSeason(may, calendar: calendar))
+        #expect(!TripSchedule.isClosureSeason(october, months: months, calendar: calendar))
+    }
 }
 
 @Suite("Weather")

@@ -23,18 +23,28 @@ public struct ParkDocument: Identifiable, Hashable, Sendable, Codable {
     public let title: String
     public let url: URL
     public let kind: Kind
-    /// Size as the NPS server reported it when the link was last checked.
+    /// Size as the publisher's server reported it when the link was last checked.
     public let bytes: Int?
+    /// The document's language, BCP 47, when it is not English: most of Japan's are in
+    /// Japanese, and the reader should know before opening one.
+    public let language: String?
 
     public var id: URL {
         url
     }
 
-    public init(title: String, url: URL, kind: Kind, bytes: Int? = nil) {
+    public init(
+        title: String,
+        url: URL,
+        kind: Kind,
+        bytes: Int? = nil,
+        language: String? = nil
+    ) {
         self.title = title
         self.url = url
         self.kind = kind
         self.bytes = bytes
+        self.language = language
     }
 
     public init(from decoder: any Decoder) throws {
@@ -43,6 +53,7 @@ public struct ParkDocument: Identifiable, Hashable, Sendable, Codable {
         url = try container.decode(URL.self, forKey: .url)
         kind = (try? container.decode(Kind.self, forKey: .kind)) ?? .other
         bytes = try container.decodeIfPresent(Int.self, forKey: .bytes)
+        language = try container.decodeIfPresent(String.self, forKey: .language)
     }
 }
 

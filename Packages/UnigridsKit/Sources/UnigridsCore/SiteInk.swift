@@ -109,7 +109,9 @@ extension SiteType {
         case .wildlifeRefuge: .refuge
         case .conservationArea: .conservation
         case .naturalLandmark: .landmark
-        case .statePark: .statePark
+        case .statePark, .quasiNationalPark: .statePark
+        case .protectedLandscape: .conservation
+        case .natureReserve: .refuge
         case .parkway, .scenicByway: .road
         case .otherNPSSite: .other
         }

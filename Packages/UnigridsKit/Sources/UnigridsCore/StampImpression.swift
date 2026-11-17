@@ -51,32 +51,48 @@ public struct StampFace: Hashable, Sendable {
     public let isVerifiedOnSite: Bool
     /// The calendar the stamp's day is reckoned in: the place's own zone.
     public let calendar: Calendar
+    /// Whose passport book the stamp is in, which fixes its face (ADR 0013).
+    public let country: Country
+    /// The place's name in its own script, set large on a Japanese face: 知床国立公園.
+    public let localName: String?
 
+    /// `country` decides the America 250 seal, which only a US stamp carries; it has no
+    /// default so no caller can forget it.
     public init(
         siteName: String,
         date: Date,
         stateCode: String,
         region: PassportRegion,
+        country: Country,
         seed: UInt64,
         isVerifiedOnSite: Bool = false,
-        calendar: Calendar = UnigridsCalendar.gregorian()
+        calendar: Calendar = UnigridsCalendar.gregorian(),
+        localName: String? = nil
     ) {
         self.siteName = siteName
         self.date = date
         self.stateCode = stateCode
         self.region = region
         impression = StampImpression(seed: seed)
-        hasAmerica250Seal = America250.applies(to: date, calendar: calendar)
+        hasAmerica250Seal = America250.applies(to: date, in: country, calendar: calendar)
         self.isVerifiedOnSite = isVerifiedOnSite
         self.calendar = calendar
+        self.country = country
+        self.localName = localName
     }
 
-    /// The date as a cancellation prints it: `18 OCT 2026`, in the calendar the seal was
+    /// The date as the book's cancellations print it — `18 OCT 2026` in the US book,
+    /// `2026.10.18` in Japan's, `18.10.2026` in Norway's — in the calendar the seal was
     /// decided in, so the face and the overprint can never disagree about the year.
     public func dateLine() -> String {
         let parts = calendar.dateComponents([.day, .month, .year], from: date)
         guard let day = parts.day, let month = parts.month, let year = parts.year else {
             return ""
+        }
+        switch country {
+        case .japan: return String(format: "%d.%02d.%02d", year, month, day)
+        case .norway: return String(format: "%02d.%02d.%d", day, month, year)
+        case .unitedStates: break
         }
         let months = [
             "JAN", "FEB", "MAR", "APR", "MAY", "JUN",

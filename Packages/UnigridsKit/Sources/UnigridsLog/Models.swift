@@ -289,9 +289,11 @@ public final class Stamp {
         stampLocationID.map { UnigridsID($0) }
     }
 
-    /// Whether this impression carries the America 250 overprint.
+    /// Whether this impression carries the America 250 overprint. Only a US stamp does;
+    /// the country is read from the place's identifier, so the answer holds even when the
+    /// place has left the dataset.
     public func hasAmerica250Seal(calendar: Calendar = UnigridsCalendar.gregorian()) -> Bool {
-        America250.applies(to: date, calendar: calendar)
+        America250.applies(to: date, in: Country.inferred(from: place), calendar: calendar)
     }
 
     public init(

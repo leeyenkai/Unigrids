@@ -59,6 +59,10 @@ extension Stamp {
     /// Whether the impression carries the America 250 seal, by the calendar day where it
     /// was made.
     public func hasAmerica250Seal(at place: Place?) -> Bool {
-        hasAmerica250Seal(calendar: UnigridsCalendar.gregorian(at: place))
+        America250.applies(
+            to: date,
+            in: place?.country ?? Country.inferred(from: self.place),
+            calendar: UnigridsCalendar.gregorian(at: place)
+        )
     }
 }

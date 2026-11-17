@@ -55,6 +55,7 @@ struct StampImpressionTests {
             date: date,
             stateCode: "UT",
             region: .rockyMountain,
+            country: .unitedStates,
             seed: 7,
             calendar: calendar
         )

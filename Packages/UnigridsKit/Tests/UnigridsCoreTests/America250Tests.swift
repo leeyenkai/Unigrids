@@ -54,4 +54,26 @@ struct America250Tests {
         #expect(!America250.applies(to: backDated, calendar: utcCalendar))
         #expect(America250.applies(to: lateEntered, calendar: utcCalendar))
     }
+
+    @Test("the anniversary is America's: a stamp abroad never carries the seal")
+    func sealIsAmerican() {
+        let summer = date(2026, 7, 4)
+        #expect(America250.applies(to: summer, in: .unitedStates, calendar: utcCalendar))
+        #expect(!America250.applies(to: summer, in: .japan, calendar: utcCalendar))
+        #expect(!America250.applies(to: summer, in: .norway, calendar: utcCalendar))
+    }
+
+    @Test("a stamp face takes the seal from its place's country")
+    func faceFollowsCountry() {
+        let japan = StampFace(
+            siteName: "Shiretoko", date: date(2026, 9, 1), stateCode: "JP-01",
+            region: .western, country: .japan, seed: 7, calendar: utcCalendar
+        )
+        let utah = StampFace(
+            siteName: "Zion", date: date(2026, 9, 1), stateCode: "UT",
+            region: .rockyMountain, country: .unitedStates, seed: 7, calendar: utcCalendar
+        )
+        #expect(!japan.hasAmerica250Seal)
+        #expect(utah.hasAmerica250Seal)
+    }
 }

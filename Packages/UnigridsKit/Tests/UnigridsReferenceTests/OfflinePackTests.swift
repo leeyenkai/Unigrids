@@ -73,4 +73,14 @@ struct OfflinePackTests {
         defer { try? FileManager.default.removeItem(at: root) }
         #expect(OfflinePackCatalogue(root: root).packs.isEmpty)
     }
+
+    @Test("a pack's own credit is printed; a manifest that names a file gets the US line")
+    func credit() {
+        let abroad = "Elevation Copernicus GLO-30 · Roads and water © OpenStreetMap "
+            + "contributors (ODbL) · Trails Kartverket"
+        #expect(OfflinePackCatalogue.credit(abroad) == abroad)
+        #expect(OfflinePackCatalogue.credit("ATTRIBUTION.md") == OfflinePackCatalogue.attribution)
+        #expect(OfflinePackCatalogue.credit(nil) == OfflinePackCatalogue.attribution)
+        #expect(OfflinePackCatalogue.credit("  ") == OfflinePackCatalogue.attribution)
+    }
 }

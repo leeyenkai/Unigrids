@@ -59,6 +59,35 @@ struct StatsTests {
         #expect(report.totalVisits == 3)
     }
 
+    @Test("figures go country by country, and the US ones stay the US's")
+    func figuresByCountry() {
+        let shiretoko = Place(
+            id: "jp-np-shiretoko", name: "Shiretoko", designation: "National Park",
+            kind: .nationalPark, states: [], centre: Coordinate(latitude: 44, longitude: 145),
+            passportRegion: .hokkaido, country: .japan,
+            subdivisions: [Subdivision.named("JP-01")].compactMap(\.self)
+        )
+        let places = [
+            place("np-a", name: "A", states: ["UT"]),
+            place("np-b", name: "B", states: ["ME"]),
+            shiretoko,
+        ]
+        let visits = [
+            VisitSummary(placeID: "np-a", date: date(2025)),
+            VisitSummary(placeID: "jp-np-shiretoko", date: date(2025)),
+        ]
+        let report = StatsReport(places: places, visits: visits, calendar: utcCalendar)
+        #expect(report.nationalParksByCountry.map(\.country) == [.unitedStates, .japan])
+        #expect(report.nationalParksByCountry.first?.completion == Completion(visited: 1, total: 2))
+        #expect(report.nationalParksByCountry.last?.completion == Completion(visited: 1, total: 1))
+        #expect(report.countries == Completion(visited: 2, total: 2))
+        #expect(report.subdivisionsByCountry.last?.completion == Completion(visited: 1, total: 47))
+        #expect(report.regionsByCountry.last?.completion == Completion(visited: 1, total: 8))
+        // The figures the US screens show do not move.
+        #expect(report.states == Completion(visited: 1, total: 56))
+        #expect(report.regions.total == 9)
+    }
+
     @Test("a park in two states credits both")
     func statesSpanParkBoundaries() {
         let places = [place("np-grsm", name: "Smokies", states: ["TN", "NC"])]

@@ -1,101 +1,5 @@
 import Foundation
 
-/// How much depth a place gets in the app (SPECIFICATION.md §5).
-///
-/// The tiers are the spine of the product: tier 1 earns a full Unigrid guide, 3D and
-/// trails, and each tier below gets progressively less. Depth before breadth.
-public enum PlaceTier: Int, CaseIterable, Sendable, Codable, Comparable {
-    /// National parks. Full guide, brochure, 3D view, trail catalogue, offline pack.
-    case nationalPark = 1
-    /// Other NPS units. Rich pin: overview, hours, fees, alerts, brochure.
-    case npsUnit = 2
-    /// State parks. Pin and boundary, type, basic facts, link out.
-    case statePark = 3
-    /// Major federal sites. Pin or line, boundary, agency, basic facts.
-    case federalSite = 4
-
-    public static func < (lhs: PlaceTier, rhs: PlaceTier) -> Bool {
-        lhs.rawValue < rhs.rawValue
-    }
-
-    public var hasGuide: Bool {
-        self == .nationalPark
-    }
-}
-
-/// The land-management agency behind a place, which drives pin colour.
-public enum Agency: String, CaseIterable, Sendable, Codable {
-    case nps
-    case forestService
-    case blm
-    case fishAndWildlife
-    case stateAgency
-    case other
-
-    public var shortName: String {
-        switch self {
-        case .nps: "NPS"
-        case .forestService: "USFS"
-        case .blm: "BLM"
-        case .fishAndWildlife: "USFWS"
-        case .stateAgency: "State"
-        case .other: "Other"
-        }
-    }
-
-    public var name: String {
-        switch self {
-        case .nps: "National Park Service"
-        case .forestService: "US Forest Service"
-        case .blm: "Bureau of Land Management"
-        case .fishAndWildlife: "US Fish and Wildlife Service"
-        case .stateAgency: "State park agency"
-        case .other: "Other"
-        }
-    }
-}
-
-/// What kind of place this is, which fixes its tier and its pin shape.
-public enum PlaceKind: String, CaseIterable, Sendable, Codable {
-    case nationalPark
-    case npsUnit
-    case statePark
-    case nationalForest
-    case nationalGrassland
-    case blmMonument
-    case blmConservationArea
-    case wildlifeRefuge
-    case naturalLandmark
-    case scenicByway
-
-    public var tier: PlaceTier {
-        switch self {
-        case .nationalPark: .nationalPark
-        case .npsUnit: .npsUnit
-        case .statePark: .statePark
-        case .nationalForest, .nationalGrassland, .blmMonument, .blmConservationArea,
-             .wildlifeRefuge, .naturalLandmark, .scenicByway:
-            .federalSite
-        }
-    }
-
-    /// Byways are drawn as lines rather than pins.
-    public var isLinear: Bool {
-        self == .scenicByway
-    }
-
-    public var defaultAgency: Agency {
-        switch self {
-        case .nationalPark, .npsUnit, .naturalLandmark: .nps
-        case .nationalForest, .nationalGrassland: .forestService
-        case .blmMonument, .blmConservationArea: .blm
-        case .wildlifeRefuge: .fishAndWildlife
-        case .statePark: .stateAgency
-        case .scenicByway: .other
-        }
-    }
-}
-
 public enum Season: String, CaseIterable, Sendable, Codable, Identifiable {
     case spring, summer, autumn, winter
 
@@ -141,6 +45,15 @@ public struct PlaceFacts: Hashable, Sendable, Codable {
     /// How the elevation range was found, where it was measured rather than published:
     /// the guide shows it beneath the figures.
     public var elevationNote: String?
+    /// Area in hectares, for a place whose authority publishes it that way (Japan's and
+    /// Norway's do). The figure stays in its own unit; nothing converts it at build time.
+    public var areaHectares: Double?
+
+    /// The area in whichever unit it was published in.
+    public var area: Measurement<UnitArea>? {
+        areaAcres.map { Measurement(value: $0, unit: .acres) }
+            ?? areaHectares.map { Measurement(value: $0, unit: .hectares) }
+    }
 
     public init(
         establishedYear: Int? = nil,
@@ -152,7 +65,8 @@ public struct PlaceFacts: Hashable, Sendable, Codable {
         entranceFee: String? = nil,
         bestSeasons: [Season] = [],
         suggestedTime: String? = nil,
-        elevationNote: String? = nil
+        elevationNote: String? = nil,
+        areaHectares: Double? = nil
     ) {
         self.establishedYear = establishedYear
         self.areaAcres = areaAcres
@@ -164,6 +78,7 @@ public struct PlaceFacts: Hashable, Sendable, Codable {
         self.bestSeasons = bestSeasons
         self.suggestedTime = suggestedTime
         self.elevationNote = elevationNote
+        self.areaHectares = areaHectares
     }
 
     public init(from decoder: any Decoder) throws {
@@ -182,11 +97,12 @@ public struct PlaceFacts: Hashable, Sendable, Codable {
         bestSeasons = try container.decodeIfPresent([Season].self, forKey: .bestSeasons) ?? []
         suggestedTime = try container.decodeIfPresent(String.self, forKey: .suggestedTime)
         elevationNote = try container.decodeIfPresent(String.self, forKey: .elevationNote)
+        areaHectares = try container.decodeIfPresent(Double.self, forKey: .areaHectares)
     }
 
     public var isEmpty: Bool {
         establishedYear == nil
-            && areaAcres == nil
+            && area == nil
             && lowestElevationMetres == nil
             && highestElevationMetres == nil
             && annualVisits == nil
@@ -245,16 +161,30 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
     public let visitorInfo: PlaceVisitorInfo?
     /// The body that runs a state park, as PAD-US names it: "Colorado State Parks".
     public let managedBy: String?
+    /// The country the place is in (ADR 0013). American unless the record says otherwise.
+    public let country: Country
+    /// The states, prefectures or counties the place lies in. A US place derives them from
+    /// `states`; a place abroad carries its own and leaves `states` empty, so none of the
+    /// US-only rules keyed on states ever sees it.
+    public let subdivisions: [Subdivision]
+    /// The place's name in its own language and script, where that differs from `name`.
+    public let localNames: [LocalName]
+    /// How the place is reached where no road leads to it, in a line written for Unigrids
+    /// from the guide's own directions: "Ferry from Tokyo, about 24 hours". A trip shows
+    /// it in place of a failed road route (SPECIFICATION.md §10). Nil for most places.
+    public let reachedBy: String?
 
     public var tier: PlaceTier {
         kind.tier
     }
 
-    /// The region this place stamps in.
+    /// The region this place stamps in. A place abroad never falls back to a state's
+    /// region: it carries a curated one (a test holds that), or takes its own country's.
     public var resolvedPassportRegion: PassportRegion {
         if let passportRegion {
             return passportRegion
         }
+        guard country == .unitedStates else { return PassportRegion.fallback(in: country) }
         guard let first = states.first else { return .western }
         return PassportRegion.byState(first)
     }
@@ -289,7 +219,11 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         summaryLicence: String? = nil,
         visitation: MonthlyVisitation? = nil,
         visitorInfo: PlaceVisitorInfo? = nil,
-        managedBy: String? = nil
+        managedBy: String? = nil,
+        country: Country = .unitedStates,
+        subdivisions: [Subdivision]? = nil,
+        localNames: [LocalName] = [],
+        reachedBy: String? = nil
     ) {
         self.id = id
         self.name = name
@@ -316,6 +250,10 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         self.visitation = visitation
         self.visitorInfo = visitorInfo
         self.managedBy = managedBy
+        self.country = country
+        self.subdivisions = subdivisions ?? states.map(Subdivision.init(state:))
+        self.localNames = localNames
+        self.reachedBy = reachedBy
     }
 
     public init(from decoder: any Decoder) throws {
@@ -352,6 +290,13 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         visitation = try? container.decodeIfPresent(MonthlyVisitation.self, forKey: .visitation)
         visitorInfo = try? container.decodeIfPresent(PlaceVisitorInfo.self, forKey: .visitorInfo)
         managedBy = try container.decodeIfPresent(String.self, forKey: .managedBy)
+        country = try container.decodeIfPresent(Country.self, forKey: .country) ?? .unitedStates
+        // Unknown codes are dropped, never shown as a name: counties get renumbered.
+        let codes = try? container.decodeIfPresent([String].self, forKey: .subdivisions)
+        subdivisions = codes.map { $0.compactMap(Subdivision.named) }
+            ?? states.map(Subdivision.init(state:))
+        localNames = try container.decodeIfPresent([LocalName].self, forKey: .localNames) ?? []
+        reachedBy = try container.decodeIfPresent(String.self, forKey: .reachedBy)
     }
 
     private static func defaultDesignation(for kind: PlaceKind) -> String {
@@ -366,6 +311,9 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         case .wildlifeRefuge: "National Wildlife Refuge"
         case .naturalLandmark: "National Natural Landmark"
         case .scenicByway: "Scenic Byway"
+        case .quasiNationalPark: "Quasi-National Park"
+        case .protectedLandscape: "Protected Landscape"
+        case .natureReserve: "Nature Reserve"
         }
     }
 }

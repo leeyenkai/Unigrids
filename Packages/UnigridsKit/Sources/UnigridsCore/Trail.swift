@@ -120,8 +120,11 @@ public struct Trail: Identifiable, Hashable, Sendable {
     /// Elevation along the whole trail, its parts laid end to end in walking order.
     public let profile: [TrailProfilePoint]
     /// Where the line came from when it is not the park's own: `"osm"` for trails taken
-    /// from OpenStreetMap, which the trail's page credits under the ODbL.
+    /// from OpenStreetMap, which the trail's page credits under the ODbL; `"kartverket"`
+    /// for Norway's route database.
     public let source: String?
+    /// A grade the trail's own authority publishes, where one does.
+    public let publishedGrade: TrailGrade?
 
     /// Whether the line is OpenStreetMap's rather than the NPS's.
     public var isFromOpenStreetMap: Bool {
@@ -149,13 +152,23 @@ public struct Trail: Identifiable, Hashable, Sendable {
             ? gainMetres + (lossMetres ?? 0) : gainMetres
     }
 
-    /// The published difficulty, or the estimate from the hike's distance and climb.
+    /// The published difficulty, the band of a published grade, or the estimate from the
+    /// hike's distance and climb.
     public var estimatedDifficulty: TrailDifficulty? {
         if let difficulty {
             return difficulty
         }
+        if let band = publishedGrade?.band {
+            return band
+        }
         guard let climbMetres else { return nil }
         return TrailDifficulty.estimate(lengthMetres: walkedMetres, gainMetres: climbMetres)
+    }
+
+    /// Whether `estimatedDifficulty` is Unigrids' estimate rather than a published grade,
+    /// so every place that shows it can say which.
+    public var isDifficultyEstimated: Bool {
+        difficulty == nil && publishedGrade?.band == nil
     }
 
     /// Naismith's rule: 5 km/h on the flat, plus an hour for every 600 m of ascent, for
@@ -201,7 +214,8 @@ public struct Trail: Identifiable, Hashable, Sendable {
         uses: String? = nil,
         paths: [[Coordinate]] = [],
         profile: [TrailProfilePoint] = [],
-        source: String? = nil
+        source: String? = nil,
+        publishedGrade: TrailGrade? = nil
     ) {
         self.id = id
         self.placeID = placeID
@@ -223,6 +237,7 @@ public struct Trail: Identifiable, Hashable, Sendable {
         self.paths = paths
         self.profile = profile
         self.source = source
+        self.publishedGrade = publishedGrade
     }
 }
 
@@ -231,6 +246,7 @@ extension Trail: Codable {
         case id, placeID, name, lengthMetres, gainMetres, lossMetres, lowPointMetres
         case highPointMetres, difficulty, routeType, trailheadID, features, sightIDs
         case seasonalNotes, dogsAllowed, bikesAllowed, uses, paths, profile, source
+        case publishedGrade
     }
 
     /// Paths are encoded polylines; the profile is `[[distance, elevation], …]`. Unknown
@@ -264,7 +280,10 @@ extension Trail: Codable {
                     ? TrailProfilePoint(distanceMetres: pair[0], elevationMetres: pair[1])
                     : nil
             },
-            source: container.decodeIfPresent(String.self, forKey: .source)
+            source: container.decodeIfPresent(String.self, forKey: .source),
+            publishedGrade: try? container.decodeIfPresent(
+                TrailGrade.self, forKey: .publishedGrade
+            )
         )
     }
 
@@ -292,6 +311,7 @@ extension Trail: Codable {
             profile.map { [$0.distanceMetres, $0.elevationMetres] }, forKey: .profile
         )
         try container.encodeIfPresent(source, forKey: .source)
+        try container.encodeIfPresent(publishedGrade, forKey: .publishedGrade)
     }
 }
 

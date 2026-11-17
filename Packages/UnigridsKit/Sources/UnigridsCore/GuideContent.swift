@@ -78,6 +78,9 @@ public struct PlanYourVisit: Hashable, Sendable, Codable {
     public var camping: [String]
     public var lodging: [String]
     public var seasonalClosures: [String]
+    /// The months (1–12) those closures cover, where the guide can say: Norway's mountain
+    /// roads open in May or June, not April. Empty means the usual November to April.
+    public var seasonalClosureMonths: [Int]
 
     public init(
         entrances: [String] = [],
@@ -85,7 +88,8 @@ public struct PlanYourVisit: Hashable, Sendable, Codable {
         permits: [String] = [],
         camping: [String] = [],
         lodging: [String] = [],
-        seasonalClosures: [String] = []
+        seasonalClosures: [String] = [],
+        seasonalClosureMonths: [Int] = []
     ) {
         self.entrances = entrances
         self.reservations = reservations
@@ -93,6 +97,7 @@ public struct PlanYourVisit: Hashable, Sendable, Codable {
         self.camping = camping
         self.lodging = lodging
         self.seasonalClosures = seasonalClosures
+        self.seasonalClosureMonths = seasonalClosureMonths
     }
 
     public init(from decoder: any Decoder) throws {
@@ -105,6 +110,9 @@ public struct PlanYourVisit: Hashable, Sendable, Codable {
         seasonalClosures = try container.decodeIfPresent(
             [String].self, forKey: .seasonalClosures
         ) ?? []
+        seasonalClosureMonths = try (container.decodeIfPresent(
+            [Int].self, forKey: .seasonalClosureMonths
+        ) ?? []).filter { (1 ... 12).contains($0) }
     }
 
     public var isEmpty: Bool {
@@ -113,7 +121,8 @@ public struct PlanYourVisit: Hashable, Sendable, Codable {
     }
 }
 
-/// One line of a park's entrance fees, as the NPS publishes it.
+/// One line of a park's fees, as its authority publishes it: an NPS entrance fee, or a
+/// conservation fee abroad (Mount Fuji's trails, Yakushima's mountains).
 public struct EntranceFee: Hashable, Sendable, Codable, Identifiable {
     /// "Private vehicle", "Per person", "Motorcycle".
     public let title: String
@@ -121,15 +130,34 @@ public struct EntranceFee: Hashable, Sendable, Codable, Identifiable {
     public let cost: String
     /// What it covers and for how long.
     public let detail: String?
+    /// The amount, where the source gives one as a number, in `currencyCode`.
+    public let amount: Decimal?
+    /// ISO 4217: "USD", "JPY", "NOK".
+    public let currencyCode: String?
 
     public var id: String {
         title + cost
     }
 
-    public init(title: String, cost: String, detail: String? = nil) {
+    public init(
+        title: String,
+        cost: String,
+        detail: String? = nil,
+        amount: Decimal? = nil,
+        currencyCode: String? = nil
+    ) {
         self.title = title
         self.cost = cost
         self.detail = detail
+        self.amount = amount
+        self.currencyCode = currencyCode
+    }
+
+    /// The cost for the reader: the amount in its own currency, written the reader's way
+    /// ("¥4,000", "4 000 ¥"), never converted; else the text as published.
+    public func displayCost(locale: Locale = .current) -> String {
+        guard let amount, let currencyCode, amount > 0 else { return cost }
+        return amount.formatted(.currency(code: currencyCode).locale(locale))
     }
 }
 
@@ -185,6 +213,10 @@ public struct GuideContent: Hashable, Sendable, Codable, Identifiable {
     public let weather: String?
     /// The NPS's directions note: how to get there.
     public let directions: String?
+    /// How the park works for a visitor, where that differs from a US park: Japan's zoned
+    /// parks with towns and private land inside them, Norway's right to roam, Svalbard's
+    /// own rules. Written for Unigrids.
+    public let howItWorks: [String]
 
     public var id: UnigridsID {
         placeID
@@ -208,7 +240,8 @@ public struct GuideContent: Hashable, Sendable, Codable, Identifiable {
         fees: [EntranceFee] = [],
         operatingHours: String? = nil,
         weather: String? = nil,
-        directions: String? = nil
+        directions: String? = nil,
+        howItWorks: [String] = []
     ) {
         self.placeID = placeID
         self.contentVersion = contentVersion
@@ -228,6 +261,7 @@ public struct GuideContent: Hashable, Sendable, Codable, Identifiable {
         self.operatingHours = operatingHours
         self.weather = weather
         self.directions = directions
+        self.howItWorks = howItWorks
     }
 
     public init(from decoder: any Decoder) throws {
@@ -258,6 +292,7 @@ public struct GuideContent: Hashable, Sendable, Codable, Identifiable {
         operatingHours = try container.decodeIfPresent(String.self, forKey: .operatingHours)
         weather = try container.decodeIfPresent(String.self, forKey: .weather)
         directions = try container.decodeIfPresent(String.self, forKey: .directions)
+        howItWorks = try container.decodeIfPresent([String].self, forKey: .howItWorks) ?? []
     }
 }
 
@@ -269,12 +304,16 @@ public enum GuidePanel: Hashable, Sendable, Identifiable {
     case hero(GuideImage)
     case atAGlance
     case story
+    /// How the park works: zones and land ownership, the right to roam.
+    case howItWorks
     case gallery
     case map(GuideImage)
     /// The park drawn live: its outline, numbered sights and visitor centres.
     case parkMap
     case majorSights
     case visitorCentres
+    /// Mountain huts and cabins: Japan's 山小屋, Norway's DNT cabins.
+    case huts
     case trailHighlights
     /// Live NPS alerts — closures, danger, caution — fetched when the guide opens.
     case alerts
@@ -290,11 +329,13 @@ public enum GuidePanel: Hashable, Sendable, Identifiable {
         case .hero: "hero"
         case .atAGlance: "at-a-glance"
         case .story: "story"
+        case .howItWorks: "how-it-works"
         case .gallery: "gallery"
         case .map: "map"
         case .parkMap: "park-map"
         case .majorSights: "major-sights"
         case .visitorCentres: "visitor-centres"
+        case .huts: "huts"
         case .trailHighlights: "trail-highlights"
         case .alerts: "alerts"
         case .planYourVisit: "plan-your-visit"
@@ -313,10 +354,12 @@ public enum GuidePanel: Hashable, Sendable, Identifiable {
         case .hero, .map: nil
         case .atAGlance: "At a glance"
         case .story: "The story"
+        case .howItWorks: "How this park works"
         case .gallery: "Photographs"
         case .parkMap: "The park"
         case .majorSights: "Major sights"
         case .visitorCentres: "Visitor centres"
+        case .huts: "Huts and cabins"
         case .trailHighlights: "Trail highlights"
         case .alerts: "Alerts"
         case .planYourVisit: "Plan your visit"
@@ -355,7 +398,8 @@ extension GuideContent {
         visitorCentreCount: Int,
         hasTrails: Bool,
         hasMap: Bool = false,
-        showsAlerts: Bool = false
+        showsAlerts: Bool = false,
+        hutCount: Int = 0
     ) -> [GuidePanel] {
         let mapPanel: GuidePanel? = mapImage.map { .map($0) } ?? (hasMap ? .parkMap : nil)
         let hasPlan = !planYourVisit.isEmpty || !fees.isEmpty || operatingHours != nil
@@ -365,10 +409,12 @@ extension GuideContent {
             hero.map { .hero($0) },
             placeHasFacts ? .atAGlance : nil,
             story.isEmpty ? nil : .story,
+            howItWorks.isEmpty ? nil : .howItWorks,
             gallery.isEmpty ? nil : .gallery,
             mapPanel,
             sightCount > 0 ? .majorSights : nil,
             visitorCentreCount > 0 ? .visitorCentres : nil,
+            hutCount > 0 ? .huts : nil,
             // Drawn from the catalogue: a park with trails has highlights whether or not its
             // guide names any, and the ones it names lead.
             hasTrails ? .trailHighlights : nil,

@@ -87,6 +87,10 @@ public struct YearInReview: Hashable, Sendable {
     public let newNationalParks: [UnigridsID]
     /// States and territories the year's places lie in.
     public let states: [USState]
+    /// Every state, prefecture and county with a visit, at home and abroad.
+    public let subdivisions: [Subdivision]
+    /// The countries with a visit, the US first.
+    public let countries: [Country]
     /// The month with the most visits, 1-based; the earliest of a tie.
     public let busiestMonth: Int?
     public let firstVisit: VisitSummary?
@@ -130,6 +134,10 @@ public struct YearInReview: Hashable, Sendable {
         newNationalParks = parks.filter { !before.contains($0) }
         states = Set(ids.compactMap { byID[$0] }.flatMap(\.states))
             .sorted { $0.code < $1.code }
+        let visitedPlaces = ids.compactMap { byID[$0] }
+        subdivisions = Set(visitedPlaces.flatMap(\.subdivisions)).sorted { $0.code < $1.code }
+        let present = Set(visitedPlaces.map(\.country))
+        countries = Country.allCases.filter(present.contains)
         let months = Dictionary(grouping: visits) { calendar.component(.month, from: $0.date) }
         busiestMonth = months.max { ($0.value.count, $1.key) < ($1.value.count, $0.key) }?.key
         firstVisit = visits.first

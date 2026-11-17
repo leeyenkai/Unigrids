@@ -208,6 +208,24 @@ struct MapFilterTests {
         #expect(!MapDetail.showsLabel(for: .npsUnit, latitudeSpan: 15))
         #expect(MapDetail.showsLabel(for: .npsUnit, latitudeSpan: 2))
     }
+
+    @Test("the far north reads at the detail its size on screen calls for")
+    func detailSpanByLatitude() {
+        // Below 50° nothing changes: the Lower 48, Hawaii, Japan.
+        #expect(MapDetail.detailSpan(latitudeSpan: 30, centerLatitude: 37) == 30)
+        #expect(MapDetail.detailSpan(latitudeSpan: 4, centerLatitude: -45) == 4)
+        #expect(MapDetail.detailSpan(latitudeSpan: 10, centerLatitude: 50) == 10)
+        // Norway framed whole on a phone, about twenty degrees tall around 63°N, is a
+        // country-scale view: compact park pins, no names.
+        let norway = MapDetail.detailSpan(latitudeSpan: 20, centerLatitude: 63)
+        #expect(norway > MapDetail.compactParkSpan)
+        #expect(!MapDetail.showsLabel(for: .nationalPark, latitudeSpan: norway))
+        // Close in, Jotunheimen keeps every pin and name.
+        let jotunheimen = MapDetail.detailSpan(latitudeSpan: 1.2, centerLatitude: 61.5)
+        #expect(MapDetail.showsLabel(for: .statePark, latitudeSpan: jotunheimen))
+        // The pole cannot divide by zero.
+        #expect(MapDetail.detailSpan(latitudeSpan: 2, centerLatitude: 90).isFinite)
+    }
 }
 
 @Suite("Trip planning")

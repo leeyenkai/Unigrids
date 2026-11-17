@@ -81,6 +81,24 @@ public struct StatsReport: Sendable {
     public let longestHikeMetres: Double
     public let highestPointMetres: Double?
     public let nearestUnvisited: NearbyPlace?
+    /// National parks visited, country by country, for each country in the data — the
+    /// US first. `nationalParks` is every country's together.
+    public let nationalParksByCountry: [CountryCompletion]
+    /// States, prefectures or counties visited, by country.
+    public let subdivisionsByCountry: [CountryCompletion]
+    /// Passport regions with a visit, by book.
+    public let regionsByCountry: [CountryCompletion]
+    /// Countries visited, out of those the data covers.
+    public let countries: Completion
+
+    /// One country's share of a figure.
+    public struct CountryCompletion: Hashable, Sendable, Identifiable {
+        public let country: Country
+        public let completion: Completion
+        public var id: Country {
+            country
+        }
+    }
 
     public struct YearCount: Hashable, Sendable, Identifiable {
         public let year: Int
@@ -136,9 +154,10 @@ public struct StatsReport: Sendable {
         visitedStates = Self.states(in: visitedPlaces)
         states = Completion(visited: visitedStates.count, total: USState.all.count)
         visitedRegions = Self.regions(in: visitedPlaces)
+        // The US book's nine until Stats counts each country's book (ADR 0013).
         regions = Completion(
             visited: visitedRegions.count,
-            total: PassportRegion.allCases.count
+            total: PassportRegion.regions(in: .unitedStates).count
         )
 
         visitsByYear = Self.byYear(visits, calendar: calendar)
@@ -160,6 +179,18 @@ public struct StatsReport: Sendable {
         longestHikeMetres = totals.longest
         highestPointMetres = totals.highest
 
+        let byCountry = Self.byCountry(
+            places: places, parks: parks, visitedPlaces: visitedPlaces,
+            visitedPlaceIDs: visitedPlaceIDs
+        )
+        nationalParksByCountry = byCountry.parks
+        subdivisionsByCountry = byCountry.subdivisions
+        regionsByCountry = byCountry.regions
+        countries = Completion(
+            visited: Set(visitedPlaces.map(\.country)).count,
+            total: byCountry.parks.count
+        )
+
         nearestUnvisited = Self.nearest(
             to: origin,
             among: parks.filter { !visitedPlaceIDs.contains($0.id) }
@@ -168,6 +199,59 @@ public struct StatsReport: Sendable {
 
     // MARK: - Pieces
 
+    /// The per-country figures, for each country with places in the data, in
+    /// `Country.allCases` order: the US, then Japan, then Norway.
+    private static func byCountry(
+        places: [Place],
+        parks: [Place],
+        visitedPlaces: [Place],
+        visitedPlaceIDs: Set<UnigridsID>
+    ) -> CountryFigures {
+        let present = Set(places.map(\.country))
+        let countries = Country.allCases.filter(present.contains)
+        let parks = countries.map { country in
+            let mine = parks.filter { $0.country == country }
+            return CountryCompletion(
+                country: country,
+                completion: Completion(
+                    visited: mine.count { visitedPlaceIDs.contains($0.id) },
+                    total: mine.count
+                )
+            )
+        }
+        let subdivisions = countries.map { country in
+            let codes = Set(
+                visitedPlaces.filter { $0.country == country }.flatMap(\.subdivisions).map(\.code)
+            )
+            let all = Subdivision.all(in: country)
+            return CountryCompletion(
+                country: country,
+                completion: Completion(
+                    visited: all.count { codes.contains($0.code) },
+                    total: all.count
+                )
+            )
+        }
+        let visitedRegions = Set(visitedPlaces.map(\.resolvedPassportRegion))
+        let regions = countries.map { country in
+            let all = PassportRegion.regions(in: country)
+            return CountryCompletion(
+                country: country,
+                completion: Completion(
+                    visited: all.count { visitedRegions.contains($0) },
+                    total: all.count
+                )
+            )
+        }
+        return CountryFigures(parks: parks, subdivisions: subdivisions, regions: regions)
+    }
+
+    private struct CountryFigures {
+        let parks: [CountryCompletion]
+        let subdivisions: [CountryCompletion]
+        let regions: [CountryCompletion]
+    }
+
     private static func states(in places: [Place]) -> [USState] {
         let codes = Set(places.flatMap { $0.states.map(\.code) })
         return USState.all.filter { codes.contains($0.code) }
@@ -175,7 +259,7 @@ public struct StatsReport: Sendable {
 
     private static func regions(in places: [Place]) -> [PassportRegion] {
         let visited = Set(places.map(\.resolvedPassportRegion))
-        return PassportRegion.allCases.filter { visited.contains($0) }
+        return PassportRegion.regions(in: .unitedStates).filter { visited.contains($0) }
     }
 
     private static func byYear(

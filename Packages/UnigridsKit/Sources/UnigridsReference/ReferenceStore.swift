@@ -102,6 +102,13 @@ extension ReferenceStore {
             .sorted { $0.name < $1.name }
     }
 
+    /// A place's mountain huts and cabins, by name.
+    public func huts(in placeID: UnigridsID) -> [PointOfInterest] {
+        pointsOfInterest(in: placeID)
+            .filter { $0.kind == .hut }
+            .sorted { $0.name < $1.name }
+    }
+
     /// Official passport cancellation locations in a place.
     ///
     /// A site with several of these gets one passport slot per location (§9).
@@ -111,11 +118,13 @@ extension ReferenceStore {
             .sorted { $0.name < $1.name }
     }
 
-    /// Places matching a free-text query across name, designation and state.
+    /// Places matching a free-text query across name, local name, designation and state,
+    /// prefecture or county, folded so accents, Nordic letters and kana need not be typed
+    /// exactly (`SearchText`).
     public func search(_ query: String, limit: Int = 50) -> [Place] {
         let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else { return [] }
-        let needle = trimmed.lowercased()
+        let needle = SearchText.fold(trimmed)
         return places
             .compactMap { place -> (Place, Int)? in
                 guard let score = place.matchScore(for: needle) else { return nil }
@@ -230,28 +239,37 @@ extension ReferenceStore {
 
 extension Place {
     /// Lower is a better match. `nil` means no match at all.
+    /// `needle` is folded already.
     fileprivate func matchScore(for needle: String) -> Int? {
-        let name = name.lowercased()
+        let name = SearchText.fold(name)
         if name.hasPrefix(needle) {
             return 0
         }
         if name.contains(needle) {
             return 1
         }
+        if localNames.contains(where: { SearchText.fold($0.text).contains(needle) }) {
+            return 1
+        }
         // Two letters that are a state's code mean the state: "UT" is Utah.
         if needle.count == 2, states.contains(where: { $0.code.lowercased() == needle }) {
             return 1
         }
-        if designation.lowercased().contains(needle) {
+        if SearchText.fold(designation).contains(needle) {
             return 2
         }
         if states.contains(where: {
-            $0.name.lowercased().hasPrefix(needle) || $0.code.lowercased() == needle
+            SearchText.fold($0.name).hasPrefix(needle) || $0.code.lowercased() == needle
         }) {
             return 3
         }
         if let code = npsParkCode?.lowercased(), code == needle {
             return 0
+        }
+        // A prefecture or county by name. US states are matched above, as they always were.
+        let abroad = country != .unitedStates
+        if abroad, subdivisions.contains(where: { SearchText.fold($0.name).hasPrefix(needle) }) {
+            return 3
         }
         return nil
     }

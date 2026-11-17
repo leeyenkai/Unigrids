@@ -70,14 +70,26 @@ extension RouteLine: Codable {
     }
 }
 
-/// An Amtrak station the map can mark.
+/// A passenger station the map can mark: Amtrak's in the US, the national railways'
+/// abroad (ADR 0013).
 public struct RailStation: Identifiable, Hashable, Sendable, Codable {
-    /// Amtrak's three-letter station code, the stable key.
+    /// Amtrak's three-letter station code, the stable key; abroad, the OpenStreetMap
+    /// element (`osm:node/123`).
     public let code: String
     public let name: String
     public let city: String?
     public let state: USState?
     public let location: Coordinate
+    /// Set abroad; an Amtrak station has none.
+    public let country: Country?
+    /// The lines calling there, by name, abroad. Amtrak's services are matched from its
+    /// routes instead.
+    public let lines: [String]?
+
+    /// Whether this is one of Amtrak's.
+    public var isAmtrak: Bool {
+        country == nil || country == .unitedStates
+    }
 
     public var id: String {
         code
@@ -88,36 +100,71 @@ public struct RailStation: Identifiable, Hashable, Sendable, Codable {
         name: String,
         city: String? = nil,
         state: USState? = nil,
-        location: Coordinate
+        location: Coordinate,
+        country: Country? = nil,
+        lines: [String]? = nil
     ) {
         self.code = code
         self.name = name
         self.city = city
         self.state = state
         self.location = location
+        self.country = country
+        self.lines = lines
     }
 }
 
 /// The roads and railways the map can lay over the public lands (SPECIFICATION.md §5).
 ///
 /// From the National Transportation Atlas Database: the Interstates and the US routes on
-/// the National Highway System, and the Amtrak network with its train stations.
+/// the National Highway System, and the Amtrak network with its train stations. Abroad,
+/// the passenger railways and their stations from OpenStreetMap.
 public struct TransportNetwork: Hashable, Sendable, Codable {
     public let interstates: [RouteLine]
     public let usHighways: [RouteLine]
     public let amtrakRoutes: [RouteLine]
     public let amtrakStations: [RailStation]
+    /// Passenger rail lines abroad, drawn with Amtrak's on the rail layer.
+    public let railLines: [RouteLine]
+    /// Passenger stations abroad.
+    public let railStations: [RailStation]
 
     public init(
         interstates: [RouteLine] = [],
         usHighways: [RouteLine] = [],
         amtrakRoutes: [RouteLine] = [],
-        amtrakStations: [RailStation] = []
+        amtrakStations: [RailStation] = [],
+        railLines: [RouteLine] = [],
+        railStations: [RailStation] = []
     ) {
         self.interstates = interstates
         self.usHighways = usHighways
         self.amtrakRoutes = amtrakRoutes
         self.amtrakStations = amtrakStations
+        self.railLines = railLines
+        self.railStations = railStations
+    }
+
+    /// Every layer is optional, so a dataset built for one country decodes.
+    public init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        func lines(_ key: CodingKeys) throws -> [RouteLine] {
+            try container.decodeIfPresent([RouteLine].self, forKey: key) ?? []
+        }
+        func stations(_ key: CodingKeys) throws -> [RailStation] {
+            try container.decodeIfPresent([RailStation].self, forKey: key) ?? []
+        }
+        interstates = try lines(.interstates)
+        usHighways = try lines(.usHighways)
+        amtrakRoutes = try lines(.amtrakRoutes)
+        amtrakStations = try stations(.amtrakStations)
+        railLines = try lines(.railLines)
+        railStations = try stations(.railStations)
+    }
+
+    /// Every passenger station, at home and abroad.
+    public var allStations: [RailStation] {
+        amtrakStations + railStations
     }
 
     public static let empty = TransportNetwork()
@@ -130,19 +177,21 @@ public struct TransportNetwork: Hashable, Sendable, Codable {
         hasher.combine(usHighways.count)
         hasher.combine(amtrakRoutes.count)
         hasher.combine(amtrakStations.count)
+        hasher.combine(railLines.count)
+        hasher.combine(railStations.count)
         return hasher.finalize()
     }
 
     public var isEmpty: Bool {
         interstates.isEmpty && usHighways.isEmpty && amtrakRoutes.isEmpty
-            && amtrakStations.isEmpty
+            && amtrakStations.isEmpty && railLines.isEmpty && railStations.isEmpty
     }
 
     public func lines(for layer: TransportLayer) -> [RouteLine] {
         switch layer {
         case .interstates: interstates
         case .usHighways: usHighways
-        case .amtrak: amtrakRoutes
+        case .amtrak: amtrakRoutes + railLines
         }
     }
 
@@ -165,7 +214,7 @@ public struct TransportNetwork: Hashable, Sendable, Codable {
 
     /// The nearest train station to a point, with its distance in metres.
     public func nearestStation(to point: Coordinate) -> (station: RailStation, metres: Double)? {
-        amtrakStations
+        allStations
             .map { ($0, $0.location.distance(to: point)) }
             .min { $0.1 < $1.1 }
             .map { (station: $0.0, metres: $0.1) }
@@ -196,6 +245,18 @@ public enum TransportLayer: String, CaseIterable, Sendable, Codable, Identifiabl
         case .usHighways: "US routes on the National Highway System"
         case .amtrak: "Every Amtrak route, with its train stations close up"
         }
+    }
+
+    /// The layer's name once railways abroad ship beside Amtrak's.
+    public func name(withRailAbroad abroad: Bool) -> String {
+        self == .amtrak && abroad ? "Passenger rail" : name
+    }
+
+    public func detail(withRailAbroad abroad: Bool) -> String {
+        self == .amtrak && abroad
+            ? "Amtrak's routes, and Japan's and Norway's passenger railways, with their "
+            + "stations close up"
+            : detail
     }
 
     /// Below this latitude span the layer is worth drawing. US routes are a dense mesh at
@@ -293,7 +354,11 @@ extension TransportNetwork {
         within limit: Double = 100_000
     ) -> TrainAccess? {
         let reach = limit + (boundary.map { radius(of: $0.extent) } ?? 0)
-        let candidates = amtrakStations.filter { $0.location.distance(to: place.centre) <= reach }
+        // A station across a border is no way in: a park's trains are its own country's.
+        let candidates = allStations.filter {
+            ($0.country ?? .unitedStates) == place.country
+                && $0.location.distance(to: place.centre) <= reach
+        }
         let measured = candidates.map { station -> (RailStation, Double) in
             guard let boundary
             else { return (station, station.location.distance(to: place.centre)) }
@@ -310,7 +375,9 @@ extension TransportNetwork {
         }
         guard let (station, metres) = measured.min(by: { $0.1 < $1.1 }), metres <= limit
         else { return nil }
-        let services = amtrakRoutes(near: station.location, within: 1500).map(\.name)
+        let services = station.isAmtrak
+            ? amtrakRoutes(near: station.location, within: 1500).map(\.name)
+            : station.lines ?? []
         return TrainAccess(
             station: station,
             metres: metres,

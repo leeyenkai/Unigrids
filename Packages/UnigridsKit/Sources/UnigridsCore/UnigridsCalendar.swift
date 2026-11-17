@@ -32,6 +32,7 @@ public enum UnigridsCalendar {
         guard let place else { return .current }
         return place.timeZoneID.flatMap(TimeZone.init(identifier:))
             ?? place.states.first.flatMap(\.mainTimeZone)
+            ?? place.country.mainTimeZoneID.flatMap(TimeZone.init(identifier:))
             ?? .current
     }
 

@@ -87,6 +87,16 @@ struct LogStoreTests {
         #expect(!in2025.hasAmerica250Seal(calendar: calendar))
     }
 
+    @Test("a 2026 stamp abroad carries no seal, even once its place has gone")
+    func america250SealIsAmerican() throws {
+        let shiretoko = try store.stamp("jp-np-shiretoko", on: date(2026, 8, 1))
+        let jotunheimen = try store.stamp("no-np-jotunheimen", on: date(2026, 8, 3))
+        // Neither place is in the bundled data yet: the identifier alone says where.
+        #expect(!shiretoko.hasAmerica250Seal(calendar: calendar))
+        #expect(!shiretoko.hasAmerica250Seal(at: nil))
+        #expect(!jotunheimen.hasAmerica250Seal(calendar: calendar))
+    }
+
     @Test("a stamp's impression survives a round trip through the store")
     func seedRoundTrips() throws {
         let stamp = try store.stamp("np-zion", on: date(2026, 5, 1))

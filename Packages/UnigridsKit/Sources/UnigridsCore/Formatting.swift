@@ -19,10 +19,16 @@ public enum UnigridsFormat {
     /// Whole units only. Converting acres to hectares otherwise produces a figure like
     /// `19,859.947893 ha`, which reads as a precision the source never had.
     public static func area(acres: Double, locale: Locale = .current) -> String {
-        let measurement = Measurement(value: acres, unit: UnitArea.acres)
-        let converted = usesUSUnits(locale)
-            ? measurement
-            : measurement.converted(to: .hectares)
+        area(Measurement(value: acres, unit: UnitArea.acres), locale: locale)
+    }
+
+    /// An area in acres or hectares, whichever it was published in, written the reader's
+    /// way: a US reader gets acres, everyone else hectares.
+    public static func area(
+        _ measurement: Measurement<UnitArea>,
+        locale: Locale = .current
+    ) -> String {
+        let converted = measurement.converted(to: usesUSUnits(locale) ? .acres : .hectares)
         return converted.formatted(
             .measurement(
                 width: .abbreviated,

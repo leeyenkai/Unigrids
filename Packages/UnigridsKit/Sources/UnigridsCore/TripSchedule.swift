@@ -78,14 +78,17 @@ public enum TripSchedule {
         }
     }
 
-    /// Whether a date falls in the months when mountain roads and high facilities close —
-    /// November to April in the northern hemisphere — so a guide's seasonal-closure notes
-    /// are worth raising on a stop planned then.
+    /// Whether a date falls in the months when mountain roads and high facilities close,
+    /// so a guide's seasonal-closure notes are worth raising on a stop planned then: the
+    /// guide's own months where it gives them, else November to April in the northern
+    /// hemisphere. `calendar` should be the place's, so the month is the month there.
     public static func isClosureSeason(
         _ date: Date,
+        months: [Int] = [],
         calendar: Calendar = UnigridsCalendar.gregorian()
     ) -> Bool {
         let month = calendar.component(.month, from: date)
+        guard months.isEmpty else { return months.contains(month) }
         return month >= 11 || month <= 4
     }
 }

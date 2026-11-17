@@ -27,6 +27,9 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
     case conservationArea
     case naturalLandmark
     case scenicByway
+    case quasiNationalPark
+    case protectedLandscape
+    case natureReserve
 
     public var id: String {
         rawValue
@@ -59,6 +62,9 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .blmConservationArea: .conservationArea
         case .naturalLandmark: .naturalLandmark
         case .scenicByway: .scenicByway
+        case .quasiNationalPark: .quasiNationalPark
+        case .protectedLandscape: .protectedLandscape
+        case .natureReserve: .natureReserve
         case .blmMonument:
             designation.lowercased().contains("monument") ? .nationalMonument
                 : .conservationArea
@@ -106,6 +112,9 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .conservationArea: "Conservation areas"
         case .naturalLandmark: "Natural landmarks"
         case .scenicByway: "Scenic byways"
+        case .quasiNationalPark: "Quasi-national parks"
+        case .protectedLandscape: "Protected landscapes"
+        case .natureReserve: "Nature reserves"
         }
     }
 
@@ -130,13 +139,16 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .conservationArea: "Conservation area"
         case .naturalLandmark: "Natural landmark"
         case .scenicByway: "Scenic byway"
+        case .quasiNationalPark: "Quasi-national park"
+        case .protectedLandscape: "Protected landscape"
+        case .natureReserve: "Nature reserve"
         }
     }
 
     /// One line on what the type covers, for the map key.
     public var detail: String {
         switch self {
-        case .nationalPark: "The 63, each with a full guide"
+        case .nationalPark: "Each with a full guide"
         case .nationalMonument: "NPS, BLM and Forest Service monuments"
         case .nationalPreserve: "NPS preserves and reserves"
         case .historicSite: "Historic sites, historical parks and areas"
@@ -154,6 +166,9 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .conservationArea: "BLM conservation areas and similar designations"
         case .naturalLandmark: "National Natural Landmarks, as points"
         case .scenicByway: "National Scenic Byways and All-American Roads"
+        case .quasiNationalPark: "Japan's, designated by the ministry and run by the prefectures"
+        case .protectedLandscape: "Norway's landscape protection areas"
+        case .natureReserve: "Norway's nature reserves of 10 km² or more"
         }
     }
 
@@ -166,9 +181,9 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .nationalMonument, .nationalPreserve, .historicSite, .battlefield, .memorial,
              .seashore, .recreationArea, .river, .parkway, .otherNPSSite:
             .npsUnit
-        case .statePark: .statePark
+        case .statePark, .quasiNationalPark: .statePark
         case .nationalForest, .nationalGrassland, .wildlifeRefuge, .conservationArea,
-             .naturalLandmark, .scenicByway:
+             .naturalLandmark, .scenicByway, .protectedLandscape, .natureReserve:
             .federalSite
         }
     }
@@ -185,6 +200,19 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .wildlifeRefuge: .fishAndWildlife
         case .conservationArea: .blm
         case .naturalLandmark, .scenicByway: .other
+        case .quasiNationalPark: .prefecture
+        case .protectedLandscape, .natureReserve: .environmentAgencyNorway
+        }
+    }
+
+    /// The country whose designation the type is: nil for national parks, which every
+    /// country has.
+    public var homeCountry: Country? {
+        switch self {
+        case .nationalPark: nil
+        case .quasiNationalPark: .japan
+        case .protectedLandscape, .natureReserve: .norway
+        default: .unitedStates
         }
     }
 
@@ -216,9 +244,10 @@ public enum SiteType: String, CaseIterable, Sendable, Codable, Identifiable, Com
         case .nationalPark, .nationalMonument, .nationalPreserve, .historicSite, .battlefield,
              .memorial, .seashore, .recreationArea, .river, .parkway, .otherNPSSite:
             .nationalParkService
-        case .nationalForest, .nationalGrassland, .wildlifeRefuge, .conservationArea:
+        case .nationalForest, .nationalGrassland, .wildlifeRefuge, .conservationArea,
+             .protectedLandscape, .natureReserve:
             .otherPublicLands
-        case .statePark, .naturalLandmark, .scenicByway:
+        case .statePark, .quasiNationalPark, .naturalLandmark, .scenicByway:
             .statesAndLandmarks
         }
     }
@@ -238,8 +267,8 @@ extension Place {
         let noun = kind == .scenicByway ? designation : siteType.singularName.lowercased()
         let article = noun.lowercased().first.map { "aeiou".contains($0) } == true ? "An" : "A"
         var sentence = "\(article) \(noun)"
-        if !states.isEmpty {
-            let names = states.map(\.name)
+        let names = country == .unitedStates ? states.map(\.name) : subdivisions.map(\.name)
+        if !names.isEmpty {
             let list = names.count <= 2 ? names.joined(separator: " and ")
                 : names.dropLast().joined(separator: ", ") + " and " + (names.last ?? "")
             sentence += " in \(list)"
@@ -249,6 +278,14 @@ extension Place {
             sentence += ", managed by the \(agency.name)"
         case .stateAgency:
             sentence += ", run by the state"
+        case .environmentMinistryJapan:
+            sentence += ", designated by Japan's Ministry of the Environment"
+        case .prefecture:
+            sentence += ", designated by Japan's Ministry of the Environment and run by the "
+                + "prefecture"
+        case .environmentAgencyNorway:
+            sentence += managedBy.map { ", managed by \($0)" }
+                ?? ", protected by the Norwegian state"
         case .other:
             if kind == .naturalLandmark {
                 sentence += ", recognised by the National Park Service's National Natural "

@@ -21,6 +21,18 @@ public enum America250 {
         calendar.component(.year, from: date) == year
     }
 
+    /// Whether a stamp dated `date` at a place in `country` carries the seal.
+    ///
+    /// The anniversary is the United States', so a stamp made abroad never carries it,
+    /// whatever its date (SPECIFICATION.md §17, item 25).
+    public static func applies(
+        to date: Date,
+        in country: Country,
+        calendar: Calendar = UnigridsCalendar.gregorian()
+    ) -> Bool {
+        country == .unitedStates && applies(to: date, calendar: calendar)
+    }
+
     /// The text on the seal.
     public static let sealText = "AMERICA 250"
 }

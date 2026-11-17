@@ -9,6 +9,8 @@ public enum POIKind: String, CaseIterable, Sendable, Codable {
     case trailhead
     case stampLocation
     case campground
+    /// A mountain hut or cabin: Japan's 山小屋, Norway's DNT cabins.
+    case hut
 
     public var name: String {
         switch self {
@@ -19,7 +21,14 @@ public enum POIKind: String, CaseIterable, Sendable, Codable {
         case .trailhead: "Trailhead"
         case .stampLocation: "Stamp location"
         case .campground: "Campground"
+        case .hut: "Hut"
         }
+    }
+
+    /// Whether the explorer and the park map draw it among the facilities: somewhere to
+    /// ask, camp or sleep.
+    public var isFacility: Bool {
+        self == .visitorCentre || self == .campground || self == .hut
     }
 
     /// Whether a user can check in here. Entrances are waypoints, not destinations.
