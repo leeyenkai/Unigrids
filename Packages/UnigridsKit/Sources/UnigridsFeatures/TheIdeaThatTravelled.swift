@@ -20,7 +20,8 @@ enum TheIdeaThatTravelled {
         + "black band and grid these guides are drawn in. The idea travelled. New Zealand made "
         + "Tongariro its first in 1894, on peaks Te Heuheu Tūkino IV had gifted in 1887. "
         + "Japan passed its National Parks Act in 1931 and named its first three parks — "
-        + "Setonaikai, Unzen and Kirishima — on 16 March 1934. Norway made Rondane its first in 1962."
+        + "Setonaikai, Unzen and Kirishima — on 16 March 1934. Norway made Rondane its first "
+        + "in 1962."
 
     static let milestones: [(year: String, text: String)] = [
         ("1872", "Yellowstone"),
