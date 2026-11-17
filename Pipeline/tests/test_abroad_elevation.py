@@ -240,6 +240,57 @@ def test_attach_fills_only_what_a_guide_does_not_give(dem):
     assert "facts" not in places[2]
 
 
+def test_a_measured_range_outlives_its_tiles(dem, tmp_path: Path):
+    """Tiles are deleted after a build to free the disk; the next build, offline and
+    without them, must still carry every park's range rather than silently dropping it."""
+    kept = tmp_path / "kept"
+    outlines = {"ca-np-a": [[square(8.2, 61.2, 8.6, 61.6)]]}
+    places = [{"id": "ca-np-a", "kind": "nationalPark"}]
+    cache = elevation.ExtremesCache(kept)
+    assert elevation.attach_extremes(places, outlines, dem=dem, cache=cache) == 1
+    measured = places[0]["facts"]
+    assert (kept / elevation.EXTREMES_FILE).exists()
+
+    for tile in tmp_path.glob("*.tif"):
+        tile.unlink()
+    no_tiles = elevation.CopernicusDEM(online=False, directory=tmp_path)
+    again = [{"id": "ca-np-a", "kind": "nationalPark"}]
+    assert elevation.attach_extremes(
+        again, outlines, dem=no_tiles, cache=elevation.ExtremesCache(kept)
+    ) == 1
+    assert again[0]["facts"] == measured
+    assert again[0]["facts"]["elevationNote"] == elevation.NOTE
+
+    # A redrawn outline is measured again where it can be; without tiles the last
+    # measurement stands in, and a park never measured is left without a figure.
+    redrawn = {"ca-np-a": [[square(8.2, 61.2, 8.5, 61.5)]],
+               "ca-np-b": [[square(8.2, 61.2, 8.5, 61.5)]]}
+    third = [{"id": "ca-np-a", "kind": "nationalPark"}, {"id": "ca-np-b", "kind": "nationalPark"}]
+    elevation.attach_extremes(third, redrawn, dem=no_tiles, cache=elevation.ExtremesCache(kept))
+    assert third[0]["facts"]["highestElevationMetres"] == measured["highestElevationMetres"]
+    assert "highestElevationMetres" not in third[1]["facts"]
+
+
+def test_two_builds_saving_measurements_keep_each_others(tmp_path: Path):
+    first, second = elevation.ExtremesCache(tmp_path), elevation.ExtremesCache(tmp_path)
+    first.put("ca-np-a", "f1", (0, 100))
+    second.put("nz-np-b", "f2", (5, 200))
+    first.save()
+    second.save()
+    kept = elevation.ExtremesCache(tmp_path)
+    assert kept.get("ca-np-a", "f1") == (0, 100) and kept.get("nz-np-b", "f2") == (5, 200)
+
+
+def test_an_outline_fingerprint_is_stable_and_sensitive():
+    one = [[square(8.2, 61.2, 8.6, 61.6)]]
+    assert elevation.outline_fingerprint(one) == elevation.outline_fingerprint(
+        [[square(8.2, 61.2, 8.6, 61.6)]]
+    )
+    assert elevation.outline_fingerprint(one) != elevation.outline_fingerprint(
+        [[square(8.2, 61.2, 8.6, 61.7)]]
+    )
+
+
 def test_the_credit_and_note_say_what_the_app_shows():
     assert elevation.NOTE == "Measured by Unigrids from Copernicus GLO-30"
     assert elevation.CREDIT.startswith("Copernicus GLO-30 (© DLR e.V. 2010–2014")

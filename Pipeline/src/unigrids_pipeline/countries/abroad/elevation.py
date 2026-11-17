@@ -31,6 +31,7 @@ an official summit height, only fills a figure no source gives, and says so
 
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import zlib
@@ -609,12 +610,24 @@ def attach_extremes(
     *,
     online: bool = True,
     dem: CopernicusDEM | None = None,
+    cache: ExtremesCache | None = None,
 ) -> int:
     """Fill each national park's missing ``lowestElevationMetres`` and
     ``highestElevationMetres`` from its outline, with :data:`NOTE`. A figure a guide
-    already gives is left alone: an official height beats a surface model's."""
+    already gives is left alone: an official height beats a surface model's.
+
+    Every measurement is kept in ``cache`` (by default the raw store's, when no ``dem`` is
+    handed in), and a park whose outline has not changed since is read from it without
+    opening a tile. So the tiles — many gigabytes for the Arctic parks — can be deleted
+    after a build, and a later build without them, offline, still carries every range.
+    Where the tiles are gone and the outline has changed, the last measurement is used and
+    said to be used; only a park never measured goes without, and is named.
+    """
     model = dem or CopernicusDEM(online=online)
-    filled = 0
+    if cache is None and dem is None:
+        cache = ExtremesCache()
+    filled = from_cache = 0
+    unmeasured: list[str] = []
     for place in places:
         if place.get("kind") != "nationalPark":
             continue
@@ -624,16 +637,123 @@ def attach_extremes(
         polygons = outlines.get(place["id"])
         if not polygons:
             continue
-        extremes = park_extremes(polygons, dem=model)
+        fingerprint = outline_fingerprint(polygons)
+        extremes = cache.get(place["id"], fingerprint) if cache else None
+        if extremes is not None:
+            from_cache += 1
+        else:
+            extremes = park_extremes(polygons, dem=model)
+            if extremes is not None and cache is not None:
+                cache.put(place["id"], fingerprint, extremes)
+        if extremes is None and cache is not None:
+            extremes = cache.get(place["id"])
+            if extremes is not None:
+                from_cache += 1
+                print(f"    elevation: {place['id']} from its last measurement (tiles "
+                      "missing, outline changed since)")
         if extremes is None:
-            print(f"    elevation: {place['id']} could not be measured (tiles missing)")
+            unmeasured.append(place["id"])
             continue
         facts.setdefault("lowestElevationMetres", extremes[0])
         facts.setdefault("highestElevationMetres", extremes[1])
         facts["elevationNote"] = NOTE
         filled += 1
-    print(f"    elevation: {filled} parks' ranges measured on Copernicus GLO-30")
+    if cache is not None:
+        cache.save()
+    print(f"    elevation: {filled} parks' ranges measured on Copernicus GLO-30 "
+          f"({from_cache} read from the measurements kept in the raw store)")
+    if unmeasured:
+        print(f"    elevation: NOT MEASURED, tiles missing and never measured before "
+              f"({len(unmeasured)}): {', '.join(unmeasured)}")
     return filled
+
+
+# MARK: - Measurements kept
+
+EXTREMES_SOURCE = "elevation-extremes"
+EXTREMES_FILE = "extremes.json"
+
+EXTREMES_TERMS = SourceTerms(
+    identifier="copernicus-dem-glo30-extremes",
+    title="Each national park's lowest and highest ground, measured on Copernicus GLO-30",
+    url=f"{BUCKET}/readme.html",
+    licence=TERMS.licence,
+    attribution=TERMS.attribution,
+    notes=(
+        "Unigrids' own measurements (park_extremes), kept so the tiles they were read from "
+        "can be deleted. Each entry carries the fingerprint of the outline it was measured "
+        "over; a changed outline is measured again when the tiles are at hand. " + LIABILITY
+    ),
+)
+
+
+def outline_fingerprint(polygons: list[outline.Polygon]) -> str:
+    """A short digest of an outline's coordinates, to 1e-6°: the same raw outline gives the
+    same fingerprint every run, and a redrawn one a different one."""
+    digest = hashlib.sha1()
+    for polygon in polygons:
+        for ring in polygon:
+            for longitude, latitude in ring:
+                digest.update(f"{longitude:.6f},{latitude:.6f};".encode())
+            digest.update(b"|")
+        digest.update(b"#")
+    return digest.hexdigest()[:16]
+
+
+class ExtremesCache:
+    """Park ID → its measured lowest and highest ground and the outline it was measured
+    over, read from the newest ``raw/<date>/elevation-extremes/extremes.json`` and written,
+    with everything read, to today's. ``directory`` pins it to one folder (tests)."""
+
+    def __init__(self, directory: Path | None = None) -> None:
+        self.directory = directory
+        source = directory if directory is not None else rawstore.latest(
+            EXTREMES_SOURCE, EXTREMES_FILE
+        )
+        path = source / EXTREMES_FILE if source is not None else None
+        self.entries: dict[str, dict[str, Any]] = (
+            json.loads(path.read_text()) if path is not None and path.exists() else {}
+        )
+        self._changed = False
+        self._mine: dict[str, dict[str, Any]] = {}
+
+    def get(self, place_id: str, fingerprint: str | None = None) -> tuple[int, int] | None:
+        """The kept measurement, if the outline matches ``fingerprint`` (or any, if None)."""
+        entry = self.entries.get(place_id)
+        if not entry or (fingerprint is not None and entry.get("outline") != fingerprint):
+            return None
+        return int(entry["lowestMetres"]), int(entry["highestMetres"])
+
+    def put(self, place_id: str, fingerprint: str, extremes: tuple[int, int]) -> None:
+        entry = {
+            "lowestMetres": extremes[0],
+            "highestMetres": extremes[1],
+            "outline": fingerprint,
+        }
+        if {k: v for k, v in (self.entries.get(place_id) or {}).items() if k in entry} != entry:
+            self.entries[place_id] = {**entry, "measuredAt": rawstore.utc_now()}
+            self._mine[place_id] = self.entries[place_id]
+            self._changed = True
+
+    def save(self) -> Path | None:
+        """Write the measurements if any are new, with ``source.json`` beside them."""
+        if not self._changed:
+            return None
+        directory = self.directory or rawstore.version_directory(EXTREMES_SOURCE)
+        directory.mkdir(parents=True, exist_ok=True)
+        path = directory / EXTREMES_FILE
+        # Another country's build may have saved since this one read: keep its parks.
+        if path.exists():
+            on_disk = json.loads(path.read_text())
+            self.entries = {**on_disk, **self._mine, **{
+                key: value for key, value in self.entries.items() if key not in on_disk
+            }}
+        path.write_text(json.dumps(dict(sorted(self.entries.items())), indent=1) + "\n")
+        record = FetchRecord(source=EXTREMES_TERMS, fetched_at=rawstore.utc_now())
+        record.add_file(path, root=directory)
+        record.write(directory)
+        self._changed = False
+        return path
 
 
 # MARK: - A pack's grid
