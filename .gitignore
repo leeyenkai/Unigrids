@@ -91,3 +91,9 @@ Packages/UnigridsKit/Sources/UnigridsReference/Resources/generated/
 # reproducible, so only the folder's README is committed.
 App/OfflinePacks/*
 !App/OfflinePacks/README.md
+
+# iCloud's conflict copies ("np-zion 2.json", "Deletion 3.swift"): this checkout lives in
+# a synced folder, and a rewritten file can come back with a numbered twin. Never commit
+# one; scripts/common.sh refuses to build while any is present.
+* [0-9].*
+* [0-9][0-9].*
