@@ -128,7 +128,6 @@ def build(
         max_zoom=settings.max_zoom,
         extra=trail_box,
     )
-    zooms = list(range(settings.min_zoom, settings.max_zoom + 1))
 
     directory = out_directory / park.place_id
     directory.mkdir(parents=True, exist_ok=True)
@@ -155,66 +154,22 @@ def build(
     )
 
     layers = render.layers_from_sources(osm_ways, trail_features, boundary_features)
-    renderer = render.TileRenderer(grid, layers, tile_size=settings.tile_size)
-
-    measurements: list[ZoomMeasurement] = []
-    bounding_box_counts = park_coverage.bounding_box_tile_counts(zooms)
-    _, centre_latitude = park_coverage.render_bounds.centre
-
-    with mbtiles.MBTilesWriter(directory / "tiles.mbtiles") as writer:
-        for zoom in zooms:
-            tiles = park_coverage.tiles(zoom)
-            measurement = ZoomMeasurement(
-                zoom=zoom,
-                tiles=len(tiles),
-                bytes_total=0,
-                bounding_box_tiles=bounding_box_counts[zoom],
-                metres_per_pixel=tile_resolution_m_per_pixel(
-                    zoom, centre_latitude, settings.tile_size
-                ),
-            )
-            sample_indices = _sample_indices(len(tiles), SAMPLE_TILES_PER_ZOOM, zoom)
-            for index, (x, y) in enumerate(tiles):
-                image = renderer.render(zoom, x, y)
-                data = render.encode(
-                    image, settings.tile_format, webp_quality=settings.webp_quality
-                )
-                writer.add(zoom, x, y, data)
-                measurement.bytes_total += len(data)
-                if index in sample_indices:
-                    for tile_format in FORMATS:
-                        encoded = (
-                            data
-                            if tile_format == settings.tile_format
-                            else render.encode(
-                                image, tile_format, webp_quality=settings.webp_quality
-                            )
-                        )
-                        measurement.sample_bytes.setdefault(tile_format, []).append(len(encoded))
-            measurements.append(measurement)
-            layers.forget_index(zoom)
-            print(
-                f"    z{zoom:<2} {measurement.tiles:>6} tiles  "
-                f"{measurement.bytes_total / 1e6:>8.2f} MB  "
-                f"{measurement.mean_tile_bytes / 1024:>6.1f} KB/tile  "
-                f"{measurement.metres_per_pixel:>8.2f} m/px"
-            )
-        writer.describe(
-            name=f"{park.name} offline pack",
-            description=(
-                "Topo-style tiles rendered from USGS 3DEP elevation and OpenStreetMap "
-                "roads and water, with NPS public trails. Not an NPS product."
-            ),
-            tile_format=settings.tile_format,
-            bounds=park_coverage.render_bounds,
-            min_zoom=settings.min_zoom,
-            max_zoom=settings.max_zoom,
-            attribution=(
-                "Elevation: USGS 3DEP (public domain). Roads and water: "
-                "© OpenStreetMap contributors (ODbL). Trails: NPS Public Trails."
-            ),
-        )
-        tile_bytes = writer.tile_bytes
+    measurements, tile_bytes = render_tiles(
+        directory / "tiles.mbtiles",
+        park_coverage,
+        layers,
+        grid,
+        settings,
+        name=f"{park.name} offline pack",
+        description=(
+            "Topo-style tiles rendered from USGS 3DEP elevation and OpenStreetMap "
+            "roads and water, with NPS public trails. Not an NPS product."
+        ),
+        attribution=(
+            "Elevation: USGS 3DEP (public domain). Roads and water: "
+            "© OpenStreetMap contributors (ODbL). Trails: NPS Public Trails."
+        ),
+    )
 
     total_length_m = sum(trail.lengthMetres for trail in derived)
     covered = sum(
@@ -255,6 +210,80 @@ def build(
         tile_bytes=tile_bytes,
         mbtiles_bytes=(directory / "tiles.mbtiles").stat().st_size,
     )
+
+
+def render_tiles(
+    path: Path,
+    park_coverage: ParkCoverage,
+    layers: render.VectorLayers,
+    grid: ElevationGrid,
+    settings: config.PackSettings,
+    *,
+    name: str,
+    description: str,
+    attribution: str,
+) -> tuple[list[ZoomMeasurement], int]:
+    """Render every tile the coverage asks for into one MBTiles file, measuring each zoom.
+
+    Shared by the US packs and the packs abroad, which differ in their sources and the
+    words they write, not in how a tile is drawn. Returns the per-zoom measurements and
+    the bytes of tile data written.
+    """
+    renderer = render.TileRenderer(grid, layers, tile_size=settings.tile_size)
+    zooms = list(range(settings.min_zoom, settings.max_zoom + 1))
+
+    measurements: list[ZoomMeasurement] = []
+    bounding_box_counts = park_coverage.bounding_box_tile_counts(zooms)
+    _, centre_latitude = park_coverage.render_bounds.centre
+
+    with mbtiles.MBTilesWriter(path) as writer:
+        for zoom in zooms:
+            tiles = park_coverage.tiles(zoom)
+            measurement = ZoomMeasurement(
+                zoom=zoom,
+                tiles=len(tiles),
+                bytes_total=0,
+                bounding_box_tiles=bounding_box_counts[zoom],
+                metres_per_pixel=tile_resolution_m_per_pixel(
+                    zoom, centre_latitude, settings.tile_size
+                ),
+            )
+            sample_indices = _sample_indices(len(tiles), SAMPLE_TILES_PER_ZOOM, zoom)
+            for index, (x, y) in enumerate(tiles):
+                image = renderer.render(zoom, x, y)
+                data = render.encode(
+                    image, settings.tile_format, webp_quality=settings.webp_quality
+                )
+                writer.add(zoom, x, y, data)
+                measurement.bytes_total += len(data)
+                if index in sample_indices:
+                    for tile_format in FORMATS:
+                        encoded = (
+                            data
+                            if tile_format == settings.tile_format
+                            else render.encode(
+                                image, tile_format, webp_quality=settings.webp_quality
+                            )
+                        )
+                        measurement.sample_bytes.setdefault(tile_format, []).append(len(encoded))
+            measurements.append(measurement)
+            layers.forget_index(zoom)
+            print(
+                f"    z{zoom:<2} {measurement.tiles:>6} tiles  "
+                f"{measurement.bytes_total / 1e6:>8.2f} MB  "
+                f"{measurement.mean_tile_bytes / 1024:>6.1f} KB/tile  "
+                f"{measurement.metres_per_pixel:>8.2f} m/px"
+            )
+        writer.describe(
+            name=name,
+            description=description,
+            tile_format=settings.tile_format,
+            bounds=park_coverage.render_bounds,
+            min_zoom=settings.min_zoom,
+            max_zoom=settings.max_zoom,
+            attribution=attribution,
+        )
+        return measurements, writer.tile_bytes
 
 
 def _box_of_trails(trail_features: list[dict[str, Any]]) -> BoundingBox | None:

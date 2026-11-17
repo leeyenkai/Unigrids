@@ -92,6 +92,12 @@ def fetch(
         known = ", ".join((*KEYLESS_SOURCES, *KEYED_SOURCES))
         raise SystemExit(f"unknown source {source!r}. Known sources: {known}")
 
+    if _is_abroad(park_code):
+        from .countries.abroad import packs as abroad
+
+        abroad.fetch(park_code, source, refresh=refresh)
+        return
+
     park = config.park(park_code)
     wanted = (source,) if source else KEYLESS_SOURCES
     version = rawstore.today()
@@ -195,7 +201,16 @@ def derive(*, park_code: str = config.DEFAULT_PARK) -> None:
     method is in ``measure.py`` and is recorded next to its output. Theme tags, passport
     regions, climate normals and sight ranks are not built — they need the NPS API and the
     full unit list, which need a key.
+
+    A park abroad (``jp-np-…``, ``no-np-…``) is measured as the catalogue abroad measures
+    it, on Copernicus GLO-30 (``countries/abroad/packs.py``).
     """
+    if _is_abroad(park_code):
+        from .countries.abroad import packs as abroad
+
+        abroad.derive(park_code)
+        return
+
     park = config.park(park_code)
     trail_features = _read_geojson(
         rawstore.require("trails", f"{park.place_id}.geojson") / f"{park.place_id}.geojson"
@@ -272,7 +287,15 @@ def build(
 
     Built: one park's pack, and the size report that answers the question. The bundled
     SQLite dataset is not — it needs ``match`` and ``edit``, which need the NPS API.
+
+    A park abroad is built from its own sources, with tiles to zoom 15 at most and no
+    all-parks extrapolation (``countries/abroad/packs.py``).
     """
+    if _is_abroad(park_code):
+        from .countries.abroad import packs as abroad
+
+        return abroad.build(park_code, settings=settings, zoom_by_area=zoom_by_area)
+
     park = config.park(park_code)
     settings = settings or config.DEFAULT_PACK_SETTINGS
 
@@ -289,7 +312,11 @@ def build(
         settings = dataclasses.replace(settings, max_zoom=config.max_zoom_for_area(area))
         print(f"    {area:,.0f} km², so tiles to zoom {settings.max_zoom}")
     osm_payload = json.loads((osm_directory / f"{park.place_id}.json").read_text())
-    osm_ways = osm.ways(osm_payload)
+    # A lake mapped as many shoreline ways fills as one shape, not as slivers closed by
+    # straight chords (Yellowstone Lake was cut in two by one).
+    from .countries.abroad.packs import water_as_rings
+
+    osm_ways = osm.ways(water_as_rings(osm_payload))
     grid = dem.ElevationGrid.load(elevation_directory / park.place_id)
     print(
         f"    {len(trail_features)} trail segments, {len(osm_ways)} OSM ways, "
@@ -360,7 +387,7 @@ def package(*, parks: str | None = None) -> Path:
     source = config.OUT_DIR / "packs"
     destination = config.APP_OFFLINE_PACKS
     wanted = (
-        {config.park(code).place_id for code in parks.split(",") if code.strip()}
+        {_place_id(code.strip()) for code in parks.split(",") if code.strip()}
         if parks
         else None
     )
@@ -399,6 +426,21 @@ def package(*, parks: str | None = None) -> Path:
 
 
 PACK_FILES = ("tiles.mbtiles", "trails.json", "manifest.json", "ATTRIBUTION.md")
+
+
+def _is_abroad(code: str) -> bool:
+    """Whether ``--park`` names a park abroad by its place ID (``jp-np-chubusangaku``)
+    rather than an NPS code. The abroad module is imported only when one is named."""
+    parts = code.lower().split("-")
+    return len(parts) >= 3 and parts[0] in ("jp", "no")
+
+
+def _place_id(code: str) -> str:
+    if _is_abroad(code):
+        from .countries.abroad import packs as abroad
+
+        return abroad.park(code).place_id
+    return config.park(code).place_id
 
 
 def _render_box(park: config.Park, boundary_features: list[dict[str, Any]] | None) -> BoundingBox:

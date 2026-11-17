@@ -15,6 +15,8 @@ from __future__ import annotations
 
 import json
 import time
+from collections.abc import Mapping
+from contextlib import nullcontext
 from pathlib import Path
 from typing import Any
 
@@ -38,14 +40,33 @@ TERMS = SourceTerms(
 
 
 def fetch(version: str, *, refresh: bool = False) -> Path:
-    directory = rawstore.version_directory("climate", version)
+    """Every US national park's climate, at the centre its content row gives."""
+    points = {
+        row["id"]: (row["centre"][0], row["centre"][1])
+        for _, row in reference_content.national_park_rows()
+    }
+    return fetch_points(points, version, refresh=refresh)
+
+
+def fetch_points(
+    points: Mapping[str, tuple[float, float]],
+    version: str,
+    *,
+    source: str = "climate",
+    refresh: bool = False,
+    session: httpx.Client | None = None,
+) -> Path:
+    """Ten years of daily weather at each ``(latitude, longitude)``, one file per place
+    id in ``raw/<version>/<source>/``, resuming where an earlier run stopped. A country
+    other than the US passes its own ``source`` and, if it identifies itself differently,
+    its own ``session``."""
+    directory = rawstore.version_directory(source, version)
     record = FetchRecord(source=TERMS, fetched_at=rawstore.utc_now())
-    with http.client() as session:
-        for _, row in reference_content.national_park_rows():
-            path = directory / f"{row['id']}.json"
+    with nullcontext(session) if session else http.client() as client:
+        for place_id, (latitude, longitude) in points.items():
+            path = directory / f"{place_id}.json"
             if path.exists() and not refresh:
                 continue
-            latitude, longitude = row["centre"]
             parameters = {
                 "latitude": f"{latitude:.4f}",
                 "longitude": f"{longitude:.4f}",
@@ -54,14 +75,14 @@ def fetch(version: str, *, refresh: bool = False) -> Path:
                 "daily": "temperature_2m_max,temperature_2m_min,precipitation_sum",
                 "timezone": "auto",
             }
-            payload = _get(session, parameters)
+            payload = _get(client, parameters)
             if payload is None:
-                print(f"    climate: {row['id']} failed")
+                print(f"    climate: {place_id} failed")
                 continue
             path.write_text(json.dumps(payload))
             record.add_request(ARCHIVE, parameters)
             record.add_file(path, root=directory)
-            print(f"    climate: {row['id']}", flush=True)
+            print(f"    climate: {place_id}", flush=True)
             time.sleep(1.0)
     record.write(directory)
     return directory

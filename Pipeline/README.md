@@ -37,18 +37,93 @@ writes into an iCloud-synced folder.)
 
 | Stage | Module | Does |
 |---|---|---|
-| Fetch | `reference_fetch.py` | NPS Data API parks, visitor centres, stamp locations, places, campgrounds and activities, one park at a time (`sources/npsapi.py`); NPS unit boundaries; PAD-US fee and management layers for curated state parks; Wikipedia summaries and Commons licence metadata; candidate photographs; then each of the modules below. Into `raw/<date>/` |
+| Fetch | `countries/us/fetching.py` | NPS Data API parks, visitor centres, stamp locations, places, campgrounds and activities, one park at a time (`sources/npsapi.py`); NPS unit boundaries; PAD-US fee and management layers for curated state parks; Wikipedia summaries and Commons licence metadata; candidate photographs; then each of the modules below. Into `raw/<date>/` |
 | Lands and transport | `lands_fetch.py`, `lands_build.py` | Forest Service proclaimed forests and grasslands, FWS refuge boundaries, BLM National Conservation Lands, NPS National Natural Landmarks, FHWA byways and Census states; NTAD Interstates, US routes and Amtrak routes and stations. Names cleaned (title case, refuge suffixes, BLM overrides by NLCS ID), states found by sampling each outline against state polygons |
 | Trails | `trail_catalogue.py` | NPS Public Trails per national park, joined by name and kept inside the park's outline; 3DEP sampled every 30 m (cached per park); length, climb, profile, loops, features, sights along the way |
 | Documents | `brochures.py` | Each NPS site's `maps.htm` and `brochures.htm`, every PDF link checked with a request before it is recorded |
 | Climate | `climate.py` | Ten years (2016–2025) of Open-Meteo archive daily weather per national park, reduced to monthly mean high, low and precipitation |
-| Build | `reference_build.py` | Joins those with `content/` and writes `places`, `pois`, `themes`, `boundaries`, `boundaries-overview`, `routes`, `transport`, `trails`, `brochures`, `climate`, `guides/`, `images/` and `manifest` into the app's resources |
+| Assembly | `countries/us/assembly.py` | Joins those with `content/` into the US's places, sights, outlines, guides and layers |
+| Build | `reference_build.py` | Merges each country's share and writes `places`, `pois`, `themes`, `boundaries`, `boundaries-overview`, `routes`, `transport`, `trails`, `brochures`, `climate`, `guides/`, `images/` and `manifest` into the app's resources |
 | Geometry | `outline.py` | Polygon extraction, Douglas–Peucker simplification, speck removal, polyline encoding, label points |
-| Content rules | `reference_content.py` | Which photographs are public domain, which places are curated, how guide content is read |
+| Content rules | `reference_content.py` | Which photographs may be reused and under which licence, which places are curated, how guide content is read |
 
 A national park's photographs must be NPS-credited public-domain images; other places'
-photographs must carry a reusable Commons licence. The build prints any place left without
-a summary or any guide sight it could not place.
+photographs must carry a reusable Commons licence. Every photograph carries its licence
+into the build, and is marked public domain only when that licence says so; one without a
+credit or a reusable licence fails the build. The build prints any place left without a
+summary or any guide sight it could not place.
+
+### Countries
+
+The reference build is a frame around one package per country, under
+`src/unigrids_pipeline/countries/`. Only `us` exists so far. `--countries` names the
+countries a build covers (default `us`), and the dataset holds exactly those, because every
+file is written whole.
+
+```bash
+PYTHONPATH=src uv run python -m unigrids_pipeline reference --skip-fetch --countries us
+```
+
+A country package (`countries/<code>/__init__.py`) provides what `countries/base.py`
+calls `Country`:
+
+| Name | What it is |
+|---|---|
+| `CODE`, `NAME` | Lower-case ISO 3166-1 code (`us`, `jp`, `no`) and the country's name |
+| `fetch(refresh=)` | Downloads every source the country reads into `raw/<date>/<source>/`, with a `source.json` beside each, resuming where an earlier run stopped |
+| `assemble(context)` | Returns a `Contribution`: the country's places, sights, outlines, routes, guides, transport layers, trails, documents and climate, plus the places it expects to carry prose and the ID registries it used. Each place leaves complete: located, given its time zone (`common.assign_time_zones`) and region |
+| `manifest_note(places)` | The manifest's sentence about this country's share |
+
+The frame (`reference_build.py`) merges the shares in the order named. Two countries
+claiming one place, outline, guide or table fail the build instead of overwriting each
+other. It then drops places a source marked closed, removes photographs and guides nothing
+names any more, writes every file, and saves the registries last. Helpers that know no
+country — outline encoding, coordinates, photographs and their licences, the raw store,
+time zones — are in `countries/common.py`. Rules written for one country's sources stay in
+its package: the NPS fee format, the notice regex for English NPS prose and stamp labels
+are in `countries/us/`. The US package calls the top-level modules that predate countries
+(`lands_build`, `state_parks`, `trail_catalogue`, `brochures`, `climate`, `visitation`,
+`park_elevation`, `wikipedia_match`).
+
+**Identifiers abroad** (`ids.py`). The US keeps `slug()` exactly as it is: its identifiers
+are in users' logs, though `slug()` deletes what it cannot fold ("Færder" → "frder").
+Countries after the US use `romanised_slug()` instead. It transliterates æ ø đ ŋ ŧ, drops
+marks (å č š ž, macrons), and refuses kanji, kana or an empty result rather than
+shipping a truncated identifier. Every identifier carries its country:
+`country_place_id()` gives `jp-np-`, `jp-qnp-`, `no-np-`, `no-lvo-` and `no-nr-`;
+`country_poi_id()` and `country_trail_id()` give `poi-jp-<park>-…` and
+`trail-no-<park>-…`, always through the country's registry in
+`content/ids/<country>/`, keyed on the source's own identifier, never on a name alone.
+
+**Measuring abroad** (`countries/abroad/`). One method for every country after the US, as
+3DEP is the one at home:
+
+| Module | Does |
+|---|---|
+| `elevation.py` | Copernicus GLO-30 from the public AWS bucket, one 1° Cloud-Optimised GeoTIFF per tile, cached in `raw/<date>/copernicus-dem/` (an unpublished tile is ocean, so sea level). Bilinear sampling across tile edges (`CopernicusDEM.sample`, a `measure.ElevationSampler`); `park_extremes(outline)` and `attach_extremes(places, outlines)` for the lowest and highest ground inside an outline, noted "Measured by Unigrids from Copernicus GLO-30" |
+| `trails.py` | The catalogue abroad: Kartverket's Turrutebasen for Norway (routes joined by number, the published `gradering` kept), OpenStreetMap hiking relations and named footpaths for Japan and for Norwegian parks Turrutebasen leaves empty. Measured exactly as `trail_catalogue` measures the US's. `fetch(country, parks, outlines)` and `build(country, parks, outlines, sights, online=, registry=)` |
+| `outlines.py` | Park outlines read straight from MOE's `nps.zip` and Naturvernområder, for the pack steps |
+| `packs.py` | `fetch`, `derive` and `build --park jp-np-…/no-np-…`: GLO-30 relief at 30 m, tiles to zoom 15 at most, a credit line in the manifest's `attribution` |
+
+The GLO-30 decoder undoes the files' floating-point predictor itself, so `tifffile` needs
+no `imagecodecs`.
+
+### The golden check
+
+`scripts/golden.sh` proves that a change to the pipeline's code leaves the reference data
+it builds byte-identical:
+
+```bash
+scripts/golden.sh record   # before the change: build, and keep a copy in work/golden/
+scripts/golden.sh          # after it: build again and compare with that copy
+```
+
+With no copy recorded, it compares with git instead. A recorded copy is the usual
+baseline, because the committed data can lag the code. The data committed in `b7b0c58`
+predates the Wikipedia title fix in `c22b7e1`, so today's code already builds two places
+differently from git. The script refuses to start if the reference folder or
+`content/ids` differ from git, and restores them when it finishes. It also holds the
+manifest's `builtOn` to the baseline's date (`SOURCE_DATE_EPOCH`).
 
 The raw snapshot is about 1.1 GB, most of it photographs (0.85 GB), then the
 transportation layers, trails and federal lands; `raw/` is gitignored. Every fetch is
@@ -112,6 +187,15 @@ map uses. No NPS arrowhead and no seal (`AGENTS.md` §5).
 
 `config.PARKS` keyed by NPS park code. The four pilot parks are there; everything else
 about a park is fetched from its unit code.
+
+A park abroad is named by its place ID, and its content list
+(`content/countries/<cc>/national-parks.json`) is all the configuration it needs:
+
+```bash
+uv run unigrids-pipeline fetch --park no-np-jotunheimen
+uv run unigrids-pipeline build --park no-np-jotunheimen
+uv run unigrids-pipeline package   # every built pack, at home and abroad
+```
 
 ## Why Python and not Swift
 

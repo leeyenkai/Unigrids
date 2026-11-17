@@ -19,6 +19,7 @@ and the raw response is kept: one query per park per fetch, never one per tile.
 
 from __future__ import annotations
 
+from collections.abc import Sequence
 from typing import Any
 
 import httpx
@@ -93,11 +94,18 @@ def download(
     return download_query(session, build_query(box), record=record)
 
 
-def download_query(session: httpx.Client, query: str, *, record: Any = None) -> dict[str, Any]:
-    """Run an Overpass query, trying each endpoint in turn."""
+def download_query(
+    session: httpx.Client,
+    query: str,
+    *,
+    record: Any = None,
+    endpoints: Sequence[str] = ENDPOINTS,
+) -> dict[str, Any]:
+    """Run an Overpass query, trying each endpoint in turn. A caller may name its own
+    endpoints, in the order it prefers them."""
     politeness = http.Politeness(attempts=4, backoff_seconds=15.0, timeout_seconds=420.0)
     problems: list[str] = []
-    for endpoint in ENDPOINTS:
+    for endpoint in endpoints:
         try:
             response = http.post(
                 session, endpoint, data={"data": query}, politeness=politeness, expect="application"
