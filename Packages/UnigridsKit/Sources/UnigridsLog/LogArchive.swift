@@ -293,8 +293,8 @@ extension LogArchive {
         struct Header: Decodable {
             var version: Int?
         }
-        if let version = try? JSONDecoder().decode(Header.self, from: data).version,
-           version > currentVersion {
+        let header = try? JSONDecoder().decode(Header.self, from: data)
+        if let version = header?.version, version > currentVersion {
             throw NewerVersionError(version: version)
         }
         let decoder = JSONDecoder()
