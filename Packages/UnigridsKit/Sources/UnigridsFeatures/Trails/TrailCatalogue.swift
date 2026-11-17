@@ -69,8 +69,9 @@ struct TrailCatalogueSections: View {
                 }
                 Text(
                     "Distances and climbs are for the hike there and back, or once round a loop. "
-                        + "Effort is an estimate from them. For planning, not navigation: check "
-                        + "conditions with the park before you go."
+                        + "Effort is an estimate from them, unless the trail's own authority "
+                        + "grades it. For planning, not navigation: check conditions with the "
+                        + "park before you go."
                 )
             }
         } header: {
@@ -275,8 +276,18 @@ struct TrailDetailScreen: View {
                     UnigridPanel(title: "The trail") {
                         VStack(alignment: .leading, spacing: 14) {
                             TrailFigures(trail: trail)
+                            if let grade = trail.publishedGrade, let label = grade.label {
+                                UnigridDataRow(
+                                    label: "Grade, by \(grade.publisher ?? "its authority")",
+                                    value: "\(label) (\(grade.grade))"
+                                )
+                            }
                             if let effort = trail.estimatedDifficulty {
-                                UnigridDataRow(label: "Effort, estimated", value: effort.name)
+                                UnigridDataRow(
+                                    label: trail.isDifficultyEstimated ? "Effort, estimated"
+                                        : "Effort",
+                                    value: effort.name
+                                )
                             }
                             if let place {
                                 TrailMap(trail: trail, place: place, sights: sights)

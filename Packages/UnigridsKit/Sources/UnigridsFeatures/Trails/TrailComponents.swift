@@ -156,8 +156,10 @@ struct TrailRow: View {
         if let climb = trail.climbMetres {
             parts.append("↑ " + UnigridsFormat.elevation(climb))
         }
-        if let difficulty = trail.estimatedDifficulty {
-            parts.append(difficulty.name)
+        if let grade = trail.publishedGrade, grade.band != nil, let label = grade.label {
+            parts.append("\(label) grade")
+        } else if let difficulty = trail.estimatedDifficulty {
+            parts.append(trail.isDifficultyEstimated ? "\(difficulty.name), est." : difficulty.name)
         }
         if let parkName {
             parts.append(parkName)

@@ -87,6 +87,9 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- A trail's own grade shows as published — "Grade, by Kartverket: Red (R)" — and its
+  effort is no longer labelled an estimate when it comes from that grade; catalogue rows
+  say "Red grade", or mark an estimate as such.
 - Live warnings abroad: a JMA eruption warning badges its park's pin as soon as it is
   fetched; a park the background watch could not reach keeps its place, so its next
   closure still notifies; a feed whose shape has changed says the service could not be
