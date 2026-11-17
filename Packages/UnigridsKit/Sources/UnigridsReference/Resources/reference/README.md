@@ -22,10 +22,10 @@ superseded: running it would overwrite these files with the old four-park seed.
 | File | Contents | From |
 |---|---|---|
 | `manifest.json` | Dataset version (5 with places beyond the US; a US-only build writes 4), build date, provenance, a note per country | The build |
-| `places.json` | 6,081 places. **United States**, 5,515: 63 national parks, 373 other NPS units, 3,539 state parks, 154 national forests, 20 national grasslands, 548 wildlife refuges, 33 national monuments, 24 BLM conservation areas, 575 National Natural Landmarks, 186 scenic byways. Each has a time zone; NPS sites carry monthly visitation (378) and visitor information (373); state parks name their manager (3,463); 2,722 carry a Wikipedia lead. **Japan**, 93: 35 national parks and 58 quasi-national parks. **Norway**, 473: 48 national parks, 195 protected landscapes and 230 nature reserves of 10 km² or more. Every place abroad has its subdivisions, local name, passport region and time zone | NPS Data API and Visitor Use Statistics; PAD-US 4.1; USFS, FWS, BLM and NPS NNL services; FHWA byways; Wikipedia; MOE; Miljødirektoratet; Wikidata; `content/` |
+| `places.json` | 5,623 places. **United States**, 5,057: 63 national parks, 373 other NPS units, 3,081 state parks, 154 national forests, 20 national grasslands, 548 wildlife refuges, 33 national monuments, 24 BLM conservation areas, 575 National Natural Landmarks, 186 scenic byways. Each has a time zone; NPS sites carry monthly visitation (378) and visitor information (373); state parks name their manager where PAD-US gives one (2,358); 2,717 carry a Wikipedia lead. **Japan**, 93: 35 national parks and 58 quasi-national parks. **Norway**, 473: 48 national parks, 195 protected landscapes and 230 nature reserves of 10 km² or more. Every place abroad has its subdivisions, passport region and time zone; every national park and quasi-national park its local name | NPS Data API and Visitor Use Statistics; PAD-US 4.1; USFS, FWS, BLM and NPS NNL services; FHWA byways; Wikipedia; MOE; Miljødirektoratet; Wikidata; `content/` |
 | `pois.json` | 2,475 points: 1,660 US sights, visitor centres, campgrounds and stamp locations; 380 in Japan and 435 in Norway, huts among them | NPS Data API; the guides' sights; OpenStreetMap huts (ODbL) |
 | `themes.json` | Theme tags | `content/themes.json` |
-| `boundaries.json` | 5,225 outlines as encoded polylines, simplified: 4,715 US, 37 Japanese (every national park and two quasi-national parks), 473 Norwegian | NPS Land Resources Division; USFS; FWS; BLM NLCS; PAD-US 4.1; MOE `nps.zip` (zones joined); OpenStreetMap; Miljødirektoratet |
+| `boundaries.json` | 4,770 outlines as encoded polylines, simplified: 4,260 US, 37 Japanese (every national park and two quasi-national parks), 473 Norwegian | NPS Land Resources Division; USFS; FWS; BLM NLCS; PAD-US 4.1; MOE `nps.zip` (zones joined); OpenStreetMap; Miljødirektoratet |
 | `boundaries-overview.json` | The same outlines simplified harder (about 0.008°), drawn at country scale | The build |
 | `routes.json` | 186 byway routes as encoded polylines | FHWA America's Byways |
 | `transport.json` | 241 Interstate and 254 US route lines, 49 Amtrak routes and 569 stations; 596 passenger rail lines and 1,280 stations in Japan and Norway | National Transportation Atlas Database (NHS, Amtrak); OpenStreetMap (ODbL) |
@@ -41,15 +41,16 @@ superseded: running it would overwrite these files with the old four-park seed.
   checked against the parks' authorities (`docs/sources-japan-norway.md`). Japan's
   national park areas and dates follow MOE's table; their outlines join the zones of
   MOE's `nps.zip`, a 2025 file MOE no longer links. Quasi-national parks come from MOE's
-  list with Wikidata's designation year; OpenStreetMap outlines only 6 of the 58 by name,
-  and one under a third of its published area is refused, so 56 are points. Norway's
+  list with Wikidata's designation year; OpenStreetMap outlines 6 of the 58 by name, of
+  which the 2 between half and twice the published area are kept, so 56 are points. Norway's
   areas are each regulation's own figure; a landscape's or reserve's year is when it was
   first protected (`foerstegangVernet`), absent where Miljødirektoratet gives only the
   current regulation's date. Photographs are from Wikimedia Commons, each with its own
   credit and licence. Lowest and highest ground abroad is measured on Copernicus GLO-30
-  and says so; its 30 m cells run a few metres under the named summits. Huts and
-  stations for 30 Japanese parks, and trails for six, wait on OpenStreetMap's query
-  service, which refused this build's machine part-way.
+  and says so; its 30 m cells run a few metres under the named summits. Huts for 32
+  Japanese parks, Japan's main stations and Shinkansen lines, and trails for eight
+  parks wait on OpenStreetMap's query service, which refused this build's machine
+  part-way.
 
 - **National park figures** — date established, area and 2025 recreation visits — come
   from `content/national-park-facts.json`, sourced from the NPS acreage report and NPS
@@ -59,13 +60,19 @@ superseded: running it would overwrite these files with the old four-park seed.
 - **Guide prose and the curated places' summaries are written for Unigrids** and checked
   against the NPS Data API and Wikipedia. Other NPS units carry the NPS's own description,
   credited as such. Two new units with no NPS description yet show none.
-- **Wikipedia leads** describe 2,722 places with no agency prose — state parks, forests,
-  refuges, landmarks, byways, BLM lands. A lead is used only when the article's title names
-  the place and its coordinates fall inside the outline (within 10 km for a point or a
-  route); 402 articles failed that and are listed in `Pipeline/work/wikipedia-report.json`.
-  The lead is cut to its first sentences, so the app says "Adapted from" with the article,
-  its link and CC BY-SA 4.0. Nine state parks PAD-US still lists whose own article says
-  they have closed are left out. Places with no match carry one line built from their
+- **Wikipedia leads** describe 2,717 US places with no agency prose — state parks,
+  forests, refuges, landmarks, byways, BLM lands. A lead is used only when the article's
+  title, or its own opening ("formerly", "officially", "also known as"), names the place,
+  its coordinates fall inside the outline (within 10 km for a point or a route), and it is
+  not about a town; 380 articles failed that and are listed in
+  `Pipeline/work/wikipedia-report.json`. The lead is cut to its first sentences, so the
+  app says "Adapted from" with the article, its link and CC BY-SA 4.0. Fifteen state parks
+  PAD-US still lists whose own article says they have closed, or that the state has
+  handed on (Hart, now the City of Hartwell's), are left out.
+- **State parks** are PAD-US units a state body manages, or whose own name carries a
+  state designation: PAD-US also files Buffalo's traffic triangles and town playgrounds
+  as state parks, and those are left out. A sliver PAD-US files under a neighbouring
+  state joins the park it belongs to. Places with no match carry one line built from their
   own fields (kind, states, agency) and nothing more.
 - **Visitation** is the mean of the NPS's monthly recreation visits over 2022–2025, and
   2025's annual total, from the NPS Visitor Use Statistics (CC0).

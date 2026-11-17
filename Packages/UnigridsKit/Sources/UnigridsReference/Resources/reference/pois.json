@@ -3532,7 +3532,7 @@
   "hasStamp": false
  },
  {
-  "id": "poi-denali-savage-river",
+  "id": "poi-denali-savage-river-campground",
   "placeID": "np-denali",
   "kind": "campground",
   "name": "Savage River",
@@ -3584,7 +3584,7 @@
   "hasStamp": false
  },
  {
-  "id": "poi-denali-wonder-lake",
+  "id": "poi-denali-wonder-lake-campground",
   "placeID": "np-denali",
   "kind": "campground",
   "name": "Wonder Lake",
@@ -4242,7 +4242,7 @@
   "url": "http://www.nps.gov/jeff/planyourvisit/index.htm"
  },
  {
-  "id": "poi-gateway-arch-old-courthouse",
+  "id": "poi-gateway-arch-old-courthouse-visitor-centre",
   "placeID": "np-gateway-arch",
   "kind": "visitorCentre",
   "name": "Old Courthouse",
@@ -11558,7 +11558,7 @@
   "url": "https://www.nps.gov/places/tawa-point.htm"
  },
  {
-  "id": "poi-petrified-forest-painted-desert-inn",
+  "id": "poi-petrified-forest-painted-desert-inn-visitor-centre",
   "placeID": "np-petrified-forest",
   "kind": "visitorCentre",
   "name": "Painted Desert Inn",
@@ -12260,7 +12260,7 @@
   "hours": "Daily, 9:00AM–4:30PM"
  },
  {
-  "id": "poi-rocky-mountain-holzwarth-historic-site",
+  "id": "poi-rocky-mountain-holzwarth-historic-site-visitor-centre",
   "placeID": "np-rocky-mountain",
   "kind": "visitorCentre",
   "name": "Holzwarth Historic Site",

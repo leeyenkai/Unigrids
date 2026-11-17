@@ -87,6 +87,26 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- Six state parks the states have handed on are off the map, as their own articles say:
+  Hart (the City of Hartwell's park since 2020), John Tanner and Sprewell Bluff (county
+  parks), Florala, Mohawk River and Red Rock Canyon in Oklahoma. Ten places gain a
+  credited Wikipedia overview found under the name the article itself gives them —
+  "officially Mary Minerva McCroskey State Park", "also known as Raymond B. Winter State
+  Park" — among them St. George Island, Illinois Beach, Fahnestock and the Loxahatchee and
+  White River refuges. Boswell, Elkhorn and Jackson Lake no longer carry the article about
+  the town they are named after, and 377 overviews no longer stop mid-name at an initial
+  or "St.".
+- 428 city parks, traffic triangles and playgrounds around Buffalo that PAD-US files as
+  state parks are no longer on the map as New York state parks, and 25 slivers PAD-US
+  files across a state line — a one-acre Illinois Beach in Wisconsin — join the park they
+  belong to. A state park whose manager PAD-US does not know no longer says "Managed by:
+  Unknown".
+- Sequoia's pin sits in Sequoia rather than in Kings Canyon. A park with one official
+  elevation and one measured no longer calls its official summit a measurement (Denali). A
+  photograph whose author Commons does not record is credited to Wikimedia Commons, not to
+  an "Unknown photographer", and Commons' boilerplate is no longer printed as a name.
+  Møysalen's protected landscape no longer carries the national park's article, and
+  Japan's guides credit their areas to the Ministry of the Environment's park table.
 - Importing a backup made before a visit was moved no longer gives the visit the old day's
   weather, and a restore of thousands of visits no longer freezes the app while it matches
   them by day. The visits CSV opens in Excel with Japanese and Norwegian names intact.
