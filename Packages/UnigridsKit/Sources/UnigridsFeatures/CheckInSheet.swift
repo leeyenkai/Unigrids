@@ -26,6 +26,7 @@ public struct CheckInSheet: View {
     @State private var rating: Int?
     @State private var notes = ""
     @State private var selectedPOIs: Set<UnigridsID> = []
+    @State private var photos: [String] = []
     @State private var tripID: UUID?
     @State private var existing: Visit?
     @State private var saving = false
@@ -125,6 +126,8 @@ public struct CheckInSheet: View {
                     SectionHead("Notes")
                 }
 
+                CheckInPhotosSection(identifiers: $photos)
+
                 if !checkInTargets.isEmpty {
                     Section {
                         ForEach(checkInTargets) { poi in
@@ -201,6 +204,10 @@ public struct CheckInSheet: View {
             )
             for poi in selectedPOIs {
                 try log.checkIn(at: .pointOfInterest(poi), during: visit, on: date)
+            }
+            if !photos.isEmpty {
+                let checkIn = try log.checkIn(at: .place(place.id), during: visit, on: date)
+                try log.update { checkIn.photoAssetIdentifiers = photos }
             }
             if joining {
                 undo?.notify("Added to your visit to \(place.name)")

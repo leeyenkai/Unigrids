@@ -222,7 +222,7 @@ A visit can enter the log four ways, and every route ends in the same structure:
 
 Ways to log
 
-- Manual check-in: from a map card, guide panel or trail page. Fields: date and time, notes, rating, and linked photos (stored as Photos library references plus a small thumbnail, not copies).
+- Manual check-in: from a map card, guide panel or trail page. Fields: date and time, notes, rating, and linked photos, chosen from the library (stored as Photos library references, never copies; a thumbnail is drawn from the library when shown). Removing a photo from a visit unlinks it and leaves the library alone.
 - Auto-detected visits: with Always location permission, the app watches the boundaries of the parks nearest the user and suggests a visit on entry ("Looks like you're in Zion. Log a visit?"). iOS limits how many regions an app can monitor at once, so the watched set rotates as the user moves. Processing stays on device.
 - Photo import: an on-device scan of geotagged photos that fall inside park boundaries, grouped by date into proposed visits and trips for the user to accept, edit or discard. Works with limited Photos access by scanning only the selected photos.
 - Trail hikes: marking a trail as hiked creates a check-in on that visit.

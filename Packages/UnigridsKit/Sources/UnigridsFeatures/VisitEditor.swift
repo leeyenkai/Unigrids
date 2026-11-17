@@ -215,6 +215,15 @@ private struct VisitContents: View {
                                         PhotoThumbnail(identifier: id)
                                             .frame(width: 56, height: 56)
                                             .clipped()
+                                            .contextMenu {
+                                                // Unlinks only: the library keeps it.
+                                                Button("Remove from This Visit") {
+                                                    _ = try? LogStore(context: context).update {
+                                                        checkIn.photoAssetIdentifiers
+                                                            .removeAll { $0 == id }
+                                                    }
+                                                }
+                                            }
                                     }
                                 }
                             }

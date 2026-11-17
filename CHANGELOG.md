@@ -71,6 +71,9 @@ makes the change. A release moves that block under a version heading with its da
   region to the next; pinch in, or tap Contents, for every region's title page at once;
   and on an iPad, a Mac or any wide window a region opens as a two-page spread, its title
   page with a square per site on the left and its stamps on the right.
+- Photos on a check-in: pick them from your library when you log a visit by hand, not only
+  through photo import. Only the library's references are kept, and removing one from a
+  visit leaves the photo in the library.
 
 ### Changed
 
