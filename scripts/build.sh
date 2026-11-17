@@ -24,6 +24,12 @@ build() {
 		SWIFT_TREAT_WARNINGS_AS_ERRORS=YES \
 		build >"$log" 2>&1 || result=$?
 	grep -E "error:|warning:|BUILD (SUCCEEDED|FAILED)" "$log" || true
+	# Xcode's warnings-as-errors setting does not reach the package's targets, so a
+	# warning in the project's own sources fails the script here instead.
+	if grep ": warning:" "$log" | grep -F "$REPO_ROOT/" >/dev/null; then
+		echo "The $label build has warnings in the project's sources."
+		result=1
+	fi
 	if [[ $result -ne 0 ]]; then
 		echo "The $label build failed; full log in $log"
 	fi

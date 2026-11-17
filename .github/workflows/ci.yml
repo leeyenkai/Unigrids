@@ -53,6 +53,8 @@ jobs:
         run: sudo xcode-select -s /Applications/Xcode_27.app
 
       - name: Build
+        # bash, so a failed xcodebuild fails the step through the pipe (pipefail).
+        shell: bash
         run: |
           xcodebuild \
             -project App/Unigrids.xcodeproj \
@@ -61,7 +63,9 @@ jobs:
             -configuration ${{ matrix.configuration }} \
             CODE_SIGNING_ALLOWED=NO \
             SWIFT_TREAT_WARNINGS_AS_ERRORS=YES \
-            build
+            build 2>&1 | tee build.log
+          # The setting above does not reach the package's targets.
+          if grep ": warning:" build.log | grep -F "$GITHUB_WORKSPACE/"; then exit 1; fi
 
   lint:
     name: Format and lint
