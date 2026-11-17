@@ -2,8 +2,8 @@ import Foundation
 
 /// The shape of the ground, as a handful of numbers per park.
 ///
-/// Ten parks, and bespoke code for each would be ten places to get the same thing subtly
-/// wrong. What actually differs between them is small and nameable: how much relief there
+/// Twelve parks, and bespoke code for each would be twelve places to get the same thing
+/// subtly wrong. What actually differs between them is small and nameable: how much relief there
 /// is, whether the crests are rounded, level or peaked, whether the rock steps in beds,
 /// whether a river has cut through it, whether there is water, and whether a landmark
 /// stands out of the rest. Everything else is the same noise.
@@ -56,6 +56,14 @@ struct LandForm {
     /// in and out of headlands and coves — and whatever still stands above the water
     /// out there is an island.
     var coast = 0.0
+    /// How far the low ground — the canyon's floor, or the foreground's — is sunk under
+    /// the water, so it holds a lake from shore to shore. Zero for none.
+    ///
+    /// A sea level alone floods only the deepest hollows, and the noise puts those
+    /// anywhere: a scatter of ponds, not a lake. Sinking the low ground itself gives one
+    /// sheet of water with a shore that follows the land round it — down the length of
+    /// a glacial trough for Gjende, across the front of the frame for the Fuji lakes.
+    var lake = 0.0
     /// Everything at or under this is water, everywhere. Zero for a park with no sea.
     let seaLevel: Double
     /// A river along the floor of the low ground, as a fraction of the canyon's width.
@@ -64,8 +72,25 @@ struct LandForm {
     /// confined to the channel the canyon already cut, which is the only way to put the
     /// Colorado at the bottom of the Grand Canyon without drowning the rims.
     let river: Double
-    /// Where snow lies, as a fraction of relief. One and above means none.
+    /// Where snow starts to lie, as a fraction of relief. At or above `snowTop` means none.
     let snowLine: Double
+    /// Where the snow lies unbroken, as a fraction of relief: the top of the ramp that
+    /// starts at `snowLine`.
+    ///
+    /// One for a range, whose snow belongs to the range's own relief. A lone volcano
+    /// standing twice the height of the hills round it needs its cap well above them,
+    /// on the upper part of the cone only — capped at the hills' own height, the snow
+    /// ran down to its foot and the mountain was white from top to bottom.
+    var snowTop = 1.0
+    /// The steepest ground that keeps its snow, on the renderer's scale of 0 for level
+    /// and 1 for a wall — the slope, not the light, deciding where it lies. One leaves
+    /// it to the light.
+    ///
+    /// The light sheds snow only from the faces turned to or from the sun, and leaves
+    /// every other face half covered: a grey wash that reads as pale rock, not as snow.
+    /// A glaciated range is the opposite — white in every cirque and on every ledge,
+    /// and the dark rock showing on the walls between them.
+    var snowSlope = 1.0
     /// How dark the streaks are that water leaves down steep rock. Zero for none.
     ///
     /// The black stripes down El Capitan and Half Dome's face are lichen and mineral
@@ -120,6 +145,10 @@ struct LandForm {
         /// Giant sequoia standing among fir: the conifers, with every few trees a
         /// giant twice their height.
         case giantForest
+        /// Mountain birch along the shore and up the lower slopes, and now and then a
+        /// spruce or pine among it: the subalpine belt of a Norwegian valley, which
+        /// is birch and not conifer.
+        case birchwood
     }
 
     struct Landmark {
@@ -136,9 +165,16 @@ struct LandForm {
             case peak
             /// Concave flanks flaring out to a broad base, cut off flat at the top
             /// with a shallow crater in it. The stratovolcano profile — St Helens,
-            /// Rainier, Fuji — and the reason those read as mountains from fifty miles
-            /// away.
+            /// Rainier — and the reason those read as mountains from fifty miles away.
             case volcano
+            /// A lone stratovolcano at rest, with nothing round it: Fuji. Concave flanks
+            /// close to a square law from summit to foot — steep under the rim,
+            /// flattening into a foot many times wider than the mountain is tall, which
+            /// is near enough how Fuji's own slopes fall — and a small flat summit for
+            /// the crater. More concave than `.volcano`, which is drawn to stand over a
+            /// forest at a distance; standing alone over a lake, the curve of the
+            /// flanks is the whole silhouette and has to be the right one.
+            case cone
         }
 
         let x: Double
@@ -193,6 +229,8 @@ struct LandForm {
 
         /// The radius of the volcano's truncated summit, as a fraction of its foot.
         private static let crater = 0.08
+        /// The same for a cone, whose crater is small against so broad a foot.
+        private static let summit = 0.05
 
         /// A sheer face cut through a landmark along a plane.
         ///
@@ -226,6 +264,10 @@ struct LandForm {
                 r < Self.crater
                     ? (pow(1 - Self.crater, 1.7) - 0.035 * (1 - r / Self.crater)) * height
                     : pow(1 - r, 1.7) * height
+            case .cone:
+                r < Self.summit
+                    ? (pow(1 - Self.summit, 2.1) - 0.02 * (1 - r / Self.summit)) * height
+                    : pow(1 - r, 2.1) * height
             }
         }
     }
@@ -256,6 +298,9 @@ extension Scene {
             let across = abs(x - riverCentre(z: z)) / form.canyon
             let cut = 1 - exp(-pow(across, form.canyonWalls))
             height *= 0.16 + 0.84 * cut
+            if form.lake > 0 {
+                height -= form.lake * (1 - cut)
+            }
         }
 
         // The valley floor in front of the camera, rising into the range behind it.
@@ -266,6 +311,9 @@ extension Scene {
         if form.foreground > 0 {
             let t = min(max((z / form.foreground - 0.4) / 0.6, 0), 1)
             height *= 0.12 + 0.88 * t * t * (3 - 2 * t)
+            if form.lake > 0 {
+                height -= form.lake * (1 - t * t * (3 - 2 * t))
+            }
         }
 
         // The coast: the land drops away on the seaward side of the shore, steeply,
@@ -526,6 +574,78 @@ extension Scene {
                 beds: 0, bedding: 0, canyon: 0, foreground: 0,
                 seaLevel: 0.026, river: 0, snowLine: 1.1,
                 flora: .cypress, floraDensity: 0.72, cameraHeight: 0.55, landmarks: []
+            )
+        case .fuji:
+            // Fuji over the lakes at its northern foot, as from their shore: a sheet of
+            // water across the front of the frame, low forested hills along the far
+            // side of it, and the cone standing alone over them, white on its upper
+            // half and dark below.
+            //
+            // The camera stands at the water's edge, low. Any higher and the lake falls
+            // behind the brochures, and the lake — with the dark flanks under the cap —
+            // is what says *which* volcano this is: Olympic already has a cone, snowed
+            // on to its foot, over forest.
+            //
+            // The far shore comes out nearly level, and that is right rather than a
+            // shortcut: from a camera this close to the water, a shoreline wandering a
+            // long way in and out moves only a few rows up and down the frame.
+            LandForm(
+                relief: 0.26, featureScale: 0.75, octaves: 3, crest: .rounded, shaping: 1.40,
+                beds: 0, bedding: 0, canyon: 0, foreground: 1.60, lake: 0.04,
+                seaLevel: 0.05, river: 0,
+                // In units of the hills' relief, so well above them: the cap belongs to
+                // the upper part of the cone and nothing else reaches it.
+                snowLine: 1.58, snowTop: 2.00,
+                flora: .conifer, floraDensity: 0.75, cameraHeight: 0.16,
+                landmarks: [
+                    // One cone, symmetrical, its foot far wider than it is tall and its
+                    // summit cut off flat by the crater. Fluted shallowly, for the
+                    // gullies the snow runs down in stripes. Shallower from front to
+                    // back than across, so its foot ends behind the far shore instead of
+                    // rising straight out of the lake.
+                    .init(
+                        x: 0.00,
+                        z: 2.60,
+                        width: 2.50,
+                        depth: 1.40,
+                        height: 0.80,
+                        profile: .cone,
+                        spurs: 18,
+                        rock: 0.14,
+                        plinth: 0
+                    ),
+                ]
+            )
+        case .jotunheimen:
+            // A long lake in a glacial trough, as Gjende lies: green water running away
+            // from the shore the camera stands on, steep dark walls either side, peaks
+            // and ridges over them with snow lying wherever the ground is gentle enough
+            // to keep it, and mountain birch along the foot of the slopes. The land is
+            // noise, like every park's — no particular ridge is drawn — but every part
+            // of the view is one the place has.
+            //
+            // Peaked like Rocky Mountain's range, but cut by a trough rather than
+            // standing across an open valley: this is the view along the lake, and the
+            // lake is what makes it Jotunheimen rather than another range. Low ground in
+            // front as well, so the walls start out past the brochures; without it, the
+            // nearest wall rose straight up the whole left third of the frame.
+            LandForm(
+                relief: 1.20, featureScale: 1.15, octaves: 4, crest: .peaks, shaping: 1.90,
+                beds: 0, bedding: 0, canyon: 0.50, canyonWalls: 3.0, foreground: 1.50,
+                lake: 0.20, seaLevel: 0.05, river: 0, snowLine: 0.30, snowTop: 0.46,
+                snowSlope: 0.50,
+                flora: .birchwood, floraDensity: 0.80, cameraHeight: 0.30,
+                landmarks: [
+                    // A horn at the head of the lake. The trough runs on past the end
+                    // of the march, and without something standing across it the
+                    // valley ended in open sky. Fluted deep and cut away on one side, so
+                    // it is a summit ice has worked on all round, not a cone.
+                    .init(
+                        x: 0.10, z: 3.05, width: 1.05, depth: 0.80, height: 0.95,
+                        profile: .peak, shear: .init(facing: 0.35, at: 0.18),
+                        spurs: 7, rock: 0.55, plinth: 0
+                    ),
+                ]
             )
         }
     }

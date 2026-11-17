@@ -1,18 +1,19 @@
 # IconGenerator
 
-Draws the Unigrids app icon and its nine alternates, and writes them into
+Draws the Unigrids app icon and its eleven alternates, and writes them into
 `App/Unigrids/Assets.xcassets`: thirteen PNGs for the shipping icon in
 `AppIcon.appiconset`, three for each alternate in `AppIcon-<park>.appiconset`, and the
 `Contents.json` that indexes each set.
 
 ```bash
-cd Tools/IconGenerator && swift run -c release IconGenerator --all            # all ten sets
+cd Tools/IconGenerator && swift run -c release IconGenerator --all            # all twelve sets
 cd Tools/IconGenerator && swift run -c release IconGenerator                  # Zion only
 cd Tools/IconGenerator && swift run -c release IconGenerator --park olympic --preview /tmp/look
 ```
 
 `--park` takes a `Scene` raw value: `zion`, `grandCanyon`, `yosemite`, `sequoia`,
-`rockyMountain`, `olympic`, `acadia`, `joshuaTree`, `everglades`, `congaree`. An unknown
+`rockyMountain`, `olympic`, `acadia`, `joshuaTree`, `everglades`, `congaree`, `fuji`,
+`jotunheimen`. An unknown
 name is an error rather than a silent fall back to Zion. `--preview` writes a handful of
 sizes and leaves the asset catalogue alone; a directory argument writes there instead.
 Build in release: the terrain march is a few million samples per image and a debug
@@ -34,9 +35,10 @@ three Unigrid brochures lie fanned across the foreground as sheets of frosted gl
 park showing blurred through them. The top of each sheet carries the black band, which is
 the one opaque thing in the mark and the one that says Unigrid.
 
-Ten parks are built. **Zion** is the default and what ships; the other nine are alternate
-icons the reader can choose in Settings (iOS and iPadOS only — macOS has no alternate
-app icons).
+Twelve parks are built: the ten US parks the mark was first drawn for, and two abroad —
+**Fuji-Hakone-Izu** in Japan and **Jotunheimen** in Norway. **Zion** is the default and
+what ships; the other eleven are alternate icons the reader can choose in Settings (iOS
+and iPadOS only — macOS has no alternate app icons).
 
 ### How it is rendered
 
@@ -51,7 +53,7 @@ each read as a diagram rather than an icon.
 | **Terrain** | A real heightfield in perspective, rendered by the classic voxel-space method: march away from the camera, project each sample's height to a screen row, and keep a y-buffer per column so nearer ground paints over what is behind it. True occlusion, true convergence, a few million cheap operations, and deterministic to the byte — which a GPU path would not be. See `Terrain.swift`. |
 | **Ground** | Procedural, not drawn: deterministic value noise shaped per park, at **two to four octaves and a large feature size**. A full fractal gives detail nobody sees — noise at 1024 px, mud at 64 — and a handful of big landforms is what the eye actually uses to read a canyon. The crests are one of three kinds: **rounded** swells for ice-scoured granite and lowland; **rims**, where the noise is folded once and tops out at a level line, for canyon country; and **peaks**, folded octave by octave so summits come out at different heights, for a mountain range. See `Heightfield.swift`. |
 | **Sky** | A real blue overhead paling to the horizon, with cloud banded across it from the same value noise the ground uses — stretched wide and flat and kept out of the horizon. A sky with nothing in it is the quickest way to make a landscape look unfinished. |
-| **Vegetation** | Two kinds. Ground cover is a colour: cottonwood on Zion's floor and scrub on every bench and talus fan that will hold it, which is most of the colour there that is not rock. Plants that *are* the park — Joshua trees, giant sequoia, bald cypress, fir, hardwood hammocks — are drawn as objects standing on the ground. Ground cover is **thresholded into patches, not dialled in as a wash**: green blended at half strength over orange sandstone is olive, and olive is mud. |
+| **Vegetation** | Two kinds. Ground cover is a colour: cottonwood on Zion's floor and scrub on every bench and talus fan that will hold it, which is most of the colour there that is not rock. Plants that *are* the park — Joshua trees, giant sequoia, bald cypress, fir, hardwood hammocks, mountain birch — are drawn as objects standing on the ground. Ground cover is **thresholded into patches, not dialled in as a wash**: green blended at half strength over orange sandstone is olive, and olive is mud. |
 | **Plants** | Each is an outline in its own frame — a fir's drooping courses, a sequoia's buttressed column and clumped crown, a Joshua tree's arms and dagger-leaved heads — rasterised by **four-by-four supersampling of that outline** and lit from the same side as the land. Foliage edges and interiors come from noise: a regular scalloped edge with an even fill is a cloud from a children's book. They are **occluded pixel by pixel**: the terrain march records how far away every pixel it paints is, and a plant is drawn only where it stands nearer, so a tree behind a ridge shows exactly the part that clears it. The first version filled whole-pixel boxes with no light, and at icon size that is a sprite from an old video game. Nothing roots on a wall. The trees a park is named for or known by are also **placed by hand** (`Scene.specimens`), where the brochures will not cover them. |
 | **Shading** | Rock colour comes from **altitude**, so the beds really are the strata and a rim is a different colour from the wall under it. Both the bands and the light are **continuous**: an earlier version had crisp bed edges and light quantised into four steps, and both stair-stepped, because a boundary that resolves inside one row has to land on a row edge and adjacent columns put it on different rows. The simplicity comes from the form being simple instead. |
 | **Light** | One direction, top-left. Faces carry gradients along it; the sun is a soft radial bloom with no disc, because a drawn sun is the fastest way to make a landscape look like clip-art. |
@@ -76,9 +78,11 @@ The type columns are **individual rules of unequal length**, not solid blocks. A
 a placeholder; a run of thin lines ending raggedly is what a column of type looks like
 from across a room, which is the distance an icon is always read from.
 
-The band carries the park and its state and nothing else. A real one also carries the
-agency and the Department of the Interior, and this one deliberately does not: `AGENTS.md`
-§5 forbids implying affiliation, and that line would.
+The band carries the park and its state — or, abroad, its country — and nothing else. A
+real one also carries the agency and the Department of the Interior, and this one
+deliberately does not: `AGENTS.md` §5 forbids implying affiliation, and that line would.
+The same holds abroad: no ministry or directorate on the band, and neither country's
+national park mark anywhere in the icon.
 
 Each sheet is built in its own coordinates and put through one shared transform, so the
 band, the columns, the accent rule and the type all land correctly however far the sheet
@@ -91,18 +95,30 @@ a stroke around a pane of glass is a sticker's edge rather than a sheet's.
 
 ### The parks
 
-Ten of them, and the reader picks which one the app wears. The park's own land stands
+Twelve of them, and the reader picks which one the app wears. The park's own land stands
 behind the stack and **its brochure is the one on top**, with the next two parks round
 the list behind it — so every variant shows a different trio and no variant shows the
-same park twice. Each park's terrain is rendered once and reused by whichever sheet
-needs it, so three sheets cost three terrains rather than nine.
+same park twice. The ten US parks go round **their own ring of ten**, closed on itself as
+it was before the parks abroad joined, so adding a park leaves every existing icon
+byte-for-byte as it was; the two abroad go round the whole list, which puts Jotunheimen
+and Zion under Fuji, and Zion and the Grand Canyon under Jotunheimen. Each park's terrain
+is rendered once and reused by whichever sheet needs it, so three sheets cost three
+terrains rather than nine.
 
 A park is a row in a table, not a function: `LandForm` in `Heightfield.swift` says how
 much relief there is, how large the landforms are, what the crests do, whether the rock
 beds, where the low ground is, where the water stands, where the snow lies, what grows,
 where the camera stands and whether a landmark rises out of the rest. `Scene.swift` says what
-colour it all is and how much of it carries plants. Ten bespoke height functions would
-have been ten places to get the same thing subtly wrong.
+colour it all is and how much of it carries plants. Twelve bespoke height functions would
+have been twelve places to get the same thing subtly wrong.
+
+A new park extends the table only where it needs something no park had, and every new
+field defaults to what the existing parks already did, so none of their output moves. The
+two parks abroad added three: a **lake** (the low ground sunk under the water, so it
+holds one sheet of water from shore to shore rather than flooding the noise's hollows as
+ponds), a **snow top** (so a cone standing twice the height of the hills can carry its cap
+on its upper half only), and a **snow slope** (so the slope rather than the light decides
+where snow lies). Plus a **cone** profile for Fuji and **mountain birch** for Jotunheimen.
 
 Three things that have to be relative to the park rather than fixed, each of which broke
 a park when it was not:
@@ -113,8 +129,9 @@ a park when it was not:
   where it runs decides the framing. A canyon runs *away* from the camera and puts a wall
   on each side, which is right for Zion and wrong for Rocky Mountain, whose own view is
   an open valley floor with the range standing across the back of it; that park's low
-  ground runs *across* the frame instead. The sea does it for Acadia, and the waterline
-  itself for the Everglades and Congaree.
+  ground runs *across* the frame instead. The sea does it for Acadia, the waterline
+  itself for the Everglades and Congaree, and a lake for Fuji and Jotunheimen — across
+  the front of the frame for one, down the length of a trough for the other.
 - **The strata and the treeline.** Both were normalised against one park's relief, so a
   taller park put all its ground in the palest bed and came out white to the horizon.
 
@@ -185,6 +202,32 @@ only things standing out of it are the hardwood hammocks on their tree islands.
 **Congaree.** A floodplain under bottomland forest, with bald cypress standing in the
 water. The water is the floor and the forest is the subject.
 
+**Fuji-Hakone-Izu.** Mount Fuji over the lakes at its northern foot: a sheet of water
+across the front of the frame, low forested hills along its far side, and the cone
+standing alone over them — symmetrical, its foot far wider than it is tall, cut off flat
+at the crater, white on its upper half with the snow running down the gullies in stripes,
+and dark slate below. The camera stands low at the water's edge; any higher and the lake
+falls behind the brochures. The lake and the dark lower flanks are what keep it from being
+Olympic's icon again, which also has a snow-covered cone over forest — but snowed on to its
+foot, and with no water. Its profile is its own, `.cone`: concave flanks close to a square
+law, which is near enough how Fuji's slopes fall, steep under the rim and flattening into
+the foot. The far shore is nearly level, and that is right: from a camera this close to
+the water, a shore wandering a long way in and out moves only a few rows.
+
+**Jotunheimen.** A long green lake in a glacial trough, as Gjende lies: water running away
+from the shore the camera stands on, steep dark walls either side, peaks and ridges over
+them, a horn closing the head of the valley, and mountain birch with now and then a
+conifer along the foot of the slopes. The ground is low in front, so the walls start out
+past the brochures — without it the nearest one filled the left third of the frame — and
+the horn is there because the trough runs on past the end of the march, and without
+something across it the valley ended in open sky. The snow is the one place the light
+does not decide: left to the light, it lay half-thick on every face it did not look
+straight at and the whole range came out pale grey. Here the slope decides, so the snow
+is white in the hollows and on the ridges and the dark rock shows on the walls between
+them. The birch is a loose, gappy oval crown on two pale, crooked stems; a full round crown
+is a lime tree in a park. As with every park, the land is noise and no particular ridge is
+drawn.
+
 ## Rules the mark is held to
 
 - Shading follows one light and stays subtle. Wide tonal swings read as plastic and a hard
@@ -198,7 +241,8 @@ water. The water is the floor and the forest is the subject.
   no amount of supersampling removes. The strata are drawn in the palette instead, where
   they cost nothing and cannot step.
 - **No NPS arrowhead** (`AGENTS.md` §5) — a registered trademark. The band is a plain
-  rectangle and carries nothing.
+  rectangle and carries nothing. By the same rule, never Japan's national park mark or
+  Norway's national park logo on the icons for the parks abroad.
 
 ## What gets written
 

@@ -241,7 +241,7 @@
 		A1000000000000000000G003 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES[sdk=iphone*]" = "AppIcon-grandCanyon AppIcon-yosemite AppIcon-sequoia AppIcon-rockyMountain AppIcon-olympic AppIcon-acadia AppIcon-joshuaTree AppIcon-everglades AppIcon-congaree";
+				"ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES[sdk=iphone*]" = "AppIcon-grandCanyon AppIcon-yosemite AppIcon-sequoia AppIcon-rockyMountain AppIcon-olympic AppIcon-acadia AppIcon-joshuaTree AppIcon-everglades AppIcon-congaree AppIcon-fuji AppIcon-jotunheimen";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS[sdk=iphone*]" = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -284,7 +284,7 @@
 		A1000000000000000000G004 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES[sdk=iphone*]" = "AppIcon-grandCanyon AppIcon-yosemite AppIcon-sequoia AppIcon-rockyMountain AppIcon-olympic AppIcon-acadia AppIcon-joshuaTree AppIcon-everglades AppIcon-congaree";
+				"ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES[sdk=iphone*]" = "AppIcon-grandCanyon AppIcon-yosemite AppIcon-sequoia AppIcon-rockyMountain AppIcon-olympic AppIcon-acadia AppIcon-joshuaTree AppIcon-everglades AppIcon-congaree AppIcon-fuji AppIcon-jotunheimen";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS[sdk=iphone*]" = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

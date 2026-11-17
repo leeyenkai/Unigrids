@@ -83,6 +83,14 @@ struct Grove {
             guard ground < form.relief * min(form.snowLine, 0.80),
                   ground > form.seaLevel + 0.012
             else { return nil }
+        case .birchwood:
+            // The birch belt: the shore and the foot of the slopes, and no higher. The
+            // big Jotunheimen lakes lie close to the treeline, so the birch gives out a
+            // little way above the water and everything over it is heath, scree and
+            // snow.
+            guard ground < form.relief * 0.26,
+                  ground > form.seaLevel + 0.012
+            else { return nil }
         case .none:
             return nil
         }
@@ -109,12 +117,19 @@ struct Grove {
         // A grove of giant sequoia is not all giant sequoia: white fir and sugar pine
         // stand between them, and the giants read as giants because of it.
         case .giantForest: jitter > 0.82 ? .sequoia : .fir
+        // Birch, with a spruce or a pine standing over it now and then.
+        case .birchwood: jitter > 0.86 ? .fir : .birch
         case .conifer, .none: .fir
         }
 
         // Size falls off with distance exactly as the ground does.
         let scale = Double(height) * 0.95 / max(z, 0.08)
-        let tall = kind == .sequoia ? 2.1 : 1
+        let tall = switch kind {
+        case .sequoia: 2.1
+        // A conifer among mountain birch tops it by a good half again.
+        case .fir where form.flora == .birchwood: 1.5
+        default: 1.0
+        }
         let size = scale * form.floraHeight * tall * (0.78 + jitter * 0.44)
         guard size > 1.5 else { return nil }
 
@@ -174,6 +189,8 @@ struct Plant {
         case cypress
         /// Rounded clumps of hardwood on a tree island.
         case hammock
+        /// Mountain birch: two pale, crooked stems under a loose oval crown.
+        case birch
     }
 
     let kind: Kind
@@ -192,6 +209,7 @@ struct Plant {
         case .joshua: 0.36
         case .cypress: 0.32
         case .hammock: 0.98
+        case .birch: 0.34
         }
     }
 }
@@ -205,6 +223,8 @@ extension LandForm {
         case .cypress: 0.115
         case .hammock: 0.058
         case .conifer, .giantForest: 0.080
+        // Mountain birch is a small tree: half a spruce's height, or less.
+        case .birchwood: 0.046
         }
     }
 }
@@ -220,12 +240,19 @@ struct PlantInks {
     let bark: Ink
     /// Cinnamon, for the one tree whose bark is the thing you remember about it.
     let sequoiaBark: Ink
+    /// Broadleaf foliage, for birch: lighter and yellower than any conifer's.
+    let leaf: Ink
+    /// Birch bark: white, and so taken from the land's own white — the snow — which
+    /// keeps it moonlit at night rather than glowing.
+    let birchBark: Ink
     let light: Ink
 
     init(land: Land) {
         canopy = land.vegetation.darkened(0.06)
         bark = land.vegetation.darkened(0.45).mixed(with: Ink(hex: 0x5A4A3A), amount: 0.35)
         sequoiaBark = land.bark ?? bark
+        leaf = land.leaf ?? canopy
+        birchBark = land.snow.darkened(0.10)
         light = land.sun
     }
 
@@ -256,6 +283,7 @@ extension Plant {
         case .joshua: return joshua(u, v, flip: flip, inks: inks)
         case .cypress: return cypress(u, v, flip: flip, inks: inks)
         case .hammock: return hammock(u, v, flip: flip, inks: inks)
+        case .birch: return birch(u, v, flip: flip, inks: inks)
         }
     }
 
@@ -389,6 +417,36 @@ extension Plant {
         for (index, clump) in clumps.enumerated() {
             if let light = lump(u, v, clump, shift: 0, seed: index, flip: flip) {
                 return inks.lit(inks.canopy, light)
+            }
+        }
+        return nil
+    }
+
+    private func birch(_ u: Double, _ v: Double, flip: Double, inks: PlantInks) -> Ink? {
+        // A loose oval crown, carried high and leaning a little with the tree. Ragged
+        // and gappy, because the leaf is small and the wind keeps it thin; a full round
+        // crown is a lime tree in a park.
+        let lean = (jitter - 0.5) * 0.10
+        let crown: [(Double, Double, Double, Double)] = [
+            (0.00 + lean, 0.60, 0.25, 0.36), (-0.17 + lean * 0.6, 0.42, 0.15, 0.17),
+            (0.17 + lean * 0.7, 0.46, 0.14, 0.18), (0.05 + lean * 1.3, 0.86, 0.15, 0.14),
+        ]
+        for (index, clump) in crown.enumerated() {
+            if let light = lump(u, v, clump, shift: 0, seed: index &+ 3, flip: flip) {
+                return inks.lit(inks.leaf, light)
+            }
+        }
+        // Two stems from one foot, crooked the way snow load leaves them, white with
+        // the dark bands of the bark's own markings.
+        let stems: [((Double, Double), (Double, Double), Double)] = [
+            ((0.00, 0.00), (-0.05 + lean, 0.50), 0.015),
+            ((0.01, 0.00), (0.07 + lean, 0.44), 0.012),
+        ]
+        for stem in stems {
+            if let along = limb(u, v, from: stem.0, to: stem.1, stem.2) {
+                let marked = sin(v * 61 + jitter * 9) > 0.80
+                let bark = marked ? inks.birchBark.darkened(0.40) : inks.birchBark
+                return inks.lit(bark, -along * flip * 0.7)
             }
         }
         return nil

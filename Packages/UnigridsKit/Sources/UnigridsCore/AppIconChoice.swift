@@ -21,6 +21,8 @@ public enum AppIconChoice: String, CaseIterable, Sendable, Identifiable, Codable
     case joshuaTree
     case everglades
     case congaree
+    case fuji
+    case jotunheimen
 
     public static let standard = AppIconChoice.zion
 
@@ -40,9 +42,13 @@ public enum AppIconChoice: String, CaseIterable, Sendable, Identifiable, Codable
         case .joshuaTree: "Joshua Tree"
         case .everglades: "Everglades"
         case .congaree: "Congaree"
+        case .fuji: "Fuji-Hakone-Izu"
+        case .jotunheimen: "Jotunheimen"
         }
     }
 
+    /// Where the park is, for the second half of the picker's row: its state, or for a
+    /// park abroad its country.
     public var state: String {
         switch self {
         case .zion: "Utah"
@@ -55,6 +61,8 @@ public enum AppIconChoice: String, CaseIterable, Sendable, Identifiable, Codable
         case .joshuaTree: "California"
         case .everglades: "Florida"
         case .congaree: "South Carolina"
+        case .fuji: "Japan"
+        case .jotunheimen: "Norway"
         }
     }
 

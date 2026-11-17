@@ -8,7 +8,8 @@ var arguments = Array(CommandLine.arguments.dropFirst())
 
 /// `--park <name>` picks which park the icon is for: its land behind the stack and its
 /// brochure on top. Names are the `Scene` raw values — zion, grandCanyon, yosemite,
-/// sequoia, rockyMountain, olympic, acadia, joshuaTree, everglades, congaree.
+/// sequoia, rockyMountain, olympic, acadia, joshuaTree, everglades, congaree, fuji,
+/// jotunheimen.
 ///
 /// Zion is the default because it is what ships as the app's own icon: running with no
 /// arguments has to reproduce the committed PNGs exactly, or the generator stops being

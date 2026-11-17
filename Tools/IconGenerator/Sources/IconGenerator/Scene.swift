@@ -33,6 +33,8 @@ struct Land {
     let greenery: Double
     /// Bark, for a park whose trees are known by it. Nil takes it from the canopy.
     var bark: Ink?
+    /// Broadleaf foliage, for a park whose trees are birch. Nil takes it from the canopy.
+    var leaf: Ink?
 }
 
 /// A park the icon can be drawn for: its name and designation for the brochure's band,
@@ -48,9 +50,20 @@ enum Scene: String, CaseIterable, Hashable {
     case joshuaTree
     case everglades
     case congaree
+    case fuji
+    case jotunheimen
 
     /// What ships as the app's own icon. The rest are alternates the reader can pick.
     static let standard = Scene.zion
+
+    /// The ten US parks the icon was first built for, in their original order.
+    ///
+    /// Their stacks are drawn from this ring and not from `allCases`, so adding a park
+    /// abroad leaves every one of their icons exactly as it was approved.
+    private static let unitedStates: [Scene] = [
+        .zion, .grandCanyon, .yosemite, .sequoia, .rockyMountain,
+        .olympic, .acadia, .joshuaTree, .everglades, .congaree,
+    ]
 
     var parkName: String {
         switch self {
@@ -64,14 +77,18 @@ enum Scene: String, CaseIterable, Hashable {
         case .joshuaTree: "Joshua Tree"
         case .everglades: "Everglades"
         case .congaree: "Congaree"
+        case .fuji: "Fuji-Hakone-Izu"
+        case .jotunheimen: "Jotunheimen"
         }
     }
 
     /// The designation under the name, as the band carries it.
     ///
-    /// The park and its state, and nothing else. A real band also carries "National Park
-    /// Service" and the Department of the Interior, and this one deliberately does not:
-    /// `AGENTS.md` §5 forbids implying affiliation, and a line naming the agency would.
+    /// The park and its state — or, abroad, its country — and nothing else. A real band
+    /// also carries "National Park Service" and the Department of the Interior, and this
+    /// one deliberately does not: `AGENTS.md` §5 forbids implying affiliation, and a line
+    /// naming the agency would. The same goes for the parks abroad: no Ministry of the
+    /// Environment, no Miljødirektoratet, and neither country's national park mark.
     var designation: String {
         switch self {
         case .zion: "National Park · Utah"
@@ -84,19 +101,25 @@ enum Scene: String, CaseIterable, Hashable {
         case .joshuaTree: "National Park · California"
         case .everglades: "National Park · Florida"
         case .congaree: "National Park · South Carolina"
+        case .fuji: "National Park · Japan"
+        case .jotunheimen: "National Park · Norway"
         }
     }
 
     /// The two brochures behind this one in the stack.
     ///
     /// The next two parks round the list, so every variant shows a different trio and no
-    /// variant shows the same park twice.
+    /// variant shows the same park twice. The US parks go round their own ring of ten,
+    /// closed on itself as it was before any park abroad joined, so their stacks — and
+    /// their icons — are unchanged by the parks added after them. A park abroad goes
+    /// round the whole list: Jotunheimen and Zion under Fuji, Zion and the Grand Canyon
+    /// under Jotunheimen.
     var others: [Scene] {
-        let all = Scene.allCases
-        guard let index = all.firstIndex(of: self) else { return [] }
+        let ring = Scene.unitedStates.contains(self) ? Scene.unitedStates : Scene.allCases
+        guard let index = ring.firstIndex(of: self) else { return [] }
         return [
-            all[(index + 1) % all.count],
-            all[(index + 2) % all.count],
+            ring[(index + 1) % ring.count],
+            ring[(index + 2) % ring.count],
         ]
     }
 
@@ -498,6 +521,91 @@ enum Scene: String, CaseIterable, Hashable {
                 seaLevel: landForm.seaLevel,
                 snow: Ink(hex: 0xF4F7FA),
                 greenery: 1.0
+            )
+        case (.fuji, .light):
+            // A clear morning from the lakes. The cone's bare flanks are dark volcanic
+            // cinder, which the distance turns slate-blue under the white cap; the
+            // hills in front are forest, and the lake takes the sky.
+            Land(
+                sky: Ink(hex: 0x3A7EC4),
+                skyHorizon: Ink(hex: 0xCADCEA),
+                ridges: [
+                    Ink(hex: 0x4A5268), Ink(hex: 0x41484E), Ink(hex: 0x3A4A40),
+                    Ink(hex: 0x2E4230), Ink(hex: 0x243822),
+                ],
+                floor: Ink(hex: 0x2E4A2E),
+                sun: Ink(hex: 0xF0E8D2),
+                haze: Ink(hex: 0xC2D0E0),
+                cloud: Ink(hex: 0xF2F6F8),
+                vegetation: Ink(hex: 0x2A4C2C),
+                sea: Ink(hex: 0x2A6894),
+                seaLevel: landForm.seaLevel,
+                snow: Ink(hex: 0xF4F7FA),
+                greenery: 0.90
+            )
+        case (.fuji, .dark):
+            Land(
+                sky: Ink(hex: 0x0B1322),
+                skyHorizon: Ink(hex: 0x262A34),
+                ridges: [
+                    Ink(hex: 0x30323E), Ink(hex: 0x282C36), Ink(hex: 0x1E2824),
+                    Ink(hex: 0x18221B), Ink(hex: 0x121A14),
+                ],
+                floor: Ink(hex: 0x142016),
+                sun: Ink(hex: 0x262C38),
+                haze: Ink(hex: 0x161E2A),
+                cloud: Ink(hex: 0x242C38),
+                vegetation: Ink(hex: 0x0F1D13),
+                sea: Ink(hex: 0x10263A),
+                seaLevel: landForm.seaLevel,
+                // Moonlit, as Olympic's cap is: the brightest thing in the frame without
+                // being the daylight white.
+                snow: Ink(hex: 0xB0BAC6),
+                greenery: 0.90
+            )
+        case (.jotunheimen, .light):
+            // Dark rock — much of Jotunheimen is gabbro and its kin, near black when
+            // wet and a dark warm grey in sun; grey-green heath above the birch; the
+            // birch itself, a lighter and yellower green than any conifer; and the lake
+            // the milky green Gjende is, from the rock flour its glacial water carries.
+            Land(
+                sky: Ink(hex: 0x3C7CC0),
+                skyHorizon: Ink(hex: 0xC8D8E6),
+                ridges: [
+                    Ink(hex: 0x585654), Ink(hex: 0x484644), Ink(hex: 0x3A3734),
+                    Ink(hex: 0x4A4A3C), Ink(hex: 0x34421F),
+                ],
+                floor: Ink(hex: 0x4E5A38),
+                sun: Ink(hex: 0xEEEAD8),
+                haze: Ink(hex: 0xCCD8E4),
+                cloud: Ink(hex: 0xF4F8FA),
+                vegetation: Ink(hex: 0x40592C),
+                sea: Ink(hex: 0x3A8C7E),
+                seaLevel: landForm.seaLevel,
+                snow: Ink(hex: 0xF4F7FA),
+                greenery: 0.40,
+                leaf: Ink(hex: 0x6E8C3A)
+            )
+        case (.jotunheimen, .dark):
+            Land(
+                sky: Ink(hex: 0x0A1120),
+                skyHorizon: Ink(hex: 0x252934),
+                ridges: [
+                    Ink(hex: 0x3C424C), Ink(hex: 0x323840), Ink(hex: 0x282D34),
+                    Ink(hex: 0x22261E), Ink(hex: 0x181D15),
+                ],
+                floor: Ink(hex: 0x1A2016),
+                sun: Ink(hex: 0x242C38),
+                haze: Ink(hex: 0x161E2C),
+                cloud: Ink(hex: 0x242C3A),
+                vegetation: Ink(hex: 0x16221A),
+                sea: Ink(hex: 0x12302C),
+                seaLevel: landForm.seaLevel,
+                // Moonlit, as the Rocky Mountain snow is: there is more snow in this
+                // frame than in any other, and left white it made the night icon glare.
+                snow: Ink(hex: 0x8E98A6),
+                greenery: 0.40,
+                leaf: Ink(hex: 0x26321C)
             )
         case (_, .tinted):
             // Value alone has to carry the depth, so the steps are wider here than

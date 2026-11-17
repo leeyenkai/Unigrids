@@ -26,7 +26,7 @@ struct AppIconChoiceTests {
         #expect(AppIconChoice.named("") == .standard)
     }
 
-    @Test("every icon names a park and a state")
+    @Test("every icon names a park and where it is")
     func everyChoiceIsLabelled() {
         for choice in AppIconChoice.allCases {
             #expect(!choice.name.isEmpty)
@@ -41,6 +41,7 @@ struct AppIconChoiceTests {
         #expect(AppIconChoice.allCases.map(\.rawValue) == [
             "zion", "grandCanyon", "yosemite", "sequoia", "rockyMountain",
             "olympic", "acadia", "joshuaTree", "everglades", "congaree",
+            "fuji", "jotunheimen",
         ])
     }
 }

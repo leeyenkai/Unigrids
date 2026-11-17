@@ -42,7 +42,8 @@ enum AssetCatalog {
     /// What an alternate icon needs: the three iOS appearances and nothing else.
     ///
     /// macOS has no runtime icon switching — `setAlternateIconName` is UIKit only — so
-    /// the ten macOS sizes would be ten unreferenced files per park, ninety in all.
+    /// the ten macOS sizes would be ten unreferenced files per park, a hundred and ten
+    /// in all.
     static let alternateEntries: [CatalogEntry] = ios
 
     private static let ios: [CatalogEntry] = [

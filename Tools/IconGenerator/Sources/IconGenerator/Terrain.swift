@@ -331,9 +331,17 @@ struct Terrain {
         }
 
         // Snow above the line, on ground flat enough to hold it.
-        if form.snowLine < 1 {
-            let above = (height / form.relief - form.snowLine) / (1 - form.snowLine)
-            let holds = 1 - min(abs(sample.lit) * 1.1, 1)
+        if form.snowLine < form.snowTop {
+            let above = (height / form.relief - form.snowLine) / (form.snowTop - form.snowLine)
+            // By the slope, where the park says so: the light alone leaves half a coat
+            // on every face it does not look straight at, which is grey, not snow.
+            let holds: Double
+            if form.snowSlope < 1 {
+                let t = min(max((sample.steep - form.snowSlope) / 0.10, 0), 1)
+                holds = 1 - t * t * (3 - 2 * t)
+            } else {
+                holds = 1 - min(abs(sample.lit) * 1.1, 1)
+            }
             let lying = min(max(above, 0), 1) * holds
             ink = ink.mixed(with: land.snow, amount: lying * 0.92)
         }

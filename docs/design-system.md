@@ -240,7 +240,7 @@ same two-ring-and-two-rules geometry `StampView` draws at full size, scaled with
 ## 8. The app icon
 
 > Built by `Tools/IconGenerator`, which has the full construction notes.
-> `swift run -c release IconGenerator --all` there regenerates all ten icon sets,
+> `swift run -c release IconGenerator --all` there regenerates all twelve icon sets,
 > deterministically.
 
 A national park fills the tile, rendered as a perspective heightfield, and three Unigrid
@@ -248,10 +248,19 @@ brochures lie across the foreground as sheets of frosted glass with the park sho
 blurred through them. Each sheet prints **its own** park, so the pile reads as three
 different brochures rather than one printed three times.
 
-**Ten parks are built, and the reader picks one in Settings** — Zion, Grand Canyon,
-Yosemite, Sequoia, Rocky Mountain, Olympic, Acadia, Joshua Tree, Everglades and Congaree.
-The chosen park's land stands behind the stack and its brochure is the one on top. Zion
-ships as the app's own icon; the other nine are alternate icons.
+**Twelve parks are built, and the reader picks one in Settings** — Zion, Grand Canyon,
+Yosemite, Sequoia, Rocky Mountain, Olympic, Acadia, Joshua Tree, Everglades and Congaree,
+and two abroad: Fuji-Hakone-Izu in Japan (Mount Fuji over the lakes at its northern foot)
+and Jotunheimen in Norway (a long green lake in a glacial trough under snowy peaks, as
+Gjende lies). The chosen park's land stands behind the stack and its brochure is the one
+on top; the band names the park and its state, or abroad its country. Zion ships as the
+app's own icon; the other eleven are alternate icons. Adding a park never changes an
+existing icon: the ten US parks keep their own ring for the brochures under them, so their
+stacks are as they were.
+
+The NPS arrowhead never appears (§1), and by the same rule neither does Japan's national
+park mark nor Norway's national park logo — the icons for the parks abroad are as unbadged
+as the rest.
 
 One of them departs from its park on purpose. Olympic's icon stands a stratovolcano over
 the rainforest, and Mount Olympus is not a volcano — it is a glaciated peak of uplifted
