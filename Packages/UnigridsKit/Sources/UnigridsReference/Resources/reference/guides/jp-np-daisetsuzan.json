@@ -1,0 +1,213 @@
+{
+ "placeID": "jp-np-daisetsuzan",
+ "contentVersion": 1,
+ "story": [
+  "Daisetsuzan is a cluster of volcanoes and the high plateaus between them, at the headwaters of both the Ishikari and the Tokachi, Hokkaido's two largest river basins. Asahidake, still steaming, is the highest point on the island at 2,291 metres. Next to it lies Ohachidaira, a caldera about two kilometres across left by an eruption some 30,000 years ago. Eruptions also laid down thick flows of volcanic debris that cracked into many-sided columns as they cooled, and the rivers have cut through them to make the sheer-walled gorges of Sounkyo and Tenninkyo.",
+  "Snow and ice hold the high plateaus for most of the year. In the short summer the meadows of Susoaidaira and the slopes below Asahidake fill with chinguruma and other alpine flowers, some of them found nowhere else, such as the Hosoba-uruppusō. Pikas live among the boulders, and the Usuba-kichō, a primitive yellow swallowtail that in Japan lives only here, is a national natural monument. The autumn colour here is the earliest in Japan, starting at the end of August on the heights.",
+  "The southern part of the park is the Tokachi range, a line of volcanoes led by Tokachidake, which is still active. On 24 May 1926 part of its central cone collapsed onto the snowpack, and the resulting mudflow swept down the Biei and Furano rivers into the farming villages below, killing or leaving missing 144 people. To the east lie the deep forests of Higashi-Taisetsu, the high natural Lake Shikaribetsu, and the reservoir of Lake Nukabira.",
+  "The Ainu called these mountains Kamui Mintara, the playground of the gods, and Ainu owl rituals are still part of Sounkyo's summer fire festival. Daisetsuzan was designated in December 1934, one of the first national parks in Japan. It was long the country's largest, but since 2024 Hidakasanmyaku-Erimo-Tokachi has covered more ground. In 1977 the headwaters of the Tokachi were taken out of the park to become one of Japan's few strictly protected wilderness areas."
+ ],
+ "howItWorks": [
+  "Almost all of Daisetsuzan is state land: of its 226,764 hectares, 214,466 are national land, much of it national forest, with 10,199 hectares of public and only 2,099 of private land. The park touches ten municipalities, from Furano and Biei in the west to Kamishihoro and Shintoku on the Tokachi side. Its hot-spring villages — Asahidake Onsen, Sounkyo Onsen, Nukabira Gensenkyo and the smaller springs at Daisetsu Kogen, Tenninkyo and Tokachidake — are the bases for almost every trip into the mountains.",
+  "Some 36,807 hectares are special protection zone, where picking any plant, collecting fallen leaves or branches, catching animals or lighting a fire all need a permit from the Minister of the Environment. Another 146,700 hectares are special zone, where building, felling, quarrying and picking listed alpine plants need a permit, and 43,272 hectares are ordinary zone. Five vehicle-restriction areas, designated in 1995 and covering about 96,000 hectares in all, keep off-road vehicles and snowmobiles out of the mountains.",
+  "In autumn the roads up to Ginsendai and Daisetsu Kogen Onsen are managed to cope with leaf-viewers: for about two weeks in September, parking at the top must be booked in advance, traffic runs up and down in turns, and buses take over part of the load. Two of the park's volcanoes, Asahidake (as Taisetsuzan) and Tokachidake, are watched around the clock by the Japan Meteorological Agency, and areas near their craters close when the eruption alert level rises."
+ ],
+ "sightNotes": {
+  "poi-jp-daisetsuzan-asahidake": "Hokkaido's highest peak, 2,291 metres. The ropeway from Asahidake Onsen reaches Sugatami, with a loop past steaming vents and ponds and a 2½-hour path to the top.",
+  "poi-jp-daisetsuzan-sugatami-pond": "A small pond below Asahidake's fuming flank, on the hour-long loop walk from the ropeway's top station.",
+  "poi-jp-daisetsuzan-kurodake": "Reached by ropeway and chairlift from Sounkyo and about an hour on foot; the summit looks across Akadake, Hokuchindake and the other peaks of the plateau.",
+  "poi-jp-daisetsuzan-sounkyo-gorge": "A gorge between walls of columnar volcanic rock, with waterfalls and a hot-spring village at its heart.",
+  "poi-jp-daisetsuzan-ginsendai": "A trailhead famous for the earliest autumn colour in Japan, reached by bus from Sounkyo; car access is restricted at the September peak.",
+  "poi-jp-daisetsuzan-daisetsu-kogen-onsen-ponds-trail": "A forest circuit of ponds below the Takanegahara ridge, with fumaroles and rare alpine plants. Call at the bear information centre first.",
+  "poi-jp-daisetsuzan-tokachidake": "The active 2,077-metre volcano at the head of the Tokachi range, with many craters. Tokachidake Onsen lies on its slopes; check the alert level.",
+  "poi-jp-daisetsuzan-lake-shikaribetsu": "The park's only natural lake, at 810 metres the highest in Hokkaido and about 100 metres deep, home to its own char, the Miyabe iwana."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Asahidake Onsen — the Asahidake Ropeway and the western approach to the main range",
+   "Sounkyo Onsen — the Kurodake Ropeway and buses to Ginsendai",
+   "Daisetsu Kogen Onsen — the ponds trail and the eastern side of the plateau",
+   "Tokachidake Onsen and the Biei and Kamifurano side — the Tokachi range",
+   "Nukabira Gensenkyo and Lake Shikaribetsu — Higashi-Taisetsu"
+  ],
+  "reservations": "No reservation is needed to enter the park. In September, parking at Ginsendai and Daisetsu Kogen Onsen must be booked ahead for the two weeks of peak colour, with a cooperation fee collected on site if spaces remain; the dates are set each year by the local council. Check before you go with Kamikawa town.",
+  "permits": [
+   "No permit is needed to hike; listed alpine plants may not be picked anywhere in the special zones"
+  ],
+  "lodging": [
+   "Asahidake Onsen and Sounkyo Onsen, the two main bases for the central range",
+   "Nukabira Gensenkyo, where every inn's baths run straight from the source",
+   "Tokachidake Onsen and Tenninkyo Onsen"
+  ],
+  "seasonalClosures": [
+   "Heavy snow closes the high trails in winter",
+   "Private cars are restricted on the Ginsendai and Daisetsu Kogen Onsen roads for about two weeks of peak colour in September"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "c. 30,000 years ago",
+   "text": "An eruption leaves the Ohachidaira caldera at the heart of the range."
+  },
+  {
+   "year": "1926",
+   "text": "On 24 May Tokachidake's central cone collapses and a mudflow sweeps into Kamifurano and Biei; 144 people are killed or missing."
+  },
+  {
+   "year": "1934",
+   "text": "Daisetsuzan National Park is designated on 4 December."
+  },
+  {
+   "year": "1977",
+   "text": "The headwaters of the Tokachi River are removed from the park to become a wilderness area."
+  },
+  {
+   "year": "1995",
+   "text": "Five vehicle-restriction areas are designated across the mountains."
+  },
+  {
+   "year": "2009",
+   "text": "Eight members of a guided party die of hypothermia in wind and rain near Mount Tomuraushi in July."
+  },
+  {
+   "year": "2024",
+   "text": "Hidakasanmyaku-Erimo-Tokachi takes over as Japan's largest national park."
+  },
+  {
+   "year": "2026",
+   "text": "Tokachidake's eruption alert level is raised to 3 in September, closing the mountain, and lowered to 2 in October."
+  }
+ ],
+ "safety": [
+  "Asahidake and Tokachidake are active volcanoes. Check the Japan Meteorological Agency's eruption alert level before you go; Tokachidake was at level 3, no entry, from 12 September to 16 October 2026. Keep away from fumaroles, where gas can collect.",
+  "The plateau is exposed, and weather turns fast. In July 2009 eight members of a guided party died of hypothermia near Mount Tomuraushi in wind and cold rain. Carry warm, waterproof layers in midsummer, and turn back early.",
+  "Brown bears (higuma) live throughout the park. Carry bear spray, make noise, never leave food out, and check recent sightings at the visitor centres and the bear information centre at Daisetsu Kogen.",
+  "The long traverses cross roadless country. Plan to be self-sufficient and leave a route plan."
+ ],
+ "regulations": [
+  "Do not pick or dig up alpine plants; listed species are protected throughout the special zones.",
+  "Picking any plant, collecting fallen branches, catching animals or lighting a fire in the special protection zone needs a permit.",
+  "Snowmobiles and off-road vehicles are barred from the five vehicle-restriction areas.",
+  "Follow the autumn traffic rules on the Ginsendai and Daisetsu Kogen Onsen roads."
+ ],
+ "credits": [
+  "Text written for Unigrids from the Ministry of the Environment's park pages and the sources listed. Photographs from Wikimedia Commons, credited individually.",
+  "Park areas: Ministry of the Environment, Japan (nps.zip, 2026-11-16)",
+  "Visitors: 自然公園等利用者数調, Ministry of the Environment, Japan (2024)"
+ ],
+ "sources": [
+  {
+   "title": "Daisetsuzan National Park — National Parks of Japan (Ministry of the Environment)",
+   "url": "https://www.japan.travel/national-parks/parks/daisetsuzan/"
+  },
+  {
+   "title": "大雪山国立公園 — 環境省",
+   "url": "https://www.env.go.jp/park/daisetsu/index.html"
+  },
+  {
+   "title": "大雪山国立公園 見どころ・施設 — 国立公園に、行ってみよう！（環境省）",
+   "url": "https://www.env.go.jp/nature/nationalparks/list/daisetsuzan/spot/"
+  },
+  {
+   "title": "国立公園一覧 — 環境省",
+   "url": "https://www.env.go.jp/park/parks/index.html"
+  },
+  {
+   "title": "令和８年度 国立公園自動車利用適正化対策等実施計画 — 環境省",
+   "url": "https://www.env.go.jp/park/system/files/np_8.pdf"
+  },
+  {
+   "title": "自然公園法（昭和32年法律第161号）— e-Gov法令検索",
+   "url": "https://laws.e-gov.go.jp/law/332AC0000000161"
+  },
+  {
+   "title": "十勝岳の噴火警戒レベルを3に引き上げ — 気象庁",
+   "url": "https://www.jma.go.jp/jma/press/2609/12a/tokachidake_20260912.pdf"
+  },
+  {
+   "title": "大正泥流から100年 — 気象庁旭川地方気象台",
+   "url": "https://www.data.jma.go.jp/asahikawa/shosai/kazan/taisholahar100.html"
+  },
+  {
+   "title": "1926 十勝岳噴火 — 内閣府 災害教訓の継承",
+   "url": "https://www.bousai.go.jp/kyoiku/kyokun/kyoukunnokeishou/rep/1926_tokachi_funka/pdf/12_sheet.pdf"
+  },
+  {
+   "title": "北海道の火山 — 北海道",
+   "url": "https://www.pref.hokkaido.lg.jp/sm/ktk/bsb/kazan.html"
+  },
+  {
+   "title": "夏山の低体温症に注意 — 北海道",
+   "url": "https://www.pref.hokkaido.lg.jp/sm/ktk/bsb/208959.html"
+  },
+  {
+   "title": "十勝岳 — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/十勝岳"
+  },
+  {
+   "title": "Mount Tokachi (Daisetsuzan) — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mount_Tokachi_(Daisetsuzan)"
+  },
+  {
+   "title": "日本の主な山岳標高一覧（令和8年3月31日）— 国土地理院",
+   "url": "https://www.gsi.go.jp/KOKUJYOHO/MOUNTAIN/1003zan20260331.pdf"
+  },
+  {
+   "title": "日本の火山 vol.30 大雪山 — 内閣府 防災情報のページ",
+   "url": "https://www.bousai.go.jp/kohou/kouhoubousai/h26/75/volcano.html"
+  },
+  {
+   "title": "十勝川水系の概要 — 国土交通省",
+   "url": "https://www.mlit.go.jp/river/basic_info/jigyo_keikaku/gaiyou/seibi/pdf/tokachi/03_tokachi_gaiyou_R409.pdf"
+  },
+  {
+   "title": "十勝岳の噴火警戒レベルを2へ引下げ — 気象庁",
+   "url": "https://www.jma.go.jp/jma/press/2610/16a/tokachidake_20261016.html"
+  },
+  {
+   "title": "自然公園等利用者数調 — Ministry of the Environment",
+   "url": "https://www.env.go.jp/park/doc/data.html"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "OKJaguar, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "jp-np-daisetsuzan-68e411a02f.jpg",
+  "caption": "Asahidake above Suribachi Pond",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Suribachi_Pond_and_Mount_Asahidake,_Daisetsuzan_National_Park,_Hokkaido,_Japan.jpg",
+  "altText": "A small pond in a volcanic hollow below a bare, rounded mountain",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "pakku, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "jp-np-daisetsuzan-71c5547f07.jpg",
+   "caption": "Chinguruma flowering below Asahidake's steam",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:%E3%83%81%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%9E%E3%81%A8%E5%99%B4%E7%85%99_-_panoramio.jpg",
+   "altText": "Small white alpine flowers with a plume of volcanic steam behind",
+   "licence": "CC BY 3.0"
+  },
+  {
+   "credit": "Marie-Sophie Mejan, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "jp-np-daisetsuzan-0a9887dcc6.jpg",
+   "caption": "The walls of Sounkyo Gorge",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Japan_Hokkaido,_Sounkyo_gorge_01.jpg",
+   "altText": "Tall columns of grey rock above a forested river valley",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "credit": "pakku, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "jp-np-daisetsuzan-0899242620.jpg",
+   "caption": "Asahidake and the Susoaidaira meadows",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:%E6%97%AD%E5%B2%B3%E3%81%A8%E8%A3%BE%E5%90%88%E5%B9%B3%EF%BC%88Mt.Asahi_and_Susoaidaira%EF%BC%89_-_panoramio.jpg",
+   "altText": "A broad alpine meadow below a high volcanic peak",
+   "licence": "CC BY 3.0"
+  }
+ ],
+ "weather": "Winter is long and summer very short — roughly July and August. The alpine flowers bloom in July and August. Autumn arrives first in Japan here — the leaves on the plateau begin to turn at the end of August and peak around mid-September at places like Ginsendai — and the first snow usually follows in October. Asahidake's slopes have the longest ski season in Japan, from November to early May. Even in midsummer the open plateau can be swept by cold wind and rain.",
+ "directions": "Asahikawa is the gateway. Asahikawa Airport has flights from Tokyo Haneda and Narita (about 90 minutes), with a bus to Asahikawa Station; limited express trains run from Sapporo to Asahikawa in about 90 minutes. From Asahikawa Station, Asahikawa Denkikidō buses go to Asahidake Onsen (about 90 to 100 minutes) and Dōhoku Bus to Sounkyo Onsen (about two hours). Some smaller hot springs have no public transport, though their inns run shuttles. A car is the easiest way between the park's areas."
+}

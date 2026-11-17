@@ -1,0 +1,166 @@
+{
+ "placeID": "no-np-forollhogna",
+ "contentVersion": 1,
+ "story": [
+  "Many call Forollhogna 'the gentle mountains'. The fells here are easy going and peaceful: low summits, lakes and small streams on Gauldalsvidda, with gentle slopes rising from the valleys around. The highest point is Forollhogna itself, 1,332 metres, where Os, Holtålen and Midtre Gauldal meet, above the lake Forollsjøen at the centre of the park.",
+  "The bedrock is rich and weathers easily, and that gives good conditions for plants and animals alike. Forollhogna is best known for its large, stable and productive wild reindeer herd and for good willow grouse country; wolverine live here and arctic fox are occasionally seen. All four species of mountain duck that breed in Norway nest here, and golden eagles, gyrfalcons and rough-legged buzzards are among the birds of prey. The fells are clad in mountain birch, willow and scrub.",
+  "People have used these mountains for thousands of years. Remains of dwellings and sacrificial sites are traces of Sámi and other settlement, and there are many pitfall traps and trapping systems. Everyday travel between the valleys once went over the fells, and after the Røros copper works opened, copper was carried by packhorse over the mountain from Dalsbygda to Støren. The pilgrim road to Nidaros, Østerdalsleden, crosses the park at the foot of Forollhogna.",
+  "Long use for summer farming, hay-making and grazing has made the surrounding valleys a cultural landscape rich in species and old buildings, and in Midtre Gauldal, Os and Tolga alone more than a hundred summer farms are still worked in one way or another. Rare species such as the black vanilla orchid depend on that grazing. Forollhogna became Norway's nineteenth national park on 21 December 2001, ringed by eight landscape protection areas that take in the summer-farm valleys leading up into it."
+ ],
+ "howItWorks": [
+  "The right to roam, allemannsretten, applies: you may walk anywhere in the outfield, camp for two nights in one place without asking — longer high in the mountains — at least 150 metres from a house or cabin, and pick berries and mushrooms. Only twigs from fallen wood and dry twigs may be used for a campfire, and all vegetation, dead trees included, is protected. From 15 April to 15 September it is forbidden across Norway to light a fire in or near forest and other open country unless the municipality has allowed it or a fire plainly cannot spread; check before you go. Dogs must be on a lead from 1 April to 20 August under the national dog law, and sheep and cattle graze the fells in summer.",
+  "Motor traffic on land and water, and aircraft below 300 metres, is forbidden, and the ban expressly covers model aircraft and model boats — drones included. Under Miljødirektoratet's rule, drones may not take off in a national park or be flown into one without the park board's permission. Cycling, organised riding and horse-drawn trips are allowed only on existing roads or routes specially designated by the management authority, and e-bikes count as motor traffic.",
+  "Organised activities that could harm the environment need permission. Hunting follows the game law, and reindeer and grouse hunting are both popular; fishing follows the freshwater fishing law, and fish may not be released into the waters. All rubbish must be carried out."
+ ],
+ "sightNotes": {
+  "poi-no-forollhogna-forollhogna": "The park's highest summit, 1,332 metres, where Os, Holtålen and Midtre Gauldal meet; the pilgrim road passes at its foot.",
+  "poi-no-forollhogna-forollsjoen": "The lake at the centre of the park, below Forollhogna's summit.",
+  "poi-no-forollhogna-gjersjohoa": "Fells in Tolga, in the far south-west of the park, within the range of its wild reindeer herd."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "The summer-farm valleys on every side — from Os, Tolga and Tynset in Østerdalen, Holtålen in Gauldalen, and Midtre Gauldal and Rennebu to the north-west",
+   "The pilgrim road, Østerdalsleden, which crosses the park"
+  ],
+  "reservations": "No booking or fee. There are no tourist cabins or marked trails inside the park, apart from the pilgrim road; a network of paths and farm roads in the surrounding zone suits walking and cycling.",
+  "permits": [
+   "Organised activities that could harm the environment need permission",
+   "Drones and any motor use need a permit"
+  ],
+  "camping": [
+   "Wild camping under the right to roam"
+  ],
+  "lodging": [
+   "The summer-farm valleys and villages around the park, including Vingelen, one of Norway's national park villages"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "Prehistory",
+   "text": "Hunters dig pitfall traps and build trapping systems for reindeer across the fells."
+  },
+  {
+   "year": "Middle Ages",
+   "text": "Pilgrims bound for Nidaros cross the fells on the Østerdalen route."
+  },
+  {
+   "year": "Centuries past",
+   "text": "Summer farming, hay-making and grazing shape the valleys around the fells into a species-rich cultural landscape."
+  },
+  {
+   "year": "After 1644",
+   "text": "With the Røros copper works operating, copper is carried by packhorse over the mountain from Dalsbygda to Støren."
+  },
+  {
+   "year": "2001",
+   "text": "On 21 December Forollhogna becomes Norway's nineteenth national park, with eight landscape protection areas around it."
+  },
+  {
+   "year": "2008",
+   "text": "The park's boundaries are redrawn on a new map, giving about 1,059 square kilometres."
+  }
+ ],
+ "safety": [
+  "There are no marked trails or cabins inside the park. Carry map and compass and be ready to camp.",
+  "Open fells are exposed to wind and fog; turn back early if the weather closes in.",
+  "Give reindeer herds a wide berth, and keep dogs under control near sheep and cattle."
+ ],
+ "regulations": [
+  "No motor traffic or aircraft below 300 metres; model aircraft and boats, drones included, are banned without the park board's permission.",
+  "Cycling and riding only on existing roads or designated routes; e-bikes count as motor traffic.",
+  "Burn only fallen and dry twigs; no open fires near forest from 15 April to 15 September unless the municipality allows it.",
+  "Dogs on a lead from 1 April to 20 August.",
+  "Take all rubbish home."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Forollhogna nasjonalpark — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/forollhogna/"
+  },
+  {
+   "title": "Forollhogna nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00000597"
+  },
+  {
+   "title": "Forskrift om Forollhogna nasjonalpark — Lovdata",
+   "url": "https://lovdata.no/dokument/LF/forskrift/2001-12-21-1564"
+  },
+  {
+   "title": "Forollhogna — forollhogna.info",
+   "url": "https://forollhogna.info/"
+  },
+  {
+   "title": "Forollhogna National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Forollhogna_National_Park"
+  },
+  {
+   "title": "Forollhogna nasjonalpark — Wikipedia (Norwegian)",
+   "url": "https://no.wikipedia.org/wiki/Forollhogna_nasjonalpark"
+  },
+  {
+   "title": "Regler for droner i naturen — Miljødirektoratet",
+   "url": "https://www.miljodirektoratet.no/ansvarsomrader/vernet-natur/regler-for-droner-i-naturen/"
+  },
+  {
+   "title": "Lov om friluftslivet (friluftsloven) — Lovdata",
+   "url": "https://lovdata.no/dokument/NL/lov/1957-06-28-16"
+  },
+  {
+   "title": "Forskrift om brannforebygging — Lovdata",
+   "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+  },
+  {
+   "title": "Lov om forsvarlig hundehold (hundeloven) — Lovdata",
+   "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+  },
+  {
+   "title": "Sight locations — Kartverket place names (stedsnavn)",
+   "url": "https://ws.geonorge.no/stedsnavn/v1/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Geir Hval (www.MacWhale.eu), via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "no-np-forollhogna-d38688f9d7.jpg",
+  "caption": "Forollhogna above Vangrøftdalen, one of the summer-farm valleys, in autumn",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Forollhogna_Skarvdalen_Vangr%C3%B8ftdalen_Dalsbygda_Os_%C3%98sterdalen_Innlandet_Norway_(2010.09.26).jpg",
+  "altText": "A broad, gentle mountain rising beyond an autumn-coloured valley",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "Håvard Berland, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-forollhogna-a2023fdaff.jpg",
+   "caption": "Looking north from the ascent of Forollhogna",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:ForollhognaView.jpg",
+   "altText": "Rolling open fells and lakes stretching to the horizon",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "Apple farmer, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-forollhogna-e94c69a957.jpg",
+   "caption": "Wild reindeer near Gjersjøhøa",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Reinsflokk_Gjersj%C3%B8h%C3%B8a.jpg",
+   "altText": "A herd of reindeer crossing open mountain heath",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Apple farmer, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-forollhogna-b2131df67c.jpg",
+   "caption": "The Magnill lakes and summer farms in Tolga",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Magnillsjoan.jpg",
+   "altText": "Two small lakes below gentle fells, with farm buildings nearby",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "These are low, rolling mountains with gentle slopes that are easy to walk. Summer is the season of the summer farms, when sheep and cattle graze the fells and the dairies are working; autumn is the hunting season for reindeer and grouse. Weather on the open fells can turn quickly, so carry warm, windproof clothes.",
+ "directions": "Forollhogna lies on the border between Innlandet and Trøndelag, between the Orkla, the E6, Gauldalen and the Glomma. Trondheim is one to two hours' drive to the north, and the world heritage town of Røros lies to the east. The Røros Line runs through the valleys on the eastern side, and roads lead up the summer-farm valleys towards the park."
+}

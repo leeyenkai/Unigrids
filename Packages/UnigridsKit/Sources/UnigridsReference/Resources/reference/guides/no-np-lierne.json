@@ -1,0 +1,199 @@
+{
+ "placeID": "no-np-lierne",
+ "contentVersion": 1,
+ "story": [
+  "Lierne is mostly low, rolling upland, broken in the middle by the massif of Hestkjølen, also written Hartkjølen, whose highest summit, Hestkjøltoppen, reaches 1,390 metres. Around it spread wide mires, tarns, lakes and open woodland of mountain birch. The park runs east to the Swedish border, and across it lies the much larger Hotagen nature reserve in Jämtland; together they make one of the largest continuous protected areas in the Nordic countries.",
+  "The last ice age shaped almost every slope. It left thick moraine and a rare collection of landforms: drumlins, eskers, drainage channels, kame terraces and rogen moraines, groups of bouldery ridges that formed across the direction of the moving ice. Rogen moraines are found in only a few places in Norway, and the park's regulation names them among the reasons it was protected.",
+  "Because Lierne lies east of the main mountain chain, eastern species meet western ones here. Wetland birds thrive on the mires and lakes, among them dotterel, dunlin, red-necked phalarope and long-tailed skua. The size and quiet of the wilderness suit animals that need room: wolverine, lynx and brown bear live here, and the endangered Arctic fox has returned. Brown trout swim in the lakes and streams.",
+  "People have hunted these hills for thousands of years. Trapping pits, the oldest perhaps from the Bronze Age, and the remains of an iron-production site have been found, and the area has long been part of the Sámi world: settlement sites, reindeer corrals, burial places and sacred sites survive, and reindeer herding goes on today. The park was created by royal decree on 17 December 2004, the same day as its larger neighbour Blåfjella-Skjækerfjella, and Crown Princess Mette-Marit opened it in 2006."
+ ],
+ "howItWorks": [
+  "Norway's right to roam, allemannsretten, applies here as on any uncultivated land: you may walk, ski and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland; check the local fire risk before you go. Dogs must be kept on a lead nationwide from 1 April to 20 August, and in reindeer country they should never be allowed to run loose.",
+  "On top of that the park's own regulation applies. Motor traffic is banned on land and water, and so is flying lower than 300 metres; reindeer herding and a few approved ice-fishing routes are exempt. Electric bicycles count as motor traffic and are not allowed. Horse-drawn carts may use only routes the park designates. You may use dead wood sparingly for a fire, but you may not cut trees for firewood, not even dead standing pines. Picking berries, mushrooms and common plants is allowed, and so are hunting and fishing under the general rules, with a licence.",
+  "The regulation states that the area shall remain usable for reindeer herding and protects the natural basis of Sámi culture. Huts owned by the local mountain boards, which administer hunting, fishing and grazing, can be rented inside and outside the park; there are no staffed huts and no marked trails. The park is run by the national park board for Blåfjella-Skjækerfjella and Lierne, and organised activity beyond traditional walking trips needs its permission."
+ ],
+ "sightNotes": {
+  "poi-no-lierne-hestkjoltoppen": "The highest summit in the park, 1,390 metres, on the Hestkjølen massif. There is no marked route: go only in clear weather, with map and compass.",
+  "poi-no-lierne-hestkjolen": "The upland massif that fills the centre of the park, also called Hartkjølen, with bare tops above tarns and mires.",
+  "poi-no-lierne-fiskloysdalen": "A valley in the east of the park. For fit, experienced walkers, the park suggests a summer round trip up Lutterdalen and back down Fiskløysdalen.",
+  "poi-no-lierne-muru": "The valley north of the park, outside its boundary, with the main entrance at Øvre jakthytta; a marked, partly boardwalked trail leads about three kilometres to the memorial stone inside.",
+  "poi-no-lierne-raudbergtjonna": "A tarn about a kilometre north of the park boundary, where Nordli fjellstyre rents out Raudberghytta, at an entry point for Hestkjølen and the park."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Muru, the main entrance on the northern side: turn off Fv74 at Muru and follow a toll road up to Øvre jakthytta, where the path to the park boundary begins",
+   "Løvsjølia, reached through Sørli on Fv765, with a ski track in winter",
+   "Mebygda, further along Fv765, where a forest road leads to a car park below Hestkjølen"
+  ],
+  "reservations": "There is no entry reservation or permit. Huts belonging to the local mountain boards are booked directly with them.",
+  "permits": [
+   "Buy a hunting or fishing licence before you hunt or fish",
+   "Organised activity beyond traditional walking trips by trekking associations, schools and clubs needs permission from the national park board"
+  ],
+  "camping": [
+   "Wild camping under the right to roam, at least 150 metres from houses and cabins",
+   "No fires in or near woodland from 15 April to 15 September; use only dead wood, and never fell trees or dead standing pines"
+  ],
+  "lodging": [
+   "Huts and boats for rent from the local mountain boards, inside and outside the park",
+   "Lodging and services in Lierne's villages"
+  ],
+  "seasonalClosures": [
+   "Winter access on the toll road from Muru to Øvre jakthytta is not guaranteed — check conditions locally before you go"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "End of the last ice age",
+   "text": "Melting ice leaves thick moraine, drumlins, eskers and rogen moraines across the upland."
+  },
+  {
+   "year": "Bronze Age",
+   "text": "Hunters may already be digging the oldest of the trapping pits found in the park."
+  },
+  {
+   "year": "Centuries past",
+   "text": "Sámi reindeer herders use the area, leaving settlement sites, corrals, graves and sacred places."
+  },
+  {
+   "year": "2004",
+   "text": "Lierne National Park is established by royal decree on 17 December, covering about 333 square kilometres."
+  },
+  {
+   "year": "2004",
+   "text": "Blåfjella-Skjækerfjella National Park, its larger neighbour to the west, is created the same day."
+  },
+  {
+   "year": "2006",
+   "text": "Crown Princess Mette-Marit opens the park; a memorial stone near Muru marks the occasion."
+  }
+ ],
+ "safety": [
+  "There are no marked trails inside the park and mobile coverage is patchy. Carry a map and compass and know how to use them, especially on Hestkjølen.",
+  "Brown bears live here. Make noise in dense scrub, keep food away from your tent and never approach a bear.",
+  "Mires are wide and wet. Wear waterproof boots, and expect mosquitoes in summer.",
+  "Reindeer graze the park. Keep dogs on a lead and give herds a wide berth, especially in spring."
+ ],
+ "regulations": [
+  "No motor traffic on land or water and no flying lower than 300 metres; electric bicycles are not allowed.",
+  "Never cut trees for firewood, not even dead standing pines; use dead wood sparingly.",
+  "No fires in or near woodland from 15 April to 15 September, under Norway's national fire ban.",
+  "Dogs on a lead from 1 April to 20 August, as everywhere in Norway, and never loose near reindeer.",
+  "Hunting and fishing need a licence."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Lierne nasjonalpark — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/lierne/"
+  },
+  {
+   "title": "Lierne nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00002334"
+  },
+  {
+   "title": "Forskrift om verneplan for Verdal-Snåsa-Lierne. Vern av Lierne nasjonalpark/Lijre (FOR-2004-12-17-1694) — Lovdata",
+   "url": "https://lovdata.no/dokument/LF/forskrift/2004-12-17-1694"
+  },
+  {
+   "title": "Lierne National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Lierne_National_Park"
+  },
+  {
+   "title": "Lierne nasjonalpark — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Lierne_nasjonalpark"
+  },
+  {
+   "title": "Lierne/Lijre nasjonalpark — Nasjonalparken.no",
+   "url": "https://www.nasjonalparken.no/nasjonalparker/lierne-lirje-nasjonalpark/"
+  },
+  {
+   "title": "Lierne/Lijre National Park: a living ice age landscape (brochure, 2007) — Miljødirektoratet",
+   "url": "https://www.miljodirektoratet.no/globalassets/dokumenter/publikasjoner/brosjyrer/lierne-e-2007.pdf"
+  },
+  {
+   "title": "Besøkssentre — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/besokssentre/"
+  },
+  {
+   "title": "Lierne/Lijre National Park — Visit Norway",
+   "url": "https://www.visitnorway.com/listings/lierne-lijre-national-park/181624/"
+  },
+  {
+   "title": "Nasjonalpark-bauta Lierne — UT.no",
+   "url": "https://ut.no/turforslag/1112154600/nasjonalpark-bauta-lierne"
+  },
+  {
+   "title": "Raudberghytta i Lierne — UT.no, Nordli fjellstyre",
+   "url": "https://ut.no/hytte/101210088"
+  },
+  {
+   "title": "Hotagens naturreservat — Wikipedia (svenska)",
+   "url": "https://sv.wikipedia.org/wiki/Hotagens_naturreservat"
+  },
+  {
+   "title": "Blåfjella–Skjækerfjella National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Bl%C3%A5fjella%E2%80%93Skj%C3%A6kerfjella_National_Park"
+  },
+  {
+   "title": "Snåsa Station — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Sn%C3%A5sa_Station"
+  },
+  {
+   "title": "Grong Station — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Grong_Station"
+  },
+  {
+   "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+   "url": "https://ws.geonorge.no/stedsnavn/v1/"
+  },
+  {
+   "title": "Adresseregister — Kartverket (visitor centre location)",
+   "url": "https://ws.geonorge.no/adresser/v1/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Kim Backlund, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "no-np-lierne-c0ae7aa25e.jpg",
+  "caption": "A national park boundary marker, with the fell Akavassøran beyond",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Border_marker_nr_125_Lierne_National_Park.jpg",
+  "altText": "A small metal marker post among lichen-covered rocks, with a snow-streaked mountain under white clouds behind",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "Morten Olsen Haugen, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-lierne-a665b69cf7.jpg",
+   "caption": "A stream winding through a green valley in the park",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Lierne_nasjonalpark_3.jpg",
+   "altText": "A small stream meandering through grassy mire between birch-covered slopes under a blue sky",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Morten Olsen Haugen, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-lierne-b99be6c4d9.jpg",
+   "caption": "Pools and mire on the open fell",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Lierne_nasjonalpark_1.jpg",
+   "altText": "Flat, wet upland with shallow pools and low vegetation under large white clouds",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Morten Olsen Haugen, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-lierne-3c16aa52ee.jpg",
+   "caption": "Open fell in Lierne National Park",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Lierne_nasjonalpark_6.jpg",
+   "altText": "A tall grey standing stone on a stony, grassy plateau with wide views to distant hills",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "Lierne lies inland, east of the main mountain chain, with long, cold, snowy winters and a short summer. In summer mosquitoes can be thick, so pack repellent or a head net. Late summer brings plenty of berries, and several of the lakes are known for good fishing. In winter a ski track is prepared in from Løvsjølia, but there are no marked routes inside the park.",
+ "directions": "Lierne lies in north-eastern Trøndelag on the Swedish border, about four hours' drive from Trondheim. There is no railway in Lierne; the neighbouring municipalities of Snåsa and Grong have stations on the Nordland Line between Trondheim and Bodø, and the rest of the way is by road. From the E6, follow Fv74 east towards Lierne and Sweden and turn off at Muru for the main entrance. From the south, Fv765 runs through Sørli to Løvsjølia and Mebygda. Check Entur for any bus connections before you travel."
+}

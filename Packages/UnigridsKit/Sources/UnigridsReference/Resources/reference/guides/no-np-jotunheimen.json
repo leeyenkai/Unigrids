@@ -1,0 +1,225 @@
+{
+ "placeID": "no-np-jotunheimen",
+ "contentVersion": 1,
+ "story": [
+  "Jotunheimen is old, hard rock that ice has worked over. Its massifs are largely gabbro, dark and resistant, and glaciers have carved them into a crowd of sharp peaks and deep troughs. Gjende is one of those troughs: a lake 18 kilometres long and no more than 1.5 wide, turned a pale, milky green by the rock flour the Muru river carries in from the glaciers above it.",
+  "Height decides what lives here. On south-facing slopes birch forest climbs to about 1,300 metres, and the glacier buttercup holds Norway's altitude record for a flowering plant at 2,370 metres. Wild reindeer and herded reindeer both graze the park, and gyrfalcon, golden eagle and rough-legged buzzard nest on its crags. The park sits where the mountains of eastern and western Norway meet, and it keeps something of both.",
+  "People hunted here long before anyone mapped it. Stone Age camps have been found by Gjende and Russvatnet, trapping pits for reindeer survive across the high ground, and the valleys have been summer pasture for centuries. The geologists Keilhau and Boeck explored the range in 1820 and called it Jotunfjeldene; the writer Aasmund Olavsson Vinje turned that into Jotunheimen, the home of the giants, in 1862.",
+  "Mountaineering followed fast. Three men from Lom reached the top of Galdhøpiggen in 1850, and the English climber William Cecil Slingsby made the first ascent of Store Skagastølstind in 1876. The trekking association's huts and marked routes grew up around them. The national park was created by royal decree in December 1980 and given its present regulation, covering 1,151 square kilometres, in 2014."
+ ],
+ "howItWorks": [
+  "Norway's right to roam, allemannsretten, applies here as on any uncultivated land: you may walk, ski and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland; on the treeless high ground use a stove, and check the local fire risk with the municipality before you go. Dogs must be kept on a lead nationwide from 1 April to 20 August.",
+  "On top of that the park's own regulation applies. Motor traffic is banned on land and water, and so is landing an aircraft or flying lower than 300 metres; motor-driven model aircraft, which includes drones, may not be used. Bicycles are allowed only on roads, existing paths and vehicle tracks, and an electric bicycle only on the Glitterheim road from 15 June to 15 October. Animals and their nests and dens are protected from disturbance; picking berries and mushrooms is allowed.",
+  "Jotunheimen is wild but not empty. Summer farms, private cabins and the boats on Gjende operate under exemptions in the regulation, and grazing has gone on here for centuries. The park is run by the national park board for Jotunheimen and Utladalen, and organised activities that could damage the land need its permission."
+ ],
+ "sightNotes": {
+  "poi-no-jotunheimen-galdhopiggen": "Norway's highest summit at 2,469 metres. Two routes lead up: from Juvasshytta, roped and guided across a glacier, and from Spiterstulen in Visdalen.",
+  "poi-no-jotunheimen-besseggen": "The narrow ridge between green Gjende and blue Bessvatnet. The classic day takes the boat to Memurubu and walks back over the ridge to Gjendesheim.",
+  "poi-no-jotunheimen-gjende": "An 18-kilometre glacial lake coloured green by rock flour. Boats run between Gjendesheim, Memurubu and Gjendebu from early June to late September; check the timetable before you go.",
+  "poi-no-jotunheimen-glittertind": "Norway's second-highest mountain, 2,452 metres. The summit ice cap that once rivalled Galdhøpiggen's height has all but melted away. Reached from Spiterstulen or from Glitterheim.",
+  "poi-no-jotunheimen-store-skagastolstind": "Storen, 2,405 metres, the highest peak of the jagged Hurrungane. A rock climb, first made by William Cecil Slingsby in 1876.",
+  "poi-no-jotunheimen-knutshoe": "The ridge across Gjende from Besseggen, and the other candidate for Peer Gynt's reindeer ride in Ibsen's play.",
+  "poi-no-jotunheimen-smorstabbtindane": "Glacier-hung peaks above the Sognefjellet road, a favourite for ski touring in spring."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Gjendesheim, at the east end of Gjende on the Valdresflye road (Fv51) — the start for Besseggen and the Gjende boats",
+   "Juvasshytta and Spiterstulen, reached from Lom up Bøverdalen — the routes to Galdhøpiggen and Glittertind",
+   "Glitterheim in Veodalen, about eight kilometres on foot or by bicycle from the road barrier at the park boundary",
+   "The Sognefjellet road (Fv55) along the park's north-western edge, for Hurrungane and Smørstabbtindane",
+   "Eidsbugarden, at the west end of Bygdin"
+  ],
+  "reservations": "There is no entry reservation or permit. Staffed huts and lodges take bookings, and the Gjende boats run to a summer timetable — check it with the boat operator before you go.",
+  "permits": [
+   "Organised activity that could damage the natural environment needs permission from the national park board",
+   "Fishing is allowed under the general rules; buy a local fishing licence first",
+   "An electric bicycle may be ridden only on the Glitterheim road, 15 June to 15 October"
+  ],
+  "camping": [
+   "Wild camping under the right to roam, at least 150 metres from huts and houses",
+   "No fires in or near woodland from 15 April to 15 September"
+  ],
+  "lodging": [
+   "Tourist huts inside the park, among them the staffed Gjendebu, Glitterheim, Memurubu and Fannaråkhytta and the self-service Olavsbu; Skogadalsbøen lies just outside the boundary",
+   "Lodges and hotels at the road ends and in Lom and Vågå"
+  ],
+  "seasonalClosures": [
+   "The Sognefjellet road (Fv55) closes over the mountain for the winter and normally reopens around the start of May — check road status with Statens vegvesen before you go",
+   "The Valdresflye road (Fv51) to Gjendesheim also closes for part of the winter — check with Statens vegvesen",
+   "The Gjende boats run only in summer, from early June to late September — check the timetable before you go"
+  ],
+  "seasonalClosureMonths": [
+   1,
+   2,
+   3,
+   4,
+   11,
+   12
+  ]
+ },
+ "chronology": [
+  {
+   "year": "Stone Age",
+   "text": "Hunters camp by Gjende and Russvatnet and trap wild reindeer on the high ground."
+  },
+  {
+   "year": "1820",
+   "text": "Baltazar Mathias Keilhau and Christian Boeck explore the range and call it Jotunfjeldene."
+  },
+  {
+   "year": "1850",
+   "text": "Steinar Sulheim, Lars Arnesen and Ingebrigt Flotten of Lom make the first ascent of Galdhøpiggen."
+  },
+  {
+   "year": "1862",
+   "text": "Aasmund Olavsson Vinje names the mountains Jotunheimen, the home of the giants."
+  },
+  {
+   "year": "1867",
+   "text": "Henrik Ibsen sends Peer Gynt on a reindeer ride along the Gjende ridge."
+  },
+  {
+   "year": "1876",
+   "text": "William Cecil Slingsby makes the first ascent of Store Skagastølstind."
+  },
+  {
+   "year": "1980",
+   "text": "Jotunheimen National Park is established by royal decree in December."
+  },
+  {
+   "year": "2014",
+   "text": "A new regulation sets the park at 1,151 square kilometres and replaces the rules of 1980."
+  }
+ ],
+ "safety": [
+  "Mountain weather changes within the hour. Carry warm, windproof clothing, a map and compass, and turn back early if cloud or wind comes in.",
+  "Never cross a glacier without a rope and someone who knows how to use it. The route to Galdhøpiggen from Juvasshytta crosses a glacier and is walked roped, with a guide.",
+  "Besseggen's steepest section is a scramble with long drops. In wet or icy conditions it is no place for anyone unsure on rock.",
+  "Rivers rise fast on warm afternoons when the snow melts. Cross early in the day and use bridges where the route provides them."
+ ],
+ "regulations": [
+  "No motor traffic on land or water, no landings by aircraft and no flying lower than 300 metres; drones and other motor-driven model aircraft are banned.",
+  "Cycle only on roads, existing paths and vehicle tracks. Electric bicycles are allowed only on the Glitterheim road, 15 June to 15 October.",
+  "No fires in or near woodland from 15 April to 15 September, under Norway's national fire ban.",
+  "Dogs on a lead from 1 April to 20 August, as everywhere in Norway, and never loose near reindeer."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Jotunheimen nasjonalpark — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/jotunheimen/"
+  },
+  {
+   "title": "Jotunheimen nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00001869"
+  },
+  {
+   "title": "Forskrift om Jotunheimen nasjonalpark (FOR-2014-11-14-1398) — Lovdata",
+   "url": "https://lovdata.no/dokument/LF/forskrift/2014-11-14-1398"
+  },
+  {
+   "title": "Jotunheimen National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Jotunheimen_National_Park"
+  },
+  {
+   "title": "Jotunheimen nasjonalpark — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Jotunheimen_nasjonalpark"
+  },
+  {
+   "title": "Besøkssentre — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/besokssentre/"
+  },
+  {
+   "title": "By bus to Jotunheimen — DNT",
+   "url": "https://www.dnt.no/en/Trips/Hiking-areas/Jotunheimen/By-bus-to-Jotunheimen/"
+  },
+  {
+   "title": "Glitterheim — DNT",
+   "url": "https://www.dnt.no/hytter/betjente/glitterheim/english/"
+  },
+  {
+   "title": "Olavsbu — UT.no, Den Norske Turistforening",
+   "url": "https://ut.no/hytte/10713/olavsbu"
+  },
+  {
+   "title": "Gjendebåtane",
+   "url": "https://www.gjende.no/"
+  },
+  {
+   "title": "Gjende — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Gjende"
+  },
+  {
+   "title": "Jotunheimen — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Jotunheimen"
+  },
+  {
+   "title": "Storen (mountain) — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Storen_(mountain)"
+  },
+  {
+   "title": "Galdhøpiggen — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Galdh%C3%B8piggen"
+  },
+  {
+   "title": "Glittertinden — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Glittertinden"
+  },
+  {
+   "title": "Issoleie — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Issoleie"
+  },
+  {
+   "title": "Sognefjellsvegen — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Sognefjellsvegen"
+  },
+  {
+   "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+   "url": "https://ws.geonorge.no/stedsnavn/v1/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Silverkey (Mickaël Delcey), via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "no-np-jotunheimen-a6e1aa3f65.jpg",
+  "caption": "The Besseggen ridge above Gjende",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Besseggen_above_Gjende.jpg",
+  "altText": "A narrow rocky ridge rising above a long pale-green lake, with snow-flecked mountains beyond",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "Stefan.straub, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-jotunheimen-501da1bc78.jpg",
+   "caption": "Galdhøpiggen, Norway's highest mountain, from the west",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Galdhoppigen_west_galdhoppigen_porta_storjuvbrean_storjuvtinden_ymmelstinden_2.6.23.jpg",
+   "altText": "A snow-covered summit above a broad glacier under a clear sky",
+   "licence": "CC BY 4.0"
+  },
+  {
+   "credit": "Frankemann, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-jotunheimen-8b7178ac31.jpg",
+   "caption": "Looking from Storebjørn towards the peaks of Hurrungane",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Magnificent_views_from_Storebj%C3%B8rn_peak_towards_Hurrungane_and_southwestern_parts_of_Jotunheimen_National_Park.jpg",
+   "altText": "A long line of jagged snowy peaks seen across glaciers from a high summit",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Jojo, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-jotunheimen-f4163fc575.jpg",
+   "caption": "Gjende in summer",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Gjende_Lake.jpg",
+   "altText": "A green lake in a deep valley between steep mountain slopes with patches of snow",
+   "licence": "CC BY-SA 3.0"
+  }
+ ],
+ "weather": "This is high mountain country and the weather turns quickly. July and August are the main hiking season, when the huts are staffed and the routes clear of snow, though snow can fall on the summits in any month and drifts linger in the high passes into summer. From late winter into spring the long days and deep snow bring ski tourers to Valdresflye and to the Sognefjellet road, once it opens. Autumn is quieter and colder, with early snow on the tops; in winter the cross-mountain roads are closed and the park belongs to experienced skiers.",
+ "directions": "The nearest railway station is Otta on the Dovre Line between Oslo and Trondheim, about 60 kilometres from Lom. In the main summer season local buses run from Otta through Vågå and Lom and on over Sognefjellet, and seasonal buses reach Gjendesheim, where the Gjende boats meet them; timetables change through the season, so check Entur before you travel. By car, Jotunheimen is four to five hours from Oslo, Trondheim or Bergen; the Sognefjellet road (Fv55) crosses the mountains between Lom and inner Sogn, and the Valdresflye road (Fv51) runs from Valdres past Gjendesheim to Vågå. Both close in winter."
+}

@@ -1,0 +1,154 @@
+{
+ "placeID": "no-np-borgefjell",
+ "contentVersion": 1,
+ "story": [
+  "Børgefjell is a geological window. The folded rocks of the Caledonian mountain chain have worn away here, exposing the ancient granitic gneiss beneath, about 1,700 million years old. The park falls into three parts: a western chain of dark granite peaks, among them Kvigtinden at 1,699 metres, its highest point; an eastern massif of bare boulder fields and gentle lines, such as Rainesfjellet; and between them a lower basin of lakes, the largest being Simskardvatnet and Orvatnet. The rivers Vefsna and Namsen both rise here.",
+  "The tree line lies at 500 to 600 metres and the woods are mostly birch. Above them, around 300 species of plant have been recorded on the poor soils. Børgefjell is best known for the arctic fox, which manages here without the support measures it needs elsewhere. Wolverine are the commonest of the large predators, and lynx breed here too. The rough-legged buzzard is the commonest bird of prey, golden eagles and snowy owls nest, and the mires and lakes are rich in ducks and waders.",
+  "Børgefjell is Burkijen to the South Sámi, and South Sámi reindeer herders have used it for at least 500 years; the Sámi held the land almost alone until the early 1900s. It is still reindeer country from end to end. Herds are brought here in spring to calve in May and June and graze through summer and autumn, and in the north they stay all year. The first Norwegian farms in the surrounding valleys were cleared around 1800.",
+  "The Norwegian Trekking Association argued as early as 1932 that Børgefjell should stay a wilderness without huts or marked trails. In 1963 it became Norway's second national park, covering roughly 1,000 square kilometres; it was shielded from hydropower development in 1973 and enlarged then and again in 2003 to its present size."
+ ],
+ "howItWorks": [
+  "The right to roam, allemannsretten, is how Børgefjell is meant to be used: on foot, with a tent. You may camp for two nights in one place without asking — longer in high, remote country like this — at least 150 metres from a house or cabin, and pick berries, mushrooms and common plants. The park regulation allows careful use of wood for campfires but forbids burning standing dead pine. From 15 April to 15 September it is forbidden across Norway to light a fire in or near forest and other open country unless the municipality has allowed it or a fire plainly cannot spread; check before you go. Dogs must be on a lead from 1 April to 20 August under the national dog law.",
+  "One area east of Namsvatnet, zone A on the park map, is closed to all traffic from 20 June to 25 July each year while geese moult and cannot fly. Elsewhere, cycling and organised riding are allowed only on routes approved in the management plan, and organised activities other than walking trips by trekking associations, schools and voluntary groups need permission.",
+  "Motor traffic is forbidden on land and water and in the air below 300 metres, and motor-driven model aircraft and boats are banned; under Miljødirektoratet's rule, drones may not take off in a national park or be flown into one without the park board's permission. Reindeer herders may use tracked vehicles on snow and motorboats for their work. Hunting and fishing follow the ordinary laws, though moose may not be hunted in zone B. Cultural remains, including loose objects, must not be moved."
+ ],
+ "sightNotes": {
+  "poi-no-borgefjell-kvigtinden": "Voenjelensnjurhtjie in South Sámi. The park's highest peak, 1,699 metres, in the dark granite chain of the west.",
+  "poi-no-borgefjell-simskardet": "Sijdurrie. A pass in the north-west and a much-used way into the western part; the Simskard round is the park authority's suggestion for a day walk.",
+  "poi-no-borgefjell-simskardvatnet": "One of the two largest lakes in the park's central basin, between the western peaks and the eastern fells.",
+  "poi-no-borgefjell-orvatnet": "Ovrejaevrie, also written Orrevatnet. The other great lake of the central basin, in the south of the park.",
+  "poi-no-borgefjell-jetnamsklumpen": "Jitnemensnuhkie. A rounded summit of the eastern fells, close to the Swedish border.",
+  "poi-no-borgefjell-rainesfjellet": "Raajnese. Fells of bare, vegetation-free boulder field in the east — Børgefjell at its starkest."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Majavatn, on the E6 and the Nordland Line, on the western side",
+   "Simskardet, in the north-west, starting point for the Simskard round",
+   "Hattfjelldal, in the north-east",
+   "Namsvatnet, in Røyrvik, in the south"
+  ],
+  "reservations": "No permit, booking or fee is needed to enter. There are few huts and no marked trails: plan to camp and to find your own way.",
+  "permits": [
+   "Organised activities other than walking trips by trekking associations, schools and voluntary groups need permission",
+   "Drones and all motor use need a permit"
+  ],
+  "camping": [
+   "Wild camping anywhere under the right to roam, outside zone A from 20 June to 25 July"
+  ],
+  "lodging": [
+   "Majavatn, Hattfjelldal and Røyrvik"
+  ],
+  "seasonalClosures": [
+   "Zone A, east of Namsvatnet, is closed to all traffic from 20 June to 25 July while geese moult"
+  ],
+  "seasonalClosureMonths": [
+   6,
+   7
+  ]
+ },
+ "chronology": [
+  {
+   "year": "By 1500",
+   "text": "South Sámi reindeer herders are using Børgefjell; they will hold the land almost alone until the early 20th century."
+  },
+  {
+   "year": "c. 1800",
+   "text": "The first Norwegian farms are cleared in the surrounding valleys."
+  },
+  {
+   "year": "1932",
+   "text": "The Norwegian Trekking Association recommends that Børgefjell be kept as wilderness, free of huts and trail marking."
+  },
+  {
+   "year": "1963",
+   "text": "Børgefjell becomes Norway's second national park, covering about 1,000 square kilometres."
+  },
+  {
+   "year": "1973",
+   "text": "Its rivers are protected from hydropower development, and the park is enlarged."
+  },
+  {
+   "year": "2003",
+   "text": "A new regulation of 29 August enlarges the park again, to about 1,447 square kilometres."
+  },
+  {
+   "year": "2025",
+   "text": "The regulation's title takes the South Sámi name, Burkijen vaarjelimmiedajve."
+  }
+ ],
+ "safety": [
+  "There are no marked trails and few huts. You need map, compass and the skill to use them, and a tent rated for mountain weather.",
+  "Rivers are large and unbridged, and run high with snowmelt in early summer. Plan crossings, unbuckle your pack, and turn back from any that look too strong.",
+  "Help is far away and mobile coverage patchy. Leave a route plan with someone at home and carry a way to call for help.",
+  "Give reindeer a wide berth, above all during calving in May and June."
+ ],
+ "regulations": [
+  "Zone A east of Namsvatnet is closed to all traffic from 20 June to 25 July.",
+  "No motor traffic on land, water or in the air below 300 metres; no motor-driven model aircraft or boats, and drones need a permit.",
+  "Cycling and organised riding only on routes approved in the management plan.",
+  "Do not burn standing dead pine; use fallen wood with care, and no open fires near forest from 15 April to 15 September unless the municipality allows it.",
+  "Dogs on a lead from 1 April to 20 August."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Børgefjell nasjonalpark — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/borgefjell/"
+  },
+  {
+   "title": "Gateways — Børgefjell nasjonalparkstyre",
+   "url": "https://borgefjellnasjonalpark.no/en/gateways/"
+  },
+  {
+   "title": "Børgefjell nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00000261"
+  },
+  {
+   "title": "Forskrift om Børgefjell nasjonalpark / Burkijen vaarjelimmiedajve — Lovdata",
+   "url": "https://lovdata.no/dokument/LF/forskrift/2003-08-29-1101"
+  },
+  {
+   "title": "Børgefjell National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/B%C3%B8rgefjell_National_Park"
+  },
+  {
+   "title": "Børgefjell nasjonalpark — Wikipedia (Norwegian)",
+   "url": "https://no.wikipedia.org/wiki/B%C3%B8rgefjell_nasjonalpark"
+  },
+  {
+   "title": "Regler for droner i naturen — Miljødirektoratet",
+   "url": "https://www.miljodirektoratet.no/ansvarsomrader/vernet-natur/regler-for-droner-i-naturen/"
+  },
+  {
+   "title": "Lov om friluftslivet (friluftsloven) — Lovdata",
+   "url": "https://lovdata.no/dokument/NL/lov/1957-06-28-16"
+  },
+  {
+   "title": "Forskrift om brannforebygging — Lovdata",
+   "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+  },
+  {
+   "title": "Lov om forsvarlig hundehold (hundeloven) — Lovdata",
+   "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+  },
+  {
+   "title": "Sight locations — Kartverket place names (stedsnavn)",
+   "url": "https://ws.geonorge.no/stedsnavn/v1/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "EdiBlox, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "no-np-borgefjell-f72a3b0a48.jpg",
+  "caption": "Jetnamsklumpen, in the eastern fells, seen from the Swedish side of the border",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Jetnamsklumpen.jpg",
+  "altText": "A broad, rounded mountain rising above open fell country",
+  "licence": "CC BY-SA 4.0"
+ },
+ "weather": "Børgefjell lies just south of the Arctic Circle, in high, open country where the weather changes fast. The park authority names July and August as the finest months for walking. Reindeer calve here in May and June, and the snow-free season on the fells is short; expect wind, rain and cold nights even in high summer.",
+ "directions": "The park authority puts Børgefjell four hours by train from Trondheim: the Nordland Line stops at Majavatn station, west of the park, and the E6 runs along the same side. Hattfjelldal gives access from the north-east, and Namsvatnet, in Røyrvik, from the south."
+}

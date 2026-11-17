@@ -1,0 +1,178 @@
+{
+ "placeID": "no-np-indre-wijdefjorden",
+ "contentVersion": 1,
+ "story": [
+  "Wijdefjorden, at 108 kilometres, is the longest fjord in Svalbard, opening to the north between Andrée Land, Dickson Land and Ny-Friesland. The national park takes in its inner half and the land on both sides — about 745 square kilometres of land and 382 of sea. The inner fjord splits in two: Vestfjorden to the west, and Austfjorden, about 32 kilometres long and 5 wide, which ends at the front of the great Mittag-Lefflerbreen glacier. At Elvetangen, further out, a sill only about 50 metres deep checks the circulation, so the inner fjord holds a cold-water basin some 250 metres deep — one of the features the park was created to protect.",
+  "The inner fjord gets some of the lowest precipitation in Svalbard, and the ground on its shores is dry, lime-rich and crusted with salt. The result is high-arctic steppe, a grassy vegetation not known anywhere else in the European Arctic and not protected anywhere else in Svalbard before the park was made. Several very rare plants grow here, including a reed-grass known in Europe only from this fjord and the Svalbard alkali grass. The rocks differ on the two shores — Devonian sediments in the west, older bedrock in the east — and so does the vegetation.",
+  "Svalbard reindeer, Arctic foxes, Svalbard ptarmigan and breeding pink-footed geese live here, and polar bears pass through. Russian and later Norwegian trappers worked the fjord; the cabin at Krosspynten was built in 1910 and the one in Purpurdalen two years later. Trapping took up again in the 1980s, and the Governor's cabin at Austfjordnes can be rented for a season of trapping. Of Svalbard's larger fjords, Wijdefjorden is the least affected by people.",
+  "The park was created by royal decree on 9 September 2005, completing a plan, several years in the making, to raise the protected share of Svalbard from 55 to 65 per cent; the plan had produced three other national parks two years earlier. Mining interests had found baryte within its borders. Since 2025, ships entering its waters may carry no more than 200 passengers, and tourist landings are forbidden."
+ ],
+ "howItWorks": [
+  "Svalbard is governed by its own environmental law, the Svalbard Environmental Protection Act, and since 1 January 2026 by a new field-safety regulation (FOR-2025-06-06-940). Indre Wijdefjorden lies outside Svalbard's travel area, the former management area 10. Independent visitors must notify the Governor of Svalbard (Sysselmesteren) at least four weeks before travelling there and wait for the Governor's reply; they must carry insurance or a guarantee covering search and rescue costs and equipment for raising the alarm and two-way communication. Tour and field operators need the Governor's permission.",
+  "Polar bears are protected. It is forbidden to disturb, attract or pursue them, and you may not travel or stay closer than 300 metres to a polar bear — 500 metres from 1 March to 30 June. Anyone outside the settlements, except participants on organised tours, must know how to protect against polar bear attack and carry suitable means of scaring a bear off; the Governor recommends a rifle as the primary protection. Cultural remains from before 1946 are automatically protected, with a 100-metre safety zone in which you may not pitch a tent (except on frozen, snow-covered ground) or light a fire without permission.",
+  "The park's regulation forbids tourist landings altogether. Off-road driving on thawed, bare ground is forbidden; snowmobiling on frozen, snow-covered ground follows Svalbard's general motor-traffic rules, which are stricter for visitors than for residents. Bicycles may be used only on frozen, snow-covered ground. Aircraft may not land, may not fly within a nautical mile of large concentrations of animals or birds, and may not fly below 300 metres within a nautical mile of land. Drones and all other remote-controlled devices are banned. Keep your distance from wildlife and cultural remains, leave no new tracks and no waste — and do not introduce plants."
+ ],
+ "sightNotes": {
+  "poi-no-indre-wijdefjorden-austfjorden": "The eastern branch of the inner fjord, about 32 km long and 5 km wide, ending at the front of Mittag-Lefflerbreen.",
+  "poi-no-indre-wijdefjorden-vestfjorden": "The inner, western branch of Wijdefjorden, between Andrée Land and Dickson Land.",
+  "poi-no-indre-wijdefjorden-kapp-petermann": "The northern point of the peninsula that splits the fjord into Austfjorden and Vestfjorden.",
+  "poi-no-indre-wijdefjorden-austfjordnes": "A point on the east side of Austfjorden with a trapping station still used today.",
+  "poi-no-indre-wijdefjorden-krosspynten": "A point at the mouth of Vestfjorden, where a trapper's cabin was built in 1910.",
+  "poi-no-indre-wijdefjorden-purpurdalen": "A valley on the west side of the fjord in Andrée Land, with a trapper's cabin from 1912.",
+  "poi-no-indre-wijdefjorden-einsteinvatnet": "A small lake in Ny-Friesland on the east shore, with Arctic char."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "By boat from the north, up Wijdefjorden",
+   "Overland from Billefjorden and Dicksonfjorden to the south",
+   "In winter, by snowmobile or on skis from Longyearbyen"
+  ],
+  "reservations": "Independent travellers must notify the Governor of Svalbard at least four weeks ahead and wait for a reply; tour operators need the Governor's permission.",
+  "permits": [
+   "Notification to the Governor of Svalbard, with search-and-rescue insurance and two-way communications",
+   "Tourist landings are forbidden in the park",
+   "Ships in the park's waters may carry no more than 200 passengers"
+  ],
+  "camping": [
+   "Camping is governed by the Svalbard Environmental Protection Act; never within 100 metres of protected cultural remains, except on frozen, snow-covered ground"
+  ],
+  "lodging": [
+   "None; Longyearbyen is the nearest town"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1910",
+   "text": "A trapper's cabin is built at Krosspynten."
+  },
+  {
+   "year": "1912",
+   "text": "A second cabin is built in Purpurdalen."
+  },
+  {
+   "year": "1980s",
+   "text": "Trapping resumes; the Governor's cabin at Austfjordnes is let out for a trapping season."
+  },
+  {
+   "year": "2003",
+   "text": "Three other national parks are created as part of a plan to protect more of Svalbard."
+  },
+  {
+   "year": "2005",
+   "text": "A royal decree of 9 September creates Indre Wijdefjorden National Park, completing the plan."
+  },
+  {
+   "year": "2025",
+   "text": "Ships in the park are limited to 200 passengers, and drones are banned."
+  },
+  {
+   "year": "2026",
+   "text": "Svalbard's new field-safety regulation takes effect on 1 January."
+  }
+ ],
+ "safety": [
+  "Polar bears can appear anywhere, at any time of year. Keep at least 300 metres away (500 metres from March to June), carry means of scaring a bear, and never travel without someone trained to use a firearm.",
+  "The park is remote and help is far away. Notify the Governor, carry two-way communications and insurance, and travel with experience or with a guide.",
+  "Sea ice in the fjord can be unsafe in spring; snowmobilers should keep to known routes and check conditions with experienced locals.",
+  "Glacier fronts calve without warning; keep boats well back."
+ ],
+ "regulations": [
+  "Notify the Governor of Svalbard at least four weeks before travelling here as an independent visitor, and carry rescue insurance and two-way communications.",
+  "Keep 300 metres from polar bears (500 metres from 1 March to 30 June); do not disturb, attract or pursue them.",
+  "No tourist landings; no off-road driving on bare ground; bicycles only on frozen, snow-covered ground.",
+  "No drones; no aircraft landings, and no flying below 300 metres within a nautical mile of land.",
+  "Leave cultural remains from before 1946 untouched, with a 100-metre margin; leave no waste and introduce no plants."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Nasjonalparkene på Svalbard — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/svalbard/"
+  },
+  {
+   "title": "Indre Wijdefjorden nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00002571"
+  },
+  {
+   "title": "Forskrift om fredning av Indre Wijdefjorden nasjonalpark på Svalbard — Lovdata",
+   "url": "https://lovdata.no/dokument/SF/forskrift/2005-09-09-1046"
+  },
+  {
+   "title": "Lov om miljøvern på Svalbard (svalbardmiljøloven) — Lovdata",
+   "url": "https://lovdata.no/dokument/NL/lov/2001-06-15-79"
+  },
+  {
+   "title": "Feltsikkerhetsforskriften (FOR-2025-06-06-940) — Lovdata",
+   "url": "https://lovdata.no/dokument/SF/forskrift/2025-06-06-940"
+  },
+  {
+   "title": "New regulations on field safety in Svalbard from 1 January — Sysselmesteren på Svalbard",
+   "url": "https://www.sysselmesteren.no/en/news/2025/11/new-regulations-on-field-safety-in-svalbard-from-1-january/"
+  },
+  {
+   "title": "Sysselmesterens retningslinjer for skytevåpen til isbjørnbeskyttelse — Sysselmesteren på Svalbard",
+   "url": "https://sysselmesteren.no/siteassets/vapen/sysselmesterens-retningslinjer-for-skytevapen-til-isbjornbeskyttelse-mv..pdf"
+  },
+  {
+   "title": "Svalbard's protected areas — Norwegian Polar Institute cruise handbook",
+   "url": "https://cruise-handbook.npolar.no/en/svalbard/protected-areas.html"
+  },
+  {
+   "title": "Indre Wijdefjorden National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Indre_Wijdefjorden_National_Park"
+  },
+  {
+   "title": "Indre Wijdefjorden nasjonalpark — Wikipedia (Norwegian)",
+   "url": "https://no.wikipedia.org/wiki/Indre_Wijdefjorden_nasjonalpark"
+  },
+  {
+   "title": "Sight locations — Place names of Svalbard, Norwegian Polar Institute",
+   "url": "https://placenames.npolar.no/"
+  },
+  {
+   "title": "Forskrift om miljøavgift for tilreisende til Svalbard — Lovdata",
+   "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532"
+  },
+  {
+   "title": "Forskrift om endringer i forskriftene for Indre Wijdefjorden, Sassen-Bünsow Land, Nordre Isfjorden og Van Mijenfjorden nasjonalparker mv. (FOR-2024-02-09-230) — Lovdata",
+   "url": "https://lovdata.no/dokument/LTI/forskrift/2024-02-09-230"
+  },
+  {
+   "title": "Sysselmesterens retningslinjer for skytevåpen og beskyttelses- og skremmemidler mot isbjørn (FOR-2024-05-13-850) — Lovdata",
+   "url": "https://lovdata.no/dokument/INS/forskrift/2024-05-13-850"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Svalbard environmental fee",
+   "cost": "NOK 150",
+   "detail": "Paid by every visitor to Svalbard except residents: collected with the ticket for the flight out of Svalbard, or by the travel organiser. It goes to the Svalbard Environmental Protection Fund.",
+   "amount": 150,
+   "currencyCode": "NOK"
+  }
+ ],
+ "hero": {
+  "credit": "Christoph Strässler, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "no-np-indre-wijdefjorden-945a9cb602.jpg",
+  "caption": "Looking north from Flemingfjellet over Mittag-Lefflerbreen towards Austfjorden",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:View_from_Flemingfjellet_towards_Ausfjorden,_Svalbard.jpg",
+  "altText": "A vast glacier flowing between dark mountains towards a distant fjord under cloud",
+  "licence": "CC BY-SA 2.0"
+ },
+ "gallery": [
+  {
+   "credit": "Walter Mittelholzer, via Wikimedia Commons",
+   "isPublicDomain": true,
+   "assetName": "no-np-indre-wijdefjorden-a888f9031a.jpg",
+   "caption": "Austfjorden and the Chydenius mountains from the air, 1923",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Chydeniusgruppe_mit_Ostfjord_der_Wyderbai_von_Osten_aus_1700_m_H%C3%B6he-Spitzbergenflug_1923-LBS_MH02-01-0022.tif",
+   "altText": "A black-and-white aerial view of a fjord between snow-covered mountains"
+  }
+ ],
+ "weather": "The inner fjord is one of the driest places in Svalbard. July averages are around 4 to 6 °C and January between −12 and −16 °C, and permafrost reaches up to 100 metres deep. The polar night lasts for months, and in summer the midnight sun speeds the short growing season.",
+ "directions": "Svalbard is about 700 km north of mainland Norway; visitors arrive by air in Longyearbyen. Indre Wijdefjorden lies in northern Spitsbergen, far from any settlement. In summer it is reached by boat from the north, through the outer Wijdefjorden; in winter by snowmobile or ski from Longyearbyen, over land from Billefjorden or Dicksonfjorden. The whole park can be seen from Mittag-Lefflerbreen, which can be reached on foot from Pyramiden."
+}

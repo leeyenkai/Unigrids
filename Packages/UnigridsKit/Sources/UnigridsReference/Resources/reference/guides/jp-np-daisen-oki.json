@@ -1,0 +1,226 @@
+{
+ "placeID": "jp-np-daisen-oki",
+ "contentVersion": 1,
+ "story": [
+  "The park is built of volcanoes. Mount Daisen (大山), a dormant stratovolcano, rises alone above western Tottori; from the west it has a smooth, symmetrical profile, while its southern face is broken and steep. To the south-east the three rounded peaks of Hiruzen look down on a high grassland, and in Shimane, Mount Sanbe is a cluster of lava domes inside a caldera that last stirred about four thousand years ago. Beech forest grows on all three.",
+  "Out in the Sea of Japan, the Oki Islands are what is left of old volcanoes too. The three western islands of Dōzen are fragments of a collapsed caldera, and on Nishinoshima the sea has cut the Kuniga coast into arches, stacks and the cliff of Matengai, more than 250 metres high, above pastures where cattle and horses graze. The islands' geology and the life it supports earned them recognition as a UNESCO Global Geopark in 2013.",
+  "This is also old religious country. Daisen-ji, the temple on the mountain's flank, was founded in the eighth century, and Shugendō ascetics trained on Daisen and on Mitokusan, where the small hall of Nageire-dō, a National Treasure, sits on stilts in a cliff recess. The great shrine of Izumo Taisha stands at the foot of the Shimane Peninsula, at the heart of the myths of the Izumo region. The Oki Islands were a place of exile: the emperor Go-Toba was sent there in 1221 and died there, and Go-Daigo was exiled in 1332 before escaping.",
+  "Daisen National Park was designated on 1 February 1936, around the mountain alone. On 10 April 1963 the Oki Islands, the Shimane Peninsula, Mount Sanbe and Hiruzen were added and the park took its present name. It has grown since, taking in the beech forests of Mount Kenashi in 2002 and the sacred mountain of Mitokusan in 2014. Its four areas lie far apart, from the Oki Islands out in the Sea of Japan to Hiruzen on the Okayama border."
+ ],
+ "howItWorks": [
+  "Daisen-Oki is a regional park spread over four separate areas: Daisen and Hiruzen; Mount Sanbe; the Shimane Peninsula; and the Oki Islands. About a quarter of the land is national forest, but the park also takes in villages, temple and shrine land, ski areas, farms and grazing, fishing ports and the four inhabited Oki Islands, where people live, farm and fish inside the boundary.",
+  "Zoning sets the rules. About 6 per cent of the land is special protection zone, where almost nothing may be altered or taken. Most of the rest, more than four-fifths of the park, is special zone in three classes, in which building, felling and quarrying need permission; the remainder is ordinary zone. At sea, marine park zones protect the underwater rock and reefs off the Shimane Peninsula and at Jōdogaura, Kuniga and elsewhere in the Oki Islands.",
+  "Some sites carry their own rules. Mitokusan belongs to the temple of Sanbutsu-ji, and the climb to Nageire-dō is a pilgrimage with its own conditions: no solo climbers, a footwear check at the start, and closure in bad weather and in winter. The Oki Islands are a UNESCO Global Geopark, Izumo Taisha and Daisen-ji are active religious sites, and many coasts are national scenic places."
+ ],
+ "sightNotes": {
+  "poi-jp-daisen-oki-mount-daisen": "The highest peak in Chūgoku, 1,729 metres. The trail from Daisen-ji climbs through beech forest to the 1,709-metre Misen summit in about three hours.",
+  "poi-jp-daisen-oki-hiruzen-highlands": "Three rounded peaks over a broad upland on the Okayama–Tottori border, cool in summer, with camping, hiking and horse riding.",
+  "poi-jp-daisen-oki-mitokusan-and-nageire-do": "A pilgrims' scramble up roots and rock to a temple hall built into a cliff, a National Treasure. No solo climbers; closed in winter.",
+  "poi-jp-daisen-oki-mount-sanbe": "Lava domes ringed round a caldera, with ponds on the uplands and wide views from the 1,126-metre summit of Osanbe.",
+  "poi-jp-daisen-oki-izumo-taisha": "One of Japan's oldest and grandest shrines, whose god is said to have made the land. Inside the park at the foot of the Shimane Peninsula.",
+  "poi-jp-daisen-oki-hinomisaki": "The western tip of the Shimane Peninsula, a lighthouse on the cliffs above the Sea of Japan.",
+  "poi-jp-daisen-oki-kuniga-coast-and-matengai": "Nishinoshima's sea cliffs, arches and stacks; Matengai drops more than 250 metres to the sea. Walk the cliff-top pasture or take a boat.",
+  "poi-jp-daisen-oki-jodogaura": "A cove of small islands, caves and pines on the east coast of Dōgo, the largest Oki island; a national scenic place."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Daisen-ji, reached by bus from Yonago Station — Mount Daisen",
+   "Hiruzen Highlands, by road",
+   "Izumo, by Ichibata bus from Izumo Enmusubi Airport or Izumoshi Station — Izumo Taisha and Hinomisaki",
+   "Sahimel, by bus from Ōdashi Station — Mount Sanbe",
+   "Sakaiminato and Shichirui ports, with Oki Kisen ferries to the Oki Islands; Oki Airport on Dōgo"
+  ],
+  "reservations": "No park permit is needed. Ferries and flights to the Oki Islands run to limited timetables and are cancelled in bad weather, and cars on the slow ferries are best booked ahead. The Mitokusan climb has its own conditions and opening dates; check with Sanbutsu-ji before you go.",
+  "permits": [
+   "Mitokusan pilgrimage climb — register at the temple, no solo climbers, approved footwear"
+  ],
+  "camping": [
+   "Campsites in the Hiruzen Highlands"
+  ],
+  "lodging": [
+   "Inns and lodges in the village below Daisen-ji",
+   "Pensions and hotels in the Hiruzen Highlands",
+   "Inns at Izumo, Matsue and the Oki Islands' ports"
+  ],
+  "seasonalClosures": [
+   "The Mitokusan climb to Nageire-dō closes in winter, roughly December to March, and on days of bad weather — check with Sanbutsu-ji",
+   "The seasonal Daisen Loop Bus runs only from late April to late November"
+  ],
+  "seasonalClosureMonths": [
+   12,
+   1,
+   2,
+   3
+  ]
+ },
+ "chronology": [
+  {
+   "year": "718",
+   "text": "Daisen-ji is founded on the mountain's flank, by the temple's own tradition."
+  },
+  {
+   "year": "1221",
+   "text": "The retired emperor Go-Toba is exiled to the Oki Islands, where he dies."
+  },
+  {
+   "year": "1332",
+   "text": "The emperor Go-Daigo is exiled to Oki; he escapes the next year."
+  },
+  {
+   "year": "1936",
+   "text": "Daisen National Park is designated on 1 February, around the mountain."
+  },
+  {
+   "year": "1963",
+   "text": "On 10 April the Oki Islands, the Shimane Peninsula, Mount Sanbe and Hiruzen are added, and the park becomes Daisen-Oki."
+  },
+  {
+   "year": "1975",
+   "text": "Marine park zones are designated around the Oki Islands, at Jōdogaura and Kuniga among others."
+  },
+  {
+   "year": "2002",
+   "text": "The beech forests of Mount Kenashi and Mount Hōbutsu are added."
+  },
+  {
+   "year": "2013",
+   "text": "The Oki Islands become a UNESCO Global Geopark."
+  },
+  {
+   "year": "2014",
+   "text": "Mitokusan and its temple are added to the park."
+  }
+ ],
+ "safety": [
+  "Daisen's upper slopes are open and exposed to wind, and the summit ridge is crumbling: the traverse beyond the summit towards Kengamine is closed. Stay on the marked trail, and file a climbing notification (登山届) before you go.",
+  "Winter turns Daisen into a serious snow mountain, with avalanche and whiteout risk; only climb it then with winter equipment and experience.",
+  "The Mitokusan climb is a steep scramble over roots, rock and chains. Wear grippy shoes, keep both hands free, and turn back if it is wet.",
+  "Cliff-top paths on the Kuniga coast and the Shimane Peninsula are unfenced in places, and the wind can be strong."
+ ],
+ "regulations": [
+  "Plants, animals and rocks may not be taken in the special protection zone, which includes Daisen's summit area; in the special zones many plants are protected.",
+  "The Mitokusan climb follows the temple's rules: no solo climbers, footwear checked at the start, closed in winter and bad weather.",
+  "In the marine park zones, collecting designated marine life needs permission.",
+  "Izumo Taisha, Daisen-ji and Sanbutsu-ji are places of worship; follow the shrine's and temples' customs."
+ ],
+ "credits": [
+  "Text written for Unigrids from the Ministry of the Environment's park pages and the sources listed. Photographs from Wikimedia Commons, credited individually.",
+  "Park areas: Ministry of the Environment, Japan (nps.zip, 2026-11-16)",
+  "Visitors: 自然公園等利用者数調, Ministry of the Environment, Japan (2024)"
+ ],
+ "sources": [
+  {
+   "title": "Daisen-Oki National Park — National Parks of Japan (Ministry of the Environment)",
+   "url": "https://www.japan.travel/national-parks/parks/daisen-oki/"
+  },
+  {
+   "title": "大山隠岐国立公園 — 環境省",
+   "url": "https://www.env.go.jp/park/daisen/index.html"
+  },
+  {
+   "title": "大山隠岐国立公園 概要・計画書 — 環境省",
+   "url": "https://www.env.go.jp/park/daisen/intro/index.html"
+  },
+  {
+   "title": "国立公園地種区分別面積・土地所有別面積（令和8年4月10日現在）— 環境省",
+   "url": "https://www.env.go.jp/park/doc/data/national/np_2.pdf"
+  },
+  {
+   "title": "大山隠岐国立公園 — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/大山隠岐国立公園"
+  },
+  {
+   "title": "Daisen-Oki National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Daisen-Oki_National_Park"
+  },
+  {
+   "title": "Mount Daisen — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mount_Daisen"
+  },
+  {
+   "title": "Oki Islands — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Oki_Islands"
+  },
+  {
+   "title": "Sanbutsu-ji — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Sanbutsu-ji"
+  },
+  {
+   "title": "大山隠岐国立公園（大山蒜山地域）指定書（平成26年3月）— 環境省",
+   "url": "https://www.env.go.jp/park/content/000386312.pdf"
+  },
+  {
+   "title": "大山隠岐国立公園（隠岐島・島根半島・三瓶山地域）公園計画書（令和5年3月）— 環境省",
+   "url": "https://www.env.go.jp/park/content/000322226.pdf"
+  },
+  {
+   "title": "日本の主な山岳標高（2026年3月31日版）— 国土地理院",
+   "url": "https://www.gsi.go.jp/KOKUJYOHO/MOUNTAIN/1003zan20260331.pdf"
+  },
+  {
+   "title": "How to get there, Daisen-Oki — National Parks of Japan",
+   "url": "https://www.japan.travel/national-parks/parks/daisen-oki/how-to-get-there/"
+  },
+  {
+   "title": "三徳山三佛寺",
+   "url": "https://www.mitokusan.jp/"
+  },
+  {
+   "title": "大山 (鳥取県) — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/大山_(鳥取県)"
+  },
+  {
+   "title": "三瓶山 — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/三瓶山"
+  },
+  {
+   "title": "浄土ヶ浦 — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/浄土ヶ浦"
+  },
+  {
+   "title": "自然公園等利用者数調 — Ministry of the Environment",
+   "url": "https://www.env.go.jp/park/doc/data.html"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Yoshizumi Endo, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "jp-np-daisen-oki-b8667e911d.jpg",
+  "caption": "Mount Daisen from the west in summer",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Daisen_seen_from_the_west_-_Aug_9,_2010.jpg",
+  "altText": "A smooth volcanic cone rising beyond green rice fields under white clouds",
+  "licence": "CC BY-SA 2.0"
+ },
+ "gallery": [
+  {
+   "credit": "Yuvalr, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "jp-np-daisen-oki-5614f9c24d.jpg",
+   "caption": "Matengai cliff on the Kuniga coast, Nishinoshima",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Matengai_Cliff_at_Kuniga_coast,_Nishinoshima.jpg",
+   "altText": "A sheer sea cliff at the end of a grassy ridge, with waves breaking far below",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "663highland, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "jp-np-daisen-oki-62420876e8.jpg",
+   "caption": "Hinomisaki lighthouse at the western tip of the Shimane Peninsula",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Hinomisaki_lighthouse_Izumo01bs3200.jpg",
+   "altText": "A tall white lighthouse on a grassy cliff top above the sea",
+   "licence": "CC BY 2.5"
+  },
+  {
+   "credit": "Reggaeman, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "jp-np-daisen-oki-07f80a2caf.jpg",
+   "caption": "Nageire-dō, the temple hall built into the cliff of Mitokusan",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Mitokusan_Nageiredo_01.JPG",
+   "altText": "A small wooden hall on tall stilts set into a hollow in a grey rock face",
+   "licence": "CC BY-SA 3.0"
+  }
+ ],
+ "weather": "The Sea of Japan coast is grey and snowy in winter: north-westerly winds bring heavy snow to Daisen, which has ski areas, and rough seas that can cancel the Oki ferries. Spring comes late to the mountains, with fresh beech leaves in May. The rainy season runs from June into July. Summer is hot on the coast but cool on the Hiruzen and Daisen uplands, which is when the high trails are clear. Autumn colour reaches Daisen's beech forest from late October. Typhoons can bring storms from late summer into autumn.",
+ "directions": "For Mount Daisen, fly from Tokyo Haneda to Yonago Kitaro Airport, or take the Tokaido–Sanyō Shinkansen to Okayama and the JR Yakumo limited express to Yonago (about two hours); Nihon Kotsu buses run from Yonago Station to Daisen-ji in about 50 minutes, and the seasonal Daisen Loop Bus links the sights around the mountain. For Izumo Taisha, fly to Izumo Enmusubi Airport or take the Yakumo on to Izumoshi Station, then an Ichibata bus. Mount Sanbe is reached by the JR San'in Line to Ōdashi and an Iwami Kotsu bus. For the Oki Islands, Oki Kisen ferries and fast boats sail from Sakaiminato and Shichirui to Dōgo and the Dōzen islands, taking one to four and a half hours, and Oki Airport on Dōgo has flights from Osaka Itami and Izumo. A car is the easiest way round the mainland areas, and the Daisen Parkway and Hiruzen–Daisen Skyline are fine drives in season."
+}

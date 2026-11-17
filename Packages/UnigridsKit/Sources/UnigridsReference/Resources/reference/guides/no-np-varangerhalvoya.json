@@ -1,0 +1,189 @@
+{
+ "placeID": "no-np-varangerhalvoya",
+ "contentVersion": 1,
+ "story": [
+  "Varangerhalvøya fills the north-eastern corner of Norway, between the Barents Sea and Varangerfjorden. Much of its core still looks as it did before the last ice age: the ice sheet lay frozen to the ground here and barely moved, so instead of scouring the land it preserved it — high blockfields of frost-shattered rock, and ring moraines found almost nowhere else. A low ridge crossing the peninsula from west to east, highest at Skipskjølen (633 metres), forms the watershed. From that quiet plateau, long V-shaped valleys cut by meltwater run green and lush down to the coast.",
+  "The park's regulation calls it the most Arctic part of mainland Norway, and plants and animals from the Arctic, Siberia and the south meet here. The Varanger poppy clings to a small lime-rich patch, and Altai hawk's-beard, found nowhere else in Norway, was rediscovered in the park in 2008 after being thought extinct since 1943. The plateau is a core area for the endangered Arctic fox. Dotterel, snow bunting, Lapland bunting and long-tailed skua nest on the tundra, snowy owls hunt in lemming years, and up to a thousand tundra bean geese gather to moult on the wetlands. Salmon, sea char and sea trout run up the rivers.",
+  "People have used the peninsula since the ice withdrew; a Stone Age camp deep inside the park, probably for hunting reindeer, is dated to about 5800 BC. Some 4,000 trapping pits have been recorded in the peninsula's valleys, along with stone guiding fences such as Noidiidcearru at Kjøpmannskjølen. The hunting was so thorough that wild reindeer were gone by the end of the 1600s. Sámi sacrificial sites and hunting blinds survive on the plateau, and so do hides once used to catch falcons. Kven settlers from northern Finland and Sweden arrived in the 1700s and 1800s, and Pomor traders from the White Sea bartered grain for fish along the coast until 1917.",
+  "Reindeer herding probably grew out of the hunt. For two centuries the herds summered on the peninsula and wintered in the pine forests of Inari and Utsjoki in Finland, until the border closed in 1852; domestic reindeer still graze the plateau each summer. The national park was created in 2006, and it remains one of the last areas in Norway without a network of marked paths — more of its tracks are trodden by reindeer than by people."
+ ],
+ "howItWorks": [
+  "The right to roam (allemannsretten) applies: you may walk, ski, ride and snow-kite, pick berries and mushrooms, and fish the lakes with a licence from the Finnmark Estate (Finnmarkseiendommen, FeFo). Ordinary bicycles may be used on paths in the woods and anywhere in the high mountains. From 15 April to 15 September national fire law forbids lighting a fire in or near woodland and other open country unless it plainly cannot spread; the park board asks you to use the old fire sites by the rivers, gather wood sparingly and take your rubbish home. If you camp several nights in a row, move the tent regularly so the plants beneath are not smothered.",
+  "Motor traffic is banned on land and water, and so is flying lower than 300 metres; snowmobiles may use only the municipal snowmobile routes, which the municipalities open and close, and the routes inside the park only up to 4 May. Electric bicycles, drones, model aircraft and motorised ice augers are all banned. Organised walking is allowed; organised riding, snow-kiting or dog-sledding, and organised trips to see Arctic foxes or birds of prey, need permission from the Varangerhalvøya National Park Board.",
+  "Domestic reindeer are especially sensitive to disturbance from mid-April to the end of June, around calving. A separate regulation protects the Arctic fox: if you meet one, keep at least 300 metres away, and avoid places with feeding stations or cameras. In zone A, the wetland area in Nesseby that matters so much to bean geese and lesser white-fronted geese, dogs must be on a lead from 1 April to 9 September, because the park bans loose dogs there from 5 May, and hunting is banned from 5 May to 9 September."
+ ],
+ "sightNotes": {
+  "poi-no-varangerhalvoya-skipskjolen": "The park's highest point at 633 metres, on the low ridge that forms the peninsula's watershed: blockfields and ring moraines from before the last ice age.",
+  "poi-no-varangerhalvoya-komagdalen-stuorrajohka": "A valley with a 4-kilometre marked bird trail from the car park; a suspension bridge leads on towards Bjørneskarhytta, 18 kilometres in.",
+  "poi-no-varangerhalvoya-nattfjelldalen-idjaavzi": "A meltwater gorge in the plateau, four kilometres by car from Vadsø. The marked path ends at the park boundary; the rim route is nine kilometres one way.",
+  "poi-no-varangerhalvoya-sandfjorddalen": "One of the park's most distinctive valleys, green and lush, with salmon and sea char in Sandfjordelva.",
+  "poi-no-varangerhalvoya-kjopmannskjolen": "Site of Noidiidcearru, the best known of the stone fences and trapping systems built to catch wild reindeer."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Nattfjelldalen (Idjaávži), four kilometres from Vadsø — parking, toilet, fire site and park information",
+   "Komagdalen (Stuorrajohka), in Vardø municipality — parking, toilet, information and a shelter half a kilometre in",
+   "Ordo (Oarddojávri), off the road to Båtsfjord at Magistervatn — shelter, toilet and information",
+   "Syltevikmoan, in Sandfjorddalen, off the Fv 8100 from Vardø towards Hamningberg"
+  ],
+  "reservations": "No permit or booking is needed to enter the park. The locked Bruvollhuset in Indre Syltevika must be booked well ahead through Varangerhalvøya turlag (DNT). An outdoor information point in Varangerbotn and an exhibition in Kiberg tell the park's story.",
+  "permits": [
+   "Organised riding, snow-kiting, dog-sledding and other organised activity beyond walking need permission from the park board",
+   "Organised trips to sites with threatened species such as Arctic fox or birds of prey need permission",
+   "Fishing and hunting licences from the Finnmark Estate (FeFo)"
+  ],
+  "camping": [
+   "Wild camping under the right to roam; move the tent regularly on multi-night stays",
+   "Carry a tent even when heading for an open hut, in case fog or a storm stops you"
+  ],
+  "lodging": [
+   "Simple huts in and around the park, among them the open huts Helheim and Telebu (the old telegraph hut in Sandfjorddalen), and Bjørneskarhytta",
+   "Vadsø, Vardø and Båtsfjord"
+  ],
+  "seasonalClosures": [
+   "Snowmobile routes inside the park may be used only up to 4 May, and municipalities announce when each route is open — check before you go",
+   "In zone A, hunting is banned from 5 May to 9 September"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "c. 5800 BC",
+   "text": "Stone Age hunters camp deep inside today's park, probably to hunt wild reindeer."
+  },
+  {
+   "year": "1600s",
+   "text": "Wild reindeer are hunted out; trapping is banned in 1660, and reindeer herding probably grows up in its place."
+  },
+  {
+   "year": "c. 1740",
+   "text": "Official Pomor trade with Russian merchants from the White Sea begins along the coast; it lasts until 1917."
+  },
+  {
+   "year": "1700s–1800s",
+   "text": "Finnish-speaking settlers from northern Finland and Sweden arrive; their descendants are the Kven."
+  },
+  {
+   "year": "1852",
+   "text": "The border with Finland closes to reindeer, cutting the herds off from their winter pastures in Inari and Utsjoki."
+  },
+  {
+   "year": "1940s",
+   "text": "During the German occupation, partisans reporting German convoys to the Soviet side hide at Bjørneskarhytta and Heimdal."
+  },
+  {
+   "year": "2006",
+   "text": "Varangerhalvøya National Park is created on 8 December, covering 1,804 square kilometres."
+  },
+  {
+   "year": "2008",
+   "text": "Altai hawk's-beard, thought extinct in Norway since 1943, is found again inside the park."
+  }
+ ],
+ "safety": [
+  "There are few paths and many reindeer tracks: navigate by map, compass and GPS, and be equipped for fog or a storm that arrives without warning.",
+  "Rivers can be hard to cross, and distances are long even where the ground is easy. Allow plenty of time.",
+  "The gravel roads to the starting points are rough; low cars and motorhomes struggle on them.",
+  "Winter on the plateau is severe. Plan ski tours for March and April, and be ready for flat light and polar lows."
+ ],
+ "regulations": [
+  "Motor traffic and flying below 300 metres are banned; snowmobiles may use only designated routes.",
+  "Electric bicycles, drones, model aircraft and motorised ice augers are banned.",
+  "Keep at least 300 metres from Arctic foxes, and avoid feeding stations and camera sites.",
+  "In zone A, dogs must be on a lead from 1 April to 9 September.",
+  "Live bait is banned; disinfect fishing gear before fishing a salmon river if it has been used elsewhere."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Varangerhalvøya nasjonalpark — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/varangerhalvoya/"
+  },
+  {
+   "title": "Varangerhalvøya nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00002437"
+  },
+  {
+   "title": "Forskrift om verneplan for Varangerhalvøya, vern av Varangerhalvøya nasjonalpark/Várnjárgga álbmotmeahcci/Varenkinniemen kansalistaras — Lovdata",
+   "url": "https://lovdata.no/forskrift/2006-12-08-1384"
+  },
+  {
+   "title": "Om nasjonalparken — Varangerhalvøya nasjonalparkstyre",
+   "url": "https://varangerhalvoya.no/om-nasjonalparken/"
+  },
+  {
+   "title": "Innfallsporter — Varangerhalvøya nasjonalparkstyre",
+   "url": "https://varangerhalvoya.no/innfallsporter/"
+  },
+  {
+   "title": "Historie — Varangerhalvøya nasjonalparkstyre",
+   "url": "https://varangerhalvoya.no/historie/"
+  },
+  {
+   "title": "Flora, fauna og geologi — Varangerhalvøya nasjonalparkstyre",
+   "url": "https://varangerhalvoya.no/flora-fauna-og-geologi/"
+  },
+  {
+   "title": "Forskrift om brannforebygging § 3 — Lovdata",
+   "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+  },
+  {
+   "title": "Varangerhalvøya National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Varangerhalvøya_National_Park"
+  },
+  {
+   "title": "Varangerhalvøya nasjonalpark — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Varangerhalvøya_nasjonalpark"
+  },
+  {
+   "title": "Vadsø Municipality — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Vadsø_Municipality"
+  },
+  {
+   "title": "Sentralt stedsnavnregister — Kartverket",
+   "url": "https://ws.geonorge.no/stedsnavn/v1/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Karl Brodowsky, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "no-np-varangerhalvoya-5687485fea.jpg",
+  "caption": "The Varanger Peninsula seen from the E75 on the north shore of Varangerfjorden",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Varangerhalv%C3%B8ya_National_Park_banner.jpg",
+  "altText": "A wide panorama of bare, rolling uplands above a coast",
+  "licence": "CC BY-SA 3.0"
+ },
+ "gallery": [
+  {
+   "credit": "Lutz Lücker, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-varangerhalvoya-6e303075fb.jpg",
+   "caption": "A female dotterel at her nest on the Varanger Peninsula",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Charadrius_morinellus_Varanger_1.jpg",
+   "altText": "A small wading bird on the ground beside its nest",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "Ricksulman at Dutch Wikipedia, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-varangerhalvoya-8c4712b7bc.jpg",
+   "caption": "Landscape at Varanger",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Varanger.jpg",
+   "altText": "Open, treeless northern landscape",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "Hanna Resvoll-Holmsen, via Wikimedia Commons",
+   "isPublicDomain": true,
+   "assetName": "no-np-varangerhalvoya-2fb03dcebd.jpg",
+   "caption": "A Sea Sámi man at his tent by Ordo lake (Oarddojávri), where he fished for sea trout and char; from the National Library of Norway",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Sj%C3%B8lap_ved_sit_telt_ved_Ordovand,_Varangerhalv%C3%B8ien,_hvor_han_fisker_sj%C3%B8%C3%B8rret_og_r%C3%B8yr_-_no-nb_digifoto_20160318_00191_bldsa_NGU0306.jpg",
+   "altText": "An old photograph of a man beside a tent near a lake"
+  }
+ ],
+ "weather": "The peninsula lies where the subarctic and low-Arctic climates meet, and the weather changes fast. At Vadsø, on the south coast, January averages about −6 °C and July about 11 °C, and precipitation — about 410 millimetres a year — falls mostly in late summer and early autumn; the uplands above the treeline have a tundra climate. The midnight sun lasts from 17 May to 28 July. July to September is the best time for walking. Winter is rough: March and April are best for ski touring, but flat light, shifting weather and passing polar lows call for careful planning and warm clothing.",
+ "directions": "The park lies between the towns of Vadsø, Vardø and Båtsfjord, with the E75 running along the north shore of Varangerfjorden. Nattfjelldalen starts four kilometres by car from Vadsø. For Ordo, turn off the road to Båtsfjord at Magistervatn onto a gravel road; for Syltevikmoan and Sandfjorddalen, take the Fv 8100 from Vardø towards Hamningberg and turn left after the bridge at Sandfjorden. The gravel roads are rougher than in the south of the country — allow plenty of time, and note that the four-kilometre road to Syltevikmoan is one-way with few passing places and unsuitable for motorhomes."
+}

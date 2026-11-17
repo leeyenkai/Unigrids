@@ -1,0 +1,151 @@
+{
+ "placeID": "no-np-reisa",
+ "contentVersion": 1,
+ "story": [
+  "Reisadalen runs from the Arctic coast deep into the plateau of Finnmarksvidda, and its upper part is the national park. The river has cut down through the plateau to make a long, deep valley and, north of Imo, a dramatic canyon, with layered rock showing in its walls. Side rivers from the plateau meet the Reisa in a string of waterfalls; Mollisfossen, the greatest, falls 269 metres in three steps. The park runs along the Finnish border, and in the south-west it meets the Käsivarsi wilderness area in Finland.",
+  "The varied, partly lime-rich bedrock gives the valley one of the richest plant lives in the north, from palsa bogs to pine forest and dense broadleaf woods along the river. More than 120 bird species have been recorded in the park: rough-legged buzzard is the commonest bird of prey, nesting on the cliffs with golden eagle and merlin, and with luck you may see a gyrfalcon. Moose, wolverine and lynx live here and brown bears are sometimes seen; the Sámi name of one gorge, Njállaávzi, means 'Arctic fox gorge'. The Reisa is one of Norway's national salmon rivers.",
+  "People have used the valley for thousands of years, from the makers of rock paintings onward, and Reisadalen is a meeting place of Sámi, Kven and Norwegian culture. Reindeer herding goes back a long way: thousands of reindeer graze in the park each year, and more pass through on migration. Nearly every farm in the valley once earned extra money burning tar from pine roots, and the remains of tar kilns can still be found; later came English lords for the salmon fishing.",
+  "Reisa National Park was established by royal decree on 28 November 1986 to keep a beautiful and nearly untouched mountain and valley landscape, with its plants, animals and geology, and to give the public access to outdoor life there. It covers 803 square kilometres in Nordreisa. Part of the path along the river is now a designated historic walking route."
+ ],
+ "howItWorks": [
+  "Norway's right to roam, allemannsretten, applies here as on any uncultivated land: you may walk, ski and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland. Dogs must be kept on a lead nationwide from 1 April to 20 August.",
+  "The park's regulation dates from 1986. The landscape is protected from works, and all vegetation, dead trees and bushes included, is protected: you may burn fallen wood and dry twigs on the spot, and pick berries, edible mushrooms and twigs for your own use. Motor traffic on land and water, including landing and low flying, is banned — except for the traditional river boats on the Reisa below Nedrefoss and motor craft on Ráisjávri. All travel must be considerate, without disturbing game, reindeer or livestock; sports events are banned, though carrying tourists by river boat is allowed. Litter must be burned or carried out.",
+  "The park is a working landscape for Sámi reindeer herders, and hunting and fishing go on under the general rules. It is managed by the Reisa national park board. The visitor centre in Storslett also runs the park's gateway at Ovi Raishiin."
+ ],
+ "sightNotes": {
+  "poi-no-reisa-mollisfossen": "The greatest of the valley's falls: 269 metres in three steps from the plateau into Reisadalen.",
+  "poi-no-reisa-imofossen": "A waterfall at Imo, upstream of Nedrefoss, where two rivers meet in a narrow gorge scoured with potholes.",
+  "poi-no-reisa-sarafossen": "A fine waterfall near the gateway at Ovi Raishiin, a day walk from there; it lies some 8 km outside the park itself.",
+  "poi-no-reisa-sieimma": "A historic stopping place on the river path, one of the day-walk goals from Ovi Raishiin.",
+  "poi-no-reisa-raisjavri": "A lake in the east of the park, with an unlocked hut; from here the Nordkalottruta and the historic walking route follow the Reisa down to Sieimma.",
+  "poi-no-reisa-ovi-raishiin": "Kven for 'the door into Reisadalen': the park's gateway, about 8 km outside it, with parking, maps, a nature trail, a mountain library, a viewpoint and a cabin to rent."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Ovi Raishiin, at Saraelv, by road up Reisadalen from Storslett; the park boundary is about 8 km further up the valley",
+   "Ráisjávri in the south-east, on the Nordkalottruta",
+   "By river boat up the lower Reisa"
+  ],
+  "reservations": "There is no entry reservation or permit. The cabin Nordkalottstua at Ovi Raishiin can be rented in summer and winter.",
+  "permits": [
+   "Salmon fishing in the Reisa needs a licence; other fishing and hunting follow the general rules",
+   "Any exemption from the regulation needs permission from the management authority"
+  ],
+  "camping": [
+   "Wild camping under the right to roam, at least 150 metres from huts and houses",
+   "Use only fallen wood and dry twigs for fires, and no fires in or near woodland from 15 April to 15 September"
+  ],
+  "lodging": [
+   "Huts and turf shelters along the Nordkalottruta",
+   "Nordkalottstua at Ovi Raishiin; lodging in Storslett"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "Prehistory",
+   "text": "Rock paintings are made in Reisadalen."
+  },
+  {
+   "year": "Into the 1900s",
+   "text": "Farms along the valley burn tar from pine roots for extra income."
+  },
+  {
+   "year": "1986",
+   "text": "Reisa National Park is established by royal decree on 28 November."
+  }
+ ],
+ "safety": [
+  "The canyon walls are steep and the river is fast and cold. Stay on the path along the gorge and keep well back from the edges of the falls.",
+  "Side rivers can be hard to cross during snowmelt and after heavy rain. Cross early in the day, or wait for the water to drop.",
+  "Weather on the plateau changes quickly. Carry warm, windproof clothing, a map and a compass."
+ ],
+ "regulations": [
+  "No motor traffic on land or water, no landings and no low flying, except the traditional river boats below Nedrefoss and motor craft on Ráisjávri.",
+  "Burn only fallen wood and dry twigs; trees and bushes, living or dead, are protected.",
+  "Do not disturb game, reindeer or livestock; sports events are banned.",
+  "Burn or carry out all litter."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Reisa nasjonalpark — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/reisa/"
+  },
+  {
+   "title": "Reisa nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00000108"
+  },
+  {
+   "title": "Forskrift om vern for Reisa nasjonalpark / Ráissa álbmotmeahcci (FOR-1986-11-28-2112) — Lovdata",
+   "url": "https://lovdata.no/dokument/LF/forskrift/1986-11-28-2112"
+  },
+  {
+   "title": "Reisa nasjonalpark — Reisa nasjonalparkstyre",
+   "url": "https://reisanasjonalpark.no/"
+  },
+  {
+   "title": "Ovi Raishiin — Halti nasjonalparksenter",
+   "url": "https://reisanasjonalpark.no/halti-nasjonalparksenter/oviraishiin/"
+  },
+  {
+   "title": "Reisa National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Reisa_National_Park"
+  },
+  {
+   "title": "Reisa nasjonalpark — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Reisa_nasjonalpark"
+  },
+  {
+   "title": "Besøkssentre — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/besokssentre/"
+  },
+  {
+   "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+   "url": "https://ws.geonorge.no/stedsnavn/v1/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Judisa, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "no-np-reisa-2505c43567.jpg",
+  "caption": "Reisadalen in the middle section of the park",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:The_Reisadalen_Valley.JPG",
+  "altText": "A deep green valley with a river between steep rock walls",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "pululante, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-reisa-70b1c910ee.jpg",
+   "caption": "Mollisfossen falling into Reisadalen",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Mollisfossen_in_Reisa.jpg",
+   "altText": "A tall waterfall pouring down a cliff face into a wooded valley",
+   "licence": "CC BY 2.0"
+  },
+  {
+   "credit": "Judisa, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-reisa-64c84973b2.jpg",
+   "caption": "A narrow stretch of the valley near Nedrefoss",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Narrow_section_of_Reisadalen.JPG",
+   "altText": "A river running through a narrow, rocky part of a valley with birch woods",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Judisa, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-reisa-718f3b719e.jpg",
+   "caption": "The canyon country around Imofossen",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Surroundings_next_Immofossen.JPG",
+   "altText": "Steep layered rock walls above a river gorge",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "July and August are the best months for walking, with the midnight sun and the valley at its greenest. Winters are long, cold and snowy — 'chalk-white', as the park puts it. Snowmelt in early summer swells the river and the falls.",
+ "directions": "Reisa lies in Nordreisa, roughly midway between Alta and Tromsø. The E6 passes Storslett, where the visitor centre is, and a road runs up Reisadalen to the park's gateway at Ovi Raishiin, about 8 km short of the park. There is no railway in this part of Norway; check Entur for buses along the E6."
+}

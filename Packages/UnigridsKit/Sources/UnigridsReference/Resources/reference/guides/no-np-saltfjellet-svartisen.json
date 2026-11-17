@@ -1,0 +1,212 @@
+{
+ "placeID": "no-np-saltfjellet-svartisen",
+ "contentVersion": 1,
+ "story": [
+  "Saltfjellet–Svartisen lies in the middle of Nordland, between Bodø and Mo i Rana, and changes character every few kilometres. In the west the park drops to Nordfjorden and the sea; in the middle lies Svartisen, an ice cap of about 370 square kilometres that ranks as mainland Norway's second-largest glacier and is now split in two by the valley of Vesterdalen. Its name means 'the black ice', for the dark, deep-blue colour of its old ice. The Arctic Circle runs across it, and Miljødirektoratet counts it the lowest-lying glacier on the European mainland: its outlet Engabreen reaches down to about 200 metres above the sea.",
+  "East of the ice the land opens into birch valleys and the broad plateau of Saltfjellet, laid over with gravel and moraine the ice sheet left behind. Much of the bedrock is lime-rich, which gives these mountains an unusually varied flora for the far north, and dissolves underground into caves and karst: the marble water-sculpture of Marmorslottet in Glomdalen, and the Russåga, which the park's regulation names as Norway's largest unregulated underground river. Saltfjellet holds one of Norway's largest populations of the endangered Arctic fox; wolverine and gyrfalcon breed here too, and lynx are resident.",
+  "People have used these mountains for a very long time. Saltfjellet holds one of the richest concentrations of Sámi cultural monuments in Norway — offering sites, trapping pits and guiding fences, hearths and bark-peeled trees — and the foundations of stallo houses here date from around 800 to 1000 AD. Reindeer herding still has a central place here, and the whole Saltfjellet area is year-round grazing land. Settlers cleared farms in the mountain valleys in the 1800s, and in the 1860s a telegraph line was strung across the fell between Rana and Salten; the walk along it is now the Telegraph Route.",
+  "Svartisen and Saltfjellet were first proposed for protection in 1936, but after the war the rivers looked more valuable as power. In the 1970s a state committee planned hydropower and a park together, and its scheme to dam Stormdalen and Bjøllådalen met a local campaign, Spar Saltfjellet, that documented the area's value so thoroughly that both valleys ended up inside the park. After some fifty years of argument the national park was created in 1989, and in 2020 a new regulation enlarged it, taking in among other areas the lower part of Austerdalsisen."
+ ],
+ "howItWorks": [
+  "Norway's right to roam (allemannsretten) applies across the park: you may walk, ski and camp where you like, and pick berries, mushrooms and common plants for your own use. From 15 April to 15 September national fire law forbids lighting a fire in or near woodland and other open country unless it plainly cannot spread or the municipality has allowed it; the park regulation allows wood to be used sparingly for a campfire. Dogs must be kept on a lead from 1 April to 20 August under the national Dog Act — loose dogs are a growing problem here for reindeer and for birds that nest on the ground.",
+  "Motor traffic on land and water, and flying lower than 300 metres, are banned inside the park, with exceptions for reindeer herding, farming and emergency work. Cycling is allowed only on roads, paths and vehicle tracks. Electric bicycles count as motor vehicles, but since the 2020 regulation they may be ridden on roads and vehicle tracks — never on paths. Drones may be flown only with permission from the Midtre Nordland National Park Board, and motorised model aircraft and ice augers are banned outright. Large events, and organised trips that could harm the park, need the board's permission.",
+  "Saltfjellet is Sámi reindeer country, and herds may be anywhere in the park at any time of year. The most important calving land lies between Bjellåga and Stormdalsfjellet, and disturbance there in May and June can cost calves; plan routes away from it in spring, and give herds room in the autumn rut. Arctic foxes den in the east of the area. Old Sámi monuments are protected: leave stones where they lie and do not build cairns, which near the Polar Circle Centre have already swallowed ancient sites."
+ ],
+ "sightNotes": {
+  "poi-no-saltfjellet-svartisen-svartisen": "Mainland Norway's second-largest glacier, about 370 square kilometres of ice split in two by Vesterdalen and crossed by the Arctic Circle.",
+  "poi-no-saltfjellet-svartisen-engabreen-engenbreen": "Svartisen's best-known outlet, down to about 200 metres above sea level; summer boat across Holandsfjorden, then a walk along Engabrevatnet. The lower tongue lies just outside the park.",
+  "poi-no-saltfjellet-svartisen-austerdalsisen": "A glacier arm on the Rana side, reached by a summer boat across Svartisvatnet or a rough path along the lake.",
+  "poi-no-saltfjellet-svartisen-marmorslottet": "'The Marble Castle': marble formations in the karst landscape of Glomdalen, one of Saltfjellet's biggest attractions. Its west side lies in the park, its east side in Fisktjønna nature reserve.",
+  "poi-no-saltfjellet-svartisen-bredek": "A mountain farm whose buildings are owned by Helgeland Museum and its hay meadows mown again for their flowers. Opened as a visiting farm in summer.",
+  "poi-no-saltfjellet-svartisen-bjolladalen": "A broad valley on the Telegraph Route, with the Krukkimyra bogs — one of the two valleys the Spar Saltfjellet campaign kept from being dammed.",
+  "poi-no-saltfjellet-svartisen-helgelandsbukken": "The summit above the Tåkeheimen hut, north of Engabreen; many walkers spend two nights at the hut to climb it."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Holandsvika on the coast road Fv17, for the boat to Engabreen",
+   "Svartisvatnet in Rana, for the boat towards Austerdalsisen",
+   "Fisktjønna in Glomdalen, for Marmorslottet",
+   "Lønsdal and the E6 over Saltfjellet, for the Telegraph Route and the eastern fells",
+   "Storjord in Saltdal, at the visitor centre"
+  ],
+  "reservations": "No permit or booking is needed to enter the park. The boats to Engabreen and Austerdalsisen run only in summer; check timetables with the operators before you go, and plan your walk around the last boat back.",
+  "permits": [
+   "Drones need permission from the Midtre Nordland National Park Board",
+   "Large events and organised trips that may harm the park need permission from the board",
+   "Hunting and fishing need a licence"
+  ],
+  "camping": [
+   "Wild camping under the right to roam",
+   "Keep tents away from the reindeer calving land between Bjellåga and Stormdalsfjellet in May and June"
+  ],
+  "lodging": [
+   "Trekking-association huts in the park, including Tåkeheimen, Midtistua and Bjellåvasstua",
+   "Brestua, by Engabrevatnet below Engabreen, sells food and drink"
+  ],
+  "seasonalClosures": [
+   "The boat to Engabreen runs from late spring to the end of summer, with weekend sailings into September — check before you go",
+   "Tåkeheimen and the huts nearest the ice are reachable on foot only from about May to September"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "800–1000",
+   "text": "Sámi build the stallo houses whose foundations still lie across Saltfjellet."
+  },
+  {
+   "year": "1860s",
+   "text": "A telegraph line is built over the fell between Rana and Salten; its route becomes today's Telegraph Route."
+  },
+  {
+   "year": "1936",
+   "text": "Saltfjellet and Svartisen are first proposed for protection as a national park."
+  },
+  {
+   "year": "1971",
+   "text": "The state sets up the Saltfjell-Svartisen committee to plan hydropower and a park together."
+  },
+  {
+   "year": "1979",
+   "text": "A hydropower licence is sought; the campaign Spar Saltfjellet fights the dams planned for Stormdalen and Bjøllådalen."
+  },
+  {
+   "year": "1989",
+   "text": "On 8 September Saltfjellet–Svartisen National Park is created, covering about 2,102 square kilometres."
+  },
+  {
+   "year": "2005",
+   "text": "The national park visitor centre opens at Storjord in Saltdal."
+  },
+  {
+   "year": "2020",
+   "text": "A new regulation enlarges the park to about 2,192 square kilometres, taking in lower Austerdalsisen among other areas."
+  },
+  {
+   "year": "2022",
+   "text": "Landowners' voluntary protection adds the whole of the Tespa ravine below Bredek to the park."
+  }
+ ],
+ "safety": [
+  "Glacier fronts are unstable and drop blocks of ice without warning. Keep to the marked path and stay at least 100 metres from the front of Engabreen; do not go onto the ice without a guide and glacier equipment.",
+  "Check the boat timetable before walking to Engabreen or Austerdalsisen, and allow time to be back for the last crossing.",
+  "Ice-smoothed rock near the glaciers is slippery when wet. Wear good boots, and expect heavy rain on the western side of the park.",
+  "Large parts of the park are remote and see very few visitors. Carry map, compass and warm clothing, and tell someone your route."
+ ],
+ "regulations": [
+  "Motor traffic and flying lower than 300 metres are banned; drones need the park board's permission.",
+  "Cycling is allowed on roads, paths and vehicle tracks; electric bicycles only on roads and vehicle tracks.",
+  "Dogs must be kept on a lead from 1 April to 20 August.",
+  "Do not remove stone, minerals or anything from caves, and leave cultural monuments untouched."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Saltfjellet-Svartisen nasjonalpark — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/saltfjellet-svartisen/"
+  },
+  {
+   "title": "Saltfjellet-Svartisen nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00000235"
+  },
+  {
+   "title": "Forskrift om vern av Saltfjellet-Svartisen nasjonalpark — Lovdata",
+   "url": "https://lovdata.no/forskrift/2020-10-16-2076"
+  },
+  {
+   "title": "Saltfjellet-Svartisen nasjonalpark — Midtre Nordland nasjonalparkstyre",
+   "url": "https://www.nasjonalparkstyre.no/Midtre-Nordland/verneomrader/saltfjellet-svartisen"
+  },
+  {
+   "title": "Ofte stilte spørsmål — Midtre Nordland nasjonalparkstyre",
+   "url": "https://www.nasjonalparkstyre.no/Midtre-Nordland/faq"
+  },
+  {
+   "title": "Besøksstrategi for verneområdene på Saltfjellet (2024) — Midtre Nordland nasjonalparkstyre",
+   "url": "https://www.nasjonalparkstyre.no/uploads/files_midtre_nordland/Besoksstrategi-verneomradene-pa-Saltfjellet-Ferdig.pdf"
+  },
+  {
+   "title": "Besøkssenter nasjonalpark Nordland",
+   "url": "https://www.nordlandsnaturen.no/besokssenter-nasjonalpark/"
+  },
+  {
+   "title": "Svartisen — Nordland nasjonalparksenter",
+   "url": "https://www.nordlandsnaturen.no/svartisen-eng/?lang=en"
+  },
+  {
+   "title": "Forskrift om brannforebygging § 3 — Lovdata",
+   "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+  },
+  {
+   "title": "Lov om hundehold (hundeloven) § 6 — Lovdata",
+   "url": "https://lovdata.no/dokument/NL/lov/2003-07-04-74"
+  },
+  {
+   "title": "Saltfjellet–Svartisen National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Saltfjellet%E2%80%93Svartisen_National_Park"
+  },
+  {
+   "title": "Saltfjellet-Svartisen nasjonalpark — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Saltfjellet-Svartisen_nasjonalpark"
+  },
+  {
+   "title": "Svartisen — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Svartisen"
+  },
+  {
+   "title": "Svartisen — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Svartisen"
+  },
+  {
+   "title": "Sentralt stedsnavnregister — Kartverket",
+   "url": "https://ws.geonorge.no/stedsnavn/v1/"
+  },
+  {
+   "title": "Nordland nasjonalparksenter — OpenStreetMap",
+   "url": "https://www.openstreetmap.org/node/3685853029"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Wolfgang Hägele, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "no-np-saltfjellet-svartisen-19c84111bc.jpg",
+  "caption": "Engabreen, an outlet of Svartisen, seen from Brasetvikneset in June",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Engabreen_Svartisen_jun_2025.jpg",
+  "altText": "A glacier tongue spilling between grey rock walls towards a fjord",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "Frankemann, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-saltfjellet-svartisen-78e8d4d185.jpg",
+   "caption": "Bjøllådalen and the Krukkimyra bogs on the Telegraph Route",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:View_beyond_Bj%C3%B8ll%C3%A5dalen_and_Krukkimyra.jpg",
+   "altText": "A wide, open valley with bogs and a river under bare mountains",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Frankemann, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-saltfjellet-svartisen-ade76b29ce.jpg",
+   "caption": "The mountain farm of Bredek, seen from the trail in Stormdalen",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Bredek_farm_seen_from_the_trail_in_Stormdalen.jpg",
+   "altText": "Old wooden farm buildings in a green clearing below mountains",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Frankemann, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-saltfjellet-svartisen-ddddc6f757.jpg",
+   "caption": "Storstormdalen and its river running inland between bare fells",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Storstormdalen_with_bare_mountains_and_Storstormdals%C3%A5ga.jpg",
+   "altText": "A river winding through a broad, treeless mountain valley",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "The park reaches from the coast to the inland fells, and its weather changes with it. Around Engabreen and the western ice, rain and snow are heavy: annual precipitation is very high, the snow between East and West Svartisen can bury small huts to the chimney, and the walking season there is short. The eastern plateau of Saltfjellet is much drier. Most visitors come between late May and September, when the boats run and the huts nearest the ice can be reached.",
+ "directions": "The E6 and the Nordland Line railway between Mo i Rana and Bodø follow the park's southern and eastern edges over Saltfjellet, with a station at Lønsdal by the eastern trails and the visitor centre at Storjord beside the road. For Engabreen, drive the coast road Fv17 to Holandsvika — about 12 kilometres from the ferry quay at Forøy, or 24 kilometres south of Glomfjord — and take the passenger boat across Holandsfjorden to the quay at Engen. Austerdalsisen is approached from Svartisvatnet in Rana."
+}

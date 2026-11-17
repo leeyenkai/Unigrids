@@ -1,0 +1,241 @@
+{
+ "placeID": "no-np-raet",
+ "contentVersion": 1,
+ "story": [
+  "Raet is a ridge of boulders, gravel and sand laid down at the edge of the Scandinavian ice sheet as it retreated, 11,000 to 12,000 years ago. The same moraine runs from Finland through Sweden and across the Oslofjord, and along this coast it lies partly on land and partly under the sea, from Lyngør in the north-east to Hasseltangen in the south-west. Where the waves have worked it over, only the big stones are left, in long boulder beaches; in sheltered places the finer material makes sandy beaches, as at Hove on Tromøy and on Merdø.",
+  "Almost all of the park is under water. The sea here is shallow and swept by the coastal current, which runs west along the shore. Kelp forests grow on the rocky and stony bottom of the drowned moraine, with cod, pollack and coalfish among them; lobster is the park's signature species. In sheltered bays the bottom turns to soft sediment and eelgrass. Ashore, the outer islands keep remnants of the heather-covered coastal heath that once lined the Atlantic coasts of Europe, and the Nidelva meets the sea in a brackish delta.",
+  "This has been a seafaring coast for centuries. Merdø appears as an outport on every Dutch sea chart from 1580 onwards, and an old skipper's house on the island, Merdøgaard, is now a museum. Many ships were lost on the shoals, among them the Danish slave ship Fredensborg, wrecked off Tromøy in a storm on 1 December 1768 and found by divers in 1974. Twin lighthouses were lit on Store and Lille Torungen in 1844 to mark the way in to Arendal.",
+  "Protection began with small nature reserves on islets and skerries in 1980 and grew to take in Tromlingene, the Raet landscape protection area in Arendal and the moraine at Hasseltangen. On 16 December 2016 these were joined with the surrounding sea into Raet National Park, 607 square kilometres in all, of which only about 8 are land. The park runs through three municipalities, and Arendal hosts its visitor centre."
+ ],
+ "howItWorks": [
+  "Norway's right to roam, allemannsretten, applies on the uncultivated shore and islands: you may walk, swim, land a kayak and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland. Dogs must be kept on a lead throughout the park from 1 April to 20 August, from 1 March in the seabird zones, and all year on Tromlingene.",
+  "The park's regulation adds its own rules. Motor traffic on land and ice is banned, as is flying lower than 300 metres; motor-driven model aircraft, which includes drones, may not be used. Boats may use the park, but powerboat racing is banned and boat sewage may not be emptied into the sea. From 15 April to 15 July no one may go ashore in the seabird zones, except Tromlingene, or come within 50 metres of their shores. Tents are not allowed in the seabird and sensitive-habitat zones, except on Ramsøya in the Nidelva. Fires need special care so that no vegetation, bare rock or pebbles are damaged; where fire sites have been built, use them. Pebbles and boulders may not be taken away.",
+  "The park is lived in and used. Holiday homes, private jetties and lighthouses run by the Norwegian Coastal Administration stand inside it, and fishing in the sea and gathering shellfish for your own use are allowed. Hunting follows the general rules, except on Tromlingene, where it is banned, and in the other seabird zones from 1 March to 1 September. The park is run by the Raet national park board, and organised activity or larger events that could harm the environment need its permission."
+ ],
+ "sightNotes": {
+  "poi-no-raet-spornes": "The start of the long boulder beach on Tromøy's outer shore, where the moraine runs on from Spornes to Hoveodden, fringed by wind-bent woods.",
+  "poi-no-raet-hoveodden": "The south-western point of Tromøy, with sandy, shallow beaches on its sheltered side and fire pans for visitors. A national park portal stands near Hove.",
+  "poi-no-raet-merdo": "A car-free island and old outport with sandy beaches and the Merdøgaard museum. Ferries run every half hour in summer.",
+  "poi-no-raet-store-torungen-fyr": "The cast-iron lighthouse of 1914 on an outer island, reached only by boat. Lille Torungen nearby is the survivor of the twin towers first lit in 1844.",
+  "poi-no-raet-lyngor-fyr": "A lighthouse of 1879 on Kjeholmen at the park's north-eastern end, reached only by boat. The site is open to the public.",
+  "poi-no-raet-hasseltangen": "Where Raet comes ashore in Grimstad: a sheltered, child-friendly beach on the inside, rough rocky coast on the outside and views to the Torungen lighthouses.",
+  "poi-no-raet-molen": "The top of the moraine breaking the surface east of Tromøy as an islet of loose pebbles about 130 metres long, in waters known as a ships' graveyard."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Tromøy, by road over the Tromøy Bridge from Arendal — Spornes and Hove, with a national park portal near Hove",
+   "Merdø, by summer ferry or taxi boat",
+   "Lyngør and the outer skerries of Tvedestrand, by scheduled boat or your own boat",
+   "Hasseltangen and the beaches from Fevik in Grimstad, by road",
+   "The visitor centre in Arendal, and welcome centres at Gjeving in Tvedestrand and Dømmesmoen in Grimstad"
+  ],
+  "reservations": "There is no entry reservation or permit. Ferries and scheduled boats run to timetables, and taxi boats and the lighthouse lodgings are booked directly.",
+  "permits": [
+   "Organised activity or larger events that could harm the environment need permission from the national park board",
+   "Fishing in the sea is allowed under the general rules, and you may gather shellfish for your own use"
+  ],
+  "camping": [
+   "Wild camping under the right to roam, at least 150 metres from houses and cabins, outside the zones where tents are banned",
+   "No tents in the seabird and sensitive-habitat zones, except on Ramsøya in the Nidelva",
+   "Use the fire sites provided, and light no fire on bare rock or pebble beaches"
+  ],
+  "lodging": [
+   "The keeper's houses at Store Torungen and Lyngør lighthouses can be rented for overnight stays",
+   "Hotels and guesthouses in Arendal, Grimstad and Tvedestrand"
+  ],
+  "seasonalClosures": [
+   "The seabird zones are closed to landing, and to boats within 50 metres of their shores, from 15 April to 15 July — check the park map before you go",
+   "The Merdø ferry runs every half hour only in summer; out of season, book a taxi boat — check with the operators before you go"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "End of the last ice age",
+   "text": "The edge of the retreating ice sheet leaves the Ra moraine along the coast, partly under the sea."
+  },
+  {
+   "year": "1580",
+   "text": "Merdø appears as an outport on Dutch sea charts, as it does on every chart that follows."
+  },
+  {
+   "year": "1768",
+   "text": "The slave ship Fredensborg is wrecked off Tromøy in a storm on 1 December; divers find the wreck in 1974."
+  },
+  {
+   "year": "1844",
+   "text": "Twin lighthouses are lit on Store and Lille Torungen to guide ships in to Arendal."
+  },
+  {
+   "year": "1879",
+   "text": "Lyngør lighthouse comes into service on Kjeholmen."
+  },
+  {
+   "year": "1914",
+   "text": "A new cast-iron tower replaces the brick lighthouse on Store Torungen."
+  },
+  {
+   "year": "1980",
+   "text": "Store Torungen and four other islets and skerries become nature reserves."
+  },
+  {
+   "year": "1982",
+   "text": "Tromlingene becomes a nature reserve with protection for its birdlife."
+  },
+  {
+   "year": "2000",
+   "text": "Raet landscape protection area, with plant and bird protection, is created in Arendal."
+  },
+  {
+   "year": "2016",
+   "text": "Raet National Park is established on 16 December, covering about 607 square kilometres, 599 of them sea; the rules of nine older reserves and protected areas are repealed."
+  }
+ ],
+ "safety": [
+  "Wear a life jacket in small boats and kayaks. The outer skerries face the open Skagerrak, and wind and swell can build fast.",
+  "Keep clear of the signposted seabird zones from 15 April to 15 July; disturbed birds leave eggs and chicks exposed.",
+  "Boulder beaches and wet rock slabs are slippery and the stones roll underfoot. Wear sturdy shoes.",
+  "Where the moraine runs offshore, shoals and rocks lie just under the surface. Navigate with a chart."
+ ],
+ "regulations": [
+  "No landing in the seabird zones, and no boats within 50 metres of their shores, from 15 April to 15 July.",
+  "Dogs on a lead from 1 April to 20 August across the park, from 1 March in the seabird zones and all year on Tromlingene.",
+  "No motor traffic on land, no drones or other motor-driven model aircraft, and no powerboat racing.",
+  "No tents in the seabird and sensitive-habitat zones; elsewhere, camp under the right to roam.",
+  "Leave pebbles and boulders where they lie, and use the fire sites provided."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Raet nasjonalpark — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/raet/"
+  },
+  {
+   "title": "Raet nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00003273"
+  },
+  {
+   "title": "Forskrift om vern av Raet nasjonalpark (FOR-2016-12-16-1632) — Lovdata",
+   "url": "https://lovdata.no/dokument/LF/forskrift/2016-12-16-1632"
+  },
+  {
+   "title": "Raet National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Raet_National_Park"
+  },
+  {
+   "title": "Raet nasjonalpark — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Raet_nasjonalpark"
+  },
+  {
+   "title": "Raet nasjonalpark — the park's website",
+   "url": "https://raetnasjonalpark.no/"
+  },
+  {
+   "title": "Innfallsporter — Raet nasjonalpark",
+   "url": "https://raetnasjonalpark.no/innfallsporter/"
+  },
+  {
+   "title": "Besøkssenter Raet nasjonalpark, Arendal",
+   "url": "https://raetnasjonalpark.no/besokssenter-raet-nasjonalpark-arendal/"
+  },
+  {
+   "title": "Besøkssentre — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/besokssentre/"
+  },
+  {
+   "title": "Raet (moraine) — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Raet"
+  },
+  {
+   "title": "Merdø — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Merd%C3%B8"
+  },
+  {
+   "title": "Merdø — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Merd%C3%B8"
+  },
+  {
+   "title": "Fredensborg (slave ship) — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Fredensborg_(slave_ship)"
+  },
+  {
+   "title": "Store Torungen Lighthouse — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Store_Torungen_Lighthouse"
+  },
+  {
+   "title": "Store Torungen fyr — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Store_Torungen_fyr"
+  },
+  {
+   "title": "Lyngør Lighthouse — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Lyng%C3%B8r_Lighthouse"
+  },
+  {
+   "title": "Lyngør fyr — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Lyng%C3%B8r_fyr"
+  },
+  {
+   "title": "Tromøya — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Trom%C3%B8ya"
+  },
+  {
+   "title": "Arendal Line — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Arendal_Line"
+  },
+  {
+   "title": "Vitensenteret Arendal — Visit Norway",
+   "url": "https://www.visitnorway.com/listings/vitensenteret-arendal/270523/"
+  },
+  {
+   "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+   "url": "https://ws.geonorge.no/stedsnavn/v1/"
+  },
+  {
+   "title": "Adresseregister — Kartverket (visitor centre location)",
+   "url": "https://ws.geonorge.no/adresser/v1/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Krg This photo was taken by Karl Ragnar Gjertsen . Please credit this photo Karl Ragnar Gjertsen in the immediate vicinity of the image., via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "no-np-raet-e718e03484.jpg",
+  "caption": "The shore at Spornes on Tromøy in July",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Spornesstranda_2022juli.jpg",
+  "altText": "A curving beach of grey pebbles and boulders along a calm sea, with grass in the foreground and woods on the far headland",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "Krg, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-raet-5d3025c056.jpg",
+   "caption": "Raet's boulders on the outer shore of Tromøy",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:BjellandstrandTrom%C3%B8y_(5).jpg",
+   "altText": "A beach of large rounded boulders running down to a blue sea under a clear sky",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Krg This photo was taken by Karl Ragnar Gjertsen . Please credit this photo Karl Ragnar Gjertsen in the immediate vicinity of the image., via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-raet-c753e1f03d.jpg",
+   "caption": "Molen, an islet of loose pebbles where the moraine breaks the surface",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:M%C3%A5len_2022_3.jpg",
+   "altText": "A low, flat island of grey stones lying on a calm, misty sea",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Krg Karl Ragnar Gjertsen This photo was taken by Karl Ragnar Gjertsen . Please credit this photo Karl Ragnar Gjertsen in the immediate vicinity of the image., via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-raet-4ab92b7b0a.jpg",
+   "caption": "The Torungen lighthouses seen across the water",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Torungene_2.JPG",
+   "altText": "Two distant lighthouses on low rocky islands across a calm blue sea, with stones and wild plants in the foreground",
+   "licence": "CC BY-SA 3.0"
+  }
+ ],
+ "weather": "Raet lies on the Skagerrak coast, and the sea sets the pattern. Summer is the main season, when the water is warm enough to swim and the skerries fill with boats and kayaks. April to June is when seabirds nest and migrants pass, and the park asks for extra care around them. Autumn brings gales and big seas on the outer shore, and winter is quiet and often grey, with few visitors. Wind can rise quickly on open water, so check the marine forecast before you paddle out.",
+ "directions": "The park lies about 60 kilometres east of Kristiansand, off Grimstad, Arendal and Tvedestrand, all three on the E18. Trains on the Arendal Line connect Arendal with Nelaug on the Sørlandet Line between Oslo and Kristiansand. Tromøy, with Hove and Spornes, is joined to the mainland by the Tromøy Bridge. In summer ferries run to car-free Merdø every half hour; out of season, book a taxi boat. Lyngør, at the north-east end of the park, is reached by scheduled boat. Timetables change with the season, so check Entur and the local boat operators before you travel."
+}

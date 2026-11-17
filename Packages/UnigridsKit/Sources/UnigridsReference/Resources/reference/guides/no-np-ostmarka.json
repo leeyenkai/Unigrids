@@ -1,0 +1,187 @@
+{
+ "placeID": "no-np-ostmarka",
+ "contentVersion": 1,
+ "story": [
+  "Østmarka is the forest that begins where Oslo's eastern suburbs end, and the national park takes in a large part of it across Oslo, Nordre Follo, Lørenskog, Rælingen and Enebakk. The rock is mostly poor, but the ground is a maze of ridges and hollows. When the ice withdrew about 10,000 years ago, parts of the area lay under the sea; as the land rose, the waves washed the knolls bare and filled the clefts with sediment. Pollen records show that spruce became a forest-forming tree here only in the 1400s.",
+  "The forest is a mosaic of spruce and pine with patches of broadleaved woodland, many types of mire and countless lakes. The richest ground is in the east, where low-herb forest holds hepatica, woodruff and other demanding plants, and old conifer stands carry red-listed wood fungi. Wolves have lived in Østmarka permanently since 2012 and have bred several times, and lynx roam here too. Beavers were hunted out in the late 1800s; in 1975 Oslo's wildlife board released two pairs, and their dams now make ponds and dead wood for insects and birds.",
+  "People have worked this forest for centuries, and the observant walker finds traces of farms, summer pastures, old roads, logging, timber floating and sawmills. Rausjøgrenda, on the park's edge, had several sawmills, and the old plank road, Plankeveien, carried planks into the city; from probably the late 1800s a fire tower on Kjerringhøgda kept watch over the timber. In the Second World War a courier route ran through Østmarka towards Sweden, and some 250–300 refugees were guided out along it.",
+  "Protection came in stages: Østmarka nature reserve in 2002, Spinneren outdoor recreation area in 2013, and on 10 November 2023 the national park, with an outdoor recreation area along its western side. The rules let established outdoor use carry on, from cycling and riding to ski races and orienteering. Its north-eastern core, zone A, continues the old nature reserve with stricter rules."
+ ],
+ "howItWorks": [
+  "Norway's right to roam (allemannsretten) applies: you may walk and ski where you like, pick berries and mushrooms for your own use, and camp or sleep in a hammock for up to two nights in one place without the landowner's leave, at least 150 metres from the nearest inhabited house or cabin. From 15 April to 15 September national fire law bans fires in or near woodland unless a fire plainly cannot spread. Outside that period you may light a campfire with dry twigs from the ground or wood you bring; use an existing fire ring, and never light a fire on bare rock, which cracks.",
+  "Unusually for a national park, cycling and riding are allowed on roads, paths and frozen lakes everywhere except zone A, the north-eastern core that was once Østmarka nature reserve, and electric bicycles on roads and paths outside zone A. Other motor traffic is banned, as is flying lower than 300 metres, and drones and other unmanned motorised craft are forbidden without a dispensation. Organised training, trail running and ski races on the marked trails need no permission, and orienteering outside zone A needs only an annual check-in with the managing authority; larger events that could harm the park need a permit.",
+  "Dogs must be on a lead from 1 April to 20 August across Norway, and municipalities can set longer periods, so check locally. Hunting and fishing follow the normal rules, and every lake needs a fishing licence, sold through inatur.no. The park is managed by the County Governor of Østfold, Buskerud, Oslo and Akershus until a national park board takes over."
+ ],
+ "sightNotes": {
+  "poi-no-ostmarka-kjerringhogda-fire-tower": "A fire lookout with views over much of the park, on a site first used for a tower probably in the late 1800s. A short round walk from Bysetermåsan.",
+  "poi-no-ostmarka-tonekollen": "One of Østmarka's highest tops: a demanding climb to a summit with wide views, especially towards Øyeren and Lillestrøm.",
+  "poi-no-ostmarka-mosjoen": "A long lake in the heart of the park. Canoes can be hired at Vangen skistue on its western side.",
+  "poi-no-ostmarka-svartoren": "A narrow lake almost three kilometres long between rocky, wooded banks — good paddling close to the forest.",
+  "poi-no-ostmarka-spinneren": "A long ridge of old pine forest and intact wild country close to the city, protected in 2013 and now partly inside the park.",
+  "poi-no-ostmarka-rausjogrenda": "A hamlet of old sawmill buildings on the park's edge, a living memorial of the timber trade. The historic plank road, Plankeveien, runs through it."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Rustadsaga, in the north — about a kilometre's walk from Bogerud metro station",
+   "Bysetermåsan, in the south, for the heart of the park",
+   "Sandbakken and Krokhol, on the western side, for Spinneren, Rausjøgrenda and Vangen",
+   "Car parks at Skullerud, Østmarksetra, Grønmo, Mariholtet and Losby, among others"
+  ],
+  "reservations": "No permit or booking is needed to enter the park. The Norwegian Trekking Association (DNT) runs seven unstaffed cabins in Østmarka; arrange stays through DNT.",
+  "permits": [
+   "Events that could harm the park need a permit from the managing authority",
+   "Orienteering outside zone A after an annual check-in with the managing authority",
+   "Drone flying only with a dispensation, and never for leisure",
+   "Fishing licence for every lake, from inatur.no"
+  ],
+  "camping": [
+   "Wild camping or a hammock for up to two nights in one place, at least 150 metres from inhabited houses and cabins",
+   "Tent pitches and rules for longer stays at the DNT cabins"
+  ],
+  "lodging": [
+   "Seven unstaffed DNT cabins in Østmarka, among them Øvresaga at Rausjøgrenda and Dølerud",
+   "Overnight stays at Vangen skistue"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "c. 10,000 years ago",
+   "text": "The ice withdraws; parts of Østmarka lie under the sea until the land rises."
+  },
+  {
+   "year": "1400s",
+   "text": "Spruce becomes a forest-forming tree, pollen records show."
+  },
+  {
+   "year": "Late 1800s",
+   "text": "Beavers are hunted out of Østmarka, and the first fire lookout probably goes up on Kjerringhøgda."
+  },
+  {
+   "year": "1940–1945",
+   "text": "The courier route Timian through Østmarka guides 250–300 refugees towards Sweden."
+  },
+  {
+   "year": "1975",
+   "text": "Oslo's wildlife board releases two pairs of beavers, which re-establish the species."
+  },
+  {
+   "year": "2002",
+   "text": "Østmarka nature reserve protects 18 square kilometres of old forest in the north-east."
+  },
+  {
+   "year": "2012",
+   "text": "Wolves settle permanently in Østmarka."
+  },
+  {
+   "year": "2013",
+   "text": "Spinneren is protected as an outdoor recreation area."
+  },
+  {
+   "year": "2023",
+   "text": "On 10 November Østmarka National Park is established, with an outdoor recreation area along its western side."
+  }
+ ],
+ "safety": [
+  "Many of Østmarka's small hills and lakes look alike, and you can walk for hours without meeting anyone. Carry a map or a charged phone with offline maps.",
+  "Test the ice before you ski, walk or cycle on a frozen lake.",
+  "Wolves and lynx live in the park; keep your dog under control at all times.",
+  "The climb to Tonekollen is steep, and bare rock is slippery when wet or icy."
+ ],
+ "regulations": [
+  "Drones and other unmanned motorised craft are banned without a dispensation.",
+  "Cycling and riding are allowed on roads, paths and frozen lakes, and electric bicycles on roads and paths, but none of them in zone A.",
+  "Other motor traffic is banned on land and water, and flying is banned below 300 metres.",
+  "Campfires only with dry twigs or wood you bring, in existing fire rings, and never from 15 April to 15 September unless a fire plainly cannot spread.",
+  "Larger events that could damage the park need a permit."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Østmarka nasjonalpark — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/ostmarka/"
+  },
+  {
+   "title": "Østmarka nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00003849"
+  },
+  {
+   "title": "Forskrift om vern av Østmarka nasjonalpark — Lovdata",
+   "url": "https://lovdata.no/forskrift/2023-11-10-1812"
+  },
+  {
+   "title": "Om Østmarka — Østmarka nasjonalpark",
+   "url": "https://www.ostmarkanasjonalpark.no/om-nasjonalparken/"
+  },
+  {
+   "title": "Råd om ferdsel — Østmarka nasjonalpark",
+   "url": "https://www.ostmarkanasjonalpark.no/rad-om-ferdsel/"
+  },
+  {
+   "title": "Startpunkt og innfallsporter — Østmarka nasjonalpark",
+   "url": "https://www.ostmarkanasjonalpark.no/startpunkt-og-innfallsporter/"
+  },
+  {
+   "title": "Opplevelser og aktiviteter — Østmarka nasjonalpark",
+   "url": "https://www.ostmarkanasjonalpark.no/opplevelser-og-besoksmal/"
+  },
+  {
+   "title": "Forskrift om brannforebygging § 3 — Lovdata",
+   "url": "https://lovdata.no/dokument/SF/forskrift/2015-12-17-1710"
+  },
+  {
+   "title": "Hundeparker og båndtvang — Oslo kommune",
+   "url": "https://www.oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/dyr-i-oslo/hundehold/"
+  },
+  {
+   "title": "Østmarka nasjonalpark — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/%C3%98stmarka_nasjonalpark"
+  },
+  {
+   "title": "Sentralt stedsnavnregister — Kartverket",
+   "url": "https://ws.geonorge.no/stedsnavn/v1/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Sondrekv, via Wikimedia Commons",
+  "isPublicDomain": true,
+  "assetName": "no-np-ostmarka-9c12607caf.jpg",
+  "caption": "Østmarka from the top of Kjerringhøgda",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:%C3%98stmarka.jpg",
+  "altText": "A wide panorama of unbroken green forest and low ridges under a cloudy sky"
+ },
+ "gallery": [
+  {
+   "credit": "skiforeningen, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-ostmarka-f95422b18c.jpg",
+   "caption": "Mosjøen from Pølseberget, looking south towards Kjerringhøgda",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:2833_%C3%98stmarka_Mosj%C3%B8en_fra_P%C3%B8lseberget.jpg",
+   "altText": "A lake glimpsed through young birch leaves, with forested hills beyond",
+   "licence": "CC BY 2.0"
+  },
+  {
+   "credit": "Hebue, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-ostmarka-8715924b62.jpg",
+   "caption": "The rock summit of Tonekollen, with Tonevannet below",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Tonekollen.jpg",
+   "altText": "A bare rock summit among pine trees, with a lake visible through the trunks",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "Kjetil Ree, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-ostmarka-c1925d6412.jpg",
+   "caption": "Svartoren, on the boundary between Nordre Follo and Enebakk",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Svartoren_%C3%98stmarka_18._juni_2022.jpg",
+   "altText": "A long, still lake between rocky banks and dense green forest",
+   "licence": "CC BY-SA 3.0"
+  }
+ ],
+ "weather": "Østmarka can be enjoyed all year, though summer is the busiest season, with paddling and fishing on the lakes and long walks on the paths. In winter a wide network of trails is groomed for classic skiing and skating — Skiforeningen publishes the current conditions — and the frozen lakes open up for skiing and cycling once the ice is safe.",
+ "directions": "Østmarka starts at the edge of Oslo. Metro line 3 runs to Bogerud and Skullerud, and line 2 to Ellingsrudåsen; from Bogerud it is about a kilometre to Rustadsaga. Bus 550 runs from the city centre via Mortensrud along the west side of Østmarka to Enebakk church, and bus 350 links Enebakk church with Lillestrøm via Flateby and Fjerdingby; Ruter has the timetables. Drivers can use the car parks that ring the forest, from Skullerud and Grønmo on the Oslo side to Bysetermåsan in the south and Losby."
+}

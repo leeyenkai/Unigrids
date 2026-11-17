@@ -21,21 +21,35 @@ superseded: running it would overwrite these files with the old four-park seed.
 
 | File | Contents | From |
 |---|---|---|
-| `manifest.json` | Dataset version (4), build date, provenance, a one-line note | The build |
-| `places.json` | 5,515 places: 63 national parks, 373 other NPS units, 3,539 state parks, 154 national forests, 20 national grasslands, 548 wildlife refuges, 33 national monuments, 24 BLM conservation areas, 575 National Natural Landmarks, 186 scenic byways. Each has a time zone; NPS sites carry monthly visitation (378) and visitor information (373); state parks name their manager (3,463); 2,722 carry a Wikipedia lead | NPS Data API and Visitor Use Statistics; PAD-US 4.1; USFS, FWS, BLM and NPS NNL services; FHWA byways; Wikipedia; `content/` |
-| `pois.json` | 1,660 sights, visitor centres, campgrounds and passport stamp locations | NPS Data API places, visitor centres, campgrounds and passport stamp locations; sight choices and notes from the guides |
+| `manifest.json` | Dataset version (5 with places beyond the US; a US-only build writes 4), build date, provenance, a note per country | The build |
+| `places.json` | 6,081 places. **United States**, 5,515: 63 national parks, 373 other NPS units, 3,539 state parks, 154 national forests, 20 national grasslands, 548 wildlife refuges, 33 national monuments, 24 BLM conservation areas, 575 National Natural Landmarks, 186 scenic byways. Each has a time zone; NPS sites carry monthly visitation (378) and visitor information (373); state parks name their manager (3,463); 2,722 carry a Wikipedia lead. **Japan**, 93: 35 national parks and 58 quasi-national parks. **Norway**, 473: 48 national parks, 195 protected landscapes and 230 nature reserves of 10 km² or more. Every place abroad has its subdivisions, local name, passport region and time zone | NPS Data API and Visitor Use Statistics; PAD-US 4.1; USFS, FWS, BLM and NPS NNL services; FHWA byways; Wikipedia; MOE; Miljødirektoratet; Wikidata; `content/` |
+| `pois.json` | 2,475 points: 1,660 US sights, visitor centres, campgrounds and stamp locations; 380 in Japan and 435 in Norway, huts among them | NPS Data API; the guides' sights; OpenStreetMap huts (ODbL) |
 | `themes.json` | Theme tags | `content/themes.json` |
-| `boundaries.json` | 4,715 outlines as encoded polylines, simplified | NPS Land Resources Division; USFS proclaimed boundaries; FWS refuge boundaries; BLM NLCS; PAD-US 4.1 for state parks |
+| `boundaries.json` | 5,225 outlines as encoded polylines, simplified: 4,715 US, 37 Japanese (every national park and two quasi-national parks), 473 Norwegian | NPS Land Resources Division; USFS; FWS; BLM NLCS; PAD-US 4.1; MOE `nps.zip` (zones joined); OpenStreetMap; Miljødirektoratet |
 | `boundaries-overview.json` | The same outlines simplified harder (about 0.008°), drawn at country scale | The build |
 | `routes.json` | 186 byway routes as encoded polylines | FHWA America's Byways |
-| `transport.json` | 241 Interstate and 254 US route lines, 49 Amtrak routes and 569 stations | National Transportation Atlas Database (NHS, Amtrak) |
-| `trails.json` | 3,506 trails in 61 national parks, 3,486 measured: line, length, climb, high and low point, profile, loop, features, sights along the way, uses, seasonal notes | NPS Public Trails; OpenStreetMap for Sequoia and Kings Canyon (ODbL); USGS 3DEP elevation |
-| `brochures.json` | For 434 NPS sites: the maps page, and any PDFs its maps and brochures pages list (84 sites list at least one) | Each site's `nps.gov/<code>/planyourvisit/` pages |
-| `climate.json` | Monthly mean high, low and precipitation for each national park, 2016–2025 | Open-Meteo archive (ERA5), CC BY 4.0 |
-| `guides/np-*.json` | One guide per national park | `content/guides/`, merged with NPS fees, hours, weather, directions and photographs |
-| `images/` | 234 national park photographs, resized and recompressed, each named for its source | NPS (public domain); other places link their Wikimedia Commons photographs |
+| `transport.json` | 241 Interstate and 254 US route lines, 49 Amtrak routes and 569 stations; 596 passenger rail lines and 1,280 stations in Japan and Norway | National Transportation Atlas Database (NHS, Amtrak); OpenStreetMap (ODbL) |
+| `trails.json` | 4,608 trails: 3,506 in 61 US national parks (3,486 measured), 546 in 27 Japanese and 556 in 41 Norwegian parks (all measured; 240 with Turrutebasen's published grade). Each has its line, length, climb, high and low point, profile, loop, features, sights along the way, uses, seasonal notes | NPS Public Trails; OpenStreetMap for Sequoia and Kings Canyon and for Japan (ODbL); Kartverket's Turrutebasen (CC BY 4.0); USGS 3DEP elevation; Copernicus GLO-30 abroad |
+| `brochures.json` | For 434 NPS sites: the maps page, and any PDFs its maps and brochures pages list (84 sites list at least one); Japan's 35 parks with MOE's brochures; Norway's 48 park pages | Each site's `nps.gov/<code>/planyourvisit/` pages; japan.travel and env.go.jp; norgesnasjonalparker.no |
+| `climate.json` | Monthly mean high, low and precipitation for each of the 146 national parks, 2016–2025 | Open-Meteo archive (ERA5), CC BY 4.0 |
+| `guides/*.json` | One guide per national park, 146 | `content/guides/`, merged with NPS fees, hours, weather, directions and photographs |
+| `images/` | 548 national park photographs (US, Japan, Norway), resized and recompressed, each named for its source | NPS (public domain); other places link their Wikimedia Commons photographs |
 
 ## Provenance and known limits
+
+- **Japan and Norway** (ADR 0013). Guides are written for Unigrids and every claim was
+  checked against the parks' authorities (`docs/sources-japan-norway.md`). Japan's
+  national park areas and dates follow MOE's table; their outlines join the zones of
+  MOE's `nps.zip`, a 2025 file MOE no longer links. Quasi-national parks come from MOE's
+  list with Wikidata's designation year; OpenStreetMap outlines only 6 of the 58 by name,
+  and one under a third of its published area is refused, so 56 are points. Norway's
+  areas are each regulation's own figure; a landscape's or reserve's year is when it was
+  first protected (`foerstegangVernet`), absent where Miljødirektoratet gives only the
+  current regulation's date. Photographs are from Wikimedia Commons, each with its own
+  credit and licence. Lowest and highest ground abroad is measured on Copernicus GLO-30
+  and says so; its 30 m cells run a few metres under the named summits. Huts and
+  stations for 30 Japanese parks, and trails for six, wait on OpenStreetMap's query
+  service, which refused this build's machine part-way.
 
 - **National park figures** — date established, area and 2025 recreation visits — come
   from `content/national-park-facts.json`, sourced from the NPS acreage report and NPS

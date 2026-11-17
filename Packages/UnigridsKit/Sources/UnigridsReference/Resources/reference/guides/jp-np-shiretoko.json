@@ -1,0 +1,239 @@
+{
+ "placeID": "jp-np-shiretoko",
+ "contentVersion": 1,
+ "story": [
+  "The Shiretoko Peninsula is a line of volcanoes pushed out into the sea, part of the chain that continues north-east through the Kuril Islands. Mount Rausu, at 1,660 metres, is the highest of them; Iōzan, further along the ridge, is still active and in 1936 poured out molten sulphur. The sea has cut the west coast into cliffs around a hundred metres high, and groundwater that soaks into the plateau above leaks out halfway down them, which is why Furepe Falls drops into the Sea of Okhotsk from a cliff face rather than a river.",
+  "Shiretoko's richness starts with ice. Sea ice formed in the northern Sea of Okhotsk drifts south and usually reaches the peninsula from late January into March — the lowest latitude in the northern hemisphere where sea ice arrives every winter. Algae grow under the ice, the spring melt sets off a bloom of plankton, and the food chain runs from there to fish, seals and whales, to salmon that crowd up the short rivers, and on to the bears, eagles and owls that eat them. It was that link between sea, river and forest that UNESCO recognised in 2005.",
+  "The peninsula holds one of the densest populations of brown bears anywhere, and about half of the breeding pairs of Blakiston's fish owl left in Japan. Orcas and sperm whales feed in the deep Nemuro Strait off the east coast, and Steller's sea eagles winter around the harbours. Because the mountains rise so steeply from the shore, dwarf stone pine and alpine flowers grow at heights that would be forest elsewhere, among them the Shiretoko violet that takes its name from the place.",
+  "The name comes from the Ainu sir etok, the place where the land runs out. The Ainu, influenced by the Okhotsk culture that flourished on this coast in the eighth and ninth centuries, held the bear, the fish owl and the orca as gods. Fishing — salmon, kelp, sea urchin, pollock — is still the peninsula's living. Settlers tried farming the coast near Iwaobetsu and in the end gave up; when their abandoned fields faced development, Shari town launched a national appeal in 1977 to buy them back a hundred square metres at a time, and the land has been returning to forest since."
+ ],
+ "howItWorks": [
+  "Like every Japanese national park, Shiretoko is a zoned area rather than land the park owns. Of its 38,954 hectares on land, 36,216 are national land — mostly national forest — with 1,078 hectares of public and 1,660 of private land. The park takes in parts of two towns: Shari, whose village of Utoro is the gateway on the Okhotsk side, and Rausu on the Nemuro Strait, where fishing huts and kelp spread out to dry on the beaches are among the sights the Ministry lists. So is Kuma-no-yu, a riverside hot-spring bath at Rausu kept up by local volunteers, free to use with a donations box.",
+  "More than 23,500 hectares — over half the land — is special protection zone, the strictest category, where picking any plant, collecting fallen leaves or branches, catching any animal, lighting a fire and leaving the roads in a vehicle all need a permit from the Minister of the Environment. The rest is special zone of the first, second and third class, where building, felling, quarrying and picking listed plants need a permit; Shiretoko has no ordinary zone at all. Since 1990 a 15,107-hectare vehicle-restriction area has kept snowmobiles and off-road vehicles out of much of the special zone. The surrounding sea was added in 2005, when Shiretoko became a World Natural Heritage site, managed jointly by the Ministry of the Environment, the Forestry Agency, the Agency for Cultural Affairs and Hokkaido, advised by a scientific committee and working with the two towns.",
+  "Some places have rules of their own. Shiretoko Goko has been a use-adjustment zone since 2011: the elevated boardwalk to the first lake is free all season, but the ground path round the five lakes can be walked only after a ten-minute lecture at the field house, and from 10 May to 31 July only with a registered guide, because bears are most active then. In summer, private cars are banned from the road between Shiretoko Goko and Kamuiwakka for a period set each year, and shuttle buses run from the Shiretoko Nature Center instead. The peninsula beyond the road ends has no paths or facilities; the Ministry's guidelines for the tip area ask visitors to be self-reliant and not to land from powered boats."
+ ],
+ "sightNotes": {
+  "poi-jp-shiretoko-shiretoko-goko": "Five small lakes in old-growth forest below the Shiretoko range, reached by an 800-metre elevated boardwalk or, with a lecture or guide, a ground path.",
+  "poi-jp-shiretoko-furepe-falls": "Groundwater seeping from a cliff about a hundred metres high straight into the sea, on a two-kilometre loop walk from the Nature Center.",
+  "poi-jp-shiretoko-kamuiwakka-yu-no-taki": "A stream warmed by hot springs from Iōzan, tumbling over a series of falls. Climbing it must be booked ahead; the road is closed to private cars in high summer.",
+  "poi-jp-shiretoko-mount-rausu": "The peninsula's highest peak, 1,660 metres. More than eight hours there and back, with snow on the route until late July.",
+  "poi-jp-shiretoko-shiretoko-pass": "The 738-metre high point of the road between Utoro and Rausu, facing Mount Rausu with Kunashiri across the strait.",
+  "poi-jp-shiretoko-lake-rausu": "The peninsula's largest lake, reached by a path past four smaller ponds. The Ministry advises the same gear as for a mountain hike.",
+  "poi-jp-shiretoko-kumagoe-falls": "A waterfall above Rausu reached by a short stream-side path, with native water crowfoot flowering in the current.",
+  "poi-jp-shiretoko-cape-shiretoko": "The peninsula's tip: grassland above the Sea of Okhotsk with no road or path. Seen from sightseeing boats out of Utoro."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Utoro, on the Sea of Okhotsk — the main base, with the World Heritage Conservation Center and sightseeing boats",
+   "Shiretoko Goko and the Nature Center, on the road north of Utoro",
+   "Rausu, on the Nemuro Strait — whale-watching and drift-ice cruises",
+   "Shiretoko Pass, on National Route 334 between the two sides"
+  ],
+  "reservations": "From 10 May to 31 July the Shiretoko Goko ground path is open only to tours with registered guides, which are booked in advance; outside that period you buy a ticket and attend a short lecture at the field house on the day. Climbing Kamuiwakka's falls must be booked in advance, and the dates of the summer private-car ban on the Kamuiwakka road change each year. Check before you go with the Shiretoko Goko Field House, Shari town and the World Heritage Conservation Center.",
+  "permits": [
+   "Shiretoko Goko ground path — lecture and ticket at the field house, or a registered-guide tour from 10 May to 31 July",
+   "The peninsula tip — no permit, but no paths or facilities; read the Ministry of the Environment's tip-area guidelines and consult the Utoro or Rausu ranger office first"
+  ],
+  "camping": [
+   "Shiretoko National Campground (国設知床野営場), on the hill above Utoro, June to September",
+   "Rausu Onsen Campground (羅臼温泉野営場), near the Rausu Visitor Center and the start of the Rausu route up Mount Rausu"
+  ],
+  "lodging": [
+   "Utoro Onsen, the largest group of hotels and inns on the peninsula",
+   "Iwaobetsu Onsen, at the start of the main route up Mount Rausu",
+   "Rausu and its hot springs on the Nemuro Strait side"
+  ],
+  "seasonalClosures": [
+   "Shiretoko Pass on National Route 334 closes from early November until late April",
+   "The road from Utoro to Shiretoko Goko closes in winter; Shiretoko Goko opens from about 20 April to early November",
+   "Rusa Field House closes from November to April",
+   "Shiretoko Goko's ground path closes at short notice whenever bears are seen near it"
+  ],
+  "seasonalClosureMonths": [
+   11,
+   12,
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "chronology": [
+  {
+   "year": "c. 700s–800s",
+   "text": "The seafaring Okhotsk culture flourishes on the coast and shapes the Ainu reverence for the bear, the fish owl and the orca."
+  },
+  {
+   "year": "1936",
+   "text": "Iōzan erupts molten sulphur."
+  },
+  {
+   "year": "1964",
+   "text": "Shiretoko National Park is designated on 1 June."
+  },
+  {
+   "year": "1977",
+   "text": "Shari town launches the Shiretoko 100 m² movement to buy back the abandoned farmland with donations from across Japan."
+  },
+  {
+   "year": "1980",
+   "text": "Mount Onnebetsu is taken out of the park to become a strictly protected wilderness area."
+  },
+  {
+   "year": "2005",
+   "text": "Shiretoko is inscribed as a World Natural Heritage site, and the park is extended over the surrounding sea."
+  },
+  {
+   "year": "2011",
+   "text": "Shiretoko Goko's lecture and guided-tour rules come into force."
+  },
+  {
+   "year": "2022",
+   "text": "The sightseeing boat Kazu I sinks off the west coast on 23 April; all 26 people aboard are killed or missing."
+  },
+  {
+   "year": "2025",
+   "text": "A hiker is killed by a brown bear on Mount Rausu in August; the trailheads stay closed until July 2026."
+  }
+ ],
+ "safety": [
+  "Brown bears (higuma) live throughout the park at high density, including along the roads and beaches. Carry bear spray, make noise on the trail, never hike alone and never leave food out. A hiker was killed by a bear on Mount Rausu in August 2025, and trails and the Shiretoko Goko ground path close whenever a bear is causing concern — check the latest at a visitor centre.",
+  "The sea here is cold and the wind rises quickly. Only travel on the water with an operator, and accept a cancellation: in April 2022 the tour boat Kazu I sank off the west coast with all 26 aboard.",
+  "Mount Rausu is a long day of more than eight hours with snowfields until late July and fast-changing weather. Iōzan is an active volcano; keep away from fumaroles and steaming ground.",
+  "Shiretoko Pass closes at short notice for snow, and in spring stays closed at night while the road is likely to ice."
+ ],
+ "regulations": [
+  "Never feed bears, foxes or any other wild animal. A bear that learns to take food from people becomes dangerous and has to be killed.",
+  "At Shiretoko Goko, food must be fully sealed, pets are not allowed on either path, and drones may not be flown.",
+  "In the special protection zone, picking plants, collecting fallen branches, catching animals and lighting fires all need a permit; snowmobiles and off-road vehicles are banned from the vehicle-restriction area.",
+  "Private cars are barred from the Kamuiwakka road during the summer restriction; use the shuttle bus from the Shiretoko Nature Center."
+ ],
+ "credits": [
+  "Text written for Unigrids from the Ministry of the Environment's park pages and the sources listed. Photographs from Wikimedia Commons, credited individually.",
+  "Park areas: Ministry of the Environment, Japan (nps.zip, 2026-11-16)",
+  "Visitors: 自然公園等利用者数調, Ministry of the Environment, Japan (2024)"
+ ],
+ "sources": [
+  {
+   "title": "Shiretoko National Park — National Parks of Japan (Ministry of the Environment)",
+   "url": "https://www.japan.travel/national-parks/parks/shiretoko/"
+  },
+  {
+   "title": "知床国立公園 — 環境省",
+   "url": "https://www.env.go.jp/park/shiretoko/index.html"
+  },
+  {
+   "title": "知床国立公園 見どころ・施設 — 国立公園に、行ってみよう！（環境省）",
+   "url": "https://www.env.go.jp/nature/nationalparks/list/shiretoko/spot/"
+  },
+  {
+   "title": "国立公園一覧 — 環境省",
+   "url": "https://www.env.go.jp/park/parks/index.html"
+  },
+  {
+   "title": "Shiretoko Goko Lakes — Ministry of the Environment",
+   "url": "https://www.goko.go.jp/multilingual_eng/index.html"
+  },
+  {
+   "title": "知床国立公園 — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/知床国立公園"
+  },
+  {
+   "title": "Shiretoko National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Shiretoko_National_Park"
+  },
+  {
+   "title": "Shiretoko Peninsula — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Shiretoko_Peninsula"
+  },
+  {
+   "title": "令和８年度 国立公園自動車利用適正化対策等実施計画 — 環境省",
+   "url": "https://www.env.go.jp/park/system/files/np_8.pdf"
+  },
+  {
+   "title": "自然公園法（昭和32年法律第161号）— e-Gov法令検索",
+   "url": "https://laws.e-gov.go.jp/law/332AC0000000161"
+  },
+  {
+   "title": "知床遊覧船沈没事故 — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/知床遊覧船沈没事故"
+  },
+  {
+   "title": "羅臼岳で登山道再開 昨夏のヒグマ事故で閉鎖 — 熊本日日新聞（共同通信）",
+   "url": "https://kumanichi.com/articles/2010189"
+  },
+  {
+   "title": "日本の主な山岳標高一覧（令和8年3月31日）— 国土地理院",
+   "url": "https://www.gsi.go.jp/KOKUJYOHO/MOUNTAIN/1003zan20260331.pdf"
+  },
+  {
+   "title": "Access and Facilities — Shiretoko Goko Lakes (Ministry of the Environment)",
+   "url": "https://www.goko.go.jp/multilingual_eng/access.html"
+  },
+  {
+   "title": "カムイワッカ地区 2026年度 アクセス・カムイワッカ湯ノ滝のぼり案内 — 知床国立公園カムイワッカ地区利用適正化対策協議会",
+   "url": "https://shiretokodata-center.env.go.jp/data/meeting/mycar_kyougi/r08/wakka_R0801_sankou2a.pdf"
+  },
+  {
+   "title": "知床半島 先端部地区とは — 環境省",
+   "url": "https://www.env.go.jp/park/shiretoko/guide/sirecoco/index.html"
+  },
+  {
+   "title": "チャシコツ岬上遺跡 — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/チャシコツ岬上遺跡"
+  },
+  {
+   "title": "自然公園等利用者数調 — Ministry of the Environment",
+   "url": "https://www.env.go.jp/park/doc/data.html"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Shiretoko Goko ground-path lecture",
+   "cost": "¥450",
+   "detail": "Adults 12 and over; children under 12 pay ¥200. Charged outside the bear season, when walkers attend the lecture before entering. The elevated boardwalk is free. Check before you go.",
+   "amount": 450,
+   "currencyCode": "JPY"
+  }
+ ],
+ "hero": {
+  "credit": "Koda6029, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "jp-np-shiretoko-419f7d02d5.jpg",
+  "caption": "Mount Rausu from Shiretoko Goko in autumn",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:%E7%A7%8B%E3%81%AE%E7%9F%A5%E5%BA%8A%E4%BA%94%E6%B9%96%E3%81%8B%E3%82%89%E7%BE%85%E8%87%BC%E5%B2%B3.jpg",
+  "altText": "A lake ringed by autumn forest with a mountain behind",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "Benford Choi, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "jp-np-shiretoko-6c8c9af923.jpg",
+   "caption": "Furepe Falls seeping from the cliffs into the Sea of Okhotsk",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Furepe_Falls_in_Shiretoko_-_panoramio.jpg",
+   "altText": "A thin waterfall running down a sea cliff",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "663highland, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "jp-np-shiretoko-3939acb34d.jpg",
+   "caption": "Mount Rausu, the highest peak on the peninsula",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:140828_Mount_Rausu_Shiretoko_Hokkaido_Japan01s3.jpg",
+   "altText": "A rocky volcanic summit above green slopes",
+   "licence": "CC BY 2.5"
+  },
+  {
+   "credit": "Suicasmo, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "jp-np-shiretoko-2d7df946da.jpg",
+   "caption": "Kunashiri across the Nemuro Strait from the Shiretoko Peninsula",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:View_of_Kunashir_from_Shiretoko_20140811.jpg",
+   "altText": "A long island on the horizon across a strait",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "Shiretoko has short summers and long winters, and the cold Oyashio current running down the east coast brings fog to the Nemuro Strait side. Snow lies on the peaks from autumn into early summer, and the route up Mount Rausu keeps snowfields until late July, so the climbing season is short. In winter the road over the pass closes, and from late January into March drift ice usually packs the Okhotsk coast — the season for drift-ice walks out of Utoro and cruises from Rausu. Weather on the ridges and at sea changes quickly in every season.",
+ "directions": "The nearest airports are Memanbetsu, about 90 minutes from Tokyo Haneda and roughly 100 kilometres from Utoro, with a seasonal bus; and Nakashibetsu, with a bus to Rausu. By rail, take the JR Senmō Main Line to Shiretoko-Shari Station, then a Shari Bus about 40 kilometres along the coast to Utoro, with some buses continuing to Shiretoko Goko. An overnight highway bus runs between Sapporo and Utoro. National Route 334 crosses Shiretoko Pass between Utoro and Rausu from late April to early November. Buses inside the park are infrequent, so most visitors drive or join tours."
+}

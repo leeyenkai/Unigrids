@@ -1,0 +1,154 @@
+{
+ "placeID": "no-np-moysalen",
+ "contentVersion": 1,
+ "story": [
+  "Møysalen National Park protects an intact slice of coastal alpine landscape: steep mountains rising from a fjord, with valleys, cirques, deltas and summits over 1,000 metres. The mountain Møysalen, 1,262 metres, is the highest in Vesterålen and Lofoten and a landmark for miles around. The rock has travelled: the summit was once part of a flat plain at sea level, and the bedrock once lay near the Equator. The earth's crust is unusually thin beneath Lofoten and Vesterålen, and in the last ice age only local glaciers covered these mountains, carving them into the sharp forms seen today.",
+  "Unusually for a Norwegian national park, Møysalen reaches right down to the sea: the fjord arm of Vestpollen, at the head of Øksfjorden, is part of it. The coastal climate is cool and damp, and the valleys and steep slopes are green, with birch woods, ferns and a low tree line. Higher up, the ground is stony and bare, with mountain plants such as moss campion, purple saxifrage and yellow mountain saxifrage.",
+  "The mix of cliffs, seashore and small rodents makes good hunting for birds of prey: white-tailed eagle, golden eagle, gyrfalcon and peregrine all hunt here, and kestrel, merlin and rough-legged buzzard breed. Otters are common along the shore, and the area around Øksfjorden is a core area for moose on Hinnøya. People have left their mark too, with remains from reindeer herding, fishing, farming and old trapping, and traces of old mining near Vestpollen.",
+  "The national park was established on 29 August 2003 to keep this coastal alpine landscape intact, protect its plants and animals and safeguard its cultural heritage, while leaving it open for simple outdoor life and for reindeer herding. It covers 51.2 square kilometres, 1.1 of them sea, and is flanked to the south and west by the slightly larger Møysalen landscape protection area."
+ ],
+ "howItWorks": [
+  "Norway's right to roam, allemannsretten, applies here as on any uncultivated land: you may walk, ski and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland. Dogs must be kept on a lead nationwide from 1 April to 20 August.",
+  "The park's regulation bans motor traffic on land and water and in the air below 300 metres, with an exception for motorboats on Øksfjorden. Motor-driven model aircraft, drones included, model boats and ice augers are not allowed. Cycling and organised riding are allowed only on roads or on routes approved in the management plan. Wildlife and its nests, dens and breeding sites are protected from disturbance; wood may be used for a fire.",
+  "Møysalen is lightly developed: a few marked paths and no open huts. Reindeer herding continues under the regulation. The park is managed by the Møysalen national park board."
+ ],
+ "sightNotes": {
+  "poi-no-moysalen-moysalen": "At 1,262 metres the highest mountain in Vesterålen and Lofoten. Every route to the top crosses a steep summit glacier; the view on a clear day rivals any in Norway.",
+  "poi-no-moysalen-vestpollen": "The sheltered fjord arm at the head of Øksfjorden that brings the park down to the sea; the start of the south-eastern route up Vestpolldalen to the summit.",
+  "poi-no-moysalen-vestpolldalen": "The valley running up from Vestpollen, with seashore meadows at the river mouth and green birch slopes.",
+  "poi-no-moysalen-vestpolltinden": "A peak above Vestpollen; on its south-western side the galleries of an old mine can still be seen.",
+  "poi-no-moysalen-nordtinden": "One of the summits in the eastern part of the park.",
+  "poi-no-moysalen-snytindan": "The cluster of peaks on the park's north-eastern edge, at the meeting of Lødingen, Sortland and Kvæfjord."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Storvatnet on the E10 (Lofast) — now the most used start, with a red-marked path up Forkledalen to Memuruskardet and only cairns above",
+   "Lonkanfjorden, from Kaljord at the end of the Fv822 beyond Hennes — an unmarked but clear path, the south-western approach to the summit",
+   "Vestpollen at the head of Øksfjorden — for the south-eastern route up Vestpolldalen, which the marked path from DNT's Snytindhytta also reaches",
+   "By kayak on the roadless fjords"
+  ],
+  "reservations": "There is no entry reservation or permit, and there are no open huts in the park.",
+  "permits": [
+   "Organised activity that could damage the natural environment needs permission from the national park board",
+   "Hunting and fishing follow the general rules; buy a local licence first"
+  ],
+  "camping": [
+   "Wild camping under the right to roam, at least 150 metres from houses and cabins",
+   "No fires in or near woodland from 15 April to 15 September"
+  ],
+  "lodging": [
+   "No open huts in the park",
+   "DNT's unstaffed Snytindhytta lies a few kilometres north of the park; beds are booked online through ut.no",
+   "Lodging in Lødingen, Sortland and the villages of Vesterålen"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "Last ice age",
+   "text": "Only local glaciers cover these mountains, carving the sharp coastal alpine forms."
+  },
+  {
+   "year": "2003",
+   "text": "Møysalen National Park is established on 29 August."
+  }
+ ],
+ "safety": [
+  "The summit route is long and steep. Start early and turn back if cloud comes down.",
+  "Weather on the coast changes quickly. Carry warm, windproof clothing, a map and a compass.",
+  "There are no open huts. Be self-sufficient, with shelter for an unplanned night out.",
+  "A steep glacier lies between the foresummit and the main summit. Cross it only with glacier experience and equipment, or go with a guide."
+ ],
+ "regulations": [
+  "No motor traffic on land or water and no flying below 300 metres, except motorboats on Øksfjorden.",
+  "No drones, motorised model boats or ice augers.",
+  "Cycling and organised riding only on roads and approved routes.",
+  "Take all rubbish home, and keep dogs on a lead from 1 April to 20 August."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Møysalen nasjonalpark — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/moysalen/"
+  },
+  {
+   "title": "Møysalen nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00002196"
+  },
+  {
+   "title": "Forskrift om vern av Møysalen nasjonalpark (FOR-2003-08-29-1100) — Lovdata",
+   "url": "https://lovdata.no/dokument/LF/forskrift/2003-08-29-1100"
+  },
+  {
+   "title": "Møysalen nasjonalpark — Møysalen nasjonalparkstyre",
+   "url": "https://moysalennasjonalpark.no/"
+  },
+  {
+   "title": "Innfallsporter og startsteder — Møysalen nasjonalparkstyre",
+   "url": "https://moysalennasjonalpark.no/opplevel-moysalen/innfallsporter-og-startsteder/"
+  },
+  {
+   "title": "På tur i Møysalen — Møysalen nasjonalparkstyre",
+   "url": "https://moysalennasjonalpark.no/opplevel-moysalen/pa-tur-i-moysalen/"
+  },
+  {
+   "title": "Vegetasjon og dyreliv — Møysalen nasjonalparkstyre",
+   "url": "https://moysalennasjonalpark.no/vegetasjon-og-dyreliv/"
+  },
+  {
+   "title": "Møysalen National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/M%C3%B8ysalen_National_Park"
+  },
+  {
+   "title": "Møysalen nasjonalpark — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/M%C3%B8ysalen_nasjonalpark"
+  },
+  {
+   "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+   "url": "https://ws.geonorge.no/stedsnavn/v1/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Christergundersen, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "no-np-moysalen-a954a88ddd.jpg",
+  "caption": "Møysalen seen from Kleiva",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:M%C3%B8ysalen_.jpg",
+  "altText": "A tall snow-streaked mountain rising above lower green hills and water",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "Ximonic (Simo Räsänen), via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-moysalen-151914811f.jpg",
+   "caption": "Møysalen in evening light, from the west",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:M%C3%B8ysalen_in_evening_light_from_Hold%C3%B8ya,_Nordland,_Norway,_2015_September.jpg",
+   "altText": "A pointed mountain lit by low sun beyond a stretch of sea",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "Tomgaasen, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-moysalen-585d447397.jpg",
+   "caption": "On the way up Møysalen",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:M%C3%B8ysalen,_Vester%C3%A5len,_Norway.jpg",
+   "altText": "A rocky mountain slope with patches of snow and a view over fjords",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Wolfgang Hägele, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-moysalen-3fd7e2f2e9.jpg",
+   "caption": "Møysalen from the E10 at Myrland",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Moysalen_3.jpg",
+   "altText": "A massive mountain with a sharp summit above a valley",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "Møysalen lies at 68° North and has a coastal climate: cool, damp and changeable. Summer brings the midnight sun and the best chance of a clear day on top; snow lingers on the high ground into early summer.",
+ "directions": "Møysalen lies on south-western Hinnøya in Vesterålen, just north of Lofoten. No railway reaches the islands. The E10 Lofast road, opened in 2007, passes a few kilometres south of the park, crossing Øksfjorden at Husjordøya, and roads and ferries reach the fjords all round Møysalen. The nearest towns are Sortland and Lødingen. Check Entur for buses."
+}

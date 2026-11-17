@@ -1,0 +1,256 @@
+{
+ "placeID": "jp-np-chichibu-tama-kai",
+ "contentVersion": 1,
+ "story": [
+  "Okuchichibu is a block of high, deeply cut mountains about 70 kilometres from east to west and 40 from north to south. Kita-Okusenjō (北奥千丈岳, 2,601 metres) is its highest point, and a chain of 2,000-metre summits runs along its main ridge — Kimpu, Kobushi, Kumotori. The ridge is a watershed: the Arakawa, the Tama, the Fuefuki, which becomes the Fuji, and the Chikuma, which becomes the Shinano, all rise here, and their headwaters have carved steep V-shaped valleys into it. Where granite reaches the surface, at Mizugaki-yama and Shōsenkyō, water and weather have worked it into spires and gorges.",
+  "Forest is the park's real subject. Conifers cover much of the high ridge, and Kimpu is the only summit in Okuchichibu that rises clear of the trees, into a cap of creeping pine (haimatsu). Dogtooth violets (katakuri) flower on Mount Gozen in early spring, rhododendrons crowd Jūmonji Pass in June, and in August rengeshōma blooms in large numbers on Mount Mitake. Japanese serow, a Special Natural Monument, and giant flying squirrels live in the woods, and Asian black bears range through them.",
+  "The mountains were sacred long before they were a park. Musashi-Mitake Shrine on Mount Mitake dates its worship of Zaō Gongen to 736, and both it and Mitsumine Shrine in the Chichibu hills keep the wolf, Ōkuchi-no-Magami, as the mountain's messenger; at Mitsumine, wolf statues stand where other shrines have lion-dogs. On Mitake, families of the shrine's hereditary priests still run pilgrim lodgings (shukubō). In the twentieth century the scholar and mountaineer Tabe Jūji made these forested valleys famous among walkers; he came to prefer, he wrote, valleys to summits and deep forest to snow.",
+  "What the park protects is also what Tokyo drinks. In 1901 Tokyo took over forest on the upper Tama to safeguard its water, and its waterworks still manages nearly 26,000 hectares there; in 1911 Emperor Meiji gave Yamanashi most of its imperial forest after a run of ruinous floods. The national park was designated in 1950 as Chichibu-Tama. Seven years later the Ogōchi Dam closed off the upper Tama to form Lake Okutama, displacing 945 households. In 2000 Yamanashi, which holds the largest share of the park, had its old province name, Kai, added to the park's."
+ ],
+ "howItWorks": [
+  "Like every Japanese national park, Chichibu-Tama-Kai is a zoning plan laid over land that others own and use, not a fenced reserve. Only about 11 per cent of its 126,259 hectares is national land; nearly half is held by public bodies — above all Yamanashi's prefectural forest and the Tokyo waterworks' catchment forest — and about 40 per cent is private. Eight cities, three towns and four villages lie partly inside it, and roads, farming hamlets, shrines with their pilgrim lodgings, campsites and Lake Okutama all sit within the boundary.",
+  "The Ministry of the Environment grades the land by how strictly it is protected. The special protection zone (特別保護地区), about 3,800 hectares, is the strictest: without a permit nothing may be picked or collected there — not even fallen leaves or branches — no animal caught or harmed, and no fire lit. Special zones of three classes, about 52,700 hectares, control building, felling and changes to the landscape, and protect listed plants and animals from collection. The ordinary zone, about 70,000 hectares or 55 per cent of the park, is the loosest: only large works there must be notified.",
+  "For a visitor the practical rule is the same everywhere: keep to the trails, take nothing, feed no animals and carry your rubbish home. Each prefecture manages its own side — forest roads, trail closures, bear warnings — so the authority to check depends on where you start: Tokyo and Okutama town for the Tama side, Saitama for Chichibu, Yamanashi for the south and west, Nagano for the Kawakami side."
+ ],
+ "sightNotes": {
+  "poi-jp-chichibu-tama-kai-mount-kimpu": "The 2,599-metre crown of the range and its only summit above the tree line, with creeping pine and a clear view south to Mount Fuji.",
+  "poi-jp-chichibu-tama-kai-nishizawa-gorge": "A loop through old forest past waterfall after waterfall to Nanatsugama Godan-no-taki, a five-tiered fall named among Japan's hundred finest.",
+  "poi-jp-chichibu-tama-kai-mitake-shosenkyo": "A granite gorge north of Kōfu, a Special Place of Scenic Beauty, ending at Sengataki Falls. A ropeway climbs to a lookout with Mount Fuji on clear days.",
+  "poi-jp-chichibu-tama-kai-mount-kumotori": "Tokyo's highest summit, 2,017 metres, where Tokyo, Saitama and Yamanashi meet. Long trails climb it from Kamozawa on the Okutama side and from Mitsumine Shrine.",
+  "poi-jp-chichibu-tama-kai-mount-mitake": "A 929-metre sacred mountain reached by cable car, with a village of pilgrim lodgings around Musashi-Mitake Shrine and waterfall trails beyond.",
+  "poi-jp-chichibu-tama-kai-mitsumine-shrine": "A mountain shrine in the Chichibu hills where wolves stand guard in stone, and the start of the long ridge walk to Kumotori.",
+  "poi-jp-chichibu-tama-kai-daibosatsu-pass": "A 1,897-metre saddle on an open grassy ridge below Daibosatsu-rei, looking over the Kōfu basin to the Southern Alps and Mount Fuji.",
+  "poi-jp-chichibu-tama-kai-mitake-valley": "The clear upper Tama River near Mitake Station, with riverside paths on both banks and white water used for rafting and kayaking."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Mitake and Okutama, at the end of the JR Ōme Line — the Tokyo side",
+   "Mitsumine Shrine, by bus from Seibu-Chichibu — the Saitama side",
+   "Mitake-Shōsenkyō and Nishizawa Gorge, by bus from Kōfu and Yamanashishi on the JR Chūō Line — the Yamanashi side",
+   "Kawakami village, for Mount Kobushi and Jūmonji Pass — the Nagano side"
+  ],
+  "reservations": "The park needs no entry booking. Mountain huts and the pilgrim lodgings on Mount Mitake take reservations, and buses into the interior are few, with some running only in season — check timetables with the bus operators and bookings with the huts before you go.",
+  "permits": [
+   "No permit is needed to walk in the park",
+   "Nagano Prefecture's mountain-safety ordinance requires a climbing plan (登山計画書) for its designated trails, which include its side of Okuchichibu; elsewhere filing one is strongly advised, and the online Compass system is accepted"
+  ],
+  "camping": [
+   "Yama-no-Furusato-mura, a Tokyo metropolitan park beside Lake Okutama, has a tent site and log cabins",
+   "Further campsites in the valleys on the Tokyo, Saitama and Yamanashi sides"
+  ],
+  "lodging": [
+   "Pilgrim lodgings (shukubō) run by the families of Musashi-Mitake Shrine's priests on Mount Mitake",
+   "Mountain huts on the main ridge, such as Kumotori Sansō below Mount Kumotori",
+   "Inns and guesthouses in Okutama, Chichibu and the Kōfu basin"
+  ],
+  "seasonalClosures": [
+   "Nishizawa Gorge's trail closes from 1 December to about the end of April — check with the Yamanashi City Tourism Association before you go",
+   "The forest road to Ōdarumi Pass, the nearest road to Kita-Okusenjō, closes from 1 December to the end of May — check with Yamanashi Prefecture before you go",
+   "Trails can close at short notice after bear encounters — check Okutama town and Tokyo Metropolitan Government notices before you go"
+  ],
+  "seasonalClosureMonths": [
+   12,
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "chronology": [
+  {
+   "year": "736",
+   "text": "By the shrine's account, the monk Gyōki enshrines Zaō Gongen on Mount Mitake."
+  },
+  {
+   "year": "1901",
+   "text": "Tokyo takes over forest on the upper Tama to protect its water supply."
+  },
+  {
+   "year": "1911",
+   "text": "Emperor Meiji gives most of Yamanashi's imperial forest to the prefecture after ruinous floods."
+  },
+  {
+   "year": "1950",
+   "text": "Chichibu-Tama National Park is designated on 10 July."
+  },
+  {
+   "year": "1953",
+   "text": "Mitake-Shōsenkyō, a Place of Scenic Beauty since 1923, is raised to a Special Place of Scenic Beauty."
+  },
+  {
+   "year": "1957",
+   "text": "The Ogōchi Dam is completed on the upper Tama, creating Lake Okutama."
+  },
+  {
+   "year": "2000",
+   "text": "The park is renamed Chichibu-Tama-Kai on 10 August, at the request of Yamanashi Prefecture."
+  }
+ ],
+ "safety": [
+  "Asian black bears live throughout the park, and sightings in Tokyo have been rising; attacks on hikers in Okutama have closed trails. Carry a bell, walk in company and check Tokyo's TOKYOくまっぷ sighting map and current trail closures before you go.",
+  "Rain is heaviest from June to October and typhoons bring downpours in late summer. Gorge trails flood and rocks fall after heavy rain; stay out of the valleys when it is forecast.",
+  "From December the high ridge is icy and its forest roads close. Winter walking above 2,000 metres needs crampons and experience; at any season, start early and carry a map, a light and warm layers."
+ ],
+ "regulations": [
+  "In the special protection zone nothing may be picked or collected — not even fallen leaves or branches — no animal caught or harmed, and no fire lit without a permit.",
+  "Listed plants and animals may not be collected anywhere in the park's special zones.",
+  "Keep to the trails, carry all rubbish home, and remove soil and seeds from boots and clothing before you enter the park.",
+  "Do not feed or chase wild animals: fed animals grow used to people."
+ ],
+ "credits": [
+  "Text written for Unigrids from the Ministry of the Environment's park pages and the sources listed. Photographs from Wikimedia Commons, credited individually.",
+  "Park areas: Ministry of the Environment, Japan (nps.zip, 2026-11-16)",
+  "Visitors: 自然公園等利用者数調, Ministry of the Environment, Japan (2024)"
+ ],
+ "sources": [
+  {
+   "title": "Chichibu-Tama-Kai National Park — National Parks of Japan",
+   "url": "https://www.japan.travel/national-parks/parks/chichibu-tama-kai/"
+  },
+  {
+   "title": "Explore Chichibu-Tama-Kai National Park — National Parks of Japan",
+   "url": "https://www.japan.travel/national-parks/parks/chichibu-tama-kai/explore/"
+  },
+  {
+   "title": "How to get there: Chichibu-Tama-Kai — National Parks of Japan",
+   "url": "https://www.japan.travel/national-parks/parks/chichibu-tama-kai/how-to-get-there/"
+  },
+  {
+   "title": "秩父多摩甲斐国立公園 — 環境省",
+   "url": "https://www.env.go.jp/park/chichibu/"
+  },
+  {
+   "title": "秩父多摩甲斐国立公園 概要・計画書 — 環境省",
+   "url": "https://www.env.go.jp/park/chichibu/intro/index.html"
+  },
+  {
+   "title": "秩父多摩甲斐国立公園 見どころ・施設 — 環境省",
+   "url": "https://www.env.go.jp/nature/nationalparks/list/chichibu-tama-kai/spot/"
+  },
+  {
+   "title": "国立公園の保護と利用 — 環境省",
+   "url": "https://www.env.go.jp/park/about/protect/index.html"
+  },
+  {
+   "title": "自然公園法 — e-Gov法令検索",
+   "url": "https://laws.e-gov.go.jp/law/332AC0000000161"
+  },
+  {
+   "title": "Rules for Using Natural Parks — Tokyo Metropolitan Government",
+   "url": "https://www.kankyo1.metro.tokyo.lg.jp/naturepark/english/know/rule/sakutei.html"
+  },
+  {
+   "title": "ツキノワグマ被害防止のためハンターによる巡回を実施 — 東京都",
+   "url": "https://www.metro.tokyo.lg.jp/information/press/2026/05/2026051501"
+  },
+  {
+   "title": "山梨県の県有林（恩賜林） — 山梨県",
+   "url": "https://www.pref.yamanashi.jp/miryoku/shizen/mori/kenyurin.html"
+  },
+  {
+   "title": "県営林道川上牧丘線 通行規制情報 — 山梨県",
+   "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=61"
+  },
+  {
+   "title": "西沢渓谷 — 山梨市観光協会",
+   "url": "https://www.yamanashishi-kankou.com/nature/nishizawa_keikoku/"
+  },
+  {
+   "title": "登山計画書を届出しましょう — 長野県",
+   "url": "https://www.pref.nagano.lg.jp/kankoki/smartphone/tozankeikakusho.html"
+  },
+  {
+   "title": "過去の気象データ: 秩父 平年値 — 気象庁",
+   "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=43&block_no=47641&year=&month=&day=&view="
+  },
+  {
+   "title": "Chichibu Tama Kai National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Chichibu_Tama_Kai_National_Park"
+  },
+  {
+   "title": "秩父多摩甲斐国立公園 — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/秩父多摩甲斐国立公園"
+  },
+  {
+   "title": "奥秩父山塊 — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/奥秩父山塊"
+  },
+  {
+   "title": "奥多摩湖 — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/奥多摩湖"
+  },
+  {
+   "title": "Lake Okutama — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Lake_Okutama"
+  },
+  {
+   "title": "水源林の歴史 — 東京都水道局 水道水源林ポータルサイト",
+   "url": "https://www.mizufuru.waterworks.metro.tokyo.lg.jp/overview/history/"
+  },
+  {
+   "title": "ツキノワグマへの対策について — 奥多摩町",
+   "url": "https://www.town.okutama.tokyo.jp/gyosei/6/kankojoho/4157.html"
+  },
+  {
+   "title": "山のふるさと村 — 東京都",
+   "url": "https://www.yamafuru.com/"
+  },
+  {
+   "title": "日本の主な山岳標高 — 国土地理院",
+   "url": "https://www.gsi.go.jp/kihonjohochousa/kihonjohochousa41139.html"
+  },
+  {
+   "title": "金峰山 (山梨県・長野県) — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/金峰山_(山梨県・長野県)"
+  },
+  {
+   "title": "田部重治 — Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/田部重治"
+  },
+  {
+   "title": "自然公園等利用者数調 — Ministry of the Environment",
+   "url": "https://www.env.go.jp/park/doc/data.html"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Σ64, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "jp-np-chichibu-tama-kai-ca788fb007.jpg",
+  "caption": "Mount Kimpu from Kita-Okusenjō, the park's highest summit",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Mt.Kimpu_from_Mt.Kitaokusenjodake_01.jpg",
+  "altText": "A rocky mountain summit rising above dark conifer forest under a blue sky",
+  "licence": "CC BY 3.0"
+ },
+ "gallery": [
+  {
+   "credit": "Captain76, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "jp-np-chichibu-tama-kai-64f55c553a.jpg",
+   "caption": "Kakuenpō, a granite crag above Mitake-Shōsenkyō, in autumn",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Kakuenpou_in_autumn.jpg",
+   "altText": "A pale granite tower rising above trees in red and yellow autumn colour",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "shinohal, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "jp-np-chichibu-tama-kai-e231f0d8cf.jpg",
+   "caption": "Nanatsugama Godan-no-taki in Nishizawa Gorge",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:%E4%B8%83%E3%83%84%E9%87%9C%E4%BA%94%E6%AE%B5%E3%81%AE%E6%BB%9D_-_Nanatsugamagodan-no-taki_waterfall_-_panoramio.jpg",
+   "altText": "A waterfall dropping in several steps into green pools among forest",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "Carbonium, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "jp-np-chichibu-tama-kai-61a94ae814.jpg",
+   "caption": "Mitsumine Shrine in the Chichibu hills",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Mitsumine_Shrine_-_%E4%B8%89%E5%B3%AF%E7%A5%9E%E7%A4%BE_-_panoramio_(16).jpg",
+   "altText": "An ornate shrine building among tall cedar trees",
+   "licence": "CC BY 3.0"
+  }
+ ],
+ "weather": "The park climbs from river gorges to summits above 2,500 metres, so its valleys and ridges keep different seasons. In Chichibu, the gateway town on the Saitama side, August averages about 25°C with afternoon highs near 31°C, and January about 2°C. Rain falls mostly from June to October, heaviest in September when typhoons pass; winter is dry. The high ridge is far colder, and ice closes its forest roads from December. Katakuri flower in early spring, rhododendrons on the ridges in June, rengeshōma on Mitake in August, and autumn colour reaches Lake Okutama in the first half of November.",
+ "directions": "Each corner of the park has its own railhead. For Mount Mitake, take the JR Chūō Line from Shinjuku to Ōme, change to the Ōme Line for Mitake Station, and ride a Nishi Tokyo Bus to the foot of the cable car; the Ōme Line ends at Okutama Station, the start for Lake Okutama and Mount Kumotori. For Mitsumine Shrine, take the Seibu Ikebukuro Line from Ikebukuro to Seibu-Chichibu, then a bus of about 75 minutes. On the Yamanashi side, the JR Chūō Line reaches Kōfu, with buses to Shōsenkyō, and Yamanashishi, with buses of about an hour to Nishizawa Gorge. Buses into the interior are infrequent; a car helps on the forest roads that cross the middle of the park."
+}

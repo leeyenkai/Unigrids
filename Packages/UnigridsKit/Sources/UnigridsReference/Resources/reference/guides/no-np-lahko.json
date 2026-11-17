@@ -1,0 +1,123 @@
+{
+ "placeID": "no-np-lahko",
+ "contentVersion": 1,
+ "story": [
+  "Láhko is a landscape made by water dissolving rock. Its mountains hold the largest continuous area of alpine karst in Norway: soft limestone that rain and snowmelt eat into year after year, leaving grooved pavements, odd sculpted shapes, boulders that seem to balance on nothing, sinkholes and caves. In Corbels canyon the cave country under the ground breaks the surface. Most of the park lies above the tree line, and its lowest points are about 330 metres above the sea.",
+  "The soft, lime-rich rock feeds a rich flora: more than 200 plant species have been recorded, many of them threatened or near threatened, and in summer the heaths fill with colour. The lakes are lime lakes, and several are stonewort lakes, a national stronghold for these unusual algae. Rough-legged buzzard, long-tailed skua, golden plover, ringed plover and dotterel nest in the park.",
+  "The name is Lule Sámi, and Sámi heritage runs through the park: there are Sámi cultural sites, and the Saltfjellet reindeer-grazing district uses the area for its herds. Láhko is also a well-loved outing for people from Gildeskål and Meløy, and local hunting and fishing clubs keep cabins by the lakes in the north. Around the park lie large hydropower reservoirs, but inside it there are few traces of construction.",
+  "Planning for protection of the area began in 2008, and the national park was established on 14 December 2012, covering about 188 square kilometres in Gildeskål, Meløy and Beiarn. Its regulation names the karst and its caves, the lime and stonewort lakes and the rich plant life as the reasons for protection, along with the natural basis for Sámi culture. In the south it touches Saltfjellet-Svartisen National Park at a single point on the summit of Nordre Glomvassfjellet."
+ ],
+ "howItWorks": [
+  "Norway's right to roam, allemannsretten, applies here as on any uncultivated land: you may walk, ski and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland. Dogs must be kept on a lead nationwide from 1 April to 20 August.",
+  "The park's regulation protects the landscape from all works and forbids breaking or removing rock, minerals and fossils — the karst formations wear quickly under boots, so the park asks walkers to keep to the marked paths. Cycling and organised riding are allowed only on existing paths and tracks. Motor traffic is banned on land and water and in the air below 300 metres, and motor-driven model aircraft, drones included, and motorised ice augers are not allowed. Animals and their nests and dens are protected; wood may be used carefully for a fire.",
+  "Reindeer herding goes on throughout the park under the regulation, with the motor-traffic exemptions it needs, and the local hunting and fishing associations' cabins by the northern lakes can be rented. The park is managed by the Midtre Nordland national park board."
+ ],
+ "sightNotes": {
+  "poi-no-lahko-corbels-canyon": "A cleft in the karst where the cave system beneath the mountain shows at the surface.",
+  "poi-no-lahko-lahko": "A karst basin in the high limestone country at the heart of the park, bearing the park's Lule Sámi name.",
+  "poi-no-lahko-svalvatnet": "A lake in the south-west of the park, among low alpine heaths and late snowbeds.",
+  "poi-no-lahko-store-sandvatnet": "A lake on the park's western side, near Svalvatnet.",
+  "poi-no-lahko-nordre-glomvassfjellet": "The summit where Láhko meets Saltfjellet-Svartisen National Park at a single point."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "From the Gildeskål side, about an hour's drive south of Bodø",
+   "The park spans Gildeskål, Meløy and Beiarn municipalities; ask locally about the best starting points"
+  ],
+  "reservations": "There is no entry reservation or permit. Cabins belonging to the local hunting and fishing associations can be rented.",
+  "permits": [
+   "Organised activity that could damage the natural environment needs permission from the national park board",
+   "Fishing and hunting follow the general rules; buy a local licence first"
+  ],
+  "camping": [
+   "Wild camping under the right to roam, at least 150 metres from huts and houses",
+   "No fires in or near woodland from 15 April to 15 September"
+  ],
+  "lodging": [
+   "Rental cabins of the local hunting and fishing associations by the northern lakes",
+   "Lodging in Gildeskål, Meløy and Bodø"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "2008",
+   "text": "Work begins on a protection plan for the mountains."
+  },
+  {
+   "year": "2010",
+   "text": "The county governor recommends a national park."
+  },
+  {
+   "year": "2012",
+   "text": "Láhko National Park is established on 14 December."
+  }
+ ],
+ "safety": [
+  "Karst ground is full of fissures, holes and sharp edges, some hidden by snow or vegetation. Watch every step, especially in fog or snow.",
+  "Do not enter caves without proper equipment and experience; they can flood quickly with meltwater or rain.",
+  "Weather changes fast this close to the coast. Carry warm, waterproof clothing, a map and a compass."
+ ],
+ "regulations": [
+  "Do not break, remove or damage rock, minerals, fossils or karst formations; keep to marked paths.",
+  "No motor traffic on land or water and no flying below 300 metres; drones and motor ice augers are banned.",
+  "Cycling and organised riding only on existing paths and tracks.",
+  "Dogs on a lead from 1 April to 20 August, as everywhere in Norway, and under control near reindeer."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Láhko nasjonalpark — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/lahko/"
+  },
+  {
+   "title": "Láhko nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00003061"
+  },
+  {
+   "title": "Forskrift om vern av Láhko nasjonalpark (FOR-2012-12-14-1314) — Lovdata",
+   "url": "https://lovdata.no/dokument/LF/forskrift/2012-12-14-1314"
+  },
+  {
+   "title": "Láhko National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/L%C3%A1hko_National_Park"
+  },
+  {
+   "title": "Láhko nasjonalpark — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/L%C3%A1hko_nasjonalpark"
+  },
+  {
+   "title": "Besøkssentre — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/besokssentre/"
+  },
+  {
+   "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+   "url": "https://ws.geonorge.no/stedsnavn/v1/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Tore Veisetaune, Statskog Fjelltjenesten, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "no-np-lahko-6f02f3fe39.jpg",
+  "caption": "Looking towards Láhko from Skavldalen",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Utsikt_mot_Lahku_nasjonalpark_fra_Skavldalen.jpg",
+  "altText": "A rugged pale mountain plateau seen across a valley",
+  "licence": "CC BY-SA 2.0"
+ },
+ "gallery": [
+  {
+   "credit": "Håkon Holien, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-lahko-930adaecb0.jpg",
+   "caption": "A milkcap fungus in a snowbed between Store Sandvatnet and Svalvatnet",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Lactarius_salicis-herbaceae_(Nordland,_Norway).jpg",
+   "altText": "A small pale mushroom among low dwarf willow on the ground",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "The park lies north of the Arctic Circle, not far from the coast, and the weather can change quickly; snow lies late on the high ground and returns early. Summer, with its long light, is the time to walk the karst and see the flowers. Fog can settle on the plateau quickly, and the fissured ground is hard going when visibility is poor.",
+ "directions": "Láhko lies midway between Bodø and Mo i Rana. By car it is about an hour's drive south from Bodø; by public transport, take the express boat from Bodø, about an hour and a half, and a taxi for the last stretch. Check Entur for boat timetables."
+}

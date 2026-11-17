@@ -1,0 +1,156 @@
+{
+ "placeID": "no-np-rago",
+ "contentVersion": 1,
+ "story": [
+  "Rago is granite country. Hard granite and granitic gneiss, slow to weather, have been scraped smooth by the ice into bare, rounded slabs, and great boulders left by the glaciers lie scattered across the land. The main valley, Storskogdalen, runs north-east along the park's northern edge, its river falling in a string of rapids and waterfalls between pine-clad slopes and steep crags. Above it, the lake Litlverivatnet empties straight over the mountainside in Litlverivassforsen, a fall of 223 metres, and in the south the high ground of Lappfjellet carries small glaciers and snow that lies all year.",
+  "Unlike the Swedish parks across the border, Rago has a coastal climate: plenty of rain and snow, cool summers and mild winters. Its thin, poor soils give a sparse but varied vegetation. In places the pine forest is very old, with a great deal of dead wood, and in the forest by Storskogvatnet 20 red-listed species of fungi have been found on old and fallen pines — one reason fallen trees must not go on the fire. Wolverines den in the park, moose wander through, and golden eagles and willow grouse are often seen.",
+  "Sámi reindeer herders have long used these mountains on the migration between Sweden and the summer pastures by the coast, and the park still serves as reindeer grazing land. Old cairned routes lead east over the high ground into Sweden. Rago is still close to untouched: there are marked paths and bridges over the largest rivers, but little else, and the park offers simple outdoor life — a day walk to Litlverivassforsen, fishing and berry picking, or several nights in a tent on the loop known as Ragorunden.",
+  "Rago was created by royal decree on 22 January 1971 to represent an untouched Nordland mountain landscape with its own wildlife, on the border with Sweden's Padjelanta National Park. Together with Padjelanta, Sarek and Stora Sjöfallet it now forms one of the largest connected protected wilderness areas in Europe. The 1971 decree put its area at about 171 square kilometres; the regulation, given a new boundary map in 2021, now states about 162."
+ ],
+ "howItWorks": [
+  "Norway's right to roam, allemannsretten, applies here as on any uncultivated land: you may walk, ski and pitch a tent without asking, provided you camp at least 150 metres from the nearest house or cabin and leave no trace. From 15 April to 15 September it is illegal across Norway to light a fire in or near woodland. Dogs must be kept on a lead nationwide from 1 April to 20 August.",
+  "Rago's regulation dates from 1971 and is short. The landscape is protected from roads, buildings, mining and other works. All plants, living and dead trees included, are protected: use only twigs and branches for a fire and never fell or cut trees for firewood. Berry picking is allowed. Wild mammals and birds and their nests are protected, apart from hunting of ptarmigan, hare, mink and red fox under the general rules. Motor traffic on land and water and landing with aircraft are banned except for emergencies and for reindeer herding with permission, so electric bicycles are not allowed either.",
+  "Rago is for self-reliant walkers: there are marked paths and bridges over the biggest rivers, but little else. The park is managed by the Midtre Nordland national park board, and the Sámi reindeer-herding district uses it for grazing."
+ ],
+ "sightNotes": {
+  "poi-no-rago-litlverivassforsen": "The lake Litlverivatnet pours straight over the mountainside into Storskogdalen in a fall of 223 metres. A day walk from the road.",
+  "poi-no-rago-storskogdalen": "The main valley, with its river falling in rapids and waterfalls between old pine forest and steep crags.",
+  "poi-no-rago-storskogvatnet": "A lake ringed by old pine forest, where 20 red-listed fungi grow on dead and fallen trees.",
+  "poi-no-rago-litlverivatnet": "The lake above Litlverivassforsen, set in bare, ice-smoothed granite.",
+  "poi-no-rago-storskogtinden": "The summit rising directly above Storskogvatnet.",
+  "poi-no-rago-lappfjellet": "The high ground in the south of the park, with small glaciers and snow that lies all year.",
+  "poi-no-rago-lakshol": "The farm west of the park, at the end of the road from the E6, where the path up Storskogdalen to Storskogvatnet begins."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Lakshol, at the end of the road east from the E6 — for Storskogdalen, Litlverivassforsen and Storskogvatnet",
+   "From Sweden over the border from Padjelanta, on foot"
+  ],
+  "reservations": "There is no entry reservation or permit.",
+  "permits": [
+   "Hunting is limited to ptarmigan, hare, mink and red fox; fishing follows the general rules — buy a local licence first",
+   "Any exemption from the regulation needs the management authority's permission"
+  ],
+  "camping": [
+   "Wild camping under the right to roam, at least 150 metres from huts and houses",
+   "Use only twigs and branches for a fire, and no fires in or near woodland from 15 April to 15 September"
+  ],
+  "lodging": [
+   "Very little is laid on inside the park: plan to carry a tent",
+   "Lodging in Straumen and the villages of Sørfold"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1909",
+   "text": "Sweden creates Sarek National Park across the border, among the first national parks in Europe."
+  },
+  {
+   "year": "1971",
+   "text": "Rago National Park is established on 22 January, bordering Padjelanta."
+  },
+  {
+   "year": "1996",
+   "text": "Padjelanta, Sarek and Stora Sjöfallet become part of the Laponia World Heritage Site."
+  },
+  {
+   "year": "2021",
+   "text": "Rago's regulation is updated with a new boundary map and now gives the area as about 162 square kilometres."
+  }
+ ],
+ "safety": [
+  "Rivers rise fast after rain or on warm days of snowmelt. Use the bridges, and do not attempt fords in high water.",
+  "Ice-smoothed slabs are treacherous when wet. Take care on steep rock.",
+  "Rago is remote, with no staffed huts. Carry a tent, a map and compass, and food for longer than you plan.",
+  "Stay well back from the edges of the waterfalls; the rock beside them is slippery with spray."
+ ],
+ "regulations": [
+  "No motor traffic on land or water and no aircraft landings; no electric bicycles.",
+  "Never fell or cut trees, living or dead, for a fire; use twigs and branches.",
+  "Wildlife and nests are protected; only ptarmigan, hare, mink and red fox may be hunted.",
+  "Dogs on a lead from 1 April to 20 August, as everywhere in Norway, and under control near reindeer."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Norges nasjonalparker (Miljødirektoratet) and the sources below.",
+  "Park outline and official names: Naturvernområder, Miljødirektoratet, under the Norwegian Licence for Open Government Data (NLOD) 2.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Rago nasjonalpark — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/nasjonalparker/rago/"
+  },
+  {
+   "title": "Rago nasjonalpark — Naturbase faktaark, Miljødirektoratet",
+   "url": "https://faktaark.naturbase.no/?id=VV00000130"
+  },
+  {
+   "title": "Forskrift om Rago nasjonalpark, Sørfold (FOR-1971-01-22-95) — Lovdata",
+   "url": "https://lovdata.no/dokument/LF/forskrift/1971-01-22-95"
+  },
+  {
+   "title": "Rago nasjonalpark — Midtre Nordland nasjonalparkstyre",
+   "url": "https://ragonasjonalpark.no/"
+  },
+  {
+   "title": "Rago National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Rago_National_Park"
+  },
+  {
+   "title": "Rago nasjonalpark — Wikipedia (bokmål)",
+   "url": "https://no.wikipedia.org/wiki/Rago_nasjonalpark"
+  },
+  {
+   "title": "Sarek National Park; Padjelanta National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Sarek_National_Park"
+  },
+  {
+   "title": "Besøkssentre — Norges nasjonalparker",
+   "url": "https://www.norgesnasjonalparker.no/besokssentre/"
+  },
+  {
+   "title": "Sentralt stedsnavnregister — Kartverket (coordinates)",
+   "url": "https://ws.geonorge.no/stedsnavn/v1/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Frankemann, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "no-np-rago-5697225752.jpg",
+  "caption": "Storskogdalen and its river",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Storskogdalen_with_Storskogelva_flowing_down.jpg",
+  "altText": "A river running down a rocky valley between pine-covered slopes and bare granite",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "SiberianJay, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-rago-75a76f4a12.jpg",
+   "caption": "Litlverivatnet and the top of Litlverivassforsen",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Bassej%C3%A1vrre-8968.jpg",
+   "altText": "A mountain lake spilling over the edge of a granite slope",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "SiberianJay, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-rago-07a4fa4b8d.jpg",
+   "caption": "The outlet of Storskogvatnet",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Storskogvatnet-7776.jpg",
+   "altText": "A lake narrowing into a river among pine trees and rock",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "SiberianJay, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "no-np-rago-65664931c4.jpg",
+   "caption": "The bridge over Storskogelva",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Rago-2010-4520.jpg",
+   "altText": "A footbridge over a rushing river in a wooded valley",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "Rago has a coastal climate, wetter and milder in winter and cooler in summer than the Swedish parks next door. Rain and snowmelt can turn small streams into big rivers within hours. Summer and early autumn are the walking seasons; snow lingers late on Lappfjellet and the high ground, and returns early.",
+ "directions": "Rago lies about an hour and a half's drive east of Bodø, just east of the E6 about 10 kilometres north-east of the village of Straumen in Sørfold. The nearest railway station is Fauske on the Nordland Line; public transport onward is limited, so check Entur for buses along the E6. The trailhead at Lakshol is at the end of a side road from the E6."
+}
