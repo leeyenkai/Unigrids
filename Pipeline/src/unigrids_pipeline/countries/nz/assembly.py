@@ -314,6 +314,10 @@ def _national_park(
         "facts": norway._facts(place_id, guide, report),
         "passportRegion": park["passportRegion"],
     }
+    # A guide's area is the park's own page's; where the guide gives none, DOC's recorded
+    # area for the land is the next authority, never the drawing's measured area.
+    if "areaHectares" not in place["facts"] and (hectares := area.recorded_hectares):
+        place["facts"]["areaHectares"] = round(hectares)
     if park["passportRegion"] not in rules.PASSPORT_REGIONS:
         report.add("parks with an unknown passport region", place_id)
     if official:

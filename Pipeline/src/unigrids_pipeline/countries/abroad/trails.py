@@ -188,7 +188,11 @@ def build(
         routes = park_routes(country, park, polygons, online=online)
         pois = sights.get(park["id"]) or []
         records = measure_park(country, park, routes, model, pois, registry)
-        catalogue.extend(records)
+        # A track that crosses from one park into the next (the Routeburn, between
+        # Fiordland and Mount Aspiring) is one trail: it stays with the park it was first
+        # listed in, whose name its identifier carries.
+        listed = {trail["id"] for trail in catalogue}
+        catalogue.extend(record for record in records if record["id"] not in listed)
     measured = sum(1 for trail in catalogue if "gainMetres" in trail)
     kilometres = sum(trail["lengthMetres"] for trail in catalogue) / 1000
     print(

@@ -568,7 +568,10 @@ def test_a_build_on_the_fixture_gives_records_the_app_decodes(new_zealand):
     assert park["subdivisions"][0] in ("NZ-MWT", "NZ-WKO")
     assert park["passportRegion"] == "northIsland"
     assert park["timeZoneID"] == "Pacific/Auckland"
-    assert park["facts"] == {"establishedYear": 1887, "bestSeasons": ["summer"]}
+    # The guide gives no area, so DOC's recorded area for the land stands in.
+    assert park["facts"] == {
+        "establishedYear": 1887, "bestSeasons": ["summer"], "areaHectares": 78623,
+    }
     assert park["officialURL"].startswith("https://www.doc.govt.nz/")
     assert park["summarySource"] == "Unigrids" and park["themes"] == ["theme-volcanoes"]
 
