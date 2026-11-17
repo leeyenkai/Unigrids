@@ -1,0 +1,207 @@
+{
+  "placeID": "nz-np-kahurangi",
+  "contentVersion": 1,
+  "summary": "New Zealand's second-largest national park fills the north-western corner of the South Island: limestone and marble country riddled with caves, open tussock downs, glacier-carved valleys, and a wild coast of nīkau palms. The Heaphy Track, a Great Walk, crosses it from Golden Bay to the West Coast; elsewhere there are high plateaux, limestone arches and untracked wilderness.",
+  "facts": {
+    "establishedYear": 1996,
+    "areaHectares": 452002,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Four to six days"
+  },
+  "story": [
+    "Kahurangi is geologically one of the most complex places in New Zealand. Much of its rock was laid down in an ancient sea, then faulted, uplifted and in places scoured by glaciers; in the Cobb Valley ice carved a classic U-shaped valley through sandstones, schists, shales and quartzites, some holding trilobite fossils. Where the rock is limestone or marble there are caves, bluffs, sinkholes and natural arches, and the park holds New Zealand's oldest fossil, 540 million years old.",
+    "The plant life changes from one side of the park to the other: beech forest in the east, podocarp forest with ferns, vines and shrubs in the west, and nīkau palms on the coast. Eighty per cent of New Zealand's alpine plant species grow in its high country, much of which escaped the worst of the ice ages. Threatened species range from the tiny rock wren to great spotted kiwi, which can be heard around the Gouland Downs, and the park is home to twenty species of carnivorous land snail, Powelliphanta, that come out on damp nights to hunt native worms.",
+    "Parts of Kahurangi were lived in by Māori from the 14th century, and the coast was a route for those seeking pounamu, greenstone; at the mouth of the Heaphy River, where two pounamu trails met, archaeologists have found evidence of occupation going back 500 years. In 1846 Charles Heaphy and Thomas Brunner became the first Europeans to tramp the north-west coast. Later, well-worn packtracks were built by miners heading for the Aorere goldfield, New Zealand's first gazetted goldfield.",
+    "Most of the park was once state forest, the northernmost combined in 1972 as Northwest Nelson Forest Park. Mineral exploration in the 1970s and 1980s turned public attention to the area, and conservation groups pressed for full protection. Kahurangi National Park was gazetted in April 1996. Its name, in Māori, carries several meanings, among them 'treasured possession'."
+  ],
+  "howItWorks": [
+    "Kahurangi is run by the Department of Conservation (DOC). DOC says there are no fees to walk the Heaphy Track for the day or to enter the park, and under the National Parks Act 1980 the public has freedom of entry and access. Roads from the gateway towns of Motueka, Tākaka, Karamea, Tapawera and Murchison reach car parks inside the park. In places it is untracked wilderness; elsewhere a network of tracks and backcountry huts reaches the rivers, plateaux and tops.",
+    "The Heaphy Track is a Great Walk: its 6 huts and 9 campsites must be booked well in advance all year, and campers cannot use hut facilities. Elsewhere DOC charges by hut category: $15 an adult a night for a standard hut and $25 for a serviced hut, paid at unbooked huts with backcountry hut tickets, sold online from 1 November 2026, or a 12-month Backcountry Hut Pass ($140 an adult); basic huts and bivvies are free. Heaphy huts supply no food, utensils or bedding, and in the Cobb Valley only Fenella Hut has cooking facilities, so carry a stove.",
+    "Mountain bikes are allowed on the Heaphy Track only from 1 May to 30 November. Dogs are not allowed anywhere in the park. Gold fossicking is allowed only in designated areas and only with hand-held tools. Fires may be lit only in the fireplaces at huts and campsites, and there are no rubbish facilities in the backcountry or at picnic areas, so take your rubbish out."
+  ],
+  "sights": [
+    {
+      "name": "Flanagans Corner",
+      "note": "A viewpoint just off the Heaphy Track near Perry Saddle, at 915 metres the highest point of the track.",
+      "location": [-40.90398, 172.42058],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Gouland Downs",
+      "note": "Open tussock downs on the Heaphy Track, with limestone arches, a cave-fed waterfall and great spotted kiwi. Easy to get lost in when the mist comes down.",
+      "location": [-40.89567, 172.31713]
+    },
+    {
+      "name": "Scotts Beach",
+      "note": "A clearing behind a wild West Coast beach near the Kohaihai end of the Heaphy Track, among nīkau palms. Do not swim at the river mouths.",
+      "location": [-41.08835, 172.10467]
+    },
+    {
+      "name": "Ōparara Arch",
+      "note": "A 35-million-year-old limestone arch over the Ōparara River, a 30-minute walk through beech and podocarp forest, off the road between Kohaihai and Karamea.",
+      "location": [-41.14611, 172.18734]
+    },
+    {
+      "name": "Mount Arthur",
+      "note": "The peak above Flora car park, the start of several day and overnight walks; the access road is steep and 4WD is recommended in winter.",
+      "location": [-41.21826, 172.68151]
+    },
+    {
+      "name": "Lake Peel",
+      "note": "A lake in the Cobb Valley area, where winter snow can lie into early summer.",
+      "location": [-41.14564, 172.60248]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Brown Hut, the eastern end of the Heaphy Track, 28 kilometres up the Aorere Valley from Collingwood",
+      "Kohaihai, the western end of the Heaphy Track, 15 kilometres north of Karamea",
+      "Flora car park, for Mount Arthur and the Tableland, 36 kilometres from Motueka",
+      "The Cobb Valley, by a narrow 28-kilometre road from the foot of Tākaka Hill",
+      "The Ōparara Basin, near Karamea"
+    ],
+    "reservations": "Heaphy Track huts and campsites must be booked well in advance all year; bookings for 2026/27 are open. Check each hut's page for whether it can be booked.",
+    "permits": [
+      "Gold fossicking only in designated areas, with hand-held tools",
+      "Mountain biking on the Heaphy Track only from 1 May to 30 November"
+    ],
+    "camping": [
+      "Nine booked campsites on the Heaphy Track, among them Brown, Perry Saddle, Gouland Downs, Saxon, James Mackay, Heaphy, Katipo Creek, Scotts Beach and Kohaihai",
+      "A camping and picnic area near Trilobite Hut in the Cobb Valley"
+    ],
+    "lodging": [
+      "Six Great Walk huts on the Heaphy Track: Brown, Perry Saddle, Gouland Downs, Saxon, James Mackay and Heaphy",
+      "Backcountry huts across the park",
+      "Accommodation in Collingwood, Tākaka, Motueka and Karamea"
+    ],
+    "seasonalClosures": [
+      "Heavy rain or snow can close the Cobb Valley road for days at a time in winter",
+      "A 4WD vehicle is recommended for the Graham Valley Road to Flora car park, and chains may be needed in snow and ice"
+    ]
+  },
+  "weather": "Sudden changes in the weather are possible at any time. Snow falls frequently on the tops in winter and can lie into early summer, particularly around Lake Peel, and the access roads to Flora car park and the Cobb Valley can be icy or closed. Rain brings floods: unbridged streams that are easy to cross in normal flows can become impassable, and parts of the Heaphy Track, on the Mackay Downs and in the lower Heaphy Valley, flood after heavy rain. On the coast, large waves at high tide can close sections of the track between Heaphy Hut and Kohaihai. Wasps are most common from December to April.",
+  "directions": "Kahurangi lies in the north-western corner of the South Island. Brown Hut, at the eastern end of the Heaphy Track, is 156 kilometres and about 2 hours 25 minutes from Nelson by State Highway 60 to Collingwood and the Aorere Valley road. Kohaihai, at the western end, is 110 kilometres and about 1 hour 45 minutes from Westport by State Highway 67 through Karamea. Regular buses run to Motueka and Tākaka, and in summer to the start of the Heaphy Track; on-demand shuttles, vehicle relocation and flights into Tākaka and Karamea help with the one-way trip. Flora car park is 75 kilometres from Nelson, the last 5.8 kilometres unsealed.",
+  "fees": [
+    {
+      "title": "Heaphy Track Great Walk huts, 1 October to 30 April",
+      "cost": "$44 (NZ resident) / $66 (international)",
+      "amount": 44,
+      "currencyCode": "NZD",
+      "detail": "Per adult per night. Children: $22 for New Zealanders aged 5–17, $33 for international visitors aged 0–17; infants free. Booking required all year."
+    },
+    {
+      "title": "Heaphy Track huts, rest of the year",
+      "cost": "$30–$38",
+      "amount": 30,
+      "currencyCode": "NZD",
+      "detail": "Per adult per night, the same for all visitors: $38 in May, June and September, $30 in July and August."
+    },
+    {
+      "title": "Heaphy Track campsites",
+      "cost": "$19 (NZ resident) / $28 (international)",
+      "amount": 19,
+      "currencyCode": "NZD",
+      "detail": "Per adult per night in summer; $19 for everyone the rest of the year. As listed by DOC in November 2026 — check before you go."
+    },
+    {
+      "title": "Park entry and day walks",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "NZD",
+      "detail": "DOC charges no fee to enter the park or to walk the Heaphy Track for the day."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1300s",
+      "text": "Māori are living in parts of Kahurangi; the coast becomes a route for those seeking pounamu."
+    },
+    {
+      "year": "1846",
+      "text": "Charles Heaphy and Thomas Brunner are the first Europeans to tramp the park's north-west coast."
+    },
+    {
+      "year": "1882",
+      "text": "Adams Flat Hut is built near the Fenian goldfield; it is the last of many miners' huts there."
+    },
+    {
+      "year": "1886",
+      "text": "John Saxon surveys the route that becomes the Heaphy Track."
+    },
+    {
+      "year": "1905",
+      "text": "A large European settlement is surveyed in the lower Heaphy valley; it is never built."
+    },
+    {
+      "year": "1972",
+      "text": "The northernmost state forests are combined as Northwest Nelson Forest Park."
+    },
+    {
+      "year": "1996",
+      "text": "Kahurangi National Park is gazetted in April."
+    }
+  ],
+  "safety": [
+    "Rivers rise fast. Wait for floodwater to drop rather than cross; on the Heaphy Track stay in Heaphy Hut or Lewis Shelter if the track is flooded, and wait for the water to recede on the Mackay Downs.",
+    "Do not swim or wade at the Heaphy or Kohaihai river mouths, where strong currents and rips can sweep you out to sea.",
+    "On the Gouland Downs the open tussock can be confusing when mist lowers; keep to the track.",
+    "Boil, filter or treat all drinking water; its purity cannot be guaranteed. Carry antihistamine if you react to wasp stings.",
+    "Follow the Land Safety Code from DOC and the NZ Mountain Safety Council: choose the right trip, understand the weather, pack warm clothes and extra food, share your plans and carry a distress beacon."
+  ],
+  "regulations": [
+    "No dogs anywhere in the park.",
+    "Heaphy Track huts and campsites must be booked for every night; campers may not use hut facilities.",
+    "Mountain bikes on the Heaphy Track only from 1 May to 30 November.",
+    "Gold fossicking only in designated areas, with hand-held tools.",
+    "Light fires only in the fireplaces at huts and campsites, and take all rubbish out."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-caves",
+    "theme-fossils",
+    "theme-alpine",
+    "theme-temperate-rainforest",
+    "theme-coastal",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Gouland Downs scene - Heaphy Track.jpg",
+      "caption": "The tussock of the Gouland Downs on the Heaphy Track",
+      "altText": "Open golden tussock country with patches of forest under cloudy hills"
+    },
+    {
+      "file": "File:Ōpārara Arch, New Zealand 05.jpg",
+      "caption": "The Ōparara Arch over the Ōparara River",
+      "altText": "A massive limestone arch spanning a river in dense green forest"
+    },
+    {
+      "file": "File:View from Cobb Valley, Kahurangi National Park, New Zealand.jpg",
+      "caption": "The glacier-carved Cobb Valley",
+      "altText": "A broad valley with forested slopes rising to bare mountain ridges"
+    },
+    {
+      "file": "File:Lake Sylvester during the sunrise, Kahurangi, New Zealand.jpg",
+      "caption": "Lake Sylvester at sunrise",
+      "altText": "A still mountain lake reflecting the pink sky of dawn"
+    }
+  ],
+  "sources": [
+    {"title": "Kahurangi National Park — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/"},
+    {"title": "Heaphy Track — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/heaphy-track/"},
+    {"title": "Mount Arthur area — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/mount-arthur-area/"},
+    {"title": "Cobb Valley — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/cobb-valley/"},
+    {"title": "Kahurangi National Park Management Plan — Department of Conservation", "url": "https://www.doc.govt.nz/globalassets/documents/about-doc/role/policies-and-plans/nelson-marlborough/kahurangi-national-park/kahurangi-national-park-management-plan.pdf"},
+    {"title": "Hut categories: facilities and fees — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/hut-categories/"},
+    {"title": "Backcountry Hut Pass — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/booking-and-paying/backcountry-hut-pass/"},
+    {"title": "Backcountry Hut Tickets — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/booking-and-paying/backcountry-hut-tickets/"},
+    {"title": "Great Walks pricing — Department of Conservation", "url": "https://www.doc.govt.nz/about-us/our-role/managing-conservation/recreation-management/great-walks-management/pricing/"},
+    {"title": "Be prepared with the Land Safety Code — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/know-before-you-go/land-safety-code/"},
+    {"title": "National Parks Act 1980, section 4 — New Zealand Legislation", "url": "https://www.legislation.govt.nz/act/public/1980/0066/latest/DLM36963.html"},
+    {"title": "Kahurangi National Park — Wikipedia", "url": "https://en.wikipedia.org/wiki/Kahurangi_National_Park"},
+    {"title": "OpenStreetMap (sight coordinates)", "url": "https://www.openstreetmap.org/"}
+  ]
+}

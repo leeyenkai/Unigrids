@@ -1,0 +1,330 @@
+{
+  "placeID": "nz-np-arthurs-pass",
+  "contentVersion": 1,
+  "summary": "The South Island's first national park straddles the main divide of the Southern Alps/Kā Tiritiri o te Moana, with State Highway 73 and the Midland railway running through its heart. Beech forest on the dry eastern side gives way to rātā rainforest on the wet western side, and above both rise scree, snow tussock and steep routes marked only by poles and cairns.",
+  "facts": {
+    "establishedYear": 1929,
+    "areaHectares": 119000,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "Arthur's Pass is mountain country cut in two by the main divide. The high peaks, big scree slopes, steep gorges and wide braided rivers of the park are the backbone of the South Island, and the difference between its two sides is striking. Mountain beech/tawhai covers the drier eastern slopes; to the west grows mixed podocarp rainforest lit by red-flowering rātā, with a deep understorey of shrubs, ferns and mosses. Above the bushline, snow tussock and alpine meadows begin a short walk from the road at the summit of the pass.",
+    "Kea, the inquisitive alpine parrot, are seen around the village and on the tops. The park is home to the great spotted kiwi/roroa, the endangered 'mountaineer' of kiwi, and to common forest birds such as the bellbird/korimako and fantail/pīwakawaka. The open braided beds of the Waimakariri and Poulter rivers are nesting grounds for the wrybill/ngutu parore and the black-fronted tern/tarapirohe. In winter and spring the high alpine parts of the park commonly receive more than five to ten metres of snow.",
+    "Māori used the passes through the Southern Alps to carry pounamu (greenstone) from Westland to Canterbury, and it was Māori who told the explorers where Arthur's Pass lay. Arthur Dudley Dobson surveyed it in February 1864. When gold was found on the West Coast, a thousand men with picks, shovels, wheelbarrows and explosives built a road over the pass in less than a year, through a bitter winter in 1865. The coach road opened in March 1866, and the Arthur's Pass coaches became New Zealand's last horse-drawn coach service.",
+    "The Ōtira rail tunnel broke through the mountains in 1923 and ended the coaching era. Six years later, in 1929, Arthur's Pass became New Zealand's third national park and the first in the South Island. Traces of the road's history survive beside it: Jacks Hut, built in 1879, is a rare surviving roadman's cottage, restored in 2004. Over a century after the first road, the Ōtira Viaduct was built across the gorge between 1998 and 1999 to take the highway clear of its worst hazards."
+  ],
+  "howItWorks": [
+    "Like all of New Zealand's national parks, Arthur's Pass is public conservation land managed by the Department of Conservation (DOC). There is no entry fee or gate: the National Parks Act 1980 gives the public freedom of entry and access, subject to the rules that protect the park. The Government is working on an access levy for international visitors at four other sites, but none is in this park. DOC runs the visitor centre in Arthur's Pass village, and staff there give advice on track conditions, weather and avalanche danger.",
+    "Overnight trips here use DOC's backcountry huts, which are graded by category. Standard huts have mattresses, water and toilets; serviced huts add heating with fuel and sometimes a warden; basic huts and bivvies are free. Most backcountry huts are not booked: you pay with a Backcountry Hut Ticket, sold online from 1 November 2026, or a 12-month Backcountry Hut Pass, and write your name in the hut book on arrival. A pass gives no priority, because these huts are first come, first served. Barker Memorial Hut and Park Morpeth Memorial Hut are serviced alpine huts with their own fees. The roadside campsites at Klondyke Corner and Avalanche Creek must be booked online.",
+    "The tracks are less developed than in other parks and are not continuously marked. Above the bushline many become routes marked only by cairns and poles, and most involve river crossings. DOC rates every track on the Avalanche Terrain Exposure Scale, as simple, challenging or complex terrain; avalanches usually occur here from May to November, and the New Zealand Avalanche Advisory, from the Mountain Safety Council, gives the daily danger. Dogs are not allowed in the park, and flying a drone without a permit is prohibited."
+  ],
+  "sights": [
+    {
+      "name": "Devils Punchbowl Falls/Te Tautea o Hinekakai",
+      "note": "A 131-metre waterfall at the north end of the village, reached by 400-plus steps through mountain beech to a platform at its base; about an hour return.",
+      "location": [
+        -42.9328,
+        171.5683
+      ]
+    },
+    {
+      "name": "Avalanche Peak",
+      "note": "At 1,833 metres, the only peak in the park with a marked route to the top: 1,100 metres of climbing from the village. People have died on it.",
+      "location": [
+        -42.9431,
+        171.5361
+      ]
+    },
+    {
+      "name": "Arthur's Pass and the Dobson Nature Walk",
+      "note": "The summit of the pass on SH73. A short walk from the Temple Basin car park passes alpine plants, including the Mt Cook buttercup, which flower from November to February.",
+      "location": [
+        -42.9074,
+        171.5594
+      ]
+    },
+    {
+      "name": "Ōtira Viaduct",
+      "note": "The highway's bridge across the slips and rockfall of the Ōtira Gorge on the West Coast side, built between 1998 and 1999.",
+      "location": [
+        -42.8861,
+        171.5553
+      ]
+    },
+    {
+      "name": "Otira Valley Track",
+      "note": "A graded track under the north flank of Mount Rolleston/Kaimatau to the Otira River footbridge, with summer alpine flowers. Avalanches cross it from May to November.",
+      "location": [
+        -42.8985,
+        171.5587
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Bealey Spur",
+      "note": "A gentle climb through mountain beech and tussock past tarns, with wide views of the Waimakariri valley. Often drier than the village when north-westerlies bring rain.",
+      "location": [
+        -43.0305,
+        171.6242
+      ]
+    },
+    {
+      "name": "Goat Pass",
+      "note": "The crossing of the main divide on the two-to-three-day Mingha–Deception route, part of Te Araroa and of the Coast to Coast race. For experienced, well-equipped trampers only.",
+      "location": [
+        -42.902,
+        171.6252
+      ]
+    },
+    {
+      "name": "Mount Rolleston/Kaimatau",
+      "note": "The glacier-hung massif that dominates the view west of the pass, seen from the Avalanche Peak route and the Otira Valley. A climb for mountaineers.",
+      "location": [
+        -42.9143,
+        171.5174
+      ]
+    },
+    {
+      "name": "Arthur's Pass National Park Visitor Centre",
+      "note": "DOC's visitor centre at 104 West Coast Road, for track conditions, the avalanche advisory and the weather forecast before you set out.",
+      "location": [
+        -42.9412,
+        171.5628
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Arthur's Pass village on SH73, with the visitor centre, the Devils Punchbowl and Avalanche Peak tracks, and the TranzAlpine station",
+      "The summit of the pass and the Temple Basin car park, on SH73 north-west of the village",
+      "Greyneys Shelter on SH73, the eastern start of the Mingha–Deception route",
+      "The Bealey Spur car park, off SH73 just past the Bealey Hotel, 14 km south of the village",
+      "The Otira Valley car park, about 1 km towards the West Coast from the summit"
+    ],
+    "reservations": "There is no entry booking. Klondyke Corner and Avalanche Creek campsites must be booked online, and no spaces are kept for campers who arrive without a booking. Most backcountry huts are first come, first served and paid for with hut tickets or a Backcountry Hut Pass bought before the trip; check each hut's page with DOC before you go.",
+    "permits": [
+      "Flying a drone needs a DOC permit",
+      "Hunting on conservation land needs a DOC hunting permit"
+    ],
+    "camping": [
+      "Avalanche Creek Shelter Campsite, in the village opposite the visitor centre: 25 tent sites, booking required",
+      "Klondyke Corner Campsite, near the meeting of the Bealey and Waimakariri rivers: 40 tent sites, booking required",
+      "Fires are not allowed at either campsite"
+    ],
+    "lodging": [
+      "DOC backcountry huts throughout the park, from free bivvies to standard and serviced huts",
+      "Visitor accommodation in Arthur's Pass village"
+    ],
+    "seasonalClosures": [
+      "Snow, rockfall and slips can close SH73 over the pass — check highway conditions before you travel",
+      "Avalanche danger from May to November on many tracks, including the Otira Valley Track and the Avalanche Peak route — check the New Zealand Avalanche Advisory and ask at the visitor centre",
+      "Klondyke Corner is a key site for the Coast to Coast race on the second Friday and Saturday in February — avoid camping there then"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "The park is rugged and mountainous, and its weather can change quickly with little warning; DOC asks every visitor to be ready for wet and cold conditions, even in summer. Heavy rain makes rivers rise fast, and most tracks involve river crossings. Summer brings the alpine flowers, in bloom from November to February, though wasps reach high numbers on tracks such as Bealey Spur from January to April. Avalanches usually occur from May to November, when the high alpine areas commonly gather five to ten metres of snow, and the Temple Basin ski area can operate from late June to late October. When north-westerlies bring rain to the village, the eastern valleys such as Bealey Spur are often drier.",
+  "directions": "State Highway 73, the main road between Christchurch and Greymouth, runs right through the park and Arthur's Pass village. DOC puts the drive at two to two and a half hours from Christchurch and about an hour and a half from Greymouth or Hokitika; the road is winding and can close for snow, rockfall or slips. Regular buses run between Christchurch, Greymouth and Hokitika and stop in the village, and the TranzAlpine train runs daily between Christchurch and Greymouth, stopping at Arthur's Pass. Cars at track ends have been broken into, so leave no valuables in them.",
+  "fees": [
+    {
+      "title": "Standard backcountry hut",
+      "cost": "NZ$15 per adult per night",
+      "amount": 15,
+      "currencyCode": "NZD",
+      "detail": "Youth 5–17 NZ$7.50, infants free; paid with a hut ticket or a Backcountry Hut Pass. Serviced huts are NZ$25 a night and basic huts and bivvies are free. As listed by DOC in November 2026; check before you go."
+    },
+    {
+      "title": "Backcountry Hut Pass, 12 months",
+      "cost": "NZ$140 per adult",
+      "amount": 140,
+      "currencyCode": "NZD",
+      "detail": "Youth 5–17 NZ$70, infants free. Covers most serviced and standard huts that cannot be booked, but gives no priority for a bunk. As listed by DOC in November 2026."
+    },
+    {
+      "title": "Avalanche Creek Shelter Campsite",
+      "cost": "NZ$18 per adult per night",
+      "amount": 18,
+      "currencyCode": "NZD",
+      "detail": "Children 5–17 NZ$9, infants free; Klondyke Corner is NZ$15 per adult. Both are booked and paid for online. As listed by DOC in November 2026."
+    },
+    {
+      "title": "Devils Punchbowl car park",
+      "cost": "NZ$2.50 per half hour",
+      "amount": 2.5,
+      "currencyCode": "NZD",
+      "detail": "DOC announced on 16 November 2026 that it will charge for parking here from December 2026: the first 10 minutes free, NZ$2.50 a half hour or NZ$20 a day, with an annual permit for locals. Check before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1864",
+      "text": "Arthur Dudley Dobson surveys the pass in February; Māori had told the explorers where it lay."
+    },
+    {
+      "year": "1865",
+      "text": "A thousand men build the road over the pass in less than a year, through a bitter winter."
+    },
+    {
+      "year": "1866",
+      "text": "The coach road over Arthur's Pass officially opens in March, linking Canterbury and the West Coast."
+    },
+    {
+      "year": "1879",
+      "text": "Jacks Hut is built near Rough Creek as a roadman's hut; it is moved to its present site below the summit in 1909–1910."
+    },
+    {
+      "year": "1923",
+      "text": "The Ōtira rail tunnel opens, and the era of the coaches comes to an end."
+    },
+    {
+      "year": "1929",
+      "text": "Arthur's Pass becomes New Zealand's third national park and the first in the South Island."
+    },
+    {
+      "year": "1999",
+      "text": "The Ōtira Viaduct is completed in November, replacing the most hazardous section of the gorge road."
+    },
+    {
+      "year": "2004",
+      "text": "Jacks Hut is restored."
+    },
+    {
+      "year": "2026",
+      "text": "DOC announces paid parking at the Devils Punchbowl car park from December."
+    }
+  ],
+  "safety": [
+    "Check the New Zealand Avalanche Advisory before going above the bushline or into unforested valleys between May and November, and know the terrain rating of your route. Some huts stand in avalanche paths.",
+    "Mountain weather changes fast. Carry warm, waterproof layers in every season, and turn back on the Avalanche Peak route if cloud comes down or the wind rises — people have died on it.",
+    "Rivers rise quickly after rain. If a river is too high to cross, wait or postpone the trip; on the Mingha–Deception route, never use the Bealey rail bridge to get across.",
+    "Many routes are marked only by poles and cairns and need map reading and route-finding. Leave your plans with a trusted contact and carry a distress beacon."
+  ],
+  "regulations": [
+    "No dogs or other pets in the national park.",
+    "Flying a drone without a DOC permit is prohibited.",
+    "Fires are not allowed at the Klondyke Corner and Avalanche Creek campsites.",
+    "Obey ski-area closures at Temple Basin, where explosives may be used for avalanche control, and check in with ski patrol before entering during operating hours.",
+    "Pay hut fees with a ticket or pass and record your stay in the hut book; carry proof of your pass and identification."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-alpine",
+    "theme-temperate-rainforest"
+  ],
+  "photos": [
+    {
+      "file": "File:Avalanche Peak and Mt Rolleston, Arthur's Pass National Park, New Zealand 05.jpg",
+      "caption": "Avalanche Peak and Mount Rolleston/Kaimatau",
+      "altText": "Tawny tussock ridges rising to a rocky peak with patches of snow under a pale blue sky"
+    },
+    {
+      "file": "File:Devils Punchbowl Falls I - Arthurs Pass N.P. - panoramio.jpg",
+      "caption": "Devils Punchbowl Falls above Arthur's Pass village",
+      "altText": "A tall, thin waterfall dropping between rock walls into dense green forest"
+    },
+    {
+      "file": "File:Otira Viaduct 01.jpg",
+      "caption": "The Ōtira Viaduct carrying SH73 through the Ōtira Gorge",
+      "altText": "A curving concrete road viaduct crossing a stony gorge between forested mountainsides"
+    },
+    {
+      "file": "File:Walker Pass from Edwards - Hawdon Route, Arthur's Pass National Park, New Zealand.jpg",
+      "caption": "Walker Pass on the Edwards–Hawdon route",
+      "altText": "A green alpine valley of scrub and tussock between steep grey mountainsides"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Arthur's Pass National Park — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/"
+    },
+    {
+      "title": "Historic Arthur's Pass — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/historic-arthurs-pass/"
+    },
+    {
+      "title": "Be avalanche alert in Arthur's Pass National Park — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/be-avalanche-alert/"
+    },
+    {
+      "title": "Devils Punchbowl Walking Track — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/things-to-do/tracks/devils-punchbowl-walking-track/"
+    },
+    {
+      "title": "Avalanche Peak Route — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/things-to-do/tracks/avalanche-peak-route/"
+    },
+    {
+      "title": "Dobson Nature Walk — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/things-to-do/tracks/dobson-nature-walk/"
+    },
+    {
+      "title": "Bealey Spur Track — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/things-to-do/tracks/bealey-spur-track/"
+    },
+    {
+      "title": "Otira Valley Track — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/things-to-do/tracks/otira-valley-track/"
+    },
+    {
+      "title": "Mingha–Deception Route — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/things-to-do/tracks/mingha-deception-route/"
+    },
+    {
+      "title": "Klondyke Corner Campsite — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/things-to-do/campsites/klondyke-corner-campsite/"
+    },
+    {
+      "title": "Avalanche Creek Shelter Campsite — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/things-to-do/campsites/avalanche-creek-shelter-campsite/"
+    },
+    {
+      "title": "Hut categories — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/hut-categories/"
+    },
+    {
+      "title": "Booking and paying for huts — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/booking-and-paying/"
+    },
+    {
+      "title": "Backcountry Hut Pass — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/booking-and-paying/backcountry-hut-pass/"
+    },
+    {
+      "title": "Backcountry Hut Tickets — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/booking-and-paying/backcountry-hut-tickets/"
+    },
+    {
+      "title": "International visitor access charges — Department of Conservation",
+      "url": "https://www.doc.govt.nz/get-involved/have-your-say/all-consultations/2026-consultations/international-visitor-access-charges/"
+    },
+    {
+      "title": "Start of car park fees at various DOC sites (16 November 2026) — Department of Conservation",
+      "url": "https://www.doc.govt.nz/news/media-releases/2026-media-releases/start-of-car-park-fees-at-various-doc-sites/"
+    },
+    {
+      "title": "Arthur's Pass National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Arthur%27s_Pass_National_Park"
+    },
+    {
+      "title": "National parks of New Zealand — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    },
+    {
+      "title": "Mount Rolleston — Wikipedia (coordinates)",
+      "url": "https://en.wikipedia.org/wiki/Mount_Rolleston"
+    },
+    {
+      "title": "Otira Viaduct — Wikipedia (coordinates)",
+      "url": "https://en.wikipedia.org/wiki/Otira_Viaduct"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

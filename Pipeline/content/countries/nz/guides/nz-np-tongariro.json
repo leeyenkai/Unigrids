@@ -1,0 +1,255 @@
+{
+  "placeID": "nz-np-tongariro",
+  "contentVersion": 1,
+  "summary": "New Zealand's oldest national park, built around three active volcanoes: Ruapehu, the North Island's highest mountain, the young cone of Ngāuruhoe and the craters of Tongariro. Its heart was a gift from Ngāti Tūwharetoa in 1887, and it is a World Heritage site for both its volcanoes and its Māori cultural landscape. Most visitors come for the Tongariro Alpine Crossing, a full-day walk past steaming vents and vivid crater lakes.",
+  "facts": {
+    "establishedYear": 1894,
+    "areaHectares": 79598,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "One to four days"
+  },
+  "story": [
+    "The volcanoes here are still at work. Tongariro is a complex of cones built over some 275,000 years, with active vents at Te Māri, Red Crater, North Crater and the Emerald Lakes. Ngāuruhoe, the largest and youngest of its cones, is about 7,000 years old; black lava from its 1949 and 1954 eruptions still fills the head of the Mangatepōpō Valley. Ruapehu, 2,797 metres, is the highest mountain in the North Island, and its active vent is filled by Te Wai ā-moe, Crater Lake, whose water is thrown onto the snow in eruptions and sent down the valleys as lahars.",
+    "The mountains are tapu, sacred, to Ngāti Tūwharetoa. Their ancestor Ngātoroirangi climbed the great mountains of the Central Plateau thirty generations ago, named Tongariro and the features around it, and claimed the land for his descendants. Ngāti Hikairo ki Tongariro, a hapū of Ngāti Tūwharetoa, are the kaitiaki, guardians, of the land the Alpine Crossing crosses. Iwi ask visitors not to climb to the summits, and not to touch or enter any of the lakes and waterways.",
+    "In 1887 the paramount chief Te Heuheu Tūkino IV, Horonuku, signed a deed, drawn up in the courthouse at Taupō, giving the summits of Tongariro, Ngāuruhoe and part of Ruapehu to the Crown, so that they would be protected as a national park. The gift was about 2,640 hectares, too small for a park, and the Crown made large purchases of surrounding land in the early 1890s. The Tongariro National Park Act became law in October 1894, the first national park in New Zealand.",
+    "The park has grown many times over since, to almost 80,000 hectares of volcanic plateau, beech forest, tussock and the drying, windswept Rangipo Desert to the east. In 1990 it was inscribed on the World Heritage List for its volcanoes, and in 1993 it became the first property listed under the new criteria for cultural landscapes, recognising the mountains' spiritual meaning to Ngāti Tūwharetoa. In late 2025 two fires burned large areas near the start of the Alpine Crossing; the land is now under a ten-year rāhui while it recovers."
+  ],
+  "howItWorks": [
+    "Tongariro is run by the Department of Conservation (DOC), Te Papa Atawhai. Under the National Parks Act 1980 the public has freedom of entry and access to every national park, so there is no gate and no entry ticket; what you pay for is a bed in a hut, a campsite or a guided trip. The park is also a living Māori landscape. Ngāti Tūwharetoa, who made the gift of the peaks, ask that you do not climb the summits of Ngāuruhoe or Tongariro, and DOC advises against entering Ruapehu's summit hazard zone.",
+    "The Alpine Crossing is delivered by DOC with Ngāti Hikairo ki Tongariro. A track booking is free and recommended for everyone, and required if you use a shuttle or a guided walk; show the booking receipt to the rangers at the car park. From Labour Weekend in late October to 30 April parking at the road ends is limited to four hours, there is no visitor parking at Mangatepōpō for Crossing walkers, and DOC recommends a shuttle, which runs from all the local towns. On days of hazardous weather in summer DOC posts a 'Not Recommended Today' advisory at 6 am.",
+    "The Tongariro Northern Circuit is one of DOC's Great Walks: its three Great Walk huts and their campsites must be booked all year, and camping is not allowed within 500 metres of the track. Elsewhere DOC's huts come in categories: serviced huts cost $25 a night for an adult, standard huts $15 and basic huts and bivvies nothing. Unbooked huts are paid with backcountry hut tickets, sold online from 1 November 2026, or a 12-month Backcountry Hut Pass ($140 for an adult). Dogs are not allowed anywhere in the park, not even inside a vehicle, and flying a drone needs a DOC permit."
+  ],
+  "sights": [
+    {
+      "name": "Tongariro Alpine Crossing",
+      "note": "A 20-kilometre one-way walk from Mangatepōpō over Red Crater, at 1,886 metres the highest point, down to Ketetahi Road. Seven to eight hours in summer.",
+      "location": [-39.13547, 175.65034]
+    },
+    {
+      "name": "Ngā Rotopounamu / Emerald Lakes",
+      "note": "Old explosion pits below Red Crater, coloured by minerals washed down from its thermal area. Sacred lakes: do not touch or enter the water.",
+      "location": [-39.13447, 175.65279],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Te Wai Whakaata o Te Rangihīroa / Blue Lake",
+      "note": "Rangihīroa's mirror: cold fresh water filling an old vent beside the Alpine Crossing, across Central Crater from Red Crater.",
+      "location": [-39.1269, 175.66011],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Ngāuruhoe",
+      "note": "The symmetrical young cone of the Tongariro complex, about 7,000 years old. Its summit is sacred; enjoy it from the Crossing and the Northern Circuit.",
+      "location": [-39.15683, 175.63217]
+    },
+    {
+      "name": "Ruapehu",
+      "note": "The North Island's highest mountain, 2,797 metres, with glaciers, the Whakapapa and Tūroa ski areas, and Te Wai ā-moe/Crater Lake in its active vent.",
+      "location": [-39.2812, 175.56429]
+    },
+    {
+      "name": "Taranaki Falls",
+      "note": "A waterfall plunging into a boulder-ringed pool, on one of the park's best short loop walks from Whakapapa Village; each half of the loop takes about an hour.",
+      "location": [-39.1975, 175.56436]
+    },
+    {
+      "name": "Tama Lakes",
+      "note": "Two infilled explosion craters on Tama Saddle between Ruapehu and Ngāuruhoe, named after Tamatea, high chief of the Takitimu canoe. The upper lake is a steep climb further.",
+      "location": [-39.2, 175.61667]
+    },
+    {
+      "name": "Ohinepango Springs",
+      "note": "Clear, cold water bubbling up from beneath an old lava flow, an hour's return side trip from Waihohonu Hut.",
+      "location": [-39.21616, 175.67633]
+    },
+    {
+      "name": "Lake Rotopounamu",
+      "note": "A forest-ringed lake beneath Pihanga, in the Pihanga Scenic Reserve, the detached northern part of the park near Tūrangi.",
+      "location": [-39.0267, 175.7382]
+    },
+    {
+      "name": "Tongariro National Park Visitor Centre",
+      "note": "DOC's visitor centre in Whakapapa Village, for track conditions, volcanic and avalanche advice and Alpine Crossing bookings.",
+      "location": [-39.20138, 175.54022],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Whakapapa Village, off State Highway 48 on Ruapehu's north-western slopes — the main gateway, with the visitor centre",
+      "Mangatepōpō Road end, the start of the Tongariro Alpine Crossing, reached by shuttle in summer",
+      "Ketetahi Road, the end of the Crossing, with a private car park",
+      "Ohakune and the Tūroa side of Ruapehu, to the south",
+      "The Desert Road (State Highway 1) on the eastern side, for Waihohonu"
+    ],
+    "reservations": "An Alpine Crossing booking is free and recommended; you need one to use a shuttle or guided walk. Tongariro Northern Circuit huts and campsites must be booked all year; bookings for the 2026/27 season are open. Check with DOC before you go.",
+    "permits": [
+      "A free permit from the Tongariro National Park Visitor Centre for overnight parking at Mangatepōpō Road end or Whakapapa Village",
+      "A DOC permit to fly a drone"
+    ],
+    "camping": [
+      "Campsites beside the Northern Circuit's huts, booked in advance; no camping within 500 metres of the track",
+      "Do not camp or stay overnight within 1.5 kilometres of the centre of Crater Lake while Ruapehu is at its usual unrest level"
+    ],
+    "lodging": [
+      "Mangatepōpō, Oturere and Waihohonu Great Walk huts on the Northern Circuit",
+      "Whakapapa Village, the only settlement inside the park, with a hotel and other accommodation",
+      "Accommodation in National Park Village (Waimarino), Ohakune and Tūrangi"
+    ],
+    "seasonalClosures": [
+      "The Northern Circuit's Great Walks season runs from 23 October 2026 to 30 April 2027; outside it, hut wardens and gas cooking are withdrawn and the track becomes a winter alpine route",
+      "The Northern Circuit section from Whakapapa Village to Mangatepōpō Hut is closed after the 2025 fire and will not open for the 2026/27 season — check with DOC before you go",
+      "Shuttles to the Alpine Crossing generally do not run in winter"
+    ]
+  },
+  "weather": "There is no wet or dry season here, and rain or snow can fall in any month. The prevailing westerlies rise over the volcanoes and bring rain on at least half the days of the year to the west and north of the park: Whakapapa Village gets around 2,200 millimetres a year, Ohakune about 1,250. At Whakapapa frost can occur all year; temperatures average 13°C, reaching 25°C in summer and falling to −10°C in winter. Snow can fall as early as March or as late as November, sometimes in summer too, and in winter the snow level averages about 1,500 metres. On a calm day Red Crater is at least 10°C colder than Taupō, and wind makes it feel much colder. From May to October the Crossing and the Northern Circuit are winter alpine routes, with snow, ice and avalanche risk.",
+  "directions": "Tongariro is in the central North Island, a four- to five-hour drive from either Auckland or Wellington. Whakapapa Village, the main gateway, lies on State Highway 48, which turns off State Highway 47; the park boundary is at that junction. Daily national bus services reach the park and the nearby towns of Ohakune, Waiouru, Waimarino (National Park Village) and Tūrangi, and bus and train services stop at Waimarino, 15 kilometres from Whakapapa. Shuttles meet buses and trains and run to the Alpine Crossing from all the local towns; book them through the i-SITEs and information centres in Ohakune, Taumarunui, Tūrangi and Taupō.",
+  "fees": [
+    {
+      "title": "Tongariro Northern Circuit Great Walk huts, Great Walks season",
+      "cost": "$44 (NZ resident) / $66 (international)",
+      "amount": 44,
+      "currencyCode": "NZD",
+      "detail": "Per adult per night, 23 October 2026 to 30 April 2027. Children: $22 for New Zealanders aged 5–17, $33 for international visitors aged 0–17. Booking required; proof of eligibility needed for the New Zealand rate."
+    },
+    {
+      "title": "Tongariro Northern Circuit huts, outside the Great Walks season",
+      "cost": "$25",
+      "amount": 25,
+      "currencyCode": "NZD",
+      "detail": "Per adult per night, 1 May to 22 October, for New Zealand and international visitors alike; children $12.50. Bookings are still required."
+    },
+    {
+      "title": "Tongariro Northern Circuit campsites, Great Walks season",
+      "cost": "$19 (NZ resident) / $28 (international)",
+      "amount": 19,
+      "currencyCode": "NZD",
+      "detail": "Per adult per night; outside the season $10. As listed by DOC in November 2026 — check before you go."
+    },
+    {
+      "title": "Tongariro Alpine Crossing booking",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "NZD",
+      "detail": "No cost to book; shuttle fares are paid to the operator."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 30 generations ago",
+      "text": "Ngātoroirangi, founding ancestor of Ngāti Tūwharetoa, climbs the mountains of the Central Plateau and names Tongariro."
+    },
+    {
+      "year": "1887",
+      "text": "On 23 September Te Heuheu Tūkino IV (Horonuku) signs a deed of gift ceding the peaks to the Crown for a national park."
+    },
+    {
+      "year": "1894",
+      "text": "The Tongariro National Park Act receives assent on 23 October, creating New Zealand's first national park."
+    },
+    {
+      "year": "1904",
+      "text": "Waihohonu Hut, the first hut in the park, is completed for visitors arriving by coach from Waiouru or Tokaanu."
+    },
+    {
+      "year": "1913",
+      "text": "William Mead and Bernard Drake make the first alpine skiing expedition, from Waihohonu Hut, in July."
+    },
+    {
+      "year": "1954",
+      "text": "Ngāuruhoe's eruptions send the youngest black lava flows down into the Mangatepōpō Valley, after others in 1949."
+    },
+    {
+      "year": "1990",
+      "text": "Tongariro is inscribed on the World Heritage List for its volcanic features."
+    },
+    {
+      "year": "1993",
+      "text": "It becomes the first property on the World Heritage List recognised as a cultural landscape."
+    },
+    {
+      "year": "2007",
+      "text": "Ruapehu's most recent eruption, on 25 September, sends lahars down two valleys, one into the Whakapapa ski area."
+    },
+    {
+      "year": "2012",
+      "text": "Te Māri crater on Tongariro erupts on 6 August and 21 November, its first eruptions since 1897."
+    },
+    {
+      "year": "2025",
+      "text": "Two fires burn large areas near the start of the Alpine Crossing; Ngāti Hikairo ki Tongariro place a ten-year rāhui over the land."
+    }
+  ],
+  "safety": [
+    "This is an active volcanic area and eruptions can come with little or no warning. Check the volcanic alert level on GeoNet and DOC's advice; while Ruapehu is at its usual level, stay at least 700 metres from the centre of Crater Lake. In an eruption, move out of valleys to higher ground: lahars travel like flash floods.",
+    "The Crossing is long, exposed and alpine. Snow can fall in any month; carry warm, waterproof layers and 2–3 litres of water, since water along the track is not safe to drink. It is not recommended for children under 10.",
+    "From May to October the Crossing and Northern Circuit need alpine skills: crampons, ice axe and helmet, and an avalanche transceiver, probe and shovel. Avalanches are most common from July to October. Go with a guide if you lack the skills.",
+    "Keep away from steam vents near the Emerald Lakes: the steam is very hot and the ground can be unstable. Loose scree on Red Crater's descent is a major slip hazard.",
+    "Follow the Land Safety Code from DOC and the NZ Mountain Safety Council: choose the right trip, understand the weather, pack warm clothes and extra food, share your plans and carry a distress beacon, and look after each other."
+  ],
+  "regulations": [
+    "No dogs anywhere in the park, including Whakapapa Village and the ski areas, and not even inside vehicles; the boundary starts at the junction of State Highways 47 and 48.",
+    "No drones without a DOC permit, and no mountain biking on the Alpine Crossing.",
+    "Do not touch or enter the lakes and waterways, which are sacred to Ngāti Hikairo ki Tongariro; stay on the track inside the rāhui area burned in 2025.",
+    "No 4x4 off-roading anywhere in the park; on the Tukino Access Road, leaving the formed road is an offence.",
+    "On the Northern Circuit, huts and campsites must be booked and camping is not allowed within 500 metres of the track."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-mountains",
+    "theme-alpine",
+    "theme-hot-springs",
+    "theme-indigenous-heritage",
+    "theme-sacred-places",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Emerald Lakes, New Zealand.jpg",
+      "caption": "Ngā Rotopounamu, the Emerald Lakes, on the Tongariro Alpine Crossing",
+      "altText": "Bright green-blue crater lakes in a barren landscape of dark volcanic rock and scree"
+    },
+    {
+      "file": "File:Ruapehu and Ngauruhoe.jpg",
+      "caption": "Ruapehu and Ngāuruhoe from the Desert Road",
+      "altText": "A broad snow-capped mountain beside a steep symmetrical volcanic cone, seen across a wide plain"
+    },
+    {
+      "file": "File:Mt. Tongariro, Red Crater & the descent to Emerald Lakes from Central Crater.jpg",
+      "caption": "Red Crater and the descent to the Emerald Lakes, seen from Central Crater",
+      "altText": "A reddish volcanic crater rim above a slope of loose scree leading down to small turquoise lakes"
+    },
+    {
+      "file": "File:00 1111 Taranaki Falls - NZ.jpg",
+      "caption": "Taranaki Falls, on the loop walk from Whakapapa Village",
+      "altText": "A waterfall dropping over a dark lava cliff into a rocky pool"
+    }
+  ],
+  "sources": [
+    {"title": "Tongariro National Park — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/"},
+    {"title": "Tongariro Alpine Crossing — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-alpine-crossing/"},
+    {"title": "Tongariro Alpine Crossing booking system — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-alpine-crossing-bookings/tongariro-alpine-crossing-booking-system/"},
+    {"title": "Tongariro Northern Circuit — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-northern-circuit/"},
+    {"title": "Tongariro weather — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/about-tongariro-national-park/tongariro-weather/"},
+    {"title": "Volcanic risk in Tongariro National Park — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/know-before-you-go/volcanic-risk-in-tongariro-national-park/"},
+    {"title": "Whakapapa Village area — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/whakapapa-village-area/"},
+    {"title": "History of Waihohonu Hut — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/heritage-sites/waihohonu-hut/"},
+    {"title": "Tongariro National Park Management Plan 2006–2016 — Department of Conservation", "url": "https://www.doc.govt.nz/globalassets/documents/about-doc/role/policies-and-plans/national-park-management-plans/tongariro-national-park/tongariro-national-park-management-plan.pdf"},
+    {"title": "Hut categories: facilities and fees — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/hut-categories/"},
+    {"title": "Backcountry Hut Pass — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/booking-and-paying/backcountry-hut-pass/"},
+    {"title": "Backcountry Hut Tickets — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/booking-and-paying/backcountry-hut-tickets/"},
+    {"title": "Great Walks pricing — Department of Conservation", "url": "https://www.doc.govt.nz/about-us/our-role/managing-conservation/recreation-management/great-walks-management/pricing/"},
+    {"title": "Be prepared with the Land Safety Code — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/know-before-you-go/land-safety-code/"},
+    {"title": "Tongariro National Park Act 1894 — New Zealand Legislation", "url": "https://www.legislation.govt.nz/act/public/1894/55/en/latest/"},
+    {"title": "National Parks Act 1980, section 4 — New Zealand Legislation", "url": "https://www.legislation.govt.nz/act/public/1980/0066/latest/DLM36963.html"},
+    {"title": "Tongariro National Park — UNESCO World Heritage Centre", "url": "https://whc.unesco.org/en/list/421/"},
+    {"title": "About Tongariro — GeoNet", "url": "https://www.geonet.org.nz/about/volcano/tongariro"},
+    {"title": "About Ruapehu — GeoNet", "url": "https://www.geonet.org.nz/about/volcano/ruapehu"},
+    {"title": "About Ngauruhoe — GeoNet", "url": "https://www.geonet.org.nz/about/volcano/ngauruhoe"},
+    {"title": "Tongariro National Park — Wikipedia", "url": "https://en.wikipedia.org/wiki/Tongariro_National_Park"},
+    {"title": "OpenStreetMap (sight coordinates)", "url": "https://www.openstreetmap.org/"}
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "placeID": "nz-np-te-papa-kura-o-taranaki",
+  "contentVersion": 1,
+  "summary": "The near-perfect cone of Taranaki Maunga, 2,518 metres, ringed by rainforest and standing alone above the farmland of the North Island's west coast. Formerly Egmont National Park, it took its name, Te Papa-Kura-o-Taranaki, in 2025. Come for goblin forest, waterfalls and the reflection of the mountain in the Pouākai tarns; fit, well-equipped climbers can reach the crater in summer.",
+  "facts": {
+    "establishedYear": 1900,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "The park takes in three volcanic cones. Taranaki Maunga is the youngest and the only one still active, though now considered dormant; its last eruption was around 1854, and the largest recent one, in about 1655, spread ash across the central North Island. The two older cones, long extinct, are worn down into the Pouākai and Kaitake Ranges, and Panitahi on the mountain's southern flank is a secondary vent. Three times in its history an earlier cone collapsed, sending debris more than 40 kilometres to the coast and leaving the hummocks that dot the surrounding plains.",
+    "High rainfall and a mild coastal climate feed a lush forest of rimu and kāmahi, with many northern rātā and no beech at all. Higher up it gives way to goblin forest, gnarled kāmahi that grew over trees killed by eruptions about 400 years ago, then subalpine shrubs, tussock and alpine herbfield. A third of the park's plant species grow in Ahukawakawa, a small swamp between the mountain and the Pouākai Range. The park is an island of forest in a sea of pasture, the district's only home for many birds; whio, blue duck, have been brought back.",
+    "Taranaki is linked by legend to the mountains of the central North Island: it is said that, fleeing its ancestral home, Taranaki carved out the bed of the Whanganui River. The maunga is a mauri, a life force, and a tupuna, an ancestor, for Taranaki Māori, and its summit is sacred. In 2025 an Act of Parliament recognised Te Kāhui Tupua, Taranaki Maunga and the other ancestral mountains with their surrounding lands, as a living and indivisible whole and a legal person.",
+    "James Cook sighted the mountain in January 1770 and named it Mount Egmont. As settlers cleared the plains, the forest's loss prompted protection: in 1881 the land within six miles, about 9.6 kilometres, of the summit was reserved, and in 1900 an Act made it Egmont National Park, New Zealand's second national park, with the country's first park board. The same 2025 Act gave the park the official name Te Papa-Kura-o-Taranaki."
+  ],
+  "howItWorks": [
+    "The park is still a national park under the National Parks Act 1980, which gives the public freedom of entry and access, and the Department of Conservation (DOC) runs its tracks, huts and visitor centres. Since the Taranaki Maunga Collective Redress Act 2025, Te Tōpuni Kōkōrangi, a statutory body, is the human face and voice of Te Kāhui Tupua, with functions for the park under that Act and the National Parks Act. It is now shaping He Kawa Ora, the park's new management plan.",
+    "The two most popular huts must be booked: Pouākai Hut, a new building opened in August 2025, and Holly Hut. Both are serviced huts with their own seasonal and weekend prices, and a Backcountry Hut Pass can be used at both. Konini Lodge at Dawson Falls and the historic Camphouse at North Egmont are bookable lodges, and three club lodges can be used by arrangement with their clubs. Freedom camping is not allowed at the North Egmont road end; you can camp overnight in the Stratford Plateau car park or the Mangorei Road car park.",
+    "No pets of any kind are allowed in the park: dogs, cats, rabbits, parrots or any other. Flying a drone needs a DOC permit. On the summit climb, do not stand directly on the summit peak, and do not camp, cook, go to the toilet or leave litter in the summit area. The springs along the track between North Egmont and Holly Hut are significant to iwi, hapū and whānau: do not wash in them or walk through them."
+  ],
+  "sights": [
+    {
+      "name": "Taranaki Maunga",
+      "note": "The 2,518-metre summit, a demanding climb of 1.6 vertical kilometres from North Egmont, best attempted January to April. Ice lies in the crater all year.",
+      "location": [-39.29639, 174.06472]
+    },
+    {
+      "name": "Pouākai tarns",
+      "note": "Small alpine pools on the Pouākai Range where, on a fine day, the mountain is mirrored. Keep to the boardwalk and do not enter the pools.",
+      "location": [-39.23396, 174.04723],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Ahukawakawa",
+      "note": "An alpine swamp between the mountain and the Pouākai Range, home to a third of the park's plant species, crossed on a boardwalk.",
+      "location": [-39.25201, 174.05092]
+    },
+    {
+      "name": "Te Rere-o-Tahurangi Falls",
+      "note": "A 31-metre waterfall where the Hangatahua River has cut through an ancient lava flow; an hour's return side trip from Holly Hut.",
+      "location": [-39.26057, 174.03981]
+    },
+    {
+      "name": "Dawson Falls / Te Rere o Noke",
+      "note": "An 18-metre waterfall near the Dawson Falls road end, on the mountain's south-eastern side.",
+      "location": [-39.32516, 174.10744]
+    },
+    {
+      "name": "Wilkies Pools",
+      "note": "Pools scoured from 20,000-year-old lava, reached through goblin forest in 20 minutes from Dawson Falls; the first 900 metres suit buggies and wheelchairs.",
+      "location": [-39.3164, 174.09502]
+    },
+    {
+      "name": "Panitahi",
+      "note": "The secondary vent on the mountain's southern flank, formed where magma found a weak point in the volcano; the Around the Mountain Circuit passes below it.",
+      "location": [-39.31044, 174.06609]
+    },
+    {
+      "name": "Dawson Falls Power Station",
+      "note": "Installed in 1935 to power the tourist lodge; its generator is the oldest in continuous operation in New Zealand. View the machine room from outside.",
+      "location": [-39.32278, 174.10387]
+    },
+    {
+      "name": "North Taranaki Visitor Centre",
+      "note": "DOC visitor centre at the top of Egmont Road, start of the summit climb and Pouākai Crossing. A new centre is being built; check opening hours.",
+      "location": [-39.2703, 174.09595],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Dawson Falls Visitor Centre",
+      "note": "A small visitor centre at the end of Manaia Road, with displays that include the old Syme Hut rebuilt inside.",
+      "location": [-39.32367, 174.10335],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "North Egmont, at the top of Egmont Road, 29 kilometres from New Plymouth — the North Taranaki Visitor Centre and the start of the summit climb",
+      "Stratford Plateau, at the top of Pembroke Road, and the East Egmont road end, about 20 minutes from Stratford",
+      "Dawson Falls / Te Rere o Kapuni, at the top of Manaia Road, 14 kilometres from Kaponga",
+      "Mangorei Road end, for the Pouākai tarns and the end of the Pouākai Crossing"
+    ],
+    "reservations": "Pouākai Hut, Holly Hut, Konini Lodge and the Camphouse are booked in advance through DOC. Car parking at North Egmont is limited until December 2026 while the new visitor centre is built — carpool or take a shuttle, and check before you go.",
+    "permits": [
+      "A DOC permit to fly a drone",
+      "Club lodges — Tahurangi, Kapuni and the Stratford Mountain Club's — by prior arrangement with the clubs"
+    ],
+    "camping": [
+      "Overnight camping is allowed in the Stratford Plateau and Mangorei Road car parks; freedom camping is prohibited at North Egmont",
+      "Space for about three tents outside Holly Hut; camping elsewhere around it is discouraged",
+      "Camping with a toilet at Mangōraukawa / Lake Dive, where the hut burned down in 2020"
+    ],
+    "lodging": [
+      "Pouākai Hut (34 bunks) and Holly Hut (32 bunks), both booked",
+      "Konini Lodge at Dawson Falls and the Camphouse at North Egmont",
+      "Two private tourist lodges inside the park; Dawson Falls Lodge is closed while it is redeveloped"
+    ],
+    "seasonalClosures": [
+      "From May to December the summit route is under snow and ice and needs mountaineering skills and equipment",
+      "High tracks on the Around the Mountain Circuit and parts of the Pouākai Crossing can be impassable in winter snow and ice — check with the North Taranaki Visitor Centre"
+    ]
+  },
+  "weather": "Taranaki Maunga's weather is changeable and unpredictable at any time of year, and the mountain rises so fast from near sea level that conditions change sharply with height. The coastal Kaitake Range is mild and humid, but the rest of the park is cold, windy and very wet: DOC's management plan records annual rainfall of 6.3 metres at Dawson Falls and 7.5 metres in the Pouākai–North Egmont area, and falls of almost half a metre in a day. Gales and blizzards often occur above 1,000 metres, and wind chill can be severe. January to April is the best time for non-mountaineers, when the mountain is often clear of snow and ice except in the crater; from May to December it is a winter alpine environment. In summer, wind can raise dust plumes on the western slopes that look like smoke.",
+  "directions": "The park lies on the west coast of the North Island, and the nearest towns are New Plymouth, Inglewood, Stratford and Opunake. Three roads climb into it. Egmont Road, which leaves State Highway 3 at Egmont Village, winds 6 kilometres through rainforest to North Egmont, about 30 minutes' drive from New Plymouth. Pembroke Road runs up from Stratford to the Stratford Plateau, and the East Egmont road end is about 20 minutes from Stratford. Manaia Road climbs to Dawson Falls, 30 minutes' drive from Stratford by way of Opunake Road, or 14 kilometres from Kaponga. The Pouākai Crossing ends at Mangorei Road, so arrange a shuttle with an operator.",
+  "fees": [
+    {
+      "title": "Pouākai Hut",
+      "cost": "$30–$40",
+      "amount": 30,
+      "currencyCode": "NZD",
+      "detail": "Per adult per night: $30 from 1 May to 30 September; $34 on weekdays and $36 at weekends from October to April; $38 and $40 from 1 December to 29 February. Children half price, infants free. Booking required. As listed by DOC in November 2026."
+    },
+    {
+      "title": "Holly Hut",
+      "cost": "$25–$34",
+      "amount": 25,
+      "currencyCode": "NZD",
+      "detail": "Per adult per night: $25 from 1 May to 30 September; $28 on weekdays and $32 at weekends from October to April; $29 and $34 from 1 December to 29 February. Booking required."
+    },
+    {
+      "title": "Park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "NZD",
+      "detail": "Under the National Parks Act the public has freedom of entry; there is no entry ticket."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 1655",
+      "text": "Taranaki's largest recent eruption spreads tephra across the central North Island."
+    },
+    {
+      "year": "1770",
+      "text": "James Cook sights the mountain on 10 January and names it Mount Egmont."
+    },
+    {
+      "year": "c. 1854",
+      "text": "The last major eruption of Taranaki Maunga."
+    },
+    {
+      "year": "1881",
+      "text": "Land within six miles of the summit is reserved, permanently from 28 July, to protect the forest."
+    },
+    {
+      "year": "1896",
+      "text": "The Dawson Falls Tourist Lodge opens on the mountain's south-eastern side."
+    },
+    {
+      "year": "1900",
+      "text": "The Egmont National Park Act makes it New Zealand's second national park."
+    },
+    {
+      "year": "1935",
+      "text": "The Dawson Falls power station is installed to power the tourist lodge; it still runs."
+    },
+    {
+      "year": "2025",
+      "text": "The Taranaki Maunga Collective Redress Act recognises Te Kāhui Tupua as a legal person and renames the park Te Papa-Kura-o-Taranaki."
+    },
+    {
+      "year": "2025",
+      "text": "The rebuilt Pouākai Hut opens in August."
+    }
+  ],
+  "safety": [
+    "The weather turns quickly and many rivers and streams are unbridged; some flood at any time of year. Carry clothing and equipment for any weather, and check the forecast and track conditions at a visitor centre first.",
+    "The summit climb is technically and physically demanding: scoria slopes with rockfall, the rocky Lizard ridge, a narrow ledge into the crater and ice in the crater all year. Choose a turnaround time before you start.",
+    "From May to December the mountain is covered in snow and ice. You need mountaineering skills, crampons and ice axe, avalanche skills and equipment, and clothing for sub-zero temperatures; allow nine hours and carry a head torch.",
+    "The Pouākai Crossing is a 19-kilometre backcountry tramp with an alpine section; turn back at the lookout above the Veronica Loop if you lack the gear or cannot see the mountain. Watch for rockfall on the Boomerang Slip.",
+    "Follow the Land Safety Code from DOC and the NZ Mountain Safety Council: choose the right trip, understand the weather, pack warm clothes and extra food, share your plans and carry a distress beacon."
+  ],
+  "regulations": [
+    "No pets of any kind anywhere in the park.",
+    "No drones without a DOC permit.",
+    "Do not stand on the summit peak, and do not camp, cook, toilet or litter in the summit area.",
+    "Keep to the boardwalks at the Pouākai tarns and do not enter the pools; do not wash in or walk through the springs between North Egmont and Holly Hut.",
+    "No freedom camping at the North Egmont road end; book huts in advance."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-mountains",
+    "theme-alpine",
+    "theme-temperate-rainforest",
+    "theme-wetland",
+    "theme-indigenous-heritage",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:Mount Taranaki Egmont National Park aerial view.jpg",
+      "caption": "Taranaki Maunga and its ring of forest from the air",
+      "altText": "A snow-capped cone-shaped volcano rising above a circle of dark green forest and farmland"
+    },
+    {
+      "file": "File:Pouakai Range, New Zealand, February 2016 05.JPG",
+      "caption": "The Pouākai Range, an older volcano worn down to a ridge",
+      "altText": "A long grassy and scrub-covered ridge under a blue sky"
+    },
+    {
+      "file": "File:Dawson Falls, New Zealand.jpg",
+      "caption": "Dawson Falls / Te Rere o Noke",
+      "altText": "A waterfall pouring over a dark rock ledge surrounded by green forest"
+    },
+    {
+      "file": "File:Eastern side of Mount Taranaki 01.jpg",
+      "caption": "The eastern side of Taranaki Maunga",
+      "altText": "The upper slopes of a volcano with patches of snow above tussock and forest"
+    }
+  ],
+  "sources": [
+    {"title": "Te Papa-Kura-o-Taranaki — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/"},
+    {"title": "Nature and conservation, Te Papa-Kura-o-Taranaki — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/nature-and-history/"},
+    {"title": "North Egmont area — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/north-egmont-area/"},
+    {"title": "Dawson Falls area — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/dawson-falls-area/"},
+    {"title": "East Egmont area — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/east-egmont-area/"},
+    {"title": "Taranaki Maunga Summit Climb — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/things-to-do/tracks/taranaki-maunga-summit-climb/"},
+    {"title": "Pouākai Crossing — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/things-to-do/tracks/pouakai-crossing/"},
+    {"title": "Around the Mountain Circuit — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/things-to-do/tracks/around-the-mountain-circuit/"},
+    {"title": "Wilkies Pools Loop Track — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/things-to-do/tracks/wilkies-pools-loop-track/"},
+    {"title": "Pouākai Hut — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/things-to-do/huts/pouakai-hut/"},
+    {"title": "Holly Hut — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/things-to-do/huts/holly-hut/"},
+    {"title": "Dawson Falls Power Station — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/dawson-falls-area/dawson-falls-power-station/"},
+    {"title": "Egmont National Park Management Plan 2002–2012 — Department of Conservation", "url": "https://www.doc.govt.nz/globalassets/documents/about-doc/role/policies-and-plans/national-park-management-plans/egmont/egmont-national-park-management-plan.pdf"},
+    {"title": "Be prepared with the Land Safety Code — Department of Conservation", "url": "https://www.doc.govt.nz/parks-and-recreation/know-before-you-go/land-safety-code/"},
+    {"title": "Te Ture Whakatupua mō Te Kāhui Tupua 2025/Taranaki Maunga Collective Redress Act 2025 — New Zealand Legislation", "url": "https://www.legislation.govt.nz/act/public/2025/0001/latest/whole.html"},
+    {"title": "National Parks Act 1980 — New Zealand Legislation", "url": "https://www.legislation.govt.nz/act/public/1980/0066/latest/DLM36963.html"},
+    {"title": "About Taranaki Maunga — GeoNet", "url": "https://www.geonet.org.nz/about/volcano/taranakiegmont"},
+    {"title": "Egmont National Park — Wikipedia", "url": "https://en.wikipedia.org/wiki/Egmont_National_Park"},
+    {"title": "Mount Taranaki — Wikipedia", "url": "https://en.wikipedia.org/wiki/Mount_Taranaki"},
+    {"title": "OpenStreetMap (sight coordinates)", "url": "https://www.openstreetmap.org/"}
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "placeID": "nz-np-rakiura",
+  "contentVersion": 1,
+  "summary": "New Zealand's newest national park covers 85 per cent of Stewart Island/Rakiura, a ferry ride or short flight south of the South Island. It is a land of sheltered inlets, empty beaches, coastal forest and deep mud, where kiwi can be seen in the wild — sometimes by day. The three-day Rakiura Track is a year-round Great Walk; the muddy North West Circuit takes nine to eleven days.",
+  "facts": {
+    "establishedYear": 2002,
+    "areaHectares": 157000,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "Stewart Island/Rakiura lies about 30 kilometres south-west of Bluff, between latitudes 46 and 47 degrees south. It is built of granite, with three main peaks; the highest, Mount Anglem/Hananui in the north, reaches 980 metres. On the west, sea-pounded cliffs and sandy beaches face the open ocean, and at Mason Bay blown sand has built some of the most significant dunes in New Zealand. Inland lie the Freshwater wetlands, and on the east three sheltered inlets: Paterson Inlet/Whaka a Te Wera, Port Adventure and Port Pegasus/Pikihatiti.",
+    "The island is remarkable for its almost complete cover of natural vegetation, from the sea to windswept summits. Rimu, kahikatea and tōtara in the north are New Zealand's southernmost tall trees. Birdlife is rich: kākā, kākāriki, kererū, tūī, weka, robins and fernbirds. The southern tokoeka, the Rakiura kiwi, lives in family groups and sometimes feeds by day, and the island offers perhaps the best chance anywhere to see kiwi in the wild. Stoats were never brought here, though deer, cats, rats and possums were. The island was the kākāpō's final stronghold before the last birds were moved to Whenua Hou.",
+    "Excavations show Māori living around the island from the thirteenth century, with hunting camps at Port William/Potirepo and Freshwater River reached by outrigger canoe. Rakiura is usually translated as 'the land of glowing skies', perhaps for the aurora australis; the island is also Te Puka a te Waka a Māui, the anchor of Māui's canoe. The Endeavour's crew sighted it in 1770 but charted it as a cape. Sealers followed, and in 1864 the Crown bought the island from Rakiura Māori, whose right to harvest tītī (muttonbirds) was protected.",
+    "Shipbuilding at Port Pegasus in 1826 was the first of many ventures — gold prospecting, tin mining, fishing — and sawmills opened at Kaipipi in Paterson Inlet in 1861. Ulva Island was the community's hub, with a post office from 1872 to 1923, and Island Hill Run, founded in 1879 near Mason Bay, became the island's longest-running sheep station. Today about 400 people live around Halfmoon Bay and Oban. The national park was established in 2002."
+  ],
+  "howItWorks": [
+    "Rakiura National Park is public conservation land managed by the Department of Conservation (DOC), and there is no entry fee: the National Parks Act gives the public freedom of entry and access. Getting there is the first step. The ferry from Bluff takes about an hour across Foveaux Strait, and flights from Invercargill take about 20 minutes. Oban, on Halfmoon Bay, is the island's only settlement, with a general store, accommodation and DOC's Rakiura National Park Visitor Centre; there is one ATM, open only in shop hours, and it does not take overseas cards. DOC recommends calling at the visitor centre before any of the longer walks.",
+    "The Rakiura Track is one of DOC's Great Walks, and the only one here: a 32-kilometre loop from Oban through Lee Bay, the park's official entrance, walked in three days. It is a year-round Great Walk, and every hut and campsite must be booked in advance in every season, with a maximum stay of two nights at each. International visitors pay more than New Zealanders. Parts of the track cross Māori land, and access is by courtesy of the owners. The North West and Southern circuits use backcountry huts paid with hut tickets or a Backcountry Hut Pass; only the Great Walk huts and campsites along them must be booked.",
+    "The longer tracks are hard going. Mud, often knee-deep, lies on them in every season; there are unbridged rivers, beaches that can only be passed at low tide, and no radios in the huts, while mobile coverage is very limited. DOC strongly recommends a personal locator beacon. Deer hunters are active all year, and hunting needs a permit. Dogs are not allowed in the park, and flying a drone needs a DOC permit."
+  ],
+  "sights": [
+    {
+      "name": "Lee Bay",
+      "note": "The official entrance to the park, 5 km from Oban, where the Rakiura Track passes through a chain-link sculpture recalling the island as the anchor of Māui's canoe.",
+      "location": [
+        -46.858,
+        168.1214
+      ],
+      "kind": "entrance"
+    },
+    {
+      "name": "Māori Beach",
+      "note": "A Rakiura Track beach that was a sawmilling settlement, with a school, until the 1930s; a boiler and steam engine remain. A 6–7 hour return day walk from Oban.",
+      "location": [
+        -46.8547,
+        168.083
+      ]
+    },
+    {
+      "name": "Garden Mound",
+      "note": "A steep, muddy climb to 160 metres through unmilled rimu, rātā, miro and kāmahi, with views over Oban; return by the coast via Lee Bay. Four to five hours.",
+      "location": [
+        -46.8678,
+        168.1176
+      ]
+    },
+    {
+      "name": "Ulva Island/Te Wharawhara",
+      "note": "A predator-free open sanctuary in Paterson Inlet, a short boat ride from Halfmoon Bay or Golden Bay, where saddleback, mohua and kiwi thrive. Day visits only.",
+      "location": [
+        -46.9315,
+        168.1339
+      ]
+    },
+    {
+      "name": "Mason Bay",
+      "note": "A long west-coast beach backed by great dunes, on the North West and Southern circuits. Its northern end can be passed only at low tide; check tide times with DOC.",
+      "location": [
+        -46.9138,
+        167.709
+      ]
+    },
+    {
+      "name": "Mount Anglem/Hananui",
+      "note": "The island's highest point, 980 metres: a six-hour return side trip from Christmas Village Hut on the North West Circuit, through forest and leatherwood. Often muddy and foggy.",
+      "location": [
+        -46.7406,
+        167.9164
+      ]
+    },
+    {
+      "name": "Rakiura National Park Visitor Centre",
+      "note": "DOC's visitor centre at 15 Main Road, Oban, for track and weather updates, Mason Bay tide times, hut passes and hunting permits.",
+      "location": [
+        -46.8982,
+        168.1264
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Oban, on Halfmoon Bay — where ferries and flights arrive, with the visitor centre",
+      "Lee Bay, 5 km from Oban — the official park entrance and start of the Rakiura Track",
+      "Fern Gully car park, 2 km beyond the visitor centre — the other end of the Rakiura Track",
+      "Water taxis to Ulva Island, Rakiura Track huts and Freshwater Landing for the Southern Circuit"
+    ],
+    "reservations": "Every Rakiura Track hut and campsite must be booked in advance all year; without a booking you may be charged a penalty or turned away. Great Walk huts and campsites used on the North West Circuit must also be booked. Ferries, flights and water taxis are booked with the operators.",
+    "permits": [
+      "Hunting needs a permit, from the visitor centre or online",
+      "Flying a drone needs a DOC permit, including over Ulva Island"
+    ],
+    "camping": [
+      "Māori Beach, Port William and North Arm campsites on the Rakiura Track, booked in advance; camping only at designated sites",
+      "No camping on Ulva Island"
+    ],
+    "lodging": [
+      "Accommodation in Oban and around Halfmoon Bay",
+      "Port William and North Arm Great Walk huts on the Rakiura Track",
+      "Backcountry huts on the North West and Southern circuits, with no gas, lighting or power"
+    ],
+    "seasonalClosures": [
+      "Mud and flooding on the North West and Southern circuits in any season; low-lying sections flood in heavy rain",
+      "The northern end of Mason Bay may be passable only at low tide, and sometimes not at all in storms — check tide times with DOC"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "Stewart Island's weather is unpredictable, and strong winds can blow up at short notice; DOC asks visitors to be ready for wind, rain, sun and sleet, and for hail and heavy rain in any season. Average temperatures are about 15 °C in summer and 9 °C in winter, and around 1,600 millimetres of rain falls in a year. Snow can fall above the bushline on the North West Circuit at any time. The Rakiura Track is walked all year, but the longer circuits stay muddy in every season, and flooded rivers and swampy ground can hold you up.",
+  "directions": "Stewart Island/Rakiura is about 30 km south-west of Bluff. A ferry crosses Foveaux Strait from Bluff to Oban in about an hour, and flights from Invercargill take about 20 minutes. On the island, shuttles run to Lee Bay and water taxis to the Rakiura Track huts, Ulva Island and Freshwater Landing. It is about 5 km by road from Oban to the park entrance at Lee Bay.",
+  "fees": [
+    {
+      "title": "Rakiura Track huts, 1 October – 30 April",
+      "cost": "NZ$44 per adult per night (New Zealanders)",
+      "amount": 44,
+      "currencyCode": "NZD",
+      "detail": "International adults NZ$66; children NZ$22 (New Zealand) or NZ$33 (international). NZ$38 for everyone from 1 May to 30 June and NZ$31 from 1 July to 30 September. As listed by DOC for the 2026/27 season."
+    },
+    {
+      "title": "Rakiura Track campsites, 1 October – 30 April",
+      "cost": "NZ$19 per adult per night (New Zealanders)",
+      "amount": 19,
+      "currencyCode": "NZD",
+      "detail": "International adults NZ$28; children NZ$9 (New Zealand) or NZ$14 (international); lower rates from May to September. As listed by DOC for the 2026/27 season."
+    },
+    {
+      "title": "Backcountry huts, North West and Southern circuits",
+      "cost": "NZ$15 per adult per night (standard hut)",
+      "amount": 15,
+      "currencyCode": "NZD",
+      "detail": "Paid with hut tickets or a Backcountry Hut Pass (NZ$140 a year for an adult); serviced huts are NZ$25. As listed by DOC in November 2026; check each hut's page."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1200s",
+      "text": "Māori are living around the island, with hunting camps at Port William/Potirepo and Freshwater River."
+    },
+    {
+      "year": "1770",
+      "text": "The crew of Captain Cook's Endeavour sight the island but chart it as a cape of the South Island."
+    },
+    {
+      "year": "1826",
+      "text": "A shipbuilding settlement is attempted at Port Pegasus/Pikihatiti."
+    },
+    {
+      "year": "1861",
+      "text": "The first sawmills open at Kaipipi in Paterson Inlet."
+    },
+    {
+      "year": "1864",
+      "text": "The Crown buys the island from Rakiura Māori, protecting their right to harvest tītī."
+    },
+    {
+      "year": "1872",
+      "text": "Charles Traill opens a post office on Ulva Island; it runs until 1923."
+    },
+    {
+      "year": "1879",
+      "text": "Island Hill Run is established, the island's longest-running sheep station."
+    },
+    {
+      "year": "1931",
+      "text": "The Māori Beach mill, the last operating sawmill on the island, closes."
+    },
+    {
+      "year": "1996",
+      "text": "Rats are eradicated from Ulva Island, which has been pest-free since 1997."
+    },
+    {
+      "year": "2002",
+      "text": "Rakiura National Park is established, New Zealand's newest."
+    }
+  ],
+  "safety": [
+    "Visit the Rakiura National Park Visitor Centre before any longer walk; weather and track conditions change constantly.",
+    "Do not cross a flooded river or stream — wait or turn back. Carry spare food and an emergency shelter in case weather, tides or floods hold you up.",
+    "Walk the north end of Mason Bay at low tide only, and check Mason Bay tide times, which differ from Oban's.",
+    "Carry a personal locator beacon: the huts have no radios and mobile coverage is very limited. Treat stream water before drinking."
+  ],
+  "regulations": [
+    "No dogs or other pets in the national park or on Ulva Island.",
+    "Flying a drone without a DOC permit is prohibited.",
+    "Stay no more than two nights at each Rakiura Track hut or campsite, and camp only at designated sites.",
+    "On Ulva Island: no night visits, no camping, no playing of bird calls, and keep to the paths; check boats and bags for rats and seeds first.",
+    "Hunting requires a permit; fishing must follow the Te Whaka a Te Wera Mātaitai Reserve bylaws and marine reserve rules."
+  ],
+  "themes": [
+    "theme-islands",
+    "theme-coastal",
+    "theme-temperate-rainforest",
+    "theme-dunes"
+  ],
+  "photos": [
+    {
+      "file": "File:Mason Bay towards north (from the air).jpg",
+      "caption": "Mason Bay from the air, looking north",
+      "altText": "A long curving beach with white surf, backed by wide grassy sand dunes and green hills"
+    },
+    {
+      "file": "File:Mason Bay southwest towards Ernest Islands.jpg",
+      "caption": "Mason Bay, looking south-west towards the Ernest Islands",
+      "altText": "A wide sandy beach below an eroded dune, with islands on the horizon under a blue sky"
+    },
+    {
+      "file": "File:Lee Bay at the start of the Rakiura Track.JPG",
+      "caption": "The chain-link sculpture at Lee Bay, the start of the Rakiura Track",
+      "altText": "A large rust-coloured sculpture of chain links on a grassy bank above a small sandy bay"
+    },
+    {
+      "file": "File:South Island saddleback perched on a vine (Ulva Island).jpg",
+      "caption": "A South Island saddleback on Ulva Island/Te Wharawhara",
+      "altText": "A black bird with a chestnut back and orange wattles perched on a curved stem"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rakiura National Park — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/"
+    },
+    {
+      "title": "Nature and history, Rakiura National Park — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/nature-and-history/"
+    },
+    {
+      "title": "Stewart Island/Rakiura — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/"
+    },
+    {
+      "title": "Rakiura Track — Department of Conservation",
+      "url": "https://www.doc.govt.nz/rakiuratrack"
+    },
+    {
+      "title": "North West Circuit — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/things-to-do/north-west-circuit-stewart-island-rakiura/"
+    },
+    {
+      "title": "Southern Circuit — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/things-to-do/southern-circuit-stewart-island-rakiura/"
+    },
+    {
+      "title": "Rakiura day walks — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/things-to-do/rakiura-day-walks/"
+    },
+    {
+      "title": "Ulva Island/Te Wharawhara — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/ulva-island-te-wharawhara/"
+    },
+    {
+      "title": "Great Walks pricing — Department of Conservation",
+      "url": "https://www.doc.govt.nz/about-us/our-role/managing-conservation/recreation-management/great-walks-management/pricing/"
+    },
+    {
+      "title": "Hut categories — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/hut-categories/"
+    },
+    {
+      "title": "Backcountry Hut Pass — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/booking-and-paying/backcountry-hut-pass/"
+    },
+    {
+      "title": "Rakiura National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rakiura_National_Park"
+    },
+    {
+      "title": "National parks of New Zealand — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    },
+    {
+      "title": "Mount Anglem — Wikipedia (coordinates)",
+      "url": "https://en.wikipedia.org/wiki/Mount_Anglem"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

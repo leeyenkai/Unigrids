@@ -1,0 +1,315 @@
+{
+  "placeID": "nz-np-mount-aspiring",
+  "contentVersion": 1,
+  "summary": "Remote wilderness, high mountains and long beech-forested valleys at the southern end of the Southern Alps, west of Lake Wānaka. Mount Aspiring/Tititea, the only peak over 3,000 metres outside Aoraki/Mount Cook National Park, gives the park its name. Day walkers come for Rob Roy Glacier and the Blue Pools; trampers and climbers for the Matukituki, Gillespie Pass and the start of the Routeburn Track.",
+  "facts": {
+    "establishedYear": 1964,
+    "areaHectares": 355543,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "The park reaches from the Haast River in the north to the Humboldt Mountains in the south, and large valleys carved by ancient glaciers cut through its ranges. Most of the Southern Alps/Kā Tiritiri o te Moana began more than 220 million years ago as sediment on the seafloor, before heat and pressure hardened it and uplift raised the main divide; the ice ages then scoured out the valleys. In the south-west, the Red Hills mineral belt carries so much magnesium in its soil that only a few hardy plants survive.",
+    "Beech forest covers the valleys: red beech in sunny, frost-free places, silver and mountain beech higher up, where they shrug off winter snow. Ribbonwood, one of New Zealand's few deciduous trees, is among the first to colonise slips and avalanche paths. Above the bushline lie snow tussock and herb fields of mountain buttercups and daisies. Riflemen, bellbirds, robins, yellow-crowned parakeets and mohua live in the forest; kea and the threatened rock wren live up high, and rare long-tailed bats roost in old red beech in the Makarora, East Matukituki and Routeburn valleys.",
+    "Māori came here first, for food and pounamu, and their greenstone trails over the mountain passes are still in use; Haast Pass/Tioripatea carries State Highway 6. Kāti Māmoe and Kāi Tahu had settlements around lakes Wānaka and Hāwea, and called the Makarora valley Kaika Paekai, the place of abundant food. To them the mountain was Tititea, the steep peak of glistening white. Through the year people came inland from Foveaux Strait and coastal Otago to take kākāpō, kākā, kererū and tūī from the forest.",
+    "A government surveyor was the first European to see Tititea, in 1857, and James Hector explored the West Matukituki in 1862. Farming began in the valley in the 1870s, and miners worked minerals such as scheelite. Tourism followed in the late 1880s, when guided trips already ran into the Routeburn. A pack track crossed Haast Pass from 1876, but the road from Wānaka to the West Coast was not finished until 1965. The national park was created in 1964, and became part of Te Wāhipounamu – South West New Zealand World Heritage Area in 1990."
+  ],
+  "howItWorks": [
+    "Mount Aspiring is public conservation land managed by the Department of Conservation (DOC); there is no entry fee, because the National Parks Act gives the public freedom of entry and access within the rules that protect the park. It is one of New Zealand's larger parks and possibly its least developed. The towns are outside it — Wānaka, Queenstown, Glenorchy and Te Anau — and DOC's Wānaka Tititea/Mount Aspiring National Park Visitor Centre in Wānaka is the place to check weather, track and road conditions. There is no visitor centre at Makarora.",
+    "The Routeburn Track, one of DOC's Great Walks, begins at the Routeburn Shelter in this park and crosses into Fiordland National Park at Harris Saddle/Tarahaka Whakatipu. From 1 November to 30 April its huts and campsites must be booked well in advance, at higher rates for international visitors than for New Zealanders. Elsewhere the huts are a mix: Aspiring Hut in the West Matukituki is owned by the New Zealand Alpine Club, open to the public and must be booked; most other backcountry huts are first come, first served, paid with hut tickets or a Backcountry Hut Pass.",
+    "Much of the backcountry is serious. Avalanches threaten the Rob Roy Track, the Cascade Saddle Route and the head of the West Matukituki in winter and spring, and the New Zealand Avalanche Advisory gives the daily danger. Rivers rise fast after rain, and people have drowned crossing them on the Gillespie Pass Circuit. The West Matukituki and Rob Roy tracks cross private farmland, where you stay on the track, leave gates as you find them and keep clear of stock. Dogs are not allowed in the park, and flying a drone needs a DOC permit."
+  ],
+  "sights": [
+    {
+      "name": "Mount Aspiring/Tititea",
+      "note": "The park's namesake, the only peak over 3,000 metres outside Aoraki/Mount Cook National Park; its Māori name means the steep peak of glistening white. A mountaineer's summit.",
+      "location": [
+        -44.3842,
+        168.7279
+      ]
+    },
+    {
+      "name": "Rob Roy Track",
+      "note": "Ten kilometres return from Raspberry Creek, over a swing bridge and up through beech forest to views of Rob Roy Glacier. From May to November, stop at the lower lookout.",
+      "location": [
+        -44.4667,
+        168.7167
+      ]
+    },
+    {
+      "name": "Cascade Saddle",
+      "note": "An exposed alpine crossing from the West Matukituki to the Dart, best in mid to late summer and only for experienced, well-equipped trampers. Multiple people have died on it.",
+      "location": [
+        -44.476,
+        168.6245
+      ]
+    },
+    {
+      "name": "Blue Pools",
+      "note": "Snow-fed pools in the Makarora River, clear and blue after dry weather; an easy 1.5-hour return walk through silver beech and over two swing bridges. No jumping off them.",
+      "location": [
+        -44.1615,
+        169.2718
+      ]
+    },
+    {
+      "name": "Haast Pass/Tioripatea Lookout",
+      "note": "A one-hour return climb of 150 metres from the top of the pass to a viewpoint above the beech forest, with Mount Brewster prominent to the north-east.",
+      "location": [
+        -44.1059,
+        169.352
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Gillespie Pass",
+      "note": "The high point of a 56-km, three-to-four-day circuit through the Young and Wilkin valleys, with a side trip to Crucible Lake. For experienced parties with river-crossing skills.",
+      "location": [
+        -44.1565,
+        169.0709
+      ]
+    },
+    {
+      "name": "Routeburn Falls",
+      "note": "The cascade at the bushline above the Routeburn Flats, two and a half to four hours up the Routeburn Track from the Routeburn Shelter, below the climb to Harris Saddle.",
+      "location": [
+        -44.7249,
+        168.1991
+      ]
+    },
+    {
+      "name": "Wānaka Tititea/Mount Aspiring National Park Visitor Centre",
+      "note": "DOC's visitor centre in Wānaka, for weather, track and road conditions and hut bookings before heading into the park.",
+      "location": [
+        -44.6945,
+        169.143
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Raspberry Creek car park, 54 km west of Wānaka at the end of the Wanaka–Mount Aspiring Road — the West Matukituki, Rob Roy and Cascade Saddle tracks",
+      "Makarora and SH6 between Wānaka and Haast — the Blue Pools, Haast Pass Lookout and Gillespie Pass Circuit",
+      "The Routeburn Shelter, reached by road from Queenstown and Glenorchy — the eastern start of the Routeburn Track"
+    ],
+    "reservations": "There is no entry booking. Routeburn Track huts and campsites must be booked for the Great Walks season, 1 November to 30 April, and Aspiring Hut must be booked. Check weather, river and road conditions with the Wānaka visitor centre or DOC's Wānaka and Queenstown updates before you go.",
+    "permits": [
+      "Flying a drone needs a DOC permit",
+      "Hunting on conservation land needs a DOC hunting permit"
+    ],
+    "camping": [
+      "Routeburn Flats campsite on the Routeburn Track, booked in the Great Walks season",
+      "On the Cascade Saddle Route camping is allowed only near Cascade Creek, where there is a toilet",
+      "Young Forks campsite on the Gillespie Pass Circuit; no camping around Young Hut",
+      "Do not camp at Shovel Flat in the West Matukituki, where avalanche debris can reach the valley floor"
+    ],
+    "lodging": [
+      "Aspiring Hut, a 32-bunk serviced alpine hut with a summer warden, two to two and a half hours from Raspberry Creek",
+      "Routeburn Flats and Routeburn Falls huts on the Routeburn Track",
+      "Accommodation in Wānaka, Glenorchy, Queenstown and Makarora"
+    ],
+    "seasonalClosures": [
+      "Avalanche danger on the Rob Roy Track, the Cascade Saddle Route and from Pearl Flat to the head of the West Matukituki in winter and spring — check the New Zealand Avalanche Advisory",
+      "Fords on the last 10 km of the Wanaka–Mount Aspiring Road can become impassable after heavy rain, and washouts can close the road",
+      "Aspiring Hut has no warden, cookers or flush toilets from King's Birthday weekend in early June to Labour weekend in late October",
+      "The Gillespie Pass Circuit is not recommended in winter"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "Alpine conditions can arrive in any month, and the weather is hard to predict, so carry warm, waterproof layers even on a summer day walk. Spring and summer bring the mountain daisies and buttercups into flower, and the Cascade Saddle Route is best in mid to late summer. In winter and early spring, ice makes shaded tracks slippery, and avalanches can reach the Rob Roy Track and the head of the West Matukituki; DOC asks walkers to stop at the Rob Roy lower lookout from May to November. Rain raises rivers and fords quickly: the Blue Pools turn brown and muddy after heavy rain, and the Matukituki road fords are usually passable again after a day of little or no rain.",
+  "directions": "State Highway 6 crosses the north-west of the park over Haast Pass, with Makarora on it between Wānaka and Haast; the Blue Pools car park is 10 km past Makarora and the Haast Pass Lookout 80 km north of Wānaka. Roads also lead to the main entrances from Wānaka, Queenstown and Glenorchy, and Te Anau. The drive from Wānaka to Raspberry Creek takes about an hour and twenty minutes, the last 30 km on gravel with several fords. Local transport runs to most entrances, including a boat from Glenorchy to the Greenstone Valley, and frequent buses serve Queenstown, Wānaka and Te Anau. Queenstown airport has regular services and Wānaka has domestic flights.",
+  "fees": [
+    {
+      "title": "Aspiring Hut",
+      "cost": "NZ$50 per adult per night",
+      "amount": 50,
+      "currencyCode": "NZD",
+      "detail": "Youth 5–17 NZ$25, children under 5 free; New Zealand Alpine Club members NZ$25. Booking required. As listed by DOC in November 2026."
+    },
+    {
+      "title": "Routeburn Track huts, 1 November – 30 April",
+      "cost": "NZ$88 per adult per night (New Zealanders)",
+      "amount": 88,
+      "currencyCode": "NZD",
+      "detail": "International adults NZ$132; children NZ$44 (New Zealand) or NZ$66 (international). Campsites NZ$28 or NZ$42. Lower rates outside the Great Walks season. As listed by DOC for the 2026/27 season."
+    },
+    {
+      "title": "Blue Pools car park",
+      "cost": "NZ$2.50 per half hour",
+      "amount": 2.5,
+      "currencyCode": "NZD",
+      "detail": "DOC announced on 16 November 2026 that parking here will be charged from December 2026: the first 10 minutes free, NZ$2.50 a half hour or NZ$20 a day. Check before you go."
+    },
+    {
+      "title": "Standard and serviced backcountry huts",
+      "cost": "NZ$15 / NZ$25 per adult per night",
+      "amount": 15,
+      "currencyCode": "NZD",
+      "detail": "The standard and serviced hut rates DOC listed in November 2026; a 12-month Backcountry Hut Pass is NZ$140 for an adult. Check each hut's page, as some differ."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1857",
+      "text": "A government surveyor becomes the first European to see Mount Aspiring/Tititea."
+    },
+    {
+      "year": "1862",
+      "text": "James Hector explores the West Matukituki Valley."
+    },
+    {
+      "year": "1870s",
+      "text": "Farming begins in the Matukituki Valley."
+    },
+    {
+      "year": "1876",
+      "text": "A pack track opens up the Makarora Valley and over Haast Pass/Tioripatea."
+    },
+    {
+      "year": "1880s",
+      "text": "Tourism begins; guided trips already run into the Routeburn Valley."
+    },
+    {
+      "year": "1964",
+      "text": "Mount Aspiring National Park is created."
+    },
+    {
+      "year": "1965",
+      "text": "The road over Haast Pass, linking Wānaka to the West Coast, is completed."
+    },
+    {
+      "year": "1990",
+      "text": "Te Wāhipounamu – South West New Zealand World Heritage Area is established in December, taking in the park."
+    }
+  ],
+  "safety": [
+    "From May to November, end the Rob Roy Track at the lower lookout: avalanches cross the upper section even when no snow is visible from the track.",
+    "Do not attempt the Cascade Saddle Route in snow without an ice axe, crampons and the skills to use them, and turn back at the bushline or the pylon if the weather is closing in.",
+    "Never cross a river that is high or rising. If the Makarora is too high at the start of the Gillespie Pass Circuit, wait, take the Young River Link Track or use a commercial jetboat.",
+    "Drive the Matukituki road fords slowly and check their depth on foot if in doubt; after heavy rain they can stop even four-wheel-drive vehicles."
+  ],
+  "regulations": [
+    "No dogs or other pets in the national park.",
+    "Flying a drone without a DOC permit is prohibited.",
+    "Camp only where allowed: near Cascade Creek on the Cascade Saddle Route, and not around Young Hut.",
+    "On farmland, stay on the marked track, leave gates as you find them and do not disturb stock.",
+    "Do not feed kea, and keep your gear out of their reach."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-glaciers",
+    "theme-alpine"
+  ],
+  "photos": [
+    {
+      "file": "File:Mount Aspiring Tititea, Mount Avalanche, and Popes Nose.jpg",
+      "caption": "Mount Aspiring/Tititea from the air, with Mount Avalanche and Popes Nose",
+      "altText": "A sharp snow-covered summit above broad glaciers and jagged rocky ridges"
+    },
+    {
+      "file": "File:Rob Roy Glacier across head of Rob Roy Valley in spring 2014.jpg",
+      "caption": "Rob Roy Glacier across the head of the Rob Roy Valley",
+      "altText": "A glacier hanging above dark cliffs and waterfalls at the head of a rocky valley"
+    },
+    {
+      "file": "File:Blue Pools at the confluence of Blue River and Makarora River, surrounded by beech forest.jpg",
+      "caption": "The Blue Pools, where the Blue River meets the Makarora",
+      "altText": "A clear turquoise river pool beside a pale gravel bar, with beech forest and a mountain behind"
+    },
+    {
+      "file": "File:Matukituki River West Branch downstream from swingbridge towards Sharks Tooth Peak.jpg",
+      "caption": "The West Matukituki River, looking downstream from a swing bridge",
+      "altText": "A rocky blue-green river running between scrubby banks towards snow-capped peaks"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mount Aspiring National Park — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/"
+    },
+    {
+      "title": "Matukituki Valley area — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/matukituki-valley-area/"
+    },
+    {
+      "title": "Makarora area — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/makarora-area/"
+    },
+    {
+      "title": "Rob Roy Track — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/things-to-do/tracks/rob-roy-track/"
+    },
+    {
+      "title": "West Matukituki Track — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/things-to-do/tracks/west-matukituki-track/"
+    },
+    {
+      "title": "Cascade Saddle Route — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/things-to-do/tracks/cascade-saddle-route/"
+    },
+    {
+      "title": "Gillespie Pass Circuit — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/things-to-do/tracks/gillespie-pass-circuit/"
+    },
+    {
+      "title": "Blue Pools Track — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/things-to-do/tracks/blue-pools-track/"
+    },
+    {
+      "title": "Haast Pass Lookout Track — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/things-to-do/tracks/haast-pass-lookout-track/"
+    },
+    {
+      "title": "Aspiring Hut — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/things-to-do/huts/aspiring-hut/"
+    },
+    {
+      "title": "Routeburn Track — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/routeburn-track/"
+    },
+    {
+      "title": "Great Walks pricing — Department of Conservation",
+      "url": "https://www.doc.govt.nz/about-us/our-role/managing-conservation/recreation-management/great-walks-management/pricing/"
+    },
+    {
+      "title": "Hut categories — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/hut-categories/"
+    },
+    {
+      "title": "Backcountry Hut Pass — Department of Conservation",
+      "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/booking-and-paying/backcountry-hut-pass/"
+    },
+    {
+      "title": "Start of car park fees at various DOC sites (16 November 2026) — Department of Conservation",
+      "url": "https://www.doc.govt.nz/news/media-releases/2026-media-releases/start-of-car-park-fees-at-various-doc-sites/"
+    },
+    {
+      "title": "Mount Aspiring National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mount_Aspiring_National_Park"
+    },
+    {
+      "title": "Routeburn Track — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Routeburn_Track"
+    },
+    {
+      "title": "National parks of New Zealand — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/National_parks_of_New_Zealand"
+    },
+    {
+      "title": "Mount Aspiring / Tititea — Wikipedia (coordinates)",
+      "url": "https://en.wikipedia.org/wiki/Mount_Aspiring_/_Tititea"
+    },
+    {
+      "title": "Rob Roy Glacier — Wikipedia (coordinates)",
+      "url": "https://en.wikipedia.org/wiki/Rob_Roy_Glacier"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}
