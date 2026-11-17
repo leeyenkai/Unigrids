@@ -95,6 +95,8 @@ PLACE_NAMESPACES: dict[str, tuple[str, ...]] = {
     "no": ("np", "lvo", "nr"),
     # National parks, and conservation and forest parks (Conservation Act s 19).
     "nz": ("np", "cp"),
+    # The national parks with a guide, and every other state or territory national park.
+    "au": ("np", "snp"),
     # National parks (with the reserves and Rouge National Urban Park), national marine
     # conservation areas, and provincial and territorial parks.
     "ca": ("np", "mca", "pp"),

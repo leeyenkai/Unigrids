@@ -63,6 +63,11 @@ EXTRACTS: dict[str, Extract] = {
         "https://download.geofabrik.de/australia-oceania/new-zealand-latest.osm.pbf",
         "new-zealand-latest.osm.pbf",
     ),
+    "au": Extract(
+        "geofabrik-au",
+        "https://download.geofabrik.de/australia-oceania/australia-latest.osm.pbf",
+        "australia-latest.osm.pbf",
+    ),
 }
 
 GEOFABRIK_CANADA = "https://download.geofabrik.de/north-america/canada"
@@ -280,6 +285,18 @@ def tag_rule(**rules: str | None) -> TagRule:
 
 
 HUT_RULE = tag_rule(tourism="^(alpine_hut|wilderness_hut)$")
+FACILITY_TOURISM = ("alpine_hut", "wilderness_hut", "camp_site")
+"""The ``tourism`` values a ``facilities`` selection keeps, with visitor centres
+(``tourism=information`` + ``information=office``)."""
+
+
+def is_facility(tags: dict[str, str]) -> bool:
+    """A hut, a campground or a staffed information office (a visitor centre)."""
+    tourism = tags.get("tourism")
+    return tourism in FACILITY_TOURISM or (
+        tourism == "information" and tags.get("information") == "office"
+    )
+
 STATION_RULE = tag_rule(railway="^(station|halt)$")
 TRAIN_ROUTE_RULE = tag_rule(route="^train$")
 HIKING_RULE = tag_rule(route="^hiking$")
@@ -301,6 +318,8 @@ class Request:
     """What one raw file holds: the selections, each over its own box.
 
     ``huts`` — ``nwr[tourism~huts](box); out center tags;``
+    ``facilities`` — the same for huts, campgrounds (``tourism=camp_site``) and visitor
+    centres (``tourism=information`` with ``information=office``).
     ``stations`` — ``node[railway~station|halt](box); out;``
     ``rail`` — ``RAIL_QUERY``: train routes touching the box, their route masters, member
     ways with a railway tag (``out geom``) and member nodes (``out``), plus the stations
@@ -311,6 +330,7 @@ class Request:
 
     name: str
     huts: Box | None = None
+    facilities: Box | None = None
     stations: Box | None = None
     rail: Box | None = None
     trails: Box | None = None
@@ -344,6 +364,7 @@ def select(path: Path, requests: list[Request]) -> dict[str, list[Record]]:
     wants_rail = any(request.rail for request in requests)
     wants_trails = any(request.trails for request in requests)
     wants_huts = any(request.huts for request in requests)
+    wants_facilities = any(request.facilities for request in requests)
     wants_stations = wants_rail or any(request.stations for request in requests)
     way_rules = [trail_way_rule(kind) for kind in {r.trail_kinds for r in requests if r.trails}]
     store = _Store()
@@ -363,6 +384,7 @@ def select(path: Path, requests: list[Request]) -> dict[str, list[Record]]:
           if wants_rail else []),
         *([("route", "hiking")] if wants_trails else []),
         *(_HUT_TAGS if wants_huts else []),
+        *(_FACILITY_TAGS if wants_facilities else []),
     ]
     want_way_ids: set[int] = set()
     want_node_ids: set[int] = set()
@@ -397,6 +419,7 @@ def select(path: Path, requests: list[Request]) -> dict[str, list[Record]]:
     way_tags = [
         *({("highway", kind) for rule in way_rules for kind in _alternatives(rule)}),
         *(_HUT_TAGS if wants_huts else []),
+        *(_FACILITY_TAGS if wants_facilities else []),
     ]
     if way_tags:
         for way in scan(osmium.osm.WAY, *sorted(way_tags)):
@@ -405,7 +428,7 @@ def select(path: Path, requests: list[Request]) -> dict[str, list[Record]]:
             tags = dict(way.tags)
             if any(rule.matches(tags) for rule in way_rules) or (
                 wants_huts and HUT_RULE.matches(tags)
-            ):
+            ) or (wants_facilities and is_facility(tags)):
                 keep_way(way)
 
     # Nodes: every one a kept way or relation uses, then huts and stations by tag.
@@ -421,6 +444,7 @@ def select(path: Path, requests: list[Request]) -> dict[str, list[Record]]:
                 keep_node(node, dict(node.tags))
     node_tags = [
         *(_HUT_TAGS if wants_huts else []),
+        *(_FACILITY_TAGS if wants_facilities else []),
         *(_STATION_TAGS if wants_stations else []),
     ]
     if node_tags:
@@ -428,13 +452,16 @@ def select(path: Path, requests: list[Request]) -> dict[str, list[Record]]:
             if node.id in store.nodes or not node.location.valid():
                 continue
             tags = dict(node.tags)
-            if HUT_RULE.matches(tags) or _is_station(tags):
+            if HUT_RULE.matches(tags) or _is_station(tags) or (
+                wants_facilities and is_facility(tags)
+            ):
                 keep_node(node, tags)
 
     return {request.name: _assemble(store, request) for request in requests}
 
 
 _HUT_TAGS = [("tourism", "alpine_hut"), ("tourism", "wilderness_hut")]
+_FACILITY_TAGS = [*_HUT_TAGS, ("tourism", "camp_site"), ("tourism", "information")]
 _STATION_TAGS = [("railway", "station"), ("railway", "halt"), ("public_transport", "station")]
 
 
@@ -470,6 +497,8 @@ def _assemble(store: _Store, request: Request) -> list[Record]:
     elements: list[Record] = []
     if request.huts:
         elements.extend(_huts(store, request.huts))
+    if request.facilities:
+        elements.extend(_huts(store, request.facilities, is_facility))
     if request.stations:
         elements.extend(
             store.nodes[node_id] | {}
@@ -484,22 +513,23 @@ def _assemble(store: _Store, request: Request) -> list[Record]:
     return elements
 
 
-def _huts(store: _Store, box: Box) -> Iterator[Record]:
+def _huts(store: _Store, box: Box, keep: Any = HUT_RULE.matches) -> Iterator[Record]:
+    """Every element ``keep`` accepts in the box (by default a hut), ``out center``."""
     for node_id in sorted(store.nodes):
         node = store.nodes[node_id]
-        if HUT_RULE.matches(node.get("tags", {})) and _point_in(store.locations[node_id], box):
+        if keep(node.get("tags", {})) and _point_in(store.locations[node_id], box):
             yield {"type": "node", "id": node_id, "lat": node["lat"], "lon": node["lon"],
                    "tags": node["tags"]}
     for way_id in sorted(store.ways):
         way = store.ways[way_id]
-        if not HUT_RULE.matches(way["tags"]):
+        if not keep(way["tags"]):
             continue
         points = _way_points(store, way)
         if points and _line_touches(points, box):
             yield {"type": "way", "id": way_id, "center": _center(points), "tags": way["tags"]}
     for relation_id in sorted(store.relations):
         relation = store.relations[relation_id]
-        if not HUT_RULE.matches(relation["tags"]):
+        if not keep(relation["tags"]):
             continue
         points = _relation_points(store, relation)
         if points and _relation_touches(store, relation, box):

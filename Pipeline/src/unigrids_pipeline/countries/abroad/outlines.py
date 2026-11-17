@@ -16,6 +16,10 @@ run without a reference build, so they read the outline sources directly:
   Parks Canada records in WGS84, a park being every record under its ``PARENT_ID`` with a
   park designation: the copy the Canadian fetch keeps in ``raw/<date>/ca-cpcad/``, or one
   asked for here.
+* **Australia**: the Collaborative Australian Protected Areas Database (CAPAD 2024, CC BY
+  4.0), a park being every record of its CAPAD names in its own state with a national
+  park designation: the copy the Australian fetch keeps in ``raw/<date>/au-capad/``, or one
+  asked for here.
 
 The country packages are read, never changed: Japan's Shapefile reader and union are
 reused as they are.
@@ -32,7 +36,7 @@ from ... import config, outline, rawstore
 from ...rawstore import FetchRecord, SourceTerms
 from ...sources import http
 
-COUNTRIES = ("jp", "no", "nz", "ca")
+COUNTRIES = ("jp", "no", "nz", "ca", "au")
 
 NPS_ZIP_URL = "https://www.biodic.go.jp/shapedata/nps.zip"
 NPS_ZIP = "nps.zip"
@@ -51,10 +55,18 @@ CPCAD_PARK_TYPES = (
 )
 """The designations a national park's own records carry; the program-support lands a park
 lists under the same parent (Gulf Islands) are not the park."""
+CAPAD_LAYER = (
+    "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+)
+CAPAD_PARK_TYPES = (
+    "National Park", "National Park (Commonwealth)", "National Park Aboriginal",
+)
+"""The designations an Australian national park's records carry (Daintree's and
+Boodjamulla's handed-back parts are "National Park Aboriginal")."""
 
 SOURCES = {
     "jp": "abroad-outlines-jp", "no": "abroad-outlines-no", "nz": "abroad-outlines-nz",
-    "ca": "abroad-outlines-ca",
+    "ca": "abroad-outlines-ca", "au": "abroad-outlines-au",
 }
 """Where outlines this module fetched or derived are kept, one folder per country so each
 carries its own terms."""
@@ -64,6 +76,7 @@ COUNTRY_SOURCES = {
     "no": ("no-naturvern", "national-parks.geojson"),
     "nz": ("nz-pcl", "national-parks.geojson"),
     "ca": ("ca-cpcad", "national-parks.geojson"),
+    "au": ("au-capad", "national-parks.geojson"),
 }
 """What the country packages' own fetches leave in the raw store, read first."""
 
@@ -112,6 +125,16 @@ TERMS = {
         notes="Geometry in WGS84 (outSR 4326); a park is every record under its PARENT_ID "
         "with a park designation, joined to the park list by that parent.",
     ),
+    "au": SourceTerms(
+        identifier="capad",
+        title="Collaborative Australian Protected Areas Database (CAPAD) 2024: national parks",
+        url=CAPAD_LAYER,
+        licence="CC BY 4.0",
+        attribution="© Commonwealth of Australia (Department of Climate Change, Energy, the "
+        "Environment and Water), CAPAD 2024, CC BY 4.0",
+        notes="Geometry in WGS84 (outSR 4326); a park is every record of its CAPAD names in "
+        "its own state with a national park designation.",
+    ),
 }
 
 
@@ -151,6 +174,8 @@ def outlines(country: str, *, online: bool = True) -> dict[str, list[outline.Pol
         return _new_zealand(online=online)
     if country == "ca":
         return _canada(online=online)
+    if country == "au":
+        return _australia(online=online)
     raise ValueError(f"no parks abroad for {country!r}; known: {', '.join(COUNTRIES)}")
 
 
@@ -374,6 +399,89 @@ def _download_cpcad() -> Path:
             if "error" in payload:
                 raise http.FetchError(f"{CPCAD_LAYER} refused the query: {payload['error']}")
             record.add_request(f"{CPCAD_LAYER}/query", parameters)
+            page = payload.get("features") or []
+            features.extend(page)
+            exceeded = payload.get("exceededTransferLimit") or (
+                payload.get("properties") or {}
+            ).get("exceededTransferLimit")
+            if not page or not exceeded:
+                break
+            offset += len(page)
+    path = directory / "national-parks.geojson"
+    path.write_text(json.dumps({"type": "FeatureCollection", "features": features}))
+    record.add_file(path, root=directory)
+    record.write(directory)
+    return path
+
+
+# MARK: - Australia
+
+
+def capad_park_polygons(
+    features: list[dict[str, Any]], parks: tuple[dict[str, Any], ...] | list[dict[str, Any]]
+) -> dict[str, list[outline.Polygon]]:
+    """Place ID → every polygon of the CAPAD records that are the park: one of its CAPAD
+    names, in its own state (CAPAD's "EXT" for the island territories), with a national
+    park designation. A namesake in another state or of another type is not the park."""
+    wanted: dict[tuple[str, str], str] = {}
+    for entry in parks:
+        code = str(entry["state"]).removeprefix("AU-")
+        state = "EXT" if code in ("CX", "CC", "NF") else code
+        for name in [entry["capadName"], *(entry.get("capadAlsoNames") or [])]:
+            wanted[(state, name)] = entry["id"]
+    found: dict[str, list[outline.Polygon]] = {}
+    for feature in features:
+        properties = feature.get("properties") or {}
+        if properties.get("TYPE") not in CAPAD_PARK_TYPES:
+            continue
+        key = (str(properties.get("STATE") or "").upper(),
+               " ".join(str(properties.get("NAME") or "").split()))
+        if place_id := wanted.get(key):
+            found.setdefault(place_id, []).extend(outline.polygons_of(feature.get("geometry")))
+    return found
+
+
+def _australia(*, online: bool) -> dict[str, list[outline.Polygon]]:
+    path = _source_file("au")
+    if path is None:
+        if not online:
+            raise SystemExit("no CAPAD national parks in the raw store")
+        path = _download_capad()
+    return capad_park_polygons(json.loads(path.read_text()).get("features") or [],
+                               park_list("au"))
+
+
+def _download_capad() -> Path:
+    directory = rawstore.version_directory(SOURCES["au"])
+    record = FetchRecord(source=TERMS["au"], fetched_at=rawstore.utc_now())
+    names = sorted({
+        name for entry in park_list("au")
+        for name in [entry["capadName"], *(entry.get("capadAlsoNames") or [])]
+    })
+    quoted = ",".join("'" + name.replace("'", "''") + "'" for name in names)
+    types = ",".join(f"'{kind}'" for kind in CAPAD_PARK_TYPES)
+    features: list[dict[str, Any]] = []
+    offset = 0
+    with http.client() as session:
+        while True:
+            parameters = {
+                "where": f"NAME IN ({quoted}) AND TYPE IN ({types})",
+                "outFields": "OBJECTID,PA_ID,NAME,TYPE,STATE",
+                "returnGeometry": "true",
+                "outSR": "4326",
+                "geometryPrecision": "6",
+                "maxAllowableOffset": "0.0001",
+                "orderByFields": "OBJECTID",
+                "f": "geojson",
+                "resultOffset": str(offset),
+                "resultRecordCount": "10",
+            }
+            response = http.get(session, f"{CAPAD_LAYER}/query", params=parameters,
+                                expect="application")
+            payload = response.json()
+            if "error" in payload:
+                raise http.FetchError(f"{CAPAD_LAYER} refused the query: {payload['error']}")
+            record.add_request(f"{CAPAD_LAYER}/query", parameters)
             page = payload.get("features") or []
             features.extend(page)
             exceeded = payload.get("exceededTransferLimit") or (

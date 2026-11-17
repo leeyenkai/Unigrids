@@ -26,6 +26,11 @@ the line comes from the best source each country has, and the measuring does not
   records into routes, with Parks Canada's summer difficulty rating. A park the layer
   leaves without a trail is filled from OpenStreetMap, read out of Geofabrik's provincial
   extracts.
+* **Australia: OpenStreetMap** for every park, read out of Geofabrik's Australian extract;
+  in Queensland the Queensland Parks and Wildlife Service's own walking tracks (CC BY 4.0)
+  come first, with their AS 2156.1 class as the published grade
+  (``countries.au.qldtracks``). No other state publishes track grades a keyless fetch can
+  read.
 
 Then, exactly as at home: segments are chained (``trails.chain``), laid in walking order,
 resampled every 30 m, sampled on the elevation model (abroad: Copernicus GLO-30), smoothed
@@ -69,7 +74,7 @@ MIN_LENGTH_M = trail_catalogue.MIN_LENGTH_M
 LINE_TOLERANCE_DEGREES = trail_catalogue.LINE_TOLERANCE_DEGREES
 BOUNDARY_BUFFER_DEGREES = trail_catalogue.BOUNDARY_BUFFER_DEGREES
 
-COUNTRIES = ("jp", "no", "nz", "ca")
+COUNTRIES = ("jp", "no", "nz", "ca", "au")
 
 TURRUTEBASEN = "no-turrutebasen"
 TURRUTEBASEN_WFS = "https://wfs.geonorge.no/skwms1/wfs.turogfriluftsruter"
@@ -85,6 +90,7 @@ UNNAMED = frozenset({"", "ukjent", "ukjend", "unknown"})
 
 OSM_TRAIL_SOURCES = {
     "jp": "jp-osm-trails", "no": "no-osm-trails", "nz": "nz-osm-trails", "ca": "ca-osm-trails",
+    "au": "au-osm-trails",
 }
 OSM_TRAIL_KINDS = "path|footway"
 OSM_PAUSE_SECONDS = 10.0
@@ -318,13 +324,16 @@ def park_routes(
     return with_osm(agency, osm_routes(country, park, _read_osm(country, park["id"]), polygons))
 
 
-AGENCY_TRAILS = {"nz": "DOC Tracks", "ca": "Parks Canada trails"}
+AGENCY_TRAILS = {
+    "nz": "DOC Tracks", "ca": "Parks Canada trails", "au": "QPWS walking tracks",
+}
 """Countries whose park agency publishes its own trail layer, read before OpenStreetMap."""
 
-THIN_AGENCY_TRAILS = {"ca": 5}
+THIN_AGENCY_TRAILS = {"ca": 5, "au": 5}
 """Fewer agency trails than this in a park and OpenStreetMap fills in beside them. Parks
 Canada's layer is part-way through a migration and holds two of Jasper's hundreds; DOC's
-register is whole, so New Zealand fills only a park it leaves empty."""
+register is whole, so New Zealand fills only a park it leaves empty. Australia's agency
+layer is Queensland's alone, so every other state's park is thin by definition."""
 
 
 def is_thin(country: str, routes: list[Route]) -> bool:
@@ -354,6 +363,11 @@ def agency_routes(
 
         pc_features = pctrails.read_features()
         return None if pc_features is None else pctrails.routes(park, pc_features, polygons)
+    if country == "au":
+        from ..au import qldtracks
+
+        qld_features = qldtracks.read_features()
+        return None if qld_features is None else qldtracks.routes(park, qld_features, polygons)
     return None
 
 
@@ -1219,6 +1233,8 @@ def measurement_method() -> Record:
             "doc": "DOC Tracks (CC BY 4.0, Crown Copyright: Department of Conservation "
             "Te Papa Atawhai)",
             "parksCanada": "Parks Canada trails (Open Government Licence – Canada)",
+            "qpws": "Queensland Parks and Wildlife Service access: walking tracks (CC BY 4.0, "
+            "© State of Queensland)",
             "osm": "OpenStreetMap (ODbL), © OpenStreetMap contributors",
         },
     }

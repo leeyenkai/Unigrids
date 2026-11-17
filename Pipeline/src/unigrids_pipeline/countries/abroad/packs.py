@@ -41,7 +41,9 @@ OSM_SOURCE = "osm"
 # sidewalks and crossings a town's footways are.
 DRAWN_PATHS = frozenset({"path", "footway", "bridleway", "steps"})
 
-COUNTRY_NAMES = {"jp": "Japan", "no": "Norway", "nz": "New Zealand", "ca": "Canada"}
+COUNTRY_NAMES = {
+    "jp": "Japan", "no": "Norway", "nz": "New Zealand", "ca": "Canada", "au": "Australia",
+}
 NOT_AFFILIATED = {
     "jp": (
         "It is **not** a product of Japan's Ministry of the Environment and implies no "
@@ -58,6 +60,11 @@ NOT_AFFILIATED = {
     "ca": (
         "It is **not** a product of Parks Canada and implies no affiliation with it or "
         "endorsement by it. It carries neither Parks Canada's beaver symbol nor its wordmark."
+    ),
+    "au": (
+        "It is **not** a product of Parks Australia or of any Australian state or territory "
+        "park agency, and implies no affiliation with any of them or endorsement by them. It "
+        "carries none of their logos."
     ),
 }
 
@@ -395,6 +402,7 @@ def attribution_line(
     else:
         sources.add("osm")
     names = [name for key, name in (("kartverket", "Kartverket"), ("parksCanada", "Parks Canada"),
+                                    ("qpws", "Queensland Parks and Wildlife Service"),
                                     ("osm", "OpenStreetMap"))
              if key in sources]
     return (
@@ -500,6 +508,15 @@ def _write_attribution(
             "Canadian Protected and Conserved Areas Database (CPCAD) and trail lines and",
             "difficulty ratings from Parks Canada's trails data are used under the Open",
             "Government Licence – Canada.",
+            "",
+        ]
+    if country == "au":
+        lines += [
+            "**Australian Government and the State of Queensland.** Park outlines from the",
+            "Collaborative Australian Protected Areas Database (CAPAD 2024, © Commonwealth of",
+            "Australia, DCCEEW) and, in Queensland, trail lines and track classes from the",
+            "Queensland Parks and Wildlife Service's access data (© State of Queensland) are",
+            "used under CC BY 4.0.",
             "",
         ]
     lines += [
