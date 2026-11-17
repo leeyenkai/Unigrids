@@ -19,6 +19,11 @@ struct WeatherPanel: View {
         UnigridPanel(title: GuidePanel.weather.title) {
             VStack(alignment: .leading, spacing: 16) {
                 WeekAhead(days: weekAhead)
+                if weekAhead.isEmpty, forecasts.failed.contains(place.id) {
+                    Text("The forecast needs a connection.")
+                        .font(UnigridStyle.caption)
+                        .foregroundStyle(style.inkSecondary)
+                }
                 if let climate = store.climate(for: place.id) {
                     ClimateChart(climate: climate)
                 }
@@ -74,6 +79,9 @@ private struct WeekAhead: View {
                                 .foregroundStyle(style.inkSecondary)
                             Image(systemName: day.condition.map(WeatherSymbol.name) ?? "cloud")
                                 .symbolRenderingMode(.multicolor)
+                                .accessibilityLabel(
+                                    day.condition.map(WeatherSymbol.words) ?? "Weather"
+                                )
                                 .font(.body)
                                 .frame(height: 22)
                             if let high = day.highCelsius {
@@ -242,6 +250,40 @@ private struct PolarDaylightLine: View {
                     .foregroundStyle(style.ink)
                     .fixedSize(horizontal: false, vertical: true)
             }
+        }
+    }
+}
+
+/// SF Symbols for weather conditions.
+enum WeatherSymbol {
+    static func name(_ condition: WeatherCondition) -> String {
+        switch condition {
+        case .clear: "sun.max.fill"
+        case .partlyCloudy: "cloud.sun.fill"
+        case .overcast: "cloud.fill"
+        case .fog: "cloud.fog.fill"
+        case .drizzle: "cloud.drizzle.fill"
+        case .rain: "cloud.rain.fill"
+        case .snow: "cloud.snow.fill"
+        case .showers: "cloud.heavyrain.fill"
+        case .thunderstorm: "cloud.bolt.rain.fill"
+        case .unknown: "cloud.sun"
+        }
+    }
+
+    /// The condition in words, for VoiceOver.
+    static func words(_ condition: WeatherCondition) -> String {
+        switch condition {
+        case .clear: "Clear"
+        case .partlyCloudy: "Partly cloudy"
+        case .overcast: "Overcast"
+        case .fog: "Fog"
+        case .drizzle: "Drizzle"
+        case .rain: "Rain"
+        case .snow: "Snow"
+        case .showers: "Showers"
+        case .thunderstorm: "Thunderstorms"
+        case .unknown: "Mixed weather"
         }
     }
 }

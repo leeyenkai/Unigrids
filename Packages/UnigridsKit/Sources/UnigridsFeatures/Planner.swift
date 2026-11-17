@@ -127,6 +127,8 @@ final class DriveTimes {
 @Observable
 final class Forecasts {
     private(set) var byPlace: [UnigridsID: OpenMeteoDaily] = [:]
+    /// Places whose last request failed, so a panel can say why it is empty.
+    private(set) var failed: Set<UnigridsID> = []
     private var fetchedAt: [UnigridsID: Date] = [:]
 
     /// Open-Meteo answers in the place's own days (`timezone=auto`), so the day is looked
@@ -137,14 +139,34 @@ final class Forecasts {
         )
     }
 
+    /// Asks for every stale place at once, so a long trip waits for the slowest answer
+    /// rather than the sum of them.
     func load(_ places: [Place]) async {
-        for place in places {
-            if let at = fetchedAt[place.id], Date().timeIntervalSince(at) < 3600 {
-                continue
+        let now = Date()
+        let stale = places.filter { place in
+            fetchedAt[place.id].map { now.timeIntervalSince($0) >= 3600 } ?? true
+        }
+        let wanted = Dictionary(stale.map { ($0.id, $0.centre) }) { first, _ in first }
+        guard !wanted.isEmpty else { return }
+        let answers = await withTaskGroup(
+            of: (UnigridsID, OpenMeteoDaily?).self
+        ) { group in
+            for (id, centre) in wanted {
+                group.addTask { await (id, OpenMeteo.forecast(at: centre)) }
             }
-            if let daily = await OpenMeteo.forecast(at: place.centre) {
-                byPlace[place.id] = daily
-                fetchedAt[place.id] = Date()
+            var answers: [(UnigridsID, OpenMeteoDaily?)] = []
+            for await answer in group {
+                answers.append(answer)
+            }
+            return answers
+        }
+        for (id, daily) in answers {
+            if let daily {
+                byPlace[id] = daily
+                fetchedAt[id] = Date()
+                failed.remove(id)
+            } else {
+                failed.insert(id)
             }
         }
     }
@@ -209,7 +231,9 @@ enum OpenMeteo {
             URLQueryItem(name: "timezone", value: "auto"),
         ] + extra
         guard let url = components.url else { return nil }
-        guard let (data, response) = try? await URLSession.shared.data(from: url),
+        var request = URLRequest(url: url, timeoutInterval: 20)
+        request.setValue(AbroadFetch.userAgent, forHTTPHeaderField: "User-Agent")
+        guard let (data, response) = try? await URLSession.shared.data(for: request),
               (response as? HTTPURLResponse)?.statusCode == 200
         else { return nil }
         return try? JSONDecoder().decode(OpenMeteoDaily.self, from: data)
@@ -225,6 +249,7 @@ struct ForecastLine: View {
         HStack(spacing: 6) {
             Image(systemName: weather.condition.map(WeatherSymbol.name) ?? "cloud")
                 .symbolRenderingMode(.multicolor)
+                .accessibilityLabel(weather.condition.map(WeatherSymbol.words) ?? "Weather")
             if let high = weather.highCelsius, let low = weather.lowCelsius {
                 Text(
                     UnigridsFormat.temperature(celsius: high) + " / "
@@ -246,24 +271,6 @@ struct ForecastLine: View {
                 (weather.highCelsius
                     .map { ", high \(UnigridsFormat.temperature(celsius: $0))" } ?? "")
         )
-    }
-}
-
-/// SF Symbols for weather conditions.
-enum WeatherSymbol {
-    static func name(_ condition: WeatherCondition) -> String {
-        switch condition {
-        case .clear: "sun.max.fill"
-        case .partlyCloudy: "cloud.sun.fill"
-        case .overcast: "cloud.fill"
-        case .fog: "cloud.fog.fill"
-        case .drizzle: "cloud.drizzle.fill"
-        case .rain: "cloud.rain.fill"
-        case .snow: "cloud.snow.fill"
-        case .showers: "cloud.heavyrain.fill"
-        case .thunderstorm: "cloud.bolt.rain.fill"
-        case .unknown: "cloud.sun"
-        }
     }
 }
 

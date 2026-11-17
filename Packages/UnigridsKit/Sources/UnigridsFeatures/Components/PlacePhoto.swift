@@ -34,6 +34,9 @@ actor PhotoPipeline {
             diskCapacity: 160 * 1024 * 1024
         )
         configuration.requestCachePolicy = .returnCacheDataElseLoad
+        configuration.timeoutIntervalForRequest = 20
+        // Wikimedia asks every client to name itself.
+        configuration.httpAdditionalHeaders = ["User-Agent": AbroadFetch.userAgent]
         session = URLSession(configuration: configuration)
     }
 

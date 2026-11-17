@@ -249,9 +249,12 @@ enum VarsomAvalanche {
 
 /// A plain GET with a 200 check and an app-only User-Agent.
 enum AbroadFetch {
+    /// Names the app and nothing about the reader.
+    static let userAgent = "Unigrids (iOS and macOS app)"
+
     static func data(_ url: URL) async throws -> Data {
         var request = URLRequest(url: url, timeoutInterval: 20)
-        request.setValue("Unigrids (iOS and macOS app)", forHTTPHeaderField: "User-Agent")
+        request.setValue(userAgent, forHTTPHeaderField: "User-Agent")
         let (data, response) = try await URLSession.shared.data(for: request)
         guard (response as? HTTPURLResponse)?.statusCode == 200 else {
             throw URLError(.badServerResponse)

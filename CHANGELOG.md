@@ -94,6 +94,10 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- Forecasts and place photos give up after 20 seconds rather than a minute, and a trip's
+  forecasts load together, so a trip with many stops on a poor connection no longer waits
+  a minute per stop. A guide whose forecast could not load says it needs a connection, and
+  VoiceOver reads each day's weather in words.
 - Six state parks the states have handed on are off the map, as their own articles say:
   Hart (the City of Hartwell's park since 2020), John Tanner and Sprewell Bluff (county
   parks), Florala, Mohawk River and Red Rock Canyon in Oklahoma. Ten places gain a
