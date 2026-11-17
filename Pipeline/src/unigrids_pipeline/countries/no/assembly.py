@@ -31,7 +31,7 @@ from ..common import (
     OTHER_TOLERANCE,
     assign_time_zones,
     clean,
-    commons_credit,
+    commons_record_credit,
     encode_outline,
     extent,
     guide_image,
@@ -58,6 +58,7 @@ from .fetching import (
     read_counties,
     read_wikidata,
     second_tier,
+    wiki_matches,
 )
 
 COUNTRY = "NO"
@@ -129,6 +130,7 @@ def assemble(context: BuildContext) -> Contribution:
         pois.extend(park_pois)
         guides[place["id"]] = guide
 
+    sources.matches = wiki_matches(areas, sources.index, sources.candidates)
     for area in second_tier(areas):
         # Outlined first, so an area that will not ship is never given an identifier.
         outline_entry = encode_outline(area.polygons, OTHER_TOLERANCE)
@@ -197,6 +199,8 @@ class _Sources:
         if self.counties is None:
             print(f"    no raw/{COUNTIES}: regions from the municipality list alone")
         self.index, self.candidates = read_wikidata(rawstore.latest(WIKIDATA, "naturbase.json"))
+        # naturvernId → the Wikidata item that is the place's own (``wiki_matches``).
+        self.matches: dict[str, dict[str, Any]] = {}
         self.summaries = _json(rawstore.latest(WIKIPEDIA, "summaries.json"), "summaries.json")
         self.licences = _json(rawstore.latest(COMMONS, "licences.json"), "licences.json")
         self.photos = rawstore.latest(PHOTOS)
@@ -485,8 +489,8 @@ def _fees(fees: Any) -> list[dict[str, Any]]:
 # MARK: - Photographs
 
 
-def _credit(licence: dict[str, Any]) -> str:
-    return commons_credit(licence.get("artist"))
+def _credit(licence: dict[str, Any]) -> str | None:
+    return commons_record_credit(licence)
 
 
 def photo_entry(image: dict[str, Any], *, asset_name: str | None = None) -> dict[str, Any] | None:
@@ -537,6 +541,10 @@ def _park_photos(
         if not licence:
             report.add("photographs with no Commons record", f"{place_id}: {name}")
             continue
+        credit = _credit(licence)
+        if credit is None:
+            report.add("photographs with no author to credit", f"{place_id}: {name}")
+            continue
         url = photo_url(name)
         local = photo_filename(url)
         asset = f"{place_id}-{Path(local).stem[:10]}.jpg"
@@ -556,7 +564,7 @@ def _park_photos(
         entry = photo_entry(
             {
                 "url": url,
-                "credit": _credit(licence),
+                "credit": credit,
                 "licence": licence.get("licence"),
                 "title": photo.get("caption"),
                 "altText": photo.get("altText"),
@@ -726,9 +734,7 @@ def _second_tier_place(
         place["officialURL"] = fact_sheet
     if manager := clean(area.properties.get("forvaltningsmyndighet")):
         place["managedBy"] = manager
-    item = wiki.match(
-        area.naturvern_id, name, area.centre, sources.index, sources.candidates
-    )
+    item = sources.matches.get(area.naturvern_id)
     summary = sources.summaries.get(area.naturvern_id) if item else None
     if summary and summary.get("type") != "disambiguation" and summary.get("extract"):
         page = ((summary.get("content_urls") or {}).get("desktop") or {}).get("page")

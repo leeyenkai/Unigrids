@@ -37,7 +37,7 @@ from ..common import (
     OTHER_TOLERANCE,
     UnlicensedPhotographError,
     clean,
-    commons_credit,
+    commons_record_credit,
     encode_outline,
     extent,
     guide_image,
@@ -253,7 +253,14 @@ def _national_park(
         "Text written for Unigrids from the Ministry of the Environment's park pages and "
         "the sources listed. Photographs from Wikimedia Commons, credited individually."
     ])
-    credits.append(f"Park areas: Ministry of the Environment, Japan (nps.zip, {raw.snapshot})")
+    # The outline is drawn from MOE's nps.zip; the area is the figure the guide was
+    # written from, MOE's table of national parks. Each is credited to what it came from.
+    if polygons:
+        credits.append(
+            f"Park outline: Ministry of the Environment, Japan (nps.zip, {raw.snapshot})"
+        )
+    if "areaHectares" in facts:
+        credits.append("Park area: 国立公園一覧, Ministry of the Environment, Japan")
     if figure:
         credits.append(
             f"Visitors: 自然公園等利用者数調, Ministry of the Environment, Japan ({figure.year})"
@@ -673,8 +680,8 @@ def _photo_entry(image: dict[str, Any], *, asset_name: str | None = None) -> dic
         return entry
 
 
-def _commons_credit(meta: dict[str, Any]) -> str:
-    return commons_credit(meta.get("artist"))
+def _commons_credit(meta: dict[str, Any]) -> str | None:
+    return commons_record_credit(meta)
 
 
 def _guide_photos(
@@ -690,6 +697,10 @@ def _guide_photos(
         meta = raw.licences().get(name)
         if not meta or not meta.get("licence"):
             print(f"    {place_id}: no Commons record for {name!r}, left out")
+            continue
+        credit = _commons_credit(meta)
+        if credit is None:
+            print(f"    {place_id}: no author to credit for {name!r}, left out")
             continue
         page = meta.get("descriptionURL") or f"https://commons.wikimedia.org/wiki/File:{name}"
         asset = f"{place_id}-{Path(photo_filename(page)).stem[:10]}.jpg"
@@ -708,7 +719,7 @@ def _guide_photos(
                 continue
         image = {
             "url": meta.get("thumbURL") or page,
-            "credit": _commons_credit(meta),
+            "credit": credit,
             "licence": meta["licence"],
             "title": photo.get("caption"),
             "altText": photo.get("altText"),
@@ -807,9 +818,12 @@ class _Raw:
         meta = self.licences().get(fetching.commons_name(item["image"]))
         if not meta or not meta.get("thumbURL") or not meta.get("licence"):
             return None
+        credit = _commons_credit(meta)
+        if credit is None:
+            return None
         return _photo_entry({
             "url": meta["thumbURL"],
-            "credit": _commons_credit(meta),
+            "credit": credit,
             "licence": meta["licence"],
             "sourceURL": meta.get("descriptionURL"),
         })

@@ -672,9 +672,12 @@ def test_a_national_park_leaves_complete(tmp_path, monkeypatch):
         {"title": "Cooperation fee", "cost": "¥200", "amount": 200, "currencyCode": "JPY"}
     ]
     assert guide["howItWorks"] == ["Zoned."]
-    assert "Park areas: Ministry of the Environment, Japan (nps.zip, 2026-11-16)" in (
+    # The outline is nps.zip's; the area is the guide's figure, from MOE's park table.
+    assert "Park outline: Ministry of the Environment, Japan (nps.zip, 2026-11-16)" in (
         guide["credits"]
     )
+    assert "Park area: 国立公園一覧, Ministry of the Environment, Japan" in guide["credits"]
+    assert not any("Park areas" in line for line in guide["credits"])
     assert any("japan.travel" in source["url"] for source in guide["sources"])
 
 
@@ -717,7 +720,8 @@ def test_a_quasi_national_park_without_an_outline_ships_as_a_point(tmp_path):
         "summaryURL": "https://en.wikipedia.org/wiki/Ontakesan_Quasi-National_Park",
         "infoURL": "https://en.wikipedia.org/wiki/Ontakesan_Quasi-National_Park",
         "image": {
-            "credit": "Unknown photographer, via Wikimedia Commons",
+            # Public domain, and Commons names no author: credited to Commons alone.
+            "credit": "Wikimedia Commons",
             "isPublicDomain": True,
             "url": "https://upload.wikimedia.org/lead-1280.jpg",
             "sourceURL": "https://commons.wikimedia.org/wiki/File:Lead.jpg",

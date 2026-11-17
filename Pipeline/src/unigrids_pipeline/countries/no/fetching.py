@@ -558,15 +558,34 @@ def read_wikidata(
     )
 
 
+def wiki_matches(
+    areas: dict[str, Area], index: dict[str, dict[str, Any]], others: list[dict[str, Any]]
+) -> dict[str, dict[str, Any]]:
+    """``naturvernId`` → the Wikidata item that is the place's own, for the national parks
+    and the second tier matched together (``wiki.own_matches``), so a park's item is
+    never given to the landscape or reserve beside it."""
+    parks = [area for _, area in national_parks(areas) if area is not None]
+    return wiki.own_matches(
+        (
+            (area.naturvern_id, area.tier, area.name, area.centre)
+            for area in [*parks, *second_tier(areas)]
+        ),
+        index,
+        others,
+    )
+
+
 def _second_tier_matches(
     wikidata_dir: Path, areas: dict[str, Area]
 ) -> dict[str, dict[str, Any]]:
-    """``naturvernId`` → Wikidata item, for each second-tier place that has one."""
+    """``naturvernId`` → Wikidata item, for each second-tier place that has its own."""
     index, others = read_wikidata(wikidata_dir)
-    matches = {}
-    for area in second_tier(areas):
-        if item := wiki.match(area.naturvern_id, area.name, area.centre, index, others):
-            matches[area.naturvern_id] = item
+    found = wiki_matches(areas, index, others)
+    matches = {
+        area.naturvern_id: found[area.naturvern_id]
+        for area in second_tier(areas)
+        if area.naturvern_id in found
+    }
     with_article = sum(1 for item in matches.values() if item.get("article"))
     print(
         f"    {WIKIDATA}: {len(matches)} of {len(second_tier(areas))} landscapes and "
@@ -697,7 +716,7 @@ def _fetch_commons(
             "format": "json",
             "formatversion": "2",
             "prop": "imageinfo",
-            "iiprop": "extmetadata|url",
+            "iiprop": "extmetadata|url|user",
             "iiurlwidth": "1280",
             "titles": "|".join(f"File:{name}" for name in batch),
         }
@@ -721,6 +740,7 @@ def _fetch_commons(
                 "licenceURL": (meta.get("LicenseUrl") or {}).get("value"),
                 "artist": (meta.get("Artist") or {}).get("value"),
                 "credit": (meta.get("Credit") or {}).get("value"),
+                "uploader": info.get("user"),
                 "thumbURL": info.get("thumburl"),
                 "descriptionURL": info.get("descriptionurl"),
             }

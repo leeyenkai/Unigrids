@@ -89,3 +89,31 @@ def test_every_curated_hero_states_its_licence():
         override = (reference_content.guide(path.stem) or {}).get("heroOverride")
         if override:
             assert reference_content.is_reusable_licence(override.get("licence")), path.name
+
+
+def test_a_commons_photograph_on_the_us_path_names_the_author_commons_assumed():
+    image = common.wikimedia_image({
+        "thumbURL": "https://upload.wikimedia.org/x.jpg",
+        "licence": "CC BY 2.5",
+        "artist": "No machine-readable author provided. Miskatonic assumed (based on "
+                  "copyright claims).",
+        "credit": "No machine-readable source provided. Own work assumed (based on "
+                  "copyright claims).",
+        "descriptionURL": "https://commons.wikimedia.org/wiki/File:X.jpg",
+    })
+    assert image is not None
+    assert image["credit"] == "Miskatonic, via Wikimedia Commons"
+
+
+def test_a_commons_photograph_with_no_author_is_credited_to_commons():
+    record = {
+        "thumbURL": "https://upload.wikimedia.org/x.jpg",
+        "licence": "CC BY-SA 3.0",
+        "artist": None,
+        "credit": "",
+        "descriptionURL": "https://commons.wikimedia.org/wiki/File:X.jpg",
+    }
+    assert common.wikimedia_image(record)["credit"] == "Wikimedia Commons"
+    assert common.wikimedia_image({**record, "uploader": "Snowgoose"})["credit"] == (
+        "Snowgoose, via Wikimedia Commons"
+    )

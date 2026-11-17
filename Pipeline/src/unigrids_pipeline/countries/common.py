@@ -135,11 +135,13 @@ def wikimedia_image(licence: dict[str, Any] | None) -> dict[str, Any] | None:
     name = (licence.get("licence") or "").strip()
     if not reference_content.is_reusable_licence(name):
         return None
-    artist = strip_tags(licence.get("artist") or "") or "Unknown photographer"
+    credit = commons_record_credit(licence)
+    if credit is None:
+        return None
     public = reference_content.is_public_domain_licence(name)
     image = {
         "url": licence["thumbURL"],
-        "credit": f"{artist}, via Wikimedia Commons",
+        "credit": credit,
         "isPublicDomain": public,
         "sourceURL": licence.get("descriptionURL"),
     }
@@ -179,7 +181,7 @@ def commons_licence(
         "action": "query",
         "titles": f"File:{httpx.URL(image_url).path.rsplit('/', 1)[-1]}",
         "prop": "imageinfo",
-        "iiprop": "extmetadata|url",
+        "iiprop": "extmetadata|url|user",
         "iiurlwidth": "1280",
         "format": "json",
     }
@@ -198,6 +200,7 @@ def commons_licence(
                 "licenceURL": (meta.get("LicenseUrl") or {}).get("value"),
                 "artist": (meta.get("Artist") or {}).get("value"),
                 "credit": (meta.get("Credit") or {}).get("value"),
+                "uploader": info.get("user"),
                 "thumbURL": info.get("thumburl"),
                 "descriptionURL": info.get("descriptionurl"),
             }
@@ -225,15 +228,59 @@ _ASSUMED_AUTHOR = re.compile(
 )
 
 
-def commons_credit(artist: str | None) -> str:
+# What Commons' Credit field holds when it names where a file came from rather than who
+# made it: "Own work", its machine-readable boilerplate, a transfer, a link.
+_SOURCE_NOT_AUTHOR = re.compile(
+    r"^(?:no machine-readable|own work|self[- ]?(?:made|photographed)|transferred from|"
+    r"originally uploaded|uploaded by|https?://|www\.)",
+    re.IGNORECASE,
+)
+
+
+def commons_credit(
+    artist: str | None,
+    credit: str | None = None,
+    uploader: str | None = None,
+    *,
+    licence: str | None = None,
+) -> str | None:
     """A Commons photograph's credit line: its author as a reader would write it, then
-    where it came from. A username keeps its name but not the ``~commonswiki`` tag that
-    marks an account merged in from before global logins."""
-    name = strip_tags(artist or "")
+    where it came from.
+
+    The author is the file's Artist field; where Commons records none, its Credit field
+    if that names someone rather than a source ("Own work"), then the uploader, whom
+    Commons itself assumes. A username keeps its name but not the ``~commonswiki`` tag
+    that marks an account merged in from before global logins. With no one to name, the
+    photograph is credited to its source, Commons, never to an invented "unknown
+    photographer"; the owner keeps such photographs with their source stated rather than
+    leaving them out, and the licence shows beside it.
+    """
+    name = _author(artist)
+    if not name:
+        text = strip_tags(credit or "")
+        name = "" if _SOURCE_NOT_AUTHOR.match(text) else _author(text)
+    if not name:
+        name = _author(uploader)
+    if name:
+        return f"{name}, via Wikimedia Commons"
+    return "Wikimedia Commons"
+
+
+def commons_record_credit(record: dict[str, Any]) -> str | None:
+    """``commons_credit`` for a licence record as ``commons_licence`` stores it."""
+    return commons_credit(
+        record.get("artist"),
+        record.get("credit"),
+        record.get("uploader"),
+        licence=record.get("licence"),
+    )
+
+
+def _author(text: str | None) -> str:
+    name = strip_tags(text or "")
     if match := _ASSUMED_AUTHOR.match(name):
         name = match.group("name")
-    name = re.sub(r"~commonswiki\b", "", name).strip()
-    return f"{name or 'Unknown photographer'}, via Wikimedia Commons"
+    return re.sub(r"~commonswiki\b", "", name).strip()
 
 
 # Characters a source lost in transit, put back where the right text is known. The NPS

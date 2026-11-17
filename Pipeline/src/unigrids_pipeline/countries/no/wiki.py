@@ -7,6 +7,11 @@ one are matched by name and location together: the name with its designation tak
 and the item's coordinates within ``NEAR_KM`` of the place. Either way the item gives the
 English Wikipedia article (for a lead), its P18 image and its Commons category.
 
+An item is a place's only when it is no other place's. Wikidata files Møysalen
+landscape protection area's Naturbase ID on Møysalen National Park's item, so a match by
+ID alone handed the landscape the park's article. An item whose article names another
+kind of place, or that two places reach, describes neither (``own_matches``).
+
 These are pure functions over the raw responses, shared by the fetch (which needs the
 matches to know which articles and images to ask for) and the build.
 """
@@ -15,6 +20,8 @@ from __future__ import annotations
 
 import math
 import re
+from collections import Counter
+from collections.abc import Iterable
 from typing import Any
 from urllib.parse import unquote
 
@@ -32,6 +39,21 @@ _ENGLISH_DESIGNATION = re.compile(
     r"\s+(?:national park|nature reserve|landscape protection area|protected landscape"
     r"|bird (?:sanctuary|reserve)|protected area)\b.*$",
     re.IGNORECASE,
+)
+
+
+# The kind of place a title names, by Naturvernområder tier, in English or Norwegian.
+_TITLE_TIERS = (
+    ("np", re.compile(r"\b(?:national park|nasjonalpark)", re.IGNORECASE)),
+    ("lvo", re.compile(
+        r"\b(?:landscape (?:protection|conservation) area|protected landscape"
+        r"|landskapsvernområde)",
+        re.IGNORECASE,
+    )),
+    ("nr", re.compile(
+        r"\b(?:nature reserve|bird (?:sanctuary|reserve)|naturreservat|fuglefredningsområde)",
+        re.IGNORECASE,
+    )),
 )
 
 
@@ -128,6 +150,40 @@ def match(
         and distance_km(centre, item["coord"]) <= NEAR_KM
     ]
     return found[0] if len(found) == 1 else None
+
+
+def title_tier(title: str | None) -> str | None:
+    """The tier a title's designation names: ``"np"`` for "Møysalen National Park",
+    None for a title that names no kind of place ("Maridalen")."""
+    for tier, pattern in _TITLE_TIERS:
+        if title and pattern.search(title):
+            return tier
+    return None
+
+
+def own_matches(
+    places: Iterable[tuple[str, str, str, tuple[float, float] | None]],
+    index: dict[str, dict[str, Any]],
+    others: list[dict[str, Any]],
+) -> dict[str, dict[str, Any]]:
+    """``naturvernId`` → the Wikidata item that is that place's own, for each of
+    ``places`` as ``(naturvernId, tier, name, centre)``.
+
+    ``match`` finds the item. It is refused when its article names another tier — a
+    landscape or reserve never takes a national park's article, nor a park a reserve's —
+    and when it is matched to two places, as it can describe only one of them. The
+    national parks are best included, so an item that is a park's is never a
+    neighbour's."""
+    found: dict[str, dict[str, Any]] = {}
+    for naturvern_id, tier, name, centre in places:
+        item = match(naturvern_id, name, centre, index, others)
+        if item is None:
+            continue
+        if title_tier(article_title(item.get("article"))) not in (None, tier):
+            continue
+        found[naturvern_id] = item
+    claims = Counter(item["qid"] for item in found.values())
+    return {key: item for key, item in found.items() if claims[item["qid"]] == 1}
 
 
 def distance_km(a: tuple[float, float], b: tuple[float, float]) -> float:

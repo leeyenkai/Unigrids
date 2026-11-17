@@ -356,6 +356,68 @@ def test_distance_to_a_park_is_zero_inside_and_to_the_edge_outside():
     assert transport.distance_to_outline_km((59.0, 10.5), park) == pytest.approx(111.2, abs=0.5)
 
 
+def _naturbase(qid: str, naturvern_id: str, title: str | None) -> dict:
+    binding = {
+        "item": {"value": f"http://www.wikidata.org/entity/{qid}"},
+        "id": {"value": naturvern_id},
+        "coord": {"value": "Point(15.5 68.5)"},
+    }
+    if title:
+        binding["article"] = {"value": f"https://en.wikipedia.org/wiki/{title.replace(' ', '_')}"}
+    return binding
+
+
+def test_a_landscape_never_takes_a_national_parks_article():
+    # As Wikidata has it: Møysalen National Park's item carries the landscape's ID.
+    index = wiki.naturbase_index([
+        _naturbase("Q1276455", "VV00002195", "Møysalen National Park"),
+        _naturbase("Q100", "VV00000100", "Pasvik Nature Reserve"),
+        _naturbase("Q101", "VV00000101", "Maridalen"),
+    ])
+    matches = wiki.own_matches(
+        [
+            ("VV00002195", "lvo", "Møysalen", (68.51, 15.37)),
+            ("VV00000100", "nr", "Pasvik", None),
+            ("VV00000101", "lvo", "Maridalen", None),
+        ],
+        index,
+        [],
+    )
+    assert sorted(matches) == ["VV00000100", "VV00000101"]
+
+
+def test_an_item_two_places_reach_is_neither_places():
+    index = wiki.naturbase_index([
+        _naturbase("Q7", "VV1", "Trillemarka"),
+        _naturbase("Q7", "VV2", "Trillemarka"),
+        _naturbase("Q8", "VV3", "Jotunheimen National Park"),
+    ])
+    matches = wiki.own_matches(
+        [("VV1", "nr", "Trillemarka", None), ("VV2", "lvo", "Trillemarka", None),
+         ("VV3", "np", "Jotunheimen", None)],
+        index,
+        [],
+    )
+    assert list(matches) == ["VV3"]
+
+
+@pytest.mark.parametrize(
+    ("title", "tier"),
+    [
+        ("Møysalen National Park", "np"),
+        ("Rondane nasjonalpark", "np"),
+        ("Utladalen Landscape Protection Area", "lvo"),
+        ("Lemmingvær Landscape Conservation Area", "lvo"),
+        ("Dunøyane Bird Sanctuary", "nr"),
+        ("Stabbursnes Nature Reserve", "nr"),
+        ("Maridalen", None),
+        (None, None),
+    ],
+)
+def test_a_title_names_the_kind_of_place_it_is_about(title, tier):
+    assert wiki.title_tier(title) == tier
+
+
 def test_wikidata_matches_by_naturbase_id_else_by_name_and_place():
     naturbase = [{
         "item": {"value": "http://www.wikidata.org/entity/Q1578584"},
@@ -630,10 +692,37 @@ def test_overpass_is_asked_by_region_with_no_stations_on_svalbard(tmp_path):
          "copyright claims).", "Crown of Lenten rose, via Wikimedia Commons"),
         ("No machine-readable author provided. Benjaminb~commonswiki assumed (based on "
          "copyright claims).", "Benjaminb, via Wikimedia Commons"),
-        (None, "Unknown photographer, via Wikimedia Commons"),
+        # No one to name: credited to its source, never to an invented photographer.
+        (None, "Wikimedia Commons"),
     ],
 )
 def test_a_commons_credit_names_the_author_commons_settled_on(artist, credit):
     from unigrids_pipeline.countries.common import commons_credit
 
     assert commons_credit(artist) == credit
+
+
+@pytest.mark.parametrize(
+    ("record", "credit"),
+    [
+        # Commons' Credit field, where it names someone.
+        ({"artist": "", "credit": "Photo: Statens vegvesen", "licence": "CC BY 4.0"},
+         "Photo: Statens vegvesen, via Wikimedia Commons"),
+        # Its boilerplate is a source, not an author; the uploader is next.
+        ({"artist": None,
+          "credit": "No machine-readable source provided. Own work assumed (based on "
+                    "copyright claims).",
+          "uploader": "Jojo~commonswiki", "licence": "CC BY-SA 3.0"},
+         "Jojo, via Wikimedia Commons"),
+        ({"artist": None, "credit": "<span>Own work</span>", "uploader": "Koda6029",
+          "licence": "CC BY-SA 3.0"}, "Koda6029, via Wikimedia Commons"),
+        # No author anywhere: credited to its source, never to an invented photographer.
+        ({"artist": None, "credit": "Own work", "licence": "CC BY-SA 3.0"},
+         "Wikimedia Commons"),
+        ({"artist": None, "credit": "", "licence": "Public domain"}, "Wikimedia Commons"),
+    ],
+)
+def test_a_commons_credit_falls_back_to_credit_then_uploader(record, credit):
+    from unigrids_pipeline.countries.common import commons_record_credit
+
+    assert commons_record_credit(record) == credit
