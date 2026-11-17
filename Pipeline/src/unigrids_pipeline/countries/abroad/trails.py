@@ -48,7 +48,7 @@ import numpy as np
 from ... import config, ids, measure, outline, rawstore, trail_catalogue, trails
 from ...geo import BoundingBox, Coordinate, distance_m, line_length_m
 from ...rawstore import FetchRecord, SourceTerms
-from ...sources import http, osm
+from ...sources import http, osm, osm_pbf
 from . import elevation
 
 Record = dict[str, Any]
@@ -199,6 +199,7 @@ def fetch(
     *,
     refresh: bool = False,
     elevation_tiles: bool = True,
+    osm_extract: Path | None = None,
 ) -> Path:
     """Download the routes ``build`` reads into ``raw/<today>/``, then the elevation tiles
     the kept routes cross. Resumes where an earlier run stopped; a park Overpass could not
@@ -206,6 +207,8 @@ def fetch(
 
     Norway's routes come first for every park, since they do not depend on Overpass;
     OpenStreetMap is then asked only for the parks Turrutebasen leaves without a route.
+    With ``osm_extract`` (a Geofabrik ``.osm.pbf``), every park's OpenStreetMap file not
+    yet fetched is read out of the extract in one pass instead of asked of Overpass.
     """
     if country not in COUNTRIES:
         raise ValueError(f"no trail catalogue for {country!r}; known: {', '.join(COUNTRIES)}")
@@ -217,6 +220,15 @@ def fetch(
     located = [(park, polygons) for park, polygons in located if polygons]
     model = elevation.CopernicusDEM(online=True) if elevation_tiles else None
     left: list[str] = []
+    if osm_extract is not None:
+        source = OSM_TRAIL_SOURCES[country]
+        fetch_osm_extract(
+            country,
+            [(park, polygons) for park, polygons in located
+             if refresh or _latest(source, park["id"]) is None],
+            version,
+            osm_extract,
+        )
     with client() as session:
         if country == "no":
             for park, polygons in located:
@@ -496,14 +508,94 @@ def fetch_osm(
         return None
     finally:
         time.sleep(OSM_PAUSE_SECONDS)
-    directory = rawstore.version_directory(source, version)
-    path = directory / f"{park['id']}.json"
-    path.write_text(json.dumps({"elements": elements}, ensure_ascii=False))
-    _write_record(directory, OSM_TRAIL_TERMS, path, asked[0][0],
-                  {"data": [query for _, query in asked]}, elements=len(elements))
+    path = write_osm(country, park, elements, version, OSM_TRAIL_TERMS, asked[0][0],
+                     {"data": [query for _, query in asked]})
     print(f"    {source}/{park['id']}: {len(elements)} elements"
           f"{f' in {len(asked)} queries' if len(asked) > 1 else ''}", flush=True)
     return path
+
+
+def write_osm(
+    country: str,
+    park: Record,
+    elements: list[Record],
+    version: str,
+    terms: SourceTerms,
+    url: str,
+    parameters: Record,
+) -> Path:
+    """One park's OpenStreetMap answer, saved where ``_read_osm`` finds it."""
+    directory = rawstore.version_directory(OSM_TRAIL_SOURCES[country], version)
+    path = directory / f"{park['id']}.json"
+    path.write_text(json.dumps({"elements": elements}, ensure_ascii=False))
+    _write_record(directory, terms, path, url, parameters, elements=len(elements))
+    return path
+
+
+def extract_request(park: Record, polygons: list[outline.Polygon]) -> osm_pbf.Request | None:
+    """:data:`OSM_QUERY` over the park's search box, as a read of a Geofabrik extract."""
+    box = _search_box(polygons)
+    if box is None:
+        return None
+    # Rounded as ``trail_query`` writes the box, so an edge case lands as Overpass had it.
+    return osm_pbf.Request(
+        name=park["id"], trails=osm_pbf.rounded((box.south, box.west, box.north, box.east), 5),
+        trail_kinds=OSM_TRAIL_KINDS,
+    )
+
+
+OSM_EXTRACT_TERMS = SourceTerms(
+    identifier="openstreetmap-trails-abroad",
+    title="OpenStreetMap hiking routes and named footpaths, read from a Geofabrik extract",
+    url="https://www.openstreetmap.org/copyright",
+    licence="Open Database License (ODbL) 1.0",
+    attribution="© OpenStreetMap contributors (ODbL)",
+    notes=(
+        "route=hiking relations and named highway=path|footway ways touching each park's "
+        "box, read out of the country's Geofabrik .osm.pbf in Overpass's `out geom` shape "
+        "(whole, unclipped). Shipped as data: a Derivative Database under the ODbL."
+    ),
+)
+
+
+def fetch_osm_extract(
+    country: str,
+    located: list[tuple[Record, list[outline.Polygon]]],
+    version: str,
+    extract: Path,
+    *,
+    selected: dict[str, list[Record]] | None = None,
+) -> list[Path]:
+    """Each park's trail file read out of a Geofabrik extract, in Overpass's shape, so
+    ``osm_routes`` reads it as it reads an Overpass answer and the keys do not move.
+    ``selected`` is a selection already made (the Japanese fetch reads trails, huts and
+    rail in one pass); without it the extract is read here."""
+    requests = [
+        (park, request) for park, polygons in located
+        if (request := extract_request(park, polygons)) is not None
+    ]
+    if not requests:
+        return []
+    if selected is None:
+        selected = osm_pbf.select(extract, [request for _, request in requests])
+    described = osm_pbf.describe(extract)
+    paths = []
+    for park, request in requests:
+        elements = selected[request.name]
+        paths.append(write_osm(
+            country, park, elements, version, OSM_EXTRACT_TERMS, described["url"],
+            {**described, "query": trail_query(_as_box(request.trails))},
+        ))
+        print(f"    {OSM_TRAIL_SOURCES[country]}/{park['id']}: {len(elements)} elements "
+              "from the extract", flush=True)
+    return paths
+
+
+def _as_box(box: tuple[float, float, float, float] | None) -> BoundingBox:
+    if box is None:
+        raise ValueError("a trail request without a box")
+    south, west, north, east = box
+    return BoundingBox(west=west, south=south, east=east, north=north)
 
 
 def trail_query(box: BoundingBox) -> str:

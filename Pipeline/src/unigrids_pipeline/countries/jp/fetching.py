@@ -44,7 +44,7 @@ import httpx
 
 from ... import __version__, climate, config, outline, rawstore
 from ...rawstore import FetchRecord, SourceTerms
-from ...sources import http
+from ...sources import http, osm_pbf
 from ..common import commons_licence, photo_filename
 from . import content, geometry, moe, shapefile
 
@@ -188,7 +188,13 @@ DOCUMENTS_TERMS = SourceTerms(
 )
 
 
-def fetch(*, refresh: bool = False) -> Path:
+OSM_SOURCES = ("extract", "overpass")
+"""Where Japan's OpenStreetMap comes from: the Geofabrik extract read locally (the
+default — Overpass turned the fetch away partway, leaving most parks without huts or
+trails), or Overpass, kept as the fallback."""
+
+
+def fetch(*, refresh: bool = False, osm_source: str = "extract") -> Path:
     """Fetch everything Japan's assembly reads into ``raw/<today>/``."""
     version = rawstore.today()
     root = config.RAW_DIR / version
@@ -211,19 +217,61 @@ def fetch(*, refresh: bool = False) -> Path:
             version, source=CLIMATE, refresh=refresh, session=session,
         )
     fetch_documents(version, parks, refresh=refresh)
-    # Last, because Overpass is the slowest and the busiest: everything else is in hand
-    # if it gives up, and a second run resumes with the queries it did not answer.
-    fetch_osm(version, parks, outlines, quasi, items, refresh=refresh)
-    # Trails from OpenStreetMap, one park at a time; a park Overpass does not answer is
-    # named and left for the next run.
+    # Last, because OpenStreetMap is the biggest: everything else is in hand if it gives
+    # up, and a second run resumes with what it did not finish.
+    fetch_openstreetmap(
+        version, parks, outlines, quasi, items, refresh=refresh, source=osm_source
+    )
+    return root
+
+
+def fetch_openstreetmap(
+    version: str | None = None,
+    parks: list[dict[str, Any]] | None = None,
+    outlines: dict[str, list[outline.Polygon]] | None = None,
+    quasi: list[moe.QuasiPark] | None = None,
+    items: dict[str, dict[str, Any]] | None = None,
+    *,
+    refresh: bool = False,
+    source: str = "extract",
+    elevation_tiles: bool = True,
+) -> None:
+    """Japan's OpenStreetMap: rail, each park's huts and stations, quasi-national park
+    outlines, and the trails, with the elevation tiles the trails cross.
+
+    Called alone it reads the park outlines and lists from the raw store, so the OSM
+    sources can be fetched again without fetching everything else.
+    """
     from ..abroad import outlines as abroad_outlines
     from ..abroad import trails as abroad_trails
 
+    if source not in OSM_SOURCES:
+        raise ValueError(f"unknown OpenStreetMap source {source!r}; known: {OSM_SOURCES}")
+    version = version or rawstore.today()
+    parks = parks if parks is not None else content.national_parks()
+    if outlines is None:
+        nps = rawstore.require(BIODIC, NPS_ZIP) / NPS_ZIP
+        outlines = {
+            park_id: outline_of(by_zone) for park_id, by_zone in park_zones(nps, parks).items()
+        }
+    trail_parks = list(abroad_outlines.park_list("jp"))
+    trail_outlines = abroad_outlines.outlines("jp")
+    extract = None
+    if source == "extract":
+        extract = fetch_osm_extract(
+            version, parks, outlines,
+            [(park, polygons) for park in trail_parks
+             if (polygons := trail_outlines.get(park["id"]))],
+            refresh=refresh,
+        )
+    fetch_osm(version, parks, outlines, quasi, items, refresh=refresh, source=source)
+    # Trails one park at a time from Overpass, or already read out of the extract above;
+    # a park Overpass does not answer is named and left for the next run.
     abroad_trails.fetch(
-        "jp", list(abroad_outlines.park_list("jp")), abroad_outlines.outlines("jp"),
-        refresh=refresh,
+        "jp", trail_parks, trail_outlines,
+        refresh=refresh and extract is None, elevation_tiles=elevation_tiles,
+        osm_extract=extract,
     )
-    return root
 
 
 # MARK: - Shared
@@ -687,17 +735,29 @@ def fetch_osm(
     version: str,
     parks: list[dict[str, Any]],
     outlines: dict[str, list[outline.Polygon]],
-    quasi: list[moe.QuasiPark],
-    items: dict[str, dict[str, Any]],
+    quasi: list[moe.QuasiPark] | None,
+    items: dict[str, dict[str, Any]] | None,
     *,
     refresh: bool,
+    source: str = "overpass",
 ) -> None:
     """Quasi-national park outlines, passenger rail by region, and per national park its
-    huts and the stations within reach. One query at a time, each saved as it lands."""
+    huts and the stations within reach. One query at a time, each saved as it lands.
+
+    With ``source="extract"`` the rail and the parks have been read out of the Geofabrik
+    extract already (``fetch_osm_extract``); only the quasi-national outlines are asked of
+    Overpass, and only when no snapshot holds them yet.
+    """
     directory = rawstore.version_directory(OSM, version)
     record = FetchRecord(source=OSM_TERMS, fetched_at=rawstore.utc_now())
     path = directory / QUASI_OUTLINES_FILE
-    if _wanted(path, refresh):
+    if source == "extract":
+        wanted = refresh or rawstore.latest(OSM, QUASI_OUTLINES_FILE) is None
+    else:
+        wanted = _wanted(path, refresh)
+    if wanted:
+        if quasi is None or items is None:
+            quasi, items = fetch_moe(version, refresh=False), fetch_wikidata(version, refresh=False)
         qids = [
             item["qid"] for park in quasi if (item := items.get(park.name)) and item.get("qid")
         ]
@@ -708,6 +768,9 @@ def fetch_osm(
             if qids else ""
         )
         _overpass(QUASI_QUERY.format(wikidata=clauses), path, record)
+    if source == "extract":
+        _record_write(record, directory)
+        return
     for region, (south, west, north, east) in RAIL_REGIONS.items():
         path = directory / "rail" / f"{region}.json"
         if _wanted(path, refresh):
@@ -718,19 +781,133 @@ def fetch_osm(
         polygons = outlines.get(park["id"])
         if not polygons or not _wanted(path, refresh):
             continue
-        south, west, north, east = outline.bbox(polygons)  # type: ignore[misc]
-        pad_lat = STATION_REACH_KM / 111.0
-        pad_lon = STATION_REACH_KM / (111.0 * max(0.2, _cos_deg((south + north) / 2)))
-        query = PARK_QUERY.format(
-            s=south, w=west, n=north, e=east,
-            S=south - pad_lat, W=west - pad_lon, N=north + pad_lat, E=east + pad_lon,
-        )
+        query = PARK_QUERY.format(**_park_boxes(polygons))
         _overpass(query, path, record)
     _record_write(record, directory)
 
 
+def _park_boxes(polygons: list[outline.Polygon]) -> dict[str, float]:
+    """The park's box for its huts (``s w n e``) and the box reaching
+    :data:`STATION_REACH_KM` beyond it for its stations (``S W N E``)."""
+    south, west, north, east = outline.bbox(polygons)  # type: ignore[misc]
+    pad_lat = STATION_REACH_KM / 111.0
+    pad_lon = STATION_REACH_KM / (111.0 * max(0.2, _cos_deg((south + north) / 2)))
+    return {
+        "s": south, "w": west, "n": north, "e": east,
+        "S": south - pad_lat, "W": west - pad_lon, "N": north + pad_lat, "E": east + pad_lon,
+    }
+
+
 def _cos_deg(degrees: float) -> float:
     return math.cos(math.radians(degrees))
+
+
+OSM_EXTRACT_TERMS = SourceTerms(
+    identifier="openstreetmap-jp",
+    title="OpenStreetMap from the Geofabrik extract: huts, stations, rail",
+    url="https://www.openstreetmap.org/copyright",
+    licence="Open Database License (ODbL) 1.0",
+    attribution="© OpenStreetMap contributors",
+    notes=(
+        "Read out of Geofabrik's japan .osm.pbf in Overpass JSON's shapes, selecting what "
+        "RAIL_QUERY and PARK_QUERY select; the rail files also hold the station nodes of "
+        "the stop areas the services call at. Huts, stations and rail lines ship as data, "
+        "so the dataset is a Derivative Database under the ODbL."
+    ),
+)
+
+
+def fetch_osm_extract(
+    version: str,
+    parks: list[dict[str, Any]],
+    outlines: dict[str, list[outline.Polygon]],
+    trail_parks: list[tuple[dict[str, Any], list[outline.Polygon]]],
+    *,
+    refresh: bool,
+    extract: Path | None = None,
+) -> Path:
+    """Rail by region, each park's huts and stations, and each park's trails, read out of
+    the Geofabrik extract in one pass and written as the files the Overpass queries would
+    have left. Returns the extract, downloading it first if no snapshot holds one."""
+    from ..abroad import trails as abroad_trails
+
+    extract = extract or (None if refresh else osm_pbf.latest())
+    if extract is None:
+        extract = osm_pbf.download(rawstore.version_directory(osm_pbf.SOURCE, version),
+                                   refresh=refresh)
+    directory = rawstore.version_directory(OSM, version)
+    requests: list[osm_pbf.Request] = []
+    rail_paths: dict[str, Path] = {}
+    for region, box in RAIL_REGIONS.items():
+        path = directory / "rail" / f"{region}.json"
+        if _wanted(path, refresh):
+            rail_paths[region] = path
+            requests.append(osm_pbf.Request(name=f"rail:{region}", rail=osm_pbf.rounded(box, 4)))
+    park_paths: dict[str, Path] = {}
+    for park in parks:
+        path = directory / "parks" / f"{park['id']}.json"
+        polygons = outlines.get(park["id"])
+        if not polygons or not _wanted(path, refresh):
+            continue
+        b = _park_boxes(polygons)
+        park_paths[park["id"]] = path
+        requests.append(osm_pbf.Request(
+            name=f"park:{park['id']}",
+            # Rounded as PARK_QUERY writes them, so the edges fall where Overpass had them.
+            huts=osm_pbf.rounded((b["s"], b["w"], b["n"], b["e"]), 5),
+            stations=osm_pbf.rounded((b["S"], b["W"], b["N"], b["E"]), 4),
+        ))
+    trails_dir = config.RAW_DIR / version / abroad_trails.OSM_TRAIL_SOURCES["jp"]
+    trail_located = [
+        (park, polygons) for park, polygons in trail_parks
+        if refresh or not (trails_dir / f"{park['id']}.json").exists()
+    ]
+    for park, polygons in trail_located:
+        if (request := abroad_trails.extract_request(park, polygons)) is not None:
+            request.name = f"trails:{park['id']}"
+            requests.append(request)
+    if not requests:
+        return extract
+    print(f"    {OSM}: reading {len(requests)} selections out of {extract.name}", flush=True)
+    selected = osm_pbf.select(extract, requests)
+    described = osm_pbf.describe(extract)
+    header = {
+        "version": 0.6,
+        "generator": f"unigrids-pipeline {__version__} from {extract.name}",
+        "osm3s": {
+            "timestamp_osm_base": described.get("replicationTimestamp", ""),
+            "copyright": "The data included in this document is from www.openstreetmap.org. "
+                         "The data is made available under ODbL.",
+        },
+    }
+    record = FetchRecord(source=OSM_EXTRACT_TERMS, fetched_at=rawstore.utc_now())
+    for region, path in rail_paths.items():
+        south, west, north, east = RAIL_REGIONS[region]
+        elements = selected[f"rail:{region}"]
+        osm_pbf.write_elements(path, elements, **header)
+        record.add_request(described["url"], {
+            **described, "query": RAIL_QUERY.format(s=south, w=west, n=north, e=east),
+            "plus": "station nodes of the stop areas the services call at",
+        }, elements=len(elements))
+        record.add_file(path, root=directory)
+        print(f"    {OSM}: rail/{path.name}, {len(elements)} elements", flush=True)
+    for park_id, path in park_paths.items():
+        elements = selected[f"park:{park_id}"]
+        osm_pbf.write_elements(path, elements, **header)
+        record.add_request(described["url"], {
+            **described, "query": PARK_QUERY.format(**_park_boxes(outlines[park_id])),
+        }, elements=len(elements))
+        record.add_file(path, root=directory)
+    _record_write(record, directory)
+    print(f"    {OSM}: {len(park_paths)} parks' huts and stations", flush=True)
+    abroad_trails.fetch_osm_extract(
+        "jp", trail_located, version, extract,
+        selected={
+            park["id"]: selected[f"trails:{park['id']}"] for park, _ in trail_located
+            if f"trails:{park['id']}" in selected
+        },
+    )
+    return extract
 
 
 # The main instance first: when it is full it says so at once (429, 504), and backing off
