@@ -168,4 +168,14 @@ struct TrackCategoryTests {
         let unknown = TrailGrade(system: .newZealandTrackCategory, grade: "Great Walk")
         #expect(unknown.label == nil && unknown.band == nil)
     }
+
+    @Test("Parks Canada's four ratings read as published and into the bands")
+    func parksCanada() {
+        let grades = ["Easy", "Moderate", "Difficult", "Most difficult"].map {
+            TrailGrade(system: .parksCanadaDifficulty, grade: $0)
+        }
+        #expect(grades.map(\.label) == ["Easy", "Moderate", "Difficult", "Most difficult"])
+        #expect(grades.map(\.band) == [.easy, .moderate, .strenuous, .veryStrenuous])
+        #expect(TrailGrade(system: .parksCanadaDifficulty, grade: "Expert").band == nil)
+    }
 }

@@ -18,6 +18,9 @@ public struct TrailGrade: Hashable, Sendable, Codable {
         /// New Zealand's Department of Conservation track categories, from a
         /// wheelchair-accessible short walk to an expert route.
         case newZealandTrackCategory
+        /// Parks Canada's summer difficulty rating: Easy, Moderate, Difficult, Most
+        /// difficult.
+        case parksCanadaDifficulty
     }
 
     public let system: System
@@ -45,6 +48,8 @@ public struct TrailGrade: Hashable, Sendable, Codable {
             return "Stamina \(parts.stamina), technical \(parts.technical)"
         case .newZealandTrackCategory:
             return Self.trackCategories[grade] == nil ? nil : grade
+        case .parksCanadaDifficulty:
+            return Self.parksCanadaRatings[grade] == nil ? nil : grade
         }
     }
 
@@ -69,6 +74,8 @@ public struct TrailGrade: Hashable, Sendable, Codable {
             return TrailDifficulty.allCases[max(technical, stamina)]
         case .newZealandTrackCategory:
             return Self.trackCategories[grade]
+        case .parksCanadaDifficulty:
+            return Self.parksCanadaRatings[grade]
         }
     }
 
@@ -80,6 +87,15 @@ public struct TrailGrade: Hashable, Sendable, Codable {
         "Intermediate tramping track": .moderatelyStrenuous,
         "Advanced tramping track": .strenuous,
         "Expert route": .veryStrenuous,
+    ]
+
+    /// Parks Canada's four ratings, read into the catalogue's bands: its Difficult is a
+    /// strenuous day, its Most difficult the hardest band.
+    private static let parksCanadaRatings: [String: TrailDifficulty] = [
+        "Easy": .easy,
+        "Moderate": .moderate,
+        "Difficult": .strenuous,
+        "Most difficult": .veryStrenuous,
     ]
 
     private static let norwegianColours = [
