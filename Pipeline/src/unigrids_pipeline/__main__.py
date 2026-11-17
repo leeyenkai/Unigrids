@@ -7,7 +7,7 @@ import dataclasses
 import sys
 from collections.abc import Sequence
 
-from . import __version__, config, steps
+from . import __version__, config, countries, steps
 
 STEP_FUNCTIONS = {
     "fetch": steps.fetch,
@@ -88,7 +88,10 @@ def build_parser() -> argparse.ArgumentParser:
 
     subparsers.choices["package"].add_argument(
         "--parks",
-        help="Comma-separated NPS codes to copy into the app (default: every built pack).",
+        help=(
+            "Comma-separated NPS codes or place IDs abroad (no-np-jotunheimen) to copy into "
+            "the app (default: every built pack)."
+        ),
     )
 
     reference_parser = subparsers.add_parser(
@@ -103,17 +106,37 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Build from the newest raw data already on disk, without touching the network.",
     )
+    reference_parser.add_argument(
+        "--countries",
+        type=_countries,
+        default=countries.DEFAULT,
+        help=(
+            "Comma-separated countries the dataset covers, and only those: the build "
+            f"writes each file whole. Known: {', '.join(countries.KNOWN)}. "
+            f"Default: {','.join(countries.DEFAULT)}."
+        ),
+    )
 
     all_parser = subparsers.add_parser("all", help="Run every step in order.")
     _add_park_argument(all_parser)
     return parser
 
 
+def _countries(text: str) -> tuple[str, ...]:
+    try:
+        return countries.parse(text)
+    except ValueError as error:
+        raise argparse.ArgumentTypeError(str(error)) from error
+
+
 def _add_park_argument(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "--park",
         default=config.DEFAULT_PARK,
-        help=f"NPS park code. Known: {', '.join(sorted(config.PARKS))}.",
+        help=(
+            f"NPS park code (pilot parks: {', '.join(sorted(config.PARKS))}), or a park "
+            "abroad by its place ID: jp-np-chubusangaku, no-np-jotunheimen."
+        ),
     )
 
 
@@ -127,9 +150,9 @@ def main(argv: Sequence[str] | None = None) -> int:
 
         print("==> reference fetch")
         if not args.skip_fetch:
-            reference_fetch.fetch(refresh=args.refresh)
+            reference_fetch.fetch(refresh=args.refresh, codes=args.countries)
         print("==> reference build")
-        reference_build.build(online=not args.skip_fetch)
+        reference_build.build(online=not args.skip_fetch, codes=args.countries)
         return 0
 
     requested = ORDER if args.step == "all" else (args.step,)

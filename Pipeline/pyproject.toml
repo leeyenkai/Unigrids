@@ -53,3 +53,6 @@ ignore = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+# Python 3.13 skips the hidden .pth file an editable install writes into an iCloud-synced
+# folder, so the package is put on the path here rather than trusted to be installed.
+pythonpath = ["src"]

@@ -33,6 +33,30 @@ _THIRD_PARTY = re.compile(
 # How many photographs a national park's guide carries: one hero and a short gallery.
 PHOTOS_PER_PARK = 5
 
+# Every photograph carries the licence it is reused under, and is marked public domain
+# only when that licence says so. An NPS-credited photograph is a work of the federal
+# government, which is public domain (17 U.S.C. §105).
+NPS_PHOTO_LICENCE = "Public domain"
+
+# "PD" counts only as a word: Japan's Public Data License ("PDL 1.0", the Ministry of the
+# Environment's terms) asks for credit, and is not public domain.
+_PUBLIC_DOMAIN_LICENCE = re.compile(r"^(public domain|pd\b|cc0\b)", re.IGNORECASE)
+_REUSABLE_LICENCE = re.compile(
+    r"^(public domain|pd\b|cc0\b|cc by(-sa)? \d|pdl 1\.0\b)", re.IGNORECASE
+)
+
+
+def is_public_domain_licence(licence: str | None) -> bool:
+    """Whether a licence, as published ("Public domain", "CC0", "CC BY-SA 4.0"), puts a
+    photograph in the public domain."""
+    return bool(licence and _PUBLIC_DOMAIN_LICENCE.search(licence.strip()))
+
+
+def is_reusable_licence(licence: str | None) -> bool:
+    """Whether a licence lets Unigrids reuse a photograph with credit. Anything else is
+    left out."""
+    return bool(licence and _REUSABLE_LICENCE.search(licence.strip()))
+
 
 def is_public_domain_credit(credit: str | None) -> bool:
     """Whether an NPS API photo credit reads as an NPS work, and so public domain."""
@@ -48,7 +72,8 @@ def choose_photos(
     skip: list[str] | None = None,
     captions: dict[str, str] | None = None,
 ) -> list[dict]:
-    """The photographs a park's guide uses, in the NPS's own order, NPS-credited only.
+    """The photographs a park's guide uses, in the NPS's own order, NPS-credited only,
+    each with the licence that makes it reusable (``NPS_PHOTO_LICENCE``).
 
     ``keywords`` narrows a shared photo set to one park's — Sequoia's and Kings Canyon's
     come from one NPS record — by what each photograph's title and description name.
@@ -75,9 +100,10 @@ def choose_photos(
         if not url or url in seen or not is_public_domain_credit(image.get("credit")):
             continue
         seen.add(url)
+        image = {**image, "licence": NPS_PHOTO_LICENCE}
         title = image.get("title") or ""
         if captions and title in captions:
-            image = {**image, "title": captions[title]}
+            image["title"] = captions[title]
         chosen.append(image)
         if len(chosen) == limit:
             break

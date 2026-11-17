@@ -14,8 +14,10 @@ absent, which is correct.
 | `national-park-facts.json` | Date established, area and 2025 recreation visits for each park, with sources |
 | `state-parks.json`, `federal-sites.json` | The curated state parks, monuments and refuges: PAD-US name patterns for the outline, Wikipedia article for the photograph, and a written summary |
 | `themes.json` | Theme tags |
-| `guides/np-*.json` | One guide per national park: summary, at-a-glance extras, story, sights (matched to NPS places by name, or given a location), plan your visit, chronology, safety, regulations, sources |
+| `guides/np-*.json` | One guide per national park: summary, at-a-glance extras, story, sights (matched to NPS places by name, or given a location), plan your visit, chronology, safety, regulations, sources. A `heroOverride` photograph, chosen by hand where the NPS record has none Unigrids may reuse, states its `credit` and its `licence` as published; the build refuses one without them |
 | `curated/` | Permit and timed-entry rules, seasonal notes, passport region assignments, theme overrides, sight rankings |
+| `ids/places.json` | The US's identifier registry: source key → place identifier, so a renamed record keeps its identifier |
+| `ids/<country>/` | The same for a country added after the US, one file each for `places`, `pois` and `trails`, keyed on each source's own identifier (`osm:node/123`, `turrutebasen:1234`) |
 
 Two of these need curation that does not exist yet, both tracked in `SPECIFICATION.md`
 §17:

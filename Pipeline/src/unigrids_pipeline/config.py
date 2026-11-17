@@ -27,6 +27,12 @@ APP_RESOURCES = (
     REPO_ROOT / "Packages/UnigridsKit/Sources/UnigridsReference/Resources/generated"
 )
 
+# Where `reference` writes the dataset the app bundles. Pipeline output, committed: change a
+# fact in `content/` or at its source and rebuild, never by hand (`AGENTS.md` §4).
+REFERENCE_DIR = (
+    REPO_ROOT / "Packages/UnigridsKit/Sources/UnigridsReference/Resources/reference"
+)
+
 # The four parks the pilot proves the template and the pack size on
 # (SPECIFICATION.md §16).
 PILOT_PARKS = ("ZION", "ACAD", "YELL", "GRSM")

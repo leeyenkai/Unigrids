@@ -18,6 +18,8 @@ import re
 import unicodedata
 from pathlib import Path
 
+from . import config
+
 _SEPARATORS = re.compile(r"[^a-z0-9]+")
 
 # Dash-like and path characters become word separators. Folding to ASCII would otherwise
@@ -59,6 +61,139 @@ def trail_id(place_slug: str, name: str) -> str:
 def theme_id(name: str) -> str:
     """``theme-volcanoes``."""
     return f"theme-{slug(name)}"
+
+
+# MARK: - Countries after the US
+#
+# ``slug`` deletes whatever it cannot fold to ASCII. For English names that is harmless,
+# and the US's identifiers built with it are in users' logs, so it stays exactly as it
+# is. For Norwegian, Sámi and Japanese names it is destructive — "Færder" becomes
+# "frder", "知床" becomes nothing — so the countries added after the US slug through
+# ``romanised_slug`` instead, and carry their country in every identifier.
+
+# Letters the Norwegian and Sámi alphabets use that Unicode does not decompose into a
+# base letter and a mark. The rest — å, á, č, š, ž, ï, and the macrons of romanised
+# Japanese (Chūbu) — do decompose, and lose their marks as ``slug`` folds Haleakalā.
+_TRANSLITERATION = str.maketrans({
+    "æ": "ae", "Æ": "ae",
+    "ø": "o", "Ø": "o",
+    "đ": "d", "Đ": "d",
+    "ŋ": "n", "Ŋ": "n",
+    "ŧ": "t", "Ŧ": "t",
+})
+
+# Each country's place namespaces: ``<country>-<tier>-<slug>``.
+PLACE_NAMESPACES: dict[str, tuple[str, ...]] = {
+    # 国立公園 national parks and 国定公園 quasi-national parks.
+    "jp": ("np", "qnp"),
+    # Nasjonalparker, landskapsvernområder and naturreservater.
+    "no": ("np", "lvo", "nr"),
+}
+
+REGISTRY_KINDS = ("places", "pois", "trails")
+
+
+class UnromanisedNameError(ValueError):
+    """A name that cannot become a slug without losing letters, or that has none."""
+
+
+def romanised_slug(text: str) -> str:
+    """A slug for a name in the Latin alphabet but not in English: Norwegian, Sámi, or
+    Japanese as officially romanised (``Chūbu-Sangaku`` → ``chubu-sangaku``).
+
+    Letters that need it are transliterated (æ → ae, ø → o, đ ŋ ŧ → d n t), marks are
+    dropped, and anything that is neither a letter nor a digit separates words. A letter
+    still outside ASCII after that — kanji, kana, a letter the table does not know — is
+    refused rather than deleted, so it fails the build instead of shipping a truncated
+    identifier. So is a name that leaves nothing to slug.
+    """
+    cleaned = text.translate(_TO_NOTHING).translate(_TO_HYPHEN).translate(_TRANSLITERATION)
+    kept: list[str] = []
+    unknown: set[str] = set()
+    for character in unicodedata.normalize("NFKD", cleaned):
+        category = unicodedata.category(character)
+        if character.isascii():
+            kept.append(character)
+        elif category == "Mn":
+            continue
+        elif category[0] in "LN":
+            unknown.add(character)
+        else:
+            kept.append("-")
+    if unknown:
+        raise UnromanisedNameError(
+            f"{text!r}: no Latin form for {' '.join(sorted(unknown))}; give its romanised name"
+        )
+    result = _SEPARATORS.sub("-", "".join(kept).lower()).strip("-")
+    if not result:
+        raise UnromanisedNameError(f"{text!r} has no letters or digits to make a slug from")
+    return result
+
+
+def country_place_id(country: str, tier: str, name: str) -> str:
+    """``jp-np-shiretoko``, ``no-lvo-…``: the identifier proposed for a place abroad.
+
+    National parks are few and curated, and keep the identifier their content file gives
+    them. Every other place abroad resolves its proposal through
+    ``country_registry(country, "places")``, keyed on the source's own identifier, so a
+    renamed record keeps its identifier.
+    """
+    if tier not in PLACE_NAMESPACES.get(country, ()):
+        raise ValueError(f"no place namespace {country!r}-{tier!r}")
+    return f"{country}-{tier}-{romanised_slug(name)}"
+
+
+def country_poi_id(
+    registry: Registry, country: str, park_slug: str, key: str, name: str | None
+) -> str:
+    """``poi-jp-<park>-<slug>``: a point of interest abroad, pinned to its source's own
+    identifier (``key``, as ``"osm:node/123"``) in the country's registry."""
+    return _resolve_abroad(registry, "poi", country, park_slug, key, name)
+
+
+def country_trail_id(
+    registry: Registry, country: str, park_slug: str, key: str, name: str | None
+) -> str:
+    """``trail-no-<park>-<slug>``: a trail abroad, pinned to its source's own identifier
+    (``key``, as ``"turrutebasen:1234"``) in the country's registry."""
+    return _resolve_abroad(registry, "trail", country, park_slug, key, name)
+
+
+def _resolve_abroad(
+    registry: Registry, kind: str, country: str, park_slug: str, key: str, name: str | None
+) -> str:
+    if country not in PLACE_NAMESPACES:
+        raise ValueError(f"no country namespace {country!r}")
+    source, _, local = key.partition(":")
+    if not source or not local:
+        raise ValueError(f"{key!r}: a registry key is '<source>:<the source's own id>'")
+    # A name with no Latin form (a hut OSM knows only as 槍ヶ岳山荘) is named by its
+    # source key instead. The identifier is still stable, because the registry pins it.
+    try:
+        stem = romanised_slug(name or "")
+    except UnromanisedNameError:
+        stem = romanised_slug(key)
+    return registry.resolve(key, f"{kind}-{country}-{romanised_slug(park_slug)}-{stem}")
+
+
+def country_registry(country: str, kind: str) -> Registry:
+    """The committed registry of one country's places, points of interest or trails:
+    ``content/ids/<country>/<kind>.json``. The US's places keep ``content/ids/places.json``,
+    and its sights and trails, which predate registries, slug from their names."""
+    if country not in PLACE_NAMESPACES:
+        raise ValueError(f"no country namespace {country!r}")
+    if kind not in REGISTRY_KINDS:
+        raise ValueError(f"{kind!r} is not one of {', '.join(REGISTRY_KINDS)}")
+    return Registry(config.CONTENT_DIR / "ids" / country / f"{kind}.json")
+
+
+def country_of(identifier: str) -> str:
+    """The country an identifier belongs to, read off its prefix — the rule the app
+    applies to a place that has left the dataset. An identifier without a country prefix
+    is American, because the US's identifiers predate countries."""
+    parts = identifier.split("-", 2)
+    candidate = parts[1] if parts[0] in ("poi", "trail") and len(parts) > 1 else parts[0]
+    return candidate if candidate in PLACE_NAMESPACES else "us"
 
 
 class IdentifierCollisionError(RuntimeError):

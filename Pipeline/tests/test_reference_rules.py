@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
-from unigrids_pipeline import reference_build, visitation
+from unigrids_pipeline import visitation
+from unigrids_pipeline.countries import common
+from unigrids_pipeline.countries.us import assembly
 
 
 def test_dated_notices_are_dropped_and_the_rest_kept():
@@ -10,24 +12,24 @@ def test_dated_notices_are_dropped_and_the_rest_kept():
         "***CLOSED as of August 31, 2026*** The centre has exhibits and a film. "
         "Scheduled to open late October 2026. Built in 1936 by the CCC."
     )
-    assert reference_build._without_notices(text) == (
+    assert assembly._without_notices(text) == (
         "The centre has exhibits and a film. Built in 1936 by the CCC."
     )
-    assert reference_build._without_notices("Closed for 2026.") is None
-    assert reference_build._without_notices("Open May 9–October 31, 2025.") is None
-    assert reference_build._without_notices("Open daily, 9 to 5.") == "Open daily, 9 to 5."
+    assert assembly._without_notices("Closed for 2026.") is None
+    assert assembly._without_notices("Open May 9–October 31, 2025.") is None
+    assert assembly._without_notices("Open daily, 9 to 5.") == "Open daily, 9 to 5."
 
 
 def test_stamp_labels_lose_stale_status():
-    assert reference_build._stamp_label("A.G. Gaston Motel (Temporarily Closed)") == (
+    assert assembly._stamp_label("A.G. Gaston Motel (Temporarily Closed)") == (
         "A.G. Gaston Motel"
     )
-    assert reference_build._stamp_label("Fort Museum - Closed for Renovation") == "Fort Museum"
-    assert reference_build._stamp_label("Kolb Studio") == "Kolb Studio"
+    assert assembly._stamp_label("Fort Museum - Closed for Renovation") == "Fort Museum"
+    assert assembly._stamp_label("Kolb Studio") == "Kolb Studio"
 
 
 def test_known_source_damage_is_repaired():
-    assert reference_build._clean("Pools of ?Ohe?o") == "Pools of ʻOheʻo"
+    assert common.clean("Pools of ?Ohe?o") == "Pools of ʻOheʻo"
 
 
 def test_visitation_averages_full_years_and_totals_the_latest():

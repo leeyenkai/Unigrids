@@ -105,6 +105,7 @@
   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Anacapa-Island-Coreopsis.jpg",
   "title": "Giant coreopsis on Anacapa Island",
   "credit": "NPS / Derek Lohuis",
+  "licence": "Public domain",
   "sourceURL": "https://commons.wikimedia.org/wiki/File:Anacapa-Island-Coreopsis.jpg",
   "altText": "Yellow giant coreopsis covering Anacapa Island, with the lighthouse and the sea beyond.",
   "_why": "Every photograph the NPS Data API lists for Channel Islands is by a private photographer. This one is an NPS work, public domain, via Wikimedia Commons."
