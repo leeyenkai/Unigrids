@@ -250,6 +250,7 @@ struct PassportRegionPage: View {
                 .lineLimit(2)
             if let location = slot.location {
                 Text(location.name)
+                    .typeset(for: location.name)
                     .font(UnigridStyle.caption)
                     .foregroundStyle(style.inkSecondary)
                     .multilineTextAlignment(.center)

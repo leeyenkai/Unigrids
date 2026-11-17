@@ -41,6 +41,7 @@ struct HutsPanel: View {
                 ForEach(huts.prefix(shown)) { hut in
                     VStack(alignment: .leading, spacing: 2) {
                         Text(hut.name)
+                            .typeset(for: hut.name)
                             .font(UnigridStyle.itemTitle)
                             .foregroundStyle(style.ink)
                             .fixedSize(horizontal: false, vertical: true)

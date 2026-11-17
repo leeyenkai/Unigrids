@@ -241,6 +241,7 @@ private struct CheckInTargetRow: View {
             HStack {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(poi.name)
+                        .typeset(for: poi.name)
                         .font(UnigridStyle.rowTitle)
                         .foregroundStyle(style.ink)
                     Text(poi.kind.name)

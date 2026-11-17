@@ -122,6 +122,7 @@ struct MapSearchSuggestions: View {
                         .foregroundStyle(style.inkSecondary)
                     VStack(alignment: .leading, spacing: 1) {
                         Text(poi.name)
+                            .typeset(for: poi.name)
                             .font(UnigridStyle.rowTitle)
                         Text("\(poi.kind.name) · \(store.place(poi.placeID)?.name ?? "")")
                             .font(UnigridStyle.rowDetail)

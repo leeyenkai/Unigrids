@@ -109,6 +109,8 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- Japanese names of trails, sights, huts, visitor centres and stations are typeset as
+  Japanese, so a name such as 表銀座 takes its Japanese glyph forms rather than Chinese ones.
 - Varsom's avalanche danger badges show on the map for every Norwegian national park as
   soon as the map opens, not only for a park whose page has been opened. The map asks for
   all of them alike, a few at a time and at most hourly, so the requests say nothing about

@@ -52,3 +52,18 @@ public enum SearchText {
         "ʻ": "", "’": "", "'": "",
     ]
 }
+
+/// Whether text is written in Japanese script, so a screen can typeset it as Japanese:
+/// one Unicode character serves Chinese and Japanese alike, and only the language tag
+/// picks the Japanese form of the glyph.
+public enum JapaneseScript {
+    public static func contains(_ text: String) -> Bool {
+        text.unicodeScalars.contains { scalar in
+            switch scalar.value {
+            case 0x3005, 0x3040 ... 0x30FF, 0x3400 ... 0x4DBF, 0x4E00 ... 0x9FFF,
+                 0xF900 ... 0xFAFF, 0xFF66 ... 0xFF9F: true
+            default: false
+            }
+        }
+    }
+}

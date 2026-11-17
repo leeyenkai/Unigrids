@@ -20,6 +20,7 @@ struct ByTrainPanel: View {
                             .foregroundStyle(style.inkSecondary)
                         VStack(alignment: .leading, spacing: 2) {
                             Text(access.station.name)
+                                .typeset(for: access.station.name)
                                 .font(UnigridStyle.itemTitle)
                                 .foregroundStyle(style.ink)
                             Text(stationLine(access))

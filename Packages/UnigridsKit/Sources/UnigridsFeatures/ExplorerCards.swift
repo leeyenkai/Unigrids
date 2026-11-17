@@ -289,6 +289,7 @@ struct SightStrip: View {
                         HStack(spacing: 8) {
                             SightNumber(number: index + 1, isSelected: index == current)
                             Text(sight.name)
+                                .typeset(for: sight.name)
                                 .font(UnigridStyle.action)
                                 .foregroundStyle(style.bandInk)
                                 .lineLimit(1)

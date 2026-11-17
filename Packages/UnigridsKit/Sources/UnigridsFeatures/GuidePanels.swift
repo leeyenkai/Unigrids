@@ -118,6 +118,7 @@ struct VisitorCentresPanel: View {
                     VStack(alignment: .leading, spacing: 4) {
                         HStack(alignment: .firstTextBaseline, spacing: 6) {
                             Text(centre.name)
+                                .typeset(for: centre.name)
                                 .font(UnigridStyle.itemTitle)
                                 .foregroundStyle(style.ink)
                                 .fixedSize(horizontal: false, vertical: true)

@@ -332,6 +332,7 @@ struct TrailDetailScreen: View {
                                     HStack(spacing: 10) {
                                         SightNumber(number: sight.rank)
                                         Text(sight.name)
+                                            .typeset(for: sight.name)
                                             .font(UnigridStyle.itemTitle)
                                             .foregroundStyle(style.ink)
                                     }

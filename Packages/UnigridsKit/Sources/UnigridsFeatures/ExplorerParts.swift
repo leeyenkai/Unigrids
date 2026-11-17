@@ -166,6 +166,7 @@ struct ExplorerList: View {
                                     isSelected: focus == .sight(sight.id)
                                 )
                                 Text(sight.name)
+                                    .typeset(for: sight.name)
                                     .font(UnigridStyle.rowTitle)
                                     .foregroundStyle(style.ink)
                             }
@@ -212,6 +213,7 @@ struct ExplorerList: View {
                                 )
                                 VStack(alignment: .leading, spacing: 1) {
                                     Text(poi.name)
+                                        .typeset(for: poi.name)
                                         .font(UnigridStyle.rowTitle)
                                         .foregroundStyle(style.ink)
                                     Text(poi.kind.name)

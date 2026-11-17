@@ -126,6 +126,7 @@ struct TrailRow: View {
             VStack(alignment: .leading, spacing: 3) {
                 HStack(spacing: 6) {
                     Text(trail.name)
+                        .typeset(for: trail.name)
                         .font(UnigridStyle.rowTitle)
                         .foregroundStyle(style.ink)
                         .lineLimit(2)

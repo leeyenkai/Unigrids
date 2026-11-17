@@ -217,3 +217,13 @@ public struct UnigridChronologyRow: View {
         .accessibilityLabel("\(entry.year): \(entry.text)")
     }
 }
+
+extension View {
+    /// Japanese script typeset as Japanese, so a name such as 表銀座 takes Japanese glyph
+    /// forms rather than Chinese ones; other text is left as it is.
+    public func typeset(for text: String) -> some View {
+        typesettingLanguage(
+            Locale.Language(identifier: JapaneseScript.contains(text) ? "ja" : "und")
+        )
+    }
+}
