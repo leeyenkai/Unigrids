@@ -194,7 +194,7 @@ struct OverviewFigures: View {
                 if let annual = facts.annualVisits {
                     FigureBlock(
                         value: UnigridsFormat.visitors(annual),
-                        label: facts.annualVisitsYear.map { "Visits, \($0)" } ?? "Visits",
+                        label: facts.annualVisitsLabel.map { "Visits, \($0)" } ?? "Visits",
                         compact: true
                     )
                 }

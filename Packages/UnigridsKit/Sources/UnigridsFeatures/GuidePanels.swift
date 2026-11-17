@@ -41,7 +41,7 @@ struct AtAGlancePanel: View {
                     UnigridDataRow(
                         // "Recreation visits" is the NPS's own measure; abroad, the
                         // ministry counts visitors.
-                        label: facts.annualVisitsYear.map {
+                        label: facts.annualVisitsLabel.map {
                             country == .unitedStates
                                 ? "Recreation visits, \($0)" : "Visitors, \($0)"
                         } ?? "Annual visits",

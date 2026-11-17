@@ -179,3 +179,18 @@ struct TrackCategoryTests {
         #expect(TrailGrade(system: .parksCanadaDifficulty, grade: "Expert").band == nil)
     }
 }
+
+@Suite("Visitor counts by fiscal year")
+struct VisitsPeriodTests {
+    @Test("a calendar year reads as itself; Parks Canada's fiscal year as 2025–26")
+    func labels() throws {
+        #expect(PlaceFacts(annualVisits: 10, annualVisitsYear: 2025).annualVisitsLabel == "2025")
+        let json = Data(#"""
+        {"annualVisits": 4100000, "annualVisitsYear": 2025,
+         "annualVisitsPeriod": "Parks Canada fiscal year 2025–26 (April 2025 – March 2026)"}
+        """#.utf8)
+        let facts = try JSONDecoder().decode(PlaceFacts.self, from: json)
+        #expect(facts.annualVisitsLabel == "2025–26")
+        #expect(PlaceFacts().annualVisitsLabel == nil)
+    }
+}

@@ -39,6 +39,10 @@ public struct PlaceFacts: Hashable, Sendable, Codable {
     public var highestElevationMetres: Double?
     public var annualVisits: Int?
     public var annualVisitsYear: Int?
+    /// The span the count covers where it is not a calendar year, as its publisher states
+    /// it: "Parks Canada fiscal year 2025–26 (April 2025 – March 2026)". The count's
+    /// `annualVisitsYear` is then the year the span begins.
+    public var annualVisitsPeriod: String?
     public var entranceFee: String?
     public var bestSeasons: [Season]
     public var suggestedTime: String?
@@ -66,7 +70,8 @@ public struct PlaceFacts: Hashable, Sendable, Codable {
         bestSeasons: [Season] = [],
         suggestedTime: String? = nil,
         elevationNote: String? = nil,
-        areaHectares: Double? = nil
+        areaHectares: Double? = nil,
+        annualVisitsPeriod: String? = nil
     ) {
         self.establishedYear = establishedYear
         self.areaAcres = areaAcres
@@ -79,6 +84,7 @@ public struct PlaceFacts: Hashable, Sendable, Codable {
         self.suggestedTime = suggestedTime
         self.elevationNote = elevationNote
         self.areaHectares = areaHectares
+        self.annualVisitsPeriod = annualVisitsPeriod
     }
 
     public init(from decoder: any Decoder) throws {
@@ -98,6 +104,19 @@ public struct PlaceFacts: Hashable, Sendable, Codable {
         suggestedTime = try container.decodeIfPresent(String.self, forKey: .suggestedTime)
         elevationNote = try container.decodeIfPresent(String.self, forKey: .elevationNote)
         areaHectares = try container.decodeIfPresent(Double.self, forKey: .areaHectares)
+        annualVisitsPeriod = try container.decodeIfPresent(
+            String.self, forKey: .annualVisitsPeriod
+        )
+    }
+
+    /// The year a visitor count is labelled with: "2025", or for a fiscal year that
+    /// starts in 2025, "2025–26".
+    public var annualVisitsLabel: String? {
+        guard let year = annualVisitsYear else { return nil }
+        guard annualVisitsPeriod?.localizedCaseInsensitiveContains("fiscal") == true else {
+            return String(year)
+        }
+        return "\(year)–" + String(String(year + 1).suffix(2))
     }
 
     public var isEmpty: Bool {
