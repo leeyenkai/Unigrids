@@ -830,3 +830,72 @@ def test_stations_a_service_lists_as_stops_stand_in_when_a_park_has_no_answer():
                "tags": {"railway": "station", "name": "白馬"}}
     network._elements[("node", 30)] = station
     assert network.member_stations() == [station]
+
+
+def test_stops_in_nested_brackets_or_none_are_dropped():
+    assert assembly.line_name({"name:en": (
+        "Nishitetsu Tenjin Omuta Line Limited Express (Nishitetsu Fukuoka (Tenjin) => Omuta)"
+    )}) == "Nishitetsu Tenjin Omuta Line Limited Express"
+    chuo = {"name": "JR中央線・青梅線\u3000立川 => 西立川"}
+    assert assembly.line_name(chuo) == "JR中央線・青梅線"
+    assert assembly.line_name({"name": "普通 郡山<=>福島"}) == "普通"
+    assert assembly.line_name({"name": "JR大糸線"}) == "JR大糸線"
+
+
+def test_a_route_named_by_its_stops_after_a_colon_loses_them():
+    assert assembly.line_name({"name:en": "Kodama: Shin-Osaka => Okayama => Hakata"}) == "Kodama"
+    assert assembly.line_name({"name:en": "Tsubame: Hakata <=> Kagoshima-chuo"}) == "Tsubame"
+
+
+def test_shinkansen_track_is_named_by_its_line():
+    assert assembly.shinkansen_line({"name": "山陽新幹線;広島;14番線"}) == "Sanyo Shinkansen"
+    assert assembly.shinkansen_line({"name": "西九州新幹線"}) == "Nishi-Kyushu Shinkansen"
+    assert assembly.shinkansen_line({"name": "JR奥羽本線 (山形新幹線)"}) == "Yamagata Shinkansen"
+    assert assembly.shinkansen_line({"name": "海峡線・北海道新幹線"}) == "Hokkaido Shinkansen"
+    assert assembly.shinkansen_line({"name": "JR中央線"}) is None
+
+
+def _shinkansen() -> assembly.RailNetwork:
+    """Two services over two lines meeting at Tokyo: names come from the track."""
+    def way(way_id, name, points):
+        return ("way", way_id), {
+            "type": "way", "id": way_id, "tags": {"name": name, "highspeed": "yes"},
+            "geometry": [{"lat": lat, "lon": lon} for lat, lon in points],
+        }
+
+    elements = dict([
+        way(1, "東海道新幹線", [(35.681, 139.767), (35.0, 138.5)]),
+        way(2, "山陽新幹線", [(34.733, 135.5), (34.4, 133.0)]),
+        way(3, "東北新幹線", [(35.681, 139.767), (36.5, 140.0)]),
+    ])
+    elements[("relation", 10)] = {
+        "type": "relation", "id": 10, "tags": {"route": "train", "name": "のぞみ"},
+        "members": [
+            {"type": "node", "ref": 100, "role": "stop"},
+            {"type": "way", "ref": 1, "role": ""}, {"type": "way", "ref": 2, "role": ""},
+        ],
+    }
+    elements[("relation", 11)] = {
+        "type": "relation", "id": 11,
+        "tags": {"route": "train", "name:en": "JR Shinkansen (Hayabusa Train)"},
+        "members": [
+            {"type": "node", "ref": 100, "role": "stop"},
+            {"type": "way", "ref": 3, "role": ""}, {"type": "way", "ref": 1, "role": ""},
+        ],
+    }
+    elements[("node", 100)] = {"type": "node", "id": 100, "lat": 35.6812, "lon": 139.7671,
+                               "tags": {"name": "東京"}}
+    return assembly.RailNetwork(elements)
+
+
+def test_shinkansen_lines_are_drawn_once_per_line_not_per_service():
+    names = [line["name"] for line in _shinkansen().lines()]
+    assert names == ["Sanyo Shinkansen", "Tohoku Shinkansen", "Tokaido Shinkansen"]
+
+
+def test_tokyo_lists_the_shinkansen_lines_that_meet_there():
+    tokyo = {"type": "node", "id": 900, "lat": 35.6812, "lon": 139.7671,
+             "tags": {"railway": "station", "name": "東京", "name:en": "Tokyo"}}
+    record = _shinkansen().station(tokyo)
+    assert record is not None
+    assert record["lines"] == ["Tohoku Shinkansen", "Tokaido Shinkansen"]

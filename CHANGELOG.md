@@ -109,6 +109,10 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- Japan's Shinkansen lines are named by line — Tokaido, Sanyo, Tohoku and the rest, ten in
+  all — rather than by the trains that run on them ("Nozomi", "JR Shinkansen (Hayabusa
+  Train)"), and shared track is drawn once. Tokyo lists the Tokaido and Tohoku Shinkansen,
+  Hakata the Sanyo and Kyushu. Other lines no longer carry their stops in their names.
 - A park's notification tapped while the app was still waking opens its park once the app
   is active, as a trip's already did.
 - "Share my parks" draws each country you have been to on its own map, Japan's parks on

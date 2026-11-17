@@ -984,7 +984,27 @@ _DIRECTION = re.compile(
     r"[^()（）]*[)）]\s*$",
     re.IGNORECASE,
 )
+# "Kodama: Shin-Osaka => Okayama => Hakata": a route named by its stops after a colon.
+_COLON_DIRECTION = re.compile(r"\s*:\s*[^:]*(?:→|⇒|=>|->|<=>|↔)[^:]*$")
 _STOP_ROLES = frozenset({"stop", "stop_entry_only", "stop_exit_only", "", "station"})
+
+# The ten Shinkansen lines, by the name their track carries in OpenStreetMap. Longest
+# first, so 西九州新幹線 is not read as 九州新幹線.
+SHINKANSEN = (
+    ("西九州新幹線", "Nishi-Kyushu Shinkansen"),
+    ("東海道新幹線", "Tokaido Shinkansen"),
+    ("北海道新幹線", "Hokkaido Shinkansen"),
+    ("山陽新幹線", "Sanyo Shinkansen"),
+    ("九州新幹線", "Kyushu Shinkansen"),
+    ("東北新幹線", "Tohoku Shinkansen"),
+    ("上越新幹線", "Joetsu Shinkansen"),
+    ("北陸新幹線", "Hokuriku Shinkansen"),
+    ("山形新幹線", "Yamagata Shinkansen"),
+    ("秋田新幹線", "Akita Shinkansen"),
+)
+_NAME_PARTS = re.compile(r"[;・()（）]")
+# A stop takes the Shinkansen lines whose track passes this close.
+SHINKANSEN_STOP_M = 400
 
 
 def line_name(tags: dict[str, Any]) -> str | None:
@@ -992,7 +1012,66 @@ def line_name(tags: dict[str, Any]) -> str | None:
     direction a route relation carries: ``JR中央線快速 (東京→高尾)`` → ``JR中央線快速``."""
     name = (tags.get("name:en") or tags.get("name") or "").strip()
     name = _DIRECTION.sub("", name).strip()
+    name = _COLON_DIRECTION.sub("", name).strip()
+    name = _strip_stops(name)
     return name or None
+
+
+_ARROWS = ("<=>", "=>", "->", "→", "⇒", "↔", "⇔", "⇄", "－＞")
+
+
+def _strip_stops(name: str) -> str:
+    """What the patterns above miss: stops in brackets that hold brackets of their own,
+    ``… Limited Express (Nishitetsu Fukuoka (Tenjin) => Omuta)``, and stops with no
+    brackets at all, ``JR中央線・青梅線　立川 => 西立川``."""
+    if not any(arrow in name for arrow in _ARROWS):
+        return name
+    if name.endswith((")", "）")):
+        depth = 0
+        for index in range(len(name) - 1, -1, -1):
+            if name[index] in ")）":
+                depth += 1
+            elif name[index] in "(（":
+                depth -= 1
+                if depth == 0:
+                    if any(arrow in name[index:] for arrow in _ARROWS):
+                        return name[:index].strip()
+                    break
+        return name
+    first = min(name.index(arrow) for arrow in _ARROWS if arrow in name)
+    head = name[:first].rstrip()
+    cut = max(head.rfind(" "), head.rfind("\u3000"))
+    return head[:cut].strip() if cut > 0 else name
+
+
+def shinkansen_line(tags: dict[str, Any]) -> str | None:
+    """The Shinkansen line a stretch of track belongs to, from its own name:
+    ``山陽新幹線;広島;14番線`` → ``Sanyo Shinkansen``. Services (Nozomi, Hayabusa) run
+    across several lines, so a line is named by its track, never by the trains on it."""
+    for key in ("name", "name:ja", "official_name"):
+        for part in _NAME_PARTS.split(str(tags.get(key) or "")):
+            for token, english in SHINKANSEN:
+                if token in part:
+                    return english
+    english = str(tags.get("name:en") or "")
+    for _, line in SHINKANSEN:
+        if line.lower() in english.lower():
+            return line
+    return None
+
+
+def _is_shinkansen(route: dict[str, Any], elements: dict[tuple[str, int], dict[str, Any]]) -> bool:
+    tags = route.get("tags") or {}
+    text = " ".join(str(tags.get(key) or "") for key in ("name", "name:en", "network", "ref"))
+    if "新幹線" in text or "shinkansen" in text.lower():
+        return True
+    for member in route.get("members") or []:
+        if member.get("type") != "way":
+            continue
+        way_tags = (elements.get(("way", member["ref"])) or {}).get("tags") or {}
+        if way_tags.get("highspeed") == "yes" or shinkansen_line(way_tags):
+            return True
+    return False
 
 
 class RailNetwork:
@@ -1017,28 +1096,65 @@ class RailNetwork:
             for member in element.get("members") or []:
                 if member.get("type") == "relation" and master:
                     names.setdefault(member["ref"], master)
+        shinkansen = {
+            route_id for route_id, route in routes.items() if _is_shinkansen(route, elements)
+        }
+        # A Shinkansen service is not a line: its track is named way by way below.
+        for route_id in shinkansen:
+            names.pop(route_id, None)
         for route_id, route in routes.items():
-            if route_id not in names and (name := line_name(route.get("tags") or {})):
+            if route_id in shinkansen or route_id in names:
+                continue
+            if name := line_name(route.get("tags") or {}):
                 names[route_id] = name
         self.routes = routes
         self.names = names
+        self.shinkansen = shinkansen
+        self._way_line = self._shinkansen_ways()
+        track = self._track_grid()
         self._by_node: dict[int, set[str]] = {}
         self._grid: dict[tuple[int, int], list[tuple[float, float, str, str]]] = {}
         for route_id, route in routes.items():
             name = names.get(route_id)
-            if not name:
+            if not name and route_id not in shinkansen:
                 continue
             for member in route.get("members") or []:
                 if member.get("type") != "node" or member.get("role", "") not in _STOP_ROLES:
                     continue
-                self._by_node.setdefault(member["ref"], set()).add(name)
                 node = elements.get(("node", member["ref"]))
-                if node and "lat" in node:
-                    stop_name = _station_key((node.get("tags") or {}).get("name") or "")
-                    cell = (int(node["lat"] * 100), int(node["lon"] * 100))
-                    self._grid.setdefault(cell, []).append(
-                        (node["lat"], node["lon"], stop_name, name)
-                    )
+                if route_id in shinkansen:
+                    calling = _lines_near(node, track) if node and "lat" in node else set()
+                else:
+                    calling = {name} if name else set()
+                for line in calling:
+                    self._by_node.setdefault(member["ref"], set()).add(line)
+                    if node and "lat" in node:
+                        stop_name = _station_key((node.get("tags") or {}).get("name") or "")
+                        cell = (int(node["lat"] * 100), int(node["lon"] * 100))
+                        self._grid.setdefault(cell, []).append(
+                            (node["lat"], node["lon"], stop_name, line)
+                        )
+
+    def _shinkansen_ways(self) -> dict[int, str]:
+        """Each Shinkansen service's track, way by way, under the line its name gives."""
+        found: dict[int, str] = {}
+        for route_id in self.shinkansen:
+            for member in self.routes[route_id].get("members") or []:
+                if member.get("type") != "way":
+                    continue
+                way = self._elements.get(("way", member["ref"])) or {}
+                if line := shinkansen_line(way.get("tags") or {}):
+                    found[member["ref"]] = line
+        return found
+
+    def _track_grid(self) -> dict[tuple[int, int], list[tuple[float, float, str]]]:
+        grid: dict[tuple[int, int], list[tuple[float, float, str]]] = {}
+        for way_id, line in self._way_line.items():
+            for point in (self._elements.get(("way", way_id)) or {}).get("geometry") or []:
+                if point:
+                    cell = (int(point["lat"] * 100), int(point["lon"] * 100))
+                    grid.setdefault(cell, []).append((point["lat"], point["lon"], line))
+        return grid
 
     @classmethod
     def load(cls, paths: list[Path]) -> RailNetwork:
@@ -1103,11 +1219,16 @@ class RailNetwork:
         ways: dict[str, dict[int, list[tuple[float, float]]]] = {}
         for route_id, route in self.routes.items():
             name = self.names.get(route_id)
-            if not name:
+            if not name and route_id not in self.shinkansen:
                 continue
             for member in route.get("members") or []:
                 if member.get("type") != "way" or member.get("role") in ("platform",):
                     continue
+                if route_id in self.shinkansen:
+                    # Shared track is one line's, drawn once, whichever trains run on it.
+                    name = self._way_line.get(member["ref"])
+                    if not name:
+                        continue
                 way = self._elements.get(("way", member["ref"]))
                 if not way or not way.get("geometry"):
                     continue
@@ -1122,6 +1243,20 @@ class RailNetwork:
             if paths:
                 entries.append(lands_build._route_entry(name, paths))
         return entries
+
+
+def _lines_near(
+    node: dict[str, Any], grid: dict[tuple[int, int], list[tuple[float, float, str]]]
+) -> set[str]:
+    """The Shinkansen lines whose track passes a stop: Tokyo's Tokaido and Tohoku."""
+    row, column = int(node["lat"] * 100), int(node["lon"] * 100)
+    found: set[str] = set()
+    for cell_row in (row - 1, row, row + 1):
+        for cell_column in (column - 1, column, column + 1):
+            for lat, lon, line in grid.get((cell_row, cell_column), []):
+                if _metres(node["lat"], node["lon"], lat, lon) <= SHINKANSEN_STOP_M:
+                    found.add(line)
+    return found
 
 
 def _takes_passengers(tags: dict[str, Any]) -> bool:
