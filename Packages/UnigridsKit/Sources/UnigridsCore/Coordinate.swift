@@ -67,3 +67,19 @@ public struct BoundingBox: Hashable, Sendable, Codable {
         )
     }
 }
+
+extension Sequence<Place> {
+    /// Nearest first, measured from `point` to each place's centre; ties keep their order.
+    public func nearest(to point: Coordinate) -> [(place: Place, metres: Double)] {
+        enumerated()
+            .map { item in
+                (
+                    offset: item.offset,
+                    place: item.element,
+                    metres: point.distance(to: item.element.centre)
+                )
+            }
+            .sorted { ($0.metres, $0.offset) < ($1.metres, $1.offset) }
+            .map { (place: $0.place, metres: $0.metres) }
+    }
+}

@@ -372,7 +372,7 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
         renderer.strokeColor = (isSelected ? ink.ink : tint).platform
         renderer.lineWidth = isSelected ? 2.6
             : (item.place.tier == .nationalPark ? 1.4 : (overview ? 0.6 : 1))
-        renderer.lineDashPattern = item.status == .planned && !isSelected ? [4, 3] : nil
+        renderer.lineDashPattern = item.status.isRinged && !isSelected ? [4, 3] : nil
     }
 
     // MARK: Camera

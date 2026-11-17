@@ -12,6 +12,7 @@ public struct ParkDirectoryScreen: View {
     enum Scope: String, CaseIterable, Identifiable {
         case nationalParks
         case everything
+        case wishlist
         case trails
 
         var id: String {
@@ -22,6 +23,7 @@ public struct ParkDirectoryScreen: View {
             switch self {
             case .nationalParks: "National parks"
             case .everything: "Every place"
+            case .wishlist: "Wishlist"
             case .trails: "Trails"
             }
         }
@@ -31,6 +33,7 @@ public struct ParkDirectoryScreen: View {
         case name
         case state
         case visited
+        case nearest
 
         var id: String {
             rawValue
@@ -43,6 +46,7 @@ public struct ParkDirectoryScreen: View {
             // prefecture or county.
             case .state: "By region"
             case .visited: "Visited first"
+            case .nearest: "Nearest"
             }
         }
     }
@@ -51,8 +55,12 @@ public struct ParkDirectoryScreen: View {
     @Environment(\.unigrid) private var style
     @Query private var visits: [Visit]
     @Query private var trips: [Trip]
+    @Query private var wishes: [Wish]
 
     @State private var query = ""
+    /// Where the reader is, once, for "Nearest". Never stored.
+    @State private var here: Coordinate?
+    @State private var locating = false
     @State private var trailFilter = TrailFilter()
     @State private var typeFilter: SiteType?
     @AppStorage("parks.scope") private var scope = Scope.nationalParks
@@ -62,7 +70,7 @@ public struct ParkDirectoryScreen: View {
     public init() {}
 
     private var index: VisitIndex {
-        VisitIndex(visits: visits, trips: trips)
+        VisitIndex(visits: visits, trips: trips, wishes: wishes)
     }
 
     private var places: [Place] {
@@ -77,6 +85,11 @@ public struct ParkDirectoryScreen: View {
                     || SearchText.contains(park.regionLine, query)
                     || park.localNames.contains { SearchText.contains($0.text, query) }
             }
+        case (.wishlist, _):
+            store.places
+                .filter { index.wishedPlaceIDs.contains($0.id) }
+                .filter { query.isEmpty || SearchText.contains($0.name, query) }
+                .sorted { $0.name < $1.name }
         case (_, true):
             store.places.sorted { $0.name < $1.name }
         case (_, false):
@@ -99,8 +112,12 @@ public struct ParkDirectoryScreen: View {
 
     private var sections: [(String, [Place])] {
         let index = index
+        if sort == .nearest, let here {
+            return [("Nearest first", places.nearest(to: here).map(\.place))]
+        }
         switch sort {
-        case .name:
+        // "Nearest" before a fix, or without one, reads A to Z.
+        case .name, .nearest:
             let grouped = Dictionary(grouping: places) { String($0.name.prefix(1)).uppercased() }
             return grouped.keys.sorted().map { ($0, grouped[$0] ?? []) }
         case .state:
@@ -141,6 +158,7 @@ public struct ParkDirectoryScreen: View {
         case .nationalParks: "Search \(store.nationalParks.count) national parks"
         case .everything:
             typeFilter.map { "Search \($0.name.lowercased())" } ?? "Search every place"
+        case .wishlist: "Search your wishlist"
         case .trails: "Search \(store.allTrails.count.formatted()) trails"
         }
     }
@@ -167,6 +185,10 @@ public struct ParkDirectoryScreen: View {
                     .listRowBackground(Color.clear)
                 }
 
+                if scope != .trails, sort == .nearest, here == nil {
+                    NearestNote(locating: locating)
+                        .listRowBackground(Color.clear)
+                }
                 if scope == .trails {
                     TrailCatalogueSections(
                         trails: store.allTrails,
@@ -179,7 +201,12 @@ public struct ParkDirectoryScreen: View {
                         Section {
                             ForEach(places) { place in
                                 NavigationLink(value: place.id) {
-                                    PlaceRow(place: place, status: index.status(for: place.id))
+                                    PlaceRow(
+                                        place: place,
+                                        status: index.status(for: place.id),
+                                        metres: sort == .nearest
+                                            ? here.map { $0.distance(to: place.centre) } : nil
+                                    )
                                 }
                                 .listRowBackground(Color.clear)
                             }
@@ -231,12 +258,52 @@ public struct ParkDirectoryScreen: View {
                 .overlay {
                     if scope != .trails, places.isEmpty, !query.isEmpty {
                         ContentUnavailableView.search(text: query)
+                    } else if scope == .wishlist, places.isEmpty {
+                        ContentUnavailableView(
+                            "No places on your wishlist",
+                            systemImage: UnigridsSymbol.wish.rawValue,
+                            description: Text(
+                                "Tap the bookmark on a park\u{2019}s page to keep it here."
+                            )
+                        )
                     }
                 }
+                .task(id: sort) { await locateIfNeeded() }
                 .navigationDestination(for: UnigridsID.self) { id in
                     PlaceDestination(placeID: id)
                 }
         }
+    }
+}
+
+extension ParkDirectoryScreen {
+    /// One fix when "Nearest" is chosen, and only then.
+    private func locateIfNeeded() async {
+        guard sort == .nearest, here == nil, !locating else { return }
+        locating = true
+        let check = OnSiteCheck()
+        here = await check.currentCoordinate()
+        locating = false
+    }
+}
+
+/// Why "Nearest" is showing A to Z instead.
+private struct NearestNote: View {
+    @Environment(\.unigrid) private var style
+    let locating: Bool
+
+    var body: some View {
+        Text(
+            locating
+                ? "Finding where you are\u{2026}"
+                : OnSiteCheck.isRefused
+                ? "Location is off for Unigrids, so these are A to Z. Turn it on in Settings "
+                + "to sort by distance."
+                : "Your location could not be found, so these are A to Z."
+        )
+        .font(UnigridStyle.rowDetail)
+        .foregroundStyle(style.inkSecondary)
+        .fixedSize(horizontal: false, vertical: true)
     }
 }
 
@@ -329,6 +396,13 @@ struct PlaceRow: View {
     @Environment(\.unigrid) private var style
     let place: Place
     let status: VisitStatusBadgeStatus
+    /// How far away, for "Nearest".
+    var metres: Double?
+
+    private var detail: String {
+        let line = "\(place.designation) · \(place.bandLine)"
+        return metres.map { UnigridsFormat.distance(metres: $0) + " · " + line } ?? line
+    }
 
     var body: some View {
         HStack(spacing: 12) {
@@ -338,7 +412,7 @@ struct PlaceRow: View {
                 Text(place.name)
                     .font(UnigridStyle.rowTitle)
                     .foregroundStyle(style.ink)
-                Text("\(place.designation) · \(place.bandLine)")
+                Text(detail)
                     .font(UnigridStyle.rowDetail)
                     .foregroundStyle(style.inkSecondary)
                     .lineLimit(1)
@@ -349,6 +423,8 @@ struct PlaceRow: View {
                 Kicker("Visited")
             case .planned:
                 Kicker("Planned")
+            case .wished:
+                Kicker("Wishlist")
             case .none:
                 EmptyView()
             }

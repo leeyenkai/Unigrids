@@ -346,6 +346,8 @@ struct LogRulesTests {
             ),
             to: visit
         )
+        try store.toggleWish("np-arches")
+        try store.wishes().first?.note = "Delicate Arch at sunset"
         let json = try #require(
             try JSONSerialization.jsonObject(with: store.archive().json()) as? [String: Any]
         )

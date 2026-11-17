@@ -14,32 +14,53 @@ import UnigridsCore
 ///  * **Undo**: a deletion keeps the archive of exactly what it removed, and undoing it is
 ///    a merge.
 public struct LogArchive: Codable, Sendable, Equatable {
-    /// 2: every model and field. 1 was the first export, which held only visits, stamps
-    /// and trips in brief, and still imports.
-    public static let currentVersion = 2
+    /// 3 adds the wishlist. 2: every model and field. 1 was the first export, which held
+    /// only visits, stamps and trips in brief, and still imports.
+    public static let currentVersion = 3
 
     public var version: Int
     public var exportedAt: Date
     public var trips: [TripArchive]
     public var visits: [VisitArchive]
     public var stamps: [StampArchive]
+    /// Absent from a backup made before version 3.
+    public var wishes: [WishArchive]
 
     public init(
         version: Int = LogArchive.currentVersion,
         exportedAt: Date = Date(),
         trips: [TripArchive] = [],
         visits: [VisitArchive] = [],
-        stamps: [StampArchive] = []
+        stamps: [StampArchive] = [],
+        wishes: [WishArchive] = []
     ) {
         self.version = version
         self.exportedAt = exportedAt
         self.trips = trips
         self.visits = visits
         self.stamps = stamps
+        self.wishes = wishes
     }
 
     public var isEmpty: Bool {
-        trips.isEmpty && visits.isEmpty && stamps.isEmpty
+        trips.isEmpty && visits.isEmpty && stamps.isEmpty && wishes.isEmpty
+    }
+}
+
+extension LogArchive {
+    private enum Keys: String, CodingKey {
+        case version, exportedAt, trips, visits, stamps, wishes
+    }
+
+    /// Written out by hand only so a backup from before the wishlist still reads.
+    public init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: Keys.self)
+        version = try container.decode(Int.self, forKey: .version)
+        exportedAt = try container.decode(Date.self, forKey: .exportedAt)
+        trips = try container.decode([TripArchive].self, forKey: .trips)
+        visits = try container.decode([VisitArchive].self, forKey: .visits)
+        stamps = try container.decode([StampArchive].self, forKey: .stamps)
+        wishes = try container.decodeIfPresent([WishArchive].self, forKey: .wishes) ?? []
     }
 }
 
@@ -262,10 +283,14 @@ extension LogArchive {
         let trips = try context.fetch(FetchDescriptor<Trip>(sortBy: [SortDescriptor(\.createdAt)]))
         let visits = try context.fetch(FetchDescriptor<Visit>(sortBy: [SortDescriptor(\.date)]))
         let stamps = try context.fetch(FetchDescriptor<Stamp>(sortBy: [SortDescriptor(\.date)]))
+        let wishes = try context.fetch(
+            FetchDescriptor<Wish>(sortBy: [SortDescriptor(\.createdAt)])
+        )
         return LogArchive(
             trips: trips.map { TripArchive($0, name: name) },
             visits: visits.map { VisitArchive($0, name: name) },
-            stamps: stamps.map { StampArchive($0, name: name, calendar: calendar($0.place)) }
+            stamps: stamps.map { StampArchive($0, name: name, calendar: calendar($0.place)) },
+            wishes: wishes.map { WishArchive($0, name: name) }
         )
     }
 

@@ -144,7 +144,7 @@ final class AtlasMarkerView: MKAnnotationView {
         shapeLayer.lineWidth = plain || compact ? 1.25 : 1.75
 
         configureGlyph(annotation: annotation, shown: !plain, rect: rect)
-        configureRing(shown: annotation.status == .planned, rect: rect, ink: ink)
+        configureRing(shown: annotation.status.isRinged, rect: rect, ink: ink)
         configureTick(shown: annotation.status == .visited, rect: rect, small: plain || compact)
         configureAlert(
             MapDetail.showsAlertBadge(latitudeSpan: latitudeSpan) ? annotation.alert : nil,
@@ -157,6 +157,7 @@ final class AtlasMarkerView: MKAnnotationView {
         let status = switch annotation.status {
         case .visited: ", visited"
         case .planned: ", planned"
+        case .wished: ", on your wishlist"
         case .none: ""
         }
         let alert = annotation.alert.map { ", \($0.spokenName) alert posted" } ?? ""

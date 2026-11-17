@@ -107,6 +107,9 @@ public struct ParkGuideScreen: View {
             }
         #endif
         ToolbarItem {
+            WishToggle(placeID: place.id)
+        }
+        ToolbarItem {
             Button { showExplorer = true } label: {
                 Label("Explore in 3D", symbol: .explore3D)
             }

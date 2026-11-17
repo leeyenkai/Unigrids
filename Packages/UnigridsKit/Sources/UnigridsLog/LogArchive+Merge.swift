@@ -7,7 +7,7 @@ public struct MergeSummary: Equatable, Sendable {
     public var tripsAdded = 0
     public var visitsAdded = 0
     public var stampsAdded = 0
-    /// Stops, reminders, check-ins, hikes and weather.
+    /// Stops, reminders, check-ins, hikes, weather and wishes.
     public var othersAdded = 0
     public var alreadyPresent = 0
 
@@ -44,6 +44,7 @@ extension LogStore {
             archive.visits, trips: trips, calendar: calendar, into: &summary
         )
         try mergeStamps(archive.stamps, visits: visits, into: &summary)
+        try mergeWishes(archive.wishes, into: &summary)
         try save()
         return summary
     }

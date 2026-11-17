@@ -13,6 +13,7 @@ public enum UnigridsSchema {
         Stamp.self,
         Reminder.self,
         WeatherSnapshot.self,
+        Wish.self,
     ]
 
     public static var schema: Schema {

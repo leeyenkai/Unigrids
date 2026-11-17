@@ -52,7 +52,7 @@ public struct SitePin: View {
         }
         .frame(width: side, height: side)
         .overlay {
-            if status == .planned {
+            if status.isRinged {
                 MarkerOutline(shape)
                     .stroke(style.ink, style: StrokeStyle(lineWidth: 1.5, dash: [3, 2]))
                     .padding(-3.5 * scale)

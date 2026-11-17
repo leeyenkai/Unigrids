@@ -30,7 +30,7 @@ struct LogStoreTests {
 
     @Test("the schema initialises in memory")
     func schemaLoads() {
-        #expect(UnigridsSchema.models.count == 8)
+        #expect(UnigridsSchema.models.count == 9)
     }
 
     @Test("a check-in creates a visit")

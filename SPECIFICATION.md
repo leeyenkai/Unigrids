@@ -73,6 +73,8 @@ Five tabs (Map, Parks, Trips, Passport, Stats) share one place database and one 
 
 Map and Parks are the two ways into a park; Trips, Stamps and Stats all read the same log. The Unigrid guide is the app's signature screen, reachable from a map pin, the directory or a trip stop.
 
+The Parks directory lists the national parks, every place, the reader's wishlist or the trails, sorted A to Z, by region, visited first, or nearest first. "Nearest" asks for one location fix when it is chosen, measures to each place's centre and keeps nothing; without a fix it reads A to Z and says why.
+
 ## 5. Map home screen
 
 The app opens on a map of every covered place in the US, with national parks always visible and other tiers revealed as the user zooms in. There are 63 national parks and roughly 433 NPS units as of mid-2026 ([WorldAtlas](https://www.worldatlas.com/national-parks/how-many-states-have-a-national-park.html), [Citizen Daily Post](https://www.citizendailypost.com/faq/how-many-national-parks-are-in-the-us/)); the pipeline should read the live list from the NPS API rather than hard-code it.
@@ -224,6 +226,10 @@ Ways to log
 - Auto-detected visits: with Always location permission, the app watches the boundaries of the parks nearest the user and suggests a visit on entry ("Looks like you're in Zion. Log a visit?"). iOS limits how many regions an app can monitor at once, so the watched set rotates as the user moves. Processing stays on device.
 - Photo import: an on-device scan of geotagged photos that fall inside park boundaries, grouped by date into proposed visits and trips for the user to accept, edit or discard. Works with limited Photos access by scanning only the selected photos.
 - Trail hikes: marking a trail as hiked creates a check-in on that visit.
+
+Wishlist
+
+- Any place can go on the wishlist from the bookmark on its guide or leaflet. A wished place is ringed on the map like a planned one, has its own scope in the Parks directory, goes into backups and merges back without duplicates, and is erased with the rest of the log.
 
 Passport
 
@@ -395,6 +401,7 @@ Reference data and user data live in separate stores: reference data is read-onl
 | Stamp | id, place or stamp-location id, visit id, date, impression seed (tilt, offset, ink), verified on site, real stamp collected; America 250 seal derived from the date | User |
 | Reminder | id, trip id, kind (permit, timed entry, booking window), date, link | User |
 | WeatherSnapshot | visit id, date, high, low, precipitation, condition, source | User |
+| Wish | id, place id, note, created | User |
 
 ## 14. Design language
 

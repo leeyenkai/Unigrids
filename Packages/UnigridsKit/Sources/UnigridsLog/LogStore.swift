@@ -301,6 +301,7 @@ public final class LogStore {
         try context.delete(model: TripStop.self)
         try context.delete(model: Reminder.self)
         try context.delete(model: Trip.self)
+        try context.delete(model: Wish.self)
         try save()
     }
 

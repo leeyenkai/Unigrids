@@ -426,7 +426,14 @@ public struct PlaceMarker: View {
     public enum Status: Sendable {
         case visited
         case planned
+        /// On the reader's wishlist: ringed like a planned place.
+        case wished
         case none
+
+        /// Planned and wished places carry the dashed ring.
+        public var isRinged: Bool {
+            self == .planned || self == .wished
+        }
     }
 
     @Environment(\.unigrid) private var style
@@ -450,7 +457,7 @@ public struct PlaceMarker: View {
             MarkerOutline(shape)
                 .stroke(
                     tint,
-                    style: StrokeStyle(lineWidth: 2, dash: status == .planned ? [3, 2] : [])
+                    style: StrokeStyle(lineWidth: 2, dash: status.isRinged ? [3, 2] : [])
                 )
         }
         .frame(width: side * max(scale, 0.75), height: side * max(scale, 0.75))

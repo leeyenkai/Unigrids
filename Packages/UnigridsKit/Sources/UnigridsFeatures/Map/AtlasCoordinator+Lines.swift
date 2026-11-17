@@ -55,7 +55,7 @@ extension AtlasCoordinator {
         renderer.lineWidth = isSelected ? 5 : 3
         renderer.lineCap = .round
         renderer.lineJoin = .round
-        renderer.lineDashPattern = item.status == .planned && !isSelected ? [6, 4] : nil
+        renderer.lineDashPattern = item.status.isRinged && !isSelected ? [6, 4] : nil
     }
 
     // MARK: Transport

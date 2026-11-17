@@ -68,11 +68,13 @@ extension View {
 public struct VisitIndex: Sendable {
     public let visitedPlaceIDs: Set<UnigridsID>
     public let plannedPlaceIDs: Set<UnigridsID>
+    public let wishedPlaceIDs: Set<UnigridsID>
 
     /// Planned means on the itinerary of a trip that has not finished. A planned trip's
     /// stops are plans, never visits, so they cannot make a place read as visited.
-    public init(visits: [Visit], trips: [Trip] = []) {
+    public init(visits: [Visit], trips: [Trip] = [], wishes: [Wish] = []) {
         visitedPlaceIDs = Set(visits.map(\.place))
+        wishedPlaceIDs = Set(wishes.map(\.place))
         plannedPlaceIDs = Set(
             trips
                 .filter { $0.status(on: Date()) != .done }
@@ -87,6 +89,9 @@ public struct VisitIndex: Sendable {
         if plannedPlaceIDs.contains(placeID) {
             return .planned
         }
+        if wishedPlaceIDs.contains(placeID) {
+            return .wished
+        }
         return .none
     }
 }
@@ -96,12 +101,19 @@ public struct VisitIndex: Sendable {
 public enum VisitStatusBadgeStatus: Sendable {
     case visited
     case planned
+    case wished
     case none
+
+    /// Planned and wished places carry the dashed ring.
+    var isRinged: Bool {
+        self == .planned || self == .wished
+    }
 
     var marker: PlaceMarker.Status {
         switch self {
         case .visited: .visited
         case .planned: .planned
+        case .wished: .wished
         case .none: .none
         }
     }

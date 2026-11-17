@@ -21,6 +21,7 @@ public struct MapScreen: View {
     @Environment(\.scenePhase) private var scenePhase
     @Query private var visits: [Visit]
     @Query private var trips: [Trip]
+    @Query private var wishes: [Wish]
 
     @State private var path = NavigationPath()
     @State private var selection: UnigridsID?
@@ -59,7 +60,7 @@ public struct MapScreen: View {
     public init() {}
 
     private var index: VisitIndex {
-        VisitIndex(visits: visits, trips: trips)
+        VisitIndex(visits: visits, trips: trips, wishes: wishes)
     }
 
     private var layers: Set<TransportLayer> {
@@ -103,6 +104,7 @@ public struct MapScreen: View {
         key.combine(filterData)
         key.combine(index.visitedPlaceIDs)
         key.combine(index.plannedPlaceIDs)
+        key.combine(index.wishedPlaceIDs)
         key.combine(alerts?.lastUpdated)
         key.combine(alerts?.abroadRevision)
         key.combine(store.places.count)

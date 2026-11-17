@@ -33,6 +33,8 @@ public enum UnigridsSymbol: String, CaseIterable, Sendable {
     case details = "ellipsis.circle"
     case retry = "arrow.clockwise"
     case addToTrip = "text.badge.plus"
+    case wish = "bookmark"
+    case wished = "bookmark.fill"
     case hike = "figure.hiking"
     case addReminder = "bell.badge"
     case lookAround = "binoculars"
