@@ -78,7 +78,7 @@ def assemble(context: BuildContext) -> Contribution:
     """Every US place, sight, outline, guide and layer. ``context.online`` lets the build
     fetch what it can only know once the places exist — Wikipedia articles for the ones
     without prose — into the raw store; offline, it reads what an earlier run cached."""
-    raw = latest_raw("nps-api")
+    raw = latest_raw("nps-api", *NPS_FILES)
     print(f"    reading raw/{raw.name}")
     api = _NPSData(raw / "nps-api")
     outlines = unit_outlines(latest_raw("unit-boundaries") / "unit-boundaries")
@@ -726,12 +726,21 @@ def _stamp_label(raw: str) -> str:
 
 # MARK: - Raw data
 
+NPS_FILES = tuple(
+    f"{name}.json"
+    for name in (
+        "parks", "feespasses", "visitorcenters", "places", "campgrounds",
+        "passportstamplocations",
+    )
+)
+
 
 class _NPSData:
     def __init__(self, directory: Path) -> None:
         def load(name: str) -> list[dict[str, Any]]:
-            path = directory / f"{name}.json"
-            return json.loads(path.read_text()) if path.exists() else []
+            # Every endpoint is fetched together: one missing means a broken snapshot,
+            # which must stop the build rather than empty a panel for every park.
+            return json.loads((directory / f"{name}.json").read_text())
 
         self.parks = {row["parkCode"].upper(): row for row in load("parks")}
         self.fees_passes = {

@@ -307,10 +307,23 @@ def latest_raw_or_none(source: str) -> Path | None:
         return None
 
 
-def latest_raw(source: str) -> Path:
+def latest_raw(source: str, *required: str) -> Path:
+    """The newest dated snapshot whose ``source`` finished fetching, and holds ``required``.
+
+    A fetch writes its ``source.json`` last, so a folder without one was cut off partway;
+    reading it would ship partial data as if it were whole (the review of 17 November).
+    """
     candidates = sorted(
-        (path for path in config.RAW_DIR.iterdir() if (path / source).is_dir()), reverse=True
+        (
+            path
+            for path in config.RAW_DIR.iterdir()
+            if (path / source / "source.json").is_file()
+            and all((path / source / name).is_file() for name in required)
+        ),
+        reverse=True,
     )
     if not candidates:
-        raise SystemExit(f"no raw/{source} yet: run `unigrids-pipeline reference` with network")
+        raise SystemExit(
+            f"no complete raw/{source} yet: run `unigrids-pipeline reference` with network"
+        )
     return candidates[0]
