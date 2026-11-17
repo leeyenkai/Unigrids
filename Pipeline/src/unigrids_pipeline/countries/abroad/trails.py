@@ -21,6 +21,11 @@ the line comes from the best source each country has, and the measuring does not
   maintains (CC BY 4.0), read whole by the New Zealand fetch; ``countries.nz.tracks`` turns
   its records into routes, with DOC's walking track category. A park DOC's layer leaves
   without a track is filled from OpenStreetMap, read out of Geofabrik's extract.
+* **Canada: Parks Canada's trails** (OGL–Canada), the line layer of the trails the agency
+  is responsible for, read whole by the Canadian fetch; ``countries.ca.pctrails`` turns its
+  records into routes, with Parks Canada's summer difficulty rating. A park the layer
+  leaves without a trail is filled from OpenStreetMap, read out of Geofabrik's provincial
+  extracts.
 
 Then, exactly as at home: segments are chained (``trails.chain``), laid in walking order,
 resampled every 30 m, sampled on the elevation model (abroad: Copernicus GLO-30), smoothed
@@ -64,7 +69,7 @@ MIN_LENGTH_M = trail_catalogue.MIN_LENGTH_M
 LINE_TOLERANCE_DEGREES = trail_catalogue.LINE_TOLERANCE_DEGREES
 BOUNDARY_BUFFER_DEGREES = trail_catalogue.BOUNDARY_BUFFER_DEGREES
 
-COUNTRIES = ("jp", "no", "nz")
+COUNTRIES = ("jp", "no", "nz", "ca")
 
 TURRUTEBASEN = "no-turrutebasen"
 TURRUTEBASEN_WFS = "https://wfs.geonorge.no/skwms1/wfs.turogfriluftsruter"
@@ -78,7 +83,9 @@ GRADES = frozenset({"G", "B", "R", "S", "I"})
 UNNAMED = frozenset({"", "ukjent", "ukjend", "unknown"})
 """Route names that are the database saying it has none."""
 
-OSM_TRAIL_SOURCES = {"jp": "jp-osm-trails", "no": "no-osm-trails", "nz": "nz-osm-trails"}
+OSM_TRAIL_SOURCES = {
+    "jp": "jp-osm-trails", "no": "no-osm-trails", "nz": "nz-osm-trails", "ca": "ca-osm-trails",
+}
 OSM_TRAIL_KINDS = "path|footway"
 OSM_PAUSE_SECONDS = 10.0
 """Between one park's Overpass query and the next: the servers are volunteer-run."""
@@ -254,20 +261,20 @@ def fetch(
                     left.append(park["id"])
                     continue
                 routes = turrutebasen_routes(park, features, polygons)
-            elif country == "nz":
-                from ..nz import tracks as doc_tracks
-
-                doc_features = doc_tracks.read_features()
-                if doc_features is None:
-                    # The New Zealand fetch reads DOC's layer first; without it, wait.
+            elif country in AGENCY_TRAILS:
+                agency = agency_routes(country, park, polygons)
+                if agency is None:
+                    # The country's fetch reads the agency's layer first; without it, wait.
                     left.append(park["id"])
                     continue
-                routes = doc_tracks.routes(park, doc_features, polygons)
-            if not routes:
+                routes = agency
+            if is_thin(country, routes):
                 wanted = refresh or _latest(OSM_TRAIL_SOURCES[country], park["id"]) is None
                 if wanted and fetch_osm(session, country, park, polygons, version) is None:
                     left.append(park["id"])
-                routes = osm_routes(country, park, _read_osm(country, park["id"]), polygons)
+                routes = with_osm(
+                    routes, osm_routes(country, park, _read_osm(country, park["id"]), polygons)
+                )
             if model is not None:
                 for route in routes:
                     box = _box(route.segments)
@@ -296,18 +303,58 @@ def park_routes(
                 return []
             if routes := turrutebasen_routes(park, features, polygons):
                 return routes
-        if country == "nz":
-            from ..nz import tracks as doc_tracks
-
-            doc_features = doc_tracks.read_features()
-            if doc_features is None:
-                print(f"    trails (nz): no DOC Tracks fetched for {park['id']}")
+        agency: list[Route] = []
+        if country in AGENCY_TRAILS:
+            found = agency_routes(country, park, polygons)
+            if found is None:
+                print(f"    trails ({country}): no {AGENCY_TRAILS[country]} fetched for "
+                      f"{park['id']}")
                 return []
-            if routes := doc_tracks.routes(park, doc_features, polygons):
-                return routes
+            agency = found
+            if not is_thin(country, agency):
+                return agency
         if online and _latest(OSM_TRAIL_SOURCES[country], park["id"]) is None:
             fetch_osm(session, country, park, polygons, rawstore.today())
-    return osm_routes(country, park, _read_osm(country, park["id"]), polygons)
+    return with_osm(agency, osm_routes(country, park, _read_osm(country, park["id"]), polygons))
+
+
+AGENCY_TRAILS = {"nz": "DOC Tracks", "ca": "Parks Canada trails"}
+"""Countries whose park agency publishes its own trail layer, read before OpenStreetMap."""
+
+THIN_AGENCY_TRAILS = {"ca": 5}
+"""Fewer agency trails than this in a park and OpenStreetMap fills in beside them. Parks
+Canada's layer is part-way through a migration and holds two of Jasper's hundreds; DOC's
+register is whole, so New Zealand fills only a park it leaves empty."""
+
+
+def is_thin(country: str, routes: list[Route]) -> bool:
+    """Whether a park's agency trails are too few to stand alone."""
+    return len(routes) < THIN_AGENCY_TRAILS.get(country, 1)
+
+
+def with_osm(agency: list[Route], osm: list[Route]) -> list[Route]:
+    """The agency's routes, and OpenStreetMap's whose names the agency's do not take."""
+    taken = {ids.slug(route.name) for route in agency}
+    return sorted([*agency, *(route for route in osm if ids.slug(route.name) not in taken)],
+                  key=lambda route: (route.name, route.key))
+
+
+def agency_routes(
+    country: str, park: Record, polygons: list[outline.Polygon]
+) -> list[Route] | None:
+    """The park's routes from its agency's own layer, or None if that layer was never
+    fetched (not the same as a park the layer leaves without a trail)."""
+    if country == "nz":
+        from ..nz import tracks as doc_tracks
+
+        doc_features = doc_tracks.read_features()
+        return None if doc_features is None else doc_tracks.routes(park, doc_features, polygons)
+    if country == "ca":
+        from ..ca import pctrails
+
+        pc_features = pctrails.read_features()
+        return None if pc_features is None else pctrails.routes(park, pc_features, polygons)
+    return None
 
 
 # MARK: - Turrutebasen
@@ -1171,6 +1218,7 @@ def measurement_method() -> Record:
             "kartverket": "Kartverket Turrutebasen (CC BY 4.0, ©Kartverket)",
             "doc": "DOC Tracks (CC BY 4.0, Crown Copyright: Department of Conservation "
             "Te Papa Atawhai)",
+            "parksCanada": "Parks Canada trails (Open Government Licence – Canada)",
             "osm": "OpenStreetMap (ODbL), © OpenStreetMap contributors",
         },
     }

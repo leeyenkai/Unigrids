@@ -12,6 +12,10 @@ run without a reference build, so they read the outline sources directly:
 * **New Zealand**: DOC's Public Conservation Land layer (CC BY 4.0), the national parks
   (Section ``S4_NATIONAL_PARK``) in WGS84, joined by ``NaPALIS_ID``: the copy the New
   Zealand fetch keeps in ``raw/<date>/nz-pcl/``, or one asked for here.
+* **Canada**: the Canadian Protected and Conserved Areas Database (CPCAD, OGL–Canada), the
+  Parks Canada records in WGS84, a park being every record under its ``PARENT_ID`` with a
+  park designation: the copy the Canadian fetch keeps in ``raw/<date>/ca-cpcad/``, or one
+  asked for here.
 
 The country packages are read, never changed: Japan's Shapefile reader and union are
 reused as they are.
@@ -28,7 +32,7 @@ from ... import config, outline, rawstore
 from ...rawstore import FetchRecord, SourceTerms
 from ...sources import http
 
-COUNTRIES = ("jp", "no", "nz")
+COUNTRIES = ("jp", "no", "nz", "ca")
 
 NPS_ZIP_URL = "https://www.biodic.go.jp/shapedata/nps.zip"
 NPS_ZIP = "nps.zip"
@@ -39,8 +43,19 @@ PCL_LAYER = (
     "DOC_Public_Conservation_Land_FHV/FeatureServer/0"
 )
 PCL_NATIONAL_PARKS_WHERE = "Section = 'S4_NATIONAL_PARK'"
+CPCAD_LAYER = "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+CPCAD_PARKS_CANADA = 71
+"""CPCAD's data provider code for the Parks Canada Agency."""
+CPCAD_PARK_TYPES = (
+    "National Park", "National Park Reserve", "National Urban Park",
+)
+"""The designations a national park's own records carry; the program-support lands a park
+lists under the same parent (Gulf Islands) are not the park."""
 
-SOURCES = {"jp": "abroad-outlines-jp", "no": "abroad-outlines-no", "nz": "abroad-outlines-nz"}
+SOURCES = {
+    "jp": "abroad-outlines-jp", "no": "abroad-outlines-no", "nz": "abroad-outlines-nz",
+    "ca": "abroad-outlines-ca",
+}
 """Where outlines this module fetched or derived are kept, one folder per country so each
 carries its own terms."""
 
@@ -48,6 +63,7 @@ COUNTRY_SOURCES = {
     "jp": ("jp-biodic", NPS_ZIP),
     "no": ("no-naturvern", "national-parks.geojson"),
     "nz": ("nz-pcl", "national-parks.geojson"),
+    "ca": ("ca-cpcad", "national-parks.geojson"),
 }
 """What the country packages' own fetches leave in the raw store, read first."""
 
@@ -84,6 +100,17 @@ TERMS = {
         licence="CC BY 4.0",
         attribution="Crown Copyright: Department of Conservation Te Papa Atawhai",
         notes="Geometry in WGS84 (outSR 4326), joined to the park list by NaPALIS_ID.",
+    ),
+    "ca": SourceTerms(
+        identifier="cpcad",
+        title="Canadian Protected and Conserved Areas Database (CPCAD): Parks Canada's "
+        "national parks",
+        url=CPCAD_LAYER,
+        licence="Open Government Licence – Canada",
+        attribution="Contains information licensed under the Open Government Licence – Canada "
+        "(Environment and Climate Change Canada, CPCAD)",
+        notes="Geometry in WGS84 (outSR 4326); a park is every record under its PARENT_ID "
+        "with a park designation, joined to the park list by that parent.",
     ),
 }
 
@@ -122,6 +149,8 @@ def outlines(country: str, *, online: bool = True) -> dict[str, list[outline.Pol
         return _norway(online=online)
     if country == "nz":
         return _new_zealand(online=online)
+    if country == "ca":
+        return _canada(online=online)
     raise ValueError(f"no parks abroad for {country!r}; known: {', '.join(COUNTRIES)}")
 
 
@@ -270,6 +299,81 @@ def _download_pcl() -> Path:
             if "error" in payload:
                 raise http.FetchError(f"{PCL_LAYER} refused the query: {payload['error']}")
             record.add_request(f"{PCL_LAYER}/query", parameters)
+            page = payload.get("features") or []
+            features.extend(page)
+            exceeded = payload.get("exceededTransferLimit") or (
+                payload.get("properties") or {}
+            ).get("exceededTransferLimit")
+            if not page or not exceeded:
+                break
+            offset += len(page)
+    path = directory / "national-parks.geojson"
+    path.write_text(json.dumps({"type": "FeatureCollection", "features": features}))
+    record.add_file(path, root=directory)
+    record.write(directory)
+    return path
+
+
+# MARK: - Canada
+
+
+def cpcad_park_polygons(
+    features: list[dict[str, Any]], parents: dict[int, str]
+) -> dict[str, list[outline.Polygon]]:
+    """Place ID → every polygon of the CPCAD records under its parent, as ``parents`` maps
+    a ``PARENT_ID`` to a place. Only Parks Canada's own records with a park designation
+    count; Québec's copy of the Saguenay marine park, or a park's program-support lands,
+    do not."""
+    found: dict[str, list[outline.Polygon]] = {}
+    for feature in features:
+        properties = feature.get("properties") or {}
+        if properties.get("PROVIDER") != CPCAD_PARKS_CANADA:
+            continue
+        if properties.get("TYPE_E") not in CPCAD_PARK_TYPES:
+            continue
+        parent = properties.get("PARENT_ID")
+        place_id = parents.get(int(parent)) if isinstance(parent, int | float) else None
+        if place_id:
+            found.setdefault(place_id, []).extend(outline.polygons_of(feature.get("geometry")))
+    return found
+
+
+def _canada(*, online: bool) -> dict[str, list[outline.Polygon]]:
+    path = _source_file("ca")
+    if path is None:
+        if not online:
+            raise SystemExit("no CPCAD national parks in the raw store")
+        path = _download_cpcad()
+    parents = {int(entry["cpcadParentId"]): entry["id"] for entry in park_list("ca")}
+    return cpcad_park_polygons(json.loads(path.read_text()).get("features") or [], parents)
+
+
+def _download_cpcad() -> Path:
+    directory = rawstore.version_directory(SOURCES["ca"])
+    record = FetchRecord(source=TERMS["ca"], fetched_at=rawstore.utc_now())
+    parents = ",".join(str(int(entry["cpcadParentId"])) for entry in park_list("ca"))
+    features: list[dict[str, Any]] = []
+    offset = 0
+    with http.client() as session:
+        while True:
+            parameters = {
+                "where": f"PROVIDER = {CPCAD_PARKS_CANADA} AND PARENT_ID IN ({parents})",
+                "outFields": "OBJECTID,NAME_E,TYPE_E,PARENT_ID,ZONE_ID,PROVIDER,LOC",
+                "returnGeometry": "true",
+                "outSR": "4326",
+                "geometryPrecision": "6",
+                "maxAllowableOffset": "0.0001",
+                "orderByFields": "OBJECTID",
+                "f": "geojson",
+                "resultOffset": str(offset),
+                "resultRecordCount": "4",
+            }
+            response = http.get(session, f"{CPCAD_LAYER}/query", params=parameters,
+                                expect="application")
+            payload = response.json()
+            if "error" in payload:
+                raise http.FetchError(f"{CPCAD_LAYER} refused the query: {payload['error']}")
+            record.add_request(f"{CPCAD_LAYER}/query", parameters)
             page = payload.get("features") or []
             features.extend(page)
             exceeded = payload.get("exceededTransferLimit") or (

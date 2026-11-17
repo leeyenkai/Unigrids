@@ -16,7 +16,7 @@ __all__ = ["DEFAULT", "KNOWN", "BuildContext", "Contribution", "Country", "load"
 
 # Each package is imported only when a build asks for it, so a US build never loads
 # another country's code or needs its dependencies.
-KNOWN = ("us", "jp", "no", "nz")
+KNOWN = ("us", "jp", "no", "nz", "ca")
 DEFAULT = ("us",)
 
 

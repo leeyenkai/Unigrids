@@ -65,6 +65,24 @@ EXTRACTS: dict[str, Extract] = {
     ),
 }
 
+GEOFABRIK_CANADA = "https://download.geofabrik.de/north-america/canada"
+CANADA_PROVINCES = {
+    "AB": "alberta", "BC": "british-columbia", "MB": "manitoba", "NB": "new-brunswick",
+    "NL": "newfoundland-and-labrador", "NT": "northwest-territories", "NS": "nova-scotia",
+    "NU": "nunavut", "ON": "ontario", "PE": "prince-edward-island", "QC": "quebec",
+    "SK": "saskatchewan", "YT": "yukon",
+}
+"""Canada's extract is 6.5 GB; its provinces and territories are published one by one, so
+the Canadian fetch reads them in turn and deletes each when it is done (``ca-ab`` …)."""
+EXTRACTS.update({
+    f"ca-{code.lower()}": Extract(
+        f"geofabrik-ca-{code.lower()}",
+        f"{GEOFABRIK_CANADA}/{name}-latest.osm.pbf",
+        f"{name}-latest.osm.pbf",
+    )
+    for code, name in CANADA_PROVINCES.items()
+})
+
 
 def extract_for(country: str) -> Extract:
     """The extract a country reads, or a ``ValueError`` naming the ones there are."""

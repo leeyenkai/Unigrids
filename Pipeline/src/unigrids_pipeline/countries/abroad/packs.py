@@ -41,7 +41,7 @@ OSM_SOURCE = "osm"
 # sidewalks and crossings a town's footways are.
 DRAWN_PATHS = frozenset({"path", "footway", "bridleway", "steps"})
 
-COUNTRY_NAMES = {"jp": "Japan", "no": "Norway", "nz": "New Zealand"}
+COUNTRY_NAMES = {"jp": "Japan", "no": "Norway", "nz": "New Zealand", "ca": "Canada"}
 NOT_AFFILIATED = {
     "jp": (
         "It is **not** a product of Japan's Ministry of the Environment and implies no "
@@ -54,6 +54,10 @@ NOT_AFFILIATED = {
     "nz": (
         "It is **not** a product of the Department of Conservation Te Papa Atawhai and "
         "implies no affiliation with it or endorsement by it. It carries no DOC logo."
+    ),
+    "ca": (
+        "It is **not** a product of Parks Canada and implies no affiliation with it or "
+        "endorsement by it. It carries neither Parks Canada's beaver symbol nor its wordmark."
     ),
 }
 
@@ -390,7 +394,8 @@ def attribution_line(
         sources.add("kartverket")
     else:
         sources.add("osm")
-    names = [name for key, name in (("kartverket", "Kartverket"), ("osm", "OpenStreetMap"))
+    names = [name for key, name in (("kartverket", "Kartverket"), ("parksCanada", "Parks Canada"),
+                                    ("osm", "OpenStreetMap"))
              if key in sources]
     return (
         "Elevation Copernicus GLO-30 · Roads and water © OpenStreetMap contributors (ODbL) · "
@@ -487,6 +492,14 @@ def _write_attribution(
             "**Department of Conservation.** Park outlines from Public Conservation Land and",
             "trail lines and categories from DOC Tracks are CC BY 4.0, Crown Copyright:",
             "Department of Conservation Te Papa Atawhai.",
+            "",
+        ]
+    if country == "ca":
+        lines += [
+            "**Parks Canada and Environment and Climate Change Canada.** Park outlines from the",
+            "Canadian Protected and Conserved Areas Database (CPCAD) and trail lines and",
+            "difficulty ratings from Parks Canada's trails data are used under the Open",
+            "Government Licence – Canada.",
             "",
         ]
     lines += [

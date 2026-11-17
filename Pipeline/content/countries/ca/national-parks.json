@@ -1,0 +1,790 @@
+{
+  "_about": "Canada's 47 national parks and national park reserves and Rouge National Urban Park, as Parks Canada lists them (parks.canada.ca/pn-np, checked 18 November 2026; the page lists exactly these 48). IDs are permanent: user logs point at them. 'name' is the park's short English name, the official name without its designation, which is 'designation'; 'officialName' is the English name Parks Canada titles its page with, and the French 'localNames' entry the name its French page (parcs.canada.ca/pn-np) uses. An Indigenous name is given only where Parks Canada uses one beside the park's name: 'Tongait KakKasuangita SilakKijapvinga' (Inuttitut) on Torngat Mountains' page and 'Nahʔą Dehé' (Dehcho Dene) on Nahanni's; names that are already Indigenous (Auyuittuq, Gwaii Haanas, Thaidene Nëné) are the name. 'cpcadParentId' keys the park to the Canadian Protected and Conserved Areas Database (CPCAD, PARENT_ID, Parks Canada Agency as provider): every CPCAD record with that parent and a park designation is one piece of the outline (Kejimkujik's inland park and Seaside, Wood Buffalo's Alberta and Northwest Territories parts, the marine parts of coastal parks), and the program-support lands Gulf Islands also lists are not. 'passportRegion' is Unigrids' own grouping (ADR 0014) by the park's province or territory; Wood Buffalo, mostly in Alberta, is filed with the North. 'pcPage' is the park's page on parks.canada.ca, from which its brochures and maps are read. 'attendancePlace' is the park's row in Parks Canada's attendance table (open.canada.ca, 'Parks Canada attendance 2025_26'): Mount Revelstoke and Glacier are counted together there and carry no figure; Gwaii Haanas's row counts the park reserve, the marine conservation area reserve and the heritage site together; Rouge, Torngat Mountains, Akami-Uapishkᵁ-KakKasuak-Mealy Mountains, Vuntut, Thaidene Nëné, Qausuittuq and Ukkusiksalik have no row. 'reachedBy' is how a park with no road to it is reached, paraphrased from its 'Plan your visit' and 'How to get here' pages. Parks Canada also lists Pituamkek National Park Reserve (Prince Edward Island) in CPCAD as an interim reserve; it is not on the national parks page and not here. Founding years and areas are curated in each guide's facts.",
+  "parks": [
+    {
+      "id": "ca-np-banff",
+      "name": "Banff",
+      "designation": "National Park",
+      "officialName": "Banff National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Banff"
+        }
+      ],
+      "cpcadParentId": 710300000,
+      "passportRegion": "mountainsAndPacific",
+      "pcPage": "https://parks.canada.ca/pn-np/ab/banff",
+      "attendancePlace": "Banff National Park"
+    },
+    {
+      "id": "ca-np-jasper",
+      "name": "Jasper",
+      "designation": "National Park",
+      "officialName": "Jasper National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Jasper"
+        }
+      ],
+      "cpcadParentId": 714700000,
+      "passportRegion": "mountainsAndPacific",
+      "pcPage": "https://parks.canada.ca/pn-np/ab/jasper",
+      "attendancePlace": "Jasper National Park"
+    },
+    {
+      "id": "ca-np-yoho",
+      "name": "Yoho",
+      "designation": "National Park",
+      "officialName": "Yoho National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Yoho"
+        }
+      ],
+      "cpcadParentId": 719900000,
+      "passportRegion": "mountainsAndPacific",
+      "pcPage": "https://parks.canada.ca/pn-np/bc/yoho",
+      "attendancePlace": "Yoho National Park"
+    },
+    {
+      "id": "ca-np-kootenay",
+      "name": "Kootenay",
+      "designation": "National Park",
+      "officialName": "Kootenay National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Kootenay"
+        }
+      ],
+      "cpcadParentId": 715200000,
+      "passportRegion": "mountainsAndPacific",
+      "pcPage": "https://parks.canada.ca/pn-np/bc/kootenay",
+      "attendancePlace": "Kootenay National Park"
+    },
+    {
+      "id": "ca-np-glacier",
+      "name": "Glacier",
+      "designation": "National Park",
+      "officialName": "Glacier National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national des Glaciers"
+        }
+      ],
+      "cpcadParentId": 713700000,
+      "passportRegion": "mountainsAndPacific",
+      "pcPage": "https://parks.canada.ca/pn-np/bc/glacier"
+    },
+    {
+      "id": "ca-np-mount-revelstoke",
+      "name": "Mount Revelstoke",
+      "designation": "National Park",
+      "officialName": "Mount Revelstoke National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national du Mont-Revelstoke"
+        }
+      ],
+      "cpcadParentId": 716100000,
+      "passportRegion": "mountainsAndPacific",
+      "pcPage": "https://parks.canada.ca/pn-np/bc/revelstoke"
+    },
+    {
+      "id": "ca-np-waterton-lakes",
+      "name": "Waterton Lakes",
+      "designation": "National Park",
+      "officialName": "Waterton Lakes National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national des Lacs-Waterton"
+        }
+      ],
+      "cpcadParentId": 719600000,
+      "passportRegion": "mountainsAndPacific",
+      "pcPage": "https://parks.canada.ca/pn-np/ab/waterton",
+      "attendancePlace": "Waterton Lakes National Park"
+    },
+    {
+      "id": "ca-np-elk-island",
+      "name": "Elk Island",
+      "designation": "National Park",
+      "officialName": "Elk Island National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Elk Island"
+        }
+      ],
+      "cpcadParentId": 711700000,
+      "passportRegion": "mountainsAndPacific",
+      "pcPage": "https://parks.canada.ca/pn-np/ab/elkisland",
+      "attendancePlace": "Elk Island National Park"
+    },
+    {
+      "id": "ca-np-pacific-rim",
+      "name": "Pacific Rim",
+      "designation": "National Park Reserve",
+      "officialName": "Pacific Rim National Park Reserve",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Réserve de parc national Pacific Rim"
+        }
+      ],
+      "cpcadParentId": 716500000,
+      "passportRegion": "mountainsAndPacific",
+      "pcPage": "https://parks.canada.ca/pn-np/bc/pacificrim",
+      "attendancePlace": "Pacific Rim National Park Reserve"
+    },
+    {
+      "id": "ca-np-gulf-islands",
+      "name": "Gulf Islands",
+      "designation": "National Park Reserve",
+      "officialName": "Gulf Islands National Park Reserve",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Réserve de parc national des Îles-Gulf"
+        }
+      ],
+      "cpcadParentId": 714320000,
+      "passportRegion": "mountainsAndPacific",
+      "pcPage": "https://parks.canada.ca/pn-np/bc/gulf",
+      "attendancePlace": "Gulf Islands National Park Reserve"
+    },
+    {
+      "id": "ca-np-gwaii-haanas",
+      "name": "Gwaii Haanas",
+      "designation": "National Park Reserve and Haida Heritage Site",
+      "officialName": "Gwaii Haanas National Park Reserve, National Marine Conservation Area Reserve, and Haida Heritage Site",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Réserve de parc national, réserve d'aire marine nationale de conservation, et site du patrimoine haïda Gwaii Haanas"
+        }
+      ],
+      "cpcadParentId": 714500000,
+      "passportRegion": "mountainsAndPacific",
+      "pcPage": "https://parks.canada.ca/pn-np/bc/gwaiihaanas",
+      "attendancePlace": "Gwaii Haanas National Park Reserve, National Marine Conservation Area Reserve, and Haida Heritage Site",
+      "reachedBy": "No roads: reached only by boat or floatplane, from the communities of Haida Gwaii."
+    },
+    {
+      "id": "ca-np-kluane",
+      "name": "Kluane",
+      "designation": "National Park and Reserve",
+      "officialName": "Kluane National Park and Reserve",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national et réserve de parc national Kluane"
+        }
+      ],
+      "cpcadParentId": 715100000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/yt/kluane",
+      "attendancePlace": "Kluane National Park and Reserve"
+    },
+    {
+      "id": "ca-np-wood-buffalo",
+      "name": "Wood Buffalo",
+      "designation": "National Park",
+      "officialName": "Wood Buffalo National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Wood Buffalo"
+        }
+      ],
+      "cpcadParentId": 719700000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/nt/woodbuffalo",
+      "attendancePlace": "Wood Buffalo National Park"
+    },
+    {
+      "id": "ca-np-grasslands",
+      "name": "Grasslands",
+      "designation": "National Park",
+      "officialName": "Grasslands National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national des Prairies"
+        }
+      ],
+      "cpcadParentId": 713900000,
+      "passportRegion": "prairies",
+      "pcPage": "https://parks.canada.ca/pn-np/sk/grasslands",
+      "attendancePlace": "Grasslands National Park"
+    },
+    {
+      "id": "ca-np-prince-albert",
+      "name": "Prince Albert",
+      "designation": "National Park",
+      "officialName": "Prince Albert National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national de Prince Albert"
+        }
+      ],
+      "cpcadParentId": 717100000,
+      "passportRegion": "prairies",
+      "pcPage": "https://parks.canada.ca/pn-np/sk/princealbert",
+      "attendancePlace": "Prince Albert National Park"
+    },
+    {
+      "id": "ca-np-riding-mountain",
+      "name": "Riding Mountain",
+      "designation": "National Park",
+      "officialName": "Riding Mountain National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national du Mont-Riding"
+        }
+      ],
+      "cpcadParentId": 717800000,
+      "passportRegion": "prairies",
+      "pcPage": "https://parks.canada.ca/pn-np/mb/riding",
+      "attendancePlace": "Riding Mountain National Park"
+    },
+    {
+      "id": "ca-np-wapusk",
+      "name": "Wapusk",
+      "designation": "National Park",
+      "officialName": "Wapusk National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Wapusk"
+        }
+      ],
+      "cpcadParentId": 719500000,
+      "passportRegion": "prairies",
+      "pcPage": "https://parks.canada.ca/pn-np/mb/wapusk",
+      "attendancePlace": "Wapusk National Park",
+      "reachedBy": "No roads: visitors go in by aircraft with a licensed tour operator from Churchill, itself reached by air or by train, not by road."
+    },
+    {
+      "id": "ca-np-bruce-peninsula",
+      "name": "Bruce Peninsula",
+      "designation": "National Park",
+      "officialName": "Bruce Peninsula National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national de la Péninsule-Bruce"
+        }
+      ],
+      "cpcadParentId": 710800000,
+      "passportRegion": "ontario",
+      "pcPage": "https://parks.canada.ca/pn-np/on/bruce",
+      "attendancePlace": "Bruce Peninsula National Park"
+    },
+    {
+      "id": "ca-np-georgian-bay-islands",
+      "name": "Georgian Bay Islands",
+      "designation": "National Park",
+      "officialName": "Georgian Bay Islands National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national des Îles-de-la-Baie-Georgienne"
+        }
+      ],
+      "cpcadParentId": 713600000,
+      "passportRegion": "ontario",
+      "pcPage": "https://parks.canada.ca/pn-np/on/georg",
+      "attendancePlace": "Georgian Bay Islands National Park",
+      "reachedBy": "Islands reached only by boat: a reserved day-visit boat or, for overnight camping, a licensed water taxi."
+    },
+    {
+      "id": "ca-np-point-pelee",
+      "name": "Point Pelee",
+      "designation": "National Park",
+      "officialName": "Point Pelee National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national de la Pointe-Pelée"
+        }
+      ],
+      "cpcadParentId": 716700000,
+      "passportRegion": "ontario",
+      "pcPage": "https://parks.canada.ca/pn-np/on/pelee",
+      "attendancePlace": "Point Pelee National Park"
+    },
+    {
+      "id": "ca-np-pukaskwa",
+      "name": "Pukaskwa",
+      "designation": "National Park",
+      "officialName": "Pukaskwa National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Pukaskwa"
+        }
+      ],
+      "cpcadParentId": 717500000,
+      "passportRegion": "ontario",
+      "pcPage": "https://parks.canada.ca/pn-np/on/pukaskwa",
+      "attendancePlace": "Pukaskwa National Park"
+    },
+    {
+      "id": "ca-np-thousand-islands",
+      "name": "Thousand Islands",
+      "designation": "National Park",
+      "officialName": "Thousand Islands National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national des Mille-Îles"
+        }
+      ],
+      "cpcadParentId": 718600000,
+      "passportRegion": "ontario",
+      "pcPage": "https://parks.canada.ca/pn-np/on/1000",
+      "attendancePlace": "Thousand Islands National Park"
+    },
+    {
+      "id": "ca-np-rouge",
+      "name": "Rouge",
+      "designation": "National Urban Park",
+      "officialName": "Rouge National Urban Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc urbain national de la Rouge"
+        }
+      ],
+      "cpcadParentId": 717900000,
+      "passportRegion": "ontario",
+      "pcPage": "https://parks.canada.ca/pn-np/on/rouge"
+    },
+    {
+      "id": "ca-np-la-mauricie",
+      "name": "La Mauricie",
+      "designation": "National Park",
+      "officialName": "La Mauricie National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national de la Mauricie"
+        }
+      ],
+      "cpcadParentId": 715400000,
+      "passportRegion": "quebec",
+      "pcPage": "https://parks.canada.ca/pn-np/qc/mauricie",
+      "attendancePlace": "La Mauricie National Park"
+    },
+    {
+      "id": "ca-np-forillon",
+      "name": "Forillon",
+      "designation": "National Park",
+      "officialName": "Forillon National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Forillon"
+        }
+      ],
+      "cpcadParentId": 712000000,
+      "passportRegion": "quebec",
+      "pcPage": "https://parks.canada.ca/pn-np/qc/forillon",
+      "attendancePlace": "Forillon National Park"
+    },
+    {
+      "id": "ca-np-mingan-archipelago",
+      "name": "Mingan Archipelago",
+      "designation": "National Park Reserve",
+      "officialName": "Mingan Archipelago National Park Reserve",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Réserve de parc national de l'Archipel-de-Mingan"
+        }
+      ],
+      "cpcadParentId": 716000000,
+      "passportRegion": "quebec",
+      "pcPage": "https://parks.canada.ca/pn-np/qc/mingan",
+      "attendancePlace": "Mingan Archipelago National Park Reserve"
+    },
+    {
+      "id": "ca-np-fundy",
+      "name": "Fundy",
+      "designation": "National Park",
+      "officialName": "Fundy National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Fundy"
+        }
+      ],
+      "cpcadParentId": 713400000,
+      "passportRegion": "atlantic",
+      "pcPage": "https://parks.canada.ca/pn-np/nb/fundy",
+      "attendancePlace": "Fundy National Park"
+    },
+    {
+      "id": "ca-np-kouchibouguac",
+      "name": "Kouchibouguac",
+      "designation": "National Park",
+      "officialName": "Kouchibouguac National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Kouchibouguac"
+        }
+      ],
+      "cpcadParentId": 715300000,
+      "passportRegion": "atlantic",
+      "pcPage": "https://parks.canada.ca/pn-np/nb/kouchibouguac",
+      "attendancePlace": "Kouchibouguac National Park"
+    },
+    {
+      "id": "ca-np-cape-breton-highlands",
+      "name": "Cape Breton Highlands",
+      "designation": "National Park",
+      "officialName": "Cape Breton Highlands National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national des Hautes-Terres-du-Cap-Breton"
+        }
+      ],
+      "cpcadParentId": 711000000,
+      "passportRegion": "atlantic",
+      "pcPage": "https://parks.canada.ca/pn-np/ns/cbreton",
+      "attendancePlace": "Cape Breton Highlands National Park"
+    },
+    {
+      "id": "ca-np-kejimkujik",
+      "name": "Kejimkujik",
+      "designation": "National Park and National Historic Site",
+      "officialName": "Kejimkujik National Park and National Historic Site",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national et lieu historique national Kejimkujik"
+        }
+      ],
+      "cpcadParentId": 714900000,
+      "passportRegion": "atlantic",
+      "pcPage": "https://parks.canada.ca/pn-np/ns/kejimkujik",
+      "attendancePlace": "Kejimkujik National Park and Historic Site"
+    },
+    {
+      "id": "ca-np-sable-island",
+      "name": "Sable Island",
+      "designation": "National Park Reserve",
+      "officialName": "Sable Island National Park Reserve",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Réserve de parc national de l'Île-de-Sable"
+        }
+      ],
+      "cpcadParentId": 718000000,
+      "passportRegion": "atlantic",
+      "pcPage": "https://parks.canada.ca/pn-np/ns/sable",
+      "attendancePlace": "Sable Island National Park Reserve",
+      "reachedBy": "Reached by air or sea: a flight or tour with a Parks Canada licensed operator, or a private vessel."
+    },
+    {
+      "id": "ca-np-prince-edward-island",
+      "name": "Prince Edward Island",
+      "designation": "National Park",
+      "officialName": "Prince Edward Island National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national de l'Île-du-Prince-Édouard"
+        }
+      ],
+      "cpcadParentId": 717200000,
+      "passportRegion": "atlantic",
+      "pcPage": "https://parks.canada.ca/pn-np/pe/pei-ipe",
+      "attendancePlace": "Prince Edward Island National Park"
+    },
+    {
+      "id": "ca-np-gros-morne",
+      "name": "Gros Morne",
+      "designation": "National Park",
+      "officialName": "Gros Morne National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national du Gros Morne"
+        }
+      ],
+      "cpcadParentId": 714100000,
+      "passportRegion": "atlantic",
+      "pcPage": "https://parks.canada.ca/pn-np/nl/grosmorne",
+      "attendancePlace": "Gros Morne National Park"
+    },
+    {
+      "id": "ca-np-terra-nova",
+      "name": "Terra Nova",
+      "designation": "National Park",
+      "officialName": "Terra Nova National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Terra-Nova"
+        }
+      ],
+      "cpcadParentId": 718800000,
+      "passportRegion": "atlantic",
+      "pcPage": "https://parks.canada.ca/pn-np/nl/terranova",
+      "attendancePlace": "Terra Nova National Park"
+    },
+    {
+      "id": "ca-np-torngat-mountains",
+      "name": "Torngat Mountains",
+      "designation": "National Park",
+      "officialName": "Torngat Mountains National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national du Canada des Monts-Torngat"
+        },
+        {
+          "language": "iu",
+          "text": "Tongait KakKasuangita SilakKijapvinga"
+        }
+      ],
+      "cpcadParentId": 719000000,
+      "passportRegion": "atlantic",
+      "pcPage": "https://parks.canada.ca/pn-np/nl/torngats",
+      "reachedBy": "Reached by air: charter flights from Goose Bay to Saglek and on by boat or helicopter to the base camp, or air or boat charters from Nain."
+    },
+    {
+      "id": "ca-np-mealy-mountains",
+      "name": "Akami-Uapishkᵁ-KakKasuak-Mealy Mountains",
+      "designation": "National Park Reserve",
+      "officialName": "Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Réserve de parc national Akami-Uapishkᵁ – KakKasuak – Monts Mealy"
+        }
+      ],
+      "cpcadParentId": 715900000,
+      "passportRegion": "atlantic",
+      "pcPage": "https://parks.canada.ca/pn-np/nl/mealy",
+      "reachedBy": "Reached year-round by helicopter or floatplane, chartered from Happy Valley-Goose Bay."
+    },
+    {
+      "id": "ca-np-ivvavik",
+      "name": "Ivvavik",
+      "designation": "National Park",
+      "officialName": "Ivvavik National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Ivvavik"
+        }
+      ],
+      "cpcadParentId": 714600000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/yt/ivvavik",
+      "attendancePlace": "Ivvavik National Park",
+      "reachedBy": "By charter aircraft from Inuvik, about 200 km east."
+    },
+    {
+      "id": "ca-np-vuntut",
+      "name": "Vuntut",
+      "designation": "National Park",
+      "officialName": "Vuntut National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Vuntut"
+        }
+      ],
+      "cpcadParentId": 719400000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/yt/vuntut",
+      "reachedBy": "About 50 km by air or 190 km by river north of Old Crow, which has scheduled flights from Whitehorse, Dawson City and Inuvik."
+    },
+    {
+      "id": "ca-np-aulavik",
+      "name": "Aulavik",
+      "designation": "National Park",
+      "officialName": "Aulavik National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Aulavik"
+        }
+      ],
+      "cpcadParentId": 710100000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/nt/aulavik",
+      "attendancePlace": "Aulavik National Park",
+      "reachedBy": "By chartered aircraft from Inuvik, about 750 km south-west of the park."
+    },
+    {
+      "id": "ca-np-nahanni",
+      "name": "Nahanni",
+      "designation": "National Park Reserve",
+      "officialName": "Nahanni National Park Reserve",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Réserve de parc national Nahanni"
+        },
+        {
+          "language": "xsl",
+          "text": "Nahʔą Dehé"
+        }
+      ],
+      "cpcadParentId": 716200000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/nt/nahanni",
+      "attendancePlace": "Nahanni National Park Reserve",
+      "reachedBy": "Most visitors arrive by chartered floatplane, from Fort Simpson, Yellowknife, Muncho Lake or Watson Lake."
+    },
+    {
+      "id": "ca-np-naats-ihch-oh",
+      "name": "Nááts'įhch'oh",
+      "designation": "National Park Reserve",
+      "officialName": "Nááts'įhch'oh National Park Reserve",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Réserve de parc national Nááts'įhch'oh"
+        }
+      ],
+      "cpcadParentId": 716300000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/nt/naatsihchoh",
+      "attendancePlace": "Nááts'ihch'oh National Park Reserve",
+      "reachedBy": "No road access: most visitors arrive by floatplane from communities in the Northwest Territories and Yukon."
+    },
+    {
+      "id": "ca-np-tuktut-nogait",
+      "name": "Tuktut Nogait",
+      "designation": "National Park",
+      "officialName": "Tuktut Nogait National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Tuktut Nogait"
+        }
+      ],
+      "cpcadParentId": 719200000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/nt/tuktutnogait",
+      "attendancePlace": "Tuktut Nogait National Park",
+      "reachedBy": "By charter floatplane from Norman Wells or Inuvik, by permit; Paulatuk is reached by air charter from Inuvik."
+    },
+    {
+      "id": "ca-np-thaidene-nene",
+      "name": "Thaidene Nëné",
+      "designation": "National Park Reserve",
+      "officialName": "Thaidene Nëné National Park Reserve",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Réserve de parc national Thaidene Nëné"
+        }
+      ],
+      "cpcadParentId": 718900000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/nt/thaidene-nene",
+      "reachedBy": "No road access: by air charter on skis or floats, by boat, or by snowmobile."
+    },
+    {
+      "id": "ca-np-auyuittuq",
+      "name": "Auyuittuq",
+      "designation": "National Park",
+      "officialName": "Auyuittuq National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Auyuittuq"
+        }
+      ],
+      "cpcadParentId": 710200000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/nu/auyuittuq",
+      "attendancePlace": "Auyuittuq National Park",
+      "reachedBy": "By boat or snowmobile with a licensed outfitter, from Pangnirtung or Qikiqtarjuaq, which have flights year-round."
+    },
+    {
+      "id": "ca-np-qausuittuq",
+      "name": "Qausuittuq",
+      "designation": "National Park",
+      "officialName": "Qausuittuq National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Qausuittuq"
+        }
+      ],
+      "cpcadParentId": 717700000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/nu/qausuittuq",
+      "reachedBy": "Only by chartered aircraft from Resolute Bay, 200 km to the south-east; best from late June to early August."
+    },
+    {
+      "id": "ca-np-quttinirpaaq",
+      "name": "Quttinirpaaq",
+      "designation": "National Park",
+      "officialName": "Quttinirpaaq National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Quttinirpaaq"
+        }
+      ],
+      "cpcadParentId": 717600000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/nu/quttinirpaaq",
+      "attendancePlace": "Quttinirpaaq National Park",
+      "reachedBy": "By chartered Twin Otter from Resolute Bay; most accessible from May to August."
+    },
+    {
+      "id": "ca-np-sirmilik",
+      "name": "Sirmilik",
+      "designation": "National Park",
+      "officialName": "Sirmilik National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Sirmilik"
+        }
+      ],
+      "cpcadParentId": 718500000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/nu/sirmilik",
+      "attendancePlace": "Sirmilik National Park",
+      "reachedBy": "By boat or snowmobile with a licensed outfitter, from Pond Inlet or Arctic Bay."
+    },
+    {
+      "id": "ca-np-ukkusiksalik",
+      "name": "Ukkusiksalik",
+      "designation": "National Park",
+      "officialName": "Ukkusiksalik National Park",
+      "localNames": [
+        {
+          "language": "fr",
+          "text": "Parc national Ukkusiksalik"
+        }
+      ],
+      "cpcadParentId": 719300000,
+      "passportRegion": "north",
+      "pcPage": "https://parks.canada.ca/pn-np/nu/ukkusiksalik",
+      "reachedBy": "By chartered aircraft from Baker Lake or Rankin Inlet, or by boat or snowmobile with outfitters from Naujaat."
+    }
+  ]
+}

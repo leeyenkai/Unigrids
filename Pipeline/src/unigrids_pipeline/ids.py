@@ -80,6 +80,11 @@ _TRANSLITERATION = str.maketrans({
     "đ": "d", "Đ": "d",
     "ŋ": "n", "Ŋ": "n",
     "ŧ": "t", "Ŧ": "t",
+    # Canada's Dene, Tlingit and Salish orthographies: the barred l, the glottal stop and
+    # labialisation ("Nàłùdäy", "Saoyú-Ɂehdacho", "Nahʔą Dehé", "Mᑫuqʷin").
+    "ł": "l", "Ł": "l",
+    "ɂ": "", "Ɂ": "", "ʔ": "",
+    "ʷ": "w",
 })
 
 # Each country's place namespaces: ``<country>-<tier>-<slug>``.
@@ -90,6 +95,9 @@ PLACE_NAMESPACES: dict[str, tuple[str, ...]] = {
     "no": ("np", "lvo", "nr"),
     # National parks, and conservation and forest parks (Conservation Act s 19).
     "nz": ("np", "cp"),
+    # National parks (with the reserves and Rouge National Urban Park), national marine
+    # conservation areas, and provincial and territorial parks.
+    "ca": ("np", "mca", "pp"),
 }
 
 REGISTRY_KINDS = ("places", "pois", "trails")
