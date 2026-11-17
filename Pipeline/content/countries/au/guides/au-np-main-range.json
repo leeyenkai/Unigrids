@@ -1,0 +1,258 @@
+{
+  "placeID": "au-np-main-range",
+  "contentVersion": 1,
+  "summary": "The western wall of the Scenic Rim, where the Great Dividing Range breaks into cliffs above the Fassifern Valley. Main Range is part of the Gondwana Rainforests of Australia World Heritage Area. The Cunningham Highway crosses it at Cunninghams Gap, between the peaks of Mount Mitchell and Mount Cordeaux; Goomburra's creeks and Queen Mary Falls lie on the quieter western side.",
+  "facts": {
+    "establishedYear": 1909,
+    "areaHectares": 30171,
+    "bestSeasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "The escarpment is what is left of a basalt shield volcano that was active about 24 million years ago and may have stood 1,400 metres high, its lavas spreading across the Fassifern Valley towards Boonah and Ipswich and west to Warwick. Over 20 million years the steep, fast streams draining east wore that side away, leaving a retreating cliff line and exposing the hard plugs and dykes that now stand as peaks, while the gentler western valleys, such as Goomburra, survived behind it.",
+    "Height, aspect and soil make a patchwork of forest: cool subtropical rainforest of strangler figs, palms and tree ferns on the sheltered basalt, eucalypt forest on dry ridges, and montane heath and rock-pavement plants on exposed peaks and cliffs, among them the giant spear lily, which grows to 3 metres. The park shelters Albert's lyrebird, the endangered eastern bristlebird, the black-breasted button-quail, Fleay's barred frog, the Richmond birdwing butterfly, the spotted-tailed quoll and the Hastings River mouse.",
+    "The Queensland Government recognises the Yugambeh, Yuggera Ugarapul and Githabul peoples as Traditional Owners of the Queensland section of the Gondwana Rainforests, and the gap at Spicers Gap is thought to have been a First Nations trade route between east and west. Allan Cunningham found Cunninghams Gap on 25 August 1828 and named its guardian peaks Mount Mitchell and Mount Cordeaux. His route proved too steep for drays, and from the late 1850s a road was built instead through Spicers Gap, the first safe route between Brisbane and the Darling Downs, until the railway made it redundant by 1871.",
+    "Red cedar was gone from these ranges by the early 1900s, and timber-getters moved on to hoop pine and other rainforest trees. After local people made the case, Cunninghams Gap was reserved as a national park on 3 July 1909. A highway through the gap opened in 1927, and tracks were built from the late 1930s to the late 1950s. Further parks along the range were joined as Main Range National Park in August 1980, and the old forestry valley of Goomburra was added in 2006."
+  ],
+  "howItWorks": [
+    "Main Range is managed by the Queensland Parks and Wildlife Service under the Nature Conservation Act 1992. There is no entry fee: QPWS's permits and fees page lists permits for camping, driving in recreation areas, events and business. Domestic animals other than registered service animals are not allowed in the park. Visitors should be self-sufficient: there are no rubbish bins, generators are banned in camping areas, and QPWS asks you to cook on a fuel stove and never collect wood from the park or roadside.",
+    "There are three QPWS camping areas: Spicers Gap on the eastern side of the range, and Poplar Flat and Manna Gum at Goomburra on the western side, all with composting toilets and tap water that must be treated. Permits are normally booked online in advance, especially for weekends and school and public holidays, and the booking number displayed at your site. In November 2026 the Queensland booking system was switched off after a data breach at the provider Bookeasy; while the temporary arrangements last, QPWS says you may camp in open parks without a permit. Check the QPWS website before you go.",
+    "The park is in several separate pieces. Cunninghams Gap, with The Crest car park and the walks up Mount Mitchell and Mount Cordeaux, is on the Cunningham Highway; Spicers Gap is reached by a side road from the east; Goomburra lies at the end of a valley road from Allora; and Queen Mary Falls is near Killarney in the south-west. Goomburra is a special area for frogs: keep out of the creeks and do not handle frogs, eggs or tadpoles."
+  ],
+  "sights": [
+    {
+      "name": "Mount Mitchell",
+      "note": "A 10.2-kilometre return climb from The Crest past West Peak to a knife-edge ridge on East Peak, 1,175 metres, looking over the Fassifern Valley to Mount Barney.",
+      "location": [
+        -28.06306,
+        152.39972
+      ]
+    },
+    {
+      "name": "Mount Cordeaux",
+      "note": "A 6.8-kilometre return walk from The Crest through rainforest, past an old goldmine shaft, to a rock slab below the summit with views of Mount Mitchell and Spicers Peak.",
+      "location": [
+        -28.04355,
+        152.39421
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Queen Mary Falls",
+      "note": "Spring Creek drops 40 metres into a rainforest gorge; a 2-kilometre circuit from the picnic area views the falls from above and below.",
+      "location": [
+        -28.3397,
+        152.37333
+      ]
+    },
+    {
+      "name": "Governors Chair",
+      "note": "A rock on a cliff edge at Spicers Gap, said to have been a resting place for early governors, 300 metres from the car park, with views over Lake Moogerah.",
+      "location": [
+        -28.08632,
+        152.41878
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Sylvesters Lookout",
+      "note": "A 940-metre return walk at Goomburra through rainforest to a lookout over the coastal plains, Lake Moogerah and the peaks of the Fassifern Valley.",
+      "location": [
+        -27.97706,
+        152.38488
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Dalrymple circuit",
+      "note": "A 1.2-kilometre circuit from the Manna Gum camping area over bridges and platforms along Dalrymple Creek, a headwater of the Condamine River and home of Fleay's barred frog.",
+      "location": [
+        -27.98116,
+        152.35055
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Cunninghams Gap, on the Cunningham Highway 116 kilometres south-west of Brisbane — The Crest car park and the Mount Mitchell and Mount Cordeaux tracks",
+      "Spicers Gap, from the east by Lake Moogerah Road and Spicers Gap Road, ending at the Governors Chair car park",
+      "Goomburra, about 35 kilometres east of the New England Highway near Allora; the last 6 kilometres are unsealed",
+      "Queen Mary Falls, 11 kilometres east of Killarney via Spring Creek Road"
+    ],
+    "reservations": "No reservation is needed to enter or walk. Camping permits are normally booked online in advance, especially for weekends and holidays. In November 2026 the QPWS booking system was offline after a data breach and permits were temporarily not required — check the QPWS website before you go.",
+    "permits": [
+      "Camping permit for Spicers Gap, Poplar Flat or Manna Gum (temporarily waived while the QPWS booking system is offline)"
+    ],
+    "camping": [
+      "Spicers Gap camping area, on the eastern side of the range south of Cunninghams Gap",
+      "Poplar Flat and Manna Gum camping areas at Goomburra, on the western side; barbecues at Goomburra only",
+      "Private campgrounds opposite Queen Mary Falls and in the Goomburra valley"
+    ],
+    "lodging": [
+      "Accommodation in Boonah, Aratula, Killarney and Warwick"
+    ],
+    "seasonalClosures": [
+      "The Goomburra road to the lookouts closes after heavy rain, and the unsealed approach can flood — check road conditions with RACQ",
+      "In November 2026 QPWS alerts listed the Cascades and Dalrymple circuits at Goomburra as closed until 31 December 2026, and storm damage on the Scenic Rim Trail — check park alerts before you go"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "The range changes its weather fast. Winters are usually dry and cold, with frosty nights averaging a minimum of about 5°C; summers are warm to very hot, reaching 35°C on exposed ridges, with nights of 10 to 18°C. Most rain falls between November and March, and late-spring and summer thunderstorms bring lightning and sudden cold. Cloud can shroud the higher tracks, such as the climb up Mount Mitchell.",
+  "directions": "Main Range is 116 kilometres south-west of Brisbane and 50 kilometres east of Warwick, and the Cunningham Highway runs straight through Cunninghams Gap. For Spicers Gap, leave the highway 5 kilometres west of Aratula onto Lake Moogerah Road, then take Spicers Gap Road, which does not cross the range. Goomburra, about 175 kilometres from Brisbane, is reached from the New England Highway 3 kilometres south of Allora by Inverramsay and Forestry Reserve roads, or from the Cunningham Highway at Gladfield. Queen Mary Falls is 11 kilometres east of Killarney; the steep road up from Boonah is unsuitable for caravans.",
+  "fees": [
+    {
+      "title": "Camping permit, QPWS camping areas",
+      "cost": "$7.75 per person per night",
+      "amount": 7.75,
+      "currencyCode": "AUD",
+      "detail": "Or $31.00 per family per night (one or two adults and children under 18, up to eight people); children under five camp free. Queensland rates from 1 July 2026. Temporarily not required while the booking system is offline after the November 2026 data breach — check before you go."
+    },
+    {
+      "title": "Park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "AUD",
+      "detail": "QPWS charges no entry fee for day visits and walks."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1828",
+      "text": "Allan Cunningham finds Cunninghams Gap on 25 August and names Mount Mitchell and Mount Cordeaux."
+    },
+    {
+      "year": "1847",
+      "text": "Stockman Henry Alphen is credited with finding an easier route through Spicers Gap."
+    },
+    {
+      "year": "1850s–1860s",
+      "text": "A road is built through Spicers Gap from the late 1850s to the mid-1860s, the first safe route between Brisbane and the Darling Downs; by 1871 the railway has taken its traffic."
+    },
+    {
+      "year": "1909",
+      "text": "Cunninghams Gap is reserved as a national park on 3 July."
+    },
+    {
+      "year": "1927",
+      "text": "A road through Cunninghams Gap opens; it is sealed in the 1940s."
+    },
+    {
+      "year": "1980",
+      "text": "The parks along the range are amalgamated as Main Range National Park in August."
+    },
+    {
+      "year": "1994",
+      "text": "The World Heritage area, today's Gondwana Rainforests of Australia, is extended over the Scenic Rim in December, including most of Main Range."
+    },
+    {
+      "year": "2002",
+      "text": "The Goomburra forests pass to the Queensland Parks and Wildlife Service under the South East Queensland Forests Agreement."
+    },
+    {
+      "year": "2006",
+      "text": "Goomburra is incorporated into Main Range National Park in June."
+    }
+  ],
+  "safety": [
+    "Cloud can close in over the peaks and the cliff-top tracks; take care near edges and supervise children.",
+    "Late-spring and summer thunderstorms bring lightning and sudden cold. Check the forecast and carry warm, waterproof clothing.",
+    "Treat or boil all tap and creek water before drinking it.",
+    "Leave your plans with someone reliable before longer walks, and plan to finish before dark."
+  ],
+  "regulations": [
+    "Domestic animals other than registered service animals are not permitted.",
+    "Generators are prohibited in camping areas. Never collect firewood from the park or roadside; bring your own or use a fuel stove.",
+    "Do not feed wildlife, and do not disturb frogs, their eggs or tadpoles; keep soap, sunscreen and other pollutants out of creeks.",
+    "No rubbish bins are provided; take your rubbish home."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-volcanoes",
+    "theme-temperate-rainforest",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Mount Mitchell 2.jpg",
+      "caption": "The twin peaks of Mount Mitchell",
+      "altText": "A forested mountain with two summits rising beyond a lake and eucalypt trees under a clear sky"
+    },
+    {
+      "file": "File:On the top of Mount Mitchel, among the Grass-trees (15204310290).jpg",
+      "caption": "Grass trees near the top of Mount Mitchell",
+      "altText": "A walker on a narrow path through tall grass trees under a cloudy sky"
+    },
+    {
+      "file": "File:Daggs Falls, Main Range National Park.JPG",
+      "caption": "Daggs Falls",
+      "altText": "A tall waterfall pouring down a dark rock face between forested slopes"
+    },
+    {
+      "file": "File:Canopy Goomburra Forest Reserve Main Range National Park.JPG",
+      "caption": "Rainforest canopy at Goomburra",
+      "altText": "Looking up a tree trunk hung with large ferns into a dense green canopy"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Main Range National Park — Queensland Parks and Wildlife Service",
+      "url": "https://parks.qld.gov.au/parks/main-range"
+    },
+    {
+      "title": "About Main Range — QPWS",
+      "url": "https://parks.qld.gov.au/parks/main-range/about"
+    },
+    {
+      "title": "Nature, culture and history — Main Range National Park, QPWS",
+      "url": "https://parks.qld.gov.au/parks/main-range/about/culture"
+    },
+    {
+      "title": "Visiting Main Range safely — QPWS",
+      "url": "https://parks.qld.gov.au/parks/main-range/visiting-safely"
+    },
+    {
+      "title": "Camping in Main Range — QPWS",
+      "url": "https://parks.qld.gov.au/parks/main-range/camping"
+    },
+    {
+      "title": "Main Range journeys (Mount Mitchell, Mount Cordeaux, Queen Mary Falls, Governors Chair, Sylvesters Lookout, Dalrymple circuit) — QPWS",
+      "url": "https://parks.qld.gov.au/parks/main-range/journeys"
+    },
+    {
+      "title": "Camping bookings and fees — QPWS",
+      "url": "https://parks.qld.gov.au/camping/bookings"
+    },
+    {
+      "title": "Permits and fees — QPWS",
+      "url": "https://parks.qld.gov.au/before-you-visit/permits-and-fees"
+    },
+    {
+      "title": "Important security update – Queensland National Parks Booking Service (current at 14 November 2026)",
+      "url": "https://parks.qld.gov.au/contactus/important-security-update"
+    },
+    {
+      "title": "Gondwana Rainforests of Australia World Heritage Area (Queensland Section) — Queensland Government",
+      "url": "https://environment.qld.gov.au/management/world-heritage-areas/current/gondwana-rainforests"
+    },
+    {
+      "title": "Gondwana Rainforests of Australia — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/368/"
+    },
+    {
+      "title": "Main Range National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Range_National_Park"
+    },
+    {
+      "title": "Queen Mary Falls — Wikipedia (coordinates)",
+      "url": "https://en.wikipedia.org/wiki/Queen_Mary_Falls"
+    },
+    {
+      "title": "OpenStreetMap (coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

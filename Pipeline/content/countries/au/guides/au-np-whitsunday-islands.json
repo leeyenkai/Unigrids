@@ -1,0 +1,273 @@
+{
+  "placeID": "au-np-whitsunday-islands",
+  "contentVersion": 1,
+  "summary": "Thirty-two hilly, forested islands off Airlie Beach, the drowned peaks of a coastal mountain range, inside the Great Barrier Reef World Heritage Area. Whitsunday Island holds Whitehaven Beach's pure white silica sand and the swirling tidal sands of Hill Inlet. Visitors arrive only by boat, to snorkel fringing reefs, climb to island lookouts, camp on quiet beaches or walk the three-day Ngaro Track.",
+  "facts": {
+    "areaHectares": 17043,
+    "bestSeasons": [
+      "winter",
+      "autumn",
+      "spring"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "The Whitsundays began with explosive volcanoes about 110 million years ago, whose welded ash and rock fragments still form smooth grey-green bedrock on Whitsunday and Hook islands, cut by darker dykes. Earth movements later raised a coastal mountain range. As ice ages came and went the range was joined to the mainland and cut off again; the last time, as the ice melted between about 19,000 and 6,000 years ago, the sea rose over the coastal plain and left only the peaks and ridges standing as islands.",
+    "Whitehaven Beach is unusual: its fine, white sand is almost pure silica, unlike the coarse shell and coral sand on most Whitsunday beaches. The rocks here contain little quartz, so geologists believe the sand drifted north along the coast millions of years ago and was trapped by headlands, then leached white by fresh water. On the islands grow hoop pines, grass trees, dry rainforest and the rare Whitsunday bottle tree, and the unadorned rock-wallaby lives on the rocky slopes. Turtles, whales, sharks and rays share the surrounding sea.",
+    "The islands and nearby coast are the traditional home of the Ngaro people, known as the Canoe People, who have lived here for at least 9,000 years. They built three-piece bark canoes for the open sea, made fish traps, worked a stone quarry on South Molle Island for axes and blades, and used grass trees for food, glue and spear shafts. In Nara Inlet on Hook Island a rock shelter holds Ngaro paintings, and middens show the cave was in use about 2,500 years ago. James Cook saw Ngaro people in an outrigger in 1770.",
+    "Cook sailed into the Whitsundays on 1 June 1770 and named the Whitsunday Passage after the feast of Whitsun on 3 June. From the 1860s timber camps cut hoop pine for Bowen, a trade that lasted until the 1930s, and grazing leases came and went. From the 1880s many Ngaro people were forcibly removed from their homeland. Tourism began in the late 1920s, and in the latter part of the 1930s the Queensland Government began proclaiming Whitsunday islands as national parks. QPWS rangers consult descendants of the Ngaro people on protecting places of cultural significance."
+  ],
+  "howItWorks": [
+    "Whitsunday Islands National Park protects 32 islands, including Whitsunday, Hook, Black and Langford islands; it is one of six national parks in the Whitsundays, all managed by the Queensland Parks and Wildlife Service and surrounded by the Great Barrier Reef World Heritage Area. There is no entry fee. You reach the park only by private or commercial boat from Airlie Beach or Shute Harbour, and some transfer companies drop off and collect campers — arrange your passage before booking a camp site. Commercial activities need a permit.",
+    "There are camping areas at 25 locations. Camping normally needs a permit booked in advance, with the booking number displayed at your site. In November 2026 the Queensland National Parks Booking Service was switched off after a data breach at its provider, Bookeasy; while the temporary arrangements last, QPWS says you may camp in open parks without a permit and existing bookings remain valid. The Ngaro Track, a 32-kilometre, three-day walk across Whitsunday Island from Whitehaven Beach to Hill Inlet, takes bookings only for the full hiking and camping experience, from April to October; day visitors cannot use it.",
+    "The Whitsunday islands are among the most pest-free islands in the world, and everyone in Queensland has a General Biosecurity Obligation. Before you go, check your boat, gear, clothes and shoes for soil, seeds, insects, ants, rats and toads. No pets are allowed on the national park islands or the intertidal land around them. Open fires and ash-producing stoves are banned; bring a gas or fuel stove. There is no fresh water on any uninhabited island: campers need at least 5 litres per person per day."
+  ],
+  "sights": [
+    {
+      "name": "Whitehaven Beach",
+      "note": "Fine white silica sand on Whitsunday Island's east coast, with a day-use area and camping. The Solway circuit climbs behind it to a lookout over Solway Passage.",
+      "location": [
+        -20.27541,
+        149.04174
+      ]
+    },
+    {
+      "name": "Hill Inlet lookout",
+      "note": "A 1.3-kilometre return walk from Tongue Bay to lookouts over the shifting patterns of white sand and blue water that the tides make in Hill Inlet.",
+      "location": [
+        -20.2459,
+        149.02047
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Whitsunday Peak",
+      "note": "A hard 5-kilometre return climb, about four hours, through rainforest gullies and windblown heath to the 437-metre summit, with views over the islands and mainland.",
+      "location": [
+        -20.26684,
+        148.9546
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Whitsunday Cairn",
+      "note": "A steep 4-kilometre return climb from Cairn Beach through dry rainforest, hoop pines and giant grass trees to a rocky outcrop below the cairn.",
+      "location": [
+        -20.16978,
+        148.96671
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Ngaro Cultural Site, Nara Inlet",
+      "note": "A short, steep 340-metre return track on Hook Island to a platform at the entrance of a cave with Ngaro rock art and middens.",
+      "location": [
+        -20.12899,
+        148.91623
+      ]
+    },
+    {
+      "name": "Solway circuit",
+      "note": "A 2.4-kilometre circuit behind Whitehaven Beach through grass trees, cycads and rock ferns to a rocky lookout over Solway Passage.",
+      "location": [
+        -20.29567,
+        149.05345
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Chance Bay",
+      "note": "A secluded camping area with walking tracks and snorkelling reefs, and the trailhead of the Ngaro Track.",
+      "location": [
+        -20.30258,
+        149.04177
+      ]
+    },
+    {
+      "name": "Cid Harbour",
+      "note": "A harbour on the western side of Whitsunday Island and a known site of shark attacks. Do not swim here.",
+      "location": [
+        -20.24511,
+        148.94836
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "By private or commercial boat from Airlie Beach or Shute Harbour, east of Proserpine",
+      "Tongue Point on Whitsunday Island, for the Hill Inlet lookout",
+      "Whitehaven Beach day-use area and Chance Bay, for the Solway circuit and the Ngaro Track"
+    ],
+    "reservations": "Camping permits are normally booked in advance; the Ngaro Track is bookable from April to October for the full three-day experience only. Arrange boat transfers first. In November 2026 the QPWS booking system was offline after a data breach and permits were temporarily not required — check the QPWS website before you go.",
+    "permits": [
+      "Camping permit for the island camping areas (temporarily waived while the QPWS booking system is offline)",
+      "Ngaro Track booking, April to October, guided or independent",
+      "Commercial activity permit for any commercial activity"
+    ],
+    "camping": [
+      "Camping at 25 locations, including Cairn Beach and Chance Bay on Whitsunday Island and Crayfish Beach on Hook Island",
+      "Ngaro Track camps: Bowarri yamba (Moon camp) above Silica Bay and Dhula yamba (Tree camp) at Torres Herald Bay"
+    ],
+    "lodging": [
+      "Accommodation in Airlie Beach and on the resort islands outside the national park"
+    ],
+    "seasonalClosures": [
+      "The Ngaro Track is open only from April to October and may close for extreme weather, cyclones or wildfire"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": "Conditions are pleasant all year. From April to September days are mild to warm, 21 to 26°C, with cool nights of 16 to 22°C, especially when the south-easterly winds blow. October to January is hotter and more humid, 26 to 31°C, with strong north-easterly sea breezes in the afternoons. January to April is the wet season, though showers can fall in any month, and cyclones are most likely from November to March. The water on the reef flats ranges from about 22°C in July to 27°C in January.",
+  "directions": "The park lies off the central Queensland coast, about 25 kilometres east of Airlie Beach; boats leave from Airlie Beach and Shute Harbour, east of Proserpine. If you take your own boat, the Whitsundays can be hard to navigate: allow for weather and strong tidal currents, read QPWS's trip-planning advice and carry an EPIRB, personal locator beacon or satellite phone. Otherwise, commercial tours and camper transfers run to the main beaches.",
+  "fees": [
+    {
+      "title": "Camping permit, Whitsunday Islands",
+      "cost": "$7.75 per person per night",
+      "amount": 7.75,
+      "currencyCode": "AUD",
+      "detail": "Queensland's standard rate from 1 July 2026, or $31.00 per family per night; children under five camp free. Temporarily not required while the booking system is offline after the November 2026 data breach — check before you go. Boat transfers and tours are paid to operators."
+    },
+    {
+      "title": "Park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "AUD",
+      "detail": "QPWS charges no entry fee."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "9,000+ years ago",
+      "text": "The Ngaro people are living in the Whitsundays."
+    },
+    {
+      "year": "1770",
+      "text": "James Cook enters the Whitsundays on 1 June and names the Whitsunday Passage on 3 June."
+    },
+    {
+      "year": "1860s",
+      "text": "Timber camps begin cutting hoop pine on the islands for buildings in Bowen."
+    },
+    {
+      "year": "1880s",
+      "text": "Many Ngaro people are forcibly removed from their islands."
+    },
+    {
+      "year": "Late 1920s",
+      "text": "Tourism begins, with day trips to settled islands."
+    },
+    {
+      "year": "Late 1930s",
+      "text": "The Queensland Government begins proclaiming Whitsunday islands as national parks."
+    },
+    {
+      "year": "1981",
+      "text": "The Great Barrier Reef, including the Whitsundays, is inscribed on the World Heritage List."
+    },
+    {
+      "year": "2026",
+      "text": "QPWS opens the three-day Ngaro Track across Whitsunday Island for bookings in 2026."
+    }
+  ],
+  "safety": [
+    "Marine stingers, including irukandji, can be in the water at any time. Wear a stinger suit to snorkel or swim; if stung, leave the water, douse with vinegar and get urgent medical help.",
+    "Sharks are present all year. Do not swim in Cid Harbour, a known site for shark attacks, and never throw food scraps or fish waste into the water.",
+    "Estuarine crocodiles live around the islands, especially in the summer wet season. Never swim or wade at dawn, dusk or night, and camp at least 50 metres from the water.",
+    "Never touch cone shells, blue-ringed octopus or stonefish. Never snorkel alone, and watch for tides and strong currents.",
+    "The islands are remote and medical help can be hours away. There is no mobile reception at Whitehaven Beach or Tongue Point; carry an EPIRB, PLB or satellite phone."
+  ],
+  "regulations": [
+    "No open fires or ash-producing stoves on the national park islands or the intertidal land around them.",
+    "No pets on the national park islands or adjacent intertidal land.",
+    "Everything is protected: do not touch, take or tamper with marine animals or plants. Penalties apply.",
+    "Clean your boat, gear and clothing of soil, seeds and pests before you land and between sites.",
+    "Do not clean fish or throw food scraps over the side at anchorages or where people swim."
+  ],
+  "themes": [
+    "theme-islands",
+    "theme-coastal",
+    "theme-coral-reef",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Whitehaven Beach - Northern End.jpg",
+      "caption": "Hill Inlet from the northern end of Whitehaven Beach",
+      "altText": "Turquoise water and white sand banks swirling through an inlet between forested islands under a blue sky"
+    },
+    {
+      "file": "File:Hill Inlet and Whitehaven Beach.jpg",
+      "caption": "Hill Inlet and Whitehaven Beach",
+      "altText": "Pale turquoise water and a long white beach seen past the dark foliage of island trees"
+    },
+    {
+      "file": "File:Whitsunday Craig and Hill Inlet.jpg",
+      "caption": "Whitsunday Craig above Hill Inlet",
+      "altText": "A steep forested peak rising above shallow aqua water and white sandbanks"
+    },
+    {
+      "file": "File:Whitehaven Beach, Whitsunday Islands National Park.jpg",
+      "caption": "Mangroves in the shallows at Whitehaven Beach",
+      "altText": "Small mangrove shrubs standing in clear shallow water off a bright white beach"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Whitsunday Islands National Park — Queensland Parks and Wildlife Service",
+      "url": "https://parks.qld.gov.au/parks/whitsunday-islands"
+    },
+    {
+      "title": "About Whitsunday Islands — QPWS",
+      "url": "https://parks.qld.gov.au/parks/whitsunday-islands/about"
+    },
+    {
+      "title": "Visiting Whitsunday Islands safely — QPWS",
+      "url": "https://parks.qld.gov.au/parks/whitsunday-islands/visiting-safely"
+    },
+    {
+      "title": "Camping in Whitsunday Islands — QPWS",
+      "url": "https://parks.qld.gov.au/parks/whitsunday-islands/camping"
+    },
+    {
+      "title": "Whitsunday Islands journeys (Hill Inlet, Whitsunday Peak, Whitsunday Cairn, Ngaro Cultural Site, Solway circuit, Ngaro Track) — QPWS",
+      "url": "https://parks.qld.gov.au/parks/whitsunday-islands/journeys"
+    },
+    {
+      "title": "Nature, culture and history — national parks of the Whitsundays, QPWS",
+      "url": "https://parks.qld.gov.au/parks/parks-whitsundays/about/culture"
+    },
+    {
+      "title": "Visiting the Whitsundays safely (climate and weather) — QPWS",
+      "url": "https://parks.qld.gov.au/parks/parks-whitsundays/visiting-safely"
+    },
+    {
+      "title": "Camping bookings and fees — QPWS",
+      "url": "https://parks.qld.gov.au/camping/bookings"
+    },
+    {
+      "title": "Important security update – Queensland National Parks Booking Service (current at 14 November 2026)",
+      "url": "https://parks.qld.gov.au/contactus/important-security-update"
+    },
+    {
+      "title": "Ngaro Track — QPWS",
+      "url": "https://parks.qld.gov.au/parks/whitsunday-islands/journeys/ngaro-track"
+    },
+    {
+      "title": "Great Barrier Reef — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/154/"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — area",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "OpenStreetMap (coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

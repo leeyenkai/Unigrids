@@ -1,0 +1,343 @@
+{
+  "placeID": "au-np-uluru-kata-tjuta",
+  "contentVersion": 1,
+  "summary": "The red heart of Australia: Uluṟu, a sandstone monolith 348 metres high and 9.4 kilometres around, and the 36 domes of Kata Tjuṯa, 50 kilometres away by road. The park is Aṉangu land, handed back to its Traditional Owners in 1985 and jointly managed with Parks Australia, and World Heritage-listed for its landscape and its living culture. Visitors walk the base of the rock, watch the colours change at sunrise and sunset, and listen to Tjukurpa stories.",
+  "facts": {
+    "establishedYear": 1950,
+    "areaHectares": 132566,
+    "bestSeasons": [
+      "winter",
+      "spring"
+    ],
+    "suggestedTime": "Two to three days"
+  },
+  "story": [
+    "Uluṟu and Kata Tjuṯa began about 550 million years ago as two great fans of debris washed down from the Petermann Ranges, then far higher than now: one mostly sand, the other water-smoothed rock. A sea covered them about 500 million years ago and its weight turned them to stone, the sand into the arkose sandstone of Uluṟu and the rock into the conglomerate of Kata Tjuṯa. As the earth's plates moved, Kata Tjuṯa tilted slightly and Uluṟu tilted 90 degrees; over the last 300 million years softer rock eroded away around them. Both are the tips of slabs that run up to six kilometres underground.",
+    "Uluṟu's red is rust: iron in the arkose oxidising on the surface, while the rock's original grey shows inside its caves. Kata Tjuṯa, Pitjantjatjara for 'many heads', is a plum-pudding of granite and basalt boulders cemented by sand and mud, its tallest dome 546 metres above the plain. The park looks dry but averages around 300 millimetres of rain a year; after storms waterfalls pour off Uluṟu and shield shrimps hatch in its rock pools. Parks Australia lists more than 400 plant species and 21 mammals, 73 reptiles, 178 birds and four desert frogs.",
+    "For Aṉangu, the Traditional Owners, Uluṟu is inseparable from Tjukurpa, the law, knowledge and religious philosophy laid down by the ancestral beings who made this landscape. Their actions are still visible on the rock, and the stories are passed from generation to generation. Archaeological evidence shows Aboriginal people in Central Australia for more than 30,000 years. Kata Tjuṯa is an important site for men's business; visitors may walk its tracks, but its stories are not shared.",
+    "Ernest Giles saw Kata Tjuṯa in 1872 and named its largest dome Mount Olga; William Gosse saw Uluṟu the next year and called it Ayers Rock. A road arrived in 1948, the Ayers Rock National Park was declared in 1950, and Kata Tjuṯa was added in 1958, cut out of an Aboriginal reserve. After decades of campaigning, the Governor-General returned the title deeds to Aṉangu on 26 October 1985, and Aṉangu leased the park back for 99 years. It was inscribed on the World Heritage List in 1987 for its natural values and again in 1994 as a cultural landscape. The climb closed for good on 26 October 2019."
+  ],
+  "howItWorks": [
+    "Uluṟu-Kata Tjuṯa is Aboriginal land. Aṉangu own the park and lease it to the Australian Government, and since handback in 1985 it has been jointly managed by Aṉangu and Parks Australia. A 12-member board of management, eight of them Aboriginal members nominated by the Traditional Owners, makes the major decisions, and Parks Australia carries them out day to day. A quarter of park pass revenue goes to Aṉangu as lease payments.",
+    "Every adult visitor needs a park pass, bought online in advance or at the entry station; under-18s go free. Scan the pass's QR code in the left-hand lane at the entry station. The pass covers this park only, not Kakadu or the Northern Territory Government's parks. The park is open every day of the year but closes at night, with hours that follow the sun, from 5 am to 9 pm in midsummer to 6.30 am to 7.30 pm in midwinter; everyone must leave by closing time. There is no camping in the park: stay at Yulara's Ayers Rock Resort or further out at Curtin Springs.",
+    "The park asks visitors to treat it as the living cultural landscape it is. Stay on marked tracks and do not climb onto rock formations or boulders; this keeps you out of sacred areas. Do not enter or photograph restricted areas, including sacred and ceremonial sites, burial grounds and homes, and ask before photographing Aṉangu. Some places carry their own requests: no photographs or video of the rock formations on the Valley of the Winds walk, and at Waḻpa Gorge keep both walls of the gorge in frame. Commercial images, including social-media content, need a permit, and this is a no-drone park. Some walks close early on hot days."
+  ],
+  "sights": [
+    {
+      "name": "Uluṟu",
+      "note": "The great sandstone monolith, 348 metres high. The 10.6-kilometre base walk circles it in about three and a half hours; start early, clockwise from the Mala carpark.",
+      "location": [
+        -25.3456,
+        131.037
+      ]
+    },
+    {
+      "name": "Kuniya walk and Muṯitjulu Waterhole",
+      "note": "A short walk to one of the few permanent waterholes around Uluṟu, where the story of Kuniya, the woma python woman, and Liru is set. Waterfalls run here after rain.",
+      "location": [
+        -25.351,
+        131.0325
+      ]
+    },
+    {
+      "name": "Mala walk and Kaṉtju Gorge",
+      "note": "Two kilometres return past the caves where the Mala people camped and rock art, to a sheer-walled gorge. A ranger-guided walk follows this path daily.",
+      "location": [
+        -25.3403,
+        131.0293
+      ]
+    },
+    {
+      "name": "Talinguṟu Nyakunytjaku",
+      "note": "The sunrise viewing area at Uluṟu, and a quieter alternative at sunset; the Minymaku (women's) and Watiku (men's) walks start here.",
+      "location": [
+        -25.3676,
+        131.0639
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Uluṟu car sunset viewing area",
+      "note": "Where the setting sun lights the rock directly and its colours change by the minute. Cars only; buses use a separate area.",
+      "location": [
+        -25.3354,
+        131.0045
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Kata Tjuṯa",
+      "note": "Thirty-six steep domes covering more than 20 square kilometres, rising 546 metres above the plain. A sacred men's site; walk the marked tracks only.",
+      "location": [
+        -25.2979,
+        130.7336
+      ]
+    },
+    {
+      "name": "Valley of the Winds",
+      "note": "A steep, rocky Grade 4 circuit of three to four hours among the domes, with Karu and Karingaṉa lookouts. Do not photograph the rock formations on this walk.",
+      "location": [
+        -25.2862,
+        130.7361
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Waḻpa Gorge",
+      "note": "A 2.6-kilometre return walk between two of Kata Tjuṯa's largest domes to a grove of spearwood; a refuge for plants and wallaroos.",
+      "location": [
+        -25.3004,
+        130.7309
+      ]
+    },
+    {
+      "name": "Kata Tjuṯa dune viewing area",
+      "note": "The sunrise viewing area for Kata Tjuṯa, one of the park's five dedicated places to watch the rocks change colour.",
+      "location": [
+        -25.351,
+        130.7869
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Uluṟu-Kata Tjuṯa Cultural Centre",
+      "note": "Mud-brick centre on the road to Uluṟu, with the Tjukurpa Tunnel, the Nintiringkupai information room, Aṉangu art galleries and the park's only café. Allow two hours.",
+      "location": [
+        -25.3598,
+        131.0174
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The park entry station on the road from Yulara, the resort town just outside the park",
+      "The Lasseter Highway from the Stuart Highway, 465 kilometres from Alice Springs by road",
+      "Ayers Rock (Connellan) Airport at Yulara, with flights from Sydney, Melbourne, Brisbane and Cairns"
+    ],
+    "reservations": "Buy a park pass online before you arrive, or at the entry station. Book accommodation and hire cars at Yulara well ahead: rental cars there are limited. Ranger-guided walks and Aṉangu-led tours run from the park; check times at the Cultural Centre.",
+    "permits": [
+      "A permit for commercial filming, photography, audio or artworks of Uluṟu or Kata Tjuṯa, including social-media content",
+      "A permit to fly a drone, approved only in exceptional circumstances",
+      "A Central Land Council permit to travel on Aboriginal land outside the park, including the Tjukaruru Road to Docker River"
+    ],
+    "camping": [
+      "No camping inside the park",
+      "Ayers Rock Campground at Yulara, and camping at Curtin Springs cattle station further east"
+    ],
+    "lodging": [
+      "Ayers Rock Resort at Yulara, including Sails in the Desert, Desert Gardens Hotel, the Outback Hotel and Lodge, the Lost Camel Hotel and Emu Walk Apartments",
+      "Longitude 131°, a luxury lodge"
+    ],
+    "seasonalClosures": [
+      "The Valley of the Winds full circuit closes beyond Karu lookout from 11 am on days of 36°C or more",
+      "The Lungkaṯa walk closes from 2 pm, and the Ininti walk from 11 am, on days of 40°C or more — check the access report before you go"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "Central Australia's climate swings hard between seasons. The best time to visit is May to September, when days usually reach 20–30°C and there is very little rain, though nights can be very cold; the July average minimum at Yulara is 4.4°C, and winter nights can drop to −7°C. August and September bring wildflowers. From October to March days regularly pass 35°C, and January averages 38.4°C, with highs up to 47°C; summer also brings storms that set Uluṟu's waterfalls flowing, and swarms of flies, so a head net helps. Average rainfall is about 300 millimetres a year, highest from November to March. In summer do all walking before 11 am.",
+  "directions": "Most visitors fly to Ayers Rock Airport (Connellan, AYQ) at Yulara, which has direct flights from Sydney (about three hours), Melbourne, Brisbane and Cairns; Virgin Australia, Qantas and Jetstar fly there. By road Uluṟu is 465 kilometres from Alice Springs, about five and a half hours, by the Stuart and Lasseter highways; the Red Centre Way links the park with Watarrka (Kings Canyon) and Tjoritja (West MacDonnell Ranges). Hire cars are available at the airport, Yulara and Alice Springs, but are limited at Yulara. Inside the park, Kata Tjuṯa is 50 kilometres by road from Uluṟu, and bicycles can be hired at the Cultural Centre to ride around the base of the rock.",
+  "fees": [
+    {
+      "title": "Park pass, adult (18 and over)",
+      "cost": "$38",
+      "amount": 38,
+      "currencyCode": "AUD",
+      "detail": "Valid three days. Children and teenagers under 18 enter free. As listed by Parks Australia in November 2026; check before you go."
+    },
+    {
+      "title": "Annual pass, adult",
+      "cost": "$50",
+      "amount": 50,
+      "currencyCode": "AUD",
+      "detail": "Valid for a year. As listed by Parks Australia in November 2026."
+    },
+    {
+      "title": "Annual pass, Northern Territory resident vehicle",
+      "cost": "$109",
+      "amount": 109,
+      "currencyCode": "AUD",
+      "detail": "Covers the driver and all passengers in a vehicle registered in the Northern Territory; tour and hire vehicles excluded. As listed by Parks Australia in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "30,000 years ago",
+      "text": "Archaeological evidence shows Aboriginal people living in Central Australia, as Aṉangu have ever since."
+    },
+    {
+      "year": "1872",
+      "text": "Ernest Giles sights Kata Tjuṯa and names its largest dome Mount Olga."
+    },
+    {
+      "year": "1873",
+      "text": "William Gosse becomes the first non-Aboriginal person to see Uluṟu and names it Ayers Rock."
+    },
+    {
+      "year": "1950",
+      "text": "Ayers Rock National Park is declared; Kata Tjuṯa is added in 1958 to form Ayers Rock–Mount Olga National Park."
+    },
+    {
+      "year": "1964",
+      "text": "The first section of the climb chain is installed on Uluṟu."
+    },
+    {
+      "year": "1985",
+      "text": "On 26 October the Governor-General hands the title deeds back to Aṉangu at Muṯitjulu; a jointly run board of management follows in December."
+    },
+    {
+      "year": "1987",
+      "text": "The park is inscribed on the World Heritage List for its natural values."
+    },
+    {
+      "year": "1993",
+      "text": "The park is renamed Uluṟu-Kata Tjuṯa National Park, and the rock becomes the first feature in the Northern Territory with a dual name."
+    },
+    {
+      "year": "1994",
+      "text": "UNESCO recognises the park as a cultural landscape."
+    },
+    {
+      "year": "1995",
+      "text": "The Cultural Centre opens, ten years after handback."
+    },
+    {
+      "year": "2019",
+      "text": "The Uluṟu climb closes permanently on 26 October, the 34th anniversary of handback, after a unanimous board decision in 2017."
+    }
+  ],
+  "safety": [
+    "Temperatures regularly pass 30°C and can exceed 40°C in summer. Walk only in the cooler hours, avoid 2.30 to 6.30 pm, and in summer do not walk after 11 am. Carry and drink at least one litre of water per person per hour.",
+    "Learn the signs of heatstroke and hyponatremia before you walk, eat regularly, walk with another person and never use a track that has been closed for heat.",
+    "King brown snakes (liru) and dingoes live in the park. Keep your distance from snakes, and never touch or feed dingoes.",
+    "In an emergency call 000, or 112 from a mobile. Emergency radios stand on most walks."
+  ],
+  "regulations": [
+    "Climbing Uluṟu is prohibited and is a breach of the EPBC Act; penalties are issued to anyone who attempts it.",
+    "Stay on marked tracks and paths and do not climb onto rock formations or boulders.",
+    "No drones: this is a no-drone park, and permits are approved only in exceptional circumstances.",
+    "Commercial filming, photography and social-media content need a permit; do not photograph sacred sites, restricted areas or the rock formations on the Valley of the Winds walk.",
+    "The park closes at night; leave by the posted closing time."
+  ],
+  "themes": [
+    "theme-desert",
+    "theme-sacred-places",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Petermann Ranges (AU), Uluru-Kata Tjuta National Park, Uluru -- 2019 -- 3688.jpg",
+      "caption": "Uluṟu at sunset",
+      "altText": "A massive red monolith rising from flat desert scrub in evening light"
+    },
+    {
+      "file": "File:Kata-Tjuta at sunset.jpg",
+      "caption": "Kata Tjuṯa at sunset",
+      "altText": "A cluster of large rounded rock domes above the desert"
+    },
+    {
+      "file": "File:Petermann Ranges (AU), Uluru-Kata Tjuta National Park, Uluru, Mutitjulu Waterhole -- 2019 -- 3648.jpg",
+      "caption": "Muṯitjulu Waterhole on the Kuniya walk",
+      "altText": "A small pool at the foot of a steep red rock face"
+    },
+    {
+      "file": "File:Uluru, helicopter view, cropped.jpg",
+      "caption": "Uluṟu from the air",
+      "altText": "A long red rock seen from above, surrounded by flat green-grey desert"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Uluṟu-Kata Tjuṯa National Park — Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/"
+    },
+    {
+      "title": "Joint management — Uluṟu-Kata Tjuṯa National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/about/joint-management/"
+    },
+    {
+      "title": "Opening hours — Uluṟu-Kata Tjuṯa National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/about/opening-hours/"
+    },
+    {
+      "title": "Ayers Rock or Uluṟu? — Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/about/frequently-asked-questions/ayers-rock-or-uluru/"
+    },
+    {
+      "title": "Amazing facts — Uluṟu-Kata Tjuṯa National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/discover/highlights/amazing-facts/"
+    },
+    {
+      "title": "Uluṟu and Kata Tjuṯa highlights — Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/discover/highlights/kata-tjuta/"
+    },
+    {
+      "title": "World heritage — Uluṟu-Kata Tjuṯa National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/discover/highlights/world-heritage/"
+    },
+    {
+      "title": "History of Uluṟu-Kata Tjuṯa National Park — Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/discover/history/"
+    },
+    {
+      "title": "Uluṟu climb closure — Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/discover/history/uluru-climb-closure/"
+    },
+    {
+      "title": "Respecting Culture — Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/discover/culture/respecting-culture/"
+    },
+    {
+      "title": "Geology — Uluṟu-Kata Tjuṯa National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/discover/nature/geology/"
+    },
+    {
+      "title": "Buy your pass — Uluṟu-Kata Tjuṯa National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/plan/buy-your-pass/"
+    },
+    {
+      "title": "Permits — Uluṟu-Kata Tjuṯa National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/plan/buy-your-pass/permits/"
+    },
+    {
+      "title": "Getting here — Uluṟu-Kata Tjuṯa National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/plan/getting-here/"
+    },
+    {
+      "title": "Staying safe — Uluṟu-Kata Tjuṯa National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/plan/plan-your-trip/staying-safe/"
+    },
+    {
+      "title": "When to come — Uluṟu-Kata Tjuṯa National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/plan/when-to-come/"
+    },
+    {
+      "title": "Camping — Uluṟu-Kata Tjuṯa National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/stay/camping/"
+    },
+    {
+      "title": "Walks, Valley of the Winds, Waḻpa Gorge, Kuniya, Mala and base walks — Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/things-do/activities/walks/"
+    },
+    {
+      "title": "Sunrise & sunset — Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/things-do/activities/sunrise-sunset/"
+    },
+    {
+      "title": "Cultural Centre — Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/things-do/cultural-centre/"
+    },
+    {
+      "title": "Uluṟu-Kata Tjuṯa access report (29 October 2026) — Parks Australia",
+      "url": "https://parksaustralia.gov.au/uluru/news/access-and-alerts/"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — DCCEEW (area)",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

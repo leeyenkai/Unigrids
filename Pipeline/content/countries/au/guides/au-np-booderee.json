@@ -1,0 +1,358 @@
+{
+  "placeID": "au-np-booderee",
+  "contentVersion": 1,
+  "summary": "Aboriginal land on the southern shore of Jervis Bay, three hours from Sydney or Canberra: white-sand beaches, sea cliffs, heath and forest on the Bherwerre Peninsula, with Australia's only Aboriginal-owned botanic gardens. Booderee, 'bay of plenty' in the Dhurga language, belongs to the Wreck Bay Aboriginal Community and is jointly managed with Parks Australia. People come to camp, swim, snorkel, walk the headlands and watch whales from the Cape St George lighthouse ruins.",
+  "facts": {
+    "establishedYear": 1992,
+    "areaHectares": 6379,
+    "bestSeasons": [
+      "summer",
+      "spring"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "Booderee covers about 85 per cent of the Bherwerre Peninsula, which closes off the south side of Jervis Bay. Beneath it lie Permian sandstones, siltstones and conglomerates laid down in the sea, the southernmost edge of the Sydney Basin's sedimentary rocks. Dunes and sandy soil cap the peninsula, held in place only by their plants; where streams were blocked by sand, Lake Windemere and Lake McKenzie formed. Bowen Island, of the same sandstone, slopes from cliffs on its ocean side down to rock platforms facing the bay, and seagrass meadows cover the shallow, sandy floor of Jervis Bay.",
+    "The park is a meeting of land and sea life. Parks Australia counts over 200 bird species, more than 30 native mammals including ten kinds of bat, 37 reptiles, 17 amphibians and at least 180 fish. Swamp wallabies and kangaroos are common around the campgrounds, a little penguin colony breeds on Bowen Island, fur seals and bottlenose dolphins work the bay, and humpback and southern right whales pass the headlands each winter and spring.",
+    "This is the Country of the Wreck Bay people, who have cared for the land and waters of Jervis Bay for many generations. More than 100 Aboriginal sites have been recorded on the Bherwerre Peninsula, some probably dating to the time the sea settled at its present level about 6,000 years ago: mostly shell middens, but also rock shelters, burials, ceremonial grounds, stone-flaking sites and axe-grinding grooves. Seafood was always at the centre of life here, and net fishing still is.",
+    "The peninsula was a nature reserve from 1971 and Jervis Bay National Park from 1992. In 1995 the land was handed back to the Wreck Bay Aboriginal Community Council, which chose the name Booderee for the park and its botanic gardens and leases them to the Commonwealth to be jointly managed. In June 2026 the lease was varied, setting out a path for the Council to take on sole management of Booderee by 31 May 2028."
+  ],
+  "howItWorks": [
+    "Booderee lies in the Jervis Bay Territory, not New South Wales, and is one of the Commonwealth's national parks. It is Aboriginal land owned by the Wreck Bay Aboriginal Community Council, leased to the Commonwealth and jointly managed by the Council's Traditional Owners and Parks Australia through a joint board of management. The Council receives annual rent and a share of park revenue, raised from 25 to 50 per cent by a lease variation in 2026, which also sets out how the two parties will work towards the Council taking on sole management by 31 May 2028.",
+    "Visitors arriving by vehicle need a park pass: a day pass, a concession day pass, or a one- or two-year pass, all priced per vehicle. Walkers and cyclists enter free. Boat visitors who use the park's facilities must buy a pass online. In late 2026 the entry station was temporarily closed, so buy your pass online, at the Visitor Centre or at the visitor centre's mobile van at the Jervis Bay Supermarket, and display it on the dashboard; rangers check. Entry to Booderee Botanic Gardens is included.",
+    "Camping is at Green Patch, Bristol Point and Cave Beach, booked online, with the park pass included in the camping fee. Sites are allocated automatically on a first come, first served basis, with equipment limits per site; summer school holiday sites are allocated by ballot, and warm-season weekends at Green Patch book out a month ahead. The waters off the park are Booderee National Park Waters and the Jervis Bay Marine Park, with zones that limit fishing: a NSW fishing licence is needed, rock-platform life is protected, and spearfishing and jet skis are banned."
+  ],
+  "sights": [
+    {
+      "name": "Murrays Beach",
+      "note": "A sheltered beach facing Bowen Island, with a boat ramp and wharf nearby. The Munyunga waraga dhugan loop walk, 5.4 kilometres, starts from the car park.",
+      "location": [
+        -35.1252,
+        150.7579
+      ]
+    },
+    {
+      "name": "Governors Head",
+      "note": "Lookout reached on a 1.1-kilometre walk from the Murrays Beach car park, over Bowen Island and the entrance to Jervis Bay; watch for seabirds, seals, dolphins and whales.",
+      "location": [
+        -35.1247,
+        150.7642
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Bowen Island",
+      "note": "Sandstone island at the mouth of Jervis Bay, home of the park's breeding little penguin colony. Seen from Murrays Beach and Governors Head; the rookery is not open to the public.",
+      "location": [
+        -35.1174,
+        150.7685
+      ]
+    },
+    {
+      "name": "Cape St George Lighthouse",
+      "note": "Ruins of the lighthouse built of local sandstone in 1860, with a grim history of deaths and nearby wrecks. The park's best whale-watching point.",
+      "location": [
+        -35.152,
+        150.7614
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Green Patch",
+      "note": "Beach, lagoon and the park's most popular campground among trees, with kangaroos about. A two-kilometre loop runs along the rock platform to Bristol Point.",
+      "location": [
+        -35.1374,
+        150.724
+      ]
+    },
+    {
+      "name": "Hole in the Wall",
+      "note": "A rock formation on the bay shore, 1.1 kilometres from the Murrays Beach car park on the low-tide walk towards Green Patch.",
+      "location": [
+        -35.1329,
+        150.7481
+      ]
+    },
+    {
+      "name": "Steamers Beach",
+      "note": "An isolated beach between high cliffs and steep dunes, reached by a 2.3-kilometre track ending in steep stairs. Not for swimming: strong currents and large sharks.",
+      "location": [
+        -35.1727,
+        150.729
+      ]
+    },
+    {
+      "name": "St Georges Head",
+      "note": "Ocean cliffs on the full-day headland circuit from the Steamers Beach car park, an 11.4-kilometre loop past Brooks Lookout, Kittys Beach and Whiting Beach.",
+      "location": [
+        -35.1995,
+        150.6952
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Cave Beach",
+      "note": "A surf beach backed by a grassy walk-in campground among coastal tea trees, with Bherwherre Beach and the waterbirds of Ryans Swamp nearby.",
+      "location": [
+        -35.1636,
+        150.6733
+      ]
+    },
+    {
+      "name": "Booderee Botanic Gardens",
+      "note": "Australia's only Aboriginal-owned botanic gardens, focused on Koori uses of plants for food, medicine and tools, with a 3.7-kilometre loop through rainforest and heath.",
+      "location": [
+        -35.1458,
+        150.6757
+      ]
+    },
+    {
+      "name": "Booderee Visitor Centre",
+      "note": "Near the park entrance on Village Road, Jervis Bay: park passes, camping tags, maps and advice.",
+      "location": [
+        -35.1213,
+        150.6822
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "By road from Vincentia and Huskisson to the park entry; the Visitor Centre is on Village Road, Jervis Bay",
+      "By boat into Booderee National Park Waters, with a park pass bought online if you use the park's facilities",
+      "On foot or by bicycle, free of charge"
+    ],
+    "reservations": "Book campsites online as early as you can; summer school holiday sites are allocated by ballot, and weekend sites at Green Patch book out about a month ahead from October to May. Buy a vehicle pass online before you arrive while the entry station is closed — check with Parks Australia before you go.",
+    "permits": [
+      "Permits for commercial filming and photography, tours, events and research",
+      "A NSW recreational fishing licence for fishing in park waters"
+    ],
+    "camping": [
+      "Green Patch: drive-in and walk-in sites among trees by the beach, with hot showers",
+      "Bristol Point: suited to larger groups",
+      "Cave Beach: walk-in tent sites 300 metres from the car park, cold showers; pick up a tent tag at the Visitor Centre",
+      "Fires only in the fire pits provided; all sites are unpowered"
+    ],
+    "lodging": [
+      "None in the park; accommodation in nearby Vincentia, Huskisson and Sussex Inlet"
+    ],
+    "seasonalClosures": [
+      "The park entry station was temporarily closed from October 2026; buy passes online or at the Visitor Centre — check before you go",
+      "The park closes during severe weather and fire danger; check Parks Australia's news before you go"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "Booderee has a mild coastal climate and is open all year. Average temperatures run from about 9–15°C in July to 17–24°C in January, so pack for cool and warm days alike, and for rain. Summer is the busy season, when the campgrounds fill well before Christmas. Humpback and southern right whales pass on their northern migration from early June into the first week of July, and on the southern migration in spring, when they sometimes come close in to the sheltered bays with their calves. The beaches are good for surfing all year.",
+  "directions": "Booderee is on the south coast of New South Wales between Nowra and Ulladulla, about three hours' drive from Sydney or Canberra. By public transport, take the train from Sydney to Bomaderry (Nowra) and then a bus to Huskisson or Vincentia; shuttle services also run from Sydney and from Sydney Airport to Jervis Bay, and a taxi service operates around St Georges Basin. Private tours visit the park, but a car or bicycle is the easiest way to move between its beaches, walks and campgrounds. Check Parks Australia's news page before you travel for closures after storms or fire.",
+  "fees": [
+    {
+      "title": "Park pass, one day, per vehicle",
+      "cost": "$20",
+      "amount": 20,
+      "currencyCode": "AUD",
+      "detail": "Covers a vehicle, including a motorcycle. Concession day pass $10. Walkers and cyclists free. Prices in force since 1 August 2024, as listed by Parks Australia in November 2026; check before you go."
+    },
+    {
+      "title": "Park pass, one year / two years, per vehicle",
+      "cost": "$80 / $110",
+      "amount": 80,
+      "currencyCode": "AUD",
+      "detail": "For regular visitors. As listed by Parks Australia in November 2026."
+    },
+    {
+      "title": "Campsite, Green Patch and Bristol Point, per night",
+      "cost": "$35–$100 (standard) / $70–$180 (large)",
+      "amount": 35,
+      "currencyCode": "AUD",
+      "detail": "Standard sites hold up to five people, large sites up to ten. Off-peak $35/$70, shoulder $70/$140, peak $100/$180. Park entry included. As listed by Parks Australia in November 2026."
+    },
+    {
+      "title": "Campsite, Cave Beach, per night",
+      "cost": "$30–$80",
+      "amount": 30,
+      "currencyCode": "AUD",
+      "detail": "Off-peak $30, shoulder $55, peak $80. Peak is NSW spring, summer and autumn school holidays, Easter, and Friday and Saturday nights from October to April. As listed by Parks Australia in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "c. 6,000 years ago",
+      "text": "As the sea settles at its present level, Aboriginal people leave the earliest of more than 100 recorded sites on the Bherwerre Peninsula."
+    },
+    {
+      "year": "1860",
+      "text": "Cape St George Lighthouse is built of sandstone quarried near today's Jervis Bay village."
+    },
+    {
+      "year": "1915",
+      "text": "A quarry in what is now the park supplies stone for the HMAS Creswell breakwall."
+    },
+    {
+      "year": "1951",
+      "text": "Work begins on a frost-free annex of the Australian National Botanic Gardens, today's Booderee Botanic Gardens."
+    },
+    {
+      "year": "1971",
+      "text": "The area is declared a nature reserve."
+    },
+    {
+      "year": "1992",
+      "text": "Jervis Bay National Park is declared."
+    },
+    {
+      "year": "1995",
+      "text": "Title to the park and gardens is handed back to the Wreck Bay Aboriginal Community Council in December, and leased back to the Director of National Parks; the name Booderee follows in 1997."
+    },
+    {
+      "year": "2000",
+      "text": "Booderee Botanic Gardens become independent of the Australian National Botanic Gardens."
+    },
+    {
+      "year": "2026",
+      "text": "A lease variation sets out a transition to sole management of Booderee by the Wreck Bay Aboriginal Community Council by 31 May 2028."
+    }
+  ],
+  "safety": [
+    "No beach in the park is patrolled by lifeguards. Swim with care, supervise children at all times, and do not swim at Steamers Beach, where currents are strong and large sharks are about.",
+    "Keep back from cliff edges and stay on marked tracks. On rock platforms watch the waves and never turn your back to the ocean.",
+    "Snakes, spiders and ticks live in the park. Carry water and a first aid kit on walks, and protect yourself from the sun.",
+    "H5 bird flu has been detected in the park. Do not touch sick or dead birds or animals; report several together to a ranger or the Emergency Animal Disease Hotline, 1800 675 888.",
+    "Drive slowly and watch for kangaroos, lizards and snakes on the roads, especially at dawn and dusk. In an emergency call 000; the Visitor Centre is on 1800 357 823."
+  ],
+  "regulations": [
+    "A valid vehicle park pass, displayed on the dashboard, unless you arrive on foot or by bicycle or hold a camping booking.",
+    "Camp only in marked, booked sites; camping outside them or without a booking can bring a fine.",
+    "No spear guns, hand spears or firearms in the park; spearfishing is prohibited.",
+    "No jet skis in Booderee National Park waters, with penalties of up to $10,050.",
+    "All plants and animals on the rock platforms, including shellfish, seaweed, octopus and crabs, are protected; bring your own bait.",
+    "No dogs: they are not permitted in Commonwealth national parks under the EPBC Act, except guide, hearing and assistance dogs."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Murrays Beach, Booderee National Park.jpg",
+      "caption": "Murrays Beach",
+      "altText": "A sheltered white-sand beach with clear water and bushland behind"
+    },
+    {
+      "file": "File:Bowen Island from Murrays Beach.jpg",
+      "caption": "Bowen Island from Murrays Beach",
+      "altText": "A low wooded island across a stretch of calm water"
+    },
+    {
+      "file": "File:Cape St George Lighthouse ruin.JPG",
+      "caption": "The ruins of Cape St George Lighthouse",
+      "altText": "Stone ruins of a nineteenth-century lighthouse on a grassy headland"
+    },
+    {
+      "file": "File:Caves Beach, Jervis Bay.jpg",
+      "caption": "Cave Beach in Booderee National Park",
+      "altText": "A sandy ocean beach backed by low coastal vegetation"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Booderee National Park — Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/"
+    },
+    {
+      "title": "About us — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/about/about-us/"
+    },
+    {
+      "title": "Amazing facts — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/discover/amazing-facts/"
+    },
+    {
+      "title": "Our Culture and Our history — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/discover/culture/our-history/"
+    },
+    {
+      "title": "Geology — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/discover/nature/geology/"
+    },
+    {
+      "title": "Animals — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/discover/nature/animals/"
+    },
+    {
+      "title": "Park passes & permits — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/plan/park-passes-permits/"
+    },
+    {
+      "title": "Park pass and camping fees: frequently asked questions — Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/plan/park-passes-permits/frequently-asked-questions/"
+    },
+    {
+      "title": "Booderee entry station temporary closure (9 October 2026) — Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/news/booderee-entry-station-temporary-closure/"
+    },
+    {
+      "title": "Camping at Booderee, Green Patch and Cave Beach — Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/camping/camping-booderee/"
+    },
+    {
+      "title": "Staying safe — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/plan/plan-your-trip/staying-safe/"
+    },
+    {
+      "title": "When to come — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/plan/when-to-come/"
+    },
+    {
+      "title": "Getting here — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/plan/getting-here/"
+    },
+    {
+      "title": "Beaches — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/things-do/visit/beaches/"
+    },
+    {
+      "title": "Botanic Gardens — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/things-do/visit/botanic-gardens/"
+    },
+    {
+      "title": "Cape St George lighthouse — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/things-do/visit/cape-st-george-lighthouse/"
+    },
+    {
+      "title": "Murrays Beach, Green Patch and Steamers Beach walks — Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/things-do/walks/"
+    },
+    {
+      "title": "Whale watching — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/things-do/activities/whale-watching/"
+    },
+    {
+      "title": "Fishing, boating & watercraft — Booderee National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/booderee/things-do/activities/fishing-boating-watercraft/"
+    },
+    {
+      "title": "Lease variation strengthens Wreck Bay Aboriginal Community Council's role in National Park management (2 June 2026) — Minister for Indigenous Australians",
+      "url": "https://ministers.pmc.gov.au/mccarthy/lease-variation-strengthens-wreck-bay-aboriginal-community-councils-role-national-park-management"
+    },
+    {
+      "title": "Frequently asked questions (dogs in Commonwealth national parks) — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/about/frequently-asked-questions/"
+    },
+    {
+      "title": "Booderee National Park Management Plan 2015–2025 (F2015L01818) — Director of National Parks (area, history)",
+      "url": "https://www.legislation.gov.au/F2015L01818/asmade/text"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — DCCEEW",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "Booderee National Park and Botanic Gardens — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Booderee_National_Park_and_Botanic_Gardens"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

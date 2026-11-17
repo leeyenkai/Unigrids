@@ -1,0 +1,314 @@
+{
+  "placeID": "au-np-kakadu",
+  "contentVersion": 1,
+  "summary": "One of Australia's largest national parks, almost 20,000 square kilometres of floodplain, billabong, woodland and sandstone escarpment east of Darwin. Kakadu is Aboriginal land, home to Bininj/Mungguy for more than 65,000 years, and is World Heritage-listed for both its nature and its culture. People come for the rock art at Ubirr and Burrungkuy (Nourlangie), the crocodiles and birds of Yellow Water, and the escarpment waterfalls.",
+  "facts": {
+    "establishedYear": 1979,
+    "bestSeasons": [
+      "winter",
+      "spring"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "Kakadu runs from the coast and estuaries in the north, through floodplains, billabongs and lowlands, to the rocky ridges and Stone Country in the south, where the Arnhem Land escarpment rises in sheer cliffs. The escarpment and Stone Country span more than two billion years of geological history; the rivers and floodplains are younger and restless, reshaped by changing sea levels and by the floods of every tropical summer, when up to 1.5 metres of rain can cover about a third of the park in water.",
+    "The variety of land carries a variety of life. Parks Australia counts around 2,000 kinds of plants and around 280 bird species, about a third of Australia's total, along with a quarter of the country's freshwater and estuarine fish. More than 10,000 crocodiles live in the park. Termite mounds in the south grow beyond six metres, and by the end of the wet the speargrass beside the roads stands over three metres tall, until the 'knock 'em down' storms of Bangkerreng flatten it.",
+    "Aboriginal people have lived here for more than 65,000 years. They are Bininj in the north of the park and Mungguy in the south, in about 19 clan groups; twelve languages were once spoken in the Kakadu area, and Kundjeyhmi, Kunwinjku and Jawoyn are still in daily use. Their rock art, up to 20,000 years old at its oldest, makes up one of the longest historical records of any people. It shows creation ancestors such as the Rainbow Serpent, the animals people ate, a thylacine, and, in the newest paintings, the tall ships and buffalo hunters of first contact.",
+    "The park was declared in three stages between 1979 and 1991, at a time when Australians were looking both to conservation and to Aboriginal land rights; its name recognises Gagudju, a language once spoken here. Since the late 1970s the Traditional Owners have leased their land to the Director of National Parks to be managed jointly with Parks Australia. Kakadu was first inscribed on the World Heritage List in 1981. In 2013 Koongarra (Kunkarra), beneath Burrungkuy, was added to the park after its key Traditional Owner, Jeffrey Lee, fought for more than a decade to keep it from being mined."
+  ],
+  "howItWorks": [
+    "Kakadu is one of six Commonwealth national parks run by Parks Australia, and it is Aboriginal land: more than half the park is owned by Aboriginal people, who lease it to the Director of National Parks. Bininj/Mungguy and Parks Australia manage it together, from the board's decisions to weed and feral-animal work on the ground. Every visitor needs a Kakadu park pass, valid for seven days and best bought online; it covers Kakadu only, not Uluṟu-Kata Tjuṯa or the national parks run by the Northern Territory Government. Northern Territory residents enter free. Park pass money goes back into the park, and 39 per cent of it is paid to the Traditional Owners as lease payments.",
+    "Prices are seasonal: higher in the dry season, 15 May to 31 October, and lower in the tropical summer, 1 November to 14 May. In 2026 Parks Australia charged wet-season rates for passes to visit between 1 July and 31 October as well. Managed campgrounds are first come, first served, with a campground manager collecting fees on site; bush campgrounds are unmanaged, some free and some with a small fee left in a deposit box; the commercial campgrounds at the resorts are booked with them directly. A permit from the park is needed to bushwalk off track or overnight, to camp outside designated areas, or to visit Jarrangbarnmi (Koolpin Gorge) and Bilkbilkmi (Graveside Gorge).",
+    "The park is open all year, but the wet season decides what you can reach. Flooding closes roads, campgrounds and walks through the tropical summer, and they reopen one by one under the Park Opening Plan; Burrungkuy (Nourlangie), Ubirr and Yellow Water stay open all year. Parks Australia publishes a daily Kakadu Access Report, and it is the place to check before every trip. Saltwater crocodiles live in most of the park's waters, swimming is risky almost everywhere, and Parks Australia asks visitors to be Crocwise: keep away from the water's edge, camp at least 50 metres from it, and obey every sign. Dogs and drones are not allowed."
+  ],
+  "sights": [
+    {
+      "name": "Ubirr",
+      "note": "Rock art galleries of x-ray fish and wallabies, contact paintings and a thylacine, then a climb to a lookout over the Nadab floodplain, famous at sunset.",
+      "location": [
+        -12.4095,
+        132.9593
+      ]
+    },
+    {
+      "name": "Burrungkuy (Nourlangie)",
+      "note": "World Heritage rock art in shaded rock shelters, with ranger-guided walks and talks in the dry season. Open all year.",
+      "location": [
+        -12.8617,
+        132.8125
+      ]
+    },
+    {
+      "name": "Nawurlandja lookout",
+      "note": "A short climb to views of the Arnhem Land escarpment, Burrungkuy (Nourlangie) rock and Anbangbang Billabong.",
+      "location": [
+        -12.8605,
+        132.7928
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Yellow Water (Ngurrungurrudjba)",
+      "note": "Wetlands on the South Alligator River floodplain, seen from a boardwalk or on cruises that run all year among saltwater crocodiles and waterbirds.",
+      "location": [
+        -12.8943,
+        132.5184
+      ]
+    },
+    {
+      "name": "Cahills Crossing",
+      "note": "A causeway into Arnhem Land where crocodiles gather to feed as the tide pushes over it, best from July to October. Watch from the viewing platforms; never walk on the crossing.",
+      "location": [
+        -12.4266,
+        132.9655
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Gunlom Falls",
+      "note": "An 85-metre waterfall and plunge pool in the Mary River region, one of the park's most popular. It closes seasonally; in 2026 from 11 November.",
+      "location": [
+        -13.4314,
+        132.4177
+      ]
+    },
+    {
+      "name": "Jim Jim Falls",
+      "note": "Kakadu's biggest waterfall, 200 metres, reached by four-wheel drive and a boulder walk in the dry season. The Jim Jim and Twin Falls area is closed for all of 2026.",
+      "location": [
+        -13.2726,
+        132.8399
+      ]
+    },
+    {
+      "name": "Maguk",
+      "note": "A 20-metre waterfall and natural pool in a stone amphitheatre, reached through monsoon rainforest. Closed in November 2026 for crocodile management.",
+      "location": [
+        -13.3164,
+        132.4376
+      ]
+    },
+    {
+      "name": "Bowali Visitor Centre",
+      "note": "The park's main visitor centre, near Jabiru, with displays on landscapes and wildlife, trip advice and park passes.",
+      "location": [
+        -12.675,
+        132.8172
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Warradjan Aboriginal Cultural Centre",
+      "note": "Developed by Bininj/Mungguy near Cooinda: kinship, stories, tools and artworks, with artists and weavers often demonstrating.",
+      "location": [
+        -12.8984,
+        132.5263
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The Arnhem Highway from Darwin, about three hours' drive via the Stuart Highway",
+      "The Kakadu Highway from Katherine, about three hours' drive via the Stuart Highway",
+      "Jabiru and the Bowali Visitor Centre, the park's centre for information and supplies",
+      "Cooinda, beside Yellow Water, with fuel, lodge and cruises"
+    ],
+    "reservations": "Buy a Kakadu park pass online before you arrive, or at the Bowali Visitor Centre, Cooinda Lodge or outlets in Humpty Doo, Marrakai and Katherine. Managed and bush campgrounds cannot be booked; resort accommodation and cruises are booked with their operators, and the dry season is busy. Check the daily Kakadu Access Report before you go.",
+    "permits": [
+      "A park permit to bushwalk off track or overnight, or to camp outside designated campgrounds",
+      "A permit to visit Jarrangbarnmi (Koolpin Gorge) or Bilkbilkmi (Graveside Gorge); applications for 2027 open on 1 December 2026",
+      "Permits for commercial filming and photography, tours, events and research"
+    ],
+    "camping": [
+      "Managed campgrounds with toilets and showers, among them Merl near Ubirr, Djarradjin (Muirella Park) and the Mardukal campgrounds near Cooinda; first come, first served, with fees collected on site",
+      "Bush campgrounds with pit toilets and few facilities; some are free, others take a small fee in a deposit box",
+      "Camp at least 50 metres from the water's edge and two metres above the high-water mark"
+    ],
+    "lodging": [
+      "Cooinda Lodge beside Yellow Water, with motel rooms, tent sites and powered sites",
+      "Hotels and lodges listed by Parks Australia, among them the Kakadu Crocodile Hotel, Anbinik Kakadu Resort, Aurora Kakadu Lodge and Hawk Dreaming Wilderness Lodge"
+    ],
+    "seasonalClosures": [
+      "Flooding closes many roads, campgrounds and walks during the tropical summer, roughly November to April; Burrungkuy (Nourlangie), Ubirr and Yellow Water stay open — check the Kakadu Access Report before you go",
+      "The Jim Jim and Twin Falls area, including Karnamarr campground, is closed for all of 2026",
+      "Gunlom closes for the wet season; in 2026 from 11 November"
+    ],
+    "seasonalClosureMonths": [
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": "Kakadu is tropical and hot all year; the question is how wet. Northern Australians speak of a dry season from about April or May to October and a tropical summer from November to March, but Bininj/Mungguy recognise six seasons. Kunumeleng, mid-October to late December, builds heat and humidity until afternoon storms break. Kudjewk, December to March, is the monsoon: heavy rain, flooding and temperatures of 24–34°C. Bangkerreng in April brings clearing skies and the 'knock 'em down' storms. Yekke, May to mid-June, is cooler with morning mists. Wurrkeng, mid-June to mid-August, is the cold weather season, about 30°C by day and 17°C at night. Kurrung, mid-August to mid-October, is hot and dry, up to about 37°C. The dry season is the busiest; the tropical summer brings green country, full waterfalls best seen from the air, and fewer people.",
+  "directions": "Kakadu lies about 240 kilometres east of Darwin. From Darwin drive the Stuart Highway and then the Arnhem Highway, about three hours; from Katherine take the Stuart Highway and then the Kakadu Highway, also about three hours; from Alice Springs the long Red Centre Way leads north. There are no commercial flights to the park: fly to Darwin or Alice Springs and hire a two-wheel drive, four-wheel drive or motorhome, or join a bus or four-wheel-drive tour. Fuel is sold at Jabiru and Cooinda. Some roads are four-wheel drive only, and wet-season floods close others — check the Kakadu Access Report and the NT Road Report before you set out.",
+  "fees": [
+    {
+      "title": "Kakadu park pass, dry season (15 May – 31 October)",
+      "cost": "$40 adult",
+      "amount": 40,
+      "currencyCode": "AUD",
+      "detail": "Valid seven days. Child (5–15) $20; family (two adults and two or more children) $100; concession $30. In 2026 passes for visits between 1 July and 31 October were charged at the tropical summer rates. As listed by Parks Australia in November 2026; check before you go."
+    },
+    {
+      "title": "Kakadu park pass, tropical summer (1 November – 14 May)",
+      "cost": "$25 adult",
+      "amount": 25,
+      "currencyCode": "AUD",
+      "detail": "Valid seven days. Child (5–15) $12.50; family $65; concession $19. Free for Northern Territory residents. As listed by Parks Australia in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "65,000 years ago",
+      "text": "Aboriginal people are living in the Kakadu region, as they have ever since."
+    },
+    {
+      "year": "1880s",
+      "text": "An early buffalo hunter, hands in his pockets, is probably painted in the contact art of Ubirr's main gallery."
+    },
+    {
+      "year": "1979",
+      "text": "The first stage of Kakadu National Park is declared; the park grows in three stages to 1991."
+    },
+    {
+      "year": "1981",
+      "text": "Kakadu is inscribed on the World Heritage List, with further areas added in 1987, 1992 and 2011."
+    },
+    {
+      "year": "2013",
+      "text": "Koongarra (Kunkarra) becomes part of the park after Traditional Owner Jeffrey Lee's long campaign against mining it."
+    },
+    {
+      "year": "2026",
+      "text": "The Jim Jim and Twin Falls area stays closed for the year."
+    }
+  ],
+  "safety": [
+    "Saltwater crocodiles live in most of the park's waters, including billabongs, creeks and floodplains, and they have killed people. Assume crocodiles are present where there are no signs, keep well back from the water's edge, never wade or clean fish at the water, and camp at least 50 metres from it.",
+    "Temperatures regularly pass 30°C and can exceed 40°C. Walk only in the cooler hours, avoid 2.30 to 6.30 pm, and in summer do not walk after 11 am. Carry and drink at least one litre of water per person per hour, and watch for signs of heatstroke and hyponatremia.",
+    "Waterfalls and rock pools are slippery, cold enough to shock, and prone to flash floods. The safest place to swim is a public or hotel pool.",
+    "Mobile coverage is absent from most of the park. Tell someone your plans, drive slowly on dirt roads, never cross flooded creeks, and check the Kakadu Access Report each day."
+  ],
+  "regulations": [
+    "A valid Kakadu park pass is required for every visitor, except Northern Territory residents.",
+    "No dogs, except guide, hearing and assistance dogs on a lead no longer than three metres; dogs are excluded from Commonwealth national parks under the EPBC Act.",
+    "No drones or other remotely piloted aircraft without a park permit, and none are issued for recreational use; NT Parks permits are not valid in Kakadu.",
+    "Non-powered vessels are prohibited on the park's waters.",
+    "Do not enter restricted areas, which may be sacred sites, ceremonial sites, burial grounds or homes, and ask before photographing people."
+  ],
+  "themes": [
+    "theme-indigenous-heritage",
+    "theme-wetland",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Kakadu (AU), Kakadu National Park, Nadap Lookout -- 2019 -- 4200.jpg",
+      "caption": "The view from the lookout at Ubirr",
+      "altText": "A wide, flat landscape seen from a rocky sandstone lookout"
+    },
+    {
+      "file": "File:Kakadu (AU), Kakadu National Park, Ubirr Rock Art -- 2019 -- 4171.jpg",
+      "caption": "Rock art at Ubirr",
+      "altText": "Aboriginal paintings on a sandstone rock face"
+    },
+    {
+      "file": "File:Burrungkuy, Kakadu National Park.jpg",
+      "caption": "Burrungkuy (Nourlangie), a cultural landscape rich in rock art",
+      "altText": "Sandstone country at Burrungkuy"
+    },
+    {
+      "file": "File:Kakadu (AU), Kakadu National Park, Yellow Water -- 2019 -- 3782.jpg",
+      "caption": "Yellow Water (Ngurrungurrudjba) wetlands",
+      "altText": "Still water and wetland vegetation on a floodplain"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kakadu National Park — Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/"
+    },
+    {
+      "title": "About us — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/about/about-us/"
+    },
+    {
+      "title": "Amazing facts — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/discover/amazing-facts/"
+    },
+    {
+      "title": "History — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/discover/history/"
+    },
+    {
+      "title": "World heritage — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/discover/world-heritage/"
+    },
+    {
+      "title": "Culture and Language — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/discover/culture/"
+    },
+    {
+      "title": "Park passes — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/plan/passes/"
+    },
+    {
+      "title": "Permits — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/plan/permits/"
+    },
+    {
+      "title": "Frequently asked questions — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/about/frequently-asked-questions/"
+    },
+    {
+      "title": "Staying safe — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/plan/plan-your-trip/staying-safe/"
+    },
+    {
+      "title": "When to come and Seasons — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/plan/when-come/seasons/"
+    },
+    {
+      "title": "Getting here — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/plan/getting-here/"
+    },
+    {
+      "title": "Camping & caravans — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/stay/camping-caravans/"
+    },
+    {
+      "title": "Visitor centres — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/plan/visitor-centres/"
+    },
+    {
+      "title": "Kakadu Access Report (16 November 2026) — Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/news/access-and-alerts/"
+    },
+    {
+      "title": "Regions: Burrungkuy (Nourlangie), East Alligator, Jim Jim & Twin Falls, Yellow Water — Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/discover/regions/burrungkuy-nourlangie/"
+    },
+    {
+      "title": "Ubirr — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/things-do/activities/rock-art/ubirr/"
+    },
+    {
+      "title": "Cahills Crossing croc spotting — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/things-do/activities/croc-spotting/cahills-crossing-croc-spotting/"
+    },
+    {
+      "title": "Gunlom Falls, Jim Jim Falls and Maguk — Kakadu National Park, Parks Australia",
+      "url": "https://parksaustralia.gov.au/kakadu/things-do/activities/waterfalls/gunlom-falls/"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — DCCEEW",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

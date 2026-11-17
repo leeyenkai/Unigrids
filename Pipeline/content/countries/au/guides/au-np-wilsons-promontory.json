@@ -1,0 +1,260 @@
+{
+  "placeID": "au-np-wilsons-promontory",
+  "contentVersion": 1,
+  "summary": "The southernmost tip of mainland Australia: granite headlands, white beaches and forested ranges reaching into Bass Strait, about three hours from Melbourne. Victoria's oldest national park, 'the Prom' is one of its best loved. Families fill the big campground at Tidal River; walkers climb Mount Oberon or carry packs to Sealers Cove and the lightstation; wombats, kangaroos and emus graze the grassland.",
+  "facts": {
+    "establishedYear": 1898,
+    "areaHectares": 48244,
+    "bestSeasons": [
+      "autumn",
+      "spring",
+      "summer"
+    ],
+    "suggestedTime": "Two to five days"
+  },
+  "story": [
+    "The promontory is the northern end of a great granite mass that runs under Bass Strait to north-eastern Tasmania. Erosion of that granite has made the rugged ranges, boulder-strewn headlands and offshore islands, and the whole promontory is of national geological significance. It hangs from the mainland by the Yanakie Isthmus, built of marine sands. On beaches such as Squeaky Beach the sand is fine, rounded quartz that squeaks underfoot.",
+    "Grassy woodland, heath, stringybark forest and pockets of warm temperate rainforest, as in Lilly Pilly Gully, cover the Prom, and more than a fifth of Victoria's native plant species and half its bird species occur in the wider landscape. It is a climate refuge for threatened species. Hooded plovers nest on the ocean beaches from August to April, and whales pass offshore. Parks Victoria's Wilsons Prom Sanctuary project aims to make the park a 50,000-hectare haven for native plants and animals.",
+    "The Prom has a history of Aboriginal occupation going back at least 6,500 years. It is highly significant to the Gunai–Kurnai and Boonerwrung peoples, who have strong spiritual connections to it and called it Yiruk and Wamoon respectively. From the early nineteenth century it saw sealing and whaling, then timber-getting, grazing, tin and gold mining. A lightstation of locally quarried granite was built at South East Point to guide ships through Bass Strait, and was completed in 1859.",
+    "A public campaign won the promontory a temporary reservation as a site for a national park on 8 July 1898, and the permanent reservation of 30,351 hectares followed in 1905, making it the oldest existing national park in Victoria. In 1941 the park was closed to the public and Australia's first commando training centre was set up at Tidal River; a cairn there remembers it. Fire burnt 75 per cent of the park in 1951, and cattle grazed north of the Darby River until 1992."
+  ],
+  "howItWorks": [
+    "Wilsons Promontory is managed by Parks Victoria. National park rules apply throughout: no dogs, cats or other pets, no fires (solid-fuel barbecue heat beads are banned all year), no drones, generators or firearms. Tidal River, 30 kilometres inside the entrance, is the only settlement, with 484 camping and caravan sites, cabins, huts and units, and the visitor centre, open daily from 9am to 4pm. There is no fuel in the park.",
+    "Camping must be booked through Parks Victoria, and in summer, on long weekends and in school holidays Tidal River books out months ahead; a maximum of two vehicles is allowed per site. Overnight hikers book per person, not per site, for the hike-in camps on the Southern Circuit, such as Sealers Cove, Little Waterloo Bay, Oberon Bay, Halfway Hut and Roaring Meg. The northern wilderness has five campsites with no facilities; hikers must complete a self-assessment form before a permit is issued, may stay only two consecutive nights at each and in groups of at most six.",
+    "Camping fees at Parks Victoria's bookable campgrounds are half price until July 2027. In November 2026 Parks Victoria suspended all new campsite bookings while it investigated suspicious WhatsApp messages linked to its external booking provider; existing bookings were not affected, and Parks Victoria does not ask for payment details by WhatsApp. On busy summer days the number of vehicles in the park is capped, and a free shuttle runs from Tidal River to Telegraph Saddle in the school holidays. Check the Parks Victoria website before you go."
+  ],
+  "sights": [
+    {
+      "name": "Mount Oberon",
+      "note": "A 6.8-kilometre return climb from Telegraph Saddle through tall eucalypts; the last 100 metres are steep granite steps to panoramic views over Tidal River, the coast and islands.",
+      "location": [
+        -39.04041,
+        146.3449
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Squeaky Beach",
+      "note": "White quartz sand that squeaks underfoot, between granite boulders, looking over Leonard Bay. Unpatrolled; beware of wave surges and strong currents.",
+      "location": [
+        -39.02502,
+        146.30538
+      ]
+    },
+    {
+      "name": "Norman Beach",
+      "note": "The beach a few minutes' walk from Tidal River campground, between Pillar Point and Norman Point, with views of Mount Oberon.",
+      "location": [
+        -39.03522,
+        146.32033
+      ]
+    },
+    {
+      "name": "Lilly Pilly Gully",
+      "note": "A 5.8-kilometre circuit across the face of Mount Bishop through stringybark forest and down into rainforest; add 3 kilometres return for Mount Bishop's summit.",
+      "location": [
+        -39.01997,
+        146.32602
+      ]
+    },
+    {
+      "name": "Sealers Cove",
+      "note": "Ten kilometres one way from Telegraph Saddle through rainforest and fern gullies to a sheltered golden beach. Check the tide before crossing to the camp.",
+      "location": [
+        -39.01485,
+        146.43709
+      ]
+    },
+    {
+      "name": "Wilsons Promontory Lightstation",
+      "note": "A granite lighthouse of 1859 on a peninsula at South East Point, reached only on foot by the Southern Circuit; its historic cottages can be booked.",
+      "location": [
+        -39.12961,
+        146.42425
+      ]
+    },
+    {
+      "name": "Norman Lookout",
+      "note": "A roadside lookout on the way to Tidal River over Picnic Bay, Leonard Point and the Norman and Glennie islands; good at sunset.",
+      "location": [
+        -39.01531,
+        146.29906
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Tidal River Visitor Centre",
+      "note": "The park's visitor centre, with walking track information; open daily from 9am to 4pm.",
+      "location": [
+        -39.0304,
+        146.32196
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The park entrance on the Meeniyan–Promontory Road (C444), then 30 kilometres south to Tidal River",
+      "Telegraph Saddle car park, start of the Mount Oberon walk and the Southern Circuit",
+      "Darby River car park, for Darby Beach and Tongue Point"
+    ],
+    "reservations": "All camping and roofed accommodation must be booked with Parks Victoria; Tidal River books out months ahead for summer. Overnight hikes are booked per person. In November 2026 Parks Victoria suspended new campsite bookings while it investigated a booking scam; existing bookings stood — check before you go.",
+    "permits": [
+      "Overnight hiking permit for the hike-in camps (booked per person)",
+      "Northern wilderness hikes: Hiker Self Assessment Form, two consecutive nights per camp at most, groups of up to six"
+    ],
+    "camping": [
+      "Tidal River Campground: 484 camping and caravan sites, powered and unpowered",
+      "Stockyard Campground, near the park entrance — closed until further notice in November 2026; check before you go",
+      "Hike-in camps on the Southern Circuit: Sealers Cove, Refuge Cove, Little Waterloo Bay, Oberon Bay, Halfway Hut and Roaring Meg",
+      "Five northern wilderness campsites with no facilities: Barry Creek, Lower Barry Creek, Five Mile Beach, Tin Mine Cove and Johnny Souey Cove"
+    ],
+    "lodging": [
+      "Tidal River cabins, huts and units",
+      "Lightstation cottages at South East Point, reached on foot",
+      "Just Inside The Gate, a private eco-lodge on freehold land at the park entrance"
+    ],
+    "seasonalClosures": [
+      "On busy summer days vehicle numbers in the park are capped — arrive before 10am",
+      "Lightstation cottages take nightly bookings from the September school holidays to April, weekends only in May and June"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "The Prom sits out in Bass Strait and its weather can change quickly, so pack warm, waterproof layers in any season, especially for the hike-in camps. Summer is the busiest time, when Tidal River fills and popular beaches such as Norman Beach and Squeaky Beach are crowded by mid-morning; the ocean beaches are not patrolled. Autumn brings crisp mornings, fewer people and a better chance of meeting wildlife. In winter humpback and southern right whales pass on their way north, and in spring the granite country fills with wildflowers.",
+  "directions": "Wilsons Promontory is about three hours' drive south-east of Melbourne. Follow the Monash Freeway (M1) to the South Gippsland Freeway and Highway as far as Meeniyan, then take the Meeniyan–Promontory Road (C444) to the park entrance. Tidal River is 30 kilometres further south. There is no fuel in the park; the nearest is at Yanakie. In summer, carpool if you can and arrive before 10am, and bring food and water in case of traffic delays.",
+  "fees": [],
+  "chronology": [
+    {
+      "year": "6,500+ years ago",
+      "text": "Aboriginal occupation of the promontory is under way."
+    },
+    {
+      "year": "1859",
+      "text": "The granite lightstation at South East Point is completed."
+    },
+    {
+      "year": "1898",
+      "text": "On 8 July, 36,826 hectares are temporarily reserved as a site for a national park."
+    },
+    {
+      "year": "1905",
+      "text": "30,351 hectares are permanently reserved; most of the coastal strip is added in 1908 and eight islands in 1909."
+    },
+    {
+      "year": "1941",
+      "text": "The park is closed to the public and the No. 7 Infantry Training Centre, Australia's first commando school, opens at Tidal River."
+    },
+    {
+      "year": "1951",
+      "text": "Fire burns 75 per cent of the park."
+    },
+    {
+      "year": "1969",
+      "text": "The Yanakie Isthmus and several islands are added to the park."
+    },
+    {
+      "year": "1992",
+      "text": "Seasonal cattle grazing north of the Darby River ends."
+    },
+    {
+      "year": "2025",
+      "text": "Half-price camping returns at Parks Victoria campgrounds from 1 July, to run until July 2027."
+    }
+  ],
+  "safety": [
+    "The ocean beaches are not patrolled. Beware of wave surges and strong currents, and never swim alone.",
+    "Mount Oberon's summit has unprotected cliffs, and granite is slippery when wet.",
+    "On hikes, check tide times where tracks cross beaches and creeks, carry enough water, and treat creek water before drinking.",
+    "Download the VicEmergency app and offline maps before you go, as phone coverage is patchy.",
+    "Drive slowly and follow rangers and traffic controllers: in summer Tidal River is a shared 10 km/h zone for cars and pedestrians."
+  ],
+  "regulations": [
+    "No dogs, cats or other pets.",
+    "No fires, and no solid-fuel heat beads for barbecues at any time of year.",
+    "No drones or other remotely piloted aircraft, no generators and no firearms.",
+    "Do not feed wildlife. Tread lightly on ocean beaches from August to April, when hooded plovers nest above the high-tide mark.",
+    "Camp only at your booked site; no more than two vehicles per Tidal River campsite."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-mountains",
+    "theme-temperate-rainforest",
+    "theme-islands"
+  ],
+  "photos": [
+    {
+      "file": "File:Norman Beach, Tidal River, and squeaky beach from Mt Oberon summit.jpg",
+      "caption": "Norman Beach and Tidal River from the summit of Mount Oberon",
+      "altText": "A long pale beach curving round a turquoise bay below forested hills, with islands in the sea beyond"
+    },
+    {
+      "file": "File:Wilsons Promontory Lighthouse.jpg",
+      "caption": "Wilsons Promontory Lightstation",
+      "altText": "A granite lighthouse tower between white cottages and stone walls under a cloudy sky"
+    },
+    {
+      "file": "File:110319-054 Little Oberon Bay.jpg",
+      "caption": "Little Oberon Bay",
+      "altText": "Clear turquoise water over granite boulders, with green mountains across the bay"
+    },
+    {
+      "file": "File:088 Sealers' Cove, Wilson's Prom., Jan 1979 (52093770654).jpg",
+      "caption": "Sealers Cove in 1979",
+      "altText": "A calm creek mouth with rounded granite boulders and overhanging trees beside a forested headland"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wilsons Promontory National Park — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/wilsons-promontory-national-park"
+    },
+    {
+      "title": "Tidal River Campground — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/wilsons-promontory-national-park/where-to-stay/tidal-river-campground"
+    },
+    {
+      "title": "Southern Overnight Hikes — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/wilsons-promontory-national-park/where-to-stay/southern-overnight-hikes"
+    },
+    {
+      "title": "Northern Overnight Hikes — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/wilsons-promontory-national-park/where-to-stay/northern-overnight-hikes"
+    },
+    {
+      "title": "What you need to know before visiting Wilsons Prom this summer — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/wilsons-promontory-national-park/summer-2025"
+    },
+    {
+      "title": "Wilsons Promontory Lightstation — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/wilsons-promontory-national-park/where-to-stay/wilsons-promontory-lightstation"
+    },
+    {
+      "title": "Squeaky Beach, Mount Oberon Walk, Lilly Pilly Gully Circuit Walk, Sealers Cove Walk, Prom Wildlife Walk and Norman Lookout — Parks Victoria site pages",
+      "url": "https://www.parks.vic.gov.au/places-to-see/sites/mount-oberon-walk-(wilsons-promontory-national-park)"
+    },
+    {
+      "title": "Wilsons Promontory National Park Management Plan (2000) — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/management-plans/resource-library/wilsons-promontory-national-park---management-plan---2000.pdf"
+    },
+    {
+      "title": "Booking information (half-price camping; new bookings suspended, updated 11 November 2026) — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/where-to-stay/booking-information"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — area",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "Wilsons Promontory National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wilsons_Promontory_National_Park"
+    },
+    {
+      "title": "Wilsons Promontory Lighthouse — Wikipedia (coordinates)",
+      "url": "https://en.wikipedia.org/wiki/Wilsons_Promontory_Lighthouse"
+    },
+    {
+      "title": "OpenStreetMap (coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

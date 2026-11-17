@@ -1,0 +1,243 @@
+{
+  "placeID": "au-np-dharug",
+  "contentVersion": 1,
+  "summary": "Sandstone bushland on the north bank of the Hawkesbury River at Wisemans Ferry, an hour or so north-west of Sydney. The park holds part of the Old Great North Road, the most intact section of the convict-built Great North Road, and its Devines Hill and Finchs Line sections are part of the Australian Convict Sites World Heritage property. Walk or ride the old road, camp at Mill Creek, or paddle the river.",
+  "facts": {
+    "establishedYear": 1967,
+    "areaHectares": 14834,
+    "bestSeasons": [
+      "spring",
+      "autumn"
+    ],
+    "suggestedTime": "One day, or two to three days on the Old Great North Road"
+  },
+  "story": [
+    "Dharug is rugged sandstone country. Creeks have cut steep gullies through the plateau north of the Hawkesbury River, leaving honey-coloured cliffs, overhangs and boulders above a river that is wide and tidal here. The bush is mostly eucalypt forest, with smooth-barked angophoras, grass trees and Gymea lilies on the ridges and damper forest in the gullies. Gang-gang cockatoos, satin bowerbirds, Lewin's honeyeaters and superb lyrebirds live here, along with wombats, lace monitors and three kinds of glider: sugar, greater and yellow-bellied.",
+    "The park is the traditional Country of the Dharug Aboriginal people, and it carries their name. For them the land was a source of food, medicine and shelter. Its landscapes are tied to Dreaming stories and to cultural learning that is still passed on today.",
+    "In 1825 the colonial government began an inland road from Sydney to the Hunter Valley. It ran 264 kilometres, and up to 720 convicts built it between 1826 and 1836, some of them in chains. The road climbed out of the Hawkesbury valley at Wisemans Ferry by Devines Hill, held up by tall stone buttresses and drained by stone culverts. Convicts quarried the stone beside the road, and some carved graffiti into the rock. Their stone bridges are among the oldest that survive on mainland Australia.",
+    "Dharug National Park was reserved in 1967, with the old road as its original north-western boundary. It now covers about 14,834 hectares and protects 16 kilometres of the road, from Devines Hill to Ten Mile Hollow. The road continues north through Yengo National Park. The Old Great North Road, some 43 kilometres from Wisemans Ferry to Mount Manning, is the most intact part of the original route. In 2010 its Devines Hill and Finchs Line sections, about 7 kilometres long, were inscribed on the World Heritage List. They are one of eleven places that make up the Australian Convict Sites."
+  ],
+  "howItWorks": [
+    "Dharug is run by the NSW National Parks and Wildlife Service (NPWS) from its Bulga office. There is no vehicle entry fee: only 45 of the state's more than 890 parks and reserves charge one, and Dharug is not among them. The park is always open, but it may close in poor weather or high fire danger. If you also visit fee-collecting parks, the annual All Parks Pass covers vehicle entry to every one of them in NSW, including Kosciuszko, for $190 a year. The Multi Park Pass covers all of them except Kosciuszko for $65. These prices were listed by NPWS in November 2026, and neither pass covers camping.",
+    "Both campgrounds must be booked with NPWS, online or on 1300 072 757. Mill Creek takes cars. Ten Mile Hollow, on the Old Great North Road, can only be reached on foot or by bicycle. It charges no camping fee, but a $6 booking fee applies. Bring your own drinking water and firewood to both. Bookings at Mill Creek are limited to 21 days.",
+    "Bushfire season runs from October to March. On total fire ban days, usually declared around 5 pm the day before, every wood or solid-fuel fire and barbecue is prohibited in NSW parks, as are liquid-fuel stoves, and visitor-owned gas and electric cookers are generally prohibited too. NPWS can also declare a park fire ban, or close the park when the fire risk to visitors is high. Check NPWS alerts on the morning you go. Mobile reception in the park is limited."
+  ],
+  "sights": [
+    {
+      "name": "Devines Hill",
+      "note": "The convict road's climb out of the Hawkesbury valley, with towering stone buttresses, culverts, a curved wall and a quarry where convicts carved graffiti. The World Heritage walk starts here.",
+      "location": [
+        -33.36664,
+        150.98793
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Old Great North Road World Heritage walk",
+      "note": "A 9-kilometre grade 4 loop, up Devines Hill and back by Finchs Line, taking three and a half to four and a half hours, with views over the Hawkesbury.",
+      "location": [
+        -33.37343,
+        150.98476
+      ]
+    },
+    {
+      "name": "Finchs Line",
+      "note": "A section of the convict road that forms the return leg of the World Heritage loop from Devines Hill. Cyclists must walk their bikes on its walking-track section.",
+      "location": [
+        -33.37824,
+        150.99504
+      ]
+    },
+    {
+      "name": "Ten Mile Hollow",
+      "note": "A six-site walk-in and cycle-in campground on the Old Great North Road, a rest stop on the multi-day walk north towards Yengo.",
+      "location": [
+        -33.32761,
+        151.08966
+      ]
+    },
+    {
+      "name": "Mill Creek",
+      "note": "The park's main campground and picnic area, in a creek valley off Wisemans Ferry Road, with 30 sites and the start of the Grass Tree circuit.",
+      "location": [
+        -33.40165,
+        151.04393
+      ]
+    },
+    {
+      "name": "Grass Tree circuit",
+      "note": "A walking loop from Mill Creek through eucalypt forest and grass trees.",
+      "location": [
+        -33.40189,
+        151.05205
+      ]
+    },
+    {
+      "name": "Wisemans Ferry crossing",
+      "note": "The car ferry over the Hawkesbury River below Devines Hill, the gateway to the park. Leave the car on the south bank and cross on foot if you prefer.",
+      "location": [
+        -33.38528,
+        150.9868
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Wisemans Ferry, by car ferry across the Hawkesbury River, for Devines Hill and the Old Great North Road",
+      "Wisemans Ferry Road from Central Mangrove, for Mill Creek campground and picnic area",
+      "On foot or bicycle along the Old Great North Road from Devines Hill to Ten Mile Hollow"
+    ],
+    "reservations": "No booking for day visits. Both campgrounds must be booked with NPWS, online or on 1300 072 757.",
+    "permits": [
+      "School groups and holders of a Park Eco Pass make group booking enquiries for campgrounds"
+    ],
+    "camping": [
+      "Mill Creek campground, 30 unpowered marked sites with composting toilets and barbecues; bring drinking water and firewood",
+      "Ten Mile Hollow campground, six walk-in and cycle-in sites on the Old Great North Road; no camping fee, $6 booking fee"
+    ],
+    "lodging": [
+      "Accommodation in Wisemans Ferry and the lower Hawkesbury"
+    ],
+    "seasonalClosures": [
+      "No seasonal closure. The park is always open but may close in poor weather or high fire danger — check NPWS alerts before you go"
+    ]
+  },
+  "weather": "Dharug has warm, humid summers, averaging 13°C to 27°C, with occasional heatwaves above 40°C. Winters are mild by day, averaging 8°C to 18°C, but nights are cold enough to need warm gear in camp. February and March are the wettest months and September the driest. Autumn is the time for canoeing and kayaking, while the river is still warm from summer. Spring brings wildflowers and is the best season for long walks and mountain biking.",
+  "directions": "Dharug lies about 80 kilometres north-west of central Sydney, around Wisemans Ferry. From Sydney, take Galston Road from Hornsby or the Old Northern Road from Castle Hill or Dural. They meet at Middle Dural and continue north to Wisemans Ferry, where a car ferry crosses the Hawkesbury River to the foot of Devines Hill. From the Central Coast, leave the M1 at Peats Ridge Road and follow Wisemans Ferry Road from Central Mangrove to Mill Creek.",
+  "fees": [
+    {
+      "title": "Park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "AUD",
+      "detail": "Dharug is not one of NSW's fee-collecting parks. As listed by NPWS in November 2026."
+    },
+    {
+      "title": "Ten Mile Hollow campground",
+      "cost": "$6 booking fee",
+      "amount": 6,
+      "currencyCode": "AUD",
+      "detail": "No camping fee; a booking fee applies to each booking. Walk-in or cycle-in only. As listed by NPWS in November 2026 — check before you go."
+    },
+    {
+      "title": "All Parks Pass",
+      "cost": "$190 for one year / $335 for two years",
+      "amount": 190,
+      "currencyCode": "AUD",
+      "detail": "Annual vehicle entry to every fee-collecting NSW national park, including Kosciuszko; not needed for Dharug itself. As listed by NPWS in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Thousands of years",
+      "text": "The Dharug Aboriginal people live on and care for this Country."
+    },
+    {
+      "year": "1825",
+      "text": "The NSW Government begins work on an inland road from Sydney to the Hunter Valley."
+    },
+    {
+      "year": "1826–1836",
+      "text": "Up to 720 convicts, some in chains, build the 264-kilometre Great North Road, including the climb up Devines Hill."
+    },
+    {
+      "year": "1967",
+      "text": "Dharug National Park is reserved, with the Great North Road as its original north-western boundary."
+    },
+    {
+      "year": "2010",
+      "text": "The Devines Hill and Finchs Line sections are inscribed on the World Heritage List as one of the eleven Australian Convict Sites."
+    }
+  ],
+  "safety": [
+    "Summer days can pass 40°C. Carry plenty of water on the Old Great North Road, where there is no drinking water, and walk early in the day.",
+    "Mobile reception is limited. Tell someone your plans, and in an emergency call Triple Zero (000); the Emergency Plus app gives your location.",
+    "Devines Hill is steep. Cyclists must walk their bikes down it and along the walking-track section of Finchs Line.",
+    "Check NPWS alerts and the Rural Fire Service before you go. The park may close on days of high fire danger, and on Extreme or Catastrophic days leave bushfire-risk areas."
+  ],
+  "regulations": [
+    "No pets or domestic animals, except certified assistance animals.",
+    "The park is a no-smoking area.",
+    "No fires of any kind during total fire bans or park fire bans; bring your own firewood to the campgrounds at other times.",
+    "Camp only in the booked campgrounds at Mill Creek and Ten Mile Hollow."
+  ],
+  "themes": [
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Cutting devine hill.jpg",
+      "caption": "The convict-cut road on Devines Hill",
+      "altText": "An old road cut into a sandstone hillside, with stone walls and bush on either side"
+    },
+    {
+      "file": "File:Dharug NP NSW Sandstone.jpg",
+      "caption": "Sandstone outcrops in Dharug National Park",
+      "altText": "Weathered orange and grey sandstone rocks among eucalypt bush"
+    },
+    {
+      "file": "File:Hawkesbury River at Wisemans Ferry.jpg",
+      "caption": "The Hawkesbury River at Wisemans Ferry, the gateway to the park",
+      "altText": "A broad, calm river between steep wooded hills"
+    },
+    {
+      "file": "File:Dharug NP NSW Angophora Costata.jpg",
+      "caption": "A smooth-barked angophora in the park",
+      "altText": "A twisting pink-barked eucalypt trunk in open forest"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dharug National Park — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dharug-national-park"
+    },
+    {
+      "title": "Dharug National Park: learn more — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dharug-national-park/learn-more"
+    },
+    {
+      "title": "Dharug National Park: visitor info — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dharug-national-park/visitor-info"
+    },
+    {
+      "title": "Old Great North Road – World Heritage walk — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/old-great-north-road-world-heritage-walk"
+    },
+    {
+      "title": "Mill Creek campground — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/mill-creek-campground"
+    },
+    {
+      "title": "Ten Mile Hollow campground — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/ten-mile-hollow-campground"
+    },
+    {
+      "title": "Australian Convict Sites – Old Great North Road — NSW Environment and Heritage",
+      "url": "https://environment.nsw.gov.au/node/16411"
+    },
+    {
+      "title": "Old Great North Road, Dharug National Park, Conservation Management Plan — NSW Environment and Heritage",
+      "url": "https://www.environment.nsw.gov.au/node/35806"
+    },
+    {
+      "title": "Fee-collecting national parks — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/fee-collecting-parks"
+    },
+    {
+      "title": "Annual passes — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/annual-passes"
+    },
+    {
+      "title": "Total fire bans and park fire bans — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/safety/fire-safety/fire-bans"
+    },
+    {
+      "title": "Dharug National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dharug_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

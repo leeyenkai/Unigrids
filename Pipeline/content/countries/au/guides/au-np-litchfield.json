@@ -1,0 +1,282 @@
+{
+  "placeID": "au-np-litchfield",
+  "contentVersion": 1,
+  "summary": "A favourite with Darwin locals, about 120 kilometres south-west of the city: waterfalls pouring off a sandstone plateau into clear plunge pools, fields of magnetic termite mounds, and weathered sandstone pillars. Litchfield covers about 1,500 square kilometres, and its swimming holes at Wangi Falls, Florence Falls and Buley Rockhole are managed and monitored for swimmers. The park is important to the Koongurrukun, Mak Mak Marranunggu, Werat and Warray Aboriginal people.",
+  "facts": {
+    "areaHectares": 146118,
+    "bestSeasons": [
+      "winter",
+      "spring"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "Litchfield is an ancient landscape shaped by water. Streams run off the sandstone of the Tabletop Plateau and drop as waterfalls into clear plunge pools: Wangi Falls flows all year, Florence Falls is at its most spectacular in the wet and early dry, and Tolmer Falls is best seen in the wet. Around them, short walks pass through monsoon forest, open woodland and the typical sandstone country of the Top End, and in places the rock has weathered into clusters of free-standing pillars, most strikingly at the Lost City, which looks like the ruins of an ancient town.",
+    "Water also shapes how people use the park. Buley Rockhole is a string of small plunge pools and shallow rock pools in fast-flowing streams; the Cascades are reached only on foot; Tjaynera Falls lies at the end of a creek walk past a hillside of cycads. The park's other icon is its magnetic termite mounds, which rise in rows from the plains and draw almost every visitor. Rangers manage the swimming holes closely, testing water and surveying for crocodiles, because saltwater crocodiles can turn up in any Top End waterway.",
+    "Aboriginal people have lived throughout the area for thousands of years. Litchfield is important to the Koongurrukun, Mak Mak Marranunggu, Werat and Warray people, whose ancestral spirits formed the landscape, plants and animals and are still present in it today. Some places are sacred: below Tjaetaba Falls on Greenant Creek, the plunge pool and the stretch downstream are a sacred site where no one may swim.",
+    "European settlers came for cattle and minerals. Blyth Homestead, built by Harry Sargent and his family in 1928, still stands on the Reynolds River track as a reminder of the hard lives of the Top End's early pastoral and mining industries, and the Bamboo Creek Tin Mine site recalls the miners. Today Litchfield is managed by the Parks and Wildlife Commission of the Northern Territory, and the NT Government calls it a must-see in the Top End: an easy day trip from Darwin, or a base for a few days of swimming and walking."
+  ],
+  "howItWorks": [
+    "Litchfield is a Northern Territory park, not a Commonwealth one, so the Kakadu and Uluṟu passes do not apply here. Visitors to the Northern Territory need an NT Parks Visitor Pass, which covers every park managed by the NT Government that requires one, including Litchfield and Nitmiluk, for the dates it is valid; NT residents do not need one but may be asked for proof of residency. Passes are sold only online through the parks booking system, so buy one before you go. Concession rates apply to holders of Australian Seniors, Pensioner Concession and DVA cards.",
+    "Camping is separate from the pass. Litchfield's designated campgrounds, at Florence Falls, Wangi Falls, Walker Creek, Central Valley, Tjaynera Falls (Sandy Creek Falls) and Surprise Creek Falls, must be booked and paid for online before you arrive; you cannot pay in the park. Each campground has a category, A, B or D, that sets its fee. Campground hosts are on site at Florence, Wangi and Tjaynera Falls from May to September. Pets, generators and fireworks are not allowed, and you need a permit to camp outside designated areas or to fly a drone.",
+    "Swimming is the reason many people come, and it is managed. You may swim only at designated sites: Wangi Falls, Florence Falls, Buley Rockhole, the Cascades, Walker Creek, Tjaynera Falls and Surprise Creek Falls, and Central Valley, several of them in the dry season only. Rangers check water quality and flow and survey for crocodiles before a site opens; if there is no swimming-area-open sign, do not swim. The Reynolds River and roadside creeks are never safe, and no glass is allowed within ten metres of the water."
+  ],
+  "sights": [
+    {
+      "name": "Wangi Falls",
+      "note": "The park's most accessible swimming hole: a large, deep plunge pool below falls that flow all year, a paved path from the car park, a café and a 1.6-kilometre loop to the escarpment. Swimming in the dry season only.",
+      "location": [
+        -13.1639,
+        130.6849
+      ]
+    },
+    {
+      "name": "Florence Falls",
+      "note": "Falls into a plunge pool you can swim right up to, reached down 160 steps or along the 1-kilometre Shady Creek walk. Most spectacular in the wet and early dry.",
+      "location": [
+        -13.0991,
+        130.7835
+      ]
+    },
+    {
+      "name": "Buley Rockhole",
+      "note": "A chain of shallow and deep rock pools in a fast-flowing creek, for lounging rather than swimming laps; a 3.2-kilometre creek walk links it with Florence Falls.",
+      "location": [
+        -13.1128,
+        130.7858
+      ]
+    },
+    {
+      "name": "Magnetic termite mounds",
+      "note": "The park's iconic magnetic termite mounds, seen from a viewing area beside the main road.",
+      "location": [
+        -13.1027,
+        130.8443
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Tolmer Falls",
+      "note": "A tall waterfall seen from viewing decks 400 metres along a sealed path, with a 1.6-kilometre loop back through sandstone country. No swimming; best in the wet season.",
+      "location": [
+        -13.2056,
+        130.7151
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "The Lost City",
+      "note": "Towering sandstone formations like the ruins of an ancient city, ten kilometres along a four-wheel-drive track that closes in the wet season.",
+      "location": [
+        -13.2171,
+        130.7355
+      ]
+    },
+    {
+      "name": "Tjaynera Falls (Sandy Creek Falls)",
+      "note": "A plunge pool at the end of a 3.4-kilometre return walk past a hillside of cycads, off the four-wheel-drive Reynolds River track. Dry-season swimming.",
+      "location": [
+        -13.2445,
+        130.7575
+      ]
+    },
+    {
+      "name": "Blyth Homestead",
+      "note": "The house Harry Sargent and his family built in 1928 on the Reynolds River track, a relic of the early pastoral and mining years. Four-wheel drive only.",
+      "location": [
+        -13.2324,
+        130.7251
+      ]
+    },
+    {
+      "name": "Cascades",
+      "note": "A quieter swimming area reached on foot: the shady Lower Cascades walk, closed in the wet, or the Upper Cascades loop over the Tabletop Plateau.",
+      "location": [
+        -13.1246,
+        130.6656
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Through Batchelor on Litchfield Park Road, the eastern entrance",
+      "From the north via Cox Peninsula Road",
+      "The Reynolds River four-wheel-drive track from Daly River Road in the south, closed in the wet season"
+    ],
+    "reservations": "Buy an NT Parks Visitor Pass online before you go if you are not an NT resident. Book and pay for campsites online in advance; there is no payment in the park. Check which sites and swimming holes are open on the NT Government's park status page and the Road Report before you leave.",
+    "permits": [
+      "An NT Parks Visitor Pass for visitors from outside the Northern Territory",
+      "A permit to camp overnight outside designated campgrounds, or to walk the 39-kilometre Tabletop Track when it is closed for heat",
+      "A permit to fly a drone, obtained before you arrive"
+    ],
+    "camping": [
+      "Florence Falls (two-wheel-drive and four-wheel-drive campgrounds) and Wangi Falls: category A, with toilets and showers",
+      "Tjaynera Falls (Sandy Creek) and Surprise Creek on the Reynolds River track: category B, four-wheel drive",
+      "Walker Creek's creekside sites and Central Valley's four-wheel-drive campground",
+      "Boil all water, take your rubbish out, keep fires in the fire pits and wash at least 50 metres from waterways"
+    ],
+    "lodging": [
+      "None in the park beyond campgrounds; accommodation in Batchelor and Darwin"
+    ],
+    "seasonalClosures": [
+      "The Lost City and the southern Reynolds River track close in the wet season when the tracks become impassable; in November 2026 Surprise Creek Falls and its campground were closed until after the wet",
+      "Wangi Falls, Walker Creek, Central Valley, Tjaynera and Surprise Creek open for swimming in the dry season only; the Lower Cascades walk closes in the wet",
+      "The Tabletop Track closes in extreme heat, with permit access only — check the park status page before you go",
+      "The Wangi Falls café closes from mid-December 2026 to the end of January 2027"
+    ],
+    "seasonalClosureMonths": [
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": "Litchfield has the Top End's two seasons. The dry season, roughly May to October, brings warm days, cool nights and clear skies; it is the peak season, when campground hosts are on site and all the swimming holes open. From October the build-up turns hot and humid, and the wet season brings monsoonal rain and storms that fill the waterfalls but flood tracks and close some swimming areas and four-wheel-drive roads. The NT Government warns that the Top End can be hot and humid from October to March, with temperatures in the Territory exceeding 40°C; in summer it can pass 30°C as early as 9 am, so walk early.",
+  "directions": "Litchfield is about 120 kilometres south-west of Darwin, a popular day trip from the city or from Katherine. There are two ways in: through the town of Batchelor, off the Stuart Highway, or from the north via Cox Peninsula Road, and Litchfield Park Road runs past the main sites. The Reynolds River track, a rough 44-kilometre four-wheel-drive road between Tolmer and Wangi Falls, connects with Daly River Road in the south. Check road conditions on the NT Government's Road Report and the park status page before you leave, and make sure your vehicle is well maintained.",
+  "fees": [
+    {
+      "title": "NT Parks Visitor Pass, 1 day / 3 days / 2 weeks",
+      "cost": "$10 / $20 / $30 adult",
+      "amount": 10,
+      "currencyCode": "AUD",
+      "detail": "For visitors from outside the Northern Territory; covers all NT Government parks that require a pass. Child (5–17) $5/$10/$15; family $25/$50/$75; concession $8/$16/$24. Bought online only. As listed by the NT Government in November 2026; check before you go."
+    },
+    {
+      "title": "NT Parks Visitor Pass, 1 month / annual",
+      "cost": "$45 / $60 adult",
+      "amount": 45,
+      "currencyCode": "AUD",
+      "detail": "Child $22/$30; family $110/$150; concession $36/$48. As listed by the NT Government in November 2026."
+    },
+    {
+      "title": "Camping, category A (Florence Falls, Wangi Falls)",
+      "cost": "$15 adult per night",
+      "amount": 15,
+      "currencyCode": "AUD",
+      "detail": "Child (5–17) $8; family $38. Book and pay online before you go. As listed by the NT Government in November 2026."
+    },
+    {
+      "title": "Camping, category B (Tjaynera Falls, Surprise Creek)",
+      "cost": "$10 adult per night",
+      "amount": 10,
+      "currencyCode": "AUD",
+      "detail": "Child $5; family $25. Category D sites, the most exclusive, cost $20 adult, $10 child, $50 family. As listed by the NT Government in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Thousands of years ago",
+      "text": "Aboriginal people live throughout the area, as the Koongurrukun, Mak Mak Marranunggu, Werat and Warray people still care for it."
+    },
+    {
+      "year": "1928",
+      "text": "Harry Sargent and his family build Blyth Homestead."
+    }
+  ],
+  "safety": [
+    "Saltwater crocodiles can be in any Top End waterway. Swim only where a swimming-area-open sign is posted; the Reynolds River and roadside creeks are never safe.",
+    "Conditions change fast with flash floods and electrical storms. If it does not feel safe, do not swim; supervise children, never swim alone and do not jump from rock ledges or waterfalls. It is not safe to swim at the top of Wangi Falls.",
+    "Avoid strenuous activity in the heat of the day, carry and drink plenty of water (at least a litre an hour when walking), and boil tap water before drinking.",
+    "Do not sit on bare ground or grass: scrub typhus is spread by microscopic bush mites.",
+    "Mobile coverage is patchy. Note the emergency call devices at the main sites, carry a first-aid kit, lock your vehicle, and in an emergency call 000."
+  ],
+  "regulations": [
+    "Visitors from outside the Northern Territory must hold a valid NT Parks Visitor Pass.",
+    "Swim only at designated sites; no glass within ten metres of waterways.",
+    "No pets, generators or fireworks; nets, traps and firearms are not permitted.",
+    "No smoking at Florence Falls, Buley Rockhole and Wangi Falls.",
+    "Do not swim in the plunge pool or downstream of Tjaetaba Falls, a sacred site; do not touch rock art or disturb significant sites."
+  ],
+  "themes": [
+    "theme-indigenous-heritage",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:Litchfield National Park (AU), Wangi Falls -- 2019 -- 3749.jpg",
+      "caption": "Wangi Falls",
+      "altText": "Waterfalls dropping over a cliff into a large pool"
+    },
+    {
+      "file": "File:Litchfield National Park (AU), Florence Falls -- 2019 -- 3738.jpg",
+      "caption": "Florence Falls",
+      "altText": "A waterfall pouring into a plunge pool below a rock wall"
+    },
+    {
+      "file": "File:Litchfield National Park (AU), Magnetic Termite Mounds -- 2019 -- 3725.jpg",
+      "caption": "Magnetic termite mounds",
+      "altText": "Many tall, thin earth mounds standing in grassland"
+    },
+    {
+      "file": "File:Tolmer Falls.jpg",
+      "caption": "Tolmer Falls",
+      "altText": "A tall waterfall in sandstone country"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Litchfield National Park — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/litchfield-national-park"
+    },
+    {
+      "title": "Safety in Litchfield National Park — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/litchfield-national-park/safety"
+    },
+    {
+      "title": "Swimming in Litchfield National Park — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/litchfield-national-park/swimming"
+    },
+    {
+      "title": "Camping and accommodation in Litchfield National Park — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/litchfield-national-park/camping-and-accommodation-in-litchfield-national-park"
+    },
+    {
+      "title": "Short walks in Litchfield National Park — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/litchfield-national-park/short-walks"
+    },
+    {
+      "title": "Wangi Falls, Florence Falls, Buley Rockhole, Tolmer Falls, The Lost City and Reynolds Track — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/litchfield-national-park/wangi-falls"
+    },
+    {
+      "title": "Check if Litchfield National Park is open — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/regions/darwin/check-park-open-darwin/litchfield-national-park"
+    },
+    {
+      "title": "NT Parks Visitor Pass — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/visitor-pass"
+    },
+    {
+      "title": "Camping fees — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/camping/fees"
+    },
+    {
+      "title": "Safety and rules in parks and reserves — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/safety-rules"
+    },
+    {
+      "title": "Swimming in parks — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/safety-rules/swimming-in-parks"
+    },
+    {
+      "title": "Stay safe in the heat in parks — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/safety-rules/beat-the-heat"
+    },
+    {
+      "title": "Rules for pets in parks — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/safety-rules/rules-for-pets-in-parks"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — DCCEEW (area)",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "Litchfield National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Litchfield_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

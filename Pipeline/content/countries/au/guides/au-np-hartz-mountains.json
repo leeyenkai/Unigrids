@@ -1,0 +1,244 @@
+{
+  "placeID": "au-np-hartz-mountains",
+  "contentVersion": 1,
+  "summary": "A small mountain park at the southern end of the Huon Valley, an hour and a half from Hobart, and part of the Tasmanian Wilderness World Heritage Area. A high dolerite backbone shaped by ice holds cirque lakes, tarns, waterfalls and alpine plants. Well-made tracks lead from the road's end to lookouts and lakes in under an hour, or up Hartz Peak for wide views over the south-west wilderness.",
+  "facts": {
+    "establishedYear": 1939,
+    "areaHectares": 12125,
+    "bestSeasons": [
+      "summer",
+      "spring",
+      "autumn"
+    ],
+    "suggestedTime": "Half a day to a day"
+  },
+  "story": [
+    "The park climbs from 160 metres at the Picton River to more than 1,250 metres at Hartz Peak, and most of it lies above 600 metres. Among its oldest rocks, in the lower south, are sediments laid down by sea, ice and fresh water between 355 and 180 million years ago. The high backbone running almost the length of the park is dolerite, a hard igneous rock that pushed into the crust about 165 million years ago as Gondwana broke apart. Ice ages then carved cirques such as Hartz Lake, nunataks such as Mount Snowy and the knife-edge ridge of the Devils Backbone.",
+    "Above the forest, the track crosses subalpine and alpine country of cushion plants, pandani, snow gums with twisted, mottled branches and stands of King Billy pine around the lakes. In late spring and early summer the Tasmanian waratah lights the roadside red. Echidnas and platypus may be seen by day, and wallabies, pademelons and brushtail possums at dusk. Honeyeaters, eastern spinebills and green rosellas are among the birds, and several frog species live in the wet ground.",
+    "The Hartz Mountains have lasting significance for today's Tasmanian Aboriginal communities. The people of this area most likely belonged to the South East nation, whose country ran from New Norfolk to Bruny Island and inland to the Huon Valley; the recorded name for the people of the Huon area is the Mellukerdee. They used the coast for shellfish and muttonbirds and travelled inland for wallabies and plant foods.",
+    "The first Europeans here were timber-getters searching for Huon pine and looking for routes west to Port Davey. In the early 1900s a new industry began: distilling eucalyptus oil from varnished gum for medicine. The Hartz Range grew popular for its beauty, and in 1939 it was first set aside as a scenic reserve. Today the national park is part of the Tasmanian Wilderness World Heritage Area, which PWS notes for its classic ice-worn dolerite landforms."
+  ],
+  "howItWorks": [
+    "Hartz Mountains is managed by the Tasmania Parks and Wildlife Service (PWS) from its Huonville office; no rangers are based in the park. A valid parks pass is required for entry; a Daily Pass covers a vehicle of up to eight people for 24 hours, and children under five are free. PWS reviews its fees each year in line with CPI.",
+    "There is no camping in the park; it is a day-use area with basic facilities. Before any walk, even a short one, register at the booth beside the main car park and sign out when you leave. Water and a picnic shelter are near the Waratah Lookout track, and the visitor shelter at the end of the road has water, picnic tables and toilets, all designed for wheelchair access.",
+    "The park is a Fuel Stove Only Area, so fires are prohibited at all times. Follow the Leave No Trace principles: stay on the formed tracks across the fragile alpine plateau, carry out your rubbish and leave plants and rocks as you find them. Dogs and recreational drones are not allowed."
+  ],
+  "sights": [
+    {
+      "name": "Waratah Lookout",
+      "note": "A five-minute stroll to a platform over old myrtle forest and across the Huon Valley to the Wellington Range. Waratahs flower here in December and January.",
+      "location": [
+        -43.19551,
+        146.7674
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Arve Falls",
+      "note": "A 1-kilometre, 20-minute return walk through snow gums and wildflowers to a viewing platform where the Arve drops off the edge of the plateau.",
+      "location": [
+        -43.21031,
+        146.77327
+      ]
+    },
+    {
+      "name": "Lake Osborne",
+      "note": "A gentle 2-kilometre, 45-minute return climb through rainforest and moorland to a glacial lake ringed by King Billy pines, with a lakeside seat.",
+      "location": [
+        -43.21603,
+        146.75928
+      ]
+    },
+    {
+      "name": "Lake Esperance",
+      "note": "A glacial lake beneath the Devils Backbone, reached on a 3.4-kilometre, one-and-a-half- to two-hour return walk, mostly on boardwalk; cushion plants grow at its edge.",
+      "location": [
+        -43.22792,
+        146.76917
+      ]
+    },
+    {
+      "name": "Ladies Tarn",
+      "note": "A tarn on the Hartz Pass track below the climb to the pass, with views back to the D'Entrecasteaux Channel on the way.",
+      "location": [
+        -43.2364,
+        146.77007
+      ]
+    },
+    {
+      "name": "Hartz Lake",
+      "note": "A classic cirque lake, carved by ice, beneath Hartz Peak; reached from Hartz Pass on a cairned route. Its shores are damp and slippery.",
+      "location": [
+        -43.23926,
+        146.75709
+      ]
+    },
+    {
+      "name": "Hartz Peak",
+      "note": "A 7.4-kilometre, three- to five-hour Grade 4 return walk to the dolerite summit, with views to Federation Peak and Precipitous Bluff on a clear day.",
+      "location": [
+        -43.24543,
+        146.768
+      ],
+      "kind": "viewpoint"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Hartz Mountain Road, signposted off Arve Road (C632) about 13 kilometres from Geeveston; the final 10.5 kilometres are unsealed"
+    ],
+    "reservations": "No bookings are needed. Register every walk at the booth beside the main car park.",
+    "permits": [
+      "A valid Tasmanian parks pass"
+    ],
+    "camping": [
+      "None: there are no camping facilities in the park"
+    ],
+    "lodging": [
+      "Accommodation in Geeveston and the Huon Valley, outside the park"
+    ],
+    "seasonalClosures": [
+      "The road can be closed by snow in winter; check road conditions before you travel"
+    ]
+  },
+  "weather": "Weather on the Hartz plateau can change quickly in any season, and PWS warns that blizzards can occur with little warning in any month. The Bureau of Meteorology's station on Keoghs Pimple, 831 metres up, averages about 1,100 millimetres of rain a year, falling on some 170 days, most heavily from June to September. January afternoons average about 18°C; July afternoons only 6°C, with nights close to freezing through winter, when snow often covers the plateau and the boardwalks. Spring brings wildflowers and, in December and January, the red flowers of the waratah. Tracks covered in snow are hard to follow and may be impassable.",
+  "directions": "Hartz Mountains National Park is about one and a half hours south-west of Hobart. Drive to Geeveston on the A6, turn right onto Arve Road (C632) and follow it for about 13 kilometres to the signposted turn-off to the park. The final section of road is unsealed for 10.5 kilometres. In winter, check road conditions first: unless your vehicle is fitted with chains, do not drive on in snow, as becoming stuck could lead to death from hypothermia. Avoid driving at night, when wildlife is on the roads.",
+  "fees": [
+    {
+      "title": "Daily Pass, per vehicle",
+      "cost": "$49.15",
+      "amount": 49.15,
+      "currencyCode": "AUD",
+      "detail": "Up to 24 hours, for a vehicle of up to eight people; $24.55 per person by bus, bicycle or on foot. As listed by PWS in November 2026; reviewed each year by CPI."
+    },
+    {
+      "title": "Annual Park Pass, one park",
+      "cost": "$53.50",
+      "amount": 53.5,
+      "currencyCode": "AUD",
+      "detail": "A year's entry to a single national park other than Cradle Mountain, for up to two vehicles registered at the holder's address; $42.80 concession."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "About 165 million years ago",
+      "text": "Dolerite intrudes into the crust as Gondwana breaks apart, forming the park's high backbone."
+    },
+    {
+      "year": "Before European arrival",
+      "text": "Mellukerdee people of the South East nation use the coast and travel inland to hunt and gather."
+    },
+    {
+      "year": "Early 1900s",
+      "text": "Eucalyptus oil is extracted from varnished gum in the area, for medicine."
+    },
+    {
+      "year": "1939",
+      "text": "The Hartz Range is first set aside as a scenic reserve."
+    }
+  ],
+  "safety": [
+    "Blizzards can come with little warning in any month. Carry a waterproof jacket and overtrousers, warm layers, a hat and gloves even on a fine day, and watch PWS's hypothermia safety video.",
+    "Hartz Peak is a Grade 4 walk and needs navigation skills; turn back if cloud, snow or strong wind sets in. Tracks are hard to follow under snow.",
+    "Register at the booth before walking and sign out afterwards, tell someone your plans and supervise children: weather on the tracks can be severe all year.",
+    "Do not drive further in snow without chains, and check the road before you go."
+  ],
+  "regulations": [
+    "Fuel Stove Only Area: fires are prohibited.",
+    "No camping anywhere in the park.",
+    "Stay on the formed tracks to protect the sensitive alpine plants.",
+    "Dogs and recreational drones are not allowed in Tasmanian national parks."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-alpine"
+  ],
+  "photos": [
+    {
+      "file": "File:Hartz Lake from hiking trail.jpg",
+      "caption": "Hartz Lake, a glacial cirque lake beneath Hartz Peak",
+      "altText": "A dark mountain lake below rocky slopes and low alpine scrub"
+    },
+    {
+      "file": "File:Hartz Mountain and Mt Snowy.jpg",
+      "caption": "Hartz Mountain and Mount Snowy",
+      "altText": "Two rocky mountain tops rising above an alpine plateau"
+    },
+    {
+      "file": "File:Lake Esperance, Hartz Mountains, TAS, AUS.jpg",
+      "caption": "Lake Esperance below the Devils Backbone",
+      "altText": "A small glacial lake edged by low alpine plants beneath a rocky ridge"
+    },
+    {
+      "file": "File:Ladies Tarn Hartz NP.jpg",
+      "caption": "Ladies Tarn on the track to Hartz Pass",
+      "altText": "A still tarn surrounded by alpine heath and boulders"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hartz Mountains National Park — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Hartz-Mountains-National-Park.aspx"
+    },
+    {
+      "title": "Hartz Peak — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Hartz-Peak.aspx"
+    },
+    {
+      "title": "Hartz Pass — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Hartz-Pass.aspx"
+    },
+    {
+      "title": "Lake Esperance — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Lake-Esperance.aspx"
+    },
+    {
+      "title": "Lake Osborne — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Lake-Osborne.aspx"
+    },
+    {
+      "title": "Arve Falls — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Arve-Falls.aspx"
+    },
+    {
+      "title": "Waratah Lookout — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/waratah-lookout.aspx"
+    },
+    {
+      "title": "Tasmanian Wilderness World Heritage Area — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)"
+    },
+    {
+      "title": "Park passes and entry fees — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/entry-fees.aspx"
+    },
+    {
+      "title": "Fuel Stove Only Areas — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Fuel-Stove-Only-Areas.aspx"
+    },
+    {
+      "title": "Leave No Trace — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Leave-no-trace.aspx"
+    },
+    {
+      "title": "Safety in parks — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Safety-in-parks.aspx"
+    },
+    {
+      "title": "Reserve listing: national parks and reserves (2 June 2022) — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Documents/Reserve%20Listing.pdf"
+    },
+    {
+      "title": "Climate statistics: Hartz Mountain (Keoghs Pimple), 094191 — Bureau of Meteorology",
+      "url": "https://www.bom.gov.au/climate/averages/tables/cw_094191.shtml"
+    },
+    {
+      "title": "Hartz Mountains National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hartz_Mountains_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

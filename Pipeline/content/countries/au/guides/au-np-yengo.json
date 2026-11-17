@@ -1,0 +1,228 @@
+{
+  "placeID": "au-np-yengo",
+  "contentVersion": 1,
+  "summary": "Steep gorges and rocky sandstone ridges between the Hawkesbury River and the Hunter Valley, less than two hours from Sydney or Newcastle. The park is the north-eastern part of the Greater Blue Mountains World Heritage Area, and it is rich in Aboriginal engravings. Its flat-topped Mount Yengo is sacred as the place where the creator being Biamie left the earth. Explore it by 4WD, mountain bike or on foot.",
+  "facts": {
+    "establishedYear": 1988,
+    "areaHectares": 154271,
+    "bestSeasons": [
+      "spring",
+      "autumn"
+    ],
+    "suggestedTime": "Two to three days"
+  },
+  "story": [
+    "Yengo is a sandstone landscape of deep gorges and narrow ridges north of the Hawkesbury River. A few mountains rise above it with caps of basalt. On the basalt tops of Mount Yengo and Mount Wareng a dry rainforest grows, quite unlike the eucalypt forest and heath around it. The park lies inside the Greater Blue Mountains World Heritage Area, whose more than 90 eucalypt species make up about 13 per cent of the world's total.",
+    "Some 50 mammal species live here, among them wombats, wallaroos, koalas, gliding possums and the endangered brush-tailed rock wallaby on the cliffs. More than 200 bird species have been recorded, including gang-gang, yellow-tailed and glossy black cockatoos. Lyrebirds may be seen on the bush tracks. The Yengo Wilderness, about 120,000 hectares, was gazetted in 2009.",
+    "For thousands of years the park and the land around it have been a spiritual and cultural place for the Darkinjung and Wonnarua People. More than 640 Aboriginal sites are recorded in and around the park, and its rock engravings are outstanding. The park's name comes from the Aboriginal word 'Yango', meaning mountain, which early Europeans misspelt. Mount Yengo, the prominent flat-topped peak, is where Biamie stepped off into the sky after finishing the work of creation. In 2008 the mountain was declared an Aboriginal Place, and many other sites in the region are thought to be linked to it. At Finchley, a reserve to protect Aboriginal carvings was set aside as early as 1929.",
+    "Two early routes from Sydney to the Hunter crossed this country. The convict-built Old Great North Road runs along the park's south-eastern edge; its World Heritage-listed section is in neighbouring Dharug National Park. Further west, parts of the older, unofficial route near today's Putty Road survive as the Old Bulga Road north of Howes Valley. Settlers in Howes Valley built the Old Settlers Road, once called the Old Convict Road, to Wollombi, and its stone embankments still show. Yengo National Park was dedicated in March 1988 and now covers about 154,271 hectares."
+  ],
+  "howItWorks": [
+    "Yengo is run by the NSW National Parks and Wildlife Service (NPWS) from its Bulga office on the Putty Road. It is always open, though it may close in poor weather or high fire danger. There is no vehicle entry fee: only 45 of NSW's more than 890 parks and reserves charge one, and Yengo is not among them. For fee-collecting parks elsewhere, the All Parks Pass covers vehicle entry to every one of them in NSW, including Kosciuszko, for $190 a year. The Multi Park Pass covers all of them except Kosciuszko for $65. These prices were listed by NPWS in November 2026.",
+    "The park's roads are unsealed. They are suitable for 2WD vehicles in dry weather, but a 4WD is needed when wet. Finchley and Mogo campgrounds are open to all. The Big Yango precinct, with Big Yango House and the Blue Gums and Mountain Arm campgrounds, lies behind locked gates, and entry is by permit for overnight guests only. Book campsites and Big Yango House with NPWS online or on 1300 072 757. Aboriginal culture tours and camps are offered at Wollombi.",
+    "Bushfire season runs from October to March. On total fire ban days, usually declared around 5 pm the day before, all campfires and wood or solid-fuel barbecues are prohibited in NSW parks, as are liquid-fuel stoves, and visitor-owned gas and electric cookers are generally prohibited. NPWS may also declare a park fire ban or close the park when the fire risk is high, so check NPWS alerts before you go. Mobile reception is limited across the park."
+  ],
+  "sights": [
+    {
+      "name": "Finchley lookout",
+      "note": "Wide views over the ridges to Mount Yengo, best at sunset; reached by Yango Creek Road from Wollombi, next to Finchley campground.",
+      "location": [
+        -32.97783,
+        151.02077
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Finchley cultural walk",
+      "note": "A walk through Finchley Aboriginal Area, a reserve for Aboriginal carvings since 1929, with rock engravings and stories of Aboriginal history.",
+      "location": [
+        -32.97498,
+        151.01293
+      ]
+    },
+    {
+      "name": "Mount Yengo",
+      "note": "The flat-topped, basalt-capped mountain where Biamie left the earth after creation; a declared Aboriginal Place and sacred site.",
+      "location": [
+        -32.98445,
+        150.85153
+      ]
+    },
+    {
+      "name": "Finchley campground",
+      "note": "A campground on the ridge beside Finchley lookout, with toilets, picnic tables and barbecues.",
+      "location": [
+        -32.98035,
+        151.01319
+      ]
+    },
+    {
+      "name": "Mogo campground",
+      "note": "A campground in the park's southern precinct, reached from St Albans by Wollombi Road, with toilets, picnic tables and barbecues.",
+      "location": [
+        -33.14524,
+        151.09123
+      ]
+    },
+    {
+      "name": "Yango Creek",
+      "note": "The creek whose road leads from Wollombi into the north-east of the park, towards Finchley and the Big Yango precinct.",
+      "location": [
+        -32.98656,
+        151.02063
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "From Wollombi, by Great North Road and Yango Creek Road, for Finchley lookout and campground",
+      "From Wisemans Ferry, by the car ferry, Settlers Road to St Albans and Wollombi Road, for Mogo and the southern precinct",
+      "Putty Road, on the park's western side"
+    ],
+    "reservations": "No booking for day visits. Campgrounds and Big Yango House are booked with NPWS online or on 1300 072 757.",
+    "permits": [
+      "Entry to the Big Yango precinct, behind locked gates, is by permit for overnight guests at Big Yango House, Blue Gums or Mountain Arm"
+    ],
+    "camping": [
+      "Finchley campground, beside Finchley lookout",
+      "Mogo campground, in the southern precinct",
+      "Blue Gums and Mountain Arm campgrounds, in the gated Big Yango precinct"
+    ],
+    "lodging": [
+      "Big Yango House, a former homestead with showers, power, a fireplace and a veranda",
+      "Accommodation in Wollombi, Cessnock and the Hunter Valley"
+    ],
+    "seasonalClosures": [
+      "No seasonal closure. Unsealed roads need a 4WD in wet weather, and the park may close in poor weather or high fire danger — check NPWS alerts before you go"
+    ]
+  },
+  "weather": "Each season suits a different way of seeing Yengo. Autumn is the time for mountain biking the Mount Yengo loop trail. In spring the bush flowers around Blue Gums and Mountain Arm. Summer suits 4WD touring and sunsets from Finchley lookout, though it is also the height of the bushfire season. Winter nights are cold enough to make the fireplace at Big Yango House welcome. After rain the unsealed roads quickly need a 4WD.",
+  "directions": "Yengo lies between the Hawkesbury River and the Hunter Valley, less than two hours' drive from Sydney or Newcastle. From Cessnock, follow Wollombi Road to Wollombi, turn right into Great North Road and left into Yango Creek Road, then follow Upper Yango Creek Road and the signs to Finchley lookout. From Sydney, take the car ferry across the Hawkesbury at Wisemans Ferry, follow Settlers Road to St Albans, then Wollombi Road to Mogo campground. The Putty Road runs along the west of the park. There is no public transport.",
+  "fees": [
+    {
+      "title": "Park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "AUD",
+      "detail": "Yengo is not one of NSW's fee-collecting parks. As listed by NPWS in November 2026."
+    },
+    {
+      "title": "All Parks Pass",
+      "cost": "$190 for one year / $335 for two years",
+      "amount": 190,
+      "currencyCode": "AUD",
+      "detail": "Annual vehicle entry to every fee-collecting NSW national park, including Kosciuszko; not needed for Yengo itself. As listed by NPWS in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Thousands of years",
+      "text": "The Darkinjung and Wonnarua People hold this country as a spiritual and cultural place; Biamie leaves the earth from Mount Yengo."
+    },
+    {
+      "year": "1826–1836",
+      "text": "Convicts build the Great North Road from Sydney to the Hunter, along the park's south-eastern edge."
+    },
+    {
+      "year": "1929",
+      "text": "A Reserve for the Preservation of Aboriginal Carvings is notified at Finchley."
+    },
+    {
+      "year": "1988",
+      "text": "Yengo National Park is dedicated in March."
+    },
+    {
+      "year": "2000",
+      "text": "The park is inscribed as part of the Greater Blue Mountains Area World Heritage property."
+    },
+    {
+      "year": "2008",
+      "text": "Mount Yengo, 1,825 hectares down to the Big Yengo Loop Trail, is declared an Aboriginal Place on 11 July."
+    },
+    {
+      "year": "2009",
+      "text": "The Yengo Wilderness, about 120,000 hectares, is gazetted on 14 August."
+    }
+  ],
+  "safety": [
+    "Mobile reception is limited, and you need it to call Triple Zero (000). Download the Emergency Plus app before you go and leave your plans with someone.",
+    "Roads are unsealed and need a 4WD after rain; carry water and allow for slow going.",
+    "This is remote country with few facilities. Carry enough water, food and maps for the whole trip.",
+    "Check NPWS alerts and the Rural Fire Service before you go: the park may close on days of high fire danger."
+  ],
+  "regulations": [
+    "No pets or domestic animals, except certified assistance animals.",
+    "No smoking: NSW national parks are smoke-free.",
+    "The Big Yango precinct is gated; enter only with a permit as an overnight guest.",
+    "Treat Aboriginal sites and engravings with respect and leave them undisturbed.",
+    "No fires of any kind during total fire bans or park fire bans."
+  ],
+  "themes": [
+    "theme-indigenous-heritage",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:Mount Yengo before Rain.jpg",
+      "caption": "Mount Yengo rising above the ranges",
+      "altText": "A flat-topped mountain on the horizon above layers of forested ridges under grey cloud"
+    },
+    {
+      "file": "File:Yengo National Park lookout.jpg",
+      "caption": "Looking out over Yengo towards Mount Yengo",
+      "altText": "A view across forested ridges from a rocky lookout"
+    },
+    {
+      "file": "File:Mount Yengo summit with basalt.jpg",
+      "caption": "Basalt on the summit of Mount Yengo",
+      "altText": "A pile of dark basalt rocks among trees on a mountain top"
+    },
+    {
+      "file": "File:Eopsaltria australis - Mogo Campground.jpg",
+      "caption": "An eastern yellow robin at Mogo campground",
+      "altText": "A small bird with a grey back and bright yellow breast perched on a branch"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yengo National Park — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yengo-national-park"
+    },
+    {
+      "title": "Yengo National Park: learn more — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yengo-national-park/learn-more"
+    },
+    {
+      "title": "Yengo National Park: visitor info — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yengo-national-park/visitor-info"
+    },
+    {
+      "title": "Yengo National Park, Parr State Conservation Area and Finchley Aboriginal Area Plan of Management (2009) — NSW Department of Environment and Climate Change",
+      "url": "https://www.environment.nsw.gov.au/sites/default/files/yengo-national-park-parr-sca-finchley-aboriginal-area-plan-of-management-090141.pdf"
+    },
+    {
+      "title": "Old Great North Road, Dharug National Park, Conservation Management Plan — NSW Environment and Heritage",
+      "url": "https://www.environment.nsw.gov.au/node/35806"
+    },
+    {
+      "title": "Greater Blue Mountains World Heritage Area — NSW Environment and Heritage",
+      "url": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/greater-blue-mountains"
+    },
+    {
+      "title": "Fee-collecting national parks — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/fee-collecting-parks"
+    },
+    {
+      "title": "Annual passes — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/annual-passes"
+    },
+    {
+      "title": "Total fire bans and park fire bans — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/safety/fire-safety/fire-bans"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

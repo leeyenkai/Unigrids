@@ -1,0 +1,286 @@
+{
+  "placeID": "au-np-daintree",
+  "contentVersion": 1,
+  "summary": "Eastern Kuku Yalanji country, where some of Australia's last extensive lowland rainforest runs down steep ranges to the beaches of the Coral Sea. Daintree National Park (CYPAL) is part of the Wet Tropics World Heritage Area and borders the Great Barrier Reef. Visitors come for the clear river at Mossman Gorge, the boardwalks and beaches of Cape Tribulation, and cassowaries by the road.",
+  "facts": {
+    "establishedYear": 1967,
+    "areaHectares": 73500,
+    "bestSeasons": [
+      "winter",
+      "spring"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "The rocks of the Daintree began as sediment on the floor of a sea about 400 million years ago, when the coast lay more than 100 kilometres west of where it is now. Uplift raised them with granite far above today's sea level, and erosion of the softer metamorphic rock has left the hard granite standing as the steep coastal ranges. Those ranges catch moist air off the ocean; some places receive more than 6 metres of rain a year, and the Mossman River tumbles over granite boulders washed down in floods.",
+    "Through ice-age droughts that drove rainforest from most of Australia, the cloudy mountaintops and moist valleys here were refuges. Most of the world's 19 primitive flowering-plant families are found in the park and around it, including a pine-like she-oak, Gymnostoma australianum, now confined to pockets north of the Daintree River. Bennett's tree-kangaroo lives only north of the river, the Daintree River ringtail possum almost only in its catchment, and the southern cassowary, two metres tall, spreads the seeds of the largest rainforest fruits.",
+    "This is the traditional country of the Eastern Kuku Yalanji people, whose country extends towards Cooktown. Many landforms carry spiritual significance: Wundu (Thornton Peak), Manjal Dimbi (Mount Demi), Wurrmbu (The Bluff) and Kulki (Cape Tribulation). The seasons told people what to gather — when mat grass flowers, it is time to collect scrubfowl eggs. Manjal Jimalji, the Devils Thumb, is a cultural site that tells the story of fire's creation. In September 2021 the Queensland Government returned the park to the Eastern Kuku Yalanji as Aboriginal land, now jointly managed.",
+    "James Cook named Cape Tribulation in 1770 after the Endeavour was holed on a reef nearby, 'because here began all our troubles'. George Elphinstone Dalrymple explored the Daintree River in 1873, and timber-getters had cut out its red cedar within a decade. Farming cleared much of the coastal lowland from the 1880s, and a timber road reached Cape Tribulation by 1963. The Mossman Gorge section was declared a national park in 1967, Cape Tribulation in 1981, and the area joined the Wet Tropics World Heritage list in 1988."
+  ],
+  "howItWorks": [
+    "Daintree National Park (CYPAL) is Cape York Peninsula Aboriginal Land, owned by the Eastern Kuku Yalanji people since a handback signed at Bloomfield in September 2021. It is jointly managed by the Jabalbina Yalanji Aboriginal Corporation and the Queensland Parks and Wildlife Service under an Indigenous Management Agreement, in collaboration with the Wet Tropics Management Authority. The park is open 24 hours a day and there is no national park entry fee; QPWS's permits and fees page lists permits for camping, driving in recreation areas, events and business.",
+    "The park has two sections. At Mossman Gorge, shuttle buses run every 15 minutes from 8am to 5.45pm from the Mossman Gorge Centre, 2 kilometres into the park (fees apply), but you may also walk or cycle in free of charge at any time. Cape Tribulation lies north of the Daintree River, reached by a vehicle ferry that runs from 5am to midnight. Camping is allowed only at Noah Beach, with a permit normally booked and paid for before arrival; there is no camping on the Manjal Jimalji or Mount Sorrow trails or anywhere else in the park. In November 2026 the Queensland booking system was switched off after a data breach at the provider Bookeasy; while the temporary arrangements last, QPWS says you may camp in open parks without a permit. Check the QPWS website before you go.",
+    "This is crocodile and stinger country. Estuarine crocodiles can be in any water here and attacks can be fatal: never swim where crocodiles may live, even without a sign, and camp at least 2 metres above the high-water mark. Dangerous stinging jellyfish may be in the sea at any time, more often in the warmer months. QPWS warns that swimming at Mossman Gorge is dangerous at any time — people have died there — because water levels rise without warning over submerged boulders."
+  ],
+  "sights": [
+    {
+      "name": "Mossman Gorge",
+      "note": "The Mossman River cascades among granite boulders. The 660-metre Baral Marrjanga boardwalk from the day-use area leads through rainforest to a river lookout; it is wheelchair accessible.",
+      "location": [
+        -16.46976,
+        145.32964
+      ]
+    },
+    {
+      "name": "Rainforest circuit, Mossman Gorge",
+      "note": "A 3.4-kilometre circuit through tall lowland rainforest with strangler figs and epiphytes, beyond the Rex Creek bridge. Check alerts: closed for works into December 2026.",
+      "location": [
+        -16.46956,
+        145.32875
+      ]
+    },
+    {
+      "name": "Manjal Jimalji trail",
+      "note": "A hard 10.6-kilometre return climb, about eight hours, through lowland and upland rainforest to Manjal Jimalji (Devils Thumb). Best walked from May to November.",
+      "location": [
+        -16.38634,
+        145.29165
+      ]
+    },
+    {
+      "name": "Mount Alexandra Lookout",
+      "note": "A lookout in the Cape Tribulation section with views over the mouth of the Daintree River.",
+      "location": [
+        -16.24586,
+        145.43604
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Jindalba boardwalk",
+      "note": "A 650-metre boardwalk through dense lowland rainforest and clear creeks at the foot of Mount Alexandra; look for Bennett's tree-kangaroos.",
+      "location": [
+        -16.23881,
+        145.43287
+      ]
+    },
+    {
+      "name": "Dubuji boardwalk",
+      "note": "A 1.2-kilometre loop near Myall Beach through lowland rainforest, a spring-fed creek and mangrove swamps. Dubuji means 'place of spirits'.",
+      "location": [
+        -16.08955,
+        145.46272
+      ]
+    },
+    {
+      "name": "Kulki",
+      "note": "A 600-metre return boardwalk to a platform overlooking the beach at Cape Tribulation, where rainforest slopes sweep down to the sand.",
+      "location": [
+        -16.07659,
+        145.47214
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Mount Sorrow ridge trail",
+      "note": "A steep 7-kilometre return climb, about six hours, from the lowlands to a lookout at 680 metres over the Daintree coast and Snapper Island.",
+      "location": [
+        -16.07662,
+        145.44028
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Mossman Gorge Centre",
+      "note": "The visitor centre outside the gorge, where the shuttle bus into the park starts.",
+      "location": [
+        -16.47422,
+        145.34833
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Mossman Gorge, 80 kilometres north of Cairns: the Mossman Gorge Centre on Johnston Road, then by shuttle bus, on foot or by bicycle",
+      "Cape Tribulation, from the Daintree River ferry crossing 30 kilometres north of Mossman",
+      "The Cape Tribulation–Bloomfield road north of Cape Tribulation, four-wheel drive only"
+    ],
+    "reservations": "No reservation is needed to enter. Camping at Noah Beach is normally booked and paid for before travelling. In November 2026 the QPWS booking system was offline after a data breach and permits were temporarily not required — check the QPWS website before you go.",
+    "permits": [
+      "Camping permit for Noah Beach camping area (temporarily waived while the QPWS booking system is offline)"
+    ],
+    "camping": [
+      "Noah Beach camping area, Cape Tribulation — tents and camper trailers, no caravans, no campfires; the park's only camping area"
+    ],
+    "lodging": [
+      "Accommodation at Cape Tribulation and along the road north of the Daintree River, and in Mossman, Port Douglas and Cairns"
+    ],
+    "seasonalClosures": [
+      "Noah Beach camping area closes every wet season, from the first Sunday after New Year's Day until Good Friday; dates vary with the weather",
+      "The Daintree ferry runs with a reduced service on Christmas Day and stops during floods and repairs",
+      "The Rainforest circuit at Mossman Gorge is closed from 9 November to 15 December 2026 — check park alerts"
+    ],
+    "seasonalClosureMonths": [
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": "The Daintree has one of the wettest climates in Australia. From December to April heavy downpours are frequent, some areas get more than 6 metres of rain a year, and maximum temperatures run from 27°C to 33°C with humidity often above 80 per cent. The cooler, drier months from May to September are the best time to visit, with average maximums of about 26°C and lower humidity. Road conditions can deteriorate quickly in rain; check the weather before you head north.",
+  "directions": "Daintree National Park (CYPAL) is 80 to 150 kilometres north of Cairns along the Captain Cook Highway. For Mossman Gorge, turn left into Johnston Road just before the centre of Mossman and continue 2 kilometres to the Mossman Gorge Centre. For Cape Tribulation, drive 30 kilometres north from Mossman to the Daintree River and take the vehicle ferry, which runs from 5am to midnight daily. From the ferry to Cape Tribulation the road is narrow and winding but suitable for two-wheel-drive vehicles; caravans are not recommended. Beyond Cape Tribulation the mostly unsealed Cape Tribulation–Bloomfield road is for four-wheel drives only. Watch for cassowaries.",
+  "fees": [
+    {
+      "title": "Camping permit, Noah Beach",
+      "cost": "$7.75 per person per night",
+      "amount": 7.75,
+      "currencyCode": "AUD",
+      "detail": "Or $31.00 per family per night (one or two adults and children under 18, up to eight people); children under five camp free. Queensland rates from 1 July 2026. Temporarily not required while the booking system is offline after the November 2026 data breach — check before you go."
+    },
+    {
+      "title": "Park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "AUD",
+      "detail": "No national park entry fee; walking or cycling into Mossman Gorge is free at any time. The Mossman Gorge shuttle bus and the Daintree River ferry charge their own fares."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1770",
+      "text": "James Cook names Cape Tribulation after the Endeavour is holed on a reef nearby."
+    },
+    {
+      "year": "1873",
+      "text": "George Elphinstone Dalrymple explores the Daintree River valley and names the river after the geologist Richard Daintree."
+    },
+    {
+      "year": "1956",
+      "text": "A private ferry begins operating on the Daintree River."
+    },
+    {
+      "year": "1963",
+      "text": "The timber road is completed through to Cape Tribulation."
+    },
+    {
+      "year": "1967",
+      "text": "The Mossman Gorge section of Daintree National Park is declared."
+    },
+    {
+      "year": "1981",
+      "text": "Cape Tribulation National Park is declared, protecting 17,000 hectares of lowland rainforest."
+    },
+    {
+      "year": "1984",
+      "text": "The contested coastal road north from Cape Tribulation is completed, linking through to Cooktown."
+    },
+    {
+      "year": "1988",
+      "text": "The Wet Tropics of Queensland are inscribed on the World Heritage List."
+    },
+    {
+      "year": "1995",
+      "text": "Cape Tribulation National Park is amalgamated into Daintree National Park."
+    },
+    {
+      "year": "2021",
+      "text": "On 29 September the park is returned to the Eastern Kuku Yalanji people as Cape York Peninsula Aboriginal Land, to be jointly managed."
+    }
+  ],
+  "safety": [
+    "Be crocwise: never swim or wade where crocodiles may live, stand back from the water's edge when fishing, and never clean fish or leave scraps near the water or your camp.",
+    "Do not swim at Mossman Gorge. Water levels rise fast and without warning, and strong currents and submerged boulders have killed people.",
+    "Marine stingers may be present in coastal waters at any time, more often in the warmer months.",
+    "Cassowaries can cause serious injury or death. Keep well away, never feed them, and slow down on the roads.",
+    "Do not touch stinging trees along rainforest edges; any part of the leaf gives a very painful sting."
+  ],
+  "regulations": [
+    "Camping is permitted only at Noah Beach, with a permit; none on the Manjal Jimalji or Mount Sorrow trails or elsewhere in the park.",
+    "Feeding crocodiles is illegal. Do not feed any wildlife.",
+    "Stay on the walking tracks, take all rubbish and food scraps out, and slow down for cassowaries on the roads.",
+    "When boating, go slowly over seagrass beds where dugongs feed. Do not empty chemical toilets into the park's bio-cycle toilets."
+  ],
+  "themes": [
+    "theme-temperate-rainforest",
+    "theme-coastal",
+    "theme-mountains",
+    "theme-indigenous-heritage",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:Cape Tribulation (3610978311).jpg",
+      "caption": "Rainforest ranges above the sea at Cape Tribulation",
+      "altText": "Forest-covered mountains sloping down to a curving beach and calm sea, seen over a mangrove canopy"
+    },
+    {
+      "file": "File:Cape tribulation.jpg",
+      "caption": "The beach at Cape Tribulation",
+      "altText": "A wide empty sand beach fringed by overhanging rainforest trees, with a forested headland across the water"
+    },
+    {
+      "file": "File:Daintree National Park.jpg",
+      "caption": "Boulders in a rainforest stream",
+      "altText": "Large moss-covered granite boulders and a fallen log in a still stream surrounded by palms and ferns"
+    },
+    {
+      "file": "File:Daintree Rainforest 2.jpg",
+      "caption": "A rocky creek through the rainforest",
+      "altText": "Sunlight falling on a shallow creek running between dense ferns, palms and tall trees"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Daintree National Park (CYPAL) — Queensland Parks and Wildlife Service",
+      "url": "https://parks.qld.gov.au/parks/daintree"
+    },
+    {
+      "title": "About Daintree — QPWS",
+      "url": "https://parks.qld.gov.au/parks/daintree/about"
+    },
+    {
+      "title": "Nature, culture and history — Daintree National Park (CYPAL), QPWS",
+      "url": "https://parks.qld.gov.au/parks/daintree/about/culture"
+    },
+    {
+      "title": "Visiting Daintree safely — QPWS",
+      "url": "https://parks.qld.gov.au/parks/daintree/visiting-safely"
+    },
+    {
+      "title": "Camping in Daintree — QPWS",
+      "url": "https://parks.qld.gov.au/parks/daintree/camping"
+    },
+    {
+      "title": "Daintree journeys and attractions (Baral Marrjanga, Rainforest circuit, Manjal Jimalji, Mount Sorrow, Dubuji, Kulki, Jindalba, Mount Alexandra) — QPWS",
+      "url": "https://parks.qld.gov.au/parks/daintree/journeys"
+    },
+    {
+      "title": "160,000 hectares returned on path to reconciliation — Queensland Government media statement, 29 September 2021",
+      "url": "https://statements.qld.gov.au/statements/93360"
+    },
+    {
+      "title": "Camping bookings and fees — QPWS",
+      "url": "https://parks.qld.gov.au/camping/bookings"
+    },
+    {
+      "title": "Permits and fees — QPWS",
+      "url": "https://parks.qld.gov.au/before-you-visit/permits-and-fees"
+    },
+    {
+      "title": "Important security update – Queensland National Parks Booking Service (current at 14 November 2026)",
+      "url": "https://parks.qld.gov.au/contactus/important-security-update"
+    },
+    {
+      "title": "Wet Tropics of Queensland — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/486/"
+    },
+    {
+      "title": "Daintree National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Daintree_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

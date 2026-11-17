@@ -1,0 +1,346 @@
+{
+  "placeID": "au-np-cradle-mountain-lake-st-clair",
+  "contentVersion": 1,
+  "summary": "One of Australia's most famous national parks, a glaciated highland in the heart of the Tasmanian Wilderness World Heritage Area. The jagged dolerite peak of Cradle Mountain rises over Dove Lake at its northern end; Lake St Clair, Australia's deepest lake, lies at its southern end. Between them runs the Overland Track, a six-day alpine walk, and both ends have short walks through rainforest, buttongrass and alpine country.",
+  "facts": {
+    "establishedYear": 1922,
+    "areaHectares": 161583,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "One to six days"
+  },
+  "story": [
+    "Glaciers shaped this country over the past two million years. They carved the valley of the Dove River, scooped out cirques such as Crater Lake and left lakes and tarns across the plateau. The deepest of the basins they scoured holds Lake St Clair, which reaches 167 metres, the deepest lake in Australia; moraines pushed to the edges of the old glacier still run along its shore. Cradle Mountain itself is dolerite, and further south along the Overland Track, Mount Ossa, at 1,617 metres, is the highest peak in Tasmania.",
+    "Tasmanian Aboriginal people have lived in the Cradle Mountain area for more than 35,000 years, hunting game and gathering plants with bone, stone and timber tools. Their living sites show people surviving at high southern latitudes through the last ice age, and the community today keeps a strong connection to this landscape. Their name for Lake St Clair is leeawuleena, 'sleeping water'. Vegetation patterns around the lake still carry the mark of thousands of years of Aboriginal burning.",
+    "From the 1820s explorers, prospectors, trappers, timber-getters and graziers came into the high country, and there were proposals for mines, railways and farms. The Austrian-born naturalist Gustav Weindorfer and his wife Kate saw it differently. From the summit of Cradle Mountain in 1910 Gustav declared, 'This must be a national park for the people for all time.' In 1912 the couple built Waldheim, a home and guest chalet in Cradle Valley, and with a small group of supporters campaigned until, in May 1922, 63,943 hectares were gazetted as a scenic reserve.",
+    "The park now covers more than 160,000 hectares of rainforest, buttongrass moorland, alpine heath and lakes, with ancient Gondwanan plants such as King Billy pine, pencil pine, celery-top pine and the deciduous beech, or fagus, that turns gold and red each autumn. Tasmanian devils, spotted-tailed and eastern quolls, wombats, platypus and echidnas live here. In 1982 the park became part of the Tasmanian Wilderness World Heritage Area, which UNESCO lists for both its natural and cultural values."
+  ],
+  "howItWorks": [
+    "Cradle Mountain-Lake St Clair is run by the Tasmania Parks and Wildlife Service (PWS), and a valid parks pass is needed to enter any Tasmanian national park; children under five are free. Cradle Mountain is treated differently from every other park. The ordinary Daily Pass does not cover it, and visitors either buy a Cradle Mountain Icon Daily Pass at the visitor centre, which includes the shuttle bus, or hold a Holiday Pass (all parks for up to two months) or an Annual Pass and buy a separate shuttle ticket. PWS reviews its fees each year in line with CPI, so check before you go.",
+    "At Cradle Mountain you park at the visitor centre, validate your pass and take the shuttle bus, which runs seven days a week and stops at the Interpretation Centre and Ranger Station, Snake Hill, Ronny Creek and Dove Lake. Since 15 November 2023 adults without an Icon pass or Overland Track pass pay for a shuttle ticket valid for 72 hours; under-18s ride free. Private cars cannot drive in while the shuttle is running, and campervans, caravans and trailers are never allowed on Dove Lake Road. Outside shuttle hours there are nine private parking spaces at Dove Lake.",
+    "The Overland Track must be booked for departures from 1 October to 31 May. Up to 34 independent walkers may start each day, walking north to south only, and bookings for each season open at 9 am on the first Tuesday in July. The fee covers park entry for the walk and the shuttle to Ronny Creek. Huts cannot be booked, so every walker carries a tent. You collect your pass at the Cradle Mountain Visitor Centre by 1.30 pm on departure day (12.30 pm in April and May) and attend a walker briefing there; the last briefing is at 1.30 pm (12 pm in April and May). From June to September walkers register instead and need a parks pass. The whole park is a Fuel Stove Only Area: no campfires at any time. Dogs and recreational drones are not allowed."
+  ],
+  "sights": [
+    {
+      "name": "Cradle Mountain",
+      "note": "The park's jagged dolerite emblem, 1,545 metres. The summit track is 12.8 kilometres and about eight hours return, Grade 5, with steep, exposed boulder scrambling; go only in fine weather.",
+      "location": [
+        -41.68464,
+        145.9513
+      ]
+    },
+    {
+      "name": "Dove Lake",
+      "note": "A glacial lake directly beneath Cradle Mountain. Its 6-kilometre circuit, two to three hours, passes through the Ballroom Forest of myrtle and King Billy pine; walk it clockwise.",
+      "location": [
+        -41.66041,
+        145.96141
+      ]
+    },
+    {
+      "name": "Crater Lake",
+      "note": "A classic cirque lake on a 5.7-kilometre, two-hour circuit past Lake Lilla and Wombat Pool, a good choice when cloud and rain lash the higher tracks.",
+      "location": [
+        -41.65723,
+        145.94546
+      ]
+    },
+    {
+      "name": "Marions Lookout",
+      "note": "Reached by a very steep, short climb above Crater Lake on the first day of the Overland Track, looking over Dove Lake to Cradle Mountain.",
+      "location": [
+        -41.66038,
+        145.9527
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Waldheim Chalet",
+      "note": "A faithful replica, built in 1976 from King Billy pine shingles, of the Weindorfers' 1912 chalet. Displays tell their story; the short Weindorfers Forest Walk starts nearby.",
+      "location": [
+        -41.6386,
+        145.94365
+      ]
+    },
+    {
+      "name": "Mount Ossa",
+      "note": "Tasmania's highest peak, 1,617 metres, a steep and exposed side trip of 5.2 kilometres and four to five hours return from Pelion Gap on the Overland Track.",
+      "location": [
+        -41.87072,
+        146.03297
+      ]
+    },
+    {
+      "name": "Lake St Clair",
+      "note": "leeawuleena, 'sleeping water': Australia's deepest freshwater lake, 167 metres, where the Overland Track ends. A private ferry runs between Cynthia Bay and Narcissus.",
+      "location": [
+        -42.06578,
+        146.17517
+      ]
+    },
+    {
+      "name": "Shadow Lake",
+      "note": "A 13-kilometre, four- to five-hour Grade 4 circuit from Lake St Clair through rainforest, subalpine moorland and highland eucalypt forest.",
+      "location": [
+        -42.09603,
+        146.11848
+      ]
+    },
+    {
+      "name": "Cradle Mountain Visitor Centre",
+      "note": "At the park gateway: parks passes, shuttle tickets, Overland Track check-in and walker safety advice. Open daily.",
+      "location": [
+        -41.58346,
+        145.93691
+      ],
+      "kind": "visitorCentre"
+    },
+    {
+      "name": "Lake St Clair Visitor Centre",
+      "note": "At Cynthia Bay, with displays on glaciation and the Aboriginal people of the lake, and the start of the Watersmeet and Larmairremener tabelti walks.",
+      "location": [
+        -42.11625,
+        146.17409
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Cradle Mountain Visitor Centre, 4057 Cradle Mountain Road, at the northern end — park here and take the shuttle bus",
+      "Lake St Clair Visitor Centre at Cynthia Bay, 5.5 kilometres from Derwent Bridge on Lake St Clair Road (C193), at the southern end"
+    ],
+    "reservations": "The Overland Track must be booked for departures from 1 October to 31 May; bookings for summer 2026/27 are open. The Narcissus–Cynthia Bay ferry is booked separately with Lake St Clair Lodge before you start. Check with PWS before you go.",
+    "permits": [
+      "A valid Tasmanian parks pass, or a Cradle Mountain Icon Daily Pass",
+      "A shuttle ticket for adults at Cradle Mountain unless an Icon pass or Overland Track pass covers it",
+      "An Overland Track booking (1 October–31 May) or winter registration (1 June–23 September)"
+    ],
+    "camping": [
+      "Tent platforms and grassy overflow sites beside the huts on the Overland Track; carry a tent, as huts cannot be booked",
+      "No camping around Lake Windermere: the overnight sites are 500 metres from its shore"
+    ],
+    "lodging": [
+      "Waldheim Cabins in Cradle Valley, eight simple cabins inside the park",
+      "Public huts on the Overland Track, first come, first served",
+      "Hotel, lodge and holiday-park accommodation in the Cradle Mountain area"
+    ],
+    "seasonalClosures": [
+      "The Lyell Highway and the road from Derwent Bridge to Lake St Clair may occasionally be closed by snow in winter",
+      "From June to September there are no walker briefings and little track maintenance on the Overland Track, and hut heating is not guaranteed"
+    ]
+  },
+  "weather": "This is mountain country where snow, rain, wind and sun are all possible at any time of year, and the weather can change within the hour. At Cradle Valley, 903 metres up, the Bureau of Meteorology's long-term averages give about 2,800 millimetres of rain a year, falling on some 155 days. Summer days are cool: January and February average 17°C at their warmest, while July averages under 5°C and nights from June to August fall below freezing. Lake St Clair, lower and further east, gets about 1,900 millimetres, with summer highs near 20°C and winter highs about 7°C. Autumn brings the colours of the fagus; winter brings deep snowdrifts on the plateau; spring brings wildflowers and young animals. Bushfires can occur between October and March.",
+  "directions": "The two ends of the park are far apart and no road crosses it. Cradle Mountain, in the north, is most easily reached by the Cradle Link Road (C132) and Cradle Mountain Road; park at the visitor centre and take the 20-minute shuttle bus to Dove Lake. Lake St Clair, in the south, is about two and a half hours west of Hobart on the Lyell Highway (A10), and a similar time from Launceston via Longford and Poatina; turn off at Derwent Bridge. Coach and charter services run to both visitor centres all year from Hobart, Launceston and Devonport, more often in summer. Drive slowly at dusk and avoid driving at night: wildlife is on the roads.",
+  "fees": [
+    {
+      "title": "Overland Track Pass, adult",
+      "cost": "$312",
+      "amount": 312,
+      "currencyCode": "AUD",
+      "detail": "For departures from 1 October to 31 May; children 17 and under and concession holders $272. Includes park entry for the walk and the shuttle to the start. Reviewed each year by CPI."
+    },
+    {
+      "title": "Icon Daily Pass, Cradle Mountain only",
+      "cost": "$30.70",
+      "amount": 30.7,
+      "currencyCode": "AUD",
+      "detail": "Per adult, shuttle bus included; children 5–17 $12.30, family (two adults, three children) $73.75. Sold at the Cradle Mountain Visitor Centre; cannot be upgraded. As listed by PWS in November 2026."
+    },
+    {
+      "title": "Cradle Mountain shuttle bus ticket",
+      "cost": "$15.50",
+      "amount": 15.5,
+      "currencyCode": "AUD",
+      "detail": "Per adult, valid 72 hours, for holders of another parks pass; under-18s free. An annual shuttle pass is $46.50 per person."
+    },
+    {
+      "title": "Holiday Pass, all Tasmanian national parks",
+      "cost": "$98.35",
+      "amount": 98.35,
+      "currencyCode": "AUD",
+      "detail": "Per vehicle of up to eight people for up to two months, or $49.20 per person travelling by bus, bicycle or on foot. The Cradle Mountain shuttle is not included."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "More than 35,000 years ago",
+      "text": "Tasmanian Aboriginal people are living in the Cradle Mountain area, through the last ice age."
+    },
+    {
+      "year": "1820s",
+      "text": "Explorers, prospectors, trappers and graziers begin to enter the high country."
+    },
+    {
+      "year": "1910",
+      "text": "Gustav Weindorfer, on the summit of Cradle Mountain, calls for a national park 'for the people for all time'."
+    },
+    {
+      "year": "1912",
+      "text": "Gustav and Kate Weindorfer build Waldheim, their home and guest chalet, in Cradle Valley."
+    },
+    {
+      "year": "1922",
+      "text": "In May, 63,943 hectares are gazetted as a scenic reserve."
+    },
+    {
+      "year": "1932",
+      "text": "Gustav Weindorfer dies."
+    },
+    {
+      "year": "1976",
+      "text": "Waldheim, used for accommodation until 1974, is demolished after a fire; a replica is built in traditional bush carpentry."
+    },
+    {
+      "year": "1982",
+      "text": "The park becomes part of the Tasmanian Wilderness World Heritage Area."
+    },
+    {
+      "year": "2023",
+      "text": "From 15 November a fee applies to ride the Cradle Mountain shuttle bus."
+    }
+  ],
+  "safety": [
+    "Deaths have occurred, including in summer, when walkers were caught unprepared in cold, wet and windy weather. On alpine walks carry a waterproof jacket with hood and overtrousers, warm layers, a hat and gloves, and sturdy boots; watch PWS's hypothermia safety video.",
+    "The Overland Track is Grade 4: almost half lies above 1,000 metres on exposed plateau, with no phone reception. PWS does not recommend it for children under eight. Delay your start if severe weather is forecast and be ready to turn back.",
+    "Record your trip in the log books at the start, the end and each hut, tell someone your plans, and consider carrying a personal locator beacon; they can be hired at the Cradle Mountain and Lake St Clair visitor centres.",
+    "Summit tracks on Cradle Mountain, Barn Bluff and Mount Ossa cross boulder fields that are dangerous under snow. Attempt them only in fine weather.",
+    "Treat water from hut rainwater tanks before drinking: boil it or use a treatment."
+  ],
+  "regulations": [
+    "Fuel Stove Only Area all year: campfires are prohibited, and breaches can bring a substantial fine.",
+    "Do not feed wildlife. Seal all food in your pack and keep it inside your tent: brushtail possums rip tents to reach it, and currawongs open pack zips.",
+    "Recreational drones are not permitted, and dogs are not allowed in Tasmanian national parks.",
+    "Stay on the formed tracks to protect the alpine vegetation, and carry out all rubbish.",
+    "Clean boots, gear and vehicles before you arrive to stop the spread of root rot and other diseases."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-alpine",
+    "theme-temperate-rainforest",
+    "theme-indigenous-heritage",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Cradle Mountain Behind Dove Lake.jpg",
+      "caption": "Cradle Mountain above Dove Lake",
+      "altText": "A jagged rocky mountain rising behind a dark lake fringed with low bush"
+    },
+    {
+      "file": "File:Boat shed and Cradle Mountain at Dove Lake, Tas.jpg",
+      "caption": "The old boat shed on Dove Lake beneath Cradle Mountain",
+      "altText": "A small timber boat shed on the shore of a lake, with a craggy mountain beyond"
+    },
+    {
+      "file": "File:Lake St Clair from Echo Point.jpg",
+      "caption": "Lake St Clair, leeawuleena, seen from Echo Point",
+      "altText": "A long lake stretching between forested mountains"
+    },
+    {
+      "file": "File:Mount Ossa From Pelion Plains.jpg",
+      "caption": "Mount Ossa, Tasmania's highest peak, from the Pelion Plains on the Overland Track",
+      "altText": "A rugged mountain rising above an open plain of grasses and low shrubs"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cradle Mountain — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain"
+    },
+    {
+      "title": "Lake St Clair — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Lake-St-Clair.aspx"
+    },
+    {
+      "title": "Overland Track — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track"
+    },
+    {
+      "title": "Overland Track: frequently asked questions — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track/frequently-asked-questions"
+    },
+    {
+      "title": "Overland Track: walk notes — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track/overland-track-walk-notes"
+    },
+    {
+      "title": "Overland Track: walk options — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track/overland-track-walk-options"
+    },
+    {
+      "title": "Overland Track: plan your trip — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track/overland-track-plan-your-trip"
+    },
+    {
+      "title": "Cradle Mountain shuttle bus information — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/FAQs---Shuttle-changes-from-15-November-2023.aspx"
+    },
+    {
+      "title": "Cradle Summit — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Cradle-Summit.aspx"
+    },
+    {
+      "title": "Dove Lake — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Dove-Lake.aspx"
+    },
+    {
+      "title": "Crater Lake — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Crater-Lake.aspx"
+    },
+    {
+      "title": "Waldheim Chalet — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Waldheim-Chalet.aspx"
+    },
+    {
+      "title": "Park passes and entry fees — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/entry-fees.aspx"
+    },
+    {
+      "title": "Fuel Stove Only Areas — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Fuel-Stove-Only-Areas.aspx"
+    },
+    {
+      "title": "Leave No Trace — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Leave-no-trace.aspx"
+    },
+    {
+      "title": "Safety in parks — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Safety-in-parks.aspx"
+    },
+    {
+      "title": "Dogs in parks — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Dogs-in-parks.aspx"
+    },
+    {
+      "title": "Tasmanian Wilderness World Heritage Area — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)"
+    },
+    {
+      "title": "Reserve listing: national parks and reserves (2 June 2022) — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Documents/Reserve%20Listing.pdf"
+    },
+    {
+      "title": "Tasmanian Wilderness — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/181/"
+    },
+    {
+      "title": "Climate statistics: Cradle Valley (Waldheim), 096005 — Bureau of Meteorology",
+      "url": "https://www.bom.gov.au/climate/averages/tables/cw_096005.shtml"
+    },
+    {
+      "title": "Climate statistics: Lake St Clair National Park, 096071 — Bureau of Meteorology",
+      "url": "https://www.bom.gov.au/climate/averages/tables/cw_096071.shtml"
+    },
+    {
+      "title": "Cradle Mountain-Lake St Clair National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cradle_Mountain-Lake_St_Clair_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

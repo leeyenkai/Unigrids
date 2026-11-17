@@ -1,0 +1,306 @@
+{
+  "placeID": "au-np-royal",
+  "contentVersion": 1,
+  "summary": "Dedicated in 1879 on Sydney's southern edge, Royal is Australia's oldest national park and, in the words of the NSW National Parks and Wildlife Service, the world's second-oldest. Sandstone cliffs, surf beaches and heath line its coast, with rainforest gullies and the Hacking River inland. Most visitors come to swim at Wattamolla or Garie, or to walk the two-day Coast Track from Bundeena to Otford.",
+  "facts": {
+    "establishedYear": 1879,
+    "areaHectares": 15087,
+    "bestSeasons": [
+      "spring",
+      "winter"
+    ],
+    "suggestedTime": "One day, or two days for the Coast Track"
+  },
+  "story": [
+    "Royal sits on the sandstone plateau south of Port Hacking, in the Sydney Basin. The plateau ends at the sea in high cliffs broken by small bays: Wattamolla, Curracurrang, Garie, Era and Burning Palms. Inland, creeks have cut deep gullies down to the Hacking River, which runs north through the park to Port Hacking. Within a short walk the country changes from coastal heath and wetland to eucalypt forest, grassy woodland and pockets of rainforest with cabbage tree palms.",
+    "This variety makes the park one of the richest in Australia for plants and animals. More than 300 bird species have been recorded, among them yellow-tailed black cockatoos, crimson rosellas and sulphur-crested cockatoos. Wallabies, possums, sugar gliders and bats live in the forest, and Gymea lilies, grass trees and waratahs flower on the plateau. Platypuses were returned to the Hacking River in May 2023.",
+    "The park is the traditional Country of the Dharawal People. Its land and waters have been in the care of the Dharawal language group and other Aboriginal families and people for thousands of years, and the connection continues in cultural practice today. Aboriginal engravings survive in the park. At Jibbon, near Bundeena, is a significant cultural site; its name comes from the Dharawal word for a sandbar at low tide.",
+    "On 26 April 1879 the Government of New South Wales dedicated about 7,284 hectares here as 'The National Park', for public recreation. It was Australia's first national park and, after Yellowstone, the second in the world. A working settlement grew up at Audley to run it, and visitors arrived by train and by coach along carriage drives such as Lady Carrington Drive. The park took the name Royal in 1955, after Queen Elizabeth II passed through by train on her 1954 tour. It now covers about 15,087 hectares and gets more than six million visits a year."
+  ],
+  "howItWorks": [
+    "Royal is run by the NSW National Parks and Wildlife Service (NPWS). Only 45 of the state's more than 890 parks and reserves charge a vehicle entry fee, and Royal is one of them: $12 per vehicle per day, paid on arrival. Walking or cycling in costs nothing. If you visit NSW parks often, an annual pass is linked to your number plate. The All Parks Pass covers every fee-collecting park in NSW, including Kosciuszko, for $190 a year or $335 for two years. The Multi Park Pass covers every one except Kosciuszko for $65 a year. These prices were listed by NPWS in November 2026. No pass covers camping, cottages or tours.",
+    "The park is open from 7 am to 8.30 pm and may close in poor weather or high fire danger. You book campgrounds and cottages with NPWS online or through the National Parks Contact Centre on 1300 072 757, and every booking carries a non-refundable booking fee. Bushfires are most common from October to March. In that period the NSW Rural Fire Service can declare a total fire ban, usually around 5 pm for the following day. During a ban, wood and solid-fuel fires and barbecues are prohibited in parks, as are liquid-fuel stoves, and visitor-owned gas and electric cookers are generally prohibited too. NPWS can also declare its own park fire ban, or close parks when the fire risk to visitors is high. Some Royal tracks, including the one to Wedding Cake Rock, close during total fire bans.",
+    "Royal is busy, especially on summer weekends and public holidays, when its roads can be very congested. NPWS posts real-time parking and traffic-control updates as @royalnpalerts. Trains and the Cronulla–Bundeena ferry are an alternative to driving. Pets are not allowed anywhere in the park, nor are wood fires, smoking or recreational drones."
+  ],
+  "sights": [
+    {
+      "name": "The Coast Track",
+      "note": "About 27 kilometres one way from Bundeena to Otford along the clifftops, past beaches, lookouts and seasonal wildflowers. A grade 4 walk usually done over two days.",
+      "location": [
+        -34.08806,
+        151.15406
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Wedding Cake Rock",
+      "note": "A white, fragile sandstone formation on the clifftop, about an hour's walk south of Bundeena. It is unstable and fenced: enjoy it from behind the barrier.",
+      "location": [
+        -34.10967,
+        151.15242
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Wattamolla",
+      "note": "A sheltered cove where a creek falls into a lagoon behind the beach, with a large picnic area. One of the park's most popular swimming spots in summer.",
+      "location": [
+        -34.13604,
+        151.11602
+      ]
+    },
+    {
+      "name": "Garie Beach",
+      "note": "One of the park's main surf beaches. Little Garie and its heritage-listed cabin community are just to the south.",
+      "location": [
+        -34.17008,
+        151.06911
+      ]
+    },
+    {
+      "name": "Figure Eight Pools",
+      "note": "Rock pools on a wave-exposed rock shelf south of Burning Palms. Dangerous in big seas: check the wave forecast and tide before you go.",
+      "location": [
+        -34.19459,
+        151.03849
+      ]
+    },
+    {
+      "name": "Jibbon Aboriginal engravings",
+      "note": "Engravings on a rock platform at Jibbon, near Bundeena, a significant Aboriginal cultural site in Dharawal Country. Reached by the Jibbon loop track.",
+      "location": [
+        -34.07724,
+        151.16727
+      ]
+    },
+    {
+      "name": "Audley",
+      "note": "The park's historic heart on the Hacking River: picnic lawns, a weir, the Audley Dance Hall cafe and a boatshed hiring boats and bikes.",
+      "location": [
+        -34.07306,
+        151.05667
+      ]
+    },
+    {
+      "name": "Lady Carrington Drive",
+      "note": "An old carriage road running about 10 kilometres south from Audley beside the Hacking River, now a shady track for cycling and walking.",
+      "location": [
+        -34.11431,
+        151.04664
+      ]
+    },
+    {
+      "name": "Uloola Falls",
+      "note": "A waterfall on the Uloola walking track in the west of the park, beside a small bush campground.",
+      "location": [
+        -34.10823,
+        151.0385
+      ]
+    },
+    {
+      "name": "Royal National Park Visitor Centre",
+      "note": "At Audley, on Lady Carrington Drive. Maps, track advice and park information; open 8.30 am to 4.30 pm daily except Christmas Day.",
+      "location": [
+        -34.0751,
+        151.056
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Farnell Avenue, off the Princes Highway at Loftus — the main road in, to Audley and the visitor centre",
+      "McKell Avenue, off the Princes Highway at Waterfall",
+      "Lady Wakehurst Drive at Otford, at the southern end of the Coast Track",
+      "Bundeena, reached by ferry from Cronulla, at the northern end of the Coast Track"
+    ],
+    "reservations": "No booking is needed for a day visit. Campgrounds and cottages are booked with NPWS online or on 1300 072 757. Walkers doing the Coast Track over two days need a pre-booked campsite at Garie Beach, which has limited capacity.",
+    "permits": [
+      "Organised group events of 40 or more people need NPWS consent",
+      "Commercial filming and photography need NPWS consent"
+    ],
+    "camping": [
+      "Bonnie Vale campground near Bundeena, 79 sites with hot showers, some powered",
+      "Uloola Falls campground, a small bush campground in the west of the park",
+      "Garie Beach campground for Coast Track walkers, booked in advance"
+    ],
+    "lodging": [
+      "NPWS cottages in the park: Hilltop Cottage, Weemalah Cottage and Reids Flat Cottage",
+      "Accommodation in Cronulla, Bundeena and the Sutherland Shire"
+    ],
+    "seasonalClosures": [
+      "No seasonal closure. The park is open 7 am to 8.30 pm and may close in poor weather or high fire danger; some tracks close on total fire ban days — check NPWS alerts before you go"
+    ]
+  },
+  "weather": "Royal has a mild coastal climate. Summer days average 16°C to 27°C, warm enough for swimming at the beaches and freshwater pools, though temperatures have reached 42°C. Winter averages 6°C to 17°C and rarely freezes, and it is the best time for long walks; humpback whales pass the cliffs from about May to October, most often seen from June to August. Spring brings wildflowers to the heath along the Coast Track and Curra Moors. March is usually the wettest month, and the record for a single day is more than 250 millimetres of rain.",
+  "directions": "Royal begins about 30 kilometres south of central Sydney; Audley is 32 kilometres from the city. By car, leave the Princes Highway at Loftus (Farnell Avenue), Waterfall (McKell Avenue) or Otford (Lady Wakehurst Drive). Roads are very busy on summer weekends and public holidays, so check Live Traffic NSW. Trains on the Illawarra and South Coast lines stop at Loftus, Heathcote, Waterfall and Otford, all within walking distance of park tracks, and ferries cross Port Hacking from Cronulla station to Bundeena, the start of the Coast Track.",
+  "fees": [
+    {
+      "title": "Vehicle entry",
+      "cost": "$12 per vehicle per day",
+      "amount": 12,
+      "currencyCode": "AUD",
+      "detail": "Vehicles with more than eight seats pay $4.40 per adult and $2.20 per child per day. Walkers and cyclists enter free. As listed by NPWS in November 2026 — check before you go."
+    },
+    {
+      "title": "All Parks Pass",
+      "cost": "$190 for one year / $335 for two years",
+      "amount": 190,
+      "currencyCode": "AUD",
+      "detail": "Vehicle entry to every fee-collecting NSW national park, including Kosciuszko; seniors $152 and $268. A Multi Park Pass, valid everywhere except Kosciuszko, is $65 a year. Digital and linked to your vehicle. As listed by NPWS in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Thousands of years",
+      "text": "The land and waters are cared for by the Dharawal language group and other Aboriginal families and people."
+    },
+    {
+      "year": "1879",
+      "text": "On 26 April the Government Gazette notifies the dedication of 'The National Park', Australia's first, under Acting Premier Sir John Robertson."
+    },
+    {
+      "year": "1955",
+      "text": "The National Park is renamed Royal National Park after Queen Elizabeth II passes through by train on her 1954 tour."
+    },
+    {
+      "year": "1967",
+      "text": "Royal is reserved as a national park under the new National Parks and Wildlife Act."
+    },
+    {
+      "year": "1991",
+      "text": "The railway branch line into the park closes; it later reopens as a heritage tramway."
+    },
+    {
+      "year": "2006",
+      "text": "Royal National Park is placed on Australia's National Heritage List."
+    },
+    {
+      "year": "2012",
+      "text": "The coastal cabin communities of Little Garie, Era and Burning Palms are added to the NSW State Heritage Register."
+    },
+    {
+      "year": "2023",
+      "text": "Platypuses are returned to the Hacking River in May."
+    }
+  ],
+  "safety": [
+    "Figure Eight Pools sit on a dangerous rock shelf where waves can sweep people off without warning. Check the wave forecast and tide before you go, and stay away in big swell.",
+    "Stay behind the fences at Wedding Cake Rock and back from cliff edges: the sandstone is soft and can collapse.",
+    "NPWS says the park's beaches have no lifeguards: beware of rips, and swim only where you are confident.",
+    "Tracks are rough, steep and often hot. Carry plenty of water, wear sturdy shoes, and leave a trip intention with someone you trust. Mobile reception is patchy; in an emergency call 000.",
+    "Check NPWS alerts and the Rural Fire Service before you go. Tracks close on total fire ban days, and on Extreme or Catastrophic fire danger days leave bushfire-risk areas."
+  ],
+  "regulations": [
+    "No pets or domestic animals, except certified assistance animals.",
+    "No wood fires or campfires; gas or heat-bead cookers only if raised off the ground, and never during a total fire ban.",
+    "No recreational drones and no smoking anywhere in the park.",
+    "No powered watercraft south of the bridge in Cabbage Tree Basin or upstream of the Audley weir.",
+    "Motorbikes only on public roads, never on management trails or off-road."
+  ],
+  "themes": [
+    "theme-coastal",
+    "theme-conservation-movement",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Wedding Cake Rock in Royal National Park.jpg",
+      "caption": "Wedding Cake Rock above the Tasman Sea",
+      "altText": "A pale, flat-topped sandstone shelf on a clifftop above a deep blue sea"
+    },
+    {
+      "file": "File:Garie Beach, Royal National Park.jpg",
+      "caption": "Garie Beach in the south of the park",
+      "altText": "A curving sandy surf beach backed by green, forested hills"
+    },
+    {
+      "file": "File:Wattamolla lagoon.jpg",
+      "caption": "The lagoon and beach at Wattamolla",
+      "altText": "A small waterfall pouring into a calm lagoon with a sandy beach and sea beyond"
+    },
+    {
+      "file": "File:Figure 8 Pool, Royal National Park.jpg",
+      "caption": "Figure Eight Pools on the rock shelf south of Burning Palms",
+      "altText": "A rock pool shaped like the number eight in a flat sandstone shelf beside the sea"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Royal National Park — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/royal-national-park"
+    },
+    {
+      "title": "Royal National Park: learn more — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/royal-national-park/learn-more"
+    },
+    {
+      "title": "Royal National Park: visitor info — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/royal-national-park/visitor-info"
+    },
+    {
+      "title": "The Coast Track — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/the-coast-track"
+    },
+    {
+      "title": "Wedding Cake Rock — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/wedding-cake-rock"
+    },
+    {
+      "title": "Bonnie Vale campground — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/bonnie-vale-campground"
+    },
+    {
+      "title": "Royal National Park, Heathcote National Park and Garawarra State Conservation Area Plan of Management (2022) — NSW Department of Planning and Environment",
+      "url": "https://www2.environment.nsw.gov.au/sites/default/files/royal-heathcote-national-parks-garawarra-plan-of-management-220657.pdf"
+    },
+    {
+      "title": "Fee-collecting national parks — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/fee-collecting-parks"
+    },
+    {
+      "title": "Annual passes — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/annual-passes"
+    },
+    {
+      "title": "Total fire bans and park fire bans — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/safety/fire-safety/fire-bans"
+    },
+    {
+      "title": "Fire safety in national parks — NSW Environment and Heritage",
+      "url": "https://www.environment.nsw.gov.au/topics/fire/fire-safety-national-parks"
+    },
+    {
+      "title": "A Royal National Park, 1879 — State Archives and Records NSW (archived)",
+      "url": "https://wayback.archive-it.org/22771/20240710233950/http://gallery.records.nsw.gov.au/index.php/galleries/50-years-at-state-records-nsw/3-09"
+    },
+    {
+      "title": "Royal National Park and Garawarra State Conservation Area — Australian Heritage Database (National Heritage List, 15 December 2006)",
+      "url": "https://www.environment.gov.au/cgi-bin/ahdb/search.pl?mode=place_detail;place_id=105893"
+    },
+    {
+      "title": "A new conservation management plan for the Royal National Park Coastal Cabins Communities — NSW Environment and Heritage",
+      "url": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/community-engagement/royal-national-park/coastal-cabins-communities-new-conservation-management-plan"
+    },
+    {
+      "title": "Royal National Park railway line — Dictionary of Sydney",
+      "url": "https://dictionaryofsydney.org/structure/royal_national_park_railway_line"
+    },
+    {
+      "title": "Long journey home: the return of the platypus to the Royal National Park — UNSW Sydney (May 2023)",
+      "url": "https://www.unsw.edu.au/news/2023/05/long-journey-home--the-return-of-the-platypus-to-the-royal-natio"
+    },
+    {
+      "title": "Royal National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Royal_National_Park"
+    },
+    {
+      "title": "Royal National Park Coastal Cabin Communities — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Royal_National_Park_Coastal_Cabin_Communities"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

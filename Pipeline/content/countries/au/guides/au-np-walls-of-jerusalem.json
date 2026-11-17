@@ -1,0 +1,252 @@
+{
+  "placeID": "au-np-walls-of-jerusalem",
+  "contentVersion": 1,
+  "summary": "A remote alpine park on Tasmania's Central Plateau, inside the Tasmanian Wilderness World Heritage Area, with no road to its boundary. Fluted dolerite peaks enclose the Central Walls, a high garden of tarns, cushion plants and groves of ancient pencil pine, reached by a steep climb from the Mersey valley. Most visitors walk in for three or four days, camping on platforms and climbing the biblically named summits.",
+  "facts": {
+    "establishedYear": 1981,
+    "areaHectares": 51771,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "Three to four days"
+  },
+  "story": [
+    "The park's striking fluted peaks are Jurassic dolerite, which pushed up through an older plateau of Permian sediments laid down in a shallow sea. In a series of ice ages, glaciers carved and smoothed the land into its present form, leaving the lakes, tarns, moraines and trickling streams that are everywhere here. It is harsh country: temperatures often fall below freezing, snow falls heavily and winds carry ice. Trees are stunted, and above about 1,000 metres conifers take over from snow gums.",
+    "Groves of pencil pine, some a thousand years old, are the park's treasure, though many have been destroyed by fire; the conifers here have proved important for dendrochronology, the study of tree rings. Domes of lime-green cushion plants hug the ground, scoparia blooms crimson, pink, orange, gold and white in spring, and mountain rockets fire red seed capsules in summer. Wombats, wallabies, quolls, devils, echidnas, platypus, galaxiid fish and the ancient mountain shrimp Anaspides all find a living. Tasmania's high country is one of the most unspoilt alpine areas in the world.",
+    "Tasmanian Aboriginal people have had, and continue to have, a connection to this country; at the time of European arrival it was part of the territory of the Big River nation. They built shelters, used fire to shape the landscape and managed its finite resources, and Aboriginal heritage sites lie throughout the park. Within a decade of the first grazing licences on the high country in 1819, British colonisation had driven the remaining Aboriginal people from their homelands.",
+    "Stockmen grazed cattle here in summer from the mid-1850s, and trappers worked the plateau in winter for possum and wallaby pelts. The surveyor James Scott first put the name Walls of Jerusalem on a plan in the mid-1800s, and the Launceston barrister Reg Hall, 'the Weindorfer of the Walls', named more than a dozen features to continue the biblical theme. Trapper Reg Dixon built Dixons Kingdom Hut from pencil pine in the 1930s and lived there with his wife Elsie from 1946. The park was proclaimed in 1981 and joined the Tasmanian Wilderness World Heritage Area in 1982."
+  ],
+  "howItWorks": [
+    "Walls of Jerusalem is managed by the Tasmania Parks and Wildlife Service (PWS). A valid parks pass is required, and every overnight walker must register with PWS before setting out; groups of seven to sixteen register their intentions with the Great Western Tiers PWS field centre. Sign the log book at the registration booth in the main car park and sign out on your return. There are no permanent rangers on the track, very few facilities and no mobile coverage to rely on.",
+    "Camping is restricted to protect easily eroded alpine vegetation. Overnight visitors on the Walls Circuit must camp only on the designated sites at Wild Dog Creek, Dixons Kingdom and Lake Adelaide; do not camp within 15 metres of Dixons Kingdom Hut or Trappers Hut, and swimming and camping are not allowed at the Pool of Bethesda. The three small historic huts — Trappers Hut, Dixons Kingdom Hut and Lake Ball Hut — are for emergency shelter only. Climb Solomons Throne only by the track from Damascus Gate.",
+    "The park is a Fuel Stove Only Area: campfires are banned all year. Follow the seven Leave No Trace principles: stay on formed and hardened tracks, fan out rather than walk single file where there is no track, use the toilets at the car park and the three campsites, carry out all rubbish and store food well away from wildlife. Water from lakes and streams cannot be guaranteed clean. Dogs and recreational drones are not allowed."
+  ],
+  "sights": [
+    {
+      "name": "Solomons Jewels",
+      "note": "Small lakes about 3.5 kilometres from the car park, past Trappers Hut on the plateau; in summer often the first water after the Fish River.",
+      "location": [
+        -41.8016,
+        146.27106
+      ]
+    },
+    {
+      "name": "Herods Gate",
+      "note": "The gap in the dolerite walls beyond the Wild Dog Creek campsite through which the main track enters the Central Walls.",
+      "location": [
+        -41.81251,
+        146.28496
+      ]
+    },
+    {
+      "name": "Pool of Bethesda",
+      "note": "A beautiful alpine pool among ancient pencil pines, a 30-minute return side trip halfway to Damascus Gate. No swimming or camping.",
+      "location": [
+        -41.82018,
+        146.30089
+      ]
+    },
+    {
+      "name": "Damascus Gate",
+      "note": "The southern gateway out of the Central Walls, between Solomons Throne and The Temple, each a short, steep climb from the track.",
+      "location": [
+        -41.82456,
+        146.3004
+      ]
+    },
+    {
+      "name": "Solomons Throne",
+      "note": "A 1,470-metre peak climbed in 20 minutes from Damascus Gate, with 360-degree views over the plateau to King Davids Peak and the West Wall.",
+      "location": [
+        -41.82488,
+        146.29726
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Mount Jerusalem",
+      "note": "A 1,459-metre summit reached along a ridge from Dixons Kingdom in an hour to an hour and a half, overlooking an endless sea of lakes and tarns.",
+      "location": [
+        -41.82075,
+        146.32414
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Dixons Kingdom",
+      "note": "A sheltered valley south of Damascus Gate with a campsite and Reg Dixon's 1930s pencil-pine hut, kept for emergency shelter only.",
+      "location": [
+        -41.83005,
+        146.30554
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The Walls of Jerusalem car park and registration booth, 1.5 kilometres up a gravel road off the Mersey Forest Road (C171) just after the Fish River crossing, beyond Lake Rowallan"
+    ],
+    "reservations": "Overnight walkers must register with PWS before they go; groups of 7 to 16 register with the Great Western Tiers field centre. Check with PWS before you go.",
+    "permits": [
+      "A valid Tasmanian parks pass",
+      "Overnight walker registration"
+    ],
+    "camping": [
+      "Designated tent platforms at Wild Dog Creek, Dixons Kingdom and Lake Adelaide, the only places to camp on the Walls Circuit",
+      "Toilets only at the car park, Wild Dog Creek, Dixons Kingdom and Lake Adelaide"
+    ],
+    "lodging": [
+      "None: Trappers Hut, Dixons Kingdom Hut and Lake Ball Hut are emergency shelters only"
+    ],
+    "seasonalClosures": [
+      "Snow and blizzards can cover the track at any time of year, even in summer, making it hard to follow"
+    ]
+  },
+  "weather": "This is an exposed alpine region, and the weather can change dramatically within a few hours. Snow and blizzards can occur at any time of the year, even in summer, and low cloud can cut visibility to a few metres while snow hides the track. Winter brings frequently freezing temperatures, heavy snowfalls and strong, ice-bearing winds. Spring is the season for flowering scoparia, and summer for mountain rockets, but summer can be dry: there may be no water between the Fish River, near the car park, and Solomons Jewels. Check the Bureau of Meteorology forecast and any bushwalker weather warnings before you set out, and adjust your plans.",
+  "directions": "There are no roads in the park. Drive to Mole Creek, then south past Lake Rowallan on the Mersey Forest Road (C171). Just after crossing the Fish River, turn left onto a gravel road and follow it for 1.5 kilometres to the Walls of Jerusalem car park, where the walking track starts at the registration booth. From there the first 3 kilometres climb steeply, about 600 metres, through eucalypt forest to Trappers Hut and the plateau; Wild Dog Creek campsite is about 6 kilometres in. Carry the TASMAP 1:25,000 Walls of Jerusalem National Park Map and Notes. Avoid driving at night on the forest roads, when wildlife is about.",
+  "fees": [
+    {
+      "title": "Daily Pass, per vehicle",
+      "cost": "$49.15",
+      "amount": 49.15,
+      "currencyCode": "AUD",
+      "detail": "Up to 24 hours, for a vehicle of up to eight people; $24.55 per person by bus, bicycle or on foot. As listed by PWS in November 2026; reviewed each year by CPI."
+    },
+    {
+      "title": "Holiday Pass, all Tasmanian national parks",
+      "cost": "$98.35",
+      "amount": 98.35,
+      "currencyCode": "AUD",
+      "detail": "Per vehicle of up to eight people for up to two months, or $49.20 per person by bus, bicycle or on foot; the better choice for a multi-day walk."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Early 1800s",
+      "text": "At the time of European arrival the country is part of the territory of the Big River nation; bushrangers hide in the Central Highlands."
+    },
+    {
+      "year": "1819",
+      "text": "Grazing licences are awarded on the high country, and stock keepers move in."
+    },
+    {
+      "year": "Mid-1800s",
+      "text": "Surveyor James Scott first records the name Walls of Jerusalem on a plan; summer cattle grazing begins in the 1850s."
+    },
+    {
+      "year": "1930s",
+      "text": "Trapper Reg Dixon builds Dixons Kingdom Hut from local pencil pine; Reg Hall begins naming the park's biblical features."
+    },
+    {
+      "year": "1946",
+      "text": "Reg and Elsie Dixon make Dixons Kingdom their home, tending cattle in the walls."
+    },
+    {
+      "year": "1981",
+      "text": "Walls of Jerusalem National Park is proclaimed."
+    },
+    {
+      "year": "1982",
+      "text": "The park becomes part of the Tasmanian Wilderness World Heritage Area."
+    }
+  ],
+  "safety": [
+    "Grade 4 and 5 alpine walks have steep climbs, rocky ground, deep mud and sections needing navigation; people get lost, injured or caught by the weather, and rescue may take a long time or not be possible. Deaths have occurred.",
+    "Carry full waterproofs, warm layers, hat and gloves, a 3–4 season tent and enough food, whatever the forecast; watch PWS's hypothermia safety video before you go.",
+    "Beyond the main circuit, tracks are basic or unmarked. Carry a map and compass and know how to use them, and note that ironstone in the area can upset compass readings.",
+    "Tell someone your plans, record them in the log books and carry a personal locator beacon.",
+    "Treat water from lakes and streams before drinking; deep lakes and fast streams upstream of campsites are the safest sources."
+  ],
+  "regulations": [
+    "Overnight walkers must register with PWS before setting out.",
+    "Camp only on the designated sites at Wild Dog Creek, Dixons Kingdom and Lake Adelaide, and never within 15 metres of Dixons Kingdom or Trappers Hut.",
+    "No swimming or camping at the Pool of Bethesda, and climb Solomons Throne only by the track from Damascus Gate.",
+    "Fuel Stove Only Area: no campfires at any time.",
+    "Dogs and recreational drones are not allowed in Tasmanian national parks."
+  ],
+  "themes": [
+    "theme-alpine",
+    "theme-mountains",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Looking east from Mt Jerusalem - Walls of Jerusalem.jpg",
+      "caption": "The Central Walls from Mount Jerusalem, with King Davids Peak and The Temple",
+      "altText": "A wide panorama of rocky dolerite peaks around a high valley dotted with tarns"
+    },
+    {
+      "file": "File:Looking north west from Solomon's Throne - Walls of Jerusalem.jpg",
+      "caption": "Looking north-west over the plateau from Solomons Throne",
+      "altText": "A wide view across an alpine plateau of low vegetation and small lakes to distant mountains"
+    },
+    {
+      "file": "File:Walls of Jerusalem National Park from the Damascus Gate.jpg",
+      "caption": "The park from Damascus Gate",
+      "altText": "Alpine country of low shrubs and scattered conifers beneath rocky peaks"
+    },
+    {
+      "file": "File:Walls of Jerusalem National Park, Tasmania 03.jpg",
+      "caption": "Walls of Jerusalem National Park",
+      "altText": "Alpine landscape in the Walls of Jerusalem"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Walls of Jerusalem National Park — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Walls-of-Jerusalem-National-Park.aspx"
+    },
+    {
+      "title": "Walls of Jerusalem multi-day walk — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/walls-of-jerusalem-national-park/walls-of-jerusalem-multi-day-walk"
+    },
+    {
+      "title": "Walls of Jerusalem: walk notes — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/walls-of-jerusalem-national-park/walls-of-jerusalem-multi-day-walk/walls-of-jerusalem-walk-notes"
+    },
+    {
+      "title": "Tasmanian Wilderness World Heritage Area — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)"
+    },
+    {
+      "title": "Park passes and entry fees — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/entry-fees.aspx"
+    },
+    {
+      "title": "Overnight walker registration — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Overnight-walker-registration.aspx"
+    },
+    {
+      "title": "Fuel Stove Only Areas — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Fuel-Stove-Only-Areas.aspx"
+    },
+    {
+      "title": "Leave No Trace — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Leave-no-trace.aspx"
+    },
+    {
+      "title": "Safety in parks — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Safety-in-parks.aspx"
+    },
+    {
+      "title": "Dogs in parks — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Dogs-in-parks.aspx"
+    },
+    {
+      "title": "Reserve listing: national parks and reserves (2 June 2022) — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Documents/Reserve%20Listing.pdf"
+    },
+    {
+      "title": "Tasmanian Wilderness — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/181/"
+    },
+    {
+      "title": "Walls of Jerusalem National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Walls_of_Jerusalem_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "placeID": "au-np-blue-mountains",
+  "contentVersion": 1,
+  "summary": "Sheer sandstone cliffs, deep forested valleys and a blue eucalypt haze, two hours west of Sydney. With an estimated 6.4 million visits in 2022, this is the most visited national park in New South Wales and the heart of the Greater Blue Mountains World Heritage Area. Come for the Three Sisters, the lookouts and waterfalls at Blackheath and Wentworth Falls, and more than 140 kilometres of walking tracks.",
+  "facts": {
+    "establishedYear": 1959,
+    "areaHectares": 269332,
+    "bestSeasons": [
+      "spring",
+      "autumn"
+    ],
+    "suggestedTime": "Two to four days"
+  },
+  "story": [
+    "The Blue Mountains are a deeply cut sandstone tableland rather than a mountain range. Rivers such as the Grose and the Coxs have carved the plateau into gorges hundreds of metres deep, walled by escarpments and benched cliffs, with slot canyons, waterfalls and pagoda-shaped rock formations. The rocks record a long history: fossil sites here hold Gondwanan plants some 285 to 225 million years old. The park's catchments feed the Hawkesbury–Nepean and Lake Burragorang, which supplies most of Sydney's drinking water, and parts of the Grose River are declared a wild river for their near-pristine condition.",
+    "The park and its neighbours were inscribed on the World Heritage List in 2000 as the Greater Blue Mountains Area, a property of more than a million hectares. They were inscribed for the eucalypt-dominated ecosystems that tell the story of how Australia's vegetation evolved. Ninety-six eucalypt species grow in the property, about 13 per cent of all the world's eucalypts. With neighbouring Kanangra-Boyd, the park holds more than 1,000 native plant species, and it protects the only known populations of several threatened plants, among them the dwarf mountain pine. The bushfires of 2019–20 were unprecedented in extent and intensity, and hit animals such as the southern greater glider hard.",
+    "This is the Country of several Aboriginal language groups: the Gundungurra, Dharug, Wiradjuri, Dharawal and Darkinjung peoples, with most of the park in Gundungurra and Dharug Country. Excavations at Kings Tableland show people here at least 22,000 years ago. Rock shelters, axe-grinding grooves, stencils and paintings survive across the park. The Three Sisters, Kings Tableland, Red Hands Cave and Euroka ('Nye Gnoring') are declared Aboriginal Places. Under an agreement registered in 2015, the Gundungurra People advise government on the care of their Country, including much of this park.",
+    "Coal and shale miners worked the Grose and Jamison valleys from the 1860s. Once the railway reached Blackheath and Weatherboard, now Wentworth Falls, in 1867–68, the mountains became a resort, and by the late 1880s a web of lookouts and walking tracks had been built. Bushwalkers turned that recreation into conservation. In the early 1930s they used their own means to protect the Blue Gum Forest in the Grose Valley, and in 1932 Myles Dunphy proposed a Greater Blue Mountains National Park. The park was declared on 25 September 1959 and now covers about 269,332 hectares."
+  ],
+  "howItWorks": [
+    "The park is run by the NSW National Parks and Wildlife Service (NPWS) from the Blue Mountains Heritage Centre at Blackheath and offices at Glenbrook and Oberon. It is always open, though some areas close overnight or in poor weather and high fire danger. Only 45 of NSW's more than 890 parks and reserves charge vehicle entry, and here the charge applies only in the Glenbrook area: $8 per vehicle per day, collected at the Glenbrook entry station on weekends, public holidays and school holidays. The famous lookouts at Katoomba, Leura, Wentworth Falls and Blackheath are free to enter. Echo Point, at the Three Sisters, is run by Blue Mountains City Council.",
+    "The All Parks Pass covers vehicle entry to every fee-collecting park in NSW, including Kosciuszko, for $190 a year or $335 for two years. The Multi Park Pass covers all of them except Kosciuszko for $65 a year. These prices were listed by NPWS in November 2026. Campgrounds, from Euroka near Glenbrook to Dunphys in the Megalong Valley and walk-in Acacia Flat in the Grose Valley, are booked with NPWS online or on 1300 072 757. Passes do not cover camping.",
+    "Bushfire season runs from October to March. On total fire ban days, usually declared around 5 pm the day before, every wood or solid-fuel fire and barbecue in NSW parks is prohibited, as are liquid-fuel stoves, and visitor-owned gas and electric cookers are generally prohibited. NPWS can also declare a park fire ban or close areas when the fire risk is high. For long, off-track or overnight walks, NPWS recommends leaving a trip intention form and carrying a personal locator beacon. Canyoning, climbing and abseiling are popular here, and commercial operators run introductory trips."
+  ],
+  "sights": [
+    {
+      "name": "Three Sisters and Echo Point",
+      "note": "Three sandstone pillars above the Jamison Valley at Katoomba, a declared Aboriginal Place on Gundungurra and Darug Country. Echo Point lookout is run by Blue Mountains City Council.",
+      "location": [
+        -33.73536,
+        150.31496
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Govetts Leap Lookout",
+      "note": "At Blackheath, looking over the Grose Valley's cliffs and Bridal Veil Falls. With Wentworth Falls, one of the first popular lookouts in the Blue Mountains.",
+      "location": [
+        -33.62793,
+        150.31152
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Grand Canyon track",
+      "note": "A 6.3-kilometre grade 3 loop near Blackheath through a rainforest gorge of waterfalls and rock-cut steps, climbing out to Evans Lookout. Three to four hours.",
+      "location": [
+        -33.64681,
+        150.32631
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Wentworth Falls",
+      "note": "A tall, tiered waterfall dropping into the Jamison Valley, with lookouts, the Valley of the Waters and the Conservation Hut cafe nearby.",
+      "location": [
+        -33.72802,
+        150.37406
+      ]
+    },
+    {
+      "name": "Blue Gum Forest",
+      "note": "Tall blue gums on the Grose River floor, saved by bushwalkers in the early 1930s and known as the 'cradle of conservation'. Reached on foot; walk-in camping at Acacia Flat.",
+      "location": [
+        -33.60886,
+        150.35874
+      ]
+    },
+    {
+      "name": "Perrys Lookdown",
+      "note": "A lookout over the Grose Valley north-east of Blackheath, known for its sunset views.",
+      "location": [
+        -33.59963,
+        150.34676
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Red Hands Cave",
+      "note": "An Aboriginal rock art site near Glenbrook, a declared Aboriginal Place. In the Glenbrook area, where the vehicle entry fee applies.",
+      "location": [
+        -33.78234,
+        150.59103
+      ]
+    },
+    {
+      "name": "Blue Mountains Heritage Centre",
+      "note": "NPWS's visitor centre at 270 Govetts Leap Road, Blackheath, for track advice, maps and park information. Open 9 am to 4 pm daily except Christmas Day.",
+      "location": [
+        -33.63059,
+        150.30666
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Katoomba, Leura and Wentworth Falls on the Great Western Highway, for the Three Sisters, Jamison Valley and the clifftop walks",
+      "Blackheath, for Govetts Leap, Evans Lookout, the Grand Canyon and the Grose Valley",
+      "Glenbrook, at the eastern foot of the mountains, for Red Hands Cave, Euroka and the swimming holes",
+      "Bells Line of Road from Richmond, for Mount Wilson and the northern Grose",
+      "The Megalong Valley, for Dunphys campground and the Galong cabins at Green Gully"
+    ],
+    "reservations": "No booking for day visits. Campgrounds and the Galong cabins are booked with NPWS online or on 1300 072 757.",
+    "permits": [
+      "Groups in wilderness areas are limited in size; check with NPWS before planning a large group trip"
+    ],
+    "camping": [
+      "Euroka campground near Glenbrook, among tall eucalypts",
+      "Dunphys campground in the Megalong Valley",
+      "Acacia Flat, walk-in camping by the Blue Gum Forest in the Grose Valley",
+      "Burralow Creek near Bilpin and Murphys Glen near Woodford, vehicle-based camping",
+      "Mount Werong in the southern Blue Mountains, 4WD access"
+    ],
+    "lodging": [
+      "The Galong cabins at Green Gully in the Megalong Valley",
+      "Hotels, guesthouses and cottages in Katoomba, Leura, Wentworth Falls and Blackheath"
+    ],
+    "seasonalClosures": [
+      "No seasonal closure. The park is always open, but some areas close overnight, for maintenance or in poor weather and high fire danger — check NPWS alerts before you go"
+    ]
+  },
+  "weather": "The upper mountains around Katoomba and Blackheath are cooler than Sydney. Autumn brings cool, clear days that suit long walks and camping, and colourful fungi at Leura Cascades. Winter mornings often fill the Jamison Valley with fog, with Mount Solitary rising above it; it is good weather for walking and mountain biking, but nights are cold. Spring is wildflower season, with wattles, waratahs and boronias on the heath. Summer is the time for canyoning, swimming holes and cool rainforest gullies; it is also the height of the bushfire season.",
+  "directions": "The park lines both sides of the Great Western Highway, which climbs west from Sydney by the M4 through Glenbrook, Katoomba and Blackheath; Katoomba is about 2 hours' drive from central Sydney. Bells Line of Road from Richmond crosses the northern side, and Chifley Road comes in from Lithgow. Regular daily trains run from Sydney Central on the Blue Mountains Line, taking about 2 hours to Katoomba. Glenbrook, Woodford, Faulconbridge, Leura, Wentworth Falls, Katoomba and Blackheath stations are all within reach of park tracks. Roads are busy on summer weekends and public holidays; check Live Traffic NSW.",
+  "fees": [
+    {
+      "title": "Vehicle entry, Glenbrook area",
+      "cost": "$8 per vehicle per day",
+      "amount": 8,
+      "currencyCode": "AUD",
+      "detail": "Charged only at attractions in the Glenbrook area. The rest of the park, including the Katoomba and Blackheath lookouts, is free. As listed by NPWS in November 2026 — check before you go."
+    },
+    {
+      "title": "All Parks Pass",
+      "cost": "$190 for one year / $335 for two years",
+      "amount": 190,
+      "currencyCode": "AUD",
+      "detail": "Vehicle entry to every fee-collecting NSW national park, including Kosciuszko; seniors $152 and $268. The Multi Park Pass, valid everywhere except Kosciuszko, is $65 a year. As listed by NPWS in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "At least 22,000 years ago",
+      "text": "Excavations at Kings Tableland show people living in the Greater Blue Mountains."
+    },
+    {
+      "year": "1860s",
+      "text": "Coal and shale mining begins in the Grose and Jamison valleys."
+    },
+    {
+      "year": "1867–1868",
+      "text": "Railway stations open at Blackheath and Weatherboard (now Wentworth Falls), and Govetts Leap and Wentworth Falls become the first popular lookouts."
+    },
+    {
+      "year": "1932",
+      "text": "Myles Dunphy proposes a Greater Blue Mountains National Park, while bushwalkers work to save the Blue Gum Forest."
+    },
+    {
+      "year": "1959",
+      "text": "Blue Mountains National Park is declared on 25 September."
+    },
+    {
+      "year": "2000",
+      "text": "The park becomes the core of the Greater Blue Mountains Area World Heritage property."
+    },
+    {
+      "year": "2015",
+      "text": "The Gundungurra Indigenous Land Use Agreement is registered, recognising the Gundungurra People's custodianship of their Country."
+    },
+    {
+      "year": "2019–2020",
+      "text": "Unprecedented bushfires burn across the Greater Blue Mountains."
+    }
+  ],
+  "safety": [
+    "Keep well back from cliff edges and waterfalls, and stay on formed tracks.",
+    "Valley walks are steep, with long stairways such as the Giant Stairway and Furber Steps on the way back up. Carry water, allow extra time for the climb out, and turn back early if you are running late.",
+    "For long, off-track or overnight walks, leave a trip intention form and carry a personal locator beacon; mobile coverage in the valleys is unreliable.",
+    "Dress for cold: the upper mountains are cooler than Sydney, winter nights are cold, and morning fog can fill the valleys.",
+    "Check NPWS alerts and the Rural Fire Service before you go. On Extreme or Catastrophic fire danger days, leave bushfire-risk areas."
+  ],
+  "regulations": [
+    "No pets or domestic animals, except certified assistance animals.",
+    "No smoking: NSW national parks are smoke-free.",
+    "No wood or solid-fuel fires or liquid-fuel stoves during total fire bans or park fire bans.",
+    "Camp only in designated campgrounds, and book them in advance.",
+    "Horse riding is not permitted in wilderness areas, and cycling there is restricted to designated trails."
+  ],
+  "themes": [
+    "theme-canyons",
+    "theme-mountains",
+    "theme-temperate-rainforest",
+    "theme-indigenous-heritage",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Three Sisters from Police Creek.jpg",
+      "caption": "The Three Sisters above the Jamison Valley",
+      "altText": "Three tall sandstone rock pillars standing out from a cliff above a forested valley"
+    },
+    {
+      "file": "File:View from Govetts Leap Lookout Blackheath in the Blue Mountains.jpg",
+      "caption": "The Grose Valley from Govetts Leap Lookout, Blackheath",
+      "altText": "Sheer orange sandstone cliffs ringing a deep valley of blue-green forest"
+    },
+    {
+      "file": "File:Upper Wentworth Falls, NSW, Australia - Nov 2008.jpg",
+      "caption": "The upper falls at Wentworth Falls",
+      "altText": "A waterfall pouring over a sandstone ledge into a gorge"
+    },
+    {
+      "file": "File:Grand canyon track (50659648696).jpg",
+      "caption": "On the Grand Canyon track near Blackheath",
+      "altText": "A walking track winding through a narrow, fern-filled sandstone gorge"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Blue Mountains National Park — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/blue-mountains-national-park"
+    },
+    {
+      "title": "Blue Mountains National Park: visitor info — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/blue-mountains-national-park/visitor-info"
+    },
+    {
+      "title": "Katoomba area: visitor info — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/katoomba-area/visitor-info"
+    },
+    {
+      "title": "Echo Point lookout (Three Sisters) — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/echo-point-lookout-three-sisters"
+    },
+    {
+      "title": "Grand Canyon track — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/grand-canyon-track"
+    },
+    {
+      "title": "Blue Mountains National Park and Kanangra-Boyd National Park Plan of Management (2024) — NSW Department of Climate Change, Energy, the Environment and Water",
+      "url": "https://www2.environment.nsw.gov.au/sites/default/files/blue-mountains-np-kanangra-boyd-np-plan-of-management-240234.pdf"
+    },
+    {
+      "title": "Greater Blue Mountains World Heritage Area — NSW Environment and Heritage",
+      "url": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/greater-blue-mountains"
+    },
+    {
+      "title": "Fee-collecting national parks — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/fee-collecting-parks"
+    },
+    {
+      "title": "Annual passes — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/annual-passes"
+    },
+    {
+      "title": "Total fire bans and park fire bans — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/safety/fire-safety/fire-bans"
+    },
+    {
+      "title": "Blue Mountains National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blue_Mountains_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

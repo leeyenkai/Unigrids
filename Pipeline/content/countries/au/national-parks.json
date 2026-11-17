@@ -1,0 +1,535 @@
+{
+  "_about": "Australia's national parks with a full guide (ADR 0014), fixed by rule and checked 17 November 2026 (2026-11-17). IDs are permanent: user logs point at them. THE RULE. Every Commonwealth national park (Parks Australia lists six: Kakadu, Uluṟu-Kata Tjuṯa, Booderee, Christmas Island, Pulu Keeling, Norfolk Island), plus every state or territory national park that meets (a) or (b). (a) World Heritage: the park lies wholly or partly within one of Australia's 21 World Heritage properties (UNESCO, whc.unesco.org/en/statesparties/au). Properties with no state national park in them: Heard and McDonald Islands, Lord Howe Island Group (a Permanent Park Preserve), Macquarie Island (a nature reserve), Royal Exhibition Building and Carlton Gardens, Sydney Opera House; Kakadu and Uluṟu-Kata Tjuṯa are Commonwealth parks. Australian Convict Sites counts too: Darlington Probation Station lies in Maria Island National Park and the Old Great North Road in Dharug (and Yengo) National Park, as their agencies' pages say. CAP: where a property takes in more than eight national parks (Gondwana Rainforests of Australia, about 40 reserves; Wet Tropics of Queensland, more than 20 national parks; Great Barrier Reef, some 450 island national parks), only the parks that (i) UNESCO's own description of the property names, by the park's name or a place within it, or (ii) the managing agency's page for the property names as its principal parks. Applied: Gondwana — Wollumbin (UNESCO's Statement of Outstanding Universal Value names Wollumbin/Mt Warning) and Lamington, Springbrook, Mount Barney and Main Range (Queensland's World Heritage page: 'Discover the Gondwana Rainforests ... including Lamington, Springbrook, Mount Barney and Main Range national parks'); NSW NPWS lists its twenty Gondwana national parks without singling any out, so (ii) adds none in NSW. Wet Tropics — Daintree (the Statement names the coast 'between the Daintree River and Cedar Bay'); Queensland's list of 'some of the more popular' Wet Tropics parks names 24 and is not a principal list. Great Barrier Reef — Whitsunday Islands and Hinchinbrook Island (named in the Statement as scenic features); Lizard Island is named only as the locator of the Cod Hole and Raine Island National Park (Scientific) is closed to the public, so neither is taken. Properties with eight or fewer national parks take all of them: Greater Blue Mountains Area (seven national parks and Jenolan Karst Conservation Reserve, NSW Environment and Heritage), Tasmanian Wilderness (seven, Parks and Wildlife Service Tasmania's TWWHA page), and the rest one or two each. (b) Agency flagship: in each state and territory, the park its own agency singles out — by its visitor counts where it publishes them (NT: Parks & Wildlife NT's park visitor data, where Litchfield and Nitmiluk have each been the most-visited national park in the last five years), otherwise by a state-level claim on the agency's own page for the park (oldest, largest, most popular, iconic, favourite), quoted in 'reason'. Queensland's (Lamington) and the ACT's are covered; Lamington is already in under (a). Nambung (WA) was proposed but DBCA's page and 2024-25 annual report make no such claim for it, so it is left out. FIELDS. 'name' is the park's name as its agency writes it, with the agency's own dual-name form (Grampians (Gariwerd) National Park; Daintree National Park (CYPAL); Boodjamulla National Park (Aboriginal Land)). 'localName' only where the agency uses an Aboriginal name beside the English one and it is not already the name. 'state' is ISO 3166-2:AU, with Unigrids' own AU-JBT, AU-CX, AU-CC and AU-NF (ADR 0014). 'agency' is the managing body; Port Campbell is managed by the Great Ocean Road Coast and Parks Authority, not Parks Victoria; SA's is the Department for Environment and Water, branded National Parks and Wildlife Service South Australia. 'capadName' is the NAME in CAPAD 2024 (gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0), which carries no type suffix (Kosciuszko, not Kosciuszko National Park); match it with a national-park TYPE and the state, since names repeat across types and states. 'capadAlsoNames' lists further CAPAD NAMEs that are the same park (Norfolk Island's two parts; Boodjamulla's handed-back Aboriginal-land part and its remainder). Daintree's NAME covers both its 'National Park' and 'National Park Aboriginal' records. 'reason' is the rule that admits the park and 'reasonSource' the page that shows it. 'passportRegion' is Unigrids' own (ADR 0014): NSW, the ACT and Jervis Bay together; the island territories together. 'jointlyManaged' is true only where an official page confirms joint or co-management with Traditional Owners (Parks Australia; NT Government plan of management; QPWS; Parks Victoria; DBCA; DEW SA; UNESCO for Mungo); CAPAD's GOVERNANCE code is not used for it. Booderee remains jointly managed while it moves to sole management by the Wreck Bay Aboriginal Community Council (target May 2028). Sources: UNESCO World Heritage Centre property pages and component lists; NSW Environment and Heritage World Heritage pages; Queensland DETSI World Heritage pages; parks.tas.gov.au; nationalparks.nsw.gov.au; parks.vic.gov.au; greatoceanroadauthority.vic.gov.au; parks.qld.gov.au; parks.sa.gov.au; exploreparks.dbca.wa.gov.au; nt.gov.au and dth.nt.gov.au; parks.act.gov.au; parksaustralia.gov.au; CAPAD 2024. Founding dates and areas are curated in each guide's facts with their source; CAPAD's GAZ_DATE is a gazettal record, not a founding date.",
+  "parks": [
+    {
+      "id": "au-np-kakadu",
+      "name": "Kakadu National Park",
+      "state": "AU-NT",
+      "agency": "Parks Australia",
+      "capadName": "Kakadu",
+      "reason": "Commonwealth national park",
+      "reasonSource": "https://parksaustralia.gov.au/",
+      "passportRegion": "northernTerritory",
+      "jointlyManaged": true
+    },
+    {
+      "id": "au-np-uluru-kata-tjuta",
+      "name": "Uluṟu-Kata Tjuṯa National Park",
+      "state": "AU-NT",
+      "agency": "Parks Australia",
+      "capadName": "Uluru-Kata Tjuta",
+      "reason": "Commonwealth national park",
+      "reasonSource": "https://parksaustralia.gov.au/",
+      "passportRegion": "northernTerritory",
+      "jointlyManaged": true
+    },
+    {
+      "id": "au-np-booderee",
+      "name": "Booderee National Park",
+      "state": "AU-JBT",
+      "agency": "Parks Australia",
+      "capadName": "Booderee",
+      "reason": "Commonwealth national park",
+      "reasonSource": "https://parksaustralia.gov.au/",
+      "passportRegion": "newSouthWales",
+      "jointlyManaged": true
+    },
+    {
+      "id": "au-np-christmas-island",
+      "name": "Christmas Island National Park",
+      "state": "AU-CX",
+      "agency": "Parks Australia",
+      "capadName": "Christmas Island",
+      "reason": "Commonwealth national park",
+      "reasonSource": "https://parksaustralia.gov.au/",
+      "passportRegion": "externalTerritories"
+    },
+    {
+      "id": "au-np-pulu-keeling",
+      "name": "Pulu Keeling National Park",
+      "state": "AU-CC",
+      "agency": "Parks Australia",
+      "capadName": "Pulu Keeling",
+      "reason": "Commonwealth national park",
+      "reasonSource": "https://parksaustralia.gov.au/",
+      "passportRegion": "externalTerritories"
+    },
+    {
+      "id": "au-np-norfolk-island",
+      "name": "Norfolk Island National Park",
+      "state": "AU-NF",
+      "agency": "Parks Australia",
+      "capadName": "Norfolk Island (Mt Pitt)",
+      "capadAlsoNames": [
+        "Norfolk Island (Phillip Island)"
+      ],
+      "reason": "Commonwealth national park",
+      "reasonSource": "https://parksaustralia.gov.au/",
+      "passportRegion": "externalTerritories"
+    },
+    {
+      "id": "au-np-blue-mountains",
+      "name": "Blue Mountains National Park",
+      "state": "AU-NSW",
+      "agency": "NSW National Parks and Wildlife Service",
+      "capadName": "Blue Mountains",
+      "reason": "World Heritage: Greater Blue Mountains Area",
+      "reasonSource": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/greater-blue-mountains",
+      "passportRegion": "newSouthWales"
+    },
+    {
+      "id": "au-np-wollemi",
+      "name": "Wollemi National Park",
+      "state": "AU-NSW",
+      "agency": "NSW National Parks and Wildlife Service",
+      "capadName": "Wollemi",
+      "reason": "World Heritage: Greater Blue Mountains Area",
+      "reasonSource": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/greater-blue-mountains",
+      "passportRegion": "newSouthWales"
+    },
+    {
+      "id": "au-np-yengo",
+      "name": "Yengo National Park",
+      "state": "AU-NSW",
+      "agency": "NSW National Parks and Wildlife Service",
+      "capadName": "Yengo",
+      "reason": "World Heritage: Greater Blue Mountains Area",
+      "reasonSource": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/greater-blue-mountains",
+      "passportRegion": "newSouthWales"
+    },
+    {
+      "id": "au-np-kanangra-boyd",
+      "name": "Kanangra-Boyd National Park",
+      "state": "AU-NSW",
+      "agency": "NSW National Parks and Wildlife Service",
+      "capadName": "Kanangra-Boyd",
+      "reason": "World Heritage: Greater Blue Mountains Area",
+      "reasonSource": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/greater-blue-mountains",
+      "passportRegion": "newSouthWales"
+    },
+    {
+      "id": "au-np-nattai",
+      "name": "Nattai National Park",
+      "state": "AU-NSW",
+      "agency": "NSW National Parks and Wildlife Service",
+      "capadName": "Nattai",
+      "reason": "World Heritage: Greater Blue Mountains Area",
+      "reasonSource": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/greater-blue-mountains",
+      "passportRegion": "newSouthWales"
+    },
+    {
+      "id": "au-np-gardens-of-stone",
+      "name": "Gardens of Stone National Park",
+      "state": "AU-NSW",
+      "agency": "NSW National Parks and Wildlife Service",
+      "capadName": "Gardens of Stone",
+      "reason": "World Heritage: Greater Blue Mountains Area",
+      "reasonSource": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/greater-blue-mountains",
+      "passportRegion": "newSouthWales"
+    },
+    {
+      "id": "au-np-thirlmere-lakes",
+      "name": "Thirlmere Lakes National Park",
+      "state": "AU-NSW",
+      "agency": "NSW National Parks and Wildlife Service",
+      "capadName": "Thirlmere Lakes",
+      "reason": "World Heritage: Greater Blue Mountains Area",
+      "reasonSource": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/greater-blue-mountains",
+      "passportRegion": "newSouthWales"
+    },
+    {
+      "id": "au-np-wollumbin",
+      "name": "Wollumbin National Park",
+      "state": "AU-NSW",
+      "agency": "NSW National Parks and Wildlife Service",
+      "capadName": "Wollumbin",
+      "reason": "World Heritage: Gondwana Rainforests of Australia",
+      "reasonSource": "https://whc.unesco.org/en/list/368/",
+      "passportRegion": "newSouthWales"
+    },
+    {
+      "id": "au-np-mungo",
+      "name": "Mungo National Park",
+      "state": "AU-NSW",
+      "agency": "NSW National Parks and Wildlife Service",
+      "capadName": "Mungo",
+      "reason": "World Heritage: Willandra Lakes Region",
+      "reasonSource": "https://whc.unesco.org/en/list/167/",
+      "passportRegion": "newSouthWales",
+      "jointlyManaged": true
+    },
+    {
+      "id": "au-np-dharug",
+      "name": "Dharug National Park",
+      "state": "AU-NSW",
+      "agency": "NSW National Parks and Wildlife Service",
+      "capadName": "Dharug",
+      "reason": "World Heritage: Australian Convict Sites (Old Great North Road)",
+      "reasonSource": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/dharug-national-park",
+      "passportRegion": "newSouthWales"
+    },
+    {
+      "id": "au-np-royal",
+      "name": "Royal National Park",
+      "state": "AU-NSW",
+      "agency": "NSW National Parks and Wildlife Service",
+      "capadName": "Royal",
+      "reason": "Agency flagship: NPWS, 'the world's second-oldest national park'",
+      "reasonSource": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/royal-national-park",
+      "passportRegion": "newSouthWales"
+    },
+    {
+      "id": "au-np-kosciuszko",
+      "name": "Kosciuszko National Park",
+      "state": "AU-NSW",
+      "agency": "NSW National Parks and Wildlife Service",
+      "capadName": "Kosciuszko",
+      "reason": "Agency flagship: NPWS, 'NSW's largest national park', with Australia's highest mountain",
+      "reasonSource": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kosciuszko-national-park",
+      "passportRegion": "newSouthWales"
+    },
+    {
+      "id": "au-np-namadgi",
+      "name": "Namadgi National Park",
+      "state": "AU-ACT",
+      "agency": "ACT Parks and Conservation Service",
+      "capadName": "Namadgi",
+      "reason": "Agency flagship: Parks ACT, 'makes up almost half of the ACT'",
+      "reasonSource": "https://www.parks.act.gov.au/find-a-nature-park/namadgi-national-park",
+      "passportRegion": "newSouthWales"
+    },
+    {
+      "id": "au-np-budj-bim",
+      "name": "Budj Bim National Park",
+      "state": "AU-VIC",
+      "agency": "Parks Victoria",
+      "capadName": "Budj Bim",
+      "reason": "World Heritage: Budj Bim Cultural Landscape",
+      "reasonSource": "https://www.parks.vic.gov.au/places-to-see/parks/budj-bim-national-park",
+      "passportRegion": "victoria",
+      "jointlyManaged": true
+    },
+    {
+      "id": "au-np-wilsons-promontory",
+      "name": "Wilsons Promontory National Park",
+      "state": "AU-VIC",
+      "agency": "Parks Victoria",
+      "capadName": "Wilsons Promontory",
+      "reason": "Agency flagship: Parks Victoria, 'one of Victoria's favourite National Parks'",
+      "reasonSource": "https://www.parks.vic.gov.au/places-to-see/parks/wilsons-promontory-national-park",
+      "passportRegion": "victoria"
+    },
+    {
+      "id": "au-np-grampians",
+      "name": "Grampians (Gariwerd) National Park",
+      "localName": "Gariwerd",
+      "state": "AU-VIC",
+      "agency": "Parks Victoria",
+      "capadName": "Grampians",
+      "reason": "Agency flagship: Parks Victoria, the largest number of significant Aboriginal rock art sites in southern Australia",
+      "reasonSource": "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park",
+      "passportRegion": "victoria"
+    },
+    {
+      "id": "au-np-port-campbell",
+      "name": "Port Campbell National Park",
+      "state": "AU-VIC",
+      "agency": "Great Ocean Road Coast and Parks Authority",
+      "capadName": "Port Campbell",
+      "reason": "Agency flagship: GORCAPA, 'one of Victoria's most iconic coastal landscapes' (the Twelve Apostles)",
+      "reasonSource": "https://www.greatoceanroadauthority.vic.gov.au/Land-We-Manage/National-Parks/Port-Campbell-National-Park",
+      "passportRegion": "victoria"
+    },
+    {
+      "id": "au-np-lamington",
+      "name": "Lamington National Park",
+      "state": "AU-QLD",
+      "agency": "Queensland Parks and Wildlife Service",
+      "capadName": "Lamington",
+      "reason": "World Heritage: Gondwana Rainforests of Australia",
+      "reasonSource": "https://environment.qld.gov.au/management/world-heritage-areas/current/gondwana-rainforests",
+      "passportRegion": "queensland"
+    },
+    {
+      "id": "au-np-springbrook",
+      "name": "Springbrook National Park",
+      "state": "AU-QLD",
+      "agency": "Queensland Parks and Wildlife Service",
+      "capadName": "Springbrook",
+      "reason": "World Heritage: Gondwana Rainforests of Australia",
+      "reasonSource": "https://environment.qld.gov.au/management/world-heritage-areas/current/gondwana-rainforests",
+      "passportRegion": "queensland"
+    },
+    {
+      "id": "au-np-mount-barney",
+      "name": "Mount Barney National Park",
+      "state": "AU-QLD",
+      "agency": "Queensland Parks and Wildlife Service",
+      "capadName": "Mount Barney",
+      "reason": "World Heritage: Gondwana Rainforests of Australia",
+      "reasonSource": "https://environment.qld.gov.au/management/world-heritage-areas/current/gondwana-rainforests",
+      "passportRegion": "queensland"
+    },
+    {
+      "id": "au-np-main-range",
+      "name": "Main Range National Park",
+      "state": "AU-QLD",
+      "agency": "Queensland Parks and Wildlife Service",
+      "capadName": "Main Range",
+      "reason": "World Heritage: Gondwana Rainforests of Australia",
+      "reasonSource": "https://environment.qld.gov.au/management/world-heritage-areas/current/gondwana-rainforests",
+      "passportRegion": "queensland"
+    },
+    {
+      "id": "au-np-daintree",
+      "name": "Daintree National Park (CYPAL)",
+      "state": "AU-QLD",
+      "agency": "Queensland Parks and Wildlife Service",
+      "capadName": "Daintree",
+      "reason": "World Heritage: Wet Tropics of Queensland",
+      "reasonSource": "https://whc.unesco.org/en/list/486/",
+      "passportRegion": "queensland",
+      "jointlyManaged": true
+    },
+    {
+      "id": "au-np-great-sandy",
+      "name": "Great Sandy National Park",
+      "state": "AU-QLD",
+      "agency": "Queensland Parks and Wildlife Service",
+      "capadName": "Great Sandy",
+      "reason": "World Heritage: K’gari",
+      "reasonSource": "https://whc.unesco.org/en/list/630/",
+      "passportRegion": "queensland"
+    },
+    {
+      "id": "au-np-boodjamulla",
+      "name": "Boodjamulla National Park (Aboriginal Land)",
+      "state": "AU-QLD",
+      "agency": "Queensland Parks and Wildlife Service",
+      "capadName": "Boodjamulla",
+      "capadAlsoNames": [
+        "Boodjamulla (Lawn Hill)"
+      ],
+      "reason": "World Heritage: Australian Fossil Mammal Sites (Riversleigh / Naracoorte)",
+      "reasonSource": "https://whc.unesco.org/en/list/698/",
+      "passportRegion": "queensland",
+      "jointlyManaged": true
+    },
+    {
+      "id": "au-np-whitsunday-islands",
+      "name": "Whitsunday Islands National Park",
+      "state": "AU-QLD",
+      "agency": "Queensland Parks and Wildlife Service",
+      "capadName": "Whitsunday Islands",
+      "reason": "World Heritage: Great Barrier Reef",
+      "reasonSource": "https://whc.unesco.org/en/list/154/",
+      "passportRegion": "queensland"
+    },
+    {
+      "id": "au-np-hinchinbrook-island",
+      "name": "Hinchinbrook Island National Park",
+      "state": "AU-QLD",
+      "agency": "Queensland Parks and Wildlife Service",
+      "capadName": "Hinchinbrook Island",
+      "reason": "World Heritage: Great Barrier Reef",
+      "reasonSource": "https://whc.unesco.org/en/list/154/",
+      "passportRegion": "queensland"
+    },
+    {
+      "id": "au-np-naracoorte-caves",
+      "name": "Naracoorte Caves National Park",
+      "state": "AU-SA",
+      "agency": "Department for Environment and Water (SA)",
+      "capadName": "Naracoorte Caves",
+      "reason": "World Heritage: Australian Fossil Mammal Sites (Riversleigh / Naracoorte)",
+      "reasonSource": "https://whc.unesco.org/en/list/698/",
+      "passportRegion": "southAustralia"
+    },
+    {
+      "id": "au-np-ikara-flinders-ranges",
+      "name": "Ikara-Flinders Ranges National Park",
+      "state": "AU-SA",
+      "agency": "Department for Environment and Water (SA)",
+      "capadName": "Ikara-Flinders Ranges",
+      "reason": "Agency flagship: National Parks and Wildlife Service SA, 'one of South Australia's iconic destinations'",
+      "reasonSource": "https://www.parks.sa.gov.au/parks/ikara-flinders-ranges-national-park",
+      "passportRegion": "southAustralia",
+      "jointlyManaged": true
+    },
+    {
+      "id": "au-np-purnululu",
+      "name": "Purnululu National Park",
+      "state": "AU-WA",
+      "agency": "Department of Biodiversity, Conservation and Attractions (WA)",
+      "capadName": "Purnululu",
+      "reason": "World Heritage: Purnululu National Park",
+      "reasonSource": "https://whc.unesco.org/en/list/1094/",
+      "passportRegion": "westernAustralia"
+    },
+    {
+      "id": "au-np-cape-range",
+      "name": "Cape Range National Park",
+      "state": "AU-WA",
+      "agency": "Department of Biodiversity, Conservation and Attractions (WA)",
+      "capadName": "Cape Range",
+      "reason": "World Heritage: Ningaloo Coast",
+      "reasonSource": "https://exploreparks.dbca.wa.gov.au/park/cape-range-national-park",
+      "passportRegion": "westernAustralia",
+      "jointlyManaged": true
+    },
+    {
+      "id": "au-np-francois-peron",
+      "name": "Francois Peron National Park",
+      "state": "AU-WA",
+      "agency": "Department of Biodiversity, Conservation and Attractions (WA)",
+      "capadName": "Francois Peron",
+      "reason": "World Heritage: Shark Bay, Western Australia",
+      "reasonSource": "https://whc.unesco.org/en/list/578/",
+      "passportRegion": "westernAustralia",
+      "jointlyManaged": true
+    },
+    {
+      "id": "au-np-dirk-hartog-island",
+      "name": "Dirk Hartog Island National Park",
+      "state": "AU-WA",
+      "agency": "Department of Biodiversity, Conservation and Attractions (WA)",
+      "capadName": "Dirk Hartog Island",
+      "reason": "World Heritage: Shark Bay, Western Australia",
+      "reasonSource": "https://whc.unesco.org/en/list/578/",
+      "passportRegion": "westernAustralia",
+      "jointlyManaged": true
+    },
+    {
+      "id": "au-np-murujuga",
+      "name": "Murujuga National Park",
+      "state": "AU-WA",
+      "agency": "Department of Biodiversity, Conservation and Attractions (WA)",
+      "capadName": "Murujuga",
+      "reason": "World Heritage: Murujuga Cultural Landscape",
+      "reasonSource": "https://exploreparks.dbca.wa.gov.au/park/murujuga-national-park",
+      "passportRegion": "westernAustralia",
+      "jointlyManaged": true
+    },
+    {
+      "id": "au-np-karijini",
+      "name": "Karijini National Park",
+      "state": "AU-WA",
+      "agency": "Department of Biodiversity, Conservation and Attractions (WA)",
+      "capadName": "Karijini",
+      "reason": "Agency flagship: DBCA, 'Western Australia's second largest national park'",
+      "reasonSource": "https://exploreparks.dbca.wa.gov.au/park/karijini-national-park",
+      "passportRegion": "westernAustralia"
+    },
+    {
+      "id": "au-np-cradle-mountain-lake-st-clair",
+      "name": "Cradle Mountain-Lake St Clair National Park",
+      "state": "AU-TAS",
+      "agency": "Parks and Wildlife Service Tasmania",
+      "capadName": "Cradle Mountain-Lake St Clair",
+      "reason": "World Heritage: Tasmanian Wilderness",
+      "reasonSource": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)",
+      "passportRegion": "tasmania"
+    },
+    {
+      "id": "au-np-franklin-gordon-wild-rivers",
+      "name": "Franklin-Gordon Wild Rivers National Park",
+      "state": "AU-TAS",
+      "agency": "Parks and Wildlife Service Tasmania",
+      "capadName": "Franklin-Gordon Wild Rivers",
+      "reason": "World Heritage: Tasmanian Wilderness",
+      "reasonSource": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)",
+      "passportRegion": "tasmania"
+    },
+    {
+      "id": "au-np-southwest",
+      "name": "Southwest National Park",
+      "state": "AU-TAS",
+      "agency": "Parks and Wildlife Service Tasmania",
+      "capadName": "Southwest",
+      "reason": "World Heritage: Tasmanian Wilderness",
+      "reasonSource": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)",
+      "passportRegion": "tasmania"
+    },
+    {
+      "id": "au-np-walls-of-jerusalem",
+      "name": "Walls of Jerusalem National Park",
+      "state": "AU-TAS",
+      "agency": "Parks and Wildlife Service Tasmania",
+      "capadName": "Walls of Jerusalem",
+      "reason": "World Heritage: Tasmanian Wilderness",
+      "reasonSource": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)",
+      "passportRegion": "tasmania"
+    },
+    {
+      "id": "au-np-hartz-mountains",
+      "name": "Hartz Mountains National Park",
+      "state": "AU-TAS",
+      "agency": "Parks and Wildlife Service Tasmania",
+      "capadName": "Hartz Mountains",
+      "reason": "World Heritage: Tasmanian Wilderness",
+      "reasonSource": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)",
+      "passportRegion": "tasmania"
+    },
+    {
+      "id": "au-np-mole-creek-karst",
+      "name": "Mole Creek Karst National Park",
+      "state": "AU-TAS",
+      "agency": "Parks and Wildlife Service Tasmania",
+      "capadName": "Mole Creek Karst",
+      "reason": "World Heritage: Tasmanian Wilderness",
+      "reasonSource": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)",
+      "passportRegion": "tasmania"
+    },
+    {
+      "id": "au-np-mount-field",
+      "name": "Mount Field National Park",
+      "state": "AU-TAS",
+      "agency": "Parks and Wildlife Service Tasmania",
+      "capadName": "Mount Field",
+      "reason": "World Heritage: Tasmanian Wilderness",
+      "reasonSource": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)",
+      "passportRegion": "tasmania"
+    },
+    {
+      "id": "au-np-maria-island",
+      "name": "Maria Island National Park",
+      "state": "AU-TAS",
+      "agency": "Parks and Wildlife Service Tasmania",
+      "capadName": "Maria Island",
+      "reason": "World Heritage: Australian Convict Sites (Darlington Probation Station)",
+      "reasonSource": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park",
+      "passportRegion": "tasmania"
+    },
+    {
+      "id": "au-np-freycinet",
+      "name": "Freycinet National Park",
+      "state": "AU-TAS",
+      "agency": "Parks and Wildlife Service Tasmania",
+      "capadName": "Freycinet",
+      "reason": "Agency flagship: Parks and Wildlife Service Tasmania, 'one of Tasmania's most popular national parks' and, with Mount Field, its oldest",
+      "reasonSource": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park",
+      "passportRegion": "tasmania"
+    },
+    {
+      "id": "au-np-litchfield",
+      "name": "Litchfield National Park",
+      "state": "AU-NT",
+      "agency": "Parks and Wildlife Commission of the Northern Territory",
+      "capadName": "Litchfield",
+      "reason": "Agency flagship: Parks & Wildlife NT visitor data, the most-visited NT national park in 2025 (280,100), 2021 and 2022",
+      "reasonSource": "https://dth.nt.gov.au/parks-and-wildlife/parks-and-wildlife-statistics-and-research/park-visitor-data",
+      "passportRegion": "northernTerritory"
+    },
+    {
+      "id": "au-np-nitmiluk",
+      "name": "Nitmiluk National Park",
+      "state": "AU-NT",
+      "agency": "Parks and Wildlife Commission of the Northern Territory",
+      "capadName": "Nitmiluk",
+      "reason": "Agency flagship: Parks & Wildlife NT visitor data, the most-visited NT national park in 2023 and 2024",
+      "reasonSource": "https://dth.nt.gov.au/parks-and-wildlife/parks-and-wildlife-statistics-and-research/park-visitor-data",
+      "passportRegion": "northernTerritory",
+      "jointlyManaged": true
+    }
+  ]
+}

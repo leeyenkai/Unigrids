@@ -1,0 +1,260 @@
+{
+  "placeID": "au-np-wollemi",
+  "contentVersion": 1,
+  "summary": "A vast, rugged sandstone wilderness north-west of Sydney, holding the largest declared wilderness area in New South Wales and the only wild grove of the Wollemi pine, a 'living fossil' found here in 1994. Most visitors stay at its edges: the Glow Worm Tunnel and the shale-oil ruins at Newnes, the pagoda rocks and calm water of Ganguddy-Dunns Swamp, and the Colo River gorge.",
+  "facts": {
+    "establishedYear": 1979,
+    "areaHectares": 488620,
+    "bestSeasons": [
+      "spring",
+      "autumn"
+    ],
+    "suggestedTime": "Two to three days"
+  },
+  "story": [
+    "Wollemi is a deeply dissected sandstone plateau on the north-western edge of the Sydney Basin. Its sandstone escarpments, gorges, canyons and beehive-shaped pagoda rock formations are broken by basalt-capped mountains such as Coricudgy and by diatremes, the eroded throats of old volcanic vents. The Colo River gorge and its tributaries form the most extensive sandstone canyon system in eastern Australia. The park's large, near-pristine catchments drain both to the Hawkesbury–Nepean and to the Hunter.",
+    "In late 1994 a stand of unknown conifers was found in a remote gorge here. It was the Wollemi pine, Wollemia nobilis, a tree known before only from the fossil record. Only 46 adult trees and 43 juveniles grow in the wild, and the site is kept confidential, with access strictly controlled to keep out disease. Other wildlife includes brush-tailed rock wallabies, spotted-tailed quolls, regent honeyeaters, glossy black cockatoos, superb lyrebirds, the rare broad-headed snake and about 55 kinds of butterfly.",
+    "The Wiradjuri, Dharug, Wanaruah and Darkinjung peoples have a strong and ongoing cultural association with these lands and waters. People have lived here for at least 12,000 years. About 120 sites are known, among them ceremonial grounds, stone arrangements, grinding grooves, scarred trees, rock engravings and painted shelters, and many more are expected in country that has never been surveyed.",
+    "From 1906 to 1937 Newnes, in the Wolgan Valley, was the centre of one of Australia's largest self-contained oil-shale schemes. It had mines, retorts, a refinery, a town and the Wolgan Valley Railway, whose Tunnel No. 2 is now the Glow Worm Tunnel. The ruins include the largest set of beehive coke ovens in Australia. Wollemi was gazetted as a national park in 1979, and the Wollemi Wilderness was declared in March 1999. It covers about 488,620 hectares and in 2000 became part of the Greater Blue Mountains Area World Heritage property."
+  ],
+  "howItWorks": [
+    "Wollemi is run by the NSW National Parks and Wildlife Service (NPWS) from offices at Blackheath, Mudgee and Bulga. It is always open, though it may close in poor weather or high fire danger. There is no vehicle entry fee: only 45 of NSW's more than 890 parks and reserves charge one, and Wollemi is not among them. For fee-collecting parks elsewhere, the All Parks Pass covers vehicle entry to every one of them in NSW, including Kosciuszko, for $190 a year. The Multi Park Pass covers all of them except Kosciuszko for $65. These prices were listed by NPWS in November 2026.",
+    "The park has seven campgrounds: Ganguddy-Dunns Swamp, Newnes, Wheeny Creek, Colo Meroo, Coorongooba, Deep Pass and Sheepskin Hut. You book them with NPWS online or on 1300 072 757, and must bring your own drinking water and firewood. Most of the park is wilderness, where walks call for navigation, bushcraft and often rock-scrambling or abseiling skills. Parties in wilderness are limited to eight people, and NPWS recommends 1:25,000 topographic maps, a trip intention form and a personal locator beacon.",
+    "Bushfire season runs from October to March. On total fire ban days, usually declared around 5 pm the day before, all campfires and wood or solid-fuel barbecues are prohibited in NSW parks, as are liquid-fuel stoves, and visitor-owned gas and electric cookers are generally prohibited. NPWS may also declare a park fire ban or close areas when the fire risk is high, so check NPWS alerts for closures, hazard reduction burns and fire bans before you leave."
+  ],
+  "sights": [
+    {
+      "name": "Glow Worm Tunnel",
+      "note": "A 387-metre tunnel on the old Wolgan Valley Railway, dark enough for glow worms by day. A 6-kilometre grade 3 return walk from the end of Glowworm Tunnel Road.",
+      "location": [
+        -33.23833,
+        150.22628
+      ]
+    },
+    {
+      "name": "Newnes industrial ruins",
+      "note": "Remains of the 1906–1937 oil-shale works in the Wolgan Valley: retorts, a refinery and Australia's largest set of beehive coke ovens, with a campground nearby.",
+      "location": [
+        -33.18106,
+        150.23439
+      ]
+    },
+    {
+      "name": "Ganguddy-Dunns Swamp",
+      "note": "A calm stretch of the Cudgegong River, formed when Kandos Weir was built in the late 1920s, among scribbly gums and pagoda rocks. Canoeing, swimming and camping.",
+      "location": [
+        -32.83364,
+        150.20734
+      ]
+    },
+    {
+      "name": "Pagoda Lookout, Ganguddy",
+      "note": "A short, steep walk from Ganguddy-Dunns Swamp to views over the pagoda rock formations and the river.",
+      "location": [
+        -32.83539,
+        150.19706
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Colo River gorge",
+      "note": "Part of the most extensive sandstone canyon system in eastern Australia, near Windsor; walks, picnics and canoeing, with camping at Colo Meroo.",
+      "location": [
+        -33.38411,
+        150.69281
+      ]
+    },
+    {
+      "name": "Wheeny Creek",
+      "note": "One of the park's seven campgrounds, beside Wheeny Creek in the south-east of the park.",
+      "location": [
+        -33.4546,
+        150.6737
+      ]
+    },
+    {
+      "name": "Mount Coricudgy",
+      "note": "One of the basalt-capped mountains rising above the sandstone in the north-west of the park, on the road to Ganguddy.",
+      "location": [
+        -32.82621,
+        150.35104
+      ]
+    },
+    {
+      "name": "Sheepskin Hut",
+      "note": "A remote campground in the far north-east of the park, reached by a long scenic drive or 4WD.",
+      "location": [
+        -32.71657,
+        150.72787
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Wolgan Road from Lisdale, off the Castlereagh Highway north of Lithgow — about 35 kilometres to Newnes",
+      "Glowworm Tunnel Road, a gravel road from the Old Bells Line of Road near the Zig Zag Railway, through Newnes State Forest to the Glow Worm Tunnel",
+      "Coricudgy Road from Rylstone, for Ganguddy-Dunns Swamp",
+      "Putty Road from Windsor, for Colo; Putty Road at Milbrodale for the north-east",
+      "Comleroy Road from Kurrajong, off Bells Line of Road, for the Colo area"
+    ],
+    "reservations": "No booking for day visits. Campgrounds are booked with NPWS online or on 1300 072 757. Parking at the Glow Worm Tunnel is limited on summer weekends and holidays.",
+    "permits": [
+      "Wilderness walking parties are limited to eight people",
+      "Access to the Wollemi pine site is strictly controlled"
+    ],
+    "camping": [
+      "Ganguddy-Dunns Swamp, marked sites among pagoda rocks by the Cudgegong River",
+      "Newnes, in the Wolgan Valley near the industrial ruins",
+      "Wheeny Creek and Colo Meroo, in the south-east near Kurrajong and Colo",
+      "Coorongooba, Deep Pass and Sheepskin Hut, remote campgrounds"
+    ],
+    "lodging": [
+      "Accommodation in Lithgow, Rylstone, Kandos, Windsor and the Hawkesbury"
+    ],
+    "seasonalClosures": [
+      "No seasonal closure. The Glow Worm Tunnel to Newnes section of track may close during or after heavy rain, and the park may close in poor weather or high fire danger — check NPWS alerts before you go"
+    ]
+  },
+  "weather": "Wollemi is huge, and conditions differ from the Hawkesbury side to the high country around Newnes and Rylstone; check the forecast for the area you are visiting. Spring is the season for canoeing at Ganguddy-Dunns Swamp, and spring and autumn are the best times for the Glow Worm Tunnel, when parking is easier. Autumn's softer light suits photography. Summer is the season for guided Glow Worm Tunnel tours, and the busiest; heavy rain can bring rockfall and floods on the track from the tunnel to Newnes.",
+  "directions": "Wollemi wraps around the north of the Blue Mountains, so each area has its own approach. For Newnes, take the Great Western Highway to Lithgow, then the Castlereagh Highway towards Mudgee, and turn right at Lisdale onto Wolgan Road for about 35 kilometres. For the Glow Worm Tunnel, about 2.5 hours from Sydney, leave Bells Line of Road at the Zig Zag Railway and follow the gravel Old Bells Line of Road and Glowworm Tunnel Road for about 23 kilometres. Ganguddy-Dunns Swamp is reached from Rylstone by Narango and Coricudgy roads, and Colo from Windsor by Wilberforce and Putty roads.",
+  "fees": [
+    {
+      "title": "Park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "AUD",
+      "detail": "Wollemi is not one of NSW's fee-collecting parks. As listed by NPWS in November 2026."
+    },
+    {
+      "title": "All Parks Pass",
+      "cost": "$190 for one year / $335 for two years",
+      "amount": 190,
+      "currencyCode": "AUD",
+      "detail": "Annual vehicle entry to every fee-collecting NSW national park, including Kosciuszko; not needed for Wollemi itself. As listed by NPWS in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "At least 12,000 years ago",
+      "text": "Aboriginal people are living in the country that is now Wollemi."
+    },
+    {
+      "year": "1906–1937",
+      "text": "The oil-shale industry operates at Newnes, with its own town and the Wolgan Valley Railway."
+    },
+    {
+      "year": "Late 1920s",
+      "text": "Kandos Weir is built on the Cudgegong River, creating Ganguddy-Dunns Swamp."
+    },
+    {
+      "year": "1979",
+      "text": "Wollemi is gazetted as a national park."
+    },
+    {
+      "year": "1994",
+      "text": "The Wollemi pine, known until then only as a fossil, is found growing in a remote gorge in the park."
+    },
+    {
+      "year": "1999",
+      "text": "The Wollemi Wilderness Area is declared in March."
+    },
+    {
+      "year": "2000",
+      "text": "The park is inscribed as part of the Greater Blue Mountains Area World Heritage property."
+    },
+    {
+      "year": "2024",
+      "text": "The plan of management is amended to allow a multi-day Wollemi great walk through Wollemi and Gardens of Stone national parks."
+    }
+  ],
+  "safety": [
+    "Wilderness walking here needs navigation, leadership and bushcraft skills, and often rock-scrambling or abseiling. Carry 1:25,000 maps and a personal locator beacon, and leave a trip intention form.",
+    "Mobile reception is limited. Download the Emergency Plus app before you go, and call Triple Zero (000) in an emergency.",
+    "The Glow Worm Tunnel to Newnes track may close during or after heavy rain because of rockfall and flooding.",
+    "Check NPWS alerts and the Rural Fire Service before you go: areas close on days of high fire danger and for hazard reduction burns."
+  ],
+  "regulations": [
+    "No pets or domestic animals, except certified assistance animals.",
+    "No smoking: NSW national parks are smoke-free.",
+    "In the Glow Worm Tunnel, stay on the path, keep quiet, switch torches off or point them at the ground, and use a red light if you can.",
+    "Wilderness parties are limited to eight people. Access to the Wollemi pine site is strictly controlled and its location kept confidential.",
+    "No campfires or wood barbecues during total fire bans or park fire bans."
+  ],
+  "themes": [
+    "theme-canyons",
+    "theme-fossils",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:(1)Wolgan Valley-2.jpg",
+      "caption": "Sandstone cliffs above the Wolgan Valley",
+      "altText": "Tall orange sandstone cliffs rising above a green valley floor"
+    },
+    {
+      "file": "File:Colo River Gorge, Wollemi National Park.jpg",
+      "caption": "The Colo River gorge",
+      "altText": "A river winding between steep forested sandstone walls"
+    },
+    {
+      "file": "File:Dunns Swamp (3210622615).jpg",
+      "caption": "Ganguddy-Dunns Swamp on the Cudgegong River",
+      "altText": "Still water reflecting rocky outcrops and eucalypt woodland"
+    },
+    {
+      "file": "File:Track to glowworm tunnel Wollemi national Park NSW.jpg",
+      "caption": "The track to the Glow Worm Tunnel",
+      "altText": "A path leading through ferns between sandstone walls towards a dark tunnel"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wollemi National Park — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wollemi-national-park"
+    },
+    {
+      "title": "Wollemi National Park: learn more — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wollemi-national-park/learn-more"
+    },
+    {
+      "title": "Wollemi National Park: visitor info — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wollemi-national-park/visitor-info"
+    },
+    {
+      "title": "Glow Worm Tunnel walking track — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/glow-worm-tunnel-walking-track"
+    },
+    {
+      "title": "Ganguddy-Dunns Swamp campground — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/ganguddy-dunns-swamp-campground"
+    },
+    {
+      "title": "Wollemi National Park Plan of Management — NSW National Parks and Wildlife Service",
+      "url": "https://www.environment.nsw.gov.au/sites/default/files/2025-02/wollemi-national-park-plan-of-management-220080.pdf"
+    },
+    {
+      "title": "Wollemi National Park amendment to the plan of management: establishing the Wollemi great walk — NSW Environment and Heritage",
+      "url": "https://www.environment.nsw.gov.au/publications/wollemi-national-park-amendment-plan-management-establishing-wollemi-great-walk"
+    },
+    {
+      "title": "Greater Blue Mountains World Heritage Area — NSW Environment and Heritage",
+      "url": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/greater-blue-mountains"
+    },
+    {
+      "title": "Fee-collecting national parks — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/fee-collecting-parks"
+    },
+    {
+      "title": "Annual passes — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/annual-passes"
+    },
+    {
+      "title": "Total fire bans and park fire bans — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/safety/fire-safety/fire-bans"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

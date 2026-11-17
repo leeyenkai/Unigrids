@@ -1,0 +1,283 @@
+{
+  "placeID": "au-np-nitmiluk",
+  "contentVersion": 1,
+  "summary": "Jawoyn country in the Katherine region, about 320 kilometres south of Darwin: Nitmiluk Gorge, a system of 13 gorges cut by the Katherine River through towering sandstone, and Leliyn (Edith Falls), a waterfall and swimming hole to the north. Visitors cruise or canoe the gorge, walk the escarpment, or take five or six days on the Jatbula Trail between the two. The park is jointly managed by its Jawoyn Traditional Owners and the Northern Territory Government.",
+  "facts": {
+    "bestSeasons": [
+      "winter"
+    ],
+    "suggestedTime": "Two to six days"
+  },
+  "story": [
+    "Nitmiluk, also known as Katherine Gorge, is a system of 13 gorges that meander with the Katherine River between towering sandstone cliffs, and rock art sites dot the park. To the north the country rises to the sandstone plateau along the western edge of the Arnhem Land escarpment, where the Jatbula Trail passes through woodland, open forest, monsoon forest and riverine country, crossing streams that fall into pools at places such as Crystal Falls, 17 Mile Falls and Leliyn. Many of the park's swimming sites open only once rangers judge the water safe in the dry season, and the wet season floods the river and closes much of the gorge.",
+    "The park has two main sections, 90 kilometres apart by road. In the south is the gorge itself, with the Nitmiluk Centre at its entrance, boat tours on the river, canoes for hire and a network of escarpment walks to lookouts such as Baruwei and Pat's Lookout. In the north is Leliyn (Edith Falls), where a waterfall drops into a plunge pool fringed with paperbark and pandanus, with middle and upper pools above. The Jatbula Trail links them, 62 kilometres along the escarpment.",
+    "This is the land of the Jawoyn people, who live and work here and continue to share their culture with visitors. The Jatbula Trail follows routes Jawoyn people traditionally travelled, and is named after the Jawoyn Traditional Owner Peter Jatbula, who was instrumental in securing land rights for his people.",
+    "The gorge was first protected as Katherine Gorge National Park. Under the Nitmiluk (Katherine Gorge) National Park Act 1989 the land was granted to an Aboriginal land trust and leased back to the Northern Territory's conservation corporation, and the park was re-established as Nitmiluk National Park 'for the benefit and enjoyment of all people'. The same Act set up the board of management, on which Jawoyn Traditional Owners hold the majority of seats."
+  ],
+  "howItWorks": [
+    "Nitmiluk is a Northern Territory park, managed by the Parks and Wildlife Commission of the Northern Territory jointly with the Jawoyn Traditional Owners. Under the 1989 Act, as in force in 2013, the Nitmiluk National Park Board has 13 members: eight are Traditional Aboriginal owners nominated by the Jawoyn Association, alongside Parks and Wildlife staff and public servants, a member of the Kakadu National Park Board and a Katherine resident. The board prepares the park's plan of management.",
+    "Visitors from outside the Northern Territory need an NT Parks Visitor Pass, bought online before you go; NT residents need none but may be asked for proof of residency. Camping and overnight walks are booked and paid for online through the NT parks booking system: you cannot pay at the park. The campground beside the Nitmiluk Centre and other accommodation at the gorge are run privately, by Nitmiluk Tours, which also sells boat tours, canoe hire, helicopter flights and the ferry to the Jatbula Trail. The walk-in and canoe-access campsites inside the gorge must be booked, as spaces are limited.",
+    "Water rules depend on the season. Rangers open swimming sites only when they are safe, mostly in the dry season from about May to October; the first gorge is permanently closed to swimming and canoeing, and in November 2026 the river above it, the gorge campsites and the Jatbula Trail were closed until June 2027. Private boats are allowed only in the first gorge, must be under four metres and 15 horsepower, may not exceed seven knots, and are banned from 1 June to 31 August and during wet-season floods. Lure fishing is allowed without a permit; bait, traps, nets and spears are prohibited."
+  ],
+  "sights": [
+    {
+      "name": "Nitmiluk Gorge",
+      "note": "Thirteen gorges of sheer sandstone along the Katherine River, seen by boat tour, hired canoe or helicopter. No swimming or canoeing in the first gorge.",
+      "location": [
+        -14.3151,
+        132.4583
+      ]
+    },
+    {
+      "name": "Baruwei Lookout",
+      "note": "A 1.8-kilometre return climb from the Nitmiluk Centre to views over the gorge and 17 Mile Valley; continue along the escarpment on a 4.8-kilometre loop.",
+      "location": [
+        -14.3113,
+        132.4263
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Pat's Lookout and Southern Rockhole",
+      "note": "On the Southern Walks about five kilometres from the visitor centre: a lookout over the gorge and a seasonal rock pool, also reached by ferry.",
+      "location": [
+        -14.3128,
+        132.445
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Butterfly Gorge",
+      "note": "A side gorge on the Southern Walks network, with a lookout and seasonal swimming at the river.",
+      "location": [
+        -14.3174,
+        132.4559
+      ]
+    },
+    {
+      "name": "Leliyn (Edith Falls)",
+      "note": "A waterfall and paperbark-fringed plunge pool 60 kilometres north of Katherine, with upper pools, a drive-in campground, kiosk and an electric pool lift. Swimming in the dry season.",
+      "location": [
+        -14.18,
+        132.1882
+      ]
+    },
+    {
+      "name": "Sweetwater Pool",
+      "note": "A swimming spot 4.3 kilometres from Leliyn, walked as a day trip or overnight; the walk-in campground takes ten people a night.",
+      "location": [
+        -14.1873,
+        132.2162
+      ]
+    },
+    {
+      "name": "17 Mile Falls",
+      "note": "A waterfall and camp on day three of the Jatbula Trail, the 62-kilometre walk from the gorge to Leliyn, open from June to September.",
+      "location": [
+        -14.1169,
+        132.3744
+      ]
+    },
+    {
+      "name": "Crystal Falls",
+      "note": "A campsite by falls on the Jatbula Trail, the end of day two from the gorge.",
+      "location": [
+        -14.1667,
+        132.4289
+      ]
+    },
+    {
+      "name": "Nitmiluk Visitor Centre",
+      "note": "At the gorge entrance: café, souvenir shop and cultural displays, and the desk for boat tours, canoes, helicopter flights and walk maps.",
+      "location": [
+        -14.3155,
+        132.421
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The Gorge entrance, 30 kilometres east of Katherine on the sealed Gorge Road",
+      "Leliyn (Edith Falls): turn off the Stuart Highway 40 kilometres north of Katherine and drive 20 kilometres along Edith Falls Road"
+    ],
+    "reservations": "Buy an NT Parks Visitor Pass online if you are not an NT resident. Book camping, overnight walks and the Jatbula Trail online in advance; Jatbula bookings for the June–September season open in early February. Book boat tours, canoes, the Jatbula ferry and the gorge campground with Nitmiluk Tours. Check which sites are open before you go.",
+    "permits": [
+      "An NT Parks Visitor Pass for visitors from outside the Northern Territory",
+      "A Jatbula Trail booking, with a compulsory safety briefing at 8 am or 3 pm",
+      "A permit to fly a drone, obtained before you arrive"
+    ],
+    "camping": [
+      "Privately run campground at the Nitmiluk Centre, suitable for all vehicles",
+      "Walk-in and canoe-access sites in the gorge, among them Dunlop Swamp, Smitt Rock, Eighth Gorge and the Fourth, Sixth and Ninth Gorge sites; booking essential",
+      "Leliyn (Edith Falls) drive-in campground with toilets and showers, and Sweetwater Pool walk-in campground",
+      "Jatbula Trail campsites, one night each, limited to 15 people"
+    ],
+    "lodging": [
+      "Privately operated accommodation at the gorge, booked through Nitmiluk Tours",
+      "Accommodation in the town of Katherine"
+    ],
+    "seasonalClosures": [
+      "Swimming above the first gorge, private and overnight canoeing, the gorge campsites and the Jatbula Trail close in the wet season; in November 2026 they were closed until June 2027",
+      "The first gorge is permanently closed to swimming and canoeing",
+      "The Jatbula Trail is open from June to September, possibly from April if ready; no permits are issued from October to March",
+      "Private boats are banned from 1 June to 31 August and during wet-season flooding"
+    ],
+    "seasonalClosureMonths": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": "Nitmiluk follows the Top End's wet and dry. The dry season, roughly May to October, is the time for swimming, canoeing and long walks; from June to August days reach about 30°C and nights drop to around 10°C. From mid-August the heat builds, and from October to May temperatures rise above 40°C with high humidity, monsoonal rain, flooding and thick vegetation that can hide trail markers. The NT Government warns that temperatures across the Territory can exceed 40°C between October and April; walk early, carry plenty of water and check for heatwave warnings.",
+  "directions": "Katherine, on the Stuart Highway about 320 kilometres south of Darwin, is the gateway. The Gorge entrance is 30 kilometres east of town on the sealed Gorge Road; Leliyn (Edith Falls) is reached by turning off the Stuart Highway 40 kilometres north of Katherine and driving 20 kilometres along Edith Falls Road. The two sections are 90 kilometres apart by road. Jatbula Trail walkers can arrange transfers from Katherine, take the $25 ferry across the river from the gorge to the trailhead, and be collected at Leliyn. Check road conditions on the NT Road Report before you travel.",
+  "fees": [
+    {
+      "title": "NT Parks Visitor Pass, 1 day / 3 days / 2 weeks",
+      "cost": "$10 / $20 / $30 adult",
+      "amount": 10,
+      "currencyCode": "AUD",
+      "detail": "For visitors from outside the Northern Territory; child (5–17) $5/$10/$15, family $25/$50/$75, concession $8/$16/$24. One-month ($45) and annual ($60) adult passes also available. Bought online only. As listed by the NT Government in November 2026; check before you go."
+    },
+    {
+      "title": "Jatbula Trail ferry",
+      "cost": "$25 per person",
+      "amount": 25,
+      "currencyCode": "AUD",
+      "detail": "Crosses the Katherine River from Nitmiluk Gorge to the start of the trail, at 7 am and 9 am. As listed by the NT Government in November 2026."
+    },
+    {
+      "title": "Camping, category A / category B, per night",
+      "cost": "$15 / $10 adult",
+      "amount": 15,
+      "currencyCode": "AUD",
+      "detail": "NT parks campground fees by category: child $8/$5, family $38/$25. Book and pay online. Commercially run campgrounds set their own prices. As listed by the NT Government in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1989",
+      "text": "The Nitmiluk (Katherine Gorge) National Park Act provides for the land to be held by an Aboriginal land trust and leased back, and sets up a board with a Jawoyn majority."
+    },
+    {
+      "year": "2026",
+      "text": "Wet-season closures of the river, gorge campsites and Jatbula Trail run from late 2026 to June 2027."
+    }
+  ],
+  "safety": [
+    "Saltwater crocodiles can be in any Top End waterway, and freshwater crocodiles will bite if provoked. Swim only where a swimming-area-open sign is posted, never swim alone, and do not jump from rocks or waterfalls.",
+    "Heat is a serious danger from October to April. Walk early, drink at least a litre of water an hour, and carry three litres per person on the Southern Walks; avoid strenuous activity in the heat of the day.",
+    "Do not start the Southern Walks or the Jatbula Trail unless properly equipped. Carry a map, a satellite phone or personal locator beacon, insect repellent and a mosquito net; mobile phones are unreliable.",
+    "Flash floods and storms change river and pool conditions quickly. Supervise children closely.",
+    "In an emergency call 000. The Ranger Station is on 08 8973 8888."
+  ],
+  "regulations": [
+    "Visitors from outside the Northern Territory must hold a valid NT Parks Visitor Pass.",
+    "Swim and canoe only where and when sites are open; the first gorge is closed to swimming and canoeing.",
+    "Lure fishing only: bait, traps, nets and spears are prohibited.",
+    "Private boats only in the first gorge, under four metres and 15 horsepower, at no more than seven knots, and not from 1 June to 31 August.",
+    "No open fires on the Southern Walks; carry a fuel stove. Pets are generally not permitted in NT parks."
+  ],
+  "themes": [
+    "theme-canyons",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Katherine River in Nitmiluk National Park.jpg",
+      "caption": "The Katherine River in Nitmiluk Gorge",
+      "altText": "A calm river running between high sandstone cliffs"
+    },
+    {
+      "file": "File:Early morning at Nitmiluk (Katherine) Gorge.jpg",
+      "caption": "Early morning at Nitmiluk Gorge",
+      "altText": "A wide view of a river gorge between sandstone walls in soft light"
+    },
+    {
+      "file": "File:Southern Rockhole (Katherine Gorge (Nitmiluk National Park)).jpg",
+      "caption": "Southern Rockhole",
+      "altText": "A rock pool at the base of a sandstone cliff"
+    },
+    {
+      "file": "File:Leliyn (Edith Falls) in Wet Season. Nitmiluk National Park NT.jpg",
+      "caption": "Leliyn (Edith Falls) in the wet season",
+      "altText": "A waterfall flowing into a large pool surrounded by trees"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nitmiluk National Park — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/nitmiluk-national-park"
+    },
+    {
+      "title": "Nitmiluk Gorge — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/nitmiluk-national-park/nitmiluk-gorge"
+    },
+    {
+      "title": "Leliyn (Edith Falls) — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/nitmiluk-national-park/leliyn-edith-falls"
+    },
+    {
+      "title": "Swimming and walks in Nitmiluk National Park — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/nitmiluk-national-park/swimming-in-nitmiluk-national-park"
+    },
+    {
+      "title": "Walks in Nitmiluk National Park — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/nitmiluk-national-park/walks"
+    },
+    {
+      "title": "Jatbula Trail — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/nitmiluk-national-park/nitmiluk-national-park-jatbula-trail"
+    },
+    {
+      "title": "Camping and accommodation in Nitmiluk National Park — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/nitmiluk-national-park/camping-and-accommodation"
+    },
+    {
+      "title": "Canoes, boats, bike trails and fishing in Nitmiluk National Park — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/nitmiluk-national-park/canoes,-boats-and-fishing"
+    },
+    {
+      "title": "Safety in Nitmiluk National Park — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/find-a-park/nitmiluk-national-park/safety"
+    },
+    {
+      "title": "Check if Nitmiluk National Park is open — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/regions/katherine/check-park-open-katherine/nitmiluk-national-park"
+    },
+    {
+      "title": "NT Parks Visitor Pass — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/visitor-pass"
+    },
+    {
+      "title": "Camping fees — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/camping/fees"
+    },
+    {
+      "title": "Swimming in parks — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/safety-rules/swimming-in-parks"
+    },
+    {
+      "title": "Stay safe in the heat in parks — NT.GOV.AU",
+      "url": "https://nt.gov.au/parks/safety-rules/beat-the-heat"
+    },
+    {
+      "title": "Nitmiluk (Katherine Gorge) National Park Act 1989 — NT Legislation",
+      "url": "https://legislation.nt.gov.au/api/sitecore/Act/PDF?id=12036"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — DCCEEW",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "Nitmiluk National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nitmiluk_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

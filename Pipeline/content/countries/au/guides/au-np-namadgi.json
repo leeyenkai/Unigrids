@@ -1,0 +1,260 @@
+{
+  "placeID": "au-np-namadgi",
+  "contentVersion": 1,
+  "summary": "Mountain bushland on Ngunnawal Country south-west of Canberra, making up almost half of the Australian Capital Territory. Namadgi protects alpine and sub-alpine ranges, sphagnum bogs that feed Canberra's water supply, Ngunnawal rock art at Yankee Hat and the site of the tracking station that relayed the Apollo 11 moonwalk. Entry is free. Walk, camp, ride the trails or come for winter snow on the Brindabellas.",
+  "facts": {
+    "establishedYear": 1984,
+    "areaHectares": 106095,
+    "bestSeasons": [
+      "spring",
+      "autumn"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "Namadgi protects 106,095 hectares of alpine, sub-alpine and mountain bushland in the south-west of the ACT, from the Brindabella Range to the upper valleys of the Cotter, Gudgenby, Orroral and Naas rivers. Its ranges form the mountain backdrop to Canberra. Bimberi Peak, 1,912 metres, is the highest point in the ACT. High in the ranges, sphagnum bogs act as giant sponges. They provide critical habitat for endangered species and release clean water slowly into Canberra's main water supply catchment.",
+    "More than 700 plant species and 222 vertebrate animals have been recorded in the park, among them 15 threatened and 40 rare species. Snow is common on the Brindabellas in winter. The park is part of the Australian Alps National Parks and Reserves, placed on the National Heritage List in 2008.",
+    "Namadgi is on Ngunnawal Country, a landscape that Ngunnawal people have managed for tens of thousands of years, and with which they keep a cultural, social, environmental, spiritual and economic connection. Significant Ngunnawal sites and objects lie across the park. At the Yankee Hat Rock Art site, a rock shelter that Aboriginal people began using more than 800 years ago, paintings record knowledge and stories that are also held in oral tradition, dance, ceremony and the land itself. The Ngunnawal people ask that visitors respect these places so they are protected for future generations.",
+    "Pastoralists settled the upper valleys from the 1830s, and their huts and homesteads still stand. Timber-getters worked the Brindabellas from the 1930s, and Bendora Arboretum was planted in 1940 to test softwoods. Skiers formed the Canberra Alpine Club in 1934. In the 1960s NASA tracking stations here served the Apollo program, and the dish at Honeysuckle Creek sent live pictures of the first moon landing to the world in 1969. Namadgi was declared a national park in 1984 and reached its present size in 1991. Fires burned through it in 2003, and in early 2020 the Orroral Valley fire burned more than 80 per cent of the park."
+  ],
+  "howItWorks": [
+    "Namadgi is run by the ACT Parks and Conservation Service, not by NSW. Admission is free, and NSW park passes do not apply here. Start at the Namadgi Visitor Information Centre, about 2.7 kilometres south of Tharwa on Naas Road, for maps, road conditions, firewood and advice. It takes card payments only. Booroomba Rocks Road, Old Boboyan Road and Orroral Ridge Road are unsealed. They generally suit 2WD vehicles in dry weather, but conditions can change at short notice, and in winter you may need a 4WD or chains.",
+    "Camping is at Honeysuckle, Orroral and Mount Clear campgrounds. Book ahead, since bookings are essential and camping fees apply, and stays are limited to seven consecutive nights. Bring your own drinking water and firewood, or buy firewood at the visitor centre, and take all your rubbish home, because there are no bins. Before you walk, tell someone your plans and sign the bushwalking registers in the park. You can hire a personal locator beacon at the visitor centre. Events and organised activities for groups of 20 or more need a permit.",
+    "Follow ACT Parks' campfire guidelines. On a declared Total Fire Ban day in the ACT, it is an offence to light, maintain or use a fire in the open air, and gas barbecues in parks and reserves are turned off. Check ACT Parks alerts for closures and prescribed burns before you go. The park is still recovering from the 2020 fire and the floods that followed it, and some roads remain closed, which can lengthen walking routes."
+  ],
+  "sights": [
+    {
+      "name": "Yankee Hat Rock Art site",
+      "note": "Ngunnawal rock paintings in a shelter used for more than 800 years, reached by the Yankee Hat walking track. Respect the site and leave it undisturbed.",
+      "location": [
+        -35.75059,
+        148.95367
+      ]
+    },
+    {
+      "name": "Honeysuckle Creek",
+      "note": "Site of the tracking station whose dish beamed the first television of the Apollo 11 moon landing to the world in 1969; now a campground.",
+      "location": [
+        -35.58318,
+        148.97779
+      ]
+    },
+    {
+      "name": "Booroomba Rocks",
+      "note": "A rocky summit near Honeysuckle Creek, reached from the unsealed Booroomba Rocks Road.",
+      "location": [
+        -35.56263,
+        148.9896
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Orroral Valley",
+      "note": "A valley with a bushland campground; it gave its name to the 2020 bushfire that burned most of the park.",
+      "location": [
+        -35.66066,
+        148.98916
+      ]
+    },
+    {
+      "name": "Bimberi Peak",
+      "note": "The ACT's highest point, 1,912 metres, in the remote west of the park.",
+      "location": [
+        -35.65932,
+        148.79055
+      ]
+    },
+    {
+      "name": "Bendora Arboretum",
+      "note": "Planted in 1940 to test softwood trees, the last surviving arboretum in the Brindabella Range, with some of Australia's finest mature conifers.",
+      "location": [
+        -35.42307,
+        148.79709
+      ]
+    },
+    {
+      "name": "Mount Franklin chalet site",
+      "note": "A shelter and interpretation site where the old Mount Franklin ski chalet stood until the 2003 fires, on the Brindabella Range.",
+      "location": [
+        -35.49093,
+        148.7653
+      ]
+    },
+    {
+      "name": "Namadgi Visitor Information Centre",
+      "note": "South of Tharwa on Naas Road, for maps, road conditions, firewood and beacon hire. Open 9 am to 4 pm weekdays, to 4.30 pm weekends; cards only.",
+      "location": [
+        -35.5313,
+        149.06576
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Naas Road from Tharwa, past the Namadgi Visitor Information Centre",
+      "Boboyan Road, the route through the park between the ACT and New South Wales",
+      "Booroomba Rocks Road, Old Boboyan Road and Orroral Ridge Road, unsealed roads generally suitable for 2WD in dry weather",
+      "Brindabella Road, across the Brindabella Range in the north-west"
+    ],
+    "reservations": "No booking for day visits. Campground bookings are essential at Honeysuckle and Mount Clear, and Orroral is booked online only; stays are limited to seven consecutive nights.",
+    "permits": [
+      "Events and organised activities for groups of 20 or more need an ACT Parks permit",
+      "Horse riders arrange use of the Mount Clear horse yards through the Namadgi Visitor Centre"
+    ],
+    "camping": [
+      "Honeysuckle campground, at the historic tracking-station site",
+      "Orroral campground, a bushland campground in the Orroral Valley",
+      "Mount Clear campground, in the south of the park"
+    ],
+    "lodging": [
+      "Accommodation in Canberra, Tharwa and nearby towns"
+    ],
+    "seasonalClosures": [
+      "Winter snow can make 4WD or chains necessary on the higher roads, and some roads have stayed closed since the 2020 fire and floods — check ACT Parks alerts and the Namadgi Visitor Centre before you go"
+    ]
+  },
+  "weather": "Namadgi is mountain country, and its weather can change unexpectedly at any time of year: carry warm and waterproof clothing on every walk. Snow is common on the Brindabella Range in winter, when roads may need a 4WD or chains. Summer brings the risk of bushfire, and Total Fire Bans and closures are possible on the worst days. Check the forecast for the ranges, not just for Canberra, before you set out.",
+  "directions": "Namadgi lies south-west of Canberra. Drive to Tharwa and continue about 2.7 kilometres south on Naas Road to the Namadgi Visitor Information Centre, the main gateway, where staff can advise on road conditions. Boboyan Road continues through the park to New South Wales. Unsealed roads, among them Booroomba Rocks Road, Old Boboyan Road and Orroral Ridge Road, lead to other parts of the park. Brindabella Road crosses the Brindabella Range in the north-west.",
+  "fees": [
+    {
+      "title": "Park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "AUD",
+      "detail": "Admission to Namadgi is free. NSW national park passes do not cover ACT parks. As listed by ACT Parks in November 2026."
+    },
+    {
+      "title": "Namadgi Map and Guide",
+      "cost": "$4.50",
+      "amount": 4.5,
+      "currencyCode": "AUD",
+      "detail": "Sold at the Namadgi Visitor Centre and the Canberra and Region Visitor Centre; as listed by ACT Parks in November 2026. Camping fees also apply at the campgrounds — check with ACT Parks before you go."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Tens of thousands of years",
+      "text": "Ngunnawal people manage and care for this Country."
+    },
+    {
+      "year": "1830s",
+      "text": "Pastoralists settle the upper valleys of the Cotter, Gudgenby, Orroral, Naas and Tidbinbilla rivers."
+    },
+    {
+      "year": "1934",
+      "text": "The Canberra Alpine Club forms, and recreational skiing begins on the Brindabella Range."
+    },
+    {
+      "year": "1940",
+      "text": "Bendora Arboretum is planted to trial softwood species."
+    },
+    {
+      "year": "1969",
+      "text": "The Honeysuckle Creek tracking station relays live television of the Apollo 11 moon landing."
+    },
+    {
+      "year": "1984",
+      "text": "Namadgi is declared a national park."
+    },
+    {
+      "year": "1991",
+      "text": "The park is expanded to 106,095 hectares, about 46 per cent of the ACT."
+    },
+    {
+      "year": "2003",
+      "text": "Major bushfires burn through the park."
+    },
+    {
+      "year": "2008",
+      "text": "Namadgi is placed on the National Heritage List as part of the Australian Alps National Parks and Reserves."
+    },
+    {
+      "year": "2020",
+      "text": "The Orroral Valley bushfire burns 86,562 hectares, more than 80 per cent of the park, followed by flood damage."
+    }
+  ],
+  "safety": [
+    "Mountain weather can change at any time of year. Carry warm, waterproof clothing, and leave your plans with someone and in the park's bushwalking registers.",
+    "Walking off marked tracks needs map and compass skills. Hire a personal locator beacon from the visitor centre for remote trips; mobile reception is unreliable.",
+    "Check water quality before swimming, and look out for hazards at the water's edge.",
+    "Check ACT Parks alerts for closures, prescribed burns and Total Fire Bans before you go."
+  ],
+  "regulations": [
+    "No dogs in the park or the adjoining Gibraltar Forest Regeneration Area, except inside vehicles travelling between the ACT and NSW on Boboyan or Brindabella roads.",
+    "No drones.",
+    "No open-air fires on Total Fire Ban days; follow ACT Parks' campfire guidelines at other times.",
+    "Respect Ngunnawal sites and objects, and follow the Huts Code for Visitors at historic huts.",
+    "Take all rubbish home: there are no bins."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-alpine",
+    "theme-wetland",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Mount Aggie, Brindabella Range, Namadgi National Park 03.jpg",
+      "caption": "Mount Aggie on the Brindabella Range",
+      "altText": "Forested mountain ridges fading into blue distance"
+    },
+    {
+      "file": "File:Gudgenby River - Namadgi NP.jpg",
+      "caption": "The Gudgenby River near the Glendale picnic area",
+      "altText": "A shallow river bending through grassland with wooded hills behind"
+    },
+    {
+      "file": "File:Namadgi National Park - Yankee Hat (1).JPG",
+      "caption": "On the way to Yankee Hat in the Gudgenby Valley",
+      "altText": "Open grassy valley with granite hills under a wide sky"
+    },
+    {
+      "file": "File:Namadgi National Park Mt Clear campground.jpg",
+      "caption": "Morning at Mount Clear campground",
+      "altText": "A grassy campground in a valley ringed by low wooded hills"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Namadgi National Park — ACT Parks and Conservation Service",
+      "url": "https://www.parks.act.gov.au/find-a-nature-park/namadgi-national-park"
+    },
+    {
+      "title": "Honeysuckle Campground — ACT Parks and Conservation Service",
+      "url": "https://www.parks.act.gov.au/find-a-nature-park/namadgi-national-park/honeysuckle-campground"
+    },
+    {
+      "title": "Mount Clear Campground — ACT Parks and Conservation Service",
+      "url": "https://www.parks.act.gov.au/find-a-park/namadgi-national-park/mount-clear-campground"
+    },
+    {
+      "title": "Total Fire Ban for Sunday 25 January 2026 — ACT Emergency Services Agency",
+      "url": "https://esa.act.gov.au/total-fire-ban-sunday-25-january-2026"
+    },
+    {
+      "title": "Annual passes — NSW National Parks and Wildlife Service (passes do not cover ACT parks)",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/annual-passes"
+    },
+    {
+      "title": "Yankee Hat Map and Guide — ACT Parks and Conservation Service",
+      "url": "https://www.parks.act.gov.au/__data/assets/pdf_file/0010/625528/yankee-hat-map-and-guide.pdf"
+    },
+    {
+      "title": "Highest mountains — Geoscience Australia",
+      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/highest-mountains"
+    },
+    {
+      "title": "Australian Alps National Parks and Reserves — Australian Heritage Database (National Heritage List, 7 November 2008)",
+      "url": "https://www.environment.gov.au/cgi-bin/ahdb/search.pl?mode=place_detail;place_id=105891"
+    },
+    {
+      "title": "Namadgi National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Namadgi_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

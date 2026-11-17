@@ -1,0 +1,258 @@
+{
+  "placeID": "au-np-mungo",
+  "contentVersion": 1,
+  "summary": "A dry ancient lake bed in the semi-arid far south-west of New South Wales, edged by the eroded dunes of the Walls of China. Here Mungo Lady and Mungo Man were buried more than 42,000 years ago, in what NPWS calls the planet's oldest ritual burials. The park is the heart of the Willandra Lakes Region World Heritage Area, and NPWS works with elders of the Ngyiampaa, Mutthi Mutthi and Southern Paakantyi peoples to care for it.",
+  "facts": {
+    "establishedYear": 1979,
+    "areaHectares": 121700,
+    "bestSeasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "suggestedTime": "Two days"
+  },
+  "story": [
+    "Lake Mungo is one of the Willandra Lakes, which held deep, fairly fresh water between about 50,000 and 19,000 years ago and then dried out as the climate changed after the last ice age. What remains is a flat lake floor of saltbush, and along its south-eastern shore a crescent-shaped dune, or lunette, built by wind from four layers of sand and silt laid down over tens of thousands of years. Erosion has cut the lunette into the pale ridges and pinnacles called the Walls of China.",
+    "That record is human. Mungo Lady and Mungo Man were buried on the shore of the lake more than 42,000 years ago. Mungo Lady was cremated, the oldest known human cremation in the world, and Mungo Man was adorned with ochre. Both were found by the geologist Jim Bowler, Mungo Lady in 1968 and Mungo Man in 1974. Human footprints and trackways about 20,000 years old have also been found in the park. Together they show people living by the lakes for tens of thousands of years.",
+    "This is the Country of the Ngyiampaa, Mutthi Mutthi and Southern Paakantyi Aboriginal people, who have lived here for millennia. NPWS collaborates with representative elders from these three tribes to protect the park's culture and heritage. Mungo Man was taken away in 1974 without the permission of the Traditional Owners. In November 2017 his remains, with those of more than 100 others, were carried home from Canberra to Lake Mungo.",
+    "Pastoralists came in the 19th century, and the old Mungo woolshed still stands near today's visitor centre. Mungo station was later cut from the larger Gol Gol holding and divided up for returned soldiers after the First World War. Mungo National Park was created on 6 April 1979, and the Willandra Lakes Region was inscribed on the World Heritage List in 1981 for both cultural and natural values. Red kangaroos, emus, pink cockatoos in their hundreds, mallee ringnecks and wedge-tailed eagles live here now."
+  ],
+  "howItWorks": [
+    "Mungo is run by the NSW National Parks and Wildlife Service (NPWS) from the Mungo Visitor Centre and its Buronga office near Mildura, together with elders of the three Traditional Owner groups. It is one of only 45 NSW parks and reserves that charge vehicle entry: $8 per vehicle per day, paid by self-registration envelope outside the visitor centre. Vehicles with eight or more seats and commercial tours pay different fees. The All Parks Pass covers vehicle entry to every fee-collecting park in NSW, including Kosciuszko, for $190 a year. The Multi Park Pass covers all of them except Kosciuszko for $65, and the Country Parks Pass covers Country NSW parks for $45. These prices were listed by NPWS in November 2026.",
+    "Main and Belah campgrounds and the Mungo Shearers' Quarters are booked through NPWS, online or on 1300 072 757. The park is remote. There is no food, petrol or diesel in or near it, and the nearest fuel is at Buronga or Mildura, about 110 kilometres away. Many roads are unsealed and their condition varies, so check for closures with Balranald, Central Darling or Wentworth shire councils before you set out. Mobile reception is limited to Telstra, and in an emergency you can reach a ranger on UHF channel 3.",
+    "Bushfire season in NSW runs from October to March. On total fire ban days, usually declared around 5 pm the day before, all wood or solid-fuel fires and barbecues are prohibited in NSW parks, as are liquid-fuel stoves, and visitor-owned gas and electric cookers are generally prohibited. NPWS may also declare a park fire ban or close the park when the fire risk is high. Drones are not allowed without written agreement from the park office, given only in exceptional circumstances and with Traditional Owner endorsement."
+  ],
+  "sights": [
+    {
+      "name": "Walls of China",
+      "note": "The eroded lunette on the lake's eastern shore, sculpted into pale ridges and pinnacles. A wheelchair-accessible viewing platform, with toilets and picnic tables, looks over them.",
+      "location": [
+        -33.74165,
+        143.12783
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Red Top lookout",
+      "note": "A boardwalk and lookout at the southern end of the lunette, over its eroded formations.",
+      "location": [
+        -33.78791,
+        143.11328
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Mungo Woolshed",
+      "note": "The old woolshed of Mungo station, beside the visitor centre, from the park's pastoral days.",
+      "location": [
+        -33.72366,
+        143.0279
+      ]
+    },
+    {
+      "name": "Mungo lookout",
+      "note": "A lookout on the western side of the dry bed of Lake Mungo, near the main campground; toilets and picnic tables.",
+      "location": [
+        -33.73833,
+        143.02082
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Vigars Well",
+      "note": "A picnic area north of the Walls of China, one of several along the park roads.",
+      "location": [
+        -33.69251,
+        143.10567
+      ]
+    },
+    {
+      "name": "Belah campground",
+      "note": "A campground east of the lunette, away from the visitor centre, with toilets and picnic tables.",
+      "location": [
+        -33.71195,
+        143.17704
+      ]
+    },
+    {
+      "name": "Main campground",
+      "note": "The park's main campground near the visitor centre, with toilets, picnic tables and barbecues.",
+      "location": [
+        -33.73637,
+        143.01491
+      ]
+    },
+    {
+      "name": "Mungo Visitor Centre",
+      "note": "NPWS's visitor centre at the park entrance, where you pay entry fees; with toilets, showers, barbecues and picnic tables.",
+      "location": [
+        -33.72324,
+        143.02676
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "From Mildura, across the bridge to Buronga, along the Silver City Highway and Arumpo Road to its end — about 116 kilometres",
+      "From Balranald, 53 kilometres along Ivanhoe Road, turning left 3 kilometres after Box Creek Bridge",
+      "From Broken Hill or Wentworth, by Pooncarie and Top Hut Road"
+    ],
+    "reservations": "No booking for a day visit. Campgrounds and the Mungo Shearers' Quarters are booked with NPWS online or on 1300 072 757.",
+    "permits": [
+      "Drones need written agreement from the park office, given only in exceptional circumstances with Traditional Owner endorsement",
+      "Commercial tour operators pay separate fees"
+    ],
+    "camping": [
+      "Main campground, near the visitor centre",
+      "Belah campground, east of the lunette"
+    ],
+    "lodging": [
+      "Mungo Shearers' Quarters, with showers, power and drinking water",
+      "Accommodation in Mildura, Buronga and Balranald"
+    ],
+    "seasonalClosures": [
+      "Unsealed roads into and through the park can close after rain — check road conditions with the shire councils and NPWS alerts before you go"
+    ]
+  },
+  "weather": "Mungo is semi-arid country. Summer is fiercely hot: NPWS warns that temperatures in parts of the park can reach 50°C, so walking and driving then need great care and plenty of water. Plan a visit for the cooler months if you can. Check road conditions after any rain, since the unsealed roads can close.",
+  "directions": "Mungo is in the far south-west of New South Wales, about 116 kilometres from Mildura and 155 kilometres from Balranald. From Mildura, cross the bridge to Buronga, take the Silver City Highway and then Arumpo Road to its end. From Balranald, follow Ivanhoe Road for 53 kilometres and turn left 3 kilometres after Box Creek Bridge. From Broken Hill or Wentworth, drive to Pooncarie and take Top Hut Road to the park. Many roads are unsealed; fill up with fuel at Buronga or Mildura, the nearest, about 110 kilometres away.",
+  "fees": [
+    {
+      "title": "Vehicle entry",
+      "cost": "$8 per vehicle per day",
+      "amount": 8,
+      "currencyCode": "AUD",
+      "detail": "Paid by self-registration envelope outside the Mungo Visitor Centre. Vehicles with eight or more seats and commercial tour operators pay different fees. As listed by NPWS in November 2026 — check before you go."
+    },
+    {
+      "title": "Country Parks Pass",
+      "cost": "$45 for one year / $75 for two years",
+      "amount": 45,
+      "currencyCode": "AUD",
+      "detail": "Vehicle entry to fee-collecting parks in Country NSW, including Mungo, except Kosciuszko. The All Parks Pass ($190 a year) also covers Kosciuszko. As listed by NPWS in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "More than 42,000 years ago",
+      "text": "Mungo Lady is cremated and Mungo Man buried with ochre on the shore of Lake Mungo."
+    },
+    {
+      "year": "About 20,000 years ago",
+      "text": "People leave footprints and trackways that survive in the park today."
+    },
+    {
+      "year": "1968",
+      "text": "Jim Bowler finds the cremated remains of Mungo Lady in the lunette."
+    },
+    {
+      "year": "1974",
+      "text": "Mungo Man is found, and taken away without the permission of the Traditional Owners."
+    },
+    {
+      "year": "1979",
+      "text": "Mungo National Park is created on 6 April."
+    },
+    {
+      "year": "1981",
+      "text": "The Willandra Lakes Region is inscribed on the World Heritage List."
+    },
+    {
+      "year": "2017",
+      "text": "In November Mungo Man and more than 100 other ancestors are returned from Canberra to Lake Mungo."
+    }
+  ],
+  "safety": [
+    "Summer temperatures can reach 50°C. Carry far more water than you think you need and avoid walking in the heat of the day.",
+    "There is no food or fuel in or near the park; the nearest fuel is about 110 kilometres away at Buronga or Mildura.",
+    "Unsealed roads can close after rain. Check for closures before setting out and do not drive on closed roads.",
+    "Mobile reception is limited to Telstra. In an emergency, contact a ranger on UHF channel 3 or call Triple Zero (000) where you have reception."
+  ],
+  "regulations": [
+    "Aboriginal sites and remains in the lunette are protected: keep to the boardwalks and tracks and leave everything where you find it.",
+    "No pets or domestic animals, except certified assistance animals.",
+    "No drones without written agreement from the park office and Traditional Owner endorsement.",
+    "No smoking: NSW national parks are smoke-free.",
+    "No fires of any kind during total fire bans or park fire bans."
+  ],
+  "themes": [
+    "theme-desert",
+    "theme-dunes",
+    "theme-fossils",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Mungo National Park Wall of China.jpg",
+      "caption": "The Walls of China at sunset",
+      "altText": "Pale, wind-eroded sand ridges glowing in low evening light"
+    },
+    {
+      "file": "File:Lake Mungo Panorama.jpg",
+      "caption": "The Walls of China from the Walls lookout",
+      "altText": "A wide panorama of eroded white and orange dunes above a flat plain"
+    },
+    {
+      "file": "File:Emus, at Walls of China.jpg",
+      "caption": "Emus near the Walls of China",
+      "altText": "Two emus walking across sparse ground in front of pale sand dunes"
+    },
+    {
+      "file": "File:Red Top boardwalk in Mungo Nat Park.jpg",
+      "caption": "A boardwalk over the eroded lunette",
+      "altText": "A timber boardwalk crossing eroded sand and clay formations"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mungo National Park — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mungo-national-park"
+    },
+    {
+      "title": "Mungo National Park: learn more — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mungo-national-park/learn-more"
+    },
+    {
+      "title": "Mungo National Park: visitor info — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/mungo-national-park/visitor-info"
+    },
+    {
+      "title": "Fee-collecting national parks — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/fee-collecting-parks"
+    },
+    {
+      "title": "Annual passes — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/annual-passes"
+    },
+    {
+      "title": "Total fire bans and park fire bans — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/safety/fire-safety/fire-bans"
+    },
+    {
+      "title": "Mungo Man heads back to country — Australian Geographic",
+      "url": "https://www.australiangeographic.com.au/?p=21011"
+    },
+    {
+      "title": "Mungo Man returns to ancient resting place — The New Daily",
+      "url": "https://www.thenewdaily.com.au/news/state/nsw/2017/11/16/mungo-man-returns-ancient-resting-place"
+    },
+    {
+      "title": "Mungo National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mungo_National_Park"
+    },
+    {
+      "title": "Willandra Lakes Region — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Willandra_Lakes_Region"
+    },
+    {
+      "title": "Mungo State Conservation Area: statement of management intent (2014) — NSW National Parks and Wildlife Service",
+      "url": "https://www.environment.nsw.gov.au/sites/default/files/mungo-state-conservation-area-statement-of-management-intent-140204.pdf"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

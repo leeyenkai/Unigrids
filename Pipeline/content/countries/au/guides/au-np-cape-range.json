@@ -1,0 +1,241 @@
+{
+  "placeID": "au-np-cape-range",
+  "contentVersion": 1,
+  "summary": "A rugged limestone range and arid coastal plain running down to the turquoise water of Ningaloo Marine Park, at the heart of the Ningaloo Coast World Heritage Area near Exmouth. Visitors snorkel coral gardens straight off the beach at Turquoise Bay and Oyster Stacks, walk into Mandu Mandu and Yardie Creek gorges, and camp behind the dunes. The park is jointly managed by DBCA and its Traditional Owners, the Baiyungu, Thalanyji and Yinigurdira people.",
+  "facts": {
+    "establishedYear": 1964,
+    "areaHectares": 67189,
+    "bestSeasons": [
+      "winter",
+      "autumn",
+      "spring"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "Cape Range is a place of stark contrast: the red, rugged gorges and wave-cut limestone escarpments of the range on one side, white beaches and the clear turquoise water of Ningaloo Reef on the other. Beneath the range lies a karst system of caves and subterranean waters. Spectacular canyons cut its eastern side at Charles Knife and Shothole, while on the western side gorges such as Mandu Mandu open towards the coast; Yardie Creek, unique in the park, holds permanent water between sheer cliffs.",
+    "Offshore, Ningaloo is one of the longest near-shore reefs in the world, so close that you can walk off the beach and snorkel over coral. The DBCA lists more than 200 corals and 500 fish on the reef, shelf and slope. An estimated 300 to 500 whale sharks visit each year, humpback whales pass from May to October, and the coast is one of the Indian Ocean's most important turtle rookeries. On land the park shelters kangaroos, emus, echidnas, many birds and the threatened black-flanked rock-wallaby, best seen early or late in the gorges.",
+    "The Baiyungu, Thalanyji and Yinigurdira people are the Traditional Owners of Cape Range National Park and the adjoining Ningaloo Marine Park. DBCA says it is proud to be in joint management with them to look after these special areas for future generations. DBCA's visitor guide calls this coast by its Aboriginal and English names together: Nyinggulu (Ningaloo).",
+    "Cape Range was declared a national park in 1964. On 24 June 2011 the Ningaloo Coast, taking in the park, Ningaloo Marine Park, the Muiron Islands and adjoining land, was inscribed on the World Heritage List, recognised for its exceptional natural beauty and for the importance of its habitats to biodiversity. The Milyering Discovery Centre, built in 1988 of rammed earth and powered by the sun, was the first totally environmentally friendly building of its type in Australia."
+  ],
+  "howItWorks": [
+    "Cape Range is managed by the Parks and Wildlife Service of Western Australia's Department of Biodiversity, Conservation and Attractions (DBCA). It is one of more than 30 WA parks that charge an entry fee, paid per vehicle on arrival or with a campsite booking; a WA park pass covers entry to all WA parks for its duration but not camping. Shothole and Charles Knife canyons, on the eastern side of the range, are outside the fee area. Walkers and cyclists pay no entry fee.",
+    "The park's coastal campgrounds, among them Osprey Bay, Yardie Creek, Kurrajong, Neds, North Mandu, Bungarra, Mesa and Tulki Beach, must be booked online through Park Stay WA; there is no booking at the gate, and the Milyering Discovery Centre has devices and wi-fi for those without phone reception. Camping fees are charged per person per night. One K and Boat Harbour campgrounds, south of the Yardie Creek crossing, are four-wheel drive only. Sal Salis, an eco-tent retreat, is privately run for its guests.",
+    "Most of the coastline is in Ningaloo Marine Park, and many popular snorkelling spots, including Turquoise Bay, lie in sanctuary zones where nothing may be taken. Kayak trails with moorings let paddlers tie off and snorkel. No dogs or other pets are allowed, and 1080 baits are laid against foxes and feral cats. Severe Tropical Cyclone Narelle badly damaged campgrounds elsewhere on the Ningaloo coast, closing some from 29 October for rebuilding; check DBCA Park Alerts for closures before you go."
+  ],
+  "sights": [
+    {
+      "name": "Turquoise Bay",
+      "note": "One of WA's best beaches, with coral, fish and other marine life close to shore. Snorkel from the Bay Loop, or drift with the current from the Drift Loop; take care with strong currents at the sandbar.",
+      "location": [
+        -22.096,
+        113.8876
+      ]
+    },
+    {
+      "name": "Oyster Stacks",
+      "note": "Five small islets rising from the reef, a fine snorkelling site that can be reached only at high tide.",
+      "location": [
+        -22.1323,
+        113.8771
+      ]
+    },
+    {
+      "name": "Yardie Creek",
+      "note": "A permanent creek between sheer red cliffs at the park's southern end. Walk the 1.2-kilometre nature walk or the Class 4 gorge trail, or take a boat tour; watch for black-flanked rock-wallabies and ospreys.",
+      "location": [
+        -22.3219,
+        113.8128
+      ]
+    },
+    {
+      "name": "Mandu Mandu Gorge",
+      "note": "A Class 4, three-kilometre return walk up a rocky creek bed and onto the gorge rim, with views to Ningaloo Reef. Best early or late in the day.",
+      "location": [
+        -22.1499,
+        113.8822
+      ]
+    },
+    {
+      "name": "Mangrove Bay",
+      "note": "A bird hide among the mangroves where resident and migratory birds flock to feed and rest as the tide flows in and out.",
+      "location": [
+        -21.9702,
+        113.9439
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Charles Knife Canyon",
+      "note": "A winding road up the eastern side of the range to Charles Knife Lookout over deep canyons. Outside the park entry fee area.",
+      "location": [
+        -22.123,
+        114.0781
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Milyering Discovery Centre",
+      "note": "Displays on the Ningaloo Coast World Heritage Area, advice, snorkel hire and online campsite booking, 54 kilometres from Exmouth.",
+      "location": [
+        -22.0286,
+        113.9232
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The coastal road from Exmouth into the northern part of the park, past the Milyering Discovery Centre",
+      "Charles Knife and Shothole canyon roads, south of Exmouth, on the eastern side of the range",
+      "Yardie Creek at the southern end; beyond the crossing, four-wheel drive only"
+    ],
+    "reservations": "Book campsites online through Park Stay WA before you arrive; demand is high. Pay park entry with your booking, on arrival, or with a WA park pass. Book Yardie Creek boat tours and whale shark tours with their operators. Check DBCA Park Alerts for cyclone damage and closures before you go.",
+    "permits": [
+      "Park entry fee or a valid WA park pass",
+      "Follow Ningaloo Marine Park zoning: take nothing in sanctuary zones; fishing only where permitted"
+    ],
+    "camping": [
+      "Bookable coastal campgrounds including Osprey Bay, Yardie Creek, Kurrajong, Neds, North Mandu, Bungarra, Mesa and Tulki Beach",
+      "One K and Boat Harbour, south of Yardie Creek, four-wheel drive only",
+      "North Kurrajong reserved for education and commercial tour groups"
+    ],
+    "lodging": [
+      "Sal Salis, a privately run eco-tent retreat inside the park, for guests only",
+      "Accommodation in Exmouth"
+    ],
+    "seasonalClosures": [
+      "Walks should be attempted only between April and September because of the heat",
+      "Cyclone damage can close sites; Severe Tropical Cyclone Narelle closed campgrounds in the nearby Nyinggulu coastal reserves and Nyinggulara National Park — check DBCA Park Alerts before you go"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "Cape Range is hot and dry, with an arid coast beside the sea. DBCA warns that temperatures can soar above 45°C in summer, and that walks should be attempted only between April and September. The marine calendar adds its own highlights: whale sharks gather around the time of the mass coral spawning and seasonal nutrient upwellings, humpback whales migrate past from May to October, and the coast is one of the most important turtle nesting rookeries in the Indian Ocean. In the later part of the season, August and September, paddlers in Exmouth Gulf may meet humpback whales and manta rays.",
+  "directions": "Cape Range is on Western Australia's North West Cape, near the town of Exmouth, its nearest town; the Milyering Discovery Centre, in the northern part of the park, is 54 kilometres from Exmouth. Charles Knife and Shothole canyons, on the eastern side of the range, are reached from the main road south of Exmouth. The coastal road through the park leads south to Yardie Creek; beyond the creek crossing the campgrounds and tracks are four-wheel drive only. Bring your own vehicle, or join a tour from Exmouth.",
+  "fees": [
+    {
+      "title": "Park entry, standard vehicle (12 or fewer occupants)",
+      "cost": "$17 per vehicle",
+      "amount": 17,
+      "currencyCode": "AUD",
+      "detail": "Concession $10; motorcycle $10; vehicles with more than 12 occupants $8 per person. Covered by a WA park pass. As listed by DBCA in November 2026; check before you go."
+    },
+    {
+      "title": "Camping, per person per night",
+      "cost": "$10–$20 adult",
+      "amount": 10,
+      "currencyCode": "AUD",
+      "detail": "WA rates by facilities: none $10 (concession $7), basic $15 ($10), additional such as showers $20 ($15); children 6–15 $5, 5 and under free. As listed by DBCA in November 2026."
+    },
+    {
+      "title": "WA park passes",
+      "cost": "$30 (5-day) / $50 (14-day) / $70 (4-week)",
+      "amount": 30,
+      "currencyCode": "AUD",
+      "detail": "Holiday passes covering entry to all WA parks. Annual All Parks Pass $130; concession $80. As listed by DBCA's shop in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1964",
+      "text": "Cape Range is declared a national park."
+    },
+    {
+      "year": "1988",
+      "text": "The rammed-earth, solar-powered Milyering Discovery Centre is built."
+    },
+    {
+      "year": "2011",
+      "text": "The Ningaloo Coast is inscribed on the World Heritage List on 24 June."
+    }
+  ],
+  "safety": [
+    "Temperatures can pass 45°C in summer. Walk only between April and September, wear suitable footwear and clothing, carry plenty of water and tell someone your expected return time.",
+    "Currents can be strong, notably at the sandbar at Turquoise Bay. Snorkel within your ability and read the safety advice for swimming, snorkelling and diving.",
+    "Oyster Stacks can be reached safely only at high tide; check tide times.",
+    "Carry a personal locator beacon on longer walks; the Milyering Discovery Centre has a public telephone and Telstra reception."
+  ],
+  "regulations": [
+    "Pay park entry or carry a valid WA park pass; camp only in booked campsites.",
+    "Take nothing in Ningaloo Marine Park sanctuary zones, including Turquoise Bay and Lakeside.",
+    "No dogs or other pets; 1080 baits are laid in and around the park.",
+    "One K and Boat Harbour campgrounds and tracks south of Yardie Creek are for four-wheel drives only."
+  ],
+  "themes": [
+    "theme-coral-reef",
+    "theme-coastal",
+    "theme-canyons"
+  ],
+  "photos": [
+    {
+      "file": "File:Yardie Creek, Cape Range National Park.jpg",
+      "caption": "Yardie Creek",
+      "altText": "A creek winding between sheer red limestone cliffs"
+    },
+    {
+      "file": "File:Mandu Mandu Gorge, Cape Range National Park.jpg",
+      "caption": "Mandu Mandu Gorge",
+      "altText": "A rocky gorge cutting through an arid limestone range"
+    },
+    {
+      "file": "File:Rock Wallabies, Yardie Creek, Cape Range National Park.jpg",
+      "caption": "Black-flanked rock-wallabies at Yardie Creek",
+      "altText": "Small wallabies on rocky ledges"
+    },
+    {
+      "file": "File:Yardie Creek, Cape Range NP.jpg",
+      "caption": "The gorge at Yardie Creek",
+      "altText": "Red cliffs rising above still water"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cape Range National Park — Explore Parks WA, DBCA",
+      "url": "https://exploreparks.dbca.wa.gov.au/park/cape-range-national-park"
+    },
+    {
+      "title": "Turquoise Bay — Explore Parks WA",
+      "url": "https://exploreparks.dbca.wa.gov.au/site/turquoise-bay"
+    },
+    {
+      "title": "Yardie Creek — Explore Parks WA",
+      "url": "https://exploreparks.dbca.wa.gov.au/site/yardie-creek"
+    },
+    {
+      "title": "Mandu Mandu Gorge — Explore Parks WA",
+      "url": "https://exploreparks.dbca.wa.gov.au/site/mandu-mandu-gorge"
+    },
+    {
+      "title": "Milyering Discovery Centre — Explore Parks WA",
+      "url": "https://exploreparks.dbca.wa.gov.au/site/milyering-discovery-centre"
+    },
+    {
+      "title": "Ningaloo Coast World Heritage Area — DBCA",
+      "url": "https://www.dbca.wa.gov.au/management/world-heritage-areas/ningaloo-coast-world-heritage-area"
+    },
+    {
+      "title": "Park entry fees — Explore Parks WA",
+      "url": "https://exploreparks.dbca.wa.gov.au/park-entry-fees"
+    },
+    {
+      "title": "Camping fees — Explore Parks WA",
+      "url": "https://exploreparks.dbca.wa.gov.au/camping-fees"
+    },
+    {
+      "title": "Park passes — DBCA shop (prices)",
+      "url": "https://shop.dbca.wa.gov.au/collections/park-passes"
+    },
+    {
+      "title": "Cape Range National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cape_Range_National_Park"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — DCCEEW (area)",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

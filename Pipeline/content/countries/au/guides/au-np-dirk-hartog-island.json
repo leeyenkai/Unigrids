@@ -1,0 +1,197 @@
+{
+  "placeID": "au-np-dirk-hartog-island",
+  "contentVersion": 1,
+  "summary": "Western Australia's largest island, in the Shark Bay World Heritage Area: sea cliffs and blowholes on the west, long empty beaches on the east, and the place where Dirk Hartog made the first recorded European landing on Western Australian soil in 1616. Wirruwana to the Malgana Traditional Owners, it is jointly managed by DBCA and the Malgana Aboriginal Corporation, and its Return to 1616 project is bringing back threatened mammals. Very remote; four-wheel drive only.",
+  "facts": {
+    "establishedYear": 2009,
+    "areaHectares": 62928,
+    "bestSeasons": [
+      "winter",
+      "autumn",
+      "spring"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "Dirk Hartog Island, in the Shark Bay World Heritage Area, is Western Australia's largest island. On its western side, huge surf built up over vast unbroken stretches of ocean breaks against limestone cliffs up to 200 metres high, and when the swell runs it is forced through fissures below the cliffs to roar out of the Blowholes, throwing spray up to ten metres into the air. The eastern side is gentler, with pristine beaches that seem to stretch forever. Towering dunes and dirt tracks make four-wheel driving the only way to get around.",
+    "When Dirk Hartog landed in October 1616 the island was pristine. Introduced plants and animals then damaged it, and most of its native mammals disappeared. Return to 1616, one of Australia's most successful restoration projects, has since the early 2000s removed sheep, goats and feral cats and is gradually bringing back the threatened mammals that once lived here; the only kangaroo-like animals on the island now are the translocated hare-wallabies. At Turtle Bay a lookout looks over the largest loggerhead turtle breeding colony in Australia.",
+    "To the Malgana people the island is Wirruwana. The national park is jointly managed by the Department of Biodiversity, Conservation and Attractions and the Malgana Aboriginal Corporation as part of the state government's Plan for Our Parks initiative, and DBCA acknowledges the Malgana, Nanda and Yinggarda peoples as Traditional Owners of the Shark Bay World Heritage Area's lands and waters.",
+    "The Dutch captain Dirk Hartog came ashore at Cape Inscription in 1616 and left a record of his visit on a pewter plate nailed to a post in a cleft of rock on the clifftop. From the 1860s until the early 2000s the island was a pastoral lease grazed mainly by sheep, and it also served as a base for pearling and guano mining. The Cape Inscription lighthouse and keepers' quarters were built between 1908 and 1910. Shark Bay became World Heritage in 1991, and the island became a national park in 2009."
+  ],
+  "howItWorks": [
+    "Dirk Hartog Island National Park is jointly managed by DBCA's Parks and Wildlife Service and the Malgana Aboriginal Corporation. Entry to the national park itself is free, but entry fees apply at Steep Point, on the mainland Edel Land peninsula, on the way through; a WA park pass covers park entry fees but not camping. Vehicles cross from Edel Land by barge to Cape Ransonnet, the island's arrival point, and the only accommodation outside the campgrounds is the privately owned Dirk Hartog Island Eco Lodge.",
+    "Camping fees apply at every camping area in the national park and are booked through the Dirk Hartog Island Eco Lodge, not through Park Stay WA. There are no supplies in the park and no facilities at most camping areas; bring everything, including at least ten litres of water per person per day, and take all rubbish off the island. Visitors arriving by private boat may camp only at the three camping areas set aside for them, among them Notch Point.",
+    "Protecting the island's returning wildlife comes first. Do not drive between dusk and dawn, when the threatened mammals are active and do not know to get out of the way, and keep below 30 km/h, since faster speeds put animals at high risk. Camp at Cape Ransonnet or the Eco Lodge on your last night so you do not have to drive at dawn to meet the barge. Bring no pets and no firewood; wood fires and firewood collection are not permitted. Check that footwear, clothes, gear and food are free of soil, seeds and animals, and pack food in sealed plastic or metal containers rather than cardboard."
+  ],
+  "sights": [
+    {
+      "name": "Cape Inscription",
+      "note": "The island's northern tip, where Dirk Hartog landed in 1616 and left his pewter plate; posts mark the spot. The lighthouse, built 1908–1910, still operates, and the keepers' quarters were restored in 2012.",
+      "location": [
+        -25.4819,
+        112.972
+      ]
+    },
+    {
+      "name": "Mystery Beach",
+      "note": "A beach whose shape and orientation, with the prevailing winds, collect flotsam and jetsam from the world's oceans.",
+      "location": [
+        -25.6457,
+        112.9372
+      ]
+    },
+    {
+      "name": "Urchin Point",
+      "note": "One of the best shore-fishing spots in Australia, and one of the island's camping areas.",
+      "location": [
+        -25.5114,
+        112.9413
+      ]
+    },
+    {
+      "name": "Cape Ransonnet",
+      "note": "The barge landing point from the Edel Land peninsula, with a camping area for the night before you leave.",
+      "location": [
+        -26.1608,
+        113.216
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "By vehicle barge from the Edel Land peninsula to Cape Ransonnet; park entry fees apply at Steep Point",
+      "By private boat, camping only at the designated boat-access camping areas"
+    ],
+    "reservations": "Book campsites through the Dirk Hartog Island Eco Lodge well ahead, and arrange your barge crossing to Cape Ransonnet before you go. Read DBCA's Shark Bay island protection brochure and watch its island protection video before you leave home.",
+    "permits": [
+      "Steep Point entry fee or a valid WA park pass",
+      "Camping bookings for all camping areas in the national park"
+    ],
+    "camping": [
+      "Designated camping areas including Turtle Bay, Quoin Head, Louisa Bay, West Point/The Block, Urchin Point, Sandy Point, Dampiers Landing/Sammys Well and Withnell Point; most have no facilities",
+      "Notch Point and two other areas for private boat visitors",
+      "No wood fires or firewood; bring at least ten litres of water per person per day and take all rubbish away"
+    ],
+    "lodging": [
+      "Dirk Hartog Island Eco Lodge, privately owned, on the island"
+    ],
+    "seasonalClosures": [],
+    "seasonalClosureMonths": []
+  },
+  "weather": "The island is hot, dry and exposed to the open Indian Ocean. DBCA advises visitors to be prepared for the heat and to carry at least ten litres of water per person per day, since there is none to buy in the park. The western coast takes the full force of the ocean swell, which drives the blowholes and huge surf against the cliffs; the eastern beaches are more sheltered. Plan your visit with DBCA's advice on when to go, and check conditions before crossing.",
+  "directions": "Dirk Hartog Island lies off the western side of Shark Bay. Visitors drive to the tip of the Edel Land peninsula near Steep Point, paying the entry fee there, and cross by vehicle barge to Cape Ransonnet; boats from the peninsula also land there. On the island there are only sand and dirt tracks through towering dunes, so a four-wheel drive is essential, along with full self-sufficiency in fuel, food and water. The Parks and Wildlife Service's Gascoyne office is in Denham.",
+  "fees": [
+    {
+      "title": "National park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "AUD",
+      "detail": "Entry fees apply at Steep Point on the way to the island. As listed by DBCA in November 2026; check before you go."
+    },
+    {
+      "title": "Camping, per person per night",
+      "cost": "$20 adult",
+      "amount": 20,
+      "currencyCode": "AUD",
+      "detail": "Dirk Hartog Island National Park rate: concession $15, child (6–15) $3, 5 and under free. Booked through the Dirk Hartog Island Eco Lodge. As listed by DBCA in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1616",
+      "text": "Dirk Hartog makes the first recorded European landing on Western Australian soil at Cape Inscription in October and leaves a pewter plate."
+    },
+    {
+      "year": "1860s",
+      "text": "The island becomes a pastoral lease, grazed mainly by sheep until the early 2000s."
+    },
+    {
+      "year": "1908–1910",
+      "text": "The Cape Inscription lighthouse and keepers' quarters are built; the light is automated in 1917."
+    },
+    {
+      "year": "1991",
+      "text": "Shark Bay, including the island, is inscribed on the World Heritage List on 13 December."
+    },
+    {
+      "year": "2009",
+      "text": "Dirk Hartog Island National Park is gazetted."
+    },
+    {
+      "year": "2012",
+      "text": "The Shire of Shark Bay restores the lighthouse keepers' quarters."
+    }
+  ],
+  "safety": [
+    "The park is remote, with large surf, 200-metre cliffs, blowholes and dangerous marine animals. Keep well back from cliff edges and supervise children at all times.",
+    "Tell a reliable person your trip plans and carry a personal locator beacon; there are no supplies on the island.",
+    "Carry at least ten litres of water per person per day and be ready for heat.",
+    "Read Recfishwest's information on rock fishing before fishing from the rocks."
+  ],
+  "regulations": [
+    "Do not drive between dusk and dawn, and keep below 30 km/h, to protect threatened animals.",
+    "No pets, no firewood brought to the island, no wood fires and no firewood collection.",
+    "Camp only in designated camping areas, booked through the Eco Lodge.",
+    "Clean footwear, clothing and gear of soil, seeds and animals, and pack food in sealed plastic or metal containers.",
+    "Report any animal you hit, or find dead, to the Parks and Wildlife Denham office on (08) 9948 2226."
+  ],
+  "themes": [
+    "theme-islands",
+    "theme-coastal",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Tetrodon Loop.jpg",
+      "caption": "Tetrodon Loop, Dirk Hartog Island",
+      "altText": "A coastal inlet and sandy shore on a remote island"
+    },
+    {
+      "file": "File:Cape Inscription Lighthouse.jpg",
+      "caption": "The Cape Inscription lighthouse",
+      "altText": "The lighthouse at Cape Inscription"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dirk Hartog Island National Park — Explore Parks WA, DBCA",
+      "url": "https://exploreparks.dbca.wa.gov.au/park/dirk-hartog-island-national-park"
+    },
+    {
+      "title": "Cape Inscription — Explore Parks WA",
+      "url": "https://exploreparks.dbca.wa.gov.au/site/cape-inscription"
+    },
+    {
+      "title": "Turtle Bay — Explore Parks WA",
+      "url": "https://exploreparks.dbca.wa.gov.au/site/turtle-bay"
+    },
+    {
+      "title": "Shark Bay World Heritage Area — DBCA",
+      "url": "https://www.dbca.wa.gov.au/management/world-heritage-areas/shark-bay-world-heritage-area"
+    },
+    {
+      "title": "Camping fees — Explore Parks WA",
+      "url": "https://exploreparks.dbca.wa.gov.au/camping-fees"
+    },
+    {
+      "title": "Park passes — Explore Parks WA",
+      "url": "https://exploreparks.dbca.wa.gov.au/park-passes"
+    },
+    {
+      "title": "Shark Bay Terrestrial Reserves and Proposed Reserve Additions Management Plan No. 75, 2012 — DEC/DBCA (areas, gazettal)",
+      "url": "https://dbca.wa.gov.au/media/1365/download"
+    },
+    {
+      "title": "Dirk Hartog Island — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dirk_Hartog_Island_National_Park"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — DCCEEW (area, 2009 gazettal)",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

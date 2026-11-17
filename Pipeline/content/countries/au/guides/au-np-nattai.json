@@ -1,0 +1,230 @@
+{
+  "placeID": "au-np-nattai",
+  "contentVersion": 1,
+  "summary": "A rugged sandstone wilderness above Lake Burragorang, between Mittagong and the Blue Mountains, and the south-eastern part of the Greater Blue Mountains World Heritage Area. There are no facilities and few tracks. Walkers come for the Starlights Trail down to the Nattai River and a backpack camp at Emmetts Flat, for wide views from Wollondilly Lookout, and for some of the wildest country this close to Sydney.",
+  "facts": {
+    "establishedYear": 1991,
+    "areaHectares": 48984,
+    "bestSeasons": [
+      "autumn",
+      "spring"
+    ],
+    "suggestedTime": "One day, or an overnight walk"
+  },
+  "story": [
+    "Nattai is a land of exposed sandstone plateaus, sheltered gorges and cliffs. The Hawkesbury Sandstone forms its scarps, laid down with the rest of the Sydney Basin more than 180 million years ago and later lifted and cut by rivers into the deep gorges typical of the Blue Mountains. Mount Jellore, near the park's southern edge, is a trachyte peak, the remnant of a much younger volcanic intrusion. The Nattai River and its tributaries drain north through the park into Lake Burragorang, the reservoir behind Warragamba Dam that is Sydney's main water supply.",
+    "The forests are mostly eucalypt, with blue-leaved stringybark on the ridges and Nattai Sandstone River peppermint forest along the river. Wallaroos, swamp wallabies, eastern grey kangaroos, wombats, echidnas, emus and dingoes live here. There are around 160 bird species, 19 reptiles and up to nine frogs. Threatened animals include the long-nosed potoroo, tiger quoll, powerful owl and glossy black cockatoo, and platypus, squirrel gliders and koalas are sometimes seen.",
+    "NPWS describes the Nattai area as the traditional territory of the Dharawal and Gundungarra Aboriginal peoples. The Wollondilly and Burragorang valleys were the transition zone between the two nations, and the Dharug lived in the northern Burragorang. That zone was a corridor for people travelling north to the great gathering and ceremonial grounds in Dharawal lands around the Cowpastures, near today's Camden. Colonists grazed stock in the Burragorang Valley from as early as 1824. Much of that early settlement was later drowned by the filling of Lake Burragorang.",
+    "Myles Dunphy included the Nattai in his 1932 plan for a Greater Blue Mountains National Park, and the National Trust, the National Parks Association and the Colong Foundation all campaigned for it. Once the Wilderness Act passed in 1987, the Nattai wilderness was among the first areas nominated, and it became the first wilderness declared under the Act. The national park was reserved on 13 December 1991, with a wilderness core of almost 30,000 hectares. In 2000 it became part of the Greater Blue Mountains Area World Heritage property."
+  ],
+  "howItWorks": [
+    "Nattai is run by the NSW National Parks and Wildlife Service (NPWS) from its Hawkesbury-Nattai office at Glenbrook. It is a wilderness park with no visitor facilities. It is always open, though it may close in poor weather or high fire danger. There is no vehicle entry fee: only 45 of NSW's more than 890 parks and reserves charge one, and Nattai is not among them. For fee-collecting parks elsewhere, the All Parks Pass covers vehicle entry to every one of them in NSW, including Kosciuszko, for $190 a year. The Multi Park Pass covers all of them except Kosciuszko for $65. These prices were listed by NPWS in November 2026.",
+    "Much of the park lies inside the Special Area that protects the water in Lake Burragorang. It is managed together with the water catchment authority, today WaterNSW. Land within three kilometres of the lake's full storage level is a Schedule 1 area, and public access to it is restricted to protect Sydney's drinking water. Check NPWS and WaterNSW maps before you plan a route, and keep to the tracks open to walkers. Overnight walkers camp at Emmetts Flat, a remote backpack campground beside the Nattai River at the end of the Starlights Trail.",
+    "Bushfire season runs from October to March. On total fire ban days, usually declared around 5 pm the day before, all campfires and wood or solid-fuel cooking are prohibited in NSW parks, as are liquid-fuel stoves, and visitor-owned gas and electric cookers are generally prohibited. NPWS may also declare a park fire ban or close the park when the fire risk is high. Before any walk here, leave your plans with someone using the NPWS trip intention form."
+  ],
+  "sights": [
+    {
+      "name": "Starlights Trail",
+      "note": "An 11-kilometre return walk of four to five hours, grade 4, down through eucalypt forest to the Nattai River and Emmetts Flat, past Ahearn lookout. For experienced walkers.",
+      "location": [
+        -34.29711,
+        150.39344
+      ],
+      "kind": "trailhead"
+    },
+    {
+      "name": "Emmetts Flat",
+      "note": "A remote backpack campground on the Nattai River at the foot of the Starlights Trail, among river peppermint forest.",
+      "location": [
+        -34.29528,
+        150.37704
+      ]
+    },
+    {
+      "name": "Russells Needle",
+      "note": "A tall rock spire above the Nattai River, seen by walkers heading south along the river from Emmetts Flat.",
+      "location": [
+        -34.33261,
+        150.39003
+      ]
+    },
+    {
+      "name": "Mount Jellore",
+      "note": "A trachyte peak, the remains of an ancient volcanic intrusion, visible from the river south of Emmetts Flat.",
+      "location": [
+        -34.36955,
+        150.37041
+      ]
+    },
+    {
+      "name": "Wollondilly Lookout",
+      "note": "A lookout off Wombeyan Caves Road with views over eucalypt forest, sandstone cliffs and mountain ranges; the parking area NPWS lists for the park.",
+      "location": [
+        -34.33853,
+        150.2011
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Nattai River",
+      "note": "The river at the heart of the park, flowing north between sandstone cliffs into Lake Burragorang. Platypus are sometimes seen.",
+      "location": [
+        -34.29634,
+        150.37713
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Wattle Ridge Road, off Wilson Drive at Hill Top, then Nattai Road — for the Starlights Trail",
+      "Wombeyan Caves Road, about 30 kilometres west of Mittagong — for Wollondilly Lookout",
+      "The Couridjah Corridor walk from Thirlmere Lakes National Park"
+    ],
+    "reservations": "No booking for day visits. Ask NPWS about camping at Emmetts Flat before you go.",
+    "permits": [
+      "Public access to the Schedule 1 Special Area around Lake Burragorang is restricted to protect Sydney's water supply"
+    ],
+    "camping": [
+      "Emmetts Flat, a remote backpack campground beside the Nattai River at the end of the Starlights Trail"
+    ],
+    "lodging": [
+      "Accommodation in Mittagong, Bowral and the Southern Highlands, and in Picton"
+    ],
+    "seasonalClosures": [
+      "No seasonal closure. The park is always open but may close in poor weather or high fire danger — check NPWS alerts before you go"
+    ]
+  },
+  "weather": "Nattai has hot summers and cold winters: temperatures here have ranged from −10°C to 42.8°C. March is usually the wettest month and September the driest. Autumn, with mild days and misty mornings, is the best time for the long walks such as the Starlights Trail and the Couridjah Corridor. Spring is mild too and brings the wildflowers out. Summer walks into the gorges can be very hot; start early and carry plenty of water.",
+  "directions": "Nattai lies west of the Hume Motorway between Picton and Mittagong. For the Starlights Trail, turn off Wilson Drive at Hill Top onto Wattle Ridge Road, then follow Nattai Road to the park. For Wollondilly Lookout, take Wombeyan Caves Road about 30 kilometres west of Mittagong. Mittagong is 35 kilometres from the park, Bowral 39 and Picton 42. There is no public transport to the park.",
+  "fees": [
+    {
+      "title": "Park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "AUD",
+      "detail": "Nattai is not one of NSW's fee-collecting parks. As listed by NPWS in November 2026."
+    },
+    {
+      "title": "All Parks Pass",
+      "cost": "$190 for one year / $335 for two years",
+      "amount": 190,
+      "currencyCode": "AUD",
+      "detail": "Annual vehicle entry to every fee-collecting NSW national park, including Kosciuszko; not needed for Nattai itself. As listed by NPWS in November 2026."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Before 1788",
+      "text": "The Wollondilly and Burragorang valleys form the meeting ground of the Dharawal and Gundungarra nations, and a route north to gatherings in the Cowpastures."
+    },
+    {
+      "year": "1824",
+      "text": "Settlers hold tickets of occupation to graze stock in the Burragorang Valley."
+    },
+    {
+      "year": "1932",
+      "text": "Myles Dunphy includes the Nattai in his Greater Blue Mountains National Park proposal."
+    },
+    {
+      "year": "1987",
+      "text": "The Wilderness Act passes, and the Nattai is among the first areas nominated for declaration."
+    },
+    {
+      "year": "1991",
+      "text": "Nattai National Park is reserved on 13 December, with a declared wilderness at its core."
+    },
+    {
+      "year": "2000",
+      "text": "The park is inscribed as part of the Greater Blue Mountains Area World Heritage property."
+    }
+  ],
+  "safety": [
+    "This is wilderness with no facilities. Carry all your water, food and a map, and leave a trip intention with someone you trust.",
+    "Mobile reception is limited, and you need reception to call Triple Zero (000). Download the Emergency Plus app before you go, and carry a personal locator beacon on remote walks.",
+    "The Starlights Trail is graded 4, for experienced walkers. Carry sunscreen, a hat and plenty of drinking water, and start early in hot weather.",
+    "Check NPWS alerts and the Rural Fire Service before you go: the park may close on days of high fire danger."
+  ],
+  "regulations": [
+    "No pets or domestic animals, except certified assistance animals.",
+    "No smoking: NSW national parks are smoke-free.",
+    "Public access to the Schedule 1 Special Area near Lake Burragorang is restricted.",
+    "No fires of any kind during total fire bans or park fire bans."
+  ],
+  "themes": [
+    "theme-canyons",
+    "theme-indigenous-heritage",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Nattai River aerial.jpg",
+      "caption": "The Nattai River winding through its gorge",
+      "altText": "A river winding through a deep valley of forested sandstone ridges, seen from the air"
+    },
+    {
+      "file": "File:Nattai River.jpg",
+      "caption": "The Nattai River below Ahearns Lookout",
+      "altText": "A shallow river running over sand and rocks between forested banks"
+    },
+    {
+      "file": "File:Nattai National Park, Wollondilly Lookout sridgway.jpg",
+      "caption": "The view from Wollondilly Lookout",
+      "altText": "Layers of forested ridges and cliffs under a pale sky"
+    },
+    {
+      "file": "File:Lookout over the Nattai River - panoramio.jpg",
+      "caption": "Looking over the Nattai River valley",
+      "altText": "Sandstone cliffs and eucalypt forest above a deep river valley"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nattai National Park — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nattai-national-park"
+    },
+    {
+      "title": "Nattai National Park: visitor info — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nattai-national-park/visitor-info"
+    },
+    {
+      "title": "Nattai National Park: learn more — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/nattai-national-park/learn-more"
+    },
+    {
+      "title": "Starlights Trail — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/starlights-trail"
+    },
+    {
+      "title": "Nattai Reserves Plan of Management (2001) — NSW National Parks and Wildlife Service",
+      "url": "https://www.environment.nsw.gov.au/sites/default/files/nattai-reserves-plan-of-management-010101.pdf"
+    },
+    {
+      "title": "Greater Blue Mountains World Heritage Area — NSW Environment and Heritage",
+      "url": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/greater-blue-mountains"
+    },
+    {
+      "title": "Fee-collecting national parks — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/fee-collecting-parks"
+    },
+    {
+      "title": "Annual passes — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/annual-passes"
+    },
+    {
+      "title": "Total fire bans and park fire bans — NSW National Parks and Wildlife Service",
+      "url": "https://www.nationalparks.nsw.gov.au/safety/fire-safety/fire-bans"
+    },
+    {
+      "title": "Nattai National Park: park management — NSW Office of Environment and Heritage (archived 2 April 2015)",
+      "url": "http://web.archive.org/web/20150402172451/http://www.environment.nsw.gov.au/NationalParks/parkManagement.aspx?id=N0078"
+    },
+    {
+      "title": "Nattai National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nattai_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

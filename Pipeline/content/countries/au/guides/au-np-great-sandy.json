@@ -1,0 +1,318 @@
+{
+  "placeID": "au-np-great-sandy",
+  "contentVersion": 1,
+  "summary": "The world's largest sand island, K'gari, and the coloured sands, lakes and river wilderness of Cooloola on the mainland opposite. Great Sandy National Park holds rainforest growing on sand, over half the world's known dune lakes and the oldest recorded sequence of coastal dunes. On K'gari, Butchulla country and a World Heritage site, the roads are sand: high-clearance four-wheel drives only, and wild dingoes.",
+  "facts": {
+    "areaHectares": 224290,
+    "bestSeasons": [
+      "winter",
+      "autumn",
+      "spring"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "For about two million years currents and waves have carried sand north from the continental shelf off New South Wales and southern Queensland and piled it into dunes, burying the bedrock except for a few peaks that are now headlands. K'gari and Cooloola are remnants of sandmasses that once stretched 30 kilometres further east, built up in at least eight overlapping dune systems; some are more than 700,000 years old, the oldest such sequence recorded. Sandblows still march inland, swallowing forest at up to a metre a year, and where rain erodes the older core, iron-stained coloured sands emerge, as at the Pinnacles.",
+    "More than 40 dune lakes lie in the park, over half the world's known total. Most are perched lakes, held above the water table by a saucer of organic hardpan: Lake Boomanjin, nearly 200 hectares, is the largest in the world, and the Boomerang Lakes, 120 metres above sea level, among the highest. Plants on this bare sand strip minerals from the grains and from the rain; as each new dune forms, a deeper nutrient layer supports taller forest, up to rainforest, while the oldest dunes, leached beyond reach of roots, fall back to heath — a 'retrogressive succession' that draws scientists from around the world.",
+    "The Butchulla people are the Traditional Custodians of K'gari, the Butchulla name for the island, and have lived here for more than 5,000 years, perhaps as many as 50,000. Their country runs from about Double Island Point to the Burrum River and inland to Bauple Mountain, and lakes are integral to their Dreaming. Middens, artefact scatters, scarred trees and campsites remain. After European settlement in the 1840s the Butchulla were dispossessed, and by the late 1800s most were moved to a mission on the island, closed in 1904 when its people were sent away to other missions.",
+    "Matthew Flinders, the first Englishman ashore in 1802, thought nothing more barren could be imagined. Kauri logging began on K'gari in 1863 and in Cooloola in 1866, and became the region's main industry for over a century; sandmining for rutile and zircon followed from 1949. Public opposition ended sandmining in 1976, and logging stopped in 1991. National parks were declared in the north of K'gari in 1971 and later enlarged, and in 1992 the island was inscribed on the World Heritage List."
+  ],
+  "howItWorks": [
+    "Great Sandy National Park has two sections, K'gari and Cooloola, managed by the Queensland Parks and Wildlife Service; the Queensland Government works in partnership with the Butchulla Traditional Custodians on K'gari. There is no park entry fee, but vehicles need a vehicle access permit to drive in the K'gari (Fraser Island) and Cooloola recreation areas, and number-plate cameras check every vehicle entering K'gari against the booking system. Camping in QPWS areas needs a camping permit for a named zone and dates, bookable up to 12 months ahead.",
+    "In November 2026 the Queensland National Parks Booking Service was switched off after a data breach at its provider, Bookeasy. While the temporary arrangements last, QPWS says visitors may drive on K'gari, Cooloola and Bribie Island without a vehicle access permit and camp without a camping permit, and will not be penalised; existing permits remain valid. All other rules still apply. Check the QPWS website before you go, as normal permits will return.",
+    "K'gari's dingoes, wongari, are wild, protected pack hunters. It is an offence to feed them or leave food where they can get it, and fines of up to $28,495 apply for disturbing or harming them. Keep children within arm's reach, walk in groups with a safety stick, never run, stay at least 20 metres away, keep all food, rubbish and iceboxes locked in your vehicle, and never eat on the beach or lake shore. Families with children under 14 are strongly advised to camp inside the dingo-fenced campgrounds."
+  ],
+  "sights": [
+    {
+      "name": "Boorangoora (Lake McKenzie)",
+      "note": "A perched lake of clear blue water and white sand, busiest from 10.30am to 3pm. Only water is allowed on the lakeshore, and drones are banned over the lake.",
+      "location": [
+        -25.44811,
+        153.05714
+      ]
+    },
+    {
+      "name": "Lake Wabby",
+      "note": "K'gari's deepest lake, being slowly buried by the Hammerstone Sandblow; a Butchulla cultural site. Shallower than it looks: never run, roll or slide down the dune into it.",
+      "location": [
+        -25.45602,
+        153.1278
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Central Station",
+      "note": "The start of walks along Wanggoolba Creek's clear water through rainforest, to Basin Lake and among the tall satinay trees of Pile Valley. Wanggoolba Creek is sacred to the Butchulla.",
+      "location": [
+        -25.47481,
+        153.0545
+      ]
+    },
+    {
+      "name": "Lake Boomanjin",
+      "note": "The largest perched lake in the world, almost 200 hectares, its water stained brown by tannins from the surrounding vegetation.",
+      "location": [
+        -25.555,
+        153.075
+      ]
+    },
+    {
+      "name": "Eli Creek",
+      "note": "A clear freshwater creek flowing through vegetated banks onto the eastern beach, with a boardwalk; look for eels, frogs and jungle perch.",
+      "location": [
+        -25.2962,
+        153.22254
+      ]
+    },
+    {
+      "name": "Maheno shipwreck",
+      "note": "The wreck of the Maheno on the eastern beach. A strict 40 km/h zone applies, pedestrians are everywhere, and you must keep 3 metres from the wreck.",
+      "location": [
+        -25.26709,
+        153.23854
+      ]
+    },
+    {
+      "name": "The Pinnacles",
+      "note": "Yellow, brown and red coloured sands, ancient sand stained by iron minerals, sculpted by wind and rain on the eastern beach.",
+      "location": [
+        -25.24192,
+        153.2493
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Champagne Pools",
+      "note": "Ocean-level rock pools reached by a 700-metre boardwalk around a headland, best at mid-tide when breaking waves turn them into a natural spa.",
+      "location": [
+        -24.98913,
+        153.35182
+      ]
+    },
+    {
+      "name": "Sandy Cape Lighthouse",
+      "note": "The only lighthouse on K'gari, at the island's remote northern tip.",
+      "location": [
+        -24.7299,
+        153.20853
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Inskip Point, 15 minutes from Rainbow Beach: vehicle barges to Hook Point at K'gari's southern end, about 10 minutes, no booking",
+      "River Heads, east of Maryborough: barges to Kingfisher Bay and Wanggoolba Creek, 30 to 50 minutes, bookings required",
+      "Cooloola section, between Tewantin and Rainbow Beach on the mainland"
+    ],
+    "reservations": "Vehicle access permits are normally required for every vehicle in the K'gari and Cooloola recreation areas, and camping permits for every QPWS camp, bookable up to 12 months ahead. K'gari Great Walk camps can be booked only 14 days ahead from 1 November to 28 February because of fire danger. In November 2026 the booking system was offline after a data breach and permits were temporarily not required — check the QPWS website before you go.",
+    "permits": [
+      "Vehicle access permit, K'gari (Fraser Island) Recreation Area (temporarily waived while the booking system is offline)",
+      "Vehicle access permit, Cooloola Recreation Area (temporarily waived)",
+      "Camping permit for the named camping zone or area and dates"
+    ],
+    "camping": [
+      "Beach camping zones and developed campgrounds on K'gari, such as Dundubara and Waddy Point, some inside dingo-deterrent fences",
+      "K'gari Great Walk walkers' camps, such as Lake Boomanjin and Lake McKenzie, which take only a few campers",
+      "Campgrounds in the Cooloola Recreation Area"
+    ],
+    "lodging": [
+      "Kingfisher Bay Resort and accommodation in the island's townships",
+      "Rainbow Beach, Hervey Bay and Noosa on the mainland"
+    ],
+    "seasonalClosures": [
+      "From 1 November to 28 February K'gari Great Walk camps can be booked only 14 days ahead, and the walk may close at short notice in high fire danger",
+      "Wongari (dingo) rearing and emergence season, 1 September to 30 November, when extra care is needed",
+      "Driving at high tide is dangerous; plan beach travel around the tides",
+      "Several K'gari roads, tracks and camping zones were closed for repairs in November 2026 — read the K'gari conditions report before you go"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "K'gari has a subtropical climate softened by the sea. Coastal temperatures average 22 to 28°C in December and 14 to 21°C in July, and can be more extreme inland. Rainfall ranges from about 1,200 millimetres a year on the coast to 1,800 millimetres inland; January to March are the wettest months, with about 160 millimetres each, and winter and early spring are the driest. South-easterly winds prevail, and storms, sometimes severe, are common in spring and early summer. Weather changes quickly, so check the forecast before you cross.",
+  "directions": "K'gari is about 300 kilometres north of Brisbane and 15 kilometres off Hervey Bay and Maryborough. All its roads are sand, suitable only for high-clearance four-wheel drives with low range; all-wheel-drive vehicles are not recommended. Vehicle barges run from Inskip Point, near Rainbow Beach, to Hook Point, and from River Heads to Kingfisher Bay and Wanggoolba Creek, and also carry foot passengers. Daily flights run from Hervey Bay, and tours leave from Rainbow Beach, the Sunshine Coast, Hervey Bay and Brisbane. The Cooloola section stretches from Tewantin to Double Island Point and Rainbow Beach.",
+  "fees": [
+    {
+      "title": "Vehicle access permit, K'gari (Fraser Island) Recreation Area",
+      "cost": "$61.80 for up to one month",
+      "amount": 61.8,
+      "currencyCode": "AUD",
+      "detail": "$311.00 for more than a month, up to a year. A combined K'gari and Cooloola permit is $99.25 for up to a month or $498.10 for up to a year. As listed by QPWS in November 2026; temporarily not required while the booking system is offline."
+    },
+    {
+      "title": "Vehicle access permit, Cooloola Recreation Area",
+      "cost": "$15.40 for one day online",
+      "amount": 15.4,
+      "currencyCode": "AUD",
+      "detail": "$23.30 for a day if not bought online, $39.25 for up to a week, $61.80 for up to a month, $311.00 for up to a year. As listed by QPWS in November 2026."
+    },
+    {
+      "title": "Camping permit, QPWS camping areas",
+      "cost": "$7.75 per person per night",
+      "amount": 7.75,
+      "currencyCode": "AUD",
+      "detail": "Or $31.00 per family per night; children under five camp free. Queensland rates from 1 July 2026. Temporarily not required while the booking system is offline."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "5,000+ years ago",
+      "text": "The Butchulla people are living on K'gari and the neighbouring mainland."
+    },
+    {
+      "year": "1770",
+      "text": "James Cook's voyage makes the first written record of the region."
+    },
+    {
+      "year": "1802",
+      "text": "Matthew Flinders becomes the first English explorer to set foot on K'gari."
+    },
+    {
+      "year": "1863",
+      "text": "Kauri logging begins on K'gari, and in Cooloola in 1866."
+    },
+    {
+      "year": "1904",
+      "text": "The last mission on K'gari is disbanded and most of its Butchulla people are sent to other missions."
+    },
+    {
+      "year": "1949",
+      "text": "Leases are granted for mining heavy minerals on K'gari."
+    },
+    {
+      "year": "1971",
+      "text": "National parks are declared in the northern part of K'gari."
+    },
+    {
+      "year": "1976",
+      "text": "Sandmining in the Great Sandy region ends after public opposition."
+    },
+    {
+      "year": "1991",
+      "text": "Logging stops."
+    },
+    {
+      "year": "1992",
+      "text": "K'gari is inscribed on the World Heritage List."
+    }
+  ],
+  "safety": [
+    "Be dingo-safe: keep children within arm's reach, walk in groups and carry a stick, never run, and lock up all food, rubbish and iceboxes. Report negative encounters to rangers.",
+    "Do not swim in the ocean: it is not patrolled and there may be rips and sharks. Never dive into lakes or creeks.",
+    "Never run, roll, board or slide down the dune into Lake Wabby; it has caused serious, life-long spinal injuries.",
+    "Drive slowly — 80 km/h on the beach and 30 km/h inland in good conditions — avoid high tide, watch for washouts, and never drive on the foredunes.",
+    "Marine stingers and crocodiles may be present; heed warning signs."
+  ],
+  "regulations": [
+    "Feeding or attracting dingoes is an offence, including leaving food, bait or rubbish where they can reach it; fines apply.",
+    "No food or drinks other than water on the lakeshores, and no picnics on the beach or lake shore.",
+    "Domestic animals are prohibited in the K'gari section; dogs and cats are banned on the island.",
+    "Drones are prohibited in the Lake McKenzie (Boorangoora) drone restriction area, including the car park and day-use areas.",
+    "Driving on the foredunes is prohibited, and access within 3 metres of the Maheno wreck is not allowed."
+  ],
+  "themes": [
+    "theme-dunes",
+    "theme-islands",
+    "theme-coastal",
+    "theme-wetland",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Australia, Queensland, Fraser Island, Lake McKenzie.jpg",
+      "caption": "Boorangoora (Lake McKenzie)",
+      "altText": "A deep blue lake with a pale sandy shore and swimmers, ringed by low forest under a clear sky"
+    },
+    {
+      "file": "File:Hammerstone Sandblow and Lake Wabby.jpg",
+      "caption": "The Hammerstone Sandblow advancing into Lake Wabby",
+      "altText": "A wide slope of white sand running down into a dark green-blue lake surrounded by forest"
+    },
+    {
+      "file": "File:Eli Creek Fraser Island.jpg",
+      "caption": "Eli Creek",
+      "altText": "Clear water flowing over a sandy bed between overhanging trees and pandanus"
+    },
+    {
+      "file": "File:Wanggoolba Creek on K'gari (Fraser Island).jpg",
+      "caption": "Wanggoolba Creek near Central Station",
+      "altText": "A shallow, glass-clear creek winding through rainforest with ferns and fallen palm fronds"
+    }
+  ],
+  "sources": [
+    {
+      "title": "K'gari, Great Sandy National Park — Queensland Parks and Wildlife Service",
+      "url": "https://parks.qld.gov.au/parks/kgari-fraser"
+    },
+    {
+      "title": "About K'gari — QPWS",
+      "url": "https://parks.qld.gov.au/parks/kgari-fraser/about"
+    },
+    {
+      "title": "Nature, culture and history — K'gari, QPWS",
+      "url": "https://parks.qld.gov.au/parks/kgari-fraser/about/culture"
+    },
+    {
+      "title": "Butchulla people — K'gari, QPWS",
+      "url": "https://parks.qld.gov.au/parks/kgari-fraser/about/butchulla"
+    },
+    {
+      "title": "Be dingo-safe on K'gari — QPWS",
+      "url": "https://parks.qld.gov.au/parks/kgari-fraser/about/wongari-dingoes/dingo-safe"
+    },
+    {
+      "title": "Getting there and getting around — K'gari, QPWS",
+      "url": "https://parks.qld.gov.au/parks/kgari-fraser/visiting-safely/getting-there-and-getting-around"
+    },
+    {
+      "title": "Staying safe — K'gari, QPWS",
+      "url": "https://parks.qld.gov.au/parks/kgari-fraser/visiting-safely/staying-safe"
+    },
+    {
+      "title": "Before you visit — K'gari, QPWS",
+      "url": "https://parks.qld.gov.au/parks/kgari-fraser/visiting-safely/before-you-visit"
+    },
+    {
+      "title": "Camping in K'gari — QPWS",
+      "url": "https://parks.qld.gov.au/parks/kgari-fraser/camping"
+    },
+    {
+      "title": "Champagne Pools boardwalk — QPWS",
+      "url": "https://parks.qld.gov.au/parks/kgari-fraser/journeys/champagne-pools-boardwalk"
+    },
+    {
+      "title": "Cooloola Recreation Area, Great Sandy National Park — QPWS",
+      "url": "https://parks.qld.gov.au/parks/cooloola/about"
+    },
+    {
+      "title": "Vehicle access permits — QPWS",
+      "url": "https://parks.qld.gov.au/management/managed-areas/recreation/vehicle-permits"
+    },
+    {
+      "title": "Camping bookings and fees — QPWS",
+      "url": "https://parks.qld.gov.au/camping/bookings"
+    },
+    {
+      "title": "Important security update – Queensland National Parks Booking Service (current at 14 November 2026)",
+      "url": "https://parks.qld.gov.au/contactus/important-security-update"
+    },
+    {
+      "title": "K'gari — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/630/"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — area",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "Great Sandy National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Great_Sandy_National_Park"
+    },
+    {
+      "title": "SS Maheno and Lake Boomanjin — Wikipedia (coordinates)",
+      "url": "https://en.wikipedia.org/wiki/SS_Maheno"
+    },
+    {
+      "title": "OpenStreetMap (coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

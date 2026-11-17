@@ -1,0 +1,214 @@
+{
+  "placeID": "au-np-budj-bim",
+  "contentVersion": 1,
+  "summary": "A young volcano and its crater lake in Victoria's south-west, at the heart of the Budj Bim Cultural Landscape World Heritage site, where the Gunditjmara built one of the world's oldest aquaculture systems to trap and farm eels. Budj Bim National Park is co-managed with its Traditional Owners. Walk the crater rim and lava canals, explore lava caves, and look for koalas in the manna gums.",
+  "facts": {
+    "areaHectares": 8571,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "spring"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "Budj Bim is a young volcano. As recently as 30,000 years ago eruptions blasted through the crust here and poured out molten rock across the surrounding country, leaving lava flows, lava caves, scoria cones and crater lakes. Lake Surprise lies in one of the craters. Where the roof of a lava flow collapsed it left long canals; where it held, it left tunnels such as Tunnel Cave and the cavern at Natural Bridge, and lava blisters and a dry crater lie along the walking tracks.",
+    "To the Gunditjmara, Budj Bim and its lava flows were made by powerful ancestral creation forces, and the peak of Budj Bim holds great cultural significance. Over at least 6,600 years the Gunditjmara used the abundant volcanic rock of the Budj Bim lava flows to build channels, weirs and dams that redirected waterways and wetlands to trap, store and harvest kooyang, the short-finned eel. UNESCO describes it as one of the world's most extensive and oldest aquaculture systems, which supported large, settled communities and trade in smoked eels.",
+    "The park protects Victoria's largest remaining Stony Rises Woodland, dominated by manna gum, the koala's favourite food tree. So many koalas now live here that they threaten the trees, and Parks Victoria manages their numbers: many females carry contraceptive implants, slowing breeding so that the woodland can recover, and the koalas and the canopy are monitored. Kangaroos and echidnas live here too, and in summer butterflies such as the Australian painted lady and yellow admiral fill the bush.",
+    "In 2019 the Budj Bim Cultural Landscape, in three components linked by the Budj Bim lava flows, was inscribed on the World Heritage List, recognised solely for its Aboriginal cultural values. Parks Victoria co-manages the national park with the Gunditj Mirring Traditional Owners Aboriginal Corporation, and laser mapping of the landscape continues to reveal new parts of the ancient engineering. The Tae Rak Aquaculture Centre, about 30 minutes away, tells the story of Gunditjmara Country."
+  ],
+  "howItWorks": [
+    "Budj Bim National Park is managed by Parks Victoria in co-management with the Gunditj Mirring Traditional Owners Aboriginal Corporation, and the Gunditjmara Traditional Owners continue to care for Country here. It is one part of the Budj Bim Cultural Landscape World Heritage property; to understand the eel traps and stone channels, Parks Victoria suggests the Tae Rak Aquaculture Centre, about 30 minutes from the park, where you can take a guided cultural tour of the national park. National park rules apply: dogs are not allowed (assistance dogs have entry requirements), and drones need a permit.",
+    "Budj Bim Campground, beside the picnic area near Lake Surprise, has 17 sites among lava ridges, each for up to six people and one vehicle, with a group site for 24. There are flushing toilets, two-minute timed hot showers, untreated water and shared fireplaces; campfires are allowed only in the fireplaces provided. All sites must be booked, and fees apply. Parks Victoria camping fees are half price at its bookable campgrounds until July 2027.",
+    "In November 2026 Parks Victoria suspended all new campsite bookings while it investigated suspicious WhatsApp messages linked to its external booking provider. Existing bookings were not affected, and Parks Victoria does not ask for payment details by WhatsApp. Check the Parks Victoria website for when bookings reopen. Mountain bikers can also ride the Budj Bim Trail and camp along it at Allambie, Murphy's Hut and Lake Gorrie."
+  ],
+  "sights": [
+    {
+      "name": "Lake Surprise",
+      "note": "A crater lake reached by a 2.5-kilometre circuit from beside the campground, descending through manna gum and blackwood to the lake's edge. Not suitable for swimming.",
+      "location": [
+        -38.06125,
+        141.92256
+      ]
+    },
+    {
+      "name": "Crater Rim Walk",
+      "note": "A 2.8-kilometre circuit higher along the rim, with two lookouts over Lake Surprise, including a cantilevered platform. Look for koalas in the manna gums.",
+      "location": [
+        -38.06101,
+        141.92179
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Tunnel Cave",
+      "note": "A remnant lava tube 250 metres along the Crater Rim Walk. Bring a torch.",
+      "location": [
+        -38.05699,
+        141.92016
+      ]
+    },
+    {
+      "name": "Natural Bridge",
+      "note": "A dark cavern where a lava flow's roof stayed intact: 3.4 kilometres return along the collapsed flow, or 200 metres from its own car park. Bring a torch.",
+      "location": [
+        -38.06953,
+        141.91895
+      ]
+    },
+    {
+      "name": "Lava Canal Walk",
+      "note": "A 6.6-kilometre, three-hour circuit past lava blisters, Tunnel Cave, Natural Bridge and a dry crater, with views over the park and into the crater.",
+      "location": [
+        -38.0647,
+        141.91299
+      ]
+    },
+    {
+      "name": "Dry crater",
+      "note": "A crater without a lake on the Lava Canal Walk, with views across to Lake Surprise.",
+      "location": [
+        -38.06725,
+        141.92609
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Budj Bim",
+      "note": "The volcanic peak overlooking the Lake Surprise walk, of great cultural significance to the Gunditjmara people.",
+      "location": [
+        -38.06272,
+        141.92578
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Budj Bim National Park visitor area and campground, on Mount Eccles Road near Macarthur — sealed to the picnic ground",
+      "Natural Bridge car park, on Natural Bridge Road"
+    ],
+    "reservations": "All campsites at Budj Bim Campground must be booked with Parks Victoria; fees apply and are half price until July 2027. In November 2026 Parks Victoria suspended new campsite bookings while it investigated a booking scam; existing bookings stood — check before you go.",
+    "permits": [
+      "Drones need a Parks Victoria permit"
+    ],
+    "camping": [
+      "Budj Bim Campground: 17 sites for up to six people each, including a group site for 24; some take small caravans, and sites 1 to 3 are reached by a steep, uneven track",
+      "Camps on the Budj Bim Trail at Allambie, Murphy's Hut and Lake Gorrie"
+    ],
+    "lodging": [
+      "Accommodation in Macarthur, Hamilton and Port Fairy"
+    ],
+    "seasonalClosures": [
+      "The Lake Surprise viewing platform near the top car park is structurally unsafe and closed"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "Parks Victoria suggests summer, autumn and spring for a visit. Summer is the season of kooyang, the eels, and of ballambar, the butterflies, with long afternoons in the shade of the manna gums and evenings in the campground. The park is open woodland on stony lava ridges with deep water in its craters, so wear sturdy shoes, carry water and a hat on the walks, and dress for the conditions on the day.",
+  "directions": "Budj Bim National Park is about 300 kilometres west of Melbourne in the Western District. Macarthur is the nearest town, less than ten minutes away, and Hamilton the nearest city. The road is sealed all the way to the visitor picnic ground, then about 200 metres of gravel, suitable for two-wheel-drive vehicles, lead to the campground. Port Fairy is about 40 minutes away and Grampians (Gariwerd) National Park about an hour.",
+  "fees": [],
+  "chronology": [
+    {
+      "year": "c. 30,000 years ago",
+      "text": "Volcanic eruptions pour lava across the landscape, forming Budj Bim's flows, caves and crater lakes."
+    },
+    {
+      "year": "6,600+ years ago",
+      "text": "The Gunditjmara are building channels, weirs and dams in the lava flows to trap and farm kooyang."
+    },
+    {
+      "year": "2019",
+      "text": "The Budj Bim Cultural Landscape is inscribed on the World Heritage List for its Aboriginal cultural values."
+    },
+    {
+      "year": "2025",
+      "text": "Half-price camping returns at Parks Victoria campgrounds from 1 July, to run until July 2027."
+    },
+    {
+      "year": "2026",
+      "text": "Parks Victoria suspends new campsite bookings in November while it investigates a booking scam."
+    }
+  ],
+  "safety": [
+    "The caves are dark and slippery: carry a torch and wear sturdy shoes.",
+    "Rivers, lakes and craters hold deep water and slippery rock; Lake Surprise is not suitable for swimming.",
+    "Branches can fall from the manna gums; take care where you stop and camp.",
+    "Tell someone where you are going and when you will be back, and dress for the conditions."
+  ],
+  "regulations": [
+    "Dogs are not allowed in the national park; assistance dogs have entry requirements.",
+    "Campfires only in the fireplaces provided at the campground; no fires on the walking tracks.",
+    "No generators, firearms or horses, no bicycles on the Lake Surprise Walk, and no drones without a permit.",
+    "Take all rubbish home."
+  ],
+  "themes": [
+    "theme-volcanoes",
+    "theme-caves",
+    "theme-indigenous-heritage",
+    "theme-wetland",
+    "theme-sacred-places"
+  ],
+  "photos": [
+    {
+      "file": "File:Budj Bim ‐ Mt Eccles National Park, Victoria, Australia 14.jpg",
+      "caption": "Lake Surprise from the crater rim",
+      "altText": "A dark blue crater lake ringed by eucalypt woodland and rocky rims under a blue sky"
+    },
+    {
+      "file": "File:Budj Bim ‐ Mt Eccles National Park, Victoria, Australia 20.jpg",
+      "caption": "On the shore of Lake Surprise",
+      "altText": "Calm lake water with a fallen branch near a rocky bank, below forested crater walls"
+    },
+    {
+      "file": "File:Budj Bim ‐ Mt Eccles National Park, Victoria, Australia 05.jpg",
+      "caption": "The crater's rocky walls",
+      "altText": "Steep slopes of dark volcanic rock covered in eucalypts dropping to green water"
+    },
+    {
+      "file": "File:Budj Bim ‐ Mt Eccles National Park, Victoria, Australia 01.jpg",
+      "caption": "Woodland in the volcanic landscape",
+      "altText": "Looking down into a sunlit hollow of grass and boulders among dense eucalypt bush"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Budj Bim National Park — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/budj-bim-national-park"
+    },
+    {
+      "title": "Budj Bim Campground — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/budj-bim-national-park/where-to-stay/budj-bim-campground"
+    },
+    {
+      "title": "Budj Bim National Park 3-day itinerary — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/budj-bim-national-park/budj-bim-national-park-3-day-itinerary"
+    },
+    {
+      "title": "Lake Surprise Walk (Budj Bim National Park) — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/sites/lake-surprise-walk"
+    },
+    {
+      "title": "Booking information (half-price camping; new bookings suspended, updated 11 November 2026) — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/where-to-stay/booking-information"
+    },
+    {
+      "title": "UNESCO World Heritage listing for Budj Bim Cultural Landscape — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/managing-country-together/unesco-world-heritage-listing-for-budj-bim-cultural-landscape"
+    },
+    {
+      "title": "Budj Bim Cultural Landscape — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1577/"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — area",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "Budj Bim National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Budj_Bim_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

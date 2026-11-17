@@ -1,0 +1,230 @@
+{
+  "placeID": "au-np-grampians",
+  "contentVersion": 1,
+  "summary": "Gariwerd: tilted sandstone ranges rising out of the western Victorian plains, with waterfalls, wildflowers and wide lookouts, and the greatest number of significant Aboriginal rock art sites in southern Australia. Grampians (Gariwerd) National Park draws walkers to The Pinnacle and Mount William and to the 164-kilometre Grampians Peaks Trail. Much of the park is still recovering from the 2024–25 bushfires.",
+  "facts": {
+    "establishedYear": 1984,
+    "areaHectares": 168241,
+    "bestSeasons": [
+      "spring",
+      "autumn"
+    ],
+    "suggestedTime": "Two to five days"
+  },
+  "story": [
+    "The Grampians are ranges of sandstone, worn by wind and water into cliffs, gorges, waterfalls, iron-stained bluffs and wind-scoured caverns such as those near the top of Hollow Mountain, Wudjub-guyan. Mount William, or Duwul, is the highest point at 1,167 metres. On its upper slopes tall eucalypts shrink to dwarfed trees and then to low, windswept bushes and grasses, and on a crisp winter's day snow can lie on the sub-alpine vegetation. From The Pinnacle and other lookouts the views run far out over the plains of western Victoria.",
+    "The Greater Gariwerd landscape holds nearly a third of Victoria's plant species and critical habitat for threatened animals, among them the critically endangered brush-tailed rock-wallaby and the yellow-footed antechinus. Spring wildflower displays are famous. Mackenzie Falls, one of the largest waterfalls in Victoria, is the only waterfall in the Grampians that flows all year round.",
+    "Gariwerd is a living cultural landscape that its Traditional Owners have evolved with for tens of thousands of years, and it holds the highest concentration of known Aboriginal rock art in Victoria. Parks Victoria works with the Barengi Gadjin Land Council, Eastern Maar Aboriginal Corporation and Gunditj Mirring Traditional Owners Aboriginal Corporation, who describe Gariwerd as a member of their family, a place of healing and spiritual renewal. Rock art shelters such as Billimina and Manja can be visited, and Brambuk, the National Park and Cultural Centre in Halls Gap, introduces the culture of Gariwerd.",
+    "The Grampians became a national park in 1984. In 2021 the Greater Gariwerd Landscape Management Plan, developed with the Traditional Owners after two years of consultation and more than 2,500 public submissions, set a 15-year course for recognising and caring for the cultural landscape. On 17 December 2024 dry lightning started the Grampians–Yarram Gap fire in the south of the park, and on 27 January 2025 another lightning band lit fires in the west. Together they burnt 135,000 hectares, nearly 80 per cent of the park."
+  ],
+  "howItWorks": [
+    "Grampians (Gariwerd) National Park is managed by Parks Victoria in partnership with the Traditional Owners under the Greater Gariwerd Landscape Management Plan. Parks Victoria asks visitors to respect Country: leave pets, drones and loud music at home, keep to the tracks, take all rubbish out, and remember that campfires are not permitted on the Grampians Peaks Trail. Brambuk in Halls Gap is the place to get current park information.",
+    "There are many campgrounds, including Smiths Mill, Borough Huts, Boreang, Jimmy Creek, Stapylton, Troopers Creek, Buandik and Strachans, plus a group campground at Stony Creek and remote hiker camps. The 164-kilometre Grampians Peaks Trail, from Mount Zero in the north through Halls Gap to Dunkeld in the south, takes 13 days and 12 nights end to end, and its hike-in campgrounds must be booked, with fees. Camping fees at Parks Victoria's bookable campgrounds are half price until July 2027. In November 2026 Parks Victoria suspended all new campsite bookings while it investigated suspicious WhatsApp messages linked to its external booking provider; existing bookings were not affected.",
+    "The park is still recovering from the 2024–25 fires. Parks Victoria is reopening damaged campgrounds, roads, walking tracks and sections of the Grampians Peaks Trail in stages, but some sites remain closed — in November 2026 these included The Fortress walk and hike-in camp, the Chimney Pots walk and the Red Gum walk. The Mackenzie Falls precinct, including Fish Falls, closes on days of Extreme and Catastrophic fire danger. Check Parks Victoria's change-of-conditions list before you go."
+  ],
+  "sights": [
+    {
+      "name": "Mackenzie Falls",
+      "note": "One of Victoria's largest waterfalls, flowing all year. A 2-kilometre return walk descends 260 narrow steps to its base; easier paths lead to Bluff and Broken Falls lookouts. No swimming.",
+      "location": [
+        -37.11096,
+        142.40918
+      ]
+    },
+    {
+      "name": "The Pinnacle",
+      "note": "A famous lookout over western Victoria: 4.2 kilometres return from the Sundial car park via Devils Gap, or a harder climb from Wonderland through the Grand Canyon and Silent Street.",
+      "location": [
+        -37.16015,
+        142.51569
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Mount William (Duwul)",
+      "note": "The park's highest peak, 1,167 metres. Drive most of the way, then walk a steep sealed road to 360-degree views of ranges and plains; best at sunrise or sunset.",
+      "location": [
+        -37.29273,
+        142.60112
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Zumsteins",
+      "note": "A historic settlement site and picnic area on the banks of the Mackenzie River, linked to Mackenzie Falls by a strenuous walk through the river gorge.",
+      "location": [
+        -37.09344,
+        142.38681
+      ]
+    },
+    {
+      "name": "Billimina",
+      "note": "An Aboriginal rock art shelter in the western Grampians, reached from near Buandik Campground. Check change-of-conditions notices, as the western park was fire-affected.",
+      "location": [
+        -37.24816,
+        142.27565
+      ]
+    },
+    {
+      "name": "Manja",
+      "note": "A rock art shelter close to Buandik Campground at the base of the Victoria Range. Respect the site and do not touch the art.",
+      "location": [
+        -37.27681,
+        142.27421
+      ]
+    },
+    {
+      "name": "Brambuk – The National Park and Cultural Centre",
+      "note": "The park's visitor centre in Halls Gap, for park information and a window into Gariwerd's Aboriginal culture, with displays and a bush tucker cafe.",
+      "location": [
+        -37.15797,
+        142.5315
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Halls Gap, in the centre of the park, home of Brambuk",
+      "The Western Highway between Stawell and Horsham, for the north and east of the park",
+      "Dunkeld, on the Glenelg Highway, for the southern Grampians and the end of the Grampians Peaks Trail"
+    ],
+    "reservations": "Bookable campgrounds and the Grampians Peaks Trail hike-in camps must be booked with Parks Victoria, and fees apply; fees are half price until July 2027. In November 2026 Parks Victoria suspended new campsite bookings while it investigated a booking scam; existing bookings stood — check before you go.",
+    "permits": [
+      "Grampians Peaks Trail hike-in campground bookings",
+      "Stony Creek group campground bookings, for groups of up to 16"
+    ],
+    "camping": [
+      "Drive-in campgrounds such as Smiths Mill, Borough Huts, Boreang, Jimmy Creek, Stapylton, Troopers Creek, Buandik and Strachans",
+      "Hike-in campgrounds along the Grampians Peaks Trail, and First Wannon Hiker Camp on the Major Mitchell Plateau"
+    ],
+    "lodging": [
+      "Accommodation in Halls Gap, Dunkeld and the surrounding towns"
+    ],
+    "seasonalClosures": [
+      "The Mackenzie Falls precinct closes on days of Extreme and Catastrophic fire danger",
+      "Several walks and camps damaged in the 2024–25 bushfires remain closed — check change of conditions before you go"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "The Grampians are open all year, and each season has its draw. Spring brings the famous wildflower displays. Summer is the time to watch for fire: the 2024–25 fires were started by summer lightning, and on days of Extreme or Catastrophic fire danger the Mackenzie Falls precinct closes, so check the Fire Danger Rating before you visit. In winter snow can settle on the stunted vegetation of Mount William. Carry warm and waterproof layers on any long walk.",
+  "directions": "The park lies about 260 kilometres west of Melbourne, between Stawell and Horsham on the Western Highway and Dunkeld on the Glenelg Highway. Halls Gap, in the centre of the park, is the main base and the home of Brambuk, the National Park and Cultural Centre. Budj Bim National Park is about an hour to the south-west. Some park roads badly damaged in the 2024–25 fires needed longer-term closures for repair, so check conditions before you drive.",
+  "fees": [],
+  "chronology": [
+    {
+      "year": "1984",
+      "text": "The Grampians become a national park."
+    },
+    {
+      "year": "2021",
+      "text": "The Greater Gariwerd Landscape Management Plan, developed with the Traditional Owners, is released in December."
+    },
+    {
+      "year": "2024",
+      "text": "Dry lightning starts the Grampians–Yarram Gap fire on 17 December."
+    },
+    {
+      "year": "2025",
+      "text": "More lightning fires start on 27 January; in all, 135,000 hectares — nearly 80 per cent of the park — burn, and a staged recovery begins."
+    },
+    {
+      "year": "2026",
+      "text": "Parks Victoria suspends new campsite bookings in November while it investigates a booking scam."
+    }
+  ],
+  "safety": [
+    "Check the Fire Danger Rating at cfa.vic.gov.au before you go; some sites close on days of Extreme and Catastrophic fire danger.",
+    "Do not swim at Mackenzie Falls: there are many unseen dangers in the water. The climb back up its 260 steps is hard.",
+    "The Pinnacle and summit walks include rock-hopping and water crossings; wear sturdy shoes and keep children close near cliff edges.",
+    "Obey closure signs in fire-affected areas, where tracks, campgrounds and roads may still be damaged."
+  ],
+  "regulations": [
+    "No pets in the national park.",
+    "No drones, and no loud music on the Grampians Peaks Trail.",
+    "Campfires are not permitted on the Grampians Peaks Trail; elsewhere, follow fire restrictions and the rules for each campground.",
+    "Respect rock art and cultural sites: do not touch the paintings or enter closed areas.",
+    "Take all rubbish with you and stay on the tracks."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-indigenous-heritage",
+    "theme-sacred-places",
+    "theme-canyons"
+  ],
+  "photos": [
+    {
+      "file": "File:80. Halls Gap and Lake Belfield from Boroka Lookout.jpg",
+      "caption": "Halls Gap and Lake Bellfield from Boroka Lookout",
+      "altText": "A forested valley with a small town and a lake, below long ranges of tilted sandstone ridges"
+    },
+    {
+      "file": "File:150816-015 The Pinnacle.jpg",
+      "caption": "The Pinnacle",
+      "altText": "A fenced lookout on top of a layered sandstone crag above forest and plains"
+    },
+    {
+      "file": "File:MacKenzie Falls 02.jpg",
+      "caption": "Mackenzie Falls",
+      "altText": "A broad waterfall spilling over dark, stepped rock into a pool beneath orange cliffs"
+    },
+    {
+      "file": "File:A190, Grampians National Park, Australia, The Balconies, 2007.JPG",
+      "caption": "The Balconies",
+      "altText": "Two flat slabs of rock jutting out over a wide forested valley and distant ranges"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Grampians (Gariwerd) National Park — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park"
+    },
+    {
+      "title": "Grampians Peaks Trail — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park/things-to-do/grampians-peaks-trail"
+    },
+    {
+      "title": "Mackenzie Falls — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park/attractions/central-grampians/things-to-do/mackenzie-falls"
+    },
+    {
+      "title": "The Pinnacle walks — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park/attractions/central-grampians/things-to-do/the-pinnacle-walks"
+    },
+    {
+      "title": "Mount William — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/grampians-national-park/attractions/southern-grampians/things-to-do/mount-william"
+    },
+    {
+      "title": "Brambuk the National Park and Cultural Centre — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/places-to-see/sites/brambuk-the-national-park-and-cultural-centre"
+    },
+    {
+      "title": "Grampians (Gariwerd) National Park Fire Recovery — Parks Victoria (updated July 2025)",
+      "url": "https://www.parks.vic.gov.au/projects/southwest-victoria/grampians-gariwerd-national-park-fire-recovery"
+    },
+    {
+      "title": "Plan for Gariwerd's future released — Parks Victoria, 21 December 2021",
+      "url": "https://www.parks.vic.gov.au/news/2021/12/20/04/17/plan-for-gariwerd-future-released"
+    },
+    {
+      "title": "Greater Gariwerd Traditional Owners invite you to learn, visit and respect Country — Parks Victoria, 21 December 2021",
+      "url": "https://www.parks.vic.gov.au/news/2021/12/21/01/58/greater-gariwerd-traditional-owners-invite-you-to-learn-visit-and-respect-country"
+    },
+    {
+      "title": "Booking information (half-price camping; new bookings suspended, updated 11 November 2026) — Parks Victoria",
+      "url": "https://www.parks.vic.gov.au/where-to-stay/booking-information"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — area",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "Grampians National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Grampians_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

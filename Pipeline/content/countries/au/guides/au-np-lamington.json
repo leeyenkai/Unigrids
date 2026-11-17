@@ -1,0 +1,319 @@
+{
+  "placeID": "au-np-lamington",
+  "contentVersion": 1,
+  "summary": "Subtropical rainforest, Antarctic beech and some 130 kilometres of walking tracks along the McPherson Range on the Queensland–New South Wales border. Lamington is part of the Gondwana Rainforests of Australia World Heritage Area. Its two sections, Green Mountains and Binna Burra, look south over the vast eroded caldera of the Tweed volcano, and its gorges hold dozens of waterfalls.",
+  "facts": {
+    "establishedYear": 1915,
+    "areaHectares": 21176,
+    "bestSeasons": [
+      "winter",
+      "spring"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "Lamington is the worn northern flank of a volcano. About 20 to 23 million years ago, as Australia drifted north over a hot spot in the mantle, first the Focal Peak volcano near Mount Barney and then the much larger Tweed shield volcano, centred on present-day Wollumbin (Mount Warning), poured lava across the region. Water has been cutting into it ever since. The cliffs along the park's southern edge curve round into New South Wales as the rim of the Tweed erosion caldera, which QPWS calls the largest and best example of its age in the world.",
+    "Basalt gave deep, fertile soils, and rainforest grows on them; the poorer rhyolite soils around Binna Burra and Daves Creek carry open forest and heath. Lamington is the most northerly home of the Antarctic beech, Nothofagus moorei, and protects one of Australia's largest remaining hoop pine forests. Brush box elsewhere in the World Heritage area have been radiocarbon dated at 1,500 years. Albert's lyrebird, the rufous scrub-bird and the eastern bristlebird live here, with the Lamington spiny crayfish and about 58 plants and more than 22 animals listed as vulnerable, rare or threatened.",
+    "To the Yugambeh people these mountains are Woonoongoora, sacred places to be nurtured and respected. The Yugambeh family groups — the Wangerriburra, Birinburra, Gugingin, Migunberri, Mununjali, Bollongin, Minjungbal and Kombumerri — shared language, ceremony and trade, and used both forest and rainforest; the Kweebani cooking cave near Binna Burra is one place where their occupation is recorded. When surveyors marked the state border along the range between 1863 and 1866, Bilin Bilin and members of his family carried equipment and identified trees and animals. The Border Track follows part of their route.",
+    "The cedar-getters came first, then farmers. From the 1890s the grazier and politician Robert Collins, who had learned of Yellowstone, campaigned for a national park on the range; after 1911 the young engineer Romeo Lahey took up the fight, giving lantern lectures and gathering 521 signatures from residents. Collins died in 1913. On 30 July 1915, 19,035 hectares were gazetted as Lamington National Park, named after a former governor rather than Woonoongoora, the name Lahey preferred. Relief workers built the first tracks in the late 1930s."
+  ],
+  "howItWorks": [
+    "Queensland's national parks are managed by the Queensland Parks and Wildlife Service under the Nature Conservation Act 1992. The service's permits and fees page lists permits for camping, driving in recreation areas, events and business — there is no entry fee to walk in Lamington. Camping does need a permit, booked and paid for before you arrive, normally through the Queensland National Parks Booking Service up to 12 months ahead; the permit tag must be displayed on your tent or vehicle.",
+    "In November 2026 that booking system was switched off after a data breach at the third-party provider Bookeasy. While the temporary arrangements last, QPWS says you may camp in open parks without a camping permit and will not be penalised for not holding one; existing bookings remain valid but cannot be changed. All other park rules still apply. Check the QPWS website before you go, as these arrangements will end.",
+    "The park has two sections. Green Mountains, in the west, adjoins O'Reilly's Rainforest Retreat; its former QPWS camping area has been redeveloped with O'Reilly's as O'Reilly's Campground, with tent and campervan sites and safari tents. Binna Burra, in the east, adjoins Binna Burra Mountain Lodge, and a privately managed campground lies beside it. The Border Track joins the two, and the 54-kilometre Gold Coast Hinterland Great Walk can begin or end at Green Mountains. A handful of remote walk-in bush camps have fixed limits on campers, must be booked in advance for weekends and holidays, and close from 1 December to 31 January."
+  ],
+  "sights": [
+    {
+      "name": "Border Track",
+      "note": "The backbone of the park's track network: 21.4 kilometres one way along the McPherson Range between Green Mountains and Binna Burra, through rainforest and Antarctic beech. Allow about seven hours.",
+      "location": [
+        -28.26266,
+        153.17234
+      ]
+    },
+    {
+      "name": "Morans Falls",
+      "note": "A 4.4-kilometre return walk from the Python Rock and Morans Falls trailhead at Green Mountains, through subtropical rainforest to a lookout over the falls and down Morans Creek gorge.",
+      "location": [
+        -28.23065,
+        153.12479
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Python Rock",
+      "note": "A 3.1-kilometre return walk to a lookout over Morans Falls, Castle Crag and the Lost World, a good place for sunset.",
+      "location": [
+        -28.22835,
+        153.11914
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Elabana Falls",
+      "note": "On the 10.9-kilometre Box Forest circuit from Green Mountains, which passes stands of pink-barked brush box, Picnic Rock and several cascades.",
+      "location": [
+        -28.24358,
+        153.15281
+      ]
+    },
+    {
+      "name": "Coomera Falls",
+      "note": "Coomera and Yarrabilgong falls drop into a deep gorge, seen from a lookout on the 17.4-kilometre Coomera circuit from Binna Burra. The gorge itself is a restricted access area.",
+      "location": [
+        -28.23357,
+        153.19115
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Tullawallal",
+      "note": "A knoll on a 5-kilometre circuit from Binna Burra through the park's most accessible cool temperate rainforest and the northernmost patch of Antarctic beech forest.",
+      "location": [
+        -28.21011,
+        153.1917
+      ]
+    },
+    {
+      "name": "Mount Bithongabel",
+      "note": "The park's highest point at 1,199 metres, close to the Border Track, whose south-facing lookouts take in the Tweed caldera.",
+      "location": [
+        -28.26346,
+        153.17223
+      ]
+    },
+    {
+      "name": "Kweebani Cave",
+      "note": "A Yugambeh cooking cave on the 7-kilometre return Caves track from Binna Burra, which also looks across the Darlington Range and into the Coomera valley.",
+      "location": [
+        -28.20035,
+        153.18331
+      ]
+    },
+    {
+      "name": "Kamarun Lookout",
+      "note": "A historic picnic site and lookout recognising Romeo Lahey's contribution to the park, with views over one of the largest intact hoop pine stands, on the Darlington Range.",
+      "location": [
+        -28.15603,
+        153.12329
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Binna Burra Information Centre",
+      "note": "QPWS information centre at the Binna Burra lower day-use area, about 650 metres above sea level.",
+      "location": [
+        -28.19408,
+        153.18425
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Green Mountains section, at the end of Lamington National Park Road, 36 kilometres from Canungra — information centre, day-use area and O'Reilly's",
+      "Binna Burra section, via Nerang and Beechmont — information centre, day-use areas and Binna Burra Mountain Lodge"
+    ],
+    "reservations": "No reservation is needed to enter or walk. Camping permits are normally booked before arrival through the Queensland National Parks Booking Service; O'Reilly's Campground and the Binna Burra campground are booked with their operators. In November 2026 the QPWS booking system was offline after a data breach and camping permits were temporarily not required — check the QPWS website before you go.",
+    "permits": [
+      "Camping permit for the remote bush camps, booked in advance for weekends, public and school holidays (temporarily waived while the QPWS booking system is offline)",
+      "Commercial drone use needs a QPWS permit",
+      "No entry to the declared restricted access areas: the Poondahra cliffs, Ballunjui Falls, Black Canyon and Coomera Gorge"
+    ],
+    "camping": [
+      "O'Reilly's Campground at Green Mountains: 24 tent sites, 21 campervan sites (some powered) and 17 safari tents",
+      "A privately managed campground beside the Binna Burra section",
+      "Remote walk-in bush camps, among them Echo Point, Illinbah and Mount Bithongabel, closed 1 December to 31 January"
+    ],
+    "lodging": [
+      "O'Reilly's Rainforest Retreat, beside the Green Mountains section",
+      "Binna Burra Mountain Lodge, beside the Binna Burra section",
+      "Holiday accommodation in Canungra, Beechmont and the Gold Coast hinterland"
+    ],
+    "seasonalClosures": [
+      "Remote bush camp sites close every year from 1 December to 31 January",
+      "A QPWS alert for severe weather damage has been in force since 14 March 2025 and runs to 31 December 2026 — check park alerts for closed tracks before you go"
+    ],
+    "seasonalClosureMonths": [
+      12,
+      1
+    ]
+  },
+  "weather": "Lamington is on average about 5°C cooler than Brisbane. The wet season usually runs from November to March, when the park gets most of its roughly 1,600 millimetres a year and the leeches are out. Winter brings clear, dry days with sharper views and few leeches, but nights can fall below 0°C and frost is possible. Weather on the range changes fast at any time of year: carry warm clothing and a raincoat even on short walks, and remember the rainforest grows dark early on winter afternoons.",
+  "directions": "Lamington is about 110 kilometres, or two hours' drive, south of Brisbane, and there is no public transport to the park. For Green Mountains, drive to Canungra — 40 kilometres from Broadbeach via Nerang, or from the north via Pacific Motorway exit 34, Tamborine and Canungra — then allow at least 50 minutes for the 36-kilometre winding, often narrow road up; it is unsuitable for vehicles over 6 metres or towing caravans and camper trailers. For Binna Burra, allow 70 minutes from Broadbeach via Nerang and Beechmont, or follow the signs from Pacific Motorway exit 69; the final 1.8 kilometres is very narrow. The two sections are about 80 minutes apart by road.",
+  "fees": [
+    {
+      "title": "Camping permit, QPWS camping areas",
+      "cost": "$7.75 per person per night",
+      "amount": 7.75,
+      "currencyCode": "AUD",
+      "detail": "Or $31.00 per family per night (one or two adults and children under 18, up to eight people); children under five camp free. Queensland rates from 1 July 2026. Temporarily not required while the booking system is offline after the November 2026 data breach — check before you go."
+    },
+    {
+      "title": "Park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "AUD",
+      "detail": "QPWS charges no entry fee for walking and day visits. O'Reilly's Campground and the Binna Burra campground set their own prices."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1828",
+      "text": "Patrick Logan, Charles Fraser and Allan Cunningham see the McPherson Range from the summit of Mount Barney, the first European record of it."
+    },
+    {
+      "year": "1863–1866",
+      "text": "Surveyors Francis Edward Roberts and Isaiah Rowland mark the state border along the range, helped by Bilin Bilin and his family."
+    },
+    {
+      "year": "1896",
+      "text": "Robert Collins is elected to the Queensland Legislative Assembly and campaigns for a national park on the range."
+    },
+    {
+      "year": "1911",
+      "text": "Romeo Lahey, son of a Canungra sawmiller, joins the campaign."
+    },
+    {
+      "year": "1915",
+      "text": "Lamington National Park, 19,035 hectares, is proclaimed and gazetted on 30 July, Queensland's ninth national park."
+    },
+    {
+      "year": "1918",
+      "text": "The park is declared a reserve for the protection and preservation of native birds and animals."
+    },
+    {
+      "year": "Late 1930s",
+      "text": "Relief workers build the Border Track and the Coomera circuit, among the park's first tracks."
+    },
+    {
+      "year": "1994",
+      "text": "The World Heritage property, first listed in 1986 for New South Wales rainforests, is extended to Queensland, taking in Lamington."
+    },
+    {
+      "year": "2007",
+      "text": "The property is renamed the Gondwana Rainforests of Australia."
+    },
+    {
+      "year": "2015",
+      "text": "Lamington celebrates a century of conservation on 31 July."
+    }
+  ],
+  "safety": [
+    "Do not touch stinging trees, which have very large heart-shaped leaves; even dead leaves give an extremely painful sting.",
+    "Leave your walking plans with someone reliable, do not start long walks after midday, and finish an hour before sunset. Rescue can be hours away, even by helicopter.",
+    "Never dive or jump into creeks, and do not cross flooded waterways. Take care at cliff edges and lookouts, especially in the wet.",
+    "Venomous snakes live in the park; carry elastic bandages for snakebite. Check yourself and children daily for ticks, and expect leeches after rain.",
+    "Treat all tap and creek water before drinking it."
+  ],
+  "regulations": [
+    "No open fires anywhere in the park; use fuel stoves only.",
+    "Domestic animals are not permitted.",
+    "Do not feed wildlife, and do not disturb frogs, their eggs or tadpoles. Swimming in the World Heritage area's creeks is discouraged.",
+    "Unauthorised entry to the restricted access areas — the Poondahra cliffs, Ballunjui Falls, Black Canyon and Coomera Gorge — is prohibited.",
+    "Recreational drones must follow CASA rules and must not disturb wildlife, other visitors or cultural heritage; commercial drone use needs a permit."
+  ],
+  "themes": [
+    "theme-temperate-rainforest",
+    "theme-mountains",
+    "theme-volcanoes",
+    "theme-indigenous-heritage",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Elebana Falls, Lamington National Park.jpg",
+      "caption": "Elabana Falls on the Box Forest circuit",
+      "altText": "Several thin cascades falling over a mossy rock ledge into a still pool in dark rainforest"
+    },
+    {
+      "file": "File:Antarctic beech trees on Border Track in Lamington National Park, Queensland.jpg",
+      "caption": "Antarctic beech on the Border Track",
+      "altText": "Massive moss-covered tree trunks beside a narrow forest path among ferns"
+    },
+    {
+      "file": "File:Morans Falls.jpg",
+      "caption": "Morans Falls",
+      "altText": "A tall waterfall dropping down a dark cliff beside rainforest, with a faint rainbow in the spray"
+    },
+    {
+      "file": "File:Lamington National Park (19238780679).jpg",
+      "caption": "Evening view from the Lamington plateau",
+      "altText": "Forest in the foreground and farmland and distant ranges below a golden evening sky"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lamington National Park — Queensland Parks and Wildlife Service",
+      "url": "https://parks.qld.gov.au/parks/lamington"
+    },
+    {
+      "title": "About Lamington — QPWS",
+      "url": "https://parks.qld.gov.au/parks/lamington/about"
+    },
+    {
+      "title": "Nature, culture and history — Lamington National Park, QPWS",
+      "url": "https://parks.qld.gov.au/parks/lamington/about/culture"
+    },
+    {
+      "title": "Lamington National Park's history — QPWS",
+      "url": "https://parks.qld.gov.au/parks/lamington/about/centenary"
+    },
+    {
+      "title": "Frequently asked questions — Lamington National Park, QPWS",
+      "url": "https://parks.qld.gov.au/parks/lamington/about/faq"
+    },
+    {
+      "title": "Visiting Lamington safely — QPWS",
+      "url": "https://parks.qld.gov.au/parks/lamington/visiting-safely"
+    },
+    {
+      "title": "Camping in Lamington — QPWS",
+      "url": "https://parks.qld.gov.au/parks/lamington/camping"
+    },
+    {
+      "title": "Things to do — Lamington National Park, QPWS",
+      "url": "https://parks.qld.gov.au/parks/lamington/things-to-do"
+    },
+    {
+      "title": "Lamington journeys (Border Track, Morans Falls, Python Rock, Box Forest, Coomera, Tullawallal, Caves) — QPWS",
+      "url": "https://parks.qld.gov.au/parks/lamington/journeys"
+    },
+    {
+      "title": "Lamington attractions — QPWS",
+      "url": "https://parks.qld.gov.au/parks/lamington/attractions"
+    },
+    {
+      "title": "Camping bookings and fees — QPWS",
+      "url": "https://parks.qld.gov.au/camping/bookings"
+    },
+    {
+      "title": "Permits and fees — QPWS",
+      "url": "https://parks.qld.gov.au/before-you-visit/permits-and-fees"
+    },
+    {
+      "title": "Important security update – Queensland National Parks Booking Service (current at 14 November 2026)",
+      "url": "https://parks.qld.gov.au/contactus/important-security-update"
+    },
+    {
+      "title": "Gondwana Rainforests of Australia World Heritage Area (Queensland Section) — Queensland Government",
+      "url": "https://environment.qld.gov.au/management/world-heritage-areas/current/gondwana-rainforests"
+    },
+    {
+      "title": "Gondwana Rainforests of Australia — NSW Department of Climate Change, Energy, the Environment and Water",
+      "url": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/gondwana-rainforests-of-australia"
+    },
+    {
+      "title": "Gondwana Rainforests of Australia — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/368/"
+    },
+    {
+      "title": "Lamington National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lamington_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

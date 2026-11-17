@@ -1,0 +1,272 @@
+{
+  "placeID": "au-np-springbrook",
+  "contentVersion": 1,
+  "summary": "A cool, wet plateau of rhyolite cliffs and waterfalls high above the Gold Coast, on the northern rim of the old Tweed volcano. Springbrook is part of the Gondwana Rainforests of Australia World Heritage Area. Short walks lead to lookouts over Wollumbin (Mount Warning) and the Coral Sea, and after dark thousands of glow-worms light the cave at Natural Bridge.",
+  "facts": {
+    "establishedYear": 1937,
+    "areaHectares": 6558,
+    "bestSeasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "suggestedTime": "One to two days"
+  },
+  "story": [
+    "Springbrook plateau is what remains of the northern side of a shield volcano about 80 kilometres across, centred on Wollumbin (Mount Warning), which poured lava over some 6,000 square kilometres around 23 million years ago. Later eruptions of rhyolite made the sheer cliffs of the plateau. When the volcano died, about 10 million years ago, water began carving it into the great bowl of the Tweed erosion caldera, whose crescent of cliffs runs from Springbrook to the Lamington plateau. At Natural Bridge, a creek drilled a pothole through the lip of an old waterfall into the cave beneath, leaving an arch of hard basalt.",
+    "The park's forests range from subtropical rainforest at Mount Cougal, Natural Bridge and the sheltered gorges, through warm and cool temperate rainforest, to open eucalypt forest and montane heath. A small pocket of Antarctic beech grows near Best of All Lookout, a relic of the cooler climate of ancient Gondwana, and hoop pines rise above the rainforest at Natural Bridge. In the cave there, glow-worm larvae hang sticky threads to catch midges and mosquitoes; they feed for about nine months, while the adults live only three or four days.",
+    "Springbrook is on the Country of the Yugambeh people. To the Yugambeh the mulei, the mountains, are sacred places to be nurtured and respected, and the people of the high country traded stone and rainforest products with the Yinggerijahli, the saltwater people, for shellfish and coastal foods. Lawyer vine was used to climb trees and possum skins to make cloaks, bags and drums. European settlement took land and waterholes and moved many Yugambeh people to reserves, but in their own words, 'Yugambeh are still here.'",
+    "Surveyors marking the border between 1863 and 1865 found the country so rugged that one report said it would not be settled until flying machines were in general use. The plateau, known to timber-getters as the Land of the Tall Timber, was opened for selection in 1906, and its settlers were soon running dairies and guesthouses. By the 1930s parts were almost bare of trees. Warrie National Park, at The Canyon, was declared in 1937 and Gwongorella, at Purling Brook Falls, in 1940; in 1990 they were joined with Wunburra, Natural Bridge and Mount Cougal as Springbrook National Park."
+  ],
+  "howItWorks": [
+    "Queensland's national parks are managed by the Queensland Parks and Wildlife Service under the Nature Conservation Act 1992. There is no entry fee: QPWS's permits and fees page lists permits for camping, driving in recreation areas, events and business. Springbrook is open 24 hours a day, but QPWS asks visitors to walk in daylight only, except to see the glow-worms at Natural Bridge. Domestic animals are not permitted, and on-the-spot fines apply for bringing them, for feeding wildlife and for using soap or detergent in creeks.",
+    "The park is in four sections: the Springbrook plateau, Mount Cougal to the south-east, and Natural Bridge and Numinbah to the west. The Settlement, on the plateau, is the only camping area, and bush camping is not permitted anywhere in the park. Camping normally needs a permit booked in advance through the Queensland National Parks Booking Service, with the tag displayed at the site. In November 2026 that booking system was switched off after a data breach at the provider Bookeasy; while the temporary arrangements last, QPWS says you may camp in open parks without a permit. Check the QPWS website before you go.",
+    "Two places are declared restricted access areas, where entry is prohibited at all times and penalties apply: the top and base of Purling Brook Falls, which are unstable and prone to rockfalls, and Cave Creek at Natural Bridge, where swimming in the creek or the cave and going onto the creek bank are banned. Sections of the Purling Brook Falls circuit and the Warringa Pool track form part of the Gold Coast Hinterland Great Walk, which also reaches Lamington's Green Mountains section."
+  ],
+  "sights": [
+    {
+      "name": "Natural Bridge",
+      "note": "A waterfall plunges through a hole in the roof of a basalt cave on Cave Creek, reached by a 1-kilometre sealed circuit. At night thousands of glow-worms light the cave.",
+      "location": [
+        -28.2307,
+        153.2435
+      ]
+    },
+    {
+      "name": "Purling Brook Falls",
+      "note": "A 4-kilometre circuit from the Gwongorella picnic area through New England ash forest to lookouts and the gorge below the falls, crossed on a suspension bridge.",
+      "location": [
+        -28.18978,
+        153.27094
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Best of All Lookout",
+      "note": "A 600-metre return walk through Antarctic beech forest to a view across northern New South Wales and the Tweed caldera to Wollumbin (Mount Warning).",
+      "location": [
+        -28.24297,
+        153.2651
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Canyon Lookout",
+      "note": "Views of Twin and Rainbow falls, The Canyon's sheer walls and the ocean, steps from the car. Start of the Twin Falls circuit and the 14-kilometre Warrie circuit.",
+      "location": [
+        -28.22067,
+        153.27306
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Twin Falls circuit",
+      "note": "A 4-kilometre circuit that passes behind two waterfalls, through rock clefts and among palms, tree ferns and brush box. Paths behind the falls can be slippery.",
+      "location": [
+        -28.2246,
+        153.27413
+      ]
+    },
+    {
+      "name": "Goomoolahra Falls",
+      "note": "A short track from the picnic area to the top of the 60-metre falls, with views north on a clear day to Stradbroke and Moreton islands.",
+      "location": [
+        -28.22316,
+        153.28486
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Warringa Pool",
+      "note": "A 6-kilometre return walk downstream from Gwongorella picnic area past the base of Purling Brook Falls; allow three hours.",
+      "location": [
+        -28.18309,
+        153.26881
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Springbrook plateau, by the Gold Coast–Springbrook Road from Mudgeeraba or by Pine Creek Road from the Nerang–Murwillumbah Road",
+      "Natural Bridge, on the Nerang–Murwillumbah Road, 38 kilometres from Nerang or 28 kilometres from Murwillumbah",
+      "Mount Cougal, in the Currumbin Valley, from the Gold Coast Highway"
+    ],
+    "reservations": "No reservation is needed to enter or walk. Camping at The Settlement normally needs a permit booked and paid for in advance — six to eight weeks ahead for public holidays. In November 2026 the QPWS booking system was offline after a data breach and permits were temporarily not required — check the QPWS website before you go. Glow-worm night tours at Natural Bridge are run by commercial operators.",
+    "permits": [
+      "Camping permit for The Settlement camping area (temporarily waived while the QPWS booking system is offline)",
+      "No entry to the restricted access areas at the top and base of Purling Brook Falls or to Cave Creek and its banks at Natural Bridge"
+    ],
+    "camping": [
+      "The Settlement camping area on the plateau, the park's only camping area: tents and camper trailers, no caravans, no campfires",
+      "Bush camping is not permitted anywhere in the park"
+    ],
+    "lodging": [
+      "Private accommodation on the Springbrook plateau and in the Numinbah and Currumbin valleys"
+    ],
+    "seasonalClosures": [
+      "Parts of the Purling Brook Falls circuit close after significant rain; the western lookout usually stays open — check park alerts before you go"
+    ],
+    "seasonalClosureMonths": []
+  },
+  "weather": "At about 900 metres, the plateau is cooler than the coast below and can be cool even in summer. It can receive more than 3,000 millimetres of rain a year, most of it between December and March, and cloud often hides the lookouts when the coast is sunny. Winters are cold, with frosty nights as low as -4°C; summer days on the exposed ridges reach 30°C or more. Natural Bridge and Mount Cougal are warmer and drier: Natural Bridge gets about 2,500 millimetres, mostly in hot, humid summers up to 38°C, and clear, crisp winters down to about 4°C, while Mount Cougal has afternoon thunderstorms on long summer days. The glow-worms glow most brightly from December to March and much less in winter.",
+  "directions": "Springbrook is about 100 kilometres south of Brisbane. For the plateau, leave the Pacific Motorway at Mudgeeraba (exit 79 from the north, 80 from the south) and follow the Gold Coast–Springbrook Road for 24 kilometres, or take exit 69 at Nerang and follow the Nerang–Murwillumbah Road for 23 kilometres to Pine Creek Road; both roads are steep, winding and narrow, and there is no through road from the plateau to New South Wales. For Natural Bridge, follow the Nerang–Murwillumbah Road for 38 kilometres from exit 69, or come up the Numinbah Road from Murwillumbah. For Mount Cougal, leave the Gold Coast Highway at Duringan Street or Thrower Drive and head up the Currumbin Valley.",
+  "fees": [
+    {
+      "title": "Camping permit, The Settlement",
+      "cost": "$7.75 per person per night",
+      "amount": 7.75,
+      "currencyCode": "AUD",
+      "detail": "Or $31.00 per family per night (one or two adults and children under 18, up to eight people); children under five camp free. Queensland rates from 1 July 2026. Temporarily not required while the booking system is offline after the November 2026 data breach — check before you go."
+    },
+    {
+      "title": "Park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "AUD",
+      "detail": "QPWS charges no entry fee for day visits and walks."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1863–1865",
+      "text": "Surveyors Francis Edward Roberts and Isaiah Rowland mark the Queensland–New South Wales border, helped by Bilin Bilin and other First Nations people, and name many landmarks in Yugambeh."
+    },
+    {
+      "year": "1893",
+      "text": "A giant red cedar is felled near Natural Bridge; a section is shown at the Paris World Fair of 1900."
+    },
+    {
+      "year": "1906",
+      "text": "The plateau's timber reserve is revoked and the first selectors arrive in November."
+    },
+    {
+      "year": "1907",
+      "text": "The name Springbrook comes into common use, replacing Springwood."
+    },
+    {
+      "year": "1922",
+      "text": "Natural Bridge is declared a recreation and scenic reserve."
+    },
+    {
+      "year": "1937",
+      "text": "Warrie National Park, in The Canyon area, is declared — the first part of today's park."
+    },
+    {
+      "year": "1940",
+      "text": "Gwongorella National Park is declared at Purling Brook Falls."
+    },
+    {
+      "year": "1943",
+      "text": "A bush sawmill opens at Mount Cougal, cutting packing-case timber for banana growers during the war."
+    },
+    {
+      "year": "1959",
+      "text": "Natural Bridge becomes a national park."
+    },
+    {
+      "year": "1990",
+      "text": "Warrie, Gwongorella, Wunburra, Natural Bridge and Mount Cougal are amalgamated as Springbrook National Park."
+    },
+    {
+      "year": "1994",
+      "text": "The Gondwana Rainforests World Heritage Area is extended to Queensland in December, taking in nearly all of Springbrook."
+    }
+  ],
+  "safety": [
+    "Sheer cliffs and waterfalls: one slip can be fatal. Keep to the tracks, stay out of the restricted areas at Purling Brook Falls and supervise children closely.",
+    "Tracks behind waterfalls can be slippery even when they look dry.",
+    "Never jump or dive into creeks; they hide submerged logs and rocks.",
+    "Walk in daylight only, except at Natural Bridge for the glow-worms, and carry enough light for the walk back.",
+    "Carry a raincoat and warm clothing in every season, and treat or boil creek water before drinking it."
+  ],
+  "regulations": [
+    "Domestic animals are not permitted; on-the-spot fines apply.",
+    "Do not feed wildlife or leave scraps; on-the-spot fines apply.",
+    "No soaps or detergents in creeks; scatter washing water well away from waterways.",
+    "At Natural Bridge, never shine a torch directly on the glow-worms and never expose them to smoke or insect repellent. Swimming in Cave Creek and access to its banks are prohibited.",
+    "No rubbish bins are provided; take all rubbish and recyclables away with you."
+  ],
+  "themes": [
+    "theme-temperate-rainforest",
+    "theme-mountains",
+    "theme-volcanoes",
+    "theme-caves",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Natural Bridge, Springbrook National Park, Queensland (49756418651).jpg",
+      "caption": "The waterfall through Natural Bridge",
+      "altText": "A waterfall falling through a hole in the roof of a dark rock cave into a still blue pool"
+    },
+    {
+      "file": "File:PurlingBrookFallsSpringbrook.jpg",
+      "caption": "Purling Brook Falls",
+      "altText": "A waterfall dropping beside a tall orange cliff into a forested gorge"
+    },
+    {
+      "file": "File:Best Of All Lookout Springbrook National Park.JPG",
+      "caption": "The view from Best of All Lookout",
+      "altText": "Forested ridges and cliffs falling away to a wide valley and distant plains under a pale sky"
+    },
+    {
+      "file": "File:Glow worms at natural arch.jpg",
+      "caption": "Glow-worms at Natural Bridge",
+      "altText": "Clusters of tiny blue-green points of light against complete darkness"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Springbrook National Park — Queensland Parks and Wildlife Service",
+      "url": "https://parks.qld.gov.au/parks/springbrook"
+    },
+    {
+      "title": "About Springbrook — QPWS",
+      "url": "https://parks.qld.gov.au/parks/springbrook/about"
+    },
+    {
+      "title": "Nature, culture and history — Springbrook National Park, QPWS",
+      "url": "https://parks.qld.gov.au/parks/springbrook/about/culture"
+    },
+    {
+      "title": "Visiting Springbrook safely — QPWS",
+      "url": "https://parks.qld.gov.au/parks/springbrook/visiting-safely"
+    },
+    {
+      "title": "Springbrook journeys — QPWS",
+      "url": "https://parks.qld.gov.au/parks/springbrook/journeys"
+    },
+    {
+      "title": "Camping in Springbrook — QPWS",
+      "url": "https://parks.qld.gov.au/parks/springbrook/camping"
+    },
+    {
+      "title": "Camping bookings and fees — QPWS",
+      "url": "https://parks.qld.gov.au/camping/bookings"
+    },
+    {
+      "title": "Permits and fees — QPWS",
+      "url": "https://parks.qld.gov.au/before-you-visit/permits-and-fees"
+    },
+    {
+      "title": "Important security update – Queensland National Parks Booking Service (current at 14 November 2026)",
+      "url": "https://parks.qld.gov.au/contactus/important-security-update"
+    },
+    {
+      "title": "Gondwana Rainforests of Australia World Heritage Area (Queensland Section) — Queensland Government",
+      "url": "https://environment.qld.gov.au/management/world-heritage-areas/current/gondwana-rainforests"
+    },
+    {
+      "title": "Gondwana Rainforests of Australia — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/368/"
+    },
+    {
+      "title": "Springbrook National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Springbrook_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

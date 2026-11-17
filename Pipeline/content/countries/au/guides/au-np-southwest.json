@@ -1,0 +1,315 @@
+{
+  "placeID": "au-np-southwest",
+  "contentVersion": 1,
+  "summary": "Tasmania's largest reserve: jagged quartzite ranges, buttongrass plains, rainforest, tannin-dark harbours and a wild southern coast. Two roads reach its edges, past the hydro lakes Pedder and Gordon in the north and to Cockle Creek in the south-east. The rest belongs to walkers on routes such as the South Coast Track, and to visitors who fly in to the tiny settlement of Melaleuca.",
+  "facts": {
+    "establishedYear": 1968,
+    "areaHectares": 641314,
+    "bestSeasons": [
+      "summer",
+      "autumn"
+    ],
+    "suggestedTime": "One day to two weeks"
+  },
+  "story": [
+    "The south-west is a land of ancient Precambrian quartzite ranges, among them the jagged Frankland and Arthur ranges, which PWS points to as an outstanding example of ongoing geological processes, one of the reasons for World Heritage listing. Between the ranges spread buttongrass plains; in the valleys grow Huon pine, celery-top pine, sassafras and myrtle; on the coast, swells from the Southern Ocean roll onto windswept beaches. In Bathurst Channel, a layer of dark, tannin-stained fresh water lying over the sea blocks the light, so marine species usually found in deep water live in the shallows.",
+    "South-west Tasmania is an Aboriginal cultural landscape. Middens, artefact scatters, hut depressions and rock shelters link it to people who have lived, hunted, traded and walked here for more than 35,000 years, living on shellfish, crayfish, seabirds, eggs, game, seals and plants. The South Coast Track may follow ancient travelling and trading routes. Cockle Creek is the homeland of the Lyluequonny people, and at Melaleuca the Needwonnee Walk shares the stories of the Needwonnee people through sculptures made from natural materials.",
+    "Bruni D'Entrecasteaux's French expedition sailed into Recherche Bay in 1792. Whalers, coal miners, sawmillers and Huon pine cutters followed, and from the 1870s people began exploring the south-west for its own sake. In the 1930s the King family began tin mining at Melaleuca; Deny King, miner, bushman, naturalist and artist, lived there from 1936 until his death in 1991, and the Kings warmly welcomed bushwalkers. Melaleuca is now the only place in the world where the critically endangered orange-bellied parrot breeds.",
+    "Several reserves were combined in 1968 to create Southwest National Park. In 1972 the original Lake Pedder was flooded for the Middle Gordon hydro-electric scheme, against bitter opposition, and the roads into the park date from that scheme; four years later the park was extended to include the new lake. In 1982 the park, with neighbouring reserves, was inscribed on the World Heritage List as the Tasmanian Wilderness."
+  ],
+  "howItWorks": [
+    "Southwest National Park is managed by the Tasmania Parks and Wildlife Service (PWS), and a valid parks pass is needed for entry; children under five are free. A Holiday Pass, valid for up to two months in all Tasmanian national parks, suits most trips. For the northern entrance via Maydena the contact is the Mount Field Visitor Centre; for Cockle Creek it is the PWS office in Huonville. PWS reviews its fees each year in line with CPI, so check before you go.",
+    "Overnight walkers must register with PWS before setting out on the Mount Anne Circuit, the Western Arthur Range Traverse and the Eastern Arthur Range Traverse, including the Farmhouse Creek Track. Departures are capped to protect fragile alpine vegetation: 12 independent walkers a day on the Western Arthurs, with groups of no more than eight, and six a day on the Eastern Arthurs. Every walker should also sign the log books at the trailheads, including on the South Coast Track. All walkers must carry a quality 3–4 season tent.",
+    "The park is a Fuel Stove Only Area: campfires and fire pots are not permitted, including on the South Coast Track, and fuel is restricted on flights to Melaleuca, so check with the airline when you book. Follow the Leave No Trace principles, and clean boots and gear to keep root rot (Phytophthora) and other diseases out. Dogs are not allowed in the national park. There is no fuel beyond Maydena in the north or Southport in the south. Rainwater from campground tanks is untreated, and PWS advises boiling it."
+  ],
+  "sights": [
+    {
+      "name": "South Cape Bay",
+      "note": "A 15.4-kilometre, four-hour return walk from Cockle Creek, at the end of Australia's southernmost road, to a cliff and a wild cobble beach on the Southern Ocean.",
+      "location": [
+        -43.62122,
+        146.79411
+      ]
+    },
+    {
+      "name": "Melaleuca",
+      "note": "Remote former tin-mining settlement reached by light plane, boat or on foot: airstrip, walkers' huts, the Deny King Heritage Museum, a bird hide and the 1.2-kilometre Needwonnee Walk.",
+      "location": [
+        -43.42,
+        146.164
+      ]
+    },
+    {
+      "name": "Bathurst Harbour",
+      "note": "Part of the Port Davey–Bathurst Harbour waterway, where tannin-dark surface water lets deep-sea species live in the shallows. Explored on guided tours and by experienced sea kayakers.",
+      "location": [
+        -43.33943,
+        146.18131
+      ]
+    },
+    {
+      "name": "Lake Pedder",
+      "note": "The hydro lake that flooded the original Lake Pedder in 1972, beside the Scotts Peak and Gordon River roads. Open to trout fishing all year, from shore or boat.",
+      "location": [
+        -42.90309,
+        146.08799
+      ]
+    },
+    {
+      "name": "Lake Judd",
+      "note": "A deep ice-carved lake under precipitous mountains, on a 16-kilometre, eight-hour return day walk across wet buttongrass plains below Schnells Ridge.",
+      "location": [
+        -42.97568,
+        146.4235
+      ]
+    },
+    {
+      "name": "Mount Anne",
+      "note": "At 1,423 metres the highest peak in the park, white quartzite capped with dolerite. Its three- to five-day circuit is Grade 5, among Tasmania's most demanding; registration required.",
+      "location": [
+        -42.9428,
+        146.42404
+      ]
+    },
+    {
+      "name": "Lake Oberon",
+      "note": "A lake high on the Western Arthur Range, three to four days return; the full 58-kilometre traverse takes five to seven days over exposed quartzite. Registration required.",
+      "location": [
+        -43.14863,
+        146.27146
+      ]
+    },
+    {
+      "name": "Federation Peak",
+      "note": "A 1,225-metre quartzite spire on the Eastern Arthur Range. Its summit route needs technical climbing and a fall is likely to be fatal; many walkers bypass it.",
+      "location": [
+        -43.27142,
+        146.47578
+      ]
+    },
+    {
+      "name": "Creepy Crawly Nature Trail",
+      "note": "A fully boarded 1-kilometre, 30-minute return walk through cool temperate rainforest and its small inhabitants, a gentle introduction to the park.",
+      "location": [
+        -42.83189,
+        146.3842
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Via Maydena on the B61 (Gordon River Road) to Strathgordon, and Scotts Peak Road to the Huon Campground, in the north",
+      "Cockle Creek, at the end of the C636, the southernmost road in Australia, in the south-east",
+      "Melaleuca, by light plane from Cambridge near Hobart or by private boat"
+    ],
+    "reservations": "Register before walking the Mount Anne Circuit, the Western Arthur Range or the Eastern Arthurs; daily departures are capped. Flights to Melaleuca and summer buses to and from Cockle Creek must be booked with the operators. Check with PWS before you go.",
+    "permits": [
+      "A valid Tasmanian parks pass",
+      "Overnight walker registration for the Mount Anne Circuit, Western Arthur Range and Eastern Arthur Range"
+    ],
+    "camping": [
+      "Huon and Teds Beach campgrounds on the northern roads; Edgar campground is closed for Hydro Tasmania works",
+      "Camping at Cockle Creek, at the park's south-eastern edge",
+      "A small campsite at Melaleuca, and platform or bush campsites on the multi-day walks"
+    ],
+    "lodging": [
+      "Two walkers' huts at Melaleuca, sleeping 20; there are no huts on the South Coast Track beyond it",
+      "Mount Field National Park, on the way to Maydena, has the most developed campground near the northern access, with powered sites and showers"
+    ],
+    "seasonalClosures": [
+      "Edgar Dam boat ramp and campground are closed for Hydro Tasmania works expected to run until late 2026 — check with PWS before you go",
+      "West Picton Road is closed at Cook Creek, adding 6.1 kilometres each way to the Eastern Arthur Range walk",
+      "Spring planned burns, August to November, can close tracks"
+    ]
+  },
+  "weather": "The south-west is subject to extreme and rapidly changing weather: wild winds, heavy rain, sleet, snow and bright sunshine, often all in one day, and snow can fall in any month on the ranges. It is also very wet. The Bureau of Meteorology's long-term averages at Scotts Peak Dam, 408 metres up beside Lake Pedder, give about 1,880 millimetres of rain a year on some 190 days, with January afternoons averaging 21.5°C and July afternoons 9.4°C. Strathgordon, to the north, averaged about 2,500 millimetres on over 200 days. Summer brings the longest days and the most reliable walking, and the orange-bellied parrots are at Melaleuca from mid-October to late March. Both the Gordon River and Scotts Peak roads are subject to snow and ice.",
+  "directions": "For the north of the park, take the B61 west from Mount Field through Maydena; allow an hour to an hour and a half from Maydena to reach Strathgordon or the Huon Campground. The Gordon River Road is sealed but steep and winding; the Scotts Peak Road is gravel and can be rough. For the south, drive about two hours from Hobart through Geeveston on the A6, then the C635 past the Hastings Caves turn-off and the C636 to Cockle Creek; the last stretch is rough but passable in a two-wheel-drive car. In the peak summer season buses run between Hobart and Cockle Creek and must be booked. Par Avion flies to Melaleuca from Cambridge, 15 minutes east of Hobart.",
+  "fees": [
+    {
+      "title": "Holiday Pass, all Tasmanian national parks",
+      "cost": "$98.35",
+      "amount": 98.35,
+      "currencyCode": "AUD",
+      "detail": "Per vehicle of up to eight people for up to two months, or $49.20 per person travelling by bus, bicycle or on foot. As listed by PWS in November 2026; reviewed each year by CPI."
+    },
+    {
+      "title": "Daily Pass, per vehicle",
+      "cost": "$49.15",
+      "amount": 49.15,
+      "currencyCode": "AUD",
+      "detail": "Up to 24 hours, for a vehicle of up to eight people; $24.55 per person by bus, bicycle or on foot. Children under five free."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "More than 35,000 years ago",
+      "text": "Aboriginal people are living in the south-west, leaving middens, rock shelters and hut depressions."
+    },
+    {
+      "year": "1792",
+      "text": "Bruni D'Entrecasteaux's expedition sails into Recherche Bay, the first Europeans recorded here."
+    },
+    {
+      "year": "1830s",
+      "text": "Recherche Bay becomes a centre for whaling, coal mining and sawmilling; piners cut Huon pine around Port Davey."
+    },
+    {
+      "year": "1936",
+      "text": "Deny King makes Melaleuca his home, where his family has begun tin mining."
+    },
+    {
+      "year": "1968",
+      "text": "Several reserves are combined to create Southwest National Park."
+    },
+    {
+      "year": "1972",
+      "text": "Lake Pedder is flooded for hydro-electric power, against bitter opposition."
+    },
+    {
+      "year": "1976",
+      "text": "The park is extended to include the new Lake Pedder."
+    },
+    {
+      "year": "1982",
+      "text": "The park and other reserves are inscribed on the World Heritage List as the Tasmanian Wilderness."
+    },
+    {
+      "year": "1991",
+      "text": "Deny King dies; his story is told in the heritage museum at Melaleuca."
+    }
+  ],
+  "safety": [
+    "Many walks here are Grade 5, among the most difficult in Tasmania, with exposed scrambles, pack hauling and sheer drops; the Mount Anne Circuit and the south face of Federation Peak have both seen deaths. Choose a walk within your experience.",
+    "The South Coast Track is much harder than the Overland Track: 85 kilometres, six to eight days, mud, river crossings and a lagoon outlet you cross by rowing a dinghy. Be completely self-sufficient.",
+    "Carry a map and compass as well as any device, and a personal locator beacon; mobile phone coverage cannot be relied on, and rescue may take a long time or not be possible.",
+    "Deaths have occurred when walkers were caught unprepared in cold, wet and windy weather. Carry full waterproofs, warm layers and a 3–4 season tent.",
+    "On Lake Gordon, submerged timber is a serious boating hazard, and both big lakes can turn rough with little warning."
+  ],
+  "regulations": [
+    "Fuel Stove Only Area: campfires and fire pots are not permitted.",
+    "Register before walking the Mount Anne Circuit and the Western and Eastern Arthur ranges, and keep to the daily limits.",
+    "Dogs are not allowed in the national park; recreational drones are not permitted in Tasmanian national parks.",
+    "Clean all fishing and boating gear before use to stop the spread of didymo and other diseases.",
+    "Walk the Mount Anne Circuit in one direction from Condominium Creek, and do not go beyond Lake Judd on the day walk."
+  ],
+  "themes": [
+    "theme-mountains",
+    "theme-alpine",
+    "theme-coastal",
+    "theme-temperate-rainforest",
+    "theme-indigenous-heritage",
+    "theme-conservation-movement"
+  ],
+  "photos": [
+    {
+      "file": "File:Lake Pedder From Mt Eliza.jpg",
+      "caption": "Lake Pedder from Mount Eliza",
+      "altText": "A wide panorama of a large lake among buttongrass plains and distant mountain ranges"
+    },
+    {
+      "file": "File:South Cape Bay.jpg",
+      "caption": "South Cape Bay, at the eastern end of the South Coast Track",
+      "altText": "A curving beach and rocky headland on a wild southern coastline"
+    },
+    {
+      "file": "File:FederationPeak.jpg",
+      "caption": "Federation Peak on the Eastern Arthur Range, seen from a distance",
+      "altText": "A steep, pointed rock spire rising above distant ridges"
+    },
+    {
+      "file": "File:Granite Beach in Tasmania.jpg",
+      "caption": "Granite Beach on the South Coast Track",
+      "altText": "A long beach of rounded boulders below forested hills"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Southwest National Park — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Southwest-National-Park.aspx"
+    },
+    {
+      "title": "South Coast Track — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/South-Coast-Track.aspx"
+    },
+    {
+      "title": "Melaleuca — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Melaleuca.aspx"
+    },
+    {
+      "title": "Cockle Creek — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Cockle-Creek.aspx"
+    },
+    {
+      "title": "South Cape Bay — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/South-Cape-Bay.aspx"
+    },
+    {
+      "title": "Lake Judd — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Lake-Judd.aspx"
+    },
+    {
+      "title": "Mount Anne Circuit — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Mount-Anne-Circuit.aspx"
+    },
+    {
+      "title": "Western Arthur Range Traverse — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Western-Arthur-Range.aspx"
+    },
+    {
+      "title": "Eastern Arthur Range Traverse and Federation Peak — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Eastern-Arthur-Range-Traverse.aspx"
+    },
+    {
+      "title": "Creepy Crawly Nature Trail — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Creepy-Crawly-Nature-Trail.aspx"
+    },
+    {
+      "title": "Tasmanian Wilderness World Heritage Area — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)"
+    },
+    {
+      "title": "Park passes and entry fees — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/entry-fees.aspx"
+    },
+    {
+      "title": "Overnight walker registration — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Overnight-walker-registration.aspx"
+    },
+    {
+      "title": "Fuel Stove Only Areas — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Fuel-Stove-Only-Areas.aspx"
+    },
+    {
+      "title": "Leave No Trace — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Leave-no-trace.aspx"
+    },
+    {
+      "title": "Safety in parks — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Safety-in-parks.aspx"
+    },
+    {
+      "title": "Reserve listing: national parks and reserves (2 June 2022) — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Documents/Reserve%20Listing.pdf"
+    },
+    {
+      "title": "Tasmanian Wilderness — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/181/"
+    },
+    {
+      "title": "Climate statistics: Scotts Peak Dam, 097083 — Bureau of Meteorology",
+      "url": "https://www.bom.gov.au/climate/averages/tables/cw_097083.shtml"
+    },
+    {
+      "title": "Climate statistics: Strathgordon Village, 097053 — Bureau of Meteorology",
+      "url": "https://www.bom.gov.au/climate/averages/tables/cw_097053.shtml"
+    },
+    {
+      "title": "Southwest National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Southwest_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

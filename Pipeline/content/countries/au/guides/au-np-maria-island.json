@@ -1,0 +1,296 @@
+{
+  "placeID": "au-np-maria-island",
+  "contentVersion": 1,
+  "summary": "A car-free island off Tasmania's east coast, reached by a 45-minute ferry from Triabunna. At Darlington, a World Heritage convict probation station has remained relatively unchanged since the convict era. Beyond it are the sandstone swirls of the Painted Cliffs, cliffs packed with 300-million-year-old fossils, dolerite peaks, empty white beaches and wildlife everywhere: wombats, kangaroos, Cape Barren geese and Tasmanian devils.",
+  "facts": {
+    "establishedYear": 1971,
+    "areaHectares": 11567,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "spring"
+    ],
+    "suggestedTime": "One to three days"
+  },
+  "story": [
+    "The story of Maria Island is dominated by the sea. Rising and falling seas made the island and left creatures fossilised in its cliffs: near Darlington, rock strata around 300 million years old are crowded with clams, sea fans, corals, scallops and sea lilies, one of the finest fossil deposits of its kind anywhere. On the west coast, groundwater seeping through sandstone has stained the Painted Cliffs in swirling bands, and waves and spray have worn them into honeycomb patterns. Dolerite forms the island's high points, Bishop and Clerk at 620 metres and Mount Maria at 711.",
+    "For thousands of years Aboriginal people made regular canoe crossings to the island they knew as wukaluwikiwayna. It lies in the homelands of the Oyster Bay nation, and the Tasmanian Aboriginal people of Maria Island were known as the Puthikwilayti. Today's Aboriginal community continues their connection to the island. The present name dates from 1642, when Abel Tasman sighted the island and named it after Maria van Diemen, wife of the governor of Batavia; a French expedition under Captain Baudin charted it in 1802.",
+    "By 1825 Maria was a penal settlement, soon notorious for escapes across the water, and in 1832 it was abandoned in favour of Port Arthur. From 1842 to 1850 it served as a convict probation station. Darlington is the most intact example of a probation station in Australia, its 14 convict buildings and ruins laid out much as they were, and in 2010 it was inscribed on the World Heritage List as one of the eleven Australian Convict Sites, which together tell the story of some 166,000 people transported to Australia between 1787 and 1868.",
+    "In 1884 the Italian entrepreneur Diego Bernacchi leased the island, dreaming of wine, silk, fruit and tourism, and set up a cement works using its lime-rich rock; it closed in 1930, leaving farmers and fishers. In the early 1960s moves began to make the island a fauna reserve, and Cape Barren geese, forester kangaroos and Flinders Island wombats were brought in. Maria Island became a national park in 1971. With devil numbers falling across Tasmania from Devil Facial Tumour Disease, the park was chosen for captive breeding, and in 2012 fifteen Tasmanian devils were introduced."
+  ],
+  "howItWorks": [
+    "Maria Island is managed by the Tasmania Parks and Wildlife Service (PWS), and a valid parks pass is required, including for visitors who arrive by their own boat or plane; most visitors come on foot from the ferry, so the per-person Daily or Holiday Pass applies. Passes, camping fees and Penitentiary fees can be paid online or at the Maria Island Gateway in Triabunna. The ferry from Triabunna is run by Encounter Maria Island, and PWS says booking it is essential; private pilots need written authority to land at the Darlington airstrip, which takes at least 14 days.",
+    "There are no vehicles, shops or cafés on the island. Bring all your food, a refillable water bottle and warm, waterproof clothing; island water is not drinkable without treatment (purification tablets or boiling for a minute), and there is no rubbish collection, so take everything back with you. You can bring a bike on the ferry for a fee or hire one on the island, where supply is limited. Keep at least 2 metres from all wildlife, however friendly it seems, and do not feed it.",
+    "On Maria Island campfires are allowed only in designated fireplaces at the campgrounds and never during seasonal fire bans; one has been in force across Glamorgan-Spring Bay, including Maria Island, since 26 October 2026. Carry a fuel stove, since restrictions change. Smoking is not permitted in the accommodation precincts. Construction work on water, wastewater and power at Darlington runs until about November 2026, and the Darlington showers are closed."
+  ],
+  "sights": [
+    {
+      "name": "Darlington Probation Station",
+      "note": "World Heritage convict station and township: 14 convict buildings and ruins, the Penitentiary, the Coffee Palace museum and a self-guided walk of half an hour to two hours.",
+      "location": [
+        -42.58155,
+        148.0652
+      ]
+    },
+    {
+      "name": "Painted Cliffs",
+      "note": "Sandstone stained in swirling colours, on a 4.3-kilometre return walk past Hopground Beach and the convict-built Oast House. The rock platform is safest within two hours of low tide.",
+      "location": [
+        -42.59249,
+        148.05167
+      ]
+    },
+    {
+      "name": "Fossil Cliffs",
+      "note": "Cliffs crowded with fossils laid down about 300 million years ago, on a 4.5-kilometre circuit from Darlington past the old cement-works silos.",
+      "location": [
+        -42.57272,
+        148.07866
+      ]
+    },
+    {
+      "name": "Bishop and Clerk",
+      "note": "Towering dolerite columns at 620 metres, on an 11-kilometre, four- to five-hour Grade 4 return walk with a boulder scramble and sheer, unfenced drops. Avoid in high winds.",
+      "location": [
+        -42.59037,
+        148.11442
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Mount Maria",
+      "note": "The island's highest point, 711 metres, with views south to the Tasman Peninsula. A 16-kilometre walk best done from an overnight stay rather than between ferries.",
+      "location": [
+        -42.6216,
+        148.10613
+      ],
+      "kind": "viewpoint"
+    },
+    {
+      "name": "Shoal Bay, McRaes Isthmus",
+      "note": "White sand beaches on both sides of a narrow neck of sand, Shoal Bay and Riedle Bay; best reached by staying at Frenchs Farm or Encampment Cove.",
+      "location": [
+        -42.67079,
+        148.05108
+      ]
+    },
+    {
+      "name": "Point Lesueur",
+      "note": "Ruins of the Long Point Probation Station near Encampment Cove, a 28-kilometre return walk or ride from Darlington.",
+      "location": [
+        -42.66119,
+        148.00932
+      ]
+    },
+    {
+      "name": "Commissariat Store",
+      "note": "The old store at Darlington, now the island's visitor information point, with displays on its history; tide information is on its noticeboard.",
+      "location": [
+        -42.57832,
+        148.06528
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "The passenger ferry from Triabunna to Darlington, about 45 minutes",
+      "Darlington airstrip, for private pilots with authority from PWS"
+    ],
+    "reservations": "Ferry bookings are essential; confirm both ferry and campground availability before booking. Penitentiary rooms can be booked up to six months ahead. Check with PWS and Encounter Maria Island before you go.",
+    "permits": [
+      "A valid Tasmanian parks pass, including for those arriving by private boat or plane",
+      "Written authority to land at the Darlington airstrip (apply at least 14 days ahead)"
+    ],
+    "camping": [
+      "Darlington campground, behind the dunes 500 metres south of the jetty, booked through PWS",
+      "Free campsites at Encampment Cove and Frenchs Farm"
+    ],
+    "lodging": [
+      "The Penitentiary at Darlington: nine rustic six-bunk rooms with wood heaters and a tenth room sleeping 14; no electricity"
+    ],
+    "seasonalClosures": [
+      "Campfires are banned during seasonal fire bans; a ban has applied to Maria Island since 26 October 2026",
+      "The Darlington showers are closed during infrastructure works due to finish around November 2026 — check before you go"
+    ]
+  },
+  "weather": "Maria Island is much drier and milder than Tasmania's west and highlands. At the Bureau of Meteorology's Point Lesueur station, 28 metres above the sea, rain averages only about 530 millimetres a year, spread over some 77 days. January afternoons average about 21°C and July afternoons about 13°C, with winter nights near 7°C. The weather can still turn: bring a beanie and waterproofs as well as sun protection, and expect the summits to be much cooler and windier, with unpredictable gusts on Bishop and Clerk. Whales pass the island's eastern cliffs on their annual migration.",
+  "directions": "Maria Island lies off Tasmania's east coast. Drive to Triabunna, on the Tasman Highway (A3), and check in at the Maria Island Gateway on the corner of Charles Street and Esplanade West, where you can buy park passes and supplies. The passenger ferry runs between Triabunna and Darlington and takes about 45 minutes; book ahead, and allow time to get back for the last ferry. There is no vehicle access on the island: walk or cycle from the jetty, where trolleys help with camping gear. Private pilots can land at the Darlington airstrip with authority from PWS.",
+  "fees": [
+    {
+      "title": "Daily Pass, per person",
+      "cost": "$24.55",
+      "amount": 24.55,
+      "currencyCode": "AUD",
+      "detail": "Up to 24 hours, for visitors travelling by bus, bicycle or on foot, as ferry passengers do; children under five free. Ferry fares are paid to the operator. As listed by PWS in November 2026; reviewed each year by CPI."
+    },
+    {
+      "title": "Darlington campground",
+      "cost": "$18",
+      "amount": 18,
+      "currencyCode": "AUD",
+      "detail": "Per site per night, up to six people. Campsites at Encampment Cove and Frenchs Farm are free."
+    },
+    {
+      "title": "Penitentiary room, six berths",
+      "cost": "$95",
+      "amount": 95,
+      "currencyCode": "AUD",
+      "detail": "Per room per night, rooms 1–9; the 14-berth room 10 is $150. Book online or through the Sheffield Visitor Information Centre."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Thousands of years ago",
+      "text": "Aboriginal people make regular canoe crossings to wukaluwikiwayna."
+    },
+    {
+      "year": "1642",
+      "text": "Abel Tasman sights the island and names it after Maria van Diemen."
+    },
+    {
+      "year": "1802",
+      "text": "A French expedition led by Captain Baudin explores and charts the island."
+    },
+    {
+      "year": "1825",
+      "text": "Maria Island becomes a penal settlement; it is abandoned for Port Arthur in 1832."
+    },
+    {
+      "year": "1842",
+      "text": "A convict probation station opens at Darlington; it is abandoned by 1850."
+    },
+    {
+      "year": "1884",
+      "text": "Diego Bernacchi leases the island and sets up a cement works, which closes in 1930."
+    },
+    {
+      "year": "1971",
+      "text": "Maria Island is declared a national park, after fauna reserve moves in the 1960s."
+    },
+    {
+      "year": "2010",
+      "text": "Darlington Probation Station is inscribed on the World Heritage List as part of the Australian Convict Sites."
+    },
+    {
+      "year": "2012",
+      "text": "Fifteen Tasmanian devils are introduced to the island for captive breeding."
+    }
+  ],
+  "safety": [
+    "The Painted Cliffs rock platform is a substantial hazard area: go only within two hours of low tide and in calm seas, and expect slippery, uneven rock. There is no access from the clifftop.",
+    "Bishop and Clerk has high unfenced cliffs, steep boulders and an exposed summit with unpredictable gusts; do not attempt the final scramble in high winds.",
+    "Walk and ride times exclude stops: allow extra time to get back for the ferry, or to reach camp before dark.",
+    "Treat all water before drinking, and carry a full bottle; supplies at Darlington are limited.",
+    "Carry a first-aid kit and a mobile phone, and check the weather forecast before you cross."
+  ],
+  "regulations": [
+    "Campfires only in designated fireplaces at the campgrounds, and never during a fire ban; never leave a campfire unattended.",
+    "Keep at least 2 metres from all wildlife, and do not feed it.",
+    "Take all rubbish off the island; there is no rubbish collection.",
+    "No smoking in the accommodation precincts.",
+    "Dogs are not allowed in Tasmanian national parks; assistance animals other than guide dogs need an authority from PWS."
+  ],
+  "themes": [
+    "theme-islands",
+    "theme-coastal",
+    "theme-fossils",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:PaintedCliffsMariaIsland.jpg",
+      "caption": "The Painted Cliffs on Maria Island's west coast",
+      "altText": "Sandstone rock along the shore, banded and swirled in orange and cream"
+    },
+    {
+      "file": "File:Commissariat Store 1825.jpg",
+      "caption": "The Commissariat Store at Darlington",
+      "altText": "A colonial-era building standing on open ground"
+    },
+    {
+      "file": "File:Bishop and Clerk in Maria Island National Park.jpg",
+      "caption": "Fossil-bearing cliffs below the peaks of Bishop and Clerk",
+      "altText": "Layered coastal cliffs with a rocky peak rising behind"
+    },
+    {
+      "file": "File:Maria Island from the top of Bishop and Clerk.jpg",
+      "caption": "Looking south over Maria Island from Bishop and Clerk",
+      "altText": "A view from a high rocky summit over forest, coastline and sea"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Maria Island National Park — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/maria-island-national-park"
+    },
+    {
+      "title": "Maria Island history — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Maria-Island-History.aspx"
+    },
+    {
+      "title": "Painted Cliffs — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Painted-Cliffs.aspx"
+    },
+    {
+      "title": "Fossil Cliffs — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Fossil-Cliffs.aspx"
+    },
+    {
+      "title": "Bishop and Clerk — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Bishop-and-Clerk.aspx"
+    },
+    {
+      "title": "Mount Maria walk — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Mount-Maria-Walk.aspx"
+    },
+    {
+      "title": "McRaes Isthmus — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/McRaes-Isthmus.aspx"
+    },
+    {
+      "title": "Darlington Township Walk — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Darlington-Township-Walk.aspx"
+    },
+    {
+      "title": "Maria Island camping: Darlington — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Maria-Island-Darlington-Campground.aspx"
+    },
+    {
+      "title": "Maria Island Penitentiary accommodation — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Maria-Island-Penitentiary-Accommodation.aspx"
+    },
+    {
+      "title": "Park passes and entry fees — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/entry-fees.aspx"
+    },
+    {
+      "title": "Leave No Trace — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Leave-no-trace.aspx"
+    },
+    {
+      "title": "Dogs in parks — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Dogs-in-parks.aspx"
+    },
+    {
+      "title": "Reserve listing: national parks and reserves (2 June 2022) — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Documents/Reserve%20Listing.pdf"
+    },
+    {
+      "title": "Australian Convict Sites — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1306/"
+    },
+    {
+      "title": "Climate statistics: Maria Island (Point Lesueur), 092124 — Bureau of Meteorology",
+      "url": "https://www.bom.gov.au/climate/averages/tables/cw_092124.shtml"
+    },
+    {
+      "title": "Maria Island — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maria_Island"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "placeID": "au-np-hinchinbrook-island",
+  "contentVersion": 1,
+  "summary": "A mountainous island of jagged granite peaks, mangrove channels and empty beaches off Cardwell, protected since 1932 and part of the Great Barrier Reef World Heritage Area. Its Traditional Owners, the Bandjin and Girramay people, call the landscape Munamudanamy. Most visitors come to walk the Thorsborne Trail, 32 kilometres down the wild east coast, on one of a few permits issued each day.",
+  "facts": {
+    "establishedYear": 1932,
+    "areaHectares": 39900,
+    "bestSeasons": [
+      "autumn",
+      "winter"
+    ],
+    "suggestedTime": "Three to five days"
+  },
+  "story": [
+    "Hinchinbrook is a continental island, a mountain range cut off as the sea rose. A mountainous spine runs down the island — Mount Bowen at 1,142 metres, then Diamantina, Straloch, Pitt, Burnett and Barra Castle — its main mass of granite weathered into jagged peaks, with silicic volcanic rock in the north-west. The narrow Hinchinbrook Channel that separates it from the mainland is the flooded valley of the Herbert River. On the east coast, rocky headlands enclose sweeping bays, and at Ramsay Bay sand dunes rise to 60 metres.",
+    "The island lies in the wet tropics, and about 30 plant communities and some 700 plant species have been recorded. Most of the mountains carry open forest and low heath on shallow soil, with rainforest at both low and high altitudes. The mangroves lining Missionary Bay and the channel are among the largest on the continent, with 31 species, and a breeding ground for marine life. Comesperma praecelsum grows nowhere else. Dugong and green turtles graze the seagrass, and estuarine crocodiles, beach stone-curlews and pied imperial-pigeons live here.",
+    "The Bandjin and Girramay people are the Traditional Owners. Munamudanamy, the ancient Biyay name for the landscape Europeans called Hinchinbrook, is not one name for one island but a collective name for a journey through sea, mangroves, rivers, swamps, forests and mountains, each with its own names and stories. The European name honours the estate of the Earl of Sandwich, Captain Cook's sponsor. The Bandjin and Girramay work with QPWS on managing the island, and QPWS rangers also work with the Girringun Rangers.",
+    "Few post-contact sites survive. On 18 December 1942 a new American B-24 Liberator, the 'Texas Terror', flying from Amberley to Iron Range, crashed on Mount Straloch in a violent storm, killing all 12 on board. Cyclone Yasi in February 2011 shifted enough sand in Ramsay Bay to uncover the brigantine Belle, lost while salvaging cedar from another wreck. The trail along the east coast is named after the naturalists Margaret and Arthur Thorsborne."
+  ],
+  "howItWorks": [
+    "Hinchinbrook Island National Park is managed by the Queensland Parks and Wildlife Service for self-reliant, nature-based recreation, with the Bandjin and Girramay Traditional Owners closely involved. There is no entry fee, but there are no roads, shops or bridges either: you reach the island by private boat from Cardwell or Lucinda or with a permitted commercial operator, and you camp with a permit. Boat-based camping areas are open all year; a boat-based camping permit does not allow you to walk the Thorsborne Trail.",
+    "The Thorsborne Trail has its own booking system and a strict limit: 12 independent hiking permits to start the trail each day. The trail closes every year from 1 January to the end of February. For 2027 the season runs from 1 March to 31 December, permits for the whole season were scheduled for release at 10am Queensland time on 15 December 2026, and refunds will need cancellation more than 14 days before the start. Your permit dates must match your hike, and the two transfer operators may drop hikers only at the northern and southern trailheads.",
+    "In November 2026 the Queensland National Parks Booking Service was switched off after a data breach at its provider, Bookeasy; QPWS said visitors could camp without a permit while temporary arrangements lasted and that existing bookings stayed valid. Check the QPWS website and the Thorsborne Trail park alerts before you plan: the permit release depends on the booking system being back. Flights below 500 feet over the island are not permitted, and drones are banned in camping areas."
+  ],
+  "sights": [
+    {
+      "name": "Thorsborne Trail",
+      "note": "A 32-kilometre one-way walk down the east coast from Ramsay Bay to George Point, through rainforest, swamps, mangroves, beaches and heath, taking three to five days. Twelve independent permits start each day.",
+      "location": [
+        -18.31115,
+        146.27203
+      ]
+    },
+    {
+      "name": "Little Ramsay Bay",
+      "note": "A bay and trail camping area on the Thorsborne Trail, with the granite peaks of Mount Bowen rising behind.",
+      "location": [
+        -18.34912,
+        146.30826
+      ]
+    },
+    {
+      "name": "Zoe Falls",
+      "note": "A waterfall by Zoe Bay on the Thorsborne Trail, with views from the top of the falls.",
+      "location": [
+        -18.40898,
+        146.32203
+      ]
+    },
+    {
+      "name": "Mount Bowen",
+      "note": "The island's highest peak, 1,142 metres, a granite mass weathered into jagged spires. The mountain areas are rugged and fragile, and going there needs permission.",
+      "location": [
+        -18.35699,
+        146.26634
+      ]
+    },
+    {
+      "name": "Missionary Bay",
+      "note": "The north-west bay lined by some of Australia's richest mangrove forests. The Aboriginal cultural site Muhr Amalee on its west side is a restricted access area.",
+      "location": [
+        -18.24379,
+        146.1994
+      ]
+    },
+    {
+      "name": "Macushla",
+      "note": "Day-use areas at North and South Macushla near the island's northern tip, and a boat-based camping area at South Macushla behind a crocodile barrier.",
+      "location": [
+        -18.2274,
+        146.21969
+      ]
+    },
+    {
+      "name": "The Haven",
+      "note": "A boat-based camping and day-use area on the island's west coast. Stay behind the temporary crocodile barriers at all times.",
+      "location": [
+        -18.28512,
+        146.10253
+      ]
+    },
+    {
+      "name": "George Point",
+      "note": "The southern end of the Thorsborne Trail. Its toilet and sign were removed in 2024 because of erosion.",
+      "location": [
+        -18.48418,
+        146.32684
+      ]
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "By boat from Cardwell, 8 kilometres across the Hinchinbrook Channel, or from Lucinda (Dungeness) in the south",
+      "Thorsborne Trail: northern trailhead at Ramsay Bay, southern at George Point, served by two commercial transfer operators"
+    ],
+    "reservations": "Thorsborne Trail permits are booked through a separate system and sell out: 12 independent permits start each day. The 2027 season (1 March to 31 December) was due for release on 15 December 2026. Boat-based camping also needs a permit. In November 2026 the QPWS booking system was offline after a data breach — check the QPWS website before you go.",
+    "permits": [
+      "Thorsborne Trail hiking permit — 12 independent permits a day, season 1 March to 31 December",
+      "Boat-based camping permit (does not cover the Thorsborne Trail)",
+      "Permission is needed to enter the mountain areas; Muhr Amalee is a restricted access area",
+      "Educational and military groups apply to QPWS directly"
+    ],
+    "camping": [
+      "Seven camping areas along the Thorsborne Trail",
+      "Boat-based camping at Agnes Beach (April to September only, for nesting beach stone-curlews), Banksia Bay, Banshee Bay, Mulligan Bay, The Haven, South Macushla and others"
+    ],
+    "lodging": [
+      "Accommodation in Cardwell and Lucinda on the mainland"
+    ],
+    "seasonalClosures": [
+      "The Thorsborne Trail closes every year from 1 January to the end of February",
+      "Agnes Beach camping is permitted only from April to September",
+      "Sections may close for planned burns or severe weather — check park alerts"
+    ],
+    "seasonalClosureMonths": [
+      1,
+      2
+    ]
+  },
+  "weather": "Hinchinbrook has a mild subtropical climate in name, but daytime heat and humidity can be high in any month and nights can be very cool. April to September is the best time to visit. From October to March conditions on the Thorsborne Trail are extremely hot and humid, freshwater sources often dry up between October and December, and once the wet season begins, usually in December, heavy rain makes creeks rise fast and crossings dangerous. That is why the trail closes in January and February. Pack for all extremes.",
+  "directions": "Hinchinbrook Island lies 8 kilometres off Cardwell, about 171 kilometres north of Townsville and 203 kilometres south of Cairns; Lucinda, at its southern end, is about 140 kilometres north of Townsville. There is no bridge or public ferry to the park itself: launch a private boat from Cardwell or Lucinda (Dungeness), checking tides, weather and the transit lanes and speed limits that protect dugong and turtles, or travel with a permitted tour or transfer operator. Services vary with weather, tides and season, so book transfers as soon as your permit is confirmed.",
+  "fees": [
+    {
+      "title": "Camping permit, Hinchinbrook Island",
+      "cost": "$7.75 per person per night",
+      "amount": 7.75,
+      "currencyCode": "AUD",
+      "detail": "Queensland's standard rate from 1 July 2026, or $31.00 per family per night; children under five camp free. Transfer fares are paid to the operators. Booking was temporarily unavailable after the November 2026 data breach — check before you go."
+    },
+    {
+      "title": "Park entry",
+      "cost": "Free",
+      "amount": 0,
+      "currencyCode": "AUD",
+      "detail": "QPWS charges no entry fee."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "1932",
+      "text": "Hinchinbrook Island is protected as a national park."
+    },
+    {
+      "year": "1942",
+      "text": "On 18 December a United States B-24 Liberator crashes on Mount Straloch in a storm, killing all 12 on board."
+    },
+    {
+      "year": "1981",
+      "text": "The Great Barrier Reef, including the island and its channel, is inscribed on the World Heritage List."
+    },
+    {
+      "year": "2011",
+      "text": "Cyclone Yasi in February uncovers the wreck of the brigantine Belle in Ramsay Bay."
+    },
+    {
+      "year": "2026",
+      "text": "QPWS announces 12 daily Thorsborne Trail permits and a stricter refund policy for the 2027 season."
+    }
+  ],
+  "safety": [
+    "Estuarine crocodiles can turn up anywhere, including tidal creeks and beaches, and attacks can be fatal. Be crocwise, and check the QWildlife app for recent sightings.",
+    "Dangerous stinging jellyfish may be in the sea; take care when swimming.",
+    "Heat exhaustion is a real risk: rest often, avoid the midday sun and drink plenty of water. Creek beds and rock are slippery.",
+    "Carry a satellite phone or personal locator beacon; mobile coverage is unreliable. Leave your plans with someone responsible.",
+    "Giant white-tailed rats and melomys raid packs and food: use the pack racks and keep food covered and off the ground."
+  ],
+  "regulations": [
+    "Lighting fires is prohibited and on-the-spot fines apply; bring a fuel stove.",
+    "Domestic animals are not permitted in the park or on its beaches, rocks, mangroves and dunes; on-the-spot fines apply.",
+    "No flights below 500 feet over the island, and no drones in camping areas.",
+    "Do not feed animals, including fish. Go slowly over seagrass beds where dugong feed.",
+    "Bury human waste 15 centimetres deep and 100 metres from water, tracks and camps where there are no toilets, and carry out all rubbish and sanitary items."
+  ],
+  "themes": [
+    "theme-islands",
+    "theme-mountains",
+    "theme-coastal",
+    "theme-wetland",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Little Ramsay Bay and Mt. Bowen in Hinchinbrook island (3807991040).jpg",
+      "caption": "Little Ramsay Bay below Mount Bowen",
+      "altText": "Red granite rocks and a sandy beach beneath jagged forested mountains under a blue sky"
+    },
+    {
+      "file": "File:Zoe Falls on Hinchinbrook Island.JPG",
+      "caption": "Zoe Falls",
+      "altText": "A broad waterfall pouring over dark granite into a deep pool fringed with forest"
+    },
+    {
+      "file": "File:CSIRO ScienceImage 4528 Hinchinbrook Island channel and mangroves as seen from lookout near Cardwell QLD.jpg",
+      "caption": "Mangroves in the Hinchinbrook Channel, with the island's peaks behind",
+      "altText": "Green mangrove islands and blue channels in front of high forested mountains"
+    },
+    {
+      "file": "File:Boulder Bay. Hinchinbrook island (3780939224).jpg",
+      "caption": "Boulder Bay on the east coast",
+      "altText": "A curving bay of blue water edged by boulders and forested hills"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hinchinbrook Island National Park — Queensland Parks and Wildlife Service",
+      "url": "https://parks.qld.gov.au/parks/hinchinbrook"
+    },
+    {
+      "title": "About Hinchinbrook Island — QPWS",
+      "url": "https://parks.qld.gov.au/parks/hinchinbrook/about"
+    },
+    {
+      "title": "Nature, culture and history — Hinchinbrook Island National Park, QPWS",
+      "url": "https://parks.qld.gov.au/parks/hinchinbrook/about/culture"
+    },
+    {
+      "title": "Visiting Hinchinbrook Island safely — QPWS",
+      "url": "https://parks.qld.gov.au/parks/hinchinbrook/visiting-safely"
+    },
+    {
+      "title": "Camping in Hinchinbrook Island — QPWS",
+      "url": "https://parks.qld.gov.au/parks/hinchinbrook/camping"
+    },
+    {
+      "title": "Thorsborne Trail — QPWS",
+      "url": "https://parks.qld.gov.au/parks/hinchinbrook/journeys/thorsborne-trail"
+    },
+    {
+      "title": "Park alerts: Thorsborne Trail 2027 permit release; Challenging seasonal hiking conditions — QPWS",
+      "url": "https://parks.qld.gov.au/park-alerts"
+    },
+    {
+      "title": "Camping bookings and fees — QPWS",
+      "url": "https://parks.qld.gov.au/camping/bookings"
+    },
+    {
+      "title": "Important security update – Queensland National Parks Booking Service (current at 14 November 2026)",
+      "url": "https://parks.qld.gov.au/contactus/important-security-update"
+    },
+    {
+      "title": "Thorsborne Trail 2027 permit release — QPWS park alert",
+      "url": "https://parks.qld.gov.au/park-alerts/26972"
+    },
+    {
+      "title": "Thorsborne Trail hiking seasons — QPWS",
+      "url": "https://parks.qld.gov.au/parks/hinchinbrook-thorsborne/about/thorsborne-trail-hiking-seasons"
+    },
+    {
+      "title": "Great Barrier Reef — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/154/"
+    },
+    {
+      "title": "Hinchinbrook Island — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hinchinbrook_Island"
+    },
+    {
+      "title": "OpenStreetMap (coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

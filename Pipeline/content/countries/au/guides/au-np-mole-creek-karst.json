@@ -1,0 +1,199 @@
+{
+  "placeID": "au-np-mole-creek-karst",
+  "contentVersion": 1,
+  "summary": "Tasmania's only national park created to protect karst: caves, sinkholes, gorges, streams and springs on the slopes of the Great Western Tiers, part of the Tasmanian Wilderness World Heritage Area. Two show caves are open on guided tours: Marakoopa, with underground streams, a vast Great Cathedral chamber and Australia's largest glow-worm display in a public cave, and the smaller, richly decorated King Solomons Cave.",
+  "facts": {
+    "establishedYear": 1996,
+    "areaHectares": 4652,
+    "bestSeasons": [
+      "summer",
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "suggestedTime": "Half a day"
+  },
+  "story": [
+    "The Mole Creek area sits on limestone that in places is up to two kilometres thick. Water seeping through it has dissolved some of the largest and deepest caves in Australia, along with sinkholes, gorges and springs, an internationally significant karst system. Numerous caves lie in the park; only two are open to the public, and the rest are the domain of recreational cavers, for whom Mole Creek is a mecca.",
+    "Life in the caves runs on what streams carry in. Insects and plant material washed into Marakoopa Cave feed a food web of animals adapted to total darkness; those that never leave the caves, the troglobites, have no need of eyes and find their way with long feelers. Cockerill's cave beetle, the cave harvestman Hickmanoxyomma gibbergunyar and the extremely rare cave false scorpion are found nowhere but this park. The glow-worms of Marakoopa are the larvae of a mosquito-like fly whose light comes from a chemical reaction in its body.",
+    "Historical records suggest that the Mole Creek region lay in the territory of the Northern nation of Aboriginal people. They gathered ochre from mines at Mount Vandyke and the Gog Range, Toolumbunner, travelling by well-kept tracks held open by burning; a major route ran east to west between Quamby Bluff and Mount Vandyke. Aboriginal cultural heritage in Tasmania is a living, spiritual connection for Tasmanian Aboriginal people today.",
+    "The first Europeans to find the karst were Van Diemen's Land Company surveyors seeking a rail route to the west coast in the 1830s. A paling splitter stumbled on King Solomons Cave in 1906, and by 1912 Marakoopa Cave was open to the public. In the 1920s the state's Tourism Department bought land around the cave entrances. The national park was declared in 1996 to protect some of the finest and most visited cave systems in Tasmania, and today lies within the Tasmanian Wilderness World Heritage Area."
+  ],
+  "howItWorks": [
+    "Mole Creek Karst is managed by the Tasmania Parks and Wildlife Service (PWS), and the park works a little differently from the others: you do not need a parks pass to tour the show caves, but you do need one to explore other parts of the park, such as the picnic ground and forest walks at Croesus Reserve on the Mersey. Entry to the caves is by guided tour only.",
+    "Tours run every day except Christmas Day and last 45 minutes. Group sizes are capped, so book ahead by phone up to 14 days before your visit; large groups must book. Tickets for both caves are sold at the central office at 330 Mayberry Road, about 600 metres before the Marakoopa entrance. At Marakoopa there is a choice of the easy Underground Rivers and Glow Worms tour or the Great Cathedral and Glow Worms tour, which needs medium fitness to climb the stairway.",
+    "Tripods, food and drink are not allowed in the caves. Photography, including flash, is allowed except in the glow-worm chamber. PWS lists the park as a Fuel Stove Only Area, and dogs and recreational drones are not allowed."
+  ],
+  "sights": [
+    {
+      "name": "Marakoopa Cave",
+      "note": "Two streams run through this cave of crystals, reflective pools and stalactites. The Great Cathedral chamber amplifies voices, and its glow-worm display is Australia's largest in a public cave.",
+      "location": [
+        -41.57867,
+        146.28907
+      ]
+    },
+    {
+      "name": "King Solomons Cave",
+      "note": "A compact, drier cave found by a paling splitter in 1906, lavishly decorated with sparkling calcite, shawls, stalactites and stalagmites. Suitable for all ages.",
+      "location": [
+        -41.5516,
+        146.24814
+      ]
+    },
+    {
+      "name": "Mole Creek Caves ticket office",
+      "note": "The central office on Mayberry Road selling tickets for both caves, with postcards and souvenirs at Marakoopa. Large vehicles park here and walk 800 metres to the cave.",
+      "location": [
+        -41.57309,
+        146.29192
+      ],
+      "kind": "visitorCentre"
+    }
+  ],
+  "planYourVisit": {
+    "entrances": [
+      "Marakoopa Cave and the ticket office, 330 Mayberry Road, Mayberry, the first signposted turn-off from the B12",
+      "King Solomons Cave, 1535 Liena Road, Liena, a further 7 kilometres along the B12"
+    ],
+    "reservations": "Cave tour sizes are capped; book by phone on (03) 6363 5182 from 9.30 am to 3.30 pm, up to 14 days ahead. Check tour times before you go.",
+    "permits": [
+      "A cave tour ticket for the show caves",
+      "A valid Tasmanian parks pass for other parts of the park"
+    ],
+    "camping": [],
+    "lodging": [
+      "Petrol, accommodation and other supplies nearby in Mole Creek and Sheffield"
+    ],
+    "seasonalClosures": [
+      "Cave tours do not run on Christmas Day; an extra 4 pm Marakoopa tour runs from 1 October to 30 April"
+    ]
+  },
+  "weather": "Underground the weather never changes: both caves stay at a cool 9°C all year, so bring a warm layer even on a hot summer day, and wear walking shoes for the stairs. Outside, the park lies on the slopes of the Great Western Tiers in northern Tasmania, and Tasmanian weather can change quickly at any time of year. Because the tours run daily in every season, the caves are a good choice when rain or snow makes the mountain walks unappealing; the extra afternoon tours from October to April suit long summer days.",
+  "directions": "The park is about 40 minutes west of Deloraine. Take the B12 from Deloraine through Mole Creek. The first signposted turn-off leads to the ticket office and Marakoopa Cave at 330 Mayberry Road, Mayberry; the second, a further 7 kilometres along the B12, leads to King Solomons Cave at 1535 Liena Road, Liena. Allow at least 15 minutes to drive between the two caves. Parking at the upper Marakoopa car park is limited and the road is narrow: motor homes, caravans and camper trailers must stay at the lower car park by the ticket office, a 10- to 15-minute walk from the cave. The drive through Chudleigh, Mole Creek and Caveside is scenic in its own right.",
+  "fees": [
+    {
+      "title": "Cave tour, adult",
+      "cost": "$32",
+      "amount": 32,
+      "currencyCode": "AUD",
+      "detail": "Per tour, Marakoopa or King Solomons. Children 5–17 $16; under 5 free; concession (Australian Seniors, Pensioner or Health Care Card) $25.60; family (two adults, three children) $80. As listed by PWS in November 2026."
+    },
+    {
+      "title": "Daily Pass, per vehicle",
+      "cost": "$49.15",
+      "amount": 49.15,
+      "currencyCode": "AUD",
+      "detail": "Needed only to explore the park outside the show caves. Up to 24 hours, for a vehicle of up to eight people; reviewed each year by CPI."
+    }
+  ],
+  "chronology": [
+    {
+      "year": "Before European arrival",
+      "text": "Northern nation people quarry ochre at Mount Vandyke and the Gog Range (Toolumbunner), travelling on tracks kept open by fire."
+    },
+    {
+      "year": "1830s",
+      "text": "Van Diemen's Land Company surveyors seeking a rail route west are the first Europeans to find the karst."
+    },
+    {
+      "year": "1906",
+      "text": "A paling splitter stumbles across King Solomons Cave."
+    },
+    {
+      "year": "1912",
+      "text": "Marakoopa Cave is open to the public."
+    },
+    {
+      "year": "1920s",
+      "text": "The Tourism Department buys land beside the cave entrances to develop them for visitors."
+    },
+    {
+      "year": "1996",
+      "text": "Mole Creek Karst National Park is declared to protect the caves."
+    }
+  ],
+  "safety": [
+    "The caves are a steady 9°C: dress warmly and wear walking shoes for stairs and uneven, sometimes narrow passages.",
+    "The cave tours are not suitable for most people with impaired mobility, because of steps, uneven surfaces, low ceilings and narrow sections; accessible picnic tables and toilets are near the Marakoopa car park.",
+    "The Great Cathedral tour climbs a stairway and needs medium fitness; the Underground Rivers and King Solomons tours suit all ages."
+  ],
+  "regulations": [
+    "Entry to the show caves is by guided tour only.",
+    "No tripods, food or drink in the caves, and no photography in the Marakoopa glow-worm chamber.",
+    "Fuel Stove Only Area: fires are prohibited.",
+    "Dogs and recreational drones are not allowed in Tasmanian national parks."
+  ],
+  "themes": [
+    "theme-caves",
+    "theme-indigenous-heritage"
+  ],
+  "photos": [
+    {
+      "file": "File:Marakoopa Cave-Tasmania-Australia01.JPG",
+      "caption": "Formations in Marakoopa Cave",
+      "altText": "Stalactites and flowstone in a lit limestone cave"
+    },
+    {
+      "file": "File:Marakoopa Cave-Tasmania-Australia04.JPG",
+      "caption": "Inside Marakoopa Cave",
+      "altText": "A limestone cave chamber with hanging formations"
+    },
+    {
+      "file": "File:Cueva del Rey Salomon-Tasmania-Australia01.JPG",
+      "caption": "Decorations in King Solomons Cave",
+      "altText": "Dense stalactites and shawl formations in a small cave chamber"
+    },
+    {
+      "file": "File:Marakoopa Cave, Mole Creek Tasmania.jpg",
+      "caption": "Cave habitat of the Mole Creek cave harvestman in Marakoopa Cave",
+      "altText": "Damp limestone surfaces deep inside a cave"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mole Creek Karst National Park — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Mole-Creek-Karst-National-Park.aspx"
+    },
+    {
+      "title": "Mole Creek Karst: cave tours — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Mole-Creek-Karst---cave-tours.aspx"
+    },
+    {
+      "title": "Mole Creek Karst National Park (archived 2014) — Parks and Wildlife Service Tasmania",
+      "url": "https://web.archive.org/web/20140909213552/http://www.parks.tas.gov.au/index.aspx?base=3530"
+    },
+    {
+      "title": "Tasmanian Wilderness World Heritage Area — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)"
+    },
+    {
+      "title": "Park passes and entry fees — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/entry-fees.aspx"
+    },
+    {
+      "title": "Fuel Stove Only Areas — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Fuel-Stove-Only-Areas.aspx"
+    },
+    {
+      "title": "Dogs in parks — Parks and Wildlife Service Tasmania",
+      "url": "https://parks.tas.gov.au/Pages/Dogs-in-parks.aspx"
+    },
+    {
+      "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — Department of Climate Change, Energy, the Environment and Water",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+    },
+    {
+      "title": "Tasmanian Wilderness — UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/181/"
+    },
+    {
+      "title": "Mole Creek Karst National Park — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mole_Creek_Karst_National_Park"
+    },
+    {
+      "title": "OpenStreetMap (sight coordinates)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}
