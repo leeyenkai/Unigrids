@@ -15,7 +15,7 @@ the assumptions taken are `SPECIFICATION.md` §17, items 21–26.
 |---|---|---|
 | Model | A country on every place (defaulting to the US), ISO subdivisions beside US states, local names, the country read from an identifier, an access line for parks no road reaches; no user-data change | §13, ADR 0013 |
 | Data | Japan: 35 national parks and 58 quasi-national parks (2 outlined, 56 as points: OpenStreetMap maps few, and no national dataset exists). Norway: 48 national parks, 195 protected landscapes and 230 nature reserves of 10 km² or more. Dataset version 5; US records change only where the build's own rules did (Wikipedia leads; PAD-US units that are not state parks) | §12, §16 |
-| Guides | 83 guides written for Unigrids, every claim checked against the authorities (about 6,150; some 320 corrected, 150 removed); How this park works; Huts and cabins where OpenStreetMap maps them (29 Norwegian parks, 3 Japanese); official brochures for Japan's parks; local names typeset in their own language; fees in their own currency; midnight sun and polar night | §6 |
+| Guides | 83 guides written for Unigrids, every claim checked against the authorities (about 6,150; some 320 corrected, 150 removed); How this park works; Huts and cabins where OpenStreetMap maps them (29 Norwegian parks, 18 Japanese); official brochures for Japan's parks; local names typeset in their own language; fees in their own currency; midnight sun and polar night | §6 |
 | Kinds of place | Quasi-national parks, protected landscapes and nature reserves, each with its tier, ink and pictogram; the map key lists only kinds that have places | §5, ADR 0009 |
 | Map | Opens on the reader's country; region bar by country; Regions filter; detail scaled above 50°; outlines culled to the view; rail abroad (Japan's partial) | §5 |
 | Alerts | JMA eruption warnings and Varsom avalanche forecasts, no key; asked for by place, with their own watch keys | §10 |
@@ -31,9 +31,9 @@ the assumptions taken are `SPECIFICATION.md` §17, items 21–26.
 
 - Japan's park zones and Norway's dated restriction areas drawn on the guide's map: the
   guides give them in words; the 15,293 zone polygons need simplifying before they ship.
-- Huts for 32 Japanese parks, and Japan's main stations and Shinkansen lines (Tokyo,
-  Sapporo, Shin-Osaka, Hakata and Matsumoto are missing): OpenStreetMap's query service
-  refused this machine partway through the fetch, which resumes on a second run.
+- Huts in 17 Japanese parks where OpenStreetMap maps none, and trails in Keramashoto and
+  Iriomote-Ishigaki, which have no mapped paths. Japan's OpenStreetMap is now read whole
+  from Geofabrik's extract; what is missing is missing from the map itself.
 - Campsites abroad: the model has them, the Japanese and Norwegian fetches do not yet.
 - Norwegian park leaflets as documents: each guide links to its park's page;
   Miljødirektoratet's PDFs are not bundled. Norway's visitor centres cover 24 of the 45

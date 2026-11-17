@@ -23,7 +23,7 @@ makes the change. A release moves that block under a version heading with its da
   brochure for each Japanese park (a Norwegian guide links to its park's page), and a new
   panel, "How this park works" — Japan's zoned parks with towns and shrines inside them,
   Norway's right to roam and each park's own rules, Svalbard's notification and polar
-  bear rules — and another, "Huts and cabins", for the 32 parks where OpenStreetMap maps
+  bear rules — and another, "Huts and cabins", for the 47 parks where OpenStreetMap maps
   huts.
 - The second tier as pins and leaflets: Japan's 58 quasi-national parks, and Norway's
   195 protected landscapes and 230 nature reserves of 10 km² or more, with the year each
@@ -43,8 +43,8 @@ makes the change. A release moves that block under a version heading with its da
 - The map opens on the reader's own country if its parks ship. Its region bar reads
   World, then each country by name, the one on screen followed by its own regions —
   Hokkaido, Okinawa & Amami, Ogasawara; Svalbard. The state filter becomes Regions, with
-  prefectures and counties. Norway's passenger railways are on the rail layer, and part of
-  Japan's: some main stations and Shinkansen lines are still missing.
+  prefectures and counties. Norway's and Japan's passenger railways are on the rail layer,
+  Japan's read whole from OpenStreetMap's Geofabrik extract with all its main stations.
 - A trip to an island or Arctic park says how it is reached where no road does — "Fly to
   Longyearbyen, then by boat", "Ferry from Tokyo, about 24 hours" — instead of a failed
   route.

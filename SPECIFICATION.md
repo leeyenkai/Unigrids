@@ -471,7 +471,7 @@ The build goes in three phases: a pilot on four parks (Zion, Acadia, Yellowstone
 
 `0.9.0` is the production pass between the MVP and v1.0: every feature above, offline packs for the four pilot parks, and the data refreshed (`docs/mvp-scope.md`).
 
-`0.10.0` comes next, so that 1.0 launches as a guide to more than one country. As built: Japan's 35 and Norway's 48 national parks with full guides, every claim checked; 58 quasi-national parks, 195 protected landscapes and 230 nature reserves as pins and leaflets; 1,102 trails abroad; warnings from JMA and Varsom; a passport book per country; and Park maps for Chubu-Sangaku and Jotunheimen. What is not built yet — Japan's zones and Norway's restriction areas on the map, huts and trails where OpenStreetMap's query service refused the fetch, outlines for most quasi-national parks — is listed in `docs/mvp-scope.md`.
+`0.10.0` comes next, so that 1.0 launches as a guide to more than one country. As built: Japan's 35 and Norway's 48 national parks with full guides, every claim checked; 58 quasi-national parks, 195 protected landscapes and 230 nature reserves as pins and leaflets; 1,258 trails abroad; huts in 47 parks; Japan's and Norway's railways and stations; warnings from JMA and Varsom; a passport book per country; and Park maps for Chubu-Sangaku and Jotunheimen. What is not built yet — Japan's zones and Norway's restriction areas on the map, outlines for most quasi-national parks — is listed in `docs/mvp-scope.md`.
 
 The pilot is the riskiest step: it tests whether one Unigrid template reflows well across three devices and how large an offline pack really is, and so whether everything fits in the 4 GB app limit, and both answers shape everything after it.
 
