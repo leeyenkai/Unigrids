@@ -184,7 +184,8 @@ detail.
 
 iPhone, iPad and Mac on the **latest OS generation only** (currently iOS 27 / macOS 27).
 A native Mac app, not Catalyst. Do not add availability fallbacks for older OS versions —
-raise the floor instead. Widgets and the watchOS app arrive in v1.0.
+raise the floor instead. There are no widgets and no watchOS app: both were withdrawn
+from the spec on 17 November 2026.
 
 ## 8. Changelog and specification discipline
 

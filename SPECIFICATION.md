@@ -25,7 +25,7 @@ These came out of two brainstorm rounds on 16 Oct 2026 and frame the rest of thi
 | Release | Free hobby/portfolio app, private for now; no monetisation |
 | Infrastructure | No servers or hosting of my own; the app talks directly to Apple Maps, WeatherKit, iCloud and the NPS API (key built into the app) |
 | Content delivery | Database, guides and offline packs bundled in the app, within the App Store's 4 GB limit; brochures fetched from NPS on first open and cached on device |
-| Platforms | iPhone, iPad and Mac on the latest OS only; widgets and an Apple Watch app in v1 |
+| Platforms | iPhone, iPad and Mac on the latest OS only. No widgets and no Apple Watch app (withdrawn 17 November 2026) |
 | Relation to Antipodes | Separate app with the same privacy model; fully independent code and data |
 | Coverage | Tiered: national parks get full guides, 3D and trails; other NPS sites, state parks and major federal sites get rich pins |
 | Territories | All US territories on the map and in stats |
@@ -50,7 +50,7 @@ One SwiftUI codebase targets iPhone, iPad and Mac. There is no server or hosting
 
 | Layer | Choice | Notes |
 |---|---|---|
-| UI | SwiftUI, multiplatform target | Native Mac app, not Catalyst; latest OS generation only; WidgetKit widgets and a watchOS app in v1 |
+| UI | SwiftUI, multiplatform target | Native Mac app, not Catalyst; latest OS generation only |
 | Maps and 3D | MapKit | Realistic-elevation terrain, satellite/hybrid imagery, pitched camera and fly-to animations; pins, polygons and polylines as overlays |
 | Offline maps | MapKit with app-supplied tiles | Apple's own offline maps are not available to third-party apps; MapKit can draw tiles the app supplies. The SwiftUI Map view may need an MKMapView wrapper for tile overlays (verify on the current SDK) |
 | Brochure viewer | PDFKit | Zoom, pan, page-turn between brochure sides; PDFs fetched from NPS and cached on device |
@@ -291,7 +291,7 @@ As built (toward `1.0.0`): trips with ordered stops of five kinds — a place, a
 - **Flags** on a stop: closure and danger alerts posted for the park (live, with a key), the guide's reservation and permit note, and its seasonal closures when the stop falls in the months they cover — the guide's own months where it gives them (Norway's mountain roads open in May or June), else November to April — reckoned at the park. Seasonal road closures are otherwise known only as the guides word them, not by date.
 - **Forecasts** for dated stops within the next 16 days — daily high, low, chance of precipitation, condition, sunrise and sunset — from Open-Meteo rather than WeatherKit (§17).
 - **Reminders** for permits, timed entry and booking windows, set per trip, delivered as local notifications at the time the user chooses; booking happens on Recreation.gov, or for a trip with no US stop on the park's, hut's or operator's own site (`0.10.0`).
-- **Climate** for the best-time question: each national park guide charts ten years of monthly averages (§6). Monthly visitation is not in the bundle, so the weather-versus-crowds view is weather only.
+- **Climate** for the best-time question: each national park guide charts ten years of monthly averages (§6). Where the NPS publishes monthly visitation (every US national park), the guide charts it beside the weather; abroad, where no source publishes it, the view is weather only.
 - Live alerts show on the map, on a park's map card, on its guide or page, and on the trip. The card keeps them short: dangers and closures by title, three at most, and a count of the rest. **Alert notifications** watch the parks on trips under way or starting within 30 days: iOS background app refresh (and the app coming forward) on iPhone and iPad, every three hours while the app is open on the Mac. A new danger or closure posts a notification, delivered provisionally until the reader decides, that opens the park; a park newly added to a trip is taken in silently. Without an NPS key in the build the US feed does not run. Background refresh needs a signed build on a device to be seen working.
 - **Warnings abroad (`0.10.0`)**, from each country's own service and needing no key: for Japan, the Japan Meteorological Agency's eruption warnings for every volcano whose summit lies inside a park's outline, worked out on the device from JMA's own volcano list, its level shown in JMA's words and its English name, and never a level JMA has not given; for Norway, Varsom's avalanche forecast where the park lies (Svalbard included). The badges, guide, card and trip flags read them as they read the NPS's, and trips abroad get notifications, remembered apart from the NPS's. Arrival suggestions inside a Japanese park — they hold whole towns — come at most once a week, and any place can be muted ("Don't suggest here again"), undone in Settings.
 
@@ -458,13 +458,13 @@ Safety: trail and map information is for planning, not wilderness navigation; gu
 
 ## 16. Phasing
 
-The build goes in three phases: a pilot on four parks (Zion, Acadia, Yellowstone, Great Smoky Mountains) to prove the pipeline and the guide template, an MVP with every national park guide and basic logging, then v1.0 adding trails, offline maps, the planner, widgets, the Watch app and the remaining logging and stats. No dates are set yet.
+The build goes in three phases: a pilot on four parks (Zion, Acadia, Yellowstone, Great Smoky Mountains) to prove the pipeline and the guide template, an MVP with every national park guide and basic logging, then v1.0 adding trails, offline maps, the planner and the remaining logging and stats. No dates are set yet.
 
 > _Diagram in source doc: phasing · 3 phases, 2 gates, then a backlog_
 
-`0.9.0` is the production pass between the MVP and v1.0: every feature above except widgets and the Watch app, offline packs for the four pilot parks, and the data refreshed (`docs/mvp-scope.md`).
+`0.9.0` is the production pass between the MVP and v1.0: every feature above, offline packs for the four pilot parks, and the data refreshed (`docs/mvp-scope.md`).
 
-`0.10.0` comes next, before widgets and the Watch app, so that 1.0 launches as a guide to more than one country. As built: Japan's 35 and Norway's 48 national parks with full guides, every claim checked; 58 quasi-national parks, 195 protected landscapes and 230 nature reserves as pins and leaflets; 1,102 trails abroad; warnings from JMA and Varsom; a passport book per country; and Park maps for Chubu-Sangaku and Jotunheimen. What is not built yet — Japan's zones and Norway's restriction areas on the map, huts and trails where OpenStreetMap's query service refused the fetch, outlines for most quasi-national parks — is listed in `docs/mvp-scope.md`.
+`0.10.0` comes next, so that 1.0 launches as a guide to more than one country. As built: Japan's 35 and Norway's 48 national parks with full guides, every claim checked; 58 quasi-national parks, 195 protected landscapes and 230 nature reserves as pins and leaflets; 1,102 trails abroad; warnings from JMA and Varsom; a passport book per country; and Park maps for Chubu-Sangaku and Jotunheimen. What is not built yet — Japan's zones and Norway's restriction areas on the map, huts and trails where OpenStreetMap's query service refused the fetch, outlines for most quasi-national parks — is listed in `docs/mvp-scope.md`.
 
 The pilot is the riskiest step: it tests whether one Unigrid template reflows well across three devices and how large an offline pack really is, and so whether everything fits in the 4 GB app limit, and both answers shape everything after it.
 
@@ -478,8 +478,8 @@ Follow-ups
 2. Measure the pilot packs, then confirm the whole bundle fits in 4 GB; if not, decide what to trim (tile zoom levels, state packs).
 3. Resolved: the paper passport's region assignments are checked against 329 regional stamps and curated with their evidence in `Pipeline/content/curated/passport-regions.json` (§9).
 4. Resolved: National Natural Landmarks come from the NPS's own NNL layer and byways from the FHWA's America's Byways routes (§12).
-5. Scope the Apple Watch app: check-ins and stamps only, or also trail info and alerts?
-6. Choose which widgets to build first (next trip, parks count, latest stamp).
+5. Withdrawn (17 November 2026): there is no Apple Watch app.
+6. Withdrawn (17 November 2026): there are no widgets.
 7. The passport's nine ink colours are Unigrids' own approximation, now with a dark variant per region. They are superseded by follow-up 3 above when the paper passport's real scheme is curated.
 8. Appearance is two `@AppStorage` values today. An observable store becomes worth it only if the palette is ever derived from something else — a per-park palette, or an automatic switch at sunset (ADR 0005).
 9. The written guide and overview text (63 guides, 101 place summaries) was drafted from the NPS Data API and Wikipedia and checked fact by fact, but has had no second reader. A park-by-park read against each park's NPS pages before a public release is worthwhile; rules that change each season (timed entry, permits, closures) are written to say "check before you go" rather than give dates.
@@ -492,7 +492,7 @@ Follow-ups
 16. Resolved for two: Sequoia and Kings Canyon's trails come from OpenStreetMap's named paths, measured like every other park's and credited under the ODbL. Gates of the Arctic and Kobuk Valley are trailless wilderness and have none.
 17. **Most NPS sites list no PDF on their own pages** (84 of 434 do), so most document panels open the site's maps page. A fuller source — Harpers Ferry Center's brochure listings — would need its own fetch and matching; the pipeline reads only each site's own pages.
 18. **Eleven places lie in no state**: the remote Pacific refuges and marine monuments (Baker, Howland, Jarvis, Johnston, Kingman, Midway, Palmyra, Wake, the Mariana Trench and Arc of Fire) and Navassa Island. They are on the map and in stats but the state filter cannot find them.
-19. **Not built yet**: offline packs for the other 59 national parks (they need on-demand delivery, which needs signing; ADR 0010), widgets and the Watch app (§3), an "open this season" filter (no source publishes seasons for every place), and archived brochure editions.
+19. **Not built yet**: offline packs for the other 59 national parks (they need on-demand delivery, which needs signing; ADR 0010), an "open this season" filter (no source publishes seasons for every place), and archived brochure editions.
 20. **Auto-detected visits, reminders, alert notifications and photo import have not run on a device.** They compile and their logic is unit-tested, but Always location, region monitoring and background app refresh, and notification delivery need a signed build on a real iPhone to trust.
 
 Japan and Norway (`0.10.0`): assumptions taken, each changeable

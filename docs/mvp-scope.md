@@ -5,8 +5,8 @@ starting with Japan's and Norway's national parks at the same depth as a US nati
 and keep the Unigrid identity as a homage to the NPS and to Yellowstone, the first
 national park. Decided in planning: each country's second tier as pins (Japan's
 quasi-national parks; Norway's protected landscapes and major nature reserves), a passport
-book per country, one offline pilot pack per country, and this milestone before widgets
-and the Watch app. The model change is [ADR 0013](adr/0013-countries-in-the-reference-model.md);
+book per country, and one offline pilot pack per country. (Widgets and the Watch app,
+once planned for after this milestone, were withdrawn on 17 November 2026.) The model change is [ADR 0013](adr/0013-countries-in-the-reference-model.md);
 the assumptions taken are `SPECIFICATION.md` §17, items 21–26.
 
 ## Built

@@ -27,8 +27,7 @@ public enum AppearancePreference: String, CaseIterable, Sendable, Identifiable, 
 /// Where the appearance choice is stored.
 ///
 /// The keys are named here, rather than written out at each end, so the modifier that
-/// reads them and the screen that writes them cannot drift apart — and so moving to an
-/// App Group for a future widget is one edit in one place.
+/// reads them and the screen that writes them cannot drift apart.
 ///
 /// This is a per-device display preference, not the user's data: it stays in
 /// `UserDefaults` and deliberately does **not** sync through CloudKit with the log.

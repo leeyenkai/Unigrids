@@ -66,6 +66,10 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Changed
 
+- Widgets and an Apple Watch app are no longer planned: the specification, README and
+  working agreement drop them, and follow-ups 5 and 6 are withdrawn. The specification
+  also now says what ships for monthly visitation: charted for every US national park,
+  weather only abroad.
 - The whole of Norway on screen reads at the detail the Lower 48 does — grouped park
   pins, no names — because the map's detail now allows for how far it stretches north of
   50°; in Alaska too, names and smaller pins arrive a little closer in. The Lower 48,

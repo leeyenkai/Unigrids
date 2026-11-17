@@ -47,8 +47,7 @@
 ## Status
 
 Version **0.9.0**, the production pass, is the latest release. `main` carries 0.10.0,
-which adds Japan and Norway; widgets, the Watch app and offline maps for the other parks
-follow. iCloud sync and WeatherKit wait on code signing, so this build keeps the log on
+which adds Japan and Norway; offline maps for the other parks follow. iCloud sync and WeatherKit wait on code signing, so this build keeps the log on
 the device. It is not on the App Store yet; build it from source. What has and has not been checked is in
 [`docs/mvp-scope.md`](docs/mvp-scope.md); what changed is in [`CHANGELOG.md`](CHANGELOG.md).
 

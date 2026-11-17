@@ -2,8 +2,7 @@ import Foundation
 import SQLite3
 import SwiftData
 
-/// The user-data schema, in one place so the app, the tests and any future widget or
-/// Watch target cannot drift apart.
+/// The user-data schema, in one place so the app and the tests cannot drift apart.
 public enum UnigridsSchema {
     public static let models: [any PersistentModel.Type] = [
         Trip.self,
