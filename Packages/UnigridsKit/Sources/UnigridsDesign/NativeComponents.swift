@@ -14,8 +14,8 @@ public struct NonAffiliationNotice: View {
         Text(
             "Unigrids is not affiliated with, endorsed by or sponsored by the "
                 + "National Park Service, Japan's Ministry of the Environment, the Norwegian "
-                + "Environment Agency, New Zealand's Department of Conservation or any other "
-                + "government agency, and uses none of their marks."
+                + "Environment Agency, New Zealand's Department of Conservation, Parks Canada or "
+                + "any other government agency, and uses none of their marks."
         )
         .font(.footnote)
         .foregroundStyle(style.inkSecondary)

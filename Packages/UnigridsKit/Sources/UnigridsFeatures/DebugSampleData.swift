@@ -50,6 +50,8 @@ public enum DebugSampleData {
             Sample("no-np-nordvest-spitsbergen", past(2025, 6, 10), [4, 0, 0], "Clear"),
             Sample("nz-np-tongariro", past(2026, 2, 12), [19, 7, 0], "Clear"),
             Sample("nz-np-abel-tasman", past(2026, 2, 16), [23, 14, 1], "Showers"),
+            Sample("ca-np-banff", past(2025, 8, 12), [22, 7, 0], "Clear"),
+            Sample("ca-np-gros-morne", past(2025, 8, 20), [19, 10, 2], "Showers"),
         ]
     }
 

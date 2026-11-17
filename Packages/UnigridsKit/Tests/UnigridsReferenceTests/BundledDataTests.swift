@@ -170,9 +170,17 @@ struct BundledDataTests {
 
     @Test("every national park carries its sourced figures")
     func nationalParkFacts() throws {
+        // Parks whose sources disagree on their area carry none rather than a guess: Mingan
+        // (Parks Canada "approximately 100 km²", CPCAD 150.7), Bruce Peninsula (enlarged
+        // by purchase since its scheduled area) and Thousand Islands.
+        let areaInDispute: Set<UnigridsID> = [
+            "ca-np-mingan-archipelago", "ca-np-bruce-peninsula", "ca-np-thousand-islands",
+        ]
         for park in store.nationalParks {
             #expect(park.facts.establishedYear != nil, "\(park.name) has no establishment year")
-            #expect(park.facts.area != nil, "\(park.name) has no area")
+            if !areaInDispute.contains(park.id) {
+                #expect(park.facts.area != nil, "\(park.name) has no area")
+            }
         }
         // The NPS's visitation release covers every US park; abroad, Japan's ministry
         // counts visitors a year or two behind, and Norway publishes no per-park figure.
@@ -204,8 +212,14 @@ struct BundledDataTests {
                 #expect(place.facts.annualVisitsYear != nil, "\(place.name) visits without a year")
             }
         }
+        // Beyond the national parks only Parks Canada counts visitors, at its marine
+        // conservation areas, and always for a stated fiscal year.
         for place in store.places where place.tier != .nationalPark && place.tier != .npsUnit {
-            #expect(place.facts.annualVisits == nil, "\(place.name) has visits from nowhere")
+            if place.kind == .marineConservationArea, place.facts.annualVisits != nil {
+                #expect(place.facts.annualVisitsPeriod != nil, "\(place.name) visits, no period")
+            } else {
+                #expect(place.facts.annualVisits == nil, "\(place.name) has visits from nowhere")
+            }
             #expect(place.visitation == nil)
         }
         for place in store.places {

@@ -20,6 +20,7 @@ struct BundledAbroadTests {
 
     @Test("each country's national parks are all there, once", arguments: [
         (Country.japan, 35), (Country.norway, 48), (Country.newZealand, 13),
+        (Country.canada, 48),
     ])
     func parkCounts(country: Country, expected: Int) {
         let parks = store.nationalParks.filter { $0.country == country }
@@ -29,7 +30,7 @@ struct BundledAbroadTests {
 
     @Test("each country's second tier ships whole", arguments: [
         (PlaceKind.quasiNationalPark, 58), (PlaceKind.protectedLandscape, 195),
-        (PlaceKind.conservationPark, 49),
+        (PlaceKind.conservationPark, 49), (PlaceKind.marineConservationArea, 5),
     ])
     func secondTier(kind: PlaceKind, expected: Int) {
         #expect(store.places.count { $0.kind == kind } == expected)
@@ -82,7 +83,7 @@ struct BundledAbroadTests {
     }
 
     @Test("a place abroad carries its own country's region, zone and agency", arguments: [
-        Country.japan, Country.norway, Country.newZealand,
+        Country.japan, Country.norway, Country.newZealand, Country.canada,
     ])
     func noUSFallbacks(country: Country) {
         for place in places(in: country) {
@@ -96,7 +97,7 @@ struct BundledAbroadTests {
     }
 
     @Test("a national park abroad shows its own name in its own language", arguments: [
-        Country.japan, Country.norway,
+        Country.japan, Country.norway, Country.canada,
     ])
     func localNames(country: Country) {
         for park in store.nationalParks where park.country == country {
@@ -159,6 +160,22 @@ extension BundledAbroadTests {
         #expect(!graded.isEmpty)
         let westland = try #require(store.place("nz-np-westland-tai-poutini"))
         #expect(westland.localNames.contains { $0.language == "mi" })
+    }
+
+    /// Banff's hot springs were set aside in 1885; Parks Canada's ratings ride on its
+    /// trails, and every park carries its French name.
+    @Test("Canada's parks carry Parks Canada's grades, French names and their provinces")
+    func canada() throws {
+        let banff = try #require(store.place("ca-np-banff"))
+        #expect(banff.facts.establishedYear == 1885)
+        #expect(banff.agency == .parksCanada)
+        #expect(banff.subdivisions.contains { $0.code == "CA-AB" })
+        #expect(banff.localNames.contains { $0.language == "fr" })
+        let graded = store.trails(in: banff.id).filter {
+            $0.publishedGrade?.system == .parksCanadaDifficulty
+        }
+        #expect(!graded.isEmpty)
+        #expect(store.places.count { $0.kind == .provincialPark } > 200)
     }
 
     @Test("most of Japan's national parks list their huts")

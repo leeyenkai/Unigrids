@@ -61,19 +61,8 @@ struct LegendKey: View {
             Kicker("Shape: who runs it")
             row(SitePin(type: .nationalPark), "Large black square: a national park")
             row(SitePin(type: .historicSite), "Square: another National Park Service site")
-            row(
-                SitePin(type: .statePark),
-                countries.contains(.japan)
-                    ? "Circle: a state park, or one of Japan's quasi-national parks"
-                    : "Circle: a state park"
-            )
-            row(
-                SitePin(type: .nationalForest),
-                "Hexagon: other public land — national forests, wildlife refuges, BLM land — "
-                    + "and natural landmarks and byways"
-                    + (countries.contains(.norway)
-                        ? "; in Norway, protected landscapes and nature reserves" : "")
-            )
+            row(SitePin(type: .statePark), circleText)
+            row(SitePin(type: .nationalForest), hexagonText)
 
             Hairline()
             Kicker("Marks on a pin")
@@ -166,5 +155,32 @@ private struct ParkClusterSample: View {
         .background(Color(SiteInk.nationalPark.pin))
         .overlay { Rectangle().strokeBorder(Color(SiteInk.pictogram), lineWidth: 1.5) }
         .accessibilityHidden(true)
+    }
+}
+
+extension LegendKey {
+    /// The circle's line, naming each country's own second tier that it marks.
+    var circleText: String {
+        let abroad = [
+            countries.contains(.japan) ? "one of Japan's quasi-national parks" : nil,
+            countries.contains(.australia) ? "one of Australia's other national parks" : nil,
+            countries.contains(.canada) ? "a Canadian provincial park" : nil,
+        ].compactMap(\.self)
+        guard !abroad.isEmpty else { return "Circle: a state park" }
+        return "Circle: a state park, or " + abroad.formatted(.list(type: .or))
+    }
+
+    /// The hexagon's line, with the other public land abroad that it marks.
+    var hexagonText: String {
+        let abroad = [
+            countries.contains(.norway)
+                ? "in Norway, protected landscapes and nature reserves" : nil,
+            countries.contains(.newZealand)
+                ? "in New Zealand, conservation and forest parks" : nil,
+            countries.contains(.canada) ? "in Canada, marine conservation areas" : nil,
+        ].compactMap(\.self)
+        return "Hexagon: other public land — national forests, wildlife refuges, BLM land — "
+            + "and natural landmarks and byways"
+            + abroad.map { "; " + $0 }.joined()
     }
 }

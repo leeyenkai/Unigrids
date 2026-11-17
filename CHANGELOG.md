@@ -34,6 +34,18 @@ makes the change. A release moves that block under a version heading with its da
   leaflets; GeoNet's volcanic alert levels show for the volcanoes of Tongariro and Te
   Papa-Kura-o-Taranaki; a book of three regions carries a hut-book stamp face, and the
   stats map fills in New Zealand's regions.
+- **Canada.** Its 48 national parks and park reserves, from Banff — hot springs set aside
+  in 1885 — to Quttinirpaaq on Ellesmere Island, each with a full guide written for
+  Unigrids from Parks Canada's pages and the Canada National Parks Act, its French name
+  beneath the English, and How this park works: passes and the Reservation Service,
+  backcountry registration, bear country, and the fly-in Arctic parks' orientation and
+  polar bear rules. Parks Canada's trails carry its own ratings (Easy to Most difficult),
+  filled from OpenStreetMap where its layer is thin; its campgrounds, huts and visitor
+  centres; attendance by fiscal year ("Visitors, 2025–26"); VIA Rail on the rail layer.
+  The 5 national marine conservation areas and the provincial and territorial parks of
+  100 km² or more are pins with leaflets. Environment Canada's weather alerts and
+  Avalanche Canada's forecasts show live; a bilingual book of six regions carries its own
+  stamp face.
 - The second tier as pins and leaflets: Japan's 58 quasi-national parks, and Norway's
   195 protected landscapes and 230 nature reserves of 10 km² or more, with the year each
   was designated where a source gives it (Wikidata for Japan's, Miljødirektoratet for
