@@ -87,6 +87,9 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- Importing a backup made before a visit was moved no longer gives the visit the old day's
+  weather, and a restore of thousands of visits no longer freezes the app while it matches
+  them by day. The visits CSV opens in Excel with Japanese and Norwegian names intact.
 - A guide's map and the 3D explorer leave out the land a park excludes, as the main map
   does: 21 of Japan's national park outlines have such holes. The map key says what a
   circle and a hexagon stand for in Japan and Norway. A leaflet's photo credit follows the

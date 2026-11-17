@@ -104,8 +104,11 @@ struct YourDataSection: View {
             let json = folder.appending(path: "Unigrids backup \(stamp).json")
             let csv = folder.appending(path: "Unigrids visits \(stamp).csv")
             try archive.json().write(to: json, options: .atomic)
-            try LogExport.visitsCSV(archive) { UnigridsCalendar.gregorian(at: store.place($0)) }
-                .write(to: csv, atomically: true, encoding: .utf8)
+            // With a byte-order mark, so Excel reads 知床 and Møre og Romsdal as UTF-8.
+            let rows = LogExport.visitsCSV(archive) {
+                UnigridsCalendar.gregorian(at: store.place($0))
+            }
+            try ("\u{FEFF}" + rows).write(to: csv, atomically: true, encoding: .utf8)
             exported = ExportedFiles(json: json, csv: csv)
             message = nil
         } catch {

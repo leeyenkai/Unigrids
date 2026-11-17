@@ -132,6 +132,7 @@ extension LogStore {
         )
         let checkIns = try ids(CheckIn.self) { $0.id }
         let hikes = try ids(Hike.self) { $0.id }
+        var byDay = visitsByDay(visits.values, calendar: calendar)
         for item in items {
             let visit: Visit
             let placeID = UnigridsID(item.placeID)
@@ -139,10 +140,7 @@ extension LogStore {
             if let existing = visits[item.id] {
                 visit = existing
                 summary.alreadyPresent += 1
-            } else if let sameDay = visits.values.first(where: {
-                $0.placeID == item.placeID
-                    && UnigridsCalendar.isSameDay($0.date, item.date, calendar: days)
-            }) {
+            } else if let sameDay = byDay[dayOf(item.placeID, item.date, calendar)] {
                 visit = sameDay
                 visits[item.id] = sameDay
                 summary.alreadyPresent += 1
@@ -165,6 +163,7 @@ extension LogStore {
                 visit.trip = item.tripID.flatMap { trips[$0] }
                 context.insert(visit)
                 visits[item.id] = visit
+                byDay[dayOf(item.placeID, item.date, calendar)] = visit
                 summary.visitsAdded += 1
             }
             for checkIn in item.checkIns where !checkIns.contains(checkIn.id) {
@@ -185,12 +184,44 @@ extension LogStore {
                 context.insert(record)
                 summary.othersAdded += 1
             }
-            if let weather = item.weather, visit.weather == nil {
+            // Only the visit's own day's weather: a visit moved since the backup was made
+            // must not take the old day's.
+            let ownDay = item.weather.map {
+                UnigridsCalendar.isSameDay($0.date, visit.date, calendar: days)
+            } ?? false
+            if let weather = item.weather, visit.weather == nil, ownDay {
                 insert(weather, into: visit)
                 summary.othersAdded += 1
             }
         }
         return visits
+    }
+
+    /// Each place's visits by their day there, so a restore looks a day up rather than
+    /// scanning every visit for every one it brings: thousands of visits, read on the main
+    /// actor, took seconds.
+    private func visitsByDay(
+        _ visits: some Sequence<Visit>,
+        calendar: (UnigridsID) -> Calendar?
+    ) -> [String: Visit] {
+        var byDay: [String: Visit] = [:]
+        for visit in visits {
+            let key = dayOf(visit.placeID, visit.date, calendar)
+            if byDay[key] == nil {
+                byDay[key] = visit
+            }
+        }
+        return byDay
+    }
+
+    /// "np-zion|2026-05-01": a place and the day a date falls on there.
+    private func dayOf(
+        _ placeID: String,
+        _ date: Date,
+        _ calendar: (UnigridsID) -> Calendar?
+    ) -> String {
+        let days = calendar(UnigridsID(placeID)) ?? self.calendar
+        return placeID + "|" + UnigridsCalendar.dayKey(date, calendar: days)
     }
 
     private func insert(_ weather: WeatherArchive, into visit: Visit) {

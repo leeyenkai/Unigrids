@@ -367,3 +367,19 @@ struct LogRulesTests {
         }
     }
 }
+
+extension LogRulesTests {
+    @Test("a backup made before a visit moved does not bring back the old day's weather")
+    func mergeAfterMove() throws {
+        let visit = try store.checkIn(to: "np-zion", on: date(2026, 5, 1))
+        try store.attach(
+            WeatherSnapshot(date: date(2026, 5, 1), highCelsius: 30, source: .openMeteoArchive),
+            to: visit
+        )
+        let backup = try store.archive()
+        try store.move(visit, to: date(2026, 5, 3))
+        _ = try store.merge(backup)
+        let moved = try #require(try store.visits().first { $0.id == visit.id })
+        #expect(moved.weather == nil)
+    }
+}
