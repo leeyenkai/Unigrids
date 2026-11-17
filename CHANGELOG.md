@@ -67,6 +67,10 @@ makes the change. A release moves that block under a version heading with its da
   ringed on the map, have their own scope in the Parks directory, and travel in backups
   (now version 3; older backups still import). The directory can also sort by distance,
   nearest first, from one location fix that is not kept.
+- The passport reads like a book: swipe, or use the arrows or arrow keys, to turn from one
+  region to the next; pinch in, or tap Contents, for every region's title page at once;
+  and on an iPad, a Mac or any wide window a region opens as a two-page spread, its title
+  page with a square per site on the left and its stamps on the right.
 
 ### Changed
 

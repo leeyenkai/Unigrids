@@ -262,8 +262,8 @@ America 250
 
 Views
 
-- iPhone: one page at a time, swipe to turn; pinch out for a grid of all regions.
-- iPad and Mac: a two-page spread, like an open passport.
+- iPhone: one region at a time, swiped or turned with the arrows; pinch in, or Contents, for a grid of every region's title page.
+- iPad, Mac and any window wide enough: a two-page spread, like an open passport — the region's title page with its count and a square per site on the left, its slots on the right. The arrow keys turn the pages. With Reduce Motion the pages cross-fade rather than slide.
 - Any page or spread exports as an image for sharing.
 
 Ownership of data
