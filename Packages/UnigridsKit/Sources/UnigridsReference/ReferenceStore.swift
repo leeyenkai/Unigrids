@@ -200,22 +200,24 @@ extension ReferenceStore {
 
     /// Points of interest across every place, matching a query, for map search.
     public func searchPointsOfInterest(_ query: String, limit: Int = 20) -> [PointOfInterest] {
-        let needle = query.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        let needle = SearchText.fold(query.trimmingCharacters(in: .whitespacesAndNewlines))
         guard needle.count >= 2 else { return [] }
+        // Folded like place names, so "chuzenji" finds Lake Chūzenji and "grotberget"
+        // Grøtberget.
         return places
             .filter(\.tier.hasGuide)
             .flatMap { pointsOfInterest(in: $0.id) }
             // A stamp location is a desk inside a building that is listed in its own
             // right; searching finds the building.
-            .filter {
-                $0.kind != .entrance && $0.kind != .stampLocation
-                    && $0.name.lowercased().contains(needle)
+            .filter { $0.kind != .entrance && $0.kind != .stampLocation }
+            .compactMap { poi -> (PointOfInterest, Int)? in
+                let name = SearchText.fold(poi.name)
+                guard name.contains(needle) else { return nil }
+                return (poi, name.hasPrefix(needle) ? 0 : 1)
             }
-            .sorted { ($0.name.lowercased().hasPrefix(needle) ? 0 : 1, $0.name)
-                < ($1.name.lowercased().hasPrefix(needle) ? 0 : 1, $1.name)
-            }
+            .sorted { ($0.1, $0.0.name) < ($1.1, $1.0.name) }
             .prefix(limit)
-            .map(\.self)
+            .map(\.0)
     }
 
     /// A byway's line, where the place is one.
@@ -259,7 +261,7 @@ extension Place {
             return 2
         }
         if states.contains(where: {
-            SearchText.fold($0.name).hasPrefix(needle) || $0.code.lowercased() == needle
+            SearchText.fold($0.name).hasPrefix(needle) || SearchText.fold($0.code) == needle
         }) {
             return 3
         }

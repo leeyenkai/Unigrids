@@ -148,6 +148,10 @@ struct SearchTextTests {
         #expect(SearchText.fold("Hawaiʻi Volcanoes") == "hawaii volcanoes")
         #expect(SearchText.fold("ＡＢＣ") == "abc")
         #expect(SearchText.fold("しれとこ") == SearchText.fold("シレトコ"))
+        #expect(SearchText.fold("Fuji-Hakone-Izu") == "fuji hakone izu")
+        #expect(SearchText.fold("Sør-Spitsbergen") == "sor spitsbergen")
+        #expect(SearchText.contains("Damtjønna – Grøtberget", "grotberget"))
+        #expect(SearchText.contains("Lake Chūzenji", "chuzenji"))
     }
 
     @Test("a query matches inside a name, folded on both sides")

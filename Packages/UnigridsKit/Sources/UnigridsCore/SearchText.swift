@@ -6,15 +6,19 @@ public enum SearchText {
     /// `text` folded for matching: case, accents and macrons, full- and half-width forms,
     /// and hiragana against katakana; the Nordic and Sámi letters that do not decompose
     /// spelled as a keyboard without them would type them; the ʻokina and apostrophes
-    /// dropped.
+    /// dropped; hyphens and dashes read as spaces, so "fuji hakone" finds Fuji-Hakone-Izu
+    /// and "sor spitsbergen" Sør-Spitsbergen.
     ///
     /// Search folds every name on every keystroke, so plain ASCII — most names — takes a
     /// fast path, and the kana transform runs only on text that holds hiragana. The full
     /// path is about nine times slower.
     public static func fold(_ text: String) -> String {
         if text.utf8.allSatisfy({ $0 < 0x80 }) {
-            let lower = text.lowercased()
-            return lower.contains("'") ? lower.replacingOccurrences(of: "'", with: "") : lower
+            var lower = text.lowercased()
+            if lower.contains("'") {
+                lower = lower.replacingOccurrences(of: "'", with: "")
+            }
+            return lower.contains("-") ? lower.replacingOccurrences(of: "-", with: " ") : lower
         }
         var folded = text.folding(
             options: [.caseInsensitive, .diacriticInsensitive, .widthInsensitive],
@@ -43,6 +47,7 @@ public enum SearchText {
 
     private static let spellings: [Character: String] = [
         "ø": "o", "æ": "ae", "œ": "oe", "đ": "d", "ð": "d", "ŋ": "n", "ŧ": "t",
+        "-": " ", "‐": " ", "‑": " ", "–": " ", "—": " ",
         "þ": "th", "ß": "ss", "ł": "l",
         "ʻ": "", "’": "", "'": "",
     ]

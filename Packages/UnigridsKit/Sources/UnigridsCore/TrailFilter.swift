@@ -95,8 +95,8 @@ public struct TrailFilter: Hashable, Sendable {
         if notYetHiked, hiked {
             return false
         }
-        let needle = query.trimmingCharacters(in: .whitespacesAndNewlines)
-        if !needle.isEmpty, !trail.name.localizedCaseInsensitiveContains(needle) {
+        // Folded as place names are: "grotberget" finds Grøtberget, "kuju" Kujū.
+        if !SearchText.contains(trail.name, query) {
             return false
         }
         return true

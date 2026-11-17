@@ -87,6 +87,10 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- Search reads hyphens and dashes as spaces, so "fuji hakone" finds Fuji-Hakone-Izu and
+  "sor spitsbergen" Sør-Spitsbergen; map search for sights and the trail catalogue's
+  filter now fold accents, Nordic letters and macrons as place search does ("chuzenji",
+  "grotberget").
 - A passport region page with many places and a long log no longer stalls while it draws;
   its America 250 count matches the stamps it shows. A reminder's date is read as a
   Gregorian date on a phone set to the Buddhist or Japanese calendar, and saving one whose
