@@ -249,7 +249,7 @@ private struct NorwegianPostmark: View {
 
 /// New Zealand's book, after the stamps in a back-country hut book: a ring of short
 /// strokes like a hand-inked border inside a plain one, the name, the picture, the
-/// date, the region and Aotearoa.
+/// date and the region.
 private struct HutBookStamp: View {
     let face: StampFace
     let d: CGFloat // swiftlint:disable:this identifier_name
@@ -272,7 +272,15 @@ private struct HutBookStamp: View {
                 PictureBand(face: face, d: d, ink: ink)
                 DateLine(face: face, size: d * 0.09)
                 HStack(spacing: d * 0.02) {
-                    MarkLine(text: "\(face.stateCode) · Aotearoa", size: d * 0.056, d: d)
+                    // The region alone: "Manawatū-Whanganui · Aotearoa" cannot fit the
+                    // circle's narrowing foot, and a long name sets without letter-spacing
+                    // so it shrinks to fit rather than being cut short.
+                    MarkLine(
+                        text: face.stateCode,
+                        size: d * 0.056,
+                        tracking: face.stateCode.count > 12 ? 0 : 0.012,
+                        d: d
+                    )
                     VerifiedTick(face: face, size: d * 0.056)
                 }
             }

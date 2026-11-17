@@ -28,11 +28,11 @@ makes the change. A release moves that block under a version heading with its da
 - **New Zealand.** Its 13 national parks, from Tongariro — its peaks gifted by Te Heuheu
   Tūkino IV in 1887, a park by Act in 1894 — to Rakiura, each with a full guide written
   for Unigrids from the Department of Conservation's pages: How this park works (Great
-  Walk bookings, the hut system and each park's own rules), DOC's own huts,
-  campsites and visitor centres, and DOC's tracks with their published track categories
-  (Easy short walk to Expert route) and profiles. Its 49 conservation and forest parks
-  are pins with leaflets; GeoNet's volcanic alert levels show for the volcanoes of
-  Tongariro and Te Papa-Kura-o-Taranaki; a book of three regions carries a hut-book stamp face, and the
+  Walk bookings, the hut system and each park's own rules), DOC's own huts, campsites and
+  visitor centres, and DOC's tracks with their published track categories (Easy short walk
+  to Expert route) and profiles. Its 49 conservation and forest parks are pins with
+  leaflets; GeoNet's volcanic alert levels show for the volcanoes of Tongariro and Te
+  Papa-Kura-o-Taranaki; a book of three regions carries a hut-book stamp face, and the
   stats map fills in New Zealand's regions.
 - The second tier as pins and leaflets: Japan's 58 quasi-national parks, and Norway's
   195 protected landscapes and 230 nature reserves of 10 km² or more, with the year each
