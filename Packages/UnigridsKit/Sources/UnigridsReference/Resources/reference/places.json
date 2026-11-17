@@ -80,7 +80,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/New_York"
+  "timeZoneID": "America/New_York",
+  "emblem": "np-acadia"
  },
  {
   "id": "np-american-samoa",
@@ -153,7 +154,8 @@
     2025
    ]
   },
-  "timeZoneID": "Pacific/Pago_Pago"
+  "timeZoneID": "Pacific/Pago_Pago",
+  "emblem": "np-american-samoa"
  },
  {
   "id": "np-arches",
@@ -229,7 +231,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-arches"
  },
  {
   "id": "np-badlands",
@@ -307,7 +310,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-badlands"
  },
  {
   "id": "np-big-bend",
@@ -387,7 +391,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Chicago"
+  "timeZoneID": "America/Chicago",
+  "emblem": "np-big-bend"
  },
  {
   "id": "np-biscayne",
@@ -467,7 +472,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/New_York"
+  "timeZoneID": "America/New_York",
+  "emblem": "np-biscayne"
  },
  {
   "id": "np-black-canyon-of-the-gunnison",
@@ -547,7 +553,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-black-canyon-of-the-gunnison"
  },
  {
   "id": "np-bryce-canyon",
@@ -628,7 +635,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-bryce-canyon"
  },
  {
   "id": "np-canyonlands",
@@ -708,7 +716,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-canyonlands"
  },
  {
   "id": "np-capitol-reef",
@@ -789,7 +798,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-capitol-reef"
  },
  {
   "id": "np-carlsbad-caverns",
@@ -865,7 +875,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-carlsbad-caverns"
  },
  {
   "id": "np-channel-islands",
@@ -946,7 +957,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-channel-islands"
  },
  {
   "id": "np-congaree",
@@ -1024,7 +1036,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/New_York"
+  "timeZoneID": "America/New_York",
+  "emblem": "np-congaree"
  },
  {
   "id": "np-crater-lake",
@@ -1106,7 +1119,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-crater-lake"
  },
  {
   "id": "np-cuyahoga-valley",
@@ -1185,7 +1199,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/New_York"
+  "timeZoneID": "America/New_York",
+  "emblem": "np-cuyahoga-valley"
  },
  {
   "id": "np-death-valley",
@@ -1264,7 +1279,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-death-valley"
  },
  {
   "id": "np-denali",
@@ -1346,7 +1362,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Anchorage"
+  "timeZoneID": "America/Anchorage",
+  "emblem": "np-denali"
  },
  {
   "id": "np-dry-tortugas",
@@ -1424,7 +1441,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/New_York"
+  "timeZoneID": "America/New_York",
+  "emblem": "np-dry-tortugas"
  },
  {
   "id": "np-everglades",
@@ -1505,7 +1523,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/New_York"
+  "timeZoneID": "America/New_York",
+  "emblem": "np-everglades"
  },
  {
   "id": "np-gates-of-the-arctic",
@@ -1577,7 +1596,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Anchorage"
+  "timeZoneID": "America/Anchorage",
+  "emblem": "np-gates-of-the-arctic"
  },
  {
   "id": "np-gateway-arch",
@@ -1650,7 +1670,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Chicago"
+  "timeZoneID": "America/Chicago",
+  "emblem": "np-gateway-arch"
  },
  {
   "id": "np-glacier",
@@ -1733,7 +1754,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-glacier"
  },
  {
   "id": "np-glacier-bay",
@@ -1811,7 +1833,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Juneau"
+  "timeZoneID": "America/Juneau",
+  "emblem": "np-glacier-bay"
  },
  {
   "id": "np-grand-canyon",
@@ -1889,7 +1912,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Phoenix"
+  "timeZoneID": "America/Phoenix",
+  "emblem": "np-grand-canyon"
  },
  {
   "id": "np-grand-teton",
@@ -1970,7 +1994,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-grand-teton"
  },
  {
   "id": "np-great-basin",
@@ -2052,7 +2077,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-great-basin"
  },
  {
   "id": "np-great-sand-dunes",
@@ -2134,7 +2160,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-great-sand-dunes"
  },
  {
   "id": "np-great-smoky-mountains",
@@ -2217,7 +2244,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/New_York"
+  "timeZoneID": "America/New_York",
+  "emblem": "np-great-smoky-mountains"
  },
  {
   "id": "np-guadalupe-mountains",
@@ -2293,7 +2321,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Chicago"
+  "timeZoneID": "America/Chicago",
+  "emblem": "np-guadalupe-mountains"
  },
  {
   "id": "np-haleakala",
@@ -2365,7 +2394,8 @@
     2025
    ]
   },
-  "timeZoneID": "Pacific/Honolulu"
+  "timeZoneID": "Pacific/Honolulu",
+  "emblem": "np-haleakala"
  },
  {
   "id": "np-hawaii-volcanoes",
@@ -2438,7 +2468,8 @@
     2025
    ]
   },
-  "timeZoneID": "Pacific/Honolulu"
+  "timeZoneID": "Pacific/Honolulu",
+  "emblem": "np-hawaii-volcanoes"
  },
  {
   "id": "np-hot-springs",
@@ -2517,7 +2548,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Chicago"
+  "timeZoneID": "America/Chicago",
+  "emblem": "np-hot-springs"
  },
  {
   "id": "np-indiana-dunes",
@@ -2600,7 +2632,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Chicago"
+  "timeZoneID": "America/Chicago",
+  "emblem": "np-indiana-dunes"
  },
  {
   "id": "np-isle-royale",
@@ -2678,7 +2711,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Detroit"
+  "timeZoneID": "America/Detroit",
+  "emblem": "np-isle-royale"
  },
  {
   "id": "np-joshua-tree",
@@ -2758,7 +2792,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-joshua-tree"
  },
  {
   "id": "np-katmai",
@@ -2834,7 +2869,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Anchorage"
+  "timeZoneID": "America/Anchorage",
+  "emblem": "np-katmai"
  },
  {
   "id": "np-kenai-fjords",
@@ -2913,7 +2949,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Anchorage"
+  "timeZoneID": "America/Anchorage",
+  "emblem": "np-kenai-fjords"
  },
  {
   "id": "np-kings-canyon",
@@ -2994,7 +3031,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-kings-canyon"
  },
  {
   "id": "np-kobuk-valley",
@@ -3068,7 +3106,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Anchorage"
+  "timeZoneID": "America/Anchorage",
+  "emblem": "np-kobuk-valley"
  },
  {
   "id": "np-lake-clark",
@@ -3152,7 +3191,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Anchorage"
+  "timeZoneID": "America/Anchorage",
+  "emblem": "np-lake-clark"
  },
  {
   "id": "np-lassen-volcanic",
@@ -3236,7 +3276,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-lassen-volcanic"
  },
  {
   "id": "np-mammoth-cave",
@@ -3316,7 +3357,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Chicago"
+  "timeZoneID": "America/Chicago",
+  "emblem": "np-mammoth-cave"
  },
  {
   "id": "np-mesa-verde",
@@ -3395,7 +3437,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-mesa-verde"
  },
  {
   "id": "np-mount-rainier",
@@ -3477,7 +3520,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-mount-rainier"
  },
  {
   "id": "np-new-river-gorge",
@@ -3559,7 +3603,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/New_York"
+  "timeZoneID": "America/New_York",
+  "emblem": "np-new-river-gorge"
  },
  {
   "id": "np-north-cascades",
@@ -3638,7 +3683,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-north-cascades"
  },
  {
   "id": "np-olympic",
@@ -3723,7 +3769,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-olympic"
  },
  {
   "id": "np-petrified-forest",
@@ -3803,7 +3850,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Phoenix"
+  "timeZoneID": "America/Phoenix",
+  "emblem": "np-petrified-forest"
  },
  {
   "id": "np-pinnacles",
@@ -3881,7 +3929,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-pinnacles"
  },
  {
   "id": "np-redwood",
@@ -3963,7 +4012,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-redwood"
  },
  {
   "id": "np-rocky-mountain",
@@ -4044,7 +4094,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-rocky-mountain"
  },
  {
   "id": "np-saguaro",
@@ -4121,7 +4172,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Phoenix"
+  "timeZoneID": "America/Phoenix",
+  "emblem": "np-saguaro"
  },
  {
   "id": "np-sequoia",
@@ -4203,7 +4255,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-sequoia"
  },
  {
   "id": "np-shenandoah",
@@ -4285,7 +4338,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/New_York"
+  "timeZoneID": "America/New_York",
+  "emblem": "np-shenandoah"
  },
  {
   "id": "np-theodore-roosevelt",
@@ -4366,7 +4420,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-theodore-roosevelt"
  },
  {
   "id": "np-virgin-islands",
@@ -4446,7 +4501,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/St_Thomas"
+  "timeZoneID": "America/St_Thomas",
+  "emblem": "np-virgin-islands"
  },
  {
   "id": "np-voyageurs",
@@ -4528,7 +4584,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Chicago"
+  "timeZoneID": "America/Chicago",
+  "emblem": "np-voyageurs"
  },
  {
   "id": "np-white-sands",
@@ -4605,7 +4662,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-white-sands"
  },
  {
   "id": "np-wind-cave",
@@ -4684,7 +4742,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-wind-cave"
  },
  {
   "id": "np-wrangell-st-elias",
@@ -4766,7 +4825,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Anchorage"
+  "timeZoneID": "America/Anchorage",
+  "emblem": "np-wrangell-st-elias"
  },
  {
   "id": "np-yellowstone",
@@ -4852,7 +4912,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-yellowstone"
  },
  {
   "id": "np-yosemite",
@@ -4938,7 +4999,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Los_Angeles"
+  "timeZoneID": "America/Los_Angeles",
+  "emblem": "np-yosemite"
  },
  {
   "id": "np-zion",
@@ -5016,7 +5078,8 @@
     2025
    ]
   },
-  "timeZoneID": "America/Denver"
+  "timeZoneID": "America/Denver",
+  "emblem": "np-zion"
  },
  {
   "id": "nps-abli",
@@ -174838,7 +174901,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_Panke-numa,_and_Mt.Rishiri.jpg",
    "altText": "A flat marsh lake with a cone-shaped mountain on the far horizon",
    "licence": "CC BY-SA 3.0"
-  }
+  },
+  "emblem": "jp-np-rishiri-rebun-sarobetsu"
  },
  {
   "id": "jp-np-shiretoko",
@@ -174903,7 +174967,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:%E7%A7%8B%E3%81%AE%E7%9F%A5%E5%BA%8A%E4%BA%94%E6%B9%96%E3%81%8B%E3%82%89%E7%BE%85%E8%87%BC%E5%B2%B3.jpg",
    "altText": "A lake ringed by autumn forest with a mountain behind",
    "licence": "CC BY-SA 4.0"
-  }
+  },
+  "emblem": "jp-np-shiretoko"
  },
  {
   "id": "jp-np-akan-mashu",
@@ -174967,7 +175032,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_Mash%C5%AB_20140809-1.jpg",
    "altText": "A deep blue lake surrounded by steep forested crater walls",
    "licence": "CC BY-SA 4.0"
-  }
+  },
+  "emblem": "jp-np-akan-mashu"
  },
  {
   "id": "jp-np-kushiroshitsugen",
@@ -175029,7 +175095,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Kushirositsugen_Hosooka_Tenboudai01.jpg",
    "altText": "A vast flat marsh with a river winding across it",
    "licence": "CC BY-SA 3.0"
-  }
+  },
+  "emblem": "jp-np-kushiroshitsugen"
  },
  {
   "id": "jp-np-daisetsuzan",
@@ -175094,7 +175161,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Suribachi_Pond_and_Mount_Asahidake,_Daisetsuzan_National_Park,_Hokkaido,_Japan.jpg",
    "altText": "A small pond in a volcanic hollow below a bare, rounded mountain",
    "licence": "CC BY-SA 4.0"
-  }
+  },
+  "emblem": "jp-np-daisetsuzan"
  },
  {
   "id": "jp-np-hidakasanmyaku-erimo-tokachi",
@@ -175156,7 +175224,8 @@
    "caption": "The southern and central Hidaka range",
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Hidaka_Mountains_southern_and_middle_parts_2014.jpg",
    "altText": "A long chain of rugged, snow-streaked mountains"
-  }
+  },
+  "emblem": "jp-np-hidakasanmyaku-erimo-tokachi"
  },
  {
   "id": "jp-np-shikotsu-toya",
@@ -175219,7 +175288,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_T%C5%8Dya_and_Mount_Yotei_01.jpg",
    "altText": "A wide lake with a cone-shaped volcano rising beyond it",
    "licence": "CC BY 4.0"
-  }
+  },
+  "emblem": "jp-np-shikotsu-toya"
  },
  {
   "id": "jp-np-towada-hachimantai",
@@ -175286,7 +175356,8 @@
    "caption": "Lake Towada",
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_Towada_-_Towada7027.jpg",
    "altText": "A wide lake framed by forested hills"
-  }
+  },
+  "emblem": "jp-np-towada-hachimantai"
  },
  {
   "id": "jp-np-sanriku-fukko",
@@ -175351,7 +175422,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Jodogahama_Beach_(51969977762).jpg",
    "altText": "White rocks topped with pine trees standing in calm blue water",
    "licence": "CC BY 2.0"
-  }
+  },
+  "emblem": "jp-np-sanriku-fukko"
  },
  {
   "id": "jp-np-bandai-asahi",
@@ -175416,7 +175488,8 @@
    "caption": "One of the Goshikinuma ponds in Urabandai",
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Aizuwakamatsu_and_Goshikinuma_-_Goshikinuma7492.jpg",
    "altText": "A vividly coloured pond edged by forest"
-  }
+  },
+  "emblem": "jp-np-bandai-asahi"
  },
  {
   "id": "jp-np-nikko",
@@ -175481,7 +175554,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_Chuzenji_and_Mt._Nantai_view_from_Mt._Hangetsu_Observatory.jpg",
    "altText": "A deep blue lake below a bare cone-shaped mountain, with autumn hills around it and conifers in the foreground",
    "licence": "CC BY-SA 4.0"
-  }
+  },
+  "emblem": "jp-np-nikko"
  },
  {
   "id": "jp-np-oze",
@@ -175547,7 +175621,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Mt.Hiuchigatake_11.jpg",
    "altText": "A twin-peaked mountain reflected in still water among grassy islands in a green marsh",
    "licence": "CC BY 3.0"
-  }
+  },
+  "emblem": "jp-np-oze"
  },
  {
   "id": "jp-np-chichibu-tama-kai",
@@ -175612,7 +175687,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Mt.Kimpu_from_Mt.Kitaokusenjodake_01.jpg",
    "altText": "A rocky mountain summit rising above dark conifer forest under a blue sky",
    "licence": "CC BY 3.0"
-  }
+  },
+  "emblem": "jp-np-chichibu-tama-kai"
  },
  {
   "id": "jp-np-ogasawara",
@@ -175675,7 +175751,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Oogi-ike_,_minami-jima_island_-_panoramio.jpg",
    "altText": "A small white-sand cove ringed by grey limestone rock, opening to blue sea through an arch",
    "licence": "CC BY-SA 3.0"
-  }
+  },
+  "emblem": "jp-np-ogasawara"
  },
  {
   "id": "jp-np-fuji-hakone-izu",
@@ -175743,7 +175820,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG",
    "altText": "A snow-covered volcanic cone rising above a calm lake and a lakeside town, framed by a branch of pale pink blossom",
    "licence": "CC BY 3.0"
-  }
+  },
+  "emblem": "jp-np-fuji-hakone-izu"
  },
  {
   "id": "jp-np-minami-alps",
@@ -175807,7 +175885,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Kitadake_(13982793726).jpg",
    "altText": "A steep green-and-grey pyramid of a peak with a small red-roofed hut on its shoulder, under a blue sky",
    "licence": "CC BY 2.0"
-  }
+  },
+  "emblem": "jp-np-minami-alps"
  },
  {
   "id": "jp-np-joshinetsukogen",
@@ -175875,7 +175954,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Mt.Asama_from_Onioshidashi.jpg",
    "altText": "A broad volcanic cone above a field of dark, broken lava blocks",
    "licence": "CC BY-SA 4.0"
-  }
+  },
+  "emblem": "jp-np-joshinetsukogen"
  },
  {
   "id": "jp-np-myoko-togakushi-renzan",
@@ -175942,7 +176022,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Imori-ike_with_Mout_Myoko_(7697997840).jpg",
    "altText": "A broad volcanic mountain rising beyond a still pond fringed with reeds and trees",
    "licence": "CC BY 2.0"
-  }
+  },
+  "emblem": "jp-np-myoko-togakushi-renzan"
  },
  {
   "id": "jp-np-chubusangaku",
@@ -176008,7 +176089,8 @@
    "caption": "The Azusa River at Kamikochi in autumn, below the Hotaka peaks",
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Kamikochi_-_Kamikochi6535.jpg",
    "altText": "A clear, shallow river winds over pale gravel bars through autumn woods towards snow-dusted, jagged grey mountains."
-  }
+  },
+  "emblem": "jp-np-chubusangaku"
  },
  {
   "id": "jp-np-hakusan",
@@ -176075,7 +176157,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Haku_from_Midagahara.jpg",
    "altText": "A wooden boardwalk with a stone trail marker crosses green alpine shrubs towards a broad, rounded summit with a patch of snow.",
    "licence": "CC BY-SA 4.0"
-  }
+  },
+  "emblem": "jp-np-hakusan"
  },
  {
   "id": "jp-np-ise-shima",
@@ -176135,7 +176218,8 @@
    "caption": "Ago Bay from the Yokoyama Observatory",
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Ago_Bay_viewed_from_Yokoyama_Viewpoint.jpg",
    "altText": "Wooded hills and islands threaded by the calm inlets of a wide bay, under a clear sky"
-  }
+  },
+  "emblem": "jp-np-ise-shima"
  },
  {
   "id": "jp-np-yoshino-kumano",
@@ -176200,7 +176284,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Nachi_Falls_201908-1.jpg",
    "altText": "A long, narrow waterfall pouring down a grey cliff between steep slopes of dense green forest",
    "licence": "CC BY-SA 4.0"
-  }
+  },
+  "emblem": "jp-np-yoshino-kumano"
  },
  {
   "id": "jp-np-saninkaigan",
@@ -176264,7 +176349,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Tottori_Sand_Dunes_20170128-1.jpg",
    "altText": "Sand dunes partly covered with snow, with the sea and dark headlands beyond under a blue sky",
    "licence": "CC BY-SA 4.0"
-  }
+  },
+  "emblem": "jp-np-saninkaigan"
  },
  {
   "id": "jp-np-setonaikai",
@@ -176329,7 +176415,8 @@
    "caption": "Shōdoshima and the Inland Sea from Kankakei",
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Shodoushima_pano_from_Kankakei_222.jpg",
    "altText": "Green mountain ridges falling to a bright sea scattered with islands under summer clouds"
-  }
+  },
+  "emblem": "jp-np-setonaikai"
  },
  {
   "id": "jp-np-daisen-oki",
@@ -176396,7 +176483,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Daisen_seen_from_the_west_-_Aug_9,_2010.jpg",
    "altText": "A smooth volcanic cone rising beyond green rice fields under white clouds",
    "licence": "CC BY-SA 2.0"
-  }
+  },
+  "emblem": "jp-np-daisen-oki"
  },
  {
   "id": "jp-np-ashizuri-uwakai",
@@ -176461,7 +176549,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Ashizuri_Cape_03.JPG",
    "altText": "A forested headland with a white lighthouse above sea cliffs and offshore rocks",
    "licence": "CC BY-SA 3.0"
-  }
+  },
+  "emblem": "jp-np-ashizuri-uwakai"
  },
  {
   "id": "jp-np-saikai",
@@ -176524,7 +176613,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Sasebo_Kujukushima_Islands_2010-08.JPG",
    "altText": "Dozens of small wooded islands scattered across a calm blue sea",
    "licence": "CC BY-SA 3.0"
-  }
+  },
+  "emblem": "jp-np-saikai"
  },
  {
   "id": "jp-np-unzen-amakusa",
@@ -176588,7 +176678,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:140322_Mt_Unzen_Mt_Fugendake_Mt_Heisei-shinzan_Nagasaki_pref_Japan01s3.jpg",
    "altText": "A rugged volcanic summit of dark rock with wisps of steam under a blue sky",
    "licence": "CC BY 2.5"
-  }
+  },
+  "emblem": "jp-np-unzen-amakusa"
  },
  {
   "id": "jp-np-aso-kuju",
@@ -176652,7 +176743,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Aso_2010-05_01.jpg",
    "altText": "Clouds of white steam rising from a deep crater ringed by layered grey walls",
    "licence": "CC BY-SA 3.0"
-  }
+  },
+  "emblem": "jp-np-aso-kuju"
  },
  {
   "id": "jp-np-kirishima-kinkowan",
@@ -176716,7 +176808,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Shinmoe_and_Mount_Takachihonomine_2012-11-18_(8337230446).jpg",
    "altText": "A broad volcanic crater with white steam in the foreground and a pointed peak beyond in haze",
    "licence": "CC BY-SA 2.0"
-  }
+  },
+  "emblem": "jp-np-kirishima-kinkowan"
  },
  {
   "id": "jp-np-yakushima",
@@ -176780,7 +176873,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Yakushima_Miyanouradake.JPG",
    "altText": "Rounded granite boulders on a scrub-covered ridge below a rocky summit",
    "licence": "CC BY-SA 3.0"
-  }
+  },
+  "emblem": "jp-np-yakushima"
  },
  {
   "id": "jp-np-amamigunto",
@@ -176844,7 +176938,8 @@
    "caption": "The Kinsakubaru forest on Amami Ōshima",
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Kinsakubaru_wildwood.jpg",
    "altText": "A forest track through dense subtropical growth with large tree ferns"
-  }
+  },
+  "emblem": "jp-np-amamigunto"
  },
  {
   "id": "jp-np-yambaru",
@@ -176908,7 +177003,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Subtropical_Forest_of_Yanbaru_National_Park_Okinawa_2018.jpg",
    "altText": "Rolling hills covered with dense green forest under a partly cloudy sky",
    "licence": "CC BY 2.0"
-  }
+  },
+  "emblem": "jp-np-yambaru"
  },
  {
   "id": "jp-np-keramashoto",
@@ -176972,7 +177068,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Furuzamami_beach_Okinawa_Zamami.jpg",
    "altText": "Clear turquoise water lapping a white sand beach below green headlands",
    "licence": "CC BY 3.0"
-  }
+  },
+  "emblem": "jp-np-keramashoto"
  },
  {
   "id": "jp-np-iriomote-ishigaki",
@@ -177037,7 +177134,8 @@
    "sourceURL": "https://commons.wikimedia.org/wiki/File:Kabira_Bay_Ishigaki_Island40bs3s4592.jpg",
    "altText": "Glass-bottomed boats on luminous turquoise water, with wooded islets and mountains behind",
    "licence": "CC BY 2.5"
-  }
+  },
+  "emblem": "jp-np-iriomote-ishigaki"
  },
  {
   "id": "jp-qnp-shokanbetsu-teuri-yagishiri",
@@ -179416,7 +179514,8 @@
    "north": 69.04307,
    "east": 25.47256
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-anarjohka"
  },
  {
   "id": "no-np-blafjella-skjaekerfjella",
@@ -179480,7 +179579,8 @@
    "north": 64.4834,
    "east": 13.72987
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-blafjella-skjaekerfjella"
  },
  {
   "id": "no-np-breheimen",
@@ -179541,7 +179641,8 @@
    "north": 62.02517,
    "east": 8.53355
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-breheimen"
  },
  {
   "id": "no-np-borgefjell",
@@ -179600,7 +179701,8 @@
    "north": 65.39947,
    "east": 14.41144
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-borgefjell"
  },
  {
   "id": "no-np-dovre",
@@ -179659,7 +179761,8 @@
    "north": 62.18926,
    "east": 9.83073
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-dovre"
  },
  {
   "id": "no-np-dovrefjell-sunndalsfjella",
@@ -179719,7 +179822,8 @@
    "north": 62.65179,
    "east": 9.78019
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-dovrefjell-sunndalsfjella"
  },
  {
   "id": "no-np-femundsmarka",
@@ -179779,7 +179883,8 @@
    "north": 62.56379,
    "east": 12.29911
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-femundsmarka"
  },
  {
   "id": "no-np-folgefonna",
@@ -179838,7 +179943,8 @@
    "north": 60.26219,
    "east": 6.54545
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-folgefonna"
  },
  {
   "id": "no-np-forlandet",
@@ -179898,7 +180004,8 @@
    "north": 79.14304,
    "east": 12.53608
   },
-  "timeZoneID": "Arctic/Longyearbyen"
+  "timeZoneID": "Arctic/Longyearbyen",
+  "emblem": "no-np-forlandet"
  },
  {
   "id": "no-np-forollhogna",
@@ -179958,7 +180065,8 @@
    "north": 62.90658,
    "east": 11.15274
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-forollhogna"
  },
  {
   "id": "no-np-fulufjellet",
@@ -180017,7 +180125,8 @@
    "north": 61.56875,
    "east": 12.82472
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-fulufjellet"
  },
  {
   "id": "no-np-faerder",
@@ -180077,7 +180186,8 @@
    "north": 59.26848,
    "east": 10.67502
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-faerder"
  },
  {
   "id": "no-np-gutulia",
@@ -180134,7 +180244,8 @@
    "north": 62.05246,
    "east": 12.23188
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-gutulia"
  },
  {
   "id": "no-np-hallingskarvet",
@@ -180194,7 +180305,8 @@
    "north": 60.72321,
    "east": 8.10762
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-hallingskarvet"
  },
  {
   "id": "no-np-hardangervidda",
@@ -180254,7 +180366,8 @@
    "north": 60.40904,
    "east": 8.29844
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-hardangervidda"
  },
  {
   "id": "no-np-indre-wijdefjorden",
@@ -180314,7 +180427,8 @@
    "north": 79.3828,
    "east": 16.68028
   },
-  "timeZoneID": "Arctic/Longyearbyen"
+  "timeZoneID": "Arctic/Longyearbyen",
+  "emblem": "no-np-indre-wijdefjorden"
  },
  {
   "id": "no-np-jomfruland",
@@ -180374,7 +180488,8 @@
    "north": 58.9444,
    "east": 9.75113
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-jomfruland"
  },
  {
   "id": "no-np-jostedalsbreen",
@@ -180433,7 +180548,8 @@
    "north": 61.91084,
    "east": 7.43488
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-jostedalsbreen"
  },
  {
   "id": "no-np-jotunheimen",
@@ -180493,7 +180609,8 @@
    "north": 61.73402,
    "east": 8.85363
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-jotunheimen"
  },
  {
   "id": "no-np-junkerdal",
@@ -180555,7 +180672,8 @@
    "north": 67.12801,
    "east": 16.36286
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-junkerdal"
  },
  {
   "id": "no-np-langsua",
@@ -180613,7 +180731,8 @@
    "north": 61.38899,
    "east": 9.89236
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-langsua"
  },
  {
   "id": "no-np-lierne",
@@ -180676,7 +180795,8 @@
    "north": 64.43707,
    "east": 14.15708
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-lierne"
  },
  {
   "id": "no-np-lofotodden",
@@ -180735,7 +180855,8 @@
    "north": 68.12541,
    "east": 13.1417
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-lofotodden"
  },
  {
   "id": "no-np-lomsdal-visten",
@@ -180800,7 +180921,8 @@
    "north": 65.78682,
    "east": 13.37136
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-lomsdal-visten"
  },
  {
   "id": "no-np-lahko",
@@ -180859,7 +180981,8 @@
    "north": 66.9218,
    "east": 14.42086
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-lahko"
  },
  {
   "id": "no-np-moysalen",
@@ -180920,7 +181043,8 @@
    "north": 68.54737,
    "east": 15.67074
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-moysalen"
  },
  {
   "id": "no-np-nordre-isfjorden",
@@ -180981,7 +181105,8 @@
    "north": 78.91468,
    "east": 16.16565
   },
-  "timeZoneID": "Arctic/Longyearbyen"
+  "timeZoneID": "Arctic/Longyearbyen",
+  "emblem": "no-np-nordre-isfjorden"
  },
  {
   "id": "no-np-nordvest-spitsbergen",
@@ -181042,7 +181167,8 @@
    "north": 80.24603,
    "east": 15.0
   },
-  "timeZoneID": "Arctic/Longyearbyen"
+  "timeZoneID": "Arctic/Longyearbyen",
+  "emblem": "no-np-nordvest-spitsbergen"
  },
  {
   "id": "no-np-raet",
@@ -181100,7 +181226,8 @@
    "north": 58.65801,
    "east": 9.27049
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-raet"
  },
  {
   "id": "no-np-rago",
@@ -181159,7 +181286,8 @@
    "north": 67.52522,
    "east": 16.17996
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-rago"
  },
  {
   "id": "no-np-reinheimen",
@@ -181219,7 +181347,8 @@
    "north": 62.51019,
    "east": 8.95762
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-reinheimen"
  },
  {
   "id": "no-np-reisa",
@@ -181282,7 +181411,8 @@
    "north": 69.40553,
    "east": 22.52893
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-reisa"
  },
  {
   "id": "no-np-rohkunborri",
@@ -181344,7 +181474,8 @@
    "north": 68.68943,
    "east": 19.74757
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-rohkunborri"
  },
  {
   "id": "no-np-rondane",
@@ -181404,7 +181535,8 @@
    "north": 62.08557,
    "east": 10.19506
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-rondane"
  },
  {
   "id": "no-np-saltfjellet-svartisen",
@@ -181466,7 +181598,8 @@
    "north": 66.94105,
    "east": 15.30097
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-saltfjellet-svartisen"
  },
  {
   "id": "no-np-sassen-bunsow-land",
@@ -181527,7 +181660,8 @@
    "north": 78.64578,
    "east": 18.11595
   },
-  "timeZoneID": "Arctic/Longyearbyen"
+  "timeZoneID": "Arctic/Longyearbyen",
+  "emblem": "no-np-sassen-bunsow-land"
  },
  {
   "id": "no-np-seiland",
@@ -181588,7 +181722,8 @@
    "north": 70.50472,
    "east": 23.56223
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-seiland"
  },
  {
   "id": "no-np-sjunkhatten",
@@ -181653,7 +181788,8 @@
    "north": 67.53429,
    "east": 15.49683
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-sjunkhatten"
  },
  {
   "id": "no-np-skarvan-og-roltdalen",
@@ -181712,7 +181848,8 @@
    "north": 63.41216,
    "east": 11.71508
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-skarvan-og-roltdalen"
  },
  {
   "id": "no-np-stabbursdalen",
@@ -181775,7 +181912,8 @@
    "north": 70.17594,
    "east": 24.79609
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-stabbursdalen"
  },
  {
   "id": "no-np-sor-spitsbergen",
@@ -181836,7 +181974,8 @@
    "north": 77.64169,
    "east": 18.4465
   },
-  "timeZoneID": "Arctic/Longyearbyen"
+  "timeZoneID": "Arctic/Longyearbyen",
+  "emblem": "no-np-sor-spitsbergen"
  },
  {
   "id": "no-np-van-mijenfjorden",
@@ -181898,7 +182037,8 @@
    "north": 78.10349,
    "east": 17.5361
   },
-  "timeZoneID": "Arctic/Longyearbyen"
+  "timeZoneID": "Arctic/Longyearbyen",
+  "emblem": "no-np-van-mijenfjorden"
  },
  {
   "id": "no-np-varangerhalvoya",
@@ -181967,7 +182107,8 @@
    "north": 70.52546,
    "east": 30.79787
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-varangerhalvoya"
  },
  {
   "id": "no-np-ytre-hvaler",
@@ -182026,7 +182167,8 @@
    "north": 59.13063,
    "east": 11.07538
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-ytre-hvaler"
  },
  {
   "id": "no-np-anderdalen",
@@ -182087,7 +182229,8 @@
    "north": 69.28464,
    "east": 17.41654
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-anderdalen"
  },
  {
   "id": "no-np-ostmarka",
@@ -182146,7 +182289,8 @@
    "north": 59.87239,
    "east": 11.08253
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-ostmarka"
  },
  {
   "id": "no-np-ovre-dividal",
@@ -182210,7 +182354,8 @@
    "north": 68.84985,
    "east": 20.33584
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-ovre-dividal"
  },
  {
   "id": "no-np-ovre-pasvik",
@@ -182272,7 +182417,8 @@
    "north": 69.2114,
    "east": 29.08135
   },
-  "timeZoneID": "Europe/Oslo"
+  "timeZoneID": "Europe/Oslo",
+  "emblem": "no-np-ovre-pasvik"
  },
  {
   "id": "no-nr-faerdesmyra",
