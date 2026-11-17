@@ -23,6 +23,9 @@ public enum AppIconChoice: String, CaseIterable, Sendable, Identifiable, Codable
     case congaree
     case fuji
     case jotunheimen
+    case aoraki
+    case moraineLake
+    case cradleMountain
 
     public static let standard = AppIconChoice.zion
 
@@ -44,6 +47,9 @@ public enum AppIconChoice: String, CaseIterable, Sendable, Identifiable, Codable
         case .congaree: "Congaree"
         case .fuji: "Fuji-Hakone-Izu"
         case .jotunheimen: "Jotunheimen"
+        case .aoraki: "Aoraki/Mount Cook"
+        case .moraineLake: "Banff"
+        case .cradleMountain: "Cradle Mountain–Lake St Clair"
         }
     }
 
@@ -63,6 +69,9 @@ public enum AppIconChoice: String, CaseIterable, Sendable, Identifiable, Codable
         case .congaree: "South Carolina"
         case .fuji: "Japan"
         case .jotunheimen: "Norway"
+        case .aoraki: "New Zealand"
+        case .moraineLake: "Canada"
+        case .cradleMountain: "Australia"
         }
     }
 

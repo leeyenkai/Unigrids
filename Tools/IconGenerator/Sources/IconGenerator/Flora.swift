@@ -91,6 +91,12 @@ struct Grove {
             guard ground < form.relief * 0.26,
                   ground > form.seaLevel + 0.012
             else { return nil }
+        case .icebergs:
+            // Out on open water, and only some of the places that offer: a lake with a
+            // berg at every point of the lattice is a field of ice, not a lake.
+            guard scene.ground(x: x, z: z) < form.seaLevel - 0.004, z < 2.0,
+                  jitter > 1 - form.floraDensity * 0.5
+            else { return nil }
         case .none:
             return nil
         }
@@ -119,6 +125,7 @@ struct Grove {
         case .giantForest: jitter > 0.82 ? .sequoia : .fir
         // Birch, with a spruce or a pine standing over it now and then.
         case .birchwood: jitter > 0.86 ? .fir : .birch
+        case .icebergs: .floe
         case .conifer, .none: .fir
         }
 
@@ -137,46 +144,6 @@ struct Grove {
     }
 }
 
-/// One tree placed by hand, in world units.
-struct Specimen {
-    let x: Double
-    let z: Double
-    let height: Double
-    let kind: Plant.Kind
-    let jitter: Double
-}
-
-extension Scene {
-    /// The trees that are the subject of the park rather than its scenery.
-    var specimens: [Specimen] {
-        switch self {
-        case .sequoia:
-            // Two trunks framing the stack, close enough that their crowns are out of
-            // the frame and all that shows is bark — which is how a giant sequoia is
-            // actually seen, from its foot, craning up. Two more further off with their
-            // crowns in view, so the eye has the whole tree as well as its scale.
-            [
-                Specimen(x: -0.205, z: 0.40, height: 0.92, kind: .sequoia, jitter: 0.21),
-                Specimen(x: 0.235, z: 0.52, height: 0.98, kind: .sequoia, jitter: 0.64),
-                Specimen(x: -0.30, z: 1.05, height: 0.86, kind: .sequoia, jitter: 0.83),
-                Specimen(x: 0.30, z: 1.30, height: 0.80, kind: .sequoia, jitter: 0.37),
-            ]
-        case .joshuaTree:
-            // The trees the park is named for, where the stack does not cover them:
-            // one large on the right edge, one with its arms up over the brochures on
-            // the left, and two smaller out on the flats between them.
-            [
-                Specimen(x: 0.30, z: 0.60, height: 0.30, kind: .joshua, jitter: 0.12),
-                Specimen(x: -0.40, z: 0.85, height: 0.32, kind: .joshua, jitter: 0.71),
-                Specimen(x: 0.05, z: 1.60, height: 0.22, kind: .joshua, jitter: 0.33),
-                Specimen(x: -0.33, z: 1.95, height: 0.20, kind: .joshua, jitter: 0.88),
-            ]
-        default:
-            []
-        }
-    }
-}
-
 struct Plant {
     enum Kind {
         /// A spire of drooping courses. Fir, spruce, hemlock.
@@ -191,6 +158,8 @@ struct Plant {
         case hammock
         /// Mountain birch: two pale, crooked stems under a loose oval crown.
         case birch
+        /// A berg calved off a glacier, afloat: low, broken and white (`Ice.swift`).
+        case floe
     }
 
     let kind: Kind
@@ -210,6 +179,7 @@ struct Plant {
         case .cypress: 0.32
         case .hammock: 0.98
         case .birch: 0.34
+        case .floe: 0.95
         }
     }
 }
@@ -225,6 +195,8 @@ extension LandForm {
         case .conifer, .giantForest: 0.080
         // Mountain birch is a small tree: half a spruce's height, or less.
         case .birchwood: 0.046
+        // Bergs are small against the lake: the big ones stay up by the glacier's face.
+        case .icebergs: 0.026
         }
     }
 }
@@ -245,6 +217,10 @@ struct PlantInks {
     /// Birch bark: white, and so taken from the land's own white — the snow — which
     /// keeps it moonlit at night rather than glowing.
     let birchBark: Ink
+    /// Ice: the land's own white in the light, and the water's colour in the shadow,
+    /// which is how a berg looks blue from a lakeshore.
+    let ice: Ink
+    let iceShadow: Ink
     let light: Ink
 
     init(land: Land) {
@@ -253,6 +229,8 @@ struct PlantInks {
         sequoiaBark = land.bark ?? bark
         leaf = land.leaf ?? canopy
         birchBark = land.snow.darkened(0.10)
+        ice = land.snow
+        iceShadow = land.snow.mixed(with: land.sea, amount: 0.55).darkened(0.10)
         light = land.sun
     }
 
@@ -284,6 +262,7 @@ extension Plant {
         case .cypress: return cypress(u, v, flip: flip, inks: inks)
         case .hammock: return hammock(u, v, flip: flip, inks: inks)
         case .birch: return birch(u, v, flip: flip, inks: inks)
+        case .floe: return floe(u, v, flip: flip, inks: inks)
         }
     }
 

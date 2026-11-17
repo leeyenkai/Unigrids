@@ -41,7 +41,7 @@ struct AppIconChoiceTests {
         #expect(AppIconChoice.allCases.map(\.rawValue) == [
             "zion", "grandCanyon", "yosemite", "sequoia", "rockyMountain",
             "olympic", "acadia", "joshuaTree", "everglades", "congaree",
-            "fuji", "jotunheimen",
+            "fuji", "jotunheimen", "aoraki", "moraineLake", "cradleMountain",
         ])
     }
 }

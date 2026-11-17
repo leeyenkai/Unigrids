@@ -84,6 +84,9 @@ makes the change. A release moves that block under a version heading with its da
   swipe), and Settings brings them all back.
 - Two app icons from abroad, chosen in Settings on iPhone and iPad: Fuji-Hakone-Izu
   (Mount Fuji over its lakes) and Jotunheimen (a green lake under snowy peaks).
+- Three more app icons from abroad: Aoraki/Mount Cook (Aoraki over Hooker Lake and its
+  ice), Banff (Moraine Lake under the Ten Peaks) and Cradle Mountain–Lake St Clair (Cradle
+  Mountain over Dove Lake).
 - A wishlist. The bookmark on any guide or leaflet puts a place on it; wished places are
   ringed on the map, have their own scope in the Parks directory, and travel in backups
   (now version 3; older backups still import). The directory can also sort by distance,

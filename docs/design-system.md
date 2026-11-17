@@ -240,7 +240,7 @@ same two-ring-and-two-rules geometry `StampView` draws at full size, scaled with
 ## 8. The app icon
 
 > Built by `Tools/IconGenerator`, which has the full construction notes.
-> `swift run -c release IconGenerator --all` there regenerates all twelve icon sets,
+> `swift run -c release IconGenerator --all` there regenerates all fifteen icon sets,
 > deterministically.
 
 A national park fills the tile, rendered as a perspective heightfield, and three Unigrid
@@ -248,19 +248,23 @@ brochures lie across the foreground as sheets of frosted glass with the park sho
 blurred through them. Each sheet prints **its own** park, so the pile reads as three
 different brochures rather than one printed three times.
 
-**Twelve parks are built, and the reader picks one in Settings** — Zion, Grand Canyon,
+**Fifteen parks are built, and the reader picks one in Settings** — Zion, Grand Canyon,
 Yosemite, Sequoia, Rocky Mountain, Olympic, Acadia, Joshua Tree, Everglades and Congaree,
-and two abroad: Fuji-Hakone-Izu in Japan (Mount Fuji over the lakes at its northern foot)
-and Jotunheimen in Norway (a long green lake in a glacial trough under snowy peaks, as
-Gjende lies). The chosen park's land stands behind the stack and its brochure is the one
-on top; the band names the park and its state, or abroad its country. Zion ships as the
-app's own icon; the other eleven are alternate icons. Adding a park never changes an
-existing icon: the ten US parks keep their own ring for the brochures under them, so their
-stacks are as they were.
+and five abroad: Fuji-Hakone-Izu in Japan (Mount Fuji over the lakes at its northern
+foot), Jotunheimen in Norway (a long green lake in a glacial trough under snowy peaks, as
+Gjende lies), Aoraki/Mount Cook in New Zealand (Aoraki white over Hooker Lake, ice afloat
+on it), Banff in Canada (Moraine Lake's turquoise under the Valley of the Ten Peaks) and
+Cradle Mountain–Lake St Clair in Australia (Cradle Mountain's dolerite crown over Dove
+Lake). The chosen park's land stands behind the stack and its brochure is the one on top;
+the band names the park and its state, or abroad its country. Zion ships as the app's own
+icon; the other fourteen are alternate icons. Adding a park never changes an existing
+icon: each park takes the brochures under it from the list as it stood when it joined, so
+every earlier stack is as it was.
 
 The NPS arrowhead never appears (§1), and by the same rule neither does Japan's national
-park mark nor Norway's national park logo — the icons for the parks abroad are as unbadged
-as the rest.
+park mark, Norway's national park logo, the Department of Conservation's mark, the Parks
+Canada beaver, any Australian agency's logo or the Silver Fern — the icons for the parks
+abroad are as unbadged as the rest.
 
 One of them departs from its park on purpose. Olympic's icon stands a stratovolcano over
 the rainforest, and Mount Olympus is not a volcano — it is a glaciated peak of uplifted

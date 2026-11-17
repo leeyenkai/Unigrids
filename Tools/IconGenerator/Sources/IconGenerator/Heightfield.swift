@@ -2,11 +2,11 @@ import Foundation
 
 /// The shape of the ground, as a handful of numbers per park.
 ///
-/// Twelve parks, and bespoke code for each would be twelve places to get the same thing
-/// subtly wrong. What actually differs between them is small and nameable: how much relief there
-/// is, whether the crests are rounded, level or peaked, whether the rock steps in beds,
-/// whether a river has cut through it, whether there is water, and whether a landmark
-/// stands out of the rest. Everything else is the same noise.
+/// Fifteen parks, and bespoke code for each would be fifteen places to get the same thing
+/// subtly wrong. What actually differs between them is small and nameable: how much relief
+/// there is, whether the crests are rounded, level or peaked, whether the rock steps in
+/// beds, whether a river has cut through it, whether there is water, and whether a
+/// landmark or a massif stands out of the rest. Everything else is the same noise.
 ///
 /// So the parks are a table and this is the one function that reads it.
 struct LandForm {
@@ -112,6 +112,9 @@ struct LandForm {
     /// not a row of these — see `Crest.peaks` — and every attempt to build one out of
     /// them came out as a row of traffic cones.
     let landmarks: [Landmark]
+    /// Mountain walls set out by their own skyline, for a mountain known by its outline
+    /// (`Massif.swift`). Empty for every park whose mountains are noise.
+    var massifs: [Massif] = []
 
     /// What stands on the ground, drawn as objects rather than as colour.
     ///
@@ -149,127 +152,9 @@ struct LandForm {
         /// spruce or pine among it: the subalpine belt of a Norwegian valley, which
         /// is birch and not conifer.
         case birchwood
-    }
-
-    struct Landmark {
-        /// What shape it is, which matters more than its size.
-        ///
-        /// The first version of this drew everything with a cosine falloff — flat at
-        /// the summit, steep at the foot. That is a dome, and it is right for Half Dome
-        /// and Cadillac and wrong for everything else: a tall narrow one is not a
-        /// mountain at all.
-        enum Profile {
-            /// Rounded on top, steepening towards the foot. Glaciated granite.
-            case dome
-            /// Straight flanks to a sharp summit. A horn.
-            case peak
-            /// Concave flanks flaring out to a broad base, cut off flat at the top
-            /// with a shallow crater in it. The stratovolcano profile — St Helens,
-            /// Rainier — and the reason those read as mountains from fifty miles away.
-            case volcano
-            /// A lone stratovolcano at rest, with nothing round it: Fuji. Concave flanks
-            /// close to a square law from summit to foot — steep under the rim,
-            /// flattening into a foot many times wider than the mountain is tall, which
-            /// is near enough how Fuji's own slopes fall — and a small flat summit for
-            /// the crater. More concave than `.volcano`, which is drawn to stand over a
-            /// forest at a distance; standing alone over a lake, the curve of the
-            /// flanks is the whole silhouette and has to be the right one.
-            case cone
-        }
-
-        let x: Double
-        let z: Double
-        let width: Double
-        let depth: Double
-        let height: Double
-        let profile: Profile
-        /// One side cut away to a sheer face, the way ice cut Half Dome. Nil for none.
-        let shear: Shear?
-        /// How many ridges run down from the summit. A whole number, so the pattern
-        /// closes on itself instead of leaving a seam along one bearing.
-        let spurs: Int
-        /// How deeply those ridges, and the rock's own grain between them, are cut
-        /// into the flanks — as a fraction of height.
-        ///
-        /// Zero leaves the profile analytic, which is what ice-scoured granite wants.
-        /// Anything meant to read as a *mountain* needs some: `rise` is a curve of one
-        /// variable, so on its own it sweeps a surface of revolution — the same
-        /// silhouette from every bearing, smooth to the pixel. Dropped onto ground
-        /// made of noise, that is not a peak, it is a traffic cone.
-        let rock: Double
-        /// What it stands on: a lift over its whole footprint, so it rises out of the
-        /// ground around it rather than merging into it. Zero for an island, which
-        /// should meet the water on a sloping shore — on a plinth it was a drum with a
-        /// dome on top, a cake on a plate, with a sheer skirt all the way round.
-        let plinth: Double
-
-        init(
-            x: Double,
-            z: Double,
-            width: Double,
-            depth: Double,
-            height: Double,
-            profile: Profile,
-            shear: Shear? = nil,
-            spurs: Int = 6,
-            rock: Double = 0,
-            plinth: Double = 0.10
-        ) {
-            self.x = x
-            self.z = z
-            self.width = width
-            self.depth = depth
-            self.height = height
-            self.profile = profile
-            self.shear = shear
-            self.spurs = spurs
-            self.rock = rock
-            self.plinth = plinth
-        }
-
-        /// The radius of the volcano's truncated summit, as a fraction of its foot.
-        private static let crater = 0.08
-        /// The same for a cone, whose crater is small against so broad a foot.
-        private static let summit = 0.05
-
-        /// A sheer face cut through a landmark along a plane.
-        ///
-        /// The face can look any way, and which way matters more than anything else
-        /// about it. Cut square to the x axis, as it first was, Half Dome's face ran
-        /// straight away from the camera and was seen exactly edge-on: there was no
-        /// face to see, and no cut in the silhouette either. Turned towards the camera
-        /// and to one side, the face shows as a wall and its edge as the vertical drop
-        /// in the skyline that is the whole of what makes Half Dome recognisable.
-        struct Shear {
-            /// The way the face looks, in radians in the ground plane: zero is screen
-            /// right, a quarter turn is straight away from the camera.
-            let facing: Double
-            /// How far from the summit the face is cut, as a fraction of the radius.
-            /// Negative cuts behind the summit, so the high point stands at the brink.
-            let at: Double
-        }
-
-        /// Height at a normalised distance from the summit, 0 at the centre to 1 at
-        /// the foot.
-        func rise(at distance: Double) -> Double {
-            let r = min(max(distance, 0), 1)
-            return switch profile {
-            case .dome: cos(r * .pi / 2) * height
-            case .peak: (1 - r) * height
-            case .volcano:
-                // Truncated, not pointed and not rounded. A point is a drawing of a
-                // volcano; a rounded top on steep flanks is a shape nobody wants on
-                // their home screen. A flat rim with a dip inside it is the one
-                // silhouette that only a volcano has.
-                r < Self.crater
-                    ? (pow(1 - Self.crater, 1.7) - 0.035 * (1 - r / Self.crater)) * height
-                    : pow(1 - r, 1.7) * height
-            case .cone:
-                r < Self.summit
-                    ? (pow(1 - Self.summit, 2.1) - 0.02 * (1 - r / Self.summit)) * height
-                    : pow(1 - r, 2.1) * height
-            }
-        }
+        /// No plants at all, but ice afloat on the lake — calved from the glacier at
+        /// its head and drifting down it.
+        case icebergs
     }
 }
 
@@ -372,6 +257,10 @@ extension Scene {
             height = max(height, swell + landmark.plinth)
         }
 
+        for massif in form.massifs {
+            height = max(height, massif.height(x: x, z: z))
+        }
+
         // Broken rock along a coast: ledges and boulders at a scale finer than the
         // land's own, on the mainland and the islands alike.
         if form.coast > 0 {
@@ -395,7 +284,6 @@ extension Scene {
         sin(z * 1.15) * 0.17 + sin(z * 2.7) * 0.05
     }
 
-    // swiftlint:disable:next cyclomatic_complexity
     var landForm: LandForm {
         switch self {
         case .zion:
@@ -575,152 +463,11 @@ extension Scene {
                 seaLevel: 0.026, river: 0, snowLine: 1.1,
                 flora: .cypress, floraDensity: 0.72, cameraHeight: 0.55, landmarks: []
             )
-        case .fuji:
-            // Fuji over the lakes at its northern foot, as from their shore: a sheet of
-            // water across the front of the frame, low forested hills along the far
-            // side of it, and the cone standing alone over them, white on its upper
-            // half and dark below.
-            //
-            // The camera stands at the water's edge, low. Any higher and the lake falls
-            // behind the brochures, and the lake — with the dark flanks under the cap —
-            // is what says *which* volcano this is: Olympic already has a cone, snowed
-            // on to its foot, over forest.
-            //
-            // The far shore comes out nearly level, and that is right rather than a
-            // shortcut: from a camera this close to the water, a shoreline wandering a
-            // long way in and out moves only a few rows up and down the frame.
-            LandForm(
-                relief: 0.26, featureScale: 0.75, octaves: 3, crest: .rounded, shaping: 1.40,
-                beds: 0, bedding: 0, canyon: 0, foreground: 1.60, lake: 0.04,
-                seaLevel: 0.05, river: 0,
-                // In units of the hills' relief, so well above them: the cap belongs to
-                // the upper part of the cone and nothing else reaches it.
-                snowLine: 1.58, snowTop: 2.00,
-                flora: .conifer, floraDensity: 0.75, cameraHeight: 0.16,
-                landmarks: [
-                    // One cone, symmetrical, its foot far wider than it is tall and its
-                    // summit cut off flat by the crater. Fluted shallowly, for the
-                    // gullies the snow runs down in stripes. Shallower from front to
-                    // back than across, so its foot ends behind the far shore instead of
-                    // rising straight out of the lake.
-                    .init(
-                        x: 0.00,
-                        z: 2.60,
-                        width: 2.50,
-                        depth: 1.40,
-                        height: 0.80,
-                        profile: .cone,
-                        spurs: 18,
-                        rock: 0.14,
-                        plinth: 0
-                    ),
-                ]
-            )
-        case .jotunheimen:
-            // A long lake in a glacial trough, as Gjende lies: green water running away
-            // from the shore the camera stands on, steep dark walls either side, peaks
-            // and ridges over them with snow lying wherever the ground is gentle enough
-            // to keep it, and mountain birch along the foot of the slopes. The land is
-            // noise, like every park's — no particular ridge is drawn — but every part
-            // of the view is one the place has.
-            //
-            // Peaked like Rocky Mountain's range, but cut by a trough rather than
-            // standing across an open valley: this is the view along the lake, and the
-            // lake is what makes it Jotunheimen rather than another range. Low ground in
-            // front as well, so the walls start out past the brochures; without it, the
-            // nearest wall rose straight up the whole left third of the frame.
-            LandForm(
-                relief: 1.20, featureScale: 1.15, octaves: 4, crest: .peaks, shaping: 1.90,
-                beds: 0, bedding: 0, canyon: 0.50, canyonWalls: 3.0, foreground: 1.50,
-                lake: 0.20, seaLevel: 0.05, river: 0, snowLine: 0.30, snowTop: 0.46,
-                snowSlope: 0.50,
-                flora: .birchwood, floraDensity: 0.80, cameraHeight: 0.30,
-                landmarks: [
-                    // A horn at the head of the lake. The trough runs on past the end
-                    // of the march, and without something standing across it the
-                    // valley ended in open sky. Fluted deep and cut away on one side, so
-                    // it is a summit ice has worked on all round, not a cone.
-                    .init(
-                        x: 0.10, z: 3.05, width: 1.05, depth: 0.80, height: 0.95,
-                        profile: .peak, shear: .init(facing: 0.35, at: 0.18),
-                        spurs: 7, rock: 0.55, plinth: 0
-                    ),
-                ]
-            )
+        case .fuji: .fuji
+        case .jotunheimen: .jotunheimen
+        case .aoraki: .aoraki
+        case .moraineLake: .moraineLake
+        case .cradleMountain: .cradleMountain
         }
-    }
-}
-
-/// Deterministic value noise. No system random anywhere: the icon has to come out
-/// byte-identical on every machine that builds it.
-enum Noise {
-    static func fbm(x: Double, y: Double, octaves: Int) -> Double {
-        var total = 0.0
-        var amplitude = 0.5
-        var frequency = 1.0
-        var normalisation = 0.0
-
-        for _ in 0 ..< octaves {
-            total += value(x: x * frequency, y: y * frequency) * amplitude
-            normalisation += amplitude
-            amplitude *= 0.5
-            frequency *= 2.07
-        }
-        return total / normalisation
-    }
-
-    /// Ridged noise folded per octave rather than once over the sum. See
-    /// `LandForm.Crest.peaks` for why that is the difference between a range and a mesa.
-    static func peaks(x: Double, y: Double, octaves: Int) -> Double {
-        var total = 0.0
-        var amplitude = 0.5
-        var frequency = 1.0
-        var normalisation = 0.0
-
-        for _ in 0 ..< octaves {
-            let fold = 1 - abs(value(x: x * frequency, y: y * frequency) * 2 - 1)
-            total += fold * amplitude
-            normalisation += amplitude
-            amplitude *= 0.5
-            frequency *= 2.07
-        }
-        return total / normalisation
-    }
-
-    /// A stable fraction in 0..<1 for a column index, used to offset where that column
-    /// starts its march. Deterministic, because the icon has to come out byte-identical.
-    static func phase(for column: Int) -> Double {
-        var h = UInt64(truncatingIfNeeded: column) &* 0x9E37_79B9_7F4A_7C15
-        h ^= h >> 31
-        h = h &* 0x7FB5_D329_728E_A185
-        h ^= h >> 27
-        return Double(h % 10000) / 10000
-    }
-
-    private static func value(x: Double, y: Double) -> Double {
-        let xi = x.rounded(.down)
-        let yi = y.rounded(.down)
-        let xf = x - xi
-        let yf = y - yi
-
-        // Smoothstep, so the lattice does not show as a grid of creases.
-        let u = xf * xf * (3 - 2 * xf)
-        let v = yf * yf * (3 - 2 * yf)
-
-        let a = hash(xi, yi)
-        let b = hash(xi + 1, yi)
-        let c = hash(xi, yi + 1)
-        let d = hash(xi + 1, yi + 1)
-
-        return (a * (1 - u) + b * u) * (1 - v) + (c * (1 - u) + d * u) * v
-    }
-
-    private static func hash(_ x: Double, _ y: Double) -> Double {
-        var h = UInt64(bitPattern: Int64(x.rounded())) &* 0x9E37_79B9_7F4A_7C15
-        h ^= UInt64(bitPattern: Int64(y.rounded())) &* 0xC2B2_AE3D_27D4_EB4F
-        h ^= h >> 29
-        h = h &* 0xBF58_476D_1CE4_E5B9
-        h ^= h >> 32
-        return Double(h % 100_000) / 100_000
     }
 }

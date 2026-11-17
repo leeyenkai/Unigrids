@@ -1,19 +1,19 @@
 # IconGenerator
 
-Draws the Unigrids app icon and its eleven alternates, and writes them into
+Draws the Unigrids app icon and its fourteen alternates, and writes them into
 `App/Unigrids/Assets.xcassets`: thirteen PNGs for the shipping icon in
 `AppIcon.appiconset`, three for each alternate in `AppIcon-<park>.appiconset`, and the
 `Contents.json` that indexes each set.
 
 ```bash
-cd Tools/IconGenerator && swift run -c release IconGenerator --all            # all twelve sets
+cd Tools/IconGenerator && swift run -c release IconGenerator --all            # all fifteen sets
 cd Tools/IconGenerator && swift run -c release IconGenerator                  # Zion only
 cd Tools/IconGenerator && swift run -c release IconGenerator --park olympic --preview /tmp/look
 ```
 
 `--park` takes a `Scene` raw value: `zion`, `grandCanyon`, `yosemite`, `sequoia`,
 `rockyMountain`, `olympic`, `acadia`, `joshuaTree`, `everglades`, `congaree`, `fuji`,
-`jotunheimen`. An unknown
+`jotunheimen`, `aoraki`, `moraineLake`, `cradleMountain`. An unknown
 name is an error rather than a silent fall back to Zion. `--preview` writes a handful of
 sizes and leaves the asset catalogue alone; a directory argument writes there instead.
 Build in release: the terrain march is a few million samples per image and a debug
@@ -35,9 +35,10 @@ three Unigrid brochures lie fanned across the foreground as sheets of frosted gl
 park showing blurred through them. The top of each sheet carries the black band, which is
 the one opaque thing in the mark and the one that says Unigrid.
 
-Twelve parks are built: the ten US parks the mark was first drawn for, and two abroad —
-**Fuji-Hakone-Izu** in Japan and **Jotunheimen** in Norway. **Zion** is the default and
-what ships; the other eleven are alternate icons the reader can choose in Settings (iOS
+Fifteen parks are built: the ten US parks the mark was first drawn for, and five abroad —
+**Fuji-Hakone-Izu** in Japan, **Jotunheimen** in Norway, **Aoraki/Mount Cook** in New
+Zealand, **Banff** in Canada (Moraine Lake) and **Cradle Mountain–Lake St Clair** in
+Australia. **Zion** is the default and what ships; the other fourteen are alternate icons the reader can choose in Settings (iOS
 and iPadOS only — macOS has no alternate app icons).
 
 ### How it is rendered
@@ -95,22 +96,25 @@ a stroke around a pane of glass is a sticker's edge rather than a sheet's.
 
 ### The parks
 
-Twelve of them, and the reader picks which one the app wears. The park's own land stands
+Fifteen of them, and the reader picks which one the app wears. The park's own land stands
 behind the stack and **its brochure is the one on top**, with the next two parks round
 the list behind it — so every variant shows a different trio and no variant shows the
-same park twice. The ten US parks go round **their own ring of ten**, closed on itself as
-it was before the parks abroad joined, so adding a park leaves every existing icon
-byte-for-byte as it was; the two abroad go round the whole list, which puts Jotunheimen
-and Zion under Fuji, and Zion and the Grand Canyon under Jotunheimen. Each park's terrain
+same park twice. Each park goes round **the list as it stood when it joined**, closed on
+itself, so adding a park leaves every existing icon byte-for-byte as it was: the ten US
+parks round their own ring of ten; Fuji and Jotunheimen round those twelve, which puts
+Jotunheimen and Zion under Fuji, and Zion and the Grand Canyon under Jotunheimen; and the
+three after them round the whole list — Banff and Cradle Mountain under Aoraki, Cradle
+Mountain and Zion under Banff, Zion and the Grand Canyon under Cradle Mountain. Each park's terrain
 is rendered once and reused by whichever sheet needs it, so three sheets cost three
 terrains rather than nine.
 
-A park is a row in a table, not a function: `LandForm` in `Heightfield.swift` says how
-much relief there is, how large the landforms are, what the crests do, whether the rock
-beds, where the low ground is, where the water stands, where the snow lies, what grows,
-where the camera stands and whether a landmark rises out of the rest. `Scene.swift` says what
-colour it all is and how much of it carries plants. Twelve bespoke height functions would
-have been twelve places to get the same thing subtly wrong.
+A park is a row in a table, not a function: `LandForm` in `Heightfield.swift` (and, for
+the parks abroad, `Abroad.swift`) says how much relief there is, how large the landforms
+are, what the crests do, whether the rock beds, where the low ground is, where the water
+stands, where the snow lies, what grows, where the camera stands and whether a landmark
+or a massif rises out of the rest. `Land.swift` (and `AbroadColours.swift`) says what
+colour it all is and how much of it carries plants. Fifteen bespoke height functions would
+have been fifteen places to get the same thing subtly wrong.
 
 A new park extends the table only where it needs something no park had, and every new
 field defaults to what the existing parks already did, so none of their output moves. The
@@ -119,6 +123,21 @@ holds one sheet of water from shore to shore rather than flooding the noise's ho
 ponds), a **snow top** (so a cone standing twice the height of the hills can carry its cap
 on its upper half only), and a **snow slope** (so the slope rather than the light decides
 where snow lies). Plus a **cone** profile for Fuji and **mountain birch** for Jotunheimen.
+
+The three after them added one thing more, the **massif** (`Massif.swift`): a mountain
+wall set out by its own skyline, point by point, for a mountain whose outline is the whole
+of what makes it that mountain. Noise makes a range, but never a particular one; a
+landmark has one summit and the same outline from every bearing. Aoraki's long summit
+ridge, the Ten Peaks in their row and Cradle Mountain's crenellated crown are each a crest
+line joined point to point, broken by noise along the crest only, with flanks falling
+away from it, gullies cut straight down the faces with sharp ribs between them, spurs
+standing out of it so a face has a side to the sun, and — for dolerite — a sheer crown
+along the top. Plus **ice afloat** for Hooker Lake, drawn as plants are: objects standing
+on the surface, scattered, sized by distance and hidden by whatever is nearer.
+
+A long name is set smaller until it fits the band, rather than run off the end of the
+sheet. Only Cradle Mountain–Lake St Clair is long enough; every other name is set exactly
+as it was.
 
 Three things that have to be relative to the park rather than fixed, each of which broke
 a park when it was not:
@@ -228,6 +247,28 @@ them. The birch is a loose, gappy oval crown on two pale, crooked stems; a full 
 is a lime tree in a park. As with every park, the land is noise and no particular ridge is
 drawn.
 
+**Aoraki/Mount Cook.** Hooker Lake from its shore at the end of the Hooker Valley
+track: grey glacial water with bergs afloat on it, tussock-brown moraine either side, and
+Aoraki white over all of it at the head of the valley — the summit a little right of
+centre, the ridge stepping down to the left over Middle and Low Peak. The bergs are what
+make it this lake rather than another mountain over water. A low grey ridge of moraine
+stands across the head of the lake, as high as the mountain's snow line, so the snow
+starts behind a skyline of its own: started at a level line across the face, it read as
+a bank of mist. No Department of Conservation mark, and no Silver Fern.
+
+**Banff.** Moraine Lake from the Rockpile: the turquoise only rock flour gives a lake,
+spruce and fir down to the water on both sides, and the Valley of the Ten Peaks standing
+in a row across the head of it, each summit set out by hand at its own height and spacing
+— an even row of them was a saw blade. Little snow, on the ledges only: it is a summer
+view, and snow left to the light put a pale coat on every face. No Parks Canada beaver.
+
+**Cradle Mountain–Lake St Clair.** Dove Lake from its northern shore: dark, peat-stained
+water across the front, scrub and buttongrass up from the far shore, and the mountain's
+crown of dolerite on its own talus — the Little Horn apart to the left, then Weindorfers
+Tower, Smithies Peak and the summit along the crest. The crown is sheer and striped
+straight down, because dolerite sets in columns; it is as tall as the summits are high,
+or it ran out to the edge of the frame as a low wall. No state or federal agency mark.
+
 ## Rules the mark is held to
 
 - Shading follows one light and stays subtle. Wide tonal swings read as plastic and a hard
@@ -242,7 +283,8 @@ drawn.
   they cost nothing and cannot step.
 - **No NPS arrowhead** (`AGENTS.md` §5) — a registered trademark. The band is a plain
   rectangle and carries nothing. By the same rule, never Japan's national park mark or
-  Norway's national park logo on the icons for the parks abroad.
+  Norway's national park logo on the icons for the parks abroad, nor the Department of
+  Conservation's, Parks Canada's or Tasmania's — and no Silver Fern.
 
 ## What gets written
 

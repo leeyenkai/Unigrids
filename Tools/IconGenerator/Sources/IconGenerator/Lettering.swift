@@ -14,7 +14,8 @@ import Foundation
 /// Helvetica Neue ships on every Apple platform and is the face the guides inside the app
 /// already use, so the icon and the app are set in the same thing.
 enum Lettering {
-    /// Draws `text` in caps, left-aligned inside `box`, at a size that fits its height.
+    /// Draws `text` left-aligned inside `box`, at a size that fits its height — or its
+    /// width, for text too long to fit at that.
     ///
     /// `box` is in the sheet's own coordinates, so the caller's transform carries the
     /// type onto the rotated sheet with everything else.
@@ -26,17 +27,25 @@ enum Lettering {
         ink: Ink,
         context: CGContext
     ) {
-        let font = CTFontCreateWithName(face as CFString, box.height, nil)
-        let attributes: [CFString: Any] = [
-            kCTFontAttributeName: font,
-            kCTForegroundColorAttributeName: ink.cgColor(),
-            kCTKernAttributeName: tracking,
-        ]
-        let attributed = CFAttributedStringCreate(
-            nil, text as CFString, attributes as CFDictionary
+        guard var (font, line) = set(
+            text,
+            face: face,
+            size: box.height,
+            tracking: tracking,
+            ink: ink
         )
-        guard let attributed else { return }
-        let line = CTLineCreateWithAttributedString(attributed)
+        else { return }
+
+        // A name too long for the band is set smaller until it fits, rather than run off
+        // the end of the sheet. Every name that fits — all of them until Cradle
+        // Mountain–Lake St Clair — is set exactly as it was.
+        let width = CTLineGetTypographicBounds(line, nil, nil, nil)
+        if width > box.width, width > 0 {
+            let size = box.height * box.width / width
+            guard let fitted = set(text, face: face, size: size, tracking: tracking, ink: ink)
+            else { return }
+            (font, line) = fitted
+        }
 
         // Optically centred on the cap, not on the em box. Centring on the em box sits
         // the name high, because the box reserves descender space that "Zion" barely
@@ -50,5 +59,24 @@ enum Lettering {
         context.textPosition = .zero
         CTLineDraw(line, context)
         context.restoreGState()
+    }
+
+    private static func set(
+        _ text: String,
+        face: String,
+        size: CGFloat,
+        tracking: CGFloat,
+        ink: Ink
+    ) -> (CTFont, CTLine)? {
+        let font = CTFontCreateWithName(face as CFString, size, nil)
+        let attributes: [CFString: Any] = [
+            kCTFontAttributeName: font,
+            kCTForegroundColorAttributeName: ink.cgColor(),
+            kCTKernAttributeName: tracking,
+        ]
+        guard let attributed = CFAttributedStringCreate(
+            nil, text as CFString, attributes as CFDictionary
+        ) else { return nil }
+        return (font, CTLineCreateWithAttributedString(attributed))
     }
 }
