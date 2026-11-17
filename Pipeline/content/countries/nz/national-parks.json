@@ -1,0 +1,98 @@
+{
+  "_about": "New Zealand's 13 national parks, 3 in the North Island and 10 in the South Island and Rakiura, as the Department of Conservation lists them (doc.govt.nz, national parks, checked 17 November 2026). IDs are permanent: user logs point at them. 'name' is the park's short official name as DOC titles its page, without 'National Park'; Te Papa-Kura-o-Taranaki is the name the 2025 Act gave the former Egmont National Park, and is the park's whole name. 'napalisId' keys it to DOC's Public Conservation Land layer (NaPALIS_ID, Section S4_NATIONAL_PARK), from which the pipeline reads the outline and the regions it lies in. 'docPage' is the park's page on doc.govt.nz, the official page and the one its brochures and maps are read from. 'localNames' carries a te reo Māori form only where the official record names one apart from the park's name: the Public Conservation Land record of Westland names it 'Westland National Park/Tai Poutini National Park'. Dual names (Aoraki/Mount Cook) and te reo names (Rakiura, Te Papa-Kura-o-Taranaki) are already the name. 'passportRegion' is Unigrids' own grouping (ADR 0014): North Island; Upper South Island (Nelson Tasman, the West Coast and Canterbury); Lower South Island and Rakiura (Otago, Fiordland, Southland). 'reachedBy' is how a park with no road to it is reached, from DOC's page: Rakiura is a one-hour ferry from Bluff or a 20-minute flight from Invercargill. Founding dates and areas are curated in each guide's facts with their source; the Public Conservation Land 'Start_Date' is a land record's date, not the park's founding, and is not used.",
+  "parks": [
+    {
+      "id": "nz-np-tongariro",
+      "name": "Tongariro",
+      "napalisId": "2793719",
+      "passportRegion": "northIsland",
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/"
+    },
+    {
+      "id": "nz-np-te-papa-kura-o-taranaki",
+      "name": "Te Papa-Kura-o-Taranaki",
+      "napalisId": "2792897",
+      "passportRegion": "northIsland",
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/"
+    },
+    {
+      "id": "nz-np-whanganui",
+      "name": "Whanganui",
+      "napalisId": "2792901",
+      "passportRegion": "northIsland",
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/manawatu-whanganui/places/whanganui-national-park/"
+    },
+    {
+      "id": "nz-np-abel-tasman",
+      "name": "Abel Tasman",
+      "napalisId": "2803470",
+      "passportRegion": "upperSouthIsland",
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/"
+    },
+    {
+      "id": "nz-np-kahurangi",
+      "name": "Kahurangi",
+      "napalisId": "2799319",
+      "passportRegion": "upperSouthIsland",
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/"
+    },
+    {
+      "id": "nz-np-nelson-lakes",
+      "name": "Nelson Lakes",
+      "napalisId": "2803471",
+      "passportRegion": "upperSouthIsland",
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/nelson-lakes-national-park/"
+    },
+    {
+      "id": "nz-np-paparoa",
+      "name": "Paparoa",
+      "napalisId": "2808379",
+      "passportRegion": "upperSouthIsland",
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/paparoa-national-park/"
+    },
+    {
+      "id": "nz-np-arthurs-pass",
+      "name": "Arthur's Pass",
+      "napalisId": "2806320",
+      "passportRegion": "upperSouthIsland",
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/arthurs-pass-national-park/"
+    },
+    {
+      "id": "nz-np-westland-tai-poutini",
+      "name": "Westland Tai Poutini",
+      "napalisId": "2805330",
+      "passportRegion": "upperSouthIsland",
+      "localNames": [{"language": "mi", "text": "Tai Poutini National Park"}],
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/westland-tai-poutini-national-park/"
+    },
+    {
+      "id": "nz-np-aoraki-mount-cook",
+      "name": "Aoraki/Mount Cook",
+      "napalisId": "2805070",
+      "passportRegion": "upperSouthIsland",
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/aoraki-mount-cook-national-park/"
+    },
+    {
+      "id": "nz-np-mount-aspiring",
+      "name": "Mount Aspiring",
+      "napalisId": "2801099",
+      "passportRegion": "lowerSouthIsland",
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/mount-aspiring-national-park/"
+    },
+    {
+      "id": "nz-np-fiordland",
+      "name": "Fiordland",
+      "napalisId": "2801633",
+      "passportRegion": "lowerSouthIsland",
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/"
+    },
+    {
+      "id": "nz-np-rakiura",
+      "name": "Rakiura",
+      "napalisId": "2801496",
+      "passportRegion": "lowerSouthIsland",
+      "reachedBy": "Ferry from Bluff, or a flight from Invercargill",
+      "docPage": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/"
+    }
+  ]
+}

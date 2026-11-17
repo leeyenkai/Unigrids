@@ -44,6 +44,34 @@ GEOFABRIK_JAPAN = "https://download.geofabrik.de/asia/japan-latest.osm.pbf"
 SOURCE = "geofabrik"
 JAPAN_FILE = "japan-latest.osm.pbf"
 
+
+@dataclass(frozen=True)
+class Extract:
+    """One country's Geofabrik extract: where it is published, and the raw store folder
+    and file name it is kept under. Each country keeps its own folder, so one download's
+    ``source.json`` never overwrites another's."""
+
+    source: str
+    url: str
+    filename: str
+
+
+EXTRACTS: dict[str, Extract] = {
+    "jp": Extract(SOURCE, GEOFABRIK_JAPAN, JAPAN_FILE),
+    "nz": Extract(
+        "geofabrik-nz",
+        "https://download.geofabrik.de/australia-oceania/new-zealand-latest.osm.pbf",
+        "new-zealand-latest.osm.pbf",
+    ),
+}
+
+
+def extract_for(country: str) -> Extract:
+    """The extract a country reads, or a ``ValueError`` naming the ones there are."""
+    if country not in EXTRACTS:
+        raise ValueError(f"no Geofabrik extract for {country!r}; known: {', '.join(EXTRACTS)}")
+    return EXTRACTS[country]
+
 GEOFABRIK_TERMS = SourceTerms(
     identifier="geofabrik-osm-extract",
     title="OpenStreetMap extract from Geofabrik (download.geofabrik.de)",
@@ -148,7 +176,11 @@ def describe(extract: Path) -> dict[str, Any]:
     """Where an extract came from, for the ``source.json`` of every file read out of it:
     its dated URL, its place in the raw store, its SHA-256 and the moment its data stands
     at — enough to say exactly which OpenStreetMap a raw file was cut from."""
-    described: dict[str, Any] = {"url": GEOFABRIK_JAPAN, "extract": extract.name}
+    published = next(
+        (known.url for known in EXTRACTS.values() if known.filename == extract.name),
+        GEOFABRIK_JAPAN,
+    )
+    described: dict[str, Any] = {"url": published, "extract": extract.name}
     record = extract.parent / "source.json"
     if record.exists():
         payload = json.loads(record.read_text())

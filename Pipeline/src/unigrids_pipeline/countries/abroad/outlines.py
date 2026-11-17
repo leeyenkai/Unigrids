@@ -9,8 +9,11 @@ run without a reference build, so they read the outline sources directly:
   its zones, joined by the park's Japanese name, as the Japanese build joins them.
 * **Norway**: Miljødirektoratet's Naturvernområder service (N1, N2) in WGS84, the copy the
   Norwegian fetch keeps in ``raw/<date>/no-naturvern/``, or one asked for here.
+* **New Zealand**: DOC's Public Conservation Land layer (CC BY 4.0), the national parks
+  (Section ``S4_NATIONAL_PARK``) in WGS84, joined by ``NaPALIS_ID``: the copy the New
+  Zealand fetch keeps in ``raw/<date>/nz-pcl/``, or one asked for here.
 
-Both country packages are read, never changed: Japan's Shapefile reader and union are
+The country packages are read, never changed: Japan's Shapefile reader and union are
 reused as they are.
 """
 
@@ -25,18 +28,27 @@ from ... import config, outline, rawstore
 from ...rawstore import FetchRecord, SourceTerms
 from ...sources import http
 
-COUNTRIES = ("jp", "no")
+COUNTRIES = ("jp", "no", "nz")
 
 NPS_ZIP_URL = "https://www.biodic.go.jp/shapedata/nps.zip"
 NPS_ZIP = "nps.zip"
 VERN_LAYER = "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/MapServer/0"
 NATIONAL_PARKS_WHERE = "verneform IN ('Nasjonalpark','NasjonalparkSvalbard')"
+PCL_LAYER = (
+    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/ArcGIS/rest/services/"
+    "DOC_Public_Conservation_Land_FHV/FeatureServer/0"
+)
+PCL_NATIONAL_PARKS_WHERE = "Section = 'S4_NATIONAL_PARK'"
 
-SOURCES = {"jp": "abroad-outlines-jp", "no": "abroad-outlines-no"}
+SOURCES = {"jp": "abroad-outlines-jp", "no": "abroad-outlines-no", "nz": "abroad-outlines-nz"}
 """Where outlines this module fetched or derived are kept, one folder per country so each
 carries its own terms."""
 
-COUNTRY_SOURCES = {"jp": ("jp-biodic", NPS_ZIP), "no": ("no-naturvern", "national-parks.geojson")}
+COUNTRY_SOURCES = {
+    "jp": ("jp-biodic", NPS_ZIP),
+    "no": ("no-naturvern", "national-parks.geojson"),
+    "nz": ("nz-pcl", "national-parks.geojson"),
+}
 """What the country packages' own fetches leave in the raw store, read first."""
 
 TERMS = {
@@ -64,6 +76,14 @@ TERMS = {
             "distributed by Miljødirektoratet"
         ),
         notes="Geometry in WGS84 (outSR 4326); a park split into several features is joined.",
+    ),
+    "nz": SourceTerms(
+        identifier="doc-public-conservation-land",
+        title="Department of Conservation, Public Conservation Land: national parks",
+        url=PCL_LAYER,
+        licence="CC BY 4.0",
+        attribution="Crown Copyright: Department of Conservation Te Papa Atawhai",
+        notes="Geometry in WGS84 (outSR 4326), joined to the park list by NaPALIS_ID.",
     ),
 }
 
@@ -100,6 +120,8 @@ def outlines(country: str, *, online: bool = True) -> dict[str, list[outline.Pol
         return _japan(online=online)
     if country == "no":
         return _norway(online=online)
+    if country == "nz":
+        return _new_zealand(online=online)
     raise ValueError(f"no parks abroad for {country!r}; known: {', '.join(COUNTRIES)}")
 
 
@@ -190,6 +212,64 @@ def _download_naturvern() -> Path:
             if "error" in payload:
                 raise http.FetchError(f"{VERN_LAYER} refused the query: {payload['error']}")
             record.add_request(f"{VERN_LAYER}/query", parameters)
+            page = payload.get("features") or []
+            features.extend(page)
+            exceeded = payload.get("exceededTransferLimit") or (
+                payload.get("properties") or {}
+            ).get("exceededTransferLimit")
+            if not page or not exceeded:
+                break
+            offset += len(page)
+    path = directory / "national-parks.geojson"
+    path.write_text(json.dumps({"type": "FeatureCollection", "features": features}))
+    record.add_file(path, root=directory)
+    record.write(directory)
+    return path
+
+
+# MARK: - New Zealand
+
+
+def _new_zealand(*, online: bool) -> dict[str, list[outline.Polygon]]:
+    path = _source_file("nz")
+    if path is None:
+        if not online:
+            raise SystemExit("no Public Conservation Land national parks in the raw store")
+        path = _download_pcl()
+    by_napalis = {str(entry["napalisId"]): entry["id"] for entry in park_list("nz")}
+    found: dict[str, list[outline.Polygon]] = {}
+    for feature in json.loads(path.read_text()).get("features") or []:
+        properties = feature.get("properties") or {}
+        park_id = by_napalis.get(str(properties.get("NaPALIS_ID") or ""))
+        if park_id:
+            found.setdefault(park_id, []).extend(outline.polygons_of(feature.get("geometry")))
+    return found
+
+
+def _download_pcl() -> Path:
+    directory = rawstore.version_directory(SOURCES["nz"])
+    record = FetchRecord(source=TERMS["nz"], fetched_at=rawstore.utc_now())
+    features: list[dict[str, Any]] = []
+    offset = 0
+    with http.client() as session:
+        while True:
+            parameters = {
+                "where": PCL_NATIONAL_PARKS_WHERE,
+                "outFields": "NaPALIS_ID,Name,Section",
+                "returnGeometry": "true",
+                "outSR": "4326",
+                "geometryPrecision": "6",
+                "orderByFields": "OBJECTID",
+                "f": "geojson",
+                "resultOffset": str(offset),
+                "resultRecordCount": "2",
+            }
+            response = http.get(session, f"{PCL_LAYER}/query", params=parameters,
+                                expect="application")
+            payload = response.json()
+            if "error" in payload:
+                raise http.FetchError(f"{PCL_LAYER} refused the query: {payload['error']}")
+            record.add_request(f"{PCL_LAYER}/query", parameters)
             page = payload.get("features") or []
             features.extend(page)
             exceeded = payload.get("exceededTransferLimit") or (

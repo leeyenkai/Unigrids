@@ -17,6 +17,10 @@ the line comes from the best source each country has, and the measuring does not
   paths across a park, and joining them would make a trail nobody could walk.
 * **A Norwegian park with no Turrutebasen route** is filled from OpenStreetMap the same
   way. Svalbard's parks and the other trailless ones simply get none.
+* **New Zealand: DOC Tracks**, the Department of Conservation's register of the tracks it
+  maintains (CC BY 4.0), read whole by the New Zealand fetch; ``countries.nz.tracks`` turns
+  its records into routes, with DOC's walking track category. A park DOC's layer leaves
+  without a track is filled from OpenStreetMap, read out of Geofabrik's extract.
 
 Then, exactly as at home: segments are chained (``trails.chain``), laid in walking order,
 resampled every 30 m, sampled on the elevation model (abroad: Copernicus GLO-30), smoothed
@@ -60,7 +64,7 @@ MIN_LENGTH_M = trail_catalogue.MIN_LENGTH_M
 LINE_TOLERANCE_DEGREES = trail_catalogue.LINE_TOLERANCE_DEGREES
 BOUNDARY_BUFFER_DEGREES = trail_catalogue.BOUNDARY_BUFFER_DEGREES
 
-COUNTRIES = ("jp", "no")
+COUNTRIES = ("jp", "no", "nz")
 
 TURRUTEBASEN = "no-turrutebasen"
 TURRUTEBASEN_WFS = "https://wfs.geonorge.no/skwms1/wfs.turogfriluftsruter"
@@ -74,7 +78,7 @@ GRADES = frozenset({"G", "B", "R", "S", "I"})
 UNNAMED = frozenset({"", "ukjent", "ukjend", "unknown"})
 """Route names that are the database saying it has none."""
 
-OSM_TRAIL_SOURCES = {"jp": "jp-osm-trails", "no": "no-osm-trails"}
+OSM_TRAIL_SOURCES = {"jp": "jp-osm-trails", "no": "no-osm-trails", "nz": "nz-osm-trails"}
 OSM_TRAIL_KINDS = "path|footway"
 OSM_PAUSE_SECONDS = 10.0
 """Between one park's Overpass query and the next: the servers are volunteer-run."""
@@ -140,6 +144,9 @@ class Route:
     uses: str | None = None
     names: tuple[str, ...] = ()
     """Every form of the name, for reading features from it (``name``, ``name:en``)."""
+    extra: Record = field(default_factory=dict)
+    """Fields the source publishes that the record carries as they are (DOC's category,
+    whether dogs may come)."""
 
     @property
     def bikes_allowed(self) -> bool:
@@ -243,6 +250,15 @@ def fetch(
                     left.append(park["id"])
                     continue
                 routes = turrutebasen_routes(park, features, polygons)
+            elif country == "nz":
+                from ..nz import tracks as doc_tracks
+
+                doc_features = doc_tracks.read_features()
+                if doc_features is None:
+                    # The New Zealand fetch reads DOC's layer first; without it, wait.
+                    left.append(park["id"])
+                    continue
+                routes = doc_tracks.routes(park, doc_features, polygons)
             if not routes:
                 wanted = refresh or _latest(OSM_TRAIL_SOURCES[country], park["id"]) is None
                 if wanted and fetch_osm(session, country, park, polygons, version) is None:
@@ -275,6 +291,15 @@ def park_routes(
                 print(f"    trails (no): no Turrutebasen routes fetched for {park['id']}")
                 return []
             if routes := turrutebasen_routes(park, features, polygons):
+                return routes
+        if country == "nz":
+            from ..nz import tracks as doc_tracks
+
+            doc_features = doc_tracks.read_features()
+            if doc_features is None:
+                print(f"    trails (nz): no DOC Tracks fetched for {park['id']}")
+                return []
+            if routes := doc_tracks.routes(park, doc_features, polygons):
                 return routes
         if online and _latest(OSM_TRAIL_SOURCES[country], park["id"]) is None:
             fetch_osm(session, country, park, polygons, rawstore.today())
@@ -966,6 +991,8 @@ def trail_record(
         record["bikesAllowed"] = True
     if route.uses:
         record["uses"] = route.uses
+    for key, value in route.extra.items():
+        record.setdefault(key, value)
     if on_route := trail_catalogue._sights_along(chains, sights):
         record["sightIDs"] = on_route
     if found := features(route.names or (route.name,)):
@@ -1138,6 +1165,8 @@ def measurement_method() -> Record:
         "segmentJoinToleranceMetres": trails.JOIN_TOLERANCE_M,
         "lineSources": {
             "kartverket": "Kartverket Turrutebasen (CC BY 4.0, ©Kartverket)",
+            "doc": "DOC Tracks (CC BY 4.0, Crown Copyright: Department of Conservation "
+            "Te Papa Atawhai)",
             "osm": "OpenStreetMap (ODbL), © OpenStreetMap contributors",
         },
     }

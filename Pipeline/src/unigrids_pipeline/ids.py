@@ -88,6 +88,8 @@ PLACE_NAMESPACES: dict[str, tuple[str, ...]] = {
     "jp": ("np", "qnp"),
     # Nasjonalparker, landskapsvernområder and naturreservater.
     "no": ("np", "lvo", "nr"),
+    # National parks, and conservation and forest parks (Conservation Act s 19).
+    "nz": ("np", "cp"),
 }
 
 REGISTRY_KINDS = ("places", "pois", "trails")

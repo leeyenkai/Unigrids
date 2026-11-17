@@ -41,7 +41,7 @@ OSM_SOURCE = "osm"
 # sidewalks and crossings a town's footways are.
 DRAWN_PATHS = frozenset({"path", "footway", "bridleway", "steps"})
 
-COUNTRY_NAMES = {"jp": "Japan", "no": "Norway"}
+COUNTRY_NAMES = {"jp": "Japan", "no": "Norway", "nz": "New Zealand"}
 NOT_AFFILIATED = {
     "jp": (
         "It is **not** a product of Japan's Ministry of the Environment and implies no "
@@ -50,6 +50,10 @@ NOT_AFFILIATED = {
     "no": (
         "It is **not** a product of Miljødirektoratet or Norway's national park boards and "
         "implies no affiliation or endorsement. It carries no Norges nasjonalparker symbol."
+    ),
+    "nz": (
+        "It is **not** a product of the Department of Conservation Te Papa Atawhai and "
+        "implies no affiliation with it or endorsement by it. It carries no DOC logo."
     ),
 }
 
@@ -476,6 +480,13 @@ def _write_attribution(
         lines += [
             "**Kartverket.** Turrutebasen's routes and grades are CC BY 4.0, «©Kartverket».",
             "Grades are quoted as Kartverket's codes, never its criteria text.",
+            "",
+        ]
+    if country == "nz":
+        lines += [
+            "**Department of Conservation.** Park outlines from Public Conservation Land and",
+            "trail lines and categories from DOC Tracks are CC BY 4.0, Crown Copyright:",
+            "Department of Conservation Te Papa Atawhai.",
             "",
         ]
     lines += [
