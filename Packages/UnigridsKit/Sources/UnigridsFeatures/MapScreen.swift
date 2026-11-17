@@ -247,14 +247,7 @@ public struct MapScreen: View {
             .task(id: layers.isEmpty) {
                 await loadTransportIfNeeded()
             }
-            .task {
-                await alerts?.refreshIfStale()
-                // One fetch covers every Japanese park's volcanoes, for the map's badges.
-                let japan = store.nationalParks.filter { $0.country == .japan }
-                await alerts?.refreshJapan(japan.map { ($0, store.boundary(for: $0.id)) })
-                // Varsom answers by position: every Norwegian park, a few at a time.
-                await alerts?.refreshNorway(store.nationalParks.filter { $0.country == .norway })
-            }
+            .task { await refreshAlerts() }
             .onAppear(perform: applyDebugLaunch)
             .onChange(of: router?.pending, initial: true) { takeRoute() }
         }
@@ -487,5 +480,17 @@ extension MapScreen {
 extension MapScreen {
     private var typeCounts: [SiteType: Int] {
         Dictionary(grouping: store.places, by: \.siteType).mapValues(\.count)
+    }
+}
+
+extension MapScreen {
+    /// Every country's warnings, for the map's badges.
+    private func refreshAlerts() async {
+        await alerts?.refreshIfStale()
+        // One fetch covers every Japanese park's volcanoes.
+        let japan = store.nationalParks.filter { $0.country == .japan }
+        await alerts?.refreshJapan(japan.map { ($0, store.boundary(for: $0.id)) })
+        // Varsom answers by position: every Norwegian park, a few at a time.
+        await alerts?.refreshNorway(store.nationalParks.filter { $0.country == .norway })
     }
 }
