@@ -106,6 +106,16 @@ public enum PlaceKind: String, CaseIterable, Sendable, Codable {
         self == .scenicByway
     }
 
+    /// The agency a place of this kind in `country` answers to when its record names
+    /// none: abroad never the NPS or another US agency (ADR 0013).
+    public func defaultAgency(in country: Country) -> Agency {
+        switch country {
+        case .unitedStates: defaultAgency
+        case .japan: self == .quasiNationalPark ? .prefecture : .environmentMinistryJapan
+        case .norway: .environmentAgencyNorway
+        }
+    }
+
     public var defaultAgency: Agency {
         switch self {
         case .nationalPark, .npsUnit, .naturalLandmark: .nps

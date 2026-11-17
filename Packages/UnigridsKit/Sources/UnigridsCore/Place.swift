@@ -229,7 +229,7 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         self.name = name
         self.designation = designation
         self.kind = kind
-        self.agency = agency ?? kind.defaultAgency
+        self.agency = agency ?? kind.defaultAgency(in: country)
         self.states = states
         self.centre = centre
         self.extent = extent
@@ -263,8 +263,7 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         kind = try container.decode(PlaceKind.self, forKey: .kind)
         designation = try container.decodeIfPresent(String.self, forKey: .designation)
             ?? Place.defaultDesignation(for: kind)
-        agency = try container.decodeIfPresent(Agency.self, forKey: .agency)
-            ?? kind.defaultAgency
+        let namedAgency = try container.decodeIfPresent(Agency.self, forKey: .agency)
         states = try container.decodeIfPresent([USState].self, forKey: .states) ?? []
         centre = try container.decode(Coordinate.self, forKey: .centre)
         extent = try container.decodeIfPresent(BoundingBox.self, forKey: .extent)
@@ -291,6 +290,7 @@ public struct Place: Identifiable, Hashable, Sendable, Codable {
         visitorInfo = try? container.decodeIfPresent(PlaceVisitorInfo.self, forKey: .visitorInfo)
         managedBy = try container.decodeIfPresent(String.self, forKey: .managedBy)
         country = try container.decodeIfPresent(Country.self, forKey: .country) ?? .unitedStates
+        agency = namedAgency ?? kind.defaultAgency(in: country)
         // Unknown codes are dropped, never shown as a name: counties get renumbered.
         let codes = try? container.decodeIfPresent([String].self, forKey: .subdivisions)
         subdivisions = codes.map { $0.compactMap(Subdivision.named) }

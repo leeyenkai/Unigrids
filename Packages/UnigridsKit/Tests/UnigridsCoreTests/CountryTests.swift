@@ -106,6 +106,25 @@ struct PlaceCountryTests {
         #expect(place.localNames == [LocalName(language: "ja", text: "知床国立公園")])
     }
 
+    @Test("a national park abroad with no agency is never filed under the NPS")
+    func agencyAbroad() throws {
+        let place = try decode("""
+        {"id": "jp-np-shiretoko", "name": "Shiretoko", "kind": "nationalPark",
+         "country": "JP", "centre": {"latitude": 44.1, "longitude": 145.1}}
+        """)
+        #expect(place.agency == .environmentMinistryJapan)
+        let norway = try decode("""
+        {"id": "no-np-rondane", "name": "Rondane", "kind": "nationalPark",
+         "country": "NO", "centre": {"latitude": 61.9, "longitude": 9.8}}
+        """)
+        #expect(norway.agency == .environmentAgencyNorway)
+        let zion = try decode("""
+        {"id": "np-zion", "name": "Zion", "kind": "nationalPark",
+         "centre": {"latitude": 37.3, "longitude": -113.0}}
+        """)
+        #expect(zion.agency == .nps)
+    }
+
     @Test("an unknown subdivision is dropped, never shown as a name")
     func unknownSubdivisionDropped() throws {
         let place = try decode("""
