@@ -18,7 +18,7 @@ import shutil
 from pathlib import Path
 from typing import Any
 
-from . import config, coverage, dem, packs, rawstore, sizereport, trails
+from . import config, countries, coverage, dem, packs, rawstore, sizereport, trails
 from .geo import BoundingBox
 from .rawstore import FetchRecord, SourceTerms
 from .sources import arcgis, http, osm, threedep
@@ -202,8 +202,8 @@ def derive(*, park_code: str = config.DEFAULT_PARK) -> None:
     regions, climate normals and sight ranks are not built — they need the NPS API and the
     full unit list, which need a key.
 
-    A park abroad (``jp-np-…``, ``no-np-…``) is measured as the catalogue abroad measures
-    it, on Copernicus GLO-30 (``countries/abroad/packs.py``).
+    A park abroad (``jp-np-…``, ``nz-np-…``, any country but the US) is measured as the
+    catalogue abroad measures it, on Copernicus GLO-30 (``countries/abroad/packs.py``).
     """
     if _is_abroad(park_code):
         from .countries.abroad import packs as abroad
@@ -428,11 +428,15 @@ def package(*, parks: str | None = None) -> Path:
 PACK_FILES = ("tiles.mbtiles", "trails.json", "manifest.json", "ATTRIBUTION.md")
 
 
+ABROAD = tuple(code for code in countries.KNOWN if code != "us")
+"""The countries whose parks are named by place ID (``nz-np-tongariro``), not NPS code."""
+
+
 def _is_abroad(code: str) -> bool:
     """Whether ``--park`` names a park abroad by its place ID (``jp-np-chubusangaku``)
     rather than an NPS code. The abroad module is imported only when one is named."""
     parts = code.lower().split("-")
-    return len(parts) >= 3 and parts[0] in ("jp", "no")
+    return len(parts) >= 3 and parts[0] in ABROAD
 
 
 def _place_id(code: str) -> str:

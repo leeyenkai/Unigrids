@@ -89,8 +89,8 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers.choices["package"].add_argument(
         "--parks",
         help=(
-            "Comma-separated NPS codes or place IDs abroad (no-np-jotunheimen) to copy into "
-            "the app (default: every built pack)."
+            "Comma-separated NPS codes or place IDs abroad (no-np-jotunheimen, "
+            "ca-np-banff) to copy into the app (default: every built pack)."
         ),
     )
 
@@ -134,8 +134,11 @@ def _add_park_argument(parser: argparse.ArgumentParser) -> None:
         "--park",
         default=config.DEFAULT_PARK,
         help=(
-            f"NPS park code (pilot parks: {', '.join(sorted(config.PARKS))}), or a park "
-            "abroad by its place ID: jp-np-chubusangaku, no-np-jotunheimen."
+            f"NPS park code (pilot parks: {', '.join(sorted(config.PARKS))}), or any "
+            f"national park abroad ({', '.join(steps.ABROAD)}) by its place ID: "
+            "jp-np-chubusangaku, no-np-jotunheimen, nz-np-tongariro, ca-np-banff, "
+            "au-np-blue-mountains. Each country's list is "
+            "content/countries/<code>/national-parks.json."
         ),
     )
 

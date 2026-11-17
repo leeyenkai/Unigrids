@@ -18,11 +18,35 @@ def test_a_place_id_abroad_is_told_apart_from_an_nps_code():
     assert steps._place_id("ZION") == "np-zion"
 
 
+def test_a_national_park_in_any_country_abroad_can_have_a_pack():
+    assert set(steps.ABROAD) == set(packs.COUNTRIES)
+    for place_id in ("nz-np-tongariro", "au-np-blue-mountains", "ca-np-banff"):
+        assert packs.is_abroad(place_id)
+        assert steps._is_abroad(place_id)
+        assert steps._place_id(place_id) == place_id
+
+
 def test_a_park_abroad_is_found_in_its_countrys_content_list():
     park = packs.park("no-np-jotunheimen")
     assert park.place_id == "no-np-jotunheimen"
     assert park.slug == "jotunheimen"
     assert park.name == "Jotunheimen National Park"
+    assert packs.park("nz-np-tongariro").name == "Tongariro National Park"
+    assert packs.park("ca-np-banff").name == "Banff National Park"
+    blue_mountains = packs.park("au-np-blue-mountains")
+    assert blue_mountains.name == "Blue Mountains National Park"
+    assert blue_mountains.slug == "blue-mountains"
+
+
+def test_a_pack_is_titled_with_the_parks_designation_once():
+    assert packs.full_name({"name": "Tongariro"}) == "Tongariro National Park"
+    assert packs.full_name({"name": "Kakadu National Park"}) == "Kakadu National Park"
+    assert packs.full_name(
+        {"name": "Daintree National Park (CYPAL)"}
+    ) == "Daintree National Park (CYPAL)"
+    assert packs.full_name(
+        {"name": "Pacific Rim", "officialName": "Pacific Rim National Park Reserve"}
+    ) == "Pacific Rim National Park Reserve"
 
 
 def test_tiles_abroad_stop_at_zoom_15_whatever_the_area():
@@ -43,6 +67,12 @@ def test_the_credit_names_the_trail_sources_the_pack_uses():
     assert japan.endswith("· Trails OpenStreetMap")
     both = packs.attribution_line("no", [{"source": "osm"}], drawn_from=[Path("x")])
     assert both.endswith("· Trails Kartverket/OpenStreetMap")
+    new_zealand = packs.attribution_line("nz", [{"source": "doc"}], drawn_from=[])
+    assert new_zealand.endswith("· Trails Department of Conservation/OpenStreetMap")
+    canada = packs.attribution_line("ca", [{"source": "parksCanada"}], drawn_from=[])
+    assert canada.endswith("· Trails Parks Canada/OpenStreetMap")
+    new_south_wales = packs.attribution_line("au", [{"source": "osm"}], drawn_from=[])
+    assert new_south_wales.endswith("· Trails OpenStreetMap")
 
 
 def test_osm_footpaths_are_drawn_but_not_a_towns_sidewalks_or_its_roads():

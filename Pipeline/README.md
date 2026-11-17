@@ -188,14 +188,19 @@ map uses. No NPS arrowhead and no seal (`AGENTS.md` §5).
 `config.PARKS` keyed by NPS park code. The four pilot parks are there; everything else
 about a park is fetched from its unit code.
 
-A park abroad is named by its place ID, and its content list
-(`content/countries/<cc>/national-parks.json`) is all the configuration it needs:
+A national park abroad, in any of `jp`, `no`, `nz`, `ca` and `au`, is named by its place
+ID, and its content list (`content/countries/<cc>/national-parks.json`) is all the
+configuration it needs:
 
 ```bash
 uv run unigrids-pipeline fetch --park no-np-jotunheimen
 uv run unigrids-pipeline build --park no-np-jotunheimen
+uv run unigrids-pipeline build --park ca-np-banff --max-zoom 13   # a large park, held small
 uv run unigrids-pipeline package   # every built pack, at home and abroad
 ```
+
+A pack abroad stops at zoom 15, since Copernicus GLO-30's 30 m has nothing to add below
+it. Without `--max-zoom` a park's depth follows its area, as at home (ADR 0006).
 
 ## Why Python and not Swift
 

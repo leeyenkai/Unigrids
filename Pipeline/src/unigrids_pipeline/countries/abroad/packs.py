@@ -1,20 +1,27 @@
 """Offline packs for parks abroad: ``fetch``/``derive``/``build --park jp-np-chubusangaku``.
 
 A pack abroad is the same four files as at home (ADR 0006, 0010), drawn by the same
-renderer. What changes is where each layer comes from:
+renderer, for a national park in any of the five countries abroad. What changes is where
+each layer comes from:
 
 | Layer | At home | Abroad |
 |---|---|---|
-| Outline | NPS boundaries | MOE's ``nps.zip`` (Japan), Naturvernområder (Norway) |
+| Outline | NPS boundaries | the country's own (``outlines.py``) |
 | Relief and trail profiles | 3DEP at 10 m | Copernicus GLO-30 at 30 m |
 | Roads and water | OpenStreetMap | OpenStreetMap |
 | Trails drawn | NPS Public Trails | Turrutebasen's segments (Norway), OSM footpaths otherwise |
 | ``trails.json`` | measured NPS trails | the park's share of the catalogue abroad |
 
+The outlines are MOE's ``nps.zip`` (Japan), Naturvernområder (Norway), Public
+Conservation Land (New Zealand), CPCAD (Canada) and CAPAD (Australia). The catalogue's
+lines are DOC Tracks, Parks Canada's and QPWS's trails where the agency publishes them, and
+OpenStreetMap's where it publishes none or few.
+
 The deepest zoom is capped at 15: a 30 m model has nothing to show at zoom 16's two
-metres a pixel, and the renderer would only enlarge it. The manifest carries the credit
-line the app draws on the map (``"attribution"``), since a pack abroad owes different
-sources than the four US packs.
+metres a pixel, and the renderer would only enlarge it. A large park is held shallower
+with ``--max-zoom`` to keep its pack small. The manifest carries the credit line the app
+draws on the map (``"attribution"``), since a pack abroad owes different sources than the
+four US packs.
 """
 
 from __future__ import annotations
@@ -70,7 +77,7 @@ NOT_AFFILIATED = {
 
 
 def is_abroad(code: str) -> bool:
-    """Whether ``--park`` names a park abroad (``jp-np-…``, ``no-np-…``) rather than an
+    """Whether ``--park`` names a park abroad (``jp-np-…``, ``nz-np-…``) rather than an
     NPS code."""
     parts = code.lower().split("-")
     return len(parts) >= 3 and parts[0] in COUNTRIES
@@ -83,8 +90,19 @@ def park(place_id: str) -> config.Park:
         unit_code=entry["id"],
         place_id=entry["id"],
         slug=trails.park_slug(entry["id"]),
-        name=f"{entry['name']} National Park",
+        name=full_name(entry),
     )
+
+
+def full_name(entry: dict[str, Any]) -> str:
+    """The park's name with its designation, as the pack's title carries it: Canada's
+    official name ("Pacific Rim National Park Reserve"), an Australian name as its agency
+    writes it ("Blue Mountains National Park"), and otherwise the short name the content
+    list keeps ("Tongariro") with "National Park" after it."""
+    if official := entry.get("officialName"):
+        return str(official)
+    name = str(entry["name"])
+    return name if "National Park" in name else f"{name} National Park"
 
 
 # MARK: - fetch
@@ -363,7 +381,7 @@ def trail_features(
 
     Norway draws every Turrutebasen segment in the park's box, the routes the catalogue
     names and the ones the database leaves unnamed alike: both are marked on the ground.
-    Where Turrutebasen has nothing, and in Japan, the footpaths in the pack's own
+    Where Turrutebasen has nothing, and in every other country, the footpaths in the pack's own
     OpenStreetMap extract are drawn — named or not, since most mountain paths in OSM carry
     no name. Never both, or a path would be printed twice, half a pixel apart.
     """
@@ -401,14 +419,21 @@ def attribution_line(
         sources.add("kartverket")
     else:
         sources.add("osm")
-    names = [name for key, name in (("kartverket", "Kartverket"), ("parksCanada", "Parks Canada"),
-                                    ("qpws", "Queensland Parks and Wildlife Service"),
-                                    ("osm", "OpenStreetMap"))
-             if key in sources]
+    names = [name for key, name in TRAIL_CREDITS if key in sources]
     return (
         "Elevation Copernicus GLO-30 · Roads and water © OpenStreetMap contributors (ODbL) · "
         f"Trails {'/'.join(names)}"
     )
+
+
+TRAIL_CREDITS = (
+    ("kartverket", "Kartverket"),
+    ("doc", "Department of Conservation"),
+    ("parksCanada", "Parks Canada"),
+    ("qpws", "Queensland Parks and Wildlife Service"),
+    ("osm", "OpenStreetMap"),
+)
+"""Each ``trails.json`` line source as the map credit names it, in the order it does."""
 
 
 def _trail_words(trail_sources: list[Path]) -> str:
