@@ -43,6 +43,14 @@ public struct PassportScreen: View {
 
     @State private var path = NavigationPath()
 
+    private var bookPicker: some View {
+        Picker("Book", selection: $bookCode) {
+            ForEach(store.passportBooks) { country in
+                Text(country.name).tag(country.rawValue)
+            }
+        }
+    }
+
     public var body: some View {
         NavigationStack(path: $path) {
             List {
@@ -60,13 +68,15 @@ public struct PassportScreen: View {
 
                 if store.passportBooks.count > 1 {
                     Section {
-                        Picker("Book", selection: $bookCode) {
-                            ForEach(store.passportBooks) { country in
-                                Text(country.name).tag(country.rawValue)
-                            }
+                        // Three books fit side by side at every width; six do not, so
+                        // past three the books are a menu row that names the one open.
+                        if store.passportBooks.count > 3 {
+                            bookPicker.pickerStyle(.menu)
+                        } else {
+                            bookPicker
+                                .pickerStyle(.segmented)
+                                .listRowBackground(Color.clear)
                         }
-                        .pickerStyle(.segmented)
-                        .listRowBackground(Color.clear)
                     }
                 }
 
