@@ -1,0 +1,203 @@
+{
+ "placeID": "au-np-mount-barney",
+ "contentVersion": 1,
+ "story": [
+  "Mount Barney is the core of the Focal Peak volcano, which erupted about 24 million years ago as the continent drifted over a hot spot in the mantle. Basalt flowed first from a crater just west of the mountain; later a mass of rhyolite magma was forced about 2,400 metres upwards inside a ring fault beside the volcano's vent and cooled into granophyre, a rock between rhyolite and granite. Other rhyolite bodies cooled beneath mounts Ernest, Maroon, May and Philip. Erosion has since stripped the softer sandstones away, leaving the hard rock standing as peaks.",
+  "The park is one of the largest areas of undisturbed natural vegetation left in South East Queensland, home to more than 340 animal and 700 plant species. Open eucalypt forest and grassy slopes cover the foothills, subtropical rainforest grows above about 600 metres, and montane heath clings to the summits. Mount Ballow carries Antarctic beech and cool temperate rainforest, and Mount Maroon mallee shrublands. Brush-tailed rock-wallabies live on the steep rock, platypus in the creeks, and the eastern bristlebird and Coxen's fig-parrot are among nine endangered animals.",
+  "The peaks hold special significance for the Aboriginal people whose stories connect them to this country, and some of their names survive: Mount Maroon was originally Wahlmoorum, a Yuggera word for the sand goanna. The Queensland Government recognises the Yugambeh, Yuggera Ugarapul and Githabul peoples as Traditional Owners of the Queensland section of the Gondwana Rainforests. On a frosty August morning in 1828 Captain Patrick Logan, with the botanists Allan Cunningham and Charles Fraser, set out to climb Mount Barney; only Logan reached the top.",
+  "Cattle came to the foothills in the 1840s, and from the late 1890s timber-getters cut red cedar and hoop pine, some of them living in tents in the scrub with their families until the late 1930s; big sawn stumps still stand in parts of the park. Mount Barney and Mount Lindesay national parks were gazetted separately in 1947. Mount May and Mount Maroon were added in 1950, the two parks were joined in 1980, and in 1994 most of the park became part of the World Heritage area."
+ ],
+ "howItWorks": [
+  "Mount Barney is managed by the Queensland Parks and Wildlife Service. There is no entry fee: QPWS's permits and fees page lists permits for camping, driving in recreation areas, events and business. The park has four maintained tracks round the base of Mount Barney — Yellow Pinch, Lower Portals, Cronan Creek and Upper Portals — all grade 4, and QPWS says plainly that there are no easy walks here. The summit routes are not walking tracks at all: they are unmarked, very steep and need rock-scrambling and navigation skills, and QPWS recommends going with a capable, experienced leader.",
+  "Every camp site in the park is reached on foot and has no facilities; there are about 20 remote bush camps, each with a limit on numbers, and sites may close for regeneration or in high fire danger. Camping normally needs a permit booked ahead — QPWS suggests 6 to 8 weeks for public holidays and 3 to 6 weeks at other times. In November 2026 the Queensland booking system was switched off after a data breach at the provider Bookeasy; while the temporary arrangements last, QPWS says you may camp in open parks without a permit. Check the QPWS website before you go.",
+  "Camping is prohibited on East Peak and within 500 metres of it, and in the Mount Maroon section anywhere but its designated remote sites, to protect the fragile summit heath; penalties apply. Car-based camping is outside the park, at the Scenic Rim council's Waterfall Creek Reserve and at four private campgrounds, and the picnic area at Yellow Pinch Reserve beside the main entry is council-run."
+ ],
+ "sightNotes": {
+  "poi-au-mount-barney-mount-barney-east-peak": "The summit, 1,354 metres, reached by the South Ridge route (8 to 10 hours return) or the steeper South East Ridge (7 to 9 hours). Scrambling and navigation skills essential.",
+  "poi-au-mount-barney-yellow-pinch-lookout": "A steep 2-kilometre return climb from the Yellow Pinch trailhead along a rocky ridge to a natural lookout facing Mount Barney — the best place to see the mountain.",
+  "poi-au-mount-barney-lower-portals": "A 7.4-kilometre return track with two rocky creek crossings, ending at a deep pool in a rocky gorge of Mount Barney Creek.",
+  "poi-au-mount-barney-cronan-creek-falls": "A 12-kilometre return walk from Yellow Pinch along a management trail beside rock-tumbled Cronan Creek, with natural creek crossings.",
+  "poi-au-mount-barney-upper-portals": "Mount Barney Creek carving smooth channels through rhyolite and basalt. The 8-kilometre return track starts at Cleared Ridge, reached only by four-wheel drive; rock-hopping required.",
+  "poi-au-mount-barney-mount-maroon": "A rhyolite peak with mallee and montane heath on its rock pavements. The summit route takes about six hours return; do not linger in the marked rockfall zone.",
+  "poi-au-mount-barney-mount-lindesay": "A peak on the park's southern side, once a national park of its own, where tall forests of mountain banksia dominate.",
+  "poi-au-mount-barney-mount-ballow": "Named after David Keith Ballow, a Moreton Bay medical officer who died in 1850. Its summit carries cool temperate rainforest with Antarctic beech."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Yellow Pinch trailhead and Lower Portals car park, off the Barney View–Upper Logan Road from Rathdowney or Boonah",
+   "Cleared Ridge car park, for the Upper Portals, by Waterfall Creek Road — four-wheel drive only beyond Waterfall Creek Reserve"
+  ],
+  "reservations": "No reservation is needed to enter or walk. Remote bush camp sites are normally booked online in advance. In November 2026 the QPWS booking system was offline after a data breach and permits were temporarily not required — check the QPWS website before you go.",
+  "permits": [
+   "Camping permit for the remote bush camps (temporarily waived while the QPWS booking system is offline)",
+   "No camping on East Peak or within 500 metres of it, or in the Mount Maroon section outside its designated sites"
+  ],
+  "camping": [
+   "About 20 walk-in remote bush camps, among them Lower Portals, Barney Gorge Junction, Ballow Creek Junction, Rum Jungle and Paddys Plain — no facilities",
+   "Car-based camping outside the park: Waterfall Creek Reserve (Scenic Rim Regional Council), Mt Barney Lodge Country Retreat, Bigriggen Park, Flanagan Reserve and Lake Maroon Holiday Park"
+  ],
+  "lodging": [
+   "Hotels, motels, lodges, cabins and bed and breakfasts in Boonah and Rathdowney"
+  ],
+  "seasonalClosures": [
+   "Camp sites may close for regeneration or during high fire danger — check park alerts before you go",
+   "The main access roads can flood after storms and prolonged rain"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1828",
+   "text": "Captain Patrick Logan, Allan Cunningham and Charles Fraser attempt Mount Barney in August; Logan alone reaches the summit, the first recorded European ascent."
+  },
+  {
+   "year": "1840s",
+   "text": "The foothills are opened up for cattle grazing."
+  },
+  {
+   "year": "Late 1890s",
+   "text": "Logging of red cedar and hoop pine begins, for small sawmills in the district."
+  },
+  {
+   "year": "1947",
+   "text": "Mount Barney and Mount Lindesay national parks are gazetted as separate parks."
+  },
+  {
+   "year": "1950",
+   "text": "Mount Barney National Park is extended to include Mount May and Mount Maroon."
+  },
+  {
+   "year": "1980",
+   "text": "The two parks are amalgamated as Mount Barney National Park."
+  },
+  {
+   "year": "1994",
+   "text": "Most of the park is included in the World Heritage area over the Scenic Rim, today's Gondwana Rainforests of Australia, in December."
+  }
+ ],
+ "safety": [
+  "Summit routes have narrow ridges, vertical drops and loose rock; serious injuries have occurred. They are unsuitable for children and for anyone who cannot climb unassisted.",
+  "Never walk alone. At least one person in the group must be a competent map-reader; carry a topographic map, compass and GPS, a charged phone and preferably a personal locator beacon, as mobile coverage is unreliable.",
+  "If cloud closes in on a peak, stay where you are until it lifts, even if that means a night out. Carry warm clothing and enough water.",
+  "Avoid the park in wet weather, when rock and tracks are slippery, and start long walks in the cool of the day to avoid heat exhaustion.",
+  "Tell a reliable person your plans and when you will return, and finish before dark."
+ ],
+ "regulations": [
+  "Wood fires are prohibited; cook on a fuel stove.",
+  "Domestic animals are not permitted.",
+  "Camp only at existing sites, within each site's limit; no camping on or within 500 metres of East Peak, or in the Mount Maroon section outside designated sites.",
+  "Everything is protected: do not take plants, animals, soil or rock. Bury human waste 15 centimetres deep and 100 metres from water, tracks and camps, and carry all rubbish out."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against the park agency's pages and the sources below.",
+  "Park outline: Collaborative Australian Protected Areas Database (CAPAD) 2024, © Commonwealth of Australia (DCCEEW), CC BY 4.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Mount Barney National Park — Queensland Parks and Wildlife Service",
+   "url": "https://parks.qld.gov.au/parks/mount-barney"
+  },
+  {
+   "title": "About Mount Barney — QPWS",
+   "url": "https://parks.qld.gov.au/parks/mount-barney/about"
+  },
+  {
+   "title": "Nature, culture and history — Mount Barney National Park, QPWS",
+   "url": "https://parks.qld.gov.au/parks/mount-barney/about/culture"
+  },
+  {
+   "title": "Visiting Mount Barney safely — QPWS",
+   "url": "https://parks.qld.gov.au/parks/mount-barney/visiting-safely"
+  },
+  {
+   "title": "Things to do — Mount Barney National Park (walking tracks and summit routes), QPWS",
+   "url": "https://parks.qld.gov.au/parks/mount-barney/things-to-do"
+  },
+  {
+   "title": "Camping in Mount Barney — QPWS",
+   "url": "https://parks.qld.gov.au/parks/mount-barney/camping"
+  },
+  {
+   "title": "Camping bookings and fees — QPWS",
+   "url": "https://parks.qld.gov.au/camping/bookings"
+  },
+  {
+   "title": "Permits and fees — QPWS",
+   "url": "https://parks.qld.gov.au/before-you-visit/permits-and-fees"
+  },
+  {
+   "title": "Important security update – Queensland National Parks Booking Service (current at 14 November 2026)",
+   "url": "https://parks.qld.gov.au/contactus/important-security-update"
+  },
+  {
+   "title": "Gondwana Rainforests of Australia World Heritage Area (Queensland Section) — Queensland Government",
+   "url": "https://environment.qld.gov.au/management/world-heritage-areas/current/gondwana-rainforests"
+  },
+  {
+   "title": "Gondwana Rainforests of Australia — UNESCO World Heritage Centre",
+   "url": "https://whc.unesco.org/en/list/368/"
+  },
+  {
+   "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — area",
+   "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+  },
+  {
+   "title": "Mount Barney — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mount_Barney"
+  },
+  {
+   "title": "Mount Maroon — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mount_Maroon"
+  },
+  {
+   "title": "OpenStreetMap (coordinates)",
+   "url": "https://www.openstreetmap.org/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Camping permit, remote bush camps",
+   "cost": "$7.75 per person per night",
+   "detail": "Or $31.00 per family per night (one or two adults and children under 18, up to eight people); children under five camp free. Queensland rates from 1 July 2026. Temporarily not required while the booking system is offline after the November 2026 data breach — check before you go.",
+   "amount": 7.75,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Park entry",
+   "cost": "Free",
+   "detail": "QPWS charges no entry fee. Campgrounds outside the park set their own prices.",
+   "amount": 0,
+   "currencyCode": "AUD"
+  }
+ ],
+ "hero": {
+  "credit": "Kate Harbison, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "au-np-mount-barney-a658a24a45.jpg",
+  "caption": "Mount Barney above the forest",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:MtBarney1.jpg",
+  "altText": "A jagged grey mountain under heavy cloud, rising above dark forested foothills",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "Kate Harbison, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-mount-barney-d039943a63.jpg",
+   "caption": "The pool at the Lower Portals",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:LowerPortals.jpg",
+   "altText": "A small waterfall pouring through a rock cleft into a broad green pool ringed by pale rock",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Alan Wigginton, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-mount-barney-4b9211af25.jpg",
+   "caption": "A waterfall on Cronan Creek",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Cronan_Creek_0007.jpg",
+   "altText": "A narrow white cascade dropping into a dark pool between sandstone boulders and forest",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "Weather and temperature change fast on Mount Barney, and its peaks are often in cloud — if cloud comes down, QPWS advises staying put until it lifts, even if that means a night out. Winters are usually dry and cold, with frosty nights averaging a minimum of about -4°C. Summers are warm to very hot, 25 to 40°C on the exposed ridges, with nights of 15 to 18°C; most rain falls between November and March, and late-spring and summer thunderstorms bring lightning and sudden cold. QPWS advises walking in the cooler months, usually April to September, as hot weather and a lack of surface water make summer walking hazardous.",
+ "directions": "There is no public transport. From Brisbane, follow the Mount Lindesay Highway through Beaudesert to Rathdowney, turn onto the Boonah–Rathdowney Road 1 kilometre past the town, and after 8 kilometres turn left onto the Barney View–Upper Logan Road, following signs to Lower Portals or Yellow Pinch. From Boonah, drive 39 kilometres south on the Boonah–Rathdowney Road and 12 kilometres along the Barney View–Upper Logan Road. For Cleared Ridge and the Upper Portals, take Newman Road and Waterfall Creek Road; beyond Waterfall Creek Reserve a four-wheel-drive vehicle is required. Fuel and supplies are at Boonah and Rathdowney."
+}

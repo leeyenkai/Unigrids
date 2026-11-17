@@ -1,0 +1,172 @@
+{
+ "placeID": "au-np-port-campbell",
+ "contentVersion": 1,
+ "story": [
+  "Along this coast the Southern Ocean meets soft limestone, and the waves have shaped it into a landscape unlike anywhere else in Australia: high cliffs, offshore stacks, sea caves, blowholes and natural arches. The Twelve Apostles are the best known, limestone stacks rising from the sea that turn from soft gold in the morning to orange and red at sunset. Erosion never stops here. London Bridge was joined to the mainland until its arch collapsed in 1990, leaving two visitors stranded on the new island until a helicopter rescued them.",
+  "Wildlife comes and goes with the seasons. Between October and April thousands of short-tailed shearwaters, or muttonbirds, return at dusk to Mutton Bird Island beside Loch Ard Gorge after a day at sea. At dusk little penguins may come ashore on the beaches below the Twelve Apostles and London Bridge, and in winter southern right and humpback whales pass close to the lookouts as they travel through the Southern Ocean.",
+  "Port Campbell National Park is part of an Aboriginal cultural landscape. The Great Ocean Road Coast and Parks Authority recognises the Eastern Maar and Wadawurrung peoples as the Traditional Owners of the Great Ocean Road's land, waters, seas and skies; the Blowhole near Loch Ard Gorge lies on Keerray Woorroong country. Its new lookout is named Poombeeyt Koontapool, 'breath of the whale' in the Keerray Woorroong language, and its design, shaped like a breaching whale, was led by the Eastern Maar community.",
+  "This is the Shipwreck Coast. In 1878 the ship Loch Ard struck Mutton Bird Island; of the 54 people aboard only two teenagers, Tom Pearce and Eva Carmichael, survived, reaching the beach inside the gorge that now bears the ship's name, and some of those lost lie in the nearby cemetery. The national park dates from 1964. In October 2026 the Keerray Woorroong Visitor Centre opened at the Twelve Apostles, with a Welcome Garden celebrating Eastern Maar cultural heritage."
+ ],
+ "howItWorks": [
+  "Port Campbell National Park is managed by the Great Ocean Road Coast and Parks Authority (GORCAPA), not Parks Victoria. The park is open year-round, but the Twelve Apostles now work differently: since 16 October 2026 a booking has been required to use the visitor centre, the car park and the Twelve Apostles lookouts. Bookings are free until April 2027, when a fee will be introduced, with the revenue going back into the coast and parks of the Great Ocean Road. Book a time before you set off, and arrive early or late in the day for a quieter visit.",
+  "The other lookouts and short walks — Gibson Steps, Loch Ard Gorge, the Blowhole, London Bridge and The Grotto — are reached from their own car parks along the Great Ocean Road, and access changes with weather and erosion: in November 2026 The Arch viewing area was closed because of unstable cliffs and track erosion, and the beach at Gibson Steps opens only when conditions allow. Dogs are not allowed anywhere in the park.",
+  "Since 1 July 2026 bookings for some campsites along the Great Ocean Road have moved from Parks Victoria to GORCAPA, as part of the transfer of land management to the Authority; book GORCAPA sites through its own website. Facilities in the park are limited, and the township of Port Campbell provides accommodation, food and other services."
+ ],
+ "sightNotes": {
+  "poi-au-port-campbell-twelve-apostles": "Limestone stacks rising from the Southern Ocean, seen from lookouts a short walk from the new Keerray Woorroong Visitor Centre. Timed booking required; free until April 2027.",
+  "poi-au-port-campbell-gibson-steps": "Steps down the cliff to a wild beach beneath towering limestone, facing the stacks Gog and Magog. Beach access depends on weather, tides and safety; check the signs.",
+  "poi-au-port-campbell-loch-ard-gorge": "A sheltered beach between limestone walls where two survivors of the 1878 wreck came ashore. Next door, the Poombeeyt Koontapool lookout circles the Blowhole; shearwaters return to Mutton Bird Island at dusk.",
+  "poi-au-port-campbell-london-bridge": "A sea arch cut off from the mainland when its span collapsed in 1990. Little penguins may land below at dusk; The Grotto is nearby, and The Arch was closed in late 2026.",
+  "poi-au-port-campbell-port-campbell-discovery-walk": "From the township over a suspension bridge and up a 191-step staircase, then along the clifftops to Two Mile Bay, with views back to Sentinel Rock and the Twelve Apostles."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Twelve Apostles and Keerray Woorroong Visitor Centre, Booringa Road, off the Great Ocean Road — booking required",
+   "Gibson Steps, Loch Ard Gorge and the Blowhole, along the Great Ocean Road east of Port Campbell",
+   "Port Campbell township, for the Discovery Walk",
+   "London Bridge Road, Peterborough, for London Bridge, The Grotto and The Arch"
+  ],
+  "reservations": "A timed booking is required for the Twelve Apostles visitor centre, car park and lookouts; it is free until April 2027, after which a fee applies. Other sites need no booking. Book accommodation and campsites early in peak seasons.",
+  "permits": [
+   "Twelve Apostles visit booking, through the Keerray Woorroong Visitor Centre website"
+  ],
+  "camping": [
+   "Campsites along the Great Ocean Road managed by GORCAPA, booked through GORCAPA since 1 July 2026"
+  ],
+  "lodging": [
+   "Accommodation in Port Campbell, Peterborough and other Great Ocean Road towns"
+  ],
+  "seasonalClosures": [
+   "The Arch viewing area was closed in November 2026 because of unstable cliffs and track erosion",
+   "Beach access at Gibson Steps can close depending on weather, tides and safety"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1878",
+   "text": "The Loch Ard strikes Mutton Bird Island; of 54 aboard, only Tom Pearce and Eva Carmichael survive."
+  },
+  {
+   "year": "1964",
+   "text": "Port Campbell National Park is created."
+  },
+  {
+   "year": "1990",
+   "text": "London Bridge's landward arch collapses, stranding two visitors who are rescued by helicopter."
+  },
+  {
+   "year": "2026",
+   "text": "GORCAPA takes over bookings for some Great Ocean Road campsites from 1 July."
+  },
+  {
+   "year": "2026",
+   "text": "The Keerray Woorroong Visitor Centre opens at the Twelve Apostles on 16 October, with timed bookings for the site."
+  }
+ ],
+ "safety": [
+  "Stay behind fences and on paths: the limestone cliffs are unstable and erode without warning, as the closure of The Arch shows.",
+  "Check signs before going down Gibson Steps; waves, tides and conditions change quickly on the beach.",
+  "In an emergency call 000. Report urgent hazards on the Great Ocean Road to VicRoads on 13 11 70.",
+  "If you see sick or dead birds or wildlife, do not touch them; report them to the Emergency Animal Disease Hotline on 1800 675 888."
+ ],
+ "regulations": [
+  "No dogs anywhere in the national park.",
+  "A booking is required to visit the Twelve Apostles visitor centre, car park and lookouts.",
+  "Stay out of closed areas, including The Arch viewing area while it is closed.",
+  "Do not disturb shearwaters or penguins returning to land at dusk."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against the park agency's pages and the sources below.",
+  "Park outline: Collaborative Australian Protected Areas Database (CAPAD) 2024, © Commonwealth of Australia (DCCEEW), CC BY 4.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Port Campbell National Park — Great Ocean Road Coast and Parks Authority",
+   "url": "https://www.greatoceanroadauthority.vic.gov.au/Land-We-Manage/National-Parks/Port-Campbell-National-Park"
+  },
+  {
+   "title": "Twelve Apostles — GORCAPA",
+   "url": "https://www.greatoceanroadauthority.vic.gov.au/Land-We-Manage/National-Parks/Port-Campbell-National-Park/Twelve-Apostles"
+  },
+  {
+   "title": "Gibson Steps — GORCAPA",
+   "url": "https://www.greatoceanroadauthority.vic.gov.au/Land-We-Manage/National-Parks/Port-Campbell-National-Park/Gibson-Steps"
+  },
+  {
+   "title": "Loch Ard Gorge — GORCAPA",
+   "url": "https://www.greatoceanroadauthority.vic.gov.au/Land-We-Manage/National-Parks/Port-Campbell-National-Park/Loch-Ard-Gorge"
+  },
+  {
+   "title": "Poombeeyt Koontapool – The Blowhole — GORCAPA",
+   "url": "https://www.greatoceanroadauthority.vic.gov.au/Land-We-Manage/National-Parks/Port-Campbell-National-Park/Poombeeyt-Koontapool-–-The-Blowhole"
+  },
+  {
+   "title": "London Bridge, The Grotto and The Arch — GORCAPA",
+   "url": "https://www.greatoceanroadauthority.vic.gov.au/Land-We-Manage/National-Parks/Port-Campbell-National-Park/London-Bridge-The-Grotto-and-The-Arch"
+  },
+  {
+   "title": "Port Campbell Discovery Walk — GORCAPA",
+   "url": "https://www.greatoceanroadauthority.vic.gov.au/Land-We-Manage/National-Parks/Port-Campbell-National-Park/Port-Campbell-Discovery-Walk"
+  },
+  {
+   "title": "Keerray Woorroong Visitor Centre – Twelve Apostles (booking and fees) — GORCAPA",
+   "url": "https://www.greatoceanroadauthority.vic.gov.au/Stay-and-Explore/Keerray-Woorroong-Visitor-Centre-Twelve-Apostles"
+  },
+  {
+   "title": "Keerray Woorroong Visitor Centre — Industry updates (opening 16 October 2026; free until April 2027) — GORCAPA",
+   "url": "https://www.greatoceanroadauthority.vic.gov.au/Projects/Twelve-Apostles-Visitor-Centre/Industry-Updates"
+  },
+  {
+   "title": "Bookings release schedule (changes to Great Ocean Road campsite bookings) — Parks Victoria",
+   "url": "https://www.parks.vic.gov.au/where-to-stay/booking-information/bookings-release-schedule"
+  },
+  {
+   "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — area",
+   "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+  },
+  {
+   "title": "Port Campbell National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Port_Campbell_National_Park"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Twelve Apostles visit booking",
+   "cost": "Free until April 2027",
+   "detail": "Booking required since 16 October 2026 for the visitor centre, car park and lookouts. GORCAPA will introduce a fee from April 2027; the amount had not been published in November 2026.",
+   "amount": 0,
+   "currencyCode": "AUD"
+  }
+ ],
+ "hero": {
+  "credit": "Ymblanter, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "au-np-port-campbell-eeb8d6a72c.jpg",
+  "caption": "The Twelve Apostles",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Port_Campbell_National_Park_The_Twelve_Apostles_seen_from_the_viewpoint_01.jpg",
+  "altText": "Limestone stacks standing in a grey-green sea below tall golden cliffs and a sandy beach",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "RhonLee, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-port-campbell-406d617575.jpg",
+   "caption": "Loch Ard Gorge",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:GOR_Loch_Ard_Gorge.jpg",
+   "altText": "Surf rushing into a narrow inlet between steep yellow limestone cliffs",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Camelboy, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-port-campbell-815bb03c5f.jpg",
+   "caption": "London Bridge, now cut off from the mainland",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:London-Arch-Dec2010.jpg",
+   "altText": "A rock arch standing in the sea off flat-topped limestone cliffs and a small beach",
+   "licence": "CC BY-SA 3.0"
+  }
+ ],
+ "weather": "The park is open all year, and GORCAPA suggests spring and summer for the most favourable weather. This coast faces the open Southern Ocean, so wind, swell and sea spray are part of the experience, and conditions can turn quickly. Winter brings whales past the lookouts, and from October to April the shearwaters return to Mutton Bird Island at dusk. The Twelve Apostles are busiest in the middle of the day; early morning and sunset are quieter.",
+ "directions": "The park lies along the Great Ocean Road on either side of the township of Port Campbell, reaching west towards Peterborough. The Twelve Apostles and the Keerray Woorroong Visitor Centre are on Booringa Road, just off the Great Ocean Road; book a time and parking spot before you arrive. Gibson Steps is beside the Twelve Apostles, Loch Ard Gorge and the Blowhole a few minutes west, the Discovery Walk starts in Port Campbell, and London Bridge, The Grotto and The Arch are just beyond Port Campbell towards Peterborough."
+}

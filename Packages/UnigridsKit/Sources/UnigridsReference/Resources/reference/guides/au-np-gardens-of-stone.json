@@ -1,0 +1,185 @@
+{
+ "placeID": "au-np-gardens-of-stone",
+ "contentVersion": 1,
+ "story": [
+  "Gardens of Stone is built of Triassic Narrabeen sandstone. Wind and rain have carved its Banks Wall and Burramoko sandstone layers into pagodas: domes, beehives and stepped, castellated towers, some more than 60 metres tall. The shapes come from thin, hard bands of ironstone in softer sandstone, which wear back at different rates. Around them the land drops away in cliffs, slot canyons, waterfalls and flat-topped mesas into the Capertee and Wolgan valleys. There are limestone outcrops and karst in the park too.",
+  "The pagodas hold their own plant life, among the most fragile in the park because their sandy soils are easily disturbed. Rare yellow pagoda daisies and paper daisies grow among them. The birdlife is rich, with threatened regent honeyeaters, swift parrots and spotted harriers alongside lyrebirds and square-tailed kites. Brush-tailed rock wallabies live along the caves and ledges, and giant dragonflies breed in the upland swamps in the east. Walkers may also meet broad-headed snakes, Lesueur's geckos, heath monitors and, in the east, koalas.",
+  "Aboriginal people are believed to have lived in this country for at least 12,000 years. Only one Aboriginal site is formally known in the park, but many more are expected, since it has never been systematically surveyed. The Wiradjuri Tribal Council, the Bathurst Local Aboriginal Land Council, the Greater Lithgow Aboriginal and Torres Strait Island Corporation and other groups represent the Aboriginal community of the Capertee Valley area.",
+  "Conservationists sought protection here for decades. The Newnes Plateau was part of the 1932 proposal for a Greater Blue Mountains National Park, the National Trust proposed a Pinnacles State Park in 1966, and Pantoneys Crown became a nature reserve in 1977. Bushwalking and wilderness groups drew up a 'Gardens of Stone' proposal in 1985, and a revised plan by the Colong Foundation for Wilderness succeeded. The park was proclaimed on 30 November 1994, Pantoneys Crown was added in December 1995, and in 2000 it joined the Greater Blue Mountains Area World Heritage property."
+ ],
+ "howItWorks": [
+  "The park is run by the NSW National Parks and Wildlife Service (NPWS) from offices at Oberon, Mudgee and Blackheath. It is always open, though it may close in poor weather or high fire danger. All roads into it are unsealed and need a 4WD. There is no vehicle entry fee: only 45 of NSW's more than 890 parks and reserves charge one, and Gardens of Stone is not among them. For fee-collecting parks elsewhere, the All Parks Pass covers vehicle entry to every one of them in NSW, including Kosciuszko, for $190 a year. The Multi Park Pass covers all of them except Kosciuszko for $65. These prices were listed by NPWS in November 2026.",
+  "Do not confuse this park with the Gardens of Stone State Conservation Area, a separate NPWS reserve close to Lithgow known for the pagodas of the Lost City. Facilities in the national park are limited to picnic tables and barbecues at Baal Bone Gap. NPWS lists no campground in the park; the nearest is at Newnes in Wollemi National Park. Recreational drone flying is prohibited without a permit, which must be applied for and approved at least 10 days before your visit, and approval is not guaranteed.",
+  "Bushfire season runs from October to March. On total fire ban days, usually declared around 5 pm the day before, all campfires and wood or solid-fuel barbecues are prohibited in NSW parks, as are liquid-fuel stoves, and visitor-owned gas and electric cookers are generally prohibited. NPWS may also declare a park fire ban or close the park when the fire risk is high, so check NPWS alerts before you leave."
+ ],
+ "sightNotes": {
+  "poi-au-gardens-of-stone-baal-bone-gap": "The park's picnic area, with tables and barbecues, among pagodas and sheer cliffs looking out over the valleys. Reached by 4WD from Ben Bullen.",
+  "poi-au-gardens-of-stone-pantoneys-crown": "A sandstone mesa rising out of the Capertee Valley, a nature reserve from 1977 and part of the park since 1995. Views over the surrounding valleys.",
+  "poi-au-gardens-of-stone-baal-bone-point": "A high point on the escarpment north of Baal Bone Gap, looking across the Capertee Valley to Pantoneys Crown.",
+  "poi-au-gardens-of-stone-crown-creek-fire-trail": "A scenic management trail through the park, part of the National Trail, used for horse riding and mountain biking.",
+  "poi-au-gardens-of-stone-newnes-plateau-cliffs": "Rugged cliffs on the park's eastern side, for challenging walking, climbing and mountain biking by self-reliant visitors."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Ben Bullen, on the Castlereagh Highway north of Lithgow, by the 4WD road to Baal Bone Gap",
+   "Newnes Plateau Cliffs access, from Wolgan Valley Road out of Lidsdale towards Newnes"
+  ],
+  "reservations": "No bookings or permits are needed for a day visit, except a drone permit.",
+  "permits": [
+   "Recreational drone flying needs an NPWS permit, approved at least 10 days before the visit"
+  ],
+  "camping": [
+   "NPWS lists no campground in the park; the nearest is at Newnes in Wollemi National Park"
+  ],
+  "lodging": [
+   "Accommodation in Lithgow, Capertee and the Capertee Valley"
+  ],
+  "seasonalClosures": [
+   "No seasonal closure. The park is always open but may close in poor weather or high fire danger — check NPWS alerts before you go"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "At least 12,000 years ago",
+   "text": "Aboriginal people are living in the area that is now the park."
+  },
+  {
+   "year": "1932",
+   "text": "The Newnes Plateau is included in the proposal for a Greater Blue Mountains National Park."
+  },
+  {
+   "year": "1966",
+   "text": "The National Trust proposes a Pinnacles State Park."
+  },
+  {
+   "year": "1977",
+   "text": "Pantoneys Crown Nature Reserve is gazetted, covering 3,230 hectares."
+  },
+  {
+   "year": "1985",
+   "text": "The Colo Committee, Colong Committee and Federation of Bushwalking Clubs put forward a detailed 'Gardens of Stone' proposal in September."
+  },
+  {
+   "year": "1994",
+   "text": "Gardens of Stone National Park is proclaimed on 30 November."
+  },
+  {
+   "year": "1995",
+   "text": "Pantoneys Crown Nature Reserve is added to the park on 22 December."
+  },
+  {
+   "year": "2000",
+   "text": "The park is inscribed as part of the Greater Blue Mountains Area World Heritage property."
+  }
+ ],
+ "safety": [
+  "All roads need a 4WD. Carry plenty of water and tell someone your plans.",
+  "Mobile reception is limited, and you need it to call Triple Zero (000). Download the Emergency Plus app before you go.",
+  "The pagodas and their sandy soils are fragile. Stay on tracks and keep well back from cliff edges.",
+  "Check NPWS alerts and the Rural Fire Service before you go: the park may close on days of high fire danger."
+ ],
+ "regulations": [
+  "No pets or domestic animals, except certified assistance animals.",
+  "No smoking: NSW national parks are smoke-free.",
+  "No recreational drone flying without an NPWS permit approved at least 10 days in advance.",
+  "No fires of any kind during total fire bans or park fire bans."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against the park agency's pages and the sources below.",
+  "Park outline: Collaborative Australian Protected Areas Database (CAPAD) 2024, © Commonwealth of Australia (DCCEEW), CC BY 4.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Gardens of Stone National Park — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/gardens-of-stone-national-park"
+  },
+  {
+   "title": "Gardens of Stone National Park: learn more — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/gardens-of-stone-national-park/learn-more"
+  },
+  {
+   "title": "Gardens of Stone National Park: visitor info — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/gardens-of-stone-national-park/visitor-info"
+  },
+  {
+   "title": "Gardens of Stone National Park Plan of Management — NSW National Parks and Wildlife Service",
+   "url": "https://www2.environment.nsw.gov.au/sites/default/files/gardens-of-stone-national-park-plan-of-management-090514.pdf"
+  },
+  {
+   "title": "Greater Blue Mountains World Heritage Area — NSW Environment and Heritage",
+   "url": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/greater-blue-mountains"
+  },
+  {
+   "title": "Fee-collecting national parks — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/fee-collecting-parks"
+  },
+  {
+   "title": "Annual passes — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/annual-passes"
+  },
+  {
+   "title": "Total fire bans and park fire bans — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/safety/fire-safety/fire-bans"
+  },
+  {
+   "title": "OpenStreetMap (sight coordinates)",
+   "url": "https://www.openstreetmap.org/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Park entry",
+   "cost": "Free",
+   "detail": "Gardens of Stone National Park is not one of NSW's fee-collecting parks. As listed by NPWS in November 2026.",
+   "amount": 0,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "All Parks Pass",
+   "cost": "$190 for one year / $335 for two years",
+   "detail": "Annual vehicle entry to every fee-collecting NSW national park, including Kosciuszko; not needed here. As listed by NPWS in November 2026.",
+   "amount": 190,
+   "currencyCode": "AUD"
+  }
+ ],
+ "hero": {
+  "credit": "Sardaka ( talk ) 06:57, 4 March 2015 (UTC), via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "au-np-gardens-of-stone-37636badbf.jpg",
+  "caption": "Pantoneys Crown at dawn, seen from Baal Bone Point",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:(1)Pantonys_Crown_Capertee_Valley_dawn.jpg",
+  "altText": "A flat-topped sandstone mesa in a wide valley under a pale dawn sky",
+  "licence": "CC BY 3.0"
+ },
+ "gallery": [
+  {
+   "credit": "Froggydarb at en.wikipedia, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-gardens-of-stone-b5aaa62e75.jpg",
+   "caption": "The cliffs of Gardens of Stone from Pearsons Lookout",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Pearsons_lookout_(1).jpg",
+   "altText": "A wide panorama of sandstone escarpments and forested slopes above a valley",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "Karl Baron from Lund, Sweden, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-gardens-of-stone-b48cb4a29d.jpg",
+   "caption": "Looking out from the Gardens of Stone escarpment",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Gardens_of_Stone_NSW_Australia_1.jpg",
+   "altText": "Rocky sandstone outcrops on a ridge above layers of forested hills",
+   "licence": "CC BY 2.0"
+  },
+  {
+   "credit": "Sardaka ( talk ) 06:43, 4 March 2015 (UTC), via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-gardens-of-stone-5f3c8632d5.jpg",
+   "caption": "Pantoneys Crown rising from the Capertee Valley",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:(1)Pantonys_Crown_Capertee_Valley.jpg",
+   "altText": "A steep-sided mesa with pale cliffs above farmland and bush",
+   "licence": "CC BY 3.0"
+  }
+ ],
+ "weather": "Summer days average 8°C to 25°C and can be hot, but the deep shade between the pagodas and in the canyons makes for good photographs. Winter averages 0°C to 9°C, and the clear light gives long views from the clifftops. Spring brings migrating birds and wildflowers. January is usually the wettest month and April the driest.",
+ "directions": "From Lithgow, drive north on the Castlereagh Highway to Ben Bullen, then turn right onto the 4WD road to Baal Bone Gap picnic area. For the Newnes Plateau side, follow Wolgan Valley Road from Lidsdale towards Newnes; the road ends at the Newnes historic site and campground in Wollemi National Park. All roads in the park are unsealed and need a 4WD vehicle."
+}

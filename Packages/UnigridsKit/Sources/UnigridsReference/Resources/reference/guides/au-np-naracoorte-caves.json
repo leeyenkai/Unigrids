@@ -1,0 +1,238 @@
+{
+ "placeID": "au-np-naracoorte-caves",
+ "contentVersion": 1,
+ "story": [
+  "The Naracoorte Caves lie in the Naracoorte East Range, an old limestone ridge about 800,000 years old. Beneath it lie caves, many richly decorated with stalactites, stalagmites, columns, helictites and flowstone. Twenty-eight caves are known in the park; four are open to the public, and the rest are kept for research or to protect them and what they hold. Underground the temperature stays at about 17°C all year.",
+  "What makes the caves extraordinary is what fell into them. For half a million years holes in the ground acted as pitfall traps: animals tumbled in and could not climb out, and predators dragged prey into dens. Bones accumulated layer upon layer, through several ice ages and the arrival of people in the region, until they formed a fossil record of mammals, birds, reptiles and amphibians. Palaeontologists have excavated and dated many of them and reconstructed the skeletons of megafauna that roamed the plains before they died out.",
+  "The great find came in 1969, when two explorers squeezed through a gap in Victoria Fossil Cave and found a huge chamber full of fossil bones, a pitfall trap for over 200,000 years. It has been a working dig ever since, yielding tens of thousands of bones, and in 1994 Naracoorte was inscribed on the World Heritage List with Riversleigh in Queensland as the Australian Fossil Mammal Sites.",
+  "The caves are alive too. The Bat Cave is one of the very few known maternity caves of the southern bent-wing bat, a critically endangered species that has bred, fed and hibernated here since the megafauna roamed. Blanche Cave, found in 1845, was the first cave discovered in the region and long served locals for picnics and parties; it is now World and National Heritage listed. The area was protected as a conservation park from 1972 and became Naracoorte Caves National Park in 2001."
+ ],
+ "howItWorks": [
+  "Naracoorte Caves is run by the Department for Environment and Water as part of National Parks and Wildlife Service South Australia. Unlike many South Australian parks, it charges no vehicle entry fee: entry and parking are free, and you pay for what you do underground. Stick-Tomato Cave can be walked on your own, with automated lighting; Alexandra Cave, Victoria Fossil Cave and the Bat Tour of Blanche Cave are guided at set times; the Wonambi Fossil Centre is a separate ticket, included free with any cave tour. Book online or at the Wonambi Visitor Centre.",
+  "Adventure caving tours, from a novice crawl through the unlit part of Stick-Tomato Cave to longer trips into Victoria Fossil Cave's Starburst Chamber and Fox Cave, must be booked and have age limits; helmets, headlights and overalls are supplied, and there is no rope work. A behind-the-scenes World Heritage tour visits the working fossil digs and fossil lab with a senior guide for small groups, booked at least 24 hours ahead.",
+  "Protecting the bats shapes the rules. The Bat Tour runs only from 1 September to 30 April so that bats wintering in Blanche Cave are not disturbed. If you have been in caves overseas, do not bring the same clothing, footwear or gear, or ask staff how to clean it first: the fungus that causes white-nose syndrome, which has killed millions of bats in North America, has not reached Australia. The park opens from 9 am to 5 pm every day, except Christmas Day and days of catastrophic fire danger. The park's own campground and bunkhouse are booked with the caves."
+ ],
+ "sightNotes": {
+  "poi-au-naracoorte-caves-victoria-fossil-cave": "An hour-long guided tour through decorated chambers to the Fossil Chamber, a working dig where tens of thousands of bones have been found since 1969, with megafauna skeletons.",
+  "poi-au-naracoorte-caves-alexandra-cave": "Discovered in 1908: an easy 30-minute guided tour through three chambers of delicate straws, massive twisting columns and helictites. Good for young families.",
+  "poi-au-naracoorte-caves-stick-tomato-cave": "The only cave you can visit without a guide: two chambers, the first lit by daylight through tree ferns, reached down about 20 steps."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "89 Wonambi Road, 10 kilometres south of the town of Naracoorte; set navigation to 'Naracoorte Caves National Park Visitor Information Centre'"
+  ],
+  "reservations": "Entry is free, but cave tours are ticketed: book Alexandra Cave, Victoria Fossil Cave and Bat Tour sessions online, or buy tickets at the Wonambi Visitor Centre. Adventure caving and the World Heritage tour must be booked ahead. Camping and the bunkhouse are booked with the caves.",
+  "permits": [
+   "Bookings for adventure caving tours, with age restrictions and protocols to read beforehand"
+  ],
+  "camping": [
+   "Wirreanda campground and caravan park in the park: ten powered sites and a grassed area for tents, with hot showers and a free barbecue",
+   "Bring your own firewood; collecting wood in the park is illegal, and the communal fire pit is unavailable in bushfire danger season, usually November to April"
+  ],
+  "lodging": [
+   "Wirreanda Bunkhouse, dormitory accommodation for up to 49 people, with family rooms on weekends and school holidays",
+   "Accommodation in the town of Naracoorte"
+  ],
+  "seasonalClosures": [
+   "The Bat Tour of Blanche Cave runs only from 1 September to 30 April",
+   "The park is closed on Christmas Day and on days of catastrophic fire danger"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "c. 500,000 years ago",
+   "text": "The caves begin trapping animals, starting a fossil record that runs through several ice ages."
+  },
+  {
+   "year": "1845",
+   "text": "Blanche Cave, the first cave found in the region, is discovered."
+  },
+  {
+   "year": "1908",
+   "text": "Alexandra Cave is discovered."
+  },
+  {
+   "year": "1969",
+   "text": "Two explorers squeeze into the Fossil Chamber of Victoria Fossil Cave and find a vast fossil deposit."
+  },
+  {
+   "year": "1972",
+   "text": "The caves are protected as Naracoorte Caves Conservation Park."
+  },
+  {
+   "year": "1994",
+   "text": "Naracoorte is inscribed on the World Heritage List with Riversleigh as the Australian Fossil Mammal Sites."
+  },
+  {
+   "year": "2001",
+   "text": "The park becomes Naracoorte Caves National Park."
+  }
+ ],
+ "safety": [
+  "Cave paths have steps and slopes: about 50 steps into Victoria Fossil Cave and a steep path out, and about 20 into Stick-Tomato Cave. Wear sturdy shoes.",
+  "Adventure caving involves crawling and squeezes in unlit caves; follow the guides and the adventure caving protocols.",
+  "On bushwalks wear a hat and sunscreen, carry food and drinking water, do not rely on tanks or creeks, keep to the trail and tell someone your plans.",
+  "The park closes on days of catastrophic fire danger. In an emergency call 000."
+ ],
+ "regulations": [
+  "Do not bring clothing, footwear or gear used in caves overseas, to keep white-nose syndrome out.",
+  "Enter caves only on a ticketed tour or in the public section of Stick-Tomato Cave.",
+  "Collecting firewood in the park is illegal; campfires only in the communal pit and not during bushfire danger season."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against the park agency's pages and the sources below.",
+  "Park outline: Collaborative Australian Protected Areas Database (CAPAD) 2024, © Commonwealth of Australia (DCCEEW), CC BY 4.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Naracoorte Caves National Park — National Parks and Wildlife Service SA",
+   "url": "https://www.parks.sa.gov.au/parks/naracoorte-caves-national-park"
+  },
+  {
+   "title": "About Naracoorte Caves — naracoortecaves.sa.gov.au",
+   "url": "https://www.naracoortecaves.sa.gov.au/plan-your-visit/about-naracoorte-caves"
+  },
+  {
+   "title": "Tour prices and times — Naracoorte Caves",
+   "url": "https://www.naracoortecaves.sa.gov.au/plan-your-visit/tour-prices-and-times"
+  },
+  {
+   "title": "Opening hours and getting here — Naracoorte Caves",
+   "url": "https://www.naracoortecaves.sa.gov.au/plan-your-visit/opening-hours-and-getting-here"
+  },
+  {
+   "title": "Camping, caravanning and accommodation — Naracoorte Caves",
+   "url": "https://www.naracoortecaves.sa.gov.au/plan-your-visit/camping-and-accommodation"
+  },
+  {
+   "title": "Before you visit: protect our bats from white-nose syndrome — Naracoorte Caves",
+   "url": "https://www.naracoortecaves.sa.gov.au/plan-your-visit/before-you-visit-protect-our-bats-from-white-nose-syndrome"
+  },
+  {
+   "title": "Victoria Fossil Cave — Naracoorte Caves",
+   "url": "https://www.naracoortecaves.sa.gov.au/discover/under-the-ground/victoria-fossil-cave"
+  },
+  {
+   "title": "Alexandra Cave — Naracoorte Caves",
+   "url": "https://www.naracoortecaves.sa.gov.au/discover/under-the-ground/alexandra-cave"
+  },
+  {
+   "title": "Bat Centre and Blanche Cave — Naracoorte Caves",
+   "url": "https://www.naracoortecaves.sa.gov.au/discover/under-the-ground/bat-centre-and-blanche-cave"
+  },
+  {
+   "title": "Stick-Tomato Cave — Naracoorte Caves",
+   "url": "https://www.naracoortecaves.sa.gov.au/discover/under-the-ground/stick-tomato-cave"
+  },
+  {
+   "title": "Adventure Caving and World Heritage tour — Naracoorte Caves",
+   "url": "https://www.naracoortecaves.sa.gov.au/discover/under-the-ground/adventure-caving"
+  },
+  {
+   "title": "Wonambi Fossil Centre — Naracoorte Caves",
+   "url": "https://www.naracoortecaves.sa.gov.au/discover/above-the-ground/wonambi-fossil-centre"
+  },
+  {
+   "title": "Walking trails — Naracoorte Caves",
+   "url": "https://www.naracoortecaves.sa.gov.au/discover/above-the-ground/walking-trails"
+  },
+  {
+   "title": "Abolition of Naracoorte Caves Conservation Park and constitution of Naracoorte Caves National Park — South Australian Government Gazette, 18 January 2001, p. 70",
+   "url": "http://governmentgazette.sa.gov.au/sites/default/files/public/documents/gazette/2001/January/2001_005.pdf"
+  },
+  {
+   "title": "Naracoorte Caves National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Naracoorte_Caves_National_Park"
+  },
+  {
+   "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — DCCEEW (1972 gazettal)",
+   "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+  },
+  {
+   "title": "OpenStreetMap (sight coordinates)",
+   "url": "https://www.openstreetmap.org/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Park entry and parking",
+   "cost": "Free",
+   "detail": "Tour fees apply. As listed by National Parks and Wildlife Service SA in November 2026.",
+   "amount": 0,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Victoria Fossil Cave tour",
+   "cost": "$40.50 adult",
+   "detail": "One hour, 10.15 am and 2.15 pm. Concession $32.50, child $24, family $110. Includes the Wonambi Fossil Centre. As listed in November 2026; check before you go.",
+   "amount": 40.5,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Bat Tour (Bat Observation Centre and Blanche Cave)",
+   "cost": "$33 adult",
+   "detail": "One hour, 11.30 am and 3.30 pm, 1 September to 30 April. Child $19.50, family $90. As listed in November 2026.",
+   "amount": 33,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Alexandra Cave tour",
+   "cost": "$28.50 adult",
+   "detail": "Thirty minutes, 9.30 am and 1.30 pm. Concession $23, child $17, family $77.50. As listed in November 2026.",
+   "amount": 28.5,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Stick-Tomato Cave (self-guided)",
+   "cost": "$13.50 adult",
+   "detail": "9 am to 5 pm. Concession $10.50, child $8, family $36.50. Wonambi Fossil Centre alone: adult $8.50. As listed in November 2026.",
+   "amount": 13.5,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Camping, Wirreanda campground",
+   "cost": "$40 powered / $36 unpowered",
+   "detail": "Per site per night for up to four people; extra person $6 on a powered site. As listed in November 2026.",
+   "amount": 36,
+   "currencyCode": "AUD"
+  }
+ ],
+ "hero": {
+  "credit": "State Government Photographer, via Wikimedia Commons",
+  "isPublicDomain": true,
+  "assetName": "au-np-naracoorte-caves-c5b021496d.jpg",
+  "caption": "Stalactites and stalagmites in the Naracoorte Caves",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Naracoorte_Caves(GN00247).jpg",
+  "altText": "Limestone formations hanging from a cave ceiling and rising from the floor"
+ },
+ "gallery": [
+  {
+   "credit": "State Government Photographer, via Wikimedia Commons",
+   "isPublicDomain": true,
+   "assetName": "au-np-naracoorte-caves-0a9254b429.jpg",
+   "caption": "Stalactites at the Naracoorte Caves",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Naracoorte_Caves(GN00242).jpg",
+   "altText": "Clusters of thin limestone formations hanging from a cave roof"
+  },
+  {
+   "credit": "Feral Arts, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-naracoorte-caves-bb74941315.jpg",
+   "caption": "Naracoorte Caves National Park",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Naracoorte_Caves_National_Park_1.jpg",
+   "altText": "A scene in Naracoorte Caves National Park",
+   "licence": "CC BY 2.0"
+  },
+  {
+   "credit": "RegionVisitor90, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-naracoorte-caves-4dbe3e2c35.jpg",
+   "caption": "A giant echidna skull at the Wonambi Fossil Centre",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Naracoorte_Caves_National_Park_-_Wonambi_Fossil_Centre_20260623-111602.jpg",
+   "altText": "A fossil skull displayed in a museum case",
+   "licence": "CC BY 4.0"
+  }
+ ],
+ "weather": "Naracoorte Caves is a destination for all seasons: underground the caves stay at a constant 17°C whatever the weather above. In the bush above, spring brings native flowers into bloom, including several orchids, along the World Heritage Hike. Summer is bushfire danger season, usually November to April, when campfires are restricted and the park closes on catastrophic fire danger days; on summer evenings visitors can watch the bent-wing bats stream out of the Bat Cave at dusk. In winter some of the bats hibernate in Blanche Cave, but the Bat Tour pauses from May to August to leave them undisturbed.",
+ "directions": "The park is at 89 Wonambi Road, 10 kilometres south of Naracoorte. Naracoorte is 333 kilometres, about three and a half hours, from Adelaide and 445 kilometres, about five and a half hours, from Melbourne. Some versions of online maps place the visitor centre wrongly, so enter 'Naracoorte Caves National Park Visitor Information Centre' as your destination. A car is the practical way to get there."
+}

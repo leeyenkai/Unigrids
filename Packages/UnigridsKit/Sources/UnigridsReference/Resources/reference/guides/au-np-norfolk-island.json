@@ -1,0 +1,223 @@
+{
+ "placeID": "au-np-norfolk-island",
+ "contentVersion": 1,
+ "story": [
+  "Norfolk Island rose from volcanic activity centred at the base of Mount Pitt and Mount Bates, its highest points. Basalt underlies most of the park and weathers to red krasnozem soils, rich and well structured but porous and prone to slumps and landslips where the forest has gone. The northern coast is a line of cliffs. Phillip Island, to the south, is built equally of basalt lava and tuff from eruptions between 2.3 and 3.2 million years ago, and its interior is deeply gullied bare earth, wind-sculpted pillars and exposed dyke ridges.",
+  "Because the islands were never joined to a continent, their life arrived across the sea and evolved alone. Around 200 native plants grow in the Norfolk group, 46 of them found nowhere else and 15 critically endangered; the Norfolk Island pine, the island's emblem, reaches 60 metres. There are no native land mammals left, the only two, both bats, having died out. The island counts around 116 bird species; the endangered green parrot has boomed to an estimated 300–350 thanks to rat control and nest protection, and the Norfolk Island morepork survives as a hybrid after the last pure bird, a female called Miamiti, bred with a New Zealand male.",
+  "Polynesian seafarers lived on Norfolk between the 13th and 15th centuries; why they left is unknown. Captain James Cook landed on the north coast in 1774, and the British settled the island in March 1788, five weeks after the First Fleet reached Sydney, hoping its pines would make masts and its flax sails. A second, notoriously harsh convict settlement followed from 1825 to the 1850s. In 1856 the descendants of the Bounty mutineers arrived from Pitcairn Island, and their descendants are still about half the islanders. Clearing for farms, forestry and pasture left most of the island in rolling grassland, and rainforest survives mainly in the park.",
+  "The park was declared on 31 January 1986, taking in the botanic garden begun by Pat Moore, who bought the property after moving from New Zealand in 1949 and planted it with Norfolk species. Phillip Island was proclaimed on 24 January 1996. Its recovery has become a showcase: rabbits that had stripped it bare were eradicated in 1986, and the vegetation has steadily returned, making room again for nesting seabirds and for plants and lizards long lost from Norfolk."
+ ],
+ "howItWorks": [
+  "Norfolk Island is an external Australian territory, and its national park is one of the six Commonwealth parks run by Parks Australia. Parks Australia's pages list no entry fee; the Discovery Centre is free, and so is the 30-minute ranger-guided walk in the botanic garden on Mondays at 1.30 pm, except public holidays, booked online. Permits are needed only for research, commercial filming and photography, events and commercial tours. There is no camping in the park; the island's guesthouses, apartments, resorts and bed and breakfasts are booked through Norfolk Island Tourism.",
+  "The park has two parts. The Mount Pitt section, with the botanic garden, is laced with short tracks, from wheelchair-friendly paths in the garden to steep descents to coastal lookouts; all are easy to moderately hard and most are under two kilometres one way. Phillip Island, six kilometres south, is a refuge for seabirds and rare plants free of rats and cats. For safety reasons the park is not currently running tours to Phillip Island, and there are no commercial tours, so most visitors see it from the lookouts on Norfolk.",
+  "Biosecurity shapes everything. Norfolk's strict rules mean even the park's native plants must be grown on the island, from seed collected by rangers. Everything in the park, plants, animals, timber and soil, is protected; do not feed birds, keep to the tracks, and do not ride mountain bikes, quad bikes or motorbikes on them. On the island's roads, cows and other livestock roam freely and have right of way."
+ ],
+ "sightNotes": {
+  "poi-au-norfolk-island-mount-pitt": "One of the island's two highest points, reached by road or the Old Mountain Track past a wartime gun emplacement, with views south over Norfolk to Phillip Island.",
+  "poi-au-norfolk-island-mount-bates": "The other summit, joined to Mount Pitt by the Summit Track through tea-tree and pines; the Mount Bates Track leads past palm forest to a WWII radar station.",
+  "poi-au-norfolk-island-palm-glen": "One of the island's most spectacular rainforest gullies, with giant tree ferns and stands of the endemic Norfolk palm, and views out to Phillip Island.",
+  "poi-au-norfolk-island-captain-cook-monument": "A monument and lookout on the north coast where Cook landed in 1774, with picnic facilities; the Bridle Track starts below it.",
+  "poi-au-norfolk-island-bird-rock-track": "One of the park's harder walks, dropping steeply through pine forest to a lookout over the coast and Bird Rock. White terns, black noddies and tropicbirds fill the air from October to March.",
+  "poi-au-norfolk-island-phillip-island": "A rugged island of lava and tuff six kilometres south, where masked boobies, petrels, sooty terns and black noddies breed. No tours currently land there."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Mount Pitt Road, to the summit and the Old Mountain Track",
+   "Red Road car park, for the Red Road Track and McLachlan's Lane",
+   "Duncombe Bay Road, to the Captain Cook Monument and the Bridle Track",
+   "Mission Road, for the Botanic Garden and Discovery Centre"
+  ],
+  "reservations": "No entry booking. Book the free Monday ranger-guided walk online, and book flights, accommodation and a hire car through Norfolk Island Tourism, which also has immigration and customs information.",
+  "permits": [
+   "Permits for research, commercial filming and photography, events and commercial tours"
+  ],
+  "camping": [
+   "No camping in the park"
+  ],
+  "lodging": [
+   "Historic guesthouses, apartments, resorts, budget lodges and bed and breakfasts across the island"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "13th–15th centuries",
+   "text": "Polynesian seafarers live on Norfolk Island."
+  },
+  {
+   "year": "1774",
+   "text": "Captain James Cook and his officers land on the north coast."
+  },
+  {
+   "year": "1788",
+   "text": "The British settle the island in March, five weeks after the First Fleet reaches Sydney."
+  },
+  {
+   "year": "1825",
+   "text": "A second convict settlement begins, infamous for its harshness; it winds down in the 1850s."
+  },
+  {
+   "year": "1856",
+   "text": "On 8 June, 196 Pitcairn Islanders, descendants of the Bounty mutineers, arrive to settle."
+  },
+  {
+   "year": "1949",
+   "text": "Pat Moore moves to Norfolk from New Zealand and begins the plant collection that becomes the Botanic Garden."
+  },
+  {
+   "year": "1986",
+   "text": "The Norfolk Island National Park and Botanic Garden is declared on 31 January; rabbits are eradicated from Phillip Island the same year."
+  },
+  {
+   "year": "1996",
+   "text": "The Phillip Island section of the park is proclaimed on 24 January."
+  },
+  {
+   "year": "2018",
+   "text": "Norfolk Marine Park is established in the waters around the island."
+  }
+ ],
+ "safety": [
+  "There are no snakes on the island and most spiders are harmless. Wear sturdy shoes, carry water, and use a hat and sunscreen.",
+  "Keep away from cliff edges, especially on the coastal tracks; tracks become slippery after rain.",
+  "Stay on marked tracks and follow rangers' directions and all warning signs. The Bird Rock Track is steep; return by the Red Stone Link Track to avoid the climb back.",
+  "Cows and other livestock roam the roads freely. Slow down around animals."
+ ],
+ "regulations": [
+  "All plants, animals, timber and soil in the park are protected; do not disturb or remove anything.",
+  "No mountain bikes, cars, quad bikes or motorbikes on walking tracks.",
+  "Do not feed birds or other wildlife, or leave food scraps.",
+  "Take your rubbish with you.",
+  "Permits are needed for research, commercial filming and photography, events and commercial tours."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against the park agency's pages and the sources below.",
+  "Park outline: Collaborative Australian Protected Areas Database (CAPAD) 2024, © Commonwealth of Australia (DCCEEW), CC BY 4.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Norfolk Island National Park — Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/"
+  },
+  {
+   "title": "About us — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/about/about-us/"
+  },
+  {
+   "title": "History — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/discover/history/"
+  },
+  {
+   "title": "Geology — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/discover/nature/geology/"
+  },
+  {
+   "title": "Plants — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/discover/nature/plants/"
+  },
+  {
+   "title": "Wildlife — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/discover/nature/wildlife/"
+  },
+  {
+   "title": "Conservation — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/discover/nature/conservation/"
+  },
+  {
+   "title": "Phillip Island — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/discover/phillip-island/"
+  },
+  {
+   "title": "Getting here and Getting around — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/plan/getting-here/"
+  },
+  {
+   "title": "Permits — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/plan/plan-your-trip/permits/"
+  },
+  {
+   "title": "Stay — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/plan/plan-your-trip/stay/"
+  },
+  {
+   "title": "Staying safe — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/plan/plan-your-trip/staying-safe/"
+  },
+  {
+   "title": "When to come — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/plan/when-to-come/"
+  },
+  {
+   "title": "Walks — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/things-do/walks/"
+  },
+  {
+   "title": "Botanic Garden — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/things-do/activities/botanic-garden/"
+  },
+  {
+   "title": "Discovery centre — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/things-do/activities/discovery-centre/"
+  },
+  {
+   "title": "Captain Cook Monument — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/things-do/activities/captain-cook-monument/"
+  },
+  {
+   "title": "Birdwatching — Norfolk Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/norfolk/things-do/activities/birdwatching/"
+  },
+  {
+   "title": "Norfolk Island National Park and Norfolk Island Botanic Garden Management Plan 2020, explanatory statement (F2021L00219) — Director of National Parks (area)",
+   "url": "https://www.legislation.gov.au/F2021L00219/asmade/es"
+  },
+  {
+   "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — DCCEEW",
+   "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+  },
+  {
+   "title": "OpenStreetMap (sight coordinates)",
+   "url": "https://www.openstreetmap.org/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "Casliber, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "au-np-norfolk-island-059b7809ae.jpg",
+  "caption": "Norfolk Island Botanic Garden",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:NBGvista.jpg",
+  "altText": "Dense subtropical forest with palms and tree ferns",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "Duncan Watson, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-norfolk-island-8838643cdc.jpg",
+   "caption": "A Norfolk Island green parrot in the national park",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Norfolk_Parakeet_(Cyanoramphus_cookii).jpg",
+   "altText": "A green parrot with a red crown perched in a tree",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Steve Daggar, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-norfolk-island-96e6ebc058.jpg",
+   "caption": "Phillip Island",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Norfolk_Island_Philip_Island3.jpg",
+   "altText": "Phillip Island rising steeply from the sea",
+   "licence": "CC BY 3.0"
+  },
+  {
+   "credit": "Paul Gear, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-norfolk-island-7a9f3295df.jpg",
+   "caption": "A red-tailed tropicbird nesting on Phillip Island",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Phaethon_rubricauda_-Phillip_Island,_Norfolk_Island_group,_Australia_-nest-8.jpg",
+   "altText": "A white seabird with a red bill sitting on the ground",
+   "licence": "CC BY-SA 3.0"
+  }
+ ],
+ "weather": "Norfolk Island has a mild subtropical climate moderated by the Pacific, and it is a pleasant place to visit in any month. Average temperatures run from 19 to 25°C in summer and from 14 to 19°C in winter, and the sea stays between 19 and 22°C all year. Tracks can turn slippery after rain. Seabirds bring the cliffs to life from October to March, when white terns, black noddies and red-tailed tropicbirds fill the air over the northern coast.",
+ "directions": "Norfolk Island lies in the south-west Pacific about 1,700 kilometres east of Sydney and 1,100 kilometres north-west of Auckland. Flights arrive regularly from Sydney, Brisbane and Auckland; check immigration and customs requirements with Norfolk Island Tourism before you travel. The airport dates from the Second World War. On the island, a hire car from one of the agencies in the township is the best way to reach the park; there is also a taxi service and bicycle hire, and the Visitor Information Centre can help. Drive slowly: livestock wander the roads and have right of way."
+}

@@ -1,0 +1,219 @@
+{
+ "placeID": "au-np-kosciuszko",
+ "contentVersion": 1,
+ "story": [
+  "Kosciuszko holds the highest mountains on the Australian continent, and the glacial landforms of the Main Range. On the Main Range, five small lakes were scoured out by ice: Albina, Blue, Club, Cootapatamba and Hedley Tarn. They are the highest lakes in Australia, the only lakes on the mainland formed by glaciers, and the only mainland lakes with a long seasonal ice cover. Below the tops, the park spreads across 673,542 hectares of snow gum woodland, tall forest, deep river valleys and the limestone country around Yarrangobilly, and it is the principal snow country in Australia. It also protects major water catchments.",
+  "The alpine plants and animals are unusually distinctive, and a number are found nowhere else. In early summer the high country flowers with marsh marigolds and mountain roses. Galaxias, small native fish, live in Blue and Club lakes. The park is part of a chain of about 1.6 million hectares of national parks and reserves across the Australian Alps, run together under an agreement between New South Wales, Victoria, the ACT and the Commonwealth.",
+  "These mountains are the Country of many Aboriginal peoples. The park's plan of management recognises the People of the Mountains: the Wiradjuri, Wolgalu, Ngunnawal and Monaro Ngarigo. Paweł Strzelecki climbed the highest peak on 12 March 1840 and named it after the Polish patriot Tadeusz Kościuszko.",
+  "Graziers ran stock in the mountains for well over a century, alongside short-lived mining and logging ventures. In 1906 a reserve of 160 square kilometres around Mount Kosciuszko was set aside for public recreation. Concern for eroding catchments, and for hydro-electric plans, led Premier William McKell to create Kosciusko State Park in 1944, with 518,229 hectares. Grazing was gradually pushed back and finally ended in 1972. The state park became a national park under the 1967 National Parks and Wildlife Act, and the spelling Kosciuszko was adopted in 1997."
+ ],
+ "howItWorks": [
+  "Kosciuszko is run by the NSW National Parks and Wildlife Service (NPWS), with visitor centres at Jindabyne, Tumut, Khancoban and Yarrangobilly Caves. It is one of only 45 NSW parks that charge vehicle entry. From the Friday of the June long weekend to the Monday of the October long weekend the fee is $29 per vehicle per 24 hours; the rest of the year it is $17. Motorcycles pay $12 and $7, and Yarrangobilly Caves alone is $4 a vehicle. Pay at entry stations, visitor centres or pay machines, or through the Park'nPay app in the Thredbo-Perisher, Khancoban and Selwyn areas. Only the All Parks Pass, $190 a year as listed by NPWS in November 2026, covers Kosciuszko; the cheaper Multi Park Pass does not.",
+  "Snow season changes the rules. Between the June and October long weekends, every 2WD vehicle in the Thredbo-Perisher area must carry snow chains, and NPWS recommends chains for 4WD and AWD vehicles in extreme weather too. The Cabramurra–Khancoban Road is closed over the same period, Swampy Plains Creek Road closes in winter, and Charlotte Pass can be reached in winter only by oversnow transport from Perisher. The summit walks are snowbound from June to October. For long, off-track, overnight or remote trips, NPWS asks you to lodge a trip intention form and carry a personal locator beacon.",
+  "Campgrounds and the park's mountain cottages are booked with NPWS online or on 1300 072 757. Bushfire season runs from October to March, and on total fire ban days, usually declared around 5 pm the day before, all wood or solid-fuel fires and liquid-fuel stoves are prohibited; visitor-owned gas cookers are generally prohibited too. Recreational drones are banned, and fishing in rivers and streams is allowed only from the October to the June long weekend, with a NSW fishing licence."
+ ],
+ "sightNotes": {
+  "poi-au-kosciuszko-mount-kosciuszko": "Australia's highest mountain, 2,228 metres. Reached from the top of Thredbo's Kosciuszko Express chairlift or along the old summit road from Charlotte Pass to Rawson Pass.",
+  "poi-au-kosciuszko-blue-lake": "One of five glacial lakes on the Main Range, the highest lakes in Australia, with a long seasonal ice cover.",
+  "poi-au-kosciuszko-lake-albina": "One of the five lakes on the Main Range carved by glaciers, the only glacial lakes on mainland Australia.",
+  "poi-au-kosciuszko-seamans-hut": "A shelter hut on the route between Charlotte Pass and Rawson Pass, one of the historic huts of the high country.",
+  "poi-au-kosciuszko-yarrangobilly-caves-and-thermal-pool": "Limestone caves in the north of the park, with show caves and tours, and a spring-fed thermal pool open from sunrise to sunset.",
+  "poi-au-kosciuszko-kiandra": "A historic site on the Snowy Mountains Highway, explored on the Kiandra Heritage track."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Kosciuszko Road from Jindabyne, for Perisher and Charlotte Pass",
+   "The Alpine Way from Jindabyne, for Thredbo, Geehi and Khancoban",
+   "The Snowy Mountains Highway from Cooma, entering the park 14 kilometres beyond Adaminaby, for Kiandra, Yarrangobilly and Tumut",
+   "Khancoban, on the park's western side"
+  ],
+  "reservations": "No booking for day visits, but a vehicle pass is needed. Campgrounds and mountain cottages are booked with NPWS online or on 1300 072 757.",
+  "permits": [
+   "A vehicle entry pass on Kosciuszko Road and the Alpine Way, and in other fee areas",
+   "A NSW recreational fishing licence; river and stream fishing only from the October to the June long weekend",
+   "Prior NPWS consent for commercial filming or for installing cameras"
+  ],
+  "camping": [
+   "NPWS campgrounds across the park; book with NPWS",
+   "The Snowies Alpine Walk, a 56-kilometre, four-day walk linking Guthega, Charlotte Pass, Perisher Valley and Bullocks Hut; lodge a trip intention"
+  ],
+  "lodging": [
+   "Mountain cottages managed by NPWS",
+   "Lodges and hotels in the alpine resorts of Thredbo, Perisher and Charlotte Pass",
+   "Accommodation in Jindabyne, Cooma, Tumut and Khancoban"
+  ],
+  "seasonalClosures": [
+   "Between the June and October long weekends, 2WD vehicles in the Thredbo-Perisher area must carry snow chains",
+   "The Cabramurra–Khancoban Road is closed from the June to the October long weekend, and Swampy Plains Creek Road closes in winter",
+   "In winter Charlotte Pass is reached only by oversnow transport from Perisher, and the summit walks are snowbound from June to October — check NPWS alerts and Live Traffic NSW before you go"
+  ],
+  "seasonalClosureMonths": [
+   6,
+   7,
+   8,
+   9
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1840",
+   "text": "Paweł Strzelecki reaches the summit on 12 March and names the mountain after Tadeusz Kościuszko."
+  },
+  {
+   "year": "1906",
+   "text": "The Snowy Mountains National Chase, 160 square kilometres around Mount Kosciuszko, is reserved for public recreation."
+  },
+  {
+   "year": "1944",
+   "text": "The Kosciusko State Park Act creates a park of 518,229 hectares, after Premier William McKell's announcement of 1943."
+  },
+  {
+   "year": "1963",
+   "text": "The Kosciusko Primitive Area is declared on the Main Range, ending plans to dam Spencers Creek."
+  },
+  {
+   "year": "1967",
+   "text": "Under the new National Parks and Wildlife Act, the state park becomes Kosciusko National Park."
+  },
+  {
+   "year": "1972",
+   "text": "Grazing ends throughout the park, after 135 years of recorded grazing."
+  },
+  {
+   "year": "1997",
+   "text": "The spelling Kosciuszko is officially adopted."
+  },
+  {
+   "year": "2003",
+   "text": "Major wildfires burn across the park."
+  }
+ ],
+ "safety": [
+  "Alpine weather is extreme and changes fast. Carry warm, waterproof clothing on every walk, even in summer, and turn back if the weather closes in.",
+  "In winter, carry snow chains as required, and know how to fit them. Check road conditions with Live Traffic NSW.",
+  "For long, off-track, overnight or remote trips, lodge a trip intention form and carry a personal locator beacon; mobile reception is limited.",
+  "Check NPWS alerts and the Rural Fire Service before you go: roads and trails close for weather, fire danger and management works."
+ ],
+ "regulations": [
+  "No pets or domestic animals, except certified assistance animals.",
+  "No recreational drones.",
+  "No smoking in the national park, except in parts of the alpine resorts.",
+  "Fish rivers and streams only from the October to the June long weekend, with a NSW recreational fishing licence.",
+  "Cycle only on public roads and on management trails outside wilderness areas, and give way to walkers."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against the park agency's pages and the sources below.",
+  "Park outline: Collaborative Australian Protected Areas Database (CAPAD) 2024, © Commonwealth of Australia (DCCEEW), CC BY 4.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Kosciuszko National Park — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kosciuszko-national-park"
+  },
+  {
+   "title": "Kosciuszko National Park: visitor info — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kosciuszko-national-park/visitor-info"
+  },
+  {
+   "title": "Mount Kosciuszko summit walk — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/mount-kosciuszko-summit-walk"
+  },
+  {
+   "title": "Yarrangobilly Caves thermal pool — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/things-to-do/swimming-spots/yarrangobilly-caves-thermal-pool"
+  },
+  {
+   "title": "Kosciuszko National Park Plan of Management (2006, reprinted 2020) — NSW National Parks and Wildlife Service",
+   "url": "https://www.environment.nsw.gov.au/sites/default/files/kosciuszko-national-park-plan-of-management-210174.pdf"
+  },
+  {
+   "title": "Fee-collecting national parks — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/fee-collecting-parks"
+  },
+  {
+   "title": "Annual passes — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/annual-passes"
+  },
+  {
+   "title": "Total fire bans and park fire bans — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/safety/fire-safety/fire-bans"
+  },
+  {
+   "title": "Mount Kosciuszko — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mount_Kosciuszko"
+  },
+  {
+   "title": "OpenStreetMap (sight coordinates)",
+   "url": "https://www.openstreetmap.org/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Vehicle entry, winter peak",
+   "cost": "$29 per vehicle per 24 hours",
+   "detail": "Friday of the June long weekend to Monday of the October long weekend. Motorcycles $12; bus passengers $11.45 adult, $3.60 child. As listed by NPWS in November 2026 — check before you go.",
+   "amount": 29,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Vehicle entry, rest of the year",
+   "cost": "$17 per vehicle per 24 hours",
+   "detail": "Tuesday after the October long weekend to Thursday before the June long weekend. Motorcycles $7; bus passengers $6.60 adult, $2.20 child. As listed by NPWS in November 2026.",
+   "amount": 17,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Yarrangobilly Caves vehicle entry",
+   "cost": "$4 per vehicle",
+   "detail": "Year-round, unless general park entry has been paid. Cave tours are extra. As listed by NPWS in November 2026.",
+   "amount": 4,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "All Parks Pass",
+   "cost": "$190 for one year / $335 for two years",
+   "detail": "The only NSW annual pass that covers Kosciuszko; it does not include the Skitube. Seniors $152 and $268. As listed by NPWS in November 2026.",
+   "amount": 190,
+   "currencyCode": "AUD"
+  }
+ ],
+ "hero": {
+  "credit": "Dhx1, via Wikimedia Commons",
+  "isPublicDomain": true,
+  "assetName": "au-np-kosciuszko-1b78bdefed.jpg",
+  "caption": "Mount Northcote from Muellers Pass on the Main Range",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Main_Range_Track,_Kosciuszko_National_Park_12.jpg",
+  "altText": "Rolling treeless alpine ridges with granite outcrops under a blue sky"
+ },
+ "gallery": [
+  {
+   "credit": "Martinjohnbudden, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-kosciuszko-3c6cf36379.jpg",
+   "caption": "Mount Kosciuszko, Australia's highest mountain, under snow",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Kosciuszko_with_snow.jpg",
+   "altText": "A broad, rounded snow-covered summit under a pale sky",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Artefotograf, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-kosciuszko-a26267501c.jpg",
+   "caption": "Seamans Hut at sunrise",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Seaman%27s_Hut_Sunrise,_Kosciuszko_National_Park.jpg",
+   "altText": "A small stone hut on a bare alpine slope lit by early morning sun",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Jimmyvandewall, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-kosciuszko-78656fd54a.jpg",
+   "caption": "Stalactites in Jillabenan Cave, Yarrangobilly",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Stalactites,_Jillabenan_Cave,_Kosciuszko_National_Park,_NSW_Australia.jpg",
+   "altText": "Clusters of pale stalactites hanging from the roof of a limestone cave",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "Alpine conditions here can be extreme and change rapidly, especially in winter. The summit walks are snowbound from June to October, the season of skiing at Thredbo and Perisher, when snow chains are compulsory for 2WD vehicles in the Thredbo-Perisher area. Summer is the walking season, with wildflowers such as marsh marigolds and mountain roses in early summer, but the tops can still turn cold. Check the alpine weather forecast before you go.",
+ "directions": "From Canberra, drive about 100 kilometres by the Monaro Highway to Cooma, then 45 kilometres on to Jindabyne, the main gateway. From Jindabyne, Kosciuszko Road climbs to Perisher and Charlotte Pass, and the Alpine Way runs to Thredbo and on to Khancoban. For the north of the park, take the Snowy Mountains Highway from Cooma 51 kilometres to Adaminaby; the park begins 14 kilometres beyond. Roads are busy on summer weekends and public holidays and in the ski season; check Live Traffic NSW."
+}

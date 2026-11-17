@@ -1,0 +1,226 @@
+{
+ "placeID": "au-np-freycinet",
+ "contentVersion": 1,
+ "story": [
+  "The Freycinet Peninsula is in effect two eroded blocks of granite: the Hazards in the north, and Mount Graham and Mount Freycinet in the south, joined by the sandy isthmus whose eastern shore curves round Wineglass Bay. The granite weathers into orange, lichen-crusted boulders and sheer pink cliffs, and the coast alternates between rocky coves pounded by surf and sheltered bays with white sand. Separate from the main park, the long, empty Friendly Beaches to the north were added in 1992.",
+  "Whales, particularly humpbacks, visit the waters off the peninsula in winter, and seals rest on the rocks. White-bellied sea-eagles glide over the Cape Tourville and Wineglass Bay lookouts, and Australasian gannets dive for fish. Bennett's wallabies, pademelons and echidnas are common, and wildflowers and orchids bloom for much of the year. Sea kayakers explore its clear water and pink granite cliffs from the relatively sheltered waters of Coles Bay, and snorkellers its rocky shores.",
+  "The park lies in the country of the Oyster Bay nation, some 600 to 700 people whose territory ran from the Derwent estuary up the east coast to the Fingal Valley and west to the Midlands. Records suggest the Freycinet Peninsula and Schouten Island belonged to the toorerno-maire-mener clan; in 1816 Captain James Kelly recorded a party of Aboriginal people on Schouten Island. Shell middens, quarries, rock shelters and stone artefacts line the coasts and dunes, and one of the most extensive middens known on the east coast lies beside the Richardsons Beach campground. These places keep a strong, continuing connection to the Tasmanian Aboriginal community.",
+  "Whalers, tin and coal miners and pastoralists all lived and worked on the peninsula after European settlement, leaving mine shafts, farmers' huts and the remains of whaling camps. Naturalists, artists and writers long admired its granite mountains and beaches, and in 1916 the area was reserved as a national park, making Freycinet, with Mount Field, the oldest national park in Tasmania."
+ ],
+ "howItWorks": [
+  "Freycinet is managed by the Tasmania Parks and Wildlife Service (PWS), and a valid parks pass is required for entry; children under five are free. Passes are sold online and at the Freycinet Visitor Centre at the park entrance, open daily from 9 am to 4 pm. A Daily Pass covers a vehicle of up to eight people for 24 hours; a Holiday Pass covers all Tasmanian parks for up to two months. PWS reviews its fees each year in line with CPI.",
+  "The park's campground, along Richardsons Beach, Honeymoon Bay and Ranger Creek beside the visitor centre, is booked online. Stays are limited to 10 nights from 18 December to 10 February and 14 nights at other times, and for stays from 3 November 2026 cancellations within five days of arrival are not refunded. The small walkers' campsites at Wineglass Bay, Hazards Beach and Cooks Beach are free and need no booking. A shared walk and cycle track links the visitor centre with the walking tracks car park, 4 kilometres away.",
+  "Freycinet is very dry and vulnerable to fire, and is a Fuel Stove Only Area all year: no fires anywhere in the park. Gas and fuel stoves may be used, except on days of Total Fire Ban, when no naked flames of any sort are allowed in the open. Drinking water is scarce: fill up at the visitor centre's water station or the taps at Honeymoon Bay and the walking tracks car park. Store food securely, as possums investigate unattended bags, and follow the Leave No Trace principles. Dogs and drones are not allowed."
+ ],
+ "sightNotes": {
+  "poi-au-freycinet-wineglass-bay-lookout": "A steep 2.6-kilometre, one- to one-and-a-half-hour return climb past granite boulders to platforms above Wineglass Bay; whales or dolphins are an occasional bonus.",
+  "poi-au-freycinet-wineglass-bay": "The celebrated curve of white sand and clear water, reached by descending from the lookout saddle: 6 kilometres, two and a half to three and a half hours return.",
+  "poi-au-freycinet-hazards-beach": "A long sandy beach across the isthmus from Wineglass Bay, the halfway point of an 11-kilometre, four- to five-hour circuit returning along the coast below Mount Mayson.",
+  "poi-au-freycinet-mount-amos": "A Hazards summit reached by a steep 3.6-kilometre, three-hour Grade 4 return climb over sheets of bare, sometimes slippery granite, with panoramic views of Wineglass Bay.",
+  "poi-au-freycinet-cape-tourville": "An easy 600-metre, 20-minute boardwalk circuit around an automated lighthouse on the cliff edge, with views of the Hazards, Wineglass Bay and The Nuggets.",
+  "poi-au-freycinet-sleepy-bay": "A rocky bay of turquoise water and orange lichen-encrusted granite, often wild despite its name, down a 500-metre return track of graded steps.",
+  "poi-au-freycinet-friendly-beaches": "Miles of unspoiled white sand in the park's separate northern section, added in 1992 and reached by gravel road off the Coles Bay Road.",
+  "poi-au-freycinet-cooks-beach": "A remote beach on the 27-kilometre, two- to three-day Freycinet Peninsula Circuit, with a free walkers' campsite and an unreliable rainwater tank at Cooks Hut."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "The main entrance and visitor centre, through Coles Bay, 28 kilometres along the sealed Coles Bay Road (C302) from the Tasman Highway",
+   "The Friendly Beaches turn-off, a gravel road about 9 kilometres from the highway"
+  ],
+  "reservations": "Campsites at Richardsons Beach, Honeymoon Bay and Ranger Creek are booked online, and summer stays are capped at 10 nights. The walkers' campsites need no booking. Check with PWS before you go.",
+  "permits": [
+   "A valid Tasmanian parks pass"
+  ],
+  "camping": [
+   "Richardsons Beach: powered vehicle sites with hot showers, and tent-only sand dune sites",
+   "Honeymoon Bay: tent-only sites on a granite knoll, open only over the summer holidays and at Easter",
+   "Ranger Creek, beside the visitor centre",
+   "Friendly Beaches (Isaacs Point): low-key tent and campervan sites",
+   "Free walkers' campsites with composting toilets at Wineglass Bay, Hazards Beach and Cooks Beach"
+  ],
+  "seasonalClosures": [
+   "Honeymoon Bay campsites open only over the summer holidays and at Easter",
+   "On days of Total Fire Ban no naked flames, including stoves, may be used in the open"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "Before European arrival",
+   "text": "The toorerno-maire-mener clan of the Oyster Bay nation live on the Freycinet Peninsula and Schouten Island."
+  },
+  {
+   "year": "1816",
+   "text": "Captain James Kelly records a party of Aboriginal people on Schouten Island."
+  },
+  {
+   "year": "1916",
+   "text": "Freycinet is reserved as a national park on 29 August, with Mount Field the first in Tasmania."
+  },
+  {
+   "year": "1992",
+   "text": "The Friendly Beaches are added to the national park."
+  }
+ ],
+ "safety": [
+  "Walks are often on steep granite and loose gravel; wear sturdy footwear. Mount Amos climbs bare rock that is slippery after rain and is not recommended for young children or the elderly.",
+  "The beaches are unpatrolled and there are hazardous cliffs, including at Cape Tourville and Sleepy Bay; supervise children at all times.",
+  "Water is scarce on the Peninsula Circuit: carry enough, and boil creek or tank water before drinking.",
+  "Walk the Peninsula Circuit anticlockwise from the Wineglass Bay car park, down the western side, to help stop the spread of root rot (Phytophthora).",
+  "Tasmanian weather can change quickly: carry a warm, waterproof layer even on a fine day."
+ ],
+ "regulations": [
+  "Fuel Stove Only Area: no fires anywhere in the park, and no naked flames of any kind on Total Fire Ban days.",
+  "Drones are not permitted in Tasmanian national parks or reserves, and dogs are not allowed.",
+  "Do not feed wildlife; keep food and bags secure from possums.",
+  "Respect Aboriginal sites such as the shell middens along the coast, and take all rubbish out with you."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against the park agency's pages and the sources below.",
+  "Park outline: Collaborative Australian Protected Areas Database (CAPAD) 2024, © Commonwealth of Australia (DCCEEW), CC BY 4.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Freycinet National Park — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/explore-our-parks/freycinet-national-park"
+  },
+  {
+   "title": "Wineglass Bay Lookout — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-Lookout.aspx"
+  },
+  {
+   "title": "Wineglass Bay and Hazards Beach — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Wineglass-Bay-and-Hazards-Beach.aspx"
+  },
+  {
+   "title": "Freycinet Peninsula Circuit — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Freycinet-Peninsula-Circuit.aspx"
+  },
+  {
+   "title": "Mount Amos — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Mount-Amos.aspx"
+  },
+  {
+   "title": "Cape Tourville — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Cape-Tourville.aspx"
+  },
+  {
+   "title": "Sleepy Bay — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Sleepy-Bay.aspx"
+  },
+  {
+   "title": "Friendly Beaches — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Friendly-Beaches.aspx"
+  },
+  {
+   "title": "Richardsons Beach, Honeymoon Bay and Ranger Creek camping — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Richardsons-Beach,-Honeymoon-Bay-and-Ranger-Creek.aspx"
+  },
+  {
+   "title": "Freycinet overnight walker campsites — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Freycinet-overnight-walker-campsites.aspx"
+  },
+  {
+   "title": "Mount Field history — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Mount-Field-History.aspx"
+  },
+  {
+   "title": "Rafting and kayaking — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Rafting-and-kayaking.aspx"
+  },
+  {
+   "title": "Park passes and entry fees — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/entry-fees.aspx"
+  },
+  {
+   "title": "Fuel Stove Only Areas — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Fuel-Stove-Only-Areas.aspx"
+  },
+  {
+   "title": "Leave No Trace — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Leave-no-trace.aspx"
+  },
+  {
+   "title": "Dogs in parks — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Dogs-in-parks.aspx"
+  },
+  {
+   "title": "Reserve listing: national parks and reserves (2 June 2022) — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Documents/Reserve%20Listing.pdf"
+  },
+  {
+   "title": "Climate statistics: Friendly Beaches, 092114 — Bureau of Meteorology",
+   "url": "https://www.bom.gov.au/climate/averages/tables/cw_092114.shtml"
+  },
+  {
+   "title": "Freycinet National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Freycinet_National_Park"
+  },
+  {
+   "title": "OpenStreetMap (sight coordinates)",
+   "url": "https://www.openstreetmap.org/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Campsite, Richardsons Beach or Ranger Creek",
+   "cost": "$24",
+   "detail": "Unpowered tent site per night, up to six people; powered RV site $35. Honeymoon Bay tent sites $18. As listed by PWS in November 2026.",
+   "amount": 24,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Daily Pass, per vehicle",
+   "cost": "$49.15",
+   "detail": "Up to 24 hours, for a vehicle of up to eight people; $24.55 per person by bus, bicycle or on foot. Reviewed each year by CPI.",
+   "amount": 49.15,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Walkers' campsites",
+   "cost": "Free",
+   "detail": "Wineglass Bay, Hazards Beach and Cooks Beach; no booking required. A parks pass is still needed.",
+   "amount": 0,
+   "currencyCode": "AUD"
+  }
+ ],
+ "hero": {
+  "credit": "JJ Harrison ( https://www.jjharrison.com.au/ ), via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "au-np-freycinet-572d66c3f6.jpg",
+  "caption": "Wineglass Bay from the lookout saddle",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Wineglass_Bay_from_Lookout.jpg",
+  "altText": "A perfectly curved white beach around a turquoise bay, backed by forested hills",
+  "licence": "CC BY-SA 3.0"
+ },
+ "gallery": [
+  {
+   "credit": "JJ Harrison ( https://www.jjharrison.com.au/ ), via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-freycinet-aa7151aa4c.jpg",
+   "caption": "The granite Hazards from Hazards Beach",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:The_Hazards_From_Hazards_Beach.jpg",
+   "altText": "Rounded granite peaks rising behind a sandy beach and calm water",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "Mikeybear, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-freycinet-679dc1353f.jpg",
+   "caption": "Wineglass Bay and the Hazards from the summit of Mount Amos",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:20100209_Wineglass_Bay_and_The_Hazards_from_Mt_Amos_peak.JPG",
+   "altText": "A high view over bare granite to a curving bay and the peninsula beyond",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "Binosh, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-freycinet-0a0c52920f.jpg",
+   "caption": "The view from Cape Tourville, beside its lighthouse",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Cape_Tourville_Lighthouse.jpg",
+   "altText": "A coastal view over the sea and granite headlands from a cliff-top lookout",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "The east coast enjoys a milder, drier climate than the rest of Tasmania. At the Bureau of Meteorology's Friendly Beaches station, rain averages about 710 millimetres a year, falling on some 80 days, spread fairly evenly through the seasons. January afternoons average about 23°C and July afternoons about 14°C, with winter nights around 6°C. Summer is the busiest camping season. Winter is a good time for the Peninsula Circuit: the days are cool, creek water is more reliable, and whales visit the coast. The park is very dry, with water scarce on the tracks in summer, and the beaches are unpatrolled.",
+ "directions": "Freycinet is about two and a half to three hours' drive from either Launceston or Hobart. Turn off the Tasman Highway (A3) onto the Coles Bay Road (C302), 12 kilometres south of Bicheno. The turn-off to the Friendly Beaches is a gravel road about 9 kilometres along; for the main park, drive straight through Coles Bay township to the entrance and visitor centre, 28 kilometres from the highway on a sealed road. The walking tracks car park is beyond, also reached by the 4-kilometre walk and cycle track from the visitor centre. Public transport and tours also reach the park. Avoid driving at night, when wildlife is on the road."
+}

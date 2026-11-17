@@ -1,0 +1,223 @@
+{
+ "placeID": "au-np-mount-field",
+ "contentVersion": 1,
+ "story": [
+  "Mount Field is one of Tasmania's most diverse parks. It sits where the island's eastern and western floras meet, on dolerite, sandstone and quartzite, and climbs from lowland forest to alpine heath. Glaciers in the last ice age carved its valleys and tarns, and periglacial blockstreams are scattered through the park; one dams Lake Fenton. At the bottom grow swamp gums, the tallest flowering plants in the world; at the top, snow gums, cushion plants and fagus, the deciduous beech whose leaves turn gold, orange and red each autumn.",
+  "The park lies in the homelands of the Big River nation of Tasmanian Aboriginal people, who knew this place when it was buried in glacial ice. Cave sites, ochre mines, hand-stencil art, rock engravings and stone tool quarries record their continuous connection to Country, and surveys of the nearby Florentine Valley show Aboriginal occupation of more than 35,000 years. The Pangerninghe band, at the junction of the Derwent and Clyde rivers near present-day Hamilton, were the closest band to the park.",
+  "From the 1830s trappers and snarers worked the high country. In 1885 Russell Falls became Tasmania's first nature reserve, and in 1899 it appeared on the colony's first pictorial stamps. A railway and, in 1911, a guesthouse brought visitors for sightseeing, walking and trout fishing. On 29 August 1916 Mount Field, known until 1937 simply as 'National Park', became one of Tasmania's first two national parks, with Freycinet; it was named after Judge Barron Field, and William Crooke, Leonard Rodway and Henry Dobson were the driving forces behind it.",
+  "The first ranger, William Belcher, appointed in 1917, cut tracks and built huts with his horse Runic. From the 1920s Mount Field became Tasmania's first centre for skiing and ice-skating, and a road to Lake Dobson, finished in 1937, opened up the high country. The Lake Fenton water scheme, completed in 1939, still supplies about a fifth of Hobart's drinking water. In 2013 the park was incorporated into the Tasmanian Wilderness World Heritage Area, and it now receives more than 200,000 visitors a year."
+ ],
+ "howItWorks": [
+  "Mount Field is managed by the Tasmania Parks and Wildlife Service (PWS). A valid parks pass is required: buy one online or at the visitor centre at the park entrance, which also sells maps and has the Curiosity Room displays. A Daily Pass covers a vehicle of up to eight people for 24 hours; a Holiday Pass covers all Tasmanian parks for two months. Children under five are free, and PWS reviews its fees each year in line with CPI.",
+  "The park has two visitor areas. The entrance area has the visitor centre, a privately run café, picnic grounds with electric barbecues, the campground beside the Tyenna River and the short walks to Russell Falls and the Tall Trees. Lake Dobson, 16 kilometres up a winding gravel road unsuitable for campervans and buses, is the start of the alpine walks; register at the Lake Dobson booth before walking to Mount Field West and sign back in on your return. In winter the Southern Tasmanian Ski Association runs tows at Mount Mawson on weekends and holidays when snow allows.",
+  "The park is a Fuel Stove Only Area: fires are not permitted in the campground, though staff can advise on the few designated fireplaces in the day-use area when no fire ban is in force. Follow the Leave No Trace principles, keep to the tracks on the Tarn Shelf to protect rare and sensitive plants, and do not feed the wildlife. Dogs and recreational drones are not allowed. Wheelchairs can be hired from the visitor centre, and a TrailRider all-terrain wheelchair is lent free with advance booking."
+ ],
+ "sightNotes": {
+  "poi-au-mount-field-russell-falls": "Tasmania's first nature reserve: a tiered waterfall reached by a sealed 1.4-kilometre, 25-minute return path suitable for wheelchairs. Glow-worms shine along the track at night.",
+  "poi-au-mount-field-tall-trees-walk": "A 1-kilometre, 30-minute loop among giant swamp gums, the tallest flowering plants on Earth, some growing when Abel Tasman sighted Tasmania in 1642. A clinometer lets you measure them.",
+  "poi-au-mount-field-horseshoe-falls": "The second waterfall on the 6-kilometre Three Falls Circuit, a short climb above Russell Falls; the circuit returns past Lady Barron Falls.",
+  "poi-au-mount-field-lake-dobson": "A glacial lake at the top of the park road, ringed by snow gums and towering pandani, where the alpine walks begin.",
+  "poi-au-mount-field-tarn-shelf": "A shelf of small glacial lakes, often frozen in winter and brilliant with fagus in autumn. A 12-kilometre, five- to six-hour circuit; shorter three-hour return from the ski fields.",
+  "poi-au-mount-field-twilight-tarn": "A tarn on the Tarn Shelf circuit with a rustic 1926 ski hut holding memorabilia of early skiing.",
+  "poi-au-mount-field-lake-fenton": "A lake dammed by a periglacial blockstream, a fine place to see the fagus in autumn, and the source of about a fifth of Hobart's drinking water.",
+  "poi-au-mount-field-mount-field-west": "The park's highest point, 1,434 metres: a 17-kilometre, eight- to nine-hour Grade 5 return walk over the Rodway Range's boulder fields for experienced walkers."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "The main entrance and visitor centre, 66 Lake Dobson Road, beside the township of National Park",
+   "Lake Dobson car park, 16 kilometres up a gravel road from the entrance, for the alpine walks and ski fields"
+  ],
+  "reservations": "Campsites at Mount Field campground are booked online; the Mount Field Government Huts are also booked through PWS. Check before you go.",
+  "permits": [
+   "A valid Tasmanian parks pass",
+   "Walker registration at the Lake Dobson booth for Mount Field West"
+  ],
+  "camping": [
+   "Mount Field campground beside the Tyenna River, 200 metres from the visitor centre: 14 powered sites and unpowered sites, hot showers, for tents, campervans and caravans; maximum stay 14 days"
+  ],
+  "lodging": [
+   "Mount Field Government Huts, a base for the alpine area"
+  ],
+  "seasonalClosures": [
+   "Lake Dobson Road may be closed by snow, and chains may be needed; phone the visitor centre on 03 6288 1149 for road conditions"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "More than 35,000 years ago",
+   "text": "Aboriginal people are living in the nearby Florentine Valley; the park lies in the homelands of the Big River nation."
+  },
+  {
+   "year": "1869",
+   "text": "Botanist Baron von Mueller visits Mount Field East and first describes the snow gum, cider gum and cushion plants around Lake Fenton."
+  },
+  {
+   "year": "1885",
+   "text": "Russell Falls is declared Tasmania's first nature reserve."
+  },
+  {
+   "year": "1916",
+   "text": "On 29 August Mount Field and Freycinet become Tasmania's first national parks."
+  },
+  {
+   "year": "1917",
+   "text": "William Belcher is appointed the park's first ranger, serving 17 years."
+  },
+  {
+   "year": "1926",
+   "text": "The new Ski Club of Tasmania builds a hut at Twilight Tarn."
+  },
+  {
+   "year": "1937",
+   "text": "The road to Lake Dobson is completed, and the park takes the name Mount Field."
+  },
+  {
+   "year": "1939",
+   "text": "The Lake Fenton water supply scheme for Hobart is completed."
+  },
+  {
+   "year": "2013",
+   "text": "The park is incorporated into the Tasmanian Wilderness World Heritage Area."
+  }
+ ],
+ "safety": [
+  "The alpine walks from Lake Dobson can meet snow, rain and strong wind at any time of year. Carry a waterproof jacket and overtrousers, warm layers, a hat and gloves, and watch PWS's hypothermia safety video.",
+  "Mount Field West is Grade 5, for experienced walkers with navigation skills, and is not suitable as a day trip in the short days of winter. Start early; there is an emergency hut at K Col.",
+  "Mobile phone reception is unreliable. Tell someone your plans, register at Lake Dobson, and consider hiring a personal locator beacon from the visitor centre.",
+  "Lake Dobson Road is gravel, winding and steep; carry chains in winter and check conditions before you drive up."
+ ],
+ "regulations": [
+  "Fuel Stove Only Area: fires are not permitted in the campground or on the walks.",
+  "Register at the Lake Dobson booth before walking to Mount Field West.",
+  "Stay on the tracks across the Tarn Shelf to protect rare and sensitive vegetation.",
+  "Dogs and recreational drones are not allowed in Tasmanian national parks."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against the park agency's pages and the sources below.",
+  "Park outline: Collaborative Australian Protected Areas Database (CAPAD) 2024, © Commonwealth of Australia (DCCEEW), CC BY 4.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Mount Field National Park — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Mount-Field-National-Park.aspx"
+  },
+  {
+   "title": "Mount Field history — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Mount-Field-History.aspx"
+  },
+  {
+   "title": "Mount Field camping — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Mount-Field-campground.aspx"
+  },
+  {
+   "title": "Russell Falls — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Russell-Falls.aspx"
+  },
+  {
+   "title": "Tall Trees — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Tall-Trees.aspx"
+  },
+  {
+   "title": "Three Falls Circuit — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Three-Falls.aspx"
+  },
+  {
+   "title": "Tarn Shelf — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Tarn-Shelf.aspx"
+  },
+  {
+   "title": "Mount Field West — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Mount-Field-West.aspx"
+  },
+  {
+   "title": "Tasmanian Wilderness World Heritage Area — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/explore-our-parks/tasmanian-wilderness-world-heritage-area-(twwha)"
+  },
+  {
+   "title": "Park passes and entry fees — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/entry-fees.aspx"
+  },
+  {
+   "title": "Fuel Stove Only Areas — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Fuel-Stove-Only-Areas.aspx"
+  },
+  {
+   "title": "Leave No Trace — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Leave-no-trace.aspx"
+  },
+  {
+   "title": "Safety in parks — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Pages/Safety-in-parks.aspx"
+  },
+  {
+   "title": "Reserve listing: national parks and reserves (2 June 2022) — Parks and Wildlife Service Tasmania",
+   "url": "https://parks.tas.gov.au/Documents/Reserve%20Listing.pdf"
+  },
+  {
+   "title": "Climate statistics: Maydena Post Office, 095063 — Bureau of Meteorology",
+   "url": "https://www.bom.gov.au/climate/averages/tables/cw_095063.shtml"
+  },
+  {
+   "title": "Mount Field National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mount_Field_National_Park"
+  },
+  {
+   "title": "OpenStreetMap (sight coordinates)",
+   "url": "https://www.openstreetmap.org/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Mount Field campground, unpowered site",
+   "cost": "$24",
+   "detail": "Per site per night, up to six people; powered sites $35. Maximum stay 14 days. As listed by PWS in November 2026.",
+   "amount": 24,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Daily Pass, per vehicle",
+   "cost": "$49.15",
+   "detail": "Up to 24 hours, for a vehicle of up to eight people; $24.55 per person by bus, bicycle or on foot. Reviewed each year by CPI.",
+   "amount": 49.15,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Annual Park Pass, one park",
+   "cost": "$53.50",
+   "detail": "A year's entry to a single national park other than Cradle Mountain, for up to two vehicles registered at the holder's address; $42.80 concession.",
+   "amount": 53.5,
+   "currencyCode": "AUD"
+  }
+ ],
+ "hero": {
+  "credit": "Noodle snacks, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "au-np-mount-field-5b36938c2b.jpg",
+  "caption": "Russell Falls, Tasmania's first nature reserve",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Russell_Falls_2.jpg",
+  "altText": "A waterfall cascading down broad rock tiers in a fern-filled forest",
+  "licence": "CC BY-SA 3.0"
+ },
+ "gallery": [
+  {
+   "credit": "Darcygall, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-mount-field-2ebba5fe3e.jpg",
+   "caption": "A pencil pine on the shore of Lake Dobson",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_Dobson_-_Mount_Field_National_Park_Tasmania.jpg",
+   "altText": "A conifer standing on the shore of a mountain lake",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "JJ Harrison ( https://www.jjharrison.com.au/ ), via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-mount-field-2ce63e9d3e.jpg",
+   "caption": "Lake Fenton, with the Rodway Range behind",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_Fenton.jpg",
+   "altText": "A wide view of a mountain lake below a rocky range",
+   "licence": "CC BY-SA 3.0"
+  }
+ ],
+ "weather": "Mount Field is 'the park for all seasons', but its two levels have very different weather. Down at the entrance, near the Tyenna River, conditions are relatively mild: at Maydena, west of the park entrance at 281 metres, the Bureau of Meteorology's averages give January afternoons of about 22°C, July afternoons of about 11°C and some 1,170 millimetres of rain a year. The high country around Lake Dobson and the Tarn Shelf is alpine, with snow, rain, wind and sun possible at any time of year. In winter the tarns often freeze and snow can close the Lake Dobson road; in summer waratahs, boronias and heath flower; in autumn the fagus turns.",
+ "directions": "Mount Field is just over an hour's drive from Hobart via New Norfolk and Westerway on the A10 or the B62. From Westerway a short, winding drive leads to the small township of National Park and the park entrance. The Lake Dobson car park is a further 16 kilometres up a winding gravel road, about 30 minutes' drive through rainforest and swamp gums into snow-gum country; it is not suitable for campervans or buses. The B61 continues west from Mount Field through Maydena to Southwest National Park. Avoid driving at night, when wildlife is on the roads."
+}

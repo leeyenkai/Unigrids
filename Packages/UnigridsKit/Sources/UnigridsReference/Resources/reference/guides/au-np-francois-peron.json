@@ -1,0 +1,190 @@
+{
+ "placeID": "au-np-francois-peron",
+ "contentVersion": 1,
+ "story": [
+  "Francois Peron covers the northern part of the Peron Peninsula, which pushes into the middle of Shark Bay. Its colours are what most visitors remember: red sand cliffs dropping to white beaches and blue water at Cape Peron, and a string of birridas joined to the sea at Big Lagoon. Cape Peron sits at the confluence of two major currents, and the waters around it teem with marine life: turtles, manta rays, sharks, dugongs, dolphins and schools of fish can often be seen from the cliffs.",
+  "Shark Bay, of which the park is part, covers 2.2 million hectares, two-thirds of it sea, and is best known for its dugong population. Francois Peron is part of the effort to restore what was lost on land. Project Eden, displayed at the Peron Homestead, is a plan to bring much of the wildlife back to the Peron Peninsula, and DBCA lays 1080 baits to reduce foxes and feral cats so that native animals can survive. Emus and other birds come to drink at the homestead's overflowing artesian water.",
+  "The Malgana people call the area Wulyibidi, and the park is now jointly managed by the Department of Biodiversity, Conservation and Attractions and the Malgana Aboriginal Corporation as part of the state's Plan for Our Parks initiative. DBCA acknowledges the Malgana, Nanda and Yinggarda peoples as the Traditional Owners of the lands and waters of the Shark Bay World Heritage Area. The visitor display at the homestead invites people to consider the area from the perspectives of local Aboriginal people, French maritime explorers, pastoralists and fishers, and today's conservation managers.",
+  "The park is named after François Péron, the naturalist of Nicolas Baudin's French expeditions to Western Australia. The park was once Peron Station, a remote sheep station; its artesian bore was drilled in 1922–1923 and pumped by three windmills to nine watering points. The state bought the station in 1990 and the national park was gazetted on 8 January 1993. Shark Bay was inscribed on the World Heritage List on 13 December 1991, one of the few places in the world to meet all four natural criteria."
+ ],
+ "howItWorks": [
+  "Francois Peron is jointly managed by DBCA's Parks and Wildlife Service and the Malgana Aboriginal Corporation. It is one of more than 30 WA parks with an entry fee: stop at the Francois Peron entry station for information and to pay before you drive in. A WA park pass covers entry, but not camping. Camping fees are charged per person per night, and the five campgrounds, Bottle Bay, Big Lagoon, Herald Bight, Gregories and South Gregories, must be booked online through Park Stay WA, up to 180 days ahead, one campsite per booking.",
+  "Getting around shapes every visit. A two-wheel-drive vehicle can reach the Peron Homestead Precinct, but beyond it a high-clearance four-wheel drive is essential: the tracks are single lanes of deep, soft sand. Lower your tyre pressures past the homestead and reinflate before returning to ordinary roads. Low-clearance vehicles, caravans and large trailers cannot use the tracks; only single-axle camper trailers and dinghies are suitable.",
+  "The waters are part of Shark Bay Marine Park, with zones that limit what you can do. Cape Peron is a special purpose zone for wildlife observation because of its dolphins and dugongs: set netting, spearfishing, waterskiing and freestyle jet skiing are banned. Motorised water sports are not permitted in the Big Lagoon special purpose zone or the sanctuary zone north of it. No dogs or other pets, and no campfires at the campgrounds."
+ ],
+ "sightNotes": {
+  "poi-au-francois-peron-peron-homestead-precinct": "The old sheep station, with a small interpretive display in the overseers' quarters, a walk trail and a 'hot tub' of artesian water from the 1920s bore. Reachable without four-wheel drive.",
+  "poi-au-francois-peron-cape-peron": "Plunging red sea cliffs above white beaches at the peninsula's tip, where two currents meet; picnic tables, toilets and beach access. Swimming is not recommended.",
+  "poi-au-francois-peron-skipjack-point": "Two viewing platforms on the cliff edge over Shark Bay Marine Park, for turtles, manta rays, sharks, dugongs and dolphins.",
+  "poi-au-francois-peron-wanamalu-trail": "A 3.6-kilometre return clifftop walk between Skipjack Point and Cape Peron, with views of marine life and striking red sand cliffs.",
+  "poi-au-francois-peron-big-lagoon": "A string of birridas joined by the sea, explored on a 17-kilometre paddle trail over broad shallows full of birds, fish, turtles and rays. Campground beside it."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "The Francois Peron entry station, near Denham: stop for park information and to pay fees",
+   "The Peron Homestead Precinct, the limit for two-wheel-drive vehicles"
+  ],
+  "reservations": "Book campsites online through Park Stay WA up to 180 days ahead; mobile coverage in the park is unreliable, so book before you go. Pay park entry at the entry station or carry a WA park pass.",
+  "permits": [
+   "Park entry fee or a valid WA park pass",
+   "Follow Shark Bay Marine Park zoning when fishing or boating"
+  ],
+  "camping": [
+   "Bottle Bay, Big Lagoon, Herald Bight, Gregories and South Gregories campgrounds, all bookable, beyond the homestead on four-wheel-drive tracks",
+   "No campfires at any time at Big Lagoon; pit toilets and gas barbecues there; bring all water and supplies"
+  ],
+  "lodging": [
+   "Accommodation in Denham and elsewhere around Shark Bay"
+  ],
+  "seasonalClosures": [
+   "Tracks can close after heavy rain — check DBCA Park Alerts before you go"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1922–1923",
+   "text": "Peron Station's artesian bore is drilled, feeding nine watering points by windmill."
+  },
+  {
+   "year": "1990",
+   "text": "The state government buys Peron Station."
+  },
+  {
+   "year": "1991",
+   "text": "Shark Bay is inscribed on the World Heritage List on 13 December."
+  },
+  {
+   "year": "1993",
+   "text": "Francois Peron National Park is gazetted on 8 January."
+  }
+ ],
+ "safety": [
+  "Swimming is not recommended at Cape Peron, where two strong currents meet.",
+  "The soft-sand tracks need a high-clearance four-wheel drive, lowered tyre pressures and recovery skills; carry a personal locator beacon.",
+  "The artesian hot tub is hot: soak in short spells, drink plenty of water, keep glass away and supervise small children. The water is not safe to drink.",
+  "Keep clear of cliff edges at Cape Peron and Skipjack Point."
+ ],
+ "regulations": [
+  "Pay park entry at the entry station or carry a valid WA park pass.",
+  "No dogs or other pets; 1080 baits are laid in and around the park.",
+  "No set netting, spearfishing, waterskiing or freestyle jet skiing at Cape Peron; no motorised water sports in the Big Lagoon zones.",
+  "No campfires at Big Lagoon at any time; generators only during the hours set at each campground."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against the park agency's pages and the sources below.",
+  "Park outline: Collaborative Australian Protected Areas Database (CAPAD) 2024, © Commonwealth of Australia (DCCEEW), CC BY 4.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Francois Peron National Park — Explore Parks WA, DBCA",
+   "url": "https://exploreparks.dbca.wa.gov.au/park/francois-peron-national-park"
+  },
+  {
+   "title": "Peron Homestead Precinct — Explore Parks WA",
+   "url": "https://exploreparks.dbca.wa.gov.au/site/peron-homestead-precinct"
+  },
+  {
+   "title": "Cape Peron — Explore Parks WA",
+   "url": "https://exploreparks.dbca.wa.gov.au/site/cape-peron-francois-peron"
+  },
+  {
+   "title": "Big Lagoon Campground — Explore Parks WA",
+   "url": "https://exploreparks.dbca.wa.gov.au/site/big-lagoon-campground"
+  },
+  {
+   "title": "Shark Bay World Heritage Area — DBCA",
+   "url": "https://www.dbca.wa.gov.au/management/world-heritage-areas/shark-bay-world-heritage-area"
+  },
+  {
+   "title": "Park entry fees — Explore Parks WA",
+   "url": "https://exploreparks.dbca.wa.gov.au/park-entry-fees"
+  },
+  {
+   "title": "Camping fees — Explore Parks WA",
+   "url": "https://exploreparks.dbca.wa.gov.au/camping-fees"
+  },
+  {
+   "title": "Park passes — DBCA shop (prices)",
+   "url": "https://shop.dbca.wa.gov.au/collections/park-passes"
+  },
+  {
+   "title": "Shark Bay Terrestrial Reserves and Proposed Reserve Additions Management Plan No. 75, 2012 — DEC/DBCA (areas, gazettal)",
+   "url": "https://dbca.wa.gov.au/media/1365/download"
+  },
+  {
+   "title": "Francois Peron National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Francois_Peron_National_Park"
+  },
+  {
+   "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — DCCEEW (area, gazettal)",
+   "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+  },
+  {
+   "title": "OpenStreetMap (sight coordinates)",
+   "url": "https://www.openstreetmap.org/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Park entry, standard vehicle (12 or fewer occupants)",
+   "cost": "$17 per vehicle",
+   "detail": "Concession $10; motorcycle $10; vehicles with more than 12 occupants $8 per person. Covered by a WA park pass. As listed by DBCA in November 2026; check before you go.",
+   "amount": 17,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "Camping, per person per night",
+   "cost": "$10–$20 adult",
+   "detail": "WA rates by facilities: none $10 (concession $7), basic $15 ($10), additional $20 ($15); children 6–15 $5, 5 and under free. As listed by DBCA in November 2026.",
+   "amount": 10,
+   "currencyCode": "AUD"
+  },
+  {
+   "title": "WA park passes",
+   "cost": "$30 (5-day) / $50 (14-day) / $70 (4-week)",
+   "detail": "Holiday passes covering entry to all WA parks; Annual All Parks Pass $130, concession $80. As listed by DBCA's shop in November 2026.",
+   "amount": 30,
+   "currencyCode": "AUD"
+  }
+ ],
+ "hero": {
+  "credit": "Frederik Vanrenterghem, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "au-np-francois-peron-2f426a77ca.jpg",
+  "caption": "The view from Skipjack Point",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Skipjack_Point,_Francois_Peron_National_Park,_Western_Australia.jpg",
+  "altText": "A clifftop view over clear coastal water",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "Sharkbaypixels, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-francois-peron-a13299b98f.jpg",
+   "caption": "Big Lagoon",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:The_Big_Lagoon_in_the_World_Heritage_listed_Shark_Bay_region.jpg",
+   "altText": "A broad, shallow lagoon in Shark Bay",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Calistemon, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-francois-peron-6d5622cb40.jpg",
+   "caption": "The entry point to Francois Peron National Park",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Francois_Peron_National_Park_entry_point,_July_2020_01.jpg",
+   "altText": "A park entrance sign beside a sandy road",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "BaldyWall, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-francois-peron-59184d5ebe.jpg",
+   "caption": "A thorny devil at Cape Peron",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Thorny_Devil._Shark_Bay,_Cape_Peron,_Francis_Peron_National_Park.jpg",
+   "altText": "A spiky, sand-coloured lizard on the ground",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "Shark Bay lies about 800 kilometres north of Perth on Australia's most westerly point, and DBCA's pages advise planning when to visit and preparing for heat and remote travel. Shade is scarce on the peninsula's tracks and beaches. Herald Bight is usually protected from the prevailing south-westerly winds. Even the hot artesian water at the homestead can cause dehydration if you soak for long, so take breaks and drink plenty of water. Drinking water should be carried in; the hot tub's water is not safe to drink.",
+ "directions": "Francois Peron is in Shark Bay, on the Peron Peninsula near the town of Denham, where the Parks and Wildlife Service's Gascoyne office is based. Stop at the entry station to pay fees, then drive to the Peron Homestead Precinct, the limit for vehicles without four-wheel drive. Beyond it, only high-clearance four-wheel drives with lowered tyre pressures can travel the single-lane soft-sand tracks to the campgrounds, Big Lagoon, Skipjack Point and Cape Peron; caravans and large trailers cannot."
+}

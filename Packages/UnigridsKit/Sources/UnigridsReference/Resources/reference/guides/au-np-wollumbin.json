@@ -1,0 +1,193 @@
+{
+ "placeID": "au-np-wollumbin",
+ "contentVersion": 1,
+ "story": [
+  "Wollumbin is the remnant central vent of the Tweed Volcano, a shield volcano that about 20 million years ago stretched from Mount Tamborine in the north to Lismore in the south. Since then erosion has stripped away the volcano's flanks and hollowed out a great caldera around the old vent. The caldera rim now encloses the Tweed Valley, with Wollumbin rising at its centre to 1,157 metres. Rivers and creeks such as Breakfast Creek run off its slopes through subtropical rainforest.",
+  "The rainforest is part of the Gondwana Rainforests of Australia, inscribed on the World Heritage List in 1986. Palms, tree ferns, maidenhair ferns, silkpod vines, flooded gums and the giant stinging tree grow here. Albert's lyrebird lives in the park; it is rarer than the superb lyrebird. The rufous scrub-bird, a vulnerable species, also lives here, along with wompoo fruit-doves, lace monitors, brush turkeys and carpet pythons. Fleay's barred frog, an endangered species of north-east New South Wales and south-east Queensland, lives in the rainforest streams.",
+  "Wollumbin is a sacred place of deep spiritual significance to the Bundjalung and Githabul nations. It is a place of sacred ceremonies tied to traditional law and custom, and Traditional Custodians continue to care for the Country and its sacred sites. To some Aboriginal people the name Wollumbin means 'cloud catcher'. In 2014 the summit was declared an Aboriginal Place under NSW law, and a Wollumbin Consultative Group has advised on the park's management since 2000.",
+  "Captain James Cook sighted the peak from the sea on 16 May 1770 and named it Mount Warning. The park itself was formerly Mount Warning National Park. The summit track closed in March 2020. NPWS has since said that decisions about its future will follow the wishes of Aboriginal custodians, and it asks visitors not to climb."
+ ],
+ "howItWorks": [
+  "Wollumbin is run by the NSW National Parks and Wildlife Service (NPWS) from its Murwillumbah office. The summit track and the Aboriginal Place on the summit remain closed, and visitors are asked to respect the wishes of the Bundjalung people and not climb. What you can do here is short: the Lyrebird track from the Breakfast Creek car park, and a picnic at Korrumbyn Creek. NPWS suggests other caldera views nearby, such as the Pinnacle lookout in Border Ranges National Park, Minyon Falls in Nightcap National Park and Best of All Lookout in Springbrook National Park, Queensland.",
+  "There is no vehicle entry fee: only 45 of NSW's more than 890 parks and reserves charge one, and Wollumbin is not among them. The All Parks Pass covers vehicle entry to every fee-collecting park in NSW, including Kosciuszko, for $190 a year. The Multi Park Pass covers all of them except Kosciuszko for $65. These prices were listed by NPWS in November 2026. The Mount Warning Road gate to the car park may close from 5 pm in winter and 6 pm in daylight saving, and reopens at 7 am. NPWS lists no campground in the park.",
+  "Bushfire season in NSW runs from October to March. On total fire ban days, usually declared around 5 pm the day before, all wood or solid-fuel fires and barbecues are prohibited in NSW parks, as are liquid-fuel stoves, and visitor-owned gas and electric cookers are generally prohibited. NPWS may also declare a park fire ban or close parks when the fire risk is high, so check NPWS alerts before you go."
+ ],
+ "sightNotes": {
+  "poi-au-wollumbin-wollumbin": "The 1,157-metre central vent of the Tweed Volcano, sacred to the Bundjalung and Githabul nations. The summit track is closed; visitors are asked not to climb.",
+  "poi-au-wollumbin-lyrebird-track": "A 300-metre return walk from Mount Warning Road over Breakfast Creek through palm forest to a rainforest viewing platform. Fifteen to thirty minutes.",
+  "poi-au-wollumbin-korrumbyn-creek-picnic-area": "A picnic area in the park that NPWS suggests as a place to stop for lunch."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Mount Warning Road, off Kyogle Road about 12 kilometres south-west of Murwillumbah, before Uki — about 3.5 kilometres to the Breakfast Creek car park"
+  ],
+  "reservations": "No bookings or permits are needed for the Lyrebird track or the picnic area.",
+  "camping": [
+   "NPWS lists no campground in the park"
+  ],
+  "lodging": [
+   "Accommodation in Murwillumbah, Uki and the Tweed Valley"
+  ],
+  "seasonalClosures": [
+   "The Wollumbin summit track and Aboriginal Place remain closed",
+   "The Mount Warning Road gate may close from 5 pm in winter and 6 pm in daylight saving, reopening at 7 am — check NPWS alerts before you go"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "About 20 million years ago",
+   "text": "The Tweed Volcano stretches from Mount Tamborine to Lismore; erosion later carves its caldera around the central vent of Wollumbin."
+  },
+  {
+   "year": "1770",
+   "text": "On 16 May Captain James Cook sights the peak from the sea and names it Mount Warning."
+  },
+  {
+   "year": "1986",
+   "text": "The park's rainforests are inscribed on the World Heritage List, in what is now the Gondwana Rainforests of Australia."
+  },
+  {
+   "year": "2000",
+   "text": "The Wollumbin Consultative Group is established."
+  },
+  {
+   "year": "2014",
+   "text": "The summit of Wollumbin is declared an Aboriginal Place."
+  },
+  {
+   "year": "2020",
+   "text": "The summit track closes in March; it remains closed, with its future to be decided in accordance with the wishes of Aboriginal custodians."
+  }
+ ],
+ "safety": [
+  "Do not attempt the closed summit track. It is shut, and it passes through a declared Aboriginal Place.",
+  "Mobile reception is limited, and you need it to call Triple Zero (000). Download the Emergency Plus app before you go.",
+  "Plan to be back at your car before the Mount Warning Road gate may close in the evening.",
+  "Check NPWS alerts before you go: the park may close at times because of risk, including fire danger."
+ ],
+ "regulations": [
+  "The Wollumbin summit track and Aboriginal Place are closed; respect the Bundjalung people's wishes and do not climb.",
+  "No pets or domestic animals, except certified assistance animals.",
+  "No smoking: NSW national parks are smoke-free.",
+  "No fires of any kind during total fire bans or park fire bans."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against the park agency's pages and the sources below.",
+  "Park outline: Collaborative Australian Protected Areas Database (CAPAD) 2024, © Commonwealth of Australia (DCCEEW), CC BY 4.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Wollumbin National Park — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wollumbin-national-park"
+  },
+  {
+   "title": "Wollumbin National Park: learn more — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wollumbin-national-park/learn-more"
+  },
+  {
+   "title": "Wollumbin National Park: visitor info — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wollumbin-national-park/visitor-info"
+  },
+  {
+   "title": "Wollumbin (Mount Warning) summit track — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/wollumbin-mount-warning-summit-track"
+  },
+  {
+   "title": "Lyrebird track — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/lyrebird-track"
+  },
+  {
+   "title": "Wollumbin National Park community engagement — NSW Environment and Heritage",
+   "url": "https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/community-engagement/wollumbin-national-park"
+  },
+  {
+   "title": "Tweed Byron hinterland trails amendment — NSW Environment and Heritage",
+   "url": "https://www.environment.nsw.gov.au/sites/default/files/tweed-byron-hinterland-trails-amendment-190696.pdf"
+  },
+  {
+   "title": "Fee-collecting national parks — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/fee-collecting-parks"
+  },
+  {
+   "title": "Annual passes — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/passes-and-fees/annual-passes"
+  },
+  {
+   "title": "Total fire bans and park fire bans — NSW National Parks and Wildlife Service",
+   "url": "https://www.nationalparks.nsw.gov.au/safety/fire-safety/fire-bans"
+  },
+  {
+   "title": "Cook's Journal: Daily Entries, 16 May 1770 — South Seas: Voyaging and Cross-Cultural Encounters in the Pacific",
+   "url": "https://paulturnbull.org/project/southseas/journals/cook/17700516.html"
+  },
+  {
+   "title": "Visitor infrastructure: Northern NSW national parks of the Tweed Caldera — NSW Environment and Heritage",
+   "url": "https://www.environment.nsw.gov.au/sites/default/files/visitor-infrastructure-northern-nsw-national-parks-of-tweed-caldera-220444.pdf"
+  },
+  {
+   "title": "Wollumbin summit track and Aboriginal Place closure media statement (24 December 2025) — NSW Environment and Heritage",
+   "url": "https://www.environment.nsw.gov.au/news/wollumbin-summit-track-aboriginal-place-closure"
+  },
+  {
+   "title": "Mount Warning — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mount_Warning"
+  },
+  {
+   "title": "Wollumbin National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Wollumbin_National_Park"
+  },
+  {
+   "title": "OpenStreetMap (sight coordinates)",
+   "url": "https://www.openstreetmap.org/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Park entry",
+   "cost": "Free",
+   "detail": "Wollumbin is not one of NSW's fee-collecting parks. As listed by NPWS in November 2026.",
+   "amount": 0,
+   "currencyCode": "AUD"
+  }
+ ],
+ "hero": {
+  "credit": "Pouts31, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "au-np-wollumbin-bb094d5f6c.jpg",
+  "caption": "Wollumbin seen across Clarrie Hall Dam",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Clarrie_hall_dam_mount_warning.JPG",
+  "altText": "A sharp-peaked mountain rising above forested ridges and still water",
+  "licence": "CC BY 3.0"
+ },
+ "gallery": [
+  {
+   "credit": "KHN45, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-wollumbin-8c90169c76.jpg",
+   "caption": "Wollumbin at the centre of the Tweed caldera, from the Pinnacle lookout",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Mt_Warning_as_seen_from_Pinnacle_Lookout_in_the_NSW_Border_Ranges.jpg",
+   "altText": "A lone pointed peak rising from a wide valley ringed by distant ranges",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Peter Ellis, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-wollumbin-d4afa58263.jpg",
+   "caption": "A female Albert's lyrebird at Wollumbin",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Lyrebird_Albert_f_20091125.JPG",
+   "altText": "A brown ground bird with a long tail on the rainforest floor",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "Schopier, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-wollumbin-40cd9e5540.jpg",
+   "caption": "A coastal carpet python in Wollumbin National Park",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Coastal_Carpet_Python_(Morelia_spilota_mcdowelli)_-_Wollumbin_National_Park.jpg",
+   "altText": "A patterned python coiled among leaves",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "Wollumbin has a warm, wet subtropical climate. Summer averages 19°C to 28°C, with frequent afternoon storms, and has reached 43°C. Winter averages 9°C to 21.5°C and stable high pressure often brings clear blue skies. February is usually the wettest month and September the driest. Spring is when the canopy flowers and fruits and the birds are in breeding plumage, and in autumn young birds are leaving their parents.",
+ "directions": "From Murwillumbah, head south-west towards Uki on Kyogle Road, which becomes Uki Road after Byangum Bridge. About 12 kilometres out, before Uki, turn right into Mount Warning Road and drive about 3.5 kilometres to the Breakfast Creek car park. The park is on the Far North Coast of New South Wales, about 12 kilometres south-west of Murwillumbah."
+}

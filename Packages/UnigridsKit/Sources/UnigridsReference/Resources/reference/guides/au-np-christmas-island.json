@@ -1,0 +1,242 @@
+{
+ "placeID": "au-np-christmas-island",
+ "contentVersion": 1,
+ "story": [
+  "Christmas Island is the top of a basalt volcanic seamount that rose 5,000 metres from the ocean floor about 60 million years ago. Over some ten million years it was lifted several times; at each stage coral reefs grew on the basalt core, leaving a limestone cap, and the sea cut new cliffs, so the island rises in steps of terraces and inland cliffs to a central plateau. Its 73-kilometre coast is an almost unbroken sea cliff, opening at only 13 places into small bays and beaches. Almost all rain sinks into caves and karst, re-emerging as springs where the limestone meets the volcanic rock below.",
+  "Isolation has made the island a place of its own. Of its 237 native plant species at least 17 grow nowhere else, and the plateau rainforest stands about 40 metres tall, with emergent trees where the endemic Abbott's booby nests. More than 20 species of land crab live here, among them the robber crab, the largest land crab on earth, and an estimated 100 million red crabs that keep the forest floor clear. About 80,000 seabirds nest each year, including the world's rarest booby and frigatebird. The island has also lost species since settlement: Maclear's rat, the Christmas Island pipistrelle and the forest skink are gone.",
+  "The island began appearing on English and Dutch charts in the early 1600s. Captain William Mynors named the island on Christmas Day 1643, and the crew of the Cygnet, with William Dampier aboard, landed near the Dales in 1688. Phosphate found by HMS Egeria in 1887 led Britain to annex the island the next year, and George Clunies-Ross sent a party of Cocos Malay workers to settle Flying Fish Cove. Indentured Chinese, Malay and Sikh labourers mined phosphate in harsh conditions; their descendants make up much of today's community of about 2,000. Japan occupied the island from 1942 to 1945, and it became an Australian territory on 1 October 1958.",
+  "In the 1970s concern for the Abbott's booby, threatened by mining, led a federal committee to recommend a conservation area. The first national park was declared in 1980 over the island's south-west, and two more stages followed in 1986 and 1989. The park now covers 64 per cent of the land and reaches 50 metres offshore, the only nature conservation area on the island. In 2018 the Australian Government refused a proposed expansion of phosphate mining on environmental grounds."
+ ],
+ "howItWorks": [
+  "Christmas Island is an Australian external territory, and its national park is one of six Commonwealth parks managed by Parks Australia. There is no entry fee. Most of the park's sights are reached by short walks from roads and four-wheel-drive tracks, so a hire car, ideally with off-road capability, is the practical way to see it; hire vehicles are limited, so book ahead through the Christmas Island Tourism Association, which also runs the visitor centre in Settlement.",
+  "You need a permit from the park office to camp in the national park, for example at Dolly Beach, and permits for commercial filming and photography, tours, events and research. Visitors arriving by yacht must clear quarantine, customs and immigration, and must not drop anchor in Flying Fish Cove, where deep moorings are available for a small charge.",
+  "Everything bends around the crabs. The red crab migration begins with the first rain of the wet season, usually in October or November but sometimes as late as December or January, and the baby crabs return from the sea about a month after spawning. During the migration roads and tracks close, often at short notice; tracks to the Dales and the Blowholes stay shut until rangers check them after 10.30 am, and must be cleared by 3.30 pm. Check the Christmas Island Road Access Board, slow down for crabs at all times, and never feed wildlife."
+ ],
+ "sightNotes": {
+  "poi-au-christmas-island-the-dales": "Rainforest gorges and terraces cut by spring-fed streams on the west coast, a Ramsar-listed wetland of international importance and home of the endemic blue crab. Four-wheel drive needed.",
+  "poi-au-christmas-island-hughs-dale-waterfall": "A 750-metre boardwalk through the Dales to a permanent rainforest waterfall, a cultural site for local Chinese Buddhists. Walking under the falls is closed because of rockfall risk.",
+  "poi-au-christmas-island-the-blowholes": "An elevated walkway on the southern cliffs where big swells force seawater high into the air; spectacular during the red crab migration. Four-wheel drive needed.",
+  "poi-au-christmas-island-dolly-beach": "A secluded palm-fringed beach reached by a forest boardwalk, with a coral reef, rock pools and a freshwater stream; green turtles nest here. Camping by permit.",
+  "poi-au-christmas-island-greta-beach": "A beach where green turtles nest, and one of the easiest places to watch red crabs spawning.",
+  "poi-au-christmas-island-margaret-knoll": "A lookout at the edge of a plunging inland cliff, one of the best places to watch frigatebirds, golden bosuns and boobies, and to find the endemic Christmas Island spleenwort.",
+  "poi-au-christmas-island-martin-point": "A cliff-edge platform over the west coast and its reef, the island's classic sunset spot, with red-footed boobies nesting above.",
+  "poi-au-christmas-island-west-white-beach": "A gleaming north-coast beach with a fine offshore reef, reached by a moderately hard rainforest walk and a rope descent down a short cliff.",
+  "poi-au-christmas-island-territory-day-park-nature-trail": "A one-kilometre trail from a lookout over Flying Fish Cove and the town, through rainforest to historic Tai Jin House."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Christmas Island Airport, with Virgin Australia flights from Perth twice a week, direct or via the Cocos (Keeling) Islands",
+   "Flying Fish Cove, for visiting yachts and cruise ships",
+   "By road and four-wheel-drive track to the park's walks and beaches; many need a four-wheel drive"
+  ],
+  "reservations": "Book flights, accommodation and a hire car well ahead; vehicles are limited. There is nothing to book for entry. During the red crab migration check the Christmas Island Road Access Board each day before you go.",
+  "permits": [
+   "A camping permit from the park office (+61 8 9164 8700) to camp anywhere in the national park",
+   "Permits for commercial filming and photography, tours, events and research"
+  ],
+  "camping": [
+   "Camping by permit only, at places such as Dolly Beach"
+  ],
+  "lodging": [
+   "Hotels, lodges, self-contained houses and eco-retreats outside the park, booked through the Christmas Island Tourism Association"
+  ],
+  "seasonalClosures": [
+   "Roads and tracks close, often at short notice, during the red crab migration and the return of the juvenile crabs, between October and February — check the Road Access Board before you go",
+   "The stairs to Winifred Beach are permanently closed"
+  ],
+  "seasonalClosureMonths": [
+   1,
+   2,
+   10,
+   11,
+   12
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1643",
+   "text": "Captain William Mynors of the East India Company names the island after sighting it on Christmas Day."
+  },
+  {
+   "year": "1688",
+   "text": "The Cygnet, with William Dampier aboard, makes the first known landing, near the Dales."
+  },
+  {
+   "year": "1887",
+   "text": "HMS Egeria's party collects plants and animals for ten days and finds phosphate."
+  },
+  {
+   "year": "1888",
+   "text": "Britain annexes the island, and a Cocos Malay party settles Flying Fish Cove."
+  },
+  {
+   "year": "1942",
+   "text": "Japanese forces occupy the island on 31 March; they leave after the surrender in 1945."
+  },
+  {
+   "year": "1958",
+   "text": "Christmas Island becomes an Australian territory on 1 October."
+  },
+  {
+   "year": "1980",
+   "text": "The first national park is declared over the south-west of the island; stages follow in 1986 and 1989."
+  },
+  {
+   "year": "2014",
+   "text": "The last known Christmas Island forest skink dies, the first native Australian reptile lost since European colonisation."
+  },
+  {
+   "year": "2018",
+   "text": "The Australian Government rejects an expansion of phosphate mining on environmental grounds."
+  }
+ ],
+ "safety": [
+  "It is easy to get lost in the rainforest. Keep to marked tracks and roads, walk with someone, tell someone your plans, and consider hiring a personal locator beacon from the police station.",
+  "Sea cliffs and inland cliffs are steep and treacherous. Keep back from edges and off shoreline rock platforms.",
+  "No beach is patrolled. Large swells, rips and undertows are common; swimming is recommended only at Flying Fish Cove in calm conditions.",
+  "Many tracks are four-wheel drive only, steep and slippery when wet. Drive slowly, especially in the wet, during the crab migration and when robber crabs are on the roads.",
+  "Carry plenty of water, and travel insurance that covers emergency evacuation."
+ ],
+ "regulations": [
+  "Camping in the national park only with a permit.",
+  "Follow road closures and the directions of park staff during the red crab migration.",
+  "Watch nesting turtles from at least 15 metres until laying begins, never shine lights on turtles or hatchlings, and keep out of their path to the sea.",
+  "Do not feed wildlife or leave food scraps, and take your rubbish with you.",
+  "Yachts may not anchor in Flying Fish Cove; use the moorings provided."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against the park agency's pages and the sources below.",
+  "Park outline: Collaborative Australian Protected Areas Database (CAPAD) 2024, © Commonwealth of Australia (DCCEEW), CC BY 4.0. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Christmas Island National Park — Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/"
+  },
+  {
+   "title": "About us — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/about/about-us/"
+  },
+  {
+   "title": "Frequently asked questions — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/about/frequently-asked-questions/"
+  },
+  {
+   "title": "Amazing facts — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/discover/highlights/amazing-facts/"
+  },
+  {
+   "title": "History — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/discover/history/"
+  },
+  {
+   "title": "Geology — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/discover/nature/geology/"
+  },
+  {
+   "title": "Plants — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/discover/nature/plants/"
+  },
+  {
+   "title": "Culture — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/discover/culture/"
+  },
+  {
+   "title": "The Dales — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/discover/highlights/the-dales/"
+  },
+  {
+   "title": "Red crab migration — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/red-crab-migration/"
+  },
+  {
+   "title": "Christmas Island Road Access Board (16 November 2026) — Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/news/access-and-alerts/"
+  },
+  {
+   "title": "Getting here and Getting around — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/plan/getting-here/"
+  },
+  {
+   "title": "Permits — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/plan/plan-your-trip/permits/"
+  },
+  {
+   "title": "Staying safe — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/plan/plan-your-trip/staying-safe/"
+  },
+  {
+   "title": "When to come — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/plan/when-come/"
+  },
+  {
+   "title": "Stay and Visitor centre — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/plan/stay/"
+  },
+  {
+   "title": "Walks: Hughs Dale Waterfall, Blowholes, Margaret Knoll, Martin Point, Territory Day Park — Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/things-do/activities/walks/"
+  },
+  {
+   "title": "Beaches: Dolly Beach, West White Beach — Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/things-do/activities/beaches/"
+  },
+  {
+   "title": "Snorkelling and Turtle watching — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/things-do/activities/turtle-watching/"
+  },
+  {
+   "title": "Birdwatching — Christmas Island National Park, Parks Australia",
+   "url": "https://parksaustralia.gov.au/christmas/things-do/activities/birdwatching/"
+  },
+  {
+   "title": "Collaborative Australian Protected Areas Database (CAPAD) 2024 — DCCEEW (area)",
+   "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/MapServer/0"
+  },
+  {
+   "title": "OpenStreetMap (sight coordinates)",
+   "url": "https://www.openstreetmap.org/"
+  }
+ ],
+ "fees": [],
+ "hero": {
+  "credit": "ChrisBrayPhotography, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "au-np-christmas-island-89a909351a.jpg",
+  "caption": "A Christmas Island red crab",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Christmas_Island_Red_Crab.jpg",
+  "altText": "A bright red land crab on the forest floor",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "David Stanley from Nanaimo, Canada, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-christmas-island-7ee6b9e95c.jpg",
+   "caption": "A road closed for the red crab migration",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Red_Crab_Migration_(25172962299).jpg",
+   "altText": "Red crabs crossing a road through the forest",
+   "licence": "CC BY 2.0"
+  },
+  {
+   "credit": "David Stanley from Nanaimo, Canada, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-christmas-island-295cb6994f.jpg",
+   "caption": "Hughs Dale Waterfall in the Dales",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Hugh%27s_Dale_Waterfall_(25064758983).jpg",
+   "altText": "A stream tumbling over a small waterfall in rainforest",
+   "licence": "CC BY 2.0"
+  },
+  {
+   "credit": "David Stanley from Nanaimo, Canada, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "au-np-christmas-island-a5d6a98643.jpg",
+   "caption": "Breakers at Martin Point on the west coast",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Martin_Point_(25400736890).jpg",
+   "altText": "Ocean waves crashing against sharp coral cliffs",
+   "licence": "CC BY 2.0"
+  }
+ ],
+ "weather": "Christmas Island is tropical, with little change in temperature through the year: average highs peak at about 28°C in April and average lows fall to about 22°C in August. The middle of the year is the dry season, with the lowest humidity; from November to April showers come with the wet season. Most activities, from diving and snorkelling to birdwatching and walking, can be done all year. The red crab migration starts with the first wet-season rain, usually in October or November. Whale sharks visit from November to April, and the swell season, December to April, can limit offshore fishing and make the sea rough.",
+ "directions": "Virgin Australia flies from Perth to Christmas Island twice a week: the direct flight takes about four hours, and the alternative via the Cocos (Keeling) Islands about eight. Yachts can call at Flying Fish Cove after contacting the harbour master on VHF channel 16 and clearing customs, quarantine and immigration. On the island, drive on the left; a hire car is the best way to reach the park's walks, and many tracks need a four-wheel drive. A taxi service runs on weekday evenings except Mondays and on weekend afternoons, and airport transfers can be booked."
+}
