@@ -266,9 +266,9 @@ public final class AlertsCenter {
         switch place.country {
         case .unitedStates: place.npsParkCode != nil && NPSAlerts.isConfigured
         case .japan, .norway: place.kind == .nationalPark
-        case .newZealand: place.kind == .nationalPark
-        // Their providers join with the countries' data (0.11.0).
-        case .australia, .canada: false
+        case .newZealand, .canada: place.kind == .nationalPark
+        // Its providers join with the country's data (0.11.0).
+        case .australia: false
         }
     }
 
@@ -321,7 +321,9 @@ public final class AlertsCenter {
             }
         case .newZealand:
             await refreshNewZealand([(place, boundary)])
-        case .unitedStates, .australia, .canada:
+        case .canada:
+            await refreshCanada([(place, boundary)])
+        case .unitedStates, .australia:
             break
         }
     }

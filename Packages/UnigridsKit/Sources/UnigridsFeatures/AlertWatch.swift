@@ -102,9 +102,9 @@ public enum AlertWatch {
         return places.filter { seen.insert($0.id).inserted }
     }
 
-    /// The same look for parks abroad, against JMA, Varsom and GeoNet, remembered apart from the
-    /// NPS's so neither can make the other's alerts look new. A service that cannot be
-    /// reached leaves what was seen as it was.
+    /// The same look for parks abroad, against JMA, Varsom, GeoNet, Environment Canada and
+    /// Avalanche Canada, remembered apart from the NPS's so neither can make the other's
+    /// alerts look new. A service that cannot be reached leaves what was seen as it was.
     private static func runAbroad(trips: [Trip], store: any ReferenceStore) async {
         let parks = parksAbroad(trips: trips, store: store, now: Date())
         let seen = loadSeen(key: seenAbroadKey)
@@ -122,6 +122,8 @@ public enum AlertWatch {
         await center.refreshNewZealand(
             newZealand.map { ($0, store.boundary(for: $0.id)) }, force: true
         )
+        let canada = parks.filter { $0.country == .canada }
+        await center.refreshCanada(canada.map { ($0, store.boundary(for: $0.id)) }, force: true)
         let reached = parks.filter { !center.failed(for: $0) }
         guard !reached.isEmpty else { return }
         var byID: [String: (ParkAlert, Place)] = [:]

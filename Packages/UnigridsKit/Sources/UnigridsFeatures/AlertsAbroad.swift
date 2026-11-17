@@ -15,6 +15,8 @@ enum AlertSource: String, Hashable, Sendable {
     case australianFeeds
     /// Environment and Climate Change Canada's weather alerts (`AlertsCanada.swift`).
     case eccc
+    /// Avalanche Canada's forecasts, some written by Parks Canada (`AlertsCanada.swift`).
+    case avalancheCanada
 
     /// "Live from the National Park Service".
     var name: String {
@@ -25,6 +27,7 @@ enum AlertSource: String, Hashable, Sendable {
         case .geonet: "GeoNet (Earth Sciences New Zealand, CC BY 3.0 NZ)"
         case .australianFeeds: "the state fire and park services"
         case .eccc: "Environment and Climate Change Canada"
+        case .avalancheCanada: "Avalanche Canada"
         }
     }
 
@@ -37,6 +40,8 @@ enum AlertSource: String, Hashable, Sendable {
         case .australianFeeds: "The warning services could not be reached. Warnings need "
             + "a connection."
         case .eccc: "Environment Canada could not be reached. Alerts need a connection."
+        case .avalancheCanada: "Avalanche Canada could not be reached. Forecasts need a "
+            + "connection."
         }
     }
 
@@ -48,6 +53,7 @@ enum AlertSource: String, Hashable, Sendable {
         case .geonet: "More on geonet.org.nz"
         case .australianFeeds: "More from the park's agency"
         case .eccc: "More on weather.gc.ca"
+        case .avalancheCanada: "More on avalanche.ca"
         }
     }
 
@@ -64,7 +70,9 @@ enum AlertSource: String, Hashable, Sendable {
             + "the Department of Conservation before you go."
         case .australianFeeds: "No fire incident or closure is posted for this park right "
             + "now. Check the park's agency before you go."
-        case .eccc: "No weather alert is in force here right now."
+        case .eccc: "No weather alert is in force here right now, and where Avalanche "
+            + "Canada forecasts, no avalanche danger is rated. Check Parks Canada before you go."
+        case .avalancheCanada: "No avalanche danger is rated here today."
         }
     }
 }
