@@ -1,0 +1,308 @@
+{
+ "placeID": "ca-np-glacier",
+ "contentVersion": 1,
+ "story": [
+  "Glacier National Park lies in the Selkirk and Purcell ranges of the Columbia Mountains, the first tall barrier that wet Pacific air meets east of the Coast Mountains. It drops its load here: at treeline the average snowfall is 14 metres a year, and Rogers Pass can get as much as 17. Half of the park lies above treeline and about 12 per cent is permanent ice and snow. The Illecillewaet, the 'Great Glacier' of the railway era, has drawn back about 1.5 kilometres up its valley over the past century.",
+  "Elevation sorts the park into what Parks Canada calls rainforest, snow forest and no forest. In the valley bottoms western red cedar and western hemlock tower over devil's club and ferns, part of the world's only inland temperate rainforest. Higher up come Engelmann spruce, subalpine fir and August meadows of paintbrush and glacier lily, then rock, heather and lichen. Avalanche paths green up first in spring and feed grizzly bears. Mountain caribou once used these slopes too, but by 2022 the Columbia South herd was down to a single female, moved to a maternity pen in the Central Selkirks in 2023.",
+  "Little is known about the people who used the interior Selkirks before the railway; Parks Canada notes that at least four Indigenous groups knew the region, and the name Illecillewaet comes from the nsyilxcən word for 'big water'. In 1881 the surveyor Major A. B. Rogers found the pass that bears his name, and in 1885 the Canadian Pacific's line crossed it. Avalanches killed more than 200 people between 1885 and 1911, among them 58 railway workers buried at the summit on 4 March 1910. In 1916 the railway gave up and went under the pass through the eight-kilometre Connaught Tunnel.",
+  "The park was created in 1886, the same year as Yoho and the year the first scheduled passenger trains ran. The railway built Glacier House below the Great Glacier and in 1899 brought Swiss guides, whose clients made North America's first recreational technical climbs here; their trails still lead out from the Illecillewaet valley. Glacier House closed in 1925. In 1962 the Trans-Canada Highway opened through Rogers Pass, and since 1961 Parks Canada and the Canadian Armed Forces have kept it open in winter with artillery."
+ ],
+ "howItWorks": [
+  "Every visitor who stops in the park needs a national park pass. A daily pass is valid until 4 pm on the day after you buy it and covers Glacier, Mount Revelstoke, Yoho, Kootenay, Banff, Jasper, Waterton Lakes and Elk Island national parks; youth aged 17 and under get in free. A Parks Canada Discovery Pass covers more than 80 Parks Canada places for a year, and an annual pass valid only for Glacier and Mount Revelstoke is also sold. Passes are sold at Summit Station in Rogers Pass and the Parks Canada office in Revelstoke all year, and at the campground kiosks in summer. Under the Canada Strong Pass admission was free for three periods in 2025 and 2026; the last ended on 7 September 2026.",
+  "Illecillewaet and Loop Brook campgrounds and the Hermit Meadows backcountry campground take bookings through the Parks Canada Reservation Service; for 2027 booking opens on 13 January at 8 am Pacific time. Half of Illecillewaet's sites stay first come, first served, and Sir Donald backcountry campground is first come, first served only. Any overnight trip into the backcountry needs a backcountry permit as well as the park pass. Random camping is allowed only in limited areas, at least 5 kilometres from the highway, with no wood fires, a maximum group of six and a two-night limit.",
+  "In winter the slopes along the highway are closed for avalanche control, and the Winter Permit System runs from 15 November until the end of the highway avalanche control season. Anyone going beyond the highway and parking areas needs a Winter Permit and photo ID as well as a park pass, and must complete a quiz first. Winter Restricted Areas open or stay closed each day depending on planned artillery fire, Winter Unrestricted Areas need the permit only, and Winter Prohibited Areas are closed all winter. Status is posted at about 7:30 am Pacific time. Wildlife rules apply all year: it is illegal to feed, entice or harass animals, and on Balu Pass you must hike in a group of four or more adults from 15 July to 30 September."
+ ],
+ "sightNotes": {
+  "poi-ca-glacier-rogers-pass": "The summit of the Selkirks crossing, a national historic site since 1971. A monument, the Abandoned Rails trail along the 1885 grade and the site of the 1910 avalanche.",
+  "poi-ca-glacier-illecillewaet-glacier": "The 'Great Glacier' of the railway era, now about 1.5 kilometres further up its valley. The Great Glacier and Glacier Crest trails climb towards it from the Illecillewaet valley.",
+  "poi-ca-glacier-mount-sir-donald": "The landmark peak above the Illecillewaet valley, named for the railway director who drove the last spike. A steep trail climbs to a climbers' bivouac below it.",
+  "poi-ca-glacier-glacier-house-ruins": "Foundations of the railway's hotel below the Great Glacier, which offered meals, guided climbs and cave tours until it closed in 1925.",
+  "poi-ca-glacier-loop-brook": "Giant stone pillars that carried the railway's loops across the valley, among the oldest surviving built structures in western Canada, on a 1.7-kilometre interpretive loop.",
+  "poi-ca-glacier-hemlock-grove-boardwalk": "A 350-metre barrier-free boardwalk through towering cedar and hemlock rainforest, beside the highway west of Rogers Pass.",
+  "poi-ca-glacier-balu-pass": "A steep 12.8-kilometre return hike through avalanche paths to alpine meadows. Grizzly country: groups of four adults required from mid-July to September, and no dogs.",
+  "poi-ca-glacier-avalanche-crest": "One of the park's best scenic trails, into an alpine basin above the highway corridor; the treeless slopes below show where winter avalanches run.",
+  "poi-ca-glacier-bear-creek-falls": "A short, steep trail down to a glacial waterfall, 9 kilometres east of the Rogers Pass Centre."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Rogers Pass, on the Trans-Canada Highway 72 kilometres east of Revelstoke and 80 kilometres west of Golden — Summit Station and the national historic site",
+   "Illecillewaet valley and campground, 3 kilometres west of the summit — the trailheads for the Swiss guides' trails",
+   "Loop Brook and Hemlock Grove, along the highway west of the pass",
+   "Hermit and Bear Creek Falls trailheads, east of the pass"
+  ],
+  "reservations": "Illecillewaet and Loop Brook campgrounds and Hermit Meadows backcountry campground can be booked through the Parks Canada Reservation Service; 2027 reservations open on 13 January at 8 am Pacific time, and sites cannot be booked within 48 hours of arrival. Half of Illecillewaet is first come, first served. Check with Parks Canada before you go.",
+  "permits": [
+   "A national park pass for everyone in the group, including in winter",
+   "A backcountry permit for any overnight stay in the backcountry, from Summit Station",
+   "A Winter Permit, with a quiz, for any backcountry travel from 15 November to the end of the avalanche control season; an annual Winter Permit, applied for online, is required for overnight stays and hut use",
+   "A free overnight parking permit for backcountry or Alpine Club of Canada hut trips in winter",
+   "A permit to enter any cave",
+   "A national park fishing permit; rivers and streams are closed to fishing"
+  ],
+  "camping": [
+   "Illecillewaet Campground, 60 unserviced sites, 19 June to 12 October in 2026",
+   "Loop Brook Campground, 20 unserviced sites, reservation only, 26 June to 21 September in 2026",
+   "Hermit Meadows (8 sites) and Sir Donald (4 sites) backcountry campgrounds, July to October depending on snow; gas stoves only",
+   "Mount Sir Donald frontcountry campground is closed until further notice; there is no winter frontcountry camping"
+  ],
+  "lodging": [
+   "Four Alpine Club of Canada huts and cabins, among them Asulkan Cabin and the A. O. Wheeler Hut, booked through the club",
+   "Hotels and services in Revelstoke to the west and Golden to the east; there is no fuel at Rogers Pass"
+  ],
+  "seasonalClosures": [
+   "Frontcountry campgrounds open only from late June to mid-October",
+   "Backcountry campgrounds open from about July, depending on snow; seasonal bridges are removed from late September",
+   "The Rogers Pass Centre's exhibits and theatre are closed during rehabilitation; Summit Station serves visitors",
+   "The Trans-Canada Highway closes at short notice for avalanche control in winter — check DriveBC before you travel"
+  ],
+  "seasonalClosureMonths": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   11,
+   12
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1865–1866",
+   "text": "Walter Moberly and his assistant Albert Perry probe up the Illecillewaet valley but do not find a way through the Selkirks."
+  },
+  {
+   "year": "1881",
+   "text": "Major A. B. Rogers glimpses the pass at the head of the Illecillewaet."
+  },
+  {
+   "year": "1885",
+   "text": "The Canadian Pacific Railway's line reaches the summit of Rogers Pass on 17 August."
+  },
+  {
+   "year": "1886",
+   "text": "Glacier National Park is established, in the same year as Yoho, and scheduled passenger trains begin running through the pass in June."
+  },
+  {
+   "year": "1899",
+   "text": "The railway brings Swiss guides to Glacier House to lead climbers."
+  },
+  {
+   "year": "1910",
+   "text": "An avalanche from Avalanche Mountain kills 58 men clearing snow from the line at the summit on 4 March."
+  },
+  {
+   "year": "1916",
+   "text": "The Connaught Tunnel opens on 13 December and the railway abandons the pass."
+  },
+  {
+   "year": "1925",
+   "text": "Glacier House closes."
+  },
+  {
+   "year": "1961",
+   "text": "Parks Canada and the Canadian Armed Forces begin artillery avalanche control in the park."
+  },
+  {
+   "year": "1962",
+   "text": "The Trans-Canada Highway opens through Rogers Pass."
+  },
+  {
+   "year": "1971",
+   "text": "Rogers Pass is designated a national historic site."
+  },
+  {
+   "year": "1995",
+   "text": "The Winter Permit System opens closed slopes to skiers when no avalanche control is planned."
+  }
+ ],
+ "safety": [
+  "From November to May the park is serious avalanche terrain. Avalanche control is done to protect the highway, not skiers: carry a transceiver, shovel and probe for everyone, check the daily avalanche bulletin, and never enter a closed Winter Restricted Area, where artillery fragments can travel up to a kilometre.",
+  "Grizzly and black bears feed on avalanche paths that many trails cross. Make noise, carry bear spray, keep a clean camp and store all food and scented items in a vehicle or food locker.",
+  "Glaciers are retreating and unstable. Ice caves and overhangs can collapse at any time; do not walk under or on overhanging ice, and treat late-lying snow slopes on high trails with caution.",
+  "Weather changes from one valley to the next and cell coverage is unavailable in most of the park. Leave a trip plan; the park's emergency number is 1-877-852-3100."
+ ],
+ "regulations": [
+  "Recreational drones are prohibited, and so are off-road vehicles and snowmobiles anywhere in the park.",
+  "Camp only in designated campgrounds; camping at pullouts, trailheads and day-use areas, and sleeping in vehicles in winter parking areas, is not allowed.",
+  "Keep dogs on a leash at all times. Dogs are banned from the Balu Pass trail and the Connaught Creek drainage, which supplies Rogers Pass with drinking water.",
+  "It is illegal to feed, entice or harass wildlife, or to collect plants, rocks, antlers or historic objects. Cycling is allowed only on the trails Parks Canada lists, and caves may be entered only with a permit."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Parks Canada's pages and the sources below.",
+  "Park outline: Canadian Protected and Conserved Areas Database, Environment and Climate Change Canada, Open Government Licence – Canada. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Glacier National Park — Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier"
+  },
+  {
+   "title": "Fees — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/visit/tarifs-fees"
+  },
+  {
+   "title": "Passes, permits and fees — Parks Canada",
+   "url": "https://parks.canada.ca/voyage-travel/admission"
+  },
+  {
+   "title": "Ski touring in Rogers Pass and the Winter Permit System — Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/visit/hiver-winter/ski"
+  },
+  {
+   "title": "Avalanche control program — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/nature/controle-avalanche-control"
+  },
+  {
+   "title": "Frontcountry camping — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/activ/passez-stay/camping"
+  },
+  {
+   "title": "Backcountry camping — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/activ/passez-stay/arrierepays-backcountry"
+  },
+  {
+   "title": "Day hikes — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/activ/randonee-hiking/journee-day"
+  },
+  {
+   "title": "Short hikes — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/activ/randonee-hiking/courte-short"
+  },
+  {
+   "title": "History — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/culture/histoire-history"
+  },
+  {
+   "title": "The Snow War — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/culture/histoire-history/neige-snow"
+  },
+  {
+   "title": "The Swiss Guides and Mountaineering — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/culture/histoire-history/suisse-swiss"
+  },
+  {
+   "title": "The Trans-Canada highway — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/culture/histoire-history/transcanadienne-transcanada"
+  },
+  {
+   "title": "Rogers Pass Centre — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/visit/centre"
+  },
+  {
+   "title": "The Columbia Mountains Natural Region — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/nature/naturelle-natural"
+  },
+  {
+   "title": "Weather and climate — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/nature/naturelle-natural/climat"
+  },
+  {
+   "title": "Caribou — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/nature/faune-fauna/caribou"
+  },
+  {
+   "title": "Caves and karst — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/nature/environnement-environment/grottes-karst-caves"
+  },
+  {
+   "title": "National park regulations — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/securite-safety/reglements-regulations"
+  },
+  {
+   "title": "Visiting with dogs — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/visit/chiens-dogs"
+  },
+  {
+   "title": "Getting here — Glacier National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/glacier/visit/directions"
+  },
+  {
+   "title": "Canada National Parks Act, Schedule 1 — Justice Laws Website",
+   "url": "https://laws-lois.justice.gc.ca/eng/acts/n-14.01/FullText.html"
+  },
+  {
+   "title": "Glacier National Park (Canada) — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Glacier_National_Park_(Canada)"
+  },
+  {
+   "title": "OpenStreetMap (sight coordinates)",
+   "url": "https://www.openstreetmap.org/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Daily admission",
+   "cost": "$12.25 adult / $10.75 senior / $24.50 family or group",
+   "detail": "Youth aged 17 and under free. A family or group is up to seven people arriving in one vehicle. Valid until 4 pm the day after purchase in the mountain parks and Elk Island. As listed by Parks Canada in November 2026 — check before you go.",
+   "amount": 12.25,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Parks Canada Discovery Pass",
+   "cost": "$83.50 adult / $71.50 senior / $167.50 family or group",
+   "detail": "A year's admission to more than 80 Parks Canada places, valid to the end of the month of purchase. As listed in November 2026.",
+   "amount": 83.5,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Annual pass, Mount Revelstoke and Glacier",
+   "cost": "$60.50 adult / $51.50 senior / $120.75 family or group",
+   "detail": "Valid in these two parks only; sold in person. As listed in November 2026.",
+   "amount": 60.5,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Frontcountry camping, Illecillewaet and Loop Brook",
+   "cost": "$26.75",
+   "detail": "Per unserviced site per night. A fire permit, including firewood, is $15.25 a day. As listed in November 2026.",
+   "amount": 26.75,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Backcountry camping",
+   "cost": "$15.00",
+   "detail": "Per person per night, in addition to the park pass. As listed in November 2026.",
+   "amount": 15,
+   "currencyCode": "CAD"
+  }
+ ],
+ "hero": {
+  "credit": "Murray Foubister, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "ca-np-glacier-d5557bec14.jpg",
+  "caption": "Mount Sir Donald above the Illecillewaet valley",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Sir_Donald_(15553649753).jpg",
+  "altText": "A steep rocky mountain peak streaked with snow",
+  "licence": "CC BY-SA 2.0"
+ },
+ "gallery": [
+  {
+   "credit": "Christoph Strässler from Oberdorf BL, Schweiz, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "ca-np-glacier-13a1845608.jpg",
+   "caption": "Rogers Pass, where the railway and the Trans-Canada Highway cross the Selkirks",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Rogers_Pass,_Glacier_National_Park,_Canada_(54881287660).jpg",
+   "altText": "Forested slopes and snowy mountains around a high mountain pass",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "The Interior, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "ca-np-glacier-c7fccd5a20.jpg",
+   "caption": "The Illecillewaet Glacier, once known as the Great Glacier",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:IllGlacier1.JPG",
+   "altText": "A glacier among rocky mountains",
+   "licence": "CC BY-SA 3.0"
+  },
+  {
+   "credit": "William McFarlane Notman (1857-1913), via Wikimedia Commons",
+   "isPublicDomain": true,
+   "assetName": "ca-np-glacier-eadae26c39.jpg",
+   "caption": "Glacier House below the Illecillewaet Glacier in 1909",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Glacier_House_and_Illecillewaet_Glacier,_BC,_1909.jpg",
+   "altText": "An early twentieth-century photograph of a hotel with a glacier beyond"
+  }
+ ],
+ "weather": "Glacier lies in British Columbia's interior wet belt, where Pacific air rising over the Columbia Mountains brings heavy precipitation, most of it as snow. The snow season usually runs from mid-October to mid-June, and snow can fall at any time on the heights. At Rogers Pass, at 1,330 metres, July and August average daytime highs of about 20°C and nights of about 6°C; January averages highs of -7°C, with more than two metres of snow falling in the month. Only a few low trails are clear in most Junes, and by mid-July the hiking trails are usually free of snow. August is the driest month. Summer and winter suit visitors best; spring and autumn bring awkward snow.",
+ "directions": "The Trans-Canada Highway (Highway 1) is the only road through the park. The Rogers Pass summit is 72 kilometres east of Revelstoke and 80 kilometres west of Golden, 342 kilometres from Calgary and 643 kilometres from Vancouver. There is no fuel at Rogers Pass; fill up in Revelstoke or Golden. The nearest commercial airports are at Revelstoke, Kamloops, Kelowna and Calgary. In winter the highway closes at times for avalanche control, sometimes for hours; stopping is not allowed in signed avalanche areas, so check DriveBC and the park's bulletins before you set out."
+}

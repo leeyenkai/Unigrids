@@ -1,0 +1,308 @@
+{
+ "placeID": "ca-np-kootenay",
+ "contentVersion": 1,
+ "story": [
+  "Kootenay spans the Main and Western Ranges of the Rockies, and Parks Canada calls it a land of ice and fire. Glaciers carved its valleys and canyons, while fire keeps reshaping its forests and grasslands. The Vermilion Pass fire of 1968 swept the slopes at the Continental Divide, a very large fire burned through the Vermilion valley in 2003, and in summer fireweed paints the burns pink. Those regrowing forests are good habitat for bears, lynx and moose. Near Redstreak Campground prescribed fire has been used to restore the land, and endangered badgers frequent the campground.",
+  "The rock holds older stories too. The Burgess Shale, the fossil beds famous from neighbouring Yoho, extends into Kootenay's alpine: on the slopes below Stanley Glacier, fossils more than 500 million years old preserve soft-bodied sea creatures in fine detail, and in 2012 scientists found a further rich site near Marble Canyon. Iron-rich springs at the Paint Pots stain the earth around them, and the hot springs in Sinclair Canyon rise at 37 to 40°C.",
+  "The park lies within the traditional lands of the Ktunaxa and Secwépemc peoples. The Kootenay and Vermilion valleys were travel routes between the Columbia Valley and the plains, and Ochre Creek was an important source of iron pigment for generations. The Secwépemc soaked in the hot springs, travelled through Sinclair Canyon and gathered plants nearby; beside Redstreak Campground the Letwilc7úl̓ecw trail, made with the Shuswap Band, takes its name from the Secwepemctsín for a healing place.",
+  "James Hector crossed Vermilion Pass in 1858 and judged it the best route for a wagon road. Settlers in the Columbia Valley pressed for a road to Banff and Calgary, and work began from the west in 1911 but stalled for lack of money and the First World War. In 1919 British Columbia struck a deal with the federal government: Ottawa would build the highway in return for 8 kilometres of land on either side of it for a national park. Kootenay National Park was created on 21 April 1920, and the road was finished in 1923."
+ ],
+ "howItWorks": [
+  "Every visitor who stops in Kootenay needs a park pass, sold at the park gate, the visitor centre in Radium Hot Springs and online. A daily pass is valid until 4 pm the day after purchase and also covers Banff, Jasper, Yoho, Mount Revelstoke, Glacier, Waterton Lakes and Elk Island; youth aged 17 and under get in free. The Parks Canada Discovery Pass covers more than 80 Parks Canada destinations for twelve months. Admission was free during the Canada Strong Pass periods of 2025 and 2026; the last ended on 7 September 2026 and regular fees apply again. Entry to the Radium Hot Springs pools is paid separately.",
+  "Camping is allowed only in designated campgrounds with a camping permit and a park pass. Redstreak, Marble Canyon and McLeod Meadows are booked through the Parks Canada Reservation Service, which opened for 2026 on 20 January. Every overnight trip into the backcountry needs a backcountry permit, booked the same way from 26 January in 2026; stays are limited to three nights at any one campground, campfires are not allowed anywhere in the backcountry, and random camping is not permitted in Kootenay at all. Campgrounds on the Rockwall, the park's most popular backpacking route, book out early in the season. The Burgess Shale at Stanley Glacier can be visited on a Parks Canada guided hike, booked ahead.",
+  "Highway 93 South is the only road through the park, and there is no fuel, food, public transport or mobile coverage along its 94 kilometres; four emergency telephones connect to Parks Canada dispatch. Feeding, enticing or disturbing wildlife is illegal, and all food and scented items must be kept in a vehicle or hard-sided trailer under the Bare Campsite programme. To stop the spread of whirling disease, every lake and river in Kootenay and Yoho is closed to boats, paddleboards and angling until 31 March 2027. Recreational drones are banned, with fines up to $25,000."
+ ],
+ "sightNotes": {
+  "poi-ca-kootenay-marble-canyon": "A narrow canyon followed by a 0.9-kilometre trail along its rim, with interpretive signs, bridges to look down from and Red Chairs at the end.",
+  "poi-ca-kootenay-paint-pots": "A gentle one-kilometre walk to three iron-rich mineral springs that stain the surrounding earth; the Ochre Creek area was long a source of pigment.",
+  "poi-ca-kootenay-stanley-glacier": "A 4.9-kilometre trail climbing 405 metres towards the glacier. Parks Canada's guided Burgess Shale fossil hikes start from this trailhead.",
+  "poi-ca-kootenay-floe-lake": "A lake below the limestone cliffs of the Rockwall, 10.8 kilometres and 1,120 metres of climbing from the highway: a popular day hike, with a backcountry campground.",
+  "poi-ca-kootenay-fireweed-loop-vermilion-pass": "A 15-minute loop on the Continental Divide through forest regrowing since the Vermilion Pass wildfire of 1968.",
+  "poi-ca-kootenay-kootenay-valley-viewpoint": "A pull-out on Highway 93 South overlooking the Kootenay valley.",
+  "poi-ca-kootenay-olive-lake": "A small lake with a lakeshore boardwalk, 12 kilometres from Radium Hot Springs. Check the trail report for spring closures for bears.",
+  "poi-ca-kootenay-sinclair-canyon": "The narrow canyon at the park's south-west gate, widened by hand for the original road; a 2.8-kilometre trail follows its rim and drops into it.",
+  "poi-ca-kootenay-radium-hot-springs": "Parks Canada hot pools in Sinclair Canyon, 37 to 40°C and odourless, with a cool swimming pool, in the 1951 Aquacourt, a classified Federal Heritage Building."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "North-east entrance on Highway 93 South at Vermilion Pass, 41 kilometres from the town of Banff via the Trans-Canada Highway and Castle Junction",
+   "South-west entrance at Sinclair Canyon, 2 kilometres from the village of Radium Hot Springs at the junction of Highways 93 and 95",
+   "From Golden, 117 kilometres to the north-east entrance by Highway 95 and the Trans-Canada Highway through Yoho and Banff",
+   "From Cranbrook, 145 kilometres to the south-west entrance by Highway 93/95"
+  ],
+  "reservations": "Frontcountry campsites, oTENTiks, backcountry campgrounds and Burgess Shale guided hikes are booked through the Parks Canada Reservation Service, online at reservation.pc.gc.ca or on 1-877-737-3783; booking opens in late January each year, and Rockwall campgrounds fill early. Same-day campground bookings close at 2 pm. Check before you go with Parks Canada.",
+  "permits": [
+   "Park pass for every visitor who stops in the park",
+   "Backcountry permit for every overnight trip, for named campgrounds on named nights; no random camping",
+   "Fire permit for a campfire in a frontcountry campground",
+   "Stanley Glacier Burgess Shale hike only with a Parks Canada guide"
+  ],
+  "camping": [
+   "Redstreak, near Radium Hot Springs: 242 sites with full hook-ups, electrical and unserviced sites and oTENTiks, 6 May to 12 October in 2026",
+   "McLeod Meadows, 88 unserviced sites on the Kootenay River by the Dog Lake trail, 4 June to 13 September in 2026",
+   "Marble Canyon, 60 unserviced sites near the north end of the park, 18 June to 7 September in 2026",
+   "Backcountry campgrounds on and near the Rockwall, among them Floe Lake, Tumbling Creek, Helmet Falls and Helmet/Ochre Junction",
+   "Maximum stay 14 nights in a frontcountry campground and 3 nights in a backcountry campground; quiet hours 11 pm to 7 am"
+  ],
+  "lodging": [
+   "Hotels and motels in the village of Radium Hot Springs and in Invermere",
+   "oTENTiks at Redstreak Campground",
+   "The town of Banff, 41 kilometres from the north-east entrance"
+  ],
+  "seasonalClosures": [
+   "Campgrounds open from May or June and close by mid-October; dates change each year — check before you go with Parks Canada",
+   "Day-use areas and restrooms are serviced from May to mid-October; many stay open in winter but may not be cleared of snow",
+   "Highway 93 South is maintained all year but can close temporarily in bad weather; check DriveBC before you travel",
+   "Parks Canada staff the Radium visitor centre only from May to mid-October"
+  ],
+  "seasonalClosureMonths": [
+   1,
+   2,
+   3,
+   4,
+   11,
+   12
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1841",
+   "text": "James Sinclair leads a party of mostly Métis families from Red River through the area; the hot springs are later named after him."
+  },
+  {
+   "year": "1858",
+   "text": "James Hector crosses Vermilion Pass and judges it the best route for a wagon road."
+  },
+  {
+   "year": "1911",
+   "text": "Road building begins from the Columbia Valley, reaching the hot springs for the first time."
+  },
+  {
+   "year": "1914",
+   "text": "Roland Stuart, who bought the springs in 1890, builds a concrete pool and log bathhouse."
+  },
+  {
+   "year": "1919",
+   "text": "The Banff–Windermere Road Agreement: Ottawa will build the highway in exchange for land on either side for a national park."
+  },
+  {
+   "year": "1920",
+   "text": "Kootenay National Park is established on 21 April."
+  },
+  {
+   "year": "1923",
+   "text": "The Banff–Windermere Highway is completed."
+  },
+  {
+   "year": "1951",
+   "text": "The Radium Hot Springs Aquacourt opens on 19 May."
+  },
+  {
+   "year": "1968",
+   "text": "The Vermilion Pass wildfire burns the slopes at the Continental Divide."
+  },
+  {
+   "year": "2023",
+   "text": "The Letwilc7úl̓ecw trail, made with the Shuswap Band, wins a gold award from Interpretation Canada."
+  }
+ ],
+ "safety": [
+  "There is no mobile coverage in the park. Emergency telephones at Marble Canyon, the Simpson River trailhead, Kootenay Crossing and the Kootenay River day-use area connect to Parks Canada dispatch around the clock; for backcountry emergencies call 403-762-4506.",
+  "Bears live throughout the park. Carry bear spray and know how to use it, and travel alert, without headphones.",
+  "Snow can fall in any month, and avalanche danger exists wherever there is snow. Check trail conditions and closures before you set out.",
+  "Carry fuel and food: there are no services on the 94 kilometres of Highway 93 South inside the park."
+ ],
+ "regulations": [
+  "Never feed, entice or disturb wildlife. Keep food, pet food, coolers and scented items in a vehicle or hard-sided trailer whenever they are not in use.",
+  "Recreational drones are prohibited, with fines up to $25,000.",
+  "All lakes and rivers are closed to watercraft and angling until 31 March 2027 to stop the spread of whirling disease.",
+  "Camp only in designated campgrounds with a permit; random camping is not allowed and campfires are banned in the backcountry. Keep pets on a leash.",
+  "Collecting fossils, rocks, plants or any natural or historic object is illegal."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Parks Canada's pages and the sources below.",
+  "Park outline: Canadian Protected and Conserved Areas Database, Environment and Climate Change Canada, Open Government Licence – Canada. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Kootenay National Park — Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay"
+  },
+  {
+   "title": "Fees — Kootenay National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/visit/tarifs-fees"
+  },
+  {
+   "title": "Passes, permits and fees — Parks Canada",
+   "url": "https://parks.canada.ca/voyage-travel/admission"
+  },
+  {
+   "title": "Park passes — Banff National Park, Parks Canada (daily pass coverage)",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/visit/passer-passes"
+  },
+  {
+   "title": "Frontcountry camping — Kootenay National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/activ/camping/avant-pays-frontcountry"
+  },
+  {
+   "title": "Backcountry camping — Kootenay National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/activ/arrierepays-backcountry"
+  },
+  {
+   "title": "Day hikes — Kootenay National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/activ/randonnee-hike/jour-day"
+  },
+  {
+   "title": "Burgess Shale fossil hikes — Kootenay National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/activ/burgess"
+  },
+  {
+   "title": "Facilities and services — Kootenay National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/visit/services"
+  },
+  {
+   "title": "How to get to Kootenay National Park — Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/visit/directions"
+  },
+  {
+   "title": "Safety and guidelines — Kootenay National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/securite-safety"
+  },
+  {
+   "title": "Nature and science — Kootenay National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/nature"
+  },
+  {
+   "title": "Indigenous connections — Kootenay National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/autochtone-indigenous"
+  },
+  {
+   "title": "Letwilc7úl̓ecw — Kootenay National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/culture/letwilc7ulecw"
+  },
+  {
+   "title": "History of Highway 93 South — Kootenay National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/culture/promenade-parkway"
+  },
+  {
+   "title": "Radium Hot Springs — Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/sources-radium-springs"
+  },
+  {
+   "title": "Fees — Radium Hot Springs, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/sources-radium-springs/tarifs-fees"
+  },
+  {
+   "title": "History of Radium Hot Springs — Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/sources-radium-springs/histoire-history"
+  },
+  {
+   "title": "The \"Bare\" Campsite Program — Parks Canada mountain parks",
+   "url": "https://parks.canada.ca/pn-np/mtn/ours-bears/securite-safety/camping-propre-bare-camp"
+  },
+  {
+   "title": "Canadian Rocky Mountain Parks — Parks Canada, World Heritage in Canada",
+   "url": "https://parks.canada.ca/culture/spm-whs/sites-canada/sec02h"
+  },
+  {
+   "title": "Canada National Parks Act, Schedule 1 — Justice Laws Website",
+   "url": "https://laws-lois.justice.gc.ca/eng/acts/n-14.01/"
+  },
+  {
+   "title": "Kootenay National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Kootenay_National_Park"
+  },
+  {
+   "title": "Canadian Geographical Names Database — Natural Resources Canada (coordinates)",
+   "url": "https://geogratis.gc.ca/services/geoname/en/geonames"
+  },
+  {
+   "title": "OpenStreetMap Nominatim (coordinates of canyon, springs, trailheads, viewpoint and visitor centre)",
+   "url": "https://nominatim.openstreetmap.org/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Daily admission",
+   "cost": "$12.25 adult / $10.75 senior / $24.50 family or group",
+   "detail": "Youth aged 17 and under free. A family or group is up to seven people arriving in one vehicle. As listed by Parks Canada in November 2026 — check before you go.",
+   "amount": 12.25,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Parks Canada Discovery Pass",
+   "cost": "$83.50 adult / $71.50 senior / $167.50 family or group",
+   "detail": "Twelve months' admission to more than 80 Parks Canada destinations. As listed in November 2026.",
+   "amount": 83.5,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Radium Hot Springs pools, single entry",
+   "cost": "$19.75 adult / $17.25 senior or youth / $64.25 family",
+   "detail": "Youth are 3 to 17; children under three free; locker token included. A day pass is $28.75 for an adult. As listed in November 2026.",
+   "amount": 19.75,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Frontcountry camping",
+   "cost": "$26.75–$47.25",
+   "detail": "Per site per night, from Marble Canyon and McLeod Meadows to full hook-ups at Redstreak; an oTENTik is $147.50. Fire permit $17.00 a day; online reservation fee $11.50. As listed in November 2026.",
+   "amount": 26.75,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Backcountry camping",
+   "cost": "$15.00",
+   "detail": "Per person per night, plus $12.75 per permit to reserve. As listed in November 2026.",
+   "amount": 15,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Stanley Glacier Burgess Shale guided hike",
+   "cost": "$88.25 adult / $74.13 senior / $60.01 youth",
+   "detail": "About seven hours, 10 kilometres return. As listed in November 2026.",
+   "amount": 88.25,
+   "currencyCode": "CAD"
+  }
+ ],
+ "hero": {
+  "credit": "Benfwilliamson, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "ca-np-kootenay-c49233bdb5.jpg",
+  "caption": "Floe Lake below the Rockwall",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Floe_Lake,_British_Columbia,_Canada.jpg",
+  "altText": "A sheer grey limestone wall with snow patches above a small turquoise lake and a meadow of larches",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "Chris Woodrich, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "ca-np-kootenay-a771fde355.jpg",
+   "caption": "Marble Canyon",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Marble_Canyon,_Kootenay_National_Park,_British_Columbia,_2025-07-11_01.jpg",
+   "altText": "Blue water rushing through a narrow gorge between pale rock walls topped with trees",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Marek Ślusarczyk ( Tupungato ) Photo gallery, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "ca-np-kootenay-960bd82c59.jpg",
+   "caption": "One of the iron-rich Paint Pots",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Kootenay_National_Park_-_Paint_Pots_2.jpg",
+   "altText": "A small pool ringed by bright orange ground, with spruce forest behind",
+   "licence": "CC BY 2.5"
+  },
+  {
+   "credit": "Qyd, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "ca-np-kootenay-29f8e00e81.jpg",
+   "caption": "The hot pool at Radium Hot Springs",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Hot_springs-pool-Radium.JPG",
+   "altText": "Bathers in a turquoise outdoor pool beside a building and wooded slope",
+   "licence": "CC BY-SA 3.0"
+  }
+ ],
+ "weather": "Kootenay's weather is pleasant but unpredictable. In spring and summer daytime highs average 16 to 23°C, but nights can drop below freezing, and rain, snow or hail can fall at any time of year. Wherever snow lies there is avalanche danger, and spring can bring trail closures for bears, as at Olive Lake. Campgrounds open from May or June and close by early autumn, and backcountry campsites for July, August and September need booking well ahead. In winter Highway 93 South stays open, though it can close briefly in bad weather, and day-use areas may not be cleared of snow.",
+ "directions": "Highway 93 South, the Banff–Windermere Highway, runs 94 kilometres through the middle of the park with a speed limit of 90 km/h. From the north it leaves the Trans-Canada Highway at Castle Junction in Banff National Park; the town of Banff is 41 kilometres from the park's north-east entrance. From the south it begins at the village of Radium Hot Springs, 2 kilometres from the south-west entrance, at the junction with Highway 95. The nearest airports with national and international flights are Calgary and Vancouver, with connections to Cranbrook, 145 kilometres south of Radium. There is no public transport, fuel or food in the park; fill up in Radium Hot Springs, Invermere or Banff."
+}

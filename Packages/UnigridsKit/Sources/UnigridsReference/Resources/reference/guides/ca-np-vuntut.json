@@ -1,0 +1,227 @@
+{
+ "placeID": "ca-np-vuntut",
+ "contentVersion": 1,
+ "story": [
+  "Vuntut means 'among the lakes' in Gwich'in, and the Vuntut Gwitchin are the 'people of the lakes'. Their homeland is Van Tat, the Old Crow Flats, a wetland of more than two thousand shallow lakes set among peat bogs. The northern edge of the Flats fills the southern third of the park; the rest belongs to the rolling hills and scattered peaks of the British Mountains, with spruce in the valley bottoms and tundra above. The Gwich'in name for the park is Nan Thok Natr'iniin'aii.",
+  "The ice sheets never reached this country. It was part of Beringia, the ice-free land that joined Yukon, Alaska and north-eastern Russia during the last ice age, and some of its plants and animals are found nowhere else in Canada. The Old Crow Basin holds the greatest concentration of ice-age vertebrate fossils in Canada, and perhaps North America: riverbank erosion along the Old Crow River exposes the bones of mammoths, horses and muskoxen.",
+  "Up to half a million waterfowl breed, moult or gather on the Flats each year, among them tundra swans, white-fronted geese and scoters, and in 1982 the Flats became a Wetland of International Importance under the Ramsar Convention. Muskrats crowd the shallow lakes, moose summer there, and peregrine falcons have been surveyed along the Old Crow River since 1975. Each spring and autumn the Porcupine caribou herd crosses the park between its wintering grounds south of the Porcupine River and its calving grounds on the coastal plain, with grizzly bears, wolves and wolverines following close behind.",
+  "Until about 1920 the Gwitchin harvested caribou with fences: drift fences kilometres long that steered the animals into a corral. Seven of the forty-six known fences in Alaska, Yukon and the Northwest Territories lie inside the park, among its 127 recorded archaeological sites. Protecting the caribou's range was one of the main reasons for the park, which was set aside in 1995 under the Vuntut Gwitchin First Nation Final Agreement. It is managed cooperatively by Parks Canada, the Vuntut Gwitchin First Nation and the North Yukon Renewable Resources Council, and Vuntut Gwitchin still hunt, fish and trap here."
+ ],
+ "howItWorks": [
+  "Vuntut has no established access routes, designated landing areas, trails or facilities of any kind, and Parks Canada asks visitors to be entirely self-sufficient. Since April 2026 a Superintendent's order has designated all use and travel in the park as a hazardous activity: every visitor must register before the trip and de-register as soon as it ends, at the visitor reception centre in the John Tizya Centre in Old Crow or by phone. You give your route and itinerary, and staff tell you of closures and known hazards. Failing to register or de-register is an offence, and anyone who fails to check back in may have to pay for the search.",
+  "Camping, aircraft landings and take-offs, open fires, food and fuel caches, research and commercial filming all need a permit. Most visitors arrive by air: an Aircraft Landing Permit is needed before any plane or helicopter lands, and Parks Canada asks for applications three months before the trip. About 75 per cent of the park, the high ground north of the Flats, is a Declared Wilderness Area, where a landing for any purpose other than park management first needs an environmental assessment under the Yukon Environmental and Socio-economic Assessment Act, which takes six to twelve weeks. Only licensed operators may fly visitors in. Old Crow residents also travel to the park by river and, in winter, overland.",
+  "Grizzly and black bears live in the park, and so do muskoxen and moose; cows with calves and bulls in rut are the dangerous ones. Learn the safe practices for bear country, carry bear spray, and store food and manage camp with bears in mind. Firearms are banned everywhere in the park, all year, except for First Nations members exercising their rights. All park waters are closed to fishing. In November 2026 Parks Canada listed the Northern Park Backcountry Excursion/Camping permit at $37 per person per night or $259 for a year, valid in the northern national parks."
+ ],
+ "sightNotes": {
+  "poi-ca-vuntut-van-tat-old-crow-flats": "A Ramsar wetland of more than two thousand shallow lakes, used by up to half a million waterfowl a year. Its northern edge forms the southern third of the park.",
+  "poi-ca-vuntut-old-crow-river": "The park's southern boundary in part, and a canoe route in early summer or autumn. Eroding banks along it are internationally significant ice-age fossil sites.",
+  "poi-ca-vuntut-tsivi-shuh-timber-hill": "A hill rising among the lakes of the Flats inside the park; its Gwich'in name is the official one.",
+  "poi-ca-vuntut-mount-clement": "One of the peaks of the British Mountains in the park's north, where tundra covers the high ground and caribou cross on their spring and autumn migrations.",
+  "poi-ca-vuntut-ammerman-mountain": "A summit at the park's western edge, beside the border with Alaska's Arctic National Wildlife Refuge."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "By chartered aircraft or helicopter, with a landing permit; charters are available from Dawson City or Inuvik",
+   "By river from Old Crow, about 190 kilometres; the Old Crow River is used in early summer or autumn, depending on water levels",
+   "Overland in winter along Ch'anchał Trai, the Crow Flats main trail used by Old Crow residents"
+  ],
+  "reservations": "There is nothing to book in the park, but trips need long planning: apply for an Aircraft Landing Permit three months ahead, and allow six to twelve weeks for the environmental assessment if you plan to land in the Declared Wilderness Area. Register and de-register at the John Tizya Centre in Old Crow or by phone.",
+  "permits": [
+   "Registration and a backcountry use permit for every trip",
+   "Aircraft Landing Permit for any fixed-wing aircraft or helicopter, three months in advance",
+   "Permits for camping, open fires, food and fuel caches, research and commercial filming",
+   "No fishing permits: all park waters are closed to fishing"
+  ],
+  "camping": [
+   "Backcountry camping only, with a permit; there are no campsites or facilities",
+   "Pack out all garbage"
+  ],
+  "lodging": [
+   "None in the park; accommodation in Old Crow"
+  ],
+  "seasonalClosures": [
+   "Rivers and access routes depend on season and water level — check with Parks Canada in Old Crow before you go"
+  ]
+ },
+ "chronology": [
+  {
+   "year": "Last ice age",
+   "text": "The land is part of unglaciated Beringia; mammoths, horses and muskoxen leave their bones in the Old Crow Basin."
+  },
+  {
+   "year": "Until about 1920",
+   "text": "The Gwitchin harvest caribou with long drift fences and corrals; seven fences survive inside today's park."
+  },
+  {
+   "year": "1975",
+   "text": "Systematic surveys of peregrine falcons begin along the Old Crow River."
+  },
+  {
+   "year": "1982",
+   "text": "The Old Crow Flats are designated a Wetland of International Importance under the Ramsar Convention."
+  },
+  {
+   "year": "1995",
+   "text": "Vuntut National Park is established under the Vuntut Gwitchin First Nation Final Agreement."
+  },
+  {
+   "year": "2017",
+   "text": "A count puts the Porcupine caribou herd at a historic high of about 218,000 animals."
+  },
+  {
+   "year": "2024",
+   "text": "A new management plan for Vuntut National Park is published."
+  },
+  {
+   "year": "2026",
+   "text": "Superintendent's orders of 20 April make registration mandatory and ban firearms throughout the park."
+  }
+ ],
+ "safety": [
+  "Weather is the greatest hazard. Carry extra food, fuel and clothing for weather delays, and know how to recognise and treat hypothermia.",
+  "Rescue is basic and can take days: aircraft and crews come from Inuvik or Dawson City. Carry more than one satellite communication device, with spare power.",
+  "Grizzly and black bears are common; carry bear spray and know how to store food and camp in bear country. Give cow caribou and moose with calves, bulls in rut and muskoxen a wide berth.",
+  "Ask the Vuntut Gwitchin in Old Crow for advice: they know the land and waters of the park better than anyone."
+ ],
+ "regulations": [
+  "Register before the trip and de-register immediately afterwards; all use and travel is designated a hazardous activity.",
+  "No firearms anywhere in the park, at any time of year.",
+  "All park waters are closed to fishing.",
+  "Permits are needed for camping, aircraft landings, open fires and food or fuel caches.",
+  "Do not hunt, feed, harass or approach wildlife, remove natural or cultural objects, or leave garbage behind."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Parks Canada's pages and the sources below.",
+  "Park outline: Canadian Protected and Conserved Areas Database, Environment and Climate Change Canada, Open Government Licence – Canada. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Vuntut National Park — Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut"
+  },
+  {
+   "title": "Plan your visit and Getting here — Vuntut National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/visit/directions"
+  },
+  {
+   "title": "Visitor guidelines — Vuntut National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/visit/comportements-guidelines"
+  },
+  {
+   "title": "Fees — Vuntut National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/visit/tarifs-fees"
+  },
+  {
+   "title": "Facilities and Services and John Tizya Centre — Vuntut National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/visit/serv/tizya"
+  },
+  {
+   "title": "Visitor safety — Vuntut National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/securite-safety/sec-saf"
+  },
+  {
+   "title": "Important bulletins — Vuntut National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/securite-safety/bulletins"
+  },
+  {
+   "title": "Designation information — Vuntut National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/culture/designation"
+  },
+  {
+   "title": "Culture, People of the Lakes and Caribou fences — Vuntut National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/culture/cloture-fence"
+  },
+  {
+   "title": "The Land — Vuntut National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/nature/habitats"
+  },
+  {
+   "title": "Porcupine Caribou Herd — Vuntut National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/nature/caribou"
+  },
+  {
+   "title": "Peregrine Falcon — Vuntut National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/nature/peregrine"
+  },
+  {
+   "title": "Arctic wilderness adventure — Vuntut National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/activ/aventure-adventure"
+  },
+  {
+   "title": "Vuntut National Park of Canada Management Plan, 2024 — Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/yt/vuntut/gestion-management/plan-directeur-management-plan-2024"
+  },
+  {
+   "title": "Canada National Parks Act (S.C. 2000, c. 32), Schedule 1, Part 11 — Justice Laws",
+   "url": "https://laws-lois.justice.gc.ca/eng/acts/N-14.01/FullText.html"
+  },
+  {
+   "title": "Canadian Geographical Names Database — Natural Resources Canada (coordinates)",
+   "url": "https://geonames.nrcan.gc.ca/"
+  },
+  {
+   "title": "Old Crow River and John Tizya Centre — OpenStreetMap (coordinates)",
+   "url": "https://www.openstreetmap.org/relation/15687276"
+  },
+  {
+   "title": "Vuntut National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Vuntut_National_Park"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Northern Park Backcountry Excursion/Camping",
+   "cost": "$37.00 per person per night",
+   "detail": "$259.00 per person for a year, valid in Aulavik, Auyuittuq, Ivvavik, Nahanni, Nááts'ihch'oh, Quttinirpaaq, Sirmilik, Tuktut Nogait, Vuntut, Qausuittuq and Ukkusiksalik. As listed by Parks Canada in November 2026; check before you go.",
+   "amount": 37,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Commercial film and photography",
+   "cost": "$177.25 per project application",
+   "detail": "For a crew of one to six, plus a location fee of $589.25 a day; higher for larger crews. As listed in November 2026.",
+   "amount": 177.25,
+   "currencyCode": "CAD"
+  }
+ ],
+ "hero": {
+  "credit": "Paul Gierszewski, via Wikimedia Commons",
+  "isPublicDomain": false,
+  "assetName": "ca-np-vuntut-b83438a91d.jpg",
+  "caption": "The British Mountains in Vuntut National Park",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Vuntut_National_Park.jpg",
+  "altText": "Rolling treeless hills and valleys stretching away under a wide sky",
+  "licence": "CC BY-SA 4.0"
+ },
+ "gallery": [
+  {
+   "credit": "Paul Gierszewski, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "ca-np-vuntut-3c3117e4f2.jpg",
+   "caption": "A lake in the Old Crow Flats",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_in_Old_Crow_Flats_Vuntut_NP.jpg",
+   "altText": "The shoreline of a broad lake set in flat wetland, under hazy air",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Paul Gierszewski, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "ca-np-vuntut-cd15604c93.jpg",
+   "caption": "Caribou on a snow patch at the park's western edge",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Caribou_in_British_Mountains.jpg",
+   "altText": "A herd of caribou gathered on a patch of snow on a tundra slope",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Paul Gierszewski, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "ca-np-vuntut-9e08e8fea6.jpg",
+   "caption": "Caribou trails across flat ground north of the Old Crow Flats",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:North_of_Old_Crow_Flats.jpg",
+   "altText": "Flat tundra seen from the air, criss-crossed by thin animal trails",
+   "licence": "CC BY-SA 4.0"
+  }
+ ],
+ "weather": "Vuntut has an Arctic continental climate, harsher than coastal Ivvavik to the north. The Old Crow Flats have some of the coldest winters in Yukon, averaging -30°C in January with extremes approaching -60°C, yet July averages 15°C and can be warmer than southern Yukon. It is dry, with 200 to 300 millimetres of precipitation a year. June to August is the time to come, with 24-hour daylight, but strong winds can rise suddenly, temperatures can swing 15°C in a few hours, and snow can fall in any month. Mosquitoes and black flies are dense from late June through July. Winters have warmed by about 5°C in recent decades.",
+ "directions": "Old Crow, on the Porcupine River, is the nearest community, Yukon's most northerly and the only one with no road; the Dempster Highway is about 175 kilometres away. Air North flies scheduled services to Old Crow from Whitehorse and Dawson City in Yukon and from Inuvik in the Northwest Territories. The park lies about 50 kilometres north of Old Crow by air, or 190 kilometres by river. There are no designated landing areas, so a charter must be arranged with an operator licensed to land in the park, with permits in hand. Rescue aircraft also have to come from Inuvik or Dawson City."
+}

@@ -1,0 +1,317 @@
+{
+ "placeID": "ca-np-banff",
+ "contentVersion": 1,
+ "story": [
+  "Banff's mountains are old sea floor. The limestones, dolomites, shales and sandstones were laid down in shallow seas and then shoved eastward over younger rock between about 80 and 55 million years ago. Ice did the rest: glaciers carved the cirques, arêtes, hanging valleys and U-shaped valleys that make up most of the park, and they still cling to the high peaks along the Continental Divide, which forms the park's western edge. The Columbia Icefield sits at its northern tip, and Mount Forbes, at 3,612 metres, is the highest summit wholly inside the park.",
+  "The park runs from montane valleys through subalpine forest to alpine rock and ice. Lodgepole pine grows low and Engelmann spruce higher up, below a treeline that gives way to meadows and scree. Grizzly and black bears, wolves, cougars, elk, moose and bighorn sheep all live here. The Trans-Canada Highway splits the Bow Valley, and since the 1980s Parks Canada has fenced it and built 44 wildlife crossings, six overpasses and 38 underpasses, the most in any one place in the world. Wildlife-vehicle collisions have fallen by more than 80 per cent.",
+  "People were here long before the park. Banff lies within the territories of Treaties 6, 7 and 8 and the Métis Homeland, and its lands and waters have been used for millennia for food, ceremony, trade and travel. Many nations hold the Cave and Basin to be a sacred place where ceremonies are still practised. Like other early national parks, Banff was created without regard for those relationships. Since 2018 an Indigenous Advisory Circle, made up of the Bearspaw, Chiniki, Goodstoney, Siksika, Kainai, Piikani and Tsuut'ina First Nations and the Rocky View Métis District, has advised the park's superintendents.",
+  "The park began with a quarrel. In 1883 three Canadian Pacific Railway workers claimed the hot springs at the Cave and Basin; the government refused, and in 1885 set aside a 26-square-kilometre Hot Springs Reserve around them, closed to sale or settlement. In 1887 the Rocky Mountains Park Act enlarged it to 665 square kilometres as Canada's first national park, and in 1930 it took its present name. The railway brought the first tourists to its hotels at Banff and Lake Louise, and the park has been the flagship of Canada's park system ever since."
+ ],
+ "howItWorks": [
+  "Everyone who stops in Banff needs a park pass. A superintendent's order of 8 September 2026 requires a pass, displayed in the vehicle, for all travel in the park; the only exception is driving straight through on the Trans-Canada Highway or Highway 93 South, so the Bow Valley and Icefields parkways always need one. A daily pass is valid until 4 pm the day after purchase and covers Banff, Jasper, Kootenay, Yoho, Mount Revelstoke, Glacier, Waterton Lakes and Elk Island; youth aged 17 and under get in free. The Parks Canada Discovery Pass covers more than 80 Parks Canada destinations for twelve months. Admission was free during the Canada Strong Pass periods of 2025 and 2026; the last ended on 7 September 2026.",
+  "Moraine Lake Road is closed to private vehicles all year. Only Parks Canada shuttles, licensed commercial operators and guests of Moraine Lake Lodge may drive it. The shuttles leave from the Lake Louise Park and Ride, where parking is free, and every seat must be reserved: in 2026 booking opened on 15 April with 40 per cent of seats, and the rest are released at 8 am two days before each departure. One ticket covers Lake Louise, Moraine Lake and the connector between them, but not the park pass. Lake Louise can also be reached by car, but its lakeshore parking is paid from May to October and fills early.",
+  "Camping is allowed only in designated campgrounds, with a camping permit and a park pass, and sleeping in a vehicle at pullouts, trailheads and day-use areas is not. Frontcountry sites are booked through the Parks Canada Reservation Service. Every overnight trip into the backcountry needs a backcountry permit for named campgrounds, with a maximum of three nights at any one; random camping is allowed only in designated areas, by permit from the Banff or Lake Louise visitor centres. Feeding, enticing or disturbing wildlife is illegal, with fines up to $25,000. Keep 30 metres from deer, elk, sheep and moose and 100 metres from bears, wolves, cougars and coyotes, and stay in your vehicle at roadside sightings."
+ ],
+ "sightNotes": {
+  "poi-ca-banff-moraine-lake": "A glacial lake below the Valley of the Ten Peaks, reached only by Parks Canada shuttle or licensed operator. No cell service, running water or other services at the lake.",
+  "poi-ca-banff-lake-louise": "Turquoise lake coloured by glacial rock flour, below Mount Victoria and its glacier, with the Chateau on its eastern shore. Shuttle from the Park and Ride, or paid lakeshore parking.",
+  "poi-ca-banff-peyto-lake": "A turquoise lake seen from a viewing platform near Bow Summit, a short walk from the Icefields Parkway 43 kilometres north of Lake Louise.",
+  "poi-ca-banff-bow-lake": "A large lake beside the Icefields Parkway about 37 kilometres north of Lake Louise, with a summer picnic area; Crowfoot Glacier viewpoint is just south.",
+  "poi-ca-banff-johnston-canyon": "A limestone gorge off the Bow Valley Parkway, walked on railed walkways and bridges past falls and pools. Trail and day-use area closed for construction until 11 December 2026.",
+  "poi-ca-banff-lake-minnewanka": "A reservoir north-east of the town of Banff, and the only water in the park where boats with motors, gas or electric, are allowed.",
+  "poi-ca-banff-cave-and-basin-national-historic-site": "The hot springs where the park began in 1885, sacred to many Indigenous nations, with an exhibit on the First World War internment camps.",
+  "poi-ca-banff-banff-upper-hot-springs": "A Parks Canada outdoor hot pool on Sulphur Mountain with views of Rundle and Cascade mountains, drawing bathers since 1886."
+ },
+ "planYourVisit": {
+  "entrances": [
+   "Banff East Gate on the Trans-Canada Highway (Highway 1), from Calgary and Canmore",
+   "The Trans-Canada Highway from the west, over Kicking Horse Pass from Yoho National Park to Lake Louise",
+   "The Icefields Parkway (Highway 93 North) from Jasper, 232 kilometres to Lake Louise",
+   "Highway 93 South from Kootenay National Park, joining the Trans-Canada Highway at Castle Junction",
+   "The David Thompson Highway (Highway 11) from the east, meeting the Icefields Parkway at Saskatchewan River Crossing"
+  ],
+  "reservations": "Lake Louise and Moraine Lake shuttles must be reserved; in 2026 bookings opened on 15 April and further seats are released at 8 am two days before each departure. Frontcountry campsites and backcountry campgrounds are booked through the Parks Canada Reservation Service, online at reservation.pc.gc.ca or on 1-877-737-3783; same-day campground bookings close at 2 pm. Mosquito Creek and Waterfowl Lakes are first come, first served. Check before you go with Parks Canada.",
+  "permits": [
+   "Park pass for everyone travelling in the park, except through traffic on Highway 1 and Highway 93 South",
+   "Backcountry permit for every overnight trip, for named campgrounds on named nights",
+   "Random-camping and mountaineering bivouac permits, in person at the Banff or Lake Louise visitor centres or by phone",
+   "National park fishing permit for anglers aged 16 and over; provincial licences are not valid"
+  ],
+  "camping": [
+   "Tunnel Mountain, above the town of Banff: Village II with electrical sites and oTENTiks, open all year; the Trailer Court with full hook-ups; and Village I, unserviced",
+   "Two Jack Main and Two Jack Lakeside near Lake Minnewanka, with equipped sites and oTENTiks",
+   "Johnston Canyon, Castle Mountain and Protection Mountain on the Bow Valley Parkway",
+   "Lake Louise, with a year-round hard-sided campground and a summer tent campground",
+   "Mosquito Creek, Waterfowl Lakes, Rampart Creek and Silverhorn Creek on the Icefields Parkway, summer only",
+   "Maximum stay 14 nights in a frontcountry campground and 3 nights in a backcountry campground"
+  ],
+  "lodging": [
+   "Hotels, lodges and hostels in the town of Banff and the village of Lake Louise",
+   "Moraine Lake Lodge, whose guests may drive Moraine Lake Road",
+   "The Lodge at Bow Lake on the Icefields Parkway, May to October"
+  ],
+  "seasonalClosures": [
+   "The Moraine Lake shuttle runs only from 1 June to 12 October (2026 dates); the road is closed to private vehicles all year — check before you go with Parks Canada",
+   "On the Bow Valley Parkway between Fireside and Johnston Canyon, a spring restriction bars all travel from 8 pm to 8 am until 25 June",
+   "Johnston Canyon trail and day-use area are closed for construction from 13 October to 11 December 2026",
+   "Most campgrounds open between May and June and close by early October; Icefields Parkway campgrounds are summer only",
+   "In winter there are no services on the Icefields Parkway between Lake Louise and Jasper, and avalanche control can close it"
+  ],
+  "seasonalClosureMonths": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   11,
+   12
+  ]
+ },
+ "chronology": [
+  {
+   "year": "1883",
+   "text": "Canadian Pacific Railway workers William and Tom McCardell and Frank McCabe claim the hot springs at the Cave and Basin."
+  },
+  {
+   "year": "1885",
+   "text": "The government settles the dispute by creating a 26-square-kilometre Hot Springs Reserve around the Cave and Basin."
+  },
+  {
+   "year": "1887",
+   "text": "On 23 June the Rocky Mountains Park Act enlarges the reserve to 665 square kilometres as Rocky Mountains Park, Canada's first national park."
+  },
+  {
+   "year": "1912",
+   "text": "A tramway begins carrying visitors to the Lake Louise lakeshore; it runs until 1930."
+  },
+  {
+   "year": "1930",
+   "text": "The National Parks Act renames the park Banff National Park."
+  },
+  {
+   "year": "1981",
+   "text": "Work begins to twin 83 kilometres of the Trans-Canada Highway through the park, with fencing and wildlife crossings."
+  },
+  {
+   "year": "1984",
+   "text": "Banff becomes part of the Canadian Rocky Mountain Parks World Heritage Site."
+  },
+  {
+   "year": "1996",
+   "text": "Monitoring of the highway's wildlife crossings begins, now the longest-running programme of its kind in the world."
+  },
+  {
+   "year": "2018",
+   "text": "The Indigenous Advisory Circle for Banff National Park is established."
+  }
+ ],
+ "safety": [
+  "Grizzly and black bears, wolves and cougars can turn up anywhere in the park, including the towns. Carry bear spray all year and know how to use it, travel in groups, make noise and leave the headphones off. Report bear, cougar, wolf and coyote sightings to Banff Dispatch on 403-762-1470.",
+  "Snow can fall in any month, and avalanches are possible from early winter into early summer. Check trail conditions and closures before you set out, and carry enough food and clothing for an extra day.",
+  "Moraine Lake and the Icefields Parkway have no cell coverage. In the backcountry carry a first-aid kit and a satellite messenger, leave your plans with someone, and in an emergency call 911.",
+  "Treat all surface water before drinking it, and check yourself and your pets for ticks after hiking."
+ ],
+ "regulations": [
+  "Never feed, entice or disturb wildlife: offenders go to court and face fines up to $25,000. Give elk, deer, sheep and moose 30 metres and bears, wolves, cougars and coyotes 100 metres.",
+  "Recreational drones are prohibited throughout the park, with fines up to $25,000.",
+  "Camp only in designated campgrounds with a permit; sleeping in a vehicle at pullouts, trailheads or day-use areas is not allowed. Keep dogs on a leash.",
+  "Lake Minnewanka is the only water where motorboats are allowed; personal watercraft and towed water sports are banned everywhere. Clean, drain, dry and certify every craft before it goes in.",
+  "Firearms, including bear bangers, bows and slingshots, are prohibited. Open drinking of alcohol in public places is not allowed; alcohol is permitted only at registered campsites, residences and licensed premises."
+ ],
+ "credits": [
+  "Text written for Unigrids. Facts checked against Parks Canada's pages and the sources below.",
+  "Park outline: Canadian Protected and Conserved Areas Database, Environment and Climate Change Canada, Open Government Licence – Canada. The outline is simplified by Unigrids."
+ ],
+ "sources": [
+  {
+   "title": "Banff National Park — Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff"
+  },
+  {
+   "title": "Fees — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/visit/tarifs-fees"
+  },
+  {
+   "title": "Park passes — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/visit/passer-passes"
+  },
+  {
+   "title": "Passes, permits and fees — Parks Canada",
+   "url": "https://parks.canada.ca/voyage-travel/admission"
+  },
+  {
+   "title": "Visiting Lake Louise and Moraine Lake — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/visit/parkbus/louise"
+  },
+  {
+   "title": "How to get here and Getting to Banff from Calgary — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/visit/parkbus/calgary"
+  },
+  {
+   "title": "Camping — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/activ/camping"
+  },
+  {
+   "title": "Backcountry camping — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/activ/arrierepays-backcountry"
+  },
+  {
+   "title": "Park regulations — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/securite-safety/regles-rules"
+  },
+  {
+   "title": "Wildlife and you; Safely view wildlife — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/visit/faune-wildlife/espace-space"
+  },
+  {
+   "title": "Bulletins: Restricted activity — Travel in Banff National Park (8 September 2026); Area closure — Johnston Canyon (13 October 2026)",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/bulletins"
+  },
+  {
+   "title": "Travelling the Icefields Parkway — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/visit/promenadedesglaciers-icefieldsparkway"
+  },
+  {
+   "title": "The Bow Valley Parkway — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/visit/les10-top10/promenade-de-la-vallee-de-la-bow-bow-valley-parkway"
+  },
+  {
+   "title": "Indigenous connections — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/Indigenous-connections"
+  },
+  {
+   "title": "Banff's legacy — Cave and Basin National Historic Site, Parks Canada",
+   "url": "https://parks.canada.ca/lhn-nhs/ab/caveandbasin/culture/heritage-legacy"
+  },
+  {
+   "title": "Wildlife crossing structures and research — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/nature/conservation/transport/tch-rtc/passages-crossings"
+  },
+  {
+   "title": "The Trans-Canada Highway — Banff National Park, Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/ab/banff/nature/conservation/transport/tch-rtc"
+  },
+  {
+   "title": "Radium Hot Springs (Banff Upper Hot Springs since 1886) — Parks Canada",
+   "url": "https://parks.canada.ca/pn-np/bc/kootenay/sources-radium-springs"
+  },
+  {
+   "title": "Canadian Rocky Mountain Parks — Parks Canada, World Heritage in Canada",
+   "url": "https://parks.canada.ca/culture/spm-whs/sites-canada/sec02h"
+  },
+  {
+   "title": "Canada National Parks Act, Schedule 1 — Justice Laws Website",
+   "url": "https://laws-lois.justice.gc.ca/eng/acts/n-14.01/"
+  },
+  {
+   "title": "Banff National Park — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Banff_National_Park"
+  },
+  {
+   "title": "Lake Louise (Alberta) — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Lake_Louise_(Alberta)"
+  },
+  {
+   "title": "Johnston Canyon — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Johnston_Canyon"
+  },
+  {
+   "title": "Canadian Geographical Names Database — Natural Resources Canada (coordinates)",
+   "url": "https://geogratis.gc.ca/services/geoname/en/geonames"
+  },
+  {
+   "title": "OpenStreetMap Nominatim (coordinates of visitor centres, Upper Hot Springs and Johnston Canyon Lower Falls)",
+   "url": "https://nominatim.openstreetmap.org/"
+  }
+ ],
+ "fees": [
+  {
+   "title": "Daily admission",
+   "cost": "$12.25 adult / $10.75 senior / $24.50 family or group",
+   "detail": "Youth aged 17 and under free. A family or group is up to seven people arriving in one vehicle. Valid until 4 pm the day after purchase in the mountain parks and Elk Island. As listed by Parks Canada in November 2026 — check before you go.",
+   "amount": 12.25,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Parks Canada Discovery Pass",
+   "cost": "$83.50 adult / $71.50 senior / $167.50 family or group",
+   "detail": "Twelve months' admission to more than 80 Parks Canada destinations, valid to the end of the month of purchase a year later. As listed in November 2026.",
+   "amount": 83.5,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Parks Canada shuttle, Lake Louise and Moraine Lake",
+   "cost": "$12.75 adult / $6.00 senior / $4.00 youth",
+   "detail": "Covers both lakes and the connector between them, not the park pass. Reservation fee $3.50 online or $5.50 by phone. As listed in November 2026.",
+   "amount": 12.75,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Lake Louise Lakeshore parking",
+   "cost": "$42.00",
+   "detail": "Per vehicle per day, 15 May to 12 October 2026. Shuttle reservation holders park free at the Lake Louise Park and Ride.",
+   "amount": 42,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Banff Upper Hot Springs",
+   "cost": "$19.75 adult / $17.25 senior or youth / $64.25 family",
+   "detail": "Single entry; children under three free; locker token included. As listed in November 2026.",
+   "amount": 19.75,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Frontcountry camping",
+   "cost": "$22.00–$47.25",
+   "detail": "Per site per night, from a primitive Icefields Parkway site to full hook-ups at Tunnel Mountain; Lake Louise overflow $13.50, equipped sites at Two Jack Main $86.50. Fire permit $17.00 a day. As listed in November 2026.",
+   "amount": 22,
+   "currencyCode": "CAD"
+  },
+  {
+   "title": "Backcountry camping",
+   "cost": "$15.00",
+   "detail": "Per person per night, in addition to the park pass. As listed in November 2026.",
+   "amount": 15,
+   "currencyCode": "CAD"
+  }
+ ],
+ "hero": {
+  "credit": "Gorgo, via Wikimedia Commons",
+  "isPublicDomain": true,
+  "assetName": "ca-np-banff-e3617a608c.jpg",
+  "caption": "Moraine Lake below the Valley of the Ten Peaks",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:Moraine_Lake_17092005.jpg",
+  "altText": "A row of snow-streaked peaks above a forested shore, reflected in a still blue lake"
+ },
+ "gallery": [
+  {
+   "credit": "Tony Hisgett from Birmingham, UK, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "ca-np-banff-317074cf1a.jpg",
+   "caption": "Lake Louise, looking towards Mount Victoria and its glacier",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_Louise_Banff_1_(220331877).jpg",
+   "altText": "A pale green lake between steep forested slopes, with a glacier-hung mountain at its far end",
+   "licence": "CC BY 2.0"
+  },
+  {
+   "credit": "Tobias Alt, Tobi 87, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "ca-np-banff-dd65aeba9b.jpg",
+   "caption": "Peyto Lake from the viewpoint near Bow Summit",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Peyto_Lake-Banff_NP-Canada.jpg",
+   "altText": "A bright turquoise lake in a forested valley beneath grey mountains",
+   "licence": "CC BY-SA 4.0"
+  },
+  {
+   "credit": "Florian Fuchs, via Wikimedia Commons",
+   "isPublicDomain": false,
+   "assetName": "ca-np-banff-4dbbe424cd.jpg",
+   "caption": "The Lower Falls in Johnston Canyon",
+   "sourceURL": "https://commons.wikimedia.org/wiki/File:Johnston_Canyon-Lower_Falls.jpg",
+   "altText": "A waterfall pouring through a slot in limestone walls into a deep blue pool",
+   "licence": "CC BY 3.0"
+  }
+ ],
+ "weather": "Mountain weather here is pleasant but unpredictable. In spring and summer daytime highs range from about 10 to 18°C, nights can drop below freezing, and rain, snow or hail can fall in any month. The main hiking season runs from May to October, though many high passes stay snowbound until late June and streams run highest in June and July. July and August are the best months for the backcountry; September is usually drier but colder, with a greater chance of snow. Along the Icefields Parkway winter weather lasts from early November to mid-June, the lakes thaw by late June and alpine trails are usually clear of snow by mid-July. Avalanches are possible from early winter to early summer.",
+ "directions": "The town of Banff is about 128 kilometres west of Calgary on the Trans-Canada Highway, and the village of Lake Louise about 54 kilometres beyond it. Seasonal transit and shuttle services run from downtown Calgary and Calgary International Airport, and the regional Roam Transit route 8X connects the town of Banff with the Lake Louise lakeshore all year. From Lake Louise the Icefields Parkway runs 232 kilometres north to Jasper, and from Castle Junction Highway 93 South leads into Kootenay National Park and on to Radium Hot Springs. Parking at Lake Louise is scarce in summer and Moraine Lake has none for private cars, so book a shuttle or transit seat ahead."
+}
