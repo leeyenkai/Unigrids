@@ -107,6 +107,26 @@ struct Attribution: Identifiable {
                 + "Canada, some written by Parks Canada."
         ),
         Attribution(
+            name: "CAPAD and the ABS",
+            terms: "Australia's national parks from the Collaborative Australian Protected "
+                + "Areas Database 2024, © Commonwealth of Australia (DCCEEW), CC BY 4.0; state "
+                + "and territory boundaries from the Australian Bureau of Statistics (ASGS "
+                + "2021), CC BY 4.0. Guides are written for Unigrids from each park agency's "
+                + "pages, named in each."
+        ),
+        Attribution(
+            name: "Queensland Parks and Wildlife Service",
+            terms: "Queensland's walking tracks with their Australian standard grades, "
+                + "© State of Queensland, CC BY 4.0."
+        ),
+        Attribution(
+            name: "Australia's fire and park services",
+            terms: "Live fire incidents and warnings from the NSW Rural Fire Service, "
+                + "Emergency Management Victoria, Queensland Fire, Western Australia's DFES "
+                + "and TasALERT, and park alerts from the NSW National Parks and Wildlife "
+                + "Service, each from its own public feed."
+        ),
+        Attribution(
             name: "GeoNet and Stats NZ",
             terms: "Volcanic alert levels from GeoNet, © Earth Sciences New Zealand, CC BY "
                 + "3.0 NZ; regional council boundaries from Stats NZ, hosted by Eagle "

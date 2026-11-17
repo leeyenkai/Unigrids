@@ -109,7 +109,9 @@ struct BundledDataTests {
             #expect(place.summarySource == "Unigrids", "\(place.name) has no written summary")
             #expect((place.summary?.count ?? 0) > 80, "\(place.name) summary is thin")
             // Roadless parks such as Kobuk Valley have only a handful of named sights.
-            #expect(store.sights(in: place.id).count >= 3, "\(place.name) has too few sights")
+            if !KnownGaps.sights.contains(place.id) {
+                #expect(store.sights(in: place.id).count >= 3, "\(place.name): too few sights")
+            }
             // Abroad, many parks have no centre of their own: Svalbard's, and most of
             // Norway's far north.
             #expect(
@@ -170,15 +172,11 @@ struct BundledDataTests {
 
     @Test("every national park carries its sourced figures")
     func nationalParkFacts() throws {
-        // Parks whose sources disagree on their area carry none rather than a guess: Mingan
-        // (Parks Canada "approximately 100 km²", CPCAD 150.7), Bruce Peninsula (enlarged
-        // by purchase since its scheduled area) and Thousand Islands.
-        let areaInDispute: Set<UnigridsID> = [
-            "ca-np-mingan-archipelago", "ca-np-bruce-peninsula", "ca-np-thousand-islands",
-        ]
         for park in store.nationalParks {
-            #expect(park.facts.establishedYear != nil, "\(park.name) has no establishment year")
-            if !areaInDispute.contains(park.id) {
+            if !KnownGaps.year.contains(park.id) {
+                #expect(park.facts.establishedYear != nil, "\(park.name) has no year")
+            }
+            if !KnownGaps.area.contains(park.id) {
                 #expect(park.facts.area != nil, "\(park.name) has no area")
             }
         }

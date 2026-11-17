@@ -7,7 +7,8 @@ import UnigridsReference
 // park idea began at Yellowstone and travelled (SPECIFICATION.md §1, ADR 0013).
 
 /// The idea in dates. Each one is checked: Yellowstone and Roosevelt's record from the
-/// NPS, Banff's from Parks Canada, Tongariro's from the Department of Conservation and the
+/// NPS, Royal's from the NSW National Parks and Wildlife Service and the State Archives,
+/// Banff's from Parks Canada, Tongariro's from the Department of Conservation and the
 /// Act of 1894, Japan's dates
 /// from the Ministry of the Environment's own history of its parks, Rondane from the
 /// Norwegian Environment Agency.
@@ -18,7 +19,8 @@ enum TheIdeaThatTravelled {
         + "Theodore Roosevelt, president from 1901 to 1909, made conservation national "
         + "policy: five national parks, eighteen national monuments and 150 national forests. "
         + "The National Park Service followed in 1916, and in 1977 it gave its brochures the "
-        + "black band and grid these guides are drawn in. The idea travelled. Canada set aside "
+        + "black band and grid these guides are drawn in. The idea travelled. Australia "
+        + "dedicated The National Park south of Sydney, now Royal, in 1879. Canada set aside "
         + "the hot springs at Banff in 1885 and made them its first national park in 1887. "
         + "New Zealand made "
         + "Tongariro its first in 1894, on peaks Te Heuheu Tūkino IV had gifted in 1887. "
@@ -28,6 +30,7 @@ enum TheIdeaThatTravelled {
 
     static let milestones: [(year: String, text: String)] = [
         ("1872", "Yellowstone"),
+        ("1879", "Royal"),
         ("1885", "Banff"),
         ("1894", "Tongariro"),
         ("1916", "The National Park Service"),
@@ -73,8 +76,8 @@ struct WorldWelcomeView: View {
                 number: 1,
                 title: TheIdeaThatTravelled.title,
                 text: TheIdeaThatTravelled.text
-                    + " Unigrids now has the national parks of Japan, Norway, New Zealand and "
-                    + "Canada, "
+                    + " Unigrids now has the national parks of Japan, Norway, New Zealand, "
+                    + "Canada and Australia, "
                     + "each with a full guide and a passport book of its own."
             ) {
                 IdeaTimelineArt()

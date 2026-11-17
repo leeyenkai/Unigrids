@@ -46,6 +46,18 @@ makes the change. A release moves that block under a version heading with its da
   100 km² or more are pins with leaflets. Environment Canada's weather alerts and
   Avalanche Canada's forecasts show live; a bilingual book of six regions carries its own
   stamp face.
+- **Australia.** Its 51 best-known national parks — the six Commonwealth parks and every
+  national park within an Australian World Heritage property, with each state's flagship —
+  from Royal, dedicated in 1879, to Uluṟu-Kata Tjuṯa, Kakadu and Cradle Mountain, each
+  with a full guide written for Unigrids from the managing agency's pages and plans of
+  management, and How this park works: passes and bookings state by state, joint
+  management with Traditional Owners, fire bans, crocodile and stinger safety.
+  Queensland's tracks carry the Australian standard's grades (Grade 1 to 5);
+  OpenStreetMap's paths, huts and campgrounds fill the rest, and the passenger railways
+  from The Ghan to V/Line are on the rail layer. The 666 other national parks are pins
+  with leaflets. Each state's fire service shows its incidents and warnings live where a
+  park lies, with the NSW NPWS's own closures; a book of eight regions carries a bush-post
+  stamp face.
 - The second tier as pins and leaflets: Japan's 58 quasi-national parks, and Norway's
   195 protected landscapes and 230 nature reserves of 10 km² or more, with the year each
   was designated where a source gives it (Wikidata for Japan's, Miljødirektoratet for
