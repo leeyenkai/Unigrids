@@ -15,4 +15,7 @@ PYTHONPATH=src uv run python -m unigrids_pipeline package            # every bui
 PYTHONPATH=src uv run python -m unigrids_pipeline package --parks ZION,ACAD
 ```
 
+A park abroad goes by its place ID, and a large one by a shallower deepest zoom: the
+Blue Mountains and Banff are built with `--max-zoom 14`.
+
 An empty folder is a valid build: the app runs without offline maps and says so.

@@ -29,7 +29,7 @@ national park carries its own picture. The model change is
 | Stats | National park grids and tile maps for New Zealand's regions, Australia's states and territories and Canada's provinces and territories | §11 |
 | Onboarding and icons | "The idea that travelled" gains Royal (1879), Banff (1885) and Tongariro (1894); three alternate icons — Aoraki/Mount Cook, Banff (Moraine Lake) and Cradle Mountain–Lake St Clair; the non-affiliation line names DOC, Parks Canada, Parks Australia and the state and territory agencies | §14 |
 | Pipeline | `--countries us,jp,no,nz,ca,au`; each park's measured lowest and highest ground kept in the raw store with a fingerprint of its outline, so a build without elevation tiles reuses it | §12 |
-| Offline | The pipeline builds a pack for any national park abroad; the Park maps for Tongariro, the Blue Mountains and Banff are being added and are not in the bundle yet | §8 |
+| Offline | The pipeline builds a pack for any national park abroad; Park maps for Tongariro (zoom 10–15, 8.9 MB), the Blue Mountains (10–14, 10.6 MB) and Banff (10–14, 23.2 MB) ship in the bundle, nine packs and 209 MB in all | §8 |
 
 ## Not yet built
 
@@ -43,7 +43,7 @@ national park carries its own picture. The model change is
   already the park's name (Uluṟu-Kata Tjuṯa, Budj Bim, Nitmiluk) show; a dual name the
   agency uses beside the English one is not yet carried.
 - **Offline packs beyond the pilots.** One pilot per country (Tongariro, Blue Mountains and
-  Banff, being added); the other parks need on-demand delivery, which needs signing
+  Banff); the other parks need on-demand delivery, which needs signing
   (ADR 0010).
 - **Map flights across the world.** In the Simulator, choosing a country on the other side
   of the world from the one on screen takes several seconds to settle. Not yet looked at on

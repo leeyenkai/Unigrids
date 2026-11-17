@@ -48,7 +48,7 @@
   per country — each national park with its own drawing on the stamp — turns into stats
   and share cards, and exports in full.
 - **Offline park maps** for Zion, Acadia, Yellowstone, Great Smoky Mountains,
-  Chubu-Sangaku and Jotunheimen; Tongariro, the Blue Mountains and Banff are being added.
+  Chubu-Sangaku, Jotunheimen, Tongariro, the Blue Mountains and Banff.
 - **Private by design.** No accounts, no analytics and no server of its own. Your log
   stays on your device, and syncs only through your own iCloud.
 

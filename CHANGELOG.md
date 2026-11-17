@@ -96,6 +96,10 @@ makes the change. A release moves that block under a version heading with its da
   swipe), and Settings brings them all back.
 - Two app icons from abroad, chosen in Settings on iPhone and iPad: Fuji-Hakone-Izu
   (Mount Fuji over its lakes) and Jotunheimen (a green lake under snowy peaks).
+- Offline Park maps for Tongariro, the Blue Mountains and Banff, one for each new country,
+  built like Chubu-Sangaku's and Jotunheimen's: Tongariro to zoom 15 (8.9 MB), the Blue
+  Mountains and Banff to zoom 14 (10.6 and 23.2 MB). The pipeline now builds a pack for
+  any national park abroad.
 - Three more app icons from abroad: Aoraki/Mount Cook (Aoraki over Hooker Lake and its
   ice), Banff (Moraine Lake under the Ten Peaks) and Cradle Mountain–Lake St Clair (Cradle
   Mountain over Dove Lake).
