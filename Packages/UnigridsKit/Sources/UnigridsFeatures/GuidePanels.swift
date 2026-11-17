@@ -350,61 +350,6 @@ struct GuideActionsPanel: View {
     }
 }
 
-/// Panel 11b: credits, sources, photo credits and the non-affiliation line, across the
-/// full width at the foot of the page, as they sit on the back of a brochure.
-struct GuideCreditsPanel: View {
-    @Environment(\.unigrid) private var style
-    let credits: [String]
-    let sources: [GuideSource]
-    var photos: [GuideImage] = []
-    var country: Country = .unitedStates
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Rectangle()
-                .fill(style.rule)
-                .frame(height: 1)
-            ForEach(Array(credits.enumerated()), id: \.offset) { _, credit in
-                Text(credit)
-                    .font(UnigridStyle.caption)
-                    .foregroundStyle(style.inkSecondary)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-            if !photos.isEmpty {
-                Text(photoLine)
-                    .font(UnigridStyle.caption)
-                    .foregroundStyle(style.inkSecondary)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-            ForEach(sources) { source in
-                if let url = source.url {
-                    Link(source.title, destination: url)
-                        .font(UnigridStyle.caption)
-                } else {
-                    Text(source.title)
-                        .font(UnigridStyle.caption)
-                        .foregroundStyle(style.inkSecondary)
-                }
-            }
-            NonAffiliationNotice()
-                .padding(.top, 6)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.top, 8)
-    }
-
-    private var photoLine: String {
-        let entries: [String] = photos.map { image in
-            guard let caption = image.caption else { return image.credit }
-            return "\(caption), \(image.credit)"
-        }
-        return "Photographs: \(entries.joined(separator: "; ")). "
-            + (country == .unitedStates ? "Photographs credited to the NPS are public domain."
-                : "Each photograph is used under the licence its author chose on Wikimedia "
-                + "Commons, named on its page there.")
-    }
-}
-
 // MARK: - Shared pieces
 
 struct GuideFieldLabel: View {

@@ -90,7 +90,7 @@ struct ByTrainPanel: View {
         }
         if access.measuredToBoundary, access.metres < 1000 {
             return "The station is at the edge of \(place.name), "
-                + "under a kilometre from its boundary."
+                + "under \(UnigridsFormat.distance(metres: 1000)) from its boundary."
         }
         let distance = UnigridsFormat.distance(metres: access.metres)
         let to = access.measuredToBoundary ? "the boundary" : "\(place.name)"

@@ -43,6 +43,8 @@ struct TransportSample: View {
 /// numbered circles are.
 struct LegendKey: View {
     @Environment(\.unigrid) private var style
+    /// The countries with places on the map, so each shape names what it stands for there.
+    var countries: [Country] = [.unitedStates]
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -59,11 +61,18 @@ struct LegendKey: View {
             Kicker("Shape: who runs it")
             row(SitePin(type: .nationalPark), "Large black square: a national park")
             row(SitePin(type: .historicSite), "Square: another National Park Service site")
-            row(SitePin(type: .statePark), "Circle: a state park")
+            row(
+                SitePin(type: .statePark),
+                countries.contains(.japan)
+                    ? "Circle: a state park, or one of Japan's quasi-national parks"
+                    : "Circle: a state park"
+            )
             row(
                 SitePin(type: .nationalForest),
                 "Hexagon: other public land — national forests, wildlife refuges, BLM land — "
                     + "and natural landmarks and byways"
+                    + (countries.contains(.norway)
+                        ? "; in Norway, protected landscapes and nature reserves" : "")
             )
 
             Hairline()

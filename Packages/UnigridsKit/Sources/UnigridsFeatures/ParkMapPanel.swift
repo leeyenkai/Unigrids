@@ -82,7 +82,7 @@ struct ParkMapView: View {
         Map(position: position ?? $fallbackPosition, interactionModes: interactive ? .all : []) {
             if let boundary {
                 ForEach(Array(boundary.polygons.enumerated()), id: \.offset) { _, polygon in
-                    MapPolygon(coordinates: polygon.exterior.map(\.clCoordinate))
+                    MapPolygon(polygon.mkPolygon)
                         .foregroundStyle(tint.opacity(0.14))
                         .stroke(tint, lineWidth: 1.6)
                 }

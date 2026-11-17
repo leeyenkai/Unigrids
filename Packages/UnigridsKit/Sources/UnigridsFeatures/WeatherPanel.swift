@@ -120,7 +120,7 @@ struct ClimateChart: View {
     let climate: MonthlyClimate
 
     private var symbols: [String] {
-        Calendar.current.shortMonthSymbols
+        Calendar.unigrids.shortMonthSymbols
     }
 
     var body: some View {
@@ -186,15 +186,15 @@ struct ClimateChart: View {
     private var summary: String {
         var parts: [String] = []
         if let warmest = climate.warmest {
-            parts.append("Warmest in \(Calendar.current.monthSymbols[warmest.month - 1]), "
+            parts.append("Warmest in \(Calendar.unigrids.monthSymbols[warmest.month - 1]), "
                 + "highs near \(UnigridsFormat.temperature(celsius: warmest.highCelsius))")
         }
         if let coldest = climate.coldest {
-            parts.append("coldest in \(Calendar.current.monthSymbols[coldest.month - 1]), "
+            parts.append("coldest in \(Calendar.unigrids.monthSymbols[coldest.month - 1]), "
                 + "lows near \(UnigridsFormat.temperature(celsius: coldest.lowCelsius))")
         }
         if let wettest = climate.wettest {
-            parts.append("wettest in \(Calendar.current.monthSymbols[wettest.month - 1])")
+            parts.append("wettest in \(Calendar.unigrids.monthSymbols[wettest.month - 1])")
         }
         return parts.joined(separator: "; ") + ". Bars show the mean daily high and low; "
             + "precipitation below. One point stands for the whole park, so higher ground "

@@ -391,7 +391,8 @@ extension GuideContent {
     ///
     /// `hasMap` is whether the place has an outline or located sights to draw, and
     /// `showsAlerts` whether live alerts can be fetched for it — an NPS unit, in a build
-    /// that carries an API key.
+    /// that carries an API key. `hasClimate` shows the weather panel for its forecast and
+    /// climate chart even when the guide has no note on the seasons.
     public func panels(
         placeHasFacts: Bool,
         sightCount: Int,
@@ -399,7 +400,8 @@ extension GuideContent {
         hasTrails: Bool,
         hasMap: Bool = false,
         showsAlerts: Bool = false,
-        hutCount: Int = 0
+        hutCount: Int = 0,
+        hasClimate: Bool = false
     ) -> [GuidePanel] {
         let mapPanel: GuidePanel? = mapImage.map { .map($0) } ?? (hasMap ? .parkMap : nil)
         let hasPlan = !planYourVisit.isEmpty || !fees.isEmpty || operatingHours != nil
@@ -420,7 +422,7 @@ extension GuideContent {
             hasTrails ? .trailHighlights : nil,
             showsAlerts ? .alerts : nil,
             hasPlan ? .planYourVisit : nil,
-            weather == nil ? nil : .weather,
+            weather == nil && !hasClimate ? nil : .weather,
             directions == nil ? nil : .gettingThere,
             chronology.isEmpty ? nil : .chronology,
             safety.isEmpty && regulations.isEmpty ? nil : .safetyAndRegulations,

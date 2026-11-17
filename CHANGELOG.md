@@ -87,6 +87,13 @@ makes the change. A release moves that block under a version heading with its da
 
 ### Fixed
 
+- A guide's map and the 3D explorer leave out the land a park excludes, as the main map
+  does: 21 of Japan's national park outlines have such holes. The map key says what a
+  circle and a hexagon stand for in Japan and Norway. A leaflet's photo credit follows the
+  photo's own licence, not the country: a state park's Commons photograph no longer says
+  NPS photographs are public domain. The weather panel shows the forecast and climate for
+  a park whose guide has no note on the seasons (Skarvan og Roltdalen). Huts beyond the
+  first few are found in Explore in 3D, and "under a kilometre" follows your units.
 - Search reads hyphens and dashes as spaces, so "fuji hakone" finds Fuji-Hakone-Izu and
   "sor spitsbergen" Sør-Spitsbergen; map search for sights and the trail catalogue's
   filter now fold accents, Nordic letters and macrons as place search does ("chuzenji",

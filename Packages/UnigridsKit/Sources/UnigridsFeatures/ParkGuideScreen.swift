@@ -186,7 +186,8 @@ public struct ParkGuideScreen: View {
             hasTrails: !trails.isEmpty,
             hasMap: store.boundary(for: place.id) != nil || !sights.isEmpty,
             showsAlerts: AlertsCenter.covers(place),
-            hutCount: huts.count
+            hutCount: huts.count,
+            hasClimate: store.climate(for: place.id) != nil
         )
         // The hero sits full-bleed under the band, not on the grid.
         .filter {
@@ -228,8 +229,7 @@ public struct ParkGuideScreen: View {
             GuideCreditsPanel(
                 credits: guide.credits,
                 sources: guide.sources,
-                photos: [guide.hero].compactMap(\.self) + guide.gallery,
-                country: place.country
+                photos: [guide.hero].compactMap(\.self) + guide.gallery
             )
         }
         .padding(UnigridStyle.pageMargin)

@@ -36,7 +36,7 @@ struct ExplorerMap: View {
         Map(position: $position, interactionModes: .all) {
             if let boundary {
                 ForEach(Array(boundary.polygons.enumerated()), id: \.offset) { _, polygon in
-                    MapPolygon(coordinates: polygon.exterior.map(\.clCoordinate))
+                    MapPolygon(polygon.mkPolygon)
                         .foregroundStyle(tint.opacity(0.12))
                         .stroke(tint, lineWidth: 2)
                 }

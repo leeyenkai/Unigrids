@@ -56,7 +56,9 @@ struct HutsPanel: View {
                     }
                 }
                 if huts.count > shown {
-                    Text("\(huts.count - shown) more on the park map.")
+                    // Every hut is drawn in the 3D explorer; only two parks have an offline
+                    // Park map.
+                    Text("\(huts.count - shown) more in Explore in 3D.")
                         .font(UnigridStyle.caption)
                         .foregroundStyle(style.inkSecondary)
                 }

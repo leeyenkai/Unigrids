@@ -338,14 +338,7 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
         if let cached = overview ? overviewCache[place.id] : overlayCache[place.id] {
             return cached
         }
-        let polygons = boundary.polygons.map { polygon -> MKPolygon in
-            let holes = polygon.holes.map { ring in
-                let points = ring.map(\.clCoordinate)
-                return MKPolygon(coordinates: points, count: points.count)
-            }
-            let points = polygon.exterior.map(\.clCoordinate)
-            return MKPolygon(coordinates: points, count: points.count, interiorPolygons: holes)
-        }
+        let polygons = boundary.polygons.map(\.mkPolygon)
         let overlay = PlaceOverlay(polygons)
         overlay.placeID = place.id
         overlay.tier = place.tier
@@ -479,3 +472,16 @@ final class AtlasCoordinator: NSObject, MKMapViewDelegate {
         }
     }
 #endif
+
+extension BoundaryPolygon {
+    /// The polygon for MapKit, holes and all: land excluded from a park — 21 of Japan's
+    /// 35 national park outlines have some — is not tinted as park.
+    var mkPolygon: MKPolygon {
+        let holes = holes.map { ring in
+            let points = ring.map(\.clCoordinate)
+            return MKPolygon(coordinates: points, count: points.count)
+        }
+        let points = exterior.map(\.clCoordinate)
+        return MKPolygon(coordinates: points, count: points.count, interiorPolygons: holes)
+    }
+}

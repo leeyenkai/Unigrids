@@ -241,7 +241,7 @@ struct MapKeySheet: View {
                 }
 
                 Section {
-                    LegendKey()
+                    LegendKey(countries: countries)
                 } header: {
                     Kicker("Reading the map")
                 }
